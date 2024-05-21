@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295274", ", Version Hash: ").concat("d193c6268d8ef3c4d76bd143dc2fd6a1011e1d65")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295283", ", Version Hash: ").concat("5327399e6a43be7485d2796c19fa26e959e4d0ac")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88506,8 +88506,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295274", "295274"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295274")), t = 0), t
+                let t = parseInt((e = "295283", "295283"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295283")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116371,8 +116371,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295274",
-                    versionHash: "d193c6268d8ef3c4d76bd143dc2fd6a1011e1d65"
+                    buildNumber: "295283",
+                    versionHash: "5327399e6a43be7485d2796c19fa26e959e4d0ac"
                 }
             }
             n.r(t), n.d(t, {
@@ -160785,48 +160785,54 @@
                     history: G,
                     onSelectChild: w,
                     onModalClose: k,
-                    multiSelect: B,
-                    reportId: V,
-                    textInput: x
-                } = e, F = U(t, "checkbox"), H = U(t, "text_line_resource"), Y = b(t, "external_link"), j = b(t, "free_text"), W = b(t, "dropdown"), [K, z] = r.useState(!1), [Z, X] = r.useState(""), [Q, q] = r.useState(() => ({})), [J, $] = r.useState(() => ({})), [ee, et] = r.useState((0, o.areRequiredElementsUnfilled)(j, W, F, x, B)), en = function(e, t) {
+                    onSubmit: B,
+                    multiSelect: V,
+                    reportId: x,
+                    textInput: F
+                } = e, H = U(t, "checkbox"), Y = U(t, "text_line_resource"), j = b(t, "external_link"), W = b(t, "free_text"), K = b(t, "dropdown"), [z, Z] = r.useState(!1), [X, Q] = r.useState(!1), [q, J] = r.useState(""), [$, ee] = r.useState(() => ({})), [et, en] = r.useState(() => ({})), [ei, er] = r.useState((0, o.areRequiredElementsUnfilled)(W, K, H, F, V)), es = function(e, t) {
                     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                         i = {
-                            ...J
+                            ...et
                         };
                     i[e] = {
                         value: t,
                         isValid: n
-                    }, $(i), et((0, o.areRequiredElementsUnfilled)(j, W, F, i, Q))
-                }, ei = r.useMemo(() => e => {
+                    }, en(i), er((0, o.areRequiredElementsUnfilled)(W, K, H, i, $))
+                }, ea = r.useMemo(() => e => {
                     w({
                         nodeRef: t.id,
                         destination: e,
-                        textInput: null != j || null != W ? J : void 0,
-                        multiSelect: null != F ? {
-                            name: F.name,
-                            state: Q
+                        textInput: null != W || null != K ? et : void 0,
+                        multiSelect: null != H ? {
+                            name: H.name,
+                            state: $
                         } : void 0
                     })
-                }, [t, w, F, Q, J, j, W]);
+                }, [t, w, H, $, et, W, K]);
                 r.useEffect(() => {
-                    null != B && q(B), null != x && $(x)
-                }, [B, x]);
-                let er = e => {
-                        if (e === M.AbortCodes.INVALID_FORM_BODY) X(y.default.Messages.IN_APP_REPORTING_SUBMIT_VALIDATION_ERROR);
-                        else X(y.default.Messages.MOBILE_REPORTS_SUBMIT_FAILED)
+                    null != V && ee(V), null != F && en(F)
+                }, [V, F]);
+                let eo = e => {
+                        if (e === M.AbortCodes.INVALID_FORM_BODY) J(y.default.Messages.IN_APP_REPORTING_SUBMIT_VALIDATION_ERROR);
+                        else J(y.default.Messages.MOBILE_REPORTS_SUBMIT_FAILED)
                     },
-                    es = () => e.onSubmit({
+                    el = () => B({
                         nodeRef: t.id,
                         destination: ["", e.successNodeId]
                     }).then(() => {
-                        X(""), ei(["", e.successNodeId])
+                        J(""), ea(["", e.successNodeId])
                     }).catch(e => {
                         var t;
-                        er(null === (t = e.body) || void 0 === t ? void 0 : t.code)
+                        eo(null === (t = e.body) || void 0 === t ? void 0 : t.code)
                     }).finally(() => {
-                        z(!1)
+                        Z(!1)
                     });
-                return (0, i.jsxs)("div", {
+                return r.useEffect(() => {
+                    t.is_auto_submit && !X && (Q(!0), B({
+                        nodeRef: t.id,
+                        destination: ["", t.id]
+                    }))
+                }, [t.is_auto_submit, X, B, t.id]), (0, i.jsxs)("div", {
                     className: P.container,
                     children: [(0, i.jsxs)(s.ModalHeader, {
                         separator: !1,
@@ -160841,8 +160847,8 @@
                         })]
                     }), (0, i.jsxs)(s.ModalContent, {
                         className: P.body,
-                        children: [null != H ? (0, i.jsx)(L.default, {
-                            element: H
+                        children: [null != Y ? (0, i.jsx)(L.default, {
+                            element: Y
                         }) : null, null != U(t, "breadcrumbs") && (0, i.jsx)(d.default, {
                             history: G
                         }), null != U(t, "message_preview") && ("message" === n.name || "first_dm" === n.name) && (0, i.jsx)(O.default, {
@@ -160865,14 +160871,14 @@
                             children: y.default.Messages.MOBILE_REPORTS_BLOCK_ELEMENT_HEADER
                         }), null != U(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name) && (0, i.jsx)(u.default, {
                             userId: "user" === n.name ? n.record.id : n.record.author.id,
-                            reportId: V,
+                            reportId: x,
                             reportName: n.name
                         }), null != U(t, "delete_message") && "message" === n.name && (0, i.jsx)(c.default, {
                             message: n.record,
-                            reportId: V
+                            reportId: x
                         }), null != U(t, "leave_guild") && "guild" === n.name && (0, i.jsx)(p.default, {
                             guildId: n.record.id,
-                            reportId: V
+                            reportId: x
                         }), null != U(t, "channel_preview") && "stage_channel" === n.name && (0, i.jsx)(R.default, {
                             stageInstance: n.record
                         }), null != U(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, i.jsx)(A.default, {
@@ -160881,38 +160887,38 @@
                             entry: n.record
                         }), null != U(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, i.jsx)(h.default, {
                             entry: n.record
-                        }), null != F && (0, i.jsx)(C.default, {
-                            element: F,
+                        }), null != H && (0, i.jsx)(C.default, {
+                            element: H,
                             onChange: (e, t) => {
                                 let n = {
-                                    ...Q
+                                    ...$
                                 };
-                                e in Q ? delete n[e] : n[e] = t, q(n), et((0, o.areRequiredElementsUnfilled)(j, W, F, J, n))
+                                e in $ ? delete n[e] : n[e] = t, ee(n), er((0, o.areRequiredElementsUnfilled)(W, K, H, et, n))
                             },
-                            state: Q
-                        }), ("user_urf" === n.name || "message_urf" === n.name) && null != W && W.length > 0 && (0, i.jsx)(E.default, {
+                            state: $
+                        }), ("user_urf" === n.name || "message_urf" === n.name) && null != K && K.length > 0 && (0, i.jsx)(E.default, {
+                            elements: K,
+                            onChange: es,
+                            state: et
+                        }), ("user_urf" === n.name || "message_urf" === n.name) && null != W && W.length > 0 && (0, i.jsx)(f.default, {
                             elements: W,
-                            onChange: en,
-                            state: J
-                        }), ("user_urf" === n.name || "message_urf" === n.name) && null != j && j.length > 0 && (0, i.jsx)(f.default, {
-                            elements: j,
-                            onChange: en,
-                            state: J
+                            onChange: es,
+                            state: et
                         }), (0, i.jsx)(_.default, {
                             node: t,
-                            onSelectChild: ei
-                        }), null != Y && Y.length > 0 ? (0, i.jsx)(T.default, {
-                            elements: Y
+                            onSelectChild: ea
+                        }), null != j && j.length > 0 ? (0, i.jsx)(T.default, {
+                            elements: j
                         }) : null, (0, i.jsx)(I.default, {
-                            errorMessage: Z,
+                            errorMessage: q,
                             onClose: () => {
-                                X("")
+                                J("")
                             }
                         })]
                     }), (0, i.jsx)(l.default, {
                         button: t.button,
-                        submitting: K,
-                        disableNext: ee,
+                        submitting: z,
+                        disableNext: ei,
                         onClick: e => {
                             switch (e.type) {
                                 case "done":
@@ -160920,10 +160926,10 @@
                                     k();
                                     break;
                                 case "next":
-                                    ei(["", e.target]);
+                                    ea(["", e.target]);
                                     break;
                                 case "submit":
-                                    z(!0), es()
+                                    Z(!0), el()
                             }
                         },
                         onBackClicked: e.onNavigateBack,
@@ -173367,8 +173373,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716326520974",
-                                    build_number: "295274"
+                                    built_at: "1716327096860",
+                                    build_number: "295283"
                                 }
                             },
                             retries: 1
@@ -250310,7 +250316,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d193c6268d8ef3c4d76bd143dc2fd6a1011e1d65"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5327399e6a43be7485d2796c19fa26e959e4d0ac"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279409,7 +279415,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295274"
+                                build_number: "295283"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286767,7 +286773,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295274", "295274"), 10);
+                let s = parseInt((n = "295283", "295283"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314457,4 +314463,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.38554dd45d8f26ad4af3.js.map
+//# sourceMappingURL=71586.eea8f5a224a99ae15e6f.js.map
