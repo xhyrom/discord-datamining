@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295196", ", Version Hash: ").concat("8764494144b09e1d4c2370fd8d8d0cd09d9195ae")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295220", ", Version Hash: ").concat("147975dd28113af07e5881f70bd2742b0c041c3f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -59096,8 +59096,7 @@
                     })
                 }
                 _handleVideo(e, t, n, i, r) {
-                    let s = this._connection;
-                    if (null != s && this.userId !== t) {
+                    if (null != this._connection && this.userId !== t) {
                         if (null != this._localMediaSinkWantsManager) {
                             this._localMediaSinkWantsManager.setAudioSSRC(t, n);
                             let e = r.map(e => ({
@@ -59116,15 +59115,15 @@
                                 quality: 100,
                                 active: i > 0
                             }), this._localMediaSinkWantsManager.setVideoSSRCs(t, e)
-                        } else if (2 === r.length) {
-                            var a, o;
+                        } else {
+                            var s, a;
                             let e = [];
                             for (let t of r) null != t.ssrc && null != t.quality && e.push({
                                 ssrc: t.ssrc,
                                 quality: t.quality
                             });
-                            null === (a = this._goLiveQualityManager) || void 0 === a || a.setUserID(t), null === (o = this._goLiveQualityManager) || void 0 === o || o.updateAudioAndVideoStreamInfo(n, e)
-                        } else s.createUser(t, n, [i]);
+                            null === (s = this._goLiveQualityManager) || void 0 === s || s.setUserID(t), null === (a = this._goLiveQualityManager) || void 0 === a || a.updateAudioAndVideoStreamInfo(n, e)
+                        }
                         null == r || r.forEach(e => {
                             100 === e.quality && this.emit(K.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, t, e.maxResolution, e.maxFrameRate, this.context)
                         })
@@ -59915,13 +59914,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 DEFAULT_WANTS_FULL: function() {
-                    return T
+                    return f
                 },
                 RTCMediaSinkWantsManagerEvent: function() {
                     return i
                 },
                 default: function() {
-                    return A
+                    return m
                 }
             }), n("47120"), n("653041");
             var i, r, s = n("47770"),
@@ -59932,9 +59931,10 @@
                 d = n("526167"),
                 _ = n("70956"),
                 c = n("709054"),
-                E = n("981631");
+                E = n("562319"),
+                I = n("981631");
 
-            function I(e, t, n) {
+            function T(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -59942,14 +59942,14 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let T = {
+            let f = {
                     any: 100
                 },
-                f = 30 * _.default.Millis.SECOND,
-                S = 120 * _.default.Millis.SECOND,
-                h = -1 !== (0, d.getFirefoxVersion)();
+                S = 30 * _.default.Millis.SECOND,
+                h = 120 * _.default.Millis.SECOND,
+                A = -1 !== (0, d.getFirefoxVersion)();
             (r = i || (i = {})).UserSSRCUpdate = "user-ssrc-update", r.Update = "update";
-            class A extends s.default {
+            class m extends s.default {
                 getWantsLevel() {
                     let e = this.getVideoParticipantCount();
                     return this.ladder.getMaxSinkValue(e)
@@ -59959,7 +59959,8 @@
                 }
                 shouldReceiveFromUser(e) {
                     var t, n;
-                    return !((null === (t = this.connection) || void 0 === t ? void 0 : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null === (n = this.videoHealthManager) || void 0 === n ? void 0 : n.getCurrentVideoToggleState(e)) !== E.VideoToggleState.AUTO_PROBING)
+                    let i = !((null === (t = this.connection) || void 0 === t ? void 0 : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null === (n = this.videoHealthManager) || void 0 === n ? void 0 : n.getCurrentVideoToggleState(e)) !== I.VideoToggleState.AUTO_PROBING);
+                    return E.default.isIncomingVideoEnabled() && i
                 }
                 getAudioSSRCs() {
                     return this.audioSsrcs
@@ -60004,7 +60005,7 @@
                     return delete this.audioSsrcs[e], delete this.videoSsrcs[e], this.participants.delete(e), delete this.streamIds[e], this.update(Array.from(this.participants))
                 }
                 reset() {
-                    this.setConnection(null, !1), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.latestWants = T
+                    this.setConnection(null, !1), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.latestWants = f
                 }
                 setSelectedParticipant(e) {
                     if (e === this.selectedParticipantId) return this.latestWants;
@@ -60045,11 +60046,11 @@
                     return e
                 }
                 getOffscreenTimeoutMs() {
-                    return this.isStageChannel ? S : f
+                    return this.isStageChannel ? h : S
                 }
                 constructor(e, t, n, i = new o.MediaSinkWantsLadder) {
                     var r;
-                    super(), r = this, I(this, "userId", void 0), I(this, "isStageChannel", void 0), I(this, "supportsSeamless", void 0), I(this, "ladder", void 0), I(this, "connection", void 0), I(this, "audioSsrcs", void 0), I(this, "videoSsrcs", void 0), I(this, "remoteVideoSsrcs", void 0), I(this, "framesReceived", void 0), I(this, "streamIds", void 0), I(this, "offscreenUsers", void 0), I(this, "offscreenDisabledUsers", void 0), I(this, "latestWants", void 0), I(this, "participants", void 0), I(this, "selectedParticipantId", void 0), I(this, "delayedCall", void 0), I(this, "offscreenTimeout", void 0), I(this, "pipOpen", void 0), I(this, "videoHealthManager", void 0), I(this, "delayedUpdate", void 0), I(this, "addLru", void 0), I(this, "updateOffscreenUsers", void 0), I(this, "handleLocalVideoDisabled", void 0), I(this, "handleLocalMute", void 0), I(this, "update", void 0), this.userId = e, this.isStageChannel = t, this.supportsSeamless = n, this.ladder = i, this.connection = null, this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.offscreenUsers = {}, this.offscreenDisabledUsers = {}, this.latestWants = T, this.participants = new Set, this.selectedParticipantId = null, this.pipOpen = !1, this.videoHealthManager = null, this.delayedUpdate = () => {
+                    super(), r = this, T(this, "userId", void 0), T(this, "isStageChannel", void 0), T(this, "supportsSeamless", void 0), T(this, "ladder", void 0), T(this, "connection", void 0), T(this, "audioSsrcs", void 0), T(this, "videoSsrcs", void 0), T(this, "remoteVideoSsrcs", void 0), T(this, "framesReceived", void 0), T(this, "streamIds", void 0), T(this, "offscreenUsers", void 0), T(this, "offscreenDisabledUsers", void 0), T(this, "latestWants", void 0), T(this, "participants", void 0), T(this, "selectedParticipantId", void 0), T(this, "delayedCall", void 0), T(this, "offscreenTimeout", void 0), T(this, "pipOpen", void 0), T(this, "videoHealthManager", void 0), T(this, "delayedUpdate", void 0), T(this, "addLru", void 0), T(this, "updateOffscreenUsers", void 0), T(this, "handleLocalVideoDisabled", void 0), T(this, "handleLocalMute", void 0), T(this, "update", void 0), this.userId = e, this.isStageChannel = t, this.supportsSeamless = n, this.ladder = i, this.connection = null, this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.offscreenUsers = {}, this.offscreenDisabledUsers = {}, this.latestWants = f, this.participants = new Set, this.selectedParticipantId = null, this.pipOpen = !1, this.videoHealthManager = null, this.delayedUpdate = () => {
                         this.delayedCall.delay()
                     }, this.addLru = (e, t, n) => {
                         if (n.push(e), n.length <= 3) return;
@@ -60102,8 +60103,10 @@
                             var i;
                             (null === (i = r.connection) || void 0 === i ? void 0 : i.getLocalMute(e)) && (n[t] = 0)
                         }
-                        return h ? r.latestWants : (null != r.connection && !(0, l.default)(r.latestWants, n) && (r.latestWants = n, r.emit("update", n)), n)
-                    }, this.delayedCall = new u.DelayedCall(100, this.update), this.offscreenTimeout = new u.Timeout
+                        return A ? r.latestWants : (null != r.connection && !(0, l.default)(r.latestWants, n) && (r.latestWants = n, r.emit("update", n)), n)
+                    }, this.delayedCall = new u.DelayedCall(100, this.update), this.offscreenTimeout = new u.Timeout, E.default.subscribe(() => {
+                        this.update()
+                    })
                 }
             }
         },
@@ -62076,6 +62079,67 @@
                 }
                 constructor(e, t) {
                     a(this, "userId", void 0), a(this, "channelId", void 0), a(this, "maxVoiceStateCount", 1), a(this, "totalParticipants", void 0), a(this, "speaking", s.SpeakingFlags.NONE), a(this, "maxListenerCount", 0), a(this, "totalListeners", void 0), a(this, "maxSpeakerCount", 0), a(this, "totalSpeakers", void 0), this.userId = e, this.setChannelId(t)
+                }
+            }
+        },
+        562319: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("846519"),
+                r = n("570140"),
+                s = n("710845"),
+                a = n("671335"),
+                o = n("928518"),
+                l = n("451478"),
+                u = n("70956"),
+                d = n("981631");
+
+            function _(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let c = new class e {
+                isIncomingVideoEnabled() {
+                    return this.incomingVideoEnabled
+                }
+                subscribe(e) {
+                    this.videoEnabledObservers.add(e)
+                }
+                unsubscribe(e) {
+                    this.videoEnabledObservers.delete(e)
+                }
+                setIncomingVideoEnabled(e) {
+                    let t = this.incomingVideoEnabled !== e;
+                    this.incomingVideoEnabled = e, t && (this.logger.info("Window visibility incoming video changed, incomingVideoEnabled = ".concat(this.incomingVideoEnabled)), this.videoEnabledObservers.forEach(e => e(this.incomingVideoEnabled)))
+                }
+                anyDiscordWindowVisible() {
+                    return l.default.isVisible() || o.default.getWindowVisible(d.PopoutWindowKeys.CHANNEL_CALL_POPOUT)
+                }
+                constructor() {
+                    _(this, "hiddenWindowDisableVideoTimer", new i.Timeout), _(this, "incomingVideoEnabled", !0), _(this, "videoEnabledObservers", new Set), _(this, "logger", new s.default("WindowVisibilityVideoManager")), _(this, "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", 30 * u.default.Millis.SECOND), _(this, "handleWindowVisibilityChange", () => {
+                        a.default.getCurrentConfig({
+                            location: "WindowVisibilityVideoManager"
+                        }, {
+                            autoTrackExposure: !0
+                        }).stopVideoForHiddenWindow && (this.anyDiscordWindowVisible() ? (this.hiddenWindowDisableVideoTimer.stop(), this.setIncomingVideoEnabled(!0)) : this.hiddenWindowDisableVideoTimer.start(this.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS, () => {
+                            this.setIncomingVideoEnabled(!1)
+                        }))
+                    }), r.default.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange)
+                }
+            };
+            t.default = new class e {
+                isIncomingVideoEnabled() {
+                    return c.isIncomingVideoEnabled()
+                }
+                subscribe(e) {
+                    c.subscribe(e)
+                }
+                unsubscribe(e) {
+                    c.unsubscribe(e)
                 }
             }
         },
@@ -88439,8 +88503,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295196", "295196"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295196")), t = 0), t
+                let t = parseInt((e = "295220", "295220"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295220")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116304,8 +116368,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295196",
-                    versionHash: "8764494144b09e1d4c2370fd8d8d0cd09d9195ae"
+                    buildNumber: "295220",
+                    versionHash: "147975dd28113af07e5881f70bd2742b0c041c3f"
                 }
             }
             n.r(t), n.d(t, {
@@ -137739,14 +137803,15 @@
                     return i
                 },
                 default: function() {
-                    return u
+                    return d
                 }
             }), n("653041"), n("47120");
             var i, r, s = n("392711"),
                 a = n.n(s),
-                o = n("47770");
+                o = n("47770"),
+                l = n("562319");
 
-            function l(e, t, n) {
+            function u(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -137754,7 +137819,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }(r = i || (i = {})).RequestedSSRCsUpdate = "requested-ssrcs-update", r.RequestedStreamsUpdate = "requested-streams-update";
-            class u extends o.default {
+            class d extends o.default {
                 setUserID(e) {
                     this.userId = e
                 }
@@ -137772,20 +137837,25 @@
                 }
                 update() {
                     if (void 0 === this.userId || null === this.userId) return;
-                    let e = a().minBy(this.videoStreams, e => e.quality),
-                        t = a().maxBy(this.videoStreams, e => e.quality);
-                    if (void 0 === e || void 0 === t) return;
-                    let n = [],
-                        i = {
+                    let e = this.videoStreams.length > 1,
+                        t = a().minBy(this.videoStreams, e => e.quality),
+                        n = a().maxBy(this.videoStreams, e => e.quality);
+                    if (void 0 === t || void 0 === n) return;
+                    let i = [],
+                        r = {
                             any: 100
                         };
-                    for (let r of (this.downgraded ? (n.push(e.ssrc), this.supportsSeamless && !this.framesReceived.get(e.ssrc) && this.hasEverReceivedFrame() && n.push(t.ssrc)) : (n.push(t.ssrc), this.supportsSeamless && !this.framesReceived.get(t.ssrc) && this.hasEverReceivedFrame() && n.push(e.ssrc)), n)) r === e.ssrc ? i[r] = 60 : r === t.ssrc && (i[r] = 100);
+                    for (let s of (this.downgraded && e ? (i.push(t.ssrc), this.supportsSeamless && !this.framesReceived.get(t.ssrc) && this.hasEverReceivedFrame() && i.push(n.ssrc)) : (i.push(n.ssrc), this.supportsSeamless && !this.framesReceived.get(n.ssrc) && this.hasEverReceivedFrame() && i.push(t.ssrc)), i)) s === t.ssrc ? r[s] = 60 : s === n.ssrc && (r[s] = 100);
+                    if (!l.default.isIncomingVideoEnabled())
+                        for (let e in i = [], r) "any" !== e && (r[e] = 0);
                     if (this.hasEverReceivedFrame())
-                        for (let e of this.videoStreams) !n.includes(e.ssrc) && this.framesReceived.delete(e.ssrc);
-                    this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, n), this.emit("requested-streams-update", i)
+                        for (let e of this.videoStreams) !i.includes(e.ssrc) && this.framesReceived.delete(e.ssrc);
+                    this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, i), this.emit("requested-streams-update", r)
                 }
                 constructor(e) {
-                    super(), l(this, "supportsSeamless", void 0), l(this, "userId", void 0), l(this, "videoStreams", void 0), l(this, "audioSSRC", void 0), l(this, "downgraded", void 0), l(this, "framesReceived", void 0), this.supportsSeamless = e, this.videoStreams = [], this.audioSSRC = 0, this.downgraded = !1, this.framesReceived = new Map
+                    super(), u(this, "supportsSeamless", void 0), u(this, "userId", void 0), u(this, "videoStreams", void 0), u(this, "audioSSRC", void 0), u(this, "downgraded", void 0), u(this, "framesReceived", void 0), this.supportsSeamless = e, this.videoStreams = [], this.audioSSRC = 0, this.downgraded = !1, this.framesReceived = new Map, l.default.subscribe(() => {
+                        this.update()
+                    })
                 }
             }
         },
@@ -166928,6 +166998,26 @@
                 }]
             })
         },
+        671335: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("818083");
+            t.default = (0, i.createExperiment)({
+                kind: "user",
+                id: "2024-05_hiding_window_disables_video",
+                label: "Hiding Window Disables Incoming Video",
+                defaultConfig: {
+                    stopVideoForHiddenWindow: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "test",
+                    config: {
+                        stopVideoForHiddenWindow: !0
+                    }
+                }]
+            })
+        },
         631610: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -173280,8 +173370,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716319276460",
-                                    build_number: "295196"
+                                    built_at: "1716322289618",
+                                    build_number: "295220"
                                 }
                             },
                             retries: 1
@@ -250223,7 +250313,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8764494144b09e1d4c2370fd8d8d0cd09d9195ae"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "147975dd28113af07e5881f70bd2742b0c041c3f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279322,7 +279412,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295196"
+                                build_number: "295220"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286680,7 +286770,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295196", "295196"), 10);
+                let s = parseInt((n = "295220", "295220"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314370,4 +314460,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.86978b760841c9579ca3.js.map
+//# sourceMappingURL=71586.c0225f82c91807aa543b.js.map
