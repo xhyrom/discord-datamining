@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295145", ", Version Hash: ").concat("ce96c9e45f344f8c4d7c03ee2621eb1c7a7312ce")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295157", ", Version Hash: ").concat("968af05ac132d19ff922f6a267395d349ead134c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -74647,7 +74647,7 @@
                 },
                 QuestsManager: {
                     actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "STREAM_START", "STREAM_CREATE", "STREAM_CLOSE", "LOGOUT", "PASSIVE_UPDATE_V1", "VOICE_STATE_UPDATES", "EMBEDDED_ACTIVITY_UPDATE", "EMBEDDED_ACTIVITY_UPDATE_V2", "USER_SETTINGS_PROTO_UPDATE"],
-                    inlineRequire: () => n("313122").default,
+                    inlineRequire: () => n("394457").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
                 VoiceChannelGameActivityManager: {
@@ -88439,8 +88439,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295145", "295145"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295145")), t = 0), t
+                let t = parseInt((e = "295157", "295157"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295157")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116304,8 +116304,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295145",
-                    versionHash: "ce96c9e45f344f8c4d7c03ee2621eb1c7a7312ce"
+                    buildNumber: "295157",
+                    versionHash: "968af05ac132d19ff922f6a267395d349ead134c"
                 }
             }
             n.r(t), n.d(t, {
@@ -173280,8 +173280,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716316488503",
-                                    build_number: "295145"
+                                    built_at: "1716317327844",
+                                    build_number: "295157"
                                 }
                             },
                             retries: 1
@@ -190909,386 +190909,7 @@
                     return i && a
                 }
         },
-        874137: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                QuestContentImpressionTracker: function() {
-                    return S
-                }
-            }), n("47120");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("153832"),
-                a = n("286379"),
-                o = n("442837"),
-                l = n("434650"),
-                u = n("110924"),
-                d = n("797614"),
-                _ = n("451478"),
-                c = n("617136"),
-                E = n("184309"),
-                I = n("981631");
-
-            function T(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            class f {
-                constructor(e, t, n, i, r) {
-                    var o = this;
-                    T(this, "id", void 0), T(this, "quests", void 0), T(this, "questContent", void 0), T(this, "questContentPosition", void 0), T(this, "trackGuildAndChannelMetadata", void 0), T(this, "triggeredByStatusChange", void 0), T(this, "beatTimeout", void 0), T(this, "lastBeatTime", void 0), T(this, "minViewTimeReachedTimeout", void 0), T(this, "minViewTimeSecond", void 0), T(this, "minViewportPercentage", void 0), T(this, "onMinViewTimeReached", () => {
-                        this.quests.forEach(e => {
-                            (0, c.trackQuestEvent)({
-                                questId: e.id,
-                                event: I.AnalyticEvents.QUEST_CONTENT_VIEWED,
-                                properties: {
-                                    min_view_time_seconds: this.minViewTimeSecond,
-                                    min_viewport_percentage: this.minViewportPercentage,
-                                    triggered_by_status_change: this.triggeredByStatusChange,
-                                    ...this.commonProperties(e)
-                                },
-                                trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata
-                            })
-                        })
-                    }), T(this, "heartbeat", function() {
-                        let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-                        o.quests.forEach(t => {
-                            null != o.lastBeatTime && (0, c.trackQuestEvent)({
-                                questId: t.id,
-                                event: I.AnalyticEvents.QUEST_CONTENT_VIEW_TIME,
-                                properties: {
-                                    is_termination_beat: e,
-                                    viewed_time_ms: Date.now() - o.lastBeatTime,
-                                    triggered_by_status_change: o.triggeredByStatusChange,
-                                    ...o.commonProperties(t)
-                                },
-                                trackGuildAndChannelMetadata: o.trackGuildAndChannelMetadata
-                            })
-                        }), o.lastBeatTime = Date.now()
-                    }), T(this, "commonProperties", e => ({
-                        impression_id: this.id,
-                        quest_status: (0, c.getQuestStatus)(e),
-                        ...(0, c.getContentProperties)(this.questContent, this.questContentPosition)
-                    })), T(this, "start", () => {
-                        this.stop(!1), this.lastBeatTime = Date.now(), this.beatTimeout = setInterval(() => this.heartbeat(), 6e4), this.minViewTimeReachedTimeout = setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSecond), this.quests.forEach(e => {
-                            (0, c.trackQuestEvent)({
-                                questId: e.id,
-                                event: I.AnalyticEvents.QUEST_CONTENT_LOADED,
-                                properties: {
-                                    triggered_by_status_change: this.triggeredByStatusChange,
-                                    ...this.commonProperties(e)
-                                },
-                                trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata
-                            })
-                        }), (0, E.isEligibleForQuestsClientMonitoring)("QuestImpressionTracker") && d.default.increment({
-                            name: a.MetricEvents.QUEST_CONTENT_IMPRESSION,
-                            tags: ["quest_content:".concat((0, c.getQuestContentName)(this.questContent))]
-                        })
-                    }), T(this, "stop", function() {
-                        let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-                        e && o.heartbeat(!0), o.lastBeatTime = void 0, clearInterval(o.beatTimeout), clearTimeout(o.minViewTimeReachedTimeout)
-                    }), this.id = (0, s.v4)(), this.questContent = t, this.questContentPosition = n, this.minViewTimeSecond = 1, this.minViewportPercentage = .5, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = i
-                }
-            }
-
-            function S(e) {
-                let t = Array.isArray(e.questOrQuests) ? e.questOrQuests.sort().map(e => e.id).join("_") : e.questOrQuests.id;
-                return (0, i.jsx)(h, {
-                    ...e
-                }, "".concat(t, "_").concat(e.questContent))
-            }
-
-            function h(e) {
-                var t;
-                let n = (0, o.useStateFromStores)([_.default], () => _.default.isFocused()),
-                    s = n !== (0, u.default)(n),
-                    [a, d] = r.useState(!1),
-                    E = null !== (t = e.overrideVisibility) && void 0 !== t ? t : a,
-                    I = E !== (0, u.default)(E),
-                    T = Array.isArray(e.questOrQuests) ? null : (0, c.getQuestStatus)(e.questOrQuests),
-                    S = (0, u.default)(T),
-                    h = T !== S,
-                    A = r.useRef(null),
-                    m = (0, l.useIsVisible)(e => d(e), .5);
-                return r.useEffect(() => () => {
-                    null != A.current && A.current.stop()
-                }, []), r.useEffect(() => {
-                    let t = n && E,
-                        i = (I || s || h) && t,
-                        r = (I || s) && !t || h;
-                    (i || r) && null != A.current && A.current.stop(), i && (A.current = new f(e.questOrQuests, e.questContent, e.questContentPosition, h, e.trackGuildAndChannelMetadata), A.current.start())
-                }, [n, E, A, s, I, e.questOrQuests, e.questContent, e.questContentPosition, e.trackGuildAndChannelMetadata, h]), (0, i.jsx)(i.Fragment, {
-                    children: e.children(m)
-                })
-            }
-        },
-        644646: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("442837"),
-                l = n("481060"),
-                u = n("230711"),
-                d = n("607070"),
-                _ = n("507893"),
-                c = n("810090"),
-                E = n("617136"),
-                I = n("918701"),
-                T = n("78826"),
-                f = n("981631"),
-                S = n("689938"),
-                h = n("680273");
-            t.default = function(e) {
-                let {
-                    className: t,
-                    quest: n,
-                    autoplay: s = !0,
-                    learnMoreStyle: A = null
-                } = e, m = (0, o.useStateFromStores)([d.default], () => d.default.useReducedMotion), N = r.useMemo(() => (0, I.isAssetAnimated)(n.config.assets.rewardTile), [n]), p = r.useCallback(t => {
-                    var i;
-                    (0, E.trackQuestContentClicked)({
-                        questId: n.id,
-                        questContent: e.questContent,
-                        questContentPosition: e.questContentPosition,
-                        questContentCTA: E.QuestContentCTA.REWARD_LEARN_MORE
-                    }), u.default.open(f.UserSettingsSections.INVENTORY), null === (i = e.onClick) || void 0 === i || i.call(e, t)
-                }, [n.id, e]), O = r.useRef(null), C = r.useRef(s);
-                r.useEffect(() => {
-                    var e, t;
-                    N && !m && null != O.current && (s && !C.current ? null === (e = O.current) || void 0 === e || e.play() : !s && C.current && (null === (t = O.current) || void 0 === t || t.pause()), C.current = s)
-                }, [s, N, m]);
-                let R = (0, I.getRewardAssetUrl)(n),
-                    g = N ? (0, i.jsx)(T.QuestsAsset, {
-                        id: "QuestRewardTile_rewardTileAnimated",
-                        children: e => (0, i.jsx)(c.default, {
-                            ref: t => {
-                                e.current = t, O.current = t
-                            },
-                            autoPlay: !m && s,
-                            loop: !0,
-                            muted: !0,
-                            playsInline: !0,
-                            className: h.questRewardTileAsset,
-                            controls: !1,
-                            children: (0, i.jsx)("source", {
-                                src: R,
-                                type: (0, I.getVideoAssetMimeType)(R)
-                            })
-                        })
-                    }) : (0, i.jsx)(T.QuestsAsset, {
-                        id: "QuestRewardTile_rewardTileStatic",
-                        children: e => (0, i.jsx)("img", {
-                            ref: e,
-                            alt: n.config.messages.rewardName,
-                            className: a()(h.questRewardTileAsset, h.questRewardTileAssetStatic),
-                            src: R
-                        })
-                    });
-                return null == A ? (0, i.jsx)("div", {
-                    className: a()(t, h.questRewardTile),
-                    children: g
-                }) : (0, i.jsxs)(l.Clickable, {
-                    className: a()(h.questRewardTile, h.questRewardTileInteractive, t),
-                    onClick: p,
-                    children: ["text" === A && (0, i.jsx)(l.Text, {
-                        color: "always-white",
-                        variant: "text-xs/normal",
-                        className: h.questRewardTileDetailsLearnMore,
-                        children: S.default.Messages.QUESTS_LEARN_MORE_STACKED.format()
-                    }), "icon" === A && (0, i.jsx)("div", {
-                        className: h.questRewardTileDetailsLearnMore,
-                        children: (0, i.jsx)(_.default, {
-                            color: l.tokens.colors.WHITE.css,
-                            width: 12,
-                            height: 12
-                        })
-                    }), g]
-                })
-            }
-        },
-        78826: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                QuestsAsset: function() {
-                    return d
-                },
-                QuestsAssetContextProvider: function() {
-                    return u
-                },
-                useQuestsAssetsLoadState: function() {
-                    return _
-                }
-            }), n("411104"), n("47120");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("374470"),
-                a = n("960048");
-            let o = r.createContext({
-                registerAsset: () => {},
-                unregisterAsset: () => {},
-                hasError: !1,
-                isLoading: !0
-            });
-
-            function l(e) {
-                return (0, s.isElement)(e, HTMLImageElement) ? e.complete : !(0, s.isElement)(e, HTMLVideoElement) || e.readyState >= 2
-            }
-
-            function u(e) {
-                let {
-                    children: t,
-                    isPreview: n = !1,
-                    sentrySource: u
-                } = e, [d, _] = r.useState(!1), [c, E] = r.useState(new Set), [I, T] = r.useState(!1), f = r.useRef(!1);
-                r.useEffect(() => {
-                    let e = new Set;
-                    for (let t of c) !l(t) && e.add(t);
-                    e.size !== c.size && E(e)
-                }, [c]);
-                let S = r.useCallback(e => {
-                        let {
-                            assetNode: t,
-                            nodeId: i,
-                            errorPrefix: r,
-                            errorMessage: o
-                        } = e;
-                        if (!n && null != u) {
-                            var l, d, c;
-                            a.default.captureException(Error("".concat(r, ": ").concat(null != o ? "".concat(o, ", ") : "").concat((l = t, (0, s.isElement)(l, HTMLImageElement) ? l.getAttribute("src") : (0, s.isElement)(l, HTMLVideoElement) ? null !== (c = null === (d = l.querySelectorAll("source")[0]) || void 0 === d ? void 0 : d.getAttribute("src")) && void 0 !== c ? c : "video" : l.tagName), ", ").concat(i)), {
-                                tags: {
-                                    source: u
-                                }
-                            }), _(!0)
-                        }
-                    }, [n, u]),
-                    h = r.useCallback(e => {
-                        E(t => {
-                            let n = new Set(t);
-                            return n.delete(e), n
-                        })
-                    }, []),
-                    A = r.useCallback((e, t) => {
-                        var n;
-                        if (T(!0), l(e)) return;
-                        E(t => {
-                            let n = new Set(t);
-                            return n.add(e), n
-                        });
-                        let i = (n = e, (0, s.isElement)(n, HTMLImageElement) ? "load" : (0, s.isElement)(n, HTMLVideoElement) ? "canplaythrough" : "load");
-                        e.addEventListener(i, function t() {
-                            h(e), e.removeEventListener(i, t)
-                        });
-                        e.addEventListener("error", function n(i) {
-                            h(e), S({
-                                assetNode: e,
-                                nodeId: t,
-                                errorPrefix: "Error loading asset",
-                                errorMessage: "message" in i ? i.message : null
-                            }), e.removeEventListener("error", n)
-                        })
-                    }, [S, h]),
-                    m = r.useMemo(() => c.size > 0 || !I, [I, c]);
-                r.useEffect(() => {
-                    !m && (f.current = !0)
-                }, [m]);
-                let N = r.useMemo(() => ({
-                    registerAsset: A,
-                    unregisterAsset: h,
-                    hasError: d,
-                    isLoading: m && !f.current
-                }), [A, h, d, m]);
-                return (0, i.jsx)(o.Provider, {
-                    value: N,
-                    children: t
-                })
-            }
-
-            function d(e) {
-                let {
-                    id: t,
-                    children: n
-                } = e, {
-                    registerAsset: i,
-                    unregisterAsset: s
-                } = r.useContext(o), a = r.useRef(null);
-                return r.useEffect(() => {
-                    let e = a.current;
-                    return null != e && i(e, t), () => {
-                        null != e && s(e)
-                    }
-                }, [i, s, t]), n(a)
-            }
-
-            function _() {
-                let {
-                    hasError: e,
-                    isLoading: t
-                } = r.useContext(o);
-                return {
-                    hasError: e,
-                    isLoading: t
-                }
-            }
-        },
-        667105: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useHandleClaimQuestsReward: function() {
-                    return c
-                },
-                useHasLaunchedGame: function() {
-                    return E
-                }
-            });
-            var i = n("470079"),
-                r = n("442837"),
-                s = n("594190"),
-                a = n("594174"),
-                o = n("617136"),
-                l = n("918701"),
-                u = n("920916"),
-                d = n("669041"),
-                _ = n("341907");
-
-            function c(e) {
-                let {
-                    quest: t,
-                    location: n,
-                    questContentPosition: s
-                } = e, c = (0, r.useStateFromStores)([a.default], () => {
-                    var e;
-                    return null === (e = a.default.getCurrentUser()) || void 0 === e ? void 0 : e.verified
-                });
-                return i.useCallback(() => {
-                    null != t && ((0, o.trackQuestContentClicked)({
-                        questId: t.id,
-                        questContent: n,
-                        questContentCTA: o.QuestContentCTA.CLAIM_REWARD,
-                        questContentPosition: s
-                    }), c ? (0, l.hasQuestCollectibleRewards)(t.config) ? (0, u.openCollectibleRewardModal)(t, n) : (0, _.openQuestsRewardCodeModal)({
-                        questId: t.id,
-                        location: n,
-                        questContentPosition: s
-                    }) : (0, d.openRewardModalUnverified)())
-                }, [t, n, s, c])
-            }
-
-            function E(e) {
-                var t;
-                let n = (0, r.useStateFromStoresArray)([s.default], () => s.default.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
-                if (null == n) return !1;
-                let i = Date.now() - 2592e7;
-                return i <= (null !== (t = n.lastLaunched) && void 0 !== t ? t : 0)
-            }
-        },
-        313122: function(e, t, n) {
+        394457: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 generatePsuedoStreamKey: function() {
@@ -191775,6 +191396,385 @@
                 }
             }
             t.default = new B
+        },
+        874137: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                QuestContentImpressionTracker: function() {
+                    return S
+                }
+            }), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("153832"),
+                a = n("286379"),
+                o = n("442837"),
+                l = n("434650"),
+                u = n("110924"),
+                d = n("797614"),
+                _ = n("451478"),
+                c = n("617136"),
+                E = n("184309"),
+                I = n("981631");
+
+            function T(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class f {
+                constructor(e, t, n, i, r) {
+                    var o = this;
+                    T(this, "id", void 0), T(this, "quests", void 0), T(this, "questContent", void 0), T(this, "questContentPosition", void 0), T(this, "trackGuildAndChannelMetadata", void 0), T(this, "triggeredByStatusChange", void 0), T(this, "beatTimeout", void 0), T(this, "lastBeatTime", void 0), T(this, "minViewTimeReachedTimeout", void 0), T(this, "minViewTimeSecond", void 0), T(this, "minViewportPercentage", void 0), T(this, "onMinViewTimeReached", () => {
+                        this.quests.forEach(e => {
+                            (0, c.trackQuestEvent)({
+                                questId: e.id,
+                                event: I.AnalyticEvents.QUEST_CONTENT_VIEWED,
+                                properties: {
+                                    min_view_time_seconds: this.minViewTimeSecond,
+                                    min_viewport_percentage: this.minViewportPercentage,
+                                    triggered_by_status_change: this.triggeredByStatusChange,
+                                    ...this.commonProperties(e)
+                                },
+                                trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata
+                            })
+                        })
+                    }), T(this, "heartbeat", function() {
+                        let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                        o.quests.forEach(t => {
+                            null != o.lastBeatTime && (0, c.trackQuestEvent)({
+                                questId: t.id,
+                                event: I.AnalyticEvents.QUEST_CONTENT_VIEW_TIME,
+                                properties: {
+                                    is_termination_beat: e,
+                                    viewed_time_ms: Date.now() - o.lastBeatTime,
+                                    triggered_by_status_change: o.triggeredByStatusChange,
+                                    ...o.commonProperties(t)
+                                },
+                                trackGuildAndChannelMetadata: o.trackGuildAndChannelMetadata
+                            })
+                        }), o.lastBeatTime = Date.now()
+                    }), T(this, "commonProperties", e => ({
+                        impression_id: this.id,
+                        quest_status: (0, c.getQuestStatus)(e),
+                        ...(0, c.getContentProperties)(this.questContent, this.questContentPosition)
+                    })), T(this, "start", () => {
+                        this.stop(!1), this.lastBeatTime = Date.now(), this.beatTimeout = setInterval(() => this.heartbeat(), 6e4), this.minViewTimeReachedTimeout = setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSecond), this.quests.forEach(e => {
+                            (0, c.trackQuestEvent)({
+                                questId: e.id,
+                                event: I.AnalyticEvents.QUEST_CONTENT_LOADED,
+                                properties: {
+                                    triggered_by_status_change: this.triggeredByStatusChange,
+                                    ...this.commonProperties(e)
+                                },
+                                trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata
+                            })
+                        }), (0, E.isEligibleForQuestsClientMonitoring)("QuestImpressionTracker") && d.default.increment({
+                            name: a.MetricEvents.QUEST_CONTENT_IMPRESSION,
+                            tags: ["quest_content:".concat((0, c.getQuestContentName)(this.questContent))]
+                        })
+                    }), T(this, "stop", function() {
+                        let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
+                        e && o.heartbeat(!0), o.lastBeatTime = void 0, clearInterval(o.beatTimeout), clearTimeout(o.minViewTimeReachedTimeout)
+                    }), this.id = (0, s.v4)(), this.questContent = t, this.questContentPosition = n, this.minViewTimeSecond = 1, this.minViewportPercentage = .5, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = i
+                }
+            }
+
+            function S(e) {
+                let t = Array.isArray(e.questOrQuests) ? e.questOrQuests.sort().map(e => e.id).join("_") : e.questOrQuests.id;
+                return (0, i.jsx)(h, {
+                    ...e
+                }, "".concat(t, "_").concat(e.questContent))
+            }
+
+            function h(e) {
+                var t;
+                let n = (0, o.useStateFromStores)([_.default], () => _.default.isFocused()),
+                    s = n !== (0, u.default)(n),
+                    [a, d] = r.useState(!1),
+                    E = null !== (t = e.overrideVisibility) && void 0 !== t ? t : a,
+                    I = E !== (0, u.default)(E),
+                    T = Array.isArray(e.questOrQuests) ? null : (0, c.getQuestStatus)(e.questOrQuests),
+                    S = (0, u.default)(T),
+                    h = T !== S,
+                    A = r.useRef(null),
+                    m = (0, l.useIsVisible)(e => d(e), .5);
+                return r.useEffect(() => () => {
+                    null != A.current && A.current.stop()
+                }, []), r.useEffect(() => {
+                    let t = n && E,
+                        i = (I || s || h) && t,
+                        r = (I || s) && !t || h;
+                    (i || r) && null != A.current && A.current.stop(), i && (A.current = new f(e.questOrQuests, e.questContent, e.questContentPosition, h, e.trackGuildAndChannelMetadata), A.current.start())
+                }, [n, E, A, s, I, e.questOrQuests, e.questContent, e.questContentPosition, e.trackGuildAndChannelMetadata, h]), (0, i.jsx)(i.Fragment, {
+                    children: e.children(m)
+                })
+            }
+        },
+        644646: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("120356"),
+                a = n.n(s),
+                o = n("442837"),
+                l = n("481060"),
+                u = n("230711"),
+                d = n("607070"),
+                _ = n("507893"),
+                c = n("810090"),
+                E = n("617136"),
+                I = n("918701"),
+                T = n("78826"),
+                f = n("981631"),
+                S = n("689938"),
+                h = n("680273");
+            t.default = function(e) {
+                let {
+                    className: t,
+                    quest: n,
+                    autoplay: s = !0,
+                    learnMoreStyle: A = null
+                } = e, m = (0, o.useStateFromStores)([d.default], () => d.default.useReducedMotion), N = r.useMemo(() => (0, I.isAssetAnimated)(n.config.assets.rewardTile), [n]), p = r.useCallback(t => {
+                    var i;
+                    (0, E.trackQuestContentClicked)({
+                        questId: n.id,
+                        questContent: e.questContent,
+                        questContentPosition: e.questContentPosition,
+                        questContentCTA: E.QuestContentCTA.REWARD_LEARN_MORE
+                    }), u.default.open(f.UserSettingsSections.INVENTORY), null === (i = e.onClick) || void 0 === i || i.call(e, t)
+                }, [n.id, e]), O = r.useRef(null), C = r.useRef(s);
+                r.useEffect(() => {
+                    var e, t;
+                    N && !m && null != O.current && (s && !C.current ? null === (e = O.current) || void 0 === e || e.play() : !s && C.current && (null === (t = O.current) || void 0 === t || t.pause()), C.current = s)
+                }, [s, N, m]);
+                let R = (0, I.getRewardAssetUrl)(n),
+                    g = N ? (0, i.jsx)(T.QuestsAsset, {
+                        id: "QuestRewardTile_rewardTileAnimated",
+                        children: e => (0, i.jsx)(c.default, {
+                            ref: t => {
+                                e.current = t, O.current = t
+                            },
+                            autoPlay: !m && s,
+                            loop: !0,
+                            muted: !0,
+                            playsInline: !0,
+                            className: h.questRewardTileAsset,
+                            controls: !1,
+                            children: (0, i.jsx)("source", {
+                                src: R,
+                                type: (0, I.getVideoAssetMimeType)(R)
+                            })
+                        })
+                    }) : (0, i.jsx)(T.QuestsAsset, {
+                        id: "QuestRewardTile_rewardTileStatic",
+                        children: e => (0, i.jsx)("img", {
+                            ref: e,
+                            alt: n.config.messages.rewardName,
+                            className: a()(h.questRewardTileAsset, h.questRewardTileAssetStatic),
+                            src: R
+                        })
+                    });
+                return null == A ? (0, i.jsx)("div", {
+                    className: a()(t, h.questRewardTile),
+                    children: g
+                }) : (0, i.jsxs)(l.Clickable, {
+                    className: a()(h.questRewardTile, h.questRewardTileInteractive, t),
+                    onClick: p,
+                    children: ["text" === A && (0, i.jsx)(l.Text, {
+                        color: "always-white",
+                        variant: "text-xs/normal",
+                        className: h.questRewardTileDetailsLearnMore,
+                        children: S.default.Messages.QUESTS_LEARN_MORE_STACKED.format()
+                    }), "icon" === A && (0, i.jsx)("div", {
+                        className: h.questRewardTileDetailsLearnMore,
+                        children: (0, i.jsx)(_.default, {
+                            color: l.tokens.colors.WHITE.css,
+                            width: 12,
+                            height: 12
+                        })
+                    }), g]
+                })
+            }
+        },
+        78826: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                QuestsAsset: function() {
+                    return d
+                },
+                QuestsAssetContextProvider: function() {
+                    return u
+                },
+                useQuestsAssetsLoadState: function() {
+                    return _
+                }
+            }), n("411104"), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("374470"),
+                a = n("960048");
+            let o = r.createContext({
+                registerAsset: () => {},
+                unregisterAsset: () => {},
+                hasError: !1,
+                isLoading: !0
+            });
+
+            function l(e) {
+                return (0, s.isElement)(e, HTMLImageElement) ? e.complete : !(0, s.isElement)(e, HTMLVideoElement) || e.readyState >= 2
+            }
+
+            function u(e) {
+                let {
+                    children: t,
+                    isPreview: n = !1,
+                    sentrySource: u
+                } = e, [d, _] = r.useState(!1), [c, E] = r.useState(new Set), [I, T] = r.useState(!1), f = r.useRef(!1);
+                r.useEffect(() => {
+                    let e = new Set;
+                    for (let t of c) !l(t) && e.add(t);
+                    e.size !== c.size && E(e)
+                }, [c]);
+                let S = r.useCallback(e => {
+                        let {
+                            assetNode: t,
+                            nodeId: i,
+                            errorPrefix: r,
+                            errorMessage: o
+                        } = e;
+                        if (!n && null != u) {
+                            var l, d, c;
+                            a.default.captureException(Error("".concat(r, ": ").concat(null != o ? "".concat(o, ", ") : "").concat((l = t, (0, s.isElement)(l, HTMLImageElement) ? l.getAttribute("src") : (0, s.isElement)(l, HTMLVideoElement) ? null !== (c = null === (d = l.querySelectorAll("source")[0]) || void 0 === d ? void 0 : d.getAttribute("src")) && void 0 !== c ? c : "video" : l.tagName), ", ").concat(i)), {
+                                tags: {
+                                    source: u
+                                }
+                            }), _(!0)
+                        }
+                    }, [n, u]),
+                    h = r.useCallback(e => {
+                        E(t => {
+                            let n = new Set(t);
+                            return n.delete(e), n
+                        })
+                    }, []),
+                    A = r.useCallback((e, t) => {
+                        var n;
+                        if (T(!0), l(e)) return;
+                        E(t => {
+                            let n = new Set(t);
+                            return n.add(e), n
+                        });
+                        let i = (n = e, (0, s.isElement)(n, HTMLImageElement) ? "load" : (0, s.isElement)(n, HTMLVideoElement) ? "canplaythrough" : "load");
+                        e.addEventListener(i, function t() {
+                            h(e), e.removeEventListener(i, t)
+                        });
+                        e.addEventListener("error", function n(i) {
+                            h(e), S({
+                                assetNode: e,
+                                nodeId: t,
+                                errorPrefix: "Error loading asset",
+                                errorMessage: "message" in i ? i.message : null
+                            }), e.removeEventListener("error", n)
+                        })
+                    }, [S, h]),
+                    m = r.useMemo(() => c.size > 0 || !I, [I, c]);
+                r.useEffect(() => {
+                    !m && (f.current = !0)
+                }, [m]);
+                let N = r.useMemo(() => ({
+                    registerAsset: A,
+                    unregisterAsset: h,
+                    hasError: d,
+                    isLoading: m && !f.current
+                }), [A, h, d, m]);
+                return (0, i.jsx)(o.Provider, {
+                    value: N,
+                    children: t
+                })
+            }
+
+            function d(e) {
+                let {
+                    id: t,
+                    children: n
+                } = e, {
+                    registerAsset: i,
+                    unregisterAsset: s
+                } = r.useContext(o), a = r.useRef(null);
+                return r.useEffect(() => {
+                    let e = a.current;
+                    return null != e && i(e, t), () => {
+                        null != e && s(e)
+                    }
+                }, [i, s, t]), n(a)
+            }
+
+            function _() {
+                let {
+                    hasError: e,
+                    isLoading: t
+                } = r.useContext(o);
+                return {
+                    hasError: e,
+                    isLoading: t
+                }
+            }
+        },
+        667105: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useHandleClaimQuestsReward: function() {
+                    return c
+                },
+                useHasLaunchedGame: function() {
+                    return E
+                }
+            });
+            var i = n("470079"),
+                r = n("442837"),
+                s = n("594190"),
+                a = n("594174"),
+                o = n("617136"),
+                l = n("918701"),
+                u = n("920916"),
+                d = n("669041"),
+                _ = n("341907");
+
+            function c(e) {
+                let {
+                    quest: t,
+                    location: n,
+                    questContentPosition: s
+                } = e, c = (0, r.useStateFromStores)([a.default], () => {
+                    var e;
+                    return null === (e = a.default.getCurrentUser()) || void 0 === e ? void 0 : e.verified
+                });
+                return i.useCallback(() => {
+                    null != t && ((0, o.trackQuestContentClicked)({
+                        questId: t.id,
+                        questContent: n,
+                        questContentCTA: o.QuestContentCTA.CLAIM_REWARD,
+                        questContentPosition: s
+                    }), c ? (0, l.hasQuestCollectibleRewards)(t.config) ? (0, u.openCollectibleRewardModal)(t, n) : (0, _.openQuestsRewardCodeModal)({
+                        questId: t.id,
+                        location: n,
+                        questContentPosition: s
+                    }) : (0, d.openRewardModalUnverified)())
+                }, [t, n, s, c])
+            }
+
+            function E(e) {
+                var t;
+                let n = (0, r.useStateFromStoresArray)([s.default], () => s.default.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
+                if (null == n) return !1;
+                let i = Date.now() - 2592e7;
+                return i <= (null !== (t = n.lastLaunched) && void 0 !== t ? t : 0)
+            }
         },
         553393: function(e, t, n) {
             "use strict";
@@ -250223,7 +250223,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ce96c9e45f344f8c4d7c03ee2621eb1c7a7312ce"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "968af05ac132d19ff922f6a267395d349ead134c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279322,7 +279322,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295145"
+                                build_number: "295157"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286680,7 +286680,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295145", "295145"), 10);
+                let s = parseInt((n = "295157", "295157"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314370,4 +314370,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.ccd04dc36e7377939bd9.js.map
+//# sourceMappingURL=71586.ee835726cb471592804d.js.map
