@@ -44956,8 +44956,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -98794,24 +98794,14 @@ div.content_aac020 {
     pointer-events: auto
 }
 
-.shopCardDefaultAnimation_bcabdf {
+.shopCardAnimation_d6a947 {
     top: 0;
     transition: top 1s, box-shadow.5s
 }
 
-.shopCardDefaultAnimation_bcabdf:hover,
-.shopCardDefaultAnimation_bcabdf:focus-within {
+.shopCardAnimation_d6a947:hover,
+.shopCardAnimation_d6a947:focus-within {
     top: -4px
-}
-
-.shopCardTransformationAnimation__05043 {
-    transform: translatey(0);
-    transition: transform 1s, box-shadow.5s
-}
-
-.shopCardTransformationAnimation__05043:hover,
-.shopCardTransformationAnimation__05043:focus-within {
-    transform: translatey(-4px)
 }
 
 .avatar_bc8ec4 {
@@ -99660,24 +99650,14 @@ div.content_aac020 {
     overflow: hidden
 }
 
-.shopCardDefaultAnimation__9f764 {
+.shopCardAnimation_e4a1b5 {
     top: 0;
     transition: top 1s, box-shadow.5s
 }
 
-.shopCardDefaultAnimation__9f764:hover,
-.shopCardDefaultAnimation__9f764:focus-within {
+.shopCardAnimation_e4a1b5:hover,
+.shopCardAnimation_e4a1b5:focus-within {
     top: -4px
-}
-
-.shopCardTransformationAnimation__0e0be {
-    transform: translatey(0);
-    transition: transform 1s, box-shadow.5s
-}
-
-.shopCardTransformationAnimation__0e0be:hover,
-.shopCardTransformationAnimation__0e0be:focus-within {
-    transform: translatey(-4px)
 }
 
 .avatarContainer_e11d35 {
@@ -141959,4 +141939,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.00e7893c4ee3058bf763.css.map*/
+/*# sourceMappingURL=99387.f39205eb5e128805695e.css.map*/

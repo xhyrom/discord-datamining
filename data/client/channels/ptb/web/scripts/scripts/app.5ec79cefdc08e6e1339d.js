@@ -5981,8 +5981,7 @@
                 purchaseButton: "purchaseButton_c932c7",
                 shaker: "shaker__2bf29",
                 shopCard: "shopCard__9e3fe",
-                shopCardDefaultAnimation: "shopCardDefaultAnimation_bcabdf",
-                shopCardTransformationAnimation: "shopCardTransformationAnimation__05043"
+                shopCardAnimation: "shopCardAnimation_d6a947"
             }
         },
         87951: function(e) {
@@ -6089,8 +6088,7 @@
                 profileEffectShopPreview: "profileEffectShopPreview__291e4",
                 purchaseButton: "purchaseButton__6b7c9",
                 shopCard: "shopCard__3d319",
-                shopCardDefaultAnimation: "shopCardDefaultAnimation__9f764",
-                shopCardTransformationAnimation: "shopCardTransformationAnimation__0e0be"
+                shopCardAnimation: "shopCardAnimation_e4a1b5"
             }
         },
         449221: function(e) {
