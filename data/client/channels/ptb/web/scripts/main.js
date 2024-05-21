@@ -11110,26 +11110,27 @@
                 E = n("77498"),
                 I = n("283595"),
                 T = n("417363"),
-                f = n("630388"),
-                S = n("877481"),
-                h = n("358085"),
-                A = n("278323"),
-                m = n("58642"),
-                N = n("254854"),
-                p = n("981631"),
-                O = n("701488"),
-                C = n("689938");
+                f = n("626135"),
+                S = n("630388"),
+                h = n("877481"),
+                A = n("358085"),
+                m = n("278323"),
+                N = n("58642"),
+                p = n("254854"),
+                O = n("981631"),
+                C = n("701488"),
+                R = n("689938");
 
-            function R(e) {
+            function g(e) {
                 let {
                     applicationId: t,
                     secret: n,
                     channelId: i,
-                    intent: r = O.ActivityIntent.PLAY,
+                    intent: r = C.ActivityIntent.PLAY,
                     embedded: s = !1,
                     analyticsLocations: o = []
                 } = e;
-                g(t, null, i, s, o).then(() => S.default.waitConnected(t)).then(() => Promise.race([S.default.waitSubscribed(t, p.RPCEvents.ACTIVITY_JOIN)])).then(() => {
+                L(t, null, i, s, o).then(() => h.default.waitConnected(t)).then(() => Promise.race([h.default.waitSubscribed(t, O.RPCEvents.ACTIVITY_JOIN)])).then(() => {
                     a.default.dispatch({
                         type: "ACTIVITY_JOIN",
                         applicationId: t,
@@ -11143,7 +11144,7 @@
                 }))
             }
 
-            function g(e, t, n) {
+            function L(e, t, n) {
                 let u = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
                     d = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : [];
                 if (u) return null == n ? Promise.reject(Error("Invalid channel ID")) : ((0, o.startEmbeddedActivity)(n, e, d), Promise.resolve());
@@ -11161,7 +11162,7 @@
                     let o = I.default.getLibraryApplication(e, t);
                     if (null == o) throw Error("Missing library application when launching");
                     E = (f = e, s.HTTP.post({
-                        url: p.Endpoints.OAUTH2_AUTHORIZE,
+                        url: O.Endpoints.OAUTH2_AUTHORIZE,
                         query: {
                             client_id: f,
                             response_type: "token",
@@ -11184,12 +11185,12 @@
                     }, e => {
                         if (404 === e.status) return null;
                         throw e
-                    })).then(e => S.default.launchDispatchApplication(n, e, _.default.locale, o.getBranchName(), a))
+                    })).then(e => h.default.launchDispatchApplication(n, e, _.default.locale, o.getBranchName(), a))
                 } else {
                     let t = l.default.getApplication(e);
-                    E = null != t ? S.default.launch(t) : S.default.launchGame(e)
+                    E = null != t ? h.default.launch(t) : h.default.launchGame(e)
                 }
-                let h = Error("game not found");
+                let S = Error("game not found");
                 return null != E ? (a.default.dispatch({
                     type: "LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE",
                     applicationId: e,
@@ -11204,22 +11205,24 @@
                         pids: t
                     })
                 }).catch(t => {
-                    N.default.show(p.NoticeTypes.LAUNCH_GAME_FAILURE, C.default.Messages.GAME_LAUNCH_FAILED_LAUNCH_TARGET_NOT_FOUND), a.default.dispatch({
+                    p.default.show(O.NoticeTypes.LAUNCH_GAME_FAILURE, R.default.Messages.GAME_LAUNCH_FAILED_LAUNCH_TARGET_NOT_FOUND), a.default.dispatch({
                         type: "GAME_LAUNCH_FAIL",
                         applicationId: e,
-                        error: h
+                        error: S
                     })
                 })) : (a.default.dispatch({
                     type: "GAME_LAUNCH_FAIL",
                     applicationId: e,
-                    error: h
-                }), Promise.reject(h))
+                    error: S
+                }), Promise.reject(S))
             }
             t.default = {
-                addGame(e) {
+                addGame(e, t) {
                     a.default.dispatch({
                         type: "RUNNING_GAME_ADD_OVERRIDE",
                         pid: e
+                    }), f.default.track(O.AnalyticEvents.RUNNING_GAME_OVERRIDE_ADDED, {
+                        game_name: t
                     })
                 },
                 toggleOverlay(e, t) {
@@ -11227,8 +11230,8 @@
                     if (null != n) {
                         let e = I.default.getActiveLibraryApplication(n.id);
                         if (null != e) {
-                            let t = f.toggleFlag(e.getFlags(), p.LibraryApplicationFlags.OVERLAY_DISABLED);
-                            m.updateFlags(e.id, e.branchId, t);
+                            let t = S.toggleFlag(e.getFlags(), O.LibraryApplicationFlags.OVERLAY_DISABLED);
+                            N.updateFlags(e.id, e.branchId, t);
                             return
                         }
                     }
@@ -11281,7 +11284,7 @@
                         });
                         try {
                             let e = await s.HTTP.get({
-                                url: p.Endpoints.APPLICATIONS_GAMES_SUPPLEMENTAL,
+                                url: O.Endpoints.APPLICATIONS_GAMES_SUPPLEMENTAL,
                                 query: {
                                     application_ids: t
                                 }
@@ -11304,7 +11307,7 @@
                         a.default.dispatch({
                             type: "GAMES_DATABASE_FETCH"
                         }), s.HTTP.get({
-                            url: p.Endpoints.APPLICATIONS_DETECTABLE,
+                            url: O.Endpoints.APPLICATIONS_DETECTABLE,
                             headers: {
                                 "If-None-Match": E.default.detectableGamesEtag
                             },
@@ -11348,10 +11351,10 @@
                     if (null != d) {
                         var _, c;
                         s.HTTP.post({
-                            url: p.Endpoints.UNVERIFIED_APPLICATIONS,
+                            url: O.Endpoints.UNVERIFIED_APPLICATIONS,
                             body: {
                                 name: t,
-                                os: (0, h.getPlatformName)(),
+                                os: (0, A.getPlatformName)(),
                                 icon: n,
                                 distributor_application: (_ = r, c = o, null == _ || "" === _ ? null : {
                                     distributor: _,
@@ -11382,7 +11385,7 @@
                 },
                 uploadIcon(e, t, n) {
                     s.HTTP.post({
-                        url: p.Endpoints.UNVERIFIED_APPLICATIONS_ICONS,
+                        url: O.Endpoints.UNVERIFIED_APPLICATIONS_ICONS,
                         body: {
                             application_name: e,
                             application_hash: t,
@@ -11398,7 +11401,7 @@
                         game: e
                     })
                 },
-                launch: g,
+                launch: L,
                 async join(e) {
                     let {
                         userId: t,
@@ -11406,7 +11409,7 @@
                         applicationId: i,
                         channelId: r,
                         messageId: s,
-                        intent: o = O.ActivityIntent.PLAY,
+                        intent: o = C.ActivityIntent.PLAY,
                         embedded: l = !1
                     } = e;
                     if (__OVERLAY__) return a.default.dispatch({
@@ -11422,8 +11425,8 @@
                         applicationId: i
                     });
                     try {
-                        let e = await A.default.getJoinSecret(t, n, i, r, s);
-                        return R({
+                        let e = await m.default.getJoinSecret(t, n, i, r, s);
+                        return g({
                             applicationId: i,
                             secret: e,
                             channelId: r,
@@ -11437,7 +11440,7 @@
                         }), !1
                     }
                 },
-                joinWithSecret: R
+                joinWithSecret: g
             }
         },
         749210: function(e, t, n) {
@@ -32035,19 +32038,22 @@
                         let t = e.relatedTarget;
                         !G(s.current, t) && c(null)
                     },
-                    children: t.map((e, t) => (0, i.jsx)("li", {
-                        className: M.optionPillItem,
-                        children: (0, i.jsx)(H, {
-                            focused: null == _ ? 0 === t : _ === String(e.value),
-                            option: e,
-                            onClick: () => n(e.value),
-                            onKeyDown: async t => {
-                                "Backspace" === t.key ? (await a(!0), n(e.value, !1)) : "Delete" === t.key && (await o(!0), n(e.value, !1))
-                            },
-                            renderOptionPrefix: u,
-                            renderOptionSuffix: l
-                        })
-                    }, "".concat(e.label, "-").concat(e.value)))
+                    children: t.map((e, t) => {
+                        var r;
+                        return (0, i.jsx)("li", {
+                            className: M.optionPillItem,
+                            children: (0, i.jsx)(H, {
+                                focused: null == _ ? 0 === t : _ === String(e.value),
+                                option: e,
+                                onClick: () => n(e.value),
+                                onKeyDown: async t => {
+                                    "Backspace" === t.key ? (await a(!0), n(e.value, !1)) : "Delete" === t.key && (await o(!0), n(e.value, !1))
+                                },
+                                renderOptionPrefix: u,
+                                renderOptionSuffix: l
+                            })
+                        }, null !== (r = e.key) && void 0 !== r ? r : "".concat(e.label, "-").concat(e.value))
+                    })
                 })
             }
 
@@ -37054,7 +37060,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294939", ", Version Hash: ").concat("03f67677787bb79036f570d0455c95062b61d95d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294974", ", Version Hash: ").concat("44acfb54900a058bdf8ace87ef4f0e58a97c4d3f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88338,8 +88344,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294939", "294939"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294939")), t = 0), t
+                let t = parseInt((e = "294974", "294974"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294974")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107833,41 +107839,58 @@
             "use strict";
             n.r(t), n.d(t, {
                 CLIENT_THEMES_DATA_ATTRIBUTE: function() {
-                    return o
+                    return _
                 },
                 CUSTOM_THEME_BACKGROUND_CLASS_NAME: function() {
-                    return l
+                    return c
                 }
             });
             var i = n("470079"),
-                r = n("442837"),
-                s = n("813852"),
-                a = n("514361");
-            let o = "data-client-themes",
-                l = "custom-theme-background",
-                u = () => {
-                    let e = (0, r.useStateFromStores)([a.default], () => a.default.gradientPreset),
+                r = n("688619"),
+                s = n.n(r),
+                a = n("691324"),
+                o = n("442837"),
+                l = n("780384"),
+                u = n("813852"),
+                d = n("514361");
+            let _ = "data-client-themes",
+                c = "custom-theme-background",
+                E = () => {
+                    let e = (0, o.useStateFromStores)([d.default], () => d.default.gradientPreset),
                         {
                             enabled: t
-                        } = s.ColorMixDesktopClientThemesExperiment.useExperiment({
+                        } = u.ColorMixDesktopClientThemesExperiment.useExperiment({
                             location: "useBackgroundGradientCSS"
                         });
                     return (0, i.useMemo)(() => {
                         if (null == e) return null;
-                        let n = a.default.getLinearGradient();
+                        let n = d.default.getLinearGradient();
                         if (null == n) return null;
-                        let i = e.colors[0].token;
-                        return ".".concat(l, " {\n      --custom-theme-background: ").concat(n, ";\n      --custom-theme-base: var(--").concat(i, ");\n      --custom-theme-mix-amount: ").concat(t ? 18 : 0, "%;\n    }")
+                        let i = s().average(e.colors.map(e => {
+                                let {
+                                    token: t
+                                } = e;
+                                return a.ColorDetails[t].hex
+                            }), "lab", e.colors.map((t, n) => {
+                                var i, r;
+                                let {
+                                    stop: s
+                                } = t;
+                                return (s - (null !== (r = null === (i = e.colors[n - 1]) || void 0 === i ? void 0 : i.stop) && void 0 !== r ? r : 0)) / 100
+                            })),
+                            r = (0, l.isThemeLight)(e.theme) ? i.saturate(2).luminance(.1) : i.set("hsl.s", 1).set("hsl.l", .8),
+                            o = (0, l.isThemeLight)(e.theme) ? i.saturate(2).brighten(1.75) : i.set("hsl.s", .9).set("hsl.l", .2);
+                        return ".".concat(c, " {\n      --custom-theme-background: ").concat(n, ";\n      --custom-theme-mix-base: ").concat(o.css(), ";\n      --custom-theme-mix-text: ").concat(r.css(), ";\n      --custom-theme-mix-amount-base: ").concat(t ? 20 : 0, "%;\n      --custom-theme-mix-amount-text: ").concat(t ? 40 : 0, "%;\n    }")
                     }, [t, e])
                 };
             t.default = () => {
-                let e = u();
+                let e = E();
                 return null === e ? {
                     clientThemesCSS: "",
                     clientThemesClassName: ""
                 } : {
                     clientThemesCSS: e,
-                    clientThemesClassName: l
+                    clientThemesClassName: c
                 }
             }
         },
@@ -109845,6 +109868,8 @@
                     settings: {
                         remindersEnabled: e
                     }
+                }), m.default.track(M.AnalyticEvents.CLIPS_SETTINGS_UPDATED, {
+                    reminders_enabled: e
                 })
             }
 
@@ -111428,40 +111453,43 @@
             "use strict";
             n.r(t), n.d(t, {
                 extractPriceByPurchaseTypes: function() {
-                    return I
+                    return T
                 },
                 getAvatarDecorations: function() {
-                    return N
+                    return O
                 },
                 getCollectiblesAssetURL: function() {
-                    return p
+                    return C
                 },
                 getDaysRemaining: function() {
-                    return v
+                    return M
                 },
                 getFormattedPriceForCollectiblesProduct: function() {
                     return E
                 },
                 getLogoSize: function() {
-                    return L
+                    return D
                 },
-                getProductsFromCategories: function() {
+                getProductDiscount: function() {
                     return f
                 },
+                getProductsFromCategories: function() {
+                    return h
+                },
                 getProfileEffectsFromCategories: function() {
-                    return C
-                },
-                getProfileEffectsFromPurchases: function() {
-                    return O
-                },
-                groupProfileEffects: function() {
-                    return R
-                },
-                isCollectiblesGiftCode: function() {
                     return g
                 },
+                getProfileEffectsFromPurchases: function() {
+                    return R
+                },
+                groupProfileEffects: function() {
+                    return L
+                },
+                isCollectiblesGiftCode: function() {
+                    return v
+                },
                 isFreeCollectiblesProduct: function() {
-                    return T
+                    return S
                 },
                 isPremiumCollectiblesProduct: function() {
                     return _
@@ -111470,9 +111498,9 @@
                     return c
                 },
                 isProductNew: function() {
-                    return D
+                    return y
                 }
-            }), n("47120");
+            }), n("724458"), n("47120");
             var i = n("392711"),
                 r = n("979554"),
                 s = n("134432"),
@@ -111485,23 +111513,37 @@
                 c = e => (null == e ? void 0 : e.purchaseType) === d.EntitlementTypes.PREMIUM_PURCHASE,
                 E = (e, t, n) => {
                     let i;
-                    let r = I(e, i = n ? t ? d.PriceSetAssignmentPurchaseTypes.MOBILE_PREMIUM_TIER_2 : d.PriceSetAssignmentPurchaseTypes.MOBILE : t ? d.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : d.PriceSetAssignmentPurchaseTypes.DEFAULT);
+                    let r = T(e, i = n ? t ? d.PriceSetAssignmentPurchaseTypes.MOBILE_PREMIUM_TIER_2 : d.PriceSetAssignmentPurchaseTypes.MOBILE : t ? d.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : d.PriceSetAssignmentPurchaseTypes.DEFAULT);
                     return null == r ? "" : (0, a.formatPrice)(null == r ? void 0 : r.amount, null == r ? void 0 : r.currency)
                 },
-                I = (e, t) => {
+                I = e => {
+                    let t = e.bundledProducts;
+                    return null == t ? 0 : t.reduce((e, t) => {
+                        var n;
+                        let i = T(t, d.PriceSetAssignmentPurchaseTypes.DEFAULT);
+                        return e + (null !== (n = null == i ? void 0 : i.amount) && void 0 !== n ? n : 0)
+                    }, 0)
+                },
+                T = (e, t) => {
                     var n, i, r;
                     let s = null !== (r = e.prices[t]) && void 0 !== r ? r : null;
                     return null == s ? null : null === (i = s.countryPrices) || void 0 === i ? void 0 : null === (n = i.prices) || void 0 === n ? void 0 : n[0]
                 },
-                T = e => {
-                    var t;
-                    return (null === (t = I(e, d.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === t ? void 0 : t.amount) === 0
+                f = (e, t) => {
+                    let n = I(e);
+                    if (n <= 0) return;
+                    let i = T(e, t ? d.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : d.PriceSetAssignmentPurchaseTypes.DEFAULT);
+                    if (null != i) return Math.round((n - i.amount) / n * 100)
                 },
-                f = e => {
+                S = e => {
+                    var t;
+                    return (null === (t = T(e, d.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === t ? void 0 : t.amount) === 0
+                },
+                h = e => {
                     let t = (0, i.flatMap)([...e.values()], "products");
                     return (0, i.uniqBy)(t, "storeListingId")
                 },
-                S = (e, t) => {
+                A = (e, t) => {
                     if (t === r.CollectiblesItemType.AVATAR_DECORATION) {
                         let t = (0, i.flatMap)([...e.values()], "items").filter(o.isAvatarDecorationRecord);
                         return (0, i.uniqBy)(t, "id")
@@ -111511,8 +111553,8 @@
                         return (0, i.uniqBy)(t, "id")
                     }
                 },
-                h = (e, t) => {
-                    let n = f(e);
+                m = (e, t) => {
+                    let n = h(e);
                     if (t === r.CollectiblesItemType.AVATAR_DECORATION) {
                         let e = (0, i.flatMap)(n, "items").filter(o.isAvatarDecorationRecord);
                         return (0, i.uniqBy)(e, "id")
@@ -111522,10 +111564,10 @@
                         return (0, i.uniqBy)(e, "id")
                     }
                 },
-                A = e => S(e, r.CollectiblesItemType.AVATAR_DECORATION),
-                m = e => h(e, r.CollectiblesItemType.AVATAR_DECORATION),
-                N = (e, t) => (0, i.uniqBy)([...A(e), ...m(t)], "id"),
-                p = (e, t) => {
+                N = e => A(e, r.CollectiblesItemType.AVATAR_DECORATION),
+                p = e => m(e, r.CollectiblesItemType.AVATAR_DECORATION),
+                O = (e, t) => (0, i.uniqBy)([...N(e), ...p(t)], "id"),
+                C = (e, t) => {
                     var n;
                     let {
                         CDN_HOST: i,
@@ -111535,11 +111577,11 @@
                     let l = d.Endpoints.APPLICATION_ASSET(d.COLLECTIBLES_APPLICATION_ID, e, o);
                     return "".concat(location.protocol).concat(r).concat(l, "?size=").concat(a)
                 },
-                O = e => S(e, r.CollectiblesItemType.PROFILE_EFFECT),
-                C = e => h(e, r.CollectiblesItemType.PROFILE_EFFECT),
-                R = (e, t) => {
-                    let n = O(t),
-                        i = C(e).filter(e => {
+                R = e => A(e, r.CollectiblesItemType.PROFILE_EFFECT),
+                g = e => m(e, r.CollectiblesItemType.PROFILE_EFFECT),
+                L = (e, t) => {
+                    let n = R(t),
+                        i = g(e).filter(e => {
                             let {
                                 id: t
                             } = e;
@@ -111550,14 +111592,14 @@
                         shopPreviews: i
                     }
                 },
-                g = e => e.applicationId === d.COLLECTIBLES_APPLICATION_ID,
-                L = e => 3.8 * e,
-                v = e => {
+                v = e => e.applicationId === d.COLLECTIBLES_APPLICATION_ID,
+                D = e => 3.8 * e,
+                M = e => {
                     let t = new Date,
                         n = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate());
                     return Math.floor((Date.UTC(e.getFullYear(), e.getMonth(), e.getDate()) - n) / 864e5)
                 },
-                D = e => {
+                y = e => {
                     let t = u.SHOP_CARD_PER_PRODUCT_NEW_BADGE_EXPIRY_SETTINGS[e];
                     return null != t && new Date().getTime() < t
                 }
@@ -116172,8 +116214,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294939",
-                    versionHash: "03f67677787bb79036f570d0455c95062b61d95d"
+                    buildNumber: "294974",
+                    versionHash: "44acfb54900a058bdf8ace87ef4f0e58a97c4d3f"
                 }
             }
             n.r(t), n.d(t, {
@@ -173124,8 +173166,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716248582198",
-                                    build_number: "294939"
+                                    built_at: "1716252338335",
+                                    build_number: "294974"
                                 }
                             },
                             retries: 1
@@ -250038,7 +250080,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "03f67677787bb79036f570d0455c95062b61d95d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "44acfb54900a058bdf8ace87ef4f0e58a97c4d3f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279131,7 +279173,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294939"
+                                build_number: "294974"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286489,7 +286531,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "294939", "294939"), 10);
+                let s = parseInt((n = "294974", "294974"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314179,4 +314221,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.040373d1dd4cd069b557.js.map
+//# sourceMappingURL=71586.90907124c08a25821794.js.map

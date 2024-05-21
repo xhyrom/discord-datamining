@@ -2342,6 +2342,7 @@
                 activityContainer: "activityContainer_f23569",
                 activityContainerNoMargin: "activityContainerNoMargin_e942bd",
                 activityPanelContainer: "activityPanelContainer__57291",
+                avatar: "avatar__2fbe1",
                 circularButton: "circularButton__5daa7",
                 flex: "flex__5ddc8",
                 footer: "footer__7a7bf",
@@ -5908,11 +5909,12 @@
         577687: function(e) {
             "use strict";
             e.exports = {
-                defaultPrice: "defaultPrice__04919",
+                dimmed: "dimmed__15a02",
                 fullPrice: "fullPrice__8d254",
                 premiumIcon: "premiumIcon_a6a247",
+                price: "price_b065f9",
                 priceTagsContainer: "priceTagsContainer_b12e66",
-                strikedPrice: "strikedPrice__8a625"
+                striked: "striked__695cb"
             }
         },
         638075: function(e) {
