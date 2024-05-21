@@ -44794,14 +44794,6 @@ img.thumbnail__18ece {
     align-items: center
 }
 
-.modalContent__38dbf {
-    padding: 0 16px 20px
-}
-
-.warningText__5c2f6 {
-    margin-top: 8px
-}
-
 .role__9f030 {
     margin-bottom: 0 !important;
     height: 32px;
@@ -44956,8 +44948,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -47435,11 +47427,11 @@ div:has(>div>.modal__06f49) {
     max-width: 360px
 }
 
-.theme-dark .gradient__3bfb3 {
+.theme-dark .masonryListGradient__25591 {
     background: radial-gradient(at top center, rgba(55, 46, 109, .6)0%, rgba(47, 38, 72, .6)50%, #111214 100%)
 }
 
-.theme-light .gradient__3bfb3 {
+.theme-light .masonryListGradient__25591 {
     background: radial-gradient(at top center, rgba(245, 191, 196, .8)0%, rgba(252, 238, 196, .8)50%, #fff 100%)
 }
 
@@ -97065,6 +97057,14 @@ html .tabBadge_ff691d {
     margin-top: -88px
 }
 
+.modalContent__1aa3c {
+    padding: 0 16px 20px
+}
+
+.warningText_ef71ea {
+    margin-top: 8px
+}
+
 .formHeader_f55892 {
     overflow: visible;
     padding: 16px 16px 0
@@ -141939,4 +141939,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f39205eb5e128805695e.css.map*/
+/*# sourceMappingURL=99387.7fc3db70a45e83a7c47b.css.map*/
