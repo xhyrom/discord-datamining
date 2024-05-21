@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295088", ", Version Hash: ").concat("db5b849d462c8dc5dc7b1cb22f6b43118878f546")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295099", ", Version Hash: ").concat("be8faff21613e7046b7c948c788e8f392ae7cf11")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88338,8 +88338,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295088", "295088"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295088")), t = 0), t
+                let t = parseInt((e = "295099", "295099"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295099")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116203,8 +116203,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295088",
-                    versionHash: "db5b849d462c8dc5dc7b1cb22f6b43118878f546"
+                    buildNumber: "295099",
+                    versionHash: "be8faff21613e7046b7c948c788e8f392ae7cf11"
                 }
             }
             n.r(t), n.d(t, {
@@ -117178,7 +117178,35 @@
                     traitsToHighlight: n,
                     expanded: s,
                     traitClassName: a
-                } = e, l = r.useMemo(() => new Set(n), [n]);
+                } = e, l = r.useMemo(() => new Set(n), [n]), u = r.useCallback(e => (0, i.jsx)(M, {
+                    trait: e,
+                    isHighlighted: l.has(e)
+                }, e), [l]), d = r.useCallback(e => (0, i.jsx)(o.Tooltip, {
+                    text: (0, i.jsx)("div", {
+                        className: v.overflowTooltip,
+                        children: e.map(e => (0, i.jsx)("div", {
+                            className: v.trait,
+                            children: (0, i.jsx)(o.Text, {
+                                variant: "text-xs/normal",
+                                color: "text-normal",
+                                lineClamp: 1,
+                                children: e
+                            })
+                        }, e))
+                    }),
+                    "aria-label": "overflow",
+                    children: t => (0, i.jsx)("div", {
+                        ...t,
+                        className: v.trait,
+                        children: (0, i.jsx)(o.Text, {
+                            variant: "text-xs/normal",
+                            color: "text-normal",
+                            children: L.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                                count: e.length
+                            })
+                        })
+                    })
+                }), []);
                 return s ? (0, i.jsx)("div", {
                     className: v.expandedTraitsContainer,
                     children: t.map(e => (0, i.jsx)(M, {
@@ -117188,38 +117216,11 @@
                     }, e))
                 }) : (0, i.jsx)(C.default, {
                     items: t,
-                    renderItem: e => (0, i.jsx)(M, {
-                        trait: e,
-                        isHighlighted: l.has(e)
-                    }, e),
-                    renderOverflow: e => (0, i.jsx)(o.Tooltip, {
-                        text: (0, i.jsx)("div", {
-                            className: v.overflowTooltip,
-                            children: e.map(e => (0, i.jsx)("div", {
-                                className: v.trait,
-                                children: (0, i.jsx)(o.Text, {
-                                    variant: "text-xs/normal",
-                                    color: "text-normal",
-                                    lineClamp: 1,
-                                    children: e
-                                })
-                            }, e))
-                        }),
-                        "aria-label": "overflow",
-                        children: t => (0, i.jsx)("div", {
-                            ...t,
-                            className: v.trait,
-                            children: (0, i.jsx)(o.Text, {
-                                variant: "text-xs/normal",
-                                color: "text-normal",
-                                children: L.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
-                                    count: e.length
-                                })
-                            })
-                        })
-                    }),
+                    renderItem: u,
+                    renderOverflow: d,
                     maxLines: 2,
-                    className: v.traitsContainer
+                    className: v.traitsContainer,
+                    spacing: 4
                 })
             }
 
@@ -117441,7 +117442,9 @@
                                     alt: e.name,
                                     className: o.tooltipGameImage
                                 })
-                            }), (0, i.jsx)("span", {
+                            }), (0, i.jsx)(s.Text, {
+                                variant: "text-xs/medium",
+                                color: "text-normal",
                                 className: o.tooltipGameName,
                                 children: e.name
                             })]
@@ -117551,10 +117554,10 @@
                         _ = s === t.maxLines - 1,
                         c = s + 2 < t.maxLines,
                         E = u > t.parentWidth,
-                        I = _ && !d ? t.overflowWidth : 0,
+                        I = _ && !d ? t.spacing + t.overflowWidth : 0,
                         T = 0 === t.parentWidth,
-                        f = !a && r + u + t.spacing + I < t.parentWidth;
-                    T || f ? (r += u + t.spacing, n.push(l)) : s < t.maxLines - 1 ? (s++, r = u + t.spacing, n.push(l)) : E && !_ && 0 === r ? (s++, n.push(l)) : E && c && r > 0 ? (n.push(l), s += 2) : (a = !0, i.push(l))
+                        f = !a && r + t.spacing + u + I < t.parentWidth;
+                    T || f || 0 === r ? (r > 0 && (r += t.spacing), r += u, n.push(l)) : s < t.maxLines - 1 ? (s++, r = u, n.push(l)) : E && !_ && 0 === r ? (s++, n.push(l)) : E && c && r > 0 ? (n.push(l), s += 2) : (a = !0, i.push(l))
                 }
                 return {
                     ...t,
@@ -173155,8 +173158,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716311452800",
-                                    build_number: "295088"
+                                    built_at: "1716312454794",
+                                    build_number: "295099"
                                 }
                             },
                             retries: 1
@@ -250093,7 +250096,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "db5b849d462c8dc5dc7b1cb22f6b43118878f546"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "be8faff21613e7046b7c948c788e8f392ae7cf11"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279192,7 +279195,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295088"
+                                build_number: "295099"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286550,7 +286553,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295088", "295088"), 10);
+                let s = parseInt((n = "295099", "295099"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314240,4 +314243,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.442f10a9c9b3b4742dbd.js.map
+//# sourceMappingURL=71586.dd79c94dd96d5c8b6237.js.map
