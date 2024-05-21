@@ -5906,14 +5906,37 @@
                 giftButtonInner: "giftButtonInner_c9f8fd"
             }
         },
+        139557: function(e) {
+            "use strict";
+            e.exports = {
+                badge: "badge__60cf6",
+                badgeContainer: "badgeContainer__541f1",
+                carousel: "carousel_c638a6",
+                carouselContainer: "carouselContainer__9995f",
+                headerAsset: "headerAsset__2db3c",
+                headerContainer: "headerContainer__29549",
+                headerContent: "headerContent_b74e9c",
+                logo: "logo__1a825",
+                logoAndDescriptionContainer: "logoAndDescriptionContainer__5ad27",
+                overflowImage: "overflowImage_b382c8",
+                overflowSlideAnimator: "overflowSlideAnimator__4428d",
+                overflowSlideAnimatorContainer: "overflowSlideAnimatorContainer__57bdc",
+                paginationArrow: "paginationArrow_ed696e",
+                paginationControls: "paginationControls_f5f6d3",
+                paginationDot: "paginationDot__68aef",
+                paginationDotSelected: "paginationDotSelected__8705e",
+                slideAnimator: "slideAnimator__2e9ff"
+            }
+        },
         577687: function(e) {
             "use strict";
             e.exports = {
-                defaultPrice: "defaultPrice__04919",
+                dimmed: "dimmed__15a02",
                 fullPrice: "fullPrice__8d254",
                 premiumIcon: "premiumIcon_a6a247",
+                price: "price_b065f9",
                 priceTagsContainer: "priceTagsContainer_b12e66",
-                strikedPrice: "strikedPrice__8a625"
+                striked: "striked__695cb"
             }
         },
         638075: function(e) {
@@ -6383,6 +6406,7 @@
                 shareToChannelButton: "shareToChannelButton_ee0e50",
                 shareToChannelInput: "shareToChannelInput_a160d6",
                 shareToChannelInputHasAttachments: "shareToChannelInputHasAttachments__4d1e1",
+                streamCTA: "streamCTA__558dc",
                 streamingPopoutHero: "streamingPopoutHero__03808",
                 toastContainer: "toastContainer__40273",
                 voiceChannelAdditionalParticipants: "voiceChannelAdditionalParticipants__03b6f",
@@ -25531,7 +25555,9 @@
                 clamp: "clamp__79a59",
                 content: "content_faa8bf",
                 fullSize: "fullSize_b0d012",
+                incorporeal: "incorporeal_cb0354",
                 invisibleContainer: "invisibleContainer__1e05d",
+                placeholderWidth: "placeholderWidth__1e10a",
                 statusBubble: "statusBubble__1a4c3",
                 statusBubbleCopyStatusCursor: "statusBubbleCopyStatusCursor_d67753",
                 statusBubbleEmojiOnlyPadding: "statusBubbleEmojiOnlyPadding_ff949e",

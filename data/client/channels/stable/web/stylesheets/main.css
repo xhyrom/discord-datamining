@@ -20511,13 +20511,23 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .invisibleContainer__1e05d {
     pointer-events: none;
     visibility: hidden;
-    position: relative;
+    position: relative
+}
+
+.invisibleContainer__1e05d.biteSize__4396a {
     top: 4px;
     left: 112px
 }
 
+.invisibleContainer__1e05d.fullSize_b0d012 {
+    height: 0;
+    top: -54px;
+    left: 142px
+}
+
 .visibleContainer_adf761 {
-    position: absolute
+    position: absolute;
+    visibility: visible
 }
 
 .visibleContainer_adf761.biteSize__4396a {
@@ -20530,7 +20540,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     left: 158px
 }
 
-.custom-profile-theme .invisibleContainer__1e05d {
+.custom-profile-theme .invisibleContainer__1e05d.biteSize__4396a {
     top: var(--custom-user-profile-themed-container-user-profile-themed-padding);
     left: 108px
 }
@@ -20632,6 +20642,18 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .unclamp__1fab3 {
     -webkit-line-clamp: unset
+}
+
+.placeholderWidth__1e10a.biteSize__4396a {
+    max-width: 160px
+}
+
+.placeholderWidth__1e10a.fullSize_b0d012 {
+    max-width: 196px
+}
+
+.incorporeal_cb0354 {
+    position: absolute
 }
 
 .statusText__32d26 {
@@ -43800,6 +43822,25 @@ img.thumbnail__18ece {
 
 .streamingPopoutHero__03808 {
     gap: 0
+}
+
+.streamCTA__558dc {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-backdrop);
+    opacity: 0;
+    transition: opacity.1s linear
+}
+
+.streamCTA__558dc:hover {
+    opacity: 1
 }
 
 .maybeClickable__0a29f[role=button] {
@@ -98091,7 +98132,6 @@ div.content_aac020 {
 
 .shopBanner_e2f915 {
     grid-column: 1/-1;
-    margin-top: 40px;
     position: relative;
     width: 100%;
     max-width: 1060px;
@@ -98164,7 +98204,6 @@ div.content_aac020 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 40px;
     width: 100%;
     min-width: 600px;
     height: 140px;
@@ -98230,6 +98269,133 @@ div.content_aac020 {
 
 .reload__6fe99 {
     margin-top: 24px
+}
+
+.carouselContainer__9995f {
+    margin-top: 40px
+}
+
+.carousel_c638a6 {
+    position: relative;
+    border-radius: 16px;
+    min-width: 700px
+}
+
+.slideAnimator__2e9ff {
+    height: 292px
+}
+
+.headerContainer__29549 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden
+}
+
+.headerAsset__2db3c {
+    position: absolute;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.overflowSlideAnimatorContainer__57bdc {
+    position: absolute;
+    left: 0;
+    right: -32px;
+    top: -40px;
+    overflow: clip;
+    min-width: 768px;
+    pointer-events: none
+}
+
+.overflowSlideAnimator__4428d {
+    height: 356px
+}
+
+.overflowImage_b382c8 {
+    position: absolute;
+    bottom: 24px;
+    right: 20px;
+    height: 336px;
+    pointer-events: none
+}
+
+.headerContent_b74e9c {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 500px;
+    height: 100%;
+    align-items: flex-start;
+    padding: 30px 32px;
+    gap: 24px
+}
+
+.badgeContainer__541f1 {
+    display: flex;
+    padding: 4px 12px;
+    border: 1px solid;
+    border-radius: 24px
+}
+
+.badge__60cf6 {
+    color: inherit;
+    text-transform: uppercase
+}
+
+.logoAndDescriptionContainer__5ad27 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px
+}
+
+.logo__1a825 {
+    height: 100px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-left: -6px
+}
+
+.paginationControls_f5f6d3 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    z-index: 1
+}
+
+.paginationArrow_ed696e {
+    align-self: center;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: rgba(255, 255, 255, .2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    visibility: hidden
+}
+
+.paginationDot__68aef {
+    height: 4px;
+    width: 12px;
+    pointer-events: none
+}
+
+.paginationDotSelected__8705e {
+    height: 4px;
+    width: 36px;
+    pointer-events: none
 }
 
 .container__74bbc {
@@ -98549,19 +98715,21 @@ div.content_aac020 {
     align-items: flex-end
 }
 
-.strikedPrice__8a625 {
-    -webkit-text-decoration: line-through;
-    text-decoration: line-through;
-    opacity: .7;
+.price_b065f9 {
     margin-right: 8px
 }
 
-.defaultPrice__04919 {
-    margin-right: 4px
+.striked__695cb {
+    -webkit-text-decoration: line-through;
+    text-decoration: line-through
+}
+
+.dimmed__15a02 {
+    opacity: .7
 }
 
 .fullPrice__8d254 {
-    opacity: .7
+    margin-right: 4px
 }
 
 .premiumIcon_a6a247 {
@@ -98951,7 +99119,8 @@ div.content_aac020 {
 }
 
 .categoryWrapper__3d4f2 {
-    position: relative
+    position: relative;
+    padding-top: 40px
 }
 
 .closeWrapper_fa833c {
@@ -135555,24 +135724,69 @@ div.nagbar_c731ff {
         --activity-card-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --activity-card-icon-overlay: color-mix(in oklab,
+                hsl(var(--primary-600-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --alert-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --android-navigation-bar-background: color-mix(in oklab,
                 var(--primary-830) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --android-navigation-scrim-background: color-mix(in oklab,
+                hsl(var(--primary-830-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --android-ripple: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.07) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.07) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--primary-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-floating: color-mix(in oklab,
                 var(--primary-800) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --background-mentioned: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --background-mentioned-hover: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-automod: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.05) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.05) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-automod-hover: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-highlight: color-mix(in oklab,
+                hsl(var(--brand-360-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-highlight-hover: color-mix(in oklab,
+                hsl(var(--brand-360-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-hover: color-mix(in oklab,
+                hsl(var(--primary-900-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --background-mobile-primary: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-mobile-secondary: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-accent: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-accent-2: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-active: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-hover: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-selected: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --background-nested-floating: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135588,6 +135802,9 @@ div.nagbar_c731ff {
         --background-tertiary: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --bg-backdrop: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop-no-opacity: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135603,6 +135820,15 @@ div.nagbar_c731ff {
         --bg-brand: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-faint: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-strong: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-subtle: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --bg-surface-overlay: color-mix(in oklab,
                 var(--primary-800) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135615,6 +135841,24 @@ div.nagbar_c731ff {
         --black: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+        --blur-fallback-pressed: color-mix(in oklab,
+                hsl(var(--primary-730-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+        --border-faint: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.03) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.03) var(--custom-theme-mix-amount-base, 0%));
+        --border-strong: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --border-subtle: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --bug-reporter-modal-submitting-background: color-mix(in oklab,
+                hsl(var(--primary-800-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --button-creator-revenue-background: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135630,6 +135874,9 @@ div.nagbar_c731ff {
         --button-danger-background-hover: color-mix(in oklab,
                 var(--red-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-brand-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background-active: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135654,6 +135901,9 @@ div.nagbar_c731ff {
         --button-outline-brand-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-danger-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background-active: color-mix(in oklab,
                 var(--red-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135678,6 +135928,9 @@ div.nagbar_c731ff {
         --button-outline-danger-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-positive-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background-active: color-mix(in oklab,
                 var(--green-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135702,6 +135955,9 @@ div.nagbar_c731ff {
         --button-outline-positive-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-primary-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background-active: color-mix(in oklab,
                 var(--primary-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135750,6 +136006,12 @@ div.nagbar_c731ff {
         --button-secondary-background-hover: color-mix(in oklab,
                 var(--primary-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --card-gradient-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.4) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+        --card-gradient-pressed-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --card-primary-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135764,7 +136026,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --channel-icon: color-mix(in oklab,
                 var(--primary-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channel-text-area-placeholder: color-mix(in oklab,
                 var(--primary-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135789,9 +136051,30 @@ div.nagbar_c731ff {
         --chat-swipe-to-reply-background: color-mix(in oklab,
                 var(--primary-660) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --chat-swipe-to-reply-gradient-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --coachmark-bg: color-mix(in oklab,
                 var(--primary-800) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-media-seekbar-container: color-mix(in oklab,
+                hsl(var(--plum-6-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-text-primary: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-text-secondary: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-ui-mod: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-ui-mod-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --context-menu-backdrop-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135804,6 +136087,9 @@ div.nagbar_c731ff {
         --creator-revenue-icon-gradient-start: color-mix(in oklab,
                 var(--teal-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --creator-revenue-info-box-background: color-mix(in oklab,
+                hsl(var(--teal-430-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-border: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135813,15 +136099,27 @@ div.nagbar_c731ff {
         --creator-revenue-progress-bar: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-card-bg: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-card-editable-bg: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-background: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-quickswitcher-input-placeholder: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-store-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-bg: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-text-input-border: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border-disabled: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135831,6 +136129,15 @@ div.nagbar_c731ff {
         --deprecated-text-input-prefix: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --display-banner-overflow-background: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --divider-strong: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --divider-subtle: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --embed-background: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135846,6 +136153,12 @@ div.nagbar_c731ff {
         --focus-primary: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --forum-post-extra-media-count-container-background: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.8) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+        --forum-post-tag-background: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.9) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.9) var(--custom-theme-mix-amount-base, 0%));
         --guild-icon-inactive-bg: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135855,45 +136168,69 @@ div.nagbar_c731ff {
         --guild-notifications-bottom-sheet-pill-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --halo-positive: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --header-muted: color-mix(in oklab,
                 var(--primary-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --header-primary: color-mix(in oklab,
                 var(--primary-130) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --header-secondary: color-mix(in oklab,
                 var(--primary-330) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --home-background: color-mix(in oklab,
                 var(--primary-645) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --home-card-resting-border: color-mix(in oklab,
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --icon-muted: color-mix(in oklab,
                 var(--primary-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-primary: color-mix(in oklab,
                 var(--primary-130) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-secondary: color-mix(in oklab,
                 var(--primary-330) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
+        --icon-transparent: color-mix(in oklab,
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-text, 0%));
+        --info-box-background: color-mix(in oklab,
+                hsl(var(--blue-345-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --info-danger-background: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-help-background: color-mix(in oklab,
+                hsl(var(--blue-345-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-help-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-positive-background: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-warning-background: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135903,6 +136240,9 @@ div.nagbar_c731ff {
         --input-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --input-focused-border: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--input-placeholder-text-dark) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135918,9 +136258,27 @@ div.nagbar_c731ff {
         --interactive-normal: color-mix(in oklab,
                 var(--primary-330) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
+        --legacy-android-blur-overlay-default: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-android-blur-overlay-ultra-thin: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.025) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.025) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-blur-fallback-default: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.975) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.975) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-blur-fallback-ultra-thin: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.95) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.95) var(--custom-theme-mix-amount-base, 0%));
+        --live-stage-tile-border: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --logo-primary: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --mention-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --mention-foreground: color-mix(in oklab,
                 var(--brand-260) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135942,6 +136300,39 @@ div.nagbar_c731ff {
         --polls-normal-image-background: color-mix(in oklab,
                 var(--primary-660) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --polls-victor-fill: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --polls-voted-fill: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-card-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-message-input-border: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-note-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-overlay: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-overlay-synced-with-user-theme: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.8) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-profile-body-background-hover: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-role-pill-background: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-role-pill-border: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-section-box: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.45) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.45) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-background: color-mix(in oklab,
                 var(--primary-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135951,6 +136342,9 @@ div.nagbar_c731ff {
         --redesign-activity-card-badge-icon: color-mix(in oklab,
                 var(--primary-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-activity-card-border: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.02) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.02) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-overflow-background: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135981,6 +136375,12 @@ div.nagbar_c731ff {
         --redesign-button-destructive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-overlay-alpha-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-overlay-alpha-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.64) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136002,9 +136402,15 @@ div.nagbar_c731ff {
         --redesign-button-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-border: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-on-blurple-background: color-mix(in oklab,
+                hsl(var(--brand-530-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-border: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136017,6 +136423,12 @@ div.nagbar_c731ff {
         --redesign-button-primary-alt-on-blurple-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
+                hsl(var(--brand-700-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-pressed-border: color-mix(in oklab,
+                hsl(var(--brand-400-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136047,15 +136459,33 @@ div.nagbar_c731ff {
         --redesign-button-secondary-background: color-mix(in oklab,
                 var(--primary-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-border: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-overlay-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-overlay-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.64) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-pressed-background: color-mix(in oklab,
                 var(--primary-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-pressed-border: color-mix(in oklab,
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--primary-230) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-selected-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-selected-pressed-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.28) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.28) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136086,6 +136516,9 @@ div.nagbar_c731ff {
         --redesign-chat-input-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-image-button-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-input-control-active-bg: color-mix(in oklab,
                 var(--primary-645) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136122,6 +136555,9 @@ div.nagbar_c731ff {
         --scrollbar-thin-thumb: color-mix(in oklab,
                 var(--primary-730) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --scrollbar-thin-track: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-hidden-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136215,6 +136651,9 @@ div.nagbar_c731ff {
         --textbox-markdown-syntax: color-mix(in oklab,
                 var(--primary-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --theme-locked-blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --thread-channel-spine: color-mix(in oklab,
                 var(--primary-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136224,6 +136663,15 @@ div.nagbar_c731ff {
         --typing-indicator-bg: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --user-profile-header-overflow-background: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --voice-video-video-tile-background: color-mix(in oklab,
+                hsl(var(--plum-17-hsl) / 0.4) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+        --voice-video-video-tile-blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --white: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136564,24 +137012,69 @@ div.nagbar_c731ff {
         --activity-card-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --activity-card-icon-overlay: color-mix(in oklab,
+                hsl(var(--primary-600-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --alert-bg: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --android-navigation-bar-background: color-mix(in oklab,
                 var(--primary-100) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --android-navigation-scrim-background: color-mix(in oklab,
+                hsl(var(--primary-100-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --android-ripple: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--primary-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-floating: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --background-mentioned: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --background-mentioned-hover: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-automod: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.05) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.05) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-automod-hover: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-highlight: color-mix(in oklab,
+                hsl(var(--brand-360-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-highlight-hover: color-mix(in oklab,
+                hsl(var(--brand-360-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-hover: color-mix(in oklab,
+                hsl(var(--primary-900-hsl) / 0.03) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.03) var(--custom-theme-mix-amount-base, 0%));
         --background-mobile-primary: color-mix(in oklab,
                 var(--primary-100) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-mobile-secondary: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-accent: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-accent-2: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-active: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-hover: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-selected: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --background-nested-floating: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136597,6 +137090,9 @@ div.nagbar_c731ff {
         --background-tertiary: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --bg-backdrop: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop-no-opacity: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136612,6 +137108,15 @@ div.nagbar_c731ff {
         --bg-brand: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-faint: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-strong: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-subtle: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --bg-surface-overlay: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136624,6 +137129,24 @@ div.nagbar_c731ff {
         --black: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-530-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+        --blur-fallback-pressed: color-mix(in oklab,
+                hsl(var(--primary-560-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+        --border-faint: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.04) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.04) var(--custom-theme-mix-amount-base, 0%));
+        --border-strong: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --border-subtle: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --bug-reporter-modal-submitting-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --button-creator-revenue-background: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136639,6 +137162,9 @@ div.nagbar_c731ff {
         --button-danger-background-hover: color-mix(in oklab,
                 var(--red-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-brand-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background-active: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136663,6 +137189,9 @@ div.nagbar_c731ff {
         --button-outline-brand-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-danger-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background-active: color-mix(in oklab,
                 var(--red-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136687,6 +137216,9 @@ div.nagbar_c731ff {
         --button-outline-danger-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-positive-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background-active: color-mix(in oklab,
                 var(--green-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136711,6 +137243,9 @@ div.nagbar_c731ff {
         --button-outline-positive-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-primary-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background-active: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136759,6 +137294,12 @@ div.nagbar_c731ff {
         --button-secondary-background-hover: color-mix(in oklab,
                 var(--primary-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --card-gradient-bg: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --card-gradient-pressed-bg: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --card-primary-bg: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136773,7 +137314,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --channel-icon: color-mix(in oklab,
                 var(--primary-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channel-text-area-placeholder: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136798,9 +137339,30 @@ div.nagbar_c731ff {
         --chat-swipe-to-reply-background: color-mix(in oklab,
                 var(--primary-160) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --chat-swipe-to-reply-gradient-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.4) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --coachmark-bg: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-media-seekbar-container: color-mix(in oklab,
+                hsl(var(--plum-6-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-text-primary: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-text-secondary: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-ui-mod: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-ui-mod-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --context-menu-backdrop-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136813,6 +137375,9 @@ div.nagbar_c731ff {
         --creator-revenue-icon-gradient-start: color-mix(in oklab,
                 var(--teal-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --creator-revenue-info-box-background: color-mix(in oklab,
+                hsl(var(--teal-430-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-border: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136825,15 +137390,24 @@ div.nagbar_c731ff {
         --deprecated-card-bg: color-mix(in oklab,
                 var(--primary-100) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-card-editable-bg: color-mix(in oklab,
+                hsl(var(--primary-100-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-quickswitcher-input-placeholder: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-store-bg: color-mix(in oklab,
                 var(--primary-100) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-bg: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-text-input-border: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border-disabled: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136843,6 +137417,15 @@ div.nagbar_c731ff {
         --deprecated-text-input-prefix: color-mix(in oklab,
                 var(--primary-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --display-banner-overflow-background: color-mix(in oklab,
+                hsl(var(--white-200-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --divider-strong: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --divider-subtle: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --embed-background: color-mix(in oklab,
                 var(--primary-130) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136858,6 +137441,12 @@ div.nagbar_c731ff {
         --focus-primary: color-mix(in oklab,
                 var(--blue-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --forum-post-extra-media-count-container-background: color-mix(in oklab,
+                hsl(var(--primary-160-hsl) / 0.8) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+        --forum-post-tag-background: color-mix(in oklab,
+                hsl(var(--primary-160-hsl) / 0.9) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.9) var(--custom-theme-mix-amount-base, 0%));
         --guild-icon-inactive-bg: color-mix(in oklab,
                 var(--primary-130) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136867,51 +137456,81 @@ div.nagbar_c731ff {
         --guild-notifications-bottom-sheet-pill-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --halo-positive: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --header-muted: color-mix(in oklab,
                 var(--primary-460) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --header-primary: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --header-secondary: color-mix(in oklab,
                 var(--primary-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --home-background: color-mix(in oklab,
                 var(--primary-100) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --home-card-resting-border: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --icon-muted: color-mix(in oklab,
                 var(--primary-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-primary: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-secondary: color-mix(in oklab,
                 var(--primary-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
+        --icon-transparent: color-mix(in oklab,
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-text, 0%));
+        --info-box-background: color-mix(in oklab,
+                hsl(var(--blue-345-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --info-danger-background: color-mix(in oklab,
+                hsl(var(--red-430-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-text: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-help-background: color-mix(in oklab,
+                hsl(var(--blue-430-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-help-text: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-positive-background: color-mix(in oklab,
+                hsl(var(--green-400-hsl) / 0.05) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.05) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-text: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-warning-background: color-mix(in oklab,
+                hsl(var(--yellow-400-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-text: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --input-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --input-focused-border: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--primary-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136927,9 +137546,27 @@ div.nagbar_c731ff {
         --interactive-normal: color-mix(in oklab,
                 var(--primary-500) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
+        --legacy-android-blur-overlay-default: color-mix(in oklab,
+                hsl(var(--primary-130-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-android-blur-overlay-ultra-thin: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.25) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.25) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-blur-fallback-default: color-mix(in oklab,
+                hsl(var(--primary-230-hsl) / 0.975) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.975) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-blur-fallback-ultra-thin: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.95) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.95) var(--custom-theme-mix-amount-base, 0%));
+        --live-stage-tile-border: color-mix(in oklab,
+                hsl(var(--primary-430-hsl) / 0.15) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.15) var(--custom-theme-mix-amount-base, 0%));
         --logo-primary: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --mention-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.15) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.15) var(--custom-theme-mix-amount-base, 0%));
         --mention-foreground: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136951,6 +137588,39 @@ div.nagbar_c731ff {
         --polls-normal-image-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --polls-victor-fill: color-mix(in oklab,
+                hsl(var(--green-400-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --polls-voted-fill: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-card-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-message-input-border: color-mix(in oklab,
+                hsl(var(--primary-430-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-note-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-overlay: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-overlay-synced-with-user-theme: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.8) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-profile-body-background-hover: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-role-pill-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-role-pill-border: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-section-box: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.45) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.45) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136960,6 +137630,9 @@ div.nagbar_c731ff {
         --redesign-activity-card-badge-icon: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-activity-card-border: color-mix(in oklab,
+                hsl(var(--primary-400-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-overflow-background: color-mix(in oklab,
                 var(--primary-230) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136990,6 +137663,12 @@ div.nagbar_c731ff {
         --redesign-button-destructive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-overlay-alpha-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-overlay-alpha-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.64) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137011,9 +137690,15 @@ div.nagbar_c731ff {
         --redesign-button-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-border: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-on-blurple-background: color-mix(in oklab,
+                hsl(var(--brand-530-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-border: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137026,6 +137711,9 @@ div.nagbar_c731ff {
         --redesign-button-primary-alt-on-blurple-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-border: color-mix(in oklab,
                 var(--brand-330) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137059,18 +137747,42 @@ div.nagbar_c731ff {
         --redesign-button-secondary-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-border: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-overlay-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-overlay-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.64) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-pressed-background: color-mix(in oklab,
                 var(--primary-130) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-pressed-border: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.04) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.04) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-selected-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-selected-pressed-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-tertiary-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-tertiary-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--primary-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137089,6 +137801,12 @@ div.nagbar_c731ff {
         --redesign-channel-name-text: color-mix(in oklab,
                 var(--primary-860) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-chat-input-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-image-button-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-input-control-active-bg: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137122,6 +137840,12 @@ div.nagbar_c731ff {
         --scrollbar-auto-track: color-mix(in oklab,
                 var(--primary-160) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --scrollbar-thin-thumb: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --scrollbar-thin-track: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-hidden-background: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137215,6 +137939,9 @@ div.nagbar_c731ff {
         --textbox-markdown-syntax: color-mix(in oklab,
                 var(--primary-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --theme-locked-blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --thread-channel-spine: color-mix(in oklab,
                 var(--primary-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137224,6 +137951,15 @@ div.nagbar_c731ff {
         --typing-indicator-bg: color-mix(in oklab,
                 var(--primary-130) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --user-profile-header-overflow-background: color-mix(in oklab,
+                hsl(var(--white-200-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --voice-video-video-tile-background: color-mix(in oklab,
+                hsl(var(--plum-17-hsl) / 0.4) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+        --voice-video-video-tile-blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --white: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137564,18 +138300,45 @@ div.nagbar_c731ff {
         --activity-card-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --activity-card-icon-overlay: color-mix(in oklab,
+                hsl(var(--primary-600-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --alert-bg: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --android-navigation-bar-background: color-mix(in oklab,
                 var(--plum-24) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --android-navigation-scrim-background: color-mix(in oklab,
+                hsl(var(--plum-24-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --android-ripple: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.07) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.07) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-floating: color-mix(in oklab,
                 var(--plum-23) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --background-mentioned: color-mix(in oklab,
+                hsl(var(--yellow-260-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-mentioned-hover: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-automod: color-mix(in oklab,
+                hsl(var(--red-345-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-automod-hover: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-highlight: color-mix(in oklab,
+                hsl(var(--brand-360-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-highlight-hover: color-mix(in oklab,
+                hsl(var(--brand-360-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --background-message-hover: color-mix(in oklab,
                 var(--plum-21) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137585,6 +138348,21 @@ div.nagbar_c731ff {
         --background-mobile-secondary: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-accent: color-mix(in oklab,
+                hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.09) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-accent-2: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.32) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.32) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-active: color-mix(in oklab,
+                hsl(var(--plum-13-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-hover: color-mix(in oklab,
+                hsl(var(--plum-13-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-selected: color-mix(in oklab,
+                hsl(var(--plum-13-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --background-nested-floating: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137600,6 +138378,9 @@ div.nagbar_c731ff {
         --background-tertiary: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --bg-backdrop: color-mix(in oklab,
+                hsl(var(--plum-19-hsl) / 0.75) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.75) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop-no-opacity: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137615,6 +138396,15 @@ div.nagbar_c731ff {
         --bg-brand: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-faint: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-strong: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.18) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.18) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-subtle: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --bg-surface-overlay: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137627,6 +138417,24 @@ div.nagbar_c731ff {
         --black: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --blur-fallback: color-mix(in oklab,
+                hsl(var(--plum-19-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+        --blur-fallback-pressed: color-mix(in oklab,
+                hsl(var(--plum-20-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+        --border-faint: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+        --border-strong: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --border-subtle: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --bug-reporter-modal-submitting-background: color-mix(in oklab,
+                hsl(var(--plum-23-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --button-creator-revenue-background: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137642,6 +138450,9 @@ div.nagbar_c731ff {
         --button-danger-background-hover: color-mix(in oklab,
                 var(--red-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-brand-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background-active: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137666,6 +138477,9 @@ div.nagbar_c731ff {
         --button-outline-brand-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-danger-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background-active: color-mix(in oklab,
                 var(--red-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137690,6 +138504,9 @@ div.nagbar_c731ff {
         --button-outline-danger-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-positive-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background-active: color-mix(in oklab,
                 var(--green-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137714,6 +138531,9 @@ div.nagbar_c731ff {
         --button-outline-positive-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-primary-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background-active: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137762,6 +138582,12 @@ div.nagbar_c731ff {
         --button-secondary-background-hover: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --card-gradient-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.4) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+        --card-gradient-pressed-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --card-primary-bg: color-mix(in oklab,
                 var(--plum-23) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137776,7 +138602,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --channel-icon: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channel-text-area-placeholder: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137801,9 +138627,30 @@ div.nagbar_c731ff {
         --chat-swipe-to-reply-background: color-mix(in oklab,
                 var(--plum-22) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --chat-swipe-to-reply-gradient-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --coachmark-bg: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-media-seekbar-container: color-mix(in oklab,
+                hsl(var(--plum-6-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-text-primary: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-text-secondary: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-ui-mod: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-ui-mod-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --context-menu-backdrop-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137816,6 +138663,9 @@ div.nagbar_c731ff {
         --creator-revenue-icon-gradient-start: color-mix(in oklab,
                 var(--teal-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --creator-revenue-info-box-background: color-mix(in oklab,
+                hsl(var(--teal-430-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-border: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137825,15 +138675,27 @@ div.nagbar_c731ff {
         --creator-revenue-progress-bar: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-card-bg: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-card-editable-bg: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-background: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-quickswitcher-input-placeholder: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-store-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-bg: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-text-input-border: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border-disabled: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137843,6 +138705,15 @@ div.nagbar_c731ff {
         --deprecated-text-input-prefix: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --display-banner-overflow-background: color-mix(in oklab,
+                hsl(var(--plum-20-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --divider-strong: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --divider-subtle: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --embed-background: color-mix(in oklab,
                 var(--plum-23) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137858,6 +138729,12 @@ div.nagbar_c731ff {
         --focus-primary: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --forum-post-extra-media-count-container-background: color-mix(in oklab,
+                hsl(var(--plum-19-hsl) / 0.8) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+        --forum-post-tag-background: color-mix(in oklab,
+                hsl(var(--plum-19-hsl) / 0.9) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.9) var(--custom-theme-mix-amount-base, 0%));
         --guild-icon-inactive-bg: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137867,51 +138744,81 @@ div.nagbar_c731ff {
         --guild-notifications-bottom-sheet-pill-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --halo-positive: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --header-muted: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --header-primary: color-mix(in oklab,
                 var(--plum-2) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --header-secondary: color-mix(in oklab,
                 var(--plum-8) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --home-background: color-mix(in oklab,
                 var(--plum-18) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --home-card-resting-border: color-mix(in oklab,
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --icon-muted: color-mix(in oklab,
                 var(--plum-12) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-primary: color-mix(in oklab,
                 var(--plum-5) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-secondary: color-mix(in oklab,
                 var(--plum-9) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
+        --icon-transparent: color-mix(in oklab,
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-text, 0%));
+        --info-box-background: color-mix(in oklab,
+                hsl(var(--blue-345-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --info-danger-background: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-help-background: color-mix(in oklab,
+                hsl(var(--blue-345-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-help-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-positive-background: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-warning-background: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --input-background: color-mix(in oklab,
+                hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.09) var(--custom-theme-mix-amount-base, 0%));
+        --input-focused-border: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--plum-9) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137927,9 +138834,27 @@ div.nagbar_c731ff {
         --interactive-normal: color-mix(in oklab,
                 var(--plum-6) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
+        --legacy-android-blur-overlay-default: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-android-blur-overlay-ultra-thin: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.025) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.025) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-blur-fallback-default: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.975) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.975) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-blur-fallback-ultra-thin: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.95) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.95) var(--custom-theme-mix-amount-base, 0%));
+        --live-stage-tile-border: color-mix(in oklab,
+                hsl(var(--plum-13-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --logo-primary: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --mention-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --mention-foreground: color-mix(in oklab,
                 var(--brand-230) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137951,6 +138876,39 @@ div.nagbar_c731ff {
         --polls-normal-image-background: color-mix(in oklab,
                 var(--primary-660) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --polls-victor-fill: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --polls-voted-fill: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-card-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-message-input-border: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-note-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-overlay: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-overlay-synced-with-user-theme: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.8) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-profile-body-background-hover: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-role-pill-background: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-role-pill-border: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-section-box: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.45) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.45) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-background: color-mix(in oklab,
                 var(--primary-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137960,6 +138918,9 @@ div.nagbar_c731ff {
         --redesign-activity-card-badge-icon: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-activity-card-border: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-overflow-background: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137990,6 +138951,12 @@ div.nagbar_c731ff {
         --redesign-button-destructive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-overlay-alpha-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-overlay-alpha-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.64) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138011,9 +138978,15 @@ div.nagbar_c731ff {
         --redesign-button-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-border: color-mix(in oklab,
                 var(--brand-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-on-blurple-background: color-mix(in oklab,
+                hsl(var(--brand-530-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-border: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138026,6 +138999,12 @@ div.nagbar_c731ff {
         --redesign-button-primary-alt-on-blurple-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
+                hsl(var(--brand-700-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-pressed-border: color-mix(in oklab,
+                hsl(var(--brand-400-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138056,18 +139035,42 @@ div.nagbar_c731ff {
         --redesign-button-secondary-background: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-border: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-overlay-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-overlay-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.64) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-pressed-background: color-mix(in oklab,
                 var(--plum-15) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-pressed-border: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--plum-4) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-selected-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-selected-pressed-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.28) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.28) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-tertiary-background: color-mix(in oklab,
+                hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.09) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-tertiary-pressed-background: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--plum-6) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138086,6 +139089,12 @@ div.nagbar_c731ff {
         --redesign-channel-name-text: color-mix(in oklab,
                 var(--plum-2) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-chat-input-background: color-mix(in oklab,
+                hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.09) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-image-button-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-input-control-active-bg: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138122,9 +139131,15 @@ div.nagbar_c731ff {
         --scrollbar-thin-thumb: color-mix(in oklab,
                 var(--plum-20) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --scrollbar-thin-track: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-hidden-background: color-mix(in oklab,
                 var(--plum-14) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --spoiler-revealed-background: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --stage-card-pill-bg: color-mix(in oklab,
                 var(--plum-25) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138212,6 +139227,9 @@ div.nagbar_c731ff {
         --textbox-markdown-syntax: color-mix(in oklab,
                 var(--plum-9) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --theme-locked-blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --thread-channel-spine: color-mix(in oklab,
                 var(--plum-13) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138221,6 +139239,15 @@ div.nagbar_c731ff {
         --typing-indicator-bg: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --user-profile-header-overflow-background: color-mix(in oklab,
+                hsl(var(--plum-20-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --voice-video-video-tile-background: color-mix(in oklab,
+                hsl(var(--plum-17-hsl) / 0.4) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+        --voice-video-video-tile-blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --white: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138561,18 +139588,45 @@ div.nagbar_c731ff {
         --activity-card-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --activity-card-icon-overlay: color-mix(in oklab,
+                hsl(var(--primary-600-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --alert-bg: color-mix(in oklab,
                 var(--plum-20) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --android-navigation-bar-background: color-mix(in oklab,
                 var(--plum-24) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --android-navigation-scrim-background: color-mix(in oklab,
+                hsl(var(--plum-24-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --android-ripple: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.07) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.07) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--plum-15) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-floating: color-mix(in oklab,
                 var(--plum-18) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --background-mentioned: color-mix(in oklab,
+                hsl(var(--yellow-260-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-mentioned-hover: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-automod: color-mix(in oklab,
+                hsl(var(--red-345-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-automod-hover: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-highlight: color-mix(in oklab,
+                hsl(var(--brand-360-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+        --background-message-highlight-hover: color-mix(in oklab,
+                hsl(var(--brand-360-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --background-message-hover: color-mix(in oklab,
                 var(--plum-21) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138582,6 +139636,21 @@ div.nagbar_c731ff {
         --background-mobile-secondary: color-mix(in oklab,
                 var(--plum-20) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-accent: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-accent-2: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-active: color-mix(in oklab,
+                hsl(var(--plum-13-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-hover: color-mix(in oklab,
+                hsl(var(--plum-13-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --background-modifier-selected: color-mix(in oklab,
+                hsl(var(--plum-13-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --background-nested-floating: color-mix(in oklab,
                 var(--plum-22) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138597,6 +139666,9 @@ div.nagbar_c731ff {
         --background-tertiary: color-mix(in oklab,
                 var(--plum-16) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --bg-backdrop: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop-no-opacity: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138612,6 +139684,15 @@ div.nagbar_c731ff {
         --bg-brand: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-faint: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-strong: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --bg-mod-subtle: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --bg-surface-overlay: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138624,6 +139705,24 @@ div.nagbar_c731ff {
         --black: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --blur-fallback: color-mix(in oklab,
+                hsl(var(--plum-17-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+        --blur-fallback-pressed: color-mix(in oklab,
+                hsl(var(--plum-18-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+        --border-faint: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+        --border-strong: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.22) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.22) var(--custom-theme-mix-amount-base, 0%));
+        --border-subtle: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --bug-reporter-modal-submitting-background: color-mix(in oklab,
+                hsl(var(--plum-23-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --button-creator-revenue-background: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138639,6 +139738,9 @@ div.nagbar_c731ff {
         --button-danger-background-hover: color-mix(in oklab,
                 var(--red-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-brand-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background-active: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138663,6 +139765,9 @@ div.nagbar_c731ff {
         --button-outline-brand-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-danger-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background-active: color-mix(in oklab,
                 var(--red-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138687,6 +139792,9 @@ div.nagbar_c731ff {
         --button-outline-danger-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-positive-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background-active: color-mix(in oklab,
                 var(--green-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138711,6 +139819,9 @@ div.nagbar_c731ff {
         --button-outline-positive-text-hover: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --button-outline-primary-background: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background-active: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138759,6 +139870,12 @@ div.nagbar_c731ff {
         --button-secondary-background-hover: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --card-gradient-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.4) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+        --card-gradient-pressed-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --card-primary-bg: color-mix(in oklab,
                 var(--plum-18) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138773,7 +139890,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --channel-icon: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channel-text-area-placeholder: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138798,9 +139915,30 @@ div.nagbar_c731ff {
         --chat-swipe-to-reply-background: color-mix(in oklab,
                 var(--plum-22) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --chat-swipe-to-reply-gradient-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --coachmark-bg: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-media-seekbar-container: color-mix(in oklab,
+                hsl(var(--plum-6-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-text-primary: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-text-secondary: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-ui-mod: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --content-inventory-overlay-ui-mod-bg: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --context-menu-backdrop-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138813,6 +139951,9 @@ div.nagbar_c731ff {
         --creator-revenue-icon-gradient-start: color-mix(in oklab,
                 var(--teal-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --creator-revenue-info-box-background: color-mix(in oklab,
+                hsl(var(--teal-430-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-border: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138822,15 +139963,27 @@ div.nagbar_c731ff {
         --creator-revenue-progress-bar: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-card-bg: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-card-editable-bg: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-background: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-quickswitcher-input-placeholder: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-store-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-bg: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --deprecated-text-input-border: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border-disabled: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138840,6 +139993,15 @@ div.nagbar_c731ff {
         --deprecated-text-input-prefix: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --display-banner-overflow-background: color-mix(in oklab,
+                hsl(var(--plum-20-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --divider-strong: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.22) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.22) var(--custom-theme-mix-amount-base, 0%));
+        --divider-subtle: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --embed-background: color-mix(in oklab,
                 var(--plum-18) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138855,6 +140017,12 @@ div.nagbar_c731ff {
         --focus-primary: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --forum-post-extra-media-count-container-background: color-mix(in oklab,
+                hsl(var(--plum-19-hsl) / 0.8) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+        --forum-post-tag-background: color-mix(in oklab,
+                hsl(var(--plum-19-hsl) / 0.9) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.9) var(--custom-theme-mix-amount-base, 0%));
         --guild-icon-inactive-bg: color-mix(in oklab,
                 var(--plum-20) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138864,51 +140032,81 @@ div.nagbar_c731ff {
         --guild-notifications-bottom-sheet-pill-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --halo-positive: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --header-muted: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --header-primary: color-mix(in oklab,
                 var(--plum-3) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --header-secondary: color-mix(in oklab,
                 var(--plum-9) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --home-background: color-mix(in oklab,
                 var(--plum-18) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --home-card-resting-border: color-mix(in oklab,
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --icon-muted: color-mix(in oklab,
                 var(--plum-11) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-primary: color-mix(in oklab,
                 var(--plum-4) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-secondary: color-mix(in oklab,
                 var(--plum-9) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
+        --icon-transparent: color-mix(in oklab,
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-text, 0%));
+        --info-box-background: color-mix(in oklab,
+                hsl(var(--blue-345-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+        --info-danger-background: color-mix(in oklab,
+                hsl(var(--red-400-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-help-background: color-mix(in oklab,
+                hsl(var(--blue-345-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-help-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-positive-background: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --info-warning-background: color-mix(in oklab,
+                hsl(var(--yellow-300-hsl) / 0.1) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --input-background: color-mix(in oklab,
+                hsl(var(--plum-24-hsl) / 0.85) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+        --input-focused-border: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.32) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.32) var(--custom-theme-mix-amount-base, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--plum-10) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138924,9 +140122,27 @@ div.nagbar_c731ff {
         --interactive-normal: color-mix(in oklab,
                 var(--plum-6) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
+        --legacy-android-blur-overlay-default: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-android-blur-overlay-ultra-thin: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.025) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.025) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-blur-fallback-default: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.975) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.975) var(--custom-theme-mix-amount-base, 0%));
+        --legacy-blur-fallback-ultra-thin: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.95) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.95) var(--custom-theme-mix-amount-base, 0%));
+        --live-stage-tile-border: color-mix(in oklab,
+                hsl(var(--plum-13-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --logo-primary: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --mention-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --mention-foreground: color-mix(in oklab,
                 var(--brand-230) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138948,6 +140164,39 @@ div.nagbar_c731ff {
         --polls-normal-image-background: color-mix(in oklab,
                 var(--primary-660) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --polls-victor-fill: color-mix(in oklab,
+                hsl(var(--green-360-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --polls-voted-fill: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-card-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.7) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-message-input-border: color-mix(in oklab,
+                hsl(var(--primary-500-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-note-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.3) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-overlay: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.6) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-overlay-synced-with-user-theme: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.8) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-profile-body-background-hover: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-role-pill-background: color-mix(in oklab,
+                hsl(var(--primary-660-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-role-pill-border: color-mix(in oklab,
+                hsl(var(--white-500-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+        --profile-gradient-section-box: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.45) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.45) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-background: color-mix(in oklab,
                 var(--primary-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138957,6 +140206,9 @@ div.nagbar_c731ff {
         --redesign-activity-card-badge-icon: color-mix(in oklab,
                 var(--plum-10) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-activity-card-border: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-overflow-background: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138987,6 +140239,12 @@ div.nagbar_c731ff {
         --redesign-button-destructive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-overlay-alpha-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-overlay-alpha-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.64) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139008,9 +140266,15 @@ div.nagbar_c731ff {
         --redesign-button-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-border: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-on-blurple-background: color-mix(in oklab,
+                hsl(var(--brand-530-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-border: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139023,6 +140287,12 @@ div.nagbar_c731ff {
         --redesign-button-primary-alt-on-blurple-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
+                hsl(var(--brand-700-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-primary-alt-pressed-border: color-mix(in oklab,
+                hsl(var(--brand-400-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139053,18 +140323,42 @@ div.nagbar_c731ff {
         --redesign-button-secondary-background: color-mix(in oklab,
                 var(--plum-15) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-border: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-overlay-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.54) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-overlay-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.64) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-pressed-background: color-mix(in oklab,
                 var(--plum-13) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-secondary-pressed-border: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.06) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--plum-6) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-selected-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.24) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-selected-pressed-background: color-mix(in oklab,
+                hsl(var(--brand-500-hsl) / 0.28) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.28) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-tertiary-background: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-button-tertiary-pressed-background: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.2) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--plum-5) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139083,6 +140377,12 @@ div.nagbar_c731ff {
         --redesign-channel-name-text: color-mix(in oklab,
                 var(--plum-3) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-chat-input-background: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.12) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --redesign-image-button-pressed-background: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0.08) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-input-control-active-bg: color-mix(in oklab,
                 var(--plum-16) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139119,9 +140419,15 @@ div.nagbar_c731ff {
         --scrollbar-thin-thumb: color-mix(in oklab,
                 var(--plum-21) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --scrollbar-thin-track: color-mix(in oklab,
+                hsl(var(--black-500-hsl) / 0) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-hidden-background: color-mix(in oklab,
                 var(--plum-14) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --spoiler-revealed-background: color-mix(in oklab,
+                hsl(var(--plum-11-hsl) / 0.16) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --stage-card-pill-bg: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139209,6 +140515,9 @@ div.nagbar_c731ff {
         --textbox-markdown-syntax: color-mix(in oklab,
                 var(--plum-9) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --theme-locked-blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.96) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --thread-channel-spine: color-mix(in oklab,
                 var(--plum-13) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139218,6 +140527,15 @@ div.nagbar_c731ff {
         --typing-indicator-bg: color-mix(in oklab,
                 var(--plum-20) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+        --user-profile-header-overflow-background: color-mix(in oklab,
+                hsl(var(--plum-20-hsl) / 0.5) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+        --voice-video-video-tile-background: color-mix(in oklab,
+                hsl(var(--plum-17-hsl) / 0.4) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+        --voice-video-video-tile-blur-fallback: color-mix(in oklab,
+                hsl(var(--primary-700-hsl) / 0.48) 100%,
+                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --white: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140583,4 +141901,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.5bce6e7cb14020b3da4a.css.map*/
+/*# sourceMappingURL=99387.9a76bebb07f149d3d223.css.map*/
