@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295243", ", Version Hash: ").concat("1c608a55cca17ab57f5215b26ded4e240f0fff0e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295258", ", Version Hash: ").concat("e9d339f9cca5b51b8d97846ba491dc9aa31d5f87")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56021,10 +56021,10 @@
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_VALORANT_TITLE: "Recruit more Valorant friends",
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_GENSHIN_TITLE: "Recruit more Genshin friends",
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_MESSAGE: "Become one of the first Guilds and recruit players that match your server's playstyle and vibe.",
-                CLAN_GUILD_LIST_USER_UPSELL_VALORANT_TITLE: "Find new people to play Valorant on Discord!",
-                CLAN_GUILD_LIST_USER_UPSELL_VALORANT_MESSAGE: "Discover small, organized Valorant servers with similar vibes and playstyle.",
-                CLAN_GUILD_LIST_USER_UPSELL_GENSHIN_TITLE: "Find new people to play Genshin on Discord!",
-                CLAN_GUILD_LIST_USER_UPSELL_GENSHIN_MESSAGE: "Discover small, organized Genshin servers with similar vibes and playstyle.",
+                CLAN_GUILD_LIST_USER_UPSELL_VALORANT_TITLE: "Join an exclusive gaming Guild",
+                CLAN_GUILD_LIST_USER_UPSELL_VALORANT_MESSAGE: "Check out small Guilds looking to recruit Valorant players and make new friends.",
+                CLAN_GUILD_LIST_USER_UPSELL_GENSHIN_TITLE: "Join an exclusive gaming Guild",
+                CLAN_GUILD_LIST_USER_UPSELL_GENSHIN_MESSAGE: "Check out small Guilds looking to recruit Genshin players and make new friends.",
                 CLAN_SETUP_MODAL_SAVE_AND_QUIT: "Save & Exit",
                 CLAN_SETUP_APPLICATION_TITLE: "Last Step! Set up the application.",
                 CLAN_SETUP_APPLICATION_SUBTITLE: "Ask questions to get to know potential members better. You'll review their answers and decide if they are approved to join. You'll also be able to interview applicants to get to know them better.",
@@ -56125,7 +56125,7 @@
                 CLAN_JOIN_SUCCESS_MAIN_CTA: "Let's Go",
                 CLAN_JOIN_SUCCESS_SUBTITLE_MOBILE: "Rep your Guild, make new friends, and play some games. Get in and say hi to your new guildmates.",
                 CLAN_USER_APPLICATION_COACHMARK_TITLE: "Your application is pending!",
-                CLAN_USER_APPLICATION_COACHMARK_BODY: "Admin of the guild will get back to you after they reviewed your application.",
+                CLAN_USER_APPLICATION_COACHMARK_BODY: "The Guild leader will get back to you soon.",
                 CLAN_USER_APPLICATION_COACHMARK_CTA: "Got it",
                 CLAN_SETTINGS: "Guild Settings",
                 CLAN_SETTINGS_BASIC_INFO: "Basic Info",
@@ -88506,8 +88506,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295243", "295243"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295243")), t = 0), t
+                let t = parseInt((e = "295258", "295258"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295258")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116371,8 +116371,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295243",
-                    versionHash: "1c608a55cca17ab57f5215b26ded4e240f0fff0e"
+                    buildNumber: "295258",
+                    versionHash: "e9d339f9cca5b51b8d97846ba491dc9aa31d5f87"
                 }
             }
             n.r(t), n.d(t, {
@@ -173367,8 +173367,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716324165217",
-                                    build_number: "295243"
+                                    built_at: "1716325270585",
+                                    build_number: "295258"
                                 }
                             },
                             retries: 1
@@ -250310,7 +250310,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1c608a55cca17ab57f5215b26ded4e240f0fff0e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e9d339f9cca5b51b8d97846ba491dc9aa31d5f87"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279409,7 +279409,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295243"
+                                build_number: "295258"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286767,7 +286767,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295243", "295243"), 10);
+                let s = parseInt((n = "295258", "295258"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314457,4 +314457,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.dfe0a7dd6a5f180fcdeb.js.map
+//# sourceMappingURL=71586.f93a6e44e6c263ad8de8.js.map
