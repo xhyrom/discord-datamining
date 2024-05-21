@@ -5981,8 +5981,7 @@
                 purchaseButton: "purchaseButton_c932c7",
                 shaker: "shaker__2bf29",
                 shopCard: "shopCard__9e3fe",
-                shopCardDefaultAnimation: "shopCardDefaultAnimation_bcabdf",
-                shopCardTransformationAnimation: "shopCardTransformationAnimation__05043"
+                shopCardAnimation: "shopCardAnimation_d6a947"
             }
         },
         87951: function(e) {
@@ -5995,6 +5994,11 @@
             "use strict";
             e.exports = {
                 avatarPreviewContainer: "avatarPreviewContainer__73688",
+                bundleAvatarPreviewContainer: "bundleAvatarPreviewContainer_e07383",
+                bundlePfxPreviewContainer: "bundlePfxPreviewContainer_ec3791",
+                bundlePreviewContainer: "bundlePreviewContainer__4f4af",
+                bundlePreviewSlide: "bundlePreviewSlide_dc62a3",
+                bundleSlideTitle: "bundleSlideTitle_f39228",
                 button: "button__0ce02",
                 buttonsContainer: "buttonsContainer__79059",
                 categoryBanner: "categoryBanner__1b5f1",
@@ -6084,8 +6088,7 @@
                 profileEffectShopPreview: "profileEffectShopPreview__291e4",
                 purchaseButton: "purchaseButton__6b7c9",
                 shopCard: "shopCard__3d319",
-                shopCardDefaultAnimation: "shopCardDefaultAnimation__9f764",
-                shopCardTransformationAnimation: "shopCardTransformationAnimation__0e0be"
+                shopCardAnimation: "shopCardAnimation_e4a1b5"
             }
         },
         449221: function(e) {
@@ -7173,19 +7176,12 @@
         93118: function(e) {
             "use strict";
             e.exports = {
-                card: "card__56b24",
                 container: "container_ec1fbc",
                 content: "content__7833e",
                 discoveryContainer: "discoveryContainer__34773",
                 dragRegion: "dragRegion__53c6d",
-                gradient: "gradient__1ca13",
                 toolbar: "toolbar__4e903",
-                topPicks: "topPicks__3115d",
-                topPicksContent: "topPicksContent__7c8f8",
-                topPicksHeader: "topPicksHeader_d3b9c1",
-                topPicksList: "topPicksList_d0f37b",
-                topPicksSpacer: "topPicksSpacer__6fc8d",
-                topPicksTitle: "topPicksTitle__399da"
+                topPicksContent: "topPicksContent__7c8f8"
             }
         },
         449729: function(e) {
@@ -7566,6 +7562,22 @@
                 upsellDetails: "upsellDetails_fe7ec8",
                 upsellSubtitle: "upsellSubtitle__06626",
                 upsellTitle: "upsellTitle__25132"
+            }
+        },
+        886722: function(e) {
+            "use strict";
+            e.exports = {
+                card: "card_e4e263",
+                gradient: "gradient__3bfb3",
+                masonryList: "masonryList__7a8d2",
+                masonryListContainer: "masonryListContainer__755e5",
+                masonryListGradient: "masonryListGradient__25591",
+                previewList: "previewList__9dd4d",
+                previewListContainer: "previewListContainer_cf8f67",
+                previewListSection: "previewListSection_d7bd92",
+                sectionHeader: "sectionHeader_d05f3e",
+                sectionHeaderSpacer: "sectionHeaderSpacer__8428f",
+                sectionHeaderTitle: "sectionHeaderTitle__06f77"
             }
         },
         353964: function(e) {
@@ -15860,6 +15872,7 @@
             e.exports = {
                 backgroundImage: "backgroundImage__6b7c7",
                 close: "close__8441b",
+                coachmarkTextContainer: "coachmarkTextContainer__422cd",
                 container: "container_ab66cd",
                 footer: "footer_eacf42",
                 genshinBackgroundImage: "genshinBackgroundImage__67141 backgroundImage__6b7c7",
@@ -15867,6 +15880,7 @@
                 gradientHidden: "gradientHidden__0cdc2",
                 popoutAnchor: "popoutAnchor__4e269",
                 popoutCaret: "popoutCaret_ca2beb",
+                popoutCaretLeft: "popoutCaretLeft_bfe18a",
                 popoutContainer: "popoutContainer_dd3678",
                 popoutContent: "popoutContent_a7c733",
                 valorantBackgroundImage: "valorantBackgroundImage_eb06a5 backgroundImage__6b7c7"
