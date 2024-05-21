@@ -101578,8 +101578,14 @@ div:has(>div>.container__8ab05) {
 
 .clanContainer__451f0 {
     display: flex;
-    flex-direction: column;
-    gap: 40px
+    flex-direction: column
+}
+
+.applyButtonContainer__8dd0c {
+    margin-top: 40px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column
 }
 
 .verificationForm__7b4bb {
@@ -141905,4 +141911,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6f0d338f17505d6303ee.css.map*/
+/*# sourceMappingURL=99387.a64bff049ecf4a2803a8.css.map*/

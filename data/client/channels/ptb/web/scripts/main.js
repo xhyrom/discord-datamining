@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295355", ", Version Hash: ").concat("d6e64ebe365f2328c317be127fa1c79cd4fb8fbf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295359", ", Version Hash: ").concat("a7ac8f22cb13c1fc50e37d903f62c532d3883988")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56154,6 +56154,7 @@
                 CLAN_APPLICATION_RATE_LIMITED_HEADER: "WOAH THERE. WAY TOO SPICY",
                 CLAN_APPLICATION_RATE_LIMITED_BODY: "You've been sending too many Guild applications.",
                 CLAN_APPLICATION_RATE_LIMITED_BUTTON: "Enter the chill zone",
+                CLAN_APPLICATION_MISSING_PERMISSION: "You don't have permission to join this Guild",
                 CLAN_BADGE: "Badge",
                 CLAN_BADGE_COLORS: "Badge Colors",
                 CLAN_TAG_VALIDATION_RULES: "Max 4 characters",
@@ -88506,8 +88507,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295355", "295355"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295355")), t = 0), t
+                let t = parseInt((e = "295359", "295359"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295359")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116371,8 +116372,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295355",
-                    versionHash: "d6e64ebe365f2328c317be127fa1c79cd4fb8fbf"
+                    buildNumber: "295359",
+                    versionHash: "a7ac8f22cb13c1fc50e37d903f62c532d3883988"
                 }
             }
             n.r(t), n.d(t, {
@@ -145223,24 +145224,25 @@
                 r = n("570140"),
                 s = n("668781"),
                 a = n("239091"),
-                o = n("962086"),
-                l = n("160404"),
-                u = n("264229"),
-                d = n("271383"),
-                _ = n("701190"),
-                c = n("594174"),
-                E = n("981631"),
-                I = n("689938");
-            let T = async (e, t) => {
-                let n = null != t ? t : _.default.getInviteKeyForGuildId(e),
-                    s = c.default.getCurrentUser(),
-                    a = !d.default.isMember(e, null == s ? void 0 : s.id);
+                o = n("881052"),
+                l = n("962086"),
+                u = n("160404"),
+                d = n("264229"),
+                _ = n("271383"),
+                c = n("701190"),
+                E = n("594174"),
+                I = n("981631"),
+                T = n("689938");
+            let f = async (e, t) => {
+                let n = null != t ? t : c.default.getInviteKeyForGuildId(e),
+                    s = E.default.getCurrentUser(),
+                    a = !_.default.isMember(e, null == s ? void 0 : s.id);
                 try {
                     let t = await i.HTTP.get({
-                        url: E.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                        url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                         query: {
                             with_guild: a,
-                            invite_code: null != n ? (0, u.parseInviteCodeFromInviteKey)(n) : void 0
+                            invite_code: null != n ? (0, d.parseInviteCodeFromInviteKey)(n) : void 0
                         },
                         oldFormErrors: !0
                     });
@@ -145264,11 +145266,11 @@
                         guildId: e
                     })
                 }
-            }, f = async (e, t) => {
+            }, S = async (e, t) => {
                 let {
                     body: n
                 } = await i.HTTP.patch({
-                    url: E.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         form_fields: t
                     },
@@ -145283,11 +145285,11 @@
                         formFields: n.form_fields
                     }
                 })
-            }, S = async (e, t) => {
+            }, h = async (e, t) => {
                 let {
                     body: n
                 } = await i.HTTP.patch({
-                    url: E.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         description: t
                     },
@@ -145302,17 +145304,17 @@
                         formFields: n.form_fields
                     }
                 })
-            }, h = async (e, t) => {
+            }, A = async (e, t) => {
                 await i.HTTP.patch({
-                    url: E.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         enabled: t
                     },
                     oldFormErrors: !0
                 })
-            }, A = async (e, t) => {
-                if (l.default.isFullServerPreview(e)) {
-                    (0, o.updateImpersonatedData)(e, {
+            }, m = async (e, t) => {
+                if (u.default.isFullServerPreview(e)) {
+                    (0, l.updateImpersonatedData)(e, {
                         memberOptions: {
                             isPending: !1
                         }
@@ -145323,7 +145325,7 @@
                     let {
                         body: n
                     } = await i.HTTP.put({
-                        url: E.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e),
+                        url: I.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e),
                         body: {
                             version: t.version,
                             form_fields: t.formFields
@@ -145333,28 +145335,42 @@
                         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
                         guildId: e,
                         request: n
-                    }), setTimeout(m, 200), n
+                    }), setTimeout(N, 200), n
                 } catch (t) {
                     let {
                         status: e
                     } = t;
-                    if (429 === e)(0, a.closeContextMenu)(), s.default.show({
-                        title: I.default.Messages.CLAN_APPLICATION_RATE_LIMITED_HEADER,
-                        body: I.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY,
-                        confirmText: I.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BUTTON
-                    });
-                    else throw t
+                    switch (e) {
+                        case 429:
+                            throw (0, a.closeContextMenu)(), s.default.show({
+                                title: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_HEADER,
+                                body: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY,
+                                confirmText: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BUTTON
+                            }), {
+                                ...t,
+                                message: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY
+                            };
+                        case 403:
+                            throw {
+                                ...t, message: T.default.Messages.CLAN_APPLICATION_MISSING_PERMISSION
+                            };
+                        default:
+                            var n, d;
+                            throw {
+                                ...t, message: null !== (d = (n = new o.APIError(t), n.getAnyErrorMessage())) && void 0 !== d ? d : T.default.Messages.ERROR_GENERIC_TITLE
+                            }
+                    }
                 }
             };
 
-            function m() {
+            function N() {
                 r.default.dispatch({
                     type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW"
                 })
             }
             t.default = {
-                fetchVerificationForm: T,
-                updateVerificationForm: f,
+                fetchVerificationForm: f,
+                updateVerificationForm: S,
                 updateVerificationFormFieldsLocal: (e, t) => {
                     r.default.dispatch({
                         type: "MEMBER_VERIFICATION_FORM_UPDATE",
@@ -145365,7 +145381,7 @@
                         isLocalUpdate: !0
                     })
                 },
-                updateVerificationFormDescription: S,
+                updateVerificationFormDescription: h,
                 updateVerificationFormDescriptionLocal: (e, t) => {
                     r.default.dispatch({
                         type: "MEMBER_VERIFICATION_FORM_UPDATE",
@@ -145376,8 +145392,8 @@
                         isLocalUpdate: !0
                     })
                 },
-                enableVerificationForm: h,
-                submitVerificationForm: A,
+                enableVerificationForm: A,
+                submitVerificationForm: m,
                 clearCoachmark: function() {
                     r.default.dispatch({
                         type: "USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR"
@@ -173356,8 +173372,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716333877075",
-                                    build_number: "295355"
+                                    built_at: "1716334346430",
+                                    build_number: "295359"
                                 }
                             },
                             retries: 1
@@ -250326,7 +250342,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d6e64ebe365f2328c317be127fa1c79cd4fb8fbf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a7ac8f22cb13c1fc50e37d903f62c532d3883988"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279425,7 +279441,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295355"
+                                build_number: "295359"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286783,7 +286799,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295355", "295355"), 10);
+                let s = parseInt((n = "295359", "295359"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314491,4 +314507,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.ad8c283029ccf445bf0e.js.map
+//# sourceMappingURL=71586.60bcd9936c9521280ebe.js.map
