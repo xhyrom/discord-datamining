@@ -24477,44 +24477,6 @@ html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .chatButton_a40cc3:not(.chatBu
     margin-left: 8px
 }
 
-.tooltip__17c29 {
-    position: relative;
-    left: 12px
-}
-
-.button__14158 {
-    min-height: 50px;
-    justify-content: flex-start;
-    gap: 0 10px;
-    padding: 6px;
-    background-color: var(--white);
-    border-radius: var(--radius-xs);
-    color: var(--primary-600)
-}
-
-.button__14158:hover {
-    background-color: var(--green-160)
-}
-
-.button__14158:before {
-    content: "";
-    display: block;
-    width: 42px;
-    height: 42px
-}
-
-.button__14158>:last-child {
-    margin: 0
-}
-
-.pollsCtaButton_a4dc61:before {
-    background: url(/assets/4e78c7e71bb475f0732f.svg)no-repeat center center
-}
-
-.dismissButton_c7fbc5:before {
-    background: url(/assets/e2401f2445f7c17b4937.svg)no-repeat center center
-}
-
 .animation__2b4b8 {
     width: 40px;
     height: 44px
@@ -141939,4 +141901,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7fc3db70a45e83a7c47b.css.map*/
+/*# sourceMappingURL=99387.1bfaa2e7a6403a9c5b95.css.map*/
