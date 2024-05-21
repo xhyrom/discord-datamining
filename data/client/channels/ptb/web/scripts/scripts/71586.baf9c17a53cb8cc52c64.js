@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295052", ", Version Hash: ").concat("494b84bf59a5df01d18e7fd2add49876bf4ea4fc")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295064", ", Version Hash: ").concat("d4817cbd500f700c56c744016d7ac98064a4c41d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88338,8 +88338,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295052", "295052"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295052")), t = 0), t
+                let t = parseInt((e = "295064", "295064"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295064")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116216,8 +116216,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295052",
-                    versionHash: "494b84bf59a5df01d18e7fd2add49876bf4ea4fc"
+                    buildNumber: "295064",
+                    versionHash: "d4817cbd500f700c56c744016d7ac98064a4c41d"
                 }
             }
             n.r(t), n.d(t, {
@@ -173168,8 +173168,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716308906797",
-                                    build_number: "295052"
+                                    built_at: "1716309516645",
+                                    build_number: "295064"
                                 }
                             },
                             retries: 1
@@ -212423,7 +212423,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileCustomStatusBubble: function() {
-                    return S
+                    return f
                 }
             }), n("47120");
             var i = n("735250"),
@@ -212439,111 +212439,135 @@
                 E = n("607070"),
                 I = n("228168"),
                 T = n("660762");
-            let f = "36px";
 
-            function S(e) {
+            function f(e) {
                 let {
                     statusActivity: t,
                     profileType: n,
-                    animate: s = !0
-                } = e, S = (0, l.useStateFromStores)([E.default], () => E.default.useReducedMotion), [h, A] = r.useState(1), [m, N] = r.useState(!0), [p] = r.useState(() => new u.Timeout), {
-                    emoji: O
-                } = null != t ? t : {}, C = null != O, R = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, g = null != R && R.length > 0, L = C || g, v = r.useCallback(e => {
-                    var t;
-                    if (null == e) return;
-                    let n = e.getBoundingClientRect(),
-                        i = parseFloat(null !== (t = window.getComputedStyle(e).getPropertyValue("line-height")) && void 0 !== t ? t : "0"),
-                        r = n.height;
+                    transitionState: s,
+                    animate: f = !0
+                } = e, S = (0, l.useStateFromStores)([E.default], () => E.default.useReducedMotion), [h, A] = r.useState(1), [m, N] = r.useState(!0), [p] = r.useState(() => new u.Timeout), O = r.useRef(null), C = r.useRef(null), R = r.useRef(null), g = r.useRef(null), {
+                    emoji: L
+                } = null != t ? t : {}, v = null != L, D = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, M = null != D && D.length > 0, y = v || M, P = r.useCallback(() => {
+                    var e;
+                    if (null == U.current || n === I.UserProfileTypes.FULL_SIZE) return;
+                    let t = U.current.getBoundingClientRect(),
+                        i = parseFloat(null !== (e = window.getComputedStyle(U.current).getPropertyValue("line-height")) && void 0 !== e ? e : "0"),
+                        r = t.height;
                     i > 0 && r > 0 && A(Math.floor(r / i))
-                }, []), D = (0, c.useResizeObserver)(v);
+                }, [n]), U = (0, c.useResizeObserver)(P);
                 r.useLayoutEffect(() => {
-                    setTimeout(() => {
-                        v(D.current)
-                    }, 200)
-                }, [D, v]);
-                let [M, y] = (0, o.useSpring)(() => ({
-                    maxHeight: f,
+                    (n !== I.UserProfileTypes.FULL_SIZE || s === d.ModalTransitionState.ENTERED) && (! function() {
+                        if (null != O.current && null == C.current) {
+                            let e = O.current.getBoundingClientRect();
+                            C.current = e.height
+                        }
+                        if (null != R.current && null == g.current) {
+                            let e = R.current.getBoundingClientRect();
+                            g.current = e.height
+                        }
+                    }(), P())
+                }, [U, P, p, n, s]);
+                let [b, G] = (0, o.useSpring)(() => ({
+                    maxHeight: "".concat(36, "px"),
                     config: {
                         clamp: !0,
                         immediate: S,
-                        duration: 300
+                        duration: 150
                     }
-                }));
-                r.useEffect(() => () => p.stop(), [p]);
-                let P = e => {
-                    e ? y({
-                        maxHeight: "144px",
+                })), w = e => {
+                    var t, n;
+                    e ? G({
+                        maxHeight: "".concat(Math.min(null !== (t = C.current) && void 0 !== t ? t : 144, 144), "px"),
                         delay: 300
-                    }) : y({
-                        maxHeight: f,
+                    }) : G({
+                        maxHeight: "".concat(Math.min(null !== (n = g.current) && void 0 !== n ? n : 36, 36), "px"),
                         delay: 0
-                    }), p.start(300, () => {
+                    });
+                    p.start(e ? 300 : 150, () => {
                         N(!e)
                     })
                 };
-                if (!L) return null;
-                let U = () => C ? (0, i.jsx)(_.ActivityEmoji, {
-                        className: g ? T.statusEmojiInline : T.statusEmojiOnly,
-                        emoji: O,
-                        animate: s,
+                if (r.useEffect(() => () => p.stop(), [p]), !y) return null;
+                let k = () => v ? (0, i.jsx)(_.ActivityEmoji, {
+                        className: M ? T.statusEmojiInline : T.statusEmojiOnly,
+                        emoji: L,
+                        animate: f,
                         hideTooltip: !1,
                         tooltipDelay: I.USER_PROFILE_TOOLTIP_DELAY
                     }) : null,
-                    b = () => g ? (0, i.jsx)(d.Text, {
+                    B = () => M ? (0, i.jsx)(d.Text, {
                         variant: "text-sm/medium",
                         className: T.statusText,
-                        children: R
+                        children: D
                     }) : null,
-                    G = n === I.UserProfileTypes.BITE_SIZE ? T.biteSize : T.fullSize,
-                    w = a()(T.statusBubbleOuter, {
-                        [T.statusBubbleShape]: h <= 1 && !g && C || h > 1,
-                        [T.statusBubbleSingleLineWithTextShape]: 1 === h && g,
+                    V = n === I.UserProfileTypes.BITE_SIZE ? T.biteSize : T.fullSize,
+                    x = a()(T.statusBubbleOuter, {
+                        [T.statusBubbleShape]: h <= 1 && !M && v || h > 1,
+                        [T.statusBubbleSingleLineWithTextShape]: 1 === h && M,
                         [T.biteSize]: n === I.UserProfileTypes.BITE_SIZE,
                         [T.fullSize]: n === I.UserProfileTypes.FULL_SIZE
                     }),
-                    k = a()(T.statusBubble, {
-                        [T.statusBubbleShape]: h <= 1 && !g && C || h > 1,
-                        [T.statusBubbleSingleLineWithTextShape]: h <= 1 && g,
-                        [T.statusBubbleEmojiOnlyPadding]: C && !g,
-                        [T.statusBubbleWithTextPadding]: g,
-                        [T.statusBubbleWithTextMinWidth]: g,
-                        [T.statusBubbleCopyStatusCursor]: L
+                    F = a()(T.statusBubble, {
+                        [T.statusBubbleShape]: h <= 1 && !M && v || h > 1,
+                        [T.statusBubbleSingleLineWithTextShape]: h <= 1 && M,
+                        [T.statusBubbleEmojiOnlyPadding]: v && !M,
+                        [T.statusBubbleWithTextPadding]: M,
+                        [T.statusBubbleWithTextMinWidth]: M,
+                        [T.statusBubbleCopyStatusCursor]: y
                     });
                 return (0, i.jsxs)("div", {
-                    children: [n === I.UserProfileTypes.BITE_SIZE ? (0, i.jsx)("div", {
-                        className: a()(T.invisibleContainer, G),
+                    children: [(0, i.jsx)("div", {
+                        className: a()(T.invisibleContainer, V),
                         children: (0, i.jsx)("div", {
-                            className: w,
-                            children: (0, i.jsx)("span", {
-                                className: k,
-                                children: (0, i.jsxs)("div", {
-                                    className: a()(T.content, T.clamp),
-                                    children: [U(), b()]
-                                })
+                            className: x,
+                            children: (0, i.jsxs)("span", {
+                                className: F,
+                                children: [(() => {
+                                    let e = a()(T.content, T.clamp, T.placeholderWidth, {
+                                        [T.biteSize]: n === I.UserProfileTypes.BITE_SIZE,
+                                        [T.fullSize]: n === I.UserProfileTypes.FULL_SIZE
+                                    });
+                                    return (0, i.jsxs)("div", {
+                                        className: e,
+                                        ref: R,
+                                        children: [k(), B()]
+                                    })
+                                })(), (() => {
+                                    let e = a()(T.content, T.unclamp, T.placeholderWidth, T.incorporeal, {
+                                        [T.biteSize]: n === I.UserProfileTypes.BITE_SIZE,
+                                        [T.fullSize]: n === I.UserProfileTypes.FULL_SIZE
+                                    });
+                                    return (0, i.jsxs)("div", {
+                                        className: e,
+                                        ref: O,
+                                        children: [k(), B()]
+                                    })
+                                })()]
                             })
                         })
-                    }) : null, (0, i.jsx)("div", {
-                        className: a()(T.visibleContainer, G),
+                    }), (0, i.jsx)("div", {
+                        className: a()(T.visibleContainer, V),
                         children: (0, i.jsx)("div", {
                             tabIndex: 0,
-                            className: w,
-                            onFocus: () => P(!0),
-                            onBlur: () => P(!1),
-                            onMouseEnter: () => P(!0),
-                            onMouseLeave: () => P(!1),
+                            className: x,
+                            onFocus: () => w(!0),
+                            onBlur: () => w(!1),
+                            onMouseEnter: () => w(!0),
+                            onMouseLeave: () => w(!1),
                             children: (0, i.jsx)("span", {
-                                className: k,
+                                className: F,
                                 children: (() => {
                                     let e = a()(T.content, {
                                         [T.clamp]: m,
                                         [T.unclamp]: !m
                                     });
                                     return (0, i.jsx)(o.animated.div, {
-                                        style: M,
+                                        style: b,
                                         className: a()(T.content, e),
                                         children: (0, i.jsxs)("div", {
-                                            ref: D,
-                                            children: [U(), b()]
+                                            ref: U,
+                                            children: [k(), B()]
                                         })
                                     })
                                 })()
@@ -250082,7 +250106,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "494b84bf59a5df01d18e7fd2add49876bf4ea4fc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d4817cbd500f700c56c744016d7ac98064a4c41d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279181,7 +279205,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295052"
+                                build_number: "295064"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286539,7 +286563,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295052", "295052"), 10);
+                let s = parseInt((n = "295064", "295064"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314229,4 +314253,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.cfec1e9dc865853516ae.js.map
+//# sourceMappingURL=71586.baf9c17a53cb8cc52c64.js.map
