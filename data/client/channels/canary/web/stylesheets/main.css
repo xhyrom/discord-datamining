@@ -53299,6 +53299,10 @@ div:has(>div>.modal__06f49) {
     border-top-color: #4b1840
 }
 
+.text_c23d21 {
+    color: var(--white-500)
+}
+
 .container_ebee1d {
     padding: 8px 16px;
     background-color: var(--brand-500);
@@ -120985,7 +120989,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-sm-normal_a8623e {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -120996,7 +121000,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-sm-medium__209fb {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -121007,7 +121011,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-sm-semibold__3d6f9 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -121018,7 +121022,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-sm-bold__68c32 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -121029,7 +121033,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-sm-extrabold_d29073 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 800
 }
@@ -121040,7 +121044,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-md-normal_ae447b {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -121051,7 +121055,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-md-medium__1c6a6 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -121062,7 +121066,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-md-semibold__3c163 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -121073,7 +121077,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-md-bold_c04f68 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -121084,7 +121088,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-md-extrabold__07896 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -121095,7 +121099,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-lg-normal_e9a3b5 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -121106,7 +121110,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-lg-medium__036ca {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -121117,7 +121121,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-lg-semibold__6598a {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -121128,7 +121132,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-lg-bold__789d3 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -121139,7 +121143,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-lg-extrabold_b9bb5b {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 800
 }
@@ -121150,7 +121154,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xl-normal_b781e7 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -121161,7 +121165,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xl-medium_d8abcb {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -121172,7 +121176,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xl-semibold__7759f {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -121183,7 +121187,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xl-bold__342b2 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -121194,7 +121198,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xl-extrabold__60295 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -121205,7 +121209,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xxl-normal_c76884 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -121216,7 +121220,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xxl-medium_d04772 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -121227,7 +121231,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xxl-semibold_b194a7 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -121238,7 +121242,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xxl-bold__33394 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -121249,7 +121253,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-xxl-extrabold__69400 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -121260,7 +121264,7 @@ html .invoiceCancelRow__6ff3e {
 
 .eyebrow__5d57b {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700;
     text-transform: uppercase;
@@ -121273,7 +121277,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-deprecated-12-normal__60149 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -121284,7 +121288,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-deprecated-12-medium__4070b {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -121295,7 +121299,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-deprecated-12-semibold_d3a004 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -121306,7 +121310,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-deprecated-12-bold_e3bf9d {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -121317,7 +121321,7 @@ html .invoiceCancelRow__6ff3e {
 
 .heading-deprecated-12-extrabold__8e28c {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 800
 }
@@ -121328,7 +121332,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-heading-18-bold_a00a6f {
     font-family: var(--font-display);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -121339,7 +121343,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-xxs-normal__551ab {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -121350,7 +121354,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-xxs-medium_e12d18 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -121361,7 +121365,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-xxs-semibold_a2ad03 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -121372,7 +121376,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-xxs-bold_d8f679 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -121383,7 +121387,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-xs-normal_d8ea1a {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -121394,7 +121398,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-xs-medium__85f2a {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -121405,7 +121409,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-xs-semibold_eb1137 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -121416,7 +121420,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-xs-bold__80634 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -121427,7 +121431,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-sm-normal__9a2a0 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -121438,7 +121442,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-sm-medium_ed4a8c {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -121449,7 +121453,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-sm-semibold_d5ba20 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -121460,7 +121464,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-sm-bold__9d0e0 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -121471,7 +121475,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-md-normal_cb2726 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -121482,7 +121486,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-md-medium__12992 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -121493,7 +121497,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-md-semibold__43ff1 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -121504,7 +121508,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-md-bold_b89d14 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -121515,7 +121519,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-lg-normal_ebe9b7 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -121526,7 +121530,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-lg-medium_df39f7 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -121537,7 +121541,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-lg-semibold_e401f4 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -121548,7 +121552,7 @@ html .invoiceCancelRow__6ff3e {
 
 .text-lg-bold__380ba {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -121559,7 +121563,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-message-preview-normal_f6498d {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -121570,7 +121574,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-message-preview-medium_fed9f5 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -121581,7 +121585,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-message-preview-semibold__559f5 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -121592,7 +121596,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-message-preview-bold_f62749 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -121603,7 +121607,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-channel-title-normal__07b13 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 400
 }
@@ -121614,7 +121618,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-channel-title-medium__4122b {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 500
 }
@@ -121625,7 +121629,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-channel-title-semibold__3a5c4 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 600
 }
@@ -121636,7 +121640,7 @@ html .invoiceCancelRow__6ff3e {
 
 .redesign-channel-title-bold__4d3ec {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 700
 }
@@ -121647,7 +121651,7 @@ html .invoiceCancelRow__6ff3e {
 
 .display-sm__18bf7 {
     font-family: var(--font-headline);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1;
     font-weight: 800
 }
@@ -121658,7 +121662,7 @@ html .invoiceCancelRow__6ff3e {
 
 .display-md_e5ee2e {
     font-family: var(--font-headline);
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 1.0588235294117647;
     font-weight: 800
 }
@@ -121669,7 +121673,7 @@ html .invoiceCancelRow__6ff3e {
 
 .display-lg__1681d {
     font-family: var(--font-headline);
-    font-size: 44px;
+    font-size: 2.75rem;
     line-height: .9545454545454546;
     font-weight: 800
 }
@@ -121680,7 +121684,7 @@ html .invoiceCancelRow__6ff3e {
 
 .code_acb6cb {
     font-family: var(--font-code);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -141901,4 +141905,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1bfaa2e7a6403a9c5b95.css.map*/
+/*# sourceMappingURL=99387.08d88a102ec956301e20.css.map*/

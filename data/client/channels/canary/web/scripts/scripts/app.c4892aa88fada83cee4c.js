@@ -3041,7 +3041,8 @@
                 cta: "cta_b3dafc",
                 icon: "icon__7f33e",
                 pointer: "pointer_c1544c",
-                poweredByNitroContainer: "poweredByNitroContainer__6865d"
+                poweredByNitroContainer: "poweredByNitroContainer__6865d",
+                text: "text_c23d21"
             }
         },
         761064: function(e) {
