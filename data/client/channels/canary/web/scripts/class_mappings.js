@@ -5995,6 +5995,11 @@
             "use strict";
             e.exports = {
                 avatarPreviewContainer: "avatarPreviewContainer__73688",
+                bundleAvatarPreviewContainer: "bundleAvatarPreviewContainer_e07383",
+                bundlePfxPreviewContainer: "bundlePfxPreviewContainer_ec3791",
+                bundlePreviewContainer: "bundlePreviewContainer__4f4af",
+                bundlePreviewSlide: "bundlePreviewSlide_dc62a3",
+                bundleSlideTitle: "bundleSlideTitle_f39228",
                 button: "button__0ce02",
                 buttonsContainer: "buttonsContainer__79059",
                 categoryBanner: "categoryBanner__1b5f1",
