@@ -12235,16 +12235,16 @@ span.clanTag_f4aadc {
 
 .groupContainer__39e48 {
     position: relative;
-    left: -37px;
-    top: -37px
+    left: -36px;
+    top: -36px
 }
 
 .avatarContainer_aea862 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     margin-top: 18px;
     margin-left: 18px
 }
@@ -12259,8 +12259,8 @@ span.clanTag_f4aadc {
 .avatarWrapper__860da {
     display: flex;
     position: absolute;
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     justify-content: center;
     align-items: center;
     border-radius: 18px;
@@ -12273,6 +12273,17 @@ span.clanTag_f4aadc {
     position: absolute;
     border-radius: 16px;
     background-color: var(--background-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.gradientContainer_bdcbea {
+    background: linear-gradient(45deg, var(--premium-perk-green), var(--premium-perk-purple)), linear-gradient(180deg, var(--premium-perk-orange), var(--premium-perk-pink));
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-xs);
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center
@@ -12291,7 +12302,7 @@ span.clanTag_f4aadc {
 .container__0998c:hover {
     background-color: var(--background-secondary);
     transition: background-color.3s ease;
-    border: inset 1px solid var(--border-strong)
+    border: inset 1px solid var(--border-faint)
 }
 
 .clickableContainer__6a669 {
@@ -12390,7 +12401,10 @@ span.clanTag_f4aadc {
     object-fit: cover;
     border-radius: var(--radius-xs);
     height: 64px;
-    width: 64px
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .liveBadge__4290f {
@@ -12403,10 +12417,6 @@ span.clanTag_f4aadc {
     border: 2px solid var(--background-secondary-alt);
     height: 20px;
     border-radius: var(--radius-xl)
-}
-
-.groupAvatar__4cf21 {
-    background: linear-gradient(45deg, var(--premium-perk-green), var(--premium-perk-purple)), linear-gradient(180deg, var(--premium-perk-orange), var(--premium-perk-pink))
 }
 
 .gameIcon__4a06f {
@@ -12422,6 +12432,12 @@ span.clanTag_f4aadc {
     padding: 4px 8px;
     flex-grow: 0;
     flex-shrink: 0
+}
+
+.joinButtonInner__6554f {
+    display: flex;
+    align-items: center;
+    gap: 2px
 }
 
 .joinButtonWhatWrapper_fa34bc {
@@ -12450,6 +12466,12 @@ span.clanTag_f4aadc {
     width: 24px;
     height: 24px;
     color: var(--interactive-active)
+}
+
+.streamPlaceholder_b6c795 {
+    width: 32px;
+    height: 32px;
+    color: var(--icon-muted)
 }
 
 @keyframes fadeIn__485ae {
@@ -12613,7 +12635,7 @@ span.clanTag_f4aadc {
 }
 
 .othersCount__89551 {
-    padding: 0 8px;
+    padding: 2px 5px;
     background-color: var(--background-modifier-accent-2);
     border-radius: var(--radius-lg);
     margin-left: -3px
@@ -53639,6 +53661,121 @@ div:has(>div>.modal__06f49) {
 }
 
 .focusModeTitle__20733 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px
+}
+
+.menu__0d1e0 {
+    padding-top: 0;
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 3
+}
+
+.menu__0d1e0 div[role=separator] {
+    border-color: var(--profile-body-divider-color);
+    margin: 8px 4px
+}
+
+.menu__0d1e0 .menuItemFocused_b90fd4 {
+    background-color: var(--profile-body-background-hover);
+    color: var(--interactive-hover)
+}
+
+.menu__0d1e0 .menuItemFocused_b90fd4 .subMenuIcon__83a81 {
+    color: var(--interactive-hover)
+}
+
+.subMenuIcon__83a81 {
+    margin-top: 1px
+}
+
+.statusPickerModalMenu_ba9252 {
+    width: 300px;
+    overflow: hidden;
+    max-height: calc(100vh - 72px)
+}
+
+.mainStatusIcon__00da2 {
+    width: 12px;
+    height: 12px;
+    margin-top: 3.5px;
+    margin-left: 3px
+}
+
+.statusItem_e3c3f5 {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "icon status" ". description";
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    padding: 6px 8px;
+    min-height: 20px
+}
+
+.expiringStatusMenuItem_a1ee8a {
+    padding: 0
+}
+
+.expiringStatusIcon__0be5b {
+    margin-right: -6px
+}
+
+.status__1b7d0 {
+    grid-area: status span 2;
+    display: flex;
+    align-items: center
+}
+
+.icon__4a883 {
+    grid-area: icon
+}
+
+.description__3eff0 {
+    grid-area: description;
+    color: currentColor;
+    margin-bottom: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: normal
+}
+
+.modal__2b3ac {
+    position: relative;
+    border-radius: 4px;
+    width: 300px;
+    overflow: hidden
+}
+
+.divider__7d1fe {
+    margin: 12px 12px 0
+}
+
+.popoutContainer_a5587a {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse
+}
+
+.themeContainer_fb8696>div {
+    max-height: calc(100vh - 124px)
+}
+
+.focusModeItem__5fea8 {
+    padding-left: 2px
+}
+
+.focusModeIcon__50b8d {
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+    margin-left: 8px
+}
+
+.focusModeTitle__88827 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -142074,4 +142211,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.bb80a2956b08f23d43dc.css.map*/
+/*# sourceMappingURL=99387.8f801a51a16d05cbbeec.css.map*/
