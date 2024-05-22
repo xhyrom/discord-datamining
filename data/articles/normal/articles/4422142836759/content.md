@@ -2,7 +2,6 @@
 <p class="wysiwyg-text-align-center"><br><iframe src="//www.youtube-nocookie.com/embed/POMIDMK6WfM" width="560" height="315" frameborder="0" allowfullscreen=""></iframe></p>
 <p id="docs-internal-guid-b3e2622f-7fff-7f50-563e-ba14ad76795b"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01GSX5F5D8F7BQFT1Y4MB5DZHB" target="_self">What Activities Are Available?</a></li>
     <li>
         <a href="#h_01GSX5FCYNMF5PCGKNNA6XFW29" target="_self">How Do I Start an Activity?</a>
         <ul>
@@ -20,32 +19,6 @@
     </li>
     <li><a href="#h_01GSX5V2MVSVPM69A1DG6ABJ70" target="_self">Other (Less) Frequently Asked Questions</a></li>
 </ul>
-<h1 id="h_01GSX5F5D8F7BQFT1Y4MB5DZHB">What Activities are available?</h1>
-<p>The following Activities are available today!</p>
-<ol>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4409342945687" target="_blank" rel="noopener noreferrer">Watch Together</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/5101932219671" target="_blank" rel="noopener noreferrer">Putt Party</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/1500009655542" target="_blank" rel="noopener noreferrer">Poker Night</a></li>
-    <li>
-        <a href="https://support.discord.com/hc/en-us/articles/4409235005207" target="_blank" rel="noopener noreferrer">Sketch Heads</a> 
-    </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4404366703255" target="_blank" rel="noopener noreferrer">Chess in the Park</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4977911076119" target="_blank" rel="noopener noreferrer">Land-io</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4420143548951" target="_blank" rel="noopener noreferrer">Blazing 8s</a></li>
-    <li><a href="https://support.discord.com/hc/articles/4409244345239" target="_blank" rel="noopener noreferrer">Letter League</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4413835060119" target="_blank" rel="noopener noreferrer">Checkers in the Park</a></li>
-    <li><a href="https://frvr.com/support/" target="_blank" rel="noopener noreferrer">Spellcast</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/6607890733079" target="_blank" rel="noopener noreferrer">Bobble League</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031" target="_blank" rel="noopener noreferrer">Know What I Meme</a></li>
-    <li><a href="https://garticphone.com/discord-help" target="_blank" rel="noopener noreferrer">Gartic Phone</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847" target="_blank" rel="noopener noreferrer">Jamspace Whiteboard</a></li>
-    <li><a href="https://fundaygames.dk/discord/color-together-play-guide" target="_blank" rel="noopener noreferrer">Color Together</a></li>
-    <li><a href="https://frvr.com/tutorials/krunker/" target="_blank" rel="noopener noreferrer">Krunker Strike FRVR</a></li>
-    <li><a href="https://blog.colonist.io/play-colonist-on-discord/" target="_blank" rel="noopener noreferrer">Colonist</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/15508886520855" target="_blank" rel="noopener noreferrer">Bobble Bash</a></li>
-    <li><a href="https://discord.gg/dhgEgZkeJx" target="_blank" rel="noopener noreferrer">Chef Showdown</a></li>
-    <li><a href="https://playroom.substack.com/p/how-to-play-death-by-ai-on-discord" target="_blank" rel="noopener noreferrer">Death by AI</a></li>
-</ol>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
 <h2 id="docs-internal-guid-67d1f612-7fff-856e-6a7d-09e2618d9a7f">On Desktop/Browser</h2>
 <p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group chat.</p>
