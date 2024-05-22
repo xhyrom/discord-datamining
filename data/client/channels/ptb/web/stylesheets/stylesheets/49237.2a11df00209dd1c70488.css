@@ -13392,14 +13392,13 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .markup_a7e664 .inline {
     width: auto;
     height: auto;
-    padding: .2em;
+    padding: 0 .2em;
     margin: -.2em 0;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 85%;
     font-family: var(--font-code);
     text-indent: 0;
     text-indent: 0;
-    border: none;
     white-space: pre-wrap
 }
 
@@ -28307,4 +28306,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.c11a66abc3564e05fb9f.css.map*/
+/*# sourceMappingURL=49237.2a11df00209dd1c70488.css.map*/
