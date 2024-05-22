@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295398", ", Version Hash: ").concat("fa5f79febdba1601138a9fe7dbd88c8f98e9c508")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295406", ", Version Hash: ").concat("39a763af02b9508ea9a3cecf5b380e769449ca69")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64127,20 +64127,14 @@
                 }
                 async reactNativeCompressAndExtractData() {
                     var e;
-                    if (!(0, m.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) {
-                        this.uploadAnalytics.compressAndExtractDisabled = !0, O.log("reactNativeCompressAndExtractData() disabled by upload target");
-                        return
-                    }
-                    if (!0 === this.reactNativeFilePrepped) {
-                        this.uploadAnalytics.fileAlreadyPrepped = !0, O.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
-                        return
-                    }
+                    if (!(0, m.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) return this.uploadAnalytics.compressAndExtractDisabled = !0, O.log("reactNativeCompressAndExtractData() disabled by upload target"), this;
+                    if (!0 === this.reactNativeFilePrepped) return this.uploadAnalytics.fileAlreadyPrepped = !0, O.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id)), this;
                     O.log("Starting compression/conversion for ".concat(this.id));
                     let t = await this.trackTime("compressTimeMs", async () => {
                         var e;
                         return await (0, T.getAttachmentFile)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0)
                     });
-                    if (null == t || null == t.file) return;
+                    if (null == t || null == t.file) return this;
                     let n = t.uri,
                         i = t.file.name,
                         r = t.file.type;
@@ -64155,13 +64149,12 @@
                     }));
                     let s = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, h.getFileData)(n)).size;
                     if (this.postCompressionSize = s, this.currentSize = s, null == s) throw O.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
-                    O.log("Completed compression and conversion. Output size=".concat(s, " bytes; filename=").concat(i, " for ").concat(this.id));
-                    this.item = {
+                    return O.log("Completed compression and conversion. Output size=".concat(s, " bytes; filename=").concat(i, " for ").concat(this.id)), this.item = {
                         ...this.item,
                         uri: n,
                         filename: i,
                         mimeType: r
-                    }, this.reactNativeFilePrepped = !0
+                    }, this.reactNativeFilePrepped = !0, this
                 }
                 handleError(e) {
                     this.setStatus("ERROR"), this.error = e, this.trackUploadFinished("ERROR");
@@ -88498,8 +88491,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295398", "295398"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295398")), t = 0), t
+                let t = parseInt((e = "295406", "295406"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295406")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116363,8 +116356,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295398",
-                    versionHash: "fa5f79febdba1601138a9fe7dbd88c8f98e9c508"
+                    buildNumber: "295406",
+                    versionHash: "39a763af02b9508ea9a3cecf5b380e769449ca69"
                 }
             }
             n.r(t), n.d(t, {
@@ -173363,8 +173356,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716343365201",
-                                    build_number: "295398"
+                                    built_at: "1716352458483",
+                                    build_number: "295406"
                                 }
                             },
                             retries: 1
@@ -250333,7 +250326,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fa5f79febdba1601138a9fe7dbd88c8f98e9c508"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "39a763af02b9508ea9a3cecf5b380e769449ca69"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279432,7 +279425,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295398"
+                                build_number: "295406"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286790,7 +286783,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295398", "295398"), 10);
+                let s = parseInt((n = "295406", "295406"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314498,4 +314491,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.159628aff6d99db236df.js.map
+//# sourceMappingURL=71586.a3d35face8e32b4c387b.js.map
