@@ -19872,7 +19872,7 @@
                 } = e;
                 return null != T && "" !== T && (t = (0, i.jsx)(a.Button, {
                     type: "button",
-                    size: a.Button.Sizes.XLARGE,
+                    size: a.Button.Sizes.LARGE,
                     color: a.Button.Colors.PRIMARY,
                     onClick: () => {
                         null == N || N(), null == m || m()
@@ -19882,7 +19882,7 @@
                 })), null != h && "" !== h && (n = (0, i.jsx)(a.Button, {
                     type: "submit",
                     color: S,
-                    size: a.Button.Sizes.XLARGE,
+                    size: a.Button.Sizes.LARGE,
                     className: s()(E.primaryButton, null != t ? E.gutter : null),
                     autoFocus: !0,
                     children: h
@@ -22647,28 +22647,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 Button: function() {
-                    return A
-                },
-                ButtonBorderColors: function() {
-                    return T
+                    return S
                 },
                 ButtonColors: function() {
                     return I
                 },
-                ButtonHovers: function() {
-                    return f
-                },
                 ButtonLink: function() {
-                    return m
+                    return h
                 },
                 ButtonLooks: function() {
                     return E
                 },
                 ButtonSizes: function() {
-                    return S
+                    return T
                 },
                 getButtonStyle: function() {
-                    return h
+                    return f
                 }
             });
             var i = n("735250"),
@@ -22692,102 +22686,70 @@
                     BRAND: c.colorBrand,
                     RED: c.colorRed,
                     GREEN: c.colorGreen,
-                    YELLOW: c.colorYellow,
                     PRIMARY: c.colorPrimary,
                     LINK: c.colorLink,
                     WHITE: c.colorWhite,
                     TRANSPARENT: c.colorTransparent,
-                    BRAND_NEW: c.colorBrandNew,
                     CUSTOM: ""
                 },
                 T = {
-                    BRAND: c.borderBrand,
-                    RED: c.borderRed,
-                    GREEN: c.borderGreen,
-                    YELLOW: c.borderYellow,
-                    PRIMARY: c.borderPrimary,
-                    LINK: c.borderLink,
-                    WHITE: c.borderWhite,
-                    BLACK: c.__invalid_borderBlack,
-                    TRANSPARENT: c.borderTransparent,
-                    BRAND_NEW: c.borderBrandNew
-                },
-                f = {
-                    DEFAULT: "",
-                    BRAND: c.hoverBrand,
-                    RED: c.hoverRed,
-                    GREEN: c.hoverGreen,
-                    YELLOW: c.hoverYellow,
-                    PRIMARY: c.hoverPrimary,
-                    LINK: c.hoverLink,
-                    WHITE: c.hoverWhite,
-                    BLACK: c.__invalid_hoverBlack,
-                    TRANSPARENT: c.hoverTransparent
-                },
-                S = {
                     NONE: "",
                     TINY: c.sizeTiny,
                     SMALL: c.sizeSmall,
                     MEDIUM: c.sizeMedium,
                     LARGE: c.sizeLarge,
-                    XLARGE: c.sizeXlarge,
                     MIN: c.sizeMin,
                     MAX: c.sizeMax,
                     ICON: c.sizeIcon
                 };
 
-            function h() {
+            function f() {
                 let {
                     look: e = E.FILLED,
                     color: t = I.BRAND,
-                    borderColor: n,
-                    hover: i,
-                    size: r = S.MEDIUM,
-                    fullWidth: s = !1,
-                    grow: o = !0,
-                    submitting: l = !1,
-                    disabled: u = !1
+                    size: n = T.MEDIUM,
+                    fullWidth: i = !1,
+                    grow: r = !0,
+                    submitting: s = !1,
+                    disabled: o = !1
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                return a()(c.button, e, t, n, i, r, {
-                    [c.fullWidth]: s,
-                    [c.grow]: o,
-                    [c.hasHover]: null != i && i !== f.DEFAULT,
-                    [c.submitting]: l && !u
+                return a()(c.button, e, t, n, {
+                    [c.fullWidth]: i,
+                    [c.grow]: r,
+                    [c.submitting]: s && !o
                 })
             }
 
-            function A(e) {
+            function S(e) {
                 let {
                     look: t = E.FILLED,
                     color: n = I.BRAND,
-                    borderColor: s,
-                    hover: o,
-                    size: T = S.MEDIUM,
-                    fullWidth: f = !1,
-                    grow: A = !0,
-                    disabled: m = !1,
-                    submitting: N = !1,
-                    type: p = "button",
-                    style: O,
-                    wrapperClassName: C,
-                    className: R,
-                    innerClassName: g,
-                    onClick: L,
-                    onDoubleClick: v,
-                    onMouseDown: D,
-                    onMouseUp: M,
-                    onMouseEnter: y,
-                    onMouseLeave: P,
-                    onKeyDown: U,
-                    children: b,
-                    rel: G,
-                    buttonRef: w,
-                    focusProps: k,
-                    "aria-label": B,
-                    submittingStartedLabel: V,
-                    submittingFinishedLabel: x,
-                    ...F
-                } = e, H = m || N, Y = H && (null != y || null != P), j = function(e, t) {
+                    size: s = T.MEDIUM,
+                    fullWidth: o = !1,
+                    grow: S = !0,
+                    disabled: h = !1,
+                    submitting: A = !1,
+                    type: m = "button",
+                    style: N,
+                    wrapperClassName: p,
+                    className: O,
+                    innerClassName: C,
+                    onClick: R,
+                    onDoubleClick: g,
+                    onMouseDown: L,
+                    onMouseUp: v,
+                    onMouseEnter: D,
+                    onMouseLeave: M,
+                    onKeyDown: y,
+                    children: P,
+                    rel: U,
+                    buttonRef: b,
+                    focusProps: G,
+                    "aria-label": w,
+                    submittingStartedLabel: k,
+                    submittingFinishedLabel: B,
+                    ...V
+                } = e, x = h || A, F = x && (null != D || null != M), H = function(e, t) {
                     var n, i, r, s;
                     let a = null == e ? void 0 : e.offset;
                     if (t === E.LINK || t === E.BLANK) return a;
@@ -22799,103 +22761,98 @@
                         bottom: (null !== (r = a.bottom) && void 0 !== r ? r : 0) - 2,
                         left: (null !== (s = a.left) && void 0 !== s ? s : 0) - 2
                     }
-                }(k, t), W = r.useRef(!1);
+                }(G, t), Y = r.useRef(!1);
                 r.useEffect(() => {
-                    !0 === N && (W.current = !0, l.AccessibilityAnnouncer.announce(null != V ? V : _.default.Messages.A11Y_LOADING_STARTED)), !1 === N && !0 === W.current && l.AccessibilityAnnouncer.announce(null != x ? x : _.default.Messages.A11Y_LOADING_FINISHED)
-                }, [N, V, x]);
-                let K = (0, i.jsx)(u.FocusRing, {
-                    ...k,
-                    offset: j,
+                    !0 === A && (Y.current = !0, l.AccessibilityAnnouncer.announce(null != k ? k : _.default.Messages.A11Y_LOADING_STARTED)), !1 === A && !0 === Y.current && l.AccessibilityAnnouncer.announce(null != B ? B : _.default.Messages.A11Y_LOADING_FINISHED)
+                }, [A, k, B]);
+                let j = (0, i.jsx)(u.FocusRing, {
+                    ...G,
+                    offset: H,
                     children: (0, i.jsxs)("button", {
-                        ...H ? null : F,
-                        "aria-label": B,
-                        "aria-busy": !!N || void 0,
-                        ref: w,
-                        onClick: H ? e => e.preventDefault() : L,
-                        onDoubleClick: H ? e => e.preventDefault() : v,
-                        onMouseUp: m ? void 0 : M,
-                        onMouseDown: m ? void 0 : D,
-                        onMouseEnter: y,
-                        onMouseLeave: P,
-                        onKeyDown: m ? void 0 : U,
-                        type: p,
-                        disabled: m,
-                        style: O,
-                        rel: G,
-                        className: a()(R, h({
+                        ...x ? null : V,
+                        "aria-label": w,
+                        "aria-busy": !!A || void 0,
+                        ref: b,
+                        onClick: x ? e => e.preventDefault() : R,
+                        onDoubleClick: x ? e => e.preventDefault() : g,
+                        onMouseUp: h ? void 0 : v,
+                        onMouseDown: h ? void 0 : L,
+                        onMouseEnter: D,
+                        onMouseLeave: M,
+                        onKeyDown: h ? void 0 : y,
+                        type: m,
+                        disabled: h,
+                        style: N,
+                        rel: U,
+                        className: a()(O, f({
                             look: t,
                             color: n,
-                            borderColor: s,
-                            hover: o,
-                            size: T,
-                            fullWidth: f,
-                            grow: A,
-                            submitting: N,
-                            disabled: m
-                        }), Y ? null : C),
-                        children: [N && !m ? (0, i.jsx)(d.Spinner, {
+                            size: s,
+                            fullWidth: o,
+                            grow: S,
+                            submitting: A,
+                            disabled: h
+                        }), F ? null : p),
+                        children: [A && !h ? (0, i.jsx)(d.Spinner, {
                             type: d.Spinner.Type.PULSING_ELLIPSIS,
                             className: c.spinner,
                             itemClassName: c.spinnerItem
                         }) : null, (0, i.jsx)("div", {
-                            className: a()(c.contents, g),
-                            children: b
+                            className: a()(c.contents, C),
+                            children: P
                         })]
                     })
                 });
-                return Y ? (0, i.jsxs)("span", {
-                    className: a()(c.disabledButtonWrapper, C, T, {
-                        [c.grow]: A,
-                        [c.fullWidth]: f
+                return F ? (0, i.jsxs)("span", {
+                    className: a()(c.disabledButtonWrapper, p, s, {
+                        [c.grow]: S,
+                        [c.fullWidth]: o
                     }),
-                    children: [K, (0, i.jsx)("span", {
-                        onMouseEnter: y,
-                        onMouseLeave: P,
+                    children: [j, (0, i.jsx)("span", {
+                        onMouseEnter: D,
+                        onMouseLeave: M,
                         className: c.disabledButtonOverlay
                     })]
-                }) : K
+                }) : j
             }
 
-            function m(e) {
+            function h(e) {
                 let {
                     look: t = E.FILLED,
                     color: n = I.BRAND,
-                    borderColor: r,
-                    hover: s,
-                    size: l = S.MEDIUM,
-                    fullWidth: u = !1,
-                    grow: d = !0,
-                    style: _,
-                    className: T,
-                    innerClassName: h,
-                    to: A,
-                    onClick: m,
-                    onMouseDown: N,
-                    onMouseUp: p,
-                    children: O,
-                    rel: C,
-                    ...R
+                    size: r = T.MEDIUM,
+                    fullWidth: s = !1,
+                    grow: l = !0,
+                    style: u,
+                    className: d,
+                    innerClassName: _,
+                    to: f,
+                    onClick: S,
+                    onMouseDown: h,
+                    onMouseUp: A,
+                    children: m,
+                    rel: N,
+                    ...p
                 } = e;
                 return (0, i.jsx)(o.Link, {
-                    ...R,
-                    to: A,
-                    onClick: m,
-                    onMouseUp: p,
-                    onMouseDown: N,
-                    style: _,
-                    rel: C,
-                    className: a()(T, c.button, t, n, r, s, l, {
-                        [c.fullWidth]: u,
-                        [c.grow]: d,
-                        [c.hasHover]: null != s && s !== f.DEFAULT
+                    ...p,
+                    to: f,
+                    onClick: S,
+                    onMouseUp: A,
+                    onMouseDown: h,
+                    style: u,
+                    rel: N,
+                    className: a()(d, c.button, t, n, r, {
+                        [c.fullWidth]: s,
+                        [c.grow]: l
                     }),
                     children: (0, i.jsx)("span", {
-                        className: a()(c.contents, h),
-                        children: O
+                        className: a()(c.contents, _),
+                        children: m
                     })
                 })
             }
-            A.Looks = E, A.Colors = I, A.BorderColors = T, A.Hovers = f, A.Sizes = S, A.Link = m
+            S.Looks = E, S.Colors = I, S.Sizes = T, S.Link = h
         },
         49800: function(e, t, n) {
             "use strict";
@@ -36271,14 +36228,8 @@
                 Button: function() {
                     return _.Button
                 },
-                ButtonBorderColors: function() {
-                    return _.ButtonBorderColors
-                },
                 ButtonColors: function() {
                     return _.ButtonColors
-                },
-                ButtonHovers: function() {
-                    return _.ButtonHovers
                 },
                 ButtonLink: function() {
                     return _.ButtonLink
@@ -37059,7 +37010,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295536", ", Version Hash: ").concat("59a265cb570f2d761fd2dcc5e57536071435f031")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295694", ", Version Hash: ").concat("ffb1a11b2a92121a3614f809fc4aa9cc498efa6b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44706,8 +44657,8 @@
                 PREMIUM_UPSELL_YEARLY_DESCRIPTION: "Subscribe to a yearly subscription and get a {discountPercentage} discount.",
                 PREMIUM_UPSELL_YEARLY_CTA: "Subscribe Yearly - !!{price}!! / Year",
                 PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_TITLE: "Your files are too powerful",
-                PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_DESCRIPTION_V2: "Upgrade to {nitroTierName} to upload files up to {maxFileSize} MB. Perfect for sharing those high resolution clips.",
-                PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_POPUP_LABEL_V2: "Send up to 500 MB with [{nitroTierName}](onClick)",
+                PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_DESCRIPTION_V3: "Upgrade to {nitroTierName} to upload files up to {maxFileSize}. Perfect for sharing those high resolution clips.",
+                PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_POPUP_LABEL_V3: "Send up to {maxFileSize} with [{nitroTierName}](onClick)",
                 PREMIUM_UPSELL_MOBILE_FEATURE_SOUNDBOARD_TITLE: "Express yourself with more sounds",
                 PREMIUM_UPSELL_MOBILE_FEATURE_SOUNDBOARD_DESCRIPTION_V2: "Access the best sounds from Soundboard across any of your Discord servers. Only with {nitroTierName}.",
                 PREMIUM_UPSELL_MOBILE_FEATURE_SOUNDBOARD_POPUP_LABEL_V2: "Make some noise with [{nitroTierName}](onClick)",
@@ -70050,43 +70001,42 @@
                     isCurrentUser: j,
                     color: W,
                     look: K,
-                    hover: z,
-                    user: Z,
-                    onAction: X,
-                    isEmbedded: Q = !1
+                    user: z,
+                    onAction: Z,
+                    isEmbedded: X = !1
                 } = e, {
-                    analyticsLocations: q
-                } = (0, _.default)(), [J, $] = r.useState(!1), ee = (0, s.useStateFromStores)([p.default], () => p.default.getCurrentUser()), et = null !== (t = null == H ? void 0 : H.applicationId) && void 0 !== t ? t : null == F ? void 0 : F.application_id, en = (0, P.default)({
+                    analyticsLocations: Q
+                } = (0, _.default)(), [q, J] = r.useState(!1), $ = (0, s.useStateFromStores)([p.default], () => p.default.getCurrentUser()), ee = null !== (t = null == H ? void 0 : H.applicationId) && void 0 !== t ? t : null == F ? void 0 : F.application_id, et = (0, P.default)({
                     channelId: null == H ? void 0 : H.channelId,
-                    userId: Z.id,
+                    userId: z.id,
                     activity: F
-                }), ei = (0, s.useStateFromStores)([h.default, E.default, R.default, T.default], () => {
+                }), en = (0, s.useStateFromStores)([h.default, E.default, R.default, T.default], () => {
                     let e;
-                    return (null == H ? void 0 : H.applicationId) != null ? e = H.applicationId : (null == F ? void 0 : F.application_id) != null && (e = F.application_id), Q || null != e && (0, L.isLaunchable)({
+                    return (null == H ? void 0 : H.applicationId) != null ? e = H.applicationId : (null == F ? void 0 : F.application_id) != null && (e = F.application_id), X || null != e && (0, L.isLaunchable)({
                         LibraryApplicationStore: h.default,
                         LaunchableGameStore: E.default,
                         DispatchApplicationStore: R.default,
                         ConnectedAppsStore: T.default,
                         applicationId: e
                     })
-                }), er = (0, s.useStateFromStores)([D.default], () => Array.from(D.default.getSelfEmbeddedActivities().values()).some(e => {
+                }), ei = (0, s.useStateFromStores)([D.default], () => Array.from(D.default.getSelfEmbeddedActivities().values()).some(e => {
                     let {
                         applicationId: t,
                         channelId: n
                     } = e;
-                    return (t === (null == F ? void 0 : F.application_id) || t === (null == H ? void 0 : H.applicationId)) && n === en
-                })), es = (0, s.useStateFromStores)([C.default], () => null != F && null != F.application_id && C.default.getState(F.application_id, V.ActivityActionTypes.JOIN) === V.ActivityActionStates.LOADING), [ea] = (0, c.default)((null == H ? void 0 : H.applicationId) != null ? [null == H ? void 0 : H.applicationId] : (null == F ? void 0 : F.application_id) != null ? [null == F ? void 0 : F.application_id] : []), eo = (0, U.useEmbeddedActivityJoinability)({
-                    userId: Z.id,
+                    return (t === (null == F ? void 0 : F.application_id) || t === (null == H ? void 0 : H.applicationId)) && n === et
+                })), er = (0, s.useStateFromStores)([C.default], () => null != F && null != F.application_id && C.default.getState(F.application_id, V.ActivityActionTypes.JOIN) === V.ActivityActionStates.LOADING), [es] = (0, c.default)((null == H ? void 0 : H.applicationId) != null ? [null == H ? void 0 : H.applicationId] : (null == F ? void 0 : F.application_id) != null ? [null == F ? void 0 : F.application_id] : []), ea = (0, U.useEmbeddedActivityJoinability)({
+                    userId: z.id,
                     activity: F,
-                    channelId: en,
-                    application: ea
-                }), el = (0, s.useStateFromStores)([I.default, S.default, f.default, m.default, N.default, O.default, A.default], () => null != H ? eo === U.EmbeddedActivityJoinability.CAN_JOIN : null != F ? (0, y.default)({
-                    user: Z,
+                    channelId: et,
+                    application: es
+                }), eo = (0, s.useStateFromStores)([I.default, S.default, f.default, m.default, N.default, O.default, A.default], () => null != H ? ea === U.EmbeddedActivityJoinability.CAN_JOIN : null != F ? (0, y.default)({
+                    user: z,
                     activity: F,
-                    application: ea,
-                    channelId: en,
-                    currentUser: ee,
-                    isEmbedded: Q,
+                    application: es,
+                    channelId: et,
+                    currentUser: $,
+                    isEmbedded: X,
                     ChannelStore: I.default,
                     GuildStore: S.default,
                     GuildMemberCountStore: f.default,
@@ -70094,21 +70044,21 @@
                     SelectedChannelStore: N.default,
                     VoiceStateStore: O.default,
                     PermissionStore: A.default
-                }) : void 0), eu = (0, s.useStateFromStores)([D.default], () => Array.from(D.default.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == H ? void 0 : H.applicationId) && e.channelId === (null == H ? void 0 : H.channelId))), ed = (0, d.useAnalyticsContext)(), e_ = !g.isPlatformEmbedded, ec = (0, b.default)(F, V.ActivityFlags.JOIN) || Q;
-                if (null == H || !ec || null == H.applicationId) return null;
-                let eE = !j || Q && !eu,
-                    eI = eE && (e_ || ei) && !J && !er && (!Q || el),
-                    eT = null;
-                eE ? !e_ && !ei && null != F && (eT = x.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
+                }) : void 0), el = (0, s.useStateFromStores)([D.default], () => Array.from(D.default.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == H ? void 0 : H.applicationId) && e.channelId === (null == H ? void 0 : H.channelId))), eu = (0, d.useAnalyticsContext)(), ed = !g.isPlatformEmbedded, e_ = (0, b.default)(F, V.ActivityFlags.JOIN) || X;
+                if (null == H || !e_ || null == H.applicationId) return null;
+                let ec = !j || X && !el,
+                    eE = ec && (ed || en) && !q && !ei && (!X || eo),
+                    eI = null;
+                ec ? !ed && !en && null != F && (eI = x.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
                     name: F.name
-                })) : eT = x.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF;
-                let ef = null !== (n = H.launchId) && void 0 !== n ? n : null == F ? void 0 : F.session_id,
-                    eS = async (e, t) => {
+                })) : eI = x.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF;
+                let eT = null !== (n = H.launchId) && void 0 !== n ? n : null == F ? void 0 : F.session_id,
+                    ef = async (e, t) => {
                         var n;
-                        null != ef && null != et && (await l.default.join({
+                        null != eT && null != ee && (await l.default.join({
                             userId: e.id,
-                            sessionId: ef,
-                            applicationId: et,
+                            sessionId: eT,
+                            applicationId: ee,
                             channelId: N.default.getVoiceChannelId(),
                             messageId: null,
                             intent: B.ActivityIntent.PLAY,
@@ -70116,58 +70066,57 @@
                         }), (0, G.default)({
                             type: V.AnalyticsGameOpenTypes.JOIN,
                             userId: e.id,
-                            applicationId: et,
+                            applicationId: ee,
                             partyId: null != t ? null == t ? void 0 : null === (n = t.party) || void 0 === n ? void 0 : n.id : "",
-                            locationObject: ed.location,
-                            analyticsLocations: q
+                            locationObject: eu.location,
+                            analyticsLocations: Q
                         }))
-                    }, eh = async () => {
+                    }, eS = async () => {
                         let e = !1;
-                        if (Q) {
+                        if (X) {
                             var t;
-                            if (!el || null == en || null == et) return;
+                            if (!eo || null == et || null == ee) return;
                             e = await (0, M.default)({
                                 applicationId: null !== (t = null == F ? void 0 : F.application_id) && void 0 !== t ? t : H.applicationId,
                                 currentEmbeddedApplication: Y,
-                                activityChannelId: en,
-                                locationObject: ed.location,
+                                activityChannelId: et,
+                                locationObject: eu.location,
                                 embeddedActivitiesManager: w.default,
-                                analyticsLocations: q
+                                analyticsLocations: Q
                             })
                         }
                         if (!e) {
                             let e;
-                            el && (null == X || X(), eS(Z, F)), $(!0), null != en && null != et ? e = await v.sendEmbeddedActivityInviteUser({
-                                channelId: en,
-                                applicationId: et,
-                                userId: Z.id,
+                            eo && (null == Z || Z(), ef(z, F)), J(!0), null != et && null != ee ? e = await v.sendEmbeddedActivityInviteUser({
+                                channelId: et,
+                                applicationId: ee,
+                                userId: z.id,
                                 location: V.AnalyticsLocations.PROFILE_POPOUT
                             }) : null != F && (e = await o.default.sendActivityInviteUser({
                                 type: V.ActivityActionTypes.JOIN_REQUEST,
-                                userId: Z.id,
+                                userId: z.id,
                                 activity: F,
                                 location: V.AnalyticsLocations.PROFILE_POPOUT
                             })), null != e && u.default.selectPrivateChannel(e.id)
                         }
-                    }, eA = el ? x.default.Messages.JOIN : x.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
-                return Q && (eA = x.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), eu && (eA = x.default.Messages.EMBEDDED_ACTIVITIES_JOINED), (0, i.jsx)(a.Tooltip, {
-                    text: eT,
+                    }, eh = eo ? x.default.Messages.JOIN : x.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
+                return X && (eh = x.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), el && (eh = x.default.Messages.EMBEDDED_ACTIVITIES_JOINED), (0, i.jsx)(a.Tooltip, {
+                    text: eI,
                     children: e => {
                         let {
                             onMouseEnter: t,
                             onMouseLeave: n
                         } = e;
                         return (0, i.jsx)(k.default, {
-                            onClick: eh,
+                            onClick: eS,
                             onMouseEnter: t,
                             onMouseLeave: n,
                             color: W,
                             look: K,
-                            hover: z,
-                            disabled: !eI,
-                            submitting: es,
+                            disabled: !eE,
+                            submitting: er,
                             fullWidth: !0,
-                            children: eA
+                            children: eh
                         })
                     }
                 }, "join")
@@ -88495,8 +88444,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295536", "295536"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295536")), t = 0), t
+                let t = parseInt((e = "295694", "295694"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295694")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -98902,7 +98851,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 ToolbarButtons: function() {
-                    return C
+                    return O
                 }
             }), n("47120");
             var i = n("735250"),
@@ -98910,24 +98859,23 @@
                 s = n("120356"),
                 a = n.n(s),
                 o = n("519953"),
-                l = n("481060"),
-                u = n("40851"),
-                d = n("489465"),
-                _ = n("15322"),
-                c = n("672108"),
-                E = n("979232"),
-                I = n("149111"),
-                T = n("61753"),
-                f = n("153850"),
-                S = n("5967"),
-                h = n("53529"),
-                A = n("50659"),
-                m = n("436660"),
-                N = n("887490"),
-                p = n("447525"),
-                O = n("364610");
+                l = n("40851"),
+                u = n("489465"),
+                d = n("15322"),
+                _ = n("672108"),
+                c = n("979232"),
+                E = n("149111"),
+                I = n("61753"),
+                T = n("153850"),
+                f = n("5967"),
+                S = n("53529"),
+                h = n("50659"),
+                A = n("436660"),
+                m = n("887490"),
+                N = n("447525"),
+                p = n("364610");
 
-            function C(e) {
+            function O(e) {
                 var t;
                 let {
                     editorRef: n,
@@ -98936,105 +98884,97 @@
                     dividerClassName: o
                 } = e, l = null === (t = n.current) || void 0 === t ? void 0 : t.getSlateEditor();
                 return null == l ? null : (0, i.jsxs)("div", {
-                    className: O.buttons,
-                    children: [(0, i.jsx)(R, {
+                    className: p.buttons,
+                    children: [(0, i.jsx)(C, {
                         slateEditor: l,
                         markdownSyntax: "bold",
-                        children: (0, i.jsx)(_.default, {
-                            className: a()(O.icon, s)
+                        children: (0, i.jsx)(d.default, {
+                            className: a()(p.icon, s)
                         })
-                    }), (0, i.jsx)(R, {
+                    }), (0, i.jsx)(C, {
                         slateEditor: l,
                         markdownSyntax: "italics",
-                        children: (0, i.jsx)(E.default, {
-                            className: a()(O.icon, s)
+                        children: (0, i.jsx)(c.default, {
+                            className: a()(p.icon, s)
                         })
-                    }), (0, i.jsx)(R, {
+                    }), (0, i.jsx)(C, {
                         slateEditor: l,
                         markdownSyntax: "strikethrough",
-                        children: (0, i.jsx)(T.default, {
-                            className: a()(O.icon, s)
+                        children: (0, i.jsx)(I.default, {
+                            className: a()(p.icon, s)
                         })
                     }), (0, i.jsx)("div", {
-                        className: a()(O.divider, o)
-                    }), !(null == r ? void 0 : r.disableBlockQuotes) && (0, i.jsx)(g, {
+                        className: a()(p.divider, o)
+                    }), !(null == r ? void 0 : r.disableBlockQuotes) && (0, i.jsx)(R, {
                         slateEditor: l,
                         blockType: "blockQuote",
-                        children: (0, i.jsx)(d.default, {
-                            className: a()(O.icon, s)
+                        children: (0, i.jsx)(u.default, {
+                            className: a()(p.icon, s)
                         })
-                    }), (0, i.jsx)(R, {
+                    }), (0, i.jsx)(C, {
                         slateEditor: l,
                         markdownSyntax: "inlineCode",
-                        children: (0, i.jsx)(c.default, {
-                            className: a()(O.icon, s)
+                        children: (0, i.jsx)(_.default, {
+                            className: a()(p.icon, s)
                         })
-                    }), (0, i.jsx)(R, {
+                    }), (0, i.jsx)(C, {
                         slateEditor: l,
                         markdownSyntax: "spoiler",
-                        children: (0, i.jsx)(I.default, {
-                            className: a()(O.icon, s)
+                        children: (0, i.jsx)(E.default, {
+                            className: a()(p.icon, s)
                         })
                     })]
                 })
             }
 
-            function R(e) {
+            function C(e) {
                 let {
                     slateEditor: t,
                     markdownSyntax: n,
                     children: r
                 } = e, s = !1;
                 if ((null == t ? void 0 : t.selection) != null) {
-                    let [e, i] = N.RangeUtils.edges(t.selection);
-                    s = null != (0, A.parseSelectedSyntax)(t, e, i).before[n]
+                    let [e, i] = m.RangeUtils.edges(t.selection);
+                    s = null != (0, h.parseSelectedSyntax)(t, e, i).before[n]
                 }
-                return (0, i.jsx)(l.Button, {
-                    className: O.button,
-                    innerClassName: O.buttonInner,
-                    color: s ? O.active : O.inactive,
-                    hover: O.hover,
-                    look: l.Button.Looks.FILLED,
-                    size: l.Button.Sizes.NONE,
+                return (0, i.jsx)("button", {
+                    "aria-pressed": s,
+                    className: p.button,
                     onClick: () => {
-                        null != t && h.HistoryUtils.withSingleEntry(t, () => (0, A.toggleMarkdownStyle)(t, n))
+                        null != t && S.HistoryUtils.withSingleEntry(t, () => (0, h.toggleMarkdownStyle)(t, n))
+                    },
+                    children: r
+                })
+            }
+
+            function R(e) {
+                let {
+                    blockType: t,
+                    slateEditor: n,
+                    children: r
+                } = e, s = null != n ? m.EditorUtils.getCurrentBlock(n) : null, a = null != s && m.NodeUtils.isType(s[0], t);
+                return (0, i.jsx)("button", {
+                    "aria-pressed": a,
+                    className: p.button,
+                    onClick: () => {
+                        null != n && S.HistoryUtils.withSingleEntry(n, () => (0, h.toggleBlockStyle)(n, t))
                     },
                     children: r
                 })
             }
 
             function g(e) {
-                let {
-                    blockType: t,
-                    slateEditor: n,
-                    children: r
-                } = e, s = null != n ? N.EditorUtils.getCurrentBlock(n) : null, a = null != s && N.NodeUtils.isType(s[0], t);
-                return (0, i.jsx)(l.Button, {
-                    className: O.button,
-                    innerClassName: O.buttonInner,
-                    color: a ? O.active : O.inactive,
-                    hover: O.hover,
-                    look: l.Button.Looks.FILLED,
-                    size: l.Button.Sizes.NONE,
-                    onClick: () => {
-                        null != n && h.HistoryUtils.withSingleEntry(n, () => (0, A.toggleBlockStyle)(n, t))
-                    },
-                    children: r
-                })
-            }
-
-            function L(e) {
                 var t;
                 let {
                     slateEditor: n
-                } = e, [i, s] = null !== (t = N.EditorUtils.getSelectedVoid(n)) && void 0 !== t ? t : [null, null], a = r.useCallback(e => {
+                } = e, [i, s] = null !== (t = m.EditorUtils.getSelectedVoid(n)) && void 0 !== t ? t : [null, null], a = r.useCallback(e => {
                     if ((null == n ? void 0 : n.selection) == null || null == s) return;
                     let t = n.selection;
-                    h.HistoryUtils.withSingleEntry(n, () => {
-                        m.SlateTransforms.voidToText(n, e, s), m.SlateTransforms.select(n, t)
+                    S.HistoryUtils.withSingleEntry(n, () => {
+                        A.SlateTransforms.voidToText(n, e, s), A.SlateTransforms.select(n, t)
                     })
                 }, [n, s]);
-                return null == i ? null : (0, p.default)(i, {
+                return null == i ? null : (0, N.default)(i, {
                     replace: a
                 })
             }
@@ -99043,44 +98983,44 @@
                 let {
                     editorRef: s,
                     containerRef: a,
-                    options: l
-                } = e, d = r.useRef(null), [_, c] = r.useState(!1), E = r.useRef(), I = r.useContext(u.default), T = r.useCallback(() => {
+                    options: u
+                } = e, d = r.useRef(null), [_, c] = r.useState(!1), E = r.useRef(), I = r.useContext(l.default), S = r.useCallback(() => {
                     c(!1), clearTimeout(E.current)
                 }, []), h = r.useCallback(e => {
                     var t;
                     let n = I.renderWindow;
-                    !(e.target instanceof n.Node && (null === (t = d.current) || void 0 === t ? void 0 : t.contains(e.target))) && T()
-                }, [I, T]), A = r.useCallback(e => {
+                    !(e.target instanceof n.Node && (null === (t = d.current) || void 0 === t ? void 0 : t.contains(e.target))) && S()
+                }, [I, S]), A = r.useCallback(e => {
                     let t = I.renderWindow;
                     if (e.target instanceof t.Element) {
-                        if (0 !== e.button) T();
+                        if (0 !== e.button) S();
                         else {
                             var n;
                             let i = e.target instanceof t.Node && (null === (n = d.current) || void 0 === n ? void 0 : n.contains(e.target));
                             clearTimeout(E.current), E.current = setTimeout(() => {
                                 var t;
-                                let n = null === (t = (0, S.eventOwnerDocument)(e)) || void 0 === t ? void 0 : t.activeElement,
+                                let n = null === (t = (0, f.eventOwnerDocument)(e)) || void 0 === t ? void 0 : t.activeElement,
                                     r = a.current;
                                 c(i || null != n && null != r && r.contains(n))
                             }, 100)
                         }
-                    } else T()
-                }, [I, a, T]);
+                    } else S()
+                }, [I, a, S]);
                 r.useImperativeHandle(t, () => ({
-                    hide: T
-                }), [T]), r.useEffect(() => {
+                    hide: S
+                }), [S]), r.useEffect(() => {
                     let e = I.renderWindow;
-                    return e.document.addEventListener("keydown", T), e.document.addEventListener("mousedown", h), e.document.addEventListener("mouseup", A), e.addEventListener("focus", T), e.addEventListener("blur", T), () => {
-                        e.document.removeEventListener("keydown", T), e.document.removeEventListener("mousedown", h), e.document.removeEventListener("mouseup", A), e.removeEventListener("focus", T), e.removeEventListener("blur", T), clearTimeout(E.current)
+                    return e.document.addEventListener("keydown", S), e.document.addEventListener("mousedown", h), e.document.addEventListener("mouseup", A), e.addEventListener("focus", S), e.addEventListener("blur", S), () => {
+                        e.document.removeEventListener("keydown", S), e.document.removeEventListener("mousedown", h), e.document.removeEventListener("mouseup", A), e.removeEventListener("focus", S), e.removeEventListener("blur", S), clearTimeout(E.current)
                     }
-                }, [I, T, h, A]);
+                }, [I, S, h, A]);
                 let {
-                    x: m,
-                    y: p
+                    x: N,
+                    y: C
                 } = r.useMemo(() => {
                     var e, t, n, i;
                     let r = null === (e = s.current) || void 0 === e ? void 0 : e.getSlateEditor();
-                    if ((null == r ? void 0 : r.selection) == null || N.RangeUtils.isCollapsed(r.selection) || !_) return {
+                    if ((null == r ? void 0 : r.selection) == null || m.RangeUtils.isCollapsed(r.selection) || !_) return {
                         x: null,
                         y: null
                     };
@@ -99102,26 +99042,26 @@
                         S = c.x === I.x,
                         h = S ? f.x : Math.min(c.x, I.x),
                         A = S ? f.x + f.width : Math.max(c.x, I.x),
-                        m = null !== (i = null === (n = a.current) || void 0 === n ? void 0 : null === (t = n.getBoundingClientRect()) || void 0 === t ? void 0 : t.y) && void 0 !== i ? i : 0;
+                        N = null !== (i = null === (n = a.current) || void 0 === n ? void 0 : null === (t = n.getBoundingClientRect()) || void 0 === t ? void 0 : t.y) && void 0 !== i ? i : 0;
                     return {
                         x: h + (A - h) / 2,
-                        y: Math.max(m, Math.min(I.y, c.y))
+                        y: Math.max(N, Math.min(I.y, c.y))
                     }
-                }, [a, _, s]), [R, g] = r.useState(0), [v, D] = r.useState(0);
+                }, [a, _, s]), [R, L] = r.useState(0), [v, D] = r.useState(0);
                 if (r.useLayoutEffect(() => {
-                        if (null == m || null == p || null == d.current) return;
+                        if (null == N || null == C || null == d.current) return;
                         let e = d.current.getBoundingClientRect();
-                        D(e.width / 2), g(e.height + 12)
-                    }, [m, p]), null == m || null == p) return null;
+                        D(e.width / 2), L(e.height + 12)
+                    }, [N, C]), null == N || null == C) return null;
                 let M = null === (n = s.current) || void 0 === n ? void 0 : n.getSlateEditor();
-                return null == M ? null : (0, i.jsx)(f.default, {
+                return null == M ? null : (0, i.jsx)(T.default, {
                     children: (0, i.jsxs)("div", {
                         id: "slate-toolbar",
                         ref: d,
-                        className: O.toolbar,
+                        className: p.toolbar,
                         style: {
-                            top: p - R,
-                            left: m - v
+                            top: C - R,
+                            left: N - v
                         },
                         onMouseDown: e => {
                             e.stopPropagation()
@@ -99129,11 +99069,11 @@
                         onMouseUp: e => {
                             e.stopPropagation()
                         },
-                        children: [(0, i.jsx)(L, {
+                        children: [(0, i.jsx)(g, {
                             slateEditor: M
-                        }), (0, i.jsx)(C, {
+                        }), (0, i.jsx)(O, {
                             editorRef: s,
-                            options: l
+                            options: u
                         })]
                     })
                 })
@@ -104427,67 +104367,73 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanGuildIconSimple: function() {
-                    return _
+                    return E
                 }
             });
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
-                o = n("806519"),
-                l = n("768581"),
-                u = n("624138"),
-                d = n("545866");
+                o = n("442837"),
+                l = n("451478"),
+                u = n("806519"),
+                d = n("768581"),
+                _ = n("624138"),
+                c = n("545866");
 
-            function _(e) {
+            function E(e) {
                 let {
-                    guildName: t,
-                    guildIconURL: n,
-                    iconSize: r,
-                    className: s
-                } = e;
-                if (null == n) {
-                    let e = (0, u.getAcronym)(t);
-                    return (0, i.jsx)(o.default, {
-                        mask: o.default.Masks.SQUIRCLE,
-                        width: r,
-                        height: r,
-                        className: s,
+                    guildId: t,
+                    guildName: n,
+                    guildIcon: r,
+                    iconSize: s,
+                    className: E,
+                    animate: I
+                } = e, T = (0, o.useStateFromStores)([l.default], () => l.default.isFocused()), f = d.default.getGuildIconURL({
+                    id: t,
+                    icon: r,
+                    size: s,
+                    canAnimate: I && T
+                });
+                if (null == f) {
+                    let e = (0, _.getAcronym)(n);
+                    return (0, i.jsx)(u.default, {
+                        mask: u.default.Masks.SQUIRCLE,
+                        width: s,
+                        height: s,
+                        className: E,
                         children: (0, i.jsx)("div", {
-                            className: a()(d.guildIconImage, d.acronym),
+                            className: a()(c.guildIconImage, c.acronym),
                             children: e
                         })
                     })
                 }
-                return (0, i.jsx)(o.default, {
-                    mask: o.default.Masks.SQUIRCLE,
-                    width: r,
-                    height: r,
-                    className: s,
+                return (0, i.jsx)(u.default, {
+                    mask: u.default.Masks.SQUIRCLE,
+                    width: s,
+                    height: s,
+                    className: E,
                     children: (0, i.jsx)("img", {
-                        src: n,
-                        alt: t,
-                        className: d.guildIconImage
+                        src: f,
+                        alt: n,
+                        className: c.guildIconImage
                     })
                 })
             }
             t.default = r.memo(function(e) {
-                var t;
                 let {
-                    guild: n,
-                    iconSize: r,
-                    className: s
-                } = e, a = null !== (t = l.default.getGuildIconURL({
-                    id: n.id,
-                    icon: n.icon,
-                    size: r,
-                    canAnimate: !0
-                })) && void 0 !== t ? t : void 0;
-                return (0, i.jsx)(_, {
-                    guildName: n.name,
-                    guildIconURL: a,
-                    iconSize: r,
-                    className: s
+                    guild: t,
+                    iconSize: n,
+                    className: r,
+                    animate: s
+                } = e;
+                return (0, i.jsx)(E, {
+                    guildName: t.name,
+                    guildId: t.id,
+                    guildIcon: t.icon,
+                    iconSize: n,
+                    className: r,
+                    animate: s
                 })
             })
         },
@@ -107950,6 +107896,34 @@
                 return e === t || e === r.ThemeTypes.DARK && t === r.ThemeTypes.DARKER || e === r.ThemeTypes.DARKER && t === r.ThemeTypes.DARK || !1
             }
         },
+        629935: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getThemeColorMixValues: function() {
+                    return s
+                }
+            }), n("47120");
+            var i = n("688619"),
+                r = n.n(i);
+
+            function s(e) {
+                let {
+                    enabled: t,
+                    primaryColor: n,
+                    secondaryColor: i,
+                    isDarkTheme: s,
+                    baseMixAmount: a = 30,
+                    textMixAmount: o = 40
+                } = e, l = r()(n), u = r()(i), [d, _] = l.luminance() > u.luminance() ? [l, u] : [u, l], c = s ? d.set("lch.l", 98).set("lch.c", 15) : _.set("lch.l", 10), E = s ? _.set("hsl.s", 1).set("hsl.l", .05) : d.set("hsl.s", 1).set("hsl.l", .94), [I, T, f] = E.hsl();
+                return {
+                    "--custom-theme-mix-base-hsl": "".concat(Number.isNaN(I) ? 0 : I, " ").concat(100 * T, "% ").concat(100 * f, "%"),
+                    "--custom-theme-mix-base": E.css(),
+                    "--custom-theme-mix-text": c.css(),
+                    "--custom-theme-mix-amount-base": "".concat(t ? a : 0, "%"),
+                    "--custom-theme-mix-amount-text": "".concat(t ? o : 0, "%")
+                }
+            }
+        },
         798728: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -107998,45 +107972,52 @@
             "use strict";
             n.r(t), n.d(t, {
                 CLIENT_THEMES_DATA_ATTRIBUTE: function() {
-                    return _
+                    return d
                 },
                 CUSTOM_THEME_BACKGROUND_CLASS_NAME: function() {
-                    return c
+                    return _
                 }
             }), n("47120");
             var i = n("470079"),
-                r = n("688619"),
-                s = n.n(r),
-                a = n("691324"),
-                o = n("442837"),
-                l = n("780384"),
-                u = n("813852"),
-                d = n("514361");
-            let _ = "data-client-themes",
-                c = "custom-theme-background",
-                E = () => {
-                    let e = (0, o.useStateFromStores)([d.default], () => d.default.gradientPreset),
+                r = n("691324"),
+                s = n("442837"),
+                a = n("780384"),
+                o = n("813852"),
+                l = n("514361"),
+                u = n("629935");
+            let d = "data-client-themes",
+                _ = "custom-theme-background",
+                c = () => {
+                    let e = (0, s.useStateFromStores)([l.default], () => l.default.gradientPreset),
                         {
                             enabled: t
-                        } = u.ColorMixDesktopClientThemesExperiment.useExperiment({
+                        } = o.ColorMixDesktopClientThemesExperiment.useExperiment({
                             location: "useBackgroundGradientCSS"
                         });
                     return (0, i.useMemo)(() => {
                         if (null == e) return null;
-                        let n = d.default.getLinearGradient();
+                        let n = l.default.getLinearGradient();
                         if (null == n) return null;
-                        let [i, r] = [...e.colors].sort((e, t) => t.stop - e.stop).slice(0, 2).map(e => s()(a.ColorDetails[e.token].hex)), [o, u] = i.luminance() > r.luminance() ? [i, r] : [r, i], _ = (0, l.isThemeLight)(e.theme) ? u.set("lch.l", 10) : o.set("lch.l", 98).set("lch.c", 15), E = (0, l.isThemeLight)(e.theme) ? o.set("hsl.s", 1).set("hsl.l", .95) : u.set("hsl.s", 1).set("hsl.l", .05), [I, T, f] = E.hsl(), S = t ? "\n      --custom-theme-mix-base-hsl: ".concat(Number.isNaN(I) ? 0 : I, " ").concat(100 * T, "% ").concat(100 * f, "%;\n      --custom-theme-mix-base: ").concat(E.css(), ";\n      --custom-theme-mix-text: ").concat(_.css(), ";\n      --custom-theme-mix-amount-base: ").concat(t ? 30 : 0, "%;\n      --custom-theme-mix-amount-text: ").concat(t ? 40 : 0, "%;\n    ") : "";
-                        return ".".concat(c, " {\n      --custom-theme-background: ").concat(n, ";\n      ").concat(S, "\n    }")
+                        let [i, s] = [...e.colors].sort((e, t) => t.stop - e.stop).slice(0, 2).map(e => r.ColorDetails[e.token].hex), o = (0, u.getThemeColorMixValues)({
+                            enabled: t,
+                            primaryColor: i,
+                            secondaryColor: s,
+                            isDarkTheme: (0, a.isThemeDark)(e.theme)
+                        }), d = t ? "\n      ".concat(Object.entries(o).map(e => {
+                            let [t, n] = e;
+                            return "".concat(t, ": ").concat(n, ";")
+                        }).join("\n"), "\n    ") : "";
+                        return ".".concat(_, " {\n      --custom-theme-background: ").concat(n, ";\n      ").concat(d, "\n    }")
                     }, [t, e])
                 };
             t.default = () => {
-                let e = E();
+                let e = c();
                 return null === e ? {
                     clientThemesCSS: "",
                     clientThemesClassName: ""
                 } : {
                     clientThemesCSS: e,
-                    clientThemesClassName: c
+                    clientThemesClassName: _
                 }
             }
         },
@@ -116360,8 +116341,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295536",
-                    versionHash: "59a265cb570f2d761fd2dcc5e57536071435f031"
+                    buildNumber: "295694",
+                    versionHash: "ffb1a11b2a92121a3614f809fc4aa9cc498efa6b"
                 }
             }
             n.r(t), n.d(t, {
@@ -117237,13 +117218,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardTraits: function() {
-                    return y
+                    return M
                 },
                 ClanDiscoveryCardView: function() {
-                    return P
+                    return y
                 },
                 Wildcards: function() {
-                    return D
+                    return v
                 }
             }), n("47120");
             var i = n("735250"),
@@ -117265,19 +117246,18 @@
                 A = n("703656"),
                 m = n("271383"),
                 N = n("594174"),
-                p = n("768581"),
-                O = n("778045"),
-                C = n("524989"),
-                R = n("981631"),
-                g = n("308083"),
-                L = n("689938"),
-                v = n("449729");
+                p = n("778045"),
+                O = n("524989"),
+                C = n("981631"),
+                R = n("308083"),
+                g = n("689938"),
+                L = n("449729");
 
-            function D(e) {
+            function v(e) {
                 let {
                     wildcardDescriptors: t,
                     primaryColor: n
-                } = e, s = t.filter(e => e !== g.EMPTY_WILDCARD).join(", "), a = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), l = (0, E.getAccessibleClanColor)(n, a.hex()), u = r.useRef(null), [d, _] = r.useState(!1);
+                } = e, s = t.filter(e => e !== R.EMPTY_WILDCARD).join(", "), a = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), l = (0, E.getAccessibleClanColor)(n, a.hex()), u = r.useRef(null), [d, _] = r.useState(!1);
                 if (r.useEffect(() => {
                         let e = u.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && _(e.offsetWidth < e.scrollWidth)
@@ -117289,7 +117269,7 @@
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
-                        className: v.clanInfoItem,
+                        className: L.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)(o.Tooltip, {
                         text: s,
@@ -117298,7 +117278,7 @@
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             style: c,
-                            className: v.wildCardText,
+                            className: L.wildCardText,
                             ref: u,
                             children: s
                         })
@@ -117306,15 +117286,15 @@
                 })
             }
 
-            function M(e) {
+            function D(e) {
                 let {
                     trait: t,
                     isHighlighted: n,
                     className: r
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: a()(r, v.trait, {
-                        [v.highlightedTrait]: n
+                    className: a()(r, L.trait, {
+                        [L.highlightedTrait]: n
                     }),
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
@@ -117325,20 +117305,20 @@
                 })
             }
 
-            function y(e) {
+            function M(e) {
                 let {
                     traits: t,
                     traitsToHighlight: n,
                     expanded: s,
                     traitClassName: a
-                } = e, l = r.useMemo(() => new Set(n), [n]), u = r.useCallback(e => (0, i.jsx)(M, {
+                } = e, l = r.useMemo(() => new Set(n), [n]), u = r.useCallback(e => (0, i.jsx)(D, {
                     trait: e,
                     isHighlighted: l.has(e)
                 }, e), [l]), d = r.useCallback(e => (0, i.jsx)(o.Tooltip, {
                     text: (0, i.jsx)("div", {
-                        className: v.overflowTooltip,
+                        className: L.overflowTooltip,
                         children: e.map(e => (0, i.jsx)("div", {
-                            className: v.trait,
+                            className: L.trait,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-normal",
@@ -117350,99 +117330,103 @@
                     "aria-label": "overflow",
                     children: t => (0, i.jsx)("div", {
                         ...t,
-                        className: v.trait,
+                        className: L.trait,
                         children: (0, i.jsx)(o.Text, {
                             variant: "text-xs/normal",
                             color: "text-normal",
-                            children: L.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                            children: g.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
                                 count: e.length
                             })
                         })
                     })
                 }), []);
                 return s ? (0, i.jsx)("div", {
-                    className: v.expandedTraitsContainer,
-                    children: t.map(e => (0, i.jsx)(M, {
+                    className: L.expandedTraitsContainer,
+                    children: t.map(e => (0, i.jsx)(D, {
                         className: a,
                         trait: e,
                         isHighlighted: l.has(e)
                     }, e))
-                }) : (0, i.jsx)(C.default, {
+                }) : (0, i.jsx)(O.default, {
                     items: t,
                     renderItem: u,
                     renderOverflow: d,
                     maxLines: 2,
-                    className: v.traitsContainer,
+                    className: L.traitsContainer,
                     spacing: 4
                 })
             }
 
-            function P(e) {
-                var t, n;
+            function y(e) {
+                var t;
                 let {
-                    clan: s,
-                    bannerComponent: l,
-                    expanded: u,
-                    isMember: _,
-                    traitsToHighlight: c,
-                    prioritizedGameIds: E,
-                    className: h,
-                    showBrandingFooter: A = !1,
-                    bannerUrl: m
+                    clan: n,
+                    bannerComponent: s,
+                    expanded: l,
+                    isMember: u,
+                    traitsToHighlight: _,
+                    prioritizedGameIds: c,
+                    className: E,
+                    showBrandingFooter: h = !1,
+                    bannerUrl: A,
+                    onlyAnimateIconOnHover: m = !1
                 } = e, {
                     tag: N,
-                    badge: C,
+                    badge: O,
                     branding: {
-                        primaryColor: R,
-                        secondaryColor: M
+                        primaryColor: C,
+                        secondaryColor: D
                     },
-                    bannerHash: P
-                } = s, U = (0, d.default)(s.games), b = (0, T.default)("clan_discovery_card"), G = L.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
-                    count: s.memberCount
-                }), w = null !== (t = p.default.getGuildIconURL({
-                    id: s.id,
-                    icon: s.icon,
-                    size: 64,
-                    canAnimate: !0
-                })) && void 0 !== t ? t : void 0, k = null != m ? m : (0, I.getClanBannerUrl)(s.id, P), B = null == l && null == k ? {
-                    background: "linear-gradient(90deg, ".concat(R, ", ").concat(M, ")")
-                } : void 0, V = null != l ? l : null != k ? (0, i.jsx)("img", {
-                    alt: L.default.Messages.CLAN_LOOK_BANNER,
-                    src: k,
-                    className: v.bannerImage
-                }) : null, x = r.useMemo(() => (0, g.getSortedTraits)(s.traits, c), [s.traits, c]);
+                    bannerHash: y
+                } = n, P = (0, d.default)(n.games), U = (0, T.default)("clan_discovery_card"), [b, G] = r.useState(!1), w = r.useCallback(() => {
+                    G(!0)
+                }, []), k = r.useCallback(() => {
+                    G(!1)
+                }, []), B = g.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                    count: n.memberCount
+                }), V = null != A ? A : (0, I.getClanBannerUrl)(n.id, y), x = null == s && null == V ? {
+                    background: "linear-gradient(90deg, ".concat(C, ", ").concat(D, ")")
+                } : void 0, F = null != s ? s : null != V ? (0, i.jsx)("img", {
+                    alt: g.default.Messages.CLAN_LOOK_BANNER,
+                    src: V,
+                    className: L.bannerImage
+                }) : null, H = r.useMemo(() => (0, R.getSortedTraits)(n.traits, _), [n.traits, _]);
                 return (0, i.jsxs)("div", {
-                    className: a()(v.card, h),
+                    className: a()(L.card, E),
+                    onMouseEnter: w,
+                    onMouseLeave: k,
                     children: [(0, i.jsx)("div", {
-                        className: v.cardBrandingHeader,
-                        style: B,
-                        children: V
+                        className: L.cardBrandingHeader,
+                        style: x,
+                        children: F
                     }), (0, i.jsxs)("div", {
-                        className: v.cardContent,
+                        className: L.cardContent,
                         children: [(0, i.jsxs)("div", {
-                            className: v.cardContentTitleSection,
+                            className: L.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
-                                className: v.cardNameAndTagWrapper,
+                                className: L.cardNameAndTagWrapper,
                                 children: [(0, i.jsx)(f.ClanGuildIconSimple, {
-                                    guildName: s.name,
-                                    guildIconURL: w,
+                                    guildId: n.id,
+                                    guildName: n.name,
+                                    guildIcon: n.icon,
                                     iconSize: 64,
-                                    className: v.clanIcon
+                                    className: L.clanIcon,
+                                    animate: !m || b
                                 }), (0, i.jsx)("div", {
-                                    className: v.clanTagChipletWrapper,
+                                    className: L.clanTagChipletWrapper,
                                     children: (0, i.jsx)(o.Tooltip, {
-                                        text: L.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
+                                        text: g.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
-                                        shouldShow: !_ && b,
+                                        shouldShow: !u && U,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
-                                            className: v.clanTagChiplet,
+                                            className: L.clanTagChiplet,
                                             children: [(0, i.jsx)(S.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
-                                                badge: C.badgeKind,
-                                                primaryTintColor: C.primaryColor,
-                                                secondaryTintColor: C.secondaryColor
+                                                badge: O.badgeKind,
+                                                primaryTintColor: O.primaryColor,
+                                                secondaryTintColor: O.secondaryColor
                                             }), (0, i.jsx)(o.Text, {
                                                 variant: "text-xs/medium",
                                                 color: "text-primary",
@@ -117455,62 +117439,62 @@
                                 variant: "heading-md/medium",
                                 color: "header-primary",
                                 lineClamp: 1,
-                                children: s.name
+                                children: n.name
                             }), (0, i.jsxs)("div", {
-                                className: v.clanInfoRow,
+                                className: L.clanInfoRow,
                                 children: [(0, i.jsx)(o.Text, {
                                     variant: "text-xxs/normal",
-                                    className: v.clanInfoItem,
+                                    className: L.clanInfoItem,
                                     children: (0, i.jsx)("span", {
                                         role: "img",
-                                        "aria-label": L.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
+                                        "aria-label": g.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
                                         children: "\uD83C\uDFAE"
                                     })
                                 }), (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-secondary",
-                                    className: v.clanInfoItem,
-                                    children: null !== (n = (0, g.getPlaystyleTitle)(s.playstyle)) && void 0 !== n ? n : L.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
-                                }), (0, i.jsx)(D, {
-                                    wildcardDescriptors: s.wildcardDescriptors,
-                                    primaryColor: s.branding.primaryColor
+                                    className: L.clanInfoItem,
+                                    children: null !== (t = (0, R.getPlaystyleTitle)(n.playstyle)) && void 0 !== t ? t : g.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
+                                }), (0, i.jsx)(v, {
+                                    wildcardDescriptors: n.wildcardDescriptors,
+                                    primaryColor: n.branding.primaryColor
                                 })]
                             })]
                         }), (0, i.jsx)("div", {
-                            className: v.cardContentDescriptionSection,
+                            className: L.cardContentDescriptionSection,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
-                                children: s.description
+                                children: n.description
                             })
-                        }), (0, i.jsx)(y, {
-                            traits: x,
-                            expanded: u,
-                            traitsToHighlight: c
+                        }), (0, i.jsx)(M, {
+                            traits: H,
+                            expanded: l,
+                            traitsToHighlight: _
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: v.cardFooter,
+                        className: L.cardFooter,
                         children: [(0, i.jsx)("div", {
-                            className: v.cardFooterInfo,
+                            className: L.cardFooterInfo,
                             children: (0, i.jsx)("div", {
-                                className: v.cardFooterMembers,
+                                className: L.cardFooterMembers,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: G
+                                    children: B
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: v.cardFooterGames,
-                            children: (0, i.jsx)(O.default, {
-                                games: U,
-                                prioritizedGameIds: E
+                            className: L.cardFooterGames,
+                            children: (0, i.jsx)(p.default, {
+                                games: P,
+                                prioritizedGameIds: c
                             })
                         })]
-                    }), A && (0, i.jsx)("div", {
-                        className: v.cardBrandingFooter,
+                    }), h && (0, i.jsx)("div", {
+                        className: L.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(R, ", ").concat(M, ")")
+                            background: "linear-gradient(90deg, ".concat(C, ", ").concat(D, ")")
                         }
                     })]
                 })
@@ -117538,11 +117522,11 @@
                         return
                     }
                     if (e) {
-                        (0, A.transitionTo)(R.Routes.GUILD_MEMBER_VERIFICATION(d.id));
+                        (0, A.transitionTo)(C.Routes.GUILD_MEMBER_VERIFICATION(d.id));
                         return
                     }(0, c.openClanApplyFlow)(d.id, d, {
                         source: T,
-                        location: R.AnalyticsLocations.CLAN_DISCOVERY_CARD
+                        location: C.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     }, s)
                 }, [d, S, E, I, T, s]), O = r.useCallback(e => {
                     (0, u.openContextMenuLazy)(e, async () => {
@@ -117557,10 +117541,10 @@
                 }, [d.id]);
                 return (0, i.jsx)(o.Clickable, {
                     onClick: p,
-                    className: v.clickableCard,
+                    className: L.clickableCard,
                     style: t,
                     onContextMenu: O,
-                    children: (0, i.jsx)(P, {
+                    children: (0, i.jsx)(y, {
                         ...a,
                         isMember: S,
                         prioritizedGameIds: s,
@@ -173400,8 +173384,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716403757655",
-                                    build_number: "295536"
+                                    built_at: "1716418482919",
+                                    build_number: "295694"
                                 }
                             },
                             retries: 1
@@ -192175,7 +192159,6 @@
                                         ei(), eu.handleClickCta()
                                     },
                                     color: d.Button.Colors.CUSTOM,
-                                    hover: d.Button.Hovers.PRIMARY,
                                     className: b.ctaButton,
                                     children: eu.ctaText
                                 })]
@@ -213519,6 +213502,7 @@
                 return T ? null == f ? (0, i.jsx)(c.default, {
                     icon: u.default,
                     text: E.default.Messages.EDIT_PROFILE,
+                    autoFocus: !0,
                     onClick: () => {
                         S({
                             action: "EDIT_PROFILE"
@@ -217542,7 +217526,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return T
                 }
             }), n("47120");
             var i = n("470079"),
@@ -217550,11 +217534,13 @@
                 s = n.n(r),
                 a = n("866442"),
                 o = n("442837"),
-                l = n("607070"),
-                u = n("168551"),
-                d = n("792125"),
-                _ = n("168631");
-            let c = Object.freeze({
+                l = n("780384"),
+                u = n("607070"),
+                d = n("629935"),
+                _ = n("168551"),
+                c = n("792125"),
+                E = n("168631");
+            let I = Object.freeze({
                 "--profile-gradient-primary-color": "var(--background-secondary-alt)",
                 "--profile-gradient-secondary-color": "var(--background-secondary-alt)",
                 "--profile-gradient-overlay-color": "rgba(0, 0, 0, 0)",
@@ -217570,34 +217556,41 @@
                 "--profile-role-pill-border-color": "var(--interactive-normal)"
             });
 
-            function E(e) {
+            function T(e) {
                 let {
                     theme: t,
                     primaryColor: n,
                     secondaryColor: r
-                } = e, [E, I] = (0, o.useStateFromStoresArray)([l.default], () => [l.default.desaturateUserColors, l.default.syncProfileThemeWithUserTheme]), T = (0, _.useProfileThemeValues)(t), f = (0, _.useAvatarBorderColor)(t, n, I), S = (0, _.useDividerColor)(t, n), h = (0, _.useMessageInputBorderColor)(t, r), A = I ? null == T ? void 0 : T.overlaySyncedWithUserTheme : null == T ? void 0 : T.overlay;
+                } = e, [T, f] = (0, o.useStateFromStoresArray)([u.default], () => [u.default.desaturateUserColors, u.default.syncProfileThemeWithUserTheme]), S = (0, E.useProfileThemeValues)(t), h = (0, E.useAvatarBorderColor)(t, n, f), A = (0, E.useDividerColor)(t, n), m = (0, E.useMessageInputBorderColor)(t, r), N = f ? null == S ? void 0 : S.overlaySyncedWithUserTheme : null == S ? void 0 : S.overlay;
                 return {
                     profileThemeStyle: (0, i.useMemo)(() => {
-                        if (null == n || null == r || null == T || null == f || null == S || null == h || null == A) return c;
-                        let e = (e, t) => (0, a.int2hsl)(e, E, null, t);
+                        if (null == n || null == r || null == S || null == h || null == A || null == m || null == N) return I;
+                        let e = (e, t) => (0, a.int2hsl)(e, T, null, t);
                         return {
                             "--profile-gradient-primary-color": e(n),
                             "--profile-gradient-secondary-color": e(r),
-                            "--profile-gradient-overlay-color": A,
-                            "--profile-gradient-button-color": e((0, _.calculateButtonColor)(n)),
-                            "--profile-avatar-border-color": e(f),
-                            "--profile-body-background-color": T.sectionBox,
-                            "--profile-body-background-hover": T.profileBodyBackgroundHover,
-                            "--profile-body-divider-color": e(S, T.dividerOpacity),
-                            "--profile-body-border-color": e(S, .12),
-                            "--profile-message-input-border-color": e(h),
-                            "--profile-note-background-color": T.noteBackgroundColor,
-                            "--profile-role-pill-background-color": T.rolePillBackgroundColor,
-                            "--profile-role-pill-border-color": T.rolePillBorderColor
+                            "--profile-gradient-overlay-color": N,
+                            "--profile-gradient-button-color": e((0, E.calculateButtonColor)(n)),
+                            "--profile-avatar-border-color": e(h),
+                            "--profile-body-background-color": S.sectionBox,
+                            "--profile-body-background-hover": S.profileBodyBackgroundHover,
+                            "--profile-body-divider-color": e(A, S.dividerOpacity),
+                            "--profile-body-border-color": e(A, .12),
+                            "--profile-message-input-border-color": e(m),
+                            "--profile-note-background-color": S.noteBackgroundColor,
+                            "--profile-role-pill-background-color": S.rolePillBackgroundColor,
+                            "--profile-role-pill-border-color": S.rolePillBorderColor,
+                            ...(0, d.getThemeColorMixValues)({
+                                enabled: !0,
+                                primaryColor: n,
+                                secondaryColor: r,
+                                isDarkTheme: (0, l.isThemeDark)(t),
+                                textMixAmount: 70
+                            })
                         }
-                    }, [n, r, f, E, S, h, A, T]),
-                    profileThemeClassName: s()((0, d.getThemeClass)(t), {
-                        [u.CUSTOM_THEME_BACKGROUND_CLASS_NAME]: null != n,
+                    }, [n, r, S, h, A, m, N, t, T]),
+                    profileThemeClassName: s()((0, c.getThemeClass)(t), {
+                        [_.CUSTOM_THEME_BACKGROUND_CLASS_NAME]: null != n,
                         "custom-profile-theme": null != n
                     })
                 }
@@ -241249,13 +241242,14 @@
                 },
                 DRAWER_OPEN: function(e) {
                     let {
-                        drawer: t
+                        drawer: t,
+                        isLandscapedTablet: n
                     } = e;
                     if (null != ed) {
                         let e = ey.get(ed);
                         !e.hasUnread() && (e.oldestUnreadMessageIdStale = !0)
                     }
-                    return eh = null != t, !1
+                    return eh = null != t && !n, !1
                 },
                 DRAWER_CLOSE: function() {
                     return eh = !1, eB(ed)
@@ -250344,7 +250338,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "59a265cb570f2d761fd2dcc5e57536071435f031"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ffb1a11b2a92121a3614f809fc4aa9cc498efa6b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279456,7 +279450,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295536"
+                                build_number: "295694"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286814,7 +286808,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295536", "295536"), 10);
+                let s = parseInt((n = "295694", "295694"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314522,4 +314516,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.f0faf4610bac9be4e572.js.map
+//# sourceMappingURL=71586.bec48eead506f88a39f4.js.map

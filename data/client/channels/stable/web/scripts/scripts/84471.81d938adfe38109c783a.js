@@ -2516,7 +2516,7 @@
             let _t = "CacheStoreLazy",
                 _A = "CacheStoreChannelsLazy",
                 _T = "CacheStore";
-            (z = U || (U = {})).UPLOAD = "upload", z.GLOBAL_EMOJI = "global-emoji", z.EMOJI_AUTOCOMPLETE = "emoji-autocomplete", z.BADGE = "badge", z.ANIMATED_EMOJI = "animated-emoji", z.ANIMATED_AVATAR = "animated-avatar", z.CUSTOM_PROFILES = "custom-profiles", z.GLOBAL_STICKER = "global-sticker", z.PREMIUM_GUILD_PROFILE = "premium-guild-profile", z.LONGER_MESSAGE = "longer-message", z.GUILD_CAP = "guild-cap", z.ACTIVITIES = "activities", z.APP_ICONS = "app-icons", (q = G || (G = {})).UNKNOWN = "ESKERRORDOMAIN0", q.CLIENT_INVALID = "ESKERRORDOMAIN1", q.PAYMENT_CANCELED = "ESKERRORDOMAIN2", q.PAYMENT_INVALID = "ESKERRORDOMAIN3", q.PAYMENT_NOT_ALLOWED = "ESKERRORDOMAIN4", q.STORE_PRODUCT_NOT_AVAILABLE = "ESKERRORDOMAIN5", q.CLOUD_SERVICE_PERMISSION_DENIED = "ESKERRORDOMAIN6", q.CLOUD_SERVICE_NETWORK_CONNECTION_FAILED = "ESKERRORDOMAIN7", q.CLOUD_SERVICE_REVOKED = "ESKERRORDOMAIN8", q.PRIVACY_ACKNOWLEDGEMENT_REQUIRED = "ESKERRORDOMAIN9", q.UNAUTHORIZED_REQUEST_DATA = "ESKERRORDOMAIN10", q.INVALID_OFFER_IDENTIFIER = "ESKERRORDOMAIN11", q.INVALID_SIGNATURE = "ESKERRORDOMAIN12", q.MISSING_OFFER_PARAMS = "ESKERRORDOMAIN13", q.INVALID_OFFER_PRICE = "ESKERRORDOMAIN14", q.OVERLAY_CANCELLED = "ESKERRORDOMAIN15", q.OVERLAY_INVALID_CONFIGURATION = "ESKERRORDOMAIN16", q.OVERLAY_TIMEOUT = "ESKERRORDOMAIN17", q.INELIGIBLE_FOR_OFFER = "ESKERRORDOMAIN18", q.UNSUPPORTED_PLATFORM = "ESKERRORDOMAIN19", ($ = d || (d = {})).LOGOUT_TIMESTAMP_KEY = "logout_timestamp_key", $.ACKNOWLEDGED_TOOLTIPS_KEY = "acknowledged_tooltips_key", $.KRISP_ONBOARD = "krisp_onboard", $.SCREENSHARE_ONBOARD = "screenshare_onboard", (__ = u || (u = {})).NONE = "none", __.SLIDE_UP = "slide-up", __.SLIDE_IN = "slide-in", __.SLIDE_OUT = "slide-out", __.SLIDE_IN_OUT = "slide-in-out", __.SLIDE_IN_OUT_REVERSE = "slide-in-out-reverse", __.FADE = "fade", Object.freeze({
+            (z = U || (U = {})).UPLOAD = "upload", z.GLOBAL_EMOJI = "global-emoji", z.EMOJI_AUTOCOMPLETE = "emoji-autocomplete", z.BADGE = "badge", z.ANIMATED_EMOJI = "animated-emoji", z.ANIMATED_AVATAR = "animated-avatar", z.CUSTOM_PROFILES = "custom-profiles", z.GLOBAL_STICKER = "global-sticker", z.PREMIUM_GUILD_PROFILE = "premium-guild-profile", z.LONGER_MESSAGE = "longer-message", z.GUILD_CAP = "guild-cap", z.ACTIVITIES = "activities", z.APP_ICONS = "app-icons", z.SOUNDBOARD = "soundboard", (q = G || (G = {})).UNKNOWN = "ESKERRORDOMAIN0", q.CLIENT_INVALID = "ESKERRORDOMAIN1", q.PAYMENT_CANCELED = "ESKERRORDOMAIN2", q.PAYMENT_INVALID = "ESKERRORDOMAIN3", q.PAYMENT_NOT_ALLOWED = "ESKERRORDOMAIN4", q.STORE_PRODUCT_NOT_AVAILABLE = "ESKERRORDOMAIN5", q.CLOUD_SERVICE_PERMISSION_DENIED = "ESKERRORDOMAIN6", q.CLOUD_SERVICE_NETWORK_CONNECTION_FAILED = "ESKERRORDOMAIN7", q.CLOUD_SERVICE_REVOKED = "ESKERRORDOMAIN8", q.PRIVACY_ACKNOWLEDGEMENT_REQUIRED = "ESKERRORDOMAIN9", q.UNAUTHORIZED_REQUEST_DATA = "ESKERRORDOMAIN10", q.INVALID_OFFER_IDENTIFIER = "ESKERRORDOMAIN11", q.INVALID_SIGNATURE = "ESKERRORDOMAIN12", q.MISSING_OFFER_PARAMS = "ESKERRORDOMAIN13", q.INVALID_OFFER_PRICE = "ESKERRORDOMAIN14", q.OVERLAY_CANCELLED = "ESKERRORDOMAIN15", q.OVERLAY_INVALID_CONFIGURATION = "ESKERRORDOMAIN16", q.OVERLAY_TIMEOUT = "ESKERRORDOMAIN17", q.INELIGIBLE_FOR_OFFER = "ESKERRORDOMAIN18", q.UNSUPPORTED_PLATFORM = "ESKERRORDOMAIN19", ($ = d || (d = {})).LOGOUT_TIMESTAMP_KEY = "logout_timestamp_key", $.ACKNOWLEDGED_TOOLTIPS_KEY = "acknowledged_tooltips_key", $.KRISP_ONBOARD = "krisp_onboard", $.SCREENSHARE_ONBOARD = "screenshare_onboard", (__ = u || (u = {})).NONE = "none", __.SLIDE_UP = "slide-up", __.SLIDE_IN = "slide-in", __.SLIDE_OUT = "slide-out", __.SLIDE_IN_OUT = "slide-in-out", __.SLIDE_IN_OUT_REVERSE = "slide-in-out-reverse", __.FADE = "fade", Object.freeze({
                 START: {
                     x: 0,
                     y: 0
@@ -2623,7 +2623,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-59a265cb570f2d761fd2dcc5e57536071435f031",
+                    release: "discord_web-ffb1a11b2a92121a3614f809fc4aa9cc498efa6b",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2641,7 +2641,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "295536", "295536")), I.setTag("builtAt", String("1716403757655"));
+                }), I.setTag("buildNumber", (_ = "295694", "295694")), I.setTag("builtAt", String("1716418482919"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -14206,4 +14206,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.683aa3be641c939af8e5.js.map
+//# sourceMappingURL=84471.81d938adfe38109c783a.js.map
