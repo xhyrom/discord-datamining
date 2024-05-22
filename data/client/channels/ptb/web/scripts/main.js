@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295628", ", Version Hash: ").concat("ed0159705d1600518b75e2acec857a1da06c2fca")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295634", ", Version Hash: ").concat("e5ff5e719d897460930dc2894a134623a36dc1a5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88495,8 +88495,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295628", "295628"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295628")), t = 0), t
+                let t = parseInt((e = "295634", "295634"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295634")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107950,6 +107950,34 @@
                 return e === t || e === r.ThemeTypes.DARK && t === r.ThemeTypes.DARKER || e === r.ThemeTypes.DARKER && t === r.ThemeTypes.DARK || !1
             }
         },
+        629935: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getThemeColorMixValues: function() {
+                    return s
+                }
+            }), n("47120");
+            var i = n("688619"),
+                r = n.n(i);
+
+            function s(e) {
+                let {
+                    enabled: t,
+                    primaryColor: n,
+                    secondaryColor: i,
+                    isDarkTheme: s,
+                    baseMixAmount: a = 30,
+                    textMixAmount: o = 40
+                } = e, l = r()(n), u = r()(i), [d, _] = l.luminance() > u.luminance() ? [l, u] : [u, l], c = s ? d.set("lch.l", 98).set("lch.c", 15) : _.set("lch.l", 10), E = s ? _.set("hsl.s", 1).set("hsl.l", .05) : d.set("hsl.s", 1).set("hsl.l", .95), [I, T, f] = E.hsl();
+                return {
+                    "--custom-theme-mix-base-hsl": "".concat(Number.isNaN(I) ? 0 : I, " ").concat(100 * T, "% ").concat(100 * f, "%"),
+                    "--custom-theme-mix-base": E.css(),
+                    "--custom-theme-mix-text": c.css(),
+                    "--custom-theme-mix-amount-base": "".concat(t ? a : 0, "%"),
+                    "--custom-theme-mix-amount-text": "".concat(t ? o : 0, "%")
+                }
+            }
+        },
         798728: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -107998,45 +108026,52 @@
             "use strict";
             n.r(t), n.d(t, {
                 CLIENT_THEMES_DATA_ATTRIBUTE: function() {
-                    return _
+                    return d
                 },
                 CUSTOM_THEME_BACKGROUND_CLASS_NAME: function() {
-                    return c
+                    return _
                 }
             }), n("47120");
             var i = n("470079"),
-                r = n("688619"),
-                s = n.n(r),
-                a = n("691324"),
-                o = n("442837"),
-                l = n("780384"),
-                u = n("813852"),
-                d = n("514361");
-            let _ = "data-client-themes",
-                c = "custom-theme-background",
-                E = () => {
-                    let e = (0, o.useStateFromStores)([d.default], () => d.default.gradientPreset),
+                r = n("691324"),
+                s = n("442837"),
+                a = n("780384"),
+                o = n("813852"),
+                l = n("514361"),
+                u = n("629935");
+            let d = "data-client-themes",
+                _ = "custom-theme-background",
+                c = () => {
+                    let e = (0, s.useStateFromStores)([l.default], () => l.default.gradientPreset),
                         {
                             enabled: t
-                        } = u.ColorMixDesktopClientThemesExperiment.useExperiment({
+                        } = o.ColorMixDesktopClientThemesExperiment.useExperiment({
                             location: "useBackgroundGradientCSS"
                         });
                     return (0, i.useMemo)(() => {
                         if (null == e) return null;
-                        let n = d.default.getLinearGradient();
+                        let n = l.default.getLinearGradient();
                         if (null == n) return null;
-                        let [i, r] = [...e.colors].sort((e, t) => t.stop - e.stop).slice(0, 2).map(e => s()(a.ColorDetails[e.token].hex)), [o, u] = i.luminance() > r.luminance() ? [i, r] : [r, i], _ = (0, l.isThemeLight)(e.theme) ? u.set("lch.l", 10) : o.set("lch.l", 98).set("lch.c", 15), E = (0, l.isThemeLight)(e.theme) ? o.set("hsl.s", 1).set("hsl.l", .95) : u.set("hsl.s", 1).set("hsl.l", .05), [I, T, f] = E.hsl(), S = t ? "\n      --custom-theme-mix-base-hsl: ".concat(Number.isNaN(I) ? 0 : I, " ").concat(100 * T, "% ").concat(100 * f, "%;\n      --custom-theme-mix-base: ").concat(E.css(), ";\n      --custom-theme-mix-text: ").concat(_.css(), ";\n      --custom-theme-mix-amount-base: ").concat(t ? 30 : 0, "%;\n      --custom-theme-mix-amount-text: ").concat(t ? 40 : 0, "%;\n    ") : "";
-                        return ".".concat(c, " {\n      --custom-theme-background: ").concat(n, ";\n      ").concat(S, "\n    }")
+                        let [i, s] = [...e.colors].sort((e, t) => t.stop - e.stop).slice(0, 2).map(e => r.ColorDetails[e.token].hex), o = (0, u.getThemeColorMixValues)({
+                            enabled: t,
+                            primaryColor: i,
+                            secondaryColor: s,
+                            isDarkTheme: (0, a.isThemeDark)(e.theme)
+                        }), d = t ? "\n      ".concat(Object.entries(o).map(e => {
+                            let [t, n] = e;
+                            return "".concat(t, ": ").concat(n, ";")
+                        }).join("\n"), "\n    ") : "";
+                        return ".".concat(_, " {\n      --custom-theme-background: ").concat(n, ";\n      ").concat(d, "\n    }")
                     }, [t, e])
                 };
             t.default = () => {
-                let e = E();
+                let e = c();
                 return null === e ? {
                     clientThemesCSS: "",
                     clientThemesClassName: ""
                 } : {
                     clientThemesCSS: e,
-                    clientThemesClassName: c
+                    clientThemesClassName: _
                 }
             }
         },
@@ -116360,8 +116395,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295628",
-                    versionHash: "ed0159705d1600518b75e2acec857a1da06c2fca"
+                    buildNumber: "295634",
+                    versionHash: "e5ff5e719d897460930dc2894a134623a36dc1a5"
                 }
             }
             n.r(t), n.d(t, {
@@ -173400,8 +173435,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716413614451",
-                                    build_number: "295628"
+                                    built_at: "1716414316619",
+                                    build_number: "295634"
                                 }
                             },
                             retries: 1
@@ -217542,7 +217577,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return T
                 }
             }), n("47120");
             var i = n("470079"),
@@ -217550,11 +217585,13 @@
                 s = n.n(r),
                 a = n("866442"),
                 o = n("442837"),
-                l = n("607070"),
-                u = n("168551"),
-                d = n("792125"),
-                _ = n("168631");
-            let c = Object.freeze({
+                l = n("780384"),
+                u = n("607070"),
+                d = n("629935"),
+                _ = n("168551"),
+                c = n("792125"),
+                E = n("168631");
+            let I = Object.freeze({
                 "--profile-gradient-primary-color": "var(--background-secondary-alt)",
                 "--profile-gradient-secondary-color": "var(--background-secondary-alt)",
                 "--profile-gradient-overlay-color": "rgba(0, 0, 0, 0)",
@@ -217570,34 +217607,41 @@
                 "--profile-role-pill-border-color": "var(--interactive-normal)"
             });
 
-            function E(e) {
+            function T(e) {
                 let {
                     theme: t,
                     primaryColor: n,
                     secondaryColor: r
-                } = e, [E, I] = (0, o.useStateFromStoresArray)([l.default], () => [l.default.desaturateUserColors, l.default.syncProfileThemeWithUserTheme]), T = (0, _.useProfileThemeValues)(t), f = (0, _.useAvatarBorderColor)(t, n, I), S = (0, _.useDividerColor)(t, n), h = (0, _.useMessageInputBorderColor)(t, r), A = I ? null == T ? void 0 : T.overlaySyncedWithUserTheme : null == T ? void 0 : T.overlay;
+                } = e, [T, f] = (0, o.useStateFromStoresArray)([u.default], () => [u.default.desaturateUserColors, u.default.syncProfileThemeWithUserTheme]), S = (0, E.useProfileThemeValues)(t), h = (0, E.useAvatarBorderColor)(t, n, f), A = (0, E.useDividerColor)(t, n), m = (0, E.useMessageInputBorderColor)(t, r), N = f ? null == S ? void 0 : S.overlaySyncedWithUserTheme : null == S ? void 0 : S.overlay;
                 return {
                     profileThemeStyle: (0, i.useMemo)(() => {
-                        if (null == n || null == r || null == T || null == f || null == S || null == h || null == A) return c;
-                        let e = (e, t) => (0, a.int2hsl)(e, E, null, t);
+                        if (null == n || null == r || null == S || null == h || null == A || null == m || null == N) return I;
+                        let e = (e, t) => (0, a.int2hsl)(e, T, null, t);
                         return {
                             "--profile-gradient-primary-color": e(n),
                             "--profile-gradient-secondary-color": e(r),
-                            "--profile-gradient-overlay-color": A,
-                            "--profile-gradient-button-color": e((0, _.calculateButtonColor)(n)),
-                            "--profile-avatar-border-color": e(f),
-                            "--profile-body-background-color": T.sectionBox,
-                            "--profile-body-background-hover": T.profileBodyBackgroundHover,
-                            "--profile-body-divider-color": e(S, T.dividerOpacity),
-                            "--profile-body-border-color": e(S, .12),
-                            "--profile-message-input-border-color": e(h),
-                            "--profile-note-background-color": T.noteBackgroundColor,
-                            "--profile-role-pill-background-color": T.rolePillBackgroundColor,
-                            "--profile-role-pill-border-color": T.rolePillBorderColor
+                            "--profile-gradient-overlay-color": N,
+                            "--profile-gradient-button-color": e((0, E.calculateButtonColor)(n)),
+                            "--profile-avatar-border-color": e(h),
+                            "--profile-body-background-color": S.sectionBox,
+                            "--profile-body-background-hover": S.profileBodyBackgroundHover,
+                            "--profile-body-divider-color": e(A, S.dividerOpacity),
+                            "--profile-body-border-color": e(A, .12),
+                            "--profile-message-input-border-color": e(m),
+                            "--profile-note-background-color": S.noteBackgroundColor,
+                            "--profile-role-pill-background-color": S.rolePillBackgroundColor,
+                            "--profile-role-pill-border-color": S.rolePillBorderColor,
+                            ...(0, d.getThemeColorMixValues)({
+                                enabled: !0,
+                                primaryColor: n,
+                                secondaryColor: r,
+                                isDarkTheme: (0, l.isThemeDark)(t),
+                                textMixAmount: 70
+                            })
                         }
-                    }, [n, r, f, E, S, h, A, T]),
-                    profileThemeClassName: s()((0, d.getThemeClass)(t), {
-                        [u.CUSTOM_THEME_BACKGROUND_CLASS_NAME]: null != n,
+                    }, [n, r, S, h, A, m, N, t, T]),
+                    profileThemeClassName: s()((0, c.getThemeClass)(t), {
+                        [_.CUSTOM_THEME_BACKGROUND_CLASS_NAME]: null != n,
                         "custom-profile-theme": null != n
                     })
                 }
@@ -250345,7 +250389,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ed0159705d1600518b75e2acec857a1da06c2fca"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e5ff5e719d897460930dc2894a134623a36dc1a5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279457,7 +279501,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295628"
+                                build_number: "295634"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286815,7 +286859,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295628", "295628"), 10);
+                let s = parseInt((n = "295634", "295634"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314523,4 +314567,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.693435c17936efd303ef.js.map
+//# sourceMappingURL=71586.a3bcf050e5c6273bd473.js.map
