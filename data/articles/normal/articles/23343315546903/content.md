@@ -10,27 +10,29 @@
 <p><span id="docs-internal-guid-7a3dc71e-7fff-559e-65a3-7afcfb289e49">This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this</span><a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a></p>
 <p id="docs-internal-guid-d4b9776c-7fff-9043-d23f-c32e2947eaff"><strong>Requirements:</strong> Claim through an email from the Epic Games Store by <strong>June 13, 2024 (11:00am EDT) </strong>and redeem in your Discord account by <strong>July 13, 2024</strong> <strong>(11:59pm EDT)</strong>.</p>
 <p><strong>Membership:</strong> After the 1 month trial period, your Nitro membership will convert to a monthly recurring membership, and Discord will bill your payment method for per month until you cancel it. You can cancel at any time in your Discord <strong>User Settings</strong>.</p>
-<p id="docs-internal-guid-077d3689-7fff-b880-c881-08d95067686f"><span class="wysiwyg-font-size-large"><strong>What does this article cover?</strong></span></p>
+<p id="docs-internal-guid-077d3689-7fff-b880-c881-08d95067686f"><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
 <ul>
-    <li>What is Discord Nitro?</li>
-    <li>What is the Epic Games Store?</li>
-    <li>How do I claim the Nitro Promo from my Epic Games Store account?  </li>
-    <li>How do I redeem the Nitro Trial on my Discord Account? 
+    <li><a href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-b7b1f97d-7fff-0b40-85d6-8cc7e551c972">What is Discord Nitro?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-600d0144-7fff-1a92-4266-b4aa34d9a41f">How do I claim the Nitro Promo from my Epic Games Store account?  </a></li>
+    <li>
+        <a href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK89AVWECCVXYN70RWCWK11">How do I redeem the Nitro Trial on my Discord Account? </a>
         <ul>
-            <li>Eligibility for Redeeming the Nitro Trial</li>
-            <li>Step by Step Redeem Instructions
+            <li><a href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8AEVB7MFACJM5050A3Y0N">Eligibility for Redeeming the Nitro Trial</a></li>
+            <li>
+                <a href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-afad558d-7fff-1591-42ea-dbbae25875f2">Step by Step Redeem Instructions</a>
                 <ul>
-                    <li>What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Member? </li>
+                    <li><a href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-58fe5f45-7fff-c68f-9d6d-df19e8118239">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Member? </a></li>
                 </ul>
             </li>
         </ul>
     </li>
-    <li>Frequently Asked Questions
+    <li>
+        <a href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-e79850ba-7fff-4e66-ef9d-aa1e34918ef7">Frequently Asked Questions</a>
         <ul>
-            <li>Promotion Details</li>
-            <li>Eligibility for the Promotion</li>
-            <li>Payment Info and Subscription Questions</li>
-            <li>Potential Errors and Other Issues</li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8MQ6KRZS1211XNZFVJB6R">Promotion Details</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8MQ6KZ1D4JP6ZVHXMNTK3">Eligibility for the Promotion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8P5FYQRNMMBHH15Y3CAM0">Payment Info and Subscription Questions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8Y7F9NSPP5ZXHXD9R32D4">Potential Errors and Other Issues</a></li>
         </ul>
     </li>
 </ul>
