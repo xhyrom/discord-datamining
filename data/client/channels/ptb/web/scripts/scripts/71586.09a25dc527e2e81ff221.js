@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295506", ", Version Hash: ").concat("0f043a3003d5115eb7d0b2f0cf0ca03b35abc2e8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295520", ", Version Hash: ").concat("f77c66c081e923a04aa6e9842e3ccbfc981d0772")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88495,8 +88495,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295506", "295506"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295506")), t = 0), t
+                let t = parseInt((e = "295520", "295520"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295520")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116360,8 +116360,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295506",
-                    versionHash: "0f043a3003d5115eb7d0b2f0cf0ca03b35abc2e8"
+                    buildNumber: "295520",
+                    versionHash: "f77c66c081e923a04aa6e9842e3ccbfc981d0772"
                 }
             }
             n.r(t), n.d(t, {
@@ -173400,8 +173400,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716400817904",
-                                    build_number: "295506"
+                                    built_at: "1716402308172",
+                                    build_number: "295520"
                                 }
                             },
                             retries: 1
@@ -212682,7 +212682,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileCustomStatusBubble: function() {
-                    return f
+                    return T
                 }
             }), n("47120");
             var i = n("735250"),
@@ -212694,140 +212694,114 @@
                 u = n("846519"),
                 d = n("481060"),
                 _ = n("788307"),
-                c = n("393903"),
-                E = n("607070"),
-                I = n("228168"),
-                T = n("660762");
+                c = n("607070"),
+                E = n("228168"),
+                I = n("660762");
 
-            function f(e) {
+            function T(e) {
                 let {
                     statusActivity: t,
                     profileType: n,
-                    transitionState: s,
-                    animate: f = !0
-                } = e, S = (0, l.useStateFromStores)([E.default], () => E.default.useReducedMotion), [h, A] = r.useState(1), [m, N] = r.useState(!0), [p] = r.useState(() => new u.Timeout), O = r.useRef(null), C = r.useRef(null), R = r.useRef(null), g = r.useRef(null), {
+                    hasEntered: s = !0,
+                    animate: T = !0
+                } = e, f = (0, l.useStateFromStores)([c.default], () => c.default.useReducedMotion), [S, h] = r.useState(!1), [A, m] = r.useState(!0), [N] = r.useState(() => new u.Timeout), p = r.useRef(null), O = r.useRef(null), C = r.useRef(null), R = r.useRef(null), g = r.useRef(null), {
                     emoji: L
-                } = null != t ? t : {}, v = null != L, D = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, M = null != D && D.length > 0, y = v || M, P = r.useCallback(() => {
-                    var e;
-                    if (null == U.current || n === I.UserProfileTypes.FULL_SIZE) return;
-                    let t = U.current.getBoundingClientRect(),
-                        i = parseFloat(null !== (e = window.getComputedStyle(U.current).getPropertyValue("line-height")) && void 0 !== e ? e : "0"),
-                        r = t.height;
-                    i > 0 && r > 0 && A(Math.floor(r / i))
-                }, [n]), U = (0, c.useResizeObserver)(P);
+                } = null != t ? t : {}, v = null != L, D = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, M = null != D && D.length > 0, y = v || M;
                 r.useLayoutEffect(() => {
-                    (n !== I.UserProfileTypes.FULL_SIZE || s === d.ModalTransitionState.ENTERED) && (! function() {
-                        if (null != O.current && null == C.current) {
-                            let e = O.current.getBoundingClientRect();
-                            C.current = e.height
-                        }
-                        if (null != R.current && null == g.current) {
-                            let e = R.current.getBoundingClientRect();
-                            g.current = e.height
-                        }
-                    }(), P())
-                }, [U, P, p, n, s]);
-                let [b, G] = (0, o.useSpring)(() => ({
+                    if (null == g.current) return;
+                    let e = Math.floor(g.current.getBoundingClientRect().height);
+                    if (h(v && !M || e <= 18), s) {
+                        var t, n, i, r;
+                        O.current = null !== (i = null === (t = p.current) || void 0 === t ? void 0 : t.getBoundingClientRect().height) && void 0 !== i ? i : 144, R.current = null !== (r = null === (n = C.current) || void 0 === n ? void 0 : n.getBoundingClientRect().height) && void 0 !== r ? r : 36
+                    }
+                }, [s, v, M]);
+                let [P, U] = (0, o.useSpring)(() => ({
                     maxHeight: "".concat(36, "px"),
                     config: {
                         clamp: !0,
-                        immediate: S,
+                        immediate: f,
                         duration: 150
                     }
-                })), w = e => {
-                    var t, n;
-                    e ? G({
-                        maxHeight: "".concat(Math.min(null !== (t = C.current) && void 0 !== t ? t : 144, 144), "px"),
-                        delay: 300
-                    }) : G({
-                        maxHeight: "".concat(Math.min(null !== (n = g.current) && void 0 !== n ? n : 36, 36), "px"),
-                        delay: 0
-                    });
-                    p.start(e ? 300 : 150, () => {
-                        N(!e)
-                    })
-                };
-                if (r.useEffect(() => () => p.stop(), [p]), !y) return null;
-                let k = () => v ? (0, i.jsx)(_.ActivityEmoji, {
-                        className: M ? T.statusEmojiInline : T.statusEmojiOnly,
+                }));
+                if (r.useEffect(() => () => N.stop(), [N]), !y) return null;
+                let b = e => {
+                        var t, n;
+                        e ? U({
+                            maxHeight: "".concat(Math.min(null !== (t = O.current) && void 0 !== t ? t : 144, 144), "px"),
+                            delay: 300
+                        }) : U({
+                            maxHeight: "".concat(Math.min(null !== (n = R.current) && void 0 !== n ? n : 36, 36), "px"),
+                            delay: 0
+                        });
+                        N.start(e ? 300 : 150, () => {
+                            m(!e)
+                        })
+                    },
+                    G = () => v ? (0, i.jsx)(_.ActivityEmoji, {
+                        className: M ? I.statusEmojiInline : I.statusEmojiOnly,
                         emoji: L,
-                        animate: f,
+                        animate: T,
                         hideTooltip: !1,
-                        tooltipDelay: I.USER_PROFILE_TOOLTIP_DELAY
+                        tooltipDelay: E.USER_PROFILE_TOOLTIP_DELAY
                     }) : null,
-                    B = () => M ? (0, i.jsx)(d.Text, {
+                    w = () => M ? (0, i.jsx)(d.Text, {
                         variant: "text-sm/medium",
-                        className: T.statusText,
+                        className: I.statusText,
                         children: D
                     }) : null,
-                    V = n === I.UserProfileTypes.BITE_SIZE ? T.biteSize : T.fullSize,
-                    x = a()(T.statusBubbleOuter, {
-                        [T.statusBubbleShape]: h <= 1 && !M && v || h > 1,
-                        [T.statusBubbleSingleLineWithTextShape]: 1 === h && M,
-                        [T.biteSize]: n === I.UserProfileTypes.BITE_SIZE,
-                        [T.fullSize]: n === I.UserProfileTypes.FULL_SIZE
+                    k = n === E.UserProfileTypes.BITE_SIZE ? I.biteSize : I.fullSize,
+                    B = a()(I.statusBubbleOuter, k, {
+                        [I.statusBubbleShape]: S && !M && v || !S,
+                        [I.statusBubbleSingleLineWithTextShape]: S && M
                     }),
-                    F = a()(T.statusBubble, {
-                        [T.statusBubbleShape]: h <= 1 && !M && v || h > 1,
-                        [T.statusBubbleSingleLineWithTextShape]: h <= 1 && M,
-                        [T.statusBubbleEmojiOnlyPadding]: v && !M,
-                        [T.statusBubbleWithTextPadding]: M,
-                        [T.statusBubbleWithTextMinWidth]: M,
-                        [T.statusBubbleCopyStatusCursor]: y
+                    V = a()(I.statusBubble, {
+                        [I.statusBubbleShape]: S && !M && v || !S,
+                        [I.statusBubbleSingleLineWithTextShape]: S && M,
+                        [I.statusBubbleEmojiOnlyPadding]: v && !M,
+                        [I.statusBubbleWithTextPadding]: M,
+                        [I.statusBubbleWithTextMinWidth]: M,
+                        [I.statusBubbleCopyStatusCursor]: y
                     });
                 return (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
-                        className: a()(T.invisibleContainer, V),
+                        className: a()(I.invisibleContainer, k),
                         children: (0, i.jsx)("div", {
-                            className: x,
+                            className: B,
                             children: (0, i.jsxs)("span", {
-                                className: F,
-                                children: [(() => {
-                                    let e = a()(T.content, T.clamp, T.placeholderWidth, {
-                                        [T.biteSize]: n === I.UserProfileTypes.BITE_SIZE,
-                                        [T.fullSize]: n === I.UserProfileTypes.FULL_SIZE
-                                    });
-                                    return (0, i.jsxs)("div", {
-                                        className: e,
-                                        ref: R,
-                                        children: [k(), B()]
-                                    })
-                                })(), (() => {
-                                    let e = a()(T.content, T.unclamp, T.placeholderWidth, T.incorporeal, {
-                                        [T.biteSize]: n === I.UserProfileTypes.BITE_SIZE,
-                                        [T.fullSize]: n === I.UserProfileTypes.FULL_SIZE
-                                    });
-                                    return (0, i.jsxs)("div", {
-                                        className: e,
-                                        ref: O,
-                                        children: [k(), B()]
-                                    })
-                                })()]
+                                className: V,
+                                children: [(0, i.jsxs)("div", {
+                                    className: a()(I.content, I.clamp, I.placeholderWidth, k),
+                                    ref: C,
+                                    children: [G(), w()]
+                                }), (0, i.jsxs)("div", {
+                                    className: a()(I.content, I.unclamp, I.placeholderWidth, I.incorporeal, k),
+                                    ref: p,
+                                    children: [G(), w()]
+                                })]
                             })
                         })
                     }), (0, i.jsx)("div", {
-                        className: a()(T.visibleContainer, V),
+                        className: a()(I.visibleContainer, k),
                         children: (0, i.jsx)("div", {
                             tabIndex: 0,
-                            className: x,
-                            onFocus: () => w(!0),
-                            onBlur: () => w(!1),
-                            onMouseEnter: () => w(!0),
-                            onMouseLeave: () => w(!1),
+                            className: B,
+                            onFocus: () => b(!0),
+                            onBlur: () => b(!1),
+                            onMouseEnter: () => b(!0),
+                            onMouseLeave: () => b(!1),
                             children: (0, i.jsx)("span", {
-                                className: F,
+                                className: V,
                                 children: (() => {
-                                    let e = a()(T.content, {
-                                        [T.clamp]: m,
-                                        [T.unclamp]: !m
+                                    let e = a()(I.content, {
+                                        [I.clamp]: A,
+                                        [I.unclamp]: !A,
+                                        [I.singleLineAlign]: S
                                     });
-                                    return (0, i.jsx)(o.animated.div, {
-                                        style: b,
-                                        className: a()(T.content, e),
-                                        children: (0, i.jsxs)("div", {
-                                            ref: U,
-                                            children: [k(), B()]
-                                        })
+                                    return (0, i.jsxs)(o.animated.div, {
+                                        style: P,
+                                        className: e,
+                                        ref: g,
+                                        children: [G(), w()]
                                     })
                                 })()
                             })
@@ -250370,7 +250344,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0f043a3003d5115eb7d0b2f0cf0ca03b35abc2e8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f77c66c081e923a04aa6e9842e3ccbfc981d0772"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279482,7 +279456,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295506"
+                                build_number: "295520"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286840,7 +286814,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295506", "295506"), 10);
+                let s = parseInt((n = "295520", "295520"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314548,4 +314522,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.d815d883020b383c2091.js.map
+//# sourceMappingURL=71586.09a25dc527e2e81ff221.js.map
