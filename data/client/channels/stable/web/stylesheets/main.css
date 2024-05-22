@@ -53299,6 +53299,10 @@ div:has(>div>.modal__06f49) {
     border-top-color: #4b1840
 }
 
+.text_c23d21 {
+    color: var(--white-500)
+}
+
 .container_ebee1d {
     padding: 8px 16px;
     background-color: var(--brand-500);
@@ -101574,8 +101578,14 @@ div:has(>div>.container__8ab05) {
 
 .clanContainer__451f0 {
     display: flex;
-    flex-direction: column;
-    gap: 40px
+    flex-direction: column
+}
+
+.applyButtonContainer__8dd0c {
+    margin-top: 40px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column
 }
 
 .verificationForm__7b4bb {
@@ -141901,4 +141911,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1bfaa2e7a6403a9c5b95.css.map*/
+/*# sourceMappingURL=99387.a64bff049ecf4a2803a8.css.map*/
