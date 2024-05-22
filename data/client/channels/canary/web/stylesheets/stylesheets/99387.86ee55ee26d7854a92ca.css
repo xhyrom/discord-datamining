@@ -20657,8 +20657,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     overflow: hidden;
     color: var(--text-normal);
     word-wrap: break-word;
-    word-break: break-word;
-    line-height: 16px
+    word-break: break-word
 }
 
 .clamp__79a59 {
@@ -20681,15 +20680,21 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     position: absolute
 }
 
+.singleLineAlign__355e0 {
+    text-align: center
+}
+
 .statusText__32d26 {
     display: inline;
-    color: var(--text-normal)
+    color: var(--text-normal);
+    line-height: 18px
 }
 
 .statusEmojiInline__099a8 {
     display: inline;
     height: 16px;
     width: 16px;
+    line-height: 18px;
     margin-right: 4px
 }
 
@@ -44826,6 +44831,12 @@ img.thumbnail__18ece {
     display: flex;
     justify-content: space-between;
     align-items: center
+}
+
+.searchFilterCount_e1a1c9 {
+    color: var(--brand-360);
+    font-size: 14px;
+    font-weight: 500
 }
 
 .role__9f030 {
@@ -95649,7 +95660,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .viewAllGamesButton__34838 {
@@ -95669,7 +95680,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -95726,7 +95737,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .headerBar__3337a {
@@ -142211,4 +142222,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8f801a51a16d05cbbeec.css.map*/
+/*# sourceMappingURL=99387.86ee55ee26d7854a92ca.css.map*/
