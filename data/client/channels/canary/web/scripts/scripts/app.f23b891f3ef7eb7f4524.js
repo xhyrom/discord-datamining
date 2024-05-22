@@ -15699,6 +15699,7 @@
                 avatar: "avatar__93ab6",
                 avatarContainer: "avatarContainer_aea862",
                 avatarWrapper: "avatarWrapper__860da",
+                gradientContainer: "gradientContainer_bdcbea",
                 groupContainer: "groupContainer__39e48",
                 overflowCount: "overflowCount__630c2"
             }
@@ -15758,11 +15759,11 @@
                 ellipsis: "ellipsis_d32cd5",
                 fadeIn: "fadeIn__485ae",
                 gameIcon: "gameIcon__4a06f",
-                groupAvatar: "groupAvatar__4cf21",
                 image: "image__75373",
                 imageIcon: "imageIcon_fdf820",
                 inline: "inline__51026",
                 joinButton: "joinButton__081d8",
+                joinButtonInner: "joinButtonInner__6554f",
                 joinButtonWhatWrapper: "joinButtonWhatWrapper_fa34bc",
                 joinButtonWhoWrapper: "joinButtonWhoWrapper__15fe3",
                 liveBadge: "liveBadge__4290f",
@@ -15772,6 +15773,7 @@
                 pillIcon: "pillIcon__62bae",
                 singleLineTitle: "singleLineTitle_f21580",
                 streamContainer: "streamContainer_a26d75",
+                streamPlaceholder: "streamPlaceholder_b6c795",
                 streamPreview: "streamPreview__38008",
                 subtitle: "subtitle__8eb80"
             }
@@ -18171,6 +18173,29 @@
                 userDetails: "userDetails_e976f3",
                 username: "username__20f97",
                 usernameSection: "usernameSection_e14676"
+            }
+        },
+        476002: function(e) {
+            "use strict";
+            e.exports = {
+                description: "description__3eff0",
+                divider: "divider__7d1fe",
+                expiringStatusIcon: "expiringStatusIcon__0be5b",
+                expiringStatusMenuItem: "expiringStatusMenuItem_a1ee8a",
+                focusModeIcon: "focusModeIcon__50b8d",
+                focusModeItem: "focusModeItem__5fea8",
+                focusModeTitle: "focusModeTitle__88827",
+                icon: "icon__4a883",
+                mainStatusIcon: "mainStatusIcon__00da2",
+                menu: "menu__0d1e0",
+                menuItemFocused: "menuItemFocused_b90fd4",
+                modal: "modal__2b3ac",
+                popoutContainer: "popoutContainer_a5587a",
+                status: "status__1b7d0",
+                statusItem: "statusItem_e3c3f5",
+                statusPickerModalMenu: "statusPickerModalMenu_ba9252",
+                subMenuIcon: "subMenuIcon__83a81",
+                themeContainer: "themeContainer_fb8696"
             }
         },
         717187: function(e) {
