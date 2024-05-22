@@ -1,23 +1,16 @@
-<p>Hello there! If you’ve found your way to this Help Center article, you’ve likely gained access to our latest mobile updates, including a new mobile layout. If you’ve been using Discord for a while now, you probably noticed the mobile app was designed to reflect the desktop app. With this new iteration of Discord on mobile, we hope to make the mobile experience feel like it was optimized for your mobile device rather than a scaled-down desktop app. The new mobile design aims to simplify and improve the Discord experience for everyone by creating a more organized, streamlined, and better-looking mobile app that helps you get to your chats quickly and easily. </p>
+<p>Hello there! If you’ve been using Discord for a while now, you probably noticed the mobile app was designed to reflect the desktop app. With this new iteration of Discord on mobile, we hope to make the mobile experience feel like it was optimized for your mobile device rather than a scaled-down desktop app. The new mobile design aims to simplify and improve the Discord experience for everyone by creating a more organized, streamlined, and better-looking mobile app that helps you get to your chats quickly and easily. </p>
 <p>We’re actively gathering feedback as we release this change to ensure that we continue to provide the best experience on Discord. For those of you who have already experienced previous iterations of our mobile app, thank you for all the thoughtful feedback you've shared with us so far! We've been paying great attention to it and it's helping us continue to make improvements. If you’re new to this version of the app, be sure to explore the new mobile experience and all that it has to offer. If something doesn’t work for you, please let us know so we can continue to improve! </p>
 <p>This Help Center article will explain the core updates to the mobile app and how you can provide feedback and thoughts on what does or doesn’t work for you.</p>
-<p><strong>What this article covers:</strong></p>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
+    <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HYBH4PEAPZ5KFDN9WQ2RK8A2">Home Tab for your Messages and Servers</a></li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05GZ2S6W6NQA7X7VNC">Servers Tab</a>
-        <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05R0HBJG22X8Y3VE06">Favorite Channels</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05ZBG9VSZFVCA9DVKN">Search </a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05W0PDK97A88W54BP3">Channel Details Page</a></li>
-        </ul>
-    </li>
-    <li>
-        <a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05XB15GC8A4SPX8NN5">Messages Tab</a>
+        <a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05XB15GC8A4SPX8NN5">Messages Icon</a>
         <ul>
             <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05TJX3KKTSR0C8H01Y">Active Now</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05XVFMDBHP1QFE6X1R">Favorite DM and GDMs</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ0596JQRGBTANXPFWND">DM and GDM Details Page</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ053N68DA8J9D1AK243">DM and GDM Creation</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05XVFMDBHP1QFE6X1R">Favorite DMs and Group Chats</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ0596JQRGBTANXPFWND">DM and Group Chat Details Page</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ053N68DA8J9D1AK243">DM and Group Chat Creation</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ057HP49SP0SQ1HX475">Add Friends</a></li>
         </ul>
     </li>
@@ -31,7 +24,7 @@
     </li>
     <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05FDBEA08M5XF79M0G">Voice &amp; Video Calls</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ056CJ4W605NMYQPBEF">Swipe to Reply</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05RX97Q70R14K66AFJ">Accessing Channel or G/DM Details</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05RX97Q70R14K66AFJ">Accessing Channel, DM, or Group Chat Details</a></li>
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ05J94YCT9SPXCHPADS">New Customization Options</a>
         <ul>
@@ -42,73 +35,62 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ06Y6X6YWKQ8ZR8GDNJ">How to Provide Feedback</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/12654190110999#h_01HFW7WQ065PAK4977W6F4MHNK">Frequently Asked Questions</a></li>
 </ul>
-<h1 id="h_01HFW7WQ05SMSWC2ZQA27TXV28">What’s Changed? </h1>
-<h1 id="h_01HFW7WQ05GZ2S6W6NQA7X7VNC">Servers Tab</h1>
-<p>In the new mobile layout, your servers are in their own dedicated <strong>Servers</strong> tab, located at the bottom-left corner of the app. Once you open the <strong>Servers</strong> tab, you’ll see all of your servers on the left of the screen. Tapping on a server will open it within the <strong>Servers</strong> tab and allow you to scroll through and open that server’s channels.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262490134423" width="196" height="425"></p>
-<h2 id="h_01HFW7WQ05R0HBJG22X8Y3VE06">Favorite Channels</h2>
-<p>You can favorite channels within a server so that they stay pinned to the top of the server on your app.</p>
-<p>1. To favorite a channel within a server, navigate to the server where you want to favorite a channel </p>
-<p>2. Tap and hold the channel name </p>
-<p>3. Select <strong>Favorite</strong>. You will then see the channel move from its current location to the top of the server in the <strong>Favorites</strong> category. This does not affect the location of the channel within the server for other members. </p>
-<p>If you want to see one of your favorited channels return to its set location within the server, you can repeat the same process and select <strong>Unfavorite</strong> to remove the channel from your favorites for that server.</p>
-<h2 id="h_01HFW7WQ05ZBG9VSZFVCA9DVKN">Search</h2>
-<p id="h_01HFW7WQ05QD0D3QR91KFMT36R" class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19262490140567" width="237" height="514"></span></p>
-<p>You can search through all of the messages and content shared within a server by using the search bar. </p>
-<p>From here, you can search messages across the entire server and limit the results to just channels, shared media, Pins, Links, and Files using the filters under the search bar. You can also see more detailed filters by tapping the button to the right of the search bar.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262490145047" width="256" height="554"></p>
-<h2 id="h_01HFW7WQ05W0PDK97A88W54BP3">Channel Details Page</h2>
-<p id="h_01HFW7WQ05ZXMC2KGE2QFTB18N" class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19262490149527" width="225" height="486"></span></p>
-<p>When viewing a channel, tap the name of the channel at the top of the screen to open the channel details page. From this page, you can search for messages sent in that channel, see its members and their statuses, and filter for the media, GIFs, files, and links shared in that channel. You could use this page to find a specific photo that you sent in the channel but don’t remember when you sent it. </p>
-<p>By selecting the <strong>Media</strong> filter, you can browse all of the images and videos sent in that channel quickly without having to scroll through the whole chat history. Note that you will only be able to see images or videos shared in spaces that you can access within a server. Swipe down to dismiss the page when you’re done.</p>
-<h1 id="h_01HFW7WQ05XB15GC8A4SPX8NN5">Messages Tab</h1>
-<p>Your Direct Messages (DMs) and Group DMs (GDMs) are now located in a dedicated <strong>Messages</strong> tab in the app. You can now search across all of your DMs and GDMs to find the chat you’re looking for using the search bar at the top of the screen.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506453527" width="245.55525869693395" height="533"></p>
+<h1 id="h_01HYBH4PEAPZ5KFDN9WQ2RK8A2"><strong><span style="color: #2e3338;">Home Tab for your Messages and Servers</span></strong></h1>
+<p>The <strong>Home</strong> <strong>tab</strong>, located in the bottom-left corner of the app, is where you can find all your servers and access your Direct Messages (<strong>DMs</strong>) and group chats.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23613682265111" width="268" height="580"></p>
+<p>Once you open the Home tab, you’ll see the <strong>Messages</strong> <strong>icon</strong> and all of your servers on the left of the screen. Tapping on the Messages icon will show all the DMs and group chats you’re part of. Tapping on a server will open it within the <strong>Servers</strong> <strong>tab</strong> and allow you to scroll through and open that server’s channels.</p>
+<p>In each of your servers, you’ll be able to <strong>Favorite</strong> channels, use the search bar at the top of the server channel list to find messages and content in a server, and see the channel details of each server channel, which includes a list of the server members in that channel, the Media/Files/Links sent in that channel, the threads created, and more.</p>
+<h1 id="h_01HFW7WQ05XB15GC8A4SPX8NN5">Messages Icon</h1>
+<p><span style="color: #2e3338;">Your DMs and group chats can now be accessed by tapping on the </span><strong><span style="color: #2e3338;">Messages</span></strong> <strong><span style="color: #2e3338;">icon</span></strong><span style="color: #2e3338;"> [</span><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23613669367063" width="24" height="24"></span><span style="color: #2e3338;">] at the top left corner of the server list. </span></p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23613682292887" width="260" height="564"></span></p>
+<p><span style="color: #2e3338;">You can also search across all of your DMs and group chats to find the chat you’re looking for selecting the </span><strong><span style="color: #2e3338;">search icon</span></strong><span style="color: #2e3338;"> [</span><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23613682298391" width="24" height="24"></span><span style="color: #2e3338;">].</span></p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23613669391895" width="271" height="587"></span></p>
 <h2 id="h_01HFW7WQ05TJX3KKTSR0C8H01Y">Active Now</h2>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506460183" width="268" height="580"></p>
-<p>You can easily see what your friends are up to at the top of the <strong>Messages</strong> tab in the <strong>Active Now</strong> section. Active Now can show things such as:</p>
+<p><span style="color: #2e3338;">While in </span><strong><span style="color: #2e3338;">Messages</span></strong><span style="color: #2e3338;">, you can easily see what your friends are up to within the </span><strong><span style="color: #2e3338;">Active Now</span></strong> <strong><span style="color: #2e3338;">section</span></strong><span style="color: #2e3338;">. </span><strong><span style="color: #2e3338;">Active Now</span></strong><span style="color: #2e3338;"> can show things such as:</span></p>
 <ul>
-    <li>When your friends are currently in a Voice Channel in a mutual server</li>
-    <li>A game your friend is playing</li>
-    <li>If your friend is participating in any activity that supports Rich Presence, like listening to Spotify or watching something on Crunchyroll</li>
-    <li>Your friend’s Status, including their Custom Status</li>
+    <li><span style="color: #2e3338;">When your friends are currently in a Voice Channel in a mutual server</span></li>
+    <li><span style="color: #2e3338;">A game your friend is playing</span></li>
+    <li><span style="color: #2e3338;">If your friend is participating in any activity that supports Rich Presence, like listening to Spotify or watching something on Crunchyroll</span></li>
+    <li><span style="color: #2e3338;">Your friend’s Status, including their Custom Status</span></li>
 </ul>
-<p>Learn more about your own Activity Status settings <a href="https://support.discord.com/hc/articles/7931156448919-Activity-Status-Rich-Presence-Settings" target="_blank" rel="noopener noreferrer">here</a>.</p>
-<h2 id="h_01HFW7WQ05XVFMDBHP1QFE6X1R">Favorite DMs and GDMs</h2>
-<p>You can favorite direct messages (DMs) and Group Direct Messages (GDMs) so that they stay pinned to the top of your <strong>Messages</strong> tab for quicker access. </p>
-<p>1. To favorite a G/DM, navigate to the <strong>Messages</strong> tab</p>
-<p>2. Tap and hold on the G/DM you want to favorite </p>
-<p>3. Select <strong>Favorite</strong>. You will then see the G/DM at the top of your Messages with a star icon next to it. </p>
+<p><span style="color: #2e3338;">Learn more about your own Activity Status settings </span><a href="https://support.discord.com/hc/articles/7931156448919-Activity-Status-Rich-Presence-Settings" target="_blank" rel="noopener noreferrer">here</a><span style="color: #2e3338;">.</span></p>
+<h2 id="h_01HFW7WQ05XVFMDBHP1QFE6X1R">Favorite DMs And Group Chats</h2>
+<p>You can favorite direct messages (DMs) and group chats so that they stay pinned to the top of your <strong>Messages</strong> tab for quicker access. </p>
+<p id="docs-internal-guid-375dda5f-7fff-984e-a1b0-fc3f1560c814"><span style="color: #2e3338;">1. To favorite a DM or group chat, tap on the </span><strong><span style="color: #2e3338;">Home tab</span></strong> <strong><span style="color: #2e3338;">&gt;</span></strong> <strong><span style="color: #2e3338;">Messages icon</span></strong><span style="color: #2e3338;">.  </span></p>
+<p><span style="color: #2e3338;">2. While in Messages, navigate to the DM or group chat you would like to favorite. </span></p>
+<p><span style="color: #2e3338;">3. Then, long-press it to open the options menu where you can tap </span><strong><span style="color: #2e3338;">Favorite</span></strong><span style="color: #2e3338;">. </span></p>
+<p><span style="color: #2e3338;">You will then see the DM or group chat at the top of your messages with a </span><strong><span style="color: #2e3338;">star icon</span></strong><span style="color: #2e3338;"> [</span><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23666804738967" width="24" height="24"></span><span style="color: #2e3338;">] next to it. </span></p>
 <p>You can repeat the same process and select <strong>Unfavorite</strong> to remove a G/DM from your favorites. </p>
-<p> </p>
-<h2 id="h_01HFW7WQ0596JQRGBTANXPFWND">DM and GDM Details Page</h2>
+<h2 id="h_01HFW7WQ0596JQRGBTANXPFWND">DM And Group Chat Details Page</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506465943" width="245.55525869693395" height="533"></p>
-<p> </p>
-<p>We also created an organized gallery for everything shared within a G/DM. Simply open the G/DM and click the G/DM name at the top of the screen to access the G/DM details page. </p>
-<p>From this page, you can search for messages sent in that G/DM, see its members and their statuses, and filter for the media, GIFs, files, and links shared in that G/DM. You could use this page to find a specific photo that you sent in the GDM but don’t remember when you sent it. </p>
-<p>By selecting the <strong>Media</strong> filter, you can browse all of the images and videos sent in that G/DM quickly without having to scroll through the whole chat history.</p>
-<h2 id="h_01HFW7WQ053N68DA8J9D1AK243">DM and GDM Creation</h2>
-<p>From the <strong>Messages</strong> tab, you can press the blurple <strong>Message</strong> button in the bottom right of the screen to start a new DM or GDM. From here, you can type the names of your friends that you want to add to the GDM and tap on their profile to add them to the chat. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506467095" width="194" height="421"></p>
-<p>Once everyone is there, you can then tap on the text box at the bottom of the screen to begin sending a message. If you have an existing GDM with the users selected for the chat, you will automatically see that GDM instead of starting a new one. If you do want to create a new group, just select <strong>New Group</strong> at the top of the screen before selecting any friends.</p>
+<p id="docs-internal-guid-3a7040e7-7fff-18a5-5ca9-943d88849a65"><span style="color: #2e3338;">From this page, you can search for messages sent in the DM or group chat, see its members and their statuses, and filter for the media, GIFs, files, and links shared there. </span></p>
+<p id="docs-internal-guid-a667f0c6-7fff-390a-46be-c4f47b9318ce"><span style="color: #2e3338;">You could also use this page to find a specific photo that you sent, but don’t remember when you sent it. By selecting the </span><strong><span style="color: #2e3338;">Media</span></strong> <strong><span style="color: #2e3338;">filter</span></strong><span style="color: #2e3338;">, you can browse all of the images and videos sent in that DM or group chat quickly without having to scroll through the whole chat history.</span></p>
+<h2 id="h_01HFW7WQ053N68DA8J9D1AK243">DM And Group Chat Creation</h2>
+<p id="docs-internal-guid-758b4185-7fff-6f92-0922-e21d5ee908dc"><span style="color: #2e3338;">From the </span><strong><span style="color: #2e3338;">Home tab &gt; Messages</span></strong><span style="color: #2e3338;">, you can press the blurple </span><strong><span style="color: #2e3338;">Message</span></strong> <strong><span style="color: #2e3338;">button </span></strong><span style="color: #2e3338;">[</span><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23666807100823" width="24" height="24"></span><span style="color: #2e3338;">] in the bottom right of the screen to start a new DM or group chat. </span></p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23666804814487" width="237" height="516"></span></p>
+<p class="wysiwyg-text-align-left"><span style="color: #2e3338;">From here, you can type the names of your friends that you want to add or tap on their profiles to add them to the chat. </span></p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><span id="docs-internal-guid-cb663391-7fff-9365-3874-32e3a13874cb" style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23666804871575" width="231" height="499"></span></span></p>
+<p id="docs-internal-guid-b2f1b3b8-7fff-7e07-4b9b-f4c0ece028b6"><span style="color: #2e3338;">Once everyone is there, you can then tap on the text box at the bottom of the screen to begin sending a message. If you have an existing group chat with the users selected for the chat, you will automatically see that group chat instead of starting a new one. </span></p>
+<p id="docs-internal-guid-2bec30f3-7fff-9f5c-4387-95e7f6fb7565"><span style="color: #2e3338;">If you do want to create a new group, just select </span><strong><span style="color: #2e3338;">New Group</span></strong><span style="color: #2e3338;"> at the top of the screen before selecting any friends.</span></p>
 <h2 id="h_01HFW7WQ057HP49SP0SQ1HX475">Add Friends</h2>
-<p>You can add new friends via the <strong>Add Friends</strong> button in the top-right corner of the app. Navigate to this tab when you want to view your friends list or add new friends.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506473623" width="183" height="396"></p>
+<p id="docs-internal-guid-57ce9458-7fff-c2b4-fa8c-cebfd27f253d"><span style="color: #2e3338;">You can add new friends by heading over to the </span><strong><span style="color: #2e3338;">Home tab &gt; Messages icon</span></strong><span style="color: #2e3338;"> and tapping the </span><strong><span style="color: #2e3338;">Add Friends button</span></strong><span style="color: #2e3338;">. </span></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-47cda5b7-7fff-ec10-13a9-2660b351ee1d" style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23666807162647" width="268" height="581"></span></p>
 <h1 id="h_01HFW7WQ052G3MC7X38N2DSH4B">Notifications Tab</h1>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506479639" width="241" height="523"></p>
-<p>We simplified your notifications experience to emphasize the things you can uniquely find in the <strong>Notifications</strong> tab, like friend requests. We combined the “For You” and “Mentions” tabs to create a centralized space for catching up on everything you missed while you were away. </p>
+<p><span style="color: #2e3338;">We simplified your notifications experience to emphasize the things you can uniquely find in the </span><strong><span style="color: #2e3338;">Notifications</span></strong> <strong><span style="color: #2e3338;">tab</span></strong><span style="color: #2e3338;">, like friend requests.</span></p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><strong><img src="https://support.discord.com/hc/article_attachments/23613669398423" width="248" height="539"></strong></span></p>
 <p>All notifications in the <strong>Notifications</strong> tab are actionable: Join an event, message someone who just accepted your friend request, etc. </p>
 <p>You no longer need to click a notification for it to be considered read in the <strong>Notifications</strong> tab, just seeing it is enough. The next time you return to the <strong>Notifications</strong> tab, all read notifications will be de-emphasized and new notifications will be emphasized so you always know what’s new and don’t have to actively clear your notifications. </p>
 <p>Red badges will persist on the <strong>Notifications</strong> tab when you have pending friend requests, and you must resolve your pending friend requests to clear them.</p>
 <h1 id="h_01HFW7WQ05JN3Q3A722JW15WWN">You Tab</h1>
 <p>The <strong>You</strong> tab is your dedicated space to view and customize how you appear to others on Discord. You can find the <strong>You</strong> tab in the bottom right corner of the app. From this tab, you can easily edit your profile, set your status, view your friends, or manage your settings. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506486935" width="312" height="753"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23613682331287" width="239" height="518"></p>
 <h2 id="h_01HFW7WQ05HA4K39CGB7YQ02ND">Friends List</h2>
 <p>We moved the Friends list to be in the <strong>You</strong> tab. To see your existing friends, view pending friend requests, and add new friends, tap <strong>Your Friends</strong> in the <strong>You</strong> tab. Only you can see your <strong>Friends </strong>list.</p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23613682340503" width="275" height="596"></span></p>
 <h2 id="h_01HFW7WQ05DYX5Z1JF61DW54XD">Settings &amp; Settings Search</h2>
 <p>App Settings are still in this tab and you can now access them by tapping the <strong>gear icon</strong> at the top right of the <strong>You</strong> tab. If you want to get to settings quickly, you can also double-tap the <strong>You</strong> tab icon at the bottom of the screen.</p>
 <p>You can now search within <strong>Settings</strong>. It’s a small but mighty improvement. Now, you don't have to waste time scrolling through every single setting to find what you're looking for. Simply type in the search bar and watch the magic happen.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262490190999" width="289" height="567"></p>
+<p class="wysiwyg-text-align-center"><span style="color: #2e3338;"><img src="https://support.discord.com/hc/article_attachments/23613682348183" width="264" height="571"></span></p>
 <h1 id="h_01HFW7WQ05FDBEA08M5XF79M0G">Voice &amp; Video Calls</h1>
 <p>We’ve updated the interface for voice and video calls. Before joining a voice call, you can easily preview the Text in Voice for that call without joining the call by tapping the quote icon to the right of the <strong>Join Voice</strong> button. Tap the microphone icon to the left of the <strong>Join Voice</strong> button to control whether you will enter the call muted or unmuted. You must tap the <strong>Join Voice</strong> button to enter a voice call.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506505623" width="242" height="524"></p>
@@ -127,8 +109,8 @@
 <p>When you're in a fullscreen activity or stream, double-tap to minimize it and get back to the rest of the call participants.</p>
 <h1 id="h_01HFW7WQ056CJ4W605NMYQPBEF">Swipe to Reply</h1>
 <p>We added swipe-to-reply on messages for faster witty retorts. Simply swipe from right to left across a message in a DM or channel to reply to that message. </p>
-<h1 id="h_01HFW7WQ05RX97Q70R14K66AFJ">Accessing Channel or G/DM Details</h1>
-<p>Previously, swiping from right to left across a channel or G/DM would take you to see the details of that chat such as pinned messages or a list of who is in the channel or G/DM. To access channel or G/DM details, tap on the name of the G/DM or Channel at the top of the screen.</p>
+<h1 id="h_01HFW7WQ05RX97Q70R14K66AFJ">Accessing Channel, DM, or Group Chat Details</h1>
+<p id="docs-internal-guid-03652903-7fff-6403-e279-5f7ead3e273f"><span style="color: #2e3338;">Previously, swiping from right to left across a channel, DM, or group chat would take you to see the details of that chat such as pinned messages or a list of who is in the channel, DM, or group chat. To access channel, DM, or group chat details, tap on the name of the channel, DM, or group chat at the top of the screen.</span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19262506520215" width="246" height="532"></p>
 <h1 id="h_01HFW7WQ05J94YCT9SPXCHPADS">New Customization Options</h1>
 <p>We’ve added more ways to make the Discord mobile app feel like your space through customization options. We added a new <strong>Midnight theme</strong> and the ability to toggle message previews in your <strong>Messages</strong> tab.</p>
@@ -168,5 +150,8 @@
 <p>A: We understand the change might take some getting used to, and we're here to help make that transition as smooth as possible for you. But with this update, the original mobile layout is no longer available.</p>
 <p><strong>Q: Will this be available for both Android and iOS users?</strong></p>
 <p>A: Yes.</p>
-<p><strong>Q: How do I find the details and members of a Channel or GDM now that I cannot swipe to see it?</strong></p>
-<p>A: You can access Channel &amp; G/DM details by tapping the name of a channel or G/DM at the top of the chat.</p>
+<p id="docs-internal-guid-5a478d0b-7fff-8381-9253-78daadcf137a"><strong><span style="color: #2e3338;">Q: How do I find the details and members of a channel, DM, or group chat now that I cannot swipe to see it?</span></strong></p>
+<p><span style="color: #2e3338;">A: You can access channel, DM, or group chat details by tapping the name of a channel, DM, or group chat at the top of the chat.</span></p>
+<div id="gtx-trans" style="position: absolute; left: 23px; top: 645.797px;">
+    <div class="gtx-trans-icon"> </div>
+</div>
