@@ -20127,11 +20127,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-wrap: wrap;
     align-items: center;
     box-sizing: border-box;
+    width: -moz-fit-content;
+    width: fit-content;
     gap: 4px;
     padding: 2px 4px;
     background: var(--bg-mod-faint);
     border-radius: var(--radius-xs);
     border: 1px solid var(--border-faint)
+}
+
+.container__665d0:empty {
+    visibility: hidden
 }
 
 .custom-profile-theme .container__665d0 {
@@ -72744,7 +72750,6 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .userInfo_fb7651 {
-    height: 72px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -72818,9 +72823,14 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .badgeList__6b2c7 {
-    justify-content: flex-start;
     background-color: var(--background-secondary);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    border: none;
+    max-width: 228px
+}
+
+.badgeList__6b2c7:empty {
+    height: 28px
 }
 
 .fieldList__4e6dd {
@@ -95502,7 +95512,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .viewAllGamesButton__34838 {
@@ -95522,7 +95532,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -95579,7 +95589,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .headerBar__3337a {
@@ -142064,4 +142074,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.13877e0c014ac2f33af3.css.map*/
+/*# sourceMappingURL=99387.bb80a2956b08f23d43dc.css.map*/
