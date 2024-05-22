@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295442", ", Version Hash: ").concat("e86fa8f7a774adf0f04429d23f47152cded8ed93")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295452", ", Version Hash: ").concat("e6a5795c4f3a3e7e68236cd8a2b47cc11a1196a5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88491,8 +88491,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295442", "295442"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295442")), t = 0), t
+                let t = parseInt((e = "295452", "295452"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295452")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116356,8 +116356,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295442",
-                    versionHash: "e86fa8f7a774adf0f04429d23f47152cded8ed93"
+                    buildNumber: "295452",
+                    versionHash: "e6a5795c4f3a3e7e68236cd8a2b47cc11a1196a5"
                 }
             }
             n.r(t), n.d(t, {
@@ -137964,7 +137964,7 @@
                 default: function() {
                     return y
                 }
-            });
+            }), n("653041"), n("47120");
             var i = n("392711"),
                 r = n.n(i),
                 s = n("46973"),
@@ -138063,24 +138063,29 @@
                     return this.analyticsContext.maxViewers
                 }
                 updateStats(e) {
-                    I.default.getCurrentConfig({
-                        location: "RTCConnection"
-                    }, {
-                        autoTrackExposure: !1
-                    }).enableGoLiveSimulcast && e.forEach(e => {
-                        let {
-                            connection: t,
-                            stats: n
-                        } = e;
-                        if (t === this._connection) {
-                            let e = n.transport.inboundBitrateEstimate;
-                            if (null != e) {
-                                var i;
-                                null === (i = this._goLiveQualityManager) || void 0 === i || i.setGoLiveStreamDowngraded(e < 15e5)
+                    if (I.default.getCurrentConfig({
+                            location: "RTCConnection"
+                        }, {
+                            autoTrackExposure: !1
+                        }).enableGoLiveSimulcast) {
+                        for (let {
+                                connection: n,
+                                stats: i
                             }
-                            return
-                        }
-                    })
+                            of e)
+                            if (n === this._connection) {
+                                let e = i.transport.inboundBitrateEstimate;
+                                if (null != e) {
+                                    if (e > 1e8) break;
+                                    if (this._bandwidthSamples.push(e), this._bandwidthSamples.length > 15 && this._bandwidthSamples.shift(), 15 === this._bandwidthSamples.length) {
+                                        var t;
+                                        let e = r().mean(this._bandwidthSamples);
+                                        null === (t = this._goLiveQualityManager) || void 0 === t || t.setGoLiveStreamDowngraded(e < 15e5)
+                                    }
+                                    break
+                                }
+                            }
+                    }
                 }
                 _initializeEvents() {
                     let e = !1;
@@ -138282,7 +138287,7 @@
                         context: v.MediaEngineContextTypes.STREAM,
                         rtcServerId: n,
                         parentMediaSessionId: l
-                    }), D(this, "analyticsContext", void 0), D(this, "_videoStreamStats", void 0), D(this, "_streamContext", void 0), D(this, "_streamKey", void 0), D(this, "_isStreamer", void 0), D(this, "_updateVideoStreamId", void 0), this._streamContext = u, this._streamKey = t, this._isStreamer = o, this._videoStreamStats = new C.default(i, this.isOwner), this.analyticsContext = s, this._updateVideoStreamId = r().debounce((e, t) => {
+                    }), D(this, "analyticsContext", void 0), D(this, "_videoStreamStats", void 0), D(this, "_streamContext", void 0), D(this, "_streamKey", void 0), D(this, "_isStreamer", void 0), D(this, "_updateVideoStreamId", void 0), D(this, "_bandwidthSamples", []), this._streamContext = u, this._streamKey = t, this._isStreamer = o, this._videoStreamStats = new C.default(i, this.isOwner), this.analyticsContext = s, this._updateVideoStreamId = r().debounce((e, t) => {
                         let {
                             guildId: n,
                             channelId: i,
@@ -173356,8 +173361,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716392284590",
-                                    build_number: "295442"
+                                    built_at: "1716395636497",
+                                    build_number: "295452"
                                 }
                             },
                             retries: 1
@@ -250326,7 +250331,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e86fa8f7a774adf0f04429d23f47152cded8ed93"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e6a5795c4f3a3e7e68236cd8a2b47cc11a1196a5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279425,7 +279430,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295442"
+                                build_number: "295452"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286783,7 +286788,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295442", "295442"), 10);
+                let s = parseInt((n = "295452", "295452"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314491,4 +314496,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.eccb5bc03b2730343831.js.map
+//# sourceMappingURL=71586.99b6ebc23508d17be7ec.js.map
