@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295634", ", Version Hash: ").concat("e5ff5e719d897460930dc2894a134623a36dc1a5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295661", ", Version Hash: ").concat("ccf5af0f73ffc6eb378f13b1cd131e029d36f0d0")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44706,8 +44706,8 @@
                 PREMIUM_UPSELL_YEARLY_DESCRIPTION: "Subscribe to a yearly subscription and get a {discountPercentage} discount.",
                 PREMIUM_UPSELL_YEARLY_CTA: "Subscribe Yearly - !!{price}!! / Year",
                 PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_TITLE: "Your files are too powerful",
-                PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_DESCRIPTION_V2: "Upgrade to {nitroTierName} to upload files up to {maxFileSize} MB. Perfect for sharing those high resolution clips.",
-                PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_POPUP_LABEL_V2: "Send up to 500 MB with [{nitroTierName}](onClick)",
+                PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_DESCRIPTION_V3: "Upgrade to {nitroTierName} to upload files up to {maxFileSize}. Perfect for sharing those high resolution clips.",
+                PREMIUM_UPSELL_MOBILE_FEATURE_FILE_UPLOAD_POPUP_LABEL_V3: "Send up to {maxFileSize} with [{nitroTierName}](onClick)",
                 PREMIUM_UPSELL_MOBILE_FEATURE_SOUNDBOARD_TITLE: "Express yourself with more sounds",
                 PREMIUM_UPSELL_MOBILE_FEATURE_SOUNDBOARD_DESCRIPTION_V2: "Access the best sounds from Soundboard across any of your Discord servers. Only with {nitroTierName}.",
                 PREMIUM_UPSELL_MOBILE_FEATURE_SOUNDBOARD_POPUP_LABEL_V2: "Make some noise with [{nitroTierName}](onClick)",
@@ -88495,8 +88495,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295634", "295634"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295634")), t = 0), t
+                let t = parseInt((e = "295661", "295661"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295661")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116395,8 +116395,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295634",
-                    versionHash: "e5ff5e719d897460930dc2894a134623a36dc1a5"
+                    buildNumber: "295661",
+                    versionHash: "ccf5af0f73ffc6eb378f13b1cd131e029d36f0d0"
                 }
             }
             n.r(t), n.d(t, {
@@ -173435,8 +173435,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716414316619",
-                                    build_number: "295634"
+                                    built_at: "1716416454329",
+                                    build_number: "295661"
                                 }
                             },
                             retries: 1
@@ -213554,6 +213554,7 @@
                 return T ? null == f ? (0, i.jsx)(c.default, {
                     icon: u.default,
                     text: E.default.Messages.EDIT_PROFILE,
+                    autoFocus: !0,
                     onClick: () => {
                         S({
                             action: "EDIT_PROFILE"
@@ -250389,7 +250390,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e5ff5e719d897460930dc2894a134623a36dc1a5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ccf5af0f73ffc6eb378f13b1cd131e029d36f0d0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279501,7 +279502,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295634"
+                                build_number: "295661"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286859,7 +286860,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295634", "295634"), 10);
+                let s = parseInt((n = "295661", "295661"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314567,4 +314568,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.a3bcf050e5c6273bd473.js.map
+//# sourceMappingURL=71586.b2685b17cda2be85cdd6.js.map
