@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295452", ", Version Hash: ").concat("e6a5795c4f3a3e7e68236cd8a2b47cc11a1196a5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295456", ", Version Hash: ").concat("9f06023ba0f80b54c909b3cb3d90232de56fd4ff")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56260,6 +56260,7 @@
                 CLAN_DISCOVERY_APPLICATION_DISABLED_TOOLTIP: "You cannot apply to Guilds right now",
                 MESSAGE_ACTION_FORWARD: "Forward",
                 MESSAGE_FORWARDED: "Forwarded",
+                MESSAGE_FORWARD_ORIGINAL_MESSAGE: "Go to message",
                 MESSAGE_ACTION_FORWARD_MEDIA_A11Y: "Forward media from this message",
                 MESSAGE_ACTION_FORWARD_EMBED_A11Y: "Forward embed from this message"
             })
@@ -88491,8 +88492,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295452", "295452"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295452")), t = 0), t
+                let t = parseInt((e = "295456", "295456"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295456")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116356,8 +116357,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295452",
-                    versionHash: "e6a5795c4f3a3e7e68236cd8a2b47cc11a1196a5"
+                    buildNumber: "295456",
+                    versionHash: "9f06023ba0f80b54c909b3cb3d90232de56fd4ff"
                 }
             }
             n.r(t), n.d(t, {
@@ -173361,8 +173362,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716395636497",
-                                    build_number: "295452"
+                                    built_at: "1716395887408",
+                                    build_number: "295456"
                                 }
                             },
                             retries: 1
@@ -250331,7 +250332,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e6a5795c4f3a3e7e68236cd8a2b47cc11a1196a5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9f06023ba0f80b54c909b3cb3d90232de56fd4ff"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275821,16 +275822,19 @@
             "use strict";
             n.r(t), n.d(t, {
                 accessibilityLabelCalendarFormat: function() {
-                    return S
+                    return h
                 },
                 calendarFormat: function() {
                     return I
+                },
+                calendarFormatCompact: function() {
+                    return T
                 },
                 dateFormat: function() {
                     return E
                 },
                 diffAsUnits: function() {
-                    return A
+                    return m
                 },
                 isSameDay: function() {
                     return _
@@ -275839,7 +275843,7 @@
                     return c
                 },
                 unitsAsStrings: function() {
-                    return m
+                    return N
                 }
             });
             var i = n("913527"),
@@ -275868,29 +275872,39 @@
             }
 
             function E(e, t) {
-                let n = T(e).locale(),
+                let n = f(e).locale(),
                     i = "".concat(n, ":").concat(t),
                     r = l[i];
-                return null == r && (r = l[i] = (0, s.default)(t)), r(f(e))
+                return null == r && (r = l[i] = (0, s.default)(t)), r(S(e))
             }
 
             function I(e) {
                 let t;
                 let n = r().localeData(),
                     i = r()(),
-                    s = d(f(e), i.toDate());
-                return s < -1 ? E(e, "L LT") : (t = s < 0 ? "lastDay" : s < 1 ? "sameDay" : s < 2 ? "nextDay" : "sameElse", E(e, n.calendar(t, T(e), i)))
+                    s = d(S(e), i.toDate());
+                return s < -1 ? E(e, "L LT") : (t = s < 0 ? "lastDay" : s < 1 ? "sameDay" : s < 2 ? "nextDay" : "sameElse", E(e, n.calendar(t, f(e), i)))
             }
 
             function T(e) {
-                return r().isMoment(e) ? e : r()(e)
+                let t = r().localeData(),
+                    n = r()(),
+                    i = d(S(e), n.toDate());
+                if (0 === i) return E(e, t.longDateFormat("LT"));
+                if (-1 === i) return E(e, t.calendar("lastDay", f(e), n));
+                if (i > -7) return E(e, "dddd");
+                return E(e, t.longDateFormat("l"))
             }
 
             function f(e) {
-                return r().isMoment(e) ? e.toDate() : e
+                return r().isMoment(e) ? e : r()(e)
             }
 
             function S(e) {
+                return r().isMoment(e) ? e.toDate() : e
+            }
+
+            function h(e) {
                 let t;
                 let n = r().localeData(),
                     i = new Date,
@@ -275900,7 +275914,7 @@
             a.default.addChangeListener(() => {
                 l = Object.create(null)
             });
-            let h = [{
+            let A = [{
                 key: "days",
                 millisecondsInUnit: 864e5
             }, {
@@ -275914,7 +275928,7 @@
                 millisecondsInUnit: 1e3
             }];
 
-            function A(e, t) {
+            function m(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     i = {
                         days: 0,
@@ -275924,7 +275938,7 @@
                     };
                 if (e > t || n && Number(e) + 1200 > Number(t)) return i;
                 let r = Number(t) - Number(e);
-                return h.forEach(e => {
+                return A.forEach(e => {
                     let {
                         key: t,
                         millisecondsInUnit: n
@@ -275933,7 +275947,7 @@
                 }), i
             }
 
-            function m(e, t) {
+            function N(e, t) {
                 return e.days > 0 ? t.days.format({
                     days: e.days,
                     hours: e.hours
@@ -279430,7 +279444,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295452"
+                                build_number: "295456"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286788,7 +286802,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295452", "295452"), 10);
+                let s = parseInt((n = "295456", "295456"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314496,4 +314510,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.99b6ebc23508d17be7ec.js.map
+//# sourceMappingURL=71586.72be6c6f07c14ef27ab7.js.map
