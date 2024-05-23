@@ -37009,7 +37009,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295885", ", Version Hash: ").concat("87571606d13d637dec38218888781fd95f2751e0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295890", ", Version Hash: ").concat("2893f828a001a3cbdeaa491bfcb2b3d4aea755ae")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88229,18 +88229,20 @@
                 a = n("904245"),
                 o = n("147913"),
                 l = n("3148"),
-                u = n("706454"),
-                d = n("695346"),
-                _ = n("375954"),
-                c = n("709054"),
-                E = n("839627"),
-                I = n("802098"),
-                T = n("128014"),
-                f = n("163379"),
-                S = n("596401"),
-                h = n("981631");
+                u = n("960412"),
+                d = n("706454"),
+                _ = n("695346"),
+                c = n("375954"),
+                E = n("709054"),
+                I = n("839627"),
+                T = n("802098"),
+                f = n("128014"),
+                S = n("163379"),
+                h = n("596401"),
+                A = n("981631"),
+                m = n("930441");
 
-            function A(e, t, n) {
+            function N(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -88248,15 +88250,15 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            async function m(e) {
-                if (d.LastReceivedChangelogId.getSetting() >= e) return;
-                let t = await s.default.getOrEnsurePrivateChannel(S.SYSTEM_UPDATES_USER_ID);
+            async function p(e) {
+                if (_.LastReceivedChangelogId.getSetting() >= e) return;
+                let t = await s.default.getOrEnsurePrivateChannel(h.SYSTEM_UPDATES_USER_ID);
                 if (null == t) return;
                 await a.default.fetchMessages({
                     channelId: t,
                     limit: 1
                 });
-                let n = _.default.getLastMessage(t);
+                let n = c.default.getLastMessage(t);
                 if (null == n) return;
                 let i = (0, l.default)({
                     ...n,
@@ -88267,18 +88269,18 @@
                 });
                 a.default.receiveMessage(t, {
                     ...i,
-                    state: h.MessageStates.SENT,
+                    state: A.MessageStates.SENT,
                     channel_id: t
                 }, !0, {})
             }
-            class N extends o.default {
+            class O extends o.default {
                 constructor(...e) {
-                    super(...e), A(this, "actions", {
+                    super(...e), N(this, "actions", {
                         POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
-                    }), A(this, "handleConnectionOpen", async e => {
+                    }), N(this, "handleConnectionOpen", async e => {
                         let {
                             canReceiveMessage: t
-                        } = E.default.getCurrentConfig({
+                        } = I.default.getCurrentConfig({
                             location: "changelog_manager"
                         }, {
                             autoTrackExposure: !1
@@ -88289,31 +88291,32 @@
                                     min_version: s
                                 }] of Object.entries(e)) s <= t && s > n && (n = s, i = r);
                             return i
-                        }(s, (0, T.getClientVersionForChangelog)());
+                        }(s, (0, f.getClientVersionForChangelog)());
                         if (i.default.dispatch({
                                 type: "CHANGE_LOG_SET_CONFIG",
                                 config: n.body,
                                 latestChangelogId: a
                             }), null == a) return;
-                        if (t) {
-                            m(a);
+                        let o = await (0, u.fetchEmailSettings)();
+                        if (t && (null == o ? void 0 : o.categories[m.EmailCategories.UPDATES_AND_ANNOUNCEMENTS])) {
+                            p(a);
                             return
                         }
                         if (!0 !== s[a].show_on_startup) return;
-                        let o = I.default.lastSeenChangelogId(),
-                            l = I.default.lastSeenChangelogDate();
-                        if (null != o && 0 >= c.default.compare(a, o)) return;
-                        let d = await r.default.fetchChangelog(a, u.default.locale);
-                        if (null != d) {
-                            if (null == l || null == I.default.lastSeenChangelogDate()) {
-                                r.default.markChangelogAsSeen(a, d.date);
+                        let l = T.default.lastSeenChangelogId(),
+                            _ = T.default.lastSeenChangelogDate();
+                        if (null != l && 0 >= E.default.compare(a, l)) return;
+                        let c = await r.default.fetchChangelog(a, d.default.locale);
+                        if (null != c) {
+                            if (null == _ || null == T.default.lastSeenChangelogDate()) {
+                                r.default.markChangelogAsSeen(a, c.date);
                                 return
-                            }!I.default.isLocked() && new Date(d.date) > new Date(l) && (0, f.openChangelog)()
+                            }!T.default.isLocked() && new Date(c.date) > new Date(_) && (0, S.openChangelog)()
                         }
                     })
                 }
             }
-            t.default = new N
+            t.default = new O
         },
         802098: function(e, t, n) {
             "use strict";
@@ -88460,8 +88463,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295885", "295885"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295885")), t = 0), t
+                let t = parseInt((e = "295890", "295890"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295890")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116367,8 +116370,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295885",
-                    versionHash: "87571606d13d637dec38218888781fd95f2751e0"
+                    buildNumber: "295890",
+                    versionHash: "2893f828a001a3cbdeaa491bfcb2b3d4aea755ae"
                 }
             }
             n.r(t), n.d(t, {
@@ -173836,8 +173839,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716490066521",
-                                    build_number: "295885"
+                                    built_at: "1716490370888",
+                                    build_number: "295890"
                                 }
                             },
                             retries: 1
@@ -218817,6 +218820,163 @@
                 [2, u.DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS]
             ])
         },
+        960412: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                fetchEmailSettings: function() {
+                    return u
+                },
+                updateEmailSetting: function() {
+                    return d
+                },
+                updateMarketingEmailSettings: function() {
+                    return _
+                }
+            }), n("724458");
+            var i = n("990547"),
+                r = n("283693"),
+                s = n("570140"),
+                a = n("573261"),
+                o = n("930441"),
+                l = n("981631");
+            async function u() {
+                try {
+                    let e = await a.default.get({
+                        url: l.Endpoints.EMAIL_SETTINGS,
+                        trackedActionData: {
+                            event: i.NetworkActionNames.EMAIL_SETTINGS_FETCH,
+                            properties: e => {
+                                var t;
+                                let n = null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.initialized;
+                                return (0, r.exact)({
+                                    initialized: n
+                                })
+                            }
+                        }
+                    });
+                    return s.default.dispatch({
+                        type: "EMAIL_SETTINGS_FETCH_SUCCESS",
+                        settings: e.body
+                    }), e.body
+                } catch {
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_FETCH_FAILURE"
+                    })
+                }
+            }
+            async function d(e, t) {
+                s.default.dispatch({
+                    type: "EMAIL_SETTINGS_UPDATE",
+                    updates: {
+                        [e]: t
+                    }
+                });
+                try {
+                    let n = await a.default.patch({
+                        url: l.Endpoints.EMAIL_SETTINGS,
+                        body: {
+                            settings: {
+                                categories: {
+                                    [e]: t
+                                }
+                            }
+                        },
+                        trackedActionData: {
+                            event: i.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
+                            properties: {
+                                category: e,
+                                value: t
+                            }
+                        }
+                    });
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
+                        settings: n.body
+                    })
+                } catch (e) {
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_UPDATE_FAILURE"
+                    })
+                }
+            }
+            async function _() {
+                let e = o.MarketingEmailCategories.reduce((e, t) => ({
+                    ...e,
+                    [t]: !1
+                }), {});
+                s.default.dispatch({
+                    type: "EMAIL_SETTINGS_UPDATE",
+                    updates: e
+                });
+                try {
+                    let t = await a.default.patch({
+                        url: l.Endpoints.EMAIL_SETTINGS,
+                        body: {
+                            settings: {
+                                categories: e
+                            }
+                        },
+                        trackedActionData: {
+                            event: i.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
+                            properties: {
+                                category: "marketing",
+                                value: !1
+                            }
+                        }
+                    });
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
+                        settings: t.body
+                    })
+                } catch (e) {
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_UPDATE_FAILURE"
+                    })
+                }
+            }
+        },
+        930441: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                EMAILS_SUBSECTION: function() {
+                    return a
+                },
+                EmailCategories: function() {
+                    return r
+                },
+                EmailCategoriesList: function() {
+                    return l
+                },
+                MarketingEmailCategories: function() {
+                    return o
+                }
+            });
+            var i, r, s = n("689938");
+            let a = "emails";
+            (i = r || (r = {})).COMMUNICATION = "communication", i.SOCIAL = "social", i.TIPS = "tips", i.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", i.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", i.FAMILY_CENTER_DIGEST = "family_center_digest";
+            let o = ["tips", "recommendations_and_events", "updates_and_announcements"],
+                l = [{
+                    category: "communication",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_COMMUNICATION,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_COMMUNICATION_SUBLABEL
+                }, {
+                    category: "social",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_SOCIAL,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_SOCIAL_SUBLABEL
+                }, {
+                    category: "updates_and_announcements",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_UPDATES_AND_ANNOUNCEMENTS,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_UPDATES_AND_ANNOUNCEMENTS_SUBLABEL
+                }, {
+                    category: "tips",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_TIPS,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_TIPS_SUBLABEL
+                }, {
+                    category: "recommendations_and_events",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_RECOMMENDATIONS_AND_EVENTS,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_RECOMMENDATIONS_AND_EVENTS_SUBLABEL
+                }]
+        },
         888875: function(e, t, n) {
             "use strict";
             n.r(t), n("653041"), n("47120");
@@ -250791,7 +250951,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "87571606d13d637dec38218888781fd95f2751e0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2893f828a001a3cbdeaa491bfcb2b3d4aea755ae"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279903,7 +280063,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295885"
+                                build_number: "295890"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287261,7 +287421,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295885", "295885"), 10);
+                let s = parseInt((n = "295890", "295890"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314969,4 +315129,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.375625269160dcf87b69.js.map
+//# sourceMappingURL=71586.f9da18788b74c506ef01.js.map
