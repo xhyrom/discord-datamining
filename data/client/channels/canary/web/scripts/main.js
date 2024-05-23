@@ -37010,7 +37010,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295766", ", Version Hash: ").concat("82932a15dfc8c62fd70558b85753b39502cfbee7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295773", ", Version Hash: ").concat("af4eef61870f97aba2f16fe6734aab9de8e37fa4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43030,6 +43030,17 @@
                 TWO_FA_DISABLED_FOR_STAFF: "Disabled for Staff",
                 TWO_FA_WEBAUTHN_RENAME_FORM_NEW_KEY: "New Key Name",
                 TWO_FA_WEBAUTHN_SHOULD_DO: "Here is something you **should do**!",
+                PASSKEY_AND_SECURITY_KEY_TITLE: "Security Keys and Passkeys",
+                PASSKEY_AND_SECURITY_KEY_CREATED_TITLE: "Security Keys and Passkeys you have created",
+                PASSKEY_AND_SECURITY_KEY_ADDED: "Key added!",
+                PASSKEY_AND_SECURITY_KEY_RENAME_TITLE: "Rename your key",
+                PASSKEY_AND_SECURITY_KEY_UPDATED: "Key updated!",
+                PASSKEY_AND_SECURITY_KEY_REMOVE_KEY: "Remove ‘!!{keyName}!!’?",
+                PASSKEY_AND_SECURITY_KEY_REMOVED: "Key removed!",
+                PASSKEY_AND_SECURITY_KEY_REMOVE_CONFIRMATION_SUBTITLE: "You will no longer be able to use it on Discord.",
+                PASSKEY_AND_SECURITY_KEY_REMOVE_CONFIRMATION_TEXT: "Yes, remove this key",
+                PASSKEY_AND_SECURITY_KEY_REMOVE_CANCEL_TEXT: "Nevermind, I'll keep it",
+                PASSKEY_AND_SECURITY_KEY_NO_KEYS_TEXT: "Secure your account by adding a Passkey or another supported security key.",
                 MFA_SMS_AUTH: "SMS Backup Authentication",
                 MFA_SMS_AUTH_SALES_PITCH: "Add your phone as a backup MFA method in case you lose access to your authenticator app or backup codes.",
                 MFA_SMS_AUTH_CURRENT_PHONE: "Your current phone number is: !!{phoneNumber}!!.",
@@ -56075,6 +56086,7 @@
                 CLAN_SUCCESS_USE_TAG_TEXT: "Wear Guild Tag next to username",
                 CLAN_SUCCESS_USE_TAG_HELP: "You can always edit this in Profile settings.",
                 CLAN_SUCCESS_CTA: "Let's Go",
+                CLAN_SUCCESS_POSTSCRIPT: "It may take up to 2 days for your Guild to appear in the Discovery page.",
                 CLAN_JOIN_SUCCESS_TITLE: "Congratulations, you're an official member of **{name}**!",
                 CLAN_JOIN_SUCCESS_SUBTITLE: "Rep your Guild, make new friends, and play some games. Get in and say hi to your new guildmates.",
                 CLAN_JOIN_SUCCESS_MAIN_CTA: "Let's Go",
@@ -88447,8 +88459,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295766", "295766"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295766")), t = 0), t
+                let t = parseInt((e = "295773", "295773"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295773")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116344,8 +116356,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295766",
-                    versionHash: "82932a15dfc8c62fd70558b85753b39502cfbee7"
+                    buildNumber: "295773",
+                    versionHash: "af4eef61870f97aba2f16fe6734aab9de8e37fa4"
                 }
             }
             n.r(t), n.d(t, {
@@ -173387,8 +173399,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716475144466",
-                                    build_number: "295766"
+                                    built_at: "1716476352953",
+                                    build_number: "295773"
                                 }
                             },
                             retries: 1
@@ -250352,7 +250364,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "82932a15dfc8c62fd70558b85753b39502cfbee7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "af4eef61870f97aba2f16fe6734aab9de8e37fa4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279464,7 +279476,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295766"
+                                build_number: "295773"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286822,7 +286834,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295766", "295766"), 10);
+                let s = parseInt((n = "295773", "295773"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314530,4 +314542,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.a27da3749daf52d20287.js.map
+//# sourceMappingURL=71586.af9a13bf206b02eabd7c.js.map
