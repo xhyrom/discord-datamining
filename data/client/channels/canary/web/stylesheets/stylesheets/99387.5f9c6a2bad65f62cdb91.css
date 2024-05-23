@@ -45008,8 +45008,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -46961,6 +46961,7 @@ div:has(>div>.modal__06f49) {
 }
 
 .mainContent__465e0 {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex: 1 1 800px
@@ -142340,4 +142341,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1b761fd942015ba66244.css.map*/
+/*# sourceMappingURL=99387.5f9c6a2bad65f62cdb91.css.map*/
