@@ -37009,7 +37009,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295865", ", Version Hash: ").concat("ef1d95bc871e24475de6e41b15c49c45e62129a7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295876", ", Version Hash: ").concat("87588dc9103f25cc7e1663de18feb2f277bead45")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88458,8 +88458,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295865", "295865"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295865")), t = 0), t
+                let t = parseInt((e = "295876", "295876"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295876")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116365,8 +116365,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295865",
-                    versionHash: "ef1d95bc871e24475de6e41b15c49c45e62129a7"
+                    buildNumber: "295876",
+                    versionHash: "87588dc9103f25cc7e1663de18feb2f277bead45"
                 }
             }
             n.r(t), n.d(t, {
@@ -163065,6 +163065,400 @@
                 l = new Set(["tab", "shift+tab", "down", "up", "left", "right", "home", "end"]);
             (r = i || (i = {})).ENTER = "Enter", r.TAB = "Tab", r.SPACE = " ", r.ESCAPE = "Escape", r.SHIFT = "Shift"
         },
+        592204: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEligibleForKeywordFiltering: function() {
+                    return s
+                },
+                useIsEligibleForKeywordFiltering: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_keyword_filter_experiment",
+                label: "Replace registered keywords with asterisks",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable Keyword Filter",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function r(e) {
+                let {
+                    location: t
+                } = e;
+                return i.useExperiment({
+                    location: t
+                }, {
+                    autoTrackExposure: !0
+                }).enabled
+            }
+
+            function s(e) {
+                let {
+                    location: t
+                } = e;
+                return i.getCurrentConfig({
+                    location: t
+                }).enabled
+            }
+        },
+        803141: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("695346"),
+                r = n("581883"),
+                s = n("412788"),
+                a = n("592204"),
+                o = n("932941"),
+                l = n("363072"),
+                u = n("526761");
+
+            function d(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let _ = new l.Trie;
+
+            function c() {
+                let {
+                    profanity: e = !1,
+                    slurs: t = !1,
+                    sexualContent: n = !1
+                } = i.KeywordFilterSettings.getSetting(), r = [...e ? o.PROFANITY_KEYWORD_LIST : [], ...t ? o.SLURS_KEYWORD_LIST : [], ...n ? o.SEXUAL_CONTENT_KEYWORD_LIST : []];
+                _.addWords(r)
+            }
+
+            function E() {
+                if (!(0, a.isEligibleForKeywordFiltering)({
+                        location: "connection_open"
+                    })) return !1;
+                c()
+            }
+
+            function I() {
+                if (!(0, a.isEligibleForKeywordFiltering)({
+                        location: "overlay_initialize"
+                    })) return !1;
+                c()
+            }
+
+            function T(e) {
+                let {
+                    local: t,
+                    settings: n
+                } = e;
+                if (!t || n.type !== u.UserSettingsTypes.PRELOADED_USER_SETTINGS || !(0, a.isEligibleForKeywordFiltering)({
+                        location: "user_settings_proto_update"
+                    })) return !1;
+                _.clear(), c()
+            }
+            class f extends s.default {
+                initialize() {
+                    this.waitFor(r.default)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(f.LATEST_SNAPSHOT_VERSION);
+                    null != e && (_ = l.Trie.fromSnapshot(e))
+                }
+                takeSnapshot() {
+                    return {
+                        version: f.LATEST_SNAPSHOT_VERSION,
+                        data: _
+                    }
+                }
+                getKeywordTrie() {
+                    return _
+                }
+                initializeForKeywordTests() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+                    _.clear(), ! function() {
+                        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+                        _.addWords(e)
+                    }(e)
+                }
+                constructor() {
+                    super({
+                        CONNECTION_OPEN: E,
+                        CONNECTION_OPEN_SUPPLEMENTAL: E,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
+                        OVERLAY_INITIALIZE: I,
+                        USER_SETTINGS_PROTO_UPDATE: T
+                    })
+                }
+            }
+            d(f, "displayName", "KeywordFilterStore"), d(f, "LATEST_SNAPSHOT_VERSION", 1), t.default = new f
+        },
+        932941: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                PROFANITY_KEYWORD_LIST: function() {
+                    return i
+                },
+                SEXUAL_CONTENT_KEYWORD_LIST: function() {
+                    return r
+                },
+                SLURS_KEYWORD_LIST: function() {
+                    return s
+                }
+            });
+            let i = ["asscock", "assfuck", "assfucker", "assnigger", "assrape", "b!tch", "b1tch", "batshit", "bitch", "bitchass", "bitchtits", "boyfucking", "boypussy", "bullshit", "buttfuck", "buttfucka", "buttfucker", "buttplay", "buttsex", "c|_|nt", "camel fucker", "camslut", "camwhore", "camwhores", "choad", "chode", "clitfuck", "clusterfuck", "cnut", "cockmongler", "cockmongruel", "cockmuncher", "cocknugget", "cocksucka", "cocksucker", "cocksuckers", "cocksuckin", "coon ass", "cousin-fucker", "cowfuck", "cucklord", "cuckold", "cuckshit", "cucktard", "cumslut", "cunt", "cuntrag", "dickface", "dickfucker", "dipshit", "dogfucking", "dumbfuck", "f4gg0t*", "f4ggot*", "facefuck", "facefucked", "faggot*", "faggotcock", "fagit", "fagtard", "fat bitch", "fcknig", "feggit", "feggot", "finger-fuck", "fingerfuck", "fistfuck", "fking", "fucc", "fuck", "f\xfack", "f\xfbck", "f\xfcck", "fuckable", "fuckass", "fuckbag", "fuckboy", "fuckbuddies", "fuckbuddy", "fucked", "fucker", "fuckery", "fuckface", "fuckhead", "fuckhole", "fucking", "fucknig", "fucknut", "fucknutt", "fuckoff", "fuckpigs", "fucktard", "fucktart", "fuckup", "fuckwad", "fuckwitt", "fuicking", "fuk", "gayfuck", "homodumbshit", "k|_|nt", "kyke", "manslut", "manwhore", "mongtard", "mothafucka", "mothafuckin", "motherfucker", "motherfucking", "n!bb3r*", "n!bber*", "n!gg3r*", "n!gger*", "n!kk3r*", "n!kker*", "n!qq3r*", "n!qqer*", "n|bb3r*", "n|bber*", "n|gg3r*", "n|gger*", "n|kk3r*", "n|kker*", "n|qq3r*", "n|qqer*", "n1bb3r*", "n1bber*", "n1gg", "n1gg3r*", "n1gger*", "n1igger*", "n1kk3r*", "n1kker*", "n1qq3r*", "n1qqer*", "nibb3r", "nibber", "niccer", "nick gur", "nigaboo", "nigg", "nigg3r", "niggar", "niggeer", "nigger*", "niggir", "niggor", "niggur", "niggurs", "nikk3r", "nikker", "niqq3r", "niqqer", "pu$$y", "pussy licking", "pussyjob", "pussylicking", "q|_|nt", "queerhole", "qunt", "r3t4rd", "r3tar", "retard", "rētard", "retarde", "retarded", "retardi", "retards", "retart", "retrad", "ritard", "ritarded", "rtard", "s-h-i-t", "s-hit", "scumfuck", "sh-it", "sheepfucker", "shit", "shitass", "shitbag", "shitbrains", "shitcunt", "shitdick", "shiteaters", "shitface", "shithead", "shithole", "shitshow", "shitskin", "shitspitter", "shitstain", "shitty", "shlt", "skullfuck", "slut", "slutwife", "spergtard", "spicshit", "spictard", "suck my dick", "throatfuck", "throatfucked", "throatfucking", "titfuck", "titfucking", "titfucks", "tittfuck", "tittyfuck", "tittyfucking", "tittyfucks", "to fuck", "uglyfuck", "whore"],
+                r = ["69ing", "amateur porn", "anal sex", "analsex", "anilingus", "anillingus", "assbanger", "asscock", "assfuck", "assfucker", "asslicker", "asslicking", "assnigger", "assrape", "auto erotic", "autoerotic", "autofellatio", "ball sucking", "balls deep", "bangbros", "barely legal", "bdsm", "bean flicker", "beat my meat", "beaver lips", "beef curtain", "big black cock", "big black dick", "big breasted women", "big cock", "big dick", "big knockers", "big milkers", "big tits", "bislut", "black cock", "blacked raw", "blow job", "blowbang", "blowie", "blowj", "blowjob", "blowjobs", "blumpkin", "boipussy", "bondage", "boner", "boyfucking", "boypussy", "brazzers", "bukake", "bukakke", "bukkake", "bukkakese", "bunnygirl", "butt plug", "buttfuck", "buttfucka", "buttfucker", "buttplay", "buttsex", "c|_|nt", "c0ck", "camel fucker", "camel toe", "cameltoe", "camgirl", "camslut", "camwhore", "camwhores", "chaturbate", "chicks with dicks", "choad", "chode", "clitfuck", "clitless", "cnut", "cock", "cockface", "cockgobbler", "cockhead", "cockhole", "cockmeat", "cocksucka", "cocksucker", "cocksuckers", "cocksuckin", "coochie", "creampie", "creampied", "creampieing", "creampies", "cuckholding", "cuckholdry", "cucking", "cuckish", "cucklord", "cuckold", "cuckolding", "cuckolds", "cuckshed", "cucky", "cum", "cumed", "cumguzzler", "cumhole", "cuming", "cummed", "cummers", "cummies", "cumming", "cumshot", "cumshots", "cumskin", "cumslut", "cumsucking", "cumswallow", "cumtart", "cunnilingus", "cunnillingus", "cunt", "cuntrag", "deep throat", "deep throating", "deep-throat", "deep-throated", "deep-throating", "deepthroat", "deepthroated", "deepthroating", "deepthroats", "dick-sneeze", "dickcheese", "dickface", "dickfucker", "dickgirls", "dickhole", "dickjuice", "dicklicker", "dickmilk", "dickride", "dickriding", "dickslap", "dicksucker", "dildo", "dildoing", "dilfs", "dog style", "dogfucking", "doggie style", "doggiestyle", "doggy stile", "doggy style", "doggystyle", "donkey punch", "double dong", "double penetration", "eat you out", "eat your ass", "eating ass", "ecchi", "ejaculate", "ejaculating", "ero guro", "erotic asphyxiation", "extremetube", "facefuck", "facefucked", "felatio", "felch", "felching", "fellate", "fellatio", "feltch", "feltching", "female squirting", "femdom", "finger-bang", "finger-banging", "finger-fuck", "fingerbang", "fingerbanged", "fingerbanging", "fingerblast", "fingerblasting", "fingered", "fingerfuck", "fingering", "fistfuck", "fisting", "fking", "foot fetish", "foreskin", "fucc", "f\xfack", "f\xfbck", "f\xfcck", "fuck her", "fuck him", "fuckable", "fuckass", "fuckbag", "fuckbuddies", "fuckbuddy", "fuckface", "fuckhole", "fuckpigs", "fuk", "gang bang", "gang rape", "gangbang", "gangrape", "giant cock", "gloryhole", "golden shower", "goopchute", "goregasm", "group sex", "hand job", "handjob", "hardcore porn", "hentai", "Hi! I love sex", "homoerotic", "hornpub", "horny", "hot bi babe", "hotwife", "hubporn", "jack off", "jacking off", "jerk off instructions", "jerking off", "jerkoff", "jizz", "jizzle", "k|_|nt", "kinkiest", "kinkster", "kinky", "limpdick", "livesex", "lolicon", "mangina", "manslut", "manwhore", "masochism", "menage a trois", "micropenis", "milf", "milfs", "missionary position", "mommy milkers", "my dick", "My naked photos", "My sexy photos", "naughtyamerica", "nubiles", "nudes", "nuvid", "oralsex", "orgasm", "orgies", "orgy", "paypig", "piss play", "pissflaps", "pissing porn", "pompoir", "ponyplay", "poon", "poop chute", "poopchute", "pornhub", "pornmd", "porno", "pornography", "pornstar", "pornstars", "porntube", "pov porn", "precum", "precumming", "precums", "pregnancy fetish", "prone bone", "pu$$y", "pussy licking", "pussyjob", "pussylicking", "q|_|nt", "queef", "qunt", "rapeplay", "rawdog", "reality kings", "redtube", "reverse cowgirl", "rimjob", "rimjobworld", "rule 34", "scatplay", "sex toy", "sexbot", "sextape", "shaved beaver", "shaved pussy", "shemale", "shitcunt", "shitdick", "shotacon", "sit on my face", "skeet", "skullfuck", "slampig", "slut", "slutwife", "sodomise", "sodomite", "sodomize", "spankbang", "spankbank", "suck clit", "suck my clit", "suck my dick", "suck my pubes", "teamskeet", "tentacle porn", "throatfuck", "throatfucked", "throatfucking", "throatpie", "thumbzilla", "tiddays", "tiddayz", "tiddes", "tiddie", "tiddied", "tiddies", "tiddy", "tiddys", "titfuck", "titfucking", "titfucks", "tities", "titjob", "tits", "tittay", "titted", "tittes", "tittfuck", "titti", "tittie", "tittied", "titties", "tittiez", "tittle", "titts", "titty", "tittyfuck", "tittyfucking", "tittyfucks", "tittys", "tity", "tnaflix", "to fuck", "tribadism", "tribbing", "upskirt", "urethra play", "vibrator", "voyeurism", "vrporn", "wank", "wankjob", "whore", "xhamster", "xnxx", "xtube", "xvideos", "youporn"],
+                s = ["africoon", "americoon", "arabshits", "assfucker", "asshat", "asshole", "assnigger", "assrape", "asswipe", "autist", "b!tch", "bamboo coon", "betacuck", "blmtard", "brown towel heads", "buttfucka", "buttfucker", "c|_|nt", "camslut", "camwhore", "camwhores", "china-man", "chinaman", "chinamen", "chinc", "chinese wetback", "chink", "cockknocker", "cockknoker", "cockmongler", "cockmongruel", "cockmuncher", "cocknocker", "cocknugget", "cocksucka", "cocksucker", "cocksuckers", "cocksuckin", "coon ass", "cotton picker", "cousin-fucker", "crab rangook", "crabrangook", "cuck", "cuckold", "cucktard", "cumslut", "cunt", "cuntrag", "dipshit", "dogfucking", "dot head", "dumbfuck", "dune coon", "dunecoon", "f4gg0t*", "f4ggot*", "f4gs", "fag", "fagbag", "fagg", "faggot*", "faggotcock", "fagit", "fags", "fagtard", "fat bitch", "feggit", "feggot", "femenazis", "feminazi", "femtards", "fuckboy", "fucker", "fuckface", "fuckhead", "fucknig", "fuckoff", "fuckpigs", "fucktard", "fucktart", "fuckwad", "fuckwitt", "gas the kikes", "gayfuck", "gaylord", "gaytard", "gaywad", "goatfucker", "gook", "gookanese", "hindoo", "homodumbshit", "jackass", "jappos", "japs", "jerkoff", "jewbag", "jewtard", "jigaboo", "jigarooni", "jiggabo", "jiggaboo", "jiggers", "jijjiboo", "joo shill", "k|_|nt", "kill yourself", "kneegrow", "kyke", "kys", "ladyboy", "librtard", "libtard", "libturd", "lolspergs", "manslut", "manwhore", "mentally retarded", "mongaloid", "monglet", "mongloid", "mongoloid", "mongreloids", "mongtard", "mothafucka", "mothafuckin", "motherfucker", "motherfucking", "musloid chimps", "musloids", "n i g g", "n!bb3r*", "n!bber*", "n!gg3r*", "n!gger*", "n!kk3r*", "n!kker*", "n!qq3r*", "n!qqer*", "n|bb3r*", "n|bber*", "n|gg3r*", "n|gger*", "n|kk3r*", "n|kker*", "n|qq3r*", "n|qqer*", "n1bb3r*", "n1bber*", "n1g", "n1gg", "n1gg3r*", "n1gger*", "n1igger*", "n1kk3r*", "n1kker*", "n1qq3r*", "n1qqer*", "negroid", "negros", "neomongloids", "nibb3r", "nibber", "niccer", "nick gur", "nig nog", "nigaboo", "nigar", "nigette", "nigg", "nigg", "nigg3r", "niggar", "nigge", "niggeer", "nigger*", "niggies", "niggin", "niggir", "nigglet", "nigglets", "niggor", "niggr", "niggress", "niggs", "niggur", "niggurs", "niglet", "nignog", "nigor", "nigr", "nigre", "nigress", "nigro", "nigs", "nikk3r", "nikker", "niponese", "niqq3r", "niqqer", "paki", "phag", "phaggot", "pickaninny", "pinkaloid", "poofter", "pooinloo", "poojeet", "porch monkey", "porch monkies", "pu$$y", "q|_|nt", "queerbag", "queerhole", "qunt", "r3t4rd", "r3tar", "rapefugee", "reatard", "reatarded", "retard", "rētard", "retardation", "retarde", "retarded", "retardi", "retards", "retart", "retrad", "ritard", "ritarded", "rotten joo", "rtard", "sand monkey", "sand nigger", "sandnegroes", "sandnigers", "sandniggs", "sandnogs", "schizoid", "scumfuck", "she-man", "sheepfucker", "shekelnose", "shemale", "shitbag", "shitbrains", "shitcunt", "shiteaters", "shitface", "shithead", "shitskin", "shitspitter", "shitstain", "skank", "skanky", "slampig", "slant eye", "slantey-eye'd", "slut", "slutwife", "socket face", "sperg", "sperglord", "spergouts", "spergs", "spergtard", "spic", "spick", "spickaboo", "spicks", "spicshit", "spictard", "spigger", "spik", "squinties", "suck my dick", "that ho over there", "that hoe over there", "the orientals", "towelhead", "towel head", "towel-head", "trannie", "tranny", "turkoids", "turkroach", "uglyfuck", "wanker", "wankjob", "wetback", "wetblack", "whigger", "whore", "wigger", "zipperhead"]
+        },
+        141106: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                MatchStrategy: function() {
+                    return i
+                },
+                getMatchedPositions: function() {
+                    return u
+                },
+                isMatch: function() {
+                    return l
+                }
+            }), (r = i || (i = {}))[r.ExactMatch = 0] = "ExactMatch", r[r.PrefixMatch = 1] = "PrefixMatch";
+            let s = e => /\p{P}/gu.test(null != e ? e : "") || " " === e || "" === e,
+                a = (e, t, n) => {
+                    if (n - t > e.length) return !1;
+                    let i = e.charAt(t - 1),
+                        r = e.charAt(n + 1);
+                    return s(i) && s(r)
+                },
+                o = (e, t) => s(e.charAt(t - 1)),
+                l = (e, t, n, i) => {
+                    if (1 === i) return o(e, t);
+                    return a(e, t, n)
+                },
+                u = (e, t, n, i) => {
+                    if (0 === i) return {
+                        start: t,
+                        end: n
+                    };
+                    let r = n;
+                    for (; r < e.length - 1 && !s(e.charAt(r + 1));) r++;
+                    return {
+                        start: t,
+                        end: r
+                    }
+                }
+        },
+        603158: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                normalize: function() {
+                    return l
+                }
+            });
+            let i = {
+                    "|": " "
+                },
+                r = {
+                    "[": " ",
+                    "]": " ",
+                    "(": " ",
+                    ")": " ",
+                    "|": " ",
+                    "~": " "
+                },
+                s = {
+                    "-": "-",
+                    " ": " "
+                },
+                a = {
+                    "​": "",
+                    "‌": "",
+                    "‍": "",
+                    "‎": "",
+                    "\uFEFF": ""
+                },
+                o = {
+                    ...s,
+                    ...r,
+                    ...a,
+                    ...i
+                };
+
+            function l(e) {
+                let t = "";
+                for (let n = 0; n < e.length; n++) {
+                    let i = e[n];
+                    null != o[i] ? t += o[i] : /[\p{Pd}\p{Pc}\p{Po}]/gu.test(i) ? t += " " : t += i
+                }
+                return t.toLowerCase()
+            }
+        },
+        363072: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                Trie: function() {
+                    return o
+                }
+            });
+            var i = n("141106");
+
+            function r(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let s = e => "*" === e.charAt(e.length - 1) ? i.MatchStrategy.PrefixMatch : i.MatchStrategy.ExactMatch;
+            class a {
+                _internalAdd(e, t, n) {
+                    let i = e.charAt(0),
+                        r = this.suffix[i];
+                    null == r && (r = new a, this.suffix[i] = r, null != n ? r.value = n.slice(0, n.length - e.length + 1) : r.value = i), e.length > 1 && "*" !== e.charAt(1) ? r._internalAdd(e.substring(1), t, null != n ? n : e) : (r.strategy = s(t), r.isWord = !0)
+                }
+                add(e) {
+                    this._internalAdd(e, e)
+                }
+                constructor() {
+                    r(this, "isWord", void 0), r(this, "value", void 0), r(this, "suffix", {}), r(this, "strategy", void 0), this.isWord = null, this.value = null, this.suffix = {}, this.strategy = i.MatchStrategy.ExactMatch
+                }
+            }
+            class o {
+                static fromSnapshot(e) {
+                    let t = new o;
+                    return t.trie = e.trie, t
+                }
+                search(e) {
+                    let t = this.trie,
+                        n = null,
+                        r = null,
+                        s = {};
+                    for (let u = 0; u <= e.length; u++)
+                        if (n = e.charAt(u), (t = null != (r = t.suffix[n]) ? r : this.trie).isWord) {
+                            var a, o, l;
+                            let n = t.strategy,
+                                r = u + 1 - (null !== (o = null === (a = t.value) || void 0 === a ? void 0 : a.length) && void 0 !== o ? o : 0),
+                                d = u;
+                            if ((0, i.isMatch)(e, r, d, n)) {
+                                let t = (0, i.getMatchedPositions)(e, r, d, n);
+                                s[t.start] = Math.max(Number(null !== (l = s[t.start]) && void 0 !== l ? l : 0), t.end)
+                            }
+                        } return s
+                }
+                addWord(e) {
+                    null == this.trie && (this.trie = new a), this.trie.add(e)
+                }
+                addWords(e) {
+                    e.forEach(e => this.addWord(e))
+                }
+                clear() {
+                    this.trie = new a
+                }
+                constructor() {
+                    r(this, "trie", void 0), this.trie = new a
+                }
+            }
+        },
+        202131: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getKeywordSubstitutedContent: function() {
+                    return o
+                }
+            }), n("47120"), n("724458");
+            var i = n("960048"),
+                r = n("592204"),
+                s = n("803141"),
+                a = n("603158");
+
+            function o(e, t) {
+                if (!(0, r.isEligibleForKeywordFiltering)({
+                        location: "keyword_substituted_content"
+                    })) return e;
+                try {
+                    let n = function(e) {
+                        let t = s.default.getKeywordTrie();
+                        if ("" === e) return [];
+                        let n = (0, a.normalize)(e).toLowerCase();
+                        return Object.entries(t.search(n)).map(e => {
+                            let [t, n] = e;
+                            return {
+                                start: Number(t),
+                                end: n
+                            }
+                        })
+                    }(e);
+                    if (0 === n.length) return e;
+                    return n.sort((e, t) => t.start - e.start).reduce((e, n) => (function(e, t, n) {
+                        let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+                            r = Math.max(t, 0),
+                            s = Math.min(n, e.length - 1),
+                            a = i ? "\\*" : "*",
+                            o = [...e.substring(r, s + 1)].map(e => " " === e ? " " : a).join("");
+                        return "".concat(e.substring(0, r)).concat(o).concat(e.substring(s + 1))
+                    })(e, n.start, n.end, null == t ? void 0 : t.escapeReplacement), e)
+                } catch (t) {
+                    return i.default.captureException(t, {
+                        tags: {
+                            app_context: "keyword_filtering"
+                        }
+                    }), e
+                }
+            }
+        },
+        712950: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useKeywordFilterSettings: function() {
+                    return s
+                }
+            });
+            var i = n("399606"),
+                r = n("581883");
+            let s = () => {
+                var e, t, n;
+                let s = (0, i.useStateFromStoresObject)([r.default], () => {
+                    var e, t;
+                    return null !== (t = null === (e = r.default.settings.textAndImages) || void 0 === e ? void 0 : e.keywordFilterSettings) && void 0 !== t ? t : {}
+                });
+                return {
+                    profanity: null === (e = s.profanity) || void 0 === e ? void 0 : e.value,
+                    sexualContent: null === (t = s.sexualContent) || void 0 === t ? void 0 : t.value,
+                    slurs: null === (n = s.slurs) || void 0 === n ? void 0 : n.value
+                }
+            }
+        },
+        200120: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useShouldFilterKeywords: function() {
+                    return a
+                }
+            });
+            var i = n("470079"),
+                r = n("592204"),
+                s = n("712950");
+            let a = () => {
+                let {
+                    profanity: e,
+                    sexualContent: t,
+                    slurs: n
+                } = (0, s.useKeywordFilterSettings)(), a = (0, r.useIsEligibleForKeywordFiltering)({
+                    location: "use-should-filter-keywords"
+                });
+                return i.useMemo(() => a && (e || t || n), [e, t, n, a])
+            }
+        },
         900460: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -170526,31 +170920,32 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
-                },
-                getInitialParserState: function() {
-                    return _
-                },
-                getInitialParserStateFromMessage: function() {
-                    return d
-                },
-                renderAutomodMessageMarkup: function() {
                     return I
                 },
-                renderChangelogMessageMarkup: function() {
+                getInitialParserState: function() {
                     return c
+                },
+                getInitialParserStateFromMessage: function() {
+                    return _
+                },
+                renderAutomodMessageMarkup: function() {
+                    return T
+                },
+                renderChangelogMessageMarkup: function() {
+                    return E
                 }
             }), n("47120"), n("757143"), n("865427");
             var i = n("830121"),
-                r = n("454585"),
-                s = n("55406"),
-                a = n("408433"),
-                o = n("981631");
-            let l = new Set([o.MessageEmbedTypes.IMAGE, o.MessageEmbedTypes.GIFV]),
-                u = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
+                r = n("202131"),
+                s = n("454585"),
+                a = n("55406"),
+                o = n("408433"),
+                l = n("981631");
+            let u = new Set([l.MessageEmbedTypes.IMAGE, l.MessageEmbedTypes.GIFV]),
+                d = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
 
-            function d(e, t) {
-                let n = _({
+            function _(e, t) {
+                let n = c({
                         channelId: e.channel_id,
                         messageId: e.id,
                         renderOptions: t
@@ -170564,7 +170959,7 @@
                 }
             }
 
-            function _(e) {
+            function c(e) {
                 let {
                     channelId: t,
                     messageId: n,
@@ -170590,33 +170985,36 @@
                 }
             }
 
-            function c(e, t, n) {
+            function E(e, t, n) {
                 return {
                     hasSpoilerEmbeds: !1,
-                    content: r.default.reactParserFor(s.default.getDefaultRules(t))(e.content, !1, null != n ? {
+                    content: s.default.reactParserFor(a.default.getDefaultRules(t))(e.content, !1, null != n ? {
                         changeLog: n
                     } : {})
                 }
             }
 
-            function E(e) {
+            function I(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 return function(e, t, n) {
-                    var r;
+                    var s;
                     let {
-                        toAST: s = !1,
-                        hideSimpleEmbedContent: o = !0,
-                        formatInline: _ = !1,
-                        postProcessor: c
-                    } = n, E = !1, I = e((null !== (r = n.contentMessage) && void 0 !== r ? r : t).content, !0, d(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), o && (e = function(e, t) {
+                        toAST: a = !1,
+                        hideSimpleEmbedContent: l = !0,
+                        formatInline: c = !1,
+                        postProcessor: E,
+                        shouldFilterKeywords: I
+                    } = n, T = !1, h = (null !== (s = n.contentMessage) && void 0 !== s ? s : t).content, A = e(I ? (0, r.getKeywordSubstitutedContent)(h, {
+                        escapeReplacement: !0
+                    }) : h, !0, _(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), l && (e = function(e, t) {
                         if (1 !== e.length || 1 !== t.length) return e;
                         let n = e[0],
                             i = t[0];
-                        return ("link" === n.type || "attachmentLink" === n.type) && l.has(i.type) && (0, a.isEmbedInline)(i) ? [] : e
-                    }(e, t.embeds)), !_ && (e = function(e, t) {
-                        return t ? T(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = T(e[0].content)), e)
-                    }(e, n)), E = function(e, t) {
-                        return t ? f(e) : "paragraph" === e[0].type && e[0].content instanceof Array && f(e[0].content)
+                        return ("link" === n.type || "attachmentLink" === n.type) && u.has(i.type) && (0, o.isEmbedInline)(i) ? [] : e
+                    }(e, t.embeds)), !c && (e = function(e, t) {
+                        return t ? f(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = f(e[0].content)), e)
+                    }(e, n)), T = function(e, t) {
+                        return t ? S(e) : "paragraph" === e[0].type && e[0].content instanceof Array && S(e[0].content)
                     }(e = function(e) {
                         let t = e.some(e => "link" !== e.type || !1);
                         return e.filter(e => {
@@ -170624,21 +171022,21 @@
                                 r = (0, i.parseQuestsEmbedCode)(e.target);
                             return !(n && null != r && !t)
                         })
-                    }(e), n), _ && (e = function e(t) {
+                    }(e), n), c && (e = function e(t) {
                         return t.forEach(t => {
-                            u.has(t.type) && null != t.content && (Array.isArray(t.content) ? e(t.content) : t.content = t.content.replace(/\n/g, " "))
+                            d.has(t.type) && null != t.content && (Array.isArray(t.content) ? e(t.content) : t.content = t.content.replace(/\n/g, " "))
                         }), t
-                    }(e)), null != c && (e = c(e, n)), e));
+                    }(e)), null != E && (e = E(e, n)), e));
                     return {
-                        hasSpoilerEmbeds: E,
-                        content: I
+                        hasSpoilerEmbeds: T,
+                        content: A
                     }
-                }(t.formatInline ? r.default.parseInlineReply : r.default.parse, e, t)
+                }(t.formatInline ? s.default.parseInlineReply : s.default.parse, e, t)
             }
 
-            function I(e, t, n) {
+            function T(e, t, n) {
                 var i;
-                return i = r.default.parseAutoModerationSystemMessage, i(e, !0, {
+                return i = s.default.parseAutoModerationSystemMessage, i(e, !0, {
                     allowLinks: !1,
                     allowDevLinks: !1,
                     allowEmojiLinks: !1,
@@ -170656,7 +171054,7 @@
                 }, e => (!Array.isArray(e) && (e = [e]), e))
             }
 
-            function T(e) {
+            function f(e) {
                 if (e.some(e => "emoji" !== e.type && "customEmoji" !== e.type && "soundboard" !== e.type && ("string" != typeof e.content || "" !== e.content.trim()) && !0)) return e;
                 let t = 0;
                 return (e.forEach(e => {
@@ -170666,7 +171064,7 @@
                 }), e)
             }
 
-            function f(e) {
+            function S(e) {
                 return e.some(e => "spoiler" === e.type && Array.isArray(e.content) && e.content.some(e => "link" === e.type || "attachmentLink" === e.type))
             }
         },
@@ -173134,49 +173532,51 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("470079"),
-                r = n("626135"),
-                s = n("937889"),
-                a = n("761910"),
-                o = n("981631"),
-                l = n("689938"),
-                u = n("354088");
+                r = n("200120"),
+                s = n("626135"),
+                a = n("937889"),
+                o = n("761910"),
+                l = n("981631"),
+                u = n("689938"),
+                d = n("354088");
 
-            function d(e, t) {
+            function _(e, t) {
                 let {
                     hideSimpleEmbedContent: n,
-                    formatInline: d = !1,
-                    noStyleAndInteraction: _ = !1,
-                    isInteracting: c = !1,
-                    allowHeading: E = !1,
-                    allowList: I = !1,
-                    allowLinks: T = !1,
-                    allowDevLinks: f = !1,
-                    allowSubtext: S = !1,
-                    previewLinkTarget: h = !1
-                } = t;
+                    formatInline: _ = !1,
+                    noStyleAndInteraction: c = !1,
+                    isInteracting: E = !1,
+                    allowHeading: I = !1,
+                    allowList: T = !1,
+                    allowLinks: f = !1,
+                    allowDevLinks: S = !1,
+                    allowSubtext: h = !1,
+                    previewLinkTarget: A = !1
+                } = t, m = (0, r.useShouldFilterKeywords)();
                 return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isUnsupported ? {
-                    content: l.default.Messages.MESSAGE_UNSUPPORTED,
+                    content: u.default.Messages.MESSAGE_UNSUPPORTED,
                     hasSpoilerEmbeds: !1
-                } : e.isCommandType() && 0 === e.content.length || e.hasFlag(o.MessageFlags.LOADING) ? (0, a.default)(e) : e.type === o.MessageTypes.CHANGELOG ? (0, s.renderChangelogMessageMarkup)(e, u, {
+                } : e.isCommandType() && 0 === e.content.length || e.hasFlag(l.MessageFlags.LOADING) ? (0, o.default)(e) : e.type === l.MessageTypes.CHANGELOG ? (0, a.renderChangelogMessageMarkup)(e, d, {
                     track: (e, t) => {
-                        r.default.track(e, t)
+                        s.default.track(e, t)
                     }
-                }) : (0, s.default)(e, {
+                }) : (0, a.default)(e, {
                     hideSimpleEmbedContent: n,
-                    formatInline: d,
-                    noStyleAndInteraction: _,
-                    isInteracting: c,
-                    allowHeading: E,
-                    allowList: I,
-                    allowLinks: T,
-                    allowSubtext: S,
-                    allowDevLinks: f,
-                    previewLinkTarget: h
-                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, d, _, c, E, I, T, h, S])
+                    formatInline: _,
+                    noStyleAndInteraction: c,
+                    isInteracting: E,
+                    allowHeading: I,
+                    allowList: T,
+                    allowLinks: f,
+                    allowSubtext: h,
+                    allowDevLinks: S,
+                    previewLinkTarget: A,
+                    shouldFilterKeywords: m
+                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, _, c, E, I, T, f, A, h, m])
             }
         },
         761910: function(e, t, n) {
@@ -173434,8 +173834,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716488774087",
-                                    build_number: "295865"
+                                    built_at: "1716489399641",
+                                    build_number: "295876"
                                 }
                             },
                             retries: 1
@@ -250389,7 +250789,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ef1d95bc871e24475de6e41b15c49c45e62129a7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "87588dc9103f25cc7e1663de18feb2f277bead45"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279501,7 +279901,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295865"
+                                build_number: "295876"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286859,7 +287259,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295865", "295865"), 10);
+                let s = parseInt((n = "295876", "295876"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314567,4 +314967,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.a357a9f2bfc4fe170a3d.js.map
+//# sourceMappingURL=71586.24db14f4a9b83a9fef6b.js.map
