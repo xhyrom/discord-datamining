@@ -15678,9 +15678,6 @@
                 fetchCurrentUser: function() {
                     return I
                 },
-                fetchMutualFriends: function() {
-                    return A
-                },
                 fetchProfile: function() {
                     return h
                 },
@@ -15767,14 +15764,15 @@
                     withMutualFriendsCount: i,
                     withMutualFriends: r,
                     guildId: s,
-                    connectionsRoleId: a
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, u = arguments.length > 2 ? arguments[2] : void 0;
+                    connectionsRoleId: a,
+                    abortSignal: u
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, d = arguments.length > 2 ? arguments[2] : void 0;
                 l.default.dispatch({
                     type: "USER_PROFILE_FETCH_START",
                     userId: e
                 });
                 try {
-                    let d = await o.HTTP.get({
+                    let _ = await o.HTTP.get({
                         url: c.Endpoints.USER_PROFILE(e),
                         query: {
                             friend_token: t,
@@ -15784,45 +15782,23 @@
                             guild_id: s,
                             connections_role_id: a
                         },
-                        oldFormErrors: !0
+                        oldFormErrors: !0,
+                        signal: u
                     });
-                    return null == u || u(d.body, s), l.default.dispatch({
+                    return null == d || d(_.body, s), l.default.dispatch({
                         type: "USER_UPDATE",
-                        user: d.body.user
+                        user: _.body.user
                     }), l.default.dispatch({
                         type: "USER_PROFILE_FETCH_SUCCESS",
-                        ...d.body
-                    }), null != s && null != d.body.guild_member && l.default.dispatch({
+                        ..._.body
+                    }), null != s && null != _.body.guild_member && l.default.dispatch({
                         type: "GUILD_MEMBER_PROFILE_UPDATE",
                         guildId: s,
-                        guildMember: d.body.guild_member
-                    }), d.body
+                        guildMember: _.body.guild_member
+                    }), _.body
                 } catch (t) {
                     throw null != t && (null == t ? void 0 : t.body) != null && E.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
                         type: "USER_PROFILE_FETCH_FAILURE",
-                        userId: e
-                    }), t
-                }
-            }
-            async function A(e, t) {
-                l.default.dispatch({
-                    type: "MUTUAL_FRIENDS_FETCH_START",
-                    userId: e
-                });
-                try {
-                    let n = await o.HTTP.get({
-                        url: c.Endpoints.USER_RELATIONSHIPS(e),
-                        oldFormErrors: !0,
-                        signal: t
-                    });
-                    l.default.dispatch({
-                        type: "MUTUAL_FRIENDS_FETCH_SUCCESS",
-                        userId: e,
-                        mutualFriends: n.body
-                    })
-                } catch (t) {
-                    throw (null == t ? void 0 : t.body) != null && E.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
-                        type: "MUTUAL_FRIENDS_FETCH_FAILURE",
                         userId: e
                     }), t
                 }
@@ -20475,8 +20451,7 @@
                             children: _.default.Messages.GOT_IT
                         }), (0, i.jsx)(a.Button, {
                             className: c.dmButton,
-                            look: a.Button.Looks.INVERTED,
-                            color: a.Button.Colors.BRAND,
+                            color: a.Button.Colors.BRAND_INVERTED,
                             onClick: () => d(),
                             children: h
                         })]
@@ -22677,13 +22652,13 @@
                 c = n("690514");
             let E = {
                     FILLED: c.lookFilled,
-                    INVERTED: c.lookInverted,
                     OUTLINED: c.lookOutlined,
                     LINK: c.lookLink,
                     BLANK: c.lookBlank
                 },
                 I = {
                     BRAND: c.colorBrand,
+                    BRAND_INVERTED: c.colorBrandInverted,
                     RED: c.colorRed,
                     GREEN: c.colorGreen,
                     PRIMARY: c.colorPrimary,
@@ -37010,7 +36985,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295805", ", Version Hash: ").concat("427ba0df8793244afa759e8043093c8ae2394dbf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295933", ", Version Hash: ").concat("23b4d6d312fa4015239e1f5795052808b79d8bfa")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53860,6 +53835,8 @@
                 COLLECTIBLES_FEELIN_RETRO_PIRATES_COACHTIP_TITLE: "Feelin' Retro & Pirates",
                 COLLECTIBLES_FEELIN_RETRO_PIRATES_COACHTIP_DESCRIPTION: "Give 'em a look-see if yer feelin' curious, matey…",
                 COLLECTIBLES_NEW_BADGE: "NEW",
+                NEW_ARRIVALS: "New Arrivals",
+                COLLECTIBLES_SEE_WHATS_NEW: "See what's new in the Shop!",
                 INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
                 PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
                 PRIVATE_CHANNEL_INTEGRATION_ADDED_DELETED_APPLICATION: "$[!!{username}!!](usernameHook) added a deleted application. See our [help center]({helpCenterLink}) for more info.",
@@ -88228,18 +88205,20 @@
                 a = n("904245"),
                 o = n("147913"),
                 l = n("3148"),
-                u = n("706454"),
-                d = n("695346"),
-                _ = n("375954"),
-                c = n("709054"),
-                E = n("839627"),
-                I = n("802098"),
-                T = n("128014"),
-                f = n("163379"),
-                S = n("596401"),
-                h = n("981631");
+                u = n("960412"),
+                d = n("706454"),
+                _ = n("695346"),
+                c = n("375954"),
+                E = n("709054"),
+                I = n("839627"),
+                T = n("802098"),
+                f = n("128014"),
+                S = n("163379"),
+                h = n("596401"),
+                A = n("981631"),
+                m = n("930441");
 
-            function A(e, t, n) {
+            function N(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -88247,15 +88226,15 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            async function m(e) {
-                if (d.LastReceivedChangelogId.getSetting() >= e) return;
-                let t = await s.default.getOrEnsurePrivateChannel(S.SYSTEM_UPDATES_USER_ID);
+            async function p(e) {
+                if (_.LastReceivedChangelogId.getSetting() >= e) return;
+                let t = await s.default.getOrEnsurePrivateChannel(h.SYSTEM_UPDATES_USER_ID);
                 if (null == t) return;
                 await a.default.fetchMessages({
                     channelId: t,
                     limit: 1
                 });
-                let n = _.default.getLastMessage(t);
+                let n = c.default.getLastMessage(t);
                 if (null == n) return;
                 let i = (0, l.default)({
                     ...n,
@@ -88266,18 +88245,18 @@
                 });
                 a.default.receiveMessage(t, {
                     ...i,
-                    state: h.MessageStates.SENT,
+                    state: A.MessageStates.SENT,
                     channel_id: t
                 }, !0, {})
             }
-            class N extends o.default {
+            class O extends o.default {
                 constructor(...e) {
-                    super(...e), A(this, "actions", {
+                    super(...e), N(this, "actions", {
                         POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
-                    }), A(this, "handleConnectionOpen", async e => {
+                    }), N(this, "handleConnectionOpen", async e => {
                         let {
                             canReceiveMessage: t
-                        } = E.default.getCurrentConfig({
+                        } = I.default.getCurrentConfig({
                             location: "changelog_manager"
                         }, {
                             autoTrackExposure: !1
@@ -88288,31 +88267,32 @@
                                     min_version: s
                                 }] of Object.entries(e)) s <= t && s > n && (n = s, i = r);
                             return i
-                        }(s, (0, T.getClientVersionForChangelog)());
+                        }(s, (0, f.getClientVersionForChangelog)());
                         if (i.default.dispatch({
                                 type: "CHANGE_LOG_SET_CONFIG",
                                 config: n.body,
                                 latestChangelogId: a
                             }), null == a) return;
-                        if (t) {
-                            m(a);
+                        let o = await (0, u.fetchEmailSettings)();
+                        if (t && (null == o ? void 0 : o.categories[m.EmailCategories.UPDATES_AND_ANNOUNCEMENTS])) {
+                            p(a);
                             return
                         }
                         if (!0 !== s[a].show_on_startup) return;
-                        let o = I.default.lastSeenChangelogId(),
-                            l = I.default.lastSeenChangelogDate();
-                        if (null != o && 0 >= c.default.compare(a, o)) return;
-                        let d = await r.default.fetchChangelog(a, u.default.locale);
-                        if (null != d) {
-                            if (null == l || null == I.default.lastSeenChangelogDate()) {
-                                r.default.markChangelogAsSeen(a, d.date);
+                        let l = T.default.lastSeenChangelogId(),
+                            _ = T.default.lastSeenChangelogDate();
+                        if (null != l && 0 >= E.default.compare(a, l)) return;
+                        let c = await r.default.fetchChangelog(a, d.default.locale);
+                        if (null != c) {
+                            if (null == _ || null == T.default.lastSeenChangelogDate()) {
+                                r.default.markChangelogAsSeen(a, c.date);
                                 return
-                            }!I.default.isLocked() && new Date(d.date) > new Date(l) && (0, f.openChangelog)()
+                            }!T.default.isLocked() && new Date(c.date) > new Date(_) && (0, S.openChangelog)()
                         }
                     })
                 }
             }
-            t.default = new N
+            t.default = new O
         },
         802098: function(e, t, n) {
             "use strict";
@@ -88459,8 +88439,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295805", "295805"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295805")), t = 0), t
+                let t = parseInt((e = "295933", "295933"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295933")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116366,8 +116346,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295805",
-                    versionHash: "427ba0df8793244afa759e8043093c8ae2394dbf"
+                    buildNumber: "295933",
+                    versionHash: "23b4d6d312fa4015239e1f5795052808b79d8bfa"
                 }
             }
             n.r(t), n.d(t, {
@@ -163066,6 +163046,400 @@
                 l = new Set(["tab", "shift+tab", "down", "up", "left", "right", "home", "end"]);
             (r = i || (i = {})).ENTER = "Enter", r.TAB = "Tab", r.SPACE = " ", r.ESCAPE = "Escape", r.SHIFT = "Shift"
         },
+        592204: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEligibleForKeywordFiltering: function() {
+                    return s
+                },
+                useIsEligibleForKeywordFiltering: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_keyword_filter_experiment",
+                label: "Replace registered keywords with asterisks",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable Keyword Filter",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function r(e) {
+                let {
+                    location: t
+                } = e;
+                return i.useExperiment({
+                    location: t
+                }, {
+                    autoTrackExposure: !0
+                }).enabled
+            }
+
+            function s(e) {
+                let {
+                    location: t
+                } = e;
+                return i.getCurrentConfig({
+                    location: t
+                }).enabled
+            }
+        },
+        803141: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("695346"),
+                r = n("581883"),
+                s = n("412788"),
+                a = n("592204"),
+                o = n("932941"),
+                l = n("363072"),
+                u = n("526761");
+
+            function d(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let _ = new l.Trie;
+
+            function c() {
+                let {
+                    profanity: e = !1,
+                    slurs: t = !1,
+                    sexualContent: n = !1
+                } = i.KeywordFilterSettings.getSetting(), r = [...e ? o.PROFANITY_KEYWORD_LIST : [], ...t ? o.SLURS_KEYWORD_LIST : [], ...n ? o.SEXUAL_CONTENT_KEYWORD_LIST : []];
+                _.addWords(r)
+            }
+
+            function E() {
+                if (!(0, a.isEligibleForKeywordFiltering)({
+                        location: "connection_open"
+                    })) return !1;
+                c()
+            }
+
+            function I() {
+                if (!(0, a.isEligibleForKeywordFiltering)({
+                        location: "overlay_initialize"
+                    })) return !1;
+                c()
+            }
+
+            function T(e) {
+                let {
+                    local: t,
+                    settings: n
+                } = e;
+                if (!t || n.type !== u.UserSettingsTypes.PRELOADED_USER_SETTINGS || !(0, a.isEligibleForKeywordFiltering)({
+                        location: "user_settings_proto_update"
+                    })) return !1;
+                _.clear(), c()
+            }
+            class f extends s.default {
+                initialize() {
+                    this.waitFor(r.default)
+                }
+                loadCache() {
+                    let e = this.readSnapshot(f.LATEST_SNAPSHOT_VERSION);
+                    null != e && (_ = l.Trie.fromSnapshot(e))
+                }
+                takeSnapshot() {
+                    return {
+                        version: f.LATEST_SNAPSHOT_VERSION,
+                        data: _
+                    }
+                }
+                getKeywordTrie() {
+                    return _
+                }
+                initializeForKeywordTests() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+                    _.clear(), ! function() {
+                        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+                        _.addWords(e)
+                    }(e)
+                }
+                constructor() {
+                    super({
+                        CONNECTION_OPEN: E,
+                        CONNECTION_OPEN_SUPPLEMENTAL: E,
+                        CACHE_LOADED_LAZY: () => this.loadCache(),
+                        OVERLAY_INITIALIZE: I,
+                        USER_SETTINGS_PROTO_UPDATE: T
+                    })
+                }
+            }
+            d(f, "displayName", "KeywordFilterStore"), d(f, "LATEST_SNAPSHOT_VERSION", 1), t.default = new f
+        },
+        932941: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                PROFANITY_KEYWORD_LIST: function() {
+                    return i
+                },
+                SEXUAL_CONTENT_KEYWORD_LIST: function() {
+                    return r
+                },
+                SLURS_KEYWORD_LIST: function() {
+                    return s
+                }
+            });
+            let i = ["asscock", "assfuck", "assfucker", "assnigger", "assrape", "b!tch", "b1tch", "batshit", "bitch", "bitchass", "bitchtits", "boyfucking", "boypussy", "bullshit", "buttfuck", "buttfucka", "buttfucker", "buttplay", "buttsex", "c|_|nt", "camel fucker", "camslut", "camwhore", "camwhores", "choad", "chode", "clitfuck", "clusterfuck", "cnut", "cockmongler", "cockmongruel", "cockmuncher", "cocknugget", "cocksucka", "cocksucker", "cocksuckers", "cocksuckin", "coon ass", "cousin-fucker", "cowfuck", "cucklord", "cuckold", "cuckshit", "cucktard", "cumslut", "cunt", "cuntrag", "dickface", "dickfucker", "dipshit", "dogfucking", "dumbfuck", "f4gg0t*", "f4ggot*", "facefuck", "facefucked", "faggot*", "faggotcock", "fagit", "fagtard", "fat bitch", "fcknig", "feggit", "feggot", "finger-fuck", "fingerfuck", "fistfuck", "fking", "fucc", "fuck", "f\xfack", "f\xfbck", "f\xfcck", "fuckable", "fuckass", "fuckbag", "fuckboy", "fuckbuddies", "fuckbuddy", "fucked", "fucker", "fuckery", "fuckface", "fuckhead", "fuckhole", "fucking", "fucknig", "fucknut", "fucknutt", "fuckoff", "fuckpigs", "fucktard", "fucktart", "fuckup", "fuckwad", "fuckwitt", "fuicking", "fuk", "gayfuck", "homodumbshit", "k|_|nt", "kyke", "manslut", "manwhore", "mongtard", "mothafucka", "mothafuckin", "motherfucker", "motherfucking", "n!bb3r*", "n!bber*", "n!gg3r*", "n!gger*", "n!kk3r*", "n!kker*", "n!qq3r*", "n!qqer*", "n|bb3r*", "n|bber*", "n|gg3r*", "n|gger*", "n|kk3r*", "n|kker*", "n|qq3r*", "n|qqer*", "n1bb3r*", "n1bber*", "n1gg", "n1gg3r*", "n1gger*", "n1igger*", "n1kk3r*", "n1kker*", "n1qq3r*", "n1qqer*", "nibb3r", "nibber", "niccer", "nick gur", "nigaboo", "nigg", "nigg3r", "niggar", "niggeer", "nigger*", "niggir", "niggor", "niggur", "niggurs", "nikk3r", "nikker", "niqq3r", "niqqer", "pu$$y", "pussy licking", "pussyjob", "pussylicking", "q|_|nt", "queerhole", "qunt", "r3t4rd", "r3tar", "retard", "rētard", "retarde", "retarded", "retardi", "retards", "retart", "retrad", "ritard", "ritarded", "rtard", "s-h-i-t", "s-hit", "scumfuck", "sh-it", "sheepfucker", "shit", "shitass", "shitbag", "shitbrains", "shitcunt", "shitdick", "shiteaters", "shitface", "shithead", "shithole", "shitshow", "shitskin", "shitspitter", "shitstain", "shitty", "shlt", "skullfuck", "slut", "slutwife", "spergtard", "spicshit", "spictard", "suck my dick", "throatfuck", "throatfucked", "throatfucking", "titfuck", "titfucking", "titfucks", "tittfuck", "tittyfuck", "tittyfucking", "tittyfucks", "to fuck", "uglyfuck", "whore"],
+                r = ["69ing", "amateur porn", "anal sex", "analsex", "anilingus", "anillingus", "assbanger", "asscock", "assfuck", "assfucker", "asslicker", "asslicking", "assnigger", "assrape", "auto erotic", "autoerotic", "autofellatio", "ball sucking", "balls deep", "bangbros", "barely legal", "bdsm", "bean flicker", "beat my meat", "beaver lips", "beef curtain", "big black cock", "big black dick", "big breasted women", "big cock", "big dick", "big knockers", "big milkers", "big tits", "bislut", "black cock", "blacked raw", "blow job", "blowbang", "blowie", "blowj", "blowjob", "blowjobs", "blumpkin", "boipussy", "bondage", "boner", "boyfucking", "boypussy", "brazzers", "bukake", "bukakke", "bukkake", "bukkakese", "bunnygirl", "butt plug", "buttfuck", "buttfucka", "buttfucker", "buttplay", "buttsex", "c|_|nt", "c0ck", "camel fucker", "camel toe", "cameltoe", "camgirl", "camslut", "camwhore", "camwhores", "chaturbate", "chicks with dicks", "choad", "chode", "clitfuck", "clitless", "cnut", "cock", "cockface", "cockgobbler", "cockhead", "cockhole", "cockmeat", "cocksucka", "cocksucker", "cocksuckers", "cocksuckin", "coochie", "creampie", "creampied", "creampieing", "creampies", "cuckholding", "cuckholdry", "cucking", "cuckish", "cucklord", "cuckold", "cuckolding", "cuckolds", "cuckshed", "cucky", "cum", "cumed", "cumguzzler", "cumhole", "cuming", "cummed", "cummers", "cummies", "cumming", "cumshot", "cumshots", "cumskin", "cumslut", "cumsucking", "cumswallow", "cumtart", "cunnilingus", "cunnillingus", "cunt", "cuntrag", "deep throat", "deep throating", "deep-throat", "deep-throated", "deep-throating", "deepthroat", "deepthroated", "deepthroating", "deepthroats", "dick-sneeze", "dickcheese", "dickface", "dickfucker", "dickgirls", "dickhole", "dickjuice", "dicklicker", "dickmilk", "dickride", "dickriding", "dickslap", "dicksucker", "dildo", "dildoing", "dilfs", "dog style", "dogfucking", "doggie style", "doggiestyle", "doggy stile", "doggy style", "doggystyle", "donkey punch", "double dong", "double penetration", "eat you out", "eat your ass", "eating ass", "ecchi", "ejaculate", "ejaculating", "ero guro", "erotic asphyxiation", "extremetube", "facefuck", "facefucked", "felatio", "felch", "felching", "fellate", "fellatio", "feltch", "feltching", "female squirting", "femdom", "finger-bang", "finger-banging", "finger-fuck", "fingerbang", "fingerbanged", "fingerbanging", "fingerblast", "fingerblasting", "fingered", "fingerfuck", "fingering", "fistfuck", "fisting", "fking", "foot fetish", "foreskin", "fucc", "f\xfack", "f\xfbck", "f\xfcck", "fuck her", "fuck him", "fuckable", "fuckass", "fuckbag", "fuckbuddies", "fuckbuddy", "fuckface", "fuckhole", "fuckpigs", "fuk", "gang bang", "gang rape", "gangbang", "gangrape", "giant cock", "gloryhole", "golden shower", "goopchute", "goregasm", "group sex", "hand job", "handjob", "hardcore porn", "hentai", "Hi! I love sex", "homoerotic", "hornpub", "horny", "hot bi babe", "hotwife", "hubporn", "jack off", "jacking off", "jerk off instructions", "jerking off", "jerkoff", "jizz", "jizzle", "k|_|nt", "kinkiest", "kinkster", "kinky", "limpdick", "livesex", "lolicon", "mangina", "manslut", "manwhore", "masochism", "menage a trois", "micropenis", "milf", "milfs", "missionary position", "mommy milkers", "my dick", "My naked photos", "My sexy photos", "naughtyamerica", "nubiles", "nudes", "nuvid", "oralsex", "orgasm", "orgies", "orgy", "paypig", "piss play", "pissflaps", "pissing porn", "pompoir", "ponyplay", "poon", "poop chute", "poopchute", "pornhub", "pornmd", "porno", "pornography", "pornstar", "pornstars", "porntube", "pov porn", "precum", "precumming", "precums", "pregnancy fetish", "prone bone", "pu$$y", "pussy licking", "pussyjob", "pussylicking", "q|_|nt", "queef", "qunt", "rapeplay", "rawdog", "reality kings", "redtube", "reverse cowgirl", "rimjob", "rimjobworld", "rule 34", "scatplay", "sex toy", "sexbot", "sextape", "shaved beaver", "shaved pussy", "shemale", "shitcunt", "shitdick", "shotacon", "sit on my face", "skeet", "skullfuck", "slampig", "slut", "slutwife", "sodomise", "sodomite", "sodomize", "spankbang", "spankbank", "suck clit", "suck my clit", "suck my dick", "suck my pubes", "teamskeet", "tentacle porn", "throatfuck", "throatfucked", "throatfucking", "throatpie", "thumbzilla", "tiddays", "tiddayz", "tiddes", "tiddie", "tiddied", "tiddies", "tiddy", "tiddys", "titfuck", "titfucking", "titfucks", "tities", "titjob", "tits", "tittay", "titted", "tittes", "tittfuck", "titti", "tittie", "tittied", "titties", "tittiez", "tittle", "titts", "titty", "tittyfuck", "tittyfucking", "tittyfucks", "tittys", "tity", "tnaflix", "to fuck", "tribadism", "tribbing", "upskirt", "urethra play", "vibrator", "voyeurism", "vrporn", "wank", "wankjob", "whore", "xhamster", "xnxx", "xtube", "xvideos", "youporn"],
+                s = ["africoon", "americoon", "arabshits", "assfucker", "asshat", "asshole", "assnigger", "assrape", "asswipe", "autist", "b!tch", "bamboo coon", "betacuck", "blmtard", "brown towel heads", "buttfucka", "buttfucker", "c|_|nt", "camslut", "camwhore", "camwhores", "china-man", "chinaman", "chinamen", "chinc", "chinese wetback", "chink", "cockknocker", "cockknoker", "cockmongler", "cockmongruel", "cockmuncher", "cocknocker", "cocknugget", "cocksucka", "cocksucker", "cocksuckers", "cocksuckin", "coon ass", "cotton picker", "cousin-fucker", "crab rangook", "crabrangook", "cuck", "cuckold", "cucktard", "cumslut", "cunt", "cuntrag", "dipshit", "dogfucking", "dot head", "dumbfuck", "dune coon", "dunecoon", "f4gg0t*", "f4ggot*", "f4gs", "fag", "fagbag", "fagg", "faggot*", "faggotcock", "fagit", "fags", "fagtard", "fat bitch", "feggit", "feggot", "femenazis", "feminazi", "femtards", "fuckboy", "fucker", "fuckface", "fuckhead", "fucknig", "fuckoff", "fuckpigs", "fucktard", "fucktart", "fuckwad", "fuckwitt", "gas the kikes", "gayfuck", "gaylord", "gaytard", "gaywad", "goatfucker", "gook", "gookanese", "hindoo", "homodumbshit", "jackass", "jappos", "japs", "jerkoff", "jewbag", "jewtard", "jigaboo", "jigarooni", "jiggabo", "jiggaboo", "jiggers", "jijjiboo", "joo shill", "k|_|nt", "kill yourself", "kneegrow", "kyke", "kys", "ladyboy", "librtard", "libtard", "libturd", "lolspergs", "manslut", "manwhore", "mentally retarded", "mongaloid", "monglet", "mongloid", "mongoloid", "mongreloids", "mongtard", "mothafucka", "mothafuckin", "motherfucker", "motherfucking", "musloid chimps", "musloids", "n i g g", "n!bb3r*", "n!bber*", "n!gg3r*", "n!gger*", "n!kk3r*", "n!kker*", "n!qq3r*", "n!qqer*", "n|bb3r*", "n|bber*", "n|gg3r*", "n|gger*", "n|kk3r*", "n|kker*", "n|qq3r*", "n|qqer*", "n1bb3r*", "n1bber*", "n1g", "n1gg", "n1gg3r*", "n1gger*", "n1igger*", "n1kk3r*", "n1kker*", "n1qq3r*", "n1qqer*", "negroid", "negros", "neomongloids", "nibb3r", "nibber", "niccer", "nick gur", "nig nog", "nigaboo", "nigar", "nigette", "nigg", "nigg", "nigg3r", "niggar", "nigge", "niggeer", "nigger*", "niggies", "niggin", "niggir", "nigglet", "nigglets", "niggor", "niggr", "niggress", "niggs", "niggur", "niggurs", "niglet", "nignog", "nigor", "nigr", "nigre", "nigress", "nigro", "nigs", "nikk3r", "nikker", "niponese", "niqq3r", "niqqer", "paki", "phag", "phaggot", "pickaninny", "pinkaloid", "poofter", "pooinloo", "poojeet", "porch monkey", "porch monkies", "pu$$y", "q|_|nt", "queerbag", "queerhole", "qunt", "r3t4rd", "r3tar", "rapefugee", "reatard", "reatarded", "retard", "rētard", "retardation", "retarde", "retarded", "retardi", "retards", "retart", "retrad", "ritard", "ritarded", "rotten joo", "rtard", "sand monkey", "sand nigger", "sandnegroes", "sandnigers", "sandniggs", "sandnogs", "schizoid", "scumfuck", "she-man", "sheepfucker", "shekelnose", "shemale", "shitbag", "shitbrains", "shitcunt", "shiteaters", "shitface", "shithead", "shitskin", "shitspitter", "shitstain", "skank", "skanky", "slampig", "slant eye", "slantey-eye'd", "slut", "slutwife", "socket face", "sperg", "sperglord", "spergouts", "spergs", "spergtard", "spic", "spick", "spickaboo", "spicks", "spicshit", "spictard", "spigger", "spik", "squinties", "suck my dick", "that ho over there", "that hoe over there", "the orientals", "towelhead", "towel head", "towel-head", "trannie", "tranny", "turkoids", "turkroach", "uglyfuck", "wanker", "wankjob", "wetback", "wetblack", "whigger", "whore", "wigger", "zipperhead"]
+        },
+        141106: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                MatchStrategy: function() {
+                    return i
+                },
+                getMatchedPositions: function() {
+                    return u
+                },
+                isMatch: function() {
+                    return l
+                }
+            }), (r = i || (i = {}))[r.ExactMatch = 0] = "ExactMatch", r[r.PrefixMatch = 1] = "PrefixMatch";
+            let s = e => /\p{P}/gu.test(null != e ? e : "") || " " === e || "" === e,
+                a = (e, t, n) => {
+                    if (n - t > e.length) return !1;
+                    let i = e.charAt(t - 1),
+                        r = e.charAt(n + 1);
+                    return s(i) && s(r)
+                },
+                o = (e, t) => s(e.charAt(t - 1)),
+                l = (e, t, n, i) => {
+                    if (1 === i) return o(e, t);
+                    return a(e, t, n)
+                },
+                u = (e, t, n, i) => {
+                    if (0 === i) return {
+                        start: t,
+                        end: n
+                    };
+                    let r = n;
+                    for (; r < e.length - 1 && !s(e.charAt(r + 1));) r++;
+                    return {
+                        start: t,
+                        end: r
+                    }
+                }
+        },
+        603158: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                normalize: function() {
+                    return l
+                }
+            });
+            let i = {
+                    "|": " "
+                },
+                r = {
+                    "[": " ",
+                    "]": " ",
+                    "(": " ",
+                    ")": " ",
+                    "|": " ",
+                    "~": " "
+                },
+                s = {
+                    "-": "-",
+                    " ": " "
+                },
+                a = {
+                    "​": "",
+                    "‌": "",
+                    "‍": "",
+                    "‎": "",
+                    "\uFEFF": ""
+                },
+                o = {
+                    ...s,
+                    ...r,
+                    ...a,
+                    ...i
+                };
+
+            function l(e) {
+                let t = "";
+                for (let n = 0; n < e.length; n++) {
+                    let i = e[n];
+                    null != o[i] ? t += o[i] : /[\p{Pd}\p{Pc}\p{Po}]/gu.test(i) ? t += " " : t += i
+                }
+                return t.toLowerCase()
+            }
+        },
+        363072: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                Trie: function() {
+                    return o
+                }
+            });
+            var i = n("141106");
+
+            function r(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let s = e => "*" === e.charAt(e.length - 1) ? i.MatchStrategy.PrefixMatch : i.MatchStrategy.ExactMatch;
+            class a {
+                _internalAdd(e, t, n) {
+                    let i = e.charAt(0),
+                        r = this.suffix[i];
+                    null == r && (r = new a, this.suffix[i] = r, null != n ? r.value = n.slice(0, n.length - e.length + 1) : r.value = i), e.length > 1 && "*" !== e.charAt(1) ? r._internalAdd(e.substring(1), t, null != n ? n : e) : (r.strategy = s(t), r.isWord = !0)
+                }
+                add(e) {
+                    this._internalAdd(e, e)
+                }
+                constructor() {
+                    r(this, "isWord", void 0), r(this, "value", void 0), r(this, "suffix", {}), r(this, "strategy", void 0), this.isWord = null, this.value = null, this.suffix = {}, this.strategy = i.MatchStrategy.ExactMatch
+                }
+            }
+            class o {
+                static fromSnapshot(e) {
+                    let t = new o;
+                    return t.trie = e.trie, t
+                }
+                search(e) {
+                    let t = this.trie,
+                        n = null,
+                        r = null,
+                        s = {};
+                    for (let u = 0; u <= e.length; u++)
+                        if (n = e.charAt(u), (t = null != (r = t.suffix[n]) ? r : this.trie).isWord) {
+                            var a, o, l;
+                            let n = t.strategy,
+                                r = u + 1 - (null !== (o = null === (a = t.value) || void 0 === a ? void 0 : a.length) && void 0 !== o ? o : 0),
+                                d = u;
+                            if ((0, i.isMatch)(e, r, d, n)) {
+                                let t = (0, i.getMatchedPositions)(e, r, d, n);
+                                s[t.start] = Math.max(Number(null !== (l = s[t.start]) && void 0 !== l ? l : 0), t.end)
+                            }
+                        } return s
+                }
+                addWord(e) {
+                    null == this.trie && (this.trie = new a), this.trie.add(e)
+                }
+                addWords(e) {
+                    e.forEach(e => this.addWord(e))
+                }
+                clear() {
+                    this.trie = new a
+                }
+                constructor() {
+                    r(this, "trie", void 0), this.trie = new a
+                }
+            }
+        },
+        202131: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getKeywordSubstitutedContent: function() {
+                    return o
+                }
+            }), n("47120"), n("724458");
+            var i = n("960048"),
+                r = n("592204"),
+                s = n("803141"),
+                a = n("603158");
+
+            function o(e, t) {
+                if (!(0, r.isEligibleForKeywordFiltering)({
+                        location: "keyword_substituted_content"
+                    })) return e;
+                try {
+                    let n = function(e) {
+                        let t = s.default.getKeywordTrie();
+                        if ("" === e) return [];
+                        let n = (0, a.normalize)(e).toLowerCase();
+                        return Object.entries(t.search(n)).map(e => {
+                            let [t, n] = e;
+                            return {
+                                start: Number(t),
+                                end: n
+                            }
+                        })
+                    }(e);
+                    if (0 === n.length) return e;
+                    return n.sort((e, t) => t.start - e.start).reduce((e, n) => (function(e, t, n) {
+                        let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+                            r = Math.max(t, 0),
+                            s = Math.min(n, e.length - 1),
+                            a = i ? "\\*" : "*",
+                            o = [...e.substring(r, s + 1)].map(e => " " === e ? " " : a).join("");
+                        return "".concat(e.substring(0, r)).concat(o).concat(e.substring(s + 1))
+                    })(e, n.start, n.end, null == t ? void 0 : t.escapeReplacement), e)
+                } catch (t) {
+                    return i.default.captureException(t, {
+                        tags: {
+                            app_context: "keyword_filtering"
+                        }
+                    }), e
+                }
+            }
+        },
+        712950: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useKeywordFilterSettings: function() {
+                    return s
+                }
+            });
+            var i = n("399606"),
+                r = n("581883");
+            let s = () => {
+                var e, t, n;
+                let s = (0, i.useStateFromStoresObject)([r.default], () => {
+                    var e, t;
+                    return null !== (t = null === (e = r.default.settings.textAndImages) || void 0 === e ? void 0 : e.keywordFilterSettings) && void 0 !== t ? t : {}
+                });
+                return {
+                    profanity: null === (e = s.profanity) || void 0 === e ? void 0 : e.value,
+                    sexualContent: null === (t = s.sexualContent) || void 0 === t ? void 0 : t.value,
+                    slurs: null === (n = s.slurs) || void 0 === n ? void 0 : n.value
+                }
+            }
+        },
+        200120: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useShouldFilterKeywords: function() {
+                    return a
+                }
+            });
+            var i = n("470079"),
+                r = n("592204"),
+                s = n("712950");
+            let a = () => {
+                let {
+                    profanity: e,
+                    sexualContent: t,
+                    slurs: n
+                } = (0, s.useKeywordFilterSettings)(), a = (0, r.useIsEligibleForKeywordFiltering)({
+                    location: "use-should-filter-keywords"
+                });
+                return i.useMemo(() => a && (e || t || n), [e, t, n, a])
+            }
+        },
         900460: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -170527,31 +170901,32 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
-                },
-                getInitialParserState: function() {
-                    return _
-                },
-                getInitialParserStateFromMessage: function() {
-                    return d
-                },
-                renderAutomodMessageMarkup: function() {
                     return I
                 },
-                renderChangelogMessageMarkup: function() {
+                getInitialParserState: function() {
                     return c
+                },
+                getInitialParserStateFromMessage: function() {
+                    return _
+                },
+                renderAutomodMessageMarkup: function() {
+                    return T
+                },
+                renderChangelogMessageMarkup: function() {
+                    return E
                 }
             }), n("47120"), n("757143"), n("865427");
             var i = n("830121"),
-                r = n("454585"),
-                s = n("55406"),
-                a = n("408433"),
-                o = n("981631");
-            let l = new Set([o.MessageEmbedTypes.IMAGE, o.MessageEmbedTypes.GIFV]),
-                u = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
+                r = n("202131"),
+                s = n("454585"),
+                a = n("55406"),
+                o = n("408433"),
+                l = n("981631");
+            let u = new Set([l.MessageEmbedTypes.IMAGE, l.MessageEmbedTypes.GIFV]),
+                d = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
 
-            function d(e, t) {
-                let n = _({
+            function _(e, t) {
+                let n = c({
                         channelId: e.channel_id,
                         messageId: e.id,
                         renderOptions: t
@@ -170565,7 +170940,7 @@
                 }
             }
 
-            function _(e) {
+            function c(e) {
                 let {
                     channelId: t,
                     messageId: n,
@@ -170591,33 +170966,36 @@
                 }
             }
 
-            function c(e, t, n) {
+            function E(e, t, n) {
                 return {
                     hasSpoilerEmbeds: !1,
-                    content: r.default.reactParserFor(s.default.getDefaultRules(t))(e.content, !1, null != n ? {
+                    content: s.default.reactParserFor(a.default.getDefaultRules(t))(e.content, !1, null != n ? {
                         changeLog: n
                     } : {})
                 }
             }
 
-            function E(e) {
+            function I(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 return function(e, t, n) {
-                    var r;
+                    var s;
                     let {
-                        toAST: s = !1,
-                        hideSimpleEmbedContent: o = !0,
-                        formatInline: _ = !1,
-                        postProcessor: c
-                    } = n, E = !1, I = e((null !== (r = n.contentMessage) && void 0 !== r ? r : t).content, !0, d(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), o && (e = function(e, t) {
+                        toAST: a = !1,
+                        hideSimpleEmbedContent: l = !0,
+                        formatInline: c = !1,
+                        postProcessor: E,
+                        shouldFilterKeywords: I
+                    } = n, T = !1, h = (null !== (s = n.contentMessage) && void 0 !== s ? s : t).content, A = e(I ? (0, r.getKeywordSubstitutedContent)(h, {
+                        escapeReplacement: !0
+                    }) : h, !0, _(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), l && (e = function(e, t) {
                         if (1 !== e.length || 1 !== t.length) return e;
                         let n = e[0],
                             i = t[0];
-                        return ("link" === n.type || "attachmentLink" === n.type) && l.has(i.type) && (0, a.isEmbedInline)(i) ? [] : e
-                    }(e, t.embeds)), !_ && (e = function(e, t) {
-                        return t ? T(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = T(e[0].content)), e)
-                    }(e, n)), E = function(e, t) {
-                        return t ? f(e) : "paragraph" === e[0].type && e[0].content instanceof Array && f(e[0].content)
+                        return ("link" === n.type || "attachmentLink" === n.type) && u.has(i.type) && (0, o.isEmbedInline)(i) ? [] : e
+                    }(e, t.embeds)), !c && (e = function(e, t) {
+                        return t ? f(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = f(e[0].content)), e)
+                    }(e, n)), T = function(e, t) {
+                        return t ? S(e) : "paragraph" === e[0].type && e[0].content instanceof Array && S(e[0].content)
                     }(e = function(e) {
                         let t = e.some(e => "link" !== e.type || !1);
                         return e.filter(e => {
@@ -170625,21 +171003,21 @@
                                 r = (0, i.parseQuestsEmbedCode)(e.target);
                             return !(n && null != r && !t)
                         })
-                    }(e), n), _ && (e = function e(t) {
+                    }(e), n), c && (e = function e(t) {
                         return t.forEach(t => {
-                            u.has(t.type) && null != t.content && (Array.isArray(t.content) ? e(t.content) : t.content = t.content.replace(/\n/g, " "))
+                            d.has(t.type) && null != t.content && (Array.isArray(t.content) ? e(t.content) : t.content = t.content.replace(/\n/g, " "))
                         }), t
-                    }(e)), null != c && (e = c(e, n)), e));
+                    }(e)), null != E && (e = E(e, n)), e));
                     return {
-                        hasSpoilerEmbeds: E,
-                        content: I
+                        hasSpoilerEmbeds: T,
+                        content: A
                     }
-                }(t.formatInline ? r.default.parseInlineReply : r.default.parse, e, t)
+                }(t.formatInline ? s.default.parseInlineReply : s.default.parse, e, t)
             }
 
-            function I(e, t, n) {
+            function T(e, t, n) {
                 var i;
-                return i = r.default.parseAutoModerationSystemMessage, i(e, !0, {
+                return i = s.default.parseAutoModerationSystemMessage, i(e, !0, {
                     allowLinks: !1,
                     allowDevLinks: !1,
                     allowEmojiLinks: !1,
@@ -170657,7 +171035,7 @@
                 }, e => (!Array.isArray(e) && (e = [e]), e))
             }
 
-            function T(e) {
+            function f(e) {
                 if (e.some(e => "emoji" !== e.type && "customEmoji" !== e.type && "soundboard" !== e.type && ("string" != typeof e.content || "" !== e.content.trim()) && !0)) return e;
                 let t = 0;
                 return (e.forEach(e => {
@@ -170667,7 +171045,7 @@
                 }), e)
             }
 
-            function f(e) {
+            function S(e) {
                 return e.some(e => "spoiler" === e.type && Array.isArray(e.content) && e.content.some(e => "link" === e.type || "attachmentLink" === e.type))
             }
         },
@@ -173135,49 +173513,51 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("470079"),
-                r = n("626135"),
-                s = n("937889"),
-                a = n("761910"),
-                o = n("981631"),
-                l = n("689938"),
-                u = n("354088");
+                r = n("200120"),
+                s = n("626135"),
+                a = n("937889"),
+                o = n("761910"),
+                l = n("981631"),
+                u = n("689938"),
+                d = n("354088");
 
-            function d(e, t) {
+            function _(e, t) {
                 let {
                     hideSimpleEmbedContent: n,
-                    formatInline: d = !1,
-                    noStyleAndInteraction: _ = !1,
-                    isInteracting: c = !1,
-                    allowHeading: E = !1,
-                    allowList: I = !1,
-                    allowLinks: T = !1,
-                    allowDevLinks: f = !1,
-                    allowSubtext: S = !1,
-                    previewLinkTarget: h = !1
-                } = t;
+                    formatInline: _ = !1,
+                    noStyleAndInteraction: c = !1,
+                    isInteracting: E = !1,
+                    allowHeading: I = !1,
+                    allowList: T = !1,
+                    allowLinks: f = !1,
+                    allowDevLinks: S = !1,
+                    allowSubtext: h = !1,
+                    previewLinkTarget: A = !1
+                } = t, m = (0, r.useShouldFilterKeywords)();
                 return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isUnsupported ? {
-                    content: l.default.Messages.MESSAGE_UNSUPPORTED,
+                    content: u.default.Messages.MESSAGE_UNSUPPORTED,
                     hasSpoilerEmbeds: !1
-                } : e.isCommandType() && 0 === e.content.length || e.hasFlag(o.MessageFlags.LOADING) ? (0, a.default)(e) : e.type === o.MessageTypes.CHANGELOG ? (0, s.renderChangelogMessageMarkup)(e, u, {
+                } : e.isCommandType() && 0 === e.content.length || e.hasFlag(l.MessageFlags.LOADING) ? (0, o.default)(e) : e.type === l.MessageTypes.CHANGELOG ? (0, a.renderChangelogMessageMarkup)(e, d, {
                     track: (e, t) => {
-                        r.default.track(e, t)
+                        s.default.track(e, t)
                     }
-                }) : (0, s.default)(e, {
+                }) : (0, a.default)(e, {
                     hideSimpleEmbedContent: n,
-                    formatInline: d,
-                    noStyleAndInteraction: _,
-                    isInteracting: c,
-                    allowHeading: E,
-                    allowList: I,
-                    allowLinks: T,
-                    allowSubtext: S,
-                    allowDevLinks: f,
-                    previewLinkTarget: h
-                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, d, _, c, E, I, T, h, S])
+                    formatInline: _,
+                    noStyleAndInteraction: c,
+                    isInteracting: E,
+                    allowHeading: I,
+                    allowList: T,
+                    allowLinks: f,
+                    allowSubtext: h,
+                    allowDevLinks: S,
+                    previewLinkTarget: A,
+                    shouldFilterKeywords: m
+                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, _, c, E, I, T, f, A, h, m])
             }
         },
         761910: function(e, t, n) {
@@ -173435,8 +173815,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716483501727",
-                                    build_number: "295805"
+                                    built_at: "1716494556042",
+                                    build_number: "295933"
                                 }
                             },
                             retries: 1
@@ -185036,7 +185416,7 @@
                     size: g,
                     className: L,
                     innerClassName: C.premiumSubscribeButton,
-                    look: o.Button.Looks.INVERTED,
+                    color: o.Button.Colors.BRAND_INVERTED,
                     onClick: z,
                     ...H,
                     children: [w && (0, i.jsx)(A.default, {
@@ -189369,7 +189749,7 @@
                 a = n("70956"),
                 o = n("438954"),
                 l = n("670081");
-            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card", i.QUESTS_STORE = "quests_store", i.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", i.QUEST_HOME_DESKTOP = "quest_home_desktop";
+            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card", i.QUESTS_STORE = "quests_store", i.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", i.QUEST_HOME_DESKTOP = "quest_home_desktop", i.QUEST_HOME_MOBILE = "quest_home_mobile";
             let u = a.default.Millis.MINUTE * s.Quests.ConsecutiveHeartbeatPeriodMinutes
         },
         113434: function(e, t, n) {
@@ -189675,15 +190055,14 @@
                 m = n("442837"),
                 N = n("570140"),
                 p = n("497505"),
-                O = n("918701"),
-                C = n("5881"),
-                R = n("46140");
+                O = n("5881"),
+                C = n("46140");
 
-            function g() {
+            function R() {
                 i = !1, r = new Map, s = 0, a = new Set, o = new Set, l = new Set, u = new Set, d = new Set, _ = new Map, c = new Map, E = new Map, I = null
             }
 
-            function L(e, t) {
+            function g(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
                         updateProgress: !1
                     },
@@ -189702,38 +190081,38 @@
                 }
             }
 
-            function v(e, t) {
+            function L(e, t) {
                 let n = new Map(_);
                 n.set(e, t), _ = n
             }
 
-            function D(e, t) {
-                v(e, t);
+            function v(e, t) {
+                L(e, t);
                 let n = r.get(e),
                     i = null == n ? void 0 : n.userStatus;
-                null != i && null == i.claimedAt && L(e, {
+                null != i && null == i.claimedAt && g(e, {
                     userStatus: {
                         ...i,
                         claimedAt: t.claimedAt
                     }
                 })
             }
-            g();
+            R();
 
-            function M(e) {
+            function D(e) {
                 null != E.get(e) && (E = new Map(E)).delete(e)
             }
 
-            function y(e) {
+            function M(e) {
                 let t = new Set(a);
                 t.delete(e), a = t
             }
 
-            function P(e) {
+            function y(e) {
                 let t = new Set(d);
                 t.delete(e), d = t
             }
-            class U extends(T = m.default.Store) {
+            class P extends(T = m.default.Store) {
                 get quests() {
                     return r
                 }
@@ -189774,14 +190153,14 @@
                     return r.get(e)
                 }
             }
-            h = "QuestsStore", (S = "displayName") in(f = U) ? Object.defineProperty(f, S, {
+            h = "QuestsStore", (S = "displayName") in(f = P) ? Object.defineProperty(f, S, {
                 value: h,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : f[S] = h, t.default = new U(N.default, {
+            }) : f[S] = h, t.default = new P(N.default, {
                 LOGOUT: function() {
-                    g()
+                    R()
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
                     s = Date.now(), i = !0
@@ -189790,8 +190169,8 @@
                     let {
                         quests: t
                     } = e;
-                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(p.QuestContent.QUEST_BAR) && (0, C.getQuestLogger)({
-                        location: R.QuestsExperimentLocations.QUESTS_STORE
+                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(p.QuestContent.QUEST_BAR) && (0, O.getQuestLogger)({
+                        location: C.QuestsExperimentLocations.QUESTS_STORE
                     }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"))
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
@@ -189803,11 +190182,11 @@
                         streamKey: n,
                         userStatus: i
                     } = e;
-                    L(t, {
+                    g(t, {
                         userStatus: i
                     }, {
                         updateProgress: !0
-                    }), M(n)
+                    }), D(n)
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
                     let {
@@ -189830,15 +190209,15 @@
                     let {
                         enrolledQuestUserStatus: t
                     } = e;
-                    L(t.questId, {
+                    g(t.questId, {
                         userStatus: t
-                    }), y(t.questId)
+                    }), M(t.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    y(t)
+                    M(t)
                 },
                 QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
                     let {
@@ -189851,7 +190230,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(u);
-                    i.delete(t), u = i, D(t, n)
+                    i.delete(t), u = i, v(t, n)
                 },
                 QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -189870,7 +190249,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(o);
-                    i.delete(t), o = i, D(t, n)
+                    i.delete(t), o = i, v(t, n)
                 },
                 QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -189894,24 +190273,18 @@
                         n.set(e, t.items), c = n;
                         let i = r.get(e),
                             s = null == i ? void 0 : i.userStatus;
-                        if (null != i && null != s && null == s.claimedAt) {
+                        if (null != s && null == s.claimedAt) {
                             var a;
                             let n = function(e) {
                                 var t;
                                 let {
-                                    quest: n,
-                                    entitlements: i
-                                } = e;
-                                if (!(0, O.isTieredRewardCodeQuest)({
-                                        quest: n
-                                    })) return null;
-                                let r = null === (t = i.items[0].tenantMetadata) || void 0 === t ? void 0 : t.questRewards.reward;
-                                return (null == r ? void 0 : r.tag) !== A.QuestRewardTypes.REWARD_CODE ? null : r.rewardCode
+                                    entitlements: n
+                                } = e, i = null === (t = n.items[0].tenantMetadata) || void 0 === t ? void 0 : t.questRewards.reward;
+                                return (null == i ? void 0 : i.tag) !== A.QuestRewardTypes.REWARD_CODE ? null : i.rewardCode
                             }({
-                                quest: i,
                                 entitlements: t
                             });
-                            null != n && v(e, n), L(e, {
+                            null != n && L(e, n), g(e, {
                                 userStatus: {
                                     ...s,
                                     claimedAt: t.claimedAt,
@@ -189937,33 +190310,33 @@
                     let {
                         dismissedQuestUserStatus: t
                     } = e;
-                    L(t.questId, {
+                    g(t.questId, {
                         userStatus: t
-                    }), P(t.questId)
+                    }), y(t.questId)
                 },
                 QUESTS_DISMISS_CONTENT_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    P(t)
+                    y(t)
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    M(t)
+                    D(t)
                 },
                 QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    M(t)
+                    D(t)
                 },
                 QUESTS_PREVIEW_UPDATE_SUCCESS: function(e) {
                     let {
                         previewQuestUserStatus: t
                     } = e;
-                    L(t.questId, {
+                    g(t.questId, {
                         userStatus: t
                     }), null == t.claimedAt && (_ = new Map(_)).delete(t.questId)
                 },
@@ -189971,7 +190344,7 @@
                     let {
                         userStatus: t
                     } = e;
-                    L(t.questId, {
+                    g(t.questId, {
                         userStatus: t
                     }, {
                         updateProgress: !0
@@ -190290,12 +190663,10 @@
             }
             let L = e => {
                     var t, n;
-                    let i = X({
-                            quest: e
-                        }) ? q({
+                    let i = q({
                             quest: e,
                             idx: null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedTier
-                        }) : null,
+                        }),
                         r = _.SharedQuestFields.build(e.config).defaultRewardAsset,
                         s = null !== (n = null == i ? void 0 : i.asset) && void 0 !== n ? n : r;
                     return {
@@ -209672,8 +210043,7 @@
                         look: _.Button.Looks.FILLED
                     },
                     secondaryButtonProps: S = {
-                        color: _.Button.Colors.BRAND,
-                        look: _.Button.Looks.INVERTED
+                        color: _.Button.Colors.BRAND_INVERTED
                     },
                     onComponentMount: h,
                     asset: A,
@@ -211298,39 +211668,42 @@
                     preloadUserBanner: A = !0,
                     dispatchWait: m = !1,
                     guildId: N,
-                    channelId: p
+                    channelId: p,
+                    abortSignal: O
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 if ("" === e) return;
                 (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != N && !T && (T = !0), null != N && (c = null !== (l = null === (n = (0, a.getVisibleConnectionsRole)({
                     guildMember: d.default.getMember(N, e),
                     channel: u.default.getChannel(p)
                 })) || void 0 === n ? void 0 : n.id) && void 0 !== l ? l : void 0);
-                let O = E.default.getUserProfile(e),
-                    C = E.default.getMutualGuilds(e),
-                    R = E.default.getMutualFriends(e),
-                    g = E.default.getMutualFriendsCount(e),
-                    L = E.default.isFetchingProfile(e),
-                    v = !Array.isArray(C) && T,
-                    D = !Array.isArray(R) && S,
-                    M = null == g && f,
-                    y = (null == O ? void 0 : O.profileFetchFailed) || !L && (v || M || D),
-                    P = A ? I.default : void 0,
-                    U = !1;
-                null != N && (U = null == E.default.getGuildMemberProfile(e, N)), !(!y && !U && (L || Date.now() - (null !== (_ = null == O ? void 0 : O.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
+                let C = E.default.getUserProfile(e),
+                    R = E.default.getMutualGuilds(e),
+                    g = E.default.getMutualFriends(e),
+                    L = E.default.getMutualFriendsCount(e),
+                    v = E.default.isFetchingProfile(e),
+                    D = !Array.isArray(R) && T,
+                    M = !Array.isArray(g) && S,
+                    y = null == L && f,
+                    P = (null == C ? void 0 : C.profileFetchFailed) || !v && (D || y || M),
+                    U = A ? I.default : void 0,
+                    b = !1;
+                null != N && (b = null == E.default.getGuildMemberProfile(e, N)), !(!P && !b && (v || Date.now() - (null !== (_ = null == C ? void 0 : C.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
                     withMutualGuilds: T,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
                     guildId: N,
-                    connectionsRoleId: c
-                }, P)) : await (0, r.fetchProfile)(e, {
+                    connectionsRoleId: c,
+                    abortSignal: O
+                }, U)) : await (0, r.fetchProfile)(e, {
                     withMutualGuilds: T,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
                     guildId: N,
-                    connectionsRoleId: c
-                }, P))
+                    connectionsRoleId: c,
+                    abortSignal: O
+                }, U))
             }
         },
         120569: function(e, t, n) {
@@ -217507,36 +217880,49 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return c
                 }
             }), n("47120");
             var i = n("470079"),
                 r = n("392711"),
                 s = n("442837"),
-                a = n("232567"),
+                a = n("881052"),
                 o = n("699682"),
-                l = n("800599"),
-                u = n("621853");
+                l = n("81897"),
+                u = n("800599"),
+                d = n("621853"),
+                _ = n("484459");
 
-            function d(e) {
+            function c(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    [n, d] = (0, s.useStateFromStoresArray)([u.default], () => [u.default.getMutualFriends(e), u.default.isFetchingFriends(e)]),
-                    _ = t && !d && null == n;
+                    [n, c] = (0, s.useStateFromStoresArray)([d.default], () => [d.default.getMutualFriends(e), d.default.isFetchingProfile(e)]),
+                    E = (0, l.default)(),
+                    [I, T] = (0, i.useState)(null),
+                    f = t && null == I && !c && null == n;
                 (0, i.useEffect)(() => {
-                    _ && (0, a.fetchMutualFriends)(e)
-                }, [_, e]);
-                let c = (0, s.useStateFromStores)([l.default], () => l.default.getUserAffinitiesMap()),
-                    E = (0, i.useMemo)(() => null == n ? null : n.length < 2 ? n : (0, r.sortBy)(n, e => {
+                    if (!!f)(async () => {
+                        try {
+                            await (0, _.default)(e, void 0, {
+                                withMutualFriends: !0,
+                                abortSignal: E
+                            })
+                        } catch (e) {
+                            T(new a.APIError(e))
+                        }
+                    })()
+                }, [f, e, E]);
+                let S = (0, s.useStateFromStores)([u.default], () => u.default.getUserAffinitiesMap()),
+                    h = (0, i.useMemo)(() => null == n ? null : n.length < 2 ? n : (0, r.sortBy)(n, e => {
                         var t, n;
                         let {
                             user: i
                         } = e;
-                        return -((null !== (n = null === (t = c.get(i.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : -1) * 1)
-                    }), [n, c]),
-                    I = (0, o.default)(E);
+                        return -((null !== (n = null === (t = S.get(i.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : -1) * 1)
+                    }), [n, S]),
+                    A = (0, o.default)(h);
                 return {
-                    mutualFriends: null != E ? E : I,
-                    isFetching: d
+                    mutualFriends: null != h ? h : A,
+                    isFetching: c
                 }
             }
         },
@@ -217544,43 +217930,54 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return c
                 }
             }), n("47120");
             var i = n("470079"),
                 r = n("392711"),
                 s = n("442837"),
-                a = n("232567"),
+                a = n("881052"),
                 o = n("699682"),
-                l = n("771845"),
-                u = n("621853");
+                l = n("81897"),
+                u = n("771845"),
+                d = n("621853"),
+                _ = n("484459");
 
-            function d(e) {
+            function c(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    [n, d] = (0, s.useStateFromStoresArray)([u.default], () => [u.default.getMutualGuilds(e), u.default.isFetchingProfile(e)]),
-                    _ = t && !d && null == n;
+                    [n, c] = (0, s.useStateFromStoresArray)([d.default], () => [d.default.getMutualGuilds(e), d.default.isFetchingProfile(e)]),
+                    E = (0, l.default)(),
+                    [I, T] = (0, i.useState)(null),
+                    f = t && null == I && !c && null == n;
                 (0, i.useEffect)(() => {
-                    _ && (0, a.fetchProfile)(e, {
-                        withMutualGuilds: !0
-                    })
-                }, [_, e]);
-                let c = (0, s.useStateFromStores)([l.default], () => l.default.getFlattenedGuildIds()),
-                    E = (0, i.useMemo)(() => {
+                    if (!!f)(async () => {
+                        try {
+                            await (0, _.default)(e, void 0, {
+                                withMutualGuilds: !0,
+                                abortSignal: E
+                            })
+                        } catch (e) {
+                            T(new a.APIError(e))
+                        }
+                    })()
+                }, [f, e, E]);
+                let S = (0, s.useStateFromStores)([u.default], () => u.default.getFlattenedGuildIds()),
+                    h = (0, i.useMemo)(() => {
                         if (null == n) return null;
                         if (n.length < 2) return n;
-                        let e = Object.fromEntries(c.map((e, t) => [e, t]));
+                        let e = Object.fromEntries(S.map((e, t) => [e, t]));
                         return (0, r.sortBy)(n, t => {
                             var n;
                             let {
                                 guild: i
                             } = t;
-                            return null !== (n = e[i.id]) && void 0 !== n ? n : c.length
+                            return null !== (n = e[i.id]) && void 0 !== n ? n : S.length
                         })
-                    }, [n, c]),
-                    I = (0, o.default)(E);
+                    }, [n, S]),
+                    A = (0, o.default)(h);
                 return {
-                    mutualGuilds: null != E ? E : I,
-                    isFetching: d
+                    mutualGuilds: null != h ? h : A,
+                    isFetching: c
                 }
             }
         },
@@ -218425,6 +218822,163 @@
                 [1, u.DmSpamFilterV2.NON_FRIENDS],
                 [2, u.DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS]
             ])
+        },
+        960412: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                fetchEmailSettings: function() {
+                    return u
+                },
+                updateEmailSetting: function() {
+                    return d
+                },
+                updateMarketingEmailSettings: function() {
+                    return _
+                }
+            }), n("724458");
+            var i = n("990547"),
+                r = n("283693"),
+                s = n("570140"),
+                a = n("573261"),
+                o = n("930441"),
+                l = n("981631");
+            async function u() {
+                try {
+                    let e = await a.default.get({
+                        url: l.Endpoints.EMAIL_SETTINGS,
+                        trackedActionData: {
+                            event: i.NetworkActionNames.EMAIL_SETTINGS_FETCH,
+                            properties: e => {
+                                var t;
+                                let n = null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.initialized;
+                                return (0, r.exact)({
+                                    initialized: n
+                                })
+                            }
+                        }
+                    });
+                    return s.default.dispatch({
+                        type: "EMAIL_SETTINGS_FETCH_SUCCESS",
+                        settings: e.body
+                    }), e.body
+                } catch {
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_FETCH_FAILURE"
+                    })
+                }
+            }
+            async function d(e, t) {
+                s.default.dispatch({
+                    type: "EMAIL_SETTINGS_UPDATE",
+                    updates: {
+                        [e]: t
+                    }
+                });
+                try {
+                    let n = await a.default.patch({
+                        url: l.Endpoints.EMAIL_SETTINGS,
+                        body: {
+                            settings: {
+                                categories: {
+                                    [e]: t
+                                }
+                            }
+                        },
+                        trackedActionData: {
+                            event: i.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
+                            properties: {
+                                category: e,
+                                value: t
+                            }
+                        }
+                    });
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
+                        settings: n.body
+                    })
+                } catch (e) {
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_UPDATE_FAILURE"
+                    })
+                }
+            }
+            async function _() {
+                let e = o.MarketingEmailCategories.reduce((e, t) => ({
+                    ...e,
+                    [t]: !1
+                }), {});
+                s.default.dispatch({
+                    type: "EMAIL_SETTINGS_UPDATE",
+                    updates: e
+                });
+                try {
+                    let t = await a.default.patch({
+                        url: l.Endpoints.EMAIL_SETTINGS,
+                        body: {
+                            settings: {
+                                categories: e
+                            }
+                        },
+                        trackedActionData: {
+                            event: i.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
+                            properties: {
+                                category: "marketing",
+                                value: !1
+                            }
+                        }
+                    });
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
+                        settings: t.body
+                    })
+                } catch (e) {
+                    s.default.dispatch({
+                        type: "EMAIL_SETTINGS_UPDATE_FAILURE"
+                    })
+                }
+            }
+        },
+        930441: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                EMAILS_SUBSECTION: function() {
+                    return a
+                },
+                EmailCategories: function() {
+                    return r
+                },
+                EmailCategoriesList: function() {
+                    return l
+                },
+                MarketingEmailCategories: function() {
+                    return o
+                }
+            });
+            var i, r, s = n("689938");
+            let a = "emails";
+            (i = r || (r = {})).COMMUNICATION = "communication", i.SOCIAL = "social", i.TIPS = "tips", i.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", i.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", i.FAMILY_CENTER_DIGEST = "family_center_digest";
+            let o = ["tips", "recommendations_and_events", "updates_and_announcements"],
+                l = [{
+                    category: "communication",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_COMMUNICATION,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_COMMUNICATION_SUBLABEL
+                }, {
+                    category: "social",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_SOCIAL,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_SOCIAL_SUBLABEL
+                }, {
+                    category: "updates_and_announcements",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_UPDATES_AND_ANNOUNCEMENTS,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_UPDATES_AND_ANNOUNCEMENTS_SUBLABEL
+                }, {
+                    category: "tips",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_TIPS,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_TIPS_SUBLABEL
+                }, {
+                    category: "recommendations_and_events",
+                    label: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_RECOMMENDATIONS_AND_EVENTS,
+                    subLabel: () => s.default.Messages.USER_SETTINGS_EMAIL_CATEGORY_RECOMMENDATIONS_AND_EVENTS_SUBLABEL
+                }]
         },
         888875: function(e, t, n) {
             "use strict";
@@ -250400,7 +250954,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "427ba0df8793244afa759e8043093c8ae2394dbf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "23b4d6d312fa4015239e1f5795052808b79d8bfa"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279512,7 +280066,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295805"
+                                build_number: "295933"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286870,7 +287424,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295805", "295805"), 10);
+                let s = parseInt((n = "295933", "295933"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314578,4 +315132,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.8e4cc2c5f319a6850a3c.js.map
+//# sourceMappingURL=71586.259647b9068dded314f5.js.map
