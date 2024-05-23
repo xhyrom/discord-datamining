@@ -36985,7 +36985,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295938", ", Version Hash: ").concat("11846d1c0154d75f9c8bc5c3891aa8e16a13a755")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295952", ", Version Hash: ").concat("d25a1829dd74c63d8f52a43499309e1461b60c0b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -74436,7 +74436,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 GameConsoleManager: {
-                    actions: ["WAIT_FOR_REMOTE_SESSION", "POST_CONNECTION_OPEN", "SESSIONS_REPLACE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "VOICE_STATE_UPDATES", "CONSOLE_COMMAND_UPDATE", "PASSIVE_UPDATE_V1", "REMOTE_SESSION_DISCONNECT"],
+                    actions: ["WAIT_FOR_REMOTE_SESSION", "POST_CONNECTION_OPEN", "SESSIONS_REPLACE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "VOICE_STATE_UPDATES", "CONSOLE_COMMAND_UPDATE", "PASSIVE_UPDATE_V2", "REMOTE_SESSION_DISCONNECT"],
                     inlineRequire: () => n("902304").default
                 },
                 GuildHomeManager: {
@@ -74569,7 +74569,7 @@
                     inlineRequire: () => n("149071").default
                 },
                 UserSearchManager: {
-                    actions: ["LOGOUT", "POST_CONNECTION_OPEN", "CONNECTION_OPEN_SUPPLEMENTAL", "OVERLAY_INITIALIZE", "CURRENT_USER_UPDATE", "GUILD_CREATE", "GUILD_MEMBERS_CHUNK_BATCH", "GUILD_MEMBER_ADD", "GUILD_MEMBER_UPDATE", "RELATIONSHIP_ADD", "RELATIONSHIP_UPDATE", "RELATIONSHIP_REMOVE", "CHANNEL_CREATE", "CHANNEL_UPDATES", "CHANNEL_RECIPIENT_ADD", "PASSIVE_UPDATE_V1"],
+                    actions: ["LOGOUT", "POST_CONNECTION_OPEN", "CONNECTION_OPEN_SUPPLEMENTAL", "OVERLAY_INITIALIZE", "CURRENT_USER_UPDATE", "GUILD_CREATE", "GUILD_MEMBERS_CHUNK_BATCH", "GUILD_MEMBER_ADD", "GUILD_MEMBER_UPDATE", "RELATIONSHIP_ADD", "RELATIONSHIP_UPDATE", "RELATIONSHIP_REMOVE", "CHANNEL_CREATE", "CHANNEL_UPDATES", "CHANNEL_RECIPIENT_ADD", "PASSIVE_UPDATE_V2"],
                     inlineRequire: () => n("279779").default
                 },
                 UserSettingsManager: {
@@ -74641,7 +74641,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 QuestManager: {
-                    actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "STREAM_START", "STREAM_CREATE", "STREAM_CLOSE", "LOGOUT", "PASSIVE_UPDATE_V1", "VOICE_STATE_UPDATES", "EMBEDDED_ACTIVITY_UPDATE", "EMBEDDED_ACTIVITY_UPDATE_V2", "USER_SETTINGS_PROTO_UPDATE"],
+                    actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "STREAM_START", "STREAM_CREATE", "STREAM_CLOSE", "LOGOUT", "PASSIVE_UPDATE_V2", "VOICE_STATE_UPDATES", "EMBEDDED_ACTIVITY_UPDATE", "EMBEDDED_ACTIVITY_UPDATE_V2", "USER_SETTINGS_PROTO_UPDATE"],
                     inlineRequire: () => n("901751").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -82937,7 +82937,7 @@
                         CHANNEL_CREATE: e => this._handleDMCreate(e),
                         CHANNEL_UPDATES: e => this._handleDMUpdates(e),
                         CHANNEL_RECIPIENT_ADD: e => this._handleRecipientChanges(e),
-                        PASSIVE_UPDATE_V1: e => this._handlePassiveUpdateV1(e)
+                        PASSIVE_UPDATE_V2: e => this._handlePassiveUpdateV2(e)
                     }), S(this, "_handleLogout", () => {
                         this.rebootWebworker()
                     }), S(this, "_handleConnectionOpen", () => {
@@ -83010,8 +83010,8 @@
                             nick: i
                         } = e, r = h(n);
                         null != r && (A(r, t, i), this.updateUsers([r]))
-                    }), S(this, "_handlePassiveUpdateV1", e => {
-                        null != e.members && this.updateUsers(N(e.members, e.guildId))
+                    }), S(this, "_handlePassiveUpdateV2", e => {
+                        this.updateUsers(N(e.members, e.guildId))
                     }), S(this, "_handleRelationshipAdd", e => {
                         let t = h(e.relationship.user);
                         this.updateUsers([t])
@@ -88439,8 +88439,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295938", "295938"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295938")), t = 0), t
+                let t = parseInt((e = "295952", "295952"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295952")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116346,8 +116346,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295938",
-                    versionHash: "11846d1c0154d75f9c8bc5c3891aa8e16a13a755"
+                    buildNumber: "295952",
+                    versionHash: "d25a1829dd74c63d8f52a43499309e1461b60c0b"
                 }
             }
             n.r(t), n.d(t, {
@@ -130930,7 +130930,7 @@
                         AUDIO_TOGGLE_SELF_MUTE: e => this.handleAudioStateToggle(e),
                         VOICE_STATE_UPDATES: e => this.handleVoiceStateUpdates(e),
                         CONSOLE_COMMAND_UPDATE: e => this.handleConsoleCommandUpdate(e),
-                        PASSIVE_UPDATE_V1: e => this.handleVoiceStateUpdates(e),
+                        PASSIVE_UPDATE_V2: e => this.handleVoiceStateUpdates(e),
                         REMOTE_SESSION_DISCONNECT: () => this.handleRemoteSessionDisconnect()
                     }), C(this, "maybeConnect", e => {
                         let t = function(e) {
@@ -130965,11 +130965,10 @@
                             g(o)
                         }))
                     }), C(this, "handleVoiceStateUpdates", e => {
-                        var t;
-                        let n = null !== (t = e.voiceStates) && void 0 !== t ? t : [],
-                            i = h.default.getRemoteSessionId();
-                        if (null == i) {
-                            let e = n.map(e => {
+                        let t = e.voiceStates,
+                            n = h.default.getRemoteSessionId();
+                        if (null == n) {
+                            let e = t.map(e => {
                                 let {
                                     sessionId: t
                                 } = e;
@@ -130977,13 +130976,13 @@
                             }).filter(T.isNotNullish);
                             return this.maybeConnect(e)
                         }
-                        let r = n.find(e => {
+                        let i = t.find(e => {
                             let {
                                 sessionId: t
                             } = e;
-                            return t === i
+                            return t === n
                         });
-                        null != r && (this.rollbackCommandTimeout.stop(), g(r))
+                        null != i && (this.rollbackCommandTimeout.stop(), g(i))
                     }), C(this, "handleSessionsChanged", () => {
                         let e = h.default.getRemoteSessionId();
                         null != e && null == E.default.getSessionById(e) && (0, f.disconnectRemote)(), null == e && this.maybeConnect(Object.values(E.default.getSessions()))
@@ -133159,7 +133158,7 @@
         14639: function(e, t, n) {
             "use strict";
             n.r(t);
-            t.default = 16381
+            t.default = 30717
         },
         639655: function(e, t, n) {
             "use strict";
@@ -136518,18 +136517,17 @@
                     result: e.result,
                     error: e.error
                 })
-            }), B(["PASSIVE_UPDATE_V1"], e => m.ChannelLoader.loadGuildIds([e.guild_id]), e => {
-                var t, n;
+            }), B(["PASSIVE_UPDATE_V2"], e => m.ChannelLoader.loadGuildIds([e.guild_id]), e => {
                 x({
-                    type: "PASSIVE_UPDATE_V1",
+                    type: "PASSIVE_UPDATE_V2",
                     guildId: e.guild_id,
-                    members: e.members,
-                    channels: null === (t = e.channels) || void 0 === t ? void 0 : t.map(e => ({
+                    members: e.updated_members,
+                    channels: e.updated_channels.map(e => ({
                         id: e.id,
                         lastMessageId: e.last_message_id,
                         lastPinTimestamp: e.last_pin_timestamp
                     })),
-                    voiceStates: null === (n = e.voice_states) || void 0 === n ? void 0 : n.map(e => {
+                    voiceStates: e.updated_voice_states.map(e => {
                         var t;
                         return {
                             channelId: e.channel_id,
@@ -136544,7 +136542,8 @@
                             suppress: e.suppress,
                             userId: e.user_id
                         }
-                    })
+                    }),
+                    removedVoiceStateUsers: e.removed_voice_states
                 })
             }), k(["PRIVATE_CHANNEL_INTEGRATION_CREATE"], e => {
                 x({
@@ -147519,12 +147518,12 @@
                         n = N(t).updateClientMembers(Object.values(i)) || n
                     }), n
                 },
-                PASSIVE_UPDATE_V1: function(e) {
+                PASSIVE_UPDATE_V2: function(e) {
                     let {
                         members: t,
                         guildId: n
                     } = e;
-                    return null != t && N(n).updateServerMembers(t)
+                    return !!(t.length > 0) && N(n).updateServerMembers(t)
                 },
                 GUILD_CREATE: function(e) {
                     let {
@@ -173815,8 +173814,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716494938810",
-                                    build_number: "295938"
+                                    built_at: "1716496100130",
+                                    build_number: "295952"
                                 }
                             },
                             retries: 1
@@ -191691,7 +191690,7 @@
                         STREAM_START: this.handleStreamStart,
                         STREAM_CREATE: this.handleStreamCreate,
                         STREAM_CLOSE: this.handleStreamClose,
-                        PASSIVE_UPDATE_V1: this.handleVoiceStateChange,
+                        PASSIVE_UPDATE_V2: this.handleVoiceStateChange,
                         VOICE_STATE_UPDATES: this.handleVoiceStateChange,
                         EMBEDDED_ACTIVITY_UPDATE: e => {
                             let {
@@ -201032,7 +201031,7 @@
                 RELATIONSHIP_REMOVE: Y,
                 GUILD_CREATE: j,
                 GUILD_DELETE: j,
-                PASSIVE_UPDATE_V1: function(e) {
+                PASSIVE_UPDATE_V2: function(e) {
                     let t = !1;
                     for (let n of P(e.guildId)) t = G(n).rebuild() || t;
                     return t
@@ -201501,14 +201500,7 @@
                 return p[t][e] = i, i
             }
 
-            function R(e, t) {
-                var n;
-                if (null == t) return !1;
-                let i = E.default.getChannel(t);
-                return !!(null != i && i.isGuildStageVoice()) && (null === (n = p[t]) || void 0 === n || delete n[e], !0)
-            }
-
-            function g(e) {
+            function R(e) {
                 let t = I.default.getChannels(e)[I.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
                     let {
                         channel: t
@@ -201522,7 +201514,7 @@
                 return t.length > 0
             }
 
-            function L(e) {
+            function g(e) {
                 let {
                     guildId: t,
                     user: n
@@ -201536,7 +201528,7 @@
                 }(n.id, t)
             }
 
-            function v(e) {
+            function L(e) {
                 let {
                     guild: t
                 } = e;
@@ -201545,7 +201537,7 @@
                     (null == n || n.guild_id === t.id) && delete p[e]
                 }
             }
-            class D extends(r = _.default.Store) {
+            class v extends(r = _.default.Store) {
                 initialize() {
                     this.waitFor(T.default, E.default, f.default, S.default, h.default)
                 }
@@ -201569,12 +201561,12 @@
                     return C(e, t, i)
                 }
             }
-            l = "StageChannelRoleStore", (o = "displayName") in(a = D) ? Object.defineProperty(a, o, {
+            l = "StageChannelRoleStore", (o = "displayName") in(a = v) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new D(c.default, {
+            }) : a[o] = l, t.default = new v(c.default, {
                 CHANNEL_UPDATES: function(e) {
                     let {
                         channels: t
@@ -201584,19 +201576,16 @@
                 CONNECTION_OPEN: function() {
                     p = {}
                 },
-                GUILD_MEMBER_REMOVE: L,
-                GUILD_MEMBER_UPDATE: L,
+                GUILD_MEMBER_REMOVE: g,
+                GUILD_MEMBER_UPDATE: g,
                 GUILD_ROLE_UPDATE: function(e) {
                     let {
                         guildId: t
                     } = e;
-                    g(t)
+                    R(t)
                 },
-                PASSIVE_UPDATE_V1: function(e) {
-                    var t;
-                    let n = g(e.guildId);
-                    for (let i of null !== (t = e.voiceStates) && void 0 !== t ? t : []) n = R(i.userId, i.channelId) || n;
-                    return n
+                PASSIVE_UPDATE_V2: function(e) {
+                    return R(e.guildId)
                 },
                 VOICE_STATE_UPDATES: function(e) {
                     let {
@@ -201607,11 +201596,16 @@
                             userId: n,
                             channelId: i
                         } = t;
-                        return R(n, i) || e
+                        return function(e, t) {
+                            var n;
+                            if (null == t) return !1;
+                            let i = E.default.getChannel(t);
+                            return !!(null != i && i.isGuildStageVoice()) && (null === (n = p[t]) || void 0 === n || delete n[e], !0)
+                        }(n, i) || e
                     }, !1)
                 },
-                GUILD_CREATE: v,
-                GUILD_DELETE: v
+                GUILD_CREATE: L,
+                GUILD_DELETE: L
             })
         },
         742738: function(e, t, n) {
@@ -207303,8 +207297,8 @@
                 CHANNEL_SELECT: function(e) {
                     B(e), x()
                 },
-                PASSIVE_UPDATE_V1: function(e) {
-                    null != e.channels && V()
+                PASSIVE_UPDATE_V2: function(e) {
+                    if (e.channels.length > 0) return M(e.guildId)
                 },
                 WINDOW_FOCUS: V,
                 UPDATE_CHANNEL_DIMENSIONS: V,
@@ -233792,8 +233786,8 @@
                 },
                 IMPERSONATE_UPDATE: Q,
                 IMPERSONATE_STOP: Q,
-                PASSIVE_UPDATE_V1: function(e) {
-                    return null != e.members && K(e.guildId, e.members)
+                PASSIVE_UPDATE_V2: function(e) {
+                    return !!(e.members.length > 0) && K(e.guildId, e.members)
                 },
                 CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES: function(e) {
                     let {
@@ -234272,7 +234266,7 @@
             }
 
             function eu(e) {
-                return null != e.channels && V(e.guildId, e.channels.map(e => e.id))
+                return !!(e.channels.length > 0) && V(e.guildId, e.channels.map(e => e.id))
             }
 
             function ed(e) {
@@ -234423,7 +234417,7 @@
                         THREAD_LIST_SYNC: el,
                         THREAD_MEMBER_UPDATE: ea,
                         THREAD_MEMBERS_UPDATE: eo,
-                        PASSIVE_UPDATE_V1: eu,
+                        PASSIVE_UPDATE_V2: eu,
                         GUILD_MEMBER_UPDATE: X,
                         USER_GUILD_SETTINGS_FULL_UPDATE: ec,
                         USER_GUILD_SETTINGS_CHANNEL_UPDATE: eI,
@@ -242022,15 +242016,14 @@
                     } = e, s = null === (t = ee.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
                     return null != s && eq(s, n, i, r)
                 },
-                PASSIVE_UPDATE_V1: function(e) {
-                    var t;
-                    let n = !1;
-                    for (let i of null !== (t = e.channels) && void 0 !== t ? t : []) {
-                        let e = ey.get(i.id),
-                            t = eR(i.lastPinTimestamp);
-                        (e.lastMessageId !== i.lastMessageId || e.lastPinTimestamp !== t) && (n = !0, e.lastMessageId = i.lastMessageId, e.lastPinTimestamp = t)
+                PASSIVE_UPDATE_V2: function(e) {
+                    let t = !1;
+                    for (let n of e.channels) {
+                        let e = ey.get(n.id),
+                            i = eR(n.lastPinTimestamp);
+                        (e.lastMessageId !== n.lastMessageId || e.lastPinTimestamp !== i) && (t = !0, e.lastMessageId = n.lastMessageId, e.lastPinTimestamp = i)
                     }
-                    return n
+                    return t
                 },
                 CLEAR_OLDEST_UNREAD_MESSAGE: function(e) {
                     let {
@@ -245936,10 +245929,9 @@
             }
 
             function ea(e) {
-                var t;
-                let n = !1;
-                for (let i of null !== (t = e.members) && void 0 !== t ? t : []) L(i.user) && (n = !0), null != m[i.user.id] && O(m[i.user.id], e.guildId, i.avatar) && (n = !0);
-                return n
+                let t = !1;
+                for (let n of e.members) L(n.user) && (t = !0), null != m[n.user.id] && O(m[n.user.id], e.guildId, n.avatar) && (t = !0);
+                return t
             }
 
             function eo(e) {
@@ -246234,7 +246226,7 @@
                         LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: K,
                         NOTIFICATION_CENTER_ITEM_CREATE: z,
                         LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: j,
-                        PASSIVE_UPDATE_V1: ea,
+                        PASSIVE_UPDATE_V2: ea,
                         LOCAL_MESSAGES_LOADED: eo,
                         FETCH_PRIVATE_CHANNEL_INTEGRATIONS_SUCCESS: eA,
                         PRIVATE_CHANNEL_INTEGRATION_CREATE: em,
@@ -246509,68 +246501,67 @@
                 _ = n("442837"),
                 c = n("570140"),
                 E = n("189786"),
-                I = n("709054"),
-                T = n("981631"),
-                f = n("354459");
-            let S = 0,
-                h = 0,
-                A = {},
-                m = new Set,
-                N = new Map,
+                I = n("981631"),
+                T = n("354459");
+            let f = 0,
+                S = 0,
+                h = {},
+                A = new Set,
+                m = new Map,
+                N = {},
                 p = {},
                 O = {},
-                C = {},
-                R = {};
+                C = {};
 
-            function g(e, t) {
+            function R(e, t) {
                 return "".concat(e, ":").concat(t)
             }
 
-            function L(e, t) {
+            function g(e, t) {
                 let n = e[t];
                 return null == n && (n = {}, e[t] = n), n
             }
 
-            function v(e) {
+            function L(e) {
                 var t;
-                let n = null !== (t = A[T.ME]) && void 0 !== t ? t : {},
+                let n = null !== (t = h[I.ME]) && void 0 !== t ? t : {},
                     i = {};
                 d().each(n, (t, n) => {
                     t.channelId !== e && (i[n] = t)
-                }), A[T.ME] = i
+                }), h[I.ME] = i
             }
 
-            function D(e) {
+            function v(e) {
                 var t;
-                return null !== (t = N.get(e)) && void 0 !== t ? t : new Set
+                return null !== (t = m.get(e)) && void 0 !== t ? t : new Set
             }
 
-            function M(e, t, n) {
+            function D(e, t, n) {
                 var i, r, s, a;
-                let o = L(A, null != e ? e : T.ME),
+                let o = g(h, null != e ? e : I.ME),
                     l = o[t],
                     u = n(l);
                 if (l === u) return [!1, u, l];
                 if (null != l) {
                     ;
                     let n;
-                    delete o[t], null != l.channelId && (delete L(p, l.channelId)[t], delete L(O, l.channelId)[t]), null != l.sessionId && delete L(C, t)[l.sessionId];
-                    i = null != e ? e : T.ME, r = t, !(n = D(i)).has(r) || ((n = new Set(n)).delete(r), 0 === n.size ? N.delete(i) : N.set(i, n))
+                    delete o[t], null != l.channelId && (delete g(N, l.channelId)[t], delete g(p, l.channelId)[t]), null != l.sessionId && delete g(O, t)[l.sessionId];
+                    i = null != e ? e : I.ME, r = t, !(n = v(i)).has(r) || ((n = new Set(n)).delete(r), 0 === n.size ? m.delete(i) : m.set(i, n))
                 }
                 if (null != u) {
-                    if (o[t] = u, null != u.channelId && (L(p, u.channelId)[t] = u, u.selfVideo)) {
+                    if (o[t] = u, null != u.channelId && (g(N, u.channelId)[t] = u, u.selfVideo)) {
                         ;
                         let n;
-                        L(O, u.channelId)[t] = u;
-                        s = null != e ? e : T.ME, a = t, (n = D(s)).has(a) || ((n = new Set(n)).add(a), N.set(s, n))
+                        g(p, u.channelId)[t] = u;
+                        s = null != e ? e : I.ME, a = t, (n = v(s)).has(a) || ((n = new Set(n)).add(a), m.set(s, n))
                     }
-                    null != u.sessionId && (L(C, t)[u.sessionId] = u)
+                    null != u.sessionId && (g(O, t)[u.sessionId] = u)
                 }
                 return [!0, u, l]
             }
 
-            function y(e, t) {
-                return M(e, t.userId, e => {
+            function M(e, t) {
+                return D(e, t.userId, e => {
                     if (null == t.channelId) return null;
                     {
                         let n = {
@@ -246591,29 +246582,29 @@
                 })
             }
 
-            function P(e) {
+            function y(e) {
                 let {
                     guild: t
                 } = e;
-                d().forEach(A[t.id], e => {
-                    M(t.id, e.userId, () => null)
-                }), delete A[t.id]
+                d().forEach(h[t.id], e => {
+                    D(t.id, e.userId, () => null)
+                }), delete h[t.id]
             }
-            class U extends(s = _.default.Store) {
+            class P extends(s = _.default.Store) {
                 getAllVoiceStates() {
-                    return A
-                }
-                getVoiceStateVersion() {
                     return h
                 }
+                getVoiceStateVersion() {
+                    return S
+                }
                 getVoiceStates(e) {
-                    return L(A, null != e ? e : T.ME)
+                    return g(h, null != e ? e : I.ME)
                 }
                 getVoiceStatesForChannel(e) {
-                    return L(p, e)
+                    return g(N, e)
                 }
                 getVideoVoiceStatesForChannel(e) {
-                    return L(O, e)
+                    return g(p, e)
                 }
                 getVoiceState(e, t) {
                     return this.getVoiceStates(e)[t]
@@ -246621,14 +246612,14 @@
                 getVoiceStateForChannel(e) {
                     var t;
                     let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i;
-                    return null === (t = L(p, e)) || void 0 === t ? void 0 : t[n]
+                    return null === (t = g(N, e)) || void 0 === t ? void 0 : t[n]
                 }
                 getVoiceStateForUser(e) {
-                    return Object.values(L(C, e))[0]
+                    return Object.values(g(O, e))[0]
                 }
                 getVoiceStateForSession(e, t) {
                     var n;
-                    return null != t ? null === (n = L(C, e)) || void 0 === n ? void 0 : n[t] : null
+                    return null != t ? null === (n = g(O, e)) || void 0 === n ? void 0 : n[t] : null
                 }
                 getUserVoiceChannelId(e, t) {
                     var n;
@@ -246640,11 +246631,11 @@
                 }
                 getUsersWithVideo(e) {
                     var t;
-                    return null !== (t = N.get(e)) && void 0 !== t ? t : m
+                    return null !== (t = m.get(e)) && void 0 !== t ? t : A
                 }
                 isCurrentClientInVoiceChannel() {
                     var e;
-                    return null != r && (null === (e = C[i]) || void 0 === e ? void 0 : e[r]) != null
+                    return null != r && (null === (e = O[i]) || void 0 === e ? void 0 : e[r]) != null
                 }
                 isInChannel(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i;
@@ -246653,32 +246644,32 @@
                     return null != n && (t !== i || null != r && n.sessionId === r)
                 }
                 hasVideo(e) {
-                    return Object.values(L(O, e)).length > 0
+                    return Object.values(g(p, e)).length > 0
                 }
                 getVoicePlatformForChannel(e, t) {
                     var n, s;
-                    let a = null != r && (null === (s = C[i]) || void 0 === s ? void 0 : null === (n = s[r]) || void 0 === n ? void 0 : n.channelId);
-                    return t === i && e === a ? f.VoicePlatforms.DESKTOP : R[g(t, e)]
+                    let a = null != r && (null === (s = O[i]) || void 0 === s ? void 0 : null === (n = s[r]) || void 0 === n ? void 0 : n.channelId);
+                    return t === i && e === a ? T.VoicePlatforms.DESKTOP : C[R(t, e)]
                 }
                 get userHasBeenMovedVersion() {
-                    return S
+                    return f
                 }
             }
-            l = "VoiceStateStore", (o = "displayName") in(a = U) ? Object.defineProperty(a, o, {
+            l = "VoiceStateStore", (o = "displayName") in(a = P) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new U(c.default, {
+            }) : a[o] = l, t.default = new P(c.default, {
                 CONNECTION_OPEN: function(e) {
                     let {
                         user: t,
                         sessionId: n
                     } = e, s = null != i && i !== t.id;
-                    return s && (A = {}, p = {}, C = {}, O = {}, N.clear()), i = t.id, r = n, s
+                    return s && (h = {}, N = {}, O = {}, p = {}, m.clear()), i = t.id, r = n, s
                 },
                 CONNECTION_OPEN_SUPPLEMENTAL: function() {
-                    A = {}, p = {}, C = {}, O = {}, N.clear()
+                    h = {}, N = {}, O = {}, p = {}, m.clear()
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     let {
@@ -246686,15 +246677,15 @@
                         user: n,
                         sessionId: s
                     } = e;
-                    for (let [e, n] of(A = {}, p = {}, C = {}, O = {}, Object.entries(t)))
-                        for (let [t, i] of Object.entries(n)) M(e, t, () => new E.default(i));
+                    for (let [e, n] of(h = {}, N = {}, O = {}, p = {}, Object.entries(t)))
+                        for (let [t, i] of Object.entries(n)) D(e, t, () => new E.default(i));
                     i = n.id, r = s
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t,
                         channelId: n
-                    } = e, [r] = M(t, i, e => null == e ? void 0 : e.set("channelId", n));
+                    } = e, [r] = D(t, i, e => null == e ? void 0 : e.set("channelId", n));
                     return r
                 },
                 VOICE_STATE_UPDATES: function(e) {
@@ -246702,35 +246693,32 @@
                         voiceStates: t
                     } = e;
                     return t.reduce((e, t) => {
-                        let [n, i, s] = y(t.guildId, t);
-                        return n ? (t.sessionId === r && null != i && null != s && s.channelId !== i.channelId && (S += 1), h++, !0) : e
+                        let [n, i, s] = M(t.guildId, t);
+                        return n ? (t.sessionId === r && null != i && null != s && s.channelId !== i.channelId && (f += 1), S++, !0) : e
                     }, !1)
                 },
-                GUILD_DELETE: P,
-                GUILD_CREATE: P,
+                GUILD_DELETE: y,
+                GUILD_CREATE: y,
                 CHANNEL_DELETE: function(e) {
                     let {
                         channel: t
                     } = e;
-                    v(t.id)
+                    L(t.id)
                 },
                 CALL_DELETE: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    v(t)
+                    L(t)
                 },
-                PASSIVE_UPDATE_V1: function(e) {
-                    var t, n;
-                    let i = !1,
-                        r = I.default.keys(null !== (t = A[e.guildId]) && void 0 !== t ? t : {}),
-                        s = new Set(r);
-                    for (let t of null !== (n = e.voiceStates) && void 0 !== n ? n : []) {
-                        let [n] = y(e.guildId, t);
-                        i = i || n, s.delete(t.userId)
+                PASSIVE_UPDATE_V2: function(e) {
+                    let t = !1;
+                    for (let n of e.voiceStates) {
+                        let [i] = M(e.guildId, n);
+                        t = t || i
                     }
-                    for (let t of s) M(e.guildId, t, () => null), i = !0;
-                    return i && h++, i
+                    for (let n of e.removedVoiceStateUsers) D(e.guildId, n, () => null), t = !0;
+                    return t && S++, t
                 },
                 RTC_CONNECTION_PLATFORM: function(e) {
                     let {
@@ -246738,7 +246726,7 @@
                         channelId: n,
                         platform: i
                     } = e;
-                    R[g(t, n)] = i
+                    C[R(t, n)] = i
                 }
             })
         },
@@ -249172,13 +249160,14 @@
                     } = e;
                     delete m[t.id]
                 },
-                PASSIVE_UPDATE_V1: function(e) {
+                PASSIVE_UPDATE_V2: function(e) {
                     var t, n;
                     let i = !1,
                         r = new Set(null === (t = m[e.guildId]) || void 0 === t ? void 0 : t.getUserIds()),
-                        s = new Set(null === (n = e.voiceStates) || void 0 === n ? void 0 : n.map(e => e.userId));
+                        s = new Set(null === (n = e.voiceStates) || void 0 === n ? void 0 : n.map(e => e.userId)),
+                        a = new Set(e.removedVoiceStateUsers);
                     for (let t of new Set([...r, ...s])) i = N(e.guildId).updateVoiceState(t) || i;
-                    for (let t of s) r.has(t) && (i = N(e.guildId).updateMember(t) || i);
+                    for (let t of r) !a.has(t) && (i = N(e.guildId).updateMember(t) || i);
                     return i
                 }
             })
@@ -250955,7 +250944,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "11846d1c0154d75f9c8bc5c3891aa8e16a13a755"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d25a1829dd74c63d8f52a43499309e1461b60c0b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280067,7 +280056,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295938"
+                                build_number: "295952"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287425,7 +287414,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295938", "295938"), 10);
+                let s = parseInt((n = "295952", "295952"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315133,4 +315122,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.915f3904c77056210d09.js.map
+//# sourceMappingURL=71586.ee13c296fa58dcb0a9e7.js.map
