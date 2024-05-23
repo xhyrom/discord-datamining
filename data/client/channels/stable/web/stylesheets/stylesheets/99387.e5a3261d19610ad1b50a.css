@@ -6424,13 +6424,16 @@
 .card_d01b6d {
     min-width: 240px;
     max-width: 360px;
-    height: 400px;
     border-radius: 8px;
     border: 1px solid var(--border-subtle);
     overflow: hidden;
     background-color: var(--bg-surface-overlay);
     display: flex;
     flex-direction: column
+}
+
+.cardStaticHeight_db1af7 {
+    height: 400px
 }
 
 .header__2b527 {
@@ -6483,6 +6486,10 @@
 
 .cardContentDescriptionSection__30f21 {
     flex: 1 1 auto
+}
+
+.cardContentDescriptionCollapsed__4297f {
+    max-height: 64px
 }
 
 .cardNameAndTagWrapper_d87ceb {
@@ -45068,6 +45075,22 @@ img.thumbnail__18ece {
     padding: 0
 }
 
+.randomizeButton__8b8b2 {
+    border-color: var(--border-subtle) !important;
+    margin-bottom: 24px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-width: 2px;
+    border-radius: 8px
+}
+
+.randomizeButtonInner_da273d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
 .content__4e550 {
     display: flex;
     flex-direction: row;
@@ -45080,7 +45103,12 @@ img.thumbnail__18ece {
     width: 466px
 }
 
-.colorsContainer__2dee9,
+.colorsContainer__2dee9 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
 .colorPickerContainer__9b7d0 {
     display: flex;
     flex-direction: column;
@@ -45962,22 +45990,6 @@ img.thumbnail__18ece {
     display: flex
 }
 
-.stepsTransitionGroup__770f6 {
-    position: relative;
-    flex: 1;
-    display: flex
-}
-
-.step__4b7ad {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex: 1
-}
-
 .hidden__7c65d {
     visibility: hidden
 }
@@ -46810,7 +46822,7 @@ img.thumbnail__18ece {
 .badgesContainer__0f8f1 {
     display: flex;
     flex-direction: column;
-    gap: 40px
+    gap: 24px
 }
 
 .pickerContainer__5dd4f {
@@ -46993,6 +47005,29 @@ div:has(>div>.modal__06f49) {
     height: 28px;
     width: 28px;
     color: var(--status-danger)
+}
+
+.stepsTransitionGroup__00ae3 {
+    position: relative;
+    flex: 1;
+    display: flex
+}
+
+.step__6bc2d {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex: 1
+}
+
+.scroller_d98c76 {
+    display: flex;
+    flex: 1;
+    padding: 52px;
+    justify-content: center
 }
 
 @value baseClanCardWidth 242px;
@@ -58370,13 +58405,43 @@ div:has(>div>.modal__06f49) {
     align-items: center
 }
 
+.container__84a63 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.button__381b7 {
+    height: 18px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px
+}
+
 .container__118f6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 190px
+}
+
+.rewardDescriptionContainer__8745e {
     height: 104px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 12px
+    padding: 12px;
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .questRewardTileAsset__33149 {
@@ -58393,13 +58458,13 @@ div:has(>div>.modal__06f49) {
     height: 80px
 }
 
-.header_fbecef {
-    display: inline-block
+.headerSpan__051f7 {
+    display: inline;
+    margin-bottom: 2px
 }
 
-.headerSpan__051f7 {
-    display: inline-block;
-    margin-bottom: 2px
+.header_fbecef {
+    display: inline
 }
 
 .description__65ac8 {
@@ -58410,7 +58475,7 @@ div:has(>div>.modal__06f49) {
 
 .container_c51520 {
     width: 336px;
-    height: 274px;
+    height: 336px;
     box-sizing: border-box;
     background-color: var(--background-primary);
     border-radius: 10px;
@@ -58427,7 +58492,7 @@ div:has(>div>.modal__06f49) {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fill, 336px);
-    grid-auto-rows: 274px;
+    grid-auto-rows: 336px;
     grid-gap: 20px;
     gap: 20px;
     width: 100%
@@ -58497,7 +58562,7 @@ div:has(>div>.modal__06f49) {
     border: 1px solid var(--border-subtle);
     border-radius: 10px;
     box-shadow: 0 30px 44.6px 0 var(--background-floating);
-    background: var(--background-modifier-accent);
+    background: rgba(38, 40, 44, .6);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     width: -moz-fit-content;
@@ -73995,6 +74060,32 @@ html .invoiceCancelRow_aa7946 {
 
 .infoBox__0e0d0 {
     margin-top: 16px
+}
+
+.section__861e5 {
+    background-color: var(--background-primary);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--border-subtle);
+    margin-top: 8px;
+    gap: 8px
+}
+
+.sectionDivider_f54a4a {
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider-subtle);
+    border: 0
+}
+
+.buttons_b6a0e0 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    gap: 8px
 }
 
 .button_c15687 {
@@ -97611,6 +97702,11 @@ div.content_aac020 {
 
 .ctaText_fa0e8d {
     color: var(--bg-surface-overlay)
+}
+
+.postscript_ce71e6 {
+    margin-top: 16px;
+    text-align: center
 }
 
 .modalContent__84d95 {
@@ -142233,4 +142329,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8774ffd584d543c450b4.css.map*/
+/*# sourceMappingURL=99387.e5a3261d19610ad1b50a.css.map*/

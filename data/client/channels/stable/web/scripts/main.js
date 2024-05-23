@@ -37010,7 +37010,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295694", ", Version Hash: ").concat("ffb1a11b2a92121a3614f809fc4aa9cc498efa6b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295805", ", Version Hash: ").concat("427ba0df8793244afa759e8043093c8ae2394dbf")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43030,6 +43030,17 @@
                 TWO_FA_DISABLED_FOR_STAFF: "Disabled for Staff",
                 TWO_FA_WEBAUTHN_RENAME_FORM_NEW_KEY: "New Key Name",
                 TWO_FA_WEBAUTHN_SHOULD_DO: "Here is something you **should do**!",
+                PASSKEY_AND_SECURITY_KEY_TITLE: "Security Keys and Passkeys",
+                PASSKEY_AND_SECURITY_KEY_CREATED_TITLE: "Security Keys and Passkeys you have created",
+                PASSKEY_AND_SECURITY_KEY_ADDED: "Key added!",
+                PASSKEY_AND_SECURITY_KEY_RENAME_TITLE: "Rename your key",
+                PASSKEY_AND_SECURITY_KEY_UPDATED: "Key updated!",
+                PASSKEY_AND_SECURITY_KEY_REMOVE_KEY: "Remove ‘!!{keyName}!!’?",
+                PASSKEY_AND_SECURITY_KEY_REMOVED: "Key removed!",
+                PASSKEY_AND_SECURITY_KEY_REMOVE_CONFIRMATION_SUBTITLE: "You will no longer be able to use it on Discord.",
+                PASSKEY_AND_SECURITY_KEY_REMOVE_CONFIRMATION_TEXT: "Yes, remove this key",
+                PASSKEY_AND_SECURITY_KEY_REMOVE_CANCEL_TEXT: "Nevermind, I'll keep it",
+                PASSKEY_AND_SECURITY_KEY_NO_KEYS_TEXT: "Secure your account by adding a Passkey or another supported security key.",
                 MFA_SMS_AUTH: "SMS Backup Authentication",
                 MFA_SMS_AUTH_SALES_PITCH: "Add your phone as a backup MFA method in case you lose access to your authenticator app or backup codes.",
                 MFA_SMS_AUTH_CURRENT_PHONE: "Your current phone number is: !!{phoneNumber}!!.",
@@ -56030,6 +56041,7 @@
                 CLAN_SETUP_TAG_STEP: "Badge",
                 CLAN_SETUP_BANNER_STEP: "Banner",
                 CLAN_SETUP_APPLICATIONS_STEP: "Member Applications",
+                CLAN_SETUP_RANDOMIZE_LOOK: "Randomize",
                 CLAN_PRIMETIME_PLACEHOLDER: "Day",
                 CLAN_PRIMETIME_MONDAY: "Monday",
                 CLAN_PRIMETIME_TUESDAY: "Tuesday",
@@ -56074,6 +56086,7 @@
                 CLAN_SUCCESS_USE_TAG_TEXT: "Wear Guild Tag next to username",
                 CLAN_SUCCESS_USE_TAG_HELP: "You can always edit this in Profile settings.",
                 CLAN_SUCCESS_CTA: "Let's Go",
+                CLAN_SUCCESS_POSTSCRIPT: "It may take up to 2 days for your Guild to appear in the Discovery page.",
                 CLAN_JOIN_SUCCESS_TITLE: "Congratulations, you're an official member of **{name}**!",
                 CLAN_JOIN_SUCCESS_SUBTITLE: "Rep your Guild, make new friends, and play some games. Get in and say hi to your new guildmates.",
                 CLAN_JOIN_SUCCESS_MAIN_CTA: "Let's Go",
@@ -59215,7 +59228,7 @@
                     var n;
                     this.logger.info("Preparing secure frames epoch: ".concat(e, ", protocol version: ").concat(t));
                     let i = e.toString();
-                    null === (n = this._connection) || void 0 === n || n.prepareSecureFramesEpoch(i, t, this.channelId), "1" === i && this._sendMLSKeyPackage()
+                    null === (n = this._connection) || void 0 === n || n.prepareSecureFramesEpoch(i, t, this.trueChannelId), "1" === i && this._sendMLSKeyPackage()
                 }
                 _sendMLSKeyPackage() {
                     var e;
@@ -74666,7 +74679,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 ContentInventoryManager: {
-                    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "CONTENT_INVENTORY_MANUAL_REFRESH", "SPOTIFY_NEW_TRACK"],
+                    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "CONTENT_INVENTORY_MANUAL_REFRESH", "CONTENT_INVENTORY_INBOX_STALE", "SPOTIFY_NEW_TRACK"],
                     inlineRequire: () => n("342879").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -84275,52 +84288,54 @@
                 d = n("570140"),
                 _ = n("902676"),
                 c = n("626135"),
-                E = n("704133"),
-                I = n("981631");
-            let T = "BlockedDomainStore",
-                f = "BlockedDomainRevision",
-                S = null;
-            class h extends(r = l.default.Store) {
+                E = n("358085"),
+                I = n("704133"),
+                T = n("981631");
+            let f = "BlockedDomainStore",
+                S = "BlockedDomainRevision",
+                h = null;
+            class A extends(r = l.default.Store) {
                 initialize() {
-                    i = null, u.Storage.get(T) && (u.Storage.remove(f), u.Storage.remove(T))
+                    i = null, u.Storage.get(f) && (u.Storage.remove(S), u.Storage.remove(f))
                 }
                 getCurrentRevision() {
+                    if (!(0, E.isDesktop)()) return null;
                     if (null == i) {
                         var e;
-                        i = null !== (e = u.Storage.get(f)) && void 0 !== e ? e : null
+                        i = null !== (e = u.Storage.get(S)) && void 0 !== e ? e : null
                     }
                     return i
                 }
                 async getBlockedDomainList() {
-                    return null == S && (S = new Set(await E.default.getBlockedDomains())), S
+                    return null == h && (h = new Set(await I.default.getBlockedDomains())), h
                 }
                 isBlockedDomain(e) {
                     let t = n("647229");
-                    if (null == S) return this.getBlockedDomainList(), null;
+                    if (null == h) return this.getBlockedDomainList(), null;
                     let i = (0, _.getHostname)(e),
                         r = new t.hash.sha256,
                         s = t.codec.hex.fromBits(r.update(i).finalize()),
                         a = "";
-                    S.has(s) && (a = i);
+                    h.has(s) && (a = i);
                     let o = i.indexOf(".");
-                    for (; - 1 !== o && "" === a;) i = i.substring(o + 1), r.reset(), s = t.codec.hex.fromBits(r.update(i).finalize()), S.has(s) && (a = i), o = i.indexOf(".");
-                    return "" !== a ? (c.default.track(I.AnalyticEvents.LINK_SECURITY_CHECK_BLOCKED, {
+                    for (; - 1 !== o && "" === a;) i = i.substring(o + 1), r.reset(), s = t.codec.hex.fromBits(r.update(i).finalize()), h.has(s) && (a = i), o = i.indexOf(".");
+                    return "" !== a ? (c.default.track(T.AnalyticEvents.LINK_SECURITY_CHECK_BLOCKED, {
                         blocked_domain: a
                     }), a) : null
                 }
             }
-            o = "BlockedDomainStore", (a = "displayName") in(s = h) ? Object.defineProperty(s, a, {
+            o = "BlockedDomainStore", (a = "displayName") in(s = A) ? Object.defineProperty(s, a, {
                 value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : s[a] = o, t.default = new h(d.default, {
+            }) : s[a] = o, t.default = new A(d.default, {
                 BLOCKED_DOMAIN_LIST_FETCHED: function(e) {
                     let {
                         list: t,
                         revision: n
                     } = e;
-                    S = null, i = null, E.default.saveBlockedDomains(t), u.Storage.set("BlockedDomainRevision", n)
+                    i = null, h = new Set(t), I.default.saveBlockedDomains(t), u.Storage.set("BlockedDomainRevision", n)
                 }
             })
         },
@@ -88444,8 +88459,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295694", "295694"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295694")), t = 0), t
+                let t = parseInt((e = "295805", "295805"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295805")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103509,7 +103524,7 @@
                 N = 30,
                 p = 24,
                 O = 12,
-                C = 160,
+                C = 300,
                 R = 3,
                 g = 5;
             I()("2024-01-01T00:00:00");
@@ -114146,76 +114161,86 @@
             let c = _.ContentInventoryFeedKey.GLOBAL_FEED,
                 E = null,
                 I = !1,
-                T = 0;
-
-            function f() {
-                h()
-            }
+                T = 0,
+                f = null;
 
             function S() {
+                A()
+            }
+
+            function h() {
                 if (!(0, l.isEligibleForContentInventoryV1)("ContentInventoryManager") || I || d.default.hidden || !o.default.isFocused() || !s.default.isConnected()) return !1;
                 let e = a.default.getIdleSince();
                 return !(null != e && Date.now() - e > 9e5) && !0
             }
 
-            function h() {
+            function A() {
                 clearTimeout(E), E = null
             }
 
-            function A() {
-                if (h(), !S()) return;
-                let e = d.default.getFeed(c),
-                    t = null == e ? void 0 : e.expired_at;
-                E = setTimeout(() => m(), null == t ? 0 : new Date(t).getTime() - Date.now())
+            function m() {
+                if (A(), !h()) return;
+                let e = d.default.getFeed(c);
+                if ((null == e ? void 0 : e.refresh_stale_inbox_after_ms) != null && null == f) return;
+                let t = null != f ? f : null == e ? void 0 : e.expired_at;
+                E = setTimeout(() => N(), Math.max(0, null == t ? 0 : new Date(t).getTime() - Date.now()))
             }
-            async function m() {
+            async function N() {
                 let {
                     force: e = !1
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                if (S() || e) try {
+                if (h() || e) try {
                     I = !0;
                     let e = await (0, u.getMyContentInventory)();
                     i.default.dispatch({
                         type: "CONTENT_INVENTORY_SET_FEED",
                         feedId: c,
                         feed: e
-                    }), T = 0, I = !1, A()
+                    }), T = 0, I = !1, f = null, m()
                 } catch (e) {
-                    T < 3 ? (E = setTimeout(() => m(), 1e3 * Math.pow(5, T)), T += 1) : i.default.dispatch({
+                    T < 3 ? (E = setTimeout(() => N(), 1e3 * Math.pow(5, T)), T += 1) : i.default.dispatch({
                         type: "CONTENT_INVENTORY_CLEAR_FEED",
                         feedId: c
                     }), I = !1
                 }
             }
 
-            function N() {
-                A()
+            function p() {
+                m()
             }
 
-            function p() {
-                h(), m({
+            function O() {
+                A(), N({
                     force: !0
                 })
             }
 
-            function O(e) {
+            function C(e) {
+                let {
+                    refreshAfterMs: t
+                } = e, n = d.default.getFeed(c);
+                if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null) f = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), m()
+            }
+
+            function R(e) {
                 let {
                     connectionId: t,
                     track: n
                 } = e;
                 if (null != t)(0, l.isEligibleForListenedMediaInventory)("ContentInventoryManager.handleSpotifyNewTrack") && (0, u.postTrackToContentInventory)(t, n)
             }
-            class C extends r.default {
+            class g extends r.default {
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: N,
-                        CONNECTION_CLOSED: f,
-                        WINDOW_FOCUS: N,
-                        IDLE: N,
-                        CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: N,
-                        CONTENT_INVENTORY_MANUAL_REFRESH: p,
-                        SPOTIFY_NEW_TRACK: O
+                        POST_CONNECTION_OPEN: p,
+                        CONNECTION_CLOSED: S,
+                        WINDOW_FOCUS: p,
+                        IDLE: p,
+                        CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: p,
+                        CONTENT_INVENTORY_MANUAL_REFRESH: O,
+                        CONTENT_INVENTORY_INBOX_STALE: C,
+                        SPOTIFY_NEW_TRACK: R
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -114224,7 +114249,7 @@
                     }) : t[n] = i
                 }
             }
-            t.default = new C
+            t.default = new g
         },
         146282: function(e, t, n) {
             "use strict";
@@ -116341,8 +116366,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295694",
-                    versionHash: "ffb1a11b2a92121a3614f809fc4aa9cc498efa6b"
+                    buildNumber: "295805",
+                    versionHash: "427ba0df8793244afa759e8043093c8ae2394dbf"
                 }
             }
             n.r(t), n.d(t, {
@@ -117218,10 +117243,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardTraits: function() {
-                    return M
+                    return y
                 },
                 ClanDiscoveryCardView: function() {
-                    return y
+                    return P
                 },
                 Wildcards: function() {
                     return v
@@ -117307,6 +117332,30 @@
 
             function M(e) {
                 let {
+                    description: t,
+                    expanded: n
+                } = e;
+                return null == t ? null : n ? (0, i.jsx)("div", {
+                    className: L.cardContentDescriptionSection,
+                    children: (0, i.jsx)(o.Text, {
+                        variant: "text-xs/normal",
+                        color: "text-muted",
+                        children: t
+                    })
+                }) : (0, i.jsx)("div", {
+                    className: L.cardContentDescriptionSection,
+                    children: (0, i.jsx)(o.Text, {
+                        className: L.cardContentDescriptionCollapsed,
+                        variant: "text-xs/normal",
+                        color: "text-muted",
+                        lineClamp: 4,
+                        children: t
+                    })
+                })
+            }
+
+            function y(e) {
+                let {
                     traits: t,
                     traitsToHighlight: n,
                     expanded: s,
@@ -117357,7 +117406,7 @@
                 })
             }
 
-            function y(e) {
+            function P(e) {
                 var t;
                 let {
                     clan: n,
@@ -117377,28 +117426,30 @@
                         primaryColor: C,
                         secondaryColor: D
                     },
-                    bannerHash: y
-                } = n, P = (0, d.default)(n.games), U = (0, T.default)("clan_discovery_card"), [b, G] = r.useState(!1), w = r.useCallback(() => {
-                    G(!0)
-                }, []), k = r.useCallback(() => {
-                    G(!1)
-                }, []), B = g.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                    bannerHash: P
+                } = n, U = (0, d.default)(n.games), b = (0, T.default)("clan_discovery_card"), [G, w] = r.useState(!1), k = r.useCallback(() => {
+                    w(!0)
+                }, []), B = r.useCallback(() => {
+                    w(!1)
+                }, []), V = g.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: n.memberCount
-                }), V = null != A ? A : (0, I.getClanBannerUrl)(n.id, y), x = null == s && null == V ? {
+                }), x = null != A ? A : (0, I.getClanBannerUrl)(n.id, P), F = null == s && null == x ? {
                     background: "linear-gradient(90deg, ".concat(C, ", ").concat(D, ")")
-                } : void 0, F = null != s ? s : null != V ? (0, i.jsx)("img", {
+                } : void 0, H = null != s ? s : null != x ? (0, i.jsx)("img", {
                     alt: g.default.Messages.CLAN_LOOK_BANNER,
-                    src: V,
+                    src: x,
                     className: L.bannerImage
-                }) : null, H = r.useMemo(() => (0, R.getSortedTraits)(n.traits, _), [n.traits, _]);
+                }) : null, Y = r.useMemo(() => (0, R.getSortedTraits)(n.traits, _), [n.traits, _]);
                 return (0, i.jsxs)("div", {
-                    className: a()(L.card, E),
-                    onMouseEnter: w,
-                    onMouseLeave: k,
+                    className: a()(L.card, E, {
+                        [L.cardStaticHeight]: !l
+                    }),
+                    onMouseEnter: k,
+                    onMouseLeave: B,
                     children: [(0, i.jsx)("div", {
                         className: L.cardBrandingHeader,
-                        style: x,
-                        children: F
+                        style: F,
+                        children: H
                     }), (0, i.jsxs)("div", {
                         className: L.cardContent,
                         children: [(0, i.jsxs)("div", {
@@ -117411,13 +117462,13 @@
                                     guildIcon: n.icon,
                                     iconSize: 64,
                                     className: L.clanIcon,
-                                    animate: !m || b
+                                    animate: !m || G
                                 }), (0, i.jsx)("div", {
                                     className: L.clanTagChipletWrapper,
                                     children: (0, i.jsx)(o.Tooltip, {
                                         text: g.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
-                                        shouldShow: !u && U,
+                                        shouldShow: !u && b,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
                                             className: L.clanTagChiplet,
@@ -117460,16 +117511,11 @@
                                     primaryColor: n.branding.primaryColor
                                 })]
                             })]
-                        }), (0, i.jsx)("div", {
-                            className: L.cardContentDescriptionSection,
-                            children: (0, i.jsx)(o.Text, {
-                                variant: "text-xs/normal",
-                                color: "text-muted",
-                                children: n.description
-                            })
                         }), (0, i.jsx)(M, {
-                            traits: H,
-                            expanded: l,
+                            description: n.description,
+                            expanded: l
+                        }), (0, i.jsx)(y, {
+                            traits: Y,
                             traitsToHighlight: _
                         })]
                     }), (0, i.jsxs)("div", {
@@ -117481,13 +117527,13 @@
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: B
+                                    children: V
                                 })
                             })
                         }), (0, i.jsx)("div", {
                             className: L.cardFooterGames,
                             children: (0, i.jsx)(p.default, {
-                                games: P,
+                                games: U,
                                 prioritizedGameIds: c
                             })
                         })]
@@ -117544,7 +117590,7 @@
                     className: L.clickableCard,
                     style: t,
                     onContextMenu: O,
-                    children: (0, i.jsx)(y, {
+                    children: (0, i.jsx)(P, {
                         ...a,
                         isMember: S,
                         prioritizedGameIds: s,
@@ -136647,6 +136693,11 @@
                     type: "DM_SETTINGS_UPSELL_SHOW",
                     guildId: e.guild_id
                 })
+            }), k(["CONTENT_INVENTORY_INBOX_STALE"], e => {
+                x({
+                    type: "CONTENT_INVENTORY_INBOX_STALE",
+                    refreshAfterMs: e.refresh_after_ms
+                })
             })
         },
         985375: function(e, t, n) {
@@ -154262,7 +154313,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("53108"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -173384,8 +173435,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716418482919",
-                                    build_number: "295694"
+                                    built_at: "1716483501727",
+                                    build_number: "295805"
                                 }
                             },
                             retries: 1
@@ -188970,319 +189021,329 @@
             "use strict";
             n.r(t), n.d(t, {
                 claimQuestReward: function() {
-                    return T
-                },
-                claimQuestRewardCode: function() {
-                    return I
-                },
-                completeQuestPreview: function() {
-                    return A
-                },
-                dismissProgressTrackingFailureNotice: function() {
-                    return h
-                },
-                dismissQuestContent: function() {
                     return S
                 },
-                enrollInQuest: function() {
-                    return E
-                },
-                fetchCurrentQuests: function() {
-                    return _
-                },
-                fetchQuestRewardCode: function() {
+                claimQuestRewardCode: function() {
                     return f
                 },
-                optimisticallyUpdateQuestProgress: function() {
-                    return p
-                },
-                overrideQuestDelivery: function() {
-                    return O
-                },
-                resetQuestDismissibilityStatus: function() {
+                completeQuestPreview: function() {
                     return N
                 },
-                resetQuestPreviewStatus: function() {
+                dismissProgressTrackingFailureNotice: function() {
                     return m
                 },
+                dismissQuestContent: function() {
+                    return A
+                },
+                enrollInQuest: function() {
+                    return T
+                },
+                fetchCurrentQuests: function() {
+                    return E
+                },
+                fetchQuestRewardCode: function() {
+                    return h
+                },
+                optimisticallyUpdateQuestProgress: function() {
+                    return C
+                },
+                overrideQuestDelivery: function() {
+                    return R
+                },
+                resetQuestDismissibilityStatus: function() {
+                    return O
+                },
+                resetQuestPreviewStatus: function() {
+                    return p
+                },
                 sendHeartbeat: function() {
-                    return c
+                    return I
                 }
             });
-            var i = n("544891"),
-                r = n("570140"),
-                s = n("479531"),
-                a = n("617136"),
-                o = n("569984"),
-                l = n("918701"),
-                u = n("566078"),
-                d = n("981631");
-            async function _() {
-                if (!o.default.isFetchingCurrentQuests) {
-                    r.default.dispatch({
+            var i = n("990547"),
+                r = n("544891"),
+                s = n("570140"),
+                a = n("479531"),
+                o = n("573261"),
+                l = n("617136"),
+                u = n("569984"),
+                d = n("918701"),
+                _ = n("566078"),
+                c = n("981631");
+            async function E() {
+                if (!u.default.isFetchingCurrentQuests) {
+                    s.default.dispatch({
                         type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
                     });
                     try {
-                        let e = (await i.HTTP.get({
-                            url: d.Endpoints.QUESTS_CURRENT_QUESTS
-                        })).body.quests.filter(e => (0, l.isQuestWithKnownConfigVersion)(e)).map(e => (0, l.questWithUserStatusFromServer)(e)).filter(e => {
+                        let e = (await r.HTTP.get({
+                            url: c.Endpoints.QUESTS_CURRENT_QUESTS
+                        })).body.quests.filter(e => (0, d.isQuestWithKnownConfigVersion)(e)).map(e => (0, d.questWithUserStatusFromServer)(e)).filter(e => {
                             var t;
-                            return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null || u.SharedQuestFields.build(e.config).rewardPlatforms.length > 0
+                            return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null || _.SharedQuestFields.build(e.config).rewardPlatforms.length > 0
                         });
-                        r.default.dispatch({
+                        s.default.dispatch({
                             type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
                             quests: e
                         })
                     } catch (e) {
-                        r.default.dispatch({
+                        s.default.dispatch({
                             type: "QUESTS_FETCH_CURRENT_QUESTS_FAILURE",
-                            error: new s.default(e)
+                            error: new a.default(e)
                         })
                     }
                 }
             }
-            async function c(e) {
+            async function I(e) {
                 let {
                     questId: t,
                     streamKey: n,
-                    terminal: a = !1
+                    terminal: r = !1
                 } = e;
                 try {
-                    let e = await i.HTTP.post({
-                        url: d.Endpoints.QUESTS_HEARTBEAT(t),
+                    let e = await o.default.post({
+                        url: c.Endpoints.QUESTS_HEARTBEAT(t),
                         body: {
                             stream_key: n,
-                            terminal: a
+                            terminal: r
+                        },
+                        trackedActionData: {
+                            event: i.NetworkActionNames.QUEST_HEARTBEAT,
+                            properties: {
+                                quest_id: t,
+                                terminal: r,
+                                is_overlay: __OVERLAY__
+                            }
                         }
                     });
-                    r.default.dispatch({
+                    s.default.dispatch({
                         type: "QUESTS_SEND_HEARTBEAT_SUCCESS",
-                        userStatus: (0, l.questUserStatusFromServer)(e.body),
+                        userStatus: (0, d.questUserStatusFromServer)(e.body),
                         questId: t,
                         streamKey: n
                     })
                 } catch (e) {
-                    r.default.dispatch({
+                    s.default.dispatch({
                         type: "QUESTS_SEND_HEARTBEAT_FAILURE",
-                        error: new s.default(e),
+                        error: new a.default(e),
                         questId: t,
                         streamKey: n
                     })
                 }
             }
-            async function E(e, t) {
-                if (null != t.questContentCTA && (0, a.trackQuestContentClicked)({
+            async function T(e, t) {
+                if (null != t.questContentCTA && (0, l.trackQuestContentClicked)({
                         questId: e,
                         questContent: t.questContent,
                         questContentCTA: t.questContentCTA,
                         questContentPosition: t.questContentPosition
-                    }), !o.default.isEnrolling(e)) {
-                    r.default.dispatch({
+                    }), !u.default.isEnrolling(e)) {
+                    s.default.dispatch({
                         type: "QUESTS_ENROLL_BEGIN",
                         questId: e
                     });
                     try {
-                        let n = await i.HTTP.post({
-                            url: d.Endpoints.QUESTS_ENROLL(e),
+                        let n = await r.HTTP.post({
+                            url: c.Endpoints.QUESTS_ENROLL(e),
                             body: {
                                 location: t.questContent
                             }
                         });
-                        r.default.dispatch({
+                        s.default.dispatch({
                             type: "QUESTS_ENROLL_SUCCESS",
-                            enrolledQuestUserStatus: (0, l.questUserStatusFromServer)(n.body)
+                            enrolledQuestUserStatus: (0, d.questUserStatusFromServer)(n.body)
                         })
                     } catch (t) {
-                        r.default.dispatch({
+                        s.default.dispatch({
                             type: "QUESTS_ENROLL_FAILURE",
                             questId: e
                         })
                     }
                 }
             }
-            async function I(e, t, n) {
-                if (!o.default.isClaimingRewardCode(e)) {
-                    r.default.dispatch({
+            async function f(e, t, n) {
+                if (!u.default.isClaimingRewardCode(e)) {
+                    s.default.dispatch({
                         type: "QUESTS_CLAIM_REWARD_CODE_BEGIN",
                         questId: e
                     });
                     try {
-                        let s = await i.HTTP.post({
-                            url: d.Endpoints.QUESTS_REWARD_CODE(e),
+                        let i = await r.HTTP.post({
+                            url: c.Endpoints.QUESTS_REWARD_CODE(e),
                             body: {
                                 platform: t,
                                 location: n
                             }
                         });
-                        r.default.dispatch({
+                        s.default.dispatch({
                             type: "QUESTS_CLAIM_REWARD_CODE_SUCCESS",
                             questId: e,
-                            rewardCode: (0, l.questsRewardCodeFromServer)(s.body)
+                            rewardCode: (0, d.questsRewardCodeFromServer)(i.body)
                         })
                     } catch (t) {
-                        throw r.default.dispatch({
+                        throw s.default.dispatch({
                             type: "QUESTS_CLAIM_REWARD_CODE_FAILURE",
-                            error: new s.default(t),
+                            error: new a.default(t),
                             questId: e
                         }), t
                     }
                 }
             }
-            async function T(e, t, n) {
-                if (!o.default.isClaimingReward(e)) {
-                    r.default.dispatch({
+            async function S(e, t, n) {
+                if (!u.default.isClaimingReward(e)) {
+                    s.default.dispatch({
                         type: "QUESTS_CLAIM_REWARD_BEGIN",
                         questId: e
                     });
                     try {
-                        let s = await i.HTTP.post({
-                                url: d.Endpoints.QUESTS_CLAIM_REWARD(e),
+                        let i = await r.HTTP.post({
+                                url: c.Endpoints.QUESTS_CLAIM_REWARD(e),
                                 body: {
                                     platform: t,
                                     location: n
                                 }
                             }),
-                            a = (0, l.questsEntitlementsFromServer)(s.body);
-                        0 === a.errors.length ? r.default.dispatch({
+                            a = (0, d.questsEntitlementsFromServer)(i.body);
+                        0 === a.errors.length ? s.default.dispatch({
                             type: "QUESTS_CLAIM_REWARD_SUCCESS",
                             questId: e,
                             entitlements: a
-                        }) : r.default.dispatch({
+                        }) : s.default.dispatch({
                             type: "QUESTS_CLAIM_REWARD_FAILURE",
                             error: a.errors,
                             questId: e
                         })
                     } catch (t) {
-                        throw r.default.dispatch({
+                        throw s.default.dispatch({
                             type: "QUESTS_CLAIM_REWARD_FAILURE",
-                            error: new s.default(t),
+                            error: new a.default(t),
                             questId: e
                         }), t
                     }
                 }
             }
-            async function f(e) {
-                if (!o.default.isFetchingRewardCode(e)) {
-                    r.default.dispatch({
+            async function h(e) {
+                if (!u.default.isFetchingRewardCode(e)) {
+                    s.default.dispatch({
                         type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
                         questId: e
                     });
                     try {
-                        let t = await i.HTTP.get({
-                            url: d.Endpoints.QUESTS_REWARD_CODE(e)
+                        let t = await r.HTTP.get({
+                            url: c.Endpoints.QUESTS_REWARD_CODE(e)
                         });
-                        r.default.dispatch({
+                        s.default.dispatch({
                             type: "QUESTS_FETCH_REWARD_CODE_SUCCESS",
                             questId: e,
-                            rewardCode: (0, l.questsRewardCodeFromServer)(t.body)
+                            rewardCode: (0, d.questsRewardCodeFromServer)(t.body)
                         })
                     } catch (t) {
-                        throw r.default.dispatch({
+                        throw s.default.dispatch({
                             type: "QUESTS_FETCH_REWARD_CODE_FAILURE",
-                            error: new s.default(t),
+                            error: new a.default(t),
                             questId: e
                         }), t
                     }
                 }
             }
-            async function S(e, t) {
-                let n = o.default.isDismissingContent(e),
-                    a = (0, l.isDismissible)(t);
-                if (!n && a) {
-                    r.default.dispatch({
+            async function A(e, t) {
+                let n = u.default.isDismissingContent(e),
+                    i = (0, d.isDismissible)(t);
+                if (!n && i) {
+                    s.default.dispatch({
                         type: "QUESTS_DISMISS_CONTENT_BEGIN",
                         questId: e,
                         content: t
                     });
                     try {
-                        let n = await i.HTTP.post({
-                            url: d.Endpoints.QUESTS_DISMISS_CONTENT(e, t),
+                        let n = await r.HTTP.post({
+                            url: c.Endpoints.QUESTS_DISMISS_CONTENT(e, t),
                             body: {}
                         });
-                        r.default.dispatch({
+                        s.default.dispatch({
                             type: "QUESTS_DISMISS_CONTENT_SUCCESS",
-                            dismissedQuestUserStatus: (0, l.questUserStatusFromServer)(n.body)
+                            dismissedQuestUserStatus: (0, d.questUserStatusFromServer)(n.body)
                         })
                     } catch (t) {
-                        r.default.dispatch({
+                        s.default.dispatch({
                             type: "QUESTS_DISMISS_CONTENT_FAILURE",
-                            error: new s.default(t),
+                            error: new a.default(t),
                             questId: e
                         })
                     }
                 }
             }
 
-            function h(e) {
-                r.default.dispatch({
+            function m(e) {
+                s.default.dispatch({
                     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
                     streamKey: e
                 })
             }
-            async function A(e) {
-                try {
-                    let t = await i.HTTP.post({
-                        url: d.Endpoints.QUESTS_PREVIEW_COMPLETE(e),
-                        body: {}
-                    });
-                    r.default.dispatch({
-                        type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
-                        previewQuestUserStatus: (0, l.questUserStatusFromServer)(t.body)
-                    })
-                } catch (t) {
-                    r.default.dispatch({
-                        type: "QUESTS_PREVIEW_UPDATE_FAILURE",
-                        error: new s.default(t),
-                        questId: e
-                    })
-                }
-            }
-            async function m(e) {
-                try {
-                    let t = await i.HTTP.del({
-                        url: d.Endpoints.QUESTS_PREVIEW_STATUS(e),
-                        body: {}
-                    });
-                    r.default.dispatch({
-                        type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
-                        previewQuestUserStatus: (0, l.questUserStatusFromServer)(t.body)
-                    })
-                } catch (t) {
-                    r.default.dispatch({
-                        type: "QUESTS_PREVIEW_UPDATE_FAILURE",
-                        error: new s.default(t),
-                        questId: e
-                    })
-                }
-            }
             async function N(e) {
                 try {
-                    let t = await i.HTTP.del({
-                        url: d.Endpoints.QUESTS_PREVIEW_DISMISSIBILITY(e),
+                    let t = await r.HTTP.post({
+                        url: c.Endpoints.QUESTS_PREVIEW_COMPLETE(e),
                         body: {}
                     });
-                    r.default.dispatch({
+                    s.default.dispatch({
                         type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
-                        previewQuestUserStatus: (0, l.questUserStatusFromServer)(t.body)
+                        previewQuestUserStatus: (0, d.questUserStatusFromServer)(t.body)
                     })
                 } catch (t) {
-                    r.default.dispatch({
+                    s.default.dispatch({
                         type: "QUESTS_PREVIEW_UPDATE_FAILURE",
-                        error: new s.default(t),
+                        error: new a.default(t),
+                        questId: e
+                    })
+                }
+            }
+            async function p(e) {
+                try {
+                    let t = await r.HTTP.del({
+                        url: c.Endpoints.QUESTS_PREVIEW_STATUS(e),
+                        body: {}
+                    });
+                    s.default.dispatch({
+                        type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
+                        previewQuestUserStatus: (0, d.questUserStatusFromServer)(t.body)
+                    })
+                } catch (t) {
+                    s.default.dispatch({
+                        type: "QUESTS_PREVIEW_UPDATE_FAILURE",
+                        error: new a.default(t),
+                        questId: e
+                    })
+                }
+            }
+            async function O(e) {
+                try {
+                    let t = await r.HTTP.del({
+                        url: c.Endpoints.QUESTS_PREVIEW_DISMISSIBILITY(e),
+                        body: {}
+                    });
+                    s.default.dispatch({
+                        type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
+                        previewQuestUserStatus: (0, d.questUserStatusFromServer)(t.body)
+                    })
+                } catch (t) {
+                    s.default.dispatch({
+                        type: "QUESTS_PREVIEW_UPDATE_FAILURE",
+                        error: new a.default(t),
                         questId: e
                     })
                 }
             }
 
-            function p(e) {
-                r.default.dispatch({
+            function C(e) {
+                s.default.dispatch({
                     type: "QUESTS_OPTIMISTIC_PROGRESS_UPDATE",
                     userStatus: e
                 })
             }
 
-            function O(e) {
-                r.default.dispatch({
+            function R(e) {
+                s.default.dispatch({
                     type: "QUESTS_DELIVERY_OVERRIDE",
                     questId: e
                 })
@@ -190876,21 +190937,21 @@
                 let {
                     questId: i,
                     streamKey: r,
-                    applicationId: s
+                    applicationId: l
                 } = e, {
-                    channelId: l
-                } = (0, a.decodeStreamKey)(r), d = w(l), _ = E.default.quests.get(i);
+                    channelId: u
+                } = (0, a.decodeStreamKey)(r), d = w(u), _ = E.default.quests.get(i);
                 if ((null == _ ? void 0 : null === (t = _.userStatus) || void 0 === t ? void 0 : t.enrolledAt) == null) return !1;
                 let c = null === (n = U()) || void 0 === n ? void 0 : n.config,
-                    T = null != o.default.getRTCStream(r) && null != c && A.SharedQuestFields.build(c).application.id === s && d && null != _ && !(0, I.isQuestExpired)(_),
+                    T = null != o.default.getRTCStream(r) && null != c && A.SharedQuestFields.build(c).application.id === l && d && null != _ && !(0, I.isQuestExpired)(_),
                     {
                         quest: f,
                         activity: S
                     } = B(),
                     h = null == f ? void 0 : f.config,
-                    m = null != h && (null == f ? void 0 : f.id) === i && A.SharedQuestFields.build(h).application.id === s && d && (null == S ? void 0 : S.channelId) === l && !(0, I.isQuestExpired)(f),
-                    N = u.default.getGameById(s),
-                    p = null != _ && G(_) && N.id === s;
+                    m = null != h && (null == f ? void 0 : f.id) === i && A.SharedQuestFields.build(h).application.id === l && d && (null == S ? void 0 : S.channelId) === u && !(0, I.isQuestExpired)(f),
+                    N = s.default.getRunningGames().map(e => e.id),
+                    p = null != _ && G(_) && N.includes(l);
                 return T || m || p
             }
 
@@ -190970,12 +191031,13 @@
                             streamKey: t,
                             sendTerminalHeartbeat: n
                         } = e;
-                        y.log("~ terminateHeartbeat -> Terminating heartbeat:", {
-                            streamKey: t,
-                            sendTerminalHeartbeat: n
-                        }), this.terminateOptimisticProgressUpdateInterval(t);
+                        this.terminateOptimisticProgressUpdateInterval(t);
                         let i = this.streamKeyToHeartbeatState.get(t);
                         if (null != i) {
+                            y.log("~ terminateHeartbeat -> Terminating heartbeat:", {
+                                streamKey: t,
+                                sendTerminalHeartbeat: n
+                            });
                             let {
                                 questId: e,
                                 heartbeatTimeoutId: r
@@ -250338,7 +250400,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ffb1a11b2a92121a3614f809fc4aa9cc498efa6b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "427ba0df8793244afa759e8043093c8ae2394dbf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279450,7 +279512,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295694"
+                                build_number: "295805"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286395,7 +286457,7 @@
                 NetworkActionNames: function() {
                     return r
                 }
-            }), (s = i || (i = {})).ACTIVITIES = "impression_activities", s.ACTIVITIES_HAPPENING_NOW = "impression_activities_happening_now", s.ACTIVITY_BOOKMARK_SHARE_MODAL = "impression_activity_bookmark_share_modal", s.ACTIVITY_BOOSTING_UPSELL = "impression_activity_boosting_upsell", s.ACTIVITY_DETAILS = "impression_activity_details", s.ACTIVITY_NITRO_UPSELL = "impression_activity_nitro_upsell", s.ACTIVITY_SHARE_MOMENT_MODAL = "impression_activity_share_moment_modal", s.ACTIVITY_SHELF = "impression_activity_shelf", s.ACTIVITY_SHELF_SELECT_CHANNEL = "impression_activity_shelf_select_channel", s.APP_LAUNCHER_HOME_ACTIVITY_ITEM = "impression_app_launcher_home_activity_item", s.APP_LAUNCHER_SECTION = "impression_app_launcher_section", s.APPLICATION_LIBRARY = "impression_application_library", s.APPLICATION_STORE = "impression_application_store", s.APRIL_PREMIUM_MARKETING_DECO_CLAIMED_MODAL = "impression_april_premium_marketing_deco_claimed_modal", s.AVATAR_UPLOAD = "impression_avatar_upload", s.CHANNEL_ADD_INFO = "impression_channel_add_info", s.CHANNEL_ADD_MEMBERS = "impression_channel_add_members", s.CHANNEL_CALL_VIDEO_GRID = "impression_channel_call_video_grid", s.CHANNEL_CALL_VIDEO_GRID_VIEW = "impression_channel_call_video_grid_view", s.CHANNEL_VIEWED = "impression_channel_viewed", s.CLIP_EDITOR_VIEWED = "impression_clip_editor_viewed", s.CLIP_GALLERY_VIEWED = "impression_clip_gallery_viewed", s.CLYDE_AI_PROFILE_EMBED_VIEWED = "impression_clyde_ai_profile_embed_viewed", s.CONTACT_SYNC_CONTACT_INVITES = "impression_contact_sync_contact_invites", s.CONTACT_SYNC_INPUT_NAME = "impression_contact_sync_input_name", s.CONTACT_SYNC_START = "impression_contact_sync_start", s.CONTACT_SYNC_SUGGESTIONS = "impression_contact_sync_suggestions", s.CREATOR_PROMO_PAGE_GUILD_HEADER_UPSELL = "impression_creator_promo_page_guild_header_upsell", s.DIRECTORY_ADD_GUILD_CONFIRMATION = "impression_directory_add_guild_confirmation", s.DISCOVERABILITY = "impression_discoverability", s.DROPS_QUEST_COMPLETION = "impression_drops_quest_completion", s.DROPS_QUEST_ENROLLMENT = "impression_drops_quest_enrollment", s.EMBEDDED_ACTIVITY_HAPPENING_NOW = "impression_embedded_activity_happening_now", s.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING = "impression_enable_creator_monetization_accept_terms_landing", s.ENABLE_CREATOR_MONETIZATION_CREATE_REQUEST_LANDING = "impression_enable_creator_monetization_create_request_landing", s.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL = "impression_enable_creator_monetization_guild_header_upsell", s.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING = "impression_enable_creator_monetization_waitlist_landing", s.FRIENDS = "impression_friends", s.GAME_CONSOLE_DEVICE_LIST = "impression_game_console_device_list", s.GDM_SETTINGS_INVITES = "impression_gdm_settings_invites", s.GUILD_ADD_ACCEPT_INVITE = "impression_guild_add_accept_invite", s.GUILD_ADD_CHANNEL_PROMPT = "impression_guild_add_channel_prompt", s.GUILD_ADD_CUSTOMIZE = "impression_guild_add_customize", s.GUILD_ADD_GUILD_INVITE = "impression_guild_add_guild_invite", s.GUILD_ADD_INTENT_SELECTION = "impression_guild_add_intent_selection", s.GUILD_ADD_JOIN = "impression_guild_add_join", s.GUILD_CREATE_MODAL_JOIN = "impression_guild_create_modal_join", s.GUILD_ADD_LANDING = "impression_guild_add_landing", s.GUILD_CHANNEL = "impression_guild_channel", s.GUILD_DISCOVERY = "impression_guild_discovery", s.GUILD_INVITE = "impression_guild_invite", s.GUILD_INVITE_LINK_SETTINGS = "impression_guild_invite_link_settings", s.GUILD_INVITE_SEARCH = "impression_guild_invite_search", s.GUILD_MEMBER_VERIFICATION = "impression_guild_member_verification", s.GUILD_PERMANENT_LINKS_UPSELL = "impression_guild_permanent_links_upsell", s.GUILD_PRODUCT_LISTING_EMBED = "impression_guild_product_listing_embed", s.GUILD_PRODUCT_LISTING_INFO_MODAL = "impression_guild_product_listing_info_modal", s.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS = "impression_guild_role_subscription_store_page_guild_settings", s.GUILD_SETTINGS_ANALYTICS = "impression_guild_settings_analytics", s.GUILD_SETTINGS_AUDIT_LOG = "impression_guild_settings_audit_log", s.GUILD_SETTINGS_AUDIT_LOG_V2 = "impression_guild_settings_audit_log_v2", s.GUILD_SETTINGS_BANS = "impression_guild_settings_bans", s.GUILD_SETTINGS_BOOST_STATUS = "impression_guild_settings_boost_status", s.GUILD_SETTINGS_CHANNELS = "impression_guild_settings_channels", s.GUILD_SETTINGS_CLYDE = "impression_guild_settings_clyde", s.GUILD_SETTINGS_COMMUNITY_OVERVIEW = "impression_guild_settings_community_overview", s.GUILD_SETTINGS_COMMUNITY_WELCOME = "impression_guild_settings_community_welcome", s.GUILD_SETTINGS_DISCOVERY = "impression_guild_settings_discovery", s.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE = "impression_guild_settings_discovery_landing_page", s.GUILD_SETTINGS_EMOJI = "impression_guild_settings_emoji", s.GUILD_SETTINGS_ENABLE_COMMUNITY = "impression_guild_settings_enable_community", s.GUILD_SETTINGS_INTEGRATION = "impression_guild_settings_integration", s.GUILD_SETTINGS_INVITES = "impression_guild_settings_invites", s.GUILD_SETTINGS_LANDING = "impression_guild_settings_landing", s.GUILD_SETTINGS_MEMBER_VERIFICATION = "impression_guild_settings_member_verification", s.GUILD_SETTINGS_MEMBERS = "impression_guild_settings_members", s.GUILD_SETTINGS_MODERATION = "impression_guild_settings_moderation", s.GUILD_SETTINGS_OVERVIEW = "impression_guild_settings_overview", s.GUILD_SETTINGS_PARTNER = "impression_guild_settings_partner", s.GUILD_SETTINGS_ROLES = "impression_guild_settings_roles", s.GUILD_SETTINGS_SAFETY = "impression_guild_settings_safety", s.GUILD_SETTINGS_SECURITY = "impression_guild_settings_security", s.GUILD_SETTINGS_SOUNDBOARD = "impression_guild_settings_soundboard", s.GUILD_SETTINGS_STICKERS = "impression_guild_settings_stickers", s.GUILD_SETTINGS_TEMPLATE = "impression_guild_settings_template", s.GUILD_SETTINGS_VANITY_URL = "impression_guild_settings_vanity_url", s.GUILD_SETTINGS_WEBHOOKS = "impression_guild_settings_webhooks", s.GUILD_SETTINGS_WIDGET = "impression_guild_settings_widget", s.GUILD_SHOP_EMBED = "impression_guild_shop_embed", s.GUILD_SHOP_PAGE = "impression_guild_shop_page", s.GUILD_SHOP_UPSELL = "impression_guild_shop_upsell", s.GUILD_TRANSFER_OWNERSHIP = "impression_guild_transfer_ownership", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE = "impression_guild_transfer_ownership_confirm_email_code", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_SMS_CODE = "impression_guild_transfer_ownership_confirm_sms_code", s.GUILDS_EMPTY_NUX = "impression_guilds_empty_nux", s.HOTSPOT = "impression_hotspot", s.HUB_CREATE_GUILD_CUSTOMIZE = "impression_hub_create_guild_customize", s.HUB_CREATE_GUILD_TEMPLATE = "impression_hub_create_guild_template", s.HUB_EMAIL_SIGNUP = "impression_hub_email_signup", s.HUB_EMAIL_VERIFICATION_PAGE = "impression_hub_email_verification_page", s.HUB_EXISTING_GUILD_CHOOSE = "impression_hub_existing_guild_choose", s.HUB_EXISTING_GUILD_CUSTOMIZE = "impression_hub_existing_guild_customize", s.HUB_WAITLIST_SIGNUP = "impression_hub_waitlist_signup", s.INVITE_ACCEPT = "impression_invite_accept", s.LOCALIZED_PRICING_UPSELL_VIEWED = "impression_localized_pricing_upsell_viewed", s.MESSAGES_EMPTY_NUX = "impression_messages_empty_nux", s.MULTI_ACCOUNT_SWITCH_LANDING = "impression_multi_account_switch_landing", s.NEW_USER_INTENT_START = "impression_new_user_intent_start", s.NITRO_TAB = "impression_nitro_tab", s.NOTIFICATION_CENTER_LANDING = "impression_notification_center_landing", s.NOTIFICATION_SETTING_UNREAD_NUDGE = "impression_notification_setting_unread_nudge", s.POLL_EDITOR_VIEWED = "impression_poll_editor_viewed", s.POMELO_LANDING = "impression_pomelo_landing", s.PREMIUM_GUILD_SUBSCRIPTION_MARKETING_PAGE = "impression_premium_guild_subscription_marketing_page", s.PREMIUM_MARKETING_BANNER = "impression_premium_marketing_banner", s.PREMIUM_MARKETING_SURFACE = "impression_premium_marketing_surface", s.PREMIUM_MARKETING_TENURE_REWARD_CARD = "impression_premium_marketing_tenure_reward_card", s.PUSH_NOTIFICATION_PREPROMPT = "impression_push_notification_preprompt", s.PUSH_NOTIFICATION_REACTIVATION_PROMPT = "impression_push_notification_reactivation_prompt", s.QUESTS_LANDING_PAGE = "impression_quests_landing_page", s.REQUEST_REVIEW_MODAL = "impression_request_review_modal", s.ROLE_CREATE_ADD_MEMBERS = "impression_role_create_add_members", s.ROLE_CREATE_DISPLAY = "impression_role_create_display", s.ROLE_CREATE_PERMISSIONS = "impression_role_create_permissions", s.ROLE_SUBSCRIPTION_EMOJI_UPSELL = "impression_role_subscription_emoji_upsell", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING = "impression_role_subscription_initial_setup_modal_landing", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP = "impression_role_subscription_initial_setup_modal_tier_step", s.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR = "impression_role_subscription_listing_template_selector", s.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE = "impression_role_subscription_listing_upsell_error_page", s.SHELF_ACTIVITY_DETAILS = "impression_shelf_activity_details", s.SNOWSGIVING = "impression_snowsgiving", s.SOUNDBOARD_POPOUT = "impression_soundboard_popout", s.STAGE_DISCOVERY = "impression_stage_discovery", s.URF_CONFIRM_EMAIL_CODE = "impression_urf_confirm_email_code", s.URF_ENTER_EMAIL = "impression_urf_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_COMPLETE = "impression_user_account_email_change_complete", s.USER_ACCOUNT_EMAIL_CHANGE_ENTER_EMAIL = "impression_user_account_email_change_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "impression_user_account_email_change_send_code", s.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "impression_user_account_email_change_verify_code", s.USER_ACCOUNT_EMAIL_RESEND_VERIFICATION_EMAIL = "impression_user_account_email_resend_verification_email", s.USER_ACCOUNT_PASSWORD_VERIFY = "impression_user_account_password_verify", s.USER_ACTION_REQUIRED = "impression_user_action_required", s.USER_ADD_PHONE = "impression_user_add_phone", s.USER_AGE_GATE = "impression_user_age_gate", s.USER_AGE_GATE_UNDERAGE = "impression_user_age_gate_underage", s.USER_AGREEMENTS = "impression_user_agreements", s.USER_CLYDE_AI_CONSENT_MODAL = "impression_user_clyde_ai_consent_modal", s.USER_LOGIN = "impression_user_login", s.USER_PASSWORDLESS_CODE_ENTRY = "impression_user_passwordless_code_entry", s.USER_PASSWORDLESS_INTRO = "impression_user_passwordless_intro", s.USER_REGISTER_ACCOUNT_INFORMATION = "impression_user_register_account_information", s.USER_REGISTER_IDENTITY = "impression_user_register_identity", s.USER_REGISTRATION = "impression_user_registration", s.USER_SETTINGS_CONNECTIONS = "impression_user_settings_connections", s.USER_VERIFICATION_MODAL = "impression_user_verification_modal", s.USER_VERIFY_PASSWORD = "impression_user_verify_password", s.USER_VERIFY_PHONE = "impression_user_verify_phone", s.USER_WELCOME = "impression_user_welcome", s.USER_YOU_SCREEN = "impression_user_you_screen", s.VIEW_PANEL_DEVTOOLS = "impression_view_panel_devtools", (a = r || (r = {})).APPLE_JWT_TOKEN_CREATE = "network_action_apple_jwt_token_create", a.AUTH_SESSIONS_LOGGED_OUT = "network_action_auth_sessions_logged_out", a.AUTHORIZE_IP = "network_action_authorize_ip", a.AUTHORIZE_PAYMENT = "network_action_authorize_payment", a.BUG_REPORT_SUBMIT = "network_action_bug_report_submit", a.CHANNEL_CREATE = "network_action_channel_create", a.DIRECTORY_GUILD_ENTRY_CREATE = "network_action_directory_guild_entry_create", a.DIRECTORY_GUILD_ENTRY_DELETE = "network_action_directory_guild_entry_delete", a.EMAIL_SETTINGS_FETCH = "network_action_email_settings_fetch", a.EMAIL_SETTINGS_UPDATE = "network_action_email_settings_update", a.EMBEDDED_ACTIVITIES_FETCH_SHELF = "network_action_embedded_activities_fetch_shelf", a.EMBEDDED_ACTIVITIES_LAUNCH = "network_action_embedded_activities_launch", a.FORGOT_PASSWORD = "network_action_forgot_password", a.GUILD_CREATE = "network_action_guild_create", a.GUILD_TRANSFER_OWNERSHIP = "network_action_guild_transfer_ownership", a.GUILD_TRANSFER_OWNERSHIP_SEND_CODE = "network_action_guild_transfer_ownership_send_code", a.HUB_EMAIL_VERIFY = "network_action_hub_email_verify", a.HUB_EMAIL_VERIFY_SEND = "network_action_hub_email_verify_send", a.HUB_WAITLIST_SIGNUP = "network_action_hub_waitlist_signup", a.INVITE_RESOLVE = "network_action_invite_resolve", a.INVITE_REVOKE = "network_action_invite_revoke", a.LOGIN_REQUEST_SMS_TOKEN = "network_action_login_request_sms_token", a.NCMEC_REPORT_CLOSE = "network_action_ncmec_report_close", a.NCMEC_REPORTABLE_CONTENT_CREATE = "network_action_ncmec_reportable_content_create", a.NOTIFICATION_CENTER_ITEM_DELETE = "network_action_notification_center_item_delete", a.NOTIFICATION_CENTER_PAGE_FETCH = "network_action_notification_center_page_fetch", a.POMELO_ATTEMPT = "network_action_pomelo_attempt", a.POMELO_CREATE = "network_action_pomelo_create", a.STREAM_NOTIFY = "network_action_stream_notify", a.USER_ACCEPT_AGREEMENTS = "network_action_user_accept_agreements", a.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "network_action_user_account_email_change_send_code", a.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "network_action_user_account_email_change_verify_code", a.USER_BULK_RELATIONSHIPS_UPDATE = "network_action_user_bulk_relationships_update", a.USER_CLYDE_AI_CONSENT_UPDATED = "network_action_user_clyde_ai_consent_updated", a.USER_COMMUNICATION_DISABLED_UPDATE = "network_action_user_communication_disabled_update", a.USER_CONNECTIONS_UPDATE = "network_action_user_connections_update", a.USER_CONTACTS_SYNC = "network_action_user_contacts_sync", a.USER_LOGIN = "network_action_user_login", a.USER_LOGIN_MFA = "network_action_user_login_mfa", a.USER_LOGIN_MFA_SMS = "network_action_user_login_mfa_sms", a.USER_LOGOUT = "network_action_user_logout", a.USER_PASSWORDLESS_INFO_FETCH = "network_action_user_passwordless_info_fetch", a.USER_PASSWORDLESS_LOGIN_CODE = "network_action_user_passwordless_login_code", a.USER_REGISTER = "network_action_user_register", a.USER_REGISTER_DEVICE_TOKEN = "network_action_user_register_device_token", a.USER_REGISTER_PHONE = "network_action_user_register_phone", a.USER_RESET_PASSWORD = "network_action_user_reset_password", a.USER_SETTINGS_UPDATE = "network_action_user_settings_update", a.USER_SURVEY_FETCH = "network_action_user_survey_fetch", a.USER_SURVEY_SEEN = "network_action_user_survey_seen", a.USER_UNREGISTER_DEVICE_TOKEN = "network_action_user_unregister_device_token", a.USER_VERIFY = "network_action_user_verify", a.USER_VERIFY_PHONE = "network_action_user_verify_phone", a.USER_VERIFY_RESEND = "network_action_user_verify_resend"
+            }), (s = i || (i = {})).ACTIVITIES = "impression_activities", s.ACTIVITIES_HAPPENING_NOW = "impression_activities_happening_now", s.ACTIVITY_BOOKMARK_SHARE_MODAL = "impression_activity_bookmark_share_modal", s.ACTIVITY_BOOSTING_UPSELL = "impression_activity_boosting_upsell", s.ACTIVITY_DETAILS = "impression_activity_details", s.ACTIVITY_NITRO_UPSELL = "impression_activity_nitro_upsell", s.ACTIVITY_SHARE_MOMENT_MODAL = "impression_activity_share_moment_modal", s.ACTIVITY_SHELF = "impression_activity_shelf", s.ACTIVITY_SHELF_SELECT_CHANNEL = "impression_activity_shelf_select_channel", s.APP_LAUNCHER_HOME_ACTIVITY_ITEM = "impression_app_launcher_home_activity_item", s.APP_LAUNCHER_SECTION = "impression_app_launcher_section", s.APPLICATION_LIBRARY = "impression_application_library", s.APPLICATION_STORE = "impression_application_store", s.APRIL_PREMIUM_MARKETING_DECO_CLAIMED_MODAL = "impression_april_premium_marketing_deco_claimed_modal", s.AVATAR_UPLOAD = "impression_avatar_upload", s.CHANNEL_ADD_INFO = "impression_channel_add_info", s.CHANNEL_ADD_MEMBERS = "impression_channel_add_members", s.CHANNEL_CALL_VIDEO_GRID = "impression_channel_call_video_grid", s.CHANNEL_CALL_VIDEO_GRID_VIEW = "impression_channel_call_video_grid_view", s.CHANNEL_VIEWED = "impression_channel_viewed", s.CLIP_EDITOR_VIEWED = "impression_clip_editor_viewed", s.CLIP_GALLERY_VIEWED = "impression_clip_gallery_viewed", s.CLYDE_AI_PROFILE_EMBED_VIEWED = "impression_clyde_ai_profile_embed_viewed", s.CONTACT_SYNC_CONTACT_INVITES = "impression_contact_sync_contact_invites", s.CONTACT_SYNC_INPUT_NAME = "impression_contact_sync_input_name", s.CONTACT_SYNC_START = "impression_contact_sync_start", s.CONTACT_SYNC_SUGGESTIONS = "impression_contact_sync_suggestions", s.CREATOR_PROMO_PAGE_GUILD_HEADER_UPSELL = "impression_creator_promo_page_guild_header_upsell", s.DIRECTORY_ADD_GUILD_CONFIRMATION = "impression_directory_add_guild_confirmation", s.DISCOVERABILITY = "impression_discoverability", s.DROPS_QUEST_COMPLETION = "impression_drops_quest_completion", s.DROPS_QUEST_ENROLLMENT = "impression_drops_quest_enrollment", s.EMBEDDED_ACTIVITY_HAPPENING_NOW = "impression_embedded_activity_happening_now", s.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING = "impression_enable_creator_monetization_accept_terms_landing", s.ENABLE_CREATOR_MONETIZATION_CREATE_REQUEST_LANDING = "impression_enable_creator_monetization_create_request_landing", s.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL = "impression_enable_creator_monetization_guild_header_upsell", s.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING = "impression_enable_creator_monetization_waitlist_landing", s.FRIENDS = "impression_friends", s.GAME_CONSOLE_DEVICE_LIST = "impression_game_console_device_list", s.GDM_SETTINGS_INVITES = "impression_gdm_settings_invites", s.GUILD_ADD_ACCEPT_INVITE = "impression_guild_add_accept_invite", s.GUILD_ADD_CHANNEL_PROMPT = "impression_guild_add_channel_prompt", s.GUILD_ADD_CUSTOMIZE = "impression_guild_add_customize", s.GUILD_ADD_GUILD_INVITE = "impression_guild_add_guild_invite", s.GUILD_ADD_INTENT_SELECTION = "impression_guild_add_intent_selection", s.GUILD_ADD_JOIN = "impression_guild_add_join", s.GUILD_CREATE_MODAL_JOIN = "impression_guild_create_modal_join", s.GUILD_ADD_LANDING = "impression_guild_add_landing", s.GUILD_CHANNEL = "impression_guild_channel", s.GUILD_DISCOVERY = "impression_guild_discovery", s.GUILD_INVITE = "impression_guild_invite", s.GUILD_INVITE_LINK_SETTINGS = "impression_guild_invite_link_settings", s.GUILD_INVITE_SEARCH = "impression_guild_invite_search", s.GUILD_MEMBER_VERIFICATION = "impression_guild_member_verification", s.GUILD_PERMANENT_LINKS_UPSELL = "impression_guild_permanent_links_upsell", s.GUILD_PRODUCT_LISTING_EMBED = "impression_guild_product_listing_embed", s.GUILD_PRODUCT_LISTING_INFO_MODAL = "impression_guild_product_listing_info_modal", s.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS = "impression_guild_role_subscription_store_page_guild_settings", s.GUILD_SETTINGS_ANALYTICS = "impression_guild_settings_analytics", s.GUILD_SETTINGS_AUDIT_LOG = "impression_guild_settings_audit_log", s.GUILD_SETTINGS_AUDIT_LOG_V2 = "impression_guild_settings_audit_log_v2", s.GUILD_SETTINGS_BANS = "impression_guild_settings_bans", s.GUILD_SETTINGS_BOOST_STATUS = "impression_guild_settings_boost_status", s.GUILD_SETTINGS_CHANNELS = "impression_guild_settings_channels", s.GUILD_SETTINGS_CLYDE = "impression_guild_settings_clyde", s.GUILD_SETTINGS_COMMUNITY_OVERVIEW = "impression_guild_settings_community_overview", s.GUILD_SETTINGS_COMMUNITY_WELCOME = "impression_guild_settings_community_welcome", s.GUILD_SETTINGS_DISCOVERY = "impression_guild_settings_discovery", s.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE = "impression_guild_settings_discovery_landing_page", s.GUILD_SETTINGS_EMOJI = "impression_guild_settings_emoji", s.GUILD_SETTINGS_ENABLE_COMMUNITY = "impression_guild_settings_enable_community", s.GUILD_SETTINGS_INTEGRATION = "impression_guild_settings_integration", s.GUILD_SETTINGS_INVITES = "impression_guild_settings_invites", s.GUILD_SETTINGS_LANDING = "impression_guild_settings_landing", s.GUILD_SETTINGS_MEMBER_VERIFICATION = "impression_guild_settings_member_verification", s.GUILD_SETTINGS_MEMBERS = "impression_guild_settings_members", s.GUILD_SETTINGS_MODERATION = "impression_guild_settings_moderation", s.GUILD_SETTINGS_OVERVIEW = "impression_guild_settings_overview", s.GUILD_SETTINGS_PARTNER = "impression_guild_settings_partner", s.GUILD_SETTINGS_ROLES = "impression_guild_settings_roles", s.GUILD_SETTINGS_SAFETY = "impression_guild_settings_safety", s.GUILD_SETTINGS_SECURITY = "impression_guild_settings_security", s.GUILD_SETTINGS_SOUNDBOARD = "impression_guild_settings_soundboard", s.GUILD_SETTINGS_STICKERS = "impression_guild_settings_stickers", s.GUILD_SETTINGS_TEMPLATE = "impression_guild_settings_template", s.GUILD_SETTINGS_VANITY_URL = "impression_guild_settings_vanity_url", s.GUILD_SETTINGS_WEBHOOKS = "impression_guild_settings_webhooks", s.GUILD_SETTINGS_WIDGET = "impression_guild_settings_widget", s.GUILD_SHOP_EMBED = "impression_guild_shop_embed", s.GUILD_SHOP_PAGE = "impression_guild_shop_page", s.GUILD_SHOP_UPSELL = "impression_guild_shop_upsell", s.GUILD_TRANSFER_OWNERSHIP = "impression_guild_transfer_ownership", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE = "impression_guild_transfer_ownership_confirm_email_code", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_SMS_CODE = "impression_guild_transfer_ownership_confirm_sms_code", s.GUILDS_EMPTY_NUX = "impression_guilds_empty_nux", s.HOTSPOT = "impression_hotspot", s.HUB_CREATE_GUILD_CUSTOMIZE = "impression_hub_create_guild_customize", s.HUB_CREATE_GUILD_TEMPLATE = "impression_hub_create_guild_template", s.HUB_EMAIL_SIGNUP = "impression_hub_email_signup", s.HUB_EMAIL_VERIFICATION_PAGE = "impression_hub_email_verification_page", s.HUB_EXISTING_GUILD_CHOOSE = "impression_hub_existing_guild_choose", s.HUB_EXISTING_GUILD_CUSTOMIZE = "impression_hub_existing_guild_customize", s.HUB_WAITLIST_SIGNUP = "impression_hub_waitlist_signup", s.INVITE_ACCEPT = "impression_invite_accept", s.LOCALIZED_PRICING_UPSELL_VIEWED = "impression_localized_pricing_upsell_viewed", s.MESSAGES_EMPTY_NUX = "impression_messages_empty_nux", s.MULTI_ACCOUNT_SWITCH_LANDING = "impression_multi_account_switch_landing", s.NEW_USER_INTENT_START = "impression_new_user_intent_start", s.NITRO_TAB = "impression_nitro_tab", s.NOTIFICATION_CENTER_LANDING = "impression_notification_center_landing", s.NOTIFICATION_SETTING_UNREAD_NUDGE = "impression_notification_setting_unread_nudge", s.POLL_EDITOR_VIEWED = "impression_poll_editor_viewed", s.POMELO_LANDING = "impression_pomelo_landing", s.PREMIUM_GUILD_SUBSCRIPTION_MARKETING_PAGE = "impression_premium_guild_subscription_marketing_page", s.PREMIUM_MARKETING_BANNER = "impression_premium_marketing_banner", s.PREMIUM_MARKETING_SURFACE = "impression_premium_marketing_surface", s.PREMIUM_MARKETING_TENURE_REWARD_CARD = "impression_premium_marketing_tenure_reward_card", s.PUSH_NOTIFICATION_PREPROMPT = "impression_push_notification_preprompt", s.PUSH_NOTIFICATION_REACTIVATION_PROMPT = "impression_push_notification_reactivation_prompt", s.QUESTS_LANDING_PAGE = "impression_quests_landing_page", s.REQUEST_REVIEW_MODAL = "impression_request_review_modal", s.ROLE_CREATE_ADD_MEMBERS = "impression_role_create_add_members", s.ROLE_CREATE_DISPLAY = "impression_role_create_display", s.ROLE_CREATE_PERMISSIONS = "impression_role_create_permissions", s.ROLE_SUBSCRIPTION_EMOJI_UPSELL = "impression_role_subscription_emoji_upsell", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING = "impression_role_subscription_initial_setup_modal_landing", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP = "impression_role_subscription_initial_setup_modal_tier_step", s.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR = "impression_role_subscription_listing_template_selector", s.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE = "impression_role_subscription_listing_upsell_error_page", s.SHELF_ACTIVITY_DETAILS = "impression_shelf_activity_details", s.SNOWSGIVING = "impression_snowsgiving", s.SOUNDBOARD_POPOUT = "impression_soundboard_popout", s.STAGE_DISCOVERY = "impression_stage_discovery", s.URF_CONFIRM_EMAIL_CODE = "impression_urf_confirm_email_code", s.URF_ENTER_EMAIL = "impression_urf_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_COMPLETE = "impression_user_account_email_change_complete", s.USER_ACCOUNT_EMAIL_CHANGE_ENTER_EMAIL = "impression_user_account_email_change_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "impression_user_account_email_change_send_code", s.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "impression_user_account_email_change_verify_code", s.USER_ACCOUNT_EMAIL_RESEND_VERIFICATION_EMAIL = "impression_user_account_email_resend_verification_email", s.USER_ACCOUNT_PASSWORD_VERIFY = "impression_user_account_password_verify", s.USER_ACTION_REQUIRED = "impression_user_action_required", s.USER_ADD_PHONE = "impression_user_add_phone", s.USER_AGE_GATE = "impression_user_age_gate", s.USER_AGE_GATE_UNDERAGE = "impression_user_age_gate_underage", s.USER_AGREEMENTS = "impression_user_agreements", s.USER_CLYDE_AI_CONSENT_MODAL = "impression_user_clyde_ai_consent_modal", s.USER_LOGIN = "impression_user_login", s.USER_PASSWORDLESS_CODE_ENTRY = "impression_user_passwordless_code_entry", s.USER_PASSWORDLESS_INTRO = "impression_user_passwordless_intro", s.USER_REGISTER_ACCOUNT_INFORMATION = "impression_user_register_account_information", s.USER_REGISTER_IDENTITY = "impression_user_register_identity", s.USER_REGISTRATION = "impression_user_registration", s.USER_SETTINGS_CONNECTIONS = "impression_user_settings_connections", s.USER_VERIFICATION_MODAL = "impression_user_verification_modal", s.USER_VERIFY_PASSWORD = "impression_user_verify_password", s.USER_VERIFY_PHONE = "impression_user_verify_phone", s.USER_WELCOME = "impression_user_welcome", s.USER_YOU_SCREEN = "impression_user_you_screen", s.VIEW_PANEL_DEVTOOLS = "impression_view_panel_devtools", (a = r || (r = {})).APPLE_JWT_TOKEN_CREATE = "network_action_apple_jwt_token_create", a.AUTH_SESSIONS_LOGGED_OUT = "network_action_auth_sessions_logged_out", a.AUTHORIZE_IP = "network_action_authorize_ip", a.AUTHORIZE_PAYMENT = "network_action_authorize_payment", a.BUG_REPORT_SUBMIT = "network_action_bug_report_submit", a.CHANNEL_CREATE = "network_action_channel_create", a.DIRECTORY_GUILD_ENTRY_CREATE = "network_action_directory_guild_entry_create", a.DIRECTORY_GUILD_ENTRY_DELETE = "network_action_directory_guild_entry_delete", a.EMAIL_SETTINGS_FETCH = "network_action_email_settings_fetch", a.EMAIL_SETTINGS_UPDATE = "network_action_email_settings_update", a.EMBEDDED_ACTIVITIES_FETCH_SHELF = "network_action_embedded_activities_fetch_shelf", a.EMBEDDED_ACTIVITIES_LAUNCH = "network_action_embedded_activities_launch", a.FORGOT_PASSWORD = "network_action_forgot_password", a.GUILD_CREATE = "network_action_guild_create", a.GUILD_TRANSFER_OWNERSHIP = "network_action_guild_transfer_ownership", a.GUILD_TRANSFER_OWNERSHIP_SEND_CODE = "network_action_guild_transfer_ownership_send_code", a.HUB_EMAIL_VERIFY = "network_action_hub_email_verify", a.HUB_EMAIL_VERIFY_SEND = "network_action_hub_email_verify_send", a.HUB_WAITLIST_SIGNUP = "network_action_hub_waitlist_signup", a.INVITE_RESOLVE = "network_action_invite_resolve", a.INVITE_REVOKE = "network_action_invite_revoke", a.LOGIN_REQUEST_SMS_TOKEN = "network_action_login_request_sms_token", a.NCMEC_REPORT_CLOSE = "network_action_ncmec_report_close", a.NCMEC_REPORTABLE_CONTENT_CREATE = "network_action_ncmec_reportable_content_create", a.NOTIFICATION_CENTER_ITEM_DELETE = "network_action_notification_center_item_delete", a.NOTIFICATION_CENTER_PAGE_FETCH = "network_action_notification_center_page_fetch", a.POMELO_ATTEMPT = "network_action_pomelo_attempt", a.POMELO_CREATE = "network_action_pomelo_create", a.QUEST_HEARTBEAT = "network_action_quest_heartbeat", a.STREAM_NOTIFY = "network_action_stream_notify", a.USER_ACCEPT_AGREEMENTS = "network_action_user_accept_agreements", a.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "network_action_user_account_email_change_send_code", a.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "network_action_user_account_email_change_verify_code", a.USER_BULK_RELATIONSHIPS_UPDATE = "network_action_user_bulk_relationships_update", a.USER_CLYDE_AI_CONSENT_UPDATED = "network_action_user_clyde_ai_consent_updated", a.USER_COMMUNICATION_DISABLED_UPDATE = "network_action_user_communication_disabled_update", a.USER_CONNECTIONS_UPDATE = "network_action_user_connections_update", a.USER_CONTACTS_SYNC = "network_action_user_contacts_sync", a.USER_LOGIN = "network_action_user_login", a.USER_LOGIN_MFA = "network_action_user_login_mfa", a.USER_LOGIN_MFA_SMS = "network_action_user_login_mfa_sms", a.USER_LOGOUT = "network_action_user_logout", a.USER_PASSWORDLESS_INFO_FETCH = "network_action_user_passwordless_info_fetch", a.USER_PASSWORDLESS_LOGIN_CODE = "network_action_user_passwordless_login_code", a.USER_REGISTER = "network_action_user_register", a.USER_REGISTER_DEVICE_TOKEN = "network_action_user_register_device_token", a.USER_REGISTER_PHONE = "network_action_user_register_phone", a.USER_RESET_PASSWORD = "network_action_user_reset_password", a.USER_SETTINGS_UPDATE = "network_action_user_settings_update", a.USER_SURVEY_FETCH = "network_action_user_survey_fetch", a.USER_SURVEY_SEEN = "network_action_user_survey_seen", a.USER_UNREGISTER_DEVICE_TOKEN = "network_action_user_unregister_device_token", a.USER_VERIFY = "network_action_user_verify", a.USER_VERIFY_PHONE = "network_action_user_verify_phone", a.USER_VERIFY_RESEND = "network_action_user_verify_resend"
         },
         979675: function(e, t, n) {
             "use strict";
@@ -286808,7 +286870,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295694", "295694"), 10);
+                let s = parseInt((n = "295805", "295805"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314516,4 +314578,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.bec48eead506f88a39f4.js.map
+//# sourceMappingURL=71586.8e4cc2c5f319a6850a3c.js.map
