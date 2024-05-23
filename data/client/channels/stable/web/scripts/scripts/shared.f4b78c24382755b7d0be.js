@@ -42,43 +42,22 @@
         690514: function(e, t, a) {
             "use strict";
             e.exports = {
-                borderBrand: "borderBrand__3e590",
-                borderBrandNew: "borderBrandNew__30cf2",
-                borderGreen: "borderGreen__419d8",
-                borderLink: "borderLink__22462",
-                borderPrimary: "borderPrimary__386cf",
-                borderRed: "borderRed__8797c",
-                borderTransparent: "borderTransparent_c5801e",
-                borderWhite: "borderWhite__8863c",
-                borderYellow: "borderYellow_b1578d",
                 button: "button__581d0",
                 colorBrand: "colorBrand__27d57",
-                colorBrandNew: "colorBrandNew__8872c",
+                colorBrandInverted: "colorBrandInverted__52602",
                 colorGreen: "colorGreen__75c93",
                 colorLink: "colorLink__4141a",
                 colorPrimary: "colorPrimary_ebe632",
                 colorRed: "colorRed__5a617",
                 colorTransparent: "colorTransparent__3e3c7",
                 colorWhite: "colorWhite__0033e",
-                colorYellow: "colorYellow__818c3",
                 contents: "contents__322f4",
                 disabledButtonOverlay: "disabledButtonOverlay__67037",
                 disabledButtonWrapper: "disabledButtonWrapper_b04230",
                 fullWidth: "fullWidth_fdb23d",
                 grow: "grow__4c8a4",
-                hasHover: "hasHover_dfa15e",
-                hoverBrand: "hoverBrand__252e8",
-                hoverBrandNew: "hoverBrandNew__5984d",
-                hoverGreen: "hoverGreen_b343d6",
-                hoverLink: "hoverLink_d27dd5",
-                hoverPrimary: "hoverPrimary_c2c623",
-                hoverRed: "hoverRed_a408db",
-                hoverTransparent: "hoverTransparent__31061",
-                hoverWhite: "hoverWhite__58482",
-                hoverYellow: "hoverYellow__1d238",
                 lookBlank: "lookBlank_a5b4ca",
                 lookFilled: "lookFilled__950dd",
-                lookInverted: "lookInverted_a299dc",
                 lookLink: "lookLink_a2da25 " + a("365445").lowSaturationUnderline,
                 lookOutlined: "lookOutlined__014b5",
                 sizeIcon: "sizeIcon_aff037",
@@ -1514,6 +1493,7 @@
                 arrowHitbox: "arrowHitbox__58add",
                 arrowHitboxPadding: "arrowHitboxPadding__8a68d",
                 carousel: "carousel_c25a21",
+                carouselContainer: "carouselContainer__8d9fc",
                 carouselItem: "carouselItem_dd9fbe",
                 controls: "controls_a919f2",
                 dot: "dot__6356c",
@@ -2887,6 +2867,7 @@
                 icon: "icon__42743",
                 name: "name__0ac4b",
                 nameNormal: "nameNormal_cb5c2b ellipsis__46552 textRow_c835f1",
+                namePlatformIconMarginBiteSizePopout: "namePlatformIconMarginBiteSizePopout_d0b16c",
                 nameWrap: "nameWrap_b61c4b textRow_c835f1",
                 platformIcon: "platformIcon_a2d873",
                 playTime: "playTime_a445ec ellipsis__46552 textRow_c835f1",
@@ -3480,6 +3461,16 @@
             "use strict";
             e.exports = {
                 operations: "operations__62559"
+            }
+        },
+        707533: function(e) {
+            "use strict";
+            e.exports = {
+                gameIcon: "gameIcon__2f065",
+                gameMessageTooltip: "gameMessageTooltip__8e99d",
+                gameMessageTooltipContent: "gameMessageTooltipContent__2e554",
+                textContainer: "textContainer_e1f8ac",
+                timestamp: "timestamp_f0be43"
             }
         },
         266632: function(e) {
