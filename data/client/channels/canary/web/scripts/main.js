@@ -36985,7 +36985,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295961", ", Version Hash: ").concat("54abae9e51c36adb87e7e43ab4dbcf64836a9ad6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295973", ", Version Hash: ").concat("5cf467867433aa09daf77cf83bb676bfa53f3abd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88464,8 +88464,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295961", "295961"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295961")), t = 0), t
+                let t = parseInt((e = "295973", "295973"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295973")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103599,7 +103599,7 @@
                 var n;
                 return c().sortBy(e, (n = t, e => -(((null == n ? void 0 : n.includes(e)) ? 1 : 0) << 4 | (x(e) ? 1 : 0) << 3 | (G.has(e) ? 1 : 0) << 2 | (w.includes(e) ? 1 : 0) << 1 | (k.includes(e) ? 1 : 0) << 0)))
             }
-            let H = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history", "ssense doomscrolling", "skibidi toilet", "capcut editing", "tiktok rizz party", "industrial grade glycine", "frutiger aero", "y2k", "sanrio", "nuzlockes", "small form factor pcs", "esports", "game modding", "chiikawa", "underground rap", "pc music", "homestuck", "horse hoof cleaning", "analog horror", "pimple popping", "asmr", "ya fiction", "fanfiction", "cosplay", "fanart", "zines", "vtubers", "jrpgs", "retro gaming", "collecting", "coquette", "true crime", "critical role", "cottagecore", "goblincore", "renfaire", "letterboxd"]);
+            let H = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history", "ssense doomscrolling", "skibidi toilet", "capcut editing", "tiktok rizz party", "industrial grade glycine", "frutiger aero", "y2k", "sanrio", "nuzlockes", "small form factor pcs", "esports", "game modding", "chiikawa", "underground rap", "pc music", "homestuck", "horse hoof cleaning", "analog horror", "pimple popping", "asmr", "ya fiction", "fanfiction", "cosplay", "fanart", "zines", "vtubers", "jrpgs", "retro gaming", "collecting", "coquette", "true crime", "critical role", "cottagecore", "goblincore", "renfaire", "letterboxd", "tarot readings", "fortune telling", "magic tricks", "ice cold sprite", "slime", "soap cutting", "mukbang", "premier league", "NBA", "hyperpop", "dance covers", "photocard trading", "toploader decorating", "unboxing", "decoden", "jpop", "mandopop", "cantopop", "amapiano", "ghibli", "pokemon vgc", "subway surfers", "family guy funny moments", "cranking 90s", "friday night funkin", "FNAF"]);
 
             function Y() {
                 let e = Object.keys(r).filter(e => isNaN(Number(e)));
@@ -116371,8 +116371,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295961",
-                    versionHash: "54abae9e51c36adb87e7e43ab4dbcf64836a9ad6"
+                    buildNumber: "295973",
+                    versionHash: "5cf467867433aa09daf77cf83bb676bfa53f3abd"
                 }
             }
             n.r(t), n.d(t, {
@@ -173839,8 +173839,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716496819651",
-                                    build_number: "295961"
+                                    built_at: "1716497520305",
+                                    build_number: "295973"
                                 }
                             },
                             retries: 1
@@ -250969,7 +250969,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "54abae9e51c36adb87e7e43ab4dbcf64836a9ad6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5cf467867433aa09daf77cf83bb676bfa53f3abd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280081,7 +280081,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295961"
+                                build_number: "295973"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287439,7 +287439,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295961", "295961"), 10);
+                let s = parseInt((n = "295973", "295973"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315147,4 +315147,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.5ad10306c0af14e1bc75.js.map
+//# sourceMappingURL=71586.c664a0eef26e05280d4f.js.map
