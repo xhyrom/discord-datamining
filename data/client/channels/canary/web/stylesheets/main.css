@@ -6339,6 +6339,67 @@
     align-items: center
 }
 
+.clickable__2bd02 {
+    cursor: pointer
+}
+
+.clickable__2bd02:active {
+    transform: translatey(2px)scale(.98)
+}
+
+.trait__089c4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--border-subtle);
+    padding: 8px 12px;
+    border-radius: 16px;
+    transition: transform ease-in-out.2s, border-color ease-in-out.2s
+}
+
+.theme-dark .selectable__7e2ef {
+    border-color: var(--border-subtle);
+    color: var(--text-secondary)
+}
+
+.theme-dark .selectable__7e2ef:hover,
+.theme-dark .selectable__7e2ef:active {
+    border-color: var(--border-strong);
+    color: var(--interactive-hover)
+}
+
+.theme-dark .selected__064ce {
+    border-color: var(--brand-experiment);
+    color: var(--interactive-active)
+}
+
+.theme-dark .selected__064ce:hover,
+.theme-dark .selected__064ce:active {
+    border-color: var(--brand-experiment)
+}
+
+.theme-light .selectable__7e2ef {
+    border-color: var(--border-strong);
+    color: var(--text-secondary)
+}
+
+.theme-light .selectable__7e2ef:hover,
+.theme-light .selectable__7e2ef:active {
+    border-color: var(--interactive-hover);
+    color: var(--interactive-hover)
+}
+
+.theme-light .selected__064ce {
+    border-color: var(--brand-experiment);
+    color: var(--interactive-active)
+}
+
+.theme-light .selected__064ce:hover,
+.theme-light .selected__064ce:active {
+    border-color: var(--brand-experiment)
+}
+
 .gameImageContainer_ecf6f5 {
     position: relative;
     width: 24px;
@@ -6532,33 +6593,23 @@
     padding: 8px 0 0
 }
 
-.expandedTraitsContainer__95480 {
-    flex: 0 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    padding: 8px 0 0
-}
-
-.trait_dfdb34 {
-    display: flex;
+.thinTrait__8a2ec {
     padding: 4px 8px;
-    justify-content: center;
-    align-items: center;
     gap: 4px;
-    border: 1px solid var(--border-subtle);
-    border-radius: 16px;
-    max-width: 200px;
-    transition: border-color.2s ease-in-out
+    max-width: 200px
 }
 
-.trait_dfdb34:hover {
-    border-color: var(--border-strong)
-}
-
-.highlightedTrait__03953 {
+.theme-dark .selectedTrait_ee0767,
+.theme-light .selectedTrait_ee0767 {
     border-color: var(--border-strong);
     background: var(--bg-surface-raised)
+}
+
+.theme-dark .selectedTrait_ee0767:hover,
+.theme-dark .selectedTrait_ee0767:active,
+.theme-light .selectedTrait_ee0767:hover,
+.theme-light .selectedTrait_ee0767:active {
+    border-color: var(--border-strong)
 }
 
 .cardFooter_ed5f2e {
@@ -45545,10 +45596,24 @@ img.thumbnail__18ece {
     fill: var(--text-muted)
 }
 
+.traits__639e7 {
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px 0 0
+}
+
 .trait_d1186b {
     padding: 8px 12px;
     border-radius: 16px;
-    margin: 0 4px 4px 0
+    margin: 0 4px 4px 0;
+    color: var(--interactive-active)
+}
+
+.strikethrough__29702 {
+    -webkit-text-decoration: line-through;
+    text-decoration: line-through
 }
 
 .clanInfoRow_e038da {
@@ -142358,4 +142423,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ffe74b2f355a3075377c.css.map*/
+/*# sourceMappingURL=99387.09ccef8d9dab22bb98a4.css.map*/
