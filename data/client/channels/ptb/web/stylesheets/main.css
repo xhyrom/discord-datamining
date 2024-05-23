@@ -45962,22 +45962,6 @@ img.thumbnail__18ece {
     display: flex
 }
 
-.stepsTransitionGroup__770f6 {
-    position: relative;
-    flex: 1;
-    display: flex
-}
-
-.step__4b7ad {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex: 1
-}
-
 .hidden__7c65d {
     visibility: hidden
 }
@@ -46993,6 +46977,29 @@ div:has(>div>.modal__06f49) {
     height: 28px;
     width: 28px;
     color: var(--status-danger)
+}
+
+.stepsTransitionGroup__00ae3 {
+    position: relative;
+    flex: 1;
+    display: flex
+}
+
+.step__6bc2d {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex: 1
+}
+
+.scroller_d98c76 {
+    display: flex;
+    flex: 1;
+    padding: 52px;
+    justify-content: center
 }
 
 @value baseClanCardWidth 242px;
@@ -142259,4 +142266,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.81dd71f557d29e318455.css.map*/
+/*# sourceMappingURL=99387.03754ad9cb3aea78f1aa.css.map*/
