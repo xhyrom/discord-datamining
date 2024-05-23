@@ -21448,6 +21448,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .wrapper__1021a.noChat_a99ce5 {
+    max-height: 100%;
     height: 100%
 }
 
@@ -65982,6 +65983,16 @@ div:has(>div>.modal__06f49) {
 .manageSubscriptionsButton__7d28b {
     background-color: var(--white);
     color: var(--teal-530)
+}
+
+.manageSubscriptionsButton__7d28b:hover {
+    background-color: var(--teal-100);
+    color: var(--teal-630)
+}
+
+.manageSubscriptionsButton__7d28b:active {
+    background-color: var(--teal-130);
+    color: var(--teal-900)
 }
 
 .handImage__48dbf {
@@ -142329,4 +142340,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e5a3261d19610ad1b50a.css.map*/
+/*# sourceMappingURL=99387.1b761fd942015ba66244.css.map*/
