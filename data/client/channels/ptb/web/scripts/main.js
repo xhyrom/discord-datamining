@@ -36985,7 +36985,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296015", ", Version Hash: ").concat("6754b6b9c3d26dd9d262144fed593f3115cab94a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296042", ", Version Hash: ").concat("3bf8bfa5a5fca9990062a71adee018a0d9e5b139")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38744,6 +38744,9 @@
                 APP_LAUNCHER_ONBOARDING_APPS_BANNER_BODY: "Swipe up to find games to play with friends!",
                 APP_LAUNCHER_VIEW_MORE_ROW: "View more",
                 APP_LAUNCHER_VIEW_LESS_ROW: "View less",
+                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_TITLE: "New to Apps?",
+                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_BODY: "Check out our starter guide to learn about the cool things apps can do.",
+                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_LEARN_MORE: "Learn More",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -50924,6 +50927,8 @@
                 AFFINITIES_MARKETING_HEADER_V2_1: "Join {username} on Nitro",
                 PICK_YOUR_PLAN: "Pick Your Plan",
                 AND_MORE: "And more!",
+                PREMIUM_FEATURES_TABLE_TITLE_SUBSCRIBER: "What You've Got",
+                PREMIUM_FEATURES_TABLE_TITLE_CHURN: "What You'll Miss",
                 PREMIUM_TIER_0_MARKETING_COMPARISON_TABLE_ROW_LABEL_MONTHLY_PRICE: "Monthly Price",
                 PREMIUM_TIER_0_MARKETING_COMPARISON_TABLE_ROW_LABEL_EMOJI_STICKER: "Custom emoji and stickers anywhere",
                 PREMIUM_TIER_0_MARKETING_COMPARISON_TABLE_ROW_LABEL_BADGE: "Nitro profile badge",
@@ -53738,6 +53743,7 @@
                 COLLECTIBLES_COLLECTING_FINISHED: "Collecting finished",
                 COLLECTIBLES_NITRO_EXCLUSIVE: "Nitro exclusive",
                 COLLECTIBLES_PERMANENT_COLLECTION: "This decoration is now part of your collection and can be used anytime!",
+                COLLECTIBLES_PERMANENT_COLLECTION_BUNDLE: "These decorations are now part of your collection and can be used anytime from your User Profile.",
                 COLLECTIBLES_YOU_COLLECTED: "You've collected {itemName}!",
                 COLLECTIBLES_ALREADY_OWNED: "Already owned",
                 COLLECTIBLES_INCLUDED_WITH_PREMIUM: "Included with Nitro",
@@ -88447,8 +88453,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296015", "296015"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296015")), t = 0), t
+                let t = parseInt((e = "296042", "296042"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296042")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116399,8 +116405,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296015",
-                    versionHash: "6754b6b9c3d26dd9d262144fed593f3115cab94a"
+                    buildNumber: "296042",
+                    versionHash: "3bf8bfa5a5fca9990062a71adee018a0d9e5b139"
                 }
             }
             n.r(t), n.d(t, {
@@ -173833,8 +173839,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716500167124",
-                                    build_number: "296015"
+                                    built_at: "1716502164499",
+                                    build_number: "296042"
                                 }
                             },
                             retries: 1
@@ -189419,45 +189425,45 @@
             "use strict";
             n.r(t), n.d(t, {
                 claimQuestReward: function() {
-                    return S
-                },
-                claimQuestRewardCode: function() {
-                    return f
-                },
-                completeQuestPreview: function() {
-                    return N
-                },
-                dismissProgressTrackingFailureNotice: function() {
-                    return m
-                },
-                dismissQuestContent: function() {
                     return A
                 },
-                enrollInQuest: function() {
-                    return T
-                },
-                fetchCurrentQuests: function() {
-                    return E
-                },
-                fetchQuestRewardCode: function() {
+                claimQuestRewardCode: function() {
                     return h
                 },
-                optimisticallyUpdateQuestProgress: function() {
-                    return C
-                },
-                overrideQuestDelivery: function() {
-                    return R
-                },
-                resetQuestDismissibilityStatus: function() {
+                completeQuestPreview: function() {
                     return O
                 },
-                resetQuestPreviewStatus: function() {
+                dismissProgressTrackingFailureNotice: function() {
                     return p
                 },
+                dismissQuestContent: function() {
+                    return N
+                },
+                enrollInQuest: function() {
+                    return S
+                },
+                fetchCurrentQuests: function() {
+                    return T
+                },
+                fetchQuestRewardCode: function() {
+                    return m
+                },
+                optimisticallyUpdateQuestProgress: function() {
+                    return g
+                },
+                overrideQuestDelivery: function() {
+                    return L
+                },
+                resetQuestDismissibilityStatus: function() {
+                    return R
+                },
+                resetQuestPreviewStatus: function() {
+                    return C
+                },
                 sendHeartbeat: function() {
-                    return I
+                    return f
                 }
-            });
+            }), n("411104");
             var i = n("990547"),
                 r = n("544891"),
                 s = n("570140"),
@@ -189466,19 +189472,21 @@
                 l = n("617136"),
                 u = n("569984"),
                 d = n("918701"),
-                _ = n("566078"),
-                c = n("981631");
-            async function E() {
+                _ = n("242755"),
+                c = n("566078"),
+                E = n("46140"),
+                I = n("981631");
+            async function T() {
                 if (!u.default.isFetchingCurrentQuests) {
                     s.default.dispatch({
                         type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
                     });
                     try {
                         let e = (await r.HTTP.get({
-                            url: c.Endpoints.QUESTS_CURRENT_QUESTS
+                            url: I.Endpoints.QUESTS_CURRENT_QUESTS
                         })).body.quests.filter(e => (0, d.isQuestWithKnownConfigVersion)(e)).map(e => (0, d.questWithUserStatusFromServer)(e)).filter(e => {
                             var t;
-                            return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null || _.SharedQuestFields.build(e.config).rewardPlatforms.length > 0
+                            return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null || c.SharedQuestFields.build(e.config).rewardPlatforms.length > 0
                         });
                         s.default.dispatch({
                             type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
@@ -189492,15 +189500,16 @@
                     }
                 }
             }
-            async function I(e) {
+            async function f(e) {
                 let {
                     questId: t,
                     streamKey: n,
                     terminal: r = !1
                 } = e;
                 try {
+                    var l;
                     let e = await o.default.post({
-                        url: c.Endpoints.QUESTS_HEARTBEAT(t),
+                        url: I.Endpoints.QUESTS_HEARTBEAT(t),
                         body: {
                             stream_key: n,
                             terminal: r
@@ -189510,7 +189519,11 @@
                             properties: {
                                 quest_id: t,
                                 terminal: r,
-                                is_overlay: __OVERLAY__
+                                is_overlay: __OVERLAY__,
+                                stack_trace: null !== (l = Error().stack) && void 0 !== l ? l : "",
+                                is_playtime_eligible: (0, _.isEligibleForQuestPlaytime)({
+                                    location: E.QuestsExperimentLocations.QUESTS_MANAGER
+                                })
                             }
                         }
                     });
@@ -189529,7 +189542,7 @@
                     })
                 }
             }
-            async function T(e, t) {
+            async function S(e, t) {
                 if (null != t.questContentCTA && (0, l.trackQuestContentClicked)({
                         questId: e,
                         questContent: t.questContent,
@@ -189542,7 +189555,7 @@
                     });
                     try {
                         let n = await r.HTTP.post({
-                            url: c.Endpoints.QUESTS_ENROLL(e),
+                            url: I.Endpoints.QUESTS_ENROLL(e),
                             body: {
                                 location: t.questContent
                             }
@@ -189559,7 +189572,7 @@
                     }
                 }
             }
-            async function f(e, t, n) {
+            async function h(e, t, n) {
                 if (!u.default.isClaimingRewardCode(e)) {
                     s.default.dispatch({
                         type: "QUESTS_CLAIM_REWARD_CODE_BEGIN",
@@ -189567,7 +189580,7 @@
                     });
                     try {
                         let i = await r.HTTP.post({
-                            url: c.Endpoints.QUESTS_REWARD_CODE(e),
+                            url: I.Endpoints.QUESTS_REWARD_CODE(e),
                             body: {
                                 platform: t,
                                 location: n
@@ -189587,7 +189600,7 @@
                     }
                 }
             }
-            async function S(e, t, n) {
+            async function A(e, t, n) {
                 if (!u.default.isClaimingReward(e)) {
                     s.default.dispatch({
                         type: "QUESTS_CLAIM_REWARD_BEGIN",
@@ -189595,7 +189608,7 @@
                     });
                     try {
                         let i = await r.HTTP.post({
-                                url: c.Endpoints.QUESTS_CLAIM_REWARD(e),
+                                url: I.Endpoints.QUESTS_CLAIM_REWARD(e),
                                 body: {
                                     platform: t,
                                     location: n
@@ -189620,7 +189633,7 @@
                     }
                 }
             }
-            async function h(e) {
+            async function m(e) {
                 if (!u.default.isFetchingRewardCode(e)) {
                     s.default.dispatch({
                         type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
@@ -189628,7 +189641,7 @@
                     });
                     try {
                         let t = await r.HTTP.get({
-                            url: c.Endpoints.QUESTS_REWARD_CODE(e)
+                            url: I.Endpoints.QUESTS_REWARD_CODE(e)
                         });
                         s.default.dispatch({
                             type: "QUESTS_FETCH_REWARD_CODE_SUCCESS",
@@ -189644,7 +189657,7 @@
                     }
                 }
             }
-            async function A(e, t) {
+            async function N(e, t) {
                 let n = u.default.isDismissingContent(e),
                     i = (0, d.isDismissible)(t);
                 if (!n && i) {
@@ -189655,7 +189668,7 @@
                     });
                     try {
                         let n = await r.HTTP.post({
-                            url: c.Endpoints.QUESTS_DISMISS_CONTENT(e, t),
+                            url: I.Endpoints.QUESTS_DISMISS_CONTENT(e, t),
                             body: {}
                         });
                         s.default.dispatch({
@@ -189672,52 +189685,52 @@
                 }
             }
 
-            function m(e) {
+            function p(e) {
                 s.default.dispatch({
                     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
                     streamKey: e
                 })
             }
-            async function N(e) {
-                try {
-                    let t = await r.HTTP.post({
-                        url: c.Endpoints.QUESTS_PREVIEW_COMPLETE(e),
-                        body: {}
-                    });
-                    s.default.dispatch({
-                        type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
-                        previewQuestUserStatus: (0, d.questUserStatusFromServer)(t.body)
-                    })
-                } catch (t) {
-                    s.default.dispatch({
-                        type: "QUESTS_PREVIEW_UPDATE_FAILURE",
-                        error: new a.default(t),
-                        questId: e
-                    })
-                }
-            }
-            async function p(e) {
-                try {
-                    let t = await r.HTTP.del({
-                        url: c.Endpoints.QUESTS_PREVIEW_STATUS(e),
-                        body: {}
-                    });
-                    s.default.dispatch({
-                        type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
-                        previewQuestUserStatus: (0, d.questUserStatusFromServer)(t.body)
-                    })
-                } catch (t) {
-                    s.default.dispatch({
-                        type: "QUESTS_PREVIEW_UPDATE_FAILURE",
-                        error: new a.default(t),
-                        questId: e
-                    })
-                }
-            }
             async function O(e) {
                 try {
+                    let t = await r.HTTP.post({
+                        url: I.Endpoints.QUESTS_PREVIEW_COMPLETE(e),
+                        body: {}
+                    });
+                    s.default.dispatch({
+                        type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
+                        previewQuestUserStatus: (0, d.questUserStatusFromServer)(t.body)
+                    })
+                } catch (t) {
+                    s.default.dispatch({
+                        type: "QUESTS_PREVIEW_UPDATE_FAILURE",
+                        error: new a.default(t),
+                        questId: e
+                    })
+                }
+            }
+            async function C(e) {
+                try {
                     let t = await r.HTTP.del({
-                        url: c.Endpoints.QUESTS_PREVIEW_DISMISSIBILITY(e),
+                        url: I.Endpoints.QUESTS_PREVIEW_STATUS(e),
+                        body: {}
+                    });
+                    s.default.dispatch({
+                        type: "QUESTS_PREVIEW_UPDATE_SUCCESS",
+                        previewQuestUserStatus: (0, d.questUserStatusFromServer)(t.body)
+                    })
+                } catch (t) {
+                    s.default.dispatch({
+                        type: "QUESTS_PREVIEW_UPDATE_FAILURE",
+                        error: new a.default(t),
+                        questId: e
+                    })
+                }
+            }
+            async function R(e) {
+                try {
+                    let t = await r.HTTP.del({
+                        url: I.Endpoints.QUESTS_PREVIEW_DISMISSIBILITY(e),
                         body: {}
                     });
                     s.default.dispatch({
@@ -189733,14 +189746,14 @@
                 }
             }
 
-            function C(e) {
+            function g(e) {
                 s.default.dispatch({
                     type: "QUESTS_OPTIMISTIC_PROGRESS_UPDATE",
                     userStatus: e
                 })
             }
 
-            function R(e) {
+            function L(e) {
                 s.default.dispatch({
                     type: "QUESTS_DELIVERY_OVERRIDE",
                     questId: e
@@ -250963,7 +250976,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6754b6b9c3d26dd9d262144fed593f3115cab94a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3bf8bfa5a5fca9990062a71adee018a0d9e5b139"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280075,7 +280088,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296015"
+                                build_number: "296042"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287433,7 +287446,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296015", "296015"), 10);
+                let s = parseInt((n = "296042", "296042"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315141,4 +315154,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.f5418bb686f2ec97adca.js.map
+//# sourceMappingURL=71586.89473335892b1d306380.js.map
