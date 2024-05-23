@@ -36985,7 +36985,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296015", ", Version Hash: ").concat("6754b6b9c3d26dd9d262144fed593f3115cab94a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296030", ", Version Hash: ").concat("9ad5592b32ea83bf00f45b0126486f3bace9e512")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38744,6 +38744,9 @@
                 APP_LAUNCHER_ONBOARDING_APPS_BANNER_BODY: "Swipe up to find games to play with friends!",
                 APP_LAUNCHER_VIEW_MORE_ROW: "View more",
                 APP_LAUNCHER_VIEW_LESS_ROW: "View less",
+                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_TITLE: "New to Apps?",
+                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_BODY: "Check out our starter guide to learn about the cool things apps can do.",
+                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_LEARN_MORE: "Learn More",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -50924,6 +50927,8 @@
                 AFFINITIES_MARKETING_HEADER_V2_1: "Join {username} on Nitro",
                 PICK_YOUR_PLAN: "Pick Your Plan",
                 AND_MORE: "And more!",
+                PREMIUM_FEATURES_TABLE_TITLE_SUBSCRIBER: "What You've Got",
+                PREMIUM_FEATURES_TABLE_TITLE_CHURN: "What You'll Miss",
                 PREMIUM_TIER_0_MARKETING_COMPARISON_TABLE_ROW_LABEL_MONTHLY_PRICE: "Monthly Price",
                 PREMIUM_TIER_0_MARKETING_COMPARISON_TABLE_ROW_LABEL_EMOJI_STICKER: "Custom emoji and stickers anywhere",
                 PREMIUM_TIER_0_MARKETING_COMPARISON_TABLE_ROW_LABEL_BADGE: "Nitro profile badge",
@@ -53738,6 +53743,7 @@
                 COLLECTIBLES_COLLECTING_FINISHED: "Collecting finished",
                 COLLECTIBLES_NITRO_EXCLUSIVE: "Nitro exclusive",
                 COLLECTIBLES_PERMANENT_COLLECTION: "This decoration is now part of your collection and can be used anytime!",
+                COLLECTIBLES_PERMANENT_COLLECTION_BUNDLE: "These decorations are now part of your collection and can be used anytime from your User Profile.",
                 COLLECTIBLES_YOU_COLLECTED: "You've collected {itemName}!",
                 COLLECTIBLES_ALREADY_OWNED: "Already owned",
                 COLLECTIBLES_INCLUDED_WITH_PREMIUM: "Included with Nitro",
@@ -88447,8 +88453,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296015", "296015"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296015")), t = 0), t
+                let t = parseInt((e = "296030", "296030"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296030")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116399,8 +116405,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296015",
-                    versionHash: "6754b6b9c3d26dd9d262144fed593f3115cab94a"
+                    buildNumber: "296030",
+                    versionHash: "9ad5592b32ea83bf00f45b0126486f3bace9e512"
                 }
             }
             n.r(t), n.d(t, {
@@ -173833,8 +173839,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716500167124",
-                                    build_number: "296015"
+                                    built_at: "1716501127431",
+                                    build_number: "296030"
                                 }
                             },
                             retries: 1
@@ -250963,7 +250969,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6754b6b9c3d26dd9d262144fed593f3115cab94a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9ad5592b32ea83bf00f45b0126486f3bace9e512"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280075,7 +280081,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296015"
+                                build_number: "296030"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287433,7 +287439,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296015", "296015"), 10);
+                let s = parseInt((n = "296030", "296030"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315141,4 +315147,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.f5418bb686f2ec97adca.js.map
+//# sourceMappingURL=71586.f65d39bc1d6b23e58f6a.js.map

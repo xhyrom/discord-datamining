@@ -5773,6 +5773,9 @@
             e.exports = {
                 avatarDecoration: "avatarDecoration_a30e58",
                 bannerContainer: "bannerContainer__879e1",
+                bundlePreview: "bundlePreview__65f2b",
+                bundleProfileEffectCard: "bundleProfileEffectCard_cdabea",
+                buttons: "buttons__0383d",
                 collectedInfoContainer: "collectedInfoContainer__6617a",
                 collectedTextContainer: "collectedTextContainer_b6fcfd",
                 confettiCanvas: "confettiCanvas_fbf264",
