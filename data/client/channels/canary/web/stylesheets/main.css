@@ -65985,6 +65985,16 @@ div:has(>div>.modal__06f49) {
     color: var(--teal-530)
 }
 
+.manageSubscriptionsButton__7d28b:hover {
+    background-color: var(--teal-100);
+    color: var(--teal-630)
+}
+
+.manageSubscriptionsButton__7d28b:active {
+    background-color: var(--teal-130);
+    color: var(--teal-900)
+}
+
 .handImage__48dbf {
     margin: -6px 16px -6px -16px
 }
@@ -142330,4 +142340,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.df523c3590cf10dce9cd.css.map*/
+/*# sourceMappingURL=99387.1b761fd942015ba66244.css.map*/
