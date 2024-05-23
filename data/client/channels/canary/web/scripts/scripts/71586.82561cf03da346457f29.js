@@ -15678,9 +15678,6 @@
                 fetchCurrentUser: function() {
                     return I
                 },
-                fetchMutualFriends: function() {
-                    return A
-                },
                 fetchProfile: function() {
                     return h
                 },
@@ -15767,14 +15764,15 @@
                     withMutualFriendsCount: i,
                     withMutualFriends: r,
                     guildId: s,
-                    connectionsRoleId: a
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, u = arguments.length > 2 ? arguments[2] : void 0;
+                    connectionsRoleId: a,
+                    abortSignal: u
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, d = arguments.length > 2 ? arguments[2] : void 0;
                 l.default.dispatch({
                     type: "USER_PROFILE_FETCH_START",
                     userId: e
                 });
                 try {
-                    let d = await o.HTTP.get({
+                    let _ = await o.HTTP.get({
                         url: c.Endpoints.USER_PROFILE(e),
                         query: {
                             friend_token: t,
@@ -15784,45 +15782,23 @@
                             guild_id: s,
                             connections_role_id: a
                         },
-                        oldFormErrors: !0
+                        oldFormErrors: !0,
+                        signal: u
                     });
-                    return null == u || u(d.body, s), l.default.dispatch({
+                    return null == d || d(_.body, s), l.default.dispatch({
                         type: "USER_UPDATE",
-                        user: d.body.user
+                        user: _.body.user
                     }), l.default.dispatch({
                         type: "USER_PROFILE_FETCH_SUCCESS",
-                        ...d.body
-                    }), null != s && null != d.body.guild_member && l.default.dispatch({
+                        ..._.body
+                    }), null != s && null != _.body.guild_member && l.default.dispatch({
                         type: "GUILD_MEMBER_PROFILE_UPDATE",
                         guildId: s,
-                        guildMember: d.body.guild_member
-                    }), d.body
+                        guildMember: _.body.guild_member
+                    }), _.body
                 } catch (t) {
                     throw null != t && (null == t ? void 0 : t.body) != null && E.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
                         type: "USER_PROFILE_FETCH_FAILURE",
-                        userId: e
-                    }), t
-                }
-            }
-            async function A(e, t) {
-                l.default.dispatch({
-                    type: "MUTUAL_FRIENDS_FETCH_START",
-                    userId: e
-                });
-                try {
-                    let n = await o.HTTP.get({
-                        url: c.Endpoints.USER_RELATIONSHIPS(e),
-                        oldFormErrors: !0,
-                        signal: t
-                    });
-                    l.default.dispatch({
-                        type: "MUTUAL_FRIENDS_FETCH_SUCCESS",
-                        userId: e,
-                        mutualFriends: n.body
-                    })
-                } catch (t) {
-                    throw (null == t ? void 0 : t.body) != null && E.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
-                        type: "MUTUAL_FRIENDS_FETCH_FAILURE",
                         userId: e
                     }), t
                 }
@@ -37009,7 +36985,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295890", ", Version Hash: ").concat("2893f828a001a3cbdeaa491bfcb2b3d4aea755ae")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295908", ", Version Hash: ").concat("1d75a06acd0adbe7f6461a473c11a5795d50462b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88463,8 +88439,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295890", "295890"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295890")), t = 0), t
+                let t = parseInt((e = "295908", "295908"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295908")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116370,8 +116346,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295890",
-                    versionHash: "2893f828a001a3cbdeaa491bfcb2b3d4aea755ae"
+                    buildNumber: "295908",
+                    versionHash: "1d75a06acd0adbe7f6461a473c11a5795d50462b"
                 }
             }
             n.r(t), n.d(t, {
@@ -173839,8 +173815,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716490370888",
-                                    build_number: "295890"
+                                    built_at: "1716491954725",
+                                    build_number: "295908"
                                 }
                             },
                             retries: 1
@@ -211692,39 +211668,42 @@
                     preloadUserBanner: A = !0,
                     dispatchWait: m = !1,
                     guildId: N,
-                    channelId: p
+                    channelId: p,
+                    abortSignal: O
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 if ("" === e) return;
                 (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != N && !T && (T = !0), null != N && (c = null !== (l = null === (n = (0, a.getVisibleConnectionsRole)({
                     guildMember: d.default.getMember(N, e),
                     channel: u.default.getChannel(p)
                 })) || void 0 === n ? void 0 : n.id) && void 0 !== l ? l : void 0);
-                let O = E.default.getUserProfile(e),
-                    C = E.default.getMutualGuilds(e),
-                    R = E.default.getMutualFriends(e),
-                    g = E.default.getMutualFriendsCount(e),
-                    L = E.default.isFetchingProfile(e),
-                    v = !Array.isArray(C) && T,
-                    D = !Array.isArray(R) && S,
-                    M = null == g && f,
-                    y = (null == O ? void 0 : O.profileFetchFailed) || !L && (v || M || D),
-                    P = A ? I.default : void 0,
-                    U = !1;
-                null != N && (U = null == E.default.getGuildMemberProfile(e, N)), !(!y && !U && (L || Date.now() - (null !== (_ = null == O ? void 0 : O.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
+                let C = E.default.getUserProfile(e),
+                    R = E.default.getMutualGuilds(e),
+                    g = E.default.getMutualFriends(e),
+                    L = E.default.getMutualFriendsCount(e),
+                    v = E.default.isFetchingProfile(e),
+                    D = !Array.isArray(R) && T,
+                    M = !Array.isArray(g) && S,
+                    y = null == L && f,
+                    P = (null == C ? void 0 : C.profileFetchFailed) || !v && (D || y || M),
+                    U = A ? I.default : void 0,
+                    b = !1;
+                null != N && (b = null == E.default.getGuildMemberProfile(e, N)), !(!P && !b && (v || Date.now() - (null !== (_ = null == C ? void 0 : C.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
                     withMutualGuilds: T,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
                     guildId: N,
-                    connectionsRoleId: c
-                }, P)) : await (0, r.fetchProfile)(e, {
+                    connectionsRoleId: c,
+                    abortSignal: O
+                }, U)) : await (0, r.fetchProfile)(e, {
                     withMutualGuilds: T,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
                     guildId: N,
-                    connectionsRoleId: c
-                }, P))
+                    connectionsRoleId: c,
+                    abortSignal: O
+                }, U))
             }
         },
         120569: function(e, t, n) {
@@ -217901,36 +217880,49 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return c
                 }
             }), n("47120");
             var i = n("470079"),
                 r = n("392711"),
                 s = n("442837"),
-                a = n("232567"),
+                a = n("881052"),
                 o = n("699682"),
-                l = n("800599"),
-                u = n("621853");
+                l = n("81897"),
+                u = n("800599"),
+                d = n("621853"),
+                _ = n("484459");
 
-            function d(e) {
+            function c(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    [n, d] = (0, s.useStateFromStoresArray)([u.default], () => [u.default.getMutualFriends(e), u.default.isFetchingFriends(e)]),
-                    _ = t && !d && null == n;
+                    [n, c] = (0, s.useStateFromStoresArray)([d.default], () => [d.default.getMutualFriends(e), d.default.isFetchingProfile(e)]),
+                    E = (0, l.default)(),
+                    [I, T] = (0, i.useState)(null),
+                    f = t && null == I && !c && null == n;
                 (0, i.useEffect)(() => {
-                    _ && (0, a.fetchMutualFriends)(e)
-                }, [_, e]);
-                let c = (0, s.useStateFromStores)([l.default], () => l.default.getUserAffinitiesMap()),
-                    E = (0, i.useMemo)(() => null == n ? null : n.length < 2 ? n : (0, r.sortBy)(n, e => {
+                    if (!!f)(async () => {
+                        try {
+                            await (0, _.default)(e, void 0, {
+                                withMutualFriends: !0,
+                                abortSignal: E
+                            })
+                        } catch (e) {
+                            T(new a.APIError(e))
+                        }
+                    })()
+                }, [f, e, E]);
+                let S = (0, s.useStateFromStores)([u.default], () => u.default.getUserAffinitiesMap()),
+                    h = (0, i.useMemo)(() => null == n ? null : n.length < 2 ? n : (0, r.sortBy)(n, e => {
                         var t, n;
                         let {
                             user: i
                         } = e;
-                        return -((null !== (n = null === (t = c.get(i.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : -1) * 1)
-                    }), [n, c]),
-                    I = (0, o.default)(E);
+                        return -((null !== (n = null === (t = S.get(i.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : -1) * 1)
+                    }), [n, S]),
+                    A = (0, o.default)(h);
                 return {
-                    mutualFriends: null != E ? E : I,
-                    isFetching: d
+                    mutualFriends: null != h ? h : A,
+                    isFetching: c
                 }
             }
         },
@@ -217938,43 +217930,54 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return c
                 }
             }), n("47120");
             var i = n("470079"),
                 r = n("392711"),
                 s = n("442837"),
-                a = n("232567"),
+                a = n("881052"),
                 o = n("699682"),
-                l = n("771845"),
-                u = n("621853");
+                l = n("81897"),
+                u = n("771845"),
+                d = n("621853"),
+                _ = n("484459");
 
-            function d(e) {
+            function c(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    [n, d] = (0, s.useStateFromStoresArray)([u.default], () => [u.default.getMutualGuilds(e), u.default.isFetchingProfile(e)]),
-                    _ = t && !d && null == n;
+                    [n, c] = (0, s.useStateFromStoresArray)([d.default], () => [d.default.getMutualGuilds(e), d.default.isFetchingProfile(e)]),
+                    E = (0, l.default)(),
+                    [I, T] = (0, i.useState)(null),
+                    f = t && null == I && !c && null == n;
                 (0, i.useEffect)(() => {
-                    _ && (0, a.fetchProfile)(e, {
-                        withMutualGuilds: !0
-                    })
-                }, [_, e]);
-                let c = (0, s.useStateFromStores)([l.default], () => l.default.getFlattenedGuildIds()),
-                    E = (0, i.useMemo)(() => {
+                    if (!!f)(async () => {
+                        try {
+                            await (0, _.default)(e, void 0, {
+                                withMutualGuilds: !0,
+                                abortSignal: E
+                            })
+                        } catch (e) {
+                            T(new a.APIError(e))
+                        }
+                    })()
+                }, [f, e, E]);
+                let S = (0, s.useStateFromStores)([u.default], () => u.default.getFlattenedGuildIds()),
+                    h = (0, i.useMemo)(() => {
                         if (null == n) return null;
                         if (n.length < 2) return n;
-                        let e = Object.fromEntries(c.map((e, t) => [e, t]));
+                        let e = Object.fromEntries(S.map((e, t) => [e, t]));
                         return (0, r.sortBy)(n, t => {
                             var n;
                             let {
                                 guild: i
                             } = t;
-                            return null !== (n = e[i.id]) && void 0 !== n ? n : c.length
+                            return null !== (n = e[i.id]) && void 0 !== n ? n : S.length
                         })
-                    }, [n, c]),
-                    I = (0, o.default)(E);
+                    }, [n, S]),
+                    A = (0, o.default)(h);
                 return {
-                    mutualGuilds: null != E ? E : I,
-                    isFetching: d
+                    mutualGuilds: null != h ? h : A,
+                    isFetching: c
                 }
             }
         },
@@ -250951,7 +250954,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2893f828a001a3cbdeaa491bfcb2b3d4aea755ae"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1d75a06acd0adbe7f6461a473c11a5795d50462b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280063,7 +280066,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295890"
+                                build_number: "295908"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287421,7 +287424,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295890", "295890"), 10);
+                let s = parseInt((n = "295908", "295908"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315129,4 +315132,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.f9da18788b74c506ef01.js.map
+//# sourceMappingURL=71586.82561cf03da346457f29.js.map
