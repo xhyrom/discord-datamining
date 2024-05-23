@@ -9264,6 +9264,17 @@ div.cardContainer__94a1c {
     overflow: hidden
 }
 
+.subtext_d86a94 {
+    flex: 0 1 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--channels-default);
+    font-weight: 500
+}
+
 .activityEmoji__2ca8c {
     margin-right: 4px;
     width: 14px;
@@ -142445,4 +142456,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.020a2a5b4f0404e33896.css.map*/
+/*# sourceMappingURL=99387.03c22914323874190479.css.map*/

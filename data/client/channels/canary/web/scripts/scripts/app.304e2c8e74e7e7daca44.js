@@ -871,6 +871,7 @@
                 ownerIcon: "ownerIcon_bd8e7d icon__07c5b",
                 placeholder: "placeholder__134e3 member_aa4760",
                 premiumIcon: "premiumIcon__58b74 icon__07c5b",
+                subtext: "subtext_d86a94",
                 username: "username_ab1e31"
             }
         },
