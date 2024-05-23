@@ -5299,6 +5299,7 @@
                 divider: "divider_cc4804",
                 fakeMessage: "fakeMessage__672b9",
                 modal: "modal__3d9b1",
+                postscript: "postscript_ce71e6",
                 previewSection: "previewSection_f5c87f",
                 previewText: "previewText__804c3",
                 settingSection: "settingSection_ec07b1",
