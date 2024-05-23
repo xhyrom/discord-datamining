@@ -7205,6 +7205,7 @@
                 cardBrandingFooter: "cardBrandingFooter__98c32",
                 cardBrandingHeader: "cardBrandingHeader__1db3b",
                 cardContent: "cardContent__3001c",
+                cardContentDescriptionCollapsed: "cardContentDescriptionCollapsed__4297f",
                 cardContentDescriptionSection: "cardContentDescriptionSection__30f21",
                 cardContentTitleSection: "cardContentTitleSection_dd3bf1",
                 cardFooter: "cardFooter_ed5f2e",
@@ -7213,6 +7214,7 @@
                 cardFooterMembers: "cardFooterMembers__5eb8a",
                 cardFooterMembersIcon: "cardFooterMembersIcon__1c10d",
                 cardNameAndTagWrapper: "cardNameAndTagWrapper_d87ceb",
+                cardStaticHeight: "cardStaticHeight_db1af7",
                 clanBadge: "clanBadge__4c045",
                 clanBannerPreview: "clanBannerPreview__4375a",
                 clanIcon: "clanIcon_d70524",
@@ -23057,6 +23059,13 @@
                 submenuWrapper: "submenuWrapper__7b769"
             }
         },
+        626445: function(e) {
+            "use strict";
+            e.exports = {
+                button: "button__381b7",
+                container: "container__84a63"
+            }
+        },
         641935: function(e) {
             "use strict";
             e.exports = {
@@ -23065,6 +23074,7 @@
                 header: "header_fbecef",
                 headerSpan: "headerSpan__051f7",
                 questRewardTileAsset: "questRewardTileAsset__33149",
+                rewardDescriptionContainer: "rewardDescriptionContainer__8745e",
                 textContainer: "textContainer_fb0d3e"
             }
         },

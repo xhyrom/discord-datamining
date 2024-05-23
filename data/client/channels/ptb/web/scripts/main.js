@@ -37010,7 +37010,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295793", ", Version Hash: ").concat("21bb8f248e6f61977b154147d46f7b061fa3be06")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295802", ", Version Hash: ").concat("2ce942768d257349e99db6de88f10aea6b35b38b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88459,8 +88459,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295793", "295793"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295793")), t = 0), t
+                let t = parseInt((e = "295802", "295802"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295802")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103524,7 +103524,7 @@
                 N = 30,
                 p = 24,
                 O = 12,
-                C = 160,
+                C = 300,
                 R = 3,
                 g = 5;
             I()("2024-01-01T00:00:00");
@@ -116356,8 +116356,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295793",
-                    versionHash: "21bb8f248e6f61977b154147d46f7b061fa3be06"
+                    buildNumber: "295802",
+                    versionHash: "2ce942768d257349e99db6de88f10aea6b35b38b"
                 }
             }
             n.r(t), n.d(t, {
@@ -117233,10 +117233,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardTraits: function() {
-                    return M
+                    return y
                 },
                 ClanDiscoveryCardView: function() {
-                    return y
+                    return P
                 },
                 Wildcards: function() {
                     return v
@@ -117322,6 +117322,30 @@
 
             function M(e) {
                 let {
+                    description: t,
+                    expanded: n
+                } = e;
+                return null == t ? null : n ? (0, i.jsx)("div", {
+                    className: L.cardContentDescriptionSection,
+                    children: (0, i.jsx)(o.Text, {
+                        variant: "text-xs/normal",
+                        color: "text-muted",
+                        children: t
+                    })
+                }) : (0, i.jsx)("div", {
+                    className: L.cardContentDescriptionSection,
+                    children: (0, i.jsx)(o.Text, {
+                        className: L.cardContentDescriptionCollapsed,
+                        variant: "text-xs/normal",
+                        color: "text-muted",
+                        lineClamp: 4,
+                        children: t
+                    })
+                })
+            }
+
+            function y(e) {
+                let {
                     traits: t,
                     traitsToHighlight: n,
                     expanded: s,
@@ -117372,7 +117396,7 @@
                 })
             }
 
-            function y(e) {
+            function P(e) {
                 var t;
                 let {
                     clan: n,
@@ -117392,28 +117416,30 @@
                         primaryColor: C,
                         secondaryColor: D
                     },
-                    bannerHash: y
-                } = n, P = (0, d.default)(n.games), U = (0, T.default)("clan_discovery_card"), [b, G] = r.useState(!1), w = r.useCallback(() => {
-                    G(!0)
-                }, []), k = r.useCallback(() => {
-                    G(!1)
-                }, []), B = g.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                    bannerHash: P
+                } = n, U = (0, d.default)(n.games), b = (0, T.default)("clan_discovery_card"), [G, w] = r.useState(!1), k = r.useCallback(() => {
+                    w(!0)
+                }, []), B = r.useCallback(() => {
+                    w(!1)
+                }, []), V = g.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: n.memberCount
-                }), V = null != A ? A : (0, I.getClanBannerUrl)(n.id, y), x = null == s && null == V ? {
+                }), x = null != A ? A : (0, I.getClanBannerUrl)(n.id, P), F = null == s && null == x ? {
                     background: "linear-gradient(90deg, ".concat(C, ", ").concat(D, ")")
-                } : void 0, F = null != s ? s : null != V ? (0, i.jsx)("img", {
+                } : void 0, H = null != s ? s : null != x ? (0, i.jsx)("img", {
                     alt: g.default.Messages.CLAN_LOOK_BANNER,
-                    src: V,
+                    src: x,
                     className: L.bannerImage
-                }) : null, H = r.useMemo(() => (0, R.getSortedTraits)(n.traits, _), [n.traits, _]);
+                }) : null, Y = r.useMemo(() => (0, R.getSortedTraits)(n.traits, _), [n.traits, _]);
                 return (0, i.jsxs)("div", {
-                    className: a()(L.card, E),
-                    onMouseEnter: w,
-                    onMouseLeave: k,
+                    className: a()(L.card, E, {
+                        [L.cardStaticHeight]: !l
+                    }),
+                    onMouseEnter: k,
+                    onMouseLeave: B,
                     children: [(0, i.jsx)("div", {
                         className: L.cardBrandingHeader,
-                        style: x,
-                        children: F
+                        style: F,
+                        children: H
                     }), (0, i.jsxs)("div", {
                         className: L.cardContent,
                         children: [(0, i.jsxs)("div", {
@@ -117426,13 +117452,13 @@
                                     guildIcon: n.icon,
                                     iconSize: 64,
                                     className: L.clanIcon,
-                                    animate: !m || b
+                                    animate: !m || G
                                 }), (0, i.jsx)("div", {
                                     className: L.clanTagChipletWrapper,
                                     children: (0, i.jsx)(o.Tooltip, {
                                         text: g.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
-                                        shouldShow: !u && U,
+                                        shouldShow: !u && b,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
                                             className: L.clanTagChiplet,
@@ -117475,16 +117501,11 @@
                                     primaryColor: n.branding.primaryColor
                                 })]
                             })]
-                        }), (0, i.jsx)("div", {
-                            className: L.cardContentDescriptionSection,
-                            children: (0, i.jsx)(o.Text, {
-                                variant: "text-xs/normal",
-                                color: "text-muted",
-                                children: n.description
-                            })
                         }), (0, i.jsx)(M, {
-                            traits: H,
-                            expanded: l,
+                            description: n.description,
+                            expanded: l
+                        }), (0, i.jsx)(y, {
+                            traits: Y,
                             traitsToHighlight: _
                         })]
                     }), (0, i.jsxs)("div", {
@@ -117496,13 +117517,13 @@
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: B
+                                    children: V
                                 })
                             })
                         }), (0, i.jsx)("div", {
                             className: L.cardFooterGames,
                             children: (0, i.jsx)(p.default, {
-                                games: P,
+                                games: U,
                                 prioritizedGameIds: c
                             })
                         })]
@@ -117559,7 +117580,7 @@
                     className: L.clickableCard,
                     style: t,
                     onContextMenu: O,
-                    children: (0, i.jsx)(y, {
+                    children: (0, i.jsx)(P, {
                         ...a,
                         isMember: S,
                         prioritizedGameIds: s,
@@ -173399,8 +173420,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716482013784",
-                                    build_number: "295793"
+                                    built_at: "1716483201814",
+                                    build_number: "295802"
                                 }
                             },
                             retries: 1
@@ -250364,7 +250385,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "21bb8f248e6f61977b154147d46f7b061fa3be06"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2ce942768d257349e99db6de88f10aea6b35b38b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279476,7 +279497,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295793"
+                                build_number: "295802"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286834,7 +286855,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295793", "295793"), 10);
+                let s = parseInt((n = "295802", "295802"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314542,4 +314563,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.7600232463a96887c190.js.map
+//# sourceMappingURL=71586.e45a4cd52aa4c379f8ed.js.map
