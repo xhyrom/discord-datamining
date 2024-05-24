@@ -37019,7 +37019,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296330", ", Version Hash: ").concat("163ea1e11c765eb93a4a42338980b67f44697af3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296333", ", Version Hash: ").concat("633f4e152c2808c9c3995b973dc31f665500a218")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43120,6 +43120,7 @@
                 REMOVE_FRIEND: "Remove Friend",
                 YOUR_FRIENDS: "Your Friends",
                 BLOCKED: "Blocked",
+                MUTED: "Muted",
                 REQUEST_SENT: "Request Sent",
                 INCOMING_FRIEND_REQUEST: "Incoming Friend Request",
                 INCOMING_FRIEND_REQUESTS: "Incoming Friend Requests",
@@ -46526,6 +46527,8 @@
                 MOBILE_REPORTS_SUBMIT_INFO_TEXT: "By submitting this report you confirm that it is truthful and made in good faith. Please follow our [Community Guidelines](https://discord.com/guidelines) and do not submit false or duplicate reports.",
                 MOBILE_REPORTS_BLOCK_ELEMENT_HEADER: "More you can do",
                 MOBILE_REPORTS_BLOCK_ELEMENT_DESCRIPTION: "This is who posted the message you reported. Block them to stop seeing any of their messages.",
+                MOBILE_REPORTS_MUTE_ELEMENT_DESCRIPTION: "This is who posted the message you reported. Mute to stop seeing direct message notifications from this user.",
+                MOBILE_REPORTS_BLOCK_AND_MUTE_ELEMENT_DESCRIPTION: "This is who posted the message you reported. Mute to stop seeing direct message notifications from this user. Block them to stop seeing any of their messages.",
                 MOBILE_REPORTS_DELETE_MESSAGE_ELEMENT_DESCRIPTION: "Delete the message to prevent others from seeing this message.",
                 MOBILE_REPORTS_LEAVE_ELEMENT_DESCRIPTION: "Leave the server",
                 MOBILE_REPORTS_LEFT_SERVER: "Left Server",
@@ -54997,6 +55000,8 @@
                 REPORTS_USER_PREVIEW_TITLE: "Selected User",
                 REPORTS_FREE_TEXT_PLACEHOLDER: "(Optional) Provide more context about your report here",
                 REPORTS_BLOCK_USER_ELEMENT_DESCRIPTION: "This is whose profile you reported. Block them to stop seeing any of their messages.",
+                REPORTS_MUTE_USER_ELEMENT_DESCRIPTION: "This is whose profile you reported. Mute to stop seeing direct message notifications from this user.",
+                REPORTS_BLOCK_AND_MUTE_USER_ELEMENT_DESCRIPTION: "This is whose profile you reported. Mute to stop seeing direct message notifications from this user. Block them to stop seeing any of their messages.",
                 SAFETY_HUB_PAGE_TITLE: "Safety Hub",
                 PRIVACY_AND_SAFETY_TAB_TITLE_SETTINGS: "User Settings",
                 PRIVACY_AND_SAFETY_TAB_TITLE_SUPPORT: "Account Standing",
@@ -88511,8 +88516,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296330", "296330"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296330")), t = 0), t
+                let t = parseInt((e = "296333", "296333"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296333")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116467,8 +116472,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296330",
-                    versionHash: "163ea1e11c765eb93a4a42338980b67f44697af3"
+                    buildNumber: "296333",
+                    versionHash: "633f4e152c2808c9c3995b973dc31f665500a218"
                 }
             }
             n.r(t), n.d(t, {
@@ -160875,7 +160880,7 @@
                 a = n("285952"),
                 o = n("185625"),
                 l = n("273389"),
-                u = n("816342"),
+                u = n("596891"),
                 d = n("15667"),
                 _ = n("76264"),
                 c = n("822686"),
@@ -161014,10 +161019,12 @@
                             className: P.remediationElementsHeader,
                             variant: "heading-sm/semibold",
                             children: y.default.Messages.MOBILE_REPORTS_BLOCK_ELEMENT_HEADER
-                        }), null != U(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name) && (0, i.jsx)(u.default, {
+                        }), (null != U(t, "block_users") || null != U(t, "mute_users")) && ("message" === n.name || "first_dm" === n.name || "user" === n.name) && (0, i.jsx)(u.default, {
                             userId: "user" === n.name ? n.record.id : n.record.author.id,
                             reportId: x,
-                            reportName: n.name
+                            reportName: n.name,
+                            showBlock: null != U(t, "block_users"),
+                            showMute: null != U(t, "mute_users")
                         }), null != U(t, "delete_message") && "message" === n.name && (0, i.jsx)(c.default, {
                             message: n.record,
                             reportId: x
@@ -161086,74 +161093,102 @@
                 })
             }
         },
-        816342: function(e, t, n) {
+        596891: function(e, t, n) {
             "use strict";
             n.r(t), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("442837"),
                 a = n("481060"),
-                o = n("194359"),
-                l = n("367907"),
-                u = n("699516"),
-                d = n("594174"),
-                _ = n("82554"),
-                c = n("981631"),
-                E = n("689938"),
-                I = n("266248");
+                o = n("92114"),
+                l = n("194359"),
+                u = n("367907"),
+                d = n("592125"),
+                _ = n("699516"),
+                c = n("9156"),
+                E = n("594174"),
+                I = n("621600"),
+                T = n("82554"),
+                f = n("981631"),
+                S = n("689938"),
+                h = n("40834");
             t.default = e => {
                 let {
                     userId: t,
                     reportId: n,
-                    reportName: T
-                } = e, [f, S] = r.useState(!1), h = (0, s.useStateFromStores)([d.default], () => d.default.getUser(t), [t]), A = (0, s.useStateFromStores)([u.default], () => u.default.getRelationshipType(t), [t]) === c.RelationshipTypes.BLOCKED;
+                    reportName: A,
+                    showBlock: m,
+                    showMute: N
+                } = e, p = d.default.getDMFromUserId(t), O = (0, s.useStateFromStores)([c.default], () => null == p ? null : c.default.isChannelMuted(null, p)), [C, R] = r.useState(null != O && O), [g, L] = r.useState(!1), v = (0, s.useStateFromStores)([E.default], () => E.default.getUser(t), [t]), D = (0, s.useStateFromStores)([_.default], () => _.default.getRelationshipType(t), [t]) === f.RelationshipTypes.BLOCKED;
                 r.useEffect(() => {
-                    S(A)
-                }, [A]);
-                let m = r.useCallback(() => {
-                    S(!0), l.default.trackWithMetadata(c.AnalyticEvents.IAR_BLOCK_USER_BUTTON_CLICKED, {
-                        other_user_id: t,
-                        report_id: n
-                    }), o.default.addRelationship({
-                        userId: t,
-                        context: {
-                            location: "ReportMenuBlockUser-iOS"
-                        },
-                        type: c.RelationshipTypes.BLOCKED
-                    })
-                }, [t, n]);
-                return null == h ? null : (0, i.jsxs)("div", {
-                    className: I.container,
+                    L(D)
+                }, [D]);
+                let M = r.useCallback(() => {
+                        L(!0), u.default.trackWithMetadata(f.AnalyticEvents.IAR_BLOCK_USER_BUTTON_CLICKED, {
+                            other_user_id: t,
+                            report_id: n
+                        }), l.default.addRelationship({
+                            userId: t,
+                            context: {
+                                location: "ReportMenuBlockUser-iOS"
+                            },
+                            type: f.RelationshipTypes.BLOCKED
+                        })
+                    }, [t, n]),
+                    y = r.useCallback(() => {
+                        null != p && (R(!0), u.default.trackWithMetadata(f.AnalyticEvents.IAR_MUTE_USER_BUTTON_CLICKED, {
+                            other_user_id: t,
+                            report_id: n
+                        }), o.default.updateChannelOverrideSettings(null, p, {
+                            muted: !0
+                        }, I.NotificationLabels.Muted))
+                    }, [p, t, n]),
+                    P = A === T.ReportNames.USER,
+                    U = P ? S.default.Messages.REPORTS_MUTE_USER_ELEMENT_DESCRIPTION : S.default.Messages.MOBILE_REPORTS_MUTE_ELEMENT_DESCRIPTION,
+                    b = P ? S.default.Messages.REPORTS_BLOCK_USER_ELEMENT_DESCRIPTION : S.default.Messages.MOBILE_REPORTS_BLOCK_ELEMENT_DESCRIPTION,
+                    G = P ? S.default.Messages.REPORTS_BLOCK_AND_MUTE_USER_ELEMENT_DESCRIPTION : S.default.Messages.MOBILE_REPORTS_BLOCK_AND_MUTE_ELEMENT_DESCRIPTION,
+                    w = N || m;
+                return null != v && w ? (0, i.jsxs)("div", {
+                    className: h.container,
                     children: [(0, i.jsx)(a.Text, {
-                        className: I.description,
+                        className: h.description,
                         variant: "text-sm/normal",
-                        children: T === _.ReportNames.USER ? E.default.Messages.REPORTS_BLOCK_USER_ELEMENT_DESCRIPTION : E.default.Messages.MOBILE_REPORTS_BLOCK_ELEMENT_DESCRIPTION
+                        children: m && N ? G : m ? b : U
                     }), (0, i.jsxs)("div", {
-                        className: I.userContainer,
+                        className: h.userContainer,
                         children: [(0, i.jsxs)("div", {
-                            className: I.userInfo,
+                            className: h.userInfo,
                             children: [(0, i.jsx)(a.Avatar, {
                                 size: a.AvatarSizes.SIZE_32,
-                                src: h.getAvatarURL(void 0, 32),
-                                className: I.avatar,
-                                "aria-label": h.username
+                                src: v.getAvatarURL(void 0, 32),
+                                className: h.avatar,
+                                "aria-label": v.username
                             }), (0, i.jsx)(a.Text, {
-                                className: I.userName,
+                                className: h.userName,
                                 variant: "text-sm/semibold",
-                                children: h.username
-                            }), !h.isPomelo() && (0, i.jsxs)(a.Text, {
+                                children: v.username
+                            }), !v.isPomelo() && (0, i.jsxs)(a.Text, {
                                 variant: "text-sm/normal",
-                                children: ["#", h.discriminator]
+                                children: ["#", v.discriminator]
                             })]
-                        }), (0, i.jsx)(a.Button, {
-                            onClick: () => m(),
-                            disabled: f,
-                            size: a.Button.Sizes.SMALL,
-                            color: a.Button.Colors.RED,
-                            children: f ? E.default.Messages.BLOCKED : E.default.Messages.BLOCK
+                        }), (0, i.jsxs)("div", {
+                            className: h.actionButtonsContainer,
+                            children: [N && (0, i.jsx)(a.Button, {
+                                onClick: y,
+                                disabled: C,
+                                size: a.Button.Sizes.SMALL,
+                                color: a.Button.Colors.PRIMARY,
+                                children: C ? S.default.Messages.MUTED : S.default.Messages.MUTE
+                            }), m && (0, i.jsx)(a.Button, {
+                                onClick: M,
+                                disabled: g,
+                                size: a.Button.Sizes.SMALL,
+                                color: a.Button.Colors.RED,
+                                children: g ? S.default.Messages.BLOCKED : S.default.Messages.BLOCK
+                            })]
                         })]
                     })]
-                })
+                }) : null
             }
         },
         15667: function(e, t, n) {
@@ -173927,8 +173962,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716585049100",
-                                    build_number: "296330"
+                                    built_at: "1716585574056",
+                                    build_number: "296333"
                                 }
                             },
                             retries: 1
@@ -251319,7 +251354,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "163ea1e11c765eb93a4a42338980b67f44697af3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "633f4e152c2808c9c3995b973dc31f665500a218"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280449,7 +280484,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296330"
+                                build_number: "296333"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287813,7 +287848,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296330", "296330"), 10);
+                let s = parseInt((n = "296333", "296333"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315568,4 +315603,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.6cc796e7943ca020f87f.js.map
+//# sourceMappingURL=71586.620544b03c26868c9cd4.js.map
