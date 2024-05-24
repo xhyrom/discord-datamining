@@ -16653,16 +16653,17 @@
                 remediationElementsHeader: "remediationElementsHeader__79663"
             }
         },
-        266248: function(e) {
+        40834: function(e) {
             "use strict";
             e.exports = {
-                avatar: "avatar__22897",
-                container: "container__02c63",
-                description: "description_c166a1",
-                header: "header__4624b",
-                userContainer: "userContainer__1d5a2",
-                userInfo: "userInfo_cb93ff",
-                userName: "userName__708ef"
+                actionButtonsContainer: "actionButtonsContainer__72b0e",
+                avatar: "avatar__0c803",
+                container: "container__38d65",
+                description: "description__0f01e",
+                header: "header__3078a",
+                userContainer: "userContainer__17f5e",
+                userInfo: "userInfo__81d75",
+                userName: "userName_a131e1"
             }
         },
         160503: function(e) {
