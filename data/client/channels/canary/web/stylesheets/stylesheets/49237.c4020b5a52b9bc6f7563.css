@@ -23252,7 +23252,7 @@ h6.title_c2a544 {
 }
 
 .markdown__8e519 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -26678,7 +26678,7 @@ html.disable-forced-colors * {
 
     .locale__533cd {
         padding: 10px;
-        font-size: .875rem;
+        font-size: 14px;
         opacity: .8;
         display: flex;
         position: relative
@@ -26717,7 +26717,7 @@ html.disable-forced-colors * {
     position: absolute;
     top: 30px;
     left: 0;
-    font-size: .8125rem;
+    font-size: 13px;
     box-shadow: 0 1px 3px hsl(calc(1 * 0%), 0%-hsl / 0.1);
     box-shadow: 0 1px 3px hsl(var(0, calc(0%*var(--saturation-factor, 1)), 0%-hsl)/.1);
     overflow: hidden;
@@ -27437,4 +27437,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.868d4fc75eb079f842dc.css.map*/
+/*# sourceMappingURL=49237.c4020b5a52b9bc6f7563.css.map*/
