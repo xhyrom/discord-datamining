@@ -99217,13 +99217,6 @@ div.content_aac020 {
     margin-right: 2px
 }
 
-.subscribeNow__04fcf {
-    display: inline;
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-    cursor: pointer
-}
-
 .headingWithItemTypePill__3fc83 {
     margin-bottom: 4px
 }
@@ -99334,6 +99327,28 @@ div.content_aac020 {
     }
 }
 
+.partialOwnStateContainer_f36ea2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: .5;
+    gap: 4px
+}
+
+.partiallyOwnedDisclaimer__45566 {
+    margin-left: -8px
+}
+
+.iconWrapper__50d21 {
+    margin-top: 2px
+}
+
+.infoIcon__370b5 {
+    color: var(--interactive-active);
+    width: 16px;
+    height: 16px
+}
+
 .avatarDecorationPreview__08471 {
     padding: 16px 0 32px
 }
@@ -99360,6 +99375,13 @@ div.content_aac020 {
     display: inline-flex;
     align-items: center;
     white-space: pre-wrap
+}
+
+.subscribeNow__865d0 {
+    display: inline;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    cursor: pointer
 }
 
 .priceTagsContainer_b12e66 {
@@ -142465,4 +142487,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ba51a2d7e9a8a032ee21.css.map*/
+/*# sourceMappingURL=99387.08a75c823c4c92a2c8a7.css.map*/
