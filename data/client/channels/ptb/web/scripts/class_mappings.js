@@ -18224,7 +18224,8 @@
                 statusItem: "statusItem_e3c3f5",
                 statusPickerModalMenu: "statusPickerModalMenu_ba9252",
                 subMenuIcon: "subMenuIcon__83a81",
-                themeContainer: "themeContainer_fb8696"
+                themeContainer: "themeContainer_fb8696",
+                username: "username_f83278"
             }
         },
         717187: function(e) {
