@@ -14798,6 +14798,12 @@
                 ackGuildFeature: function() {
                     return S
                 },
+                ackMessageRequest: function() {
+                    return A
+                },
+                ackMessageRequestClear: function() {
+                    return m
+                },
                 ackUserFeature: function() {
                     return h
                 },
@@ -14915,6 +14921,19 @@
                     ackType: e,
                     ackedId: t,
                     local: !1
+                })
+            }
+
+            function A(e) {
+                i.default.dispatch({
+                    type: "MESSAGE_REQUEST_ACK",
+                    ackedId: e
+                })
+            }
+
+            function m() {
+                i.default.dispatch({
+                    type: "MESSAGE_REQUEST_CLEAR_ACK"
                 })
             }
         },
@@ -16043,9 +16062,12 @@
                 })
             }
 
-            function N() {
+            function N(e) {
                 return i.HTTP.post({
                     url: c.Endpoints.USER_HARVEST,
+                    body: {
+                        backends: e
+                    },
                     oldFormErrors: !0
                 })
             }
@@ -36997,7 +37019,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296308", ", Version Hash: ").concat("18bfe3c18dc6916080576905ccbdc8d963e194e6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296330", ", Version Hash: ").concat("163ea1e11c765eb93a4a42338980b67f44697af3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43253,11 +43275,18 @@
                 DATA_PRIVACY_CONTROLS_REQUEST_DATA_TOOLTIP: "Your account must be verified with an email address to request data. You can verify your account in the My Account section",
                 DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_TITLE: "Submit Data Request",
                 DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_NOTE: "It may take us up to 30 days to collect your data. We will send you an email to the address you registered with when the package is ready.",
+                DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_WEB_NOTE: "Select the data that you'd like to be included in your data package below. You can learn more about each of these selections [here]({helpdeskArticle}). \n\n Note that some selections, like Messages, may delay the delivery of your package, and it may take us up to 30 days to collect your data. We will send you an email to the address you registered with when the package is ready.",
                 DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_CONFIRM: "Request My Data",
                 DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_CANCEL: "I've changed my mind",
                 DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_SUCCESS: "Our privacy farmers have begun harvesting your data. This can take up to 30 days, but we'll email you when it’s done.",
                 DATA_PRIVACY_CONTROLS_REQUEST_DATA_NOTE: "[Learn more]({helpdeskArticle}) about how getting a copy of your personal data works.",
                 DATA_PRIVACY_UPDATE_CONSENTS_FAILED: "We couldn't update your data usage preferences right now. Please try again later",
+                HARVEST_BACKEND_USERS: "Account",
+                HARVEST_BACKEND_MESSAGES: "Messages",
+                HARVEST_BACKEND_GUILDS: "Servers",
+                HARVEST_BACKEND_ANALYTICS: "Analytics",
+                HARVEST_BACKEND_ACTIVITIES: "Activities",
+                HARVEST_BACKEND_HUBSPOT: "Programs",
                 USER_DM_SETTINGS: "Server Privacy Defaults",
                 USER_DM_SETTINGS_HELP: "This setting is applied when you join a new server. It does not apply retroactively to your existing servers.",
                 USER_DM_SETTINGS_QUESTION: "Do you want to also apply this change to all your existing servers?",
@@ -88482,8 +88511,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296308", "296308"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296308")), t = 0), t
+                let t = parseInt((e = "296330", "296330"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296330")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116438,8 +116467,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296308",
-                    versionHash: "18bfe3c18dc6916080576905ccbdc8d963e194e6"
+                    buildNumber: "296330",
+                    versionHash: "163ea1e11c765eb93a4a42338980b67f44697af3"
                 }
             }
             n.r(t), n.d(t, {
@@ -173898,8 +173927,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716583004800",
-                                    build_number: "296308"
+                                    built_at: "1716585049100",
+                                    build_number: "296330"
                                 }
                             },
                             retries: 1
@@ -193897,7 +193926,7 @@
                 UnreadSetting: function() {
                     return r
                 }
-            }), (s = i || (i = {}))[s.CHANNEL = 0] = "CHANNEL", s[s.GUILD_EVENT = 1] = "GUILD_EVENT", s[s.NOTIFICATION_CENTER = 2] = "NOTIFICATION_CENTER", s[s.GUILD_HOME = 3] = "GUILD_HOME", s[s.GUILD_ONBOARDING_QUESTION = 4] = "GUILD_ONBOARDING_QUESTION", (a = r || (r = {}))[a.UNSET = 0] = "UNSET", a[a.ALL_MESSAGES = 1] = "ALL_MESSAGES", a[a.ONLY_MENTIONS = 2] = "ONLY_MENTIONS"
+            }), (s = i || (i = {}))[s.CHANNEL = 0] = "CHANNEL", s[s.GUILD_EVENT = 1] = "GUILD_EVENT", s[s.NOTIFICATION_CENTER = 2] = "NOTIFICATION_CENTER", s[s.GUILD_HOME = 3] = "GUILD_HOME", s[s.GUILD_ONBOARDING_QUESTION = 4] = "GUILD_ONBOARDING_QUESTION", s[s.MESSAGE_REQUESTS = 5] = "MESSAGE_REQUESTS", (a = r || (r = {}))[a.UNSET = 0] = "UNSET", a[a.ALL_MESSAGES = 1] = "ALL_MESSAGES", a[a.ONLY_MENTIONS = 2] = "ONLY_MENTIONS"
         },
         220444: function(e, t, n) {
             "use strict";
@@ -241460,6 +241489,7 @@
                                 e = en.Endpoints.GUILD_FEATURE_ACK(n, t, i);
                                 break;
                             case ea.ReadStateTypes.NOTIFICATION_CENTER:
+                            case ea.ReadStateTypes.MESSAGE_REQUESTS:
                                 e = en.Endpoints.USER_NON_CHANNEL_ACK(t, i);
                                 break;
                             default:
@@ -241854,6 +241884,7 @@
                                 null != z.default.getGuild(n.channelId) && t.push(n.serialize(e));
                                 break;
                             case ea.ReadStateTypes.NOTIFICATION_CENTER:
+                            case ea.ReadStateTypes.MESSAGE_REQUESTS:
                                 var i;
                                 x.default.cast(null === (i = ee.default.getCurrentUser()) || void 0 === i ? void 0 : i.id) === n.channelId && t.push(n.serialize(e));
                                 break;
@@ -241867,6 +241898,11 @@
                 }
                 getMentionChannelIds() {
                     return ey.getMentionChannelIds()
+                }
+                getNonChannelAckId(e) {
+                    var t;
+                    let n = null === (t = ee.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                    return null == n ? null : ey.get(n, e).ackMessageId
                 }
                 getSnapshot(e, t) {
                     let n = ey.get(e);
@@ -242354,6 +242390,27 @@
                         channelId: t
                     } = e;
                     return eB(t)
+                },
+                MESSAGE_REQUEST_ACK: function(e) {
+                    var t;
+                    let {
+                        ackedId: n
+                    } = e, i = null === (t = ee.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                    if (null == i) return !1;
+                    let r = ey.get(i, ea.ReadStateTypes.MESSAGE_REQUESTS);
+                    if (n === r.ackMessageId) return !1;
+                    r.ackMessageId = n, r.ack({
+                        messageId: n,
+                        isExplicitUserAction: !0
+                    })
+                },
+                MESSAGE_REQUEST_CLEAR_ACK: function(e) {
+                    var t;
+                    let n = null === (t = ee.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                    if (null == n) return !1;
+                    let i = ey.get(n, ea.ReadStateTypes.MESSAGE_REQUESTS);
+                    if (null == i.ackMessageId) return !1;
+                    i.ackMessageId = void 0
                 }
             });
             t.default = e$
@@ -251262,7 +251319,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "18bfe3c18dc6916080576905ccbdc8d963e194e6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "163ea1e11c765eb93a4a42338980b67f44697af3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -253673,93 +253730,111 @@
             n("470079");
             var r = n("120356"),
                 s = n.n(r),
-                a = n("829968"),
-                o = n("346656"),
-                l = n("438071"),
-                u = n("474936"),
-                d = n("689938"),
-                _ = n("458217");
-            let c = {
-                    XXSMALL: _.xxsmall,
-                    XSMALL: _.xsmall,
-                    SMALL: _.small,
-                    MEDIUM: _.medium,
-                    LARGE: _.large
+                a = n("692547"),
+                o = n("829968"),
+                l = n("346656"),
+                u = n("438071"),
+                d = n("474936"),
+                _ = n("689938"),
+                c = n("458217");
+            let E = {
+                    XXSMALL: c.xxsmall,
+                    XSMALL: c.xsmall,
+                    SMALL: c.small,
+                    MEDIUM: c.medium,
+                    LARGE: c.large
                 },
-                E = e => {
+                I = e => {
                     let t, {
                         game: r,
-                        guild: E,
-                        skuId: I,
-                        pid: T,
-                        className: f,
-                        guildClassName: S,
-                        size: h = c.MEDIUM
+                        guild: I,
+                        skuId: T,
+                        pid: f,
+                        className: S,
+                        guildClassName: h,
+                        size: A = E.MEDIUM
                     } = e;
-                    if (null != I && (t = function(e) {
+                    if (null != T && (t = function(e) {
                             if (null == e) return null;
                             switch (e) {
-                                case u.PremiumSubscriptionSKUs.GUILD:
+                                case d.PremiumSubscriptionSKUs.GUILD:
                                     return n("632342");
-                                case u.PremiumSubscriptionSKUs.TIER_0:
+                                case d.PremiumSubscriptionSKUs.TIER_0:
                                     return n("467596");
-                                case u.PremiumSubscriptionSKUs.TIER_1:
+                                case d.PremiumSubscriptionSKUs.TIER_1:
                                     return n("670957");
-                                case u.PremiumSubscriptionSKUs.TIER_2:
-                                case u.PremiumSubscriptionSKUs.LEGACY:
+                                case d.PremiumSubscriptionSKUs.TIER_2:
+                                case d.PremiumSubscriptionSKUs.LEGACY:
                                     return n("480768");
                                 default:
                                     return null
                             }
-                        }(I)), null != r && null == t && (t = r.getIconURL(function(e) {
+                        }(T)), null != r && null == t && (t = r.getIconURL(function(e) {
                             switch (e) {
-                                case c.XXSMALL:
+                                case E.XXSMALL:
                                     return 16;
-                                case c.XSMALL:
+                                case E.XSMALL:
                                     return 24;
-                                case c.SMALL:
+                                case E.SMALL:
                                     return 30;
-                                case c.MEDIUM:
+                                case E.MEDIUM:
                                     return 40;
-                                case c.LARGE:
+                                case E.LARGE:
                                     return 60;
                                 default:
                                     return 80
                             }
-                        }(h))), null == (t = (0, a.default)(T, t)) && null != E) {
+                        }(A))), null == (t = (0, o.default)(f, t)) && null != I) {
                         let e = function(e) {
                             switch (e) {
-                                case c.XSMALL:
-                                    return o.default.Sizes.SMALLER;
-                                case c.SMALL:
-                                    return o.default.Sizes.SMALL;
-                                case c.LARGE:
-                                    return o.default.Sizes.LARGE;
+                                case E.XSMALL:
+                                    return l.default.Sizes.SMALLER;
+                                case E.SMALL:
+                                    return l.default.Sizes.SMALL;
+                                case E.LARGE:
+                                    return l.default.Sizes.LARGE;
                                 default:
-                                case c.MEDIUM:
-                                    return o.default.Sizes.MEDIUM
+                                case E.MEDIUM:
+                                    return l.default.Sizes.MEDIUM
                             }
-                        }(h);
-                        return (0, i.jsx)(o.default, {
-                            className: s()(_.gameIcon, S, f),
-                            guild: E,
+                        }(A);
+                        return (0, i.jsx)(l.default, {
+                            className: s()(c.gameIcon, h, S),
+                            guild: I,
                             size: e
                         })
                     }
-                    if (null == t) return (0, i.jsx)(l.default, {
-                        className: s()(_.gameIcon, h, f)
+                    if (null == t) return (0, i.jsx)(u.default, {
+                        className: s()(c.gameIcon, A, S)
                     });
-                    let A = null == r ? void 0 : r.name,
-                        m = null != A && "" !== A ? d.default.Messages.APPLICATION_ICON_A11Y_LABEL.format({
-                            applicationName: A
-                        }) : d.default.Messages.APPLICATION_ICON_NO_NAME_A11Y_LABEL;
+                    let m = null == r ? void 0 : r.name,
+                        N = null != m && "" !== m ? _.default.Messages.APPLICATION_ICON_A11Y_LABEL.format({
+                            applicationName: m
+                        }) : _.default.Messages.APPLICATION_ICON_NO_NAME_A11Y_LABEL;
                     return (0, i.jsx)("img", {
-                        alt: m,
+                        alt: N,
                         src: t,
-                        className: s()(_.gameIcon, h, f)
+                        className: s()(c.gameIcon, A, S),
+                        style: {
+                            borderRadius: function(e) {
+                                switch (e) {
+                                    case E.XXSMALL:
+                                        return a.default.radii.xs;
+                                    case E.XSMALL:
+                                    case E.SMALL:
+                                        return a.default.radii.sm;
+                                    case E.MEDIUM:
+                                        return a.default.radii.md;
+                                    case E.LARGE:
+                                        return a.default.radii.lg;
+                                    default:
+                                        return a.default.radii.sm
+                                }
+                            }(A)
+                        }
                     })
                 };
-            E.Sizes = c, t.default = E
+            I.Sizes = E, t.default = I
         },
         672752: function(e, t, n) {
             "use strict";
@@ -280374,7 +280449,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296308"
+                                build_number: "296330"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287738,7 +287813,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296308", "296308"), 10);
+                let s = parseInt((n = "296330", "296330"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315493,4 +315568,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.8d1d7bb9df3bed9335c4.js.map
+//# sourceMappingURL=71586.6cc796e7943ca020f87f.js.map

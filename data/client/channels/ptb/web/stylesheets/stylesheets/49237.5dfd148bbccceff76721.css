@@ -11590,7 +11590,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     filter: saturate(var(--saturation-factor, 1));
     -webkit-user-drag: none;
     background-size: 100%;
-    border-radius: 3px;
+    border-radius: var(--radius-sm);
     color: var(--header-primary)
 }
 
@@ -27437,4 +27437,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.c4020b5a52b9bc6f7563.css.map*/
+/*# sourceMappingURL=49237.5dfd148bbccceff76721.css.map*/
