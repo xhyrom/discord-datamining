@@ -467,7 +467,11 @@
   },
   "DISCOVERY_ALL_GAMES": {
     "url": "/discovery/games/all",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
