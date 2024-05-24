@@ -36997,7 +36997,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296256", ", Version Hash: ").concat("9147d12bffd7a8e47a62045de7ffda1d921c652a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296274", ", Version Hash: ").concat("3af61aad0b545b0ff55ca395c91dafd93dbd2ce4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53859,7 +53859,7 @@
                 COLLECTIBLES_FEELIN_RETRO_PIRATES_COACHTIP_TITLE: "Feelin' Retro & Pirates",
                 COLLECTIBLES_FEELIN_RETRO_PIRATES_COACHTIP_DESCRIPTION: "Give 'em a look-see if yer feelin' curious, matey…",
                 COLLECTIBLES_ARCADE_COACHTIP_TITLE: "New Arcade styles",
-                COLLECTIBLES_ARCADE_COACHTIP_DESCRIPTION: "Ready to score some extra style points? Bundles included.",
+                COLLECTIBLES_ARCADE_COACHTIP_DESCRIPTION: "Ready to score some extra style points?",
                 COLLECTIBLES_NEW_BADGE: "NEW",
                 NEW_ARRIVALS: "New Arrivals",
                 COLLECTIBLES_SEE_WHATS_NEW: "See what's new in the Shop!",
@@ -88474,8 +88474,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296256", "296256"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296256")), t = 0), t
+                let t = parseInt((e = "296274", "296274"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296274")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116430,8 +116430,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296256",
-                    versionHash: "9147d12bffd7a8e47a62045de7ffda1d921c652a"
+                    buildNumber: "296274",
+                    versionHash: "3af61aad0b545b0ff55ca395c91dafd93dbd2ce4"
                 }
             }
             n.r(t), n.d(t, {
@@ -173875,8 +173875,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716577754278",
-                                    build_number: "296256"
+                                    built_at: "1716579429494",
+                                    build_number: "296274"
                                 }
                             },
                             retries: 1
@@ -189906,10 +189906,10 @@
                     isFetchingCurrentQuests: n
                 } = p({
                     fetchPolicy: "cache-and-network"
-                }), i = function(e) {
+                }), i = new Map(t.map(e => [e.id, e])), r = function(e) {
                     let t = o.useMemo(() => e.filter(e => {
                             var t;
-                            return !((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null)
+                            return !((null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null)
                         }), [e]),
                         n = o.useRef([]);
                     return o.useMemo(() => {
@@ -189918,25 +189918,23 @@
                         let e = t.sort((e, t) => {
                             var n, i, r, s, a, o;
                             let l = !(0, T.isQuestExpired)(e),
-                                u = !(0, T.isQuestExpired)(t);
-                            if (l !== u) return l ? -1 : 1;
-                            let d = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null,
-                                _ = (null === (i = t.userStatus) || void 0 === i ? void 0 : i.enrolledAt) != null,
-                                c = d && l;
-                            if (c !== (_ && u)) return c ? -1 : 1;
-                            let E = (0, T.isTargetedForContent)(e, I.QuestContent.QUEST_BAR),
-                                f = (0, T.isTargetedForContent)(t, I.QuestContent.QUEST_BAR),
-                                S = E && l;
-                            if (S !== (f && u)) return S ? -1 : 1;
-                            let h = d && !l;
-                            return h !== (_ && !u) ? h ? -1 : 1 : l && u ? O(null === (a = e.config) || void 0 === a ? void 0 : a.expiresAt, null === (o = t.config) || void 0 === o ? void 0 : o.expiresAt, 1) : O(null === (r = e.config) || void 0 === r ? void 0 : r.expiresAt, null === (s = t.config) || void 0 === s ? void 0 : s.expiresAt, 0)
-                        });
+                                u = !(0, T.isQuestExpired)(t),
+                                d = (0, T.isTargetedForContent)(e, I.QuestContent.QUEST_BAR) || (0, T.isTargetedForContent)(e, I.QuestContent.QUEST_BAR_V2),
+                                _ = (0, T.isTargetedForContent)(t, I.QuestContent.QUEST_BAR) || (0, T.isTargetedForContent)(t, I.QuestContent.QUEST_BAR_V2),
+                                c = (0, T.isTargetedForContent)(e, I.QuestContent.GIFT_INVENTORY_FOR_YOU),
+                                E = (0, T.isTargetedForContent)(t, I.QuestContent.GIFT_INVENTORY_FOR_YOU),
+                                f = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null,
+                                S = (null === (i = t.userStatus) || void 0 === i ? void 0 : i.enrolledAt) != null;
+                            return l !== u ? l ? -1 : 1 : d !== _ && l && u ? d ? -1 : 1 : c !== E ? c ? -1 : 1 : f !== S ? f ? -1 : 1 : l && u ? O(null === (a = e.config) || void 0 === a ? void 0 : a.expiresAt, null === (o = t.config) || void 0 === o ? void 0 : o.expiresAt, 1) : O(null === (r = e.config) || void 0 === r ? void 0 : r.expiresAt, null === (s = t.config) || void 0 === s ? void 0 : s.expiresAt, 0)
+                        }).map(e => e.id);
                         return n.current = e, e
                     }, [t])
-                }(t), r = function(e) {
+                }(t), s = function(e) {
                     let t = o.useMemo(() => e.filter(e => {
-                            var t;
-                            return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null
+                            var t, n;
+                            let i = (null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null,
+                                r = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.claimedAt) != null;
+                            return i && r
                         }), [e]),
                         n = o.useRef([]);
                     return o.useMemo(() => {
@@ -189947,13 +189945,17 @@
                             let r = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.claimedAt) == null;
                             if (r !== ((null === (i = t.userStatus) || void 0 === i ? void 0 : i.claimedAt) == null)) return r ? -1 : 1;
                             let s = A.SharedQuestFields.build(e.config).rewardsExpireAt;
-                            return O(s, A.SharedQuestFields.build(t.config).rewardsExpireAt, 1)
-                        });
+                            return O(s, A.SharedQuestFields.build(t.config).rewardsExpireAt, 0)
+                        }).map(e => e.id);
                         return n.current = e, e
                     }, [t])
-                }(t), s = [];
+                }(t), a = [], l = [];
+                for (let t of a = "incomplete" === e ? r : s) {
+                    let e = i.get(t);
+                    null != e && l.push(e)
+                }
                 return {
-                    quests: s = "incomplete" === e ? i : r,
+                    quests: l,
                     isFetchingCurrentQuests: n
                 }
             }
@@ -251237,7 +251239,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9147d12bffd7a8e47a62045de7ffda1d921c652a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3af61aad0b545b0ff55ca395c91dafd93dbd2ce4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280349,7 +280351,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296256"
+                                build_number: "296274"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287713,7 +287715,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296256", "296256"), 10);
+                let s = parseInt((n = "296274", "296274"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315468,4 +315470,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.5915c31357aecc19a126.js.map
+//# sourceMappingURL=71586.de5eac6391892dcaf510.js.map

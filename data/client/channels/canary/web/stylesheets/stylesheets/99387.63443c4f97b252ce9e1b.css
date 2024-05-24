@@ -58397,10 +58397,15 @@ div:has(>div>.modal__06f49) {
 
 .container__5be37 {
     width: 100%;
-    height: 170px;
+    height: 100%;
+    box-sizing: border-box;
     border-radius: 8px 8px 0 0;
-    position: relative;
-    background-color: var(--background-secondary-alt)
+    background-color: var(--background-secondary-alt);
+    position: relative
+}
+
+.spacer_b20d0b {
+    height: 170px
 }
 
 .positionContentOverBackground__8fd75 {
@@ -58408,7 +58413,7 @@ div:has(>div>.modal__06f49) {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 170px;
     z-index: 2;
     display: flex
 }
@@ -58429,7 +58434,7 @@ div:has(>div>.modal__06f49) {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 170px;
     z-index: 1
 }
 
@@ -58450,7 +58455,7 @@ div:has(>div>.modal__06f49) {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%
+    height: 170px
 }
 
 .darkThemeGradient__34b11 {
@@ -58463,8 +58468,29 @@ div:has(>div>.modal__06f49) {
     background: linear-gradient(0deg, var(--white-500)0%, rgba(255, 255, 255, .95)20.31%, rgba(255, 255, 255, 0)100%)
 }
 
+.topRow_e6450a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end
+}
+
+.pill__01329 {
+    border-radius: 6px;
+    background: var(--brand-experiment);
+    box-shadow: var(--shadow-low);
+    display: flex;
+    padding: 2px 6px;
+    align-items: center;
+    margin-right: auto
+}
+
+.eyebrowText__895d2 {
+    font-weight: 700;
+    font-size: 12px
+}
+
 .submenuWrapper__7b769 {
-    align-self: flex-end;
+    justify-self: flex-end;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58515,8 +58541,10 @@ div:has(>div>.modal__06f49) {
     align-items: center;
     justify-content: center;
     padding: 12px;
+    height: 62px;
     box-sizing: border-box;
-    width: 100%
+    width: 100%;
+    border-top: 1px solid var(--border-subtle)
 }
 
 .button__381b7 {
@@ -58533,19 +58561,21 @@ div:has(>div>.modal__06f49) {
 .container__118f6 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    height: 190px
+    height: 190px;
+    width: 100%
 }
 
 .rewardDescriptionContainer__8745e {
+    width: 100%;
     height: 104px;
+    box-sizing: border-box;
+    padding: 12px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    padding: 12px;
-    border-bottom: 1px solid var(--border-subtle)
+    justify-content: flex-start
 }
 
 .questRewardTileAsset__33149 {
@@ -58579,7 +58609,7 @@ div:has(>div>.modal__06f49) {
 
 .container_c51520 {
     width: 336px;
-    height: 336px;
+    max-height: 336px;
     box-sizing: border-box;
     background-color: var(--background-primary);
     border-radius: 10px;
@@ -142491,4 +142521,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b9e1e246b6b8fe2a3ca6.css.map*/
+/*# sourceMappingURL=99387.63443c4f97b252ce9e1b.css.map*/
