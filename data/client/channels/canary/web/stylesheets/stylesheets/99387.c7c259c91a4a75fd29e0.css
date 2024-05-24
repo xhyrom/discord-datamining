@@ -25026,7 +25026,7 @@ html .progress__00e29 {
     text-align: center;
     border-radius: 3px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: .875rem;
     padding: 12px 0;
     margin-top: 16px;
     color: var(--white-500);
@@ -71537,8 +71537,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .planInfo_c12dc8 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -142521,4 +142521,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.63443c4f97b252ce9e1b.css.map*/
+/*# sourceMappingURL=99387.c7c259c91a4a75fd29e0.css.map*/
