@@ -36997,7 +36997,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296126", ", Version Hash: ").concat("6eccb104043b05574671471cf367b5e4f872c158")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296129", ", Version Hash: ").concat("1389ec68612892922e159f88bba0af5eb453def1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53758,6 +53758,7 @@
                 COLLECTIBLES_PERMANENT_COLLECTION_BUNDLE: "These decorations are now part of your collection and can be used anytime from your User Profile.",
                 COLLECTIBLES_YOU_COLLECTED: "You've collected {itemName}!",
                 COLLECTIBLES_ALREADY_OWNED: "Already owned",
+                COLLECTIBLES_PARTIALLY_OWNED_DISCLAIMER: "You already own one or more bundle items.",
                 COLLECTIBLES_INCLUDED_WITH_PREMIUM: "Included with Nitro",
                 COLLECTIBLES_DETAILS_MODAL_PREMIUM_PURCHASE_DISCLAIMER: "Once purchased, this decoration will be added to your collection and can be used anytime",
                 COLLECTIBLES_DETAILS_MODAL_INCLUDED_WITH_PREMIUM_DISCLAIMER: "This bonus item is yours to keep and use anytime with an active Nitro subscription.",
@@ -88468,8 +88469,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296126", "296126"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296126")), t = 0), t
+                let t = parseInt((e = "296129", "296129"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296129")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111681,6 +111682,9 @@
                 groupProfileEffects: function() {
                     return L
                 },
+                isBundleProduct: function() {
+                    return P
+                },
                 isCollectiblesGiftCode: function() {
                     return v
                 },
@@ -111798,7 +111802,8 @@
                 y = e => {
                     let t = u.SHOP_CARD_PER_PRODUCT_NEW_BADGE_EXPIRY_SETTINGS[e];
                     return null != t && new Date().getTime() < t
-                }
+                },
+                P = e => (null == e ? void 0 : e.type) === r.CollectiblesItemType.BUNDLE
         },
         617452: function(e, t, n) {
             "use strict";
@@ -116420,8 +116425,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296126",
-                    versionHash: "6eccb104043b05574671471cf367b5e4f872c158"
+                    buildNumber: "296129",
+                    versionHash: "1389ec68612892922e159f88bba0af5eb453def1"
                 }
             }
             n.r(t), n.d(t, {
@@ -173865,8 +173870,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716521294723",
-                                    build_number: "296126"
+                                    built_at: "1716522469026",
+                                    build_number: "296129"
                                 }
                             },
                             retries: 1
@@ -251225,7 +251230,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6eccb104043b05574671471cf367b5e4f872c158"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1389ec68612892922e159f88bba0af5eb453def1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280337,7 +280342,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296126"
+                                build_number: "296129"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287701,7 +287706,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296126", "296126"), 10);
+                let s = parseInt((n = "296129", "296129"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315442,4 +315447,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.b7e3b60f6ac15cd008c8.js.map
+//# sourceMappingURL=71586.5fc7c1a47a4a042ad349.js.map
