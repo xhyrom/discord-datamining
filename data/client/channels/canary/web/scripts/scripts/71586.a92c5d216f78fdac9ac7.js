@@ -36997,7 +36997,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296218", ", Version Hash: ").concat("21b730d3d45a02781d7afcbf7efc425c40382363")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296233", ", Version Hash: ").concat("ad4c39796e7303b9ce52bec49e0dad88edcff6a9")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -40139,6 +40139,7 @@
                 FORM_HELP_DISCOVERY_COVER_IMAGE: "This image will be displayed on your Discovery Listing. The recommended minimum size is 1920x1080 and recommended aspect ratio is 16:9.",
                 FORM_LABEL_DISCOVERY_RULES_CHANNEL: "Rules or guidelines channel",
                 GUILD_SETTINGS_DISCOVERY_DISQUALIFIED: "This server has been removed from Discovery.",
+                GUILD_SETTINGS_DISABLE_DISCOVERABLE_PERMINENTLY: "Remove Discovery Permanently",
                 GUILD_SETTINGS_DISCOVERY_DISQUALIFIED_DESCRIPTION: "This server has failed to meet the requirements below and has been automatically removed from Discovery. Don't worry, you can rejoin once the server passes all requirements again.\n\nActivity requirements are recalculated weekly.",
                 GUILD_SETTINGS_DISCOVERY_ADMIN_ONLY: "Only server administrators can enable and disable Discovery.",
                 GUILD_SETTINGS_DISCOVERY_LOCALE_HELP: "Discord will prioritize this server in search to users who speak the selected language.",
@@ -88473,8 +88474,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296218", "296218"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296218")), t = 0), t
+                let t = parseInt((e = "296233", "296233"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296233")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116429,8 +116430,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296218",
-                    versionHash: "21b730d3d45a02781d7afcbf7efc425c40382363"
+                    buildNumber: "296233",
+                    versionHash: "ad4c39796e7303b9ce52bec49e0dad88edcff6a9"
                 }
             }
             n.r(t), n.d(t, {
@@ -173874,8 +173875,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716574370141",
-                                    build_number: "296218"
+                                    built_at: "1716575628892",
+                                    build_number: "296233"
                                 }
                             },
                             retries: 1
@@ -251236,7 +251237,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "21b730d3d45a02781d7afcbf7efc425c40382363"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ad4c39796e7303b9ce52bec49e0dad88edcff6a9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280348,7 +280349,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296218"
+                                build_number: "296233"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287712,7 +287713,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296218", "296218"), 10);
+                let s = parseInt((n = "296233", "296233"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -300577,6 +300578,9 @@
                 DESKTOP_BITRATE_ENHANCED: function() {
                     return ee
                 },
+                DESKTOP_LOW_QUALITY_STREAM_MAX_BITRATE: function() {
+                    return et
+                },
                 DISABLED_DEVICE_ID: function() {
                     return Y
                 },
@@ -300596,7 +300600,7 @@
                     return p
                 },
                 MEDIA_SINK_WANTS_PROPERTIES: function() {
-                    return et
+                    return en
                 },
                 MediaEngineContextTypes: function() {
                     return m
@@ -300635,7 +300639,7 @@
                     return X
                 },
                 VIEWERSIDE_CLIP_KFI_MS: function() {
-                    return ei
+                    return er
                 },
                 VideoQualityMode: function() {
                     return G
@@ -300644,7 +300648,7 @@
                     return R
                 },
                 defaultVideoQualityOptions: function() {
-                    return en
+                    return ei
                 }
             });
             var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, C, R, g, L, v, D, M, y, P, U, b, G, w, k = n("268146");
@@ -300666,8 +300670,9 @@
                 J = 12,
                 $ = 4e6,
                 ee = 8e6,
-                et = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
-                en = {
+                et = 5e5,
+                en = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
+                ei = {
                     videoBudget: {
                         width: 1280,
                         height: 720,
@@ -300689,7 +300694,7 @@
                     },
                     videoBitrateFloor: 15e4
                 },
-                ei = 6e4;
+                er = 6e4;
             (u = g || (g = {})).AUTO_ENABLE = "AUTO_ENABLE", u.ATTENUATION = "ATTENUATION", u.AUDIO_INPUT_DEVICE = "AUDIO_INPUT_DEVICE", u.AUDIO_OUTPUT_DEVICE = "AUDIO_OUTPUT_DEVICE", u.VOICE_PROCESSING = "VOICE_PROCESSING", u.QOS = "QOS", u.NATIVE_PING = "NATIVE_PING", u.LEGACY_AUDIO_SUBSYSTEM = "LEGACY_AUDIO_SUBSYSTEM", u.EXPERIMENTAL_AUDIO_SUBSYSTEM = "EXPERIMENTAL_AUDIO_SUBSYSTEM", u.DEBUG_LOGGING = "DEBUG_LOGGING", u.AUTOMATIC_VAD = "AUTOMATIC_VAD", u.VOICE_PANNING = "VOICE_PANNING", u.DIAGNOSTICS = "DIAGNOSTICS", u.VIDEO = "VIDEO", u.DESKTOP_CAPTURE = "DESKTOP_CAPTURE", u.DESKTOP_CAPTURE_FORMAT = "DESKTOP_CAPTURE_FORMAT", u.DESKTOP_CAPTURE_APPLICATIONS = "DESKTOP_CAPTURE_APPLICATIONS", u.SOUNDSHARE = "SOUNDSHARE", u.LOOPBACK = "LOOPBACK", u.VIDEO_HOOK = "VIDEO_HOOK", u.EXPERIMENTAL_SOUNDSHARE = "EXPERIMENTAL_SOUNDSHARE", u.WUMPUS_VIDEO = "WUMPUS_VIDEO", u.ELEVATED_HOOK = "ELEVATED_HOOK", u.HYBRID_VIDEO = "HYBRID_VIDEO", u.OPEN_H264 = "OPEN_H264", u.EXPERIMENTAL_ENCODERS = "EXPERIMENTAL_ENCODERS", u.REMOTE_LOCUS_NETWORK_CONTROL = "REMOTE_LOCUS_NETWORK_CONTROL", u.SCREEN_PREVIEWS = "SCREEN_PREVIEWS", u.WINDOW_PREVIEWS = "WINDOW_PREVIEWS", u.AUDIO_DEBUG_STATE = "AUDIO_DEBUG_STATE", u.AEC_DUMP = "AEC_DUMP", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.CONNECTION_REPLAY = "CONNECTION_REPLAY", u.SIMULCAST = "SIMULCAST", u.RTC_REGION_RANKING = "RTC_REGION_RANKING", u.DIRECT_VIDEO = "DIRECT_VIDEO", u.ELECTRON_VIDEO = "ELECTRON_VIDEO", u.MEDIAPIPE = "MEDIAPIPE", u.FIXED_KEYFRAME_INTERVAL = "FIXED_KEYFRAME_INTERVAL", u.SAMPLE_PLAYBACK = "SAMPLE_PLAYBACK", u.FIRST_FRAME_CALLBACK = "FIRST_FRAME_CALLBACK", u.REMOTE_USER_MULTI_STREAM = "REMOTE_USER_MULTI_STREAM", u.NOISE_SUPPRESSION = "NOISE_SUPPRESSION", u.NOISE_CANCELLATION = "NOISE_CANCELLATION", u.AUTOMATIC_GAIN_CONTROL = "AUTOMATIC_GAIN_CONTROL", u.CLIPS = "CLIPS", u.SPEED_TEST = "SPEED_TEST", u.IMAGE_QUALITY_MEASUREMENT = "IMAGE_QUALITY_MEASUREMENT", u.AMD_EXPERIMENTAL_RATE_CONTROL = "AMD_EXPERIMENTAL_RATE_CONTROL", u.GO_LIVE_HARDWARE = "GO_LIVE_HARDWARE", u.SCREEN_CAPTURE_KIT = "SCREEN_CAPTURE_KIT", u.CAPTURE_TIMEOUT_EXPERIMENTS = "CAPTURE_TIMEOUT_EXPERIMENTS", u.SCREEN_SOUNDSHARE = "SCREEN_SOUNDSHARE", (d = L || (L = {})).NATIVE = "NATIVE", d.WEBRTC = "WEBRTC", d.DUMMY = "DUMMY", (_ = v || (v = {})).LEGACY = "legacy", _.STANDARD = "standard", _.EXPERIMENTAL = "experimental", (c = D || (D = {})).OPUS = "opus", c.VP8 = "VP8", c.VP9 = "VP9", c.H264 = "H264", c.RTX = "rtx", c.TEST = "TEST", (E = M || (M = {}))[E.NONE = 0] = "NONE", E[E.VOICE = 1] = "VOICE", E[E.SOUNDSHARE = 2] = "SOUNDSHARE", E[E.PRIORITY = 4] = "PRIORITY", (I = y || (y = {})).AUDIO = "audio", I.VIDEO = "video", I.SCREEN = "screen", I.TEST = "test", (T = P || (P = {})).PLAYING = "playing", T.PAUSED = "paused", (f = U || (U = {})).FIXED = "fixed", f.SOURCE = "source", (S = b || (b = {})).VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", S.SIGNAL_H265_SUPPORT = "signal_h265_support", S.SIGNAL_H265_DECODE_SUPPORT = "signal_h265_decode_support", S.SIGNAL_AV1_SUPPORT = "signal_av1_support", S.SIGNAL_AV1_HARDWARE_DECODE = "signal_av1_hardware_decode", S.STREAMER_CLIP = "streamer_clip", S.VIEWER_CLIP = "viewer_clip", S.MUTE_BEFORE_PROCESSING = "mute_before_processing", S.PTT_BEFORE_PROCESSING = "ptt_before_processing", S.SKIP_ENCODE = "skip_encode", S.RESET_DECODER_ON_ERRORS = "reset_decoder_on_errors", S.SOFTWARE_FALLBACK_ON_ERRORS = "software_fallback_on_errors", S.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS = "software_fallback_on_consecutive_errors", S.GOLIVE_SIMULCAST = "golive_simulcast", (h = G || (G = {}))[h.AUTO = 1] = "AUTO", h[h.FULL = 2] = "FULL", (A = w || (w = {}))[A.CPU_OVERUSE = 1] = "CPU_OVERUSE", A[A.FAILED = 2] = "FAILED", A[A.VAD_CPU_OVERUSE = 3] = "VAD_CPU_OVERUSE", A[A.INITIALIZED = 4] = "INITIALIZED"
         },
         135670: function(e, t, n) {
@@ -301037,19 +301042,20 @@
             }
             class u {
                 getQuality(e) {
-                    let t = this.isStreamContext ? this.getGoliveQuality(e) : this.getVideoQuality(this.connection.getLocalWant(e));
+                    let t = this.connection.getLocalWant(e),
+                        n = this.isStreamContext ? this.getGoliveQuality(t) : this.getVideoQuality(t);
                     if (null != this.qualityOverwrite) {
-                        var n, i, r;
+                        var i, r, s;
                         return new o({
-                            encode: l.extend(t.encode, this.qualityOverwrite.encode),
-                            capture: l.extend(t.capture, this.qualityOverwrite.capture),
-                            bitrateMin: null !== (n = this.qualityOverwrite.bitrateMin) && void 0 !== n ? n : t.bitrateMin,
-                            bitrateMax: null !== (i = this.qualityOverwrite.bitrateMax) && void 0 !== i ? i : t.bitrateMax,
-                            bitrateTarget: null !== (r = this.qualityOverwrite.bitrateTarget) && void 0 !== r ? r : t.bitrateTarget,
-                            localWant: t.localWant
+                            encode: l.extend(n.encode, this.qualityOverwrite.encode),
+                            capture: l.extend(n.capture, this.qualityOverwrite.capture),
+                            bitrateMin: null !== (i = this.qualityOverwrite.bitrateMin) && void 0 !== i ? i : n.bitrateMin,
+                            bitrateMax: null !== (r = this.qualityOverwrite.bitrateMax) && void 0 !== r ? r : n.bitrateMax,
+                            bitrateTarget: null !== (s = this.qualityOverwrite.bitrateTarget) && void 0 !== s ? s : n.bitrateTarget,
+                            localWant: n.localWant
                         })
                     }
-                    return t
+                    return n
                 }
                 applyQualityConstraints(e, t) {
                     let n = this.getQuality(t);
@@ -301096,8 +301102,17 @@
                     })
                 }
                 getGoliveQuality(e) {
-                    let t = this.connection.getLocalWant(e);
-                    return this.goliveSimulcastEnabled ? this.getVideoQuality(t) : this.goliveMaxQuality
+                    if (this.goliveSimulcastEnabled && e < 100) {
+                        let e = this.getDefaultGoliveQuality();
+                        return new o({
+                            capture: e.capture,
+                            encode: e.encode,
+                            bitrateMin: 15e4,
+                            bitrateMax: r.DESKTOP_LOW_QUALITY_STREAM_MAX_BITRATE,
+                            bitrateTarget: r.DESKTOP_LOW_QUALITY_STREAM_MAX_BITRATE
+                        })
+                    }
+                    return this.goliveMaxQuality
                 }
                 getDefaultGoliveQuality() {
                     return new o({
@@ -315453,4 +315468,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.c34dda72150486a360be.js.map
+//# sourceMappingURL=71586.a92c5d216f78fdac9ac7.js.map
