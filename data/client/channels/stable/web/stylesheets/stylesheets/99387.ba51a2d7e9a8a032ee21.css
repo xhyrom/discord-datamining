@@ -53917,6 +53917,10 @@ div:has(>div>.modal__06f49) {
     max-height: calc(100vh - 124px)
 }
 
+.username_f83278 {
+    margin-bottom: -4px
+}
+
 .focusModeItem__5fea8 {
     padding-left: 2px
 }
@@ -142461,4 +142465,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.30fc4eb0958db44b5c75.css.map*/
+/*# sourceMappingURL=99387.ba51a2d7e9a8a032ee21.css.map*/
