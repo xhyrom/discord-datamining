@@ -36997,7 +36997,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296204", ", Version Hash: ").concat("8541b2526924387ffd2f3adef0ba7add9baef2fe")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296220", ", Version Hash: ").concat("f39ed5015a473575af97b09706d7b0653a0cfeba")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -40139,6 +40139,7 @@
                 FORM_HELP_DISCOVERY_COVER_IMAGE: "This image will be displayed on your Discovery Listing. The recommended minimum size is 1920x1080 and recommended aspect ratio is 16:9.",
                 FORM_LABEL_DISCOVERY_RULES_CHANNEL: "Rules or guidelines channel",
                 GUILD_SETTINGS_DISCOVERY_DISQUALIFIED: "This server has been removed from Discovery.",
+                GUILD_SETTINGS_DISABLE_DISCOVERABLE_PERMINENTLY: "Remove Discovery Permanently",
                 GUILD_SETTINGS_DISCOVERY_DISQUALIFIED_DESCRIPTION: "This server has failed to meet the requirements below and has been automatically removed from Discovery. Don't worry, you can rejoin once the server passes all requirements again.\n\nActivity requirements are recalculated weekly.",
                 GUILD_SETTINGS_DISCOVERY_ADMIN_ONLY: "Only server administrators can enable and disable Discovery.",
                 GUILD_SETTINGS_DISCOVERY_LOCALE_HELP: "Discord will prioritize this server in search to users who speak the selected language.",
@@ -88473,8 +88474,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296204", "296204"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296204")), t = 0), t
+                let t = parseInt((e = "296220", "296220"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296220")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116429,8 +116430,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296204",
-                    versionHash: "8541b2526924387ffd2f3adef0ba7add9baef2fe"
+                    buildNumber: "296220",
+                    versionHash: "f39ed5015a473575af97b09706d7b0653a0cfeba"
                 }
             }
             n.r(t), n.d(t, {
@@ -173874,8 +173875,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716573546373",
-                                    build_number: "296204"
+                                    built_at: "1716574496680",
+                                    build_number: "296220"
                                 }
                             },
                             retries: 1
@@ -251236,7 +251237,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8541b2526924387ffd2f3adef0ba7add9baef2fe"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f39ed5015a473575af97b09706d7b0653a0cfeba"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280348,7 +280349,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296204"
+                                build_number: "296220"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287712,7 +287713,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296204", "296204"), 10);
+                let s = parseInt((n = "296220", "296220"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315453,4 +315454,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.2f2ff233d20d5498bc83.js.map
+//# sourceMappingURL=71586.30fa6667ee72348fea93.js.map
