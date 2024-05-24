@@ -36997,7 +36997,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296196", ", Version Hash: ").concat("fd557e8c3c318e0dcc484f134c46927ca280b25f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296204", ", Version Hash: ").concat("8541b2526924387ffd2f3adef0ba7add9baef2fe")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -66794,7 +66794,7 @@
                     _ = S.default.getChannel(e);
                 if (s && null !== (l = null == _ ? void 0 : _.isPrivate()) && void 0 !== l && l && d.length <= 1 && null == r && u.default.selectParticipant(e, null), null == r) return;
                 let c = h.default.getMediaSessionId(),
-                    E = (0, M.default)(t),
+                    E = "activity_id" in t ? (0, M.getActivitySessionIdFromServerData)(t) : (0, M.default)(t),
                     I = null == c && (null == _ ? void 0 : _.isVocal()) === !0 && (null == _ ? void 0 : _.isPrivate()) === !1;
                 null != E && !I && (null === (o = V[n]) || void 0 === o || o.call(V, {
                     activitySessionId: E,
@@ -67069,10 +67069,10 @@
                     N = h.some(e => e === A),
                     p = null === (t = _.find(e => e.userId === A)) || void 0 === t ? void 0 : t.sessionId,
                     O = _.some(e => (0, f.isActivityParticipantCurrentUserCurrentSession)(e)),
-                    v = null == p,
+                    v = null == d,
                     D = C.get(o),
                     M = {
-                        analyticsActivitySessionId: null != E ? E : "",
+                        analyticsActivitySessionId: null != E ? E : void 0,
                         applicationId: o,
                         channelId: s,
                         guildId: r,
@@ -68382,15 +68382,19 @@
             "use strict";
 
             function i(e) {
-                if (null != e) {
-                    if ("analyticsActivitySessionId" in e && null != e.analyticsActivitySessionId && "" !== e.analyticsActivitySessionId) return e.analyticsActivitySessionId;
-                    if ("launchId" in e && null != e.launchId) return e.launchId;
-                    if ("activity_id" in e) return e.activity_id
-                }
+                var t;
+                return null !== (t = null == e ? void 0 : e.compositeInstanceId) && void 0 !== t ? t : null == e ? void 0 : e.analyticsActivitySessionId
+            }
+
+            function r(e) {
+                return null == e ? void 0 : e.activity_id
             }
             n.r(t), n.d(t, {
                 default: function() {
                     return i
+                },
+                getActivitySessionIdFromServerData: function() {
+                    return r
                 }
             })
         },
@@ -88469,8 +88473,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296196", "296196"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296196")), t = 0), t
+                let t = parseInt((e = "296204", "296204"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296204")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116425,8 +116429,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296196",
-                    versionHash: "fd557e8c3c318e0dcc484f134c46927ca280b25f"
+                    buildNumber: "296204",
+                    versionHash: "8541b2526924387ffd2f3adef0ba7add9baef2fe"
                 }
             }
             n.r(t), n.d(t, {
@@ -173870,8 +173874,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716572565652",
-                                    build_number: "296196"
+                                    built_at: "1716573546373",
+                                    build_number: "296204"
                                 }
                             },
                             retries: 1
@@ -191624,22 +191628,24 @@
                             runningGames: n,
                             removedGames: t
                         }), n.forEach(e => {
+                            var t;
                             if (null == e.id) return;
-                            let t = (0, I.getPlaytimeQuestByApplicationId)(E.default.quests, e.id);
-                            if (null == t) return;
-                            let n = P(t.id);
-                            G(t) && !this.streamKeyToHeartbeatState.has(n) && this.initiateHeartbeat({
-                                streamKey: n,
-                                applicationId: A.SharedQuestFields.build(t.config).application.id,
-                                questId: t.id
+                            let n = (0, I.getPlaytimeQuestByApplicationId)(E.default.quests, e.id);
+                            if (null == n || (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return;
+                            let i = P(n.id);
+                            G(n) && !this.streamKeyToHeartbeatState.has(i) && this.initiateHeartbeat({
+                                streamKey: i,
+                                applicationId: A.SharedQuestFields.build(n.config).application.id,
+                                questId: n.id
                             })
                         }), t.forEach(e => {
+                            var t;
                             if (null == e.id) return;
-                            let t = (0, I.getPlaytimeQuestByApplicationId)(E.default.quests, e.id);
-                            if (null == t) return;
-                            let n = P(t.id);
-                            G(t) && this.streamKeyToHeartbeatState.has(n) && this.terminateHeartbeat({
-                                streamKey: n,
+                            let n = (0, I.getPlaytimeQuestByApplicationId)(E.default.quests, e.id);
+                            if (null == n || (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return;
+                            let i = P(n.id);
+                            G(n) && this.streamKeyToHeartbeatState.has(i) && this.terminateHeartbeat({
+                                streamKey: i,
                                 sendTerminalHeartbeat: !0
                             })
                         })
@@ -251230,7 +251236,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fd557e8c3c318e0dcc484f134c46927ca280b25f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8541b2526924387ffd2f3adef0ba7add9baef2fe"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280342,7 +280348,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296196"
+                                build_number: "296204"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287706,7 +287712,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296196", "296196"), 10);
+                let s = parseInt((n = "296204", "296204"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315447,4 +315453,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.c8da07e68204fce20dd2.js.map
+//# sourceMappingURL=71586.2f2ff233d20d5498bc83.js.map
