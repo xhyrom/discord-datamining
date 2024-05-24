@@ -8,8 +8,7 @@
       "Control Bucket",
       "Treatment 1: Friends/DMs Only",
       "Treatment 2: Guild Member List Only",
-      "Treatment 3: Friends/DMs and Guild Member List",
-      "Treatment 4: Friends/DMs and Guild Member List -- Ignore Sort Priority"
+      "Treatment 3: Friends/DMs and Guild Member List"
     ],
     "hash": 4231847915,
     "buckets": [
@@ -17,15 +16,13 @@
       0,
       1,
       2,
-      3,
-      4
+      3
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
       "isFriendsAndDMsEnabled",
-      "isGuildMemberListEnabled",
-      "ignoreGuildPriority"
+      "isGuildMemberListEnabled"
     ]
   }
 }
