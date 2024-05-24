@@ -37021,7 +37021,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296388", ", Version Hash: ").concat("e4776412b2c482e3ac26594f9a2d59c939bdc083")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296392", ", Version Hash: ").concat("629bfd4d3aee2213c9721ae7ed0b20030e25dfb1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56154,8 +56154,7 @@
                 CLAN_SETTINGS_DISABLE_CONFIRM_BODY: "All open applications to your Guild will be rejected. Members will lose their Guild tags.",
                 CLAN_SETTINGS_APPLICATION_TITLE: "Edit questions for prospective members to answer.",
                 CLAN_SETTINGS_APPLICATION_SUBTITLE: "",
-                CLAN_START_INTERVIEW: "Start Interview",
-                CLAN_JOIN_INTERVIEW: "Join Interview",
+                CLAN_DM_APPLICANT: "DM Applicant",
                 CLAN_APPLICATION_SETUP_HEADER: "Set up the member screening application for **!!{guildName}!!** here. The application must have at least one Short Answer, Paragraph, or Multiple Choice section.",
                 CLAN_APPLICATION_CANT_REMOVE_FIELD: "Applications must have at least one question.",
                 MEMBER_VERIFICATION_ANSWER_PLACEHOLDER: "Enter your answer",
@@ -56231,7 +56230,7 @@
                 CLAN_DISCOVERY_PREFERENCES_FILTER: "Preferences",
                 CLAN_DISCOVERY_PRIMETIME_FILTER: "Prime Time",
                 CLAN_DISCOVERY_MEMBER_COUNT: "{count, plural, =1 {1 Member} other {{count} Members}}",
-                CLAN_DISCOVERY_PROFILE_TITLE: "Answer a few questions to join.",
+                CLAN_DISCOVERY_PROFILE_TITLE: "Fill out the application to join.",
                 CLAN_DISCOVERY_PROFILE_SUBTITLE: "You'll get notified when there's an update.",
                 CLAN_DISCOVERY_PLAYSTYLE_TITLE: "What's your playstyle?",
                 CLAN_DISCOVERY_PLAYSTYLE_SUBTITLE: "How serious or casual do you want your friends to be? Your selections will sort the Guilds you see. You can always change this later.",
@@ -88524,8 +88523,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296388", "296388"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296388")), t = 0), t
+                let t = parseInt((e = "296392", "296392"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296392")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116480,8 +116479,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296388",
-                    versionHash: "e4776412b2c482e3ac26594f9a2d59c939bdc083"
+                    buildNumber: "296392",
+                    versionHash: "629bfd4d3aee2213c9721ae7ed0b20030e25dfb1"
                 }
             }
             n.r(t), n.d(t, {
@@ -174046,8 +174045,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716589996207",
-                                    build_number: "296388"
+                                    built_at: "1716590259829",
+                                    build_number: "296392"
                                 }
                             },
                             retries: 1
@@ -251417,7 +251416,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e4776412b2c482e3ac26594f9a2d59c939bdc083"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "629bfd4d3aee2213c9721ae7ed0b20030e25dfb1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280551,7 +280550,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296388"
+                                build_number: "296392"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287915,7 +287914,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296388", "296388"), 10);
+                let s = parseInt((n = "296392", "296392"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315670,4 +315669,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.8ee7e345af2f5a234cc6.js.map
+//# sourceMappingURL=71586.af8e4f3a2c0a705e7dca.js.map
