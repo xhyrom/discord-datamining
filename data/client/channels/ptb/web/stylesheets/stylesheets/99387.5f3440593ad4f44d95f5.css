@@ -43868,7 +43868,7 @@ img.thumbnail__18ece {
     border-radius: 8px
 }
 
-.voicePopoutDivider_a3a4c4 {
+.primaryActionPopoutDivider_d4d6bc {
     width: 100%;
     border-bottom: 1px solid var(--border-subtle);
     margin: 16px 0
@@ -43881,7 +43881,7 @@ img.thumbnail__18ece {
     gap: 4px
 }
 
-.voicePopoutActionButtons_dc92e3 {
+.primaryActionPopoutActionButtons_c2b2b2 {
     display: flex;
     gap: 8px
 }
@@ -43909,7 +43909,7 @@ img.thumbnail__18ece {
     fill: var(--white)
 }
 
-.voicePopoutMessageCloseIcon__9e357 {
+.primaryActionPopoutMessageCloseIcon__4400d {
     display: flex;
     align-items: center;
     margin: 0 -4px;
@@ -142487,4 +142487,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.08a75c823c4c92a2c8a7.css.map*/
+/*# sourceMappingURL=99387.5f3440593ad4f44d95f5.css.map*/

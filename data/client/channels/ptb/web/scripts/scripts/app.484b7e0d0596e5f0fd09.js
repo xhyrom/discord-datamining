@@ -6446,6 +6446,9 @@
                 popoutThumbnailContainer: "popoutThumbnailContainer_b66fac",
                 popoutUserContainer: "popoutUserContainer__5ed24",
                 popoutUsername: "popoutUsername__8e4a7",
+                primaryActionPopoutActionButtons: "primaryActionPopoutActionButtons_c2b2b2",
+                primaryActionPopoutDivider: "primaryActionPopoutDivider_d4d6bc",
+                primaryActionPopoutMessageCloseIcon: "primaryActionPopoutMessageCloseIcon__4400d",
                 secondaryButton: "secondaryButton_fc9605",
                 secondaryText: "secondaryText__7a32f",
                 shareToChannelButton: "shareToChannelButton_ee0e50",
@@ -6457,10 +6460,7 @@
                 voiceChannelAdditionalParticipants: "voiceChannelAdditionalParticipants__03b6f",
                 voiceChannelGuildIcon: "voiceChannelGuildIcon__1cbcc",
                 voiceChannelPopoutReactorChannel: "voiceChannelPopoutReactorChannel__15248",
-                voiceChannelPopoutReactorHeader: "voiceChannelPopoutReactorHeader_f7332b",
-                voicePopoutActionButtons: "voicePopoutActionButtons_dc92e3",
-                voicePopoutDivider: "voicePopoutDivider_a3a4c4",
-                voicePopoutMessageCloseIcon: "voicePopoutMessageCloseIcon__9e357"
+                voiceChannelPopoutReactorHeader: "voiceChannelPopoutReactorHeader_f7332b"
             }
         },
         613038: function(e) {
