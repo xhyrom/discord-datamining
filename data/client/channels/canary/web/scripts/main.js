@@ -36997,7 +36997,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296291", ", Version Hash: ").concat("c8dedfa16d701af86cf52dd35c07e19214503f99")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296306", ", Version Hash: ").concat("1cbe4b6dc6426e3f4981f077e9c62aba8cc83f0a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88482,8 +88482,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296291", "296291"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296291")), t = 0), t
+                let t = parseInt((e = "296306", "296306"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296306")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116438,8 +116438,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296291",
-                    versionHash: "c8dedfa16d701af86cf52dd35c07e19214503f99"
+                    buildNumber: "296306",
+                    versionHash: "1cbe4b6dc6426e3f4981f077e9c62aba8cc83f0a"
                 }
             }
             n.r(t), n.d(t, {
@@ -156587,14 +156587,14 @@
                     }
                 }), L = () => {
                     O.default.isFullServerPreview(n.id) && (0, R.transitionTo)(j.Routes.CHANNEL(n.id)), T.default.shouldShowOnboarding(n.id) && (I.default.finishOnboarding(n.id), (0, f.discardOnboardingPromise)(n.id)), (0, p.stopImpersonating)(n.id), N.default.open(n.id, h), h === j.GuildSettingsSections.ROLE_SUBSCRIPTIONS && (0, S.announceDeleteTemplateChannels)(n.id)
-                }, D = null === (t = u.current) || void 0 === t ? void 0 : t.clientHeight, M = a + 10;
+                }, D = null === (t = u.current) || void 0 === t ? void 0 : t.clientHeight, M = a + 14;
                 return (0, i.jsxs)("div", {
                     className: z.container,
                     ref: u,
                     children: [(0, i.jsx)("div", {
                         className: z.tooltipPointer,
                         style: {
-                            top: Math.min(M, null != D ? D - 18 : M)
+                            top: Math.min(M, null != D ? D - 22 : M)
                         }
                     }), (0, i.jsxs)("div", {
                         className: z.header,
@@ -157038,10 +157038,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 GuildTooltipText: function() {
-                    return $
+                    return ei
                 },
                 default: function() {
-                    return ee
+                    return er
                 }
             }), n("390547"), n("47120");
             var i = n("735250"),
@@ -157059,44 +157059,48 @@
                 T = n("746916"),
                 f = n("965638"),
                 S = n("160404"),
-                h = n("777861"),
-                A = n("565799"),
-                m = n("501655"),
-                N = n("517334"),
-                p = n("344185"),
-                O = n("199902"),
-                C = n("77498"),
-                R = n("984933"),
-                g = n("158776"),
-                L = n("9156"),
-                v = n("594174"),
-                D = n("938475"),
-                M = n("940627"),
-                y = n("705600"),
-                P = n("737688"),
-                U = n("242315"),
-                b = n("944581"),
-                G = n("632184"),
-                w = n("170039"),
-                k = n("761374"),
-                B = n("602623"),
-                V = n("624138"),
-                x = n("510601"),
-                F = n("59688"),
-                H = n("456774"),
-                Y = n("981631"),
-                j = n("689938"),
-                W = n("952972"),
-                K = n("81311");
-            let z = (0, V.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE),
-                Z = (0, V.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE_V_2);
+                h = n("41776"),
+                A = n("777861"),
+                m = n("565799"),
+                N = n("501655"),
+                p = n("517334"),
+                O = n("344185"),
+                C = n("199902"),
+                R = n("77498"),
+                g = n("984933"),
+                L = n("607744"),
+                v = n("158776"),
+                D = n("9156"),
+                M = n("594174"),
+                y = n("938475"),
+                P = n("940627"),
+                U = n("705600"),
+                b = n("737688"),
+                G = n("242315"),
+                w = n("944581"),
+                k = n("632184"),
+                B = n("170039"),
+                V = n("761374"),
+                x = n("602623"),
+                F = n("624138"),
+                H = n("510601"),
+                Y = n("59688"),
+                j = n("456774"),
+                W = n("718582"),
+                K = n("126134"),
+                z = n("981631"),
+                Z = n("689938"),
+                X = n("952972"),
+                Q = n("81311");
+            let q = (0, F.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE),
+                J = (0, F.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE_V_2);
 
-            function X(e, t, n) {
+            function $(e, t, n) {
                 return 0 === t.length ? null : (0, i.jsxs)("div", {
-                    className: W.row,
+                    className: X.row,
                     children: [(0, i.jsx)(e, {
-                        className: W.activityIcon
-                    }), (0, i.jsx)(B.default, {
+                        className: X.activityIcon
+                    }), (0, i.jsx)(x.default, {
                         guildId: n,
                         users: t,
                         max: 6
@@ -157104,7 +157108,7 @@
                 })
             }
 
-            function Q(e) {
+            function ee(e) {
                 let {
                     muteConfig: t,
                     className: n
@@ -157113,31 +157117,31 @@
                     variant: "text-xs/normal",
                     color: "text-muted",
                     className: n,
-                    children: j.default.Messages.FORM_LABEL_MUTED
-                }) : (0, i.jsx)(h.default, {
+                    children: Z.default.Messages.FORM_LABEL_MUTED
+                }) : (0, i.jsx)(A.default, {
                     muteConfig: t,
                     className: n
                 })
             }
 
-            function q(e) {
+            function et(e) {
                 var t, n, s;
                 let {
                     guild: o
-                } = e, d = o.id, E = (0, u.useStateFromStoresArray)([R.default, p.default], () => {
-                    let e = R.default.getChannels(d)[R.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
+                } = e, d = o.id, E = (0, u.useStateFromStoresArray)([g.default, O.default], () => {
+                    let e = g.default.getChannels(d)[g.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
                         let {
                             channel: t
                         } = e;
-                        return t.type === Y.ChannelTypes.GUILD_VOICE
+                        return t.type === z.ChannelTypes.GUILD_VOICE
                     }).map(e => {
                         let {
                             channel: t
                         } = e;
                         return t.id
                     });
-                    return [...e, ...Object.values(p.default.getThreadsForGuild(d)).flatMap(e => Object.keys(e))]
-                }, [d]), I = (0, N.default)(d), T = r.useMemo(() => I.map(e => e.id), [I]), f = (0, u.useStateFromStores)([D.default], () => D.default.getVoiceStates(d), [d]), S = l().flatMap(E, e => {
+                    return [...e, ...Object.values(O.default.getThreadsForGuild(d)).flatMap(e => Object.keys(e))]
+                }, [d]), I = (0, p.default)(d), T = r.useMemo(() => I.map(e => e.id), [I]), f = (0, u.useStateFromStores)([y.default], () => y.default.getVoiceStates(d), [d]), S = l().flatMap(E, e => {
                     var t;
                     return e === o.afkChannelId ? [] : (null !== (t = f[e]) && void 0 !== t ? t : []).map(e => {
                         let {
@@ -157145,122 +157149,122 @@
                         } = e;
                         return t
                     })
-                }), h = (0, u.useStateFromStoresArray)([A.default], () => l().flatMap(T, e => e === o.afkChannelId ? [] : A.default.getMutableParticipants(e, m.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === m.StageChannelParticipantTypes.VOICE).map(e => {
+                }), h = (0, u.useStateFromStoresArray)([m.default], () => l().flatMap(T, e => e === o.afkChannelId ? [] : m.default.getMutableParticipants(e, N.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === N.StageChannelParticipantTypes.VOICE).map(e => {
                     let {
                         user: t
                     } = e;
                     return t
-                }))), M = (0, u.useStateFromStores)([A.default], () => {
+                }))), A = (0, u.useStateFromStores)([m.default], () => {
                     let e = 0;
-                    for (let t of T) e += A.default.getParticipantCount(t, m.StageChannelParticipantNamedIndex.AUDIENCE);
+                    for (let t of T) e += m.default.getParticipantCount(t, N.StageChannelParticipantNamedIndex.AUDIENCE);
                     return e
-                }), y = (0, u.useStateFromStoresArray)([O.default], () => O.default.getAllApplicationStreams().filter(e => e.guildId === d).map(e => e.ownerId), [d]), V = (0, x.useIsGamingVoiceActivityEnabled)("Guild Tooltip", !1), F = (0, u.useStateFromStoresArray)([g.default, C.default], () => S.filter(e => g.default.getActivities(e.id, d).some(e => (null == e ? void 0 : e.application_id) != null && null != C.default.getDetectableGame(null == e ? void 0 : e.application_id)))), H = X(P.default, F, d), j = V ? F.map(e => e.id) : [], K = (0, u.useStateFromStoresArray)([c.default], () => c.default.getEmbeddedActivitiesForGuild(d).flatMap(e => Array.from(e.userIds)), [d]), z = (0, u.useStateFromStoresArray)([v.default], () => K.map(e => v.default.getUser(e)), [K]), Z = (0, u.useStateFromStoresArray)([v.default], () => y.map(e => v.default.getUser(e)), [y]), q = X(G.default, S.filter(e => !y.includes(e.id) && !K.includes(e.id) && !j.includes(e.id)), d);
-                let J = (t = d, n = h, s = M, 0 === n.length ? null : (0, i.jsxs)("div", {
-                        className: W.row,
-                        children: [(0, i.jsx)(w.default, {
-                            className: W.activityIcon
-                        }), (0, i.jsx)(B.default, {
+                }), L = (0, u.useStateFromStoresArray)([C.default], () => C.default.getAllApplicationStreams().filter(e => e.guildId === d).map(e => e.ownerId), [d]), P = (0, H.useIsGamingVoiceActivityEnabled)("Guild Tooltip", !1), U = (0, u.useStateFromStoresArray)([v.default, R.default], () => S.filter(e => v.default.getActivities(e.id, d).some(e => (null == e ? void 0 : e.application_id) != null && null != R.default.getDetectableGame(null == e ? void 0 : e.application_id)))), F = $(b.default, U, d), Y = P ? U.map(e => e.id) : [], j = (0, u.useStateFromStoresArray)([c.default], () => c.default.getEmbeddedActivitiesForGuild(d).flatMap(e => Array.from(e.userIds)), [d]), W = (0, u.useStateFromStoresArray)([M.default], () => j.map(e => M.default.getUser(e)), [j]), K = (0, u.useStateFromStoresArray)([M.default], () => L.map(e => M.default.getUser(e)), [L]), Z = $(k.default, S.filter(e => !L.includes(e.id) && !j.includes(e.id) && !Y.includes(e.id)), d);
+                let Q = (t = d, n = h, s = A, 0 === n.length ? null : (0, i.jsxs)("div", {
+                        className: X.row,
+                        children: [(0, i.jsx)(B.default, {
+                            className: X.activityIcon
+                        }), (0, i.jsx)(x.default, {
                             guildId: t,
                             users: n,
                             max: 3
                         }), (0, i.jsxs)("div", {
-                            className: W.stageListenerPill,
-                            children: [(0, i.jsx)(U.default, {
+                            className: X.stageListenerPill,
+                            children: [(0, i.jsx)(G.default, {
                                 width: 16,
                                 height: 16
                             }), (0, i.jsx)(_.Text, {
-                                className: W.stageListenerCount,
+                                className: X.stageListenerCount,
                                 color: "text-normal",
                                 variant: "text-xs/normal",
                                 children: s
                             })]
                         })]
                     })),
-                    $ = X(k.default, Z.filter(e => null != e && !K.includes(e.id)), d),
-                    ee = X(b.default, z, d),
+                    q = $(V.default, K.filter(e => null != e && !j.includes(e.id)), d),
+                    J = $(w.default, W, d),
                     {
                         isMuted: et,
                         muteConfig: en
-                    } = (0, u.useStateFromStoresObject)([L.default], () => ({
-                        isMuted: L.default.isMuted(d),
-                        muteConfig: L.default.getMuteConfig(d)
+                    } = (0, u.useStateFromStoresObject)([D.default], () => ({
+                        isMuted: D.default.isMuted(d),
+                        muteConfig: D.default.getMuteConfig(d)
                     }), [d]);
-                return null != H && x.default.trackExposure({
+                return null != F && H.default.trackExposure({
                     location: "Guild Tooltip"
                 }), (0, i.jsxs)(i.Fragment, {
-                    children: [J, q, $, V && H, ee, et ? (0, i.jsx)(Q, {
+                    children: [Q, Z, q, P && F, J, et ? (0, i.jsx)(ee, {
                         muteConfig: en,
-                        className: a()(W.muteText, {
-                            [W.muteTextWithActivity]: null != q || null != $
+                        className: a()(X.muteText, {
+                            [X.muteTextWithActivity]: null != Z || null != q
                         })
                     }) : null]
                 })
             }
 
-            function J(e) {
+            function en(e) {
                 let {
                     guildJoinRequestStatus: t
                 } = e;
                 return (0, i.jsx)(_.Text, {
-                    className: W.viewAsRolesWarning,
+                    className: X.viewAsRolesWarning,
                     color: "text-normal",
                     variant: "text-xs/normal",
                     children: function(e) {
                         switch (e) {
                             case I.GuildJoinRequestApplicationStatuses.SUBMITTED:
-                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING;
+                                return Z.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING;
                             case I.GuildJoinRequestApplicationStatuses.REJECTED:
-                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED;
+                                return Z.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED;
                             case I.GuildJoinRequestApplicationStatuses.APPROVED:
-                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_APPROVED;
+                                return Z.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_APPROVED;
                             default:
-                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED
+                                return Z.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED
                         }
                     }(t)
                 })
             }
 
-            function $(e) {
+            function ei(e) {
                 let {
                     guild: t,
                     includeActivity: n = !0
-                } = e, r = (0, E.default)(t), s = (0, T.useCurrentUserGuildBadgeStatus)(t.id), o = null != s ? (0, i.jsx)(J, {
+                } = e, r = (0, E.default)(t), s = (0, T.useCurrentUserGuildBadgeStatus)(t.id), o = null != s ? (0, i.jsx)(en, {
                     guildJoinRequestStatus: s
-                }) : null, l = n ? (0, i.jsx)(q, {
+                }) : null, l = n ? (0, i.jsx)(et, {
                     guild: t
                 }) : null, d = (0, u.useStateFromStores)([S.default], () => S.default.isViewingRoles(t.id)), c = (0, f.useShouldShowInvitesDisabledNotif)(t);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: a()(W.row, W.rowGuildName),
-                        children: [r ? (0, i.jsx)(y.default, {
+                        className: a()(X.row, X.rowGuildName),
+                        children: [r ? (0, i.jsx)(U.default, {
                             guild: t,
-                            size: Z,
-                            className: W.rowIconV2
-                        }) : (0, i.jsx)(M.default, {
+                            size: J,
+                            className: X.rowIconV2
+                        }) : (0, i.jsx)(P.default, {
                             guild: t,
-                            size: z,
-                            className: W.rowIcon
+                            size: q,
+                            className: X.rowIcon
                         }), (0, i.jsx)("span", {
-                            className: a()(W.guildNameText, {
-                                [W.guildNameTextLimitedSize]: null != l
+                            className: a()(X.guildNameText, {
+                                [X.guildNameTextLimitedSize]: null != l
                             }),
                             children: t.toString()
                         })]
                     }), c ? (0, i.jsx)(_.Text, {
-                        className: W.invitesDisabledTooltip,
+                        className: X.invitesDisabledTooltip,
                         color: "header-secondary",
                         variant: "text-sm/medium",
-                        children: j.default.Messages.INVITES_DISABLED_TOOLTIP
+                        children: Z.default.Messages.INVITES_DISABLED_TOOLTIP
                     }) : null, d ? (0, i.jsx)(_.Text, {
-                        className: W.viewAsRolesWarning,
+                        className: X.viewAsRolesWarning,
                         color: "text-normal",
                         variant: "text-xs/normal",
-                        children: j.default.Messages.VIEW_AS_ROLES_MENTIONS_WARNING
+                        children: Z.default.Messages.VIEW_AS_ROLES_MENTIONS_WARNING
                     }) : null != o ? o : l]
                 })
             }
 
-            function ee(e) {
+            function er(e) {
                 let {
                     guild: t,
                     disabled: n = !1,
@@ -157268,23 +157272,32 @@
                     children: a,
                     includeActivity: o = !0,
                     isDragging: l
-                } = e, u = (0, F.useCanShowNewGuildTooltip)(), [d, c] = r.useState(!1);
-                return u && o ? (0, i.jsx)("div", {
-                    onMouseEnter: () => c(!0),
-                    onMouseLeave: () => c(!1),
+                } = e, d = (0, Y.useCanShowNewGuildTooltip)(), [c, E] = r.useState(!1), I = (0, W.useGuildPopoutCards)(t), {
+                    isUserLurking: T,
+                    isUnverifiedAccount: f
+                } = (0, u.useStateFromStoresObject)([h.default, L.default], () => {
+                    let e = h.default.isLurking(t.id);
+                    return {
+                        isUserLurking: e,
+                        isUnverifiedAccount: !L.default.getCheck(t.id).canChat
+                    }
+                }), S = r.useMemo(() => !T && !f && d && o && I.some(e => e.category !== K.CardCategory.EMPTY), [I, T, f, d, o]);
+                return d && o && S ? (0, i.jsx)("div", {
+                    onMouseEnter: () => E(!0),
+                    onMouseLeave: () => E(!1),
                     children: (0, i.jsx)(_.Popout, {
                         position: "right",
                         renderPopout: e => {
                             var n;
-                            return (0, i.jsx)(H.default, {
+                            return (0, i.jsx)(j.default, {
                                 guild: t,
-                                closePopout: () => c(!1),
+                                closePopout: () => E(!1),
                                 nudge: null !== (n = e.nudge) && void 0 !== n ? n : 0
                             })
                         },
                         spacing: 0,
-                        onRequestClose: () => c(!1),
-                        shouldShow: !l && d,
+                        onRequestClose: () => E(!1),
+                        shouldShow: !l && c,
                         children: e => (0, i.jsx)("div", {
                             ...e,
                             children: a
@@ -157294,12 +157307,12 @@
                     hideOnClick: !0,
                     spacing: 20,
                     position: "right",
-                    text: n ? null : (0, i.jsx)($, {
+                    text: n ? null : (0, i.jsx)(ei, {
                         guild: t,
-                        includeActivity: o
+                        includeActivity: o && !d
                     }),
                     "aria-label": s,
-                    tooltipClassName: K.listItemTooltip,
+                    tooltipClassName: Q.listItemTooltip,
                     children: e => {
                         let {
                             onFocus: t,
@@ -163386,7 +163399,7 @@
                         r = null,
                         s = {};
                     for (let u = 0; u <= e.length; u++)
-                        if (n = e.charAt(u), (t = null != (r = t.suffix[n]) ? r : this.trie).isWord) {
+                        if (n = e.charAt(u), (t = null != (r = t.suffix[n]) ? r : null != this.trie.suffix[n] ? this.trie.suffix[n] : this.trie).isWord) {
                             var a, o, l;
                             let n = t.strategy,
                                 r = u + 1 - (null !== (o = null === (a = t.value) || void 0 === a ? void 0 : a.length) && void 0 !== o ? o : 0),
@@ -173885,8 +173898,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716581417559",
-                                    build_number: "296291"
+                                    built_at: "1716582519155",
+                                    build_number: "296306"
                                 }
                             },
                             retries: 1
@@ -251249,7 +251262,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c8dedfa16d701af86cf52dd35c07e19214503f99"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1cbe4b6dc6426e3f4981f077e9c62aba8cc83f0a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280361,7 +280374,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296291"
+                                build_number: "296306"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287725,7 +287738,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296291", "296291"), 10);
+                let s = parseInt((n = "296306", "296306"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315480,4 +315493,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.4690acc17fa476cb23e6.js.map
+//# sourceMappingURL=71586.1a3ea96776b00f447245.js.map
