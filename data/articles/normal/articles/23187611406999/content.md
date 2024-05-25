@@ -36,7 +36,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536770882967"></p>
 <p>5. You can write the discovery description for your Guild. Focus on why someone should join and what your Guild offers. You can also describe your Guild in 3 words here too. Be creative!</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536770889495"></p>
-<p>6. Create a Guild tag and badge that members will wear all over Discord to rep your Guild. Once you select a badge, you can change the color to either one of the preset color schemes or use the color picker to customize. </p>
+<p>6. Create a Guild tag and badge that members will wear all over Discord to rep your Guild. Your Guild tag can be a max of 4 characters. However it is not unique and multiple Guilds can have the same tag. Once you select a badge, you can change the color to either one of the preset color schemes or use the color picker to customize. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536770898071"></p>
 <p>7. Customize your Guild brand even further by selecting a banner color scheme or using the eyedropper tool to pick 2 colors. You can also select the banner style and pick between the following:</p>
 <ul>
@@ -93,4 +93,6 @@
 <p><strong>Q: Can I have guests join my Guild to play games, without needing to join or apply?</strong></p>
 <p>A: Yes, you can send a Guest Voice Channel invite, and another person can use it to join your voice channel, without having to apply or become a member of the server. They will not be able to see any other channels in the Guild and will not be able to return to the server after disconnecting from the voice channel.</p>
 <p><strong>Q: Are tags limited to 4 characters? Are these characters restricted to being alphanumeric? </strong></p>
-<p>A: It is not alphanumeric, numbers and special characters are allowed. No emojis can be used.</p>
+<p>A: Yes, tags are limited to 4 characters. It is not alphanumeric, numbers and special characters are allowed. No emojis can be used.</p>
+<p><strong>Q: Are tags unique?</strong></p>
+<p>A: No, Guild tags are not locked to a specific Guild and anyone can use a tag as long as it fits within the requirements.</p>
