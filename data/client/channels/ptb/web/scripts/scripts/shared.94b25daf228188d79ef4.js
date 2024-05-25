@@ -3480,6 +3480,7 @@
                 itemContentContainer: "itemContentContainer__77d7f",
                 lazyImg: "lazyImg_b510a9",
                 lazyImgContainer: "lazyImgContainer_b0a5df",
+                mosaicContainer: "mosaicContainer__204db",
                 nonVisualMediaItem: "nonVisualMediaItem__6faf4",
                 nonVisualMediaItemContainer: "nonVisualMediaItemContainer__81ce5",
                 oneByOneGrid: "oneByOneGrid__36e03",

@@ -17683,6 +17683,7 @@
                 confirmText: "confirmText_ab45a9",
                 container: "container__62863",
                 ctaButtonContainer: "ctaButtonContainer__70c4d",
+                embedContainer: "embedContainer__5278d",
                 embedWrapper: "embedWrapper__47b23",
                 gifFavoriteButton: "gifFavoriteButton_bca32d",
                 giftCodeContainer: "giftCodeContainer_fedf35",
