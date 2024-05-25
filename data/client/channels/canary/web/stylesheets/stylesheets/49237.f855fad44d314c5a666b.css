@@ -18848,7 +18848,10 @@ h3.improved_e02592:after {
     height: 100%;
     max-width: 550px;
     border-radius: 8px;
-    overflow: hidden
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center
 }
 
 .nonVisualMediaItemContainer__81ce5 {
@@ -18875,6 +18878,13 @@ h3.improved_e02592:after {
 
 .hasFooter_d64a32 {
     max-height: none
+}
+
+.mosaicContainer__204db {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px
 }
 
 .modalCarouselWrapper__1858d {
@@ -27437,4 +27447,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.5dfd148bbccceff76721.css.map*/
+/*# sourceMappingURL=49237.f855fad44d314c5a666b.css.map*/
