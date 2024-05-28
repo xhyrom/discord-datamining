@@ -11345,9 +11345,9 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Friends/DMs Only",
-        "Treatment 2: Guild Member List Only",
-        "Treatment 3: Friends/DMs and Guild Member List"
+        "Treatment 1: Enabled: 1h",
+        "Treatment 2: Enabled: 4h",
+        "Treatment 3: Enabled: 48h"
       ],
       "hash": 4231847915,
       "buckets": [
@@ -11360,8 +11360,8 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "isFriendsAndDMsEnabled",
-        "isGuildMemberListEnabled"
+        "isRecentlyOnlineEnabled",
+        "maxRecentMs"
       ]
     }
   },
