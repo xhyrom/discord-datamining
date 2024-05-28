@@ -4320,7 +4320,6 @@
             "use strict";
             e.exports = {
                 benefits: "benefits_eb5225",
-                closeBtn: "closeBtn__97612",
                 container: "container__37170",
                 description: "description__1ee46",
                 details: "details_bd2b5f",

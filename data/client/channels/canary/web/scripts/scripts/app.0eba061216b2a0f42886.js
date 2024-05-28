@@ -3662,12 +3662,9 @@
         399461: function(e) {
             "use strict";
             e.exports = {
-                backButton: "backButton__91fb9",
-                footer: "footer_cf774b",
                 legalText: "legalText__3817f",
                 productList: "productList_b12dd0",
                 productSection: "productSection_d2504b",
-                subDetailsModal: "subDetailsModal_c2c023",
                 wrapper: "wrapper__17603"
             }
         },
@@ -3679,6 +3676,15 @@
                 modalCloseBtn: "modalCloseBtn_e2b38c",
                 modalHeader: "modalHeader__4be2e",
                 modalTitle: "modalTitle__2413c"
+            }
+        },
+        224389: function(e) {
+            "use strict";
+            e.exports = {
+                appIcon: "appIcon__9aba1",
+                backButton: "backButton__91606",
+                footer: "footer__27b15",
+                modal: "modal__36664"
             }
         },
         763638: function(e) {

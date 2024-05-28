@@ -17522,7 +17522,6 @@ h6.title_c2a544 {
     width: calc(100vw - 60px);
     max-width: 621px;
     box-sizing: border-box;
-    padding-top: 20px;
     position: relative
 }
 
@@ -17532,9 +17531,7 @@ h6.title_c2a544 {
     justify-content: center;
     height: 260px;
     position: relative;
-    border-radius: 12px;
     overflow: hidden;
-    margin: 0 20px;
     background-color: var(--background-tertiary)
 }
 
@@ -17564,10 +17561,6 @@ h6.title_c2a544 {
     top: 21px;
     display: flex;
     justify-content: space-between
-}
-
-.closeBtn__97612 {
-    background: none
 }
 
 .headerImage_e6c58e {
@@ -27444,4 +27437,4 @@ span.button_ae40a4.disabled__1dc58 {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.3ffebbb27ad3fb921a67.css.map*/
+/*# sourceMappingURL=49237.9ac0b34ab4528cb7aef6.css.map*/

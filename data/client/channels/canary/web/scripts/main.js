@@ -37017,7 +37017,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296657", ", Version Hash: ").concat("7c4ef7b510ea7d80c1e4dd675bd9932e3296ef6a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296670", ", Version Hash: ").concat("7f0cf8c79028830543b5914e242fb852c39bc457")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55589,6 +55589,7 @@
                 STOREFRONT_MUST_LOGIN: "Login to browse store",
                 STOREFRONT_VIEW_TOS_PP: "View the app's [Terms of Service]({tosUrl}) and [Privacy Policy]({ppUrl})",
                 STOREFRONT_NO_TOS_PP: "This developer has not setup terms of service and privacy policy.",
+                STOREFRONT_DETAILS_TOS_AND_PRIVACY: "[Terms of Service]({tosUrl}) and [Privacy Policy]({ppUrl})",
                 QUIET_MODE_DISABLED: "Focus Mode Disabled",
                 QUIET_MODE_ENABLED: "Focus Mode Enabled",
                 QUIET_MODE_DND: "Focus Mode (DND) Enabled",
@@ -88565,8 +88566,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296657", "296657"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296657")), t = 0), t
+                let t = parseInt((e = "296670", "296670"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296670")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116549,8 +116550,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296657",
-                    versionHash: "7c4ef7b510ea7d80c1e4dd675bd9932e3296ef6a"
+                    buildNumber: "296670",
+                    versionHash: "7f0cf8c79028830543b5914e242fb852c39bc457"
                 }
             }
             n.r(t), n.d(t, {
@@ -117084,7 +117085,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("28020"), n.e("32948"), n.e("20703"), n.e("29549"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("6416"), n.e("63438"), n.e("58600"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("49146"), n.e("4970"), n.e("77172"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("17938"), n.e("81539"), n.e("58286"), n.e("76540"), n.e("8739"), n.e("41947"), n.e("30243"), n.e("3084"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("65866"), n.e("23404"), n.e("99365"), n.e("97188"), n.e("15357"), n.e("10655"), n.e("3682"), n.e("18824"), n.e("88331"), n.e("49508"), n.e("5528"), n.e("9737"), n.e("89333"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("55981"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("28020"), n.e("32948"), n.e("20703"), n.e("29549"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("6416"), n.e("63438"), n.e("58600"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("49146"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("17938"), n.e("81539"), n.e("58286"), n.e("76540"), n.e("8739"), n.e("41947"), n.e("30243"), n.e("3084"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("65866"), n.e("23404"), n.e("99365"), n.e("97188"), n.e("15357"), n.e("10655"), n.e("3682"), n.e("18824"), n.e("88331"), n.e("49508"), n.e("5528"), n.e("9737"), n.e("89333"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("55981"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -174097,8 +174098,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716925513851",
-                                    build_number: "296657"
+                                    built_at: "1716926350487",
+                                    build_number: "296670"
                                 }
                             },
                             retries: 1
@@ -187546,34 +187547,34 @@
                     return i
                 },
                 default: function() {
-                    return b
-                },
-                useActiveSubscriptionListingForApplication: function() {
-                    return D
-                },
-                useApplication: function() {
                     return U
                 },
-                useEligibleApplicationSubscriptionGuilds: function() {
-                    return G
+                useActiveSubscriptionListingForApplication: function() {
+                    return v
                 },
-                useFetchEntitlementsForGuild: function() {
-                    return C
-                },
-                useFetchListingsForApplication: function() {
-                    return O
-                },
-                useFetchListingsForSubscriptions: function() {
-                    return y
-                },
-                useFetchUserApplicationSubscriptionEntitlements: function() {
+                useApplication: function() {
                     return P
                 },
+                useEligibleApplicationSubscriptionGuilds: function() {
+                    return b
+                },
+                useFetchEntitlementsForGuild: function() {
+                    return O
+                },
+                useFetchListingsForApplication: function() {
+                    return p
+                },
+                useFetchListingsForSubscriptions: function() {
+                    return M
+                },
+                useFetchUserApplicationSubscriptionEntitlements: function() {
+                    return y
+                },
                 useSubscriptionListingsForGroup: function() {
-                    return g
+                    return R
                 },
                 useUnseenEndedApplicationSubscriptionEntitlements: function() {
-                    return M
+                    return D
                 }
             }), n("653041"), n("47120");
             var i, r, s = n("470079"),
@@ -187591,11 +187592,10 @@
                 S = n("106976"),
                 h = n("307643"),
                 A = n("488915"),
-                m = n("11176"),
-                N = n("171246"),
-                p = n("981631");
+                m = n("171246"),
+                N = n("981631");
             (r = i || (i = {}))[r.NOT_LOADED = 0] = "NOT_LOADED", r[r.LOADING = 1] = "LOADING", r[r.LOADED = 2] = "LOADED", r[r.ERROR = 3] = "ERROR";
-            let O = function(e, t) {
+            let p = function(e, t) {
                     let {
                         refetchOnMount: n = !1
                     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, i = (0, a.useStateFromStores)([A.default], () => null != e ? A.default.getSubscriptionGroupListingsForApplicationFetchState(e) : A.FetchState.FETCHED, [e]);
@@ -187607,21 +187607,21 @@
                         listingsLoaded: i === A.FetchState.FETCHED
                     }
                 },
-                C = e => {
+                O = e => {
                     let {
                         guildId: t,
                         canFetch: n = !0,
                         forceRefetch: i = !1
                     } = e, r = (0, a.useStateFromStores)([A.default], () => null != t ? A.default.getEntitlementsForGuildFetchState(t) : null, [t]);
                     return s.useEffect(() => {
-                        if (null == t || t === p.ME) return;
+                        if (null == t || t === N.ME) return;
                         let e = A.default.getEntitlementsForGuildFetchState(t);
                         n && (e === A.FetchState.NOT_FETCHED || i) && (0, S.fetchEntitlementsForGuild)(t)
                     }, [t, n, i]), {
                         entitlementsLoaded: r === A.FetchState.FETCHED
                     }
                 },
-                R = e => {
+                C = e => {
                     let {
                         applicationId: t,
                         canFetch: n = !0,
@@ -187632,14 +187632,14 @@
                         if (r) {
                             let e = I.default.isFetchingForApplication(t);
                             (n && !e && !l || i) && (0, o.fetchUserEntitlements)({
-                                entitlementType: p.EntitlementTypes.APPLICATION_SUBSCRIPTION
+                                entitlementType: N.EntitlementTypes.APPLICATION_SUBSCRIPTION
                             })
                         }
                     }, [t, n, l, i, r]), {
                         entitlementsLoaded: l
                     }
                 },
-                g = function(e) {
+                R = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
                         includeSoftDeleted: !1
                     };
@@ -187655,10 +187655,10 @@
                         return i
                     }, [e, t.includeSoftDeleted])
                 },
-                L = [],
-                v = [];
+                g = [],
+                L = [];
 
-            function D(e, t) {
+            function v(e, t) {
                 let n = (0, a.useStateFromStores)([E.default], () => E.default.getSubscriptions()),
                     {
                         subscriptionGroupListing: i,
@@ -187668,8 +187668,8 @@
                         var n, i;
                         return {
                             subscriptionGroupListing: null != e ? A.default.getSubscriptionGroupListingForApplication(e) : null,
-                            guildEntitlements: null != e && null != t ? A.default.getApplicationEntitlementsForGuild(e, t) : L,
-                            userEntitlements: null != e && null !== (i = null === (n = I.default.getForApplication(e)) || void 0 === n ? void 0 : n.values()) && void 0 !== i ? i : v
+                            guildEntitlements: null != e && null != t ? A.default.getApplicationEntitlementsForGuild(e, t) : g,
+                            userEntitlements: null != e && null !== (i = null === (n = I.default.getForApplication(e)) || void 0 === n ? void 0 : n.values()) && void 0 !== i ? i : L
                         }
                     }, [e, t]),
                     l = s.useMemo(() => [...r, ...o], [r, o]),
@@ -187681,7 +187681,7 @@
                         if (null != u) {
                             for (let e of l)
                                 for (let n of u)
-                                    if ((0, N.isListingActiveInGuild)(n, e, t)) return {
+                                    if ((0, m.isListingActiveInGuild)(n, e, t)) return {
                                         activeSubscriptionListing: n,
                                         activeEntitlement: e
                                     }
@@ -187696,7 +187696,7 @@
                         if (null == n) return null;
                         let e = null == d ? void 0 : d.subscription_plans[0].id;
                         for (let t of Object.values(n))
-                            if (t.type === p.SubscriptionTypes.APPLICATION && t.items[0].planId === e) return t;
+                            if (t.type === N.SubscriptionTypes.APPLICATION && t.items[0].planId === e) return t;
                         return null
                     }, [d, n]),
                     activeSubscriptionListing: d,
@@ -187705,14 +187705,14 @@
                 }
             }
 
-            function M(e) {
+            function D(e) {
                 var t;
-                let n = null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : p.EMPTY_STRING_SNOWFLAKE_ID,
+                let n = null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : N.EMPTY_STRING_SNOWFLAKE_ID,
                     {
                         entitlementsLoaded: i
-                    } = C({
+                    } = O({
                         guildId: n,
-                        canFetch: (0, a.useStateFromStores)([_.default], () => _.default.can(p.Permissions.ADMINISTRATOR, e))
+                        canFetch: (0, a.useStateFromStores)([_.default], () => _.default.can(N.Permissions.ADMINISTRATOR, e))
                     }),
                     r = (0, a.useStateFromStores)([f.default], () => f.default.getLastGuildDismissedTime(n)),
                     o = (0, a.useStateFromStoresArray)([A.default], () => {
@@ -187728,8 +187728,8 @@
                     }), [o, l]);
                 return i ? u.filter(e => null != e.endsAt && e.endsAt.getTime() > Math.max(null != r ? r : 0, Date.now() - 2592e6)) : []
             }
-            let y = e => {
-                    let [t, n] = s.useState(!1), i = s.useMemo(() => e.map(N.getApplicationSubscriptionPlanId), [e]), r = (0, a.useStateFromStoresArray)([c.default], () => i.filter(e => null == c.default.get(e)), [i]);
+            let M = e => {
+                    let [t, n] = s.useState(!1), i = s.useMemo(() => e.map(m.getApplicationSubscriptionPlanId), [e]), r = (0, a.useStateFromStoresArray)([c.default], () => i.filter(e => null == c.default.get(e)), [i]);
                     return s.useEffect(() => {
                         r.length > 0 && (n(!0), Promise.all(r.map(e => (0, S.fetchSubscriptionListingForPlan)(e))).catch(() => {}).then(() => {
                             n(!1)
@@ -187738,13 +187738,13 @@
                         loading: t
                     }
                 },
-                P = () => {
+                y = () => {
                     let [e, t] = s.useState(0);
                     return s.useEffect(() => {
                         t(1), (0, o.fetchUserEntitlements)({
                             withSku: !0,
                             withApplication: !0,
-                            entitlementType: p.EntitlementTypes.APPLICATION_SUBSCRIPTION
+                            entitlementType: N.EntitlementTypes.APPLICATION_SUBSCRIPTION
                         }).catch(() => {
                             t(3)
                         }).then(() => {
@@ -187754,7 +187754,7 @@
                         loadState: e
                     }
                 },
-                U = e => {
+                P = e => {
                     let t = (0, l.default)(),
                         n = (0, a.useStateFromStores)([u.default], () => null != e ? u.default.getApplication(e) : null, [e]),
                         i = null != n;
@@ -187763,35 +187763,29 @@
                     }, [i, e, t]), n
                 };
 
-            function b(e) {
+            function U(e) {
                 let {
                     applicationId: t,
                     groupListingId: n,
                     guildId: i
                 } = e, r = (0, l.default)(), {
                     listingsLoaded: s
-                } = O(t, n), {
+                } = p(t, n), {
                     entitlementsLoaded: a
-                } = C({
+                } = O({
                     guildId: i
                 }), {
                     entitlementsLoaded: o
-                } = R({
+                } = C({
                     applicationId: t,
                     loggedIn: r
-                }), u = U(t), {
-                    enabled: d
-                } = m.otpSkusExperiment.useExperiment({
-                    location: "useApplicationSubscriptionListingsShown"
-                }), {
-                    subscriptionGroupListing: _
-                } = D(t, i), c = d ? (null == u ? void 0 : u.isMonetized) === !0 : null != _ && (0, N.hasPayableSubscriptionPlan)(_);
+                }), u = P(t), d = (null == u ? void 0 : u.isMonetized) === !0;
                 return {
-                    applicationSubscriptionListingsShown: null != t && null != n && (null == i || a) && (!r || o) && s && c
+                    applicationSubscriptionListingsShown: null != t && null != n && (null == i || a) && (!r || o) && s && d
                 }
             }
 
-            function G(e, t) {
+            function b(e, t) {
                 let n = (0, a.useStateFromStores)([d.default], () => d.default.isLoaded()),
                     [i, r] = s.useState([]);
                 return s.useEffect(() => {
@@ -188013,29 +188007,6 @@
                 }
             })
         },
-        11176: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                otpSkusExperiment: function() {
-                    return i
-                }
-            });
-            let i = (0, n("818083").createExperiment)({
-                kind: "user",
-                id: "2024-01_otp_skus",
-                label: "OTP SKUs",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable OTP SKUs",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
-        },
         171246: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -188043,19 +188014,16 @@
                     return o
                 },
                 getPayableSubscriptionListing: function() {
-                    return u
-                },
-                hasPayableSubscriptionPlan: function() {
                     return l
                 },
                 isApplicationGuildSubscription: function() {
-                    return d
+                    return u
                 },
                 isApplicationUserSubscription: function() {
-                    return _
+                    return d
                 },
                 isListingActiveInGuild: function() {
-                    return c
+                    return _
                 }
             });
             var i = n("512722"),
@@ -188069,24 +188037,20 @@
             }
 
             function l(e) {
-                return null != u(e)
+                var t;
+                return null === (t = e.subscription_listings) || void 0 === t ? void 0 : t.find(e => e.published && (u(e.sku_flags) || d(e.sku_flags)) && e.subscription_plans[0].price > 0)
             }
 
             function u(e) {
-                var t;
-                return null === (t = e.subscription_listings) || void 0 === t ? void 0 : t.find(e => e.published && (d(e.sku_flags) || _(e.sku_flags)) && e.subscription_plans[0].price > 0)
-            }
-
-            function d(e) {
                 return (0, s.hasFlag)(e, a.SKUFlags.APPLICATION_GUILD_SUBSCRIPTION)
             }
 
-            function _(e) {
+            function d(e) {
                 return (0, s.hasFlag)(e, a.SKUFlags.APPLICATION_USER_SUBSCRIPTION)
             }
 
-            function c(e, t, n) {
-                return e.subscription_plans[0].sku_id === t.skuId && (d(e.sku_flags) ? null != n && t.guildId === n && n !== a.ME : !!_(e.sku_flags) && null == t.guildId)
+            function _(e, t, n) {
+                return e.subscription_plans[0].sku_id === t.skuId && (u(e.sku_flags) ? null != n && t.guildId === n && n !== a.ME : !!d(e.sku_flags) && null == t.guildId)
             }
         },
         359610: function(e, t, n) {
@@ -212150,44 +212114,39 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return l
                 }
             });
             var i = n("442837"),
                 r = n("270144"),
-                s = n("11176"),
-                a = n("171246"),
-                o = n("621853"),
-                l = n("981631");
+                s = n("171246"),
+                a = n("621853"),
+                o = n("981631");
 
-            function u(e) {
+            function l(e) {
                 var t;
                 let {
                     user: n,
-                    guildId: u
-                } = e, d = (0, i.useStateFromStores)([o.default], () => {
+                    guildId: l
+                } = e, u = (0, i.useStateFromStores)([a.default], () => {
                     var e;
-                    return null === (e = o.default.getUserProfile(n.id)) || void 0 === e ? void 0 : e.application
+                    return null === (e = a.default.getUserProfile(n.id)) || void 0 === e ? void 0 : e.application
                 }, [n]), {
-                    applicationSubscriptionListingsShown: _
+                    applicationSubscriptionListingsShown: d
                 } = (0, r.default)({
-                    applicationId: null == d ? void 0 : d.id,
-                    groupListingId: null == d ? void 0 : d.primarySkuId,
-                    guildId: u
+                    applicationId: null == u ? void 0 : u.id,
+                    groupListingId: null == u ? void 0 : u.primarySkuId,
+                    guildId: l
                 }), {
-                    activeSubscriptionListing: c,
-                    activeEntitlement: E,
-                    subscriptionGroupListing: I
-                } = (0, r.useActiveSubscriptionListingForApplication)(null == d ? void 0 : d.id, u), {
-                    enabled: T
-                } = s.otpSkusExperiment.useExperiment({
-                    location: "useBotApplicationSubscription"
-                }), f = null !== (t = null == I ? void 0 : I.sku_flags) && void 0 !== t ? t : 0, S = (0, a.isApplicationUserSubscription)(f) || null != u && u !== l.ME && (0, a.isApplicationGuildSubscription)(f) || T, h = null != E;
-                return _ ? {
-                    botUpgraded: h,
-                    botUpgradeable: !h && _ && S,
-                    activeSubscriptionListing: c,
-                    subscriptionGroupListing: I
+                    activeSubscriptionListing: _,
+                    activeEntitlement: c,
+                    subscriptionGroupListing: E
+                } = (0, r.useActiveSubscriptionListingForApplication)(null == u ? void 0 : u.id, l), I = null !== (t = null == E ? void 0 : E.sku_flags) && void 0 !== t ? t : 0, T = (0, s.isApplicationUserSubscription)(I) || null != l && l !== o.ME && (0, s.isApplicationGuildSubscription)(I), f = null != c;
+                return d ? {
+                    botUpgraded: f,
+                    botUpgradeable: !f && d && T,
+                    activeSubscriptionListing: _,
+                    subscriptionGroupListing: E
                 } : {
                     botUpgraded: !1,
                     botUpgradeable: !1,
@@ -251438,7 +251397,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7c4ef7b510ea7d80c1e4dd675bd9932e3296ef6a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7f0cf8c79028830543b5914e242fb852c39bc457"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280572,7 +280531,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296657"
+                                build_number: "296670"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287936,7 +287895,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296657", "296657"), 10);
+                let s = parseInt((n = "296670", "296670"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315691,4 +315650,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.721cbc84d77bcce31ab8.js.map
+//# sourceMappingURL=71586.1cc264cd2ec0f6746c13.js.map
