@@ -23032,14 +23032,6 @@
                 white: "white__5d308"
             }
         },
-        286758: function(e) {
-            "use strict";
-            e.exports = {
-                container: "container_c51520",
-                expired: "expired_a49937",
-                live: "live__27cc1"
-            }
-        },
         981079: function(e) {
             "use strict";
             e.exports = {
@@ -23131,6 +23123,14 @@
                 questRewardTileAsset: "questRewardTileAsset__33149",
                 rewardDescriptionContainer: "rewardDescriptionContainer__8745e",
                 textContainer: "textContainer_fb0d3e"
+            }
+        },
+        73060: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__3f6ef",
+                expired: "expired_c3ec8f",
+                live: "live__6141d"
             }
         },
         862317: function(e) {
