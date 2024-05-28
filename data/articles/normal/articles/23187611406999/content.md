@@ -76,6 +76,9 @@
 <h2 id="h_01HXW2MCD0E8MPCX184CSNCNM4">Invite Link</h2>
 <p>Just like a server, an invite link can be created for a Guild to invite other users to join! </p>
 <h2 id="h_01HXW2MCD08EDXFJ8G73FT3G4W">Guild Tag</h2>
+<h3 id="h_01HZ032V2RMS7Y0BH22RJ4EBNX">
+    <span style="color: #434343;">If you see the option </span><strong><span style="color: #434343;">Join Waitlist for Guilds</span></strong><span style="color: #434343;"> instead of </span><strong><span style="color: #434343;">Apply To Join</span></strong><span style="color: #434343;">, this means that you do not have access to the experiment. You can only join the waitlist once and joining does not guarantee access to the experiment.</span>
+</h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478790049431" width="275" height="66"></p>
 <p>If you see in a message or on someone’s profile a Guild you want to join, you can tap on the tag for the Guild and then tap on <strong>Apply To Join</strong> to pull up the application.</p>
 <p>If your application has been approved, you’ll be added into that server for that Guild. If it’s been rejected, you’ll receive a notification stating so.</p>
