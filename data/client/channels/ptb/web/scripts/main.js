@@ -37017,7 +37017,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296605", ", Version Hash: ").concat("d6d033aaf918b8f4cb14fa90ab9c1c4f0e41e5e4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296611", ", Version Hash: ").concat("a8eed9408bcb82593930482709c9cb796d6da098")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88546,8 +88546,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296605", "296605"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296605")), t = 0), t
+                let t = parseInt((e = "296611", "296611"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296611")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116530,8 +116530,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296605",
-                    versionHash: "d6d033aaf918b8f4cb14fa90ab9c1c4f0e41e5e4"
+                    buildNumber: "296611",
+                    versionHash: "a8eed9408bcb82593930482709c9cb796d6da098"
                 }
             }
             n.r(t), n.d(t, {
@@ -156080,7 +156080,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return E
                 }
             });
             var i = n("735250"),
@@ -156088,9 +156088,11 @@
                 s = n("120356"),
                 a = n.n(s),
                 o = n("481060"),
-                l = n("718582"),
-                u = n("411511");
-            let d = [
+                l = n("410030"),
+                u = n("718582"),
+                d = n("981631"),
+                _ = n("411511");
+            let c = [
                 [{
                     translateY: 0,
                     translateX: 0,
@@ -156161,54 +156163,54 @@
                 }]
             ];
 
-            function _(e) {
+            function E(e) {
                 let {
                     users: t,
                     guildId: n
-                } = e, s = (0, l.useSortUsersByAffinity)(t), o = r.useRef(!1);
+                } = e, s = (0, u.useSortUsersByAffinity)(t), o = (0, l.default)(), E = r.useRef(!1);
                 r.useEffect(() => {
-                    o.current = !0
+                    E.current = !0
                 }, []);
-                let _ = Math.min(d.length - 1, s.length - 1),
-                    I = d[Math.max(0, _)],
-                    T = s.length > 4,
-                    f = s.length - 3,
-                    S = f >= 10 ? 1 : 2,
-                    h = I.map((e, t) => {
+                let f = Math.min(c.length - 1, s.length - 1),
+                    S = c[Math.max(0, f)],
+                    h = s.length > 4,
+                    A = s.length - 3,
+                    m = A >= 10 ? 1 : 2,
+                    N = S.map((e, t) => {
                         let r = s[t];
                         if (null == r) return null;
-                        let o = T && t === S;
+                        let o = h && t === m;
                         return (0, i.jsx)("div", {
-                            className: a()(u.avatarContainer),
+                            className: a()(_.avatarContainer),
                             style: {
                                 opacity: 1,
                                 transform: "translateX(".concat(e.translateX, "px) translateY(").concat(e.translateY, "px) scale(").concat(e.scale, ")")
                             },
-                            children: o ? (0, i.jsx)(c, {
-                                count: f
-                            }) : (0, i.jsx)(E, {
+                            children: o ? (0, i.jsx)(I, {
+                                count: A
+                            }) : (0, i.jsx)(T, {
                                 guildId: n,
                                 user: r
                             })
                         }, r.id)
                     });
                 return (0, i.jsx)("div", {
-                    className: u.gradientContainer,
+                    className: o === d.ThemeTypes.DARK ? _.gradientContainerDark : _.gradientContainer,
                     children: (0, i.jsx)("div", {
-                        className: u.groupContainer,
-                        children: h
+                        className: _.groupContainer,
+                        children: N
                     })
                 })
             }
 
-            function c(e) {
+            function I(e) {
                 let {
                     count: t
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: u.avatarWrapper,
+                    className: _.avatarWrapper,
                     children: (0, i.jsx)("div", {
-                        className: u.overflowCount,
+                        className: _.overflowCount,
                         children: (0, i.jsxs)(o.Text, {
                             variant: "text-sm/semibold",
                             children: ["+", t]
@@ -156217,15 +156219,15 @@
                 })
             }
 
-            function E(e) {
+            function T(e) {
                 let {
                     guildId: t,
                     user: n
                 } = e;
                 return null == r.useMemo(() => null == n ? void 0 : n.getAvatarSource(t, !1, 30), [t, n]) ? null : (0, i.jsx)("div", {
-                    className: u.avatarWrapper,
+                    className: _.avatarWrapper,
                     children: (0, i.jsx)("img", {
-                        className: u.avatar,
+                        className: _.avatar,
                         src: null == n ? void 0 : n.getAvatarURL(t, 80),
                         alt: ""
                     })
@@ -174076,8 +174078,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716920751324",
-                                    build_number: "296605"
+                                    built_at: "1716921653343",
+                                    build_number: "296611"
                                 }
                             },
                             retries: 1
@@ -251417,7 +251419,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d6d033aaf918b8f4cb14fa90ab9c1c4f0e41e5e4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a8eed9408bcb82593930482709c9cb796d6da098"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280551,7 +280553,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296605"
+                                build_number: "296611"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287915,7 +287917,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296605", "296605"), 10);
+                let s = parseInt((n = "296611", "296611"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315670,4 +315672,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.61a62bb0af84dd59f92e.js.map
+//# sourceMappingURL=71586.c69b92d9140720c6f588.js.map
