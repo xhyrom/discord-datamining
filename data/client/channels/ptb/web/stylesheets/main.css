@@ -45910,7 +45910,8 @@ img.thumbnail__18ece {
 .saveContainer__0ae21 {
     position: absolute;
     top: 16px;
-    right: 16px
+    right: 16px;
+    z-index: 1
 }
 
 .contentWrapper__44dc6 {
@@ -47877,6 +47878,9 @@ div:has(>div>.modal__06f49) {
     background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.7)0%, var(--white-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
+@value toolbarElevation 1;
+@value selectorsElevation 2;
+
 .container_ec1fbc {
     position: relative;
     overflow: hidden;
@@ -47898,6 +47902,10 @@ div:has(>div>.modal__06f49) {
 .toolbar__4e903 {
     position: relative;
     z-index: 1
+}
+
+.selectors__3b470 {
+    z-index: 2
 }
 
 .topPicksContent__7c8f8 {
@@ -142563,4 +142571,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.cec5b39158fdc40ce3ae.css.map*/
+/*# sourceMappingURL=99387.a60ffa48dc6c65f5c8a4.css.map*/
