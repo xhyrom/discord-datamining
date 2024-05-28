@@ -37017,7 +37017,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296727", ", Version Hash: ").concat("115624ee272a0f6427b9eb6aa6f96a4bde9b176b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296730", ", Version Hash: ").concat("bcdae4f33dfbe8d039e2f575359e3f9c83f81e2d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88611,8 +88611,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296727", "296727"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296727")), t = 0), t
+                let t = parseInt((e = "296730", "296730"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296730")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116616,8 +116616,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296727",
-                    versionHash: "115624ee272a0f6427b9eb6aa6f96a4bde9b176b"
+                    buildNumber: "296730",
+                    versionHash: "bcdae4f33dfbe8d039e2f575359e3f9c83f81e2d"
                 }
             }
             n.r(t), n.d(t, {
@@ -117522,7 +117522,7 @@
                 N = n("271383"),
                 p = n("594174"),
                 O = n("778045"),
-                C = n("524989"),
+                C = n("355932"),
                 R = n("981631"),
                 g = n("308083"),
                 L = n("689938"),
@@ -117589,38 +117589,19 @@
                 let {
                     traits: t,
                     traitsToHighlight: n
-                } = e, s = r.useMemo(() => null == n ? new Set : new Set(n), [n]), l = r.useCallback(e => (0, i.jsx)(S.default, {
+                } = e, s = r.useMemo(() => null == n ? new Set : new Set(n), [n]), o = r.useCallback(e => (0, i.jsx)(S.default, {
                     className: a()(v.thinTrait, {
                         [v.selectedTrait]: s.has(e)
                     }),
                     text: e,
                     selected: s.has(e)
-                }, e), [s]), u = r.useCallback(e => (0, i.jsx)(o.Tooltip, {
-                    text: (0, i.jsx)("div", {
-                        className: v.overflowTooltip,
-                        children: e.map(e => (0, i.jsx)(S.default, {
-                            text: e,
-                            className: v.thinTrait
-                        }, e))
-                    }),
-                    "aria-label": "overflow",
-                    children: t => (0, i.jsx)("div", {
-                        ...t,
-                        children: (0, i.jsx)(S.default, {
-                            text: L.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
-                                count: e.length
-                            }),
-                            className: v.thinTrait
-                        })
-                    })
-                }), []);
+                }, e), [s]);
                 return (0, i.jsx)(C.default, {
-                    items: t,
-                    renderItem: l,
-                    renderOverflow: u,
-                    maxLines: 2,
                     className: v.traitsContainer,
-                    spacing: 4
+                    items: t,
+                    renderItem: o,
+                    maxLines: 2,
+                    itemGapPx: 4
                 })
             }
 
@@ -117932,88 +117913,130 @@
                 })
             })
         },
-        524989: function(e, t, n) {
+        355932: function(e, t, n) {
             "use strict";
-            n.r(t), n("653041"), n("47120");
+            n.r(t), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
-                o = n("393903"),
-                l = n("255984");
+                o = n("481060"),
+                l = n("393903"),
+                u = n("689938"),
+                d = n("691553");
 
-            function u(e, t) {
-                let n = [],
-                    i = [],
-                    r = 0,
-                    s = 0,
-                    a = !1;
-                for (var o = 0; o < e.length; o++) {
-                    let l = e[o],
-                        u = t.widths[o],
-                        d = o === e.length - 1,
-                        _ = s === t.maxLines - 1,
-                        c = s + 2 < t.maxLines,
-                        E = u > t.parentWidth,
-                        I = _ && !d ? t.spacing + t.overflowWidth : 0,
-                        T = 0 === t.parentWidth,
-                        f = !a && r + t.spacing + u + I < t.parentWidth;
-                    T || f || 0 === r ? (r > 0 && (r += t.spacing), r += u, n.push(l)) : s < t.maxLines - 1 ? (s++, r = u, n.push(l)) : E && !_ && 0 === r ? (s++, n.push(l)) : E && c && r > 0 ? (n.push(l), s += 2) : (a = !0, i.push(l))
-                }
-                return {
-                    ...t,
-                    visible: n,
-                    overflow: i
-                }
+            function _(e) {
+                let {
+                    items: t,
+                    renderItem: n
+                } = e;
+                return (0, i.jsx)(o.Tooltip, {
+                    text: (0, i.jsx)("div", {
+                        className: d.tooltip,
+                        children: t.map(n)
+                    }),
+                    "aria-label": "overflow",
+                    children: e => (0, i.jsx)("div", {
+                        ...e,
+                        children: n(u.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                            count: t.length
+                        }))
+                    })
+                })
             }
             t.default = function(e) {
                 let {
-                    items: t,
-                    renderItem: n,
-                    renderOverflow: s,
-                    className: d,
-                    maxLines: _,
-                    initialOverflowWidth: c = 65,
-                    spacing: E = 8
-                } = e, [I, T] = r.useState(() => ({
-                    parentWidth: 0,
-                    visible: t,
-                    overflow: [],
-                    widths: Array(t.length).fill(0),
-                    maxLines: _,
-                    overflowWidth: c,
-                    spacing: E
-                })), f = {
-                    visibility: 0 === I.parentWidth ? "hidden" : "visible"
-                }, S = (0, o.useResizeObserver)(e => {
-                    if (null == e) return;
-                    let n = e.getBoundingClientRect();
-                    T(e => u(t, {
-                        ...e,
-                        parentWidth: n.width
-                    }))
-                });
-                return r.useLayoutEffect(() => {
-                    T(e => {
-                        var n, i, r;
-                        let s = [...e.widths],
-                            a = null !== (r = null === (n = S.current) || void 0 === n ? void 0 : n.childNodes.length) && void 0 !== r ? r : 0,
-                            o = e.overflow.length > 0,
-                            l = e.overflowWidth;
-                        return null === (i = S.current) || void 0 === i || i.childNodes.forEach((e, t) => {
-                            let n = e.offsetWidth;
-                            o && t === a - 1 ? l = n : s[t] = n
-                        }), u(t, {
-                            ...e,
-                            widths: s,
-                            overflowWidth: l
-                        })
-                    })
-                }, [S, t, T]), (0, i.jsxs)("div", {
-                    style: f,
-                    className: a()(l.container, d),
-                    ref: S,
-                    children: [I.visible.map(n), I.overflow.length > 0 ? s(I.overflow) : null]
+                    className: t,
+                    items: n,
+                    renderItem: s,
+                    itemGapPx: o = 0,
+                    maxLines: c
+                } = e, {
+                    lastVisibleIndex: E,
+                    containerRef: I,
+                    itemsRef: T,
+                    overflowItemsRef: f
+                } = function(e) {
+                    let {
+                        itemGapPx: t,
+                        items: n,
+                        maxLines: i
+                    } = e, [s, a] = r.useState(0), [o, u] = r.useState(0), d = r.useRef([]), _ = r.useRef(0), c = r.useRef(0), E = r.useRef(null), I = r.useRef(null), T = (0, l.useResizeObserver)(e => {
+                        let t = null == e ? void 0 : e.getBoundingClientRect().width;
+                        null != t && u(t)
+                    });
+                    return r.useLayoutEffect(() => {
+                        var e;
+                        if (null == E.current || null == I.current) return;
+                        d.current.length = n.length, E.current.childNodes.forEach((e, t) => {
+                            let {
+                                width: n
+                            } = e.getBoundingClientRect();
+                            d.current[t] = n
+                        }), _.current = null !== (e = I.current.getBoundingClientRect().width) && void 0 !== e ? e : 0;
+                        let r = function(e) {
+                            let {
+                                items: t,
+                                maxLines: n,
+                                itemWidths: i,
+                                itemGapPx: r,
+                                containerWidth: s,
+                                overflowWidth: a
+                            } = e, o = 0, l = 0, u = 0;
+                            for (let e = 0; e < t.length; e++) {
+                                let d = i[e];
+                                if (isNaN(d) || d > s) continue;
+                                let _ = o === n - 1,
+                                    c = e === t.length - 1;
+                                if (!(l + d + (_ && !c ? a + r : 0) < s)) {
+                                    if (_) break;
+                                    o++, l = 0
+                                }
+                                u = e, l += d + r
+                            }
+                            return u
+                        }({
+                            items: n,
+                            maxLines: i,
+                            itemGapPx: t,
+                            containerWidth: o,
+                            itemWidths: d.current,
+                            overflowWidth: _.current
+                        });
+                        r !== c.current && (c.current = r, a(e => e + 1))
+                    }, [o, t, n, i]), r.useMemo(() => ({
+                        lastVisibleIndex: c.current,
+                        containerRef: T,
+                        itemsRef: E,
+                        overflowItemsRef: I,
+                        version: s
+                    }), [T, s])
+                }({
+                    items: n,
+                    itemGapPx: o,
+                    maxLines: c
+                }), S = r.useMemo(() => n.slice(0, E + 1), [n, E]), h = r.useMemo(() => n.slice(E + 1), [n, E]);
+                return (0, i.jsxs)("div", {
+                    className: a()(t, d.items),
+                    ref: I,
+                    children: [(0, i.jsxs)("div", {
+                        "aria-hidden": !0,
+                        className: d.measurements,
+                        children: [(0, i.jsx)("div", {
+                            className: d.itemMeasurements,
+                            ref: T,
+                            children: n.map(s)
+                        }), (0, i.jsx)("div", {
+                            className: d.overflowMeasurement,
+                            ref: f,
+                            children: s(u.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                                count: Number("1".concat(n.length))
+                            }))
+                        })]
+                    }), S.map(s), h.length > 0 && (0, i.jsx)(_, {
+                        items: h,
+                        renderItem: s
+                    })]
                 })
             }
         },
@@ -174164,8 +174187,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716930715080",
-                                    build_number: "296727"
+                                    built_at: "1716931065578",
+                                    build_number: "296730"
                                 }
                             },
                             retries: 1
@@ -251463,7 +251486,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "115624ee272a0f6427b9eb6aa6f96a4bde9b176b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "bcdae4f33dfbe8d039e2f575359e3f9c83f81e2d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280597,7 +280620,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296727"
+                                build_number: "296730"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287961,7 +287984,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296727", "296727"), 10);
+                let s = parseInt((n = "296730", "296730"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315725,4 +315748,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.e3e9553d07abb155d1a4.js.map
+//# sourceMappingURL=71586.96f6b8a8bf9f9d8c4784.js.map

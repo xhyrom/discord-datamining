@@ -28692,10 +28692,40 @@ img.thumbnail__18ece {
     gap: 8px
 }
 
-.container_fb01d4 {
+.container_d15d9e {
+    width: 100%;
+    position: relative
+}
+
+.items__29e38 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap
+}
+
+.itemMeasurements__9442a {
+    display: flex
+}
+
+.overflowMeasurement_a2c8d2 {
+    display: inline-block
+}
+
+.measurements__463e8 {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1
+}
+
+.tooltip_c153ed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px
 }
 
 .clickableCard__1c1e9 {
@@ -28821,10 +28851,11 @@ img.thumbnail__18ece {
 }
 
 .traitsContainer__23f4b {
-    max-height: 64px;
+    height: 52px;
     flex: 0 0 auto;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     gap: 4px;
     padding: 8px 0 0
 }
@@ -28832,7 +28863,9 @@ img.thumbnail__18ece {
 .thinTrait__8a2ec {
     padding: 4px 8px;
     gap: 4px;
-    max-width: 200px
+    max-width: 200px;
+    height: 24px;
+    box-sizing: border-box
 }
 
 .theme-dark .selectedTrait_ee0767,
@@ -142503,4 +142536,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c75c77fd17688e0d2a35.css.map*/
+/*# sourceMappingURL=99387.c41388063c95086baece.css.map*/
