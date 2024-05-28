@@ -76130,7 +76130,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -93876,7 +93876,8 @@ input::-webkit-inner-spin-button {
 
 .cardDescriptionTenureReward_d01311 {
     justify-content: flex-end;
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)20%, hsl(var(--primary-660-hsl)/.3)80%, hsl(var(--primary-660-hsl)/0)95%)
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)20%, hsl(var(--primary-660-hsl)/.3)80%, hsl(var(--primary-660-hsl)/0)95%);
+    pointer-events: none
 }
 
 .descriptionCTATenureReward__45b84 {
@@ -142609,4 +142610,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.836e1224d706691d037b.css.map*/
+/*# sourceMappingURL=99387.cf1734bbbfa0782e53c8.css.map*/
