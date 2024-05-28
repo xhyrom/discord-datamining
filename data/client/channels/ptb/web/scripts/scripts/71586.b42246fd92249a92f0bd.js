@@ -37017,7 +37017,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296670", ", Version Hash: ").concat("7f0cf8c79028830543b5914e242fb852c39bc457")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296681", ", Version Hash: ").concat("27cb88cb25f12f305f2d73ec97cd85e2639a74c4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88566,8 +88566,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296670", "296670"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296670")), t = 0), t
+                let t = parseInt((e = "296681", "296681"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296681")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107515,16 +107515,21 @@
                 l = n("570140"),
                 u = n("605236"),
                 d = n("238514"),
-                _ = n("210887"),
-                c = n("131704"),
-                E = n("592125"),
-                I = n("594174"),
-                T = n("74538"),
-                f = n("51144"),
-                S = n("47760"),
-                h = n("469115");
+                _ = n("781391"),
+                c = n("210887"),
+                E = n("740492"),
+                I = n("695346"),
+                T = n("581883"),
+                f = n("131704"),
+                S = n("592125"),
+                h = n("594174"),
+                A = n("74538"),
+                m = n("51144"),
+                N = n("47760"),
+                p = n("469115"),
+                O = n("874893");
 
-            function A(e, t, n) {
+            function C(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -107532,31 +107537,47 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let m = !1,
-                N = !0,
-                p = !1;
+            let R = !1,
+                g = !0,
+                L = !1;
 
-            function O() {
-                m = !0
+            function v() {
+                R = !0
             }
 
-            function C() {
-                N && (i = void 0), p = !1, m = !1
+            function D() {
+                g && (i = void 0), L = !1, R = !1
             }
-            let R = () => {
-                    N = !T.default.canUseClientThemes(I.default.getCurrentUser())
+            let M = () => {
+                    g = !A.default.canUseClientThemes(h.default.getCurrentUser())
                 },
-                g = () => {
-                    var e, t;
-                    let n = null === (t = d.default.getAppearanceSettings()) || void 0 === t ? void 0 : null === (e = t.clientThemeSettings) || void 0 === e ? void 0 : e.backgroundGradientPresetId;
-                    null != n && (i = h.BACKGROUND_GRADIENT_PRESETS_MAP[n])
+                y = () => {
+                    let e = I.ClientThemeSettings.getSetting().backgroundGradientPresetId;
+                    if (d.default.shouldSync("appearance")) {
+                        if (null == e) {
+                            null != i && (i = void 0);
+                            return
+                        }
+                        i = p.BACKGROUND_GRADIENT_PRESETS_MAP[e]
+                    }
+                },
+                P = () => {
+                    if (!d.default.shouldSync("appearance")) return;
+                    let e = I.ClientThemeSettings.getSetting().backgroundGradientPresetId;
+                    if (E.default.useSystemTheme === O.SystemThemeState.ON && null != e && (0, _.setUseSystemTheme)(O.SystemThemeState.OFF), null == e) {
+                        null != i && (i = void 0);
+                        return
+                    }
+                    let t = p.BACKGROUND_GRADIENT_PRESETS_MAP[e],
+                        n = (null == i ? void 0 : i.id) === (null == t ? void 0 : t.id);
+                    null != t && !n && (i = t)
                 };
-            class L extends(s = a.default.PersistedStore) {
+            class U extends(s = a.default.PersistedStore) {
                 initialize(e) {
-                    null != e && (i = (null == e ? void 0 : e.gradientPresetId) != null ? h.BACKGROUND_GRADIENT_PRESETS_MAP[e.gradientPresetId] : void 0), this.waitFor(I.default, _.default, E.default, d.default), this.syncWith([I.default], R), this.syncWith([d.default], g)
+                    null != e && (i = (null == e ? void 0 : e.gradientPresetId) != null ? p.BACKGROUND_GRADIENT_PRESETS_MAP[e.gradientPresetId] : void 0), this.waitFor(h.default, c.default, S.default, d.default, T.default), this.syncWith([h.default], M), this.syncWith([d.default], y), this.syncWith([T.default], P)
                 }
                 getState() {
-                    return N ? {} : {
+                    return g ? {} : {
                         gradientPresetId: null == i ? void 0 : i.id
                     }
                 }
@@ -107564,22 +107585,22 @@
                     return i
                 }
                 getLinearGradient() {
-                    return null == this.gradientPreset ? null : (0, S.getLinearGradientForBackgroundGradient)(this.gradientPreset)
+                    return null == this.gradientPreset ? null : (0, N.getLinearGradientForBackgroundGradient)(this.gradientPreset)
                 }
                 get isEditorOpen() {
-                    return m
+                    return R
                 }
                 get isPreview() {
-                    return N
+                    return g
                 }
                 get isCoachmark() {
-                    return p
+                    return L
                 }
                 get mobilePendingThemeIndex() {
                     return r
                 }
                 constructor(...e) {
-                    super(...e), A(this, "migrations", [e => {
+                    super(...e), C(this, "migrations", [e => {
                         var t;
                         return {
                             gradientPresetId: null == e ? void 0 : null === (t = e.gradientPreset) || void 0 === t ? void 0 : t.id
@@ -107587,7 +107608,7 @@
                     }])
                 }
             }
-            A(L, "displayName", "ClientThemesBackgroundStore"), A(L, "persistKey", "ClientThemesBackgroundStore"), t.default = new L(l.default, {
+            C(U, "displayName", "ClientThemesBackgroundStore"), C(U, "persistKey", "ClientThemesBackgroundStore"), t.default = new U(l.default, {
                 UPDATE_BACKGROUND_GRADIENT_PRESET: e => {
                     let {
                         presetId: t
@@ -107596,7 +107617,7 @@
                         i = void 0;
                         return
                     }
-                    i = h.BACKGROUND_GRADIENT_PRESETS_MAP[t]
+                    i = p.BACKGROUND_GRADIENT_PRESETS_MAP[t]
                 },
                 UPDATE_MOBILE_PENDING_THEME_INDEX: e => {
                     let {
@@ -107610,11 +107631,11 @@
                 },
                 CLIENT_THEMES_EDITOR_OPEN: e => {
                     (function() {
-                        m = !0
+                        R = !0
                     })()
                 },
                 CLIENT_THEMES_EDITOR_CLOSE: e => {
-                    C()
+                    D()
                 },
                 RESET_PREVIEW_CLIENT_THEME: e => {
                     i = void 0
@@ -107623,15 +107644,15 @@
                     let {
                         channelId: t,
                         guildId: n
-                    } = e, i = I.default.getCurrentUser();
-                    if (null == t || null == n || (0, u.isDismissibleContentDismissed)(o.DismissibleContent.CLIENT_THEMES_COACHMARK) || !(0, f.ageEligibleForPremiumUpsell)(i)) return;
-                    let r = E.default.getChannel(t);
-                    null != r && (0, c.isGuildTextChannelType)(r.type) && (p = !0, function() {
-                        m = !0
+                    } = e, i = h.default.getCurrentUser();
+                    if (null == t || null == n || (0, u.isDismissibleContentDismissed)(o.DismissibleContent.CLIENT_THEMES_COACHMARK) || !(0, m.ageEligibleForPremiumUpsell)(i)) return;
+                    let r = S.default.getChannel(t);
+                    null != r && (0, f.isGuildTextChannelType)(r.type) && (L = !0, function() {
+                        R = !0
                     }())
                 },
                 LOGOUT: e => {
-                    C()
+                    D()
                 }
             })
         },
@@ -116550,8 +116571,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296670",
-                    versionHash: "7f0cf8c79028830543b5914e242fb852c39bc457"
+                    buildNumber: "296681",
+                    versionHash: "27cb88cb25f12f305f2d73ec97cd85e2639a74c4"
                 }
             }
             n.r(t), n.d(t, {
@@ -174098,8 +174119,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716926350487",
-                                    build_number: "296670"
+                                    built_at: "1716927123567",
+                                    build_number: "296681"
                                 }
                             },
                             retries: 1
@@ -251397,7 +251418,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7f0cf8c79028830543b5914e242fb852c39bc457"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "27cb88cb25f12f305f2d73ec97cd85e2639a74c4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280531,7 +280552,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296670"
+                                build_number: "296681"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287895,7 +287916,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296670", "296670"), 10);
+                let s = parseInt((n = "296681", "296681"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315650,4 +315671,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.1cc264cd2ec0f6746c13.js.map
+//# sourceMappingURL=71586.b42246fd92249a92f0bd.js.map
