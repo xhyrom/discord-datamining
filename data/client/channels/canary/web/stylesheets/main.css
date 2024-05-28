@@ -47955,6 +47955,13 @@ div:has(>div>.modal__06f49) {
     height: 100px
 }
 
+.loading_f6e9a4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
+
 @value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
 
 .guildListSection_e27022 {
@@ -142454,4 +142461,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.480e99498e04216422ab.css.map*/
+/*# sourceMappingURL=99387.6a12efa20ed3fa13f330.css.map*/
