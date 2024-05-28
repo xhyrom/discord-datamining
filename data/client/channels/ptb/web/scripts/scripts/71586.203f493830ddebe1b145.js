@@ -21896,14 +21896,14 @@
                                 isSpeaking: S,
                                 className: v
                             })
-                        }), null != D ? (0, i.jsx)(_.Tooltip, {
+                        }), null != D && null != O ? p(O, o, M, D) : null, null != D ? (0, i.jsx)(_.Tooltip, {
                             text: A ? (0, E.humanizeStatus)(D) : null,
                             "aria-label": !1,
                             position: "top",
                             spacing: 5 + 1.5 * M.stroke,
                             delay: m,
                             children: e => (0, i.jsxs)(i.Fragment, {
-                                children: [null != O && p(O, o, M, D), (0, i.jsx)("rect", {
+                                children: [(0, i.jsx)("rect", {
                                     ...e,
                                     ...N(M, D, o, l),
                                     fill: U,
@@ -22012,7 +22012,7 @@
                                 isSpeaking: f,
                                 className: U
                             })
-                        }), (0, i.jsx)(_.Tooltip, {
+                        }), null != M && p(M, l, z, g), (0, i.jsx)(_.Tooltip, {
                             text: v ? (0, E.humanizeStatus)(g) : null,
                             "aria-label": !1,
                             position: "top",
@@ -22022,7 +22022,7 @@
                             }(z.status, z.stroke, l, c),
                             delay: D,
                             children: e => (0, i.jsxs)(i.Fragment, {
-                                children: [null != M && p(M, l, z, g), (0, i.jsxs)("svg", {
+                                children: [(0, i.jsxs)("svg", {
                                     x: q,
                                     y: J,
                                     width: Z,
@@ -37021,7 +37021,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296577", ", Version Hash: ").concat("c713402bbb0f6d3153ab7848bc822c065d3f746a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296593", ", Version Hash: ").concat("1b137eafed8e3acf60d6a2e7754d09eb1d20f797")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88550,8 +88550,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296577", "296577"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296577")), t = 0), t
+                let t = parseInt((e = "296593", "296593"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296593")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116534,8 +116534,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296577",
-                    versionHash: "c713402bbb0f6d3153ab7848bc822c065d3f746a"
+                    buildNumber: "296593",
+                    versionHash: "1b137eafed8e3acf60d6a2e7754d09eb1d20f797"
                 }
             }
             n.r(t), n.d(t, {
@@ -163697,10 +163697,10 @@
         200120: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useShouldFilterKeywords: function() {
+                useActiveKeywordFiltersCacheKey: function() {
                     return a
                 }
-            });
+            }), n("653041");
             var i = n("470079"),
                 r = n("592204"),
                 s = n("712950");
@@ -163712,7 +163712,10 @@
                 } = (0, s.useKeywordFilterSettings)(), a = (0, r.useIsEligibleForKeywordFiltering)({
                     location: "use-should-filter-keywords"
                 });
-                return i.useMemo(() => a && (e || t || n), [e, t, n, a])
+                return i.useMemo(() => {
+                    let i = [];
+                    return a ? (e && i.push("profanity"), t && i.push("sexualContent"), n && i.push("slurs"), i.join(":")) : null
+                }, [e, t, n, a])
             }
         },
         900460: function(e, t, n) {
@@ -173822,7 +173825,7 @@
                     allowDevLinks: S = !1,
                     allowSubtext: h = !1,
                     previewLinkTarget: A = !1
-                } = t, m = (0, r.useShouldFilterKeywords)();
+                } = t, m = (0, r.useActiveKeywordFiltersCacheKey)();
                 return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isUnsupported ? {
                     content: u.default.Messages.MESSAGE_UNSUPPORTED,
                     hasSpoilerEmbeds: !1
@@ -173841,7 +173844,7 @@
                     allowSubtext: h,
                     allowDevLinks: S,
                     previewLinkTarget: A,
-                    shouldFilterKeywords: m
+                    shouldFilterKeywords: null != m
                 }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, _, c, E, I, T, f, A, h, m])
             }
         },
@@ -174100,8 +174103,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716917458508",
-                                    build_number: "296577"
+                                    built_at: "1716919138195",
+                                    build_number: "296593"
                                 }
                             },
                             retries: 1
@@ -251441,7 +251444,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c713402bbb0f6d3153ab7848bc822c065d3f746a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1b137eafed8e3acf60d6a2e7754d09eb1d20f797"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280575,7 +280578,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296577"
+                                build_number: "296593"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287939,7 +287942,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296577", "296577"), 10);
+                let s = parseInt((n = "296593", "296593"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315694,4 +315697,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.56f874fc9506b2fa5f95.js.map
+//# sourceMappingURL=71586.203f493830ddebe1b145.js.map
