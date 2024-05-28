@@ -37021,7 +37021,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296530", ", Version Hash: ").concat("03b68e32494cd19058890b35f63142e522609b95")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296532", ", Version Hash: ").concat("d50942977773b7b9cfb6644524092b2e4dad9e9d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88550,8 +88550,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296530", "296530"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296530")), t = 0), t
+                let t = parseInt((e = "296532", "296532"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296532")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116534,8 +116534,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296530",
-                    versionHash: "03b68e32494cd19058890b35f63142e522609b95"
+                    buildNumber: "296532",
+                    versionHash: "d50942977773b7b9cfb6644524092b2e4dad9e9d"
                 }
             }
             n.r(t), n.d(t, {
@@ -174100,8 +174100,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716910623894",
-                                    build_number: "296530"
+                                    built_at: "1716910905783",
+                                    build_number: "296532"
                                 }
                             },
                             retries: 1
@@ -191297,24 +191297,18 @@
         977156: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                QuestBarExperiment: function() {
-                    return _
-                },
-                QuestBarExperimentVariants: function() {
-                    return r
-                },
                 getIsEligibleForQuests: function() {
-                    return o
+                    return s
                 },
                 isQuestPreviewToolEnabled: function() {
-                    return d
+                    return l
                 },
                 useIsEligibleForQuests: function() {
-                    return l
+                    return a
                 }
             });
-            var i, r, s = n("818083");
-            let a = (0, s.createExperiment)({
+            var i = n("818083");
+            let r = (0, i.createExperiment)({
                     id: "2023-12_quests",
                     kind: "user",
                     label: "Quests",
@@ -191335,27 +191329,27 @@
                         }
                     }]
                 }),
-                o = e => {
+                s = e => {
                     let {
                         location: t
                     } = e;
-                    return a.getCurrentConfig({
+                    return r.getCurrentConfig({
                         location: t
                     }, {
                         autoTrackExposure: !1
                     }).enabled
                 },
-                l = e => {
+                a = e => {
                     let {
                         location: t
                     } = e;
-                    return a.useExperiment({
+                    return r.useExperiment({
                         location: t
                     }, {
                         autoTrackExposure: !1
                     }).enabled
                 },
-                u = (0, s.createExperiment)({
+                o = (0, i.createExperiment)({
                     id: "2024-04_quest_preview_tool",
                     kind: "user",
                     label: "Quest Preview Tool",
@@ -191371,40 +191365,16 @@
                     }]
                 });
 
-            function d(e) {
+            function l(e) {
                 let {
                     location: t
                 } = e;
-                return u.getCurrentConfig({
+                return o.getCurrentConfig({
                     location: t
                 }, {
                     autoTrackExposure: !1
                 }).enabled
-            }(i = r || (r = {}))[i.V1 = 0] = "V1", i[i.V2 = 1] = "V2";
-            let _ = (0, s.createExperiment)({
-                id: "2024-05_quest_bar",
-                kind: "user",
-                label: "Quest Bar",
-                defaultConfig: {
-                    primaryVariant: 0,
-                    progressVariant: 0
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Quest Bar V2 with V1 Progress",
-                    config: {
-                        primaryVariant: 1,
-                        progressVariant: 0
-                    }
-                }, {
-                    id: 2,
-                    label: "Quest Bar V2",
-                    config: {
-                        primaryVariant: 1,
-                        progressVariant: 1
-                    }
-                }]
-            })
+            }
         },
         5881: function(e, t, n) {
             "use strict";
@@ -251471,7 +251441,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "03b68e32494cd19058890b35f63142e522609b95"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d50942977773b7b9cfb6644524092b2e4dad9e9d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280605,7 +280575,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296530"
+                                build_number: "296532"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287969,7 +287939,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296530", "296530"), 10);
+                let s = parseInt((n = "296532", "296532"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315724,4 +315694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.d27792b898a8259d2d3a.js.map
+//# sourceMappingURL=71586.ba0c6b2f5296d746a1bd.js.map
