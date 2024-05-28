@@ -5261,6 +5261,17 @@
                 wildCardText: "wildCardText_c764c9"
             }
         },
+        706351: function(e) {
+            "use strict";
+            e.exports = {
+                clickableGame: "clickableGame_b4a78f",
+                container: "container_b4fcdf",
+                defaultGame: "defaultGame__57e3b",
+                errorWrapper: "errorWrapper__969d1",
+                recentGamesDivider: "recentGamesDivider__09927",
+                selectedSection: "selectedSection__6b9ac"
+            }
+        },
         590190: function(e) {
             "use strict";
             e.exports = {
@@ -5357,12 +5368,8 @@
                 addText: "addText__8f18c",
                 checkmark: "checkmark_c7b206",
                 clickable: "clickable_a588cd",
-                clickableGame: "clickableGame__38602",
                 content: "content_c05082",
                 contentLabel: "contentLabel_aa05d5",
-                contentWithMinHeight: "contentWithMinHeight__78ad4",
-                defaultGame: "defaultGame__386c8",
-                divider: "divider_b5fb95",
                 enterToSearchText: "enterToSearchText_c64e49",
                 errorText: "errorText__34a8a",
                 fixedWidthSidebar: "fixedWidthSidebar__39d7a",
@@ -5385,7 +5392,6 @@
                 plusIcon: "plusIcon__22efe",
                 selectableOption: "selectableOption_d3c1a6",
                 selectedOption: "selectedOption__82947",
-                selectedSection: "selectedSection__5c175",
                 slideContent: "slideContent__6ae94",
                 slideContentWithSidebar: "slideContentWithSidebar__251be slideContent__6ae94",
                 stepNum: "stepNum_b5f2f3",
@@ -7339,6 +7345,8 @@
                 gamesTooltip: "gamesTooltip_cdb5ec",
                 preferences: "preferences__16c1a",
                 toolbar: "toolbar__2fcb0",
+                tooltipContentWrapper: "tooltipContentWrapper_c880ba",
+                tooltipHoverBridge: "tooltipHoverBridge__6cec0",
                 trait: "trait__847e0",
                 traitsTooltip: "traitsTooltip__02c2a"
             }

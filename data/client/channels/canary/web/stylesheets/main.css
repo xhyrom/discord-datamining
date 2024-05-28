@@ -1133,7 +1133,7 @@
 .footer__7a7bf {
     display: flex;
     flex-direction: row;
-    padding: 0 24px 24px;
+    padding: 12px 24px;
     align-items: center
 }
 
@@ -45480,38 +45480,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding-bottom: 40px
 }
 
-.contentWithMinHeight__78ad4 {
-    min-height: 300px
-}
-
-.contentLabel_aa05d5 {
-    margin-bottom: 8px
-}
-
-.selectedSection__5c175 {
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 8px
-}
-
-.clickableGame__38602 {
-    cursor: pointer;
-    transition: transform ease-in-out.2s
-}
-
-.clickableGame__38602:hover {
-    transform: translatey(-2px)
-}
-
-.clickableGame__38602:active {
-    transform: translatey(2px)scale(.98)
-}
-
-.defaultGame__386c8 {
-    opacity: .8
-}
-
+.contentLabel_aa05d5,
 .interestsCategoryTitle__18aeb {
     margin-bottom: 8px
 }
@@ -45577,11 +45546,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     position: absolute;
     right: 12px;
     top: 12px
-}
-
-.divider_b5fb95 {
-    border-top: 1px solid var(--border-subtle);
-    margin-bottom: 40px
 }
 
 .playstyleTitle__00d17 {
@@ -45913,6 +45877,43 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     align-items: center
 }
 
+.container_b4fcdf {
+    width: 800px
+}
+
+.selectedSection__6b9ac {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px
+}
+
+.clickableGame_b4a78f {
+    cursor: pointer;
+    transition: transform ease-in-out.2s
+}
+
+.clickableGame_b4a78f:hover {
+    transform: translatey(-2px)
+}
+
+.clickableGame_b4a78f:active {
+    transform: translatey(2px)scale(.98)
+}
+
+.defaultGame__57e3b {
+    opacity: .8
+}
+
+.errorWrapper__969d1 {
+    min-height: 300px
+}
+
+.recentGamesDivider__09927 {
+    border-top: 1px solid var(--border-subtle);
+    margin-bottom: 40px
+}
+
 .container__299a3 {
     position: absolute;
     top: 0;
@@ -46061,8 +46062,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     border-radius: 8px;
     border: 1px solid var(--border-subtle);
     -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    overflow: hidden
+    backdrop-filter: blur(4px)
 }
 
 .filterTooltipAutoWidth__2ad07 {
@@ -46074,6 +46074,24 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex;
     flex-direction: column;
     gap: 8px
+}
+
+.tooltipHoverBridge__6cec0 {
+    position: absolute;
+    top: -16px;
+    left: -8px;
+    right: -8px;
+    height: 16px
+}
+
+.tooltipContentWrapper_c880ba {
+    position: relative;
+    cursor: pointer;
+    transition: transform.1s ease-in-out
+}
+
+.tooltipContentWrapper_c880ba:active {
+    transform: translatey(2px)scale(.98)
 }
 
 .traitsTooltip__02c2a {
@@ -142485,4 +142503,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d879f9f172625bce6ee9.css.map*/
+/*# sourceMappingURL=99387.c75c77fd17688e0d2a35.css.map*/
