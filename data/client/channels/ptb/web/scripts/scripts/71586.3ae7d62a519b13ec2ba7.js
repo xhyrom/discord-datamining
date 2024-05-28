@@ -37017,7 +37017,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296706", ", Version Hash: ").concat("81b933cc011912b746f1d7686f90e947d9676ae8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296720", ", Version Hash: ").concat("1a314ef983b624c938b65ac48ffdff8c596a2d0d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -48812,6 +48812,27 @@
                 APPLICATION_COMMAND_USER_INSTALL_BETA_EPHEMERAL_MOBILE: "Only you can see this message during beta • [Dismiss](handleDelete)",
                 APPLICATION_COMMAND_USER_INSTALL_VIEW_HELP_ARTICLE: "View Help Article",
                 APPLICATION_COMMAND_USER_INSTALL_LEARN_MORE: "[Learn More]({learnMoreUrl})",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_WITH_REASON: "Only you can see this message.\n\n{reason} • [Dismiss](handleDelete)",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_WITH_REASON_MOBILE: "Only you can see this message.\n{reason} • [Dismiss](handleDelete)",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND: "Message Cannot be Sent",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_USE_COMMAND: "You cannot use this command in this channel",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_AUTOMOD_BLOCKED: "This message was blocked by AutoMod. The message may also be viewed by the community owners.",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_HARMFUL_LINK: "This message contains a link blocked by Discord.",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_BETA: "Only you can see this message during beta",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_UNKNOWN: "An unknown error occurred",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_FEATURE_LIMITED: "This feature is temporarily limited",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_GUILD_FEATURE_LIMITED: "This feature is temporarily limited for this server",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_USER_FEATURE_LIMITED: "This feature is temporarily limited for you",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_SLOWMODE: "You are sending messages too quickly",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_RATE_LIMIT: "You are being rate limited",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_MESSAGE_USER: "You cannot message this user",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_USER_VERIFICATION_LEVEL: "You do not meet this server's verification level",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_UNARCHIVE_THREAD: "You cannot unarchive this thread",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_JOIN_THREAD: "You cannot join this thread",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_MISSING_PERMISSIONS: "You cannot send messages in this channel",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_ATTACHMENTS: "You cannot send attachments in this channel",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_EMBEDS: "You cannot send embeds in this channel",
+                APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_STICKERS: "You cannot send stickers in this channel",
                 MJ_CHATBAR_BODY: "Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.",
                 APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
                 INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
@@ -77424,26 +77445,20 @@
         824203: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useIsMessageInteractionForcedEphemeral: function() {
-                    return u
+                getEphemeralReasonMessage: function() {
+                    return _
                 },
                 useShouldShowUserAppBetaNoticeForCommand: function() {
                     return d
                 }
-            });
-            var i = n("373793"),
+            }), n("373793");
+            var i = n("39621"),
                 r = n("911969"),
                 s = n("213459"),
                 a = n("581364"),
                 o = n("807169"),
-                l = n("104793");
-
-            function u(e, t, n) {
-                let r = (0, a.useIsGuildInUserAppExperiment)(null == t ? void 0 : t.guild_id, n);
-                if (null == e.interactionMetadata || r) return !1;
-                let s = e.interactionMetadata.authorizing_integration_owners;
-                return 1 === Object.keys(s).length && i.ApplicationIntegrationType.USER_INSTALL in s
-            }
+                l = n("104793"),
+                u = n("689938");
 
             function d(e, t, n) {
                 var i, u, d, _;
@@ -77465,6 +77480,47 @@
                 }
                 let N = null === (_ = E.result) || void 0 === _ ? void 0 : null === (d = _.sections[e.applicationId]) || void 0 === d ? void 0 : d.commands;
                 return null != N && e.id in N
+            }
+
+            function _(e) {
+                switch (e) {
+                    case i.EphemeralMessageReason.FEATURE_LIMITED:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_FEATURE_LIMITED;
+                    case i.EphemeralMessageReason.GUILD_FEATURE_LIMITED:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_GUILD_FEATURE_LIMITED;
+                    case i.EphemeralMessageReason.USER_FEATURE_LIMITED:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_USER_FEATURE_LIMITED;
+                    case i.EphemeralMessageReason.SLOWMODE:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_SLOWMODE;
+                    case i.EphemeralMessageReason.RATE_LIMIT:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_RATE_LIMIT;
+                    case i.EphemeralMessageReason.CANNOT_MESSAGE_USER:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_MESSAGE_USER;
+                    case i.EphemeralMessageReason.USER_VERIFICATION_LEVEL:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_USER_VERIFICATION_LEVEL;
+                    case i.EphemeralMessageReason.CANNOT_UNARCHIVE_THREAD:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_UNARCHIVE_THREAD;
+                    case i.EphemeralMessageReason.CANNOT_JOIN_THREAD:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_JOIN_THREAD;
+                    case i.EphemeralMessageReason.MISSING_PERMISSIONS:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_MISSING_PERMISSIONS;
+                    case i.EphemeralMessageReason.CANNOT_SEND_ATTACHMENTS:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_ATTACHMENTS;
+                    case i.EphemeralMessageReason.CANNOT_SEND_EMBEDS:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_EMBEDS;
+                    case i.EphemeralMessageReason.CANNOT_SEND_STICKERS:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_STICKERS;
+                    case i.EphemeralMessageReason.AUTOMOD_BLOCKED:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_AUTOMOD_BLOCKED;
+                    case i.EphemeralMessageReason.HARMFUL_LINK:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_HARMFUL_LINK;
+                    case i.EphemeralMessageReason.CANNOT_USE_COMMAND:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_USE_COMMAND;
+                    case i.EphemeralMessageReason.BETA_GUILD_SIZE:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_BETA;
+                    default:
+                        return u.default.Messages.APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_UNKNOWN
+                }
             }
         },
         581364: function(e, t, n) {
@@ -77507,7 +77563,7 @@
                     return D
                 },
                 isGuildInUserAppExperiment: function() {
-                    return B
+                    return k
                 },
                 isSnowflake: function() {
                     return O
@@ -77516,10 +77572,7 @@
                     return w
                 },
                 trackCommandSelected: function() {
-                    return V
-                },
-                useIsGuildInUserAppExperiment: function() {
-                    return k
+                    return B
                 },
                 useIsUserInUserAppExperiment: function() {
                     return G
@@ -77813,21 +77866,13 @@
             }
 
             function k(e, t, n) {
-                let i = S.default.useExperiment({
-                    guildId: null != e ? e : A.EMPTY_STRING_SNOWFLAKE_ID,
-                    ...t
-                }, n);
-                return null == e || i.userAppsTreatment === f.UserAppsTreatment.ALLOWED
-            }
-
-            function B(e, t, n) {
                 return null == e || S.default.getCurrentConfig({
                     guildId: e,
                     ...t
                 }, n).userAppsTreatment === f.UserAppsTreatment.ALLOWED
             }
 
-            function V(e) {
+            function B(e) {
                 var t, n;
                 let {
                     command: i,
@@ -88566,8 +88611,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296706", "296706"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296706")), t = 0), t
+                let t = parseInt((e = "296720", "296720"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296720")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116571,8 +116616,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296706",
-                    versionHash: "81b933cc011912b746f1d7686f90e947d9676ae8"
+                    buildNumber: "296720",
+                    versionHash: "1a314ef983b624c938b65ac48ffdff8c596a2d0d"
                 }
             }
             n.r(t), n.d(t, {
@@ -117106,7 +117151,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("28020"), n.e("32948"), n.e("20703"), n.e("29549"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("6416"), n.e("63438"), n.e("58600"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("49146"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("17938"), n.e("81539"), n.e("58286"), n.e("76540"), n.e("8739"), n.e("41947"), n.e("30243"), n.e("3084"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("65866"), n.e("23404"), n.e("99365"), n.e("97188"), n.e("15357"), n.e("10655"), n.e("84184"), n.e("3682"), n.e("18824"), n.e("88331"), n.e("49508"), n.e("5528"), n.e("89333"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("55981"), n.e("54807"), n.e("18050")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("28020"), n.e("32948"), n.e("20703"), n.e("29549"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("6416"), n.e("63438"), n.e("58600"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("49146"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("17938"), n.e("81539"), n.e("58286"), n.e("76540"), n.e("8739"), n.e("41947"), n.e("30243"), n.e("3084"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("65866"), n.e("23404"), n.e("99365"), n.e("97188"), n.e("15357"), n.e("10655"), n.e("3682"), n.e("18824"), n.e("88331"), n.e("49508"), n.e("5528"), n.e("9737"), n.e("34446"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("55981"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -174119,8 +174164,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716929022128",
-                                    build_number: "296706"
+                                    built_at: "1716930326079",
+                                    build_number: "296720"
                                 }
                             },
                             retries: 1
@@ -251418,7 +251463,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "81b933cc011912b746f1d7686f90e947d9676ae8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1a314ef983b624c938b65ac48ffdff8c596a2d0d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280552,7 +280597,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296706"
+                                build_number: "296720"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287916,7 +287961,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296706", "296706"), 10);
+                let s = parseInt((n = "296720", "296720"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314668,6 +314713,15 @@
                 }
             }), (r = i || (i = {})).ANIMATED_EMOJIS = "animatedEmojis", r.EMOJIS_EVERYWHERE = "emojisEverywhere", r.STICKERS_EVERYWHERE = "stickersEverywhere", r.SOUNDBOARD_EVERYWHERE = "soundboardEverywhere", r.ANIMATED_AVATAR = "animatedAvatar", r.CUSTOM_DISCRIMINATOR = "customDiscriminator", r.PREMIUM_GUILD_MEMBER_PROFILE = "premiumGuildMemberProfile", r.PROFILE_PREMIUM_FEATURES = "profilePremiumFeatures", r.STREAM_MID_QUALITY = "streamMidQuality", r.STREAM_HIGH_QUALITY = "streamHighQuality", r.VIDEO_FILTER_ASSETS = "videoFilterAssets", r.INCREASED_FILE_UPLOAD_SIZE = "increasedFileUploadSize", r.INCREASED_GUILD_LIMIT = "increasedGuildLimit", r.INCREASED_MESSAGE_LENGTH = "increasedMessageLength", r.NITRO_REACTION_TOGGLE = "nitroReactionToggle", r.CLIENT_THEMES = "clientThemes", r.PREMIUM_COLLECTIBLES = "premiumCollectibles", r.CUSTOM_CALL_SOUNDS = "customCallSounds", r.CUSTOM_NOTIFICATION_SOUNDS = "customNotificationSounds"
         },
+        39621: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                EphemeralMessageReason: function() {
+                    return i
+                }
+            }), (r = i || (i = {}))[r.NONE = 0] = "NONE", r[r.FEATURE_LIMITED = 1] = "FEATURE_LIMITED", r[r.GUILD_FEATURE_LIMITED = 2] = "GUILD_FEATURE_LIMITED", r[r.USER_FEATURE_LIMITED = 3] = "USER_FEATURE_LIMITED", r[r.SLOWMODE = 4] = "SLOWMODE", r[r.RATE_LIMIT = 5] = "RATE_LIMIT", r[r.CANNOT_MESSAGE_USER = 6] = "CANNOT_MESSAGE_USER", r[r.USER_VERIFICATION_LEVEL = 7] = "USER_VERIFICATION_LEVEL", r[r.CANNOT_UNARCHIVE_THREAD = 8] = "CANNOT_UNARCHIVE_THREAD", r[r.CANNOT_JOIN_THREAD = 9] = "CANNOT_JOIN_THREAD", r[r.MISSING_PERMISSIONS = 10] = "MISSING_PERMISSIONS", r[r.CANNOT_SEND_ATTACHMENTS = 11] = "CANNOT_SEND_ATTACHMENTS", r[r.CANNOT_SEND_EMBEDS = 12] = "CANNOT_SEND_EMBEDS", r[r.CANNOT_SEND_STICKERS = 13] = "CANNOT_SEND_STICKERS", r[r.AUTOMOD_BLOCKED = 14] = "AUTOMOD_BLOCKED", r[r.HARMFUL_LINK = 15] = "HARMFUL_LINK", r[r.CANNOT_USE_COMMAND = 16] = "CANNOT_USE_COMMAND", r[r.BETA_GUILD_SIZE = 17] = "BETA_GUILD_SIZE"
+        },
         587158: function(e, t, n) {
             "use strict";
             var i, r;
@@ -315671,4 +315725,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.d66fa8169b882e966ccf.js.map
+//# sourceMappingURL=71586.3ae7d62a519b13ec2ba7.js.map
