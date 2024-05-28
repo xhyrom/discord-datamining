@@ -37021,7 +37021,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296490", ", Version Hash: ").concat("38584a3a8e2bd485e83186234c1f0ddfe0663244")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296501", ", Version Hash: ").concat("7d4e729828738b345de7f32f24485659dea8ed42")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88550,8 +88550,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296490", "296490"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296490")), t = 0), t
+                let t = parseInt((e = "296501", "296501"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296501")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114300,83 +114300,101 @@
                 T = 0,
                 f = null;
 
-            function S() {
-                A()
+            function S(e) {
+                i.default.dispatch({
+                    type: "CONTENT_INVENTORY_SET_FEED_STATE",
+                    feedId: c,
+                    state: e
+                })
             }
 
             function h() {
+                m()
+            }
+
+            function A() {
                 if (!(0, l.isEligibleForContentInventoryV1)("ContentInventoryManager") || I || d.default.hidden || !o.default.isFocused() || !s.default.isConnected()) return !1;
                 let e = a.default.getIdleSince();
                 return !(null != e && Date.now() - e > 9e5) && !0
             }
 
-            function A() {
-                clearTimeout(E), E = null
+            function m() {
+                S({
+                    loading: !1
+                }), clearTimeout(E), E = null
             }
 
-            function m() {
-                if (A(), !h()) return;
+            function N() {
+                if (m(), !A()) return;
                 let e = d.default.getFeed(c);
                 if ((null == e ? void 0 : e.refresh_stale_inbox_after_ms) != null && null == f) return;
-                let t = null != f ? f : null == e ? void 0 : e.expired_at;
-                E = setTimeout(() => N(), Math.max(0, null == t ? 0 : new Date(t).getTime() - Date.now()))
+                let t = null != f ? f : null == e ? void 0 : e.expired_at,
+                    n = null == t ? 0 : new Date(t).getTime() - Date.now();
+                S({
+                    loading: !1,
+                    nextFetchDate: new Date(Date.now() + n)
+                }), E = setTimeout(() => p(), Math.max(0, n))
             }
-            async function N() {
+            async function p() {
                 let {
                     force: e = !1
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                if (h() || e) try {
-                    I = !0;
+                if (A() || e) try {
+                    I = !0, S({
+                        loading: !0
+                    });
                     let e = await (0, u.getMyContentInventory)();
                     i.default.dispatch({
                         type: "CONTENT_INVENTORY_SET_FEED",
                         feedId: c,
                         feed: e
-                    }), T = 0, I = !1, f = null, m()
+                    }), T = 0, I = !1, S({
+                        loading: !1
+                    }), f = null, N()
                 } catch (e) {
-                    T < 3 ? (E = setTimeout(() => N(), 1e3 * Math.pow(5, T)), T += 1) : i.default.dispatch({
+                    T < 3 ? (E = setTimeout(() => p(), 1e3 * Math.pow(5, T)), T += 1) : i.default.dispatch({
                         type: "CONTENT_INVENTORY_CLEAR_FEED",
                         feedId: c
                     }), I = !1
                 }
             }
 
-            function p() {
-                m()
+            function O() {
+                N()
             }
 
-            function O() {
-                A(), N({
+            function C() {
+                m(), p({
                     force: !0
                 })
             }
 
-            function C(e) {
+            function R(e) {
                 let {
                     refreshAfterMs: t
                 } = e, n = d.default.getFeed(c);
-                if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null) f = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), m()
+                if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null) f = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), N()
             }
 
-            function R(e) {
+            function g(e) {
                 let {
                     connectionId: t,
                     track: n
                 } = e;
                 if (null != t)(0, l.isEligibleForListenedMediaInventory)("ContentInventoryManager.handleSpotifyNewTrack") && (0, u.postTrackToContentInventory)(t, n)
             }
-            class g extends r.default {
+            class L extends r.default {
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: p,
-                        CONNECTION_CLOSED: S,
-                        WINDOW_FOCUS: p,
-                        IDLE: p,
-                        CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: p,
-                        CONTENT_INVENTORY_MANUAL_REFRESH: O,
-                        CONTENT_INVENTORY_INBOX_STALE: C,
-                        SPOTIFY_NEW_TRACK: R
+                        POST_CONNECTION_OPEN: O,
+                        CONNECTION_CLOSED: h,
+                        WINDOW_FOCUS: O,
+                        IDLE: O,
+                        CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: O,
+                        CONTENT_INVENTORY_MANUAL_REFRESH: C,
+                        CONTENT_INVENTORY_INBOX_STALE: R,
+                        SPOTIFY_NEW_TRACK: g
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -114385,76 +114403,90 @@
                     }) : t[n] = i
                 }
             }
-            t.default = new g
+            t.default = new L
         },
         146282: function(e, t, n) {
             "use strict";
-            let i;
+            let i, r;
             n.r(t), n("47120");
-            var r, s, a, o, l = n("442837"),
-                u = n("570140");
-            let d = new Map,
-                _ = !1,
-                c = !1;
+            var s, a, o, l, u = n("442837"),
+                d = n("570140");
+            let _ = new Map,
+                c = new Map,
+                E = !1,
+                I = !1;
 
-            function E(e) {
-                e(d), d = new Map(d)
+            function T(e) {
+                e(_), _ = new Map(_)
             }
-            class I extends(r = l.default.Store) {
+            class f extends(s = u.default.Store) {
                 getFeeds() {
-                    return d
+                    return _
                 }
                 getFeed(e) {
-                    return d.get(e)
+                    return _.get(e)
+                }
+                getFeedState(e) {
+                    return c.get(e)
+                }
+                getLastFeedFetchDate() {
+                    return i
                 }
                 getFilters() {
-                    return i
+                    return r
                 }
                 getFeedRequestId(e) {
                     var t;
                     return null === (t = this.getFeed(e)) || void 0 === t ? void 0 : t.request_id
                 }
                 getDebugImpressionCappingDisabled() {
-                    return c
+                    return I
                 }
                 get hidden() {
-                    return _
+                    return E
                 }
             }
-            o = "ContentInventoryStore", (a = "displayName") in(s = I) ? Object.defineProperty(s, a, {
-                value: o,
+            l = "ContentInventoryStore", (o = "displayName") in(a = f) ? Object.defineProperty(a, o, {
+                value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : s[a] = o, t.default = new I(u.default, {
+            }) : a[o] = l, t.default = new f(d.default, {
                 CONNECTION_OPEN: function() {
-                    d = new Map, _ = !1
+                    _ = new Map, E = !1
                 },
                 CONTENT_INVENTORY_SET_FEED: function(e) {
                     let {
                         feedId: t,
                         feed: n
                     } = e;
-                    E(e => e.set(t, n))
+                    T(e => e.set(t, n)), i = new Date
+                },
+                CONTENT_INVENTORY_SET_FEED_STATE: function(e) {
+                    let {
+                        feedId: t,
+                        state: n
+                    } = e;
+                    c.set(t, n)
                 },
                 CONTENT_INVENTORY_SET_FILTERS: function(e) {
                     let {
                         filters: t
                     } = e;
-                    i = t
+                    r = t
                 },
                 CONTENT_INVENTORY_CLEAR_FEED: function(e) {
                     let {
                         feedId: t
                     } = e;
-                    if (!d.has(t)) return !1;
-                    E(e => e.delete(t))
+                    if (!_.has(t)) return !1;
+                    T(e => e.delete(t))
                 },
                 CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: function() {
-                    _ = !_
+                    E = !E
                 },
                 CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING: function() {
-                    c = !c
+                    I = !I
                 }
             })
         },
@@ -116502,8 +116534,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296490",
-                    versionHash: "38584a3a8e2bd485e83186234c1f0ddfe0663244"
+                    buildNumber: "296501",
+                    versionHash: "7d4e729828738b345de7f32f24485659dea8ed42"
                 }
             }
             n.r(t), n.d(t, {
@@ -117037,7 +117069,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("40326"), n.e("80451"), n.e("52110"), n.e("90508"), n.e("93521"), n.e("62856"), n.e("30634"), n.e("23124")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("40326"), n.e("30386"), n.e("80451"), n.e("52110"), n.e("90508"), n.e("93521"), n.e("45074"), n.e("36439"), n.e("30634"), n.e("23124")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -154418,7 +154450,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("53108"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -174068,8 +174100,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716899939302",
-                                    build_number: "296490"
+                                    built_at: "1716904660772",
+                                    build_number: "296501"
                                 }
                             },
                             retries: 1
@@ -251439,7 +251471,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "38584a3a8e2bd485e83186234c1f0ddfe0663244"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7d4e729828738b345de7f32f24485659dea8ed42"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280573,7 +280605,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296490"
+                                build_number: "296501"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287937,7 +287969,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296490", "296490"), 10);
+                let s = parseInt((n = "296501", "296501"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315692,4 +315724,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.ac87b3540fc24237e6a9.js.map
+//# sourceMappingURL=71586.7cf52ff64bddef2001c3.js.map
