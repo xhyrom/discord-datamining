@@ -16241,6 +16241,10 @@ html .progress__00e29 {
     align-items: center
 }
 
+.guildSidebar__5583b {
+    flex-shrink: 0
+}
+
 .guildBreadcrumbIcon__7f689 {
     margin-left: 8px;
     margin-right: 8px
@@ -142481,4 +142485,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4b425d7729f903b4bef6.css.map*/
+/*# sourceMappingURL=99387.d879f9f172625bce6ee9.css.map*/
