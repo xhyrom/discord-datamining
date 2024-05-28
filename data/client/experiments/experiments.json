@@ -11804,6 +11804,32 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-05_quest_bar",
+      "label": "Quest Bar",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Quest Bar V2 with V1 Progress",
+        "Treatment 2: Quest Bar V2"
+      ],
+      "hash": 4231678187,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "primaryVariant",
+        "progressVariant"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-05_quest_home",
       "label": "Quest Home",
       "description": [
@@ -11930,32 +11956,6 @@
       "aa_mode": false,
       "config_keys": [
         "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-05_quest_bar",
-      "label": "Quest Bar",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Quest Bar V2 with V1 Progress",
-        "Treatment 2: Quest Bar V2"
-      ],
-      "hash": 4231678187,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "primaryVariant",
-        "progressVariant"
       ]
     }
   },
