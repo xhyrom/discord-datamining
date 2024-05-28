@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296814", ", Version Hash: ").concat("4fcb5785f3161dbd15fc11595f57d9f4dd3a24aa")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296821", ", Version Hash: ").concat("6f780f86028ca1c44f6bece8b32dbf8c398abd91")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38779,6 +38779,7 @@
                 APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER_BODY: "Swipe up to see more Activities like {activityName}!",
                 APP_LAUNCHER_ONBOARDING_BOTS_BANNER_BODY: "{firstApplicationName}, {secondApplicationName} & more are now in Apps!",
                 APP_LAUNCHER_ONBOARDING_APPS_BANNER_BODY: "Swipe up to find games to play with friends!",
+                APP_LAUNCHER_VIEW_ALL_ROW: "View all",
                 APP_LAUNCHER_VIEW_MORE_ROW: "View more",
                 APP_LAUNCHER_VIEW_LESS_ROW: "View less",
                 APP_LAUNCHER_HOME_LEARN_MORE_SECTION_TITLE: "New to Apps?",
@@ -88616,8 +88617,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296814", "296814"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296814")), t = 0), t
+                let t = parseInt((e = "296821", "296821"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296821")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116621,8 +116622,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296814",
-                    versionHash: "4fcb5785f3161dbd15fc11595f57d9f4dd3a24aa"
+                    buildNumber: "296821",
+                    versionHash: "6f780f86028ca1c44f6bece8b32dbf8c398abd91"
                 }
             }
             n.r(t), n.d(t, {
@@ -174213,8 +174214,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716936188311",
-                                    build_number: "296814"
+                                    built_at: "1716936853551",
+                                    build_number: "296821"
                                 }
                             },
                             retries: 1
@@ -194176,48 +194177,55 @@
         },
         280234: function(e, t, n) {
             "use strict";
-            n.r(t);
-            let i = (0, n("818083").createExperiment)({
+            n.r(t), n.d(t, {
+                isRecentlyOnline: function() {
+                    return r
+                }
+            });
+            var i = n("818083");
+
+            function r(e) {
+                let {
+                    maxRecentMs: t
+                } = s.getCurrentConfig({
+                    location: "n/a"
+                }, {
+                    autoTrackExposure: !1
+                });
+                return Date.now() - e <= t
+            }
+            let s = (0, i.createExperiment)({
                 kind: "user",
                 id: "2024-05_clientside_recently_online_desktop",
                 label: "Recently Online Clientside Desktop",
                 defaultConfig: {
-                    isFriendsAndDMsEnabled: !1,
-                    isGuildMemberListEnabled: !1
+                    isRecentlyOnlineEnabled: !1,
+                    maxRecentMs: -1
                 },
                 treatments: [{
                     id: 1,
-                    label: "Friends/DMs Only",
+                    label: "Enabled: 1h",
                     config: {
-                        isFriendsAndDMsEnabled: !0,
-                        isGuildMemberListEnabled: !1
+                        isRecentlyOnlineEnabled: !0,
+                        maxRecentMs: 36e5
                     }
                 }, {
                     id: 2,
-                    label: "Guild Member List Only",
+                    label: "Enabled: 4h",
                     config: {
-                        isFriendsAndDMsEnabled: !1,
-                        isGuildMemberListEnabled: !0
+                        isRecentlyOnlineEnabled: !0,
+                        maxRecentMs: 144e5
                     }
                 }, {
                     id: 3,
-                    label: "Friends/DMs and Guild Member List",
+                    label: "Enabled: 48h",
                     config: {
-                        isFriendsAndDMsEnabled: !0,
-                        isGuildMemberListEnabled: !0
+                        isRecentlyOnlineEnabled: !0,
+                        maxRecentMs: 1728e5
                     }
                 }]
             });
-            t.default = i
-        },
-        764921: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                MAX_RECENTLY_ONLINE_TIME: function() {
-                    return i
-                }
-            });
-            let i = 72e5
+            t.default = s
         },
         480384: function(e, t, n) {
             "use strict";
@@ -194267,7 +194275,7 @@
             function a(e) {
                 if (!(0, i.isDesktop)()) return !1;
                 let {
-                    isGuildMemberListEnabled: t
+                    isRecentlyOnlineEnabled: t
                 } = r.default.getCurrentConfig({
                     location: "guild-subscriptions-store"
                 }, {
@@ -230175,19 +230183,19 @@
                 _ = n("442837"),
                 c = n("570140"),
                 E = n("353926"),
-                I = n("653733"),
-                T = n("700785"),
-                f = n("199902"),
-                S = n("314897"),
-                h = n("592125"),
-                A = n("650774"),
-                m = n("271383"),
-                N = n("430824"),
-                p = n("158776"),
-                O = n("885110"),
-                C = n("594174"),
-                R = n("981631"),
-                g = n("764921"),
+                I = n("280234"),
+                T = n("653733"),
+                f = n("700785"),
+                S = n("199902"),
+                h = n("314897"),
+                A = n("592125"),
+                m = n("650774"),
+                N = n("271383"),
+                p = n("430824"),
+                O = n("158776"),
+                C = n("885110"),
+                R = n("594174"),
+                g = n("981631"),
                 L = n("689938");
 
             function v(e, t, n) {
@@ -230203,15 +230211,15 @@
 
             function y(e, t, n, i) {
                 switch (t) {
-                    case R.StatusTypes.ONLINE:
-                    case R.StatusTypes.OFFLINE:
-                    case R.StatusTypes.UNKNOWN:
+                    case g.StatusTypes.ONLINE:
+                    case g.StatusTypes.OFFLINE:
+                    case g.StatusTypes.UNKNOWN:
                         return {
                             type: "GROUP", key: t, id: t, get title() {
                                 switch (t) {
-                                    case R.StatusTypes.ONLINE:
+                                    case g.StatusTypes.ONLINE:
                                         return L.default.Messages.STATUS_ONLINE;
-                                    case R.StatusTypes.OFFLINE:
+                                    case g.StatusTypes.OFFLINE:
                                         return L.default.Messages.STATUS_OFFLINE;
                                     default:
                                         return L.default.Messages.STATUS_UNKNOWN
@@ -230225,8 +230233,8 @@
                             }, count: n, index: i
                         };
                     default:
-                        let r = N.default.getGuild(e),
-                            s = null != r ? N.default.getRole(r.id, t) : null;
+                        let r = p.default.getGuild(e),
+                            s = null != r ? p.default.getRole(r.id, t) : null;
                         return {
                             type: "GROUP", key: t, id: t, title: null != s ? s.name : "", count: n, index: i
                         }
@@ -230234,17 +230242,17 @@
             }
 
             function P(e, t, n) {
-                let i = n === S.default.getId(),
-                    r = p.default.isMobileOnline(n),
-                    s = i ? O.default.getStatus() : p.default.getStatus(n, e),
-                    a = i ? O.default.getActivities() : p.default.getActivities(n, e),
-                    o = f.default.getStreamForUser(n, e),
-                    l = C.default.getUser(n),
-                    u = p.default.getLastOnlineTimestamp(n),
-                    d = null != u && Date.now() - u < g.MAX_RECENTLY_ONLINE_TIME;
+                let i = n === h.default.getId(),
+                    r = O.default.isMobileOnline(n),
+                    s = i ? C.default.getStatus() : O.default.getStatus(n, e),
+                    a = i ? C.default.getActivities() : O.default.getActivities(n, e),
+                    o = S.default.getStreamForUser(n, e),
+                    l = R.default.getUser(n),
+                    u = O.default.getLastOnlineTimestamp(n),
+                    d = null != u && (0, I.isRecentlyOnline)(u);
                 return null == l ? null : {
                     type: "MEMBER",
-                    ...m.default.getMember(e, n),
+                    ...N.default.getMember(e, n),
                     user: l,
                     status: s,
                     activities: a,
@@ -230256,23 +230264,23 @@
             }
 
             function U(e) {
-                let t = h.default.getChannel(e);
+                let t = A.default.getChannel(e);
                 return null == t ? D : null == t.memberListId ? function(e) {
-                    return T.canEveryone(R.Permissions.VIEW_CHANNEL, e) ? D : u().v3(o()(e.permissionOverwrites).reduce((e, t) => {
+                    return f.canEveryone(g.Permissions.VIEW_CHANNEL, e) ? D : u().v3(o()(e.permissionOverwrites).reduce((e, t) => {
                         let {
                             id: n,
                             allow: i,
                             deny: r
                         } = t;
-                        return d.has(i, R.Permissions.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : d.has(r, R.Permissions.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
+                        return d.has(i, g.Permissions.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : d.has(r, g.Permissions.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
                     }, []).sort().join(",")).toString()
                 }(t) : t.memberListId
             }(s = i || (i = {})).GROUP = "GROUP", s.MEMBER = "MEMBER", s.CONTENT_INVENTORY = "CONTENT_INVENTORY", s.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP", s.HIDDEN_CONTENT_INVENTORY = "HIDDEN_CONTENT_INVENTORY";
             class b {
                 updateOwnerId() {
-                    let e = N.default.getGuild(this.guildId);
+                    let e = p.default.getGuild(this.guildId);
                     if (null == e) return !1;
-                    let t = T.getGuildVisualOwnerId(e);
+                    let t = f.getGuildVisualOwnerId(e);
                     return this.ownerId !== t && (this.ownerId = t, !0)
                 }
                 setGroups(e) {
@@ -230340,13 +230348,13 @@
                 }
                 syncRecentlyOfflineList() {
                     var e, t;
-                    if (!(0, I.isGuildEligibleForRecentlyOnlineExperiment)(this.guildId) || this.rows.length >= 99) {
+                    if (!(0, T.isGuildEligibleForRecentlyOnlineExperiment)(this.guildId) || this.rows.length >= 99) {
                         this.experimentalGroups = [], this.experimentalRows = [];
                         return
                     }
                     let n = [],
                         i = [],
-                        r = this.rows.findIndex(e => "GROUP" === e.type && e.id === R.StatusTypes.OFFLINE);
+                        r = this.rows.findIndex(e => "GROUP" === e.type && e.id === g.StatusTypes.OFFLINE);
                     if (r < 0) {
                         this.experimentalGroups = [], this.experimentalRows = [];
                         return
@@ -230356,12 +230364,12 @@
                     for (let e = r; e < this.rows.length; e++) {
                         let t = this.rows[e];
                         if (null != t && "MEMBER" === t.type) {
-                            if (t.status === R.StatusTypes.OFFLINE && null != t.lastOnlineTimestamp) {
+                            if (t.status === g.StatusTypes.OFFLINE && null != t.lastOnlineTimestamp) {
                                 let e = {
                                     ...t
                                 };
                                 n.push(e)
-                            } else(t.status === R.StatusTypes.OFFLINE || t.status === R.StatusTypes.INVISIBLE) && i.push({
+                            } else(t.status === g.StatusTypes.OFFLINE || t.status === g.StatusTypes.INVISIBLE) && i.push({
                                 ...t
                             })
                         }
@@ -230371,7 +230379,7 @@
                         return (null !== (n = t.lastOnlineTimestamp) && void 0 !== n ? n : 0) - (null !== (i = e.lastOnlineTimestamp) && void 0 !== i ? i : 0)
                     });
                     let a = [...this.groups];
-                    if (a = a.filter(e => e.id !== R.StatusTypes.OFFLINE), n.length > 0) {
+                    if (a = a.filter(e => e.id !== g.StatusTypes.OFFLINE), n.length > 0) {
                         let t = a[a.length - 1],
                             i = null != t ? (null !== (e = t.index) && void 0 !== e ? e : 0) + t.count + 1 : 0,
                             r = y(this.guildId, "recently-online", n.length, i);
@@ -230380,7 +230388,7 @@
                     if (i.length > 0) {
                         let e = a[a.length - 1],
                             n = null != e ? (null !== (t = e.index) && void 0 !== t ? t : 0) + e.count + 1 : 0,
-                            r = y(this.guildId, R.StatusTypes.OFFLINE, i.length, n);
+                            r = y(this.guildId, g.StatusTypes.OFFLINE, i.length, n);
                         a.push(r), s.push(r), s.push(...i)
                     }
                     this.experimentalGroups = a, this.experimentalRows = s
@@ -230395,7 +230403,7 @@
                     null == n && (n = this._guildLists[e] = {});
                     let i = n[t];
                     return null == i && ((i = new b(e, t)).setGroups([{
-                        id: R.StatusTypes.UNKNOWN,
+                        id: g.StatusTypes.UNKNOWN,
                         count: 0
                     }]), n[t] = i), i
                 }
@@ -230425,7 +230433,7 @@
             let k = [];
 
             function B() {
-                let e = f.default.getAllApplicationStreams(),
+                let e = S.default.getAllApplicationStreams(),
                     t = k.concat(e);
                 k = e, t.forEach(e => {
                     G.forEach(null, t => t.rebuildMember(e.ownerId, !0))
@@ -230433,12 +230441,12 @@
             }
 
             function V() {
-                let e = S.default.getId();
+                let e = h.default.getId();
                 G.forEach(null, t => t.rebuildMember(e, !0))
             }
             class x extends(r = _.default.Store) {
                 initialize() {
-                    this.waitFor(C.default, N.default, h.default, m.default, p.default, O.default, S.default, A.default, f.default, E.default), this.syncWith([O.default], V), this.syncWith([f.default], B)
+                    this.waitFor(R.default, p.default, A.default, N.default, O.default, C.default, h.default, m.default, S.default, E.default), this.syncWith([C.default], V), this.syncWith([S.default], B)
                 }
                 getProps(e, t) {
                     let n = G.get(e, U(t));
@@ -251525,7 +251533,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4fcb5785f3161dbd15fc11595f57d9f4dd3a24aa"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6f780f86028ca1c44f6bece8b32dbf8c398abd91"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280659,7 +280667,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296814"
+                                build_number: "296821"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288023,7 +288031,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296814", "296814"), 10);
+                let s = parseInt((n = "296821", "296821"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315787,4 +315795,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.2d49aea5852ad56496a9.js.map
+//# sourceMappingURL=71586.63a06bb397fa74190171.js.map
