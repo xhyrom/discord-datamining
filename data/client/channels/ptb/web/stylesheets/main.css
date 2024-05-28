@@ -45079,8 +45079,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -72284,10 +72284,6 @@ html .invoiceCancelRow_aa7946 {
     padding: 4px 8px
 }
 
-.partnerBranding__96958 {
-    flex: 1 0 auto
-}
-
 .questUnacceptedContent_c91b61 {
     height: 254px
 }
@@ -72481,7 +72477,8 @@ html .invoiceCancelRow_aa7946 {
     align-items: center;
     justify-items: center;
     place-items: center;
-    transition: opacity.125s
+    transition: opacity.125s;
+    flex: 1 0 auto
 }
 
 .promotedBadge__73648:hover {
@@ -142484,4 +142481,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.005584a4ce1973b112d0.css.map*/
+/*# sourceMappingURL=99387.4b425d7729f903b4bef6.css.map*/
