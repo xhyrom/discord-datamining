@@ -45116,8 +45116,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -70906,6 +70906,11 @@ html .invoiceCancelRow_aa7946 {
 .toolsButton__06f1e {
     position: relative;
     margin-left: 16px
+}
+
+.billingRetryCancel_dfc8f7 {
+    border: 1px solid var(--white-500);
+    color: var(--white-500)
 }
 
 .linkButton__71159 {
@@ -142536,4 +142541,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8b7294b6e20706a76c6e.css.map*/
+/*# sourceMappingURL=99387.c8ab1feabc14a9822e34.css.map*/
