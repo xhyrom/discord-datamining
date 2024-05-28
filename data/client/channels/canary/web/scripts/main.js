@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296866", ", Version Hash: ").concat("11993831f75efb69b69a003f95565b6ddf726338")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296871", ", Version Hash: ").concat("12a5c5ee3da94cc2f1b7f93d1d3016f26ab89e49")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -66704,10 +66704,10 @@
             let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return Z
+                    return X
                 },
                 getActiveAnalyticsSessionIDs: function() {
-                    return z
+                    return Z
                 }
             }), n("653041"), n("47120");
             var r = n("512722"),
@@ -66728,23 +66728,24 @@
                 A = n("944486"),
                 m = n("594174"),
                 N = n("626135"),
-                p = n("358085"),
-                O = n("24933"),
-                C = n("566620"),
-                R = n("317381"),
-                g = n("969345"),
-                L = n("148720"),
-                v = n("146936"),
-                D = n("782769"),
-                M = n("964517"),
-                y = n("761122"),
-                P = n("983695"),
-                U = n("917107"),
-                b = n("701488"),
-                G = n("981631"),
-                w = n("689938");
+                p = n("585483"),
+                O = n("358085"),
+                C = n("24933"),
+                R = n("566620"),
+                g = n("317381"),
+                L = n("969345"),
+                v = n("148720"),
+                D = n("146936"),
+                M = n("782769"),
+                y = n("964517"),
+                P = n("761122"),
+                U = n("983695"),
+                b = n("917107"),
+                G = n("701488"),
+                w = n("981631"),
+                k = n("689938");
 
-            function k(e, t, n) {
+            function B(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -66752,37 +66753,37 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let B = {},
-                V = {};
+            let V = {},
+                x = {};
 
-            function x(e) {
+            function F(e) {
                 var t;
                 return {
-                    releasePhase: null == e ? void 0 : null === (t = e.activity) || void 0 === t ? void 0 : t.client_platform_config[(0, y.default)((0, p.getOS)())].release_phase
+                    releasePhase: null == e ? void 0 : null === (t = e.activity) || void 0 === t ? void 0 : t.client_platform_config[(0, P.default)((0, O.getOS)())].release_phase
                 }
             }
-            async function F(e) {
+            async function H(e) {
                 let {
                     channelId: t,
                     applicationId: n,
                     analyticsLocations: i
                 } = e, r = S.default.getChannel(t), s = null == r ? void 0 : r.getGuildId(), a = m.default.getCurrentUser();
                 if (null == r || null == a) return;
-                let o = R.default.getShelfActivities(s),
-                    l = O.default.getState().shelfOrder,
-                    u = 0 === R.default.getEmbeddedActivitiesForChannel(t).filter(e => e.applicationId === n).length,
-                    d = (0, g.default)({
+                let o = g.default.getShelfActivities(s),
+                    l = C.default.getState().shelfOrder,
+                    u = 0 === g.default.getEmbeddedActivitiesForChannel(t).filter(e => e.applicationId === n).length,
+                    d = (0, L.default)({
                         applicationId: n,
                         activityConfigs: o
                     }),
                     _ = 1 + l.findIndex(e => e === n),
                     {
                         releasePhase: c
-                    } = x(d),
+                    } = F(d),
                     T = await (0, I.default)();
-                V[n] = e => {
+                x[n] = e => {
                     var t, s, o;
-                    B[n] = e, N.default.track(G.AnalyticEvents.ACTIVITY_SESSION_JOINED, {
+                    V[n] = e, N.default.track(w.AnalyticEvents.ACTIVITY_SESSION_JOINED, {
                         channel_id: r.id,
                         guild_id: r.getGuildId(),
                         media_session_id: e.mediaSessionIds[0],
@@ -66799,7 +66800,7 @@
                         shelf_sorted_rank: _ > 0 ? _ : null,
                         activity_user_session_id: e.activityUserSessionId,
                         channel_type: r.type
-                    }), N.default.track(G.AnalyticEvents.ACTIVITY_IFRAME_MOUNT, {
+                    }), N.default.track(w.AnalyticEvents.ACTIVITY_IFRAME_MOUNT, {
                         location_stack: i,
                         channel_id: r.id,
                         channel_type: r.type,
@@ -66816,30 +66817,30 @@
                     })
                 }
             }
-            async function H(e) {
+            async function Y(e) {
                 var t, n;
                 let {
                     channelId: i,
                     applicationId: r,
                     locationId: s,
                     instanceId: a
-                } = e, l = B[r], u = S.default.getChannel(i), d = R.default.getEmbeddedActivityDurationMs(i, r), _ = m.default.getCurrentUser(), c = null == u ? void 0 : u.getGuildId(), E = f.default.getSessionId();
+                } = e, l = V[r], u = S.default.getChannel(i), d = g.default.getEmbeddedActivityDurationMs(i, r), _ = m.default.getCurrentUser(), c = null == u ? void 0 : u.getGuildId(), E = f.default.getSessionId();
                 if (null != s && null != a && null != E && await o.HTTP.post({
-                        url: G.Endpoints.ACTIVITY_LEAVE(r, s, a),
+                        url: w.Endpoints.ACTIVITY_LEAVE(r, s, a),
                         body: {
                             session_id: E
                         }
                     }), null == l || null == u || null == _) return;
-                let T = R.default.getShelfActivities(c),
-                    h = (0, g.default)({
+                let T = g.default.getShelfActivities(c),
+                    h = (0, L.default)({
                         applicationId: r,
                         activityConfigs: T
                     }),
                     {
                         releasePhase: A
-                    } = x(h),
+                    } = F(h),
                     p = await (0, I.default)();
-                N.default.track(G.AnalyticEvents.ACTIVITY_SESSION_LEFT, {
+                N.default.track(w.AnalyticEvents.ACTIVITY_SESSION_LEFT, {
                     channel_id: u.id,
                     guild_id: u.getGuildId(),
                     media_session_id: l.mediaSessionIds[0],
@@ -66854,7 +66855,7 @@
                     activity_user_session_id: l.activityUserSessionId,
                     channel_type: u.type,
                     media_session_ids: l.mediaSessionIds
-                }), N.default.track(G.AnalyticEvents.ACTIVITY_IFRAME_UNMOUNT, {
+                }), N.default.track(w.AnalyticEvents.ACTIVITY_IFRAME_UNMOUNT, {
                     channel_id: u.id,
                     guild_id: u.getGuildId(),
                     application_id: r,
@@ -66863,99 +66864,99 @@
                     activity_user_session_id: l.activityUserSessionId,
                     raw_thermal_state: p,
                     duration_ms: d
-                }), delete V[r], delete B[r]
+                }), delete x[r], delete V[r]
             }
 
-            function Y(e) {
+            function j(e) {
                 let {
                     channelId: t,
                     embeddedActivity: n,
                     connections: i,
                     updateCode: r
                 } = e, s = f.default.getId(), a = i.find(e => e.user_id === s);
-                W(t, n, n.application_id, n.activity_id, null == a ? void 0 : a.user_id, r === b.EmbeddedActivityUpdateCodes.ACTIVITY_STARTED)
+                K(t, n, n.application_id, n.activity_id, null == a ? void 0 : a.user_id, r === G.EmbeddedActivityUpdateCodes.ACTIVITY_STARTED)
             }
 
-            function j(e) {
+            function W(e) {
                 let {
                     location: t,
                     applicationId: n,
                     launchId: i,
                     participants: r
-                } = e, s = f.default.getId(), a = R.default.getEmbeddedActivitiesForChannel(t.channel_id).find(e => e.launchId === i), o = r.find(e => e.user_id === s);
-                null != a && W(t.channel_id, a, n, i, null == o ? void 0 : o.user_id, !1)
+                } = e, s = f.default.getId(), a = g.default.getEmbeddedActivitiesForChannel(t.channel_id).find(e => e.launchId === i), o = r.find(e => e.user_id === s);
+                null != a && K(t.channel_id, a, n, i, null == o ? void 0 : o.user_id, !1)
             }
 
-            function W(e, t, n, i, r, s) {
+            function K(e, t, n, i, r, s) {
                 var o, l;
-                let d = R.default.getEmbeddedActivitiesForChannel(e),
+                let d = g.default.getEmbeddedActivitiesForChannel(e),
                     _ = S.default.getChannel(e);
                 if (s && null !== (l = null == _ ? void 0 : _.isPrivate()) && void 0 !== l && l && d.length <= 1 && null == r && u.default.selectParticipant(e, null), null == r) return;
                 let c = h.default.getMediaSessionId(),
-                    E = "activity_id" in t ? (0, M.getActivitySessionIdFromServerData)(t) : (0, M.default)(t),
+                    E = "activity_id" in t ? (0, y.getActivitySessionIdFromServerData)(t) : (0, y.default)(t),
                     I = null == c && (null == _ ? void 0 : _.isVocal()) === !0 && (null == _ ? void 0 : _.isPrivate()) === !1;
-                null != E && !I && (null === (o = V[n]) || void 0 === o || o.call(V, {
+                null != E && !I && (null === (o = x[n]) || void 0 === o || o.call(x, {
                     activitySessionId: E,
                     activityUserSessionId: (0, a.v4)(),
                     launchId: i,
                     mediaSessionIds: null != c ? [c] : [],
                     activities_infra_version: "location" in t ? 2 : 1
-                }), delete V[n])
+                }), delete x[n])
             }
 
-            function K(e) {
+            function z(e) {
                 let {
                     mediaSessionId: t
                 } = e;
                 if (null == t) return;
-                for (let e in B) B[e].mediaSessionIds.push(t);
+                for (let e in V) V[e].mediaSessionIds.push(t);
                 let n = h.default.getChannelId();
                 if (null != n) {
-                    let e = R.default.getSelfEmbeddedActivityForChannel(n),
+                    let e = g.default.getSelfEmbeddedActivityForChannel(n),
                         i = null == e ? void 0 : e.applicationId,
                         r = null == e ? void 0 : e.launchId,
-                        o = (0, M.default)(e);
+                        o = (0, y.default)(e);
                     if (null != i && null != t && null != o && null != r) {
-                        let e = B[i],
-                            n = V[i];
+                        let e = V[i],
+                            n = x[i];
                         s()(null == e || null == n, "an active session and awaiting session both exist"), null == n || n({
                             activitySessionId: o,
                             activityUserSessionId: (0, a.v4)(),
                             launchId: r,
                             mediaSessionIds: [t]
-                        }), delete V[i]
+                        }), delete x[i]
                     }
                 }
             }
 
-            function z(e) {
-                return B[e]
+            function Z(e) {
+                return V[e]
             }
-            class Z extends d.default {
+            class X extends d.default {
                 _initialize() {
-                    A.default.addChangeListener(this.handleSelectedChannelUpdate), l.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.subscribe("EMBEDDED_ACTIVITY_OPEN", F), l.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", H), l.default.subscribe("EMBEDDED_ACTIVITY_UPDATE", Y), l.default.subscribe("EMBEDDED_ACTIVITY_UPDATE_V2", j), l.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.subscribe("MEDIA_SESSION_JOINED", K), l.default.subscribe("CALL_DELETE", this.handleCallDelete), l.default.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState)
+                    A.default.addChangeListener(this.handleSelectedChannelUpdate), p.ComponentDispatch.subscribe(w.ComponentActions.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), l.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.subscribe("EMBEDDED_ACTIVITY_OPEN", H), l.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", Y), l.default.subscribe("EMBEDDED_ACTIVITY_UPDATE", j), l.default.subscribe("EMBEDDED_ACTIVITY_UPDATE_V2", W), l.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.subscribe("MEDIA_SESSION_JOINED", z), l.default.subscribe("CALL_DELETE", this.handleCallDelete), l.default.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState)
                 }
                 _terminate() {
-                    A.default.removeChangeListener(this.handleSelectedChannelUpdate), l.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", F), l.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", H), l.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", Y), l.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE_V2", j), l.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.unsubscribe("MEDIA_SESSION_JOINED", K), l.default.unsubscribe("CALL_DELETE", this.handleCallDelete), l.default.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState)
+                    A.default.removeChangeListener(this.handleSelectedChannelUpdate), p.ComponentDispatch.unsubscribe(w.ComponentActions.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), l.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", H), l.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", Y), l.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", j), l.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE_V2", W), l.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.unsubscribe("MEDIA_SESSION_JOINED", z), l.default.unsubscribe("CALL_DELETE", this.handleCallDelete), l.default.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState)
                 }
                 constructor(...e) {
-                    super(...e), k(this, "handleSelectedChannelUpdate", () => {
+                    super(...e), B(this, "handleSelectedChannelUpdate", () => {
                         let e = A.default.getVoiceChannelId();
                         for (let {
                                 channelId: t,
                                 applicationId: n
                             }
-                            of R.default.getSelfEmbeddedActivities().values())(0, U.default)(t) && t !== e && this.leaveActivity({
+                            of g.default.getSelfEmbeddedActivities().values())(0, b.default)(t) && t !== e && this.leaveActivity({
                             channelId: t,
                             applicationId: n
                         });
                         if (null != e) {
-                            let t = R.default.getEmbeddedActivitiesForChannel(e),
+                            let t = g.default.getEmbeddedActivitiesForChannel(e),
                                 n = f.default.getId();
                             t.forEach(e => {
                                 if (e.userIds.has(n)) {
-                                    let t = R.default.getSelfEmbeddedActivityForChannel(e.channelId);
-                                    null == t ? (0, C.disconnectEmbeddedActivity)(e.channelId, e.applicationId) : null == i && this.hidePIPEmbed({
+                                    let t = g.default.getSelfEmbeddedActivityForChannel(e.channelId);
+                                    null == t ? (0, R.disconnectEmbeddedActivity)(e.channelId, e.applicationId) : null == i && this.hidePIPEmbed({
                                         channelId: t.channelId,
                                         applicationId: t.applicationId
                                     })
@@ -66963,37 +66964,39 @@
                             })
                         }
                         i = null != e ? e : void 0
-                    }), k(this, "handleActivityLaunchFail", e => {
+                    }), B(this, "handleActivityWebViewRelease", () => {
+                        this.releaseWebView()
+                    }), B(this, "handleActivityLaunchFail", e => {
                         let {
                             error: t,
                             applicationId: n
                         } = e;
-                        delete V[n];
-                        let i = w.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GENERIC;
+                        delete x[n];
+                        let i = k.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GENERIC;
                         switch (t.code) {
-                            case G.AbortCodes.INVALID_ACTIVITY_LAUNCH_NO_ACCESS:
-                                i = w.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_ACCESS;
+                            case w.AbortCodes.INVALID_ACTIVITY_LAUNCH_NO_ACCESS:
+                                i = k.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_ACCESS;
                                 break;
-                            case G.AbortCodes.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER:
-                                i = w.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_PREMIUM;
+                            case w.AbortCodes.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER:
+                                i = k.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_PREMIUM;
                                 break;
-                            case G.AbortCodes.INVALID_ACTIVITY_LAUNCH_CONCURRENT_ACTIVITIES:
-                                i = w.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_CONCURRENT;
+                            case w.AbortCodes.INVALID_ACTIVITY_LAUNCH_CONCURRENT_ACTIVITIES:
+                                i = k.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_CONCURRENT;
                                 break;
-                            case G.AbortCodes.INVALID_PERMISSIONS:
-                                i = w.default.Messages.EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS;
+                            case w.AbortCodes.INVALID_PERMISSIONS:
+                                i = k.default.Messages.EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS;
                                 break;
-                            case G.AbortCodes.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL:
-                                i = w.default.Messages.EMBEDDED_ACTIVITIES_INVALID_CHANNEL;
+                            case w.AbortCodes.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL:
+                                i = k.default.Messages.EMBEDDED_ACTIVITIES_INVALID_CHANNEL;
                                 break;
-                            case G.AbortCodes.INVALID_ACTIVITY_LAUNCH_AGE_GATED:
-                                i = w.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_AGE_GATE;
+                            case w.AbortCodes.INVALID_ACTIVITY_LAUNCH_AGE_GATED:
+                                i = k.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_AGE_GATE;
                                 break;
-                            case G.AbortCodes.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE:
-                                i = w.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE
+                            case w.AbortCodes.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE:
+                                i = k.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE
                         }
                         this.showLaunchErrorModal(i)
-                    }), k(this, "superHandleRPCDisconnect", e => {
+                    }), B(this, "superHandleRPCDisconnect", e => {
                         let {
                             reason: t,
                             application: n
@@ -67003,28 +67006,28 @@
                                     applicationId: e,
                                     channelId: t
                                 }
-                                of R.default.getSelfEmbeddedActivities().values()) e === i && this.leaveActivity({
+                                of g.default.getSelfEmbeddedActivities().values()) e === i && this.leaveActivity({
                                 channelId: t,
                                 applicationId: i
                             });
-                            t.code !== G.RPCCloseCodes.CLOSE_NORMAL && this.showErrorModal(t, i)
+                            t.code !== w.RPCCloseCodes.CLOSE_NORMAL && this.showErrorModal(t, i)
                         }
-                    }), k(this, "handleCallDelete", e => {
+                    }), B(this, "handleCallDelete", e => {
                         let {
                             channelId: t
                         } = e, n = A.default.getVoiceChannelId();
                         null != n && n === t && this.handleCallEnded(t)
-                    }), k(this, "handleRTCConnectionState", e => {
-                        if (e.state !== G.RTCConnectionStates.DISCONNECTED) return;
+                    }), B(this, "handleRTCConnectionState", e => {
+                        if (e.state !== w.RTCConnectionStates.DISCONNECTED) return;
                         let t = e.channelId;
                         this.handleCallEnded(t)
-                    }), k(this, "handleCallEnded", e => {
-                        let t = R.default.getSelfEmbeddedActivityForChannel(e);
+                    }), B(this, "handleCallEnded", e => {
+                        let t = g.default.getSelfEmbeddedActivityForChannel(e);
                         null != t && this.leaveActivity({
                             channelId: e,
                             applicationId: t.applicationId
                         })
-                    }), k(this, "handleDeferredOpen", async e => {
+                    }), B(this, "handleDeferredOpen", async e => {
                         var t, n, i;
                         let r;
                         let {
@@ -67033,15 +67036,15 @@
                             analyticsLocations: o
                         } = e, l = S.default.getChannel(s);
                         if (void 0 === l || T.GUILD_VOCAL_CHANNEL_TYPES.has(null == l ? void 0 : l.type) && A.default.getVoiceChannelId() !== s) return;
-                        let u = R.default.getSelfEmbeddedActivityForChannel(s);
+                        let u = g.default.getSelfEmbeddedActivityForChannel(s);
                         if ((null == u ? void 0 : u.applicationId) === a) return;
                         let d = await _.default.fetchApplication(a);
-                        if (!(0, D.getIsActivitiesEnabledForCurrentPlatform)(l)) {
-                            this.showLaunchErrorModal(w.default.Messages.EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS);
+                        if (!(0, M.getIsActivitiesEnabledForCurrentPlatform)(l)) {
+                            this.showLaunchErrorModal(k.default.Messages.EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS);
                             return
                         }
-                        if (!(0, P.default)(null == d ? void 0 : null === (t = d.embedded_activity_config) || void 0 === t ? void 0 : t.supported_platforms)) {
-                            this.showLaunchErrorModal(w.default.Messages.EMBEDDED_ACTIVITIES_APPLICATION_UNSUPPORTED_OS);
+                        if (!(0, U.default)(null == d ? void 0 : null === (t = d.embedded_activity_config) || void 0 === t ? void 0 : t.supported_platforms)) {
+                            this.showLaunchErrorModal(k.default.Messages.EMBEDDED_ACTIVITIES_APPLICATION_UNSUPPORTED_OS);
                             return
                         }
                         let E = null == u ? void 0 : u.applicationId;
@@ -67050,35 +67053,35 @@
                             {
                                 activityConfigs: f,
                                 applications: h
-                            } = await (0, C.fetchShelf)({
+                            } = await (0, R.fetchShelf)({
                                 guildId: I
                             }),
-                            m = (0, g.default)({
+                            m = (0, L.default)({
                                 applicationId: a,
                                 activityConfigs: f,
                                 applications: h
                             });
                         if (null == m) {
-                            let e = await (0, C.fetchShelf)({
+                            let e = await (0, R.fetchShelf)({
                                 guildId: I,
                                 force: !0
                             });
-                            m = (0, g.default)({
+                            m = (0, L.default)({
                                 applicationId: a,
                                 activityConfigs: e.activityConfigs,
                                 applications: e.applications
                             })
                         }
-                        let N = R.default.getEmbeddedActivitiesForChannel(s).find(e => e.applicationId === a),
+                        let N = g.default.getEmbeddedActivitiesForChannel(s).find(e => e.applicationId === a),
                             p = null !== (i = null == N ? void 0 : N.userIds.size) && void 0 !== i ? i : 0;
-                        p > 0 ? (0, L.maybeJoinEmbeddedActivity)({
+                        p > 0 ? (0, v.maybeJoinEmbeddedActivity)({
                             channelId: s,
                             applicationId: a,
                             launchId: null == N ? void 0 : N.launchId,
                             inputApplication: null,
                             analyticsLocations: o,
                             embeddedActivitiesManager: this
-                        }) : await (0, v.default)({
+                        }) : await (0, D.default)({
                             targetApplicationId: a,
                             currentEmbeddedApplication: r,
                             channelId: s,
@@ -67185,7 +67188,7 @@
                     ...D,
                     ...M
                 });
-                null != D && s === D.channelId && o === (null == D ? void 0 : D.applicationId) && (!N && Array.from(D.userIds).some(e => e === A) || !v && !O) ? L.get(s) === o ? L.delete(s) : C.delete(o) : N && (null == D || D.applicationId !== o || D.channelId !== s) && (p === l.default.getSessionId() && !v || (0, I.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (F({
+                null != D && s === D.channelId && o === (null == D ? void 0 : D.applicationId) && (!N && Array.from(D.userIds).some(e => e === A) || !v && !O) ? L.get(s) === o ? L.delete(s) : (C.delete(o), c.ComponentDispatch.dispatch(m.ComponentActions.RELEASE_ACTIVITY_WEB_VIEW)) : N && (null == D || D.applicationId !== o || D.channelId !== s) && (p === l.default.getSessionId() && !v || (0, I.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (F({
                     channelId: s,
                     applicationId: o,
                     launchId: u,
@@ -69268,6 +69271,7 @@
                     } = e, i = (0, d.default)(t, n);
                     (0, u.hidePIPEmbed)(i)
                 }
+                releaseWebView() {}
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "handleRPCDisconnect", i = e => {
@@ -88618,8 +88622,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296866", "296866"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296866")), t = 0), t
+                let t = parseInt((e = "296871", "296871"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296871")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116623,8 +116627,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296866",
-                    versionHash: "11993831f75efb69b69a003f95565b6ddf726338"
+                    buildNumber: "296871",
+                    versionHash: "12a5c5ee3da94cc2f1b7f93d1d3016f26ab89e49"
                 }
             }
             n.r(t), n.d(t, {
@@ -174215,8 +174219,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716939811680",
-                                    build_number: "296866"
+                                    built_at: "1716940198972",
+                                    build_number: "296871"
                                 }
                             },
                             retries: 1
@@ -251544,7 +251548,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "11993831f75efb69b69a003f95565b6ddf726338"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "12a5c5ee3da94cc2f1b7f93d1d3016f26ab89e49"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280678,7 +280682,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296866"
+                                build_number: "296871"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288042,7 +288046,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296866", "296866"), 10);
+                let s = parseInt((n = "296871", "296871"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315806,4 +315810,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.7f58f73162ebe863c8bb.js.map
+//# sourceMappingURL=71586.7ec17c68d64f994d6b8e.js.map
