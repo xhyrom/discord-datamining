@@ -58439,21 +58439,8 @@ div:has(>div>.modal__06f49) {
     margin-bottom: 4px
 }
 
-.title_de2774,
-.description_b0850b {
-    text-shadow: 0 0 6px rgba(0, 0, 0, .3)
-}
-
 .title_de2774 {
     margin-bottom: 2px
-}
-
-.description_b0850b {
-    color: hsl(var(--white-500-hsl)/.7) !important
-}
-
-.description_b0850b strong {
-    color: var(--white-500) !important
 }
 
 .rewardTile__66594 {
@@ -142571,4 +142558,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a60ffa48dc6c65f5c8a4.css.map*/
+/*# sourceMappingURL=99387.00b84a806de350fd5bd3.css.map*/
