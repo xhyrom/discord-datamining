@@ -137288,48 +137288,6 @@ div.nagbar_c731ff {
         --stage-card-pill-bg: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger: color-mix(in oklab,
-                var(--red-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger-background: color-mix(in oklab,
-                var(--red-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger-text: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-dnd: color-mix(in oklab,
-                var(--red-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-idle: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-offline: color-mix(in oklab,
-                var(--primary-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-online: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive-background: color-mix(in oklab,
-                var(--green-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive-text: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-speaking: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning-background: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning-text: color-mix(in oklab,
-                var(--black-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --text-brand: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -138574,48 +138532,6 @@ div.nagbar_c731ff {
                 var(--primary-160) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --stage-card-pill-bg: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger: color-mix(in oklab,
-                var(--red-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger-background: color-mix(in oklab,
-                var(--red-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger-text: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-dnd: color-mix(in oklab,
-                var(--red-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-idle: color-mix(in oklab,
-                var(--yellow-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-offline: color-mix(in oklab,
-                var(--primary-460) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-online: color-mix(in oklab,
-                var(--green-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive: color-mix(in oklab,
-                var(--green-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive-background: color-mix(in oklab,
-                var(--green-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive-text: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-speaking: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning: color-mix(in oklab,
-                var(--yellow-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning-background: color-mix(in oklab,
-                var(--yellow-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --text-brand: color-mix(in oklab,
@@ -139864,48 +139780,6 @@ div.nagbar_c731ff {
         --stage-card-pill-bg: color-mix(in oklab,
                 var(--plum-25) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger: color-mix(in oklab,
-                var(--red-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger-background: color-mix(in oklab,
-                var(--red-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger-text: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-dnd: color-mix(in oklab,
-                var(--red-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-idle: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-offline: color-mix(in oklab,
-                var(--plum-9) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-online: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive-background: color-mix(in oklab,
-                var(--green-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive-text: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-speaking: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning-background: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning-text: color-mix(in oklab,
-                var(--black-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --text-brand: color-mix(in oklab,
                 var(--brand-400) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -141151,48 +141025,6 @@ div.nagbar_c731ff {
                 hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --stage-card-pill-bg: color-mix(in oklab,
                 var(--plum-19) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger: color-mix(in oklab,
-                var(--red-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger-background: color-mix(in oklab,
-                var(--red-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-danger-text: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-dnd: color-mix(in oklab,
-                var(--red-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-idle: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-offline: color-mix(in oklab,
-                var(--plum-9) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-online: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive-background: color-mix(in oklab,
-                var(--green-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-positive-text: color-mix(in oklab,
-                var(--white-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-speaking: color-mix(in oklab,
-                var(--green-360) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning-background: color-mix(in oklab,
-                var(--yellow-300) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
-        --status-warning-text: color-mix(in oklab,
-                var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --text-brand: color-mix(in oklab,
                 var(--brand-360) 100%,
@@ -142622,4 +142454,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.33a59deb9a5d9e90762d.css.map*/
+/*# sourceMappingURL=99387.480e99498e04216422ab.css.map*/

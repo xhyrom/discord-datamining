@@ -18848,10 +18848,7 @@ h3.improved_e02592:after {
     height: 100%;
     max-width: 550px;
     border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center
+    overflow: hidden
 }
 
 .nonVisualMediaItemContainer__81ce5 {
@@ -27447,4 +27444,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.f855fad44d314c5a666b.css.map*/
+/*# sourceMappingURL=49237.f3544189f4a28ccf9297.css.map*/
