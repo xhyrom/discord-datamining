@@ -12368,6 +12368,18 @@ span.clanTag_f4aadc {
     justify-content: center
 }
 
+.gradientContainerDark_f92e8b {
+    background: linear-gradient(45deg, hsl(var(--premium-perk-green-hsl)/.5), hsl(var(--premium-perk-purple-hsl)/.5));
+    background-blend-mode: color-burn;
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-xs);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .container__0998c {
     padding: 8px;
     background-color: var(--background-secondary-alt);
@@ -45207,8 +45219,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -142610,4 +142622,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.49c66fadf774fecb4ded.css.map*/
+/*# sourceMappingURL=99387.33a59deb9a5d9e90762d.css.map*/
