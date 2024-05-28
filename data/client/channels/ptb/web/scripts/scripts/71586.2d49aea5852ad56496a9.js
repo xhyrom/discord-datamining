@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296813", ", Version Hash: ").concat("31283747329ceed48196259d3d7f62325fcc4151")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296814", ", Version Hash: ").concat("4fcb5785f3161dbd15fc11595f57d9f4dd3a24aa")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88616,8 +88616,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296813", "296813"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296813")), t = 0), t
+                let t = parseInt((e = "296814", "296814"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296814")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116621,8 +116621,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296813",
-                    versionHash: "31283747329ceed48196259d3d7f62325fcc4151"
+                    buildNumber: "296814",
+                    versionHash: "4fcb5785f3161dbd15fc11595f57d9f4dd3a24aa"
                 }
             }
             n.r(t), n.d(t, {
@@ -163514,14 +163514,12 @@
             "use strict";
             n.r(t), n("47120");
             var i = n("695346"),
-                r = n("581883"),
-                s = n("412788"),
-                a = n("592204"),
-                o = n("932941"),
-                l = n("363072"),
-                u = n("526761");
+                r = n("412788"),
+                s = n("932941"),
+                a = n("363072"),
+                o = n("526761");
 
-            function d(e, t, n) {
+            function l(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -163529,76 +163527,67 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let _ = new l.Trie;
+            let u = null;
 
-            function c() {
+            function d() {
                 let {
                     profanity: e = !1,
                     slurs: t = !1,
                     sexualContent: n = !1
-                } = i.KeywordFilterSettings.getSetting(), r = [...e ? o.PROFANITY_KEYWORD_LIST : [], ...t ? o.SLURS_KEYWORD_LIST : [], ...n ? o.SEXUAL_CONTENT_KEYWORD_LIST : []];
-                _.addWords(r)
+                } = i.KeywordFilterSettings.getSetting(), r = [...e ? s.PROFANITY_KEYWORD_LIST : [], ...t ? s.SLURS_KEYWORD_LIST : [], ...n ? s.SEXUAL_CONTENT_KEYWORD_LIST : []];
+                (u = new a.Trie).addWords(r)
             }
 
-            function E() {
-                if (!(0, a.isEligibleForKeywordFiltering)({
-                        location: "connection_open"
-                    })) return !1;
-                c()
+            function _() {
+                d()
             }
 
-            function I() {
-                if (!(0, a.isEligibleForKeywordFiltering)({
-                        location: "overlay_initialize"
-                    })) return !1;
-                c()
+            function c() {
+                d()
             }
 
-            function T(e) {
+            function E(e) {
                 let {
                     local: t,
                     settings: n
                 } = e;
-                if (!t || n.type !== u.UserSettingsTypes.PRELOADED_USER_SETTINGS || !(0, a.isEligibleForKeywordFiltering)({
-                        location: "user_settings_proto_update"
-                    })) return !1;
-                _.clear(), c()
+                if (!t || n.type !== o.UserSettingsTypes.PRELOADED_USER_SETTINGS) return !1;
+                null != u && u.clear(), d()
             }
-            class f extends s.default {
-                initialize() {
-                    this.waitFor(r.default)
-                }
+            class I extends r.default {
                 loadCache() {
-                    let e = this.readSnapshot(f.LATEST_SNAPSHOT_VERSION);
-                    null != e && (_ = l.Trie.fromSnapshot(e))
+                    let e = this.readSnapshot(I.LATEST_SNAPSHOT_VERSION);
+                    null != e && (u = null != e.keywordTrie ? a.Trie.fromSnapshot(e.keywordTrie) : null)
                 }
                 takeSnapshot() {
                     return {
-                        version: f.LATEST_SNAPSHOT_VERSION,
-                        data: _
+                        version: I.LATEST_SNAPSHOT_VERSION,
+                        data: {
+                            keywordTrie: u
+                        }
                     }
                 }
                 getKeywordTrie() {
-                    return _
+                    return u
                 }
                 initializeForKeywordTests() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-                    _.clear(), ! function() {
+                    ! function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-                        _.addWords(e)
+                        null == u && (u = new a.Trie), u.addWords(e)
                     }(e)
                 }
                 constructor() {
                     super({
-                        CONNECTION_OPEN: E,
-                        CONNECTION_OPEN_SUPPLEMENTAL: E,
-                        CACHE_LOADED_LAZY: () => this.loadCache(),
-                        OVERLAY_INITIALIZE: I,
-                        USER_SETTINGS_PROTO_UPDATE: T
+                        CONNECTION_OPEN: _,
+                        CONNECTION_OPEN_SUPPLEMENTAL: _,
+                        CACHE_LOADED: () => this.loadCache(),
+                        OVERLAY_INITIALIZE: c,
+                        USER_SETTINGS_PROTO_UPDATE: E
                     })
                 }
             }
-            d(f, "displayName", "KeywordFilterStore"), d(f, "LATEST_SNAPSHOT_VERSION", 1), t.default = new f
+            l(I, "displayName", "KeywordFilterStore"), l(I, "LATEST_SNAPSHOT_VERSION", 2), t.default = new I
         },
         932941: function(e, t, n) {
             "use strict";
@@ -163781,15 +163770,16 @@
                 a = n("603158");
 
             function o(e, t) {
-                if (!(0, r.isEligibleForKeywordFiltering)({
-                        location: "keyword_substituted_content"
-                    })) return e;
+                (0, r.isEligibleForKeywordFiltering)({
+                    location: "keyword_substituted_content"
+                });
                 try {
                     let n = function(e) {
-                        let t = s.default.getKeywordTrie();
+                        var t;
+                        let n = s.default.getKeywordTrie();
                         if ("" === e) return [];
-                        let n = (0, a.normalize)(e).toLowerCase();
-                        return Object.entries(t.search(n)).map(e => {
+                        let i = (0, a.normalize)(e).toLowerCase();
+                        return Object.entries(null !== (t = null == n ? void 0 : n.search(i)) && void 0 !== t ? t : {}).map(e => {
                             let [t, n] = e;
                             return {
                                 start: Number(t),
@@ -174223,8 +174213,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716936074221",
-                                    build_number: "296813"
+                                    built_at: "1716936188311",
+                                    build_number: "296814"
                                 }
                             },
                             retries: 1
@@ -251535,7 +251525,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "31283747329ceed48196259d3d7f62325fcc4151"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4fcb5785f3161dbd15fc11595f57d9f4dd3a24aa"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280669,7 +280659,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296813"
+                                build_number: "296814"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288033,7 +288023,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296813", "296813"), 10);
+                let s = parseInt((n = "296814", "296814"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315797,4 +315787,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.0544b553a6dd2232f745.js.map
+//# sourceMappingURL=71586.2d49aea5852ad56496a9.js.map
