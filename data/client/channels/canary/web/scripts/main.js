@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296821", ", Version Hash: ").concat("6f780f86028ca1c44f6bece8b32dbf8c398abd91")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296835", ", Version Hash: ").concat("ce763b8c70dc2d0f28743c347cee50e722694b19")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88617,8 +88617,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296821", "296821"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296821")), t = 0), t
+                let t = parseInt((e = "296835", "296835"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296835")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116622,8 +116622,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296821",
-                    versionHash: "6f780f86028ca1c44f6bece8b32dbf8c398abd91"
+                    buildNumber: "296835",
+                    versionHash: "ce763b8c70dc2d0f28743c347cee50e722694b19"
                 }
             }
             n.r(t), n.d(t, {
@@ -174214,8 +174214,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716936853551",
-                                    build_number: "296821"
+                                    built_at: "1716937754046",
+                                    build_number: "296835"
                                 }
                             },
                             retries: 1
@@ -216667,92 +216667,102 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return A
+                    return O
                 }
             });
-            var i = n("735250");
-            n("470079");
-            var r = n("442837"),
-                s = n("246946"),
-                a = n("5192"),
-                o = n("447452"),
-                l = n("681837"),
-                u = n("724593"),
-                d = n("530"),
-                _ = n("894374"),
-                c = n("790711"),
-                E = n("580512"),
-                I = n("67152"),
-                T = n("579285"),
-                f = n("287612"),
-                S = n("228168"),
-                h = n("153362");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("442837"),
+                a = n("954138"),
+                o = n("979264"),
+                l = n("246946"),
+                u = n("5192"),
+                d = n("447452"),
+                _ = n("681837"),
+                c = n("724593"),
+                E = n("530"),
+                I = n("894374"),
+                T = n("790711"),
+                f = n("580512"),
+                S = n("67152"),
+                h = n("579285"),
+                A = n("287612"),
+                m = n("228168"),
+                N = n("981631"),
+                p = n("153362");
 
-            function A(e) {
+            function O(e) {
                 let {
                     user: t,
                     currentUser: n,
-                    displayProfile: A,
-                    guild: m,
-                    isHovering: N,
-                    onOpenProfile: p,
-                    channelId: O,
-                    onClose: C
+                    displayProfile: O,
+                    guild: C,
+                    isHovering: R,
+                    onOpenProfile: g,
+                    channelId: L,
+                    onClose: v
                 } = e, {
-                    moreUserDetailsEnabled: R
-                } = (0, o.useSimplifiedProfileExperiment)({
+                    moreUserDetailsEnabled: D
+                } = (0, d.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), g = a.default.getName(null == m ? void 0 : m.id, O, t), L = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
+                }), M = u.default.getName(null == C ? void 0 : C.id, L, t), y = (0, s.useStateFromStores)([l.default], () => l.default.hidePersonalInformation), P = (0, a.default)("username"), U = r.useMemo(() => ({
+                    source: N.AnalyticsSections.PROFILE_POPOUT,
+                    tagUserId: t.id
+                }), [t.id]);
                 return (0, i.jsxs)("div", {
-                    className: h.body,
-                    children: [(0, i.jsx)(d.default, {
+                    className: p.body,
+                    children: [(0, i.jsx)(E.default, {
                         user: t,
-                        profileType: S.UserProfileTypes.BITE_SIZE,
-                        onOpenProfile: () => p({
+                        profileType: m.UserProfileTypes.BITE_SIZE,
+                        onOpenProfile: () => g({
                             autoFocusNote: !1
                         }),
-                        guildId: null == m ? void 0 : m.id,
-                        usernameIcon: t.hasAvatarForGuild(null == m ? void 0 : m.id) && (0, i.jsx)(c.default, {
+                        guildId: null == C ? void 0 : C.id,
+                        usernameIcon: t.hasAvatarForGuild(null == C ? void 0 : C.id) && (0, i.jsx)(T.default, {
                             user: t,
-                            nickname: g
+                            nickname: M
                         }),
-                        pronouns: null == A ? void 0 : A.pronouns,
-                        tags: (0, i.jsx)(_.UserProfileBadgesTag, {
-                            displayProfile: A,
-                            onClose: C
+                        pronouns: null == O ? void 0 : O.pronouns,
+                        tags: (0, i.jsx)(I.UserProfileBadgesTag, {
+                            displayProfile: O,
+                            onClose: v
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(l.default, {
+                            children: [(0, i.jsx)(_.default, {
                                 userId: t.id
-                            }), R && !L && (0, i.jsx)(u.default, {
+                            }), D && !y && (0, i.jsx)(c.default, {
                                 user: t,
-                                isHovering: N,
-                                onOpenProfile: () => p({
+                                isHovering: R,
+                                onOpenProfile: () => g({
                                     autoFocusNote: !0
                                 })
                             })]
                         })
-                    }), t.id !== n.id && (0, i.jsx)(f.default, {
+                    }), t.id !== n.id && (0, i.jsx)(A.default, {
                         user: t,
-                        onOpenProfile: e => p({
+                        onOpenProfile: e => g({
                             section: e,
                             autoFocusNote: !1
                         })
-                    }), R && (0, i.jsx)(I.default, {
+                    }), P && (0, i.jsx)(o.default, {
+                        userId: t.id,
+                        inline: !1,
+                        profileViewedAnalytics: U
+                    }), D && (0, i.jsx)(S.default, {
                         user: t,
-                        bio: null == A ? void 0 : A.bio,
-                        hidePersonalInformation: L,
-                        onClose: C
-                    }), (0, i.jsx)(E.default, {
+                        bio: null == O ? void 0 : O.bio,
+                        hidePersonalInformation: y,
+                        onClose: v
+                    }), (0, i.jsx)(f.default, {
                         user: t,
-                        guild: m,
-                        channelId: O,
-                        onClose: C
-                    }), null != m && (0, i.jsx)(T.default, {
+                        guild: C,
+                        channelId: L,
+                        onClose: v
+                    }), null != C && (0, i.jsx)(h.default, {
                         user: t,
                         currentUser: n,
-                        guild: m,
-                        onOpenProfile: () => p({
+                        guild: C,
+                        onOpenProfile: () => g({
                             autoFocusNote: !1
                         })
                     })]
@@ -251533,7 +251543,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6f780f86028ca1c44f6bece8b32dbf8c398abd91"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ce763b8c70dc2d0f28743c347cee50e722694b19"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280667,7 +280677,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296821"
+                                build_number: "296835"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288031,7 +288041,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296821", "296821"), 10);
+                let s = parseInt((n = "296835", "296835"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315795,4 +315805,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.63a06bb397fa74190171.js.map
+//# sourceMappingURL=71586.3104655361fa9fd0e015.js.map
