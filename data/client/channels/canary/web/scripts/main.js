@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296969", ", Version Hash: ").concat("525c577793c63f71fb3899b711754fdd9a85f7cd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("296978", ", Version Hash: ").concat("16675e7336af345ecfd1fb9ff4bf283e34954aa5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88626,8 +88626,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "296969", "296969"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296969")), t = 0), t
+                let t = parseInt((e = "296978", "296978"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("296978")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116631,8 +116631,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "296969",
-                    versionHash: "525c577793c63f71fb3899b711754fdd9a85f7cd"
+                    buildNumber: "296978",
+                    versionHash: "16675e7336af345ecfd1fb9ff4bf283e34954aa5"
                 }
             }
             n.r(t), n.d(t, {
@@ -140508,7 +140508,7 @@
                     1 === y ? e = M.slice(0, 1) : null != h && (e = M.slice(0, h)), await (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("15972"), n.e("63438"), n.e("62511"), n.e("8016"), n.e("22646"), n.e("68451"), n.e("25220")]).then(n.bind(n, "760558"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("15972"), n.e("38674"), n.e("54167"), n.e("8016"), n.e("22646"), n.e("30419"), n.e("53889")]).then(n.bind(n, "760558"));
                         return n => {
                             let {
                                 onClose: r,
@@ -142105,7 +142105,7 @@
                 await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("440"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("58447")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("13508")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -174223,8 +174223,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716985511979",
-                                    build_number: "296969"
+                                    built_at: "1716990671209",
+                                    build_number: "296978"
                                 }
                             },
                             retries: 1
@@ -179087,7 +179087,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("440"), n.e("6416"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("31605"), n.e("32776"), n.e("57878"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("6416"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("31605"), n.e("32776"), n.e("57878"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -251548,7 +251548,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "525c577793c63f71fb3899b711754fdd9a85f7cd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "16675e7336af345ecfd1fb9ff4bf283e34954aa5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261286,7 +261286,7 @@
                 fullscreenOnMobile: !0,
                 size: _.SMALL,
                 tag: "div"
-            }), t.default = c
+            })
         },
         863840: function(e, t, n) {
             "use strict";
@@ -280682,7 +280682,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "296969"
+                                build_number: "296978"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284638,32 +284638,23 @@
         73346: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                getApplicationStoreListingLocation: function() {
-                    return R
-                },
                 getAssetURL: function() {
-                    return g
+                    return O
                 },
                 getNonSocialRecommendationReasons: function() {
-                    return b
+                    return D
                 },
                 getPrimarySKUForApplication: function() {
-                    return M
+                    return R
                 },
                 getSocialRecommendationReasons: function() {
-                    return P
-                },
-                getStoreListingLocation: function() {
-                    return C
-                },
-                httpGetWithCountryCodeQuery: function() {
                     return L
                 },
-                nativePlatformTypeToSKUOperatingSystem: function() {
-                    return v
+                getStoreListingLocation: function() {
+                    return p
                 },
-                skuOperatingSystemToText: function() {
-                    return D
+                httpGetWithCountryCodeQuery: function() {
+                    return C
                 }
             }), n("653041"), n("998459"), n("47120"), n("411104"), n("789020");
             var i = n("392711"),
@@ -284681,15 +284672,14 @@
                 T = n("78839"),
                 f = n("526167"),
                 S = n("630388"),
-                h = n("823379"),
-                A = n("358085"),
-                m = n("709054"),
-                N = n("981631"),
-                p = n("689938");
-            l().shim();
-            let O = !u.isMobile && !u.isTablet && -1 !== (0, f.getChromeVersion)();
+                h = n("823379");
+            n("358085");
+            var A = n("709054"),
+                m = n("981631");
+            n("689938"), l().shim();
+            let N = !u.isMobile && !u.isTablet && -1 !== (0, f.getChromeVersion)();
 
-            function C(e, t) {
+            function p(e, t) {
                 let {
                     analyticsSource: n,
                     analyticsProperties: i,
@@ -284699,7 +284689,7 @@
                     guildId: o
                 } = t;
                 return {
-                    pathname: null != a && null != o ? N.Routes.CHANNEL(o, a, e) : N.Routes.APPLICATION_STORE_LISTING_SKU(e, s),
+                    pathname: null != a && null != o ? m.Routes.CHANNEL(o, a, e) : m.Routes.APPLICATION_STORE_LISTING_SKU(e, s),
                     state: {
                         analyticsSource: n,
                         analyticsProperties: i
@@ -284708,22 +284698,7 @@
                 }
             }
 
-            function R(e, t) {
-                let {
-                    analyticsSource: n,
-                    analyticsProperties: i,
-                    slug: r
-                } = t;
-                return {
-                    pathname: N.Routes.APPLICATION_STORE_LISTING_APPLICATION(e, r),
-                    state: {
-                        analyticsSource: n,
-                        analyticsProperties: i
-                    }
-                }
-            }
-
-            function g(e, t, n, i) {
+            function O(e, t, n, i) {
                 var r;
                 let s;
                 let a = window.GLOBAL_ENV.CDN_HOST;
@@ -284738,12 +284713,12 @@
                     default:
                         i = "webp"
                 }
-                "webp" === i && !O && (i = "png");
+                "webp" === i && !N && (i = "png");
                 let o = "string" == typeof t ? t : t.id,
                     l = (r = "https:", "https:");
-                return s = null != a ? "".concat(l, "//").concat(a, "/app-assets/").concat(e, "/store/").concat(o, ".").concat(i) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(N.Endpoints.STORE_ASSET(e, o, i)), null != n && (s += "?size=".concat((0, c.getBestMediaProxySize)(n * (0, c.getDevicePixelRatio)()))), s
+                return s = null != a ? "".concat(l, "//").concat(a, "/app-assets/").concat(e, "/store/").concat(o, ".").concat(i) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(m.Endpoints.STORE_ASSET(e, o, i)), null != n && (s += "?size=".concat((0, c.getBestMediaProxySize)(n * (0, c.getDevicePixelRatio)()))), s
             }
-            async function L(e) {
+            async function C(e) {
                 var t, n, i, r;
                 let s = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 if (s) {
@@ -284776,47 +284751,22 @@
                 return d.HTTP.get(e)
             }
 
-            function v(e) {
-                switch (e) {
-                    case A.PlatformTypes.WINDOWS:
-                        return N.OperatingSystems.WINDOWS;
-                    case A.PlatformTypes.OSX:
-                        return N.OperatingSystems.MACOS;
-                    case A.PlatformTypes.LINUX:
-                        return N.OperatingSystems.LINUX;
-                    default:
-                        return null
-                }
-            }
-
-            function D(e) {
-                switch (e) {
-                    case N.OperatingSystems.WINDOWS:
-                        return p.default.Messages.WINDOWS;
-                    case N.OperatingSystems.MACOS:
-                        return p.default.Messages.MACOS;
-                    case N.OperatingSystems.LINUX:
-                        return p.default.Messages.LINUX
-                }
-                throw Error("Unknown operating system value: ".concat(e))
-            }
-
-            function M(e, t, n) {
+            function R(e, t, n) {
                 let i = t.getApplication(e);
                 return null == i || null == i.primarySkuId ? null : n.get(i.primarySkuId)
             }
-            let y = [];
+            let g = [];
 
-            function P(e, t, n, i, s) {
+            function L(e, t, n, i, s) {
                 let a = t.get(e);
-                if (null == a) return y;
+                if (null == a) return g;
                 let o = a.applicationId,
                     l = [],
                     u = [],
                     d = function(e, t, n) {
                         var i;
                         let r = null !== (i = n.getNowPlaying(e)) && void 0 !== i ? i : {},
-                            s = m.default.keys(r).map(e => {
+                            s = A.default.keys(r).map(e => {
                                 let n = t.getUser(e);
                                 return null == n ? null : {
                                     user: n,
@@ -284824,7 +284774,7 @@
                                 }
                             }).filter(h.isNotNullish).sort((e, t) => t.startTime - e.startTime);
                         return 0 === s.length ? null : {
-                            type: N.StoreRecommendationTypes.NOW_PLAYING,
+                            type: m.StoreRecommendationTypes.NOW_PLAYING,
                             userInfo: s
                         }
                     }(o, n, i);
@@ -284849,7 +284799,7 @@
                                 }
                             }).filter(h.isNotNullish).sort((e, t) => t.endTime - e.endTime);
                             return 0 === r.length ? null : {
-                                type: N.StoreRecommendationTypes.EVER_PLAYED,
+                                type: m.StoreRecommendationTypes.EVER_PLAYED,
                                 userInfo: r
                             }
                         }(o, n, s);
@@ -284858,25 +284808,25 @@
                 }
                 return l
             }
-            let U = [];
+            let v = [];
 
-            function b(e, t, n) {
+            function D(e, t, n) {
                 let i = t.get(e),
                     r = n.getForSKU(e);
-                if (null == i || null == r) return U;
+                if (null == i || null == r) return v;
                 let s = [];
-                (0, S.hasFlag)(i.flags, N.SKUFlags.HAS_FREE_PREMIUM_CONTENT) && s.push({
-                    type: N.StoreRecommendationTypes.HAS_FREE_PREMIUM_CONTENT
+                (0, S.hasFlag)(i.flags, m.SKUFlags.HAS_FREE_PREMIUM_CONTENT) && s.push({
+                    type: m.StoreRecommendationTypes.HAS_FREE_PREMIUM_CONTENT
                 });
                 let o = i.releaseDate;
-                return null != o && 3 > a()().diff(o, "months") && (i.accessType === N.SKUAccessTypes.EARLY_ACCESS ? s.push({
-                    type: N.StoreRecommendationTypes.EARLY_ACCESS,
+                return null != o && 3 > a()().diff(o, "months") && (i.accessType === m.SKUAccessTypes.EARLY_ACCESS ? s.push({
+                    type: m.StoreRecommendationTypes.EARLY_ACCESS,
                     releaseDate: o
                 }) : s.push({
-                    type: N.StoreRecommendationTypes.RECENT_RELEASE_DATE,
+                    type: m.StoreRecommendationTypes.RECENT_RELEASE_DATE,
                     releaseDate: o
                 })), null != r.flavorText && s.push({
-                    type: N.StoreRecommendationTypes.FLAVOR_TEXT,
+                    type: m.StoreRecommendationTypes.FLAVOR_TEXT,
                     flavorText: r.flavorText
                 }), s
             }
@@ -288046,7 +287996,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "296969", "296969"), 10);
+                let s = parseInt((n = "296978", "296978"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315810,4 +315760,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.16e58727064b0ebe0b97.js.map
+//# sourceMappingURL=71586.5c6eaaac38951049e096.js.map
