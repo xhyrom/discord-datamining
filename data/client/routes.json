@@ -4789,6 +4789,14 @@
       "POST"
     ]
   },
+  "QUEST_ON_CONSOLE_START": {
+    "url": "/quests/:param/console/start",
+    "allowed_methods": null
+  },
+  "QUEST_ON_CONSOLE_STOP": {
+    "url": "/quests/:param/console/stop",
+    "allowed_methods": null
+  },
   "QUESTS_HEARTBEAT": {
     "url": "/quests/:param/heartbeat",
     "allowed_methods": [
