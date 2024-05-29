@@ -26146,7 +26146,7 @@ html .progress__00e29 {
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-top: 8px;
+    margin-top: 6px;
     color: var(--text-low-contrast);
     cursor: pointer
 }
@@ -26157,22 +26157,8 @@ html .progress__00e29 {
     color: var(--interactive-hover)
 }
 
-.footerContainer_bc17b3:hover .footerArrow_f6ab61 {
-    margin-left: 4px
-}
-
 .footerText_c6879e {
     white-space: pre
-}
-
-.footerArrow_f6ab61 {
-    transition: margin-left 50ms ease-out
-}
-
-@media(prefers-reduced-motion) {
-    .footerArrow_f6ab61 {
-        transition: none
-    }
 }
 
 .originIcon_fee508 {
@@ -142246,4 +142232,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.833aa35a4d6ff10e24e2.css.map*/
+/*# sourceMappingURL=99387.95c4ff46a33ec3c71b88.css.map*/
