@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["71586"], {
+    ["27519"], {
         290034: function(e, t, n) {
             var i = {
                     "./bg.jsona": function() {
@@ -3760,7 +3760,7 @@
                 "./1f9d9-1f3fc-200d-2640-fe0f.svg": "721757",
                 "./1f9d9-1f3fc-200d-2642-fe0f.svg": "623734",
                 "./1f9d9-1f3fc.svg": "922636",
-                "./1f9d9-1f3fd-200d-2640-fe0f.svg": "895471",
+                "./1f9d9-1f3fd-200d-2640-fe0f.svg": "978713",
                 "./1f9d9-1f3fd-200d-2642-fe0f.svg": "966848",
                 "./1f9d9-1f3fd.svg": "716101",
                 "./1f9d9-1f3fe-200d-2640-fe0f.svg": "492927",
@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297234", ", Version Hash: ").concat("04bbe778c64d03b89cb2d490ffe94f2d3c310d3f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297237", ", Version Hash: ").concat("209e9254d5baa78876c5f50ebd8a5bb62d3313c9")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -63760,7 +63760,7 @@
         },
         323716: function(e, t, n) {
             "use strict";
-            n.r(t), n("610138"), n("216116"), n("78328"), n("815648"), n("47120"), n("724458"), n("653041"), n("315314"), n("978713");
+            n.r(t), n("610138"), n("216116"), n("78328"), n("815648"), n("47120"), n("724458"), n("653041"), n("315314"), n("203651");
             var i = n("544891"),
                 r = n("569611"),
                 s = n("547010"),
@@ -88637,8 +88637,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297234", "297234"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297234")), t = 0), t
+                let t = parseInt((e = "297237", "297237"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297237")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116674,8 +116674,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297234",
-                    versionHash: "04bbe778c64d03b89cb2d490ffe94f2d3c310d3f"
+                    buildNumber: "297237",
+                    versionHash: "209e9254d5baa78876c5f50ebd8a5bb62d3313c9"
                 }
             }
             n.r(t), n.d(t, {
@@ -174319,8 +174319,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717021454843",
-                                    build_number: "297234"
+                                    built_at: "1717021790266",
+                                    build_number: "297237"
                                 }
                             },
                             retries: 1
@@ -251379,7 +251379,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "04bbe778c64d03b89cb2d490ffe94f2d3c310d3f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "209e9254d5baa78876c5f50ebd8a5bb62d3313c9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280472,7 +280472,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297234"
+                                build_number: "297237"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287786,7 +287786,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297234", "297234"), 10);
+                let s = parseInt((n = "297237", "297237"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -298120,7 +298120,7 @@
                     return g
                 }
             }), n("47120"), n("653041");
-            var i = n("978713"),
+            var i = n("203651"),
                 r = n.n(i),
                 s = n("261470");
             n("17089");
@@ -315360,6 +315360,7 @@
         771673: function() {},
         252602: function() {},
         260907: function() {},
+        620633: function() {},
         523558: function(e) {
             "use strict";
             e.exports = JSON.parse('{">:(":"angry",">:-(":"angry",">=(":"angry",">=-(":"angry",":\\")":"blush",":-\\")":"blush","=\\")":"blush","=-\\")":"blush","</3":"broken_heart","<\\\\3":"broken_heart",":-\\\\":"confused",":-/":"confused","=-\\\\":"confused","=-/":"confused",":\'(":"cry",":\'-(":"cry",":,(":"cry",":,-(":"cry","=\'(":"cry","=\'-(":"cry","=,(":"cry","=,-(":"cry",":(":"frowning",":-(":"frowning","=(":"frowning","=-(":"frowning","<3":"heart","♡":"heart","]:(":"imp","]:-(":"imp","]=(":"imp","]=-(":"imp","o:)":"innocent","O:)":"innocent","o:-)":"innocent","O:-)":"innocent","0:)":"innocent","0:-)":"innocent","o=)":"innocent","O=)":"innocent","o=-)":"innocent","O=-)":"innocent","0=)":"innocent","0=-)":"innocent",":\'D":"joy",":\'-D":"joy",":,D":"joy",":,-D":"joy","=\'D":"joy","=\'-D":"joy","=,D":"joy","=,-D":"joy",":*":"kissing",":-*":"kissing","=*":"kissing","=-*":"kissing","x-)":"laughing","X-)":"laughing",":|":"neutral_face",":-|":"neutral_face","=|":"neutral_face","=-|":"neutral_face",":o":"open_mouth",":-o":"open_mouth",":O":"open_mouth",":-O":"open_mouth","=o":"open_mouth","=-o":"open_mouth","=O":"open_mouth","=-O":"open_mouth",":@":"rage",":-@":"rage","=@":"rage","=-@":"rage",":D":"smile",":-D":"smile","=D":"smile","=-D":"smile",":\')":"smiling_face_with_tear",":\'-)":"smiling_face_with_tear",":,)":"smiling_face_with_tear",":,-)":"smiling_face_with_tear","=\')":"smiling_face_with_tear","=\'-)":"smiling_face_with_tear","=,)":"smiling_face_with_tear","=,-)":"smiling_face_with_tear",":)":"slight_smile",":-)":"slight_smile","=)":"slight_smile","=-)":"slight_smile","]:)":"smiling_imp","]:-)":"smiling_imp","]=)":"smiling_imp","]=-)":"smiling_imp",":,\'(":"sob",":,\'-(":"sob",";(":"sob",";-(":"sob","=,\'(":"sob","=,\'-(":"sob",":P":"stuck_out_tongue",":-P":"stuck_out_tongue","=P":"stuck_out_tongue","=-P":"stuck_out_tongue","8-)":"sunglasses","B-)":"sunglasses",",:(":"sweat",",:-(":"sweat",",=(":"sweat",",=-(":"sweat",",:)":"sweat_smile",",:-)":"sweat_smile",",=)":"sweat_smile",",=-)":"sweat_smile",":s":"unamused",":-S":"unamused",":z":"unamused",":-Z":"unamused",":$":"unamused",":-$":"unamused","=s":"unamused","=-S":"unamused","=z":"unamused","=-Z":"unamused","=$":"unamused","=-$":"unamused",";)":"wink",";-)":"wink"}')
@@ -315590,4 +315591,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.b9f176295053586409e7.js.map
+//# sourceMappingURL=27519.98f93f161f847e03c2ee.js.map
