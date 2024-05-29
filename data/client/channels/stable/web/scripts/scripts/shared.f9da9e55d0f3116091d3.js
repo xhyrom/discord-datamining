@@ -3480,6 +3480,7 @@
                 itemContentContainer: "itemContentContainer__77d7f",
                 lazyImg: "lazyImg_b510a9",
                 lazyImgContainer: "lazyImgContainer_b0a5df",
+                mosaicContainer: "mosaicContainer__204db",
                 nonVisualMediaItem: "nonVisualMediaItem__6faf4",
                 nonVisualMediaItemContainer: "nonVisualMediaItemContainer__81ce5",
                 oneByOneGrid: "oneByOneGrid__36e03",
@@ -4319,7 +4320,6 @@
             "use strict";
             e.exports = {
                 benefits: "benefits_eb5225",
-                closeBtn: "closeBtn__97612",
                 container: "container__37170",
                 description: "description__1ee46",
                 details: "details_bd2b5f",
