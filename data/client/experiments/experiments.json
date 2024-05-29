@@ -2749,7 +2749,8 @@
         "Control Bucket",
         "Treatment 1: Recency",
         "Treatment 2: Heuristic",
-        "Treatment 3: Noteworthy"
+        "Treatment 3: Noteworthy",
+        "Treatment 4: Another Heuristic treatment for comparison ranking"
       ],
       "hash": 3541906113,
       "buckets": [
@@ -2757,7 +2758,8 @@
         0,
         1,
         2,
-        3
+        3,
+        4
       ],
       "holdout": {},
       "aa_mode": false,
