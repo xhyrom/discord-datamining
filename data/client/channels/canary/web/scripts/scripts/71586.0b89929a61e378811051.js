@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297054", ", Version Hash: ").concat("f9502f62496a1e969293bb48c7ff36991b9679d1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297057", ", Version Hash: ").concat("fe4d935e3b66774b0a71cafe5ee4197be8f6062d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56302,6 +56302,8 @@
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS: "Questions? Head over to the $[Wumpus Feedback Squad](wfsHook) server to ask Discord questions or give feedback!",
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS_ARIA_LABEL: "Join Wumpus Feedback Squad server",
                 CLAN_DISCOVERY_APPLICATION_DISABLED_TOOLTIP: "You cannot apply to Guilds right now",
+                CLAN_DISCOVERY_APPLICATION_MAX_MEMBERS: "This Guild is at maximum capacity. You may want to apply for more Guilds.",
+                CLAN_CARD_BADGE_APPLIED: "Applied",
                 MESSAGE_ACTION_FORWARD: "Forward",
                 MESSAGE_ACTION_FORWARD_TO: "Forward To",
                 MESSAGE_FORWARDED: "Forwarded",
@@ -88628,8 +88630,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297054", "297054"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297054")), t = 0), t
+                let t = parseInt((e = "297057", "297057"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297057")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103560,31 +103562,31 @@
             "use strict";
             n.r(t), n.d(t, {
                 AGE_TRAITS: function() {
-                    return w
+                    return k
                 },
                 ALL_TRAITS_SET: function() {
-                    return B
+                    return V
                 },
                 CLAN_BRAND_PALETTE_PRESETS: function() {
-                    return j
-                },
-                CLAN_BRAND_PALETTE_PRESETS_BY_NAME: function() {
-                    return z
-                },
-                CLAN_BRAND_PRIMARY_DEFAULT: function() {
                     return W
                 },
-                CLAN_BRAND_SECONDARY_DEFAULT: function() {
+                CLAN_BRAND_PALETTE_PRESETS_BY_NAME: function() {
+                    return Z
+                },
+                CLAN_BRAND_PRIMARY_DEFAULT: function() {
                     return K
                 },
+                CLAN_BRAND_SECONDARY_DEFAULT: function() {
+                    return z
+                },
                 CLAN_SETTINGS_MODAL_LAYER_KEY: function() {
-                    return A
+                    return m
                 },
                 CLAN_SETUP_MODAL_LAYER_KEY: function() {
-                    return h
+                    return A
                 },
                 CLAN_WILDCARD_PLACEHOLDERS: function() {
-                    return v
+                    return D
                 },
                 ClanBannerKind: function() {
                     return r
@@ -103602,82 +103604,85 @@
                     return a
                 },
                 EMPTY_WILDCARD: function() {
-                    return L
+                    return v
                 },
                 FAKE_CLAN_APP_IDS: function() {
-                    return q
-                },
-                GENSHIN_ID: function() {
-                    return P
-                },
-                GENSHIN_TRAITS: function() {
-                    return b
-                },
-                HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
                     return J
                 },
-                IDENTITY_TRAITS: function() {
-                    return k
-                },
-                LANGUAGES_SET: function() {
-                    return V
-                },
-                MAX_DESCRIPTION_LENGTH: function() {
-                    return C
-                },
-                MAX_GAMES_TO_DISPLAY: function() {
-                    return R
-                },
-                MAX_INTEREST_LENGTH: function() {
-                    return p
-                },
-                MAX_NUM_INTERESTS: function() {
-                    return N
-                },
-                MAX_NUM_SELECTED_GAMES: function() {
-                    return m
-                },
-                MAX_TAG_LENGTH: function() {
-                    return S
-                },
-                MAX_TRAITS_TO_DISPLAY: function() {
-                    return g
-                },
-                MAX_WILDCARD_LENGTH: function() {
-                    return O
-                },
-                SUGGESTED_TRAITS_SET: function() {
-                    return H
-                },
-                VALORANT_ID: function() {
-                    return y
-                },
-                VALORANT_TRAITS: function() {
+                GENSHIN_ID: function() {
                     return U
                 },
-                ensureUserClanData: function() {
-                    return X
+                GENSHIN_TRAITS: function() {
+                    return G
                 },
-                getPlaystyleOptions: function() {
-                    return M
+                HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
+                    return $
                 },
-                getPlaystyleTitle: function() {
-                    return D
+                IDENTITY_TRAITS: function() {
+                    return B
                 },
-                getRandomClanBannerKind: function() {
-                    return Y
-                },
-                getRandomClanBrandPreset: function() {
-                    return Z
-                },
-                getSortedTraits: function() {
-                    return F
-                },
-                isCustomInterest: function() {
+                LANGUAGES_SET: function() {
                     return x
                 },
-                toServerClanData: function() {
+                MAX_CLAN_MEMBERS: function() {
+                    return S
+                },
+                MAX_DESCRIPTION_LENGTH: function() {
+                    return R
+                },
+                MAX_GAMES_TO_DISPLAY: function() {
+                    return g
+                },
+                MAX_INTEREST_LENGTH: function() {
+                    return O
+                },
+                MAX_NUM_INTERESTS: function() {
+                    return p
+                },
+                MAX_NUM_SELECTED_GAMES: function() {
+                    return N
+                },
+                MAX_TAG_LENGTH: function() {
+                    return h
+                },
+                MAX_TRAITS_TO_DISPLAY: function() {
+                    return L
+                },
+                MAX_WILDCARD_LENGTH: function() {
+                    return C
+                },
+                SUGGESTED_TRAITS_SET: function() {
+                    return Y
+                },
+                VALORANT_ID: function() {
+                    return P
+                },
+                VALORANT_TRAITS: function() {
+                    return b
+                },
+                ensureUserClanData: function() {
                     return Q
+                },
+                getPlaystyleOptions: function() {
+                    return y
+                },
+                getPlaystyleTitle: function() {
+                    return M
+                },
+                getRandomClanBannerKind: function() {
+                    return j
+                },
+                getRandomClanBrandPreset: function() {
+                    return X
+                },
+                getSortedTraits: function() {
+                    return H
+                },
+                isCustomInterest: function() {
+                    return F
+                },
+                toServerClanData: function() {
+                    return q
                 }
             }), n("47120");
             var i, r, s, a, o, l, u, d, _ = n("392711"),
@@ -103686,21 +103691,22 @@
                 I = n.n(E),
                 T = n("137920"),
                 f = n("689938");
-            let S = 4,
-                h = "ClanSetupModal",
-                A = "ClanSettingsModal",
-                m = 20,
-                N = 30,
-                p = 24,
-                O = 12,
-                C = 300,
-                R = 3,
-                g = 5;
+            let S = 200,
+                h = 4,
+                A = "ClanSetupModal",
+                m = "ClanSettingsModal",
+                N = 20,
+                p = 30,
+                O = 24,
+                C = 12,
+                R = 300,
+                g = 3,
+                L = 5;
             I()("2024-01-01T00:00:00");
-            let L = "",
-                v = ["cozy", "crunchy", "chaos"];
+            let v = "",
+                D = ["cozy", "crunchy", "chaos"];
 
-            function D(e) {
+            function M(e) {
                 switch (e) {
                     case T.ClanPlaystyles.SOCIAL:
                         return f.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE;
@@ -103717,7 +103723,7 @@
                 }
             }
 
-            function M() {
+            function y() {
                 return {
                     [T.ClanPlaystyles.SOCIAL]: {
                         type: T.ClanPlaystyles.SOCIAL,
@@ -103745,31 +103751,31 @@
                     }
                 }
             }(o = i || (i = {}))[o.GAMES = 0] = "GAMES", o[o.PLAYSTYLE = 1] = "PLAYSTYLE", o[o.UTILITY_TRAITS = 2] = "UTILITY_TRAITS", o[o.INTERESTS = 3] = "INTERESTS", o[o.DESCRIPTION = 4] = "DESCRIPTION", o[o.CUSTOMIZE_TAG_BADGE = 5] = "CUSTOMIZE_TAG_BADGE", o[o.CUSTOMIZE_BANNER = 6] = "CUSTOMIZE_BANNER", o[o.MEMBER_APPLICATION = 7] = "MEMBER_APPLICATION";
-            let y = "700136079562375258",
-                P = "762434991303950386",
-                U = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
-                b = ["Server: NA", "Server: EU", "Server: Asia", "Server: TW/HK/MO", "Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "F2P", "Spenders", "Co-op", "Support"],
-                G = new Set([...U, ...b]),
-                w = ["20+", "30+", "40+", "All Ages"],
-                k = ["Beginner Friendly", "PUGs", "Inclusive", "Parent Friendly", "Work-life Balance", "Streamers"],
-                B = new Set([...U, ...w, ...k]),
-                V = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]);
+            let P = "700136079562375258",
+                U = "762434991303950386",
+                b = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
+                G = ["Server: NA", "Server: EU", "Server: Asia", "Server: TW/HK/MO", "Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "F2P", "Spenders", "Co-op", "Support"],
+                w = new Set([...b, ...G]),
+                k = ["20+", "30+", "40+", "All Ages"],
+                B = ["Beginner Friendly", "PUGs", "Inclusive", "Parent Friendly", "Work-life Balance", "Streamers"],
+                V = new Set([...b, ...k, ...B]),
+                x = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]);
 
-            function x(e) {
-                return !B.has(e) && !H.has(e) && !V.has(e)
+            function F(e) {
+                return !V.has(e) && !Y.has(e) && !x.has(e)
             }
 
-            function F(e, t) {
+            function H(e, t) {
                 var n;
-                return c().sortBy(e, (n = t, e => -(((null == n ? void 0 : n.includes(e)) ? 1 : 0) << 4 | (x(e) ? 1 : 0) << 3 | (G.has(e) ? 1 : 0) << 2 | (w.includes(e) ? 1 : 0) << 1 | (k.includes(e) ? 1 : 0) << 0)))
+                return c().sortBy(e, (n = t, e => -(((null == n ? void 0 : n.includes(e)) ? 1 : 0) << 4 | (F(e) ? 1 : 0) << 3 | (w.has(e) ? 1 : 0) << 2 | (k.includes(e) ? 1 : 0) << 1 | (B.includes(e) ? 1 : 0) << 0)))
             }
-            let H = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history", "ssense doomscrolling", "skibidi toilet", "capcut editing", "tiktok rizz party", "industrial grade glycine", "frutiger aero", "y2k", "sanrio", "nuzlockes", "small form factor pcs", "esports", "game modding", "chiikawa", "underground rap", "pc music", "homestuck", "horse hoof cleaning", "analog horror", "pimple popping", "asmr", "ya fiction", "fanfiction", "cosplay", "fanart", "zines", "vtubers", "jrpgs", "retro gaming", "collecting", "coquette", "true crime", "critical role", "cottagecore", "goblincore", "renfaire", "letterboxd", "tarot readings", "fortune telling", "magic tricks", "ice cold sprite", "slime", "soap cutting", "mukbang", "premier league", "NBA", "hyperpop", "dance covers", "photocard trading", "toploader decorating", "unboxing", "decoden", "jpop", "mandopop", "cantopop", "amapiano", "ghibli", "pokemon vgc", "subway surfers", "family guy funny moments", "cranking 90s", "friday night funkin", "FNAF"]);
+            let Y = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history", "ssense doomscrolling", "skibidi toilet", "capcut editing", "tiktok rizz party", "industrial grade glycine", "frutiger aero", "y2k", "sanrio", "nuzlockes", "small form factor pcs", "esports", "game modding", "chiikawa", "underground rap", "pc music", "homestuck", "horse hoof cleaning", "analog horror", "pimple popping", "asmr", "ya fiction", "fanfiction", "cosplay", "fanart", "zines", "vtubers", "jrpgs", "retro gaming", "collecting", "coquette", "true crime", "critical role", "cottagecore", "goblincore", "renfaire", "letterboxd", "tarot readings", "fortune telling", "magic tricks", "ice cold sprite", "slime", "soap cutting", "mukbang", "premier league", "NBA", "hyperpop", "dance covers", "photocard trading", "toploader decorating", "unboxing", "decoden", "jpop", "mandopop", "cantopop", "amapiano", "ghibli", "pokemon vgc", "subway surfers", "family guy funny moments", "cranking 90s", "friday night funkin", "FNAF"]);
 
-            function Y() {
+            function j() {
                 let e = Object.keys(r).filter(e => isNaN(Number(e)));
                 return r[e[Math.round(Math.random() * e.length - 1)]]
             }(l = r || (r = {}))[l.NIGHT_SKY = 0] = "NIGHT_SKY", l[l.CASTLE = 1] = "CASTLE", l[l.WORLD_MAP = 2] = "WORLD_MAP", l[l.SEA_FOAM = 3] = "SEA_FOAM", l[l.WARP_TUNNEL = 4] = "WARP_TUNNEL", l[l.HOUSE = 5] = "HOUSE", l[l.HEIGHTMAP = 6] = "HEIGHTMAP", l[l.MESH = 7] = "MESH", l[l.SPATTER = 8] = "SPATTER", (u = s || (s = {})).BOULDER = "Boulder", u.CASCADE = "Cascade", u.THUNDER = "Thunder", u.SOUL = "Soul", u.MARSH = "Marsh", u.VOLCANO = "Volcano", u.EARTH = "Earth", u.ZEPHYR = "Zephyr";
-            let j = [{
+            let W = [{
                     name: "Boulder",
                     primary: "#8c8d8d",
                     secondary: "#d0d0d1"
@@ -103802,18 +103808,18 @@
                     primary: "#4892d5",
                     secondary: "#78b6f0"
                 }],
-                W = j[0].primary,
-                K = j[0].secondary,
-                z = Object.fromEntries(j.map(e => [e.name, {
+                K = W[0].primary,
+                z = W[0].secondary,
+                Z = Object.fromEntries(W.map(e => [e.name, {
                     primary: e.primary,
                     secondary: e.secondary
                 }]));
 
-            function Z() {
-                return j[Math.floor(Math.random() * j.length)]
+            function X() {
+                return W[Math.floor(Math.random() * W.length)]
             }
 
-            function X(e) {
+            function Q(e) {
                 return null == e ? null : "identityGuildId" in e ? e : {
                     identityGuildId: e.identity_guild_id,
                     identityEnabled: e.identity_enabled,
@@ -103822,12 +103828,12 @@
                 }
             }
 
-            function Q(e) {
+            function q(e) {
                 return {
                     tag: e.tag
                 }
             }
-            let q = {
+            let J = {
                     AGE_OF_EMPIRES_2: "720771660768084008",
                     VALORANT: "700136079562375258",
                     HELLDIVERS_2: "1205090671527071784",
@@ -103839,7 +103845,7 @@
                     AIMLAB: "506950362461110273",
                     HONKAI_STAR_RAIL: "1121201675240210523"
                 },
-                J = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
+                $ = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
             (d = a || (a = {}))[d.SIZE_12 = 12] = "SIZE_12", d[d.SIZE_16 = 16] = "SIZE_16", d[d.SIZE_24 = 24] = "SIZE_24", d[d.SIZE_32 = 32] = "SIZE_32", d[d.SIZE_36 = 36] = "SIZE_36"
         },
         963202: function(e, t, n) {
@@ -104625,147 +104631,155 @@
                 l = n("100527"),
                 u = n("231467"),
                 d = n("605236"),
-                _ = n("741606"),
-                c = n("703656"),
-                E = n("314897"),
-                I = n("271383"),
-                T = n("594174"),
-                f = n("87888"),
-                S = n("63063"),
-                h = n("970606"),
-                A = n("645896"),
-                m = n("905362"),
-                N = n("353093"),
-                p = n("954138"),
-                O = n("169559"),
-                C = n("284019"),
-                R = n("981631"),
-                g = n("689938"),
-                L = n("534856");
+                _ = n("246364"),
+                c = n("937111"),
+                E = n("741606"),
+                I = n("703656"),
+                T = n("314897"),
+                f = n("271383"),
+                S = n("594174"),
+                h = n("87888"),
+                A = n("63063"),
+                m = n("970606"),
+                N = n("645896"),
+                p = n("905362"),
+                O = n("353093"),
+                C = n("954138"),
+                R = n("169559"),
+                g = n("284019"),
+                L = n("308083"),
+                v = n("981631"),
+                D = n("689938"),
+                M = n("534856");
 
-            function v(e) {
+            function y(e) {
                 e.stopPropagation()
             }
             t.default = r.memo(function(e) {
                 var t;
                 let {
                     clan: n,
-                    isLoading: D,
-                    onClose: M,
-                    profileViewedAnalytics: y
-                } = e, P = null == n ? void 0 : n.identityGuildId, U = (0, A.useClanInfo)(null != P ? P : null), b = null == n ? void 0 : n.tag, G = (0, O.default)("clan_guild_profile"), w = (0, p.default)("base_clan_tag_chiplet"), k = (0, o.useStateFromStores)([E.default], () => E.default.getId()), B = (0, o.useStateFromStores)([I.default], () => null != P ? I.default.getMember(P, k) : null, [P, k]), V = (0, d.useIsDismissibleContentDismissed)(s.DismissibleContent.CLAN_TAG_WAITLIST), x = (0, o.useStateFromStores)([T.default], () => T.default.getUser(k), [k]), F = (null == B ? void 0 : B.joinedAt) != null, H = (0, N.isGuildAdoptedUserClanIdentity)(P, null == x ? void 0 : x.clan), Y = null != (0, _.default)(P);
+                    isLoading: P,
+                    onClose: U,
+                    profileViewedAnalytics: b
+                } = e, G = null == n ? void 0 : n.identityGuildId, w = (0, N.useClanInfo)(null != G ? G : null), k = null == n ? void 0 : n.tag, B = (0, R.default)("clan_guild_profile"), V = (0, C.default)("base_clan_tag_chiplet"), x = (0, o.useStateFromStores)([T.default], () => T.default.getId()), F = (0, o.useStateFromStores)([f.default], () => null != G ? f.default.getMember(G, x) : null, [G, x]), H = (0, o.useStateFromStores)([c.default], () => {
+                    var e;
+                    return (null == w ? void 0 : w.id) != null && (null === (e = c.default.getRequest(w.id)) || void 0 === e ? void 0 : e.applicationStatus) === _.GuildJoinRequestApplicationStatuses.SUBMITTED
+                }), Y = null != w && w.memberCount >= L.MAX_CLAN_MEMBERS, j = (0, d.useIsDismissibleContentDismissed)(s.DismissibleContent.CLAN_TAG_WAITLIST), W = (0, o.useStateFromStores)([S.default], () => S.default.getUser(x), [x]), K = (null == F ? void 0 : F.joinedAt) != null, z = (0, O.isGuildAdoptedUserClanIdentity)(G, null == W ? void 0 : W.clan), Z = null != (0, E.default)(G);
                 r.useEffect(() => {
-                    null != P && (0, h.trackClanProfileViewed)({
-                        guildId: P,
-                        hasJoinRequest: Y,
-                        ...y,
+                    null != G && (0, m.trackClanProfileViewed)({
+                        guildId: G,
+                        hasJoinRequest: Z,
+                        ...b,
                         location: l.default.CLAN_GUILD_PROFILE
                     })
-                }, [P, Y, y]);
-                let j = r.useCallback(() => {
-                        !V && ((0, h.trackClanApplyWaitlist)({
-                            originGuildId: null == y ? void 0 : y.guildId,
-                            tagGuildId: P,
-                            messageId: null == y ? void 0 : y.messageId,
-                            tagUserId: null == y ? void 0 : y.tagUserId,
+                }, [G, Z, b]);
+                let X = r.useCallback(() => {
+                        !j && ((0, m.trackClanApplyWaitlist)({
+                            originGuildId: null == b ? void 0 : b.guildId,
+                            tagGuildId: G,
+                            messageId: null == b ? void 0 : b.messageId,
+                            tagUserId: null == b ? void 0 : b.tagUserId,
                             location: l.default.CLAN_GUILD_PROFILE
-                        }), (0, a.showToast)((0, a.createToast)(g.default.Messages.CLAN_USER_WAITLIST_TOAST_SUCCESS, a.ToastType.SUCCESS)))
-                    }, [P, V, y]),
-                    W = r.useCallback(e => {
-                        null != P && (e.stopPropagation(), e.preventDefault(), null == M || M(), (0, m.openAdoptClanIdentityModal)(P))
-                    }, [P, M]),
-                    K = r.useCallback(e => {
-                        if (null != U && null != P) e.stopPropagation(), e.preventDefault(), null == M || M(), !Y && (0, m.openClanApplyFlow)(P, U, {
-                            source: null == y ? void 0 : y.source,
-                            messageId: null == y ? void 0 : y.messageId,
-                            tagUserId: null == y ? void 0 : y.tagUserId,
+                        }), (0, a.showToast)((0, a.createToast)(D.default.Messages.CLAN_USER_WAITLIST_TOAST_SUCCESS, a.ToastType.SUCCESS)))
+                    }, [G, j, b]),
+                    Q = r.useCallback(e => {
+                        null != G && (e.stopPropagation(), e.preventDefault(), null == U || U(), (0, p.openAdoptClanIdentityModal)(G))
+                    }, [G, U]),
+                    q = r.useCallback(e => {
+                        if (null != w && null != G) e.stopPropagation(), e.preventDefault(), null == U || U(), !Z && (0, p.openClanApplyFlow)(G, w, {
+                            source: null == b ? void 0 : b.source,
+                            messageId: null == b ? void 0 : b.messageId,
+                            tagUserId: null == b ? void 0 : b.tagUserId,
                             location: l.default.CLAN_GUILD_PROFILE
                         })
-                    }, [U, P, Y, M, y]),
-                    z = r.useCallback(() => {
-                        open(S.default.getArticleURL(R.HelpdeskArticles.CLANS_FAQ))
+                    }, [w, G, Z, U, b]),
+                    J = r.useCallback(() => {
+                        open(A.default.getArticleURL(v.HelpdeskArticles.CLANS_FAQ))
                     }, []),
-                    Z = r.useCallback(() => {
-                        null != P && (0, c.transitionTo)(R.Routes.GUILD_MEMBER_VERIFICATION(P))
-                    }, [P]),
-                    X = r.useCallback(() => {
-                        null != P && (0, c.transitionToGuild)(P)
-                    }, [P]),
-                    Q = r.useMemo(() => {
+                    $ = r.useCallback(() => {
+                        null != G && (0, I.transitionTo)(v.Routes.GUILD_MEMBER_VERIFICATION(G))
+                    }, [G]),
+                    ee = r.useCallback(() => {
+                        null != G && (0, I.transitionToGuild)(G)
+                    }, [G]),
+                    et = r.useMemo(() => {
                         var e, t;
                         return {
                             color: a.Button.Colors.BRAND,
                             size: a.Button.Sizes.SMALL,
                             fullWidth: !0,
-                            className: L.button,
-                            themeColor: null !== (t = null == U ? void 0 : null === (e = U.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null
+                            className: M.button,
+                            themeColor: null !== (t = null == w ? void 0 : null === (e = w.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null
                         }
-                    }, [null == U ? void 0 : null === (t = U.branding) || void 0 === t ? void 0 : t.primaryColor]),
-                    q = r.useMemo(() => {
+                    }, [null == w ? void 0 : null === (t = w.branding) || void 0 === t ? void 0 : t.primaryColor]),
+                    en = r.useMemo(() => {
                         switch (!0) {
-                            case !w:
+                            case !V:
                                 return null;
-                            case !F && !G && !V:
+                            case !K && !B && !j:
                                 return (0, i.jsx)(a.Button, {
-                                    onClick: j,
-                                    color: a.Button.Colors.PRIMARY,
-                                    size: a.Button.Sizes.SMALL,
-                                    fullWidth: !0,
-                                    children: g.default.Messages.CLAN_USER_WAITLIST_CTA
-                                });
-                            case !F && !G && V:
-                                return (0, i.jsxs)(a.Button, {
-                                    innerClassName: L.waitlistedButton,
-                                    onClick: z,
-                                    color: a.Button.Colors.PRIMARY,
-                                    size: a.Button.Sizes.SMALL,
-                                    fullWidth: !0,
-                                    children: [g.default.Messages.CLAN_USER_WAITLISTED, (0, i.jsx)(f.default, {})]
-                                });
-                            case !F && Y:
-                                return (0, i.jsx)(C.default, {
-                                    onClick: Z,
-                                    ...Q,
-                                    children: g.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
-                                });
-                            case !F:
-                                return (0, i.jsx)(C.default, {
-                                    onClick: K,
-                                    ...Q,
-                                    children: g.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
-                                });
-                            case F && !H:
-                                return (0, i.jsx)(C.default, {
-                                    onClick: W,
-                                    ...Q,
-                                    children: g.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
-                                });
-                            case F && H:
-                                return (0, i.jsx)(C.default, {
                                     onClick: X,
-                                    ...Q,
-                                    children: g.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
+                                    color: a.Button.Colors.PRIMARY,
+                                    size: a.Button.Sizes.SMALL,
+                                    fullWidth: !0,
+                                    children: D.default.Messages.CLAN_USER_WAITLIST_CTA
+                                });
+                            case !K && !B && j:
+                                return (0, i.jsxs)(a.Button, {
+                                    innerClassName: M.waitlistedButton,
+                                    onClick: J,
+                                    color: a.Button.Colors.PRIMARY,
+                                    size: a.Button.Sizes.SMALL,
+                                    fullWidth: !0,
+                                    children: [D.default.Messages.CLAN_USER_WAITLISTED, (0, i.jsx)(h.default, {})]
+                                });
+                            case !K && Z:
+                                return (0, i.jsx)(g.default, {
+                                    onClick: $,
+                                    ...et,
+                                    children: D.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
+                                });
+                            case !K:
+                                return (0, i.jsx)(g.default, {
+                                    onClick: q,
+                                    ...et,
+                                    children: D.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                                });
+                            case K && !z:
+                                return (0, i.jsx)(g.default, {
+                                    onClick: Q,
+                                    ...et,
+                                    children: D.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                                });
+                            case K && z:
+                                return (0, i.jsx)(g.default, {
+                                    onClick: ee,
+                                    ...et,
+                                    children: D.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
                                 });
                             default:
                                 return null
                         }
-                    }, [Q, W, K, Z, X, Y, H, G, V, j, z, w, F]),
-                    J = r.useMemo(() => ({
-                        className: L.container,
-                        onClick: v
+                    }, [et, Q, q, $, ee, Z, z, B, j, X, J, V, K]),
+                    ei = r.useMemo(() => ({
+                        className: M.container,
+                        onClick: y
                     }), []);
-                return null == b || null == U || null == P || D ? (0, i.jsx)("div", {
-                    ...J,
+                return null == k || null == w || null == G || P ? (0, i.jsx)("div", {
+                    ...ei,
                     children: (0, i.jsx)(a.Spinner, {})
                 }) : (0, i.jsxs)("div", {
-                    ...J,
+                    ...ei,
                     children: [(0, i.jsx)(u.ClanDiscoveryCardView, {
-                        clan: U,
-                        className: L.cardContainer,
-                        isMember: F
-                    }), null != q && (0, i.jsx)("div", {
-                        className: L.buttonContainer,
-                        children: q
+                        clan: w,
+                        className: M.cardContainer,
+                        isMember: K,
+                        hasPendingJoinRequest: H,
+                        atMaxMemberCapacity: Y
+                    }), null != en && (0, i.jsx)("div", {
+                        className: M.buttonContainer,
+                        children: en
                     })]
                 })
             })
@@ -116633,8 +116647,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297054",
-                    versionHash: "f9502f62496a1e969293bb48c7ff36991b9679d1"
+                    buildNumber: "297057",
+                    versionHash: "fe4d935e3b66774b0a71cafe5ee4197be8f6062d"
                 }
             }
             n.r(t), n.d(t, {
@@ -117512,88 +117526,92 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardView: function() {
-                    return P
+                    return k
                 },
                 Wildcards: function() {
-                    return D
+                    return U
                 }
             }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
-                o = n("481060"),
-                l = n("442837"),
-                u = n("239091"),
-                d = n("835473"),
-                _ = n("970606"),
-                c = n("905362"),
-                E = n("603368"),
-                I = n("353093"),
-                T = n("169559"),
-                f = n("114487"),
-                S = n("214715"),
-                h = n("550271"),
-                A = n("937111"),
-                m = n("703656"),
-                N = n("271383"),
-                p = n("594174"),
-                O = n("778045"),
-                C = n("355932"),
-                R = n("981631"),
-                g = n("308083"),
-                L = n("689938"),
-                v = n("449729");
+                o = n("903788"),
+                l = n("310665"),
+                u = n("194565"),
+                d = n("481060"),
+                _ = n("442837"),
+                c = n("239091"),
+                E = n("835473"),
+                I = n("970606"),
+                T = n("905362"),
+                f = n("603368"),
+                S = n("353093"),
+                h = n("169559"),
+                A = n("114487"),
+                m = n("214715"),
+                N = n("550271"),
+                p = n("246364"),
+                O = n("937111"),
+                C = n("703656"),
+                R = n("271383"),
+                g = n("594174"),
+                L = n("778045"),
+                v = n("355932"),
+                D = n("981631"),
+                M = n("308083"),
+                y = n("689938"),
+                P = n("449729");
 
-            function D(e) {
+            function U(e) {
                 let {
                     wildcardDescriptors: t,
                     primaryColor: n
-                } = e, s = t.filter(e => e !== g.EMPTY_WILDCARD).join(", "), a = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), l = (0, E.getAccessibleClanColor)(n, a.hex()), u = r.useRef(null), [d, _] = r.useState(!1);
+                } = e, s = t.filter(e => e !== M.EMPTY_WILDCARD).join(", "), a = (0, d.useToken)(d.tokens.colors.BACKGROUND_FLOATING), o = (0, f.getAccessibleClanColor)(n, a.hex()), l = r.useRef(null), [u, _] = r.useState(!1);
                 if (r.useEffect(() => {
-                        let e = u.current;
+                        let e = l.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && _(e.offsetWidth < e.scrollWidth)
                     }, []), 0 === s.length) return null;
-                let c = null != l ? {
-                    color: l.css()
+                let c = null != o ? {
+                    color: o.css()
                 } : void 0;
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(o.Text, {
+                    children: [(0, i.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
-                        className: v.clanInfoItem,
+                        className: P.clanInfoItem,
                         children: "\xb7"
-                    }), (0, i.jsx)(o.Tooltip, {
+                    }), (0, i.jsx)(d.Tooltip, {
                         text: s,
-                        color: o.Tooltip.Colors.PRIMARY,
-                        shouldShow: d,
+                        color: d.Tooltip.Colors.PRIMARY,
+                        shouldShow: u,
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             style: c,
-                            className: v.wildCardText,
-                            ref: u,
+                            className: P.wildCardText,
+                            ref: l,
                             children: s
                         })
                     })]
                 })
             }
 
-            function M(e) {
+            function b(e) {
                 let {
                     description: t,
                     expanded: n
                 } = e;
                 return null == t ? null : n ? (0, i.jsx)("div", {
-                    className: v.cardContentDescriptionSection,
-                    children: (0, i.jsx)(o.Text, {
+                    className: P.cardContentDescriptionSection,
+                    children: (0, i.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: t
                     })
                 }) : (0, i.jsx)("div", {
-                    className: v.cardContentDescriptionSection,
-                    children: (0, i.jsx)(o.Text, {
-                        className: v.cardContentDescriptionCollapsed,
+                    className: P.cardContentDescriptionSection,
+                    children: (0, i.jsx)(d.Text, {
+                        className: P.cardContentDescriptionCollapsed,
                         variant: "text-xs/normal",
                         color: "text-muted",
                         lineClamp: 4,
@@ -117602,19 +117620,19 @@
                 })
             }
 
-            function y(e) {
+            function G(e) {
                 let {
                     traits: t,
                     traitsToHighlight: n
-                } = e, s = r.useMemo(() => null == n ? new Set : new Set(n), [n]), o = r.useCallback(e => (0, i.jsx)(S.default, {
-                    className: a()(v.thinTrait, {
-                        [v.selectedTrait]: s.has(e)
+                } = e, s = r.useMemo(() => null == n ? new Set : new Set(n), [n]), o = r.useCallback(e => (0, i.jsx)(m.default, {
+                    className: a()(P.thinTrait, {
+                        [P.selectedTrait]: s.has(e)
                     }),
                     text: e,
                     selected: s.has(e)
                 }, e), [s]);
-                return (0, i.jsx)(C.default, {
-                    className: v.traitsContainer,
+                return (0, i.jsx)(v.default, {
+                    className: P.traitsContainer,
                     items: t,
                     renderItem: o,
                     maxLines: 2,
@@ -117622,141 +117640,190 @@
                 })
             }
 
-            function P(e) {
+            function w(e) {
+                let {
+                    hasPendingJoinRequest: t,
+                    atMaxMemberCapacity: n,
+                    isGuildMember: r
+                } = e;
+                if (t) return (0, i.jsxs)("div", {
+                    className: P.headerBadge,
+                    children: [(0, i.jsx)(l.HourglassIcon, {
+                        width: 12,
+                        height: 12
+                    }), (0, i.jsx)(d.Text, {
+                        variant: "text-xs/medium",
+                        color: "text-normal",
+                        children: y.default.Messages.CLAN_CARD_BADGE_APPLIED
+                    })]
+                });
+                if (r) return (0, i.jsxs)("div", {
+                    className: P.headerBadge,
+                    children: [(0, i.jsx)(o.CircleCheckIcon, {
+                        width: 12,
+                        height: 12,
+                        color: d.tokens.colors.STATUS_POSITIVE
+                    }), (0, i.jsx)(d.Text, {
+                        variant: "text-xs/medium",
+                        color: "text-normal",
+                        children: y.default.Messages.JOINED_GUILD
+                    })]
+                });
+                if (n) return (0, i.jsxs)("div", {
+                    className: P.headerBadge,
+                    children: [(0, i.jsx)(u.LockIcon, {
+                        width: 12,
+                        height: 12
+                    }), (0, i.jsx)(d.Text, {
+                        variant: "text-xs/medium",
+                        color: "text-normal",
+                        children: y.default.Messages.FULL
+                    })]
+                });
+                return null
+            }
+
+            function k(e) {
                 var t;
                 let {
                     clan: n,
                     bannerComponent: s,
-                    expanded: l,
-                    isMember: u,
-                    traitsToHighlight: _,
-                    prioritizedGameIds: c,
-                    className: E,
-                    showBrandingFooter: S = !1,
-                    bannerUrl: A,
-                    onlyAnimateIconOnHover: m = !1
+                    expanded: o,
+                    isMember: l = !1,
+                    traitsToHighlight: u,
+                    prioritizedGameIds: _,
+                    className: c,
+                    showBrandingFooter: I = !1,
+                    bannerUrl: T,
+                    onlyAnimateIconOnHover: f = !1,
+                    hasPendingJoinRequest: m = !1,
+                    atMaxMemberCapacity: p = !1
                 } = e, {
-                    tag: N,
-                    badge: p,
+                    tag: O,
+                    badge: C,
                     branding: {
-                        primaryColor: C,
-                        secondaryColor: R
+                        primaryColor: R,
+                        secondaryColor: g
                     },
-                    bannerHash: P
-                } = n, U = (0, d.default)(n.games), b = (0, T.default)("clan_discovery_card"), [G, w] = r.useState(!1), k = r.useCallback(() => {
-                    w(!0)
-                }, []), B = r.useCallback(() => {
-                    w(!1)
-                }, []), V = L.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                    bannerHash: v
+                } = n, D = (0, E.default)(n.games), k = (0, h.default)("clan_discovery_card"), [B, V] = r.useState(!1), x = r.useCallback(() => {
+                    V(!0)
+                }, []), F = r.useCallback(() => {
+                    V(!1)
+                }, []), H = y.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: n.memberCount
-                }), x = null != A ? A : (0, I.getClanBannerUrl)(n.id, P), F = null == s && null == x ? {
-                    background: "linear-gradient(90deg, ".concat(C, ", ").concat(R, ")")
-                } : void 0, H = null != s ? s : null != x ? (0, i.jsx)("img", {
-                    alt: L.default.Messages.CLAN_LOOK_BANNER,
-                    src: x,
-                    className: v.bannerImage
-                }) : null, Y = r.useMemo(() => (0, g.getSortedTraits)(n.traits, _), [n.traits, _]);
+                }), Y = null != T ? T : (0, S.getClanBannerUrl)(n.id, v), j = null == s && null == Y ? {
+                    background: "linear-gradient(90deg, ".concat(R, ", ").concat(g, ")")
+                } : void 0, W = null != s ? s : null != Y ? (0, i.jsx)("img", {
+                    alt: y.default.Messages.CLAN_LOOK_BANNER,
+                    src: Y,
+                    className: P.bannerImage
+                }) : null, K = r.useMemo(() => (0, M.getSortedTraits)(n.traits, u), [n.traits, u]);
                 return (0, i.jsxs)("div", {
-                    className: a()(v.card, E, {
-                        [v.cardStaticHeight]: !l
+                    className: a()(P.card, c, {
+                        [P.cardStaticHeight]: !o
                     }),
-                    onMouseEnter: k,
-                    onMouseLeave: B,
-                    children: [(0, i.jsx)("div", {
-                        className: v.cardBrandingHeader,
-                        style: F,
-                        children: H
+                    onMouseEnter: x,
+                    onMouseLeave: F,
+                    children: [(0, i.jsxs)("div", {
+                        className: P.cardBrandingHeader,
+                        style: j,
+                        children: [W, (0, i.jsx)(w, {
+                            hasPendingJoinRequest: m,
+                            atMaxMemberCapacity: p,
+                            isGuildMember: l
+                        })]
                     }), (0, i.jsxs)("div", {
-                        className: v.cardContent,
+                        className: P.cardContent,
                         children: [(0, i.jsxs)("div", {
-                            className: v.cardContentTitleSection,
+                            className: P.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
-                                className: v.cardNameAndTagWrapper,
-                                children: [(0, i.jsx)(f.ClanGuildIconSimple, {
+                                className: P.cardNameAndTagWrapper,
+                                children: [(0, i.jsx)(A.ClanGuildIconSimple, {
                                     guildId: n.id,
                                     guildName: n.name,
                                     guildIcon: n.icon,
                                     iconSize: 64,
-                                    className: v.clanIcon,
-                                    animate: !m || G
+                                    className: P.clanIcon,
+                                    animate: !f || B
                                 }), (0, i.jsx)("div", {
-                                    className: v.clanTagChipletWrapper,
-                                    children: (0, i.jsx)(o.Tooltip, {
-                                        text: L.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
+                                    className: P.clanTagChipletWrapper,
+                                    children: (0, i.jsx)(d.Tooltip, {
+                                        text: y.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
-                                        shouldShow: !u && b,
+                                        shouldShow: !l && k,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
-                                            className: v.clanTagChiplet,
-                                            children: [(0, i.jsx)(h.ClanBadge, {
+                                            className: P.clanTagChiplet,
+                                            children: [(0, i.jsx)(N.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
-                                                badge: p.badgeKind,
-                                                primaryTintColor: p.primaryColor,
-                                                secondaryTintColor: p.secondaryColor
-                                            }), (0, i.jsx)(o.Text, {
+                                                badge: C.badgeKind,
+                                                primaryTintColor: C.primaryColor,
+                                                secondaryTintColor: C.secondaryColor
+                                            }), (0, i.jsx)(d.Text, {
                                                 variant: "text-xs/medium",
                                                 color: "text-primary",
-                                                children: N
+                                                children: O
                                             })]
                                         })
                                     })
                                 })]
-                            }), (0, i.jsx)(o.Heading, {
+                            }), (0, i.jsx)(d.Heading, {
                                 variant: "heading-md/medium",
                                 color: "header-primary",
                                 lineClamp: 1,
                                 children: n.name
                             }), (0, i.jsxs)("div", {
-                                className: v.clanInfoRow,
-                                children: [(0, i.jsx)(o.Text, {
+                                className: P.clanInfoRow,
+                                children: [(0, i.jsx)(d.Text, {
                                     variant: "text-xxs/normal",
-                                    className: v.clanInfoItem,
+                                    className: P.clanInfoItem,
                                     children: (0, i.jsx)("span", {
                                         role: "img",
-                                        "aria-label": L.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
+                                        "aria-label": y.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
                                         children: "\uD83C\uDFAE"
                                     })
-                                }), (0, i.jsx)(o.Text, {
+                                }), (0, i.jsx)(d.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-secondary",
-                                    className: v.clanInfoItem,
-                                    children: null !== (t = (0, g.getPlaystyleTitle)(n.playstyle)) && void 0 !== t ? t : L.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
-                                }), (0, i.jsx)(D, {
+                                    className: P.clanInfoItem,
+                                    children: null !== (t = (0, M.getPlaystyleTitle)(n.playstyle)) && void 0 !== t ? t : y.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
+                                }), (0, i.jsx)(U, {
                                     wildcardDescriptors: n.wildcardDescriptors,
                                     primaryColor: n.branding.primaryColor
                                 })]
                             })]
-                        }), (0, i.jsx)(M, {
+                        }), (0, i.jsx)(b, {
                             description: n.description,
-                            expanded: l
-                        }), (0, i.jsx)(y, {
-                            traits: Y,
-                            traitsToHighlight: _
+                            expanded: o
+                        }), (0, i.jsx)(G, {
+                            traits: K,
+                            traitsToHighlight: u
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: v.cardFooter,
+                        className: P.cardFooter,
                         children: [(0, i.jsx)("div", {
-                            className: v.cardFooterInfo,
+                            className: P.cardFooterInfo,
                             children: (0, i.jsx)("div", {
-                                className: v.cardFooterMembers,
-                                children: (0, i.jsx)(o.Text, {
+                                className: P.cardFooterMembers,
+                                children: (0, i.jsx)(d.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: V
+                                    children: H
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: v.cardFooterGames,
-                            children: (0, i.jsx)(O.default, {
-                                games: U,
-                                prioritizedGameIds: c
+                            className: P.cardFooterGames,
+                            children: (0, i.jsx)(L.default, {
+                                games: D,
+                                prioritizedGameIds: _
                             })
                         })]
-                    }), S && (0, i.jsx)("div", {
-                        className: v.cardBrandingFooter,
+                    }), I && (0, i.jsx)("div", {
+                        className: P.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(C, ", ").concat(R, ")")
+                            background: "linear-gradient(90deg, ".concat(R, ", ").concat(g, ")")
                         }
                     })]
                 })
@@ -117767,50 +117834,55 @@
                     prioritizedGameIds: s,
                     ...a
                 } = e, {
-                    clan: d,
-                    affinity: E,
-                    index: I,
-                    source: T
-                } = a, f = (0, l.useStateFromStores)([p.default], () => p.default.getCurrentUser()), S = (0, l.useStateFromStores)([N.default], () => N.default.isMember(d.id, null == f ? void 0 : f.id), [d, f]), h = r.useCallback(() => {
-                    let e = null != A.default.getRequest(d.id);
-                    if ((0, _.trackClanDiscoveryCardClicked)({
-                            guildId: d.id,
+                    clan: o,
+                    affinity: l,
+                    index: u,
+                    source: E
+                } = a, f = (0, _.useStateFromStores)([g.default], () => g.default.getCurrentUser()), S = (0, _.useStateFromStores)([R.default], () => R.default.isMember(o.id, null == f ? void 0 : f.id), [o, f]), h = (0, _.useStateFromStores)([O.default], () => {
+                    var e;
+                    return (null === (e = O.default.getRequest(o.id)) || void 0 === e ? void 0 : e.applicationStatus) === p.GuildJoinRequestApplicationStatuses.SUBMITTED
+                }), A = o.memberCount >= M.MAX_CLAN_MEMBERS, m = r.useCallback(() => {
+                    let e = null != O.default.getRequest(o.id);
+                    if ((0, I.trackClanDiscoveryCardClicked)({
+                            guildId: o.id,
                             isMember: S,
                             hasJoinRequest: e,
-                            affinity: E,
-                            index: I
+                            affinity: l,
+                            index: u
                         }), S) {
-                        (0, m.transitionToGuild)(d.id);
+                        (0, C.transitionToGuild)(o.id);
                         return
                     }
                     if (e) {
-                        (0, m.transitionTo)(R.Routes.GUILD_MEMBER_VERIFICATION(d.id));
+                        (0, C.transitionTo)(D.Routes.GUILD_MEMBER_VERIFICATION(o.id));
                         return
-                    }(0, c.openClanApplyFlow)(d.id, d, {
-                        source: T,
-                        location: R.AnalyticsLocations.CLAN_DISCOVERY_CARD
+                    }(0, T.openClanApplyFlow)(o.id, o, {
+                        source: E,
+                        location: D.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     }, s)
-                }, [d, S, E, I, T, s]), O = r.useCallback(e => {
-                    (0, u.openContextMenuLazy)(e, async () => {
+                }, [o, S, l, u, E, s]), N = r.useCallback(e => {
+                    (0, c.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await n.e("5577").then(n.bind(n, "955120"));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            guildId: d.id
+                            guildId: o.id
                         })
                     })
-                }, [d.id]);
-                return (0, i.jsx)(o.Clickable, {
-                    onClick: h,
-                    className: v.clickableCard,
+                }, [o.id]);
+                return (0, i.jsx)(d.Clickable, {
+                    onClick: m,
+                    className: P.clickableCard,
                     style: t,
-                    onContextMenu: O,
-                    children: (0, i.jsx)(P, {
+                    onContextMenu: N,
+                    children: (0, i.jsx)(k, {
                         ...a,
                         isMember: S,
                         prioritizedGameIds: s,
-                        showBrandingFooter: !0
+                        showBrandingFooter: !0,
+                        hasPendingJoinRequest: h,
+                        atMaxMemberCapacity: A
                     })
                 })
             }
@@ -174221,8 +174293,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717006149840",
-                                    build_number: "297054"
+                                    built_at: "1717006672565",
+                                    build_number: "297057"
                                 }
                             },
                             retries: 1
@@ -185912,46 +185984,6 @@
                 }) : ee()
             }
         },
-        94027: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("735250");
-            n("470079");
-            var r = n("692547"),
-                s = n("780384"),
-                a = n("410030"),
-                o = n("63802"),
-                l = n("474936"),
-                u = n("646541");
-            t.default = e => {
-                let {
-                    isStacked: t,
-                    ctaButton: n,
-                    isGift: d,
-                    trialOfferTier: _,
-                    discountOffer: c
-                } = e, E = !d && (_ === l.PremiumSubscriptionSKUs.TIER_2 || null != c), I = (0, a.default)(), T = (0, s.isThemeLight)(I) && t ? void 0 : r.default.colors.WHITE.css;
-                return t ? d || _ !== l.PremiumSubscriptionSKUs.TIER_2 && null == c ? (0, i.jsx)(i.Fragment, {
-                    children: n
-                }) : (0, i.jsxs)("div", {
-                    className: u.sparklesAndButton,
-                    children: [(0, i.jsx)(o.SparkleGroupLeft, {
-                        color: T,
-                        wrapperStyle: u.leftSparkle
-                    }), (0, i.jsx)("div", {
-                        className: u.ctaFullWidth,
-                        children: n
-                    }), (0, i.jsx)(o.SparkleGroupRight, {
-                        color: T,
-                        wrapperStyle: u.rightSparkle
-                    })]
-                }) : (0, i.jsxs)(i.Fragment, {
-                    children: [n, E && (0, i.jsx)(o.ButtonSparkleGroup, {
-                        tier: l.PremiumTypes.TIER_2
-                    })]
-                })
-            }
-        },
         823188: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -185959,25 +185991,22 @@
                     return o
                 },
                 PremiumPillWithSparkles: function() {
-                    return ea
-                },
-                PremiumTierCardsVariant: function() {
-                    return d
+                    return ei
                 },
                 Tier0Card: function() {
-                    return ec
+                    return el
                 },
                 Tier2Card: function() {
-                    return eI
+                    return ed
                 },
                 Tier2FeatureItems: function() {
-                    return eE
+                    return eu
                 },
                 Tier2FeatureSet: function() {
                     return u
                 },
                 default: function() {
-                    return eT
+                    return e_
                 }
             });
             var i, r, s, a, o, l, u, d, _ = n("735250");
@@ -185991,71 +186020,68 @@
                 h = n("780384"),
                 A = n("481060"),
                 m = n("410030"),
-                N = n("607070"),
-                p = n("100527"),
-                O = n("906732"),
-                C = n("535322"),
-                R = n("706454"),
-                g = n("594174"),
-                L = n("78839"),
-                v = n("332475"),
-                D = n("533496"),
-                M = n("771357"),
-                y = n("642113"),
-                P = n("709586"),
-                U = n("483444"),
-                b = n("599250"),
-                G = n("466111"),
-                w = n("761374"),
-                k = n("363138"),
-                B = n("325767"),
-                V = n("930153"),
-                x = n("74538"),
-                F = n("357355"),
-                H = n("140465"),
-                Y = n("424082"),
-                j = n("650032"),
-                W = n("104494"),
-                K = n("639119"),
-                z = n("230916"),
-                Z = n("248042"),
-                X = n("94027"),
-                Q = n("504865"),
-                q = n("63802"),
-                J = n("318990"),
-                $ = n("474936"),
-                ee = n("768760"),
-                et = n("689938"),
-                en = n("988332"),
-                ei = n("476945"),
-                er = n("945182");
+                N = n("100527"),
+                p = n("906732"),
+                O = n("535322"),
+                C = n("706454"),
+                R = n("594174"),
+                g = n("78839"),
+                L = n("332475"),
+                v = n("533496"),
+                D = n("771357"),
+                M = n("642113"),
+                y = n("709586"),
+                P = n("483444"),
+                U = n("599250"),
+                b = n("466111"),
+                G = n("761374"),
+                w = n("363138"),
+                k = n("930153"),
+                B = n("74538"),
+                V = n("357355"),
+                x = n("140465"),
+                F = n("424082"),
+                H = n("650032"),
+                Y = n("104494"),
+                j = n("639119"),
+                W = n("230916"),
+                K = n("248042"),
+                z = n("504865"),
+                Z = n("63802"),
+                X = n("318990"),
+                Q = n("474936"),
+                q = n("768760"),
+                J = n("689938"),
+                $ = n("988332"),
+                ee = n("476945"),
+                et = n("945182");
 
-            function es(e) {
+            function en(e) {
                 let {
                     text: t,
                     className: n,
                     colorOptions: i = 2
                 } = e;
                 return (0, _.jsx)("div", {
-                    className: E()(n, en.freeTrialPill, {
-                        [en.freeTrialPillTier0GradientFill]: 1 === i,
-                        [en.freeTrialPillTier2GradientFill]: 3 === i,
-                        [en.freeTrialPillTier2OldGradientFill]: 4 === i,
-                        [en.lightBackgroundPill]: 5 === i
+                    className: E()(n, $.freeTrialPill, {
+                        [$.freeTrialPillTier0GradientFill]: 1 === i,
+                        [$.freeTrialPillTier2GradientFill]: 3 === i,
+                        [$.freeTrialPillTier2OldGradientFill]: 4 === i,
+                        [$.lightBackgroundPill]: 5 === i
                     }),
                     children: (0, _.jsx)(A.Text, {
                         variant: "text-xs/bold",
-                        className: E()(en.freeTrialPillText, {
-                            [en.freeTrialPillTextInverted]: 0 !== i && 2 !== i,
-                            [en.freeTrialPillTextTier0]: 0 === i,
-                            [en.freeTrialPillTextTier2]: 2 === i
+                        className: E()($.freeTrialPillText, {
+                            [$.freeTrialPillTextInverted]: 0 !== i && 2 !== i,
+                            [$.freeTrialPillTextTier0]: 0 === i,
+                            [$.freeTrialPillTextTier2]: 2 === i
                         }),
                         children: t
                     })
                 })
             }
 
-            function ea(e) {
+            function ei(e) {
                 let t, {
                     text: n,
                     className: i,
@@ -186067,115 +186093,71 @@
                         t = S.default.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS.css;
                         break;
                     case 3:
-                        t = "url(#".concat(q.PREMIUM_NEW_TIER_2_SVG_GRADIENT_ID, ")");
+                        t = "url(#".concat(Z.PREMIUM_NEW_TIER_2_SVG_GRADIENT_ID, ")");
                         break;
                     case 4:
                     case 5:
-                        t = "url(#".concat(q.PREMIUM_OLD_TIER_2_SVG_GRADIENT_ID, ")");
+                        t = "url(#".concat(Z.PREMIUM_OLD_TIER_2_SVG_GRADIENT_ID, ")");
                         break;
                     default:
                         t = "white"
                 }
                 return s ? (0, _.jsxs)("div", {
-                    className: E()(i, en.freeTrialPillWithSparkles),
-                    children: [(0, _.jsx)(q.SparkleStar, {
-                        foreground: en.sparkleStar1,
+                    className: E()(i, $.freeTrialPillWithSparkles),
+                    children: [(0, _.jsx)(Z.SparkleStar, {
+                        foreground: $.sparkleStar1,
                         color: t
-                    }), (0, _.jsx)(q.SparkleStar, {
-                        foreground: en.sparkleStar2,
+                    }), (0, _.jsx)(Z.SparkleStar, {
+                        foreground: $.sparkleStar2,
                         color: t
-                    }), (0, _.jsx)(q.SparkleStar, {
-                        foreground: en.sparkleStar3,
+                    }), (0, _.jsx)(Z.SparkleStar, {
+                        foreground: $.sparkleStar3,
                         color: t
-                    }), (0, _.jsx)(es, {
+                    }), (0, _.jsx)(en, {
                         text: n,
                         colorOptions: r
-                    }), (0, _.jsx)(q.SparkleStar, {
-                        foreground: en.sparkleStar4,
+                    }), (0, _.jsx)(Z.SparkleStar, {
+                        foreground: $.sparkleStar4,
                         color: t
-                    }), (0, _.jsx)(q.SparkleStar, {
-                        foreground: en.sparkleStar5,
+                    }), (0, _.jsx)(Z.SparkleStar, {
+                        foreground: $.sparkleStar5,
                         color: t
                     })]
                 }) : (0, _.jsxs)("div", {
-                    className: E()(i, en.freeTrialPillWithSparkles),
-                    children: [(0, _.jsx)(es, {
+                    className: E()(i, $.freeTrialPillWithSparkles),
+                    children: [(0, _.jsx)(en, {
                         text: n,
                         colorOptions: r
-                    }), (0, _.jsx)(q.SparkleStar, {
-                        foreground: en.sparkleStar1,
+                    }), (0, _.jsx)(Z.SparkleStar, {
+                        foreground: $.sparkleStar1,
                         style: {
                             marginLeft: 4,
                             marginBottom: -6
                         },
                         color: t
-                    }), (0, _.jsx)(q.SparkleStar, {
-                        foreground: en.sparkleStar2,
+                    }), (0, _.jsx)(Z.SparkleStar, {
+                        foreground: $.sparkleStar2,
                         color: t
                     })]
                 })
             }
 
-            function eo(e) {
-                let {
-                    width: t = 83,
-                    height: n = 82,
-                    ...i
-                } = e;
-                return (0, _.jsxs)("svg", {
-                    ...(0, B.default)({
-                        ...i
-                    }),
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 83 82",
-                    fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    children: [(0, _.jsx)("g", {
-                        clipPath: "url(#clip0_1691_113820)",
-                        children: (0, _.jsx)("path", {
-                            d: "M75.6975 45.1322C75.2844 48.0717 70.2815 49.7001 69.2458 52.3302C68.0858 55.0537 70.4287 59.7129 68.6614 62.0181C66.8941 64.3233 61.7294 63.1533 59.479 64.9465C57.2438 66.6308 56.836 71.9026 54.133 72.966C51.5389 74.0448 47.5818 70.602 44.6592 70.8574C41.8456 71.1281 38.9013 75.4884 35.9617 75.0752C33.0222 74.6621 31.3938 69.6592 28.7638 68.6235C26.0402 67.4635 21.381 69.8064 19.0758 68.0391C16.7706 66.2718 17.9406 61.1071 16.1474 58.8566C14.5873 56.5279 9.31547 56.1201 8.25204 53.4171C7.17332 50.823 10.6161 46.8659 10.3607 43.9434C9.96577 41.2233 5.60554 38.279 6.01868 35.3394C6.43181 32.3999 11.4347 30.7715 12.4704 28.1414C13.6304 25.4179 11.2876 20.7587 13.0548 18.4535C14.8221 16.1483 19.9868 17.3183 22.2373 15.5251C24.4724 13.8408 24.8802 8.56898 27.5832 7.50556C30.1774 6.42683 34.1345 9.86958 37.057 9.61417C39.8706 9.34346 42.8149 4.98323 45.7545 5.39636C48.6941 5.80949 50.3224 10.8124 52.9525 11.8481C55.6761 13.0081 60.3352 10.6652 62.6404 12.4325C64.9456 14.1998 63.7756 19.3645 65.5688 21.615C67.2531 23.8501 72.5249 24.2579 73.5884 26.9609C74.6671 29.555 71.2243 33.5122 71.4797 36.4347C71.7505 39.2483 76.1107 42.1926 75.6975 45.1322Z",
-                            fill: "currentColor"
-                        })
-                    }), (0, _.jsx)("path", {
-                        d: "M30.1999 41.1212L26.9681 32.3582L23.3318 31.8471L21.6757 43.6313L24.3355 44.0051L25.5209 35.571L28.9482 44.6534L32.3488 45.1313L34.0049 33.3471L31.3451 32.9733L30.1999 41.1212ZM43.2501 41.8738C43.6191 39.2476 42.3243 37.5893 39.7655 37.2296C36.971 36.8369 34.9959 38.4305 34.6269 41.0567C34.2341 43.8513 35.9048 45.8886 38.935 46.3145C40.3996 46.5203 41.6035 46.2603 42.3119 45.862L42.5887 43.8924C41.8322 44.2668 40.8661 44.4228 39.9065 44.288C38.2567 44.0561 37.4063 43.2671 37.286 42.1686L43.0939 42.9849L43.2501 41.8738ZM39.5418 39.3098C40.5182 39.447 41.0822 40.0756 40.9668 41.1409L37.5326 40.6583C37.8069 39.6839 38.4812 39.1607 39.5418 39.3098ZM53.3558 44.7704L52.6485 39.2977L49.9214 38.9145L47.757 43.9321L47.211 38.5335L44.4838 38.1503L45.6771 47.0045L48.4043 47.3878L50.7631 42.2087L51.6534 47.8444L54.4311 48.2348L58.2208 40.0809L55.5104 39.7L53.3558 44.7704ZM61.6245 45.4004L62.7507 37.3871L60.0067 37.0015L58.8805 45.0147L61.6245 45.4004ZM59.7123 49.2345C60.6719 49.3694 61.4423 48.7738 61.5677 47.8816C61.6954 46.9725 61.1167 46.2045 60.1571 46.0696C59.1975 45.9348 58.4127 46.5112 58.2849 47.4202C58.1595 48.3125 58.7527 49.0997 59.7123 49.2345Z",
-                        fill: "#5865F2"
-                    }), (0, _.jsx)("path", {
-                        d: "M57.6991 28.0304L61.3718 26.9774C61.3856 26.9721 61.3978 26.9632 61.4071 26.9517C61.4163 26.9401 61.4223 26.9262 61.4243 26.9116C61.4264 26.8969 61.4245 26.882 61.4188 26.8683C61.4131 26.8546 61.4038 26.8427 61.392 26.8338L58.1518 24.8093C58.1409 24.8077 58.1311 24.8019 58.1244 24.7932C58.1178 24.7844 58.1149 24.7733 58.1165 24.7625L57.0607 21.0782C57.0282 21.0109 56.9459 20.9993 56.9167 21.058L54.8864 24.3085C54.8629 24.3261 54.86 24.3466 54.8394 24.3437L51.1462 25.3939C51.1324 25.3992 51.1202 25.4081 51.1109 25.4196C51.1017 25.4312 51.0957 25.445 51.0937 25.4597C51.0916 25.4744 51.0935 25.4893 51.0992 25.503C51.1049 25.5167 51.1142 25.5286 51.126 25.5375L54.3867 27.5649C54.4073 27.5678 54.4044 27.5883 54.4221 27.6117L55.4778 31.296C55.4898 31.3604 55.5721 31.372 55.6219 31.3162L57.6522 28.0657C57.6537 28.0548 57.6595 28.045 57.6683 28.0384C57.6771 28.0318 57.6882 28.0289 57.6991 28.0304V28.0304Z",
-                        fill: "#5865F2"
-                    }), (0, _.jsx)("path", {
-                        d: "M27.9939 54.8801L30.1446 54.2599C30.156 54.2502 30.1635 54.2367 30.1656 54.2219C30.1676 54.207 30.1642 54.1919 30.1559 54.1795L28.2594 52.9905C28.2541 52.9897 28.2493 52.9869 28.2461 52.9826C28.2429 52.9783 28.2415 52.9729 28.2422 52.9676L27.626 50.8105C27.6275 50.7998 27.6247 50.789 27.6182 50.7804C27.6118 50.7718 27.6022 50.7662 27.5915 50.7647C27.5809 50.7632 27.5701 50.766 27.5616 50.7725C27.553 50.7789 27.5473 50.7886 27.5458 50.7992L26.3589 52.7029L26.3388 52.7001L24.1881 53.3203C24.1775 53.3188 24.1667 53.3216 24.1581 53.3281C24.1495 53.3346 24.1439 53.3442 24.1424 53.3549C24.1409 53.3655 24.1437 53.3763 24.1501 53.3849C24.1566 53.3935 24.1662 53.3992 24.1768 53.4007L26.0733 54.5897C26.0786 54.5904 26.0834 54.5933 26.0866 54.5976C26.0898 54.6019 26.0912 54.6073 26.0905 54.6126L26.7067 56.7697C26.7164 56.7811 26.7299 56.7886 26.7446 56.7907C26.7594 56.7928 26.7745 56.7893 26.7869 56.7809L27.9738 54.8773C27.9738 54.8773 27.9738 54.8773 27.9939 54.8801Z",
-                        fill: "#5865F2"
-                    }), (0, _.jsx)("defs", {
-                        children: (0, _.jsx)("clipPath", {
-                            id: "clip0_1691_113820",
-                            children: (0, _.jsx)("rect", {
-                                width: "70.3636",
-                                height: "70.3636",
-                                fill: "white",
-                                transform: "translate(10.915 0.5) rotate(8)"
-                            })
-                        })
-                    })]
-                })
-            }
-
-            function el(e) {
+            function er(e) {
                 let {
                     Icon: t,
                     text: n,
                     isNew: i = !1
                 } = e;
                 return (0, _.jsxs)("div", {
-                    className: en.item,
+                    className: $.item,
                     children: [(0, _.jsx)(t, {
-                        className: en.icon
+                        className: $.icon
                     }), (0, _.jsx)(A.Text, {
                         variant: "text-md/normal",
                         color: "always-white",
                         children: n
-                    }), i ? (0, _.jsx)(C.default, {
-                        className: en.newTagItem,
+                    }), i ? (0, _.jsx)(O.default, {
+                        className: $.newTagItem,
                         forceUseColorForSparkles: !0,
                         shouldInheritBackgroundColor: !0,
                         shouldInheritTextColor: !0
@@ -186183,517 +186165,378 @@
                 })
             }
 
-            function eu(e) {
+            function es(e) {
                 var t;
                 let {
                     defaultPriceString: n,
                     subscriptionPlan: i,
                     discountOffer: r
-                } = e, s = (0, z.useDiscountedPrice)(i);
+                } = e, s = (0, W.useDiscountedPrice)(i);
                 return (0, _.jsx)(_.Fragment, {
-                    children: et.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION_GENERIC.format({
-                        numMonths: null !== (t = r.discount.user_usage_limit) && void 0 !== t ? t : $.DISCOUNT_DURATION_FALLBACK,
+                    children: J.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION_GENERIC.format({
+                        numMonths: null !== (t = r.discount.user_usage_limit) && void 0 !== t ? t : Q.DISCOUNT_DURATION_FALLBACK,
                         discountedPrice: s,
                         regularPrice: n
                     })
                 })
             }
 
-            function ed(e) {
+            function ea(e) {
                 let {
                     isGift: t,
                     premiumTier: n,
                     offerTierMatchesCard: i,
                     offerType: r,
                     showYearlyPrice: s,
-                    isStacked: a,
-                    isFullScreen: o,
-                    priceOptions: l
-                } = e, u = (0, f.useStateFromStores)([L.default], () => L.default.getPremiumTypeSubscription()), d = (0, f.useStateFromStores)([g.default], () => g.default.getCurrentUser()), c = (0, H.useHasDiscountApplied)(), {
-                    annualDiscountPercentage: I
-                } = (0, Y.getAnnualDiscountsExperimentConfig)("PremiumTierCards"), S = (0, H.useActiveDiscountInfo)(), h = n === $.PremiumTypes.TIER_0 ? $.PremiumSubscriptionSKUs.TIER_0 : $.PremiumSubscriptionSKUs.TIER_2, m = (null == u ? void 0 : u.trialId) != null ? null == d ? void 0 : d.premiumType : c ? $.PremiumTypes.TIER_2 : null, N = (0, K.usePremiumTrialOffer)(), p = (0, W.usePremiumDiscountOffer)(), O = null == N ? void 0 : N.subscription_trial;
-                if (!t && null != m && n === m && null != u && null != u.planIdFromItems && !a) {
-                    let e = null != u.trialEndsAt ? T()(null == u ? void 0 : u.trialEndsAt).diff(T()(), "d") : 0,
-                        t = $.SubscriptionPlanInfo[u.planIdFromItems],
-                        n = x.default.formatPriceString(x.default.getDefaultPrice(t.id), t.interval);
+                    priceOptions: a
+                } = e, o = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), l = (0, f.useStateFromStores)([R.default], () => R.default.getCurrentUser()), u = (0, x.useHasDiscountApplied)(), {
+                    annualDiscountPercentage: d
+                } = (0, F.getAnnualDiscountsExperimentConfig)("PremiumTierCards"), c = (0, x.useActiveDiscountInfo)(), E = n === Q.PremiumTypes.TIER_0 ? Q.PremiumSubscriptionSKUs.TIER_0 : Q.PremiumSubscriptionSKUs.TIER_2, I = (null == o ? void 0 : o.trialId) != null ? null == l ? void 0 : l.premiumType : u ? Q.PremiumTypes.TIER_2 : null, S = (0, j.usePremiumTrialOffer)(), h = (0, Y.usePremiumDiscountOffer)(), m = null == S ? void 0 : S.subscription_trial;
+                if (!t && null != I && n === I && null != o && null != o.planIdFromItems) {
+                    let e = null != o.trialEndsAt ? T()(null == o ? void 0 : o.trialEndsAt).diff(T()(), "d") : 0,
+                        t = Q.SubscriptionPlanInfo[o.planIdFromItems],
+                        n = B.default.formatPriceString(B.default.getDefaultPrice(t.id), t.interval);
                     return (0, _.jsx)(_.Fragment, {
                         children: (0, _.jsx)(A.Heading, {
                             variant: "heading-md/normal",
                             color: "always-white",
-                            className: en.trialHeader,
+                            className: $.trialHeader,
                             children: (() => {
                                 var t, i, s;
-                                if (0 === r) et.default.Messages.PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION.format({
+                                if (0 === r) J.default.Messages.PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION.format({
                                     remainingTime: e,
                                     price: n
                                 });
-                                else if (u.planIdFromItems === $.SubscriptionPlans.PREMIUM_YEAR_TIER_2) return et.default.Messages.PREMIUM_TIER_CARD_ANNUAL_DISCOUNT_HEADER.format({
-                                    percent: null !== (t = null == S ? void 0 : S.percentage) && void 0 !== t ? t : I,
+                                else if (o.planIdFromItems === Q.SubscriptionPlans.PREMIUM_YEAR_TIER_2) return J.default.Messages.PREMIUM_TIER_CARD_ANNUAL_DISCOUNT_HEADER.format({
+                                    percent: null !== (t = null == c ? void 0 : c.percentage) && void 0 !== t ? t : d,
                                     regularPrice: n
                                 });
-                                else return et.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
-                                    percent: null !== (i = null == S ? void 0 : S.percentage) && void 0 !== i ? i : $.DISCOUNT_PERCENTAGE_FALLBACK,
+                                else return J.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
+                                    percent: null !== (i = null == c ? void 0 : c.percentage) && void 0 !== i ? i : Q.DISCOUNT_PERCENTAGE_FALLBACK,
                                     regularPrice: n,
-                                    numMonths: null !== (s = null == S ? void 0 : S.duration) && void 0 !== s ? s : $.DISCOUNT_DURATION_FALLBACK
+                                    numMonths: null !== (s = null == c ? void 0 : c.duration) && void 0 !== s ? s : Q.DISCOUNT_DURATION_FALLBACK
                                 })
                             })()
                         })
                     })
                 }
-                if (!t && i && !a) {
-                    let e = x.default.formatPriceString(x.default.getDefaultPrice(n === $.PremiumTypes.TIER_0 ? $.SubscriptionPlans.PREMIUM_MONTH_TIER_0 : $.SubscriptionPlans.PREMIUM_MONTH_TIER_2), $.SubscriptionIntervalTypes.MONTH);
+                if (!t && i) {
+                    let e = B.default.formatPriceString(B.default.getDefaultPrice(n === Q.PremiumTypes.TIER_0 ? Q.SubscriptionPlans.PREMIUM_MONTH_TIER_0 : Q.SubscriptionPlans.PREMIUM_MONTH_TIER_2), Q.SubscriptionIntervalTypes.MONTH);
                     if (0 === r) {
-                        var C, R, v, D;
+                        var N, p, O, C;
                         return (0, _.jsx)(A.Heading, {
                             variant: "heading-md/normal",
                             color: "always-white",
-                            className: en.trialHeader,
-                            children: et.default.Messages.PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW.format({
-                                planName: (0, x.getTierDisplayName)(null !== (R = $.PREMIUM_SKU_TO_MONTHLY_PLAN[null !== (C = null == O ? void 0 : O.sku_id) && void 0 !== C ? C : $.PremiumSubscriptionSKUs.NONE]) && void 0 !== R ? R : $.SubscriptionPlans.PREMIUM_MONTH_TIER_2),
-                                duration: (0, x.formatIntervalDuration)({
-                                    intervalType: null !== (v = null == O ? void 0 : O.interval) && void 0 !== v ? v : $.SubscriptionIntervalTypes.DAY,
-                                    intervalCount: null !== (D = null == O ? void 0 : O.interval_count) && void 0 !== D ? D : 30,
+                            className: $.trialHeader,
+                            children: J.default.Messages.PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW.format({
+                                planName: (0, B.getTierDisplayName)(null !== (p = Q.PREMIUM_SKU_TO_MONTHLY_PLAN[null !== (N = null == m ? void 0 : m.sku_id) && void 0 !== N ? N : Q.PremiumSubscriptionSKUs.NONE]) && void 0 !== p ? p : Q.SubscriptionPlans.PREMIUM_MONTH_TIER_2),
+                                duration: (0, B.formatIntervalDuration)({
+                                    intervalType: null !== (O = null == m ? void 0 : m.interval) && void 0 !== O ? O : Q.SubscriptionIntervalTypes.DAY,
+                                    intervalCount: null !== (C = null == m ? void 0 : m.interval_count) && void 0 !== C ? C : 30,
                                     capitalize: !1
                                 }),
                                 price: e
                             })
                         })
                     }
-                    if (null != p) return (0, _.jsx)(A.Heading, {
+                    if (null != h) return (0, _.jsx)(A.Heading, {
                         variant: "heading-md/normal",
                         color: "always-white",
-                        className: en.trialHeader,
-                        children: (0, _.jsx)(eu, {
+                        className: $.trialHeader,
+                        children: (0, _.jsx)(es, {
                             defaultPriceString: e,
-                            subscriptionPlan: $.SubscriptionPlans.PREMIUM_MONTH_TIER_2,
-                            discountOffer: p
+                            subscriptionPlan: Q.SubscriptionPlans.PREMIUM_MONTH_TIER_2,
+                            discountOffer: h
                         })
                     })
                 }
                 return (0, _.jsxs)(_.Fragment, {
-                    children: [(0, _.jsx)(Q.default, {
-                        subscriptionTier: h,
+                    children: [(0, _.jsx)(z.default, {
+                        subscriptionTier: E,
                         isGift: t,
-                        className: E()(en.price, {
-                            [en.priceStacked]: a && o,
-                            [en.priceStackedSmallScreen]: a && !o
-                        }),
-                        variant: a ? "heading-lg/extrabold" : void 0,
-                        priceOptions: l
-                    }), s && (0, _.jsx)(Q.default, {
-                        subscriptionTier: h,
-                        interval: $.SubscriptionIntervalTypes.YEAR,
+                        className: $.price,
+                        priceOptions: a
+                    }), s && (0, _.jsx)(z.default, {
+                        subscriptionTier: E,
+                        interval: Q.SubscriptionIntervalTypes.YEAR,
                         isGift: t,
-                        className: en.price,
-                        priceOptions: l
+                        className: $.price,
+                        priceOptions: a
                     })]
                 })
             }
 
-            function e_() {
+            function eo() {
                 return (0, _.jsxs)(_.Fragment, {
-                    children: [(0, _.jsx)(el, {
-                        Icon: k.default,
-                        text: et.default.Messages.PREMIUM_TIER_UPLOAD_ITEM.format({
-                            maxUploadPremium: (0, x.getMaxFileSizeForPremiumType)($.PremiumTypes.TIER_0, {
+                    children: [(0, _.jsx)(er, {
+                        Icon: w.default,
+                        text: J.default.Messages.PREMIUM_TIER_UPLOAD_ITEM.format({
+                            maxUploadPremium: (0, B.getMaxFileSizeForPremiumType)(Q.PremiumTypes.TIER_0, {
                                 useSpace: !1
                             })
                         })
-                    }), (0, _.jsx)(el, {
-                        Icon: y.default,
-                        text: et.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
-                    }), (0, _.jsx)(el, {
-                        Icon: D.default,
-                        text: et.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED
-                    }), (0, _.jsx)(el, {
-                        Icon: G.default,
-                        text: et.default.Messages.PREMIUM_TIER_NITRO_BADGE_ITEM
+                    }), (0, _.jsx)(er, {
+                        Icon: M.default,
+                        text: J.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
+                    }), (0, _.jsx)(er, {
+                        Icon: v.default,
+                        text: J.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED
+                    }), (0, _.jsx)(er, {
+                        Icon: b.default,
+                        text: J.default.Messages.PREMIUM_TIER_NITRO_BADGE_ITEM
                     })]
                 })
             }
 
-            function ec(e) {
+            function el(e) {
                 var t;
                 let {
                     showWumpus: n,
-                    showBadge: i,
-                    ctaButton: r,
-                    showYearlyPrice: s,
-                    className: a,
-                    isGift: o = !1,
-                    variant: l = 0,
-                    isFullScreen: u,
-                    priceOptions: d
-                } = e, c = (0, f.useStateFromStores)([L.default], () => L.default.getPremiumTypeSubscription()), I = (0, f.useStateFromStores)([g.default], () => g.default.getCurrentUser()), T = (0, K.usePremiumTrialOffer)(), S = null == T ? void 0 : null === (t = T.subscription_trial) || void 0 === t ? void 0 : t.sku_id, h = (null == c ? void 0 : c.trialId) != null, m = (null == c ? void 0 : c.trialId) != null ? null == I ? void 0 : I.premiumType : null, N = null != S || h, p = 1 === l;
+                    ctaButton: i,
+                    showYearlyPrice: r,
+                    className: s,
+                    isGift: a = !1,
+                    priceOptions: o
+                } = e, l = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), u = (0, f.useStateFromStores)([R.default], () => R.default.getCurrentUser()), d = (0, j.usePremiumTrialOffer)(), c = null == d ? void 0 : null === (t = d.subscription_trial) || void 0 === t ? void 0 : t.sku_id, I = (null == l ? void 0 : l.trialId) != null, T = (null == l ? void 0 : l.trialId) != null ? null == u ? void 0 : u.premiumType : null, S = null != c || I;
                 return (0, _.jsxs)("div", {
-                    className: E()(en.card, a, {
-                        [en.card]: !p,
-                        [en.stackedCard]: p,
-                        [en.withTier0Rim]: !o && N,
-                        [en.withCardHover]: !o && N,
-                        [en.tier0Stacked]: p,
-                        [en.tier0]: !p
+                    className: E()($.tier0, $.card, s, {
+                        [$.withTier0Rim]: !a && S,
+                        [$.withCardHover]: !a && S
                     }),
-                    children: [S === $.PremiumSubscriptionSKUs.TIER_0 ? (0, _.jsxs)(_.Fragment, {
-                        children: [(0, _.jsx)(ea, {
-                            text: et.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
-                            className: en.topRimPill,
+                    children: [c === Q.PremiumSubscriptionSKUs.TIER_0 ? (0, _.jsxs)(_.Fragment, {
+                        children: [(0, _.jsx)(ei, {
+                            text: J.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
+                            className: $.topRimPill,
                             colorOptions: 0
                         }), (0, _.jsx)("div", {
-                            className: en.rimGlowTier0
+                            className: $.rimGlowTier0
                         })]
-                    }) : null, i && (0, _.jsx)(eo, {
-                        className: en.newCircleIcon
-                    }), n ? (0, _.jsx)("div", {
-                        className: en.wumpusImageContainer,
-                        children: (0, _.jsx)(v.default, {
-                            src: ei,
-                            mediaLayoutType: ee.MediaLayoutType.RESPONSIVE,
+                    }) : null, n ? (0, _.jsx)("div", {
+                        className: $.wumpusImageContainer,
+                        children: (0, _.jsx)(L.default, {
+                            src: ee,
+                            mediaLayoutType: q.MediaLayoutType.RESPONSIVE,
                             width: 270,
                             height: 242,
                             zoomable: !1
                         })
-                    }) : null, o || S !== $.PremiumSubscriptionSKUs.TIER_0 ? null : (0, _.jsxs)(_.Fragment, {
-                        children: [(0, _.jsx)(ea, {
-                            text: et.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
-                            className: en.topRimPill,
+                    }) : null, a || c !== Q.PremiumSubscriptionSKUs.TIER_0 ? null : (0, _.jsxs)(_.Fragment, {
+                        children: [(0, _.jsx)(ei, {
+                            text: J.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
+                            className: $.topRimPill,
                             colorOptions: 0
                         }), (0, _.jsx)("div", {
-                            className: en.rimGlowTier0
+                            className: $.rimGlowTier0
                         })]
-                    }), o || m !== $.PremiumTypes.TIER_0 ? null : (0, _.jsxs)(_.Fragment, {
-                        children: [(0, _.jsx)(ea, {
-                            text: et.default.Messages.PREMIUM_TIER_CARD_TRIAL_ACTIVATED,
-                            className: en.topRimPill,
+                    }), a || T !== Q.PremiumTypes.TIER_0 ? null : (0, _.jsxs)(_.Fragment, {
+                        children: [(0, _.jsx)(ei, {
+                            text: J.default.Messages.PREMIUM_TIER_CARD_TRIAL_ACTIVATED,
+                            className: $.topRimPill,
                             colorOptions: 0
                         }), (0, _.jsx)("div", {
-                            className: en.rimGlowTier0
+                            className: $.rimGlowTier0
                         })]
                     }), (0, _.jsxs)("div", {
-                        className: E()({
-                            [en.body]: p && u,
-                            [en.bodySmallScreen]: p && !u
-                        }),
-                        children: [(0, _.jsx)("div", {
-                            className: E()({
-                                [en.planContainer]: p && u,
-                                [en.planContainerSmallScreen]: p && !u
-                            }),
-                            children: (0, _.jsxs)("div", {
-                                className: E()({
-                                    [en.subscriptionPlanInfo]: p
-                                }),
-                                children: [(0, _.jsx)(b.default, {
-                                    className: E()({
-                                        [en.title]: !p,
-                                        [en.tier0Title]: !p,
-                                        [en.tier0TitleStacked]: p && u,
-                                        [en.tier0TitleStackedSmallScreen]: p && !u
-                                    })
-                                }), (0, _.jsx)(ed, {
-                                    isGift: o,
-                                    premiumTier: $.PremiumTypes.TIER_0,
-                                    offerType: 0,
-                                    offerTierMatchesCard: S === $.PremiumSubscriptionSKUs.TIER_0,
-                                    showYearlyPrice: s,
-                                    isStacked: p,
-                                    isFullScreen: u,
-                                    priceOptions: d
-                                })]
-                            })
-                        }), (0, _.jsxs)("div", {
-                            className: E()({
-                                [en.perkContainer]: p && u,
-                                [en.perkContainerSmallScreen]: p && !u
-                            }),
-                            children: [(0, _.jsxs)("div", {
-                                children: [p && (0, _.jsx)(A.Heading, {
-                                    variant: "heading-xxl/extrabold",
-                                    className: u ? en.stackedCardTitle : en.stackedCardTitleSmallScreen,
-                                    children: et.default.Messages.NITRO_MARKETING_JUST_THE_BASICS
-                                }), (0, _.jsx)("div", {
-                                    className: E()({
-                                        [en.listItemsBasic]: p
-                                    }),
-                                    children: (0, _.jsx)(e_, {})
-                                })]
-                            }), p && r]
+                        children: [(0, _.jsxs)("div", {
+                            children: [(0, _.jsx)("div", {
+                                children: (0, _.jsx)(U.default, {
+                                    className: E()($.title, $.tier0Title)
+                                })
+                            }), (0, _.jsx)(ea, {
+                                isGift: a,
+                                premiumTier: Q.PremiumTypes.TIER_0,
+                                offerType: 0,
+                                offerTierMatchesCard: c === Q.PremiumSubscriptionSKUs.TIER_0,
+                                showYearlyPrice: r,
+                                priceOptions: o
+                            })]
+                        }), (0, _.jsx)("div", {
+                            children: (0, _.jsx)(eo, {})
                         })]
-                    }), !p && r, o || S !== $.PremiumSubscriptionSKUs.TIER_0 ? null : (0, _.jsx)(q.ButtonSparkleGroup, {
-                        tier: $.PremiumTypes.TIER_0
+                    }), i, a || c !== Q.PremiumSubscriptionSKUs.TIER_0 ? null : (0, _.jsx)(Z.ButtonSparkleGroup, {
+                        tier: Q.PremiumTypes.TIER_0
                     })]
                 })
             }
 
-            function eE(e) {
+            function eu(e) {
                 let {
                     featureSet: t = 0,
                     isModal: n = !1,
                     isGift: i = !1
-                } = e, r = (0, f.useStateFromStores)([R.default], () => R.default.locale), s = (0, f.useStateFromStores)([F.default], () => F.default.affinities), a = n && !i && s.length > 0;
+                } = e, r = (0, f.useStateFromStores)([C.default], () => C.default.locale), s = (0, f.useStateFromStores)([V.default], () => V.default.affinities), a = n && !i && s.length > 0;
                 if (1 === t) return (0, _.jsxs)(_.Fragment, {
-                    children: [(0, _.jsx)(el, {
-                        Icon: P.default,
-                        text: et.default.Messages.PREMIUM_TIER_SERVER_BOOST_WITH_PERCENTAGE_ITEM.format({
-                            numBoosts: $.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM,
-                            percentageOff: (0, V.formatPercent)(r, $.GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT / 100)
+                    children: [(0, _.jsx)(er, {
+                        Icon: y.default,
+                        text: J.default.Messages.PREMIUM_TIER_SERVER_BOOST_WITH_PERCENTAGE_ITEM.format({
+                            numBoosts: Q.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM,
+                            percentageOff: (0, k.formatPercent)(r, Q.GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT / 100)
                         })
-                    }), (0, _.jsx)(el, {
-                        Icon: k.default,
-                        text: et.default.Messages.PREMIUM_TIER_UPLOAD_ITEM.format({
-                            maxUploadPremium: (0, x.getMaxFileSizeForPremiumType)($.PremiumTypes.TIER_2, {
+                    }), (0, _.jsx)(er, {
+                        Icon: w.default,
+                        text: J.default.Messages.PREMIUM_TIER_UPLOAD_ITEM.format({
+                            maxUploadPremium: (0, B.getMaxFileSizeForPremiumType)(Q.PremiumTypes.TIER_2, {
                                 useSpace: !1
                             })
                         })
-                    }), (0, _.jsx)(el, {
-                        Icon: y.default,
-                        text: et.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
-                    }), (0, _.jsx)(el, {
-                        Icon: w.default,
-                        text: et.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
-                    }), (0, _.jsx)(el, {
+                    }), (0, _.jsx)(er, {
                         Icon: M.default,
-                        text: et.default.Messages.PREMIUM_TIER_CUSTOM_PROFILE_ITEM
+                        text: J.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
+                    }), (0, _.jsx)(er, {
+                        Icon: G.default,
+                        text: J.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
+                    }), (0, _.jsx)(er, {
+                        Icon: D.default,
+                        text: J.default.Messages.PREMIUM_TIER_CUSTOM_PROFILE_ITEM
                     })]
                 });
                 return (0, _.jsxs)(_.Fragment, {
-                    children: [(0, _.jsx)(el, {
-                        Icon: k.default,
-                        text: et.default.Messages.PREMIUM_TIER_UPLOAD_ITEM.format({
-                            maxUploadPremium: (0, x.getMaxFileSizeForPremiumType)($.PremiumTypes.TIER_2, {
+                    children: [(0, _.jsx)(er, {
+                        Icon: w.default,
+                        text: J.default.Messages.PREMIUM_TIER_UPLOAD_ITEM.format({
+                            maxUploadPremium: (0, B.getMaxFileSizeForPremiumType)(Q.PremiumTypes.TIER_2, {
                                 useSpace: !1
                             })
                         })
-                    }), (0, _.jsx)(el, {
-                        Icon: y.default,
-                        text: et.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
-                    }), (0, _.jsx)(el, {
-                        Icon: D.default,
-                        text: et.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED
-                    }), (0, _.jsx)(el, {
-                        Icon: w.default,
-                        text: et.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
-                    }), (0, _.jsx)(el, {
-                        Icon: P.default,
-                        text: et.default.Messages.PREMIUM_TIER_SERVER_BOOST_ITEM
-                    }), (0, _.jsx)(el, {
+                    }), (0, _.jsx)(er, {
                         Icon: M.default,
-                        text: et.default.Messages.PREMIUM_TIER_CUSTOM_PROFILE_ITEM
-                    }), a && (0, _.jsx)(J.default, {})]
+                        text: J.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
+                    }), (0, _.jsx)(er, {
+                        Icon: v.default,
+                        text: J.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED
+                    }), (0, _.jsx)(er, {
+                        Icon: G.default,
+                        text: J.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
+                    }), (0, _.jsx)(er, {
+                        Icon: y.default,
+                        text: J.default.Messages.PREMIUM_TIER_SERVER_BOOST_ITEM
+                    }), (0, _.jsx)(er, {
+                        Icon: D.default,
+                        text: J.default.Messages.PREMIUM_TIER_CUSTOM_PROFILE_ITEM
+                    }), a && (0, _.jsx)(X.default, {})]
                 })
             }
 
-            function eI(e) {
+            function ed(e) {
                 var t;
-                let n, {
-                        showWumpus: i,
-                        ctaButton: r,
-                        showYearlyPrice: s,
-                        featureSet: a = 0,
-                        className: o,
-                        isGift: l = !1,
-                        isModal: u = !1,
-                        variant: d = 0,
-                        isFullScreen: c,
-                        priceOptions: I
-                    } = e,
-                    T = (0, f.useStateFromStores)([L.default], () => L.default.getPremiumTypeSubscription()),
-                    S = (0, f.useStateFromStores)([g.default], () => g.default.getCurrentUser()),
-                    N = (0, K.usePremiumTrialOffer)(),
-                    p = null == N ? void 0 : null === (t = N.subscription_trial) || void 0 === t ? void 0 : t.sku_id,
-                    O = (null == T ? void 0 : T.trialId) != null ? null == S ? void 0 : S.premiumType : null,
-                    C = (0, H.useIsInPremiumOfferExperience)(),
-                    R = (0, W.usePremiumDiscountOffer)(),
-                    D = (0, H.useHasDiscountApplied)(),
-                    M = null != p || null != O ? 0 : null != R || D ? 1 : null,
-                    y = 1 === d,
-                    P = (0, Z.useIsEligibleForBogoPromotion)(),
-                    b = !l && C,
-                    G = (0, Z.getBOGOPillCopy)(),
-                    w = (0, h.isThemeLight)((0, m.default)()),
-                    k = w ? 5 : 2,
-                    {
-                        enabled: B
-                    } = j.ReferralProgramRecipient.useExperiment({
-                        location: "Tier2Card"
-                    }, {
-                        autoTrackExposure: !1
+                let {
+                    showWumpus: n,
+                    ctaButton: i,
+                    showYearlyPrice: r,
+                    featureSet: s = 0,
+                    className: a,
+                    isGift: o = !1,
+                    isModal: l = !1,
+                    priceOptions: u
+                } = e, d = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), c = (0, f.useStateFromStores)([R.default], () => R.default.getCurrentUser()), I = (0, j.usePremiumTrialOffer)(), T = null == I ? void 0 : null === (t = I.subscription_trial) || void 0 === t ? void 0 : t.sku_id, S = (null == d ? void 0 : d.trialId) != null ? null == c ? void 0 : c.premiumType : null, N = (0, x.useIsInPremiumOfferExperience)(), p = (0, Y.usePremiumDiscountOffer)(), O = (0, x.useHasDiscountApplied)(), C = null != T || null != S ? 0 : null != p || O ? 1 : null, v = (0, K.useIsEligibleForBogoPromotion)(), D = !o && N, M = (0, K.getBOGOPillCopy)(), y = (0, h.isThemeLight)((0, m.default)()), U = y ? 5 : 2, {
+                    enabled: b
+                } = H.ReferralProgramRecipient.useExperiment({
+                    location: "Tier2Card"
+                }, {
+                    autoTrackExposure: !1
+                }), G = J.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT;
+                b && (null == I ? void 0 : I.trial_id) === Q.PREMIUM_TIER_2_REFERRAL_TRIAL_ID && (G = J.default.Messages.REFERRAL_PROGRAM_TWO_WEEK_TRIAL);
+                let w = D && !y ? $.rimGlowTier2 : void 0;
+                return (0, _.jsxs)("div", {
+                    className: E()($.card, $.tier2, a, {
+                        [$.withTier2Rim]: D,
+                        [$.withCardHover]: D
                     }),
-                    V = et.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT;
-                return B && (null == N ? void 0 : N.trial_id) === $.PREMIUM_TIER_2_REFERRAL_TRIAL_ID && (V = et.default.Messages.REFERRAL_PROGRAM_TWO_WEEK_TRIAL), !b || y || w ? b && y && !w && (n = en.rimGlowTier2Stacked) : n = en.rimGlowTier2, (0, _.jsxs)("div", {
-                    className: E()(en.card, o, {
-                        [en.withTier2Rim]: b && !y,
-                        [en.withTier2RimStacked]: b && y,
-                        [en.withCardHover]: b,
-                        [en.tier2Stacked]: y,
-                        [en.tier2]: !y
-                    }),
-                    children: [!l && null != R && (0, W.discountOfferHasTier)(R, $.PremiumSubscriptionSKUs.TIER_2) && void 0 !== R.discount.amount ? (0, _.jsxs)(_.Fragment, {
-                        children: [(0, _.jsx)(ea, {
-                            text: D ? et.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_APPLIED : et.default.Messages.PREMIUM_DISCOUNT_AMOUNT_OFF_BADGE.format({
-                                percent: R.discount.amount
+                    children: [!o && null != p && (0, Y.discountOfferHasTier)(p, Q.PremiumSubscriptionSKUs.TIER_2) && void 0 !== p.discount.amount ? (0, _.jsxs)(_.Fragment, {
+                        children: [(0, _.jsx)(ei, {
+                            text: O ? J.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_APPLIED : J.default.Messages.PREMIUM_DISCOUNT_AMOUNT_OFF_BADGE.format({
+                                percent: p.discount.amount
                             }),
-                            className: en.topRimPill,
-                            colorOptions: k
+                            className: $.topRimPill,
+                            colorOptions: U
                         }), (0, _.jsx)("div", {
-                            className: n
+                            className: w
                         })]
-                    }) : null, l || p !== $.PremiumSubscriptionSKUs.TIER_2 ? null : (0, _.jsxs)(_.Fragment, {
-                        children: [(0, _.jsx)(ea, {
-                            text: V,
-                            className: en.topRimPill,
-                            colorOptions: k
+                    }) : null, o || T !== Q.PremiumSubscriptionSKUs.TIER_2 ? null : (0, _.jsxs)(_.Fragment, {
+                        children: [(0, _.jsx)(ei, {
+                            text: G,
+                            className: $.topRimPill,
+                            colorOptions: U
                         }), (0, _.jsx)("div", {
-                            className: n
+                            className: w
                         })]
-                    }), l || O !== $.PremiumTypes.TIER_2 ? null : (0, _.jsxs)(_.Fragment, {
-                        children: [(0, _.jsx)(ea, {
-                            text: et.default.Messages.PREMIUM_TIER_CARD_TRIAL_ACTIVATED,
-                            className: en.topRimPill,
-                            colorOptions: k
+                    }), o || S !== Q.PremiumTypes.TIER_2 ? null : (0, _.jsxs)(_.Fragment, {
+                        children: [(0, _.jsx)(ei, {
+                            text: J.default.Messages.PREMIUM_TIER_CARD_TRIAL_ACTIVATED,
+                            className: $.topRimPill,
+                            colorOptions: U
                         }), (0, _.jsx)("div", {
-                            className: n
+                            className: w
                         })]
-                    }), !l && D && (0, _.jsxs)(_.Fragment, {
-                        children: [(0, _.jsx)(ea, {
-                            text: et.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_APPLIED,
-                            className: en.topRimPill,
-                            colorOptions: k
+                    }), !o && O && (0, _.jsxs)(_.Fragment, {
+                        children: [(0, _.jsx)(ei, {
+                            text: J.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_APPLIED,
+                            className: $.topRimPill,
+                            colorOptions: U
                         }), (0, _.jsx)("div", {
-                            className: n
+                            className: w
                         })]
-                    }), i ? (0, _.jsx)("div", {
-                        className: en.wumpusImageContainer,
-                        children: (0, _.jsx)(v.default, {
-                            src: er,
-                            mediaLayoutType: ee.MediaLayoutType.RESPONSIVE,
+                    }), n ? (0, _.jsx)("div", {
+                        className: $.wumpusImageContainer,
+                        children: (0, _.jsx)(L.default, {
+                            src: et,
+                            mediaLayoutType: q.MediaLayoutType.RESPONSIVE,
                             width: 270,
                             height: 242,
                             zoomable: !1
                         })
                     }) : null, (0, _.jsxs)("div", {
-                        className: E()({
-                            [en.body]: y && c,
-                            [en.bodySmallScreen]: y && !c
-                        }),
-                        children: [(0, _.jsx)("div", {
-                            className: E()({
-                                [en.planContainer]: y && c,
-                                [en.planContainerSmallScreen]: y && !c
-                            }),
-                            children: (0, _.jsxs)("div", {
-                                className: E()({
-                                    [en.subscriptionPlanInfo]: y
-                                }),
-                                children: [(0, _.jsx)(U.default, {
-                                    className: E()({
-                                        [en.title]: !y,
-                                        [en.tier2Title]: !y,
-                                        [en.tier2TitleStacked]: y && c,
-                                        [en.tier2TitleStackedSmallScreen]: y && !c
-                                    })
-                                }), !l && p !== $.PremiumSubscriptionSKUs.TIER_2 && P && (0, _.jsx)(A.Text, {
-                                    variant: "text-xs/bold",
-                                    className: en.freeTrialPillInline,
-                                    children: G
-                                }), (0, _.jsx)(ed, {
-                                    isGift: l,
-                                    premiumTier: $.PremiumTypes.TIER_2,
-                                    offerType: M,
-                                    offerTierMatchesCard: p === $.PremiumSubscriptionSKUs.TIER_2 || (0, W.discountOfferHasTier)(R, $.PremiumSubscriptionSKUs.TIER_2),
-                                    showYearlyPrice: s,
-                                    isStacked: y,
-                                    isFullScreen: c,
-                                    priceOptions: I
-                                })]
-                            })
-                        }), (0, _.jsxs)("div", {
-                            className: E()({
-                                [en.perkContainer]: y && c,
-                                [en.perkContainerSmallScreen]: y && !c
-                            }),
-                            children: [(0, _.jsxs)("div", {
-                                children: [y && (0, _.jsx)(A.Heading, {
-                                    className: E()({
-                                        [en.stackedCardTitle]: c,
-                                        [en.stackedCardTitleSmallScreen]: !c
-                                    }),
-                                    variant: "heading-xxl/extrabold",
-                                    children: et.default.Messages.NITRO_MARKETING_CARDS_SUPERCHARGE_YOUR_DISCORD
-                                }), (0, _.jsx)("div", {
-                                    className: E()({
-                                        [en.listItems]: y
-                                    }),
-                                    children: (0, _.jsx)(eE, {
-                                        featureSet: a,
-                                        isModal: u,
-                                        isGift: l
-                                    })
-                                })]
-                            }), y && (0, _.jsx)(X.default, {
-                                isStacked: y,
-                                ctaButton: r,
-                                isGift: l,
-                                trialOfferTier: p,
-                                discountOffer: R
+                        children: [(0, _.jsxs)("div", {
+                            children: [(0, _.jsx)(P.default, {
+                                className: E()($.title, $.tier2Title)
+                            }), !o && T !== Q.PremiumSubscriptionSKUs.TIER_2 && v && (0, _.jsx)(A.Text, {
+                                variant: "text-xs/bold",
+                                className: $.freeTrialPillInline,
+                                children: M
+                            }), (0, _.jsx)(ea, {
+                                isGift: o,
+                                premiumTier: Q.PremiumTypes.TIER_2,
+                                offerType: C,
+                                offerTierMatchesCard: T === Q.PremiumSubscriptionSKUs.TIER_2 || (0, Y.discountOfferHasTier)(p, Q.PremiumSubscriptionSKUs.TIER_2),
+                                showYearlyPrice: r,
+                                priceOptions: u
                             })]
+                        }), (0, _.jsx)("div", {
+                            children: (0, _.jsx)(eu, {
+                                featureSet: s,
+                                isModal: l,
+                                isGift: o
+                            })
                         })]
-                    }), !y && (0, _.jsx)(X.default, {
-                        isStacked: y,
-                        ctaButton: r,
-                        isGift: l,
-                        trialOfferTier: p,
-                        discountOffer: R
+                    }), i, o || T !== Q.PremiumSubscriptionSKUs.TIER_2 && null == p ? null : (0, _.jsx)(Z.ButtonSparkleGroup, {
+                        tier: Q.PremiumTypes.TIER_2
                     })]
                 })
             }
 
-            function eT(e) {
+            function e_(e) {
                 let {
                     showWumpus: t,
-                    showBadge: n,
-                    tier0CTAButton: i,
-                    tier2CTAButton: r,
-                    className: s,
-                    variant: a = 0,
-                    selectedPremiumType: o,
-                    isFullScreen: l
+                    tier0CTAButton: n,
+                    tier2CTAButton: i,
+                    className: r
                 } = e, {
-                    analyticsLocations: u
-                } = (0, O.default)(p.default.PREMIUM_MARKETING_TIER_CARD), d = 1 === a, c = o === $.PremiumTypes.TIER_0, I = (0, f.useStateFromStores)([N.default], () => N.default.useReducedMotion);
-                return (0, _.jsx)(O.AnalyticsLocationProvider, {
-                    value: u,
+                    analyticsLocations: s
+                } = (0, p.default)(N.default.PREMIUM_MARKETING_TIER_CARD);
+                return (0, _.jsx)(p.AnalyticsLocationProvider, {
+                    value: s,
                     children: (0, _.jsxs)("div", {
-                        className: E()({
-                            [en.premiumCards]: !d,
-                            [en.premiumCardsStackedVariant]: d && l,
-                            [en.premiumCardsStackedVariantSmallScreen]: d && !l
-                        }, s),
-                        children: [(0, _.jsx)(ec, {
-                            className: E()({
-                                [en.tierCardFocused]: d && c,
-                                [en.tierCardHidden]: d && !c,
-                                [en.tierCardAnimation]: d && !I
-                            }),
+                        className: E()($.premiumCards, r),
+                        children: [(0, _.jsx)(el, {
                             showWumpus: t,
-                            showBadge: n,
-                            ctaButton: i,
-                            variant: a,
-                            isFullScreen: l
-                        }), (0, _.jsx)(eI, {
-                            className: E()({
-                                [en.tierCardFocused]: d && !c,
-                                [en.tierCardHidden]: d && c,
-                                [en.tierCardAnimation]: d && !I
-                            }),
+                            ctaButton: n
+                        }), (0, _.jsx)(ed, {
                             showWumpus: t,
-                            ctaButton: r,
-                            variant: a,
-                            isFullScreen: l
+                            ctaButton: i
                         })]
                     })
                 })
-            }(i = o || (o = {}))[i.PREMIUM_TIER_0_WHITE_FILL = 0] = "PREMIUM_TIER_0_WHITE_FILL", i[i.PREMIUM_TIER_0_GRADIENT_FILL = 1] = "PREMIUM_TIER_0_GRADIENT_FILL", i[i.PREMIUM_TIER_2_WHITE_FILL = 2] = "PREMIUM_TIER_2_WHITE_FILL", i[i.PREMIUM_TIER_2_NEW_GRADIENT_FILL = 3] = "PREMIUM_TIER_2_NEW_GRADIENT_FILL", i[i.PREMIUM_TIER_2_OLD_GRADIENT_FILL = 4] = "PREMIUM_TIER_2_OLD_GRADIENT_FILL", i[i.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE = 5] = "PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE", (r = l || (l = {}))[r.PREMIUM_TRIAL = 0] = "PREMIUM_TRIAL", r[r.PREMIUM_DISCOUNT = 1] = "PREMIUM_DISCOUNT", (s = u || (u = {}))[s.DEFAULT = 0] = "DEFAULT", s[s.BOOSTING = 1] = "BOOSTING", (a = d || (d = {}))[a.DEFAULT = 0] = "DEFAULT", a[a.STACKED = 1] = "STACKED"
+            }(i = o || (o = {}))[i.PREMIUM_TIER_0_WHITE_FILL = 0] = "PREMIUM_TIER_0_WHITE_FILL", i[i.PREMIUM_TIER_0_GRADIENT_FILL = 1] = "PREMIUM_TIER_0_GRADIENT_FILL", i[i.PREMIUM_TIER_2_WHITE_FILL = 2] = "PREMIUM_TIER_2_WHITE_FILL", i[i.PREMIUM_TIER_2_NEW_GRADIENT_FILL = 3] = "PREMIUM_TIER_2_NEW_GRADIENT_FILL", i[i.PREMIUM_TIER_2_OLD_GRADIENT_FILL = 4] = "PREMIUM_TIER_2_OLD_GRADIENT_FILL", i[i.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE = 5] = "PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE", (r = l || (l = {}))[r.PREMIUM_TRIAL = 0] = "PREMIUM_TRIAL", r[r.PREMIUM_DISCOUNT = 1] = "PREMIUM_DISCOUNT", (s = u || (u = {}))[s.DEFAULT = 0] = "DEFAULT", s[s.BOOSTING = 1] = "BOOSTING", (a = d || (d = {}))[a.DEFAULT = 0] = "DEFAULT"
         },
         504865: function(e, t, n) {
             "use strict";
@@ -186766,7 +186609,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 ButtonSparkleGroup: function() {
-                    return T
+                    return E
                 },
                 PREMIUM_NEW_TIER_2_SVG_GRADIENT_ID: function() {
                     return _
@@ -186774,14 +186617,8 @@
                 PREMIUM_OLD_TIER_2_SVG_GRADIENT_ID: function() {
                     return c
                 },
-                SparkleGroupLeft: function() {
-                    return E
-                },
-                SparkleGroupRight: function() {
-                    return I
-                },
                 SparkleStar: function() {
-                    return f
+                    return I
                 }
             });
             var i = n("735250");
@@ -186794,95 +186631,9 @@
                 u = n("474936"),
                 d = n("646541");
             let _ = "premium_new_tier_2_gradient",
-                c = "premium_old_tier_2_gradient",
-                E = e => {
-                    let {
-                        width: t = 28,
-                        height: n = 53,
-                        color: r,
-                        foreground: s,
-                        wrapperStyle: a,
-                        ...o
-                    } = e, u = "sparkle-gradient-".concat(Math.random().toString(36).substring(2, 15));
-                    return (0, i.jsx)("div", {
-                        className: a,
-                        children: (0, i.jsxs)("svg", {
-                            ...(0, l.default)({
-                                ...o
-                            }),
-                            width: t,
-                            height: n,
-                            viewBox: "0 0 28 53",
-                            className: s,
-                            xmlns: "http://www.w3.org/2000/svg",
-                            children: [(0, i.jsx)("defs", {
-                                children: (0, i.jsxs)("linearGradient", {
-                                    id: u,
-                                    x1: "0%",
-                                    y1: "0%",
-                                    x2: "100%",
-                                    y2: "0%",
-                                    children: [(0, i.jsx)("stop", {
-                                        stopColor: "#B473F5"
-                                    }), (0, i.jsx)("stop", {
-                                        offset: "1",
-                                        stopColor: "#E292AA"
-                                    })]
-                                })
-                            }), (0, i.jsx)("path", {
-                                d: "M19.1626 48.3974L21.7394 49.4231C21.7943 49.4744 21.7943 49.5256 21.7394 49.5256L19.1626 50.6026L18.0112 52.9615C18.0112 53.0128 17.9564 53.0128 17.9015 52.9615L16.805 50.6026H16.7502L14.2281 49.5256C14.1733 49.5256 14.1733 49.4744 14.2281 49.4231L16.7502 48.3974H16.805L17.9015 46.0385C17.9564 45.9872 18.0112 45.9872 18.0112 46.0385L19.1626 48.3974Z",
-                                fill: null != r ? r : "url(#".concat(u, ")")
-                            }), (0, i.jsx)("path", {
-                                d: "M26.5697 14.865C25.3611 15.6925 24.3322 16.7831 23.5512 18.0645C22.7702 19.3459 22.2549 20.7888 22.0395 22.2975L21.3147 27.5515C21.2999 27.676 21.2426 27.7905 21.1535 27.8732C21.0644 27.9558 20.9498 28.001 20.8315 28C20.7131 28.001 20.5986 27.9558 20.5095 27.8732C20.4204 27.7905 20.3631 27.676 20.3483 27.5515L19.5631 22.2975C19.3591 20.7849 18.8485 19.3373 18.0665 18.0542C17.2844 16.771 16.2495 15.683 15.0329 14.865L14.3685 14.4165C14.3092 14.3603 14.2623 14.291 14.231 14.2136C14.1997 14.1361 14.1847 14.0522 14.1873 13.968C14.1847 13.8929 14.2 13.8184 14.2316 13.7512C14.2633 13.6841 14.3104 13.6264 14.3685 13.5835L15.0329 13.135C16.2512 12.3038 17.2863 11.2039 18.068 9.91036C18.8497 8.61677 19.3597 7.15977 19.5631 5.63845L20.3483 0.44853C20.3631 0.323971 20.4204 0.209499 20.5095 0.126827C20.5986 0.044157 20.7131 -0.000967026 20.8315 1.71661e-05C20.9498 -0.000967026 21.0644 0.044157 21.1535 0.126827C21.2426 0.209499 21.2999 0.323971 21.3147 0.44853L22.0395 5.63845C22.2542 7.15601 22.7687 8.60832 23.5494 9.90022C24.3301 11.1921 25.3594 12.2945 26.5697 13.135L27.2341 13.5835C27.2999 13.6231 27.3561 13.6785 27.3981 13.7452C27.44 13.812 27.4666 13.8883 27.4757 13.968C27.467 14.0564 27.441 14.142 27.3994 14.2192C27.3578 14.2964 27.3015 14.3636 27.2341 14.4165L26.5697 14.865Z",
-                                fill: null != r ? r : "url(#".concat(u, ")")
-                            }), (0, i.jsx)("path", {
-                                d: "M8.70724 31.8901L13.2167 30.1319C13.3127 30.044 13.3127 29.9561 13.2167 29.9561L8.70724 28.1099L6.6923 24.0659C6.6923 23.978 6.59634 23.978 6.5004 24.0659L4.58145 28.1099H4.48552L0.0719606 29.9561C-0.0239869 29.9561 -0.0239869 30.044 0.0719606 30.1319L4.48552 31.8901H4.58145L6.5004 35.9341C6.59634 36.022 6.6923 36.022 6.6923 35.9341L8.70724 31.8901Z",
-                                fill: null != r ? r : "url(#".concat(u, ")")
-                            })]
-                        })
-                    })
-                },
-                I = e => {
-                    let {
-                        width: t = 21,
-                        height: n = 22,
-                        color: r,
-                        wrapperStyle: s
-                    } = e, a = "sparkle-gradient-".concat(Math.random().toString(36).substring(2, 15));
-                    return (0, i.jsx)("div", {
-                        className: s,
-                        children: (0, i.jsxs)("svg", {
-                            width: t,
-                            height: n,
-                            viewBox: "0 0 21 22",
-                            fill: "none",
-                            xmlns: "http://www.w3.org/2000/svg",
-                            children: [(0, i.jsx)("defs", {
-                                children: (0, i.jsxs)("linearGradient", {
-                                    id: a,
-                                    x1: "0%",
-                                    y1: "0%",
-                                    x2: "100%",
-                                    y2: "0%",
-                                    children: [(0, i.jsx)("stop", {
-                                        stopColor: "#B473F5"
-                                    }), (0, i.jsx)("stop", {
-                                        offset: "1",
-                                        stopColor: "#E292AA"
-                                    })]
-                                })
-                            }), (0, i.jsx)("path", {
-                                d: "M17.8554 2.39744L20.4323 3.42308C20.4871 3.47436 20.4871 3.52563 20.4323 3.52563L17.8554 4.60256L16.7041 6.96154C16.7041 7.01282 16.6492 7.01282 16.5944 6.96154L15.4979 4.60256H15.443L12.921 3.52563C12.8662 3.52563 12.8662 3.47436 12.921 3.42308L15.443 2.39744H15.4979L16.5944 0.0384612C16.6492 -0.0128207 16.7041 -0.0128207 16.7041 0.0384612L17.8554 2.39744Z",
-                                fill: null != r ? r : "url(#".concat(a, ")")
-                            }), (0, i.jsx)("path", {
-                                d: "M8.62582 14.7674L12.8132 16.3791C12.9023 16.4597 12.9023 16.5403 12.8132 16.5403L8.62582 18.2326L6.75481 21.9396C6.75481 22.0201 6.6657 22.0201 6.57661 21.9396L4.79473 18.2326H4.70566L0.607348 16.5403C0.518254 16.5403 0.518254 16.4597 0.607348 16.3791L4.70566 14.7674H4.79473L6.57661 11.0604C6.6657 10.9799 6.75481 10.9799 6.75481 11.0604L8.62582 14.7674Z",
-                                fill: null != r ? r : "url(#".concat(a, ")")
-                            })]
-                        })
-                    })
-                };
+                c = "premium_old_tier_2_gradient";
 
-            function T(e) {
+            function E(e) {
                 let {
                     tier: t = u.PremiumTypes.TIER_2
                 } = e, n = (0, o.default)(), r = (0, a.isThemeLight)(n);
@@ -186893,22 +186644,22 @@
                                 [d.rimGlowVerticalTier0]: t === u.PremiumTypes.TIER_0,
                                 [d.rimGlowVerticalTier2]: t === u.PremiumTypes.TIER_2
                             })
-                        }), (0, i.jsx)(f, {
+                        }), (0, i.jsx)(I, {
                             foreground: d.buttonSparkleStar1
                         })]
-                    }), (0, i.jsx)(f, {
+                    }), (0, i.jsx)(I, {
                         foreground: d.buttonSparkleStar2
-                    }), (0, i.jsx)(f, {
+                    }), (0, i.jsx)(I, {
                         foreground: d.buttonSparkleStar3
-                    }), (0, i.jsx)(f, {
+                    }), (0, i.jsx)(I, {
                         foreground: d.buttonSparkleStar4
-                    }), (0, i.jsx)(f, {
+                    }), (0, i.jsx)(I, {
                         foreground: d.buttonSparkleStar5
                     })]
                 })
             }
 
-            function f(e) {
+            function I(e) {
                 let {
                     width: t = 14,
                     height: n = 13,
@@ -251550,7 +251301,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f9502f62496a1e969293bb48c7ff36991b9679d1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "fe4d935e3b66774b0a71cafe5ee4197be8f6062d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280683,7 +280434,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297054"
+                                build_number: "297057"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287997,7 +287748,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297054", "297054"), 10);
+                let s = parseInt((n = "297057", "297057"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292354,6 +292105,46 @@
                         d: "m2.4 8.4 8.38-6.46a2 2 0 0 1 2.44 0l8.39 6.45a2 2 0 0 1-.79 3.54l-.32.07-.82 8.2a2 2 0 0 1-1.99 1.8H16a1 1 0 0 1-1-1v-5a3 3 0 0 0-6 0v5a1 1 0 0 1-1 1H6.31a2 2 0 0 1-1.99-1.8L3.5 12l-.32-.07a2 2 0 0 1-.79-3.54Z",
                         className: o
                     })
+                })
+            }
+        },
+        310665: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                HourglassIcon: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                s = n("331595");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, s.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M9.1 8.85A.5.5 0 0 1 9.45 8h5.1a.5.5 0 0 1 .35.85l-.84.85a3.25 3.25 0 0 0 0 4.6l2.06 2.06A3 3 0 0 1 17 18.5v1.01a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1.01a3 3 0 0 1 .88-2.13l2.06-2.06a3.25 3.25 0 0 0 0-4.6l-.84-.85Z",
+                        className: o
+                    }), (0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        fillRule: "evenodd",
+                        d: "M7 1a3 3 0 0 0-3 3v1.51a6 6 0 0 0 1.76 4.25l2.06 2.06c.1.1.1.26 0 .36l-2.06 2.06A6 6 0 0 0 4 18.5V20a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1.51a6 6 0 0 0-1.76-4.25l-2.06-2.06a.25.25 0 0 1 0-.36l2.06-2.06A6 6 0 0 0 20 5.5V4a3 3 0 0 0-3-3H7ZM6 4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1.51a4 4 0 0 1-1.17 2.83l-2.07 2.07c-.88.88-.88 2.3 0 3.18l2.07 2.07A4 4 0 0 1 18 18.49V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-1.51a4 4 0 0 1 1.17-2.83l2.07-2.07c.88-.88.88-2.3 0-3.18L7.17 8.34A4 4 0 0 1 6 5.51V4Z",
+                        clipRule: "evenodd",
+                        className: o
+                    })]
                 })
             }
         },
@@ -315761,4 +315552,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.5ea76c5e73fd8606cd99.js.map
+//# sourceMappingURL=71586.0b89929a61e378811051.js.map
