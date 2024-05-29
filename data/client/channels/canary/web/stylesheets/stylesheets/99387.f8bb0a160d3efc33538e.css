@@ -10361,7 +10361,7 @@ span.clanTag_f4aadc {
     box-sizing: border-box;
     display: flex;
     height: var(--custom-expression-picker-constants-expression-picker-list-section-heading-height);
-    padding: 0 4px;
+    padding: 0 4px 0 12px;
     z-index: 1
 }
 
@@ -13802,7 +13802,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .emojiListRow__6d732 {
     display: grid;
-    grid-auto-flow: column
+    grid-auto-flow: column;
+    padding-left: 8px
 }
 
 .topEmojiSectionContainer__1e2ce {
@@ -14070,7 +14071,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     top: auto;
     right: 16px;
     bottom: 8px;
-    left: 16px;
+    left: 8px;
     padding: 0 12px;
     height: 52px;
     border-radius: 12px;
@@ -26146,7 +26147,7 @@ html .progress__00e29 {
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-top: 8px;
+    margin-top: 6px;
     color: var(--text-low-contrast);
     cursor: pointer
 }
@@ -26157,22 +26158,8 @@ html .progress__00e29 {
     color: var(--interactive-hover)
 }
 
-.footerContainer_bc17b3:hover .footerArrow_f6ab61 {
-    margin-left: 4px
-}
-
 .footerText_c6879e {
     white-space: pre
-}
-
-.footerArrow_f6ab61 {
-    transition: margin-left 50ms ease-out
-}
-
-@media(prefers-reduced-motion) {
-    .footerArrow_f6ab61 {
-        transition: none
-    }
 }
 
 .originIcon_fee508 {
@@ -142246,4 +142233,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.833aa35a4d6ff10e24e2.css.map*/
+/*# sourceMappingURL=99387.f8bb0a160d3efc33538e.css.map*/

@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297215", ", Version Hash: ").concat("a91fda41623b21ff59dc277b1c16482ae038f6e9")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297234", ", Version Hash: ").concat("04bbe778c64d03b89cb2d490ffe94f2d3c310d3f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88637,8 +88637,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297215", "297215"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297215")), t = 0), t
+                let t = parseInt((e = "297234", "297234"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297234")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116674,8 +116674,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297215",
-                    versionHash: "a91fda41623b21ff59dc277b1c16482ae038f6e9"
+                    buildNumber: "297234",
+                    versionHash: "04bbe778c64d03b89cb2d490ffe94f2d3c310d3f"
                 }
             }
             n.r(t), n.d(t, {
@@ -121255,14 +121255,13 @@
             let z = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_TOP),
                 Z = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_RIGHT),
                 X = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_BOTTOM),
-                Q = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
-                q = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_SEARCH_RESULTS_PADDING_TOP),
-                J = (0, U.cssValueToNumber)(E.default.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_LIST_SECTION_HEADING_HEIGHT),
-                $ = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_SECTION_MARGIN_BOTTOM),
-                ee = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_PREMIUM_UPSELL_HEIGHT) + (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_PREMIUM_UPSELL_MARGIN_TOP),
-                et = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
-                en = e => e + 2 * et,
-                ei = e => {
+                Q = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_SEARCH_RESULTS_PADDING_TOP),
+                q = (0, U.cssValueToNumber)(E.default.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_LIST_SECTION_HEADING_HEIGHT),
+                J = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_SECTION_MARGIN_BOTTOM),
+                $ = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_PREMIUM_UPSELL_HEIGHT) + (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_PREMIUM_UPSELL_MARGIN_TOP),
+                ee = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
+                et = e => e + 2 * ee,
+                en = e => {
                     let {
                         collapsedSections: t,
                         diversitySurrogate: n,
@@ -121284,17 +121283,17 @@
                         activeSectionIndex: M,
                         upsellGlowOpacity: P,
                         enableNitroUpsell: U
-                    } = e, b = (0, f.useAnalyticsContext)(), j = r.useRef(H.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID), W = r.useMemo(() => "" !== n ? c.default.convert.toCodePoint(n) : "", [n]), et = r.useCallback(e => {
+                    } = e, b = (0, f.useAnalyticsContext)(), j = r.useRef(H.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID), W = r.useMemo(() => "" !== n ? c.default.convert.toCodePoint(n) : "", [n]), ee = r.useCallback(e => {
                         if (!U) return !1;
                         let t = E[e],
                             n = E[e + 1];
                         return e >= E.length - 1 ? t.isNitroLocked : t.isNitroLocked && !n.isNitroLocked
-                    }, [U, E]), en = r.useCallback(e => {
+                    }, [U, E]), et = r.useCallback(e => {
                         if (!U || e >= E.length - 1) return !1;
                         let t = E[e],
                             n = E[e + 1];
                         return !t.isNitroLocked && n.isNitroLocked
-                    }, [U, E]), ei = r.useCallback(function(e) {
+                    }, [U, E]), en = r.useCallback(function(e) {
                         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
                             i = new Set(t),
                             r = t.has(e);
@@ -121304,7 +121303,7 @@
                             collapsed: !r,
                             guild_id: n.id
                         }), I(i)
-                    }, [b, t, I]), er = r.useCallback(e => {
+                    }, [b, t, I]), ei = r.useCallback(e => {
                         let {
                             columnIndex: t,
                             visibleRowIndex: n
@@ -121312,14 +121311,14 @@
                         j.current !== H.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID && window.cancelAnimationFrame(j.current), j.current = window.requestAnimationFrame(() => {
                             A.EmojiPickerStore.setInspectedExpressionPosition(t, n, N.InspectedExpressionChangeSource.MOUSE_EVENT), A.EmojiPickerStore.setSearchPlaceholder(i), j.current = H.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID
                         })
-                    }, []), es = (0, _.useStateFromStores)([C.HotspotStore], () => C.HotspotStore.hasHotspot(C.HotspotLocations.FAVORITE_EMOJI_TOOLTIP), []), ea = r.useMemo(() => l().memoize((e, t) => {
+                    }, []), er = (0, _.useStateFromStores)([C.HotspotStore], () => C.HotspotStore.hasHotspot(C.HotspotLocations.FAVORITE_EMOJI_TOOLTIP), []), es = r.useMemo(() => l().memoize((e, t) => {
                         let n = s[e],
                             r = E[t.sectionIndex];
                         return (0, i.jsx)(x.default, {
                             emojiDescriptors: n,
                             emojiSize: o,
                             surrogateCodePoint: W,
-                            onInspect: er,
+                            onInspect: ei,
                             onSelect: u,
                             getEmojiItemProps: T,
                             getEmojiRowProps: S,
@@ -121327,7 +121326,7 @@
                             isUsingKeyboardNavigation: m,
                             rowIndex: e,
                             allowAnimatedEmoji: p,
-                            showEmojiFavoriteTooltip: es,
+                            showEmojiFavoriteTooltip: er,
                             channelGuildId: g,
                             category: r.sectionId,
                             selectedItemClassName: K.__invalid_selectedItem,
@@ -121335,12 +121334,12 @@
                             isBurstReaction: v,
                             inNitroLockedSection: r.isNitroLocked
                         }, e)
-                    }), [s, E, o, W, er, u, T, S, h, m, p, es, g, L, v]);
+                    }), [s, E, o, W, ei, u, T, S, h, m, p, er, g, L, v]);
                     r.useEffect(() => () => {
                         var e, t;
-                        return null === (t = ea.cache) || void 0 === t ? void 0 : null === (e = t.clear) || void 0 === e ? void 0 : e.call(t)
-                    }, [ea]);
-                    let eo = r.useMemo(() => l().memoize(e => {
+                        return null === (t = es.cache) || void 0 === t ? void 0 : null === (e = t.clear) || void 0 === e ? void 0 : e.call(t)
+                    }, [es]);
+                    let ea = r.useMemo(() => l().memoize(e => {
                             let n = E[e];
                             if (null == n) return;
                             let {
@@ -121372,14 +121371,14 @@
                                 }),
                                 icon: u,
                                 isCollapsed: t.has(l),
-                                onClick: () => ei(l, r),
+                                onClick: () => en(l, r),
                                 children: d
                             }, l)
-                        }), [E, t, ei, D, M, U]),
-                        el = r.useCallback((e, n) => {
+                        }), [E, t, en, D, M, U]),
+                        eo = r.useCallback((e, n) => {
                             let r = E[e],
-                                s = en(e),
-                                o = et(e);
+                                s = et(e),
+                                o = ee(e);
                             return (0, i.jsx)("div", {
                                 className: a()(K.categorySection, {
                                     [K.categorySectionLast]: e === E.length - 1,
@@ -121389,38 +121388,38 @@
                                 }),
                                 children: n
                             }, e)
-                        }, [t, E, U, en, et]),
-                        eu = r.useCallback(e => {
+                        }, [t, E, U, et, ee]),
+                        el = r.useCallback(e => {
                             let n = E[e];
-                            return n.sectionId !== F.EmojiCategoryTypes.PREMIUM_UPSELL || t.has(n.sectionId) || U ? en(e) ? (0, i.jsx)(R.default, {
+                            return n.sectionId !== F.EmojiCategoryTypes.PREMIUM_UPSELL || t.has(n.sectionId) || U ? et(e) ? (0, i.jsx)(R.default, {
                                 glowOpacity: P
-                            }) : et(e) ? (0, i.jsx)("div", {
+                            }) : ee(e) ? (0, i.jsx)("div", {
                                 className: K.nitroBottomDivider
                             }) : null : (0, i.jsx)(V.default, {
                                 className: K.premiumUpsell
                             }, "emoji-picker-inline-upsell")
-                        }, [E, t, P, U, en, et]),
-                        ed = r.useCallback(e => {
+                        }, [E, t, P, U, et, ee]),
+                        eu = r.useCallback(e => {
                             let n = E[e];
-                            return n.sectionId !== F.EmojiCategoryTypes.PREMIUM_UPSELL || t.has(n.sectionId) || U ? en(e) ? 41 : et(e) ? 33 : 0 : ee
-                        }, [E, t, U, en, et]),
-                        e_ = r.useCallback(e => {
+                            return n.sectionId !== F.EmojiCategoryTypes.PREMIUM_UPSELL || t.has(n.sectionId) || U ? et(e) ? 41 : ee(e) ? 33 : 0 : $
+                        }, [E, t, U, et, ee]),
+                        ed = r.useCallback(e => {
                             var n;
-                            return e === E.length - 1 || t.has(null === (n = E[e]) || void 0 === n ? void 0 : n.sectionId) || en(e) || et(e) ? 0 : $
-                        }, [t, E, en, et]),
-                        ec = r.useMemo(() => ["" !== d ? q : z, Z, X, Q], [d]);
+                            return e === E.length - 1 || t.has(null === (n = E[e]) || void 0 === n ? void 0 : n.sectionId) || et(e) || ee(e) ? 0 : J
+                        }, [t, E, et, ee]),
+                        e_ = r.useMemo(() => ["" !== d ? Q : z, Z, X, 0], [d]);
                     return {
-                        listPadding: ec,
-                        renderRow: ea,
-                        renderSection: el,
-                        renderSectionHeader: eo,
-                        renderSectionFooter: eu,
-                        sectionMarginBottom: e_,
-                        sectionHeaderHeight: r.useCallback(e => E[e].type === F.EmojiCategoryTypes.SEARCH_RESULTS ? 0 : J, [E]),
-                        sectionFooterHeight: ed
+                        listPadding: e_,
+                        renderRow: es,
+                        renderSection: eo,
+                        renderSectionHeader: ea,
+                        renderSectionFooter: el,
+                        sectionMarginBottom: ed,
+                        sectionHeaderHeight: r.useCallback(e => E[e].type === F.EmojiCategoryTypes.SEARCH_RESULTS ? 0 : q, [E]),
+                        sectionFooterHeight: eu
                     }
                 },
-                er = r.memo(function(e) {
+                ei = r.memo(function(e) {
                     let {
                         diversitySurrogate: t,
                         emojiGrid: n,
@@ -121443,7 +121442,7 @@
                         location: X
                     } = (0, f.useAnalyticsContext)(), {
                         analyticsLocations: Q
-                    } = (0, h.default)(), [q, J] = r.useState(0), [$, ee] = r.useState(!1), [et, er] = r.useState(0), es = (0, _.useStateFromStores)([S.default], () => S.default.useReducedMotion), ea = (0, u.useSpring)({
+                    } = (0, h.default)(), [q, J] = r.useState(0), [$, ee] = r.useState(!1), [ei, er] = r.useState(0), es = (0, _.useStateFromStores)([S.default], () => S.default.useReducedMotion), ea = (0, u.useSpring)({
                         transform: $ ? "translateY(0%)" : "translateY(120%)",
                         opacity: $ ? 1 : 0,
                         config: {
@@ -121466,7 +121465,7 @@
                         sectionMarginBottom: eI,
                         sectionHeaderHeight: eT,
                         sectionFooterHeight: ef
-                    } = ei({
+                    } = en({
                         collapsedSections: E,
                         diversitySurrogate: t,
                         emojiGrid: n,
@@ -121485,7 +121484,7 @@
                         isBurstReaction: k,
                         listHeaderClassName: B,
                         activeSectionIndex: q,
-                        upsellGlowOpacity: et,
+                        upsellGlowOpacity: ei,
                         enableNitroUpsell: el
                     }), eS = (0, p.useShowUpsellForScrollPosition)({
                         listRef: s,
@@ -121534,7 +121533,7 @@
                             renderSectionFooter: eE,
                             rowCount: R,
                             rowCountBySection: c,
-                            rowHeight: en(a),
+                            rowHeight: et(a),
                             sectionHeaderHeight: eT,
                             sectionMarginBottom: eI,
                             sectionFooterHeight: ef,
@@ -121572,7 +121571,7 @@
                         })]
                     })
                 });
-            t.default = er
+            t.default = ei
         },
         172800: function(e, t, n) {
             "use strict";
@@ -174320,8 +174319,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717019294614",
-                                    build_number: "297215"
+                                    built_at: "1717021454843",
+                                    build_number: "297234"
                                 }
                             },
                             retries: 1
@@ -251380,7 +251379,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a91fda41623b21ff59dc277b1c16482ae038f6e9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "04bbe778c64d03b89cb2d490ffe94f2d3c310d3f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280473,7 +280472,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297215"
+                                build_number: "297234"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287787,7 +287786,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297215", "297215"), 10);
+                let s = parseInt((n = "297234", "297234"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315591,4 +315590,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.b17134d27e1e78824b65.js.map
+//# sourceMappingURL=71586.b9f176295053586409e7.js.map
