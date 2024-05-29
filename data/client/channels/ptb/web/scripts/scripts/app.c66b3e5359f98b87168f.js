@@ -18228,6 +18228,7 @@
                 mainStatusIcon: "mainStatusIcon__00da2",
                 menu: "menu__0d1e0",
                 menuItemFocused: "menuItemFocused_b90fd4",
+                menus: "menus__39353",
                 modal: "modal__2b3ac",
                 popoutContainer: "popoutContainer_a5587a",
                 status: "status__1b7d0",
