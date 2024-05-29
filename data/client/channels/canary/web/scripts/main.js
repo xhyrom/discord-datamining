@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297078", ", Version Hash: ").concat("d63558d6145c6015b083e56730fba7f010b041f1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297095", ", Version Hash: ").concat("a45eb7889d64a6d5a1f292690d8e2a87a08543df")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88630,8 +88630,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297078", "297078"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297078")), t = 0), t
+                let t = parseInt((e = "297095", "297095"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297095")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116647,8 +116647,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297078",
-                    versionHash: "d63558d6145c6015b083e56730fba7f010b041f1"
+                    buildNumber: "297095",
+                    versionHash: "a45eb7889d64a6d5a1f292690d8e2a87a08543df"
                 }
             }
             n.r(t), n.d(t, {
@@ -174293,8 +174293,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717008165087",
-                                    build_number: "297078"
+                                    built_at: "1717009299110",
+                                    build_number: "297095"
                                 }
                             },
                             retries: 1
@@ -251301,7 +251301,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d63558d6145c6015b083e56730fba7f010b041f1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a45eb7889d64a6d5a1f292690d8e2a87a08543df"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277227,29 +277227,28 @@
             }
 
             function m(e) {
-                var t;
                 let {
-                    emoji: n,
-                    channel: r,
+                    emoji: t,
+                    channel: n,
+                    guildId: r = null == n ? void 0 : n.getGuildId(),
                     intention: u,
                     forceIncludeExternalGuilds: d
                 } = e;
-                if (!h(n)) return null;
-                let _ = null !== (t = e.guildId) && void 0 !== t ? t : null == r ? void 0 : r.getGuildId(),
-                    T = null != r && (0, a.isGuildTextChannelType)(r.type),
-                    f = null != r && (0, a.isGuildVocalChannelType)(r.type),
-                    S = A(n, _),
-                    m = o.default.can(E.Permissions.USE_EXTERNAL_EMOJIS, r);
-                if (u === I.EmojiIntention.COMMUNITY_CONTENT) return S && null != n.guildId && n.available ? null : I.EmojiDisabledReasons.DISALLOW_EXTERNAL;
-                if (!(0, I.isExternalEmojiAllowedForIntention)(u) && !A(n, _) && !d || (T || f) && !S && !m) return I.EmojiDisabledReasons.DISALLOW_EXTERNAL;
-                if (null != n.id && !n.available) return I.EmojiDisabledReasons.GUILD_SUBSCRIPTION_UNAVAILABLE;
-                let N = l.default.getCurrentUser();
-                if (!c.default.canUseEmojisEverywhere(N) && !S) {
+                if (!h(t)) return null;
+                let _ = null != n && (0, a.isGuildTextChannelType)(n.type),
+                    T = null != n && (0, a.isGuildVocalChannelType)(n.type),
+                    f = A(t, r),
+                    S = o.default.can(E.Permissions.USE_EXTERNAL_EMOJIS, n);
+                if (u === I.EmojiIntention.COMMUNITY_CONTENT) return f && null != t.guildId && t.available ? null : I.EmojiDisabledReasons.DISALLOW_EXTERNAL;
+                if (!(0, I.isExternalEmojiAllowedForIntention)(u) && !A(t, r) && !d || (_ || T) && !f && !S) return I.EmojiDisabledReasons.DISALLOW_EXTERNAL;
+                if (null != t.id && !t.available) return I.EmojiDisabledReasons.GUILD_SUBSCRIPTION_UNAVAILABLE;
+                let m = l.default.getCurrentUser();
+                if (!c.default.canUseEmojisEverywhere(m) && !f) {
                     if (u === I.EmojiIntention.STATUS) return I.EmojiDisabledReasons.PREMIUM_LOCKED;
-                    if (!n.managed) return I.EmojiDisabledReasons.PREMIUM_LOCKED
+                    if (!t.managed) return I.EmojiDisabledReasons.PREMIUM_LOCKED
                 }
-                if ((0, s.isUnusableRoleSubscriptionEmoji)(n, null != _ ? _ : void 0)) return (0, i.shouldHideGuildPurchaseEntryPoints)(n.guildId) ? I.EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : I.EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
-                return !n.animated || c.default.canUseAnimatedEmojis(N) || (0, s.isPurchasableRoleSubscriptionEmoji)(n) ? null : I.EmojiDisabledReasons.PREMIUM_LOCKED
+                if ((0, s.isUnusableRoleSubscriptionEmoji)(t, null != r ? r : void 0)) return (0, i.shouldHideGuildPurchaseEntryPoints)(t.guildId) ? I.EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : I.EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
+                return !t.animated || c.default.canUseAnimatedEmojis(m) || (0, s.isPurchasableRoleSubscriptionEmoji)(t) ? null : I.EmojiDisabledReasons.PREMIUM_LOCKED
             }
 
             function N(e, t) {
@@ -277298,76 +277297,37 @@
                 getEmojiUnavailableReason: m,
                 isCustomEmoji: h,
                 isEmojiFiltered(e) {
-                    let {
-                        emoji: t,
-                        channel: n,
-                        intention: i,
-                        guildId: r
-                    } = e, s = m({
-                        emoji: t,
-                        channel: n,
-                        intention: i,
-                        guildId: r
-                    });
-                    return S.has(s)
+                    let t = m(e);
+                    return S.has(t)
                 },
                 isEmojiPremiumLocked(e) {
-                    let {
-                        emoji: t,
-                        channel: n,
-                        intention: i,
-                        guildId: r
-                    } = e, s = m({
-                        emoji: t,
-                        channel: n,
-                        guildId: r,
-                        intention: i
-                    });
-                    return T.has(s)
+                    let t = m(e);
+                    return T.has(t)
                 },
                 isEmojiCategoryNitroLocked(e) {
                     let {
                         categoryEmojis: t,
                         channel: n,
-                        intention: i
-                    } = e, r = !1, s = 0;
+                        guildId: i,
+                        intention: r
+                    } = e, s = !1, a = 0;
                     for (let e of t) {
                         let t = m({
                             emoji: e,
                             channel: n,
-                            intention: i
+                            intention: r,
+                            guildId: i
                         });
-                        t === I.EmojiDisabledReasons.PREMIUM_LOCKED ? (r = !0, s++) : t === I.EmojiDisabledReasons.GUILD_SUBSCRIPTION_UNAVAILABLE && s++
+                        t === I.EmojiDisabledReasons.PREMIUM_LOCKED ? (s = !0, a++) : t === I.EmojiDisabledReasons.GUILD_SUBSCRIPTION_UNAVAILABLE && a++
                     }
-                    return r && s === t.length
+                    return s && a === t.length
                 },
                 isEmojiFilteredOrLocked(e) {
-                    let {
-                        emoji: t,
-                        channel: n,
-                        intention: i
-                    } = e;
-                    return this.isEmojiFiltered({
-                        emoji: t,
-                        channel: n,
-                        intention: i
-                    }) || this.isEmojiPremiumLocked({
-                        emoji: t,
-                        channel: n,
-                        intention: i
-                    })
+                    return this.isEmojiFiltered(e) || this.isEmojiPremiumLocked(e)
                 },
                 isEmojiDisabled(e) {
-                    let {
-                        emoji: t,
-                        channel: n,
-                        intention: i
-                    } = e, r = m({
-                        emoji: t,
-                        channel: n,
-                        intention: i
-                    });
-                    return f.has(r)
+                    let t = m(e);
+                    return f.has(t)
                 },
                 isFileTooBig: e => e.size > 2097152,
                 isDataTooBig: e => (0, _.dataUriFileSize)(e) > I.EMOJI_MAX_FILESIZE
@@ -280434,7 +280394,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297078"
+                                build_number: "297095"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287748,7 +287708,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297078", "297078"), 10);
+                let s = parseInt((n = "297095", "297095"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315552,4 +315512,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.69e914fb4cee9638a902.js.map
+//# sourceMappingURL=71586.360c91c27d8bf67d0745.js.map
