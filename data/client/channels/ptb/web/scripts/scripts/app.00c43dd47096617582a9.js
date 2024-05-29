@@ -21721,7 +21721,6 @@
         114480: function(e) {
             "use strict";
             e.exports = {
-                container: "container__24d2d",
                 description: "description__4b70d",
                 erroredContainer: "erroredContainer__67277",
                 erroredContent: "erroredContent_a2c294",
