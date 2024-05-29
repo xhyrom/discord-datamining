@@ -133424,19 +133424,58 @@ div.nagbar_c731ff {
     flex-shrink: 0
 }
 
-.inner__14185 {
-    position: relative;
-    padding: 20px 16px 0;
-    z-index: 2
-}
-
-.buttons__3345e {
+.buttons__9100c {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 8px;
     height: var(--custom-button-button-md-height);
     min-height: var(--custom-button-button-md-height)
+}
+
+.buttons__9100c:empty {
+    visibility: hidden
+}
+
+.additionalActionsIcon__5e554 {
+    cursor: pointer;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    opacity: 1;
+    color: var(--interactive-normal)
+}
+
+.additionalActionsIcon__5e554:hover {
+    color: var(--interactive-hover)
+}
+
+.additionalActionsIcon__5e554:active {
+    color: var(--interactive-active)
+}
+
+.enable-forced-colors .additionalActionsIcon__5e554 {
+    background-color: ButtonFace;
+    border: 1px solid ButtonFace;
+    color: ButtonText
+}
+
+.enable-forced-colors .additionalActionsIcon__5e554:hover,
+.enable-forced-colors .additionalActionsIcon__5e554:focus {
+    border-color: ButtonText
+}
+
+.enable-forced-colors .additionalActionsIcon__5e554:active {
+    background-color: HighlightText;
+    border-color: Highlight;
+    color: Highlight
+}
+
+.inner__14185 {
+    position: relative;
+    padding: 20px 16px 0;
+    z-index: 2
 }
 
 .avatar__4188a {
@@ -142200,4 +142239,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.900d97d8037c1c8dd577.css.map*/
+/*# sourceMappingURL=99387.469db0136eccd62243bb.css.map*/

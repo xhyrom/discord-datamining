@@ -25886,6 +25886,13 @@
                 warningCircleIcon: "warningCircleIcon_b12d59"
             }
         },
+        590106: function(e) {
+            "use strict";
+            e.exports = {
+                additionalActionsIcon: "additionalActionsIcon__5e554",
+                buttons: "buttons__9100c"
+            }
+        },
         671794: function(e) {
             "use strict";
             e.exports = {
@@ -25964,7 +25971,6 @@
             "use strict";
             e.exports = {
                 avatar: "avatar__4188a",
-                buttons: "buttons__3345e",
                 inner: "inner__14185"
             }
         },

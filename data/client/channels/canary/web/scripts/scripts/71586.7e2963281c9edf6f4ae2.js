@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297095", ", Version Hash: ").concat("a45eb7889d64a6d5a1f292690d8e2a87a08543df")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297100", ", Version Hash: ").concat("8ed06d58c689731a10fd670bd3a2e87dd773b1be")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88630,8 +88630,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297095", "297095"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297095")), t = 0), t
+                let t = parseInt((e = "297100", "297100"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297100")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116647,8 +116647,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297095",
-                    versionHash: "a45eb7889d64a6d5a1f292690d8e2a87a08543df"
+                    buildNumber: "297100",
+                    versionHash: "8ed06d58c689731a10fd670bd3a2e87dd773b1be"
                 }
             }
             n.r(t), n.d(t, {
@@ -174293,8 +174293,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717009299110",
-                                    build_number: "297095"
+                                    built_at: "1717009696135",
+                                    build_number: "297100"
                                 }
                             },
                             retries: 1
@@ -210926,6 +210926,51 @@
                     })
                 }
         },
+        877485: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useSimplifiedProfileFriendingExperiment: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                    kind: "user",
+                    id: "2024-05_simplified_profile_friending",
+                    label: "Simplified Profile Friending Experiment",
+                    defaultConfig: {
+                        originalFriendingEnabled: !1,
+                        improvedFriendingEnabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Original friending",
+                        config: {
+                            originalFriendingEnabled: !0,
+                            improvedFriendingEnabled: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Improved friending",
+                        config: {
+                            originalFriendingEnabled: !1,
+                            improvedFriendingEnabled: !0
+                        }
+                    }]
+                }),
+                r = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !0,
+                        trackExposureOptions: r = {}
+                    } = e;
+                    return i.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n,
+                        trackExposureOptions: r
+                    })
+                }
+        },
         350327: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -214237,22 +214282,23 @@
             function m(e) {
                 let {
                     user: t,
-                    friendToken: n
+                    acceptFriendRequestColor: n,
+                    friendToken: m
                 } = e, {
-                    trackUserProfileAction: m
-                } = (0, f.useUserProfileAnalyticsContext)(), N = (0, r.useStateFromStores)([E.default], () => E.default.getId() === (null == t ? void 0 : t.id)), p = (0, r.useStateFromStores)([I.default], () => null != t ? I.default.getRelationshipType(t.id) : h.RelationshipTypes.NONE), {
-                    analyticsLocations: O,
-                    newestAnalyticsLocation: C
-                } = (0, _.default)(), R = (0, c.default)({
+                    trackUserProfileAction: N
+                } = (0, f.useUserProfileAnalyticsContext)(), p = (0, r.useStateFromStores)([E.default], () => E.default.getId() === (null == t ? void 0 : t.id)), O = (0, r.useStateFromStores)([I.default], () => null != t ? I.default.getRelationshipType(t.id) : h.RelationshipTypes.NONE), {
+                    analyticsLocations: C,
+                    newestAnalyticsLocation: R
+                } = (0, _.default)(), g = (0, c.default)({
                     user: t,
                     color: "danger",
-                    location: C,
-                    onAction: () => m({
+                    location: R,
+                    onAction: () => N({
                         action: "REMOVE_FRIEND",
-                        analyticsLocations: O
+                        analyticsLocations: C
                     })
                 });
-                return null == t || t.bot || N || p === h.RelationshipTypes.BLOCKED ? null : p === h.RelationshipTypes.FRIEND ? (0, i.jsx)(u.Popout, {
+                return null == t || t.bot || p || O === h.RelationshipTypes.BLOCKED ? null : O === h.RelationshipTypes.FRIEND ? (0, i.jsx)(u.Popout, {
                     renderPopout: e => {
                         let {
                             closePopout: t
@@ -214262,7 +214308,7 @@
                             onSelect: void 0,
                             onClose: t,
                             "aria-label": A.default.Messages.FRIEND_ACTIONS_MENU_LABEL,
-                            children: R
+                            children: g
                         })
                     },
                     children: e => (0, i.jsx)(S.default, {
@@ -214270,31 +214316,31 @@
                         text: A.default.Messages.FRIENDS,
                         ...e
                     })
-                }) : p === h.RelationshipTypes.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
+                }) : O === h.RelationshipTypes.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(S.default, {
                         icon: e => (0, i.jsx)(s.CheckmarkLargeIcon, {
                             ...e,
-                            color: u.tokens.colors.TEXT_BRAND
+                            color: null != n ? n : u.tokens.colors.TEXT_BRAND
                         }),
                         text: A.default.Messages.ACCEPT_FRIEND_REQUEST,
                         onClick: () => {
-                            m({
+                            N({
                                 action: "ACCEPT_FRIEND_REQUEST"
                             }), d.default.addRelationship({
                                 userId: t.id,
-                                friendToken: n
+                                friendToken: m
                             })
                         }
                     }), (0, i.jsx)(S.default, {
                         icon: T.default,
                         text: A.default.Messages.IGNORE_FRIEND_REQUEST,
                         onClick: () => {
-                            m({
+                            N({
                                 action: "IGNORE_FRIEND_REQUEST"
                             }), d.default.cancelFriendRequest(t.id)
                         }
                     })]
-                }) : p === h.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(S.default, {
+                }) : O === h.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(S.default, {
                     icon: o.UserClockIcon,
                     text: A.default.Messages.REQUEST_SENT,
                     disabled: !0
@@ -214302,11 +214348,11 @@
                     icon: l.UserPlusIcon,
                     text: A.default.Messages.ADD_FRIEND,
                     onClick: () => {
-                        m({
+                        N({
                             action: "SEND_FRIEND_REQUEST"
                         }), d.default.addRelationship({
                             userId: t.id,
-                            friendToken: n
+                            friendToken: m
                         })
                     }
                 })
@@ -216988,7 +217034,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return v
+                    return D
                 }
             }), n("47120");
             var i = n("735250"),
@@ -217002,126 +217048,132 @@
                 _ = n("271383"),
                 c = n("430824"),
                 E = n("594174"),
-                I = n("785717"),
-                T = n("318661"),
-                f = n("502762"),
-                S = n("544989"),
-                h = n("301984"),
-                A = n("94918"),
-                m = n("664794"),
-                N = n("171368"),
-                p = n("958120"),
-                O = n("215633"),
-                C = n("23293"),
-                R = n("228168"),
-                g = n("689938");
+                I = n("877485"),
+                T = n("785717"),
+                f = n("318661"),
+                S = n("502762"),
+                h = n("544989"),
+                A = n("301984"),
+                m = n("94918"),
+                N = n("664794"),
+                p = n("171368"),
+                O = n("958120"),
+                C = n("215633"),
+                R = n("23293"),
+                g = n("228168"),
+                L = n("689938");
 
-            function L(e) {
+            function v(e) {
                 e.stopPropagation()
             }
 
-            function v(e) {
+            function D(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: v,
-                    messageId: D,
-                    roleId: M,
-                    closePopout: y,
-                    setPopoutRef: P,
-                    disableUserProfileLink: U = __OVERLAY__,
-                    newAnalyticsLocations: b = []
+                    channelId: D,
+                    messageId: M,
+                    roleId: y,
+                    closePopout: P,
+                    setPopoutRef: U,
+                    disableUserProfileLink: b = __OVERLAY__,
+                    newAnalyticsLocations: G = []
                 } = e, {
-                    analyticsLocations: G
-                } = (0, u.default)([...b, l.default.BITE_SIZE_PROFILE_POPOUT]), w = (0, I.useTrackUserProfileAction)({
+                    originalFriendingEnabled: w
+                } = (0, I.useSimplifiedProfileFriendingExperiment)({
+                    location: "BiteSizeProfilePopout"
+                }), {
+                    analyticsLocations: k
+                } = (0, u.default)([...G, l.default.BITE_SIZE_PROFILE_POPOUT]), B = (0, T.useTrackUserProfileAction)({
                     layout: "BITE_SIZE_POPOUT",
                     userId: t.id,
                     guildId: n,
-                    channelId: v,
-                    messageId: D,
-                    roleId: M
-                }), k = (0, s.useStateFromStores)([E.default], () => E.default.getCurrentUser()), B = (0, s.useStateFromStores)([c.default], () => null != n ? c.default.getGuild(n) : null), V = (0, s.useStateFromStores)([_.default], () => null != n ? _.default.getMember(n, t.id) : null), x = r.useRef(null), F = (0, T.default)(t.id, n), H = (0, o.default)(x);
+                    channelId: D,
+                    messageId: M,
+                    roleId: y
+                }), V = (0, s.useStateFromStores)([E.default], () => E.default.getCurrentUser()), x = (0, s.useStateFromStores)([c.default], () => null != n ? c.default.getGuild(n) : null), F = (0, s.useStateFromStores)([_.default], () => null != n ? _.default.getMember(n, t.id) : null), H = r.useRef(null), Y = (0, f.default)(t.id, n), j = (0, o.default)(H);
                 r.useEffect(() => {
-                    null == P || P(null == x ? void 0 : x.current)
-                }, [x, P]);
-                let Y = e => {
-                    null == y || y(), (0, N.openUserProfileModal)({
-                        sourceAnalyticsLocations: G,
+                    null == U || U(null == H ? void 0 : H.current)
+                }, [H, U]);
+                let W = e => {
+                    null == P || P(), (0, p.openUserProfileModal)({
+                        sourceAnalyticsLocations: k,
                         userId: t.id,
                         guildId: n,
-                        channelId: v,
-                        messageId: D,
-                        roleId: M,
+                        channelId: D,
+                        messageId: M,
+                        roleId: y,
                         ...e
                     })
                 };
-                return null == k ? null : (0, i.jsx)(u.AnalyticsLocationProvider, {
-                    value: G,
-                    children: (0, i.jsx)(I.UserProfileAnalyticsProvider, {
+                return null == V ? null : (0, i.jsx)(u.AnalyticsLocationProvider, {
+                    value: k,
+                    children: (0, i.jsx)(T.UserProfileAnalyticsProvider, {
                         layout: "BITE_SIZE_POPOUT",
                         userId: t.id,
                         guildId: n,
-                        channelId: v,
-                        messageId: D,
-                        roleId: M,
-                        shouldTrackViewOnMount: null == V || null != V.fullProfileLoadedTimestamp,
+                        channelId: D,
+                        messageId: M,
+                        roleId: y,
+                        shouldTrackViewOnMount: null == F || null != F.fullProfileLoadedTimestamp,
                         children: (0, i.jsxs)(a.Dialog, {
-                            ref: x,
+                            ref: H,
                             "aria-label": t.username,
-                            onClick: L,
-                            onContextMenu: L,
-                            children: [(0, i.jsxs)(f.default, {
+                            onClick: v,
+                            onContextMenu: v,
+                            children: [(0, i.jsxs)(S.default, {
                                 user: t,
-                                displayProfile: F,
-                                profileType: R.UserProfileTypes.BITE_SIZE,
-                                children: [(0, i.jsxs)(S.default, {
-                                    profileType: R.UserProfileTypes.BITE_SIZE,
-                                    children: [(0, i.jsx)(A.default, {
+                                displayProfile: Y,
+                                profileType: g.UserProfileTypes.BITE_SIZE,
+                                children: [(0, i.jsxs)(h.default, {
+                                    profileType: g.UserProfileTypes.BITE_SIZE,
+                                    children: [(0, i.jsx)(m.default, {
                                         user: t,
                                         guildId: n,
-                                        channelId: v,
-                                        onClose: y
-                                    }), (0, i.jsx)(h.default, {
-                                        user: t
-                                    }), (0, i.jsx)(m.default, {
+                                        channelId: D,
+                                        onClose: P
+                                    }), (0, i.jsx)(A.default, {
                                         user: t,
-                                        profileType: R.UserProfileTypes.BITE_SIZE,
+                                        acceptFriendRequestColor: w ? a.tokens.colors.BUTTON_OUTLINE_POSITIVE_BORDER : null
+                                    }), (0, i.jsx)(N.default, {
+                                        user: t,
+                                        profileType: g.UserProfileTypes.BITE_SIZE,
                                         guildId: n,
                                         viewProfileItem: (0, i.jsx)(a.MenuItem, {
                                             id: "view-profile",
-                                            label: g.default.Messages.VIEW_FULL_PROFILE,
+                                            label: L.default.Messages.VIEW_FULL_PROFILE,
                                             action: () => {
-                                                w({
+                                                B({
                                                     action: "PRESS_VIEW_PROFILE",
-                                                    analyticsLocations: G
-                                                }), Y()
+                                                    analyticsLocations: k
+                                                }), W()
                                             }
                                         })
                                     })]
-                                }), (0, i.jsx)(C.default, {
+                                }), (0, i.jsx)(R.default, {
                                     user: t,
-                                    displayProfile: F,
+                                    displayProfile: Y,
                                     guildId: n,
-                                    channelId: v,
-                                    onOpenProfile: U ? void 0 : Y
-                                }), (0, i.jsx)(p.default, {
-                                    user: t,
-                                    currentUser: k,
-                                    displayProfile: F,
-                                    guild: B,
-                                    isHovering: H,
-                                    onOpenProfile: Y,
-                                    channelId: v,
-                                    onClose: y
+                                    channelId: D,
+                                    onOpenProfile: b ? void 0 : W
                                 }), (0, i.jsx)(O.default, {
                                     user: t,
+                                    currentUser: V,
+                                    displayProfile: Y,
+                                    guild: x,
+                                    isHovering: j,
+                                    onOpenProfile: W,
+                                    channelId: D,
+                                    onClose: P
+                                }), (0, i.jsx)(C.default, {
+                                    user: t,
                                     guildId: n,
-                                    channelId: v,
-                                    onClose: y
+                                    channelId: D,
+                                    onClose: P
                                 })]
-                            }), (null == F ? void 0 : F.profileEffectId) != null && (0, i.jsx)(d.default, {
-                                profileEffectId: null == F ? void 0 : F.profileEffectId,
-                                isHovering: H
+                            }), (null == Y ? void 0 : Y.profileEffectId) != null && (0, i.jsx)(d.default, {
+                                profileEffectId: null == Y ? void 0 : Y.profileEffectId,
+                                isHovering: j
                             })]
                         })
                     })
@@ -251301,7 +251353,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a45eb7889d64a6d5a1f292690d8e2a87a08543df"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8ed06d58c689731a10fd670bd3a2e87dd773b1be"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280394,7 +280446,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297095"
+                                build_number: "297100"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287708,7 +287760,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297095", "297095"), 10);
+                let s = parseInt((n = "297100", "297100"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315512,4 +315564,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.360c91c27d8bf67d0745.js.map
+//# sourceMappingURL=71586.7e2963281c9edf6f4ae2.js.map
