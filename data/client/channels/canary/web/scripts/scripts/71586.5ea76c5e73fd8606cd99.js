@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297034", ", Version Hash: ").concat("2a32608e561d66d8c0ba8ff256e937a9a2f3aad6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297054", ", Version Hash: ").concat("f9502f62496a1e969293bb48c7ff36991b9679d1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37092,7 +37092,7 @@
                     configurable: !0,
                     writable: !0
                 }) : e[t] = n, e
-            }(o = i || (i = {}))[o.UNKNOWN = 0] = "UNKNOWN", o[o.UNKNOWN_BILLING_PROFILE = 100001] = "UNKNOWN_BILLING_PROFILE", o[o.UNKNOWN_PAYMENT_SOURCE = 100002] = "UNKNOWN_PAYMENT_SOURCE", o[o.UNKNOWN_SUBSCRIPTION = 100003] = "UNKNOWN_SUBSCRIPTION", o[o.ALREADY_SUBSCRIBED = 100004] = "ALREADY_SUBSCRIBED", o[o.INVALID_PLAN = 100005] = "INVALID_PLAN", o[o.PAYMENT_SOURCE_REQUIRED = 100006] = "PAYMENT_SOURCE_REQUIRED", o[o.ALREADY_CANCELED = 100007] = "ALREADY_CANCELED", o[o.INVALID_PAYMENT = 100008] = "INVALID_PAYMENT", o[o.ALREADY_REFUNDED = 100009] = "ALREADY_REFUNDED", o[o.INVALID_BILLING_ADDRESS = 100010] = "INVALID_BILLING_ADDRESS", o[o.ALREADY_PURCHASED = 100011] = "ALREADY_PURCHASED", o[o.DUPLICATE_PURCHASE_ATTEMPT = 100012] = "DUPLICATE_PURCHASE_ATTEMPT", o[o.BILLING_PURCHASE_REQUEST_INVALID = 100017] = "BILLING_PURCHASE_REQUEST_INVALID", o[o.NEGATIVE_INVOICE_AMOUNT = 100027] = "NEGATIVE_INVOICE_AMOUNT", o[o.AUTHENTICATION_REQUIRED = 100029] = "AUTHENTICATION_REQUIRED", o[o.SUBSCRIPTION_RENEWAL_IN_PROGRESS = 100042] = "SUBSCRIPTION_RENEWAL_IN_PROGRESS", o[o.CONFIRMATION_REQUIRED = 100047] = "CONFIRMATION_REQUIRED", o[o.CARD_DECLINED = 100054] = "CARD_DECLINED", o[o.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED = 50097] = "INVALID_GIFT_REDEMPTION_FRAUD_REJECTED", o[o.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED = 100056] = "PURCHASE_TOKEN_AUTHORIZATION_REQUIRED", o[o.INVALID_PAYMENT_SOURCE = 50048] = "INVALID_PAYMENT_SOURCE", o[o.INVALID_CURRENCY_FOR_PAYMENT_SOURCE = 100051] = "INVALID_CURRENCY_FOR_PAYMENT_SOURCE", o[o.BILLING_APPLE_SERVER_API_ERROR = 100070] = "BILLING_APPLE_SERVER_API_ERROR", o[o.BILLING_TRIAL_REDEMPTION_DISABLED = 100078] = "BILLING_TRIAL_REDEMPTION_DISABLED", o[o.BILLING_PAUSE_DISABLED = 100079] = "BILLING_PAUSE_DISABLED", o[o.BILLING_PAUSE_PENDING_ALREADY_SET = 100080] = "BILLING_PAUSE_PENDING_ALREADY_SET", o[o.BILLING_PAUSE_NOT_ELIGIBLE = 100081] = "BILLING_PAUSE_NOT_ELIGIBLE", o[o.BILLING_PAUSE_INVALID_INTERVAL = 100082] = "BILLING_PAUSE_INVALID_INTERVAL", o[o.BILLING_ALREADY_PAUSED = 100083] = "BILLING_ALREADY_PAUSED", o[o.BILLING_CANNOT_CHARGE_ZERO_AMOUNT = 100084] = "BILLING_CANNOT_CHARGE_ZERO_AMOUNT", (l = r || (r = {})).CARD_NUMBER = "cardNumber", l.CARD_CVC = "cvc", l.CARD_EXPIRATION_DATE = "expirationDate", l.CARD_NAME = "name", l.ADDRESS_NAME = "name", l.ADDRESS_LINE_1 = "line1", l.ADDRESS_LINE_2 = "line2", l.ADDRESS_CITY = "city", l.ADDRESS_STATE = "state", l.ADDRESS_POSTAL_CODE = "postalCode", l.ADDRESS_COUNTRY = "country", (u = s || (s = {})).ADDRESS_LINE_1 = "address_line1", u.ADDRESS_LINE_2 = "address_line2", u.ADDRESS_CITY = "address_city", u.ADDRESS_STATE = "address_state", u.ADDRESS_ZIP = "address_zip", u.ADDRESS_COUNTRY = "address_country", u.CARD_NUMBER = "number", u.CARD_EXPIRATION_DATE = "exp", u.CARD_EXPIRATION_MONTH = "exp_month", u.CARD_EXPIRATION_YEAR = "exp_year";
+            }(o = i || (i = {}))[o.UNKNOWN = 0] = "UNKNOWN", o[o.UNKNOWN_BILLING_PROFILE = 100001] = "UNKNOWN_BILLING_PROFILE", o[o.UNKNOWN_PAYMENT_SOURCE = 100002] = "UNKNOWN_PAYMENT_SOURCE", o[o.UNKNOWN_SUBSCRIPTION = 100003] = "UNKNOWN_SUBSCRIPTION", o[o.ALREADY_SUBSCRIBED = 100004] = "ALREADY_SUBSCRIBED", o[o.INVALID_PLAN = 100005] = "INVALID_PLAN", o[o.PAYMENT_SOURCE_REQUIRED = 100006] = "PAYMENT_SOURCE_REQUIRED", o[o.ALREADY_CANCELED = 100007] = "ALREADY_CANCELED", o[o.INVALID_PAYMENT = 100008] = "INVALID_PAYMENT", o[o.ALREADY_REFUNDED = 100009] = "ALREADY_REFUNDED", o[o.INVALID_BILLING_ADDRESS = 100010] = "INVALID_BILLING_ADDRESS", o[o.ALREADY_PURCHASED = 100011] = "ALREADY_PURCHASED", o[o.DUPLICATE_PURCHASE_ATTEMPT = 100012] = "DUPLICATE_PURCHASE_ATTEMPT", o[o.BILLING_PURCHASE_REQUEST_INVALID = 100017] = "BILLING_PURCHASE_REQUEST_INVALID", o[o.NEGATIVE_INVOICE_AMOUNT = 100027] = "NEGATIVE_INVOICE_AMOUNT", o[o.AUTHENTICATION_REQUIRED = 100029] = "AUTHENTICATION_REQUIRED", o[o.SUBSCRIPTION_RENEWAL_IN_PROGRESS = 100042] = "SUBSCRIPTION_RENEWAL_IN_PROGRESS", o[o.CONFIRMATION_REQUIRED = 100047] = "CONFIRMATION_REQUIRED", o[o.CARD_DECLINED = 100054] = "CARD_DECLINED", o[o.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED = 50097] = "INVALID_GIFT_REDEMPTION_FRAUD_REJECTED", o[o.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED = 100056] = "PURCHASE_TOKEN_AUTHORIZATION_REQUIRED", o[o.INVALID_PAYMENT_SOURCE = 50048] = "INVALID_PAYMENT_SOURCE", o[o.INVALID_CURRENCY_FOR_PAYMENT_SOURCE = 100051] = "INVALID_CURRENCY_FOR_PAYMENT_SOURCE", o[o.BILLING_APPLE_SERVER_API_ERROR = 100070] = "BILLING_APPLE_SERVER_API_ERROR", o[o.BILLING_TRIAL_REDEMPTION_DISABLED = 100078] = "BILLING_TRIAL_REDEMPTION_DISABLED", o[o.BILLING_PAUSE_DISABLED = 100079] = "BILLING_PAUSE_DISABLED", o[o.BILLING_PAUSE_PENDING_ALREADY_SET = 100080] = "BILLING_PAUSE_PENDING_ALREADY_SET", o[o.BILLING_PAUSE_NOT_ELIGIBLE = 100081] = "BILLING_PAUSE_NOT_ELIGIBLE", o[o.BILLING_PAUSE_INVALID_INTERVAL = 100082] = "BILLING_PAUSE_INVALID_INTERVAL", o[o.BILLING_ALREADY_PAUSED = 100083] = "BILLING_ALREADY_PAUSED", o[o.BILLING_CANNOT_CHARGE_ZERO_AMOUNT = 100084] = "BILLING_CANNOT_CHARGE_ZERO_AMOUNT", o[o.BILLING_BUNDLE_ALREADY_PURCHASED = 100096] = "BILLING_BUNDLE_ALREADY_PURCHASED", o[o.BILLING_BUNDLE_PARTIALLY_OWNED = 100097] = "BILLING_BUNDLE_PARTIALLY_OWNED", (l = r || (r = {})).CARD_NUMBER = "cardNumber", l.CARD_CVC = "cvc", l.CARD_EXPIRATION_DATE = "expirationDate", l.CARD_NAME = "name", l.ADDRESS_NAME = "name", l.ADDRESS_LINE_1 = "line1", l.ADDRESS_LINE_2 = "line2", l.ADDRESS_CITY = "city", l.ADDRESS_STATE = "state", l.ADDRESS_POSTAL_CODE = "postalCode", l.ADDRESS_COUNTRY = "country", (u = s || (s = {})).ADDRESS_LINE_1 = "address_line1", u.ADDRESS_LINE_2 = "address_line2", u.ADDRESS_CITY = "address_city", u.ADDRESS_STATE = "address_state", u.ADDRESS_ZIP = "address_zip", u.ADDRESS_COUNTRY = "address_country", u.CARD_NUMBER = "number", u.CARD_EXPIRATION_DATE = "exp", u.CARD_EXPIRATION_MONTH = "exp_month", u.CARD_EXPIRATION_YEAR = "exp_year";
             let f = Object.freeze({
                     address_line1: "line1",
                     address_line2: "line2",
@@ -37140,7 +37140,7 @@
                     return this._isInFieldSet(m)
                 }
                 constructor(e, t) {
-                    for (let n in super(e, t), T(this, "paymentId", null), 100027 === this.code ? this.message = I.default.Messages.BILLING_ERROR_NEGATIVE_INVOICE_AMOUNT : 50048 === this.code ? this.message = I.default.Messages.BILLING_PAYMENT_SOURCE_INVALID : 100002 === this.code ? this.message = I.default.Messages.BILLING_ERROR_UNKNOWN_PAYMENT_SOURCE : 100042 === this.code ? this.message = I.default.Messages.BILLING_ERROR_PENDING_PAYMENT : 100078 === this.code ? this.message = I.default.Messages.BILLING_TRIAL_REDEMPTION_DISABLED : 429 === this.status ? this.message = I.default.Messages.BILLING_ERROR_RATE_LIMIT : 0 === this.code ? this.message = I.default.Messages.BILLING_ERROR_GENERIC : 400 === this.status && null != this.fields.captcha_key && (this.message = I.default.Messages.BILLING_ERROR_INVALID_CAPTCHA_RESPONSE), this.fields) {
+                    for (let n in super(e, t), T(this, "paymentId", null), 100027 === this.code ? this.message = I.default.Messages.BILLING_ERROR_NEGATIVE_INVOICE_AMOUNT : 50048 === this.code ? this.message = I.default.Messages.BILLING_PAYMENT_SOURCE_INVALID : 100002 === this.code ? this.message = I.default.Messages.BILLING_ERROR_UNKNOWN_PAYMENT_SOURCE : 100042 === this.code ? this.message = I.default.Messages.BILLING_ERROR_PENDING_PAYMENT : 100078 === this.code ? this.message = I.default.Messages.BILLING_TRIAL_REDEMPTION_DISABLED : 100096 === this.code ? this.message = I.default.Messages.BILLING_BUNDLE_ALREADY_PURCHASED : 100097 === this.code ? this.message = I.default.Messages.BILLING_BUNDLE_PARTIALLY_OWNED : 429 === this.status ? this.message = I.default.Messages.BILLING_ERROR_RATE_LIMIT : 0 === this.code ? this.message = I.default.Messages.BILLING_ERROR_GENERIC : 400 === this.status && null != this.fields.captcha_key && (this.message = I.default.Messages.BILLING_ERROR_INVALID_CAPTCHA_RESPONSE), this.fields) {
                         let e = f[n] || S[n];
                         if (null != e) {
                             let t = this.fields[n];
@@ -45856,6 +45856,8 @@
                 BILLING_SELECT_PAYMENT_SOURCE_TOOLTIP: "Select a payment source to continue",
                 BILLING_PAYMENT_SOURCE_INVALID: "This payment source is invalid.",
                 BILLING_TRIAL_REDEMPTION_DISABLED: "Trial redemption is temporarily unavailable. Please try again later.",
+                BILLING_BUNDLE_ALREADY_PURCHASED: "Already purchased the bundle.",
+                BILLING_BUNDLE_PARTIALLY_OWNED: "Already own at least one item from the bundle.",
                 BILLING_ACCOUNT_CREDIT: "Account Credit",
                 BILLING_ACCOUNT_CREDIT_DESCRIPTION: "When you accept a gift while you have a running subscription, or accept a gift that differs from your current subscription, it will appear here as credit.",
                 BILLING_ACCOUNT_CREDIT_DESCRIPTION_IOS_DISCLAIMER: "Unfortunately mobile subscriptions are not eligible for account credit. Account credit will be applied while subscribing through the desktop app.",
@@ -88626,8 +88628,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297034", "297034"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297034")), t = 0), t
+                let t = parseInt((e = "297054", "297054"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297054")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116631,8 +116633,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297034",
-                    versionHash: "2a32608e561d66d8c0ba8ff256e937a9a2f3aad6"
+                    buildNumber: "297054",
+                    versionHash: "f9502f62496a1e969293bb48c7ff36991b9679d1"
                 }
             }
             n.r(t), n.d(t, {
@@ -118871,17 +118873,14 @@
         543241: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                allowUnicodeEmojiForIntention: function() {
-                    return B
-                },
                 getAriaIdForEmojiCategory: function() {
                     return w
                 },
                 getEmojiSubCategory: function() {
-                    return W
+                    return j
                 },
                 getSearchPlaceholder: function() {
-                    return K
+                    return W
                 },
                 getStringForEmojiCategory: function() {
                     return k
@@ -118914,22 +118913,22 @@
                     return L
                 },
                 useEmojiInPriorityOrder: function() {
-                    return Y
-                },
-                useEmojiSearchResults: function() {
-                    return V
-                },
-                useFavoriteEmojis: function() {
-                    return F
-                },
-                useFrequentlyUsedEmojis: function() {
-                    return x
-                },
-                useIsFavoriteEmoji: function() {
                     return H
                 },
+                useEmojiSearchResults: function() {
+                    return B
+                },
+                useFavoriteEmojis: function() {
+                    return x
+                },
+                useFrequentlyUsedEmojis: function() {
+                    return V
+                },
+                useIsFavoriteEmoji: function() {
+                    return F
+                },
                 useTrackEmojiPickerOpened: function() {
-                    return j
+                    return Y
                 }
             }), n("733860"), n("653041"), n("47120"), n("724458"), n("627341"), n("757143");
             var i = n("470079"),
@@ -118962,8 +118961,8 @@
                     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null == t ? void 0 : t.getGuildId();
                     (0, u.maybeFetchTopEmojisByGuild)(n);
                     let r = (0, O.isExternalEmojiAllowedForIntention)(e),
-                        s = x(n),
-                        o = F(n),
+                        s = V(n),
+                        o = x(n),
                         {
                             topEmojis: d,
                             newlyAddedEmojis: I
@@ -119006,43 +119005,43 @@
                                     })
                                 }), null != l && (r.id === n ? u.unshift(l) : u.push(l))
                             }
-                        })(a, N.EmojiCategoryTypes.GUILD), l.default.categories.reduce((t, i) => {
-                            if (i === N.EmojiCategories.TOP_GUILD_EMOJI) {
-                                if (0 === T.length) return t;
-                                t.push({
+                        })(a, N.EmojiCategoryTypes.GUILD), l.default.categories.reduce((e, t) => {
+                            if (t === N.EmojiCategories.TOP_GUILD_EMOJI) {
+                                if (0 === T.length) return e;
+                                e.push({
                                     type: N.EmojiCategoryTypes.TOP_GUILD_EMOJI,
-                                    id: i,
+                                    id: t,
                                     name: g.default.Messages.EMOJI_CATEGORY_TOP_GUILD_EMOJI.format({
                                         guildName: p
                                     }),
                                     isNitroLocked: !1
                                 })
-                            } else if (i === N.EmojiCategories.RECENT) {
-                                if (0 === s.length) return t;
-                                t.push({
+                            } else if (t === N.EmojiCategories.RECENT) {
+                                if (0 === s.length) return e;
+                                e.push({
                                     type: N.EmojiCategoryTypes.RECENT,
-                                    id: i,
+                                    id: t,
                                     name: g.default.Messages.EMOJI_CATEGORY_RECENT,
                                     isNitroLocked: !1
                                 })
-                            } else if (i === N.EmojiCategories.FAVORITES) {
-                                if (0 === o.length) return t;
-                                t.push({
+                            } else if (t === N.EmojiCategories.FAVORITES) {
+                                if (0 === o.length) return e;
+                                e.push({
                                     type: N.EmojiCategoryTypes.FAVORITES,
-                                    id: i,
+                                    id: t,
                                     name: g.default.Messages.CATEGORY_FAVORITE,
                                     isNitroLocked: !1
                                 })
-                            } else if (i === N.EmojiCategories.CUSTOM) {
-                                let e = u;
-                                !r && (e = u.filter(e => e.type === N.EmojiCategoryTypes.GUILD && e.guild.id === n)), t.push(...e)
-                            } else if (B(e)) t.push({
+                            } else if (t === N.EmojiCategories.CUSTOM) {
+                                let t = u;
+                                !r && (t = u.filter(e => e.type === N.EmojiCategoryTypes.GUILD && e.guild.id === n)), e.push(...t)
+                            } else e.push({
                                 type: N.EmojiCategoryTypes.UNICODE,
-                                id: i,
-                                name: i,
+                                id: t,
+                                name: t,
                                 isNitroLocked: !1
                             });
-                            return t
+                            return e
                         }, [])
                     }, [h, t, n, e, T.length, p, s.length, o.length, r, R])
                 },
@@ -119233,10 +119232,9 @@
                         default:
                             return null != t ? t : e
                     }
-                },
-                B = e => e !== O.EmojiIntention.COMMUNITY_CONTENT_ONLY;
+                };
 
-            function V(e, t, n) {
+            function B(e, t, n) {
                 i.useEffect(() => {
                     d.FrecencyUserSettingsActionCreators.loadIfNecessary()
                 }, []);
@@ -119253,31 +119251,31 @@
                 }, [t, n, e, r], a.statesWillNeverBeEqual)
             }
 
-            function x(e) {
+            function V(e) {
                 return i.useEffect(() => {
                     d.FrecencyUserSettingsActionCreators.loadIfNecessary()
                 }, []), (0, a.useStateFromStoresArray)([l.default], () => l.default.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
             }
 
-            function F(e) {
+            function x(e) {
                 return i.useEffect(() => {
                     d.FrecencyUserSettingsActionCreators.loadIfNecessary()
                 }, []), (0, a.useStateFromStoresArray)([l.default], () => l.default.getDisambiguatedEmojiContext(e).favoriteEmojisWithoutFetchingLatest)
             }
 
-            function H(e, t) {
+            function F(e, t) {
                 return i.useEffect(() => {
                     d.FrecencyUserSettingsActionCreators.loadIfNecessary()
                 }, []), (0, a.useStateFromStores)([l.default], () => null != t && l.default.getDisambiguatedEmojiContext(e).isFavoriteEmojiWithoutFetchingLatest(t))
             }
 
-            function Y(e) {
+            function H(e) {
                 return i.useEffect(() => {
                     d.FrecencyUserSettingsActionCreators.loadIfNecessary()
                 }, []), (0, a.useStateFromStoresArray)([l.default], () => l.default.getDisambiguatedEmojiContext(e).getEmojiInPriorityOrderWithoutFetchingLatest())
             }
 
-            function j(e) {
+            function Y(e) {
                 let t = i.useCallback(() => {
                     (0, h.default)(e)
                 }, [e]);
@@ -119288,7 +119286,7 @@
                 }
             }
 
-            function W(e, t, n) {
+            function j(e, t, n) {
                 if (null == n) return N.EmojiSubCategory.NONE;
                 let i = e.map(e => {
                         var t, n;
@@ -119298,7 +119296,7 @@
                 return i.includes(n) ? N.EmojiSubCategory.TOP_GUILD_EMOJI : r.includes(n) ? N.EmojiSubCategory.NEWLY_ADDED_EMOJI : N.EmojiSubCategory.NONE
             }
 
-            function K(e, t) {
+            function W(e, t) {
                 return e === O.EmojiIntention.REACTION ? t ? g.default.Messages.SEARCH_FOR_SUPER_REACTION : g.default.Messages.SEARCH_FOR_REACTION : g.default.Messages.SEARCH_FOR_EMOJI
             }
         },
@@ -120537,7 +120535,7 @@
                         onKeyDown: I,
                         className: c.searchBar,
                         ref: S,
-                        isFullRow: n === _.EmojiIntention.COMMUNITY_CONTENT_ONLY,
+                        isFullRow: !1,
                         onFocus: T,
                         autoFocus: f,
                         defaultSearchPlaceholder: (0, o.getSearchPlaceholder)(n, m)
@@ -120547,7 +120545,7 @@
                             checked: m,
                             onClick: N
                         })
-                    }) : null, n === _.EmojiIntention.COMMUNITY_CONTENT_ONLY ? null : null != t ? t : (0, i.jsx)(l.default, {
+                    }) : null, null != t ? t : (0, i.jsx)(l.default, {
                         searchBarRef: S,
                         className: c.diversitySelector,
                         hasTabWrapper: h,
@@ -120797,7 +120795,7 @@
                                 count: n.length,
                                 isNitroLocked: !1
                             })
-                        } else if ((0, D.allowUnicodeEmojiForIntention)(r)) {
+                        } else {
                             let t = S.default.getByCategory(e);
                             null != t && m(t, {
                                 categoryId: e,
@@ -122348,8 +122346,8 @@
                 I = 256,
                 T = 262144,
                 f = 48;
-            (o = i || (i = {}))[o.NonDiversityPerRow = 42] = "NonDiversityPerRow", o[o.DiversityPerRow = 10] = "DiversityPerRow", o[o.PickerPerRow = 11] = "PickerPerRow", o[o.PickerCount = 50] = "PickerCount", (l = r || (r = {}))[l.DISALLOW_EXTERNAL = 0] = "DISALLOW_EXTERNAL", l[l.GUILD_SUBSCRIPTION_UNAVAILABLE = 1] = "GUILD_SUBSCRIPTION_UNAVAILABLE", l[l.PREMIUM_LOCKED = 2] = "PREMIUM_LOCKED", l[l.ONLY_GUILD_EMOJIS_ALLOWED = 3] = "ONLY_GUILD_EMOJIS_ALLOWED", l[l.ROLE_SUBSCRIPTION_LOCKED = 4] = "ROLE_SUBSCRIPTION_LOCKED", l[l.ROLE_SUBSCRIPTION_UNAVAILABLE = 5] = "ROLE_SUBSCRIPTION_UNAVAILABLE", (u = s || (s = {}))[u.REACTION = 0] = "REACTION", u[u.STATUS = 1] = "STATUS", u[u.COMMUNITY_CONTENT = 2] = "COMMUNITY_CONTENT", u[u.CHAT = 3] = "CHAT", u[u.GUILD_STICKER_RELATED_EMOJI = 4] = "GUILD_STICKER_RELATED_EMOJI", u[u.GUILD_ROLE_BENEFIT_EMOJI = 5] = "GUILD_ROLE_BENEFIT_EMOJI", u[u.COMMUNITY_CONTENT_ONLY = 6] = "COMMUNITY_CONTENT_ONLY", u[u.SOUNDBOARD = 7] = "SOUNDBOARD", u[u.VOICE_CHANNEL_TOPIC = 8] = "VOICE_CHANNEL_TOPIC", u[u.GIFT = 9] = "GIFT", u[u.AUTO_SUGGESTION = 10] = "AUTO_SUGGESTION", u[u.POLLS = 11] = "POLLS";
-            let S = new Set([2, 6, 4, 5, 7, 9]);
+            (o = i || (i = {}))[o.NonDiversityPerRow = 42] = "NonDiversityPerRow", o[o.DiversityPerRow = 10] = "DiversityPerRow", o[o.PickerPerRow = 11] = "PickerPerRow", o[o.PickerCount = 50] = "PickerCount", (l = r || (r = {}))[l.DISALLOW_EXTERNAL = 0] = "DISALLOW_EXTERNAL", l[l.GUILD_SUBSCRIPTION_UNAVAILABLE = 1] = "GUILD_SUBSCRIPTION_UNAVAILABLE", l[l.PREMIUM_LOCKED = 2] = "PREMIUM_LOCKED", l[l.ONLY_GUILD_EMOJIS_ALLOWED = 3] = "ONLY_GUILD_EMOJIS_ALLOWED", l[l.ROLE_SUBSCRIPTION_LOCKED = 4] = "ROLE_SUBSCRIPTION_LOCKED", l[l.ROLE_SUBSCRIPTION_UNAVAILABLE = 5] = "ROLE_SUBSCRIPTION_UNAVAILABLE", (u = s || (s = {}))[u.REACTION = 0] = "REACTION", u[u.STATUS = 1] = "STATUS", u[u.COMMUNITY_CONTENT = 2] = "COMMUNITY_CONTENT", u[u.CHAT = 3] = "CHAT", u[u.GUILD_STICKER_RELATED_EMOJI = 4] = "GUILD_STICKER_RELATED_EMOJI", u[u.GUILD_ROLE_BENEFIT_EMOJI = 5] = "GUILD_ROLE_BENEFIT_EMOJI", u[u.SOUNDBOARD = 6] = "SOUNDBOARD", u[u.VOICE_CHANNEL_TOPIC = 7] = "VOICE_CHANNEL_TOPIC", u[u.GIFT = 8] = "GIFT", u[u.AUTO_SUGGESTION = 9] = "AUTO_SUGGESTION", u[u.POLLS = 10] = "POLLS";
+            let S = new Set([2, 4, 5, 6, 8]);
 
             function h(e) {
                 return !S.has(e)
@@ -174223,8 +174221,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717004589953",
-                                    build_number: "297034"
+                                    built_at: "1717006149840",
+                                    build_number: "297054"
                                 }
                             },
                             retries: 1
@@ -251552,7 +251550,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2a32608e561d66d8c0ba8ff256e937a9a2f3aad6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f9502f62496a1e969293bb48c7ff36991b9679d1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277485,14 +277483,13 @@
                     intention: u,
                     forceIncludeExternalGuilds: d
                 } = e;
-                if (u === I.EmojiIntention.COMMUNITY_CONTENT_ONLY && null == n.guildId) return I.EmojiDisabledReasons.ONLY_GUILD_EMOJIS_ALLOWED;
                 if (!h(n)) return null;
                 let _ = null !== (t = e.guildId) && void 0 !== t ? t : null == r ? void 0 : r.getGuildId(),
                     T = null != r && (0, a.isGuildTextChannelType)(r.type),
                     f = null != r && (0, a.isGuildVocalChannelType)(r.type),
                     S = A(n, _),
                     m = o.default.can(E.Permissions.USE_EXTERNAL_EMOJIS, r);
-                if (u === I.EmojiIntention.COMMUNITY_CONTENT || u === I.EmojiIntention.COMMUNITY_CONTENT_ONLY) return S && null != n.guildId && n.available ? null : I.EmojiDisabledReasons.DISALLOW_EXTERNAL;
+                if (u === I.EmojiIntention.COMMUNITY_CONTENT) return S && null != n.guildId && n.available ? null : I.EmojiDisabledReasons.DISALLOW_EXTERNAL;
                 if (!(0, I.isExternalEmojiAllowedForIntention)(u) && !A(n, _) && !d || (T || f) && !S && !m) return I.EmojiDisabledReasons.DISALLOW_EXTERNAL;
                 if (null != n.id && !n.available) return I.EmojiDisabledReasons.GUILD_SUBSCRIPTION_UNAVAILABLE;
                 let N = l.default.getCurrentUser();
@@ -280686,7 +280683,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297034"
+                                build_number: "297054"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288000,7 +287997,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297034", "297034"), 10);
+                let s = parseInt((n = "297054", "297054"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315764,4 +315761,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.eada27332ad5b10db359.js.map
+//# sourceMappingURL=71586.5ea76c5e73fd8606cd99.js.map
