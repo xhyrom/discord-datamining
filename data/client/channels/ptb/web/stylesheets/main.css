@@ -45029,8 +45029,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -45896,7 +45896,7 @@ img.thumbnail__18ece {
 }
 
 .tooltipContentWrapper_c880ba:active {
-    transform: translatey(2px)scale(.98)
+    transform: translatey(1px)scale(.99)
 }
 
 .traitsTooltip__02c2a {
@@ -142246,4 +142246,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.74c613fe92a4893b8548.css.map*/
+/*# sourceMappingURL=99387.833aa35a4d6ff10e24e2.css.map*/
