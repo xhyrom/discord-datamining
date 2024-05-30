@@ -12132,27 +12132,32 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .xxsmall_aaa483 {
     width: 16px;
-    height: 16px
+    height: 16px;
+    border-radius: var(--radius-xs)
 }
 
 .xsmall_b118ce {
     width: 24px;
-    height: 24px
+    height: 24px;
+    border-radius: var(--radius-sm)
 }
 
 .small__93cfd {
     width: 30px;
-    height: 30px
+    height: 30px;
+    border-radius: var(--radius-sm)
 }
 
 .medium__8b0d0 {
     width: 40px;
-    height: 40px
+    height: 40px;
+    border-radius: var(--radius-md)
 }
 
 .large__7dc67 {
     width: 60px;
-    height: 60px
+    height: 60px;
+    border-radius: var(--radius-lg)
 }
 
 .eighty__3c4f9 {
@@ -27453,4 +27458,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.55258b946debc18b7fca.css.map*/
+/*# sourceMappingURL=49237.f982faada52040f86b4c.css.map*/
