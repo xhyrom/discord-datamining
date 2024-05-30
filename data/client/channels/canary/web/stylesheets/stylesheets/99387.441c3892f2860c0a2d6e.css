@@ -23568,9 +23568,14 @@ input[type=checked]:focus-visible+.label__73b15 {
     overflow: hidden
 }
 
-.messageContentIcon__81b24 {
+.messageContentTrailingIcon__2811c {
     flex-shrink: 0;
     margin-left: 4px
+}
+
+.messageContentLeadingIcon__46df3 {
+    flex-shrink: 0;
+    margin-right: 4px
 }
 
 .root__3eef0 {
@@ -35608,9 +35613,14 @@ html .progress__00e29 {
     height: 18px
 }
 
-.messageContentIcon__611cb {
+.messageContentTrailingIcon__0584f {
     flex: 0 0 auto;
     margin-left: 4px
+}
+
+.messageContentLeadingIcon__40b53 {
+    flex: 0 0 auto;
+    margin-right: 4px
 }
 
 .bodyMedia__07c4c {
@@ -42606,9 +42616,14 @@ div.profileThemedContainer__6e645 {
     pointer-events: none
 }
 
-.messageContentIcon__4312a {
+.messageContentTrailingIcon__9e03c {
     flex: 0 0 auto;
     margin-left: 4px
+}
+
+.messageContentLeadingIcon__06b07 {
+    flex: 0 0 auto;
+    margin-right: 4px
 }
 
 .bullet__55ab8 {
@@ -142164,4 +142179,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.cf5703f486115814f2e3.css.map*/
+/*# sourceMappingURL=99387.441c3892f2860c0a2d6e.css.map*/
