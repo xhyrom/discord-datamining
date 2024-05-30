@@ -37084,7 +37084,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297647", ", Version Hash: ").concat("107e87f1d25291a134776ef45e0b7aee88dda7fd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297656", ", Version Hash: ").concat("80a7b5a418a5d8bc2ae2dfcff00b8456859cb12b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88684,8 +88684,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297647", "297647"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297647")), t = 0), t
+                let t = parseInt((e = "297656", "297656"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297656")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116747,8 +116747,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297647",
-                    versionHash: "107e87f1d25291a134776ef45e0b7aee88dda7fd"
+                    buildNumber: "297656",
+                    versionHash: "80a7b5a418a5d8bc2ae2dfcff00b8456859cb12b"
                 }
             }
             n.r(t), n.d(t, {
@@ -174137,8 +174137,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717108797968",
-                                    build_number: "297647"
+                                    built_at: "1717109409715",
+                                    build_number: "297656"
                                 }
                             },
                             retries: 1
@@ -251306,7 +251306,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "107e87f1d25291a134776ef45e0b7aee88dda7fd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "80a7b5a418a5d8bc2ae2dfcff00b8456859cb12b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -253717,111 +253717,93 @@
             n("470079");
             var r = n("120356"),
                 s = n.n(r),
-                a = n("692547"),
-                o = n("829968"),
-                l = n("346656"),
-                u = n("438071"),
-                d = n("474936"),
-                _ = n("689938"),
-                c = n("458217");
-            let E = {
-                    XXSMALL: c.xxsmall,
-                    XSMALL: c.xsmall,
-                    SMALL: c.small,
-                    MEDIUM: c.medium,
-                    LARGE: c.large
+                a = n("829968"),
+                o = n("346656"),
+                l = n("438071"),
+                u = n("474936"),
+                d = n("689938"),
+                _ = n("458217");
+            let c = {
+                    XXSMALL: _.xxsmall,
+                    XSMALL: _.xsmall,
+                    SMALL: _.small,
+                    MEDIUM: _.medium,
+                    LARGE: _.large
                 },
-                I = e => {
+                E = e => {
                     let t, {
                         game: r,
-                        guild: I,
-                        skuId: T,
-                        pid: f,
-                        className: S,
-                        guildClassName: h,
-                        size: A = E.MEDIUM
+                        guild: E,
+                        skuId: I,
+                        pid: T,
+                        className: f,
+                        guildClassName: S,
+                        size: h = c.MEDIUM
                     } = e;
-                    if (null != T && (t = function(e) {
+                    if (null != I && (t = function(e) {
                             if (null == e) return null;
                             switch (e) {
-                                case d.PremiumSubscriptionSKUs.GUILD:
+                                case u.PremiumSubscriptionSKUs.GUILD:
                                     return n("632342");
-                                case d.PremiumSubscriptionSKUs.TIER_0:
+                                case u.PremiumSubscriptionSKUs.TIER_0:
                                     return n("467596");
-                                case d.PremiumSubscriptionSKUs.TIER_1:
+                                case u.PremiumSubscriptionSKUs.TIER_1:
                                     return n("670957");
-                                case d.PremiumSubscriptionSKUs.TIER_2:
-                                case d.PremiumSubscriptionSKUs.LEGACY:
+                                case u.PremiumSubscriptionSKUs.TIER_2:
+                                case u.PremiumSubscriptionSKUs.LEGACY:
                                     return n("480768");
                                 default:
                                     return null
                             }
-                        }(T)), null != r && null == t && (t = r.getIconURL(function(e) {
+                        }(I)), null != r && null == t && (t = r.getIconURL(function(e) {
                             switch (e) {
-                                case E.XXSMALL:
+                                case c.XXSMALL:
                                     return 16;
-                                case E.XSMALL:
+                                case c.XSMALL:
                                     return 24;
-                                case E.SMALL:
+                                case c.SMALL:
                                     return 30;
-                                case E.MEDIUM:
+                                case c.MEDIUM:
                                     return 40;
-                                case E.LARGE:
+                                case c.LARGE:
                                     return 60;
                                 default:
                                     return 80
                             }
-                        }(A))), null == (t = (0, o.default)(f, t)) && null != I) {
+                        }(h))), null == (t = (0, a.default)(T, t)) && null != E) {
                         let e = function(e) {
                             switch (e) {
-                                case E.XSMALL:
-                                    return l.default.Sizes.SMALLER;
-                                case E.SMALL:
-                                    return l.default.Sizes.SMALL;
-                                case E.LARGE:
-                                    return l.default.Sizes.LARGE;
+                                case c.XSMALL:
+                                    return o.default.Sizes.SMALLER;
+                                case c.SMALL:
+                                    return o.default.Sizes.SMALL;
+                                case c.LARGE:
+                                    return o.default.Sizes.LARGE;
                                 default:
-                                case E.MEDIUM:
-                                    return l.default.Sizes.MEDIUM
+                                case c.MEDIUM:
+                                    return o.default.Sizes.MEDIUM
                             }
-                        }(A);
-                        return (0, i.jsx)(l.default, {
-                            className: s()(c.gameIcon, h, S),
-                            guild: I,
+                        }(h);
+                        return (0, i.jsx)(o.default, {
+                            className: s()(_.gameIcon, S, f),
+                            guild: E,
                             size: e
                         })
                     }
-                    if (null == t) return (0, i.jsx)(u.default, {
-                        className: s()(c.gameIcon, A, S)
+                    if (null == t) return (0, i.jsx)(l.default, {
+                        className: s()(_.gameIcon, h, f)
                     });
-                    let m = null == r ? void 0 : r.name,
-                        N = null != m && "" !== m ? _.default.Messages.APPLICATION_ICON_A11Y_LABEL.format({
-                            applicationName: m
-                        }) : _.default.Messages.APPLICATION_ICON_NO_NAME_A11Y_LABEL;
+                    let A = null == r ? void 0 : r.name,
+                        m = null != A && "" !== A ? d.default.Messages.APPLICATION_ICON_A11Y_LABEL.format({
+                            applicationName: A
+                        }) : d.default.Messages.APPLICATION_ICON_NO_NAME_A11Y_LABEL;
                     return (0, i.jsx)("img", {
-                        alt: N,
+                        alt: m,
                         src: t,
-                        className: s()(c.gameIcon, A, S),
-                        style: {
-                            borderRadius: function(e) {
-                                switch (e) {
-                                    case E.XXSMALL:
-                                        return a.default.radii.xs;
-                                    case E.XSMALL:
-                                    case E.SMALL:
-                                        return a.default.radii.sm;
-                                    case E.MEDIUM:
-                                        return a.default.radii.md;
-                                    case E.LARGE:
-                                        return a.default.radii.lg;
-                                    default:
-                                        return a.default.radii.sm
-                                }
-                            }(A)
-                        }
+                        className: s()(_.gameIcon, h, f)
                     })
                 };
-            I.Sizes = E, t.default = I
+            E.Sizes = c, t.default = E
         },
         672752: function(e, t, n) {
             "use strict";
@@ -280448,7 +280430,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297647"
+                                build_number: "297656"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287757,7 +287739,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297647", "297647"), 10);
+                let s = parseInt((n = "297656", "297656"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315608,4 +315590,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.c1818d0d1b67acca7e24.js.map
+//# sourceMappingURL=27519.46c07549c08ea5caf81c.js.map
