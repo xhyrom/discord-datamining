@@ -7130,31 +7130,32 @@
                 E = n("710845"),
                 I = n("57132"),
                 T = n("703656"),
-                f = n("314897"),
-                S = n("480294"),
-                h = n("573261"),
-                A = n("572691"),
-                m = n("981631"),
-                N = n("792101");
-            let p = new E.default("AuthenticationActionCreators"),
-                O = null;
+                f = n("365007"),
+                S = n("314897"),
+                h = n("480294"),
+                A = n("573261"),
+                m = n("572691"),
+                N = n("981631"),
+                p = n("792101");
+            let O = new E.default("AuthenticationActionCreators"),
+                C = null;
 
-            function C(e) {
+            function R(e) {
                 let t = {
                     type: "LOGOUT",
                     ...e
                 };
                 d.default.dispatch(t).catch(e => {
                     var t;
-                    throw p.error("Error while dispatching LOGOUT", e), null === (t = window.DiscordErrors) || void 0 === t || t.softCrash(e), e
+                    throw O.error("Error while dispatching LOGOUT", e), null === (t = window.DiscordErrors) || void 0 === t || t.softCrash(e), e
                 })
             }
 
-            function R() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.Routes.DEFAULT_LOGGED_OUT;
-                C();
+            function g() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N.Routes.DEFAULT_LOGGED_OUT;
+                R();
                 let t = (0, I.getRootNavigationRefIfInExperiment)();
-                null != e && (null != t ? (A.default.popAll(), t.navigate("auth")) : (0, T.transitionTo)(e))
+                null != e && (null != t ? (m.default.popAll(), t.navigate("auth")) : (0, T.transitionTo)(e))
             }(s = r || (r = {})).MFA = "MFA", s.SUCCESS = "SUCCESS", t.default = {
                 startSession(e) {
                     d.default.wait(() => {
@@ -7186,9 +7187,9 @@
                     d.default.dispatch({
                         type: "LOGIN",
                         login: n,
-                        loginMethod: null != r && "" !== r ? m.LoginMethods.LOGIN_CODE : m.LoginMethods.PASSWORD
-                    }), this.setLoginCredentials(n, null !== (t = null != i ? i : r) && void 0 !== t ? t : void 0), h.default.post({
-                        url: m.Endpoints.LOGIN,
+                        loginMethod: null != r && "" !== r ? N.LoginMethods.LOGIN_CODE : N.LoginMethods.PASSWORD
+                    }), this.setLoginCredentials(n, null !== (t = null != i ? i : r) && void 0 !== t ? t : void 0), A.default.post({
+                        url: N.Endpoints.LOGIN,
                         body: {
                             login: n,
                             password: i,
@@ -7250,19 +7251,19 @@
                             return
                         }
                         let a = null === (r = e.body) || void 0 === r ? void 0 : r.code;
-                        a === m.AbortCodes.ACCOUNT_SCHEDULED_FOR_DELETION && null != i && "" !== i ? d.default.dispatch({
+                        a === N.AbortCodes.ACCOUNT_SCHEDULED_FOR_DELETION && null != i && "" !== i ? d.default.dispatch({
                             type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION",
                             credentials: {
                                 login: n,
                                 password: i
                             }
-                        }) : a === m.AbortCodes.ACCOUNT_DISABLED && null != i && "" !== i ? d.default.dispatch({
+                        }) : a === N.AbortCodes.ACCOUNT_DISABLED && null != i && "" !== i ? d.default.dispatch({
                             type: "LOGIN_ACCOUNT_DISABLED",
                             credentials: {
                                 login: n,
                                 password: i
                             }
-                        }) : a === m.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
+                        }) : a === N.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
                             type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED"
                         }) : d.default.dispatch({
                             type: "LOGIN_FAILURE",
@@ -7279,8 +7280,8 @@
                         isMultiAccount: s,
                         mfaType: o
                     } = e;
-                    return h.default.post({
-                        url: m.Endpoints.LOGIN_MFA(o),
+                    return A.default.post({
+                        url: N.Endpoints.LOGIN_MFA(o),
                         body: {
                             code: t,
                             ticket: n,
@@ -7306,8 +7307,84 @@
                             });
                             return
                         }
-                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === m.AbortCodes.MFA_INVALID_CODE) throw Error(e.body.message);
+                        if ((null === (t = e.body) || void 0 === t ? void 0 : t.code) === N.AbortCodes.MFA_INVALID_CODE) throw Error(e.body.message);
                         throw e
+                    })
+                },
+                authenticatePasswordless(e) {
+                    let {
+                        authenticateFunc: t,
+                        conditionalMediationAbortController: n,
+                        source: i,
+                        giftCodeSKUId: r
+                    } = e;
+                    return null == n || n.abort("Starting non-conditional mediation"), d.default.dispatch({
+                        type: "PASSWORDLESS_START"
+                    }), (0, f.fetchWebAuthnPasswordlessChallenge)().then(e => {
+                        let {
+                            challenge: n,
+                            ticket: s
+                        } = e;
+                        return t(n).then(e => this.loginWebAuthn({
+                            ticket: s,
+                            credential: e,
+                            source: i,
+                            giftCodeSKUId: r
+                        }))
+                    }).catch(e => {
+                        throw d.default.dispatch({
+                            type: "PASSWORDLESS_FAILURE",
+                            error: e
+                        }), e
+                    })
+                },
+                loginWebAuthn(e) {
+                    let {
+                        ticket: t,
+                        credential: n,
+                        source: i,
+                        giftCodeSKUId: r
+                    } = e;
+                    return A.default.post({
+                        url: N.Endpoints.WEBAUTHN_CONDITIONAL_UI_LOGIN,
+                        body: {
+                            credential: n,
+                            ticket: t,
+                            source: i,
+                            giftCodeSKUId: r
+                        },
+                        retries: 1,
+                        trackedActionData: {
+                            event: a.NetworkActionNames.USER_LOGIN_PASSWORDLESS
+                        }
+                    }).then(e => {
+                        let {
+                            body: {
+                                token: t,
+                                user_id: n,
+                                required_actions: i
+                            }
+                        } = e;
+                        d.default.dispatch({
+                            type: "LOGIN_ATTEMPTED",
+                            user_id: n,
+                            required_actions: i
+                        }), d.default.dispatch({
+                            type: "LOGIN_SUCCESS",
+                            token: t
+                        })
+                    }).catch(e => {
+                        if (null != e.body && null != e.body.suspended_user_token) {
+                            d.default.dispatch({
+                                type: "LOGIN_SUSPENDED_USER",
+                                suspendedUserToken: e.body.suspended_user_token
+                            });
+                            return
+                        }
+                        throw d.default.dispatch({
+                            type: "PASSWORDLESS_FAILURE",
+                            error: e
+                        }), e
                     })
                 },
                 loginToken(e) {
@@ -7335,19 +7412,19 @@
                     })
                 },
                 logoutInternal(e) {
-                    C(e)
+                    R(e)
                 },
                 logout() {
                     var e;
-                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.Routes.DEFAULT_LOGGED_OUT,
+                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N.Routes.DEFAULT_LOGGED_OUT,
                         n = arguments.length > 1 ? arguments[1] : void 0;
-                    return h.default.post({
-                        url: m.Endpoints.LOGOUT,
+                    return A.default.post({
+                        url: N.Endpoints.LOGOUT,
                         body: {
-                            provider: (0, N.getDevicePushProvider)(),
-                            token: u.Storage.get(m.DEVICE_TOKEN),
-                            voip_provider: N.DEVICE_PUSH_VOIP_PROVIDER,
-                            voip_token: u.Storage.get(m.DEVICE_VOIP_TOKEN)
+                            provider: (0, p.getDevicePushProvider)(),
+                            token: u.Storage.get(N.DEVICE_TOKEN),
+                            voip_provider: p.DEVICE_PUSH_VOIP_PROVIDER,
+                            voip_token: u.Storage.get(N.DEVICE_VOIP_TOKEN)
                         },
                         oldFormErrors: !0,
                         trackedActionData: {
@@ -7359,36 +7436,36 @@
                             }
                         }
                     }).finally(() => {
-                        (null == n || n === f.default.getId()) && R(t)
+                        (null == n || n === S.default.getId()) && g(t)
                     })
                 },
                 switchAccountToken(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                        n = f.default.getToken();
-                    p.log("Switching accounts", {
+                        n = S.default.getToken();
+                    O.log("Switching accounts", {
                         wasLoggedIn: null != n,
                         tokenHasChanged: e !== n
-                    }), C({
+                    }), R({
                         isSwitchingAccount: !0
                     });
                     let i = this.loginToken(e, !0).then(() => {
-                        let t = f.default.getToken();
-                        p.log("Switched accounts finished", {
+                        let t = S.default.getToken();
+                        O.log("Switched accounts finished", {
                             isCorrectToken: e === t
                         })
                     });
-                    return t && (0, T.transitionTo)(m.Routes.ME), i
+                    return t && (0, T.transitionTo)(N.Routes.ME), i
                 },
                 verifySSOToken() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.Routes.DEFAULT_LOGGED_OUT;
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N.Routes.DEFAULT_LOGGED_OUT;
                     return l.HTTP.get({
-                        url: m.Endpoints.ME,
+                        url: N.Endpoints.ME,
                         oldFormErrors: !0
-                    }).catch(() => R(e))
+                    }).catch(() => g(e))
                 },
                 verify(e) {
-                    null != e ? h.default.post({
-                        url: m.Endpoints.VERIFY,
+                    null != e ? A.default.post({
+                        url: N.Endpoints.VERIFY,
                         body: {
                             token: e
                         },
@@ -7414,8 +7491,8 @@
                 },
                 async authorizePayment(e) {
                     try {
-                        await h.default.post({
-                            url: m.Endpoints.AUTHORIZE_PAYMENT,
+                        await A.default.post({
+                            url: N.Endpoints.AUTHORIZE_PAYMENT,
                             body: {
                                 token: e
                             },
@@ -7442,8 +7519,8 @@
                         return
                     }
                     try {
-                        await h.default.post({
-                            url: m.Endpoints.AUTHORIZE_IP,
+                        await A.default.post({
+                            url: N.Endpoints.AUTHORIZE_IP,
                             body: {
                                 token: e
                             },
@@ -7461,30 +7538,13 @@
                         })
                     }
                 },
-                verifyResend: () => h.default.post({
-                    url: m.Endpoints.VERIFY_RESEND,
+                verifyResend: () => A.default.post({
+                    url: N.Endpoints.VERIFY_RESEND,
                     oldFormErrors: !0,
                     trackedActionData: {
                         event: a.NetworkActionNames.USER_VERIFY_RESEND
                     }
                 }),
-                async loginWebAuthn(e) {
-                    let {
-                        ticket: t,
-                        credential: n,
-                        source: i,
-                        giftCodeSKUId: r
-                    } = e;
-                    return (await l.HTTP.post({
-                        url: m.Endpoints.WEBAUTHN_CONDITIONAL_UI_LOGIN,
-                        body: {
-                            credential: n,
-                            ticket: t,
-                            source: i,
-                            giftCodeSKUId: r
-                        }
-                    })).body.token
-                },
                 async resetPassword(e, t, n) {
                     d.default.dispatch({
                         type: "LOGIN"
@@ -7494,11 +7554,11 @@
                             password: t,
                             source: n
                         },
-                        r = u.Storage.get(m.DEVICE_TOKEN),
-                        s = (0, N.getDevicePushProvider)();
+                        r = u.Storage.get(N.DEVICE_TOKEN),
+                        s = (0, p.getDevicePushProvider)();
                     null != s && null != r && (i.push_provider = s, i.push_token = r);
-                    let o = u.Storage.get(m.DEVICE_VOIP_TOKEN);
-                    null != N.DEVICE_PUSH_VOIP_PROVIDER && null != o && (i.push_voip_provider = N.DEVICE_PUSH_VOIP_PROVIDER, i.push_voip_token = o);
+                    let o = u.Storage.get(N.DEVICE_VOIP_TOKEN);
+                    null != p.DEVICE_PUSH_VOIP_PROVIDER && null != o && (i.push_voip_provider = p.DEVICE_PUSH_VOIP_PROVIDER, i.push_voip_token = o);
                     try {
                         let {
                             body: {
@@ -7510,8 +7570,8 @@
                                 backup: o,
                                 totp: l
                             }
-                        } = await h.default.post({
-                            url: m.Endpoints.RESET_PASSWORD,
+                        } = await A.default.post({
+                            url: N.Endpoints.RESET_PASSWORD,
                             body: i,
                             oldFormErrors: !0,
                             trackedActionData: {
@@ -7545,8 +7605,8 @@
                     } = e;
                     return d.default.dispatch({
                         type: "LOGIN_MFA"
-                    }), (await h.default.post({
-                        url: m.Endpoints.RESET_PASSWORD,
+                    }), (await A.default.post({
+                        url: N.Endpoints.RESET_PASSWORD,
                         body: {
                             code: n,
                             ticket: i,
@@ -7569,8 +7629,8 @@
                         type: "FORGOT_PASSWORD_REQUEST"
                     });
                     try {
-                        await h.default.post({
-                            url: m.Endpoints.FORGOT_PASSWORD,
+                        await A.default.post({
+                            url: N.Endpoints.FORGOT_PASSWORD,
                             body: {
                                 login: e
                             },
@@ -7583,7 +7643,7 @@
                         })
                     } catch (t) {
                         let e = new _.V6OrEarlierAPIError(t);
-                        throw e.code === m.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
+                        throw e.code === N.AbortCodes.PHONE_VERIFICATION_REQUIRED ? d.default.dispatch({
                             type: "LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION"
                         }) : d.default.dispatch({
                             type: "LOGIN_FAILURE",
@@ -7603,18 +7663,18 @@
                         withGuildExperiments: e
                     })
                 },
-                getLocationMetadata: () => null != O ? O : (clearTimeout(i), i = setTimeout(() => {
+                getLocationMetadata: () => null != C ? C : (clearTimeout(i), i = setTimeout(() => {
                     d.default.dispatch({
                         type: "SET_CONSENT_REQUIRED",
                         consentRequired: !0
                     })
-                }, 5e3), O = l.HTTP.get({
-                    url: m.Endpoints.AUTH_LOCATION_METADATA,
+                }, 5e3), C = l.HTTP.get({
+                    url: N.Endpoints.AUTH_LOCATION_METADATA,
                     retries: 2,
                     oldFormErrors: !0
                 }).then(e => {
                     var t, n, r, s, a;
-                    if (clearTimeout(i), null == S.default.getAuthenticationConsentRequired()) {
+                    if (clearTimeout(i), null == h.default.getAuthenticationConsentRequired()) {
                         let t = null === (s = null == e ? void 0 : null === (r = e.body) || void 0 === r ? void 0 : r.consent_required) || void 0 === s || s;
                         d.default.dispatch({
                             type: "SET_CONSENT_REQUIRED",
@@ -7624,7 +7684,7 @@
                     if (d.default.dispatch({
                             type: "SET_LOCATION_METADATA",
                             countryCode: null !== (a = null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.country_code) && void 0 !== a ? a : void 0
-                        }), O = null, (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.promotional_email_opt_in) != null) {
+                        }), C = null, (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.promotional_email_opt_in) != null) {
                         let t = e.body.promotional_email_opt_in;
                         (0, c.setPromoEmailConsentState)({
                             required: t.required,
@@ -7636,7 +7696,7 @@
                     clearTimeout(i), d.default.dispatch({
                         type: "SET_CONSENT_REQUIRED",
                         consentRequired: !0
-                    }), O = null
+                    }), C = null
                 })),
                 closeSuspendedUser() {
                     d.default.dispatch({
@@ -37018,7 +37078,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297405", ", Version Hash: ").concat("b893b2b977a7487f25cc6e3c4291a8de73456131")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297409", ", Version Hash: ").concat("ea1c0786a763fbf136a81fd8e59fca1a37de6b52")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88601,8 +88661,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297405", "297405"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297405")), t = 0), t
+                let t = parseInt((e = "297409", "297409"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297409")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116660,8 +116720,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297405",
-                    versionHash: "b893b2b977a7487f25cc6e3c4291a8de73456131"
+                    buildNumber: "297409",
+                    versionHash: "ea1c0786a763fbf136a81fd8e59fca1a37de6b52"
                 }
             }
             n.r(t), n.d(t, {
@@ -157575,7 +157635,7 @@
                             }
                             let a = async () => {
                                 let e = await (0, S.connectOrLurkStage)(i, n);
-                                (0, f.navigateToStage)(e)
+                                (0, f.navigateToStage)(e, null, !1)
                             };
                             r === x.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? a() : r === x.GuildScheduledEventEntityTypes.VOICE && (_.default.handleVoiceConnect({
                                 channel: s,
@@ -173981,8 +174041,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717087245430",
-                                    build_number: "297405"
+                                    built_at: "1717088340875",
+                                    build_number: "297409"
                                 }
                             },
                             retries: 1
@@ -225378,6 +225438,112 @@
                 }
             })
         },
+        365007: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                deleteWebAuthnCredential: function() {
+                    return u
+                },
+                editWebAuthnCredential: function() {
+                    return d
+                },
+                fetchWebAuthnConditionalChallenge: function() {
+                    return a
+                },
+                fetchWebAuthnCredentials: function() {
+                    return l
+                },
+                fetchWebAuthnPasswordlessChallenge: function() {
+                    return o
+                },
+                finishRegisterWebAuthnCredential: function() {
+                    return c
+                },
+                startRegisterWebAuthnCredential: function() {
+                    return _
+                }
+            });
+            var i = n("544891"),
+                r = n("570140"),
+                s = n("981631");
+            async function a() {
+                return (await i.HTTP.post(s.Endpoints.WEBAUTHN_CONDITIONAL_UI_CHALLENGE)).body
+            }
+            async function o() {
+                let {
+                    challenge: e,
+                    ticket: t
+                } = (await i.HTTP.post(s.Endpoints.WEBAUTHN_PASSWORDLESS_CHALLENGE)).body;
+                return {
+                    challenge: e,
+                    ticket: t
+                }
+            }
+
+            function l() {
+                r.default.dispatch({
+                    type: "MFA_WEBAUTHN_CREDENTIALS_LOADING"
+                }), i.HTTP.get(s.Endpoints.MFA_WEBAUTHN_CREDENTIALS).then(e => {
+                    r.default.dispatch({
+                        type: "MFA_WEBAUTHN_CREDENTIALS_LOADED",
+                        credentials: e.body
+                    })
+                })
+            }
+
+            function u(e) {
+                i.HTTP.del(s.Endpoints.MFA_WEBAUTHN_CREDENTIAL(e.id)).then(() => {
+                    r.default.dispatch({
+                        type: "AUTHENTICATOR_DELETE",
+                        credential: e
+                    })
+                })
+            }
+            async function d(e, t) {
+                let n = await i.HTTP.patch({
+                    url: s.Endpoints.MFA_WEBAUTHN_CREDENTIAL(e),
+                    body: {
+                        name: t
+                    }
+                });
+                r.default.dispatch({
+                    type: "AUTHENTICATOR_UPDATE",
+                    credential: n.body
+                })
+            }
+            async function _() {
+                let {
+                    body: {
+                        ticket: e,
+                        challenge: t
+                    }
+                } = await i.HTTP.post({
+                    url: s.Endpoints.MFA_WEBAUTHN_CREDENTIALS,
+                    body: {}
+                });
+                return {
+                    ticket: e,
+                    challenge: t
+                }
+            }
+            async function c(e, t, n) {
+                let a = await i.HTTP.post({
+                    url: s.Endpoints.MFA_WEBAUTHN_CREDENTIALS,
+                    body: {
+                        name: e,
+                        ticket: t,
+                        credential: n
+                    }
+                });
+                r.default.dispatch({
+                    type: "AUTHENTICATOR_CREATE",
+                    credential: a.body
+                }), r.default.dispatch({
+                    type: "MFA_ENABLE_SUCCESS",
+                    codes: a.body.backup_codes
+                })
+            }
+        },
         973616: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -228786,9 +228952,19 @@
                 ei = null,
                 er = null,
                 es = null,
-                ea = null;
+                ea = null,
+                eo = !1;
 
-            function eo(e) {
+            function el(e) {
+                let t = {};
+                if (t.error_code = e.code, null != e.errors) {
+                    for (let n of Object.keys(e.errors)) t[n] = [e.getFirstFieldErrorMessage(n)];
+                    return t
+                }
+                return t.message = e.message, null != e.retryAfter && (t.retry_after = e.retryAfter), t
+            }
+
+            function eu(e) {
                 let t = null != _.getToken(),
                     n = null != T.Storage.get(D.TOKEN_KEY);
                 P.verbose(e, {
@@ -228797,16 +228973,16 @@
                 })
             }
 
-            function el() {
+            function ed() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
                 if (x = T.Storage.get(U), null != er) return er;
                 let t = null != x ? x : _.getToken();
-                !(!(0, p.isValidFingerprintRoute)() || !e && null != t || L.default.isHandoffAvailable()) && eu({
+                !(!(0, p.isValidFingerprintRoute)() || !e && null != t || L.default.isHandoffAvailable()) && e_({
                     withGuildExperiments: !0
                 })
             }
 
-            function eu(e) {
+            function e_(e) {
                 let {
                     withGuildExperiments: t
                 } = e, n = {}, i = C.default.getSuperPropertiesBase64();
@@ -228843,36 +229019,36 @@
                 })
             }
 
-            function ed() {
+            function ec() {
                 F = x, x = null, T.Storage.remove(U)
             }
 
-            function e_(e, t) {
-                eo("setAuthToken called."), _.setToken(e, t)
+            function eE(e, t) {
+                eu("setAuthToken called."), _.setToken(e, t)
             }
 
-            function ec() {
-                return eo("removeAuthToken called."), _.removeToken()
+            function eI() {
+                return eu("removeAuthToken called."), _.removeToken()
             }
 
-            function eE() {
-                W = !0, eI(), f.default.wait(() => {
+            function eT() {
+                W = !0, ef(), f.default.wait(() => {
                     (0, p.transitionTo)(D.Routes.REGISTER)
                 })
             }
 
-            function eI(e) {
+            function ef(e) {
                 var t;
-                eo("handleLogout called.");
-                let n = ec();
-                !(null !== (t = null == e ? void 0 : e.isSwitchingAccount) && void 0 !== t && t) && (n && ed(), el()), E.default.PersistedStore.clearAll({
+                eu("handleLogout called.");
+                let n = eI();
+                !(null !== (t = null == e ? void 0 : e.isSwitchingAccount) && void 0 !== t && t) && (n && ec(), ed()), E.default.PersistedStore.clearAll({
                     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
                     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-                }), v.default.clearAll(), m.clear(), g.default.clearUser(), T.Storage.remove(G), w = null, Y = (null == e ? void 0 : e.isSwitchingAccount) ? D.LoginStates.LOGGING_IN : D.LoginStates.NONE, j = D.RegistrationStates.NONE, z = "", J = "", X = null, Z = !1, $ = !1, ee = !1, et = {}, en = {}
+                }), v.default.clearAll(), m.clear(), g.default.clearUser(), T.Storage.remove(G), w = null, Y = (null == e ? void 0 : e.isSwitchingAccount) ? D.LoginStates.LOGGING_IN : D.LoginStates.NONE, j = D.RegistrationStates.NONE, z = "", J = "", X = null, Z = !1, $ = !1, ee = !1, et = {}, en = {}, eo = !1
             }
-            class eT extends(s = E.default.Store) {
+            class eS extends(s = E.default.Store) {
                 initialize() {
-                    w = T.Storage.get(G), k = T.Storage.get(b), es = T.Storage.get("login_cache"), null == _.getToken() && el(), this.addChangeListener(() => (0, A.setClientState)(w))
+                    w = T.Storage.get(G), k = T.Storage.get(b), es = T.Storage.get("login_cache"), null == _.getToken() && ed(), this.addChangeListener(() => (0, A.setClientState)(w))
                 }
                 getEmail() {
                     return k
@@ -228979,13 +229155,16 @@
                 getSuspendedUserToken() {
                     return ea
                 }
+                getIsPasswordlessActive() {
+                    return eo
+                }
             }
-            l = "AuthenticationStore", (o = "displayName") in(a = eT) ? Object.defineProperty(a, o, {
+            l = "AuthenticationStore", (o = "displayName") in(a = eS) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new eT(f.default, {
+            }) : a[o] = l, t.default = new eS(f.default, {
                 CONNECTION_OPEN: function(e) {
                     var t;
                     let {
@@ -228995,7 +229174,7 @@
                         analyticsToken: s,
                         auth: a
                     } = e;
-                    eo("handleConnectionOpen called"), g.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, O.default)(n)), B = i, V = r, H = s, w = n.id, k = n.email, void 0 !== a && (K = a.authenticator_types), T.Storage.set(b, n.email), T.Storage.set(G, n.id)
+                    eu("handleConnectionOpen called"), g.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, O.default)(n)), B = i, V = r, H = s, w = n.id, k = n.email, void 0 !== a && (K = a.authenticator_types), T.Storage.set(b, n.email), T.Storage.set(G, n.id)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     var t;
@@ -229005,20 +229184,20 @@
                         analyticsToken: r,
                         token: s
                     } = e;
-                    g.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, O.default)(n)), B = i, H = r, e_(s), ed(), w = n.id, T.Storage.set(G, n.id)
+                    g.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, O.default)(n)), B = i, H = r, eE(s), ec(), w = n.id, T.Storage.set(G, n.id)
                 },
                 CONNECTION_CLOSED: function(e) {
                     let {
                         code: t
                     } = e;
-                    if (eo("handleConnectionClosed called with code ".concat(t, ".")), 4004 === t) {
+                    if (eu("handleConnectionClosed called with code ".concat(t, ".")), 4004 === t) {
                         if (W || y(M.NEW_USER_AGE_GATE_MODAL_KEY) || y(M.EXISTING_USER_AGE_GATE_MODAL_KEY)) {
-                            eE();
+                            eT();
                             return
                         }
                         C.default.track(D.AnalyticEvents.APP_USER_DEAUTHENTICATED, {
                             user_id: T.Storage.get(G)
-                        }), eI(), setImmediate(() => (0, p.transitionTo)(D.Routes.DEFAULT_LOGGED_OUT))
+                        }), ef(), setImmediate(() => (0, p.transitionTo)(D.Routes.DEFAULT_LOGGED_OUT))
                     }
                 },
                 AUTH_SESSION_CHANGE: function(e) {
@@ -229034,7 +229213,7 @@
                     let {
                         token: t
                     } = e;
-                    Y = D.LoginStates.NONE, e_(t), ed(), z = "", Z = !1, X = null, J = ""
+                    Y = D.LoginStates.NONE, eE(t), ec(), z = "", Z = !1, X = null, eo = !1, J = ""
                 },
                 LOGIN_FAILURE: function(e) {
                     let {
@@ -229102,7 +229281,7 @@
                     let {
                         isMultiAccount: t
                     } = e;
-                    en = {}, Y = D.LoginStates.NONE, z = "", Z = !1, X = null, r = null, i = null, !t && (ec(), el(!1))
+                    en = {}, Y = D.LoginStates.NONE, z = "", Z = !1, X = null, r = null, i = null, !t && (eI(), ed(!1))
                 },
                 LOGIN_STATUS_RESET: function() {
                     Y = D.LoginStates.NONE
@@ -229111,7 +229290,7 @@
                     let {
                         suspendedUserToken: t
                     } = e;
-                    ea = t, setImmediate(() => (0, p.transitionTo)(D.Routes.ACCOUNT_STANDING))
+                    eo = !1, ea = t, setImmediate(() => (0, p.transitionTo)(D.Routes.ACCOUNT_STANDING))
                 },
                 SET_LOGIN_CREDENTIALS: function(e) {
                     let {
@@ -229123,13 +229302,13 @@
                         password: n
                     }
                 },
-                LOGOUT: eI,
+                LOGOUT: ef,
                 FINGERPRINT: function(e) {
                     let t = e.fingerprint;
                     null == x ? null != t ? (C.default.track(D.AnalyticEvents.USER_FINGERPRINT_CHANGED, {
                         old_fingerprint: null != F ? (0, c.extractId)(F) : null,
                         new_fingerprint: (0, c.extractId)(t)
-                    }), x = t, F = t, T.Storage.set(U, x)) : el() : null != t && x !== t && C.default.track(D.AnalyticEvents.EXTERNAL_FINGERPRINT_DROPPED, {
+                    }), x = t, F = t, T.Storage.set(U, x)) : ed() : null != t && x !== t && C.default.track(D.AnalyticEvents.EXTERNAL_FINGERPRINT_DROPPED, {
                         fingerprint: (0, c.extractId)(x),
                         dropped_fingerprint: (0, c.extractId)(t)
                     })
@@ -229153,20 +229332,13 @@
                     let {
                         token: t
                     } = e;
-                    j = D.RegistrationStates.NONE, r = null, e_(t), ed()
+                    j = D.RegistrationStates.NONE, r = null, eE(t), ec()
                 },
                 REGISTER_FAILURE: function(e) {
                     let {
                         error: t
                     } = e;
-                    en = function(e) {
-                        let t = {};
-                        if (t.error_code = e.code, null != e.errors) {
-                            for (let n of Object.keys(e.errors)) t[n] = [e.getFirstFieldErrorMessage(n)];
-                            return t
-                        }
-                        return t.message = e.message, null != e.retryAfter && (t.retry_after = e.retryAfter), t
-                    }(t), j = null != t.getFieldErrors("date_of_birth") ? D.RegistrationStates.REGISTER_AGE_GATE : D.RegistrationStates.REGISTER_WITH_ERROR
+                    en = el(t), j = null != t.getFieldErrors("date_of_birth") ? D.RegistrationStates.REGISTER_AGE_GATE : D.RegistrationStates.REGISTER_WITH_ERROR
                 },
                 VERIFY_FAILURE: function(e) {
                     let {
@@ -229192,21 +229364,30 @@
                         token: t,
                         userId: n
                     } = e;
-                    eo("handleUpdateToken called"), e_(t, n), ed()
+                    eu("handleUpdateToken called"), eE(t, n), ec()
                 },
-                EXPERIMENTS_FETCH: eu,
+                EXPERIMENTS_FETCH: e_,
                 CURRENT_USER_UPDATE: function(e) {
                     let {
                         user: t
                     } = e;
                     w = t.id, k = t.email, void 0 !== t.authenticator_types && (K = t.authenticator_types), T.Storage.set(b, t.email), T.Storage.set(G, t.id)
                 },
-                AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eE,
+                AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eT,
                 CLEAR_AUTHENTICATION_ERRORS: function() {
                     en = {}
                 },
                 CLOSE_SUSPENDED_USER: function() {
-                    ea = null, Y = D.LoginStates.NONE, eI(), setImmediate(() => (0, p.transitionTo)(D.Routes.DEFAULT_LOGGED_OUT))
+                    ea = null, Y = D.LoginStates.NONE, ef(), setImmediate(() => (0, p.transitionTo)(D.Routes.DEFAULT_LOGGED_OUT))
+                },
+                PASSWORDLESS_FAILURE: function(e) {
+                    let {
+                        error: t
+                    } = e;
+                    z = "", Z = !1, X = null, eo = !1, Y = null != (en = el(t)).date_of_birth ? D.LoginStates.LOGIN_AGE_GATE : D.LoginStates.NONE
+                },
+                PASSWORDLESS_START: function() {
+                    en = {}, eo = !0
                 }
             }, f.DispatchBand.Early)
         },
@@ -250566,7 +250747,7 @@
                 z = "",
                 Z = new Set,
                 X = !1,
-                Q = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_MFA_FAILURE", "LOGIN_MFA_SMS", "LOGIN_MFA_SMS_REQUEST_SUCCESS", "LOGIN_MFA_SMS_FAILURE", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "REGISTER_FAILURE", "VERIFY_FAILURE", "VERIFY_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "CHANNEL_SETTINGS_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "MENTION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "SEARCH_MODAL_OPEN", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "MENTION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "SEARCH_MODAL_CLOSE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_OPEN", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_START", "SEARCH_FINISH", "MOD_VIEW_SEARCH_FINISH", "SEARCH_INDEXING", "SEARCH_CLEAR", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_CLEAR_HISTORY", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "GUILD_FEED_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED"]),
+                Q = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_MFA_FAILURE", "LOGIN_MFA_SMS", "LOGIN_MFA_SMS_REQUEST_SUCCESS", "LOGIN_MFA_SMS_FAILURE", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "REGISTER_FAILURE", "VERIFY_FAILURE", "VERIFY_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "PASSWORDLESS_START", "PASSWORDLESS_FAILURE", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "CHANNEL_SETTINGS_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "MENTION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "SEARCH_MODAL_OPEN", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "MENTION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "SEARCH_MODAL_CLOSE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_OPEN", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_START", "SEARCH_FINISH", "MOD_VIEW_SEARCH_FINISH", "SEARCH_INDEXING", "SEARCH_CLEAR", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_CLEAR_HISTORY", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "GUILD_FEED_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED"]),
                 q = new Set,
                 J = new p.default("OverlayBridgeStore"),
                 $ = "none",
@@ -251035,7 +251216,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b893b2b977a7487f25cc6e3c4291a8de73456131"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ea1c0786a763fbf136a81fd8e59fca1a37de6b52"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280134,7 +280315,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297405"
+                                build_number: "297409"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287030,7 +287211,7 @@
                 NetworkActionNames: function() {
                     return r
                 }
-            }), (s = i || (i = {})).ACTIVITIES = "impression_activities", s.ACTIVITIES_HAPPENING_NOW = "impression_activities_happening_now", s.ACTIVITY_BOOKMARK_SHARE_MODAL = "impression_activity_bookmark_share_modal", s.ACTIVITY_BOOSTING_UPSELL = "impression_activity_boosting_upsell", s.ACTIVITY_DETAILS = "impression_activity_details", s.ACTIVITY_NITRO_UPSELL = "impression_activity_nitro_upsell", s.ACTIVITY_SHARE_MOMENT_MODAL = "impression_activity_share_moment_modal", s.ACTIVITY_SHELF = "impression_activity_shelf", s.ACTIVITY_SHELF_SELECT_CHANNEL = "impression_activity_shelf_select_channel", s.APP_LAUNCHER_HOME_ACTIVITY_ITEM = "impression_app_launcher_home_activity_item", s.APP_LAUNCHER_SEARCH_RESULTS_ITEM = "impression_app_launcher_search_results_item", s.APP_LAUNCHER_SECTION = "impression_app_launcher_section", s.APPLICATION_LIBRARY = "impression_application_library", s.APPLICATION_STORE = "impression_application_store", s.APRIL_PREMIUM_MARKETING_DECO_CLAIMED_MODAL = "impression_april_premium_marketing_deco_claimed_modal", s.AVATAR_UPLOAD = "impression_avatar_upload", s.CHANNEL_ADD_INFO = "impression_channel_add_info", s.CHANNEL_ADD_MEMBERS = "impression_channel_add_members", s.CHANNEL_CALL_VIDEO_GRID = "impression_channel_call_video_grid", s.CHANNEL_CALL_VIDEO_GRID_VIEW = "impression_channel_call_video_grid_view", s.CHANNEL_VIEWED = "impression_channel_viewed", s.CLIP_EDITOR_VIEWED = "impression_clip_editor_viewed", s.CLIP_GALLERY_VIEWED = "impression_clip_gallery_viewed", s.CLYDE_AI_PROFILE_EMBED_VIEWED = "impression_clyde_ai_profile_embed_viewed", s.CONTACT_SYNC_CONTACT_INVITES = "impression_contact_sync_contact_invites", s.CONTACT_SYNC_INPUT_NAME = "impression_contact_sync_input_name", s.CONTACT_SYNC_START = "impression_contact_sync_start", s.CONTACT_SYNC_SUGGESTIONS = "impression_contact_sync_suggestions", s.CREATOR_PROMO_PAGE_GUILD_HEADER_UPSELL = "impression_creator_promo_page_guild_header_upsell", s.DIRECTORY_ADD_GUILD_CONFIRMATION = "impression_directory_add_guild_confirmation", s.DISCOVERABILITY = "impression_discoverability", s.DROPS_QUEST_COMPLETION = "impression_drops_quest_completion", s.DROPS_QUEST_ENROLLMENT = "impression_drops_quest_enrollment", s.EMBEDDED_ACTIVITY_HAPPENING_NOW = "impression_embedded_activity_happening_now", s.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING = "impression_enable_creator_monetization_accept_terms_landing", s.ENABLE_CREATOR_MONETIZATION_CREATE_REQUEST_LANDING = "impression_enable_creator_monetization_create_request_landing", s.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL = "impression_enable_creator_monetization_guild_header_upsell", s.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING = "impression_enable_creator_monetization_waitlist_landing", s.FRIENDS = "impression_friends", s.GAME_CONSOLE_DEVICE_LIST = "impression_game_console_device_list", s.GDM_SETTINGS_INVITES = "impression_gdm_settings_invites", s.GUILD_ADD_ACCEPT_INVITE = "impression_guild_add_accept_invite", s.GUILD_ADD_CHANNEL_PROMPT = "impression_guild_add_channel_prompt", s.GUILD_ADD_CUSTOMIZE = "impression_guild_add_customize", s.GUILD_ADD_GUILD_INVITE = "impression_guild_add_guild_invite", s.GUILD_ADD_INTENT_SELECTION = "impression_guild_add_intent_selection", s.GUILD_ADD_JOIN = "impression_guild_add_join", s.GUILD_CREATE_MODAL_JOIN = "impression_guild_create_modal_join", s.GUILD_ADD_LANDING = "impression_guild_add_landing", s.GUILD_CHANNEL = "impression_guild_channel", s.GUILD_DISCOVERY = "impression_guild_discovery", s.GUILD_INVITE = "impression_guild_invite", s.GUILD_INVITE_LINK_SETTINGS = "impression_guild_invite_link_settings", s.GUILD_INVITE_SEARCH = "impression_guild_invite_search", s.GUILD_MEMBER_VERIFICATION = "impression_guild_member_verification", s.GUILD_PERMANENT_LINKS_UPSELL = "impression_guild_permanent_links_upsell", s.GUILD_PRODUCT_LISTING_EMBED = "impression_guild_product_listing_embed", s.GUILD_PRODUCT_LISTING_INFO_MODAL = "impression_guild_product_listing_info_modal", s.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS = "impression_guild_role_subscription_store_page_guild_settings", s.GUILD_SETTINGS_ANALYTICS = "impression_guild_settings_analytics", s.GUILD_SETTINGS_AUDIT_LOG = "impression_guild_settings_audit_log", s.GUILD_SETTINGS_AUDIT_LOG_V2 = "impression_guild_settings_audit_log_v2", s.GUILD_SETTINGS_BANS = "impression_guild_settings_bans", s.GUILD_SETTINGS_BOOST_STATUS = "impression_guild_settings_boost_status", s.GUILD_SETTINGS_CHANNELS = "impression_guild_settings_channels", s.GUILD_SETTINGS_CLYDE = "impression_guild_settings_clyde", s.GUILD_SETTINGS_COMMUNITY_OVERVIEW = "impression_guild_settings_community_overview", s.GUILD_SETTINGS_COMMUNITY_WELCOME = "impression_guild_settings_community_welcome", s.GUILD_SETTINGS_DISCOVERY = "impression_guild_settings_discovery", s.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE = "impression_guild_settings_discovery_landing_page", s.GUILD_SETTINGS_EMOJI = "impression_guild_settings_emoji", s.GUILD_SETTINGS_ENABLE_COMMUNITY = "impression_guild_settings_enable_community", s.GUILD_SETTINGS_INTEGRATION = "impression_guild_settings_integration", s.GUILD_SETTINGS_INVITES = "impression_guild_settings_invites", s.GUILD_SETTINGS_LANDING = "impression_guild_settings_landing", s.GUILD_SETTINGS_MEMBER_VERIFICATION = "impression_guild_settings_member_verification", s.GUILD_SETTINGS_MEMBERS = "impression_guild_settings_members", s.GUILD_SETTINGS_MODERATION = "impression_guild_settings_moderation", s.GUILD_SETTINGS_OVERVIEW = "impression_guild_settings_overview", s.GUILD_SETTINGS_PARTNER = "impression_guild_settings_partner", s.GUILD_SETTINGS_ROLES = "impression_guild_settings_roles", s.GUILD_SETTINGS_SAFETY = "impression_guild_settings_safety", s.GUILD_SETTINGS_SECURITY = "impression_guild_settings_security", s.GUILD_SETTINGS_SOUNDBOARD = "impression_guild_settings_soundboard", s.GUILD_SETTINGS_STICKERS = "impression_guild_settings_stickers", s.GUILD_SETTINGS_TEMPLATE = "impression_guild_settings_template", s.GUILD_SETTINGS_VANITY_URL = "impression_guild_settings_vanity_url", s.GUILD_SETTINGS_WEBHOOKS = "impression_guild_settings_webhooks", s.GUILD_SETTINGS_WIDGET = "impression_guild_settings_widget", s.GUILD_SHOP_EMBED = "impression_guild_shop_embed", s.GUILD_SHOP_PAGE = "impression_guild_shop_page", s.GUILD_SHOP_UPSELL = "impression_guild_shop_upsell", s.GUILD_TRANSFER_OWNERSHIP = "impression_guild_transfer_ownership", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE = "impression_guild_transfer_ownership_confirm_email_code", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_SMS_CODE = "impression_guild_transfer_ownership_confirm_sms_code", s.GUILDS_EMPTY_NUX = "impression_guilds_empty_nux", s.HOTSPOT = "impression_hotspot", s.HUB_CREATE_GUILD_CUSTOMIZE = "impression_hub_create_guild_customize", s.HUB_CREATE_GUILD_TEMPLATE = "impression_hub_create_guild_template", s.HUB_EMAIL_SIGNUP = "impression_hub_email_signup", s.HUB_EMAIL_VERIFICATION_PAGE = "impression_hub_email_verification_page", s.HUB_EXISTING_GUILD_CHOOSE = "impression_hub_existing_guild_choose", s.HUB_EXISTING_GUILD_CUSTOMIZE = "impression_hub_existing_guild_customize", s.HUB_WAITLIST_SIGNUP = "impression_hub_waitlist_signup", s.INVITE_ACCEPT = "impression_invite_accept", s.LOCALIZED_PRICING_UPSELL_VIEWED = "impression_localized_pricing_upsell_viewed", s.MESSAGES_EMPTY_NUX = "impression_messages_empty_nux", s.MULTI_ACCOUNT_SWITCH_LANDING = "impression_multi_account_switch_landing", s.NEW_USER_INTENT_START = "impression_new_user_intent_start", s.NITRO_TAB = "impression_nitro_tab", s.NOTIFICATION_CENTER_LANDING = "impression_notification_center_landing", s.NOTIFICATION_SETTING_UNREAD_NUDGE = "impression_notification_setting_unread_nudge", s.POLL_EDITOR_VIEWED = "impression_poll_editor_viewed", s.POMELO_LANDING = "impression_pomelo_landing", s.PREMIUM_GUILD_SUBSCRIPTION_MARKETING_PAGE = "impression_premium_guild_subscription_marketing_page", s.PREMIUM_MARKETING_BANNER = "impression_premium_marketing_banner", s.PREMIUM_MARKETING_SURFACE = "impression_premium_marketing_surface", s.PREMIUM_MARKETING_TENURE_REWARD_CARD = "impression_premium_marketing_tenure_reward_card", s.PUSH_NOTIFICATION_PREPROMPT = "impression_push_notification_preprompt", s.PUSH_NOTIFICATION_REACTIVATION_PROMPT = "impression_push_notification_reactivation_prompt", s.QUESTS_LANDING_PAGE = "impression_quests_landing_page", s.REQUEST_REVIEW_MODAL = "impression_request_review_modal", s.ROLE_CREATE_ADD_MEMBERS = "impression_role_create_add_members", s.ROLE_CREATE_DISPLAY = "impression_role_create_display", s.ROLE_CREATE_PERMISSIONS = "impression_role_create_permissions", s.ROLE_SUBSCRIPTION_EMOJI_UPSELL = "impression_role_subscription_emoji_upsell", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING = "impression_role_subscription_initial_setup_modal_landing", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP = "impression_role_subscription_initial_setup_modal_tier_step", s.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR = "impression_role_subscription_listing_template_selector", s.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE = "impression_role_subscription_listing_upsell_error_page", s.SHELF_ACTIVITY_DETAILS = "impression_shelf_activity_details", s.SNOWSGIVING = "impression_snowsgiving", s.SOUNDBOARD_POPOUT = "impression_soundboard_popout", s.STAGE_DISCOVERY = "impression_stage_discovery", s.URF_CONFIRM_EMAIL_CODE = "impression_urf_confirm_email_code", s.URF_ENTER_EMAIL = "impression_urf_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_COMPLETE = "impression_user_account_email_change_complete", s.USER_ACCOUNT_EMAIL_CHANGE_ENTER_EMAIL = "impression_user_account_email_change_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "impression_user_account_email_change_send_code", s.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "impression_user_account_email_change_verify_code", s.USER_ACCOUNT_EMAIL_RESEND_VERIFICATION_EMAIL = "impression_user_account_email_resend_verification_email", s.USER_ACCOUNT_PASSWORD_VERIFY = "impression_user_account_password_verify", s.USER_ACTION_REQUIRED = "impression_user_action_required", s.USER_ADD_PHONE = "impression_user_add_phone", s.USER_AGE_GATE = "impression_user_age_gate", s.USER_AGE_GATE_UNDERAGE = "impression_user_age_gate_underage", s.USER_AGREEMENTS = "impression_user_agreements", s.USER_CLYDE_AI_CONSENT_MODAL = "impression_user_clyde_ai_consent_modal", s.USER_LOGIN = "impression_user_login", s.USER_PASSWORDLESS_CODE_ENTRY = "impression_user_passwordless_code_entry", s.USER_PASSWORDLESS_INTRO = "impression_user_passwordless_intro", s.USER_REGISTER_ACCOUNT_INFORMATION = "impression_user_register_account_information", s.USER_REGISTER_IDENTITY = "impression_user_register_identity", s.USER_REGISTRATION = "impression_user_registration", s.USER_SETTINGS_CONNECTIONS = "impression_user_settings_connections", s.USER_VERIFICATION_MODAL = "impression_user_verification_modal", s.USER_VERIFY_PASSWORD = "impression_user_verify_password", s.USER_VERIFY_PHONE = "impression_user_verify_phone", s.USER_WELCOME = "impression_user_welcome", s.USER_YOU_SCREEN = "impression_user_you_screen", s.VIEW_PANEL_DEVTOOLS = "impression_view_panel_devtools", (a = r || (r = {})).APPLE_JWT_TOKEN_CREATE = "network_action_apple_jwt_token_create", a.AUTH_SESSIONS_LOGGED_OUT = "network_action_auth_sessions_logged_out", a.AUTHORIZE_IP = "network_action_authorize_ip", a.AUTHORIZE_PAYMENT = "network_action_authorize_payment", a.BUG_REPORT_SUBMIT = "network_action_bug_report_submit", a.CHANNEL_CREATE = "network_action_channel_create", a.DIRECTORY_GUILD_ENTRY_CREATE = "network_action_directory_guild_entry_create", a.DIRECTORY_GUILD_ENTRY_DELETE = "network_action_directory_guild_entry_delete", a.EMAIL_SETTINGS_FETCH = "network_action_email_settings_fetch", a.EMAIL_SETTINGS_UPDATE = "network_action_email_settings_update", a.EMBEDDED_ACTIVITIES_FETCH_SHELF = "network_action_embedded_activities_fetch_shelf", a.EMBEDDED_ACTIVITIES_LAUNCH = "network_action_embedded_activities_launch", a.FORGOT_PASSWORD = "network_action_forgot_password", a.GUILD_CREATE = "network_action_guild_create", a.GUILD_TRANSFER_OWNERSHIP = "network_action_guild_transfer_ownership", a.GUILD_TRANSFER_OWNERSHIP_SEND_CODE = "network_action_guild_transfer_ownership_send_code", a.HUB_EMAIL_VERIFY = "network_action_hub_email_verify", a.HUB_EMAIL_VERIFY_SEND = "network_action_hub_email_verify_send", a.HUB_WAITLIST_SIGNUP = "network_action_hub_waitlist_signup", a.INVITE_RESOLVE = "network_action_invite_resolve", a.INVITE_REVOKE = "network_action_invite_revoke", a.LOGIN_REQUEST_SMS_TOKEN = "network_action_login_request_sms_token", a.NCMEC_REPORT_CLOSE = "network_action_ncmec_report_close", a.NCMEC_REPORTABLE_CONTENT_CREATE = "network_action_ncmec_reportable_content_create", a.NOTIFICATION_CENTER_ITEM_DELETE = "network_action_notification_center_item_delete", a.NOTIFICATION_CENTER_PAGE_FETCH = "network_action_notification_center_page_fetch", a.POMELO_ATTEMPT = "network_action_pomelo_attempt", a.POMELO_CREATE = "network_action_pomelo_create", a.QUEST_HEARTBEAT = "network_action_quest_heartbeat", a.STREAM_NOTIFY = "network_action_stream_notify", a.USER_ACCEPT_AGREEMENTS = "network_action_user_accept_agreements", a.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "network_action_user_account_email_change_send_code", a.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "network_action_user_account_email_change_verify_code", a.USER_BULK_RELATIONSHIPS_UPDATE = "network_action_user_bulk_relationships_update", a.USER_CLYDE_AI_CONSENT_UPDATED = "network_action_user_clyde_ai_consent_updated", a.USER_COMMUNICATION_DISABLED_UPDATE = "network_action_user_communication_disabled_update", a.USER_CONNECTIONS_UPDATE = "network_action_user_connections_update", a.USER_CONTACTS_SYNC = "network_action_user_contacts_sync", a.USER_LOGIN = "network_action_user_login", a.USER_LOGIN_MFA = "network_action_user_login_mfa", a.USER_LOGIN_MFA_SMS = "network_action_user_login_mfa_sms", a.USER_LOGOUT = "network_action_user_logout", a.USER_PASSWORDLESS_INFO_FETCH = "network_action_user_passwordless_info_fetch", a.USER_PASSWORDLESS_LOGIN_CODE = "network_action_user_passwordless_login_code", a.USER_REGISTER = "network_action_user_register", a.USER_REGISTER_DEVICE_TOKEN = "network_action_user_register_device_token", a.USER_REGISTER_PHONE = "network_action_user_register_phone", a.USER_RESET_PASSWORD = "network_action_user_reset_password", a.USER_SETTINGS_UPDATE = "network_action_user_settings_update", a.USER_SURVEY_FETCH = "network_action_user_survey_fetch", a.USER_SURVEY_SEEN = "network_action_user_survey_seen", a.USER_UNREGISTER_DEVICE_TOKEN = "network_action_user_unregister_device_token", a.USER_VERIFY = "network_action_user_verify", a.USER_VERIFY_PHONE = "network_action_user_verify_phone", a.USER_VERIFY_RESEND = "network_action_user_verify_resend"
+            }), (s = i || (i = {})).ACTIVITIES = "impression_activities", s.ACTIVITIES_HAPPENING_NOW = "impression_activities_happening_now", s.ACTIVITY_BOOKMARK_SHARE_MODAL = "impression_activity_bookmark_share_modal", s.ACTIVITY_BOOSTING_UPSELL = "impression_activity_boosting_upsell", s.ACTIVITY_DETAILS = "impression_activity_details", s.ACTIVITY_NITRO_UPSELL = "impression_activity_nitro_upsell", s.ACTIVITY_SHARE_MOMENT_MODAL = "impression_activity_share_moment_modal", s.ACTIVITY_SHELF = "impression_activity_shelf", s.ACTIVITY_SHELF_SELECT_CHANNEL = "impression_activity_shelf_select_channel", s.APP_LAUNCHER_HOME_ACTIVITY_ITEM = "impression_app_launcher_home_activity_item", s.APP_LAUNCHER_SEARCH_RESULTS_ITEM = "impression_app_launcher_search_results_item", s.APP_LAUNCHER_SECTION = "impression_app_launcher_section", s.APPLICATION_LIBRARY = "impression_application_library", s.APPLICATION_STORE = "impression_application_store", s.APRIL_PREMIUM_MARKETING_DECO_CLAIMED_MODAL = "impression_april_premium_marketing_deco_claimed_modal", s.AVATAR_UPLOAD = "impression_avatar_upload", s.CHANNEL_ADD_INFO = "impression_channel_add_info", s.CHANNEL_ADD_MEMBERS = "impression_channel_add_members", s.CHANNEL_CALL_VIDEO_GRID = "impression_channel_call_video_grid", s.CHANNEL_CALL_VIDEO_GRID_VIEW = "impression_channel_call_video_grid_view", s.CHANNEL_VIEWED = "impression_channel_viewed", s.CLIP_EDITOR_VIEWED = "impression_clip_editor_viewed", s.CLIP_GALLERY_VIEWED = "impression_clip_gallery_viewed", s.CLYDE_AI_PROFILE_EMBED_VIEWED = "impression_clyde_ai_profile_embed_viewed", s.CONTACT_SYNC_CONTACT_INVITES = "impression_contact_sync_contact_invites", s.CONTACT_SYNC_INPUT_NAME = "impression_contact_sync_input_name", s.CONTACT_SYNC_START = "impression_contact_sync_start", s.CONTACT_SYNC_SUGGESTIONS = "impression_contact_sync_suggestions", s.CREATOR_PROMO_PAGE_GUILD_HEADER_UPSELL = "impression_creator_promo_page_guild_header_upsell", s.DIRECTORY_ADD_GUILD_CONFIRMATION = "impression_directory_add_guild_confirmation", s.DISCOVERABILITY = "impression_discoverability", s.DROPS_QUEST_COMPLETION = "impression_drops_quest_completion", s.DROPS_QUEST_ENROLLMENT = "impression_drops_quest_enrollment", s.EMBEDDED_ACTIVITY_HAPPENING_NOW = "impression_embedded_activity_happening_now", s.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING = "impression_enable_creator_monetization_accept_terms_landing", s.ENABLE_CREATOR_MONETIZATION_CREATE_REQUEST_LANDING = "impression_enable_creator_monetization_create_request_landing", s.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL = "impression_enable_creator_monetization_guild_header_upsell", s.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING = "impression_enable_creator_monetization_waitlist_landing", s.FRIENDS = "impression_friends", s.GAME_CONSOLE_DEVICE_LIST = "impression_game_console_device_list", s.GDM_SETTINGS_INVITES = "impression_gdm_settings_invites", s.GUILD_ADD_ACCEPT_INVITE = "impression_guild_add_accept_invite", s.GUILD_ADD_CHANNEL_PROMPT = "impression_guild_add_channel_prompt", s.GUILD_ADD_CUSTOMIZE = "impression_guild_add_customize", s.GUILD_ADD_GUILD_INVITE = "impression_guild_add_guild_invite", s.GUILD_ADD_INTENT_SELECTION = "impression_guild_add_intent_selection", s.GUILD_ADD_JOIN = "impression_guild_add_join", s.GUILD_CREATE_MODAL_JOIN = "impression_guild_create_modal_join", s.GUILD_ADD_LANDING = "impression_guild_add_landing", s.GUILD_CHANNEL = "impression_guild_channel", s.GUILD_DISCOVERY = "impression_guild_discovery", s.GUILD_INVITE = "impression_guild_invite", s.GUILD_INVITE_LINK_SETTINGS = "impression_guild_invite_link_settings", s.GUILD_INVITE_SEARCH = "impression_guild_invite_search", s.GUILD_MEMBER_VERIFICATION = "impression_guild_member_verification", s.GUILD_PERMANENT_LINKS_UPSELL = "impression_guild_permanent_links_upsell", s.GUILD_PRODUCT_LISTING_EMBED = "impression_guild_product_listing_embed", s.GUILD_PRODUCT_LISTING_INFO_MODAL = "impression_guild_product_listing_info_modal", s.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS = "impression_guild_role_subscription_store_page_guild_settings", s.GUILD_SETTINGS_ANALYTICS = "impression_guild_settings_analytics", s.GUILD_SETTINGS_AUDIT_LOG = "impression_guild_settings_audit_log", s.GUILD_SETTINGS_AUDIT_LOG_V2 = "impression_guild_settings_audit_log_v2", s.GUILD_SETTINGS_BANS = "impression_guild_settings_bans", s.GUILD_SETTINGS_BOOST_STATUS = "impression_guild_settings_boost_status", s.GUILD_SETTINGS_CHANNELS = "impression_guild_settings_channels", s.GUILD_SETTINGS_CLYDE = "impression_guild_settings_clyde", s.GUILD_SETTINGS_COMMUNITY_OVERVIEW = "impression_guild_settings_community_overview", s.GUILD_SETTINGS_COMMUNITY_WELCOME = "impression_guild_settings_community_welcome", s.GUILD_SETTINGS_DISCOVERY = "impression_guild_settings_discovery", s.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE = "impression_guild_settings_discovery_landing_page", s.GUILD_SETTINGS_EMOJI = "impression_guild_settings_emoji", s.GUILD_SETTINGS_ENABLE_COMMUNITY = "impression_guild_settings_enable_community", s.GUILD_SETTINGS_INTEGRATION = "impression_guild_settings_integration", s.GUILD_SETTINGS_INVITES = "impression_guild_settings_invites", s.GUILD_SETTINGS_LANDING = "impression_guild_settings_landing", s.GUILD_SETTINGS_MEMBER_VERIFICATION = "impression_guild_settings_member_verification", s.GUILD_SETTINGS_MEMBERS = "impression_guild_settings_members", s.GUILD_SETTINGS_MODERATION = "impression_guild_settings_moderation", s.GUILD_SETTINGS_OVERVIEW = "impression_guild_settings_overview", s.GUILD_SETTINGS_PARTNER = "impression_guild_settings_partner", s.GUILD_SETTINGS_ROLES = "impression_guild_settings_roles", s.GUILD_SETTINGS_SAFETY = "impression_guild_settings_safety", s.GUILD_SETTINGS_SECURITY = "impression_guild_settings_security", s.GUILD_SETTINGS_SOUNDBOARD = "impression_guild_settings_soundboard", s.GUILD_SETTINGS_STICKERS = "impression_guild_settings_stickers", s.GUILD_SETTINGS_TEMPLATE = "impression_guild_settings_template", s.GUILD_SETTINGS_VANITY_URL = "impression_guild_settings_vanity_url", s.GUILD_SETTINGS_WEBHOOKS = "impression_guild_settings_webhooks", s.GUILD_SETTINGS_WIDGET = "impression_guild_settings_widget", s.GUILD_SHOP_EMBED = "impression_guild_shop_embed", s.GUILD_SHOP_PAGE = "impression_guild_shop_page", s.GUILD_SHOP_UPSELL = "impression_guild_shop_upsell", s.GUILD_TRANSFER_OWNERSHIP = "impression_guild_transfer_ownership", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE = "impression_guild_transfer_ownership_confirm_email_code", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_SMS_CODE = "impression_guild_transfer_ownership_confirm_sms_code", s.GUILDS_EMPTY_NUX = "impression_guilds_empty_nux", s.HOTSPOT = "impression_hotspot", s.HUB_CREATE_GUILD_CUSTOMIZE = "impression_hub_create_guild_customize", s.HUB_CREATE_GUILD_TEMPLATE = "impression_hub_create_guild_template", s.HUB_EMAIL_SIGNUP = "impression_hub_email_signup", s.HUB_EMAIL_VERIFICATION_PAGE = "impression_hub_email_verification_page", s.HUB_EXISTING_GUILD_CHOOSE = "impression_hub_existing_guild_choose", s.HUB_EXISTING_GUILD_CUSTOMIZE = "impression_hub_existing_guild_customize", s.HUB_WAITLIST_SIGNUP = "impression_hub_waitlist_signup", s.INVITE_ACCEPT = "impression_invite_accept", s.LOCALIZED_PRICING_UPSELL_VIEWED = "impression_localized_pricing_upsell_viewed", s.MESSAGES_EMPTY_NUX = "impression_messages_empty_nux", s.MULTI_ACCOUNT_SWITCH_LANDING = "impression_multi_account_switch_landing", s.NEW_USER_INTENT_START = "impression_new_user_intent_start", s.NITRO_TAB = "impression_nitro_tab", s.NOTIFICATION_CENTER_LANDING = "impression_notification_center_landing", s.NOTIFICATION_SETTING_UNREAD_NUDGE = "impression_notification_setting_unread_nudge", s.POLL_EDITOR_VIEWED = "impression_poll_editor_viewed", s.POMELO_LANDING = "impression_pomelo_landing", s.PREMIUM_GUILD_SUBSCRIPTION_MARKETING_PAGE = "impression_premium_guild_subscription_marketing_page", s.PREMIUM_MARKETING_BANNER = "impression_premium_marketing_banner", s.PREMIUM_MARKETING_SURFACE = "impression_premium_marketing_surface", s.PREMIUM_MARKETING_TENURE_REWARD_CARD = "impression_premium_marketing_tenure_reward_card", s.PUSH_NOTIFICATION_PREPROMPT = "impression_push_notification_preprompt", s.PUSH_NOTIFICATION_REACTIVATION_PROMPT = "impression_push_notification_reactivation_prompt", s.QUESTS_LANDING_PAGE = "impression_quests_landing_page", s.REQUEST_REVIEW_MODAL = "impression_request_review_modal", s.ROLE_CREATE_ADD_MEMBERS = "impression_role_create_add_members", s.ROLE_CREATE_DISPLAY = "impression_role_create_display", s.ROLE_CREATE_PERMISSIONS = "impression_role_create_permissions", s.ROLE_SUBSCRIPTION_EMOJI_UPSELL = "impression_role_subscription_emoji_upsell", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING = "impression_role_subscription_initial_setup_modal_landing", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP = "impression_role_subscription_initial_setup_modal_tier_step", s.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR = "impression_role_subscription_listing_template_selector", s.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE = "impression_role_subscription_listing_upsell_error_page", s.SHELF_ACTIVITY_DETAILS = "impression_shelf_activity_details", s.SNOWSGIVING = "impression_snowsgiving", s.SOUNDBOARD_POPOUT = "impression_soundboard_popout", s.STAGE_DISCOVERY = "impression_stage_discovery", s.URF_CONFIRM_EMAIL_CODE = "impression_urf_confirm_email_code", s.URF_ENTER_EMAIL = "impression_urf_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_COMPLETE = "impression_user_account_email_change_complete", s.USER_ACCOUNT_EMAIL_CHANGE_ENTER_EMAIL = "impression_user_account_email_change_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "impression_user_account_email_change_send_code", s.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "impression_user_account_email_change_verify_code", s.USER_ACCOUNT_EMAIL_RESEND_VERIFICATION_EMAIL = "impression_user_account_email_resend_verification_email", s.USER_ACCOUNT_PASSWORD_VERIFY = "impression_user_account_password_verify", s.USER_ACTION_REQUIRED = "impression_user_action_required", s.USER_ADD_PHONE = "impression_user_add_phone", s.USER_AGE_GATE = "impression_user_age_gate", s.USER_AGE_GATE_UNDERAGE = "impression_user_age_gate_underage", s.USER_AGREEMENTS = "impression_user_agreements", s.USER_CLYDE_AI_CONSENT_MODAL = "impression_user_clyde_ai_consent_modal", s.USER_LOGIN = "impression_user_login", s.USER_PASSWORDLESS_CODE_ENTRY = "impression_user_passwordless_code_entry", s.USER_PASSWORDLESS_INTRO = "impression_user_passwordless_intro", s.USER_REGISTER_ACCOUNT_INFORMATION = "impression_user_register_account_information", s.USER_REGISTER_IDENTITY = "impression_user_register_identity", s.USER_REGISTRATION = "impression_user_registration", s.USER_SETTINGS_CONNECTIONS = "impression_user_settings_connections", s.USER_VERIFICATION_MODAL = "impression_user_verification_modal", s.USER_VERIFY_PASSWORD = "impression_user_verify_password", s.USER_VERIFY_PHONE = "impression_user_verify_phone", s.USER_WELCOME = "impression_user_welcome", s.USER_YOU_SCREEN = "impression_user_you_screen", s.VIEW_PANEL_DEVTOOLS = "impression_view_panel_devtools", (a = r || (r = {})).APPLE_JWT_TOKEN_CREATE = "network_action_apple_jwt_token_create", a.AUTH_SESSIONS_LOGGED_OUT = "network_action_auth_sessions_logged_out", a.AUTHORIZE_IP = "network_action_authorize_ip", a.AUTHORIZE_PAYMENT = "network_action_authorize_payment", a.BUG_REPORT_SUBMIT = "network_action_bug_report_submit", a.CHANNEL_CREATE = "network_action_channel_create", a.DIRECTORY_GUILD_ENTRY_CREATE = "network_action_directory_guild_entry_create", a.DIRECTORY_GUILD_ENTRY_DELETE = "network_action_directory_guild_entry_delete", a.EMAIL_SETTINGS_FETCH = "network_action_email_settings_fetch", a.EMAIL_SETTINGS_UPDATE = "network_action_email_settings_update", a.EMBEDDED_ACTIVITIES_FETCH_SHELF = "network_action_embedded_activities_fetch_shelf", a.EMBEDDED_ACTIVITIES_LAUNCH = "network_action_embedded_activities_launch", a.FORGOT_PASSWORD = "network_action_forgot_password", a.GUILD_CREATE = "network_action_guild_create", a.GUILD_TRANSFER_OWNERSHIP = "network_action_guild_transfer_ownership", a.GUILD_TRANSFER_OWNERSHIP_SEND_CODE = "network_action_guild_transfer_ownership_send_code", a.HUB_EMAIL_VERIFY = "network_action_hub_email_verify", a.HUB_EMAIL_VERIFY_SEND = "network_action_hub_email_verify_send", a.HUB_WAITLIST_SIGNUP = "network_action_hub_waitlist_signup", a.INVITE_RESOLVE = "network_action_invite_resolve", a.INVITE_REVOKE = "network_action_invite_revoke", a.LOGIN_REQUEST_SMS_TOKEN = "network_action_login_request_sms_token", a.NCMEC_REPORT_CLOSE = "network_action_ncmec_report_close", a.NCMEC_REPORTABLE_CONTENT_CREATE = "network_action_ncmec_reportable_content_create", a.NOTIFICATION_CENTER_ITEM_DELETE = "network_action_notification_center_item_delete", a.NOTIFICATION_CENTER_PAGE_FETCH = "network_action_notification_center_page_fetch", a.POMELO_ATTEMPT = "network_action_pomelo_attempt", a.POMELO_CREATE = "network_action_pomelo_create", a.QUEST_HEARTBEAT = "network_action_quest_heartbeat", a.STREAM_NOTIFY = "network_action_stream_notify", a.USER_ACCEPT_AGREEMENTS = "network_action_user_accept_agreements", a.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "network_action_user_account_email_change_send_code", a.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "network_action_user_account_email_change_verify_code", a.USER_BULK_RELATIONSHIPS_UPDATE = "network_action_user_bulk_relationships_update", a.USER_CLYDE_AI_CONSENT_UPDATED = "network_action_user_clyde_ai_consent_updated", a.USER_COMMUNICATION_DISABLED_UPDATE = "network_action_user_communication_disabled_update", a.USER_CONNECTIONS_UPDATE = "network_action_user_connections_update", a.USER_CONTACTS_SYNC = "network_action_user_contacts_sync", a.USER_LOGIN = "network_action_user_login", a.USER_LOGIN_MFA = "network_action_user_login_mfa", a.USER_LOGIN_MFA_SMS = "network_action_user_login_mfa_sms", a.USER_LOGIN_PASSWORDLESS = "network_action_user_login_passwordless", a.USER_LOGOUT = "network_action_user_logout", a.USER_PASSWORDLESS_INFO_FETCH = "network_action_user_passwordless_info_fetch", a.USER_PASSWORDLESS_LOGIN_CODE = "network_action_user_passwordless_login_code", a.USER_REGISTER = "network_action_user_register", a.USER_REGISTER_DEVICE_TOKEN = "network_action_user_register_device_token", a.USER_REGISTER_PHONE = "network_action_user_register_phone", a.USER_RESET_PASSWORD = "network_action_user_reset_password", a.USER_SETTINGS_UPDATE = "network_action_user_settings_update", a.USER_SURVEY_FETCH = "network_action_user_survey_fetch", a.USER_SURVEY_SEEN = "network_action_user_survey_seen", a.USER_UNREGISTER_DEVICE_TOKEN = "network_action_user_unregister_device_token", a.USER_VERIFY = "network_action_user_verify", a.USER_VERIFY_PHONE = "network_action_user_verify_phone", a.USER_VERIFY_RESEND = "network_action_user_verify_resend"
         },
         979675: function(e, t, n) {
             "use strict";
@@ -287443,7 +287624,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297405", "297405"), 10);
+                let s = parseInt((n = "297409", "297409"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315260,4 +315441,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.43e262c9f9fa3d34c4ef.js.map
+//# sourceMappingURL=27519.92e6dd53d64c0a96ab3f.js.map
