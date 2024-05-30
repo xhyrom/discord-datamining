@@ -9,7 +9,8 @@
       "Treatment 1: Shy",
       "Treatment 2: Lofi Vibes",
       "Treatment 3: Galaxy",
-      "Treatment 4: Retro & Pirates"
+      "Treatment 4: Retro & Pirates",
+      "Treatment 5: Arcade"
     ],
     "hash": 3087218047,
     "buckets": [
@@ -18,7 +19,8 @@
       1,
       2,
       3,
-      4
+      4,
+      5
     ],
     "holdout": {},
     "aa_mode": false,
