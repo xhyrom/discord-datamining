@@ -98599,9 +98599,9 @@ div.content_aac020 {
 
 .overflowImage_b382c8 {
     position: absolute;
-    bottom: 24px;
-    right: 20px;
-    height: 336px;
+    bottom: 0;
+    right: 0;
+    height: 356px;
     pointer-events: none
 }
 
@@ -142115,4 +142115,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d5ed50c8b7fc7e265912.css.map*/
+/*# sourceMappingURL=99387.0acee880f2176d7300a5.css.map*/
