@@ -15984,19 +15984,20 @@ h3.improved_e02592:after {
 }
 
 .clanTagChiplet__39677 {
-    margin-right: 0
+    margin-right: 0;
+    margin-left: 4px
 }
 
 .compact_eda3c8 .clanTagChiplet__39677 {
-    line-height: 0 !important;
     display: inline;
     background: transparent;
-    padding: 0
+    padding: 0;
+    vertical-align: baseline
 }
 
 .compact_eda3c8 .clanTagChiplet__39677>span {
     background: var(--bg-mod-strong);
-    padding: 1px 4px;
+    padding: 1px 4px 0;
     border-radius: 4px
 }
 
@@ -16021,16 +16022,25 @@ h3.improved_e02592:after {
 }
 
 .repliedMessage__636d2 .username__0b0e7,
+.repliedMessage__636d2 .clanTagChiplet__39677,
 .repliedMessage__636d2 .roleDot_f86e49,
 .executedCommand__4fb1a .username__0b0e7,
+.executedCommand__4fb1a .clanTagChiplet__39677,
 .executedCommand__4fb1a .applicationName_d60e66,
 .executedCommand__4fb1a .commandName_fd97e7,
-.threadMessageAccessory_ef0459 .username__0b0e7 {
+.threadMessageAccessory_ef0459 .username__0b0e7,
+.threadMessageAccessory_ef0459 .clanTagChiplet__39677 {
     flex-shrink: 0;
     font-size: inherit;
     line-height: inherit;
     margin-right: var(--custom-message-meta-space);
     opacity: .64
+}
+
+.repliedMessage__636d2 .clanTagChiplet__39677,
+.executedCommand__4fb1a .clanTagChiplet__39677,
+.threadMessageAccessory_ef0459 .clanTagChiplet__39677 {
+    margin-left: 0
 }
 
 .executedCommand__4fb1a .username__0b0e7,
@@ -27437,4 +27447,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.48d275c377d3d6b05c86.css.map*/
+/*# sourceMappingURL=49237.46658cba45536161dba6.css.map*/
