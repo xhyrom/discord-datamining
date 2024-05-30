@@ -37018,7 +37018,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297371", ", Version Hash: ").concat("fa5dc10652ae5588ce4496821b1a7404b226d4a7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297374", ", Version Hash: ").concat("ee585fc39ec0459de58ab8fd1505ec6807e8fc8b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56200,6 +56200,7 @@
                 CLAN_APPLICATION_RATE_LIMITED_BUTTON: "Enter the chill zone",
                 CLAN_APPLICATION_MISSING_PERMISSION: "You don't have permission to join this Guild",
                 CLAN_BADGE: "Badge",
+                CLAN_BADGE_ALT: " [{tag}]",
                 CLAN_BADGE_COLORS: "Badge Colors",
                 CLAN_TAG_VALIDATION_RULES: "Max 4 characters",
                 CLAN_LOOK_BRAND_COLOR: "Brand Color",
@@ -88600,8 +88601,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297371", "297371"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297371")), t = 0), t
+                let t = parseInt((e = "297374", "297374"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297374")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -104787,15 +104788,18 @@
             let m = r.memo(function(e) {
                     let {
                         src: t,
-                        className: n,
-                        size: r = S.ClanTagBadgeSize.SIZE_16
+                        tag: n,
+                        className: r,
+                        size: s = S.ClanTagBadgeSize.SIZE_16
                     } = e;
                     return null == t ? null : (0, i.jsx)("img", {
                         src: t,
-                        alt: h.default.Messages.CLAN_BADGE,
-                        className: a()(A.badge, n),
-                        width: r,
-                        height: r
+                        alt: h.default.Messages.CLAN_BADGE_ALT.format({
+                            tag: n
+                        }),
+                        className: a()(A.badge, r),
+                        width: s,
+                        height: s
                     })
                 }),
                 N = r.memo(function(e) {
@@ -104824,10 +104828,14 @@
                             tag: "span",
                             className: a()(A.text, s),
                             children: [null != n && "string" == typeof n ? (0, i.jsx)(m, {
+                                tag: null == t ? void 0 : t.toString(),
                                 src: n,
                                 size: E,
                                 className: o
-                            }) : n, t]
+                            }) : n, (0, i.jsx)("span", {
+                                className: A.unselectable,
+                                children: t
+                            })]
                         })
                     }) : null
                 }),
@@ -116652,8 +116660,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297371",
-                    versionHash: "fa5dc10652ae5588ce4496821b1a7404b226d4a7"
+                    buildNumber: "297374",
+                    versionHash: "ee585fc39ec0459de58ab8fd1505ec6807e8fc8b"
                 }
             }
             n.r(t), n.d(t, {
@@ -173965,8 +173973,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717076733722",
-                                    build_number: "297371"
+                                    built_at: "1717081047429",
+                                    build_number: "297374"
                                 }
                             },
                             retries: 1
@@ -251019,7 +251027,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fa5dc10652ae5588ce4496821b1a7404b226d4a7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ee585fc39ec0459de58ab8fd1505ec6807e8fc8b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271529,41 +271537,39 @@
                     {
                         analyticsLocations: G
                     } = (0, I.default)(E.default.USERNAME),
-                    w = m ? "@" : "",
                     {
-                        nick: k,
-                        colorString: B,
-                        colorRoleName: V
+                        nick: w,
+                        colorString: k,
+                        colorRoleName: B
                     } = n,
-                    x = null != i.messageReference && null != i.webhookId,
-                    F = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
-                    H = (0, h.useCanSeeRemixBadge)(),
-                    Y = a.useMemo(() => ({
+                    V = null != i.messageReference && null != i.webhookId,
+                    x = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
+                    F = (0, h.useCanSeeRemixBadge)(),
+                    H = a.useMemo(() => ({
                         source: O.AnalyticsSections.CHANNEL,
                         messageId: i.id,
                         tagUserId: i.author.id
                     }), [i.id, i.author.id]),
-                    j = {
+                    Y = {
                         className: C.username,
-                        style: "username" === F && null != B ? {
-                            color: B
+                        style: "username" === x && null != k ? {
+                            color: k
                         } : void 0,
                         onClick: v,
                         onContextMenu: D,
-                        children: o ? (0, s.jsxs)(s.Fragment, {
-                            children: [w + k, (0, s.jsx)(T.default, {
-                                clan: n.clan,
-                                userId: i.author.id,
-                                contextGuildId: b,
-                                className: C.clanTagChiplet,
-                                profileViewedAnalytics: Y
-                            })]
-                        }) : (0, s.jsx)(s.Fragment, {
-                            children: w + k
+                        children: (0, s.jsx)(s.Fragment, {
+                            children: (m ? "@" : "") + w
                         })
-                    };
+                    },
+                    j = a.useMemo(() => o ? (0, s.jsx)(T.default, {
+                        clan: n.clan,
+                        userId: i.author.id,
+                        contextGuildId: b,
+                        className: C.clanTagChiplet,
+                        profileViewedAnalytics: H
+                    }) : null, [o, H, n.clan, b, i.author.id]);
                 t = null != y && null != g ? (0, s.jsx)(_.Popout, {
-                    preload: x ? void 0 : function() {
+                    preload: V ? void 0 : function() {
                         let e = null != r ? r : i.author;
                         return (0, A.maybeFetchUserProfileForPopout)(e.id, null != n.guildMemberAvatar && null != b ? (0, N.getGuildMemberAvatarURLSimple)({
                             guildId: b,
@@ -271584,16 +271590,20 @@
                             onClick: t,
                             ...n
                         } = e;
-                        return (0, s.jsx)(_.Clickable, {
-                            tag: "span",
-                            ...n,
-                            ...j,
-                            className: l()(j.className, C.clickable, L)
+                        return (0, s.jsxs)(s.Fragment, {
+                            children: [(0, s.jsx)(_.Clickable, {
+                                tag: "span",
+                                ...n,
+                                ...Y,
+                                className: l()(Y.className, C.clickable, L)
+                            }), j]
                         })
                     }
-                }) : (0, s.jsx)(_.Clickable, {
-                    ...j,
-                    className: l()(j.className, L)
+                }) : (0, s.jsxs)(s.Fragment, {
+                    children: [(0, s.jsx)(_.Clickable, {
+                        ...Y,
+                        className: l()(Y.className, L)
+                    }), j]
                 });
                 let W = null != U ? U[0] : null,
                     K = null != U ? U[1] : null;
@@ -271601,9 +271611,9 @@
                     value: G,
                     children: [null != W && o ? (0, s.jsxs)(s.Fragment, {
                         children: [" ", W, " "]
-                    }) : null, "dot" === F ? (0, s.jsx)(_.RoleDot, {
-                        color: B,
-                        name: V,
+                    }) : null, "dot" === x ? (0, s.jsx)(_.RoleDot, {
+                        color: k,
+                        name: B,
                         className: C.roleDot
                     }) : null, t, !o && (0, s.jsxs)(s.Fragment, {
                         children: [(0, s.jsx)(T.default, {
@@ -271611,13 +271621,13 @@
                             userId: i.author.id,
                             contextGuildId: b,
                             className: C.clanTagChiplet,
-                            profileViewedAnalytics: Y
+                            profileViewedAnalytics: H
                         }), (0, s.jsx)(p.default, {
                             message: i
                         })]
                     }), null != K ? (0, s.jsx)(s.Fragment, {
                         children: K
-                    }) : null, null == W || o ? null : W, null != i && (0, S.default)(i) && H && P ? (0, s.jsx)(R, {}) : null]
+                    }) : null, null == W || o ? null : W, null != i && (0, S.default)(i) && F && P ? (0, s.jsx)(R, {}) : null]
                 })
             }(i = r || (r = {}))[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES"
         },
@@ -280112,7 +280122,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297371"
+                                build_number: "297374"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287421,7 +287431,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297371", "297371"), 10);
+                let s = parseInt((n = "297374", "297374"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315238,4 +315248,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.ebbc1039dcadd0048eba.js.map
+//# sourceMappingURL=27519.26e65f1f2f87fc4ce902.js.map

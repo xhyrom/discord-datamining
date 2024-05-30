@@ -943,6 +943,7 @@
                 activityText: "activityText__56d3b",
                 avatarWithText: "avatarWithText__3fb83",
                 channel: "channel__0aef5",
+                clanTag: "clanTag__50ee5",
                 closeButton: "closeButton__116c3",
                 closeIcon: "closeIcon__2816e",
                 decorator: "decorator__2a8bf",
@@ -5101,7 +5102,8 @@
                 noTooltip: "noTooltip_e2f660",
                 text: "text_c2b2cb",
                 tooltip: "tooltip_a9f8fc",
-                tooltipContainer: "tooltipContainer_d9b1ea"
+                tooltipContainer: "tooltipContainer_d9b1ea",
+                unselectable: "unselectable__20cc6"
             }
         },
         838373: function(e) {
