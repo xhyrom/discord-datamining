@@ -16151,10 +16151,16 @@ h3.improved_e02592:after {
     padding-right: 2px
 }
 
-.repliedTextContentIcon_da8b30,
-.threadMessageAccessoryContentIcon_af7460 {
+.repliedTextContentTrailingIcon__8ab89,
+.threadMessageAccessoryContentTrailingIcon_a99048 {
     flex: 0 0 auto;
     margin-left: 4px
+}
+
+.repliedTextContentLeadingIcon_e42c38,
+.threadMessageAccessoryContentLeadingIcon__7b9a1 {
+    flex: 0 0 auto;
+    margin-right: 4px
 }
 
 .compact_eda3c8 .contents_d3ae0d {
@@ -27447,4 +27453,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.46658cba45536161dba6.css.map*/
+/*# sourceMappingURL=49237.55258b946debc18b7fca.css.map*/
