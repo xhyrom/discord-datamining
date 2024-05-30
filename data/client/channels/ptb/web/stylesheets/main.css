@@ -58589,17 +58589,48 @@ div:has(>div>.modal__06f49) {
     justify-content: flex-start
 }
 
+.progressWrapper_c99a9e {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    min-width: 80px;
+    box-sizing: border-box
+}
+
+.circularRewardTileWrapper__3e503 {
+    height: 66px;
+    width: 66px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.circularQuestRewardTileAsset__14881 {
+    height: 64px;
+    width: 64px;
+    min-width: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .questRewardTileAsset__33149 {
     height: 80px;
     width: 80px;
-    border-radius: 9.412px;
-    margin-right: 12px
+    min-width: 80px;
+    border-radius: 9.412px
 }
 
 .textContainer_fb0d3e {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 12px;
     max-height: 80px
 }
 
@@ -58770,7 +58801,7 @@ div:has(>div>.modal__06f49) {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0)75%, var(--background-tertiary)100%);
     background-position: center;
     background-size: auto;
-    z-index: 3
+    z-index: 4
 }
 
 .image_e428dc {
@@ -99120,7 +99151,7 @@ div.content_aac020 {
 .heading__1b057 {
     display: inline-flex;
     align-items: center;
-    white-space: pre-wrap
+    white-space: nowrap
 }
 
 .subscribeNow__865d0 {
@@ -142129,4 +142160,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2051b922a13c24c24731.css.map*/
+/*# sourceMappingURL=99387.1a1506fd9d915a70b300.css.map*/
