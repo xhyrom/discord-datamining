@@ -142048,6 +142048,11 @@ code {
         var(--custom-theme-background) fixed 0 0 / cover
 }
 
+[data-disable-adaptive-theme=true] {
+    --custom-theme-mix-amount-base: 0% !important;
+    --custom-theme-mix-amount-text: 0% !important
+}
+
 body,
 html,
 .appMount_c99875 {
@@ -142115,4 +142120,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0acee880f2176d7300a5.css.map*/
+/*# sourceMappingURL=99387.43261dd25cb6cf5af6b7.css.map*/
