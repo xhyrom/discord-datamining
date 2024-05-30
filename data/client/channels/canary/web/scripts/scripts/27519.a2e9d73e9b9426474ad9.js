@@ -37018,7 +37018,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297374", ", Version Hash: ").concat("ee585fc39ec0459de58ab8fd1505ec6807e8fc8b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297382", ", Version Hash: ").concat("8b7d490c0a80057935d97aadc07157e6aec1304b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88601,8 +88601,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297374", "297374"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297374")), t = 0), t
+                let t = parseInt((e = "297382", "297382"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297382")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116660,8 +116660,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297374",
-                    versionHash: "ee585fc39ec0459de58ab8fd1505ec6807e8fc8b"
+                    buildNumber: "297382",
+                    versionHash: "8b7d490c0a80057935d97aadc07157e6aec1304b"
                 }
             }
             n.r(t), n.d(t, {
@@ -163395,13 +163395,15 @@
                 u = (e, t, n, i) => {
                     if (0 === i) return {
                         start: t,
-                        end: n
+                        end: n,
+                        keyword: e.substring(t, n + 1)
                     };
                     let r = n;
                     for (; r < e.length - 1 && !s(e.charAt(r + 1));) r++;
                     return {
                         start: t,
-                        end: r
+                        end: r,
+                        keyword: e.substring(t, r + 1)
                     }
                 }
         },
@@ -163491,15 +163493,15 @@
                         n = null,
                         r = null,
                         s = {};
-                    for (let u = 0; u <= e.length; u++)
-                        if (n = e.charAt(u), (t = null != (r = t.suffix[n]) ? r : null != this.trie.suffix[n] ? this.trie.suffix[n] : this.trie).isWord) {
-                            var a, o, l;
+                    for (let l = 0; l <= e.length; l++)
+                        if (n = e.charAt(l), (t = null != (r = t.suffix[n]) ? r : null != this.trie.suffix[n] ? this.trie.suffix[n] : this.trie).isWord) {
+                            var a, o;
                             let n = t.strategy,
-                                r = u + 1 - (null !== (o = null === (a = t.value) || void 0 === a ? void 0 : a.length) && void 0 !== o ? o : 0),
-                                d = u;
-                            if ((0, i.isMatch)(e, r, d, n)) {
-                                let t = (0, i.getMatchedPositions)(e, r, d, n);
-                                s[t.start] = Math.max(Number(null !== (l = s[t.start]) && void 0 !== l ? l : 0), t.end)
+                                r = l + 1 - (null !== (o = null === (a = t.value) || void 0 === a ? void 0 : a.length) && void 0 !== o ? o : 0),
+                                u = l;
+                            if ((0, i.isMatch)(e, r, u, n)) {
+                                let t = (0, i.getMatchedPositions)(e, r, u, n);
+                                (null == s[t.start] || s[t.start].end < t.end) && (s[t.start] = t)
                             }
                         } return s
                 }
@@ -163521,34 +163523,37 @@
             "use strict";
             n.r(t), n.d(t, {
                 getKeywordSubstitutedContent: function() {
-                    return o
+                    return u
                 }
             }), n("47120"), n("724458");
-            var i = n("960048"),
-                r = n("592204"),
-                s = n("803141"),
-                a = n("603158");
+            var i = n("626135"),
+                r = n("960048"),
+                s = n("592204"),
+                a = n("803141"),
+                o = n("603158"),
+                l = n("981631");
 
-            function o(e, t) {
-                (0, r.isEligibleForKeywordFiltering)({
+            function u(e, t) {
+                (0, s.isEligibleForKeywordFiltering)({
                     location: "keyword_substituted_content"
                 });
                 try {
                     let n = function(e) {
                         var t;
-                        let n = s.default.getKeywordTrie();
+                        let n = a.default.getKeywordTrie();
                         if ("" === e) return [];
-                        let i = (0, a.normalize)(e).toLowerCase();
-                        return Object.entries(null !== (t = null == n ? void 0 : n.search(i)) && void 0 !== t ? t : {}).map(e => {
-                            let [t, n] = e;
-                            return {
-                                start: Number(t),
-                                end: n
-                            }
-                        })
+                        let i = (0, o.normalize)(e).toLowerCase();
+                        return Object.values(null !== (t = null == n ? void 0 : n.search(i)) && void 0 !== t ? t : {})
                     }(e);
                     if (0 === n.length) return e;
-                    return n.sort((e, t) => t.start - e.start).reduce((e, n) => (function(e, t, n) {
+                    return n.forEach(e => {
+                        i.default.track(l.AnalyticEvents.KEYWORD_FILTER_MATCH, {
+                            message_id: null == t ? void 0 : t.messageId,
+                            channel_id: null == t ? void 0 : t.channelId,
+                            author_id: null == t ? void 0 : t.authorId,
+                            keyword: e.keyword
+                        })
+                    }), n.sort((e, t) => t.start - e.start).reduce((e, n) => (function(e, t, n) {
                         let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
                             r = Math.max(t, 0),
                             s = Math.min(n, e.length - 1),
@@ -163557,7 +163562,7 @@
                         return "".concat(e.substring(0, r)).concat(o).concat(e.substring(s + 1))
                     })(e, n.start, n.end, null == t ? void 0 : t.escapeReplacement), e)
                 } catch (t) {
-                    return i.default.captureException(t, {
+                    return r.default.captureException(t, {
                         tags: {
                             app_context: "keyword_filtering"
                         }
@@ -171144,7 +171149,10 @@
                         shouldFilterKeywords: E,
                         contentMessage: I
                     } = n, T = !1, h = (null != I ? I : t).content, A = e(E ? (0, r.getKeywordSubstitutedContent)(h, {
-                        escapeReplacement: !0
+                        escapeReplacement: !0,
+                        messageId: t.id,
+                        channelId: t.channel_id,
+                        authorId: t.author.id
                     }) : h, !0, _(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), a && (e = function(e, t) {
                         if (1 !== e.length || 1 !== t.length) return e;
                         let n = e[0],
@@ -173973,8 +173981,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717081047429",
-                                    build_number: "297374"
+                                    built_at: "1717083853443",
+                                    build_number: "297382"
                                 }
                             },
                             retries: 1
@@ -251027,7 +251035,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ee585fc39ec0459de58ab8fd1505ec6807e8fc8b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8b7d490c0a80057935d97aadc07157e6aec1304b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273678,6 +273686,10 @@
                 [E.AnalyticEvents.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
                     throttlePeriod: 36e5,
                     throttleKeys: () => []
+                },
+                [E.AnalyticEvents.KEYWORD_FILTER_MATCH]: {
+                    throttlePeriod: 9e5,
+                    throttleKeys: e => [e.message_id]
                 }
             };
 
@@ -280122,7 +280134,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297374"
+                                build_number: "297382"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287431,7 +287443,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297374", "297374"), 10);
+                let s = parseInt((n = "297382", "297382"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315248,4 +315260,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.26e65f1f2f87fc4ce902.js.map
+//# sourceMappingURL=27519.a2e9d73e9b9426474ad9.js.map
