@@ -943,6 +943,7 @@
                 activityText: "activityText__56d3b",
                 avatarWithText: "avatarWithText__3fb83",
                 channel: "channel__0aef5",
+                clanTag: "clanTag__50ee5",
                 closeButton: "closeButton__116c3",
                 closeIcon: "closeIcon__2816e",
                 decorator: "decorator__2a8bf",
@@ -5101,7 +5102,8 @@
                 noTooltip: "noTooltip_e2f660",
                 text: "text_c2b2cb",
                 tooltip: "tooltip_a9f8fc",
-                tooltipContainer: "tooltipContainer_d9b1ea"
+                tooltipContainer: "tooltipContainer_d9b1ea",
+                unselectable: "unselectable__20cc6"
             }
         },
         838373: function(e) {
@@ -5994,7 +5996,8 @@
         87951: function(e) {
             "use strict";
             e.exports = {
-                heading: "heading__1b057"
+                container: "container__528d5",
+                discount: "discount__0188b"
             }
         },
         975075: function(e) {
@@ -8677,7 +8680,8 @@
                 left: "left__7aeb3",
                 message: "message_c5cb1f",
                 messageContent: "messageContent__6ae89",
-                messageContentIcon: "messageContentIcon__611cb",
+                messageContentLeadingIcon: "messageContentLeadingIcon__40b53",
+                messageContentTrailingIcon: "messageContentTrailingIcon__0584f",
                 messageCountBox: "messageCountBox__8885c",
                 messageCountIcon: "messageCountIcon__8c6fd",
                 messageCountText: "messageCountText__0393e",
@@ -18792,6 +18796,7 @@
         897456: function(e) {
             "use strict";
             e.exports = {
+                footer: "footer_d9904f",
                 oauth2Wrapper: "oauth2Wrapper__5c685",
                 wave: "wave__06e47"
             }
@@ -22951,6 +22956,7 @@
                 questUnacceptedContent: "questUnacceptedContent_c91b61",
                 rewardTile: "rewardTile__66594",
                 shareIcon: "shareIcon__6b675",
+                shine: "shine__72ddb",
                 submenuIcon: "submenuIcon__4f60b",
                 submenuWrapper: "submenuWrapper__19139",
                 title: "title_de2774",
@@ -22966,12 +22972,6 @@
                 image: "image__20405",
                 overlay: "overlay__90646",
                 partnerBranding: "partnerBranding__81a41"
-            }
-        },
-        981079: function(e) {
-            "use strict";
-            e.exports = {
-                newBadge: "newBadge_d8a97a"
             }
         },
         713996: function(e) {
@@ -23000,7 +23000,16 @@
                 icon: "icon_c39972",
                 image: "image_e428dc",
                 innerButton: "innerButton__9d82d",
+                leftToRightGradient: "leftToRightGradient__4734b",
                 textContainer: "textContainer__29932"
+            }
+        },
+        857446: function(e) {
+            "use strict";
+            e.exports = {
+                categoryItem: "categoryItem_e3734f",
+                itemInner: "itemInner__79c83",
+                selectedCategoryItem: "selectedCategoryItem__2837f"
             }
         },
         233269: function(e) {
@@ -23059,10 +23068,13 @@
         641935: function(e) {
             "use strict";
             e.exports = {
+                circularQuestRewardTileAsset: "circularQuestRewardTileAsset__14881",
+                circularRewardTileWrapper: "circularRewardTileWrapper__3e503",
                 container: "container__118f6",
                 description: "description__65ac8",
                 header: "header_fbecef",
                 headerSpan: "headerSpan__051f7",
+                progressWrapper: "progressWrapper_c99a9e",
                 questRewardTileAsset: "questRewardTileAsset__33149",
                 rewardDescriptionContainer: "rewardDescriptionContainer__8745e",
                 textContainer: "textContainer_fb0d3e"
@@ -25368,7 +25380,8 @@
                 facepile: "facepile__20e95",
                 left: "left_e75e69",
                 messageContent: "messageContent__6d141",
-                messageContentIcon: "messageContentIcon__4312a",
+                messageContentLeadingIcon: "messageContentLeadingIcon__06b07",
+                messageContentTrailingIcon: "messageContentTrailingIcon__9e03c",
                 noAvatarIcon: "noAvatarIcon__9480d",
                 parentName: "parentName__2142e",
                 startedByName: "startedByName_bf6d0b",
@@ -25651,19 +25664,16 @@
                 visibleContainer: "visibleContainer_adf761"
             }
         },
+        144441: function(e) {
+            "use strict";
+            e.exports = {
+                divider: "divider_e5f7ad"
+            }
+        },
         295847: function(e) {
             "use strict";
             e.exports = {
                 container: "container__52f24"
-            }
-        },
-        825568: function(e) {
-            "use strict";
-            e.exports = {
-                discordIcon: "discordIcon__1e1be",
-                divider: "divider__979dc",
-                memberSince: "memberSince__2eba7",
-                memberSinceWrapper: "memberSinceWrapper__03059"
             }
         },
         904726: function(e) {
@@ -25684,6 +25694,15 @@
                 roleVerifiedIcon: "roleVerifiedIcon_f24240"
             }
         },
+        60963: function(e) {
+            "use strict";
+            e.exports = {
+                discordIcon: "discordIcon_f4d918",
+                divider: "divider_ccf3aa",
+                memberSince: "memberSince__963d9",
+                memberSinceWrapper: "memberSinceWrapper_f76b59"
+            }
+        },
         66073: function(e) {
             "use strict";
             e.exports = {
@@ -25691,6 +25710,12 @@
                 color: "color_df1d13",
                 tooltip: "tooltip__74218",
                 visible: "visible__95288"
+            }
+        },
+        394026: function(e) {
+            "use strict";
+            e.exports = {
+                section: "section_c1ca93"
             }
         },
         983094: function(e) {
@@ -25710,7 +25735,6 @@
                 userPanelInner: "userPanelInner__3184c userProfileInner__8ff35",
                 userPanelInnerThemed: "userPanelInnerThemed__651e4",
                 userPanelOuter: "userPanelOuter_df01a5",
-                userPanelOverlayBackground: "userPanelOverlayBackground_a2b6ae overlayBackground__345c9",
                 userPopoutInner: "userPopoutInner_ac0960 userProfileInner__8ff35",
                 userPopoutOuter: "userPopoutOuter_d67f56 userProfileOuter__35e59",
                 userPopoutOverlayBackground: "userPopoutOverlayBackground__3e7e6 overlayBackground__345c9",
@@ -25771,6 +25795,7 @@
             e.exports = {
                 biteSize: "biteSize__89563",
                 fullSize: "fullSize__51728",
+                panel: "panel_a9140d",
                 wrapper: "wrapper__7f8df"
             }
         },
@@ -26029,6 +26054,7 @@
                 mutualFriendsDivider: "mutualFriendsDivider__2c616",
                 mutualFriendsList: "mutualFriendsList__02caf",
                 mutualGuildsList: "mutualGuildsList__5e9f3",
+                overlay: "overlay_d06e6d",
                 profileMutuals: "profileMutuals_ba77b9",
                 profilePanel: "profilePanel_e2cafe",
                 profilePanelConnections: "profilePanelConnections__34438"
@@ -26039,6 +26065,35 @@
             e.exports = {
                 badgeList: "badgeList__76720",
                 badgelistGroup: "badgelistGroup__8f7c7"
+            }
+        },
+        828592: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container_bb0d6a"
+            }
+        },
+        181456: function(e) {
+            "use strict";
+            e.exports = {
+                body: "body__9d81d",
+                note: "note__220e6",
+                overlay: "overlay__3a5a0"
+            }
+        },
+        187393: function(e) {
+            "use strict";
+            e.exports = {
+                avatar: "avatar__2c095",
+                header: "header__34f87"
+            }
+        },
+        178756: function(e) {
+            "use strict";
+            e.exports = {
+                divider: "divider__5bcf6",
+                list: "list__92fb0",
+                overlay: "overlay_fe69d4"
             }
         },
         758144: function(e) {
@@ -27622,7 +27677,8 @@
                 header: "header_f82dfb",
                 mentioned: "mentioned__0dd68",
                 messageContent: "messageContent__8b5ed",
-                messageContentIcon: "messageContentIcon__81b24",
+                messageContentLeadingIcon: "messageContentLeadingIcon__46df3",
+                messageContentTrailingIcon: "messageContentTrailingIcon__2811c",
                 messageContentWrapper: "messageContentWrapper__34c64",
                 sticker: "sticker__6624d",
                 toast: "toast__4a149",
