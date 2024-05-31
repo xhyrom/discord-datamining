@@ -1,6 +1,6 @@
 <p id="docs-internal-guid-b0ecfa91-7fff-9d30-f228-185b68d88550">Our goal for Discord is to support as many devices and operating systems as possible. Below, you’ll see the minimum operating systems requirements, along with what we recommend for the best experience.</p>
 <h3 id="01H7XMWB5GVZM2R88W55JTC37M">
-    <span id="docs-internal-guid-f06e34d2-7fff-8101-c027-e78a10813d97" style="color: #434343;">Devices with older operating systems can run Discord, but may encounter issues. Our support for these devices is limited. For information on devices not supported by Discord, you can check out our </span><a href="https://support.discord.com/hc/articles/1500005933882" target="_blank" rel="noopener noreferrer">Unsupported Bug Reports Help Center article</a><span style="color: #434343;">. </span>
+    <span id="docs-internal-guid-f06e34d2-7fff-8101-c027-e78a10813d97" style="color: #434343;" data-darkreader-inline-color="">Devices with older operating systems can run Discord, but may encounter issues. Our support for these devices is limited. For information on devices not supported by Discord, you can check out our </span><a href="https://support.discord.com/hc/articles/1500005933882" target="_blank" rel="noopener noreferrer">Unsupported Bug Reports Help Center article</a><span style="color: #434343;" data-darkreader-inline-color="">. </span>
 </h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
@@ -33,7 +33,7 @@
             </tr>
             <tr style="height: 22px;">
                 <td style="height: 22px; width: 24.7143%;">Linux</td>
-                <td style="height: 22px; width: 75.1429%;"><span id="docs-internal-guid-cda60023-7fff-d4da-6d95-ad21b5ae44e0">Ubuntu 18.04+, Debian 10+, openSUSE 16.2+ and Fedora Linux 32+</span></td>
+                <td style="height: 22px; width: 75.1429%;"><span id="docs-internal-guid-cda60023-7fff-d4da-6d95-ad21b5ae44e0">Ubuntu 20.04+, Debian 10+, openSUSE 16.2+ and Fedora Linux 32+</span></td>
             </tr>
         </tbody>
     </table>
@@ -116,3 +116,6 @@
 </div>
 <h3 id="01H7XMWB5H11V9R0437YRZBTTS"><span style="color: #434343;" data-darkreader-inline-color="">Note: Older browsers may lack functionality with newer features, and voice chat for Firefox is only supported by versions 80 and up!</span></h3>
 <p>Running Discord in a mobile browser is <strong>not supported</strong>.</p>
+<div id="gtx-trans" style="position: absolute; left: 166px; top: 445.391px;">
+    <div class="gtx-trans-icon"> </div>
+</div>
