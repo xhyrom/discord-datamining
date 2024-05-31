@@ -19153,7 +19153,7 @@
                             clan: null == G ? void 0 : G.clan,
                             userId: null == G ? void 0 : G.id,
                             contextGuildId: j,
-                            disableTooltip: !0,
+                            disableGuildProfile: !0,
                             className: M.clanTag,
                             profileViewedAnalytics: eS
                         })]
@@ -37096,7 +37096,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297877", ", Version Hash: ").concat("d43553d41185c3da9eb385c95c12a35f4f5eac2a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297891", ", Version Hash: ").concat("efbd3613a199b518b8ba9c38bf8f54b8feabdf9f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88724,8 +88724,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297877", "297877"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297877")), t = 0), t
+                let t = parseInt((e = "297891", "297891"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297891")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -104927,37 +104927,38 @@
                 }),
                 N = r.memo(function(e) {
                     let {
-                        clanTag: t,
-                        clanBadge: n,
-                        className: r,
-                        textClassName: s,
-                        badgeClassName: o,
-                        onClick: u,
-                        onMouseEnter: d,
-                        textVariant: _ = "text-xs/medium",
-                        textColor: c = "text-normal",
-                        badgeSize: E = S.ClanTagBadgeSize.SIZE_12,
-                        inline: I = !0
+                        guildId: t,
+                        clanTag: n,
+                        clanBadge: r,
+                        className: s,
+                        textClassName: o,
+                        badgeClassName: u,
+                        onClick: d,
+                        onMouseEnter: _,
+                        textVariant: c = "text-xs/medium",
+                        textColor: E = "text-normal",
+                        badgeSize: f = S.ClanTagBadgeSize.SIZE_12,
+                        inline: h = !0
                     } = e;
                     return (0, T.default)("base_clan_tag_chiplet") ? (0, i.jsx)(l.Clickable, {
                         tag: "span",
-                        tabIndex: null == u ? -1 : void 0,
-                        onClick: u,
-                        onMouseEnter: d,
-                        className: a()(A.chipletContainerInner, I && A.chipletContainerInline, null != u && A.clickable, r),
+                        tabIndex: null == d ? -1 : void 0,
+                        onClick: d,
+                        onMouseEnter: _,
+                        className: a()(A.chipletContainerInner, h && A.chipletContainerInline, null != d && A.clickable, s),
                         children: (0, i.jsxs)(l.Text, {
-                            variant: _,
-                            color: c,
+                            variant: c,
+                            color: E,
                             tag: "span",
-                            className: a()(A.text, s),
-                            children: [null != n && "string" == typeof n ? (0, i.jsx)(m, {
-                                tag: null == t ? void 0 : t.toString(),
-                                src: n,
-                                size: E,
-                                className: o
-                            }) : n, (0, i.jsx)("span", {
+                            className: a()(A.text, o),
+                            children: [null != r && "string" == typeof r ? (0, i.jsx)(m, {
+                                src: (0, I.getClanBadgeUrl)(t, r, f),
+                                tag: null == n ? void 0 : n.toString(),
+                                size: f,
+                                className: u
+                            }) : r, (0, i.jsx)("span", {
                                 className: A.unselectable,
-                                children: t
+                                children: n
                             })]
                         })
                     }) : null
@@ -105029,7 +105030,7 @@
                     textVariant: u,
                     textColor: d,
                     badgeSize: _,
-                    disableTooltip: E = !1,
+                    disableGuildProfile: E = !1,
                     inline: T = !0,
                     profileViewedAnalytics: f
                 } = e, S = (0, o.useStateFromStores)([c.default], () => c.default.getUser(r), [r]), h = null !== (t = null == S ? void 0 : S.clan) && void 0 !== t ? t : n, {
@@ -105037,11 +105038,10 @@
                     badge: C,
                     guildId: R
                 } = (0, I.getUserClanData)(h);
-                if (!O(r, s) || null == R) return null;
-                let g = (0, I.getClanBadgeUrl)(R, C, _);
-                return E ? (0, i.jsx)(N, {
+                return O(r, s) && null != R ? E ? (0, i.jsx)(N, {
+                    guildId: R,
                     clanTag: m,
-                    clanBadge: g,
+                    clanBadge: C,
                     className: a()(A.noTooltip, l),
                     textVariant: u,
                     textColor: d,
@@ -105052,15 +105052,16 @@
                     userId: r,
                     profileViewedAnalytics: f,
                     children: (0, i.jsx)(N, {
+                        guildId: R,
                         clanTag: m,
-                        clanBadge: g,
+                        clanBadge: C,
                         className: l,
                         textVariant: u,
                         textColor: d,
                         badgeSize: _,
                         inline: T
                     })
-                })
+                }) : null
             })
         },
         214715: function(e, t, n) {
@@ -116787,8 +116788,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297877",
-                    versionHash: "d43553d41185c3da9eb385c95c12a35f4f5eac2a"
+                    buildNumber: "297891",
+                    versionHash: "efbd3613a199b518b8ba9c38bf8f54b8feabdf9f"
                 }
             }
             n.r(t), n.d(t, {
@@ -174189,8 +174190,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717175648785",
-                                    build_number: "297877"
+                                    built_at: "1717176574382",
+                                    build_number: "297891"
                                 }
                             },
                             retries: 1
@@ -189810,7 +189811,7 @@
                 a = n("70956"),
                 o = n("438954"),
                 l = n("670081");
-            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card", i.QUESTS_STORE = "quests_store", i.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", i.QUEST_HOME_DESKTOP = "quest_home_desktop", i.QUEST_HOME_MOBILE = "quest_home_mobile";
+            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card", i.QUESTS_STORE = "quests_store", i.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", i.QUEST_HOME_DESKTOP = "quest_home_desktop", i.QUEST_HOME_MOBILE = "quest_home_mobile", i.QUEST_PROGRESS_BAR = "quest_progress_bar";
             let u = a.default.Millis.MINUTE * s.Quests.ConsecutiveHeartbeatPeriodMinutes
         },
         113434: function(e, t, n) {
@@ -190001,12 +190002,17 @@
             }
 
             function v(e, t) {
-                return ((0, f.useIsEligibleForQuestPlaytime)({
-                    location: t
-                }) && (0, T.hasPlaytimeTaskVariant)({
-                    quest: e
-                }) ? N.default.Messages.QUESTS_PLAY_TASK : N.default.Messages.QUESTS_STREAM_TASK).format({
-                    minutes: A.SharedQuestFields.build(e.config).streamTargetMinutes,
+                let n = (0, f.useIsEligibleForQuestPlaytime)({
+                        location: t
+                    }) && (0, T.hasPlayOnDesktopTask)({
+                        quest: e
+                    }) ? N.default.Messages.QUESTS_PLAY_TASK : N.default.Messages.QUESTS_STREAM_TASK,
+                    i = (0, T.getQuestTaskDetails)({
+                        quest: e,
+                        location: t
+                    }).targetMinutes;
+                return n.format({
+                    minutes: i,
                     gameTitle: e.config.messages.gameTitle
                 })
             }
@@ -190143,16 +190149,19 @@
                     },
                     i = (r = new Map(r)).get(e);
                 if (null != i) {
-                    var s;
-                    let a = null === (s = i.userStatus) || void 0 === s ? void 0 : s.streamProgressSeconds,
-                        o = {
+                    var s, a;
+                    let o = null === (s = i.userStatus) || void 0 === s ? void 0 : s.streamProgressSeconds,
+                        l = null === (a = i.userStatus) || void 0 === a ? void 0 : a.progress,
+                        u = null == o && null == l,
+                        d = {
                             ...i,
                             ...t
                         };
-                    !(n.updateProgress || null == o.userStatus || null == a || null != o.userStatus.completedAt || null == o.userStatus.enrolledAt) && null != o.userStatus && (o.userStatus = {
-                        ...o.userStatus,
-                        streamProgressSeconds: a
-                    }), r.set(e, o)
+                    !(n.updateProgress || null == d.userStatus || u || null != d.userStatus.completedAt || null == d.userStatus.enrolledAt) && null != d.userStatus && (d.userStatus = {
+                        ...d.userStatus,
+                        streamProgressSeconds: null != o ? o : 0,
+                        progress: null != l ? l : {}
+                    }), r.set(e, d)
                 }
             }
 
@@ -190454,128 +190463,137 @@
             "use strict";
             n.r(t), n.d(t, {
                 calculatePercentComplete: function() {
-                    return x
-                },
-                captureQuestsException: function() {
-                    return z
-                },
-                copyShareLink: function() {
-                    return er
-                },
-                getCollectiblesQuestReward: function() {
-                    return j
-                },
-                getContextualEntrypointHeading: function() {
-                    return F
-                },
-                getGameLogotypeAssetUrl: function() {
-                    return G
-                },
-                getGameTileAssetUrl: function() {
-                    return b
-                },
-                getHeroAssetUrl: function() {
-                    return P
-                },
-                getPlatformString: function() {
-                    return V
-                },
-                getPlaytimeQuestByApplicationId: function() {
-                    return O
-                },
-                getQuestBarHeroAssetUrl: function() {
-                    return U
-                },
-                getQuestByApplicationId: function() {
-                    return p
-                },
-                getQuestForTargetedContent: function() {
-                    return k
-                },
-                getQuestUrl: function() {
-                    return w
-                },
-                getQuestsFromActivities: function() {
-                    return Z
-                },
-                getQuestsInstructionsToWinReward: function() {
-                    return en
-                },
-                getRewardAsset: function() {
-                    return y
-                },
-                getRewardCodeQuestReward: function() {
-                    return et
-                },
-                getVideoAssetMimeType: function() {
-                    return J
-                },
-                hasCollectiblesQuestReward: function() {
-                    return W
-                },
-                hasPlaytimeTaskVariant: function() {
-                    return ee
-                },
-                includesTarget: function() {
-                    return K
-                },
-                isAssetAnimated: function() {
-                    return X
-                },
-                isDismissed: function() {
                     return Y
                 },
-                isDismissible: function() {
-                    return H
+                captureQuestsException: function() {
+                    return Q
                 },
-                isQuestExpired: function() {
-                    return C
+                copyShareLink: function() {
+                    return eu
                 },
-                isQuestWithKnownConfigVersion: function() {
-                    return m
+                getCollectiblesQuestReward: function() {
+                    return z
                 },
-                isTargetedForContent: function() {
+                getContextualEntrypointHeading: function() {
+                    return j
+                },
+                getGameLogotypeAssetUrl: function() {
                     return B
                 },
-                isTieredRewardCodeQuest: function() {
-                    return $
+                getGameTileAssetUrl: function() {
+                    return k
                 },
-                openGameLink: function() {
-                    return ei
+                getHeroAssetUrl: function() {
+                    return G
                 },
-                questUserStatusFromServer: function() {
-                    return R
+                getPlatformString: function() {
+                    return H
                 },
-                questWithUserStatusFromServer: function() {
+                getPlayOnDesktopQuestByApplicationId: function() {
                     return g
                 },
-                questsEntitlementsFromServer: function() {
+                getQuestBarHeroAssetUrl: function() {
+                    return w
+                },
+                getQuestByApplicationId: function() {
+                    return R
+                },
+                getQuestForTargetedContent: function() {
+                    return x
+                },
+                getQuestTaskDetails: function() {
+                    return e_
+                },
+                getQuestUrl: function() {
+                    return V
+                },
+                getQuestsFromActivities: function() {
+                    return q
+                },
+                getQuestsInstructionsToWinReward: function() {
+                    return eo
+                },
+                getRewardAsset: function() {
+                    return b
+                },
+                getRewardCodeQuestReward: function() {
+                    return ea
+                },
+                getVideoAssetMimeType: function() {
+                    return et
+                },
+                hasCollectiblesQuestReward: function() {
+                    return Z
+                },
+                hasPlayOnDesktopTask: function() {
+                    return er
+                },
+                includesTarget: function() {
+                    return X
+                },
+                isAssetAnimated: function() {
+                    return J
+                },
+                isDismissed: function() {
+                    return K
+                },
+                isDismissible: function() {
+                    return W
+                },
+                isQuestExpired: function() {
+                    return L
+                },
+                isQuestWithKnownConfigVersion: function() {
+                    return O
+                },
+                isTargetedForContent: function() {
+                    return F
+                },
+                isTieredRewardCodeQuest: function() {
+                    return en
+                },
+                openGameLink: function() {
+                    return el
+                },
+                questUserStatusFromServer: function() {
+                    return v
+                },
+                questWithUserStatusFromServer: function() {
                     return D
                 },
+                questsEntitlementsFromServer: function() {
+                    return P
+                },
                 questsRewardCodeFromServer: function() {
-                    return L
+                    return M
+                },
+                shouldUsePlayOnDesktopTask: function() {
+                    return es
                 }
             }), n("627341"), n("47120"), n("411104");
             var i = n("278074"),
-                r = n("551910"),
-                s = n("887003"),
-                a = n("782568");
+                r = n("754700"),
+                s = n("551910"),
+                a = n("887003"),
+                o = n("742635"),
+                l = n("782568");
             n("597688");
-            var o = n("572004"),
-                l = n("630388"),
-                u = n("49012"),
-                d = n("960048"),
-                _ = n("617136"),
-                c = n("687744"),
-                E = n("497505"),
-                I = n("242755"),
-                T = n("566078"),
-                f = n("312046"),
-                S = n("46140"),
-                h = n("689938");
-            let A = "https://cdn.discordapp.com/assets/quests/";
+            var u = n("572004"),
+                d = n("70956"),
+                _ = n("630388"),
+                c = n("49012"),
+                E = n("960048"),
+                I = n("617136"),
+                T = n("687744"),
+                f = n("497505"),
+                S = n("242755"),
+                h = n("566078"),
+                A = n("312046"),
+                m = n("46140"),
+                N = n("689938");
+            let p = "https://cdn.discordapp.com/assets/quests/";
 
-            function m(e) {
+            function O(e) {
                 try {
                     return (0, i.match)(e.config).with({
                         config_version: 1
@@ -190588,30 +190606,30 @@
                 }
             }
 
-            function N(e, t) {
-                return null != T.SharedQuestFields.build(t.config).application.ids.find(t => t === e)
+            function C(e, t) {
+                return null != h.SharedQuestFields.build(t.config).application.ids.find(t => t === e)
             }
 
-            function p(e, t) {
+            function R(e, t) {
                 let n;
                 for (let [i, r] of e)
-                    if (N(t, r) && !C(r)) {
+                    if (C(t, r) && !L(r)) {
                         n = r;
                         break
                     } return n
             }
 
-            function O(e, t) {
-                return Array.from(e.values()).find(e => N(t, e) && !C(e) && ee({
+            function g(e, t) {
+                return Array.from(e.values()).find(e => C(t, e) && !L(e) && er({
                     quest: e
                 }))
             }
 
-            function C(e) {
+            function L(e) {
                 return new Date(e.config.expiresAt).valueOf() <= Date.now()
             }
 
-            function R(e) {
+            function v(e) {
                 var t;
                 return {
                     userId: e.user_id,
@@ -190636,7 +190654,7 @@
                 }
             }
 
-            function g(e) {
+            function D(e) {
                 var t;
                 return {
                     id: e.id,
@@ -190661,7 +190679,7 @@
                                     let t = {};
                                     for (let n in e) {
                                         let i = parseInt(n);
-                                        E.QUEST_REWARD_CODE_PLATFORMS_SET.has(i) && (t[i] = e[n])
+                                        f.QUEST_REWARD_CODE_PLATFORMS_SET.has(i) && (t[i] = e[n])
                                     }
                                     return t
                                 }(t.reward_redemption_instructions_by_platform),
@@ -190672,9 +190690,9 @@
                                 primary: (n = e.colors).primary,
                                 secondary: n.secondary
                             },
-                            rewardsConfig: (0, c.questRewardsConfigFromServer)(e.rewards_config),
+                            rewardsConfig: (0, T.questRewardsConfigFromServer)(e.rewards_config),
                             rewardCodeExpiresAt: e.reward_code_expires_at,
-                            rewardCodePlatforms: e.reward_code_platforms.filter(e => E.QUEST_REWARD_CODE_PLATFORMS_SET.has(e)),
+                            rewardCodePlatforms: e.reward_code_platforms.filter(e => f.QUEST_REWARD_CODE_PLATFORMS_SET.has(e)),
                             assets: {
                                 rewardTile: (i = e.assets).reward_tile,
                                 hero: i.hero,
@@ -190688,13 +190706,13 @@
                         }
                     }).with({
                         config_version: 2
-                    }, e => (0, f.questFromServerV2)(e)).exhaustive()),
-                    userStatus: null == e.user_status ? null : R(e.user_status),
+                    }, e => (0, A.questFromServerV2)(e)).exhaustive()),
+                    userStatus: null == e.user_status ? null : v(e.user_status),
                     targetedContent: e.targeted_content
                 }
             }
 
-            function L(e) {
+            function M(e) {
                 var t;
                 return {
                     userId: e.user_id,
@@ -190706,14 +190724,14 @@
                 }
             }
 
-            function v(e) {
+            function y(e) {
                 return {
                     skuId: e.sku_id,
                     tenantMetadata: function(e) {
                         if ((null == e ? void 0 : e.quest_rewards) == null) return null;
                         let t = e.quest_rewards;
                         switch (t.reward.tag) {
-                            case s.QuestRewardTypes.IN_GAME:
+                            case a.QuestRewardTypes.IN_GAME:
                                 return {
                                     questRewards: {
                                         reward: {
@@ -190721,12 +190739,12 @@
                                         }
                                     }
                                 };
-                            case s.QuestRewardTypes.REWARD_CODE:
+                            case a.QuestRewardTypes.REWARD_CODE:
                                 return {
                                     questRewards: {
                                         reward: {
                                             tag: t.reward.tag,
-                                            rewardCode: L(t.reward.reward_code)
+                                            rewardCode: M(t.reward.reward_code)
                                         }
                                     }
                                 }
@@ -190735,117 +190753,130 @@
                 }
             }
 
-            function D(e) {
+            function P(e) {
                 return {
                     claimedAt: e.claimed_at,
-                    items: e.entitlements.map(v),
+                    items: e.entitlements.map(y),
                     errors: e.errors
                 }
             }
 
-            function M(e, t) {
+            function U(e, t) {
                 return e.startsWith("data") ? e : t
             }
-            let y = e => {
+            let b = e => {
                     var t, n;
-                    let i = et({
+                    let i = ea({
                             quest: e,
                             idx: null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedTier
                         }),
-                        r = T.SharedQuestFields.build(e.config).defaultRewardAsset,
+                        r = h.SharedQuestFields.build(e.config).defaultRewardAsset,
                         s = null !== (n = null == i ? void 0 : i.asset) && void 0 !== n ? n : r;
                     return {
                         name: s,
-                        url: M(s, "".concat(A).concat(e.id, "/").concat(s))
+                        url: U(s, "".concat(p).concat(e.id, "/").concat(s))
                     }
                 },
-                P = e => M(e.config.assets.hero, "".concat(A).concat(e.id, "/").concat(e.config.assets.hero)),
-                U = e => e.config.assets.questBarHero.startsWith("data") ? e.config.assets.questBarHero : M(e.config.assets.questBarHero, "".concat(A).concat(e.id, "/").concat(e.config.assets.questBarHero)),
-                b = (e, t) => M(e.config.assets.gameTile, "".concat(A).concat(e.id, "/").concat(t, "/").concat(e.config.assets.gameTile)),
-                G = (e, t) => M(e.config.assets.logotype, "".concat(A).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype)),
-                w = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
+                G = e => U(e.config.assets.hero, "".concat(p).concat(e.id, "/").concat(e.config.assets.hero)),
+                w = e => e.config.assets.questBarHero.startsWith("data") ? e.config.assets.questBarHero : U(e.config.assets.questBarHero, "".concat(p).concat(e.id, "/").concat(e.config.assets.questBarHero)),
+                k = (e, t) => U(e.config.assets.gameTile, "".concat(p).concat(e.id, "/").concat(t, "/").concat(e.config.assets.gameTile)),
+                B = (e, t) => U(e.config.assets.logotype, "".concat(p).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype)),
+                V = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
 
-            function k(e, t) {
+            function x(e, t) {
                 for (let [n, i] of e)
-                    if (!C(i) && i.targetedContent.includes(t)) return i;
+                    if (!L(i) && i.targetedContent.includes(t)) return i;
                 return null
             }
 
-            function B(e, t) {
+            function F(e, t) {
                 return e.targetedContent.includes(t)
             }
-            let V = e => {
+            let H = e => {
                 switch (e) {
-                    case E.QuestRewardCodePlatforms.XBOX:
-                        return h.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
-                    case E.QuestRewardCodePlatforms.PLAYSTATION:
-                        return h.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
-                    case E.QuestRewardCodePlatforms.SWITCH:
-                        return h.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
-                    case E.QuestRewardCodePlatforms.PC:
-                        return h.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
-                    case E.QuestRewardCodePlatforms.CROSS_PLATFORM:
-                        return h.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
+                    case f.QuestRewardCodePlatforms.XBOX:
+                        return N.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
+                    case f.QuestRewardCodePlatforms.PLAYSTATION:
+                        return N.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
+                    case f.QuestRewardCodePlatforms.SWITCH:
+                        return N.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
+                    case f.QuestRewardCodePlatforms.PC:
+                        return N.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
+                    case f.QuestRewardCodePlatforms.CROSS_PLATFORM:
+                        return N.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
                 }
             };
 
-            function x(e) {
-                if (null == e.userStatus) return 0;
+            function Y(e) {
                 let {
-                    streamProgressSeconds: t,
-                    completedAt: n
-                } = e.userStatus;
-                if (null != n) return 1;
-                let i = T.SharedQuestFields.build(e.config).streamTargetSeconds;
-                return null == i ? 0 : Math.min(t / i, 1)
-            }
-
-            function F(e) {
-                var t, n;
-                if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return h.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
-                if ((null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
-                    let t = x(e);
-                    return t >= .75 ? h.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : t >= .45 && t <= .55 ? h.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : t > 0 ? h.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : h.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
-                }
-                return h.default.Messages.QUESTS_TITLE.format({
-                    questName: e.config.messages.questName
-                })
-            }
-
-            function H(e) {
-                return Object.keys(S.DismissibleQuestContentFlags).includes(E.QuestContent[e])
-            }
-
-            function Y(e, t) {
-                if (!H(t)) return !1;
-                let n = E.QuestContent[t];
-                return (0, l.hasFlag)(e.dismissedQuestContent, S.DismissibleQuestContentFlags[n])
+                    quest: t,
+                    location: n
+                } = e;
+                if (null == t.userStatus) return 0;
+                if (null != t.userStatus.completedAt) return 1;
+                let {
+                    progressSeconds: i,
+                    targetSeconds: r
+                } = e_({
+                    quest: t,
+                    location: n
+                });
+                return r <= 0 ? 0 : Math.min(i / r, 1)
             }
 
             function j(e) {
-                return (0, i.match)(e).with({
-                    configVersion: 1
-                }, e => {
-                    let t = e.rewardsConfig.rewards.find(e => e.tag === s.QuestRewardTypes.COLLECTIBLE);
-                    return (null == t ? void 0 : t.tag) === s.QuestRewardTypes.COLLECTIBLE ? t : null
-                }).with({
-                    configVersion: 2
-                }, e => {
-                    let t = e.rewardsConfig.rewards.find(e => e.type === s.QuestRewardTypes.COLLECTIBLE);
-                    return (null == t ? void 0 : t.type) === s.QuestRewardTypes.COLLECTIBLE ? t : null
-                }).exhaustive()
+                var t, n;
+                let {
+                    quest: i,
+                    location: r
+                } = e;
+                if ((null === (t = i.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return N.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
+                if ((null === (n = i.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
+                    let e = Y({
+                        quest: i,
+                        location: r
+                    });
+                    return e >= .75 ? N.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : e >= .45 && e <= .55 ? N.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : e > 0 ? N.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : N.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
+                }
+                return N.default.Messages.QUESTS_TITLE.format({
+                    questName: i.config.messages.questName
+                })
             }
 
             function W(e) {
-                return null != j(e)
+                return Object.keys(m.DismissibleQuestContentFlags).includes(f.QuestContent[e])
             }
 
             function K(e, t) {
+                if (!W(t)) return !1;
+                let n = f.QuestContent[t];
+                return (0, _.hasFlag)(e.dismissedQuestContent, m.DismissibleQuestContentFlags[n])
+            }
+
+            function z(e) {
+                return (0, i.match)(e).with({
+                    configVersion: 1
+                }, e => {
+                    let t = e.rewardsConfig.rewards.find(e => e.tag === a.QuestRewardTypes.COLLECTIBLE);
+                    return (null == t ? void 0 : t.tag) === a.QuestRewardTypes.COLLECTIBLE ? t : null
+                }).with({
+                    configVersion: 2
+                }, e => {
+                    let t = e.rewardsConfig.rewards.find(e => e.type === a.QuestRewardTypes.COLLECTIBLE);
+                    return (null == t ? void 0 : t.type) === a.QuestRewardTypes.COLLECTIBLE ? t : null
+                }).exhaustive()
+            }
+
+            function Z(e) {
+                return null != z(e)
+            }
+
+            function X(e, t) {
                 return e.targetedContent.includes(t)
             }
 
-            function z(e, t) {
-                d.default.captureException(e, {
+            function Q(e, t) {
+                E.default.captureException(e, {
                     ...t,
                     tags: {
                         ...null == t ? void 0 : t.tags,
@@ -190854,25 +190885,25 @@
                 })
             }
 
-            function Z(e, t) {
+            function q(e, t) {
                 if (null == t || null == e) return null;
                 for (let n of t) {
                     if (null == n.application_id) continue;
-                    let t = p(e, n.application_id);
+                    let t = R(e, n.application_id);
                     if (null != t) return t
                 }
                 return null
             }
 
-            function X(e) {
+            function J(e) {
                 return e.endsWith(".webm") || e.endsWith(".mp4") || e.startsWith("data:video")
             }
-            let Q = /\.([a-zA-Z0-9]+)$/,
-                q = /^data:video\/([a-zA-Z0-9]+)\;/;
+            let $ = /\.([a-zA-Z0-9]+)$/,
+                ee = /^data:video\/([a-zA-Z0-9]+)\;/;
 
-            function J(e) {
+            function et(e) {
                 var t, n, i, r, s;
-                switch (null !== (s = null === (n = Q.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== s ? s : null === (r = q.exec(e)) || void 0 === r ? void 0 : null === (i = r[1]) || void 0 === i ? void 0 : i.toLowerCase()) {
+                switch (null !== (s = null === (n = $.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== s ? s : null === (r = ee.exec(e)) || void 0 === r ? void 0 : null === (i = r[1]) || void 0 === i ? void 0 : i.toLowerCase()) {
                     case "webm":
                         return "video/webm";
                     case "mp4":
@@ -190882,7 +190913,7 @@
                 }
             }
 
-            function $(e) {
+            function en(e) {
                 let {
                     quest: {
                         config: t
@@ -190892,23 +190923,42 @@
                     configVersion: 1
                 }, e => {
                     let t = e.rewardsConfig;
-                    return t.assignmentMethod === r.QuestRewardAssignmentMethods.TIERED && t.rewards.length > 0 && t.rewards.every(e => e.tag === s.QuestRewardTypes.REWARD_CODE)
+                    return t.assignmentMethod === s.QuestRewardAssignmentMethods.TIERED && t.rewards.length > 0 && t.rewards.every(e => e.tag === a.QuestRewardTypes.REWARD_CODE)
                 }).with({
                     configVersion: 2
                 }, e => {
                     let t = e.rewardsConfig;
-                    return t.assignmentMethod === r.QuestRewardAssignmentMethods.TIERED && t.rewards.length > 0 && t.rewards.every(e => e.type === s.QuestRewardTypes.REWARD_CODE)
+                    return t.assignmentMethod === s.QuestRewardAssignmentMethods.TIERED && t.rewards.length > 0 && t.rewards.every(e => e.type === a.QuestRewardTypes.REWARD_CODE)
                 }).exhaustive()
             }
+            let ei = e => (0, i.match)(e.taskConfig).with({
+                type: o.QuestTaskConfigTypes.FIRST_PARTY
+            }, e => null != e.tasks[r.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP]).otherwise(() => !1);
 
-            function ee(e) {
+            function er(e) {
                 let {
                     quest: t
                 } = e;
-                return T.SharedQuestFields.build(t.config).features.has(S.QuestVariants.PLAYTIME_TASK)
+                return (0, i.match)(t.config).with({
+                    configVersion: 1
+                }, e => h.SharedQuestFields.build(e).features.has(m.QuestVariants.PLAYTIME_TASK)).with({
+                    configVersion: 2
+                }, e => h.SharedQuestFields.build(e).features.has(m.QuestVariants.PLAYTIME_TASK) || ei(e)).exhaustive()
             }
 
-            function et(e) {
+            function es(e) {
+                let {
+                    quest: t,
+                    location: n
+                } = e;
+                return null != t && er({
+                    quest: t
+                }) && (0, S.isEligibleForQuestPlaytime)({
+                    location: n
+                })
+            }
+
+            function ea(e) {
                 let {
                     quest: t,
                     idx: n
@@ -190916,63 +190966,110 @@
                 if (null == n) return null;
                 let r = t.config.rewardsConfig.rewards[n];
                 return (0, i.match)(r).with({
-                    tag: s.QuestRewardTypes.REWARD_CODE
+                    tag: a.QuestRewardTypes.REWARD_CODE
                 }, e => e).with({
-                    type: s.QuestRewardTypes.REWARD_CODE
+                    type: a.QuestRewardTypes.REWARD_CODE
                 }, e => e).otherwise(() => null)
             }
 
-            function en(e) {
+            function eo(e) {
                 let {
                     quest: t,
                     location: n,
                     useV2Variants: i = !1
-                } = e, r = t.config.messages.gameTitle, {
-                    defaultReward: s,
-                    streamTargetMinutes: a
-                } = T.SharedQuestFields.build(t.config);
-                return (0, I.isEligibleForQuestPlaytime)({
+                } = e, r = t.config.messages.gameTitle, s = h.SharedQuestFields.build(t.config).defaultReward, a = e_({
+                    quest: t,
                     location: n
-                }) && ee({
-                    quest: t
-                }) ? h.default.Messages.QUESTS_PLAY_INSTRUCTIONS_TO_WIN_REWARD.format({
+                }).targetMinutes;
+                return es({
+                    quest: t,
+                    location: n
+                }) ? N.default.Messages.QUESTS_PLAY_INSTRUCTIONS_TO_WIN_REWARD.format({
                     gameTitle: r,
                     questReward: s.messages.nameWithArticle,
                     streamingDurationRequirement: a
-                }) : $({
+                }) : en({
                     quest: t
-                }) ? (i ? h.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2 : h.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED).format({
+                }) ? (i ? N.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2 : N.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED).format({
                     gameTitle: r,
                     streamingDurationRequirement: a
-                }) : (i ? h.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2 : h.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD).format({
+                }) : (i ? N.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2 : N.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD).format({
                     gameTitle: r,
                     questReward: s.messages.nameWithArticle,
                     streamingDurationRequirement: a
                 })
             }
 
-            function ei(e, t) {
-                let n = T.SharedQuestFields.build(e.config).application.link;
-                (0, u.handleClick)({
+            function el(e, t) {
+                let n = h.SharedQuestFields.build(e.config).application.link;
+                (0, c.handleClick)({
                     href: n,
                     onConfirm: () => {
-                        (0, _.trackQuestContentClicked)({
+                        (0, I.trackQuestContentClicked)({
                             questId: e.id,
                             questContent: t.content,
                             questContentCTA: t.ctaContent,
                             questContentPosition: t.position
-                        }), (0, a.default)(n)
+                        }), (0, l.default)(n)
                     }
                 })
             }
-            let er = (e, t) => {
-                (0, _.trackQuestContentClicked)({
-                    questId: e,
-                    questContent: t.content,
-                    questContentCTA: t.ctaContent,
-                    questContentPosition: t.position
-                }), (0, o.copy)(w(e))
-            }
+            let eu = (e, t) => {
+                    (0, I.trackQuestContentClicked)({
+                        questId: e,
+                        questContent: t.content,
+                        questContentCTA: t.ctaContent,
+                        questContentPosition: t.position
+                    }), (0, u.copy)(V(e))
+                },
+                ed = e => {
+                    var t, n, i, s, a, l, u;
+                    let {
+                        quest: _,
+                        taskType: c
+                    } = e, E = _.config.taskConfig;
+                    if (E.type !== o.QuestTaskConfigTypes.FIRST_PARTY) throw Error("Cannot retrieve task details for task config with type ".concat(E.type, "!"));
+                    let I = null !== (a = E.tasks[c]) && void 0 !== a ? a : E.tasks[r.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
+                    if (null == I) throw Error("No task with type ".concat(c, " found for quest ").concat(_.id, " - Quest is malformed!"));
+                    let T = I.target;
+                    return {
+                        progressSeconds: null !== (u = null !== (l = null === (i = _.userStatus) || void 0 === i ? void 0 : null === (n = i.progress) || void 0 === n ? void 0 : null === (t = n[c]) || void 0 === t ? void 0 : t.value) && void 0 !== l ? l : null === (s = _.userStatus) || void 0 === s ? void 0 : s.streamProgressSeconds) && void 0 !== u ? u : 0,
+                        targetSeconds: T,
+                        targetMinutes: Math.round(T / d.default.Seconds.MINUTE),
+                        taskType: c
+                    }
+                },
+                e_ = e => {
+                    let {
+                        quest: t,
+                        location: n
+                    } = e;
+                    return (0, i.match)(t).with({
+                        config: {
+                            configVersion: 1
+                        }
+                    }, e => {
+                        var t, n;
+                        return {
+                            progressSeconds: null !== (n = null === (t = e.userStatus) || void 0 === t ? void 0 : t.streamProgressSeconds) && void 0 !== n ? n : 0,
+                            targetSeconds: Math.round(e.config.streamDurationRequirementMinutes * d.default.Seconds.MINUTE),
+                            targetMinutes: e.config.streamDurationRequirementMinutes
+                        }
+                    }).with({
+                        config: {
+                            configVersion: 2
+                        }
+                    }, e => es({
+                        quest: e,
+                        location: n
+                    }) ? ed({
+                        quest: e,
+                        taskType: r.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP
+                    }) : ed({
+                        quest: e,
+                        taskType: r.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP
+                    })).exhaustive()
+                }
         },
         242755: function(e, t, n) {
             "use strict";
@@ -191305,7 +191402,7 @@
                 generatePsuedoStreamKey: function() {
                     return b
                 },
-                getPlaytimeQuestForActiveGames: function() {
+                getPlayOnDesktopQuestForActiveGames: function() {
                     return w
                 }
             }), n("47120");
@@ -191360,33 +191457,25 @@
                 let t = _.default.getGameById(e.id);
                 if ((null == t ? void 0 : t.id) == null) return null;
                 let n = (0, f.getQuestByApplicationId)(T.default.quests, t.id);
-                return null != n && V(n) ? n : null
+                return null != n && B(n) ? n : null
             }
             let w = () => {
                 for (let e of o.default.getRunningGames().map(e => e.id)) {
                     if (null == e) continue;
-                    let t = (0, f.getPlaytimeQuestByApplicationId)(T.default.quests, e);
-                    if (null != t && V(t)) return t
+                    let t = (0, f.getPlayOnDesktopQuestByApplicationId)(T.default.quests, e);
+                    if (null != t && B(t)) return t
                 }
             };
 
             function k(e) {
-                return null != e && (0, f.hasPlaytimeTaskVariant)({
-                    quest: e
-                }) && (0, S.isEligibleForQuestPlaytime)({
-                    location: p.QuestsExperimentLocations.QUESTS_MANAGER
-                })
-            }
-
-            function B(e) {
                 return c.default.countVoiceStatesForChannel(e) >= 2
             }
 
-            function V(e) {
+            function B(e) {
                 return !(0, f.isQuestExpired)(e) && null != e.userStatus && null != e.userStatus.enrolledAt && null == e.userStatus.completedAt
             }
 
-            function x(e) {
+            function V(e) {
                 var t;
                 let {
                     questId: n,
@@ -191394,22 +191483,25 @@
                     applicationId: r
                 } = e, {
                     channelId: s
-                } = (0, l.decodeStreamKey)(i), a = B(s), d = T.default.quests.get(n);
-                if (null == d || !V(d)) return "STOP";
+                } = (0, l.decodeStreamKey)(i), a = k(s), d = T.default.quests.get(n);
+                if (null == d || !B(d)) return "STOP";
                 let _ = null === (t = G()) || void 0 === t ? void 0 : t.config,
                     c = null != u.default.getRTCStream(i) && null != _ && N.SharedQuestFields.build(_).application.id === r && a,
                     {
                         quest: E,
                         activity: I
-                    } = F(),
-                    f = null == E ? void 0 : E.config,
-                    S = null != f && (null == E ? void 0 : E.id) === n && N.SharedQuestFields.build(f).application.id === r && a && (null == I ? void 0 : I.channelId) === s,
-                    h = o.default.getRunningGames().map(e => e.id),
-                    A = k(d) && h.includes(r);
-                return c || S || A ? "BEAT" : "BEAT_TERMINAL"
+                    } = x(),
+                    S = null == E ? void 0 : E.config,
+                    h = null != S && (null == E ? void 0 : E.id) === n && N.SharedQuestFields.build(S).application.id === r && a && (null == I ? void 0 : I.channelId) === s,
+                    A = o.default.getRunningGames().map(e => e.id),
+                    m = (0, f.shouldUsePlayOnDesktopTask)({
+                        quest: d,
+                        location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                    }) && A.includes(r);
+                return c || h || m ? "BEAT" : "BEAT_TERMINAL"
             }
 
-            function F(e) {
+            function x(e) {
                 let t = {
                     quest: null,
                     activity: null
@@ -191422,7 +191514,7 @@
                     var n;
                     if (null != e && i.channelId !== e) continue;
                     let r = null !== (n = (0, f.getQuestByApplicationId)(T.default.quests, i.applicationId)) && void 0 !== n ? n : null;
-                    if (null != r && V(r)) return {
+                    if (null != r && B(r)) return {
                         quest: r,
                         activity: i
                     };
@@ -191433,7 +191525,7 @@
                 }
                 return t
             }(r = i || (i = {})).BEAT = "BEAT", r.STOP = "STOP", r.BEAT_TERMINAL = "BEAT_TERMINAL";
-            class H extends s.default {
+            class F extends s.default {
                 maybeFetchCurrentQuests() {
                     (0, A.getIsEligibleForQuests)({
                         location: p.QuestsExperimentLocations.QUESTS_MANAGER
@@ -191451,7 +191543,7 @@
                             return
                         }
                         let r = () => {
-                            let e = x({
+                            let e = V({
                                 questId: t,
                                 streamKey: n,
                                 applicationId: i
@@ -191474,12 +191566,15 @@
                         };
                         r()
                     }), C(this, "calculateHeartbeatDurationMs", e => {
-                        var t;
-                        let n = T.default.quests.get(e);
-                        if (null == n || null == n.config || null == n.userStatus) return g;
+                        let t = T.default.quests.get(e);
+                        if (null == t || null == t.config || null == t.userStatus) return g;
                         let {
-                            streamProgressSeconds: i
-                        } = n.userStatus, r = Math.max(0, ((null !== (t = N.SharedQuestFields.build(n.config).streamTargetSeconds) && void 0 !== t ? t : 0) - i) * E.default.Millis.SECOND);
+                            progressSeconds: n,
+                            targetSeconds: i
+                        } = (0, f.getQuestTaskDetails)({
+                            quest: t,
+                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                        }), r = Math.max(0, (i - n) * E.default.Millis.SECOND);
                         return r <= g ? r + L : g
                     }), C(this, "terminateHeartbeat", e => {
                         let {
@@ -191505,45 +191600,53 @@
                         }
                     }), C(this, "initiateOptimisticProgressUpdateInterval", e => {
                         this.terminateOptimisticProgressUpdateInterval(e), this.optimisticProgressUpdateIntervalIds.set(e, window.setInterval(() => {
-                            var t, n, i;
-                            let r = G(),
-                                s = w(),
+                            var t, n;
+                            let i = G(),
+                                r = w(),
                                 {
-                                    quest: a
-                                } = F(),
-                                o = null !== (n = null !== (t = null != r ? r : a) && void 0 !== t ? t : s) && void 0 !== n ? n : null;
-                            if (null == o) {
+                                    quest: s
+                                } = x(),
+                                a = null !== (n = null !== (t = null != i ? i : s) && void 0 !== t ? t : r) && void 0 !== n ? n : null;
+                            if (null == a) {
                                 this.terminateOptimisticProgressUpdateInterval(e);
                                 return
                             }
-                            let l = N.SharedQuestFields.build(o.config),
-                                u = null !== (i = l.streamTargetSeconds) && void 0 !== i ? i : 0,
-                                d = o.userStatus,
-                                _ = this.lastOptimisticallyUpdatedProgressMap.get(e);
-                            if ("BEAT" !== x({
-                                    questId: o.id,
+                            let o = N.SharedQuestFields.build(a.config),
+                                l = a.userStatus,
+                                u = this.lastOptimisticallyUpdatedProgressMap.get(e);
+                            if ("BEAT" !== V({
+                                    questId: a.id,
                                     streamKey: e,
-                                    applicationId: l.application.id
+                                    applicationId: o.application.id
                                 })) {
                                 this.terminateOptimisticProgressUpdateInterval(e);
                                 return
                             }
-                            if (null == _) this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now());
-                            else if (null != d) {
-                                let t = (Date.now() - _) / E.default.Millis.SECOND,
-                                    n = d.streamProgressSeconds,
-                                    i = n + t;
+                            if (null == u) this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now());
+                            else if (null != l) {
+                                let {
+                                    progressSeconds: t,
+                                    targetSeconds: n,
+                                    taskType: i
+                                } = (0, f.getQuestTaskDetails)({
+                                    quest: a,
+                                    location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                                }), r = (Date.now() - u) / E.default.Millis.SECOND, s = t + r;
                                 if (U.log("~ initiateOptimisticProgressUpdateInterval -> Updating optimistic progress:", {
                                         streamKey: e,
-                                        progressToAdd: t,
-                                        existingProgress: n,
-                                        newProgress: i
-                                    }), i <= u) {
+                                        progressToAdd: r,
+                                        existingProgress: t,
+                                        newProgress: s
+                                    }), s <= n) {
                                     let t = {
-                                        ...d,
-                                        streamProgressSeconds: i
+                                        ...l,
+                                        streamProgressSeconds: s
                                     };
-                                    (0, I.optimisticallyUpdateQuestProgress)(t), this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now())
+                                    i && (t.progress[i] = {
+                                        ...t.progress[i],
+                                        eventName: i,
+                                        value: s
+                                    }), (0, I.optimisticallyUpdateQuestProgress)(t), this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now())
                                 }
                             }
                         }, D))
@@ -191555,8 +191658,8 @@
                                 questId: t
                             }
                         } = e, n = u.default.getCurrentUserActiveStream(), i = G();
-                        if (null != n && null != i && i.id === t && V(i)) {
-                            this.initiateHeartbeat({
+                        if (null != n && null != i && i.id === t && B(i)) {
+                            U.log("handleEnrollmentSuccess - initiating heartbeat for stream"), this.initiateHeartbeat({
                                 streamKey: (0, l.encodeStreamKey)(n),
                                 applicationId: N.SharedQuestFields.build(i.config).application.id,
                                 questId: i.id
@@ -191566,9 +191669,9 @@
                         let {
                             quest: r,
                             activity: s
-                        } = F();
-                        if (null != s && null != r && V(r) && r.id === t) {
-                            this.initiateHeartbeat({
+                        } = x();
+                        if (null != s && null != r && B(r) && r.id === t) {
+                            U.log("handleEnrollmentSuccess - initiating heartbeat for activity"), this.initiateHeartbeat({
                                 streamKey: b(s.channelId),
                                 applicationId: N.SharedQuestFields.build(r.config).application.id,
                                 questId: r.id
@@ -191577,9 +191680,12 @@
                         }
                         o.default.getRunningGames().forEach(e => {
                             if (null == e.id) return;
-                            let t = (0, f.getPlaytimeQuestByApplicationId)(T.default.quests, e.id);
-                            if (null != t && V(t) && k(t)) {
-                                U.log("~ handleEnrollmentSuccess -> Quest accepted, initializing...");
+                            let t = (0, f.getPlayOnDesktopQuestByApplicationId)(T.default.quests, e.id);
+                            if (null != t && B(t) && (0, f.shouldUsePlayOnDesktopTask)({
+                                    quest: t,
+                                    location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                                })) {
+                                U.log("handleEnrollmentSuccess - initiating heartbeat for playtime task");
                                 let e = b(t.id);
                                 this.initiateHeartbeat({
                                     streamKey: e,
@@ -191619,25 +191725,28 @@
                         U.log("~ handleQuestsFetchCurrentQuestsSuccess -> Quests fetched:", t);
                         let n = o.default.getRunningGames().map(e => e.id);
                         t.forEach(e => {
-                            if (V(e) && k(e)) {
+                            if (B(e) && (0, f.shouldUsePlayOnDesktopTask)({
+                                    quest: e,
+                                    location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                                })) {
                                 let t = b(e.id),
                                     i = n.includes(N.SharedQuestFields.build(e.config).application.id),
                                     r = !this.streamKeyToHeartbeatState.has(t) && i;
                                 this.streamKeyToHeartbeatState.has(t) && !i ? this.terminateHeartbeat({
                                     streamKey: t,
                                     sendTerminalHeartbeat: !0
-                                }) : r && this.initiateHeartbeat({
+                                }) : r && (U.log("handleQuestsFetchCurrentQuestsSuccess - initiating heartbeat for playtime task"), this.initiateHeartbeat({
                                     streamKey: t,
                                     applicationId: N.SharedQuestFields.build(e.config).application.id,
                                     questId: e.id
-                                })
+                                }))
                             }
                         })
                     }), C(this, "handleRunningGamesChange", e => {
                         (0, S.isEligibleForQuestPlaytime)({
                             location: p.QuestsExperimentLocations.QUESTS_MANAGER
-                        }) && this._handlePlaytimeQuestsUpdate(e), !(this.instantiatedAt + R > Date.now() || T.default.lastFetchedCurrentQuests + R > Date.now()) && this.maybeFetchCurrentQuests()
-                    }), C(this, "_handlePlaytimeQuestsUpdate", e => {
+                        }) && this._handlePlayOnDesktopQuestsUpdate(e), !(this.instantiatedAt + R > Date.now() || T.default.lastFetchedCurrentQuests + R > Date.now()) && this.maybeFetchCurrentQuests()
+                    }), C(this, "_handlePlayOnDesktopQuestsUpdate", e => {
                         let {
                             removed: t,
                             games: n
@@ -191647,20 +191756,26 @@
                             removedGames: t
                         }), n.forEach(e => {
                             if (null == e.id) return;
-                            let t = (0, f.getPlaytimeQuestByApplicationId)(T.default.quests, e.id);
-                            if (null == t || !V(t)) return;
+                            let t = (0, f.getPlayOnDesktopQuestByApplicationId)(T.default.quests, e.id);
+                            if (null == t || !B(t)) return;
                             let n = b(t.id);
-                            k(t) && !this.streamKeyToHeartbeatState.has(n) && this.initiateHeartbeat({
+                            (0, f.shouldUsePlayOnDesktopTask)({
+                                quest: t,
+                                location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                            }) && !this.streamKeyToHeartbeatState.has(n) && (U.log("handleRunningGamesChange - initiating heartbeat for playtime task"), this.initiateHeartbeat({
                                 streamKey: n,
                                 applicationId: N.SharedQuestFields.build(t.config).application.id,
                                 questId: t.id
-                            })
+                            }))
                         }), t.forEach(e => {
                             if (null == e.id) return;
-                            let t = (0, f.getPlaytimeQuestByApplicationId)(T.default.quests, e.id);
-                            if (null == t || !V(t)) return;
+                            let t = (0, f.getPlayOnDesktopQuestByApplicationId)(T.default.quests, e.id);
+                            if (null == t || !B(t)) return;
                             let n = b(t.id);
-                            k(t) && this.streamKeyToHeartbeatState.has(n) && this.terminateHeartbeat({
+                            (0, f.shouldUsePlayOnDesktopTask)({
+                                quest: t,
+                                location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                            }) && this.streamKeyToHeartbeatState.has(n) && this.terminateHeartbeat({
                                 streamKey: n,
                                 sendTerminalHeartbeat: !0
                             })
@@ -191676,7 +191791,7 @@
                         let {
                             quest: n,
                             activity: i
-                        } = F();
+                        } = x();
                         null != i && this._handleVoiceStateChange({
                             streamKey: b(i.channelId),
                             channelId: i.channelId,
@@ -191687,28 +191802,31 @@
                             streamKey: t,
                             channelId: n,
                             quest: i
-                        } = e, r = null == i || !B(n), s = B(n) && !this.streamKeyToHeartbeatState.has(t) && null != i && V(i) && !k(i);
+                        } = e, r = null == i || !k(n), s = k(n) && !this.streamKeyToHeartbeatState.has(t) && null != i && B(i) && !(0, f.shouldUsePlayOnDesktopTask)({
+                            quest: i,
+                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                        });
                         r ? this.terminateHeartbeat({
                             streamKey: t,
                             sendTerminalHeartbeat: !0
-                        }) : s && this.initiateHeartbeat({
+                        }) : s && (U.log("handleVoiceStateChange - initiating heartbeat for stream task"), this.initiateHeartbeat({
                             streamKey: t,
                             applicationId: N.SharedQuestFields.build(i.config).application.id,
                             questId: i.id
-                        })
+                        }))
                     }), C(this, "handleEmbeddedActivityUpdate", e => {
                         let {
                             quest: t,
                             activity: n
-                        } = F(e), i = b(e), r = (null == n || null == t) && this.streamKeyToHeartbeatState.has(i), s = null != n && null != t && V(t) && B(e) && !this.streamKeyToHeartbeatState.has(i);
+                        } = x(e), i = b(e), r = (null == n || null == t) && this.streamKeyToHeartbeatState.has(i), s = null != n && null != t && B(t) && k(e) && !this.streamKeyToHeartbeatState.has(i);
                         r ? this.terminateHeartbeat({
                             streamKey: i,
                             sendTerminalHeartbeat: !0
-                        }) : s && this.initiateHeartbeat({
+                        }) : s && (U.log("handleRunningGamesChange - initiating heartbeat for activity task"), this.initiateHeartbeat({
                             streamKey: i,
                             applicationId: N.SharedQuestFields.build(t.config).application.id,
                             questId: t.id
-                        })
+                        }))
                     }), C(this, "handleStreamCreate", e => {
                         let {
                             streamKey: t
@@ -191725,11 +191843,14 @@
                             });
                             return
                         }
-                        B(n) && V(r) && !k(r) && !this.streamKeyToHeartbeatState.has(t) && this.initiateHeartbeat({
+                        k(n) && B(r) && !(0, f.shouldUsePlayOnDesktopTask)({
+                            quest: r,
+                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                        }) && !this.streamKeyToHeartbeatState.has(t) && (U.log("handleStreamCreate - initiating heartbeat for stream task"), this.initiateHeartbeat({
                             streamKey: t,
                             applicationId: N.SharedQuestFields.build(r.config).application.id,
                             questId: r.id
-                        })
+                        }))
                     }), C(this, "handleStreamStart", e => {
                         let {
                             streamType: t,
@@ -191744,11 +191865,14 @@
                         null == r ? this.terminateHeartbeat({
                             streamKey: s,
                             sendTerminalHeartbeat: !0
-                        }) : B(i) && V(r) && !k(r) && !this.streamKeyToHeartbeatState.has(s) && this.initiateHeartbeat({
+                        }) : k(i) && B(r) && !(0, f.shouldUsePlayOnDesktopTask)({
+                            quest: r,
+                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                        }) && !this.streamKeyToHeartbeatState.has(s) && (U.log("handleStreamStart - initiating heartbeat for stream task"), this.initiateHeartbeat({
                             streamKey: s,
                             applicationId: N.SharedQuestFields.build(r.config).application.id,
                             questId: r.id
-                        })
+                        }))
                     }), C(this, "handleStreamClose", e => {
                         let {
                             streamKey: t
@@ -191794,36 +191918,20 @@
                     })
                 }
             }
-            t.default = new H
+            t.default = new F
         },
         566078: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 SharedQuestFields: function() {
-                    return l
+                    return s
                 }
             }), n("627341"), n("47120");
             var i = n("278074"),
-                r = n("754700"),
-                s = n("887003"),
-                a = n("742635"),
-                o = n("70956");
-            class l {
+                r = n("887003");
+            class s {
                 static build(e) {
-                    return new l(e)
-                }
-                get streamTargetSeconds() {
-                    return (0, i.match)(this.quest).with({
-                        configVersion: 1
-                    }, e => Math.round(e.streamDurationRequirementMinutes * o.default.Seconds.MINUTE)).with({
-                        configVersion: 2
-                    }, e => {
-                        var t, n;
-                        return e.taskConfig.type === a.QuestTaskConfigTypes.FIRST_PARTY && null !== (n = null === (t = e.taskConfig.tasks[r.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP]) || void 0 === t ? void 0 : t.target) && void 0 !== n ? n : null
-                    }).exhaustive()
-                }
-                get streamTargetMinutes() {
-                    return null != this.streamTargetSeconds ? Math.round(this.streamTargetSeconds / o.default.Seconds.MINUTE) : null
+                    return new s(e)
                 }
                 get features() {
                     return (0, i.match)(this.quest).with({
@@ -191843,7 +191951,7 @@
                             nameWithArticle: e.messages.rewardNameWithArticle,
                             redemptionInstructionsByPlatform: e.messages.rewardRedemptionInstructionsByPlatform
                         },
-                        tag: s.QuestRewardTypes.REWARD_CODE,
+                        tag: r.QuestRewardTypes.REWARD_CODE,
                         asset: e.assets.rewardTile,
                         approximateCount: null
                     }
@@ -251440,7 +251548,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d43553d41185c3da9eb385c95c12a35f4f5eac2a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "efbd3613a199b518b8ba9c38bf8f54b8feabdf9f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280565,7 +280673,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297877"
+                                build_number: "297891"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287874,7 +287982,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297877", "297877"), 10);
+                let s = parseInt((n = "297891", "297891"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315728,4 +315836,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.58b968b5fc4c35b5a062.js.map
+//# sourceMappingURL=27519.84bae821f4903733790c.js.map
