@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298100", ", Version Hash: ").concat("8e8a4e31eebe4af73241ca0200577ac7fd779bdd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298112", ", Version Hash: ").concat("ef02a9f49082206e30f9259490950deb212ae0f4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56421,6 +56421,15 @@
                 CLAN_DISCOVERY_APPLICATION_DISABLED_TOOLTIP: "You cannot apply to Guilds right now",
                 CLAN_DISCOVERY_APPLICATION_MAX_MEMBERS: "This Guild is at maximum capacity. You may want to apply for more Guilds.",
                 CLAN_CARD_BADGE_APPLIED: "Applied",
+                CLAN_MEMBER_APPLICATION_REPORT_CTA: "Report Applicant",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_ABUSIVE: "Abuse or harassment",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_SPAM: "Spam",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_HARM: "Harmful misinformation or glorifying violence",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_PII: "Exposing private identifying information",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_OTHER: "Something else",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_OTHER_PLACEHOLDER: "Please provide more details",
+                CLAN_MEMBER_APPLICATION_REPORT_MODAL_HEADER: "Report Application",
+                CLAN_MEMBER_APPLICATION_REPORT_DESCRIPTION: "Report {username}'s application for the following reason:",
                 QUESTS_MOBILE_EMBED_UNKNOWN_TITLE: "This is an invalid quest",
                 QUESTS_MOBILE_EMBED_UNKNOWN_BODY: "Check to confirm you're using a valid quest URL",
                 QUESTS_MOBILE_EMBED_UNSUPPORTED_TITLE: "This Quest is not available on mobile"
@@ -88735,8 +88744,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298100", "298100"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298100")), t = 0), t
+                let t = parseInt((e = "298112", "298112"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298112")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116800,8 +116809,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298100",
-                    versionHash: "8e8a4e31eebe4af73241ca0200577ac7fd779bdd"
+                    buildNumber: "298112",
+                    versionHash: "ef02a9f49082206e30f9259490950deb212ae0f4"
                 }
             }
             n.r(t), n.d(t, {
@@ -145913,15 +145922,16 @@
                 _ = n("271383"),
                 c = n("701190"),
                 E = n("594174"),
-                I = n("981631"),
-                T = n("689938");
-            let f = async (e, t) => {
+                I = n("626135"),
+                T = n("981631"),
+                f = n("689938");
+            let S = async (e, t) => {
                 let n = null != t ? t : c.default.getInviteKeyForGuildId(e),
                     s = E.default.getCurrentUser(),
                     a = !_.default.isMember(e, null == s ? void 0 : s.id);
                 try {
                     let t = await i.HTTP.get({
-                        url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                        url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                         query: {
                             with_guild: a,
                             invite_code: null != n ? (0, d.parseInviteCodeFromInviteKey)(n) : void 0
@@ -145948,11 +145958,11 @@
                         guildId: e
                     })
                 }
-            }, S = async (e, t) => {
+            }, h = async (e, t) => {
                 let {
                     body: n
                 } = await i.HTTP.patch({
-                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         form_fields: t
                     },
@@ -145967,11 +145977,11 @@
                         formFields: n.form_fields
                     }
                 })
-            }, h = async (e, t) => {
+            }, A = async (e, t) => {
                 let {
                     body: n
                 } = await i.HTTP.patch({
-                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         description: t
                     },
@@ -145986,15 +145996,15 @@
                         formFields: n.form_fields
                     }
                 })
-            }, A = async (e, t) => {
+            }, m = async (e, t) => {
                 await i.HTTP.patch({
-                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         enabled: t
                     },
                     oldFormErrors: !0
                 })
-            }, m = async (e, t) => {
+            }, N = async (e, t) => {
                 if (u.default.isFullServerPreview(e)) {
                     (0, l.updateImpersonatedData)(e, {
                         memberOptions: {
@@ -146007,7 +146017,7 @@
                     let {
                         body: n
                     } = await i.HTTP.put({
-                        url: I.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e),
+                        url: T.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e),
                         body: {
                             version: t.version,
                             form_fields: t.formFields
@@ -146017,7 +146027,7 @@
                         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
                         guildId: e,
                         request: n
-                    }), setTimeout(N, 200), n
+                    }), setTimeout(p, 200), n
                 } catch (t) {
                     let {
                         status: e
@@ -146025,34 +146035,34 @@
                     switch (e) {
                         case 429:
                             throw (0, a.closeContextMenu)(), s.default.show({
-                                title: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_HEADER,
-                                body: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY,
-                                confirmText: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BUTTON
+                                title: f.default.Messages.CLAN_APPLICATION_RATE_LIMITED_HEADER,
+                                body: f.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY,
+                                confirmText: f.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BUTTON
                             }), {
                                 ...t,
-                                message: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY
+                                message: f.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY
                             };
                         case 403:
                             throw {
-                                ...t, message: T.default.Messages.CLAN_APPLICATION_MISSING_PERMISSION
+                                ...t, message: f.default.Messages.CLAN_APPLICATION_MISSING_PERMISSION
                             };
                         default:
                             var n, d;
                             throw {
-                                ...t, message: null !== (d = (n = new o.APIError(t), n.getAnyErrorMessage())) && void 0 !== d ? d : T.default.Messages.ERROR_GENERIC_TITLE
+                                ...t, message: null !== (d = (n = new o.APIError(t), n.getAnyErrorMessage())) && void 0 !== d ? d : f.default.Messages.ERROR_GENERIC_TITLE
                             }
                     }
                 }
             };
 
-            function N() {
+            function p() {
                 r.default.dispatch({
                     type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW"
                 })
             }
             t.default = {
-                fetchVerificationForm: f,
-                updateVerificationForm: S,
+                fetchVerificationForm: S,
+                updateVerificationForm: h,
                 updateVerificationFormFieldsLocal: (e, t) => {
                     r.default.dispatch({
                         type: "MEMBER_VERIFICATION_FORM_UPDATE",
@@ -146063,7 +146073,7 @@
                         isLocalUpdate: !0
                     })
                 },
-                updateVerificationFormDescription: h,
+                updateVerificationFormDescription: A,
                 updateVerificationFormDescriptionLocal: (e, t) => {
                     r.default.dispatch({
                         type: "MEMBER_VERIFICATION_FORM_UPDATE",
@@ -146074,11 +146084,29 @@
                         isLocalUpdate: !0
                     })
                 },
-                enableVerificationForm: A,
-                submitVerificationForm: m,
+                enableVerificationForm: m,
+                submitVerificationForm: N,
                 clearCoachmark: function() {
                     r.default.dispatch({
                         type: "USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR"
+                    })
+                },
+                reportApplication: function(e) {
+                    let {
+                        guild: t,
+                        guildJoinRequest: n,
+                        guildJoinRequestUser: i,
+                        reason: r,
+                        reasonOther: s,
+                        responses: a
+                    } = e;
+                    I.default.track(T.AnalyticEvents.GUILD_MEMBER_APPLICATION_REPORTED, {
+                        application_id: n.joinRequestId,
+                        applicant_id: i.id,
+                        guild_id: t.id,
+                        reason: r,
+                        reason_other: s,
+                        responses: a
                     })
                 }
             }
@@ -174219,8 +174247,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717193959912",
-                                    build_number: "298100"
+                                    built_at: "1717194538941",
+                                    build_number: "298112"
                                 }
                             },
                             retries: 1
@@ -251607,7 +251635,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8e8a4e31eebe4af73241ca0200577ac7fd779bdd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ef02a9f49082206e30f9259490950deb212ae0f4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280732,7 +280760,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298100"
+                                build_number: "298112"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288041,7 +288069,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298100", "298100"), 10);
+                let s = parseInt((n = "298112", "298112"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315895,4 +315923,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.4628032b7a5eb6fed024.js.map
+//# sourceMappingURL=27519.e0fed1035908143e071e.js.map
