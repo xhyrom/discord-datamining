@@ -22973,12 +22973,6 @@
                 partnerBranding: "partnerBranding__81a41"
             }
         },
-        981079: function(e) {
-            "use strict";
-            e.exports = {
-                newBadge: "newBadge_d8a97a"
-            }
-        },
         713996: function(e) {
             "use strict";
             e.exports = {
@@ -23007,6 +23001,14 @@
                 innerButton: "innerButton__9d82d",
                 leftToRightGradient: "leftToRightGradient__4734b",
                 textContainer: "textContainer__29932"
+            }
+        },
+        857446: function(e) {
+            "use strict";
+            e.exports = {
+                categoryItem: "categoryItem_e3734f",
+                itemInner: "itemInner__79c83",
+                selectedCategoryItem: "selectedCategoryItem__2837f"
             }
         },
         233269: function(e) {
