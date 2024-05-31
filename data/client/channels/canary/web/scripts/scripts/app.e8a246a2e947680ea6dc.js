@@ -16075,7 +16075,7 @@
                 participants: "participants__53b94"
             }
         },
-        356228: function(e) {
+        884787: function(e) {
             "use strict";
             e.exports = {
                 akaBadge: "akaBadge__27cd4",
