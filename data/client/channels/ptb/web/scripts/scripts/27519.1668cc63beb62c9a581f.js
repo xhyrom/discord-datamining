@@ -37096,7 +37096,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297933", ", Version Hash: ").concat("716a60aabf05d355344faf7fe125486ea6253ed5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297964", ", Version Hash: ").concat("84e4223a196a304e16615a83ef0a2d007552a33d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55656,6 +55656,7 @@
                 QUESTS_FIND_QUEST: "You can find this again in User Settings > Gift Inventory",
                 QUESTS_CLAIM_BY_DATE: "Claim by {expirationDate}",
                 QUESTS_AVAILABLE_UNTIL_DATE: "Available until {expirationDate}",
+                QUESTS_EXPIRES: "Expires {expirationDate}",
                 QUESTS_EXPIRED_ON: "Expired on {expirationDate}.",
                 QUESTS_EXPIRED_ON_DATE: "Expired on {expirationDate}",
                 QUESTS_EXPIRED_QUEST_CARD_HEADING: "{questName} Quest is expired.",
@@ -88730,8 +88731,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297933", "297933"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297933")), t = 0), t
+                let t = parseInt((e = "297964", "297964"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297964")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116794,8 +116795,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297933",
-                    versionHash: "716a60aabf05d355344faf7fe125486ea6253ed5"
+                    buildNumber: "297964",
+                    versionHash: "84e4223a196a304e16615a83ef0a2d007552a33d"
                 }
             }
             n.r(t), n.d(t, {
@@ -174200,8 +174201,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717179189626",
-                                    build_number: "297933"
+                                    built_at: "1717181710217",
+                                    build_number: "297964"
                                 }
                             },
                             retries: 1
@@ -210702,7 +210703,7 @@
                     CDN_HOST: n
                 } = window.GLOBAL_ENV;
                 return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(I.Endpoints.BADGE_ICON(e))
-            }(i = l || (l = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (u || (u = {})).RECENT_GAMES = "RECENT_GAMES", (r = d || (d = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", r.BITE_SIZE = "BITE_SIZE", r.FULL_SIZE = "FULL_SIZE", (s = _ || (_ = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", s.SIMPLIFIED_ACCOUNT_POPOUT = "SIMPLIFIED_ACCOUNT_POPOUT", (a = c || (c = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = E || (E = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", o.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.HOVER_BADGE = "HOVER_BADGE", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", o.ADD_ROLE = "ADD_ROLE", o.REMOVE_ROLE = "REMOVE_ROLE"
+            }(i = l || (l = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (u || (u = {})).RECENT_GAMES = "RECENT_GAMES", (r = d || (d = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", r.BITE_SIZE = "BITE_SIZE", r.FULL_SIZE = "FULL_SIZE", (s = _ || (_ = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.SIMPLIFIED_DM_PANEL = "SIMPLIFIED_DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", s.SIMPLIFIED_ACCOUNT_POPOUT = "SIMPLIFIED_ACCOUNT_POPOUT", (a = c || (c = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = E || (E = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", o.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.HOVER_BADGE = "HOVER_BADGE", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", o.ADD_ROLE = "ADD_ROLE", o.REMOVE_ROLE = "REMOVE_ROLE"
         },
         255564: function(e, t, n) {
             "use strict";
@@ -213609,75 +213610,6 @@
                 }) : null
             }
         },
-        81334: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return T
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("399606"),
-                s = n("481060"),
-                a = n("275759"),
-                o = n("706454"),
-                l = n("271383"),
-                u = n("430824"),
-                d = n("346656"),
-                _ = n("68972"),
-                c = n("709054"),
-                E = n("689938"),
-                I = n("825568");
-
-            function T(e) {
-                let {
-                    userId: t,
-                    guildId: n,
-                    textClassName: T,
-                    tooltipDelay: f
-                } = e, S = (0, r.useStateFromStores)([o.default], () => o.default.locale), h = (0, r.useStateFromStores)([u.default], () => null != n ? u.default.getGuild(n) : null), A = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getMember(n, t) : null), m = (0, a.getCreatedAtDate)(c.default.extractTimestamp(t), S), N = (0, a.getCreatedAtDate)(null == A ? void 0 : A.joinedAt, S);
-                return null == h || null == A ? (0, i.jsx)(s.Text, {
-                    variant: "text-sm/normal",
-                    className: T,
-                    children: m
-                }) : (0, i.jsxs)("div", {
-                    className: I.memberSinceWrapper,
-                    children: [(0, i.jsxs)("div", {
-                        className: I.memberSince,
-                        children: [(0, i.jsx)(s.Tooltip, {
-                            text: E.default.Messages.DISCORD_NAME,
-                            delay: f,
-                            children: e => (0, i.jsx)(_.default, {
-                                ...e,
-                                className: I.discordIcon
-                            })
-                        }), (0, i.jsx)(s.Text, {
-                            variant: "text-sm/normal",
-                            className: T,
-                            children: m
-                        })]
-                    }), (0, i.jsx)("div", {
-                        className: I.divider
-                    }), (0, i.jsxs)("div", {
-                        className: I.memberSince,
-                        children: [(0, i.jsx)(s.Tooltip, {
-                            text: h.name,
-                            delay: f,
-                            children: e => (0, i.jsx)(d.default, {
-                                ...e,
-                                guild: h,
-                                size: d.default.Sizes.SMOL
-                            })
-                        }), (0, i.jsx)(s.Text, {
-                            variant: "text-sm/normal",
-                            className: T,
-                            children: N
-                        })]
-                    })]
-                })
-            }
-        },
         256226: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -213805,6 +213737,75 @@
                     })
                 })
             })
+        },
+        900927: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return T
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("399606"),
+                s = n("481060"),
+                a = n("275759"),
+                o = n("706454"),
+                l = n("271383"),
+                u = n("430824"),
+                d = n("346656"),
+                _ = n("68972"),
+                c = n("709054"),
+                E = n("689938"),
+                I = n("60963");
+
+            function T(e) {
+                let {
+                    userId: t,
+                    guildId: n,
+                    textClassName: T,
+                    tooltipDelay: f
+                } = e, S = (0, r.useStateFromStores)([o.default], () => o.default.locale), h = (0, r.useStateFromStores)([u.default], () => null != n ? u.default.getGuild(n) : null), A = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getMember(n, t) : null), m = (0, a.getCreatedAtDate)(c.default.extractTimestamp(t), S), N = (0, a.getCreatedAtDate)(null == A ? void 0 : A.joinedAt, S);
+                return null == h || null == A ? (0, i.jsx)(s.Text, {
+                    variant: "text-sm/normal",
+                    className: T,
+                    children: m
+                }) : (0, i.jsxs)("div", {
+                    className: I.memberSinceWrapper,
+                    children: [(0, i.jsxs)("div", {
+                        className: I.memberSince,
+                        children: [(0, i.jsx)(s.Tooltip, {
+                            text: E.default.Messages.DISCORD_NAME,
+                            delay: f,
+                            children: e => (0, i.jsx)(_.default, {
+                                ...e,
+                                className: I.discordIcon
+                            })
+                        }), (0, i.jsx)(s.Text, {
+                            variant: "text-sm/normal",
+                            className: T,
+                            children: m
+                        })]
+                    }), (0, i.jsx)("div", {
+                        className: I.divider
+                    }), (0, i.jsxs)("div", {
+                        className: I.memberSince,
+                        children: [(0, i.jsx)(s.Tooltip, {
+                            text: h.name,
+                            delay: f,
+                            children: e => (0, i.jsx)(d.default, {
+                                ...e,
+                                guild: h,
+                                size: d.default.Sizes.SMOL
+                            })
+                        }), (0, i.jsx)(s.Text, {
+                            variant: "text-sm/normal",
+                            className: T,
+                            children: N
+                        })]
+                    })]
+                })
+            }
         },
         724593: function(e, t, n) {
             "use strict";
@@ -214244,7 +214245,8 @@
                 return (0, i.jsx)("div", {
                     className: s()(o.wrapper, {
                         [o.biteSize]: t === a.UserProfileTypes.BITE_SIZE,
-                        [o.fullSize]: t === a.UserProfileTypes.FULL_SIZE
+                        [o.fullSize]: t === a.UserProfileTypes.FULL_SIZE,
+                        [o.panel]: t === a.UserProfileTypes.PANEL
                     }),
                     children: n
                 })
@@ -217767,7 +217769,7 @@
             var i = n("735250");
             n("470079");
             var r = n("260034"),
-                s = n("81334"),
+                s = n("900927"),
                 a = n("659101"),
                 o = n("689938"),
                 l = n("379916");
@@ -251565,7 +251567,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "716a60aabf05d355344faf7fe125486ea6253ed5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "84e4223a196a304e16615a83ef0a2d007552a33d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280690,7 +280692,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297933"
+                                build_number: "297964"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287999,7 +288001,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297933", "297933"), 10);
+                let s = parseInt((n = "297964", "297964"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315853,4 +315855,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.30da96dcc6072f0b33e0.js.map
+//# sourceMappingURL=27519.1668cc63beb62c9a581f.js.map
