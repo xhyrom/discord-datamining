@@ -4,14 +4,14 @@
             <div>
                 <div class="safetie-author-photo-wrapper">
                     <div class="dropdown-wr-s">
-                        <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af2d1f80a05070de51d18c_6238e5e426d561bf1e7d0b6f_Discord%20Policy%20Team.png" loading="lazy" alt="" class="safetie-author-image">
+                        <div class="safetie-author-wr"><img src="https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/64af2d1f80a05070de51d18c_6238e5e426d561bf1e7d0b6f_Discord%20Policy%20Team.png" loading="lazy" alt="" class="safetie-author-image">
                             <div class="safetie-author-title">Discord Policy</div>
                         </div>
                     </div>
                     <div class="dropdown-wrapper-safety w-condition-invisible">
                         <div class="weight-semibold">Version</div>
                         <div data-hover="false" data-delay="0" class="dropdown_years w-dropdown">
-                            <div class="dropdown-transparency safety w-dropdown-toggle"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/65ddf38056b6e7c68ee8ca24_chevron%20down.svg" loading="lazy" alt="" class="icon-dropdown-s">
+                            <div class="dropdown-transparency safety w-dropdown-toggle"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65ddf38056b6e7c68ee8ca24_chevron%20down.svg" loading="lazy" alt="" class="icon-dropdown-s">
                                 <div class="w-dyn-bind-empty"></div>
                             </div>
                             <nav class="dropdown_list safety w-dropdown-list">

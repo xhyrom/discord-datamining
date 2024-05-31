@@ -4,14 +4,14 @@
             <div>
                 <div class="safetie-author-photo-wrapper">
                     <div class="dropdown-wr-s">
-                        <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af2f03d63855d32c69dfdf_6439dcd332308112d6b8d587_headshot_square(1).png" loading="lazy" alt="" class="safetie-author-image">
+                        <div class="safetie-author-wr"><img src="https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/64af2f03d63855d32c69dfdf_6439dcd332308112d6b8d587_headshot_square(1).png" loading="lazy" alt="" class="safetie-author-image">
                             <div class="safetie-author-title">Clint Smith</div>
                         </div>
                     </div>
                     <div class="dropdown-wrapper-safety w-condition-invisible">
                         <div class="weight-semibold">Version</div>
                         <div data-hover="false" data-delay="0" class="dropdown_years w-dropdown">
-                            <div class="dropdown-transparency safety w-dropdown-toggle"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/65ddf38056b6e7c68ee8ca24_chevron%20down.svg" loading="lazy" alt="" class="icon-dropdown-s">
+                            <div class="dropdown-transparency safety w-dropdown-toggle"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65ddf38056b6e7c68ee8ca24_chevron%20down.svg" loading="lazy" alt="" class="icon-dropdown-s">
                                 <div class="w-dyn-bind-empty"></div>
                             </div>
                             <nav class="dropdown_list safety w-dropdown-list">
