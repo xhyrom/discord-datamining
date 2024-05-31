@@ -4791,7 +4791,10 @@
   },
   "QUEST_ON_CONSOLE_START": {
     "url": "/quests/:param/console/start",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "QUEST_ON_CONSOLE_STOP": {
     "url": "/quests/:param/console/stop",
