@@ -9595,11 +9595,6 @@ span.clanTag_f4aadc {
     margin: 16px
 }
 
-.userPanelOverlayBackground_a2b6ae {
-    margin: 16px;
-    padding: 0 12px 12px
-}
-
 .biteSizeOverlayBackground__11aa7,
 .fullSizeOverlayBackground_a28b53 {
     background-color: var(--bg-mod-faint);
@@ -43143,6 +43138,11 @@ div.profileThemedContainer__6e645 {
 
 .profileMutuals_ba77b9 {
     margin-top: 12px
+}
+
+.overlay_d06e6d {
+    margin: 16px;
+    padding: 0 12px 12px
 }
 
 .mutualGuildsList__5e9f3,
@@ -142183,4 +142183,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f3df5474791554b4ef24.css.map*/
+/*# sourceMappingURL=99387.68bbedc60e52a5768150.css.map*/
