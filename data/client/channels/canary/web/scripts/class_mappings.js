@@ -21842,6 +21842,7 @@
                 buttonContainer: "buttonContainer__18466",
                 container: "container_c871c1",
                 description: "description_a6c11a",
+                descriptionBottomMargin: "descriptionBottomMargin_d3d521",
                 fullscreenSparkleStar1: "fullscreenSparkleStar1__11332 sparkleStar_b659d5",
                 fullscreenSparkleStar2: "fullscreenSparkleStar2__6c868 sparkleStar_b659d5",
                 fullscreenSparkleStar3: "fullscreenSparkleStar3_aab699 sparkleStar_b659d5",
