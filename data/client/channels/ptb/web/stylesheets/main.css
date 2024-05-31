@@ -17814,8 +17814,9 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .button_f9cb38 {
-    background: linear-gradient(to right, var(--application-subscription-start), var(--application-subscription-end));
-    color: var(--white-500)
+    align-items: center;
+    display: flex;
+    gap: 8px
 }
 
 .storeBtn_aa1533 {
@@ -27219,6 +27220,12 @@ html .progress__00e29 {
     flex-shrink: 0
 }
 
+.premium__0b60b {
+    align-items: center;
+    display: flex;
+    margin-right: 8px
+}
+
 .launchIcon__1a9a6 {
     margin-left: 8px;
     flex-shrink: 0
@@ -27232,11 +27239,6 @@ html .progress__00e29 {
     overflow: hidden;
     text-overflow: ellipsis;
     flex-shrink: 1
-}
-
-.premium__0b60b {
-    background: linear-gradient(to right, var(--application-subscription-start), var(--application-subscription-end));
-    color: var(--white-500)
 }
 
 .container__60cb6 {
@@ -142332,4 +142334,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.16029c0b1b0f1a3132f1.css.map*/
+/*# sourceMappingURL=99387.53ab79a4a5ff80fede78.css.map*/
