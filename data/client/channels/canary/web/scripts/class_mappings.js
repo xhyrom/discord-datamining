@@ -26083,6 +26083,13 @@
                 overlay: "overlay__3a5a0"
             }
         },
+        788463: function(e) {
+            "use strict";
+            e.exports = {
+                buttonColor: "buttonColor__9c02a",
+                footer: "footer__55c58"
+            }
+        },
         187393: function(e) {
             "use strict";
             e.exports = {

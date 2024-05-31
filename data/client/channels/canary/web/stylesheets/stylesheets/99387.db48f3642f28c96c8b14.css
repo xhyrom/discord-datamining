@@ -40636,8 +40636,8 @@ div.profileThemedContainer__6e645 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase
 }
 
@@ -43233,6 +43233,22 @@ div.profileThemedContainer__6e645 {
 
 .note__220e6 textarea:focus::placeholder {
     color: transparent
+}
+
+.footer__55c58 {
+    border-top: 1px solid var(--profile-body-divider-color)
+}
+
+.buttonColor__9c02a {
+    color: var(--interactive-normal)
+}
+
+.buttonColor__9c02a:hover {
+    color: var(--interactive-hover)
+}
+
+.buttonColor__9c02a:active {
+    color: var(--interactive-active)
 }
 
 .header__34f87 {
@@ -142288,4 +142304,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.40b2e9c5562f1ce8e297.css.map*/
+/*# sourceMappingURL=99387.db48f3642f28c96c8b14.css.map*/
