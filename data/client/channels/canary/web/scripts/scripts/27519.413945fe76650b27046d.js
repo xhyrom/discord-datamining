@@ -37096,7 +37096,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297713", ", Version Hash: ").concat("42213de6c3b58db69385fea68f31dc72b95d5eee")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297735", ", Version Hash: ").concat("d9f5578fdf3dcd00ee03a1ed2fb8a02545bdf378")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55851,7 +55851,21 @@
                 GUILD_POPOUT_USER_ON_VIDEO: "{username} is on video",
                 GUILD_POPOUT_USERS_ON_VIDEO: "{username} and {count, plural, one {{count} other are} other {{count} others are}} on video",
                 RECENTLY_ONLINE: "Recently Online",
-                RECENTLY_ONLINE_STATUS: "Online **{time} ago**"
+                RECENTLY_ONLINE_STATUS: "Online **{time} ago**",
+                MESSAGE_ACTION_FORWARD: "Forward",
+                MESSAGE_ACTION_FORWARD_TO: "Forward To",
+                MESSAGE_FORWARDED: "Forwarded",
+                MESSAGE_ACTION_FORWARD_MEDIA_A11Y: "Forward media from this message",
+                MESSAGE_ACTION_FORWARD_EMBED_A11Y: "Forward embed from this message",
+                MESSAGES_SEND_SEPARATELY: "Send ({count, number})",
+                MESSAGES_FORWARD_MAX_DESTINATION_COUNT: "Maximum {count, number} places at once",
+                MESSAGE_FORWARD_SUCCESS: "Message forwarded!",
+                MESSAGE_FORWARDING_NSFW_NOT_ALLOWED: "Messages cannot be forwarded from age-restricted to unrestricted channels",
+                MESSAGE_CHANNEL_ATTACHMENTS_DISABLED: "Attachments are disabled in this channel.",
+                MESSAGE_CHANNEL_EMBEDS_DISABLED: "Embeds are disabled in this channel.",
+                MESSAGE_FORWARD_FAILED: "Forward Failed",
+                MESSAGE_FORWARD_FAILED_BODY: "The message could not be forwarded to the following {count, plural, one {location} other {locations}}:",
+                SELECTED: "Selected"
             })
         },
         924658: function(e) {
@@ -56385,22 +56399,7 @@
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS_ARIA_LABEL: "Join Wumpus Feedback Squad server",
                 CLAN_DISCOVERY_APPLICATION_DISABLED_TOOLTIP: "You cannot apply to Guilds right now",
                 CLAN_DISCOVERY_APPLICATION_MAX_MEMBERS: "This Guild is at maximum capacity. You may want to apply for more Guilds.",
-                CLAN_CARD_BADGE_APPLIED: "Applied",
-                MESSAGE_ACTION_FORWARD: "Forward",
-                MESSAGE_ACTION_FORWARD_TO: "Forward To",
-                MESSAGE_FORWARDED: "Forwarded",
-                MESSAGE_FORWARD_ORIGINAL_MESSAGE: "Go to message",
-                MESSAGE_ACTION_FORWARD_MEDIA_A11Y: "Forward media from this message",
-                MESSAGE_ACTION_FORWARD_EMBED_A11Y: "Forward embed from this message",
-                MESSAGES_SEND_SEPARATELY: "Send ({count, number})",
-                MESSAGES_FORWARD_MAX_DESTINATION_COUNT: "Maximum {count, number} places at once",
-                MESSAGE_FORWARD_SUCCESS: "Message forwarded!",
-                MESSAGE_FORWARDING_NSFW_NOT_ALLOWED: "Messages cannot be forwarded from age-restricted to unrestricted channels",
-                MESSAGE_CHANNEL_ATTACHMENTS_DISABLED: "Attachments are disabled in this channel.",
-                MESSAGE_CHANNEL_EMBEDS_DISABLED: "Embeds are disabled in this channel.",
-                MESSAGE_FORWARD_FAILED: "Forward Failed",
-                MESSAGE_FORWARD_FAILED_BODY: "The message could not be forwarded to the following {count, plural, one {location} other {locations}}:",
-                SELECTED: "Selected"
+                CLAN_CARD_BADGE_APPLIED: "Applied"
             })
         },
         539590: function(e) {
@@ -88708,8 +88707,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297713", "297713"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297713")), t = 0), t
+                let t = parseInt((e = "297735", "297735"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297735")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116771,8 +116770,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297713",
-                    versionHash: "42213de6c3b58db69385fea68f31dc72b95d5eee"
+                    buildNumber: "297735",
+                    versionHash: "d9f5578fdf3dcd00ee03a1ed2fb8a02545bdf378"
                 }
             }
             n.r(t), n.d(t, {
@@ -174169,8 +174168,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717115230831",
-                                    build_number: "297713"
+                                    built_at: "1717117786712",
+                                    build_number: "297735"
                                 }
                             },
                             retries: 1
@@ -251409,7 +251408,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "42213de6c3b58db69385fea68f31dc72b95d5eee"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d9f5578fdf3dcd00ee03a1ed2fb8a02545bdf378"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280533,7 +280532,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297713"
+                                build_number: "297735"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287842,7 +287841,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297713", "297713"), 10);
+                let s = parseInt((n = "297735", "297735"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315696,4 +315695,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.b8ddfe66c6e31a301503.js.map
+//# sourceMappingURL=27519.413945fe76650b27046d.js.map
