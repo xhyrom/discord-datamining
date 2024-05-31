@@ -37096,7 +37096,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297913", ", Version Hash: ").concat("b38159e2f1e52345cb3f10d77e2be046d85a3a72")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297933", ", Version Hash: ").concat("716a60aabf05d355344faf7fe125486ea6253ed5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88730,8 +88730,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297913", "297913"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297913")), t = 0), t
+                let t = parseInt((e = "297933", "297933"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297933")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116794,8 +116794,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297913",
-                    versionHash: "b38159e2f1e52345cb3f10d77e2be046d85a3a72"
+                    buildNumber: "297933",
+                    versionHash: "716a60aabf05d355344faf7fe125486ea6253ed5"
                 }
             }
             n.r(t), n.d(t, {
@@ -157310,84 +157310,85 @@
                     return i
                 },
                 getClickHandler: function() {
-                    return en
-                },
-                getEventLocationData: function() {
-                    return er
-                },
-                getJoinHandler: function() {
                     return ei
                 },
-                getUserNameString: function() {
-                    return ee
-                },
-                getVoiceChannelUsers: function() {
-                    return z
-                },
-                trackClick: function() {
-                    return et
-                },
-                useGetEventCardUsers: function() {
-                    return $
-                },
-                useGetOrFetchEmbeddedActivityApplication: function() {
+                getEventLocationData: function() {
                     return es
                 },
+                getJoinHandler: function() {
+                    return er
+                },
+                getUserNameString: function() {
+                    return et
+                },
+                getVoiceChannelUsers: function() {
+                    return Z
+                },
+                trackClick: function() {
+                    return en
+                },
+                useGetEventCardUsers: function() {
+                    return ee
+                },
+                useGetOrFetchEmbeddedActivityApplication: function() {
+                    return ea
+                },
                 useGuildPopoutCards: function() {
-                    return X
+                    return Q
                 },
                 useSortUserIdsByAffinity: function() {
-                    return q
-                },
-                useSortUsersByAffinity: function() {
                     return J
                 },
+                useSortUsersByAffinity: function() {
+                    return $
+                },
                 useVoiceChannelUsers: function() {
-                    return Z
+                    return X
                 }
             }), n("47120"), n("390547"), n("653041"), n("627341"), n("757143");
             var i, r, s = n("470079"),
                 a = n("392711"),
                 o = n("278074"),
                 l = n("442837"),
-                u = n("317381"),
-                d = n("841784"),
-                _ = n("835473"),
-                c = n("557135"),
-                E = n("471445"),
-                I = n("66999"),
-                T = n("15274"),
-                f = n("924301"),
-                S = n("230900"),
-                h = n("703656"),
-                A = n("881824"),
-                m = n("922482"),
-                N = n("565799"),
-                p = n("501655"),
-                O = n("344185"),
-                C = n("199902"),
-                R = n("592125"),
-                g = n("480294"),
-                L = n("984933"),
-                v = n("271383"),
-                D = n("496675"),
-                M = n("158776"),
-                y = n("699516"),
-                P = n("800599"),
-                U = n("594174"),
-                b = n("979651"),
-                G = n("938475"),
-                w = n("393112"),
-                k = n("626135"),
-                B = n("823379"),
-                V = n("5192"),
-                x = n("51144"),
-                F = n("912787"),
-                H = n("126134"),
-                Y = n("981631"),
-                j = n("765305"),
-                W = n("689938");
-            let K = {
+                u = n("925549"),
+                d = n("317381"),
+                _ = n("841784"),
+                c = n("835473"),
+                E = n("557135"),
+                I = n("471445"),
+                T = n("66999"),
+                f = n("15274"),
+                S = n("924301"),
+                h = n("230900"),
+                A = n("703656"),
+                m = n("881824"),
+                N = n("922482"),
+                p = n("565799"),
+                O = n("501655"),
+                C = n("344185"),
+                R = n("199902"),
+                g = n("592125"),
+                L = n("480294"),
+                v = n("984933"),
+                D = n("271383"),
+                M = n("496675"),
+                y = n("158776"),
+                P = n("699516"),
+                U = n("800599"),
+                b = n("594174"),
+                G = n("979651"),
+                w = n("938475"),
+                k = n("393112"),
+                B = n("626135"),
+                V = n("823379"),
+                x = n("5192"),
+                F = n("51144"),
+                H = n("912787"),
+                Y = n("126134"),
+                j = n("981631"),
+                W = n("765305"),
+                K = n("689938");
+            let z = {
                 Event: 7,
                 Game: 6,
                 EmbeddedActivity: 5,
@@ -157397,41 +157398,41 @@
                 Base: 1
             };
 
-            function z(e, t) {
-                let n = G.default.getVoiceStatesForChannelAlt(e, t).map(e => {
+            function Z(e, t) {
+                let n = w.default.getVoiceStatesForChannelAlt(e, t).map(e => {
                         let {
                             user: t
                         } = e;
                         return t.id
                     }),
-                    i = g.default.hasConsented(Y.Consents.PERSONALIZATION),
-                    r = P.default.getUserAffinities();
+                    i = L.default.hasConsented(j.Consents.PERSONALIZATION),
+                    r = U.default.getUserAffinities();
                 return (i && r.length > 0 ? (0, a.orderBy)(n, [e => {
                     var t, n;
-                    return null !== (n = null === (t = P.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
-                }], ["desc"]) : n).map(e => U.default.getUser(e)).filter(B.isNotNullish)
+                    return null !== (n = null === (t = U.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                }], ["desc"]) : n).map(e => b.default.getUser(e)).filter(V.isNotNullish)
             }
 
-            function Z(e, t) {
+            function X(e, t) {
                 return function(e, t, n, i) {
                     let r;
-                    let a = q(e),
-                        o = s.useMemo(() => a.map(e => U.default.getUser(e)).filter(B.isNotNullish), [a]),
+                    let a = J(e),
+                        o = s.useMemo(() => a.map(e => b.default.getUser(e)).filter(V.isNotNullish), [a]),
                         l = o.slice(0, 6),
                         u = Math.max(0, o.length - l.length);
                     if (null != i && i.length > 0) {
-                        let e = V.default.getName(t, n, U.default.getUser(i[0]));
-                        r = 1 === i.length ? W.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMER.format({
+                        let e = x.default.getName(t, n, b.default.getUser(i[0]));
+                        r = 1 === i.length ? K.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMER.format({
                             username: e
-                        }) : W.default.Messages.GUILD_POPOUT_USERS_STREAMING.format({
+                        }) : K.default.Messages.GUILD_POPOUT_USERS_STREAMING.format({
                             username: e,
                             count: i.length - 1
                         })
                     } else if (l.length > 0) {
-                        let e = V.default.getName(t, n, U.default.getUser(l[0].id));
-                        r = 1 === l.length ? W.default.Messages.GUILD_POPOUT_USER_IN_VOICE.format({
+                        let e = x.default.getName(t, n, b.default.getUser(l[0].id));
+                        r = 1 === l.length ? K.default.Messages.GUILD_POPOUT_USER_IN_VOICE.format({
                             username: e
-                        }) : W.default.Messages.GUILD_POPOUT_USERS_IN_VOICE.format({
+                        }) : K.default.Messages.GUILD_POPOUT_USERS_IN_VOICE.format({
                             username: e,
                             count: l.length - 1
                         })
@@ -157442,7 +157443,7 @@
                         othersCount: u,
                         usersText: r
                     }
-                }((0, l.useStateFromStores)([G.default], () => G.default.getVoiceStatesForChannelAlt(e, t), [e, t]).map(e => {
+                }((0, l.useStateFromStores)([w.default], () => w.default.getVoiceStatesForChannelAlt(e, t), [e, t]).map(e => {
                     let {
                         user: t
                     } = e;
@@ -157450,25 +157451,25 @@
                 }), t, e)
             }
 
-            function X(e) {
+            function Q(e) {
                 let t = e.id,
                     [n, i] = s.useState([]),
-                    [r, _] = s.useState(0),
-                    c = (0, l.useStateFromStoresArray)([L.default, O.default], () => {
-                        let e = L.default.getChannels(t)[L.GUILD_VOCAL_CHANNELS_KEY].map(e => {
+                    [r, u] = s.useState(0),
+                    c = (0, l.useStateFromStoresArray)([v.default, C.default], () => {
+                        let e = v.default.getChannels(t)[v.GUILD_VOCAL_CHANNELS_KEY].map(e => {
                             let {
                                 channel: t
                             } = e;
                             return t.id
                         });
-                        return [...e, ...Object.values(O.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
+                        return [...e, ...Object.values(C.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
                     }, [t]),
-                    E = (0, l.useStateFromStores)([f.default, R.default], () => f.default.getGuildScheduledEventsForGuild(t).filter(e => (0, f.isGuildScheduledEventActive)(e)).map(e => {
+                    E = (0, l.useStateFromStores)([S.default, g.default], () => S.default.getGuildScheduledEventsForGuild(t).filter(e => (0, S.isGuildScheduledEventActive)(e)).map(e => {
                         var t;
                         return {
-                            category: H.CardCategory.EVENT,
+                            category: Y.CardCategory.EVENT,
                             event: e,
-                            isStage: !!(null === (t = R.default.getChannel(e.channel_id)) || void 0 === t ? void 0 : t.isGuildStageVoice())
+                            isStage: !!(null === (t = g.default.getChannel(e.channel_id)) || void 0 === t ? void 0 : t.isGuildStageVoice())
                         }
                     }), [t], a.isEqual),
                     I = E.map(e => {
@@ -157477,27 +157478,27 @@
                         } = e;
                         return t.channel_id
                     }),
-                    T = (0, l.useStateFromStores)([y.default], () => y.default.getRelationships()),
-                    S = s.useMemo(() => Object.keys(T).filter(e => T[e] === Y.RelationshipTypes.BLOCKED), [T]),
-                    h = (0, l.useStateFromStores)([G.default], () => G.default.getVoiceStates(t), [t]),
+                    T = (0, l.useStateFromStores)([P.default], () => P.default.getRelationships()),
+                    f = s.useMemo(() => Object.keys(T).filter(e => T[e] === j.RelationshipTypes.BLOCKED), [T]),
+                    h = (0, l.useStateFromStores)([w.default], () => w.default.getVoiceStates(t), [t]),
                     A = s.useMemo(() => {
                         let t = Object.keys(h);
                         return 0 === t.length ? [] : t.filter(t => {
-                            let n = h[t].filter(B.isNotNullish);
+                            let n = h[t].filter(V.isNotNullish);
                             return !(0 === n.length || I.includes(t)) && null == n.find(e => {
                                 let {
                                     user: t
                                 } = e;
-                                return S.includes(t.id)
+                                return f.includes(t.id)
                             }) && t !== e.afkChannelId && c.includes(t)
                         })
-                    }, [h, I, c, S, e.afkChannelId]),
-                    m = (0, l.useStateFromStores)([u.default, b.default, C.default, M.default, R.default], () => A.map(e => {
+                    }, [h, I, c, f, e.afkChannelId]),
+                    m = (0, l.useStateFromStores)([d.default, G.default, R.default, y.default, g.default], () => A.map(e => {
                         var t;
-                        let n = C.default.getAllApplicationStreamsForChannel(e).map(e => e.ownerId),
-                            i = h[e].filter(B.isNotNullish),
-                            r = u.default.getEmbeddedActivitiesForChannel(e),
-                            s = H.CardCategory.HANGOUT,
+                        let n = R.default.getAllApplicationStreamsForChannel(e).map(e => e.ownerId),
+                            i = h[e].filter(V.isNotNullish),
+                            r = d.default.getEmbeddedActivitiesForChannel(e),
+                            s = Y.CardCategory.HANGOUT,
                             a = [],
                             o = i.map(e => {
                                 let {
@@ -157505,26 +157506,26 @@
                                 } = e;
                                 return t.id
                             }),
-                            l = b.default.hasVideo(e),
-                            _ = [],
+                            l = G.default.hasVideo(e),
+                            u = [],
                             c = [];
-                        for (let e of (r.length > 0 && (s = H.CardCategory.EMBEDDED_ACTIVITY), i)) {
-                            let t = M.default.findActivity(e.user.id, Q(e));
-                            null != t && !(0, d.default)(t) && (s = H.CardCategory.GAMING, a.push(t), _.push(e.user.id)), e.voiceState.selfVideo && c.push(e.user.id)
+                        for (let e of (r.length > 0 && (s = Y.CardCategory.EMBEDDED_ACTIVITY), i)) {
+                            let t = y.default.findActivity(e.user.id, q(e));
+                            null != t && !(0, _.default)(t) && (s = Y.CardCategory.GAMING, a.push(t), u.push(e.user.id)), e.voiceState.selfVideo && c.push(e.user.id)
                         }
-                        if (s === H.CardCategory.EMBEDDED_ACTIVITY) return {
+                        if (s === Y.CardCategory.EMBEDDED_ACTIVITY) return {
                             category: s,
                             embeddedActivities: r,
                             streamersCount: n.length,
                             voiceUsersCount: i.length
                         };
-                        if (s === H.CardCategory.GAMING) return {
+                        if (s === Y.CardCategory.GAMING) return {
                             category: s,
                             channelId: e,
                             games: a,
                             voiceStates: i,
                             streamersCount: n.length,
-                            gameUserIds: _
+                            gameUserIds: u
                         };
                         return {
                             category: s,
@@ -157533,32 +157534,32 @@
                             streamUserIds: n,
                             channelHasVideo: l,
                             videoUserIds: c,
-                            isStage: !!(null === (t = R.default.getChannel(e)) || void 0 === t ? void 0 : t.isGuildStageVoice())
+                            isStage: !!(null === (t = g.default.getChannel(e)) || void 0 === t ? void 0 : t.isGuildStageVoice())
                         }
                     }), [h, A], a.isEqual),
-                    N = (0, l.useStateFromStores)([g.default], () => g.default.hasConsented(Y.Consents.PERSONALIZATION)),
-                    p = (0, l.useStateFromStores)([P.default], () => P.default.getUserAffinities()),
-                    v = N && p.length > 0,
+                    N = (0, l.useStateFromStores)([L.default], () => L.default.hasConsented(j.Consents.PERSONALIZATION)),
+                    p = (0, l.useStateFromStores)([U.default], () => U.default.getUserAffinities()),
+                    O = N && p.length > 0,
                     D = [...m, ...E];
                 return r !== D.length && (i((function(e, t) {
                     return (0, a.orderBy)(e, [e => (function(e, t) {
                         let n = e => e > 0 ? Math.log(e + 1) : 0,
                             i = e => e.map(e => {
                                 var t, n;
-                                return null !== (n = null === (t = P.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                                return null !== (n = null === (t = U.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                             }).map(n),
                             r = (0, o.match)(e).with({
-                                category: H.CardCategory.EVENT
+                                category: Y.CardCategory.EVENT
                             }, () => 7).with({
-                                category: H.CardCategory.GAMING
+                                category: Y.CardCategory.GAMING
                             }, () => 6).with({
-                                category: H.CardCategory.EMBEDDED_ACTIVITY
+                                category: Y.CardCategory.EMBEDDED_ACTIVITY
                             }, () => 5).with({
                                 streamUserIds: o.P.when(e => e.length > 0)
                             }, () => 4).with({
                                 channelHasVideo: !0
                             }, () => 3).with({
-                                category: H.CardCategory.HANGOUT
+                                category: Y.CardCategory.HANGOUT
                             }, () => 2).otherwise(() => 1),
                             s = 0;
                         if (t) {
@@ -157568,7 +157569,7 @@
                                     t = new Set([...t, ...e.userIds])
                                 }), s += Math.max(...i([...t]))
                             }
-                            "voiceStates" in e && (s += Math.max(...i(e.voiceStates.filter(B.isNotNullish).map(e => {
+                            "voiceStates" in e && (s += Math.max(...i(e.voiceStates.filter(V.isNotNullish).map(e => {
                                 let {
                                     user: t
                                 } = e;
@@ -157581,7 +157582,7 @@
                                     t = new Set([t, ...e.userIds])
                                 }), s += t.size
                             }
-                            "voiceStates" in e && (s += e.voiceStates.filter(B.isNotNullish).map(e => {
+                            "voiceStates" in e && (s += e.voiceStates.filter(V.isNotNullish).map(e => {
                                 let {
                                     user: t
                                 } = e;
@@ -157590,47 +157591,47 @@
                         }
                         return s = s > 0 ? s * r : 1e-5 * r
                     })(e, t)], ["desc"])
-                })(D, v).slice(0, 3)), _(D.length)), n
+                })(D, O).slice(0, 3)), u(D.length)), n
             }(r = i || (i = {})).CARD = "card", r.JOIN_BUTTON = "join_button";
-            let Q = e => e => [Y.ActivityTypes.PLAYING, Y.ActivityTypes.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && !1;
-
-            function q(e) {
-                return (0, l.useStateFromStoresArray)([g.default, P.default], () => {
-                    let t = g.default.hasConsented(Y.Consents.PERSONALIZATION),
-                        n = P.default.getUserAffinities();
-                    return t && n.length > 0 ? (0, a.orderBy)(e, [e => {
-                        var t, n;
-                        return null !== (n = null === (t = P.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
-                    }], ["desc"]) : e
-                }, [e])
-            }
+            let q = e => e => [j.ActivityTypes.PLAYING, j.ActivityTypes.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && !1;
 
             function J(e) {
-                return (0, l.useStateFromStoresArray)([g.default, P.default], () => {
-                    let t = g.default.hasConsented(Y.Consents.PERSONALIZATION),
-                        n = P.default.getUserAffinities();
+                return (0, l.useStateFromStoresArray)([L.default, U.default], () => {
+                    let t = L.default.hasConsented(j.Consents.PERSONALIZATION),
+                        n = U.default.getUserAffinities();
                     return t && n.length > 0 ? (0, a.orderBy)(e, [e => {
                         var t, n;
-                        return null !== (n = null === (t = P.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                        return null !== (n = null === (t = U.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                     }], ["desc"]) : e
                 }, [e])
             }
 
             function $(e) {
-                let t = (0, l.useStateFromStores)([N.default], () => null == e ? null : N.default.getParticipantCount(e.id, p.StageChannelParticipantNamedIndex.AUDIENCE)),
-                    n = (0, l.useStateFromStoresArray)([N.default], () => null == e ? [] : N.default.getMutableParticipants(e.id, p.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === p.StageChannelParticipantTypes.VOICE).map(e => {
+                return (0, l.useStateFromStoresArray)([L.default, U.default], () => {
+                    let t = L.default.hasConsented(j.Consents.PERSONALIZATION),
+                        n = U.default.getUserAffinities();
+                    return t && n.length > 0 ? (0, a.orderBy)(e, [e => {
+                        var t, n;
+                        return null !== (n = null === (t = U.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                    }], ["desc"]) : e
+                }, [e])
+            }
+
+            function ee(e) {
+                let t = (0, l.useStateFromStores)([p.default], () => null == e ? null : p.default.getParticipantCount(e.id, O.StageChannelParticipantNamedIndex.AUDIENCE)),
+                    n = (0, l.useStateFromStoresArray)([p.default], () => null == e ? [] : p.default.getMutableParticipants(e.id, O.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === O.StageChannelParticipantTypes.VOICE).map(e => {
                         let {
                             user: t
                         } = e;
                         return t
                     })),
-                    i = (0, l.useStateFromStoresArray)([G.default], () => null == e ? [] : G.default.getVoiceStatesForChannel(e).filter(B.isNotNullish).map(e => {
+                    i = (0, l.useStateFromStoresArray)([w.default], () => null == e ? [] : w.default.getVoiceStatesForChannel(e).filter(V.isNotNullish).map(e => {
                         let {
                             user: t
                         } = e;
                         return t
                     }));
-                if ((null == e ? void 0 : e.type) === Y.ChannelTypes.GUILD_STAGE_VOICE) {
+                if ((null == e ? void 0 : e.type) === j.ChannelTypes.GUILD_STAGE_VOICE) {
                     let e = n.slice(0, 3),
                         i = Math.max(0, n.length - e.length);
                     return {
@@ -157639,7 +157640,7 @@
                         audienceCount: null != t ? t : 0
                     }
                 }
-                if ((null == e ? void 0 : e.type) === Y.ChannelTypes.GUILD_VOICE) {
+                if ((null == e ? void 0 : e.type) === j.ChannelTypes.GUILD_VOICE) {
                     let e = i.slice(0, 7),
                         t = Math.max(0, i.length - e.length);
                     return {
@@ -157655,17 +157656,17 @@
                 }
             }
 
-            function ee(e, t) {
+            function et(e, t) {
                 var n, i;
                 let r = (n = e, i = t, n.map(e => {
                         var t;
-                        let n = U.default.getUser(e);
+                        let n = b.default.getUser(e);
                         if (null == n) return null;
-                        let r = v.default.getNick(i, n.id);
-                        return null !== (t = null != r ? r : x.default.getGlobalName(n)) && void 0 !== t ? t : x.default.getUserTag(n)
+                        let r = D.default.getNick(i, n.id);
+                        return null !== (t = null != r ? r : F.default.getGlobalName(n)) && void 0 !== t ? t : F.default.getUserTag(n)
                     }).filter(e => null != e)),
                     s = r.length;
-                if (s > 0) return 1 === s ? r[0] : (2 === s ? W.default.Messages.USER_SUMMARY_TWO : 3 === s ? W.default.Messages.USER_SUMMARY_THREE : W.default.Messages.USER_SUMMARY_THREE_AND_OTHERS).format({
+                if (s > 0) return 1 === s ? r[0] : (2 === s ? K.default.Messages.USER_SUMMARY_TWO : 3 === s ? K.default.Messages.USER_SUMMARY_THREE : K.default.Messages.USER_SUMMARY_THREE_AND_OTHERS).format({
                     first: r[0],
                     second: null == r ? void 0 : r[1],
                     third: null == r ? void 0 : r[2],
@@ -157673,80 +157674,83 @@
                 })
             }
 
-            function et(e, t, n, i) {
+            function en(e, t, n, i) {
                 var r, s;
                 let a = {},
-                    o = null !== (s = (0, F.getChannelIdFromCardData)(e)) && void 0 !== s ? s : "";
-                a.source = i, a.card_type = e.category, a.card_position = n, a.channel_id = o, a.channel_type = null === (r = R.default.getChannel(o)) || void 0 === r ? void 0 : r.type;
-                let l = z(o, t);
+                    o = null !== (s = (0, H.getChannelIdFromCardData)(e)) && void 0 !== s ? s : "";
+                a.source = i, a.card_type = e.category, a.card_position = n, a.channel_id = o, a.channel_type = null === (r = g.default.getChannel(o)) || void 0 === r ? void 0 : r.type;
+                let l = Z(o, t);
                 a.card_affinity_users_count = Math.min(l.length, 6), a.card_total_users_count = l.length, a.card_affinity_user_ids = l.slice(0, 6).map(e => e.id), a.card_max_affinity_user_id = l.length > 0 ? l[0].id : "0", a.card_user_affinity_scores = l.slice(0, 6).map(e => {
                     var t, n;
-                    return null !== (n = null === (t = P.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
-                }), k.default.track(Y.AnalyticEvents.GUILD_TOOLTIP_CARD_CLICKED, {
+                    return null !== (n = null === (t = U.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                }), B.default.track(j.AnalyticEvents.GUILD_TOOLTIP_CARD_CLICKED, {
                     ...a,
                     guild_id: t
                 })
             }
 
-            function en(e, t, n) {
+            function ei(e, t, n) {
                 let {
                     category: i
                 } = e;
                 switch (i) {
-                    case H.CardCategory.GAMING:
+                    case Y.CardCategory.HANGOUT:
+                    case Y.CardCategory.GAMING:
                         return () => {
-                            et(e, t, n, "card"), (0, h.transitionToGuild)(t, e.channelId)
+                            let {
+                                channelId: i
+                            } = e, r = g.default.getChannel(i), s = M.default.can(j.Permissions.CONNECT, r);
+                            en(e, t, n, "card"), s ? (0, A.transitionToGuild)(t, i) : ((0, A.transitionToGuild)(t), u.default.channelListScrollTo(t, i))
                         };
-                    case H.CardCategory.EMBEDDED_ACTIVITY:
+                    case Y.CardCategory.EMBEDDED_ACTIVITY:
                         return () => {
-                            et(e, t, n, "card"), (0, h.transitionToGuild)(t, e.embeddedActivities[0].channelId)
+                            let {
+                                channelId: i
+                            } = e.embeddedActivities[0], r = g.default.getChannel(i), s = M.default.can(j.Permissions.CONNECT, r);
+                            en(e, t, n, "card"), s ? (0, A.transitionToGuild)(t, i) : ((0, A.transitionToGuild)(t), u.default.channelListScrollTo(t, i))
                         };
-                    case H.CardCategory.EVENT:
+                    case Y.CardCategory.EVENT:
                         return () => {
-                            et(e, t, n, "card"), (0, T.openGuildEventDetails)({
+                            en(e, t, n, "card"), (0, f.openGuildEventDetails)({
                                 eventId: e.event.id
                             })
-                        };
-                    case H.CardCategory.HANGOUT:
-                        return () => {
-                            et(e, t, n, "card"), (0, h.transitionToGuild)(t, e.channelId)
                         };
                     default:
                         return null
                 }
             }
 
-            function ei(e, t) {
+            function er(e, t) {
                 let {
                     category: n
                 } = e;
                 switch (n) {
-                    case H.CardCategory.HANGOUT:
-                    case H.CardCategory.GAMING:
+                    case Y.CardCategory.HANGOUT:
+                    case Y.CardCategory.GAMING:
                         return () => {
                             let {
                                 channelId: n
-                            } = e, i = R.default.getChannel(n);
-                            null != i && i.type === Y.ChannelTypes.GUILD_VOICE && D.default.can(Y.Permissions.CONNECT, i) && (c.default.handleVoiceConnect({
+                            } = e, i = g.default.getChannel(n);
+                            null != i && i.type === j.ChannelTypes.GUILD_VOICE && M.default.can(j.Permissions.CONNECT, i) && (E.default.handleVoiceConnect({
                                 channel: i,
-                                connected: b.default.isInChannel(n),
-                                needSubscriptionToAccess: (0, I.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                connected: G.default.isInChannel(n),
+                                needSubscriptionToAccess: (0, T.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
                                 locked: !1
-                            }), (0, h.transitionToGuild)(t, n))
+                            }), (0, A.transitionToGuild)(t, n))
                         };
-                    case H.CardCategory.EMBEDDED_ACTIVITY:
+                    case Y.CardCategory.EMBEDDED_ACTIVITY:
                         return () => {
                             let {
                                 channelId: n
-                            } = e.embeddedActivities[0], i = R.default.getChannel(n);
-                            null != i && i.type === Y.ChannelTypes.GUILD_VOICE && D.default.can(Y.Permissions.CONNECT, i) && (c.default.handleVoiceConnect({
+                            } = e.embeddedActivities[0], i = g.default.getChannel(n);
+                            null != i && i.type === j.ChannelTypes.GUILD_VOICE && M.default.can(j.Permissions.CONNECT, i) && (E.default.handleVoiceConnect({
                                 channel: i,
-                                connected: b.default.isInChannel(n),
-                                needSubscriptionToAccess: (0, I.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                connected: G.default.isInChannel(n),
+                                needSubscriptionToAccess: (0, T.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
                                 locked: !1
-                            }), (0, h.transitionToGuild)(t, n))
+                            }), (0, A.transitionToGuild)(t, n))
                         };
-                    case H.CardCategory.EVENT:
+                    case Y.CardCategory.EVENT:
                         return () => {
                             let {
                                 event: t
@@ -157754,39 +157758,39 @@
                                 channel_id: n,
                                 guild_id: i,
                                 entity_type: r
-                            } = t, s = R.default.getChannel(n);
-                            if (null == n || null == s || !D.default.can(Y.Permissions.CONNECT, s)) {
-                                (0, T.openGuildEventDetails)({
+                            } = t, s = g.default.getChannel(n);
+                            if (null == n || null == s || !M.default.can(j.Permissions.CONNECT, s)) {
+                                (0, f.openGuildEventDetails)({
                                     eventId: t.id
                                 });
                                 return
                             }
                             let a = async () => {
-                                let e = await (0, m.connectOrLurkStage)(i, n);
-                                (0, A.navigateToStage)(e, null, !1)
+                                let e = await (0, N.connectOrLurkStage)(i, n);
+                                (0, m.navigateToStage)(e, null, !1)
                             };
-                            r === j.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? a() : r === j.GuildScheduledEventEntityTypes.VOICE && (c.default.handleVoiceConnect({
+                            r === W.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? a() : r === W.GuildScheduledEventEntityTypes.VOICE && (E.default.handleVoiceConnect({
                                 channel: s,
-                                connected: b.default.isInChannel(n),
-                                needSubscriptionToAccess: (0, I.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                connected: G.default.isInChannel(n),
+                                needSubscriptionToAccess: (0, T.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
                                 locked: !1
-                            }), (0, h.transitionToGuild)(i, n))
+                            }), (0, A.transitionToGuild)(i, n))
                         };
                     default:
                         return null
                 }
             }
 
-            function er(e) {
+            function es(e) {
                 let t, n;
-                let i = (0, S.getLocationFromEvent)(e),
+                let i = (0, h.getLocationFromEvent)(e),
                     r = null == i ? void 0 : i.replace(/[<#>]/g, ""),
-                    s = null != r ? R.default.getChannel(r) : R.default.getChannel(e.channel_id),
-                    a = D.default.can(Y.Permissions.VIEW_CHANNEL, s);
-                if (null != s && a) t = (0, E.getSimpleChannelIconComponent)(s.type), n = s.name;
+                    s = null != r ? g.default.getChannel(r) : g.default.getChannel(e.channel_id),
+                    a = M.default.can(j.Permissions.VIEW_CHANNEL, s);
+                if (null != s && a) t = (0, I.getSimpleChannelIconComponent)(s.type), n = s.name;
                 else {
                     if (null == i) return null;
-                    t = w.default, n = i
+                    t = k.default, n = i
                 }
                 return {
                     IconComponent: t,
@@ -157794,9 +157798,9 @@
                 }
             }
 
-            function es(e) {
-                let t = e.category === H.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].applicationId : null;
-                return (0, _.useGetOrFetchApplication)(t)
+            function ea(e) {
+                let t = e.category === Y.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].applicationId : null;
+                return (0, c.useGetOrFetchApplication)(t)
             }
         },
         593618: function(e, t, n) {
@@ -174196,8 +174200,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717177609172",
-                                    build_number: "297913"
+                                    built_at: "1717179189626",
+                                    build_number: "297933"
                                 }
                             },
                             retries: 1
@@ -207399,7 +207403,7 @@
 
             function F(e) {
                 let t = I.default.getMentionCount(e.id) > 0,
-                    n = I.default.hasUnread(e.id) && (!h.default.isMuted(e.id) || t),
+                    n = I.default.hasUnreadOrMentions(e.id) && (!h.default.isMuted(e.id) || t),
                     i = e.hasFlag(m.ChannelFlags.PINNED),
                     r = e.isActiveThread(),
                     s = r && (0, A.default)(e) > Date.now();
@@ -234898,18 +234902,15 @@
                     for (let e in t) {
                         let n = t[e];
                         if (null != n) {
-                            if ((!n.isGuildVocal() || 0 !== T.default.getMentionCount(e)) && I.default.can(n.accessPermissions, n) && T.default.hasUnread(e)) return !0
+                            if ((!n.isGuildVocal() || 0 !== T.default.getMentionCount(e)) && I.default.can(n.accessPermissions, n) && T.default.hasUnreadOrMentions(e)) return !0
                         }
                     }
                     let n = a.default.getActiveJoinedThreadsForGuild(e);
-                    for (let e in n) {
-                        let t = c.default.getChannel(e);
-                        if (null != t && P(t)) {
+                    for (let e in n)
+                        if (null != c.default.getChannel(e)) {
                             for (let t in n[e])
-                                if (T.default.hasUnread(t)) return !0
-                        }
-                    }
-                    return !!T.default.hasUnread(e, p.ReadStateTypes.GUILD_EVENT) || !1
+                                if (T.default.hasUnreadOrMentions(t)) return !0
+                        } return !!T.default.hasUnreadOrMentions(e, p.ReadStateTypes.GUILD_EVENT) || !1
                 }
                 getTotalMentionCount(e) {
                     let t = 0;
@@ -242036,6 +242037,10 @@
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eo.ReadStateTypes.CHANNEL;
                     return ey.getValue(e, t, e => e.canBeUnread() && e.hasUnread(), !1)
                 }
+                hasUnreadOrMentions(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eo.ReadStateTypes.CHANNEL;
+                    return ey.getValue(e, t, e => e.canBeUnread() && e.hasUnreadOrMentions(), !1)
+                }
                 hasTrackedUnread(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eo.ReadStateTypes.CHANNEL;
                     return ey.getValue(e, t, e => e.canTrackUnreads() && e.hasUnread(), !1)
@@ -242458,7 +242463,7 @@
                         context: s,
                         onFinished: a
                     } = e;
-                    t = r.filter(e => null != e.messageId && e$.hasUnread(e.channelId, e.readStateType)), n = s, i = a, t.forEach(e => {
+                    t = r.filter(e => null != e.messageId && e$.hasUnreadOrMentions(e.channelId, e.readStateType)), n = s, i = a, t.forEach(e => {
                         let {
                             channelId: t,
                             messageId: n,
@@ -251560,7 +251565,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b38159e2f1e52345cb3f10d77e2be046d85a3a72"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "716a60aabf05d355344faf7fe125486ea6253ed5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280685,7 +280690,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297913"
+                                build_number: "297933"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287994,7 +287999,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297913", "297913"), 10);
+                let s = parseInt((n = "297933", "297933"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315848,4 +315853,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.79c9c78928b16c4c8785.js.map
+//# sourceMappingURL=27519.30da96dcc6072f0b33e0.js.map
