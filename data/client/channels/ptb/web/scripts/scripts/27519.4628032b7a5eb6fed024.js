@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298091", ", Version Hash: ").concat("71b87991f965328507ac7bb7abfad8d823f5bb71")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298100", ", Version Hash: ").concat("8e8a4e31eebe4af73241ca0200577ac7fd779bdd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88735,8 +88735,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298091", "298091"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298091")), t = 0), t
+                let t = parseInt((e = "298100", "298100"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298100")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116800,8 +116800,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298091",
-                    versionHash: "71b87991f965328507ac7bb7abfad8d823f5bb71"
+                    buildNumber: "298100",
+                    versionHash: "8e8a4e31eebe4af73241ca0200577ac7fd779bdd"
                 }
             }
             n.r(t), n.d(t, {
@@ -117859,29 +117859,32 @@
                         secondaryColor: g
                     },
                     bannerHash: v
-                } = n, D = (0, E.default)(n.games), k = (0, h.default)("clan_discovery_card"), [B, V] = r.useState(!1), x = r.useCallback(() => {
+                } = n, D = (0, E.default)(n.games), k = (0, h.default)("clan_discovery_card"), [B, V] = r.useState(!1), x = r.useRef(null), [F, H] = r.useState(!1), Y = r.useCallback(() => {
                     V(!0)
-                }, []), F = r.useCallback(() => {
+                }, []), j = r.useCallback(() => {
                     V(!1)
-                }, []), H = y.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                }, []), W = y.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: n.memberCount
-                }), Y = null != T ? T : (0, S.getClanBannerUrl)(n.id, v), j = null == s && null == Y ? {
+                }), K = null != T ? T : (0, S.getClanBannerUrl)(n.id, v), z = null == s && null == K ? {
                     background: "linear-gradient(90deg, ".concat(R, ", ").concat(g, ")")
-                } : void 0, W = null != s ? s : null != Y ? (0, i.jsx)("img", {
+                } : void 0, Z = null != s ? s : null != K ? (0, i.jsx)("img", {
                     alt: y.default.Messages.CLAN_LOOK_BANNER,
-                    src: Y,
+                    src: K,
                     className: P.bannerImage
-                }) : null, K = r.useMemo(() => (0, M.getSortedTraits)(n.traits, u), [n.traits, u]);
-                return (0, i.jsxs)("div", {
+                }) : null, X = r.useMemo(() => (0, M.getSortedTraits)(n.traits, u), [n.traits, u]);
+                return r.useEffect(() => {
+                    let e = x.current;
+                    null != e && null != e.offsetWidth && null != e.scrollWidth && H(e.offsetWidth < e.scrollWidth)
+                }, []), (0, i.jsxs)("div", {
                     className: a()(P.card, c, {
                         [P.cardStaticHeight]: !o
                     }),
-                    onMouseEnter: x,
-                    onMouseLeave: F,
+                    onMouseEnter: Y,
+                    onMouseLeave: j,
                     children: [(0, i.jsxs)("div", {
                         className: P.cardBrandingHeader,
-                        style: j,
-                        children: [W, (0, i.jsx)(w, {
+                        style: z,
+                        children: [Z, (0, i.jsx)(w, {
                             hasPendingJoinRequest: m,
                             atMaxMemberCapacity: p,
                             isGuildMember: l
@@ -117926,7 +117929,17 @@
                                 variant: "heading-md/medium",
                                 color: "header-primary",
                                 lineClamp: 1,
-                                children: n.name
+                                children: (0, i.jsx)(d.Tooltip, {
+                                    text: n.name,
+                                    color: d.Tooltip.Colors.PRIMARY,
+                                    shouldShow: F,
+                                    children: e => (0, i.jsx)("span", {
+                                        ...e,
+                                        ref: x,
+                                        className: P.nameText,
+                                        children: n.name
+                                    })
+                                })
                             }), (0, i.jsxs)("div", {
                                 className: P.clanInfoRow,
                                 children: [(0, i.jsx)(d.Text, {
@@ -117951,7 +117964,7 @@
                             description: n.description,
                             expanded: o
                         }), (0, i.jsx)(G, {
-                            traits: K,
+                            traits: X,
                             traitsToHighlight: u
                         })]
                     }), (0, i.jsxs)("div", {
@@ -117963,7 +117976,7 @@
                                 children: (0, i.jsx)(d.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: H
+                                    children: W
                                 })
                             })
                         }), (0, i.jsx)("div", {
@@ -174206,8 +174219,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717193368880",
-                                    build_number: "298091"
+                                    built_at: "1717193959912",
+                                    build_number: "298100"
                                 }
                             },
                             retries: 1
@@ -251594,7 +251607,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "71b87991f965328507ac7bb7abfad8d823f5bb71"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8e8a4e31eebe4af73241ca0200577ac7fd779bdd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280719,7 +280732,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298091"
+                                build_number: "298100"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288028,7 +288041,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298091", "298091"), 10);
+                let s = parseInt((n = "298100", "298100"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315882,4 +315895,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.048e3d345ce64c47974c.js.map
+//# sourceMappingURL=27519.4628032b7a5eb6fed024.js.map
