@@ -22956,6 +22956,7 @@
                 questUnacceptedContent: "questUnacceptedContent_c91b61",
                 rewardTile: "rewardTile__66594",
                 shareIcon: "shareIcon__6b675",
+                shine: "shine__72ddb",
                 submenuIcon: "submenuIcon__4f60b",
                 submenuWrapper: "submenuWrapper__19139",
                 title: "title_de2774",

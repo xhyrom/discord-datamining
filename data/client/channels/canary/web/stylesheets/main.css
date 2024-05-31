@@ -58506,7 +58506,7 @@ div:has(>div>.modal__06f49) {
 }
 
 .postEnrollmentBackground__79a8d {
-    background-color: var(--background-secondary-alt);
+    background-color: var(--home-background);
     border-radius: 8px 8px 0 0;
     position: absolute;
     overflow: hidden;
@@ -58872,6 +58872,10 @@ div:has(>div>.modal__06f49) {
     flex: 0 0 auto;
     height: 12px;
     width: 12px
+}
+
+.shine__72ddb {
+    animation-delay: 0s
 }
 
 .content_acf450 {
@@ -92573,8 +92577,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText_fa331b {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -92621,8 +92625,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__7d1e0 {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -142198,4 +142202,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4be7c1ede685895d1cf5.css.map*/
+/*# sourceMappingURL=99387.bbdb72853e5accf30baa.css.map*/
