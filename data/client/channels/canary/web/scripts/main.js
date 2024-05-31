@@ -37096,7 +37096,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297855", ", Version Hash: ").concat("2fdebc9a094516b538cdc94df0bf3849a63c80b1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297864", ", Version Hash: ").concat("f763d552d38eea3bafb488be4c691e75b11f869f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88724,8 +88724,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297855", "297855"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297855")), t = 0), t
+                let t = parseInt((e = "297864", "297864"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297864")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116787,8 +116787,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297855",
-                    versionHash: "2fdebc9a094516b538cdc94df0bf3849a63c80b1"
+                    buildNumber: "297864",
+                    versionHash: "f763d552d38eea3bafb488be4c691e75b11f869f"
                 }
             }
             n.r(t), n.d(t, {
@@ -174189,8 +174189,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717173487946",
-                                    build_number: "297855"
+                                    built_at: "1717174806577",
+                                    build_number: "297864"
                                 }
                             },
                             retries: 1
@@ -251440,7 +251440,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2fdebc9a094516b538cdc94df0bf3849a63c80b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f763d552d38eea3bafb488be4c691e75b11f869f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278579,7 +278579,8 @@
                 7: 15,
                 8: 18,
                 9: 24
-            }), (r = i || (i = {}))[r.EMOJI = 1] = "EMOJI", r[r.AUDIO = 2] = "AUDIO", r[r.ANIMATED = 3] = "ANIMATED", r[r.CUSTOMIZATION = 4] = "CUSTOMIZATION", r[r.UPLOAD = 5] = "UPLOAD", r[r.VANITY = 6] = "VANITY", r[r.STREAM = 7] = "STREAM", r[r.STICKER = 8] = "STICKER", r[r.CUSTOM_ROLE_ICON = 11] = "CUSTOM_ROLE_ICON", r[r.STAGE_VIDEO = 12] = "STAGE_VIDEO", r[r.SOUNDBOARD = 13] = "SOUNDBOARD";
+            });
+            (r = i || (i = {}))[r.EMOJI = 1] = "EMOJI", r[r.AUDIO = 2] = "AUDIO", r[r.ANIMATED = 3] = "ANIMATED", r[r.CUSTOMIZATION = 4] = "CUSTOMIZATION", r[r.UPLOAD = 5] = "UPLOAD", r[r.VANITY = 6] = "VANITY", r[r.STREAM = 7] = "STREAM", r[r.STICKER = 8] = "STICKER", r[r.CUSTOM_ROLE_ICON = 11] = "CUSTOM_ROLE_ICON", r[r.STAGE_VIDEO = 12] = "STAGE_VIDEO", r[r.SOUNDBOARD = 13] = "SOUNDBOARD";
             let f = [E.BoostedGuildTiers.NONE, E.BoostedGuildTiers.TIER_1, E.BoostedGuildTiers.TIER_2, E.BoostedGuildTiers.TIER_3],
                 S = (e, t) => {
                     var n;
@@ -278587,7 +278588,7 @@
                 },
                 h = e => I.TotalStickerCountsByTier[e],
                 A = e => I.IncrementalStickerCountsByTier[e],
-                m = e => I.TotalSoundboardSoundCountsByTier[e],
+                m = (e, t) => null != t && t.hasFeature(E.GuildFeatures.MORE_SOUNDBOARD) ? 96 : I.TotalSoundboardSoundCountsByTier[e],
                 N = e => {
                     if (e === E.BoostedGuildTiers.NONE) return I.TotalSoundboardSoundCountsByTier[e];
                     let t = f[f.indexOf(e) - 1];
@@ -278884,8 +278885,8 @@
                 return Math.max(0, n - e.slice(s, a).length)
             }
 
-            function B(e, t) {
-                return -1 === f.indexOf(t) ? 0 : Math.max(0, m(t) - e.length)
+            function B(e, t, n) {
+                return -1 === f.indexOf(n) ? 0 : Math.max(0, m(n, e) - t.length)
             }
 
             function V(e, t) {
@@ -280564,7 +280565,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297855"
+                                build_number: "297864"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287873,7 +287874,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297855", "297855"), 10);
+                let s = parseInt((n = "297864", "297864"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315727,4 +315728,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.33dd489d325e46a31478.js.map
+//# sourceMappingURL=27519.356444456c693117cc6d.js.map
