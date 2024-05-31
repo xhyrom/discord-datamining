@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298124", ", Version Hash: ").concat("a8a132be53d658d966ca641f61965b01181b543f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298133", ", Version Hash: ").concat("d168be4fa336d402d1fb9ac182daa31c440f5dc1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -41580,6 +41580,7 @@
                 LOCAL_MUTED: "Muted by you",
                 LOCAL_VIDEO_DISABLED: "Video disabled by you",
                 ROLES_LIST: "{numRoles, plural, =0 {No Roles} one {Role} other {Roles}}",
+                VIEW_ALL_ROLES: "View All Roles",
                 USER_VOLUME: "User Volume",
                 QUICK_DM_BLOCKED: "You cannot message blocked users",
                 QUICK_DM_USER: "Message @!!{name}!!",
@@ -88745,8 +88746,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298124", "298124"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298124")), t = 0), t
+                let t = parseInt((e = "298133", "298133"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298133")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116810,8 +116811,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298124",
-                    versionHash: "a8a132be53d658d966ca641f61965b01181b543f"
+                    buildNumber: "298133",
+                    versionHash: "d168be4fa336d402d1fb9ac182daa31c440f5dc1"
                 }
             }
             n.r(t), n.d(t, {
@@ -174248,8 +174249,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717194982550",
-                                    build_number: "298124"
+                                    built_at: "1717195497967",
+                                    build_number: "298133"
                                 }
                             },
                             retries: 1
@@ -200488,61 +200489,59 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return l
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("481060"),
-                s = n("285952"),
-                a = n("395361"),
-                o = n("829820"),
-                l = n("22387");
+                s = n("395361"),
+                a = n("829820"),
+                o = n("22387");
 
-            function u(e) {
+            function l(e) {
                 let {
                     activity: t,
                     user: n,
-                    source: u,
-                    className: d,
-                    size: _,
-                    look: c,
-                    color: E,
-                    fullWidth: I,
-                    onAction: T
+                    source: l,
+                    className: u,
+                    size: d,
+                    look: _,
+                    color: c,
+                    fullWidth: E,
+                    onAction: I
                 } = e, {
-                    label: f,
-                    tooltip: S,
-                    loading: h,
-                    disabled: A,
-                    onClick: m
-                } = (0, o.useSpotifyPlayAction)(t, n, u), N = () => {
-                    null == T || T(), m()
+                    label: T,
+                    tooltip: f,
+                    loading: S,
+                    disabled: h,
+                    onClick: A
+                } = (0, a.useSpotifyPlayAction)(t, n, l), m = () => {
+                    null == I || I(), A()
                 };
                 return (0, i.jsx)(r.Tooltip, {
-                    text: S,
+                    text: f,
                     children: e => {
                         let {
                             onMouseEnter: t,
                             onMouseLeave: n
                         } = e;
-                        return (0, i.jsx)(r.Button, {
-                            className: d,
-                            size: _,
-                            look: c,
-                            color: E,
-                            fullWidth: I,
-                            onClick: N,
+                        return (0, i.jsxs)(r.Button, {
+                            className: u,
+                            innerClassName: o.playButtonInner,
+                            size: d,
+                            look: _,
+                            color: c,
+                            fullWidth: E,
+                            onClick: m,
                             onMouseEnter: t,
                             onMouseLeave: n,
-                            disabled: A,
-                            submitting: h,
-                            children: (0, i.jsxs)(s.default, {
-                                align: s.default.Align.CENTER,
-                                children: [(0, i.jsx)(a.default, {
-                                    className: l.spotifyButtonLogo
-                                }), f]
-                            })
+                            disabled: h,
+                            submitting: S,
+                            children: [(0, i.jsx)(s.default, {
+                                width: 16,
+                                height: 16
+                            }), T]
                         })
                     }
                 })
@@ -200593,8 +200592,9 @@
                             onMouseLeave: r
                         } = e;
                         return (0, i.jsx)(a.Button, {
-                            size: s()(E, d.iconButtonSize),
-                            className: s()(f, d.iconButton),
+                            size: E,
+                            className: s()(d.syncButton, f),
+                            innerClassName: d.syncButtonInner,
                             look: I,
                             color: T,
                             onClick: p,
@@ -200604,7 +200604,8 @@
                             submitting: A,
                             "aria-label": null != h ? h : t.name,
                             children: (0, i.jsx)(o.default, {
-                                className: d.listenAlongIcon
+                                width: 16,
+                                height: 16
                             })
                         })
                     }
@@ -207469,13 +207470,13 @@
 
             function F(e) {
                 let t = I.default.getMentionCount(e.id) > 0,
-                    n = I.default.hasUnreadOrMentions(e.id) && (!h.default.isMuted(e.id) || t),
+                    n = I.default.hasUnread(e.id) && !h.default.isMuted(e.id),
                     i = e.hasFlag(m.ChannelFlags.PINNED),
                     r = e.isActiveThread(),
                     s = r && (0, A.default)(e) > Date.now();
                 return {
-                    isUnread: (r || i) && n,
-                    isRelevant: s || i || n,
+                    isUnread: (r || i) && n || t,
+                    isRelevant: s || i || n || t,
                     isTimedRelevant: s
                 }
             }
@@ -215451,8 +215452,8 @@
                             }), c()
                         }
                     }), (0, i.jsx)(r.MenuItem, {
-                        id: "edit-default-profile",
-                        label: l.default.Messages.USER_SETTINGS_EDIT_USER_PROFILE,
+                        id: "edit-main-profile",
+                        label: l.default.Messages.EDIT_MAIN_PROFILE,
                         subtext: l.default.Messages.USER_PROFILE_MENU_HELP,
                         action: () => {
                             I({
@@ -251636,7 +251637,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a8a132be53d658d966ca641f61965b01181b543f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d168be4fa336d402d1fb9ac182daa31c440f5dc1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280761,7 +280762,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298124"
+                                build_number: "298133"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288070,7 +288071,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298124", "298124"), 10);
+                let s = parseInt((n = "298133", "298133"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315924,4 +315925,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.df316fe6905af72cf32f.js.map
+//# sourceMappingURL=27519.343aab66adbcad40fe0e.js.map

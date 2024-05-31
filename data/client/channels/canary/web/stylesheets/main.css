@@ -9959,24 +9959,21 @@ span.clanTag_f4aadc {
     margin-top: 8px
 }
 
-.spotifyButtonLogo__6ca34 {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px
+.playButtonInner__69dae {
+    display: flex;
+    gap: 8px
 }
 
-.listenAlongIcon_e364e3 {
-    width: 24px;
-    height: 24px
+.syncButton__00e17 {
+    width: 32px;
+    height: 32px
 }
 
-.iconButton__11faf {
-    padding: 0
-}
-
-.iconButtonSize__14733 {
-    min-width: 32px;
-    max-width: 32px
+.syncButtonInner__1adde {
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px
 }
 
 .streamIcon_e33c61 {
@@ -45666,8 +45663,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -142353,4 +142350,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1bc91f47abf0f653be68.css.map*/
+/*# sourceMappingURL=99387.dbb8500006851e4f08c1.css.map*/
