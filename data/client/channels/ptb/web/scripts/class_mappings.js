@@ -25649,6 +25649,7 @@
                 fullSize: "fullSize_b0d012",
                 incorporeal: "incorporeal_cb0354",
                 invisibleContainer: "invisibleContainer__1e05d",
+                panel: "panel__27920",
                 placeholderWidth: "placeholderWidth__1e10a",
                 singleLineAlign: "singleLineAlign__355e0",
                 statusBubble: "statusBubble__1a4c3",
