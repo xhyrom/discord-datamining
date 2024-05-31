@@ -14748,7 +14748,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 chooseReplayPath: function() {
-                    return d
+                    return _
                 },
                 close: function() {
                     return a
@@ -14764,6 +14764,9 @@
                 },
                 setShouldRecordNextConnection: function() {
                     return u
+                },
+                setSimulcastDebugOverride: function() {
+                    return d
                 }
             });
             var i = n("570140"),
@@ -14804,7 +14807,16 @@
                 })
             }
 
-            function d() {
+            function d(e, t, n) {
+                i.default.dispatch({
+                    type: "RTC_DEBUG_SET_SIMULCAST_OVERRIDE",
+                    userId: e,
+                    context: t,
+                    quality: n
+                })
+            }
+
+            function _() {
                 r.default.fileManager.showOpenDialog({
                     filters: [{
                         name: "All Files",
@@ -37084,7 +37096,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297688", ", Version Hash: ").concat("37201b77104293a06323dd3d85a3034fa57325dd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297713", ", Version Hash: ").concat("42213de6c3b58db69385fea68f31dc72b95d5eee")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58782,6 +58794,10 @@
                     var i;
                     null === (i = this._connection) || void 0 === i || i.setClipRecordUser(e, t, n)
                 }
+                setSimulcastDebugOverride(e, t, n) {
+                    var i, r;
+                    t === this.context && (t === ei.MediaEngineContextTypes.DEFAULT ? null === (i = this._localMediaSinkWantsManager) || void 0 === i || i.setSimulcastDebugOverride(e, n) : null === (r = this._goLiveQualityManager) || void 0 === r || r.setSimulcastDebugOverride(e, n))
+                }
                 set channelId(e) {
                     this._channelId = e, this.channelIds.add(e)
                 }
@@ -60056,13 +60072,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 DEFAULT_WANTS_FULL: function() {
-                    return f
+                    return S
                 },
                 RTCMediaSinkWantsManagerEvent: function() {
                     return i
                 },
                 default: function() {
-                    return m
+                    return N
                 }
             }), n("47120"), n("653041");
             var i, r, s = n("47770"),
@@ -60074,9 +60090,10 @@
                 _ = n("70956"),
                 c = n("709054"),
                 E = n("562319"),
-                I = n("981631");
+                I = n("981631"),
+                T = n("65154");
 
-            function T(e, t, n) {
+            function f(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -60084,14 +60101,14 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let f = {
+            let S = {
                     any: 100
                 },
-                S = 30 * _.default.Millis.SECOND,
-                h = 120 * _.default.Millis.SECOND,
-                A = -1 !== (0, d.getFirefoxVersion)();
+                h = 30 * _.default.Millis.SECOND,
+                A = 120 * _.default.Millis.SECOND,
+                m = -1 !== (0, d.getFirefoxVersion)();
             (r = i || (i = {})).UserSSRCUpdate = "user-ssrc-update", r.Update = "update";
-            class m extends s.default {
+            class N extends s.default {
                 getWantsLevel() {
                     let e = this.getVideoParticipantCount();
                     return this.ladder.getMaxSinkValue(e)
@@ -60147,7 +60164,7 @@
                     return delete this.audioSsrcs[e], delete this.videoSsrcs[e], this.participants.delete(e), delete this.streamIds[e], this.update(Array.from(this.participants))
                 }
                 reset() {
-                    this.setConnection(null, !1), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.latestWants = f
+                    this.setConnection(null, !1), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.latestWants = S
                 }
                 setSelectedParticipant(e) {
                     if (e === this.selectedParticipantId) return this.latestWants;
@@ -60179,6 +60196,9 @@
                 getOffscreenDisabledUsers() {
                     return this.offscreenDisabledUsers
                 }
+                setSimulcastDebugOverride(e, t) {
+                    this.simulcastDebugOverrides.set(e, t), this.update()
+                }
                 getVideoParticipantCount() {
                     let e = 0;
                     for (let n of Object.keys(this.videoSsrcs)) {
@@ -60188,11 +60208,14 @@
                     return e
                 }
                 getOffscreenTimeoutMs() {
-                    return this.isStageChannel ? h : S
+                    return this.isStageChannel ? A : h
+                }
+                getSimulcastOverrideQuality(e) {
+                    return this.simulcastDebugOverrides.has(e) ? this.simulcastDebugOverrides.get(e) : T.SimulcastOverrideQuality.NO_OVERRIDE
                 }
                 constructor(e, t, n, i = new o.MediaSinkWantsLadder) {
                     var r;
-                    super(), r = this, T(this, "userId", void 0), T(this, "isStageChannel", void 0), T(this, "supportsSeamless", void 0), T(this, "ladder", void 0), T(this, "connection", void 0), T(this, "audioSsrcs", void 0), T(this, "videoSsrcs", void 0), T(this, "remoteVideoSsrcs", void 0), T(this, "framesReceived", void 0), T(this, "streamIds", void 0), T(this, "offscreenUsers", void 0), T(this, "offscreenDisabledUsers", void 0), T(this, "latestWants", void 0), T(this, "participants", void 0), T(this, "selectedParticipantId", void 0), T(this, "delayedCall", void 0), T(this, "offscreenTimeout", void 0), T(this, "pipOpen", void 0), T(this, "videoHealthManager", void 0), T(this, "delayedUpdate", void 0), T(this, "addLru", void 0), T(this, "updateOffscreenUsers", void 0), T(this, "handleLocalVideoDisabled", void 0), T(this, "handleLocalMute", void 0), T(this, "update", void 0), this.userId = e, this.isStageChannel = t, this.supportsSeamless = n, this.ladder = i, this.connection = null, this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.offscreenUsers = {}, this.offscreenDisabledUsers = {}, this.latestWants = f, this.participants = new Set, this.selectedParticipantId = null, this.pipOpen = !1, this.videoHealthManager = null, this.delayedUpdate = () => {
+                    super(), r = this, f(this, "userId", void 0), f(this, "isStageChannel", void 0), f(this, "supportsSeamless", void 0), f(this, "ladder", void 0), f(this, "connection", void 0), f(this, "audioSsrcs", void 0), f(this, "videoSsrcs", void 0), f(this, "remoteVideoSsrcs", void 0), f(this, "framesReceived", void 0), f(this, "streamIds", void 0), f(this, "offscreenUsers", void 0), f(this, "offscreenDisabledUsers", void 0), f(this, "latestWants", void 0), f(this, "participants", void 0), f(this, "selectedParticipantId", void 0), f(this, "delayedCall", void 0), f(this, "offscreenTimeout", void 0), f(this, "pipOpen", void 0), f(this, "simulcastDebugOverrides", void 0), f(this, "videoHealthManager", void 0), f(this, "delayedUpdate", void 0), f(this, "addLru", void 0), f(this, "updateOffscreenUsers", void 0), f(this, "handleLocalVideoDisabled", void 0), f(this, "handleLocalMute", void 0), f(this, "update", void 0), this.userId = e, this.isStageChannel = t, this.supportsSeamless = n, this.ladder = i, this.connection = null, this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.offscreenUsers = {}, this.offscreenDisabledUsers = {}, this.latestWants = S, this.participants = new Set, this.selectedParticipantId = null, this.pipOpen = !1, this.simulcastDebugOverrides = new Map, this.videoHealthManager = null, this.delayedUpdate = () => {
                         this.delayedCall.delay()
                     }, this.addLru = (e, t, n) => {
                         if (n.push(e), n.length <= 3) return;
@@ -60238,14 +60261,15 @@
                                 } else e && (n[u] = 100)
                             } else
                                 for (let e of s) n[e.ssrc] = 0;
-                            for (let e of ((!r.supportsSeamless || !o) && (a = [u]), s)) !a.includes(e.ssrc) && delete r.framesReceived[e.ssrc];
+                            let d = r.getSimulcastOverrideQuality(i);
+                            for (let e of (d === T.SimulcastOverrideQuality.HIGH ? n[u] = 100 : d === T.SimulcastOverrideQuality.LOW && (n[u] = 50), (!r.supportsSeamless || !o) && (a = [u]), s)) !a.includes(e.ssrc) && delete r.framesReceived[e.ssrc];
                             (e.includes(i) || void 0 !== r.remoteVideoSsrcs[i] && !(0, l.default)(r.remoteVideoSsrcs[i], a)) && (r.remoteVideoSsrcs[i] = [...a], r.emit("user-ssrc-update", i, r.audioSsrcs[i], a))
                         }
                         for (let [e, t] of Object.entries(r.audioSsrcs)) {
                             var i;
                             (null === (i = r.connection) || void 0 === i ? void 0 : i.getLocalMute(e)) && (n[t] = 0)
                         }
-                        return A ? r.latestWants : (null != r.connection && !(0, l.default)(r.latestWants, n) && (r.latestWants = n, r.emit("update", n)), n)
+                        return m ? r.latestWants : (null != r.connection && !(0, l.default)(r.latestWants, n) && (r.latestWants = n, r.emit("update", n)), n)
                     }, this.delayedCall = new u.DelayedCall(100, this.update), this.offscreenTimeout = new u.Timeout, E.default.subscribe(() => {
                         this.update()
                     })
@@ -88684,8 +88708,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297688", "297688"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297688")), t = 0), t
+                let t = parseInt((e = "297713", "297713"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297713")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116747,8 +116771,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297688",
-                    versionHash: "37201b77104293a06323dd3d85a3034fa57325dd"
+                    buildNumber: "297713",
+                    versionHash: "42213de6c3b58db69385fea68f31dc72b95d5eee"
                 }
             }
             n.r(t), n.d(t, {
@@ -138393,15 +138417,16 @@
                     return i
                 },
                 default: function() {
-                    return d
+                    return _
                 }
             }), n("653041"), n("47120");
             var i, r, s = n("392711"),
                 a = n.n(s),
                 o = n("47770"),
-                l = n("562319");
+                l = n("562319"),
+                u = n("65154");
 
-            function u(e, t, n) {
+            function d(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -138409,7 +138434,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }(r = i || (i = {})).RequestedSSRCsUpdate = "requested-ssrcs-update", r.RequestedStreamsUpdate = "requested-streams-update";
-            class d extends o.default {
+            class _ extends o.default {
                 setUserID(e) {
                     this.userId = e
                 }
@@ -138418,6 +138443,9 @@
                 }
                 setGoLiveStreamDowngraded(e) {
                     e !== this.downgraded && (this.downgraded = e, this.update())
+                }
+                setSimulcastDebugOverride(e, t) {
+                    e === this.userId && (this.debugQualityOverride = t, this.update())
                 }
                 setFirstFrameReceived(e) {
                     this.framesReceived.set(e, !0), this.update()
@@ -138435,7 +138463,7 @@
                         r = {
                             any: 100
                         };
-                    for (let s of (this.downgraded && e ? (i.push(t.ssrc), this.supportsSeamless && !this.framesReceived.get(t.ssrc) && this.hasEverReceivedFrame() && i.push(n.ssrc)) : (i.push(n.ssrc), this.supportsSeamless && !this.framesReceived.get(n.ssrc) && this.hasEverReceivedFrame() && i.push(t.ssrc)), i)) s === t.ssrc ? r[s] = 60 : s === n.ssrc && (r[s] = 100);
+                    for (let s of (this.downgraded && e ? (i.push(t.ssrc), this.supportsSeamless && !this.framesReceived.get(t.ssrc) && this.hasEverReceivedFrame() && i.push(n.ssrc)) : (i.push(n.ssrc), this.supportsSeamless && !this.framesReceived.get(n.ssrc) && this.hasEverReceivedFrame() && i.push(t.ssrc)), this.debugQualityOverride === u.SimulcastOverrideQuality.LOW ? i = [t.ssrc] : this.debugQualityOverride === u.SimulcastOverrideQuality.HIGH && (i = [n.ssrc]), i)) s === t.ssrc ? r[s] = 60 : s === n.ssrc && (r[s] = 100);
                     if (!l.default.isIncomingVideoEnabled())
                         for (let e in i = [], r) "any" !== e && (r[e] = 0);
                     if (this.hasEverReceivedFrame())
@@ -138443,7 +138471,7 @@
                     this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, i), this.emit("requested-streams-update", r)
                 }
                 constructor(e) {
-                    super(), u(this, "supportsSeamless", void 0), u(this, "userId", void 0), u(this, "videoStreams", void 0), u(this, "audioSSRC", void 0), u(this, "downgraded", void 0), u(this, "framesReceived", void 0), this.supportsSeamless = e, this.videoStreams = [], this.audioSSRC = 0, this.downgraded = !1, this.framesReceived = new Map, l.default.subscribe(() => {
+                    super(), d(this, "supportsSeamless", void 0), d(this, "userId", void 0), d(this, "videoStreams", void 0), d(this, "audioSSRC", void 0), d(this, "downgraded", void 0), d(this, "framesReceived", void 0), d(this, "debugQualityOverride", void 0), this.supportsSeamless = e, this.videoStreams = [], this.audioSSRC = 0, this.downgraded = !1, this.framesReceived = new Map, this.debugQualityOverride = u.SimulcastOverrideQuality.NO_OVERRIDE, l.default.subscribe(() => {
                         this.update()
                     })
                 }
@@ -171142,10 +171170,14 @@
         },
         463396: function(e, t, n) {
             "use strict";
-            n.r(t), n("789020");
+            n.r(t), n.d(t, {
+                isRemix: function() {
+                    return s
+                }
+            }), n("789020");
             var i = n("630388"),
                 r = n("981631");
-            t.default = e => null != e && null != e.attachments && !(e.attachments.length < 1) && e.attachments.some(e => null != e.flags && (0, i.hasFlag)(e.flags, r.MessageAttachmentFlags.IS_REMIX))
+            let s = e => null != e && null != e.attachments && !(e.attachments.length < 1) && e.attachments.some(e => null != e.flags && (0, i.hasFlag)(e.flags, r.MessageAttachmentFlags.IS_REMIX))
         },
         493892: function(e, t, n) {
             "use strict";
@@ -174137,8 +174169,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717112463063",
-                                    build_number: "297688"
+                                    built_at: "1717115230831",
+                                    build_number: "297713"
                                 }
                             },
                             retries: 1
@@ -240658,6 +240690,14 @@
                         i.setAppBackgrounded(t, n)
                     }
                     return e.state === h.AppStates.ACTIVE && null != i && i.resetBackoff("App state is active"), !1
+                },
+                RTC_DEBUG_SET_SIMULCAST_OVERRIDE: function(e) {
+                    let {
+                        userId: t,
+                        context: n,
+                        quality: r
+                    } = e;
+                    null == i || i.setSimulcastDebugOverride(t, n, r)
                 }
             });
             Promise.resolve().then(n.bind(n, "626135")).then(e => {
@@ -240673,13 +240713,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 graphs: function() {
-                    return f
+                    return S
                 },
                 keySection: function() {
-                    return p
+                    return C
                 },
                 parseSection: function() {
-                    return O
+                    return R
                 }
             }), n("47120"), n("653041");
             var i, r = n("442837"),
@@ -240699,10 +240739,11 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let E = p(_.MediaEngineContextTypes.DEFAULT, d.RTCDebugSections.TRANSPORT, 0),
+            let E = C(_.MediaEngineContextTypes.DEFAULT, d.RTCDebugSections.TRANSPORT, 0),
                 I = E,
                 T = {},
-                f = {
+                f = new Map,
+                S = {
                     availableOutgoingBitrate: !0,
                     bitrate: !0,
                     bitrateTarget: !0,
@@ -240723,42 +240764,46 @@
                     ping: !0
                 };
 
-            function S(e, t, n) {
+            function h(e, t, n) {
                 return "".concat(e, ":").concat(t, ":").concat(n)
             }
-            class h {
+
+            function A(e, t) {
+                return "".concat(e, ":").concat(t)
+            }
+            class m {
                 static empty() {
-                    return new h({})
+                    return new m({})
                 }
                 put(e, t, n, i) {
                     if ("" === i) {
                         let i = {
                             ...this.state
                         };
-                        return delete i[S(e, t, n)], new h(i)
+                        return delete i[h(e, t, n)], new m(i)
                     }
-                    return new h({
-                        [S(e, t, n)]: i,
+                    return new m({
+                        [h(e, t, n)]: i,
                         ...this.state
                     })
                 }
                 get(e, t, n) {
-                    let i = this.state[S(e, t, n)];
+                    let i = this.state[h(e, t, n)];
                     return null != i ? i : null
                 }
                 constructor(e) {
                     c(this, "state", void 0), this.state = e
                 }
             }
-            let A = h.empty(),
-                m = !1,
-                N = null;
+            let N = m.empty(),
+                p = !1,
+                O = null;
 
-            function p(e, t, n) {
+            function C(e, t, n) {
                 return "".concat(e, ":").concat(t, ":").concat(n)
             }
 
-            function O(e) {
+            function R(e) {
                 let [t, n] = e.split(":");
                 return {
                     context: t,
@@ -240766,17 +240811,17 @@
                 }
             }
 
-            function C() {
+            function g() {
                 Object.values(_.MediaEngineContextTypes).forEach(e => {
                     T[e] = {}
                 })
             }
-            C();
+            g();
 
-            function R() {
-                null != N && (N.destroy(), N = null)
+            function L() {
+                null != O && (O.destroy(), O = null)
             }
-            class g extends(i = r.default.Store) {
+            class v extends(i = r.default.Store) {
                 getSection() {
                     return I
                 }
@@ -240789,19 +240834,23 @@
                     return Object.values(T[e])
                 }
                 getVideoStreams() {
-                    return A
+                    return N
                 }
                 shouldRecordNextConnection() {
-                    return m
+                    return p
+                }
+                getSimulcastDebugOverride(e, t) {
+                    let n = A(e, t);
+                    return f.has(n) ? f.get(n) : _.SimulcastOverrideQuality.NO_OVERRIDE
                 }
             }
-            c(g, "displayName", "RTCDebugStore"), t.default = new g(a.default, {
+            c(v, "displayName", "RTCDebugStore"), t.default = new v(a.default, {
                 RTC_DEBUG_MODAL_OPEN: function(e) {
                     var t;
                     I = null !== (t = e.section) && void 0 !== t ? t : E
                 },
                 RTC_DEBUG_MODAL_CLOSE: function() {
-                    R()
+                    L()
                 },
                 RTC_DEBUG_MODAL_SET_SECTION: function(e) {
                     I = e.section
@@ -240841,7 +240890,7 @@
                                 } else if ("object" == typeof a && null !== a) {
                                     let n = "object" == typeof t && null !== t ? t : {};
                                     r[s] = e(a, n, i)
-                                } else if (s in f && "number" == typeof a) {
+                                } else if (s in S && "number" == typeof a) {
                                     let e = r[s] = Array.isArray(t) ? t : [];
                                     e.push({
                                         value: a,
@@ -240860,9 +240909,9 @@
                     let {
                         path: t
                     } = e, n = l.default.getMediaEngine();
-                    if (R(), !n.supports(_.Features.CONNECTION_REPLAY) || 0 === t.length) return;
+                    if (L(), !n.supports(_.Features.CONNECTION_REPLAY) || 0 === t.length) return;
                     let i = n.createReplayConnection(_.MediaEngineContextTypes.DEFAULT, t);
-                    null != i && (N = i, i.on(s.BaseConnectionEvent.Video, (e, t, n, r, s) => {
+                    null != i && (O = i, i.on(s.BaseConnectionEvent.Video, (e, t, n, r, s) => {
                         a.default.dispatch({
                             type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
                             mediaEngineConnectionId: i.mediaEngineConnectionId,
@@ -240873,16 +240922,24 @@
                     }), a.default.wait(() => o.open()))
                 },
                 RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: function(e) {
-                    A = A.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
+                    N = N.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
                 },
                 RTC_DEBUG_SET_RECORDING_FLAG: function(e) {
                     let {
                         value: t
                     } = e;
-                    m = t
+                    p = t
+                },
+                RTC_DEBUG_SET_SIMULCAST_OVERRIDE: function(e) {
+                    let {
+                        userId: t,
+                        context: n,
+                        quality: i
+                    } = e;
+                    f.set(A(t, n), i)
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
-                    null != e.channelId && C()
+                    null != e.channelId && (g(), f.clear())
                 }
             }), l.default.getMediaEngine().on(s.MediaEngineEvent.ConnectionStats, function(e) {
                 Object.values(_.MediaEngineContextTypes).forEach(t => {
@@ -244337,6 +244394,16 @@
                         layout: t
                     } = e;
                     b = t, Object.values(G).forEach(e => e.layoutChange(t))
+                },
+                RTC_DEBUG_SET_SIMULCAST_OVERRIDE: function(e) {
+                    let {
+                        userId: t,
+                        context: n,
+                        quality: i
+                    } = e;
+                    c().forEach(G, e => {
+                        e.setSimulcastDebugOverride(t, n, i)
+                    })
                 }
             })
         },
@@ -251342,7 +251409,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "37201b77104293a06323dd3d85a3034fa57325dd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "42213de6c3b58db69385fea68f31dc72b95d5eee"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271942,7 +272009,7 @@
                         })]
                     }), null != K ? (0, s.jsx)(s.Fragment, {
                         children: K
-                    }) : null, null == W || o ? null : W, null != i && (0, S.default)(i) && F && P ? (0, s.jsx)(R, {}) : null]
+                    }) : null, null == W || o ? null : W, null != i && (0, S.isRemix)(i) && F && P ? (0, s.jsx)(R, {}) : null]
                 })
             }(i = r || (r = {}))[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES"
         },
@@ -280466,7 +280533,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297688"
+                                build_number: "297713"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287775,7 +287842,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297688", "297688"), 10);
+                let s = parseInt((n = "297713", "297713"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -300673,146 +300740,149 @@
             "use strict";
             n.r(t), n.d(t, {
                 AudioSubsystems: function() {
-                    return v
-                },
-                Codecs: function() {
-                    return D
-                },
-                ConnectionStates: function() {
-                    return O
-                },
-                DEFAULT_CALL_BITRATE: function() {
-                    return W
-                },
-                DEFAULT_CALL_MAX_BITRATE: function() {
-                    return z
-                },
-                DEFAULT_CALL_MIN_BITRATE: function() {
-                    return K
-                },
-                DEFAULT_DEVICE_ID: function() {
-                    return H
-                },
-                DEFAULT_PRIORITY_SPEAKER_DUCKING: function() {
-                    return j
-                },
-                DEFAULT_SOUNDSHARE_VOICE_BITRATE: function() {
-                    return F
-                },
-                DEFAULT_STREAM_VOLUME: function() {
-                    return V
-                },
-                DEFAULT_VOICE_BITRATE: function() {
-                    return x
-                },
-                DEFAULT_VOLUME: function() {
-                    return B
-                },
-                DESKTOP_BITRATE: function() {
-                    return $
-                },
-                DESKTOP_BITRATE_ENHANCED: function() {
-                    return ee
-                },
-                DESKTOP_LOW_QUALITY_STREAM_MAX_BITRATE: function() {
-                    return et
-                },
-                DISABLED_DEVICE_ID: function() {
-                    return Y
-                },
-                DesktopSources: function() {
-                    return k.DesktopSources
-                },
-                DeviceTypes: function() {
-                    return N
-                },
-                ExperimentFlags: function() {
-                    return b
-                },
-                Features: function() {
-                    return g
-                },
-                InputModes: function() {
-                    return p
-                },
-                MEDIA_SINK_WANTS_PROPERTIES: function() {
-                    return en
-                },
-                MediaEngineContextTypes: function() {
-                    return m
-                },
-                MediaEngineImplementations: function() {
-                    return L
-                },
-                MediaTypes: function() {
-                    return y
-                },
-                NoiseCancellerError: function() {
-                    return w
-                },
-                PING_INTERVAL: function() {
-                    return Z
-                },
-                ResolutionTypes: function() {
-                    return U
-                },
-                SpeakingFlags: function() {
                     return M
                 },
-                StatsFilter: function() {
+                Codecs: function() {
+                    return y
+                },
+                ConnectionStates: function() {
                     return C
                 },
-                VIDEO_QUALITY_FRAMERATE: function() {
-                    return Q
+                DEFAULT_CALL_BITRATE: function() {
+                    return z
                 },
-                VIDEO_QUALITY_FRAMERATE_MUTED: function() {
-                    return q
-                },
-                VIDEO_QUALITY_FRAMERATE_MUTED_2: function() {
-                    return J
-                },
-                VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: function() {
+                DEFAULT_CALL_MAX_BITRATE: function() {
                     return X
                 },
-                VIEWERSIDE_CLIP_KFI_MS: function() {
+                DEFAULT_CALL_MIN_BITRATE: function() {
+                    return Z
+                },
+                DEFAULT_DEVICE_ID: function() {
+                    return j
+                },
+                DEFAULT_PRIORITY_SPEAKER_DUCKING: function() {
+                    return K
+                },
+                DEFAULT_SOUNDSHARE_VOICE_BITRATE: function() {
+                    return Y
+                },
+                DEFAULT_STREAM_VOLUME: function() {
+                    return F
+                },
+                DEFAULT_VOICE_BITRATE: function() {
+                    return H
+                },
+                DEFAULT_VOLUME: function() {
+                    return x
+                },
+                DESKTOP_BITRATE: function() {
+                    return et
+                },
+                DESKTOP_BITRATE_ENHANCED: function() {
+                    return en
+                },
+                DESKTOP_LOW_QUALITY_STREAM_MAX_BITRATE: function() {
+                    return ei
+                },
+                DISABLED_DEVICE_ID: function() {
+                    return W
+                },
+                DesktopSources: function() {
+                    return V.DesktopSources
+                },
+                DeviceTypes: function() {
+                    return p
+                },
+                ExperimentFlags: function() {
+                    return w
+                },
+                Features: function() {
+                    return v
+                },
+                InputModes: function() {
+                    return O
+                },
+                MEDIA_SINK_WANTS_PROPERTIES: function() {
                     return er
                 },
-                VideoQualityMode: function() {
+                MediaEngineContextTypes: function() {
+                    return N
+                },
+                MediaEngineImplementations: function() {
+                    return D
+                },
+                MediaTypes: function() {
+                    return U
+                },
+                NoiseCancellerError: function() {
+                    return B
+                },
+                PING_INTERVAL: function() {
+                    return Q
+                },
+                ResolutionTypes: function() {
                     return G
                 },
-                VideoToggleReason: function() {
+                SimulcastOverrideQuality: function() {
+                    return L
+                },
+                SpeakingFlags: function() {
+                    return P
+                },
+                StatsFilter: function() {
                     return R
                 },
+                VIDEO_QUALITY_FRAMERATE: function() {
+                    return J
+                },
+                VIDEO_QUALITY_FRAMERATE_MUTED: function() {
+                    return $
+                },
+                VIDEO_QUALITY_FRAMERATE_MUTED_2: function() {
+                    return ee
+                },
+                VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: function() {
+                    return q
+                },
+                VIEWERSIDE_CLIP_KFI_MS: function() {
+                    return ea
+                },
+                VideoQualityMode: function() {
+                    return k
+                },
+                VideoToggleReason: function() {
+                    return g
+                },
                 defaultVideoQualityOptions: function() {
-                    return ei
+                    return es
                 }
             });
-            var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, C, R, g, L, v, D, M, y, P, U, b, G, w, k = n("268146");
-            (i = m || (m = {})).DEFAULT = "default", i.STREAM = "stream", (r = N || (N = {})).AUDIO_INPUT = "audioinput", r.AUDIO_OUTPUT = "audiooutput", r.VIDEO_INPUT = "videoinput", (s = p || (p = {})).PUSH_TO_TALK = "PUSH_TO_TALK", s.VOICE_ACTIVITY = "VOICE_ACTIVITY", (a = O || (O = {})).DISCONNECTED = "DISCONNECTED", a.CONNECTING = "CONNECTING", a.CONNECTED = "CONNECTED", a.NO_ROUTE = "NO_ROUTE", a.ICE_CHECKING = "ICE_CHECKING", a.DTLS_CONNECTING = "DTLS_CONNECTING", (o = C || (C = {}))[o.TRANSPORT = 1] = "TRANSPORT", o[o.OUTBOUND = 2] = "OUTBOUND", o[o.INBOUND = 4] = "INBOUND", o[o.ALL = 7] = "ALL", (l = R || (R = {})).MANUAL_DISABLE = "video_manual_disable", l.MANUAL_ENABLE = "video_manual_enable", l.MANUAL_REENABLE = "video_manual_reenable", l.AUTO_DISABLE = "video_auto_disable", l.AUTO_ENABLE = "video_auto_enable", l.AUTO_DOWNGRADE = "video_auto_downgrade", l.AUTO_UPGRADE = "video_auto_upgrade,";
-            let B = 100,
-                V = 18,
-                x = 64e3,
-                F = 128e3,
-                H = "default",
-                Y = "disabled",
-                j = .1,
-                W = 6e5,
-                K = 15e4,
-                z = 1e7,
-                Z = 5e3,
-                X = 15e3,
-                Q = 30,
-                q = 20,
-                J = 12,
-                $ = 4e6,
-                ee = 8e6,
-                et = 5e5,
-                en = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
-                ei = {
+            var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, C, R, g, L, v, D, M, y, P, U, b, G, w, k, B, V = n("268146");
+            (i = N || (N = {})).DEFAULT = "default", i.STREAM = "stream", (r = p || (p = {})).AUDIO_INPUT = "audioinput", r.AUDIO_OUTPUT = "audiooutput", r.VIDEO_INPUT = "videoinput", (s = O || (O = {})).PUSH_TO_TALK = "PUSH_TO_TALK", s.VOICE_ACTIVITY = "VOICE_ACTIVITY", (a = C || (C = {})).DISCONNECTED = "DISCONNECTED", a.CONNECTING = "CONNECTING", a.CONNECTED = "CONNECTED", a.NO_ROUTE = "NO_ROUTE", a.ICE_CHECKING = "ICE_CHECKING", a.DTLS_CONNECTING = "DTLS_CONNECTING", (o = R || (R = {}))[o.TRANSPORT = 1] = "TRANSPORT", o[o.OUTBOUND = 2] = "OUTBOUND", o[o.INBOUND = 4] = "INBOUND", o[o.ALL = 7] = "ALL", (l = g || (g = {})).MANUAL_DISABLE = "video_manual_disable", l.MANUAL_ENABLE = "video_manual_enable", l.MANUAL_REENABLE = "video_manual_reenable", l.AUTO_DISABLE = "video_auto_disable", l.AUTO_ENABLE = "video_auto_enable", l.AUTO_DOWNGRADE = "video_auto_downgrade", l.AUTO_UPGRADE = "video_auto_upgrade,", (u = L || (L = {})).NO_OVERRIDE = "no_override", u.HIGH = "high", u.LOW = "low";
+            let x = 100,
+                F = 18,
+                H = 64e3,
+                Y = 128e3,
+                j = "default",
+                W = "disabled",
+                K = .1,
+                z = 6e5,
+                Z = 15e4,
+                X = 1e7,
+                Q = 5e3,
+                q = 15e3,
+                J = 30,
+                $ = 20,
+                ee = 12,
+                et = 4e6,
+                en = 8e6,
+                ei = 5e5,
+                er = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
+                es = {
                     videoBudget: {
                         width: 1280,
                         height: 720,
-                        framerate: Q
+                        framerate: J
                     },
                     videoCapture: {
                         width: 1280,
@@ -300830,8 +300900,8 @@
                     },
                     videoBitrateFloor: 15e4
                 },
-                er = 6e4;
-            (u = g || (g = {})).AUTO_ENABLE = "AUTO_ENABLE", u.ATTENUATION = "ATTENUATION", u.AUDIO_INPUT_DEVICE = "AUDIO_INPUT_DEVICE", u.AUDIO_OUTPUT_DEVICE = "AUDIO_OUTPUT_DEVICE", u.VOICE_PROCESSING = "VOICE_PROCESSING", u.QOS = "QOS", u.NATIVE_PING = "NATIVE_PING", u.LEGACY_AUDIO_SUBSYSTEM = "LEGACY_AUDIO_SUBSYSTEM", u.EXPERIMENTAL_AUDIO_SUBSYSTEM = "EXPERIMENTAL_AUDIO_SUBSYSTEM", u.DEBUG_LOGGING = "DEBUG_LOGGING", u.AUTOMATIC_VAD = "AUTOMATIC_VAD", u.VOICE_PANNING = "VOICE_PANNING", u.DIAGNOSTICS = "DIAGNOSTICS", u.VIDEO = "VIDEO", u.DESKTOP_CAPTURE = "DESKTOP_CAPTURE", u.DESKTOP_CAPTURE_FORMAT = "DESKTOP_CAPTURE_FORMAT", u.DESKTOP_CAPTURE_APPLICATIONS = "DESKTOP_CAPTURE_APPLICATIONS", u.SOUNDSHARE = "SOUNDSHARE", u.LOOPBACK = "LOOPBACK", u.VIDEO_HOOK = "VIDEO_HOOK", u.EXPERIMENTAL_SOUNDSHARE = "EXPERIMENTAL_SOUNDSHARE", u.WUMPUS_VIDEO = "WUMPUS_VIDEO", u.ELEVATED_HOOK = "ELEVATED_HOOK", u.HYBRID_VIDEO = "HYBRID_VIDEO", u.OPEN_H264 = "OPEN_H264", u.EXPERIMENTAL_ENCODERS = "EXPERIMENTAL_ENCODERS", u.REMOTE_LOCUS_NETWORK_CONTROL = "REMOTE_LOCUS_NETWORK_CONTROL", u.SCREEN_PREVIEWS = "SCREEN_PREVIEWS", u.WINDOW_PREVIEWS = "WINDOW_PREVIEWS", u.AUDIO_DEBUG_STATE = "AUDIO_DEBUG_STATE", u.AEC_DUMP = "AEC_DUMP", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.CONNECTION_REPLAY = "CONNECTION_REPLAY", u.SIMULCAST = "SIMULCAST", u.RTC_REGION_RANKING = "RTC_REGION_RANKING", u.DIRECT_VIDEO = "DIRECT_VIDEO", u.ELECTRON_VIDEO = "ELECTRON_VIDEO", u.MEDIAPIPE = "MEDIAPIPE", u.FIXED_KEYFRAME_INTERVAL = "FIXED_KEYFRAME_INTERVAL", u.SAMPLE_PLAYBACK = "SAMPLE_PLAYBACK", u.FIRST_FRAME_CALLBACK = "FIRST_FRAME_CALLBACK", u.REMOTE_USER_MULTI_STREAM = "REMOTE_USER_MULTI_STREAM", u.NOISE_SUPPRESSION = "NOISE_SUPPRESSION", u.NOISE_CANCELLATION = "NOISE_CANCELLATION", u.AUTOMATIC_GAIN_CONTROL = "AUTOMATIC_GAIN_CONTROL", u.CLIPS = "CLIPS", u.SPEED_TEST = "SPEED_TEST", u.IMAGE_QUALITY_MEASUREMENT = "IMAGE_QUALITY_MEASUREMENT", u.AMD_EXPERIMENTAL_RATE_CONTROL = "AMD_EXPERIMENTAL_RATE_CONTROL", u.GO_LIVE_HARDWARE = "GO_LIVE_HARDWARE", u.SCREEN_CAPTURE_KIT = "SCREEN_CAPTURE_KIT", u.CAPTURE_TIMEOUT_EXPERIMENTS = "CAPTURE_TIMEOUT_EXPERIMENTS", u.SCREEN_SOUNDSHARE = "SCREEN_SOUNDSHARE", (d = L || (L = {})).NATIVE = "NATIVE", d.WEBRTC = "WEBRTC", d.DUMMY = "DUMMY", (_ = v || (v = {})).LEGACY = "legacy", _.STANDARD = "standard", _.EXPERIMENTAL = "experimental", (c = D || (D = {})).OPUS = "opus", c.VP8 = "VP8", c.VP9 = "VP9", c.H264 = "H264", c.RTX = "rtx", c.TEST = "TEST", (E = M || (M = {}))[E.NONE = 0] = "NONE", E[E.VOICE = 1] = "VOICE", E[E.SOUNDSHARE = 2] = "SOUNDSHARE", E[E.PRIORITY = 4] = "PRIORITY", (I = y || (y = {})).AUDIO = "audio", I.VIDEO = "video", I.SCREEN = "screen", I.TEST = "test", (T = P || (P = {})).PLAYING = "playing", T.PAUSED = "paused", (f = U || (U = {})).FIXED = "fixed", f.SOURCE = "source", (S = b || (b = {})).VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", S.SIGNAL_H265_SUPPORT = "signal_h265_support", S.SIGNAL_H265_DECODE_SUPPORT = "signal_h265_decode_support", S.SIGNAL_AV1_SUPPORT = "signal_av1_support", S.SIGNAL_AV1_HARDWARE_DECODE = "signal_av1_hardware_decode", S.STREAMER_CLIP = "streamer_clip", S.VIEWER_CLIP = "viewer_clip", S.MUTE_BEFORE_PROCESSING = "mute_before_processing", S.PTT_BEFORE_PROCESSING = "ptt_before_processing", S.SKIP_ENCODE = "skip_encode", S.RESET_DECODER_ON_ERRORS = "reset_decoder_on_errors", S.SOFTWARE_FALLBACK_ON_ERRORS = "software_fallback_on_errors", S.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS = "software_fallback_on_consecutive_errors", S.GOLIVE_SIMULCAST = "golive_simulcast", (h = G || (G = {}))[h.AUTO = 1] = "AUTO", h[h.FULL = 2] = "FULL", (A = w || (w = {}))[A.CPU_OVERUSE = 1] = "CPU_OVERUSE", A[A.FAILED = 2] = "FAILED", A[A.VAD_CPU_OVERUSE = 3] = "VAD_CPU_OVERUSE", A[A.INITIALIZED = 4] = "INITIALIZED"
+                ea = 6e4;
+            (d = v || (v = {})).AUTO_ENABLE = "AUTO_ENABLE", d.ATTENUATION = "ATTENUATION", d.AUDIO_INPUT_DEVICE = "AUDIO_INPUT_DEVICE", d.AUDIO_OUTPUT_DEVICE = "AUDIO_OUTPUT_DEVICE", d.VOICE_PROCESSING = "VOICE_PROCESSING", d.QOS = "QOS", d.NATIVE_PING = "NATIVE_PING", d.LEGACY_AUDIO_SUBSYSTEM = "LEGACY_AUDIO_SUBSYSTEM", d.EXPERIMENTAL_AUDIO_SUBSYSTEM = "EXPERIMENTAL_AUDIO_SUBSYSTEM", d.DEBUG_LOGGING = "DEBUG_LOGGING", d.AUTOMATIC_VAD = "AUTOMATIC_VAD", d.VOICE_PANNING = "VOICE_PANNING", d.DIAGNOSTICS = "DIAGNOSTICS", d.VIDEO = "VIDEO", d.DESKTOP_CAPTURE = "DESKTOP_CAPTURE", d.DESKTOP_CAPTURE_FORMAT = "DESKTOP_CAPTURE_FORMAT", d.DESKTOP_CAPTURE_APPLICATIONS = "DESKTOP_CAPTURE_APPLICATIONS", d.SOUNDSHARE = "SOUNDSHARE", d.LOOPBACK = "LOOPBACK", d.VIDEO_HOOK = "VIDEO_HOOK", d.EXPERIMENTAL_SOUNDSHARE = "EXPERIMENTAL_SOUNDSHARE", d.WUMPUS_VIDEO = "WUMPUS_VIDEO", d.ELEVATED_HOOK = "ELEVATED_HOOK", d.HYBRID_VIDEO = "HYBRID_VIDEO", d.OPEN_H264 = "OPEN_H264", d.EXPERIMENTAL_ENCODERS = "EXPERIMENTAL_ENCODERS", d.REMOTE_LOCUS_NETWORK_CONTROL = "REMOTE_LOCUS_NETWORK_CONTROL", d.SCREEN_PREVIEWS = "SCREEN_PREVIEWS", d.WINDOW_PREVIEWS = "WINDOW_PREVIEWS", d.AUDIO_DEBUG_STATE = "AUDIO_DEBUG_STATE", d.AEC_DUMP = "AEC_DUMP", d.DISABLE_VIDEO = "DISABLE_VIDEO", d.CONNECTION_REPLAY = "CONNECTION_REPLAY", d.SIMULCAST = "SIMULCAST", d.RTC_REGION_RANKING = "RTC_REGION_RANKING", d.DIRECT_VIDEO = "DIRECT_VIDEO", d.ELECTRON_VIDEO = "ELECTRON_VIDEO", d.MEDIAPIPE = "MEDIAPIPE", d.FIXED_KEYFRAME_INTERVAL = "FIXED_KEYFRAME_INTERVAL", d.SAMPLE_PLAYBACK = "SAMPLE_PLAYBACK", d.FIRST_FRAME_CALLBACK = "FIRST_FRAME_CALLBACK", d.REMOTE_USER_MULTI_STREAM = "REMOTE_USER_MULTI_STREAM", d.NOISE_SUPPRESSION = "NOISE_SUPPRESSION", d.NOISE_CANCELLATION = "NOISE_CANCELLATION", d.AUTOMATIC_GAIN_CONTROL = "AUTOMATIC_GAIN_CONTROL", d.CLIPS = "CLIPS", d.SPEED_TEST = "SPEED_TEST", d.IMAGE_QUALITY_MEASUREMENT = "IMAGE_QUALITY_MEASUREMENT", d.AMD_EXPERIMENTAL_RATE_CONTROL = "AMD_EXPERIMENTAL_RATE_CONTROL", d.GO_LIVE_HARDWARE = "GO_LIVE_HARDWARE", d.SCREEN_CAPTURE_KIT = "SCREEN_CAPTURE_KIT", d.CAPTURE_TIMEOUT_EXPERIMENTS = "CAPTURE_TIMEOUT_EXPERIMENTS", d.SCREEN_SOUNDSHARE = "SCREEN_SOUNDSHARE", (_ = D || (D = {})).NATIVE = "NATIVE", _.WEBRTC = "WEBRTC", _.DUMMY = "DUMMY", (c = M || (M = {})).LEGACY = "legacy", c.STANDARD = "standard", c.EXPERIMENTAL = "experimental", (E = y || (y = {})).OPUS = "opus", E.VP8 = "VP8", E.VP9 = "VP9", E.H264 = "H264", E.RTX = "rtx", E.TEST = "TEST", (I = P || (P = {}))[I.NONE = 0] = "NONE", I[I.VOICE = 1] = "VOICE", I[I.SOUNDSHARE = 2] = "SOUNDSHARE", I[I.PRIORITY = 4] = "PRIORITY", (T = U || (U = {})).AUDIO = "audio", T.VIDEO = "video", T.SCREEN = "screen", T.TEST = "test", (f = b || (b = {})).PLAYING = "playing", f.PAUSED = "paused", (S = G || (G = {})).FIXED = "fixed", S.SOURCE = "source", (h = w || (w = {})).VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", h.SIGNAL_H265_SUPPORT = "signal_h265_support", h.SIGNAL_H265_DECODE_SUPPORT = "signal_h265_decode_support", h.SIGNAL_AV1_SUPPORT = "signal_av1_support", h.SIGNAL_AV1_HARDWARE_DECODE = "signal_av1_hardware_decode", h.STREAMER_CLIP = "streamer_clip", h.VIEWER_CLIP = "viewer_clip", h.MUTE_BEFORE_PROCESSING = "mute_before_processing", h.PTT_BEFORE_PROCESSING = "ptt_before_processing", h.SKIP_ENCODE = "skip_encode", h.RESET_DECODER_ON_ERRORS = "reset_decoder_on_errors", h.SOFTWARE_FALLBACK_ON_ERRORS = "software_fallback_on_errors", h.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS = "software_fallback_on_consecutive_errors", h.GOLIVE_SIMULCAST = "golive_simulcast", (A = k || (k = {}))[A.AUTO = 1] = "AUTO", A[A.FULL = 2] = "FULL", (m = B || (B = {}))[m.CPU_OVERUSE = 1] = "CPU_OVERUSE", m[m.FAILED = 2] = "FAILED", m[m.VAD_CPU_OVERUSE = 3] = "VAD_CPU_OVERUSE", m[m.INITIALIZED = 4] = "INITIALIZED"
         },
         135670: function(e, t, n) {
             "use strict";
@@ -315626,4 +315696,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.030a93318c2b01437485.js.map
+//# sourceMappingURL=27519.b8ddfe66c6e31a301503.js.map
