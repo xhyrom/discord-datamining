@@ -19153,7 +19153,7 @@
                             clan: null == G ? void 0 : G.clan,
                             userId: null == G ? void 0 : G.id,
                             contextGuildId: j,
-                            disableGuildProfile: !0,
+                            disableTooltip: !0,
                             className: M.clanTag,
                             profileViewedAnalytics: eS
                         })]
@@ -37096,7 +37096,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297891", ", Version Hash: ").concat("efbd3613a199b518b8ba9c38bf8f54b8feabdf9f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297888", ", Version Hash: ").concat("50db60186a42591b1aa4980773757e7c7f47a206")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88724,8 +88724,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297891", "297891"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297891")), t = 0), t
+                let t = parseInt((e = "297888", "297888"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297888")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -104927,38 +104927,37 @@
                 }),
                 N = r.memo(function(e) {
                     let {
-                        guildId: t,
-                        clanTag: n,
-                        clanBadge: r,
-                        className: s,
-                        textClassName: o,
-                        badgeClassName: u,
-                        onClick: d,
-                        onMouseEnter: _,
-                        textVariant: c = "text-xs/medium",
-                        textColor: E = "text-normal",
-                        badgeSize: f = S.ClanTagBadgeSize.SIZE_12,
-                        inline: h = !0
+                        clanTag: t,
+                        clanBadge: n,
+                        className: r,
+                        textClassName: s,
+                        badgeClassName: o,
+                        onClick: u,
+                        onMouseEnter: d,
+                        textVariant: _ = "text-xs/medium",
+                        textColor: c = "text-normal",
+                        badgeSize: E = S.ClanTagBadgeSize.SIZE_12,
+                        inline: I = !0
                     } = e;
                     return (0, T.default)("base_clan_tag_chiplet") ? (0, i.jsx)(l.Clickable, {
                         tag: "span",
-                        tabIndex: null == d ? -1 : void 0,
-                        onClick: d,
-                        onMouseEnter: _,
-                        className: a()(A.chipletContainerInner, h && A.chipletContainerInline, null != d && A.clickable, s),
+                        tabIndex: null == u ? -1 : void 0,
+                        onClick: u,
+                        onMouseEnter: d,
+                        className: a()(A.chipletContainerInner, I && A.chipletContainerInline, null != u && A.clickable, r),
                         children: (0, i.jsxs)(l.Text, {
-                            variant: c,
-                            color: E,
+                            variant: _,
+                            color: c,
                             tag: "span",
-                            className: a()(A.text, o),
-                            children: [null != r && "string" == typeof r ? (0, i.jsx)(m, {
-                                src: (0, I.getClanBadgeUrl)(t, r, f),
-                                tag: null == n ? void 0 : n.toString(),
-                                size: f,
-                                className: u
-                            }) : r, (0, i.jsx)("span", {
+                            className: a()(A.text, s),
+                            children: [null != n && "string" == typeof n ? (0, i.jsx)(m, {
+                                tag: null == t ? void 0 : t.toString(),
+                                src: n,
+                                size: E,
+                                className: o
+                            }) : n, (0, i.jsx)("span", {
                                 className: A.unselectable,
-                                children: n
+                                children: t
                             })]
                         })
                     }) : null
@@ -105030,7 +105029,7 @@
                     textVariant: u,
                     textColor: d,
                     badgeSize: _,
-                    disableGuildProfile: E = !1,
+                    disableTooltip: E = !1,
                     inline: T = !0,
                     profileViewedAnalytics: f
                 } = e, S = (0, o.useStateFromStores)([c.default], () => c.default.getUser(r), [r]), h = null !== (t = null == S ? void 0 : S.clan) && void 0 !== t ? t : n, {
@@ -105038,10 +105037,11 @@
                     badge: C,
                     guildId: R
                 } = (0, I.getUserClanData)(h);
-                return O(r, s) && null != R ? E ? (0, i.jsx)(N, {
-                    guildId: R,
+                if (!O(r, s) || null == R) return null;
+                let g = (0, I.getClanBadgeUrl)(R, C, _);
+                return E ? (0, i.jsx)(N, {
                     clanTag: m,
-                    clanBadge: C,
+                    clanBadge: g,
                     className: a()(A.noTooltip, l),
                     textVariant: u,
                     textColor: d,
@@ -105052,16 +105052,15 @@
                     userId: r,
                     profileViewedAnalytics: f,
                     children: (0, i.jsx)(N, {
-                        guildId: R,
                         clanTag: m,
-                        clanBadge: C,
+                        clanBadge: g,
                         className: l,
                         textVariant: u,
                         textColor: d,
                         badgeSize: _,
                         inline: T
                     })
-                }) : null
+                })
             })
         },
         214715: function(e, t, n) {
@@ -116788,8 +116787,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297891",
-                    versionHash: "efbd3613a199b518b8ba9c38bf8f54b8feabdf9f"
+                    buildNumber: "297888",
+                    versionHash: "50db60186a42591b1aa4980773757e7c7f47a206"
                 }
             }
             n.r(t), n.d(t, {
@@ -174190,8 +174189,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717176574382",
-                                    build_number: "297891"
+                                    built_at: "1717176382801",
+                                    build_number: "297888"
                                 }
                             },
                             retries: 1
@@ -251548,7 +251547,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "efbd3613a199b518b8ba9c38bf8f54b8feabdf9f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "50db60186a42591b1aa4980773757e7c7f47a206"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280673,7 +280672,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297891"
+                                build_number: "297888"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287982,7 +287981,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297891", "297891"), 10);
+                let s = parseInt((n = "297888", "297888"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315836,4 +315835,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.84bae821f4903733790c.js.map
+//# sourceMappingURL=27519.66c6b463d2b949cc1620.js.map
