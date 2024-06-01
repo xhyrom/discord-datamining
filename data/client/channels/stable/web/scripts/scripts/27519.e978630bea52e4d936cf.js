@@ -18972,7 +18972,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 AVATAR_DECORATION_PADDING: function() {
-                    return y
+                    return P
                 }
             }), n("47120");
             var i = n("735250"),
@@ -18986,231 +18986,232 @@
                 _ = n("33934"),
                 c = n("736144"),
                 E = n("113434"),
-                I = n("553393"),
-                T = n("509275"),
-                f = n("204197"),
-                S = n("594174"),
-                h = n("467679"),
-                A = n("681426"),
-                m = n("551388"),
-                N = n("709586"),
-                p = n("360048"),
-                O = n("624138"),
-                C = n("51144"),
-                R = n("788307"),
-                g = n("981631"),
-                L = n("674563"),
-                v = n("524484"),
-                D = n("689938"),
-                M = n("895294");
-            let y = (0, O.cssValueToNumber)(o.default.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING);
+                I = n("918701"),
+                T = n("553393"),
+                f = n("509275"),
+                S = n("204197"),
+                h = n("594174"),
+                A = n("467679"),
+                m = n("681426"),
+                N = n("551388"),
+                p = n("709586"),
+                O = n("360048"),
+                C = n("624138"),
+                R = n("51144"),
+                g = n("788307"),
+                L = n("981631"),
+                v = n("674563"),
+                D = n("524484"),
+                M = n("689938"),
+                y = n("895294");
+            let P = (0, C.cssValueToNumber)(o.default.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING);
             t.default = function(e) {
                 var t;
                 let {
                     selected: n = !1,
                     colorString: s,
                     colorRoleName: o,
-                    isOwner: O,
-                    ownerTooltipText: y,
-                    lostPermissionTooltipText: P,
-                    isTyping: U = !1,
-                    nick: b,
-                    user: G,
-                    currentUser: w,
-                    activities: k,
-                    applicationStream: B,
-                    status: V,
-                    shouldAnimateStatus: x = !1,
-                    isMobile: F,
-                    premiumSince: H,
-                    channel: Y,
-                    guildId: j,
-                    lastOnlineTimestamp: W,
-                    className: K,
-                    onMouseDown: z,
-                    onKeyDown: Z,
-                    onClick: X,
-                    onContextMenu: Q,
-                    onClickPremiumGuildIcon: q,
-                    onFocus: J,
-                    "aria-controls": $,
-                    "aria-expanded": ee,
-                    "aria-posinset": et,
-                    "aria-setsize": en,
-                    id: ei,
-                    tabIndex: er,
-                    itemProps: es
-                } = e, ea = null == G ? void 0 : G.id, eo = C.default.useName(G), el = (null === (t = S.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === ea, eu = r.useRef(null), [ed, e_] = r.useState(!1), [ec, eE] = r.useState(null), {
-                    avatarDecorationSrc: eI,
-                    avatarSrc: eT,
-                    eventHandlers: ef
-                } = (0, f.default)({
-                    user: G,
+                    isOwner: C,
+                    ownerTooltipText: P,
+                    lostPermissionTooltipText: U,
+                    isTyping: b = !1,
+                    nick: G,
+                    user: w,
+                    currentUser: k,
+                    activities: B,
+                    applicationStream: V,
+                    status: x,
+                    shouldAnimateStatus: F = !1,
+                    isMobile: H,
+                    premiumSince: Y,
+                    channel: j,
+                    guildId: W,
+                    lastOnlineTimestamp: K,
+                    className: z,
+                    onMouseDown: Z,
+                    onKeyDown: X,
+                    onClick: Q,
+                    onContextMenu: q,
+                    onClickPremiumGuildIcon: J,
+                    onFocus: $,
+                    "aria-controls": ee,
+                    "aria-expanded": et,
+                    "aria-posinset": en,
+                    "aria-setsize": ei,
+                    id: er,
+                    tabIndex: es,
+                    itemProps: ea
+                } = e, eo = null == w ? void 0 : w.id, el = R.default.useName(w), eu = (null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === eo, ed = r.useRef(null), [e_, ec] = r.useState(!1), [eE, eI] = r.useState(null), {
+                    avatarDecorationSrc: eT,
+                    avatarSrc: ef,
+                    eventHandlers: eS
+                } = (0, S.default)({
+                    user: w,
                     size: l.AvatarSizes.SIZE_32,
-                    animateOnHover: !(n || ed),
-                    guildId: j
-                }), eS = r.useMemo(() => ({
-                    source: g.AnalyticsSections.MEMBER_LIST,
-                    tagUserId: ea
-                }), [ea]), [eh, eA] = r.useState(!1);
+                    animateOnHover: !(n || e_),
+                    guildId: W
+                }), eh = r.useMemo(() => ({
+                    source: L.AnalyticsSections.MEMBER_LIST,
+                    tagUserId: eo
+                }), [eo]), [eA, em] = r.useState(!1);
                 r.useEffect(() => {
-                    n && eA(!1)
+                    n && em(!1)
                 }, [n]);
-                let em = (0, E.useQuestFromActivities)(k),
-                    eN = null != em && !el && n && !eh,
-                    ep = () => {
-                        e_(!0)
-                    },
+                let eN = (0, E.useQuestFromActivities)(B),
+                    ep = null != eN && !eu && n && !eA && (0, I.shouldShowSocialEntrypoints)(eN),
                     eO = () => {
-                        e_(!1)
+                        ec(!0)
                     },
-                    eC = e => {
-                        eE(e)
+                    eC = () => {
+                        ec(!1)
                     },
-                    eR = () => {
-                        let e = null != k ? k.find(e => e.type === g.ActivityTypes.CUSTOM_STATUS) : null,
-                            t = null != e && null != G && (0, _.default)(e, G, Y);
-                        if (null != W && null == e) {
-                            let e = (0, T.formatRecentlyOnlineStatus)(W);
+                    eR = e => {
+                        eI(e)
+                    },
+                    eg = () => {
+                        let e = null != B ? B.find(e => e.type === L.ActivityTypes.CUSTOM_STATUS) : null,
+                            t = null != e && null != w && (0, _.default)(e, w, j);
+                        if (null != K && null == e) {
+                            let e = (0, f.formatRecentlyOnlineStatus)(K);
                             return (0, i.jsx)("div", {
-                                className: M.subtext,
+                                className: y.subtext,
                                 children: e
                             })
                         }
-                        return (0, i.jsx)(R.default, {
-                            className: M.activity,
-                            textClassName: M.activityText,
-                            emojiClassName: M.activityEmoji,
-                            activities: k,
-                            applicationStream: B,
-                            animate: ed,
+                        return (0, i.jsx)(g.default, {
+                            className: y.activity,
+                            textClassName: y.activityText,
+                            emojiClassName: y.activityEmoji,
+                            activities: B,
+                            applicationStream: V,
+                            animate: e_,
                             hideEmoji: !t,
                             hideTooltip: !0,
-                            user: G,
-                            hasQuest: null != em
+                            user: w,
+                            hasQuest: null != eN && (0, I.shouldShowSocialEntrypoints)(eN)
                         })
                     },
-                    eg = () => null != O && O && null == P ? (0, i.jsx)(l.Tooltip, {
-                        text: null != y ? y : D.default.Messages.GUILD_OWNER,
-                        children: e => (0, i.jsx)(m.default, {
+                    eL = () => null != C && C && null == U ? (0, i.jsx)(l.Tooltip, {
+                        text: null != P ? P : M.default.Messages.GUILD_OWNER,
+                        children: e => (0, i.jsx)(N.default, {
                             ...e,
-                            className: M.ownerIcon
+                            className: y.ownerIcon
                         })
                     }) : null,
-                    eL = () => null == H ? null : (0, i.jsx)(l.Tooltip, {
-                        text: D.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_TOOLTIP.format({
-                            date: H
+                    ev = () => null == Y ? null : (0, i.jsx)(l.Tooltip, {
+                        text: M.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_TOOLTIP.format({
+                            date: Y
                         }),
                         children: e => (0, i.jsx)(l.Clickable, {
-                            onClick: q,
+                            onClick: J,
                             tabIndex: -1,
-                            children: (0, i.jsx)(N.default, {
+                            children: (0, i.jsx)(p.default, {
                                 ...e,
-                                className: M.premiumIcon
+                                className: y.premiumIcon
                             })
                         })
                     }),
-                    ev = () => {
-                        let e = (null == G ? void 0 : G.isClyde()) ? L.BotTagTypes.AI : L.BotTagTypes.BOT;
-                        return null != G && G.bot ? (0, i.jsx)(h.default, {
-                            className: M.botTag,
+                    eD = () => {
+                        let e = (null == w ? void 0 : w.isClyde()) ? v.BotTagTypes.AI : v.BotTagTypes.BOT;
+                        return null != w && w.bot ? (0, i.jsx)(A.default, {
+                            className: y.botTag,
                             type: e,
-                            verified: G.isVerifiedBot()
+                            verified: w.isVerifiedBot()
                         }) : null
                     },
-                    eD = () => (0, i.jsxs)(i.Fragment, {
-                        children: [ev(), eg(), eL()]
+                    eM = () => (0, i.jsxs)(i.Fragment, {
+                        children: [eD(), eL(), ev()]
                     }),
-                    eM = (e, t) => {
-                        let n = x ? l.AnimatedAvatar : l.Avatar,
-                            r = (0, u.default)(k) ? g.StatusTypes.STREAMING : V;
+                    ey = (e, t) => {
+                        let n = F ? l.AnimatedAvatar : l.Avatar,
+                            r = (0, u.default)(B) ? L.StatusTypes.STREAMING : x;
                         return r = t ? void 0 : r, (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(n, {
-                                ...ef,
+                                ...eS,
                                 size: l.AvatarSizes.SIZE_32,
-                                src: eT,
-                                isMobile: F,
-                                isTyping: U,
+                                src: ef,
+                                isMobile: H,
+                                isTyping: b,
                                 status: r,
                                 "aria-label": e.username,
                                 statusTooltip: !0,
-                                avatarDecoration: eI,
-                                typingIndicatorRef: eC
+                                avatarDecoration: eT,
+                                typingIndicatorRef: eR
                             }), (0, i.jsx)(c.default, {
-                                confettiSpawnRef: ec,
-                                shouldFire: U && null != w && e.id !== w.id,
-                                confettiLocation: v.ConfettiLocation.MEMBER_USER
+                                confettiSpawnRef: eE,
+                                shouldFire: b && null != k && e.id !== k.id,
+                                confettiLocation: D.ConfettiLocation.MEMBER_USER
                             })]
                         })
                     },
-                    ey = () => (0, i.jsxs)(i.Fragment, {
+                    eP = () => (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(l.NameWithRole, {
                             roleName: o,
                             color: null != s ? s : void 0,
-                            name: null != b ? b : eo,
-                            className: M.name
+                            name: null != G ? G : el,
+                            className: y.name
                         }), (0, i.jsx)(d.default, {
-                            clan: null == G ? void 0 : G.clan,
-                            userId: null == G ? void 0 : G.id,
-                            contextGuildId: j,
+                            clan: null == w ? void 0 : w.clan,
+                            userId: null == w ? void 0 : w.id,
+                            contextGuildId: W,
                             disableGuildProfile: !0,
-                            className: M.clanTag,
-                            profileViewedAnalytics: eS
+                            className: y.clanTag,
+                            profileViewedAnalytics: eh
                         })]
                     }),
-                    eP = V === g.StatusTypes.OFFLINE,
-                    eU = null != W;
-                return null == G ? (0, i.jsx)(A.default, {
+                    eU = x === L.StatusTypes.OFFLINE,
+                    eb = null != K;
+                return null == w ? (0, i.jsx)(m.default, {
                     avatarSize: l.AvatarSizes.SIZE_32,
-                    className: M.placeholder
+                    className: y.placeholder
                 }) : (0, i.jsx)(l.Popout, {
-                    renderPopout: e => (0, i.jsx)(I.default, {
-                        quest: em,
-                        memberListItemRef: eu,
-                        applicationStream: B,
+                    renderPopout: e => (0, i.jsx)(T.default, {
+                        quest: eN,
+                        memberListItemRef: ed,
+                        applicationStream: V,
                         ...e,
-                        closePopout: () => eA(!0)
+                        closePopout: () => em(!0)
                     }),
                     position: "bottom",
-                    shouldShow: eN,
+                    shouldShow: ep,
                     nudgeAlignIntoViewport: !1,
                     useRawTargetDimensions: !0,
                     animation: l.Popout.Animation.NONE,
                     spacing: -3,
-                    children: () => (0, i.jsx)(p.default, {
-                        ref: eu,
+                    children: () => (0, i.jsx)(O.default, {
+                        ref: ed,
                         selected: n,
-                        className: a()(M.member, K, {
-                            [M.offline]: eP && !eU && !n
+                        className: a()(y.member, z, {
+                            [y.offline]: eU && !eb && !n
                         }),
-                        innerClassName: M.memberInner,
-                        onClick: X,
-                        onKeyDown: Z,
-                        onMouseDown: z,
-                        onContextMenu: Q,
-                        onMouseEnter: ep,
-                        onMouseLeave: eO,
-                        name: null == P ? (0, i.jsx)("span", {
-                            className: M.username,
-                            children: ey()
+                        innerClassName: y.memberInner,
+                        onClick: Q,
+                        onKeyDown: X,
+                        onMouseDown: Z,
+                        onContextMenu: q,
+                        onMouseEnter: eO,
+                        onMouseLeave: eC,
+                        name: null == U ? (0, i.jsx)("span", {
+                            className: y.username,
+                            children: eP()
                         }) : (0, i.jsx)(l.Tooltip, {
-                            text: P,
+                            text: U,
                             children: e => (0, i.jsx)("span", {
                                 ...e,
-                                className: a()(M.username, M.lostPermission),
-                                children: ey()
+                                className: a()(y.username, y.lostPermission),
+                                children: eP()
                             })
                         }),
-                        avatar: eM(G, eP),
-                        subText: eR(),
-                        decorators: eD(),
-                        "aria-controls": $,
-                        "aria-expanded": ee,
-                        "aria-setsize": en,
-                        "aria-posinset": et,
-                        id: ei,
-                        tabIndex: er,
-                        onFocus: J,
+                        avatar: ey(w, eU),
+                        subText: eg(),
+                        decorators: eM(),
+                        "aria-controls": ee,
+                        "aria-expanded": et,
+                        "aria-setsize": ei,
+                        "aria-posinset": en,
+                        id: er,
+                        tabIndex: es,
+                        onFocus: $,
                         focusProps: {
                             offset: {
                                 top: 4,
@@ -19219,7 +19220,7 @@
                                 right: 4
                             }
                         },
-                        ...es
+                        ...ea
                     })
                 })
             }
@@ -37096,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("297961", ", Version Hash: ").concat("a1cf3970b8c94f8d3bca552e614131c774d73b92")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298244", ", Version Hash: ").concat("5f162eb978434184d55d2ffa63e37a9dd205728c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -41579,6 +41580,7 @@
                 LOCAL_MUTED: "Muted by you",
                 LOCAL_VIDEO_DISABLED: "Video disabled by you",
                 ROLES_LIST: "{numRoles, plural, =0 {No Roles} one {Role} other {Roles}}",
+                VIEW_ALL_ROLES: "View All Roles",
                 USER_VOLUME: "User Volume",
                 QUICK_DM_BLOCKED: "You cannot message blocked users",
                 QUICK_DM_USER: "Message @!!{name}!!",
@@ -54000,6 +54002,7 @@
                 COLLECTIBLES_BUNDLE_DECORATION: "Decoration",
                 COLLECTIBLES_BUNDLE_PROFILE_EFFECT: "Profile Effect",
                 COLLECTIBLES_BUNDLE_DESCRIPTION: "Bundle Includes: {avatarDecorationName} Decoration & {profileEffectName} Profile Effect",
+                COLLECTIBLES_BUNDLE_DESCRIPTION_ALT: "Bundle includes: {avatarDecorationName} (avatar decoration) & {profileEffectName} (profile effect)",
                 COLLECTIBLES_BUNDLE_BUY_BUNDLE: "Buy Bundle",
                 COLLECTIBLES_BUNDLE_PURCHASE_BUNDLE_AT_PRICE: "Buy Bundle for {price}",
                 COLLECTIBLES_DETAILS_MODAL_BUNDLE_PURCHASE_DISCLAIMER: "Once purchased, these decorations will be added to your collection and can be used anytime",
@@ -55656,6 +55659,7 @@
                 QUESTS_FIND_QUEST: "You can find this again in User Settings > Gift Inventory",
                 QUESTS_CLAIM_BY_DATE: "Claim by {expirationDate}",
                 QUESTS_AVAILABLE_UNTIL_DATE: "Available until {expirationDate}",
+                QUESTS_EXPIRES: "Expires {expirationDate}",
                 QUESTS_EXPIRED_ON: "Expired on {expirationDate}.",
                 QUESTS_EXPIRED_ON_DATE: "Expired on {expirationDate}",
                 QUESTS_EXPIRED_QUEST_CARD_HEADING: "{questName} Quest is expired.",
@@ -55884,6 +55888,8 @@
                 MESSAGE_CHANNEL_EMBEDS_DISABLED: "Embeds are disabled in this channel.",
                 MESSAGE_FORWARD_FAILED: "Forward Failed",
                 MESSAGE_FORWARD_FAILED_BODY: "The message could not be forwarded to the following {count, plural, one {location} other {locations}}:",
+                MESSAGE_FORWARD_FOOTER_WITH_ORIGIN_A11Y: "Message originally sent in !!{origin}!! at {timestamp}",
+                MESSAGE_FORWARD_FOOTER_A11Y: "Message originally sent at {timestamp}",
                 SELECTED: "Selected"
             })
         },
@@ -56418,7 +56424,19 @@
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS_ARIA_LABEL: "Join Wumpus Feedback Squad server",
                 CLAN_DISCOVERY_APPLICATION_DISABLED_TOOLTIP: "You cannot apply to Guilds right now",
                 CLAN_DISCOVERY_APPLICATION_MAX_MEMBERS: "This Guild is at maximum capacity. You may want to apply for more Guilds.",
-                CLAN_CARD_BADGE_APPLIED: "Applied"
+                CLAN_CARD_BADGE_APPLIED: "Applied",
+                CLAN_MEMBER_APPLICATION_REPORT_CTA: "Report Applicant",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_ABUSIVE: "Abuse or harassment",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_SPAM: "Spam",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_HARM: "Harmful misinformation or glorifying violence",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_PII: "Exposing private identifying information",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_OTHER: "Something else",
+                CLAN_MEMBER_APPLICATION_REPORT_REASON_OTHER_PLACEHOLDER: "Please provide more details",
+                CLAN_MEMBER_APPLICATION_REPORT_MODAL_HEADER: "Report Application",
+                CLAN_MEMBER_APPLICATION_REPORT_DESCRIPTION: "Report {username}'s application for the following reason:",
+                QUESTS_MOBILE_EMBED_UNKNOWN_TITLE: "This is an invalid quest",
+                QUESTS_MOBILE_EMBED_UNKNOWN_BODY: "Check to confirm you're using a valid quest URL",
+                QUESTS_MOBILE_EMBED_UNSUPPORTED_TITLE: "This Quest is not available on mobile"
             })
         },
         539590: function(e) {
@@ -58809,8 +58827,8 @@
                     null === (t = this._localMediaSinkWantsManager) || void 0 === t || t.setPipOpen(e)
                 }
                 setClipRecordUser(e, t, n) {
-                    var i;
-                    null === (i = this._connection) || void 0 === i || i.setClipRecordUser(e, t, n)
+                    var i, r;
+                    null === (r = this._connection) || void 0 === r || null === (i = r.setClipRecordUser) || void 0 === i || i.call(r, e, t, n)
                 }
                 setSimulcastDebugOverride(e, t, n) {
                     var i, r;
@@ -88730,8 +88748,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "297961", "297961"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("297961")), t = 0), t
+                let t = parseInt((e = "298244", "298244"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298244")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111806,7 +111824,7 @@
                     return _
                 },
                 SHOP_CARD_PER_PRODUCT_NEW_BADGE_EXPIRY_SETTINGS: function() {
-                    return E
+                    return I
                 },
                 categoryBannerOverrides: function() {
                     return d
@@ -111844,7 +111862,8 @@
                 },
                 _ = "1225876188074082374",
                 c = ["1245481938202918912", "1245087661316898877", "1245087724265013299", "1245087850177888356", "1245087912350187520", "1245087968759382207", "1245088023452975104", "1245088094437507163", "1245088205330710539", "1245088254647205991"],
-                E = a()([...l()(c, r()(Array(c.length), new Date("2024-06-12").getTime()))])
+                E = ["1243619479645065287", "1245481938202918912", "1243620093431119922", "1243619781362450442", "1243620329331626044", "1243617981435478102", "1243617249974288404", "1243618816639107223", "1243618548673417298", "1243619153688920206"],
+                I = a()([...l()(c, r()(Array(c.length), new Date("2024-06-12").getTime())), ...l()(E, r()(Array(E.length), new Date("2024-06-12").getTime()))])
         },
         410154: function(e, t, n) {
             "use strict";
@@ -116794,8 +116813,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "297961",
-                    versionHash: "a1cf3970b8c94f8d3bca552e614131c774d73b92"
+                    buildNumber: "298244",
+                    versionHash: "5f162eb978434184d55d2ffa63e37a9dd205728c"
                 }
             }
             n.r(t), n.d(t, {
@@ -117853,29 +117872,32 @@
                         secondaryColor: g
                     },
                     bannerHash: v
-                } = n, D = (0, E.default)(n.games), k = (0, h.default)("clan_discovery_card"), [B, V] = r.useState(!1), x = r.useCallback(() => {
+                } = n, D = (0, E.default)(n.games), k = (0, h.default)("clan_discovery_card"), [B, V] = r.useState(!1), x = r.useRef(null), [F, H] = r.useState(!1), Y = r.useCallback(() => {
                     V(!0)
-                }, []), F = r.useCallback(() => {
+                }, []), j = r.useCallback(() => {
                     V(!1)
-                }, []), H = y.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                }, []), W = y.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: n.memberCount
-                }), Y = null != T ? T : (0, S.getClanBannerUrl)(n.id, v), j = null == s && null == Y ? {
+                }), K = null != T ? T : (0, S.getClanBannerUrl)(n.id, v), z = null == s && null == K ? {
                     background: "linear-gradient(90deg, ".concat(R, ", ").concat(g, ")")
-                } : void 0, W = null != s ? s : null != Y ? (0, i.jsx)("img", {
+                } : void 0, Z = null != s ? s : null != K ? (0, i.jsx)("img", {
                     alt: y.default.Messages.CLAN_LOOK_BANNER,
-                    src: Y,
+                    src: K,
                     className: P.bannerImage
-                }) : null, K = r.useMemo(() => (0, M.getSortedTraits)(n.traits, u), [n.traits, u]);
-                return (0, i.jsxs)("div", {
+                }) : null, X = r.useMemo(() => (0, M.getSortedTraits)(n.traits, u), [n.traits, u]);
+                return r.useEffect(() => {
+                    let e = x.current;
+                    null != e && null != e.offsetWidth && null != e.scrollWidth && H(e.offsetWidth < e.scrollWidth)
+                }, []), (0, i.jsxs)("div", {
                     className: a()(P.card, c, {
                         [P.cardStaticHeight]: !o
                     }),
-                    onMouseEnter: x,
-                    onMouseLeave: F,
+                    onMouseEnter: Y,
+                    onMouseLeave: j,
                     children: [(0, i.jsxs)("div", {
                         className: P.cardBrandingHeader,
-                        style: j,
-                        children: [W, (0, i.jsx)(w, {
+                        style: z,
+                        children: [Z, (0, i.jsx)(w, {
                             hasPendingJoinRequest: m,
                             atMaxMemberCapacity: p,
                             isGuildMember: l
@@ -117920,7 +117942,17 @@
                                 variant: "heading-md/medium",
                                 color: "header-primary",
                                 lineClamp: 1,
-                                children: n.name
+                                children: (0, i.jsx)(d.Tooltip, {
+                                    text: n.name,
+                                    color: d.Tooltip.Colors.PRIMARY,
+                                    shouldShow: F,
+                                    children: e => (0, i.jsx)("span", {
+                                        ...e,
+                                        ref: x,
+                                        className: P.nameText,
+                                        children: n.name
+                                    })
+                                })
                             }), (0, i.jsxs)("div", {
                                 className: P.clanInfoRow,
                                 children: [(0, i.jsx)(d.Text, {
@@ -117945,7 +117977,7 @@
                             description: n.description,
                             expanded: o
                         }), (0, i.jsx)(G, {
-                            traits: K,
+                            traits: X,
                             traitsToHighlight: u
                         })]
                     }), (0, i.jsxs)("div", {
@@ -117957,7 +117989,7 @@
                                 children: (0, i.jsx)(d.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: H
+                                    children: W
                                 })
                             })
                         }), (0, i.jsx)("div", {
@@ -142456,7 +142488,7 @@
                 await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("13508")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("8016"), n.e("22646"), n.e("20533"), n.e("32186")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -145894,15 +145926,16 @@
                 _ = n("271383"),
                 c = n("701190"),
                 E = n("594174"),
-                I = n("981631"),
-                T = n("689938");
-            let f = async (e, t) => {
+                I = n("626135"),
+                T = n("981631"),
+                f = n("689938");
+            let S = async (e, t) => {
                 let n = null != t ? t : c.default.getInviteKeyForGuildId(e),
                     s = E.default.getCurrentUser(),
                     a = !_.default.isMember(e, null == s ? void 0 : s.id);
                 try {
                     let t = await i.HTTP.get({
-                        url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                        url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                         query: {
                             with_guild: a,
                             invite_code: null != n ? (0, d.parseInviteCodeFromInviteKey)(n) : void 0
@@ -145929,11 +145962,11 @@
                         guildId: e
                     })
                 }
-            }, S = async (e, t) => {
+            }, h = async (e, t) => {
                 let {
                     body: n
                 } = await i.HTTP.patch({
-                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         form_fields: t
                     },
@@ -145948,11 +145981,11 @@
                         formFields: n.form_fields
                     }
                 })
-            }, h = async (e, t) => {
+            }, A = async (e, t) => {
                 let {
                     body: n
                 } = await i.HTTP.patch({
-                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         description: t
                     },
@@ -145967,15 +146000,15 @@
                         formFields: n.form_fields
                     }
                 })
-            }, A = async (e, t) => {
+            }, m = async (e, t) => {
                 await i.HTTP.patch({
-                    url: I.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+                    url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
                     body: {
                         enabled: t
                     },
                     oldFormErrors: !0
                 })
-            }, m = async (e, t) => {
+            }, N = async (e, t) => {
                 if (u.default.isFullServerPreview(e)) {
                     (0, l.updateImpersonatedData)(e, {
                         memberOptions: {
@@ -145988,7 +146021,7 @@
                     let {
                         body: n
                     } = await i.HTTP.put({
-                        url: I.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e),
+                        url: T.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e),
                         body: {
                             version: t.version,
                             form_fields: t.formFields
@@ -145998,7 +146031,7 @@
                         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
                         guildId: e,
                         request: n
-                    }), setTimeout(N, 200), n
+                    }), setTimeout(p, 200), n
                 } catch (t) {
                     let {
                         status: e
@@ -146006,34 +146039,34 @@
                     switch (e) {
                         case 429:
                             throw (0, a.closeContextMenu)(), s.default.show({
-                                title: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_HEADER,
-                                body: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY,
-                                confirmText: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BUTTON
+                                title: f.default.Messages.CLAN_APPLICATION_RATE_LIMITED_HEADER,
+                                body: f.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY,
+                                confirmText: f.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BUTTON
                             }), {
                                 ...t,
-                                message: T.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY
+                                message: f.default.Messages.CLAN_APPLICATION_RATE_LIMITED_BODY
                             };
                         case 403:
                             throw {
-                                ...t, message: T.default.Messages.CLAN_APPLICATION_MISSING_PERMISSION
+                                ...t, message: f.default.Messages.CLAN_APPLICATION_MISSING_PERMISSION
                             };
                         default:
                             var n, d;
                             throw {
-                                ...t, message: null !== (d = (n = new o.APIError(t), n.getAnyErrorMessage())) && void 0 !== d ? d : T.default.Messages.ERROR_GENERIC_TITLE
+                                ...t, message: null !== (d = (n = new o.APIError(t), n.getAnyErrorMessage())) && void 0 !== d ? d : f.default.Messages.ERROR_GENERIC_TITLE
                             }
                     }
                 }
             };
 
-            function N() {
+            function p() {
                 r.default.dispatch({
                     type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW"
                 })
             }
             t.default = {
-                fetchVerificationForm: f,
-                updateVerificationForm: S,
+                fetchVerificationForm: S,
+                updateVerificationForm: h,
                 updateVerificationFormFieldsLocal: (e, t) => {
                     r.default.dispatch({
                         type: "MEMBER_VERIFICATION_FORM_UPDATE",
@@ -146044,7 +146077,7 @@
                         isLocalUpdate: !0
                     })
                 },
-                updateVerificationFormDescription: h,
+                updateVerificationFormDescription: A,
                 updateVerificationFormDescriptionLocal: (e, t) => {
                     r.default.dispatch({
                         type: "MEMBER_VERIFICATION_FORM_UPDATE",
@@ -146055,11 +146088,29 @@
                         isLocalUpdate: !0
                     })
                 },
-                enableVerificationForm: A,
-                submitVerificationForm: m,
+                enableVerificationForm: m,
+                submitVerificationForm: N,
                 clearCoachmark: function() {
                     r.default.dispatch({
                         type: "USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR"
+                    })
+                },
+                reportApplication: function(e) {
+                    let {
+                        guild: t,
+                        guildJoinRequest: n,
+                        guildJoinRequestUser: i,
+                        reason: r,
+                        reasonOther: s,
+                        responses: a
+                    } = e;
+                    I.default.track(T.AnalyticEvents.GUILD_MEMBER_APPLICATION_REPORTED, {
+                        application_id: n.joinRequestId,
+                        applicant_id: i.id,
+                        guild_id: t.id,
+                        reason: r,
+                        reason_other: s,
+                        responses: a
                     })
                 }
             }
@@ -154924,7 +154975,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("56630"), n.e("33053"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("75837"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("69563"), n.e("43643"), n.e("92714"), n.e("92557"), n.e("36789"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -174200,8 +174251,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717181617549",
-                                    build_number: "297961"
+                                    built_at: "1717266158120",
+                                    build_number: "298244"
                                 }
                             },
                             retries: 1
@@ -177142,25 +177193,25 @@
             "use strict";
             n.r(t), n.d(t, {
                 OAuth2Authorize: function() {
-                    return et
-                },
-                OAuth2AuthorizeModal: function() {
                     return ee
                 },
-                OAuth2AuthorizePage: function() {
+                OAuth2AuthorizeModal: function() {
                     return $
                 },
-                getOAuth2AuthorizeProps: function() {
-                    return ea
+                OAuth2AuthorizePage: function() {
+                    return J
                 },
-                openOAuth2Modal: function() {
+                getOAuth2AuthorizeProps: function() {
                     return es
                 },
-                openOAuth2ModalWithCreateGuildModal: function() {
+                openOAuth2Modal: function() {
                     return er
                 },
+                openOAuth2ModalWithCreateGuildModal: function() {
+                    return ei
+                },
                 useOAuth2AuthorizeForm: function() {
-                    return en
+                    return et
                 }
             }), n("47120"), n("411104");
             var i, r, s = n("735250"),
@@ -177178,85 +177229,67 @@
                 S = n("21340"),
                 h = n("922770"),
                 A = n("893776"),
-                m = n("434650"),
-                N = n("367907"),
-                p = n("702493"),
-                O = n("728345"),
-                C = n("979200"),
-                R = n("560067"),
-                g = n("341298"),
-                L = n("703656"),
-                v = n("973616"),
-                D = n("598077"),
-                M = n("314897"),
-                y = n("828695"),
-                P = n("700785"),
-                U = n("591759"),
-                b = n("807675"),
-                G = n("489863"),
-                w = n("228763"),
-                k = n("422559"),
-                B = n("713938"),
-                V = n("166148"),
-                x = n("807989"),
-                F = n("260430"),
-                H = n("668185"),
-                Y = n("407546"),
-                j = n("41259"),
-                W = n("28752"),
-                K = n("787025"),
-                z = n("397394"),
-                Z = n("574384"),
-                X = n("981631"),
-                Q = n("689938"),
-                q = n("884103");
-            let J = "oauth2-authorize-header-id";
+                m = n("367907"),
+                N = n("702493"),
+                p = n("728345"),
+                O = n("979200"),
+                C = n("560067"),
+                R = n("341298"),
+                g = n("703656"),
+                L = n("973616"),
+                v = n("598077"),
+                D = n("314897"),
+                M = n("828695"),
+                y = n("700785"),
+                P = n("591759"),
+                U = n("807675"),
+                b = n("489863"),
+                G = n("228763"),
+                w = n("422559"),
+                k = n("713938"),
+                B = n("166148"),
+                V = n("807989"),
+                x = n("260430"),
+                F = n("668185"),
+                H = n("407546"),
+                Y = n("41259"),
+                j = n("28752"),
+                W = n("787025"),
+                K = n("397394"),
+                z = n("574384"),
+                Z = n("981631"),
+                X = n("689938"),
+                Q = n("884103");
+            let q = "oauth2-authorize-header-id";
 
-            function $() {
+            function J() {
                 let e = (0, u.useLocation)(),
-                    t = a.useMemo(() => (0, b.parseOAuth2AuthorizeProps)(e.search), [e.search]);
-                return (0, p.default)(), (0, s.jsx)(K.OAuth2Page, {
-                    children: (0, s.jsx)(et, {
+                    t = a.useMemo(() => (0, U.parseOAuth2AuthorizeProps)(e.search), [e.search]);
+                return (0, N.default)(), (0, s.jsx)(W.OAuth2Page, {
+                    children: (0, s.jsx)(ee, {
                         ...t,
                         showLogout: !0
                     })
                 })
             }
 
-            function ee(e) {
+            function $(e) {
                 let {
                     transitionState: t,
                     ...n
-                } = e, {
-                    header: i,
-                    body: r,
-                    footer: a,
-                    nextStep: o,
-                    appDetails: u
-                } = en({
-                    ...n,
-                    disableContinueUntilRead: !0
-                }), d = (0, s.jsxs)("div", {
-                    className: q.content,
-                    children: [i, r, null == o ? u : null]
-                });
-                return (0, s.jsx)(K.OAuth2Modal, {
+                } = e;
+                return (0, s.jsx)(W.OAuth2Modal, {
                     transitionState: t,
-                    "aria-labelledby": J,
-                    footer: a,
-                    children: (0, s.jsx)("div", {
-                        className: l()(q.authorize, {
-                            [q.inApp]: n.inApp
-                        }),
-                        children: (0, s.jsx)(S.ScrollerThin, {
-                            orientation: "auto",
-                            children: d
-                        })
+                    "aria-labelledby": q,
+                    children: (0, s.jsx)(ee, {
+                        ...n,
+                        inApp: !0,
+                        scrollable: !0
                     })
                 })
             }
 
-            function et(e) {
+            function ee(e) {
                 let {
                     scrollable: t,
                     ...n
@@ -177266,25 +177299,23 @@
                     footer: a,
                     nextStep: o,
                     appDetails: u
-                } = en(n), d = (0, s.jsxs)(s.Fragment, {
+                } = et(n), d = (0, s.jsxs)(s.Fragment, {
                     children: [(0, s.jsxs)("div", {
-                        className: q.content,
+                        className: Q.content,
                         children: [i, r, null == o ? u : null]
                     }), a]
                 });
-                return t ? (0, s.jsxs)("div", {
-                    children: [(0, s.jsx)("div", {
-                        className: l()(q.authorize, {
-                            [q.inApp]: n.inApp
-                        }),
-                        children: (0, s.jsx)(S.ScrollerThin, {
-                            orientation: "auto",
-                            children: d
-                        })
-                    }), a]
+                return t ? (0, s.jsx)("div", {
+                    className: l()(Q.authorize, {
+                        [Q.inApp]: n.inApp
+                    }),
+                    children: (0, s.jsx)(S.ScrollerThin, {
+                        orientation: "auto",
+                        children: d
+                    })
                 }) : (0, s.jsx)("div", {
-                    className: l()(q.authorize, {
-                        [q.inApp]: n.inApp
+                    className: l()(Q.authorize, {
+                        [Q.inApp]: n.inApp
                     }),
                     children: (0, s.jsx)("div", {
                         children: d
@@ -177292,181 +177323,180 @@
                 })
             }
 
-            function en(e) {
+            function et(e) {
                 var t, n, i, r, o;
-                let l, f, S, p, R, g, {
-                        clientId: K,
-                        responseType: $,
-                        redirectUri: ee,
-                        codeChallenge: et,
-                        codeChallengeMethod: en,
-                        state: ei,
-                        nonce: er,
-                        prompt: es,
-                        authorizations: ea,
-                        scopes: eo,
-                        permissions: el,
-                        guildId: eu,
-                        channelId: ed,
-                        integrationType: e_,
-                        disableGuildSelect: ec = !1,
-                        disableContinueUntilRead: eE = !1,
-                        showLogout: eI = !1,
-                        cancelCompletesFlow: eT = !0,
-                        isTrustedName: ef = !1,
-                        isEmbeddedFlow: eS = !1,
-                        inApp: eh = !1,
-                        callback: eA,
-                        callbackWithoutPost: em,
-                        onClose: eN,
-                        disclosures: ep
+                let l, f, S, N, C, R, {
+                        clientId: W,
+                        responseType: J,
+                        redirectUri: $,
+                        codeChallenge: ee,
+                        codeChallengeMethod: et,
+                        state: en,
+                        nonce: ei,
+                        prompt: er,
+                        authorizations: es,
+                        scopes: ea,
+                        permissions: eo,
+                        guildId: el,
+                        channelId: eu,
+                        integrationType: ed,
+                        disableGuildSelect: e_ = !1,
+                        showLogout: ec = !1,
+                        cancelCompletesFlow: eE = !0,
+                        isTrustedName: eI = !1,
+                        isEmbeddedFlow: eT = !1,
+                        inApp: ef = !1,
+                        callback: eS,
+                        callbackWithoutPost: eh,
+                        onClose: eA,
+                        disclosures: em
                     } = e,
-                    eO = null != e_ ? null == ea ? void 0 : ea.get(e_) : void 0,
-                    eC = (0, u.useLocation)(),
-                    eR = (0, I.useStateFromStores)([y.default], () => y.default.hasLoadedExperiments);
+                    eN = null != ed ? null == es ? void 0 : es.get(ed) : void 0,
+                    ep = (0, u.useLocation)(),
+                    eO = (0, I.useStateFromStores)([M.default], () => M.default.hasLoadedExperiments);
                 a.useEffect(() => {
-                    M.default.isAuthenticated() && !eR && A.default.getExperiments()
-                }, [eR]);
-                let [eg, eL] = a.useState(null), [ev, eD] = a.useState(null), [eM, ey] = a.useState(null), [eP, eU] = a.useState(!1), [eb, eG] = a.useState(!eE), ew = null == eg ? void 0 : eg.guilds, [ek, eB] = a.useState(null != eu ? eu : null), [eV, ex] = a.useState(null != ed ? ed : null), [eF, eH] = a.useState(P.NONE), eY = a.useMemo(() => (null == eg ? void 0 : eg.user) != null ? new D.default(eg.user) : null, [null == eg ? void 0 : eg.user]), ej = a.useMemo(() => null == ew ? void 0 : ew.find(e => e.id === ek), [ew, ek]), [eW, eK] = a.useState(null), ez = a.useMemo(() => {
+                    D.default.isAuthenticated() && !eO && A.default.getExperiments()
+                }, [eO]);
+                let [eC, eR] = a.useState(null), [eg, eL] = a.useState(null), [ev, eD] = a.useState(null), [eM, ey] = a.useState(!1), eP = null == eC ? void 0 : eC.guilds, [eU, eb] = a.useState(null != el ? el : null), [eG, ew] = a.useState(null != eu ? eu : null), [ek, eB] = a.useState(y.NONE), eV = a.useMemo(() => (null == eC ? void 0 : eC.user) != null ? new v.default(eC.user) : null, [null == eC ? void 0 : eC.user]), ex = a.useMemo(() => null == eP ? void 0 : eP.find(e => e.id === eU), [eP, eU]), [eF, eH] = a.useState(null), eY = a.useMemo(() => {
                     var e;
-                    return null == eO && null == e_ && (null !== (e = null == eo ? void 0 : eo.length) && void 0 !== e ? e : 0) === 0 && null == ee
-                }, [eO, null == eo ? void 0 : eo.length, ee, e_]), [eZ, eX] = a.useState(null);
+                    return null == eN && null == ed && (null !== (e = null == ea ? void 0 : ea.length) && void 0 !== e ? e : 0) === 0 && null == $
+                }, [eN, null == ea ? void 0 : ea.length, $, ed]), [ej, eW] = a.useState(null);
                 a.useEffect(() => {
-                    ez && O.default.fetchApplication(K).then(e => eX(v.default.createFromServer(e)))
-                }, [K, ez]);
-                let eQ = a.useMemo(() => {
+                    eY && p.default.fetchApplication(W).then(e => eW(L.default.createFromServer(e)))
+                }, [W, eY]);
+                let eK = a.useMemo(() => {
                         var e, t;
-                        return null == eW ? null : null == eZ ? void 0 : null === (t = eZ.integrationTypesConfig) || void 0 === t ? void 0 : null === (e = t[eW]) || void 0 === e ? void 0 : e.oauth2InstallParams
-                    }, [null == eZ ? void 0 : eZ.integrationTypesConfig, eW]),
+                        return null == eF ? null : null == ej ? void 0 : null === (t = ej.integrationTypesConfig) || void 0 === t ? void 0 : null === (e = t[eF]) || void 0 === e ? void 0 : e.oauth2InstallParams
+                    }, [null == ej ? void 0 : ej.integrationTypesConfig, eF]),
                     {
-                        requestedScopes: eq,
-                        accountScopes: eJ
+                        requestedScopes: ez,
+                        accountScopes: eZ
                     } = a.useMemo(() => {
-                        let e = ez ? null == eQ ? void 0 : eQ.scopes : eo,
-                            t = (0, b.filterScopes)(null != e ? e : []),
-                            n = B.OrderedAccountScopes.filter(e => t.includes(e));
+                        let e = eY ? null == eK ? void 0 : eK.scopes : ea,
+                            t = (0, U.filterScopes)(null != e ? e : []),
+                            n = k.OrderedAccountScopes.filter(e => t.includes(e));
                         return {
                             requestedScopes: t,
                             accountScopes: n
                         }
-                    }, [null == eQ ? void 0 : eQ.scopes, eo, ez]),
-                    e$ = a.useMemo(() => {
+                    }, [null == eK ? void 0 : eK.scopes, ea, eY]),
+                    eX = a.useMemo(() => {
                         var e;
-                        let t = ez ? E.deserialize(null !== (e = null == eQ ? void 0 : eQ.permissions) && void 0 !== e ? e : 0) : el;
-                        return null != t ? t : P.NONE
-                    }, [null == eQ ? void 0 : eQ.permissions, el, ez]),
-                    e0 = a.useRef(!1),
-                    [e1, e2] = a.useState(null != ep ? ep : []),
-                    [e3, e4] = a.useState(null != ep && ep.length > 0);
+                        let t = eY ? E.deserialize(null !== (e = null == eK ? void 0 : eK.permissions) && void 0 !== e ? e : 0) : eo;
+                        return null != t ? t : y.NONE
+                    }, [null == eK ? void 0 : eK.permissions, eo, eY]),
+                    eQ = a.useRef(!1),
+                    [eq, eJ] = a.useState(null != em ? em : []),
+                    [e$, e0] = a.useState(null != em && em.length > 0);
                 a.useEffect(() => {
-                    if (e0.current) return;
+                    if (eQ.current) return;
                     let e = async () => {
-                        e0.current = !0;
+                        eQ.current = !0;
                         try {
                             let {
                                 disclosures: e,
                                 allAcked: t
-                            } = await (0, C.getDisclosures)(K);
-                            e4(!t), e2(e)
+                            } = await (0, O.getDisclosures)(W);
+                            e0(!t), eJ(e)
                         } catch (n) {
                             let {
                                 status: e,
                                 body: t
                             } = n;
                             if (401 === e) {
-                                (0, G.logoutWithRedirect)(eC);
+                                (0, b.logoutWithRedirect)(ep);
                                 return
                             }
-                            ey(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
+                            eD(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
                         } finally {
-                            e0.current = !1
+                            eQ.current = !1
                         }
                     };
-                    if (null == ep) {
-                        if (!M.default.isAuthenticated()) {
-                            (0, G.logoutWithRedirect)(eC);
+                    if (null == em) {
+                        if (!D.default.isAuthenticated()) {
+                            (0, b.logoutWithRedirect)(ep);
                             return
                         }
                         e()
                     }
-                }, [K, eC, ep, e2, ey, e4, eD]);
-                let e6 = a.useCallback(async e => {
-                        if (null != em) {
-                            em(e);
+                }, [W, ep, em, eJ, eD, e0, eL]);
+                let e1 = a.useCallback(async e => {
+                        if (null != eh) {
+                            eh(e);
                             return
                         }
-                        if (!e && !eT) {
-                            null != eA && (eA({
-                                application: null == eg ? void 0 : eg.application,
-                                guild: ej
-                            }), null == eN || eN());
+                        if (!e && !eE) {
+                            null != eS && (eS({
+                                application: null == eC ? void 0 : eC.application,
+                                guild: ex
+                            }), null == eA || eA());
                             return
                         }
-                        if (null == eW) {
-                            ey(Error("No integration type was selected."));
+                        if (null == eF) {
+                            eD(Error("No integration type was selected."));
                             return
                         }
                         try {
-                            eU(!0);
-                            let t = await (0, G.authorize)({
+                            ey(!0);
+                            let t = await (0, b.authorize)({
                                 authorize: e,
-                                clientId: K,
-                                scopes: eq,
-                                responseType: $,
-                                redirectUri: ee,
-                                codeChallenge: et,
-                                codeChallengeMethod: en,
-                                state: ei,
-                                nonce: er,
-                                integrationType: eW,
-                                permissions: E.remove(e$, eF),
-                                guildId: eW === _.ApplicationIntegrationType.GUILD_INSTALL && null != ek ? ek : void 0,
-                                channelId: eW === _.ApplicationIntegrationType.GUILD_INSTALL && null != eV ? eV : void 0
+                                clientId: W,
+                                scopes: ez,
+                                responseType: J,
+                                redirectUri: $,
+                                codeChallenge: ee,
+                                codeChallengeMethod: et,
+                                state: en,
+                                nonce: ei,
+                                integrationType: eF,
+                                permissions: E.remove(eX, ek),
+                                guildId: eF === _.ApplicationIntegrationType.GUILD_INSTALL && null != eU ? eU : void 0,
+                                channelId: eF === _.ApplicationIntegrationType.GUILD_INSTALL && null != eG ? eG : void 0
                             });
-                            if (e && await (0, C.ackDisclosures)(K, e1), null != eA) eA({
-                                application: null == eg ? void 0 : eg.application,
+                            if (e && await (0, O.ackDisclosures)(W, eq), null != eS) eS({
+                                application: null == eC ? void 0 : eC.application,
                                 location: t.location,
-                                guild: ej
-                            }), null == eN || eN();
+                                guild: ex
+                            }), null == eA || eA();
                             else if (null != t.location) {
                                 let {
                                     host: e,
                                     path: n
                                 } = d.parse(t.location);
-                                U.default.isDiscordHostname(e) && n === X.Routes.OAUTH2_AUTHORIZED ? (0, L.transitionTo)(X.Routes.OAUTH2_AUTHORIZED, {
+                                P.default.isDiscordHostname(e) && n === Z.Routes.OAUTH2_AUTHORIZED ? (0, g.transitionTo)(Z.Routes.OAUTH2_AUTHORIZED, {
                                     state: {
-                                        application: null == eg ? void 0 : eg.application,
-                                        guild: ej
+                                        application: null == eC ? void 0 : eC.application,
+                                        guild: ex
                                     }
                                 }) : window.location = t.location
-                            } else eU(!1)
+                            } else ey(!1)
                         } catch (t) {
                             let e = t.body;
-                            (null == e ? void 0 : e.message) != null && "" !== e.message ? ey(Error(e.message)) : ey(e), eD(1), eU(!1)
+                            (null == e ? void 0 : e.message) != null && "" !== e.message ? eD(Error(e.message)) : eD(e), eL(1), ey(!1)
                         }
-                    }, [em, eT, eA, null == eg ? void 0 : eg.application, ej, eN, K, eq, $, ee, et, en, ei, er, e$, eF, ek, eW, eV, e1]),
-                    e7 = a.useRef(!1),
-                    e5 = a.useCallback(async () => {
-                        if (!M.default.isAuthenticated()) {
-                            (0, G.logoutWithRedirect)(eC);
+                    }, [eh, eE, eS, null == eC ? void 0 : eC.application, ex, eA, W, ez, J, $, ee, et, en, ei, eX, ek, eU, eF, eG, eq]),
+                    e2 = a.useRef(!1),
+                    e3 = a.useCallback(async () => {
+                        if (!D.default.isAuthenticated()) {
+                            (0, b.logoutWithRedirect)(ep);
                             return
                         }
-                        if (!e0.current) {
-                            if (!e7.current) {
-                                e7.current = !0;
+                        if (!eQ.current) {
+                            if (!e2.current) {
+                                e2.current = !0;
                                 try {
-                                    let e = null != eO ? eO : await (0, G.fetchAuthorization)({
-                                        clientId: K,
-                                        scopes: eq,
-                                        responseType: $,
-                                        redirectUri: ee,
-                                        codeChallenge: et,
-                                        codeChallengeMethod: en,
-                                        state: ei,
-                                        nonce: er,
-                                        integrationType: null != eW ? eW : void 0
+                                    let e = null != eN ? eN : await (0, b.fetchAuthorization)({
+                                        clientId: W,
+                                        scopes: ez,
+                                        responseType: J,
+                                        redirectUri: $,
+                                        codeChallenge: ee,
+                                        codeChallengeMethod: et,
+                                        state: en,
+                                        nonce: ei,
+                                        integrationType: null != eF ? eF : void 0
                                     });
-                                    eL((0, w.convertOAuth2Authorization)(e)), es === V.OAuth2Prompts.NONE && e.authorized && !e3 && e6(!0), (0, N.trackWithMetadata)(X.AnalyticEvents.OAUTH2_AUTHORIZE_VIEWED, {
+                                    eR((0, G.convertOAuth2Authorization)(e)), er === B.OAuth2Prompts.NONE && e.authorized && !e$ && e1(!0), (0, m.trackWithMetadata)(Z.AnalyticEvents.OAUTH2_AUTHORIZE_VIEWED, {
                                         application_id: e.application.id
                                     })
                                 } catch (n) {
@@ -177475,191 +177505,182 @@
                                         body: t
                                     } = n;
                                     if (401 === e) {
-                                        (0, G.logoutWithRedirect)(eC);
+                                        (0, b.logoutWithRedirect)(ep);
                                         return
                                     }
-                                    ey(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
+                                    eD(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
                                 } finally {
-                                    e7.current = !1
+                                    e2.current = !1
                                 }
                             }
                         }
-                    }, [eC, eO, K, eq, $, ee, et, en, ei, er, eW, es, e6, e3]),
-                    e8 = a.useMemo(() => {
+                    }, [ep, eN, W, ez, J, $, ee, et, en, ei, eF, er, e1, e$]),
+                    e4 = a.useMemo(() => {
                         var e;
-                        return null != eZ && ez ? Object.entries(null !== (e = eZ.integrationTypesConfig) && void 0 !== e ? e : {}).filter(e => {
+                        return null != ej && eY ? Object.entries(null !== (e = ej.integrationTypesConfig) && void 0 !== e ? e : {}).filter(e => {
                             let [t, n] = e;
                             return null != n.oauth2InstallParams
                         }).map(e => {
                             let [t, n] = e;
                             return Number(t)
                         }) : []
-                    }, [eZ, ez]);
-                a.useEffect(() => {
-                    if (null == ev && (!ez || null != eZ) && eR) {
-                        if (null != eO) {
-                            var e;
-                            eK(null !== (e = eO.integration_type) && void 0 !== e ? e : _.ApplicationIntegrationType.GUILD_INSTALL), eD(1)
-                        } else e8.length > 1 ? eD(0) : (1 === e8.length ? eK(e8[0]) : null != e_ ? eK(e_) : eK(_.ApplicationIntegrationType.GUILD_INSTALL), eD(1))
-                    }
-                }, [eO, e8, eZ, ez, e_, ev, eR]), a.useEffect(() => {
-                    if (null == eW || null != eg || null != eM) return;
-                    eW === _.ApplicationIntegrationType.USER_INSTALL && (eB(null), ex(null));
-                    let e = eq.filter(e => !B.ValidScopes.includes(e));
-                    0 === eq.length ? ey(Error("No scopes were provided.")) : e.length > 0 ? ey(Error("Invalid scope: ".concat(e[0]))) : (0, k.containsDisallowedPermission)(e$) ? ey(Error("Invalid permission(s) provided.")) : e5()
-                }, [e3, e5, eq, e$, eW, eg, eM]);
-                let e9 = a.useCallback(e => {
-                        e && eG(!0)
-                    }, []),
-                    te = (0, m.useIsVisible)(e9);
-                if (eM instanceof Error) return {
-                    body: (0, s.jsx)(z.OAuth2Error, {
-                        message: eM.message
+                    }, [ej, eY]);
+                if (a.useEffect(() => {
+                        if (null == eg && (!eY || null != ej) && eO) {
+                            if (null != eN) {
+                                var e;
+                                eH(null !== (e = eN.integration_type) && void 0 !== e ? e : _.ApplicationIntegrationType.GUILD_INSTALL), eL(1)
+                            } else e4.length > 1 ? eL(0) : (1 === e4.length ? eH(e4[0]) : null != ed ? eH(ed) : eH(_.ApplicationIntegrationType.GUILD_INSTALL), eL(1))
+                        }
+                    }, [eN, e4, ej, eY, ed, eg, eO]), a.useEffect(() => {
+                        if (null == eF || null != eC || null != ev) return;
+                        eF === _.ApplicationIntegrationType.USER_INSTALL && (eb(null), ew(null));
+                        let e = ez.filter(e => !k.ValidScopes.includes(e));
+                        0 === ez.length ? eD(Error("No scopes were provided.")) : e.length > 0 ? eD(Error("Invalid scope: ".concat(e[0]))) : (0, w.containsDisallowedPermission)(eX) ? eD(Error("Invalid permission(s) provided.")) : e3()
+                    }, [e$, e3, ez, eX, eF, eC, ev]), ev instanceof Error) return {
+                    body: (0, s.jsx)(K.OAuth2Error, {
+                        message: ev.message
                     })
                 };
-                let tt = !1,
-                    tn = !0,
-                    ti = !0,
-                    tr = !0;
-                switch (ev) {
+                let e6 = !1,
+                    e7 = !0,
+                    e5 = !0,
+                    e8 = !0;
+                switch (eg) {
                     case null:
                         return {
                             body: (0, s.jsx)(h.Spinner, {})
                         };
                     case 0:
-                        if (null == eZ) return {
+                        if (null == ej) return {
                             body: (0, s.jsx)(h.Spinner, {})
                         };
-                        l = (0, s.jsx)(W.default, {
-                            inApp: eh,
-                            application: eZ,
+                        l = (0, s.jsx)(j.default, {
+                            inApp: ef,
+                            application: ej,
                             onSelect: e => {
-                                eK(e), eL(null), eD(1)
+                                eH(e), eR(null), eL(1)
                             }
-                        }), tn = !1, ti = !1, tr = eh;
+                        }), e7 = !1, e5 = !1, e8 = ef;
                         break;
                     case 1:
-                        if (null == eg || null == eY || null == eW) return {
+                        if (null == eC || null == eV || null == eF) return {
                             body: (0, s.jsx)(h.Spinner, {})
                         };
-                        let ts = null == eM || eM instanceof Error ? {} : eM,
-                            ta = null == ew ? void 0 : ew.sort((e, t) => e.name.toLowerCase().localeCompare(t.name.toLowerCase())),
-                            to = eW === _.ApplicationIntegrationType.GUILD_INSTALL && eq.includes(c.OAuth2Scopes.WEBHOOK_INCOMING),
-                            tl = to || eW === _.ApplicationIntegrationType.GUILD_INSTALL && (eq.includes(c.OAuth2Scopes.BOT) || eq.includes(c.OAuth2Scopes.APPLICATIONS_COMMANDS));
+                        let e9 = null == ev || ev instanceof Error ? {} : ev,
+                            te = null == eP ? void 0 : eP.sort((e, t) => e.name.toLowerCase().localeCompare(t.name.toLowerCase())),
+                            tt = eF === _.ApplicationIntegrationType.GUILD_INSTALL && ez.includes(c.OAuth2Scopes.WEBHOOK_INCOMING),
+                            tn = tt || eF === _.ApplicationIntegrationType.GUILD_INSTALL && (ez.includes(c.OAuth2Scopes.BOT) || ez.includes(c.OAuth2Scopes.APPLICATIONS_COMMANDS));
                         l = (0, s.jsxs)(s.Fragment, {
-                            children: [(0, s.jsx)(F.default, {
-                                application: eg.application,
-                                accountScopes: eJ,
-                                requestedScopes: eq,
-                                integrationType: eW,
-                                errors: ts,
-                                isTrustedName: ef
-                            }), tl ? (0, s.jsx)(Y.default, {
-                                error: (null !== (n = null !== (t = ts[c.OAuth2Scopes.BOT]) && void 0 !== t ? t : ts[c.OAuth2Scopes.APPLICATIONS_COMMANDS]) && void 0 !== n ? n : [])[0],
-                                selectedGuildId: ek,
-                                onGuildChange: eB,
-                                guilds: null != ta ? ta : [],
-                                disabled: "" !== ek && null != ek && !0 === ec
-                            }) : null, to ? (0, s.jsx)(Z.default, {
-                                error: (null !== (i = ts[c.OAuth2Scopes.WEBHOOK_INCOMING]) && void 0 !== i ? i : [])[0],
-                                selectedChannelId: eV,
-                                selectedGuildId: ek,
-                                onChannelChange: ex
+                            children: [(0, s.jsx)(x.default, {
+                                application: eC.application,
+                                accountScopes: eZ,
+                                requestedScopes: ez,
+                                integrationType: eF,
+                                errors: e9,
+                                isTrustedName: eI
+                            }), tn ? (0, s.jsx)(H.default, {
+                                error: (null !== (n = null !== (t = e9[c.OAuth2Scopes.BOT]) && void 0 !== t ? t : e9[c.OAuth2Scopes.APPLICATIONS_COMMANDS]) && void 0 !== n ? n : [])[0],
+                                selectedGuildId: eU,
+                                onGuildChange: eb,
+                                guilds: null != te ? te : [],
+                                disabled: "" !== eU && null != eU && !0 === e_
+                            }) : null, tt ? (0, s.jsx)(z.default, {
+                                error: (null !== (i = e9[c.OAuth2Scopes.WEBHOOK_INCOMING]) && void 0 !== i ? i : [])[0],
+                                selectedChannelId: eG,
+                                selectedGuildId: eU,
+                                onChannelChange: ew
                             }) : null]
-                        }), eq.includes(c.OAuth2Scopes.BOT) && !E.equals(e$, P.NONE) && (S = 2), e8.length > 1 && (f = 0), tt = tl && null == ej || to && null == eV;
+                        }), ez.includes(c.OAuth2Scopes.BOT) && !E.equals(eX, y.NONE) && (S = 2), e4.length > 1 && (f = 0), e6 = tn && null == ex || tt && null == eG;
                         break;
                     case 2:
-                        if (null == eg) return {
+                        if (null == eC) return {
                             body: (0, s.jsx)(h.Spinner, {})
                         };
-                        l = (0, s.jsx)(H.default, {
-                            application: eg.application,
-                            permissions: e$,
-                            deniedPermissions: eF,
+                        l = (0, s.jsx)(F.default, {
+                            application: eC.application,
+                            permissions: eX,
+                            deniedPermissions: ek,
                             onPermissionsChange: (e, t) => {
-                                eH(n => e ? E.remove(n, t) : E.add(n, t))
+                                eB(n => e ? E.remove(n, t) : E.add(n, t))
                             },
-                            guild: ej
+                            guild: ex
                         }), f = 1
                 }
-                if (tn && null != eg) {
-                    let e = null === (r = eg.bot) || void 0 === r ? void 0 : r.approximate_guild_count;
-                    p = (0, s.jsxs)(s.Fragment, {
-                        children: [(0, s.jsx)(x.default, {
-                            application: eg.application,
-                            scopes: eq,
-                            disclosures: e1,
-                            redirectUri: null !== (o = eg.redirect_uri) && void 0 !== o ? o : null,
-                            approximateGuildCount: void 0 !== e ? e : null,
-                            isEmbeddedFlow: eS
-                        }), (0, s.jsx)("div", {
-                            ref: te
-                        })]
+                if (e7 && null != eC) {
+                    let e = null === (r = eC.bot) || void 0 === r ? void 0 : r.approximate_guild_count;
+                    N = (0, s.jsx)(V.default, {
+                        application: eC.application,
+                        scopes: ez,
+                        disclosures: eq,
+                        redirectUri: null !== (o = eC.redirect_uri) && void 0 !== o ? o : null,
+                        approximateGuildCount: void 0 !== e ? e : null,
+                        isEmbeddedFlow: eT
                     })
                 }
-                return ti && null != eg && null != eY && (R = (0, s.jsx)(j.default, {
-                    id: J,
-                    user: eY,
-                    application: eg.application,
-                    bot: eg.bot,
-                    accountScopes: eJ,
-                    showLogout: eI || !1,
-                    location: eC,
-                    isTrustedName: ef
-                })), !eb && (tt = !0), tr && (g = (0, s.jsxs)("div", {
-                    className: q.footer,
+                return e5 && null != eC && null != eV && (C = (0, s.jsx)(Y.default, {
+                    id: q,
+                    user: eV,
+                    application: eC.application,
+                    bot: eC.bot,
+                    accountScopes: eZ,
+                    showLogout: ec || !1,
+                    location: ep,
+                    isTrustedName: eI
+                })), e8 && (R = (0, s.jsxs)("div", {
+                    className: Q.footer,
                     children: [null != f ? (0, s.jsx)(T.Button, {
                         look: T.Button.Looks.LINK,
                         color: T.Button.Colors.PRIMARY,
-                        onClick: () => eD(f),
-                        children: Q.default.Messages.BACK
+                        onClick: () => eL(f),
+                        children: X.default.Messages.BACK
                     }) : (0, s.jsx)(T.Button, {
                         look: T.Button.Looks.LINK,
                         color: T.Button.Colors.PRIMARY,
-                        onClick: () => e6(!1),
-                        children: Q.default.Messages.CANCEL
-                    }), 0 !== ev ? null != S ? (0, s.jsx)(T.Button, {
-                        onClick: () => eD(S),
-                        disabled: tt,
-                        children: Q.default.Messages.CONTINUE
+                        onClick: () => e1(!1),
+                        children: X.default.Messages.CANCEL
+                    }), 0 !== eg ? null != S ? (0, s.jsx)(T.Button, {
+                        onClick: () => eL(S),
+                        disabled: e6,
+                        children: X.default.Messages.CONTINUE
                     }) : (0, s.jsx)(T.Button, {
-                        onClick: () => e6(!0),
-                        disabled: tt,
-                        submitting: eP,
-                        children: Q.default.Messages.AUTHORIZE
+                        onClick: () => e1(!0),
+                        disabled: e6,
+                        submitting: eM,
+                        children: X.default.Messages.AUTHORIZE
                     }) : null]
                 })), {
-                    header: R,
+                    header: C,
                     body: l,
-                    footer: g,
+                    footer: R,
                     nextStep: S,
-                    appDetails: p,
-                    sendAuthorize: e6
+                    appDetails: N,
+                    sendAuthorize: e1
                 }
             }
 
-            function ei(e, t) {
+            function en(e, t) {
                 if (null == t.location || null != e && e(t)) return;
                 let {
                     host: n,
                     path: i,
                     query: r
-                } = d.parse(t.location, !0), a = U.default.isDiscordHostname(n) || window.location.host === n;
-                if (a && i === X.Routes.OAUTH2_AUTHORIZED)(0, f.openModal)(e => (0, s.jsx)(K.OAuth2Modal, {
+                } = d.parse(t.location, !0), a = P.default.isDiscordHostname(n) || window.location.host === n;
+                if (a && i === Z.Routes.OAUTH2_AUTHORIZED)(0, f.openModal)(e => (0, s.jsx)(W.OAuth2Modal, {
                     ...e,
-                    "aria-labelledby": J,
-                    children: (0, s.jsx)(z.OAuth2AuthorizedSuccess, {
+                    "aria-labelledby": q,
+                    children: (0, s.jsx)(K.OAuth2AuthorizedSuccess, {
                         guild: t.guild,
                         application: t.application,
                         onClose: e.onClose
                     })
                 }));
-                else if (a && (null == i ? void 0 : i.startsWith(X.Routes.OAUTH2_ERROR)))(0, f.openModal)(e => {
-                    let t = r.error_description || r.error || Q.default.Messages.OAUTH2_UNKNOWN_ERROR;
-                    return Array.isArray(t) && (t = t[0]), (0, s.jsx)(K.OAuth2Modal, {
+                else if (a && (null == i ? void 0 : i.startsWith(Z.Routes.OAUTH2_ERROR)))(0, f.openModal)(e => {
+                    let t = r.error_description || r.error || X.default.Messages.OAUTH2_UNKNOWN_ERROR;
+                    return Array.isArray(t) && (t = t[0]), (0, s.jsx)(W.OAuth2Modal, {
                         ...e,
-                        "aria-labelledby": J,
-                        children: (0, s.jsx)(z.OAuth2Error, {
+                        "aria-labelledby": q,
+                        children: (0, s.jsx)(K.OAuth2Error, {
                             message: t,
                             onClose: e.onClose
                         })
@@ -177671,38 +177692,38 @@
                 }
             }
 
-            function er(e, t) {
-                if ((0, g.isMidjourneyOnboardingFlow)("create-guild-and-oauth2-modal")) {
-                    R.default.openCreateGuildModal({
-                        onSuccess: n => es({
+            function ei(e, t) {
+                if ((0, R.isMidjourneyOnboardingFlow)("create-guild-and-oauth2-modal")) {
+                    C.default.openCreateGuildModal({
+                        onSuccess: n => er({
                             ...e,
                             guildId: n
                         }, t)
                     });
                     return
                 }
-                es(e, t)
+                er(e, t)
             }
 
-            function es(e, t) {
-                (0, f.openModal)(t => (0, s.jsx)(ee, {
+            function er(e, t) {
+                (0, f.openModal)(t => (0, s.jsx)($, {
                     ...t,
                     ...e,
                     cancelCompletesFlow: !1,
-                    callback: ei.bind(null, e.callback)
+                    callback: en.bind(null, e.callback)
                 }), {
                     onCloseCallback: t
                 })
             }
 
-            function ea(e) {
+            function es(e) {
                 let {
                     hostname: t = "",
                     host: n,
                     path: i,
                     query: r
                 } = d.parse(e);
-                return null != i && null != r && (U.default.isDiscordHostname(t) || n === window.location.host) && (i.startsWith("/api".concat(X.Endpoints.OAUTH2_AUTHORIZE)) || i.startsWith(X.Routes.OAUTH2_AUTHORIZE)) ? (0, b.parseOAuth2AuthorizeProps)(r) : null
+                return null != i && null != r && (P.default.isDiscordHostname(t) || n === window.location.host) && (i.startsWith("/api".concat(Z.Endpoints.OAUTH2_AUTHORIZE)) || i.startsWith(Z.Routes.OAUTH2_AUTHORIZE)) ? (0, U.parseOAuth2AuthorizeProps)(r) : null
             }(r = i || (i = {}))[r.SELECT_INSTALL_TYPE = 0] = "SELECT_INSTALL_TYPE", r[r.AUTHORIZE_SCOPES = 1] = "AUTHORIZE_SCOPES", r[r.AUTHORIZE_BOT_PERMISSIONS = 2] = "AUTHORIZE_BOT_PERMISSIONS"
         },
         260430: function(e, t, n) {
@@ -178206,21 +178227,15 @@
             function h(e) {
                 let {
                     children: t,
-                    footer: n,
-                    transitionState: r,
-                    ...s
+                    transitionState: n,
+                    ...r
                 } = e;
-                return (0, i.jsxs)(o.ModalRoot, {
+                return (0, i.jsx)(o.ModalRoot, {
                     size: o.ModalSize.DYNAMIC,
-                    transitionState: r,
+                    transitionState: n,
                     className: f.oauth2Wrapper,
-                    ...s,
-                    children: [(0, i.jsx)(o.ModalContent, {
-                        children: t
-                    }), null != n && (0, i.jsx)(o.ModalFooter, {
-                        className: f.footer,
-                        children: n
-                    })]
+                    ...r,
+                    children: t
                 })
             }
         },
@@ -179096,7 +179111,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("6416"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("31605"), n.e("32776"), n.e("57878"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("6416"), n.e("38674"), n.e("43906"), n.e("31605"), n.e("54167"), n.e("57878"), n.e("32776"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -187876,28 +187891,35 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return o
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("120356"),
-                s = n.n(r),
-                a = n("481060"),
-                o = n("795548");
+            var r = n("393586"),
+                s = n("481060"),
+                a = n("795548");
 
-            function l(e) {
+            function o(e) {
                 let {
                     children: t,
                     className: n,
-                    size: r = a.Button.Sizes.SMALL,
+                    size: o = s.Button.Sizes.SMALL,
                     ...l
                 } = e;
-                return (0, i.jsx)(a.Button, {
+                return (0, i.jsx)(s.Button, {
                     ...l,
-                    size: r,
-                    className: s()(o.button, n),
-                    children: t
+                    color: s.Button.Colors.BRAND,
+                    size: o,
+                    className: n,
+                    children: (0, i.jsxs)("div", {
+                        className: a.button,
+                        children: [(0, i.jsx)(r.ShopIcon, {
+                            color: "white",
+                            height: 16,
+                            width: 16
+                        }), t]
+                    })
                 })
             }
         },
@@ -189821,7 +189843,7 @@
                 a = n("70956"),
                 o = n("438954"),
                 l = n("670081");
-            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card", i.QUESTS_STORE = "quests_store", i.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", i.QUEST_HOME_DESKTOP = "quest_home_desktop", i.QUEST_HOME_MOBILE = "quest_home_mobile", i.QUEST_PROGRESS_BAR = "quest_progress_bar";
+            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card", i.QUESTS_STORE = "quests_store", i.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", i.QUEST_HOME_DESKTOP = "quest_home_desktop", i.QUEST_HOME_MOBILE = "quest_home_mobile", i.QUEST_PROGRESS_BAR = "quest_progress_bar", i.EMBED_MOBILE = "embed_mobile";
             let u = a.default.Millis.MINUTE * s.Quests.ConsecutiveHeartbeatPeriodMinutes
         },
         113434: function(e, t, n) {
@@ -190479,7 +190501,7 @@
                     return Q
                 },
                 copyShareLink: function() {
-                    return eu
+                    return e_
                 },
                 getCollectiblesQuestReward: function() {
                     return z
@@ -190512,7 +190534,7 @@
                     return x
                 },
                 getQuestTaskDetails: function() {
-                    return e_
+                    return eE
                 },
                 getQuestUrl: function() {
                     return V
@@ -190521,13 +190543,13 @@
                     return q
                 },
                 getQuestsInstructionsToWinReward: function() {
-                    return eo
+                    return eu
                 },
                 getRewardAsset: function() {
                     return b
                 },
                 getRewardCodeQuestReward: function() {
-                    return ea
+                    return el
                 },
                 getVideoAssetMimeType: function() {
                     return et
@@ -190563,7 +190585,7 @@
                     return en
                 },
                 openGameLink: function() {
-                    return el
+                    return ed
                 },
                 questUserStatusFromServer: function() {
                     return v
@@ -190576,6 +190598,9 @@
                 },
                 questsRewardCodeFromServer: function() {
                     return M
+                },
+                shouldShowSocialEntrypoints: function() {
+                    return ea
                 },
                 shouldUsePlayOnDesktopTask: function() {
                     return es
@@ -190776,7 +190801,7 @@
             }
             let b = e => {
                     var t, n;
-                    let i = ea({
+                    let i = el({
                             quest: e,
                             idx: null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedTier
                         }),
@@ -190827,7 +190852,7 @@
                 let {
                     progressSeconds: i,
                     targetSeconds: r
-                } = e_({
+                } = eE({
                     quest: t,
                     location: n
                 });
@@ -190951,9 +190976,9 @@
                 } = e;
                 return (0, i.match)(t.config).with({
                     configVersion: 1
-                }, e => h.SharedQuestFields.build(e).features.has(m.QuestVariants.PLAYTIME_TASK)).with({
+                }, e => eo(t, m.QuestVariants.PLAYTIME_TASK)).with({
                     configVersion: 2
-                }, e => h.SharedQuestFields.build(e).features.has(m.QuestVariants.PLAYTIME_TASK) || ei(e)).exhaustive()
+                }, e => eo(t, m.QuestVariants.PLAYTIME_TASK) || ei(e)).exhaustive()
             }
 
             function es(e) {
@@ -190969,6 +190994,14 @@
             }
 
             function ea(e) {
+                return !eo(e, m.QuestVariants.IN_HOUSE_CONSOLE_QUEST)
+            }
+
+            function eo(e, t) {
+                return h.SharedQuestFields.build(e.config).features.has(t)
+            }
+
+            function el(e) {
                 let {
                     quest: t,
                     idx: n
@@ -190982,12 +191015,12 @@
                 }, e => e).otherwise(() => null)
             }
 
-            function eo(e) {
+            function eu(e) {
                 let {
                     quest: t,
                     location: n,
                     useV2Variants: i = !1
-                } = e, r = t.config.messages.gameTitle, s = h.SharedQuestFields.build(t.config).defaultReward, a = e_({
+                } = e, r = t.config.messages.gameTitle, s = h.SharedQuestFields.build(t.config).defaultReward, a = eE({
                     quest: t,
                     location: n
                 }).targetMinutes;
@@ -191010,7 +191043,7 @@
                 })
             }
 
-            function el(e, t) {
+            function ed(e, t) {
                 let n = h.SharedQuestFields.build(e.config).application.link;
                 (0, c.handleClick)({
                     href: n,
@@ -191024,7 +191057,7 @@
                     }
                 })
             }
-            let eu = (e, t) => {
+            let e_ = (e, t) => {
                     (0, I.trackQuestContentClicked)({
                         questId: e,
                         questContent: t.content,
@@ -191032,7 +191065,7 @@
                         questContentPosition: t.position
                     }), (0, u.copy)(V(e))
                 },
-                ed = e => {
+                ec = e => {
                     var t, n, i, s, a, l, u;
                     let {
                         quest: _,
@@ -191049,7 +191082,7 @@
                         taskType: c
                     }
                 },
-                e_ = e => {
+                eE = e => {
                     let {
                         quest: t,
                         location: n
@@ -191072,10 +191105,10 @@
                     }, e => es({
                         quest: e,
                         location: n
-                    }) ? ed({
+                    }) ? ec({
                         quest: e,
                         taskType: r.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP
-                    }) : ed({
+                    }) : ec({
                         quest: e,
                         taskType: r.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP
                     })).exhaustive()
@@ -200422,61 +200455,59 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return l
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("481060"),
-                s = n("285952"),
-                a = n("395361"),
-                o = n("829820"),
-                l = n("22387");
+                s = n("395361"),
+                a = n("829820"),
+                o = n("22387");
 
-            function u(e) {
+            function l(e) {
                 let {
                     activity: t,
                     user: n,
-                    source: u,
-                    className: d,
-                    size: _,
-                    look: c,
-                    color: E,
-                    fullWidth: I,
-                    onAction: T
+                    source: l,
+                    className: u,
+                    size: d,
+                    look: _,
+                    color: c,
+                    fullWidth: E,
+                    onAction: I
                 } = e, {
-                    label: f,
-                    tooltip: S,
-                    loading: h,
-                    disabled: A,
-                    onClick: m
-                } = (0, o.useSpotifyPlayAction)(t, n, u), N = () => {
-                    null == T || T(), m()
+                    label: T,
+                    tooltip: f,
+                    loading: S,
+                    disabled: h,
+                    onClick: A
+                } = (0, a.useSpotifyPlayAction)(t, n, l), m = () => {
+                    null == I || I(), A()
                 };
                 return (0, i.jsx)(r.Tooltip, {
-                    text: S,
+                    text: f,
                     children: e => {
                         let {
                             onMouseEnter: t,
                             onMouseLeave: n
                         } = e;
-                        return (0, i.jsx)(r.Button, {
-                            className: d,
-                            size: _,
-                            look: c,
-                            color: E,
-                            fullWidth: I,
-                            onClick: N,
+                        return (0, i.jsxs)(r.Button, {
+                            className: u,
+                            innerClassName: o.playButtonInner,
+                            size: d,
+                            look: _,
+                            color: c,
+                            fullWidth: E,
+                            onClick: m,
                             onMouseEnter: t,
                             onMouseLeave: n,
-                            disabled: A,
-                            submitting: h,
-                            children: (0, i.jsxs)(s.default, {
-                                align: s.default.Align.CENTER,
-                                children: [(0, i.jsx)(a.default, {
-                                    className: l.spotifyButtonLogo
-                                }), f]
-                            })
+                            disabled: h,
+                            submitting: S,
+                            children: [(0, i.jsx)(s.default, {
+                                width: 16,
+                                height: 16
+                            }), T]
                         })
                     }
                 })
@@ -200527,8 +200558,9 @@
                             onMouseLeave: r
                         } = e;
                         return (0, i.jsx)(a.Button, {
-                            size: s()(E, d.iconButtonSize),
-                            className: s()(f, d.iconButton),
+                            size: E,
+                            className: s()(d.syncButton, f),
+                            innerClassName: d.syncButtonInner,
                             look: I,
                             color: T,
                             onClick: p,
@@ -200538,7 +200570,8 @@
                             submitting: A,
                             "aria-label": null != h ? h : t.name,
                             children: (0, i.jsx)(o.default, {
-                                className: d.listenAlongIcon
+                                width: 16,
+                                height: 16
                             })
                         })
                     }
@@ -207403,13 +207436,13 @@
 
             function F(e) {
                 let t = I.default.getMentionCount(e.id) > 0,
-                    n = I.default.hasUnreadOrMentions(e.id) && (!h.default.isMuted(e.id) || t),
+                    n = I.default.hasUnread(e.id) && !h.default.isMuted(e.id),
                     i = e.hasFlag(m.ChannelFlags.PINNED),
                     r = e.isActiveThread(),
                     s = r && (0, A.default)(e) > Date.now();
                 return {
-                    isUnread: (r || i) && n,
-                    isRelevant: s || i || n,
+                    isUnread: (r || i) && n || t,
+                    isRelevant: s || i || n || t,
                     isTimedRelevant: s
                 }
             }
@@ -209845,59 +209878,47 @@
                 })
             }
         },
-        504053: function(e, t, n) {
+        450096: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                thumbHashToRGBA: function() {
-                    return r
+                usePlaceholderImage: function() {
+                    return a
                 }
-            }), n("653041"), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817");
-            var i = n("788900");
+            }), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120");
+            var i = n("470079"),
+                r = n("153832");
+            let s = new Worker(new URL(n.p + n.u("77459"), n.b));
 
-            function r(e) {
-                let {
-                    detail: t = 1,
-                    pop: n = 1
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                    PI: r,
-                    min: s,
-                    max: a,
-                    cos: o,
-                    round: l
-                } = Math, u = e[0] | e[1] << 8 | e[2] << 16, d = e[3] | e[4] << 8, _ = (63 & u) / 63, c = (u >> 6 & 63) / 31.5 - 1, E = (u >> 12 & 63) / 31.5 - 1, I = u >> 23, T = d >> 15, f = a(3, T ? I ? 5 : 7 : 7 & d), S = a(3, T ? 7 & d : I ? 5 : 7), h = I ? (15 & e[5]) / 15 : 1, A = (e[5] >> 4) / 15, m = I ? 6 : 5, N = 0, p = (t, n, i) => {
-                    let r = [];
-                    for (let s = 0; s < n; s++)
-                        for (let a = s ? 0 : 1; a * n < t * (n - s); a++) r.push(((e[m + (N >> 1)] >> ((1 & N++) << 2) & 15) / 7.5 - 1) * i);
-                    return r
-                }, O = p(f, S, (u >> 18 & 31) / 31 / 2), C = p(3, 3, (d >> 3 & 63) / 63 * n), R = p(3, 3, (d >> 9 & 63) / 63 * n), g = I ? p(5, 5, A) : [], L = (0, i.thumbHashToApproximateAspectRatio)(e), v = l(L > 1 ? 32 : 32 * L), D = l(L > 1 ? 32 / L : 32), M = new Uint8Array(v * D * 4), y = [], P = [];
-                for (let e = 0, n = 0; e < D; e++)
-                    for (let i = 0; i < v; i++, n += 4) {
-                        let l = _,
-                            u = c,
-                            d = E,
-                            T = h;
-                        for (let e = 0, t = a(f, I ? 5 : 3); e < t; e++) y[e] = o(r / v * (i + .5) * e);
-                        for (let t = 0, n = a(S, I ? 5 : 3); t < n; t++) P[t] = o(r / D * (e + .5) * t);
-                        for (let e = 0, n = 0; e < S; e++)
-                            for (let i = e ? 0 : 1, r = 2 * P[e]; i * S < f * (S - e); i++, n++) !(i > t) && !(e > t) && (l += O[n] * y[i] * r);
-                        for (let e = 0, t = 0; e < 3; e++)
-                            for (let n = e ? 0 : 1, i = 2 * P[e]; n < 3 - e; n++, t++) {
-                                let e = y[n] * i;
-                                u += C[t] * e, d += R[t] * e
-                            }
-                        if (I)
-                            for (let e = 0, t = 0; e < 5; e++)
-                                for (let n = e ? 0 : 1, i = 2 * P[e]; n < 5 - e; n++, t++) T += g[t] * y[n] * i;
-                        let A = l - 2 / 3 * u,
-                            m = (3 * l - A + d) / 2,
-                            N = m - d;
-                        M[n] = a(0, 255 * s(1, m)), M[n + 1] = a(0, 255 * s(1, N)), M[n + 2] = a(0, 255 * s(1, A)), M[n + 3] = a(0, 255 * s(1, T))
+            function a(e, t, n) {
+                let a = n && 1 === t && null != e,
+                    [o, l] = i.useState(void 0);
+                return i.useEffect(() => {
+                    let t = !1;
+                    if (a) {
+                        var n;
+                        (n = e, new Promise(e => {
+                            let t = (0, r.v4)(),
+                                i = n => {
+                                    let {
+                                        data: {
+                                            id: r,
+                                            png: a
+                                        }
+                                    } = n;
+                                    t === r && (e(a), s.removeEventListener("message", i))
+                                };
+                            s.addEventListener("message", i), s.postMessage({
+                                id: t,
+                                placeholderData: n
+                            })
+                        })).then(e => {
+                            !t && l(e)
+                        })
                     }
-                return {
-                    w: v,
-                    h: D,
-                    rgba: M
-                }
+                    return () => {
+                        t = !0
+                    }
+                }, [e, a]), o
             }
         },
         218543: function(e, t, n) {
@@ -213512,7 +213533,11 @@
                         className: I.statusText,
                         children: C
                     }) : null,
-                    k = n === E.UserProfileTypes.BITE_SIZE ? I.biteSize : I.fullSize,
+                    k = {
+                        [I.biteSize]: n === E.UserProfileTypes.BITE_SIZE,
+                        [I.fullSize]: n === E.UserProfileTypes.FULL_SIZE,
+                        [I.panel]: n === E.UserProfileTypes.PANEL
+                    },
                     B = a()(I.statusBubbleOuter, k, {
                         [I.statusBubbleShape]: !R && L || !M,
                         [I.statusBubbleSingleLineWithTextShape]: M && R
@@ -215381,8 +215406,8 @@
                             }), c()
                         }
                     }), (0, i.jsx)(r.MenuItem, {
-                        id: "edit-default-profile",
-                        label: l.default.Messages.USER_SETTINGS_EDIT_USER_PROFILE,
+                        id: "edit-main-profile",
+                        label: l.default.Messages.EDIT_MAIN_PROFILE,
                         subtext: l.default.Messages.USER_PROFILE_MENU_HELP,
                         action: () => {
                             I({
@@ -251566,7 +251591,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a1cf3970b8c94f8d3bca552e614131c774d73b92"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5f162eb978434184d55d2ffa63e37a9dd205728c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -255015,16 +255040,15 @@
                 ImageLoadingOverlay: function() {
                     return I
                 }
-            }), n("47120"), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817"), n("863942"), n("642549");
+            }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("920906"),
-                a = n("788900"),
-                o = n("481060"),
-                l = n("504053"),
-                u = n("981631"),
-                d = n("592959");
-            let _ = {
+                a = n("481060"),
+                o = n("450096"),
+                l = n("981631"),
+                u = n("592959");
+            let d = {
                     from: {
                         opacity: 1
                     },
@@ -255038,14 +255062,14 @@
                         duration: 200
                     }
                 },
-                c = {
-                    ..._,
+                _ = {
+                    ...d,
                     config: {
                         duration: 50
                     }
                 },
-                E = {
-                    ..._,
+                c = {
+                    ...d,
                     config: (e, t) => t ? {
                         duration: 800
                     } : {
@@ -255053,54 +255077,58 @@
                     }
                 };
 
+            function E(e) {
+                let {
+                    readyState: t,
+                    placeholderImg: n,
+                    placeholderStyle: a
+                } = e, o = t === l.ImageReadyStates.LOADING, [c] = r.useState(() => Date.now()), E = t === l.ImageReadyStates.READY && Date.now() - c < 200, I = (0, s.useTransition)(o && null != n, E ? _ : d);
+                return (0, i.jsx)(i.Fragment, {
+                    children: I((e, t) => t && (0, i.jsx)(s.animated.img, {
+                        style: {
+                            ...a,
+                            ...e
+                        },
+                        className: u.imagePlaceholder,
+                        src: n,
+                        alt: ""
+                    }))
+                })
+            }
+
             function I(e) {
                 let {
                     readyState: t,
                     aspectRatio: n,
-                    placeholder: I,
-                    placeholderVersion: T,
-                    placeholderStyle: f,
-                    children: S
-                } = e, h = t === u.ImageReadyStates.LOADING, [A] = r.useState(() => Date.now()), [m] = r.useState(h), [N, p] = r.useState(!1), O = r.useMemo(() => {
-                    if (m && 1 === T && null != I) {
-                        let e = Uint8Array.from(atob(I), e => e.charCodeAt(0)),
-                            t = (0, l.thumbHashToRGBA)(e, {
-                                detail: 1,
-                                pop: 1.1
-                            });
-                        return (0, a.rgbaToDataURL)(t.w, t.h, t.rgba)
-                    }
-                }, [m, I, T]);
+                    placeholder: d,
+                    placeholderVersion: _,
+                    placeholderStyle: I,
+                    children: T
+                } = e, f = t === l.ImageReadyStates.LOADING, [S] = r.useState(f), [h, A] = r.useState(!1), m = (0, o.usePlaceholderImage)(d, _, S);
                 r.useEffect(() => {
                     let e = setTimeout(() => {
-                        p(!0)
+                        A(!0)
                     }, 2e3);
                     return () => {
                         clearTimeout(e)
                     }
-                }, [m]);
-                let C = t === u.ImageReadyStates.READY && Date.now() - A < 200,
-                    R = (0, s.useTransition)(h && null != O, C ? c : _),
-                    g = (0, s.useTransition)(h && N, E);
+                }, [S]);
+                let N = (0, s.useTransition)(f && h, c);
                 return (0, i.jsxs)("div", {
-                    className: d.loadingOverlay,
+                    className: u.loadingOverlay,
                     style: {
                         aspectRatio: n
                     },
-                    children: [S, R((e, t) => t && (0, i.jsx)(s.animated.img, {
-                        style: {
-                            ...f,
-                            ...e
-                        },
-                        className: d.imagePlaceholder,
-                        src: O,
-                        alt: ""
-                    })), g((e, t) => t && (0, i.jsx)(s.animated.div, {
+                    children: [T, null != m && (0, i.jsx)(E, {
+                        readyState: t,
+                        placeholderImg: m,
+                        placeholderStyle: I
+                    }), N((e, t) => t && (0, i.jsx)(s.animated.div, {
                         style: e,
-                        className: d.imageLoadingOverlay,
-                        children: (0, i.jsx)(o.Spinner, {
-                            type: o.SpinnerTypes.SPINNING_CIRCLE_SIMPLE,
-                            className: d.cornerLoadingSpinner
+                        className: u.imageLoadingOverlay,
+                        children: (0, i.jsx)(a.Spinner, {
+                            type: a.SpinnerTypes.SPINNING_CIRCLE_SIMPLE,
+                            className: u.cornerLoadingSpinner
                         })
                     }))]
                 })
@@ -280691,7 +280719,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "297961"
+                                build_number: "298244"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288000,7 +288028,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "297961", "297961"), 10);
+                let s = parseInt((n = "298244", "298244"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315854,4 +315882,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.bb5760c547897cd86e3b.js.map
+//# sourceMappingURL=27519.e978630bea52e4d936cf.js.map
