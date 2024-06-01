@@ -4971,6 +4971,7 @@
             e.exports = {
                 clickable: "clickable_cfa640",
                 container: "container_b8f6a6",
+                fullHeight: "fullHeight__4cc51",
                 noDisplay: "noDisplay_d23873",
                 overviewSidebarContent: "overviewSidebarContent_d1aa6a",
                 overviewSidebarWrapper: "overviewSidebarWrapper_b27091",
@@ -4988,6 +4989,7 @@
                 signTextLeft: "signTextLeft_aa48ec",
                 signTextRight: "signTextRight__270ca",
                 signatureBlock: "signatureBlock__9fc19",
+                signatureBlockContainer: "signatureBlockContainer_de6435",
                 signatureText: "signatureText__4a423"
             }
         },
@@ -5131,6 +5133,17 @@
                 trait: "trait__089c4"
             }
         },
+        566273: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container_aaae79",
+                content: "content__33011",
+                contentAnimContainer: "contentAnimContainer__8c0af",
+                fullHeight: "fullHeight_fe77cd",
+                heightContainer: "heightContainer__984e4",
+                innerContent: "innerContent__6c8b6"
+            }
+        },
         267461: function(e) {
             "use strict";
             e.exports = {
@@ -5234,6 +5247,8 @@
         590190: function(e) {
             "use strict";
             e.exports = {
+                charterScroll: "charterScroll__917bf",
+                charterScrollContainer: "charterScrollContainer_f5fb5a",
                 close: "close_fe82d9",
                 content: "content__845fb",
                 divider: "divider_ef3200",
@@ -5844,24 +5859,16 @@
                 cardsContainer: "cardsContainer__8b28d",
                 categories: "categories__15c83",
                 categoryWrapper: "categoryWrapper__3d4f2",
-                close: "close__354a2",
-                closeWrapper: "closeWrapper_fa833c",
                 easterEggAnimation: "easterEggAnimation_c14e21",
                 easterEggAnimationReverse: "easterEggAnimationReverse_ffc502",
-                headerBar: "headerBar__7effc",
                 hiddenWumpus: "hiddenWumpus__92688",
                 hiddenWumpusEnabled: "hiddenWumpusEnabled_b2761b",
                 itemTypeTitle: "itemTypeTitle__243d9",
-                logo: "logo_b80583",
                 page: "page__8ffff",
-                pageWithShopBannerHidden: "pageWithShopBannerHidden__4dbdc",
+                pageFullscreen: "pageFullscreen__67fa1",
                 pageWrapper: "pageWrapper__18871",
-                pageWrapperFullscreen: "pageWrapperFullscreen__0c78f",
                 shop: "shop_b31ed2",
-                shopLogo: "shopLogo__7193c",
-                shopLogoContainer: "shopLogoContainer__5fd13",
-                shopScroll: "shopScroll_caa423",
-                title: "title__132e2"
+                shopScroll: "shopScroll_caa423"
             }
         },
         897246: function(e) {
@@ -5913,6 +5920,18 @@
             e.exports = {
                 giftButton: "giftButton_e9c7df",
                 giftButtonInner: "giftButtonInner_c9f8fd"
+            }
+        },
+        424681: function(e) {
+            "use strict";
+            e.exports = {
+                closeIcon: "closeIcon__0f2da",
+                discordLogo: "discordLogo__606c1",
+                discordLogoContainer: "discordLogoContainer__55095",
+                fullscreenHeaderBar: "fullscreenHeaderBar_cc16ce",
+                headerBar: "headerBar__7c489",
+                shopLogo: "shopLogo__377d8",
+                shopLogoContainer: "shopLogoContainer_c34b29"
             }
         },
         139557: function(e) {

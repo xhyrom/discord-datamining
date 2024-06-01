@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298165", ", Version Hash: ").concat("49c8fbe856be730cf1c4aed1844ae47a01ccdb68")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298206", ", Version Hash: ").concat("377fa68725257bd308d0c7c817688c26c6ce8ce3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55888,6 +55888,8 @@
                 MESSAGE_CHANNEL_EMBEDS_DISABLED: "Embeds are disabled in this channel.",
                 MESSAGE_FORWARD_FAILED: "Forward Failed",
                 MESSAGE_FORWARD_FAILED_BODY: "The message could not be forwarded to the following {count, plural, one {location} other {locations}}:",
+                MESSAGE_FORWARD_FOOTER_WITH_ORIGIN_A11Y: "Message originally sent in !!{origin}!! at {timestamp}",
+                MESSAGE_FORWARD_FOOTER_A11Y: "Message originally sent at {timestamp}",
                 SELECTED: "Selected"
             })
         },
@@ -88746,8 +88748,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298165", "298165"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298165")), t = 0), t
+                let t = parseInt((e = "298206", "298206"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298206")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116811,8 +116813,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298165",
-                    versionHash: "49c8fbe856be730cf1c4aed1844ae47a01ccdb68"
+                    buildNumber: "298206",
+                    versionHash: "377fa68725257bd308d0c7c817688c26c6ce8ce3"
                 }
             }
             n.r(t), n.d(t, {
@@ -142486,7 +142488,7 @@
                 await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("13508")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("8016"), n.e("22646"), n.e("20533"), n.e("32186")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -154973,7 +154975,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("56630"), n.e("33053"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("75837"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("69563"), n.e("43643"), n.e("92714"), n.e("92557"), n.e("36789"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -174249,8 +174251,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717199841674",
-                                    build_number: "298165"
+                                    built_at: "1717205471300",
+                                    build_number: "298206"
                                 }
                             },
                             retries: 1
@@ -179145,7 +179147,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("6416"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("31605"), n.e("32776"), n.e("57878"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("6416"), n.e("38674"), n.e("43906"), n.e("31605"), n.e("54167"), n.e("57878"), n.e("32776"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -209912,59 +209914,47 @@
                 })
             }
         },
-        504053: function(e, t, n) {
+        450096: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                thumbHashToRGBA: function() {
-                    return r
+                usePlaceholderImage: function() {
+                    return a
                 }
-            }), n("653041"), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817");
-            var i = n("788900");
+            }), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120");
+            var i = n("470079"),
+                r = n("153832");
+            let s = new Worker(new URL(n.p + n.u("77459"), n.b));
 
-            function r(e) {
-                let {
-                    detail: t = 1,
-                    pop: n = 1
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                    PI: r,
-                    min: s,
-                    max: a,
-                    cos: o,
-                    round: l
-                } = Math, u = e[0] | e[1] << 8 | e[2] << 16, d = e[3] | e[4] << 8, _ = (63 & u) / 63, c = (u >> 6 & 63) / 31.5 - 1, E = (u >> 12 & 63) / 31.5 - 1, I = u >> 23, T = d >> 15, f = a(3, T ? I ? 5 : 7 : 7 & d), S = a(3, T ? 7 & d : I ? 5 : 7), h = I ? (15 & e[5]) / 15 : 1, A = (e[5] >> 4) / 15, m = I ? 6 : 5, N = 0, p = (t, n, i) => {
-                    let r = [];
-                    for (let s = 0; s < n; s++)
-                        for (let a = s ? 0 : 1; a * n < t * (n - s); a++) r.push(((e[m + (N >> 1)] >> ((1 & N++) << 2) & 15) / 7.5 - 1) * i);
-                    return r
-                }, O = p(f, S, (u >> 18 & 31) / 31 / 2), C = p(3, 3, (d >> 3 & 63) / 63 * n), R = p(3, 3, (d >> 9 & 63) / 63 * n), g = I ? p(5, 5, A) : [], L = (0, i.thumbHashToApproximateAspectRatio)(e), v = l(L > 1 ? 32 : 32 * L), D = l(L > 1 ? 32 / L : 32), M = new Uint8Array(v * D * 4), y = [], P = [];
-                for (let e = 0, n = 0; e < D; e++)
-                    for (let i = 0; i < v; i++, n += 4) {
-                        let l = _,
-                            u = c,
-                            d = E,
-                            T = h;
-                        for (let e = 0, t = a(f, I ? 5 : 3); e < t; e++) y[e] = o(r / v * (i + .5) * e);
-                        for (let t = 0, n = a(S, I ? 5 : 3); t < n; t++) P[t] = o(r / D * (e + .5) * t);
-                        for (let e = 0, n = 0; e < S; e++)
-                            for (let i = e ? 0 : 1, r = 2 * P[e]; i * S < f * (S - e); i++, n++) !(i > t) && !(e > t) && (l += O[n] * y[i] * r);
-                        for (let e = 0, t = 0; e < 3; e++)
-                            for (let n = e ? 0 : 1, i = 2 * P[e]; n < 3 - e; n++, t++) {
-                                let e = y[n] * i;
-                                u += C[t] * e, d += R[t] * e
-                            }
-                        if (I)
-                            for (let e = 0, t = 0; e < 5; e++)
-                                for (let n = e ? 0 : 1, i = 2 * P[e]; n < 5 - e; n++, t++) T += g[t] * y[n] * i;
-                        let A = l - 2 / 3 * u,
-                            m = (3 * l - A + d) / 2,
-                            N = m - d;
-                        M[n] = a(0, 255 * s(1, m)), M[n + 1] = a(0, 255 * s(1, N)), M[n + 2] = a(0, 255 * s(1, A)), M[n + 3] = a(0, 255 * s(1, T))
+            function a(e, t, n) {
+                let a = n && 1 === t && null != e,
+                    [o, l] = i.useState(void 0);
+                return i.useEffect(() => {
+                    let t = !1;
+                    if (a) {
+                        var n;
+                        (n = e, new Promise(e => {
+                            let t = (0, r.v4)(),
+                                i = n => {
+                                    let {
+                                        data: {
+                                            id: r,
+                                            png: a
+                                        }
+                                    } = n;
+                                    t === r && (e(a), s.removeEventListener("message", i))
+                                };
+                            s.addEventListener("message", i), s.postMessage({
+                                id: t,
+                                placeholderData: n
+                            })
+                        })).then(e => {
+                            !t && l(e)
+                        })
                     }
-                return {
-                    w: v,
-                    h: D,
-                    rgba: M
-                }
+                    return () => {
+                        t = !0
+                    }
+                }, [e, a]), o
             }
         },
         218543: function(e, t, n) {
@@ -251637,7 +251627,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "49c8fbe856be730cf1c4aed1844ae47a01ccdb68"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "377fa68725257bd308d0c7c817688c26c6ce8ce3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -255086,16 +255076,15 @@
                 ImageLoadingOverlay: function() {
                     return I
                 }
-            }), n("47120"), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817"), n("863942"), n("642549");
+            }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("920906"),
-                a = n("788900"),
-                o = n("481060"),
-                l = n("504053"),
-                u = n("981631"),
-                d = n("592959");
-            let _ = {
+                a = n("481060"),
+                o = n("450096"),
+                l = n("981631"),
+                u = n("592959");
+            let d = {
                     from: {
                         opacity: 1
                     },
@@ -255109,14 +255098,14 @@
                         duration: 200
                     }
                 },
-                c = {
-                    ..._,
+                _ = {
+                    ...d,
                     config: {
                         duration: 50
                     }
                 },
-                E = {
-                    ..._,
+                c = {
+                    ...d,
                     config: (e, t) => t ? {
                         duration: 800
                     } : {
@@ -255124,54 +255113,58 @@
                     }
                 };
 
+            function E(e) {
+                let {
+                    readyState: t,
+                    placeholderImg: n,
+                    placeholderStyle: a
+                } = e, o = t === l.ImageReadyStates.LOADING, [c] = r.useState(() => Date.now()), E = t === l.ImageReadyStates.READY && Date.now() - c < 200, I = (0, s.useTransition)(o && null != n, E ? _ : d);
+                return (0, i.jsx)(i.Fragment, {
+                    children: I((e, t) => t && (0, i.jsx)(s.animated.img, {
+                        style: {
+                            ...a,
+                            ...e
+                        },
+                        className: u.imagePlaceholder,
+                        src: n,
+                        alt: ""
+                    }))
+                })
+            }
+
             function I(e) {
                 let {
                     readyState: t,
                     aspectRatio: n,
-                    placeholder: I,
-                    placeholderVersion: T,
-                    placeholderStyle: f,
-                    children: S
-                } = e, h = t === u.ImageReadyStates.LOADING, [A] = r.useState(() => Date.now()), [m] = r.useState(h), [N, p] = r.useState(!1), O = r.useMemo(() => {
-                    if (m && 1 === T && null != I) {
-                        let e = Uint8Array.from(atob(I), e => e.charCodeAt(0)),
-                            t = (0, l.thumbHashToRGBA)(e, {
-                                detail: 1,
-                                pop: 1.1
-                            });
-                        return (0, a.rgbaToDataURL)(t.w, t.h, t.rgba)
-                    }
-                }, [m, I, T]);
+                    placeholder: d,
+                    placeholderVersion: _,
+                    placeholderStyle: I,
+                    children: T
+                } = e, f = t === l.ImageReadyStates.LOADING, [S] = r.useState(f), [h, A] = r.useState(!1), m = (0, o.usePlaceholderImage)(d, _, S);
                 r.useEffect(() => {
                     let e = setTimeout(() => {
-                        p(!0)
+                        A(!0)
                     }, 2e3);
                     return () => {
                         clearTimeout(e)
                     }
-                }, [m]);
-                let C = t === u.ImageReadyStates.READY && Date.now() - A < 200,
-                    R = (0, s.useTransition)(h && null != O, C ? c : _),
-                    g = (0, s.useTransition)(h && N, E);
+                }, [S]);
+                let N = (0, s.useTransition)(f && h, c);
                 return (0, i.jsxs)("div", {
-                    className: d.loadingOverlay,
+                    className: u.loadingOverlay,
                     style: {
                         aspectRatio: n
                     },
-                    children: [S, R((e, t) => t && (0, i.jsx)(s.animated.img, {
-                        style: {
-                            ...f,
-                            ...e
-                        },
-                        className: d.imagePlaceholder,
-                        src: O,
-                        alt: ""
-                    })), g((e, t) => t && (0, i.jsx)(s.animated.div, {
+                    children: [T, null != m && (0, i.jsx)(E, {
+                        readyState: t,
+                        placeholderImg: m,
+                        placeholderStyle: I
+                    }), N((e, t) => t && (0, i.jsx)(s.animated.div, {
                         style: e,
-                        className: d.imageLoadingOverlay,
-                        children: (0, i.jsx)(o.Spinner, {
-                            type: o.SpinnerTypes.SPINNING_CIRCLE_SIMPLE,
-                            className: d.cornerLoadingSpinner
+                        className: u.imageLoadingOverlay,
+                        children: (0, i.jsx)(a.Spinner, {
+                            type: a.SpinnerTypes.SPINNING_CIRCLE_SIMPLE,
+                            className: u.cornerLoadingSpinner
                         })
                     }))]
                 })
@@ -280762,7 +280755,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298165"
+                                build_number: "298206"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288071,7 +288064,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298165", "298165"), 10);
+                let s = parseInt((n = "298206", "298206"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315925,4 +315918,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.2b2c3ef12bb277bb3c81.js.map
+//# sourceMappingURL=27519.2bc1a8f93dfe6d075cd6.js.map
