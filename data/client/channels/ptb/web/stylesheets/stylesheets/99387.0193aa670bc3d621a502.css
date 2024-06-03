@@ -99078,7 +99078,9 @@ div.content_aac020 {
     height: 245px;
     width: 148px;
     margin-bottom: 24px;
-    position: relative
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px
 }
 
 .bundlePreviewContainer__4f4af {
@@ -99102,7 +99104,9 @@ div.content_aac020 {
 .bundlePfxPreviewContainer_ec3791 {
     height: 245px;
     width: 148px;
-    position: relative
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px
 }
 
 .bundleSlideTitle_f39228 {
@@ -142409,4 +142413,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.aafa5855dae2d1eeb829.css.map*/
+/*# sourceMappingURL=99387.0193aa670bc3d621a502.css.map*/
