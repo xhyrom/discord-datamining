@@ -9108,7 +9108,8 @@ div.cardContainer__94a1c {
 }
 
 span.clanTag_f4aadc {
-    margin-top: 2px
+    margin-top: 2px;
+    margin-left: 4px
 }
 
 .upsellTooltipWrapper__11dad {
@@ -19810,6 +19811,57 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     max-height: max(200px, min(100vh - 80px, 660px))
 }
 
+.container__665d0 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 2px;
+    padding: 1px 2px;
+    background: var(--bg-mod-faint);
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--border-faint)
+}
+
+.container__665d0:empty {
+    visibility: hidden
+}
+
+.custom-profile-theme .container__665d0 {
+    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6));
+    border-color: var(--profile-body-border-color)
+}
+
+.badge__908e2 {
+    filter: saturate(1);
+    filter: saturate(var(--saturation-factor, 1));
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+    pointer-events: none;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 20px;
+    height: 20px
+}
+
+.badge__908e2:active {
+    opacity: .8
+}
+
+.badge__908e2:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-modifier-accent);
+    border-radius: 50%
+}
+
 .container__52f24 {
     display: flex
 }
@@ -19862,11 +19914,15 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .nickname__745d1 {
     word-break: break-word;
-    max-height: 72px;
     overflow: hidden
 }
 
-.fullSizeNickname_a36463 {
+.nickname__745d1.biteSize__2431d,
+.nickname__745d1.panel__5c104 {
+    max-height: 72px
+}
+
+.nickname__745d1.fullSize_dbf8b0 {
     max-height: 90px
 }
 
@@ -19888,9 +19944,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    row-gap: 2px;
     -moz-column-gap: 6px;
     column-gap: 6px
+}
+
+.tags__18aee.biteSize__2431d,
+.tags__18aee.panel__5c104 {
+    row-gap: 2px
+}
+
+.tags__18aee.fullSize_dbf8b0 {
+    row-gap: 8px
 }
 
 .userTag_eb9b2a {
@@ -19932,67 +19996,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     width: 4px;
     height: 4px;
     border-radius: 50%
-}
-
-.container__665d0 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    width: -moz-fit-content;
-    width: fit-content;
-    gap: 4px;
-    padding: 2px 4px;
-    background: var(--bg-mod-faint);
-    border-radius: var(--radius-xs);
-    border: 1px solid var(--border-faint)
-}
-
-.container__665d0:empty {
-    visibility: hidden
-}
-
-.custom-profile-theme .container__665d0 {
-    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6));
-    border-color: var(--profile-body-border-color)
-}
-
-.badge__908e2 {
-    filter: saturate(1);
-    filter: saturate(var(--saturation-factor, 1));
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    overflow: hidden;
-    pointer-events: none;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 24px;
-    height: 24px
-}
-
-.badge__908e2:active {
-    opacity: .8
-}
-
-.badge__908e2:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-modifier-accent);
-    border-radius: 50%
-}
-
-.badgeList_b6652b {
-    gap: 1px;
-    padding: 2px
-}
-
-.badge__26d6e {
-    width: 20px;
-    height: 20px
 }
 
 .activity__47d03 {
@@ -65908,6 +65911,196 @@ div:has(>div>.modal__06f49) {
     color: ButtonText
 }
 
+.profileCustomizationPreview_e87a74 {
+    position: relative;
+    min-height: 280px;
+    box-sizing: border-box
+}
+
+.banner_d99ab8 {
+    border-radius: 4px 4px 0 0;
+    width: 100%
+}
+
+.bannerUploader__6a7c6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.bannerUploader__6a7c6 .banner_d99ab8 {
+    position: inherit
+}
+
+.gifTag__913c6 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    pointer-events: none
+}
+
+.bannerUploaderInnerSquare__6c14c {
+    background-size: cover;
+    height: 120px
+}
+
+.bannerUploaderInnerSquareEmpty_c9eaba {
+    height: 90px
+}
+
+.noBorderRadius__0b7c0 {
+    border-radius: 0
+}
+
+.bannerNormal__6ca6c {
+    height: 60px
+}
+
+.bannerNitroUpsell__5f046 {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .2s ease opacity;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.bannerNitroUpsell__5f046:hover {
+    opacity: 1
+}
+
+.bannerNitroUpsellText__5dc8e {
+    color: var(--white-500);
+    width: 50px;
+    font-weight: 700
+}
+
+.avatarUploader__8a15a {
+    position: absolute;
+    z-index: 1;
+    left: 22px;
+    cursor: pointer
+}
+
+.avatarUploaderNormal__52424 {
+    top: 16px
+}
+
+.avatarUploaderPremium__5653b {
+    top: 76px
+}
+
+.avatarUploaderPremiumNoBanner_e0c945 {
+    top: 46px
+}
+
+.avatarUploaderInner__3d842 {
+    width: var(--custom-profile-customization-preview-avatar-size);
+    height: var(--custom-profile-customization-preview-avatar-size);
+    box-sizing: content-box
+}
+
+.avatarUploaderInner__3d842:hover+.hoverIconWrapper__42055 {
+    visibility: visible
+}
+
+.avatarDecoration__2d634 {
+    position: absolute;
+    top: var(--custom-profile-customization-preview-avatar-decoration-position);
+    left: var(--custom-profile-customization-preview-avatar-decoration-position);
+    width: var(--custom-profile-customization-preview-avatar-decoration-size);
+    height: var(--custom-profile-customization-preview-avatar-decoration-size);
+    pointer-events: none
+}
+
+.defaultCursor__8b8b7 {
+    cursor: auto
+}
+
+.profileCustomizationPreviewWithTheme__4b6a5 {
+    width: 348px
+}
+
+.profileCustomizationPreviewWithoutTheme_bf9383 {
+    width: 340px
+}
+
+.profileEffectsModalCustomizationPreviewWithoutTheme_e5f50c {
+    width: 280px
+}
+
+.profileEffectsModalCustomizationPreviewWithTheme__25c58 {
+    width: 288px
+}
+
+.body__15d2d {
+    padding: 0 12px
+}
+
+.status__30546 {
+    width: 28px;
+    height: 28px;
+    background: var(--profile-avatar-border-color);
+    position: absolute;
+    top: 54px;
+    left: 54px;
+    border-radius: 50%
+}
+
+.statusDotBackground__277a4 {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute
+}
+
+.statusDot_f9865f {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 16px;
+    height: 16px
+}
+
+.hoverIconWrapper__42055 {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    text-align: center;
+    width: var(--custom-profile-customization-preview-avatar-size);
+    height: var(--custom-profile-customization-preview-avatar-size);
+    background-color: rgba(0, 0, 0, .5);
+    visibility: hidden
+}
+
+.hoverIconWrapper__42055:hover {
+    visibility: visible
+}
+
+.hoverIcon__787b4 {
+    margin-top: 30px
+}
+
+.tryingOutAvatarDecoration_d6b7ec {
+    position: absolute;
+    bottom: 0
+}
+
+.enable-forced-colors .banner_d99ab8 {
+    border: 2px solid ButtonText;
+    forced-color-adjust: none;
+    outline: 1px solid Canvas;
+    outline-offset: -3px
+}
+
+.enable-forced-colors .bannerNitroUpsell__5f046 {
+    background-color: ButtonFace;
+    color: ButtonText
+}
+
 .root__67842 {
     width: 450px;
     position: relative;
@@ -73114,11 +73307,18 @@ html .invoiceCancelRow_aa7946 {
     background-color: var(--background-secondary);
     border-radius: var(--radius-sm);
     border: none;
-    max-width: 228px
+    max-width: 228px;
+    gap: 4px;
+    padding: 2px 4px
 }
 
 .badgeList__6b2c7:empty {
     height: 28px
+}
+
+.badge_bf025b {
+    width: 24px;
+    height: 24px
 }
 
 .fieldList__4e6dd {
@@ -75966,7 +76166,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -133559,26 +133759,8 @@ div.nagbar_c731ff {
     height: 100%
 }
 
-.username__7cf20 {
-    max-width: 376px
-}
-
 .overlay__15b40 {
     height: 100%
-}
-
-.usernameBadgeList__9a1fb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    padding-left: 1px
-}
-
-.badgeList__70639 {
-    max-width: 228px;
-    border: none;
-    flex-shrink: 0
 }
 
 .buttons__9100c {
@@ -142408,4 +142590,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.63149c7fb7eb8aae8ca5.css.map*/
+/*# sourceMappingURL=99387.546170a8eb4e1617a3d9.css.map*/
