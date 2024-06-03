@@ -97905,7 +97905,11 @@ html .tabBadge_ff691d {
     margin-bottom: 32px;
     padding: 8px 16px;
     flex-grow: 0;
-    align-self: center
+    align-self: center;
+    background-color: var(--bg-surface-overlay);
+    border: 1px solid var(--border-subtle);
+    pointer-events: none;
+    border-radius: 4px
 }
 
 .tagText__9f09a {
@@ -97916,7 +97920,8 @@ html .tabBadge_ff691d {
 }
 
 .subtitle__3cb16 {
-    margin-top: 16px
+    margin-top: 16px;
+    color: var(--header-secondary)
 }
 
 div.content_aac020 {
@@ -97950,7 +97955,8 @@ div.content_aac020 {
     flex-direction: row;
     align-items: center;
     color: var(--header-primary);
-    font-weight: 600
+    font-weight: 600;
+    gap: 4px
 }
 
 .previewText__804c3 {
@@ -142564,4 +142570,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.9bf49ef9d61e2d2ec67b.css.map*/
+/*# sourceMappingURL=99387.c5afed8f5340cab4ee83.css.map*/
