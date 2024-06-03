@@ -59231,12 +59231,12 @@ div:has(>div>.modal__06f49) {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -142413,4 +142413,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0193aa670bc3d621a502.css.map*/
+/*# sourceMappingURL=99387.8d71cf185919686b91ab.css.map*/
