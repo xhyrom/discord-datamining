@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298270", ", Version Hash: ").concat("4cb32215a5792fd7a63da7a4b659d45a9f0f90b0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298285", ", Version Hash: ").concat("eff7f22feec9a2758d53755f228c48307421c355")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -41750,6 +41750,7 @@
                 USER_SETTINGS_RESTART_APP_MOBILE: "Restart the app for your new settings to take effect.",
                 INSTALL_LOCATION_MAIN: "Main",
                 USER_SETTINGS_PRIVACY_TERMS: "Check out our [Terms of Service]({termsLink}) and [Privacy Policy]({privacyLink}).",
+                USER_SETTINGS_PRIVACY_TERMS_SEARCHABLE: "Terms of service and privacy policy",
                 USER_SETTINGS_HYPESQUAD: "HypeSquad",
                 HYPESQUAD_HEADING: "Join the HypeSquad!",
                 HYPESQUAD_HEADING_EXISTING_MEMBER: "You're in HypeSquad!",
@@ -88748,8 +88749,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298270", "298270"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298270")), t = 0), t
+                let t = parseInt((e = "298285", "298285"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298285")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116813,8 +116814,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298270",
-                    versionHash: "4cb32215a5792fd7a63da7a4b659d45a9f0f90b0"
+                    buildNumber: "298285",
+                    versionHash: "eff7f22feec9a2758d53755f228c48307421c355"
                 }
             }
             n.r(t), n.d(t, {
@@ -174251,8 +174252,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717390071673",
-                                    build_number: "298270"
+                                    built_at: "1717427267866",
+                                    build_number: "298285"
                                 }
                             },
                             retries: 1
@@ -251591,7 +251592,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4cb32215a5792fd7a63da7a4b659d45a9f0f90b0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "eff7f22feec9a2758d53755f228c48307421c355"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280719,7 +280720,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298270"
+                                build_number: "298285"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288028,7 +288029,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298270", "298270"), 10);
+                let s = parseInt((n = "298285", "298285"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315882,4 +315883,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.850455e3c86d2aa7dce5.js.map
+//# sourceMappingURL=27519.d5fe5cc5ef933d781938.js.map
