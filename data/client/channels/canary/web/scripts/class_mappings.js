@@ -22702,31 +22702,26 @@
                 avatarDecoration: "avatarDecoration__2d634",
                 avatarUploader: "avatarUploader__8a15a",
                 avatarUploaderInner: "avatarUploaderInner__3d842",
-                avatarUploaderNormal: "avatarUploaderNormal__52424 avatarUploader__8a15a",
-                avatarUploaderPremium: "avatarUploaderPremium__5653b avatarUploader__8a15a",
-                avatarUploaderPremiumNoBanner: "avatarUploaderPremiumNoBanner_e0c945 avatarUploader__8a15a",
-                banner: "banner_d99ab8",
-                bannerNitroUpsell: "bannerNitroUpsell__5f046",
-                bannerNitroUpsellText: "bannerNitroUpsellText__5dc8e",
-                bannerNormal: "bannerNormal__6ca6c banner_d99ab8",
-                bannerUploader: "bannerUploader__6a7c6",
-                bannerUploaderInnerSquare: "bannerUploaderInnerSquare__6c14c banner_d99ab8",
-                bannerUploaderInnerSquareEmpty: "bannerUploaderInnerSquareEmpty_c9eaba banner_d99ab8",
                 body: "body__15d2d",
+                container: "container_c8de55",
                 defaultCursor: "defaultCursor__8b8b7",
-                gifTag: "gifTag__913c6",
                 hoverIcon: "hoverIcon__787b4",
                 hoverIconWrapper: "hoverIconWrapper__42055",
-                noBorderRadius: "noBorderRadius__0b7c0",
-                profileCustomizationPreview: "profileCustomizationPreview_e87a74",
-                profileCustomizationPreviewWithTheme: "profileCustomizationPreviewWithTheme__4b6a5 profileCustomizationPreview_e87a74",
-                profileCustomizationPreviewWithoutTheme: "profileCustomizationPreviewWithoutTheme_bf9383 profileCustomizationPreview_e87a74",
-                profileEffectsModalCustomizationPreviewWithTheme: "profileEffectsModalCustomizationPreviewWithTheme__25c58 profileCustomizationPreview_e87a74",
-                profileEffectsModalCustomizationPreviewWithoutTheme: "profileEffectsModalCustomizationPreviewWithoutTheme_e5f50c profileCustomizationPreview_e87a74",
+                profileEffectPreview: "profileEffectPreview__87439",
                 status: "status__30546",
                 statusDot: "statusDot_f9865f",
                 statusDotBackground: "statusDotBackground__277a4",
                 tryingOutAvatarDecoration: "tryingOutAvatarDecoration_d6b7ec"
+            }
+        },
+        361142: function(e) {
+            "use strict";
+            e.exports = {
+                banner: "banner__43a79",
+                bannerUpsell: "bannerUpsell_dcad58",
+                gifTag: "gifTag__2ab52",
+                imageUploader: "imageUploader__7d384",
+                upsell: "upsell__58acf"
             }
         },
         935689: function(e) {
