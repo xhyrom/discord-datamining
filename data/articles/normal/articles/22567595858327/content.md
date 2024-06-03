@@ -28,18 +28,7 @@
     <li><span style="color: #2e3338; background-color: #ffffff;">You are on another trial or discounted offer plan.</span></li>
 </ul>
 <h2 id="h_01HVRY7E8S1GMH2YZTN907BAY5">Friends Receiving a Trial</h2>
-<p><span style="color: #2e3338; background-color: #ffffff;">Users who have not had an active Nitro membership on their Discord accounts in the past 30 days are eligible to receive a trial from you. </span><span style="color: #2e3338; background-color: #ffffff;"><br></span><span style="color: #2e3338; background-color: #ffffff;">If a specific person does not appear in the </span><strong><span style="color: #2e3338; background-color: #ffffff;">Select Friends </span></strong><span style="color: #2e3338; background-color: #ffffff;">modal, it means the person you’re trying to share a trial with is ineligible for one of these reasons:</span></p>
-<ul>
-    <li><span style="color: #2e3338; background-color: #ffffff;">They currently have an active Nitro membership or have had an active Nitro membership within the last 30 days.</span></li>
-    <li><span style="color: #2e3338; background-color: #ffffff;">They have received a discount or trial offer in the last 45 days.</span></li>
-    <li><span style="color: #2e3338; background-color: #ffffff;">They have redeemed a trial or discount in the last 3 months.</span></li>
-    <li>
-        <span style="color: #2e3338; background-color: #ffffff;">They have received and accepted a Share Nitro Trial before.</span>
-        <ul>
-            <li><span style="color: #2e3338; background-color: #ffffff;">Note: The Share Trial experience during 2023 does not count.</span></li>
-        </ul>
-    </li>
-</ul>
+<p id="docs-internal-guid-45ed59b1-7fff-7411-bed3-94b50d56a2d0"><span style="color: #2e3338; background-color: #ffffff;">Users who appear in the </span><strong><span style="color: #2e3338; background-color: #ffffff;">Select Friends</span></strong><span style="color: #2e3338; background-color: #ffffff;"> modal are eligible to receive a Nitro trial from you. </span><span style="color: #2e3338; background-color: #ffffff;"><br></span><span style="color: #2e3338; background-color: #ffffff;">If a specific person does not appear in the </span><strong><span style="color: #2e3338; background-color: #ffffff;">Select Friends </span></strong><span style="color: #2e3338; background-color: #ffffff;">modal, it means the person you’re trying to share a trial with is ineligible to receive a trial. Being ineligible for a trial could occur for several reasons, including having a Nitro membership in the last 30 days, accepting another trial offer, and more. If you can’t find the specific person you’re looking for, you’ll need to share the trial with another person, or try again later. </span></p>
 <h1 id="h_01HVRY7E8S7RJM0888YQMZCMGE">HOW TO SHARE A NITRO TRIAL WITH YOUR FRIENDS</h1>
 <p>As a Nitro member, follow these steps:</p>
 <p>1. On the desktop or browser app, press the <strong>Direct Messages</strong> button in the top left corner and then select the <strong>Nitro</strong> tab. Alternatively, you can navigate to your <strong>User Settings &gt; Nitro</strong>.</p>
