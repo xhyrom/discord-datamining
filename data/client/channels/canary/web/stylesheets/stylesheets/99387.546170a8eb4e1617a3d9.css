@@ -9108,7 +9108,8 @@ div.cardContainer__94a1c {
 }
 
 span.clanTag_f4aadc {
-    margin-top: 2px
+    margin-top: 2px;
+    margin-left: 4px
 }
 
 .upsellTooltipWrapper__11dad {
@@ -45709,8 +45710,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -142589,4 +142590,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.079d99e489a3169d4c3a.css.map*/
+/*# sourceMappingURL=99387.546170a8eb4e1617a3d9.css.map*/
