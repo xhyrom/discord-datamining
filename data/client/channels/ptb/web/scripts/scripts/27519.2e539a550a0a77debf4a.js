@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298447", ", Version Hash: ").concat("076630398777a0793b5cec10cb216640069ad65d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298453", ", Version Hash: ").concat("6962a6a37dfd55eeec91e96098b24e9de3e4b03c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43793,6 +43793,7 @@
                 STREAM_PREMIUM_UPSELL_WITH_ACTION: "Lift off with Discord Nitro to stream HD resolutions at 60 frames per second. [Learn more](onClick).",
                 STREAM_PREMIUM_UPSELL_CTA: "Subscribe",
                 STREAM_PREMIUM_UPSELL_SECONDARY_CTA: "View All Nitro Perks",
+                STREAM_PREMIUM_VIEWER_UPSELL_MESSAGE: "{nickname} is streaming in HD ({resolution} {fps})",
                 STREAM_PRESET_DOCUMENTS_DESCRIPTION_NITRO: "The picture will be clear (Source) with a slow frame rate ({fps} FPS).",
                 STREAM_PRESET_VIDEO: "Smoother Video",
                 STREAM_PRESET_DOCUMENTS: "Better Text Readability",
@@ -88755,8 +88756,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298447", "298447"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298447")), t = 0), t
+                let t = parseInt((e = "298453", "298453"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298453")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116878,8 +116879,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298447",
-                    versionHash: "076630398777a0793b5cec10cb216640069ad65d"
+                    buildNumber: "298453",
+                    versionHash: "6962a6a37dfd55eeec91e96098b24e9de3e4b03c"
                 }
             }
             n.r(t), n.d(t, {
@@ -174450,8 +174451,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717451385488",
-                                    build_number: "298447"
+                                    built_at: "1717452053117",
+                                    build_number: "298453"
                                 }
                             },
                             retries: 1
@@ -251813,7 +251814,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "076630398777a0793b5cec10cb216640069ad65d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6962a6a37dfd55eeec91e96098b24e9de3e4b03c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280941,7 +280942,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298447"
+                                build_number: "298453"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288250,7 +288251,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298447", "298447"), 10);
+                let s = parseInt((n = "298453", "298453"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316111,4 +316112,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.dca91bab45d3219f076d.js.map
+//# sourceMappingURL=27519.2e539a550a0a77debf4a.js.map
