@@ -45709,8 +45709,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -59228,12 +59228,12 @@ div:has(>div>.modal__06f49) {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -142589,4 +142589,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4395fee762ab46a88376.css.map*/
+/*# sourceMappingURL=99387.079d99e489a3169d4c3a.css.map*/
