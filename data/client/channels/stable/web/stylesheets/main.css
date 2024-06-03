@@ -58433,11 +58433,8 @@ div:has(>div>.modal__06f49) {
     align-items: center;
     display: flex;
     flex: 0 0 auto;
-    justify-content: space-between
-}
-
-.questUnacceptedContent_dba3ea {
-    height: 224px
+    justify-content: space-between;
+    margin-bottom: 42px
 }
 
 .questAcceptedContent__74f2a .utils__4dc05 {
@@ -58832,11 +58829,8 @@ div:has(>div>.modal__06f49) {
     display: flex;
     flex: 0 0 auto;
     justify-content: space-between;
-    padding: 4px 8px
-}
-
-.questUnacceptedContent_c91b61 {
-    height: 254px
+    padding: 4px 8px;
+    margin-bottom: 42px
 }
 
 .questAcceptedHeader_f7d1f7 {
@@ -59090,7 +59084,8 @@ div:has(>div>.modal__06f49) {
     position: absolute;
     width: 100%;
     z-index: 2;
-    border-radius: 8px 8px 0 0
+    border-radius: 8px 8px 0 0;
+    background-color: var(--black)
 }
 
 .contentWrapper_bfbca4:after {
@@ -75971,7 +75966,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 4px
 }
 
@@ -99078,7 +99073,9 @@ div.content_aac020 {
     height: 245px;
     width: 148px;
     margin-bottom: 24px;
-    position: relative
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px
 }
 
 .bundlePreviewContainer__4f4af {
@@ -99102,7 +99099,9 @@ div.content_aac020 {
 .bundlePfxPreviewContainer_ec3791 {
     height: 245px;
     width: 148px;
-    position: relative
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px
 }
 
 .bundleSlideTitle_f39228 {
@@ -142409,4 +142408,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.aafa5855dae2d1eeb829.css.map*/
+/*# sourceMappingURL=99387.63149c7fb7eb8aae8ca5.css.map*/
