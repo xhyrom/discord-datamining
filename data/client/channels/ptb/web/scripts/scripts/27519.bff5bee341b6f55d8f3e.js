@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298505", ", Version Hash: ").concat("463c9817b4581a88186a168b682b92b54163eb40")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298516", ", Version Hash: ").concat("e9145137d9a801cb68dfe91c82371ca44d60aaf3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -41523,6 +41523,7 @@
                 UPLOAD_AREA_HELP: "\nYou can add comments before uploading.\nHold shift to upload directly.",
                 UPLOAD_AREA_NEW_THREAD_HELP: "You can add comments before uploading.",
                 UPLOAD_AREA_TOO_LARGE_TITLE: "Your files are too powerful",
+                UPLOAD_AREA_PREMIUM_UPSELL_TIER_2: "Upload files up to 500 MB with Nitro. Perfect for sharing epic gaming clips and detailed artwork.",
                 UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1: "The max file size is {maxSize}.",
                 UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1_PREMIUM_TIER_0: "The max file size for Nitro Basic is {maxSize}.",
                 UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1_PREMIUM_TIER_1: "The max file size for Nitro Classic is {maxSize}.",
@@ -43778,6 +43779,8 @@
                 STREAM_SHOW_ALL_PARTICIPANTS: "Show All Participants",
                 STREAM_FPS_OPTION: "{value} FPS",
                 STREAM_RESOLUTION: "Resolution",
+                STREAM_PREMIUM_UPSELL_TITLE: "Unlock HD streaming in 4k at 60 fps",
+                STREAM_PREMIUM_UPSELL_DESCRIPTION: "Stream your clutchest moments in 4k resolution with Nitro. Or stream funny cat videos, we don't judge.",
                 STREAM_PREMIUM_UPSELL_HEADER: "Unlock HD Video streaming with Discord Nitro",
                 STREAM_PREMIUM_UPSELL_HEADER_V2: "Stream your clutchest moments in 4k resolution",
                 STREAM_PREMIUM_UPSELL_BANNER: "Unlock all resolutions and frame rates.",
@@ -43805,6 +43808,7 @@
                 STREAM_SINGLE_PERSON_NO_INVITE: "You're alone in this call.",
                 STREAM_NO_PERMISSION_CTA: "No permission",
                 STREAM_PREMIUM_AFFINITY_UPSELL: "{numFriends, plural, =1 {1 friend has} =2 {2 friends have} other {{numFriends}+ friends have}} HD streaming with Nitro",
+                NITRO_AFFINITY_UPSELL: "{username} & {numFriends, plural, =1 {1 other} other {{numFriends} others}} have Nitro",
                 DISPLAY_NAME: "Display Name",
                 PICTURE_IN_PICTURE_COLLAPSE: "Collapse",
                 PICTURE_IN_PICTURE_EXPAND: "Expand",
@@ -45753,6 +45757,8 @@
                 EMOJI_PICKER_CREATE_EMOJI_TITLE: "Upload a custom emoji",
                 EMOJI_PICKER_CREATE_EMOJI_TITLE_DESCRIPTION: "Feeling emoji-tional?",
                 EMOJI_PICKER_PREMIUM_PROMO_DESCRIPTION: "Lift off with **{planName}** to use animated and custom emoji anywhere.",
+                EMOJI_PICKER_PREMIUM_UPSELL_TITLE_V2: "Take your emoji game to the next level",
+                EMOJI_PICKER_PREMIUM_UPSELL_DESCRIPTION_V2: "Add your own flair to any conversation with animated and custom emoji across all servers. Only with Nitro.",
                 SUBSCRIPTION_PAYMENT_LEGALESE_MONTHLY: "Hey! What you're purchasing is a recurring subscription, which means we'll charge you today and continue to charge you monthly until you cancel the subscription. You can cancel anytime from your Settings page, though!",
                 SUBSCRIPTION_PAYMENT_LEGALESE_MULTI_MONTH: "Hey! What you're purchasing is a recurring subscription, which means we'll charge today and continue to charge you every {intervalCount} months until you cancel the subscription. You can cancel anytime from your Settings page, though!",
                 SUBSCRIPTION_PAYMENT_LEGALESE_YEARLY: "Hey! What you're purchasing is a recurring subscription, which means we'll charge you today and continue to charge you yearly until you cancel the subscription. You can cancel anytime from your Settings page, though!",
@@ -53691,6 +53697,7 @@
                 SOUNDBOARD_NITRO_UPSELL_BODY: "Use your favorite sounds across Discord and much more with Nitro. [Learn more](onClick)",
                 SOUNDBOARD_PREMIUM_UPSELL_TOAST: "Subscribe to Nitro to send sounds across servers.",
                 SOUNDBOARD_PREMIUM_UPGRADE_UPSELL_TOAST: "Upgrade to Nitro to send sounds across servers.",
+                PREMIUM_UPSELL_DESKTOP_FEATURE_SOUNDBOARD_DESCRIPTION: "Access the best sounds from Soundboard across any of your Discord servers. Only with Nitro.",
                 GUILD_SETTINGS_AUDIT_LOG_GUILD_SOUNDBOARD_SOUND_CREATED: "$[**!!{user}!!**](userHook) uploaded a Soundboard sound",
                 GUILD_SETTINGS_AUDIT_LOG_GUILD_SOUNDBOARD_SOUND_UPDATED: "$[**!!{user}!!**](userHook) updated a Soundboard sound",
                 GUILD_SETTINGS_AUDIT_LOG_GUILD_SOUNDBOARD_SOUND_DELETED: "$[**!!{user}!!**](userHook) deleted a Soundboard sound",
@@ -88748,8 +88755,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298505", "298505"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298505")), t = 0), t
+                let t = parseInt((e = "298516", "298516"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298516")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111587,7 +111594,7 @@
                 S = T,
                 h = !1,
                 A = new Set;
-            let m = null,
+            let m = {},
                 N = () => {
                     f = I, S = T, r = void 0, h = !1, A = new Set, i = void 0
                 };
@@ -111634,7 +111641,7 @@
                 writable: !0
             }) : a[o] = l, t.default = new p(_.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
-                    h = !0, i = void 0, m = null != e.options ? e.options : null
+                    h = !0, i = void 0, m = e.options
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
                     0 === e.categories.length ? (f = I, S = T) : !(0, u.isEqual)([...f.values()], e.categories) && (f = new Map(e.categories.map(e => [e.skuId, e])), S = new Map((0, E.getProductsFromCategories)(f).map(e => [e.skuId, e]))), r = Date.now(), h = !1, i = void 0
@@ -116871,8 +116878,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298505",
-                    versionHash: "463c9817b4581a88186a168b682b92b54163eb40"
+                    buildNumber: "298516",
+                    versionHash: "e9145137d9a801cb68dfe91c82371ca44d60aaf3"
                 }
             }
             n.r(t), n.d(t, {
@@ -174443,8 +174450,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717456063868",
-                                    build_number: "298505"
+                                    built_at: "1717456956410",
+                                    build_number: "298516"
                                 }
                             },
                             retries: 1
@@ -251820,7 +251827,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "463c9817b4581a88186a168b682b92b54163eb40"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e9145137d9a801cb68dfe91c82371ca44d60aaf3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280948,7 +280955,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298505"
+                                build_number: "298516"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288257,7 +288264,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298505", "298505"), 10);
+                let s = parseInt((n = "298516", "298516"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316118,4 +316125,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.2977b83d050f61eebc90.js.map
+//# sourceMappingURL=27519.bff5bee341b6f55d8f3e.js.map
