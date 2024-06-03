@@ -5944,16 +5944,14 @@
                 headerAsset: "headerAsset__2db3c",
                 headerContainer: "headerContainer__29549",
                 headerContent: "headerContent_b74e9c",
+                headerInnerContainer: "headerInnerContainer__1ecbe",
                 logo: "logo__1a825",
                 logoAndDescriptionContainer: "logoAndDescriptionContainer__5ad27",
                 overflowImage: "overflowImage_b382c8",
                 overflowSlideAnimator: "overflowSlideAnimator__4428d",
                 overflowSlideAnimatorContainer: "overflowSlideAnimatorContainer__57bdc",
-                paginationArrow: "paginationArrow_ed696e",
-                paginationControls: "paginationControls_f5f6d3",
-                paginationDot: "paginationDot__68aef",
-                paginationDotSelected: "paginationDotSelected__8705e",
-                slideAnimator: "slideAnimator__2e9ff"
+                paginationButton: "paginationButton__51441",
+                paginationControls: "paginationControls_f5f6d3"
             }
         },
         577687: function(e) {
@@ -6173,6 +6171,22 @@
                 avatarDecorationPreview: "avatarDecorationPreview__40d68",
                 container: "container_c4802a",
                 profileEffectShopPreview: "profileEffectShopPreview__5c220"
+            }
+        },
+        816124: function(e) {
+            "use strict";
+            e.exports = {
+                arrow: "arrow_f85c6c",
+                carousel: "carousel__60d1f",
+                carouselContainer: "carouselContainer_a4244b",
+                carouselItem: "carouselItem__6777e",
+                controls: "controls__70e9a",
+                paginationButton: "paginationButton_cadcbe",
+                paginationButtonIcon: "paginationButtonIcon_d7942f",
+                paginationIndicator: "paginationIndicator__1b7b6",
+                paginationIndicatorButton: "paginationIndicatorButton__44ae5",
+                paginationIndicatorContainer: "paginationIndicatorContainer__13fc6",
+                selected: "selected__84ab9"
             }
         },
         724734: function(e) {
