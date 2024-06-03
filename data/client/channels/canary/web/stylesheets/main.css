@@ -12181,8 +12181,7 @@ span.clanTag_f4aadc {
 }
 
 .gradientContainerDark_f92e8b {
-    background: linear-gradient(45deg, hsl(var(--premium-perk-green-hsl)/.5), hsl(var(--premium-perk-purple-hsl)/.5));
-    background-blend-mode: color-burn;
+    background: linear-gradient(45deg, hsl(var(--yellow-160-hsl)/.6), hsl(var(--premium-tier-2-pink-hsl)/.4), hsl(var(--role-dark-purple-hsl)/.4), hsl(var(--brand-660-hsl)/.6));
     width: 64px;
     height: 64px;
     border-radius: var(--radius-xs);
@@ -12195,7 +12194,7 @@ span.clanTag_f4aadc {
 .container__0998c {
     padding: 8px;
     background-color: var(--background-secondary-alt);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-xs);
     display: flex;
     gap: 8px;
     width: 280px;
@@ -12215,7 +12214,7 @@ span.clanTag_f4aadc {
 .image__75373 {
     width: 64px;
     height: 64px;
-    border-radius: var(--radius-xs);
+    border-radius: 2px;
     background-color: var(--background-primary);
     flex-shrink: 0;
     display: flex;
@@ -12340,7 +12339,9 @@ span.clanTag_f4aadc {
     width: fit-content;
     border: 2px solid var(--background-secondary-alt);
     height: 20px;
-    border-radius: var(--radius-xl)
+    border-radius: var(--radius-xl);
+    font-size: 10px;
+    line-height: 1.6
 }
 
 .gameIcon__4a06f {
@@ -96089,7 +96090,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .viewAllGamesButton__34838 {
@@ -96109,7 +96110,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -96166,7 +96167,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .headerBar__3337a {
@@ -142611,4 +142612,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4c21ebd6e32bfde9a348.css.map*/
+/*# sourceMappingURL=99387.47c1e5c2f782c3c7de55.css.map*/
