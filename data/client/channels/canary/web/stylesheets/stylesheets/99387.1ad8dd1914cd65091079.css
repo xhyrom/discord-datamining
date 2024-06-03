@@ -12250,6 +12250,18 @@ span.clanTag_f4aadc {
     gap: 4px
 }
 
+.hangoutChannelStatusContent__4a123 {
+    gap: 0
+}
+
+.hangoutChannel__76974 {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    width: 208px;
+    margin-top: 8px
+}
+
 .pill__2f6a4 {
     display: flex;
     gap: 2px;
@@ -12293,6 +12305,15 @@ span.clanTag_f4aadc {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden
+}
+
+.hangoutStatusTitleContainer__34045 {
+    display: flex
+}
+
+.hangoutStatusOthers_bd698a {
+    flex-shrink: 0;
+    margin-left: 4px
 }
 
 .streamContainer_a26d75 {
@@ -45710,8 +45731,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -142590,4 +142611,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.546170a8eb4e1617a3d9.css.map*/
+/*# sourceMappingURL=99387.1ad8dd1914cd65091079.css.map*/
