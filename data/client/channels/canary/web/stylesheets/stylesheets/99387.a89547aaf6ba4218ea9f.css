@@ -19810,6 +19810,57 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     max-height: max(200px, min(100vh - 80px, 660px))
 }
 
+.container__665d0 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 2px;
+    padding: 1px 2px;
+    background: var(--bg-mod-faint);
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--border-faint)
+}
+
+.container__665d0:empty {
+    visibility: hidden
+}
+
+.custom-profile-theme .container__665d0 {
+    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6));
+    border-color: var(--profile-body-border-color)
+}
+
+.badge__908e2 {
+    filter: saturate(1);
+    filter: saturate(var(--saturation-factor, 1));
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+    pointer-events: none;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 20px;
+    height: 20px
+}
+
+.badge__908e2:active {
+    opacity: .8
+}
+
+.badge__908e2:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-modifier-accent);
+    border-radius: 50%
+}
+
 .container__52f24 {
     display: flex
 }
@@ -19862,11 +19913,15 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .nickname__745d1 {
     word-break: break-word;
-    max-height: 72px;
     overflow: hidden
 }
 
-.fullSizeNickname_a36463 {
+.nickname__745d1.biteSize__2431d,
+.nickname__745d1.panel__5c104 {
+    max-height: 72px
+}
+
+.nickname__745d1.fullSize_dbf8b0 {
     max-height: 90px
 }
 
@@ -19888,9 +19943,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    row-gap: 2px;
     -moz-column-gap: 6px;
     column-gap: 6px
+}
+
+.tags__18aee.biteSize__2431d,
+.tags__18aee.panel__5c104 {
+    row-gap: 2px
+}
+
+.tags__18aee.fullSize_dbf8b0 {
+    row-gap: 8px
 }
 
 .userTag_eb9b2a {
@@ -19932,67 +19995,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     width: 4px;
     height: 4px;
     border-radius: 50%
-}
-
-.container__665d0 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-    width: -moz-fit-content;
-    width: fit-content;
-    gap: 4px;
-    padding: 2px 4px;
-    background: var(--bg-mod-faint);
-    border-radius: var(--radius-xs);
-    border: 1px solid var(--border-faint)
-}
-
-.container__665d0:empty {
-    visibility: hidden
-}
-
-.custom-profile-theme .container__665d0 {
-    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6));
-    border-color: var(--profile-body-border-color)
-}
-
-.badge__908e2 {
-    filter: saturate(1);
-    filter: saturate(var(--saturation-factor, 1));
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    overflow: hidden;
-    pointer-events: none;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 24px;
-    height: 24px
-}
-
-.badge__908e2:active {
-    opacity: .8
-}
-
-.badge__908e2:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-modifier-accent);
-    border-radius: 50%
-}
-
-.badgeList_b6652b {
-    gap: 1px;
-    padding: 2px
-}
-
-.badge__26d6e {
-    width: 20px;
-    height: 20px
 }
 
 .activity__47d03 {
@@ -73114,11 +73116,18 @@ html .invoiceCancelRow_aa7946 {
     background-color: var(--background-secondary);
     border-radius: var(--radius-sm);
     border: none;
-    max-width: 228px
+    max-width: 228px;
+    gap: 4px;
+    padding: 2px 4px
 }
 
 .badgeList__6b2c7:empty {
     height: 28px
+}
+
+.badge_bf025b {
+    width: 24px;
+    height: 24px
 }
 
 .fieldList__4e6dd {
@@ -133559,26 +133568,8 @@ div.nagbar_c731ff {
     height: 100%
 }
 
-.username__7cf20 {
-    max-width: 376px
-}
-
 .overlay__15b40 {
     height: 100%
-}
-
-.usernameBadgeList__9a1fb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    padding-left: 1px
-}
-
-.badgeList__70639 {
-    max-width: 228px;
-    border: none;
-    flex-shrink: 0
 }
 
 .buttons__9100c {
@@ -142408,4 +142399,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d1b55d132d429f83c653.css.map*/
+/*# sourceMappingURL=99387.a89547aaf6ba4218ea9f.css.map*/

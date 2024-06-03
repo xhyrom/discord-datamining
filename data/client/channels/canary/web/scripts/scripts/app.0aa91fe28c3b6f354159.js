@@ -25780,12 +25780,14 @@
         660120: function(e) {
             "use strict";
             e.exports = {
+                biteSize: "biteSize__2431d",
                 clickableUsername: "clickableUsername_f267b3",
                 container: "container_df7ce7",
                 dotSpacer: "dotSpacer__0412c",
-                fullSizeNickname: "fullSizeNickname_a36463",
+                fullSize: "fullSize_dbf8b0",
                 nickname: "nickname__745d1",
                 nicknameIcons: "nicknameIcons__1b2d1",
+                panel: "panel__5c104",
                 pronouns: "pronouns__1266d userTag_eb9b2a",
                 pronounsTooltip: "pronounsTooltip__77e16",
                 tags: "tags__18aee",
@@ -25793,13 +25795,6 @@
                 userTagDiscriminator: "userTagDiscriminator_dd0ae5",
                 userTagUsername: "userTagUsername__88953",
                 usernameRow: "usernameRow__73bf0"
-            }
-        },
-        580245: function(e) {
-            "use strict";
-            e.exports = {
-                badge: "badge__26d6e",
-                badgeList: "badgeList_b6652b"
             }
         },
         47200: function(e) {
@@ -26004,11 +25999,8 @@
         854898: function(e) {
             "use strict";
             e.exports = {
-                badgeList: "badgeList__70639",
                 container: "container__020e3",
-                overlay: "overlay__15b40",
-                username: "username__7cf20",
-                usernameBadgeList: "usernameBadgeList__9a1fb"
+                overlay: "overlay__15b40"
             }
         },
         566483: function(e) {
@@ -26978,6 +26970,7 @@
                 avatarError: "avatarError__5cda5",
                 avatarUploaderInner: "avatarUploaderInner__34f08",
                 background: "background__4e802",
+                badge: "badge_bf025b",
                 badgeList: "badgeList__6b2c7",
                 constrainedRow: "constrainedRow__72f7a",
                 details: "details_c180ea",

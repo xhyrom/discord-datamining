@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298320", ", Version Hash: ").concat("510631aeaa84721f6470522b5790803534845c38")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298334", ", Version Hash: ").concat("d3453c966957f49e8f8afcb0c7513256cee73d84")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88749,8 +88749,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298320", "298320"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298320")), t = 0), t
+                let t = parseInt((e = "298334", "298334"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298334")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116814,8 +116814,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298320",
-                    versionHash: "510631aeaa84721f6470522b5790803534845c38"
+                    buildNumber: "298334",
+                    versionHash: "d3453c966957f49e8f8afcb0c7513256cee73d84"
                 }
             }
             n.r(t), n.d(t, {
@@ -138938,33 +138938,55 @@
                         } = this._streamContext,
                         r = null,
                         s = null,
-                        a = null,
-                        o = this._videoQuality;
-                    null != o && (r = this.isOwner ? o.getOutboundStats()[0] : o.getInboundStats(i), s = o.getNetworkStats(), a = this.isOwner ? o.getCodecUsageStats("streamer", this.userId) : o.getCodecUsageStats("receiver", i));
-                    let l = (0, u.areClipsEnabled)(),
-                        c = d.default.getSettings(),
-                        E = this.isOwner ? {
-                            clips_enabled: c.clipsEnabled && l,
-                            clips_buffer_length: c.clipsLength
+                        a = this._videoQuality;
+                    if (null == a) return;
+                    r = a.getNetworkStats(), s = this.isOwner ? a.getCodecUsageStats("streamer", this.userId) : a.getCodecUsageStats("receiver", i);
+                    let o = (0, u.areClipsEnabled)(),
+                        l = d.default.getSettings(),
+                        c = this.isOwner ? {
+                            clips_enabled: l.clipsEnabled && o,
+                            clips_buffer_length: l.clipsLength
                         } : {},
-                        I = this.isOwner ? {
+                        E = this.isOwner ? {
                             bandwidth_estimation_experiment: this.getBandwidthEstimationExperiment()
                         } : {};
-                    O.default.track(L.AnalyticEvents.VIDEO_STREAM_ENDED, {
-                        ...r,
-                        ...a,
-                        ...s,
-                        ...this._videoStreamStats.getStats(),
-                        ...this._soundshareStats.getStats(),
-                        ...this._getStreamAnalyticsProperties(),
-                        ...E,
-                        ...I,
-                        channel_type: n,
-                        reason: e,
-                        max_viewers: this.analyticsContext.maxViewers,
-                        hostname: this.hostname,
-                        hardware_enabled: h.default.getHardwareH264(),
-                        device_performance_class: this.isOwner ? (0, _.getMediaPerformanceClass)() : null
+                    a.getOutboundStats().forEach(t => {
+                        var i;
+                        (null !== (i = t.num_frames) && void 0 !== i ? i : 0) > 0 && O.default.track(L.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                            ...t,
+                            ...s,
+                            ...r,
+                            ...this._videoStreamStats.getStats(),
+                            ...this._soundshareStats.getStats(),
+                            ...this._getStreamAnalyticsProperties(),
+                            ...c,
+                            ...E,
+                            channel_type: n,
+                            reason: e,
+                            max_viewers: this.analyticsContext.maxViewers,
+                            hostname: this.hostname,
+                            hardware_enabled: h.default.getHardwareH264(),
+                            device_performance_class: this.isOwner ? (0, _.getMediaPerformanceClass)() : null
+                        })
+                    }), a.getInboundParticipants().forEach(t => {
+                        var i;
+                        let o = a.getInboundStats(t);
+                        (null !== (i = null == o ? void 0 : o.num_frames) && void 0 !== i ? i : 0) > 0 && O.default.track(L.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                            ...o,
+                            ...s,
+                            ...r,
+                            ...this._videoStreamStats.getStats(),
+                            ...this._soundshareStats.getStats(),
+                            ...this._getStreamAnalyticsProperties(),
+                            ...c,
+                            ...E,
+                            channel_type: n,
+                            reason: e,
+                            max_viewers: this.analyticsContext.maxViewers,
+                            hostname: this.hostname,
+                            hardware_enabled: h.default.getHardwareH264(),
+                            device_performance_class: this.isOwner ? (0, _.getMediaPerformanceClass)() : null
+                        })
                     })
                 }
                 _getExtraConnectionOptions() {
@@ -174252,8 +174274,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717437241688",
-                                    build_number: "298320"
+                                    built_at: "1717438931863",
+                                    build_number: "298334"
                                 }
                             },
                             retries: 1
@@ -212517,6 +212539,39 @@
                 })
             }
         },
+        741308: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("392711"),
+                s = n("290421"),
+                a = n("80132"),
+                o = n("228168");
+            let l = {
+                [o.UserProfileTypes.BITE_SIZE]: 12,
+                [o.UserProfileTypes.FULL_SIZE]: 26,
+                [o.UserProfileTypes.PANEL]: 14
+            };
+
+            function u(e) {
+                let {
+                    displayProfile: t,
+                    profileType: n,
+                    onClose: o
+                } = e, u = (0, s.default)(t);
+                return 0 === u.length ? null : (0, i.jsx)(i.Fragment, {
+                    children: (0, r.chunk)(u, l[n]).map(e => (0, i.jsx)(a.default, {
+                        badges: e,
+                        onClose: o
+                    }, e[0].id))
+                })
+            }
+        },
         735336: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -214055,7 +214110,11 @@
                     onOpenProfile: h,
                     nicknameVariant: A = "heading-lg/bold",
                     pronounsVariant: m = "text-sm/medium"
-                } = e, N = e => null == h ? e : (0, i.jsx)(a.Clickable, {
+                } = e, N = {
+                    [_.biteSize]: n === u.UserProfileTypes.BITE_SIZE,
+                    [_.fullSize]: n === u.UserProfileTypes.FULL_SIZE,
+                    [_.panel]: n === u.UserProfileTypes.PANEL
+                }, p = e => null == h ? e : (0, i.jsx)(a.Clickable, {
                     onClick: h,
                     className: _.clickableUsername,
                     children: e
@@ -214064,17 +214123,17 @@
                     className: s()(_.container, S),
                     children: [(0, i.jsxs)("div", {
                         className: _.usernameRow,
-                        children: [N((0, i.jsx)(a.Heading, {
-                            className: s()(_.nickname, n === u.UserProfileTypes.FULL_SIZE && _.fullSizeNickname),
+                        children: [p((0, i.jsx)(a.Heading, {
+                            className: s()(_.nickname, N),
                             variant: A,
                             children: l.default.getName(r, c, t)
-                        })), (0, i.jsx)("div", {
+                        })), null != T && (0, i.jsx)("div", {
                             className: _.nicknameIcons,
                             children: T
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: _.tags,
-                        children: [N((0, i.jsx)(o.default, {
+                        className: s()(_.tags, N),
+                        children: [p((0, i.jsx)(o.default, {
                             user: t,
                             usernameIcon: E,
                             forceUsername: !0,
@@ -214098,35 +214157,6 @@
                             })]
                         }), I]
                     })]
-                })
-            }
-        },
-        894374: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                UserProfileBadgesTag: function() {
-                    return l
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("392711"),
-                s = n("290421"),
-                a = n("80132"),
-                o = n("580245");
-
-            function l(e) {
-                let {
-                    displayProfile: t,
-                    onClose: n
-                } = e, l = (0, s.default)(t);
-                return 0 === l.length ? null : (0, i.jsx)(i.Fragment, {
-                    children: (0, r.chunk)(l, 12).map(e => (0, i.jsx)(a.default, {
-                        badges: e,
-                        className: o.badgeList,
-                        badgeClassName: o.badge,
-                        onClose: n
-                    }, e[0].id))
                 })
             }
         },
@@ -216568,10 +216598,10 @@
                 l = n("246946"),
                 u = n("5192"),
                 d = n("447452"),
-                _ = n("681837"),
-                c = n("724593"),
-                E = n("530"),
-                I = n("894374"),
+                _ = n("741308"),
+                c = n("681837"),
+                E = n("724593"),
+                I = n("530"),
                 T = n("790711"),
                 f = n("580512"),
                 S = n("67152"),
@@ -216601,7 +216631,7 @@
                 }), [t.id]);
                 return (0, i.jsxs)("div", {
                     className: p.body,
-                    children: [(0, i.jsx)(E.default, {
+                    children: [(0, i.jsx)(I.default, {
                         user: t,
                         profileType: m.UserProfileTypes.BITE_SIZE,
                         onOpenProfile: () => g({
@@ -216613,14 +216643,15 @@
                             nickname: M
                         }),
                         pronouns: null == O ? void 0 : O.pronouns,
-                        tags: (0, i.jsx)(I.UserProfileBadgesTag, {
+                        tags: (0, i.jsx)(_.default, {
                             displayProfile: O,
+                            profileType: m.UserProfileTypes.BITE_SIZE,
                             onClose: v
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(_.default, {
+                            children: [(0, i.jsx)(c.default, {
                                 userId: t.id
-                            }), D && !y && (0, i.jsx)(c.default, {
+                            }), D && !y && (0, i.jsx)(E.default, {
                                 user: t,
                                 isHovering: R,
                                 onOpenProfile: () => g({
@@ -251592,7 +251623,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "510631aeaa84721f6470522b5790803534845c38"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d3453c966957f49e8f8afcb0c7513256cee73d84"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280720,7 +280751,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298320"
+                                build_number: "298334"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288029,7 +288060,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298320", "298320"), 10);
+                let s = parseInt((n = "298334", "298334"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315883,4 +315914,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.fdacfa8ae706e044bb18.js.map
+//# sourceMappingURL=27519.c11348692b13f1517efe.js.map
