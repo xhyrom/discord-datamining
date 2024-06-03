@@ -9965,17 +9965,13 @@
       "description": [
         "Not Eligible",
         "Treatment 0: Control",
-        "Treatment 1: Concurrent Quests Enabled",
-        "Treatment 99: Concurrent Quests Enabled",
-        "Treatment 100: Concurrent Quests Enabled"
+        "Treatment 1: Concurrent Quests Enabled"
       ],
       "hash": 3093464864,
       "buckets": [
         -1,
         0,
-        1,
-        99,
-        100
+        1
       ],
       "holdout": {},
       "aa_mode": false,
