@@ -59228,12 +59228,12 @@ div:has(>div>.modal__06f49) {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -65906,6 +65906,196 @@ div:has(>div>.modal__06f49) {
 }
 
 .enable-forced-colors .bannerNitroUpsell__27b64 {
+    background-color: ButtonFace;
+    color: ButtonText
+}
+
+.profileCustomizationPreview_e87a74 {
+    position: relative;
+    min-height: 280px;
+    box-sizing: border-box
+}
+
+.banner_d99ab8 {
+    border-radius: 4px 4px 0 0;
+    width: 100%
+}
+
+.bannerUploader__6a7c6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.bannerUploader__6a7c6 .banner_d99ab8 {
+    position: inherit
+}
+
+.gifTag__913c6 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    pointer-events: none
+}
+
+.bannerUploaderInnerSquare__6c14c {
+    background-size: cover;
+    height: 120px
+}
+
+.bannerUploaderInnerSquareEmpty_c9eaba {
+    height: 90px
+}
+
+.noBorderRadius__0b7c0 {
+    border-radius: 0
+}
+
+.bannerNormal__6ca6c {
+    height: 60px
+}
+
+.bannerNitroUpsell__5f046 {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .2s ease opacity;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.bannerNitroUpsell__5f046:hover {
+    opacity: 1
+}
+
+.bannerNitroUpsellText__5dc8e {
+    color: var(--white-500);
+    width: 50px;
+    font-weight: 700
+}
+
+.avatarUploader__8a15a {
+    position: absolute;
+    z-index: 1;
+    left: 22px;
+    cursor: pointer
+}
+
+.avatarUploaderNormal__52424 {
+    top: 16px
+}
+
+.avatarUploaderPremium__5653b {
+    top: 76px
+}
+
+.avatarUploaderPremiumNoBanner_e0c945 {
+    top: 46px
+}
+
+.avatarUploaderInner__3d842 {
+    width: var(--custom-profile-customization-preview-avatar-size);
+    height: var(--custom-profile-customization-preview-avatar-size);
+    box-sizing: content-box
+}
+
+.avatarUploaderInner__3d842:hover+.hoverIconWrapper__42055 {
+    visibility: visible
+}
+
+.avatarDecoration__2d634 {
+    position: absolute;
+    top: var(--custom-profile-customization-preview-avatar-decoration-position);
+    left: var(--custom-profile-customization-preview-avatar-decoration-position);
+    width: var(--custom-profile-customization-preview-avatar-decoration-size);
+    height: var(--custom-profile-customization-preview-avatar-decoration-size);
+    pointer-events: none
+}
+
+.defaultCursor__8b8b7 {
+    cursor: auto
+}
+
+.profileCustomizationPreviewWithTheme__4b6a5 {
+    width: 348px
+}
+
+.profileCustomizationPreviewWithoutTheme_bf9383 {
+    width: 340px
+}
+
+.profileEffectsModalCustomizationPreviewWithoutTheme_e5f50c {
+    width: 280px
+}
+
+.profileEffectsModalCustomizationPreviewWithTheme__25c58 {
+    width: 288px
+}
+
+.body__15d2d {
+    padding: 0 12px
+}
+
+.status__30546 {
+    width: 28px;
+    height: 28px;
+    background: var(--profile-avatar-border-color);
+    position: absolute;
+    top: 54px;
+    left: 54px;
+    border-radius: 50%
+}
+
+.statusDotBackground__277a4 {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute
+}
+
+.statusDot_f9865f {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 16px;
+    height: 16px
+}
+
+.hoverIconWrapper__42055 {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    text-align: center;
+    width: var(--custom-profile-customization-preview-avatar-size);
+    height: var(--custom-profile-customization-preview-avatar-size);
+    background-color: rgba(0, 0, 0, .5);
+    visibility: hidden
+}
+
+.hoverIconWrapper__42055:hover {
+    visibility: visible
+}
+
+.hoverIcon__787b4 {
+    margin-top: 30px
+}
+
+.tryingOutAvatarDecoration_d6b7ec {
+    position: absolute;
+    bottom: 0
+}
+
+.enable-forced-colors .banner_d99ab8 {
+    border: 2px solid ButtonText;
+    forced-color-adjust: none;
+    outline: 1px solid Canvas;
+    outline-offset: -3px
+}
+
+.enable-forced-colors .bannerNitroUpsell__5f046 {
     background-color: ButtonFace;
     color: ButtonText
 }
@@ -142399,4 +142589,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a89547aaf6ba4218ea9f.css.map*/
+/*# sourceMappingURL=99387.4395fee762ab46a88376.css.map*/
