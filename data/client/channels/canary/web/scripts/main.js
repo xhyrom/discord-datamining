@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298371", ", Version Hash: ").concat("94a7c80066820b2b08b2254dc66ccdf0ede045a3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298378", ", Version Hash: ").concat("03e855eb30452cc5adfd4d98bb0c682751e1e4ef")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88750,8 +88750,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298371", "298371"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298371")), t = 0), t
+                let t = parseInt((e = "298378", "298378"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298378")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111423,7 +111423,8 @@
                 },
                 I = async e => {
                     r.default.dispatch({
-                        type: "COLLECTIBLES_CATEGORIES_FETCH"
+                        type: "COLLECTIBLES_CATEGORIES_FETCH",
+                        options: null != e ? e : {}
                     });
                     let t = {};
                     null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), !0 === e.includeBundles && (t.include_bundles = !0), null != e.countryCode && (t.country_code = e.countryCode), null !== e.paymentGateway && (t.payment_gateway = e.paymentGateway));
@@ -111541,12 +111542,13 @@
                 S = T,
                 h = !1,
                 A = new Set;
-            let m = () => {
-                f = I, S = T, r = void 0, h = !1, A = new Set, i = void 0
-            };
-            class N extends(s = d.default.Store) {
+            let m = null,
+                N = () => {
+                    f = I, S = T, r = void 0, h = !1, A = new Set, i = void 0
+                };
+            class p extends(s = d.default.Store) {
                 initialize() {
-                    this.syncWith([c.default], m)
+                    this.syncWith([c.default], N)
                 }
                 get isFetchingCategories() {
                     return h
@@ -111557,8 +111559,11 @@
                 get error() {
                     return i
                 }
-                get lastFetched() {
+                get lastSuccessFetched() {
                     return r
+                }
+                get lastFetchOptions() {
+                    return m
                 }
                 get categories() {
                     return f
@@ -111577,14 +111582,14 @@
                     return this.getCategory(null == t ? void 0 : t.categorySkuId)
                 }
             }
-            l = "CollectiblesCategoryStore", (o = "displayName") in(a = N) ? Object.defineProperty(a, o, {
+            l = "CollectiblesCategoryStore", (o = "displayName") in(a = p) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new N(_.default, {
+            }) : a[o] = l, t.default = new p(_.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
-                    h = !0, i = void 0
+                    h = !0, i = void 0, m = null != e.options ? e.options : null
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
                     0 === e.categories.length ? (f = I, S = T) : !(0, u.isEqual)([...f.values()], e.categories) && (f = new Map(e.categories.map(e => [e.skuId, e])), S = new Map((0, E.getProductsFromCategories)(f).map(e => [e.skuId, e]))), r = Date.now(), h = !1, i = void 0
@@ -111615,7 +111620,7 @@
                     } = e;
                     (A = new Set(A)).delete(t), i = n
                 },
-                LOGOUT: m
+                LOGOUT: N
             })
         },
         337679: function(e, t, n) {
@@ -112169,104 +112174,110 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return f
                 },
                 useFetchPurchases: function() {
-                    return c
+                    return T
                 },
                 useMaybeFetchCollectiblesCategories: function() {
-                    return _
+                    return I
                 }
             }), n("47120");
             var i = n("470079"),
-                r = n("399606"),
-                s = n("634894"),
-                a = n("335131"),
-                o = n("597688"),
-                l = n("337679"),
-                u = n("1870"),
-                d = n("617452");
+                r = n("498607"),
+                s = n.n(r),
+                a = n("399606"),
+                o = n("634894"),
+                l = n("828695"),
+                u = n("335131"),
+                d = n("597688"),
+                _ = n("337679"),
+                c = n("1870"),
+                E = n("617452");
 
-            function _(e) {
+            function I(e) {
                 let t = "useMaybeFetchCollectiblesCategories";
-                (0, s.useTriggerDebuggingAA)({
+                (0, o.useTriggerDebuggingAA)({
                     location: t + " auto on",
                     autoTrackExposure: !0
-                }), (0, s.useTriggerDebuggingAA)({
+                }), (0, o.useTriggerDebuggingAA)({
                     location: t + " auto off",
                     autoTrackExposure: !1
                 });
-                let n = (0, d.useShopBundleEnabled)("useMaybeFetchCollectiblesCategories"),
-                    [l, u, _, c] = (0, r.useStateFromStoresArray)([o.default], () => {
+                let n = (0, a.useStateFromStores)([l.default], () => l.default.hasLoadedExperiments),
+                    r = (0, E.useShopBundleEnabled)("useMaybeFetchCollectiblesCategories"),
+                    [_, c, I, T, f] = (0, a.useStateFromStoresArray)([d.default], () => {
                         var e;
-                        return [o.default.isFetchingCategories, o.default.error, null !== (e = o.default.lastFetched) && void 0 !== e ? e : 0, o.default.categories]
+                        return [d.default.isFetchingCategories, d.default.lastFetchOptions, d.default.error, null !== (e = d.default.lastSuccessFetched) && void 0 !== e ? e : 0, d.default.categories]
                     });
                 return (0, i.useEffect)(() => {
-                    !(l || u || Date.now() - _ < 6e5) && (0, a.fetchCollectiblesCategories)({
-                        ...e,
-                        includeBundles: n
-                    })
-                }, [l, _, u, e, n]), {
-                    isFetching: l,
-                    categories: c,
-                    error: u
+                    let t = {
+                            ...e,
+                            includeBundles: r
+                        },
+                        i = null === c || !s()(c, t);
+                    if (!!n && !_) !(!i && Date.now() - T < 6e5) && (0, u.fetchCollectiblesCategories)(t)
+                }, [n, _, c, T, e, r]), {
+                    isFetching: _,
+                    categories: f,
+                    error: I
                 }
             }
 
-            function c() {
+            function T() {
                 let e = "useFetchPurchases";
-                (0, s.useTriggerDebuggingAA)({
+                (0, o.useTriggerDebuggingAA)({
                     location: e + " auto on",
                     autoTrackExposure: !0
-                }), (0, s.useTriggerDebuggingAA)({
+                }), (0, o.useTriggerDebuggingAA)({
                     location: e + " auto off",
                     autoTrackExposure: !1
                 });
-                let [t, n, o, d, _] = (0, r.useStateFromStoresArray)([u.default], () => [u.default.isFetching, u.default.isClaiming, u.default.fetchError, u.default.claimError, u.default.purchases]), {
-                    shouldFakePurchaseSuccessFlowLocally: c
-                } = (0, l.default)({
+                let [t, n, r, s, l] = (0, a.useStateFromStoresArray)([c.default], () => [c.default.isFetching, c.default.isClaiming, c.default.fetchError, c.default.claimError, c.default.purchases]), {
+                    shouldFakePurchaseSuccessFlowLocally: d
+                } = (0, _.default)({
                     location: "useFetchPurchases"
                 });
                 return (0, i.useEffect)(() => {
-                    (!c || !(_.size > 0)) && (0, a.fetchCollectiblesPurchases)()
-                }, [c]), {
+                    (!d || !(l.size > 0)) && (0, u.fetchCollectiblesPurchases)()
+                }, [d]), {
                     isClaiming: n,
-                    fetchError: o,
-                    claimError: d,
+                    fetchError: r,
+                    claimError: s,
                     isFetching: t,
-                    purchases: _
+                    purchases: l
                 }
             }
 
-            function E(e) {
+            function f(e) {
                 var t;
                 let n = "useFetchCollectiblesCategoriesAndPurchases";
-                (0, s.useTriggerDebuggingAA)({
+                (0, o.useTriggerDebuggingAA)({
                     location: n + " auto on",
                     autoTrackExposure: !0
-                }), (0, s.useTriggerDebuggingAA)({
+                }), (0, o.useTriggerDebuggingAA)({
                     location: n + " auto off",
                     autoTrackExposure: !1
                 });
                 let {
                     isFetching: i,
                     categories: r,
-                    error: a
-                } = _(e), {
-                    isClaiming: o,
+                    error: s
+                } = I(e), {
+                    isClaiming: a,
                     fetchError: l,
                     claimError: u,
                     isFetching: d,
-                    purchases: E
-                } = c();
+                    purchases: _
+                } = T();
                 return {
                     isFetching: i || d,
                     isFetchingCategories: i,
                     isFetchingPurchases: d,
-                    isClaiming: o,
+                    isClaiming: a,
                     categories: r,
-                    purchases: E,
-                    error: null !== (t = null != a ? a : l) && void 0 !== t ? t : u
+                    purchases: _,
+                    error: null !== (t = null != s ? s : l) && void 0 !== t ? t : u
                 }
             }
         },
@@ -116815,8 +116826,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298371",
-                    versionHash: "94a7c80066820b2b08b2254dc66ccdf0ede045a3"
+                    buildNumber: "298378",
+                    versionHash: "03e855eb30452cc5adfd4d98bb0c682751e1e4ef"
                 }
             }
             n.r(t), n.d(t, {
@@ -174276,8 +174287,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717444828318",
-                                    build_number: "298371"
+                                    built_at: "1717445791637",
+                                    build_number: "298378"
                                 }
                             },
                             retries: 1
@@ -181303,13 +181314,13 @@
                     return K
                 },
                 ANNUAL_DISCOUNT_IDS: function() {
-                    return eP
+                    return eM
                 },
                 ANNUAL_DISCOUNT_IDS_TO_PERCENTAGES: function() {
-                    return eU
+                    return ey
                 },
                 AllSeasonalGiftStyles: function() {
-                    return eQ
+                    return eZ
                 },
                 AnalyticsPremiumFeatureNames: function() {
                     return d
@@ -181317,17 +181328,14 @@
                 AnalyticsPremiumFeatureTiers: function() {
                     return _
                 },
-                BLACK_FRIDAY_2020_GIFT_CODE_BATCH_ID: function() {
-                    return e_
-                },
                 BoostedGuildFeatures: function() {
-                    return ex
+                    return eB
                 },
                 BoostingUpsellAction: function() {
                     return A
                 },
                 CUSTOM_GIFT_MESSAGE_MAX_LENGTH: function() {
-                    return eq
+                    return eX
                 },
                 DEFAULT_APPLE_GRACE_PERIOD_DAYS: function() {
                     return ea
@@ -181339,13 +181347,13 @@
                     return es
                 },
                 DISCOUNTS: function() {
-                    return eH
+                    return ex
                 },
                 DISCOUNT_DURATION_FALLBACK: function() {
-                    return eJ
+                    return eQ
                 },
                 DISCOUNT_PERCENTAGE_FALLBACK: function() {
-                    return e$
+                    return eq
                 },
                 DiscountUserUsageLimitIntervalTypes: function() {
                     return o
@@ -181357,22 +181365,22 @@
                     return f
                 },
                 IncrementalStickerCountsByTier: function() {
-                    return ek
+                    return eG
                 },
                 LegacyPricingCountries: function() {
-                    return eK
+                    return ej
                 },
                 LegacySeasonalGiftStyles: function() {
-                    return ez
+                    return eW
                 },
                 MAX_ACCOUNT_HOLD_DAYS: function() {
                     return ed
                 },
                 MAX_PAYMENT_PROCESSING_TIME_DAYS: function() {
-                    return eI
+                    return ec
                 },
                 MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
-                    return ew
+                    return eb
                 },
                 MULTI_MONTH_PLANS: function() {
                     return q
@@ -181381,7 +181389,7 @@
                     return er
                 },
                 ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
-                    return eF
+                    return eV
                 },
                 PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS: function() {
                     return eu
@@ -181411,58 +181419,58 @@
                     return W
                 },
                 PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: function() {
-                    return eO
-                },
-                PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: function() {
-                    return ey
-                },
-                PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: function() {
-                    return eM
-                },
-                PREMIUM_TIER_2_AUTH3_TRIAL_ID: function() {
                     return eN
                 },
-                PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: function() {
-                    return eg
-                },
-                PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: function() {
-                    return eL
-                },
-                PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID: function() {
-                    return eA
-                },
-                PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID: function() {
-                    return eS
-                },
-                PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: function() {
-                    return eh
-                },
-                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: function() {
-                    return ev
-                },
-                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: function() {
+                PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: function() {
                     return eD
                 },
-                PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: function() {
+                PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: function() {
+                    return ev
+                },
+                PREMIUM_TIER_2_AUTH3_TRIAL_ID: function() {
+                    return eA
+                },
+                PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: function() {
                     return eC
                 },
-                PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: function() {
+                PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: function() {
+                    return eR
+                },
+                PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID: function() {
+                    return eS
+                },
+                PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID: function() {
                     return eT
                 },
+                PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: function() {
+                    return ef
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: function() {
+                    return eg
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: function() {
+                    return eL
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: function() {
+                    return ep
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: function() {
+                    return eE
+                },
                 PREMIUM_TIER_2_NEW_USER_CPV_TRIAL_ID: function() {
-                    return em
+                    return eh
                 },
                 PREMIUM_TIER_2_PLANS: function() {
                     return X
                 },
                 PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: function() {
-                    return eR
+                    return eO
                 },
                 PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: function() {
-                    return ef
+                    return eI
                 },
                 PREMIUM_TIER_2_REFERRAL_TRIAL_ID: function() {
-                    return ep
+                    return em
                 },
                 PREMIUM_TYPE_OVERRIDE_OPTIONS: function() {
                     return Y
@@ -181492,10 +181500,10 @@
                     return l
                 },
                 PremiumUserLimits: function() {
-                    return eW
+                    return eY
                 },
                 PromotionFlags: function() {
-                    return ej
+                    return eH
                 },
                 PurchasedFlags: function() {
                     return u
@@ -181504,22 +181512,19 @@
                     return m
                 },
                 SKU_ID_PURCHASED_FLAGS: function() {
-                    return eG
+                    return eU
                 },
                 STANDARD_GIFT_OPTIONS: function() {
-                    return eZ
-                },
-                STICKERS_GIFT_CODE_BATCH_ID: function() {
-                    return ec
+                    return eK
                 },
                 SeasonalGiftStyles2023: function() {
-                    return eX
+                    return ez
                 },
                 StreamQualities: function() {
                     return c
                 },
                 StreamQualitiesToPremiumType: function() {
-                    return eY
+                    return eF
                 },
                 SubscriptionIntervalTypes: function() {
                     return a
@@ -181531,13 +181536,13 @@
                     return s
                 },
                 SubscriptionTrials: function() {
-                    return eb
+                    return eP
                 },
                 TotalSoundboardSoundCountsByTier: function() {
-                    return eV
+                    return ek
                 },
                 TotalStickerCountsByTier: function() {
-                    return eB
+                    return ew
                 },
                 UNSELECTED_CREATED_AT_DATE: function() {
                     return H
@@ -181546,7 +181551,7 @@
                     return F
                 },
                 USER_PREMIUM_SUBSCRIPTION_TRIAL_EXPIRES_APPROACHING_5_DAY_THRESHOLD: function() {
-                    return eE
+                    return e_
                 }
             }), n("47120");
             var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, C, R, g, L, v, D, M, y, P, U, b, G, w, k, B, V = n("981631"),
@@ -181752,34 +181757,40 @@
                 el = 7,
                 eu = 7,
                 ed = 30,
-                e_ = "775514091874680832",
-                ec = "845031178288889946",
-                eE = 432e6,
-                eI = 14,
-                eT = "520373071933079552",
-                ef = "902329034132684800",
-                eS = "983601860436819968",
-                eh = "983601860436819969",
-                eA = "984244797441048577",
-                em = "1215818925846036480",
-                eN = "1004850445463584768",
-                ep = "1073698058383917056",
-                eO = "1070132870233980928",
-                eC = "1150904354090532864",
-                eR = "1199128659810582528",
-                eg = "1204865493622587392",
-                eL = "1204867673024888832",
-                ev = "1215346678383509504",
-                eD = "1215366184820539392",
-                eM = "1223319122125783040",
-                ey = "1223380890109870080",
-                eP = [eM, ey],
-                eU = Object.freeze({
-                    [ey]: .2,
-                    [eM]: .25,
+                e_ = 432e6,
+                ec = 14,
+                eE = "520373071933079552",
+                eI = "902329034132684800",
+                eT = "983601860436819968",
+                ef = "983601860436819969",
+                eS = "984244797441048577",
+                eh = "1215818925846036480",
+                eA = "1004850445463584768",
+                em = "1073698058383917056",
+                eN = "1070132870233980928",
+                ep = "1150904354090532864",
+                eO = "1199128659810582528",
+                eC = "1204865493622587392",
+                eR = "1204867673024888832",
+                eg = "1215346678383509504",
+                eL = "1215366184820539392",
+                ev = "1223319122125783040",
+                eD = "1223380890109870080",
+                eM = [ev, eD],
+                ey = Object.freeze({
+                    [eD]: .2,
+                    [ev]: .25,
                     DEFAULT: .16
                 }),
-                eb = Object.freeze({
+                eP = Object.freeze({
+                    [eE]: {
+                        id: eE,
+                        skus: ["521847234246082599"]
+                    },
+                    [eI]: {
+                        id: eI,
+                        skus: ["521847234246082599"]
+                    },
                     [eT]: {
                         id: eT,
                         skus: ["521847234246082599"]
@@ -181792,58 +181803,50 @@
                         id: eS,
                         skus: ["521847234246082599"]
                     },
-                    [eh]: {
-                        id: eh,
-                        skus: ["521847234246082599"]
-                    },
                     [eA]: {
                         id: eA,
                         skus: ["521847234246082599"]
                     },
                     [eN]: {
                         id: eN,
-                        skus: ["521847234246082599"]
-                    },
-                    [eO]: {
-                        id: eO,
                         skus: ["978380684370378762"]
-                    },
-                    [ep]: {
-                        id: ep,
-                        skus: ["521847234246082599"]
                     },
                     [em]: {
                         id: em,
                         skus: ["521847234246082599"]
+                    },
+                    [eh]: {
+                        id: eh,
+                        skus: ["521847234246082599"]
                     }
                 });
             (g = l || (l = {})).ANIMATED_GUILD_BANNER_TOOLTIP = "animated_guild_banner_tooltip", g.EMOJI_PICKER_SEARCH = "emoji_picker_search", g.EMOJI_PICKER_EMOJI_CLICKED = "emoji_picker_emoji_clicked", g.EMOJI_PICKER_STICKER_CLICKED = "emoji_picker_sticker_clicked", g.EMOJI_PICKER_REACTION_EMOJI_CLICKED = "emoji_picker_reaction_emoji_clicked", g.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED = "emoji_picker_super_reaction_emoji_clicked", g.EMOJI_PICKER_STATUS_EMOJI_CLICKED = "emoji_picker_status_emoji_clicked", g.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED = "emoji_picker_top_server_emoji_clicked", g.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED = "emoji_picker_newly_added_emoji_clicked", g.EMOJI_AUTOSUGGEST_CLICKED = "emoji_autosuggest_clicked", g.EMOJI_AUTOCOMPLETE_INLINE = "emoji_autocomplete_inline", g.EMOJI_AUTOCOMPLETE_MODAL = "emoji_autocomplete_modal", g.EMOJI_IN_MESSAGE_HOVER = "emoji_in_message_hover", g.EMOJI_IN_REACTION_HOVER = "emoji_in_reaction_hover", g.EMOJI_IN_BURST_REACTION_HOVER = "emoji_in_burst_reaction_hover", g.EMOJI_IN_BURST_REACTION_HOVER_UPSELL = "emoji_in_burst_reaction_hover_upsell", g.EMOJI_PICKER_FLOATING_UPSELL = "emoji_picker_floating_upsell", g.STICKER_IN_MESSAGE_HOVER = "sticker_in_message_hover", g.EMPTY_STICKER_PICKER_UPSELL = "empty_sticker_picker_upsell", g.STREAM_QUALITY_INDICATOR = "stream_quality_indicator", g.GIFT_STREAM_QUALITY_INDICATOR = "gift_stream_quality_indicator", g.STREAM_QUALITY_UPSELL = "stream_quality_upsell", g.MESSAGE_LENGTH_UPSELL = "message_length_upsell", g.MESSAGE_LENGTH_IN_EDITOR_UPSELL = "message_length_in_editor_upsell", g.CUSTOM_PROFILE_UPSELL = "custom profiles upsell modal", g.CUSTOM_PROFILE_TRY_OUT_UPSELL = "try out custom profile in settings upsell", g.VIDEO_BACKGROUNDS_MODAL = "video backgrounds modal", g.VIDEO_BACKGROUNDS_INLINE = "video backgrounds inline", g.GUILD_CAP_INLINE_SERVER_LIST = "guild_cap_inline_server_list", g.GUILD_PREMIUM_UPSELL_MODAL = "premium guild premium upsell modal", g.GUILD_CAP_INLINE_INVITE_MODAL = "guild_cap_inline_invite_modal", g.GUILD_CAP_MODAL_UPSELL = "guild_cap_modal_upsell", g.PREMIUM_GUILD_IDENTITY_MODAL = "premium guild identity upsell alert", g.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON = "custom profiles settings banner upsell", g.CUSTOM_PROFILES_PROFILE_BANNER_SOCIAL_UPSELL = "custom profiles profile banner social upsell", g.STICKER_PICKER_UPSELL = "sticker_picker_upsell", g.ANIMATED_AVATAR_PREVIEW_GIF_MODAL = "animated avatar preview gif modal", g.PREMIUM_PROGRESS_BAR = "premium_progress_bar_tooltip", g.INVITE_SPLASH_UPSELL = "premium_invite_splash_upsell", g.ANIMATED_USER_AVATAR_MODAL = "animated user avatar upsell modal", g.UPLOAD_ERROR_UPSELL = "upload error upsell", g.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE = "premium guild member profile upsell inline", g.CONCURRENT_ACTIVITIES = "Concurrent Activities", g.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED = "premium_uncancel_winback_modal_viewed", g.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET = "animated_video_background_new_preset", g.LOW_PRICE_EXPERIMENT_TOOLTIP = "low_price_experiment_tooltip", g.PREMIUM_PROFILE_BADGE_UPSELL = "premium_profile_badge_upsell", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "emoji", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "profile customization", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "hd streaming", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "larger file uploads", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "bogo", g.VOICE_CHANNEL_EFFECTS_UPSELL = "voice_channel_effects_upsell", g.VOICE_CHANNEL_EFFECTS_BAR_EMOJI_UPSELL = "Voice Channel Effect Bar Emoji Upsell", g.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED = "voice_channel_effects_toggle_clicked", g.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED = "voice_channel_effects_toggle_clicked_expanded", g.PROFILE_THEME_UPSELL_MODAL = "profile_theme_upsell_modal", g.PROFILE_EFFECTS_INLINE_SETTINGS = "profile_effects_inline_settings", g.PROFILE_EFFECTS_INLINE_SETTINGS_MOBILE = "profile_effects_inline_settings_mobile", g.HIGH_VIDEO_QUALITY_UPSELL = "high_video_quality_upsell", g.PREMIUM_PROFILE_TRY_IT_OUT = "premium_profile_try_it_out", g.BURST_REACTION_RAIL_UPSELL = "burst_reaction_rail_upsell", g.BURST_REACTION_UPSELL = "burst_reaction_upsell", g.BURST_REACTION_QUICK_ACTION_UPSELL = "burst_reaction_quick_action_upsell", g.BURST_REACTION_CONTEXT_MENU_UPSELL = "burst_reaction_context_menu_upsell", g.PREMIUM_CLIENT_THEME_TRY_IT_OUT = "premium_client_theme_try_it_out", g.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL = "premium_client_theme_settings_upsell", g.VIDEO_STAGE_LIMIT = "video_stage_limit", g.SOUND_PICKER_SOUND_CLICKED = "sound_picker_sound_clicked", g.APP_ICON_UPSELL = "app_icon_upsell", g.COLLECTIBLES_SHOP = "collectibles_shop", g.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles_profile_settings_upsell", g.COLLECTIBLES_PREMIUM_MARKETING_PAGE_UPSELL = "collectibles_premium_marketing_page_upsell", g.CLIPS_GUILD_SIDEBAR_COACHMARK_PREMIUM_EARLY_ACCESS_UPSELL = "clips_guild_sidebar_coachmark_premium_early_access_upsell", g.CLIPS_GO_LIVE_PREMIUM_EARLY_ACCESS_ROADBLOCK_UPSELL = "clips_go_live_premium_early_access_roadblock_upsell", g.CUSTOM_NOTIFICATION_SOUNDS_UPSELL = "custom_notification_sounds_upsell", g.CUSTOM_NOTIFICATION_SOUNDS_SETTINGS_UPSELL = "custom_notification_sounds_settings_inline_upsell", g.EMOJI_EVERYWHERE_INLINE_UPSELL = "emoji_everywhere_inline_upsell", g.EMOJI_EVERYWHERE_UPSELL = "emoji_everywhere_upsell", g.SOUNDBOARD_EVERYWHERE_INLINE_UPSELL = "soundboard_everywhere_inline_upsell", g.SOUNDBOARD_EVERYWHERE_UPSELL = "soundboard_everywhere_upsell", g.LARGER_FILE_UPLOAD_INLINE_UPSELL = "larger_file_upload_inline_upsell", g.LARGER_FILE_UPLOAD_UPSELL = "larger_file_upload_upsell", g.ANIMATED_EMOJI_UPSELL = "animated_emoji_upsell", (L = u || (u = {}))[L.PREMIUM_TIER_1 = 1] = "PREMIUM_TIER_1", L[L.PREMIUM_TIER_2 = 2] = "PREMIUM_TIER_2", L[L.GUILD_BOOST = 4] = "GUILD_BOOST", L[L.PREMIUM_TIER_0 = 8] = "PREMIUM_TIER_0";
-            let eG = Object.freeze({
+            let eU = Object.freeze({
                     "978380684370378762": 8,
                     "521846918637420545": 1,
                     "521847234246082599": 2,
                     "590663762298667008": 4
                 }),
-                ew = 52428800,
-                ek = {
+                eb = 52428800,
+                eG = {
                     [V.BoostedGuildTiers.NONE]: 5,
                     [V.BoostedGuildTiers.TIER_1]: 10,
                     [V.BoostedGuildTiers.TIER_2]: 15,
                     [V.BoostedGuildTiers.TIER_3]: 30
                 },
-                eB = {
-                    [V.BoostedGuildTiers.NONE]: ek[V.BoostedGuildTiers.NONE],
-                    [V.BoostedGuildTiers.TIER_1]: ek[V.BoostedGuildTiers.NONE] + ek[V.BoostedGuildTiers.TIER_1],
-                    [V.BoostedGuildTiers.TIER_2]: ek[V.BoostedGuildTiers.NONE] + ek[V.BoostedGuildTiers.TIER_1] + ek[V.BoostedGuildTiers.TIER_2],
-                    [V.BoostedGuildTiers.TIER_3]: ek[V.BoostedGuildTiers.NONE] + ek[V.BoostedGuildTiers.TIER_1] + ek[V.BoostedGuildTiers.TIER_2] + ek[V.BoostedGuildTiers.TIER_3]
+                ew = {
+                    [V.BoostedGuildTiers.NONE]: eG[V.BoostedGuildTiers.NONE],
+                    [V.BoostedGuildTiers.TIER_1]: eG[V.BoostedGuildTiers.NONE] + eG[V.BoostedGuildTiers.TIER_1],
+                    [V.BoostedGuildTiers.TIER_2]: eG[V.BoostedGuildTiers.NONE] + eG[V.BoostedGuildTiers.TIER_1] + eG[V.BoostedGuildTiers.TIER_2],
+                    [V.BoostedGuildTiers.TIER_3]: eG[V.BoostedGuildTiers.NONE] + eG[V.BoostedGuildTiers.TIER_1] + eG[V.BoostedGuildTiers.TIER_2] + eG[V.BoostedGuildTiers.TIER_3]
                 },
-                eV = {
+                ek = {
                     [V.BoostedGuildTiers.NONE]: 8,
                     [V.BoostedGuildTiers.TIER_1]: 24,
                     [V.BoostedGuildTiers.TIER_2]: 36,
                     [V.BoostedGuildTiers.TIER_3]: 48
                 },
-                ex = Object.freeze({
+                eB = Object.freeze({
                     [V.BoostedGuildTiers.NONE]: {
                         features: [],
                         limits: {
@@ -181852,9 +181855,9 @@
                             fileSize: V.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 30,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: eV[V.BoostedGuildTiers.NONE],
+                            soundboardSounds: ek[V.BoostedGuildTiers.NONE],
                             maxConcurrentActivities: 2,
-                            stickers: eB[V.BoostedGuildTiers.NONE],
+                            stickers: ew[V.BoostedGuildTiers.NONE],
                             stageVideoUsers: V.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -181866,9 +181869,9 @@
                             fileSize: V.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: eV[V.BoostedGuildTiers.TIER_1],
+                            soundboardSounds: ek[V.BoostedGuildTiers.TIER_1],
                             maxConcurrentActivities: 3,
-                            stickers: eB[V.BoostedGuildTiers.TIER_1],
+                            stickers: ew[V.BoostedGuildTiers.TIER_1],
                             stageVideoUsers: V.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -181880,9 +181883,9 @@
                             fileSize: 52428800,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: eV[V.BoostedGuildTiers.TIER_2],
+                            soundboardSounds: ek[V.BoostedGuildTiers.TIER_2],
                             maxConcurrentActivities: 5,
-                            stickers: eB[V.BoostedGuildTiers.TIER_2],
+                            stickers: ew[V.BoostedGuildTiers.TIER_2],
                             stageVideoUsers: V.MAX_STAGE_VIDEO_USER_LIMIT_TIER2
                         }
                     },
@@ -181894,16 +181897,16 @@
                             fileSize: 104857600,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: eV[V.BoostedGuildTiers.TIER_3],
+                            soundboardSounds: ek[V.BoostedGuildTiers.TIER_3],
                             maxConcurrentActivities: Number.MAX_SAFE_INTEGER,
-                            stickers: eB[V.BoostedGuildTiers.TIER_3],
+                            stickers: ew[V.BoostedGuildTiers.TIER_3],
                             stageVideoUsers: V.MAX_STAGE_VIDEO_USER_LIMIT_TIER3
                         }
                     }
                 }),
-                eF = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+                eV = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
             (v = d || (d = {})).SOUNDBOARD_PLAY = "soundboard play", v.PROFILE_THEME_COLOR = "profile_theme_color", v.PROFILE_BANNER = "profile_banner", v.ANIMATED_AVATAR = "animated_avatar", v.AVATAR_DECORATION = "avatar_decoration", v.CLIENT_THEME = "client_theme", v.SHARED_CANVAS = "shared_canvas", v.PROFILE_EFFECT = "profile_effect", (D = _ || (_ = {})).FREE = "free", D.PREMIUM_STANDARD = "premium-standard";
-            let eH = {
+            let ex = {
                 "1024422698568122368": 16,
                 "511651876987469824": 16,
                 "511651885459963904": 16,
@@ -181911,19 +181914,19 @@
                 "642251038925127690": 5
             };
             (M = c || (c = {})).HIGH_STREAMING_QUALITY = "high_streaming_quality", M.MID_STREAMING_QUALITY = "mid_streaming_quality";
-            let eY = Object.freeze({
+            let eF = Object.freeze({
                 high_streaming_quality: 2,
                 mid_streaming_quality: 1
             });
             (y = E || (E = {}))[y.UserSettings = 0] = "UserSettings", y[y.ApplicationStoreHome = 1] = "ApplicationStoreHome", (P = I || (I = {}))[P.DEFAULT = 0] = "DEFAULT", P[P.WINTER = 1] = "WINTER", (U = T || (T = {}))[U.SNOWGLOBE = 1] = "SNOWGLOBE", U[U.BOX = 2] = "BOX", U[U.CUP = 3] = "CUP", U[U.STANDARD_BOX = 4] = "STANDARD_BOX", U[U.CAKE = 5] = "CAKE", U[U.CHEST = 6] = "CHEST", U[U.COFFEE = 7] = "COFFEE", U[U.SEASONAL_STANDARD_BOX = 8] = "SEASONAL_STANDARD_BOX", U[U.SEASONAL_CAKE = 9] = "SEASONAL_CAKE", U[U.SEASONAL_CHEST = 10] = "SEASONAL_CHEST", U[U.SEASONAL_COFFEE = 11] = "SEASONAL_COFFEE", (b = f || (f = {})).USER_NOT_VERIFIED = "user_not_verified", b.NO_CODE_BODY = "no_code_body", b.NO_PROMOTION = "no_promotion", b.CODE_CLAIMED = "code_claimed", b.EXISTING_SUBSCRIBER = "existing_subscriber", b.PREVIOUS_SUBSCRIBER = "previous_subscriber", b.BLOCKED_PAYMENT = "blocked_payment";
-            let ej = Object.freeze({
+            let eH = Object.freeze({
                     IS_BLOCKED_IOS: 32,
                     IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS: 64,
                     SUPPRESS_NOTIFICATION: 128
                 }),
-                eW = Object.freeze({
+                eY = Object.freeze({
                     3: {
-                        fileSize: ew
+                        fileSize: eb
                     },
                     1: {
                         fileSize: 52428800
@@ -181933,14 +181936,14 @@
                     }
                 });
             (G = S || (S = {})).EXPLORE_ALL_PERKS_CLICKED = "explore_all_perks_clicked", G.HELPER_COLLAPSED = "helper_collapsed", G.HELPER_UNCOLLAPSED = "helper_uncollapsed", G.UNLOCK_EMOJI_CLICKED = "unlock_emoji_clicked", G.CUSTOM_PROFILES_CLICKED = "custom_profiles_clicked", G.SERVER_BOOSTS_CLICKED = "server_boosts_clicked", G.HELPER_DISMISSED = "premium_feature_helper_dismissed", G.HELPER_RENDERED = "premium_feature_helper_rendered", (w = h || (h = {})).EMOJI_TUTORIAL_STARTED = "emoji_tutorial_started", w.EMOJI_INTRO_VIEWED = "emoji_intro_viewed", w.EMOJI_PROMPT_VIEWED = "emoji_prompt_viewed", w.CUSTOM_PROFILE_TUTORIAL_STARTED = "custom_profile_tutorial_started", w.CUSTOM_PROFILE_AVATAR_INTRO_VIEWED = "custom_profile_avatar_intro_viewed", w.CUSTOM_PROFILE_AVATAR_DECORATIONS_VIEWED = "custom_profile_avatar_decorations_viewed", w.CUSTOM_PROFILE_BANNER_INTRO_VIEWED = "custom_profile_banner_intro_viewed", w.CUSTOM_PROFILE_THEME_INTRO_VIEWED = "custom_profile_theme_intro_viewed", w.SERVER_PROFILE_INTRO_VIEWED = "server_profile_intro_viewed", w.SERVER_BOOST_TUTORIAL_STARTED = "server_boost_tutorial_started", w.BOOST_INTRO_VIEWED = "boost_intro_viewed", w.BOOST_PROMPT_VIEWED = "boost_prompt_viewed", (k = A || (A = {})).BOOST = "boost", k.DISMISS = "dismiss", (B = m || (m = {})).BADGE_TOOLTIP_VIEWED = "share_nitro_bagde_tooltip_viewed", B.BADGE_CLICKED = "share_nitro_badge_clicked", B.FLOW_STARTED = "share_nitro_flow_started", B.FLOW_COMPLETED = "share_nitro_flow_completed";
-            let eK = new Set(["PL", "TR"]),
-                ez = [1, 2, 3],
-                eZ = [4, 5, 7, 6],
-                eX = [8, 9, 11, 10],
-                eQ = eX.concat(ez),
-                eq = 190,
-                eJ = 3,
-                e$ = 30
+            let ej = new Set(["PL", "TR"]),
+                eW = [1, 2, 3],
+                eK = [4, 5, 7, 6],
+                ez = [8, 9, 11, 10],
+                eZ = ez.concat(eW),
+                eX = 190,
+                eQ = 3,
+                eq = 30
         },
         98278: function(e, t, n) {
             "use strict";
@@ -251625,7 +251628,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "94a7c80066820b2b08b2254dc66ccdf0ede045a3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "03e855eb30452cc5adfd4d98bb0c682751e1e4ef"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280753,7 +280756,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298371"
+                                build_number: "298378"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288062,7 +288065,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298371", "298371"), 10);
+                let s = parseInt((n = "298378", "298378"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315916,4 +315919,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.25660444c0cf77fe76c0.js.map
+//# sourceMappingURL=27519.0b0fee74d287ff601e49.js.map
