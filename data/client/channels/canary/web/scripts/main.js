@@ -33741,55 +33741,56 @@
                 var t, n, f, S;
                 let {
                     contentDisplay: h,
-                    ...A
-                } = e, m = {}, {
-                    analyticsLocations: N
+                    fadeInOut: A = !1,
+                    ...m
+                } = e, N = {}, {
+                    analyticsLocations: p
                 } = (0, _.default)();
-                r.Children.forEach(A.children, (e, t) => {
-                    m[e.props.id] = {
+                r.Children.forEach(m.children, (e, t) => {
+                    N[e.props.id] = {
                         children: e.props.children,
                         impressionName: e.props.impressionName,
                         impressionProperties: e.props.impressionProperties,
                         index: t
                     }
                 });
-                let p = A.activeSlide,
-                    O = (0, d.default)(A.activeSlide);
-                let C = (f = null != O ? m[O] : null, S = m[p], null == f ? null : f.index > S.index ? "backwards" : f.index < S.index ? "forwards" : null),
+                let O = m.activeSlide,
+                    C = (0, d.default)(m.activeSlide);
+                let R = (f = null != C ? N[C] : null, S = N[O], null == f ? null : f.index > S.index ? "backwards" : f.index < S.index ? "forwards" : null),
                     {
-                        reducedMotion: R
+                        reducedMotion: g
                     } = r.useContext(l.AccessibilityPreferencesContext),
-                    g = r.useContext(c.default),
-                    L = m[p].impressionName,
-                    v = {
-                        ...m[p].impressionProperties,
-                        location_stack: N
+                    L = r.useContext(c.default),
+                    v = N[O].impressionName,
+                    D = {
+                        ...N[O].impressionProperties,
+                        location_stack: p
                     };
-                g({
+                L({
                     type: a.ImpressionTypes.MODAL,
-                    name: L,
-                    properties: v,
+                    name: v,
+                    properties: D,
                     _stackContext: {
                         isSlide: !0
                     }
                 });
                 let {
-                    ref: D,
-                    width: M = 0,
-                    height: y = 0
-                } = (0, u.default)(p), P = {
+                    ref: M,
+                    width: y = 0,
+                    height: P = 0
+                } = (0, u.default)(O), U = {
                     ...I,
-                    ...A.springConfig,
-                    ...R.enabled ? {
+                    ...m.springConfig,
+                    ...g.enabled ? {
                         clamp: !0
                     } : null
-                }, U = (0, s.useSpring)({
-                    immediate: null == O,
-                    width: null !== (t = A.width) && void 0 !== t ? t : M,
-                    height: y,
-                    config: P
-                }), b = (0, s.useTransition)(p, {
-                    immediate: null == O,
+                }, b = (0, s.useSpring)({
+                    immediate: null == C,
+                    width: null !== (t = m.width) && void 0 !== t ? t : y,
+                    height: P,
+                    config: U
+                }), G = (0, s.useTransition)(O, {
+                    immediate: null == C,
                     value: 0,
                     from: {
                         value: 1
@@ -33800,52 +33801,53 @@
                     leave: {
                         value: -1
                     },
-                    config: P,
+                    config: U,
                     onRest: (e, t) => {
                         let {
                             item: n
                         } = t;
-                        n === p && null != A.onSlideReady && A.onSlideReady(n)
+                        n === O && null != m.onSlideReady && m.onSlideReady(n)
                     }
-                }), G = (0, E.default)(C), {
-                    width: w,
-                    centered: k = !0
-                } = A, B = o.isMobile ? "100%" : U.width.to(e => Math.round(e)), V = o.isMobile ? "100%" : U.height.to(e => Math.round(e)), x = o.isMobile ? {} : k ? {
+                }), w = (0, E.default)(R), {
+                    width: k,
+                    centered: B = !0
+                } = m, V = o.isMobile ? "100%" : b.width.to(e => Math.round(e)), x = o.isMobile ? "100%" : b.height.to(e => Math.round(e)), F = o.isMobile ? {} : B ? {
                     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
                     top: "50%"
                 } : {
                     transform: "scale(1.0, 1.0)"
-                }, F = o.isMobile ? {} : {
-                    overflow: null !== (n = A.overflow) && void 0 !== n ? n : "hidden"
+                }, H = o.isMobile ? {} : {
+                    overflow: null !== (n = m.overflow) && void 0 !== n ? n : "hidden"
                 };
                 return (0, i.jsx)(s.animated.div, {
                     style: {
                         position: "relative",
-                        width: B,
-                        height: V,
-                        ...F
+                        width: V,
+                        height: x,
+                        ...H
                     },
-                    children: b((e, t, n) => {
+                    children: G((e, t, n) => {
                         let {
                             key: r
-                        } = n;
+                        } = n, a = {
+                            opacity: e.value.to(e => 1 - Math.abs(e))
+                        };
                         return (0, i.jsx)(s.animated.div, {
-                            ref: t === p ? D : null,
+                            ref: t === O ? M : null,
                             style: {
                                 position: "absolute",
                                 display: h,
                                 flexDirection: "column",
                                 backfaceVisibility: "hidden",
-                                width: o.isMobile ? "100%" : w,
-                                ...x,
-                                ...R.enabled ? {
-                                    opacity: e.value.to(e => 1 - Math.abs(e))
-                                } : {
-                                    left: e.value.to(T("left", G)),
-                                    right: e.value.to(T("right", G))
+                                width: o.isMobile ? "100%" : k,
+                                ...F,
+                                ...g.enabled ? a : {
+                                    left: e.value.to(T("left", w)),
+                                    right: e.value.to(T("right", w)),
+                                    ...A && a
                                 }
                             },
-                            children: m[t].children
+                            children: N[t].children
                         }, r)
                     })
                 })
@@ -37129,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298869", ", Version Hash: ").concat("e6630fbaca85a6a2b6781dc22f1cc510959373d6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298899", ", Version Hash: ").concat("e60b11bcd704c2ab7603bf877a14f7a13b584173")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38728,6 +38730,7 @@
                 USE_EXTERNAL_EMOJIS_DESCRIPTION: "Members with this permission can use emoji from other servers in this server.",
                 USE_EXTERNAL_STICKERS: "Use External Stickers",
                 USE_EXTERNAL_STICKERS_DESCRIPTION: "Members with this permission can use stickers from other servers in this server.",
+                USE_EXTERNAL_APPS: "Use External Apps",
                 REACTIONS: "Reactions",
                 VIEW_REACTIONS: "View Reactions",
                 ADD_REACTION_NAMED: "Add Reaction: {emojiName}",
@@ -48342,7 +48345,7 @@
                 MOBILE_CUSTOM_GIFT_SUCCESS_BODY: "Delivered with ninja-like efficiency (and zero paper waste).",
                 PREMIUM_ROADBLOCK_UPSELL_SECONDARY_CTA: "View all Nitro perks",
                 OUTBOUND_PROMO_UPSELL_EXPERIMENT_GIFTS_DESCRIPTION: "Claim all gifts with [Nitro](onClick).",
-                OUTBOUND_PROMO_UPSELL_EXPERIMENT_NAG_BAR_TITLE: "Hey, take a sneak peak of surprises that come with Nitro.",
+                OUTBOUND_PROMO_UPSELL_EXPERIMENT_NAG_BAR_TITLE: "Hey, take a sneak peek of the surprises that come with Nitro.",
                 OUTBOUND_PROMO_UPSELL_EXPERIMENT_NAG_BAR_TITLE_V2: "Don’t miss out! Claim surprises in your gift inventory when you have Nitro.",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND: "Notification Sound",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_DESCRIPTION_V2: "Set a unique sound for **desktop notifications** from $[](guildName). Now available in Beta with Nitro.",
@@ -49176,6 +49179,7 @@
                 ROLE_PERMISSIONS_SECTION_VOICE_CHAT: "Voice Channel Chat Permissions",
                 ROLE_PERMISSIONS_SECTION_VOICE_CHAT_DESCRIPTION: "Automated moderation makes monitoring text chat in voice channels easier. [Enable AutoMod](setUpAutomod)",
                 ROLE_PERMISSIONS_SECTION_ADVANCED: "Advanced Permissions",
+                ROLE_PERMISSIONS_SECTION_APPS: "Apps Permissions",
                 ROLE_PERMISSIONS_VIEW_CHANNEL: "View Channels",
                 ROLE_PERMISSIONS_VIEW_CHANNEL_DESCRIPTION: "Allows members to view channels by default (excluding private channels).",
                 MANAGE_CHANNELS: "Manage Channels",
@@ -49324,9 +49328,14 @@
                 ROLE_PERMISSIONS_DEAFEN_MEMBERS_DESCRIPTION_CATEGORY: "Allows members to deafen other members in these voice channels, which means they won’t be able to speak or hear others.",
                 ROLE_PERMISSIONS_MOVE_MEMBERS_DESCRIPTION_VOICE: "Allows members to disconnect other members from this channel. They will also be able to move somebody into other channels that they have this permission in.",
                 ROLE_PERMISSIONS_MOVE_MEMBERS_DESCRIPTION_CATEGORY: "Allows members to disconnect other members from these channels. They will also be able to move somebody into other channels that they have this permission in.",
-                ROLE_PERMISSIONS_USE_EMBEDDED_ACTIVITIES_DESCRIPTION: "Allows members to use Activities in this server.",
+                ROLE_PERMISSIONS_USE_EMBEDDED_ACTIVITIES_DESCRIPTION: "Allows members to use Activities.",
                 ROLE_PERMISSIONS_USE_EMBEDDED_ACTIVITIES_DESCRIPTION_CHANNEL: "Allows members to use Activities in this channel.",
                 ROLE_PERMISSIONS_USE_EMBEDDED_ACTIVITIES_DESCRIPTION_CATEGORY: "Allows members to use Activities in these channels.",
+                ROLE_PERMISSIONS_USE_EXTERNAL_APPS: "Use External Apps",
+                ROLE_PERMISSIONS_USE_EXTERNAL_APPS_GUILD_DESCRIPTION: "Allows apps that members have added to their account to post messages. When disabled, the messages will be private.",
+                ROLE_PERMISSIONS_USE_EXTERNAL_APPS_GUILD_DESCRIPTION_NOT_ENABLED_YET: "This feature is not enabled for this guild but will be soon. Stay tuned to Community Updates for an announcement!",
+                ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_CHANNEL: "Allows apps that members have added to their account to post messages in this channel. When disabled, the messages will be private.",
+                ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_CATEGORY: "Allows apps that members have added to their account to post messages in these channels. When disabled, the messages will be private.",
                 IOS_GUILD_DELETE_FEEDBACK_HEADER: "Why are you deleting this server?",
                 GUILD_DELETE_FEEDBACK_HEADER: "Can you tell us more?",
                 GUILD_DELETE_FEEDBACK_BODY: "Help us understand why you're deleting this server.",
@@ -56112,6 +56121,7 @@
                 ROLE_PERMISSIONS_DEAFEN_MEMBERS_DESCRIPTION_THREADS: "Allows members to deafen other members in this channel's threads, which means they won’t be able to speak or hear others.",
                 ROLE_PERMISSIONS_MOVE_MEMBERS_DESCRIPTION_THREADS: "Allows members to disconnect other members from this channel's threads. They will also be able to move somebody into other channels that they have this permission in.",
                 ROLE_PERMISSIONS_USE_EMBEDDED_ACTIVITIES_DESCRIPTION_THREADS: "Allows members to use Activities in this channel's threads.",
+                ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_THREADS: "Allows members to use External Apps in this channel's threads.",
                 MESSAGE_REMINDERS_EMPTY: "You have no Reminders!",
                 MESSAGE_REMINDERS_EMPTY_TIP: "You can mark any message as a Reminder to have it appear here.",
                 MESSAGE_REMINDERS_HEADER: "Message Reminders",
@@ -76098,7 +76108,7 @@
                 T = 10,
                 f = 500;
             Object.freeze([]), Object.freeze([]);
-            let S = 25;
+            let S = 200;
 
             function h(e) {
                 if (null != e.choices) return a.default.Messages.COMMAND_VALIDATION_CHOICE_ERROR;
@@ -88828,8 +88838,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298869", "298869"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298869")), t = 0), t
+                let t = parseInt((e = "298899", "298899"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298899")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -92331,6 +92341,21 @@
                             }
                         })(),
                         flag: T.Permissions.USE_EMBEDDED_ACTIVITIES
+                    },
+                    [T.Permissions.USE_EXTERNAL_APPS.toString()]: {
+                        title: f.default.Messages.USE_EXTERNAL_APPS,
+                        description: (() => {
+                            switch (r) {
+                                case T.ChannelTypes.GUILD_CATEGORY:
+                                    return f.default.Messages.ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_CATEGORY;
+                                case T.ChannelTypes.GUILD_FORUM:
+                                case T.ChannelTypes.GUILD_MEDIA:
+                                    return f.default.Messages.ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_THREADS;
+                                default:
+                                    return f.default.Messages.ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_CHANNEL
+                            }
+                        })(),
+                        flag: T.Permissions.USE_EXTERNAL_APPS
                     },
                     [T.Permissions.USE_SOUNDBOARD.toString()]: {
                         title: f.default.Messages.USE_SOUNDBOARD,
@@ -116956,8 +116981,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298869",
-                    versionHash: "e6630fbaca85a6a2b6781dc22f1cc510959373d6"
+                    buildNumber: "298899",
+                    versionHash: "e60b11bcd704c2ab7603bf877a14f7a13b584173"
                 }
             }
             n.r(t), n.d(t, {
@@ -174536,8 +174561,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717540995833",
-                                    build_number: "298869"
+                                    built_at: "1717542788977",
+                                    build_number: "298899"
                                 }
                             },
                             retries: 1
@@ -177174,7 +177199,7 @@
             var i = n("149765"),
                 r = n("981631"),
                 s = n("689938");
-            let a = [r.Permissions.ADMINISTRATOR, r.Permissions.MANAGE_GUILD, r.Permissions.MANAGE_ROLES, r.Permissions.MANAGE_CHANNELS, r.Permissions.KICK_MEMBERS, r.Permissions.BAN_MEMBERS, r.Permissions.CREATE_INSTANT_INVITE, r.Permissions.MANAGE_NICKNAMES, r.Permissions.CHANGE_NICKNAME, r.Permissions.MANAGE_GUILD_EXPRESSIONS, r.Permissions.CREATE_GUILD_EXPRESSIONS, r.Permissions.MANAGE_WEBHOOKS, r.Permissions.VIEW_AUDIT_LOG, r.Permissions.VIEW_CHANNEL, r.Permissions.MANAGE_EVENTS, r.Permissions.CREATE_EVENTS, r.Permissions.MODERATE_MEMBERS, r.Permissions.VIEW_GUILD_ANALYTICS, r.Permissions.VIEW_CREATOR_MONETIZATION_ANALYTICS, r.Permissions.SEND_MESSAGES, r.Permissions.SEND_MESSAGES_IN_THREADS, r.Permissions.CREATE_PUBLIC_THREADS, r.Permissions.CREATE_PRIVATE_THREADS, r.Permissions.SEND_TTS_MESSAGES, r.Permissions.MANAGE_MESSAGES, r.Permissions.MANAGE_THREADS, r.Permissions.EMBED_LINKS, r.Permissions.ATTACH_FILES, r.Permissions.READ_MESSAGE_HISTORY, r.Permissions.MENTION_EVERYONE, r.Permissions.ADD_REACTIONS, r.Permissions.USE_EXTERNAL_EMOJIS, r.Permissions.USE_EXTERNAL_STICKERS, r.Permissions.USE_APPLICATION_COMMANDS, r.Permissions.SEND_VOICE_MESSAGES, r.Permissions.USE_CLYDE_AI, r.Permissions.SEND_POLLS, r.Permissions.CONNECT, r.Permissions.SPEAK, r.Permissions.MUTE_MEMBERS, r.Permissions.DEAFEN_MEMBERS, r.Permissions.MOVE_MEMBERS, r.Permissions.USE_VAD, r.Permissions.PRIORITY_SPEAKER, r.Permissions.REQUEST_TO_SPEAK, r.Permissions.STREAM, r.Permissions.USE_EMBEDDED_ACTIVITIES, r.Permissions.USE_SOUNDBOARD, r.Permissions.USE_EXTERNAL_SOUNDS, r.Permissions.SET_VOICE_CHANNEL_STATUS];
+            let a = [r.Permissions.ADMINISTRATOR, r.Permissions.MANAGE_GUILD, r.Permissions.MANAGE_ROLES, r.Permissions.MANAGE_CHANNELS, r.Permissions.KICK_MEMBERS, r.Permissions.BAN_MEMBERS, r.Permissions.CREATE_INSTANT_INVITE, r.Permissions.MANAGE_NICKNAMES, r.Permissions.CHANGE_NICKNAME, r.Permissions.MANAGE_GUILD_EXPRESSIONS, r.Permissions.CREATE_GUILD_EXPRESSIONS, r.Permissions.MANAGE_WEBHOOKS, r.Permissions.VIEW_AUDIT_LOG, r.Permissions.VIEW_CHANNEL, r.Permissions.MANAGE_EVENTS, r.Permissions.CREATE_EVENTS, r.Permissions.MODERATE_MEMBERS, r.Permissions.VIEW_GUILD_ANALYTICS, r.Permissions.VIEW_CREATOR_MONETIZATION_ANALYTICS, r.Permissions.USE_EXTERNAL_APPS, r.Permissions.SEND_MESSAGES, r.Permissions.SEND_MESSAGES_IN_THREADS, r.Permissions.CREATE_PUBLIC_THREADS, r.Permissions.CREATE_PRIVATE_THREADS, r.Permissions.SEND_TTS_MESSAGES, r.Permissions.MANAGE_MESSAGES, r.Permissions.MANAGE_THREADS, r.Permissions.EMBED_LINKS, r.Permissions.ATTACH_FILES, r.Permissions.READ_MESSAGE_HISTORY, r.Permissions.MENTION_EVERYONE, r.Permissions.ADD_REACTIONS, r.Permissions.USE_EXTERNAL_EMOJIS, r.Permissions.USE_EXTERNAL_STICKERS, r.Permissions.USE_APPLICATION_COMMANDS, r.Permissions.SEND_VOICE_MESSAGES, r.Permissions.USE_CLYDE_AI, r.Permissions.SEND_POLLS, r.Permissions.CONNECT, r.Permissions.SPEAK, r.Permissions.MUTE_MEMBERS, r.Permissions.DEAFEN_MEMBERS, r.Permissions.MOVE_MEMBERS, r.Permissions.USE_VAD, r.Permissions.PRIORITY_SPEAKER, r.Permissions.REQUEST_TO_SPEAK, r.Permissions.STREAM, r.Permissions.USE_EMBEDDED_ACTIVITIES, r.Permissions.USE_SOUNDBOARD, r.Permissions.USE_EXTERNAL_SOUNDS, r.Permissions.SET_VOICE_CHANNEL_STATUS];
 
             function o(e) {
                 return Object.values(r.Permissions).some(t => i.has(e, t) && !a.includes(t))
@@ -177229,7 +177254,8 @@
                 [r.Permissions.USE_EXTERNAL_SOUNDS.toString()]: () => s.default.Messages.USE_EXTERNAL_SOUNDS,
                 [r.Permissions.USE_CLYDE_AI.toString()]: () => s.default.Messages.ROLE_PERMISSIONS_USE_CLYDE_AI,
                 [r.Permissions.SET_VOICE_CHANNEL_STATUS.toString()]: () => s.default.Messages.VOICE_CHANNEL_STATUS_PERMISSION_TITLE,
-                [r.Permissions.SEND_POLLS.toString()]: () => s.default.Messages.ROLE_PERMISSIONS_SEND_POLLS
+                [r.Permissions.SEND_POLLS.toString()]: () => s.default.Messages.ROLE_PERMISSIONS_SEND_POLLS,
+                [r.Permissions.USE_EXTERNAL_APPS.toString()]: () => s.default.Messages.ROLE_PERMISSIONS_USE_EXTERNAL_APPS
             };
 
             function u(e) {
@@ -252146,7 +252172,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e6630fbaca85a6a2b6781dc22f1cc510959373d6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e60b11bcd704c2ab7603bf877a14f7a13b584173"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281277,7 +281303,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298869"
+                                build_number: "298899"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -281948,9 +281974,9 @@
                 A = n("981631");
             let m = s.deserialize(0),
                 N = s.combine(...r().values(A.Permissions)),
-                p = s.combine(A.Permissions.CREATE_INSTANT_INVITE, A.Permissions.CHANGE_NICKNAME, A.Permissions.VIEW_CHANNEL, A.Permissions.SEND_MESSAGES, A.Permissions.EMBED_LINKS, A.Permissions.ATTACH_FILES, A.Permissions.READ_MESSAGE_HISTORY, A.Permissions.MENTION_EVERYONE, A.Permissions.USE_EXTERNAL_EMOJIS, A.Permissions.USE_EXTERNAL_STICKERS, A.Permissions.ADD_REACTIONS, A.Permissions.CREATE_PUBLIC_THREADS, A.Permissions.CREATE_PRIVATE_THREADS, A.Permissions.SEND_MESSAGES_IN_THREADS, A.Permissions.SEND_POLLS, A.Permissions.CONNECT, A.Permissions.SPEAK, A.Permissions.USE_VAD, A.Permissions.STREAM, A.Permissions.USE_EMBEDDED_ACTIVITIES, A.Permissions.USE_SOUNDBOARD, A.Permissions.REQUEST_TO_SPEAK, A.Permissions.USE_APPLICATION_COMMANDS, A.Permissions.CREATE_GUILD_EXPRESSIONS, A.Permissions.CREATE_EVENTS),
+                p = s.combine(A.Permissions.CREATE_INSTANT_INVITE, A.Permissions.CHANGE_NICKNAME, A.Permissions.VIEW_CHANNEL, A.Permissions.SEND_MESSAGES, A.Permissions.EMBED_LINKS, A.Permissions.ATTACH_FILES, A.Permissions.READ_MESSAGE_HISTORY, A.Permissions.MENTION_EVERYONE, A.Permissions.USE_EXTERNAL_EMOJIS, A.Permissions.USE_EXTERNAL_STICKERS, A.Permissions.ADD_REACTIONS, A.Permissions.CREATE_PUBLIC_THREADS, A.Permissions.CREATE_PRIVATE_THREADS, A.Permissions.SEND_MESSAGES_IN_THREADS, A.Permissions.SEND_POLLS, A.Permissions.CONNECT, A.Permissions.SPEAK, A.Permissions.USE_VAD, A.Permissions.STREAM, A.Permissions.USE_EMBEDDED_ACTIVITIES, A.Permissions.USE_SOUNDBOARD, A.Permissions.REQUEST_TO_SPEAK, A.Permissions.USE_APPLICATION_COMMANDS, A.Permissions.CREATE_GUILD_EXPRESSIONS, A.Permissions.CREATE_EVENTS, A.Permissions.USE_EXTERNAL_APPS),
                 O = s.combine(A.Permissions.VIEW_CHANNEL, A.Permissions.READ_MESSAGE_HISTORY),
-                C = s.combine(A.Permissions.VIEW_CHANNEL, A.Permissions.SEND_MESSAGES, A.Permissions.CONNECT, A.Permissions.SPEAK, A.Permissions.STREAM, A.Permissions.USE_EMBEDDED_ACTIVITIES, A.Permissions.USE_EXTERNAL_EMOJIS, A.Permissions.USE_EXTERNAL_SOUNDS, A.Permissions.USE_EXTERNAL_STICKERS, A.Permissions.USE_SOUNDBOARD, A.Permissions.USE_VAD),
+                C = s.combine(A.Permissions.VIEW_CHANNEL, A.Permissions.SEND_MESSAGES, A.Permissions.CONNECT, A.Permissions.SPEAK, A.Permissions.STREAM, A.Permissions.USE_EMBEDDED_ACTIVITIES, A.Permissions.USE_EXTERNAL_APPS, A.Permissions.USE_EXTERNAL_EMOJIS, A.Permissions.USE_EXTERNAL_SOUNDS, A.Permissions.USE_EXTERNAL_STICKERS, A.Permissions.USE_SOUNDBOARD, A.Permissions.USE_VAD),
                 R = s.combine(A.Permissions.VIEW_CHANNEL, A.Permissions.READ_MESSAGE_HISTORY),
                 g = s.combine(A.Permissions.VIEW_CHANNEL, A.Permissions.READ_MESSAGE_HISTORY, A.Permissions.CHANGE_NICKNAME),
                 L = s.combine(A.Permissions.MANAGE_GUILD, A.Permissions.MANAGE_ROLES, A.Permissions.ADMINISTRATOR, A.Permissions.BAN_MEMBERS, A.Permissions.MANAGE_NICKNAMES, A.Permissions.CREATE_GUILD_EXPRESSIONS, A.Permissions.MANAGE_GUILD_EXPRESSIONS, A.Permissions.MANAGE_WEBHOOKS, A.Permissions.VIEW_AUDIT_LOG);
@@ -288586,7 +288612,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298869", "298869"), 10);
+                let s = parseInt((n = "298899", "298899"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316447,4 +316473,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.b297dbe0f7aa01556616.js.map
+//# sourceMappingURL=27519.abcc617d5d26a078c237.js.map
