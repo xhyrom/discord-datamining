@@ -19894,6 +19894,51 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex
 }
 
+.container__4274a {
+    display: flex;
+    box-sizing: border-box;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    padding: 10px 12px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px
+}
+
+.buttonContainer__7f368 {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.button__95eda {
+    padding: 2px 8px;
+    min-height: 24px;
+    height: 24px
+}
+
+.custom-profile-theme .color_edbc1a {
+    background-color: var(--profile-gradient-button-color);
+    color: var(--white-500);
+    transition: opacity.2s ease-in-out
+}
+
+.custom-profile-theme .color_edbc1a:hover {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .8
+}
+
+.custom-profile-theme .color_edbc1a:active {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .9
+}
+
+.custom-profile-theme .color_edbc1a:disabled,
+.custom-profile-theme .color_edbc1a[aria-disabled=true] {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .5
+}
+
 .button__7b26d {
     width: 16px;
     height: 16px;
@@ -20318,6 +20363,11 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex;
     flex-direction: column;
     gap: 12px
+}
+
+.banner__0519e {
+    flex-direction: column;
+    align-items: start
 }
 
 .inner_e8ffd7 {
@@ -133580,6 +133630,12 @@ div.nagbar_c731ff {
     min-height: 32px
 }
 
+.multipleButtons__2a591 {
+    display: flex;
+    flex-grow: 0;
+    gap: 8px
+}
+
 .actionRightButton__3faee {
     margin-left: 10px
 }
@@ -133587,6 +133643,34 @@ div.nagbar_c731ff {
 .pendingIncoming__75554 {
     display: flex;
     flex-grow: 0
+}
+
+.iconTextButton__77db6 {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.custom-profile-theme .color_e8963e {
+    background-color: var(--profile-gradient-button-color);
+    color: var(--white-500);
+    transition: opacity.2s ease-in-out
+}
+
+.custom-profile-theme .color_e8963e:hover {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .8
+}
+
+.custom-profile-theme .color_e8963e:active {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .9
+}
+
+.custom-profile-theme .color_e8963e:disabled,
+.custom-profile-theme .color_e8963e[aria-disabled=true] {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .5
 }
 
 .header_dda341 {
@@ -133883,6 +133967,24 @@ div.nagbar_c731ff {
     height: 100%
 }
 
+.banner__45a39 {
+    overflow: visible
+}
+
+.usernameBadgeList__9a1fb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding-left: 1px
+}
+
+.badgeList__70639 {
+    max-width: 228px;
+    border: none;
+    flex-shrink: 0
+}
+
 .buttons__9100c {
     display: flex;
     justify-content: flex-end;
@@ -133901,7 +134003,6 @@ div.nagbar_c731ff {
     display: block;
     width: 24px;
     height: 24px;
-    margin-left: 8px;
     opacity: 1;
     color: var(--interactive-normal)
 }
@@ -142710,4 +142811,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.15716433ccaca9f6ff8e.css.map*/
+/*# sourceMappingURL=99387.082ae1d8b3e31382dcb8.css.map*/
