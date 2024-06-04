@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_rtc_voice_state_sync_experiment",
+    "label": "RTC and Voice State Desync Fixes",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Desync fixes enabled"
+    ],
+    "hash": 1254450589,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
