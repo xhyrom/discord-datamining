@@ -11,7 +11,7 @@
 <p><strong>Offer Details: </strong>Stream 15 minutes of <strong>Call of Duty </strong>and receive a <strong>Game Is Love - MCW 6.8 Marksman Rifle Weapon Blueprint</strong>. <strong> </strong></p>
 <p><strong>Who is Eligible: </strong><span style="background-color: #ffffff;">Available on all platforms where </span><strong><span style="background-color: #ffffff;">Call of Duty</span></strong><span style="background-color: #ffffff;"> is available. </span></p>
 <p><span style="background-color: #ffffff;">Discord’s premium services are restricted in some regions. If you are unable to access the Gift Inventory, you are not eligible for this Quest or reward.</span></p>
-<p><strong>Availability Period: </strong>The <strong>Modern Warfare III</strong> can be accepted on Discord from <strong>June 4, 2024 </strong>to <strong>June 18, 2024 (11:59pm UTC)</strong>. </p>
+<p><strong>Availability Period: </strong>The <strong>Modern Warfare III <span id="docs-internal-guid-6366a927-7fff-c94b-046a-04f471a7cf02">Quest</span></strong> can be accepted on Discord from <strong>June 4, 2024 </strong>to <strong>June 18, 2024 (11:59pm UTC)</strong>. </p>
 <p>Quest requirements must be completed during this period to receive the reward.</p>
 <p><strong>Other Terms:</strong> </p>
 <p>Limit of one reward redemption per account.</p>
