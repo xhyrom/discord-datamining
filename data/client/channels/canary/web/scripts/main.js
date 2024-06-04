@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298649", ", Version Hash: ").concat("a4bb25bf6c9b7ddb3ef9584907a1d9fce9e8ce93")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298673", ", Version Hash: ").concat("f80400a3d50027151621f33659a67b648962b986")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38876,6 +38876,7 @@
                 APP_LAUNCHER_HOME_LEARN_MORE_SECTION_TITLE: "New to Apps?",
                 APP_LAUNCHER_HOME_LEARN_MORE_SECTION_BODY: "Check out our starter guide to learn about the cool things apps can do.",
                 APP_LAUNCHER_HOME_LEARN_MORE_SECTION_LEARN_MORE: "Learn More",
+                APP_LAUNCHER_ACTIVITY_NOT_AVAILABLE_IN_THREAD: "Activities cannot be launched in Threads at this time",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -51831,6 +51832,8 @@
                 CHAT_DISABLED_HOME_BACK: "Done reading? Hop back to Home.",
                 CHAT_DISABLED_CTA: "Explore",
                 GUILD_AUTOMOD_ADD_SELECTION: "Filter ({keywordCount, plural, =1 {# Word} other {# Words}})",
+                GUILD_AUTOMOD_ADD_SELECTION_TOAST_SUCCESS: "Success!",
+                GUILD_AUTOMOD_ADD_SELECTION_TOAST_ERROR: "Something went wrong! Please try again.",
                 GUILD_AUTOMOD_ADD_NEW_RULE: "Create New AutoMod Rule",
                 GUILD_SETTINGS_AUTOMOD_TITLE: "AutoMod",
                 GUILD_SETTINGS_AUTOMOD_DESCRIPTION: "Set up rules for moderation in your server to automatically filter content and post alerts to keep your server safe around the clock. Users with Admin permissions will be ignored from AutoMod rules.",
@@ -88786,8 +88789,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298649", "298649"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298649")), t = 0), t
+                let t = parseInt((e = "298673", "298673"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298673")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116898,8 +116901,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298649",
-                    versionHash: "a4bb25bf6c9b7ddb3ef9584907a1d9fce9e8ce93"
+                    buildNumber: "298673",
+                    versionHash: "f80400a3d50027151621f33659a67b648962b986"
                 }
             }
             n.r(t), n.d(t, {
@@ -174457,8 +174460,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717519543946",
-                                    build_number: "298649"
+                                    built_at: "1717521362107",
+                                    build_number: "298673"
                                 }
                             },
                             retries: 1
@@ -251978,7 +251981,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a4bb25bf6c9b7ddb3ef9584907a1d9fce9e8ce93"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f80400a3d50027151621f33659a67b648962b986"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281106,7 +281109,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298649"
+                                build_number: "298673"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288415,7 +288418,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298649", "298649"), 10);
+                let s = parseInt((n = "298673", "298673"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316276,4 +316279,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.45fbb19bea39b171b503.js.map
+//# sourceMappingURL=27519.7c02ea0c62e810ffe293.js.map
