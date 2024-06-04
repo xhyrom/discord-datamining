@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298623", ", Version Hash: ").concat("e15f2499085326f9e1b0e0e45bd0c4df202199b0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298631", ", Version Hash: ").concat("6a509be17468b0fb2dd87b0a73f2db58b52f94c1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55837,6 +55837,7 @@
                 CONTENT_INVENTORY_COACHTIP_HEADER: "Reply in 1-click!",
                 CONTENT_INVENTORY_COACHTIP_TEXT: "Friends will receive the emoji as a DM",
                 CONTENT_INVENTORY_COACHTIP_IMAGE_ALT: "Wumpus chatting with a friend while gaming",
+                CONTENT_INVENTORY_GAME_STATE_SIZE: "{count} of {max}",
                 RECENT_GAMES: "Recent Games",
                 USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO: "{count} {count, plural, =1 {week} other {weeks}} ago",
                 USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO: "{count} {count, plural, =1 {day} other {days}} ago",
@@ -88762,8 +88763,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298623", "298623"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298623")), t = 0), t
+                let t = parseInt((e = "298631", "298631"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298631")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116874,8 +116875,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298623",
-                    versionHash: "e15f2499085326f9e1b0e0e45bd0c4df202199b0"
+                    buildNumber: "298631",
+                    versionHash: "6a509be17468b0fb2dd87b0a73f2db58b52f94c1"
                 }
             }
             n.r(t), n.d(t, {
@@ -174433,8 +174434,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717516481486",
-                                    build_number: "298623"
+                                    built_at: "1717517634807",
+                                    build_number: "298631"
                                 }
                             },
                             retries: 1
@@ -251954,7 +251955,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e15f2499085326f9e1b0e0e45bd0c4df202199b0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6a509be17468b0fb2dd87b0a73f2db58b52f94c1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281082,7 +281083,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298623"
+                                build_number: "298631"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288391,7 +288392,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298623", "298623"), 10);
+                let s = parseInt((n = "298631", "298631"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316252,4 +316253,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.6b7647fb576a1491f8eb.js.map
+//# sourceMappingURL=27519.61597a8d34a157c99f60.js.map
