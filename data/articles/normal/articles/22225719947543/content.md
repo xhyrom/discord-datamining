@@ -23,7 +23,7 @@
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests </h1>
 <h2 id="docs-internal-guid-dec01979-7fff-188e-168a-6c87641118dd"><a href="https://support.discord.com/hc/articles/23678405984023" target="_blank" rel="noopener noreferrer">Call of Duty - Modern Warfare III Quest</a></h2>
-<p>The <strong>Game Is Love - MCW 6.8 Marksman Rifle Weapon Blueprint </strong>Quest can be accepted on Discord from <strong>June 4, 2024</strong> until <strong>June 18, 2024 (11:59pm UTC).</strong> Quest requirements must be completed during this period to receive the reward.</p>
+<p>The <strong><span id="docs-internal-guid-c957af24-7fff-1cd5-7c9a-241b1cd2c23f">Modern Warfare III</span></strong> Quest can be accepted on Discord from <strong>June 4, 2024</strong> until <strong>June 18, 2024 (11:59pm UTC).</strong> Quest requirements must be completed during this period to receive the reward.</p>
 <h2 id="h_01HXSYAWEMHMCTSD1HCX0RBPES"><a href="https://support.discord.com/hc/en-us/articles/23351867829527/" target="_blank" rel="noopener noreferrer">PUBG: BATTLEGROUNDS - Erangel Classic Quest</a></h2>
 <p>The <strong>Erangel Classic Quest</strong> can be accepted on Discord from <strong>May 14, 2024</strong> until <strong>May 28, 2024 (11:59pm UTC)</strong>. Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>August 11, 2024</strong>.</p>
 <h2 id="docs-internal-guid-e62232d5-7fff-b513-9744-35d424566193"><a href="https://support.discord.com/hc/articles/23165034438295" target="_blank" rel="noopener noreferrer">Honkai: Star Rail - V2.2 Quest</a></h2>

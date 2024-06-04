@@ -53,7 +53,7 @@
 <p>2. Select <strong>Start Trial.</strong></p>
 <p>3. Select a plan to start once your 2-week trial is over. </p>
 <p>4. Enter billing information. You will not be charged before or during your 2-week trial. </p>
-<p>4. Start having fun with your 2 weeks of <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic" target="_blank" rel="noopener noreferrer">Nitro</a>! </p>
+<p>5. Start having fun with your 2 weeks of <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic" target="_blank" rel="noopener noreferrer">Nitro</a>! </p>
 <h3 id="h_01HVRYG9TH0B9VRFCTPYEA78YP">If you don’t cancel during your 2-week trial, you will automatically be charged for a monthly or yearly rate after your trial ends. Cancel anytime during your trial to avoid being charged after your trial period in <strong>User Settings &gt; Subscriptions</strong>. For more information on how to cancel subscriptions, please refer to this <a href="https://support.discord.com/hc/en-us/articles/19580873036695" target="_blank" rel="noopener noreferrer">Help Center article</a>. </h3>
 <h1 id="h_01HVRY7E8T0ADKKTYZWQXHSE7D">FREQUENTLY ASKED QUESTIONS</h1>
 <p><strong>Q: As a Nitro member, who can I share Nitro trials with?</strong></p>
