@@ -9,7 +9,8 @@
       "Treatment 6: Can support secure frames above protocol version 10",
       "Treatment 7: Can support secure frames above protocol version 110 (MLS)",
       "Treatment 8: Can support secure frames above protocol version 11",
-      "Treatment 9: Can support secure frames above protocol version 111 (MLS)"
+      "Treatment 9: Can support secure frames above protocol version 111 (MLS)",
+      "Treatment 10: Can support secure frames above protocol version 112 (MLS)"
     ],
     "hash": 2916044329,
     "buckets": [
@@ -18,7 +19,8 @@
       6,
       7,
       8,
-      9
+      9,
+      10
     ],
     "holdout": {
       "name": null,
