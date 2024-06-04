@@ -19030,7 +19030,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     color: ButtonText
 }
 
-.wrapper__7f8df {
+.wrapper__733c9 {
     position: absolute;
     display: flex;
     gap: 8px;
@@ -19038,21 +19038,21 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     transition: opacity.6s ease
 }
 
-.wrapper__7f8df:empty {
+.wrapper__733c9:empty {
     display: none
 }
 
-.wrapper__7f8df.biteSize__89563 {
+.wrapper__733c9.biteSize_dd4657 {
     top: 12px;
     right: 12px
 }
 
-.wrapper__7f8df.fullSize__51728 {
+.wrapper__733c9.fullSize__32c87 {
     top: 12px;
     right: 16px
 }
 
-.wrapper__7f8df.panel_a9140d {
+.wrapper__733c9.panel__98a0d {
     top: 8px;
     right: 8px
 }
@@ -20247,8 +20247,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .compactButton__87ab2 {
-    width: var(--custom-button-button-md-height);
-    height: var(--custom-button-button-md-height)
+    width: var(--custom-button-button-sm-height);
+    height: var(--custom-button-button-sm-height)
 }
 
 .compactButtonInner_cc8cc8 {
@@ -76196,7 +76196,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 4px
 }
 
@@ -133626,49 +133626,49 @@ div.nagbar_c731ff {
     height: 100%
 }
 
-.actionButton__46a10 {
+.actionButton_fe3e88 {
     min-height: 32px
 }
 
-.multipleButtons__2a591 {
+.multipleButtons__6d5ae {
     display: flex;
     flex-grow: 0;
     gap: 8px
 }
 
-.actionRightButton__3faee {
+.actionRightButton_b01024 {
     margin-left: 10px
 }
 
-.pendingIncoming__75554 {
+.pendingIncoming__8b94c {
     display: flex;
     flex-grow: 0
 }
 
-.iconTextButton__77db6 {
+.iconTextButton_db9c2c {
     display: flex;
     align-items: center;
     gap: 4px
 }
 
-.custom-profile-theme .color_e8963e {
+.custom-profile-theme .color_e0286a {
     background-color: var(--profile-gradient-button-color);
     color: var(--white-500);
     transition: opacity.2s ease-in-out
 }
 
-.custom-profile-theme .color_e8963e:hover {
+.custom-profile-theme .color_e0286a:hover {
     background-color: var(--profile-gradient-button-color);
     opacity: .8
 }
 
-.custom-profile-theme .color_e8963e:active {
+.custom-profile-theme .color_e0286a:active {
     background-color: var(--profile-gradient-button-color);
     opacity: .9
 }
 
-.custom-profile-theme .color_e8963e:disabled,
-.custom-profile-theme .color_e8963e[aria-disabled=true] {
+.custom-profile-theme .color_e0286a:disabled,
+.custom-profile-theme .color_e0286a[aria-disabled=true] {
     background-color: var(--profile-gradient-button-color);
     opacity: .5
 }
@@ -142797,4 +142797,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f7e9f0a37b26c725fe85.css.map*/
+/*# sourceMappingURL=99387.43ec3b1ed7646e0654b5.css.map*/
