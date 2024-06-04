@@ -31566,39 +31566,42 @@
                     className: g,
                     isDisabled: U = !1,
                     maxVisibleItems: G = 7,
-                    look: w = v.SelectLooks.FILLED,
-                    autoFocus: k = !1,
-                    popoutPosition: B = "bottom",
-                    filter: F = !0,
-                    debounceTime: H,
-                    renderOptionLabel: Y = P,
-                    onSearchChange: j,
-                    renderOptionPrefix: W = () => null,
-                    renderOptionSuffix: K = () => null,
-                    "aria-describedby": z,
-                    "aria-invalid": Z,
-                    "aria-labelledby": X,
-                    "aria-required": Q,
-                    inputClassNames: q,
-                    centerCaret: J = !1,
-                    onBlur: $,
-                    matchSorterOptions: ee,
-                    clearQueryOnSelect: et = !1,
-                    ...en
+                    look: B = v.SelectLooks.FILLED,
+                    autoFocus: V = !1,
+                    popoutPosition: H = "bottom",
+                    filter: Y = !0,
+                    debounceTime: j,
+                    renderOptionLabel: W = P,
+                    onSearchChange: K,
+                    renderOptionPrefix: z = () => null,
+                    renderOptionSuffix: Z = () => null,
+                    "aria-describedby": X,
+                    "aria-invalid": Q,
+                    "aria-labelledby": q,
+                    "aria-required": J,
+                    inputClassNames: $,
+                    centerCaret: ee = !1,
+                    onBlur: et,
+                    matchSorterOptions: en,
+                    clearQueryOnSelect: ei = !1,
+                    hidePills: er,
+                    renderCustomPill: es,
+                    customPillContainerClassName: ea,
+                    ...eo
                 } = e, {
-                    ref: ei,
-                    width: er
-                } = (0, A.default)(), {
-                    titleId: es,
-                    errorId: ea,
-                    error: eo
-                } = (0, E.useFormContext)(), {
                     ref: el,
                     width: eu
-                } = (0, A.default)(), ed = r.useRef(null), [e_, ec] = r.useState(null), [eE, eI] = r.useState(!1), [eT, ef] = r.useState(null), [eS, eh] = r.useState(!1), eA = r.useRef(null), em = r.useRef(null), {
-                    options: eN,
-                    loading: ep,
-                    onQueryChange: eO
+                } = (0, A.default)(), {
+                    titleId: ed,
+                    errorId: e_,
+                    error: ec
+                } = (0, E.useFormContext)(), {
+                    ref: eE,
+                    width: eI
+                } = (0, A.default)(), eT = r.useRef(null), [ef, eS] = r.useState(null), [eh, eA] = r.useState(!1), [em, eN] = r.useState(null), [ep, eO] = r.useState(!1), eC = r.useRef(null), eR = r.useRef(null), {
+                    options: eg,
+                    loading: eL,
+                    onQueryChange: ev
                 } = function(e) {
                     let {
                         active: t,
@@ -31655,72 +31658,72 @@
                         }, [])
                     }
                 }({
-                    active: eE,
+                    active: eh,
                     loadableOptions: n,
-                    debounceTime: H
-                }), eC = r.useMemo(() => {
+                    debounceTime: j
+                }), eD = r.useMemo(() => {
                     var e, t;
-                    return e = eN, null == (t = s) ? [] : (Array.isArray(t) ? t : [t]).map(t => "object" == typeof t && (null == t || "value" in t) ? t : e.find(e => e.value === t)).filter(Boolean)
-                }, [eN, s]), eR = r.useMemo(() => eC.map(e => e.value), [eC]), eg = eC[eC.length - 1], eL = (0, p.default)(eg), ev = r.useId(), eD = r.useId(), eM = r.useId(), ey = r.useCallback(e => {
-                    eE !== e && !U && (eI(e), e ? null == S || S() : null == h || h())
-                }, [U, h, S, eE]), eP = r.useCallback(e => {
-                    eE && !e && ey(!1)
-                }, [ey, eE]), eU = (0, m.useIsVisible)(eP);
+                    return e = eg, null == (t = s) ? [] : (Array.isArray(t) ? t : [t]).map(t => "object" == typeof t && (null == t || "value" in t) ? t : e.find(e => e.value === t)).filter(Boolean)
+                }, [eg, s]), eM = r.useMemo(() => eD.map(e => e.value), [eD]), ey = eD[eD.length - 1], eP = (0, p.default)(ey), eU = r.useId(), eb = r.useId(), eG = r.useId(), ew = r.useCallback(e => {
+                    eh !== e && !U && (eA(e), e ? null == S || S() : null == h || h())
+                }, [U, h, S, eh]), ek = r.useCallback(e => {
+                    eh && !e && ew(!1)
+                }, [ew, eh]), eB = (0, m.useIsVisible)(ek);
                 r.useImperativeHandle(t, () => ({
                     close() {
-                        ey(!1)
+                        ew(!1)
                     }
                 }));
-                let eb = r.useCallback((e, t) => {
+                let eV = r.useCallback((e, t) => {
                         let n = document.querySelector(e),
-                            i = eA.current;
-                        ec(t), null != i && null != n && i.scrollIntoViewNode({
+                            i = eC.current;
+                        eS(t), null != i && null != n && i.scrollIntoViewNode({
                             node: n
                         })
                     }, []),
-                    eG = r.useCallback(() => new Promise(e => {
-                        let t = eA.current;
+                    ex = r.useCallback(() => new Promise(e => {
+                        let t = eC.current;
                         if (null == t) return e();
                         t.scrollToTop({
                             callback: () => requestAnimationFrame(() => e())
                         })
                     }), []),
-                    ew = r.useCallback(() => new Promise(e => {
-                        let t = eA.current;
+                    eF = r.useCallback(() => new Promise(e => {
+                        let t = eC.current;
                         if (null == t) return e();
                         t.scrollToBottom({
                             callback: () => requestAnimationFrame(() => e())
                         })
                     }), []),
-                    ek = (0, u.default)({
-                        id: eD,
-                        defaultFocused: null != eg ? String(eg.value) : void 0,
-                        scrollToStart: eG,
-                        scrollToEnd: ew,
-                        isEnabled: eE,
+                    eH = (0, u.default)({
+                        id: eb,
+                        defaultFocused: null != ey ? String(ey.value) : void 0,
+                        scrollToStart: ex,
+                        scrollToEnd: eF,
+                        isEnabled: eh,
                         wrap: !0,
                         useVirtualFocus: !0,
-                        setFocus: eb,
+                        setFocus: eV,
                         disableClickOnSpace: !0
                     }),
-                    eB = (0, p.default)(ek),
-                    eV = (0, p.default)(eN);
+                    eY = (0, p.default)(eH),
+                    ej = (0, p.default)(eg);
                 r.useEffect(() => {
-                    let e = eV.current,
-                        t = eL.current;
-                    eE && null != t && !ep && requestAnimationFrame(() => {
-                        let n = eA.current,
+                    let e = ej.current,
+                        t = eP.current;
+                    eh && null != t && !eL && requestAnimationFrame(() => {
+                        let n = eC.current,
                             i = e.indexOf(t);
                         null == n || n.scrollToIndex({
                             section: 0,
                             row: i
                         })
                     })
-                }, [eE, ep]), r.useEffect(() => {
-                    let e = eB.current;
-                    if (eE && !ep) {
+                }, [eh, eL]), r.useEffect(() => {
+                    let e = eY.current;
+                    if (eh && !eL) {
                         var t;
-                        let n = ed.current;
+                        let n = eT.current;
                         if (null != n) {
                             n.focus();
                             let {
@@ -31728,69 +31731,74 @@
                             } = n;
                             n.value = " ", n.value = e
                         }
-                        ec(null !== (t = e.focusedItemId()) && void 0 !== t ? t : null)
+                        eS(null !== (t = e.focusedItemId()) && void 0 !== t ? t : null)
                     } else {
-                        let t = eL.current,
+                        let t = eP.current,
                             n = null != t ? String(t.value) : null;
-                        e.setFocus(n), ec(null)
+                        e.setFocus(n), eS(null)
                     }
-                }, [eE, ep]), r.useLayoutEffect(() => {
-                    !eE && (I ? ef("") : null != eg && ef(eg.label))
-                }, [I, eg, eE]), r.useLayoutEffect(() => {
-                    I && ef("")
-                }, [I, eC.length]);
-                let ex = r.useCallback(function(e) {
+                }, [eh, eL]), r.useLayoutEffect(() => {
+                    !eh && (I ? eN("") : null != ey && eN(ey.label))
+                }, [I, ey, eh]), r.useLayoutEffect(() => {
+                    I && eN("")
+                }, [I, eD.length]);
+                let eW = r.useCallback(function(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                     if (null == e) {
                         l(I ? [] : void 0);
                         return
                     }
                     let i = "function" == typeof n,
-                        r = i ? eN.find(t => t.value === e) : e;
+                        r = i ? eg.find(t => t.value === e) : e;
                     if (I) {
                         let n = null != s ? s : [];
                         if (n.some(t => (i ? t.value : t) === e) ? l(n.filter(t => (i ? t.value : t) !== e)) : l([...n, r]), t) {
                             var a;
-                            null === (a = ed.current) || void 0 === a || a.focus()
+                            null === (a = eT.current) || void 0 === a || a.focus()
                         }
                     } else l(r);
-                    ec(null), (!I || T) && ey(!1), eh(!1), et && ef("")
-                }, [n, eN, I, T, et, l, s, ey]);
+                    eS(null), (!I || T) && ew(!1), eO(!1), ei && eN("")
+                }, [n, eg, I, T, ei, l, s, ew]);
                 r.useLayoutEffect(() => {
-                    if (k) {
+                    if (V) {
                         var e;
-                        null === (e = ed.current) || void 0 === e || e.focus()
+                        null === (e = eT.current) || void 0 === e || e.focus()
                     }
-                }, [k]);
-                let eF = r.useCallback(() => {
-                        ef(""), ex(null), ey(!0)
-                    }, [ex, ey]),
-                    eH = r.useCallback(e => {
+                }, [V]);
+                let eK = r.useCallback(() => {
+                        eN(""), eW(null), ew(!0)
+                    }, [eW, ew]),
+                    ez = r.useCallback(e => {
                         switch (e.key) {
                             case "Escape":
-                                eE && (e.stopPropagation(), ey(!1));
+                                eh && (e.stopPropagation(), ew(!1));
                                 break;
                             case "ArrowDown":
                             case "ArrowUp":
-                                ey(!0)
+                                ew(!0)
                         }
-                    }, [ey, eE]),
-                    eY = eN;
-                eS && null != eT && !1 !== F && (eY = "function" == typeof F ? F(eN, eT) : (0, o.matchSorter)(eN, eT, null != ee ? ee : y)), r.useEffect(() => {
-                    let e = eA.current;
+                    }, [ew, eh]),
+                    eZ = eg;
+                ep && null != em && !1 !== Y && (eZ = "function" == typeof Y ? Y(eg, em) : (0, o.matchSorter)(eg, em, null != en ? en : y)), r.useEffect(() => {
+                    let e = eC.current;
                     null == e || e.scrollToTop()
-                }, [eT]), r.useEffect(() => {
-                    !ep && eS && null !== eT && requestAnimationFrame(() => ek.focusFirstVisibleItem())
-                }, [ep, eS, eT]);
-                let ej = I ? x : V;
-                return (0, i.jsx)(u.ListNavigatorProvider, {
-                    navigator: ek,
-                    children: (0, i.jsx)(f.Popout, {
+                }, [em]), r.useEffect(() => {
+                    !eL && ep && null !== em && requestAnimationFrame(() => eH.focusFirstVisibleItem())
+                }, [eL, ep, em]);
+                let eX = I ? F : x,
+                    eQ = r.useRef(null),
+                    {
+                        focusPreviousItem: eq,
+                        focusNextItem: eJ
+                    } = w(eQ, eT, eD);
+                return (0, i.jsxs)(u.ListNavigatorProvider, {
+                    navigator: eH,
+                    children: [(0, i.jsx)(f.Popout, {
                         spacing: 0,
                         animation: f.Popout.Animation.NONE,
-                        shouldShow: eE,
-                        onRequestClose: () => ey(!1),
-                        layerContext: en.popoutLayerContext,
+                        shouldShow: eh,
+                        onRequestClose: () => ew(!1),
+                        layerContext: eo.popoutLayerContext,
                         renderPopout: e => {
                             let {
                                 closePopout: t,
@@ -31798,26 +31806,26 @@
                                 updatePosition: r
                             } = e;
                             return (0, i.jsx)(b, {
-                                loading: ep,
-                                multi: I,
-                                listRef: eA,
-                                listId: ev,
+                                loading: eL,
+                                multi: !!I,
+                                listRef: eC,
+                                listId: eU,
                                 maxVisibleItems: G,
-                                width: eu,
-                                selectedValues: eR,
+                                width: eI,
+                                selectedValues: eM,
                                 closePopout: t,
-                                onSelect: ex,
+                                onSelect: eW,
                                 closeOnSelect: T,
-                                options: eY,
-                                activeDescendant: e_,
-                                renderOptionLabel: Y,
+                                options: eZ,
+                                activeDescendant: ef,
+                                renderOptionLabel: W,
                                 updatePosition: r,
                                 popoutPosition: n,
-                                renderOptionPrefix: W,
-                                renderOptionSuffix: K
+                                renderOptionPrefix: z,
+                                renderOptionSuffix: Z
                             })
                         },
-                        position: B,
+                        position: H,
                         children: (e, t) => {
                             let {
                                 "aria-expanded": n,
@@ -31828,34 +31836,34 @@
                             } = t, l = s ? C.default : O.default, {
                                 ref: u,
                                 onKeyDown: E
-                            } = ek.containerProps;
+                            } = eH.containerProps;
                             return (0, i.jsxs)("div", {
-                                ref: em,
+                                ref: eR,
                                 className: a()(R, M.wrapper),
                                 style: {
-                                    "--icons-width": "".concat(er, "px")
+                                    "--icons-width": "".concat(eu, "px")
                                 },
                                 onBlur: e => {
                                     var t, n, i;
-                                    !((null === (t = em.current) || void 0 === t ? void 0 : t.contains(e.relatedTarget)) || (null === (i = eA.current) || void 0 === i ? void 0 : null === (n = i.getScrollerNode()) || void 0 === n ? void 0 : n.contains(e.relatedTarget))) && (!I && null != eg && ef(eg.label), eh(!1), ey(!1), null == $ || $(e))
+                                    !((null === (t = eR.current) || void 0 === t ? void 0 : t.contains(e.relatedTarget)) || (null === (i = eC.current) || void 0 === i ? void 0 : null === (n = i.getScrollerNode()) || void 0 === n ? void 0 : n.contains(e.relatedTarget))) && (!I && null != ey && eN(ey.label), eO(!1), ew(!1), null == et || et(e))
                                 },
                                 children: [(0, i.jsx)(c.FocusRing, {
-                                    ringTarget: el,
-                                    focusTarget: ed,
+                                    ringTarget: eE,
+                                    focusTarget: eT,
                                     offset: 4,
                                     children: (0, i.jsx)("div", {
                                         onClick: U ? void 0 : e => {
-                                            e.stopPropagation(), e.preventDefault(), ef(""), ey(!0)
+                                            e.stopPropagation(), e.preventDefault(), eN(""), ew(!0)
                                         },
                                         onMouseDown: e => {
                                             e.preventDefault()
                                         },
                                         ref: e => {
-                                            el.current = e, eU.current = e
+                                            eE.current = e, eB.current = e
                                         },
                                         className: a()(M.select, M.searchable, g, {
                                             [M.open]: s,
-                                            [M.lookFilled]: w === v.SelectLooks.FILLED,
+                                            [M.lookFilled]: B === v.SelectLooks.FILLED,
                                             [M.disabled]: U,
                                             [M.multi]: I,
                                             [M.selectPositionTop]: "top" === o
@@ -31864,57 +31872,58 @@
                                             className: a()(M.value, {
                                                 [M.multi]: I
                                             }),
-                                            children: (0, i.jsx)(ej, {
-                                                query: eT,
-                                                selectedOptions: eC,
-                                                loading: ep,
-                                                renderOptionPrefix: W,
-                                                renderOptionSuffix: K,
+                                            children: (0, i.jsx)(eX, {
+                                                query: em,
+                                                selectedOptions: eD,
+                                                loading: eL,
+                                                renderOptionPrefix: z,
+                                                renderOptionSuffix: Z,
                                                 isDisabled: U,
-                                                isEditing: eS,
-                                                inputRef: ed,
-                                                "aria-describedby": null != z ? z : ea,
-                                                "aria-required": Q,
-                                                "aria-invalid": null != Z ? Z : null != eo,
-                                                "aria-labelledby": null != X ? X : es,
+                                                isEditing: ep,
+                                                inputRef: eT,
+                                                "aria-describedby": null != X ? X : e_,
+                                                "aria-required": J,
+                                                "aria-invalid": null != Q ? Q : null != ec,
+                                                "aria-labelledby": null != q ? q : ed,
                                                 "aria-expanded": n,
                                                 setInputRef: e => {
-                                                    u.current = e, ed.current = e
+                                                    u.current = e, eT.current = e
                                                 },
                                                 onFocus: () => {
                                                     var e, t;
-                                                    null === (e = ed.current) || void 0 === e || e.setSelectionRange(0, null !== (t = null == eT ? void 0 : eT.length) && void 0 !== t ? t : 0)
+                                                    null === (e = eT.current) || void 0 === e || e.setSelectionRange(0, null !== (t = null == em ? void 0 : em.length) && void 0 !== t ? t : 0)
                                                 },
                                                 onChange: e => {
-                                                    eO(e), null == j || j(e), ef(e), ey(!0), eh(!0)
+                                                    ev(e), null == K || K(e), eN(e), ew(!0), eO(!0)
                                                 },
                                                 onKeyDown: e => {
                                                     var t;
-                                                    null === (t = en.onKeyDown) || void 0 === t || t.call(en, e), E(e), eH(e)
+                                                    null === (t = eo.onKeyDown) || void 0 === t || t.call(eo, e), E(e), ez(e)
                                                 },
-                                                activeDescendant: e_,
+                                                activeDescendant: ef,
                                                 placeholder: N,
-                                                inputId: eM,
-                                                listboxId: ev,
-                                                navigatorId: eD,
+                                                inputId: eG,
+                                                listboxId: eU,
+                                                navigatorId: eb,
                                                 selectValue: function(e) {
                                                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-                                                    ex(e, t)
+                                                    eW(e, t)
                                                 },
-                                                inputClassNames: q
+                                                inputClassNames: $,
+                                                hidePills: er
                                             })
                                         })
                                     })
                                 }), (0, i.jsxs)("div", {
                                     className: a()(M.icons, {
                                         [M.multi]: I,
-                                        [M.iconsContainer]: !J
+                                        [M.iconsContainer]: !ee
                                     }),
-                                    ref: ei,
-                                    children: [d && (null != eT && "" !== eT || eC.length > 0) ? (0, i.jsx)(_.Clickable, {
+                                    ref: el,
+                                    children: [d && (null != em && "" !== em || eD.length > 0) ? (0, i.jsx)(_.Clickable, {
                                         "aria-label": D.default.Messages.CLEAR,
-                                        "aria-controls": eM,
-                                        onClick: eF,
+                                        "aria-controls": eG,
+                                        onClick: eK,
                                         children: (0, i.jsx)(L.default, {
                                             width: 16,
                                             height: 16,
@@ -31922,12 +31931,12 @@
                                         })
                                     }) : null, (0, i.jsx)(_.Clickable, {
                                         className: a()({
-                                            [M.iconsCenter]: J
+                                            [M.iconsCenter]: ee
                                         }),
-                                        "aria-label": eE ? D.default.Messages.CLOSE : D.default.Messages.OPEN,
-                                        "aria-controls": eM,
+                                        "aria-label": eh ? D.default.Messages.CLOSE : D.default.Messages.OPEN,
+                                        "aria-controls": eG,
                                         onClick: () => {
-                                            ey(!eE)
+                                            ew(!eh)
                                         },
                                         children: (0, i.jsx)(l, {
                                             className: M.dropdownIcon
@@ -31936,7 +31945,20 @@
                                 })]
                             })
                         }
-                    })
+                    }), eD.length > 0 && null != es && (0, i.jsx)("div", {
+                        children: (0, i.jsx)(k, {
+                            listRef: eQ,
+                            selectedOptions: eD,
+                            selectValue: function(e) {
+                                let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
+                                eW(e, t)
+                            },
+                            focusNextItem: eJ,
+                            focusPreviousItem: eq,
+                            renderCustomPill: es,
+                            customPillContainerClassName: ea
+                        })
+                    })]
                 })
             });
 
@@ -32021,7 +32043,7 @@
                                 let {
                                     row: n
                                 } = e, r = o[n], a = I(r);
-                                return (0, i.jsx)(k, {
+                                return (0, i.jsx)(B, {
                                     multi: m,
                                     "aria-posinset": n,
                                     "aria-setsize": o.length,
@@ -32052,7 +32074,54 @@
                 return (e.compareDocumentPosition(t) & n) === n
             }
 
-            function w(e) {
+            function w(e, t, n) {
+                let i = r.useMemo(() => (0, l.createFocusManager)({
+                        getFocusableElements() {
+                            let t = e.current;
+                            return null != t ? Array.from(t.querySelectorAll("[data-option-pill-value]")) : []
+                        },
+                        getActiveElement() {
+                            var t, n;
+                            return null == e ? void 0 : null === (n = e.current) || void 0 === n ? void 0 : null === (t = n.ownerDocument) || void 0 === t ? void 0 : t.activeElement
+                        }
+                    }), [n]),
+                    s = r.useCallback(t => {
+                        var n, i;
+                        return t === (null === (i = e.current) || void 0 === i ? void 0 : null === (n = i.ownerDocument) || void 0 === n ? void 0 : n.activeElement)
+                    }, [e]),
+                    a = r.useCallback(async function() {
+                        let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
+                            n = await i.getPreviousFocusableElement({
+                                wrap: !e
+                            });
+                        if (e && ((null == n || s(n)) && (n = await i.getNextFocusableElement()), null == n || s(n))) {
+                            var r;
+                            return null === (r = t.current) || void 0 === r ? void 0 : r.focus()
+                        }
+                        return null == n ? void 0 : n.focus()
+                    }, [i, s, t]),
+                    o = r.useCallback(async function() {
+                        let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
+                            n = await i.getNextFocusableElement({
+                                wrap: !e
+                            });
+                        if (e && ((null == n || s(n)) && (n = await i.getPreviousFocusableElement()), null == n || s(n))) {
+                            var r;
+                            return null === (r = t.current) || void 0 === r ? void 0 : r.focus()
+                        }
+                        return null == n ? void 0 : n.focus()
+                    }, [i, s, t]);
+                return {
+                    focusPreviousItem: a,
+                    focusNextItem: o,
+                    focusLastItem: r.useCallback(async () => {
+                        let e = await i.getLastFocusableElement();
+                        return null == e ? void 0 : e.focus()
+                    }, [i])
+                }
+            }
+
+            function k(e) {
                 let {
                     selectedOptions: t,
                     selectValue: n,
@@ -32060,47 +32129,54 @@
                     focusPreviousItem: a,
                     focusNextItem: o,
                     renderOptionSuffix: l,
-                    renderOptionPrefix: u
-                } = e, d = r.useCallback(e => {
+                    renderOptionPrefix: u,
+                    renderCustomPill: d,
+                    customPillContainerClassName: _
+                } = e, c = null != d, E = r.useCallback(e => {
                     if (null != s.current) switch (e.key) {
                         case "ArrowRight":
                             return e.stopPropagation(), e.preventDefault(), o();
                         case "ArrowLeft":
                             return e.stopPropagation(), e.preventDefault(), a()
                     }
-                }, [s, a, o]), [_, c] = r.useState(null);
+                }, [s, a, o]), [I, T] = r.useState(null);
                 return (0, i.jsx)("ul", {
-                    className: M.optionPillContainer,
+                    className: c ? _ : M.optionPillContainer,
                     ref: s,
-                    onKeyDown: d,
+                    onKeyDown: E,
                     onFocus: e => {
                         let t = e.target;
-                        null != s.current && G(s.current, t) && c(t.getAttribute("data-option-pill-value"))
+                        null != s.current && G(s.current, t) && T(t.getAttribute("data-option-pill-value"))
                     },
                     onBlur: e => {
                         let t = e.relatedTarget;
-                        !G(s.current, t) && c(null)
+                        !G(s.current, t) && T(null)
                     },
                     children: t.map((e, t) => {
                         var r;
                         return (0, i.jsx)("li", {
-                            className: M.optionPillItem,
-                            children: (0, i.jsx)(H, {
-                                focused: null == _ ? 0 === t : _ === String(e.value),
+                            className: c ? void 0 : M.optionPillItem,
+                            children: (0, i.jsx)(Y, {
+                                isCustomPill: c,
                                 option: e,
+                                focused: null == I ? 0 === t : I === String(e.value),
                                 onClick: () => n(e.value),
+                                renderOptionPrefix: u,
+                                renderOptionSuffix: l,
                                 onKeyDown: async t => {
                                     "Backspace" === t.key ? (await a(!0), n(e.value, !1)) : "Delete" === t.key && (await o(!0), n(e.value, !1))
                                 },
-                                renderOptionPrefix: u,
-                                renderOptionSuffix: l
+                                children: c ? d(e) : (0, i.jsx)("div", {
+                                    className: M.content,
+                                    children: e.label
+                                })
                             })
                         }, null !== (r = e.key) && void 0 !== r ? r : "".concat(e.label, "-").concat(e.value))
                     })
                 })
             }
 
-            function k(e) {
+            function B(e) {
                 let {
                     value: t,
                     label: n,
@@ -32139,14 +32215,14 @@
                     }), " ", null != s && (0, i.jsx)("div", {
                         className: M.suffix,
                         children: s
-                    }), " ", (0, i.jsx)(B, {
+                    }), " ", (0, i.jsx)(V, {
                         isSelected: l,
                         multi: c
                     })]
                 })
             }
 
-            function B(e) {
+            function V(e) {
                 let {
                     isSelected: t,
                     multi: n
@@ -32168,7 +32244,7 @@
                 }) : null
             }
 
-            function V(e) {
+            function x(e) {
                 let {
                     selectedOptions: t,
                     renderOptionPrefix: n,
@@ -32185,7 +32261,7 @@
                     children: [null != o ? (0, i.jsx)("div", {
                         "aria-hidden": !0,
                         children: o
-                    }) : null, (0, i.jsx)(F, {
+                    }) : null, (0, i.jsx)(H, {
                         selectedOptions: t,
                         ...s
                     }), null != l ? (0, i.jsx)("div", {
@@ -32195,100 +32271,56 @@
                 })
             }
 
-            function x(e) {
+            function F(e) {
                 let {
                     query: t,
                     placeholder: n,
                     selectedOptions: s,
                     selectValue: o,
-                    onKeyDown: u,
-                    isEditing: d,
-                    isDisabled: _,
-                    inputRef: c,
-                    renderOptionPrefix: E,
-                    renderOptionSuffix: I,
-                    inputClassNames: T,
+                    onKeyDown: l,
+                    isEditing: u,
+                    isDisabled: d,
+                    inputRef: _,
+                    renderOptionPrefix: c,
+                    renderOptionSuffix: E,
+                    inputClassNames: I,
+                    hidePills: T,
                     ...f
                 } = e, S = Math.max(n.length, (null != t ? t : "").length), h = r.useRef(null), {
                     focusPreviousItem: A,
                     focusNextItem: m,
                     focusLastItem: N
-                } = function(e, t, n) {
-                    let i = r.useMemo(() => (0, l.createFocusManager)({
-                            getFocusableElements() {
-                                let t = e.current;
-                                return null != t ? Array.from(t.querySelectorAll("[data-option-pill-value]")) : []
-                            },
-                            getActiveElement() {
-                                var t, n;
-                                return null == e ? void 0 : null === (n = e.current) || void 0 === n ? void 0 : null === (t = n.ownerDocument) || void 0 === t ? void 0 : t.activeElement
-                            }
-                        }), [n]),
-                        s = r.useCallback(t => {
-                            var n, i;
-                            return t === (null === (i = e.current) || void 0 === i ? void 0 : null === (n = i.ownerDocument) || void 0 === n ? void 0 : n.activeElement)
-                        }, [e]),
-                        a = r.useCallback(async function() {
-                            let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-                                n = await i.getPreviousFocusableElement({
-                                    wrap: !e
-                                });
-                            if (e && ((null == n || s(n)) && (n = await i.getNextFocusableElement()), null == n || s(n))) {
-                                var r;
-                                return null === (r = t.current) || void 0 === r ? void 0 : r.focus()
-                            }
-                            return null == n ? void 0 : n.focus()
-                        }, [i, s, t]),
-                        o = r.useCallback(async function() {
-                            let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-                                n = await i.getNextFocusableElement({
-                                    wrap: !e
-                                });
-                            if (e && ((null == n || s(n)) && (n = await i.getPreviousFocusableElement()), null == n || s(n))) {
-                                var r;
-                                return null === (r = t.current) || void 0 === r ? void 0 : r.focus()
-                            }
-                            return null == n ? void 0 : n.focus()
-                        }, [i, s, t]);
-                    return {
-                        focusPreviousItem: a,
-                        focusNextItem: o,
-                        focusLastItem: r.useCallback(async () => {
-                            let e = await i.getLastFocusableElement();
-                            return null == e ? void 0 : e.focus()
-                        }, [i])
-                    }
-                }(h, c, s);
+                } = w(h, _, s);
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [s.length > 0 && (0, i.jsx)(w, {
+                    children: [s.length > 0 && !T && (0, i.jsx)(k, {
                         listRef: h,
                         selectedOptions: s,
-                        renderOptionPrefix: E,
-                        renderOptionSuffix: I,
+                        renderOptionPrefix: c,
+                        renderOptionSuffix: E,
                         selectValue: o,
                         focusNextItem: m,
                         focusPreviousItem: A
-                    }), (0, i.jsx)(F, {
+                    }), (0, i.jsx)(H, {
                         style: {
                             minWidth: "".concat(S, "ch")
                         },
-                        className: a()(M.multi, T),
+                        className: a()(M.multi, I),
                         query: t,
                         placeholder: n,
                         selectValue: o,
                         selectedOptions: s,
-                        isEditing: d,
-                        isDisabled: _,
-                        inputRef: c,
+                        isEditing: u,
+                        isDisabled: d,
+                        inputRef: _,
                         onKeyDown: e => {
-                            ["ArrowLeft", "Backspace"].includes(e.key) && ("" === t || null == t) && s.length > 0 ? N() : u(e)
+                            ["ArrowLeft", "Backspace"].includes(e.key) && ("" === t || null == t) && s.length > 0 ? N() : l(e)
                         },
                         ...f
                     })]
                 })
             }
 
-            function F(e) {
+            function H(e) {
                 let {
                     query: t,
                     inputId: n,
@@ -32342,42 +32374,42 @@
                 })
             }
 
-            function H(e) {
+            function Y(e) {
                 let {
                     option: t,
                     focused: n,
                     onClick: r,
                     onKeyDown: s,
                     renderOptionPrefix: a,
-                    renderOptionSuffix: o
-                } = e, l = null == a ? void 0 : a(t, {
+                    renderOptionSuffix: o,
+                    children: l,
+                    isCustomPill: u
+                } = e, _ = !u && (null == a ? void 0 : a(t, {
                     inPill: !0,
                     inDropdown: !1
-                }), u = null == o ? void 0 : o(t, {
+                })), E = !u && (null == o ? void 0 : o(t, {
                     inPill: !0,
                     inDropdown: !1
-                });
+                }));
                 return (0, i.jsx)(c.FocusRing, {
                     offset: 3,
                     children: (0, i.jsxs)(d.Button, {
+                        look: d.Button.Looks.BLANK,
                         tabIndex: n ? 0 : -1,
                         "data-option-pill-value": t.value,
                         className: M.optionPillBtn,
-                        innerClassName: M.optionPill,
+                        innerClassName: u ? null : M.optionPill,
                         onClick: () => null == r ? void 0 : r(t.value),
                         onKeyDown: s,
-                        children: [(0, i.jsx)("div", {
-                            className: M.content,
-                            children: t.label
-                        }), null != l && (0, i.jsx)("div", {
+                        children: [l, null != _ && (0, i.jsx)("div", {
                             className: M.prefix,
-                            children: l
-                        }), " ", null != u && (0, i.jsx)("div", {
+                            children: _
+                        }), " ", null != E && (0, i.jsx)("div", {
                             className: M.suffix,
-                            children: u
+                            children: E
                         }), (0, i.jsx)(I.HiddenVisually, {
                             children: D.default.Messages.REMOVE
-                        }), (0, i.jsx)(L.default, {
+                        }), !u && (0, i.jsx)(L.default, {
                             className: M.deleteOptionIcon,
                             width: 14,
                             height: 14
@@ -37097,7 +37129,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298544", ", Version Hash: ").concat("3e1b662440e76657a2c2b3a931c36317a9d4c9c8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298863", ", Version Hash: ").concat("fe3cc56b9b4dd398236e31e33d7458be27f8d3ca")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38876,6 +38908,7 @@
                 APP_LAUNCHER_HOME_LEARN_MORE_SECTION_TITLE: "New to Apps?",
                 APP_LAUNCHER_HOME_LEARN_MORE_SECTION_BODY: "Check out our starter guide to learn about the cool things apps can do.",
                 APP_LAUNCHER_HOME_LEARN_MORE_SECTION_LEARN_MORE: "Learn More",
+                APP_LAUNCHER_ACTIVITY_NOT_AVAILABLE_IN_THREAD: "Activities cannot be launched in Threads at this time",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -43393,7 +43426,7 @@
                 HARVEST_BACKEND_USERS: "Account",
                 HARVEST_BACKEND_MESSAGES: "Messages",
                 HARVEST_BACKEND_GUILDS: "Servers",
-                HARVEST_BACKEND_ANALYTICS: "Analytics",
+                HARVEST_BACKEND_ANALYTICS: "Your Activity",
                 HARVEST_BACKEND_ACTIVITIES: "Activities",
                 HARVEST_BACKEND_HUBSPOT: "Programs",
                 USER_DM_SETTINGS: "Server Privacy Defaults",
@@ -51831,6 +51864,8 @@
                 CHAT_DISABLED_HOME_BACK: "Done reading? Hop back to Home.",
                 CHAT_DISABLED_CTA: "Explore",
                 GUILD_AUTOMOD_ADD_SELECTION: "Filter ({keywordCount, plural, =1 {# Word} other {# Words}})",
+                GUILD_AUTOMOD_ADD_SELECTION_TOAST_SUCCESS: "Success!",
+                GUILD_AUTOMOD_ADD_SELECTION_TOAST_ERROR: "Something went wrong! Please try again.",
                 GUILD_AUTOMOD_ADD_NEW_RULE: "Create New AutoMod Rule",
                 GUILD_SETTINGS_AUTOMOD_TITLE: "AutoMod",
                 GUILD_SETTINGS_AUTOMOD_DESCRIPTION: "Set up rules for moderation in your server to automatically filter content and post alerts to keep your server safe around the clock. Users with Admin permissions will be ignored from AutoMod rules.",
@@ -55620,6 +55655,7 @@
                 QUESTS_CLAIMED: "Claimed Quests",
                 QUESTS_PROMOTED_BY_GUILD: "Promoted by $[{guildName}]({guildHook})",
                 QUESTS_PROMOTED_BY_BRAND: "Promoted by **{brandName}**",
+                QUESTS_CONNECT_CONSOLE: "Connect Console",
                 QUESTS_REWARD_VERIFICATION_TITLE: "Verify your account to claim rewards!",
                 QUESTS_REWARD_VERIFICATION_BODY: "We have sent a verification email to: [{emailAddress}]({emailAddressLink})",
                 QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
@@ -55716,6 +55752,9 @@
                 QUESTS_HOME_HERO_TITLE: "Play Games. Get Rewards.",
                 QUESTS_HOME_HERO_DESCRIPTION: "Quests are a brand new way for players to discover games and earn rewards for playing them on Discord.",
                 QUEST_ACCEPTED: "Quest Accepted",
+                QUESTS_HOME_MODAL_CONNECT_CONSOLE: "Connect your console account to your Discord account",
+                QUESTS_HOME_MODAL_LINKED_ACCOUNTS: "LINKED ACCOUNT(S)",
+                QUESTS_HOME_MODAL_NEXT_STEP: "Next Step",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -55837,6 +55876,7 @@
                 CONTENT_INVENTORY_COACHTIP_HEADER: "Reply in 1-click!",
                 CONTENT_INVENTORY_COACHTIP_TEXT: "Friends will receive the emoji as a DM",
                 CONTENT_INVENTORY_COACHTIP_IMAGE_ALT: "Wumpus chatting with a friend while gaming",
+                CONTENT_INVENTORY_GAME_STATE_SIZE: "{count} of {max}",
                 RECENT_GAMES: "Recent Games",
                 USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO: "{count} {count, plural, =1 {week} other {weeks}} ago",
                 USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO: "{count} {count, plural, =1 {day} other {days}} ago",
@@ -55892,6 +55932,7 @@
                 MESSAGE_ACTION_FORWARD: "Forward",
                 MESSAGE_ACTION_FORWARD_TO: "Forward To",
                 MESSAGE_FORWARDED: "Forwarded",
+                MESSAGE_FORWARDED_NOTIFICATION_BODY: "Forwarded a message",
                 MESSAGE_ACTION_FORWARD_MEDIA_A11Y: "Forward media from this message",
                 MESSAGE_ACTION_FORWARD_EMBED_A11Y: "Forward embed from this message",
                 MESSAGES_SEND_SEPARATELY: "Send ({count, number})",
@@ -59386,7 +59427,7 @@
                         }), r.destroyUser(e), null === (i = this._videoHealthManager) || void 0 === i || i.deleteUser(e))
                     }
                     let s = this._connection;
-                    null != s && s.destroyUser(e), null === (t = this._localMediaSinkWantsManager) || void 0 === t || t.destroyUser(e)
+                    null != s && s.destroyUser(e), null === (t = this._localMediaSinkWantsManager) || void 0 === t || t.destroyUser(e), this.emit(K.RTCConnectionEvent.ClientDisconnect, e)
                 }
                 _handleCodecs(e, t) {
                     let n = this._connection;
@@ -59627,7 +59668,7 @@
                 RTCConnectionEvent: function() {
                     return i
                 }
-            }), (r = i || (i = {})).State = "state", r.Speaking = "speaking", r.VideoSourceQualityChanged = "video-source-quality-changed", r.Video = "video", r.Flags = "flags", r.Platform = "platform", r.Ping = "ping", r.OutboundLossRate = "outboundlossrate"
+            }), (r = i || (i = {})).State = "state", r.Speaking = "speaking", r.VideoSourceQualityChanged = "video-source-quality-changed", r.Video = "video", r.Flags = "flags", r.Platform = "platform", r.Ping = "ping", r.ClientDisconnect = "client-disconnect", r.OutboundLossRate = "outboundlossrate"
         },
         423343: function(e, t, n) {
             "use strict";
@@ -74957,9 +74998,13 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 QuestManager: {
-                    actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "STREAM_START", "STREAM_CREATE", "STREAM_CLOSE", "LOGOUT", "PASSIVE_UPDATE_V2", "VOICE_STATE_UPDATES", "EMBEDDED_ACTIVITY_UPDATE", "EMBEDDED_ACTIVITY_UPDATE_V2", "USER_SETTINGS_PROTO_UPDATE"],
+                    actions: ["QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "STREAM_START", "STREAM_CREATE", "STREAM_CLOSE", "PASSIVE_UPDATE_V2", "VOICE_STATE_UPDATES", "EMBEDDED_ACTIVITY_UPDATE", "EMBEDDED_ACTIVITY_UPDATE_V2"],
                     inlineRequire: () => n("901751").default,
                     neverLoadBeforeConnectionOpen: !0
+                },
+                QuestFetchManager: {
+                    actions: ["QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "POST_CONNECTION_OPEN", "RUNNING_GAMES_CHANGE", "USER_SETTINGS_PROTO_UPDATE", "LOGOUT"],
+                    inlineRequire: () => n("877519").default
                 },
                 VoiceChannelGameActivityManager: {
                     actions: ["RUNNING_GAMES_CHANGE", "VOICE_CHANNEL_SELECT"],
@@ -76873,7 +76918,8 @@
                         let i, r;
                         let s = e[n],
                             a = t[n],
-                            o = c.get(n);
+                            o = c.get(n),
+                            u = null != s;
                         if (null != s && null != a) {
                             for (let e in i = a.descriptor, r = [], a.commands) {
                                 let t = a.commands[e];
@@ -76886,8 +76932,8 @@
                                 }
                         } else null != s ? (i = s.descriptor, r = Object.values(s.commands)) : null != a ? (i = a.descriptor, r = Object.values(a.commands)) : null != o && (i = o.descriptor, r = Object.values(o.commands));
                         l()(null != i, "Failed to select application descriptor"), l()(null != r, "Failed to select list of application commands");
-                        let u = en(i, r, P);
-                        null != u && M.push(u)
+                        let d = en(i, r, u, P);
+                        null != d && M.push(d)
                     }
                     N.applications.useFrecency && S.FrecencyUserSettingsActionCreators.loadIfNecessary(), M.sort((e, t) => {
                         if (N.applications.useScore && m === g.ScoreMethod.APPLICATION_ONLY) {
@@ -76905,7 +76951,7 @@
                     })
                 }
                 if (D.length > 0 || !0 === h) {
-                    let e = en(p.BUILT_IN_SECTIONS[y.BuiltInSectionId.BUILT_IN], D, P);
+                    let e = en(p.BUILT_IN_SECTIONS[y.BuiltInSectionId.BUILT_IN], D, !0, P);
                     null != e && M.push(e)
                 }
                 let U = M.flatMap(e => e.data.map(t => ({
@@ -76944,25 +76990,30 @@
                 }
             }
 
-            function en(e, t, n) {
-                let i, {
-                        query: r,
-                        splitQuery: s,
-                        allowEmptySections: a,
-                        scoreMethod: o,
-                        permissionContext: l
-                    } = n,
+            function en(e, t, n, i) {
+                let r, {
+                        query: s,
+                        splitQuery: a,
+                        allowEmptySections: o,
+                        scoreMethod: l,
+                        permissionContext: u
+                    } = i,
                     {
-                        context: u,
-                        userId: d,
-                        roleIds: _,
-                        isImpersonating: c
-                    } = l,
-                    E = null != u.guild_id ? M.computeAllowedForUser(e.permissions, u.guild_id, d, _, c) : null,
-                    I = null != u.guild_id ? M.computeAllowedForChannel(e.permissions, u, u.guild_id) : null,
-                    T = [];
-                for (let n of t) M.hasAccess(n, l, E, I, e.botId) === M.HasAccessResult.ALLOWED && T.push(n);
-                return 0 !== (i = o !== g.ScoreMethod.NONE && null != r && null != s ? function(e, t, n, i, r) {
+                        context: d,
+                        userId: _,
+                        roleIds: c,
+                        isImpersonating: E
+                    } = u,
+                    I = null != d.guild_id ? M.computeAllowedForUser(e.permissions, d.guild_id, _, c, E) : null,
+                    T = null != d.guild_id ? M.computeAllowedForChannel(e.permissions, d, d.guild_id) : null,
+                    f = [];
+                for (let i of t) M.hasAccess(i, u, {
+                    applicationAllowedForUser: I,
+                    applicationAllowedForChannel: T,
+                    commandBotId: e.botId,
+                    isGuildInstalled: n
+                }) === M.HasAccessResult.ALLOWED && f.push(i);
+                return 0 !== (r = l !== g.ScoreMethod.NONE && null != s && null != a ? function(e, t, n, i, r) {
                     let s;
                     let a = [];
                     if (r === g.ScoreMethod.APPLICATION_ONLY || r === g.ScoreMethod.COMMAND_OR_APPLICATION) {
@@ -77002,9 +77053,9 @@
                         })
                     }
                     return a
-                }(r, s, T, e, o) : T).length || a ? ((o === g.ScoreMethod.NONE || o === g.ScoreMethod.APPLICATION_ONLY) && i.sort((e, t) => el(e.displayName, t.displayName)), {
+                }(s, a, f, e, l) : f).length || o ? ((l === g.ScoreMethod.NONE || l === g.ScoreMethod.APPLICATION_ONLY) && r.sort((e, t) => el(e.displayName, t.displayName)), {
                     section: e,
-                    data: i
+                    data: r
                 }) : null
             }
 
@@ -77646,7 +77697,11 @@
                 if (void 0 !== m) {
                     let n = (0, l.computeAllowedForChannel)(m.permissions, t, null == t ? void 0 : t.guild_id),
                         i = (0, l.computeAllowedForUser)(m.permissions, f.guild_id, S, h, A);
-                    if ((0, l.hasAccess)(e, c, i, n, m.botId) === l.HasAccessResult.ALLOWED) return !1
+                    if ((0, l.hasAccess)(e, c, {
+                            applicationAllowedForUser: i,
+                            applicationAllowedForChannel: n,
+                            commandBotId: m.botId
+                        }) === l.HasAccessResult.ALLOWED) return !1
                 }
                 let N = null === (_ = E.result) || void 0 === _ ? void 0 : null === (d = _.sections[e.applicationId]) || void 0 === d ? void 0 : d.commands;
                 return null != N && e.id in N
@@ -78364,7 +78419,8 @@
                     O = o.default.isViewingRoles(T),
                     {
                         computedPermissions: C,
-                        hasBaseAccessPermissions: R
+                        hasBaseAccessPermissions: R,
+                        hasSendMessagesPermission: g
                     } = A(E);
                 return {
                     context: E,
@@ -78374,6 +78430,7 @@
                     commandType: t,
                     computedPermissions: C,
                     hasBaseAccessPermissions: R,
+                    hasSendMessagesPermission: g,
                     allowNsfw: h(E, m, f)
                 }
             }
@@ -78401,7 +78458,8 @@
                 return i.useMemo(() => {
                     let {
                         computedPermissions: e,
-                        hasBaseAccessPermissions: i
+                        hasBaseAccessPermissions: i,
+                        hasSendMessagesPermission: r
                     } = A(n);
                     return {
                         context: n,
@@ -78411,6 +78469,7 @@
                         isImpersonating: S,
                         computedPermissions: e,
                         hasBaseAccessPermissions: i,
+                        hasSendMessagesPermission: r,
                         allowNsfw: h(n, T, a)
                     }
                 }, [t, n, S, f, E, T, a])
@@ -78424,12 +78483,14 @@
                 let t;
                 if (e instanceof u.ChannelRecordBase && e.isPrivate()) return {
                     computedPermissions: r.deserialize(0),
-                    hasBaseAccessPermissions: !0
+                    hasBaseAccessPermissions: !0,
+                    hasSendMessagesPermission: !0
                 };
                 let n = E.default.computePermissions(e);
                 return t = !!r.has(n, T.Permissions.ADMINISTRATOR) || (e instanceof u.ChannelRecordBase ? r.has(n, T.Permissions.VIEW_CHANNEL) && r.has(n, T.Permissions.USE_APPLICATION_COMMANDS) : r.has(n, T.Permissions.VIEW_CHANNEL)), {
                     computedPermissions: n,
-                    hasBaseAccessPermissions: t
+                    hasBaseAccessPermissions: t,
+                    hasSendMessagesPermission: r.has(n, T.Permissions.SEND_MESSAGES)
                 }
             }
 
@@ -78448,114 +78509,121 @@
                     return i
                 },
                 computeAllowedForChannel: function() {
-                    return m
-                },
-                computeAllowedForUser: function() {
                     return N
                 },
+                computeAllowedForUser: function() {
+                    return p
+                },
                 hasAccess: function() {
-                    return S
+                    return h
                 }
             }), n("47120");
             var i, r, s = n("512722"),
                 a = n.n(s),
-                o = n("149765"),
-                l = n("911969"),
-                u = n("399860"),
-                d = n("131704"),
-                _ = n("430824"),
-                c = n("895924"),
-                E = n("581364"),
-                I = n("807169"),
-                T = n("689079"),
-                f = n("981631");
+                o = n("373793"),
+                l = n("149765"),
+                u = n("911969"),
+                d = n("399860"),
+                _ = n("131704"),
+                c = n("430824"),
+                E = n("895924"),
+                I = n("581364"),
+                T = n("807169"),
+                f = n("689079"),
+                S = n("981631");
 
-            function S(e, t, n, i, r) {
+            function h(e, t, n) {
                 let {
-                    context: s,
-                    commandType: u,
-                    allowNsfw: S,
-                    computedPermissions: h,
-                    userId: A,
-                    roleIds: p,
-                    isImpersonating: O,
-                    hasBaseAccessPermissions: C
-                } = t;
-                if (e.type !== u) return 2;
-                if (e.nsfw && !S) return 1;
-                let R = (0, I.computeCommandContextType)(s, r);
+                    context: i,
+                    commandType: r,
+                    allowNsfw: s,
+                    computedPermissions: d,
+                    userId: h,
+                    roleIds: A,
+                    isImpersonating: m,
+                    hasBaseAccessPermissions: O,
+                    hasSendMessagesPermission: C
+                } = t, {
+                    applicationAllowedForUser: R,
+                    applicationAllowedForChannel: g,
+                    isGuildInstalled: L,
+                    commandBotId: v
+                } = n;
+                if (e.type !== r) return 2;
+                if (e.nsfw && !s) return 1;
+                let D = (0, T.computeCommandContextType)(i, v);
                 if (null != e.contexts) {
-                    if (!e.contexts.includes(R)) return 4
-                } else if (e.inputType === c.ApplicationCommandInputType.BOT && (!1 === e.dmPermission && R === l.InteractionContextType.BOT_DM || R === l.InteractionContextType.PRIVATE_CHANNEL)) return 4;
-                if (null != e.predicate && s instanceof d.ChannelRecordBase) {
-                    let t = _.default.getGuild(s.guild_id);
+                    if (!e.contexts.includes(D)) return 4
+                } else if (e.inputType === E.ApplicationCommandInputType.BOT && (!1 === e.dmPermission && D === u.InteractionContextType.BOT_DM || D === u.InteractionContextType.PRIVATE_CHANNEL)) return 4;
+                if (null != e.predicate && i instanceof _.ChannelRecordBase) {
+                    let t = c.default.getGuild(i.guild_id);
                     if (!e.predicate({
-                            channel: s,
+                            channel: i,
                             guild: t
                         })) return 3
                 }
-                if (e.applicationId === T.BuiltInSectionId.BUILT_IN) return 0;
-                let g = (0, I.getContextGuildId)(s);
-                if (null == g || o.has(h, f.Permissions.ADMINISTRATOR)) return 0;
-                if (!C) return 5;
-                if (s instanceof d.ChannelRecordBase) {
-                    a()(void 0 !== i, "missing applicationAllowedForChannel");
-                    let t = m(e.permissions, s, g);
+                if (e.applicationId === f.BuiltInSectionId.BUILT_IN) return 0;
+                let M = (0, T.getContextGuildId)(i);
+                if (null == M || l.has(d, S.Permissions.ADMINISTRATOR)) return 0;
+                if (!O || !C && L && (null == e.integration_types || e.integration_types.includes(o.ApplicationIntegrationType.GUILD_INSTALL))) return 5;
+                if (i instanceof _.ChannelRecordBase) {
+                    a()(void 0 !== g, "missing applicationAllowedForChannel");
+                    let t = N(e.permissions, i, M);
                     if (function(e) {
                             return !1 === e
                         }(t) || ! function(e) {
                             return !0 === e
                         }(t) && function(e) {
                             return !1 === e
-                        }(i)) return 6
+                        }(g)) return 6
                 }
-                let L = N(e.permissions, g, A, p, O);
+                let y = p(e.permissions, M, h, A, m);
                 return function(e) {
                     return !0 === e
-                }(L) ? 0 : function(e) {
+                }(y) ? 0 : function(e) {
                     return !1 === e
-                }(L) ? 7 : function(e) {
+                }(y) ? 7 : function(e) {
                     return !1 === e
-                }(n) || null != e.defaultMemberPermissions && !(!o.equals(e.defaultMemberPermissions, E.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && o.has(h, e.defaultMemberPermissions)) ? 7 : 0
-            }
-
-            function h(e) {
-                return !0 === e
+                }(R) || null != e.defaultMemberPermissions && !(!l.equals(e.defaultMemberPermissions, I.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && l.has(d, e.defaultMemberPermissions)) ? 7 : 0
             }
 
             function A(e) {
+                return !0 === e
+            }
+
+            function m(e) {
                 return !1 === e
             }
 
-            function m(e, t, n) {
+            function N(e, t, n) {
                 if (null == e) return null;
                 let i = t.id;
                 if (t.isThread()) {
                     var r;
                     i = null !== (r = t.parent_id) && void 0 !== r ? r : t.id
                 }
-                let s = e[(0, u.toPermissionKey)(i, c.ApplicationCommandPermissionType.CHANNEL)];
+                let s = e[(0, d.toPermissionKey)(i, E.ApplicationCommandPermissionType.CHANNEL)];
                 if (null != s) return s.permission;
-                let a = e[(0, u.toPermissionKey)((0, E.allChannelsSentinel)(n), c.ApplicationCommandPermissionType.CHANNEL)];
+                let a = e[(0, d.toPermissionKey)((0, I.allChannelsSentinel)(n), E.ApplicationCommandPermissionType.CHANNEL)];
                 return null != a ? a.permission : null
             }
 
-            function N(e, t, n, i, r) {
+            function p(e, t, n, i, r) {
                 if (null == e) return null;
                 if (!r) {
-                    let t = e[(0, u.toPermissionKey)(n, c.ApplicationCommandPermissionType.USER)];
+                    let t = e[(0, d.toPermissionKey)(n, E.ApplicationCommandPermissionType.USER)];
                     if (null != t) return t.permission
                 }
                 let s = !1;
                 for (let t of i) {
-                    let n = e[(0, u.toPermissionKey)(t, c.ApplicationCommandPermissionType.ROLE)];
+                    let n = e[(0, d.toPermissionKey)(t, E.ApplicationCommandPermissionType.ROLE)];
                     if (null != n) {
                         if (n.permission) return !0;
                         s = !0
                     }
                 }
                 if (s) return !1;
-                let a = e[(0, u.toPermissionKey)(t, c.ApplicationCommandPermissionType.ROLE)];
+                let a = e[(0, d.toPermissionKey)(t, E.ApplicationCommandPermissionType.ROLE)];
                 return null != a ? a.permission : null
             }(r = i || (i = {}))[r.ALLOWED = 0] = "ALLOWED", r[r.NSFW_NOT_ALLOWED = 1] = "NSFW_NOT_ALLOWED", r[r.WRONG_COMMAND_TYPE = 2] = "WRONG_COMMAND_TYPE", r[r.PREDICATE_FAILED = 3] = "PREDICATE_FAILED", r[r.CONTEXT_NOT_ALLOWED = 4] = "CONTEXT_NOT_ALLOWED", r[r.MISSING_BASE_PERMISSIONS = 5] = "MISSING_BASE_PERMISSIONS", r[r.CHANNEL_DENIED = 6] = "CHANNEL_DENIED", r[r.USER_DENIED = 7] = "USER_DENIED"
         },
@@ -86326,6 +86394,9 @@
                 },
                 default: function() {
                     return L
+                },
+                sortKey: function() {
+                    return g
                 }
             }), n("47120"), n("724458"), n("653041");
             var i, r, s = n("392711"),
@@ -88757,8 +88828,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298544", "298544"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298544")), t = 0), t
+                let t = parseInt((e = "298863", "298863"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298863")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111416,20 +111487,23 @@
         335131: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                areRequestOptionsEqual: function() {
+                    return T
+                },
                 claimPremiumCollectiblesProduct: function() {
-                    return S
+                    return A
                 },
                 closeCollectiblesShop: function() {
                     return c
                 },
                 fetchCollectiblesCategories: function() {
-                    return I
-                },
-                fetchCollectiblesProduct: function() {
                     return f
                 },
+                fetchCollectiblesProduct: function() {
+                    return h
+                },
                 fetchCollectiblesPurchases: function() {
-                    return T
+                    return S
                 },
                 openCollectiblesShop: function() {
                     return _
@@ -111438,10 +111512,10 @@
                     return E
                 },
                 setCollectiblesCategoryItemsViewed: function() {
-                    return A
+                    return N
                 },
                 validateCollectiblesRecipient: function() {
-                    return h
+                    return m
                 }
             });
             var i = n("544891"),
@@ -111475,9 +111549,12 @@
                         item: e
                     })
                 },
-                I = async e => {
+                I = (e, t) => !!e == !!t,
+                T = (e, t) => I(null == e ? void 0 : e.noCache, null == t ? void 0 : t.noCache) && I(null == e ? void 0 : e.includeUnpublished, null == t ? void 0 : t.includeUnpublished) && I(null == e ? void 0 : e.includeBundles, null == t ? void 0 : t.includeBundles) && (null == e ? void 0 : e.countryCode) === (null == t ? void 0 : t.countryCode) && (null == e ? void 0 : e.paymentGateway) === (null == t ? void 0 : t.paymentGateway),
+                f = async e => {
                     r.default.dispatch({
-                        type: "COLLECTIBLES_CATEGORIES_FETCH"
+                        type: "COLLECTIBLES_CATEGORIES_FETCH",
+                        options: null != e ? e : {}
                     });
                     let t = {};
                     null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), !0 === e.includeBundles && (t.include_bundles = !0), null != e.countryCode && (t.country_code = e.countryCode), null !== e.paymentGateway && (t.payment_gateway = e.paymentGateway));
@@ -111496,7 +111573,7 @@
                             error: e
                         }), new a.APIError(e)
                     }
-                }, T = async () => {
+                }, S = async () => {
                     r.default.dispatch({
                         type: "COLLECTIBLES_PURCHASES_FETCH"
                     });
@@ -111512,7 +111589,7 @@
                             error: e
                         }), new a.APIError(e)
                     }
-                }, f = async (e, t) => {
+                }, h = async (e, t) => {
                     r.default.dispatch({
                         type: "COLLECTIBLES_PRODUCT_FETCH",
                         skuId: e
@@ -111536,7 +111613,7 @@
                             error: t
                         }), new a.APIError(t)
                     }
-                }, S = async e => {
+                }, A = async e => {
                     r.default.dispatch({
                         type: "COLLECTIBLES_CLAIM",
                         skuId: e
@@ -111561,7 +111638,7 @@
                             error: t
                         }), new a.APIError(t)
                     }
-                }, h = async (e, t) => {
+                }, m = async (e, t) => {
                     try {
                         return (await i.HTTP.get({
                             url: d.Endpoints.COLLECTIBLES_VALID_GIFT_RECIPIENT,
@@ -111573,7 +111650,7 @@
                     } catch (e) {
                         throw new a.APIError(e)
                     }
-                }, A = e => {
+                }, N = e => {
                     r.default.dispatch({
                         type: "COLLECTIBLES_CATEGORY_ITEMS_VIEWED",
                         ...e
@@ -111595,12 +111672,13 @@
                 S = T,
                 h = !1,
                 A = new Set;
-            let m = () => {
-                f = I, S = T, r = void 0, h = !1, A = new Set, i = void 0
-            };
-            class N extends(s = d.default.Store) {
+            let m = {},
+                N = () => {
+                    f = I, S = T, r = void 0, h = !1, A = new Set, i = void 0, m = {}
+                };
+            class p extends(s = d.default.Store) {
                 initialize() {
-                    this.syncWith([c.default], m)
+                    this.syncWith([c.default], N)
                 }
                 get isFetchingCategories() {
                     return h
@@ -111611,8 +111689,11 @@
                 get error() {
                     return i
                 }
-                get lastFetched() {
+                get lastSuccessfulFetch() {
                     return r
+                }
+                get lastFetchOptions() {
+                    return m
                 }
                 get categories() {
                     return f
@@ -111631,14 +111712,14 @@
                     return this.getCategory(null == t ? void 0 : t.categorySkuId)
                 }
             }
-            l = "CollectiblesCategoryStore", (o = "displayName") in(a = N) ? Object.defineProperty(a, o, {
+            l = "CollectiblesCategoryStore", (o = "displayName") in(a = p) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new N(_.default, {
+            }) : a[o] = l, t.default = new p(_.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
-                    h = !0, i = void 0
+                    h = !0, i = void 0, m = e.options
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
                     0 === e.categories.length ? (f = I, S = T) : !(0, u.isEqual)([...f.values()], e.categories) && (f = new Map(e.categories.map(e => [e.skuId, e])), S = new Map((0, E.getProductsFromCategories)(f).map(e => [e.skuId, e]))), r = Date.now(), h = !1, i = void 0
@@ -111669,7 +111750,7 @@
                     } = e;
                     (A = new Set(A)).delete(t), i = n
                 },
-                LOGOUT: m
+                LOGOUT: N
             })
         },
         337679: function(e, t, n) {
@@ -112223,25 +112304,26 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return I
                 },
                 useFetchPurchases: function() {
-                    return c
+                    return E
                 },
                 useMaybeFetchCollectiblesCategories: function() {
-                    return _
+                    return c
                 }
             }), n("47120");
             var i = n("470079"),
                 r = n("399606"),
                 s = n("634894"),
-                a = n("335131"),
-                o = n("597688"),
-                l = n("337679"),
-                u = n("1870"),
-                d = n("617452");
+                a = n("828695"),
+                o = n("335131"),
+                l = n("597688"),
+                u = n("337679"),
+                d = n("1870"),
+                _ = n("617452");
 
-            function _(e) {
+            function c(e) {
                 let t = "useMaybeFetchCollectiblesCategories";
                 (0, s.useTriggerDebuggingAA)({
                     location: t + " auto on",
@@ -112250,24 +112332,29 @@
                     location: t + " auto off",
                     autoTrackExposure: !1
                 });
-                let n = (0, d.useShopBundleEnabled)("useMaybeFetchCollectiblesCategories"),
-                    [l, u, _, c] = (0, r.useStateFromStoresArray)([o.default], () => {
+                let n = (0, r.useStateFromStores)([a.default], () => a.default.hasLoadedExperiments),
+                    u = (0, _.useShopBundleEnabled)("useMaybeFetchCollectiblesCategories"),
+                    [d, c, E, I, T] = (0, r.useStateFromStoresArray)([l.default], () => {
                         var e;
-                        return [o.default.isFetchingCategories, o.default.error, null !== (e = o.default.lastFetched) && void 0 !== e ? e : 0, o.default.categories]
+                        return [l.default.isFetchingCategories, l.default.lastFetchOptions, l.default.error, null !== (e = l.default.lastSuccessfulFetch) && void 0 !== e ? e : 0, l.default.categories]
                     });
                 return (0, i.useEffect)(() => {
-                    !(l || u || Date.now() - _ < 6e5) && (0, a.fetchCollectiblesCategories)({
-                        ...e,
-                        includeBundles: n
-                    })
-                }, [l, _, u, e, n]), {
-                    isFetching: l,
-                    categories: c,
-                    error: u
+                    if (!n || d || E) return;
+                    let t = {
+                            ...e,
+                            includeBundles: u
+                        },
+                        i = !(0, o.areRequestOptionsEqual)(c, t),
+                        r = Date.now() - I < 6e5;
+                    (i || !r) && (0, o.fetchCollectiblesCategories)(t)
+                }, [n, d, c, I, e, E, u]), {
+                    isFetching: d,
+                    categories: T,
+                    error: E
                 }
             }
 
-            function c() {
+            function E() {
                 let e = "useFetchPurchases";
                 (0, s.useTriggerDebuggingAA)({
                     location: e + " auto on",
@@ -112276,23 +112363,23 @@
                     location: e + " auto off",
                     autoTrackExposure: !1
                 });
-                let [t, n, o, d, _] = (0, r.useStateFromStoresArray)([u.default], () => [u.default.isFetching, u.default.isClaiming, u.default.fetchError, u.default.claimError, u.default.purchases]), {
+                let [t, n, a, l, _] = (0, r.useStateFromStoresArray)([d.default], () => [d.default.isFetching, d.default.isClaiming, d.default.fetchError, d.default.claimError, d.default.purchases]), {
                     shouldFakePurchaseSuccessFlowLocally: c
-                } = (0, l.default)({
+                } = (0, u.default)({
                     location: "useFetchPurchases"
                 });
                 return (0, i.useEffect)(() => {
-                    (!c || !(_.size > 0)) && (0, a.fetchCollectiblesPurchases)()
+                    (!c || !(_.size > 0)) && (0, o.fetchCollectiblesPurchases)()
                 }, [c]), {
                     isClaiming: n,
-                    fetchError: o,
-                    claimError: d,
+                    fetchError: a,
+                    claimError: l,
                     isFetching: t,
                     purchases: _
                 }
             }
 
-            function E(e) {
+            function I(e) {
                 var t;
                 let n = "useFetchCollectiblesCategoriesAndPurchases";
                 (0, s.useTriggerDebuggingAA)({
@@ -112306,20 +112393,20 @@
                     isFetching: i,
                     categories: r,
                     error: a
-                } = _(e), {
+                } = c(e), {
                     isClaiming: o,
                     fetchError: l,
                     claimError: u,
                     isFetching: d,
-                    purchases: E
-                } = c();
+                    purchases: _
+                } = E();
                 return {
                     isFetching: i || d,
                     isFetchingCategories: i,
                     isFetchingPurchases: d,
                     isClaiming: o,
                     categories: r,
-                    purchases: E,
+                    purchases: _,
                     error: null !== (t = null != a ? a : l) && void 0 !== t ? t : u
                 }
             }
@@ -116869,8 +116956,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298544",
-                    versionHash: "3e1b662440e76657a2c2b3a931c36317a9d4c9c8"
+                    buildNumber: "298863",
+                    versionHash: "fe3cc56b9b4dd398236e31e33d7458be27f8d3ca"
                 }
             }
             n.r(t), n.d(t, {
@@ -121222,77 +121309,69 @@
                 u = n("2052"),
                 d = n("906732"),
                 _ = n("963249"),
-                c = n("348121"),
-                E = n("672752"),
-                I = n("465670"),
-                T = n("466111"),
-                f = n("626135"),
-                S = n("74538"),
-                h = n("981631"),
-                A = n("474936"),
-                m = n("689938"),
-                N = n("356623");
+                c = n("672752"),
+                E = n("465670"),
+                I = n("466111"),
+                T = n("626135"),
+                f = n("74538"),
+                S = n("981631"),
+                h = n("474936"),
+                A = n("689938"),
+                m = n("356623");
             t.default = function(e) {
                 let {
-                    bodyCopy: t = m.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_BODY,
+                    bodyCopy: t = A.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_BODY,
                     className: n,
                     onDismiss: s,
-                    onCtaClick: p
+                    onCtaClick: N
                 } = e, {
-                    location: O
+                    location: p
                 } = (0, u.useAnalyticsContext)(), {
-                    analyticsLocations: C
-                } = (0, d.default)(), {
-                    isLoading: R,
-                    suggestedPremiumType: g
-                } = (0, c.default)(), L = r.useRef(!1), v = r.useCallback(() => {
+                    analyticsLocations: O
+                } = (0, d.default)(), C = r.useRef(!1), R = r.useCallback(() => {
                     (0, _.default)({
-                        subscriptionTier: S.default.getSkuIdForPremiumType(g),
-                        analyticsLocations: C,
+                        subscriptionTier: f.default.getSkuIdForPremiumType(h.PremiumTypes.TIER_2),
+                        analyticsLocations: O,
                         analyticsObject: {
-                            ...O,
-                            object: h.AnalyticsObjects.BUTTON_CTA,
-                            objectType: h.AnalyticsObjectTypes.TIER_2
+                            ...p,
+                            object: S.AnalyticsObjects.BUTTON_CTA,
+                            objectType: S.AnalyticsObjectTypes.TIER_2
                         }
-                    }), null == p || p()
-                }, [C, O, p, g]), D = g === A.PremiumTypes.TIER_0;
+                    }), null == N || N()
+                }, [O, p, N]);
                 return (0, i.jsx)("div", {
-                    className: a()(N.wrapper, n),
-                    children: R ? (0, i.jsx)(l.Spinner, {
-                        type: l.SpinnerTypes.PULSING_ELLIPSIS
-                    }) : (0, i.jsx)(o.VisibilitySensor, {
+                    className: a()(m.wrapper, n),
+                    children: (0, i.jsx)(o.VisibilitySensor, {
                         onChange: e => {
-                            e && !L.current && (f.default.track(h.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
-                                type: A.PremiumUpsellTypes.EMOJI_PICKER_SEARCH,
-                                location: O,
-                                location_stack: C,
-                                sku_id: S.default.getSkuIdForPremiumType(g)
-                            }), L.current = !0)
+                            e && !C.current && (T.default.track(S.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
+                                type: h.PremiumUpsellTypes.EMOJI_PICKER_SEARCH,
+                                location: p,
+                                location_stack: O,
+                                sku_id: f.default.getSkuIdForPremiumType(h.PremiumTypes.TIER_2)
+                            }), C.current = !0)
                         },
                         children: (0, i.jsxs)("div", {
-                            className: N.upsell,
-                            children: [(0, i.jsx)(T.default, {
-                                color: D ? E.GradientCssUrls.PREMIUM_TIER_0 : E.GradientCssUrls.PREMIUM_TIER_2,
-                                className: N.premiumIcon
+                            className: m.upsell,
+                            children: [(0, i.jsx)(I.default, {
+                                color: c.GradientCssUrls.PREMIUM_TIER_2,
+                                className: m.premiumIcon
                             }), (0, i.jsx)(l.Text, {
                                 color: "interactive-normal",
-                                className: N.body,
+                                className: m.body,
                                 variant: "text-sm/normal",
-                                children: D ? m.default.Messages.EMOJI_PICKER_PREMIUM_TIER_0_UPSELL_BODY.format({
-                                    planName: (0, S.getTierDisplayName)(A.SubscriptionPlans.PREMIUM_MONTH_TIER_0)
-                                }) : t
+                                children: t
                             }), (0, i.jsx)(l.Button, {
                                 look: l.Button.Looks.LINK,
                                 color: l.Button.Colors.LINK,
-                                onClick: v,
-                                children: D ? m.default.Messages.PREMIUM_SETTINGS_GET_TIER_0 : m.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_CTA
+                                onClick: R,
+                                children: A.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_CTA
                             }), null != s && (0, i.jsx)(l.Button, {
                                 onClick: s,
-                                className: N.dismissButton,
+                                className: m.dismissButton,
                                 look: l.Button.Looks.BLANK,
                                 size: l.Button.Sizes.ICON,
-                                children: (0, i.jsx)(I.default, {
-                                    className: N.dismissIcon
+                                children: (0, i.jsx)(E.default, {
+                                    className: m.dismissIcon
                                 })
                             })]
                         })
@@ -122357,113 +122436,98 @@
                 _ = n("906732"),
                 c = n("28546"),
                 E = n("98278"),
-                I = n("348121"),
-                T = n("104494"),
-                f = n("639119"),
-                S = n("165583"),
-                h = n("197115"),
-                A = n("626135"),
-                m = n("176354"),
-                N = n("74538"),
-                p = n("543241"),
-                O = n("149203"),
-                C = n("981631"),
-                R = n("185923"),
-                g = n("474936"),
-                L = n("689938"),
-                v = n("369454");
+                I = n("104494"),
+                T = n("639119"),
+                f = n("165583"),
+                S = n("197115"),
+                h = n("626135"),
+                A = n("176354"),
+                m = n("74538"),
+                N = n("543241"),
+                p = n("149203"),
+                O = n("981631"),
+                C = n("185923"),
+                R = n("474936"),
+                g = n("689938"),
+                L = n("369454");
             t.default = e => {
-                var t, s, D;
+                var t, s;
                 let {
-                    onLearnMore: M,
-                    onClose: y,
-                    channel: P,
-                    emojiDescriptor: U,
-                    pickerIntention: b,
-                    analyticsLocation: G
-                } = e, w = (0, u.default)(), [k, B] = r.useState(!1), V = () => {
-                    (0, p.trackPremiumSettingsPaneOpened)(P), (0, E.navigateToPremiumMarketingPage)(), M()
-                }, x = (0, o.isThemeLight)(w) ? n("537381") : n("341048"), F = (0, f.usePremiumTrialOffer)(), H = (0, T.usePremiumDiscountOffer)(), Y = null != F || null != H, {
-                    isLoading: j,
-                    suggestedPremiumType: W
-                } = (0, I.default)(), K = (0, c.useExpressionPickerStore)(e => e.searchQuery), {
-                    analyticsLocations: z
-                } = (0, _.default)(d.default.EMOJI_PICKER), Z = null == F ? void 0 : null === (t = F.subscription_trial) || void 0 === t ? void 0 : t.sku_id, X = null != Z ? Z === g.PremiumSubscriptionSKUs.TIER_0 : W === g.PremiumTypes.TIER_0;
+                    onLearnMore: v,
+                    onClose: D,
+                    channel: M,
+                    emojiDescriptor: y,
+                    pickerIntention: P,
+                    analyticsLocation: U
+                } = e, b = (0, u.default)(), [G, w] = r.useState(!1), k = () => {
+                    (0, N.trackPremiumSettingsPaneOpened)(M), (0, E.navigateToPremiumMarketingPage)(), v()
+                }, B = (0, o.isThemeLight)(b) ? n("537381") : n("341048"), V = (0, T.usePremiumTrialOffer)(), x = (0, I.usePremiumDiscountOffer)(), F = null != V || null != x, H = (0, c.useExpressionPickerStore)(e => e.searchQuery), {
+                    analyticsLocations: Y
+                } = (0, _.default)(d.default.EMOJI_PICKER);
                 return r.useEffect(() => {
-                    if (!j) {
-                        let e;
-                        e = b === R.EmojiIntention.REACTION ? g.PremiumUpsellTypes.EMOJI_PICKER_REACTION_EMOJI_CLICKED : U.subCategory === O.EmojiSubCategory.TOP_GUILD_EMOJI ? g.PremiumUpsellTypes.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : U.subCategory === O.EmojiSubCategory.NEWLY_ADDED_EMOJI ? g.PremiumUpsellTypes.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : g.PremiumUpsellTypes.EMOJI_PICKER_EMOJI_CLICKED;
-                        let t = U.emoji;
-                        A.default.track(C.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
-                            type: e,
-                            is_animated: t.animated,
-                            is_external: !m.default.isInternalEmojiForGuildId(t, null == P ? void 0 : P.getGuildId()),
-                            has_search_query: null != K && "" !== K,
-                            location: {
-                                ...G,
-                                object: C.AnalyticsObjects.EMOJI
-                            },
-                            location_stack: z,
-                            sku_id: (0, N.castPremiumSubscriptionAsSkuId)(N.default.getSkuIdForPremiumType(W))
-                        })
-                    }
-                }, [j, W, U, P, G, z, b, K]), (0, i.jsxs)("div", {
-                    className: a()(v.premiumPromo, {
-                        [v.unifyTrialUpsell]: Y
+                    let e;
+                    e = P === C.EmojiIntention.REACTION ? R.PremiumUpsellTypes.EMOJI_PICKER_REACTION_EMOJI_CLICKED : y.subCategory === p.EmojiSubCategory.TOP_GUILD_EMOJI ? R.PremiumUpsellTypes.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : y.subCategory === p.EmojiSubCategory.NEWLY_ADDED_EMOJI ? R.PremiumUpsellTypes.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : R.PremiumUpsellTypes.EMOJI_PICKER_EMOJI_CLICKED;
+                    let t = y.emoji;
+                    h.default.track(O.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
+                        type: e,
+                        is_animated: t.animated,
+                        is_external: !A.default.isInternalEmojiForGuildId(t, null == M ? void 0 : M.getGuildId()),
+                        has_search_query: null != H && "" !== H,
+                        location: {
+                            ...U,
+                            object: O.AnalyticsObjects.EMOJI
+                        },
+                        location_stack: Y,
+                        sku_id: (0, m.castPremiumSubscriptionAsSkuId)(m.default.getSkuIdForPremiumType(R.PremiumTypes.TIER_2))
+                    })
+                }, [y, M, U, Y, P, H]), (0, i.jsxs)("div", {
+                    className: a()(L.premiumPromo, {
+                        [L.unifyTrialUpsell]: F
                     }),
                     children: [(0, i.jsx)(l.Clickable, {
-                        className: v.premiumPromoClose,
-                        onClick: y,
-                        children: L.default.Messages.CLOSE
-                    }), j ? (0, i.jsx)(l.Spinner, {}) : (0, i.jsxs)(i.Fragment, {
-                        children: [Y ? (0, i.jsx)(S.default, {
-                            type: g.PremiumUpsellTypes.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI,
-                            subscriptionTier: null !== (D = null == F ? void 0 : null === (s = F.subscription_trial) || void 0 === s ? void 0 : s.sku_id) && void 0 !== D ? D : g.PremiumSubscriptionSKUs.TIER_2,
-                            onClose: y,
-                            trialOffer: F,
-                            discountOffer: H,
-                            children: X ? L.default.Messages.PREMIUM_PROMO_DESCRIPTION_SEARCH_TIER_UPSELL.format({
-                                planName: (0, N.getTierDisplayName)(g.SubscriptionPlans.PREMIUM_MONTH_TIER_0),
-                                onClick: V
-                            }) : L.default.Messages.PREMIUM_PROMO_DESCRIPTION_SEARCH_UPSELL.format({
-                                onClick: V
+                        className: L.premiumPromoClose,
+                        onClick: D,
+                        children: g.default.Messages.CLOSE
+                    }), (0, i.jsxs)(i.Fragment, {
+                        children: [F ? (0, i.jsx)(f.default, {
+                            type: R.PremiumUpsellTypes.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI,
+                            subscriptionTier: null !== (s = null == V ? void 0 : null === (t = V.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== s ? s : R.PremiumSubscriptionSKUs.TIER_2,
+                            onClose: D,
+                            trialOffer: V,
+                            discountOffer: x,
+                            children: g.default.Messages.PREMIUM_PROMO_DESCRIPTION_SEARCH_UPSELL.format({
+                                onClick: k
                             })
                         }) : (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("img", {
                                 alt: "",
-                                className: v.premiumPromoImage,
-                                src: x
+                                className: L.premiumPromoImage,
+                                src: B
                             }), (0, i.jsx)("div", {
-                                className: v.premiumPromoTitle,
-                                children: L.default.Messages.PREMIUM_PROMO_TITLE_SEARCH_UPSELL
+                                className: L.premiumPromoTitle,
+                                children: g.default.Messages.PREMIUM_PROMO_TITLE_SEARCH_UPSELL
                             }), (0, i.jsx)("div", {
-                                className: v.premiumPromoDescription,
-                                children: X ? L.default.Messages.PREMIUM_PROMO_DESCRIPTION_SEARCH_TIER_UPSELL.format({
-                                    planName: (0, N.getTierDisplayName)(g.SubscriptionPlans.PREMIUM_MONTH_TIER_0),
-                                    onClick: V
-                                }) : L.default.Messages.PREMIUM_PROMO_DESCRIPTION_SEARCH_UPSELL.format({
-                                    onClick: V
+                                className: L.premiumPromoDescription,
+                                children: g.default.Messages.PREMIUM_PROMO_DESCRIPTION_SEARCH_UPSELL.format({
+                                    onClick: k
                                 })
                             })]
-                        }), !Y && (0, i.jsx)(h.default, {
-                            subscriptionTier: X ? g.PremiumSubscriptionSKUs.TIER_0 : g.PremiumSubscriptionSKUs.TIER_2,
-                            submitting: k,
+                        }), !F && (0, i.jsx)(S.default, {
+                            subscriptionTier: R.PremiumSubscriptionSKUs.TIER_2,
+                            submitting: G,
                             premiumModalAnalyticsLocation: {
-                                section: C.AnalyticsSections.EMOJI_PICKER_POPOUT,
-                                object: C.AnalyticsObjects.BUTTON_CTA
+                                section: O.AnalyticsSections.EMOJI_PICKER_POPOUT,
+                                object: O.AnalyticsObjects.BUTTON_CTA
                             },
                             size: l.Button.Sizes.SMALL,
                             color: l.Button.Colors.GREEN,
                             onClick: () => {
-                                B(!0)
+                                w(!0)
                             },
                             onSubscribeModalClose: e => {
-                                B(!1), e && y()
+                                w(!1), e && D()
                             },
-                            buttonText: (() => {
-                                if (Y) return X ? L.default.Messages.PREMIUM_TRIAL_TIER_0_CTA_BUTTON_VARIANT : L.default.Messages.PREMIUM_TRIAL_CTA_BUTTON_VARIANT;
-                                return X ? L.default.Messages.PREMIUM_SETTINGS_GET_TIER_0 : L.default.Messages.PREMIUM_REQUIRED_GET_NITRO
-                            })()
+                            buttonText: F ? g.default.Messages.PREMIUM_TRIAL_CTA_BUTTON_VARIANT : g.default.Messages.PREMIUM_REQUIRED_GET_NITRO
                         })]
                     })]
                 })
@@ -131272,6 +131336,9 @@
             n.r(t), n.d(t, {
                 default: function() {
                     return r
+                },
+                isForwardServerMessage: function() {
+                    return s
                 }
             });
             var i = n("981631");
@@ -131279,6 +131346,11 @@
             function r(e) {
                 var t;
                 return (null === (t = e.messageReference) || void 0 === t ? void 0 : t.type) === i.MessageReferenceTypes.FORWARD
+            }
+
+            function s(e) {
+                var t;
+                return (null === (t = e.message_reference) || void 0 === t ? void 0 : t.type) === i.MessageReferenceTypes.FORWARD
             }
         },
         39154: function(e, t, n) {
@@ -136977,6 +137049,11 @@
                 x({
                     type: "NOTIFICATION_CENTER_ITEM_COMPLETED",
                     item_enum: e.item_enum
+                })
+            }), k(["QUESTS_USER_STATUS_UPDATE"], e => {
+                x({
+                    type: "QUESTS_USER_STATUS_UPDATE",
+                    user_status: e.user_status
                 })
             }), k(["APPLICATION_COMMAND_PERMISSIONS_UPDATE"], (e, t) => {
                 x({
@@ -162392,58 +162469,60 @@
         316617: function(e, t, n) {
             "use strict";
             n.r(t);
-            var i = n("735250");
-            n("470079");
-            var r = n("442837"),
-                s = n("481060"),
-                a = n("739566"),
-                o = n("25015"),
-                l = n("592125"),
-                u = n("998951"),
-                d = n("113039"),
-                _ = n("778947"),
-                c = n("512665"),
-                E = n("768760"),
-                I = n("689938"),
-                T = n("287889");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("442837"),
+                a = n("481060"),
+                o = n("39154"),
+                l = n("739566"),
+                u = n("25015"),
+                d = n("592125"),
+                _ = n("998951"),
+                c = n("113039"),
+                E = n("778947"),
+                I = n("512665"),
+                T = n("768760"),
+                f = n("689938"),
+                S = n("287889");
             t.default = e => {
                 let {
                     message: t
-                } = e, n = (0, a.default)(t), f = (0, r.useStateFromStores)([l.default], () => l.default.getChannel(t.channel_id)), {
-                    content: S
-                } = (0, o.default)(t, {
+                } = e, n = (0, l.default)(t), h = (0, s.useStateFromStores)([d.default], () => d.default.getChannel(t.channel_id)), A = r.useMemo(() => (0, o.default)(t), [t]), {
+                    content: m
+                } = (0, u.default)(A, {
                     hideSimpleEmbedContent: !1
-                });
-                return null == f ? null : (0, i.jsxs)("div", {
-                    className: T.container,
-                    children: [(0, i.jsx)(s.Heading, {
-                        className: T.header,
+                }), N = r.useCallback(() => {
+                    let {
+                        leadingIcon: e,
+                        trailingIcon: n
+                    } = (0, I.renderSingleLineMessage)(t, m, !1, "", {
+                        leadingIconClass: S.attachmentIcon,
+                        trailingIconClass: S.attachmentIcon,
+                        iconSize: T.SINGLE_LINE_MESSAGE_DEFAULT_ICON_SIZE
+                    }), r = null == m || "" === m || Array.isArray(m) && 0 === m.length;
+                    return (0, i.jsxs)("div", {
+                        className: S.contentContainer,
+                        children: [e, r ? n : (0, i.jsx)(c.default, {
+                            message: t,
+                            content: m
+                        })]
+                    })
+                }, [t, m]);
+                return null == h ? null : (0, i.jsxs)("div", {
+                    className: S.container,
+                    children: [(0, i.jsx)(a.Heading, {
+                        className: S.header,
                         variant: "heading-sm/semibold",
-                        children: I.default.Messages.MOBILE_REPORTS_MESSAGE_PREVIEW_TITLE
-                    }), (0, i.jsx)(s.Scroller, {
-                        className: T.messagePreviewContainer,
-                        children: (0, i.jsx)(u.default, {
-                            childrenMessageContent: (() => {
-                                if (null == S || "" === S || Array.isArray(S) && 0 === S.length) {
-                                    let {
-                                        trailingIcon: e
-                                    } = (0, c.renderSingleLineMessage)(t, S, !1, "", {
-                                        leadingIconClass: T.attachmentIcon,
-                                        trailingIconClass: T.attachmentIcon,
-                                        iconSize: E.SINGLE_LINE_MESSAGE_DEFAULT_ICON_SIZE
-                                    });
-                                    return e
-                                }
-                                return (0, i.jsx)(d.default, {
-                                    message: t,
-                                    content: S
-                                })
-                            })(),
-                            childrenHeader: (0, i.jsx)(_.default, {
+                        children: f.default.Messages.MOBILE_REPORTS_MESSAGE_PREVIEW_TITLE
+                    }), (0, i.jsx)(a.Scroller, {
+                        className: S.messagePreviewContainer,
+                        children: (0, i.jsx)(_.default, {
+                            childrenMessageContent: N(),
+                            childrenHeader: (0, i.jsx)(E.default, {
                                 message: t,
-                                channel: f,
+                                channel: h,
                                 author: n,
-                                guildId: f.guild_id
+                                guildId: h.guild_id
                             }),
                             disableInteraction: !0
                         })
@@ -168258,6 +168337,14 @@
                             canSupportSecureFrames: !0,
                             canSupportMls: !0
                         }
+                    }, {
+                        id: 10,
+                        label: "Can support secure frames above protocol version 112 (MLS)",
+                        config: {
+                            protocolVersionFloor: 12,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
+                        }
                     }]
                 }),
                 s = (0, i.createExperiment)({
@@ -168298,6 +168385,14 @@
                         label: "Can support secure frames above protocol version 111 (MLS)",
                         config: {
                             protocolVersionFloor: 11,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
+                        }
+                    }, {
+                        id: 10,
+                        label: "Can support secure frames above protocol version 112 (MLS)",
+                        config: {
+                            protocolVersionFloor: 12,
                             canSupportSecureFrames: !0,
                             canSupportMls: !0
                         }
@@ -174441,8 +174536,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717460705828",
-                                    build_number: "298544"
+                                    built_at: "1717540388490",
+                                    build_number: "298863"
                                 }
                             },
                             retries: 1
@@ -183775,29 +183870,6 @@
                 }]
             })
         },
-        348121: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return s
-                }
-            });
-            var i = n("639119"),
-                r = n("474936");
-
-            function s() {
-                let e = (0, i.usePremiumTrialOffer)(),
-                    t = r.PremiumTypes.TIER_2;
-                if (null != e) {
-                    let n = e.subscription_trial;
-                    (null == n ? void 0 : n.sku_id) === r.PremiumSubscriptionSKUs.TIER_0 ? t = r.PremiumTypes.TIER_0 : (null == n ? void 0 : n.sku_id) === r.PremiumSubscriptionSKUs.TIER_2 && (t = r.PremiumTypes.TIER_2)
-                }
-                return {
-                    isLoading: !1,
-                    suggestedPremiumType: t
-                }
-            }
-        },
         847903: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -187050,7 +187122,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return A
                 }
             });
             var i = n("735250"),
@@ -187063,82 +187135,65 @@
                 d = n("594174"),
                 _ = n("424218"),
                 c = n("74538"),
-                E = n("348121"),
-                I = n("790527"),
-                T = n("474936"),
-                f = n("981631"),
-                S = n("731994"),
-                h = n("689938"),
-                A = n("241614");
+                E = n("790527"),
+                I = n("474936"),
+                T = n("981631"),
+                f = n("731994"),
+                S = n("689938"),
+                h = n("241614");
 
-            function m(e) {
-                let t, {
-                        onClose: n,
-                        fileSize: s,
-                        ...m
-                    } = e,
-                    N = null != s && T.MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE < s,
-                    {
-                        isLoading: p,
-                        suggestedPremiumType: O
-                    } = (0, E.default)(),
-                    C = !N && O === T.PremiumTypes.TIER_0,
-                    R = (0, o.useStateFromStores)([d.default], () => d.default.getCurrentUser()),
-                    g = (0, i.jsx)(u.default, {
-                        icons: S.DEFAULT_FILE_UPLOAD_ICONS
-                    });
-                t = C ? h.default.Messages.UPLOAD_AREA_PREMIUM_TIER_UPSELL_BODY_LINE_2.format({
-                    premiumPlan: (0, c.getPremiumTypeDisplayName)(T.PremiumTypes.TIER_0),
-                    premiumMaxSize: h.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_0_CORRECTED
-                }) : h.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_2_INCREASE;
-                let L = r.useMemo(() => {
-                        let e = c.default.getUserMaxFileSize(R),
-                            t = (0, _.formatSize)(e / 1024, {
-                                useKibibytes: !0
-                            }),
-                            n = h.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1.format({
+            function A(e) {
+                let {
+                    onClose: t,
+                    ...n
+                } = e, s = (0, o.useStateFromStores)([d.default], () => d.default.getCurrentUser()), A = (0, i.jsx)(u.default, {
+                    icons: f.DEFAULT_FILE_UPLOAD_ICONS
+                }), m = S.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_2_INCREASE, N = r.useMemo(() => {
+                    let e = c.default.getUserMaxFileSize(s),
+                        t = (0, _.formatSize)(e / 1024, {
+                            useKibibytes: !0
+                        }),
+                        n = S.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1.format({
+                            maxSize: t
+                        });
+                    switch (null == s ? void 0 : s.premiumType) {
+                        case I.PremiumTypes.TIER_0:
+                            n = S.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1_PREMIUM_TIER_0.format({
                                 maxSize: t
                             });
-                        switch (null == R ? void 0 : R.premiumType) {
-                            case T.PremiumTypes.TIER_0:
-                                n = h.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1_PREMIUM_TIER_0.format({
-                                    maxSize: t
-                                });
-                                break;
-                            case T.PremiumTypes.TIER_1:
-                                n = h.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1_PREMIUM_TIER_1.format({
-                                    maxSize: t
-                                })
-                        }
-                        return n
-                    }, [R]),
-                    v = (0, i.jsxs)("div", {
-                        className: A.body,
-                        children: [(0, i.jsx)("span", {
-                            children: L
-                        }), (0, i.jsx)(l.Text, {
-                            variant: "text-md/medium",
-                            children: t
-                        })]
-                    });
-                return (0, i.jsx)(I.default, {
-                    artElement: g,
-                    artContainerClassName: a()(A.artContainer),
+                            break;
+                        case I.PremiumTypes.TIER_1:
+                            n = S.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1_PREMIUM_TIER_1.format({
+                                maxSize: t
+                            })
+                    }
+                    return n
+                }, [s]), p = (0, i.jsxs)("div", {
+                    className: h.body,
+                    children: [(0, i.jsx)("span", {
+                        children: N
+                    }), (0, i.jsx)(l.Text, {
+                        variant: "text-md/medium",
+                        children: m
+                    })]
+                });
+                return (0, i.jsx)(E.default, {
+                    artElement: A,
+                    artContainerClassName: a()(h.artContainer),
                     enableArtBoxShadow: !1,
-                    type: T.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL,
-                    title: h.default.Messages.UPLOAD_AREA_TOO_LARGE_TITLE,
-                    body: v,
-                    context: h.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1.format({
-                        maxSize: h.default.Messages.FILE_UPLOAD_LIMIT_NEW_STANDARD
+                    type: I.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL,
+                    title: S.default.Messages.UPLOAD_AREA_TOO_LARGE_TITLE,
+                    body: p,
+                    context: S.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_BODY_LINE_1.format({
+                        maxSize: S.default.Messages.FILE_UPLOAD_LIMIT_NEW_STANDARD
                     }),
-                    glowUp: t,
+                    glowUp: m,
                     analyticsLocation: {
-                        section: f.AnalyticsSections.FILE_UPLOAD_POPOUT
+                        section: T.AnalyticsSections.FILE_UPLOAD_POPOUT
                     },
-                    onClose: n,
-                    subscriptionTier: C ? T.PremiumSubscriptionSKUs.TIER_0 : T.PremiumSubscriptionSKUs.TIER_2,
-                    isLoading: p,
-                    ...m
+                    onClose: t,
+                    subscriptionTier: I.PremiumSubscriptionSKUs.TIER_2,
+                    ...n
                 })
             }
         },
@@ -189684,43 +189739,49 @@
             "use strict";
             n.r(t), n.d(t, {
                 claimQuestReward: function() {
-                    return A
-                },
-                claimQuestRewardCode: function() {
-                    return h
-                },
-                completeQuestPreview: function() {
-                    return O
-                },
-                dismissProgressTrackingFailureNotice: function() {
-                    return p
-                },
-                dismissQuestContent: function() {
                     return N
                 },
-                enrollInQuest: function() {
-                    return S
-                },
-                fetchCurrentQuests: function() {
-                    return T
-                },
-                fetchQuestRewardCode: function() {
+                claimQuestRewardCode: function() {
                     return m
                 },
-                optimisticallyUpdateQuestProgress: function() {
-                    return g
-                },
-                overrideQuestDelivery: function() {
-                    return L
-                },
-                resetQuestDismissibilityStatus: function() {
+                completeQuestPreview: function() {
                     return R
                 },
-                resetQuestPreviewStatus: function() {
+                dismissProgressTrackingFailureNotice: function() {
                     return C
                 },
-                sendHeartbeat: function() {
+                dismissQuestContent: function() {
+                    return O
+                },
+                enrollInQuest: function() {
+                    return A
+                },
+                fetchCurrentQuests: function() {
+                    return S
+                },
+                fetchQuestRewardCode: function() {
+                    return p
+                },
+                manualStartConsoleQuest: function() {
+                    return T
+                },
+                manualStopConsoleQuest: function() {
                     return f
+                },
+                optimisticallyUpdateQuestProgress: function() {
+                    return v
+                },
+                overrideQuestDelivery: function() {
+                    return D
+                },
+                resetQuestDismissibilityStatus: function() {
+                    return L
+                },
+                resetQuestPreviewStatus: function() {
+                    return g
+                },
+                sendHeartbeat: function() {
+                    return h
                 }
             }), n("411104");
             var i = n("990547"),
@@ -189735,7 +189796,21 @@
                 c = n("566078"),
                 E = n("46140"),
                 I = n("981631");
-            async function T() {
+            async function T(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                await r.HTTP.post({
+                    url: I.Endpoints.QUEST_ON_CONSOLE_START(e),
+                    query: t ? {
+                        preview: t
+                    } : void 0
+                })
+            }
+            async function f(e) {
+                await r.HTTP.post({
+                    url: I.Endpoints.QUEST_ON_CONSOLE_STOP(e)
+                })
+            }
+            async function S() {
                 if (!u.default.isFetchingCurrentQuests) {
                     s.default.dispatch({
                         type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
@@ -189759,7 +189834,7 @@
                     }
                 }
             }
-            async function f(e) {
+            async function h(e) {
                 let {
                     questId: t,
                     streamKey: n,
@@ -189801,7 +189876,7 @@
                     })
                 }
             }
-            async function S(e, t) {
+            async function A(e, t) {
                 if (null != t.questContentCTA && (0, l.trackQuestContentClicked)({
                         questId: e,
                         questContent: t.questContent,
@@ -189831,7 +189906,7 @@
                     }
                 }
             }
-            async function h(e, t, n) {
+            async function m(e, t, n) {
                 if (!u.default.isClaimingRewardCode(e)) {
                     s.default.dispatch({
                         type: "QUESTS_CLAIM_REWARD_CODE_BEGIN",
@@ -189859,7 +189934,7 @@
                     }
                 }
             }
-            async function A(e, t, n) {
+            async function N(e, t, n) {
                 if (!u.default.isClaimingReward(e)) {
                     s.default.dispatch({
                         type: "QUESTS_CLAIM_REWARD_BEGIN",
@@ -189892,7 +189967,7 @@
                     }
                 }
             }
-            async function m(e) {
+            async function p(e) {
                 if (!u.default.isFetchingRewardCode(e)) {
                     s.default.dispatch({
                         type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
@@ -189916,7 +189991,7 @@
                     }
                 }
             }
-            async function N(e, t) {
+            async function O(e, t) {
                 let n = u.default.isDismissingContent(e),
                     i = (0, d.isDismissible)(t);
                 if (!n && i) {
@@ -189944,13 +190019,13 @@
                 }
             }
 
-            function p(e) {
+            function C(e) {
                 s.default.dispatch({
                     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
                     streamKey: e
                 })
             }
-            async function O(e) {
+            async function R(e) {
                 try {
                     let t = await r.HTTP.post({
                         url: I.Endpoints.QUESTS_PREVIEW_COMPLETE(e),
@@ -189968,7 +190043,7 @@
                     })
                 }
             }
-            async function C(e) {
+            async function g(e) {
                 try {
                     let t = await r.HTTP.del({
                         url: I.Endpoints.QUESTS_PREVIEW_STATUS(e),
@@ -189986,7 +190061,7 @@
                     })
                 }
             }
-            async function R(e) {
+            async function L(e) {
                 try {
                     let t = await r.HTTP.del({
                         url: I.Endpoints.QUESTS_PREVIEW_DISMISSIBILITY(e),
@@ -190005,14 +190080,14 @@
                 }
             }
 
-            function g(e) {
+            function v(e) {
                 s.default.dispatch({
                     type: "QUESTS_OPTIMISTIC_PROGRESS_UPDATE",
                     userStatus: e
                 })
             }
 
-            function L(e) {
+            function D(e) {
                 s.default.dispatch({
                     type: "QUESTS_DELIVERY_OVERRIDE",
                     questId: e
@@ -190086,8 +190161,9 @@
                 l = n("846519"),
                 u = n("442837"),
                 d = n("583434"),
-                _ = n("706454"),
-                c = n("272008"),
+                _ = n("706454");
+            n("553795");
+            var c = n("272008"),
                 E = n("569984"),
                 I = n("497505"),
                 T = n("918701"),
@@ -190095,8 +190171,9 @@
                 S = n("977156"),
                 h = n("31055"),
                 A = n("566078"),
-                m = n("46140"),
-                N = n("689938");
+                m = n("46140");
+            n("981631");
+            var N = n("689938");
 
             function p() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
@@ -190364,14 +190441,15 @@
                 m = n("442837"),
                 N = n("570140"),
                 p = n("497505"),
-                O = n("5881"),
-                C = n("46140");
+                O = n("918701"),
+                C = n("5881"),
+                R = n("46140");
 
-            function R() {
+            function g() {
                 i = !1, r = new Map, s = 0, a = new Set, o = new Set, l = new Set, u = new Set, d = new Set, _ = new Map, c = new Map, E = new Map, I = null
             }
 
-            function g(e, t) {
+            function L(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
                         updateProgress: !1
                     },
@@ -190393,38 +190471,38 @@
                 }
             }
 
-            function L(e, t) {
+            function v(e, t) {
                 let n = new Map(_);
                 n.set(e, t), _ = n
             }
 
-            function v(e, t) {
-                L(e, t);
+            function D(e, t) {
+                v(e, t);
                 let n = r.get(e),
                     i = null == n ? void 0 : n.userStatus;
-                null != i && null == i.claimedAt && g(e, {
+                null != i && null == i.claimedAt && L(e, {
                     userStatus: {
                         ...i,
                         claimedAt: t.claimedAt
                     }
                 })
             }
-            R();
+            g();
 
-            function D(e) {
+            function M(e) {
                 null != E.get(e) && (E = new Map(E)).delete(e)
             }
 
-            function M(e) {
+            function y(e) {
                 let t = new Set(a);
                 t.delete(e), a = t
             }
 
-            function y(e) {
+            function P(e) {
                 let t = new Set(d);
                 t.delete(e), d = t
             }
-            class P extends(T = m.default.Store) {
+            class U extends(T = m.default.Store) {
                 get quests() {
                     return r
                 }
@@ -190465,14 +190543,14 @@
                     return r.get(e)
                 }
             }
-            h = "QuestsStore", (S = "displayName") in(f = P) ? Object.defineProperty(f, S, {
+            h = "QuestsStore", (S = "displayName") in(f = U) ? Object.defineProperty(f, S, {
                 value: h,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : f[S] = h, t.default = new P(N.default, {
+            }) : f[S] = h, t.default = new U(N.default, {
                 LOGOUT: function() {
-                    R()
+                    g()
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
                     s = Date.now(), i = !0
@@ -190481,8 +190559,8 @@
                     let {
                         quests: t
                     } = e;
-                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(p.QuestContent.QUEST_BAR) && (0, O.getQuestLogger)({
-                        location: C.QuestsExperimentLocations.QUESTS_STORE
+                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(p.QuestContent.QUEST_BAR) && (0, C.getQuestLogger)({
+                        location: R.QuestsExperimentLocations.QUESTS_STORE
                     }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"))
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
@@ -190494,11 +190572,11 @@
                         streamKey: n,
                         userStatus: i
                     } = e;
-                    g(t, {
+                    L(t, {
                         userStatus: i
                     }, {
                         updateProgress: !0
-                    }), D(n)
+                    }), M(n)
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
                     let {
@@ -190521,15 +190599,15 @@
                     let {
                         enrolledQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
-                    }), M(t.questId)
+                    }), y(t.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    M(t)
+                    y(t)
                 },
                 QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
                     let {
@@ -190542,7 +190620,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(u);
-                    i.delete(t), u = i, v(t, n)
+                    i.delete(t), u = i, D(t, n)
                 },
                 QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -190561,7 +190639,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(o);
-                    i.delete(t), o = i, v(t, n)
+                    i.delete(t), o = i, D(t, n)
                 },
                 QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -190596,7 +190674,7 @@
                             }({
                                 entitlements: t
                             });
-                            null != n && L(e, n), g(e, {
+                            null != n && v(e, n), L(e, {
                                 userStatus: {
                                     ...s,
                                     claimedAt: t.claimedAt,
@@ -190622,33 +190700,43 @@
                     let {
                         dismissedQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
-                    }), y(t.questId)
+                    }), P(t.questId)
                 },
                 QUESTS_DISMISS_CONTENT_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    y(t)
+                    P(t)
+                },
+                QUESTS_USER_STATUS_UPDATE: function(e) {
+                    let {
+                        user_status: t
+                    } = e;
+                    L(t.quest_id, {
+                        userStatus: (0, O.questUserStatusFromServer)(t)
+                    }, {
+                        updateProgress: !0
+                    })
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    M(t)
                 },
                 QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    M(t)
                 },
                 QUESTS_PREVIEW_UPDATE_SUCCESS: function(e) {
                     let {
                         previewQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
                     }), null == t.claimedAt && (_ = new Map(_)).delete(t.questId)
                 },
@@ -190656,7 +190744,7 @@
                     let {
                         userStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
                     }, {
                         updateProgress: !0
@@ -190689,145 +190777,155 @@
         },
         918701: function(e, t, n) {
             "use strict";
+            let i;
             n.r(t), n.d(t, {
                 calculatePercentComplete: function() {
-                    return j
-                },
-                captureQuestsException: function() {
-                    return q
-                },
-                copyShareLink: function() {
-                    return ec
-                },
-                getCollectiblesQuestReward: function() {
-                    return Z
-                },
-                getContextualEntrypointHeading: function() {
                     return W
                 },
-                getGameLogotypeAssetUrl: function() {
-                    return V
-                },
-                getGameTileAssetUrl: function() {
-                    return B
-                },
-                getHeroAssetUrl: function() {
-                    return w
-                },
-                getPlatformString: function() {
-                    return Y
-                },
-                getPlayOnDesktopQuestByApplicationId: function() {
-                    return L
-                },
-                getQuestBarHeroAssetUrl: function() {
-                    return k
-                },
-                getQuestByApplicationId: function() {
-                    return g
-                },
-                getQuestForTargetedContent: function() {
-                    return F
-                },
-                getQuestTaskDetails: function() {
-                    return ef
-                },
-                getQuestUrl: function() {
-                    return x
-                },
-                getQuestsFromActivities: function() {
+                captureQuestsException: function() {
                     return J
                 },
-                getQuestsInstructionsToWinReward: function() {
-                    return ed
+                copyShareLink: function() {
+                    return eE
                 },
-                getRewardAsset: function() {
-                    return G
-                },
-                getRewardCodeQuestReward: function() {
-                    return eu
-                },
-                getVideoAssetMimeType: function() {
-                    return en
-                },
-                hasCollectiblesQuestReward: function() {
+                getCollectiblesQuestReward: function() {
                     return X
                 },
-                hasPlayOnDesktopTask: function() {
-                    return es
-                },
-                includesTarget: function() {
-                    return Q
-                },
-                isAssetAnimated: function() {
-                    return $
-                },
-                isDismissed: function() {
-                    return z
-                },
-                isDismissible: function() {
+                getContextualEntrypointHeading: function() {
                     return K
                 },
-                isQuestExpired: function() {
+                getGameLogotypeAssetUrl: function() {
+                    return x
+                },
+                getGameTileAssetUrl: function() {
+                    return V
+                },
+                getHeroAssetUrl: function() {
+                    return k
+                },
+                getPlatformString: function() {
+                    return j
+                },
+                getPlayOnDesktopQuestByApplicationId: function() {
                     return v
                 },
-                isQuestWithKnownConfigVersion: function() {
-                    return C
+                getQuestBarHeroAssetUrl: function() {
+                    return B
                 },
-                isTargetedForContent: function() {
+                getQuestByApplicationId: function() {
+                    return L
+                },
+                getQuestForTargetedContent: function() {
                     return H
                 },
-                isTieredRewardCodeQuest: function() {
-                    return ei
+                getQuestTaskDetails: function() {
+                    return eS
                 },
-                openGameLink: function() {
+                getQuestUrl: function() {
+                    return F
+                },
+                getQuestsFromActivities: function() {
+                    return $
+                },
+                getQuestsInstructionsToWinReward: function() {
                     return e_
                 },
-                questUserStatusFromServer: function() {
+                getRewardAsset: function() {
+                    return w
+                },
+                getRewardCodeQuestReward: function() {
+                    return ed
+                },
+                getVideoAssetMimeType: function() {
+                    return ei
+                },
+                hasCollectiblesQuestReward: function() {
+                    return Q
+                },
+                hasPlayOnDesktopTask: function() {
+                    return ea
+                },
+                hasVariant: function() {
+                    return eu
+                },
+                includesTarget: function() {
+                    return q
+                },
+                isAssetAnimated: function() {
+                    return ee
+                },
+                isConsoleQuest: function() {
+                    return eA
+                },
+                isDismissed: function() {
+                    return Z
+                },
+                isDismissible: function() {
+                    return z
+                },
+                isQuestExpired: function() {
                     return D
                 },
-                questWithUserStatusFromServer: function() {
+                isQuestProgressingOnConsole: function() {
+                    return eN
+                },
+                isQuestWithKnownConfigVersion: function() {
+                    return R
+                },
+                isTargetedForContent: function() {
+                    return Y
+                },
+                isTieredRewardCodeQuest: function() {
+                    return er
+                },
+                openGameLink: function() {
+                    return ec
+                },
+                questUserStatusFromServer: function() {
                     return M
                 },
-                questsEntitlementsFromServer: function() {
-                    return U
-                },
-                questsRewardCodeFromServer: function() {
+                questWithUserStatusFromServer: function() {
                     return y
                 },
+                questsEntitlementsFromServer: function() {
+                    return b
+                },
+                questsRewardCodeFromServer: function() {
+                    return P
+                },
                 shouldShowSocialEntrypoints: function() {
-                    return eo
+                    return el
                 },
                 shouldUsePlayOnDesktopTask: function() {
-                    return ea
+                    return eo
                 }
             }), n("627341"), n("47120"), n("411104");
-            var i = n("278074"),
-                r = n("754700"),
-                s = n("551910"),
-                a = n("887003"),
-                o = n("742635"),
-                l = n("782568");
+            var r = n("278074"),
+                s = n("754700"),
+                a = n("551910"),
+                o = n("887003"),
+                l = n("742635"),
+                u = n("782568");
             n("597688");
-            var u = n("572004"),
-                d = n("70956"),
-                _ = n("630388"),
-                c = n("823379"),
-                E = n("49012"),
-                I = n("960048"),
-                T = n("617136"),
-                f = n("687744"),
-                S = n("497505"),
-                h = n("242755"),
-                A = n("566078"),
-                m = n("312046"),
-                N = n("46140"),
-                p = n("689938");
-            let O = "https://cdn.discordapp.com/assets/quests/";
+            var d = n("572004"),
+                _ = n("70956"),
+                c = n("630388"),
+                E = n("823379"),
+                I = n("49012"),
+                T = n("960048"),
+                f = n("617136"),
+                S = n("687744"),
+                h = n("497505"),
+                A = n("242755"),
+                m = n("566078"),
+                N = n("312046"),
+                p = n("46140"),
+                O = n("689938");
+            let C = "https://cdn.discordapp.com/assets/quests/";
 
-            function C(e) {
+            function R(e) {
                 try {
-                    return (0, i.match)(e.config).with({
+                    return (0, r.match)(e.config).with({
                         config_version: 1
                     }, () => !0).with({
                         config_version: 2
@@ -190838,30 +190936,30 @@
                 }
             }
 
-            function R(e, t) {
-                return null != A.SharedQuestFields.build(t.config).application.ids.find(t => t === e)
+            function g(e, t) {
+                return null != m.SharedQuestFields.build(t.config).application.ids.find(t => t === e)
             }
 
-            function g(e, t) {
+            function L(e, t) {
                 let n;
                 for (let [i, r] of e)
-                    if (R(t, r) && !v(r)) {
+                    if (g(t, r) && !D(r)) {
                         n = r;
                         break
                     } return n
             }
 
-            function L(e, t) {
-                return Array.from(e.values()).find(e => R(t, e) && !v(e) && es({
+            function v(e, t) {
+                return Array.from(e.values()).find(e => g(t, e) && !D(e) && ea({
                     quest: e
                 }))
             }
 
-            function v(e) {
+            function D(e) {
                 return new Date(e.config.expiresAt).valueOf() <= Date.now()
             }
 
-            function D(e) {
+            function M(e) {
                 var t;
                 return {
                     userId: e.user_id,
@@ -190879,19 +190977,20 @@
                             eventName: i.event_name,
                             value: i.value,
                             updatedAt: i.updated_at,
-                            completedAt: i.completed_at
+                            completedAt: i.completed_at,
+                            unsavedProgress: i.unsaved_progress
                         };
                         return t
                     }(e.progress)
                 }
             }
 
-            function M(e) {
+            function y(e) {
                 var t;
                 return {
                     id: e.id,
                     preview: e.preview,
-                    config: (t = e.config, (0, i.match)(t).with({
+                    config: (t = e.config, (0, r.match)(t).with({
                         config_version: 1
                     }, e => {
                         var t, n, i;
@@ -190911,7 +191010,7 @@
                                     let t = {};
                                     for (let n in e) {
                                         let i = parseInt(n);
-                                        S.QUEST_REWARD_CODE_PLATFORMS_SET.has(i) && (t[i] = e[n])
+                                        h.QUEST_REWARD_CODE_PLATFORMS_SET.has(i) && (t[i] = e[n])
                                     }
                                     return t
                                 }(t.reward_redemption_instructions_by_platform),
@@ -190922,9 +191021,9 @@
                                 primary: (n = e.colors).primary,
                                 secondary: n.secondary
                             },
-                            rewardsConfig: (0, f.questRewardsConfigFromServer)(e.rewards_config),
+                            rewardsConfig: (0, S.questRewardsConfigFromServer)(e.rewards_config),
                             rewardCodeExpiresAt: e.reward_code_expires_at,
-                            rewardCodePlatforms: e.reward_code_platforms.filter(e => S.QUEST_REWARD_CODE_PLATFORMS_SET.has(e)),
+                            rewardCodePlatforms: e.reward_code_platforms.filter(e => h.QUEST_REWARD_CODE_PLATFORMS_SET.has(e)),
                             assets: {
                                 rewardTile: (i = e.assets).reward_tile,
                                 hero: i.hero,
@@ -190938,13 +191037,13 @@
                         }
                     }).with({
                         config_version: 2
-                    }, e => (0, m.questFromServerV2)(e)).exhaustive()),
-                    userStatus: null == e.user_status ? null : D(e.user_status),
+                    }, e => (0, N.questFromServerV2)(e)).exhaustive()),
+                    userStatus: null == e.user_status ? null : M(e.user_status),
                     targetedContent: e.targeted_content
                 }
             }
 
-            function y(e) {
+            function P(e) {
                 var t;
                 return {
                     userId: e.user_id,
@@ -190956,14 +191055,14 @@
                 }
             }
 
-            function P(e) {
+            function U(e) {
                 return {
                     skuId: e.sku_id,
                     tenantMetadata: function(e) {
                         if ((null == e ? void 0 : e.quest_rewards) == null) return null;
                         let t = e.quest_rewards;
                         switch (t.reward.tag) {
-                            case a.QuestRewardTypes.IN_GAME:
+                            case o.QuestRewardTypes.IN_GAME:
                                 return {
                                     questRewards: {
                                         reward: {
@@ -190971,12 +191070,12 @@
                                         }
                                     }
                                 };
-                            case a.QuestRewardTypes.REWARD_CODE:
+                            case o.QuestRewardTypes.REWARD_CODE:
                                 return {
                                     questRewards: {
                                         reward: {
                                             tag: t.reward.tag,
-                                            rewardCode: y(t.reward.reward_code)
+                                            rewardCode: P(t.reward.reward_code)
                                         }
                                     }
                                 }
@@ -190985,61 +191084,61 @@
                 }
             }
 
-            function U(e) {
+            function b(e) {
                 return {
                     claimedAt: e.claimed_at,
-                    items: e.entitlements.map(P),
+                    items: e.entitlements.map(U),
                     errors: e.errors
                 }
             }
 
-            function b(e, t) {
+            function G(e, t) {
                 return e.startsWith("data") ? e : t
             }
-            let G = e => {
+            let w = e => {
                     var t, n;
-                    let i = eu({
+                    let i = ed({
                             quest: e,
                             idx: null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedTier
                         }),
-                        r = A.SharedQuestFields.build(e.config).defaultRewardAsset,
+                        r = m.SharedQuestFields.build(e.config).defaultRewardAsset,
                         s = null !== (n = null == i ? void 0 : i.asset) && void 0 !== n ? n : r;
                     return {
                         name: s,
-                        url: b(s, "".concat(O).concat(e.id, "/").concat(s))
+                        url: G(s, "".concat(C).concat(e.id, "/").concat(s))
                     }
                 },
-                w = e => b(e.config.assets.hero, "".concat(O).concat(e.id, "/").concat(e.config.assets.hero)),
-                k = e => e.config.assets.questBarHero.startsWith("data") ? e.config.assets.questBarHero : b(e.config.assets.questBarHero, "".concat(O).concat(e.id, "/").concat(e.config.assets.questBarHero)),
-                B = (e, t) => b(e.config.assets.gameTile, "".concat(O).concat(e.id, "/").concat(t, "/").concat(e.config.assets.gameTile)),
-                V = (e, t) => b(e.config.assets.logotype, "".concat(O).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype)),
-                x = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
+                k = e => G(e.config.assets.hero, "".concat(C).concat(e.id, "/").concat(e.config.assets.hero)),
+                B = e => e.config.assets.questBarHero.startsWith("data") ? e.config.assets.questBarHero : G(e.config.assets.questBarHero, "".concat(C).concat(e.id, "/").concat(e.config.assets.questBarHero)),
+                V = (e, t) => G(e.config.assets.gameTile, "".concat(C).concat(e.id, "/").concat(t, "/").concat(e.config.assets.gameTile)),
+                x = (e, t) => G(e.config.assets.logotype, "".concat(C).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype)),
+                F = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
 
-            function F(e, t) {
+            function H(e, t) {
                 for (let [n, i] of e)
-                    if (!v(i) && i.targetedContent.includes(t)) return i;
+                    if (!D(i) && i.targetedContent.includes(t)) return i;
                 return null
             }
 
-            function H(e, t) {
+            function Y(e, t) {
                 return e.targetedContent.includes(t)
             }
-            let Y = e => {
+            let j = e => {
                 switch (e) {
-                    case S.QuestRewardCodePlatforms.XBOX:
-                        return p.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
-                    case S.QuestRewardCodePlatforms.PLAYSTATION:
-                        return p.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
-                    case S.QuestRewardCodePlatforms.SWITCH:
-                        return p.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
-                    case S.QuestRewardCodePlatforms.PC:
-                        return p.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
-                    case S.QuestRewardCodePlatforms.CROSS_PLATFORM:
-                        return p.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
+                    case h.QuestRewardCodePlatforms.XBOX:
+                        return O.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
+                    case h.QuestRewardCodePlatforms.PLAYSTATION:
+                        return O.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
+                    case h.QuestRewardCodePlatforms.SWITCH:
+                        return O.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
+                    case h.QuestRewardCodePlatforms.PC:
+                        return O.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
+                    case h.QuestRewardCodePlatforms.CROSS_PLATFORM:
+                        return O.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
                 }
             };
 
-            function j(e) {
+            function W(e) {
                 let {
                     quest: t,
                     location: n
@@ -191049,66 +191148,66 @@
                 let {
                     progressSeconds: i,
                     targetSeconds: r
-                } = ef({
+                } = eS({
                     quest: t,
                     location: n
                 });
                 return r <= 0 ? 0 : Math.min(i / r, 1)
             }
 
-            function W(e) {
+            function K(e) {
                 var t, n;
                 let {
                     quest: i,
                     location: r
                 } = e;
-                if ((null === (t = i.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return p.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
+                if ((null === (t = i.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return O.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
                 if ((null === (n = i.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
-                    let e = j({
+                    let e = W({
                         quest: i,
                         location: r
                     });
-                    return e >= .75 ? p.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : e >= .45 && e <= .55 ? p.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : e > 0 ? p.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : p.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
+                    return e >= .75 ? O.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : e >= .45 && e <= .55 ? O.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : e > 0 ? O.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : O.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
                 }
-                return p.default.Messages.QUESTS_TITLE.format({
+                return O.default.Messages.QUESTS_TITLE.format({
                     questName: i.config.messages.questName
                 })
             }
 
-            function K(e) {
-                return Object.keys(N.DismissibleQuestContentFlags).includes(S.QuestContent[e])
+            function z(e) {
+                return Object.keys(p.DismissibleQuestContentFlags).includes(h.QuestContent[e])
             }
 
-            function z(e, t) {
-                if (!K(t)) return !1;
-                let n = S.QuestContent[t];
-                return (0, _.hasFlag)(e.dismissedQuestContent, N.DismissibleQuestContentFlags[n])
-            }
-
-            function Z(e) {
-                return (0, i.match)(e).with({
-                    configVersion: 1
-                }, e => {
-                    let t = e.rewardsConfig.rewards.find(e => e.tag === a.QuestRewardTypes.COLLECTIBLE);
-                    return (null == t ? void 0 : t.tag) === a.QuestRewardTypes.COLLECTIBLE ? t : null
-                }).with({
-                    configVersion: 2
-                }, e => {
-                    let t = e.rewardsConfig.rewards.find(e => e.type === a.QuestRewardTypes.COLLECTIBLE);
-                    return (null == t ? void 0 : t.type) === a.QuestRewardTypes.COLLECTIBLE ? t : null
-                }).exhaustive()
+            function Z(e, t) {
+                if (!z(t)) return !1;
+                let n = h.QuestContent[t];
+                return (0, c.hasFlag)(e.dismissedQuestContent, p.DismissibleQuestContentFlags[n])
             }
 
             function X(e) {
-                return null != Z(e)
+                return (0, r.match)(e).with({
+                    configVersion: 1
+                }, e => {
+                    let t = e.rewardsConfig.rewards.find(e => e.tag === o.QuestRewardTypes.COLLECTIBLE);
+                    return (null == t ? void 0 : t.tag) === o.QuestRewardTypes.COLLECTIBLE ? t : null
+                }).with({
+                    configVersion: 2
+                }, e => {
+                    let t = e.rewardsConfig.rewards.find(e => e.type === o.QuestRewardTypes.COLLECTIBLE);
+                    return (null == t ? void 0 : t.type) === o.QuestRewardTypes.COLLECTIBLE ? t : null
+                }).exhaustive()
             }
 
-            function Q(e, t) {
-                return e.targetedContent.includes(t)
+            function Q(e) {
+                return null != X(e)
             }
 
             function q(e, t) {
-                I.default.captureException(e, {
+                return e.targetedContent.includes(t)
+            }
+
+            function J(e, t) {
+                T.default.captureException(e, {
                     ...t,
                     tags: {
                         ...null == t ? void 0 : t.tags,
@@ -191117,25 +191216,25 @@
                 })
             }
 
-            function J(e, t) {
+            function $(e, t) {
                 if (null == t || null == e) return null;
                 for (let n of t) {
                     if (null == n.application_id) continue;
-                    let t = g(e, n.application_id);
+                    let t = L(e, n.application_id);
                     if (null != t) return t
                 }
                 return null
             }
 
-            function $(e) {
+            function ee(e) {
                 return e.endsWith(".webm") || e.endsWith(".mp4") || e.startsWith("data:video")
             }
-            let ee = /\.([a-zA-Z0-9]+)$/,
-                et = /^data:video\/([a-zA-Z0-9]+)\;/;
+            let et = /\.([a-zA-Z0-9]+)$/,
+                en = /^data:video\/([a-zA-Z0-9]+)\;/;
 
-            function en(e) {
+            function ei(e) {
                 var t, n, i, r, s;
-                switch (null !== (s = null === (n = ee.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== s ? s : null === (r = et.exec(e)) || void 0 === r ? void 0 : null === (i = r[1]) || void 0 === i ? void 0 : i.toLowerCase()) {
+                switch (null !== (s = null === (n = et.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== s ? s : null === (r = en.exec(e)) || void 0 === r ? void 0 : null === (i = r[1]) || void 0 === i ? void 0 : i.toLowerCase()) {
                     case "webm":
                         return "video/webm";
                     case "mp4":
@@ -191145,164 +191244,164 @@
                 }
             }
 
-            function ei(e) {
+            function er(e) {
                 let {
                     quest: {
                         config: t
                     }
                 } = e;
-                return (0, i.match)(t).with({
+                return (0, r.match)(t).with({
                     configVersion: 1
                 }, e => {
                     let t = e.rewardsConfig;
-                    return t.assignmentMethod === s.QuestRewardAssignmentMethods.TIERED && t.rewards.length > 0 && t.rewards.every(e => e.tag === a.QuestRewardTypes.REWARD_CODE)
+                    return t.assignmentMethod === a.QuestRewardAssignmentMethods.TIERED && t.rewards.length > 0 && t.rewards.every(e => e.tag === o.QuestRewardTypes.REWARD_CODE)
                 }).with({
                     configVersion: 2
                 }, e => {
                     let t = e.rewardsConfig;
-                    return t.assignmentMethod === s.QuestRewardAssignmentMethods.TIERED && t.rewards.length > 0 && t.rewards.every(e => e.type === a.QuestRewardTypes.REWARD_CODE)
+                    return t.assignmentMethod === a.QuestRewardAssignmentMethods.TIERED && t.rewards.length > 0 && t.rewards.every(e => e.type === o.QuestRewardTypes.REWARD_CODE)
                 }).exhaustive()
             }
-            let er = e => (0, i.match)(e.taskConfig).with({
-                type: o.QuestTaskConfigTypes.FIRST_PARTY
-            }, e => null != e.tasks[r.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP]).otherwise(() => !1);
+            let es = e => (0, r.match)(e.taskConfig).with({
+                type: l.QuestTaskConfigTypes.FIRST_PARTY
+            }, e => null != e.tasks[s.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP]).otherwise(() => !1);
 
-            function es(e) {
+            function ea(e) {
                 let {
                     quest: t
                 } = e;
-                return (0, i.match)(t.config).with({
+                return (0, r.match)(t.config).with({
                     configVersion: 1
-                }, e => el(t, N.QuestVariants.PLAYTIME_TASK)).with({
+                }, e => eu(t, p.QuestVariants.PLAYTIME_TASK)).with({
                     configVersion: 2
-                }, e => el(t, N.QuestVariants.PLAYTIME_TASK) || er(e)).exhaustive()
+                }, e => eu(t, p.QuestVariants.PLAYTIME_TASK) || es(e)).exhaustive()
             }
 
-            function ea(e) {
+            function eo(e) {
                 let {
                     quest: t,
                     location: n
                 } = e;
-                return null != t && es({
+                return null != t && ea({
                     quest: t
-                }) && (0, h.isEligibleForQuestPlaytime)({
+                }) && (0, A.isEligibleForQuestPlaytime)({
                     location: n
                 })
             }
 
-            function eo(e) {
-                return !el(e, N.QuestVariants.IN_HOUSE_CONSOLE_QUEST)
+            function el(e) {
+                return !eu(e, p.QuestVariants.IN_HOUSE_CONSOLE_QUEST)
             }
 
-            function el(e, t) {
-                return A.SharedQuestFields.build(e.config).features.has(t)
-            }
-
-            function eu(e) {
-                let {
-                    quest: t,
-                    idx: n
-                } = e;
-                if (null == n) return null;
-                let r = t.config.rewardsConfig.rewards[n];
-                return (0, i.match)(r).with({
-                    tag: a.QuestRewardTypes.REWARD_CODE
-                }, e => e).with({
-                    type: a.QuestRewardTypes.REWARD_CODE
-                }, e => e).otherwise(() => null)
+            function eu(e, t) {
+                return m.SharedQuestFields.build(e.config).features.has(t)
             }
 
             function ed(e) {
                 let {
                     quest: t,
+                    idx: n
+                } = e;
+                if (null == n) return null;
+                let i = t.config.rewardsConfig.rewards[n];
+                return (0, r.match)(i).with({
+                    tag: o.QuestRewardTypes.REWARD_CODE
+                }, e => e).with({
+                    type: o.QuestRewardTypes.REWARD_CODE
+                }, e => e).otherwise(() => null)
+            }
+
+            function e_(e) {
+                let {
+                    quest: t,
                     location: n,
                     useV2Variants: i = !1
-                } = e, r = t.config.messages.gameTitle, s = A.SharedQuestFields.build(t.config).defaultReward, a = ef({
+                } = e, r = t.config.messages.gameTitle, s = m.SharedQuestFields.build(t.config).defaultReward, a = eS({
                     quest: t,
                     location: n
                 }).targetMinutes;
-                return ea({
+                return eo({
                     quest: t,
                     location: n
-                }) ? p.default.Messages.QUESTS_PLAY_INSTRUCTIONS_TO_WIN_REWARD.format({
+                }) ? O.default.Messages.QUESTS_PLAY_INSTRUCTIONS_TO_WIN_REWARD.format({
                     gameTitle: r,
                     questReward: s.messages.nameWithArticle,
                     streamingDurationRequirement: a
-                }) : ei({
+                }) : er({
                     quest: t
-                }) ? (i ? p.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2 : p.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED).format({
+                }) ? (i ? O.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2 : O.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED).format({
                     gameTitle: r,
                     streamingDurationRequirement: a
-                }) : (i ? p.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2 : p.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD).format({
+                }) : (i ? O.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2 : O.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD).format({
                     gameTitle: r,
                     questReward: s.messages.nameWithArticle,
                     streamingDurationRequirement: a
                 })
             }
 
-            function e_(e, t) {
-                let n = A.SharedQuestFields.build(e.config).application.link;
-                (0, E.handleClick)({
+            function ec(e, t) {
+                let n = m.SharedQuestFields.build(e.config).application.link;
+                (0, I.handleClick)({
                     href: n,
                     onConfirm: () => {
-                        (0, T.trackQuestContentClicked)({
+                        (0, f.trackQuestContentClicked)({
                             questId: e.id,
                             questContent: t.content,
                             questContentCTA: t.ctaContent,
                             questContentPosition: t.position
-                        }), (0, l.default)(n)
+                        }), (0, u.default)(n)
                     }
                 })
             }
-            let ec = (e, t) => {
-                    (0, T.trackQuestContentClicked)({
+            let eE = (e, t) => {
+                    (0, f.trackQuestContentClicked)({
                         questId: e,
                         questContent: t.content,
                         questContentCTA: t.ctaContent,
                         questContentPosition: t.position
-                    }), (0, u.copy)(x(e))
+                    }), (0, d.copy)(F(e))
                 },
-                eE = e => {
-                    var t, n, i, s, a, l, u, _;
+                eI = e => {
+                    var t, n, i, r, a, o, u, d;
                     let {
                         quest: c,
                         taskType: E
                     } = e, I = c.config.taskConfig;
-                    if (I.type !== o.QuestTaskConfigTypes.FIRST_PARTY) throw Error("Cannot retrieve task details for task config with type ".concat(I.type, "!"));
+                    if (I.type !== l.QuestTaskConfigTypes.FIRST_PARTY) throw Error("Cannot retrieve task details for task config with type ".concat(I.type, "!"));
                     let T = null != E ? E : null === (t = Object.values(I.tasks)[0]) || void 0 === t ? void 0 : t.eventName,
-                        f = null !== (l = I.tasks[T]) && void 0 !== l ? l : I.tasks[r.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
+                        f = null !== (o = I.tasks[T]) && void 0 !== o ? o : I.tasks[s.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
                     if (null == f) throw Error("No task with type ".concat(E, " found for quest ").concat(c.id, "!"));
                     let S = f.target;
                     return {
-                        progressSeconds: null !== (_ = null !== (u = null === (s = c.userStatus) || void 0 === s ? void 0 : null === (i = s.progress) || void 0 === i ? void 0 : null === (n = i[T]) || void 0 === n ? void 0 : n.value) && void 0 !== u ? u : null === (a = c.userStatus) || void 0 === a ? void 0 : a.streamProgressSeconds) && void 0 !== _ ? _ : 0,
+                        progressSeconds: null !== (d = null !== (u = null === (r = c.userStatus) || void 0 === r ? void 0 : null === (i = r.progress) || void 0 === i ? void 0 : null === (n = i[T]) || void 0 === n ? void 0 : n.value) && void 0 !== u ? u : null === (a = c.userStatus) || void 0 === a ? void 0 : a.streamProgressSeconds) && void 0 !== d ? d : 0,
                         targetSeconds: S,
-                        targetMinutes: Math.round(S / d.default.Seconds.MINUTE),
+                        targetMinutes: Math.round(S / _.default.Seconds.MINUTE),
                         taskType: T
                     }
                 },
-                eI = e => r.FirstPartyQuestTaskTypesSets.ALL.has(e) ? e : null,
-                eT = e => {
+                eT = e => s.FirstPartyQuestTaskTypesSets.ALL.has(e) ? e : null,
+                ef = e => {
                     var t, n;
                     let {
                         quest: i
                     } = e;
-                    for (let e of Object.values(null !== (n = null === (t = i.userStatus) || void 0 === t ? void 0 : t.progress) && void 0 !== n ? n : {}).sort((e, t) => (null == e ? void 0 : e.updatedAt) != null && (null == t ? void 0 : t.updatedAt) != null && e.updatedAt > t.updatedAt ? -1 : 1).filter(c.isNotNullish)) {
-                        let t = eI(e.eventName);
-                        if (null != t) return eE({
+                    for (let e of Object.values(null !== (n = null === (t = i.userStatus) || void 0 === t ? void 0 : t.progress) && void 0 !== n ? n : {}).sort((e, t) => (null == e ? void 0 : e.updatedAt) != null && (null == t ? void 0 : t.updatedAt) != null && e.updatedAt > t.updatedAt ? -1 : 1).filter(E.isNotNullish)) {
+                        let t = eT(e.eventName);
+                        if (null != t) return eI({
                             quest: i,
                             taskType: t
                         })
                     }
-                    return eE({
+                    return eI({
                         quest: i
                     })
                 },
-                ef = e => {
+                eS = e => {
                     let {
                         quest: t,
                         location: n
                     } = e;
-                    return (0, i.match)(t).with({
+                    return (0, r.match)(t).with({
                         config: {
                             configVersion: 1
                         }
@@ -191310,27 +191409,53 @@
                         var t, n;
                         return {
                             progressSeconds: null !== (n = null === (t = e.userStatus) || void 0 === t ? void 0 : t.streamProgressSeconds) && void 0 !== n ? n : 0,
-                            targetSeconds: Math.round(e.config.streamDurationRequirementMinutes * d.default.Seconds.MINUTE),
+                            targetSeconds: Math.round(e.config.streamDurationRequirementMinutes * _.default.Seconds.MINUTE),
                             targetMinutes: e.config.streamDurationRequirementMinutes,
-                            taskType: r.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP
+                            taskType: s.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP
                         }
                     }).with({
                         config: {
                             configVersion: 2
                         }
-                    }, e => e.config.features.some(e => e === N.QuestVariants.IN_HOUSE_CONSOLE_QUEST || e === N.QuestVariants.MOBILE_CONSOLE_QUEST) ? eT({
+                    }, e => eh(e) ? ef({
                         quest: e
-                    }) : ea({
+                    }) : eo({
                         quest: e,
                         location: n
-                    }) ? eE({
+                    }) ? eI({
                         quest: e,
-                        taskType: r.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP
-                    }) : eE({
+                        taskType: s.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP
+                    }) : eI({
                         quest: e,
-                        taskType: r.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP
+                        taskType: s.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP
                     })).exhaustive()
-                }
+                };
+            let eh = (i = [s.FirstPartyQuestTaskTypes.PLAY_ON_XBOX, s.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION], e => i.some(t => null != e.config.taskConfig.tasks[t])),
+                eA = e => (0, r.match)(e).with({
+                    config: {
+                        configVersion: 1
+                    }
+                }, () => !1).with({
+                    config: {
+                        configVersion: 2
+                    }
+                }, eh).exhaustive(),
+                em = (e, t) => {
+                    var n;
+                    let i = null == e ? void 0 : e.progress[t];
+                    if ((null == i ? void 0 : null === (n = i.unsavedProgress) || void 0 === n ? void 0 : n.expires) == null) return !1;
+                    let r = new Date(i.unsavedProgress.expires).valueOf();
+                    return !isNaN(r) && r > Date.now()
+                },
+                eN = e => (0, r.match)(e).with({
+                    config: {
+                        configVersion: 1
+                    }
+                }, () => !1).with({
+                    config: {
+                        configVersion: 2
+                    }
+                }, e => null != e.userStatus && (em(e.userStatus, s.FirstPartyQuestTaskTypes.PLAY_ON_XBOX) || em(e.userStatus, s.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION))).exhaustive()
         },
         242755: function(e, t, n) {
             "use strict";
@@ -191654,6 +191779,66 @@
                     return i && a
                 }
         },
+        877519: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("147913"),
+                r = n("70956"),
+                s = n("272008"),
+                a = n("569984"),
+                o = n("977156"),
+                l = n("46140");
+
+            function u(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let d = r.default.Millis.DAY,
+                _ = 30 * r.default.Millis.MINUTE,
+                c = 5 * r.default.Millis.SECOND,
+                E = 5 * r.default.Millis.MINUTE,
+                I = 12 * r.default.Millis.HOUR;
+            class T extends i.default {
+                _fetch() {
+                    (0, o.getIsEligibleForQuests)({
+                        location: l.QuestsExperimentLocations.QUESTS_MANAGER
+                    }) && !a.default.isFetchingCurrentQuests && (0, s.fetchCurrentQuests)()
+                }
+                constructor(...e) {
+                    super(...e), u(this, "instantiatedAt", Date.now()), u(this, "initialFetchTimerId", null), u(this, "recurringFetchTimerId", null), u(this, "lastFetchAttemptedAt", 0), u(this, "lastFetchedQuestForLocaleChangeAt", 0), u(this, "handleQuestsFetchCurrentQuestsBegin", () => {
+                        this.lastFetchAttemptedAt = Date.now()
+                    }), u(this, "handlePostConnectionOpen", () => {
+                        window.clearTimeout(this.initialFetchTimerId), window.clearTimeout(this.recurringFetchTimerId), this.recurringFetchTimerId = window.setInterval(() => {
+                            Date.now() - this.lastFetchAttemptedAt > d && (this.lastFetchAttemptedAt = Date.now(), this._fetch())
+                        }, _), this.initialFetchTimerId = window.setTimeout(() => {
+                            0 === a.default.lastFetchedCurrentQuests && this._fetch()
+                        }, Math.floor(Math.random() * c))
+                    }), u(this, "handleRunningGamesChange", () => {
+                        !(this.instantiatedAt + I > Date.now() || a.default.lastFetchedCurrentQuests + I > Date.now()) && this._fetch()
+                    }), u(this, "handleUserSettingsProtoUpdate", e => {
+                        let {
+                            partial: t,
+                            settings: n,
+                            wasSaved: i
+                        } = e;
+                        !(!("localization" in n.proto) || !t || i || Date.now() - this.lastFetchedQuestForLocaleChangeAt <= E) && (this.lastFetchedQuestForLocaleChangeAt = Date.now(), this._fetch())
+                    }), u(this, "handleLogout", () => {
+                        window.clearTimeout(this.initialFetchTimerId), window.clearTimeout(this.recurringFetchTimerId), this.lastFetchAttemptedAt = 0, this.lastFetchedQuestForLocaleChangeAt = 0
+                    }), u(this, "actions", {
+                        QUESTS_FETCH_CURRENT_QUESTS_BEGIN: this.handleQuestsFetchCurrentQuestsBegin,
+                        POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
+                        RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
+                        USER_SETTINGS_PROTO_UPDATE: this.handleUserSettingsProtoUpdate,
+                        LOGOUT: this.handleLogout
+                    })
+                }
+            }
+            t.default = new T
+        },
         901751: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -191661,10 +191846,10 @@
                     return i
                 },
                 generatePsuedoStreamKey: function() {
-                    return b
+                    return v
                 },
                 getPlayOnDesktopQuestForActiveGames: function() {
-                    return w
+                    return M
                 }
             }), n("47120");
             var i, r, s = n("147913"),
@@ -191681,13 +191866,12 @@
                 f = n("918701"),
                 S = n("242755"),
                 h = n("432945"),
-                A = n("977156"),
-                m = n("5881"),
-                N = n("566078"),
-                p = n("46140"),
-                O = n("70722");
+                A = n("5881"),
+                m = n("566078"),
+                N = n("46140"),
+                p = n("70722");
 
-            function C(e, t, n) {
+            function O(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -191695,48 +191879,43 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let R = 12 * E.default.Millis.HOUR,
-                g = 1 * E.default.Millis.MINUTE,
-                L = 1 * E.default.Millis.SECOND,
-                v = 5 * E.default.Millis.SECOND,
-                D = 1 * E.default.Millis.SECOND,
-                M = E.default.Millis.DAY,
-                y = 30 * E.default.Millis.MINUTE,
-                P = 5 * E.default.Millis.MINUTE,
-                U = (0, m.getQuestLogger)({
-                    location: p.QuestsExperimentLocations.QUESTS_MANAGER
+            let C = 1 * E.default.Millis.MINUTE,
+                R = 1 * E.default.Millis.SECOND,
+                g = 1 * E.default.Millis.SECOND,
+                L = (0, A.getQuestLogger)({
+                    location: N.QuestsExperimentLocations.QUESTS_MANAGER
                 }),
-                b = e => (0, l.encodeStreamKey)({
-                    streamType: O.StreamTypes.CALL,
+                v = e => (0, l.encodeStreamKey)({
+                    streamType: p.StreamTypes.CALL,
                     channelId: e,
                     ownerId: "1"
                 });
 
-            function G() {
+            function D() {
                 let e = u.default.getStreamerActiveStreamMetadata();
                 if ((null == e ? void 0 : e.id) == null) return null;
                 let t = _.default.getGameById(e.id);
                 if ((null == t ? void 0 : t.id) == null) return null;
                 let n = (0, f.getQuestByApplicationId)(T.default.quests, t.id);
-                return null != n && B(n) ? n : null
+                return null != n && P(n) ? n : null
             }
-            let w = () => {
+            let M = () => {
                 for (let e of o.default.getRunningGames().map(e => e.id)) {
                     if (null == e) continue;
                     let t = (0, f.getPlayOnDesktopQuestByApplicationId)(T.default.quests, e);
-                    if (null != t && B(t)) return t
+                    if (null != t && P(t)) return t
                 }
             };
 
-            function k(e) {
+            function y(e) {
                 return c.default.countVoiceStatesForChannel(e) >= 2
             }
 
-            function B(e) {
+            function P(e) {
                 return !(0, f.isQuestExpired)(e) && null != e.userStatus && null != e.userStatus.enrolledAt && null == e.userStatus.completedAt
             }
 
-            function V(e) {
+            function U(e) {
                 var t;
                 let {
                     questId: n,
@@ -191744,38 +191923,38 @@
                     applicationId: r
                 } = e, {
                     channelId: s
-                } = (0, l.decodeStreamKey)(i), a = k(s), d = T.default.quests.get(n);
-                if (null == d || !B(d)) return "STOP";
-                let _ = null === (t = G()) || void 0 === t ? void 0 : t.config,
-                    c = null != u.default.getRTCStream(i) && null != _ && N.SharedQuestFields.build(_).application.id === r && a,
+                } = (0, l.decodeStreamKey)(i), a = y(s), d = T.default.quests.get(n);
+                if (null == d || !P(d)) return "STOP";
+                let _ = null === (t = D()) || void 0 === t ? void 0 : t.config,
+                    c = null != u.default.getRTCStream(i) && null != _ && m.SharedQuestFields.build(_).application.id === r && a,
                     {
                         quest: E,
                         activity: I
-                    } = x(),
+                    } = b(),
                     S = null == E ? void 0 : E.config,
-                    h = null != S && (null == E ? void 0 : E.id) === n && N.SharedQuestFields.build(S).application.id === r && a && (null == I ? void 0 : I.channelId) === s,
+                    h = null != S && (null == E ? void 0 : E.id) === n && m.SharedQuestFields.build(S).application.id === r && a && (null == I ? void 0 : I.channelId) === s,
                     A = o.default.getRunningGames().map(e => e.id),
-                    m = (0, f.shouldUsePlayOnDesktopTask)({
+                    p = (0, f.shouldUsePlayOnDesktopTask)({
                         quest: d,
-                        location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                        location: N.QuestsExperimentLocations.QUESTS_MANAGER
                     }) && A.includes(r);
-                return c || h || m ? "BEAT" : "BEAT_TERMINAL"
+                return c || h || p ? "BEAT" : "BEAT_TERMINAL"
             }
 
-            function x(e) {
+            function b(e) {
                 let t = {
                     quest: null,
                     activity: null
                 };
                 if (!(0, h.getIsEligibleForActivityQuest)({
-                        location: p.QuestsExperimentLocations.QUESTS_MANAGER,
+                        location: N.QuestsExperimentLocations.QUESTS_MANAGER,
                         autoTrackExposure: !1
                     })) return t;
                 for (let i of a.default.getSelfEmbeddedActivities().values()) {
                     var n;
                     if (null != e && i.channelId !== e) continue;
                     let r = null !== (n = (0, f.getQuestByApplicationId)(T.default.quests, i.applicationId)) && void 0 !== n ? n : null;
-                    if (null != r && B(r)) return {
+                    if (null != r && P(r)) return {
                         quest: r,
                         activity: i
                     };
@@ -191786,30 +191965,25 @@
                 }
                 return t
             }(r = i || (i = {})).BEAT = "BEAT", r.STOP = "STOP", r.BEAT_TERMINAL = "BEAT_TERMINAL";
-            class F extends s.default {
-                maybeFetchCurrentQuests() {
-                    (0, A.getIsEligibleForQuests)({
-                        location: p.QuestsExperimentLocations.QUESTS_MANAGER
-                    }) && !T.default.isFetchingCurrentQuests && (0, I.fetchCurrentQuests)()
-                }
+            class G extends s.default {
                 constructor(...e) {
-                    super(...e), C(this, "instantiatedAt", Date.now()), C(this, "streamKeyToHeartbeatState", new Map), C(this, "optimisticProgressUpdateIntervalIds", new Map), C(this, "lastOptimisticallyUpdatedProgressMap", new Map), C(this, "questsInitialFetchTimerId", null), C(this, "questsRecurringFetchTimerId", null), C(this, "questsLastFetchAttemptedAt", 0), C(this, "lastFetchedQuestForLocaleChangeAt", 0), C(this, "initiateHeartbeat", e => {
+                    super(...e), O(this, "streamKeyToHeartbeatState", new Map), O(this, "optimisticProgressUpdateIntervalIds", new Map), O(this, "lastOptimisticallyUpdatedProgressMap", new Map), O(this, "initiateHeartbeat", e => {
                         let {
                             questId: t,
                             streamKey: n,
                             applicationId: i
                         } = e;
                         if (this.streamKeyToHeartbeatState.has(n)) {
-                            U.log("~ initiateHeartbeat -> Heartbeat already initiated:", n);
+                            L.log("~ initiateHeartbeat -> Heartbeat already initiated:", n);
                             return
                         }
                         let r = () => {
-                            let e = V({
+                            let e = U({
                                 questId: t,
                                 streamKey: n,
                                 applicationId: i
                             });
-                            if (U.log("~ initiateHeartbeat -> heartbeat decision: ", e), "BEAT" === e) {
+                            if (L.log("~ initiateHeartbeat -> heartbeat decision: ", e), "BEAT" === e) {
                                 (0, I.sendHeartbeat)({
                                     questId: t,
                                     streamKey: n
@@ -191826,18 +192000,18 @@
                             })
                         };
                         r()
-                    }), C(this, "calculateHeartbeatDurationMs", e => {
+                    }), O(this, "calculateHeartbeatDurationMs", e => {
                         let t = T.default.quests.get(e);
-                        if (null == t || null == t.config || null == t.userStatus) return g;
+                        if (null == t || null == t.config || null == t.userStatus) return C;
                         let {
                             progressSeconds: n,
                             targetSeconds: i
                         } = (0, f.getQuestTaskDetails)({
                             quest: t,
-                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                            location: N.QuestsExperimentLocations.QUESTS_MANAGER
                         }), r = Math.max(0, (i - n) * E.default.Millis.SECOND);
-                        return r <= g ? r + L : g
-                    }), C(this, "terminateHeartbeat", e => {
+                        return r <= C ? r + R : C
+                    }), O(this, "terminateHeartbeat", e => {
                         let {
                             streamKey: t,
                             sendTerminalHeartbeat: n
@@ -191845,7 +192019,7 @@
                         this.terminateOptimisticProgressUpdateInterval(t);
                         let i = this.streamKeyToHeartbeatState.get(t);
                         if (null != i) {
-                            U.log("~ terminateHeartbeat -> Terminating heartbeat:", {
+                            L.log("~ terminateHeartbeat -> Terminating heartbeat:", {
                                 streamKey: t,
                                 sendTerminalHeartbeat: n
                             });
@@ -191859,23 +192033,23 @@
                                 terminal: !0
                             })
                         }
-                    }), C(this, "initiateOptimisticProgressUpdateInterval", e => {
+                    }), O(this, "initiateOptimisticProgressUpdateInterval", e => {
                         this.terminateOptimisticProgressUpdateInterval(e), this.optimisticProgressUpdateIntervalIds.set(e, window.setInterval(() => {
                             var t, n;
-                            let i = G(),
-                                r = w(),
+                            let i = D(),
+                                r = M(),
                                 {
                                     quest: s
-                                } = x(),
+                                } = b(),
                                 a = null !== (n = null !== (t = null != i ? i : s) && void 0 !== t ? t : r) && void 0 !== n ? n : null;
                             if (null == a) {
                                 this.terminateOptimisticProgressUpdateInterval(e);
                                 return
                             }
-                            let o = N.SharedQuestFields.build(a.config),
+                            let o = m.SharedQuestFields.build(a.config),
                                 l = a.userStatus,
                                 u = this.lastOptimisticallyUpdatedProgressMap.get(e);
-                            if ("BEAT" !== V({
+                            if ("BEAT" !== U({
                                     questId: a.id,
                                     streamKey: e,
                                     applicationId: o.application.id
@@ -191891,9 +192065,9 @@
                                     taskType: i
                                 } = (0, f.getQuestTaskDetails)({
                                     quest: a,
-                                    location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                                    location: N.QuestsExperimentLocations.QUESTS_MANAGER
                                 }), r = (Date.now() - u) / E.default.Millis.SECOND, s = t + r;
-                                if (U.log("~ initiateOptimisticProgressUpdateInterval -> Updating optimistic progress:", {
+                                if (L.log("~ initiateOptimisticProgressUpdateInterval -> Updating optimistic progress:", {
                                         streamKey: e,
                                         progressToAdd: r,
                                         existingProgress: t,
@@ -191910,19 +192084,19 @@
                                     }, (0, I.optimisticallyUpdateQuestProgress)(t), this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now())
                                 }
                             }
-                        }, D))
-                    }), C(this, "terminateOptimisticProgressUpdateInterval", e => {
-                        U.log("~ terminateOptimisticProgressUpdateInterval -> Terminating/Resetting Interval", e), window.clearInterval(this.optimisticProgressUpdateIntervalIds.get(e)), this.optimisticProgressUpdateIntervalIds.delete(e), this.lastOptimisticallyUpdatedProgressMap.delete(e)
-                    }), C(this, "handleEnrollmentSuccess", e => {
+                        }, g))
+                    }), O(this, "terminateOptimisticProgressUpdateInterval", e => {
+                        L.log("~ terminateOptimisticProgressUpdateInterval -> Terminating/Resetting Interval", e), window.clearInterval(this.optimisticProgressUpdateIntervalIds.get(e)), this.optimisticProgressUpdateIntervalIds.delete(e), this.lastOptimisticallyUpdatedProgressMap.delete(e)
+                    }), O(this, "handleEnrollmentSuccess", e => {
                         let {
                             enrolledQuestUserStatus: {
                                 questId: t
                             }
-                        } = e, n = u.default.getCurrentUserActiveStream(), i = G();
-                        if (null != n && null != i && i.id === t && B(i)) {
-                            U.log("handleEnrollmentSuccess - initiating heartbeat for stream"), this.initiateHeartbeat({
+                        } = e, n = u.default.getCurrentUserActiveStream(), i = D();
+                        if (null != n && null != i && i.id === t && P(i)) {
+                            L.log("handleEnrollmentSuccess - initiating heartbeat for stream"), this.initiateHeartbeat({
                                 streamKey: (0, l.encodeStreamKey)(n),
-                                applicationId: N.SharedQuestFields.build(i.config).application.id,
+                                applicationId: m.SharedQuestFields.build(i.config).application.id,
                                 questId: i.id
                             });
                             return
@@ -191930,11 +192104,11 @@
                         let {
                             quest: r,
                             activity: s
-                        } = x();
-                        if (null != s && null != r && B(r) && r.id === t) {
-                            U.log("handleEnrollmentSuccess - initiating heartbeat for activity"), this.initiateHeartbeat({
-                                streamKey: b(s.channelId),
-                                applicationId: N.SharedQuestFields.build(r.config).application.id,
+                        } = b();
+                        if (null != s && null != r && P(r) && r.id === t) {
+                            L.log("handleEnrollmentSuccess - initiating heartbeat for activity"), this.initiateHeartbeat({
+                                streamKey: v(s.channelId),
+                                applicationId: m.SharedQuestFields.build(r.config).application.id,
                                 questId: r.id
                             });
                             return
@@ -191942,108 +192116,98 @@
                         o.default.getRunningGames().forEach(e => {
                             if (null == e.id) return;
                             let t = (0, f.getPlayOnDesktopQuestByApplicationId)(T.default.quests, e.id);
-                            if (null != t && B(t) && (0, f.shouldUsePlayOnDesktopTask)({
+                            if (null != t && P(t) && (0, f.shouldUsePlayOnDesktopTask)({
                                     quest: t,
-                                    location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                                    location: N.QuestsExperimentLocations.QUESTS_MANAGER
                                 })) {
-                                U.log("handleEnrollmentSuccess - initiating heartbeat for playtime task");
-                                let e = b(t.id);
+                                L.log("handleEnrollmentSuccess - initiating heartbeat for playtime task");
+                                let e = v(t.id);
                                 this.initiateHeartbeat({
                                     streamKey: e,
-                                    applicationId: N.SharedQuestFields.build(t.config).application.id,
+                                    applicationId: m.SharedQuestFields.build(t.config).application.id,
                                     questId: t.id
                                 })
                             }
                         })
-                    }), C(this, "handleLogout", () => {
-                        window.clearTimeout(this.questsInitialFetchTimerId), window.clearTimeout(this.questsRecurringFetchTimerId), this.questsLastFetchAttemptedAt = 0, this.lastFetchedQuestForLocaleChangeAt = 0
-                    }), C(this, "handleQuestsFetchCurrentQuestsBegin", () => {
-                        this.questsLastFetchAttemptedAt = Date.now()
-                    }), C(this, "handlePostConnectionOpen", () => {
-                        window.clearTimeout(this.questsInitialFetchTimerId), window.clearTimeout(this.questsRecurringFetchTimerId), this.questsRecurringFetchTimerId = window.setInterval(() => {
-                            Date.now() - this.questsLastFetchAttemptedAt > M && (this.questsLastFetchAttemptedAt = Date.now(), this.maybeFetchCurrentQuests())
-                        }, y), this.questsInitialFetchTimerId = window.setTimeout(() => {
-                            0 === T.default.lastFetchedCurrentQuests && this.maybeFetchCurrentQuests()
-                        }, Math.floor(Math.random() * v))
-                    }), C(this, "handleSendHeartbeatSuccess", e => {
+                    }), O(this, "handleSendHeartbeatSuccess", e => {
                         let {
                             streamKey: t,
                             userStatus: n
                         } = e;
-                        U.log("~ handleSendHeartbeatSuccess -> Heartbeat succeeded:", t), this.terminateOptimisticProgressUpdateInterval(t), null != n.completedAt ? (this.terminateHeartbeat({
+                        L.log("~ handleSendHeartbeatSuccess -> Heartbeat succeeded:", t), this.terminateOptimisticProgressUpdateInterval(t), null != n.completedAt ? (this.terminateHeartbeat({
                             streamKey: t,
                             sendTerminalHeartbeat: !1
                         }), this.terminateOptimisticProgressUpdateInterval(t)) : this.initiateOptimisticProgressUpdateInterval(t)
-                    }), C(this, "handleSendHeartbeatFailure", e => {
+                    }), O(this, "handleSendHeartbeatFailure", e => {
                         let {
                             streamKey: t
                         } = e;
-                        U.log("~ handleSendHeartbeatFailure -> Heartbeat failed:", t), this.terminateOptimisticProgressUpdateInterval(t)
-                    }), C(this, "handleQuestsFetchCurrentQuestsSuccess", e => {
+                        L.log("~ handleSendHeartbeatFailure -> Heartbeat failed:", t), this.terminateOptimisticProgressUpdateInterval(t)
+                    }), O(this, "handleQuestsFetchCurrentQuestsSuccess", e => {
                         let {
                             quests: t
                         } = e;
-                        U.log("~ handleQuestsFetchCurrentQuestsSuccess -> Quests fetched:", t);
+                        L.log("~ handleQuestsFetchCurrentQuestsSuccess -> Quests fetched:", t);
                         let n = o.default.getRunningGames().map(e => e.id);
                         t.forEach(e => {
-                            if (B(e) && (0, f.shouldUsePlayOnDesktopTask)({
+                            if (P(e) && (0, f.shouldUsePlayOnDesktopTask)({
                                     quest: e,
-                                    location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                                    location: N.QuestsExperimentLocations.QUESTS_MANAGER
                                 })) {
-                                let t = b(e.id),
-                                    i = n.includes(N.SharedQuestFields.build(e.config).application.id),
+                                let t = v(e.id),
+                                    i = n.includes(m.SharedQuestFields.build(e.config).application.id),
                                     r = !this.streamKeyToHeartbeatState.has(t) && i;
                                 this.streamKeyToHeartbeatState.has(t) && !i ? this.terminateHeartbeat({
                                     streamKey: t,
                                     sendTerminalHeartbeat: !0
-                                }) : r && (U.log("handleQuestsFetchCurrentQuestsSuccess - initiating heartbeat for playtime task"), this.initiateHeartbeat({
+                                }) : r && (L.log("handleQuestsFetchCurrentQuestsSuccess - initiating heartbeat for playtime task"), this.initiateHeartbeat({
                                     streamKey: t,
-                                    applicationId: N.SharedQuestFields.build(e.config).application.id,
+                                    applicationId: m.SharedQuestFields.build(e.config).application.id,
                                     questId: e.id
                                 }))
                             }
                         })
-                    }), C(this, "handleRunningGamesChange", e => {
+                    }), O(this, "handleRunningGamesChange", e => {
                         (0, S.isEligibleForQuestPlaytime)({
-                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
-                        }) && this._handlePlayOnDesktopQuestsUpdate(e), !(this.instantiatedAt + R > Date.now() || T.default.lastFetchedCurrentQuests + R > Date.now()) && this.maybeFetchCurrentQuests()
-                    }), C(this, "_handlePlayOnDesktopQuestsUpdate", e => {
+                            location: N.QuestsExperimentLocations.QUESTS_MANAGER
+                        }) && this._handlePlayOnDesktopQuestsUpdate(e)
+                    }), O(this, "_handlePlayOnDesktopQuestsUpdate", e => {
                         let {
                             removed: t,
                             games: n
                         } = e;
-                        U.log("~ handleRunningGamesChange -> Games detected:", {
+                        L.log("~ handleRunningGamesChange -> Games detected:", {
                             runningGames: n,
                             removedGames: t
                         }), n.forEach(e => {
                             if (null == e.id) return;
                             let t = (0, f.getPlayOnDesktopQuestByApplicationId)(T.default.quests, e.id);
-                            if (null == t || !B(t)) return;
-                            let n = b(t.id);
+                            if (null == t || !P(t)) return;
+                            let n = v(t.id);
                             (0, f.shouldUsePlayOnDesktopTask)({
                                 quest: t,
-                                location: p.QuestsExperimentLocations.QUESTS_MANAGER
-                            }) && !this.streamKeyToHeartbeatState.has(n) && (U.log("handleRunningGamesChange - initiating heartbeat for playtime task"), this.initiateHeartbeat({
+                                location: N.QuestsExperimentLocations.QUESTS_MANAGER
+                            }) && !this.streamKeyToHeartbeatState.has(n) && (L.log("handleRunningGamesChange - initiating heartbeat for playtime task"), this.initiateHeartbeat({
                                 streamKey: n,
-                                applicationId: N.SharedQuestFields.build(t.config).application.id,
+                                applicationId: m.SharedQuestFields.build(t.config).application.id,
                                 questId: t.id
                             }))
                         }), t.forEach(e => {
                             if (null == e.id) return;
                             let t = (0, f.getPlayOnDesktopQuestByApplicationId)(T.default.quests, e.id);
-                            if (null == t || !B(t)) return;
-                            let n = b(t.id);
+                            if (null == t || !P(t)) return;
+                            let n = v(t.id);
                             (0, f.shouldUsePlayOnDesktopTask)({
                                 quest: t,
-                                location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                                location: N.QuestsExperimentLocations.QUESTS_MANAGER
                             }) && this.streamKeyToHeartbeatState.has(n) && this.terminateHeartbeat({
                                 streamKey: n,
                                 sendTerminalHeartbeat: !0
                             })
                         })
-                    }), C(this, "handleVoiceStateChange", () => {
+                    }), O(this, "handleVoiceStateChange", () => {
                         let e = u.default.getCurrentUserActiveStream(),
-                            t = G();
+                            t = D();
                         null != e && this._handleVoiceStateChange({
                             streamKey: (0, l.encodeStreamKey)(e),
                             channelId: e.channelId,
@@ -192052,43 +192216,43 @@
                         let {
                             quest: n,
                             activity: i
-                        } = x();
+                        } = b();
                         null != i && this._handleVoiceStateChange({
-                            streamKey: b(i.channelId),
+                            streamKey: v(i.channelId),
                             channelId: i.channelId,
                             quest: n
                         })
-                    }), C(this, "_handleVoiceStateChange", e => {
+                    }), O(this, "_handleVoiceStateChange", e => {
                         let {
                             streamKey: t,
                             channelId: n,
                             quest: i
-                        } = e, r = null == i || !k(n), s = k(n) && !this.streamKeyToHeartbeatState.has(t) && null != i && B(i) && !(0, f.shouldUsePlayOnDesktopTask)({
+                        } = e, r = null == i || !y(n), s = y(n) && !this.streamKeyToHeartbeatState.has(t) && null != i && P(i) && !(0, f.shouldUsePlayOnDesktopTask)({
                             quest: i,
-                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
+                            location: N.QuestsExperimentLocations.QUESTS_MANAGER
                         });
                         r ? this.terminateHeartbeat({
                             streamKey: t,
                             sendTerminalHeartbeat: !0
-                        }) : s && (U.log("handleVoiceStateChange - initiating heartbeat for stream task"), this.initiateHeartbeat({
+                        }) : s && (L.log("handleVoiceStateChange - initiating heartbeat for stream task"), this.initiateHeartbeat({
                             streamKey: t,
-                            applicationId: N.SharedQuestFields.build(i.config).application.id,
+                            applicationId: m.SharedQuestFields.build(i.config).application.id,
                             questId: i.id
                         }))
-                    }), C(this, "handleEmbeddedActivityUpdate", e => {
+                    }), O(this, "handleEmbeddedActivityUpdate", e => {
                         let {
                             quest: t,
                             activity: n
-                        } = x(e), i = b(e), r = (null == n || null == t) && this.streamKeyToHeartbeatState.has(i), s = null != n && null != t && B(t) && k(e) && !this.streamKeyToHeartbeatState.has(i);
+                        } = b(e), i = v(e), r = (null == n || null == t) && this.streamKeyToHeartbeatState.has(i), s = null != n && null != t && P(t) && y(e) && !this.streamKeyToHeartbeatState.has(i);
                         r ? this.terminateHeartbeat({
                             streamKey: i,
                             sendTerminalHeartbeat: !0
-                        }) : s && (U.log("handleRunningGamesChange - initiating heartbeat for activity task"), this.initiateHeartbeat({
+                        }) : s && (L.log("handleRunningGamesChange - initiating heartbeat for activity task"), this.initiateHeartbeat({
                             streamKey: i,
-                            applicationId: N.SharedQuestFields.build(t.config).application.id,
+                            applicationId: m.SharedQuestFields.build(t.config).application.id,
                             questId: t.id
                         }))
-                    }), C(this, "handleStreamCreate", e => {
+                    }), O(this, "handleStreamCreate", e => {
                         let {
                             streamKey: t
                         } = e, {
@@ -192096,7 +192260,7 @@
                             ownerId: i
                         } = (0, l.decodeStreamKey)(t);
                         if (i !== d.default.getId()) return;
-                        let r = G();
+                        let r = D();
                         if (null == r) {
                             this.terminateHeartbeat({
                                 streamKey: t,
@@ -192104,20 +192268,20 @@
                             });
                             return
                         }
-                        k(n) && B(r) && !(0, f.shouldUsePlayOnDesktopTask)({
+                        y(n) && P(r) && !(0, f.shouldUsePlayOnDesktopTask)({
                             quest: r,
-                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
-                        }) && !this.streamKeyToHeartbeatState.has(t) && (U.log("handleStreamCreate - initiating heartbeat for stream task"), this.initiateHeartbeat({
+                            location: N.QuestsExperimentLocations.QUESTS_MANAGER
+                        }) && !this.streamKeyToHeartbeatState.has(t) && (L.log("handleStreamCreate - initiating heartbeat for stream task"), this.initiateHeartbeat({
                             streamKey: t,
-                            applicationId: N.SharedQuestFields.build(r.config).application.id,
+                            applicationId: m.SharedQuestFields.build(r.config).application.id,
                             questId: r.id
                         }))
-                    }), C(this, "handleStreamStart", e => {
+                    }), O(this, "handleStreamStart", e => {
                         let {
                             streamType: t,
                             guildId: n,
                             channelId: i
-                        } = e, r = G(), s = (0, l.encodeStreamKey)({
+                        } = e, r = D(), s = (0, l.encodeStreamKey)({
                             streamType: t,
                             guildId: n,
                             channelId: i,
@@ -192126,15 +192290,15 @@
                         null == r ? this.terminateHeartbeat({
                             streamKey: s,
                             sendTerminalHeartbeat: !0
-                        }) : k(i) && B(r) && !(0, f.shouldUsePlayOnDesktopTask)({
+                        }) : y(i) && P(r) && !(0, f.shouldUsePlayOnDesktopTask)({
                             quest: r,
-                            location: p.QuestsExperimentLocations.QUESTS_MANAGER
-                        }) && !this.streamKeyToHeartbeatState.has(s) && (U.log("handleStreamStart - initiating heartbeat for stream task"), this.initiateHeartbeat({
+                            location: N.QuestsExperimentLocations.QUESTS_MANAGER
+                        }) && !this.streamKeyToHeartbeatState.has(s) && (L.log("handleStreamStart - initiating heartbeat for stream task"), this.initiateHeartbeat({
                             streamKey: s,
-                            applicationId: N.SharedQuestFields.build(r.config).application.id,
+                            applicationId: m.SharedQuestFields.build(r.config).application.id,
                             questId: r.id
                         }))
-                    }), C(this, "handleStreamClose", e => {
+                    }), O(this, "handleStreamClose", e => {
                         let {
                             streamKey: t
                         } = e;
@@ -192142,20 +192306,11 @@
                             streamKey: t,
                             sendTerminalHeartbeat: !0
                         })
-                    }), C(this, "handleUserSettingsProtoUpdate", e => {
-                        let {
-                            partial: t,
-                            settings: n,
-                            wasSaved: i
-                        } = e;
-                        if ("localization" in n.proto && !!t && !i) !(Date.now() - this.lastFetchedQuestForLocaleChangeAt <= P) && (this.lastFetchedQuestForLocaleChangeAt = Date.now(), this.maybeFetchCurrentQuests())
-                    }), C(this, "actions", {
-                        QUESTS_FETCH_CURRENT_QUESTS_BEGIN: this.handleQuestsFetchCurrentQuestsBegin,
+                    }), O(this, "actions", {
                         QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: this.handleQuestsFetchCurrentQuestsSuccess,
                         QUESTS_ENROLL_SUCCESS: this.handleEnrollmentSuccess,
                         QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,
                         QUESTS_SEND_HEARTBEAT_FAILURE: this.handleSendHeartbeatFailure,
-                        POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
                         RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
                         STREAM_START: this.handleStreamStart,
                         STREAM_CREATE: this.handleStreamCreate,
@@ -192173,13 +192328,11 @@
                                 location: t
                             } = e;
                             return this.handleEmbeddedActivityUpdate(t.channel_id)
-                        },
-                        USER_SETTINGS_PROTO_UPDATE: this.handleUserSettingsProtoUpdate,
-                        LOGOUT: this.handleLogout
+                        }
                     })
                 }
             }
-            t.default = new F
+            t.default = new G
         },
         566078: function(e, t, n) {
             "use strict";
@@ -211223,8 +211376,11 @@
         877485: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useSimplifiedProfileFriendingExperiment: function() {
+                getSimplifiedProfileFriendingExperimentConfig: function() {
                     return r
+                },
+                useSimplifiedProfileFriendingExperiment: function() {
+                    return s
                 }
             });
             let i = (0, n("818083").createExperiment)({
@@ -211252,6 +211408,19 @@
                     }]
                 }),
                 r = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !0,
+                        trackExposureOptions: r = {}
+                    } = e;
+                    return i.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: n,
+                        trackExposureOptions: r
+                    })
+                },
+                s = e => {
                     let {
                         location: t,
                         autoTrackExposure: n = !0,
@@ -212207,10 +212376,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return S
                 },
                 maybeFetchUserProfileForPopout: function() {
-                    return T
+                    return f
                 }
             }), n("411104");
             var i = n("570140"),
@@ -212223,10 +212392,11 @@
                 d = n("271383"),
                 _ = n("342656"),
                 c = n("447452"),
-                E = n("621853"),
-                I = n("120569");
+                E = n("877485"),
+                I = n("621853"),
+                T = n("120569");
 
-            function T() {
+            function f() {
                 let e, t, n;
                 for (var i, r, s = arguments.length, a = Array(s), o = 0; o < s; o++) a[o] = arguments[o];
                 let u = a[0],
@@ -212235,20 +212405,24 @@
                 else if (u instanceof l.default && ("object" == typeof d || null == d)) e = u.id, t = u.getAvatarURL(void 0, 80), n = d;
                 else throw Error("Invalid arguments");
                 if (null == e) return Promise.resolve();
-                let E = (0, _.isInProfileMutualsExperiment)().enabled || (0, c.getSimplifiedProfileExperimentConfig)({
-                    location: "maybeFetchUserProfileForPopout",
-                    autoTrackExposure: !1
-                }).basicsEnabled;
-                return f(e, t, {
-                    withMutualFriends: null !== (i = null == n ? void 0 : n.withMutualFriends) && void 0 !== i ? i : E,
-                    withMutualGuilds: null !== (r = null == n ? void 0 : n.withMutualGuilds) && void 0 !== r ? r : E,
+                let I = (0, E.getSimplifiedProfileFriendingExperimentConfig)({
+                        location: "maybeFetchUserProfileForPopout",
+                        autoTrackExposure: !1
+                    }),
+                    T = (0, _.isInProfileMutualsExperiment)().enabled || (0, c.getSimplifiedProfileExperimentConfig)({
+                        location: "maybeFetchUserProfileForPopout",
+                        autoTrackExposure: !1
+                    }).basicsEnabled || I.originalFriendingEnabled || I.improvedFriendingEnabled;
+                return S(e, t, {
+                    withMutualFriends: null !== (i = null == n ? void 0 : n.withMutualFriends) && void 0 !== i ? i : T,
+                    withMutualGuilds: null !== (r = null == n ? void 0 : n.withMutualGuilds) && void 0 !== r ? r : T,
                     ...n
                 })
             }
-            async function f(e, t) {
+            async function S(e, t) {
                 var n, l, _;
                 let c, {
-                    withMutualGuilds: T = !1,
+                    withMutualGuilds: E = !1,
                     withMutualFriendsCount: f = !1,
                     withMutualFriends: S = !1,
                     friendToken: h,
@@ -212259,23 +212433,23 @@
                     abortSignal: O
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 if ("" === e) return;
-                (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != N && !T && (T = !0), null != N && (c = null !== (l = null === (n = (0, a.getVisibleConnectionsRole)({
+                (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != N && !E && (E = !0), null != N && (c = null !== (l = null === (n = (0, a.getVisibleConnectionsRole)({
                     guildMember: d.default.getMember(N, e),
                     channel: u.default.getChannel(p)
                 })) || void 0 === n ? void 0 : n.id) && void 0 !== l ? l : void 0);
-                let C = E.default.getUserProfile(e),
-                    R = E.default.getMutualGuilds(e),
-                    g = E.default.getMutualFriends(e),
-                    L = E.default.getMutualFriendsCount(e),
-                    v = E.default.isFetchingProfile(e),
-                    D = !Array.isArray(R) && T,
+                let C = I.default.getUserProfile(e),
+                    R = I.default.getMutualGuilds(e),
+                    g = I.default.getMutualFriends(e),
+                    L = I.default.getMutualFriendsCount(e),
+                    v = I.default.isFetchingProfile(e),
+                    D = !Array.isArray(R) && E,
                     M = !Array.isArray(g) && S,
                     y = null == L && f,
                     P = (null == C ? void 0 : C.profileFetchFailed) || !v && (D || y || M),
-                    U = A ? I.default : void 0,
+                    U = A ? T.default : void 0,
                     b = !1;
-                null != N && (b = null == E.default.getGuildMemberProfile(e, N)), !(!P && !b && (v || Date.now() - (null !== (_ = null == C ? void 0 : C.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
-                    withMutualGuilds: T,
+                null != N && (b = null == I.default.getGuildMemberProfile(e, N)), !(!P && !b && (v || Date.now() - (null !== (_ = null == C ? void 0 : C.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
+                    withMutualGuilds: E,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
@@ -212283,7 +212457,7 @@
                     connectionsRoleId: c,
                     abortSignal: O
                 }, U)) : await (0, r.fetchProfile)(e, {
-                    withMutualGuilds: T,
+                    withMutualGuilds: E,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
@@ -213349,7 +213523,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return c
                 }
             });
             var i = n("735250");
@@ -213359,26 +213533,32 @@
                 a = n("442837"),
                 o = n("594174"),
                 l = n("447452"),
-                u = n("788197"),
-                d = n("969835");
+                u = n("877485"),
+                d = n("788197"),
+                _ = n("969835");
 
-            function _(e) {
+            function c(e) {
                 let {
                     location: t,
                     userId: n,
                     user: r,
-                    ..._
+                    ...c
                 } = e, {
-                    basicsEnabled: c
+                    basicsEnabled: E
                 } = (0, l.useSimplifiedProfileExperiment)({
                     location: t
-                }), E = (0, a.useStateFromStores)([o.default], () => o.default.getUser(n), [n]), I = null != r ? r : E;
-                return (s()(null != I, "Unexpected missing user"), !c || I.bot || I.isNonUserBot() || I.isClyde()) ? (0, i.jsx)(u.default, {
-                    ..._,
-                    user: I
+                }), {
+                    originalFriendingEnabled: I,
+                    improvedFriendingEnabled: T
+                } = (0, u.useSimplifiedProfileFriendingExperiment)({
+                    location: t
+                }), f = (0, a.useStateFromStores)([o.default], () => o.default.getUser(n), [n]), S = null != r ? r : f;
+                return (s()(null != S, "Unexpected missing user"), (E || I || T) && !S.bot && !S.isNonUserBot() && !S.isClyde()) ? (0, i.jsx)(_.default, {
+                    ...c,
+                    user: S
                 }) : (0, i.jsx)(d.default, {
-                    ..._,
-                    user: I
+                    ...c,
+                    user: S
                 })
             }
         },
@@ -213809,11 +213989,15 @@
                             children: (0, i.jsxs)("span", {
                                 className: V,
                                 children: [(0, i.jsxs)("div", {
-                                    className: a()(I.content, I.clamp, I.placeholderWidth, k),
+                                    className: a()(I.content, I.clamp, I.placeholderWidth, {
+                                        [I.panel]: n === E.UserProfileTypes.PANEL
+                                    }),
                                     ref: p,
                                     children: [G(), w()]
                                 }), (0, i.jsxs)("div", {
-                                    className: a()(I.content, I.unclamp, I.placeholderWidth, I.incorporeal, k),
+                                    className: a()(I.content, I.unclamp, I.placeholderWidth, I.incorporeal, {
+                                        [I.panel]: n === E.UserProfileTypes.PANEL
+                                    }),
                                     ref: m,
                                     children: [G(), w()]
                                 })]
@@ -213883,6 +214067,91 @@
                         height: 16
                     })
                 }) : null
+            }
+        },
+        91433: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return I
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                s = n.n(r),
+                a = n("481060"),
+                o = n("194359"),
+                l = n("906732"),
+                u = n("5192"),
+                d = n("877485"),
+                _ = n("785717"),
+                c = n("689938"),
+                E = n("125188");
+
+            function I(e) {
+                let {
+                    user: t,
+                    guildId: n,
+                    channelId: r,
+                    friendToken: I,
+                    className: T
+                } = e, f = u.default.getName(n, r, t), {
+                    trackUserProfileAction: S
+                } = (0, _.useUserProfileAnalyticsContext)(), {
+                    newestAnalyticsLocation: h
+                } = (0, l.default)(), {
+                    originalFriendingEnabled: A,
+                    improvedFriendingEnabled: m
+                } = (0, d.useSimplifiedProfileFriendingExperiment)({
+                    location: "UserProfileIncomingFriendRequestBanner"
+                });
+                return (0, i.jsxs)("div", {
+                    className: s()(E.container, T),
+                    children: [(0, i.jsx)(a.Text, {
+                        variant: "text-sm/normal",
+                        children: c.default.Messages.NOTIFICATION_CENTER_INCOMING_FRIEND_REQUEST.format({
+                            username: f
+                        })
+                    }), (0, i.jsxs)("div", {
+                        className: E.buttonContainer,
+                        children: [(0, i.jsx)(a.Button, {
+                            look: a.Button.Looks.FILLED,
+                            color: s()({
+                                [a.Button.Colors.GREEN]: A,
+                                [a.Button.Colors.BRAND]: m,
+                                [E.color]: m
+                            }),
+                            size: a.Button.Sizes.SMALL,
+                            className: E.button,
+                            onClick: () => {
+                                S({
+                                    action: "ACCEPT_FRIEND_REQUEST"
+                                }), o.default.addRelationship({
+                                    userId: t.id,
+                                    friendToken: I,
+                                    context: {
+                                        location: h
+                                    }
+                                })
+                            },
+                            children: c.default.Messages.FRIEND_REQUEST_ACCEPT
+                        }), (0, i.jsx)(a.Button, {
+                            look: a.Button.Looks.FILLED,
+                            color: a.Button.Colors.PRIMARY,
+                            size: a.Button.Sizes.SMALL,
+                            className: E.button,
+                            onClick: () => {
+                                S({
+                                    action: "IGNORE_FRIEND_REQUEST"
+                                }), o.default.cancelFriendRequest(t.id, {
+                                    location: h
+                                })
+                            },
+                            children: c.default.Messages.FRIEND_REQUEST_IGNORE
+                        })]
+                    })]
+                })
             }
         },
         256226: function(e, t, n) {
@@ -214372,19 +214641,19 @@
 
             function u(e) {
                 let {
-                    icon: t,
-                    text: n,
+                    text: t,
+                    icon: n,
                     compact: r,
                     className: u,
                     innerClassName: d,
                     ..._
-                } = e, c = (0, i.jsx)(t, {
+                } = e, c = null != n ? (0, i.jsx)(n, {
                     width: 16,
                     height: 16,
                     color: "currentColor"
-                });
+                }) : null;
                 return r ? (0, i.jsx)(o.TooltipContainer, {
-                    text: n,
+                    text: t,
                     "aria-label": _["aria-label"],
                     children: (0, i.jsx)(a.Button, {
                         className: s()(l.compactButton, u),
@@ -214401,9 +214670,9 @@
                     innerClassName: s()(l.button, d),
                     color: s()(a.ButtonColors.PRIMARY, l.color),
                     look: a.Button.Looks.FILLED,
-                    size: a.Button.Sizes.MEDIUM,
+                    size: a.Button.Sizes.SMALL,
                     ..._,
-                    children: [c, n]
+                    children: [c, t]
                 })
             }
         },
@@ -214473,7 +214742,7 @@
                 })
             }
         },
-        544989: function(e, t, n) {
+        564440: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -214485,7 +214754,7 @@
             var r = n("120356"),
                 s = n.n(r),
                 a = n("228168"),
-                o = n("674484");
+                o = n("772892");
 
             function l(e) {
                 let {
@@ -214506,7 +214775,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return f
                 }
             });
             var i = n("735250");
@@ -214517,54 +214786,61 @@
                 o = n("314897"),
                 l = n("430824"),
                 u = n("185403"),
-                d = n("785717"),
-                _ = n("841040"),
-                c = n("993409"),
-                E = n("689938");
+                d = n("877485"),
+                _ = n("785717"),
+                c = n("841040"),
+                E = n("993409"),
+                I = n("228168"),
+                T = n("689938");
 
-            function I(e) {
+            function f(e) {
                 let {
                     user: t,
                     guildId: n,
-                    onClose: I
-                } = e, T = (0, r.useStateFromStores)([o.default], () => o.default.getId() === t.id), f = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getGuild(n) : null), {
-                    trackUserProfileAction: S
-                } = (0, d.useUserProfileAnalyticsContext)(), h = (0, a.default)();
-                return T ? null == f ? (0, i.jsx)(c.default, {
-                    icon: u.default,
-                    text: E.default.Messages.EDIT_PROFILE,
+                    profileType: f,
+                    onClose: S
+                } = e, h = (0, r.useStateFromStores)([o.default], () => o.default.getId() === t.id), A = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getGuild(n) : null), {
+                    originalFriendingEnabled: m
+                } = (0, d.useSimplifiedProfileFriendingExperiment)({
+                    location: "UserProfileEditMenuButton"
+                }), {
+                    trackUserProfileAction: N
+                } = (0, _.useUserProfileAnalyticsContext)(), p = (0, a.default)(), O = m && f === I.UserProfileTypes.FULL_SIZE ? void 0 : u.default;
+                return h ? null == A ? (0, i.jsx)(E.default, {
+                    icon: O,
+                    text: T.default.Messages.EDIT_PROFILE,
                     autoFocus: !0,
                     onClick: () => {
-                        S({
+                        N({
                             action: "EDIT_PROFILE"
-                        }), null == I || I(), h()
+                        }), null == S || S(), p()
                     }
                 }) : (0, i.jsx)(s.Popout, {
                     renderPopout: e => {
                         let {
                             closePopout: t
                         } = e;
-                        return (0, i.jsx)(_.default, {
-                            guild: f,
+                        return (0, i.jsx)(c.default, {
+                            guild: A,
                             onClose: () => {
-                                t(), null == I || I()
+                                t(), null == S || S()
                             }
                         })
                     },
-                    children: e => (0, i.jsx)(c.default, {
-                        icon: u.default,
-                        text: E.default.Messages.EDIT_PROFILE,
+                    children: e => (0, i.jsx)(E.default, {
+                        icon: O,
+                        text: T.default.Messages.EDIT_PROFILE,
                         autoFocus: !0,
                         ...e
                     })
                 }) : null
             }
         },
-        301984: function(e, t, n) {
+        329831: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return p
                 }
             });
             var i = n("735250");
@@ -214581,31 +214857,40 @@
                 E = n("314897"),
                 I = n("699516"),
                 T = n("465670"),
-                f = n("785717"),
-                S = n("537387"),
-                h = n("981631"),
-                A = n("689938");
+                f = n("877485"),
+                S = n("785717"),
+                h = n("537387"),
+                A = n("228168"),
+                m = n("981631"),
+                N = n("689938");
 
-            function m(e) {
+            function p(e) {
                 let {
                     user: t,
-                    acceptFriendRequestColor: n,
-                    friendToken: m
+                    friendToken: n,
+                    acceptFriendRequestColor: p,
+                    profileType: O
                 } = e, {
-                    trackUserProfileAction: N
-                } = (0, f.useUserProfileAnalyticsContext)(), p = (0, r.useStateFromStores)([E.default], () => E.default.getId() === (null == t ? void 0 : t.id)), O = (0, r.useStateFromStores)([I.default], () => null != t ? I.default.getRelationshipType(t.id) : h.RelationshipTypes.NONE), {
-                    analyticsLocations: C,
-                    newestAnalyticsLocation: R
-                } = (0, _.default)(), g = (0, c.default)({
+                    trackUserProfileAction: C
+                } = (0, S.useUserProfileAnalyticsContext)(), {
+                    originalFriendingEnabled: R,
+                    improvedFriendingEnabled: g
+                } = (0, f.useSimplifiedProfileFriendingExperiment)({
+                    location: "UserProfileFriendRequestOverlayButtons"
+                }), L = (0, r.useStateFromStores)([E.default], () => E.default.getId() === (null == t ? void 0 : t.id)), v = (0, r.useStateFromStores)([I.default], () => null != t ? I.default.getRelationshipType(t.id) : m.RelationshipTypes.NONE), {
+                    analyticsLocations: D,
+                    newestAnalyticsLocation: M
+                } = (0, _.default)(), y = (0, c.default)({
                     user: t,
                     color: "danger",
-                    location: R,
-                    onAction: () => N({
+                    location: M,
+                    onAction: () => C({
                         action: "REMOVE_FRIEND",
-                        analyticsLocations: C
+                        analyticsLocations: D
                     })
                 });
-                return null == t || t.bot || p || O === h.RelationshipTypes.BLOCKED ? null : O === h.RelationshipTypes.FRIEND ? (0, i.jsx)(u.Popout, {
+                if (null == t || t.bot || L || v === m.RelationshipTypes.BLOCKED) return null;
+                if (v === m.RelationshipTypes.FRIEND) return (0, i.jsx)(u.Popout, {
                     renderPopout: e => {
                         let {
                             closePopout: t
@@ -214614,58 +214899,72 @@
                             navId: "user-profile-friend-request-buttons",
                             onSelect: void 0,
                             onClose: t,
-                            "aria-label": A.default.Messages.FRIEND_ACTIONS_MENU_LABEL,
-                            children: g
+                            "aria-label": N.default.Messages.FRIEND_ACTIONS_MENU_LABEL,
+                            children: y
                         })
                     },
-                    children: e => (0, i.jsx)(S.default, {
+                    children: e => (0, i.jsx)(h.default, {
                         icon: a.UserCheckIcon,
-                        text: A.default.Messages.FRIENDS,
+                        text: N.default.Messages.FRIENDS,
                         ...e
                     })
-                }) : O === h.RelationshipTypes.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(S.default, {
+                });
+                if (v === m.RelationshipTypes.PENDING_INCOMING) return g && O === A.UserProfileTypes.FULL_SIZE ? null : (g || R) && O !== A.UserProfileTypes.PANEL ? (0, i.jsx)(h.default, {
+                    icon: o.UserClockIcon,
+                    text: N.default.Messages.FRIENDS_SECTION_PENDING,
+                    disabled: !0
+                }) : (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(h.default, {
                         icon: e => (0, i.jsx)(s.CheckmarkLargeIcon, {
                             ...e,
-                            color: null != n ? n : u.tokens.colors.TEXT_BRAND
+                            color: null != p ? p : u.tokens.colors.TEXT_BRAND
                         }),
-                        text: A.default.Messages.ACCEPT_FRIEND_REQUEST,
+                        text: N.default.Messages.ACCEPT_FRIEND_REQUEST,
                         onClick: () => {
-                            N({
+                            C({
                                 action: "ACCEPT_FRIEND_REQUEST"
                             }), d.default.addRelationship({
                                 userId: t.id,
-                                friendToken: m
+                                friendToken: n,
+                                context: {
+                                    location: M
+                                }
                             })
                         }
-                    }), (0, i.jsx)(S.default, {
+                    }), (0, i.jsx)(h.default, {
                         icon: T.default,
-                        text: A.default.Messages.IGNORE_FRIEND_REQUEST,
+                        text: N.default.Messages.IGNORE_FRIEND_REQUEST,
                         onClick: () => {
-                            N({
+                            C({
                                 action: "IGNORE_FRIEND_REQUEST"
-                            }), d.default.cancelFriendRequest(t.id)
+                            }), d.default.cancelFriendRequest(t.id, {
+                                location: M
+                            })
                         }
                     })]
-                }) : O === h.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(S.default, {
+                });
+                return v === m.RelationshipTypes.PENDING_OUTGOING && (!g || g && O === A.UserProfileTypes.BITE_SIZE) ? (0, i.jsx)(h.default, {
                     icon: o.UserClockIcon,
-                    text: A.default.Messages.REQUEST_SENT,
+                    text: g || R ? N.default.Messages.FRIENDS_SECTION_PENDING : N.default.Messages.REQUEST_SENT,
                     disabled: !0
-                }) : (0, i.jsx)(S.default, {
+                }) : !g || g && O === A.UserProfileTypes.BITE_SIZE ? (0, i.jsx)(h.default, {
                     icon: l.UserPlusIcon,
-                    text: A.default.Messages.ADD_FRIEND,
+                    text: N.default.Messages.ADD_FRIEND,
                     onClick: () => {
-                        N({
+                        C({
                             action: "SEND_FRIEND_REQUEST"
                         }), d.default.addRelationship({
                             userId: t.id,
-                            friendToken: m
+                            friendToken: n,
+                            context: {
+                                location: M
+                            }
                         })
                     }
-                })
+                }) : null
             }
         },
-        94918: function(e, t, n) {
+        441580: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -214712,7 +215011,7 @@
                 })
             }
         },
-        664794: function(e, t, n) {
+        146331: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -215093,10 +215392,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 closeUserProfileModal: function() {
-                    return _
+                    return c
                 },
                 openUserProfileModal: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("570140"),
@@ -215104,66 +215403,70 @@
                 s = n("594174"),
                 a = n("342656"),
                 o = n("447452"),
-                l = n("484459"),
-                u = n("981631");
+                l = n("877485"),
+                u = n("484459"),
+                d = n("981631");
 
-            function d(e) {
+            function _(e) {
                 let {
                     userId: t,
                     section: n,
-                    guildId: d = u.ME,
-                    channelId: _,
-                    messageId: c,
-                    roleId: E,
-                    friendToken: I,
-                    autoFocusNote: T,
-                    analyticsLocation: f,
-                    sourceAnalyticsLocations: S
-                } = e, h = s.default.getUser(t), A = null != d && d !== u.ME ? d : void 0, m = (0, a.isInProfileMutualsExperiment)().enabled || (0, o.getSimplifiedProfileExperimentConfig)({
+                    guildId: _ = d.ME,
+                    channelId: c,
+                    messageId: E,
+                    roleId: I,
+                    friendToken: T,
+                    autoFocusNote: f,
+                    analyticsLocation: S,
+                    sourceAnalyticsLocations: h
+                } = e, A = s.default.getUser(t), m = null != _ && _ !== d.ME ? _ : void 0, N = (0, l.getSimplifiedProfileFriendingExperimentConfig)({
                     location: "openUserProfileModal",
                     autoTrackExposure: !1
-                }).basicsEnabled;
-                if (null == h) return (0, r.fetchProfile)(t, {
-                    guildId: A,
+                }), p = (0, a.isInProfileMutualsExperiment)().enabled || (0, o.getSimplifiedProfileExperimentConfig)({
+                    location: "openUserProfileModal",
+                    autoTrackExposure: !1
+                }).basicsEnabled || N.originalFriendingEnabled || N.improvedFriendingEnabled;
+                if (null == A) return (0, r.fetchProfile)(t, {
+                    guildId: m,
                     withMutualGuilds: !0,
-                    withMutualFriends: m,
-                    friendToken: I
+                    withMutualFriends: p,
+                    friendToken: T
                 }).then(() => {
                     i.default.dispatch({
                         type: "USER_PROFILE_MODAL_OPEN",
                         userId: t,
                         section: n,
-                        guildId: null != d ? d : void 0,
-                        channelId: null != _ ? _ : void 0,
-                        messageId: null != c ? c : void 0,
-                        roleId: null != E ? E : void 0,
-                        friendToken: I,
-                        autoFocusNote: T,
-                        analyticsLocation: f,
-                        sourceAnalyticsLocations: S
+                        guildId: null != _ ? _ : void 0,
+                        channelId: null != c ? c : void 0,
+                        messageId: null != E ? E : void 0,
+                        roleId: null != I ? I : void 0,
+                        friendToken: T,
+                        autoFocusNote: f,
+                        analyticsLocation: S,
+                        sourceAnalyticsLocations: h
                     })
                 });
-                (0, l.maybeFetchUserProfileForPopout)(h, {
-                    guildId: A,
+                (0, u.maybeFetchUserProfileForPopout)(A, {
+                    guildId: m,
                     withMutualGuilds: !0,
-                    withMutualFriends: m,
-                    friendToken: I
+                    withMutualFriends: p,
+                    friendToken: T
                 }), i.default.dispatch({
                     type: "USER_PROFILE_MODAL_OPEN",
                     userId: t,
                     section: n,
-                    guildId: null != d ? d : void 0,
-                    channelId: null != _ ? _ : void 0,
-                    messageId: null != c ? c : void 0,
-                    roleId: null != E ? E : void 0,
-                    friendToken: I,
-                    autoFocusNote: T,
-                    analyticsLocation: f,
-                    sourceAnalyticsLocations: S
+                    guildId: null != _ ? _ : void 0,
+                    channelId: null != c ? c : void 0,
+                    messageId: null != E ? E : void 0,
+                    roleId: null != I ? I : void 0,
+                    friendToken: T,
+                    autoFocusNote: f,
+                    analyticsLocation: S,
+                    sourceAnalyticsLocations: h
                 })
             }
 
-            function _() {
+            function c() {
                 i.default.dispatch({
                     type: "USER_PROFILE_MODAL_CLOSE"
                 })
@@ -216782,7 +217085,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return L
                 }
             });
             var i = n("735250"),
@@ -216790,95 +217093,111 @@
                 s = n("442837"),
                 a = n("954138"),
                 o = n("979264"),
-                l = n("246946"),
-                u = n("5192"),
-                d = n("447452"),
-                _ = n("741308"),
-                c = n("681837"),
-                E = n("724593"),
-                I = n("530"),
-                T = n("790711"),
-                f = n("580512"),
-                S = n("67152"),
-                h = n("579285"),
-                A = n("287612"),
-                m = n("228168"),
-                N = n("981631"),
-                p = n("153362");
+                l = n("699516"),
+                u = n("246946"),
+                d = n("5192"),
+                _ = n("447452"),
+                c = n("877485"),
+                E = n("741308"),
+                I = n("681837"),
+                T = n("91433"),
+                f = n("724593"),
+                S = n("502762"),
+                h = n("530"),
+                A = n("790711"),
+                m = n("580512"),
+                N = n("67152"),
+                p = n("579285"),
+                O = n("287612"),
+                C = n("228168"),
+                R = n("981631"),
+                g = n("153362");
 
-            function O(e) {
+            function L(e) {
                 let {
                     user: t,
                     currentUser: n,
-                    displayProfile: O,
-                    guild: C,
-                    isHovering: R,
-                    onOpenProfile: g,
-                    channelId: L,
-                    onClose: v
+                    displayProfile: L,
+                    guild: v,
+                    isHovering: D,
+                    onOpenProfile: M,
+                    channelId: y,
+                    onClose: P
                 } = e, {
-                    moreUserDetailsEnabled: D
-                } = (0, d.useSimplifiedProfileExperiment)({
+                    moreUserDetailsEnabled: U
+                } = (0, _.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), M = u.default.getName(null == C ? void 0 : C.id, L, t), y = (0, s.useStateFromStores)([l.default], () => l.default.hidePersonalInformation), P = (0, a.default)("username"), U = r.useMemo(() => ({
-                    source: N.AnalyticsSections.PROFILE_POPOUT,
+                }), {
+                    originalFriendingEnabled: b,
+                    improvedFriendingEnabled: G
+                } = (0, c.useSimplifiedProfileFriendingExperiment)({
+                    location: "BiteSizeProfileBody"
+                }), w = d.default.getName(null == v ? void 0 : v.id, y, t), k = (0, s.useStateFromStores)([l.default], () => l.default.getRelationshipType(t.id)), B = (0, s.useStateFromStores)([u.default], () => u.default.hidePersonalInformation), V = (0, a.default)("username"), x = r.useMemo(() => ({
+                    source: R.AnalyticsSections.PROFILE_POPOUT,
                     tagUserId: t.id
                 }), [t.id]);
                 return (0, i.jsxs)("div", {
-                    className: p.body,
-                    children: [(0, i.jsx)(I.default, {
+                    className: g.body,
+                    children: [(0, i.jsx)(h.default, {
                         user: t,
-                        profileType: m.UserProfileTypes.BITE_SIZE,
-                        onOpenProfile: () => g({
+                        profileType: C.UserProfileTypes.BITE_SIZE,
+                        onOpenProfile: () => M({
                             autoFocusNote: !1
                         }),
-                        guildId: null == C ? void 0 : C.id,
-                        usernameIcon: t.hasAvatarForGuild(null == C ? void 0 : C.id) && (0, i.jsx)(T.default, {
+                        guildId: null == v ? void 0 : v.id,
+                        usernameIcon: t.hasAvatarForGuild(null == v ? void 0 : v.id) && (0, i.jsx)(A.default, {
                             user: t,
-                            nickname: M
+                            nickname: w
                         }),
-                        pronouns: null == O ? void 0 : O.pronouns,
-                        tags: (0, i.jsx)(_.default, {
-                            displayProfile: O,
-                            profileType: m.UserProfileTypes.BITE_SIZE,
-                            onClose: v
+                        pronouns: null == L ? void 0 : L.pronouns,
+                        tags: (0, i.jsx)(E.default, {
+                            displayProfile: L,
+                            profileType: C.UserProfileTypes.BITE_SIZE,
+                            onClose: P
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(c.default, {
+                            children: [(0, i.jsx)(I.default, {
                                 userId: t.id
-                            }), D && !y && (0, i.jsx)(E.default, {
+                            }), (U || b || G) && !B && (0, i.jsx)(f.default, {
                                 user: t,
-                                isHovering: R,
-                                onOpenProfile: () => g({
+                                isHovering: D,
+                                onOpenProfile: () => M({
                                     autoFocusNote: !0
                                 })
                             })]
                         })
-                    }), t.id !== n.id && (0, i.jsx)(A.default, {
+                    }), t.id !== n.id && (0, i.jsx)(O.default, {
                         user: t,
-                        onOpenProfile: e => g({
+                        onOpenProfile: e => M({
                             section: e,
                             autoFocusNote: !1
                         })
-                    }), P && (0, i.jsx)(o.default, {
+                    }), V && (0, i.jsx)(o.default, {
                         userId: t.id,
                         inline: !1,
-                        profileViewedAnalytics: U
-                    }), D && (0, i.jsx)(S.default, {
+                        profileViewedAnalytics: x
+                    }), (G || b) && k === R.RelationshipTypes.PENDING_INCOMING && (0, i.jsx)(S.default.Overlay, {
+                        children: (0, i.jsx)(T.default, {
+                            user: t,
+                            guildId: null == v ? void 0 : v.id,
+                            channelId: y,
+                            className: g.banner
+                        })
+                    }), (U || b || G) && (0, i.jsx)(N.default, {
                         user: t,
-                        bio: null == O ? void 0 : O.bio,
-                        hidePersonalInformation: y,
-                        onClose: v
-                    }), (0, i.jsx)(f.default, {
+                        bio: null == L ? void 0 : L.bio,
+                        hidePersonalInformation: B,
+                        onClose: P
+                    }), (0, i.jsx)(m.default, {
                         user: t,
-                        guild: C,
-                        channelId: L,
-                        onClose: v
-                    }), null != C && (0, i.jsx)(h.default, {
+                        guild: v,
+                        channelId: y,
+                        onClose: P
+                    }), null != v && (0, i.jsx)(p.default, {
                         user: t,
                         currentUser: n,
-                        guild: C,
-                        onOpenProfile: () => g({
+                        guild: v,
+                        onOpenProfile: () => M({
                             autoFocusNote: !1
                         })
                     })]
@@ -216994,7 +217313,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return u
                 }
             });
             var i = n("735250");
@@ -217002,26 +217321,28 @@
             var r = n("505737"),
                 s = n("705556"),
                 a = n("901952"),
-                o = n("391016");
+                o = n("228168"),
+                l = n("391016");
 
-            function l(e) {
+            function u(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: l,
-                    onClose: u
-                } = e, d = (0, r.default)(t.id, n);
+                    channelId: u,
+                    onClose: d
+                } = e, _ = (0, r.default)(t.id, n);
                 return (0, i.jsxs)("footer", {
-                    className: o.footer,
-                    children: [d && (0, i.jsx)(a.default, {
+                    className: l.footer,
+                    children: [_ && (0, i.jsx)(a.default, {
                         user: t,
                         guildId: n,
-                        channelId: l,
-                        onClose: u
-                    }), !d && (0, i.jsx)(s.default, {
+                        channelId: u,
+                        onClose: d
+                    }), !_ && (0, i.jsx)(s.default, {
                         user: t,
                         guildId: n,
-                        onClose: u
+                        onClose: d,
+                        profileType: o.UserProfileTypes.BITE_SIZE
                     })]
                 })
             }
@@ -217360,10 +217681,10 @@
                 T = n("785717"),
                 f = n("318661"),
                 S = n("502762"),
-                h = n("544989"),
-                A = n("301984"),
-                m = n("94918"),
-                N = n("664794"),
+                h = n("564440"),
+                A = n("329831"),
+                m = n("441580"),
+                N = n("146331"),
                 p = n("171368"),
                 O = n("958120"),
                 C = n("215633"),
@@ -217441,6 +217762,7 @@
                                         channelId: D,
                                         onClose: P
                                     }), (0, i.jsx)(A.default, {
+                                        profileType: g.UserProfileTypes.BITE_SIZE,
                                         user: t,
                                         acceptFriendRequestColor: w ? a.tokens.colors.BUTTON_OUTLINE_POSITIVE_BORDER : null
                                     }), (0, i.jsx)(N.default, {
@@ -220636,14 +220958,8 @@
                     value: e
                 })),
                 v = "0",
-                D = (0, o.defineProtoSetting)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : v, e => e);
-            (0, o.defineProtoSetting)("notifications", "enableBurstReactionNotifications", e => {
-                var t;
-                return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
-            }, e => s.BoolValue.create({
-                value: e
-            }));
-            let M = (0, o.defineProtoSetting)("gameLibrary", "installShortcutDesktop", e => {
+                D = (0, o.defineProtoSetting)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : v, e => e),
+                M = (0, o.defineProtoSetting)("gameLibrary", "installShortcutDesktop", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => s.BoolValue.create({
@@ -240916,6 +241232,15 @@
                             context: s.context
                         })
                     })
+                }), s.on(_.RTCConnectionEvent.ClientDisconnect, e => {
+                    d.default.wait(() => {
+                        d.default.dispatch({
+                            type: "RTC_CONNECTION_CLIENT_DISCONNECT",
+                            userId: e,
+                            guildId: s.guildId,
+                            channelId: s.channelId
+                        })
+                    })
                 }), s.on(_.RTCConnectionEvent.Platform, (e, t, n) => {
                     d.default.wait(() => {
                         d.default.dispatch({
@@ -249788,6 +250113,9 @@
             n.r(t), n.d(t, {
                 getComparator: function() {
                     return C
+                },
+                makeSortedVoiceState: function() {
+                    return R
                 }
             }), n("47120"), n("724458");
             var i, r = n("392711"),
@@ -251818,7 +252146,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3e1b662440e76657a2c2b3a931c36317a9d4c9c8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "fe3cc56b9b4dd398236e31e33d7458be27f8d3ca"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -272312,73 +272640,76 @@
             }
 
             function g(e) {
-                let t, {
-                        author: n,
-                        message: i,
-                        userOverride: r,
-                        compact: o = !1,
-                        withMentionPrefix: m = !1,
-                        showPopout: g = !1,
-                        className: L,
-                        onClick: v,
-                        onContextMenu: D,
-                        onPopoutRequestClose: M,
-                        renderPopout: y,
-                        renderRemixTag: P = !1,
-                        decorations: U
+                var t;
+                let n, {
+                        author: i,
+                        message: r,
+                        channel: o,
+                        userOverride: m,
+                        compact: g = !1,
+                        withMentionPrefix: L = !1,
+                        showPopout: v = !1,
+                        className: D,
+                        onClick: M,
+                        onContextMenu: y,
+                        onPopoutRequestClose: P,
+                        renderPopout: U,
+                        renderRemixTag: b = !1,
+                        decorations: G
                     } = e,
-                    b = a.useContext(f.default),
+                    w = a.useContext(f.default),
+                    k = null !== (t = null == o ? void 0 : o.guild_id) && void 0 !== t ? t : w,
                     {
-                        analyticsLocations: G
+                        analyticsLocations: B
                     } = (0, I.default)(E.default.USERNAME),
                     {
-                        nick: w,
-                        colorString: k,
-                        colorRoleName: B
-                    } = n,
-                    V = null != i.messageReference && null != i.webhookId,
-                    x = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
-                    F = (0, h.useCanSeeRemixBadge)(),
-                    H = a.useMemo(() => ({
+                        nick: V,
+                        colorString: x,
+                        colorRoleName: F
+                    } = i,
+                    H = null != r.messageReference && null != r.webhookId,
+                    Y = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
+                    j = (0, h.useCanSeeRemixBadge)(),
+                    W = a.useMemo(() => ({
                         source: O.AnalyticsSections.CHANNEL,
-                        messageId: i.id,
-                        tagUserId: i.author.id
-                    }), [i.id, i.author.id]),
-                    Y = {
+                        messageId: r.id,
+                        tagUserId: r.author.id
+                    }), [r.id, r.author.id]),
+                    K = {
                         className: C.username,
-                        style: "username" === x && null != k ? {
-                            color: k
+                        style: "username" === Y && null != x ? {
+                            color: x
                         } : void 0,
-                        onClick: v,
-                        onContextMenu: D,
+                        onClick: M,
+                        onContextMenu: y,
                         children: (0, s.jsx)(s.Fragment, {
-                            children: (m ? "@" : "") + w
+                            children: (L ? "@" : "") + V
                         })
                     },
-                    j = a.useMemo(() => o ? (0, s.jsx)(T.default, {
-                        clan: n.clan,
-                        userId: i.author.id,
-                        contextGuildId: b,
+                    z = a.useMemo(() => g ? (0, s.jsx)(T.default, {
+                        clan: i.clan,
+                        userId: r.author.id,
+                        contextGuildId: k,
                         className: C.clanTagChiplet,
-                        profileViewedAnalytics: H
-                    }) : null, [o, H, n.clan, b, i.author.id]);
-                t = null != y && null != g ? (0, s.jsx)(_.Popout, {
-                    preload: V ? void 0 : function() {
-                        let e = null != r ? r : i.author;
-                        return (0, A.maybeFetchUserProfileForPopout)(e.id, null != n.guildMemberAvatar && null != b ? (0, N.getGuildMemberAvatarURLSimple)({
-                            guildId: b,
+                        profileViewedAnalytics: W
+                    }) : null, [g, W, i.clan, k, r.author.id]);
+                n = null != U && null != v ? (0, s.jsx)(_.Popout, {
+                    preload: H ? void 0 : function() {
+                        let e = null != m ? m : r.author;
+                        return (0, A.maybeFetchUserProfileForPopout)(e.id, null != i.guildMemberAvatar && null != k ? (0, N.getGuildMemberAvatarURLSimple)({
+                            guildId: k,
                             userId: e.id,
-                            avatar: n.guildMemberAvatar,
+                            avatar: i.guildMemberAvatar,
                             size: 80
-                        }) : e.getAvatarURL(b, 80), {
-                            guildId: b,
-                            channelId: i.channel_id
+                        }) : e.getAvatarURL(k, 80), {
+                            guildId: k,
+                            channelId: r.channel_id
                         })
                     },
-                    renderPopout: y,
-                    shouldShow: g,
+                    renderPopout: U,
+                    shouldShow: v,
                     position: u.isMobile ? "window_center" : "right",
-                    onRequestClose: M,
+                    onRequestClose: P,
                     children: e => {
                         let {
                             onClick: t,
@@ -272388,40 +272719,40 @@
                             children: [(0, s.jsx)(_.Clickable, {
                                 tag: "span",
                                 ...n,
-                                ...Y,
-                                className: l()(Y.className, C.clickable, L)
-                            }), j]
+                                ...K,
+                                className: l()(K.className, C.clickable, D)
+                            }), z]
                         })
                     }
                 }) : (0, s.jsxs)(s.Fragment, {
                     children: [(0, s.jsx)(_.Clickable, {
-                        ...Y,
-                        className: l()(Y.className, L)
-                    }), j]
+                        ...K,
+                        className: l()(K.className, D)
+                    }), z]
                 });
-                let W = null != U ? U[0] : null,
-                    K = null != U ? U[1] : null;
+                let Z = null != G ? G[0] : null,
+                    X = null != G ? G[1] : null;
                 return (0, s.jsxs)(I.AnalyticsLocationProvider, {
-                    value: G,
-                    children: [null != W && o ? (0, s.jsxs)(s.Fragment, {
-                        children: [" ", W, " "]
-                    }) : null, "dot" === x ? (0, s.jsx)(_.RoleDot, {
-                        color: k,
-                        name: B,
+                    value: B,
+                    children: [null != Z && g ? (0, s.jsxs)(s.Fragment, {
+                        children: [" ", Z, " "]
+                    }) : null, "dot" === Y ? (0, s.jsx)(_.RoleDot, {
+                        color: x,
+                        name: F,
                         className: C.roleDot
-                    }) : null, t, !o && (0, s.jsxs)(s.Fragment, {
+                    }) : null, n, !g && (0, s.jsxs)(s.Fragment, {
                         children: [(0, s.jsx)(T.default, {
-                            clan: n.clan,
-                            userId: i.author.id,
-                            contextGuildId: b,
+                            clan: i.clan,
+                            userId: r.author.id,
+                            contextGuildId: k,
                             className: C.clanTagChiplet,
-                            profileViewedAnalytics: H
+                            profileViewedAnalytics: W
                         }), (0, s.jsx)(p.default, {
-                            message: i
+                            message: r
                         })]
-                    }), null != K ? (0, s.jsx)(s.Fragment, {
-                        children: K
-                    }) : null, null == W || o ? null : W, null != i && (0, S.isRemix)(i) && F && P ? (0, s.jsx)(R, {}) : null]
+                    }), null != X ? (0, s.jsx)(s.Fragment, {
+                        children: X
+                    }) : null, null == Z || g ? null : Z, null != r && (0, S.isRemix)(r) && j && b ? (0, s.jsx)(R, {}) : null]
                 })
             }(i = r || (r = {}))[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES"
         },
@@ -280946,7 +281277,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298544"
+                                build_number: "298863"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288255,7 +288586,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298544", "298544"), 10);
+                let s = parseInt((n = "298863", "298863"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316116,4 +316447,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.3089db9839d1f94be403.js.map
+//# sourceMappingURL=27519.cdf9a5aae2d535498130.js.map
