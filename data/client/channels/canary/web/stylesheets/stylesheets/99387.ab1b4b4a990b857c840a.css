@@ -29028,6 +29028,7 @@ html .progress__00e29 {
 @use postcss-pxtorem;
 
 .spine_d081ec {
+    align-self: auto !important;
     border-bottom-left-radius: 8px;
     border-bottom: 2px solid var(--background-accent);
     border-left: 2px solid var(--background-accent);
@@ -34015,7 +34016,8 @@ html .progress__00e29 {
     flex-direction: row;
     align-items: center;
     color: var(--header-primary);
-    font-weight: 600
+    font-weight: 600;
+    gap: 4px
 }
 
 .previewSection_e0dc08 .chatPreview_b035d6 .fakeMessage__6740a {
@@ -59296,12 +59298,12 @@ div:has(>div>.modal__06f49) {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -142786,4 +142788,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1159586a2a855382e251.css.map*/
+/*# sourceMappingURL=99387.ab1b4b4a990b857c840a.css.map*/
