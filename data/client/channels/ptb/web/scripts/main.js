@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298579", ", Version Hash: ").concat("4eced44626b457864b884124848d9f61367f55b1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298585", ", Version Hash: ").concat("5e3cade498916c0972fa9aeea786c5499ae78135")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88762,8 +88762,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298579", "298579"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298579")), t = 0), t
+                let t = parseInt((e = "298585", "298585"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298585")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116874,8 +116874,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298579",
-                    versionHash: "4eced44626b457864b884124848d9f61367f55b1"
+                    buildNumber: "298585",
+                    versionHash: "5e3cade498916c0972fa9aeea786c5499ae78135"
                 }
             }
             n.r(t), n.d(t, {
@@ -174456,8 +174456,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717467156335",
-                                    build_number: "298579"
+                                    built_at: "1717471240108",
+                                    build_number: "298585"
                                 }
                             },
                             retries: 1
@@ -211266,8 +211266,11 @@
         877485: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useSimplifiedProfileFriendingExperiment: function() {
+                getSimplifiedProfileFriendingExperimentConfig: function() {
                     return r
+                },
+                useSimplifiedProfileFriendingExperiment: function() {
+                    return s
                 }
             });
             let i = (0, n("818083").createExperiment)({
@@ -211295,6 +211298,19 @@
                     }]
                 }),
                 r = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !0,
+                        trackExposureOptions: r = {}
+                    } = e;
+                    return i.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: n,
+                        trackExposureOptions: r
+                    })
+                },
+                s = e => {
                     let {
                         location: t,
                         autoTrackExposure: n = !0,
@@ -212250,10 +212266,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return S
                 },
                 maybeFetchUserProfileForPopout: function() {
-                    return T
+                    return f
                 }
             }), n("411104");
             var i = n("570140"),
@@ -212266,10 +212282,11 @@
                 d = n("271383"),
                 _ = n("342656"),
                 c = n("447452"),
-                E = n("621853"),
-                I = n("120569");
+                E = n("877485"),
+                I = n("621853"),
+                T = n("120569");
 
-            function T() {
+            function f() {
                 let e, t, n;
                 for (var i, r, s = arguments.length, a = Array(s), o = 0; o < s; o++) a[o] = arguments[o];
                 let u = a[0],
@@ -212278,20 +212295,24 @@
                 else if (u instanceof l.default && ("object" == typeof d || null == d)) e = u.id, t = u.getAvatarURL(void 0, 80), n = d;
                 else throw Error("Invalid arguments");
                 if (null == e) return Promise.resolve();
-                let E = (0, _.isInProfileMutualsExperiment)().enabled || (0, c.getSimplifiedProfileExperimentConfig)({
-                    location: "maybeFetchUserProfileForPopout",
-                    autoTrackExposure: !1
-                }).basicsEnabled;
-                return f(e, t, {
-                    withMutualFriends: null !== (i = null == n ? void 0 : n.withMutualFriends) && void 0 !== i ? i : E,
-                    withMutualGuilds: null !== (r = null == n ? void 0 : n.withMutualGuilds) && void 0 !== r ? r : E,
+                let I = (0, E.getSimplifiedProfileFriendingExperimentConfig)({
+                        location: "maybeFetchUserProfileForPopout",
+                        autoTrackExposure: !1
+                    }),
+                    T = (0, _.isInProfileMutualsExperiment)().enabled || (0, c.getSimplifiedProfileExperimentConfig)({
+                        location: "maybeFetchUserProfileForPopout",
+                        autoTrackExposure: !1
+                    }).basicsEnabled || I.originalFriendingEnabled || I.improvedFriendingEnabled;
+                return S(e, t, {
+                    withMutualFriends: null !== (i = null == n ? void 0 : n.withMutualFriends) && void 0 !== i ? i : T,
+                    withMutualGuilds: null !== (r = null == n ? void 0 : n.withMutualGuilds) && void 0 !== r ? r : T,
                     ...n
                 })
             }
-            async function f(e, t) {
+            async function S(e, t) {
                 var n, l, _;
                 let c, {
-                    withMutualGuilds: T = !1,
+                    withMutualGuilds: E = !1,
                     withMutualFriendsCount: f = !1,
                     withMutualFriends: S = !1,
                     friendToken: h,
@@ -212302,23 +212323,23 @@
                     abortSignal: O
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 if ("" === e) return;
-                (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != N && !T && (T = !0), null != N && (c = null !== (l = null === (n = (0, a.getVisibleConnectionsRole)({
+                (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != N && !E && (E = !0), null != N && (c = null !== (l = null === (n = (0, a.getVisibleConnectionsRole)({
                     guildMember: d.default.getMember(N, e),
                     channel: u.default.getChannel(p)
                 })) || void 0 === n ? void 0 : n.id) && void 0 !== l ? l : void 0);
-                let C = E.default.getUserProfile(e),
-                    R = E.default.getMutualGuilds(e),
-                    g = E.default.getMutualFriends(e),
-                    L = E.default.getMutualFriendsCount(e),
-                    v = E.default.isFetchingProfile(e),
-                    D = !Array.isArray(R) && T,
+                let C = I.default.getUserProfile(e),
+                    R = I.default.getMutualGuilds(e),
+                    g = I.default.getMutualFriends(e),
+                    L = I.default.getMutualFriendsCount(e),
+                    v = I.default.isFetchingProfile(e),
+                    D = !Array.isArray(R) && E,
                     M = !Array.isArray(g) && S,
                     y = null == L && f,
                     P = (null == C ? void 0 : C.profileFetchFailed) || !v && (D || y || M),
-                    U = A ? I.default : void 0,
+                    U = A ? T.default : void 0,
                     b = !1;
-                null != N && (b = null == E.default.getGuildMemberProfile(e, N)), !(!P && !b && (v || Date.now() - (null !== (_ = null == C ? void 0 : C.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
-                    withMutualGuilds: T,
+                null != N && (b = null == I.default.getGuildMemberProfile(e, N)), !(!P && !b && (v || Date.now() - (null !== (_ = null == C ? void 0 : C.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
+                    withMutualGuilds: E,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
@@ -212326,7 +212347,7 @@
                     connectionsRoleId: c,
                     abortSignal: O
                 }, U)) : await (0, r.fetchProfile)(e, {
-                    withMutualGuilds: T,
+                    withMutualGuilds: E,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
@@ -213392,7 +213413,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return c
                 }
             });
             var i = n("735250");
@@ -213402,26 +213423,32 @@
                 a = n("442837"),
                 o = n("594174"),
                 l = n("447452"),
-                u = n("788197"),
-                d = n("969835");
+                u = n("877485"),
+                d = n("788197"),
+                _ = n("969835");
 
-            function _(e) {
+            function c(e) {
                 let {
                     location: t,
                     userId: n,
                     user: r,
-                    ..._
+                    ...c
                 } = e, {
-                    basicsEnabled: c
+                    basicsEnabled: E
                 } = (0, l.useSimplifiedProfileExperiment)({
                     location: t
-                }), E = (0, a.useStateFromStores)([o.default], () => o.default.getUser(n), [n]), I = null != r ? r : E;
-                return (s()(null != I, "Unexpected missing user"), !c || I.bot || I.isNonUserBot() || I.isClyde()) ? (0, i.jsx)(u.default, {
-                    ..._,
-                    user: I
+                }), {
+                    originalFriendingEnabled: I,
+                    improvedFriendingEnabled: T
+                } = (0, u.useSimplifiedProfileFriendingExperiment)({
+                    location: t
+                }), f = (0, a.useStateFromStores)([o.default], () => o.default.getUser(n), [n]), S = null != r ? r : f;
+                return (s()(null != S, "Unexpected missing user"), (E || I || T) && !S.bot && !S.isNonUserBot() && !S.isClyde()) ? (0, i.jsx)(_.default, {
+                    ...c,
+                    user: S
                 }) : (0, i.jsx)(d.default, {
-                    ..._,
-                    user: I
+                    ...c,
+                    user: S
                 })
             }
         },
@@ -213928,6 +213955,91 @@
                 }) : null
             }
         },
+        91433: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return I
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                s = n.n(r),
+                a = n("481060"),
+                o = n("194359"),
+                l = n("906732"),
+                u = n("5192"),
+                d = n("877485"),
+                _ = n("785717"),
+                c = n("689938"),
+                E = n("125188");
+
+            function I(e) {
+                let {
+                    user: t,
+                    guildId: n,
+                    channelId: r,
+                    friendToken: I,
+                    className: T
+                } = e, f = u.default.getName(n, r, t), {
+                    trackUserProfileAction: S
+                } = (0, _.useUserProfileAnalyticsContext)(), {
+                    newestAnalyticsLocation: h
+                } = (0, l.default)(), {
+                    originalFriendingEnabled: A,
+                    improvedFriendingEnabled: m
+                } = (0, d.useSimplifiedProfileFriendingExperiment)({
+                    location: "UserProfileIncomingFriendRequestBanner"
+                });
+                return (0, i.jsxs)("div", {
+                    className: s()(E.container, T),
+                    children: [(0, i.jsx)(a.Text, {
+                        variant: "text-sm/normal",
+                        children: c.default.Messages.NOTIFICATION_CENTER_INCOMING_FRIEND_REQUEST.format({
+                            username: f
+                        })
+                    }), (0, i.jsxs)("div", {
+                        className: E.buttonContainer,
+                        children: [(0, i.jsx)(a.Button, {
+                            look: a.Button.Looks.FILLED,
+                            color: s()({
+                                [a.Button.Colors.GREEN]: A,
+                                [a.Button.Colors.BRAND]: m,
+                                [E.color]: m
+                            }),
+                            size: a.Button.Sizes.SMALL,
+                            className: E.button,
+                            onClick: () => {
+                                S({
+                                    action: "ACCEPT_FRIEND_REQUEST"
+                                }), o.default.addRelationship({
+                                    userId: t.id,
+                                    friendToken: I,
+                                    context: {
+                                        location: h
+                                    }
+                                })
+                            },
+                            children: c.default.Messages.FRIEND_REQUEST_ACCEPT
+                        }), (0, i.jsx)(a.Button, {
+                            look: a.Button.Looks.FILLED,
+                            color: a.Button.Colors.PRIMARY,
+                            size: a.Button.Sizes.SMALL,
+                            className: E.button,
+                            onClick: () => {
+                                S({
+                                    action: "IGNORE_FRIEND_REQUEST"
+                                }), o.default.cancelFriendRequest(t.id, {
+                                    location: h
+                                })
+                            },
+                            children: c.default.Messages.FRIEND_REQUEST_IGNORE
+                        })]
+                    })]
+                })
+            }
+        },
         256226: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -214415,19 +214527,19 @@
 
             function u(e) {
                 let {
-                    icon: t,
-                    text: n,
+                    text: t,
+                    icon: n,
                     compact: r,
                     className: u,
                     innerClassName: d,
                     ..._
-                } = e, c = (0, i.jsx)(t, {
+                } = e, c = null != n ? (0, i.jsx)(n, {
                     width: 16,
                     height: 16,
                     color: "currentColor"
-                });
+                }) : null;
                 return r ? (0, i.jsx)(o.TooltipContainer, {
-                    text: n,
+                    text: t,
                     "aria-label": _["aria-label"],
                     children: (0, i.jsx)(a.Button, {
                         className: s()(l.compactButton, u),
@@ -214446,7 +214558,7 @@
                     look: a.Button.Looks.FILLED,
                     size: a.Button.Sizes.MEDIUM,
                     ..._,
-                    children: [c, n]
+                    children: [c, t]
                 })
             }
         },
@@ -214607,7 +214719,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return p
                 }
             });
             var i = n("735250");
@@ -214624,31 +214736,40 @@
                 E = n("314897"),
                 I = n("699516"),
                 T = n("465670"),
-                f = n("785717"),
-                S = n("537387"),
-                h = n("981631"),
-                A = n("689938");
+                f = n("877485"),
+                S = n("785717"),
+                h = n("537387"),
+                A = n("228168"),
+                m = n("981631"),
+                N = n("689938");
 
-            function m(e) {
+            function p(e) {
                 let {
                     user: t,
-                    acceptFriendRequestColor: n,
-                    friendToken: m
+                    friendToken: n,
+                    acceptFriendRequestColor: p,
+                    profileType: O
                 } = e, {
-                    trackUserProfileAction: N
-                } = (0, f.useUserProfileAnalyticsContext)(), p = (0, r.useStateFromStores)([E.default], () => E.default.getId() === (null == t ? void 0 : t.id)), O = (0, r.useStateFromStores)([I.default], () => null != t ? I.default.getRelationshipType(t.id) : h.RelationshipTypes.NONE), {
-                    analyticsLocations: C,
-                    newestAnalyticsLocation: R
-                } = (0, _.default)(), g = (0, c.default)({
+                    trackUserProfileAction: C
+                } = (0, S.useUserProfileAnalyticsContext)(), {
+                    originalFriendingEnabled: R,
+                    improvedFriendingEnabled: g
+                } = (0, f.useSimplifiedProfileFriendingExperiment)({
+                    location: "UserProfileFriendRequestButtons"
+                }), L = (0, r.useStateFromStores)([E.default], () => E.default.getId() === (null == t ? void 0 : t.id)), v = (0, r.useStateFromStores)([I.default], () => null != t ? I.default.getRelationshipType(t.id) : m.RelationshipTypes.NONE), {
+                    analyticsLocations: D,
+                    newestAnalyticsLocation: M
+                } = (0, _.default)(), y = (0, c.default)({
                     user: t,
                     color: "danger",
-                    location: R,
-                    onAction: () => N({
+                    location: M,
+                    onAction: () => C({
                         action: "REMOVE_FRIEND",
-                        analyticsLocations: C
+                        analyticsLocations: D
                     })
                 });
-                return null == t || t.bot || p || O === h.RelationshipTypes.BLOCKED ? null : O === h.RelationshipTypes.FRIEND ? (0, i.jsx)(u.Popout, {
+                if (null == t || t.bot || L || v === m.RelationshipTypes.BLOCKED) return null;
+                if (v === m.RelationshipTypes.FRIEND) return (0, i.jsx)(u.Popout, {
                     renderPopout: e => {
                         let {
                             closePopout: t
@@ -214657,55 +214778,69 @@
                             navId: "user-profile-friend-request-buttons",
                             onSelect: void 0,
                             onClose: t,
-                            "aria-label": A.default.Messages.FRIEND_ACTIONS_MENU_LABEL,
-                            children: g
+                            "aria-label": N.default.Messages.FRIEND_ACTIONS_MENU_LABEL,
+                            children: y
                         })
                     },
-                    children: e => (0, i.jsx)(S.default, {
+                    children: e => (0, i.jsx)(h.default, {
                         icon: a.UserCheckIcon,
-                        text: A.default.Messages.FRIENDS,
+                        text: N.default.Messages.FRIENDS,
                         ...e
                     })
-                }) : O === h.RelationshipTypes.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(S.default, {
+                });
+                if (v === m.RelationshipTypes.PENDING_INCOMING) return g && O === A.UserProfileTypes.FULL_SIZE ? null : (g || R) && O !== A.UserProfileTypes.PANEL ? (0, i.jsx)(h.default, {
+                    icon: o.UserClockIcon,
+                    text: N.default.Messages.FRIENDS_SECTION_PENDING,
+                    disabled: !0
+                }) : (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(h.default, {
                         icon: e => (0, i.jsx)(s.CheckmarkLargeIcon, {
                             ...e,
-                            color: null != n ? n : u.tokens.colors.TEXT_BRAND
+                            color: null != p ? p : u.tokens.colors.TEXT_BRAND
                         }),
-                        text: A.default.Messages.ACCEPT_FRIEND_REQUEST,
+                        text: N.default.Messages.ACCEPT_FRIEND_REQUEST,
                         onClick: () => {
-                            N({
+                            C({
                                 action: "ACCEPT_FRIEND_REQUEST"
                             }), d.default.addRelationship({
                                 userId: t.id,
-                                friendToken: m
+                                friendToken: n,
+                                context: {
+                                    location: M
+                                }
                             })
                         }
-                    }), (0, i.jsx)(S.default, {
+                    }), (0, i.jsx)(h.default, {
                         icon: T.default,
-                        text: A.default.Messages.IGNORE_FRIEND_REQUEST,
+                        text: N.default.Messages.IGNORE_FRIEND_REQUEST,
                         onClick: () => {
-                            N({
+                            C({
                                 action: "IGNORE_FRIEND_REQUEST"
-                            }), d.default.cancelFriendRequest(t.id)
+                            }), d.default.cancelFriendRequest(t.id, {
+                                location: M
+                            })
                         }
                     })]
-                }) : O === h.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(S.default, {
+                });
+                return v === m.RelationshipTypes.PENDING_OUTGOING && (!g || g && O === A.UserProfileTypes.BITE_SIZE) ? (0, i.jsx)(h.default, {
                     icon: o.UserClockIcon,
-                    text: A.default.Messages.REQUEST_SENT,
+                    text: g || R ? N.default.Messages.FRIENDS_SECTION_PENDING : N.default.Messages.REQUEST_SENT,
                     disabled: !0
-                }) : (0, i.jsx)(S.default, {
+                }) : !g || g && O === A.UserProfileTypes.BITE_SIZE ? (0, i.jsx)(h.default, {
                     icon: l.UserPlusIcon,
-                    text: A.default.Messages.ADD_FRIEND,
+                    text: N.default.Messages.ADD_FRIEND,
                     onClick: () => {
-                        N({
+                        C({
                             action: "SEND_FRIEND_REQUEST"
                         }), d.default.addRelationship({
                             userId: t.id,
-                            friendToken: m
+                            friendToken: n,
+                            context: {
+                                location: M
+                            }
                         })
                     }
-                })
+                }) : null
             }
         },
         94918: function(e, t, n) {
@@ -215136,10 +215271,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 closeUserProfileModal: function() {
-                    return _
+                    return c
                 },
                 openUserProfileModal: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("570140"),
@@ -215147,66 +215282,70 @@
                 s = n("594174"),
                 a = n("342656"),
                 o = n("447452"),
-                l = n("484459"),
-                u = n("981631");
+                l = n("877485"),
+                u = n("484459"),
+                d = n("981631");
 
-            function d(e) {
+            function _(e) {
                 let {
                     userId: t,
                     section: n,
-                    guildId: d = u.ME,
-                    channelId: _,
-                    messageId: c,
-                    roleId: E,
-                    friendToken: I,
-                    autoFocusNote: T,
-                    analyticsLocation: f,
-                    sourceAnalyticsLocations: S
-                } = e, h = s.default.getUser(t), A = null != d && d !== u.ME ? d : void 0, m = (0, a.isInProfileMutualsExperiment)().enabled || (0, o.getSimplifiedProfileExperimentConfig)({
+                    guildId: _ = d.ME,
+                    channelId: c,
+                    messageId: E,
+                    roleId: I,
+                    friendToken: T,
+                    autoFocusNote: f,
+                    analyticsLocation: S,
+                    sourceAnalyticsLocations: h
+                } = e, A = s.default.getUser(t), m = null != _ && _ !== d.ME ? _ : void 0, N = (0, l.getSimplifiedProfileFriendingExperimentConfig)({
                     location: "openUserProfileModal",
                     autoTrackExposure: !1
-                }).basicsEnabled;
-                if (null == h) return (0, r.fetchProfile)(t, {
-                    guildId: A,
+                }), p = (0, a.isInProfileMutualsExperiment)().enabled || (0, o.getSimplifiedProfileExperimentConfig)({
+                    location: "openUserProfileModal",
+                    autoTrackExposure: !1
+                }).basicsEnabled || N.originalFriendingEnabled || N.improvedFriendingEnabled;
+                if (null == A) return (0, r.fetchProfile)(t, {
+                    guildId: m,
                     withMutualGuilds: !0,
-                    withMutualFriends: m,
-                    friendToken: I
+                    withMutualFriends: p,
+                    friendToken: T
                 }).then(() => {
                     i.default.dispatch({
                         type: "USER_PROFILE_MODAL_OPEN",
                         userId: t,
                         section: n,
-                        guildId: null != d ? d : void 0,
-                        channelId: null != _ ? _ : void 0,
-                        messageId: null != c ? c : void 0,
-                        roleId: null != E ? E : void 0,
-                        friendToken: I,
-                        autoFocusNote: T,
-                        analyticsLocation: f,
-                        sourceAnalyticsLocations: S
+                        guildId: null != _ ? _ : void 0,
+                        channelId: null != c ? c : void 0,
+                        messageId: null != E ? E : void 0,
+                        roleId: null != I ? I : void 0,
+                        friendToken: T,
+                        autoFocusNote: f,
+                        analyticsLocation: S,
+                        sourceAnalyticsLocations: h
                     })
                 });
-                (0, l.maybeFetchUserProfileForPopout)(h, {
-                    guildId: A,
+                (0, u.maybeFetchUserProfileForPopout)(A, {
+                    guildId: m,
                     withMutualGuilds: !0,
-                    withMutualFriends: m,
-                    friendToken: I
+                    withMutualFriends: p,
+                    friendToken: T
                 }), i.default.dispatch({
                     type: "USER_PROFILE_MODAL_OPEN",
                     userId: t,
                     section: n,
-                    guildId: null != d ? d : void 0,
-                    channelId: null != _ ? _ : void 0,
-                    messageId: null != c ? c : void 0,
-                    roleId: null != E ? E : void 0,
-                    friendToken: I,
-                    autoFocusNote: T,
-                    analyticsLocation: f,
-                    sourceAnalyticsLocations: S
+                    guildId: null != _ ? _ : void 0,
+                    channelId: null != c ? c : void 0,
+                    messageId: null != E ? E : void 0,
+                    roleId: null != I ? I : void 0,
+                    friendToken: T,
+                    autoFocusNote: f,
+                    analyticsLocation: S,
+                    sourceAnalyticsLocations: h
                 })
             }
 
-            function _() {
+            function c() {
                 i.default.dispatch({
                     type: "USER_PROFILE_MODAL_CLOSE"
                 })
@@ -216825,7 +216964,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return L
                 }
             });
             var i = n("735250"),
@@ -216833,95 +216972,111 @@
                 s = n("442837"),
                 a = n("954138"),
                 o = n("979264"),
-                l = n("246946"),
-                u = n("5192"),
-                d = n("447452"),
-                _ = n("741308"),
-                c = n("681837"),
-                E = n("724593"),
-                I = n("530"),
-                T = n("790711"),
-                f = n("580512"),
-                S = n("67152"),
-                h = n("579285"),
-                A = n("287612"),
-                m = n("228168"),
-                N = n("981631"),
-                p = n("153362");
+                l = n("699516"),
+                u = n("246946"),
+                d = n("5192"),
+                _ = n("447452"),
+                c = n("877485"),
+                E = n("741308"),
+                I = n("681837"),
+                T = n("91433"),
+                f = n("724593"),
+                S = n("502762"),
+                h = n("530"),
+                A = n("790711"),
+                m = n("580512"),
+                N = n("67152"),
+                p = n("579285"),
+                O = n("287612"),
+                C = n("228168"),
+                R = n("981631"),
+                g = n("153362");
 
-            function O(e) {
+            function L(e) {
                 let {
                     user: t,
                     currentUser: n,
-                    displayProfile: O,
-                    guild: C,
-                    isHovering: R,
-                    onOpenProfile: g,
-                    channelId: L,
-                    onClose: v
+                    displayProfile: L,
+                    guild: v,
+                    isHovering: D,
+                    onOpenProfile: M,
+                    channelId: y,
+                    onClose: P
                 } = e, {
-                    moreUserDetailsEnabled: D
-                } = (0, d.useSimplifiedProfileExperiment)({
+                    moreUserDetailsEnabled: U
+                } = (0, _.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), M = u.default.getName(null == C ? void 0 : C.id, L, t), y = (0, s.useStateFromStores)([l.default], () => l.default.hidePersonalInformation), P = (0, a.default)("username"), U = r.useMemo(() => ({
-                    source: N.AnalyticsSections.PROFILE_POPOUT,
+                }), {
+                    originalFriendingEnabled: b,
+                    improvedFriendingEnabled: G
+                } = (0, c.useSimplifiedProfileFriendingExperiment)({
+                    location: "BiteSizeProfileBody"
+                }), w = d.default.getName(null == v ? void 0 : v.id, y, t), k = (0, s.useStateFromStores)([l.default], () => l.default.getRelationshipType(t.id)), B = (0, s.useStateFromStores)([u.default], () => u.default.hidePersonalInformation), V = (0, a.default)("username"), x = r.useMemo(() => ({
+                    source: R.AnalyticsSections.PROFILE_POPOUT,
                     tagUserId: t.id
                 }), [t.id]);
                 return (0, i.jsxs)("div", {
-                    className: p.body,
-                    children: [(0, i.jsx)(I.default, {
+                    className: g.body,
+                    children: [(0, i.jsx)(h.default, {
                         user: t,
-                        profileType: m.UserProfileTypes.BITE_SIZE,
-                        onOpenProfile: () => g({
+                        profileType: C.UserProfileTypes.BITE_SIZE,
+                        onOpenProfile: () => M({
                             autoFocusNote: !1
                         }),
-                        guildId: null == C ? void 0 : C.id,
-                        usernameIcon: t.hasAvatarForGuild(null == C ? void 0 : C.id) && (0, i.jsx)(T.default, {
+                        guildId: null == v ? void 0 : v.id,
+                        usernameIcon: t.hasAvatarForGuild(null == v ? void 0 : v.id) && (0, i.jsx)(A.default, {
                             user: t,
-                            nickname: M
+                            nickname: w
                         }),
-                        pronouns: null == O ? void 0 : O.pronouns,
-                        tags: (0, i.jsx)(_.default, {
-                            displayProfile: O,
-                            profileType: m.UserProfileTypes.BITE_SIZE,
-                            onClose: v
+                        pronouns: null == L ? void 0 : L.pronouns,
+                        tags: (0, i.jsx)(E.default, {
+                            displayProfile: L,
+                            profileType: C.UserProfileTypes.BITE_SIZE,
+                            onClose: P
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(c.default, {
+                            children: [(0, i.jsx)(I.default, {
                                 userId: t.id
-                            }), D && !y && (0, i.jsx)(E.default, {
+                            }), (U || b || G) && !B && (0, i.jsx)(f.default, {
                                 user: t,
-                                isHovering: R,
-                                onOpenProfile: () => g({
+                                isHovering: D,
+                                onOpenProfile: () => M({
                                     autoFocusNote: !0
                                 })
                             })]
                         })
-                    }), t.id !== n.id && (0, i.jsx)(A.default, {
+                    }), t.id !== n.id && (0, i.jsx)(O.default, {
                         user: t,
-                        onOpenProfile: e => g({
+                        onOpenProfile: e => M({
                             section: e,
                             autoFocusNote: !1
                         })
-                    }), P && (0, i.jsx)(o.default, {
+                    }), V && (0, i.jsx)(o.default, {
                         userId: t.id,
                         inline: !1,
-                        profileViewedAnalytics: U
-                    }), D && (0, i.jsx)(S.default, {
+                        profileViewedAnalytics: x
+                    }), (G || b) && k === R.RelationshipTypes.PENDING_INCOMING && (0, i.jsx)(S.default.Overlay, {
+                        children: (0, i.jsx)(T.default, {
+                            user: t,
+                            guildId: null == v ? void 0 : v.id,
+                            channelId: y,
+                            className: g.banner
+                        })
+                    }), (U || b || G) && (0, i.jsx)(N.default, {
                         user: t,
-                        bio: null == O ? void 0 : O.bio,
-                        hidePersonalInformation: y,
-                        onClose: v
-                    }), (0, i.jsx)(f.default, {
+                        bio: null == L ? void 0 : L.bio,
+                        hidePersonalInformation: B,
+                        onClose: P
+                    }), (0, i.jsx)(m.default, {
                         user: t,
-                        guild: C,
-                        channelId: L,
-                        onClose: v
-                    }), null != C && (0, i.jsx)(h.default, {
+                        guild: v,
+                        channelId: y,
+                        onClose: P
+                    }), null != v && (0, i.jsx)(p.default, {
                         user: t,
                         currentUser: n,
-                        guild: C,
-                        onOpenProfile: () => g({
+                        guild: v,
+                        onOpenProfile: () => M({
                             autoFocusNote: !1
                         })
                     })]
@@ -217484,6 +217639,7 @@
                                         channelId: D,
                                         onClose: P
                                     }), (0, i.jsx)(A.default, {
+                                        profileType: g.UserProfileTypes.BITE_SIZE,
                                         user: t,
                                         acceptFriendRequestColor: w ? a.tokens.colors.BUTTON_OUTLINE_POSITIVE_BORDER : null
                                     }), (0, i.jsx)(N.default, {
@@ -251861,7 +252017,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4eced44626b457864b884124848d9f61367f55b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5e3cade498916c0972fa9aeea786c5499ae78135"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280989,7 +281145,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298579"
+                                build_number: "298585"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288298,7 +288454,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298579", "298579"), 10);
+                let s = parseInt((n = "298585", "298585"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316159,4 +316315,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.120e2a8b0fe0b507ea16.js.map
+//# sourceMappingURL=27519.fad1aae4f7bffefb4a77.js.map
