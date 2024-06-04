@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298639", ", Version Hash: ").concat("72deac415e5980beee3970723e57965ecae5984a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298649", ", Version Hash: ").concat("a4bb25bf6c9b7ddb3ef9584907a1d9fce9e8ce93")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -76879,7 +76879,8 @@
                         let i, r;
                         let s = e[n],
                             a = t[n],
-                            o = c.get(n);
+                            o = c.get(n),
+                            u = null != s;
                         if (null != s && null != a) {
                             for (let e in i = a.descriptor, r = [], a.commands) {
                                 let t = a.commands[e];
@@ -76892,8 +76893,8 @@
                                 }
                         } else null != s ? (i = s.descriptor, r = Object.values(s.commands)) : null != a ? (i = a.descriptor, r = Object.values(a.commands)) : null != o && (i = o.descriptor, r = Object.values(o.commands));
                         l()(null != i, "Failed to select application descriptor"), l()(null != r, "Failed to select list of application commands");
-                        let u = en(i, r, P);
-                        null != u && M.push(u)
+                        let d = en(i, r, u, P);
+                        null != d && M.push(d)
                     }
                     N.applications.useFrecency && S.FrecencyUserSettingsActionCreators.loadIfNecessary(), M.sort((e, t) => {
                         if (N.applications.useScore && m === g.ScoreMethod.APPLICATION_ONLY) {
@@ -76911,7 +76912,7 @@
                     })
                 }
                 if (D.length > 0 || !0 === h) {
-                    let e = en(p.BUILT_IN_SECTIONS[y.BuiltInSectionId.BUILT_IN], D, P);
+                    let e = en(p.BUILT_IN_SECTIONS[y.BuiltInSectionId.BUILT_IN], D, !0, P);
                     null != e && M.push(e)
                 }
                 let U = M.flatMap(e => e.data.map(t => ({
@@ -76950,25 +76951,30 @@
                 }
             }
 
-            function en(e, t, n) {
-                let i, {
-                        query: r,
-                        splitQuery: s,
-                        allowEmptySections: a,
-                        scoreMethod: o,
-                        permissionContext: l
-                    } = n,
+            function en(e, t, n, i) {
+                let r, {
+                        query: s,
+                        splitQuery: a,
+                        allowEmptySections: o,
+                        scoreMethod: l,
+                        permissionContext: u
+                    } = i,
                     {
-                        context: u,
-                        userId: d,
-                        roleIds: _,
-                        isImpersonating: c
-                    } = l,
-                    E = null != u.guild_id ? M.computeAllowedForUser(e.permissions, u.guild_id, d, _, c) : null,
-                    I = null != u.guild_id ? M.computeAllowedForChannel(e.permissions, u, u.guild_id) : null,
-                    T = [];
-                for (let n of t) M.hasAccess(n, l, E, I, e.botId) === M.HasAccessResult.ALLOWED && T.push(n);
-                return 0 !== (i = o !== g.ScoreMethod.NONE && null != r && null != s ? function(e, t, n, i, r) {
+                        context: d,
+                        userId: _,
+                        roleIds: c,
+                        isImpersonating: E
+                    } = u,
+                    I = null != d.guild_id ? M.computeAllowedForUser(e.permissions, d.guild_id, _, c, E) : null,
+                    T = null != d.guild_id ? M.computeAllowedForChannel(e.permissions, d, d.guild_id) : null,
+                    f = [];
+                for (let i of t) M.hasAccess(i, u, {
+                    applicationAllowedForUser: I,
+                    applicationAllowedForChannel: T,
+                    commandBotId: e.botId,
+                    isGuildInstalled: n
+                }) === M.HasAccessResult.ALLOWED && f.push(i);
+                return 0 !== (r = l !== g.ScoreMethod.NONE && null != s && null != a ? function(e, t, n, i, r) {
                     let s;
                     let a = [];
                     if (r === g.ScoreMethod.APPLICATION_ONLY || r === g.ScoreMethod.COMMAND_OR_APPLICATION) {
@@ -77008,9 +77014,9 @@
                         })
                     }
                     return a
-                }(r, s, T, e, o) : T).length || a ? ((o === g.ScoreMethod.NONE || o === g.ScoreMethod.APPLICATION_ONLY) && i.sort((e, t) => el(e.displayName, t.displayName)), {
+                }(s, a, f, e, l) : f).length || o ? ((l === g.ScoreMethod.NONE || l === g.ScoreMethod.APPLICATION_ONLY) && r.sort((e, t) => el(e.displayName, t.displayName)), {
                     section: e,
-                    data: i
+                    data: r
                 }) : null
             }
 
@@ -77652,7 +77658,11 @@
                 if (void 0 !== m) {
                     let n = (0, l.computeAllowedForChannel)(m.permissions, t, null == t ? void 0 : t.guild_id),
                         i = (0, l.computeAllowedForUser)(m.permissions, f.guild_id, S, h, A);
-                    if ((0, l.hasAccess)(e, c, i, n, m.botId) === l.HasAccessResult.ALLOWED) return !1
+                    if ((0, l.hasAccess)(e, c, {
+                            applicationAllowedForUser: i,
+                            applicationAllowedForChannel: n,
+                            commandBotId: m.botId
+                        }) === l.HasAccessResult.ALLOWED) return !1
                 }
                 let N = null === (_ = E.result) || void 0 === _ ? void 0 : null === (d = _.sections[e.applicationId]) || void 0 === d ? void 0 : d.commands;
                 return null != N && e.id in N
@@ -78370,7 +78380,8 @@
                     O = o.default.isViewingRoles(T),
                     {
                         computedPermissions: C,
-                        hasBaseAccessPermissions: R
+                        hasBaseAccessPermissions: R,
+                        hasSendMessagesPermission: g
                     } = A(E);
                 return {
                     context: E,
@@ -78380,6 +78391,7 @@
                     commandType: t,
                     computedPermissions: C,
                     hasBaseAccessPermissions: R,
+                    hasSendMessagesPermission: g,
                     allowNsfw: h(E, m, f)
                 }
             }
@@ -78407,7 +78419,8 @@
                 return i.useMemo(() => {
                     let {
                         computedPermissions: e,
-                        hasBaseAccessPermissions: i
+                        hasBaseAccessPermissions: i,
+                        hasSendMessagesPermission: r
                     } = A(n);
                     return {
                         context: n,
@@ -78417,6 +78430,7 @@
                         isImpersonating: S,
                         computedPermissions: e,
                         hasBaseAccessPermissions: i,
+                        hasSendMessagesPermission: r,
                         allowNsfw: h(n, T, a)
                     }
                 }, [t, n, S, f, E, T, a])
@@ -78430,12 +78444,14 @@
                 let t;
                 if (e instanceof u.ChannelRecordBase && e.isPrivate()) return {
                     computedPermissions: r.deserialize(0),
-                    hasBaseAccessPermissions: !0
+                    hasBaseAccessPermissions: !0,
+                    hasSendMessagesPermission: !0
                 };
                 let n = E.default.computePermissions(e);
                 return t = !!r.has(n, T.Permissions.ADMINISTRATOR) || (e instanceof u.ChannelRecordBase ? r.has(n, T.Permissions.VIEW_CHANNEL) && r.has(n, T.Permissions.USE_APPLICATION_COMMANDS) : r.has(n, T.Permissions.VIEW_CHANNEL)), {
                     computedPermissions: n,
-                    hasBaseAccessPermissions: t
+                    hasBaseAccessPermissions: t,
+                    hasSendMessagesPermission: r.has(n, T.Permissions.SEND_MESSAGES)
                 }
             }
 
@@ -78454,114 +78470,121 @@
                     return i
                 },
                 computeAllowedForChannel: function() {
-                    return m
-                },
-                computeAllowedForUser: function() {
                     return N
                 },
+                computeAllowedForUser: function() {
+                    return p
+                },
                 hasAccess: function() {
-                    return S
+                    return h
                 }
             }), n("47120");
             var i, r, s = n("512722"),
                 a = n.n(s),
-                o = n("149765"),
-                l = n("911969"),
-                u = n("399860"),
-                d = n("131704"),
-                _ = n("430824"),
-                c = n("895924"),
-                E = n("581364"),
-                I = n("807169"),
-                T = n("689079"),
-                f = n("981631");
+                o = n("373793"),
+                l = n("149765"),
+                u = n("911969"),
+                d = n("399860"),
+                _ = n("131704"),
+                c = n("430824"),
+                E = n("895924"),
+                I = n("581364"),
+                T = n("807169"),
+                f = n("689079"),
+                S = n("981631");
 
-            function S(e, t, n, i, r) {
+            function h(e, t, n) {
                 let {
-                    context: s,
-                    commandType: u,
-                    allowNsfw: S,
-                    computedPermissions: h,
-                    userId: A,
-                    roleIds: p,
-                    isImpersonating: O,
-                    hasBaseAccessPermissions: C
-                } = t;
-                if (e.type !== u) return 2;
-                if (e.nsfw && !S) return 1;
-                let R = (0, I.computeCommandContextType)(s, r);
+                    context: i,
+                    commandType: r,
+                    allowNsfw: s,
+                    computedPermissions: d,
+                    userId: h,
+                    roleIds: A,
+                    isImpersonating: m,
+                    hasBaseAccessPermissions: O,
+                    hasSendMessagesPermission: C
+                } = t, {
+                    applicationAllowedForUser: R,
+                    applicationAllowedForChannel: g,
+                    isGuildInstalled: L,
+                    commandBotId: v
+                } = n;
+                if (e.type !== r) return 2;
+                if (e.nsfw && !s) return 1;
+                let D = (0, T.computeCommandContextType)(i, v);
                 if (null != e.contexts) {
-                    if (!e.contexts.includes(R)) return 4
-                } else if (e.inputType === c.ApplicationCommandInputType.BOT && (!1 === e.dmPermission && R === l.InteractionContextType.BOT_DM || R === l.InteractionContextType.PRIVATE_CHANNEL)) return 4;
-                if (null != e.predicate && s instanceof d.ChannelRecordBase) {
-                    let t = _.default.getGuild(s.guild_id);
+                    if (!e.contexts.includes(D)) return 4
+                } else if (e.inputType === E.ApplicationCommandInputType.BOT && (!1 === e.dmPermission && D === u.InteractionContextType.BOT_DM || D === u.InteractionContextType.PRIVATE_CHANNEL)) return 4;
+                if (null != e.predicate && i instanceof _.ChannelRecordBase) {
+                    let t = c.default.getGuild(i.guild_id);
                     if (!e.predicate({
-                            channel: s,
+                            channel: i,
                             guild: t
                         })) return 3
                 }
-                if (e.applicationId === T.BuiltInSectionId.BUILT_IN) return 0;
-                let g = (0, I.getContextGuildId)(s);
-                if (null == g || o.has(h, f.Permissions.ADMINISTRATOR)) return 0;
-                if (!C) return 5;
-                if (s instanceof d.ChannelRecordBase) {
-                    a()(void 0 !== i, "missing applicationAllowedForChannel");
-                    let t = m(e.permissions, s, g);
+                if (e.applicationId === f.BuiltInSectionId.BUILT_IN) return 0;
+                let M = (0, T.getContextGuildId)(i);
+                if (null == M || l.has(d, S.Permissions.ADMINISTRATOR)) return 0;
+                if (!O || !C && L && (null == e.integration_types || e.integration_types.includes(o.ApplicationIntegrationType.GUILD_INSTALL))) return 5;
+                if (i instanceof _.ChannelRecordBase) {
+                    a()(void 0 !== g, "missing applicationAllowedForChannel");
+                    let t = N(e.permissions, i, M);
                     if (function(e) {
                             return !1 === e
                         }(t) || ! function(e) {
                             return !0 === e
                         }(t) && function(e) {
                             return !1 === e
-                        }(i)) return 6
+                        }(g)) return 6
                 }
-                let L = N(e.permissions, g, A, p, O);
+                let y = p(e.permissions, M, h, A, m);
                 return function(e) {
                     return !0 === e
-                }(L) ? 0 : function(e) {
+                }(y) ? 0 : function(e) {
                     return !1 === e
-                }(L) ? 7 : function(e) {
+                }(y) ? 7 : function(e) {
                     return !1 === e
-                }(n) || null != e.defaultMemberPermissions && !(!o.equals(e.defaultMemberPermissions, E.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && o.has(h, e.defaultMemberPermissions)) ? 7 : 0
-            }
-
-            function h(e) {
-                return !0 === e
+                }(R) || null != e.defaultMemberPermissions && !(!l.equals(e.defaultMemberPermissions, I.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && l.has(d, e.defaultMemberPermissions)) ? 7 : 0
             }
 
             function A(e) {
+                return !0 === e
+            }
+
+            function m(e) {
                 return !1 === e
             }
 
-            function m(e, t, n) {
+            function N(e, t, n) {
                 if (null == e) return null;
                 let i = t.id;
                 if (t.isThread()) {
                     var r;
                     i = null !== (r = t.parent_id) && void 0 !== r ? r : t.id
                 }
-                let s = e[(0, u.toPermissionKey)(i, c.ApplicationCommandPermissionType.CHANNEL)];
+                let s = e[(0, d.toPermissionKey)(i, E.ApplicationCommandPermissionType.CHANNEL)];
                 if (null != s) return s.permission;
-                let a = e[(0, u.toPermissionKey)((0, E.allChannelsSentinel)(n), c.ApplicationCommandPermissionType.CHANNEL)];
+                let a = e[(0, d.toPermissionKey)((0, I.allChannelsSentinel)(n), E.ApplicationCommandPermissionType.CHANNEL)];
                 return null != a ? a.permission : null
             }
 
-            function N(e, t, n, i, r) {
+            function p(e, t, n, i, r) {
                 if (null == e) return null;
                 if (!r) {
-                    let t = e[(0, u.toPermissionKey)(n, c.ApplicationCommandPermissionType.USER)];
+                    let t = e[(0, d.toPermissionKey)(n, E.ApplicationCommandPermissionType.USER)];
                     if (null != t) return t.permission
                 }
                 let s = !1;
                 for (let t of i) {
-                    let n = e[(0, u.toPermissionKey)(t, c.ApplicationCommandPermissionType.ROLE)];
+                    let n = e[(0, d.toPermissionKey)(t, E.ApplicationCommandPermissionType.ROLE)];
                     if (null != n) {
                         if (n.permission) return !0;
                         s = !0
                     }
                 }
                 if (s) return !1;
-                let a = e[(0, u.toPermissionKey)(t, c.ApplicationCommandPermissionType.ROLE)];
+                let a = e[(0, d.toPermissionKey)(t, E.ApplicationCommandPermissionType.ROLE)];
                 return null != a ? a.permission : null
             }(r = i || (i = {}))[r.ALLOWED = 0] = "ALLOWED", r[r.NSFW_NOT_ALLOWED = 1] = "NSFW_NOT_ALLOWED", r[r.WRONG_COMMAND_TYPE = 2] = "WRONG_COMMAND_TYPE", r[r.PREDICATE_FAILED = 3] = "PREDICATE_FAILED", r[r.CONTEXT_NOT_ALLOWED = 4] = "CONTEXT_NOT_ALLOWED", r[r.MISSING_BASE_PERMISSIONS = 5] = "MISSING_BASE_PERMISSIONS", r[r.CHANNEL_DENIED = 6] = "CHANNEL_DENIED", r[r.USER_DENIED = 7] = "USER_DENIED"
         },
@@ -88763,8 +88786,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298639", "298639"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298639")), t = 0), t
+                let t = parseInt((e = "298649", "298649"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298649")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116875,8 +116898,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298639",
-                    versionHash: "72deac415e5980beee3970723e57965ecae5984a"
+                    buildNumber: "298649",
+                    versionHash: "a4bb25bf6c9b7ddb3ef9584907a1d9fce9e8ce93"
                 }
             }
             n.r(t), n.d(t, {
@@ -174434,8 +174457,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717518536401",
-                                    build_number: "298639"
+                                    built_at: "1717519543946",
+                                    build_number: "298649"
                                 }
                             },
                             retries: 1
@@ -251955,7 +251978,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "72deac415e5980beee3970723e57965ecae5984a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a4bb25bf6c9b7ddb3ef9584907a1d9fce9e8ce93"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281083,7 +281106,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298639"
+                                build_number: "298649"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288392,7 +288415,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298639", "298639"), 10);
+                let s = parseInt((n = "298649", "298649"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316253,4 +316276,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.dbee3ab3cecc37ffccf0.js.map
+//# sourceMappingURL=27519.45fbb19bea39b171b503.js.map
