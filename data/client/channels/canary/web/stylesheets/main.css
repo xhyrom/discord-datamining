@@ -96098,7 +96098,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .viewAllGamesButton__34838 {
@@ -96118,7 +96118,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -96175,7 +96175,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .headerBar__3337a {
@@ -133957,7 +133957,7 @@ div.nagbar_c731ff {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
     margin: 16px;
     overflow: hidden;
     height: 100%
@@ -133969,20 +133969,6 @@ div.nagbar_c731ff {
 
 .banner__45a39 {
     overflow: visible
-}
-
-.usernameBadgeList__9a1fb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    padding-left: 1px
-}
-
-.badgeList__70639 {
-    max-width: 228px;
-    border: none;
-    flex-shrink: 0
 }
 
 .buttons__9100c {
@@ -142811,4 +142797,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ddcfdddcdce6c6e08613.css.map*/
+/*# sourceMappingURL=99387.f7e9f0a37b26c725fe85.css.map*/
