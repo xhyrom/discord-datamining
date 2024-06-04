@@ -7501,7 +7501,8 @@ div.cardContainer__94a1c {
     justify-content: flex-end;
     padding: 20px;
     z-index: 1;
-    overflow-x: hidden
+    overflow-x: hidden;
+    background-color: var(--background-secondary)
 }
 
 .uploadModal__6eb75 .footer_f06dbb.hasSpoilers_d4e573 {
@@ -7511,26 +7512,6 @@ div.cardContainer__94a1c {
 
 .cancelAllButton__610cc {
     margin: 0 auto 0 0
-}
-
-.theme-dark .uploadModal__6eb75 {
-    background-color: var(--primary-600);
-    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
-}
-
-.theme-dark .footer_f06dbb {
-    background-color: var(--primary-630);
-    box-shadow: inset 0 1px 0 hsl(var(--primary-630-hsl)/.6)
-}
-
-.theme-light .uploadModal__6eb75 {
-    background: var(--white-500);
-    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
-}
-
-.theme-light .footer_f06dbb {
-    background-color: var(--primary-100);
-    box-shadow: inset 0 1px 0 hsl(var(--primary-100-hsl)/.6)
 }
 
 .destination__0bd3b {
@@ -10729,7 +10710,7 @@ span.clanTag_f4aadc {
     position: sticky;
     top: 0;
     padding: 0 8px;
-    background-color: var(--primary-630)
+    background-color: var(--autocomplete-bg)
 }
 
 .categorySection_ad5877 {
@@ -10742,10 +10723,6 @@ span.clanTag_f4aadc {
 
 .itemWrapper__171ac {
     padding: 0
-}
-
-.theme-light .categoryHeader__70c8e {
-    background-color: var(--primary-100)
 }
 
 .bar_a61d0a {
@@ -14273,6 +14250,16 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     transition: none
 }
 
+.result_e1fc74:hover,
+.result_e1fc74.focused__79359 {
+    box-shadow: 0 4px 12px 0 hsl(var(--primary-900-hsl)/.2)
+}
+
+.result_e1fc74:hover:after,
+.result_e1fc74.focused__79359:after {
+    box-shadow: inset 0 0 0 2px var(--brand-500), inset 0 0 0 3px var(--bg-mod-faint)
+}
+
 .gif__2aa16 {
     position: relative;
     display: block;
@@ -14303,7 +14290,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .endText__4af65 {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    color: var(--text-warning)
 }
 
 .searchSuggestions_b05433 {
@@ -14317,6 +14305,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     border-radius: 3px;
     margin-right: 4px;
     margin-top: 4px
+}
+
+.searchSuggestion__0c434.searchSuggestion__0c434:hover {
+    color: var(--white-500);
+    background-color: var(--brand-500);
+    border-color: var(--brand-500)
 }
 
 .noResults__22ca7 {
@@ -14364,7 +14358,9 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin: 6px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    background-color: var(--bg-mod-faint);
+    color: var(--text-normal)
 }
 
 .emptyHintSpacer__0caf6 {
@@ -14383,7 +14379,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     top: 6px;
     right: 6px;
     width: 29px;
-    height: 29px
+    height: 29px;
+    color: var(--text-warning)
 }
 
 @keyframes loadIN_aaf88b {
@@ -14406,81 +14403,16 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     animation: loadIN_aaf88b.6s cubic-bezier(.17, .67, .16, .99);
     animation-fill-mode: forwards;
     will-change: transform3d, opacity;
-    transform: translate3d(0, 48px, 0)
-}
-
-.theme-dark .result_e1fc74:hover,
-.theme-dark .focused__79359 {
-    box-shadow: 0 11px 22px 1px hsl(var(--primary-900-hsl)/.3)
-}
-
-.theme-dark .result_e1fc74:hover:after,
-.theme-dark .focused__79359:after {
-    box-shadow: inset 0 0 0 2px var(--brand-500), inset 0 0 0 3px var(--primary-630)
-}
-
-.theme-dark .placeholder__99206 {
-    background: hsl(var(--primary-500-hsl)/.6)
+    transform: translate3d(0, 48px, 0);
+    background: var(--bg-mod-faint)
 }
 
 .theme-dark .endContainer__4078a:after {
     background-image: url(/assets/2e172bbc8af10558fedb.svg)
 }
 
-.theme-dark .endText__4af65 {
-    color: var(--primary-300)
-}
-
-.theme-dark .searchSuggestion__0c434.searchSuggestion__0c434:hover {
-    color: var(--white-500);
-    background-color: var(--brand-500);
-    border-color: var(--brand-500)
-}
-
-.theme-dark .emptyHintCard_cac1d9 {
-    background-color: var(--primary-600);
-    color: var(--primary-300)
-}
-
-.theme-dark .emptyHintFavorite_f59534 {
-    color: var(--text-warning)
-}
-
-.theme-light .result_e1fc74:hover,
-.theme-light .focused__79359 {
-    box-shadow: 0 4px 12px 0 hsl(var(--primary-900-hsl)/.2)
-}
-
-.theme-light .result_e1fc74:hover:after,
-.theme-light .focused__79359:after {
-    box-shadow: inset 0 0 0 2px var(--brand-500), inset 0 0 0 3px var(--primary-200)
-}
-
-.theme-light .placeholder__99206 {
-    background: hsl(var(--primary-200-hsl)/.6)
-}
-
-.theme-light .endText__4af65 {
-    color: var(--primary-400)
-}
-
 .theme-light .endContainer__4078a:after {
     background-image: url(/assets/900eb85496e726f33a19.svg)
-}
-
-.theme-light .searchSuggestion__0c434.searchSuggestion__0c434:hover {
-    color: var(--white-500);
-    background-color: var(--brand-500);
-    border-color: var(--brand-500)
-}
-
-.theme-light .emptyHintCard_cac1d9 {
-    background-color: var(--primary-200);
-    color: var(--primary-500)
-}
-
-.theme-light .emptyHintFavorite_f59534 {
-    color: var(--text-warning)
 }
 
 .enable-forced-colors .result_e1fc74.focused__79359 {
@@ -17155,7 +17087,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .upload_c98ecb {
     display: inline-flex;
     flex-direction: column;
-    background-color: var(--background-secondary);
+    background: var(--bg-overlay-5, var(--background-secondary));
     border-radius: 4px;
     margin: 0;
     padding: 8px;
@@ -31783,16 +31715,8 @@ html .progress__00e29 {
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
-    pointer-events: none
-}
-
-.theme-dark .message_ff43e6 {
-    background-color: var(--primary-600);
-    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
-}
-
-.theme-light .message_ff43e6 {
-    background-color: var(--white-500);
+    pointer-events: none;
+    background-color: var(--background-primary);
     box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
@@ -32524,7 +32448,7 @@ html .progress__00e29 {
     height: 64px;
     margin-top: 16px;
     border-radius: 50%;
-    background-color: var(--background-accent);
+    background: var(--bg-overlay-3, var(--bg-mod-strong));
     display: flex;
     justify-content: center;
     align-items: center
@@ -35682,7 +35606,6 @@ html .progress__00e29 {
 }
 
 .container_de2a56:hover {
-    background-color: var(--background-primary);
     box-shadow: var(--elevation-high);
     transform: translatey(-2px)
 }
@@ -42473,7 +42396,8 @@ div.profileThemedContainer__6e645 {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    min-height: 0
+    min-height: 0;
+    background: var(--bg-overlay-2, var(--background-primary))
 }
 
 .chat_f9a759 {
@@ -88244,7 +88168,8 @@ input::-webkit-inner-spin-button {
 
 .directoryContainer__36395 {
     height: 100%;
-    padding: 32px 32px 64px
+    padding: 32px 32px 64px;
+    background: var(--background-primary)
 }
 
 .platform-osx .directoryContainer__36395:before {
@@ -88377,14 +88302,6 @@ input::-webkit-inner-spin-button {
     font-size: 17px;
     line-height: 24px;
     color: var(--interactive-normal)
-}
-
-.theme-light .directoryContainer__36395 {
-    background-color: var(--white-500)
-}
-
-.theme-dark .directoryContainer__36395 {
-    background-color: var(--primary-600)
 }
 
 .container_d260d3 {
@@ -99104,6 +99021,7 @@ div.content_aac020 {
 }
 
 .headerBar__7c489 {
+    background: var(--background-primary) !important;
     position: sticky;
     top: 0;
     height: 40px;
@@ -109820,7 +109738,7 @@ html .invoiceCancelRow__6ff3e {
 
 .mainTableContainer__37b54 {
     display: flex;
-    background-color: var(--background-primary);
+    background: var(--bg-overlay-2, var(--background-primary));
     flex-direction: column;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-border), var(--shadow-low);
@@ -116907,8 +116825,7 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .headerText_b3028b {
-    text-transform: none;
-    font-weight: 500
+    text-transform: none
 }
 
 .headerChannelContainer__74461 {
@@ -116972,7 +116889,8 @@ html .invoiceCancelRow__6ff3e {
 .inviteRowName__60057 {
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap
+    white-space: nowrap;
+    color: var(--interactive-normal)
 }
 
 .inviteRowButton__14750 {
@@ -117000,7 +116918,8 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .input_e652e6 {
-    border: none
+    border: none;
+    background-color: transparent
 }
 
 .noPadding__94dcb {
@@ -117029,7 +116948,8 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .subText_c87db8 {
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    color: var(--text-secondary)
 }
 
 .temporaryMembershipContainerBackground__4190c {
@@ -117069,64 +116989,21 @@ html .invoiceCancelRow__6ff3e {
     z-index: 0
 }
 
-.theme-light .inviteRow_d6ad74:hover {
-    background-color: var(--primary-100)
+.inviteRow_d6ad74:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover)
 }
 
-.theme-light .footer_d84330 {
-    background-color: var(--white-500)
-}
-
-.theme-light .content_d3cfc2:before {
-    background-color: hsl(var(--primary-600-hsl)/.1)
-}
-
-.theme-light .copied__3e37c {
-    border-color: var(--green-360)
-}
-
-.theme-light .subText_c87db8,
-.theme-light .inviteRowName__60057,
-.theme-light .checkBoxLabel__873a9 {
-    color: var(--primary-500)
-}
-
-.theme-light .inviteBannerUpsell_d4a58d {
-    background-color: var(--background-tertiary)
-}
-
-.theme-light .input_e652e6 {
-    background-color: transparent
-}
-
-.theme-dark .inviteRow_d6ad74:hover {
-    background-color: hsl(var(--primary-500-hsl)/.3)
-}
-
-.theme-dark .inviteRowName__60057 {
-    color: var(--primary-100)
-}
-
-.theme-dark .footer_d84330 {
-    background-color: var(--primary-600)
-}
-
-.theme-dark .content_d3cfc2:before {
-    background-color: hsl(var(--white-500-hsl)/.1)
-}
-
-.theme-dark .copied__3e37c {
-    border-color: var(--green-360)
-}
-
-.theme-dark .subText_c87db8,
-.theme-dark .footerText_f55c0f,
-.theme-dark .checkBoxLabel__873a9 {
-    color: var(--primary-300)
-}
-
-.theme-dark .inviteBannerUpsell_d4a58d {
+.footer_d84330 {
     background-color: var(--background-secondary)
+}
+
+.copied__3e37c {
+    border-color: var(--green-360)
+}
+
+.footerText_f55c0f {
+    color: var(--text-muted)
 }
 
 .headerContainer_d4517e {
@@ -117142,20 +117019,12 @@ html .invoiceCancelRow__6ff3e {
 
 .welcomeHeading__6bd67 {
     margin: 0 0 8px;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-    text-align: center;
-    color: var(--header-primary)
+    text-align: center
 }
 
 .welcomeSubheading__911bb {
-    margin: 0 0 15px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    text-align: center;
-    color: var(--text-muted)
+    margin: 0 0 16px;
+    text-align: center
 }
 
 .errorMessage__0b754 {
@@ -117165,17 +117034,6 @@ html .invoiceCancelRow__6ff3e {
 .errorLink__2cae2 {
     cursor: pointer;
     margin: 8px 0
-}
-
-.inviteBannerUpsell_d4a58d {
-    border-radius: 4px;
-    margin-top: 16px;
-    padding: 14px 0
-}
-
-.inviteBannerUpsell_d4a58d .inviteLink__8123a {
-    font-size: 12px;
-    margin-left: 16px
 }
 
 .premiumIcon_aac2c6 {
@@ -117195,9 +117053,6 @@ html .invoiceCancelRow__6ff3e {
     align-items: center;
     justify-content: center;
     background-color: var(--background-secondary-alt);
-    color: var(--text-normal);
-    font-weight: 500;
-    line-height: 1.2em;
     white-space: nowrap;
     margin-top: 0;
     flex: none;
@@ -117659,7 +117514,8 @@ html .invoiceCancelRow__6ff3e {
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    overflow: hidden
+    overflow: hidden;
+    background-color: var(--background-secondary)
 }
 
 .noBackground__96ddb {
@@ -117678,7 +117534,8 @@ html .invoiceCancelRow__6ff3e {
     overflow: hidden;
     display: flex;
     align-items: center;
-    flex: 0 0
+    flex: 0 0;
+    color: var(--header-primary)
 }
 
 .modalTitle__3df11 .content__286df {
@@ -117689,14 +117546,17 @@ html .invoiceCancelRow__6ff3e {
     padding: 0 40px 20px;
     font-size: 16px;
     line-height: 20px;
-    flex: 0 0
+    flex: 0 0;
+    border-bottom: 1px solid hsl(var(--black-500-hsl)/.1);
+    color: var(--header-secondary)
 }
 
 .ddrArrows__3f52a {
     position: absolute;
     overflow: hidden;
     top: 22px;
-    right: 40px
+    right: 40px;
+    display: flex
 }
 
 .ddrArrows__3f52a .arrow__42cbf {
@@ -117734,82 +117594,45 @@ html .invoiceCancelRow__6ff3e {
     margin: 8px 0
 }
 
-.keyboardShortcutList_a3e292 {
-    padding: 40px 20px 20px;
-    -moz-column-count: 3;
-    column-count: 3;
-    -moz-column-gap: 12px;
-    column-gap: 12px
-}
-
 .keyboardShortcutList_a3e292 .keybindGroup__00ce0 {
     box-sizing: border-box;
-    padding: 0 20px 8px;
-    overflow: hidden;
     page-break-inside: avoid;
     -moz-column-break-inside: avoid;
-    break-inside: avoid
-}
-
-.keyboardShortcutList_a3e292 .keybindGroup__00ce0.groupEnd_ec89f5 {
-    margin-bottom: 40px
-}
-
-.keyboardShortcutList_a3e292 .keybindGroup__00ce0 .keybindDescription_c0b6a8 {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
-    text-transform: uppercase;
-    margin-bottom: 4px
+    break-inside: avoid;
+    background-color: var(--bg-mod-faint);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
 }
 
 .keybindKey_ec5672 {
     margin-bottom: 8px
 }
 
+.keyboardShortcutSection_dca383 {
+    padding: 24px 8px;
+    margin-left: 16px;
+    border-bottom: 1px solid var(--border-subtle)
+}
+
+.keyboardShortcutSection_dca383:last-child {
+    border-bottom: none
+}
+
 .keyboardShortcutListGroup_aec68f {
-    padding: 8px;
-    margin: 8px 0
-}
-
-.theme-dark .keyboardShortcutsModal__44538 {
-    background-color: var(--primary-600)
-}
-
-.theme-dark .modalTitle__3df11 {
-    color: var(--white-500)
-}
-
-.theme-dark .modalSubtitle_f39977 {
-    border-bottom: 1px solid hsl(var(--black-500-hsl)/.1);
-    color: var(--primary-200)
-}
-
-.theme-dark .keyboardShortcutList_a3e292 .keybindGroup__00ce0 .keybindDescription_c0b6a8 {
-    color: var(--primary-300);
-    font-weight: 600
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, max-content));
+    grid-gap: 24px;
+    gap: 24px;
+    padding: 8px 0;
+    margin-top: 8px
 }
 
 .firstGroup_e1764c {
     margin-top: 0;
     padding-top: 0
-}
-
-.theme-light .keyboardShortcutsModal__44538 {
-    background-color: var(--white-500)
-}
-
-.theme-light .modalTitle__3df11 {
-    color: var(--primary-500)
-}
-
-.theme-light .modalSubtitle_f39977 {
-    border-bottom: 1px solid hsl(var(--black-500-hsl)/.1);
-    color: #737f8d
-}
-
-.theme-light .keyboardShortcutList_a3e292 .keybindGroup__00ce0 .keybindDescription_c0b6a8 {
-    color: var(--primary-500)
 }
 
 @keyframes arrow__42cbf {
@@ -118597,7 +118420,7 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .mainCard__0ec2c {
-    background-color: var(--background-primary);
+    background: var(--bg-mod-faint);
     border: 1px solid var(--home-card-resting-border);
     border-radius: var(--radius-md)
 }
@@ -118729,7 +118552,7 @@ html .invoiceCancelRow__6ff3e {
 .matchingPostsRow__6cdb0 {
     display: flex;
     align-items: center;
-    background-color: var(--background-secondary);
+    background: var(--bg-mod-subtle);
     height: 32px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -132070,7 +131893,7 @@ div.nagbar_c731ff {
 }
 
 .theme-dark .tierHeaderLocked__0ca2e {
-    background-color: var(--primary-700);
+    background-color: var(--background-tertiary);
     color: var(--primary-300)
 }
 
@@ -132083,8 +131906,8 @@ div.nagbar_c731ff {
 }
 
 .theme-dark .tierBody_fd5f94 {
-    background-color: var(--primary-630);
-    color: var(--primary-300)
+    background-color: var(--background-secondary);
+    color: var(--text-normal)
 }
 
 .theme-light .moreSubscribers__19189 {
@@ -132111,8 +131934,8 @@ div.nagbar_c731ff {
 }
 
 .theme-light .tierHeaderLocked__0ca2e {
-    background-color: var(--primary-100);
-    color: var(--primary-360)
+    background-color: var(--bg-mod-faint);
+    color: var(--interactive-muted)
 }
 
 .theme-light .tierHeaderUnlocked__960f7 {
@@ -132124,9 +131947,9 @@ div.nagbar_c731ff {
 }
 
 .theme-light .tierBody_fd5f94 {
-    background-color: var(--white-500);
-    color: var(--primary-600);
-    border: 1px solid var(--primary-160)
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    border: 1px solid var(--border-subtle)
 }
 
 .theme-dark .tierCloseHint_eae058,
@@ -136458,6 +136281,7 @@ div.nagbar_c731ff {
     --android-navigation-bar-background: var(--primary-830);
     --android-navigation-scrim-background: hsl(var(--primary-830-hsl) / 0.5);
     --android-ripple: hsl(var(--white-500-hsl) / 0.07);
+    --autocomplete-bg: var(--primary-630);
     --background-accent: var(--primary-530);
     --background-floating: var(--primary-800);
     --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
@@ -136796,6 +136620,9 @@ div.nagbar_c731ff {
         --android-ripple: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.07) 100%,
                 hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.07) var(--custom-theme-mix-amount-base, 0%));
+        --autocomplete-bg: color-mix(in oklab,
+                var(--primary-630) 100%,
+                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--primary-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137086,7 +136913,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channel-text-area-placeholder: color-mix(in oklab,
                 var(--primary-430) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channels-default: color-mix(in oklab,
                 var(--primary-360) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -137203,7 +137030,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --embed-title: color-mix(in oklab,
                 var(--primary-130) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --expression-picker-bg: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137704,6 +137531,7 @@ div.nagbar_c731ff {
     --android-navigation-bar-background: var(--primary-100);
     --android-navigation-scrim-background: hsl(var(--primary-100-hsl) / 0.5);
     --android-ripple: hsl(var(--black-500-hsl) / 0.12);
+    --autocomplete-bg: var(--primary-100);
     --background-accent: var(--primary-430);
     --background-floating: var(--white-500);
     --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
@@ -138042,6 +137870,9 @@ div.nagbar_c731ff {
         --android-ripple: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.12) 100%,
                 hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+        --autocomplete-bg: color-mix(in oklab,
+                var(--primary-100) 100%,
+                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--primary-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138332,7 +138163,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channel-text-area-placeholder: color-mix(in oklab,
                 var(--primary-400) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channels-default: color-mix(in oklab,
                 var(--primary-460) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -138449,7 +138280,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --embed-title: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --expression-picker-bg: color-mix(in oklab,
                 var(--primary-130) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138950,6 +138781,7 @@ div.nagbar_c731ff {
     --android-navigation-bar-background: var(--plum-24);
     --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
     --android-ripple: hsl(var(--white-500-hsl) / 0.07);
+    --autocomplete-bg: var(--primary-630);
     --background-accent: var(--plum-17);
     --background-floating: var(--plum-23);
     --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
@@ -139288,6 +139120,9 @@ div.nagbar_c731ff {
         --android-ripple: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.07) 100%,
                 hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.07) var(--custom-theme-mix-amount-base, 0%));
+        --autocomplete-bg: color-mix(in oklab,
+                var(--primary-630) 100%,
+                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139578,7 +139413,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channel-text-area-placeholder: color-mix(in oklab,
                 var(--plum-11) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channels-default: color-mix(in oklab,
                 var(--plum-9) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -139695,7 +139530,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --embed-title: color-mix(in oklab,
                 var(--plum-2) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --expression-picker-bg: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140196,6 +140031,7 @@ div.nagbar_c731ff {
     --android-navigation-bar-background: var(--plum-24);
     --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
     --android-ripple: hsl(var(--white-500-hsl) / 0.07);
+    --autocomplete-bg: var(--primary-630);
     --background-accent: var(--plum-15);
     --background-floating: var(--plum-18);
     --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
@@ -140534,6 +140370,9 @@ div.nagbar_c731ff {
         --android-ripple: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.07) 100%,
                 hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.07) var(--custom-theme-mix-amount-base, 0%));
+        --autocomplete-bg: color-mix(in oklab,
+                var(--primary-630) 100%,
+                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--plum-15) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140824,7 +140663,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channel-text-area-placeholder: color-mix(in oklab,
                 var(--plum-11) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --channels-default: color-mix(in oklab,
                 var(--plum-9) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -140941,7 +140780,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --embed-title: color-mix(in oklab,
                 var(--plum-3) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --expression-picker-bg: color-mix(in oklab,
                 var(--plum-20) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -142802,4 +142641,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.34415bd731500c31e8d0.css.map*/
+/*# sourceMappingURL=99387.5fc30aff55aaa2b50852.css.map*/
