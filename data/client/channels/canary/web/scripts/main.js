@@ -37129,7 +37129,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298823", ", Version Hash: ").concat("789d287af744bae7fdbdff39c315d59c6b573afa")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298835", ", Version Hash: ").concat("bb92955fc29e5f7dffdec25be6328d9723b10bfd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55655,6 +55655,7 @@
                 QUESTS_CLAIMED: "Claimed Quests",
                 QUESTS_PROMOTED_BY_GUILD: "Promoted by $[{guildName}]({guildHook})",
                 QUESTS_PROMOTED_BY_BRAND: "Promoted by **{brandName}**",
+                QUESTS_CONNECT_CONSOLE: "Connect Console",
                 QUESTS_REWARD_VERIFICATION_TITLE: "Verify your account to claim rewards!",
                 QUESTS_REWARD_VERIFICATION_BODY: "We have sent a verification email to: [{emailAddress}]({emailAddressLink})",
                 QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
@@ -55751,6 +55752,9 @@
                 QUESTS_HOME_HERO_TITLE: "Play Games. Get Rewards.",
                 QUESTS_HOME_HERO_DESCRIPTION: "Quests are a brand new way for players to discover games and earn rewards for playing them on Discord.",
                 QUEST_ACCEPTED: "Quest Accepted",
+                QUESTS_HOME_MODAL_CONNECT_CONSOLE: "Connect your console account to your Discord account",
+                QUESTS_HOME_MODAL_LINKED_ACCOUNTS: "LINKED ACCOUNT(S)",
+                QUESTS_HOME_MODAL_NEXT_STEP: "Next Step",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -88824,8 +88828,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298823", "298823"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298823")), t = 0), t
+                let t = parseInt((e = "298835", "298835"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298835")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116952,8 +116956,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298823",
-                    versionHash: "789d287af744bae7fdbdff39c315d59c6b573afa"
+                    buildNumber: "298835",
+                    versionHash: "bb92955fc29e5f7dffdec25be6328d9723b10bfd"
                 }
             }
             n.r(t), n.d(t, {
@@ -174532,8 +174536,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717536247993",
-                                    build_number: "298823"
+                                    built_at: "1717537598011",
+                                    build_number: "298835"
                                 }
                             },
                             retries: 1
@@ -190157,8 +190161,9 @@
                 l = n("846519"),
                 u = n("442837"),
                 d = n("583434"),
-                _ = n("706454"),
-                c = n("272008"),
+                _ = n("706454");
+            n("553795");
+            var c = n("272008"),
                 E = n("569984"),
                 I = n("497505"),
                 T = n("918701"),
@@ -190166,8 +190171,9 @@
                 S = n("977156"),
                 h = n("31055"),
                 A = n("566078"),
-                m = n("46140"),
-                N = n("689938");
+                m = n("46140");
+            n("981631");
+            var N = n("689938");
 
             function p() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
@@ -252128,7 +252134,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "789d287af744bae7fdbdff39c315d59c6b573afa"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "bb92955fc29e5f7dffdec25be6328d9723b10bfd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281256,7 +281262,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298823"
+                                build_number: "298835"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288565,7 +288571,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298823", "298823"), 10);
+                let s = parseInt((n = "298835", "298835"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316426,4 +316432,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.86a8f584819f81312748.js.map
+//# sourceMappingURL=27519.678978791051038ce92f.js.map
