@@ -19710,6 +19710,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     color: var(--interactive-normal)
 }
 
+.contentContainer__38b5f {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
 .checkboxRow__6444a:not(:last-child) {
     margin-bottom: 24px
 }
@@ -72500,7 +72506,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .heading__2adc1 {
-    margin-bottom: 12px
+    margin-bottom: 16px
 }
 
 .subheading__50893 {
@@ -142704,4 +142710,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6c52ca77ca66474013f5.css.map*/
+/*# sourceMappingURL=99387.15716433ccaca9f6ff8e.css.map*/

@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298562", ", Version Hash: ").concat("eaa903237bc9cc88ddcfffed1b69d969252b32f2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298579", ", Version Hash: ").concat("4eced44626b457864b884124848d9f61367f55b1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88762,8 +88762,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298562", "298562"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298562")), t = 0), t
+                let t = parseInt((e = "298579", "298579"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298579")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116874,8 +116874,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298562",
-                    versionHash: "eaa903237bc9cc88ddcfffed1b69d969252b32f2"
+                    buildNumber: "298579",
+                    versionHash: "4eced44626b457864b884124848d9f61367f55b1"
                 }
             }
             n.r(t), n.d(t, {
@@ -162405,58 +162405,60 @@
         316617: function(e, t, n) {
             "use strict";
             n.r(t);
-            var i = n("735250");
-            n("470079");
-            var r = n("442837"),
-                s = n("481060"),
-                a = n("739566"),
-                o = n("25015"),
-                l = n("592125"),
-                u = n("998951"),
-                d = n("113039"),
-                _ = n("778947"),
-                c = n("512665"),
-                E = n("768760"),
-                I = n("689938"),
-                T = n("287889");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("442837"),
+                a = n("481060"),
+                o = n("39154"),
+                l = n("739566"),
+                u = n("25015"),
+                d = n("592125"),
+                _ = n("998951"),
+                c = n("113039"),
+                E = n("778947"),
+                I = n("512665"),
+                T = n("768760"),
+                f = n("689938"),
+                S = n("287889");
             t.default = e => {
                 let {
                     message: t
-                } = e, n = (0, a.default)(t), f = (0, r.useStateFromStores)([l.default], () => l.default.getChannel(t.channel_id)), {
-                    content: S
-                } = (0, o.default)(t, {
+                } = e, n = (0, l.default)(t), h = (0, s.useStateFromStores)([d.default], () => d.default.getChannel(t.channel_id)), A = r.useMemo(() => (0, o.default)(t), [t]), {
+                    content: m
+                } = (0, u.default)(A, {
                     hideSimpleEmbedContent: !1
-                });
-                return null == f ? null : (0, i.jsxs)("div", {
-                    className: T.container,
-                    children: [(0, i.jsx)(s.Heading, {
-                        className: T.header,
+                }), N = r.useCallback(() => {
+                    let {
+                        leadingIcon: e,
+                        trailingIcon: n
+                    } = (0, I.renderSingleLineMessage)(t, m, !1, "", {
+                        leadingIconClass: S.attachmentIcon,
+                        trailingIconClass: S.attachmentIcon,
+                        iconSize: T.SINGLE_LINE_MESSAGE_DEFAULT_ICON_SIZE
+                    }), r = null == m || "" === m || Array.isArray(m) && 0 === m.length;
+                    return (0, i.jsxs)("div", {
+                        className: S.contentContainer,
+                        children: [e, r ? n : (0, i.jsx)(c.default, {
+                            message: t,
+                            content: m
+                        })]
+                    })
+                }, [t, m]);
+                return null == h ? null : (0, i.jsxs)("div", {
+                    className: S.container,
+                    children: [(0, i.jsx)(a.Heading, {
+                        className: S.header,
                         variant: "heading-sm/semibold",
-                        children: I.default.Messages.MOBILE_REPORTS_MESSAGE_PREVIEW_TITLE
-                    }), (0, i.jsx)(s.Scroller, {
-                        className: T.messagePreviewContainer,
-                        children: (0, i.jsx)(u.default, {
-                            childrenMessageContent: (() => {
-                                if (null == S || "" === S || Array.isArray(S) && 0 === S.length) {
-                                    let {
-                                        trailingIcon: e
-                                    } = (0, c.renderSingleLineMessage)(t, S, !1, "", {
-                                        leadingIconClass: T.attachmentIcon,
-                                        trailingIconClass: T.attachmentIcon,
-                                        iconSize: E.SINGLE_LINE_MESSAGE_DEFAULT_ICON_SIZE
-                                    });
-                                    return e
-                                }
-                                return (0, i.jsx)(d.default, {
-                                    message: t,
-                                    content: S
-                                })
-                            })(),
-                            childrenHeader: (0, i.jsx)(_.default, {
+                        children: f.default.Messages.MOBILE_REPORTS_MESSAGE_PREVIEW_TITLE
+                    }), (0, i.jsx)(a.Scroller, {
+                        className: S.messagePreviewContainer,
+                        children: (0, i.jsx)(_.default, {
+                            childrenMessageContent: N(),
+                            childrenHeader: (0, i.jsx)(E.default, {
                                 message: t,
-                                channel: f,
+                                channel: h,
                                 author: n,
-                                guildId: f.guild_id
+                                guildId: h.guild_id
                             }),
                             disableInteraction: !0
                         })
@@ -174454,8 +174456,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717464119143",
-                                    build_number: "298562"
+                                    built_at: "1717467156335",
+                                    build_number: "298579"
                                 }
                             },
                             retries: 1
@@ -251859,7 +251861,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "eaa903237bc9cc88ddcfffed1b69d969252b32f2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4eced44626b457864b884124848d9f61367f55b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280987,7 +280989,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298562"
+                                build_number: "298579"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288296,7 +288298,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298562", "298562"), 10);
+                let s = parseInt((n = "298579", "298579"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316157,4 +316159,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.2db22b1625093154fd16.js.map
+//# sourceMappingURL=27519.120e2a8b0fe0b507ea16.js.map
