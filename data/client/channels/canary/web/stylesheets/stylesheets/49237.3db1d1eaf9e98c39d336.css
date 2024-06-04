@@ -24326,7 +24326,7 @@ h6.title_c2a544 {
 }
 
 .markdown__8e519 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -27071,7 +27071,7 @@ h6.title_c2a544 {
 .header_c75fa4 {
     box-sizing: border-box;
     color: #fff;
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 400;
     height: 72px;
     padding: 8px 0;
@@ -27118,7 +27118,7 @@ h6.title_c2a544 {
     margin-top: 1em;
     padding: 4px;
     color: #fff;
-    font-size: 16px
+    font-size: 1rem
 }
 
 @supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
@@ -27218,7 +27218,7 @@ h6.title_c2a544 {
     border: 2px solid hsl(var(0, calc(0%*var(--saturation-factor, 1)), 100%-hsl)/.8);
     padding: 5px 17px 7px;
     border-radius: 20px;
-    line-height: 24px;
+    line-height: 1.5rem;
     margin-right: 18px
 }
 
@@ -27409,4 +27409,4 @@ h6.title_c2a544 {
     }
 }
 
-/*# sourceMappingURL=49237.0e5b022084edf5dab306.css.map*/
+/*# sourceMappingURL=49237.3db1d1eaf9e98c39d336.css.map*/
