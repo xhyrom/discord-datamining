@@ -74377,6 +74377,20 @@ html .invoiceCancelRow_aa7946 {
     gap: 8px
 }
 
+.customPillContainer_e8103d {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px
+}
+
+.searchableSelectExamples__3efa2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 24px 0
+}
+
 .button_c15687 {
     width: 100%;
     padding: 8px 0;
@@ -142788,4 +142802,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f847d600f1cd139ab41b.css.map*/
+/*# sourceMappingURL=99387.10dd2245361da2a6f0af.css.map*/
