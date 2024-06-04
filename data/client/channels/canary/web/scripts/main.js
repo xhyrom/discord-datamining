@@ -37097,7 +37097,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298687", ", Version Hash: ").concat("d412609b9d9e252565931c96e6f50936426bf9b9")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298691", ", Version Hash: ").concat("9f94b330cfee607fc4a44d1e11f77895ddd92437")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88789,8 +88789,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298687", "298687"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298687")), t = 0), t
+                let t = parseInt((e = "298691", "298691"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298691")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116901,8 +116901,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298687",
-                    versionHash: "d412609b9d9e252565931c96e6f50936426bf9b9"
+                    buildNumber: "298691",
+                    versionHash: "9f94b330cfee607fc4a44d1e11f77895ddd92437"
                 }
             }
             n.r(t), n.d(t, {
@@ -136994,6 +136994,11 @@
                 x({
                     type: "NOTIFICATION_CENTER_ITEM_COMPLETED",
                     item_enum: e.item_enum
+                })
+            }), k(["QUESTS_USER_STATUS_UPDATE"], e => {
+                x({
+                    type: "QUESTS_USER_STATUS_UPDATE",
+                    user_status: e.user_status
                 })
             }), k(["APPLICATION_COMMAND_PERMISSIONS_UPDATE"], (e, t) => {
                 x({
@@ -174460,8 +174465,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717522397945",
-                                    build_number: "298687"
+                                    built_at: "1717522959079",
+                                    build_number: "298691"
                                 }
                             },
                             retries: 1
@@ -190343,14 +190348,15 @@
                 m = n("442837"),
                 N = n("570140"),
                 p = n("497505"),
-                O = n("5881"),
-                C = n("46140");
+                O = n("918701"),
+                C = n("5881"),
+                R = n("46140");
 
-            function R() {
+            function g() {
                 i = !1, r = new Map, s = 0, a = new Set, o = new Set, l = new Set, u = new Set, d = new Set, _ = new Map, c = new Map, E = new Map, I = null
             }
 
-            function g(e, t) {
+            function L(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
                         updateProgress: !1
                     },
@@ -190372,38 +190378,38 @@
                 }
             }
 
-            function L(e, t) {
+            function v(e, t) {
                 let n = new Map(_);
                 n.set(e, t), _ = n
             }
 
-            function v(e, t) {
-                L(e, t);
+            function D(e, t) {
+                v(e, t);
                 let n = r.get(e),
                     i = null == n ? void 0 : n.userStatus;
-                null != i && null == i.claimedAt && g(e, {
+                null != i && null == i.claimedAt && L(e, {
                     userStatus: {
                         ...i,
                         claimedAt: t.claimedAt
                     }
                 })
             }
-            R();
+            g();
 
-            function D(e) {
+            function M(e) {
                 null != E.get(e) && (E = new Map(E)).delete(e)
             }
 
-            function M(e) {
+            function y(e) {
                 let t = new Set(a);
                 t.delete(e), a = t
             }
 
-            function y(e) {
+            function P(e) {
                 let t = new Set(d);
                 t.delete(e), d = t
             }
-            class P extends(T = m.default.Store) {
+            class U extends(T = m.default.Store) {
                 get quests() {
                     return r
                 }
@@ -190444,14 +190450,14 @@
                     return r.get(e)
                 }
             }
-            h = "QuestsStore", (S = "displayName") in(f = P) ? Object.defineProperty(f, S, {
+            h = "QuestsStore", (S = "displayName") in(f = U) ? Object.defineProperty(f, S, {
                 value: h,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : f[S] = h, t.default = new P(N.default, {
+            }) : f[S] = h, t.default = new U(N.default, {
                 LOGOUT: function() {
-                    R()
+                    g()
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
                     s = Date.now(), i = !0
@@ -190460,8 +190466,8 @@
                     let {
                         quests: t
                     } = e;
-                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(p.QuestContent.QUEST_BAR) && (0, O.getQuestLogger)({
-                        location: C.QuestsExperimentLocations.QUESTS_STORE
+                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(p.QuestContent.QUEST_BAR) && (0, C.getQuestLogger)({
+                        location: R.QuestsExperimentLocations.QUESTS_STORE
                     }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"))
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
@@ -190473,11 +190479,11 @@
                         streamKey: n,
                         userStatus: i
                     } = e;
-                    g(t, {
+                    L(t, {
                         userStatus: i
                     }, {
                         updateProgress: !0
-                    }), D(n)
+                    }), M(n)
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
                     let {
@@ -190500,15 +190506,15 @@
                     let {
                         enrolledQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
-                    }), M(t.questId)
+                    }), y(t.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    M(t)
+                    y(t)
                 },
                 QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
                     let {
@@ -190521,7 +190527,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(u);
-                    i.delete(t), u = i, v(t, n)
+                    i.delete(t), u = i, D(t, n)
                 },
                 QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -190540,7 +190546,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(o);
-                    i.delete(t), o = i, v(t, n)
+                    i.delete(t), o = i, D(t, n)
                 },
                 QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -190575,7 +190581,7 @@
                             }({
                                 entitlements: t
                             });
-                            null != n && L(e, n), g(e, {
+                            null != n && v(e, n), L(e, {
                                 userStatus: {
                                     ...s,
                                     claimedAt: t.claimedAt,
@@ -190601,33 +190607,43 @@
                     let {
                         dismissedQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
-                    }), y(t.questId)
+                    }), P(t.questId)
                 },
                 QUESTS_DISMISS_CONTENT_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    y(t)
+                    P(t)
+                },
+                QUESTS_USER_STATUS_UPDATE: function(e) {
+                    let {
+                        user_status: t
+                    } = e;
+                    L(t.quest_id, {
+                        userStatus: (0, O.questUserStatusFromServer)(t)
+                    }, {
+                        updateProgress: !0
+                    })
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    M(t)
                 },
                 QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    M(t)
                 },
                 QUESTS_PREVIEW_UPDATE_SUCCESS: function(e) {
                     let {
                         previewQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
                     }), null == t.claimedAt && (_ = new Map(_)).delete(t.questId)
                 },
@@ -190635,7 +190651,7 @@
                     let {
                         userStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
                     }, {
                         updateProgress: !0
@@ -251981,7 +251997,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d412609b9d9e252565931c96e6f50936426bf9b9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9f94b330cfee607fc4a44d1e11f77895ddd92437"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281109,7 +281125,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298687"
+                                build_number: "298691"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288418,7 +288434,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298687", "298687"), 10);
+                let s = parseInt((n = "298691", "298691"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316279,4 +316295,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.a2508d139a3d9df266c9.js.map
+//# sourceMappingURL=27519.65d52586ea1df9f394b6.js.map
