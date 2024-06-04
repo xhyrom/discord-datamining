@@ -37129,7 +37129,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298836", ", Version Hash: ").concat("976bfd1768848f77d6cd30a15201be3e6d246404")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298858", ", Version Hash: ").concat("657f81a6e9839a92c9bc6b1bf5652571b976decf")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88828,8 +88828,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298836", "298836"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298836")), t = 0), t
+                let t = parseInt((e = "298858", "298858"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298858")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116956,8 +116956,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298836",
-                    versionHash: "976bfd1768848f77d6cd30a15201be3e6d246404"
+                    buildNumber: "298858",
+                    versionHash: "657f81a6e9839a92c9bc6b1bf5652571b976decf"
                 }
             }
             n.r(t), n.d(t, {
@@ -117491,7 +117491,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("40326"), n.e("30386"), n.e("80451"), n.e("52110"), n.e("90508"), n.e("93521"), n.e("36439"), n.e("30634"), n.e("23124")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("40326"), n.e("30386"), n.e("80451"), n.e("52110"), n.e("90508"), n.e("93521"), n.e("45074"), n.e("36439"), n.e("30634"), n.e("23124")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -174536,8 +174536,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717537663596",
-                                    build_number: "298836"
+                                    built_at: "1717539876996",
+                                    build_number: "298858"
                                 }
                             },
                             retries: 1
@@ -214775,7 +214775,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return f
                 }
             });
             var i = n("735250");
@@ -214786,43 +214786,50 @@
                 o = n("314897"),
                 l = n("430824"),
                 u = n("185403"),
-                d = n("785717"),
-                _ = n("841040"),
-                c = n("993409"),
-                E = n("689938");
+                d = n("877485"),
+                _ = n("785717"),
+                c = n("841040"),
+                E = n("993409"),
+                I = n("228168"),
+                T = n("689938");
 
-            function I(e) {
+            function f(e) {
                 let {
                     user: t,
                     guildId: n,
-                    onClose: I
-                } = e, T = (0, r.useStateFromStores)([o.default], () => o.default.getId() === t.id), f = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getGuild(n) : null), {
-                    trackUserProfileAction: S
-                } = (0, d.useUserProfileAnalyticsContext)(), h = (0, a.default)();
-                return T ? null == f ? (0, i.jsx)(c.default, {
-                    icon: u.default,
-                    text: E.default.Messages.EDIT_PROFILE,
+                    profileType: f,
+                    onClose: S
+                } = e, h = (0, r.useStateFromStores)([o.default], () => o.default.getId() === t.id), A = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getGuild(n) : null), {
+                    originalFriendingEnabled: m
+                } = (0, d.useSimplifiedProfileFriendingExperiment)({
+                    location: "UserProfileEditMenuButton"
+                }), {
+                    trackUserProfileAction: N
+                } = (0, _.useUserProfileAnalyticsContext)(), p = (0, a.default)(), O = m && f === I.UserProfileTypes.FULL_SIZE ? void 0 : u.default;
+                return h ? null == A ? (0, i.jsx)(E.default, {
+                    icon: O,
+                    text: T.default.Messages.EDIT_PROFILE,
                     autoFocus: !0,
                     onClick: () => {
-                        S({
+                        N({
                             action: "EDIT_PROFILE"
-                        }), null == I || I(), h()
+                        }), null == S || S(), p()
                     }
                 }) : (0, i.jsx)(s.Popout, {
                     renderPopout: e => {
                         let {
                             closePopout: t
                         } = e;
-                        return (0, i.jsx)(_.default, {
-                            guild: f,
+                        return (0, i.jsx)(c.default, {
+                            guild: A,
                             onClose: () => {
-                                t(), null == I || I()
+                                t(), null == S || S()
                             }
                         })
                     },
-                    children: e => (0, i.jsx)(c.default, {
-                        icon: u.default,
-                        text: E.default.Messages.EDIT_PROFILE,
+                    children: e => (0, i.jsx)(E.default, {
+                        icon: O,
+                        text: T.default.Messages.EDIT_PROFILE,
                         autoFocus: !0,
                         ...e
                     })
@@ -217306,7 +217313,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return u
                 }
             });
             var i = n("735250");
@@ -217314,26 +217321,28 @@
             var r = n("505737"),
                 s = n("705556"),
                 a = n("901952"),
-                o = n("391016");
+                o = n("228168"),
+                l = n("391016");
 
-            function l(e) {
+            function u(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: l,
-                    onClose: u
-                } = e, d = (0, r.default)(t.id, n);
+                    channelId: u,
+                    onClose: d
+                } = e, _ = (0, r.default)(t.id, n);
                 return (0, i.jsxs)("footer", {
-                    className: o.footer,
-                    children: [d && (0, i.jsx)(a.default, {
+                    className: l.footer,
+                    children: [_ && (0, i.jsx)(a.default, {
                         user: t,
                         guildId: n,
-                        channelId: l,
-                        onClose: u
-                    }), !d && (0, i.jsx)(s.default, {
+                        channelId: u,
+                        onClose: d
+                    }), !_ && (0, i.jsx)(s.default, {
                         user: t,
                         guildId: n,
-                        onClose: u
+                        onClose: d,
+                        profileType: o.UserProfileTypes.BITE_SIZE
                     })]
                 })
             }
@@ -252137,7 +252146,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "976bfd1768848f77d6cd30a15201be3e6d246404"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "657f81a6e9839a92c9bc6b1bf5652571b976decf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281265,7 +281274,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298836"
+                                build_number: "298858"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288574,7 +288583,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298836", "298836"), 10);
+                let s = parseInt((n = "298858", "298858"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316435,4 +316444,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.da687dd98ad3529f6996.js.map
+//# sourceMappingURL=27519.86407cf0dcce2acecca9.js.map
