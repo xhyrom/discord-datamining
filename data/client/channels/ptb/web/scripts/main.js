@@ -37131,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299194", ", Version Hash: ").concat("09649810c55c3b9283405c160d84dcc6d0973678")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299202", ", Version Hash: ").concat("f60d4f0cbfbece00960da0d4bb2099d63208ed1b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88847,8 +88847,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299194", "299194"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299194")), t = 0), t
+                let t = parseInt((e = "299202", "299202"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299202")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117013,8 +117013,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299194",
-                    versionHash: "09649810c55c3b9283405c160d84dcc6d0973678"
+                    buildNumber: "299202",
+                    versionHash: "f60d4f0cbfbece00960da0d4bb2099d63208ed1b"
                 }
             }
             n.r(t), n.d(t, {
@@ -125695,16 +125695,43 @@
             }
             t.default = new s
         },
+        185745: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                CTPAppOpenVanillaExperiment: function() {
+                    return s
+                }
+            });
+            var i = n("987170"),
+                r = n("987338");
+            let s = (0, i.default)({
+                kind: "user",
+                id: "2024-06_ctp_app_open_vanilla",
+                label: "CTP app open - A/A test - Vanilla",
+                defaultConfig: {
+                    doSomething: !1
+                },
+                commonTriggerPoint: r.CommonTriggerPoints.POST_CONNECTION_OPEN,
+                treatments: [{
+                    id: 1,
+                    label: "Treatment",
+                    config: {
+                        doSomething: !0
+                    }
+                }]
+            })
+        },
         160462: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 ConnectionOpenTriggerPoint: function() {
-                    return s
+                    return a
                 }
             });
-            var i = n("91641"),
-                r = n("987338");
-            let s = new i.CommonTriggerPointConfiguration([], r.CommonTriggerPoints.POST_CONNECTION_OPEN, {
+            var i = n("185745"),
+                r = n("91641"),
+                s = n("987338");
+            let a = new r.CommonTriggerPointConfiguration([i.CTPAppOpenVanillaExperiment], s.CommonTriggerPoints.POST_CONNECTION_OPEN, {
                 location: "connection open"
             })
         },
@@ -174602,8 +174629,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717615874293",
-                                    build_number: "299194"
+                                    built_at: "1717616432526",
+                                    build_number: "299202"
                                 }
                             },
                             retries: 1
@@ -252317,7 +252344,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "09649810c55c3b9283405c160d84dcc6d0973678"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f60d4f0cbfbece00960da0d4bb2099d63208ed1b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281455,7 +281482,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299194"
+                                build_number: "299202"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288764,7 +288791,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299194", "299194"), 10);
+                let s = parseInt((n = "299202", "299202"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316633,4 +316660,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.4abd9cec7391fe6c06bb.js.map
+//# sourceMappingURL=27519.f7e1f55125227ee1d2a6.js.map
