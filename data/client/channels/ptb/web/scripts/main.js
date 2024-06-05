@@ -37131,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299158", ", Version Hash: ").concat("e17e2a3b7d304626392d6b4d2d4f1e4c9f5ec1fb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299171", ", Version Hash: ").concat("208dc979908f9f7ed5f6c6a45013cae1f09de83a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55758,6 +55758,11 @@
                 QUESTS_COMPLETION_COMPLETE: "Quest Completed!",
                 QUESTS_SHARE_LINK: "Copy Link to Quest",
                 QUESTS_CLAIM_THE_REWARD_HOOK: "Claim the $[reward](rewardHook)",
+                QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_HEADING: "The Requirements",
+                QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_CONNECT_ACCOUNT: "Connect your console to your Discord account",
+                QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_LAUNCH_GAME: "Launch any game on your connected console",
+                QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_PLAYTIME: "Play for **{numMinutes, number}** minutes",
+                QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_CTA: "Connect Console",
                 QUESTS_HOME_HERO_EYEBROW: "What are Quests?",
                 QUESTS_HOME_HERO_TITLE: "Play Games. Get Rewards.",
                 QUESTS_HOME_HERO_DESCRIPTION: "Quests are a brand new way for players to discover games and earn rewards for playing them on Discord.",
@@ -88842,8 +88847,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299158", "299158"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299158")), t = 0), t
+                let t = parseInt((e = "299171", "299171"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299171")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -89866,74 +89871,82 @@
                 o = n("924826"),
                 l = n("442837"),
                 u = n("481060"),
-                d = n("30465"),
-                _ = n("430824"),
-                c = n("156361"),
-                E = n("153124"),
-                I = n("153850"),
-                T = n("482207"),
-                f = n("436896"),
-                S = n("590921"),
-                h = n("606992"),
-                A = n("51062"),
-                m = n("583901");
+                d = n("867176"),
+                _ = n("317381"),
+                c = n("30465"),
+                E = n("430824"),
+                I = n("156361"),
+                T = n("153124"),
+                f = n("153850"),
+                S = n("482207"),
+                h = n("436896"),
+                A = n("590921"),
+                m = n("606992"),
+                N = n("51062"),
+                p = n("918559"),
+                O = n("583901");
             t.default = r.forwardRef(function(e, t) {
-                var n, s, N, p, O;
+                var n, s, C, R, g;
                 let {
-                    channel: C,
-                    type: R,
-                    editorHeight: g,
-                    onVisibilityChange: L
-                } = e, v = (0, E.useUID)(), D = (0, l.useStateFromStores)([_.default], () => {
+                    channel: L,
+                    type: v,
+                    editorHeight: D,
+                    onVisibilityChange: M
+                } = e, y = (0, T.useUID)(), P = (0, l.useStateFromStores)([E.default], () => {
                     var e;
-                    return null !== (e = _.default.getGuild(C.guild_id)) && void 0 !== e ? e : null
-                }, [C.guild_id]), M = r.useRef(), [y, P, U] = (0, A.default)({
+                    return null !== (e = E.default.getGuild(L.guild_id)) && void 0 !== e ? e : null
+                }, [L.guild_id]), U = r.useRef(), [b, G, w] = (0, N.default)({
                     ...e,
-                    guild: D
-                }, t, M), b = (null === (n = R.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? T.default : I.default, G = (0, c.getAutocompleteRowId)(y.selectedIndex);
-                (0, d.useChannelEditorPopup)(v, y.isVisible, G), f.default.trackExposure({
+                    guild: P
+                }, t, U), k = (null === (n = v.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? S.default : f.default, B = (0, I.getAutocompleteRowId)(b.selectedIndex);
+                (0, c.useChannelEditorPopup)(y, b.isVisible, B), h.default.trackExposure({
                     location: "6e9811_1"
                 });
                 let {
-                    usePopoutAutocomplete: w
-                } = f.default.useExperiment({
+                    usePopoutAutocomplete: V
+                } = h.default.useExperiment({
                     location: "6e9811_2"
                 }, {
                     autoTrackExposure: !1
-                }), k = (0, h.useChannelAutocompleteLayerPosition)({
-                    editorHeight: g,
-                    type: R,
-                    state: y,
-                    isInPopoutExperiment: w
-                }), B = r.useMemo(() => null == k ? "" : String(Date.now()), [null == k ? void 0 : k.top, null == k ? void 0 : k.left, null == k ? void 0 : k.bottom, null == k ? void 0 : k.right]);
+                }), x = (0, m.useChannelAutocompleteLayerPosition)({
+                    editorHeight: D,
+                    type: v,
+                    state: b,
+                    isInPopoutExperiment: V
+                }), F = (0, l.useStateFromStores)([_.default], () => {
+                    let e = _.default.getSelfEmbeddedActivityForChannel(L.id),
+                        t = _.default.getActivityPanelMode();
+                    return (0, d.isActivityInTextSupportedForChannel)(L) && null != e && e.channelId === L.id && t === p.ActivityPanelModes.PANEL
+                }, [L]), H = r.useMemo(() => null == x ? "" : String(Date.now()), [null == x ? void 0 : x.top, null == x ? void 0 : x.left, null == x ? void 0 : x.bottom, null == x ? void 0 : x.right]);
                 if (r.useEffect(() => {
-                        L(y.isVisible)
-                    }, [L, y.isVisible]), !y.isVisible || null == y.query || void 0 === k) return null;
-                let V = null !== (s = y.query.typeInfo.renderResults({
-                    results: y.query.results,
-                    selectedIndex: y.selectedIndex,
-                    channel: C,
-                    guild: D,
-                    query: y.query.queryText,
-                    options: y.query.options,
-                    onHover: e => P.onResultHover(e),
-                    onClick: e => P.onResultClick(e)
+                        M(b.isVisible)
+                    }, [M, b.isVisible]), !b.isVisible || null == b.query || void 0 === x) return null;
+                let Y = null !== (s = b.query.typeInfo.renderResults({
+                    results: b.query.results,
+                    selectedIndex: b.selectedIndex,
+                    channel: L,
+                    guild: P,
+                    query: b.query.queryText,
+                    options: b.query.options,
+                    onHover: e => G.onResultHover(e),
+                    onClick: e => G.onResultClick(e)
                 })) && void 0 !== s ? s : null;
-                if (null == V) return null;
-                let x = {
-                        [m.autocompleteAttached]: null == k,
-                        [m.autocompletePopout]: null != k,
-                        [m.bottom]: null == k && "bottom" === e.position
+                if (null == Y) return null;
+                let j = {
+                        [O.autocompleteAttached]: null == x,
+                        [O.autocompletePopout]: null != x,
+                        [O.bottom]: null == x && "bottom" === e.position,
+                        [O.autocompleteTop]: F
                     },
-                    F = 490;
-                null != k && (F = (null === (N = R.autocomplete) || void 0 === N ? void 0 : N.small) ? 200 : (null === (p = y.query) || void 0 === p ? void 0 : p.type) === S.AutocompleteOptionTypes.EMOJIS_AND_STICKERS ? 490 : 245), F = Math.min(window.innerHeight - 175, F);
-                let H = (0, i.jsx)(c.default, {
-                    id: v,
-                    className: a()(m.autocomplete, x),
-                    innerClassName: m.autocompleteInner,
+                    W = 490;
+                null != x && (W = (null === (C = v.autocomplete) || void 0 === C ? void 0 : C.small) ? 200 : (null === (R = b.query) || void 0 === R ? void 0 : R.type) === A.AutocompleteOptionTypes.EMOJIS_AND_STICKERS ? 490 : 245), W = Math.min(window.innerHeight - 175, W);
+                let K = (0, i.jsx)(I.default, {
+                    id: y,
+                    className: a()(O.autocomplete, j),
+                    innerClassName: O.autocompleteInner,
                     onMouseDown: e => e.preventDefault(),
                     children: (0, i.jsx)(o.ListNavigatorProvider, {
-                        navigator: U,
+                        navigator: w,
                         children: (0, i.jsx)(o.ListNavigatorContainer, {
                             children: e => {
                                 let {
@@ -89941,37 +89954,37 @@
                                     ...n
                                 } = e;
                                 return (0, i.jsx)(u.AdvancedScrollerThin, {
-                                    id: v,
+                                    id: y,
                                     ref: e => {
                                         var n;
-                                        t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, M.current = e
+                                        t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, U.current = e
                                     },
                                     ...n,
-                                    className: m.scroller,
+                                    className: O.scroller,
                                     style: {
-                                        maxHeight: F
+                                        maxHeight: W
                                     },
                                     role: "listbox",
-                                    "aria-labelledby": (0, c.getAutocompleteTitleId)(v),
-                                    children: V
+                                    "aria-labelledby": (0, I.getAutocompleteTitleId)(y),
+                                    children: Y
                                 })
                             }
                         })
                     })
                 });
-                return null != k ? (0, i.jsx)(b, {
+                return null != x ? (0, i.jsx)(k, {
                     children: (0, i.jsx)(u.ReferencePositionLayer, {
                         targetRef: e.targetRef,
-                        overrideTargetRect: k,
-                        positionKey: B,
-                        position: null !== (O = e.position) && void 0 !== O ? O : "top",
+                        overrideTargetRect: x,
+                        positionKey: H,
+                        position: null !== (g = e.position) && void 0 !== g ? g : "top",
                         align: "left",
                         spacing: 8,
                         autoInvert: !0,
                         nudgeAlignIntoViewport: !0,
-                        children: () => H
+                        children: () => K
                     })
-                }) : H
+                }) : K
             })
         },
         106824: function(e, t, n) {
@@ -117000,8 +117013,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299158",
-                    versionHash: "e17e2a3b7d304626392d6b4d2d4f1e4c9f5ec1fb"
+                    buildNumber: "299171",
+                    versionHash: "208dc979908f9f7ed5f6c6a45013cae1f09de83a"
                 }
             }
             n.r(t), n.d(t, {
@@ -174589,8 +174602,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717613103900",
-                                    build_number: "299158"
+                                    built_at: "1717613587356",
+                                    build_number: "299171"
                                 }
                             },
                             retries: 1
@@ -190291,91 +190304,94 @@
                 QuestFilters: function() {
                     return r
                 },
+                useConnectedAccounts: function() {
+                    return w
+                },
                 useDismissNewQuestBadge: function() {
-                    return M
-                },
-                useExpiredQuestsMap: function() {
-                    return R
-                },
-                useFilteredQuests: function() {
-                    return C
-                },
-                useIsQuestExpired: function() {
-                    return g
-                },
-                useQuestCollectibles: function() {
                     return P
                 },
-                useQuestFormattedDate: function() {
+                useExpiredQuestsMap: function() {
                     return L
                 },
-                useQuestFromActivities: function() {
-                    return y
+                useFilteredQuests: function() {
+                    return g
                 },
-                useQuestInstructionTitle: function() {
+                useIsQuestExpired: function() {
                     return v
                 },
-                useQuestPreviewActions: function() {
+                useQuestCollectibles: function() {
+                    return b
+                },
+                useQuestFormattedDate: function() {
+                    return D
+                },
+                useQuestFromActivities: function() {
                     return U
                 },
+                useQuestInstructionTitle: function() {
+                    return M
+                },
+                useQuestPreviewActions: function() {
+                    return G
+                },
                 useQuests: function() {
-                    return p
+                    return C
                 },
                 useQuestsForSettingsBadge: function() {
-                    return D
+                    return y
                 }
             }), n("47120"), n("653041");
             var i, r, s, a, o = n("470079"),
                 l = n("846519"),
                 u = n("442837"),
                 d = n("583434"),
-                _ = n("706454");
-            n("553795");
-            var c = n("272008"),
-                E = n("569984"),
-                I = n("497505"),
-                T = n("918701"),
-                f = n("242755"),
-                S = n("977156"),
-                h = n("31055"),
-                A = n("566078"),
-                m = n("46140");
-            n("981631");
-            var N = n("689938");
+                _ = n("706454"),
+                c = n("553795"),
+                E = n("272008"),
+                I = n("569984"),
+                T = n("497505"),
+                f = n("918701"),
+                S = n("242755"),
+                h = n("977156"),
+                A = n("31055"),
+                m = n("566078"),
+                N = n("46140"),
+                p = n("981631"),
+                O = n("689938");
 
-            function p() {
+            function C() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                         fetchPolicy: "cache-only"
                     },
                     [t, n] = o.useState(!1),
-                    i = (0, u.useStateFromStoresArray)([E.default], () => [...E.default.quests.values()]),
+                    i = (0, u.useStateFromStoresArray)([I.default], () => [...I.default.quests.values()]),
                     {
                         isFetchingCurrentQuests: r,
                         lastFetchedCurrentQuests: s
-                    } = (0, u.useStateFromStoresObject)([E.default], () => ({
-                        isFetchingCurrentQuests: E.default.isFetchingCurrentQuests,
-                        lastFetchedCurrentQuests: E.default.lastFetchedCurrentQuests
+                    } = (0, u.useStateFromStoresObject)([I.default], () => ({
+                        isFetchingCurrentQuests: I.default.isFetchingCurrentQuests,
+                        lastFetchedCurrentQuests: I.default.lastFetchedCurrentQuests
                     })),
-                    a = (0, S.getIsEligibleForQuests)({
-                        location: m.QuestsExperimentLocations.USE_QUESTS
+                    a = (0, h.getIsEligibleForQuests)({
+                        location: N.QuestsExperimentLocations.USE_QUESTS
                     });
                 return o.useEffect(() => {
-                    if ("cache-only" !== e.fetchPolicy)("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === s) && a && !t && !r && (n(!0), (0, c.fetchCurrentQuests)())
+                    if ("cache-only" !== e.fetchPolicy)("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === s) && a && !t && !r && (n(!0), (0, E.fetchCurrentQuests)())
                 }, [e.fetchPolicy, a, t, r, s]), {
                     quests: i,
                     isFetchingCurrentQuests: r
                 }
             }
 
-            function O(e, t, n) {
+            function R(e, t, n) {
                 return e.localeCompare(t) * (0 === n ? -1 : 1)
             }(s = i || (i = {}))[s.DESC = 0] = "DESC", s[s.ASC = 1] = "ASC";
 
-            function C(e) {
+            function g(e) {
                 let {
                     quests: t,
                     isFetchingCurrentQuests: n
-                } = p({
+                } = C({
                     fetchPolicy: "cache-and-network"
                 }), i = new Map(t.map(e => [e.id, e])), r = function(e) {
                     let t = o.useMemo(() => e.filter(e => {
@@ -190388,15 +190404,15 @@
                         if (n.current.length > 0) return n.current;
                         let e = t.sort((e, t) => {
                             var n, i, r, s, a, o;
-                            let l = !(0, T.isQuestExpired)(e),
-                                u = !(0, T.isQuestExpired)(t),
-                                d = (0, T.isTargetedForContent)(e, I.QuestContent.QUEST_BAR) || (0, T.isTargetedForContent)(e, I.QuestContent.QUEST_BAR_V2),
-                                _ = (0, T.isTargetedForContent)(t, I.QuestContent.QUEST_BAR) || (0, T.isTargetedForContent)(t, I.QuestContent.QUEST_BAR_V2),
-                                c = (0, T.isTargetedForContent)(e, I.QuestContent.GIFT_INVENTORY_FOR_YOU),
-                                E = (0, T.isTargetedForContent)(t, I.QuestContent.GIFT_INVENTORY_FOR_YOU),
-                                f = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null,
+                            let l = !(0, f.isQuestExpired)(e),
+                                u = !(0, f.isQuestExpired)(t),
+                                d = (0, f.isTargetedForContent)(e, T.QuestContent.QUEST_BAR) || (0, f.isTargetedForContent)(e, T.QuestContent.QUEST_BAR_V2),
+                                _ = (0, f.isTargetedForContent)(t, T.QuestContent.QUEST_BAR) || (0, f.isTargetedForContent)(t, T.QuestContent.QUEST_BAR_V2),
+                                c = (0, f.isTargetedForContent)(e, T.QuestContent.GIFT_INVENTORY_FOR_YOU),
+                                E = (0, f.isTargetedForContent)(t, T.QuestContent.GIFT_INVENTORY_FOR_YOU),
+                                I = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null,
                                 S = (null === (i = t.userStatus) || void 0 === i ? void 0 : i.enrolledAt) != null;
-                            return l !== u ? l ? -1 : 1 : d !== _ && l && u ? d ? -1 : 1 : c !== E ? c ? -1 : 1 : f !== S ? f ? -1 : 1 : l && u ? O(null === (a = e.config) || void 0 === a ? void 0 : a.expiresAt, null === (o = t.config) || void 0 === o ? void 0 : o.expiresAt, 1) : O(null === (r = e.config) || void 0 === r ? void 0 : r.expiresAt, null === (s = t.config) || void 0 === s ? void 0 : s.expiresAt, 0)
+                            return l !== u ? l ? -1 : 1 : d !== _ && l && u ? d ? -1 : 1 : c !== E ? c ? -1 : 1 : I !== S ? I ? -1 : 1 : l && u ? R(null === (a = e.config) || void 0 === a ? void 0 : a.expiresAt, null === (o = t.config) || void 0 === o ? void 0 : o.expiresAt, 1) : R(null === (r = e.config) || void 0 === r ? void 0 : r.expiresAt, null === (s = t.config) || void 0 === s ? void 0 : s.expiresAt, 0)
                         }).map(e => e.id);
                         return n.current = e, e
                     }, [t])
@@ -190415,8 +190431,8 @@
                             var n, i;
                             let r = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.claimedAt) == null;
                             if (r !== ((null === (i = t.userStatus) || void 0 === i ? void 0 : i.claimedAt) == null)) return r ? -1 : 1;
-                            let s = A.SharedQuestFields.build(e.config).rewardsExpireAt;
-                            return O(s, A.SharedQuestFields.build(t.config).rewardsExpireAt, 0)
+                            let s = m.SharedQuestFields.build(e.config).rewardsExpireAt;
+                            return R(s, m.SharedQuestFields.build(t.config).rewardsExpireAt, 0)
                         }).map(e => e.id);
                         return n.current = e, e
                     }, [t])
@@ -190431,24 +190447,24 @@
                 }
             }
 
-            function R() {
+            function L() {
                 let {
                     quests: e,
                     isFetchingCurrentQuests: t
-                } = p({
+                } = C({
                     fetchPolicy: "cache-only"
-                }), [n, i] = o.useState(() => new Map(e.map(e => [e.id, (0, T.isQuestExpired)(e)])));
+                }), [n, i] = o.useState(() => new Map(e.map(e => [e.id, (0, f.isQuestExpired)(e)])));
                 return o.useEffect(() => {
                     if (t) return;
                     let n = [];
                     for (let t of e)
-                        if (null == t || (0, T.isQuestExpired)(t)) null != t && (0, T.isQuestExpired)(t) && i(e => e.has(t.id) ? e : new Map(e).set(t.id, !0));
+                        if (null == t || (0, f.isQuestExpired)(t)) null != t && (0, f.isQuestExpired)(t) && i(e => e.has(t.id) ? e : new Map(e).set(t.id, !0));
                         else {
                             let e = new l.Timeout,
                                 r = () => {
                                     let s = Date.parse(t.config.expiresAt) - Date.now();
                                     e.start(s, () => {
-                                        (0, T.isQuestExpired)(t) ? i(e => new Map(e).set(t.id, !0)): r()
+                                        (0, f.isQuestExpired)(t) ? i(e => new Map(e).set(t.id, !0)): r()
                                     }), n.push(e)
                                 };
                             r()
@@ -190458,15 +190474,15 @@
                 }, [e, t]), n
             }
 
-            function g(e) {
-                let t = R();
+            function v(e) {
+                let t = L();
                 return o.useMemo(() => {
                     var n;
                     return null != e && null !== (n = t.get(e.id)) && void 0 !== n && n
                 }, [e, t])
             }
 
-            function L(e) {
+            function D(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
                         dateStyle: "short"
                     },
@@ -190474,13 +190490,13 @@
                 return o.useMemo(() => null == e ? "" : new Date(e).toLocaleDateString(n, t), [e, t, n])
             }
 
-            function v(e, t) {
-                let n = (0, f.useIsEligibleForQuestPlaytime)({
+            function M(e, t) {
+                let n = (0, S.useIsEligibleForQuestPlaytime)({
                         location: t
-                    }) && (0, T.hasPlayOnDesktopTask)({
+                    }) && (0, f.hasPlayOnDesktopTask)({
                         quest: e
-                    }) ? N.default.Messages.QUESTS_PLAY_TASK : N.default.Messages.QUESTS_STREAM_TASK,
-                    i = (0, T.getQuestTaskDetails)({
+                    }) ? O.default.Messages.QUESTS_PLAY_TASK : O.default.Messages.QUESTS_STREAM_TASK,
+                    i = (0, f.getQuestTaskDetails)({
                         quest: e,
                         location: t
                     }).targetMinutes;
@@ -190490,25 +190506,25 @@
                 })
             }
 
-            function D() {
+            function y() {
                 let {
                     quests: e,
                     isFetchingCurrentQuests: t
-                } = p({
+                } = C({
                     fetchPolicy: "cache-or-network"
-                }), n = R();
+                }), n = L();
                 return o.useMemo(() => {
                     let i = [];
                     if (t || 0 === e.length) return i;
                     for (let t of e) {
                         var r;
-                        if (!(0, T.includesTarget)(t, I.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE) || null !== (r = n.get(t.id)) && void 0 !== r && r) continue;
+                        if (!(0, f.includesTarget)(t, T.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE) || null !== (r = n.get(t.id)) && void 0 !== r && r) continue;
                         if ((null == t ? void 0 : t.userStatus) == null) {
                             i.push(t);
                             continue
                         }
                         let e = null != t.userStatus.claimedAt,
-                            s = (0, T.isDismissed)(t.userStatus, I.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE);
+                            s = (0, f.isDismissed)(t.userStatus, T.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE);
                         if (!e && !s) {
                             i.push(t);
                             continue
@@ -190518,29 +190534,29 @@
                 }, [e, n, t])
             }
 
-            function M() {
-                let e = D();
+            function P() {
+                let e = y();
                 o.useEffect(() => {
-                    for (let t of e)(0, c.dismissQuestContent)(t.id, I.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE)
+                    for (let t of e)(0, E.dismissQuestContent)(t.id, T.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE)
                 }, [e])
             }
 
-            function y(e) {
-                let t = (0, h.useIsEligibleForMembersListQuestEntrypoint)({
-                        location: m.QuestsExperimentLocations.MEMBERS_LIST
+            function U(e) {
+                let t = (0, A.useIsEligibleForMembersListQuestEntrypoint)({
+                        location: N.QuestsExperimentLocations.MEMBERS_LIST
                     }),
-                    n = (0, u.useStateFromStores)([E.default], () => t ? E.default.quests : null),
-                    i = o.useMemo(() => (0, T.getQuestsFromActivities)(n, e), [e, n]);
-                return g(i) ? null : i
+                    n = (0, u.useStateFromStores)([I.default], () => t ? I.default.quests : null),
+                    i = o.useMemo(() => (0, f.getQuestsFromActivities)(n, e), [e, n]);
+                return v(i) ? null : i
             }
 
-            function P(e) {
+            function b(e) {
                 var t;
-                let n = (0, T.hasCollectiblesQuestReward)(e),
+                let n = (0, f.hasCollectiblesQuestReward)(e),
                     {
                         product: i,
                         isFetching: r
-                    } = (0, d.useFetchCollectiblesProduct)(A.SharedQuestFields.build(e).defaultReward.skuId);
+                    } = (0, d.useFetchCollectiblesProduct)(m.SharedQuestFields.build(e).defaultReward.skuId);
                 return {
                     hasQuestCollectibles: n,
                     avatarDecoration: null == i ? void 0 : null === (t = i.items) || void 0 === t ? void 0 : t[0],
@@ -190548,12 +190564,42 @@
                 }
             }
 
-            function U(e) {
+            function G(e) {
                 return {
-                    handleComplete: () => (0, c.completeQuestPreview)(e),
-                    handleResetStatusClick: () => (0, c.resetQuestPreviewStatus)(e),
-                    handleResetDismissibilityClick: () => (0, c.resetQuestDismissibilityStatus)(e),
-                    handleOverrideDeliveryClick: () => (0, c.overrideQuestDelivery)(e)
+                    handleComplete: () => (0, E.completeQuestPreview)(e),
+                    handleResetStatusClick: () => (0, E.resetQuestPreviewStatus)(e),
+                    handleResetDismissibilityClick: () => (0, E.resetQuestDismissibilityStatus)(e),
+                    handleOverrideDeliveryClick: () => (0, E.overrideQuestDelivery)(e)
+                }
+            }
+
+            function w() {
+                let {
+                    fetching: e,
+                    accounts: t
+                } = (0, u.useStateFromStoresObject)([c.default], () => ({
+                    fetching: c.default.isFetching(),
+                    accounts: c.default.getAccounts()
+                })), {
+                    xboxAccounts: n,
+                    playstationAccounts: i,
+                    xboxAndPlaystationAccounts: r
+                } = o.useMemo(() => {
+                    let e = t.filter(e => !1 === e.revoked),
+                        n = e.filter(e => e.type === p.PlatformTypes.XBOX),
+                        i = e.filter(e => e.type === p.PlatformTypes.PLAYSTATION),
+                        r = n.concat(i);
+                    return {
+                        xboxAccounts: n,
+                        playstationAccounts: i,
+                        xboxAndPlaystationAccounts: r
+                    }
+                }, [t]);
+                return {
+                    fetching: e,
+                    xboxAccounts: n,
+                    playstationAccounts: i,
+                    xboxAndPlaystationAccounts: r
                 }
             }(a = r || (r = {})).UNCLAIMED = "unclaimed", a.CLAIMED = "claimed"
         },
@@ -252271,7 +252317,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e17e2a3b7d304626392d6b4d2d4f1e4c9f5ec1fb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "208dc979908f9f7ed5f6c6a45013cae1f09de83a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281409,7 +281455,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299158"
+                                build_number: "299171"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288718,7 +288764,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299158", "299158"), 10);
+                let s = parseInt((n = "299171", "299171"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316587,4 +316633,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.427a89082e73833ba188.js.map
+//# sourceMappingURL=27519.144124ebb01ecc8ebfbe.js.map
