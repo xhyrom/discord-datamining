@@ -37131,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299153", ", Version Hash: ").concat("3ab84aa79e79f643e8d38a4f3f89b7a58b745a7c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299158", ", Version Hash: ").concat("e17e2a3b7d304626392d6b4d2d4f1e4c9f5ec1fb")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88842,8 +88842,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299153", "299153"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299153")), t = 0), t
+                let t = parseInt((e = "299158", "299158"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299158")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117000,8 +117000,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299153",
-                    versionHash: "3ab84aa79e79f643e8d38a4f3f89b7a58b745a7c"
+                    buildNumber: "299158",
+                    versionHash: "e17e2a3b7d304626392d6b4d2d4f1e4c9f5ec1fb"
                 }
             }
             n.r(t), n.d(t, {
@@ -155183,7 +155183,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("46136"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("96151"), n.e("17220"), n.e("92557"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("46136"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("96151"), n.e("17220"), n.e("92557"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -174589,8 +174589,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717612880352",
-                                    build_number: "299153"
+                                    built_at: "1717613103900",
+                                    build_number: "299158"
                                 }
                             },
                             retries: 1
@@ -212889,43 +212889,47 @@
                     user: s,
                     displayProfile: O,
                     guildId: C,
-                    overrideBannerSrc: R,
-                    profileType: g,
-                    animateOnHover: L = !1,
-                    hasProfileEffect: v = !1
-                } = e, D = S.default.isPremiumAtLeast(null == O ? void 0 : O.premiumType, N.PremiumTypes.TIER_2), [M, y] = r.useState(!1), P = (0, l.useStateFromStores)([I.default], () => I.default.isFocused()), U = E.GifAutoPlay.getSetting(), {
-                    bannerSrc: b,
-                    status: G
+                    profileType: R,
+                    overrideBannerSrc: g,
+                    overrideBannerWidth: L,
+                    children: v,
+                    animateOnHover: D = !1,
+                    hasProfileEffect: M = !1,
+                    canUsePremiumCustomization: y = !1
+                } = e, P = y || S.default.isPremiumAtLeast(null == O ? void 0 : O.premiumType, N.PremiumTypes.TIER_2), [U, b] = r.useState(!1), G = (0, l.useStateFromStores)([I.default], () => I.default.isFocused()), w = E.GifAutoPlay.getSetting(), {
+                    bannerSrc: k,
+                    status: B
                 } = (0, h.default)({
                     displayProfile: O,
-                    overrideBannerSrc: R,
-                    size: (0, m.getUserBannerSize)(g),
-                    canAnimate: L || !U ? M : P
-                }), w = (0, d.useToken)(u.default.unsafe_rawColors.PRIMARY_800).hex(), k = (0, d.getAvatarSize)(d.AvatarSizes.SIZE_80), B = (0, o.hex2int)((0, _.default)(s.getAvatarURL(C, k), w, !1)), V = (0, c.default)(null !== (t = null == O ? void 0 : O.primaryColor) && void 0 !== t ? t : B).hsl;
+                    overrideBannerSrc: g,
+                    size: (0, m.getUserBannerSize)(R),
+                    canAnimate: D || !w ? U : G
+                }), V = (0, d.useToken)(u.default.unsafe_rawColors.PRIMARY_800).hex(), x = (0, d.getAvatarSize)(d.AvatarSizes.SIZE_80), F = (0, o.hex2int)((0, _.default)(s.getAvatarURL(C, x), V, !1)), H = (0, c.default)(null !== (t = null == O ? void 0 : O.primaryColor) && void 0 !== t ? t : F).hsl;
                 return (0, i.jsx)(A.default, {
-                    isPremium: D,
+                    isPremium: P,
                     hasThemeColors: null !== (n = null == O ? void 0 : O.canEditThemes) && void 0 !== n && n,
-                    profileType: g,
-                    hasBanner: null != b,
-                    hasProfileEffect: v,
-                    children: (0, i.jsx)("div", {
+                    profileType: R,
+                    hasBanner: null != k,
+                    hasProfileEffect: M,
+                    overrideBannerWidth: L,
+                    children: (0, i.jsxs)("div", {
                         className: a()(p.banner, p.divider, (0, m.getUserBannerStyles)({
-                            profileType: g,
+                            profileType: R,
                             user: {
-                                hasBanner: null != b,
-                                isPremium: D,
-                                hasProfileEffect: v
+                                hasBanner: null != k,
+                                isPremium: P,
+                                hasProfileEffect: M
                             }
                         })),
-                        onMouseMove: () => y(!0),
-                        onMouseLeave: () => y(!1),
+                        onMouseMove: () => b(!0),
+                        onMouseLeave: () => b(!1),
                         style: {
-                            backgroundImage: null != b ? "url(".concat(b, ")") : void 0,
-                            backgroundColor: G !== h.BannerLoadingStatus.COMPLETE ? u.default.unsafe_rawColors.PRIMARY_800.css : V
+                            backgroundImage: null != k ? "url(".concat(k, ")") : void 0,
+                            backgroundColor: B !== h.BannerLoadingStatus.COMPLETE ? u.default.unsafe_rawColors.PRIMARY_800.css : H
                         },
-                        children: !U && (0, f.isAnimatedImageURL)(b) && (0, i.jsx)(T.default, {
+                        children: [!w && (0, f.isAnimatedImageURL)(k) && (0, i.jsx)(T.default, {
                             className: p.gifTag
-                        })
+                        }), v]
                     })
                 })
             }
@@ -252267,7 +252271,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3ab84aa79e79f643e8d38a4f3f89b7a58b745a7c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e17e2a3b7d304626392d6b4d2d4f1e4c9f5ec1fb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281405,7 +281409,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299153"
+                                build_number: "299158"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288714,7 +288718,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299153", "299153"), 10);
+                let s = parseInt((n = "299158", "299158"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316583,4 +316587,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.d28a38a48f24ef0ec2ff.js.map
+//# sourceMappingURL=27519.427a89082e73833ba188.js.map
