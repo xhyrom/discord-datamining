@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299335", ", Version Hash: ").concat("0ddcc82ba78cfaaeca13e1666fe0d790d9978c0b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299340", ", Version Hash: ").concat("e13908da6d4615e9142ed1c2b59846d749eaf901")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88854,8 +88854,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299335", "299335"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299335")), t = 0), t
+                let t = parseInt((e = "299340", "299340"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299340")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117020,8 +117020,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299335",
-                    versionHash: "0ddcc82ba78cfaaeca13e1666fe0d790d9978c0b"
+                    buildNumber: "299340",
+                    versionHash: "e13908da6d4615e9142ed1c2b59846d749eaf901"
                 }
             }
             n.r(t), n.d(t, {
@@ -174636,8 +174636,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717625538810",
-                                    build_number: "299335"
+                                    built_at: "1717626093442",
+                                    build_number: "299340"
                                 }
                             },
                             retries: 1
@@ -252588,7 +252588,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0ddcc82ba78cfaaeca13e1666fe0d790d9978c0b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e13908da6d4615e9142ed1c2b59846d749eaf901"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281792,7 +281792,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299335"
+                                build_number: "299340"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289101,7 +289101,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299335", "299335"), 10);
+                let s = parseInt((n = "299340", "299340"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -297482,21 +297482,22 @@
                         let {
                             start: n,
                             end: i,
-                            padding: o = 0,
-                            animate: l,
-                            callback: u
+                            shouldScrollToStart: o = !1,
+                            padding: l = 0,
+                            animate: u,
+                            callback: d
                         } = e, {
-                            scrollPosition: d,
-                            offsetSize: _
+                            scrollPosition: _,
+                            offsetSize: c
                         } = r(t(), s);
-                        n -= o, i += o, n >= d && i <= d + _ ? null != u && u() : n < d ? a({
+                        n -= l, i += l, n >= _ && i <= _ + c ? null != d && d() : n < _ || o ? a({
                             to: n,
-                            animate: l,
-                            callback: u
+                            animate: u,
+                            callback: d
                         }) : a({
-                            to: i - _,
-                            animate: l,
-                            callback: u
+                            to: i - c,
+                            animate: u,
+                            callback: d
                         })
                     };
                 return {
@@ -297507,16 +297508,17 @@
                     scrollIntoViewNode(t) {
                         let {
                             node: n,
-                            padding: r = 0,
-                            animate: a = !1,
-                            callback: l
+                            shouldScrollToStart: r = !1,
+                            padding: a = 0,
+                            animate: l = !1,
+                            callback: u
                         } = t, {
-                            current: u
+                            current: d
                         } = e;
-                        if (null == u) return;
+                        if (null == d) return;
                         let {
-                            offset: d,
-                            offsetSize: _
+                            offset: _,
+                            offsetSize: c
                         } = function(e, t, n) {
                             let r = "horizontal" === t ? e.offsetWidth : e.offsetHeight,
                                 s = "horizontal" === t ? e.offsetLeft : e.offsetTop,
@@ -297526,13 +297528,14 @@
                                 offset: s,
                                 offsetSize: r
                             }
-                        }(n, s, u);
+                        }(n, s, d);
                         o({
-                            start: d,
-                            end: d + _,
-                            padding: r,
-                            animate: a,
-                            callback: l
+                            start: _,
+                            end: _ + c,
+                            shouldScrollToStart: r,
+                            padding: a,
+                            animate: l,
+                            callback: u
                         })
                     },
                     scrollPageUp() {
@@ -317006,4 +317009,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.faab471cd1fd4625d300.js.map
+//# sourceMappingURL=27519.1ad1f495f18ff32ccd13.js.map
