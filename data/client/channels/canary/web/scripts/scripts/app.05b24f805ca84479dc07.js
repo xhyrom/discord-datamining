@@ -21002,7 +21002,9 @@
                 giftButton: "giftButton__890d6",
                 giftIcon: "giftIcon_a1f989",
                 premiumIcon: "premiumIcon__6c12e",
-                premiumSubscribeButton: "premiumSubscribeButton__61b05"
+                premiumSubscribeButton: "premiumSubscribeButton__61b05",
+                tier1Gradient: "tier1Gradient__63fd2",
+                tier2Gradient: "tier2Gradient_db57b9"
             }
         },
         697466: function(e) {
@@ -22309,7 +22311,6 @@
                 enhancedPrimaryActions: "enhancedPrimaryActions_db2d14",
                 enhancedSecondaryAction: "enhancedSecondaryAction_bbd620",
                 footer: "footer_fbde49",
-                getNitroCTA: "getNitroCTA__8d970",
                 header: "header__3ab01",
                 learnMoreLink: "learnMoreLink__97b89",
                 newBadge: "newBadge__9c4b4",
