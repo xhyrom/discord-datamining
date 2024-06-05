@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_checkout_recovery_nagbar_test",
+    "label": "Testing",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Users will not see the nagbar",
+      "Treatment 1: Users will see the nagbar"
+    ],
+    "hash": 2984314285,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
