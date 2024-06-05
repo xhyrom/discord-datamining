@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299381", ", Version Hash: ").concat("90d7239c2574422312b85ad5dd8e7d1132e95591")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299398", ", Version Hash: ").concat("1b5583dd400c0616d041405f8e3d6826f481c991")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88856,8 +88856,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299381", "299381"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299381")), t = 0), t
+                let t = parseInt((e = "299398", "299398"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299398")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117022,8 +117022,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299381",
-                    versionHash: "90d7239c2574422312b85ad5dd8e7d1132e95591"
+                    buildNumber: "299398",
+                    versionHash: "1b5583dd400c0616d041405f8e3d6826f481c991"
                 }
             }
             n.r(t), n.d(t, {
@@ -174638,8 +174638,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717630198989",
-                                    build_number: "299381"
+                                    built_at: "1717631224446",
+                                    build_number: "299398"
                                 }
                             },
                             retries: 1
@@ -219452,15 +219452,15 @@
                     avatarOverride: E
                 } = e, [I, T] = i.useState(!1), f = (0, r.useStateFromStores)([s.default], () => s.default.useReducedMotion), S = (0, r.useStateFromStores)([l.default], () => l.default.isFocused()) && (I || !f && !c), {
                     pendingAvatar: h
-                } = (0, u.default)({}), A = (0, r.useStateFromStores)([o.default], () => null != n && null != t ? o.default.getMember(n, t.id) : null), m = i.useMemo(() => null != t ? (0, a.getPreviewAvatar)(_ ? null != E ? E : h : void 0, A, t, {
+                } = (0, u.default)({}), A = void 0 !== E ? E : _ ? h : void 0, m = (0, r.useStateFromStores)([o.default], () => null != n && null != t ? o.default.getMember(n, t.id) : null), N = i.useMemo(() => null != t ? (0, a.getPreviewAvatar)(A, m, t, {
                     canAnimate: S,
                     size: d
-                }) : void 0, [_, h, A, t, S, d, E]), N = i.useCallback(() => T(!0), []);
+                }) : void 0, [A, m, t, S, d]), p = i.useCallback(() => T(!0), []);
                 return {
-                    avatarSrc: m,
+                    avatarSrc: N,
                     isAvatarAnimating: S,
                     eventHandlers: {
-                        onMouseEnter: N,
+                        onMouseEnter: p,
                         onMouseLeave: i.useCallback(() => T(!1), [])
                     }
                 }
@@ -252592,7 +252592,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "90d7239c2574422312b85ad5dd8e7d1132e95591"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1b5583dd400c0616d041405f8e3d6826f481c991"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281796,7 +281796,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299381"
+                                build_number: "299398"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289105,7 +289105,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299381", "299381"), 10);
+                let s = parseInt((n = "299398", "299398"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317013,4 +317013,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.fd13c21e6f76d94891e3.js.map
+//# sourceMappingURL=27519.0bed40f0afac5611ac89.js.map
