@@ -46368,15 +46368,14 @@ img.thumbnail__18ece {
     align-items: center
 }
 
-.container_b4fcdf {
+.container_b4fcdf,
+.inputContainer__3a0bf {
     width: 800px
 }
 
-.selectedSection__6b9ac {
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 8px
+.input__03b75 {
+    width: 400px;
+    margin-bottom: 40px
 }
 
 .clickableGame_b4a78f {
@@ -46396,13 +46395,10 @@ img.thumbnail__18ece {
     opacity: .8
 }
 
-.errorWrapper__969d1 {
-    min-height: 300px
-}
-
-.recentGamesDivider__09927 {
-    border-top: 1px solid var(--border-subtle);
-    margin-bottom: 40px
+.pills__7d9f2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px
 }
 
 .container__299a3 {
@@ -46437,7 +46433,6 @@ img.thumbnail__18ece {
     flex: 0 1 auto;
     display: flex;
     gap: 40px;
-    max-width: 800px;
     align-items: center;
     margin: 40px
 }
@@ -142714,4 +142709,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.494bb5bb3f59d4adbb84.css.map*/
+/*# sourceMappingURL=99387.3b56fc03f4c6d3827bc3.css.map*/
