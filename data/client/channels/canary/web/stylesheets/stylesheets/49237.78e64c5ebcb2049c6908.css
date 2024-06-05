@@ -12394,17 +12394,25 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     margin-left: 10px
 }
 
-.activityBiteSizePopout__67f8f .textRow_c835f1 {
+.activityBiteSizePopout__67f8f .headerText_c0138d,
+.activitySimplifiedProfile_a543ff .headerText_c0138d {
+    text-transform: none
+}
+
+.activityBiteSizePopout__67f8f .textRow_c835f1,
+.activitySimplifiedProfile_a543ff .textRow_c835f1 {
     font-size: 12px;
     line-height: 16px;
     font-weight: 400
 }
 
 .activityBiteSizePopout__67f8f .nameWrap_b61c4b,
-.activityBiteSizePopout__67f8f .nameNormal_cb5c2b {
+.activityBiteSizePopout__67f8f .nameNormal_cb5c2b,
+.activitySimplifiedProfile_a543ff .nameWrap_b61c4b,
+.activitySimplifiedProfile_a543ff .nameNormal_cb5c2b {
     font-size: 14px;
     line-height: 18px;
-    font-weight: 500
+    font-weight: 600
 }
 
 .textRow_c835f1 {
@@ -27373,4 +27381,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.40715bca31ec8ab909b3.css.map*/
+/*# sourceMappingURL=49237.78e64c5ebcb2049c6908.css.map*/
