@@ -19583,6 +19583,14 @@ h6.title_c2a544 {
     opacity: 1
 }
 
+.background-opacity-low .embedPlaystation__3a28e {
+    opacity: .8
+}
+
+.background-opacity-low .embedPlaystation__3a28e:hover {
+    opacity: 1
+}
+
 .background-opacity-low .embedProvider_f3e807,
 .background-opacity-low .embedDescription_f5043f,
 .background-opacity-low .embedFooterText_c3068e,
@@ -19732,6 +19740,14 @@ h6.title_c2a544 {
 .enable-forced-colors .embedSuppressButton__5aae1:hover,
 .enable-forced-colors .embedSuppressButton__5aae1:focus {
     border-color: ButtonText
+}
+
+.embedIFrame__94cf2 {
+    opacity: .8
+}
+
+.embedIFrame__94cf2:hover {
+    opacity: 1
 }
 
 .ephemeralMessage__24192 {
@@ -27357,4 +27373,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.4e6cd7e5d2c404b1c791.css.map*/
+/*# sourceMappingURL=49237.a7092518945b9b5c7222.css.map*/
