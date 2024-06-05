@@ -122488,6 +122488,7 @@ div:has(>div>.container__8ab05) {
 }
 
 .carouselContainer__9995f {
+    --custom-carousel-height: 332px;
     margin-left: -32px;
     width: -moz-fit-content;
     width: fit-content
@@ -122496,21 +122497,21 @@ div:has(>div>.container__8ab05) {
 .carousel_c638a6 {
     position: relative;
     min-width: 700px;
-    height: 356px;
+    height: var(--custom-carousel-height);
     overflow: visible
 }
 
 .headerContainer__29549 {
     position: relative;
     width: 100%;
-    height: 356px;
-    aspect-ratio: 1124/356
+    height: var(--custom-carousel-height);
+    aspect-ratio: 1124/332
 }
 
 .headerInnerContainer__1ecbe {
     position: absolute;
     left: 32px;
-    bottom: 24px;
+    bottom: 0;
     max-width: 1060px;
     width: 100%;
     height: 292px;
@@ -122526,24 +122527,9 @@ div:has(>div>.container__8ab05) {
     pointer-events: none
 }
 
-.overflowSlideAnimatorContainer__57bdc {
-    position: absolute;
-    left: 0;
-    right: -32px;
-    top: -40px;
-    overflow: clip;
-    min-width: 768px;
-    height: 356px;
-    pointer-events: none
-}
-
-.overflowSlideAnimator__4428d {
-    height: 356px
-}
-
 .overflowImage_b382c8 {
     position: absolute;
-    bottom: 0;
+    bottom: -24px;
     right: 0;
     height: 356px;
     pointer-events: none
@@ -122588,7 +122574,7 @@ div:has(>div>.container__8ab05) {
 }
 
 .paginationControls_f5f6d3 {
-    padding: 64px 56px 40px
+    padding: 64px 56px 16px
 }
 
 .paginationButton__51441:first-child {
@@ -142795,4 +142781,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1577a6074ab8e4c2ea4d.css.map*/
+/*# sourceMappingURL=99387.5cd1b674050686e26bde.css.map*/
