@@ -1,3 +1,4 @@
+<h3 id="h_01HZN9XQQKNWGH14D5YTVXD4B0"><span class="wysiwyg-font-size-large"><strong>Note:</strong> Krisp is supported on Windows, Linux, and Mac OS 11.7.10+.</span></h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="#h_01HDEGBA677RS4S8ZE79BZRWD3">What is Krisp?</a></li>

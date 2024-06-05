@@ -55,6 +55,9 @@
 <p>A: The Shop is available to all Discord users. If you are also a Nitro member, you will have special member pricing on all purchases within the Shop!</p>
 <p id="docs-internal-guid-22992952-7fff-a0a6-ea7e-1cb0798d6051"><strong>Q: How do I get a discount on avatar decorations in the Shop?</strong></p>
 <p>A: Only Nitro members have access to special member pricing in the Shop. You can find more information about Nitro <a href="https://support.discord.com/hc/articles/115000435108-Discord-Nitro-Classic-Nitro">here</a>.</p>
+<p id="docs-internal-guid-a566b11a-7fff-266e-9c00-83486a7cbd12"><strong>Q: Is localized pricing available for avatar decorations?</strong></p>
+<p id="docs-internal-guid-3e30ce7c-7fff-5b92-9301-1944a349ce05">A: Localized pricing is available for avatar decorations in some countries. You should see localized pricing options in the Shop if you are eligible. You can learn more about localized pricing <a href="https://support.discord.com/hc/articles/4407269525911" target="_blank" rel="noopener noreferrer">here</a>. </p>
+<h3 id="h_01HZN8P8S1RVVDVA4TP4R8178H">Note: Avatar decoration gifts are not available at localized prices. Depending on a user’s region, they may be able to pay for a gift in their local currency, but the price will still be equivalent to the USD price.</h3>
 <p><strong>Q: Do I keep the avatar decorations I’ve purchased? </strong></p>
 <p>A: Yes, any decorations you’ve purchased are yours to keep and use anytime, even without an active Nitro subscription. </p>
 <p id="docs-internal-guid-f7040b83-7fff-636f-0da6-d9be924c756a"><strong>Q: Do I get to keep the DISXCORE decorations I’ve collected?</strong></p>

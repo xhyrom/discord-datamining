@@ -58,6 +58,11 @@
 <p>A:  The Shop is available to all Discord users. If you are also a Nitro member, you will have special member pricing on all purchases within the Shop!  </p>
 <p><strong>Q: How do I get a discount on items in the Shop?</strong></p>
 <p>A: Only Nitro members have access to special member pricing in the Shop. You can find more information about Nitro <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">here</a>. </p>
+<p id="docs-internal-guid-9c48c930-7fff-3935-9058-795b8d132156"><strong>Q: Is localized pricing available for Shop purchases?</strong></p>
+<p>A: Localized pricing is available for Shop purchases in some countries. You should see localized pricing options in the Shop if you are eligible. You can learn more about localized pricing <a href="https://support.discord.com/hc/articles/4407269525911" target="_blank" rel="noopener noreferrer">here</a>. </p>
+<h3 id="h_01HZN8NEFV9BFA1F7D2SD72KT9">
+    <span style="color: #434343;">Note: Shop gifts are not available </span><span style="color: #434343;">at localized</span><span style="color: #434343;"> prices. Depending on a user’s region, they may be able to pay for a gift in their local currency, but the price will still be equivalent to the USD price.</span>
+</h3>
 <p><strong>Q: What is your refund policy for Shop purchases?</strong></p>
 <p>A: You can find our full refund policy, including Shop purchases and Nitro subscriptions, <a href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <p id="docs-internal-guid-7f1a5203-7fff-0964-c4a2-4697b212b222"><strong>Q: I purchased a gift for a friend, but it wasn’t sent to them! Where can I find this missing gift?</strong></p>
