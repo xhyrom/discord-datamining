@@ -2173,7 +2173,11 @@
   },
   "SEARCH_DMS": {
     "url": "/users/@me/messages/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "SEARCH_TABS_DMS": {
     "url": "/users/@me/messages/search/tabs",
