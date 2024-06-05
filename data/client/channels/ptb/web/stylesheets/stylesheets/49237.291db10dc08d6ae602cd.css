@@ -5428,9 +5428,9 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .key__6a8d9 {
-    background-color: var(--background-accent);
+    background-color: var(--bg-mod-faint);
     box-sizing: border-box;
-    border: 1px solid var(--background-primary);
+    border: 1px solid var(--border-strong);
     position: relative;
     display: block;
     height: 23px;
@@ -5469,100 +5469,41 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     padding-bottom: 2px
 }
 
-.theme-light .combo__57290 {
-    color: var(--white-500)
+.combo__57290 {
+    color: var(--text-primary)
 }
 
-.theme-light .key__6a8d9 {
-    border: 1px solid#95989d;
-    box-shadow: inset 0 -4px 0 var(--primary-600)
+.key__6a8d9 {
+    border: 1px solid var(--border-subtle);
+    box-shadow: inset 0 -4px 0 var(--bg-mod-faint);
+    color: var(--interactive-active)
 }
 
-.theme-light .key__6a8d9:active {
-    box-shadow: inset 0 -2px 0 var(--primary-500);
-    border: 1px solid var(--primary-600);
-    color: var(--white-600)
+.key__6a8d9:active {
+    box-shadow: inset 0 -2px 0 var(--bg-mod-subtle);
+    border: 1px solid var(--border-strong);
+    color: var(--interactive-normal)
 }
 
-.theme-light .key__6a8d9:active g {
-    fill: var(--white-600)
+.key__6a8d9:active g {
+    fill: var(--interactive-normal)
 }
 
-.theme-light .dim__7b9b1 span {
-    background-color: var(--white-500);
-    color: #95989d
+.dim__7b9b1 span {
+    background-color: var(--bg-mod-subtle);
+    color: var(--text-primary)
 }
 
-.theme-light .dim__7b9b1 span .bindArrow__98f6f g {
-    fill: #95989d
+.dim__7b9b1 span .bindArrow__98f6f g {
+    fill: var(--text-secondary)
 }
 
-.theme-light .dim__7b9b1 span:active {
-    color: #777a7e
+.dim__7b9b1 span:active {
+    color: var(--text-primary)
 }
 
-.theme-light .dim__7b9b1 span:active .bindArrow__98f6f g {
-    fill: #777a7e
-}
-
-.theme-light .dark__42c4f .key__6a8d9 {
-    color: #95989d;
-    box-shadow: inset 0 -4px 0 var(--primary-700);
-    border-color: var(--primary-700);
-    background-color: var(--primary-500)
-}
-
-.theme-light .dark__42c4f .key__6a8d9 .bindArrow__98f6f g {
-    fill: #95989d
-}
-
-.theme-light .dark__42c4f .key__6a8d9:active {
-    color: #777a7e;
-    box-shadow: inset 0 -2px 0#242629
-}
-
-.theme-light .dark__42c4f .key__6a8d9:active .bindArrow__98f6f g {
-    fill: #777a7e
-}
-
-.theme-dark .combo__57290 {
-    color: var(--primary-100)
-}
-
-.theme-dark .combo__57290 .key__6a8d9 {
-    color: var(--primary-100);
-    box-shadow: inset 0 -4px 0 var(--primary-700)
-}
-
-.theme-dark .combo__57290 .key__6a8d9 .bindArrow__98f6f g {
-    fill: var(--primary-100)
-}
-
-.theme-dark .combo__57290 .key__6a8d9:active {
-    color: var(--primary-300);
-    box-shadow: inset 0 -2px 0 var(--primary-600);
-    border: 1px solid var(--primary-700)
-}
-
-.theme-dark .combo__57290 .key__6a8d9:active .bindArrow__98f6f g {
-    fill: var(--primary-300)
-}
-
-.theme-dark .dim__7b9b1 .key__6a8d9 {
-    background-color: var(--primary-400);
-    color: var(--primary-300)
-}
-
-.theme-dark .dim__7b9b1 .key__6a8d9 .bindArrow__98f6f g {
-    fill: var(--primary-300)
-}
-
-.theme-dark .dim__7b9b1 .key__6a8d9:active {
-    color: null
-}
-
-.theme-dark .dim__7b9b1 .key__6a8d9:active .bindArrow__98f6f g {
-    fill: null
+.dim__7b9b1 span:active .bindArrow__98f6f g {
+    fill: var(--text-primary)
 }
 
 .keybindShortcutSearchPopout__8e438 {
@@ -10862,6 +10803,11 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .size__27bff {
     color: var(--text-muted)
+}
+
+.custom-theme-background .attachment__06ca3 {
+    background-color: var(--bg-mod-faint);
+    border-color: var(--border-subtle)
 }
 
 @use postcss-pxtorem;
@@ -24862,7 +24808,7 @@ h6.title_c2a544 {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--background-secondary);
+    background: var(--bg-overlay-2, var(--background-secondary));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27381,4 +27327,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.78e64c5ebcb2049c6908.css.map*/
+/*# sourceMappingURL=49237.291db10dc08d6ae602cd.css.map*/
