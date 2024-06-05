@@ -25605,6 +25605,12 @@
             var i = n("30717");
             n.es(i, t)
         },
+        208633: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("652728");
+            n.es(i, t)
+        },
         979184: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -37131,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299225", ", Version Hash: ").concat("55be451886115520f6853c1dec7528ed0ac8ade3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299243", ", Version Hash: ").concat("1d01f54d7823b4b10aad7c1c85465216befca677")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88850,8 +88856,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299225", "299225"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299225")), t = 0), t
+                let t = parseInt((e = "299243", "299243"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299243")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117016,8 +117022,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299225",
-                    versionHash: "55be451886115520f6853c1dec7528ed0ac8ade3"
+                    buildNumber: "299243",
+                    versionHash: "1d01f54d7823b4b10aad7c1c85465216befca677"
                 }
             }
             n.r(t), n.d(t, {
@@ -174632,8 +174638,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717617839020",
-                                    build_number: "299225"
+                                    built_at: "1717618736732",
+                                    build_number: "299243"
                                 }
                             },
                             retries: 1
@@ -231134,7 +231140,7 @@
                     }
                     let n = [],
                         i = [],
-                        r = this.rows.findIndex(e => "GROUP" === e.type && e.id === g.StatusTypes.OFFLINE);
+                        r = this.rows.findIndex(e => null != e && "GROUP" === e.type && e.id === g.StatusTypes.OFFLINE);
                     if (r < 0) {
                         this.experimentalGroups = [], this.experimentalRows = [];
                         return
@@ -252355,7 +252361,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "55be451886115520f6853c1dec7528ed0ac8ade3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1d01f54d7823b4b10aad7c1c85465216befca677"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -253790,88 +253796,90 @@
             n("470079");
             var r = n("120356"),
                 s = n.n(r),
-                a = n("981729"),
-                o = n("507957"),
-                l = n("674563"),
-                u = n("689938"),
-                d = n("461369");
-            let _ = e => {
+                a = n("208633"),
+                o = n("981729"),
+                l = n("481060"),
+                u = n("674563"),
+                d = n("689938"),
+                _ = n("461369");
+            let c = e => {
                 let t, {
                         invertColor: n = !1,
-                        type: r = l.BotTagTypes.BOT,
-                        className: _,
-                        verified: c,
-                        hideIcon: E = !1,
-                        useRemSizes: I = !1,
-                        children: T = []
+                        type: r = u.BotTagTypes.BOT,
+                        className: c,
+                        verified: E,
+                        hideIcon: I = !1,
+                        useRemSizes: T = !1,
+                        children: f = []
                     } = e,
-                    f = null,
-                    S = u.default.Messages.VERIFIED_BOT_TOOLTIP;
+                    S = null,
+                    h = d.default.Messages.VERIFIED_BOT_TOOLTIP;
                 switch (r) {
-                    case l.BotTagTypes.SYSTEM_DM:
-                    case l.BotTagTypes.OFFICIAL:
-                        c = !0, S = u.default.Messages.DISCORD_SYSTEM_MESSAGE_BOT_TAG_TOOLTIP, f = u.default.Messages.SYSTEM_DM_TAG_SYSTEM;
+                    case u.BotTagTypes.SYSTEM_DM:
+                    case u.BotTagTypes.OFFICIAL:
+                        E = !0, h = d.default.Messages.DISCORD_SYSTEM_MESSAGE_BOT_TAG_TOOLTIP, S = d.default.Messages.SYSTEM_DM_TAG_SYSTEM;
                         break;
-                    case l.BotTagTypes.SERVER:
-                        f = u.default.Messages.BOT_TAG_SERVER;
+                    case u.BotTagTypes.SERVER:
+                        S = d.default.Messages.BOT_TAG_SERVER;
                         break;
-                    case l.BotTagTypes.ORIGINAL_POSTER:
-                        f = u.default.Messages.BOT_TAG_FORUM_ORIGINAL_POSTER;
+                    case u.BotTagTypes.ORIGINAL_POSTER:
+                        S = d.default.Messages.BOT_TAG_FORUM_ORIGINAL_POSTER;
                         break;
-                    case l.BotTagTypes.STAFF_ONLY_DM:
-                        f = u.default.Messages.STAFF_BADGE_TOOLTIP;
+                    case u.BotTagTypes.STAFF_ONLY_DM:
+                        S = d.default.Messages.STAFF_BADGE_TOOLTIP;
                         break;
-                    case l.BotTagTypes.AI:
-                        c = !0, S = u.default.Messages.AI_GENERATED_TOOLTIP, f = u.default.Messages.AI_TAG;
+                    case u.BotTagTypes.AI:
+                        E = !0, h = d.default.Messages.AI_GENERATED_TOOLTIP, S = d.default.Messages.AI_TAG;
                         break;
-                    case l.BotTagTypes.REMIX:
-                        c = !1, f = u.default.Messages.REMIXING_TAG;
+                    case u.BotTagTypes.REMIX:
+                        E = !1, S = d.default.Messages.REMIXING_TAG;
                         break;
-                    case l.BotTagTypes.BOT:
+                    case u.BotTagTypes.BOT:
                     default:
-                        f = u.default.Messages.APP_TAG
+                        S = d.default.Messages.APP_TAG
                 }
-                let h = r === l.BotTagTypes.ORIGINAL_POSTER,
-                    A = r === l.BotTagTypes.REMIX,
-                    m = null;
-                c && (m = (0, i.jsx)(a.Tooltip, {
-                    text: S,
+                let A = r === u.BotTagTypes.ORIGINAL_POSTER,
+                    m = r === u.BotTagTypes.REMIX,
+                    N = null;
+                E && (N = (0, i.jsx)(o.Tooltip, {
+                    text: h,
                     align: "center",
                     position: "top",
-                    children: e => (0, i.jsx)(o.default, {
+                    children: e => (0, i.jsx)(a.CheckmarkSmallBoldIcon, {
                         ...e,
-                        className: d.botTagVerified
+                        className: _.botTagVerified,
+                        color: l.tokens.colors.WHITE
                     })
-                })), t = r === l.BotTagTypes.AI ? d.botTagAI : n ? d.botTagInvert : d.botTagRegular;
-                let N = e => (0, i.jsxs)("span", {
+                })), t = r === u.BotTagTypes.AI ? _.botTagAI : n ? _.botTagInvert : _.botTagRegular;
+                let p = e => (0, i.jsxs)("span", {
                     ...e,
-                    className: s()(_, t, I ? d.rem : d.px, {
-                        [d.botTagOP]: h,
-                        [d.botTagRemix]: A
+                    className: s()(c, t, T ? _.rem : _.px, {
+                        [_.botTagOP]: A,
+                        [_.botTagRemix]: m
                     }),
-                    children: [E ? null : m, T, (0, i.jsx)("span", {
-                        className: d.botText,
-                        children: f
+                    children: [I ? null : N, f, (0, i.jsx)("span", {
+                        className: _.botText,
+                        children: S
                     })]
                 });
                 switch (r) {
-                    case l.BotTagTypes.REMIX:
-                        return (0, i.jsx)(a.Tooltip, {
-                            text: u.default.Messages.REMIXING_DOWNLOAD_APP,
+                    case u.BotTagTypes.REMIX:
+                        return (0, i.jsx)(o.Tooltip, {
+                            text: d.default.Messages.REMIXING_DOWNLOAD_APP,
                             position: "top",
-                            children: e => N(e)
+                            children: e => p(e)
                         });
-                    case l.BotTagTypes.ORIGINAL_POSTER:
-                        return (0, i.jsx)(a.Tooltip, {
-                            text: u.default.Messages.BOT_TAG_FORUM_ORIGINAL_POSTER_TOOLTIP,
+                    case u.BotTagTypes.ORIGINAL_POSTER:
+                        return (0, i.jsx)(o.Tooltip, {
+                            text: d.default.Messages.BOT_TAG_FORUM_ORIGINAL_POSTER_TOOLTIP,
                             position: "top",
-                            children: e => N(e)
+                            children: e => p(e)
                         });
                     default:
-                        return N()
+                        return p()
                 }
             };
-            _.Types = l.BotTagTypes, t.default = _
+            c.Types = u.BotTagTypes, t.default = c
         },
         575535: function(e, t, n) {
             "use strict";
@@ -281493,7 +281501,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299225"
+                                build_number: "299243"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288802,7 +288810,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299225", "299225"), 10);
+                let s = parseInt((n = "299243", "299243"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291571,6 +291579,42 @@
                     children: (0, i.jsx)("path", {
                         fill: "string" == typeof a ? a : a.css,
                         d: "M21.7 5.3a1 1 0 0 1 0 1.4l-12 12a1 1 0 0 1-1.4 0l-6-6a1 1 0 1 1 1.4-1.4L9 16.58l11.3-11.3a1 1 0 0 1 1.4 0Z",
+                        className: o
+                    })
+                })
+            }
+        },
+        652728: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                CheckmarkSmallBoldIcon: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                s = n("331595");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, s.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        fillRule: "evenodd",
+                        d: "M19.06 6.94a1.5 1.5 0 0 1 0 2.12l-8 8a1.5 1.5 0 0 1-2.12 0l-4-4a1.5 1.5 0 0 1 2.12-2.12L10 13.88l6.94-6.94a1.5 1.5 0 0 1 2.12 0Z",
+                        clipRule: "evenodd",
                         className: o
                     })
                 })
@@ -316671,4 +316715,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.73ce3735819d2caa6467.js.map
+//# sourceMappingURL=27519.b7a0840fbfe438d84238.js.map
