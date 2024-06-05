@@ -37131,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298943", ", Version Hash: ").concat("0e14b79d57ef27961f7aa04dc51526da09899bf4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298951", ", Version Hash: ").concat("105116deacb45e0e8324c520d502be7e0537c462")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88838,8 +88838,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298943", "298943"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298943")), t = 0), t
+                let t = parseInt((e = "298951", "298951"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298951")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112133,47 +112133,50 @@
         884697: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                NoDiscount: function() {
+                    return f
+                },
                 extractPriceByPurchaseTypes: function() {
                     return T
                 },
                 getAvatarDecorations: function() {
-                    return O
-                },
-                getCollectiblesAssetURL: function() {
                     return C
                 },
+                getCollectiblesAssetURL: function() {
+                    return R
+                },
                 getDaysRemaining: function() {
-                    return M
+                    return y
                 },
                 getFormattedPriceForCollectiblesProduct: function() {
                     return E
                 },
                 getLogoSize: function() {
-                    return D
+                    return M
                 },
                 getProductDiscount: function() {
-                    return f
+                    return S
                 },
                 getProductsFromCategories: function() {
-                    return h
+                    return A
                 },
                 getProfileEffectsFromCategories: function() {
-                    return g
-                },
-                getProfileEffectsFromPurchases: function() {
-                    return R
-                },
-                groupProfileEffects: function() {
                     return L
                 },
-                isBundleProduct: function() {
-                    return P
+                getProfileEffectsFromPurchases: function() {
+                    return g
                 },
-                isCollectiblesGiftCode: function() {
+                groupProfileEffects: function() {
                     return v
                 },
+                isBundleProduct: function() {
+                    return U
+                },
+                isCollectiblesGiftCode: function() {
+                    return D
+                },
                 isFreeCollectiblesProduct: function() {
-                    return S
+                    return h
                 },
                 isPremiumCollectiblesProduct: function() {
                     return _
@@ -112182,7 +112185,7 @@
                     return c
                 },
                 isProductNew: function() {
-                    return y
+                    return P
                 }
             }), n("724458"), n("47120");
             var i = n("392711"),
@@ -112213,21 +112216,28 @@
                     let s = null !== (r = e.prices[t]) && void 0 !== r ? r : null;
                     return null == s ? null : null === (i = s.countryPrices) || void 0 === i ? void 0 : null === (n = i.prices) || void 0 === n ? void 0 : n[0]
                 },
-                f = (e, t) => {
-                    let n = I(e);
-                    if (n <= 0) return;
-                    let i = T(e, t ? d.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : d.PriceSetAssignmentPurchaseTypes.DEFAULT);
-                    if (null != i) return Math.floor((n - i.amount) / n * 100)
+                f = {
+                    original: -1,
+                    discountPercentage: -1
                 },
-                S = e => {
+                S = (e, t) => {
+                    let n = I(e);
+                    if (n <= 0) return f;
+                    let i = T(e, t ? d.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_2 : d.PriceSetAssignmentPurchaseTypes.DEFAULT);
+                    return null == i ? f : {
+                        original: n,
+                        discountPercentage: Math.floor((n - i.amount) / n * 100)
+                    }
+                },
+                h = e => {
                     var t;
                     return (null === (t = T(e, d.PriceSetAssignmentPurchaseTypes.DEFAULT)) || void 0 === t ? void 0 : t.amount) === 0
                 },
-                h = e => {
+                A = e => {
                     let t = (0, i.flatMap)([...e.values()], "products");
                     return (0, i.uniqBy)(t, "storeListingId")
                 },
-                A = (e, t) => {
+                m = (e, t) => {
                     if (t === r.CollectiblesItemType.AVATAR_DECORATION) {
                         let t = (0, i.flatMap)([...e.values()], "items").filter(o.isAvatarDecorationRecord);
                         return (0, i.uniqBy)(t, "id")
@@ -112237,8 +112247,8 @@
                         return (0, i.uniqBy)(t, "id")
                     }
                 },
-                m = (e, t) => {
-                    let n = h(e);
+                N = (e, t) => {
+                    let n = A(e);
                     if (t === r.CollectiblesItemType.AVATAR_DECORATION) {
                         let e = (0, i.flatMap)(n, "items").filter(o.isAvatarDecorationRecord);
                         return (0, i.uniqBy)(e, "id")
@@ -112248,10 +112258,10 @@
                         return (0, i.uniqBy)(e, "id")
                     }
                 },
-                N = e => A(e, r.CollectiblesItemType.AVATAR_DECORATION),
                 p = e => m(e, r.CollectiblesItemType.AVATAR_DECORATION),
-                O = (e, t) => (0, i.uniqBy)([...N(e), ...p(t)], "id"),
-                C = (e, t) => {
+                O = e => N(e, r.CollectiblesItemType.AVATAR_DECORATION),
+                C = (e, t) => (0, i.uniqBy)([...p(e), ...O(t)], "id"),
+                R = (e, t) => {
                     var n;
                     let {
                         CDN_HOST: i,
@@ -112261,11 +112271,11 @@
                     let l = d.Endpoints.APPLICATION_ASSET(d.COLLECTIBLES_APPLICATION_ID, e, o);
                     return "".concat(location.protocol).concat(r).concat(l, "?size=").concat(a)
                 },
-                R = e => A(e, r.CollectiblesItemType.PROFILE_EFFECT),
                 g = e => m(e, r.CollectiblesItemType.PROFILE_EFFECT),
-                L = (e, t) => {
-                    let n = R(t),
-                        i = g(e).filter(e => {
+                L = e => N(e, r.CollectiblesItemType.PROFILE_EFFECT),
+                v = (e, t) => {
+                    let n = g(t),
+                        i = L(e).filter(e => {
                             let {
                                 id: t
                             } = e;
@@ -112276,18 +112286,18 @@
                         shopPreviews: i
                     }
                 },
-                v = e => e.applicationId === d.COLLECTIBLES_APPLICATION_ID,
-                D = e => 3.8 * e,
-                M = e => {
+                D = e => e.applicationId === d.COLLECTIBLES_APPLICATION_ID,
+                M = e => 3.8 * e,
+                y = e => {
                     let t = new Date,
                         n = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate());
                     return Math.floor((Date.UTC(e.getFullYear(), e.getMonth(), e.getDate()) - n) / 864e5)
                 },
-                y = e => {
+                P = e => {
                     let t = u.SHOP_CARD_PER_PRODUCT_NEW_BADGE_EXPIRY_SETTINGS[e];
                     return null != t && new Date().getTime() < t
                 },
-                P = e => (null == e ? void 0 : e.type) === r.CollectiblesItemType.BUNDLE
+                U = e => (null == e ? void 0 : e.type) === r.CollectiblesItemType.BUNDLE
         },
         617452: function(e, t, n) {
             "use strict";
@@ -116986,8 +116996,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298943",
-                    versionHash: "0e14b79d57ef27961f7aa04dc51526da09899bf4"
+                    buildNumber: "298951",
+                    versionHash: "105116deacb45e0e8324c520d502be7e0537c462"
                 }
             }
             n.r(t), n.d(t, {
@@ -174566,8 +174576,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717549599464",
-                                    build_number: "298943"
+                                    built_at: "1717552395882",
+                                    build_number: "298951"
                                 }
                             },
                             retries: 1
@@ -252178,7 +252188,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0e14b79d57ef27961f7aa04dc51526da09899bf4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "105116deacb45e0e8324c520d502be7e0537c462"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281309,7 +281319,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298943"
+                                build_number: "298951"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288618,7 +288628,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298943", "298943"), 10);
+                let s = parseInt((n = "298951", "298951"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316485,4 +316495,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.3221f562cf8ebd69d3ba.js.map
+//# sourceMappingURL=27519.08646febcd4d95efdbbf.js.map
