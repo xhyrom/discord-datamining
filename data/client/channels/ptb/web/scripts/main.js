@@ -37131,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298989", ", Version Hash: ").concat("91eb7fb6d114f18700aed34287c358ec8174fe72")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298999", ", Version Hash: ").concat("fcfa2b01c0f2946097c3bebcde10082da03c3c1a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88838,8 +88838,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298989", "298989"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298989")), t = 0), t
+                let t = parseInt((e = "298999", "298999"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298999")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -95548,7 +95548,7 @@
                             l(!1), (0, I.openModalLazy)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("90508"), n.e("41947"), n.e("95258")]).then(n.bind(n, "273602"));
+                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("90508"), n.e("41947"), n.e("53289")]).then(n.bind(n, "273602"));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
                                     threadId: a,
@@ -104851,7 +104851,7 @@
                 if (null == f) {
                     let e = (0, _.getAcronym)(n);
                     return (0, i.jsx)(u.default, {
-                        mask: u.default.Masks.SQUIRCLE,
+                        mask: u.default.Masks.CLAN_ICON,
                         width: s,
                         height: s,
                         className: E,
@@ -104862,7 +104862,7 @@
                     })
                 }
                 return (0, i.jsx)(u.default, {
-                    mask: u.default.Masks.SQUIRCLE,
+                    mask: u.default.Masks.CLAN_ICON,
                     width: s,
                     height: s,
                     className: E,
@@ -116996,8 +116996,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298989",
-                    versionHash: "91eb7fb6d114f18700aed34287c358ec8174fe72"
+                    buildNumber: "298999",
+                    versionHash: "fcfa2b01c0f2946097c3bebcde10082da03c3c1a"
                 }
             }
             n.r(t), n.d(t, {
@@ -117875,10 +117875,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardView: function() {
-                    return k
+                    return B
                 },
                 Wildcards: function() {
-                    return U
+                    return b
                 }
             }), n("47120");
             var i = n("735250"),
@@ -117905,18 +117905,19 @@
                 C = n("703656"),
                 R = n("271383"),
                 g = n("594174"),
-                L = n("778045"),
-                v = n("355932"),
-                D = n("981631"),
-                M = n("308083"),
-                y = n("689938"),
-                P = n("449729");
+                L = n("806519"),
+                v = n("778045"),
+                D = n("355932"),
+                M = n("981631"),
+                y = n("308083"),
+                P = n("689938"),
+                U = n("449729");
 
-            function U(e) {
+            function b(e) {
                 let {
                     wildcardDescriptors: t,
                     primaryColor: n
-                } = e, s = t.filter(e => e !== M.EMPTY_WILDCARD).join(", "), a = (0, d.useToken)(d.tokens.colors.BACKGROUND_FLOATING), o = (0, f.getAccessibleClanColor)(n, a.hex()), l = r.useRef(null), [u, _] = r.useState(!1);
+                } = e, s = t.filter(e => e !== y.EMPTY_WILDCARD).join(", "), a = (0, d.useToken)(d.tokens.colors.BACKGROUND_FLOATING), o = (0, f.getAccessibleClanColor)(n, a.hex()), l = r.useRef(null), [u, _] = r.useState(!1);
                 if (r.useEffect(() => {
                         let e = l.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && _(e.offsetWidth < e.scrollWidth)
@@ -117928,7 +117929,7 @@
                     children: [(0, i.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
-                        className: P.clanInfoItem,
+                        className: U.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)(d.Tooltip, {
                         text: s,
@@ -117937,7 +117938,7 @@
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             style: c,
-                            className: P.wildCardText,
+                            className: U.wildCardText,
                             ref: l,
                             children: s
                         })
@@ -117945,22 +117946,22 @@
                 })
             }
 
-            function b(e) {
+            function G(e) {
                 let {
                     description: t,
                     expanded: n
                 } = e;
                 return null == t ? null : n ? (0, i.jsx)("div", {
-                    className: P.cardContentDescriptionSection,
+                    className: U.cardContentDescriptionSection,
                     children: (0, i.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: t
                     })
                 }) : (0, i.jsx)("div", {
-                    className: P.cardContentDescriptionSection,
+                    className: U.cardContentDescriptionSection,
                     children: (0, i.jsx)(d.Text, {
-                        className: P.cardContentDescriptionCollapsed,
+                        className: U.cardContentDescriptionCollapsed,
                         variant: "text-xs/normal",
                         color: "text-muted",
                         lineClamp: 4,
@@ -117969,19 +117970,19 @@
                 })
             }
 
-            function G(e) {
+            function w(e) {
                 let {
                     traits: t,
                     traitsToHighlight: n
                 } = e, s = r.useMemo(() => null == n ? new Set : new Set(n), [n]), o = r.useCallback(e => (0, i.jsx)(m.default, {
-                    className: a()(P.thinTrait, {
-                        [P.selectedTrait]: s.has(e)
+                    className: a()(U.thinTrait, {
+                        [U.selectedTrait]: s.has(e)
                     }),
                     text: e,
                     selected: s.has(e)
                 }, e), [s]);
-                return (0, i.jsx)(v.default, {
-                    className: P.traitsContainer,
+                return (0, i.jsx)(D.default, {
+                    className: U.traitsContainer,
                     items: t,
                     renderItem: o,
                     maxLines: 2,
@@ -117989,25 +117990,25 @@
                 })
             }
 
-            function w(e) {
+            function k(e) {
                 let {
                     hasPendingJoinRequest: t,
                     atMaxMemberCapacity: n,
                     isGuildMember: r
                 } = e;
                 if (t) return (0, i.jsxs)("div", {
-                    className: P.headerBadge,
+                    className: U.headerBadge,
                     children: [(0, i.jsx)(l.HourglassIcon, {
                         width: 12,
                         height: 12
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-xs/medium",
                         color: "text-normal",
-                        children: y.default.Messages.CLAN_CARD_BADGE_APPLIED
+                        children: P.default.Messages.CLAN_CARD_BADGE_APPLIED
                     })]
                 });
                 if (r) return (0, i.jsxs)("div", {
-                    className: P.headerBadge,
+                    className: U.headerBadge,
                     children: [(0, i.jsx)(o.CircleCheckIcon, {
                         width: 12,
                         height: 12,
@@ -118015,24 +118016,24 @@
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-xs/medium",
                         color: "text-normal",
-                        children: y.default.Messages.JOINED_GUILD
+                        children: P.default.Messages.JOINED_GUILD
                     })]
                 });
                 if (n) return (0, i.jsxs)("div", {
-                    className: P.headerBadge,
+                    className: U.headerBadge,
                     children: [(0, i.jsx)(u.LockIcon, {
                         width: 12,
                         height: 12
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-xs/medium",
                         color: "text-normal",
-                        children: y.default.Messages.FULL
+                        children: P.default.Messages.FULL
                     })]
                 });
                 return null
             }
 
-            function k(e) {
+            function B(e) {
                 var t;
                 let {
                     clan: n,
@@ -118054,59 +118055,67 @@
                         primaryColor: R,
                         secondaryColor: g
                     },
-                    bannerHash: v
-                } = n, D = (0, E.default)(n.games), k = (0, h.default)("clan_discovery_card"), [B, V] = r.useState(!1), x = r.useRef(null), [F, H] = r.useState(!1), Y = r.useCallback(() => {
-                    V(!0)
-                }, []), j = r.useCallback(() => {
-                    V(!1)
-                }, []), W = y.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                    bannerHash: D
+                } = n, M = (0, E.default)(n.games), B = (0, h.default)("clan_discovery_card"), [V, x] = r.useState(!1), F = r.useRef(null), [H, Y] = r.useState(!1), j = r.useCallback(() => {
+                    x(!0)
+                }, []), W = r.useCallback(() => {
+                    x(!1)
+                }, []), K = P.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: n.memberCount
-                }), K = null != T ? T : (0, S.getClanBannerUrl)(n.id, v), z = null == s && null == K ? {
+                }), z = null != T ? T : (0, S.getClanBannerUrl)(n.id, D), Z = null == s && null == z ? {
                     background: "linear-gradient(90deg, ".concat(R, ", ").concat(g, ")")
-                } : void 0, Z = null != s ? s : null != K ? (0, i.jsx)("img", {
-                    alt: y.default.Messages.CLAN_LOOK_BANNER,
-                    src: K,
-                    className: P.bannerImage
-                }) : null, X = r.useMemo(() => (0, M.getSortedTraits)(n.traits, u), [n.traits, u]);
+                } : void 0, X = null != s ? s : null != z ? (0, i.jsx)("img", {
+                    alt: P.default.Messages.CLAN_LOOK_BANNER,
+                    src: z,
+                    className: U.bannerImage
+                }) : null, Q = r.useMemo(() => (0, y.getSortedTraits)(n.traits, u), [n.traits, u]);
                 return r.useEffect(() => {
-                    let e = x.current;
-                    null != e && null != e.offsetWidth && null != e.scrollWidth && H(e.offsetWidth < e.scrollWidth)
+                    let e = F.current;
+                    null != e && null != e.offsetWidth && null != e.scrollWidth && Y(e.offsetWidth < e.scrollWidth)
                 }, []), (0, i.jsxs)("div", {
-                    className: a()(P.card, c, {
-                        [P.cardStaticHeight]: !o
+                    className: a()(U.card, c, {
+                        [U.cardStaticHeight]: !o
                     }),
-                    onMouseEnter: Y,
-                    onMouseLeave: j,
+                    onMouseEnter: j,
+                    onMouseLeave: W,
                     children: [(0, i.jsxs)("div", {
-                        className: P.cardBrandingHeader,
-                        style: z,
-                        children: [Z, (0, i.jsx)(w, {
+                        className: U.cardBrandingHeader,
+                        style: Z,
+                        children: [X, (0, i.jsx)(k, {
                             hasPendingJoinRequest: m,
                             atMaxMemberCapacity: p,
                             isGuildMember: l
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: P.cardContent,
+                        className: U.cardContent,
                         children: [(0, i.jsxs)("div", {
-                            className: P.cardContentTitleSection,
+                            className: U.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
-                                className: P.cardNameAndTagWrapper,
-                                children: [(0, i.jsx)(A.ClanGuildIconSimple, {
-                                    guildId: n.id,
-                                    guildName: n.name,
-                                    guildIcon: n.icon,
-                                    iconSize: 64,
-                                    className: P.clanIcon,
-                                    animate: !f || B
+                                className: U.cardNameAndTagWrapper,
+                                children: [(0, i.jsx)(L.default, {
+                                    mask: L.MaskIDs.CLAN_ICON,
+                                    width: 70,
+                                    height: 70,
+                                    className: U.clanIconMask,
+                                    children: (0, i.jsx)("div", {
+                                        className: U.clanIconInner,
+                                        children: (0, i.jsx)(A.ClanGuildIconSimple, {
+                                            guildId: n.id,
+                                            guildName: n.name,
+                                            guildIcon: n.icon,
+                                            iconSize: 64,
+                                            animate: !f || V
+                                        })
+                                    })
                                 }), (0, i.jsx)("div", {
-                                    className: P.clanTagChipletWrapper,
+                                    className: U.clanTagChipletWrapper,
                                     children: (0, i.jsx)(d.Tooltip, {
-                                        text: y.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
+                                        text: P.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
-                                        shouldShow: !l && k,
+                                        shouldShow: !l && B,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
-                                            className: P.clanTagChiplet,
+                                            className: U.clanTagChiplet,
                                             children: [(0, i.jsx)(N.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
@@ -118128,62 +118137,62 @@
                                 children: (0, i.jsx)(d.Tooltip, {
                                     text: n.name,
                                     color: d.Tooltip.Colors.PRIMARY,
-                                    shouldShow: F,
+                                    shouldShow: H,
                                     children: e => (0, i.jsx)("span", {
                                         ...e,
-                                        ref: x,
-                                        className: P.nameText,
+                                        ref: F,
+                                        className: U.nameText,
                                         children: n.name
                                     })
                                 })
                             }), (0, i.jsxs)("div", {
-                                className: P.clanInfoRow,
+                                className: U.clanInfoRow,
                                 children: [(0, i.jsx)(d.Text, {
                                     variant: "text-xxs/normal",
-                                    className: P.clanInfoItem,
+                                    className: U.clanInfoItem,
                                     children: (0, i.jsx)("span", {
                                         role: "img",
-                                        "aria-label": y.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
+                                        "aria-label": P.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
                                         children: "\uD83C\uDFAE"
                                     })
                                 }), (0, i.jsx)(d.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-secondary",
-                                    className: P.clanInfoItem,
-                                    children: null !== (t = (0, M.getPlaystyleTitle)(n.playstyle)) && void 0 !== t ? t : y.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
-                                }), (0, i.jsx)(U, {
+                                    className: U.clanInfoItem,
+                                    children: null !== (t = (0, y.getPlaystyleTitle)(n.playstyle)) && void 0 !== t ? t : P.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
+                                }), (0, i.jsx)(b, {
                                     wildcardDescriptors: n.wildcardDescriptors,
                                     primaryColor: n.branding.primaryColor
                                 })]
                             })]
-                        }), (0, i.jsx)(b, {
+                        }), (0, i.jsx)(G, {
                             description: n.description,
                             expanded: o
-                        }), (0, i.jsx)(G, {
-                            traits: X,
+                        }), (0, i.jsx)(w, {
+                            traits: Q,
                             traitsToHighlight: u
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: P.cardFooter,
+                        className: U.cardFooter,
                         children: [(0, i.jsx)("div", {
-                            className: P.cardFooterInfo,
+                            className: U.cardFooterInfo,
                             children: (0, i.jsx)("div", {
-                                className: P.cardFooterMembers,
+                                className: U.cardFooterMembers,
                                 children: (0, i.jsx)(d.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: W
+                                    children: K
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: P.cardFooterGames,
-                            children: (0, i.jsx)(L.default, {
-                                games: D,
+                            className: U.cardFooterGames,
+                            children: (0, i.jsx)(v.default, {
+                                games: M,
                                 prioritizedGameIds: _
                             })
                         })]
                     }), I && (0, i.jsx)("div", {
-                        className: P.cardBrandingFooter,
+                        className: U.cardBrandingFooter,
                         style: {
                             background: "linear-gradient(90deg, ".concat(R, ", ").concat(g, ")")
                         }
@@ -118203,7 +118212,7 @@
                 } = a, f = (0, _.useStateFromStores)([g.default], () => g.default.getCurrentUser()), S = (0, _.useStateFromStores)([R.default], () => R.default.isMember(o.id, null == f ? void 0 : f.id), [o, f]), h = (0, _.useStateFromStores)([O.default], () => {
                     var e;
                     return (null === (e = O.default.getRequest(o.id)) || void 0 === e ? void 0 : e.applicationStatus) === p.GuildJoinRequestApplicationStatuses.SUBMITTED
-                }), A = o.memberCount >= M.MAX_CLAN_MEMBERS, m = r.useCallback(() => {
+                }), A = o.memberCount >= y.MAX_CLAN_MEMBERS, m = r.useCallback(() => {
                     let e = null != O.default.getRequest(o.id);
                     if ((0, I.trackClanDiscoveryCardClicked)({
                             guildId: o.id,
@@ -118216,11 +118225,11 @@
                         return
                     }
                     if (e) {
-                        (0, C.transitionTo)(D.Routes.GUILD_MEMBER_VERIFICATION(o.id));
+                        (0, C.transitionTo)(M.Routes.GUILD_MEMBER_VERIFICATION(o.id));
                         return
                     }(0, T.openClanApplyFlow)(o.id, o, {
                         source: E,
-                        location: D.AnalyticsLocations.CLAN_DISCOVERY_CARD
+                        location: M.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     }, s)
                 }, [o, S, l, u, E, s]), N = r.useCallback(e => {
                     (0, c.openContextMenuLazy)(e, async () => {
@@ -118235,10 +118244,10 @@
                 }, [o.id]);
                 return (0, i.jsx)(d.Clickable, {
                     onClick: m,
-                    className: P.clickableCard,
+                    className: U.clickableCard,
                     style: t,
                     onContextMenu: N,
-                    children: (0, i.jsx)(k, {
+                    children: (0, i.jsx)(B, {
                         ...a,
                         isMember: S,
                         prioritizedGameIds: s,
@@ -174576,8 +174585,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717576542442",
-                                    build_number: "298989"
+                                    built_at: "1717596994530",
+                                    build_number: "298999"
                                 }
                             },
                             retries: 1
@@ -252188,7 +252197,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "91eb7fb6d114f18700aed34287c358ec8174fe72"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "fcfa2b01c0f2946097c3bebcde10082da03c3c1a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273267,7 +273276,7 @@
                 d = n("419061"),
                 _ = n("525049"),
                 c = n("172865");
-            (i = r || (r = {})).SQUIRCLE = "svg-mask-squircle", i.HEADER_BAR_BADGE = "svg-mask-header-bar-badge", i.VOICE_USER_SUMMARY_ITEM = "svg-mask-voice-user-summary-item", i.VERTICAL_FADE = "svg-mask-vertical-fade", i.PANEL_BUTTON = "svg-mask-panel-button", i.CHANNEL_CALL_CONTROL_BUTTON = "svg-mask-channel-call-control-button", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_16 = "svg-mask-channel-call-control-button-badge-16", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_22 = "svg-mask-channel-call-control-button-badge-22", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_29 = "svg-mask-channel-call-control-button-badge-29", i.AVATAR_DEFAULT = "svg-mask-avatar-default", i.AVATAR_STATUS_ROUND_16 = "svg-mask-avatar-status-round-16", i.AVATAR_STATUS_ROUND_20 = "svg-mask-avatar-status-round-20", i.AVATAR_STATUS_ROUND_24 = "svg-mask-avatar-status-round-24", i.AVATAR_STATUS_ROUND_32 = "svg-mask-avatar-status-round-32", i.AVATAR_STATUS_ROUND_40 = "svg-mask-avatar-status-round-40", i.AVATAR_STATUS_ROUND_48 = "svg-mask-avatar-status-round-48", i.AVATAR_STATUS_ROUND_56 = "svg-mask-avatar-status-round-56", i.AVATAR_STATUS_ROUND_80 = "svg-mask-avatar-status-round-80", i.AVATAR_STATUS_ROUND_100 = "svg-mask-avatar-status-round-100", i.AVATAR_STATUS_ROUND_120 = "svg-mask-avatar-status-round-120", i.DIAGONAL_FACEPILE_16 = "svg-mask-diagonal-facepile-16", i.DIAGONAL_FACEPILE_20 = "svg-mask-diagonal-facepile-20", i.DIAGONAL_FACEPILE_24 = "svg-mask-diagonal-facepile-24", i.DIAGONAL_FACEPILE_32 = "svg-mask-diagonal-facepile-32", i.DIAGONAL_FACEPILE_40 = "svg-mask-diagonal-facepile-40", i.DIAGONAL_FACEPILE_48 = "svg-mask-diagonal-facepile-48", i.DIAGONAL_FACEPILE_56 = "svg-mask-diagonal-facepile-56", i.DIAGONAL_FACEPILE_80 = "svg-mask-diagonal-facepile-80", i.DIAGONAL_FACEPILE_100 = "svg-mask-diagonal-facepile-100", i.DIAGONAL_FACEPILE_120 = "svg-mask-diagonal-facepile-120", i.DIAGONAL_FACEPILE_STATUS_16 = "svg-mask-diagonal-facepile-status-16", i.DIAGONAL_FACEPILE_STATUS_20 = "svg-mask-diagonal-facepile-status-20", i.DIAGONAL_FACEPILE_STATUS_24 = "svg-mask-diagonal-facepile-status-24", i.DIAGONAL_FACEPILE_STATUS_32 = "svg-mask-diagonal-facepile-status-32", i.DIAGONAL_FACEPILE_STATUS_40 = "svg-mask-diagonal-facepile-status-40", i.DIAGONAL_FACEPILE_STATUS_48 = "svg-mask-diagonal-facepile-status-48", i.DIAGONAL_FACEPILE_STATUS_56 = "svg-mask-diagonal-facepile-status-56", i.DIAGONAL_FACEPILE_STATUS_80 = "svg-mask-diagonal-facepile-status-80", i.DIAGONAL_FACEPILE_STATUS_100 = "svg-mask-diagonal-facepile-status-100", i.DIAGONAL_FACEPILE_STATUS_120 = "svg-mask-diagonal-facepile-status-120", i.DIAGONAL_FACEPILE_TYPING_16 = "svg-mask-diagonal-facepile-typing-16", i.DIAGONAL_FACEPILE_TYPING_20 = "svg-mask-diagonal-facepile-typing-20", i.DIAGONAL_FACEPILE_TYPING_24 = "svg-mask-diagonal-facepile-typing-24", i.DIAGONAL_FACEPILE_TYPING_32 = "svg-mask-diagonal-facepile-typing-32", i.DIAGONAL_FACEPILE_TYPING_40 = "svg-mask-diagonal-facepile-typing-40", i.DIAGONAL_FACEPILE_TYPING_48 = "svg-mask-diagonal-facepile-typing-48", i.DIAGONAL_FACEPILE_TYPING_56 = "svg-mask-diagonal-facepile-typing-56", i.DIAGONAL_FACEPILE_TYPING_80 = "svg-mask-diagonal-facepile-typing-80", i.DIAGONAL_FACEPILE_TYPING_100 = "svg-mask-diagonal-facepile-typing-100", i.DIAGONAL_FACEPILE_TYPING_120 = "svg-mask-diagonal-facepile-typing-120", i.AVATAR_STATUS_MOBILE_16 = "svg-mask-avatar-status-mobile-16", i.AVATAR_STATUS_MOBILE_20 = "svg-mask-avatar-status-mobile-20", i.AVATAR_STATUS_MOBILE_24 = "svg-mask-avatar-status-mobile-24", i.AVATAR_STATUS_MOBILE_32 = "svg-mask-avatar-status-mobile-32", i.AVATAR_STATUS_MOBILE_40 = "svg-mask-avatar-status-mobile-40", i.AVATAR_STATUS_MOBILE_48 = "svg-mask-avatar-status-mobile-48", i.AVATAR_STATUS_MOBILE_56 = "svg-mask-avatar-status-mobile-56", i.AVATAR_STATUS_MOBILE_80 = "svg-mask-avatar-status-mobile-80", i.AVATAR_STATUS_MOBILE_100 = "svg-mask-avatar-status-mobile-100", i.AVATAR_STATUS_MOBILE_120 = "svg-mask-avatar-status-mobile-120", i.AVATAR_STATUS_TYPING_16 = "svg-mask-avatar-status-typing-16", i.AVATAR_STATUS_TYPING_20 = "svg-mask-avatar-status-typing-20", i.AVATAR_STATUS_TYPING_24 = "svg-mask-avatar-status-typing-24", i.AVATAR_STATUS_TYPING_32 = "svg-mask-avatar-status-typing-32", i.AVATAR_STATUS_TYPING_40 = "svg-mask-avatar-status-typing-40", i.AVATAR_STATUS_TYPING_48 = "svg-mask-avatar-status-typing-48", i.AVATAR_STATUS_TYPING_56 = "svg-mask-avatar-status-typing-56", i.AVATAR_STATUS_TYPING_80 = "svg-mask-avatar-status-typing-80", i.AVATAR_STATUS_TYPING_100 = "svg-mask-avatar-status-typing-100", i.AVATAR_STATUS_TYPING_120 = "svg-mask-avatar-status-typing-120", i.AVATAR_DECORATION_STATUS_ROUND_16 = "svg-mask-avatar-decoration-status-round-16", i.AVATAR_DECORATION_STATUS_ROUND_20 = "svg-mask-avatar-decoration-status-round-20", i.AVATAR_DECORATION_STATUS_ROUND_24 = "svg-mask-avatar-decoration-status-round-24", i.AVATAR_DECORATION_STATUS_ROUND_32 = "svg-mask-avatar-decoration-status-round-32", i.AVATAR_DECORATION_STATUS_ROUND_40 = "svg-mask-avatar-decoration-status-round-40", i.AVATAR_DECORATION_STATUS_ROUND_48 = "svg-mask-avatar-decoration-status-round-48", i.AVATAR_DECORATION_STATUS_ROUND_56 = "svg-mask-avatar-decoration-status-round-56", i.AVATAR_DECORATION_STATUS_ROUND_80 = "svg-mask-avatar-decoration-status-round-80", i.AVATAR_DECORATION_STATUS_ROUND_120 = "svg-mask-avatar-decoration-status-round-120", i.AVATAR_DECORATION_STATUS_MOBILE_16 = "svg-mask-avatar-decoration-status-mobile-16", i.AVATAR_DECORATION_STATUS_MOBILE_20 = "svg-mask-avatar-decoration-status-mobile-20", i.AVATAR_DECORATION_STATUS_MOBILE_24 = "svg-mask-avatar-decoration-status-mobile-24", i.AVATAR_DECORATION_STATUS_MOBILE_32 = "svg-mask-avatar-decoration-status-mobile-32", i.AVATAR_DECORATION_STATUS_MOBILE_40 = "svg-mask-avatar-decoration-status-mobile-40", i.AVATAR_DECORATION_STATUS_MOBILE_48 = "svg-mask-avatar-decoration-status-mobile-48", i.AVATAR_DECORATION_STATUS_MOBILE_56 = "svg-mask-avatar-decoration-status-mobile-56", i.AVATAR_DECORATION_STATUS_MOBILE_80 = "svg-mask-avatar-decoration-status-mobile-80", i.AVATAR_DECORATION_STATUS_MOBILE_100 = "svg-mask-avatar-decoration-status-mobile-100", i.AVATAR_DECORATION_STATUS_MOBILE_120 = "svg-mask-avatar-decoration-status-mobile-120", i.AVATAR_DECORATION_STATUS_TYPING_16 = "svg-mask-avatar-decoration-status-typing-16", i.AVATAR_DECORATION_STATUS_TYPING_20 = "svg-mask-avatar-decoration-status-typing-20", i.AVATAR_DECORATION_STATUS_TYPING_24 = "svg-mask-avatar-decoration-status-typing-24", i.AVATAR_DECORATION_STATUS_TYPING_32 = "svg-mask-avatar-decoration-status-typing-32", i.AVATAR_DECORATION_STATUS_TYPING_40 = "svg-mask-avatar-decoration-status-typing-40", i.AVATAR_DECORATION_STATUS_TYPING_48 = "svg-mask-avatar-decoration-status-typing-48", i.AVATAR_DECORATION_STATUS_TYPING_56 = "svg-mask-avatar-decoration-status-typing-56", i.AVATAR_DECORATION_STATUS_TYPING_80 = "svg-mask-avatar-decoration-status-typing-80", i.AVATAR_DECORATION_STATUS_TYPING_100 = "svg-mask-avatar-decoration-status-typing-100", i.AVATAR_DECORATION_STATUS_TYPING_120 = "svg-mask-avatar-decoration-status-typing-120", i.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80 = "svg-mask-avatar-decoration-profile-status-square-80", i.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80 = "svg-mask-avatar-decoration-profile-status-mobile-square-80", i.AVATAR_VOICE_CALL_80 = "svg-mask-avatar-voice-call-80", i.AVATAR_CALL_ICON = "svg-mask-avatar-call-icon", i.AVATAR_CALL_ICON_32 = "svg-mask-avatar-call-icon-32", i.STATUS_ONLINE_MOBILE = "svg-mask-status-online-mobile", i.STATUS_ONLINE = "svg-mask-status-online", i.STATUS_IDLE = "svg-mask-status-idle", i.STATUS_DND = "svg-mask-status-dnd", i.STATUS_OFFLINE = "svg-mask-status-offline", i.STATUS_STREAMING = "svg-mask-status-streaming", i.STATUS_TYPING = "svg-mask-status-typing", i.STATUS_SCREENSHARE = "svg-mask-status-screenshare", i.STICKER_ROUNDED_RECT = "svg-mask-sticker-rounded-rect", i.STICKER_SHOP_NOTIFICATION = "svg-mask-sticker-shop-notification", i.GUILD_ICON_WITH_CHANNEL_TYPE = "svg-mask-guild-icon-with-channel-type", i.GUILD_POPOUT_FACE_PILE_AVATAR = "svg-mask-guild-popout-activity-icon", i.CHAT_INPUT_BUTTON_NOTIFICATION = "svg-mask-chat-input-button-notification", i.AUTOCOMPLETE_EMOJI_UPSELL_EMOJI = "svg-mask-autocomplete-emoji-upsell-emoji", i.EVENT_TICKET = "svg-mask-event-ticket", i.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR = "svg-mask-content-inventory-card-face-pile-avatar";
+            (i = r || (r = {})).SQUIRCLE = "svg-mask-squircle", i.HEADER_BAR_BADGE = "svg-mask-header-bar-badge", i.VOICE_USER_SUMMARY_ITEM = "svg-mask-voice-user-summary-item", i.VERTICAL_FADE = "svg-mask-vertical-fade", i.PANEL_BUTTON = "svg-mask-panel-button", i.CHANNEL_CALL_CONTROL_BUTTON = "svg-mask-channel-call-control-button", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_16 = "svg-mask-channel-call-control-button-badge-16", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_22 = "svg-mask-channel-call-control-button-badge-22", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_29 = "svg-mask-channel-call-control-button-badge-29", i.AVATAR_DEFAULT = "svg-mask-avatar-default", i.AVATAR_STATUS_ROUND_16 = "svg-mask-avatar-status-round-16", i.AVATAR_STATUS_ROUND_20 = "svg-mask-avatar-status-round-20", i.AVATAR_STATUS_ROUND_24 = "svg-mask-avatar-status-round-24", i.AVATAR_STATUS_ROUND_32 = "svg-mask-avatar-status-round-32", i.AVATAR_STATUS_ROUND_40 = "svg-mask-avatar-status-round-40", i.AVATAR_STATUS_ROUND_48 = "svg-mask-avatar-status-round-48", i.AVATAR_STATUS_ROUND_56 = "svg-mask-avatar-status-round-56", i.AVATAR_STATUS_ROUND_80 = "svg-mask-avatar-status-round-80", i.AVATAR_STATUS_ROUND_100 = "svg-mask-avatar-status-round-100", i.AVATAR_STATUS_ROUND_120 = "svg-mask-avatar-status-round-120", i.DIAGONAL_FACEPILE_16 = "svg-mask-diagonal-facepile-16", i.DIAGONAL_FACEPILE_20 = "svg-mask-diagonal-facepile-20", i.DIAGONAL_FACEPILE_24 = "svg-mask-diagonal-facepile-24", i.DIAGONAL_FACEPILE_32 = "svg-mask-diagonal-facepile-32", i.DIAGONAL_FACEPILE_40 = "svg-mask-diagonal-facepile-40", i.DIAGONAL_FACEPILE_48 = "svg-mask-diagonal-facepile-48", i.DIAGONAL_FACEPILE_56 = "svg-mask-diagonal-facepile-56", i.DIAGONAL_FACEPILE_80 = "svg-mask-diagonal-facepile-80", i.DIAGONAL_FACEPILE_100 = "svg-mask-diagonal-facepile-100", i.DIAGONAL_FACEPILE_120 = "svg-mask-diagonal-facepile-120", i.DIAGONAL_FACEPILE_STATUS_16 = "svg-mask-diagonal-facepile-status-16", i.DIAGONAL_FACEPILE_STATUS_20 = "svg-mask-diagonal-facepile-status-20", i.DIAGONAL_FACEPILE_STATUS_24 = "svg-mask-diagonal-facepile-status-24", i.DIAGONAL_FACEPILE_STATUS_32 = "svg-mask-diagonal-facepile-status-32", i.DIAGONAL_FACEPILE_STATUS_40 = "svg-mask-diagonal-facepile-status-40", i.DIAGONAL_FACEPILE_STATUS_48 = "svg-mask-diagonal-facepile-status-48", i.DIAGONAL_FACEPILE_STATUS_56 = "svg-mask-diagonal-facepile-status-56", i.DIAGONAL_FACEPILE_STATUS_80 = "svg-mask-diagonal-facepile-status-80", i.DIAGONAL_FACEPILE_STATUS_100 = "svg-mask-diagonal-facepile-status-100", i.DIAGONAL_FACEPILE_STATUS_120 = "svg-mask-diagonal-facepile-status-120", i.DIAGONAL_FACEPILE_TYPING_16 = "svg-mask-diagonal-facepile-typing-16", i.DIAGONAL_FACEPILE_TYPING_20 = "svg-mask-diagonal-facepile-typing-20", i.DIAGONAL_FACEPILE_TYPING_24 = "svg-mask-diagonal-facepile-typing-24", i.DIAGONAL_FACEPILE_TYPING_32 = "svg-mask-diagonal-facepile-typing-32", i.DIAGONAL_FACEPILE_TYPING_40 = "svg-mask-diagonal-facepile-typing-40", i.DIAGONAL_FACEPILE_TYPING_48 = "svg-mask-diagonal-facepile-typing-48", i.DIAGONAL_FACEPILE_TYPING_56 = "svg-mask-diagonal-facepile-typing-56", i.DIAGONAL_FACEPILE_TYPING_80 = "svg-mask-diagonal-facepile-typing-80", i.DIAGONAL_FACEPILE_TYPING_100 = "svg-mask-diagonal-facepile-typing-100", i.DIAGONAL_FACEPILE_TYPING_120 = "svg-mask-diagonal-facepile-typing-120", i.AVATAR_STATUS_MOBILE_16 = "svg-mask-avatar-status-mobile-16", i.AVATAR_STATUS_MOBILE_20 = "svg-mask-avatar-status-mobile-20", i.AVATAR_STATUS_MOBILE_24 = "svg-mask-avatar-status-mobile-24", i.AVATAR_STATUS_MOBILE_32 = "svg-mask-avatar-status-mobile-32", i.AVATAR_STATUS_MOBILE_40 = "svg-mask-avatar-status-mobile-40", i.AVATAR_STATUS_MOBILE_48 = "svg-mask-avatar-status-mobile-48", i.AVATAR_STATUS_MOBILE_56 = "svg-mask-avatar-status-mobile-56", i.AVATAR_STATUS_MOBILE_80 = "svg-mask-avatar-status-mobile-80", i.AVATAR_STATUS_MOBILE_100 = "svg-mask-avatar-status-mobile-100", i.AVATAR_STATUS_MOBILE_120 = "svg-mask-avatar-status-mobile-120", i.AVATAR_STATUS_TYPING_16 = "svg-mask-avatar-status-typing-16", i.AVATAR_STATUS_TYPING_20 = "svg-mask-avatar-status-typing-20", i.AVATAR_STATUS_TYPING_24 = "svg-mask-avatar-status-typing-24", i.AVATAR_STATUS_TYPING_32 = "svg-mask-avatar-status-typing-32", i.AVATAR_STATUS_TYPING_40 = "svg-mask-avatar-status-typing-40", i.AVATAR_STATUS_TYPING_48 = "svg-mask-avatar-status-typing-48", i.AVATAR_STATUS_TYPING_56 = "svg-mask-avatar-status-typing-56", i.AVATAR_STATUS_TYPING_80 = "svg-mask-avatar-status-typing-80", i.AVATAR_STATUS_TYPING_100 = "svg-mask-avatar-status-typing-100", i.AVATAR_STATUS_TYPING_120 = "svg-mask-avatar-status-typing-120", i.AVATAR_DECORATION_STATUS_ROUND_16 = "svg-mask-avatar-decoration-status-round-16", i.AVATAR_DECORATION_STATUS_ROUND_20 = "svg-mask-avatar-decoration-status-round-20", i.AVATAR_DECORATION_STATUS_ROUND_24 = "svg-mask-avatar-decoration-status-round-24", i.AVATAR_DECORATION_STATUS_ROUND_32 = "svg-mask-avatar-decoration-status-round-32", i.AVATAR_DECORATION_STATUS_ROUND_40 = "svg-mask-avatar-decoration-status-round-40", i.AVATAR_DECORATION_STATUS_ROUND_48 = "svg-mask-avatar-decoration-status-round-48", i.AVATAR_DECORATION_STATUS_ROUND_56 = "svg-mask-avatar-decoration-status-round-56", i.AVATAR_DECORATION_STATUS_ROUND_80 = "svg-mask-avatar-decoration-status-round-80", i.AVATAR_DECORATION_STATUS_ROUND_120 = "svg-mask-avatar-decoration-status-round-120", i.AVATAR_DECORATION_STATUS_MOBILE_16 = "svg-mask-avatar-decoration-status-mobile-16", i.AVATAR_DECORATION_STATUS_MOBILE_20 = "svg-mask-avatar-decoration-status-mobile-20", i.AVATAR_DECORATION_STATUS_MOBILE_24 = "svg-mask-avatar-decoration-status-mobile-24", i.AVATAR_DECORATION_STATUS_MOBILE_32 = "svg-mask-avatar-decoration-status-mobile-32", i.AVATAR_DECORATION_STATUS_MOBILE_40 = "svg-mask-avatar-decoration-status-mobile-40", i.AVATAR_DECORATION_STATUS_MOBILE_48 = "svg-mask-avatar-decoration-status-mobile-48", i.AVATAR_DECORATION_STATUS_MOBILE_56 = "svg-mask-avatar-decoration-status-mobile-56", i.AVATAR_DECORATION_STATUS_MOBILE_80 = "svg-mask-avatar-decoration-status-mobile-80", i.AVATAR_DECORATION_STATUS_MOBILE_100 = "svg-mask-avatar-decoration-status-mobile-100", i.AVATAR_DECORATION_STATUS_MOBILE_120 = "svg-mask-avatar-decoration-status-mobile-120", i.AVATAR_DECORATION_STATUS_TYPING_16 = "svg-mask-avatar-decoration-status-typing-16", i.AVATAR_DECORATION_STATUS_TYPING_20 = "svg-mask-avatar-decoration-status-typing-20", i.AVATAR_DECORATION_STATUS_TYPING_24 = "svg-mask-avatar-decoration-status-typing-24", i.AVATAR_DECORATION_STATUS_TYPING_32 = "svg-mask-avatar-decoration-status-typing-32", i.AVATAR_DECORATION_STATUS_TYPING_40 = "svg-mask-avatar-decoration-status-typing-40", i.AVATAR_DECORATION_STATUS_TYPING_48 = "svg-mask-avatar-decoration-status-typing-48", i.AVATAR_DECORATION_STATUS_TYPING_56 = "svg-mask-avatar-decoration-status-typing-56", i.AVATAR_DECORATION_STATUS_TYPING_80 = "svg-mask-avatar-decoration-status-typing-80", i.AVATAR_DECORATION_STATUS_TYPING_100 = "svg-mask-avatar-decoration-status-typing-100", i.AVATAR_DECORATION_STATUS_TYPING_120 = "svg-mask-avatar-decoration-status-typing-120", i.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80 = "svg-mask-avatar-decoration-profile-status-square-80", i.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80 = "svg-mask-avatar-decoration-profile-status-mobile-square-80", i.AVATAR_VOICE_CALL_80 = "svg-mask-avatar-voice-call-80", i.AVATAR_CALL_ICON = "svg-mask-avatar-call-icon", i.AVATAR_CALL_ICON_32 = "svg-mask-avatar-call-icon-32", i.STATUS_ONLINE_MOBILE = "svg-mask-status-online-mobile", i.STATUS_ONLINE = "svg-mask-status-online", i.STATUS_IDLE = "svg-mask-status-idle", i.STATUS_DND = "svg-mask-status-dnd", i.STATUS_OFFLINE = "svg-mask-status-offline", i.STATUS_STREAMING = "svg-mask-status-streaming", i.STATUS_TYPING = "svg-mask-status-typing", i.STATUS_SCREENSHARE = "svg-mask-status-screenshare", i.STICKER_ROUNDED_RECT = "svg-mask-sticker-rounded-rect", i.STICKER_SHOP_NOTIFICATION = "svg-mask-sticker-shop-notification", i.GUILD_ICON_WITH_CHANNEL_TYPE = "svg-mask-guild-icon-with-channel-type", i.GUILD_POPOUT_FACE_PILE_AVATAR = "svg-mask-guild-popout-activity-icon", i.CHAT_INPUT_BUTTON_NOTIFICATION = "svg-mask-chat-input-button-notification", i.AUTOCOMPLETE_EMOJI_UPSELL_EMOJI = "svg-mask-autocomplete-emoji-upsell-emoji", i.EVENT_TICKET = "svg-mask-event-ticket", i.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR = "svg-mask-content-inventory-card-face-pile-avatar", i.CLAN_ICON = "svg-mask-clan-icon";
 
             function E(e, t) {
                 return (e - .5) / (null != t ? t : d.DECORATION_TO_AVATAR_RATIO) + .5
@@ -273615,7 +273624,7 @@
             }
             v.Masks = r, t.default = v;
             let D = a.memo(function() {
-                var e, t, n, i, r, a, o, l, _, c, f, S, v, D, M, y, P, U, b, G;
+                var e, t, n, i, r, a, o, l, _, c, f, S, v, D, M, y, P, U, b, G, w;
                 return (0, s.jsxs)("svg", {
                     viewBox: "0 0 1 1",
                     style: {
@@ -274004,6 +274013,17 @@
                             cy: .5,
                             r: .6
                         })]
+                    })), (w = "svg-mask-clan-icon", (0, s.jsx)("mask", {
+                        id: w,
+                        maskContentUnits: "objectBoundingBox",
+                        viewBox: "0 0 1 1",
+                        children: (0, s.jsx)("rect", {
+                            fill: "white",
+                            rx: .3,
+                            ry: .3,
+                            width: 1,
+                            height: 1
+                        })
                     }))]
                 })
             }, () => !0)
@@ -281319,7 +281339,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298989"
+                                build_number: "298999"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288628,7 +288648,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298989", "298989"), 10);
+                let s = parseInt((n = "298999", "298999"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316495,4 +316515,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.cb2f5d9c28f82c4f3d8b.js.map
+//# sourceMappingURL=27519.25066f81c38793d00911.js.map
