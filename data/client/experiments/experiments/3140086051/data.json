@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_ctp_app_open_vanilla",
+    "label": "CTP app open - A/A test - Vanilla",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Treatment"
+    ],
+    "hash": 3140086051,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "doSomething"
+    ]
+  }
+}
