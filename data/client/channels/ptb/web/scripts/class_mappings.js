@@ -22716,8 +22716,8 @@
         455108: function(e) {
             "use strict";
             e.exports = {
-                body: "body__15d2d",
                 container: "container_c8de55",
+                header: "header__6bd9e",
                 profileEffectPreview: "profileEffectPreview__87439"
             }
         },
@@ -22738,6 +22738,12 @@
                 gifTag: "gifTag__2ab52",
                 imageUploader: "imageUploader__7d384",
                 upsell: "upsell__58acf"
+            }
+        },
+        493069: function(e) {
+            "use strict";
+            e.exports = {
+                body: "body_ed81f0"
             }
         },
         935689: function(e) {
@@ -25890,6 +25896,7 @@
             "use strict";
             e.exports = {
                 actionColor: "actionColor_db400e",
+                simplifiedProfileActivity: "simplifiedProfileActivity_ccb6f1",
                 userProfileActivity: "userProfileActivity__0988f"
             }
         },
@@ -26284,7 +26291,7 @@
             e.exports = {
                 descriptionClamp: "descriptionClamp__07797",
                 viewFullBio: "viewFullBio__0403a",
-                viewFullBioText: "viewFullBioText_fe72b1"
+                viewFullBioColor: "viewFullBioColor__76a6f"
             }
         },
         153362: function(e) {
