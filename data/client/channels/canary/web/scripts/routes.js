@@ -2467,7 +2467,7 @@
                 "\\": 220,
                 "'": 222
             });
-            (o_ = Eu || (Eu = {}))[o_.WINDOWS = 1] = "WINDOWS", o_[o_.MACOS = 2] = "MACOS", o_[o_.LINUX = 3] = "LINUX", o_[o_.BROWSER = 4] = "BROWSER", (oE = Ep || (Ep = {})).EMPTY_MESSAGE = "EMPTY_MESSAGE", oE.MESSAGE_TOO_LONG = "MESSAGE_TOO_LONG", oE.RATE_LIMITED = "RATE_LIMITED", oE.SHOUTING_CANCELLED = "SHOUTING_CANCELLED", oE.SLOWMODE_COOLDOWN = "SLOWMODE_COOLDOWN", (oe = EB || (EB = {}))[oe.IMG = 1] = "IMG", oe[oe.YOUTUBE_VIDEO = 2] = "YOUTUBE_VIDEO", oe[oe.VIDEO = 3] = "VIDEO", (oI = Eg || (Eg = {})).NOW_PLAYING = "1", oI.RECENTLY_PLAYED = "2", oI.EVER_PLAYED = "3", oI.FLAVOR_TEXT = "4", oI.RECENT_RELEASE_DATE = "6", oI.RELEASE_DATE = "7", oI.EARLY_ACCESS = "8", oI.HAS_FREE_PREMIUM_CONTENT = "9", (oo = EH || (EH = {})).INPUT = "INPUT", oo.OUTPUT = "OUTPUT", oo.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT", (oa = Ef || (Ef = {})).INPUT = "INPUT", oa.OUTPUT = "OUTPUT", oa.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT", (oR = Eh || (Eh = {})).APPLICATION_LIBRARY_BADGE = "application_library_badge_18_11_02", oR.SERVER_DISCOVERY_BADGE = "server_discovery_badge_19_02_11", oR.E3_SERVER_DISCOVERY_BADGE = "e3_server_discovery_badge_19_06_08", (ot = Ey || (Ey = {})).MESSAGE = "MESSAGE", ot.FORUM_THREAD_CREATED = "FORUM_THREAD_CREATED", ot.BUG_REPORTER = "BUG_REPORTER", ot.ALERT = "ALERT", (oA = Ew || (Ew = {})).TRENDING_GIFS = "Trending", oA.FAVORITES = "Favorites", oA.TRENDING_CATEGORY = "Category", oA.SEARCH = "Search", oA.SEARCH_SUGGESTION = "Search Suggestion";
+            (o_ = Eu || (Eu = {}))[o_.WINDOWS = 1] = "WINDOWS", o_[o_.MACOS = 2] = "MACOS", o_[o_.LINUX = 3] = "LINUX", o_[o_.BROWSER = 4] = "BROWSER", (oE = Ep || (Ep = {})).EMPTY_MESSAGE = "EMPTY_MESSAGE", oE.MESSAGE_TOO_LONG = "MESSAGE_TOO_LONG", oE.RATE_LIMITED = "RATE_LIMITED", oE.SHOUTING_CANCELLED = "SHOUTING_CANCELLED", oE.SLOWMODE_COOLDOWN = "SLOWMODE_COOLDOWN", (oe = EB || (EB = {}))[oe.IMG = 1] = "IMG", oe[oe.YOUTUBE_VIDEO = 2] = "YOUTUBE_VIDEO", oe[oe.VIDEO = 3] = "VIDEO", (oI = Eg || (Eg = {})).NOW_PLAYING = "1", oI.RECENTLY_PLAYED = "2", oI.EVER_PLAYED = "3", oI.FLAVOR_TEXT = "4", oI.RECENT_RELEASE_DATE = "6", oI.RELEASE_DATE = "7", oI.EARLY_ACCESS = "8", oI.HAS_FREE_PREMIUM_CONTENT = "9", (oo = EH || (EH = {})).INPUT = "INPUT", oo.OUTPUT = "OUTPUT", oo.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT", (oa = Ef || (Ef = {})).INPUT = "INPUT", oa.OUTPUT = "OUTPUT", oa.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT", (oR = Eh || (Eh = {})).APPLICATION_LIBRARY_BADGE = "application_library_badge_18_11_02", oR.SERVER_DISCOVERY_BADGE = "server_discovery_badge_19_02_11", oR.E3_SERVER_DISCOVERY_BADGE = "e3_server_discovery_badge_19_06_08", (ot = Ey || (Ey = {})).MESSAGE = "MESSAGE", ot.MESSAGE_FAILED_TO_SEND = "MESSAGE_FAILED_TO_SEND", ot.FORUM_THREAD_CREATED = "FORUM_THREAD_CREATED", ot.BUG_REPORTER = "BUG_REPORTER", ot.ALERT = "ALERT", (oA = Ew || (Ew = {})).TRENDING_GIFS = "Trending", oA.FAVORITES = "Favorites", oA.TRENDING_CATEGORY = "Category", oA.SEARCH = "Search", oA.SEARCH_SUGGESTION = "Search Suggestion";
             let Rd = new Set([oV.CurrencyCodes.USD, oV.CurrencyCodes.CAD, oV.CurrencyCodes.EUR, oV.CurrencyCodes.AUD, oV.CurrencyCodes.GBP, oV.CurrencyCodes.PHP, oV.CurrencyCodes.MYR, oV.CurrencyCodes.VND, oV.CurrencyCodes.KRW, oV.CurrencyCodes.IDR]);
             (oT = EY || (EY = {})).ALWAYS = "ALWAYS", oT.ON_CLICK = "ON_CLICK", oT.IF_MODERATOR = "IF_MODERATOR";
             let Ru = [];
@@ -2621,7 +2621,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-3f4817bb0cf8879dafa9c0db341227296d82fca5",
+                    release: "discord_web-625a06285087560c7fea6a3ca1f13a9f8499d01a",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2639,7 +2639,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "299057", "299057")), I.setTag("builtAt", String("1717608635882"));
+                }), I.setTag("buildNumber", (_ = "299067", "299067")), I.setTag("builtAt", String("1717609356005"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -14225,4 +14225,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.e6d9d12640b91c40caa2.js.map
+//# sourceMappingURL=84471.a59690521bdc569bf367.js.map
