@@ -37131,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299194", ", Version Hash: ").concat("09649810c55c3b9283405c160d84dcc6d0973678")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299205", ", Version Hash: ").concat("46c6a24e02bea35cf09fe059898ba0175fd22a2d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -81756,27 +81756,30 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return _
                 },
                 useGetOrFetchApplication: function() {
-                    return u
+                    return c
                 }
             });
             var i = n("470079"),
-                r = n("442837"),
-                s = n("902704"),
-                a = n("728345"),
-                o = n("812206");
+                r = n("392711"),
+                s = n.n(r),
+                a = n("442837"),
+                o = n("902704"),
+                l = n("823379"),
+                u = n("728345"),
+                d = n("812206");
 
-            function l(e) {
+            function _(e) {
                 let t = i.useRef([]);
                 return i.useEffect(() => {
-                    !(0, s.areArraysShallowEqual)(e, t.current) && (a.default.fetchApplications(e, !1), t.current = e)
-                }, [e]), (0, r.useStateFromStoresArray)([o.default], () => e.map(e => o.default.getApplication(e)))
+                    !(0, o.areArraysShallowEqual)(e, t.current) && (u.default.fetchApplications(s()(e).filter(l.isNotNullish).uniq().value(), !1), t.current = e)
+                }, [e]), (0, a.useStateFromStoresArray)([d.default], () => e.map(e => null != e ? d.default.getApplication(e) : void 0))
             }
 
-            function u(e) {
-                return l(null != e ? [e] : [])[0]
+            function c(e) {
+                return _(null != e ? [e] : [])[0]
             }
         },
         439849: function(e, t, n) {
@@ -88847,8 +88850,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299194", "299194"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299194")), t = 0), t
+                let t = parseInt((e = "299205", "299205"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299205")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117013,8 +117016,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299194",
-                    versionHash: "09649810c55c3b9283405c160d84dcc6d0973678"
+                    buildNumber: "299205",
+                    versionHash: "46c6a24e02bea35cf09fe059898ba0175fd22a2d"
                 }
             }
             n.r(t), n.d(t, {
@@ -125695,16 +125698,43 @@
             }
             t.default = new s
         },
+        185745: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                CTPAppOpenVanillaExperiment: function() {
+                    return s
+                }
+            });
+            var i = n("987170"),
+                r = n("987338");
+            let s = (0, i.default)({
+                kind: "user",
+                id: "2024-06_ctp_app_open_vanilla",
+                label: "CTP app open - A/A test - Vanilla",
+                defaultConfig: {
+                    doSomething: !1
+                },
+                commonTriggerPoint: r.CommonTriggerPoints.POST_CONNECTION_OPEN,
+                treatments: [{
+                    id: 1,
+                    label: "Treatment",
+                    config: {
+                        doSomething: !0
+                    }
+                }]
+            })
+        },
         160462: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 ConnectionOpenTriggerPoint: function() {
-                    return s
+                    return a
                 }
             });
-            var i = n("91641"),
-                r = n("987338");
-            let s = new i.CommonTriggerPointConfiguration([], r.CommonTriggerPoints.POST_CONNECTION_OPEN, {
+            var i = n("185745"),
+                r = n("91641"),
+                s = n("987338");
+            let a = new r.CommonTriggerPointConfiguration([i.CTPAppOpenVanillaExperiment], s.CommonTriggerPoints.POST_CONNECTION_OPEN, {
                 location: "connection open"
             })
         },
@@ -174602,8 +174632,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717615874293",
-                                    build_number: "299194"
+                                    built_at: "1717616601439",
+                                    build_number: "299205"
                                 }
                             },
                             retries: 1
@@ -252317,7 +252347,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "09649810c55c3b9283405c160d84dcc6d0973678"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "46c6a24e02bea35cf09fe059898ba0175fd22a2d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281455,7 +281485,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299194"
+                                build_number: "299205"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288764,7 +288794,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299194", "299194"), 10);
+                let s = parseInt((n = "299205", "299205"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316633,4 +316663,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.4abd9cec7391fe6c06bb.js.map
+//# sourceMappingURL=27519.0065b32946479d250cf9.js.map
