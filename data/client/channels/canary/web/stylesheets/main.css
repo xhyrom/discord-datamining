@@ -7608,7 +7608,8 @@ div.cardContainer__94a1c {
 }
 
 .pricePerInterval_c2c66a {
-    margin-bottom: 18px
+    margin-bottom: 18px;
+    font-weight: 200
 }
 
 .price__300d9 {
@@ -7816,10 +7817,37 @@ div.cardContainer__94a1c {
     height: 40px
 }
 
+.modifiedTier0Title__9310e {
+    width: 132px;
+    height: 16px
+}
+
+.modifiedSubHeaderStoreHome_a3941d {
+    max-width: 352px;
+    width: 100%;
+    font-size: 34px;
+    margin-bottom: 6px
+}
+
+.modifiedSubHeaderSettings__584b9 {
+    font-size: 26px;
+    margin-bottom: 6px
+}
+
+.tierCardHeaderDisplay_d461ed {
+    display: flex;
+    flex-direction: column
+}
+
 .tier2Title_b1e17a {
     width: 96px;
     height: 24px;
     display: block
+}
+
+.modifiedTier2Title__20b5f {
+    width: 64px;
+    height: 16px
 }
 
 .title__649cc {
@@ -7833,12 +7861,12 @@ div.cardContainer__94a1c {
     margin-bottom: 8px
 }
 
-.item__4b324:first-of-type {
-    max-width: 60%
-}
-
 .item__4b324:last-child {
     margin-bottom: 0
+}
+
+.itemWithWumpus__7be38:first-of-type {
+    max-width: 100%
 }
 
 .icon__77190 {
@@ -7888,6 +7916,10 @@ div.cardContainer__94a1c {
     margin-top: 8px;
     margin-bottom: 8px;
     max-width: 60%
+}
+
+.modifiedPrice_ee426b {
+    margin: 20px 0 10px
 }
 
 .price__12d41 {
@@ -89350,6 +89382,10 @@ html .invoiceCancelRow__6ff3e {
     perspective: 45px
 }
 
+.posterClickable_e5fa19 {
+    cursor: pointer
+}
+
 .posterBackground__54400 {
     width: 100%;
     height: auto
@@ -92783,7 +92819,7 @@ html .invoiceCancelRow__6ff3e {
     text-transform: capitalize
 }
 
-.banner__4cbda {
+.banner__002ec {
     background: url(/assets/1fb71063b548b71df245.svg)no-repeat, url(/assets/6577fccd0261deb75bb5.svg)repeat-x, url(/assets/bdc9f7bcb1fde3ba5c80.svg)no-repeat, linear-gradient(180deg, #3646d6 0%, #4c4ada 8%, #8957e4 32.22%, #ba61ec 54.4%, #dd68f1 73.79%, #f26cf5 89.65%, #fa6ef6 100%);
     background-position: left bottom, center bottom, right bottom, center center;
     background-size: auto 100%, auto 100%, auto 100%, 100%100%;
@@ -92797,13 +92833,13 @@ html .invoiceCancelRow__6ff3e {
     display: flex
 }
 
-.bannerFullscreen__93203 {
+.bannerFullscreen__13652 {
     background: url(/assets/1fb71063b548b71df245.svg)no-repeat, url(/assets/6577fccd0261deb75bb5.svg)repeat-x, url(/assets/bdc9f7bcb1fde3ba5c80.svg)no-repeat, linear-gradient(270deg, var(--premium-tier-0-header-gradient-1)0%, var(--premium-tier-0-header-gradient-4)100%);
     background-position: left bottom, center bottom, right bottom, center center;
     background-size: auto 100%, auto 100%, auto 100%, 100%100%
 }
 
-.bannerContent__0752c {
+.bannerContent__9ff77 {
     margin-left: 115px;
     display: flex;
     flex-direction: column;
@@ -92811,13 +92847,13 @@ html .invoiceCancelRow__6ff3e {
     align-items: stretch
 }
 
-.bannerContent__0752c a {
+.bannerContent__9ff77 a {
     color: var(--white) !important;
     -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
-.countdown__183b3 {
+.countdown_a10bbb {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
@@ -92827,12 +92863,12 @@ html .invoiceCancelRow__6ff3e {
     margin-bottom: 4px
 }
 
-.subscribeButton__8b8fb {
+.subscribeButton_aa2088 {
     width: -moz-fit-content;
     width: fit-content
 }
 
-.subscribeButtonText__47656 {
+.subscribeButtonText__77926 {
     max-width: none
 }
 
@@ -93208,6 +93244,10 @@ html .invoiceCancelRow__6ff3e {
 
 .descriptionBottomMargin_d3d521 {
     margin-bottom: 32px
+}
+
+.modifiedDescription_f3e913 {
+    margin-top: 24px
 }
 
 .affinityDescription_e76b25,
@@ -93899,6 +93939,26 @@ html .invoiceCancelRow__6ff3e {
 
 .fileSize_dd3b5f {
     white-space: nowrap
+}
+
+.premiumSubscribeButton_be0c9f {
+    display: flex;
+    align-items: center
+}
+
+.buttonShine__5059e {
+    color: hsl(var(--brand-500-hsl)/.1)
+}
+
+.subButton__93b65 {
+    margin-top: 40px;
+    border-radius: 24px
+}
+
+.subscribeButtonText__817ee {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .legacyPricingNotice__6cf01 {
@@ -94940,6 +95000,10 @@ html .invoiceCancelRow__6ff3e {
     background-image: linear-gradient(130.41deg, #0fb3ff 7.43%, #b940ff 82.67%)
 }
 
+.roundedButton__95800 {
+    border-radius: var(--custom-button-button-tn-height)
+}
+
 .section_edd136 {
     display: flex;
     flex-direction: column;
@@ -95798,15 +95862,17 @@ html .invoiceCancelRow__6ff3e {
     margin-bottom: 80px
 }
 
+.promoBannerContainer__31ea9 {
+    max-width: 824px;
+    width: 100%
+}
+
 .marginTopForButtons__37ff6 {
     margin-top: 60px
 }
 
 .roundedSubscribeButton__6cab1 {
-    color: var(--misc-blurple-brand-500, var(--brand-500)) !important;
-    border-radius: 24px;
-    width: 100%;
-    background-color: var(--white)
+    border-radius: var(--custom-button-button-tn-height)
 }
 
 .buttonShine__50852 {
@@ -142709,4 +142775,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3b56fc03f4c6d3827bc3.css.map*/
+/*# sourceMappingURL=99387.a60d3e602652355bd364.css.map*/
