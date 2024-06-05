@@ -33826,7 +33826,7 @@ html .progress__00e29 {
 
 .content__33011 {
     margin-top: -5px;
-    padding-left: 30px;
+    padding-left: 31.5px;
     padding-right: 43.5px;
     margin-bottom: -2px;
     color: var(--text-normal)
@@ -33840,8 +33840,10 @@ html .progress__00e29 {
 
 .innerContent__6c8b6 {
     padding: 20px;
-    max-width: 251.5px;
-    width: 100%
+    max-width: 250px;
+    width: 100%;
+    z-index: -1;
+    box-shadow: var(--shadow-high)
 }
 
 .innerContent__6c8b6.fullHeight_fe77cd,
@@ -63091,52 +63093,24 @@ div:has(>div>.modal__06f49) {
     opacity: 1
 }
 
-.banner__43a79 {
-    background-size: cover;
-    border-radius: var(--radius-xs)var(--radius-xs)0 0;
+.clickable_c7526c {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: var(--custom-user-banner-height-bite-size)
-}
-
-.upsell__58acf {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    gap: 4px;
     background-color: hsl(var(--black-500-hsl)/.4);
     cursor: pointer;
     opacity: 0;
     transition: .2s ease opacity
 }
 
-.upsell__58acf:hover {
+.clickable_c7526c:hover {
     opacity: 1
-}
-
-.imageUploader__7d384 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
-}
-
-.gifTag__2ab52 {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    pointer-events: none
-}
-
-.enable-forced-colors .banner__43a79 {
-    border: 2px solid ButtonText;
-    forced-color-adjust: none;
-    outline: 1px solid Canvas;
-    outline-offset: -3px
-}
-
-.enable-forced-colors .bannerUpsell_dcad58 {
-    background-color: ButtonFace;
-    color: ButtonText
 }
 
 .body_ed81f0 {
@@ -142637,4 +142611,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4ffa105674b006cb3dfb.css.map*/
+/*# sourceMappingURL=99387.6e8f3feaa83ca1731e0a.css.map*/
