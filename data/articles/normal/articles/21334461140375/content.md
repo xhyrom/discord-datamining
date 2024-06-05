@@ -46,7 +46,7 @@
     <span style="color: #434343;">Note: Every app is different. To learn how each app functions, check out the app’s member profile or the </span><strong><span style="color: #434343;">App Directory</span></strong><span style="color: #434343;"> page for the app. </span>
 </h3>
 <h1 id="h_01HRQSA6C89EVW06TR83E76S86">How to Discover Apps</h1>
-<p>Discord’s <strong>App Directory</strong> lets you search, browse, and explore various <a href="https://support.discord.com/hc/en-us/articles/19265818186135" target="_blank" rel="noopener noreferrer">apps</a> you can add to customize your server. </p>
+<p>Discord’s <strong>App Directory</strong> lets you search, browse, and explore various apps you can add to customize your server. </p>
 <h3 id="h_01HRQSA6C8TSTZK0FKE7YA6Y86"><span style="color: #434343;">Note: The App Directory is only available on desktop and browser. </span></h3>
 <p>To find various apps available on Discord, you can head over to the <strong>App Directory.</strong></p>
 <p>1. Head over to your server and left-click the <strong>server name</strong> located in the upper-left corner. </p>
