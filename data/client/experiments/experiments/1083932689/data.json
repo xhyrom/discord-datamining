@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_guild_boosting_legacy_pricing_fix_experiment",
+    "label": "Guild Boosting Legacy Pricing Fix Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Use Invoice Preview for Boost Pricing"
+    ],
+    "hash": 1083932689,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
