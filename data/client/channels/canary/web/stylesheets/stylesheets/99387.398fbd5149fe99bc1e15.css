@@ -6531,11 +6531,16 @@
     position: relative
 }
 
-.clanIcon_d70524 {
+.clanIconMask_b52b51 {
     position: absolute;
-    width: 64px;
-    height: 64px;
-    top: -48px
+    width: 70px;
+    height: 70px;
+    top: -51px
+}
+
+.clanIconInner__4b4c6 {
+    background-color: var(--bg-surface-overlay);
+    padding: 3px
 }
 
 .clanBadge__4c045 {
@@ -88268,7 +88273,7 @@ input::-webkit-inner-spin-button {
 }
 
 .title__63238 {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources__8ef1d:hover {
@@ -88299,8 +88304,8 @@ input::-webkit-inner-spin-button {
 }
 
 .backHeader_cff6da {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -142641,4 +142646,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.5fc30aff55aaa2b50852.css.map*/
+/*# sourceMappingURL=99387.398fbd5149fe99bc1e15.css.map*/
