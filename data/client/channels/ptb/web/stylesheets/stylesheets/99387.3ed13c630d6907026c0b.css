@@ -40852,8 +40852,8 @@ div.profileThemedContainer__6e645 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase
 }
 
@@ -142722,4 +142722,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.896db8d9022701a99e77.css.map*/
+/*# sourceMappingURL=99387.3ed13c630d6907026c0b.css.map*/
