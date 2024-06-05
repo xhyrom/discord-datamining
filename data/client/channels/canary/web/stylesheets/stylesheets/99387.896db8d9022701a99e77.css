@@ -10928,6 +10928,10 @@ span.clanTag_f4aadc {
     padding-bottom: 0
 }
 
+.autocompleteTop_afe414 {
+    z-index: 1001
+}
+
 .scroller__3fc84 {
     padding-bottom: 8px;
     display: flex;
@@ -58795,6 +58799,113 @@ div:has(>div>.modal__06f49) {
     z-index: 0;
     filter: blur(5px);
     transform: scale(3.5)
+}
+
+.wrapper__5ce22 {
+    background-color: var(--background-message-hover);
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-hover);
+    margin-top: 12px
+}
+
+.stepsWrapperAnimated_c09c7a {
+    overflow: hidden
+}
+
+.stepsWrapperStatic__454d2 {
+    padding: 0 12px 12px
+}
+
+.headingWrapper_dfde31 {
+    cursor: pointer;
+    display: flex;
+    padding: 12px
+}
+
+.heading__5c363 {
+    flex: 1 1 auto
+}
+
+.headingChevron_a9d95d {
+    flex: 0 0 auto;
+    height: 16px;
+    transition: transform.125s;
+    width: 16px
+}
+
+.stepWrapper__40c72 {
+    display: flex;
+    gap: 10px
+}
+
+.stepContent__72b21 {
+    padding-top: 3px
+}
+
+.stepWrapperWithNextStep__553d0 .stepContent__72b21 {
+    margin-bottom: 16px
+}
+
+.stepContent__72b21 strong {
+    color: var(--text-normal)
+}
+
+.stepIndicator__235d3 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column
+}
+
+.stepIconWrapper__1dc9a {
+    align-items: center;
+    border: 2px solid var(--background-modifier-selected);
+    border-radius: 20px;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    width: 20px
+}
+
+.theme-light .stepIconWrapper__1dc9a {
+    border: 2px solid hsl(var(--black-500-hsl)/.1)
+}
+
+.stepWrapperComplete__4da68 .stepIconWrapper__1dc9a {
+    background-color: var(--brand-500)
+}
+
+.stepConnector__70be7 {
+    background-color: var(--background-modifier-selected);
+    flex: 1 1 auto;
+    position: relative;
+    width: 2px
+}
+
+.stepWrapperComplete__4da68 .stepConnector__70be7:before {
+    background-color: var(--white-500);
+    box-shadow: 0 0 6px hsl(var(--white-500-hsl)/.8);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.theme-light .stepWrapperComplete__4da68 .stepConnector__70be7:before {
+    background-color: hsl(var(--brand-500-hsl)/.6);
+    box-shadow: 0 0 6px hsl(var(--brand-500-hsl)/.4)
+}
+
+.stepIcon_ff5f7a {
+    display: block;
+    height: 14px;
+    width: 14px
+}
+
+.ctaWrapper__16b61 {
+    margin-top: 16px
 }
 
 .contentExpanded__9eb0c {
@@ -142611,4 +142722,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6e8f3feaa83ca1731e0a.css.map*/
+/*# sourceMappingURL=99387.896db8d9022701a99e77.css.map*/
