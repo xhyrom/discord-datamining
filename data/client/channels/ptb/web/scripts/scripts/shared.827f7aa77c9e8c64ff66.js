@@ -1741,6 +1741,7 @@
                 embedLink: "embedLink_e542f5",
                 embedMargin: "embedMargin__99b82",
                 embedMedia: "embedMedia__4e169",
+                embedPlaystation: "embedPlaystation__3a28e",
                 embedProvider: "embedProvider_f3e807",
                 embedSpotify: "embedSpotify__13fe9",
                 embedSuppressButton: "embedSuppressButton__5aae1",
@@ -1988,6 +1989,12 @@
                 forceHover: "forceHover__733de",
                 hoverRoll: "hoverRoll__3ea9e",
                 hovered: "hovered__5a165"
+            }
+        },
+        242002: function(e) {
+            "use strict";
+            e.exports = {
+                embedIFrame: "embedIFrame__94cf2"
             }
         },
         190929: function(e) {
