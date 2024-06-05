@@ -4218,6 +4218,16 @@
     margin-right: 4px
 }
 
+.tier1Gradient__63fd2 {
+    color: var(--white-500);
+    background: var(--custom-premium-colors-premium-gradient-tier-1)
+}
+
+.tier2Gradient_db57b9 {
+    color: var(--white-500);
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+}
+
 .container__3529f {
     display: flex;
     flex-direction: column;
@@ -8436,11 +8446,6 @@ div.cardContainer__94a1c {
 
 .theme-light .enhancedSecondaryAction_bbd620 {
     color: #b64ab7
-}
-
-.getNitroCTA__8d970 {
-    color: var(--white-500);
-    background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients)0%, var(--premium-tier-2-purple-for-gradients-2)49.96%, var(--premium-tier-2-pink-for-gradients)95.93%)
 }
 
 .closeButton__5e970 {
@@ -71373,8 +71378,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .planInfo_c12dc8 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -125794,8 +125799,6 @@ div:has(>div>.container__8ab05) {
 }
 
 .nitroButton_a1ac54 {
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-    border-radius: var(--radius-xs);
     margin-left: auto
 }
 
@@ -142792,4 +142795,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.241c476db92be3014c69.css.map*/
+/*# sourceMappingURL=99387.f3fa21e5b490c3728cd2.css.map*/
