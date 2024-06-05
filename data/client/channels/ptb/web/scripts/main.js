@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299248", ", Version Hash: ").concat("21870a7c1dbde3a9d364aa9870f456d6cc023132")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299260", ", Version Hash: ").concat("685814fa7e70f0e86a6052a89e73d6d0c171736e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88851,8 +88851,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299248", "299248"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299248")), t = 0), t
+                let t = parseInt((e = "299260", "299260"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299260")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117017,8 +117017,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299248",
-                    versionHash: "21870a7c1dbde3a9d364aa9870f456d6cc023132"
+                    buildNumber: "299260",
+                    versionHash: "685814fa7e70f0e86a6052a89e73d6d0c171736e"
                 }
             }
             n.r(t), n.d(t, {
@@ -174633,8 +174633,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717619305819",
-                                    build_number: "299248"
+                                    built_at: "1717620063758",
+                                    build_number: "299260"
                                 }
                             },
                             retries: 1
@@ -183474,6 +183474,118 @@
                 }
             }
             t.default = new I
+        },
+        937579: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                acknowledgeUserOffer: function() {
+                    return E
+                },
+                fetchUserOffer: function() {
+                    return _
+                }
+            });
+            var i = n("544891"),
+                r = n("704215"),
+                s = n("570140"),
+                a = n("605236"),
+                o = n("675478"),
+                l = n("295226"),
+                u = n("424082"),
+                d = n("981631");
+            async function _() {
+                let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
+                    {
+                        annualDiscountsEnabled: t
+                    } = (0, u.getAnnualDiscountsExperimentConfig)("PremiumManager"),
+                    n = t && l.default.shouldFetchAnnualOffer();
+                if (e) {
+                    s.default.dispatch({
+                        type: "BILLING_USER_OFFER_FETCH_START"
+                    });
+                    try {
+                        var _, E, I;
+                        let e = await i.HTTP.post({
+                                url: d.Endpoints.USER_OFFER
+                            }),
+                            t = null !== (_ = e.body.user_trial_offer) && void 0 !== _ ? _ : null,
+                            l = null !== (E = e.body.user_discount) && void 0 !== E ? E : null,
+                            u = null !== (I = e.body.user_discount_offer) && void 0 !== I ? I : null;
+                        return null == t && (0, a.isDismissibleContentDismissed)(r.DismissibleContent.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, o.removeDismissedContent)(r.DismissibleContent.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), s.default.dispatch({
+                            type: "BILLING_USER_OFFER_FETCH_SUCCESS",
+                            userTrialOffer: t,
+                            userDiscount: l,
+                            userDiscountOffer: u
+                        }), null == t && n && c(), {
+                            userTrialOffer: t,
+                            userDiscount: l,
+                            userDiscountOffer: u
+                        }
+                    } catch (e) {
+                        s.default.dispatch({
+                            type: "BILLING_USER_OFFER_FETCH_FAIL"
+                        })
+                    }
+                }
+                n && c()
+            }
+            async function c() {
+                try {
+                    var e;
+                    let t = await i.HTTP.post({
+                            url: d.Endpoints.ANNUAL_USER_OFFER
+                        }),
+                        n = null !== (e = t.body.user_discount_offer) && void 0 !== e ? e : null;
+                    null != n && (I(n), s.default.dispatch({
+                        type: "BILLING_ANNUAL_USER_OFFER_FETCH_SUCCESS",
+                        userDiscountOffer: n
+                    }))
+                } catch (e) {
+                    s.default.dispatch({
+                        type: "BILLING_ANNUAL_USER_OFFER_FETCH_FAIL"
+                    })
+                }
+            }
+
+            function E(e, t) {
+                let n = null != e && null == e.expires_at ? e.id : void 0,
+                    r = null != t && null == t.expires_at ? t.id : void 0;
+                if (void 0 !== n || void 0 !== r) return i.HTTP.post({
+                    url: d.Endpoints.USER_OFFER_ACKNOWLEDGED,
+                    body: {
+                        user_trial_offer_id: n,
+                        user_discount_offer_id: r
+                    },
+                    oldFormErrors: !0
+                }).then(e => {
+                    var t, n, i;
+                    s.default.dispatch({
+                        type: "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS",
+                        userTrialOffer: null !== (t = e.body.user_trial_offer) && void 0 !== t ? t : null,
+                        userDiscount: null !== (n = e.body.user_discount) && void 0 !== n ? n : null,
+                        userDiscountOffer: null !== (i = e.body.user_discount_offer) && void 0 !== i ? i : null
+                    })
+                }).catch(e => {
+                    404 === e.status && s.default.dispatch({
+                        type: "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS",
+                        userTrialOffer: null,
+                        userDiscount: null,
+                        userDiscountOffer: null
+                    })
+                })
+            }
+            async function I(e) {
+                if (null != e && null == e.applied_at) try {
+                    await i.HTTP.post({
+                        url: d.Endpoints.USER_OFFER_REDEEM,
+                        body: {
+                            user_discount_offer_id: e.id
+                        }
+                    })
+                } catch (e) {
+                    throw e
+                }
+            }
         },
         316941: function(e, t, n) {
             "use strict";
@@ -248923,12 +249035,13 @@
                 a = n("442837"),
                 o = n("570140"),
                 l = n("276444"),
-                u = n("594174"),
-                d = n("74538"),
-                _ = n("78839"),
-                c = n("474936");
+                u = n("937579"),
+                d = n("594174"),
+                _ = n("74538"),
+                c = n("78839"),
+                E = n("474936");
 
-            function E(e, t, n) {
+            function I(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -248936,32 +249049,37 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let I = {
+            let T = {
                     userOffersLastFetchedAtDate: void 0,
                     userAnnualOfferLastFetchedAtDate: void 0,
                     userTrialOffers: {},
                     userDiscountOffers: {},
                     userDiscounts: void 0
                 },
-                T = I;
+                f = T;
 
-            function f() {
-                T.userTrialOffers = {}, T.userDiscountOffers = {}, T.userOffersLastFetchedAtDate = void 0, T.userAnnualOfferLastFetchedAtDate = void 0
+            function S() {
+                f.userTrialOffers = {}, f.userDiscountOffers = {}, f.userOffersLastFetchedAtDate = void 0, f.userAnnualOfferLastFetchedAtDate = void 0
             }
-            let S = () => !0;
+            let h = () => !0;
 
-            function h() {
-                if (null != _.default.getPremiumTypeSubscription()) {
-                    let e = s()(T.userDiscountOffers[c.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID]),
-                        t = s()(T.userDiscountOffers[c.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID]);
-                    return T.userDiscountOffers = {}, null != e ? T.userDiscountOffers[c.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID] = e : null != t && (T.userDiscountOffers[c.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID] = t), T.userTrialOffers = {}, !0
+            function A() {
+                if (null != c.default.getPremiumTypeSubscription()) {
+                    let e = s()(f.userDiscountOffers[E.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID]),
+                        t = s()(f.userDiscountOffers[E.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID]);
+                    return f.userDiscountOffers = {}, null != e ? f.userDiscountOffers[E.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID] = e : null != t && (f.userDiscountOffers[E.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID] = t), f.userTrialOffers = {}, !0
                 }
                 return !1
             }
 
-            function A() {
+            function m() {
+                let e = d.default.getCurrentUser();
+                !(0, _.isPremium)(e) && Object.keys(f.userDiscountOffers).length > 0 && (0, u.fetchUserOffer)(!0)
+            }
+
+            function N() {
                 var e;
-                let t = null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.id;
+                let t = null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id;
                 if (null == t) return !1;
                 let n = Object.entries(l.default.getRelevantReferralTrialOffers()).map(e => {
                     let [t, n] = e;
@@ -248969,69 +249087,69 @@
                 }).filter(e => e.user_id === t);
                 if (n.length > 0) {
                     let e = n[0];
-                    return T.userTrialOffers[e.trial_id] = e, !0
+                    return f.userTrialOffers[e.trial_id] = e, !0
                 }
                 return !1
             }
-            class m extends(i = a.default.PersistedStore) {
+            class p extends(i = a.default.PersistedStore) {
                 initialize(e) {
-                    T = null != e ? e : I, this.waitFor(u.default), this.syncWith([u.default], S), this.syncWith([_.default], h), this.syncWith([l.default], A)
+                    f = null != e ? e : T, this.waitFor(d.default), this.syncWith([d.default], h), this.syncWith([c.default], A), this.syncWith([l.default], N)
                 }
                 getUserTrialOffer(e) {
-                    if (null !== e) return T.userTrialOffers[e]
+                    if (null !== e) return f.userTrialOffers[e]
                 }
                 getUserDiscountOffer(e) {
-                    if (null !== e) return T.userDiscountOffers[e]
+                    if (null !== e) return f.userDiscountOffers[e]
                 }
                 getAnyOfUserTrialOfferId(e) {
                     for (let t of e)
-                        if (null != T.userTrialOffers[t]) return t;
+                        if (null != f.userTrialOffers[t]) return t;
                     return null
                 }
                 hasFetchedOffer() {
-                    return null != T.userOffersLastFetchedAtDate
+                    return null != f.userOffersLastFetchedAtDate
                 }
                 shouldFetchOffer() {
-                    let e = T.userOffersLastFetchedAtDate;
+                    let e = f.userOffersLastFetchedAtDate;
                     return null == e || Date.now() - 1728e5 > e
                 }
                 shouldFetchAnnualOffer() {
-                    let e = T.userAnnualOfferLastFetchedAtDate;
+                    let e = f.userAnnualOfferLastFetchedAtDate;
                     return null == e || Date.now() - 1728e5 > e
                 }
                 getAlmostExpiringTrialOffers(e) {
-                    let t = Object.values(c.SubscriptionTrials).map(e => e.id),
-                        n = u.default.getCurrentUser();
-                    return (0, d.isPremium)(n) ? [] : Object.values(T.userTrialOffers).filter(n => t.includes(n.trial_id) && null != n.expires_at && null != n.subscription_trial && e.includes(n.subscription_trial.sku_id) && Date.parse(n.expires_at) < Date.now() + c.USER_PREMIUM_SUBSCRIPTION_TRIAL_EXPIRES_APPROACHING_5_DAY_THRESHOLD)
+                    let t = Object.values(E.SubscriptionTrials).map(e => e.id),
+                        n = d.default.getCurrentUser();
+                    return (0, _.isPremium)(n) ? [] : Object.values(f.userTrialOffers).filter(n => t.includes(n.trial_id) && null != n.expires_at && null != n.subscription_trial && e.includes(n.subscription_trial.sku_id) && Date.parse(n.expires_at) < Date.now() + E.USER_PREMIUM_SUBSCRIPTION_TRIAL_EXPIRES_APPROACHING_5_DAY_THRESHOLD)
                 }
                 getAcknowledgedOffers(e) {
-                    let t = u.default.getCurrentUser();
-                    return (0, d.isPremium)(t) ? [] : Object.values(T.userTrialOffers).filter(t => e.includes(t.trial_id) && null != t.expires_at)
+                    let t = d.default.getCurrentUser();
+                    return (0, _.isPremium)(t) ? [] : Object.values(f.userTrialOffers).filter(t => e.includes(t.trial_id) && null != t.expires_at)
                 }
                 getUnacknowledgedDiscountOffers() {
                     var e;
-                    let t = u.default.getCurrentUser();
-                    return (0, d.isPremium)(t) ? [] : Object.values(null !== (e = T.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at && !c.ANNUAL_DISCOUNT_IDS.includes(e.discount_id))
+                    let t = d.default.getCurrentUser();
+                    return (0, _.isPremium)(t) ? [] : Object.values(null !== (e = f.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at && !E.ANNUAL_DISCOUNT_IDS.includes(e.discount_id))
                 }
                 getUnacknowledgedOffers(e) {
-                    let t = u.default.getCurrentUser();
-                    return (0, d.isPremium)(t) ? [] : Object.values(T.userTrialOffers).filter(t => e.includes(t.trial_id) && null == t.expires_at)
+                    let t = d.default.getCurrentUser();
+                    return (0, _.isPremium)(t) ? [] : Object.values(f.userTrialOffers).filter(t => e.includes(t.trial_id) && null == t.expires_at)
                 }
                 hasAnyUnexpiredOffer() {
-                    return Object.values(T.userTrialOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
+                    return Object.values(f.userTrialOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
                 }
                 getReferrer(e) {
                     var t;
-                    return null == e ? null : null === (t = T.userTrialOffers[e]) || void 0 === t ? void 0 : t.referrer
+                    return null == e ? null : null === (t = f.userTrialOffers[e]) || void 0 === t ? void 0 : t.referrer
                 }
                 getState() {
-                    return T
+                    return f
                 }
                 forceReset() {
-                    f()
+                    S()
                 }
             }
-            E(m, "displayName", "UserOfferStore"), E(m, "persistKey", "UserOfferStore"), E(m, "migrations", [e => {
+            I(p, "displayName", "UserOfferStore"), I(p, "persistKey", "UserOfferStore"), I(p, "migrations", [e => {
                 let t = null == e ? void 0 : e.userDiscounts;
                 if (null != t) return {
                     ...e,
@@ -249042,18 +249160,18 @@
                     ...e,
                     userAnnualOfferLastFetchedAtDate: void 0
                 } : e
-            }]), t.default = new m(o.default, {
+            }]), t.default = new p(o.default, {
                 BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t
                     } = e;
-                    null != t ? T.userTrialOffers[t.trial_id] = t : f(), T.userOffersLastFetchedAtDate = Date.now()
+                    null != t ? f.userTrialOffers[t.trial_id] = t : S(), f.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t
                     } = e;
-                    null != t ? T.userTrialOffers[t.trial_id] = t : T.userTrialOffers = {}, T.userOffersLastFetchedAtDate = Date.now()
+                    null != t ? f.userTrialOffers[t.trial_id] = t : f.userTrialOffers = {}, f.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_OFFER_FETCH_SUCCESS: function(e) {
                     let {
@@ -249061,13 +249179,13 @@
                         userDiscount: n,
                         userDiscountOffer: i
                     } = e;
-                    null == t && null == n && null == i && f(), null != t ? (T.userTrialOffers[t.trial_id] = t, T.userDiscountOffers = {}) : null != n ? (T.userDiscountOffers[n.discount_id] = n, T.userTrialOffers = {}) : null != i && (T.userDiscountOffers[i.discount_id] = i, T.userTrialOffers = {}), T.userOffersLastFetchedAtDate = Date.now()
+                    null == t && null == n && null == i && S(), null != t ? (f.userTrialOffers[t.trial_id] = t, f.userDiscountOffers = {}) : null != n ? (f.userDiscountOffers[n.discount_id] = n, f.userTrialOffers = {}) : null != i && (f.userDiscountOffers[i.discount_id] = i, f.userTrialOffers = {}), f.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_ANNUAL_USER_OFFER_FETCH_SUCCESS: function(e) {
                     let {
                         userDiscountOffer: t
                     } = e;
-                    delete T.userDiscountOffers[c.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete T.userDiscountOffers[c.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], null != t && (T.userDiscountOffers[t.discount_id] = t), T.userAnnualOfferLastFetchedAtDate = Date.now()
+                    delete f.userDiscountOffers[E.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete f.userDiscountOffers[E.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], null != t && (f.userDiscountOffers[t.discount_id] = t), f.userAnnualOfferLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: function(e) {
                     let {
@@ -249075,15 +249193,18 @@
                         userDiscount: n,
                         userDiscountOffer: i
                     } = e;
-                    null != t ? T.userTrialOffers[t.trial_id] = t : T.userTrialOffers = {}, null != n ? T.userDiscountOffers[n.discount_id] = n : null != i ? T.userDiscountOffers[i.discount_id] = i : T.userDiscountOffers = {}, T.userOffersLastFetchedAtDate = Date.now()
+                    null != t ? f.userTrialOffers[t.trial_id] = t : f.userTrialOffers = {}, null != n ? f.userDiscountOffers[n.discount_id] = n : null != i ? f.userDiscountOffers[i.discount_id] = i : f.userDiscountOffers = {}, f.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_OFFER_FETCH_FAIL: function() {
-                    f(), T.userOffersLastFetchedAtDate = Date.now()
+                    S(), f.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_ANNUAL_USER_OFFER_FETCH_FAIL: function() {
-                    delete T.userDiscountOffers[c.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete T.userDiscountOffers[c.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], T.userAnnualOfferLastFetchedAtDate = Date.now()
+                    delete f.userDiscountOffers[E.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete f.userDiscountOffers[E.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], f.userAnnualOfferLastFetchedAtDate = Date.now()
                 },
-                LOGOUT: f
+                BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: m,
+                BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: m,
+                BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: m,
+                LOGOUT: S
             })
         },
         983620: function(e, t, n) {
@@ -252356,7 +252477,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "21870a7c1dbde3a9d364aa9870f456d6cc023132"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "685814fa7e70f0e86a6052a89e73d6d0c171736e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281496,7 +281617,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299248"
+                                build_number: "299260"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288805,7 +288926,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299248", "299248"), 10);
+                let s = parseInt((n = "299260", "299260"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316710,4 +316831,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.1683968275096a9d5546.js.map
+//# sourceMappingURL=27519.6308814181f52971f0c6.js.map
