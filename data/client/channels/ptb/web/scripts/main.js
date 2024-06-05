@@ -37131,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299067", ", Version Hash: ").concat("625a06285087560c7fea6a3ca1f13a9f8499d01a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299073", ", Version Hash: ").concat("206aa43be144c3f1dccb4ac7028bb30100867bfc")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -61480,6 +61480,9 @@
                             duration_paused: I(this.paused.totalDuration() / 1e3),
                             duration_zero_receivers: I(this.zeroReceivers.totalDuration() / 1e3),
                             duration_video_stopped: I(this.videoStopped.totalDuration() / 1e3),
+                            duration_hq_simulcast_stream_encoded: I(this.hqSimulcastStreamEncoded.totalDuration() / 1e3),
+                            duration_lq_simulcast_stream_encoded: I(this.lqSimulcastStreamEncoded.totalDuration() / 1e3),
+                            duration_both_simulcast_streams_encoded: I(this.bothSimulcastStreamsEncoded.totalDuration() / 1e3),
                             fps_percentile1: s.percentiles[1],
                             fps_percentile5: s.percentiles[5],
                             fps_percentile10: s.percentiles[10],
@@ -61580,13 +61583,13 @@
                             receivers: d
                         }), t.rtp.outbound.filter(e => "video" === e.type).forEach(t => {
                             if (null != t) {
-                                var i, r, s, a, o, u, d, E, I;
-                                let T = t.ssrc,
-                                    f = this.outboundStats[T];
-                                if (null == f && (console.warn("Unknown outbound video stream with SSRC: ".concat(T)), f = new c.OutboundStats(this.timestampProducer), this.outboundStats[T] = f), null == f.timeToFirstFrame && (t.framesEncoded > 0 || (null !== (i = t.frameRateInput) && void 0 !== i ? i : 0) > 0) && (f.timeToFirstFrame = Math.max(0, e - f.startTime)), !this.videoStopped.value) {
-                                    f.appendAndIncrementStats(c.RawVideoStats.parseOutboundStats(t, e)), f.encoderCodec !== c.CodecTypes.UNKNOWN && _.add(f.encoderCodec);
-                                    let i = null === (r = n.find(e => e.ssrc === T)) || void 0 === r ? void 0 : r.maxBitrate;
-                                    f.appendTargetRates(null === (s = n.find(e => e.ssrc === T)) || void 0 === s ? void 0 : s.maxFrameRate, null !== (o = t.bitrateTarget) && void 0 !== o ? o : Math.min(null !== (a = l.availableOutgoingBitrate) && void 0 !== a ? a : 0, null != i ? i : 0), i), f.averageEncodeTime = null !== (u = t.averageEncodeTime) && void 0 !== u ? u : 0, f.framesDroppedRateLimiter = null !== (d = t.framesDroppedRateLimiter) && void 0 !== d ? d : null, f.framesDroppedEncoderQueue = null !== (E = t.framesDroppedEncoderQueue) && void 0 !== E ? E : null, f.framesDroppedCongestionWindow = null !== (I = t.framesDroppedCongestionWindow) && void 0 !== I ? I : null
+                                var i, r, s, a, o, u, d, E, I, T, f;
+                                let S = t.ssrc,
+                                    h = this.outboundStats[S];
+                                if (null == h && (console.warn("Unknown outbound video stream with SSRC: ".concat(S)), h = new c.OutboundStats(this.timestampProducer), this.outboundStats[S] = h), null == h.timeToFirstFrame && (t.framesEncoded > 0 || (null !== (i = t.frameRateInput) && void 0 !== i ? i : 0) > 0) && (h.timeToFirstFrame = Math.max(0, e - h.startTime)), !this.videoStopped.value) {
+                                    h.appendAndIncrementStats(c.RawVideoStats.parseOutboundStats(t, e)), h.encoderCodec !== c.CodecTypes.UNKNOWN && _.add(h.encoderCodec);
+                                    let i = null === (r = n.find(e => e.ssrc === S)) || void 0 === r ? void 0 : r.maxBitrate;
+                                    h.appendTargetRates(null === (s = n.find(e => e.ssrc === S)) || void 0 === s ? void 0 : s.maxFrameRate, null !== (o = t.bitrateTarget) && void 0 !== o ? o : Math.min(null !== (a = l.availableOutgoingBitrate) && void 0 !== a ? a : 0, null != i ? i : 0), i), h.averageEncodeTime = null !== (u = t.averageEncodeTime) && void 0 !== u ? u : 0, h.framesDroppedRateLimiter = null !== (d = t.framesDroppedRateLimiter) && void 0 !== d ? d : null, h.framesDroppedEncoderQueue = null !== (E = t.framesDroppedEncoderQueue) && void 0 !== E ? E : null, h.framesDroppedCongestionWindow = null !== (I = t.framesDroppedCongestionWindow) && void 0 !== I ? I : null, this.hqSimulcastStreamEncoded.value = null !== (T = t.hqSimulcastStreamEncoded) && void 0 !== T && T, this.lqSimulcastStreamEncoded.value = null !== (f = t.lqSimulcastStreamEncoded) && void 0 !== f && f, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value
                                 }
                             }
                         }), !this.paused.value && s().forEach(t.rtp.inbound, (t, n) => {
@@ -61612,13 +61615,13 @@
                     this.videoEffectDuration.value = (null == t ? void 0 : t.type) === "video" && null != t.filter
                 }
                 constructor(e, t = l.TimeStampProducer) {
-                    super(), E(this, "connection", void 0), E(this, "timestampProducer", void 0), E(this, "networkQuality", void 0), E(this, "paused", void 0), E(this, "pausedCount", void 0), E(this, "zeroReceivers", void 0), E(this, "videoStopped", void 0), E(this, "videoEffectDuration", void 0), E(this, "outboundStats", void 0), E(this, "inboundStats", void 0), E(this, "streamStart", void 0), E(this, "streamEnd", void 0), E(this, "symmetricCodecUpdates", void 0), E(this, "asymmetricCodecUpdates", void 0), E(this, "statCollectionPausedUsers", void 0), E(this, "sampleStats", void 0), this.connection = e, this.timestampProducer = t, this.networkQuality = new _.default, this.pausedCount = 0, this.outboundStats = {}, this.inboundStats = {}, this.symmetricCodecUpdates = 0, this.asymmetricCodecUpdates = 0, this.statCollectionPausedUsers = new Set, this.sampleStats = e => {
+                    super(), E(this, "connection", void 0), E(this, "timestampProducer", void 0), E(this, "networkQuality", void 0), E(this, "paused", void 0), E(this, "pausedCount", void 0), E(this, "zeroReceivers", void 0), E(this, "videoStopped", void 0), E(this, "videoEffectDuration", void 0), E(this, "hqSimulcastStreamEncoded", void 0), E(this, "lqSimulcastStreamEncoded", void 0), E(this, "bothSimulcastStreamsEncoded", void 0), E(this, "outboundStats", void 0), E(this, "inboundStats", void 0), E(this, "streamStart", void 0), E(this, "streamEnd", void 0), E(this, "symmetricCodecUpdates", void 0), E(this, "asymmetricCodecUpdates", void 0), E(this, "statCollectionPausedUsers", void 0), E(this, "sampleStats", void 0), this.connection = e, this.timestampProducer = t, this.networkQuality = new _.default, this.pausedCount = 0, this.outboundStats = {}, this.inboundStats = {}, this.symmetricCodecUpdates = 0, this.asymmetricCodecUpdates = 0, this.statCollectionPausedUsers = new Set, this.sampleStats = e => {
                         if (null == e) return;
                         let t = this.timestampProducer.now();
                         if (this.networkQuality.incrementNetworkStats(t), this.updateSystemResourceStats(), this.updateVideoEffectStats(e), null == e) return;
                         let n = this.connection.getStreamParameters();
                         this.receivedStats(t, e, n)
-                    }, this.paused = new T(!1, t), this.zeroReceivers = new T(!1, t), this.videoStopped = new T(!1, t), this.videoEffectDuration = new T(!1, t)
+                    }, this.paused = new T(!1, t), this.zeroReceivers = new T(!1, t), this.videoStopped = new T(!1, t), this.videoEffectDuration = new T(!1, t), this.hqSimulcastStreamEncoded = new T(!1, t), this.lqSimulcastStreamEncoded = new T(!1, t), this.bothSimulcastStreamsEncoded = new T(!1, t)
                 }
             }
         },
@@ -88838,8 +88841,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299067", "299067"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299067")), t = 0), t
+                let t = parseInt((e = "299073", "299073"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299073")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116996,8 +116999,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299067",
-                    versionHash: "625a06285087560c7fea6a3ca1f13a9f8499d01a"
+                    buildNumber: "299073",
+                    versionHash: "206aa43be144c3f1dccb4ac7028bb30100867bfc"
                 }
             }
             n.r(t), n.d(t, {
@@ -174585,8 +174588,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717609356005",
-                                    build_number: "299067"
+                                    built_at: "1717609533204",
+                                    build_number: "299073"
                                 }
                             },
                             retries: 1
@@ -252197,7 +252200,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "625a06285087560c7fea6a3ca1f13a9f8499d01a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "206aa43be144c3f1dccb4ac7028bb30100867bfc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281339,7 +281342,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299067"
+                                build_number: "299073"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288648,7 +288651,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299067", "299067"), 10);
+                let s = parseInt((n = "299073", "299073"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304168,7 +304171,9 @@
                     encryptFailureCount: e.encryptFailureCount,
                     encryptDuration: e.encryptDuration,
                     encryptAttempts: e.encryptAttempts,
-                    encryptMaxAttempts: e.encryptMaxAttempts
+                    encryptMaxAttempts: e.encryptMaxAttempts,
+                    hqSimulcastStreamEncoded: e.hqSimulcastStreamEncoded,
+                    lqSimulcastStreamEncoded: e.lqSimulcastStreamEncoded
                 }
             }
 
@@ -316515,4 +316520,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.41f2203b40a432306a9f.js.map
+//# sourceMappingURL=27519.21b28ea1a12d9a5fb9d6.js.map
