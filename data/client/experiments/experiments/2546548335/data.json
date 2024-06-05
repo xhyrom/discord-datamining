@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-06_no_payment_info_trial",
+    "label": "No Payment Info Trial",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Bypass collecting payment info"
+    ],
+    "hash": 2546548335,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-07_checkout_optimization_browser_autofill",
+    "label": "Checkout Optimization Browser Autofill",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 3608176496,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

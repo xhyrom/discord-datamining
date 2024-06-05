@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-02_multi_month_plans",
+    "label": "Multi Month Plans",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: 3 and 6 Month Plans",
+      "Treatment 2: 3 Month Plan Only"
+    ],
+    "hash": 2046063445,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "newPlans"
+    ]
+  }
+}

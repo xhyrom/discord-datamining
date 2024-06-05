@@ -36,6 +36,7 @@ id,hash,label
 2022-02_guild_audit_log_guild,1412337990,Guild Audit Log - Guild Feature Flag
 2022-02_guild_audit_log_user,2802647294,Guild Audit Log - User Feature Flag
 2022-02_guild_folder_mute,3351473888,Guild Folder Mute
+2022-02_multi_month_plans,2046063445,Multi Month Plans
 2022-03_block_russian_purchases,3011681066,Block purchases based on country
 2022-03_block_russian_purchases_desktop,1814483290,Block purchases based on country (desktop specific flags)
 2022-03_guild_access_rate_insight_experiment,1899119674,Guild Access Rate Insight Experiment
@@ -47,6 +48,7 @@ id,hash,label
 2022-06_free_sticker_slots_design_updates,258580919,Free Sticker Slots Design Updates
 2022-06_home_refresh_button,853790804,Show refresh button
 2022-06_native_mobile_role_subscription_management,1034661306,Mobile Guild Role Subscription Management
+2022-06_no_payment_info_trial,2546548335,No Payment Info Trial
 2022-07_channel_highlights,4169687140,Channel Highlights
 2022-07_file_upload_limit,828251710,File Upload Limit Increase
 2022-07_guild_role_subscriptions_variable_max_tiers,179711638,Guild Role Subscription Max Tiers
@@ -241,6 +243,7 @@ id,hash,label
 2023-07_autocomplete_emojis_nitro_upsell,1322503781,Autocomplete Emojis Nitro Upsell
 2023-07_automated_gift_code_message,3647881612,Automatically send gift code message in direct message to gift recipient
 2023-07_bogo_marketing_materials_experiment,1350945791,BOGO Marketing Materials
+2023-07_checkout_optimization_browser_autofill,3608176496,Checkout Optimization Browser Autofill
 2023-07_checkout_prevent_accidental_modal_dismissal,3215170208,Checkout Prevent Accidental Modal Dismissal
 2023-07_clyde_ai_proactive_guilds,3041932109,Proactive Clyde
 2023-07_dm_call_bitrate,4248455588,DM/GDM Call Bitrate Experiment
@@ -420,6 +423,7 @@ id,hash,label
 2023-11_xbox_game_invites,4094597383,Xbox Game Invites Experiment
 2023-12_2023_eoy_ringtone,654872987,EOY Ringtone 2023
 2023-12_attachment_link_refresh,766962839,Attachment Link Refresh User Experiment
+2023-12_collectibles_gifting_dm_entrypoint,2857042185,Collectibles Gifting From DM's
 2023-12_collectibles_shop_marketing,488433301,Collectibles Shop Marketing Variations
 2023-12_eslatam_launch,518502765,ES LATAM Launch
 2023-12_friend_suggestion_seen_state,1821275338,Friend Suggestions Seen State
@@ -589,6 +593,7 @@ id,hash,label
 2024-05_clans_valorant_pilot,3272697562,Clans Valorant Pilot
 2024-05_clans_valorant_prepilot,1397046415,Clans Valorant Prepilot
 2024-05_clientside_recently_online_desktop,4231847915,Recently Online Clientside Desktop
+2024-05_collectibles_hover_preview,1501181338,Collectibles Hover Preview Experiment
 2024-05_collectibles_shop_bundle,2635331203,Collectibles Shop Bundle
 2024-05_color_mixed_desktop_client_themes,3262350988,Better Desktop Client Themes
 2024-05_content_inventory_games_rich_presence,878040044,Content Inventory: Rich Presence for Games
