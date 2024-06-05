@@ -37131,7 +37131,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("298999", ", Version Hash: ").concat("fcfa2b01c0f2946097c3bebcde10082da03c3c1a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299001", ", Version Hash: ").concat("dc79e957d5afca3f10169790f354ea81f337ee4f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64074,7 +64074,7 @@
                             "X-Captcha-Key": n
                         };
                         null != i && (r["X-Captcha-Rqtoken"] = i), t(r)
-                    }).catch(i), !0) : 401 === e.statusCode && (null === (l = e.body) || void 0 === l ? void 0 : l.code) === c.AbortCodes.MFA_REQUIRED && (null === (u = e.body) || void 0 === u ? void 0 : u.mfa) ? (Promise.all([n.e("99387"), n.e("52030"), n.e("85281")]).then(n.bind(n, "24031")).then(n => {
+                    }).catch(i), !0) : 401 === e.statusCode && (null === (l = e.body) || void 0 === l ? void 0 : l.code) === c.AbortCodes.MFA_REQUIRED && (null === (u = e.body) || void 0 === u ? void 0 : u.mfa) ? (Promise.all([n.e("99387"), n.e("52030"), n.e("62344")]).then(n.bind(n, "24031")).then(n => {
                         let {
                             openMFAModal: r
                         } = n;
@@ -88838,8 +88838,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "298999", "298999"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("298999")), t = 0), t
+                let t = parseInt((e = "299001", "299001"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299001")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -95548,7 +95548,7 @@
                             l(!1), (0, I.openModalLazy)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("90508"), n.e("41947"), n.e("53289")]).then(n.bind(n, "273602"));
+                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("41947"), n.e("29042"), n.e("80374")]).then(n.bind(n, "273602"));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
                                     threadId: a,
@@ -103140,7 +103140,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("20727")]).then(n.bind(n, "298237"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("20727"), n.e("5828")]).then(n.bind(n, "298237"));
                     return t => (0, i.jsx)(e, {
                         ...t
                     })
@@ -103157,7 +103157,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("99387"), n.e("69495")]).then(n.bind(n, "324239"));
+                    } = await Promise.all([n.e("99387"), n.e("31093")]).then(n.bind(n, "324239"));
                     return n => (0, i.jsx)(t, {
                         claimRequired: e,
                         ...n
@@ -116996,8 +116996,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "298999",
-                    versionHash: "fcfa2b01c0f2946097c3bebcde10082da03c3c1a"
+                    buildNumber: "299001",
+                    versionHash: "dc79e957d5afca3f10169790f354ea81f337ee4f"
                 }
             }
             n.r(t), n.d(t, {
@@ -117531,7 +117531,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("40326"), n.e("30386"), n.e("80451"), n.e("52110"), n.e("90508"), n.e("93521"), n.e("45074"), n.e("36439"), n.e("30634"), n.e("23124")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("22578"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("31605"), n.e("32776"), n.e("95900"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("33053"), n.e("77172"), n.e("95393"), n.e("88390"), n.e("49146"), n.e("4970"), n.e("81539"), n.e("8739"), n.e("58286"), n.e("86977"), n.e("18101"), n.e("3084"), n.e("30243"), n.e("68136"), n.e("14767"), n.e("75837"), n.e("89585"), n.e("69563"), n.e("41947"), n.e("4934"), n.e("29042"), n.e("76540"), n.e("7620"), n.e("99365"), n.e("87624"), n.e("64403"), n.e("52000"), n.e("80603"), n.e("3682"), n.e("43331"), n.e("18824"), n.e("88331"), n.e("49508"), n.e("5528"), n.e("9737"), n.e("34446"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("66153"), n.e("54807"), n.e("40990")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -141095,7 +141095,7 @@
                     1 === y ? e = M.slice(0, 1) : null != h && (e = M.slice(0, h)), await (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("15972"), n.e("38674"), n.e("54167"), n.e("8016"), n.e("22646"), n.e("30419"), n.e("53889")]).then(n.bind(n, "760558"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("8016"), n.e("22646"), n.e("30419"), n.e("75013")]).then(n.bind(n, "760558"));
                         return n => {
                             let {
                                 onClose: r,
@@ -142692,7 +142692,7 @@
                 await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("38674"), n.e("43906"), n.e("54167"), n.e("8016"), n.e("22646"), n.e("20533"), n.e("32186")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("43906"), n.e("8016"), n.e("22646"), n.e("20533"), n.e("38375")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -155179,7 +155179,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("56630"), n.e("33053"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("75837"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("69563"), n.e("43643"), n.e("92714"), n.e("92557"), n.e("36789"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("56630"), n.e("33053"), n.e("49146"), n.e("4970"), n.e("3084"), n.e("75837"), n.e("75475"), n.e("85093"), n.e("69563"), n.e("29042"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("99365"), n.e("64403"), n.e("43643"), n.e("90144"), n.e("3682"), n.e("92557"), n.e("63401"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -167389,7 +167389,7 @@
                     null != l && (0, r.openContextMenuLazy)(a, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("12435"), n.e("7717"), n.e("303")]).then(n.bind(n, "757387"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             user: e,
@@ -173952,7 +173952,7 @@
                                                     (0, _.openContextMenuLazy)(e, async () => {
                                                         let {
                                                             default: e
-                                                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
+                                                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("12435"), n.e("7717"), n.e("303")]).then(n.bind(n, "757387"));
                                                         return n => (0, i.jsx)(e, {
                                                             ...n,
                                                             user: r,
@@ -174065,7 +174065,7 @@
                     null != y && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("12435"), n.e("7717"), n.e("303")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             user: M,
@@ -174585,8 +174585,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717596994530",
-                                    build_number: "298999"
+                                    built_at: "1717597506914",
+                                    build_number: "299001"
                                 }
                             },
                             retries: 1
@@ -179448,7 +179448,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("6416"), n.e("38674"), n.e("43906"), n.e("31605"), n.e("54167"), n.e("57878"), n.e("32776"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("31605"), n.e("32776"), n.e("95900"), n.e("57878"), n.e("8016"), n.e("68136"), n.e("78373"), n.e("91505")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -201348,7 +201348,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("99387"), n.e("38779"), n.e("24753")]).then(n.bind(n, "581355"));
+                    } = await Promise.all([n.e("99387"), n.e("14767"), n.e("24753")]).then(n.bind(n, "581355"));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         channel: e
@@ -222285,7 +222285,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("49368"), n.e("74112"), n.e("61366")]).then(n.bind(n, "598576"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("49368"), n.e("74112"), n.e("18290")]).then(n.bind(n, "598576"));
                     return n => (0, i.jsx)(t, {
                         analyticsLocation: e,
                         ...n
@@ -252197,7 +252197,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fcfa2b01c0f2946097c3bebcde10082da03c3c1a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "dc79e957d5afca3f10169790f354ea81f337ee4f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281339,7 +281339,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "298999"
+                                build_number: "299001"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288648,7 +288648,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "298999", "298999"), 10);
+                let s = parseInt((n = "299001", "299001"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316515,4 +316515,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.25066f81c38793d00911.js.map
+//# sourceMappingURL=27519.faff4cb73cb4ece7ffd1.js.map
