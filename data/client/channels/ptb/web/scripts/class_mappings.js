@@ -6472,6 +6472,7 @@
                 primaryActionPopoutDivider: "primaryActionPopoutDivider_d4d6bc",
                 primaryActionPopoutMessageCloseIcon: "primaryActionPopoutMessageCloseIcon__4400d",
                 primaryButton: "primaryButton__9dc64",
+                replyInputWrapper: "replyInputWrapper_e0889b",
                 secondaryButton: "secondaryButton_fc9605",
                 secondaryText: "secondaryText__7a32f",
                 shareToChannelButton: "shareToChannelButton_ee0e50",

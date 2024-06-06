@@ -25585,6 +25585,10 @@ img.thumbnail__18ece {
     gap: 8px
 }
 
+.replyInputWrapper_e0889b {
+    flex-grow: 1
+}
+
 .primaryActionPopoutMessageCloseIcon__4400d {
     display: flex;
     justify-content: center;
@@ -142312,4 +142316,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6e833d20b1ad0d18e646.css.map*/
+/*# sourceMappingURL=99387.02c7fc6154ffde2e48e3.css.map*/
