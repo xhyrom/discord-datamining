@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299533", ", Version Hash: ").concat("d841991cbbded0853fc5fec30e17e0219ec3d5bf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299540", ", Version Hash: ").concat("d3c316194dee45ff1bc7d98633d8a1d6fd5766b1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -78471,7 +78471,7 @@
                         computedPermissions: C,
                         hasBaseAccessPermissions: R,
                         hasSendMessagesPermission: g
-                    } = A(E);
+                    } = A(E, e instanceof u.ChannelRecordBase && e.isThread());
                 return {
                     context: E,
                     userId: S,
@@ -78507,40 +78507,40 @@
                     S = (0, s.useStateFromStores)([o.default], () => o.default.isViewingRoles(r));
                 return i.useMemo(() => {
                     let {
-                        computedPermissions: e,
-                        hasBaseAccessPermissions: i,
-                        hasSendMessagesPermission: r
-                    } = A(n);
+                        computedPermissions: i,
+                        hasBaseAccessPermissions: r,
+                        hasSendMessagesPermission: s
+                    } = A(n, e instanceof u.ChannelRecordBase && e.isThread());
                     return {
                         context: n,
                         userId: E,
                         roleIds: f,
                         commandType: t,
                         isImpersonating: S,
-                        computedPermissions: e,
-                        hasBaseAccessPermissions: i,
-                        hasSendMessagesPermission: r,
+                        computedPermissions: i,
+                        hasBaseAccessPermissions: r,
+                        hasSendMessagesPermission: s,
                         allowNsfw: h(n, T, a)
                     }
-                }, [t, n, S, f, E, T, a])
+                }, [t, n, S, f, E, T, a, e])
             }
 
             function h(e, t, n) {
                 return !!t && (!(e instanceof u.ChannelRecordBase) || (null != e.guild_id ? e.nsfw : n))
             }
 
-            function A(e) {
-                let t;
+            function A(e, t) {
+                let n, i;
                 if (e instanceof u.ChannelRecordBase && e.isPrivate()) return {
                     computedPermissions: r.deserialize(0),
                     hasBaseAccessPermissions: !0,
                     hasSendMessagesPermission: !0
                 };
-                let n = E.default.computePermissions(e);
-                return t = !!r.has(n, T.Permissions.ADMINISTRATOR) || (e instanceof u.ChannelRecordBase ? r.has(n, T.Permissions.VIEW_CHANNEL) && r.has(n, T.Permissions.USE_APPLICATION_COMMANDS) : r.has(n, T.Permissions.VIEW_CHANNEL)), {
-                    computedPermissions: n,
-                    hasBaseAccessPermissions: t,
-                    hasSendMessagesPermission: r.has(n, T.Permissions.SEND_MESSAGES)
+                let s = E.default.computePermissions(e);
+                return r.has(s, T.Permissions.ADMINISTRATOR) ? (n = !0, i = !0) : e instanceof u.ChannelRecordBase ? (n = r.has(s, T.Permissions.VIEW_CHANNEL) && r.has(s, T.Permissions.USE_APPLICATION_COMMANDS), i = t ? r.has(s, T.Permissions.SEND_MESSAGES_IN_THREADS) : r.has(s, T.Permissions.SEND_MESSAGES)) : (n = r.has(s, T.Permissions.VIEW_CHANNEL), i = !0), {
+                    computedPermissions: s,
+                    hasBaseAccessPermissions: n,
+                    hasSendMessagesPermission: i
                 }
             }
 
@@ -88881,8 +88881,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299533", "299533"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299533")), t = 0), t
+                let t = parseInt((e = "299540", "299540"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299540")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117047,8 +117047,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299533",
-                    versionHash: "d841991cbbded0853fc5fec30e17e0219ec3d5bf"
+                    buildNumber: "299540",
+                    versionHash: "d3c316194dee45ff1bc7d98633d8a1d6fd5766b1"
                 }
             }
             n.r(t), n.d(t, {
@@ -174663,8 +174663,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717692095598",
-                                    build_number: "299533"
+                                    built_at: "1717692628354",
+                                    build_number: "299540"
                                 }
                             },
                             retries: 1
@@ -252579,7 +252579,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d841991cbbded0853fc5fec30e17e0219ec3d5bf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d3c316194dee45ff1bc7d98633d8a1d6fd5766b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281783,7 +281783,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299533"
+                                build_number: "299540"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289092,7 +289092,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299533", "299533"), 10);
+                let s = parseInt((n = "299540", "299540"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317003,4 +317003,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.4191a6f422a67b7c3a2c.js.map
+//# sourceMappingURL=27519.00ce7fb302469c7b5870.js.map
