@@ -79,7 +79,7 @@
     </li>
 </ul>
 <h3 id="h_01HB97XFN09QYQVV0VRPQGV39K">Can I keep using my existing payment system?</h3>
-<p>Yes. You can continue using existing payment systems, such as Patreon or Stripe integrations on external websites. We'll provide an update to our policies soon to clarify how we’ll treat the promotion of third-party payment options on Discord as we continue to expand our native monetization features. Discord is committed to ensuring a great, safe, and secure premium experience for all of our users and developers.</p>
+<p>Yes. You can continue using existing payment systems, such as Patreon or Stripe integrations on external websites.</p>
 <h2 id="h_01HB8WP0GB6ZFV8TQ18SZ77K11">Step 3 - Payout</h2>
 <p>Once an app has made its first $100 it will become eligible for payout. A review will be conducted and if everything looks good, your team will be able to receive payouts.</p>
 <p>For more information please visit the <a href="https://support-dev.discord.com/hc/en-us/articles/17299902720919" target="_blank" rel="noopener noreferrer">Premium Apps Payouts</a> article.</p>
