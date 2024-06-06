@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299762", ", Version Hash: ").concat("ee41ea48983c7588c92ba557d208f9cbba6c1c9a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299766", ", Version Hash: ").concat("ab0216258fa9a0e26f7fd87960d785ce09dd51e3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55889,6 +55889,7 @@
                 MEMBER_LIST_CONTENT_POPOUT_USER_LISTENED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} listened to",
                 MEMBER_LIST_CONTENT_POPOUT_USER_LISTENING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listening to",
                 MEMBER_LIST_CONTENT_POPOUT_BLOCKED_USER_WARNING: "Users you've blocked or muted are in this voice channel",
+                MEMBER_LIST_CONTENT_POPOUT_PREVIEW_VOICE_CHANNEL: "Preview voice channel without joining",
                 CONTENT_INVENTORY_REACTION_USER_PLAYING: "{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}} playing **{gameName}**",
                 CONTENT_INVENTORY_REACTION_USER_PLAYED: "{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}} played **{gameName}**",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
@@ -82136,9 +82137,7 @@
                 } = e, [T, S] = r.useState(""), [h, N] = r.useState((0, _.toRichValue)("")), p = () => {
                     S(""), N((0, _.toRichValue)(""))
                 }, O = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT, C = r.useRef(null);
-                return o && (O.emojis = {
-                    button: !0
-                }), (0, i.jsx)(c.default, {
+                return (0, i.jsx)(c.default, {
                     ref: C,
                     placeholder: t,
                     className: a()(A.replyInput, I),
@@ -82149,7 +82148,12 @@
                     onChange: (e, t, n) => {
                         S(t), N(n)
                     },
-                    type: O,
+                    type: o ? {
+                        ...O,
+                        emojis: {
+                            button: !0
+                        }
+                    } : O,
                     textValue: T,
                     richValue: h,
                     onSubmit: e => {
@@ -89023,8 +89027,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299762", "299762"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299762")), t = 0), t
+                let t = parseInt((e = "299766", "299766"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299766")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117200,8 +117204,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299762",
-                    versionHash: "ee41ea48983c7588c92ba557d208f9cbba6c1c9a"
+                    buildNumber: "299766",
+                    versionHash: "ab0216258fa9a0e26f7fd87960d785ce09dd51e3"
                 }
             }
             n.r(t), n.d(t, {
@@ -174902,8 +174906,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717709575879",
-                                    build_number: "299762"
+                                    built_at: "1717709890685",
+                                    build_number: "299766"
                                 }
                             },
                             retries: 1
@@ -195196,13 +195200,23 @@
                 id: "2024-05_clientside_recently_online_desktop",
                 label: "Recently Online Clientside Desktop",
                 defaultConfig: {
+                    allowPrioritySubscriptions: !1,
                     isRecentlyOnlineEnabled: !1,
                     maxRecentMs: -1
                 },
                 treatments: [{
+                    id: 0,
+                    label: "Control",
+                    config: {
+                        allowPrioritySubscriptions: !0,
+                        isRecentlyOnlineEnabled: !1,
+                        maxRecentMs: -1
+                    }
+                }, {
                     id: 1,
                     label: "Enabled: 1h",
                     config: {
+                        allowPrioritySubscriptions: !0,
                         isRecentlyOnlineEnabled: !0,
                         maxRecentMs: 36e5
                     }
@@ -195210,6 +195224,7 @@
                     id: 2,
                     label: "Enabled: 4h",
                     config: {
+                        allowPrioritySubscriptions: !0,
                         isRecentlyOnlineEnabled: !0,
                         maxRecentMs: 144e5
                     }
@@ -195217,6 +195232,7 @@
                     id: 3,
                     label: "Enabled: 48h",
                     config: {
+                        allowPrioritySubscriptions: !0,
                         isRecentlyOnlineEnabled: !0,
                         maxRecentMs: 1728e5
                     }
@@ -195229,39 +195245,38 @@
             n.r(t), n("653041");
             var i, r, s, a, o = n("442837"),
                 l = n("570140"),
-                u = n("353926"),
-                d = n("650774"),
-                _ = n("771845");
-            let c = [];
+                u = n("650774"),
+                d = n("771845");
+            let _ = [];
 
-            function E() {
-                c = [];
-                let e = _.default.getFlattenedGuildIds();
+            function c() {
+                _ = [];
+                let e = d.default.getFlattenedGuildIds();
                 for (let t = 0; t < e.length; t++) {
                     let n = e[t],
-                        i = d.default.getMemberCount(n);
-                    if (null != i && i >= 2 && i <= 95 && (c.push(n), c.length >= 5)) return
+                        i = u.default.getMemberCount(n);
+                    if (null != i && i >= 2 && i <= 95 && (_.push(n), _.length >= 5)) return
                 }
             }
-            class I extends(i = o.default.Store) {
+            class E extends(i = o.default.Store) {
                 initialize() {
-                    this.syncWith([d.default, _.default, u.default], E), E()
+                    this.syncWith([u.default, d.default], c), c()
                 }
                 getPriorityGuilds() {
-                    return c
+                    return _
                 }
             }
-            a = "RecentlyOnlineExperimentPriorityGuildsStore", (s = "displayName") in(r = I) ? Object.defineProperty(r, s, {
+            a = "RecentlyOnlineExperimentPriorityGuildsStore", (s = "displayName") in(r = E) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new I(l.default, {})
+            }) : r[s] = a, t.default = new E(l.default, {})
         },
         653733: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                isGuildEligibleForRecentlyOnlineExperiment: function() {
+                getGuildEligibilityForRecentlyOnlineExperiment: function() {
                     return a
                 }
             });
@@ -195270,15 +195285,27 @@
                 s = n("480384");
 
             function a(e) {
-                if (!(0, i.isDesktop)()) return !1;
+                if (!(0, i.isDesktop)()) return {
+                    isRecentlyOnlineUIEnabled: !1,
+                    shouldPrioritizeSubscription: !1
+                };
                 let {
-                    isRecentlyOnlineEnabled: t
+                    allowPrioritySubscriptions: t,
+                    isRecentlyOnlineEnabled: n
                 } = r.default.getCurrentConfig({
                     location: "guild-subscriptions-store"
                 }, {
                     autoTrackExposure: !1
                 });
-                return !!t && s.default.getPriorityGuilds().includes(e)
+                if (!n && !t) return {
+                    isRecentlyOnlineUIEnabled: !1,
+                    shouldPrioritizeSubscription: !1
+                };
+                let a = s.default.getPriorityGuilds().includes(e);
+                return {
+                    isRecentlyOnlineUIEnabled: a && n,
+                    shouldPrioritizeSubscription: a && t
+                }
             }
         },
         509275: function(e, t, n) {
@@ -231703,50 +231730,53 @@
                 }
                 syncRecentlyOfflineList() {
                     var e, t;
-                    if (!(0, T.isGuildEligibleForRecentlyOnlineExperiment)(this.guildId) || this.rows.length >= 99) {
+                    let {
+                        isRecentlyOnlineUIEnabled: n
+                    } = (0, T.getGuildEligibilityForRecentlyOnlineExperiment)(this.guildId);
+                    if (!n || this.rows.length >= 99) {
                         this.experimentalGroups = [], this.experimentalRows = [];
                         return
                     }
-                    let n = [],
-                        i = [],
-                        r = this.rows.findIndex(e => null != e && "GROUP" === e.type && e.id === g.StatusTypes.OFFLINE);
-                    if (r < 0) {
+                    let i = [],
+                        r = [],
+                        s = this.rows.findIndex(e => null != e && "GROUP" === e.type && e.id === g.StatusTypes.OFFLINE);
+                    if (s < 0) {
                         this.experimentalGroups = [], this.experimentalRows = [];
                         return
                     }
-                    let s = [];
-                    for (let e = 0; e < r; e++) s.push(this.rows[e]);
-                    for (let e = r; e < this.rows.length; e++) {
+                    let a = [];
+                    for (let e = 0; e < s; e++) a.push(this.rows[e]);
+                    for (let e = s; e < this.rows.length; e++) {
                         let t = this.rows[e];
                         if (null != t && "MEMBER" === t.type) {
                             if (t.status === g.StatusTypes.OFFLINE && null != t.lastOnlineTimestamp) {
                                 let e = {
                                     ...t
                                 };
-                                n.push(e)
-                            } else(t.status === g.StatusTypes.OFFLINE || t.status === g.StatusTypes.INVISIBLE) && i.push({
+                                i.push(e)
+                            } else(t.status === g.StatusTypes.OFFLINE || t.status === g.StatusTypes.INVISIBLE) && r.push({
                                 ...t
                             })
                         }
                     }
-                    n.sort((e, t) => {
+                    i.sort((e, t) => {
                         var n, i;
                         return (null !== (n = t.lastOnlineTimestamp) && void 0 !== n ? n : 0) - (null !== (i = e.lastOnlineTimestamp) && void 0 !== i ? i : 0)
                     });
-                    let a = [...this.groups];
-                    if (a = a.filter(e => e.id !== g.StatusTypes.OFFLINE), n.length > 0) {
-                        let t = a[a.length - 1],
-                            i = null != t ? (null !== (e = t.index) && void 0 !== e ? e : 0) + t.count + 1 : 0,
-                            r = y(this.guildId, "recently-online", n.length, i);
-                        a.push(r), s.push(r), s.push(...n)
+                    let o = [...this.groups];
+                    if (o = o.filter(e => e.id !== g.StatusTypes.OFFLINE), i.length > 0) {
+                        let t = o[o.length - 1],
+                            n = null != t ? (null !== (e = t.index) && void 0 !== e ? e : 0) + t.count + 1 : 0,
+                            r = y(this.guildId, "recently-online", i.length, n);
+                        o.push(r), a.push(r), a.push(...i)
                     }
-                    if (i.length > 0) {
-                        let e = a[a.length - 1],
+                    if (r.length > 0) {
+                        let e = o[o.length - 1],
                             n = null != e ? (null !== (t = e.index) && void 0 !== t ? t : 0) + e.count + 1 : 0,
-                            r = y(this.guildId, g.StatusTypes.OFFLINE, i.length, n);
-                        a.push(r), s.push(r), s.push(...i)
+                            i = y(this.guildId, g.StatusTypes.OFFLINE, r.length, n);
+                        o.push(i), a.push(i), a.push(...r)
                     }
-                    this.experimentalGroups = a, this.experimentalRows = s
+                    this.experimentalGroups = o, this.experimentalRows = a
                 }
                 constructor(e, t) {
                     v(this, "guildId", void 0), v(this, "listId", void 0), v(this, "ownerId", void 0), v(this, "rows", []), v(this, "experimentalRows", []), v(this, "groups", []), v(this, "experimentalGroups", []), v(this, "members", {}), v(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
@@ -236511,7 +236541,7 @@
                 let n = {};
                 D.forEach(r => {
                     var s;
-                    r !== L.default.getGuildId() && r !== C.default.getGuildId() && r !== (null === (s = m.default.getChannel(g.default.getChannelId())) || void 0 === s ? void 0 : s.getGuildId()) && !(0, T.isGuildEligibleForRecentlyOnlineExperiment)(r) && (null == i || i.guildId !== r) && (D.clearWithoutFlushing(r, e), t && (n[r] = D.get(r)))
+                    r !== L.default.getGuildId() && r !== C.default.getGuildId() && r !== (null === (s = m.default.getChannel(g.default.getChannelId())) || void 0 === s ? void 0 : s.getGuildId()) && !(0, T.getGuildEligibilityForRecentlyOnlineExperiment)(r).shouldPrioritizeSubscription && (null == i || i.guildId !== r) && (D.clearWithoutFlushing(r, e), t && (n[r] = D.get(r)))
                 }), !u().isEmpty(n) && _.default.dispatch({
                     type: "GUILD_SUBSCRIPTIONS_FLUSH",
                     subscriptions: n
@@ -236535,7 +236565,7 @@
                     type: t
                 } = e;
                 "CONNECTION_OPEN" === t && M(!0, !1), Object.keys(O.default.getGuilds()).forEach(e => {
-                    (0, T.isGuildEligibleForRecentlyOnlineExperiment)(e) && P(e, h.EVERYONE_CHANNEL_ID, c.DEFAULT_RANGES)
+                    (0, T.getGuildEligibilityForRecentlyOnlineExperiment)(e).shouldPrioritizeSubscription && P(e, h.EVERYONE_CHANNEL_ID, c.DEFAULT_RANGES)
                 });
                 let n = L.default.getGuildId();
                 null != n && y(n, g.default.getChannelId(n));
@@ -252853,7 +252883,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ee41ea48983c7588c92ba557d208f9cbba6c1c9a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ab0216258fa9a0e26f7fd87960d785ce09dd51e3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282093,7 +282123,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299762"
+                                build_number: "299766"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289402,7 +289432,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299762", "299762"), 10);
+                let s = parseInt((n = "299766", "299766"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317347,4 +317377,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.4939521c7238d61f2d83.js.map
+//# sourceMappingURL=27519.c4c1dda7f5ff74593df2.js.map

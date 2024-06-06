@@ -25560,9 +25560,7 @@ img.thumbnail__18ece {
     gap: 8px
 }
 
-.shareToChannelButton_ee0e50 {
-    background: var(--input-background);
-    border-radius: var(--radius-round);
+.primaryActionPopoutMessageCloseIcon__4400d {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25572,8 +25570,16 @@ img.thumbnail__18ece {
     max-height: 40px
 }
 
-.shareToChannelButton_ee0e50:hover {
+.primaryActionPopoutMessageCloseIcon__4400d:hover {
     cursor: pointer
+}
+
+.shareToChannelButton_ee0e50 {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    cursor: pointer;
+    border-right: 2px solid var(--background-primary)
 }
 
 .attachment_fd624e {
@@ -25641,7 +25647,13 @@ img.thumbnail__18ece {
     display: flex;
     gap: 4px;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    cursor: pointer
+}
+
+.voiceChannelPopoutReactorChannel__15248:hover .voiceChannelName_f92f20 {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
 }
 
 .voiceChannelGuildIcon__1cbcc {
@@ -25668,12 +25680,21 @@ img.thumbnail__18ece {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px
+    gap: 4px;
+    min-width: 40px
+}
+
+.iconButton__4bb00 svg {
+    flex: none
 }
 
 .primaryActionPopoutActionButtons_c2b2b2 {
     display: flex;
     gap: 8px
+}
+
+.hiddenButRenderedInputField__27bb9 {
+    display: none
 }
 
 .theme-dark .secondaryButton_fc9605 .secondaryText__7a32f {
@@ -25687,6 +25708,7 @@ img.thumbnail__18ece {
 }
 
 .secondaryButton_fc9605 {
+    flex: 1;
     background-color: var(--background-accent)
 }
 
@@ -25699,11 +25721,8 @@ img.thumbnail__18ece {
     fill: var(--white)
 }
 
-.primaryActionPopoutMessageCloseIcon__4400d {
-    display: flex;
-    align-items: center;
-    margin: 0 -4px;
-    cursor: pointer
+.primaryButton__9dc64 {
+    flex: 1
 }
 
 .popoutStackedAvatar__339c9 {
@@ -63231,8 +63250,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -142839,4 +142858,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.05b4a08bd0a4bf705d94.css.map*/
+/*# sourceMappingURL=99387.703dc80a9be4f8570730.css.map*/
