@@ -1,4 +1,4 @@
-<p class="callout">We’re updating our Developer Terms of Service and Developer Policy, effective as of 8 July 2024. Please review the updated Terms below and Policy <a href="https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">here</span></a>. If you access or use the APIs on or after 8 July 2024, it means you agree to these updated Terms and Policy. Until then, the current Developer Terms of Service and Developer Policy will apply.</p>
+<p class="callout">We’re updating our Developer Terms of Service and Developer Policy, effective as of 8 July 2024. Please review the updated Terms below and <a href="https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy" target="_blank" rel="noopener noreferrer">Policy <span style="color: #1155cc;" data-darkreader-inline-color="">here</span></a>. If you access or use the APIs on or after 8 July 2024, it means you agree to these updated Terms and Policy. Until then, the current <a href="https://support-dev.discord.com/hc/en-us/articles/8562894815383#h_01HZPMRFV92CGTTS20AXEEC261" target="_blank" rel="noopener noreferrer">Developer Terms of Service</a> and <a href="https://support-dev.discord.com/hc/en-us/articles/8563934450327#h_01HZPPKCX5MBW9QQXT34ZZC9RB" target="_blank" rel="noopener noreferrer">Developer Policy</a> will apply.</p>
 <p> </p>
 <p id="h_01HZPTENNS9D9E78TVZM289XC9"><em>Effective date: July 8, 2024</em></p>
 <p id="h_01HZPTENNS5FMN52RRR5Y1PPPM"><em>Last updated: June 6, 2024</em></p>
@@ -162,8 +162,6 @@
 </ul>
 <ul>
     <li>“Approved Addendum” means the International Data Transfer Addendum to the Clauses, Version B1.0, issued by the UK Information Commissioner’s Office and laid before the Parliament in accordance with s119A of the Data Protection Act 2018, in force 21 March 2022, as may be amended by the Information Commissioner.</li>
-</ul>
-<ul>
     <li>“Brand Features” has the meaning set forth in Section 8(a).</li>
     <li>“Clauses” has the meaning set forth in Section 11(a).</li>
     <li>“Discord EU Data” has the meaning set forth in Section 11(a).</li>
@@ -174,8 +172,12 @@
     <li>“Service Provider” means a person or entity you use to provide you services to develop or operate your Application.</li>
     <li>“UK Data Transfer” has the meaning set forth in Section 11(b).</li>
 </ul>
-<h2 id="h_01HZPTF50WPSNQHQW0ARXX3JM8" class="p1"> </h2>
-<h2 id="h_01HZPMRFV92CGTTS20AXEEC261" class="p1">2022 Discord Developer Terms of Service</h2>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h2 id="h_01HZPMRFV92CGTTS20AXEEC261" class="p1"><span class="wysiwyg-font-size-x-large"><strong>2022 Discord Developer Terms of Service</strong></span></h2>
 <p class="p1"><em>Effective date: October 1, 2022</em></p>
 <p class="p1"><em>Posted date: September 1, 2022</em></p>
 <p class="p1"><em>For a link to the previous terms, please see </em><a href="https://github.com/discord/discord-api-docs/blob/62c9a95b56d2f989d3eefe39a058d69189f6b4a6/docs/policies_and_agreements/Terms_of_Service.md" target="_self" rel="undefined">here</a><em>.</em></p>
