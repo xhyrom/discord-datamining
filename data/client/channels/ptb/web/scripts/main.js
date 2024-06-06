@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299698", ", Version Hash: ").concat("9152e061dd167fafe92383799d2e870f2c6f32b6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299707", ", Version Hash: ").concat("359376de712e8bf0f5d831c2dee0241fee9036ab")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89023,8 +89023,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299698", "299698"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299698")), t = 0), t
+                let t = parseInt((e = "299707", "299707"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299707")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117200,8 +117200,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299698",
-                    versionHash: "9152e061dd167fafe92383799d2e870f2c6f32b6"
+                    buildNumber: "299707",
+                    versionHash: "359376de712e8bf0f5d831c2dee0241fee9036ab"
                 }
             }
             n.r(t), n.d(t, {
@@ -117735,7 +117735,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("23404"), n.e("4934"), n.e("15357"), n.e("67526"), n.e("97188"), n.e("87624"), n.e("36861"), n.e("39610"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("18050")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("23404"), n.e("4934"), n.e("67526"), n.e("97188"), n.e("87624"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("48378"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -174902,8 +174902,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717704478102",
-                                    build_number: "299698"
+                                    built_at: "1717705371590",
+                                    build_number: "299707"
                                 }
                             },
                             retries: 1
@@ -215153,40 +215153,37 @@
                 let {
                     user: t,
                     isHovering: n,
-                    disabled: r,
-                    onOpenProfile: I
+                    onOpenProfile: r
                 } = e, {
-                    trackUserProfileAction: T
+                    trackUserProfileAction: I
                 } = (0, u.useUserProfileAnalyticsContext)(), {
-                    note: f
-                } = (0, d.default)(t.id), S = () => {
-                    T({
+                    note: T
+                } = (0, d.default)(t.id), f = () => {
+                    I({
                         action: "PRESS_ADD_NOTE"
-                    }), null == I || I()
+                    }), null == r || r()
                 };
-                return null == f || "" === f ? (0, i.jsx)(_.default, {
+                return null == T || "" === T ? (0, i.jsx)(_.default, {
                     text: c.default.Messages.ADD_NOTE,
                     "aria-label": c.default.Messages.ADD_NOTE,
                     icon: o.PaperPlusIcon,
-                    onClick: S,
+                    onClick: f,
                     color: E.color,
                     look: l.Button.Looks.BLANK,
                     className: s()(E.button, {
                         [E.visible]: n
-                    }),
-                    disabled: r
+                    })
                 }) : (0, i.jsx)(_.default, {
-                    text: f,
-                    "aria-label": f,
+                    text: T,
+                    "aria-label": T,
                     icon: a.PaperIcon,
-                    onClick: S,
+                    onClick: f,
                     color: E.color,
                     look: l.Button.Looks.BLANK,
                     className: s()(E.button, {
                         [E.visible]: n
                     }),
-                    tooltipClassName: E.tooltip,
-                    disabled: r
+                    tooltipClassName: E.tooltip
                 })
             }
         },
@@ -217826,20 +217823,19 @@
                     user: t,
                     onClose: n,
                     bio: E,
-                    hidePersonalInformation: I,
-                    disableViewFullBio: T
+                    hidePersonalInformation: I
                 } = e, {
-                    guildId: f,
-                    channelId: S,
-                    messageId: h,
-                    roleId: A
+                    guildId: T,
+                    channelId: f,
+                    messageId: S,
+                    roleId: h
                 } = (0, o.useUserProfileAnalyticsContext)(), {
-                    analyticsLocations: m
-                } = (0, a.default)(), [N, p] = r.useState(!1);
+                    analyticsLocations: A
+                } = (0, a.default)(), [m, N] = r.useState(!1);
                 return I || null == E || "" === E ? null : (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
                         ref: e => {
-                            null != e && p(e.scrollHeight - e.clientHeight > 1)
+                            null != e && N(e.scrollHeight - e.clientHeight > 1)
                         },
                         className: c.descriptionClamp,
                         children: (0, i.jsx)(l.default, {
@@ -217847,7 +217843,7 @@
                             setLineClamp: !1,
                             textColor: "header-primary"
                         })
-                    }), N && (0, i.jsx)(s.Button, {
+                    }), m && (0, i.jsx)(s.Button, {
                         look: s.Button.Looks.BLANK,
                         size: s.Button.Sizes.NONE,
                         className: c.viewFullBio,
@@ -217855,17 +217851,16 @@
                         onClick: () => {
                             null == n || n(), (0, u.openUserProfileModal)({
                                 userId: t.id,
-                                guildId: null != f ? f : void 0,
-                                channelId: null != S ? S : void 0,
-                                messageId: null != h ? h : void 0,
-                                roleId: null != A ? A : void 0,
+                                guildId: null != T ? T : void 0,
+                                channelId: null != f ? f : void 0,
+                                messageId: null != S ? S : void 0,
+                                roleId: null != h ? h : void 0,
                                 analyticsLocation: {
                                     section: d.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
                                 },
-                                sourceAnalyticsLocations: m
+                                sourceAnalyticsLocations: A
                             })
                         },
-                        disabled: T,
                         children: (0, i.jsx)(s.Text, {
                             variant: "text-xs/normal",
                             color: "none",
@@ -252858,7 +252853,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9152e061dd167fafe92383799d2e870f2c6f32b6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "359376de712e8bf0f5d831c2dee0241fee9036ab"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282098,7 +282093,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299698"
+                                build_number: "299707"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289407,7 +289402,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299698", "299698"), 10);
+                let s = parseInt((n = "299707", "299707"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317352,4 +317347,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.0b36d24785cce7dd0d1b.js.map
+//# sourceMappingURL=27519.2d2a17f3c383cf0588ce.js.map
