@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_file_upload_desktop_upsell",
+    "label": "File Upload Desktop Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable new roadblock modal",
+      "Treatment 2: Enable new roadblock modal with social proof"
+    ],
+    "hash": 2142429811,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "addSocialProof"
+    ]
+  }
+}

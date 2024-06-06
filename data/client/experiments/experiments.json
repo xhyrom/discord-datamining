@@ -9351,29 +9351,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-03_social_proof_hd_streaming",
-      "label": "Social proof in HD streaming upsell",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show social proof in HD streaming upsell"
-      ],
-      "hash": 913903122,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-03_unreads_new_users",
       "label": "Unreads Experiment (grey-dot mode) (new users)",
       "description": [
@@ -10946,6 +10923,32 @@
       "aa_mode": false,
       "config_keys": [
         "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-05_file_upload_desktop_upsell",
+      "label": "File Upload Desktop Upsell",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable new roadblock modal",
+        "Treatment 2: Enable new roadblock modal with social proof"
+      ],
+      "hash": 2142429811,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled",
+        "addSocialProof"
       ]
     }
   },
