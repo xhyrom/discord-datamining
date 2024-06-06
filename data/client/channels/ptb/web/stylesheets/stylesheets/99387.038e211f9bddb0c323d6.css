@@ -63243,7 +63243,7 @@ div:has(>div>.modal__06f49) {
     transition: opacity.2s ease
 }
 
-.editPencil__103ad {
+.overlayIcon__43868 {
     position: absolute;
     opacity: 0;
     transition: opacity.2s ease
@@ -63254,9 +63254,9 @@ div:has(>div>.modal__06f49) {
 }
 
 .clickable__611f4:hover .overlay_f5b201:after,
-.clickable__611f4:hover .editPencil__103ad,
+.clickable__611f4:hover .overlayIcon__43868,
 .clickable__611f4:focus-within .overlay_f5b201:after,
-.clickable__611f4:focus-within .editPencil__103ad {
+.clickable__611f4:focus-within .overlayIcon__43868 {
     opacity: 1
 }
 
@@ -142802,4 +142802,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d65e7e8465e724b871b6.css.map*/
+/*# sourceMappingURL=99387.038e211f9bddb0c323d6.css.map*/
