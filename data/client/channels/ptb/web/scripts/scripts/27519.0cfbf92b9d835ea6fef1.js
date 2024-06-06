@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299766", ", Version Hash: ").concat("ab0216258fa9a0e26f7fd87960d785ce09dd51e3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299779", ", Version Hash: ").concat("13a05b30945420e4a4512c24a00a2bd008c8ed9e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89027,8 +89027,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299766", "299766"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299766")), t = 0), t
+                let t = parseInt((e = "299779", "299779"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299779")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -108659,12 +108659,14 @@
                     textMixAmount: o = 38
                 } = e, l = r()(n), u = r()(i), [d, _] = l.luminance() > u.luminance() ? [l, u] : [u, l], c = _.get("hsl.h");
                 (0 === c || Number.isNaN(c)) && (_ = d);
-                let E = s ? d.set("hsl.s", 1).set("hsl.l", .82) : _.set("hsl.s", 1).set("hsl.l", .25),
-                    I = s ? _.set("hsl.s", 1).set("hsl.l", .05) : d.set("hsl.s", 1).set("hsl.l", .9),
-                    [T, f, S] = I.hsl();
+                let E = s ? d.set("hsl.s", 1) : _.set("hsl.s", 1),
+                    I = E.get("hsl.h");
+                E = E.set("hsl.l", I >= 200 && I <= 300 ? s ? .8 : .25 : s ? .95 : .15);
+                let T = s ? _.set("hsl.s", 1).set("hsl.l", .05) : d.set("hsl.s", 1).set("hsl.l", .9),
+                    [f, S, h] = T.hsl();
                 return {
-                    "--custom-theme-mix-base-hsl": "".concat(Number.isNaN(T) ? 0 : T, " ").concat(100 * f, "% ").concat(100 * S, "%"),
-                    "--custom-theme-mix-base": I.css(),
+                    "--custom-theme-mix-base-hsl": "".concat(Number.isNaN(f) ? 0 : f, " ").concat(100 * S, "% ").concat(100 * h, "%"),
+                    "--custom-theme-mix-base": T.css(),
                     "--custom-theme-mix-text": E.css(),
                     "--custom-theme-mix-amount-base": "".concat(t ? a : 0, "%"),
                     "--custom-theme-mix-amount-text": "".concat(t ? o : 0, "%")
@@ -117204,8 +117206,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299766",
-                    versionHash: "ab0216258fa9a0e26f7fd87960d785ce09dd51e3"
+                    buildNumber: "299779",
+                    versionHash: "13a05b30945420e4a4512c24a00a2bd008c8ed9e"
                 }
             }
             n.r(t), n.d(t, {
@@ -174906,8 +174908,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717709890685",
-                                    build_number: "299766"
+                                    built_at: "1717710475525",
+                                    build_number: "299779"
                                 }
                             },
                             retries: 1
@@ -252883,7 +252885,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ab0216258fa9a0e26f7fd87960d785ce09dd51e3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "13a05b30945420e4a4512c24a00a2bd008c8ed9e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282123,7 +282125,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299766"
+                                build_number: "299779"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289432,7 +289434,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299766", "299766"), 10);
+                let s = parseInt((n = "299779", "299779"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317377,4 +317379,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.c4c1dda7f5ff74593df2.js.map
+//# sourceMappingURL=27519.0cfbf92b9d835ea6fef1.js.map
