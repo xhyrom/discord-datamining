@@ -10139,15 +10139,7 @@ span.clanTag_f4aadc {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-base-primary);
-    overflow-y: auto;
-    max-width: min(750px, 100%);
-    width: 750px
-}
-
-@media(min-width:1490px) {
-    .container__7b73b {
-        width: 400px
-    }
+    overflow-y: auto
 }
 
 .headerWhenSideCard__74c6c {
@@ -10328,14 +10320,13 @@ span.clanTag_f4aadc {
 
 .positionLayer__7a20e {
     pointer-events: none;
-    z-index: 0;
-    right: var(--spacing-16)
+    z-index: 0
 }
 
 .positionContainer__6d012 {
     pointer-events: none;
-    width: 100%;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     display: flex
 }
 
@@ -10344,7 +10335,8 @@ span.clanTag_f4aadc {
     height: 100%;
     z-index: 1;
     position: relative;
-    max-width: 100%
+    max-width: 100%;
+    flex-grow: 1
 }
 
 .contentWrapper_fec32a {
@@ -16302,6 +16294,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 @use postcss-pxtorem;
+
+.channelTextAreaContainer__37a67 {
+    display: flex
+}
 
 .channelTextArea__648e5 {
     position: relative;
@@ -24260,37 +24256,37 @@ html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .chatButton_a40cc3:not(.chatBu
 }
 
 .activityButton_d66dd3 {
-    max-height: 50px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center
 }
 
-.rocket__4ebd3 {
-    padding: 4px
-}
-
-.rocketUnhovered__86bc7 {
+.iconUnhovered__60810 {
     color: var(--interactive-normal)
 }
 
-.rocketUnhovered__86bc7>* {
+.iconUnhovered__60810>* {
     fill: currentColor
 }
 
-.rocketHovered__0e379 {
+.iconHovered_ce95cb {
     color: var(--interactive-hover)
 }
 
-.rocketHovered__0e379>* {
+.iconHovered_ce95cb>* {
     fill: currentColor
 }
 
 .buttonContainer_eed03a {
     display: flex;
-    position: relative;
-    margin-left: -8px
+    justify-content: center;
+    align-items: center;
+    margin-left: var(--spacing-16);
+    border-radius: 8px;
+    background: var(--bg-overlay-3, var(--channeltextarea-background));
+    width: var(--custom-channel-textarea-text-area-height);
+    height: var(--custom-channel-textarea-text-area-height)
 }
 
 .wrapper__71fd8 {
@@ -142797,4 +142793,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.da72c284d90fb88dd44b.css.map*/
+/*# sourceMappingURL=99387.17cad3c423176e239b7d.css.map*/
