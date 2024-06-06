@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299625", ", Version Hash: ").concat("875ade9f69775216fef2d730d555ea685fd5756d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299635", ", Version Hash: ").concat("835ed3415d9da5ddfcf0033b4ba45074027d77e6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88887,8 +88887,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299625", "299625"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299625")), t = 0), t
+                let t = parseInt((e = "299635", "299635"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299635")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -96682,7 +96682,7 @@
                     onChangeEnd: em,
                     updateState: eh
                 }), ep = r.useCallback((e, t) => {
-                    let n = E.getOptionValues(eN, e),
+                    let n = E.getOptionValues(eN, e, y.id),
                         i = E.validateOptionValues(e, y.guild_id, y.id, n, t);
                     return {
                         values: n,
@@ -97558,126 +97558,120 @@
             "use strict";
             n.r(t), n.d(t, {
                 findTextOptions: function() {
-                    return C
-                },
-                getCommandBlock: function() {
-                    return S
-                },
-                getCurrentCommandOption: function() {
-                    return h
-                },
-                getOptionNames: function() {
-                    return A
-                },
-                getOptionValues: function() {
-                    return m
-                },
-                optionToValues: function() {
                     return N
                 },
+                getCommandBlock: function() {
+                    return I
+                },
+                getCurrentCommandOption: function() {
+                    return T
+                },
+                getOptionNames: function() {
+                    return f
+                },
+                getOptionValues: function() {
+                    return S
+                },
+                optionToValues: function() {
+                    return h
+                },
                 validateOption: function() {
-                    return O
+                    return m
                 },
                 validateOptionValues: function() {
-                    return p
+                    return A
                 }
             }), n("653041"), n("47120");
             var i = n("911969"),
                 r = n("555573"),
                 s = n("998698"),
                 a = n("509716"),
-                o = n("897473"),
-                l = n("433355"),
-                u = n("703558"),
-                d = n("944486"),
-                _ = n("117530"),
-                c = n("752305"),
-                E = n("925994"),
-                I = n("887490"),
-                T = n("42530");
-            let f = /([\p{L}\p{N}\p{sc=Deva}\p{sc=Thai}_-]+):/gu;
+                o = n("703558"),
+                l = n("117530"),
+                u = n("752305"),
+                d = n("925994"),
+                _ = n("887490"),
+                c = n("42530");
+            let E = /([\p{L}\p{N}\p{sc=Deva}\p{sc=Thai}_-]+):/gu;
 
-            function S(e) {
-                let t = I.EditorUtils.richValue(e)[0];
-                return null == t || "applicationCommand" !== t.type ? null : [t, T.FIRST_BLOCK_PATH]
+            function I(e) {
+                let t = _.EditorUtils.richValue(e)[0];
+                return null == t || "applicationCommand" !== t.type ? null : [t, c.FIRST_BLOCK_PATH]
             }
 
-            function h(e) {
+            function T(e) {
                 var t, n;
                 if (null == e.selection) return null;
-                let i = null !== (t = I.EditorUtils.above(e, {
+                let i = null !== (t = _.EditorUtils.above(e, {
                     at: e.selection.focus,
-                    match: e => I.NodeUtils.isType(e, "applicationCommandOption")
+                    match: e => _.NodeUtils.isType(e, "applicationCommandOption")
                 })) && void 0 !== t ? t : null;
-                return null != i || I.RangeUtils.isCollapsed(e.selection) ? i : null !== (n = I.EditorUtils.above(e, {
+                return null != i || _.RangeUtils.isCollapsed(e.selection) ? i : null !== (n = _.EditorUtils.above(e, {
                     at: e.selection.anchor,
-                    match: e => I.NodeUtils.isType(e, "applicationCommandOption")
+                    match: e => _.NodeUtils.isType(e, "applicationCommandOption")
                 })) && void 0 !== n ? n : null
             }
 
-            function A(e) {
-                let t = S(e),
+            function f(e) {
+                let t = I(e),
                     n = [],
                     i = null == t ? void 0 : t[0].children;
                 if (null != i)
-                    for (let e of i) I.NodeUtils.isType(e, "applicationCommandOption") && n.push(e.optionName);
+                    for (let e of i) _.NodeUtils.isType(e, "applicationCommandOption") && n.push(e.optionName);
                 return n
             }
 
-            function m(e, t) {
-                let n = {};
+            function S(e, t, n) {
+                let i = {};
                 if (null == t.options) return {};
-                let i = S(e),
-                    r = Object.fromEntries(t.options.map(e => [e.name, e])),
-                    s = null == i ? void 0 : i[0].children;
-                if (null != s) {
-                    for (let t of s)
-                        if (I.NodeUtils.isType(t, "applicationCommandOption")) {
-                            let i = r[t.optionName];
-                            null != i && (n[t.optionName] = N(e, i, t))
+                let r = I(e),
+                    s = Object.fromEntries(t.options.map(e => [e.name, e])),
+                    a = null == r ? void 0 : r[0].children;
+                if (null != a) {
+                    for (let t of a)
+                        if (_.NodeUtils.isType(t, "applicationCommandOption")) {
+                            let r = s[t.optionName];
+                            null != r && (i[t.optionName] = h(e, r, t, n))
                         }
                 }
-                return n
+                return i
             }
 
-            function N(e, t, n) {
-                let r = d.default.getCurrentlySelectedChannelId(),
-                    s = l.default.getSidebarState(r),
-                    a = (null == s ? void 0 : s.type) === o.SidebarType.VIEW_THREAD ? s.channelId : r,
-                    T = n.children.map(n => {
-                        if (t.type === i.ApplicationCommandOptionType.ATTACHMENT) {
-                            let e = _.default.getUpload(a, t.name, u.DraftType.SlashCommand);
-                            if (null != e) {
-                                var r;
-                                return {
-                                    type: "text",
-                                    text: null !== (r = e.filename) && void 0 !== r ? r : ""
-                                }
+            function h(e, t, n, r) {
+                let s = n.children.map(n => {
+                    if (t.type === i.ApplicationCommandOptionType.ATTACHMENT) {
+                        let e = l.default.getUpload(r, t.name, o.DraftType.SlashCommand);
+                        if (null != e) {
+                            var s;
+                            return {
+                                type: "text",
+                                text: null !== (s = e.filename) && void 0 !== s ? s : ""
                             }
                         }
-                        if (I.TextUtils.isText(n)) return {
-                            type: "text",
-                            text: n.text
-                        };
-                        if (I.EditorUtils.isVoid(e, n)) {
-                            let e = (0, c.voidToOptionValue)(n);
-                            if (null != e) return e
-                        }
-                        return {
-                            type: "text",
-                            text: (0, E.serializeDescendant)(n, {
-                                mode: "raw"
-                            })
-                        }
-                    });
+                    }
+                    if (_.TextUtils.isText(n)) return {
+                        type: "text",
+                        text: n.text
+                    };
+                    if (_.EditorUtils.isVoid(e, n)) {
+                        let e = (0, u.voidToOptionValue)(n);
+                        if (null != e) return e
+                    }
+                    return {
+                        type: "text",
+                        text: (0, d.serializeDescendant)(n, {
+                            mode: "raw"
+                        })
+                    }
+                });
                 if (t.type !== i.ApplicationCommandOptionType.STRING) {
-                    for (; T.length > 0 && "text" === T[0].type && "" === T[0].text.trim();) T.shift();
-                    for (; T.length > 0 && "text" === T[T.length - 1].type && "" === T[T.length - 1].text.trim();) T.pop()
+                    for (; s.length > 0 && "text" === s[0].type && "" === s[0].text.trim();) s.shift();
+                    for (; s.length > 0 && "text" === s[s.length - 1].type && "" === s[s.length - 1].text.trim();) s.pop()
                 }
-                return T
+                return s
             }
 
-            function p(e, t, n, i, s) {
+            function A(e, t, n, i, s) {
                 if (null == e.options) return {};
                 let o = Object.fromEntries(e.options.map(e => {
                     var r;
@@ -97692,11 +97686,11 @@
                 return r.updateOptionValidationStates(n, o), o
             }
 
-            function O(e, t, n, i, o) {
+            function m(e, t, n, i, o) {
                 var l;
                 let [u] = i, d = s.default.getActiveCommand(n), _ = null == d ? void 0 : null === (l = d.options) || void 0 === l ? void 0 : l.find(e => e.name === u.optionName);
                 if (null == _) return;
-                let c = N(e, _, u),
+                let c = h(e, _, u, n),
                     E = a.validateOptionContent({
                         option: _,
                         content: c,
@@ -97711,11 +97705,11 @@
                 }), E
             }
 
-            function C(e, t) {
+            function N(e, t) {
                 if (null == t.options || 0 === t.options.length) return [];
-                let n = I.EditorUtils.richValue(e),
+                let n = _.EditorUtils.richValue(e),
                     i = [],
-                    r = new Set(A(e)),
+                    r = new Set(f(e)),
                     s = {},
                     a = new Set;
                 for (let e of t.options) s[e.displayName] = e, !r.has(e.name) && a.add(e.displayName);
@@ -97724,40 +97718,40 @@
                     let r = n[t];
                     if ("line" === r.type || "applicationCommand" === r.type)
                         for (let u = 0; u < r.children.length; u++) {
-                            let d;
-                            let _ = r.children[u],
-                                c = [t, u];
-                            if (I.NodeUtils.isType(_, "applicationCommandOption")) {
+                            let c;
+                            let I = r.children[u],
+                                T = [t, u];
+                            if (_.NodeUtils.isType(I, "applicationCommandOption")) {
                                 if (null != o) {
                                     var l;
-                                    o.valueRange.focus = null !== (l = I.EditorUtils.before(e, c)) && void 0 !== l ? l : I.EditorUtils.start(e, []), o.text = (0, E.toTextValue)(n, {
+                                    o.valueRange.focus = null !== (l = _.EditorUtils.before(e, T)) && void 0 !== l ? l : _.EditorUtils.start(e, []), o.text = (0, d.toTextValue)(n, {
                                         mode: "raw",
                                         range: o.valueRange
                                     }).trim(), i.push(o), o = null
                                 }
                                 continue
                             }
-                            if (!!I.TextUtils.isText(_))
-                                for (f.lastIndex = 0; null != (d = f.exec(_.text));) {
-                                    if (0 !== d.index && null == _.text.charAt(d.index - 1).match(/(\t|\s)/)) continue;
-                                    let e = d[1];
+                            if (!!_.TextUtils.isText(I))
+                                for (E.lastIndex = 0; null != (c = E.exec(I.text));) {
+                                    if (0 !== c.index && null == I.text.charAt(c.index - 1).match(/(\t|\s)/)) continue;
+                                    let e = c[1];
                                     if (!a.has(e)) continue;
                                     a.delete(e);
                                     let t = s[e];
                                     if (null == t) continue;
                                     let r = {
-                                            path: c,
-                                            offset: d.index
+                                            path: T,
+                                            offset: c.index
                                         },
                                         l = {
-                                            path: c,
-                                            offset: r.offset + d[0].length
+                                            path: T,
+                                            offset: r.offset + c[0].length
                                         },
                                         u = {
-                                            path: c,
+                                            path: T,
                                             offset: l.offset
                                         },
-                                        I = {
+                                        _ = {
                                             name: t.name,
                                             displayName: t.displayName,
                                             type: t.type,
@@ -97771,14 +97765,14 @@
                                             },
                                             text: ""
                                         };
-                                    null != o && (o.valueRange.focus = I.keyRange.anchor, o.text = (0, E.toTextValue)(n, {
+                                    null != o && (o.valueRange.focus = _.keyRange.anchor, o.text = (0, d.toTextValue)(n, {
                                         mode: "raw",
                                         range: o.valueRange
-                                    }).trim(), i.push(o)), o = I
+                                    }).trim(), i.push(o)), o = _
                                 }
                         }
                 }
-                return null != o && (o.valueRange.focus = I.EditorUtils.end(e, []), o.text = (0, E.toTextValue)(n, {
+                return null != o && (o.valueRange.focus = _.EditorUtils.end(e, []), o.text = (0, d.toTextValue)(n, {
                     mode: "raw",
                     range: o.valueRange
                 }).trim(), i.push(o)), i
@@ -100617,11 +100611,11 @@
                     if (null == i) return [];
                     let r = a.default.getActiveCommand(t.id),
                         s = null == r ? void 0 : null === (n = r.options) || void 0 === n ? void 0 : n.find(e => e.name === i[0].optionName);
-                    return null == s ? [] : o.optionToValues(e, s, i[0])
+                    return null == s ? [] : o.optionToValues(e, s, i[0], t.id)
                 },
                 getCommandOptionValues() {
                     let n = a.default.getActiveCommand(t.id);
-                    return null == n ? {} : o.getOptionValues(e, n)
+                    return null == n ? {} : o.getOptionValues(e, n, t.id)
                 },
                 insertText(n) {
                     let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
@@ -101027,7 +101021,7 @@
                                                     let D = null;
                                                     return null != R ? (h.SlateTransforms.selectCommandOption(e, R.optionName), D = R.optionName) : null != g ? (h.SlateTransforms.selectCommandOption(e, g.optionName, !1), D = g.optionName) : h.SlateTransforms.resetSelectionToEnd(e), null == g && v(e, d), D
                                                 }(t, s, n),
-                                                i = T.getOptionValues(t, f);
+                                                i = T.getOptionValues(t, f, s.id);
                                             return D({
                                                 guildId: s.guild_id,
                                                 channelId: s.id,
@@ -101118,7 +101112,7 @@
                                                 })
                                             }), !0)
                                         }(t, f) && v(t, f);
-                                        let e = T.getOptionValues(t, f),
+                                        let e = T.getOptionValues(t, f, s.id),
                                             n = A.EditorUtils.above(t, {
                                                 match: e => A.EditorUtils.isInline(t, e) && "applicationCommandOption" === e.type,
                                                 mode: "lowest"
@@ -117066,8 +117060,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299625",
-                    versionHash: "875ade9f69775216fef2d730d555ea685fd5756d"
+                    buildNumber: "299635",
+                    versionHash: "835ed3415d9da5ddfcf0033b4ba45074027d77e6"
                 }
             }
             n.r(t), n.d(t, {
@@ -174768,8 +174762,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717699056938",
-                                    build_number: "299625"
+                                    built_at: "1717699619861",
+                                    build_number: "299635"
                                 }
                             },
                             retries: 1
@@ -252716,7 +252710,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "875ade9f69775216fef2d730d555ea685fd5756d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "835ed3415d9da5ddfcf0033b4ba45074027d77e6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281920,7 +281914,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299625"
+                                build_number: "299635"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289229,7 +289223,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299625", "299625"), 10);
+                let s = parseInt((n = "299635", "299635"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317140,4 +317134,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.53e4b49622d2a23cada7.js.map
+//# sourceMappingURL=27519.b24716013c89c39d2e34.js.map
