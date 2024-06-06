@@ -622,5 +622,9 @@ id,hash,label
 2024-05_simplified_profile_friending,1094016555,Simplified Profile Friending Experiment
 2024-05_tunein_minishelf_banner,2247494581,Actvity TuneIn Mini-Shelf Banner
 2024-06_checkout_recovery_nagbar_test,2984314285,Testing
+2024-06_ctp_app_open_everyone,3950566842,CTP app open - A/A test - Everyone
+2024-06_ctp_app_open_filters,3146386527,CTP app open - A/A test - Filters
+2024-06_ctp_app_open_multiple_buckets,160851838,CTP app open - A/A test - Multiple buckets
+2024-06_ctp_app_open_uneven_buckets,3785125664,CTP app open - A/A test - Uneven buckets
 2024-06_ctp_app_open_vanilla,3140086051,CTP app open - A/A test - Vanilla
 2024-06_rtc_voice_state_sync_experiment,1254450589,RTC and Voice State Desync Fixes
