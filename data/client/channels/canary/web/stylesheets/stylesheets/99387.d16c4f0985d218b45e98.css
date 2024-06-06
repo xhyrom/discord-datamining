@@ -8375,7 +8375,7 @@ div.cardContainer__94a1c {
     height: 44px;
     margin: 24px 32px 16px;
     border-radius: 8px;
-    border: 1px solid var(--primary-500)
+    border: 1px solid var(--interactive-muted)
 }
 
 .iconContainer_b92a81 {
@@ -8400,7 +8400,7 @@ div.cardContainer__94a1c {
 }
 
 .header__3ab01 {
-    margin-bottom: 8px
+    margin-bottom: 24px
 }
 
 .enhancedHeader__84b43,
@@ -8451,7 +8451,8 @@ div.cardContainer__94a1c {
 .closeButton__5e970 {
     align-self: flex-end;
     margin: 12px;
-    position: absolute
+    position: absolute;
+    color: var(--interactive-active)
 }
 
 .artContainer__748ff {
@@ -8502,6 +8503,20 @@ div.cardContainer__94a1c {
     justify-content: center;
     margin: -16px auto 4px;
     height: 80px
+}
+
+.updatedArtContainer__8c7cc {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: -54px auto 32px;
+    height: 108px;
+    width: 180px
+}
+
+.updatedArt__65b9c {
+    width: 100%;
+    height: 100%
 }
 
 .body__6d192 {
@@ -142781,4 +142796,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.5cd1b674050686e26bde.css.map*/
+/*# sourceMappingURL=99387.d16c4f0985d218b45e98.css.map*/
