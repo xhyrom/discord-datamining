@@ -49,7 +49,7 @@
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-592deb7a-7fff-ff06-a34a-049a89c580a5" style="color: #4f545c;"><span id="docs-internal-guid-5eba1d66-7fff-4ce3-c29e-32eb12dd1cbe" style="color: #4f545c;"><img src="https://support.discord.com/hc/article_attachments/23986048023575" width="237" height="491"></span></span></p>
 <p id="docs-internal-guid-8dd1b8ef-7fff-ac9b-fb8d-e5bdcd643314">3. In the Avatar menu, tap <strong>Change Decoration</strong> and select the desired avatar decoration you would like to apply. </p>
 <p>4. Once you’ve found an avatar decoration you want to use, tap <strong>Save</strong> to confirm your changes.</p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-c387e0e9-7fff-177e-d785-929c16c8abce"><img src="https://support.discord.com/hc/article_attachments/22476711236375" width="250" height="514"></span></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-c387e0e9-7fff-177e-d785-929c16c8abce"><img src="https://support.discord.com/hc/article_attachments/24000168061463" alt="avatardeco.gif" width="239" height="492"></span></p>
 <h1 id="h_01GWJJX4GZDK1QJAXZBB7N4RNG">Frequently Asked Questions</h1>
 <p id="docs-internal-guid-43737dc2-7fff-6d6f-dff3-b8e118678317"><strong>Q: Who can currently access the Shop and buy and use avatar decorations?</strong></p>
 <p>A: The Shop is available to all Discord users. If you are also a Nitro member, you will have special member pricing on all purchases within the Shop!</p>
