@@ -29,19 +29,19 @@
 <h3 id="h_01HBCKWXX43JBNQ52WE2MREH8W">Important Note: Refunds for purchases described in this Refund Policy are one-time refunds only, unless we explicitly state otherwise in this Policy. This means that you are only eligible for one refund under each purchase category. <br><span id="docs-internal-guid-7bd9f8dd-7fff-4339-16b6-0a353c4861c0" style="color: #434343;" data-darkreader-inline-color="">For example, if you have previously received a refund for any Nitro subscription, you will not be eligible for any other Nitro subscription refund in the future. </span>
 </h3>
 <h1 id="h_01GK7AZGFW3ABPMGNA4NKNRTKS"><strong>Refunds by Payment Type</strong></h1>
-<h2 id="h_01GXCJQ8YN1D2FK8JC8Q97J6VS"><span style="font-weight: 400;">iOS App Store Purchases</span></h2>
+<h2 id="h_01GXCJQ8YN1D2FK8JC8Q97J6VS"><strong>iOS App Store Purchases</strong></h2>
 <p><span style="font-weight: 400;">For any purchases you made on Discord using your iOS device, such as an iPhone, iPad, or iPod touch, you will need to request a refund for those purchases via the iOS App Store. More information on iOS App Store refunds is available </span><a href="https://support.apple.com/en-us/HT204084" target="_blank" rel="noopener noreferrer">here</a><span style="font-weight: 400;">.</span></p>
-<h2 id="h_01GXCJQJ0K5KHEW9ZRF417PJTB"><span style="font-weight: 400;">Paysafecards</span></h2>
+<h2 id="h_01GXCJQJ0K5KHEW9ZRF417PJTB"><strong>Paysafecards</strong></h2>
 <p><span style="font-weight: 400;">We are unable to provide any refunds for purchases made with Paysafecards.</span></p>
 <h1 id="h_01GK7AZN1G2Z1KFESNVJXYB654"><strong>Nitro and Server Boosts</strong></h1>
 <p><span style="font-weight: 400;">If you would like to request a refund for any Nitro or Server Boost purchase you’ve made, you must reach out to our Support Team and provide all requested information associated with your purchase within </span><strong>5 days</strong><span style="font-weight: 400;"> of your initial purchase at </span><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a><span style="font-weight: 400;">. Our Support Team will review your request and notify you of the outcome of your request. </span></p>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-42853b36-7fff-5086-5ded-bfe4ff3f1918">If you purchased any profile cosmetics within 5 days of your Nitro subscription renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro subscription refund.</span></span></p>
-<h2 id="h_01HFVZATFQPKY1TMZ5N7BWGMFN">Exceptions</h2>
+<h2 id="h_01HFVZATFQPKY1TMZ5N7BWGMFN"><strong>Exceptions</strong></h2>
 <p><strong>Profile Cosmetics</strong></p>
 <p>If you purchased any profile cosmetics like avatar decorations or profile effects within 5 days of your Nitro membership renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro membership refund. </p>
 <p><strong>Subscriber Promotions</strong></p>
 <p>If you have redeemed or received any promotional items from Discord or from a Discord partner promotion (ex. Free Xbox Game Pass) within 5 days of your Nitro membership renewing or becoming a new Nitro subscriber, you will not be eligible for a Nitro membership refund. </p>
-<h2 id="h_01HFVZBQKY520AFFDWY3VPS5JT">Nitro Gifts</h2>
+<h2 id="h_01HFVZBQKY520AFFDWY3VPS5JT"><strong>Nitro Gifts</strong></h2>
 <h3 id="h_01HFVZBQKYAY1WHEJ2K3V41J9G"><span style="color: #434343;" data-darkreader-inline-color="">If the Nitro gift you purchased was self-claimed (claimed on the same account you purchased the gift from), you can request a refund. The refund counts towards the one-time refund for Nitro purchases and follows the same refund policy.</span></h3>
 <p>We are <strong>unable</strong> to provide a refund for a Nitro gift purchase once the gift <strong>has been claimed by another user. </strong></p>
 <p>However, for <strong>unclaimed Nitro gifts </strong>purchased on Discord on <strong>desktop/web/Android</strong>, you will have<strong> 5 days</strong> from the initial purchase date to request a refund with our<a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Support Team</span></a>. </p>
@@ -50,12 +50,12 @@
 <p id="docs-internal-guid-fc4b1132-7fff-cfeb-94a4-bb2caf917fc3">For profile cosmetic purchases made in the Shop on an iOS device/through the Apple App Store, please contact Apple for any purchasing issues <a href="https://support.apple.com/118223" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01GK7B03KHCFEWTYRE0W0HCZR5"><strong>Purchases from Users and Developers</strong></h1>
 <p><span style="font-weight: 400;">With some Discord features, we allow you to purchase server subscriptions, premium apps, and other offerings from other users and developers on Discord. While these users and developers are responsible for these offerings, we may offer refunds in our sole discretion in the situations outlined below.     </span></p>
-<h2 id="h_01GXCJSPYGF70RVXXD32EQ4S4M"><span style="font-weight: 400;">Server Subscription Refunds</span></h2>
+<h2 id="h_01GXCJSPYGF70RVXXD32EQ4S4M"><strong>Server Subscription Refunds</strong></h2>
 <p><span style="font-weight: 400;">If you would like to request a refund for a Server Subscription purchase you’ve made, you must reach out to our Support Team within </span><strong>5 days</strong><span style="font-weight: 400;"> of your initial purchase at </span><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a><span style="font-weight: 400;">. </span></p>
 <h3 id="h_01HBCKWXX4KDAQ4H1QY515A639">For any refund requests or issues not covered by the above, please contact the creator or admin of the applicable server. If you are unable to address your issue directly with the creator or server admin, you can reach out to our <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612" target="_blank" rel="noopener noreferrer">Support Team</a>. </h3>
-<h2 id="docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Shop Purchase Refunds</h2>
+<h2 id="docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0"><strong>Server Shop Purchase Refunds</strong></h2>
 <p>We are unable to provide refunds for items purchased from a Server Shop. If your Server Shop purchase is defective or you’re experiencing problems with the purchase, please contact us at <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a>.</p>
-<h2 id="h_01GXCJT1K30JVPCNX51X4DY8EF"><span style="font-weight: 400;">Premium App Refunds<br></span></h2>
+<h2 id="h_01GXCJT1K30JVPCNX51X4DY8EF"><span style="font-weight: 400;"><strong>Premium App Refunds</strong><br></span></h2>
 <h3 id="h_01HXA3ZVHAKM449FNTDZWWEPQZ"><span style="font-weight: 400;">One-time Premium App purchases are non-refundable.</span></h3>
 <p><span style="font-weight: 400;">If you would like to request a refund for a Premium App Subscription purchase you’ve made, you must reach out to our Support Team within </span><strong>5 days</strong><span style="font-weight: 400;"> of your initial purchase of the subscription at </span><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a><span style="font-weight: 400;">. </span></p>
 <p><span style="font-weight: 400;">In addition, if an app you’ve purchased a Premium App Subscription for is removed from the applicable server by us or the developer, you may also request a pro-rated refund for the remainder of the subscription within </span><strong>5 days</strong><span style="font-weight: 400;"> of such event. </span></p>
