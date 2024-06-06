@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299595", ", Version Hash: ").concat("4c0a1144c4840529fb899fdfbadc530d6bfb05ce")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299611", ", Version Hash: ").concat("9fc547ec28f02326ca0910a7a33b9e4d051b7575")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64512,7 +64512,7 @@
                         mime_type: null !== (e = this.mimeType) && void 0 !== e ? e : "unknown",
                         video_upload_quality: c.default.videoUploadQuality,
                         data_saving_mode: c.default.dataSavingMode,
-                        low_quality_image_mode: c.default.lowQualityImageMode,
+                        low_quality_image_mode: c.default.dataSavingMode,
                         channel_id: this.channelId,
                         connection_type: E.default.getType(),
                         effective_connection_speed: E.default.getEffectiveConnectionSpeed(),
@@ -64533,7 +64533,7 @@
                         error_code: this.error,
                         video_upload_quality: c.default.videoUploadQuality,
                         data_saving_mode: c.default.dataSavingMode,
-                        low_quality_image_mode: c.default.lowQualityImageMode,
+                        low_quality_image_mode: c.default.dataSavingMode,
                         compress_time_ms: this.uploadAnalytics.timing.compressTimeMs,
                         get_upload_url_time_ms: this.uploadAnalytics.timing.getUploadUrlTimeMs,
                         upload_time_ms: this.uploadAnalytics.timing.uploadTimeMs,
@@ -88887,8 +88887,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299595", "299595"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299595")), t = 0), t
+                let t = parseInt((e = "299611", "299611"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299611")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117066,8 +117066,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299595",
-                    versionHash: "4c0a1144c4840529fb899fdfbadc530d6bfb05ce"
+                    buildNumber: "299611",
+                    versionHash: "9fc547ec28f02326ca0910a7a33b9e4d051b7575"
                 }
             }
             n.r(t), n.d(t, {
@@ -174764,8 +174764,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717696816511",
-                                    build_number: "299595"
+                                    built_at: "1717697910146",
+                                    build_number: "299611"
                                 }
                             },
                             retries: 1
@@ -252706,7 +252706,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4c0a1144c4840529fb899fdfbadc530d6bfb05ce"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9fc547ec28f02326ca0910a7a33b9e4d051b7575"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -256564,7 +256564,7 @@
                         quality: d,
                         state: e ? p.ImageReadyStates.ERROR : this.state.readyState,
                         data_saving_mode: I.default.dataSavingMode,
-                        low_quality_image_mode: I.default.lowQualityImageMode,
+                        low_quality_image_mode: I.default.dataSavingMode,
                         trigger: n,
                         size: a,
                         connection_type: T.default.getType(),
@@ -281910,7 +281910,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299595"
+                                build_number: "299611"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289219,7 +289219,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299595", "299595"), 10);
+                let s = parseInt((n = "299611", "299611"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317130,4 +317130,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.dfc6b98f2c64d628ed52.js.map
+//# sourceMappingURL=27519.a5748dec2c3bb27f9d5c.js.map
