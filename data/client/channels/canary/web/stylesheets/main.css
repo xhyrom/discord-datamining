@@ -8769,7 +8769,7 @@ div.cardContainer__94a1c {
 
 .rootContainer_d251a3 {
     width: 440px;
-    height: 400px
+    min-height: 400px
 }
 
 .spinnerContainer_b7aa46 {
@@ -8786,13 +8786,13 @@ div.cardContainer__94a1c {
 
 .claimedRootContainer__21952 {
     height: 100%;
-    display: grid;
-    grid-template: "header" 50%"footer" 50%/1fr
+    display: flex;
+    flex-direction: column
 }
 
 .headerContainer__81dc7 {
     grid-area: header;
-    height: 200px;
+    min-height: 200px;
     display: grid;
     grid-template: "layer" 1fr/1fr
 }
@@ -8859,6 +8859,21 @@ div.cardContainer__94a1c {
     position: absolute;
     width: 100%;
     height: 100%
+}
+
+.additionalRedemptionInstructions__003a0 {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    margin-top: 24px;
+    padding-top: 24px
+}
+
+.sponsorLogo__1cdd3 {
+    margin-bottom: 8px
+}
+
+.sponsoredBy__46614 {
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 8px
 }
 
 .headerImage__03931 {
@@ -142802,4 +142817,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.038e211f9bddb0c323d6.css.map*/
+/*# sourceMappingURL=99387.66b569e8aab90303a79c.css.map*/
