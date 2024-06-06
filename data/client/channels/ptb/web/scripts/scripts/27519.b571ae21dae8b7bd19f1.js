@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299552", ", Version Hash: ").concat("1fdbf43c6717549eeb2f2ffac8a22316aa429f1c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299562", ", Version Hash: ").concat("3c74c46646490b3e62ed95325420e34360948489")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55759,6 +55759,7 @@
                 QUESTS_MEMBERS_LIST_GAME_TILE_ALT: "A game tile displaying {gameTitle}, published by {gamePublisher}.",
                 QUESTS_REWARD_AVATAR_DECORATION_HEADER: "Congratulations!",
                 QUESTS_REWARD_AVATAR_DECORATION_BODY: "{decorationName} is now yours FOR-EV-ERRRR! You can use it anytime on your profile page.",
+                QUESTS_REWARD_SPONSORED_BY: "Sponsored by {publisherName}",
                 QUESTS_VIEW_COLLECTIBLE: "View Deco",
                 QUEST_AVAILABLE: "Quest Available",
                 QUESTS_COMPLETION_PROGRESS_NOT_STARTED_SUBTITLE: "No Quest progress yet",
@@ -88881,8 +88882,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299552", "299552"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299552")), t = 0), t
+                let t = parseInt((e = "299562", "299562"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299562")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117047,8 +117048,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299552",
-                    versionHash: "1fdbf43c6717549eeb2f2ffac8a22316aa429f1c"
+                    buildNumber: "299562",
+                    versionHash: "3c74c46646490b3e62ed95325420e34360948489"
                 }
             }
             n.r(t), n.d(t, {
@@ -174745,8 +174746,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717693584544",
-                                    build_number: "299552"
+                                    built_at: "1717694380112",
+                                    build_number: "299562"
                                 }
                             },
                             retries: 1
@@ -193840,10 +193841,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return M
+                    return b
                 },
                 openCollectibleRewardModal: function() {
-                    return y
+                    return G
                 }
             }), n("773603"), n("47120");
             var i = n("735250"),
@@ -193851,196 +193852,222 @@
                 s = n("887024"),
                 a = n("979554"),
                 o = n("442837"),
-                l = n("481060"),
-                u = n("809206"),
-                d = n("607070"),
-                _ = n("235400"),
-                c = n("204418"),
-                E = n("583434"),
-                I = n("530618"),
-                T = n("164946"),
-                f = n("166625"),
-                S = n("25990"),
-                h = n("594174"),
-                A = n("810090"),
-                m = n("272008"),
-                N = n("497505"),
-                p = n("918701"),
-                O = n("114732"),
-                C = n("675654"),
-                R = n("689938"),
-                g = n("130035");
+                l = n("149020"),
+                u = n("481060"),
+                d = n("809206"),
+                _ = n("607070"),
+                c = n("235400"),
+                E = n("204418"),
+                I = n("583434"),
+                T = n("530618"),
+                f = n("454585"),
+                S = n("164946"),
+                h = n("166625"),
+                A = n("25990"),
+                m = n("594174"),
+                N = n("810090"),
+                p = n("272008"),
+                O = n("497505"),
+                C = n("918701"),
+                R = n("566078"),
+                g = n("114732"),
+                L = n("46140"),
+                v = n("675654"),
+                D = n("689938"),
+                M = n("130035");
 
-            function L() {
-                let e = S.default.getAllPending(),
-                    t = (0, T.getAccountUpdateForUpdateRequest)(e);
-                return (0, u.saveAccountChanges)(t).finally(u.resetPendingAccountChanges)
+            function y() {
+                let e = A.default.getAllPending(),
+                    t = (0, S.getAccountUpdateForUpdateRequest)(e);
+                return (0, d.saveAccountChanges)(t).finally(d.resetPendingAccountChanges)
             }
 
-            function v(e) {
+            function P(e) {
                 let {
                     transitionState: t,
                     onClose: n,
                     quest: a,
-                    location: u,
-                    reward: _,
+                    location: l,
+                    reward: d,
                     decoration: c,
                     onUseNow: E
-                } = e, T = r.useRef(null), [f, S] = r.useState(null), A = r.useRef(new s.Environment), R = (0, o.useStateFromStores)([d.default], () => d.default.useReducedMotion), L = (0, o.useStateFromStores)([h.default], () => h.default.getCurrentUser()), v = (0, p.getHeroAssetUrl)(a), [M, y] = r.useState("loading");
+                } = e, I = r.useRef(null), [f, S] = r.useState(null), h = r.useRef(new s.Environment), A = (0, o.useStateFromStores)([_.default], () => _.default.useReducedMotion), N = (0, o.useStateFromStores)([m.default], () => m.default.getCurrentUser()), R = (0, C.getHeroAssetUrl)(a), [L, D] = r.useState("loading");
                 r.useEffect(() => {
                     var e;
-                    (null === (e = a.userStatus) || void 0 === e ? void 0 : e.claimedAt) == null && (0, m.claimQuestReward)(a.id, N.QuestRewardCodePlatforms.CROSS_PLATFORM, u).then(() => y("claimed")).catch(() => y("error"))
-                }, [a, u]);
-                let P = null == L || null == c || "loading" === M;
+                    (null === (e = a.userStatus) || void 0 === e ? void 0 : e.claimedAt) == null && (0, p.claimQuestReward)(a.id, O.QuestRewardCodePlatforms.CROSS_PLATFORM, l).then(() => D("claimed")).catch(() => D("error"))
+                }, [a, l]);
+                let y = null == N || null == c || "loading" === L;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(s.ConfettiCanvas, {
                         ref: S,
-                        className: g.confettiCanvas,
-                        environment: A.current
+                        className: M.confettiCanvas,
+                        environment: h.current
                     }), (0, i.jsx)("div", {
-                        ref: T,
-                        children: (0, i.jsx)(l.ModalRoot, {
+                        ref: I,
+                        children: (0, i.jsx)(u.ModalRoot, {
                             transitionState: t,
-                            size: l.ModalSize.DYNAMIC,
-                            className: g.rootContainer,
+                            size: u.ModalSize.DYNAMIC,
+                            className: M.rootContainer,
                             hideShadow: !0,
-                            children: P ? (0, i.jsx)("div", {
-                                className: g.spinnerContainer,
-                                children: (0, i.jsx)(l.Spinner, {
-                                    className: g.spinner,
-                                    type: l.Spinner.Type.SPINNING_CIRCLE
+                            children: y ? (0, i.jsx)("div", {
+                                className: M.spinnerContainer,
+                                children: (0, i.jsx)(u.Spinner, {
+                                    className: M.spinner,
+                                    type: u.Spinner.Type.SPINNING_CIRCLE
                                 })
-                            }) : "error" === M ? (0, i.jsx)(O.default, {
+                            }) : "error" === L ? (0, i.jsx)(g.default, {
                                 onClose: n
-                            }) : (0, i.jsx)(D, {
-                                user: L,
+                            }) : (0, i.jsx)(U, {
+                                quest: a,
+                                user: N,
                                 primaryColor: a.config.colors.primary,
                                 secondaryColor: a.config.colors.secondary,
                                 decoration: c,
-                                decorationName: _.messages.name,
-                                backgroundUrl: v,
-                                isSaving: "applying" === M,
+                                decorationName: d.messages.name,
+                                backgroundUrl: R,
+                                isSaving: "applying" === L,
                                 onClose: n,
                                 onConfirm: () => {
-                                    y("applying"), E().finally(n)
+                                    D("applying"), E().finally(n)
                                 }
                             })
                         })
-                    }), !R && "claimed" === M && (0, i.jsx)(I.default, {
-                        confettiTarget: T.current,
+                    }), !A && "claimed" === L && (0, i.jsx)(T.default, {
+                        confettiTarget: I.current,
                         confettiCanvas: f,
-                        sprites: C.COMMON_CONFETTI_SPRITES,
-                        colors: C.COMMON_CONFETTI_COLORS
+                        sprites: v.COMMON_CONFETTI_SPRITES,
+                        colors: v.COMMON_CONFETTI_COLORS
                     })]
                 })
             }
 
-            function D(e) {
+            function U(e) {
                 let {
-                    user: t,
-                    decoration: n,
-                    decorationName: r,
-                    primaryColor: s,
-                    secondaryColor: a,
-                    backgroundUrl: o,
-                    isSaving: u,
-                    onClose: d,
-                    onConfirm: _
-                } = e;
+                    quest: t,
+                    user: n,
+                    decoration: r,
+                    decorationName: s,
+                    primaryColor: a,
+                    secondaryColor: o,
+                    backgroundUrl: d,
+                    isSaving: _,
+                    onClose: c,
+                    onConfirm: I
+                } = e, T = (0, C.hasVariant)(t, L.QuestVariants.IN_HOUSE_CONSOLE_QUEST), S = R.SharedQuestFields.build(t.config).defaultRewardRedemptionInstructionsByPlatform[O.QuestRewardCodePlatforms.CROSS_PLATFORM];
                 return (0, i.jsxs)("div", {
-                    className: g.claimedRootContainer,
+                    className: M.claimedRootContainer,
                     children: [(0, i.jsxs)("div", {
-                        className: g.headerContainer,
-                        children: [(0, i.jsx)(A.default, {
-                            className: g.headerBackground,
+                        className: M.headerContainer,
+                        children: [(0, i.jsx)(N.default, {
+                            className: M.headerBackground,
                             autoPlay: !1,
                             loop: !1,
                             muted: !0,
                             playsInline: !0,
                             controls: !1,
-                            poster: o
+                            poster: d
                         }), (0, i.jsxs)("div", {
-                            className: g.headerForeground,
+                            className: M.headerForeground,
                             children: [(0, i.jsx)("div", {
-                                className: g.previewContainer,
-                                children: (0, i.jsx)(c.default, {
-                                    user: t,
+                                className: M.previewContainer,
+                                children: (0, i.jsx)(E.default, {
+                                    user: n,
                                     guildId: null,
-                                    avatarDecorationOverride: n
+                                    avatarDecorationOverride: r
                                 })
-                            }), (0, i.jsx)(l.ModalCloseButton, {
-                                className: g.close,
+                            }), (0, i.jsx)(u.ModalCloseButton, {
+                                className: M.close,
                                 withCircleBackground: !0,
-                                onClick: d
+                                onClick: c
                             })]
                         })]
-                    }), (0, i.jsx)(l.ModalFooter, {
-                        className: g.footerContainer,
+                    }), (0, i.jsx)(u.ModalFooter, {
+                        className: M.footerContainer,
                         separator: !1,
                         children: (0, i.jsxs)("div", {
-                            className: g.gradient,
+                            className: M.gradient,
                             style: {
-                                backgroundImage: "linear-gradient(180deg, ".concat(s, ", ").concat(a, ")")
+                                backgroundImage: "linear-gradient(180deg, ".concat(a, ", ").concat(o, ")")
                             },
-                            children: [(0, i.jsx)(l.Heading, {
+                            children: [(0, i.jsx)(u.Heading, {
                                 variant: "heading-lg/bold",
                                 color: "always-white",
-                                className: g.heading,
-                                children: R.default.Messages.QUESTS_REWARD_AVATAR_DECORATION_HEADER
-                            }), (0, i.jsx)(l.Text, {
+                                className: M.heading,
+                                children: D.default.Messages.QUESTS_REWARD_AVATAR_DECORATION_HEADER
+                            }), (0, i.jsx)(u.Text, {
                                 variant: "text-sm/normal",
                                 color: "always-white",
-                                className: g.text,
-                                children: R.default.Messages.QUESTS_REWARD_AVATAR_DECORATION_BODY.format({
-                                    decorationName: r
+                                className: M.text,
+                                children: D.default.Messages.QUESTS_REWARD_AVATAR_DECORATION_BODY.format({
+                                    decorationName: s
                                 })
-                            }), (0, i.jsx)(l.Button, {
-                                submitting: u,
-                                onClick: _,
-                                children: R.default.Messages.COLLECTIBLES_USE_NOW
+                            }), (0, i.jsx)(u.Button, {
+                                submitting: _,
+                                onClick: I,
+                                children: D.default.Messages.COLLECTIBLES_USE_NOW
+                            }), T && (0, i.jsxs)("div", {
+                                className: M.additionalRedemptionInstructions,
+                                children: [(0, i.jsx)(l.GameControllerIcon, {
+                                    width: 28,
+                                    height: 28,
+                                    className: M.sponsorLogo,
+                                    color: "white"
+                                }), (0, i.jsx)(u.Text, {
+                                    variant: "text-xs/normal",
+                                    className: M.sponsoredBy,
+                                    children: D.default.Messages.QUESTS_REWARD_SPONSORED_BY.format({
+                                        publisherName: t.config.messages.gamePublisher
+                                    })
+                                }), (0, i.jsx)(u.Text, {
+                                    variant: "text-sm/normal",
+                                    color: "always-white",
+                                    children: f.default.parse(S, !1, {
+                                        allowLinks: !0
+                                    })
+                                })]
                             })]
                         })
                     })]
                 })
             }
 
-            function M(e) {
+            function b(e) {
                 var t, n;
                 let {
                     quest: s,
                     location: o,
                     onClose: l,
-                    transitionState: d
-                } = e, c = r.useMemo(() => (0, p.getCollectiblesQuestReward)(s.config), [s]), [I, T] = function(e) {
+                    transitionState: u
+                } = e, _ = r.useMemo(() => (0, C.getCollectiblesQuestReward)(s.config), [s]), [E, T] = function(e) {
                     let {
                         product: t,
                         isFetching: n
-                    } = (0, E.useFetchCollectiblesProduct)(e), {} = (0, f.default)({}), i = r.useMemo(() => {
+                    } = (0, I.useFetchCollectiblesProduct)(e), {} = (0, h.default)({}), i = r.useMemo(() => {
                         if (null == t || n) return null;
                         let e = t.items.find(e => e.type === a.CollectiblesItemType.AVATAR_DECORATION);
                         return null == e ? null : e
                     }, [t, n]);
-                    return [i, () => null == i ? Promise.reject() : ((0, u.setPendingAvatarDecoration)(i), L())]
-                }(null !== (n = null == c ? void 0 : c.skuId) && void 0 !== n ? n : null);
-                return null == c ? null : (null === (t = s.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? (0, i.jsx)(_.default, {
-                    transitionState: d,
-                    onCloseModal: L,
+                    return [i, () => null == i ? Promise.reject() : ((0, d.setPendingAvatarDecoration)(i), y())]
+                }(null !== (n = null == _ ? void 0 : _.skuId) && void 0 !== n ? n : null);
+                return null == _ ? null : (null === (t = s.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? (0, i.jsx)(c.default, {
+                    transitionState: u,
+                    onCloseModal: y,
                     onClose: l,
                     analyticsLocations: [],
-                    initialSelectedDecoration: I
-                }) : (0, i.jsx)(v, {
+                    initialSelectedDecoration: E
+                }) : (0, i.jsx)(P, {
                     onClose: l,
-                    transitionState: d,
+                    transitionState: u,
                     quest: s,
                     location: o,
-                    reward: c,
-                    decoration: I,
+                    reward: _,
+                    decoration: E,
                     onUseNow: T
                 })
             }
 
-            function y(e, t) {
-                (0, l.openModalLazy)(async () => {
+            function G(e, t) {
+                (0, u.openModalLazy)(async () => {
                     let {
                         default: r
                     } = await Promise.resolve().then(n.bind(n, "920916"));
@@ -252661,7 +252688,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1fdbf43c6717549eeb2f2ffac8a22316aa429f1c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3c74c46646490b3e62ed95325420e34360948489"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281865,7 +281892,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299552"
+                                build_number: "299562"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289174,7 +289201,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299552", "299552"), 10);
+                let s = parseInt((n = "299562", "299562"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317085,4 +317112,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.addc4ec1db11740d506f.js.map
+//# sourceMappingURL=27519.b571ae21dae8b7bd19f1.js.map
