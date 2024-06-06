@@ -108956,6 +108956,12 @@ div:has(>div>.container__8ab05) {
     gap: 4px
 }
 
+.headerWarning__71305 {
+    margin-right: 8px;
+    margin-bottom: 24px;
+    width: auto
+}
+
 .container_ca070b {
     background-color: var(--background-secondary);
     padding: 12px 16px
@@ -142796,4 +142802,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d16c4f0985d218b45e98.css.map*/
+/*# sourceMappingURL=99387.d65e7e8465e724b871b6.css.map*/
