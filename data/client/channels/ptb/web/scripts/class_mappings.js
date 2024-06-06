@@ -6449,6 +6449,7 @@
                 emojiSuggestionButton: "emojiSuggestionButton__6cb58",
                 hero: "hero_dc420c",
                 heroDetails: "heroDetails_f9bc0e",
+                hiddenButRenderedInputField: "hiddenButRenderedInputField__27bb9",
                 iconButton: "iconButton__4bb00",
                 inputContainerShareToChannel: "inputContainerShareToChannel__8eca3",
                 interactionsContainer: "interactionsContainer__97fe3",
@@ -6470,6 +6471,7 @@
                 primaryActionPopoutActionButtons: "primaryActionPopoutActionButtons_c2b2b2",
                 primaryActionPopoutDivider: "primaryActionPopoutDivider_d4d6bc",
                 primaryActionPopoutMessageCloseIcon: "primaryActionPopoutMessageCloseIcon__4400d",
+                primaryButton: "primaryButton__9dc64",
                 secondaryButton: "secondaryButton_fc9605",
                 secondaryText: "secondaryText__7a32f",
                 shareToChannelButton: "shareToChannelButton_ee0e50",
@@ -6480,6 +6482,7 @@
                 toastContainer: "toastContainer__40273",
                 voiceChannelAdditionalParticipants: "voiceChannelAdditionalParticipants__03b6f",
                 voiceChannelGuildIcon: "voiceChannelGuildIcon__1cbcc",
+                voiceChannelName: "voiceChannelName_f92f20",
                 voiceChannelPopoutReactorChannel: "voiceChannelPopoutReactorChannel__15248",
                 voiceChannelPopoutReactorHeader: "voiceChannelPopoutReactorHeader_f7332b"
             }
