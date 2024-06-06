@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299482", ", Version Hash: ").concat("d2485c27d07f76ba6e6aa2a63bfeaca889f53baa")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299492", ", Version Hash: ").concat("9a0529381c63f2dc28daa17222155f3d2adc6667")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56516,6 +56516,26 @@
                 CLAN_MEMBER_APPLICATION_REPORT_MODAL_HEADER: "Report Application",
                 CLAN_MEMBER_APPLICATION_REPORT_DESCRIPTION: "Report {username}'s application for the following reason:",
                 CLAN_MEMBER_APPLICATION_REPORT_BAN: "Ban {username} from this server. This will reject the current application.",
+                CLAN_WELCOME_MESSAGE_0_HOOK: "Everyone welcome $[!!{username}!!](usernameHook) to the Guild!",
+                CLAN_WELCOME_MESSAGE_1_HOOK: "A new member has spawned. Say hi to $[!!{username}!!](usernameHook).",
+                CLAN_WELCOME_MESSAGE_2_HOOK: "$[!!{username}!!](usernameHook) just joined the Guild. We hope you brought pizza.",
+                CLAN_WELCOME_MESSAGE_3_HOOK: "Glad you're here, $[!!{username}!!](usernameHook), welcome to the Guild.",
+                CLAN_WELCOME_MESSAGE_4_HOOK: "New recruit! $[!!{username}!!](usernameHook) joined the Guild.",
+                CLAN_WELCOME_MESSAGE_5_HOOK: "Round of applause for the newest Guild member, $[!!{username}!!](usernameHook). Just for being here.",
+                CLAN_WELCOME_MESSAGE_6_HOOK: "Rolling out the red carpet for $[!!{username}!!](usernameHook). Say hi!",
+                CLAN_WELCOME_MESSAGE_7_HOOK: "Yahaha! $[!!{username}!!](usernameHook) found us!",
+                CLAN_WELCOME_MESSAGE_8_HOOK: "Get ready everyone -- a $[!!{username}!!](usernameHook) has appeared!",
+                CLAN_WELCOME_MESSAGE_9_HOOK: "Roses are red, violets are blue, $[!!{username}!!](usernameHook) just joined the Guild with you.",
+                CLAN_WELCOME_MESSAGE_0: "Everyone welcome [!!{username}!!](usernameOnClick) to the Guild!",
+                CLAN_WELCOME_MESSAGE_1: "A new member has spawned. Say hi to [!!{username}!!](usernameOnClick).",
+                CLAN_WELCOME_MESSAGE_2: "[!!{username}!!](usernameOnClick) just joined the Guild. We hope you brought pizza.",
+                CLAN_WELCOME_MESSAGE_3: "Glad you're here, [!!{username}!!](usernameOnClick), welcome to the Guild.",
+                CLAN_WELCOME_MESSAGE_4: "New recruit! [!!{username}!!](usernameOnClick) joined the Guild.",
+                CLAN_WELCOME_MESSAGE_5: "Round of applause for the newest Guild member, [!!{username}!!](usernameOnClick). Just for being here.",
+                CLAN_WELCOME_MESSAGE_6: "Rolling out the red carpet for [!!{username}!!](usernameOnClick). Say hi!",
+                CLAN_WELCOME_MESSAGE_7: "Yahaha! [!!{username}!!](usernameOnClick) found us!",
+                CLAN_WELCOME_MESSAGE_8: "Get ready everyone -- a [!!{username}!!](usernameOnClick) has appeared!",
+                CLAN_WELCOME_MESSAGE_9: "Roses are red, violets are blue, [!!{username}!!](usernameOnClick) just joined the Guild with you.",
                 QUESTS_MOBILE_EMBED_UNKNOWN_TITLE: "This is an invalid quest",
                 QUESTS_MOBILE_EMBED_UNKNOWN_BODY: "Check to confirm you're using a valid quest URL",
                 QUESTS_MOBILE_EMBED_UNSUPPORTED_TITLE: "This Quest is not available on mobile"
@@ -88856,8 +88876,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299482", "299482"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299482")), t = 0), t
+                let t = parseInt((e = "299492", "299492"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299492")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117022,8 +117042,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299482",
-                    versionHash: "d2485c27d07f76ba6e6aa2a63bfeaca889f53baa"
+                    buildNumber: "299492",
+                    versionHash: "9a0529381c63f2dc28daa17222155f3d2adc6667"
                 }
             }
             n.r(t), n.d(t, {
@@ -174638,8 +174658,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717683855778",
-                                    build_number: "299482"
+                                    built_at: "1717688407707",
+                                    build_number: "299492"
                                 }
                             },
                             retries: 1
@@ -252540,7 +252560,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d2485c27d07f76ba6e6aa2a63bfeaca889f53baa"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9a0529381c63f2dc28daa17222155f3d2adc6667"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281744,7 +281764,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299482"
+                                build_number: "299492"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289053,7 +289073,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299482", "299482"), 10);
+                let s = parseInt((n = "299492", "299492"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316961,4 +316981,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.da886954cbe761874c3d.js.map
+//# sourceMappingURL=27519.aadc8a61ab29aaca4fb7.js.map
