@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299809", ", Version Hash: ").concat("a3448eaa631db9957bec54312ddcc38ac6335b28")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299821", ", Version Hash: ").concat("bc91aae7d320b96676d357ec7c3b9ff7e6b144c3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -59104,16 +59104,23 @@
                             parent_media_session_id: this.parentMediaSessionId
                         });
                         let s = this.getMediaSessionId();
-                        G.default.getMediaEngine().getCodecSurvey().then(e => {
-                            let t = JSON.parse(e);
-                            if (null == t || null == t.available_video_encoders || null == t.available_video_decoders) throw Error("codec survey is not available");
-                            x.default.track(et.AnalyticEvents.VOICE_CODEC_DETECTED, {
-                                ...t,
-                                rtc_connection_id: this.getRTCConnectionId(),
-                                media_session_id: s
-                            })
-                        }).catch(e => {
-                            this.logger.warn(e)
+                        for (let [e, t, n] of(G.default.getMediaEngine().getCodecSurvey().then(e => {
+                                let t = JSON.parse(e);
+                                if (null == t || null == t.available_video_encoders || null == t.available_video_decoders) throw Error("codec survey is not available");
+                                x.default.track(et.AnalyticEvents.VOICE_CODEC_DETECTED, {
+                                    ...t,
+                                    rtc_connection_id: this.getRTCConnectionId(),
+                                    media_session_id: s
+                                })
+                            }).catch(e => {
+                                this.logger.warn(e)
+                            }), Object.values(this._mlsFailures))) x.default.track(et.AnalyticEvents.MLS_FAILURES, {
+                            ...this._getAnalyticsProperties(),
+                            media_session_id: s,
+                            parent_media_session_id: this.parentMediaSessionId,
+                            failure_source: e,
+                            failure_reason: t,
+                            failure_count: n
                         })
                     }
                     if (this._pingTimeouts = [], this._pings = [], this._connectCompletedTime = 0, this._pingBadCount = 0, this._inputDetected = !1, this._mediaSessionId = null, null === (r = this._voiceQuality) || void 0 === r || r.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, null === (s = this._voiceDuration) || void 0 === s || s.stop(), this._voiceDuration = null, null === (a = this._videoQuality) || void 0 === a || a.stop(), this._videoQuality = null, this._videoHealthManager = null, null === (o = this._localMediaSinkWantsManager) || void 0 === o || o.reset(), null != this._connection) {
@@ -59295,6 +59302,10 @@
                         } else n === et.RTCConnectionStates.RTC_CONNECTED && this.stateHistory.reset(this.state)
                     }), l.on(c.BaseConnectionEvent.Ping, this._handlePing.bind(this)), l.on(c.BaseConnectionEvent.PingTimeout, this._handlePingTimeout.bind(this)), l.on(c.BaseConnectionEvent.OutboundLossRate, this._handleOutboundLossRate.bind(this)), l.on(c.BaseConnectionEvent.SoundshareTrace, this._handleSoundshareTrace.bind(this)), l.on(c.BaseConnectionEvent.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), l.on(c.BaseConnectionEvent.Stats, W.default.create()), l.on(c.BaseConnectionEvent.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), l.on(c.BaseConnectionEvent.NoiseCancellationError, e => {
                         this._noiseCancellationError = e
+                    }), l.on(c.BaseConnectionEvent.MLSFailure, (e, t) => {
+                        let n = "".concat(e, ":").concat(t),
+                            i = n in this._mlsFailures ? this._mlsFailures[n][2] : 0;
+                        this._mlsFailures[n] = [e, t, i + 1]
                     }), l.setOnDesktopEncodingOptionsSet((e, t, n) => {
                         var i;
                         if ((null === (i = b.default.getChannel(this.channelId)) || void 0 === i ? void 0 : i.type) === et.ChannelTypes.GUILD_STAGE_VOICE) return;
@@ -59645,7 +59656,7 @@
                     parentMediaSessionId: a
                 }) {
                     var o, l;
-                    super(), er(this, "context", void 0), er(this, "userId", void 0), er(this, "sessionId", void 0), er(this, "guildId", void 0), er(this, "parentMediaSessionId", void 0), er(this, "hostname", void 0), er(this, "state", void 0), er(this, "_videoQuality", void 0), er(this, "_soundshareStats", void 0), er(this, "logger", void 0), er(this, "rtcServerId", void 0), er(this, "_channelId", void 0), er(this, "channelIds", void 0), er(this, "_endpoint", void 0), er(this, "port", void 0), er(this, "token", void 0), er(this, "protocol", void 0), er(this, "voiceVersion", void 0), er(this, "rtcWorkerVersion", void 0), er(this, "_socket", void 0), er(this, "_backoff", void 0), er(this, "_destroyed", void 0), er(this, "_pings", void 0), er(this, "_pingBadCount", void 0), er(this, "_pingTimeouts", void 0), er(this, "_mediaSessionId", void 0), er(this, "_voiceQuality", void 0), er(this, "_voiceQualityPeriodicStatsInterval", void 0), er(this, "_voiceQualityPeriodicStatsSequenceId", void 0), er(this, "_noiseCancellationError", void 0), er(this, "_voiceDuration", void 0), er(this, "_videoHealthManager", void 0), er(this, "_sentVideo", void 0), er(this, "_outboundLossRate", void 0), er(this, "_recordingEnabled", void 0), er(this, "_selectedExperiments", void 0), er(this, "_localMediaSinkWantsManager", void 0), er(this, "_goLiveQualityManager", void 0), er(this, "_remoteVideoSinkWants", void 0), er(this, "_connection", void 0), er(this, "_createdTime", void 0), er(this, "_connectStartTime", void 0), er(this, "_connectCompletedTime", void 0), er(this, "_rtcConnectionId", void 0), er(this, "_connectCount", void 0), er(this, "_connected", void 0), er(this, "_connecting", void 0), er(this, "_encountered_socket_failure", void 0), er(this, "_inputDetected", void 0), er(this, "_encryptionMode", void 0), er(this, "stateHistory", void 0), er(this, "_supportedBandwidthEstimationExperiments", void 0), er(this, "_bandwidthEstimationExperiment", void 0), er(this, "powerMonitorListener", void 0), er(this, "reconnect", () => {
+                    super(), er(this, "context", void 0), er(this, "userId", void 0), er(this, "sessionId", void 0), er(this, "guildId", void 0), er(this, "parentMediaSessionId", void 0), er(this, "hostname", void 0), er(this, "state", void 0), er(this, "_videoQuality", void 0), er(this, "_soundshareStats", void 0), er(this, "logger", void 0), er(this, "rtcServerId", void 0), er(this, "_channelId", void 0), er(this, "channelIds", void 0), er(this, "_endpoint", void 0), er(this, "port", void 0), er(this, "token", void 0), er(this, "protocol", void 0), er(this, "voiceVersion", void 0), er(this, "rtcWorkerVersion", void 0), er(this, "_socket", void 0), er(this, "_backoff", void 0), er(this, "_destroyed", void 0), er(this, "_pings", void 0), er(this, "_pingBadCount", void 0), er(this, "_pingTimeouts", void 0), er(this, "_mediaSessionId", void 0), er(this, "_voiceQuality", void 0), er(this, "_voiceQualityPeriodicStatsInterval", void 0), er(this, "_voiceQualityPeriodicStatsSequenceId", void 0), er(this, "_noiseCancellationError", void 0), er(this, "_voiceDuration", void 0), er(this, "_videoHealthManager", void 0), er(this, "_sentVideo", void 0), er(this, "_outboundLossRate", void 0), er(this, "_recordingEnabled", void 0), er(this, "_selectedExperiments", void 0), er(this, "_localMediaSinkWantsManager", void 0), er(this, "_goLiveQualityManager", void 0), er(this, "_remoteVideoSinkWants", void 0), er(this, "_connection", void 0), er(this, "_createdTime", void 0), er(this, "_connectStartTime", void 0), er(this, "_connectCompletedTime", void 0), er(this, "_rtcConnectionId", void 0), er(this, "_connectCount", void 0), er(this, "_connected", void 0), er(this, "_connecting", void 0), er(this, "_encountered_socket_failure", void 0), er(this, "_inputDetected", void 0), er(this, "_encryptionMode", void 0), er(this, "stateHistory", void 0), er(this, "_supportedBandwidthEstimationExperiments", void 0), er(this, "_bandwidthEstimationExperiment", void 0), er(this, "_mlsFailures", void 0), er(this, "powerMonitorListener", void 0), er(this, "reconnect", () => {
                         let e = this._socket;
                         null != e && (this._connected && (this._connectStartTime = (0, E.now)()), !this._connecting && (this._trackVoiceConnectionConnecting(), this._connecting = !0, this._encountered_socket_failure = !1), this._connectCount++, e.close(), e.connect())
                     }), er(this, "_handleNetworkOnline", () => {
@@ -59720,7 +59731,7 @@
                     }));
                     this._remoteVideoSinkWants = X.DEFAULT_WANTS_FULL, k.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, f.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new Q.default, F.default.addOnlineCallback(this._handleNetworkOnline), F.default.addOfflineCallback(this._handleNetworkOffline), (0, H.isDesktop)() && (this.powerMonitorListener = j.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, G.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
                         this._supportedBandwidthEstimationExperiments = e
-                    })
+                    }), this._mlsFailures = {}
                 }
             }
         },
@@ -75058,7 +75069,7 @@
                     inlineRequire: () => n("736401").default
                 },
                 PromotionsManager: {
-                    actions: ["POST_CONNECTION_OPEN"],
+                    actions: ["POST_CONNECTION_OPEN", "EXPERIMENTS_FETCH_SUCCESS"],
                     inlineRequire: () => n("349540").default
                 },
                 RelationshipManager: {
@@ -89027,8 +89038,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299809", "299809"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299809")), t = 0), t
+                let t = parseInt((e = "299821", "299821"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299821")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117206,8 +117217,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299809",
-                    versionHash: "a3448eaa631db9957bec54312ddcc38ac6335b28"
+                    buildNumber: "299821",
+                    versionHash: "bc91aae7d320b96676d357ec7c3b9ff7e6b144c3"
                 }
             }
             n.r(t), n.d(t, {
@@ -174908,8 +174919,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717712442683",
-                                    build_number: "299809"
+                                    built_at: "1717713612266",
+                                    build_number: "299821"
                                 }
                             },
                             retries: 1
@@ -184265,6 +184276,38 @@
                 }]
             })
         },
+        163684: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                OutboundPromoDesktopUpsellExperiment: function() {
+                    return i
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-06_outbound_promo_desktop_upsell",
+                label: "Upsell Outbound Promos",
+                defaultConfig: {
+                    enabled: !1,
+                    getNitroCTA: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable upsells for outbound promos w/ Nagbar variant 1 - gift inventory cta",
+                    config: {
+                        enabled: !0,
+                        getNitroCTA: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "Enable upsells for outbound promos w/ Nagbar variant 2 - get nitro cta",
+                    config: {
+                        enabled: !0,
+                        getNitroCTA: !0
+                    }
+                }]
+            })
+        },
         650032: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -184737,13 +184780,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 useBogoPromotion: function() {
-                    return f
+                    return S
                 },
                 useOutboundPromotions: function() {
-                    return I
+                    return T
                 },
                 useUnseenOutboundPromotions: function() {
-                    return T
+                    return f
                 }
             }), n("47120");
             var i = n("470079"),
@@ -184752,14 +184795,15 @@
                 a = n("594174"),
                 o = n("74538"),
                 l = n("775412"),
-                u = n("518638"),
-                d = n("748770"),
-                _ = n("1844"),
-                c = n("474936");
+                u = n("163684"),
+                d = n("518638"),
+                _ = n("748770"),
+                c = n("1844"),
+                E = n("474936");
 
-            function E() {
-                let e = (0, r.useStateFromStoresArray)([_.default], () => _.default.outboundPromotions),
-                    t = (0, r.useStateFromStores)([_.default], () => _.default.consumedInboundPromotionId);
+            function I() {
+                let e = (0, r.useStateFromStoresArray)([c.default], () => c.default.outboundPromotions),
+                    t = (0, r.useStateFromStores)([c.default], () => c.default.consumedInboundPromotionId);
                 return i.useMemo(() => e.filter(e => {
                     let {
                         id: n
@@ -184768,84 +184812,88 @@
                 }), [e, t])
             }
 
-            function I() {
-                let e = (0, r.useStateFromStores)([_.default], () => _.default.lastFetchedActivePromotions),
-                    t = E(),
+            function T() {
+                let e = (0, r.useStateFromStores)([c.default], () => c.default.lastFetchedActivePromotions),
+                    t = I(),
                     n = (0, r.useStateFromStores)([a.default], () => a.default.getCurrentUser()),
-                    I = (0, l.useHasActiveTrial)(),
-                    [T, f] = i.useState(!1),
-                    [S, h] = i.useState([]);
+                    T = (0, l.useHasActiveTrial)(),
+                    [f, S] = i.useState(!1),
+                    [h, A] = i.useState([]);
                 i.useEffect(() => {
-                    null != e && s.default.wait(() => d.default.markOutboundPromotionsSeen())
+                    null != e && s.default.wait(() => _.default.markOutboundPromotionsSeen())
                 }, [e]);
-                let A = i.useCallback(e => {
-                        h(t => t.some(t => {
+                let m = i.useCallback(e => {
+                        A(t => t.some(t => {
                             let {
                                 promotion: n
                             } = t;
                             return n.id === e.promotion.id
                         }) ? t : [...t, e])
                     }, []),
-                    m = (0, o.isPremiumExactly)(n, c.PremiumTypes.TIER_2);
+                    N = u.OutboundPromoDesktopUpsellExperiment.useExperiment({
+                        location: "useOutboundPromotions"
+                    }, {
+                        autoTrackExposure: !0
+                    }).enabled || (0, o.isPremiumExactly)(n, E.PremiumTypes.TIER_2);
                 i.useEffect(() => {
                     s.default.wait(() => {
-                        m && null == e && d.default.fetchActiveOutboundPromotions()
+                        N && null == e && _.default.fetchActiveOutboundPromotions()
                     })
-                }, [e, m]), i.useEffect(() => {
+                }, [e, N]), i.useEffect(() => {
                     s.default.wait(() => {
-                        (0, u.fetchClaimedOutboundPromotionCodes)().then(e => {
-                            h(e), f(!0)
+                        (0, d.fetchClaimedOutboundPromotionCodes)().then(e => {
+                            A(e), S(!0)
                         }).catch(() => {
-                            h([]), f(!0)
+                            A([]), S(!0)
                         })
                     })
                 }, []);
-                let N = {};
+                let p = {};
                 for (let {
                         code: e,
                         promotion: t
                     }
-                    of S) N[t.id] = e;
-                let p = new Set(t.map(e => {
+                    of h) p[t.id] = e;
+                let O = new Set(t.map(e => {
                         let {
                             id: t
                         } = e;
                         return t
                     })),
-                    O = S.filter(e => {
+                    C = h.filter(e => {
                         let {
                             promotion: t
                         } = e;
-                        return !p.has(t.id)
+                        return !O.has(t.id)
                     });
                 return {
-                    promotionsLoaded: T && (!m || null != e),
-                    activeOutboundPromotions: t.filter(e => (0, u.shouldShowOutboundPromotionOnPlatform)(e) && (!I || (0, u.isTrialUserEligibleToSeeOutboundPromotion)(e, N))),
-                    claimedEndedOutboundPromotions: O.filter(e => (0, u.shouldShowOutboundPromotionOnPlatform)(e.promotion)),
-                    claimedOutboundPromotionCodeMap: N,
-                    addClaimedOutboundPromotionCode: A
+                    promotionsLoaded: f && (!N || null != e),
+                    activeOutboundPromotions: t.filter(e => (0, d.shouldShowOutboundPromotionOnPlatform)(e) && (!T || (0, d.isTrialUserEligibleToSeeOutboundPromotion)(e, p))),
+                    claimedEndedOutboundPromotions: C.filter(e => (0, d.shouldShowOutboundPromotionOnPlatform)(e.promotion)),
+                    claimedOutboundPromotionCodeMap: p,
+                    addClaimedOutboundPromotionCode: m
                 }
             }
 
-            function T() {
-                let e = (0, r.useStateFromStores)([_.default], () => _.default.lastSeenOutboundPromotionStartDate),
+            function f() {
+                let e = (0, r.useStateFromStores)([c.default], () => c.default.lastSeenOutboundPromotionStartDate),
                     t = (0, l.useHasActiveTrial)(),
-                    n = E();
+                    n = I();
                 return i.useMemo(() => {
-                    if (null == e) return t ? n.filter(e => (0, u.isOutboundPromotionRedeemableByTrialUsers)(e)) : n;
+                    if (null == e) return t ? n.filter(e => (0, d.isOutboundPromotionRedeemableByTrialUsers)(e)) : n;
                     let i = n.filter(t => {
                         let {
                             startDate: n
                         } = t;
                         return new Date(n) > new Date(e)
                     });
-                    return t ? i.filter(e => (0, u.isOutboundPromotionRedeemableByTrialUsers)(e)) : i
-                }, [n, e, t]).filter(e => (0, u.shouldShowOutboundPromotionOnPlatform)(e))
+                    return t ? i.filter(e => (0, d.isOutboundPromotionRedeemableByTrialUsers)(e)) : i
+                }, [n, e, t]).filter(e => (0, d.shouldShowOutboundPromotionOnPlatform)(e))
             }
 
-            function f() {
+            function S() {
                 return {
-                    promotion: (0, r.useStateFromStores)([_.default], () => _.default.bogoPromotion)
+                    promotion: (0, r.useStateFromStores)([c.default], () => c.default.bogoPromotion)
                 }
             }
         },
@@ -184855,20 +184903,29 @@
             var i = n("147913"),
                 r = n("594174"),
                 s = n("74538"),
-                a = n("748770"),
-                o = n("474936");
-            class l extends i.default {
+                a = n("163684"),
+                o = n("748770"),
+                l = n("474936");
+            class u extends i.default {
                 onPostConnectionOpen() {
                     this.maybeFetchActiveOutboundPromotions()
                 }
                 maybeFetchActiveOutboundPromotions() {
-                    let e = r.default.getCurrentUser();
-                    null != e && s.default.isPremiumExactly(e, o.PremiumTypes.TIER_2) && (0, a.fetchActiveOutboundPromotions)()
+                    let e = r.default.getCurrentUser(),
+                        t = s.default.isPremium(e),
+                        n = a.OutboundPromoDesktopUpsellExperiment.getCurrentConfig({
+                            location: "maybeFetchActiveOutboundPromotions"
+                        }, {
+                            autoTrackExposure: !t,
+                            disable: t
+                        }).enabled;
+                    (s.default.isPremiumExactly(e, l.PremiumTypes.TIER_2) || n) && (0, o.fetchActiveOutboundPromotions)()
                 }
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: this.onPostConnectionOpen.bind(this)
+                        POST_CONNECTION_OPEN: this.onPostConnectionOpen.bind(this),
+                        EXPERIMENTS_FETCH_SUCCESS: this.onPostConnectionOpen.bind(this)
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -184877,7 +184934,7 @@
                     }) : t[n] = i
                 }
             }
-            t.default = new l
+            t.default = new u
         },
         1844: function(e, t, n) {
             "use strict";
@@ -252876,7 +252933,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a3448eaa631db9957bec54312ddcc38ac6335b28"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "bc91aae7d320b96676d357ec7c3b9ff7e6b144c3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282120,7 +282177,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299809"
+                                build_number: "299821"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289429,7 +289486,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299809", "299809"), 10);
+                let s = parseInt((n = "299821", "299821"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302286,7 +302343,7 @@
                 BaseConnectionEvent: function() {
                     return i
                 }
-            }), (r = i || (i = {})).Destroy = "destroy", r.LocalVideoDisabled = "local-video-disabled", r.ActiveSinksChange = "active-sinks-change", r.ExperimentFlag = "experiment-flag", r.ConnectionStateChange = "connectionstatechange", r.Error = "error", r.Connected = "connected", r.VideoHookStart = "videohook-start", r.VideoHookStop = "videohook-stop", r.VideoHookInitialize = "videohook-initialize", r.ScreenshareFinish = "screenshare-finish", r.VideoState = "video-state", r.SoundshareTrace = "soundsharetrace", r.SoundshareSpeaking = "soundsharespeaking", r.SoundshareAttached = "soundshareattached", r.SoundshareFailed = "soundsharefailed", r.Speaking = "speaking", r.SpeakingWhileMuted = "speakingwhilemuted", r.Mute = "mute", r.ToggleMuteFromNative = "toggle-mute", r.NativeMuteChanged = "native-mute-changed", r.LocalMute = "local-mute", r.NoiseLevel = "noiselevel", r.Video = "video", r.Ping = "ping", r.PingTimeout = "pingtimeout", r.Silence = "silence", r.DesktopSourceEnd = "desktopsourceend", r.OutboundLossRate = "outboundlossrate", r.NoiseCancellationError = "noisecancellererror", r.VoiceActivityDetectorError = "voiceactivitydetectorerror", r.InteractionRequired = "interactionrequired", r.AudioPermission = "audio-permission", r.VideoPermission = "video-permission", r.Stats = "stats", r.FirstFrame = "first-frame", r.VideoEncoderFallback = "video-encoder-fallback", r.RemoteStreamsReady = "remote-streams-ready"
+            }), (r = i || (i = {})).Destroy = "destroy", r.LocalVideoDisabled = "local-video-disabled", r.ActiveSinksChange = "active-sinks-change", r.ExperimentFlag = "experiment-flag", r.ConnectionStateChange = "connectionstatechange", r.Error = "error", r.Connected = "connected", r.VideoHookStart = "videohook-start", r.VideoHookStop = "videohook-stop", r.VideoHookInitialize = "videohook-initialize", r.ScreenshareFinish = "screenshare-finish", r.VideoState = "video-state", r.SoundshareTrace = "soundsharetrace", r.SoundshareSpeaking = "soundsharespeaking", r.SoundshareAttached = "soundshareattached", r.SoundshareFailed = "soundsharefailed", r.Speaking = "speaking", r.SpeakingWhileMuted = "speakingwhilemuted", r.Mute = "mute", r.ToggleMuteFromNative = "toggle-mute", r.NativeMuteChanged = "native-mute-changed", r.LocalMute = "local-mute", r.NoiseLevel = "noiselevel", r.Video = "video", r.Ping = "ping", r.PingTimeout = "pingtimeout", r.Silence = "silence", r.DesktopSourceEnd = "desktopsourceend", r.OutboundLossRate = "outboundlossrate", r.NoiseCancellationError = "noisecancellererror", r.VoiceActivityDetectorError = "voiceactivitydetectorerror", r.InteractionRequired = "interactionrequired", r.AudioPermission = "audio-permission", r.VideoPermission = "video-permission", r.Stats = "stats", r.FirstFrame = "first-frame", r.VideoEncoderFallback = "video-encoder-fallback", r.RemoteStreamsReady = "remote-streams-ready", r.MLSFailure = "mls-failure"
         },
         60541: function(e, t, n) {
             "use strict";
@@ -303195,24 +303252,24 @@
                                     decode: e.decode
                                 }
                             })], this.logger.info("Audio codecs: ".concat(this.codecs.filter(e => "audio" === e.type).map(e => e.name))), this.logger.info("Video codecs: ".concat(this.codecs.filter(e => "video" === e.type).map(e => e.name + "[encode: " + e.encode + ", decode: " + e.decode + "]"))), t.getEncryptionModes(i => {
-                                var r, s, u, d, _, c, E, I, T, S, h;
+                                var r, s, u, d, _, c, E, I, T, S, h, A;
                                 this.logger.info("Encryption modes: ".concat(i)), t.setTransportOptions(this.getConnectionTransportOptions()), t.setSelfMute(this.selfMute || this.context === O.MediaEngineContextTypes.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null === (r = t.setOnNativeMuteToggleCallback) || void 0 === r || r.call(t, this.handleNativeMuteToggled), null === (s = t.setOnNativeMuteChangedCallback) || void 0 === s || s.call(t, this.handleNativeMuteChanged), null === (u = t.setOnSpeakingWhileMutedCallback) || void 0 === u || u.call(t, this.handleSpeakingWhileMuted), null === (d = t.setPingInterval) || void 0 === d || d.call(t, O.PING_INTERVAL), t.setPingCallback(this.handlePing), null === (_ = t.setPingTimeoutCallback) || void 0 === _ || _.call(t, this.handlePingTimeout), null === (c = t.setOnVideoEncoderFallbackCallback) || void 0 === c || c.call(t, this.handleVideoEncoderFallback), n.setTransportOptions({
                                     builtInEchoCancellation: !0,
                                     echoCancellation: this.echoCancellation,
                                     noiseSuppression: this.noiseSuppression,
                                     automaticGainControl: this.automaticGainControl,
                                     noiseCancellation: this.noiseCancellation
-                                }), n.setNoInputThreshold(-100), n.setNoInputCallback(this.handleNoInput), this.videoSupported && (t.setOnVideoCallback(this.handleVideo), null === (E = t.setOnFirstFrameCallback) || void 0 === E || E.call(t, this.handleFirstFrame), null === (I = t.setOnDesktopSourceEnded) || void 0 === I || I.call(t, this.handleDesktopSourceEnded), null === (T = t.setOnSoundshare) || void 0 === T || T.call(t, this.handleSoundshare), null === (S = t.setOnSoundshareEnded) || void 0 === S || S.call(t, this.handleSoundshareEnded), null === (h = t.setOnSoundshareFailed) || void 0 === h || h.call(t, this.handleSoundshareFailed)), this.setConnectionState(O.ConnectionStates.CONNECTED), this.emit(f.BaseConnectionEvent.Connected, a, {
+                                }), n.setNoInputThreshold(-100), n.setNoInputCallback(this.handleNoInput), this.videoSupported && (t.setOnVideoCallback(this.handleVideo), null === (I = t.setOnFirstFrameCallback) || void 0 === I || I.call(t, this.handleFirstFrame), null === (T = t.setOnDesktopSourceEnded) || void 0 === T || T.call(t, this.handleDesktopSourceEnded), null === (S = t.setOnSoundshare) || void 0 === S || S.call(t, this.handleSoundshare), null === (h = t.setOnSoundshareEnded) || void 0 === h || h.call(t, this.handleSoundshareEnded), null === (A = t.setOnSoundshareFailed) || void 0 === A || A.call(t, this.handleSoundshareFailed)), null === (E = t.setOnMLSFailureCallback) || void 0 === E || E.call(t, this.handleMLSFailure), this.setConnectionState(O.ConnectionStates.CONNECTED), this.emit(f.BaseConnectionEvent.Connected, a, {
                                     address: o,
                                     port: l,
                                     mode: this.chooseEncryptionMode(e.modes, i),
                                     codecs: this.codecs
                                 }), this.on(f.BaseConnectionEvent.Stats, this.handleStats);
-                                let A = this.getUserOptions();
-                                for (let e of (A.forEach(e => {
+                                let m = this.getUserOptions();
+                                for (let e of (m.forEach(e => {
                                         var t, n;
                                         return this.logger.info("Creating user: ".concat(e.id, " with audio SSRC: ").concat(e.ssrc, " and video SSRCs: ").concat(null !== (n = null === (t = e.videoSsrcs) || void 0 === t ? void 0 : t.join(",")) && void 0 !== n ? n : 0))
-                                    }), t.mergeUsers(A), this.emit(f.BaseConnectionEvent.RemoteStreamsReady, A.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
+                                    }), t.mergeUsers(m), this.emit(f.BaseConnectionEvent.RemoteStreamsReady, m.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
                             })
                         })
                     })).setDesktopSourceStatusCallback) || void 0 === r || r.call(t, e => {
@@ -303903,6 +303960,8 @@
                             }
                             this.stats = e
                         }
+                    }), C(this, "handleMLSFailure", (e, t) => {
+                        this.emit(f.BaseConnectionEvent.MLSFailure, e, t)
                     }), this.logger = new c.Logger("Connection(".concat(e, ")")), this.videoSupported = n
                 }
             }
@@ -317374,4 +317433,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.e32e557949106254ce6c.js.map
+//# sourceMappingURL=27519.75a140693ec53ef70228.js.map
