@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299833", ", Version Hash: ").concat("5c49caa108d331add3aa49b288f19e67f1a96c67")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299859", ", Version Hash: ").concat("0b537cc83af24bb8ae061f096c2dea9386edc327")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89039,8 +89039,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299833", "299833"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299833")), t = 0), t
+                let t = parseInt((e = "299859", "299859"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299859")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117218,8 +117218,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299833",
-                    versionHash: "5c49caa108d331add3aa49b288f19e67f1a96c67"
+                    buildNumber: "299859",
+                    versionHash: "0b537cc83af24bb8ae061f096c2dea9386edc327"
                 }
             }
             n.r(t), n.d(t, {
@@ -174920,8 +174920,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717714354912",
-                                    build_number: "299833"
+                                    built_at: "1717715566919",
+                                    build_number: "299859"
                                 }
                             },
                             retries: 1
@@ -213641,45 +213641,43 @@
                     guildId: C,
                     profileType: R,
                     pendingBanner: g,
-                    overrideBannerWidth: L,
-                    children: v,
-                    animateOnHover: D = !1,
-                    hasProfileEffect: M = !1,
-                    canUsePremiumCustomization: y = !1
-                } = e, P = y || S.default.isPremiumAtLeast(null == O ? void 0 : O.premiumType, N.PremiumTypes.TIER_2), [U, b] = r.useState(!1), G = (0, l.useStateFromStores)([I.default], () => I.default.isFocused()), w = E.GifAutoPlay.getSetting(), {
-                    bannerSrc: k,
-                    status: B
+                    children: L,
+                    animateOnHover: v = !1,
+                    hasProfileEffect: D = !1,
+                    canUsePremiumCustomization: M = !1
+                } = e, y = M || S.default.isPremiumAtLeast(null == O ? void 0 : O.premiumType, N.PremiumTypes.TIER_2), [P, U] = r.useState(!1), b = (0, l.useStateFromStores)([I.default], () => I.default.isFocused()), G = E.GifAutoPlay.getSetting(), {
+                    bannerSrc: w,
+                    status: k
                 } = (0, h.default)({
                     displayProfile: O,
                     pendingBanner: g,
                     size: (0, m.getUserBannerSize)(R),
-                    canAnimate: D || !w ? U : G
-                }), V = (0, d.useToken)(u.default.unsafe_rawColors.PRIMARY_800).hex(), x = (0, d.getAvatarSize)(d.AvatarSizes.SIZE_80), F = (0, o.hex2int)((0, _.default)(s.getAvatarURL(C, x), V, !1)), H = (0, c.default)(null !== (t = null == O ? void 0 : O.primaryColor) && void 0 !== t ? t : F).hsl;
+                    canAnimate: v || !G ? P : b
+                }), B = (0, d.useToken)(u.default.unsafe_rawColors.PRIMARY_800).hex(), V = (0, d.getAvatarSize)(d.AvatarSizes.SIZE_80), x = (0, o.hex2int)((0, _.default)(s.getAvatarURL(C, V), B, !1)), F = (0, c.default)(null !== (t = null == O ? void 0 : O.primaryColor) && void 0 !== t ? t : x).hsl;
                 return (0, i.jsx)(A.default, {
-                    isPremium: P,
+                    isPremium: y,
                     hasThemeColors: null !== (n = null == O ? void 0 : O.canEditThemes) && void 0 !== n && n,
                     profileType: R,
-                    hasBanner: null != k,
-                    hasProfileEffect: M,
-                    overrideBannerWidth: L,
+                    hasBanner: null != w,
+                    hasProfileEffect: D,
                     children: (0, i.jsxs)("div", {
                         className: a()(p.banner, p.divider, (0, m.getUserBannerStyles)({
                             profileType: R,
                             user: {
-                                hasBanner: null != k,
-                                isPremium: P,
-                                hasProfileEffect: M
+                                hasBanner: null != w,
+                                isPremium: y,
+                                hasProfileEffect: D
                             }
                         })),
-                        onMouseMove: () => b(!0),
-                        onMouseLeave: () => b(!1),
+                        onMouseMove: () => U(!0),
+                        onMouseLeave: () => U(!1),
                         style: {
-                            backgroundImage: null != k ? "url(".concat(k, ")") : void 0,
-                            backgroundColor: B !== h.BannerLoadingStatus.COMPLETE ? u.default.unsafe_rawColors.PRIMARY_800.css : H
+                            backgroundImage: null != w ? "url(".concat(w, ")") : void 0,
+                            backgroundColor: k !== h.BannerLoadingStatus.COMPLETE ? u.default.unsafe_rawColors.PRIMARY_800.css : F
                         },
-                        children: [!w && (0, f.isAnimatedImageURL)(k) && (0, i.jsx)(T.default, {
+                        children: [!G && (0, f.isAnimatedImageURL)(w) && (0, i.jsx)(T.default, {
                             className: p.gifTag
-                        }), v]
+                        }), L]
                     })
                 })
             }
@@ -252936,7 +252934,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5c49caa108d331add3aa49b288f19e67f1a96c67"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0b537cc83af24bb8ae061f096c2dea9386edc327"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282180,7 +282178,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299833"
+                                build_number: "299859"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289489,7 +289487,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299833", "299833"), 10);
+                let s = parseInt((n = "299859", "299859"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317436,4 +317434,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.e9a5866c00a34f71606b.js.map
+//# sourceMappingURL=27519.12a8fec80703d44c1857.js.map
