@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299635", ", Version Hash: ").concat("835ed3415d9da5ddfcf0033b4ba45074027d77e6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299636", ", Version Hash: ").concat("446a854ff938cbd9931b01075559d7ec7143e204")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -71903,7 +71903,7 @@
                     this.waitFor(a.default)
                 }
                 constructor(...e) {
-                    super(...e), l(this, "database", e => o.default.database(null != e ? e : a.default.getId())), l(this, "channels", d(e => new r.GuildEntityDao("guild_channels", r.TableId.KvCache, e))), l(this, "channelsTemp", d(e => new r.GuildDao("guild_channels_temp", r.TableId.KvCache, e))), l(this, "basicChannels", d(e => new r.Dao("basic_channels", r.TableId.KvCache, e))), l(this, "syncedBasicChannels", d(e => new r.Dao("basic_channels_synced", r.TableId.KvCache, e))), l(this, "cache", d(e => new r.Dao("cache", r.TableId.KvCache, e))), l(this, "forceResyncVersion", d(e => new r.Dao("force_resync_version", r.TableId.KvCache, e))), l(this, "emojis", d(e => new r.GuildEntityDao("guild_emojis", r.TableId.KvCache, e))), l(this, "guilds", d(e => new r.EntityDao("guilds", r.TableId.KvCache, e))), l(this, "guildsRequiringDeletedIdsSync", d(e => new r.EntityDao("guilds_requiring_deleted_ids_sync", r.TableId.KvCache, e))), l(this, "messages", d(e => new r.MessageDao("messages", r.TableId.Messages, e))), l(this, "stickers", d(e => new r.GuildEntityDao("guild_stickers", r.TableId.KvCache, e))), l(this, "guildVersions", d(e => new r.EntityDao("guild_versions", r.TableId.KvCache, e))), l(this, "nonGuildVersions", d(e => new r.EntityDao("non_guild_versions", r.TableId.KvCache, e))), l(this, "userSettings", d(e => new r.EntityDao("user_settings", r.TableId.KvCache, e))), l(this, "readStates", d(e => new r.Dao("read_states", r.TableId.KvCache, e))), l(this, "userGuildSettings", d(e => new r.Dao("user_guild_settings", r.TableId.KvCache, e))), l(this, "channelsTransaction", e => this.channels(e.database).upgradeTransaction(e)), l(this, "channelsTempTransaction", e => this.channelsTemp(e.database).upgradeTransaction(e)), l(this, "basicChannelsTransaction", e => this.basicChannels(e.database).upgradeTransaction(e)), l(this, "syncedBasicChannelsTransaction", e => this.syncedBasicChannels(e.database).upgradeTransaction(e)), l(this, "cacheTransaction", e => this.cache(e.database).upgradeTransaction(e)), l(this, "forceResyncVersionTransaction", e => this.forceResyncVersion(e.database).upgradeTransaction(e)), l(this, "emojisTransaction", e => this.emojis(e.database).upgradeTransaction(e)), l(this, "guildsTransaction", e => this.guilds(e.database).upgradeTransaction(e)), l(this, "messagesTransaction", e => this.messages(e.database).upgradeTransaction(e)), l(this, "stickersTransaction", e => this.stickers(e.database).upgradeTransaction(e)), l(this, "guildVersionsTransaction", e => this.guildVersions(e.database).upgradeTransaction(e)), l(this, "nonGuildVersionsTransaction", e => this.nonGuildVersions(e.database).upgradeTransaction(e)), l(this, "userSettingsTransaction", e => this.userSettings(e.database).upgradeTransaction(e)), l(this, "readStatesTransaction", e => this.readStates(e.database).upgradeTransaction(e)), l(this, "userGuildSettingsTransaction", e => this.userGuildSettings(e.database).upgradeTransaction(e)), l(this, "guildsRequiringDeletedIdsSyncTransaction", e => this.guildsRequiringDeletedIdsSync(e.database).upgradeTransaction(e))
+                    super(...e), l(this, "database", e => o.default.database(null != e ? e : a.default.getId())), l(this, "channels", d(e => new r.GuildEntityDao("guild_channels", r.TableId.KvCache, e))), l(this, "channelsTemp", d(e => new r.GuildDao("guild_channels_temp", r.TableId.KvCache, e))), l(this, "basicChannels", d(e => new r.Dao("basic_channels", r.TableId.KvCache, e))), l(this, "syncedBasicChannels", d(e => new r.Dao("basic_channels_synced", r.TableId.KvCache, e))), l(this, "cache", d(e => new r.Dao("cache", r.TableId.KvCache, e))), l(this, "forceResyncVersion", d(e => new r.Dao("force_resync_version", r.TableId.KvCache, e))), l(this, "emojis", d(e => new r.GuildEntityDao("guild_emojis", r.TableId.KvCache, e))), l(this, "guilds", d(e => new r.EntityDao("guilds", r.TableId.KvCache, e))), l(this, "guildsRequiringDeletedIdsSync", d(e => new r.EntityDao("guilds_requiring_deleted_ids_sync", r.TableId.KvCache, e))), l(this, "messages", d(e => new r.MessageDao("messages", r.TableId.Messages, e))), l(this, "stickers", d(e => new r.GuildEntityDao("guild_stickers", r.TableId.KvCache, e))), l(this, "guildVersions", d(e => new r.EntityDao("guild_versions", r.TableId.KvCache, e))), l(this, "nonGuildVersions", d(e => new r.EntityDao("non_guild_versions", r.TableId.KvCache, e))), l(this, "userSettings", d(e => new r.EntityDao("user_settings", r.TableId.KvCache, e))), l(this, "readStates", d(e => new r.Dao("read_states", r.TableId.KvCache, e))), l(this, "userGuildSettings", d(e => new r.Dao("user_guild_settings", r.TableId.KvCache, e))), l(this, "userSearchItems", d(e => new r.EntityDao("user_search_items", r.TableId.KvCache, e))), l(this, "channelsTransaction", e => this.channels(e.database).upgradeTransaction(e)), l(this, "channelsTempTransaction", e => this.channelsTemp(e.database).upgradeTransaction(e)), l(this, "basicChannelsTransaction", e => this.basicChannels(e.database).upgradeTransaction(e)), l(this, "syncedBasicChannelsTransaction", e => this.syncedBasicChannels(e.database).upgradeTransaction(e)), l(this, "cacheTransaction", e => this.cache(e.database).upgradeTransaction(e)), l(this, "forceResyncVersionTransaction", e => this.forceResyncVersion(e.database).upgradeTransaction(e)), l(this, "emojisTransaction", e => this.emojis(e.database).upgradeTransaction(e)), l(this, "guildsTransaction", e => this.guilds(e.database).upgradeTransaction(e)), l(this, "messagesTransaction", e => this.messages(e.database).upgradeTransaction(e)), l(this, "stickersTransaction", e => this.stickers(e.database).upgradeTransaction(e)), l(this, "guildVersionsTransaction", e => this.guildVersions(e.database).upgradeTransaction(e)), l(this, "nonGuildVersionsTransaction", e => this.nonGuildVersions(e.database).upgradeTransaction(e)), l(this, "userSettingsTransaction", e => this.userSettings(e.database).upgradeTransaction(e)), l(this, "readStatesTransaction", e => this.readStates(e.database).upgradeTransaction(e)), l(this, "userGuildSettingsTransaction", e => this.userGuildSettings(e.database).upgradeTransaction(e)), l(this, "guildsRequiringDeletedIdsSyncTransaction", e => this.guildsRequiringDeletedIdsSync(e.database).upgradeTransaction(e)), l(this, "userSearchItemsTransaction", e => this.userSearchItems(e.database).upgradeTransaction(e))
                 }
             }
 
@@ -88887,8 +88887,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299635", "299635"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299635")), t = 0), t
+                let t = parseInt((e = "299636", "299636"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299636")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117060,8 +117060,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299635",
-                    versionHash: "835ed3415d9da5ddfcf0033b4ba45074027d77e6"
+                    buildNumber: "299636",
+                    versionHash: "446a854ff938cbd9931b01075559d7ec7143e204"
                 }
             }
             n.r(t), n.d(t, {
@@ -174762,8 +174762,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717699619861",
-                                    build_number: "299635"
+                                    built_at: "1717699921295",
+                                    build_number: "299636"
                                 }
                             },
                             retries: 1
@@ -252710,7 +252710,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "835ed3415d9da5ddfcf0033b4ba45074027d77e6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "446a854ff938cbd9931b01075559d7ec7143e204"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281914,7 +281914,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299635"
+                                build_number: "299636"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289223,7 +289223,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299635", "299635"), 10);
+                let s = parseInt((n = "299636", "299636"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317134,4 +317134,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.b24716013c89c39d2e34.js.map
+//# sourceMappingURL=27519.ff1a3d65515ab6cf8a56.js.map
