@@ -10135,6 +10135,37 @@ span.clanTag_f4aadc {
     color: var(--primary-500)
 }
 
+.container_e5e00c {
+    background-color: var(--background-primary);
+    box-shadow: var(--elevation-medium);
+    border-radius: var(--radius-sm);
+    width: 180px
+}
+
+.clearText__5b2a7 {
+    color: var(--text-link)
+}
+
+.sortDropdown__757b3 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 32px;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-xxl);
+    padding: 8px 8px 8px 12px
+}
+
+.sortDropdownInner__58619 {
+    display: flex;
+    align-items: center;
+    color: var(--interactive-normal)
+}
+
+.sortIconMargin__2f422 {
+    margin-right: 4px
+}
+
 .container__7b73b {
     display: flex;
     flex-direction: column;
@@ -142793,4 +142824,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.17cad3c423176e239b7d.css.map*/
+/*# sourceMappingURL=99387.8853c4b219f2a022ed8d.css.map*/
