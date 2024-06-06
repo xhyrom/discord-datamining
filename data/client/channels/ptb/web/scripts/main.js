@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299779", ", Version Hash: ").concat("13a05b30945420e4a4512c24a00a2bd008c8ed9e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299792", ", Version Hash: ").concat("c85214bba57763c62a0be15b049a2cd1570a506f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89027,8 +89027,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299779", "299779"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299779")), t = 0), t
+                let t = parseInt((e = "299792", "299792"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299792")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117206,8 +117206,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299779",
-                    versionHash: "13a05b30945420e4a4512c24a00a2bd008c8ed9e"
+                    buildNumber: "299792",
+                    versionHash: "c85214bba57763c62a0be15b049a2cd1570a506f"
                 }
             }
             n.r(t), n.d(t, {
@@ -174908,8 +174908,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717710475525",
-                                    build_number: "299779"
+                                    built_at: "1717711579290",
+                                    build_number: "299792"
                                 }
                             },
                             retries: 1
@@ -188797,35 +188797,26 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return s
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("393586"),
-                s = n("481060"),
-                a = n("795548");
+            var r = n("481060");
 
-            function o(e) {
+            function s(e) {
                 let {
                     children: t,
                     className: n,
-                    size: o = s.Button.Sizes.SMALL,
-                    ...l
+                    size: s = r.Button.Sizes.SMALL,
+                    ...a
                 } = e;
-                return (0, i.jsx)(s.Button, {
-                    ...l,
-                    color: s.Button.Colors.BRAND,
-                    size: o,
+                return (0, i.jsx)(r.Button, {
+                    ...a,
+                    color: r.Button.Colors.BRAND,
+                    size: s,
                     className: n,
-                    children: (0, i.jsxs)("div", {
-                        className: a.button,
-                        children: [(0, i.jsx)(r.ShopIcon, {
-                            color: "white",
-                            height: 16,
-                            width: 16
-                        }), t]
-                    })
+                    children: t
                 })
             }
         },
@@ -252885,7 +252876,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "13a05b30945420e4a4512c24a00a2bd008c8ed9e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c85214bba57763c62a0be15b049a2cd1570a506f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -254663,39 +254654,42 @@
                     copyValue: o,
                     copyMetaData: S,
                     copyTooltip: h,
-                    children: A,
-                    disableCopy: m,
-                    showCopyIcon: N
-                } = e, [p, O] = a.useState(0), [C, R] = a.useState(!1), [g, L] = a.useState(!1);
+                    copyTooltipDelay: A = 500,
+                    children: m,
+                    disableCopy: N,
+                    showCopyIcon: p,
+                    "aria-label": O,
+                    onCopy: C
+                } = e, [R, g] = a.useState(0), [L, v] = a.useState(!1), [D, M] = a.useState(!1);
                 if (a.useEffect(() => (i = new u.Timeout, r = new u.Timeout, function() {
                         i.stop(), r.stop()
-                    }), []), !c.SUPPORTS_COPY || m) return (0, s.jsx)(s.Fragment, {
-                    children: A
+                    }), []), !c.SUPPORTS_COPY || N) return (0, s.jsx)(s.Fragment, {
+                    children: m
                 });
-                let v = [T.default.Messages.COPY_SUCCESS_1, T.default.Messages.COPY_SUCCESS_2, T.default.Messages.COPY_SUCCESS_3, T.default.Messages.COPY_SUCCESS_4, T.default.Messages.COPY_SUCCESS_5, T.default.Messages.COPY_SUCCESS_6, T.default.Messages.COPY_SUCCESS_7, T.default.Messages.COPY_SUCCESS_8, T.default.Messages.COPY_SUCCESS_9, T.default.Messages.COPY_SUCCESS_10, T.default.Messages.COPY_SUCCESS_11],
-                    D = Math.min(Math.max(p - 1, 0), v.length - 1),
-                    M = null !== (t = v[D]) && void 0 !== t ? t : v[0],
-                    y = p >= v.length - 1,
-                    P = y ? d.TooltipColors.RED : d.TooltipColors.GREEN,
-                    U = C ? P : d.TooltipColors.PRIMARY,
-                    b = () => {
-                        i.stop(), L(!1)
+                let y = [T.default.Messages.COPY_SUCCESS_1, T.default.Messages.COPY_SUCCESS_2, T.default.Messages.COPY_SUCCESS_3, T.default.Messages.COPY_SUCCESS_4, T.default.Messages.COPY_SUCCESS_5, T.default.Messages.COPY_SUCCESS_6, T.default.Messages.COPY_SUCCESS_7, T.default.Messages.COPY_SUCCESS_8, T.default.Messages.COPY_SUCCESS_9, T.default.Messages.COPY_SUCCESS_10, T.default.Messages.COPY_SUCCESS_11],
+                    P = Math.min(Math.max(R - 1, 0), y.length - 1),
+                    U = null !== (t = y[P]) && void 0 !== t ? t : y[0],
+                    b = R >= y.length - 1,
+                    G = b ? d.TooltipColors.RED : d.TooltipColors.GREEN,
+                    w = L ? G : d.TooltipColors.PRIMARY,
+                    k = () => {
+                        i.stop(), M(!1)
                     },
-                    G = e => {
-                        (0, c.copy)(o), _.default.track(I.AnalyticEvents.TEXT_COPIED, {
+                    B = e => {
+                        null == C || C(), (0, c.copy)(o), _.default.track(I.AnalyticEvents.TEXT_COPIED, {
                             type: S
-                        }), "function" == typeof e && e(), !g && O(p + 1), L(!0), R(!0), i.start(1e3, () => L(!1)), r.start(2e3, () => O(0))
+                        }), "function" == typeof e && e(), !D && g(R + 1), M(!0), v(!0), i.start(1e3, () => M(!1)), r.start(2e3, () => g(0))
                     };
                 return (0, s.jsx)(d.Tooltip, {
-                    delay: 500,
-                    color: U,
-                    forceOpen: g,
-                    text: C ? (0, s.jsx)(d.Shaker, {
-                        isShaking: y,
-                        children: M
+                    delay: A,
+                    color: w,
+                    forceOpen: D,
+                    text: L ? (0, s.jsx)(d.Shaker, {
+                        isShaking: b,
+                        children: U
                     }) : h,
                     onAnimationRest: (e, t) => {
-                        !g && C && t.phase === I.SpringTransitionPhases.LEAVE && R(!1)
+                        !D && L && t.phase === I.SpringTransitionPhases.LEAVE && v(!1)
                     },
                     "aria-label": h,
                     children: e => {
@@ -254707,18 +254701,19 @@
                         return (0, s.jsx)(d.Clickable, {
                             ...r,
                             className: f.clickTarget,
+                            "aria-label": O,
                             onMouseEnter: () => {
-                                C ? b() : "function" == typeof i && i()
+                                L ? k() : "function" == typeof i && i()
                             },
                             onClick: () => {
-                                G(t)
+                                B(t)
                             },
                             children: (0, s.jsxs)("div", {
                                 className: l()(n, f.copiableWrapper),
                                 children: [(0, s.jsx)("div", {
                                     className: f.childWrapper,
-                                    children: A
-                                }), N ? (0, s.jsx)("div", {
+                                    children: m
+                                }), p ? (0, s.jsx)("div", {
                                     className: f.__invalid_copyIconWrapper,
                                     children: (0, s.jsx)(E.default, {
                                         width: 18,
@@ -282125,7 +282120,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299779"
+                                build_number: "299792"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289434,7 +289429,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299779", "299779"), 10);
+                let s = parseInt((n = "299792", "299792"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317379,4 +317374,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.0cfbf92b9d835ea6fef1.js.map
+//# sourceMappingURL=27519.b232201858bba534d32b.js.map

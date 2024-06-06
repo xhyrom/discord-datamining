@@ -9037,6 +9037,12 @@ html .progress__00e29 {
     width: 100%
 }
 
+.button__3636d {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
 .artContainer_d1b91a {
     box-shadow: none;
     filter: drop-shadow(0 8px 16px rgba(0, 0, 0, .24));
@@ -36927,6 +36933,28 @@ img.thumbnail__18ece {
     gap: 4px
 }
 
+.copiable_ebb5c8 {
+    width: 16px;
+    height: 16px;
+    border-radius: var(--radius-round);
+    color: var(--interactive-normal);
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.copiable_ebb5c8:hover {
+    color: var(--interactive-hover)
+}
+
+.copiable_ebb5c8:active {
+    color: var(--interactive-active)
+}
+
+.copiable_ebb5c8.visible_e86454,
+.copiable_ebb5c8:focus-visible {
+    opacity: 1
+}
+
 .body_cdd5b8 {
     padding: 0 16px 16px;
     gap: 16px;
@@ -54283,12 +54311,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     cursor: pointer
 }
 
-.button_f9cb38 {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
 .storeBtn_aa1533 {
     display: flex
 }
@@ -69606,8 +69628,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .planInfo_c12dc8 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -142258,4 +142280,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.fc6384dda47c1ea44a62.css.map*/
+/*# sourceMappingURL=99387.69e4a03353cb963be74e.css.map*/
