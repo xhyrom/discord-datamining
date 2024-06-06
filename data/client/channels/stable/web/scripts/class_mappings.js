@@ -2763,9 +2763,8 @@
             "use strict";
             e.exports = {
                 activityButton: "activityButton_d66dd3",
-                rocket: "rocket__4ebd3",
-                rocketHovered: "rocketHovered__0e379",
-                rocketUnhovered: "rocketUnhovered__86bc7"
+                iconHovered: "iconHovered_ce95cb",
+                iconUnhovered: "iconUnhovered__60810"
             }
         },
         706961: function(e) {
@@ -4673,6 +4672,7 @@
                 buttonContainer: "buttonContainer_ff1010",
                 buttons: "buttons__7ecff",
                 channelTextArea: "channelTextArea__648e5",
+                channelTextAreaContainer: "channelTextAreaContainer__37a67",
                 channelTextAreaDisabled: "channelTextAreaDisabled_d0f0e8",
                 disabledButtonWrapper: "disabledButtonWrapper__30b08",
                 emojiButton: "emojiButton_b63c38 button__493d9",
@@ -5950,8 +5950,6 @@
                 logo: "logo__1a825",
                 logoAndDescriptionContainer: "logoAndDescriptionContainer__5ad27",
                 overflowImage: "overflowImage_b382c8",
-                overflowSlideAnimator: "overflowSlideAnimator__4428d",
-                overflowSlideAnimatorContainer: "overflowSlideAnimatorContainer__57bdc",
                 paginationButton: "paginationButton__51441",
                 paginationControls: "paginationControls_f5f6d3"
             }
@@ -6178,13 +6176,11 @@
         816124: function(e) {
             "use strict";
             e.exports = {
-                arrow: "arrow_f85c6c",
                 carousel: "carousel__60d1f",
                 carouselContainer: "carouselContainer_a4244b",
                 carouselItem: "carouselItem__6777e",
                 controls: "controls__70e9a",
                 paginationButton: "paginationButton_cadcbe",
-                paginationButtonIcon: "paginationButtonIcon_d7942f",
                 paginationIndicator: "paginationIndicator__1b7b6",
                 paginationIndicatorButton: "paginationIndicatorButton__44ae5",
                 paginationIndicatorContainer: "paginationIndicatorContainer__13fc6",
@@ -11016,6 +11012,7 @@
             e.exports = {
                 content: "content__40726",
                 description: "description_e091f8",
+                headerWarning: "headerWarning__71305",
                 listControls: "listControls__994a8",
                 previewButton: "previewButton__8c785",
                 previewContainer: "previewContainer_e43d4c",
@@ -21002,7 +20999,9 @@
                 giftButton: "giftButton__890d6",
                 giftIcon: "giftIcon_a1f989",
                 premiumIcon: "premiumIcon__6c12e",
-                premiumSubscribeButton: "premiumSubscribeButton__61b05"
+                premiumSubscribeButton: "premiumSubscribeButton__61b05",
+                tier1Gradient: "tier1Gradient__63fd2",
+                tier2Gradient: "tier2Gradient_db57b9"
             }
         },
         697466: function(e) {
@@ -22286,7 +22285,9 @@
             "use strict";
             e.exports = {
                 artContainer: "artContainer_cf7722",
-                body: "body__6d192"
+                body: "body__6d192",
+                updatedArt: "updatedArt__65b9c",
+                updatedArtContainer: "updatedArtContainer__8c7cc"
             }
         },
         65212: function(e) {
@@ -22309,7 +22310,6 @@
                 enhancedPrimaryActions: "enhancedPrimaryActions_db2d14",
                 enhancedSecondaryAction: "enhancedSecondaryAction_bbd620",
                 footer: "footer_fbde49",
-                getNitroCTA: "getNitroCTA__8d970",
                 header: "header__3ab01",
                 learnMoreLink: "learnMoreLink__97b89",
                 newBadge: "newBadge__9c4b4",
@@ -22743,8 +22743,8 @@
             e.exports = {
                 avatar: "avatar__0ce1b",
                 clickable: "clickable__611f4",
-                editPencil: "editPencil__103ad",
-                overlay: "overlay_f5b201"
+                overlay: "overlay_f5b201",
+                overlayIcon: "overlayIcon__43868"
             }
         },
         361142: function(e) {
@@ -23485,6 +23485,7 @@
         130035: function(e) {
             "use strict";
             e.exports = {
+                additionalRedemptionInstructions: "additionalRedemptionInstructions__003a0",
                 claimedRootContainer: "claimedRootContainer__21952",
                 close: "close__85eb5",
                 confettiCanvas: "confettiCanvas_d0db40",
@@ -23498,6 +23499,8 @@
                 rootContainer: "rootContainer_d251a3",
                 spinner: "spinner__2aca6",
                 spinnerContainer: "spinnerContainer_b7aa46",
+                sponsorLogo: "sponsorLogo__1cdd3",
+                sponsoredBy: "sponsoredBy__46614",
                 text: "text__4fd4a"
             }
         },
