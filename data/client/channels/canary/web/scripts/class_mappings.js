@@ -22761,8 +22761,7 @@
             "use strict";
             e.exports = {
                 container: "container_c8de55",
-                header: "header__6bd9e",
-                profileEffectPreview: "profileEffectPreview__87439"
+                header: "header__6bd9e"
             }
         },
         783779: function(e) {
@@ -22826,8 +22825,6 @@
                 effectName: "effectName__7ecbc",
                 effectPurchasedAt: "effectPurchasedAt_e7d704",
                 previewContainer: "previewContainer_b0a4e5",
-                previewContainerWithTheme: "previewContainerWithTheme_cc9568 previewContainer_b0a4e5",
-                previewContainerWithoutTheme: "previewContainerWithoutTheme_b1e2bf previewContainer_b0a4e5",
                 replayButton: "replayButton__66dd7",
                 replayButtonText: "replayButtonText__95b1c",
                 retryIcon: "retryIcon_b1ae93"
