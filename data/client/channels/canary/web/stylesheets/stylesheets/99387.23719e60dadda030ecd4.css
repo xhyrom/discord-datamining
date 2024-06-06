@@ -24991,6 +24991,7 @@ div.profileThemedContainer__6e645 {
 }
 
 .header__34f87 {
+    position: relative;
     z-index: 2;
     min-height: calc(45px + var(--custom-user-banner-banner-height-panel))
 }
@@ -142316,4 +142317,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.02c7fc6154ffde2e48e3.css.map*/
+/*# sourceMappingURL=99387.23719e60dadda030ecd4.css.map*/
