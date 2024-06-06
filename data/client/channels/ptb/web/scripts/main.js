@@ -37137,7 +37137,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299492", ", Version Hash: ").concat("9a0529381c63f2dc28daa17222155f3d2adc6667")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299507", ", Version Hash: ").concat("064b383ef0c2c6e9c6ad76f4dbdcff8c3a798668")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55778,6 +55778,9 @@
                 QUESTS_HOME_MODAL_CONNECT_CONSOLE: "Connect your console account to your Discord account",
                 QUESTS_HOME_MODAL_LINKED_ACCOUNTS: "LINKED ACCOUNT(S)",
                 QUESTS_HOME_MODAL_NEXT_STEP: "Next Step",
+                QUESTS_MOBILE_HOME_LAUNCH_GAME: "Launch {gameName} and play for {durationMinutes} minutes to get {rewardName}",
+                QUESTS_MOBILE_HOME_VIEW_REQUIREMENTS: "View Requirements",
+                QUESTS_MOBILE_HOME_VIEW_REWARD: "View Reward",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -88876,8 +88879,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299492", "299492"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299492")), t = 0), t
+                let t = parseInt((e = "299507", "299507"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299507")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117042,8 +117045,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299492",
-                    versionHash: "9a0529381c63f2dc28daa17222155f3d2adc6667"
+                    buildNumber: "299507",
+                    versionHash: "064b383ef0c2c6e9c6ad76f4dbdcff8c3a798668"
                 }
             }
             n.r(t), n.d(t, {
@@ -174658,8 +174661,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717688407707",
-                                    build_number: "299492"
+                                    built_at: "1717690129855",
+                                    build_number: "299507"
                                 }
                             },
                             retries: 1
@@ -184916,22 +184919,26 @@
                     i = (0, I.getTenureRewardEntitlement)([f.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH, f.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS], t),
                     a = l.default.getCurrentUser();
                 if (!(0, d.isPremiumExactly)(a, T.PremiumTypes.TIER_2) && null == n) {
-                    s.default.dispatch({
+                    null != a && s.default.dispatch({
                         type: "USER_TENURE_REWARD_STATUS_RESET"
                     });
                     return
                 }
-                if (!!(0, c.isUserEligibleForNitroTenureRewardCard)({
+                if ((0, c.isUserEligibleForNitroTenureRewardCard)({
                         location: "tenure_reward_manager"
-                    }))
-                    if ((E.default.getFetchState() !== E.FetchState.FETCHED || !0 === e || function() {
-                            var e;
-                            let t = null !== (e = E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== e ? e : E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS);
-                            return null != t && null != t.redeemable_at && 0 >= r()(t.redeemable_at).diff(r().utc(), "seconds")
-                        }() || function() {
-                            let e = E.default.getState();
-                            return null != e.lastFetchTimeMs && Date.now() - e.lastFetchTimeMs > 12096e5
-                        }()) && null == i) N();
+                    })) {
+                    if ((!0 === e || function(e) {
+                            if (E.default.getFetchState() !== E.FetchState.FETCHED) return !0;
+                            let t = (0, I.getFreeBoostTenureRewardStatus)();
+                            return null != t && null != e && e.id !== t.user_id || function() {
+                                let e = E.default.getState();
+                                return null != e.lastFetchTimeMs && Date.now() - e.lastFetchTimeMs > 12096e5
+                            }() || function() {
+                                var e;
+                                let t = null !== (e = E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== e ? e : E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS);
+                                return null != t && null != t.redeemable_at && 0 >= r()(t.redeemable_at).diff(r().utc(), "seconds")
+                            }()
+                        }(a)) && null == i) N();
                     else {
                         let e = u.default.getForApplication(T.PREMIUM_SUBSCRIPTION_APPLICATION);
                         if (null == e) return;
@@ -184941,6 +184948,7 @@
                             tenureRewardIds: t
                         })
                     }
+                }
             }
             async function N() {
                 !h && (h = !0, await _.syncUserTenureRewardStatus(), h = !1, s.default.wait(() => (function() {
@@ -185067,61 +185075,70 @@
         106255: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                getFreeBoostTenureRewardStatus: function() {
+                    return T
+                },
                 getPremiumTier2Entitlement: function() {
-                    return d
-                },
-                getTenureRewardBadgeDescription: function() {
-                    return E
-                },
-                getTenureRewardEntitlement: function() {
                     return _
                 },
-                isPremiumTier2Entitlement: function() {
-                    return l
+                getTenureRewardBadgeDescription: function() {
+                    return I
                 },
-                isUserTenureRewardStatusActive: function() {
+                getTenureRewardEntitlement: function() {
                     return c
                 },
-                isValidTenureRewardEntitlement: function() {
+                isPremiumTier2Entitlement: function() {
                     return u
+                },
+                isUserTenureRewardStatusActive: function() {
+                    return E
+                },
+                isValidTenureRewardEntitlement: function() {
+                    return d
                 }
             }), n("580130");
             var i = n("55563"),
-                r = n("474936"),
-                s = n("735825"),
-                a = n("981631"),
-                o = n("689938");
-
-            function l(e) {
-                return e.type === a.EntitlementTypes.PURCHASE && e.skuId === r.PremiumSubscriptionSKUs.TIER_2 && e.applicationId === r.PREMIUM_SUBSCRIPTION_APPLICATION && e.isValid(null, i.default)
-            }
+                r = n("513785"),
+                s = n("474936"),
+                a = n("735825"),
+                o = n("981631"),
+                l = n("689938");
 
             function u(e) {
-                return e.type === a.EntitlementTypes.PREMIUM_PURCHASE && s.ALL_TENURE_REWARD_SKUS.has(e.skuId) && e.applicationId === r.PREMIUM_SUBSCRIPTION_APPLICATION && e.isValid(null, i.default)
+                return e.type === o.EntitlementTypes.PURCHASE && e.skuId === s.PremiumSubscriptionSKUs.TIER_2 && e.applicationId === s.PREMIUM_SUBSCRIPTION_APPLICATION && e.isValid(null, i.default)
             }
 
             function d(e) {
-                if (null != e) return Array.from(e).find(e => l(e))
+                return e.type === o.EntitlementTypes.PREMIUM_PURCHASE && a.ALL_TENURE_REWARD_SKUS.has(e.skuId) && e.applicationId === s.PREMIUM_SUBSCRIPTION_APPLICATION && e.isValid(null, i.default)
             }
 
-            function _(e, t) {
-                if (null != t) return Array.from(t).find(t => t.type === a.EntitlementTypes.PREMIUM_PURCHASE && e.includes(t.skuId) && t.applicationId === r.PREMIUM_SUBSCRIPTION_APPLICATION && t.isValid(null, i.default))
+            function _(e) {
+                if (null != e) return Array.from(e).find(e => u(e))
             }
 
-            function c(e) {
-                return null != e.redeemable_at && null != e.next_tenure_reward_id
+            function c(e, t) {
+                if (null != t) return Array.from(t).find(t => t.type === o.EntitlementTypes.PREMIUM_PURCHASE && e.includes(t.skuId) && t.applicationId === s.PREMIUM_SUBSCRIPTION_APPLICATION && t.isValid(null, i.default))
             }
 
             function E(e) {
+                return null != e.redeemable_at && null != e.next_tenure_reward_id
+            }
+
+            function I(e) {
                 switch (e) {
-                    case s.NitroRewardStatus.PENDING:
-                        return o.default.Messages.REWARD;
-                    case s.NitroRewardStatus.REDEEMABLE:
-                        return o.default.Messages.REDEEM;
-                    case s.NitroRewardStatus.REDEEMED:
+                    case a.NitroRewardStatus.PENDING:
+                        return l.default.Messages.REWARD;
+                    case a.NitroRewardStatus.REDEEMABLE:
+                        return l.default.Messages.REDEEM;
+                    case a.NitroRewardStatus.REDEEMED:
                     default:
                         return null
                 }
+            }
+
+            function T() {
+                var e;
+                return null !== (e = r.default.getTenureRewardStatusForRewardId(a.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== e ? e : r.default.getTenureRewardStatusForRewardId(a.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS)
             }
         },
         786397: function(e, t, n) {
@@ -252560,7 +252577,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9a0529381c63f2dc28daa17222155f3d2adc6667"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "064b383ef0c2c6e9c6ad76f4dbdcff8c3a798668"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281764,7 +281781,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299492"
+                                build_number: "299507"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289073,7 +289090,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299492", "299492"), 10);
+                let s = parseInt((n = "299507", "299507"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316981,4 +316998,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.aadc8a61ab29aaca4fb7.js.map
+//# sourceMappingURL=27519.76dd26cfc37af86a3770.js.map
