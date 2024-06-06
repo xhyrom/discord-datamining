@@ -20630,6 +20630,13 @@
                 starRight: "starRight__1cf20"
             }
         },
+        164032: function(e) {
+            "use strict";
+            e.exports = {
+                premiumIcon: "premiumIcon__80094",
+                text: "text__0c973"
+            }
+        },
         972307: function(e) {
             "use strict";
             e.exports = {
@@ -26593,6 +26600,7 @@
             e.exports = {
                 availableUntil: "availableUntil_e6f29d",
                 betaTagIcon: "betaTagIcon__15f8e",
+                containerWithMargin: "containerWithMargin_d80eaf",
                 divider: "divider__1dfdb",
                 dropCard: "dropCard__3c76c",
                 dropContainer: "dropContainer__10f59",
@@ -26609,6 +26617,9 @@
                 feedback: "feedback__3b637",
                 loading: "loading_a024ce",
                 mainPromotionCardContainer: "mainPromotionCardContainer_c21943",
+                promoDescription: "promoDescription__0e0ca",
+                promoHeaderContainer: "promoHeaderContainer__72b74",
+                promoNitroButton: "promoNitroButton_a96d17",
                 promotionCard: "promotionCard_f4dd43",
                 promotionCardButton: "promotionCardButton__00c44",
                 promotionCardDescriptionWithCode: "promotionCardDescriptionWithCode__82b38",

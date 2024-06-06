@@ -10953,6 +10953,25 @@ html .progress__00e29 {
     color: var(--white-500)
 }
 
+.text__0c973 {
+    display: inline-block;
+    color: currentColor
+}
+
+.text__0c973 a {
+    color: currentColor;
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.premiumIcon__80094 {
+    position: relative;
+    top: 6px;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px
+}
+
 .container_cb4095 {
     display: flex;
     flex-direction: row;
@@ -41562,12 +41581,12 @@ img.thumbnail__18ece {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -90749,8 +90768,26 @@ html .tabBadge_ff691d {
     width: 40px
 }
 
+.containerWithMargin_d80eaf {
+    margin-top: 20px
+}
+
+.promoHeaderContainer__72b74 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.promoDescription__0e0ca {
+    margin-top: var(--spacing-4)
+}
+
+.promoNitroButton_a96d17 {
+    margin-left: auto
+}
+
 .skuCard__5dbc9 {
-    margin-bottom: 20px
+    margin-top: 24px
 }
 
 .emptyState_fc057e {
@@ -142280,4 +142317,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.46e7f95d343e64695f8f.css.map*/
+/*# sourceMappingURL=99387.51b387345e25a9677441.css.map*/
