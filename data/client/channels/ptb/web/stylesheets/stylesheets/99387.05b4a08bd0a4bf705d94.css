@@ -56430,7 +56430,16 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .nicknameIcons__1b2d1 {
     display: flex;
     align-self: flex-start;
+    gap: 2px
+}
+
+.nicknameIcons__1b2d1.biteSize__2431d,
+.nicknameIcons__1b2d1.panel__5c104 {
     padding-top: 4px
+}
+
+.nicknameIcons__1b2d1.fullSize_dbf8b0 {
+    padding-top: 8px
 }
 
 .usernameRow__73bf0 {
@@ -142830,4 +142839,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.03a67c1bd2e231a8e253.css.map*/
+/*# sourceMappingURL=99387.05b4a08bd0a4bf705d94.css.map*/
