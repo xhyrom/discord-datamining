@@ -2763,9 +2763,8 @@
             "use strict";
             e.exports = {
                 activityButton: "activityButton_d66dd3",
-                rocket: "rocket__4ebd3",
-                rocketHovered: "rocketHovered__0e379",
-                rocketUnhovered: "rocketUnhovered__86bc7"
+                iconHovered: "iconHovered_ce95cb",
+                iconUnhovered: "iconUnhovered__60810"
             }
         },
         706961: function(e) {
@@ -4673,6 +4672,7 @@
                 buttonContainer: "buttonContainer_ff1010",
                 buttons: "buttons__7ecff",
                 channelTextArea: "channelTextArea__648e5",
+                channelTextAreaContainer: "channelTextAreaContainer__37a67",
                 channelTextAreaDisabled: "channelTextAreaDisabled_d0f0e8",
                 disabledButtonWrapper: "disabledButtonWrapper__30b08",
                 emojiButton: "emojiButton_b63c38 button__493d9",
