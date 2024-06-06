@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299821", ", Version Hash: ").concat("bc91aae7d320b96676d357ec7c3b9ff7e6b144c3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299833", ", Version Hash: ").concat("5c49caa108d331add3aa49b288f19e67f1a96c67")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42881,6 +42881,7 @@
                 AUDIO_DEVICE_ACTIONS: "Audio Device Actions",
                 EXPRESSION_PICKER_ACTIONS_MENU_LABEL: "Expression Picker Actions",
                 PROFILE_ACTIONS_MENU_LABEL: "Profile Actions",
+                AVATAR_ACTIONS_MENU_LABEL: "Avatar Actions",
                 PROGRESS_BAR_ACTIONS_MENU_LABEL: "Progress Bar Actions",
                 HOME_ACTIONS_MENU_LABEL: "Home Actions",
                 ACTIVITY_SHELF_ITEM_ACTIONS_MENU_LABEL: "Activity Shelf Item Actions",
@@ -89038,8 +89039,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299821", "299821"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299821")), t = 0), t
+                let t = parseInt((e = "299833", "299833"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299833")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117217,8 +117218,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299821",
-                    versionHash: "bc91aae7d320b96676d357ec7c3b9ff7e6b144c3"
+                    buildNumber: "299833",
+                    versionHash: "5c49caa108d331add3aa49b288f19e67f1a96c67"
                 }
             }
             n.r(t), n.d(t, {
@@ -117752,7 +117753,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("23404"), n.e("4934"), n.e("67526"), n.e("97188"), n.e("87624"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("48378"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("23404"), n.e("67526"), n.e("97188"), n.e("87624"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("48378"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -174919,8 +174920,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717713612266",
-                                    build_number: "299821"
+                                    built_at: "1717714354912",
+                                    build_number: "299833"
                                 }
                             },
                             retries: 1
@@ -217721,7 +217722,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return I
                 }
             });
             var i = n("735250");
@@ -217731,26 +217732,27 @@
                 a = n("906732"),
                 o = n("199902"),
                 l = n("158776"),
-                u = n("785717"),
-                d = n("221292"),
-                _ = n("981631"),
-                c = n("10268");
+                u = n("594174"),
+                d = n("785717"),
+                _ = n("221292"),
+                c = n("981631"),
+                E = n("10268");
 
-            function E(e) {
+            function I(e) {
                 let {
                     user: t,
                     guild: n,
-                    channelId: E,
-                    onClose: I
+                    channelId: I,
+                    onClose: T
                 } = e, {
-                    analyticsLocations: T,
-                    newestAnalyticsLocation: f
+                    analyticsLocations: f,
+                    newestAnalyticsLocation: S
                 } = (0, a.default)(), {
-                    trackUserProfileAction: S,
-                    ...h
-                } = (0, u.useUserProfileAnalyticsContext)(), {
-                    isApplicationStreaming: A,
-                    activity: m
+                    trackUserProfileAction: h,
+                    ...A
+                } = (0, d.useUserProfileAnalyticsContext)(), m = (0, r.useStateFromStores)([u.default], () => u.default.getCurrentUser()), {
+                    isApplicationStreaming: N,
+                    activity: p
                 } = (0, r.useStateFromStoresObject)([o.default, l.default], () => {
                     let e = null != o.default.getAnyStreamForUser(t.id);
                     return {
@@ -217759,38 +217761,39 @@
                             let {
                                 type: t
                             } = e;
-                            return t === _.ActivityTypes.PLAYING
+                            return t === c.ActivityTypes.PLAYING
                         }) : l.default.findActivity(t.id, e => {
                             let {
                                 type: t
                             } = e;
-                            return t !== _.ActivityTypes.CUSTOM_STATUS
+                            return t !== c.ActivityTypes.CUSTOM_STATUS
                         })
                     }
                 });
                 return (0, i.jsx)(s.default, {
                     type: s.UserActivityTypes.BITE_SIZE_POPOUT,
-                    activity: m,
-                    className: c.activity,
-                    source: f,
+                    activity: p,
+                    className: E.activity,
+                    source: S,
                     user: t,
                     guildId: null == n ? void 0 : n.id,
-                    channelId: E,
-                    onOpenGameProfile: I,
+                    channelId: I,
+                    onOpenGameProfile: T,
                     onAction: () => {
-                        S({
+                        h({
                             action: "JOIN_ACTIVITY"
-                        }), (0, d.trackUserProfileActivityJoined)({
-                            activityType: A ? _.ActivityTypes.STREAMING : null == m ? void 0 : m.type,
-                            activityName: null == m ? void 0 : m.name,
-                            activityPlatform: null == m ? void 0 : m.platform,
-                            activitySessionId: null == m ? void 0 : m.session_id,
-                            applicationId: null == m ? void 0 : m.application_id,
-                            analyticsLocations: T,
-                            ...h
-                        }), null == I || I()
+                        }), (0, _.trackUserProfileActivityJoined)({
+                            activityType: N ? c.ActivityTypes.STREAMING : null == p ? void 0 : p.type,
+                            activityName: null == p ? void 0 : p.name,
+                            activityPlatform: null == p ? void 0 : p.platform,
+                            activitySessionId: null == p ? void 0 : p.session_id,
+                            applicationId: null == p ? void 0 : p.application_id,
+                            analyticsLocations: f,
+                            ...A
+                        }), null == T || T()
                     },
-                    actionColor: c.buttonColor,
+                    showActions: t.id !== (null == m ? void 0 : m.id),
+                    actionColor: E.buttonColor,
                     showChannelDetails: !0
                 })
             }
@@ -252933,7 +252936,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "bc91aae7d320b96676d357ec7c3b9ff7e6b144c3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5c49caa108d331add3aa49b288f19e67f1a96c67"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282177,7 +282180,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299821"
+                                build_number: "299833"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289486,7 +289489,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299821", "299821"), 10);
+                let s = parseInt((n = "299833", "299833"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317433,4 +317436,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.75a140693ec53ef70228.js.map
+//# sourceMappingURL=27519.e9a5866c00a34f71606b.js.map
