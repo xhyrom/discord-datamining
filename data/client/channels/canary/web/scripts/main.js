@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299685", ", Version Hash: ").concat("b050914f0b5f90be237577dfd0c64f22d2e7e4ed")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299698", ", Version Hash: ").concat("9152e061dd167fafe92383799d2e870f2c6f32b6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53564,6 +53564,8 @@
                 REFERRAL_PROGRAM_SEARCH_FRIENDS: "Search friends",
                 REFERRAL_PROGRAM_LEARN_MORE_ABOUT_SHARING: "[Learn more]({helpdeskArticle}) about sharing Nitro trials.",
                 REFERRAL_PROGRAM_PLAN_COMPARISON_ROW: "3 Nitro friend passes",
+                REFERRAL_PROGRAM_CONFIRMATION_ERROR_PAGE: "We were unable to send {userName} a trial. Please try again later.",
+                REFERRAL_PROGRAM_CONFIRMATION_ERROR_PAGE_HEADER: "Hmm... Something went wrong",
                 EMOJI_CATEGORY_TOP_GUILD_EMOJI: "Top Emoji in !!{guildName}!!",
                 TOP_GUILD_EMOJI_BADGE: "Popular",
                 NEWLY_ADDED_GUILD_EMOJI_BADGE: "Newly Added",
@@ -64131,7 +64133,7 @@
                             "X-Captcha-Key": n
                         };
                         null != i && (r["X-Captcha-Rqtoken"] = i), t(r)
-                    }).catch(i), !0) : 401 === e.statusCode && (null === (l = e.body) || void 0 === l ? void 0 : l.code) === c.AbortCodes.MFA_REQUIRED && (null === (u = e.body) || void 0 === u ? void 0 : u.mfa) ? (Promise.all([n.e("99387"), n.e("52030"), n.e("85281")]).then(n.bind(n, "24031")).then(n => {
+                    }).catch(i), !0) : 401 === e.statusCode && (null === (l = e.body) || void 0 === l ? void 0 : l.code) === c.AbortCodes.MFA_REQUIRED && (null === (u = e.body) || void 0 === u ? void 0 : u.mfa) ? (Promise.all([n.e("99387"), n.e("52030"), n.e("62344")]).then(n.bind(n, "24031")).then(n => {
                         let {
                             openMFAModal: r
                         } = n;
@@ -89021,8 +89023,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299685", "299685"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299685")), t = 0), t
+                let t = parseInt((e = "299698", "299698"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299698")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -95747,7 +95749,7 @@
                             l(!1), (0, I.openModalLazy)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("90508"), n.e("41947"), n.e("53289")]).then(n.bind(n, "273602"));
+                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("41947"), n.e("29042"), n.e("80374")]).then(n.bind(n, "273602"));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
                                     threadId: a,
@@ -103338,7 +103340,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("20727")]).then(n.bind(n, "298237"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("20727"), n.e("5828")]).then(n.bind(n, "298237"));
                     return t => (0, i.jsx)(e, {
                         ...t
                     })
@@ -103355,7 +103357,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("99387"), n.e("69495")]).then(n.bind(n, "324239"));
+                    } = await Promise.all([n.e("99387"), n.e("31093")]).then(n.bind(n, "324239"));
                     return n => (0, i.jsx)(t, {
                         claimRequired: e,
                         ...n
@@ -112223,6 +112225,10 @@
                     },
                     [u.CollectiblesCategorySkuId.SHY]: {
                         addGradient: !1
+                    },
+                    [u.CollectiblesCategorySkuId.ARCADE]: {
+                        logoMaxWidth: "35%",
+                        addGradient: !1
                     }
                 },
                 _ = "1225876188074082374",
@@ -117194,8 +117200,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299685",
-                    versionHash: "b050914f0b5f90be237577dfd0c64f22d2e7e4ed"
+                    buildNumber: "299698",
+                    versionHash: "9152e061dd167fafe92383799d2e870f2c6f32b6"
                 }
             }
             n.r(t), n.d(t, {
@@ -117729,7 +117735,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("40326"), n.e("30386"), n.e("80451"), n.e("52110"), n.e("90508"), n.e("45074"), n.e("36439"), n.e("30634"), n.e("93280")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("23404"), n.e("4934"), n.e("15357"), n.e("67526"), n.e("97188"), n.e("87624"), n.e("36861"), n.e("39610"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("18050")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -155486,7 +155492,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("46136"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("96151"), n.e("17220"), n.e("92557"), n.e("36439"), n.e("66696"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("46136"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("62809"), n.e("29042"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("67526"), n.e("97188"), n.e("43643"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("83939"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -174896,8 +174902,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717703440746",
-                                    build_number: "299685"
+                                    built_at: "1717704478102",
+                                    build_number: "299698"
                                 }
                             },
                             retries: 1
@@ -179759,7 +179765,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("8016"), n.e("57878"), n.e("68136"), n.e("22639"), n.e("93008")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("57878"), n.e("8016"), n.e("68136"), n.e("78373"), n.e("81532")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -183225,44 +183231,48 @@
         281494: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                CreateReferralStatus: function() {
+                    return r
+                },
                 ReferralOfferStatus: function() {
                     return i
                 },
                 checkRecipientEligibility: function() {
-                    return T
+                    return h
                 },
                 createReferralTrial: function() {
-                    return S
+                    return m
                 },
                 createReferralTrials: function() {
-                    return f
+                    return A
                 },
                 fetchReferralEligibleUsers: function() {
-                    return E
+                    return f
                 },
                 fetchReferralsRemaining: function() {
-                    return I
+                    return S
                 },
                 resolveReferralTrialOffer: function() {
-                    return h
+                    return N
                 }
             }), n("47120"), n("653041");
-            var i, r, s = n("544891"),
-                a = n("570140"),
-                o = n("904245"),
-                l = n("598077"),
-                u = n("944486"),
-                d = n("981631");
+            var i, r, s, a, o = n("544891"),
+                l = n("570140"),
+                u = n("904245"),
+                d = n("598077"),
+                _ = n("944486"),
+                c = n("960048"),
+                E = n("981631");
 
-            function _(e, t, n) {
+            function I(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
                 }) : e[t] = n, e
-            }(r = i || (i = {}))[r.REDEEMED = 1] = "REDEEMED", r[r.PENDING = 2] = "PENDING";
-            let c = new class e {
+            }(s = i || (i = {}))[s.REDEEMED = 1] = "REDEEMED", s[s.PENDING = 2] = "PENDING", (a = r || (r = {}))[a.SUCCESS = 1] = "SUCCESS", a[a.FAIL = 2] = "FAIL";
+            let T = new class e {
                 set(e, t) {
                     this.cache.set(e, t)
                 }
@@ -183276,36 +183286,36 @@
                     this.expiration < Date.now() && this.cache.clear()
                 }
                 constructor() {
-                    _(this, "cache", void 0), _(this, "expiration", void 0), this.cache = new Map, this.expiration = Date.now() + 6e5
+                    I(this, "cache", void 0), I(this, "expiration", void 0), this.cache = new Map, this.expiration = Date.now() + 6e5
                 }
             };
-            async function E(e, t) {
+            async function f(e, t) {
                 let n = JSON.stringify({
                     index: e,
                     searchQuery: t
                 });
-                if (c.has(n)) return c.get(n);
+                if (T.has(n)) return T.get(n);
                 let {
                     users: i,
                     next_index: r
-                } = (await s.HTTP.post({
-                    url: d.Endpoints.GET_REFERRAL_ELIGIBLE_USERS,
+                } = (await o.HTTP.post({
+                    url: E.Endpoints.GET_REFERRAL_ELIGIBLE_USERS,
                     body: {
                         index: e,
                         limit: 10,
                         search_query: t
                     },
                     oldFormErrors: !0
-                })).body, a = {
-                    users: i.map(e => new l.default(e)),
+                })).body, s = {
+                    users: i.map(e => new d.default(e)),
                     nextIndex: r
                 };
-                return c.set(n, a), a
+                return T.set(n, s), s
             }
-            let I = () => (a.default.dispatch({
+            let S = () => (l.default.dispatch({
                     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
-                }), s.HTTP.get({
-                    url: d.Endpoints.GET_REFERRALS_REMAINING,
+                }), o.HTTP.get({
+                    url: E.Endpoints.GET_REFERRALS_REMAINING,
                     oldFormErrors: !0
                 }).then(e => {
                     var t, n;
@@ -183315,7 +183325,7 @@
                             let n = e.body.recipient_status[t];
                             i.set(t, n)
                         }
-                    a.default.dispatch({
+                    l.default.dispatch({
                         type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS",
                         referrals_remaining: null != e.body && null != e.body.referrals_remaining ? e.body.referrals_remaining : 0,
                         sent_user_ids: null != e.body && null != e.body.sent_user_ids ? e.body.sent_user_ids : [],
@@ -183324,82 +183334,86 @@
                         has_eligible_friends: e.body.has_eligible_friends
                     })
                 }, () => {
-                    a.default.dispatch({
+                    l.default.dispatch({
                         type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL"
                     })
                 })),
-                T = e => (a.default.dispatch({
+                h = e => (l.default.dispatch({
                     type: "BILLING_CREATE_REFERRAL_PREVIEW_START",
                     recipientId: e
-                }), s.HTTP.post({
-                    url: d.Endpoints.CREATE_REFERRAL_PREVIEW(e),
+                }), o.HTTP.post({
+                    url: E.Endpoints.CREATE_REFERRAL_PREVIEW(e),
                     oldFormErrors: !0
                 }).then(t => {
-                    a.default.dispatch({
+                    l.default.dispatch({
                         type: "BILLING_CREATE_REFERRAL_PREVIEW_SUCCESS",
                         recipientId: e,
                         is_eligible: null != t.body && t.body.is_eligible
                     })
                 }, () => {
-                    a.default.dispatch({
+                    l.default.dispatch({
                         type: "BILLING_CREATE_REFERRAL_PREVIEW_FAIL",
                         recipientId: e
                     })
                 }));
-            async function f(e) {
-                let t = [];
-                for (let i of e) {
-                    var n;
-                    let e = null !== (n = (await s.HTTP.post({
-                        url: d.Endpoints.CREATE_REFERRAL(i),
-                        oldFormErrors: !0
-                    })).body) && void 0 !== n ? n : null;
-                    null != e && t.push(e)
+            async function A(e) {
+                let t = [],
+                    n = new Map;
+                for (let r of e) try {
+                    var i;
+                    let e = await o.HTTP.post({
+                            url: E.Endpoints.CREATE_REFERRAL(r),
+                            oldFormErrors: !0
+                        }),
+                        s = null !== (i = e.body) && void 0 !== i ? i : null;
+                    null != s && t.push(s), n.set(r, 1)
+                } catch (e) {
+                    c.default.captureException(e), n.set(r, 2)
                 }
-                return a.default.dispatch({
+                return l.default.dispatch({
                     type: "CREATE_REFERRALS_SUCCESS",
                     userTrialOffers: t
-                }), t
+                }), n
             }
-            async function S(e) {
+            async function m(e) {
                 try {
                     var t;
-                    let n = await s.HTTP.post({
-                            url: d.Endpoints.CREATE_REFERRAL(e),
+                    let n = await o.HTTP.post({
+                            url: E.Endpoints.CREATE_REFERRAL(e),
                             oldFormErrors: !0
                         }),
                         i = null !== (t = n.body) && void 0 !== t ? t : null;
-                    return a.default.dispatch({
+                    return l.default.dispatch({
                         type: "BILLING_CREATE_REFERRAL_SUCCESS",
                         userTrialOffer: i
                     }), {
                         userTrialOffer: i
                     }
                 } catch (e) {
-                    if (a.default.dispatch({
+                    if (l.default.dispatch({
                             type: "BILLING_CREATE_REFERRAL_FAIL"
-                        }), e.body.code === d.AbortCodes.INVALID_MESSAGE_SEND_USER) {
-                        let t = u.default.getCurrentlySelectedChannelId();
-                        null != t && o.default.sendClydeError(t, e.body.code)
+                        }), e.body.code === E.AbortCodes.INVALID_MESSAGE_SEND_USER) {
+                        let t = _.default.getCurrentlySelectedChannelId();
+                        null != t && u.default.sendClydeError(t, e.body.code)
                     }
                 }
             }
-            async function h(e) {
+            async function N(e) {
                 try {
                     var t;
-                    let n = await s.HTTP.get({
-                            url: d.Endpoints.REFERRAL_OFFER_ID_RESOLVE(e),
+                    let n = await o.HTTP.get({
+                            url: E.Endpoints.REFERRAL_OFFER_ID_RESOLVE(e),
                             oldFormErrors: !0
                         }),
                         i = null !== (t = n.body) && void 0 !== t ? t : null;
-                    return a.default.dispatch({
+                    return l.default.dispatch({
                         type: "BILLING_REFERRAL_RESOLVE_SUCCESS",
                         userTrialOffer: i
                     }), {
                         userTrialOffer: i
                     }
                 } catch (t) {
-                    a.default.dispatch({
+                    l.default.dispatch({
                         type: "BILLING_REFERRAL_RESOLVE_FAIL",
                         userTrialOfferId: e
                     })
@@ -193497,7 +193511,7 @@
                     })
                 });
                 return null == m ? (0, i.jsx)("div", {
-                    className: a()(t, A.questRewardTile),
+                    className: a()(A.questRewardTile, t),
                     children: L
                 }) : (0, i.jsxs)(l.Clickable, {
                     className: a()(A.questRewardTile, A.questRewardTileInteractive, t),
@@ -252844,7 +252858,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b050914f0b5f90be237577dfd0c64f22d2e7e4ed"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9152e061dd167fafe92383799d2e870f2c6f32b6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282084,7 +282098,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299685"
+                                build_number: "299698"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289393,7 +289407,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299685", "299685"), 10);
+                let s = parseInt((n = "299698", "299698"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317338,4 +317352,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.498f7a4970f6b8e063e3.js.map
+//# sourceMappingURL=27519.0b36d24785cce7dd0d1b.js.map

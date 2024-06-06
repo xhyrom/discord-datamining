@@ -11971,7 +11971,7 @@
                 textWithIcon: "textWithIcon__6a104"
             }
         },
-        954794: function(e) {
+        576142: function(e) {
             "use strict";
             e.exports = {
                 attachmentGrid: "attachmentGrid__8922d",
@@ -21831,6 +21831,8 @@
                 displayName: "displayName__727e9",
                 displayNameClickableContainer: "displayNameClickableContainer_b45e25",
                 displayNameTooltip: "displayNameTooltip__94aaf",
+                errorDisplayName: "errorDisplayName_ad51fd",
+                erroredAvatar: "erroredAvatar_d9fc6f",
                 headerIcon: "headerIcon__02f5b",
                 heading: "heading__4546c",
                 referredUserRowBody: "referredUserRowBody__8b754",
