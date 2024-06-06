@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_outbound_promo_desktop_upsell",
+    "label": "Upsell Outbound Promos",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable upsells for outbound promos w/ Nagbar variant 1 - gift inventory cta",
+      "Treatment 2: Enable upsells for outbound promos w/ Nagbar variant 2 - get nitro cta"
+    ],
+    "hash": 2302949395,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "getNitroCTA"
+    ]
+  }
+}

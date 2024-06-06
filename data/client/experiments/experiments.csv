@@ -627,4 +627,5 @@ id,hash,label
 2024-06_ctp_app_open_multiple_buckets,160851838,CTP app open - A/A test - Multiple buckets
 2024-06_ctp_app_open_uneven_buckets,3785125664,CTP app open - A/A test - Uneven buckets
 2024-06_ctp_app_open_vanilla,3140086051,CTP app open - A/A test - Vanilla
+2024-06_outbound_promo_desktop_upsell,2302949395,Upsell Outbound Promos
 2024-06_rtc_voice_state_sync_experiment,1254450589,RTC and Voice State Desync Fixes
