@@ -17,8 +17,8 @@
             </figure>
             <p><strong>A New One-Time Purchase Option</strong>: We've heard your requests for more types of purchase options, and that monthly subscriptions might not be everyone’s preferred payment style.</p>
             <p>Now, you can offer <strong>One-Time Purchases</strong> for your app, whether you’re selling a limited-edition cosmetic armor piece or a fancy XP booster for your game. <a href="https://discord.com/developers/docs/monetization/one-time-purchases">Read more on how to up-level your purchase options here</a>.</p>
-            <figure style="max-width:1440pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/665a173d80ccd06cbd0d2dc2_AD_4nXdx9AIFYpo_ItoKB1U-THeTNJArQRuuAsq_pz7BJ34sLpts4NXIlAmt5sZUpZyA-NbtsOX5_sQUFKXHSxCeM2UEo6fPJV4ZvzIP-sIvCAjjWaSZ3WgMsMw92F0X2VxXkJMniAYbIm_NstmjhyCr2DTgZ1A.png" alt=""></div>
+            <figure style="max-width:1440px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66633672410bdb61c5bb164e_blogimg.png" loading="lazy" alt=""></div>
             </figure>
             <p><strong>Durable</strong> one-time purchase SKUs allow you to offer premium benefits to users that they get to keep after their purchase, such as a new piece of armor your character gets to keep in their war chest.&nbsp;</p>
             <p>We also now support <strong>consumable</strong> one-time purchase SKUs, which grant users premium benefits that can expire or be used up, such as a potion your character can use once to replenish their health.</p>
