@@ -41696,18 +41696,7 @@ img.thumbnail__18ece {
     height: 100%
 }
 
-@media(min-width: 486px, min-height: 0) {
-    .wrapper_f5f4c9 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center
-    }
-}
-
-@media(min-width: 486px, min-height: 580px) {
+@media(min-width:486px) {
     .wrapper_f5f4c9 {
         position: absolute;
         top: 0;
@@ -142371,4 +142360,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7b1b75a23a2da6b7d398.css.map*/
+/*# sourceMappingURL=99387.973794043ffeb2440162.css.map*/
