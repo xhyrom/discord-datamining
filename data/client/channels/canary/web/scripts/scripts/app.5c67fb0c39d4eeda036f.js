@@ -3035,35 +3035,35 @@
                 resizeHandle: "resizeHandle__04655"
             }
         },
-        717784: function(e) {
+        666722: function(e) {
             "use strict";
             e.exports = {
-                appIcon: "appIcon__28528",
-                appIconBorderThingy: "appIconBorderThingy_ae30b7",
-                appName: "appName_ebbaf1",
-                command: "command__50216",
-                commandListHeader: "commandListHeader__7a030",
-                commandName: "commandName__449f8",
-                container: "container__7b73b",
-                contentContainer: "contentContainer_d17a62",
-                headerCloseButton: "headerCloseButton_d793f6",
-                headerWhenSideCard: "headerWhenSideCard__74c6c",
-                sortSelector: "sortSelector_afb34f"
+                appIcon: "appIcon__19c1c",
+                appIconBorderThingy: "appIconBorderThingy__58fc5",
+                appName: "appName_f469db",
+                command: "command__90161",
+                commandListHeader: "commandListHeader_ccebe1",
+                commandName: "commandName__4e8c4",
+                container: "container__1b5d1",
+                contentContainer: "contentContainer_f3b1f3",
+                headerCloseButton: "headerCloseButton__3e4f8",
+                headerWhenSideCard: "headerWhenSideCard__431a1",
+                sortSelector: "sortSelector__963cb"
             }
         },
-        648410: function(e) {
+        36e3: function(e) {
             "use strict";
             e.exports = {
-                sortDropdown: "sortDropdown__757b3",
-                sortDropdownInner: "sortDropdownInner__58619",
-                sortIconMargin: "sortIconMargin__2f422"
+                sortDropdown: "sortDropdown_ef809d",
+                sortDropdownInner: "sortDropdownInner__9ca6a",
+                sortIconMargin: "sortIconMargin__4f3f5"
             }
         },
-        226823: function(e) {
+        319306: function(e) {
             "use strict";
             e.exports = {
-                clearText: "clearText__5b2a7",
-                container: "container_e5e00c"
+                clearText: "clearText__6ee28",
+                container: "container__2f171"
             }
         },
         245199: function(e) {
@@ -20917,6 +20917,9 @@
                 giftTitle: "giftTitle__8eaa9",
                 image: "image__56ca9",
                 managePlanButton: "managePlanButton__8b928",
+                modifiedSubHeader: "modifiedSubHeader__694a6",
+                modifiedTier2Title: "modifiedTier2Title_be03e4",
+                modifiedTierInfo: "modifiedTierInfo__43c02",
                 rimGlowTier2: "rimGlowTier2__57eb4",
                 seasonalColor: "seasonalColor_ecb175",
                 seasonalGiftImage: "seasonalGiftImage__71fff",
@@ -22061,7 +22064,6 @@
                 purpleGradient: "purpleGradient__82d4b",
                 reducedMotion: "reducedMotion__6b806",
                 rotateCard: "rotateCard_fa0e1b",
-                roundedButton: "roundedButton__95800",
                 topCover: "topCover_bed28d",
                 ultraFlipCard: "ultraFlipCard__5476a"
             }
@@ -22073,7 +22075,6 @@
                 fullscreenWrapper: "fullscreenWrapper_e8ee4a",
                 innerWrapper: "innerWrapper_fd8553",
                 invisible: "invisible__9177d",
-                shinyButton: "shinyButton_afe496",
                 wrapper: "wrapper__98245"
             }
         },
@@ -22249,7 +22250,6 @@
                 premiumTierCardsContainerFullscreen: "premiumTierCardsContainerFullscreen_c5e38a premiumTierCardsContainer__686eb",
                 premiumTierCardsContainerSettings: "premiumTierCardsContainerSettings_d53fe4 premiumTierCardsContainer__686eb",
                 promoBannerContainer: "promoBannerContainer__31ea9",
-                roundedSubscribeButton: "roundedSubscribeButton__6cab1",
                 scroller: "scroller__49aa3",
                 settingsContainer: "settingsContainer__79255",
                 settingsHeroBogoHeight: "settingsHeroBogoHeight__19803",
@@ -26248,8 +26248,9 @@
         187393: function(e) {
             "use strict";
             e.exports = {
-                avatar: "avatar__2c095",
-                header: "header__34f87"
+                clickable: "clickable__41ac4",
+                header: "header__34f87",
+                overlay: "overlay__2c5ed"
             }
         },
         178756: function(e) {

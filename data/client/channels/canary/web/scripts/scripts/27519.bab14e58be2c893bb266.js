@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299991", ", Version Hash: ").concat("5c957c4d41359151bd4627ab8cf4f4dea57c9c7f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299996", ", Version Hash: ").concat("85a3ac13744859d0d21fb7cc59c88bd5b5990254")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -68471,6 +68471,29 @@
                 }
             }
         },
+        880308: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useFetchDeveloperActivityShelfItems: function() {
+                    return u
+                }
+            });
+            var i = n("470079"),
+                r = n("442837"),
+                s = n("695346"),
+                a = n("115130"),
+                o = n("566620"),
+                l = n("782769");
+
+            function u() {
+                let e = (0, l.useIsActivitiesEnabledForCurrentPlatform)(),
+                    t = s.DeveloperMode.getSetting(),
+                    n = (0, r.useStateFromStores)([a.default], () => a.default.getFetchState(), []);
+                return i.useEffect(() => {
+                    e && t && null == n && (0, o.fetchDeveloperApplications)()
+                }, [e, n, t]), null
+            }
+        },
         53289: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -74061,7 +74084,7 @@
             function a(e) {
                 i.default.dispatch({
                     type: "APP_LAUNCHER_SHOW_APP_DETAIL",
-                    appDetail: e
+                    application: e
                 })
             }
 
@@ -74114,19 +74137,19 @@
                 l = n("570140");
             let u = {
                 showPopup: !1,
-                appDetail: null
+                application: null
             };
 
             function d() {
-                return u.showPopup = !1, u.appDetail = null, !0
+                return u.showPopup = !1, u.application = null, !0
             }
             class _ extends(a = o.default.Store) {
                 initialize() {}
                 shouldShowPopup() {
                     return u.showPopup
                 }
-                getCurrentAppDetail() {
-                    return u.appDetail
+                getCurrentApplication() {
+                    return u.application
                 }
             }
             s = "AppLauncherStore", (r = "displayName") in(i = _) ? Object.defineProperty(i, r, {
@@ -74141,12 +74164,12 @@
                 APP_LAUNCHER_DISMISS_POPUP: d,
                 APP_LAUNCHER_SHOW_APP_DETAIL: function(e) {
                     let {
-                        appDetail: t
+                        application: t
                     } = e;
-                    return u.appDetail = t, !0
+                    return u.application = t, !0
                 },
                 APP_LAUNCHER_DISMISS_APP_DETAIL: function() {
-                    return u.appDetail = null, !0
+                    return u.application = null, !0
                 },
                 CONNECTION_OPEN: d,
                 LOGOUT: d,
@@ -74300,7 +74323,7 @@
                 T = n("5967"),
                 f = n("499254"),
                 S = n("541099"),
-                h = n("481370"),
+                h = n("173790"),
                 A = n("361917"),
                 m = n("314734"),
                 N = n("981631"),
@@ -74339,7 +74362,7 @@
                 }), [P, y, g, L]), (0, d.useFocusLock)(C), r.useEffect(() => {
                     (!v && (0, u.hasAnyModalOpen)() || v && !D) && M()
                 }, [D, v]);
-                let U = (0, l.useStateFromStores)([S.default], () => S.default.getCurrentAppDetail());
+                let U = (0, l.useStateFromStores)([S.default], () => S.default.getCurrentApplication());
                 return (0, i.jsx)(_.default, {
                     section: N.AnalyticsSections.EXPRESSION_PICKER,
                     children: (0, i.jsx)(E.AppReferencePositionLayer, {
@@ -74367,7 +74390,7 @@
                                         className: p.contentWrapper,
                                         children: null != U ? (0, i.jsx)(h.default, {
                                             channel: n,
-                                            appDetail: U
+                                            application: U
                                         }, U.id) : (0, i.jsx)(A.default, {
                                             channel: n,
                                             isAppDetailPresent: null != U
@@ -74380,11 +74403,81 @@
                 })
             })
         },
-        481370: function(e, t, n) {
+        176412: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEmbeddedApp: function() {
+                    return o
+                },
+                isRealApplication: function() {
+                    return a
+                }
+            }), n("789020");
+            var i = n("630388"),
+                r = n("981631"),
+                s = n("689079");
+
+            function a(e) {
+                return e.id !== s.BuiltInSectionId.BUILT_IN
+            }
+
+            function o(e) {
+                var t;
+                let {
+                    application: n
+                } = e;
+                return a(n) && (0, i.hasFlag)(null !== (t = n.flags) && void 0 !== t ? t : 0, r.ApplicationFlags.EMBEDDED)
+            }
+            s.BuiltInSectionId.BUILT_IN
+        },
+        173790: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return v
+                    return o
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("176412"),
+                s = n("964387"),
+                a = n("153189");
+
+            function o(e) {
+                let {
+                    channel: t,
+                    application: n
+                } = e, o = null != n && (0, r.isEmbeddedApp)({
+                    application: n
+                }) ? s.default : a.default;
+                return (0, i.jsx)(o, {
+                    channel: t,
+                    application: n
+                })
+            }
+        },
+        964387: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return r
+                }
+            }), n("411104");
+            var i = n("176412");
+
+            function r(e) {
+                let {
+                    application: t
+                } = e;
+                if (!(0, i.isRealApplication)(t)) throw Error("AppLauncherActivityDetail was passed the Built-in App, which is not supported.");
+                return null
+            }
+        },
+        153189: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return D
                 }
             });
             var i = n("735250"),
@@ -74404,15 +74497,16 @@
                 S = n("585483"),
                 h = n("499254"),
                 A = n("660090"),
-                m = n("14770"),
-                N = n("390905"),
-                p = n("981631"),
-                O = n("689079"),
-                C = n("689938"),
-                R = n("717784"),
-                g = n("946278");
+                m = n("176412"),
+                N = n("870205"),
+                p = n("442783"),
+                O = n("981631"),
+                C = n("689079"),
+                R = n("689938"),
+                g = n("666722"),
+                L = n("946278");
 
-            function L(e) {
+            function v(e) {
                 let {
                     channel: t,
                     command: n,
@@ -74423,12 +74517,12 @@
                         command: n,
                         section: s,
                         location: _.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW
-                    }), S.ComponentDispatch.dispatch(p.ComponentActions.FOCUS_CHANNEL_TEXT_AREA, {
+                    }), S.ComponentDispatch.dispatch(O.ComponentActions.FOCUS_CHANNEL_TEXT_AREA, {
                         channelId: t.id
                     })
                 }, [t, n, s]);
                 return (0, i.jsxs)("li", {
-                    className: R.command,
+                    className: g.command,
                     onClick: a,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
@@ -74441,109 +74535,110 @@
                 })
             }
 
-            function v(e) {
-                var t, n;
+            function D(e) {
+                var t, n, s;
                 let {
-                    channel: s,
-                    appDetail: u
+                    channel: u,
+                    application: _
                 } = e, {
-                    filterSection: _,
-                    commandsByActiveSection: S
-                } = d.useDiscovery(s, {
+                    filterSection: S,
+                    commandsByActiveSection: O,
+                    sectionDescriptors: D
+                } = d.useDiscovery(u, {
                     commandType: l.ApplicationCommandType.CHAT
                 }, {
                     placeholderCount: 0,
-                    limit: O.DISCOVERY_COMMANDS_QUERY_LIMIT,
+                    limit: C.DISCOVERY_COMMANDS_QUERY_LIMIT,
                     includeFrecency: !0
-                }), {
-                    sortOrder: p,
-                    setSortOrder: v,
-                    commands: D,
-                    canSort: M
+                }), M = null !== (n = D.find(e => e.id === _.id)) && void 0 !== n ? n : null, {
+                    sortOrder: y,
+                    setSortOrder: P,
+                    commands: U,
+                    canSort: b
                 } = (0, A.default)({
-                    sectionId: u.id,
-                    commandsByActiveSection: S
+                    sectionId: _.id,
+                    commandsByActiveSection: O
                 });
                 r.useEffect(() => {
-                    _(u.id)
-                }, [u.id, _]);
-                let y = f.default.getApplicationIconSource({
-                        id: u.id,
-                        icon: u.icon,
-                        bot: null === (t = u.application) || void 0 === t ? void 0 : t.bot,
+                    S(_.id)
+                }, [_.id, S]);
+                let G = f.default.getApplicationIconSource({
+                        id: _.id,
+                        icon: null == M ? void 0 : M.icon,
+                        bot: null == M ? void 0 : null === (t = M.application) || void 0 === t ? void 0 : t.bot,
                         botIconFirst: !0
                     }),
-                    P = r.useCallback(() => {
+                    w = r.useCallback(() => {
                         h.dismissAppDetail()
                     }, []),
-                    U = (0, o.useToken)(o.tokens.colors.BG_BASE_PRIMARY).hex(),
-                    b = (0, E.default)("number" == typeof y ? "" : null == y ? void 0 : y.uri, null != U ? U : ""),
-                    G = (0, c.getIconComponent)(u),
-                    w = r.useMemo(() => {
-                        var e, t;
-                        return (0, I.parseBioReact)(null !== (t = null === (e = u.application) || void 0 === e ? void 0 : e.description) && void 0 !== t ? t : "")
-                    }, [null === (n = u.application) || void 0 === n ? void 0 : n.description]);
+                    k = (0, o.useToken)(o.tokens.colors.BG_BASE_PRIMARY).hex(),
+                    B = (0, E.default)("number" == typeof G ? "" : null == G ? void 0 : G.uri, null != k ? k : ""),
+                    V = null != M ? (0, c.getIconComponent)(M) : null,
+                    x = r.useMemo(() => {
+                        var e;
+                        return (0, m.isRealApplication)(_) ? (0, I.parseBioReact)(null !== (e = _.description) && void 0 !== e ? e : "") : ""
+                    }, [_]);
                 return (0, i.jsxs)(o.ScrollerNone, {
-                    className: R.container,
+                    className: g.container,
                     fade: !0,
                     children: [(0, i.jsx)("div", {
-                        className: R.headerWhenSideCard,
+                        className: g.headerWhenSideCard,
                         style: {
-                            backgroundColor: b
+                            backgroundColor: B
                         },
                         children: (0, i.jsx)(o.Clickable, {
-                            "aria-label": C.default.Messages.CLOSE,
-                            onClick: P,
-                            className: R.headerCloseButton,
+                            "aria-label": R.default.Messages.CLOSE,
+                            onClick: w,
+                            className: g.headerCloseButton,
                             children: (0, i.jsx)(T.default, {})
                         })
                     }), (0, i.jsxs)("div", {
-                        className: R.contentContainer,
+                        className: g.contentContainer,
                         children: [(0, i.jsxs)("div", {
-                            className: R.appIcon,
-                            children: [(0, i.jsx)(G, {
-                                channel: s,
-                                section: u,
+                            className: g.appIcon,
+                            children: [null != M && null != V ? (0, i.jsx)(V, {
+                                channel: u,
+                                section: M,
                                 width: 72,
                                 height: 72
-                            }), (0, i.jsx)("div", {
-                                className: R.appIconBorderThingy
+                            }) : null, (0, i.jsx)("div", {
+                                className: g.appIconBorderThingy
                             })]
                         }), (0, i.jsxs)("section", {
                             children: [(0, i.jsx)(o.Heading, {
-                                className: R.appName,
+                                className: g.appName,
                                 variant: "heading-lg/bold",
-                                children: u.name
+                                children: null !== (s = null == M ? void 0 : M.name) && void 0 !== s ? s : "Unnamed"
                             }), (0, i.jsx)(o.Text, {
-                                className: a()(R.__invalid_appDescription, g.markup),
+                                className: a()(g.__invalid_appDescription, L.markup),
                                 variant: "text-sm/medium",
                                 lineClamp: 3,
-                                children: w
+                                children: x
                             })]
-                        }), (0, i.jsx)(m.default, {
-                            commands: D,
-                            channel: s
+                        }), (0, i.jsx)(p.default, {
+                            commands: U,
+                            channel: u
                         }), (0, i.jsxs)("div", {
-                            className: R.commandListHeader,
+                            className: g.commandListHeader,
                             children: [(0, i.jsx)(o.Heading, {
                                 variant: "text-md/medium",
-                                children: C.default.Messages.APP_LAUNCHER_ALL_COMMANDS_HEADER
-                            }), M && (0, i.jsx)(N.default, {
-                                sortOrder: p,
-                                onSortOptionClick: v
+                                children: R.default.Messages.APP_LAUNCHER_ALL_COMMANDS_HEADER
+                            }), b && (0, i.jsx)(N.default, {
+                                sortOrder: y,
+                                onSortOptionClick: P
                             })]
                         }), (0, i.jsx)("ul", {
-                            children: D.map(e => (0, i.jsx)(L, {
-                                channel: s,
+                            children: U.map(e => (0, i.jsx)(v, {
+                                channel: u,
                                 command: e,
-                                section: u
+                                section: M
                             }, e.id))
                         })]
                     })]
                 })
             }
         },
-        14770: function(e, t, n) {
+        442783: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -74566,7 +74661,7 @@
                 }).length ? null : (0, i.jsx)("li", {})
             }
         },
-        390905: function(e, t, n) {
+        870205: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -74578,10 +74673,10 @@
                 s = n("86813"),
                 a = n("826026"),
                 o = n("135163"),
-                l = n("445966"),
+                l = n("984168"),
                 u = n("314734"),
                 d = n("689938"),
-                _ = n("648410");
+                _ = n("36000");
 
             function c(e) {
                 let t, {
@@ -74635,7 +74730,7 @@
                 })
             }
         },
-        445966: function(e, t, n) {
+        984168: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -74649,7 +74744,7 @@
                 a = n("481060"),
                 o = n("314734"),
                 l = n("689938"),
-                u = n("226823");
+                u = n("319306");
 
             function d(e) {
                 let {
@@ -74691,7 +74786,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return S
                 }
             }), n("47120");
             var i = n("735250"),
@@ -74700,59 +74795,60 @@
                 a = n.n(s),
                 o = n("481060"),
                 l = n("911969"),
-                u = n("10718"),
-                d = n("148958"),
-                _ = n("6048"),
-                c = n("546600"),
-                E = n("105355"),
-                I = n("689079"),
-                T = n("245199");
+                u = n("880308"),
+                d = n("10718"),
+                _ = n("148958"),
+                c = n("6048"),
+                E = n("546600"),
+                I = n("105355"),
+                T = n("689079"),
+                f = n("245199");
 
-            function f(e) {
+            function S(e) {
                 var t, n;
                 let {
                     channel: s,
-                    isAppDetailPresent: f
-                } = e, [S, h] = r.useState(""), A = r.useCallback(() => h(""), [h]), {
-                    commandsByActiveSection: m,
-                    sectionDescriptors: N,
-                    filterSection: p
-                } = u.useDiscovery(s, {
+                    isAppDetailPresent: S
+                } = e, [h, A] = r.useState(""), m = r.useCallback(() => A(""), [A]), {
+                    commandsByActiveSection: N,
+                    sectionDescriptors: p,
+                    filterSection: O
+                } = d.useDiscovery(s, {
                     commandType: l.ApplicationCommandType.CHAT
                 }, {
                     placeholderCount: 0,
-                    limit: I.DISCOVERY_COMMANDS_QUERY_LIMIT,
+                    limit: T.DISCOVERY_COMMANDS_QUERY_LIMIT,
                     includeFrecency: !0
                 });
                 r.useEffect(() => {
-                    p(I.BuiltInSectionId.FRECENCY)
-                }, [p]);
-                let O = null !== (n = null === (t = m[0]) || void 0 === t ? void 0 : t.data) && void 0 !== n ? n : [],
-                    C = N.filter(e => e.id !== I.BuiltInSectionId.FRECENCY && e.id !== I.BuiltInSectionId.BUILT_IN),
-                    R = (0, d.useSortApplicationsViaFrecency)(C);
-                return (0, i.jsxs)("div", {
-                    className: a()(T.container, {
-                        [T.appDetailVisible]: f
+                    O(T.BuiltInSectionId.FRECENCY)
+                }, [O]);
+                let C = null !== (n = null === (t = N[0]) || void 0 === t ? void 0 : t.data) && void 0 !== n ? n : [],
+                    R = p.filter(e => e.id !== T.BuiltInSectionId.FRECENCY && e.id !== T.BuiltInSectionId.BUILT_IN),
+                    g = (0, _.useSortApplicationsViaFrecency)(R);
+                return (0, u.useFetchDeveloperActivityShelfItems)(), (0, i.jsxs)("div", {
+                    className: a()(f.container, {
+                        [f.appDetailVisible]: S
                     }),
                     children: [(0, i.jsx)("div", {
-                        className: T.searchBarContainer,
-                        children: (0, i.jsx)(_.default, {
+                        className: f.searchBarContainer,
+                        children: (0, i.jsx)(c.default, {
                             placeholder: "Search Apps & Commands",
-                            onChange: h,
-                            query: S,
-                            onClear: A,
-                            size: _.default.Sizes.MEDIUM
+                            onChange: A,
+                            query: h,
+                            onClear: m,
+                            size: c.default.Sizes.MEDIUM
                         })
                     }), (0, i.jsxs)(o.Scroller, {
-                        className: T.scrollableContent,
+                        className: f.scrollableContent,
                         fade: !0,
-                        children: [(0, i.jsx)(c.default, {
+                        children: [(0, i.jsx)(E.default, {
                             channel: s,
-                            commands: O,
-                            sectionDescriptors: N
-                        }), (0, i.jsx)(E.default, {
+                            commands: C,
+                            sectionDescriptors: p
+                        }), (0, i.jsx)(I.default, {
                             channel: s,
-                            applications: R
+                            applications: g
                         })]
                     })]
                 })
@@ -74870,8 +74966,8 @@
                 } = e, I = (0, l.getIconComponent)(E), T = r.useMemo(() => {
                     var e, t;
                     return (0, u.parseBioReactWithoutScrolling)(null !== (t = null === (e = E.application) || void 0 === e ? void 0 : e.description) && void 0 !== t ? t : "")
-                }, [null === (t = E.application) || void 0 === t ? void 0 : t.description]), f = (0, s.useStateFromStores)([_.default], () => _.default.getCurrentAppDetail()), S = r.useCallback(e => {
-                    e.stopPropagation(), (null == f ? void 0 : f.id) === E.id ? d.dismissAppDetail() : d.showAppDetail(E)
+                }, [null === (t = E.application) || void 0 === t ? void 0 : t.description]), f = (0, s.useStateFromStores)([_.default], () => _.default.getCurrentApplication()), S = r.useCallback(e => {
+                    e.stopPropagation(), (null == f ? void 0 : f.id) === E.id ? d.dismissAppDetail() : null != E.application && d.showAppDetail(E.application)
                 }, [E, f]);
                 return (0, i.jsxs)("li", {
                     className: c.application,
@@ -89083,8 +89179,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299991", "299991"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299991")), t = 0), t
+                let t = parseInt((e = "299996", "299996"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299996")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117262,8 +117358,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299991",
-                    versionHash: "5c957c4d41359151bd4627ab8cf4f4dea57c9c7f"
+                    buildNumber: "299996",
+                    versionHash: "85a3ac13744859d0d21fb7cc59c88bd5b5990254"
                 }
             }
             n.r(t), n.d(t, {
@@ -174964,8 +175060,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717778451777",
-                                    build_number: "299991"
+                                    built_at: "1717778657458",
+                                    build_number: "299996"
                                 }
                             },
                             retries: 1
@@ -187408,6 +187504,7 @@
                                 showYearlyPrice: s,
                                 priceOptions: d,
                                 textVariant: i ? "heading-lg/normal" : void 0,
+                                shouldUseModifiedCopy: i,
                                 className: et.modifiedPrice
                             })]
                         }), (0, _.jsx)("div", {
@@ -217846,7 +217943,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return C
                 }
             });
             var i = n("735250"),
@@ -217854,77 +217951,82 @@
                 s = n("442837"),
                 a = n("481060"),
                 o = n("420660"),
-                l = n("233440"),
-                u = n("199902"),
-                d = n("158776"),
-                _ = n("74538"),
-                c = n("998502"),
-                E = n("785717"),
-                I = n("204197"),
-                T = n("652853"),
-                f = n("228168"),
-                S = n("981631"),
-                h = n("474936"),
-                A = n("579935");
-            let m = a.AvatarSizes.SIZE_80,
-                N = c.default.getEnableHardwareAcceleration() ? a.AnimatedAvatar : a.Avatar;
+                l = n("100527"),
+                u = n("906732"),
+                d = n("233440"),
+                _ = n("199902"),
+                c = n("158776"),
+                E = n("74538"),
+                I = n("998502"),
+                T = n("785717"),
+                f = n("204197"),
+                S = n("652853"),
+                h = n("228168"),
+                A = n("981631"),
+                m = n("474936"),
+                N = n("579935");
+            let p = a.AvatarSizes.SIZE_80,
+                O = I.default.getEnableHardwareAcceleration() ? a.AnimatedAvatar : a.Avatar;
 
-            function p(e) {
+            function C(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    guildId: c,
-                    channelId: p,
-                    animateOnHover: O,
-                    onOpenProfile: C
+                    guildId: I,
+                    channelId: C,
+                    animateOnHover: R,
+                    onOpenProfile: g
                 } = e, {
-                    theme: R
-                } = (0, T.useUserProfileThemeContext)(), {
-                    trackUserProfileAction: g
-                } = (0, E.useUserProfileAnalyticsContext)(), L = _.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, h.PremiumTypes.TIER_2), v = r.useMemo(() => (0, l.shouldDisableUserPresenceInChannel)(t, p), [t, p]), {
-                    status: D,
-                    isMobileOnline: M
-                } = (0, s.useStateFromStoresObject)([u.default, d.default], () => {
-                    let e = null != u.default.getAnyStreamForUser(t.id),
-                        n = d.default.findActivity(t.id, t => {
+                    theme: L
+                } = (0, S.useUserProfileThemeContext)(), {
+                    analyticsLocations: v
+                } = (0, u.default)(l.default.AVATAR), {
+                    trackUserProfileAction: D
+                } = (0, T.useUserProfileAnalyticsContext)(), M = E.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, m.PremiumTypes.TIER_2), y = r.useMemo(() => (0, d.shouldDisableUserPresenceInChannel)(t, C), [t, C]), {
+                    status: P,
+                    isMobileOnline: U
+                } = (0, s.useStateFromStoresObject)([_.default, c.default], () => {
+                    let e = null != _.default.getAnyStreamForUser(t.id),
+                        n = c.default.findActivity(t.id, t => {
                             let {
                                 type: n
                             } = t;
-                            return e ? n === S.ActivityTypes.PLAYING : n !== S.ActivityTypes.CUSTOM_STATUS
+                            return e ? n === A.ActivityTypes.PLAYING : n !== A.ActivityTypes.CUSTOM_STATUS
                         });
                     return {
-                        status: (0, o.default)(n) ? S.StatusTypes.STREAMING : d.default.getStatus(t.id),
-                        isMobileOnline: d.default.isMobileOnline(t.id)
+                        status: (0, o.default)(n) ? A.StatusTypes.STREAMING : c.default.getStatus(t.id),
+                        isMobileOnline: c.default.isMobileOnline(t.id)
                     }
                 }), {
-                    avatarDecorationSrc: y,
-                    avatarSrc: P,
-                    eventHandlers: U
-                } = (0, I.default)({
+                    avatarDecorationSrc: b,
+                    avatarSrc: G,
+                    eventHandlers: w
+                } = (0, f.default)({
                     user: t,
-                    guildId: c,
-                    size: m,
-                    animateOnHover: O
+                    guildId: I,
+                    size: p,
+                    animateOnHover: R
                 });
                 return (0, i.jsx)(a.Clickable, {
-                    ...U,
-                    className: A.clickable,
-                    onClick: null == C ? void 0 : () => {
-                        g({
-                            action: "PRESS_VIEW_PROFILE"
-                        }), null == C || C()
+                    ...w,
+                    className: N.clickable,
+                    onClick: null == g ? void 0 : () => {
+                        D({
+                            action: "PRESS_VIEW_PROFILE",
+                            analyticsLocations: v
+                        }), null == g || g()
                     },
-                    children: (0, i.jsx)(N, {
-                        src: P,
-                        avatarDecoration: y,
-                        size: m,
+                    children: (0, i.jsx)(O, {
+                        src: G,
+                        avatarDecoration: b,
+                        size: p,
                         "aria-label": t.username,
-                        imageClassName: null != C ? A.overlay : void 0,
-                        status: v ? S.StatusTypes.UNKNOWN : D,
-                        statusBackdropColor: L && !v ? (0, a.getStatusBackdropColor)(R) : void 0,
-                        isMobile: M,
+                        imageClassName: null != g ? N.overlay : void 0,
+                        status: y ? A.StatusTypes.UNKNOWN : P,
+                        statusBackdropColor: M && !y ? (0, a.getStatusBackdropColor)(L) : void 0,
+                        isMobile: U,
                         statusTooltip: !0,
-                        statusTooltipDelay: f.USER_PROFILE_TOOLTIP_DELAY
+                        statusTooltipDelay: h.USER_PROFILE_TOOLTIP_DELAY
                     })
                 })
             }
@@ -252978,7 +253080,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5c957c4d41359151bd4627ab8cf4f4dea57c9c7f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "85a3ac13744859d0d21fb7cc59c88bd5b5990254"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282222,7 +282324,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299991"
+                                build_number: "299996"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289531,7 +289633,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299991", "299991"), 10);
+                let s = parseInt((n = "299996", "299996"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317478,4 +317580,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.c4a8dc4832d91e0e1ddf.js.map
+//# sourceMappingURL=27519.bab14e58be2c893bb266.js.map
