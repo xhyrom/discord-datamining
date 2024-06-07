@@ -37155,7 +37155,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300176", ", Version Hash: ").concat("8ece5d0dc6b7fae36f6ec9d3d745b37f035e92db")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300188", ", Version Hash: ").concat("45234f4086ec6a44f1ded9ad4b731e626703d7b7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -74084,14 +74084,8 @@
         499254: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                dismissAppDetail: function() {
-                    return o
-                },
                 dismissAppLauncherPopup: function() {
                     return s
-                },
-                showAppDetail: function() {
-                    return a
                 },
                 showAppLauncherPopup: function() {
                     return r
@@ -74108,19 +74102,6 @@
             function s() {
                 i.default.dispatch({
                     type: "APP_LAUNCHER_DISMISS_POPUP"
-                })
-            }
-
-            function a(e) {
-                i.default.dispatch({
-                    type: "APP_LAUNCHER_SHOW_APP_DETAIL",
-                    application: e
-                })
-            }
-
-            function o() {
-                i.default.dispatch({
-                    type: "APP_LAUNCHER_DISMISS_APP_DETAIL"
                 })
             }
         },
@@ -74166,20 +74147,16 @@
             var i, r, s, a, o = n("442837"),
                 l = n("570140");
             let u = {
-                showPopup: !1,
-                application: null
+                showPopup: !1
             };
 
             function d() {
-                return u.showPopup = !1, u.application = null, !0
+                return u.showPopup = !1, !0
             }
             class _ extends(a = o.default.Store) {
                 initialize() {}
                 shouldShowPopup() {
                     return u.showPopup
-                }
-                getCurrentApplication() {
-                    return u.application
                 }
             }
             s = "AppLauncherStore", (r = "displayName") in(i = _) ? Object.defineProperty(i, r, {
@@ -74192,15 +74169,6 @@
                     return u.showPopup = !0, !0
                 },
                 APP_LAUNCHER_DISMISS_POPUP: d,
-                APP_LAUNCHER_SHOW_APP_DETAIL: function(e) {
-                    let {
-                        application: t
-                    } = e;
-                    return u.application = t, !0
-                },
-                APP_LAUNCHER_DISMISS_APP_DETAIL: function() {
-                    return u.application = null, !0
-                },
                 CONNECTION_OPEN: d,
                 LOGOUT: d,
                 CHANNEL_SELECT: d,
@@ -74335,95 +74303,170 @@
                 }
             }
         },
+        695676: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                AppLauncherHistoryContext: function() {
+                    return a
+                },
+                HistoryItemType: function() {
+                    return r
+                },
+                useAppLauncherHistoryContext: function() {
+                    return o
+                }
+            });
+            var i, r, s = n("470079");
+            (i = r || (r = {})).HOME = "home", i.APPLICATION = "application";
+            let a = s.createContext({
+                history: [],
+                setHistory: () => {},
+                currentView: void 0,
+                pushHistory: () => {},
+                goBack: () => {}
+            });
+
+            function o() {
+                return s.useContext(a)
+            }
+        },
         663924: function(e, t, n) {
             "use strict";
-            n.r(t);
+            n.r(t), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
                 o = n("374470"),
-                l = n("442837"),
-                u = n("952265"),
-                d = n("481060"),
-                _ = n("410575"),
-                c = n("40851"),
-                E = n("153850"),
-                I = n("585483"),
-                T = n("5967"),
-                f = n("499254"),
-                S = n("541099"),
-                h = n("173790"),
-                A = n("361917"),
-                m = n("314734"),
-                N = n("981631"),
-                p = n("175323");
+                l = n("952265"),
+                u = n("481060"),
+                d = n("410575"),
+                _ = n("40851"),
+                c = n("153850"),
+                E = n("585483"),
+                I = n("5967"),
+                T = n("499254"),
+                f = n("695676"),
+                S = n("173790"),
+                h = n("361917"),
+                A = n("314734"),
+                m = n("981631"),
+                N = n("175323");
             t.default = r.memo(function(e) {
-                let {
-                    positionTargetRef: t,
-                    channel: n,
-                    closeOnModalOuterClick: s = !1,
-                    parentModalKey: O
-                } = e, C = r.useRef(null), R = r.useRef(null), {
-                    renderWindow: g,
-                    windowDispatch: L
-                } = r.useContext(c.default), v = null != O, D = (0, u.useIsModalAtTop)(null != O ? O : ""), M = () => {
-                    f.dismissAppLauncherPopup()
-                }, y = r.useCallback(e => {
-                    var t;
-                    if (!v && (0, u.hasAnyModalOpen)() || v && !(D && s)) return;
-                    let {
-                        target: n
-                    } = e;
-                    if ((0, o.isElement)(n) && null != n.closest("." + m.APP_LAUNCHER_ELEMENT_CLASSNAME)) return;
-                    for (;
-                        (0, o.isElement)(n);) {
-                        if (n === R.current) return;
-                        n = n.parentNode
-                    }
-                    M();
-                    let i = null === (t = (0, T.eventOwnerDocument)(e)) || void 0 === t ? void 0 : t.activeElement;
-                    (null == i || "BODY" === i.tagName) && I.ComponentDispatch.dispatchToLastSubscribed(N.ComponentActions.TEXTAREA_FOCUS)
-                }, [s, D, v]), P = r.useCallback(() => {
-                    M()
-                }, []);
-                r.useLayoutEffect(() => (g.addEventListener("mousedown", y), g.addEventListener("contextmenu", y), L.subscribe(N.ComponentActions.POPOUT_CLOSE, P), () => {
-                    g.removeEventListener("mousedown", y), g.removeEventListener("contextmenu", y), L.unsubscribe(N.ComponentActions.POPOUT_CLOSE, P)
-                }), [P, y, g, L]), (0, d.useFocusLock)(C), r.useEffect(() => {
-                    (!v && (0, u.hasAnyModalOpen)() || v && !D) && M()
+                let t, {
+                        positionTargetRef: n,
+                        channel: s,
+                        closeOnModalOuterClick: p = !1,
+                        parentModalKey: O
+                    } = e,
+                    C = r.useRef(null),
+                    R = r.useRef(null),
+                    {
+                        renderWindow: g,
+                        windowDispatch: L
+                    } = r.useContext(_.default),
+                    v = null != O,
+                    D = (0, l.useIsModalAtTop)(null != O ? O : ""),
+                    M = () => {
+                        T.dismissAppLauncherPopup()
+                    },
+                    y = r.useCallback(e => {
+                        var t;
+                        if (!v && (0, l.hasAnyModalOpen)() || v && !(D && p)) return;
+                        let {
+                            target: n
+                        } = e;
+                        if ((0, o.isElement)(n) && null != n.closest("." + A.APP_LAUNCHER_ELEMENT_CLASSNAME)) return;
+                        for (;
+                            (0, o.isElement)(n);) {
+                            if (n === R.current) return;
+                            n = n.parentNode
+                        }
+                        M();
+                        let i = null === (t = (0, I.eventOwnerDocument)(e)) || void 0 === t ? void 0 : t.activeElement;
+                        (null == i || "BODY" === i.tagName) && E.ComponentDispatch.dispatchToLastSubscribed(m.ComponentActions.TEXTAREA_FOCUS)
+                    }, [p, D, v]),
+                    P = r.useCallback(() => {
+                        M()
+                    }, []);
+                r.useLayoutEffect(() => (g.addEventListener("mousedown", y), g.addEventListener("contextmenu", y), L.subscribe(m.ComponentActions.POPOUT_CLOSE, P), () => {
+                    g.removeEventListener("mousedown", y), g.removeEventListener("contextmenu", y), L.unsubscribe(m.ComponentActions.POPOUT_CLOSE, P)
+                }), [P, y, g, L]), (0, u.useFocusLock)(C), r.useEffect(() => {
+                    (!v && (0, l.hasAnyModalOpen)() || v && !D) && M()
                 }, [D, v]);
-                let U = (0, l.useStateFromStores)([S.default], () => S.default.getCurrentApplication());
-                return (0, i.jsx)(_.default, {
-                    section: N.AnalyticsSections.EXPRESSION_PICKER,
-                    children: (0, i.jsx)(E.AppReferencePositionLayer, {
-                        className: p.positionLayer,
-                        targetRef: t,
+                let {
+                    history: U,
+                    setHistory: b,
+                    currentView: G,
+                    pushHistory: w,
+                    goBack: k
+                } = function() {
+                    let [e, t] = r.useState([{
+                        type: f.HistoryItemType.HOME
+                    }]), n = e[e.length - 1];
+                    return {
+                        history: e,
+                        setHistory: t,
+                        currentView: n,
+                        pushHistory: n => {
+                            t([...e, n])
+                        },
+                        goBack: () => {
+                            if (0 === e.length) return;
+                            let n = [...e];
+                            n.pop(), t(n)
+                        }
+                    }
+                }();
+                switch (null == G ? void 0 : G.type) {
+                    case f.HistoryItemType.HOME:
+                        t = (0, i.jsx)(h.default, {
+                            channel: s
+                        });
+                        break;
+                    case f.HistoryItemType.APPLICATION:
+                        t = (0, i.jsx)(S.default, {
+                            channel: s,
+                            application: G.application
+                        });
+                        break;
+                    default:
+                        t = null
+                }
+                return (0, i.jsx)(d.default, {
+                    section: m.AnalyticsSections.EXPRESSION_PICKER,
+                    children: (0, i.jsx)(c.AppReferencePositionLayer, {
+                        className: N.positionLayer,
+                        targetRef: n,
                         position: "top",
                         align: "right",
                         spacing: 8,
                         autoInvert: !0,
                         children: e => {
                             let {
-                                isPositioned: t
+                                isPositioned: n
                             } = e;
                             return (0, i.jsx)("section", {
-                                className: a()(p.positionContainer),
+                                className: a()(N.positionContainer),
                                 ref: C,
                                 role: "dialog",
                                 "aria-label": "Application Launcher",
-                                children: t ? (0, i.jsxs)("div", {
-                                    className: p.drawerSizingWrapper,
+                                children: n ? (0, i.jsxs)("div", {
+                                    className: N.drawerSizingWrapper,
                                     ref: R,
                                     children: [(0, i.jsx)("div", {
-                                        className: p.resizeHandle
+                                        className: N.resizeHandle
                                     }), (0, i.jsx)("div", {
-                                        className: p.contentWrapper,
-                                        children: null != U ? (0, i.jsx)(h.default, {
-                                            channel: n,
-                                            application: U
-                                        }, U.id) : (0, i.jsx)(A.default, {
-                                            channel: n,
-                                            isAppDetailPresent: null != U
+                                        className: N.contentWrapper,
+                                        children: (0, i.jsx)(f.AppLauncherHistoryContext.Provider, {
+                                            value: {
+                                                history: U,
+                                                setHistory: b,
+                                                currentView: G,
+                                                pushHistory: w,
+                                                goBack: k
+                                            },
+                                            children: t
                                         })
                                     })]
                                 }) : null
@@ -74507,57 +74550,58 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return D
+                    return M
                 }
             });
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
-                o = n("481060"),
-                l = n("911969"),
-                u = n("555573"),
-                d = n("10718"),
-                _ = n("895924"),
-                c = n("826298"),
-                E = n("220082"),
-                I = n("240991"),
-                T = n("465670"),
+                o = n("270292"),
+                l = n("481060"),
+                u = n("911969"),
+                d = n("555573"),
+                _ = n("10718"),
+                c = n("895924"),
+                E = n("826298"),
+                I = n("220082"),
+                T = n("240991"),
                 f = n("768581"),
                 S = n("585483"),
                 h = n("499254"),
                 A = n("660090"),
-                m = n("176412"),
-                N = n("870205"),
-                p = n("442783"),
-                O = n("981631"),
-                C = n("689079"),
-                R = n("689938"),
-                g = n("666722"),
-                L = n("946278");
+                m = n("695676"),
+                N = n("176412"),
+                p = n("870205"),
+                O = n("442783"),
+                C = n("981631"),
+                R = n("689079"),
+                g = n("689938"),
+                L = n("666722"),
+                v = n("946278");
 
-            function v(e) {
+            function D(e) {
                 let {
                     channel: t,
                     command: n,
                     section: s
                 } = e, a = r.useCallback(() => {
-                    h.dismissAppLauncherPopup(), u.setActiveCommand({
+                    h.dismissAppLauncherPopup(), d.setActiveCommand({
                         channelId: t.id,
                         command: n,
                         section: s,
-                        location: _.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW
-                    }), S.ComponentDispatch.dispatch(O.ComponentActions.FOCUS_CHANNEL_TEXT_AREA, {
+                        location: c.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW
+                    }), S.ComponentDispatch.dispatch(C.ComponentActions.FOCUS_CHANNEL_TEXT_AREA, {
                         channelId: t.id
                     })
                 }, [t, n, s]);
                 return (0, i.jsxs)("li", {
-                    className: g.command,
+                    className: L.command,
                     onClick: a,
-                    children: [(0, i.jsx)(o.Text, {
+                    children: [(0, i.jsx)(l.Text, {
                         variant: "text-sm/semibold",
                         children: n.displayName
-                    }), (0, i.jsx)(o.Text, {
+                    }), (0, i.jsx)(l.Text, {
                         variant: "text-xs/medium",
                         lineClamp: 1,
                         children: n.displayDescription
@@ -74565,103 +74609,109 @@
                 })
             }
 
-            function D(e) {
+            function M(e) {
                 var t, n, s;
                 let {
-                    channel: u,
-                    application: _
+                    channel: d,
+                    application: c
                 } = e, {
-                    filterSection: S,
-                    commandsByActiveSection: O,
-                    sectionDescriptors: D
-                } = d.useDiscovery(u, {
-                    commandType: l.ApplicationCommandType.CHAT
+                    goBack: S
+                } = (0, m.useAppLauncherHistoryContext)(), {
+                    filterSection: h,
+                    commandsByActiveSection: C,
+                    sectionDescriptors: M
+                } = _.useDiscovery(d, {
+                    commandType: u.ApplicationCommandType.CHAT
                 }, {
                     placeholderCount: 0,
-                    limit: C.DISCOVERY_COMMANDS_QUERY_LIMIT,
+                    limit: R.DISCOVERY_COMMANDS_QUERY_LIMIT,
                     includeFrecency: !0
-                }), M = null !== (n = D.find(e => e.id === _.id)) && void 0 !== n ? n : null, {
-                    sortOrder: y,
-                    setSortOrder: P,
-                    commands: U,
-                    canSort: b
+                }), y = null !== (n = M.find(e => e.id === c.id)) && void 0 !== n ? n : null, {
+                    sortOrder: P,
+                    setSortOrder: U,
+                    commands: b,
+                    canSort: G
                 } = (0, A.default)({
-                    sectionId: _.id,
-                    commandsByActiveSection: O
+                    sectionId: c.id,
+                    commandsByActiveSection: C
                 });
                 r.useEffect(() => {
-                    S(_.id)
-                }, [_.id, S]);
-                let G = f.default.getApplicationIconSource({
-                        id: _.id,
-                        icon: null == M ? void 0 : M.icon,
-                        bot: null == M ? void 0 : null === (t = M.application) || void 0 === t ? void 0 : t.bot,
+                    h(c.id)
+                }, [c.id, h]);
+                let w = f.default.getApplicationIconSource({
+                        id: c.id,
+                        icon: null == y ? void 0 : y.icon,
+                        bot: null == y ? void 0 : null === (t = y.application) || void 0 === t ? void 0 : t.bot,
                         botIconFirst: !0
                     }),
-                    w = r.useCallback(() => {
-                        h.dismissAppDetail()
-                    }, []),
-                    k = (0, o.useToken)(o.tokens.colors.BG_BASE_PRIMARY).hex(),
-                    B = (0, E.default)("number" == typeof G ? "" : null == G ? void 0 : G.uri, null != k ? k : ""),
-                    V = null != M ? (0, c.getIconComponent)(M) : null,
-                    x = r.useMemo(() => {
+                    k = r.useCallback(() => {
+                        S()
+                    }, [S]),
+                    B = (0, l.useToken)(l.tokens.colors.BG_BASE_PRIMARY).hex(),
+                    V = (0, I.default)("number" == typeof w ? "" : null == w ? void 0 : w.uri, null != B ? B : ""),
+                    x = null != y ? (0, E.getIconComponent)(y) : null,
+                    F = r.useMemo(() => {
                         var e;
-                        return (0, m.isRealApplication)(_) ? (0, I.parseBioReact)(null !== (e = _.description) && void 0 !== e ? e : "") : ""
-                    }, [_]);
-                return (0, i.jsxs)(o.ScrollerNone, {
-                    className: g.container,
+                        return (0, N.isRealApplication)(c) ? (0, T.parseBioReact)(null !== (e = c.description) && void 0 !== e ? e : "") : ""
+                    }, [c]);
+                return (0, i.jsxs)(l.ScrollerNone, {
+                    className: L.container,
                     fade: !0,
                     children: [(0, i.jsx)("div", {
-                        className: g.headerWhenSideCard,
+                        className: L.header,
                         style: {
-                            backgroundColor: B
+                            backgroundColor: V
                         },
-                        children: (0, i.jsx)(o.Clickable, {
-                            "aria-label": R.default.Messages.CLOSE,
-                            onClick: w,
-                            className: g.headerCloseButton,
-                            children: (0, i.jsx)(T.default, {})
+                        children: (0, i.jsx)(l.Clickable, {
+                            "aria-label": g.default.Messages.BACK,
+                            onClick: k,
+                            className: L.headerBackButton,
+                            children: (0, i.jsx)(o.ArrowLargeLeftIcon, {
+                                color: l.tokens.colors.INTERACTIVE_ACTIVE,
+                                width: 18,
+                                height: 18
+                            })
                         })
                     }), (0, i.jsxs)("div", {
-                        className: g.contentContainer,
+                        className: L.contentContainer,
                         children: [(0, i.jsxs)("div", {
-                            className: g.appIcon,
-                            children: [null != M && null != V ? (0, i.jsx)(V, {
-                                channel: u,
-                                section: M,
+                            className: L.appIcon,
+                            children: [null != y && null != x ? (0, i.jsx)(x, {
+                                channel: d,
+                                section: y,
                                 width: 72,
                                 height: 72
                             }) : null, (0, i.jsx)("div", {
-                                className: g.appIconBorderThingy
+                                className: L.appIconBorderThingy
                             })]
                         }), (0, i.jsxs)("section", {
-                            children: [(0, i.jsx)(o.Heading, {
-                                className: g.appName,
+                            children: [(0, i.jsx)(l.Heading, {
+                                className: L.appName,
                                 variant: "heading-lg/bold",
-                                children: null !== (s = null == M ? void 0 : M.name) && void 0 !== s ? s : "Unnamed"
-                            }), (0, i.jsx)(o.Text, {
-                                className: a()(g.__invalid_appDescription, L.markup),
+                                children: null !== (s = null == y ? void 0 : y.name) && void 0 !== s ? s : "Unnamed"
+                            }), (0, i.jsx)(l.Text, {
+                                className: a()(L.__invalid_appDescription, v.markup),
                                 variant: "text-sm/medium",
                                 lineClamp: 3,
-                                children: x
+                                children: F
                             })]
-                        }), (0, i.jsx)(p.default, {
-                            commands: U,
-                            channel: u
+                        }), (0, i.jsx)(O.default, {
+                            commands: b,
+                            channel: d
                         }), (0, i.jsxs)("div", {
-                            className: g.commandListHeader,
-                            children: [(0, i.jsx)(o.Heading, {
+                            className: L.commandListHeader,
+                            children: [(0, i.jsx)(l.Heading, {
                                 variant: "text-md/medium",
-                                children: R.default.Messages.APP_LAUNCHER_ALL_COMMANDS_HEADER
-                            }), b && (0, i.jsx)(N.default, {
-                                sortOrder: y,
-                                onSortOptionClick: P
+                                children: g.default.Messages.APP_LAUNCHER_ALL_COMMANDS_HEADER
+                            }), G && (0, i.jsx)(p.default, {
+                                sortOrder: P,
+                                onSortOptionClick: U
                             })]
                         }), (0, i.jsx)("ul", {
-                            children: U.map(e => (0, i.jsx)(v, {
-                                channel: u,
+                            children: b.map(e => (0, i.jsx)(D, {
+                                channel: d,
                                 command: e,
-                                section: M
+                                section: y
                             }, e.id))
                         })]
                     })]
@@ -74816,69 +74866,64 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return T
                 }
             }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("481060"),
-                l = n("911969"),
-                u = n("880308"),
-                d = n("10718"),
-                _ = n("148958"),
-                c = n("6048"),
-                E = n("546600"),
-                I = n("105355"),
-                T = n("689079"),
-                f = n("245199");
+                s = n("481060"),
+                a = n("911969"),
+                o = n("880308"),
+                l = n("10718"),
+                u = n("148958"),
+                d = n("6048"),
+                _ = n("546600"),
+                c = n("105355"),
+                E = n("689079"),
+                I = n("245199");
 
-            function S(e) {
+            function T(e) {
                 var t, n;
                 let {
-                    channel: s,
-                    isAppDetailPresent: S
-                } = e, [h, A] = r.useState(""), m = r.useCallback(() => A(""), [A]), {
-                    commandsByActiveSection: N,
-                    sectionDescriptors: p,
-                    filterSection: O
-                } = d.useDiscovery(s, {
-                    commandType: l.ApplicationCommandType.CHAT
+                    channel: T
+                } = e, [f, S] = r.useState(""), h = r.useCallback(() => S(""), [S]), {
+                    commandsByActiveSection: A,
+                    sectionDescriptors: m,
+                    filterSection: N
+                } = l.useDiscovery(T, {
+                    commandType: a.ApplicationCommandType.CHAT
                 }, {
                     placeholderCount: 0,
-                    limit: T.DISCOVERY_COMMANDS_QUERY_LIMIT,
+                    limit: E.DISCOVERY_COMMANDS_QUERY_LIMIT,
                     includeFrecency: !0
                 });
                 r.useEffect(() => {
-                    O(T.BuiltInSectionId.FRECENCY)
-                }, [O]);
-                let C = null !== (n = null === (t = N[0]) || void 0 === t ? void 0 : t.data) && void 0 !== n ? n : [],
-                    R = p.filter(e => e.id !== T.BuiltInSectionId.FRECENCY && e.id !== T.BuiltInSectionId.BUILT_IN),
-                    g = (0, _.useSortApplicationsViaFrecency)(R);
-                return (0, u.useFetchDeveloperActivityShelfItems)(), (0, i.jsxs)("div", {
-                    className: a()(f.container, {
-                        [f.appDetailVisible]: S
-                    }),
+                    N(E.BuiltInSectionId.FRECENCY)
+                }, [N]);
+                let p = null !== (n = null === (t = A[0]) || void 0 === t ? void 0 : t.data) && void 0 !== n ? n : [],
+                    O = m.filter(e => e.id !== E.BuiltInSectionId.FRECENCY && e.id !== E.BuiltInSectionId.BUILT_IN),
+                    C = (0, u.useSortApplicationsViaFrecency)(O);
+                return (0, o.useFetchDeveloperActivityShelfItems)(), (0, i.jsxs)("div", {
+                    className: I.container,
                     children: [(0, i.jsx)("div", {
-                        className: f.searchBarContainer,
-                        children: (0, i.jsx)(c.default, {
+                        className: I.searchBarContainer,
+                        children: (0, i.jsx)(d.default, {
                             placeholder: "Search Apps & Commands",
-                            onChange: A,
-                            query: h,
-                            onClear: m,
-                            size: c.default.Sizes.MEDIUM
+                            onChange: S,
+                            query: f,
+                            onClear: h,
+                            size: d.default.Sizes.MEDIUM
                         })
-                    }), (0, i.jsxs)(o.Scroller, {
-                        className: f.scrollableContent,
+                    }), (0, i.jsxs)(s.Scroller, {
+                        className: I.scrollableContent,
                         fade: !0,
-                        children: [(0, i.jsx)(E.default, {
-                            channel: s,
-                            commands: C,
-                            sectionDescriptors: p
-                        }), (0, i.jsx)(I.default, {
-                            channel: s,
-                            applications: g
+                        children: [(0, i.jsx)(_.default, {
+                            channel: T,
+                            commands: p,
+                            sectionDescriptors: m
+                        }), (0, i.jsx)(c.default, {
+                            channel: T,
+                            applications: C
                         })]
                     })]
                 })
@@ -74974,71 +75019,74 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return c
                 }
             });
             var i = n("735250"),
                 r = n("470079"),
-                s = n("442837"),
-                a = n("993365"),
-                o = n("481060"),
-                l = n("826298"),
-                u = n("240991"),
-                d = n("499254"),
-                _ = n("541099"),
-                c = n("38658");
+                s = n("993365"),
+                a = n("481060"),
+                o = n("826298"),
+                l = n("240991"),
+                u = n("695676"),
+                d = n("38658");
 
-            function E(e) {
+            function _(e) {
                 var t;
                 let {
                     channel: n,
-                    applicationSection: E
-                } = e, I = (0, l.getIconComponent)(E), T = r.useMemo(() => {
+                    applicationSection: _
+                } = e, {
+                    pushHistory: c
+                } = (0, u.useAppLauncherHistoryContext)(), E = (0, o.getIconComponent)(_), I = r.useMemo(() => {
                     var e, t;
-                    return (0, u.parseBioReactWithoutScrolling)(null !== (t = null === (e = E.application) || void 0 === e ? void 0 : e.description) && void 0 !== t ? t : "")
-                }, [null === (t = E.application) || void 0 === t ? void 0 : t.description]), f = (0, s.useStateFromStores)([_.default], () => _.default.getCurrentApplication()), S = r.useCallback(e => {
-                    e.stopPropagation(), (null == f ? void 0 : f.id) === E.id ? d.dismissAppDetail() : null != E.application && d.showAppDetail(E.application)
-                }, [E, f]);
+                    return (0, l.parseBioReactWithoutScrolling)(null !== (t = null === (e = _.application) || void 0 === e ? void 0 : e.description) && void 0 !== t ? t : "")
+                }, [null === (t = _.application) || void 0 === t ? void 0 : t.description]), T = r.useCallback(e => {
+                    e.stopPropagation(), c({
+                        type: u.HistoryItemType.APPLICATION,
+                        application: _.application
+                    })
+                }, [_, c]);
                 return (0, i.jsxs)("li", {
-                    className: c.application,
-                    onClick: S,
-                    children: [(0, i.jsx)(I, {
-                        className: c.applicationIcon,
+                    className: d.application,
+                    onClick: T,
+                    children: [(0, i.jsx)(E, {
+                        className: d.applicationIcon,
                         channel: n,
-                        section: E,
+                        section: _,
                         width: 32,
                         height: 32
                     }), (0, i.jsxs)("div", {
-                        className: c.applicationDetails,
-                        children: [(0, i.jsx)(o.Heading, {
+                        className: d.applicationDetails,
+                        children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-md/medium",
-                            children: E.name
-                        }), (0, i.jsx)(a.Text, {
-                            className: c.applicationDescription,
+                            children: _.name
+                        }), (0, i.jsx)(s.Text, {
+                            className: d.applicationDescription,
                             variant: "text-xs/medium",
                             color: "text-muted",
                             lineClamp: 1,
-                            children: T
+                            children: I
                         })]
                     })]
                 })
             }
 
-            function I(e) {
+            function c(e) {
                 let {
                     channel: t,
                     applications: n
-                } = e, s = n.slice(0, 50), o = r.useMemo(() => s.map(e => (0, i.jsx)(E, {
+                } = e, a = n.slice(0, 50), o = r.useMemo(() => a.map(e => (0, i.jsx)(_, {
                     channel: t,
                     applicationSection: e
-                }, e.id)), [t, s]);
-                return 0 === s.length ? null : (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(a.Text, {
-                        className: c.listHeading,
+                }, e.id)), [t, a]);
+                return 0 === a.length ? null : (0, i.jsxs)("div", {
+                    children: [(0, i.jsx)(s.Text, {
+                        className: d.listHeading,
                         variant: "text-sm/semibold",
                         children: "Server Apps"
                     }), (0, i.jsx)("ul", {
-                        className: c.applicationList,
+                        className: d.applicationList,
                         children: o
                     })]
                 })
@@ -89241,8 +89289,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300176", "300176"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300176")), t = 0), t
+                let t = parseInt((e = "300188", "300188"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300188")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117420,8 +117468,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300176",
-                    versionHash: "8ece5d0dc6b7fae36f6ec9d3d745b37f035e92db"
+                    buildNumber: "300188",
+                    versionHash: "45234f4086ec6a44f1ded9ad4b731e626703d7b7"
                 }
             }
             n.r(t), n.d(t, {
@@ -175128,8 +175176,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717797738748",
-                                    build_number: "300176"
+                                    built_at: "1717798499338",
+                                    build_number: "300188"
                                 }
                             },
                             retries: 1
@@ -253140,7 +253188,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8ece5d0dc6b7fae36f6ec9d3d745b37f035e92db"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "45234f4086ec6a44f1ded9ad4b731e626703d7b7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282384,7 +282432,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300176"
+                                build_number: "300188"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289693,7 +289741,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300176", "300176"), 10);
+                let s = parseInt((n = "300188", "300188"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291922,6 +291970,40 @@
                     children: (0, i.jsx)("path", {
                         fill: "string" == typeof a ? a : a.css,
                         d: "M21.7 7.3a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.4-1.4L18.58 9H13a7 7 0 0 0-7 7v4a1 1 0 1 1-2 0v-4a9 9 0 0 1 9-9h5.59l-3.3-3.3a1 1 0 0 1 1.42-1.4l5 5Z",
+                        className: o
+                    })
+                })
+            }
+        },
+        270292: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ArrowLargeLeftIcon: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                s = n("331595");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, s.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M3.3 11.3a1 1 0 0 0 0 1.4l8 8a1 1 0 1 0 1.4-1.4L6.42 13H20a1 1 0 1 0 0-2H6.41l6.3-6.3a1 1 0 0 0-1.42-1.4l-8 8Z",
                         className: o
                     })
                 })
@@ -317643,4 +317725,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.e3fbb3a93456c2b8f85b.js.map
+//# sourceMappingURL=27519.146a779684ef2958294a.js.map

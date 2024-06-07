@@ -3046,8 +3046,8 @@
                 commandName: "commandName__4e8c4",
                 container: "container__1b5d1",
                 contentContainer: "contentContainer_f3b1f3",
-                headerCloseButton: "headerCloseButton__3e4f8",
-                headerWhenSideCard: "headerWhenSideCard__431a1",
+                header: "header__99f5c",
+                headerBackButton: "headerBackButton__4cb87",
                 sortSelector: "sortSelector__963cb"
             }
         },
@@ -3069,7 +3069,6 @@
         245199: function(e) {
             "use strict";
             e.exports = {
-                appDetailVisible: "appDetailVisible__3f046",
                 container: "container__42a2b",
                 scrollableContent: "scrollableContent__77a18",
                 searchBarContainer: "searchBarContainer__4929e"

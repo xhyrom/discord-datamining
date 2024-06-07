@@ -46657,18 +46657,23 @@ span.clanTag_f4aadc {
     overflow-y: auto
 }
 
-.headerWhenSideCard__431a1 {
-    height: 58px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center
+.header__99f5c {
+    height: 100px;
+    flex-shrink: 0
 }
 
-.headerCloseButton__3e4f8 {
+.headerBackButton__4cb87 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
     margin-right: var(--spacing-16);
-    z-index: 1;
-    cursor: pointer
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .54);
+    border-radius: 100%
 }
 
 .contentContainer_f3b1f3 {
@@ -46807,16 +46812,6 @@ span.clanTag_f4aadc {
     flex-direction: column;
     width: 750px;
     max-width: min(750px, 100%)
-}
-
-.appDetailVisible__3f046 {
-    display: none
-}
-
-@media(min-width:1490px) {
-    .appDetailVisible__3f046 {
-        display: flex
-    }
 }
 
 .searchBarContainer__4929e {
@@ -58334,7 +58329,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .grandfatheredMessage__6ab98 {
     border-radius: 3px;
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.25;
     padding: 8px 16px 8px 8px;
     display: flex;
@@ -58397,8 +58392,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     color: var(--white-500);
     display: flex;
     align-items: flex-start;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     padding: 16px;
     position: relative
 }
@@ -58458,7 +58453,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .sectionDescription__051ab {
     color: var(--text-normal);
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-bottom: 16px;
     margin-top: 0
 }
@@ -58549,8 +58544,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .billingInformation__2331f {
     color: var(--text-normal);
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .finePrint__40456 {
@@ -58564,9 +58559,9 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .noItemsCard__42af7 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-top: 16px;
     padding: 16px 19px;
     border: none;
@@ -69664,8 +69659,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .planInfo_c12dc8 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -142360,4 +142355,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.973794043ffeb2440162.css.map*/
+/*# sourceMappingURL=99387.f5e37caf484bde16bcbd.css.map*/
