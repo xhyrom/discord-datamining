@@ -15,9 +15,10 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/23187611406999#h_01HXW2MCD0JH2V6WEV5V4WCHBC">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HXW2MCD0W4NTT0TPARSDHHS0">What are Guilds?</h1>
+<h3 id="h_01HZT6AAYC47JX7XDHDSG3MZXD"><span style="color: #434343;" data-darkreader-inline-color="">Guilds can only have a maximum of 200 members. This Guild member capacity cannot be increased at this time.</span></h3>
 <p>On Discord, a Guild is a small, exclusive server where people who regularly play games together collaborate, compete, and hang out. Guilds recruit members by application and provide their members with a sense of tight-knit community, support, and shared identity.</p>
 <h1 id="h_01HXW2MCD0F03P7GE49RF9ZD4K">How to Create a Guild</h1>
-<h3 id="h_01HXW2MCD0RE7WPMDG9X5JX1FA"><span style="color: #434343;">This feature is currently an experiment and only available to a select number of servers.</span></h3>
+<h3 id="h_01HXW2MCD0RE7WPMDG9X5JX1FA"><span style="color: #434343;" data-darkreader-inline-color="">This feature is currently an experiment and only available to a select number of servers.</span></h3>
 <p>You can either create a Guild from scratch by creating a brand new server or converting your current server into a Guild. If your server is currently in the experiment, you will see an option to convert your server as an in-app popup at the top-left of your app. Tap on <strong>Check it out</strong> to continue. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478789909015" width="180" height="237"><img src="https://support.discord.com/hc/article_attachments/23478789922583" width="306" height="237"></p>
 <p>1. Choose the game(s) you and your Guild play together. You can also change this later if you want to add more games or edit the current ones.</p>
@@ -69,7 +70,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478777589911" width="624" height="456"></p>
 <p>4. You can leave this tab anytime you are finished with reviewing applications.</p>
 <h1 id="h_01HXW2MCD0DPVFR67AA96X0CDW">How to Join a Guild</h1>
-<h3 id="h_01HXW2MCD0NDMFRCKN0E84WS7W"><span style="color: #434343;">This feature is currently an experiment and only available to a select number of users.</span></h3>
+<h3 id="h_01HXW2MCD0NDMFRCKN0E84WS7W"><span style="color: #434343;" data-darkreader-inline-color="">This feature is currently an experiment and only available to a select number of users.</span></h3>
 <p>There are 3 ways to join a Guild: Discovery tab, invite links, and guild tags.</p>
 <h2 id="h_01HXW2MCD06PZ1G5EF9885R535">Discovery</h2>
 <p>If you tap on the <strong>Discovery</strong> tab in your Discord app, you can see a list of available Guilds that you can apply to join. You can also set different preferences depending on what you are looking for in a Guild. Once you find one you’d like to join, tap on the Guild and then fill out an application. You can join as many Guilds as you’d like!</p>
@@ -77,7 +78,7 @@
 <p>Just like a server, an invite link can be created for a Guild to invite other users to join! </p>
 <h2 id="h_01HXW2MCD08EDXFJ8G73FT3G4W">Guild Tag</h2>
 <h3 id="h_01HZ032V2RMS7Y0BH22RJ4EBNX">
-    <span style="color: #434343;">If you see the option </span><strong><span style="color: #434343;">Join Waitlist for Guilds</span></strong><span style="color: #434343;"> instead of </span><strong><span style="color: #434343;">Apply To Join</span></strong><span style="color: #434343;">, this means that you do not have access to the experiment. You can only join the waitlist once and joining does not guarantee access to the experiment.</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">If you see the option </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Join Waitlist for Guilds</span></strong><span style="color: #434343;" data-darkreader-inline-color=""> instead of </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Apply To Join</span></strong><span style="color: #434343;" data-darkreader-inline-color="">, this means that you do not have access to the experiment. You can only join the waitlist once and joining does not guarantee access to the experiment.</span>
 </h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478790049431" width="275" height="66"></p>
 <p>If you see in a message or on someone’s profile a Guild you want to join, you can tap on the tag for the Guild and then tap on <strong>Apply To Join</strong> to pull up the application.</p>
