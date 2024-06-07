@@ -25885,7 +25885,7 @@
             e.exports = {
                 biteSizeInner: "biteSizeInner__7b036",
                 biteSizeInnerThemed: "biteSizeInnerThemed__5cdaf",
-                biteSizeOuter: "biteSizeOuter_e0bb1d userPopoutOuter_d67f56",
+                biteSizeOuter: "biteSizeOuter_e0bb1d userPopoutOuter_d67f56 userProfileOuter__35e59",
                 biteSizeOverlayBackground: "biteSizeOverlayBackground__11aa7 overlayBackground__345c9",
                 fullSizeInnerThemed: "fullSizeInnerThemed_ae6977",
                 fullSizeOuter: "fullSizeOuter__64397 userProfileOuter__35e59",
@@ -25898,7 +25898,7 @@
                 userPanelInnerThemed: "userPanelInnerThemed__651e4",
                 userPanelOuter: "userPanelOuter_df01a5",
                 userPopoutInner: "userPopoutInner_ac0960 userProfileInner__8ff35",
-                userPopoutOuter: "userPopoutOuter_d67f56",
+                userPopoutOuter: "userPopoutOuter_d67f56 userProfileOuter__35e59",
                 userPopoutOverlayBackground: "userPopoutOverlayBackground__3e7e6 overlayBackground__345c9",
                 userProfileInner: "userProfileInner__8ff35",
                 userProfileInnerThemedNonPremium: "userProfileInnerThemedNonPremium_b64fb4",
