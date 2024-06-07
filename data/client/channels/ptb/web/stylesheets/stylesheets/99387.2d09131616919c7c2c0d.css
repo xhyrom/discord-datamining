@@ -3318,7 +3318,18 @@
     height: 100%
 }
 
-@media(min-width:486px) {
+@media(min-width: 486px, min-height: 0) {
+    .wrapper_f5f4c9 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+}
+
+@media(min-width: 486px, min-height: 580px) {
     .wrapper_f5f4c9 {
         position: absolute;
         top: 0;
@@ -142338,4 +142349,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7a7a75cc565f8308fd45.css.map*/
+/*# sourceMappingURL=99387.2d09131616919c7c2c0d.css.map*/
