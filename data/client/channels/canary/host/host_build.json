@@ -1,106 +1,106 @@
 {
   "modules": [
     {
-      "name": "discord_overlay2",
-      "version": 2,
-      "package_sha256": "4917291b5c1a14dc2ca8e9b4d1a2016b3cf2014963f254d5dd4c767843580aec",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_overlay2/2/full.distro"
-    },
-    {
-      "name": "discord_erlpack",
-      "version": 2,
-      "package_sha256": "0be93ed21b14da0d70e8975923667e53a57158660e4d93e32a08ea1451943273",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_erlpack/2/full.distro"
-    },
-    {
-      "name": "discord_zstd",
-      "version": 2,
-      "package_sha256": "77b8085e3d5ce5353e807dfefe847a50ee95c9fde5fd5c27e4a2da3fd1c2395d",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_zstd/2/full.distro"
-    },
-    {
-      "name": "discord_game_utils",
-      "version": 2,
-      "package_sha256": "9cd0ba890d447ccd38601e060018ade89561125d8add6f8c9e019f068fd1f499",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_game_utils/2/full.distro"
-    },
-    {
-      "name": "discord_utils",
-      "version": 2,
-      "package_sha256": "53e05ba40a65cec6e1d8e9fbcc830b385a3d005533b9a418faed6ab645e864a2",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_utils/2/full.distro"
-    },
-    {
-      "name": "discord_vigilante",
-      "version": 2,
-      "package_sha256": "cf2241d58690c30c40798e338c4e82ab344cafa4a91857ce47f1ea7a74662cfe",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_vigilante/2/full.distro"
-    },
-    {
       "name": "discord_dispatch",
-      "version": 2,
-      "package_sha256": "da2f851898e361dd37048ff8c0a289e05ae8b032a1bb4b2e5a70d4ddd9d148a1",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_dispatch/2/full.distro"
-    },
-    {
-      "name": "discord_krisp",
-      "version": 2,
-      "package_sha256": "a7dfc828190d685b926c959e0bd02cf5777af041d9dc39967a3b02c3c3573523",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_krisp/2/full.distro"
-    },
-    {
-      "name": "discord_rpc",
-      "version": 2,
-      "package_sha256": "6df3860158f7d371ea5ba55b9f3c17327487a50f6bde8178f3685bf59645953e",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_rpc/2/full.distro"
-    },
-    {
-      "name": "discord_spellcheck",
-      "version": 2,
-      "package_sha256": "f8782f0a189301252e1c65b710e22cbda7177ba791b5b0c41d5f3354a951478a",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_spellcheck/2/full.distro"
+      "version": 3,
+      "package_sha256": "72458b68fee1c92f0ec6760e85bdc463a99694ca9fea5138abc53fa1f7d76f22",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_dispatch/3/full.distro"
     },
     {
       "name": "discord_hook",
-      "version": 2,
-      "package_sha256": "c77af34d4f156d3e81762547a6483eba56afa73810378dd038f83d51566fe146",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_hook/2/full.distro"
+      "version": 3,
+      "package_sha256": "5f750f04f0305191d0d10086bc0a03ba1af979ca190fdde337bbf3323df174e0",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_hook/3/full.distro"
+    },
+    {
+      "name": "discord_spellcheck",
+      "version": 3,
+      "package_sha256": "b144f6d564d1adc674536f7572a48f4a3c275981fde9099d87c1bd66af6a1fe0",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_spellcheck/3/full.distro"
     },
     {
       "name": "discord_sekrit",
-      "version": 2,
-      "package_sha256": "1611d8922fd8c0a62a49b81d64d9c9c7eac133086d702d6bc79251b7f860fc25",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_sekrit/2/full.distro"
+      "version": 3,
+      "package_sha256": "6714f54597d06f556494350af9db05ba8dc7dadcbbd53b2bb337b1828adc899e",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_sekrit/3/full.distro"
     },
     {
-      "name": "discord_modules",
-      "version": 2,
-      "package_sha256": "013afb93353f578372effa3c8fb9eed08d81bcee2de4fc3d24d8fc9d8b5c7a59",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_modules/2/full.distro"
-    },
-    {
-      "name": "discord_desktop_core",
-      "version": 2,
-      "package_sha256": "29e5bd1cc2bde5f50ac9c1610542abc7847207848d29770761be1ce6522e6be9",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_desktop_core/2/full.distro"
+      "name": "discord_overlay2",
+      "version": 3,
+      "package_sha256": "75c6961f674c939c9b7b7d7fcd6ac8225d78f6a0e53acaee6e5c0284b14eb07a",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_overlay2/3/full.distro"
     },
     {
       "name": "discord_cloudsync",
-      "version": 2,
-      "package_sha256": "fc90ec96bbcf0580a1d039a00895b44fff84dd1ed8a7532fbefb1ffffc31cea5",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_cloudsync/2/full.distro"
+      "version": 3,
+      "package_sha256": "5a4657eb3d05391e6cf3a3e678f80cd76f0c661a98cc1f92862b55e97f83a2d0",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_cloudsync/3/full.distro"
     },
     {
       "name": "discord_media",
-      "version": 2,
-      "package_sha256": "97e28c0a72bdb04981555d069482f71011be06c3ffbbe4b21dbf3b894ff3ca9a",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_media/2/full.distro"
+      "version": 3,
+      "package_sha256": "d5b6c259f19ab5061efd7e7ae64f08a1613110dfcc558165ab48db4fe9ed2dfd",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_media/3/full.distro"
+    },
+    {
+      "name": "discord_desktop_core",
+      "version": 3,
+      "package_sha256": "cbad8a515a7feff816e649b6db4b4860787d1f264306f90dadd3693552cd8370",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_desktop_core/3/full.distro"
     },
     {
       "name": "discord_voice",
-      "version": 5,
-      "package_sha256": "4ed84680692d09a6e0490baa77fd788a990ce9683d94a6122603ee33471ad098",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_voice/5/full.distro"
+      "version": 6,
+      "package_sha256": "305cce9a9e21741ba82aa1df1d3b044fbd45e2b34b87e025e84c8ca090f5a656",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_voice/6/full.distro"
+    },
+    {
+      "name": "discord_modules",
+      "version": 3,
+      "package_sha256": "04cda1911fe71c61ec64ab9e2f1fd4efed13cdde72097fbb1593943f5bca9b9e",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_modules/3/full.distro"
+    },
+    {
+      "name": "discord_vigilante",
+      "version": 3,
+      "package_sha256": "86e48112c64bcfbe22374a2b967e51eb4b10edbb432394ec6c2f4a6e08f07ac5",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_vigilante/3/full.distro"
+    },
+    {
+      "name": "discord_rpc",
+      "version": 3,
+      "package_sha256": "fcedec06ae86510c33fa215337353871392178e9aada059a48e436c9cb3e0ec5",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_rpc/3/full.distro"
+    },
+    {
+      "name": "discord_zstd",
+      "version": 3,
+      "package_sha256": "46b7663c42c02c68040b79b302323d6fa52d2101abd10b7036f11499e9c42a93",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_zstd/3/full.distro"
+    },
+    {
+      "name": "discord_game_utils",
+      "version": 3,
+      "package_sha256": "b81bb8695d6e11f7e3319b10ea9d45f0e2576550085e7c371f1909ebaef0ac71",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_game_utils/3/full.distro"
+    },
+    {
+      "name": "discord_utils",
+      "version": 3,
+      "package_sha256": "2f5352cd0ee2fb69e3ff80a5613bbf646c91fc4e766e26a046dd5b2890583b3a",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_utils/3/full.distro"
+    },
+    {
+      "name": "discord_krisp",
+      "version": 3,
+      "package_sha256": "f1b8e94f008bf5ddef7760ba0ddddf338624bc33295c67795eca9c3844156d86",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_krisp/3/full.distro"
+    },
+    {
+      "name": "discord_erlpack",
+      "version": 3,
+      "package_sha256": "644478853fd63ed38f22890ba6d8f17a46a32c25ffe17785e2322c6afdc942cc",
+      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.269/discord_erlpack/3/full.distro"
     }
   ],
   "host_version": "1.0.269"
