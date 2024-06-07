@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299947", ", Version Hash: ").concat("3866737fdd76208c418d041124cd4a4b29879944")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299961", ", Version Hash: ").concat("ccb229e0cfcc7bd414e073bbc34ff4724a1b49e3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56810,6 +56810,48 @@
                 _terminate() {}
                 constructor() {
                     r(this, "initializedCount", 0), r(this, "actions", {}), r(this, "stores", new Map)
+                }
+            }
+        },
+        635384: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            }), n("47120");
+            var i = n("251625");
+
+            function r(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class s {
+                values() {
+                    return this.cachedValues(this.version)
+                }
+                size() {
+                    return this.data.size
+                }
+                get(e) {
+                    return this.data.get(e)
+                }
+                set(e, t) {
+                    this.data.get(e) !== t && (this.data.set(e, t), this.version++)
+                }
+                delete(e) {
+                    let t = this.data.delete(e);
+                    return t && this.version++, t
+                }
+                clear() {
+                    0 !== this.data.size && (this.data.clear(), this.version++)
+                }
+                constructor() {
+                    r(this, "version", 0), r(this, "data", new Map), r(this, "cachedValues", void 0), this.cachedValues = (0, i.cachedFunction)(e => Array.from(this.data.values()))
                 }
             }
         },
@@ -89040,8 +89082,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299947", "299947"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299947")), t = 0), t
+                let t = parseInt((e = "299961", "299961"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299961")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117219,8 +117261,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299947",
-                    versionHash: "3866737fdd76208c418d041124cd4a4b29879944"
+                    buildNumber: "299961",
+                    versionHash: "ccb229e0cfcc7bd414e073bbc34ff4724a1b49e3"
                 }
             }
             n.r(t), n.d(t, {
@@ -174921,8 +174963,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717731133986",
-                                    build_number: "299947"
+                                    built_at: "1717764243047",
+                                    build_number: "299961"
                                 }
                             },
                             retries: 1
@@ -192766,7 +192808,7 @@
             function D() {
                 let e = u.default.getStreamerActiveStreamMetadata();
                 if ((null == e ? void 0 : e.id) == null) return null;
-                let t = _.default.getGameById(e.id);
+                let t = _.default.getDetectableGame(e.id);
                 if ((null == t ? void 0 : t.id) == null) return null;
                 let n = (0, f.getQuestByApplicationId)(T.default.quests, t.id);
                 return null != n && P(n) ? n : null
@@ -233809,11 +233851,12 @@
             var r, s, a = n("442837"),
                 o = n("433517"),
                 l = n("570140"),
-                u = n("695346"),
-                d = n("973616"),
-                _ = n("358085");
+                u = n("635384"),
+                d = n("695346"),
+                _ = n("973616"),
+                c = n("358085");
 
-            function c(e, t, n) {
+            function E(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -233821,15 +233864,15 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let E = "GameStoreReportedGames",
-                I = {},
-                T = {},
+            let I = "GameStoreReportedGames",
+                T = new u.default,
                 f = {},
-                S = null !== (r = o.Storage.get(E)) && void 0 !== r ? r : {},
-                h = "";
-            let A = null;
+                S = {},
+                h = null !== (r = o.Storage.get(I)) && void 0 !== r ? r : {},
+                A = "";
+            let m = null;
 
-            function m(e) {
+            function N(e) {
                 return {
                     id: e.id,
                     name: e.name,
@@ -233843,36 +233886,36 @@
                 }
             }
 
-            function N(e) {
-                let t = e instanceof d.default ? m(e) : e;
-                for (let n of (I[e.id] = t, T[e.name.toLowerCase()] = t, e.aliases)) T[n.toLowerCase()] = t;
-                if ((0, _.isDesktop)())
-                    for (let n of e.executables) f[n.name] = t
+            function p(e) {
+                let t = e instanceof _.default ? N(e) : e;
+                for (let n of (T.set(e.id, t), f[e.name.toLowerCase()] = t, e.aliases)) f[n.toLowerCase()] = t;
+                if ((0, c.isDesktop)())
+                    for (let n of e.executables) S[n.name] = t
             }
-            class p extends(s = a.default.PersistedStore) {
+            class O extends(s = a.default.PersistedStore) {
                 initialize(e) {
                     var t;
-                    null != e && (null != e.detectableGamesEtag && (h = e.detectableGamesEtag), null === (t = e.detectableGames) || void 0 === t || t.forEach(e => N(e)))
+                    null != e && (null != e.detectableGamesEtag && (A = e.detectableGamesEtag), null === (t = e.detectableGames) || void 0 === t || t.forEach(e => p(e)))
                 }
                 getState() {
-                    return (0, _.isDesktop)() ? {
-                        detectableGamesEtag: h,
-                        detectableGames: Object.values(I)
+                    return (0, c.isDesktop)() ? {
+                        detectableGamesEtag: A,
+                        detectableGames: T.values()
                     } : {
                         detectableGamesEtag: "",
                         detectableGames: []
                     }
                 }
                 get games() {
-                    return Object.values(I)
+                    return T.values()
                 }
                 getDetectableGame(e) {
-                    return I[e]
+                    return T.get(e)
                 }
                 getGameByName(e) {
                     if (null == e) return null;
                     let t = e.toLowerCase();
-                    return Object.prototype.hasOwnProperty.call(T, t) ? T[t] : null
+                    return Object.prototype.hasOwnProperty.call(f, t) ? f[t] : null
                 }
                 isGameInDatabase(e) {
                     return null != this.getGameByName(e.name) || void 0 !== e.nativeProcessObserverId && (2147483648 & e.nativeProcessObserverId) == 0
@@ -233881,13 +233924,13 @@
                     return !0 === i
                 }
                 get detectableGamesEtag() {
-                    return h
-                }
-                get lastFetched() {
                     return A
                 }
+                get lastFetched() {
+                    return m
+                }
                 getGameByExecutable(e) {
-                    return f[e]
+                    return S[e]
                 }
                 getGameByGameData(e) {
                     var t, n;
@@ -233903,19 +233946,16 @@
                     }
                     return null !== (n = null !== (t = this.getGameByExecutable(r)) && void 0 !== t ? t : this.getGameByExecutable(s)) && void 0 !== n ? n : i
                 }
-                getGameById(e) {
-                    return I[e]
-                }
                 shouldReport(e) {
                     let t = null != this.getGameByName(e),
-                        n = null != S[e];
-                    return u.ShowCurrentGame.getSetting() && !i && !(t || n)
+                        n = null != h[e];
+                    return d.ShowCurrentGame.getSetting() && !i && !(t || n)
                 }
                 markGameReported(e) {
-                    S[e] = !0, o.Storage.set(E, S)
+                    h[e] = !0, o.Storage.set(I, h)
                 }
             }
-            c(p, "displayName", "GameStore"), c(p, "persistKey", "GameStore"), c(p, "migrations", [e => {
+            E(O, "displayName", "GameStore"), E(O, "persistKey", "GameStore"), E(O, "migrations", [e => {
                 var t, n;
                 if (null == e) return {
                     detectableGamesEtag: "",
@@ -233923,17 +233963,17 @@
                 };
                 return {
                     detectableGamesEtag: e.detectableGamesEtag,
-                    detectableGames: null !== (n = null === (t = e.detectableGames) || void 0 === t ? void 0 : t.map(e => m(new d.default(e)))) && void 0 !== n ? n : []
+                    detectableGames: null !== (n = null === (t = e.detectableGames) || void 0 === t ? void 0 : t.map(e => N(new _.default(e)))) && void 0 !== n ? n : []
                 }
-            }, e => (0, _.isDesktop)() ? e : {
+            }, e => (0, c.isDesktop)() ? e : {
                 detectableGamesEtag: "",
                 detectableGames: []
-            }]), t.default = new p(l.default, {
+            }]), t.default = new O(l.default, {
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         detectableApplications: t
                     } = e;
-                    for (let e of t) N(e)
+                    for (let e of t) p(e)
                 },
                 GAMES_DATABASE_FETCH: function() {
                     i = !0
@@ -233946,21 +233986,21 @@
                         games: t,
                         etag: n
                     } = e;
-                    for (let e of (null != n && h !== n && (h = n), t)) N(function(e) {
+                    for (let e of (null != n && A !== n && (A = n), t)) p(function(e) {
                         var t, n, i, r, s, a;
                         return {
                             id: e.id,
                             name: e.name,
-                            executables: (null !== (t = e.executables) && void 0 !== t ? t : []).map(d.createExecutable),
+                            executables: (null !== (t = e.executables) && void 0 !== t ? t : []).map(_.createExecutable),
                             overlay: null !== (n = e.overlay) && void 0 !== n && n,
                             overlayWarn: null !== (i = e.overlay_warn) && void 0 !== i && i,
                             overlayCompatibilityHook: null !== (r = e.overlay_compatibility_hook) && void 0 !== r && r,
                             hook: null === (s = e.hook) || void 0 === s || s,
                             aliases: null !== (a = e.aliases) && void 0 !== a ? a : [],
-                            supportsOutOfProcessOverlay: d.default.supportsOutOfProcessOverlay(e.overlay_methods)
+                            supportsOutOfProcessOverlay: _.default.supportsOutOfProcessOverlay(e.overlay_methods)
                         }
                     }(e));
-                    i = void 0, A = Date.now()
+                    i = void 0, m = Date.now()
                 }
             })
         },
@@ -241809,7 +241849,7 @@
                         guilds: t,
                         presences: n
                     } = e, i = f.default.getId();
-                    m = {}, C = {}, N = {
+                    m = {}, C = {}, R = {}, N = {
                         [i]: N[i]
                     }, p = {
                         [i]: p[i]
@@ -252937,7 +252977,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3866737fdd76208c418d041124cd4a4b29879944"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ccb229e0cfcc7bd414e073bbc34ff4724a1b49e3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282181,7 +282221,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299947"
+                                build_number: "299961"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289490,7 +289530,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299947", "299947"), 10);
+                let s = parseInt((n = "299961", "299961"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317437,4 +317477,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.c8eebd5f40c1eadf5d9b.js.map
+//# sourceMappingURL=27519.98596fd38f3f31e6f932.js.map
