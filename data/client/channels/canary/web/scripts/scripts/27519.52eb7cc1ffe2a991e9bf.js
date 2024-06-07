@@ -37155,7 +37155,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300097", ", Version Hash: ").concat("3cc4f7691d9029061b51fc5d489528d957426b8c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300101", ", Version Hash: ").concat("7e0aab39d9f7605b7b090b1f4e1fd174eeb7f859")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -48150,6 +48150,7 @@
                 SYSTEM_DM_CHANNEL_DESCRIPTION_SUBTEXT: "Discord will never ask you for your password or account token.",
                 SYSTEM_DM_EMPTY_MESSAGE: "This is an official message from Team Discord. Please be advised that Discord will never ask you for your password or account token.",
                 SYSTEM_DM_TAG_SYSTEM: "SYSTEM",
+                SYSTEM_DM_TAG_OFFICIAL: "OFFICIAL",
                 SYSTEM_DM_ACTIVITY_TEXT: "Official Discord Message",
                 SYSTEM_DM_URGENT_MESSAGE_MODAL_HEADER: "Urgent Message",
                 SYSTEM_DM_URGENT_MESSAGE_MODAL_BODY: "There's an official message from the Discord team that needs your attention.",
@@ -52005,6 +52006,7 @@
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_FLAGGED_VOICE_CHANNEL_STATUS_HOOK: "has flagged a voice channel status for $[**!!{channelName}!!**](channelHook)",
                 GUILD_AUTOMOD_USERNAME: "AutoMod",
                 GUILD_AUTOMOD_USER_BADGE_TEXT: "SYSTEM",
+                GUILD_AUTOMOD_USER_BADGE_OFFICIAL: "OFFICIAL",
                 GUILD_AUTOMOD_INPUT_FILTER_NAME: "Rule Name",
                 GUILD_AUTOMOD_INPUT_FILTER_NAME_PLACEHOLDER: "Enter a rule name",
                 GUILD_AUTOMOD_EXEMPTION_SEARCH_PLACEHOLDER: "Search channels or roles",
@@ -53605,6 +53607,7 @@
                 OTHER_SERVER_NOTIFICATIONS: "Other server notifications",
                 DISCORD_SYSTEM_MESSAGES: "Discord system messages",
                 DISCORD_SYSTEM_MESSAGE_BOT_TAG_TOOLTIP: "System Message",
+                DISCORD_SYSTEM_MESSAGE_BOT_TAG_TOOLTIP_OFFICIAL: "Official Discord Message",
                 REALTIME: "Real-time",
                 SERVER: "Server",
                 GUILD_MEMBERS: "Server Members",
@@ -89206,8 +89209,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300097", "300097"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300097")), t = 0), t
+                let t = parseInt((e = "300101", "300101"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300101")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117385,8 +117388,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300097",
-                    versionHash: "3cc4f7691d9029061b51fc5d489528d957426b8c"
+                    buildNumber: "300101",
+                    versionHash: "7e0aab39d9f7605b7b090b1f4e1fd174eeb7f859"
                 }
             }
             n.r(t), n.d(t, {
@@ -175090,8 +175093,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717789151180",
-                                    build_number: "300097"
+                                    built_at: "1717789367859",
+                                    build_number: "300101"
                                 }
                             },
                             retries: 1
@@ -253104,7 +253107,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3cc4f7691d9029061b51fc5d489528d957426b8c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7e0aab39d9f7605b7b090b1f4e1fd174eeb7f859"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -254560,7 +254563,7 @@
                 switch (r) {
                     case u.BotTagTypes.SYSTEM_DM:
                     case u.BotTagTypes.OFFICIAL:
-                        E = !0, h = d.default.Messages.DISCORD_SYSTEM_MESSAGE_BOT_TAG_TOOLTIP, S = d.default.Messages.SYSTEM_DM_TAG_SYSTEM;
+                        E = !0, h = d.default.Messages.DISCORD_SYSTEM_MESSAGE_BOT_TAG_TOOLTIP_OFFICIAL, S = d.default.Messages.SYSTEM_DM_TAG_OFFICIAL;
                         break;
                     case u.BotTagTypes.SERVER:
                         S = d.default.Messages.BOT_TAG_SERVER;
@@ -282348,7 +282351,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300097"
+                                build_number: "300101"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289657,7 +289660,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300097", "300097"), 10);
+                let s = parseInt((n = "300101", "300101"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317607,4 +317610,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.221da9e6e353f2dc9c1d.js.map
+//# sourceMappingURL=27519.52eb7cc1ffe2a991e9bf.js.map
