@@ -37143,7 +37143,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299883", ", Version Hash: ").concat("0edb6984a9fc2c32cb488c06423639aa69acb797")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("299908", ", Version Hash: ").concat("0ba1fcf7ae7146556108d8963b911f069a03611e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43089,6 +43089,7 @@
                 SCOPE_DM_CHANNELS_MESSAGES_READ: "Read your direct messages",
                 SCOPE_DM_CHANNELS_MESSAGES_WRITE: "Send messages in your DMs",
                 SCOPE_GATEWAY_CONNECT: "Start a gateway session on your behalf",
+                SCOPE_PAYMENT_SOURCES_COUNTRY_CODE: "See the country associated with your Discord payment method (if you make a purchase)",
                 AUTHORIZE: "Authorize",
                 AUTHORIZED: "Authorized",
                 AUTHORIZED_SUCCESS: "Success!",
@@ -89039,8 +89040,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "299883", "299883"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299883")), t = 0), t
+                let t = parseInt((e = "299908", "299908"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("299908")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117218,8 +117219,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "299883",
-                    versionHash: "0edb6984a9fc2c32cb488c06423639aa69acb797"
+                    buildNumber: "299908",
+                    versionHash: "0ba1fcf7ae7146556108d8963b911f069a03611e"
                 }
             }
             n.r(t), n.d(t, {
@@ -174920,8 +174921,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717717481627",
-                                    build_number: "299883"
+                                    built_at: "1717720409615",
+                                    build_number: "299908"
                                 }
                             },
                             retries: 1
@@ -177648,7 +177649,7 @@
             var i = n("243814"),
                 r = n("689938");
             let s = [() => r.default.Messages.OAUTH2_FAKE_SCOPE_1, () => r.default.Messages.OAUTH2_FAKE_SCOPE_2, () => r.default.Messages.OAUTH2_FAKE_SCOPE_3, () => r.default.Messages.OAUTH2_FAKE_SCOPE_4, () => r.default.Messages.OAUTH2_FAKE_SCOPE_5, () => r.default.Messages.OAUTH2_FAKE_SCOPE_6, () => r.default.Messages.OAUTH2_FAKE_SCOPE_7, () => r.default.Messages.OAUTH2_FAKE_SCOPE_8],
-                a = [i.OAuth2Scopes.BOT, i.OAuth2Scopes.OPENID, i.OAuth2Scopes.IDENTIFY, i.OAuth2Scopes.EMAIL, i.OAuth2Scopes.CONNECTIONS, i.OAuth2Scopes.MESSAGES_READ, i.OAuth2Scopes.GUILDS, i.OAuth2Scopes.GUILDS_JOIN, i.OAuth2Scopes.GUILDS_MEMBERS_READ, i.OAuth2Scopes.GDM_JOIN, i.OAuth2Scopes.RPC, i.OAuth2Scopes.RPC_NOTIFICATIONS_READ, i.OAuth2Scopes.RPC_VOICE_READ, i.OAuth2Scopes.RPC_VOICE_WRITE, i.OAuth2Scopes.RPC_VIDEO_READ, i.OAuth2Scopes.RPC_VIDEO_WRITE, i.OAuth2Scopes.RPC_SCREENSHARE_READ, i.OAuth2Scopes.RPC_SCREENSHARE_WRITE, i.OAuth2Scopes.RPC_ACTIVITIES_WRITE, i.OAuth2Scopes.APPLICATIONS_BUILDS_UPLOAD, i.OAuth2Scopes.APPLICATIONS_BUILDS_READ, i.OAuth2Scopes.APPLICATIONS_COMMANDS, i.OAuth2Scopes.APPLICATIONS_COMMANDS_UPDATE, i.OAuth2Scopes.APPLICATIONS_COMMANDS_PERMISSIONS_UPDATE, i.OAuth2Scopes.APPLICATIONS_STORE_UPDATE, i.OAuth2Scopes.APPLICATIONS_ENTITLEMENTS, i.OAuth2Scopes.ACTIVITIES_READ, i.OAuth2Scopes.ACTIVITIES_WRITE, i.OAuth2Scopes.RELATIONSHIPS_READ, i.OAuth2Scopes.RELATIONSHIPS_WRITE, i.OAuth2Scopes.VOICE, i.OAuth2Scopes.DM_CHANNELS_READ, i.OAuth2Scopes.DM_CHANNELS_MESSAGES_READ, i.OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE, i.OAuth2Scopes.ROLE_CONNECTIONS_WRITE, i.OAuth2Scopes.PRESENCES_READ, i.OAuth2Scopes.PRESENCES_WRITE, i.OAuth2Scopes.GATEWAY_CONNECT],
+                a = [i.OAuth2Scopes.BOT, i.OAuth2Scopes.OPENID, i.OAuth2Scopes.IDENTIFY, i.OAuth2Scopes.EMAIL, i.OAuth2Scopes.CONNECTIONS, i.OAuth2Scopes.MESSAGES_READ, i.OAuth2Scopes.GUILDS, i.OAuth2Scopes.GUILDS_JOIN, i.OAuth2Scopes.GUILDS_MEMBERS_READ, i.OAuth2Scopes.GDM_JOIN, i.OAuth2Scopes.RPC, i.OAuth2Scopes.RPC_NOTIFICATIONS_READ, i.OAuth2Scopes.RPC_VOICE_READ, i.OAuth2Scopes.RPC_VOICE_WRITE, i.OAuth2Scopes.RPC_VIDEO_READ, i.OAuth2Scopes.RPC_VIDEO_WRITE, i.OAuth2Scopes.RPC_SCREENSHARE_READ, i.OAuth2Scopes.RPC_SCREENSHARE_WRITE, i.OAuth2Scopes.RPC_ACTIVITIES_WRITE, i.OAuth2Scopes.APPLICATIONS_BUILDS_UPLOAD, i.OAuth2Scopes.APPLICATIONS_BUILDS_READ, i.OAuth2Scopes.APPLICATIONS_COMMANDS, i.OAuth2Scopes.APPLICATIONS_COMMANDS_UPDATE, i.OAuth2Scopes.APPLICATIONS_COMMANDS_PERMISSIONS_UPDATE, i.OAuth2Scopes.APPLICATIONS_STORE_UPDATE, i.OAuth2Scopes.APPLICATIONS_ENTITLEMENTS, i.OAuth2Scopes.ACTIVITIES_READ, i.OAuth2Scopes.ACTIVITIES_WRITE, i.OAuth2Scopes.RELATIONSHIPS_READ, i.OAuth2Scopes.RELATIONSHIPS_WRITE, i.OAuth2Scopes.VOICE, i.OAuth2Scopes.DM_CHANNELS_READ, i.OAuth2Scopes.DM_CHANNELS_MESSAGES_READ, i.OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE, i.OAuth2Scopes.ROLE_CONNECTIONS_WRITE, i.OAuth2Scopes.PRESENCES_READ, i.OAuth2Scopes.PRESENCES_WRITE, i.OAuth2Scopes.GATEWAY_CONNECT, i.OAuth2Scopes.PAYMENT_SOURCES_COUNTRY_CODE],
                 o = a.concat([i.OAuth2Scopes.WEBHOOK_INCOMING, i.OAuth2Scopes.BOT]),
                 l = ["rpc.api"];
 
@@ -177731,6 +177732,8 @@
                         return r.default.Messages.SCOPE_DM_CHANNELS_MESSAGES_WRITE;
                     case i.OAuth2Scopes.GATEWAY_CONNECT:
                         return r.default.Messages.SCOPE_GATEWAY_CONNECT;
+                    case i.OAuth2Scopes.PAYMENT_SOURCES_COUNTRY_CODE:
+                        return r.default.Messages.SCOPE_PAYMENT_SOURCES_COUNTRY_CODE;
                     default:
                         return e
                 }
@@ -252934,7 +252937,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0edb6984a9fc2c32cb488c06423639aa69acb797"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0ba1fcf7ae7146556108d8963b911f069a03611e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282178,7 +282181,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "299883"
+                                build_number: "299908"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289487,7 +289490,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "299883", "299883"), 10);
+                let s = parseInt((n = "299908", "299908"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316509,7 +316512,7 @@
                 OAuth2Scopes: function() {
                     return i
                 }
-            }), n("47120"), (r = i || (i = {})).IDENTIFY = "identify", r.EMAIL = "email", r.CONNECTIONS = "connections", r.GUILDS = "guilds", r.GUILDS_JOIN = "guilds.join", r.GUILDS_MEMBERS_READ = "guilds.members.read", r.GDM_JOIN = "gdm.join", r.BOT = "bot", r.RPC = "rpc", r.RPC_NOTIFICATIONS_READ = "rpc.notifications.read", r.RPC_VOICE_READ = "rpc.voice.read", r.RPC_VOICE_WRITE = "rpc.voice.write", r.RPC_VIDEO_READ = "rpc.video.read", r.RPC_VIDEO_WRITE = "rpc.video.write", r.RPC_SCREENSHARE_READ = "rpc.screenshare.read", r.RPC_SCREENSHARE_WRITE = "rpc.screenshare.write", r.RPC_ACTIVITIES_WRITE = "rpc.activities.write", r.WEBHOOK_INCOMING = "webhook.incoming", r.MESSAGES_READ = "messages.read", r.APPLICATIONS_BUILDS_UPLOAD = "applications.builds.upload", r.APPLICATIONS_BUILDS_READ = "applications.builds.read", r.APPLICATIONS_COMMANDS = "applications.commands", r.APPLICATIONS_COMMANDS_PERMISSIONS_UPDATE = "applications.commands.permissions.update", r.APPLICATIONS_COMMANDS_UPDATE = "applications.commands.update", r.APPLICATIONS_STORE_UPDATE = "applications.store.update", r.APPLICATIONS_ENTITLEMENTS = "applications.entitlements", r.ACTIVITIES_READ = "activities.read", r.ACTIVITIES_WRITE = "activities.write", r.RELATIONSHIPS_READ = "relationships.read", r.RELATIONSHIPS_WRITE = "relationships.write", r.VOICE = "voice", r.DM_CHANNELS_READ = "dm_channels.read", r.ROLE_CONNECTIONS_WRITE = "role_connections.write", r.PRESENCES_READ = "presences.read", r.PRESENCES_WRITE = "presences.write", r.OPENID = "openid", r.DM_CHANNELS_MESSAGES_READ = "dm_channels.messages.read", r.DM_CHANNELS_MESSAGES_WRITE = "dm_channels.messages.write", r.GATEWAY_CONNECT = "gateway.connect", r.ACCOUNT_GLOBAL_NAME_UPDATE = "account.global_name.update"
+            }), n("47120"), (r = i || (i = {})).IDENTIFY = "identify", r.EMAIL = "email", r.CONNECTIONS = "connections", r.GUILDS = "guilds", r.GUILDS_JOIN = "guilds.join", r.GUILDS_MEMBERS_READ = "guilds.members.read", r.GDM_JOIN = "gdm.join", r.BOT = "bot", r.RPC = "rpc", r.RPC_NOTIFICATIONS_READ = "rpc.notifications.read", r.RPC_VOICE_READ = "rpc.voice.read", r.RPC_VOICE_WRITE = "rpc.voice.write", r.RPC_VIDEO_READ = "rpc.video.read", r.RPC_VIDEO_WRITE = "rpc.video.write", r.RPC_SCREENSHARE_READ = "rpc.screenshare.read", r.RPC_SCREENSHARE_WRITE = "rpc.screenshare.write", r.RPC_ACTIVITIES_WRITE = "rpc.activities.write", r.WEBHOOK_INCOMING = "webhook.incoming", r.MESSAGES_READ = "messages.read", r.APPLICATIONS_BUILDS_UPLOAD = "applications.builds.upload", r.APPLICATIONS_BUILDS_READ = "applications.builds.read", r.APPLICATIONS_COMMANDS = "applications.commands", r.APPLICATIONS_COMMANDS_PERMISSIONS_UPDATE = "applications.commands.permissions.update", r.APPLICATIONS_COMMANDS_UPDATE = "applications.commands.update", r.APPLICATIONS_STORE_UPDATE = "applications.store.update", r.APPLICATIONS_ENTITLEMENTS = "applications.entitlements", r.ACTIVITIES_READ = "activities.read", r.ACTIVITIES_WRITE = "activities.write", r.RELATIONSHIPS_READ = "relationships.read", r.RELATIONSHIPS_WRITE = "relationships.write", r.VOICE = "voice", r.DM_CHANNELS_READ = "dm_channels.read", r.ROLE_CONNECTIONS_WRITE = "role_connections.write", r.PRESENCES_READ = "presences.read", r.PRESENCES_WRITE = "presences.write", r.OPENID = "openid", r.DM_CHANNELS_MESSAGES_READ = "dm_channels.messages.read", r.DM_CHANNELS_MESSAGES_WRITE = "dm_channels.messages.write", r.GATEWAY_CONNECT = "gateway.connect", r.ACCOUNT_GLOBAL_NAME_UPDATE = "account.global_name.update", r.PAYMENT_SOURCES_COUNTRY_CODE = "payment_sources.country_code"
         },
         263568: function(e, t, n) {
             "use strict";
@@ -317434,4 +317437,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.9f4161f274487a231ad7.js.map
+//# sourceMappingURL=27519.b4c0b052a720d14dd1bf.js.map
