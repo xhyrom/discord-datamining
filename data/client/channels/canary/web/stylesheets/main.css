@@ -48421,8 +48421,7 @@ div:has(>div>.modal__06f49) {
 
 .masonryList__7a8d2 {
     height: 100%;
-    width: 100%;
-    max-width: 2e3px
+    width: 100%
 }
 
 .masonryListGradient__25591 {
@@ -58995,7 +58994,8 @@ div:has(>div>.modal__06f49) {
     background-color: var(--background-message-hover);
     border-radius: 8px;
     border: 1px solid var(--background-modifier-hover);
-    margin-top: 12px
+    margin-top: 12px;
+    margin-bottom: 4px
 }
 
 .stepsWrapperAnimated_c09c7a {
@@ -59095,7 +59095,7 @@ div:has(>div>.modal__06f49) {
 }
 
 .ctaWrapper__16b61 {
-    margin-top: 16px
+    margin-top: 12px
 }
 
 .contentExpanded__9eb0c {
@@ -59260,16 +59260,38 @@ div:has(>div>.modal__06f49) {
     background-color: var(--background-modifier-accent)
 }
 
-.shareIcon__6b675 {
+.iconButtonLarge__860d3 {
+    display: flex;
+    height: 32px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    background-color: var(--background-modifier-hover)
+}
+
+.iconButtonLarge__860d3:hover {
+    background-color: var(--background-modifier-accent)
+}
+
+.iconButtonInner__44333 {
     color: var(--interactive-normal);
     display: flex;
     align-items: center
+}
+
+.copyIcon__9f2ce {
+    margin-left: 8px
 }
 
 .ctaContainer_d3ce3d {
     display: flex;
     gap: 4px;
     margin-top: 12px
+}
+
+.ctaContainerLargeMarginTop__6b954 {
+    margin-top: 16px
 }
 
 .ctaClaimReward__68e9b {
@@ -142349,4 +142371,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2d09131616919c7c2c0d.css.map*/
+/*# sourceMappingURL=99387.bfd007aa43d42375dd90.css.map*/
