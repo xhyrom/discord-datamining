@@ -40264,19 +40264,19 @@ img.thumbnail__18ece {
 }
 
 .profileCustomizationPreviewWithTheme__4cd74 {
-    width: 348px
+    width: 348px !important
 }
 
 .profileCustomizationPreviewWithoutTheme_e14a46 {
-    width: 340px
+    width: 340px !important
 }
 
 .profileEffectsModalCustomizationPreviewWithoutTheme__25c3b {
-    width: 280px
+    width: 280px !important
 }
 
 .profileEffectsModalCustomizationPreviewWithTheme_b01a49 {
-    width: 288px
+    width: 288px !important
 }
 
 .body_d75d88 {
@@ -45985,7 +45985,7 @@ span.clanTag_f4aadc {
     --custom-user-popout-outside-components-height: 1px
 }
 
-:where(.userPopoutOuter_d67f56) {
+.userPopoutOuter_d67f56 {
     box-shadow: var(--elevation-high);
     max-height: calc(100vh - 20px - var(--custom-user-popout-outside-components-height));
     width: var(--custom-user-profile-themed-container-user-popout-width)
@@ -142355,4 +142355,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c621e34234f1c02edf89.css.map*/
+/*# sourceMappingURL=99387.4f1e27f845666817ea9a.css.map*/
