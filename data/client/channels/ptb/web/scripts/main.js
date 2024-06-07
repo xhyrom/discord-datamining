@@ -27749,27 +27749,28 @@
                         fade: y = !1,
                         className: P,
                         style: U,
-                        ...b
-                    } = n, G = s().useRef(null), w = s().useRef(null), [k, B] = s().useState(!1), {
-                        scrollerRef: V,
-                        scrollerState: x,
-                        getScrollerState: F
+                        maxContentWidth: b,
+                        ...G
+                    } = n, w = s().useRef(null), k = s().useRef(null), [B, V] = s().useState(!1), {
+                        scrollerRef: x,
+                        scrollerState: F,
+                        getScrollerState: H
                     } = (0, u.useCachedScrollerState)();
                     (0, u.usePaddingFixes)({
-                        scrollerRef: V,
+                        scrollerRef: x,
                         className: P,
                         specs: a,
                         orientation: "vertical",
                         dir: T
                     });
                     let {
-                        forceUpdateOnChunkChange: H,
-                        coordsMap: Y,
-                        gridData: j,
-                        visibleSections: W,
-                        totalHeight: K,
-                        forceUpdate: z,
-                        masonryComputer: Z
+                        forceUpdateOnChunkChange: Y,
+                        coordsMap: j,
+                        gridData: W,
+                        visibleSections: K,
+                        totalHeight: z,
+                        forceUpdate: Z,
+                        masonryComputer: X
                     } = (0, u.useVirtualizedMasonryState)({
                         sections: f,
                         columns: S,
@@ -27783,65 +27784,66 @@
                         padding: v,
                         paddingVertical: D,
                         paddingHorizontal: M,
-                        getScrollerState: F,
-                        dir: T
-                    }), X = (0, r.useCallback)(function() {
+                        getScrollerState: H,
+                        dir: T,
+                        maxBufferWidth: b
+                    }), Q = (0, r.useCallback)(function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 2;
-                        e > x.current.dirty && (x.current.dirty = e, 2 === e ? z() : H(1))
-                    }, [H, x, z]), Q = (0, u.useScrollSpring)(V), q = (0, r.useCallback)(() => Z.itemGrid, [Z]), J = (0, r.useCallback)(() => Z.coordsMap, [Z]), $ = s().useCallback(() => X(), [X]);
+                        e > F.current.dirty && (F.current.dirty = e, 2 === e ? Z() : Y(1))
+                    }, [Y, F, Z]), q = (0, u.useScrollSpring)(x), J = (0, r.useCallback)(() => X.itemGrid, [X]), $ = (0, r.useCallback)(() => X.coordsMap, [X]), ee = s().useCallback(() => Q(), [Q]);
                     (0, u.useResizeObserverSubscription)({
-                        ref: V,
+                        ref: x,
                         key: "container",
-                        onUpdate: $,
+                        onUpdate: ee,
                         resizeObserver: c,
                         listenerMap: _
                     }), (0, r.useImperativeHandle)(E, () => ({
-                        getScrollerNode: () => V.current,
-                        getItemGrid: q,
-                        getCoordsMap: J,
-                        getScrollerState: F,
-                        ...(0, u.getAnimatedScrollHelpers)(V, F, Q)
-                    }), [V, F, q, Q, J]);
-                    let ee = (0, r.useCallback)(e => {
-                        X(1), null == G.current ? B(!0) : clearTimeout(G.current), G.current = setTimeout(() => {
-                            G.current = null, B(!1)
+                        getScrollerNode: () => x.current,
+                        getItemGrid: J,
+                        getCoordsMap: $,
+                        getScrollerState: H,
+                        ...(0, u.getAnimatedScrollHelpers)(x, H, q)
+                    }), [x, H, J, q, $]);
+                    let et = (0, r.useCallback)(e => {
+                        Q(1), null == w.current ? V(!0) : clearTimeout(w.current), w.current = setTimeout(() => {
+                            w.current = null, V(!1)
                         }, 200), null != I && I(e)
-                    }, [I, X]);
+                    }, [I, Q]);
                     return (0, i.jsx)("div", {
-                        ref: V,
-                        onScroll: ee,
+                        ref: x,
+                        onScroll: et,
                         className: o()(P, {
                             [e]: !0,
                             [t]: y,
-                            [d.scrolling]: k
+                            [d.scrolling]: B
                         }),
                         style: (0, u.getMergedOrientationStyles)(U),
-                        ...b,
+                        ...G,
                         children: (0, r.useMemo)(() => (0, i.jsx)(l.FocusRingScope, {
-                            containerRef: w,
+                            containerRef: k,
                             children: (0, i.jsx)("div", {
                                 style: {
-                                    height: K
+                                    height: z
                                 },
                                 className: d.content,
-                                ref: w,
-                                children: Object.keys(W).map(e => {
+                                ref: k,
+                                children: Object.keys(K).map(e => {
                                     let t = (0, u.getMasonryListSectionIndex)(e),
-                                        n = Y[e],
-                                        r = W[e],
-                                        s = Y[(0, u.getMasonryListSectionHeaderKey)(t)],
+                                        n = j[e],
+                                        r = K[e],
+                                        s = j[(0, u.getMasonryListSectionHeaderKey)(t)],
                                         a = null == C ? void 0 : C(t);
                                     return null != n && null != r ? (0, i.jsxs)("div", {
                                         style: n,
                                         ...a,
                                         children: [null != p && null != s && p(t, s, e), r.map(e => {
-                                            let [t, n, i] = e, r = Y[t];
-                                            return null != r ? O(n, i, r, t, j) : null
+                                            let [t, n, i] = e, r = j[t];
+                                            return null != r ? O(n, i, r, t, W) : null
                                         })]
                                     }, e) : null
                                 })
                             })
-                        }), [W, O, p, Y, K, C, j])
+                        }), [K, O, p, j, z, C, W])
                     })
                 })
             }
@@ -37153,7 +37155,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300014", ", Version Hash: ").concat("b737f329b920647f0379b02eed85d7c85697557f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300020", ", Version Hash: ").concat("2156db0456e43f47b89d7012352c68a057a7d15d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89204,8 +89206,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300014", "300014"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300014")), t = 0), t
+                let t = parseInt((e = "300020", "300020"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300020")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117383,8 +117385,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300014",
-                    versionHash: "b737f329b920647f0379b02eed85d7c85697557f"
+                    buildNumber: "300020",
+                    versionHash: "2156db0456e43f47b89d7012352c68a057a7d15d"
                 }
             }
             n.r(t), n.d(t, {
@@ -117918,7 +117920,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("40326"), n.e("30386"), n.e("80451"), n.e("52110"), n.e("90508"), n.e("79996"), n.e("36439"), n.e("30634"), n.e("93280")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("40326"), n.e("30386"), n.e("80451"), n.e("52110"), n.e("90508"), n.e("45074"), n.e("36439"), n.e("30634"), n.e("93280")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -175108,8 +175110,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717780412564",
-                                    build_number: "300014"
+                                    built_at: "1717781259739",
+                                    build_number: "300020"
                                 }
                             },
                             retries: 1
@@ -253128,7 +253130,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b737f329b920647f0379b02eed85d7c85697557f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2156db0456e43f47b89d7012352c68a057a7d15d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282372,7 +282374,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300014"
+                                build_number: "300020"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289681,7 +289683,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300014", "300014"), 10);
+                let s = parseInt((n = "300020", "300020"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -297856,78 +297858,81 @@
                         padding: u = this.padding,
                         paddingVertical: d = this.paddingVertical,
                         paddingHorizontal: _ = this.paddingHorizontal,
-                        sectionGutter: c = this.sectionGutter,
-                        dir: E = this.dir
+                        marginLeft: c = this.marginLeft,
+                        sectionGutter: E = this.sectionGutter,
+                        dir: I = this.dir
                     } = e;
-                    (this.sections !== t || this.columns !== n || this.itemGutter !== i || this.removeEdgeItemGutters !== r || this.getItemKey !== s || this.getSectionHeight !== o || this.getItemHeight !== a || this.bufferWidth !== l || this.padding !== u || this.paddingVertical !== d || this.paddingHorizontal !== _ || this.sectionGutter !== c || this.dir !== E) && (this.needsFullCompute = !0, this.sections = t, this.columns = n, this.itemGutter = i, this.getItemKey = s, this.getSectionHeight = o, this.getItemHeight = a, this.bufferWidth = l, this.padding = u, this.paddingVertical = d, this.paddingHorizontal = _, this.sectionGutter = c, this.dir = E)
+                    (this.sections !== t || this.columns !== n || this.itemGutter !== i || this.removeEdgeItemGutters !== r || this.getItemKey !== s || this.getSectionHeight !== o || this.getItemHeight !== a || this.bufferWidth !== l || this.padding !== u || this.paddingVertical !== d || this.paddingHorizontal !== _ || this.marginLeft !== c || this.sectionGutter !== E || this.dir !== I) && (this.needsFullCompute = !0, this.sections = t, this.columns = n, this.itemGutter = i, this.getItemKey = s, this.getSectionHeight = o, this.getItemHeight = a, this.bufferWidth = l, this.padding = u, this.paddingVertical = d, this.paddingHorizontal = _, this.marginLeft = c, this.sectionGutter = E, this.dir = I)
                 }
                 computeFullCoords() {
+                    var e, t, n;
                     if (!this.needsFullCompute) return;
                     let {
-                        columns: e,
-                        getItemKey: t,
-                        getItemHeight: n,
-                        itemGutter: i,
-                        getSectionHeight: a,
-                        bufferWidth: o,
-                        removeEdgeItemGutters: l
-                    } = this, u = "rtl" === this.dir ? "right" : "left";
+                        columns: i,
+                        getItemKey: a,
+                        getItemHeight: o,
+                        itemGutter: l,
+                        getSectionHeight: u,
+                        bufferWidth: d,
+                        removeEdgeItemGutters: _
+                    } = this, c = "rtl" === this.dir ? "right" : "left";
                     this.coordsMap = {}, this.gridData = {
                         boundaries: [],
                         coordinates: {}
                     }, this.currentRow = 0, this.lastColumnIndex = 0;
-                    let d = this.getPaddingHorizontal(),
-                        _ = this.getPaddingVertical();
-                    this.columnHeights = Array(e).fill(_), this.columnWidth = (o - 2 * d - i * (e - 1) - (l ? i : 0)) / e, this.itemGrid = [];
-                    let c = 0;
-                    for (; c < this.sections.length;) {
-                        this.gridData.boundaries[c] = this.currentRow, this.currentRow = 0, this.lastColumnIndex = 0;
-                        let o = this.sections[c],
-                            l = 0,
-                            _ = a(c),
-                            T = this.getMaxColumnHeight(this.columnHeights);
-                        c > 0 && (T = T - i + this.getSectionGutter());
-                        let f = _ > 0 ? _ + i : 0;
-                        for (let e = 0; e < this.columnHeights.length; e++) this.columnHeights[e] = T + f;
-                        for (; l < o;) {
-                            var E, I;
-                            let e = t(c, l);
+                    let E = this.getPaddingHorizontal(),
+                        I = this.getPaddingVertical(),
+                        T = null !== (e = this.marginLeft) && void 0 !== e ? e : 0;
+                    this.columnHeights = Array(i).fill(I), this.columnWidth = (d - 2 * E - l * (i - 1) - (_ ? l : 0)) / i, this.itemGrid = [];
+                    let f = 0;
+                    for (; f < this.sections.length;) {
+                        this.gridData.boundaries[f] = this.currentRow, this.currentRow = 0, this.lastColumnIndex = 0;
+                        let e = this.sections[f],
+                            d = 0,
+                            _ = u(f),
+                            I = this.getMaxColumnHeight(this.columnHeights);
+                        f > 0 && (I = I - l + this.getSectionGutter());
+                        let S = _ > 0 ? _ + l : 0;
+                        for (let e = 0; e < this.columnHeights.length; e++) this.columnHeights[e] = I + S;
+                        for (; d < e;) {
+                            ;
+                            let e = a(f, d);
                             if (null == e) {
-                                l++;
+                                d++;
                                 continue
                             }
-                            let [r, s] = (I = this.columnHeights).reduce((e, t, n) => t < e[0] ? [t, n] : e, [I[0], 0]);
-                            s < this.lastColumnIndex && this.currentRow++, this.lastColumnIndex = s;
-                            let a = n(c, l, this.columnWidth),
-                                o = {
+                            let [i, r] = (n = this.columnHeights).reduce((e, t, n) => t < e[0] ? [t, n] : e, [n[0], 0]);
+                            r < this.lastColumnIndex && this.currentRow++, this.lastColumnIndex = r;
+                            let s = o(f, d, this.columnWidth),
+                                u = {
                                     position: "absolute",
-                                    [u]: this.columnWidth * s + i * (s + 1) - i,
+                                    [c]: this.columnWidth * r + l * (r + 1) - l,
                                     width: this.columnWidth,
-                                    top: r - T,
-                                    height: a
+                                    top: i - I,
+                                    height: s
                                 },
-                                d = {
-                                    section: c,
+                                _ = {
+                                    section: f,
                                     row: this.currentRow,
-                                    column: s
+                                    column: r
                                 };
-                            this.coordsMap[e] = o, this.gridData.coordinates[e] = d, this.columnHeights[s] = r + a + i, this.itemGrid[s] = null !== (E = this.itemGrid[s]) && void 0 !== E ? E : [], this.itemGrid[s].push(e), l++
+                            this.coordsMap[e] = u, this.gridData.coordinates[e] = _, this.columnHeights[r] = i + s + l, this.itemGrid[r] = null !== (t = this.itemGrid[r]) && void 0 !== t ? t : [], this.itemGrid[r].push(e), d++
                         }
-                        _ > 0 && (this.coordsMap[s(c)] = {
+                        _ > 0 && (this.coordsMap[s(f)] = {
                             position: "sticky",
-                            [u]: 0,
-                            width: this.columnWidth * e + i * e,
+                            [c]: 0,
+                            width: this.columnWidth * i + l * i,
                             top: 0,
                             height: _
-                        }), this.coordsMap[r(c)] = {
+                        }), this.coordsMap[r(f)] = {
                             position: "absolute",
-                            [u]: d,
-                            width: this.columnWidth * e + i * (e - 1),
-                            top: T,
-                            height: this.getMaxColumnHeight(this.columnHeights) - T - i
-                        }, c++
+                            [c]: T + E,
+                            width: this.columnWidth * i + l * (i - 1),
+                            top: I,
+                            height: this.getMaxColumnHeight(this.columnHeights) - I - l
+                        }, f++
                     }
-                    this.columnHeights = this.columnHeights.map(e => e - i + _), this.totalHeight = this.getMaxColumnHeight(), this.visibleSections = {}, this.needsFullCompute = !1
+                    this.columnHeights = this.columnHeights.map(e => e - l + I), this.totalHeight = this.getMaxColumnHeight(), this.visibleSections = {}, this.needsFullCompute = !1
                 }
                 computeVisibleSections(e, t) {
                     this.computeFullCoords();
@@ -297988,7 +297993,7 @@
                     i(this, "visibleSections", {}), i(this, "gridData", {
                         coordinates: {},
                         boundaries: []
-                    }), i(this, "coordsMap", {}), i(this, "columnHeights", []), i(this, "columnWidth", 0), i(this, "totalHeight", 0), i(this, "itemGrid", []), i(this, "currentRow", 0), i(this, "lastColumnIndex", 0), i(this, "needsFullCompute", !0), i(this, "bufferWidth", 0), i(this, "sections", []), i(this, "columns", 0), i(this, "itemGutter", 0), i(this, "removeEdgeItemGutters", !1), i(this, "sectionGutter", null), i(this, "padding", null), i(this, "paddingVertical", null), i(this, "paddingHorizontal", null), i(this, "dir", "ltr"), i(this, "getItemKey", () => {
+                    }), i(this, "coordsMap", {}), i(this, "columnHeights", []), i(this, "columnWidth", 0), i(this, "totalHeight", 0), i(this, "itemGrid", []), i(this, "currentRow", 0), i(this, "lastColumnIndex", 0), i(this, "needsFullCompute", !0), i(this, "bufferWidth", 0), i(this, "sections", []), i(this, "columns", 0), i(this, "itemGutter", 0), i(this, "removeEdgeItemGutters", !1), i(this, "sectionGutter", null), i(this, "padding", null), i(this, "paddingVertical", null), i(this, "paddingHorizontal", null), i(this, "marginLeft", null), i(this, "dir", "ltr"), i(this, "getItemKey", () => {
                         throw Error("MasonryListComputer: getItemKey has not been implemented")
                     }), i(this, "getItemHeight", () => {
                         throw Error("MasonryListComputer: getItemHeight has not been implemented")
@@ -298690,44 +298695,44 @@
                     getSectionHeight: d,
                     chunkSize: _ = 250,
                     getScrollerState: c,
-                    itemGutter: E,
-                    removeEdgeItemGutters: I,
-                    sectionGutter: T,
-                    padding: f,
-                    paddingVertical: S,
-                    paddingHorizontal: h,
-                    dir: A
-                } = e, m = (0, s.default)(), N = (0, i.useRef)(o), [p] = (0, i.useState)(() => new r.default), {
-                    offsetWidth: O
-                } = c(), {
-                    dirty: C,
-                    chunkStart: R,
-                    chunkEnd: g,
-                    forceUpdateOnChunkChange: L
+                    maxBufferWidth: E,
+                    itemGutter: I,
+                    removeEdgeItemGutters: T,
+                    sectionGutter: f,
+                    padding: S,
+                    paddingVertical: h,
+                    paddingHorizontal: A,
+                    dir: m
+                } = e, N = (0, s.default)(), p = (0, i.useRef)(o), [O] = (0, i.useState)(() => new r.default), C = c(), R = Math.min(null != E ? E : 1 / 0, C.offsetWidth), g = null != E ? Math.max(0, C.offsetWidth - E) : 0, {
+                    dirty: L,
+                    chunkStart: v,
+                    chunkEnd: D,
+                    forceUpdateOnChunkChange: M
                 } = (0, a.default)({
                     chunkSize: _,
                     getScrollerState: c,
-                    forceUpdate: m
+                    forceUpdate: N
                 });
-                return N.current = (0, i.useMemo)(() => C > 0 ? N.current : (p.mergeProps({
+                return p.current = (0, i.useMemo)(() => L > 0 ? p.current : (O.mergeProps({
                     sections: t,
                     columns: n,
                     getItemKey: l,
                     getItemHeight: u,
                     getSectionHeight: d,
-                    bufferWidth: O,
-                    itemGutter: E,
-                    removeEdgeItemGutters: I,
-                    sectionGutter: T,
-                    padding: f,
-                    paddingVertical: S,
-                    paddingHorizontal: h,
-                    dir: A
-                }), p.computeVisibleSections(Math.max(0, R * _), g * _), p.getState()), [C, p, t, n, l, u, d, R, g, _, E, I, T, f, S, h, O, A]), {
-                    ...N.current,
-                    masonryComputer: p,
-                    forceUpdateOnChunkChange: L,
-                    forceUpdate: m
+                    bufferWidth: R,
+                    itemGutter: I,
+                    removeEdgeItemGutters: T,
+                    sectionGutter: f,
+                    padding: S,
+                    paddingVertical: h,
+                    paddingHorizontal: A,
+                    marginLeft: g / 2,
+                    dir: m
+                }), O.computeVisibleSections(Math.max(0, v * _), D * _), O.getState()), [L, O, t, n, l, u, d, v, D, _, I, T, f, S, h, A, R, m]), {
+                    ...p.current,
+                    masonryComputer: O,
+                    forceUpdateOnChunkChange: M,
+                    forceUpdate: N
                 }
             }
         },
@@ -317628,4 +317633,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.8d42792a300537c66e72.js.map
+//# sourceMappingURL=27519.58f67a86a488848bf047.js.map
