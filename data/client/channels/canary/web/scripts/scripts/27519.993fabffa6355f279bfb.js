@@ -37155,7 +37155,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300129", ", Version Hash: ").concat("5a6a695be957f79d59bcf966f894fad31bcb7b89")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300133", ", Version Hash: ").concat("b44ee301c111bd7d410b7a5d6666235dd9e3a2c1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -80573,15 +80573,17 @@
                 } = e, {
                     page: u,
                     categoryId: _,
-                    integrationType: c
-                } = null != o ? o : {}, I = Date.now(), T = d.default.getFetchState({
+                    integrationType: c,
+                    minUserInstallCommandCount: I,
+                    excludeAppsWithCustomInstallUrl: T
+                } = null != o ? o : {}, f = Date.now(), S = d.default.getFetchState({
                     query: n,
                     guildId: i,
                     page: u,
                     categoryId: _,
                     integrationType: c
                 }), {
-                    lastFetchTimeMs: f
+                    lastFetchTimeMs: h
                 } = null !== (t = d.default.getSearchResults({
                     query: n,
                     guildId: i,
@@ -80589,15 +80591,17 @@
                     categoryId: _,
                     integrationType: c
                 })) && void 0 !== t ? t : {};
-                if (T !== d.FetchState.FETCHING) {
-                    if (null == f || !(f + 6e5 > I)) {
+                if (S !== d.FetchState.FETCHING) {
+                    if (null == h || !(h + 6e5 > f)) {
                         s.default.dispatch({
                             type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
                             query: n,
                             guildId: i,
                             page: u,
                             categoryId: _,
-                            integrationType: c
+                            integrationType: c,
+                            minUserInstallCommandCount: I,
+                            excludeAppsWithCustomInstallUrl: T
                         });
                         try {
                             let e = await r.HTTP.get({
@@ -80608,7 +80612,9 @@
                                     page: u,
                                     category_id: _,
                                     locale: a.default.locale,
-                                    integration_type: c
+                                    integration_type: c,
+                                    min_user_install_command_count: I,
+                                    exclude_apps_with_custom_install_url: T
                                 }
                             });
                             s.default.dispatch({
@@ -80625,7 +80631,9 @@
                                     totalPages: e.body.num_pages,
                                     type: e.body.type,
                                     loadId: e.body.load_id
-                                }
+                                },
+                                minUserInstallCommandCount: I,
+                                excludeAppsWithCustomInstallUrl: T
                             }), null == l || l(e.body.result_count)
                         } catch (e) {
                             s.default.dispatch({
@@ -80634,7 +80642,9 @@
                                 guildId: i,
                                 page: u,
                                 categoryId: _,
-                                integrationType: c
+                                integrationType: c,
+                                minUserInstallCommandCount: I,
+                                excludeAppsWithCustomInstallUrl: T
                             })
                         }
                     }
@@ -80940,9 +80950,11 @@
                     guildId: n,
                     page: i,
                     categoryId: r,
-                    integrationType: s
+                    integrationType: s,
+                    minUserInstallCommandCount: a,
+                    excludeAppsWithCustomInstallUrl: o
                 } = e;
-                return "query:'".concat(t, "' guildId:").concat(n, " page:").concat(i, " categoryId:").concat(r, " integrationType:").concat(s)
+                return "query:'".concat(t, "' guildId:").concat(n, " page:").concat(i, " categoryId:").concat(r, " integrationType:").concat(s, " minUserInstallCommandCount:").concat(a, " excludeAppsWithCustomInstallUrl:").concat(o)
             }(i = o || (o = {}))[i.FETCHING = 0] = "FETCHING", i[i.FETCHED = 1] = "FETCHED", i[i.ERROR = 2] = "ERROR";
             let I = new(d())({
                     max: 20
@@ -80955,15 +80967,19 @@
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: s
-                    } = e, a = E({
+                        integrationType: s,
+                        minUserInstallCommandCount: a,
+                        excludeAppsWithCustomInstallUrl: o
+                    } = e, l = E({
                         query: t,
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: s
+                        integrationType: s,
+                        minUserInstallCommandCount: a,
+                        excludeAppsWithCustomInstallUrl: o
                     });
-                    return I.get(a)
+                    return I.get(l)
                 }
                 getFetchState(e) {
                     let {
@@ -80971,14 +80987,18 @@
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: s
+                        integrationType: s,
+                        minUserInstallCommandCount: a,
+                        excludeAppsWithCustomInstallUrl: o
                     } = e;
                     return T[E({
                         query: t,
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: s
+                        integrationType: s,
+                        minUserInstallCommandCount: a,
+                        excludeAppsWithCustomInstallUrl: o
                     })]
                 }
             }
@@ -80994,17 +81014,21 @@
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: s
-                    } = e, a = E({
+                        integrationType: s,
+                        minUserInstallCommandCount: a,
+                        excludeAppsWithCustomInstallUrl: o
+                    } = e, l = E({
                         query: t,
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: s
+                        integrationType: s,
+                        minUserInstallCommandCount: a,
+                        excludeAppsWithCustomInstallUrl: o
                     });
                     T = {
                         ...T,
-                        [a]: 0
+                        [l]: 0
                     }
                 },
                 APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS: function(e) {
@@ -81014,20 +81038,24 @@
                         page: i,
                         categoryId: r,
                         result: s,
-                        integrationType: a
-                    } = e, o = E({
+                        integrationType: a,
+                        minUserInstallCommandCount: o,
+                        excludeAppsWithCustomInstallUrl: l
+                    } = e, u = E({
                         query: t,
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: a
+                        integrationType: a,
+                        minUserInstallCommandCount: o,
+                        excludeAppsWithCustomInstallUrl: l
                     });
-                    I.set(o, {
+                    I.set(u, {
                         lastFetchTimeMs: Date.now(),
                         ...s
                     }), T = {
                         ...T,
-                        [o]: 1
+                        [u]: 1
                     }
                 },
                 APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE: function(e) {
@@ -81036,17 +81064,21 @@
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: s
-                    } = e, a = E({
+                        integrationType: s,
+                        minUserInstallCommandCount: a,
+                        excludeAppsWithCustomInstallUrl: o
+                    } = e, l = E({
                         query: t,
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        integrationType: s
+                        integrationType: s,
+                        minUserInstallCommandCount: a,
+                        excludeAppsWithCustomInstallUrl: o
                     });
                     T = {
                         ...T,
-                        [a]: 2
+                        [l]: 2
                     }
                 }
             })
@@ -89209,8 +89241,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300129", "300129"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300129")), t = 0), t
+                let t = parseInt((e = "300133", "300133"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300133")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117388,8 +117420,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300129",
-                    versionHash: "5a6a695be957f79d59bcf966f894fad31bcb7b89"
+                    buildNumber: "300133",
+                    versionHash: "b44ee301c111bd7d410b7a5d6666235dd9e3a2c1"
                 }
             }
             n.r(t), n.d(t, {
@@ -175093,8 +175125,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717792630086",
-                                    build_number: "300129"
+                                    built_at: "1717793397480",
+                                    build_number: "300133"
                                 }
                             },
                             retries: 1
@@ -253107,7 +253139,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5a6a695be957f79d59bcf966f894fad31bcb7b89"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b44ee301c111bd7d410b7a5d6666235dd9e3a2c1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282351,7 +282383,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300129"
+                                build_number: "300133"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289660,7 +289692,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300129", "300129"), 10);
+                let s = parseInt((n = "300133", "300133"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317610,4 +317642,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.b04742a87acd5b655686.js.map
+//# sourceMappingURL=27519.993fabffa6355f279bfb.js.map
