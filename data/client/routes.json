@@ -4947,5 +4947,9 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "CHECKOUT_RECOVERY": {
+    "url": "/users/@me/billing/checkout-recovery",
+    "allowed_methods": null
   }
 }
