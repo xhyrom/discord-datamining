@@ -37155,7 +37155,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300240", ", Version Hash: ").concat("dae0964afaeab4a49b76a1eafc45397acf04dfab")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300267", ", Version Hash: ").concat("461d0d62b8a70d515627f5fc4d4ee681f41f61a2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89078,25 +89078,27 @@
                 let t = I.LastReceivedChangelogId.getSetting(),
                     n = f.default.extractTimestamp(e);
                 if (t >= e || r()().diff(n, "days") > 30) return;
-                let i = await o.default.getOrEnsurePrivateChannel(N.SYSTEM_UPDATES_USER_ID);
-                if (null == i) return;
+                let i = await (0, c.fetchEmailSettings)();
+                if (!(null == i ? void 0 : i.categories[O.EmailCategories.UPDATES_AND_ANNOUNCEMENTS])) return;
+                let s = await o.default.getOrEnsurePrivateChannel(N.SYSTEM_UPDATES_USER_ID);
+                if (null == s) return;
                 await l.default.fetchMessages({
-                    channelId: i,
+                    channelId: s,
                     limit: 1
                 });
-                let s = T.default.getLastMessage(i);
-                if (null == s) return;
-                let a = (0, _.default)({
-                    ...s,
-                    channelId: i,
+                let a = T.default.getLastMessage(s);
+                if (null == a) return;
+                let u = (0, _.default)({
+                    ...a,
+                    channelId: s,
                     messageReference: void 0,
                     poll: void 0,
-                    changelogId: s.changelogId
+                    changelogId: a.changelogId
                 });
-                l.default.receiveMessage(i, {
-                    ...a,
+                l.default.receiveMessage(s, {
+                    ...u,
                     state: p.MessageStates.SENT,
-                    channel_id: i
+                    channel_id: s
                 }, !0, {})
             }
             class g extends d.default {
@@ -89123,21 +89125,20 @@
                                 config: n.body,
                                 latestChangelogId: r
                             }), null == r) return;
-                        let o = await (0, c.fetchEmailSettings)();
-                        if (t && (null == o ? void 0 : o.categories[O.EmailCategories.UPDATES_AND_ANNOUNCEMENTS])) {
+                        if (t) {
                             (0, u.getUser)(N.SYSTEM_UPDATES_USER_ID), R(r);
                             return
                         }
                         if (!0 !== i[r].show_on_startup) return;
-                        let l = h.default.lastSeenChangelogId(),
-                            d = h.default.lastSeenChangelogDate();
-                        if (null != l && 0 >= f.default.compare(r, l)) return;
-                        let _ = await a.default.fetchChangelog(r, E.default.locale);
-                        if (null != _) {
-                            if (null == d || null == h.default.lastSeenChangelogDate()) {
-                                a.default.markChangelogAsSeen(r, _.date);
+                        let o = h.default.lastSeenChangelogId(),
+                            l = h.default.lastSeenChangelogDate();
+                        if (null != o && 0 >= f.default.compare(r, o)) return;
+                        let d = await a.default.fetchChangelog(r, E.default.locale);
+                        if (null != d) {
+                            if (null == l || null == h.default.lastSeenChangelogDate()) {
+                                a.default.markChangelogAsSeen(r, d.date);
                                 return
-                            }!h.default.isLocked() && new Date(_.date) > new Date(d) && (0, m.openChangelog)()
+                            }!h.default.isLocked() && new Date(d.date) > new Date(l) && (0, m.openChangelog)()
                         }
                     })
                 }
@@ -89289,8 +89290,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300240", "300240"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300240")), t = 0), t
+                let t = parseInt((e = "300267", "300267"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300267")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117468,8 +117469,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300240",
-                    versionHash: "dae0964afaeab4a49b76a1eafc45397acf04dfab"
+                    buildNumber: "300267",
+                    versionHash: "461d0d62b8a70d515627f5fc4d4ee681f41f61a2"
                 }
             }
             n.r(t), n.d(t, {
@@ -175216,8 +175217,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1717804583599",
-                                    build_number: "300240"
+                                    built_at: "1717811469846",
+                                    build_number: "300267"
                                 }
                             },
                             retries: 1
@@ -253228,7 +253229,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "dae0964afaeab4a49b76a1eafc45397acf04dfab"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "461d0d62b8a70d515627f5fc4d4ee681f41f61a2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282472,7 +282473,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300240"
+                                build_number: "300267"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289781,7 +289782,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300240", "300240"), 10);
+                let s = parseInt((n = "300267", "300267"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317765,4 +317766,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.f29be6cb57a97788efa4.js.map
+//# sourceMappingURL=27519.adea1a76ec38b33cf160.js.map
