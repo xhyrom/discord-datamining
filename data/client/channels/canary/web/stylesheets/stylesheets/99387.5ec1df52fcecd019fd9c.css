@@ -6880,9 +6880,13 @@ html .progress__00e29 {
 }
 
 .premium__0b60b {
+    transition: width.3s
+}
+
+.shopIcon__9ac3e {
     align-items: center;
     display: flex;
-    margin-right: 8px
+    margin-right: 4px
 }
 
 .launchIcon__1a9a6 {
@@ -140651,4 +140655,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.47348a7198b4634ca321.css.map*/
+/*# sourceMappingURL=99387.5ec1df52fcecd019fd9c.css.map*/
