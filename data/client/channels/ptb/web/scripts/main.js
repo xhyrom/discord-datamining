@@ -37179,7 +37179,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300569", ", Version Hash: ").concat("914d1a1d92809f9bc27441372246c26761dc073a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300571", ", Version Hash: ").concat("fbdbaa68ee0b5691ca1cffa6b52ecbde685c89e3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55584,6 +55584,7 @@
                 QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
                 QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
                 QUESTS_PLAY_TASK: "Play {gameTitle} for {minutes} minutes",
+                QUESTS_IN_HOUSE_TASK: "Connect a console and play any game for {minutes} minutes",
                 QUESTS_UNLOCK_REWARDS: "Unlock Rewards",
                 QUESTS_CHECK_PROGRESS: "Check Progress",
                 QUESTS_JOIN_ME: "Join Me",
@@ -55600,6 +55601,7 @@
                 QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
                 QUEST_REWARD: "Win {reward}",
                 QUEST_REWARD_TIERED: "The first {maxRewardCount} will win {maxReward}. Learn more about Quests in the [help center article]({helpCenterLink}).",
+                QUEST_REWARD_MULTIPLATFORM: "Play {gameTitle} for {streamingDurationRequirement, number} mins on desktop or [a connected console](onClick) and unlock {reward} for two months.",
                 QUEST_REWARD_COMPLETED: "You unlocked {reward} on {date}",
                 QUEST_REWARD_COMPLETED_UNCLAIMED: "Completed on {date}",
                 QUEST_REWARD_COMPLETED_CLAIMED: "You unlocked {reward} on {date}",
@@ -89117,8 +89119,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300569", "300569"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300569")), t = 0), t
+                let t = parseInt((e = "300571", "300571"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300571")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117283,8 +117285,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300569",
-                    versionHash: "914d1a1d92809f9bc27441372246c26761dc073a"
+                    buildNumber: "300571",
+                    versionHash: "fbdbaa68ee0b5691ca1cffa6b52ecbde685c89e3"
                 }
             }
             n.r(t), n.d(t, {
@@ -173212,8 +173214,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718054400179",
-                                    build_number: "300569"
+                                    built_at: "1718054895054",
+                                    build_number: "300571"
                                 }
                             },
                             retries: 1
@@ -189440,15 +189442,17 @@
             function M(e, t) {
                 let n = (0, S.useIsEligibleForQuestPlaytime)({
                         location: t
-                    }) && (0, f.hasPlayOnDesktopTask)({
-                        quest: e
-                    }) ? O.default.Messages.QUESTS_PLAY_TASK : O.default.Messages.QUESTS_STREAM_TASK,
-                    i = (0, f.getQuestTaskDetails)({
-                        quest: e,
-                        location: t
-                    }).targetMinutes;
-                return n.format({
-                    minutes: i,
+                    }),
+                    i = O.default.Messages.QUESTS_STREAM_TASK;
+                (0, f.hasVariant)(e, N.QuestVariants.IN_HOUSE_CONSOLE_QUEST) ? i = O.default.Messages.QUESTS_IN_HOUSE_TASK: n && (0, f.hasPlayOnDesktopTask)({
+                    quest: e
+                }) && (i = O.default.Messages.QUESTS_PLAY_TASK);
+                let r = (0, f.getQuestTaskDetails)({
+                    quest: e,
+                    location: t
+                }).targetMinutes;
+                return i.format({
+                    minutes: r,
                     gameTitle: e.config.messages.gameTitle
                 })
             }
@@ -250458,7 +250462,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "914d1a1d92809f9bc27441372246c26761dc073a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "fbdbaa68ee0b5691ca1cffa6b52ecbde685c89e3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279664,7 +279668,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300569"
+                                build_number: "300571"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286975,7 +286979,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300569", "300569"), 10);
+                let s = parseInt((n = "300571", "300571"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314932,4 +314936,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.40f2a1676dfa753f596e.js.map
+//# sourceMappingURL=27519.b2a27b97fb2df3978d9d.js.map
