@@ -63305,8 +63305,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -134311,6 +134311,10 @@ div.nagbar_c731ff {
     }
 }
 
+.sectionLabel__7cc19:only-child {
+    display: none
+}
+
 .select_b6196c {
     width: 20vw
 }
@@ -142344,4 +142348,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6e6de38d67f23c674629.css.map*/
+/*# sourceMappingURL=99387.6846790cc6627f7b6577.css.map*/

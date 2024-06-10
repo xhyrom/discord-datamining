@@ -27057,7 +27057,8 @@
             "use strict";
             e.exports = {
                 container: "container__78c67",
-                noticeIcon: "noticeIcon__61e6f"
+                noticeIcon: "noticeIcon__61e6f",
+                sectionLabel: "sectionLabel__7cc19"
             }
         },
         307723: function(e) {
