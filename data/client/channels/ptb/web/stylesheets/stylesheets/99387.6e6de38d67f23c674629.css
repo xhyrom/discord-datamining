@@ -63305,8 +63305,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -70974,10 +70974,13 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .questProgressRewardTile_ce3d11 {
-    border-radius: 50%;
     box-shadow: var(--shadow-high);
     display: block;
-    flex: 1;
+    flex: 1
+}
+
+.questProgressRewardTile_ce3d11.questProgressRewardTile_ce3d11 {
+    border-radius: 50%;
     height: 32px;
     width: 32px
 }
@@ -142341,4 +142344,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a56e04c13f44e045ee44.css.map*/
+/*# sourceMappingURL=99387.6e6de38d67f23c674629.css.map*/

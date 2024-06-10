@@ -37180,7 +37180,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300404", ", Version Hash: ").concat("eed08e42f4965d49d453bc3dca386fd8697667e5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300409", ", Version Hash: ").concat("e0e2cbabdc9b6f8233c41534253e7c6c08a653e3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -74306,6 +74306,33 @@
                 }
             }
         },
+        783097: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEmbeddedApp: function() {
+                    return o
+                },
+                isRealApplication: function() {
+                    return a
+                }
+            }), n("789020");
+            var i = n("630388"),
+                r = n("981631"),
+                s = n("689079");
+
+            function a(e) {
+                return e.id !== s.BuiltInSectionId.BUILT_IN
+            }
+
+            function o(e) {
+                var t;
+                let {
+                    application: n
+                } = e;
+                return a(n) && (0, i.hasFlag)(null !== (t = n.flags) && void 0 !== t ? t : 0, r.ApplicationFlags.EMBEDDED)
+            }
+            n("689938"), s.BuiltInSectionId.BUILT_IN
+        },
         695676: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -74479,33 +74506,6 @@
                 })
             })
         },
-        176412: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                isEmbeddedApp: function() {
-                    return o
-                },
-                isRealApplication: function() {
-                    return a
-                }
-            }), n("789020");
-            var i = n("630388"),
-                r = n("981631"),
-                s = n("689079");
-
-            function a(e) {
-                return e.id !== s.BuiltInSectionId.BUILT_IN
-            }
-
-            function o(e) {
-                var t;
-                let {
-                    application: n
-                } = e;
-                return a(n) && (0, i.hasFlag)(null !== (t = n.flags) && void 0 !== t ? t : 0, r.ApplicationFlags.EMBEDDED)
-            }
-            s.BuiltInSectionId.BUILT_IN
-        },
         173790: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -74515,7 +74515,7 @@
             });
             var i = n("735250");
             n("470079");
-            var r = n("176412"),
+            var r = n("783097"),
                 s = n("964387"),
                 a = n("153189");
 
@@ -74539,7 +74539,7 @@
                     return r
                 }
             }), n("411104");
-            var i = n("176412");
+            var i = n("783097");
 
             function r(e) {
                 let {
@@ -74573,8 +74573,8 @@
                 S = n("585483"),
                 h = n("499254"),
                 A = n("660090"),
-                m = n("695676"),
-                N = n("176412"),
+                m = n("783097"),
+                N = n("695676"),
                 p = n("870205"),
                 O = n("442783"),
                 C = n("981631"),
@@ -74619,7 +74619,7 @@
                     application: c
                 } = e, {
                     goBack: S
-                } = (0, m.useAppLauncherHistoryContext)(), {
+                } = (0, N.useAppLauncherHistoryContext)(), {
                     filterSection: h,
                     commandsByActiveSection: C,
                     sectionDescriptors: M
@@ -74655,7 +74655,7 @@
                     x = null != y ? (0, E.getIconComponent)(y) : null,
                     F = r.useMemo(() => {
                         var e;
-                        return (0, N.isRealApplication)(c) ? (0, T.parseBioReact)(null !== (e = c.description) && void 0 !== e ? e : "") : ""
+                        return (0, m.isRealApplication)(c) ? (0, T.parseBioReact)(null !== (e = c.description) && void 0 !== e ? e : "") : ""
                     }, [c]);
                 return (0, i.jsxs)(l.ScrollerNone, {
                     className: L.container,
@@ -89285,8 +89285,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300404", "300404"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300404")), t = 0), t
+                let t = parseInt((e = "300409", "300409"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300409")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117465,8 +117465,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300404",
-                    versionHash: "eed08e42f4965d49d453bc3dca386fd8697667e5"
+                    buildNumber: "300409",
+                    versionHash: "e0e2cbabdc9b6f8233c41534253e7c6c08a653e3"
                 }
             }
             n.r(t), n.d(t, {
@@ -154755,40 +154755,48 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return o
                 },
                 getEventSchedule: function() {
-                    return d
+                    return u
+                },
+                useEventScheduleById: function() {
+                    return l
                 }
             });
-            var i = n("512722"),
-                r = n.n(i),
-                s = n("442837"),
-                a = n("924301"),
-                o = n("894017"),
-                l = n("854698");
+            var i = n("442837"),
+                r = n("924301"),
+                s = n("894017"),
+                a = n("854698");
 
-            function u(e, t, n) {
-                var i;
-                let u = null !== (i = (0, s.useStateFromStores)([a.default], () => a.default.getGuildScheduledEvent(e))) && void 0 !== i ? i : n;
-                return r()(null != u, "Event must be defined"), t = null != t ? t : (0, l.getNextRecurrenceIdInEvent)(u), _(u, (0, o.default)(t, e), t)
+            function o(e, t) {
+                t = null != t ? t : (0, a.getNextRecurrenceIdInEvent)(e);
+                let n = (0, s.default)(t, e.id);
+                return d(e, n, t)
             }
 
-            function d(e, t) {
-                let n = (0, o.getEventException)(t, e.id);
-                return _(e, n, t)
+            function l(e, t) {
+                let n = (0, i.useStateFromStores)([r.default], () => r.default.getGuildScheduledEvent(e));
+                t = null != t ? t : (0, a.getNextRecurrenceIdInEvent)(n);
+                let o = (0, s.default)(t, null == n ? void 0 : n.id);
+                return null == n ? null : d(n, o, t)
             }
 
-            function _(e, t, n) {
+            function u(e, t) {
+                let n = (0, s.getEventException)(t, e.id);
+                return d(e, n, t)
+            }
+
+            function d(e, t, n) {
                 if (null == e.recurrence_rule || null == n) return {
                     startTime: new Date(e.scheduled_start_time),
                     endTime: null != e.scheduled_end_time ? new Date(e.scheduled_end_time) : null
                 };
-                let i = (0, l.getBaseScheduleForRecurrence)(n, e),
+                let i = (0, a.getBaseScheduleForRecurrence)(n, e),
                     {
                         startDate: r,
                         endDate: s
-                    } = (0, l.getScheduleForRecurrenceWithException)(i, t);
+                    } = (0, a.getScheduleForRecurrenceWithException)(i, t);
                 return {
                     startTime: r.toDate(),
                     endTime: null == s ? void 0 : s.toDate()
@@ -175218,8 +175226,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718038429973",
-                                    build_number: "300404"
+                                    built_at: "1718038690762",
+                                    build_number: "300409"
                                 }
                             },
                             retries: 1
@@ -252526,7 +252534,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "eed08e42f4965d49d453bc3dca386fd8697667e5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e0e2cbabdc9b6f8233c41534253e7c6c08a653e3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281770,7 +281778,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300404"
+                                build_number: "300409"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289081,7 +289089,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300404", "300404"), 10);
+                let s = parseInt((n = "300409", "300409"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -317065,4 +317073,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.0d964ce8eea4b0519ad2.js.map
+//# sourceMappingURL=27519.1c23f65a50d8f517b84c.js.map
