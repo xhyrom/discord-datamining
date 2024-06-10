@@ -59284,10 +59284,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin-top: 8px
 }
 
-.errorBlockWrapper_d5170f {
-    padding: 16px 16px 0
-}
-
 .adyen-checkout__spinner__wrapper {
     align-items: center;
     display: flex;
@@ -63406,8 +63402,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -140655,4 +140651,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.21b09fbd15e3be567563.css.map*/
+/*# sourceMappingURL=99387.47348a7198b4634ca321.css.map*/
