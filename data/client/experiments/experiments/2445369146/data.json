@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_hd_streaming_viewer",
+    "label": "HD Streaming Viewer Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Send Nitro message, styled/persistent indicator",
+      "Treatment 2: Send Nitro message, styled indicator",
+      "Treatment 3: Styled/persistent indicator",
+      "Treatment 4: Styled indicator"
+    ],
+    "hash": 2445369146,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
