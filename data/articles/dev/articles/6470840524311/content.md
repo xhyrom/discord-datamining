@@ -7,7 +7,7 @@
 <h2> </h2>
 <h2 id="h_01G56XR6D2HY7K3BHQ2A6C4ZZC">WHY DID THE COPY BUTTON DISAPPEAR?</h2>
 <p>You may have noticed that the copy button has disappeared from the Bot page in the Developer Portal. After you have viewed the token once and leave the page, you no longer have access to it. This is put in place for security reasons. If you forgot to copy your token, it will need to be regenerated and changed in any code where the old one might have been used.</p>
-<p><img src="https://support-dev.discord.com/hc/article_attachments/6574459517591/6430E4B2-745C-4671-9AEB-7A4D58B133A4_1_201_a.jpeg" alt="6430E4B2-745C-4671-9AEB-7A4D58B133A4_1_201_a.jpeg"></p>
+<p><img src="https://support-dev.discord.com/hc/article_attachments/6574459517591" alt="6430E4B2-745C-4671-9AEB-7A4D58B133A4_1_201_a.jpeg"></p>
 <h2> </h2>
 <h2 id="h_01G56XRFF5AN811CKKMQ9T2HQT">HOW TO REGENERATE YOUR BOT’S TOKEN</h2>
 <ol>
