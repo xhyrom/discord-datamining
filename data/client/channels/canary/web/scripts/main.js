@@ -37179,7 +37179,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300587", ", Version Hash: ").concat("abcbaadc19c444f2166d48cfac6e0a261e6aeb3c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300607", ", Version Hash: ").concat("564eddd297b536d6a21c5052ae1392f6b2a0e561")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -75300,6 +75300,10 @@
                     actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "ENTITLEMENT_FETCH_APPLICATION_SUCCESS", "ENTITLEMENT_CREATE", "ENTITLEMENT_UPDATE", "ENTITLEMENT_DELETE", "LOGOUT"],
                     inlineRequire: () => n("944880").default,
                     neverLoadBeforeConnectionOpen: !0
+                },
+                ForwardGuildBreadcrumbManager: {
+                    actions: ["POST_CONNECTION_OPEN", "MESSAGE_UPDATE", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_AROUND_SUCCESS", "LOAD_RECENT_MENTIONS_SUCCESS", "LOAD_PINNED_MESSAGES_SUCCESS", "SEARCH_FINISH", "MOD_VIEW_SEARCH_FINISH"],
+                    inlineRequire: () => n("35260").default
                 }
             };
             (0, i.initialize)(r)
@@ -89119,8 +89123,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300587", "300587"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300587")), t = 0), t
+                let t = parseInt((e = "300607", "300607"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300607")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117285,8 +117289,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300587",
-                    versionHash: "abcbaadc19c444f2166d48cfac6e0a261e6aeb3c"
+                    buildNumber: "300607",
+                    versionHash: "564eddd297b536d6a21c5052ae1392f6b2a0e561"
                 }
             }
             n.r(t), n.d(t, {
@@ -131746,6 +131750,90 @@
             }
             t.default = new _
         },
+        35260: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("147913"),
+                r = n("31996"),
+                s = n("981631");
+            let a = new Set;
+
+            function o(e) {
+                var t, n, i;
+                let o = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                if (o && !a.has(e.channel_id) || (null === (t = e.message_reference) || void 0 === t ? void 0 : t.type) !== s.MessageReferenceTypes.FORWARD) return;
+                let l = null === (n = e.message_snapshots) || void 0 === n ? void 0 : n[0];
+                null != l && (null === (i = l.guild) || void 0 === i ? void 0 : i.id) != null && (0, r.fetchBasicGuild)(l.guild.id)
+            }
+            class l extends i.default {
+                handleConnectionOpen() {
+                    a.clear()
+                }
+                handleChannelSelect(e) {
+                    let {
+                        channelId: t
+                    } = e;
+                    null != t && a.add(t)
+                }
+                handleMessage(e) {
+                    let {
+                        message: t
+                    } = e;
+                    return o(t, !0)
+                }
+                handleLoadMessages(e) {
+                    let {
+                        channelId: t,
+                        messages: n
+                    } = e;
+                    a.add(t), n.forEach(e => o(e, !0))
+                }
+                handleLoadRecentMentions(e) {
+                    let {
+                        messages: t
+                    } = e;
+                    t.forEach(e => o(e))
+                }
+                handleLoadPinnedMessages(e) {
+                    let {
+                        messages: t
+                    } = e;
+                    t.forEach(e => o(e))
+                }
+                handleSearchFinish(e) {
+                    e.messages.forEach(e => {
+                        e.forEach(e => o(e))
+                    })
+                }
+                constructor(...e) {
+                    var t, n, i;
+                    super(...e), t = this, n = "actions", i = {
+                        POST_CONNECTION_OPEN: this.handleConnectionOpen,
+                        MESSAGE_CREATE: {
+                            callback: this.handleMessage,
+                            autoSubscribe: !1
+                        },
+                        MESSAGE_UPDATE: this.handleMessage,
+                        LOAD_MESSAGES_SUCCESS: this.handleLoadMessages,
+                        LOAD_MESSAGES_AROUND_SUCCESS: this.handleLoadMessages,
+                        LOAD_RECENT_MENTIONS_SUCCESS: this.handleLoadRecentMentions,
+                        LOAD_PINNED_MESSAGES_SUCCESS: this.handleLoadPinnedMessages,
+                        SEARCH_FINISH: this.handleSearchFinish,
+                        MOD_VIEW_SEARCH_FINISH: this.handleSearchFinish,
+                        CHANNEL_SELECT: {
+                            callback: this.handleChannelSelect,
+                            autoSubscribe: !1
+                        }
+                    }, n in t ? Object.defineProperty(t, n, {
+                        value: i,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : t[n] = i
+                }
+            }
+            t.default = new l
+        },
         346610: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -140388,6 +140476,76 @@
                 }
             }
             t.default = new c
+        },
+        31996: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                fetchBasicGuild: function() {
+                    return u
+                }
+            }), n("47120");
+            var i = n("544891"),
+                r = n("570140"),
+                s = n("430824"),
+                a = n("356264"),
+                o = n("981631");
+            let l = new Set;
+            async function u(e) {
+                if (null == s.default.getGuild(e) && null == a.default.getGuild(e)) {
+                    if (!l.has(e)) {
+                        r.default.dispatch({
+                            type: "BASIC_GUILD_FETCH",
+                            guildId: e
+                        }), l.add(e);
+                        try {
+                            let t = (await i.HTTP.get({
+                                url: o.Endpoints.GUILD_BASIC(e),
+                                oldFormErrors: !0
+                            })).body;
+                            r.default.dispatch({
+                                type: "BASIC_GUILD_FETCH_SUCCESS",
+                                guildId: e,
+                                guildInfo: t
+                            })
+                        } catch (t) {
+                            r.default.dispatch({
+                                type: "BASIC_GUILD_FETCH_FAILURE",
+                                guildId: e
+                            })
+                        } finally {
+                            l.delete(e)
+                        }
+                    }
+                }
+            }
+        },
+        356264: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i, r, s, a, o = n("442837"),
+                l = n("570140");
+            let u = 0,
+                d = {};
+            class _ extends(a = o.default.Store) {
+                getGuild(e) {
+                    return d[e]
+                }
+                getVersion() {
+                    return u
+                }
+            }
+            s = "BasicGuildStore", (r = "displayName") in(i = _) ? Object.defineProperty(i, r, {
+                value: s,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : i[r] = s, t.default = new _(l.default, {
+                BASIC_GUILD_FETCH: function(e) {},
+                BASIC_GUILD_FETCH_SUCCESS: function(e) {
+                    d[e.guildId] = e.guildInfo, u++
+                },
+                BASIC_GUILD_FETCH_FAILURE: function(e) {}
+            })
         },
         372900: function(e, t, n) {
             "use strict";
@@ -173214,8 +173372,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718057163837",
-                                    build_number: "300587"
+                                    built_at: "1718059119219",
+                                    build_number: "300607"
                                 }
                             },
                             retries: 1
@@ -187957,8 +188115,8 @@
                     pendingGlobalName: i,
                     user: r,
                     guildMember: s
-                } = e, a = "" === n ? null : null != n ? n : null == s ? void 0 : s.nick;
-                return null !== (t = null != a ? a : "" === i ? null : i) && void 0 !== t ? t : u.default.getName(r)
+                } = e, a = "" === n ? null : null != n ? n : null == s ? void 0 : s.nick, o = "" === i ? r.username : i;
+                return null !== (t = null != a ? a : o) && void 0 !== t ? t : u.default.getName(r)
             }
 
             function h(e) {
@@ -188927,13 +189085,17 @@
                 E = n("46140"),
                 I = n("981631");
             async function T(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                await r.HTTP.post({
-                    url: I.Endpoints.QUEST_ON_CONSOLE_START(e),
-                    query: t ? {
-                        preview: t
-                    } : void 0
-                })
+                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    n = (await r.HTTP.post({
+                        url: I.Endpoints.QUEST_ON_CONSOLE_START(e),
+                        query: t ? {
+                            preview: t
+                        } : void 0
+                    })).body;
+                return null != n.quest_user_status && s.default.dispatch({
+                    type: "QUESTS_USER_STATUS_UPDATE",
+                    user_status: n.quest_user_status
+                }), null
             }
             async function f(e) {
                 await r.HTTP.post({
@@ -250462,7 +250624,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "abcbaadc19c444f2166d48cfac6e0a261e6aeb3c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "564eddd297b536d6a21c5052ae1392f6b2a0e561"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279668,7 +279830,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300587"
+                                build_number: "300607"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286979,7 +287141,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300587", "300587"), 10);
+                let s = parseInt((n = "300607", "300607"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314936,4 +315098,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.cebeaf0a2e21f449127f.js.map
+//# sourceMappingURL=27519.9a49f3a9030410992f1c.js.map
