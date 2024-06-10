@@ -14,7 +14,7 @@
 </ul>
 <p><strong>Opting into the App Directory:</strong> To enable your app to be included in the App Directory, you will need to opt-in by clicking the “Enable Discovery” button at the bottom of the Discovery Status tab in the Developer Portal.</p>
 <h2 id="h_01FXA880C7H59S7MFKN4KYGH93">How to fill out the new product Page tab</h2>
-<p><img src="https://support-dev.discord.com/hc/article_attachments/6485878511255/1.png" alt="1.png"></p>
+<p><img src="https://support-dev.discord.com/hc/article_attachments/6485878511255" alt="1.png"></p>
 <p> </p>
 <p class="wysiwyg-text-align-left">The fields available for you to fill out are below. Items marked with an <span class="wysiwyg-color-red">*</span> are required.</p>
 <p><strong>Support Server<span class="wysiwyg-color-red">*</span></strong>:</p>
@@ -55,7 +55,7 @@
 <p>Once you’ve finalized the form, save your changes. (Note: The “<strong>reset</strong>” button will undo any changes to the form and will default to the last saved state.)</p>
 <h2 id="h_01G40W2CG6113WVZK4KZACB60B" data-pm-slice="1 1 []">How to preview your app's product page</h2>
 <p data-pm-slice="1 1 []">In the Developer Portal’s new App Directory section, <strong>the product Page tab now shows a “Preview” button at the top</strong>. Clicking this will open a new tab that displays how the information you added in that tab will appear.</p>
-<p data-pm-slice="1 1 []"><img src="https://support-dev.discord.com/hc/article_attachments/6485904974615/preview.png" alt="preview.png"></p>
+<p data-pm-slice="1 1 []"><img src="https://support-dev.discord.com/hc/article_attachments/6485904974615" alt="preview.png"></p>
 <p data-pm-slice="1 1 []">You can also view your app product page in your browser directly by going to <a class="ProsemirrorEditor-link" href="https://discord.com/application-directory/">https://discord.com/application-directory/</a>&lt;application_id&gt;. This will display information from the last time you clicked “Save changes” on your product Page tab.</p>
 <p><strong>A few things to note:</strong></p>
 <ul>
@@ -63,12 +63,12 @@
     <li>You will still be able to preview your app product page even before you have met the eligibility requirements on the checklist in the Discovery Status tab. (<em>However, note that your app must be at least verified to see this 'App Directory' section of the Developer Portal.</em>)</li>
     <li>We encourage you to make the most of all these available fields - think about how you want your app to look and feel to users who will visit your page and consider adding it to their servers. Not all of these fields are required, but we encourage you to fill out all you can and take advantage of them. Below is an example for inspiration:</li>
 </ul>
-<p><img src="https://support-dev.discord.com/hc/article_attachments/6485929997847/preview_2.png" alt="preview_2.png"></p>
+<p><img src="https://support-dev.discord.com/hc/article_attachments/6485929997847" alt="preview_2.png"></p>
 <p> </p>
 <h2 id="h_01FXA887YTR39C54BWHYCX9S86">How to use the Discovery Status tab</h2>
 <p>This highlights <strong>everything in the Developer Portal that you need to complete in order to be eligible to opt-in to Discovery</strong>.</p>
 <p>The button (”Enable Discovery”) will not be clickable until all requirements are met.</p>
-<p><img src="https://support-dev.discord.com/hc/article_attachments/6485931000343/2.png" alt="2.png"></p>
+<p><img src="https://support-dev.discord.com/hc/article_attachments/6485931000343" alt="2.png"></p>
 <p>Some of these inputs live in the new product Page tab, and some are elsewhere. See below for a walkthrough of all eligibility criteria.</p>
 <p><strong>Requirements in order to view the App Discovery page</strong>:</p>
 <ul>
@@ -91,7 +91,7 @@
         <strong>Tags</strong>: You can add up to 5, but you need at least 1 tag added about your app in order to be eligible for the App Directory. These are added in the <strong>General Information tab</strong>.
     </li>
     <li>
-        <strong>Install URL</strong>: You can define this under the OAuth3 URL Generator section of the Developer Portal. If you do not want to redirect users to your domain or a custom URL, setting up the OAuth3 flow will generate a Default URL. For more information, check out <a href="https://discord.com/developers/docs/topics/oauth3" target="_blank" rel="noopener noreferrer">this link</a>.
+        <strong>Install URL</strong>: You can define this under the OAuth2 URL Generator section of the Developer Portal. If you do not want to redirect users to your domain or a custom URL, setting up the OAuth2 flow will generate a Default URL. For more information, check out <a href="https://discord.com/developers/docs/topics/oauth2" target="_blank" rel="noopener noreferrer">this link</a>.
     </li>
 </ul>
 <p><strong>Privacy Policy</strong>:</p>
