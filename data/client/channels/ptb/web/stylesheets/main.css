@@ -63406,8 +63406,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -71152,6 +71152,44 @@ html .invoiceCancelRow_aa7946 {
 
 .stepsWrapperStatic__454d2 {
     padding: 0 12px 12px
+}
+
+.microphoneUnit__14665 {
+    margin-top: 16px;
+    border-top: 1px solid var(--divider-subtle);
+    display: flex;
+    flex-direction: column
+}
+
+.microphoneUnitHeader__11791 {
+    margin-top: 16px;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.warningCircle__7f604 {
+    color: var(--text-warning);
+    margin-right: 4px
+}
+
+.microphoneUnitRefreshIconWrapper__9b5ac {
+    cursor: pointer;
+    margin-left: auto
+}
+
+.microphoneUnitRefreshIcon__5e5fb {
+    color: var(--interactive-normal)
+}
+
+.microphoneUnitRefreshIcon__5e5fb:hover {
+    color: var(--interactive-hover)
+}
+
+.microphoneUnitBodyText__09248 {
+    margin-top: 8px
 }
 
 .headingWrapper_dfde31 {
@@ -140655,4 +140693,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.66bd735c76bc12c01e7f.css.map*/
+/*# sourceMappingURL=99387.02fe2b2d51f09146cf95.css.map*/
