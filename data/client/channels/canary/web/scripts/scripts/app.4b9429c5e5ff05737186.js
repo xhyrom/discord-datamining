@@ -22685,6 +22685,11 @@
                 heading: "heading__5c363",
                 headingChevron: "headingChevron_a9d95d",
                 headingWrapper: "headingWrapper_dfde31",
+                microphoneUnit: "microphoneUnit__14665",
+                microphoneUnitBodyText: "microphoneUnitBodyText__09248",
+                microphoneUnitHeader: "microphoneUnitHeader__11791",
+                microphoneUnitRefreshIcon: "microphoneUnitRefreshIcon__5e5fb",
+                microphoneUnitRefreshIconWrapper: "microphoneUnitRefreshIconWrapper__9b5ac",
                 stepConnector: "stepConnector__70be7",
                 stepContent: "stepContent__72b21",
                 stepIcon: "stepIcon_ff5f7a",
@@ -22695,6 +22700,7 @@
                 stepWrapperWithNextStep: "stepWrapperWithNextStep__553d0",
                 stepsWrapperAnimated: "stepsWrapperAnimated_c09c7a",
                 stepsWrapperStatic: "stepsWrapperStatic__454d2",
+                warningCircle: "warningCircle__7f604",
                 wrapper: "wrapper__5ce22"
             }
         },
