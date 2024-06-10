@@ -17714,6 +17714,7 @@
                 mentioned: "mentioned_fa6fd2",
                 message: "message_ccca67",
                 messageListItem: "messageListItem__050f9",
+                nitroMessage: "nitroMessage__255a2",
                 quotedChatMessage: "quotedChatMessage_d0497b",
                 replying: "replying__38514",
                 selected: "selected_e3bc5d",
@@ -17988,6 +17989,20 @@
                 scrollerInner: "scrollerInner__37fee",
                 scrollerSpacer: "scrollerSpacer__6b1b6",
                 scrollerWrap: "scrollerWrap_f4f01d"
+            }
+        },
+        317890: function(e) {
+            "use strict";
+            e.exports = {
+                buttonContainer: "buttonContainer_b24025",
+                container: "container_cd88f5",
+                icon: "icon__27ffc",
+                iconContainer: "iconContainer__110dc",
+                messageContentContainer: "messageContentContainer_b38c09",
+                nitroBadge: "nitroBadge__82886",
+                nitroBadgeIcon: "nitroBadgeIcon__746b8",
+                nitroBadgeText: "nitroBadgeText__34b8e",
+                premiumIcon: "premiumIcon__9157c"
             }
         },
         311989: function(e) {

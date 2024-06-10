@@ -11072,9 +11072,63 @@ html .progress__00e29 {
     height: var(--custom-dropdown-button-large-dropdown-size)
 }
 
+.container_cd88f5 {
+    display: flex;
+    padding: var(--spacing-16);
+    background: var(--background-secondary-alt);
+    color: var(--text-primary);
+    border-radius: var(--spacing-8);
+    flex-grow: 1
+}
+
+.theme-light .container_cd88f5 {
+    background: var(--background-primary)
+}
+
+.buttonContainer_b24025 {
+    margin-left: var(--spacing-24);
+    padding-top: 2px
+}
+
+.messageContentContainer_b38c09 {
+    padding-top: var(--spacing-12)
+}
+
+.iconContainer__110dc {
+    height: 100%
+}
+
+.icon__27ffc {
+    fill: #c269c3
+}
+
+.nitroBadge__82886 {
+    display: flex;
+    align-items: center;
+    margin-top: 2px
+}
+
+.nitroBadgeIcon__746b8 {
+    fill: #c269c3
+}
+
+.nitroBadgeText__34b8e {
+    color: #c269c3;
+    margin-left: var(--spacing-4)
+}
+
+.premiumIcon__9157c {
+    margin: 0;
+    height: 16px
+}
+
 .ephemeral_eb5d84 {
     position: relative;
     background: var(--brand-experiment-05a)
+}
+
+.nitroMessage__255a2 {
+    background: linear-gradient(to right, hsl(var(--premium-tier-2-purple-for-gradients-hsl)/.15), hsl(var(--premium-tier-2-pink-for-gradients-hsl)/.15))
 }
 
 .automodMessage__43f24 {
@@ -11094,6 +11148,7 @@ html .progress__00e29 {
 
 .mentioned_fa6fd2:before,
 .ephemeral_eb5d84:before,
+.nitroMessage__255a2:before,
 .automodMessage__43f24:before,
 .replying__38514:before,
 .highlighted_fc800f:before {
@@ -11109,6 +11164,10 @@ html .progress__00e29 {
 
 .ephemeral_eb5d84:before {
     background: var(--brand-500)
+}
+
+.nitroMessage__255a2:before {
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color-vertical)
 }
 
 .automodMessage__43f24:before {
@@ -11159,6 +11218,11 @@ html .progress__00e29 {
 .message_ccca67.ephemeral_eb5d84.selected_e3bc5d,
 .mouse-mode.full-motion .message_ccca67.ephemeral_eb5d84:hover {
     background: var(--brand-experiment-10a)
+}
+
+.message_ccca67.nitroMessage__255a2.selected_e3bc5d,
+.mouse-mode.full-motion .message_ccca67.nitroMessage__255a2:hover {
+    background: linear-gradient(to right, hsl(var(--premium-tier-2-purple-for-gradients-hsl)/.2), hsl(var(--premium-tier-2-pink-for-gradients-hsl)/.2))
 }
 
 .message_ccca67.automodMessage__43f24.selected_e3bc5d,
@@ -141675,6 +141739,10 @@ code {
             var(--premium-tier-2-purple-for-gradients),
             var(--premium-tier-2-purple-for-gradients-2),
             var(--premium-tier-2-pink-for-gradients));
+    --custom-premium-colors-premium-gradient-tier-2-tri-color-vertical: linear-gradient(to top,
+            var(--premium-tier-2-purple-for-gradients),
+            var(--premium-tier-2-purple-for-gradients-2),
+            var(--premium-tier-2-pink-for-gradients));
     --custom-premium-colors-premium-gradient-tier-2-old: linear-gradient(to right,
             var(--premium-tier-2-purple),
             var(--premium-tier-2-pink))
@@ -142273,4 +142341,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f56bf82b8bffb7fd3dd2.css.map*/
+/*# sourceMappingURL=99387.a56e04c13f44e045ee44.css.map*/
