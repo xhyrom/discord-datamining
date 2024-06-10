@@ -4931,14 +4931,6 @@
       "POST"
     ]
   },
-  "USER_RECENT_GAMES": {
-    "url": "/users/:param/profile/recent-games",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "STORE_LAYOUT": {
     "url": "/applications/:param/store-layout",
     "allowed_methods": [
