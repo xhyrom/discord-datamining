@@ -37179,7 +37179,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300481", ", Version Hash: ").concat("3d2283c0f5b72d72d0bc491a2b050f0dd3c2a70a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300488", ", Version Hash: ").concat("969a0361b35b3bc3cf05c858f108de36ce53c655")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -46254,7 +46254,12 @@
                 PAYMENT_WAITING_FOR_PURCHASE_TOKEN_AUTHORIZATION_MODAL_RESEND_ACTION: "Resend email",
                 PAYMENT_WAITING_FOR_PURCHASE_TOKEN_AUTHORIZATION_MODAL_RESEND_SENT: "Email sent!",
                 PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_MODAL_HEADER: "Complete checkout on your browser",
+                PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_MODAL_BODY: "We're opening a secure browser window so you can easily autofill your payment details.",
+                PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_MODAL_COUNTDOWN_HEADER: "Opening a window in.. {countdown}",
                 PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_MODAL_NEXT_BUTTON: "Pay Here",
+                PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_CONFIRM_MODAL_HEADER: "Purchase Complete!",
+                PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_CONFIRM_MODAL_BODY: "Please return to the app to continue.",
+                PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_CONFIRM_MODAL_INSTRUCTIONS: "You may close this window.",
                 FORM_ERROR_GENERIC: "Oops! You've caught an ultra rare error. This is probably our fault, so please try again or check [our status page]({statusPageURL}).",
                 FORM_ERROR_GENERIC_WITH_DETAILS: "Oops! You've caught an ultra rare error. This is probably our fault, so please try again or check [our status page]({statusPageURL}). ({details})",
                 ERROR_GENERIC_TITLE: "Oops, something went wrong...",
@@ -89101,8 +89106,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300481", "300481"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300481")), t = 0), t
+                let t = parseInt((e = "300488", "300488"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300488")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117267,8 +117272,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300481",
-                    versionHash: "3d2283c0f5b72d72d0bc491a2b050f0dd3c2a70a"
+                    buildNumber: "300488",
+                    versionHash: "969a0361b35b3bc3cf05c858f108de36ce53c655"
                 }
             }
             n.r(t), n.d(t, {
@@ -143080,7 +143085,7 @@
                 await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("43906"), n.e("8016"), n.e("22646"), n.e("60573"), n.e("67983")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("43906"), n.e("8016"), n.e("22646"), n.e("60573"), n.e("54849")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -173195,8 +173200,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718046428245",
-                                    build_number: "300481"
+                                    built_at: "1718047081694",
+                                    build_number: "300488"
                                 }
                             },
                             retries: 1
@@ -250438,7 +250443,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3d2283c0f5b72d72d0bc491a2b050f0dd3c2a70a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "969a0361b35b3bc3cf05c858f108de36ce53c655"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279644,7 +279649,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300481"
+                                build_number: "300488"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286955,7 +286960,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300481", "300481"), 10);
+                let s = parseInt((n = "300488", "300488"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314912,4 +314917,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.cdbf8d8b99e73fa39c6a.js.map
+//# sourceMappingURL=27519.bd86931e64d49ddb4641.js.map

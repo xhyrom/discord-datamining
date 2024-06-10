@@ -19427,6 +19427,13 @@
                 reviewContainer: "reviewContainer__6ae3a"
             }
         },
+        42680: function(e) {
+            "use strict";
+            e.exports = {
+                body: "body__86e3b",
+                description: "description__70f9c"
+            }
+        },
         565631: function(e) {
             "use strict";
             e.exports = {
@@ -21312,6 +21319,8 @@
             e.exports = {
                 banner: "banner_d4c724",
                 confirmation: "confirmation__92535",
+                redirectBody: "redirectBody__18fcf",
+                redirectConfirmation: "redirectConfirmation__6027f",
                 text: "text__26d08"
             }
         },
