@@ -387,7 +387,7 @@
     display: inline-block;
     width: 100px;
     height: 100px;
-    background: url(/assets/2c41aeef7f5211146831.png);
+    background: url(/assets/63b9ba4e77cefc4432f9.png);
     background-size: 400px 200px;
     margin-bottom: 28px
 }
@@ -5398,7 +5398,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     top: 0;
     width: 100vh;
     height: 100vh;
-    background: url(/assets/9b81055968e4487e3977.png)top left/cover no-repeat fixed;
+    background: url(/assets/e34c2d4b495fee45fd10.png)top left/cover no-repeat fixed;
     z-index: -1;
     pointer-events: none
 }
@@ -8775,7 +8775,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .gifTag__9db5a {
-    background-image: url(/assets/7fc8e9a3ba496bd28aad.svg);
+    background-image: url(/assets/b8a24861f0d292933a67.svg);
     width: 29px;
     height: 22px
 }
@@ -10021,7 +10021,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .theme-light .image_e0cb48 {
-    background-image: url(/assets/cf4dc04358de56a11ee4.svg)
+    background-image: url(/assets/557dc1ecc62f7b909dc2.svg)
 }
 
 .theme-dark .wrapper__77675 {
@@ -10029,7 +10029,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .theme-dark .image_e0cb48 {
-    background-image: url(/assets/c2f9bf2309067d6e1afe.svg)
+    background-image: url(/assets/9c2df2744be538f3520f.svg)
 }
 
 .nameTag__1d385 {
@@ -10437,7 +10437,9 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .is-mobile .authBox__6f336 .discordLogo__037bb {
-    display: block
+    display: block;
+    position: absolute;
+    top: 16px
 }
 
 @media(max-width:830px) {
@@ -11296,7 +11298,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .screenshareIcon__6bf1a {
     width: 40px;
     height: 40px;
-    background-image: url(/assets/a6078ff78e0b62e10f1b.svg)
+    background-image: url(/assets/e1c8b415ea0f033bb751.svg)
 }
 
 .content__7246b {
@@ -13287,11 +13289,11 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .lightGrey__9b1ba {
-    background-image: url(/assets/75a898a2a6b0531f10f5.png)
+    background-image: url(/assets/4bfba9c10c9f3d35a86d.png)
 }
 
 .lightBlurple__2a3fa {
-    background-image: url(/assets/81b75c416b7329731f0d.png)
+    background-image: url(/assets/91a45598f402ce983c54.png)
 }
 
 .crossWhite_b928e5 {
@@ -13966,15 +13968,15 @@ h6.title_c2a544 {
 }
 
 .cardIcon__45b55.giropay__1285a:before {
-    background-image: url(/assets/0fbe67aa4edabe911fab.svg)
+    background-image: url(/assets/08e57a8c1f8d1437fd5e.svg)
 }
 
 .cardIcon__45b55.paysafecard_b08e03:before {
-    background-image: url(/assets/e36fae403e2877f39228.svg)
+    background-image: url(/assets/ae7c4c90ea31d158badb.svg)
 }
 
 .cardIcon__45b55.gcash__41c54:before {
-    background-image: url(/assets/a802bff4f51ce504720f.svg)
+    background-image: url(/assets/3b7e490dd2250ebb8006.svg)
 }
 
 .cardIcon__45b55.grabpay_b05a9d:before {
@@ -13986,43 +13988,43 @@ h6.title_c2a544 {
 }
 
 .cardIcon__45b55.venmo__10890:before {
-    background-image: url(/assets/714036e4d9e8f1bf93b1.svg)
+    background-image: url(/assets/495a7ac06ea74fe5204c.svg)
 }
 
 .cardIcon__45b55.kakaopay_a56873:before {
-    background-image: url(/assets/f838bbadd221fc7b591c.svg)
+    background-image: url(/assets/35b40f4ecc42903ee0d2.svg)
 }
 
 .cardIcon__45b55.gopay_wallet__6b821:before {
-    background-image: url(/assets/fe21066551fc22a67ea5.svg)
+    background-image: url(/assets/5cb0860eb94b1761b173.svg)
 }
 
 .cardIcon__45b55.bancontact__66504:before {
-    background-image: url(/assets/d516e4abff015e379bbb.svg)
+    background-image: url(/assets/d706cca4d8dd2b4e97a2.svg)
 }
 
 .cardIcon__45b55.eps__745d0:before {
-    background-image: url(/assets/be6488176ef81f69a93a.svg)
+    background-image: url(/assets/b0e8fc23bcdf6bbab6ff.svg)
 }
 
 .cardIcon__45b55.ideal__09b8f:before {
-    background-image: url(/assets/b5bf5aab5b42eae71c25.svg)
+    background-image: url(/assets/271b0eb7c252a1000155.svg)
 }
 
 .cardIcon__45b55.cash_app__513ae:before {
-    background-image: url(/assets/567dd54130225bd3e402.svg)
+    background-image: url(/assets/b3512aaa3a59b002ee05.svg)
 }
 
 .cardIcon__45b55.apple_ea52db:before {
-    background-image: url(/assets/906bcf84877d2e6edf49.svg)
+    background-image: url(/assets/282e86f507afefa6dffc.svg)
 }
 
 .theme-light .cardIcon__45b55.apple_ea52db:before {
-    background-image: url(/assets/e5978041efa55192ebae.svg)
+    background-image: url(/assets/140e9f9b22815dea905c.svg)
 }
 
 .theme-light .cardIcon__45b55.venmo__10890:before {
-    background-image: url(/assets/771cabd16651cdbcd0de.svg)
+    background-image: url(/assets/6375d72940e3aa88adf2.svg)
 }
 
 .reduce-motion .cardIcon__45b55 {
@@ -15750,7 +15752,7 @@ h6.title_c2a544 {
 }
 
 .theme-dark .artworkSpotifySessionEnded_c0cf09 {
-    background-image: url(/assets/41c5e7b8f0e70228dacd.svg)
+    background-image: url(/assets/0c2b9d2d81b106cf9b04.svg)
 }
 
 .theme-dark .header__1c712 {
@@ -15795,7 +15797,7 @@ h6.title_c2a544 {
 }
 
 .theme-light .artworkSpotifySessionEnded_c0cf09 {
-    background-image: url(/assets/07a0f739edc8e0bf1f3f.svg)
+    background-image: url(/assets/a3f166ddb266e8faeb9a.svg)
 }
 
 .theme-light .header__1c712 {
@@ -22311,11 +22313,11 @@ span.clanTag_c8f97c.isOverlay_ff42d2 {
 }
 
 .theme-light .searchIndexBackground__732e0 {
-    background-image: url(/assets/cbc8b5607938ebd21048.svg)
+    background-image: url(/assets/45e801747f725d2cdf91.svg)
 }
 
 .theme-dark .searchIndexBackground__732e0 {
-    background-image: url(/assets/3df47262b12e73af144a.svg)
+    background-image: url(/assets/9f678b0e765fa838e9aa.svg)
 }
 
 @use postcss-pxtorem;
@@ -23943,49 +23945,49 @@ span.button_ae40a4.disabled__1dc58 {
 }
 
 .esrbEveryone_eeb4a3 {
-    background-image: url(/assets/042278c91f43bfa6d16a.svg)
+    background-image: url(/assets/949dba8f999309515696.svg)
 }
 
 .esrbEveryoneTenPlus__1d5fb {
-    background-image: url(/assets/9820b337126a96413d1f.svg)
+    background-image: url(/assets/832aa2f09bee1b37917e.svg)
 }
 
 .esrbTeen__1bfd5 {
-    background-image: url(/assets/904a52f39dcc7215dd2b.svg)
+    background-image: url(/assets/552d6ce37a0a8c018597.svg)
 }
 
 .esrbMature_e2acde {
-    background-image: url(/assets/7c5a96f6fed202fdeda4.svg)
+    background-image: url(/assets/32f05c4d12bda2c13346.svg)
 }
 
 .esrbAdult_fa6e56 {
-    background-image: url(/assets/8cf86f85e5591254b100.svg)
+    background-image: url(/assets/2bc67a3d500f55883f8c.svg)
 }
 
 .esrbRatingPending__8d8e0 {
     width: 40px;
     height: 60px;
-    background-image: url(/assets/78e326dcab2d68ee7ac7.svg)
+    background-image: url(/assets/1c654142ebb65fab49e1.svg)
 }
 
 .pegiThree_db76f7 {
-    background-image: url(/assets/9f14103f6beb3f4907df.svg)
+    background-image: url(/assets/6deb6bfd000f438f071f.svg)
 }
 
 .pegiSeven__2fb71 {
-    background-image: url(/assets/86544b7df34d39a887f1.svg)
+    background-image: url(/assets/6e3a7c21ff16e19c56ce.svg)
 }
 
 .pegiTwelve__8fa3b {
-    background-image: url(/assets/d53fd334731e52d3fd5c.svg)
+    background-image: url(/assets/d8c5ef1c02648cf9eaaf.svg)
 }
 
 .pegiSixteen__61654 {
-    background-image: url(/assets/80ded110ce15b842cad9.svg)
+    background-image: url(/assets/10f899ba061d92d016f7.svg)
 }
 
 .pegiEighteen_f11e49 {
-    background-image: url(/assets/0ae15d8d7b9b4d9d376b.svg)
+    background-image: url(/assets/f1ab6541aa11bccd47f8.svg)
 }
 
 .alignCenter_c8515e {
@@ -25421,7 +25423,7 @@ span.button_ae40a4.disabled__1dc58 {
 }
 
 .theme-light .verification_ab2e30 .image__30914 {
-    background-image: url(/assets/701e42217b681297b31c.svg)
+    background-image: url(/assets/ca7a2d0b3ed78b9a34f6.svg)
 }
 
 .theme-light .verification_ab2e30 .title_ef7dd4 {
@@ -25442,11 +25444,11 @@ span.button_ae40a4.disabled__1dc58 {
 }
 
 .theme-light .verificationBlock__2ee71 .image__30914.email__44f2f {
-    background-image: url(/assets/883058709e7966c8753a.svg)
+    background-image: url(/assets/708e7b5f9bb383c6a6b0.svg)
 }
 
 .theme-light .verificationBlock__2ee71 .image__30914.phone__0b460 {
-    background-image: url(/assets/344b7d8689c3caac71fb.svg)
+    background-image: url(/assets/fd4c188cb0425a862c25.svg)
 }
 
 .theme-light .verificationBlock__2ee71 .body_b1ab5f {
@@ -25475,11 +25477,11 @@ span.button_ae40a4.disabled__1dc58 {
 }
 
 .theme-dark .verificationBlock__2ee71 .image__30914.email__44f2f {
-    background-image: url(/assets/042438a268345134ba35.svg)
+    background-image: url(/assets/dd21373c5119b7695e6b.svg)
 }
 
 .theme-dark .verificationBlock__2ee71 .image__30914.phone__0b460 {
-    background-image: url(/assets/df52c051663281e6de78.svg)
+    background-image: url(/assets/80e7ca7e0070473415b5.svg)
 }
 
 .theme-dark .verificationBlock__2ee71 .body_b1ab5f {
@@ -27328,4 +27330,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.2a0f15de6e00efbc9dbd.css.map*/
+/*# sourceMappingURL=49237.46d6744e5fcabf02e943.css.map*/
