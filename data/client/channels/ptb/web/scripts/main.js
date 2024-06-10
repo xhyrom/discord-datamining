@@ -37179,7 +37179,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300488", ", Version Hash: ").concat("969a0361b35b3bc3cf05c858f108de36ce53c655")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300501", ", Version Hash: ").concat("ac84966e670dd6a5b643e52db0003be56be5f64b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55699,6 +55699,10 @@
                 QUESTS_MOBILE_HOME_LAUNCH_GAME: "Launch {gameName} and play for {durationMinutes} minutes to get {rewardName}",
                 QUESTS_MOBILE_HOME_VIEW_REQUIREMENTS: "View Requirements",
                 QUESTS_MOBILE_HOME_VIEW_REWARD: "View Reward",
+                QUESTS_MOBILE_HOME_AWAITING_LAUNCH: "Waiting for {gameName} to launch on any connected console account...",
+                QUESTS_MOBILE_HOME_GAME_CONNECTED: "{gameName} Connected!",
+                QUESTS_MOBILE_HOME_CONTINUE_PLAYING: "Continue playing for $[minutes](minutesHook) more minutes to claim your reward.",
+                QUESTS_MOBILE_HOME_CLAIM_REWARD: "Claim your $[reward](rewardHook) before {date}.",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -89106,8 +89110,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300488", "300488"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300488")), t = 0), t
+                let t = parseInt((e = "300501", "300501"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300501")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117272,8 +117276,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300488",
-                    versionHash: "969a0361b35b3bc3cf05c858f108de36ce53c655"
+                    buildNumber: "300501",
+                    versionHash: "ac84966e670dd6a5b643e52db0003be56be5f64b"
                 }
             }
             n.r(t), n.d(t, {
@@ -173200,8 +173204,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718047081694",
-                                    build_number: "300488"
+                                    built_at: "1718048196334",
+                                    build_number: "300501"
                                 }
                             },
                             retries: 1
@@ -189863,7 +189867,9 @@
                     let {
                         user_status: t
                     } = e;
-                    L(t.quest_id, {
+                    (0, C.getQuestLogger)({
+                        location: R.QuestsExperimentLocations.QUESTS_STORE
+                    }).log("Received user status update for ".concat(t.quest_id), t), L(t.quest_id, {
                         userStatus: (0, O.questUserStatusFromServer)(t)
                     }, {
                         updateProgress: !0
@@ -250443,7 +250449,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "969a0361b35b3bc3cf05c858f108de36ce53c655"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ac84966e670dd6a5b643e52db0003be56be5f64b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279649,7 +279655,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300488"
+                                build_number: "300501"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286960,7 +286966,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300488", "300488"), 10);
+                let s = parseInt((n = "300501", "300501"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314917,4 +314923,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.bd86931e64d49ddb4641.js.map
+//# sourceMappingURL=27519.fdfaa5e4b784fb88d35c.js.map
