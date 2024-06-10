@@ -22731,14 +22731,6 @@
                 sparklesFlip: "sparklesFlip_f608ea"
             }
         },
-        413127: function(e) {
-            "use strict";
-            e.exports = {
-                dividerDefault: "dividerDefault__07e4b",
-                recentGamesSwitch: "recentGamesSwitch_c37017",
-                requirement: "requirement_f0aa0e"
-            }
-        },
         764277: function(e) {
             "use strict";
             e.exports = {
@@ -26015,7 +26007,6 @@
                 clans: "clans__3c2a1",
                 infoScroller: "infoScroller__0920a",
                 note: "note__7a4f4",
-                recentGames: "recentGames__2995b",
                 userInfoSection: "userInfoSection_e816c1",
                 userInfoSectionHeader: "userInfoSectionHeader_c9f1d3",
                 userInfoText: "userInfoText_b87307"
@@ -26112,23 +26103,6 @@
                 username: "username_ea7827"
             }
         },
-        704536: function(e) {
-            "use strict";
-            e.exports = {
-                header: "header__9af10",
-                headerContainer: "headerContainer_ec3f63",
-                newIcon: "newIcon__6568d",
-                recentGameContainer: "recentGameContainer__8231a",
-                recentGameDetails: "recentGameDetails_fa472d",
-                recentGameIcon: "recentGameIcon__65d60",
-                recentGameTitle: "recentGameTitle__9adac",
-                recentGameTitleContainer: "recentGameTitleContainer_bd3ae5",
-                recentGames: "recentGames_e4425b",
-                recentGamesGrid: "recentGamesGrid_d370b2",
-                sharedGameIcon: "sharedGameIcon__45b1e",
-                viewAll: "viewAll__77948"
-            }
-        },
         61007: function(e) {
             "use strict";
             e.exports = {
@@ -26155,7 +26129,6 @@
             e.exports = {
                 connections: "connections__84e31",
                 note: "note_a92d50",
-                recentGames: "recentGames_c8fe3b",
                 scroller: "scroller__2f4b4",
                 section: "section_d2e3ea"
             }

@@ -37155,7 +37155,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300326", ", Version Hash: ").concat("b3efd2f59397fddb1b9e7395160230becba9d442")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300344", ", Version Hash: ").concat("62f7bdffffd2ea7f574b7cadff1b3e19297fb8c6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43625,7 +43625,6 @@
                 PRIVACY_SETTINGS_MESSAGE_REQUESTS_DESC_HUB: "If direct messages are enabled, filter messages from hub members you may not know.[Learn more about this setting here.]({helpdeskArticle})",
                 PRIVACY_SETTINGS_MESSAGE_REQUESTS_DESC: "If direct messages are enabled, filter messages from server members you may not know. [Learn more about this setting here.]({helpdeskArticle})",
                 PRIVACY_SETTINGS_ACTIVITY_STATUS: "Activity Status",
-                PRIVACY_SETTINGS_ACTIVITY_STATUS_V2: "Activity Display",
                 PRIVACY_SETTINGS_ACTIVITY_STATUS_DESC: "Share your activity status in this server. [Learn more about this setting here.]({helpdeskArticle})",
                 PRIVACY_SETTINGS_ACTIVITY_STATUS_DESC_V2: "Control whether your activity displays as a status and in your profile for server members. This does not control all activity displays such as those on the platform level or your activity history. [Learn how to customize your global settings here.]({helpdeskArticle})",
                 PRIVACY_SETTINGS_ACTIVITY_JOINING: "Activity Joining",
@@ -55932,29 +55931,8 @@
                 CONTENT_INVENTORY_COACHTIP_TEXT: "Friends will receive the emoji as a DM",
                 CONTENT_INVENTORY_COACHTIP_IMAGE_ALT: "Wumpus chatting with a friend while gaming",
                 CONTENT_INVENTORY_GAME_STATE_SIZE: "{count} of {max}",
-                RECENT_GAMES: "Recent Games",
-                USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO: "{count} {count, plural, =1 {week} other {weeks}} ago",
-                USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO: "{count} {count, plural, =1 {day} other {days}} ago",
-                USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO: "{count} {count, plural, =1 {hour} other {hours}} ago",
-                USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO: "{count} {count, plural, =1 {minute} other {minutes}} ago",
-                USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO: "{count} {count, plural, =1 {second} other {seconds}} ago",
-                USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO_SHORT: "{count}w ago",
-                USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO_SHORT: "{count}d ago",
-                USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO_SHORT: "{count}h ago",
-                USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO_SHORT: "{count}m ago",
-                USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO_SHORT: "{count}s ago",
-                USER_RECENT_GAMES: "Recently Played",
-                USER_RECENT_GAMES_ON_PROFILE: "Show recent games on profile",
-                USER_RECENT_GAMES_YOU_BOTH_PLAY: "You both play this game",
-                NEW_TO_THIS_GAME: "New to this game",
-                LAST_PLAYED_GAMES: "Last played games",
-                RECENT_GAMES_SETTING_NOTE: "Display up to six recently played games on your profile. Learn more about recent games sharing [here.]({helpdeskArticle})",
-                RECENT_GAMES_SETTING_REQUIREMENT: "You must have [Activity Sharing](onSettingClick) enabled.",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
-                USER_RECENT_GAMES_PLAYED_LAST_WEEK_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
-                USER_RECENT_GAMES_PLAYED_LAST_WEEK_MINUTES: "{count} {count, plural, =1 {min} other {mins}} this week",
-                USER_RECENT_GAMES_PLAYED_LAST_WEEK_SECONDS: "{count} {count, plural, =1 {sec} other {secs}} this week",
                 LIGHTNING_CHECKOUT_NON_REFUNDABLE_DISCLAIMER: "Non-refundable. By clicking pay, you agree to our [Paid Services Terms]({paidURL})",
                 LIGHTNING_CHECKOUT_GENERIC_ERROR_TITLE: "There was a problem with your payment",
                 LIGHTNING_CHECKOUT_GENERIC_ERROR_DESCRIPTION: "Recheck your payment information, then try again.",
@@ -82088,14 +82066,6 @@
                             null != e.application && T(u.default.createFromServer(e.application))
                         })
                     })(e))
-                },
-                USER_RECENT_GAMES_FETCH_SUCCESS: function(e) {
-                    let {
-                        recentGames: t
-                    } = e;
-                    t.forEach(e => {
-                        T(u.default.createFromServer(e.application))
-                    })
                 }
             })
         },
@@ -89290,8 +89260,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300326", "300326"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300326")), t = 0), t
+                let t = parseInt((e = "300344", "300344"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300344")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117469,8 +117439,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300326",
-                    versionHash: "b3efd2f59397fddb1b9e7395160230becba9d442"
+                    buildNumber: "300344",
+                    versionHash: "62f7bdffffd2ea7f574b7cadff1b3e19297fb8c6"
                 }
             }
             n.r(t), n.d(t, {
@@ -175215,8 +175185,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718003241753",
-                                    build_number: "300326"
+                                    built_at: "1718022931010",
+                                    build_number: "300344"
                                 }
                             },
                             retries: 1
@@ -212852,13 +212822,10 @@
                     return p
                 },
                 trackUserProfileBadgeHovered: function() {
-                    return R
+                    return C
                 },
                 trackUserProfileBadgePressed: function() {
                     return O
-                },
-                trackUserProfileRecentGamesViewed: function() {
-                    return C
                 }
             }), n("653041");
             var i = n("367907"),
@@ -213028,32 +212995,6 @@
                     })
                 },
                 C = e => {
-                    let {
-                        userId: t,
-                        guildId: n,
-                        channelId: r,
-                        analyticsLocations: s,
-                        layout: a,
-                        applicationIds: o,
-                        newApplicationIds: l,
-                        sharedApplicationIds: d
-                    } = e;
-                    u.default.track(I.AnalyticEvents.USER_PROFILE_RECENT_GAMES_VIEWED, {
-                        ...(0, i.collectGuildAnalyticsMetadata)(n),
-                        ...(0, i.collectChannelAnalyticsMetadataFromId)(r),
-                        ...A({
-                            layout: a,
-                            userId: t,
-                            guildId: n
-                        }),
-                        ...m(t),
-                        location_stack: s,
-                        profile_application_ids: o,
-                        profile_new_applications_ids: l,
-                        profile_shared_applications_ids: d
-                    })
-                },
-                R = e => {
                     let {
                         userId: t,
                         guildId: n,
@@ -216809,240 +216750,6 @@
                 })
             })
         },
-        347949: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                UserProfileRecentGames: function() {
-                    return L
-                },
-                UserProfileRecentGamesContainer: function() {
-                    return v
-                },
-                UserProfileRecentGamesSection: function() {
-                    return D
-                },
-                UserProfileRecentGamesThemedSection: function() {
-                    return M
-                }
-            }), n("47120"), n("653041");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("442837"),
-                l = n("692547"),
-                u = n("622535"),
-                d = n("298433"),
-                _ = n("434559"),
-                c = n("481060"),
-                E = n("812206"),
-                I = n("566454"),
-                T = n("32966"),
-                f = n("314897"),
-                S = n("768581"),
-                h = n("785717"),
-                A = n("221292"),
-                m = n("502762"),
-                N = n("659101"),
-                p = n("171368"),
-                O = n("981631"),
-                C = n("689938"),
-                R = n("704536");
-
-            function g(e) {
-                let {
-                    game: t,
-                    isSharedGame: n
-                } = e, s = (0, o.useStateFromStores)([E.default], () => E.default.getApplication(t.applicationId)), a = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, I.getLastPlayedTimestamp)(t, !1) : "".concat((0, I.getLastPlayedTimestamp)(t, !0), " — ").concat((0, I.getTimePlayedLastWeek)(t)), [t]), u = r.useRef(null), [T, f] = r.useState(!1);
-                if (r.useEffect(() => {
-                        let e = u.current;
-                        null != e && null != e.offsetWidth && null != e.scrollWidth && f(e.offsetWidth < e.scrollWidth)
-                    }, []), null == s) return null;
-                let h = S.default.getApplicationIconURL({
-                    id: s.id,
-                    icon: s.icon,
-                    size: 40
-                });
-                return (0, i.jsxs)("div", {
-                    className: R.recentGameContainer,
-                    children: [(0, i.jsx)("div", {
-                        className: R.recentGameIcon,
-                        children: null != h && (0, i.jsx)("img", {
-                            alt: "",
-                            "aria-hidden": !0,
-                            src: h,
-                            width: 40,
-                            height: 40
-                        })
-                    }), (0, i.jsxs)("div", {
-                        className: R.recentGameDetails,
-                        children: [(0, i.jsxs)("div", {
-                            className: R.recentGameTitleContainer,
-                            children: [(0, i.jsx)(c.Tooltip, {
-                                text: s.name,
-                                color: c.Tooltip.Colors.NESTED,
-                                shouldShow: T,
-                                children: e => (0, i.jsx)("span", {
-                                    ref: u,
-                                    ...e,
-                                    className: R.recentGameTitle,
-                                    children: s.name
-                                })
-                            }), n && (0, i.jsx)(c.Tooltip, {
-                                text: C.default.Messages.USER_RECENT_GAMES_YOU_BOTH_PLAY,
-                                color: c.Tooltip.Colors.NESTED,
-                                children: e => (0, i.jsx)("div", {
-                                    className: R.sharedGameIcon,
-                                    ...e,
-                                    children: (0, i.jsx)(d.GroupIcon, {
-                                        height: 14,
-                                        width: 14,
-                                        color: l.default.colors.INTERACTIVE_MUTED
-                                    })
-                                })
-                            })]
-                        }), (0, i.jsx)(c.Text, {
-                            variant: "text-sm/normal",
-                            color: "header-secondary",
-                            children: a
-                        }), t.isNew && (0, i.jsxs)("div", {
-                            className: R.newIcon,
-                            children: [(0, i.jsx)(_.NewUserLargeIcon, {
-                                height: 12,
-                                width: 12,
-                                color: l.default.colors.STATUS_POSITIVE
-                            }), (0, i.jsx)(c.Text, {
-                                variant: "text-xs/normal",
-                                color: "status-positive",
-                                children: C.default.Messages.NEW_TO_THIS_GAME
-                            })]
-                        })]
-                    })]
-                })
-            }
-            let L = r.memo(function(e) {
-                let {
-                    userId: t,
-                    recentGames: n,
-                    currentUserApplicationIds: s,
-                    containerClassName: o
-                } = e, {
-                    trackUserProfileAction: l,
-                    ...d
-                } = (0, h.useUserProfileAnalyticsContext)(), [_, c] = r.useState(!1), [E, I] = r.useState(!1);
-                return r.useEffect(() => {
-                    if (null == s || _ || !E) return;
-                    c(!0);
-                    let e = [],
-                        t = [],
-                        i = [];
-                    n.forEach(n => {
-                        let {
-                            applicationId: r,
-                            isNew: a
-                        } = n;
-                        e.push(r), a && t.push(r), s.has(r) && i.push(r)
-                    }), (0, A.trackUserProfileRecentGamesViewed)({
-                        ...d,
-                        applicationIds: e,
-                        newApplicationIds: t,
-                        sharedApplicationIds: i
-                    })
-                }, [s, n, c, _, d, E]), (0, i.jsx)(u.VisibilitySensor, {
-                    onChange: I,
-                    threshold: .25,
-                    active: !_,
-                    children: (0, i.jsx)("div", {
-                        className: a()(R.recentGames, o),
-                        children: null == n ? void 0 : n.map(e => {
-                            var n, r, a;
-                            return (0, i.jsx)(g, {
-                                game: e,
-                                isSharedGame: (n = t, r = s, a = e.applicationId, n !== f.default.getId() && null != r && r.has(a))
-                            }, e.lastSessionId)
-                        })
-                    })
-                })
-            });
-
-            function v(e) {
-                let {
-                    userId: t,
-                    maxItems: n = 3,
-                    wrapChildren: s,
-                    containerClassName: a
-                } = e, {
-                    recentGames: o,
-                    currentUserApplicationIds: l,
-                    isFetching: u
-                } = (0, T.useUserRecentGames)(t), d = r.useMemo(() => null == o ? void 0 : o.slice(0, n), [o, n]), _ = r.useMemo(() => null != o && o.length > n, [o, n]), E = r.useCallback(() => {
-                    (0, p.openUserProfileModal)({
-                        userId: t,
-                        guildId: O.ME,
-                        analyticsLocation: {
-                            section: O.AnalyticsSections.USER_PROFILE
-                        }
-                    })
-                }, [t]);
-                if (u || null == d || 0 === d.length) return null;
-                let I = (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsxs)("div", {
-                        className: R.headerContainer,
-                        children: [(0, i.jsx)(c.Heading, {
-                            className: R.header,
-                            variant: "eyebrow",
-                            children: C.default.Messages.RECENT_GAMES
-                        }), _ && (0, i.jsx)(c.Clickable, {
-                            className: R.viewAll,
-                            onClick: E,
-                            children: (0, i.jsx)(c.Heading, {
-                                variant: "eyebrow",
-                                color: "text-link",
-                                children: C.default.Messages.VIEW_ALL.toUpperCase()
-                            })
-                        })]
-                    }), (0, i.jsx)(L, {
-                        containerClassName: a,
-                        userId: t,
-                        recentGames: d,
-                        currentUserApplicationIds: l
-                    })]
-                });
-                return null != s ? (0, i.jsx)(i.Fragment, {
-                    children: s(I)
-                }) : I
-            }
-
-            function D(e) {
-                let {
-                    userId: t,
-                    containerClassName: n
-                } = e, s = r.useCallback(e => (0, i.jsx)(N.default, {
-                    children: e
-                }), []);
-                return (0, i.jsx)(v, {
-                    userId: t,
-                    containerClassName: n,
-                    wrapChildren: s
-                })
-            }
-
-            function M(e) {
-                let {
-                    userId: t,
-                    containerClassName: n
-                } = e, s = r.useCallback(e => (0, i.jsx)(m.default.Overlay, {
-                    children: (0, i.jsx)(N.default, {
-                        children: e
-                    })
-                }), []);
-                return (0, i.jsx)(v, {
-                    userId: t,
-                    containerClassName: n,
-                    wrapChildren: s
-                })
-            }
-        },
         841040: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -217330,7 +217037,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return B
+                    return w
                 }
             }), n("47120");
             var i = n("735250"),
@@ -217340,180 +217047,172 @@
                 o = n("442837"),
                 l = n("481060"),
                 u = n("100527"),
-                d = n("761174"),
-                _ = n("314897"),
-                c = n("592125"),
-                E = n("246946"),
-                I = n("5192"),
-                T = n("51144"),
-                f = n("342656"),
-                S = n("621853"),
-                h = n("652853"),
-                A = n("421486"),
-                m = n("347949"),
-                N = n("138394"),
-                p = n("790711"),
-                O = n("248345"),
-                C = n("337125"),
-                R = n("19836"),
-                g = n("207570"),
-                L = n("77097"),
-                v = n("538564"),
-                D = n("489642"),
-                M = n("319300"),
-                y = n("591600"),
-                P = n("579729"),
-                U = n("302316"),
-                b = n("186395"),
-                G = n("584045"),
-                w = n("981631"),
-                k = n("383630");
+                d = n("314897"),
+                _ = n("592125"),
+                c = n("246946"),
+                E = n("5192"),
+                I = n("51144"),
+                T = n("342656"),
+                f = n("621853"),
+                S = n("652853"),
+                h = n("421486"),
+                A = n("138394"),
+                m = n("790711"),
+                N = n("248345"),
+                p = n("337125"),
+                O = n("19836"),
+                C = n("207570"),
+                R = n("77097"),
+                g = n("538564"),
+                L = n("489642"),
+                v = n("319300"),
+                D = n("591600"),
+                M = n("579729"),
+                y = n("302316"),
+                P = n("186395"),
+                U = n("584045"),
+                b = n("981631"),
+                G = n("383630");
 
-            function B(e) {
+            function w(e) {
                 var t, n, s;
                 let {
-                    activity: B,
-                    customStatusActivity: V,
-                    user: x,
-                    displayProfile: F,
-                    guild: H,
-                    guildMember: Y,
-                    channelId: j,
-                    onClose: W,
-                    setNote: K = !1,
-                    canDM: z,
-                    hideNote: Z = !1,
-                    showCopiableUsername: X = !1,
-                    analyticsParams: Q
-                } = e, q = (0, o.useStateFromStores)([E.default], () => E.default.hidePersonalInformation), J = (0, o.useStateFromStores)([S.default], () => {
+                    activity: w,
+                    customStatusActivity: k,
+                    user: B,
+                    displayProfile: V,
+                    guild: x,
+                    guildMember: F,
+                    channelId: H,
+                    onClose: Y,
+                    setNote: j = !1,
+                    canDM: W,
+                    hideNote: K = !1,
+                    showCopiableUsername: z = !1,
+                    analyticsParams: Z
+                } = e, X = (0, o.useStateFromStores)([c.default], () => c.default.hidePersonalInformation), Q = (0, o.useStateFromStores)([f.default], () => {
                     var e;
-                    return null === (e = S.default.getUserProfile(x.id)) || void 0 === e ? void 0 : e.application
-                }), $ = (0, o.useStateFromStores)([c.default], () => c.default.getChannel(j)), {
-                    theme: ee
-                } = (0, h.useUserProfileThemeContext)(), et = r.useRef(null), [en, ei] = r.useState(!0), er = r.useCallback(() => {
+                    return null === (e = f.default.getUserProfile(B.id)) || void 0 === e ? void 0 : e.application
+                }), q = (0, o.useStateFromStores)([_.default], () => _.default.getChannel(H)), {
+                    theme: J
+                } = (0, S.useUserProfileThemeContext)(), $ = r.useRef(null), [ee, et] = r.useState(!0), en = r.useCallback(() => {
                     let {
                         current: e
-                    } = et;
-                    null != e && ei(0 === e.getScrollerState().scrollTop)
+                    } = $;
+                    null != e && et(0 === e.getScrollerState().scrollTop)
                 }, []);
                 r.useLayoutEffect(() => {
                     var e;
                     let {
                         current: t
-                    } = et;
+                    } = $;
                     null != t && (null === (e = t.getScrollerNode()) || void 0 === e || e.scrollTo({
                         top: 0
                     }))
                 }, []);
-                let es = (0, o.useStateFromStores)([_.default], () => _.default.getId()),
-                    ea = x.id === es,
-                    eo = x.bot || ea,
+                let ei = (0, o.useStateFromStores)([d.default], () => d.default.getId()),
+                    er = B.id === ei,
+                    es = B.bot || er,
                     {
-                        enabled: el
-                    } = (0, f.useProfileMutualsExperiment)({
+                        enabled: ea
+                    } = (0, T.useProfileMutualsExperiment)({
                         autoTrackExposure: !0,
                         location: u.default.PROFILE_POPOUT,
-                        disable: eo
-                    }),
-                    eu = (0, d.useIsUserRecentGamesEnabled)({
-                        userId: x.id,
-                        location: "28tk0bf_1"
+                        disable: es
                     });
-                if (x.isSystemUser()) return null;
-                if (x.isNonUserBot()) return (0, i.jsx)(G.default, {
-                    user: x,
+                if (B.isSystemUser()) return null;
+                if (B.isNonUserBot()) return (0, i.jsx)(U.default, {
+                    user: B,
                     nickname: null,
                     pronouns: null,
-                    className: k.usernameSection,
+                    className: G.usernameSection,
                     lastSection: !0
                 });
-                let ed = null !== (t = I.default.getNickname(null == H ? void 0 : H.id, j, x)) && void 0 !== t ? t : T.default.getName(x),
-                    e_ = {
+                let eo = null !== (t = E.default.getNickname(null == x ? void 0 : x.id, H, B)) && void 0 !== t ? t : I.default.getName(B),
+                    el = {
                         location: {
-                            page: w.AnalyticsPages.USER_POPOUT,
-                            section: w.AnalyticsSections.USER_PROFILE
+                            page: b.AnalyticsPages.USER_POPOUT,
+                            section: b.AnalyticsSections.USER_PROFILE
                         }
                     };
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(G.default, {
-                        className: k.usernameSection,
-                        user: x,
-                        nickname: ed,
-                        pronouns: null == F ? void 0 : F.pronouns,
-                        usernameIcon: x.hasAvatarForGuild(null == H ? void 0 : H.id) && (0, i.jsx)(p.default, {
-                            user: x,
-                            nickname: ed
+                    children: [(0, i.jsx)(U.default, {
+                        className: G.usernameSection,
+                        user: B,
+                        nickname: eo,
+                        pronouns: null == V ? void 0 : V.pronouns,
+                        usernameIcon: B.hasAvatarForGuild(null == x ? void 0 : x.id) && (0, i.jsx)(m.default, {
+                            user: B,
+                            nickname: eo
                         }),
-                        shouldCopyOnClick: X
+                        shouldCopyOnClick: z
                     }), (0, i.jsxs)(l.HeadingLevel, {
-                        children: [(0, i.jsx)(v.default, {
-                            className: k.customStatusSection,
-                            customStatusActivity: V
-                        }), (0, i.jsx)(N.default, {
-                            className: k.divider
+                        children: [(0, i.jsx)(g.default, {
+                            className: G.customStatusSection,
+                            customStatusActivity: k
+                        }), (0, i.jsx)(A.default, {
+                            className: G.divider
                         }), (0, i.jsxs)(l.AdvancedScroller, {
-                            className: a()(k.scroller, {
-                                [k.scrollerSeparator]: !en
+                            className: a()(G.scroller, {
+                                [G.scrollerSeparator]: !ee
                             }),
-                            onScroll: er,
-                            ref: et,
-                            children: [(0, i.jsx)(g.default, {
-                                user: x,
-                                guildId: null == H ? void 0 : H.id
-                            }), (0, i.jsx)(R.default, {
-                                isUsingGuildBio: null !== (n = null == F ? void 0 : F.isUsingGuildMemberBio()) && void 0 !== n && n,
-                                bio: null == F ? void 0 : F.bio,
-                                guild: H,
-                                hidePersonalInformation: q
-                            }), el && (0, i.jsx)(A.default, {
-                                className: k.profileMutuals,
-                                user: x,
-                                onClose: W
-                            }), (0, i.jsx)(M.default, {
-                                userId: x.id,
-                                guildId: null == H ? void 0 : H.id
+                            onScroll: en,
+                            ref: $,
+                            children: [(0, i.jsx)(C.default, {
+                                user: B,
+                                guildId: null == x ? void 0 : x.id
                             }), (0, i.jsx)(O.default, {
-                                activity: B,
-                                user: x,
-                                guild: H,
-                                channelId: j,
-                                onClose: W,
-                                analyticsParams: (null == Q ? void 0 : Q.location) != null ? Q : e_
-                            }), eu && (0, i.jsx)(m.UserProfileRecentGamesSection, {
-                                userId: x.id
-                            }), (null == J ? void 0 : J.popularApplicationCommandIds) != null && null != $ ? (0, i.jsx)(P.default, {
-                                applicationId: J.id,
-                                commandIds: J.popularApplicationCommandIds,
-                                channel: $,
-                                guildId: null == H ? void 0 : H.id,
-                                onClick: W
-                            }) : null, (0, i.jsx)(C.default, {
-                                user: x,
-                                guildId: null == H ? void 0 : H.id
-                            }), (0, i.jsx)(b.default, {
-                                user: x,
-                                guild: H,
-                                guildMember: Y,
-                                showBorder: null !== (s = null == F ? void 0 : F.canEditThemes) && void 0 !== s && s
-                            }), (0, i.jsx)(L.default, {
-                                userId: x.id,
-                                channelId: j,
-                                guild: H,
-                                onClose: W,
-                                theme: ee
-                            }), null != J && void 0 !== j && (0, i.jsx)(U.default, {
-                                channelId: j,
-                                applicationId: J.id
-                            }), !q && !Z && (0, i.jsx)(y.default, {
-                                user: x,
-                                setNote: K,
-                                autoFocus: !z,
-                                lastSection: !z
-                            }), !x.isNonUserBot() && z && (0, i.jsx)(D.default, {
-                                user: x,
-                                setNote: K,
-                                canDM: z,
-                                onClose: W
+                                isUsingGuildBio: null !== (n = null == V ? void 0 : V.isUsingGuildMemberBio()) && void 0 !== n && n,
+                                bio: null == V ? void 0 : V.bio,
+                                guild: x,
+                                hidePersonalInformation: X
+                            }), ea && (0, i.jsx)(h.default, {
+                                className: G.profileMutuals,
+                                user: B,
+                                onClose: Y
+                            }), (0, i.jsx)(v.default, {
+                                userId: B.id,
+                                guildId: null == x ? void 0 : x.id
+                            }), (0, i.jsx)(N.default, {
+                                activity: w,
+                                user: B,
+                                guild: x,
+                                channelId: H,
+                                onClose: Y,
+                                analyticsParams: (null == Z ? void 0 : Z.location) != null ? Z : el
+                            }), (null == Q ? void 0 : Q.popularApplicationCommandIds) != null && null != q ? (0, i.jsx)(M.default, {
+                                applicationId: Q.id,
+                                commandIds: Q.popularApplicationCommandIds,
+                                channel: q,
+                                guildId: null == x ? void 0 : x.id,
+                                onClick: Y
+                            }) : null, (0, i.jsx)(p.default, {
+                                user: B,
+                                guildId: null == x ? void 0 : x.id
+                            }), (0, i.jsx)(P.default, {
+                                user: B,
+                                guild: x,
+                                guildMember: F,
+                                showBorder: null !== (s = null == V ? void 0 : V.canEditThemes) && void 0 !== s && s
+                            }), (0, i.jsx)(R.default, {
+                                userId: B.id,
+                                channelId: H,
+                                guild: x,
+                                onClose: Y,
+                                theme: J
+                            }), null != Q && void 0 !== H && (0, i.jsx)(y.default, {
+                                channelId: H,
+                                applicationId: Q.id
+                            }), !X && !K && (0, i.jsx)(D.default, {
+                                user: B,
+                                setNote: j,
+                                autoFocus: !W,
+                                lastSection: !W
+                            }), !B.isNonUserBot() && W && (0, i.jsx)(L.default, {
+                                user: B,
+                                setNote: j,
+                                canDM: W,
+                                onClose: Y
                             })]
                         })]
                     })]
@@ -220195,440 +219894,6 @@
                 }
             }
         },
-        454175: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("544891"),
-                r = n("570140"),
-                s = n("314897"),
-                a = n("70956"),
-                o = n("385845"),
-                l = n("981631");
-            let u = 5 * a.default.Millis.MINUTE;
-            async function d(e, t) {
-                r.default.dispatch({
-                    type: "USER_RECENT_GAMES_FETCH_START",
-                    userId: e
-                });
-                try {
-                    let n = await i.HTTP.get({
-                        url: l.Endpoints.USER_RECENT_GAMES(e),
-                        signal: t
-                    });
-                    r.default.dispatch({
-                        type: "USER_RECENT_GAMES_FETCH_SUCCESS",
-                        userId: e,
-                        recentGames: n.body.recent_games
-                    })
-                } catch (t) {
-                    r.default.dispatch({
-                        type: "USER_RECENT_GAMES_FETCH_ERROR",
-                        userId: e
-                    })
-                }
-            }
-            async function _(e, t, n) {
-                let i = o.default.getLastFetchTimestamp(e);
-                if (!(null != i && Date.now() - i < u)) {
-                    if (n) {
-                        let n = s.default.getId(),
-                            i = o.default.getLastFetchTimestamp(n);
-                        n !== e && null == i && await d(n, t)
-                    }
-                    await d(e, t)
-                }
-            }
-            t.default = {
-                fetchUserRecentGames: _,
-                updateUserRecentGamesLocal: function(e, t) {
-                    r.default.dispatch({
-                        type: "USER_RECENT_GAMES_UPDATE_LOCAL",
-                        applicationId: e,
-                        duration: t
-                    })
-                }
-            }
-        },
-        602992: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useUserIsRecentGamesExperimentApiEnabled: function() {
-                    return r
-                }
-            });
-            let i = (0, n("818083").createExperiment)({
-                    id: "2024-03_user_recent_games_api",
-                    kind: "user",
-                    label: "Recent Games API",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "Control",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "Enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                r = e => {
-                    let {
-                        location: t
-                    } = e;
-                    return i.useExperiment({
-                        location: t
-                    }).enabled
-                }
-        },
-        619914: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                isUserRecentGamesExperimentEnabled: function() {
-                    return r
-                },
-                useUserIsRecentGamesExperimentEnabled: function() {
-                    return s
-                }
-            });
-            let i = (0, n("818083").createExperiment)({
-                id: "2024-03_user_recent_games",
-                kind: "user",
-                label: "Recent Games",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 0,
-                    label: "Control",
-                    config: {
-                        enabled: !1
-                    }
-                }, {
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }, {
-                    id: 4,
-                    label: "Enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-
-            function r(e) {
-                let {
-                    location: t,
-                    autoTrackExposure: n = !1
-                } = e;
-                return i.getCurrentConfig({
-                    location: t
-                }, {
-                    autoTrackExposure: n
-                }).enabled
-            }
-
-            function s(e) {
-                let {
-                    location: t,
-                    autoTrackExposure: n = !1
-                } = e;
-                return i.useExperiment({
-                    location: t
-                }, {
-                    autoTrackExposure: n
-                }).enabled
-            }
-        },
-        385845: function(e, t, n) {
-            "use strict";
-            n.r(t), n("47120"), n("653041");
-            var i, r, s, a, o = n("512722"),
-                l = n.n(o),
-                u = n("127437"),
-                d = n("442837"),
-                _ = n("570140"),
-                c = n("314897"),
-                E = n("77498"),
-                I = n("709054");
-            let T = new Map,
-                f = new Set,
-                S = new Set;
-            class h extends(i = d.default.Store) {
-                getRecentGames(e) {
-                    var t;
-                    return null === (t = T.get(e)) || void 0 === t ? void 0 : t.recentGames
-                }
-                getLastFetchTimestamp(e) {
-                    var t;
-                    return null === (t = T.get(e)) || void 0 === t ? void 0 : t.lastFetchTimestampMs
-                }
-                isFetching(e) {
-                    return f.has(e)
-                }
-                isError(e) {
-                    return S.has(e)
-                }
-            }
-            a = "UserRecentGamesStore", (s = "displayName") in(r = h) ? Object.defineProperty(r, s, {
-                value: a,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : r[s] = a, t.default = new h(_.default, {
-                CONNECTION_OPEN: function() {
-                    T = new Map, f = new Set, S = new Set
-                },
-                USER_RECENT_GAMES_FETCH_START: function(e) {
-                    let {
-                        userId: t
-                    } = e;
-                    S.delete(t), f.add(t)
-                },
-                USER_RECENT_GAMES_FETCH_SUCCESS: function(e) {
-                    let {
-                        userId: t,
-                        recentGames: n
-                    } = e;
-                    f.delete(t), T.set(t, {
-                        recentGames: n.map(e => ({
-                            applicationId: e.application.id,
-                            duration: e.duration,
-                            lastSessionId: e.last_session_id,
-                            isNew: e.is_new
-                        })).sort((e, t) => I.default.compare(t.lastSessionId, e.lastSessionId)),
-                        lastFetchTimestampMs: Date.now()
-                    })
-                },
-                USER_RECENT_GAMES_FETCH_ERROR: function(e) {
-                    let {
-                        userId: t
-                    } = e;
-                    f.delete(t), S.add(t)
-                },
-                USER_RECENT_GAMES_UPDATE_LOCAL: function(e) {
-                    let {
-                        applicationId: t,
-                        duration: n
-                    } = e;
-                    if (null == E.default.getDetectableGame(t) || n < u.UserGameApplicationSessionDuration.MIN_DURATION_SECS) return !1;
-                    ! function(e, t) {
-                        var n, i;
-                        let r = T.get(e);
-                        if (null == r) return;
-                        let s = [],
-                            a = null;
-                        if (r.recentGames.forEach(e => {
-                                e.applicationId === t.applicationId ? a = e : s.push(e)
-                            }), null == a) return;
-                        let o = (n = a, i = t, l()(n.applicationId === i.applicationId, "[UserRecentGamesStore] Games must have same application for merge."), {
-                            applicationId: n.applicationId,
-                            duration: n.duration + i.duration,
-                            lastSessionId: I.default.compare(n.lastSessionId, i.lastSessionId) > 0 ? n.lastSessionId : i.lastSessionId,
-                            isNew: n.isNew || i.isNew
-                        });
-                        T.set(e, {
-                            lastFetchTimestampMs: Date.now(),
-                            recentGames: [o, ...s]
-                        })
-                    }(c.default.getId(), {
-                        applicationId: t,
-                        duration: n,
-                        lastSessionId: I.default.fromTimestamp(Date.now()),
-                        isNew: !1
-                    })
-                }
-            })
-        },
-        566454: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getLastPlayedTimestamp: function() {
-                    return l
-                },
-                getTimePlayedLastWeek: function() {
-                    return u
-                }
-            });
-            var i = n("913527"),
-                r = n.n(i),
-                s = n("70956"),
-                a = n("709054"),
-                o = n("689938");
-
-            function l(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = r()(a.default.extractTimestamp(e.lastSessionId)),
-                    i = r()().diff(n, "s");
-                if (i > 7 * s.default.Seconds.DAY) {
-                    let e = Math.round(i / (7 * s.default.Seconds.DAY));
-                    return t ? o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO_SHORT.format({
-                        count: e
-                    }) : o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO.format({
-                        count: e
-                    })
-                }
-                if (i > s.default.Seconds.DAY) {
-                    let e = Math.round(i / s.default.Seconds.DAY);
-                    return t ? o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO_SHORT.format({
-                        count: e
-                    }) : o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO.format({
-                        count: e
-                    })
-                }
-                if (i > s.default.Seconds.HOUR) {
-                    let e = Math.round(i / s.default.Seconds.HOUR);
-                    return t ? o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO_SHORT.format({
-                        count: e
-                    }) : o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO.format({
-                        count: e
-                    })
-                } else {
-                    if (!(i > s.default.Seconds.MINUTE)) return t ? o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO_SHORT.format({
-                        count: i
-                    }) : o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO.format({
-                        count: i
-                    });
-                    let e = Math.round(i / s.default.Seconds.MINUTE);
-                    return t ? o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO_SHORT.format({
-                        count: e
-                    }) : o.default.Messages.USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO.format({
-                        count: e
-                    })
-                }
-            }
-
-            function u(e) {
-                let t = e.duration;
-                if (t > s.default.Seconds.HOUR) {
-                    let e = parseFloat((t / s.default.Seconds.HOUR).toFixed(1));
-                    return o.default.Messages.USER_RECENT_GAMES_PLAYED_LAST_WEEK_HOURS.format({
-                        count: e
-                    })
-                }
-                if (!(t > s.default.Seconds.MINUTE)) return o.default.Messages.USER_RECENT_GAMES_PLAYED_LAST_WEEK_SECONDS.format({
-                    count: t
-                });
-                {
-                    let e = Math.round(t / s.default.Seconds.MINUTE);
-                    return o.default.Messages.USER_RECENT_GAMES_PLAYED_LAST_WEEK_MINUTES.format({
-                        count: e
-                    })
-                }
-            }
-        },
-        761174: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useIsCurrentUserRecentGamesEnabled: function() {
-                    return u
-                },
-                useIsUserRecentGamesEnabled: function() {
-                    return d
-                }
-            });
-            var i = n("442837"),
-                r = n("695346"),
-                s = n("314897"),
-                a = n("594174"),
-                o = n("602992"),
-                l = n("619914");
-
-            function u(e) {
-                let {
-                    location: t
-                } = e, n = (0, l.useUserIsRecentGamesExperimentEnabled)({
-                    location: t,
-                    autoTrackExposure: !0
-                }), i = r.RecentGamesEnabled.useSetting(), s = r.ShowCurrentGame.useSetting();
-                return n && s && i
-            }
-
-            function d(e) {
-                let {
-                    userId: t,
-                    location: n
-                } = e, r = (0, i.useStateFromStores)([a.default], () => {
-                    let e = a.default.getUser(t);
-                    return null != e && !e.bot
-                }), l = s.default.getId() === t, d = u({
-                    location: n
-                });
-                return (0, o.useUserIsRecentGamesExperimentApiEnabled)({
-                    location: n
-                }) && (l ? d && r : r)
-            }
-        },
-        32966: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useUserRecentGames: function() {
-                    return u
-                }
-            }), n("47120");
-            var i = n("470079"),
-                r = n("442837"),
-                s = n("314897"),
-                a = n("454175"),
-                o = n("385845"),
-                l = n("761174");
-
-            function u(e) {
-                let t = (0, l.useIsUserRecentGamesEnabled)({
-                        userId: e,
-                        location: "28tk0bf_4"
-                    }),
-                    n = i.useRef(new AbortController),
-                    u = (0, r.useStateFromStores)([s.default], () => s.default.getId()),
-                    {
-                        recentGames: d,
-                        currentUserRecentGames: _,
-                        isFetching: c,
-                        isError: E
-                    } = (0, r.useStateFromStoresObject)([o.default], () => ({
-                        recentGames: o.default.getRecentGames(e),
-                        currentUserRecentGames: o.default.getRecentGames(u),
-                        isFetching: o.default.isFetching(e),
-                        isError: o.default.isError(e)
-                    })),
-                    I = i.useMemo(() => {
-                        var e;
-                        let t = null !== (e = null == _ ? void 0 : _.map(e => {
-                            let {
-                                applicationId: t
-                            } = e;
-                            return t
-                        })) && void 0 !== e ? e : [];
-                        return 0 === t.length ? null : new Set(t)
-                    }, [_]),
-                    T = i.useCallback(async () => {
-                        if (t && !c && !E) try {
-                            await a.default.fetchUserRecentGames(e, n.current.signal, !0)
-                        } catch (e) {}
-                    }, [E, t, c, e]);
-                return i.useEffect(() => {
-                    T()
-                }, [T]), i.useEffect(() => {
-                    let e = n.current;
-                    return () => {
-                        null == e || e.abort()
-                    }
-                }, []), {
-                    isFetching: c,
-                    isError: E,
-                    recentGames: d,
-                    currentUserApplicationIds: I
-                }
-            }
-        },
         815016: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -221832,10 +221097,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ActivityJoiningRestrictedGuilds: function() {
-                    return eL
+                    return eg
                 },
                 ActivityRestrictedGuilds: function() {
-                    return eR
+                    return eC
                 },
                 AfkTimeout: function() {
                     return z
@@ -221850,49 +221115,49 @@
                     return g
                 },
                 AnimateEmoji: function() {
-                    return ep
+                    return eN
                 },
                 AnimateStickers: function() {
-                    return eO
+                    return ep
                 },
                 BroadcastAllowFriends: function() {
-                    return eo
+                    return ea
                 },
                 BroadcastAllowedGuildIds: function() {
-                    return el
+                    return eo
                 },
                 BroadcastAllowedUserIds: function() {
-                    return eu
+                    return el
                 },
                 BroadcastAutoBroadcast: function() {
-                    return ed
+                    return eu
                 },
                 ClientThemeSettings: function() {
-                    return em
+                    return eA
                 },
                 ClipsAllowVoiceRecording: function() {
-                    return e_
+                    return ed
                 },
                 ConvertEmoticons: function() {
                     return H
                 },
                 CustomStatusSetting: function() {
-                    return es
+                    return er
                 },
                 DefaultGuildsActivityRestricted: function() {
-                    return ev
+                    return eL
                 },
                 DefaultGuildsRestricted: function() {
                     return B
                 },
                 DeveloperMode: function() {
-                    return eA
+                    return eh
                 },
                 DisableGamesTab: function() {
                     return Q
                 },
                 DisableHomeAutoNav: function() {
-                    return eD
+                    return ev
                 },
                 DmSpamFilterV2: function() {
                     return $
@@ -221910,13 +221175,13 @@
                     return J
                 },
                 ExplicitContentSettings: function() {
-                    return eP
+                    return ey
                 },
                 ExpressionSuggestionsEnabled: function() {
                     return I
                 },
                 FamilyCenterEnabled: function() {
-                    return eM
+                    return eD
                 },
                 FocusMode: function() {
                     return h
@@ -221928,16 +221193,16 @@
                     return x
                 },
                 GifAutoPlay: function() {
-                    return eN
+                    return em
                 },
                 IncludeStickersInAutocomplete: function() {
                     return T
                 },
                 InlineAttachmentMedia: function() {
-                    return ec
+                    return e_
                 },
                 InlineEmbedMedia: function() {
-                    return eE
+                    return ec
                 },
                 InstallShortcutDesktop: function() {
                     return M
@@ -221946,13 +221211,13 @@
                     return y
                 },
                 KeywordFilterSettings: function() {
-                    return eU
+                    return eP
                 },
                 LastReceivedChangelogId: function() {
-                    return eb
+                    return eU
                 },
                 LegacyUsernameDisabled: function() {
-                    return ey
+                    return eM
                 },
                 MessageDisplayCompact: function() {
                     return Y
@@ -221978,14 +221243,11 @@
                 NotifyFriendsOnGoLive: function() {
                     return L
                 },
-                RecentGamesEnabled: function() {
-                    return et
-                },
                 RenderEmbeds: function() {
-                    return eI
+                    return eE
                 },
                 RenderReactions: function() {
-                    return eT
+                    return eI
                 },
                 RenderSpoilers: function() {
                     return f
@@ -222009,16 +221271,16 @@
                     return j
                 },
                 StatusExpiresAtSetting: function() {
-                    return er
+                    return ei
                 },
                 StatusSetting: function() {
-                    return ei
+                    return en
                 },
                 StickerPickerCollapsedSections: function() {
                     return p
                 },
                 TimezoneOffset: function() {
-                    return ef
+                    return eT
                 },
                 UseLegacyChatInput: function() {
                     return c
@@ -222270,77 +221532,77 @@
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => s.BoolValue.create({
                     value: e
-                })),
-                et = (0, o.defineProtoSetting)("privacy", "recentGamesEnabled", e => {
-                    var t;
-                    return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
-                }, e => s.BoolValue.create({
+                }));
+            (0, o.defineProtoSetting)("privacy", "recentGamesEnabled", e => {
+                var t;
+                return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
+            }, e => s.BoolValue.create({
+                value: e
+            }));
+            let et = new Set(Object.values(d.StatusTypes)),
+                en = (0, o.defineProtoSetting)("status", "status", e => null != e && et.has(e.value) ? e.value : d.StatusTypes.UNKNOWN, e => s.StringValue.create({
                     value: e
                 })),
-                en = new Set(Object.values(d.StatusTypes)),
-                ei = (0, o.defineProtoSetting)("status", "status", e => null != e && en.has(e.value) ? e.value : d.StatusTypes.UNKNOWN, e => s.StringValue.create({
+                ei = (0, o.defineProtoSetting)("status", "statusExpiresAtMs", e => null != e ? e : "0", e => e),
+                er = (0, o.defineProtoSetting)("status", "customStatus", e => e, e => e),
+                es = [],
+                ea = (0, o.defineProtoSetting)("broadcast", "allowFriends", e => null == e ? void 0 : e.value, e => s.BoolValue.create({
                     value: e
                 })),
-                er = (0, o.defineProtoSetting)("status", "statusExpiresAtMs", e => null != e ? e : "0", e => e),
-                es = (0, o.defineProtoSetting)("status", "customStatus", e => e, e => e),
-                ea = [],
-                eo = (0, o.defineProtoSetting)("broadcast", "allowFriends", e => null == e ? void 0 : e.value, e => s.BoolValue.create({
-                    value: e
-                })),
-                el = (0, o.defineProtoSetting)("broadcast", "allowedGuildIds", e => null != e ? e : ea, e => e),
-                eu = (0, o.defineProtoSetting)("broadcast", "allowedUserIds", e => null != e ? e : ea, e => e),
-                ed = (0, o.defineProtoSetting)("broadcast", "autoBroadcast", e => {
+                eo = (0, o.defineProtoSetting)("broadcast", "allowedGuildIds", e => null != e ? e : es, e => e),
+                el = (0, o.defineProtoSetting)("broadcast", "allowedUserIds", e => null != e ? e : es, e => e),
+                eu = (0, o.defineProtoSetting)("broadcast", "autoBroadcast", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => s.BoolValue.create({
                     value: e
                 })),
-                e_ = (0, o.defineProtoSetting)("clips", "allowVoiceRecording", e => {
+                ed = (0, o.defineProtoSetting)("clips", "allowVoiceRecording", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => s.BoolValue.create({
                     value: e
                 })),
-                ec = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "inlineAttachmentMedia", e => {
+                e_ = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "inlineAttachmentMedia", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => s.BoolValue.create({
                     value: e
                 })), "text", "inlineAttachmentMedia"),
-                eE = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "inlineEmbedMedia", e => {
+                ec = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "inlineEmbedMedia", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => s.BoolValue.create({
                     value: e
                 })), "text", "inlineEmbedMedia"),
-                eI = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "renderEmbeds", e => {
+                eE = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "renderEmbeds", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => s.BoolValue.create({
                     value: e
                 })), "text", "renderEmbeds"),
-                eT = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "renderReactions", e => {
+                eI = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "renderReactions", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => s.BoolValue.create({
                     value: e
                 })), "text", "renderReactions"),
-                ef = (0, o.defineProtoSetting)("localization", "timezoneOffset", e => {
+                eT = (0, o.defineProtoSetting)("localization", "timezoneOffset", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : null
                 }, e => s.Int32Value.create({
                     value: null != e ? e : 0
                 })),
-                eS = new Set([a.ChannelListLayoutTypes.COZY, a.ChannelListLayoutTypes.COMPACT]);
-            (0, o.defineProtoSetting)("appearance", "channelListLayout", e => null != e && eS.has(e.value) ? e.value : a.ChannelListLayoutTypes.COZY, e => s.StringValue.create({
+                ef = new Set([a.ChannelListLayoutTypes.COZY, a.ChannelListLayoutTypes.COMPACT]);
+            (0, o.defineProtoSetting)("appearance", "channelListLayout", e => null != e && ef.has(e.value) ? e.value : a.ChannelListLayoutTypes.COZY, e => s.StringValue.create({
                 value: e
             }));
-            let eh = new Set([a.MessagePreviewTypes.ALL, a.MessagePreviewTypes.UNREADS, a.MessagePreviewTypes.NONE]);
-            (0, o.defineProtoSetting)("appearance", "messagePreviews", e => null != e && eh.has(e.value) ? e.value : a.MessagePreviewTypes.ALL, e => s.StringValue.create({
+            let eS = new Set([a.MessagePreviewTypes.ALL, a.MessagePreviewTypes.UNREADS, a.MessagePreviewTypes.NONE]);
+            (0, o.defineProtoSetting)("appearance", "messagePreviews", e => null != e && eS.has(e.value) ? e.value : a.MessagePreviewTypes.ALL, e => s.StringValue.create({
                 value: e
             }));
-            let eA = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
-                em = (0, o.defineProtoSetting)("appearance", "clientThemeSettings", e => {
+            let eh = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
+                eA = (0, o.defineProtoSetting)("appearance", "clientThemeSettings", e => {
                     var t;
                     return {
                         backgroundGradientPresetId: null == e ? void 0 : null === (t = e.backgroundGradientPresetId) || void 0 === t ? void 0 : t.value
@@ -222350,7 +221612,7 @@
                         value: e.backgroundGradientPresetId
                     }) : void 0
                 })),
-                eN = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "gifAutoPlay", e => {
+                em = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "gifAutoPlay", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => s.BoolValue.create({
@@ -222362,7 +221624,7 @@
                     var e;
                     return null === (e = l.default.getOverride("gifAutoPlay")) || void 0 === e ? void 0 : e.value
                 })),
-                ep = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "animateEmoji", e => {
+                eN = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "animateEmoji", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => s.BoolValue.create({
@@ -222374,7 +221636,7 @@
                     var e;
                     return null === (e = l.default.getOverride("animateEmoji")) || void 0 === e ? void 0 : e.value
                 })),
-                eO = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "animateStickers", e => {
+                ep = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "animateStickers", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : _.StickerAnimationSettings.ALWAYS_ANIMATE
                 }, e => s.UInt32Value.create({
@@ -222386,27 +221648,27 @@
                     var e;
                     return null === (e = l.default.getOverride("animateStickers")) || void 0 === e ? void 0 : e.value
                 })),
-                eC = [],
-                eR = (0, o.defineProtoSetting)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eC, e => e),
-                eg = [],
-                eL = (0, o.defineProtoSetting)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eg, e => e),
-                ev = (0, o.defineProtoSetting)("privacy", "defaultGuildsActivityRestricted", e => e === r.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS, e => !0 === e ? r.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS : r.GuildActivityStatusRestrictionDefault.OFF),
-                eD = (0, o.defineProtoSetting)("communities", "disableHomeAutoNav", e => {
+                eO = [],
+                eC = (0, o.defineProtoSetting)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eO, e => e),
+                eR = [],
+                eg = (0, o.defineProtoSetting)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eR, e => e),
+                eL = (0, o.defineProtoSetting)("privacy", "defaultGuildsActivityRestricted", e => e === r.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS, e => !0 === e ? r.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS : r.GuildActivityStatusRestrictionDefault.OFF),
+                ev = (0, o.defineProtoSetting)("communities", "disableHomeAutoNav", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => s.BoolValue.create({
                     value: e
                 })),
-                eM = (0, o.defineProtoSetting)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => s.BoolValue.create({
+                eD = (0, o.defineProtoSetting)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => s.BoolValue.create({
                     value: e
                 })),
-                ey = (0, o.defineProtoSetting)("privacy", "hideLegacyUsername", e => {
+                eM = (0, o.defineProtoSetting)("privacy", "hideLegacyUsername", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => s.BoolValue.create({
                     value: e
                 })),
-                eP = (0, o.defineProtoSetting)("textAndImages", "explicitContentSettings", e => {
+                ey = (0, o.defineProtoSetting)("textAndImages", "explicitContentSettings", e => {
                     let {
                         explicitContentGuilds: t,
                         explicitContentFriendDm: n,
@@ -222429,7 +221691,7 @@
                         explicitContentNonFriendDm: null != i ? i : void 0
                     }
                 }),
-                eU = (0, o.defineProtoSetting)("textAndImages", "keywordFilterSettings", e => {
+                eP = (0, o.defineProtoSetting)("textAndImages", "keywordFilterSettings", e => {
                     let {
                         profanity: t,
                         sexualContent: n,
@@ -222464,7 +221726,7 @@
             }, e => s.BoolValue.create({
                 value: e
             }));
-            let eb = (0, o.defineProtoSetting)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e)
+            let eU = (0, o.defineProtoSetting)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e)
         },
         516373: function(e, t, n) {
             "use strict";
@@ -253227,7 +252489,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b3efd2f59397fddb1b9e7395160230becba9d442"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "62f7bdffffd2ea7f574b7cadff1b3e19297fb8c6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282471,7 +281733,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300326"
+                                build_number: "300344"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289780,7 +289042,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300326", "300326"), 10);
+                let s = parseInt((n = "300344", "300344"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -316943,15 +316205,6 @@
                 }
             }), n("47120"), (r = i || (i = {}))[r.LATEST_ACTIVITY = 0] = "LATEST_ACTIVITY", r[r.CREATION_DATE = 1] = "CREATION_DATE"
         },
-        127437: function(e, t, n) {
-            "use strict";
-            var i, r;
-            n.r(t), n.d(t, {
-                UserGameApplicationSessionDuration: function() {
-                    return i
-                }
-            }), (r = i || (i = {}))[r.MIN_DURATION_SECS = 300] = "MIN_DURATION_SECS"
-        },
         724522: function(e, t, n) {
             "use strict";
             n.r(t), n("956067")
@@ -317764,4 +317017,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.d14ed7bab41569c39f76.js.map
+//# sourceMappingURL=27519.4763c49005c87d2c5da0.js.map
