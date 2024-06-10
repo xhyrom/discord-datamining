@@ -10437,7 +10437,9 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .is-mobile .authBox__6f336 .discordLogo__037bb {
-    display: block
+    display: block;
+    position: absolute;
+    top: 16px
 }
 
 @media(max-width:830px) {
@@ -27328,4 +27330,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.b92696fa9b0137df2a98.css.map*/
+/*# sourceMappingURL=49237.46d6744e5fcabf02e943.css.map*/
