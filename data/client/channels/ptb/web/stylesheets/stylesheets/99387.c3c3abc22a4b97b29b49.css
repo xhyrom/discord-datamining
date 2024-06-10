@@ -46350,94 +46350,6 @@ span.clanTag_f4aadc {
     text-decoration: underline
 }
 
-.section__62b44 {
-    padding-top: 12px
-}
-
-.section__62b44:empty {
-    display: none
-}
-
-.lastSection__62986 {
-    padding-bottom: 12px
-}
-
-@value iconSize: 40px;
-
-.recentGames_e4425b,
-.recentGamesGrid_d370b2 {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 12px
-}
-
-.recentGameContainer__8231a {
-    display: flex;
-    align-items: center
-}
-
-.recentGameIcon__65d60 {
-    max-width: 40px;
-    max-height: 40px;
-    min-width: 40px;
-    min-height: 40px;
-    border-radius: 4px;
-    overflow: hidden
-}
-
-.recentGameDetails_fa472d {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 12px;
-    min-width: 0;
-    flex: 0 1 auto
-}
-
-.recentGameTitleContainer_bd3ae5 {
-    display: flex;
-    align-items: center;
-    min-width: 0;
-    flex: 0 1 auto
-}
-
-.sharedGameIcon__45b1e {
-    display: flex;
-    max-width: 16px
-}
-
-.recentGameTitle__9adac {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    margin-right: 4px;
-    font-size: 14px;
-    line-height: 1.2857142857142858;
-    font-weight: 600;
-    color: var(--header-primary)
-}
-
-.newIcon__6568d {
-    display: flex;
-    align-items: center;
-    -moz-column-gap: 4px;
-    column-gap: 4px
-}
-
-.headerContainer_ec3f63 {
-    display: flex;
-    align-items: center;
-    padding-bottom: 8px
-}
-
-.header__9af10 {
-    flex: 1
-}
-
-.viewAll__77948 {
-    cursor: pointer
-}
-
 .divider_d6f39c {
     margin-top: 12px;
     height: 1px;
@@ -54260,6 +54172,18 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .actionsWrapper__81885 .actionsProfileV2_eea61b {
     margin-left: 0;
     margin-top: 12px
+}
+
+.section__62b44 {
+    padding-top: 12px
+}
+
+.section__62b44:empty {
+    display: none
+}
+
+.lastSection__62986 {
+    padding-bottom: 12px
 }
 
 .activity__88a5f {
@@ -70495,19 +70419,6 @@ html .invoiceCancelRow_aa7946 {
 .select_d2dd42,
 .selectPopout__4e7ca {
     gap: 8px
-}
-
-.recentGamesSwitch_c37017 {
-    margin-bottom: 0
-}
-
-.requirement_f0aa0e {
-    margin-top: 4px;
-    margin-bottom: 20px
-}
-
-.dividerDefault__07e4b {
-    margin-bottom: 20px
 }
 
 .sectionsContainer__45b62 {
@@ -133642,7 +133553,6 @@ div.nagbar_c731ff {
     line-height: 18px
 }
 
-.recentGames__2995b,
 .clans__3c2a1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133945,12 +133855,6 @@ div.nagbar_c731ff {
     display: flex;
     flex-direction: column;
     gap: 8px
-}
-
-.recentGames_c8fe3b {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 12px
 }
 
 .connections__84e31 {
@@ -142355,4 +142259,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4f1e27f845666817ea9a.css.map*/
+/*# sourceMappingURL=99387.c3c3abc22a4b97b29b49.css.map*/
