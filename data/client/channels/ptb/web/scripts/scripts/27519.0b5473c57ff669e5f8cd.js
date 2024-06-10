@@ -37179,7 +37179,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300537", ", Version Hash: ").concat("bac8b08814a2b72ce721b941b34758f08850825b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300548", ", Version Hash: ").concat("e5691af8b79c0aeba548843c420ab9281776cdd3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52857,6 +52857,8 @@
                 Q4_DROP_WHATS_NEW_UNLIMITED_SUPER_REACTIONS_CARD_DESCRIPTION_NON_SUB: "Supercharge your own conversations with any tier of Nitro.",
                 Q4_DROP_WHATS_NEW_UNLIMITED_SUPER_REACTIONS_CARD_DESCRIPTION_SUB: "Now available on Nitro and Nitro Basic.",
                 INTERACTION_PREMIUM_UPSELL_CTA: "Upgrade",
+                INTERACTION_PREMIUM_BUTTON_CTA: "{skuName} - {price}",
+                INTERACTION_PREMIUM_BUTTON_UNAVAILABLE: "Product Unavailable",
                 FOR_YOU: "For You",
                 FOR_YOU_EMPTY_TITLE: "Nothing here yet",
                 FOR_YOU_EMPTY_BODY: "Come back for notifications on events, streams, and more.",
@@ -89112,8 +89114,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300537", "300537"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300537")), t = 0), t
+                let t = parseInt((e = "300548", "300548"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300548")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117278,8 +117280,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300537",
-                    versionHash: "bac8b08814a2b72ce721b941b34758f08850825b"
+                    buildNumber: "300548",
+                    versionHash: "e5691af8b79c0aeba548843c420ab9281776cdd3"
                 }
             }
             n.r(t), n.d(t, {
@@ -161786,7 +161788,8 @@
                                 disabled: t.disabled,
                                 url: t.url,
                                 label: t.label,
-                                emoji: e
+                                emoji: e,
+                                skuId: t.sku_id
                             }
                         }
                         case i.ComponentType.STRING_SELECT:
@@ -173206,8 +173209,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718051138721",
-                                    build_number: "300537"
+                                    built_at: "1718052065197",
+                                    build_number: "300548"
                                 }
                             },
                             retries: 1
@@ -250451,7 +250454,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "bac8b08814a2b72ce721b941b34758f08850825b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e5691af8b79c0aeba548843c420ab9281776cdd3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279657,7 +279660,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300537"
+                                build_number: "300548"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286968,7 +286971,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300537", "300537"), 10);
+                let s = parseInt((n = "300548", "300548"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314925,4 +314928,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.3f1bf659deb6b5aeffe1.js.map
+//# sourceMappingURL=27519.0b5473c57ff669e5f8cd.js.map
