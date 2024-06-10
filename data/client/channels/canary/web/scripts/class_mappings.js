@@ -13477,6 +13477,7 @@
                 liveIndicator: "liveIndicator_b9b167",
                 liveNowText: "liveNowText__8623e",
                 rsvpButton: "rsvpButton_c7d27c",
+                singleLine: "singleLine__292d8",
                 stageIcon: "stageIcon_fb04a0",
                 startTime: "startTime__52d88",
                 textBlock: "textBlock__56d45",

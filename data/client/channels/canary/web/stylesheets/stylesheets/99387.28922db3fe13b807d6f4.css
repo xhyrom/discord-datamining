@@ -33946,7 +33946,10 @@ img.thumbnail__18ece {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center
+}
+
+.singleLine__292d8 {
     white-space: nowrap
 }
 
@@ -69583,8 +69586,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .planInfo_c12dc8 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -95657,7 +95660,7 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .title__63238 {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources__8ef1d:hover {
@@ -95688,8 +95691,8 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .backHeader_cff6da {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -142259,4 +142262,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c3c3abc22a4b97b29b49.css.map*/
+/*# sourceMappingURL=99387.28922db3fe13b807d6f4.css.map*/
