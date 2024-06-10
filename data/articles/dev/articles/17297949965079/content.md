@@ -9,7 +9,7 @@
 <h3 id="h_01HAW6SCSSBWKGYSH77SM92GGV">App Is Owned By A Team</h3>
 <p>If you don’t have a Team and/or an App you can create them from the <a href="https://discord.com/developers/teams" target="_blank" rel="noopener noreferrer">Developer Portal</a>. If your app is Verified but not yet owned by a Team, you can <a class="notion-link-token notion-focusable-token notion-enable-hover" tabindex="0" href="https://dis.gd/developer-support/premium-apps" target="_blank" rel="noopener noreferrer" data-token-index="1">request an ownership transfer by submitting a ticket to the Developer Support team</a>.</p>
 <h3 id="h_01HAW6T3JHPVZJACQEM94518TD">App Is Verified</h3>
-<p>If your Team owns an App and uses Slash Commands but it isn’t verified, check out this article for more <a href="https://support-dev.discord.com/hc/en-us/articles/6206007597207-How-do-I-get-my-bot-verified-" target="_blank" rel="noopener noreferrer">information on applying for app verification</a>.</p>
+<p>If your Team owns an App and uses Slash Commands but it isn’t verified, check out this article for more <a href="https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified" target="_blank" rel="noopener noreferrer">information on applying for app verification</a>.</p>
 <p>If your app does not currently meet these initial requirements, work to accomplish them and you will gain access to the Monetization Onboarding flow.</p>
 <h3 id="h_01HB90E77QPN986GFV0S01ZSF2">Supported Locales</h3>
 <ul>

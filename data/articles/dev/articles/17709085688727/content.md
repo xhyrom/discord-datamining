@@ -18,7 +18,7 @@
 <h3 id="h_01HB8WP0GAXC66J85688WRKPXE">App Requirements</h3>
 <p>A Premium App must:</p>
 <ul>
-    <li>Be <a href="https://support.discord.com/hc/en-us/articles/360040720412-Bot-Verification-and-Data-Allowlisting" target="_blank" rel="noopener noreferrer">verified</a>
+    <li>Be <a href="https://support-dev.discord.com/hc/articles/23926564536471-How-Do-I-Get-My-App-Verified" target="_blank" rel="noopener noreferrer">verified</a>
     </li>
     <li>Belong to a Developer Team</li>
     <li>Have a link to your Terms of Service</li>
