@@ -25102,7 +25102,8 @@ div.profileThemedContainer__6e645 {
 }
 
 .footer__55c58 {
-    border-top: 1px solid var(--profile-body-divider-color)
+    z-index: 1;
+    border-top: 1px solid var(--border-subtle)
 }
 
 .buttonColor__9c02a {
@@ -140948,4 +140949,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ac1d8aec430b21bde07f.css.map*/
+/*# sourceMappingURL=99387.08da35698185c193ae54.css.map*/
