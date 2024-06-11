@@ -20801,7 +20801,8 @@ strong {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12px
+    gap: 12px;
+    max-width: 100%
 }
 
 .inlineForwardOnHover__5cbf1 {
@@ -27418,4 +27419,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.6251501f6de76bb9f9f8.css.map*/
+/*# sourceMappingURL=49237.0eac4a543f208b9e4d23.css.map*/
