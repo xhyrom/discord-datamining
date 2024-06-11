@@ -131009,12 +131009,15 @@ div.nagbar_c731ff {
 }
 
 .uploaderAvatar__81ff5 {
-    margin-right: 4px
+    flex-shrink: 0
 }
 
-.uploaderName__50faa {
+.uploader__41f8c {
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    cursor: pointer
 }
 
 .enable-forced-colors .soundEdit__4ee33 {
@@ -140937,4 +140940,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e210042b2e9a7da8e772.css.map*/
+/*# sourceMappingURL=99387.bc8ee5e76c473ef6b1f8.css.map*/
