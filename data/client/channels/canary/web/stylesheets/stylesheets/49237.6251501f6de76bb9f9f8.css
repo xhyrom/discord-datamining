@@ -20804,6 +20804,14 @@ strong {
     gap: 12px
 }
 
+.inlineForwardOnHover__5cbf1 {
+    visibility: hidden
+}
+
+.mosaicContainer__204db:hover .inlineForwardOnHover__5cbf1 {
+    visibility: visible
+}
+
 .modalCarouselWrapper__1858d {
     align-items: center !important
 }
@@ -27410,4 +27418,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.3a7ad99e78fc06dbc324.css.map*/
+/*# sourceMappingURL=49237.6251501f6de76bb9f9f8.css.map*/
