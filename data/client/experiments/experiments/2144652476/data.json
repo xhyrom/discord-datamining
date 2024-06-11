@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_hd_streaming_desktop_upsell",
+    "label": "HD Streaming Desktop Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable new roadblock modal",
+      "Treatment 2: Enable new roadblock modal with social proof"
+    ],
+    "hash": 2144652476,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "addSocialProof"
+    ]
+  }
+}

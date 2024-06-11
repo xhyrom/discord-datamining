@@ -627,6 +627,7 @@ id,hash,label
 2024-06_ctp_app_open_multiple_buckets,160851838,CTP app open - A/A test - Multiple buckets
 2024-06_ctp_app_open_uneven_buckets,3785125664,CTP app open - A/A test - Uneven buckets
 2024-06_ctp_app_open_vanilla,3140086051,CTP app open - A/A test - Vanilla
+2024-06_hd_streaming_desktop_upsell,2144652476,HD Streaming Desktop Upsell
 2024-06_hd_streaming_viewer,2445369146,HD Streaming Viewer Upsell
 2024-06_message_send_failure,3096022268,Message Send Failure Experiment
 2024-06_outbound_promo_desktop_upsell,2302949395,Upsell Outbound Promos
