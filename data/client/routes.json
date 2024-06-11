@@ -740,6 +740,10 @@
       "PATCH"
     ]
   },
+  "GUILD_BASIC": {
+    "url": "/guilds/:param/basic",
+    "allowed_methods": null
+  },
   "GUILD_PINCODE": {
     "url": "/guilds/:param/pincode",
     "allowed_methods": [
