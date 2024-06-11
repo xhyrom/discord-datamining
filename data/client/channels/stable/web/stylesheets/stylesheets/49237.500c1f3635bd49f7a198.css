@@ -2902,9 +2902,12 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     opacity: 0;
     width: 100%;
     height: 100%;
-    transition: transform.1s ease-out, opacity.1s ease-out;
     transform: rotate(90deg);
     color: var(--interactive-normal)
+}
+
+.full-motion .icon_fb52f0 {
+    transition: transform.1s ease-out, opacity.1s ease-out
 }
 
 .icon_fb52f0.visible_c5d475 {
@@ -6960,7 +6963,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     width: 100%
 }
 
-.animating__6d7dc {
+.full-motion .animating__6d7dc {
     transition: transform.2s ease-out
 }
 
@@ -8766,7 +8769,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     position: relative
 }
 
-.arrow_cb03b8 {
+.full-motion .arrow_cb03b8 {
     transition: transform.2s ease-out
 }
 
@@ -8887,7 +8890,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     border: 2px solid ButtonText
 }
 
-.transition_bb4a68 {
+.full-motion .transition_bb4a68 {
     transition: transform.2s ease
 }
 
@@ -9074,8 +9077,11 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     background-color: var(--brand-500);
     transform: scale(0);
     transform-origin: 50%50%;
-    transition: transform.25s ease-in-out, background-color.25s linear;
     cursor: grab
+}
+
+.full-motion .mediaBarGrabber__1d527 {
+    transition: transform.25s ease-in-out, background-color.25s linear
 }
 
 .bubble_f48089 {
@@ -10937,8 +10943,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .enterReducedMotion_f32af8,
 .exitReducedMotion_efd1eb {
     transition-duration: var(--custom-full-screen-layer-animation-duration);
-    transition-property: transform, opacity;
-    transition-timing-function: ease-in-out
+    transition-timing-function: ease-in-out;
+    transition-property: transform, opacity
 }
 
 .enter_a1ced5 {
@@ -13814,9 +13820,12 @@ h6.title_c2a544 {
     padding: 8px;
     width: 32px;
     height: 32px;
-    transition: all.2s ease;
     color: var(--interactive-normal);
     box-sizing: border-box
+}
+
+.full-motion .icon_bb7288 {
+    transition: all.2s ease
 }
 
 .icon_bb7288:active {
@@ -13892,7 +13901,10 @@ h6.title_c2a544 {
     box-shadow: 0 1px 3px hsl(var(--black-500-hsl)/.1);
     flex: 0 0 auto;
     transform-origin: 50%50%;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.full-motion .cardIcon__45b55 {
     transition: transform.3s ease-in-out
 }
 
@@ -14214,7 +14226,10 @@ h6.title_c2a544 {
     height: 24px;
     margin-left: -12px;
     margin-top: -12px;
-    opacity: 0;
+    opacity: 0
+}
+
+.full-motion .editIcon__570b4 {
     transition: opacity.2s ease-in-out, transform.2s ease-in-out
 }
 
@@ -14230,8 +14245,11 @@ h6.title_c2a544 {
 }
 
 .text__1e9c5 {
-    transition: opacity.2s ease-in-out, transform.2s ease-in-out;
     opacity: 1
+}
+
+.full-motion .text__1e9c5 {
+    transition: opacity.2s ease-in-out, transform.2s ease-in-out
 }
 
 .hasValue__997ad .text__1e9c5 {
@@ -17091,7 +17109,10 @@ h6.title_c2a544 {
 }
 
 .inline__626c3 {
-    opacity: 1;
+    opacity: 1
+}
+
+.full-motion .inline__626c3 {
     transition: all.1s ease
 }
 
@@ -17099,7 +17120,7 @@ h6.title_c2a544 {
     visibility: hidden
 }
 
-.obscured_d2382f {
+.full-motion .obscured_d2382f {
     transition: all.1s ease
 }
 
@@ -22330,27 +22351,30 @@ span.clanTag_c8f97c.isOverlay_ff42d2 {
     overflow: hidden;
     border-radius: 8px;
     position: relative;
-    transition: box-shadow.2s ease-out, transform.2s ease-out, background.2s ease-out, opacity.2s ease-in;
     cursor: pointer;
     background-color: var(--activity-card-background)
+}
+
+.full-motion .card__86773 {
+    transition: box-shadow.2s ease-out, transform.2s ease-out, background.2s ease-out, opacity.2s ease-in
 }
 
 .cardWithTags_e65661 {
     height: var(--custom-guild-discovery-card-card-height)WithTags
 }
 
-.iconMask__4092e {
+.full-motion .iconMask__4092e {
     transition: box-shadow.2s ease-out, transform.2s ease-out, background.2s ease-out
 }
 
-.card__86773:hover,
-.card__86773:focus {
+.full-motion .card__86773:hover,
+.full-motion .card__86773:focus {
     transform: translatey(-1px);
     box-shadow: var(--elevation-high)
 }
 
-.card__86773:hover .splash_c32fae,
-.card__86773:focus .splash_c32fae {
+.full-motion .card__86773:hover .splash_c32fae,
+.full-motion .card__86773:focus .splash_c32fae {
     transform: scale(1.01)translatez(0)
 }
 
@@ -22388,9 +22412,12 @@ span.clanTag_c8f97c.isOverlay_ff42d2 {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: opacity.2s, transform.2s ease-out;
     transform: scale(1);
     opacity: 0
+}
+
+.full-motion .splash_c32fae {
+    transition: opacity.2s, transform.2s ease-out
 }
 
 .splashImage__9b574 {
@@ -23319,9 +23346,13 @@ span.clanTag_c8f97c.isOverlay_ff42d2 {
     box-sizing: border-box;
     width: 42px;
     height: 42px;
-    transition: all.2s ease;
     border: 1px solid var(--interactive-normal);
     color: var(--interactive-normal)
+}
+
+.full-motion .pageButtonPrev__9c384,
+.full-motion .pageButtonNext__13132 {
+    transition: all.2s ease
 }
 
 .pageButtonPrev__9c384:hover,
@@ -23539,10 +23570,14 @@ span.clanTag_c8f97c.isOverlay_ff42d2 {
     text-overflow: ellipsis;
     overflow: hidden;
     display: block;
-    transition: all.22s ease;
     transform-style: preserve-3d;
     pointer-events: none;
     width: 100%
+}
+
+.full-motion .default__74311,
+.full-motion .hovered__5a165 {
+    transition: all.22s ease
 }
 
 .hovered__5a165 {
@@ -24924,7 +24959,12 @@ span.button_ae40a4.disabled__1dc58 {
 .video__3237a.fullScreen__161a9 .videoBottom__07ae0,
 .video__3237a.noChat__4bab9 .videoBottom__07ae0 {
     transform: translate3d(0, 8px, 0);
-    opacity: 0;
+    opacity: 0
+}
+
+.full-motion .video__3237a.normal__179aa .videoBottom__07ae0,
+.full-motion .video__3237a.fullScreen__161a9 .videoBottom__07ae0,
+.full-motion .video__3237a.noChat__4bab9 .videoBottom__07ae0 {
     transition: transform.2s ease-in-out, opacity.2s ease-in-out
 }
 
@@ -25258,8 +25298,11 @@ span.button_ae40a4.disabled__1dc58 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform.2s ease-out;
     transform: translate3d(0, 100%, 0)
+}
+
+.full-motion .problems__4ae6d {
+    transition: transform.2s ease-out
 }
 
 .problems__4ae6d.slideIn__2e243 {
@@ -27330,4 +27373,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.46d6744e5fcabf02e943.css.map*/
+/*# sourceMappingURL=49237.500c1f3635bd49f7a198.css.map*/
