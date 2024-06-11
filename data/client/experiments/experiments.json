@@ -11083,20 +11083,23 @@
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: Enabled",
-        "Treatment 2: Enabled + inline forward button"
+        "Treatment 2: Enabled + inline forward button",
+        "Treatment 3: Enabled + inline forward button + on hover web"
       ],
       "hash": 2255117514,
       "buckets": [
         -1,
         0,
         1,
-        2
+        2,
+        3
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
         "canForwardMessages",
-        "hasInlineForwardButton"
+        "hasInlineForwardButton",
+        "showInlineButtonOnHoverWeb"
       ]
     }
   },
