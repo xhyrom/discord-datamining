@@ -37179,7 +37179,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300673", ", Version Hash: ").concat("92a1a8c99e6b4e8d4a44da824b85b446a4775284")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300678", ", Version Hash: ").concat("7da55794bad245ed8d81a7adeb46c5805cb1a45e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89123,8 +89123,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300673", "300673"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300673")), t = 0), t
+                let t = parseInt((e = "300678", "300678"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300678")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117289,8 +117289,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300673",
-                    versionHash: "92a1a8c99e6b4e8d4a44da824b85b446a4775284"
+                    buildNumber: "300678",
+                    versionHash: "7da55794bad245ed8d81a7adeb46c5805cb1a45e"
                 }
             }
             n.r(t), n.d(t, {
@@ -173372,8 +173372,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718069387314",
-                                    build_number: "300673"
+                                    built_at: "1718071933070",
+                                    build_number: "300678"
                                 }
                             },
                             retries: 1
@@ -210921,19 +210921,21 @@
                         channelId: d,
                         messageId: _,
                         roleId: c,
-                        shouldTrackViewOnMount: E = !0
+                        showGuildProfile: E = !0,
+                        shouldTrackViewOnMount: I = !0
                     } = e, {
-                        analyticsLocations: I
-                    } = (0, s.default)(), T = r.useMemo(() => ({
+                        analyticsLocations: T
+                    } = (0, s.default)(), f = r.useMemo(() => ({
                         layout: n,
                         userId: l,
                         guildId: u,
                         channelId: d,
                         messageId: _,
-                        roleId: c
-                    }), [n, l, u, d, _, c]);
+                        roleId: c,
+                        showGuildProfile: E
+                    }), [n, l, u, d, _, c, E]);
                     return r.useEffect(() => {
-                        E && null != n && null != l && (0, a.trackUserProfileAction)({
+                        I && null != n && null != l && (0, a.trackUserProfileAction)({
                             action: "VIEW",
                             layout: n,
                             userId: l,
@@ -210941,10 +210943,11 @@
                             channelId: d,
                             messageId: _,
                             roleId: c,
-                            analyticsLocations: I
+                            showGuildProfile: E,
+                            analyticsLocations: T
                         })
-                    }, [E]), (0, i.jsx)(o.Provider, {
-                        value: T,
+                    }, [I]), (0, i.jsx)(o.Provider, {
+                        value: f,
                         children: t
                     })
                 },
@@ -211031,36 +211034,38 @@
                     let {
                         layout: i,
                         userId: a,
-                        guildId: o
-                    } = e, u = l.default.getUser(a);
-                    if (null == u) return {};
-                    let d = (0, c.getDisplayProfile)(null == u ? void 0 : u.id, o),
-                        _ = null != o ? r.default.getMember(o, null == u ? void 0 : u.id) : null;
+                        guildId: o,
+                        showGuildProfile: u = !0
+                    } = e, d = l.default.getUser(a);
+                    if (null == d) return {};
+                    let _ = (0, c.getDisplayProfile)(null == d ? void 0 : d.id, u ? o : void 0),
+                        E = u && null != o ? r.default.getMember(o, null == d ? void 0 : d.id) : null;
                     return {
                         profile_layout: i,
                         profile_properties: f({
-                            user: u,
-                            userProfile: null == d ? void 0 : d._userProfile
+                            user: d,
+                            userProfile: null == _ ? void 0 : _._userProfile
                         }),
                         guild_profile_properties: f({
-                            guildMember: _,
-                            guildMemberProfile: null == d ? void 0 : d._guildMemberProfile
+                            guildMember: E,
+                            guildMemberProfile: null == _ ? void 0 : _._guildMemberProfile
                         }),
-                        profile_activity_types: s.default.getActivities(u.id).map(e => {
+                        profile_activity_types: s.default.getActivities(d.id).map(e => {
                             let {
                                 type: t
                             } = e;
                             return t
                         }).filter(e => void 0 !== e),
-                        profile_badges: null == d ? void 0 : null === (t = d.getBadges()) || void 0 === t ? void 0 : t.map(e => {
+                        profile_badges: null == _ ? void 0 : null === (t = _.getBadges()) || void 0 === t ? void 0 : t.map(e => {
                             let {
                                 id: t
                             } = e;
                             return t
                         }),
-                        avatar_decoration_sku_id: null === (n = u.avatarDecoration) || void 0 === n ? void 0 : n.skuId,
-                        profile_effect_sku_id: null == d ? void 0 : d.profileEffectId,
-                        user_status: S(u.id)
+                        avatar_decoration_sku_id: null === (n = d.avatarDecoration) || void 0 === n ? void 0 : n.skuId,
+                        profile_effect_sku_id: null == _ ? void 0 : _.profileEffectId,
+                        user_status: S(d.id),
+                        is_guild_profile: (null == _ ? void 0 : _.guildId) != null
                     }
                 },
                 m = e => {
@@ -211081,23 +211086,25 @@
                         channelId: r,
                         messageId: s,
                         roleId: a,
-                        analyticsLocations: o,
-                        layout: l,
-                        action: d,
-                        section: _
+                        showGuildProfile: o,
+                        analyticsLocations: l,
+                        layout: d,
+                        action: _,
+                        section: c
                     } = e;
                     u.default.track(I.AnalyticEvents.USER_PROFILE_ACTION, {
                         ...(0, i.collectGuildAnalyticsMetadata)(n),
                         ...(0, i.collectChannelAnalyticsMetadataFromId)(r),
                         ...A({
-                            layout: l,
+                            layout: d,
                             userId: t,
-                            guildId: n
+                            guildId: n,
+                            showGuildProfile: o
                         }),
                         ...m(t),
-                        location_stack: o,
-                        profile_action: d,
-                        profile_section: _,
+                        location_stack: l,
+                        profile_action: _,
+                        profile_section: c,
                         source_message_id: s,
                         source_role_id: a
                     })
@@ -211107,31 +211114,33 @@
                         userId: t,
                         guildId: n,
                         channelId: r,
-                        analyticsLocations: s,
-                        layout: a,
-                        activityType: o,
-                        activityName: l,
-                        activityPlatform: d,
-                        activitySessionId: _,
-                        applicationId: c,
-                        voiceChannelId: E
+                        showGuildProfile: s,
+                        analyticsLocations: a,
+                        layout: o,
+                        activityType: l,
+                        activityName: d,
+                        activityPlatform: _,
+                        activitySessionId: c,
+                        applicationId: E,
+                        voiceChannelId: T
                     } = e;
                     u.default.track(I.AnalyticEvents.USER_PROFILE_ACTIVITY_JOINED, {
                         ...(0, i.collectGuildAnalyticsMetadata)(n),
                         ...(0, i.collectChannelAnalyticsMetadataFromId)(r),
                         ...A({
-                            layout: a,
+                            layout: o,
                             userId: t,
-                            guildId: n
+                            guildId: n,
+                            showGuildProfile: s
                         }),
                         ...m(t),
-                        location_stack: s,
-                        activity_type: null != E ? "VOICE" : h(o),
-                        activity_name: l,
-                        activity_platform: d,
-                        activity_session_id: _,
-                        application_id: c,
-                        voice_channel_id: E
+                        location_stack: a,
+                        activity_type: null != T ? "VOICE" : h(l),
+                        activity_name: d,
+                        activity_platform: _,
+                        activity_session_id: c,
+                        application_id: E,
+                        voice_channel_id: T
                     })
                 },
                 O = e => {
@@ -211139,21 +211148,23 @@
                         userId: t,
                         guildId: n,
                         channelId: r,
-                        analyticsLocations: s,
-                        layout: a,
-                        badge: o
+                        showGuildProfile: s,
+                        analyticsLocations: a,
+                        layout: o,
+                        badge: l
                     } = e;
                     u.default.track(I.AnalyticEvents.USER_PROFILE_BADGE_PRESSED, {
                         ...(0, i.collectGuildAnalyticsMetadata)(n),
                         ...(0, i.collectChannelAnalyticsMetadataFromId)(r),
                         ...A({
-                            layout: a,
+                            layout: o,
                             userId: t,
-                            guildId: n
+                            guildId: n,
+                            showGuildProfile: s
                         }),
                         ...m(t),
-                        location_stack: s,
-                        badge: o
+                        location_stack: a,
+                        badge: l
                     })
                 },
                 C = e => {
@@ -211161,21 +211172,23 @@
                         userId: t,
                         guildId: n,
                         channelId: r,
-                        analyticsLocations: s,
-                        layout: a,
-                        badge: o
+                        showGuildProfile: s,
+                        analyticsLocations: a,
+                        layout: o,
+                        badge: l
                     } = e;
                     u.default.track(I.AnalyticEvents.USER_PROFILE_BADGE_HOVERED, {
                         ...(0, i.collectGuildAnalyticsMetadata)(n),
                         ...(0, i.collectChannelAnalyticsMetadataFromId)(r),
                         ...A({
-                            layout: a,
+                            layout: o,
                             userId: t,
-                            guildId: n
+                            guildId: n,
+                            showGuildProfile: s
                         }),
                         ...m(t),
-                        location_stack: s,
-                        badge: o
+                        location_stack: a,
+                        badge: l
                     })
                 }
         },
@@ -214683,19 +214696,20 @@
                     roleId: I,
                     friendToken: T,
                     autoFocusNote: f,
-                    analyticsLocation: S,
-                    sourceAnalyticsLocations: h
-                } = e, A = s.default.getUser(t), m = null != _ && _ !== d.ME ? _ : void 0, N = (0, l.getSimplifiedProfileFriendingExperimentConfig)({
+                    showGuildProfile: S,
+                    analyticsLocation: h,
+                    sourceAnalyticsLocations: A
+                } = e, m = s.default.getUser(t), N = null != _ && _ !== d.ME ? _ : void 0, p = (0, l.getSimplifiedProfileFriendingExperimentConfig)({
                     location: "openUserProfileModal",
                     autoTrackExposure: !1
-                }), p = (0, a.isInProfileMutualsExperiment)().enabled || (0, o.getSimplifiedProfileExperimentConfig)({
+                }), O = (0, a.isInProfileMutualsExperiment)().enabled || (0, o.getSimplifiedProfileExperimentConfig)({
                     location: "openUserProfileModal",
                     autoTrackExposure: !1
-                }).basicsEnabled || N.originalFriendingEnabled || N.improvedFriendingEnabled;
-                if (null == A) return (0, r.fetchProfile)(t, {
-                    guildId: m,
+                }).basicsEnabled || p.originalFriendingEnabled || p.improvedFriendingEnabled;
+                if (null == m) return (0, r.fetchProfile)(t, {
+                    guildId: S ? N : void 0,
                     withMutualGuilds: !0,
-                    withMutualFriends: p,
+                    withMutualFriends: O,
                     friendToken: T
                 }).then(() => {
                     i.default.dispatch({
@@ -214708,14 +214722,15 @@
                         roleId: null != I ? I : void 0,
                         friendToken: T,
                         autoFocusNote: f,
-                        analyticsLocation: S,
-                        sourceAnalyticsLocations: h
+                        showGuildProfile: S,
+                        analyticsLocation: h,
+                        sourceAnalyticsLocations: A
                     })
                 });
-                (0, u.maybeFetchUserProfileForPopout)(A, {
-                    guildId: m,
+                (0, u.maybeFetchUserProfileForPopout)(m, {
+                    guildId: S ? N : void 0,
                     withMutualGuilds: !0,
-                    withMutualFriends: p,
+                    withMutualFriends: O,
                     friendToken: T
                 }), i.default.dispatch({
                     type: "USER_PROFILE_MODAL_OPEN",
@@ -214727,8 +214742,9 @@
                     roleId: null != I ? I : void 0,
                     friendToken: T,
                     autoFocusNote: f,
-                    analyticsLocation: S,
-                    sourceAnalyticsLocations: h
+                    showGuildProfile: S,
+                    analyticsLocation: h,
+                    sourceAnalyticsLocations: A
                 })
             }
 
@@ -250624,7 +250640,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "92a1a8c99e6b4e8d4a44da824b85b446a4775284"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7da55794bad245ed8d81a7adeb46c5805cb1a45e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279830,7 +279846,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300673"
+                                build_number: "300678"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287141,7 +287157,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300673", "300673"), 10);
+                let s = parseInt((n = "300678", "300678"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315098,4 +315114,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.bb7e12a77b20ec60c0b1.js.map
+//# sourceMappingURL=27519.08021eff73eff87294c5.js.map
