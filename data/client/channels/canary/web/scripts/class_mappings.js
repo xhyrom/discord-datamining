@@ -14806,8 +14806,8 @@
                 tableHeader: "tableHeader__217d8",
                 tableHeaders: "tableHeaders_b5c7b9",
                 tableTitle: "tableTitle__157a7",
-                uploaderAvatar: "uploaderAvatar__81ff5",
-                uploaderName: "uploaderName__50faa"
+                uploader: "uploader__41f8c",
+                uploaderAvatar: "uploaderAvatar__81ff5"
             }
         },
         205616: function(e) {
