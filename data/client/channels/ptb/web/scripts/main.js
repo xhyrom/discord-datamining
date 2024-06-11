@@ -37179,7 +37179,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300733", ", Version Hash: ").concat("d5db0bc10481db74a243825cb51f2832c3a8fd4c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300737", ", Version Hash: ").concat("46e52125449d45dabdfe8be4da9d18770eb08484")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -46952,6 +46952,7 @@
                 PREMIUM_ATTACHMENT_HOVER_NON_SUBSCRIBER: "Unlock 500MB uploads with Nitro",
                 PREMIUM_ATTACHMENT_HOVER_SUBSCRIBER: "500MB uploads unlocked!",
                 USER_ACTIVITY_HEADER_PLAYING: "Playing a game",
+                USER_ACTIVITY_HEADER_PLAYING_A_GAME: "Playing a Game",
                 USER_ACTIVITY_HEADER_LIVE_ON_PLATFORM: "Live on !!{platform}!!",
                 USER_ACTIVITY_HEADER_PLAYING_ON_PLATFORM: "Playing on !!{platform}!!",
                 USER_ACTIVITY_HEADER_WATCHING: "Watching !!{name}!!",
@@ -89124,8 +89125,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300733", "300733"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300733")), t = 0), t
+                let t = parseInt((e = "300737", "300737"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300737")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117290,8 +117291,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300733",
-                    versionHash: "d5db0bc10481db74a243825cb51f2832c3a8fd4c"
+                    buildNumber: "300737",
+                    versionHash: "46e52125449d45dabdfe8be4da9d18770eb08484"
                 }
             }
             n.r(t), n.d(t, {
@@ -173373,8 +173374,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718120661284",
-                                    build_number: "300733"
+                                    built_at: "1718121687573",
+                                    build_number: "300737"
                                 }
                             },
                             retries: 1
@@ -182998,54 +182999,55 @@
             "use strict";
             n.r(t), n.d(t, {
                 bogoPromotionFromServer: function() {
-                    return I
+                    return T
                 },
                 claimOutboundPromotion: function() {
-                    return S
-                },
-                fetchClaimedOutboundPromotionCodes: function() {
-                    return f
-                },
-                getOutboundPromotionRedemptionUrl: function() {
                     return h
                 },
-                getPromotionImageURL: function() {
-                    return c
+                fetchClaimedOutboundPromotionCodes: function() {
+                    return S
                 },
-                isOutboundPromotionRedeemableByTrialUsers: function() {
-                    return N
-                },
-                isTrialUserEligibleToSeeOutboundPromotion: function() {
-                    return p
-                },
-                outboundPromotionFromServer: function() {
-                    return E
-                },
-                shouldShowOutboundPromotionNotice: function() {
+                getOutboundPromotionRedemptionUrl: function() {
                     return A
                 },
-                shouldShowOutboundPromotionOnPlatform: function() {
+                getPromotionImageURL: function() {
+                    return E
+                },
+                isOutboundPromotionRedeemableByTrialUsers: function() {
+                    return p
+                },
+                isTrialUserEligibleToSeeOutboundPromotion: function() {
+                    return O
+                },
+                outboundPromotionFromServer: function() {
+                    return I
+                },
+                shouldShowOutboundPromotionNotice: function() {
                     return m
+                },
+                shouldShowOutboundPromotionOnPlatform: function() {
+                    return N
                 }
             }), n("789020"), n("757143");
             var i = n("544891"),
                 r = n("780384"),
                 s = n("706454"),
                 a = n("78839"),
-                o = n("630388"),
-                l = n("358085"),
-                u = n("1844"),
-                d = n("474936"),
-                _ = n("981631");
+                o = n("295226"),
+                l = n("630388"),
+                u = n("358085"),
+                d = n("1844"),
+                _ = n("474936"),
+                c = n("981631");
 
-            function c(e, t) {
+            function E(e, t) {
                 let n = (0, r.isThemeDark)(t) ? "logo-dark" : "logo-light",
                     i = window.GLOBAL_ENV.CDN_HOST,
                     s = "?size=256";
                 return null != i ? "".concat(location.protocol, "//").concat(i, "/promotions/").concat(e, "/").concat(n).concat(s) : "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/promotions/").concat(e, "/").concat(n).concat(s)
             }
 
-            function E(e) {
+            function I(e) {
                 return {
                     id: e.id,
                     startDate: e.start_date,
@@ -183060,7 +183062,7 @@
                 }
             }
 
-            function I(e) {
+            function T(e) {
                 return {
                     id: e.id,
                     startDate: e.start_date,
@@ -183068,43 +183070,43 @@
                 }
             }
 
-            function T(e) {
+            function f(e) {
                 return {
                     code: e.code,
                     userId: e.user_id,
                     claimedAt: e.claimed_at,
-                    promotion: E(e.promotion)
+                    promotion: I(e.promotion)
                 }
             }
-            async function f() {
+            async function S() {
                 return (await i.HTTP.get({
-                    url: _.Endpoints.CLAIMED_OUTBOUND_PROMOTION_CODES,
+                    url: c.Endpoints.CLAIMED_OUTBOUND_PROMOTION_CODES,
                     query: {
                         locale: s.default.locale
                     },
                     oldFormErrors: !0
-                })).body.map(T)
+                })).body.map(f)
             }
-            async function S(e) {
-                return T((await i.HTTP.post({
-                    url: _.Endpoints.CLAIM_OUTBOUND_PROMOTION_CODE(e)
+            async function h(e) {
+                return f((await i.HTTP.post({
+                    url: c.Endpoints.CLAIM_OUTBOUND_PROMOTION_CODE(e)
                 })).body)
             }
 
-            function h(e, t) {
+            function A(e, t) {
                 return null != t.outboundRedemptionUrlFormat ? t.outboundRedemptionUrlFormat.replace("{code}", encodeURIComponent(e)) : t.outboundRedemptionPageLink
             }
 
-            function A() {
-                let e = u.default.lastSeenOutboundPromotionStartDate,
-                    t = u.default.outboundPromotions,
-                    n = u.default.consumedInboundPromotionId,
+            function m() {
+                let e = d.default.lastSeenOutboundPromotionStartDate,
+                    t = d.default.outboundPromotions,
+                    n = d.default.consumedInboundPromotionId,
                     i = t.filter(e => {
                         let {
                             id: t,
                             flags: i
                         } = e;
-                        return t !== n && !(0, o.hasFlag)(i, d.PromotionFlags.SUPPRESS_NOTIFICATION)
+                        return t !== n && !(0, l.hasFlag)(i, _.PromotionFlags.SUPPRESS_NOTIFICATION)
                     }),
                     r = null == e ? i : i.filter(t => {
                         let {
@@ -183112,10 +183114,12 @@
                         } = t;
                         return new Date(n) > new Date(e)
                     }),
-                    s = u.default.lastDismissedOutboundPromotionStartDate,
-                    l = a.default.getPremiumTypeSubscription(),
-                    _ = (null == l ? void 0 : l.trialId) != null ? r.filter(e => N(e)) : r;
-                return 0 !== _.length && (null == s || _.some(e => {
+                    s = d.default.lastDismissedOutboundPromotionStartDate,
+                    u = a.default.getPremiumTypeSubscription(),
+                    c = (null == u ? void 0 : u.trialId) != null,
+                    E = o.default.hasAnyUnexpiredOffer(),
+                    I = c || E ? r.filter(e => p(e)) : r;
+                return 0 !== I.length && (null == s || I.some(e => {
                     let {
                         startDate: t
                     } = e;
@@ -183123,16 +183127,16 @@
                 }))
             }
 
-            function m(e) {
-                return !(0, l.isIOS)() || !(0, o.hasFlag)(e.flags, d.PromotionFlags.IS_BLOCKED_IOS)
-            }
-
             function N(e) {
-                return (0, o.hasFlag)(e.flags, d.PromotionFlags.IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS)
+                return !(0, u.isIOS)() || !(0, l.hasFlag)(e.flags, _.PromotionFlags.IS_BLOCKED_IOS)
             }
 
-            function p(e, t) {
-                return null != t[e.id] || N(e)
+            function p(e) {
+                return (0, l.hasFlag)(e.flags, _.PromotionFlags.IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS)
+            }
+
+            function O(e, t) {
+                return null != t[e.id] || p(e)
             }
         },
         748770: function(e, t, n) {
@@ -183236,30 +183240,31 @@
             "use strict";
             n.r(t), n.d(t, {
                 useBogoPromotion: function() {
-                    return S
+                    return h
                 },
                 useOutboundPromotions: function() {
-                    return T
+                    return f
                 },
                 useUnseenOutboundPromotions: function() {
-                    return f
+                    return S
                 }
             }), n("47120");
             var i = n("470079"),
                 r = n("442837"),
                 s = n("570140"),
                 a = n("594174"),
-                o = n("74538"),
-                l = n("775412"),
-                u = n("163684"),
-                d = n("518638"),
-                _ = n("748770"),
-                c = n("1844"),
-                E = n("474936");
+                o = n("295226"),
+                l = n("74538"),
+                u = n("775412"),
+                d = n("163684"),
+                _ = n("518638"),
+                c = n("748770"),
+                E = n("1844"),
+                I = n("474936");
 
-            function I() {
-                let e = (0, r.useStateFromStoresArray)([c.default], () => c.default.outboundPromotions),
-                    t = (0, r.useStateFromStores)([c.default], () => c.default.consumedInboundPromotionId);
+            function T() {
+                let e = (0, r.useStateFromStoresArray)([E.default], () => E.default.outboundPromotions),
+                    t = (0, r.useStateFromStores)([E.default], () => E.default.consumedInboundPromotionId);
                 return i.useMemo(() => e.filter(e => {
                     let {
                         id: n
@@ -183268,88 +183273,91 @@
                 }), [e, t])
             }
 
-            function T() {
-                let e = (0, r.useStateFromStores)([c.default], () => c.default.lastFetchedActivePromotions),
-                    t = I(),
+            function f() {
+                let e = (0, r.useStateFromStores)([E.default], () => E.default.lastFetchedActivePromotions),
+                    t = T(),
                     n = (0, r.useStateFromStores)([a.default], () => a.default.getCurrentUser()),
-                    T = (0, l.useHasActiveTrial)(),
-                    [f, S] = i.useState(!1),
-                    [h, A] = i.useState([]);
+                    f = (0, u.useHasActiveTrial)(),
+                    S = (0, r.useStateFromStores)([o.default], () => o.default.hasAnyUnexpiredOffer()),
+                    [h, A] = i.useState(!1),
+                    [m, N] = i.useState([]);
                 i.useEffect(() => {
-                    null != e && s.default.wait(() => _.default.markOutboundPromotionsSeen())
+                    null != e && s.default.wait(() => c.default.markOutboundPromotionsSeen())
                 }, [e]);
-                let m = i.useCallback(e => {
-                        A(t => t.some(t => {
+                let p = i.useCallback(e => {
+                        N(t => t.some(t => {
                             let {
                                 promotion: n
                             } = t;
                             return n.id === e.promotion.id
                         }) ? t : [...t, e])
                     }, []),
-                    N = u.OutboundPromoDesktopUpsellExperiment.useExperiment({
+                    O = d.OutboundPromoDesktopUpsellExperiment.useExperiment({
                         location: "useOutboundPromotions"
                     }, {
                         autoTrackExposure: !0
-                    }).enabled || (0, o.isPremiumExactly)(n, E.PremiumTypes.TIER_2);
+                    }).enabled || (0, l.isPremiumExactly)(n, I.PremiumTypes.TIER_2);
                 i.useEffect(() => {
                     s.default.wait(() => {
-                        N && null == e && _.default.fetchActiveOutboundPromotions()
+                        O && null == e && c.default.fetchActiveOutboundPromotions()
                     })
-                }, [e, N]), i.useEffect(() => {
+                }, [e, O]), i.useEffect(() => {
                     s.default.wait(() => {
-                        (0, d.fetchClaimedOutboundPromotionCodes)().then(e => {
-                            A(e), S(!0)
+                        (0, _.fetchClaimedOutboundPromotionCodes)().then(e => {
+                            N(e), A(!0)
                         }).catch(() => {
-                            A([]), S(!0)
+                            N([]), A(!0)
                         })
                     })
                 }, []);
-                let p = {};
+                let C = {};
                 for (let {
                         code: e,
                         promotion: t
                     }
-                    of h) p[t.id] = e;
-                let O = new Set(t.map(e => {
+                    of m) C[t.id] = e;
+                let R = new Set(t.map(e => {
                         let {
                             id: t
                         } = e;
                         return t
                     })),
-                    C = h.filter(e => {
+                    g = m.filter(e => {
                         let {
                             promotion: t
                         } = e;
-                        return !O.has(t.id)
+                        return !R.has(t.id)
                     });
                 return {
-                    promotionsLoaded: f && (!N || null != e),
-                    activeOutboundPromotions: t.filter(e => (0, d.shouldShowOutboundPromotionOnPlatform)(e) && (!T || (0, d.isTrialUserEligibleToSeeOutboundPromotion)(e, p))),
-                    claimedEndedOutboundPromotions: C.filter(e => (0, d.shouldShowOutboundPromotionOnPlatform)(e.promotion)),
-                    claimedOutboundPromotionCodeMap: p,
-                    addClaimedOutboundPromotionCode: m
+                    promotionsLoaded: h && (!O || null != e),
+                    activeOutboundPromotions: t.filter(e => (0, _.shouldShowOutboundPromotionOnPlatform)(e) && (!(f || S) || (0, _.isTrialUserEligibleToSeeOutboundPromotion)(e, C))),
+                    claimedEndedOutboundPromotions: g.filter(e => (0, _.shouldShowOutboundPromotionOnPlatform)(e.promotion)),
+                    claimedOutboundPromotionCodeMap: C,
+                    addClaimedOutboundPromotionCode: p
                 }
             }
 
-            function f() {
-                let e = (0, r.useStateFromStores)([c.default], () => c.default.lastSeenOutboundPromotionStartDate),
-                    t = (0, l.useHasActiveTrial)(),
-                    n = I();
+            function S() {
+                let e = (0, r.useStateFromStores)([E.default], () => E.default.lastSeenOutboundPromotionStartDate),
+                    t = (0, u.useHasActiveTrial)(),
+                    n = (0, r.useStateFromStores)([o.default], () => o.default.hasAnyUnexpiredOffer()),
+                    s = t || n,
+                    a = T();
                 return i.useMemo(() => {
-                    if (null == e) return t ? n.filter(e => (0, d.isOutboundPromotionRedeemableByTrialUsers)(e)) : n;
-                    let i = n.filter(t => {
+                    if (null == e) return s ? a.filter(e => (0, _.isOutboundPromotionRedeemableByTrialUsers)(e)) : a;
+                    let t = a.filter(t => {
                         let {
                             startDate: n
                         } = t;
                         return new Date(n) > new Date(e)
                     });
-                    return t ? i.filter(e => (0, d.isOutboundPromotionRedeemableByTrialUsers)(e)) : i
-                }, [n, e, t]).filter(e => (0, d.shouldShowOutboundPromotionOnPlatform)(e))
+                    return s ? t.filter(e => (0, _.isOutboundPromotionRedeemableByTrialUsers)(e)) : t
+                }, [a, e, s]).filter(e => (0, _.shouldShowOutboundPromotionOnPlatform)(e))
             }
 
-            function S() {
+            function h() {
                 return {
-                    promotion: (0, r.useStateFromStores)([c.default], () => c.default.bogoPromotion)
+                    promotion: (0, r.useStateFromStores)([E.default], () => E.default.bogoPromotion)
                 }
             }
         },
@@ -250644,7 +250652,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d5db0bc10481db74a243825cb51f2832c3a8fd4c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "46e52125449d45dabdfe8be4da9d18770eb08484"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279850,7 +279858,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300733"
+                                build_number: "300737"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287161,7 +287169,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300733", "300733"), 10);
+                let s = parseInt((n = "300737", "300737"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315118,4 +315126,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.44a09736df02d5db1fab.js.map
+//# sourceMappingURL=27519.573a5328126d430114b1.js.map
