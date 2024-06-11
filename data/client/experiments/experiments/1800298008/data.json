@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable User Settings Search on Desktop"
+      "Treatment 1: Enable User Settings Search on Desktop",
+      "Treatment 2: Enable User Settings Search on Desktop with Search Count"
     ],
     "hash": 1800298008,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
