@@ -17456,6 +17456,7 @@
                 embedWrapper: "embedWrapper__47b23",
                 gifFavoriteButton: "gifFavoriteButton_bca32d",
                 giftCodeContainer: "giftCodeContainer_fedf35",
+                inlineForwardOnHover: "inlineForwardOnHover_c7a135",
                 nitroBadgeSvg: "nitroBadgeSvg__7d490",
                 nitroFileSizeUpsell: "nitroFileSizeUpsell__6fa4b",
                 pollContainer: "pollContainer_cfb8c7",

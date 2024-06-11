@@ -10118,6 +10118,14 @@ html .progress__00e29 {
     gap: 12px
 }
 
+.inlineForwardOnHover_c7a135 {
+    visibility: hidden
+}
+
+.embedContainer__5278d:hover .inlineForwardOnHover_c7a135 {
+    visibility: visible
+}
+
 .mainContainer_e56d5d.compact_ae7561 {
     padding-left: 0;
     margin-left: -3.95rem
@@ -63448,8 +63456,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -140940,4 +140948,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.bc8ee5e76c473ef6b1f8.css.map*/
+/*# sourceMappingURL=99387.cbba9f91eec0171e7c83.css.map*/

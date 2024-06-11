@@ -3614,6 +3614,7 @@
             "use strict";
             e.exports = {
                 hasFooter: "hasFooter_d64a32",
+                inlineForwardOnHover: "inlineForwardOnHover__5cbf1",
                 itemContentContainer: "itemContentContainer__77d7f",
                 lazyImg: "lazyImg_b510a9",
                 lazyImgContainer: "lazyImgContainer_b0a5df",
