@@ -15918,7 +15918,7 @@
                 nickname: "nickname_d0b2a8"
             }
         },
-        300033: function(e) {
+        945177: function(e) {
             "use strict";
             e.exports = {
                 tooltip: "tooltip__87655",
@@ -25732,6 +25732,7 @@
                 connectedAccountIcon: "connectedAccountIcon_e85011",
                 connectedAccountName: "connectedAccountName__0a3ec",
                 connectedAccountNameContainer: "connectedAccountNameContainer__59a05",
+                connectedAccountNameContainerClickable: "connectedAccountNameContainerClickable__81a12",
                 connectedAccountNameText: "connectedAccountNameText__7abc2",
                 connectedAccountNameTextContainer: "connectedAccountNameTextContainer_e6ac0d",
                 connectedAccountOpenIcon: "connectedAccountOpenIcon__23b1a",
@@ -25883,6 +25884,7 @@
         363175: function(e) {
             "use strict";
             e.exports = {
+                appsConnections: "appsConnections__5e31a",
                 connections: "connections__84e31",
                 note: "note_a92d50",
                 scroller: "scroller__2f4b4",
