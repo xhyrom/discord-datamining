@@ -37191,7 +37191,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300929", ", Version Hash: ").concat("d884964e59fc0190fb103ac9d45079df7216ebaf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300932", ", Version Hash: ").concat("dd40eef621b6abad8c6c40c903d508f2b223e1ea")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55718,6 +55718,7 @@
                 QUESTS_MICROPHONE_UNIT_HEADER: "Launched a game?",
                 QUESTS_MICROPHONE_UNIT_BODY: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched {gameTitle}.",
                 QUESTS_MICROPHONE_UNIT_BODY_ANY_GAME: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched a game.",
+                QUESTS_MICROHPONE_UNIT_BUTTON_CTA: "Check For Launches",
                 QUESTS_HOME_HERO_EYEBROW: "What are Quests?",
                 QUESTS_HOME_HERO_TITLE: "Play Games. Get Rewards.",
                 QUESTS_HOME_HERO_DESCRIPTION: "Quests are a brand new way for players to discover games and earn rewards for playing them on Discord.",
@@ -89929,8 +89930,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300929", "300929"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300929")), t = 0), t
+                let t = parseInt((e = "300932", "300932"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300932")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -118095,8 +118096,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300929",
-                    versionHash: "d884964e59fc0190fb103ac9d45079df7216ebaf"
+                    buildNumber: "300932",
+                    versionHash: "dd40eef621b6abad8c6c40c903d508f2b223e1ea"
                 }
             }
             n.r(t), n.d(t, {
@@ -118630,7 +118631,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("23404"), n.e("67526"), n.e("17220"), n.e("87624"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("85794"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("23404"), n.e("15357"), n.e("67526"), n.e("17220"), n.e("87624"), n.e("36861"), n.e("67032"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("18050")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -174179,8 +174180,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718135261763",
-                                    build_number: "300929"
+                                    built_at: "1718135503416",
+                                    build_number: "300932"
                                 }
                             },
                             retries: 1
@@ -251470,7 +251471,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d884964e59fc0190fb103ac9d45079df7216ebaf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "dd40eef621b6abad8c6c40c903d508f2b223e1ea"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280676,7 +280677,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300929"
+                                build_number: "300932"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287987,7 +287988,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300929", "300929"), 10);
+                let s = parseInt((n = "300932", "300932"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315944,4 +315945,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.452ef996c43514888e45.js.map
+//# sourceMappingURL=27519.18c7a58ebc730ecd05a4.js.map
