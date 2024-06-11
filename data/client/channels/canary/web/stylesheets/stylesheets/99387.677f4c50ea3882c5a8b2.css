@@ -71138,6 +71138,53 @@ html .invoiceCancelRow_aa7946 {
     transform: scale(3.5)
 }
 
+.flex__03031 {
+    flex: 1
+}
+
+.copyIcon__49c70 {
+    margin-left: 8px
+}
+
+.iconButtonLarge__357f5 {
+    display: flex;
+    height: 32px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    background-color: var(--background-modifier-hover)
+}
+
+.iconButtonLarge__357f5:hover {
+    background-color: var(--background-modifier-accent)
+}
+
+.iconButton__49828 {
+    padding: 8px;
+    background-color: var(--background-modifier-hover)
+}
+
+.iconButton__49828:hover {
+    background-color: var(--background-modifier-accent)
+}
+
+.iconButtonInner_f8625d {
+    color: var(--interactive-normal);
+    display: flex;
+    align-items: center
+}
+
+.ctaContainer__4b3f7 {
+    display: flex;
+    gap: 4px;
+    margin-top: 12px
+}
+
+.shine__68f74 {
+    animation-delay: 0s
+}
+
 .wrapper__5ce22 {
     background-color: var(--background-message-hover);
     border-radius: 8px;
@@ -71281,10 +71328,6 @@ html .invoiceCancelRow_aa7946 {
     display: block;
     height: 14px;
     width: 14px
-}
-
-.ctaWrapper__16b61 {
-    margin-top: 12px
 }
 
 .contentExpanded__9eb0c {
@@ -71432,10 +71475,6 @@ html .invoiceCancelRow_aa7946 {
     margin-top: 8px
 }
 
-.flex_fcc03e {
-    flex: 1
-}
-
 .headerText__020fc {
     opacity: .7
 }
@@ -71447,40 +71486,6 @@ html .invoiceCancelRow_aa7946 {
 
 .iconButton_a5db4c:hover {
     background-color: var(--background-modifier-accent)
-}
-
-.iconButtonLarge__860d3 {
-    display: flex;
-    height: 32px;
-    padding: 8px;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    background-color: var(--background-modifier-hover)
-}
-
-.iconButtonLarge__860d3:hover {
-    background-color: var(--background-modifier-accent)
-}
-
-.iconButtonInner__44333 {
-    color: var(--interactive-normal);
-    display: flex;
-    align-items: center
-}
-
-.copyIcon__9f2ce {
-    margin-left: 8px
-}
-
-.ctaContainer_d3ce3d {
-    display: flex;
-    gap: 4px;
-    margin-top: 12px
-}
-
-.ctaContainerLargeMarginTop__6b954 {
-    margin-top: 16px
 }
 
 .ctaClaimReward__68e9b {
@@ -71564,8 +71569,8 @@ html .invoiceCancelRow_aa7946 {
     width: 12px
 }
 
-.shine__72ddb {
-    animation-delay: 0s
+.flex_fcc03e {
+    flex: 1
 }
 
 .content_acf450 {
@@ -140693,4 +140698,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.02fe2b2d51f09146cf95.css.map*/
+/*# sourceMappingURL=99387.677f4c50ea3882c5a8b2.css.map*/
