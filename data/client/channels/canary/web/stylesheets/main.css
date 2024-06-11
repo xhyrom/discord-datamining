@@ -41717,12 +41717,12 @@ img.thumbnail__18ece {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -54629,7 +54629,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .connectedAccountPoweredBy__4aec8 {
     display: inline-block;
     margin-top: 8px;
-    color: var(--text-muted)
+    color: var(--text-muted);
+    cursor: pointer
 }
 
 .connectedAccountPoweredByText_b480be {
@@ -54648,6 +54649,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .connectedAccountNameContainer__59a05 {
     flex-grow: 1;
     overflow: hidden
+}
+
+.connectedAccountNameContainerClickable__81a12 {
+    cursor: pointer
 }
 
 .connectedAccountName__0a3ec {
@@ -80025,7 +80030,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 4px
 }
 
@@ -132516,6 +132521,10 @@ div.nagbar_c731ff {
     margin-top: -16px
 }
 
+.appsConnections__5e31a {
+    margin-top: 0
+}
+
 .note_a92d50 {
     margin: -4px
 }
@@ -140928,4 +140937,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.04cb8fa5764e536b0681.css.map*/
+/*# sourceMappingURL=99387.d25b522921c2cc48f7f1.css.map*/
