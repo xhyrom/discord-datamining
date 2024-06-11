@@ -44982,9 +44982,14 @@ div.cardContainer__94a1c {
     align-items: center;
     background: var(--background-tertiary);
     height: 44px;
-    margin: 24px 32px 16px;
+    margin: 24px auto 16px;
     border-radius: 8px;
-    border: 1px solid var(--interactive-muted)
+    border: 1px solid var(--interactive-muted);
+    padding: 0 24px;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 50%;
+    max-width: 80%
 }
 
 .iconContainer_b92a81 {
@@ -45019,6 +45024,11 @@ div.cardContainer__94a1c {
 
 .content__6d646 {
     margin-bottom: 32px
+}
+
+.enhancedContent__4f94a {
+    margin-bottom: 32px;
+    padding: 0
 }
 
 .footer_fbde49 {
@@ -98897,6 +98907,57 @@ html .invoiceCancelRow__6ff3e {
     text-transform: uppercase
 }
 
+.root_b7f914 {
+    text-align: center
+}
+
+.header__1db0d {
+    margin-bottom: 8px
+}
+
+.updatedHeader__17592 {
+    padding: 0 80px
+}
+
+.content__85a13 {
+    margin-bottom: 24px
+}
+
+.footer__4b596 {
+    justify-content: space-between
+}
+
+.art__8bda7 {
+    width: 225px;
+    height: var(--custom-stream-upsell-modal-art-height);
+    margin: -24px auto 8px
+}
+
+.updatedArtContainer__5b035 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: -60px auto 32px;
+    height: 120px;
+    width: 200px
+}
+
+.updatedArt_ff5acd {
+    width: 100%;
+    height: 100%
+}
+
+.buttonContent__6d387 {
+    display: flex;
+    align-items: center
+}
+
+.buttonIcon__920b0 {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px
+}
+
 .modal__1237a {
     width: 440px;
     max-height: 600px;
@@ -140867,4 +140928,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3012e692532340cf9dbf.css.map*/
+/*# sourceMappingURL=99387.04cb8fa5764e536b0681.css.map*/

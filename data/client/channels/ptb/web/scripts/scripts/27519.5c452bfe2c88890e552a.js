@@ -37191,7 +37191,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300960", ", Version Hash: ").concat("d843a200da44893375787834cc7d9ed8d47e6107")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300974", ", Version Hash: ").concat("c1bef5cf1afcb8729ffd67cc5d24ec1814e36a5c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55676,6 +55676,7 @@
                 QUESTS_COMPLETION_PROGRESS_NOT_STARTED: "Ready when you are...",
                 QUEST_BAR_TITLE_START_PLAYING: "Start Playing!",
                 QUEST_BAR_SUBTITLE_PLAY_ANY_GAME: "Play a game for {targetMinutes, number} minutes and win {rewardNameWithArticle}.",
+                QUEST_BAR_SUBTITLE_PLAY_GAME: "Play {gameTitle} for {targetMinutes, number} minutes and win {rewardNameWithArticle}.",
                 QUESTS_COMPLETION_PROGRESS_STARTED: "Keep it up!",
                 QUESTS_COMPLETION_PROGRESS_HALFWAY: "You're halfway there!",
                 QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE: "You're so close!",
@@ -89002,7 +89003,7 @@
                         }, (0, o.openModalLazy)(async () => {
                             let {
                                 default: e
-                            } = await n.e("28479").then(n.bind(n, "78865"));
+                            } = await Promise.all([n.e("99387"), n.e("28479")]).then(n.bind(n, "78865"));
                             return t => (0, i.jsx)(e, {
                                 ...t,
                                 analyticsSource: d
@@ -89930,8 +89931,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300960", "300960"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300960")), t = 0), t
+                let t = parseInt((e = "300974", "300974"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300974")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -118099,8 +118100,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300960",
-                    versionHash: "d843a200da44893375787834cc7d9ed8d47e6107"
+                    buildNumber: "300974",
+                    versionHash: "c1bef5cf1afcb8729ffd67cc5d24ec1814e36a5c"
                 }
             }
             n.r(t), n.d(t, {
@@ -174191,8 +174192,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718137273091",
-                                    build_number: "300960"
+                                    built_at: "1718137852414",
+                                    build_number: "300974"
                                 }
                             },
                             retries: 1
@@ -187052,33 +187053,84 @@
             "use strict";
             n.r(t), n.d(t, {
                 DesktopFileUploadUpsellExperiment: function() {
-                    return i
+                    return a
+                },
+                HDStreamingUpsellExperiment: function() {
+                    return s
+                },
+                shouldShowSocialProof: function() {
+                    return o
                 }
             });
-            let i = (0, n("818083").createExperiment)({
-                id: "2024-05_file_upload_desktop_upsell",
-                label: "File Upload Desktop Upsell",
-                kind: "user",
-                defaultConfig: {
-                    enabled: !1,
-                    addSocialProof: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable new roadblock modal",
-                    config: {
-                        enabled: !0,
+            var i = n("818083"),
+                r = n("474936");
+            let s = (0, i.createExperiment)({
+                    id: "2024-06_hd_streaming_desktop_upsell",
+                    label: "HD Streaming Desktop Upsell",
+                    kind: "user",
+                    defaultConfig: {
+                        enabled: !1,
                         addSocialProof: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "Enable new roadblock modal with social proof",
-                    config: {
-                        enabled: !0,
-                        addSocialProof: !0
-                    }
-                }]
-            })
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable new roadblock modal",
+                        config: {
+                            enabled: !0,
+                            addSocialProof: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Enable new roadblock modal with social proof",
+                        config: {
+                            enabled: !0,
+                            addSocialProof: !0
+                        }
+                    }]
+                }),
+                a = (0, i.createExperiment)({
+                    id: "2024-05_file_upload_desktop_upsell",
+                    label: "File Upload Desktop Upsell",
+                    kind: "user",
+                    defaultConfig: {
+                        enabled: !1,
+                        addSocialProof: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable new roadblock modal",
+                        config: {
+                            enabled: !0,
+                            addSocialProof: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Enable new roadblock modal with social proof",
+                        config: {
+                            enabled: !0,
+                            addSocialProof: !0
+                        }
+                    }]
+                });
+
+            function o(e) {
+                switch (e) {
+                    case r.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL:
+                        return a.getCurrentConfig({
+                            location: "File Upload Roadblock"
+                        }, {
+                            autoTrackExposure: !1
+                        }).addSocialProof;
+                    case r.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
+                        return s.getCurrentConfig({
+                            location: "HD Streaming Roadblock"
+                        }, {
+                            autoTrackExposure: !1
+                        }).addSocialProof;
+                    default:
+                        return !1
+                }
+            }
         },
         355314: function(e, t, n) {
             "use strict";
@@ -187234,159 +187286,154 @@
                     glowUp: b,
                     modalClassName: G,
                     artContainerClassName: w,
-                    bodyClassName: k,
-                    transitionState: B,
-                    onClose: V,
-                    onSubscribeClick: x,
-                    onSecondaryClick: F,
-                    secondaryCTA: H,
-                    subscribeButtonText: Y,
-                    showNewBadge: j = !1,
-                    enableArtBoxShadow: W = !0,
-                    subscriptionTier: K = p.PremiumSubscriptionSKUs.TIER_2,
-                    isLoading: z = !1,
-                    hideBackButton: Z,
-                    backButtonText: Q,
-                    showEnhancedUpsell: X,
-                    children: q,
-                    ...J
-                } = e, $ = null != D, ee = (0, S.usePremiumTrialOffer)(), et = (0, f.usePremiumDiscountOffer)(), en = ((null == ee ? void 0 : null === (t = ee.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === K || (0, f.discountOfferHasTier)(et, K)) && !$, {
-                    analyticsLocations: ei
+                    headerClassName: k,
+                    bodyClassName: B,
+                    transitionState: V,
+                    onClose: x,
+                    onSubscribeClick: F,
+                    onSecondaryClick: H,
+                    secondaryCTA: Y,
+                    subscribeButtonText: j,
+                    showNewBadge: W = !1,
+                    enableArtBoxShadow: K = !0,
+                    subscriptionTier: z = p.PremiumSubscriptionSKUs.TIER_2,
+                    isLoading: Z = !1,
+                    hideBackButton: Q,
+                    backButtonText: X,
+                    showEnhancedUpsell: q,
+                    children: J,
+                    ...$
+                } = e, ee = null != D, et = (0, S.usePremiumTrialOffer)(), en = (0, f.usePremiumDiscountOffer)(), ei = ((null == et ? void 0 : null === (t = et.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === z || (0, f.discountOfferHasTier)(en, z)) && !ee, {
+                    analyticsLocations: er
                 } = (0, _.default)(d.default.PREMIUM_UPSELL_MODAL);
                 r.useEffect(() => {
-                    !z && ($ ? E.default.track(O.AnalyticEvents.PREMIUM_GUILD_UPSELL_VIEWED, {
+                    !Z && (ee ? E.default.track(O.AnalyticEvents.PREMIUM_GUILD_UPSELL_VIEWED, {
                         type: "".concat(v, " - Tier ").concat(D.boostedGuildTier),
                         guild_id: D.guild.id,
                         channel_id: D.channelId,
                         location: y,
-                        location_stack: ei
+                        location_stack: er
                     }) : E.default.track(O.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
                         type: v,
                         source: M,
                         location: y,
-                        location_stack: ei,
-                        sku_id: (0, I.castPremiumSubscriptionAsSkuId)(K)
+                        location_stack: er,
+                        sku_id: (0, I.castPremiumSubscriptionAsSkuId)(z)
                     }))
-                }, [$, K, z]);
-                let er = (0, o.useStateFromStores)([T.default], () => T.default.affinities),
-                    es = er.length > 1 && v === p.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL,
-                    ea = N.DesktopFileUploadUpsellExperiment.getCurrentConfig({
-                        location: "File Upload Roadblock"
-                    }, {
-                        autoTrackExposure: !1,
-                        disable: !es
-                    }).addSocialProof,
+                }, [ee, z, Z]);
+                let es = (0, o.useStateFromStores)([T.default], () => T.default.affinities),
+                    ea = es.length > 1 && (0, N.shouldShowSocialProof)(v),
                     eo = (0, o.useStateFromStores)([T.default], () => T.default.hasFetched);
                 r.useEffect(() => {
                     !eo && u.getNitroAffinity()
                 }, [eo]);
-                let el = W ? a()(R.artContainer, R.artContainerBoxShadow, w) : a()(R.artContainer, w),
+                let el = K ? a()(R.artContainer, R.artContainerBoxShadow, w) : a()(R.artContainer, w),
                     eu = null;
-                return eu = "artURL" in J ? (0, i.jsx)("img", {
+                return eu = "artURL" in $ ? (0, i.jsx)("img", {
                     className: R.art,
                     alt: "",
-                    src: J.artURL
-                }) : J.artElement, (0, i.jsxs)(l.ModalRoot, {
+                    src: $.artURL
+                }) : $.artElement, (0, i.jsxs)(l.ModalRoot, {
                     className: a()(R.root, G),
                     "aria-label": L,
-                    transitionState: B,
+                    transitionState: V,
                     children: [(0, i.jsxs)("div", {
                         className: el,
-                        children: [eu, j ? (0, i.jsx)("img", {
+                        children: [eu, W ? (0, i.jsx)("img", {
                             className: R.sparkleBadge,
                             alt: "",
                             src: g
                         }) : null]
-                    }), X ? (0, i.jsx)(l.ModalCloseButton, {
-                        onClick: V,
+                    }), q ? (0, i.jsx)(l.ModalCloseButton, {
+                        onClick: x,
                         className: R.closeButton
                     }) : null, (0, i.jsx)(l.ModalContent, {
                         scrollbarType: "none",
-                        className: R.content,
-                        children: z ? (0, i.jsx)(l.Spinner, {}) : (0, i.jsx)(i.Fragment, {
-                            children: en ? (0, i.jsx)(i.Fragment, {
+                        className: q ? R.enhancedContent : R.content,
+                        children: Z ? (0, i.jsx)(l.Spinner, {}) : (0, i.jsx)(i.Fragment, {
+                            children: ei ? (0, i.jsx)(i.Fragment, {
                                 children: (0, i.jsx)(h.default, {
-                                    onClose: V,
+                                    onClose: x,
                                     type: v,
-                                    subscriptionTier: null !== (s = null == ee ? void 0 : null === (n = ee.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : p.PremiumSubscriptionSKUs.TIER_2,
+                                    subscriptionTier: null !== (s = null == et ? void 0 : null === (n = et.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : p.PremiumSubscriptionSKUs.TIER_2,
                                     headingText: L,
                                     context: U,
                                     analyticsLocationObject: y,
-                                    discountOffer: et,
-                                    trialOffer: ee,
+                                    discountOffer: en,
+                                    trialOffer: et,
                                     children: b
                                 })
                             }) : (0, i.jsxs)(i.Fragment, {
                                 children: [(0, i.jsx)(l.Heading, {
                                     className: a()(R.header, {
-                                        [R.enhancedHeader]: X
-                                    }),
+                                        [R.enhancedHeader]: q
+                                    }, k),
                                     variant: "heading-xl/bold",
                                     children: L
                                 }), ea ? (0, i.jsx)(m.default, {
-                                    affinities: er
-                                }) : void 0, q, (0, i.jsx)(l.Text, {
+                                    affinities: es
+                                }) : void 0, J, (0, i.jsx)(l.Text, {
                                     variant: "text-md/normal",
-                                    className: a()(k, R.subHeader),
+                                    className: a()(B, R.subHeader),
                                     children: P
                                 })]
                             })
                         })
                     }), (0, i.jsxs)(l.ModalFooter, {
                         className: a()(R.footer, {
-                            [R.enhancedFooter]: X
+                            [R.enhancedFooter]: q
                         }),
                         children: [(0, i.jsxs)("div", {
                             className: a()(R.primaryActions, {
-                                [R.enhancedPrimaryActions]: X
+                                [R.enhancedPrimaryActions]: q
                             }),
-                            children: [null != H ? (0, i.jsx)(l.Button, {
+                            children: [null != Y ? (0, i.jsx)(l.Button, {
                                 className: a()(R.secondaryAction, {
-                                    [R.enhancedSecondaryAction]: X
+                                    [R.enhancedSecondaryAction]: q
                                 }),
-                                onClick: F,
+                                onClick: H,
                                 size: l.Button.Sizes.SMALL,
-                                color: X ? l.Button.Colors.CUSTOM : l.Button.Colors.PRIMARY,
+                                color: q ? l.Button.Colors.CUSTOM : l.Button.Colors.PRIMARY,
                                 look: l.Button.Looks.LINK,
-                                children: H
+                                children: Y
                             }) : null, (() => {
                                 let e;
-                                if ($) return (0, i.jsx)(c.default, {
+                                if (ee) return (0, i.jsx)(c.default, {
                                     analyticsLocation: y,
                                     guild: D.guild,
-                                    onClose: V
+                                    onClose: x
                                 });
-                                let t = X ? C.default.Messages.PREMIUM_UPSELL_GET_NITRO : void 0;
-                                if (en) {
-                                    if (null != ee) {
+                                let t = q ? C.default.Messages.PREMIUM_UPSELL_GET_NITRO : void 0;
+                                if (ei) {
+                                    if (null != et) {
                                         var n, r;
                                         t = (0, I.formatTrialCtaIntervalDuration)({
-                                            intervalType: null == ee ? void 0 : null === (n = ee.subscription_trial) || void 0 === n ? void 0 : n.interval,
-                                            intervalCount: null == ee ? void 0 : null === (r = ee.subscription_trial) || void 0 === r ? void 0 : r.interval_count
-                                        }), e = null == ee ? void 0 : ee.trial_id
-                                    } else null != et && (t = C.default.Messages.PREMIUM_DISCOUNT_CTA.format({
-                                        percent: et.discount.amount
+                                            intervalType: null == et ? void 0 : null === (n = et.subscription_trial) || void 0 === n ? void 0 : n.interval,
+                                            intervalCount: null == et ? void 0 : null === (r = et.subscription_trial) || void 0 === r ? void 0 : r.interval_count
+                                        }), e = null == et ? void 0 : et.trial_id
+                                    } else null != en && (t = C.default.Messages.PREMIUM_DISCOUNT_CTA.format({
+                                        percent: en.discount.amount
                                     }))
                                 }
                                 return (0, i.jsx)(A.default, {
-                                    showGradient: X,
+                                    showGradient: q,
                                     premiumModalAnalyticsLocation: y,
-                                    subscriptionTier: K,
+                                    subscriptionTier: z,
                                     trialId: e,
                                     size: l.Button.Sizes.SMALL,
-                                    color: X ? l.Button.Colors.CUSTOM : l.Button.Colors.GREEN,
+                                    color: q ? l.Button.Colors.CUSTOM : l.Button.Colors.GREEN,
                                     onClick: () => {
-                                        null == x || x(), V()
+                                        null == F || F(), x()
                                     },
-                                    buttonText: null != Y ? Y : t
+                                    buttonText: null != j ? j : t
                                 })
                             })()]
-                        }), !Z && !X && (0, i.jsx)(l.Button, {
-                            onClick: V,
+                        }), !Q && !q && (0, i.jsx)(l.Button, {
+                            onClick: x,
                             size: l.Button.Sizes.SMALL,
                             color: l.Button.Colors.PRIMARY,
                             look: l.Button.Looks.LINK,
-                            children: null != Q ? Q : C.default.Messages.BACK
+                            children: null != X ? X : C.default.Messages.BACK
                         })]
                     })]
                 })
@@ -191484,6 +191531,11 @@
                     targetMinutes: o,
                     rewardNameWithArticle: a
                 });
+                if (eA(t)) return O.default.Messages.QUEST_BAR_SUBTITLE_PLAY_GAME.format({
+                    gameTitle: s,
+                    targetMinutes: o,
+                    rewardNameWithArticle: a
+                });
                 if (ea({
                         quest: t,
                         location: n
@@ -191492,7 +191544,7 @@
                     questReward: a,
                     streamingDurationRequirement: o
                 });
-                if (ei({
+                else if (ei({
                         quest: t
                     })) return (i ? O.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2 : O.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED).format({
                     gameTitle: s,
@@ -251482,7 +251534,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d843a200da44893375787834cc7d9ed8d47e6107"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c1bef5cf1afcb8729ffd67cc5d24ec1814e36a5c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280688,7 +280740,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300960"
+                                build_number: "300974"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287999,7 +288051,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300960", "300960"), 10);
+                let s = parseInt((n = "300974", "300974"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -301775,12 +301827,12 @@
                     }, ...this.videoStreamParameters];
                     let n = (0, A.getVoiceEngine)(),
                         i = null != n.getCodecCapabilities ? n.getCodecCapabilities : n.getSupportedVideoCodecs;
-                    if (null != n.createOwnStreamConnectionWithOptions) s = this.context === O.MediaEngineContextTypes.STREAM && this.streamUserId === this.userId ? n.createOwnStreamConnectionWithOptions : n.createVoiceConnectionWithOptions;
+                    if (null != n.createOwnStreamConnectionWithOptions) a = this.context === O.MediaEngineContextTypes.STREAM && this.streamUserId === this.userId ? n.createOwnStreamConnectionWithOptions : n.createVoiceConnectionWithOptions;
                     else if (null != n.createOwnStreamConnection) {
-                        var r, s, a = this.context === O.MediaEngineContextTypes.STREAM && this.streamUserId === this.userId ? n.createOwnStreamConnection : n.createVoiceConnection;
-                        s = (e, t, n) => a(t.ssrc, this.userId, t.address, t.port, n, t.experiments, t.streamParameters)
-                    } else s = (e, t, i) => new n.VoiceConnection(t.ssrc, e, t.address, t.port, i, t.experiments, t.streamParameters);
-                    null === (r = (t = this.conn = s(this.userId, e, (r, s) => {
+                        var r, s, a, o = this.context === O.MediaEngineContextTypes.STREAM && this.streamUserId === this.userId ? n.createOwnStreamConnection : n.createVoiceConnection;
+                        a = (e, t, n) => o(t.ssrc, this.userId, t.address, t.port, n, t.experiments, t.streamParameters)
+                    } else a = (e, t, i) => new n.VoiceConnection(t.ssrc, e, t.address, t.port, i, t.experiments, t.streamParameters);
+                    null === (r = (t = this.conn = a(this.userId, e, (r, s) => {
                         if (this.destroyed) return;
                         if (null != r && "" !== r) {
                             this.setConnectionState(O.ConnectionStates.NO_ROUTE), this.emit(f.BaseConnectionEvent.Error, r);
@@ -301831,7 +301883,9 @@
                                     }), t.mergeUsers(m), this.emit(f.BaseConnectionEvent.RemoteStreamsReady, m.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
                             })
                         })
-                    })).setDesktopSourceStatusCallback) || void 0 === r || r.call(t, e => {
+                    })).setSecureFramesStateUpdateCallback) || void 0 === r || r.call(t, e => {
+                        this.logger.info("Secure frames state update: ".concat(JSON.stringify(e)))
+                    }), null === (s = t.setDesktopSourceStatusCallback) || void 0 === s || s.call(t, e => {
                         if ("videohook_start" === e.type) this.emit(f.BaseConnectionEvent.VideoHookStart);
                         else if ("videohook_stop" === e.type) this.emit(f.BaseConnectionEvent.VideoHookStop);
                         else if ("videohook_initialize" === e.type) this.emit(f.BaseConnectionEvent.VideoHookInitialize, e.backend, e.format, e.framebufferFormat, e.sampleCount, e.success, e.reinitialization);
@@ -315956,4 +316010,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.65c0e957e3aa79053262.js.map
+//# sourceMappingURL=27519.5c452bfe2c88890e552a.js.map
