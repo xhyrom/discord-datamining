@@ -37191,7 +37191,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300932", ", Version Hash: ").concat("dd40eef621b6abad8c6c40c903d508f2b223e1ea")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300952", ", Version Hash: ").concat("f25f987ae86a7dcebe1b362c8aaaf706f37fb2ad")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89930,8 +89930,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300932", "300932"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300932")), t = 0), t
+                let t = parseInt((e = "300952", "300952"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300952")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -118096,8 +118096,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300932",
-                    versionHash: "dd40eef621b6abad8c6c40c903d508f2b223e1ea"
+                    buildNumber: "300952",
+                    versionHash: "f25f987ae86a7dcebe1b362c8aaaf706f37fb2ad"
                 }
             }
             n.r(t), n.d(t, {
@@ -118631,7 +118631,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("23404"), n.e("15357"), n.e("67526"), n.e("17220"), n.e("87624"), n.e("36861"), n.e("67032"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("18050")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("23404"), n.e("67526"), n.e("17220"), n.e("87624"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("85794"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -165876,6 +165876,7 @@
                             return {
                                 userId: r,
                                 channelId: n.channelId,
+                                viewingChannelId: n.viewingChannelId,
                                 guildId: null == a ? void 0 : a.getGuildId(),
                                 parsedUserId: _ ? u : null,
                                 roleName: e[2],
@@ -166995,7 +166996,8 @@
                         channelId: o,
                         parsedUserId: l,
                         roleId: u,
-                        roleName: d
+                        roleName: d,
+                        viewingChannelId: _
                     } = e;
                     return null == r && (null != u || "@everyone" === d || "@here" === d) ? (0, i.jsx)(s.default, {
                         inlinePreview: n.formatInline,
@@ -167005,6 +167007,7 @@
                         className: "mention",
                         userId: r,
                         channelId: o,
+                        viewingChannelId: _,
                         parsedUserId: l,
                         content: t(e.content, n),
                         inlinePreview: n.noStyleAndInteraction
@@ -171323,7 +171326,8 @@
                     disableAutoBlockNewlines: !0,
                     mentionChannels: [],
                     muted: !1,
-                    unknownUserMentionPlaceholder: !0
+                    unknownUserMentionPlaceholder: !0,
+                    viewingChannelId: i.viewingChannelId
                 }
             }
 
@@ -173653,53 +173657,55 @@
                     channelId: s,
                     parsedUserId: I,
                     content: L,
-                    inlinePreview: v = !1
+                    inlinePreview: v = !1,
+                    viewingChannelId: D
                 } = e, {
-                    analyticsLocations: D
-                } = (0, c.default)(_.default.USER_MENTION), M = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), y = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), P = null != y ? y.getGuildId() : null, U = v || null == M || null == P || null == s ? void 0 : e => {
-                    null != y && (0, d.openContextMenuLazy)(e, async () => {
+                    analyticsLocations: M
+                } = (0, c.default)(_.default.USER_MENTION), y = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), P = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), U = null != P ? P.getGuildId() : null, b = v || null == y || null == U || null == s ? void 0 : e => {
+                    null != P && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            user: M,
-                            channel: y,
-                            guildId: P
+                            viewingChannelId: D,
+                            user: y,
+                            channel: P,
+                            guildId: U
                         })
                     })
-                }, b = C.default.useName(M), G = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(P, s, M)), w = A.default.getGuild(P), k = (0, E.useClydeEnabled)(w, y) && r === R.CLYDE_AI_USER_ID ? R.CLYDE_AI_MENTION_COLOR : null;
-                if (null == M) return (0, i.jsx)(g, {
+                }, G = C.default.useName(y), w = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(U, s, y)), k = A.default.getGuild(U), B = (0, E.useClydeEnabled)(k, P) && r === R.CLYDE_AI_USER_ID ? R.CLYDE_AI_MENTION_COLOR : null;
+                if (null == y) return (0, i.jsx)(g, {
                     userId: I,
                     className: t,
                     children: L
                 });
-                let B = e => (0, i.jsx)(p.default, {
+                let V = e => (0, i.jsx)(p.default, {
                     className: t,
-                    onContextMenu: U,
-                    color: k,
+                    onContextMenu: b,
+                    color: B,
                     ...e,
-                    children: "@".concat(null != G ? G : b)
+                    children: "@".concat(null != w ? w : G)
                 });
                 return v ? (0, i.jsx)(c.AnalyticsLocationProvider, {
-                    value: D,
-                    children: B()
+                    value: M,
+                    children: V()
                 }) : (0, i.jsx)(c.AnalyticsLocationProvider, {
-                    value: D,
+                    value: M,
                     children: (0, i.jsx)(u.Popout, {
-                        preload: null == M ? void 0 : () => (0, T.maybeFetchUserProfileForPopout)(M.id, M.getAvatarURL(P, 80), {
-                            guildId: null != P ? P : void 0,
+                        preload: null == y ? void 0 : () => (0, T.maybeFetchUserProfileForPopout)(y.id, y.getAvatarURL(U, 80), {
+                            guildId: null != U ? U : void 0,
                             channelId: null != s ? s : void 0
                         }),
-                        renderPopout: e => (a()(null != M, "Unexpected missing user"), (0, i.jsx)(f.default, {
+                        renderPopout: e => (a()(null != y, "Unexpected missing user"), (0, i.jsx)(f.default, {
                             location: "UserMention",
-                            userId: M.id,
-                            guildId: null != P ? P : void 0,
+                            userId: y.id,
+                            guildId: null != U ? U : void 0,
                             channelId: s,
                             ...e
                         })),
                         position: o.isMobile ? "top" : "right",
-                        children: e => B(e)
+                        children: e => V(e)
                     })
                 })
             }
@@ -173901,8 +173907,9 @@
                     allowLinks: f = !1,
                     allowDevLinks: S = !1,
                     allowSubtext: h = !1,
-                    previewLinkTarget: A = !1
-                } = t, m = (0, r.useActiveKeywordFiltersCacheKey)();
+                    previewLinkTarget: A = !1,
+                    viewingChannelId: m
+                } = t, N = (0, r.useActiveKeywordFiltersCacheKey)();
                 return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isUnsupported ? {
                     content: u.default.Messages.MESSAGE_UNSUPPORTED,
                     hasSpoilerEmbeds: !1
@@ -173921,8 +173928,9 @@
                     allowSubtext: h,
                     allowDevLinks: S,
                     previewLinkTarget: A,
-                    shouldFilterKeywords: null != m
-                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, _, c, E, I, T, f, A, h, m])
+                    shouldFilterKeywords: null != N,
+                    viewingChannelId: m
+                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, _, c, E, I, T, f, A, h, N])
             }
         },
         761910: function(e, t, n) {
@@ -174180,8 +174188,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718135503416",
-                                    build_number: "300932"
+                                    built_at: "1718136806517",
+                                    build_number: "300952"
                                 }
                             },
                             retries: 1
@@ -251471,7 +251479,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "dd40eef621b6abad8c6c40c903d508f2b223e1ea"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f25f987ae86a7dcebe1b362c8aaaf706f37fb2ad"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280677,7 +280685,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300932"
+                                build_number: "300952"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287988,7 +287996,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300932", "300932"), 10);
+                let s = parseInt((n = "300952", "300952"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315945,4 +315953,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.18c7a58ebc730ecd05a4.js.map
+//# sourceMappingURL=27519.c35aa9851819a9d31d4d.js.map
