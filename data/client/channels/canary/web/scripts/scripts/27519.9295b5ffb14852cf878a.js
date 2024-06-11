@@ -37179,7 +37179,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300753", ", Version Hash: ").concat("4a82df705fb5552c8ef49f3bc18912262014fc62")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300755", ", Version Hash: ").concat("66bfde9332741751fc0c809224364b7ed7a62301")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89125,8 +89125,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300753", "300753"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300753")), t = 0), t
+                let t = parseInt((e = "300755", "300755"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300755")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117291,8 +117291,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300753",
-                    versionHash: "4a82df705fb5552c8ef49f3bc18912262014fc62"
+                    buildNumber: "300755",
+                    versionHash: "66bfde9332741751fc0c809224364b7ed7a62301"
                 }
             }
             n.r(t), n.d(t, {
@@ -170534,26 +170534,27 @@
             function I(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 return function(e, t, n) {
+                    var s;
                     let {
-                        toAST: s = !1,
-                        hideSimpleEmbedContent: a = !0,
-                        formatInline: l = !1,
-                        postProcessor: c,
-                        shouldFilterKeywords: E,
-                        contentMessage: I
-                    } = n, T = !1, h = (null != I ? I : t).content, A = e(E ? (0, r.getKeywordSubstitutedContent)(h, {
+                        toAST: a = !1,
+                        hideSimpleEmbedContent: l = !0,
+                        formatInline: c = !1,
+                        postProcessor: E,
+                        shouldFilterKeywords: I,
+                        contentMessage: T
+                    } = n, h = !1, A = (null != T ? T : t).content, m = e(I ? (0, r.getKeywordSubstitutedContent)(A, {
                         escapeReplacement: !0,
                         messageId: t.id,
                         channelId: t.channel_id,
-                        authorId: t.author.id
-                    }) : h, !0, _(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), a && (e = function(e, t) {
+                        authorId: null === (s = t.author) || void 0 === s ? void 0 : s.id
+                    }) : A, !0, _(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), l && (e = function(e, t) {
                         if (1 !== e.length || 1 !== t.length) return e;
                         let n = e[0],
                             i = t[0];
                         return ("link" === n.type || "attachmentLink" === n.type) && u.has(i.type) && (0, o.isEmbedInline)(i) ? [] : e
-                    }(e, (null != I ? I : t).embeds)), !l && (e = function(e, t) {
+                    }(e, (null != T ? T : t).embeds)), !c && (e = function(e, t) {
                         return t ? f(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = f(e[0].content)), e)
-                    }(e, n)), T = function(e, t) {
+                    }(e, n)), h = function(e, t) {
                         return t ? S(e) : "paragraph" === e[0].type && e[0].content instanceof Array && S(e[0].content)
                     }(e = function(e) {
                         let t = e.some(e => "link" !== e.type || !1);
@@ -170562,14 +170563,14 @@
                                 r = (0, i.parseQuestsEmbedCode)(e.target);
                             return !(n && null != r && !t)
                         })
-                    }(e), n), l && (e = function e(t) {
+                    }(e), n), c && (e = function e(t) {
                         return t.forEach(t => {
                             d.has(t.type) && null != t.content && (Array.isArray(t.content) ? e(t.content) : t.content = t.content.replace(/\n/g, " "))
                         }), t
-                    }(e)), null != c && (e = c(e, n)), e));
+                    }(e)), null != E && (e = E(e, n)), e));
                     return {
-                        hasSpoilerEmbeds: T,
-                        content: A
+                        hasSpoilerEmbeds: h,
+                        content: m
                     }
                 }(t.formatInline ? s.default.parseInlineReply : s.default.parse, e, t)
             }
@@ -173374,8 +173375,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718123624425",
-                                    build_number: "300753"
+                                    built_at: "1718123782627",
+                                    build_number: "300755"
                                 }
                             },
                             retries: 1
@@ -250657,7 +250658,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4a82df705fb5552c8ef49f3bc18912262014fc62"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "66bfde9332741751fc0c809224364b7ed7a62301"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279863,7 +279864,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300753"
+                                build_number: "300755"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287174,7 +287175,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300753", "300753"), 10);
+                let s = parseInt((n = "300755", "300755"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315131,4 +315132,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.8ed9d8f83711a6efae16.js.map
+//# sourceMappingURL=27519.9295b5ffb14852cf878a.js.map
