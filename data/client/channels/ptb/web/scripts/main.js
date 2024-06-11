@@ -35448,29 +35448,31 @@
             "use strict";
             n.r(t), n.d(t, {
                 Toast: function() {
-                    return I
+                    return f
                 },
                 createToast: function() {
-                    return E
+                    return T
                 }
             });
             var i = n("735250"),
                 r = n("470079"),
                 s = n("153832"),
-                a = n("993365"),
-                o = n("481060"),
-                l = n("529653"),
-                u = n("502283"),
-                d = n("525241"),
-                _ = n("561466"),
-                c = n("140139");
+                a = n("59262"),
+                o = n("632140"),
+                l = n("993365"),
+                u = n("481060"),
+                d = n("529653"),
+                _ = n("502283"),
+                c = n("525241"),
+                E = n("561466"),
+                I = n("140139");
 
-            function E(e, t) {
-                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : _.TOAST_DEFAULT_OPTIONS,
+            function T(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.TOAST_DEFAULT_OPTIONS,
                     {
-                        position: i = _.TOAST_DEFAULT_OPTIONS.position,
-                        component: r = _.TOAST_DEFAULT_OPTIONS.component,
-                        duration: a = _.TOAST_DEFAULT_OPTIONS.duration
+                        position: i = E.TOAST_DEFAULT_OPTIONS.position,
+                        component: r = E.TOAST_DEFAULT_OPTIONS.component,
+                        duration: a = E.TOAST_DEFAULT_OPTIONS.duration
                     } = n;
                 return {
                     message: e,
@@ -35483,42 +35485,52 @@
                     }
                 }
             }
-            let I = r.memo(function(e) {
+            let f = r.memo(function(e) {
                 let {
                     message: t,
                     type: n,
                     id: r,
                     options: {
-                        component: s = _.TOAST_DEFAULT_OPTIONS.component
-                    } = _.TOAST_DEFAULT_OPTIONS
+                        component: s = E.TOAST_DEFAULT_OPTIONS.component
+                    } = E.TOAST_DEFAULT_OPTIONS
                 } = e;
                 return null != s ? (0, i.jsx)(i.Fragment, {
                     children: s
                 }) : (0, i.jsxs)("div", {
                     id: r,
-                    className: c.toast,
+                    className: I.toast,
                     children: [function(e) {
                         switch (e) {
-                            case _.ToastType.SUCCESS:
+                            case E.ToastType.SUCCESS:
+                                return (0, i.jsx)(c.default, {
+                                    className: I.icon,
+                                    color: u.tokens.colors.STATUS_POSITIVE.css
+                                });
+                            case E.ToastType.FAILURE:
+                                return (0, i.jsx)(_.default, {
+                                    className: I.icon,
+                                    color: u.tokens.colors.STATUS_DANGER.css
+                                });
+                            case E.ToastType.CLIP:
                                 return (0, i.jsx)(d.default, {
-                                    className: c.icon,
-                                    color: o.tokens.colors.STATUS_POSITIVE.css
+                                    className: I.clipIcon,
+                                    color: u.tokens.colors.HEADER_PRIMARY.css
                                 });
-                            case _.ToastType.FAILURE:
-                                return (0, i.jsx)(u.default, {
-                                    className: c.icon,
-                                    color: o.tokens.colors.STATUS_DANGER.css
+                            case E.ToastType.LINK:
+                                return (0, i.jsx)(o.LinkIcon, {
+                                    className: I.icon,
+                                    color: u.tokens.colors.HEADER_PRIMARY.css
                                 });
-                            case _.ToastType.CLIP:
-                                return (0, i.jsx)(l.default, {
-                                    className: c.clipIcon,
-                                    color: o.tokens.colors.HEADER_PRIMARY.css
+                            case E.ToastType.FORWARD:
+                                return (0, i.jsx)(a.ArrowAngleRightUpIcon, {
+                                    className: I.icon,
+                                    color: u.tokens.colors.STATUS_POSITIVE.css
                                 });
                             default:
                                 return null
                         }
-                    }(n), (0, i.jsx)(a.Text, {
-                        className: c.__invalid_content,
+                    }(n), (0, i.jsx)(l.Text, {
+                        className: I.__invalid_content,
                         color: "header-primary",
                         variant: "text-md/normal",
                         children: t
@@ -35581,7 +35593,7 @@
                     return i
                 }
             });
-            (s = i || (i = {}))[s.MESSAGE = 0] = "MESSAGE", s[s.SUCCESS = 1] = "SUCCESS", s[s.FAILURE = 2] = "FAILURE", s[s.CUSTOM = 3] = "CUSTOM", s[s.CLIP = 4] = "CLIP", (a = r || (r = {}))[a.TOP = 0] = "TOP", a[a.BOTTOM = 1] = "BOTTOM";
+            (s = i || (i = {}))[s.MESSAGE = 0] = "MESSAGE", s[s.SUCCESS = 1] = "SUCCESS", s[s.FAILURE = 2] = "FAILURE", s[s.CUSTOM = 3] = "CUSTOM", s[s.CLIP = 4] = "CLIP", s[s.LINK = 5] = "LINK", s[s.FORWARD = 6] = "FORWARD", (a = r || (r = {}))[a.TOP = 0] = "TOP", a[a.BOTTOM = 1] = "BOTTOM";
             let o = {
                 position: 0,
                 component: null,
@@ -37179,7 +37191,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300825", ", Version Hash: ").concat("9db7261d4b7ef9779ac6e201ba88a76de0d473c3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300872", ", Version Hash: ").concat("a895dc7184e20dc2570c438ecc9797b9440d6801")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38926,6 +38938,8 @@
                 COMMAND_ACCESSIBILITY_DESC_APP_HEADER_ITEM: "Slash command application {applicationName}",
                 COMMAND_ACCESSIBILITY_DESC_COMMAND_OPTION_BUTTON: "Add command argument {optionName}",
                 APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER: "Recents",
+                APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER_OPTION_COMMANDS: "Commands",
+                APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER_OPTION_APPS: "Apps",
                 APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Installed",
                 APP_LAUNCHER_COMMAND_LIST_SORT_HEADER: "Sort By",
                 APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_POPULAR: "Popular",
@@ -55879,9 +55893,9 @@
                 MESSAGE_ACTION_FORWARD_MEDIA_A11Y: "Forward media from this message",
                 MESSAGE_ACTION_FORWARD_EMBED_A11Y: "Forward embed from this message",
                 MESSAGES_SEND_SEPARATELY: "Send ({count, number})",
-                MESSAGES_FORWARD_MAX_DESTINATION_COUNT: "Maximum {count, number} places at once",
+                MESSAGES_FORWARD_MAX_DESTINATION_COUNT: "Maximum {count, number} places at once.",
                 MESSAGE_FORWARD_SUCCESS: "Message forwarded!",
-                MESSAGE_FORWARDING_NSFW_NOT_ALLOWED: "Messages cannot be forwarded from age-restricted to unrestricted channels",
+                MESSAGE_FORWARDING_NSFW_NOT_ALLOWED: "Messages cannot be forwarded from age-restricted to unrestricted channels.",
                 MESSAGE_CHANNEL_ATTACHMENTS_DISABLED: "Attachments are disabled in this channel.",
                 MESSAGE_CHANNEL_EMBEDS_DISABLED: "Embeds are disabled in this channel.",
                 MESSAGE_FORWARD_FAILED: "Forward Failed",
@@ -88987,7 +89001,7 @@
                         }, (0, o.openModalLazy)(async () => {
                             let {
                                 default: e
-                            } = await n.e("41549").then(n.bind(n, "78865"));
+                            } = await n.e("28479").then(n.bind(n, "78865"));
                             return t => (0, i.jsx)(e, {
                                 ...t,
                                 analyticsSource: d
@@ -89915,8 +89929,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300825", "300825"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300825")), t = 0), t
+                let t = parseInt((e = "300872", "300872"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300872")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -96635,7 +96649,7 @@
                             l(!1), (0, I.openModalLazy)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("41947"), n.e("29042"), n.e("80374")]).then(n.bind(n, "273602"));
+                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("90508"), n.e("41947"), n.e("53289")]).then(n.bind(n, "273602"));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
                                     threadId: a,
@@ -118081,8 +118095,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300825",
-                    versionHash: "9db7261d4b7ef9779ac6e201ba88a76de0d473c3"
+                    buildNumber: "300872",
+                    versionHash: "a895dc7184e20dc2570c438ecc9797b9440d6801"
                 }
             }
             n.r(t), n.d(t, {
@@ -118616,7 +118630,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("23404"), n.e("67526"), n.e("97188"), n.e("87624"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("85794"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("70716"), n.e("23755"), n.e("30386"), n.e("80301"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("46136"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("62809"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("23404"), n.e("67526"), n.e("17220"), n.e("87624"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("85794"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("14171")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -154711,7 +154725,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("46136"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("62809"), n.e("29042"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("67526"), n.e("97188"), n.e("43643"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("83939"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("46136"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("62809"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("67526"), n.e("17220"), n.e("43643"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("83939"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -162830,7 +162844,7 @@
             async function _(e) {
                 let {
                     openInteractionModal: t
-                } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("77172"), n.e("8739"), n.e("58286"), n.e("30243"), n.e("69969")]).then(n.bind(n, "440934"));
+                } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("77172"), n.e("8739"), n.e("58286"), n.e("30243"), n.e("66712")]).then(n.bind(n, "440934"));
                 t(e), s.default.track(l.AnalyticEvents.OPEN_MODAL, {
                     type: "interaction_modal",
                     application_id: e.application.id
@@ -174165,8 +174179,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718128485694",
-                                    build_number: "300825"
+                                    built_at: "1718131769073",
+                                    build_number: "300872"
                                 }
                             },
                             retries: 1
@@ -251452,7 +251466,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9db7261d4b7ef9779ac6e201ba88a76de0d473c3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a895dc7184e20dc2570c438ecc9797b9440d6801"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280658,7 +280672,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300825"
+                                build_number: "300872"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287969,7 +287983,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300825", "300825"), 10);
+                let s = parseInt((n = "300872", "300872"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315926,4 +315940,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.0204c6b346eec3c15f0c.js.map
+//# sourceMappingURL=27519.6c83739fba521f5b3adc.js.map
