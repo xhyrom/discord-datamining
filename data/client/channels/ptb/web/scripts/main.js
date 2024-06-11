@@ -37191,7 +37191,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300948", ", Version Hash: ").concat("2fe54877705394c1e24b293c9b41826ca33ff37e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("300960", ", Version Hash: ").concat("d843a200da44893375787834cc7d9ed8d47e6107")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -89930,8 +89930,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "300948", "300948"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300948")), t = 0), t
+                let t = parseInt((e = "300960", "300960"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("300960")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115847,116 +115847,119 @@
                 r = n("570140"),
                 s = n("147913"),
                 a = n("38618"),
-                o = n("517100"),
-                l = n("451478"),
-                u = n("162461"),
-                d = n("564990"),
-                _ = n("146282"),
-                c = n("206583");
-            let E = c.ContentInventoryFeedKey.GLOBAL_FEED,
-                I = null,
-                T = !1,
-                f = 0,
-                S = null,
-                h = (0, i.debounce)(d.postTrackToContentInventory, 3e3, {
+                o = n("553795"),
+                l = n("517100"),
+                u = n("451478"),
+                d = n("162461"),
+                _ = n("564990"),
+                c = n("146282"),
+                E = n("206583"),
+                I = n("981631");
+            let T = E.ContentInventoryFeedKey.GLOBAL_FEED,
+                f = null,
+                S = !1,
+                h = 0,
+                A = null,
+                m = (0, i.debounce)(_.postTrackToContentInventory, 3e3, {
                     trailing: !0
                 });
 
-            function A(e) {
+            function N(e) {
                 r.default.dispatch({
                     type: "CONTENT_INVENTORY_SET_FEED_STATE",
-                    feedId: E,
+                    feedId: T,
                     state: e
                 })
             }
 
-            function m() {
-                p()
-            }
-
-            function N() {
-                if (!(0, u.isEligibleForContentInventoryV1)("ContentInventoryManager") || T || _.default.hidden || !l.default.isFocused() || !a.default.isConnected()) return !1;
-                let e = o.default.getIdleSince();
-                return !(null != e && Date.now() - e > 9e5) && !0
-            }
-
             function p() {
-                A({
-                    loading: !1
-                }), clearTimeout(I), I = null
+                C()
             }
 
             function O() {
-                if (p(), !N()) return;
-                let e = _.default.getFeed(E);
-                if ((null == e ? void 0 : e.refresh_stale_inbox_after_ms) != null && null == S) return;
-                let t = null != S ? S : null == e ? void 0 : e.expired_at,
-                    n = null == t ? 0 : new Date(t).getTime() - Date.now();
-                A({
-                    loading: !1,
-                    nextFetchDate: new Date(Date.now() + n)
-                }), I = setTimeout(() => C(), Math.max(0, n))
+                if (!(0, d.isEligibleForContentInventoryV1)("ContentInventoryManager") || S || c.default.hidden || !u.default.isFocused() || !a.default.isConnected()) return !1;
+                let e = l.default.getIdleSince();
+                return !(null != e && Date.now() - e > 9e5) && !0
             }
-            async function C() {
-                let {
-                    force: e = !1
-                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                if (N() || e) try {
-                    T = !0, A({
-                        loading: !0
-                    });
-                    let e = await (0, d.getMyContentInventory)();
-                    r.default.dispatch({
-                        type: "CONTENT_INVENTORY_SET_FEED",
-                        feedId: E,
-                        feed: e
-                    }), f = 0, T = !1, A({
-                        loading: !1
-                    }), S = null, O()
-                } catch (e) {
-                    f < 3 ? (I = setTimeout(() => C(), 1e3 * Math.pow(5, f)), f += 1) : r.default.dispatch({
-                        type: "CONTENT_INVENTORY_CLEAR_FEED",
-                        feedId: E
-                    }), T = !1
-                }
+
+            function C() {
+                N({
+                    loading: !1
+                }), clearTimeout(f), f = null
             }
 
             function R() {
-                O()
+                if (C(), !O()) return;
+                let e = c.default.getFeed(T);
+                if ((null == e ? void 0 : e.refresh_stale_inbox_after_ms) != null && null == A) return;
+                let t = null != A ? A : null == e ? void 0 : e.expired_at,
+                    n = null == t ? 0 : new Date(t).getTime() - Date.now();
+                N({
+                    loading: !1,
+                    nextFetchDate: new Date(Date.now() + n)
+                }), f = setTimeout(() => g(), Math.max(0, n))
+            }
+            async function g() {
+                let {
+                    force: e = !1
+                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                if (O() || e) try {
+                    S = !0, N({
+                        loading: !0
+                    });
+                    let e = await (0, _.getMyContentInventory)();
+                    r.default.dispatch({
+                        type: "CONTENT_INVENTORY_SET_FEED",
+                        feedId: T,
+                        feed: e
+                    }), h = 0, S = !1, N({
+                        loading: !1
+                    }), A = null, R()
+                } catch (e) {
+                    h < 3 ? (f = setTimeout(() => g(), 1e3 * Math.pow(5, h)), h += 1) : r.default.dispatch({
+                        type: "CONTENT_INVENTORY_CLEAR_FEED",
+                        feedId: T
+                    }), S = !1
+                }
             }
 
-            function g() {
-                p(), C({
+            function L() {
+                R()
+            }
+
+            function v() {
+                C(), g({
                     force: !0
                 })
             }
 
-            function L(e) {
+            function D(e) {
                 let {
                     refreshAfterMs: t
-                } = e, n = _.default.getFeed(E);
-                if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null) S = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), O()
+                } = e, n = c.default.getFeed(T);
+                if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null) A = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), R()
             }
 
-            function v(e) {
+            function M(e) {
+                var t;
                 let {
-                    connectionId: t,
-                    track: n
+                    connectionId: n,
+                    track: i
                 } = e;
-                if (null != t)(0, u.isEligibleForListenedMediaInventory)("ContentInventoryManager.handleSpotifyNewTrack") && h(t, n)
+                if (null != n && !!(0, d.isEligibleForListenedMediaInventory)("ContentInventoryManager.handleSpotifyNewTrack"))(null === (t = o.default.getAccount(n, I.PlatformTypes.SPOTIFY)) || void 0 === t ? void 0 : t.showActivity) && m(n, i)
             }
-            class D extends s.default {
+            class y extends s.default {
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: R,
-                        CONNECTION_CLOSED: m,
-                        WINDOW_FOCUS: R,
-                        IDLE: R,
-                        CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: R,
-                        CONTENT_INVENTORY_MANUAL_REFRESH: g,
-                        CONTENT_INVENTORY_INBOX_STALE: L,
-                        SPOTIFY_NEW_TRACK: v
+                        POST_CONNECTION_OPEN: L,
+                        CONNECTION_CLOSED: p,
+                        WINDOW_FOCUS: L,
+                        IDLE: L,
+                        CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: L,
+                        CONTENT_INVENTORY_MANUAL_REFRESH: v,
+                        CONTENT_INVENTORY_INBOX_STALE: D,
+                        SPOTIFY_NEW_TRACK: M
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -115965,7 +115968,7 @@
                     }) : t[n] = i
                 }
             }
-            t.default = new D
+            t.default = new y
         },
         146282: function(e, t, n) {
             "use strict";
@@ -118096,8 +118099,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "300948",
-                    versionHash: "2fe54877705394c1e24b293c9b41826ca33ff37e"
+                    buildNumber: "300960",
+                    versionHash: "d843a200da44893375787834cc7d9ed8d47e6107"
                 }
             }
             n.r(t), n.d(t, {
@@ -174188,8 +174191,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718136595784",
-                                    build_number: "300948"
+                                    built_at: "1718137273091",
+                                    build_number: "300960"
                                 }
                             },
                             retries: 1
@@ -251479,7 +251482,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2fe54877705394c1e24b293c9b41826ca33ff37e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d843a200da44893375787834cc7d9ed8d47e6107"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280685,7 +280688,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "300948"
+                                build_number: "300960"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287996,7 +287999,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "300948", "300948"), 10);
+                let s = parseInt((n = "300960", "300960"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -315953,4 +315956,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27519.022cb55178aa932af20e.js.map
+//# sourceMappingURL=27519.65c0e957e3aa79053262.js.map
