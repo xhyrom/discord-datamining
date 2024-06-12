@@ -123046,7 +123046,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-sm-normal__5c123 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -123057,7 +123057,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-sm-medium_f007dd {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -123068,7 +123068,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-sm-semibold__1cc93 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -123079,7 +123079,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-sm-bold_a985ce {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -123090,7 +123090,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-sm-extrabold__3bf24 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 800
 }
@@ -123101,7 +123101,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-md-normal__9813f {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -123112,7 +123112,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-md-medium__737cb {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -123123,7 +123123,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-md-semibold__1d511 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -123134,7 +123134,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-md-bold_bdf092 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -123145,7 +123145,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-md-extrabold__07105 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -123156,7 +123156,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-lg-normal__19163 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -123167,7 +123167,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-lg-medium_d0ac60 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -123178,7 +123178,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-lg-semibold__88110 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -123189,7 +123189,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-lg-bold_fd2d97 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -123200,7 +123200,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-lg-extrabold__43654 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 800
 }
@@ -123211,7 +123211,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xl-normal_ccbf17 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -123222,7 +123222,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xl-medium__3f981 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -123233,7 +123233,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xl-semibold_f808ad {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -123244,7 +123244,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xl-bold_af2f78 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -123255,7 +123255,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xl-extrabold__638c6 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -123266,7 +123266,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xxl-normal__931d7 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -123277,7 +123277,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xxl-medium__9caa2 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -123288,7 +123288,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xxl-semibold__6489d {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -123299,7 +123299,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xxl-bold_a3c928 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -123310,7 +123310,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-xxl-extrabold__78c7d {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -123321,7 +123321,7 @@ div:has(>div>.container__8ab05) {
 
 .eyebrow_f92eb2 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700;
     text-transform: uppercase;
@@ -123334,7 +123334,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-deprecated-12-normal_ed9f8d {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -123345,7 +123345,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-deprecated-12-medium_f75e6a {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -123356,7 +123356,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-deprecated-12-semibold__77fb3 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -123367,7 +123367,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-deprecated-12-bold_bbc224 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -123378,7 +123378,7 @@ div:has(>div>.container__8ab05) {
 
 .heading-deprecated-12-extrabold__031ac {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 800
 }
@@ -123389,7 +123389,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-heading-18-bold_bfe9df {
     font-family: var(--font-display);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -123400,7 +123400,7 @@ div:has(>div>.container__8ab05) {
 
 .text-xxs-normal__3cf06 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -123411,7 +123411,7 @@ div:has(>div>.container__8ab05) {
 
 .text-xxs-medium__8c973 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -123422,7 +123422,7 @@ div:has(>div>.container__8ab05) {
 
 .text-xxs-semibold__5865c {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -123433,7 +123433,7 @@ div:has(>div>.container__8ab05) {
 
 .text-xxs-bold__2eca9 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -123444,7 +123444,7 @@ div:has(>div>.container__8ab05) {
 
 .text-xs-normal__07d41 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -123455,7 +123455,7 @@ div:has(>div>.container__8ab05) {
 
 .text-xs-medium_f107da {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -123466,7 +123466,7 @@ div:has(>div>.container__8ab05) {
 
 .text-xs-semibold__1f80f {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -123477,7 +123477,7 @@ div:has(>div>.container__8ab05) {
 
 .text-xs-bold__13471 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -123488,7 +123488,7 @@ div:has(>div>.container__8ab05) {
 
 .text-sm-normal__69701 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -123499,7 +123499,7 @@ div:has(>div>.container__8ab05) {
 
 .text-sm-medium_ab6968 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -123510,7 +123510,7 @@ div:has(>div>.container__8ab05) {
 
 .text-sm-semibold__008e2 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -123521,7 +123521,7 @@ div:has(>div>.container__8ab05) {
 
 .text-sm-bold__02bf4 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -123532,7 +123532,7 @@ div:has(>div>.container__8ab05) {
 
 .text-md-normal_b7c4b9 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -123543,7 +123543,7 @@ div:has(>div>.container__8ab05) {
 
 .text-md-medium__1da3f {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -123554,7 +123554,7 @@ div:has(>div>.container__8ab05) {
 
 .text-md-semibold_f87958 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -123565,7 +123565,7 @@ div:has(>div>.container__8ab05) {
 
 .text-md-bold__1067f {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -123576,7 +123576,7 @@ div:has(>div>.container__8ab05) {
 
 .text-lg-normal__88fd8 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -123587,7 +123587,7 @@ div:has(>div>.container__8ab05) {
 
 .text-lg-medium__9d56a {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -123598,7 +123598,7 @@ div:has(>div>.container__8ab05) {
 
 .text-lg-semibold__3df20 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -123609,7 +123609,7 @@ div:has(>div>.container__8ab05) {
 
 .text-lg-bold__9a1d0 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -123620,7 +123620,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-message-preview-normal__51a59 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -123631,7 +123631,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-message-preview-medium_caa50a {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -123642,7 +123642,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-message-preview-semibold__30ffe {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -123653,7 +123653,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-message-preview-bold_f425b3 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -123664,7 +123664,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-channel-title-normal__16199 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 400
 }
@@ -123675,7 +123675,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-channel-title-medium__2f982 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 500
 }
@@ -123686,7 +123686,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-channel-title-semibold__4c67d {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 600
 }
@@ -123697,7 +123697,7 @@ div:has(>div>.container__8ab05) {
 
 .redesign-channel-title-bold_cc64a3 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 700
 }
@@ -123708,7 +123708,7 @@ div:has(>div>.container__8ab05) {
 
 .display-sm__02dcc {
     font-family: var(--font-headline);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1;
     font-weight: 800
 }
@@ -123719,7 +123719,7 @@ div:has(>div>.container__8ab05) {
 
 .display-md__8bc34 {
     font-family: var(--font-headline);
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 1.0588235294117647;
     font-weight: 800
 }
@@ -123730,7 +123730,7 @@ div:has(>div>.container__8ab05) {
 
 .display-lg__12f62 {
     font-family: var(--font-headline);
-    font-size: 44px;
+    font-size: 2.75rem;
     line-height: .9545454545454546;
     font-weight: 800
 }
@@ -123741,7 +123741,7 @@ div:has(>div>.container__8ab05) {
 
 .code_da6f0c {
     font-family: var(--font-code);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -140983,4 +140983,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f236b10f45bb78fc8626.css.map*/
+/*# sourceMappingURL=99387.c7efb1dcc9059db3bfce.css.map*/
