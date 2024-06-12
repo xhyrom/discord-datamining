@@ -21,7 +21,7 @@
 </ul>
 <h1 id="h_01HVRY7E8SNEPQT1Q6H7T6ME4X">SHARE NITRO ELIGIBILITY </h1>
 <h2 id="h_01HVRY7E8SSPXDFV3PXM9CHTNE">Nitro Members Sharing a Trial</h2>
-<h3 id="h_01HVRY7E8SZDVXYBMZ21XF14ER"><span style="color: #434343;">Only eligible Nitro members (either monthly or yearly), will be able to see the Share Nitro trial option. </span></h3>
+<p id="h_01HVRY7E8SZDVXYBMZ21XF14ER"><span style="color: #434343;">Only eligible Nitro members (either monthly or yearly), will be able to see the Share Nitro trial option. </span></p>
 <p><span style="color: #2e3338; background-color: #ffffff;">You will </span><strong><span style="color: #2e3338; background-color: #ffffff;">not</span></strong><span style="color: #2e3338; background-color: #ffffff;"> be eligible to send a Nitro trial if: </span></p>
 <ul>
     <li><span style="color: #2e3338; background-color: #ffffff;">You are a Nitro Classic or Nitro Basic member.</span></li>
@@ -29,12 +29,15 @@
 </ul>
 <h2 id="h_01HVRY7E8S1GMH2YZTN907BAY5">Friends Receiving a Trial</h2>
 <p id="docs-internal-guid-45ed59b1-7fff-7411-bed3-94b50d56a2d0"><span style="color: #2e3338; background-color: #ffffff;">Users who appear in the </span><strong><span style="color: #2e3338; background-color: #ffffff;">Select Friends</span></strong><span style="color: #2e3338; background-color: #ffffff;"> modal are eligible to receive a Nitro trial from you. </span><span style="color: #2e3338; background-color: #ffffff;"><br></span><span style="color: #2e3338; background-color: #ffffff;">If a specific person does not appear in the </span><strong><span style="color: #2e3338; background-color: #ffffff;">Select Friends </span></strong><span style="color: #2e3338; background-color: #ffffff;">modal, it means the person you’re trying to share a trial with is ineligible to receive a trial. Being ineligible for a trial could occur for several reasons, including having a Nitro membership in the last 30 days, accepting another trial offer, and more. If you can’t find the specific person you’re looking for, you’ll need to share the trial with another person, or try again later. </span></p>
+<h3 id="docs-internal-guid-384cf55d-7fff-0e12-78ec-8af231eac02b">
+    <span style="color: #2e3338;"><strong>Note:</strong> You do not need to be Discord “<a href="https://support.discord.com/hc/articles/218344397-How-do-I-add-my-friend-to-my-friends-list" target="_blank" rel="noopener noreferrer">friends</a>” with someone to send or receive a Share Nitro trial,  but you must be able to send a direct message (DM) to them. For information on sending DMs, refer to our Help Center article</span><a href="https://support.discord.com/hc/en-us/articles/360060145013-Why-isn-t-my-DM-going-through" target="_blank" rel="noopener noreferrer"> here</a><span style="color: #2e3338;">.</span>
+</h3>
 <h1 id="h_01HVRY7E8S7RJM0888YQMZCMGE">HOW TO SHARE A NITRO TRIAL WITH YOUR FRIENDS</h1>
 <p>As a Nitro member, follow these steps:</p>
 <p>1. On the desktop or browser app, press the <strong>Direct Messages</strong> button in the top left corner and then select the <strong>Nitro</strong> tab. Alternatively, you can navigate to your <strong>User Settings &gt; Nitro</strong>.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22898479825303" width="584" height="416"></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-c385601e-7fff-c1fa-bfa8-0de5bb3736f5"><img src="https://support.discord.com/hc/article_attachments/24143904581655" width="565" height="402"></span></p>
 <p>2. After navigating to the Nitro homepage, you’ll see the <strong>Share Nitro </strong>banner. Pressing the <strong>Select Friends</strong> button on this banner will open the <strong>Select Friends</strong> window.</p>
-<p class="wysiwyg-text-align-center"> <img src="https://support.discord.com/hc/article_attachments/22898479843351" width="576" height="511"></p>
+<p class="wysiwyg-text-align-center"> <span id="docs-internal-guid-5123094a-7fff-edf4-2d49-b68b8dc93f4d"><img src="https://support.discord.com/hc/article_attachments/24143906575255" width="602" height="536"></span></p>
 <p>3. While here, you can choose the friends to whom you wish to send a Nitro Trial. When you’re ready, select <strong>Share Trial</strong> to confirm. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22898479853847" width="601" height="428"></p>
 <p>Once completed, a confirmation should appear. You will also be able to view the shared trial in the direct message (DM) that was sent to your friend.</p>
