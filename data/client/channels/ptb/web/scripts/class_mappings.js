@@ -7049,6 +7049,12 @@
                 switch: "switch__0b70d"
             }
         },
+        706311: function(e) {
+            "use strict";
+            e.exports = {
+                panel: "panel__8073d"
+            }
+        },
         416495: function(e) {
             "use strict";
             e.exports = {
