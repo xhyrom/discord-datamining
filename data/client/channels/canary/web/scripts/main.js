@@ -40166,7 +40166,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301415", ", Version Hash: ").concat("ff871031933f5ffaa2b3b743177c1ed8fb8c55b8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301427", ", Version Hash: ").concat("ead6c29470fbf7f2c0e7ea97ec05532b8d6ab920")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52395,7 +52395,7 @@
                 ROLE_PERMISSIONS_USE_EMBEDDED_ACTIVITIES_DESCRIPTION_CATEGORY: "Allows members to use Activities in these channels.",
                 ROLE_PERMISSIONS_USE_EXTERNAL_APPS: "Use External Apps",
                 ROLE_PERMISSIONS_USE_EXTERNAL_APPS_GUILD_DESCRIPTION: "Allows apps that members have added to their account to post messages. When disabled, the messages will be private.",
-                ROLE_PERMISSIONS_USE_EXTERNAL_APPS_GUILD_DESCRIPTION_NOT_ENABLED_YET: "This feature is not enabled for this guild but will be soon. Stay tuned to Community Updates for an announcement!",
+                ROLE_PERMISSIONS_USE_EXTERNAL_APPS_GUILD_DESCRIPTION_NOT_ENABLED_YET: "This feature is not enabled for this server but will be soon. Stay tuned to Community Updates for an announcement!",
                 ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_CHANNEL: "Allows apps that members have added to their account to post messages in this channel. When disabled, the messages will be private.",
                 ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_CATEGORY: "Allows apps that members have added to their account to post messages in these channels. When disabled, the messages will be private.",
                 IOS_GUILD_DELETE_FEEDBACK_HEADER: "Why are you deleting this server?",
@@ -93061,8 +93061,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301415", "301415"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301415")), t = 0), t
+                let t = parseInt((e = "301427", "301427"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301427")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121228,8 +121228,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301415",
-                    versionHash: "ff871031933f5ffaa2b3b743177c1ed8fb8c55b8"
+                    buildNumber: "301427",
+                    versionHash: "ead6c29470fbf7f2c0e7ea97ec05532b8d6ab920"
                 }
             }
             n.r(t), n.d(t, {
@@ -177423,8 +177423,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718226355570",
-                                    build_number: "301415"
+                                    built_at: "1718227102294",
+                                    build_number: "301427"
                                 }
                             },
                             retries: 1
@@ -254783,7 +254783,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ff871031933f5ffaa2b3b743177c1ed8fb8c55b8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ead6c29470fbf7f2c0e7ea97ec05532b8d6ab920"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283352,7 +283352,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301415"
+                                build_number: "301427"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290664,7 +290664,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301415", "301415"), 10);
+                let s = parseInt((n = "301427", "301427"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318829,4 +318829,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.d910636008e0927baea8.js.map
+//# sourceMappingURL=42458.8bb3b2a364d0bd182e85.js.map
