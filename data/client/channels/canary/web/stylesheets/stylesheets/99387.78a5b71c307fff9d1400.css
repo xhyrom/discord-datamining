@@ -40559,11 +40559,16 @@ img.thumbnail__18ece {
     gap: 12px
 }
 
-.content__753a1 {
-    pointer-events: none;
+.footer__9b24d {
+    z-index: 1;
+    padding: 0 16px 16px;
     display: flex;
-    flex-direction: column;
-    gap: 12px
+    flex-direction: column
+}
+
+.footer__9b24d:empty {
+    visibility: hidden;
+    padding: 0
 }
 
 .container_c8de55 {
@@ -140971,4 +140976,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.675ff8680e3cac4b3f97.css.map*/
+/*# sourceMappingURL=99387.78a5b71c307fff9d1400.css.map*/
