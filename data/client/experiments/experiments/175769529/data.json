@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_rtc_pacer__simulcast",
+    "label": "RTC Pacer & Golive Simulcast",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Golive Simulcast",
+      "Treatment 2: Golive Simulcast with pacing and probing",
+      "Treatment 3: Golive with pacing",
+      "Treatment 4: Golive with pacing and probing"
+    ],
+    "hash": 175769529,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
