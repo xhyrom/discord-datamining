@@ -1555,7 +1555,6 @@
                     SEND_GAMING_STATS: _ => "/".concat(_, "/gaming-stats"),
                     UPDATE_GAMING_STATS: (_, E) => "/".concat(_, "/").concat(E, "/update-gaming-stats"),
                     BULK_GUILD_BAN: _ => "/guilds/".concat(_, "/bulk-ban"),
-                    EXPLICIT_MEDIA_GET_VALID_CONTENT_SCAN_VERSION: "/explicit-media/current-version",
                     EXPLICIT_MEDIA_SCAN_MESSAGES: _ => "/channels/".concat(_, "/explicit-media"),
                     EXPLICIT_MEDIA_SCAN_MULTI_CHANNEL_MESSAGES: "/messages/explicit-media",
                     POLL_ANSWERS: (_, E) => "/channels/".concat(_, "/polls/").concat(E, "/answers/@me"),
@@ -2623,7 +2622,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-6dc5c1192693ae50e9740b354bc3e28275ab61fd",
+                    release: "discord_web-d7e9d42d92909a1a078d900a870927d438fe7050",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2641,7 +2640,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "301285", "301285")), I.setTag("builtAt", String("1718214053556"));
+                }), I.setTag("buildNumber", (_ = "301290", "301290")), I.setTag("builtAt", String("1718214457840"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -14227,4 +14226,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.6c25213aaecaefed2c8f.js.map
+//# sourceMappingURL=84471.05294a60c817b18c7009.js.map
