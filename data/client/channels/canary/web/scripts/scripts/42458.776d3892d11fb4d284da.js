@@ -40166,7 +40166,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301211", ", Version Hash: ").concat("4d7ba1050787b5d41d21b4abe7f4618992ddabc0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301214", ", Version Hash: ").concat("e7909808f054b5be4ee15c3aaf6e12e0dba21b15")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58583,6 +58583,7 @@
                 QUESTS_ACCEPT: "Accept Quest",
                 QUESTS_COMPLETE_TOOLTIP: "Hit claim to get your reward code!",
                 QUESTS_ACCEPT_TOOLTIP: "Accept the Quest and complete the task to unlock the reward",
+                QUESTS_IN_HOUSE_REWARD_TOOLTIP: "View your reward code...and a surprise!",
                 QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
                 QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
                 QUESTS_PLAY_TASK: "Play {gameTitle} for {minutes} minutes",
@@ -93134,8 +93135,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301211", "301211"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301211")), t = 0), t
+                let t = parseInt((e = "301214", "301214"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301214")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121301,8 +121302,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301211",
-                    versionHash: "4d7ba1050787b5d41d21b4abe7f4618992ddabc0"
+                    buildNumber: "301214",
+                    versionHash: "e7909808f054b5be4ee15c3aaf6e12e0dba21b15"
                 }
             }
             n.r(t), n.d(t, {
@@ -177425,8 +177426,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718204753027",
-                                    build_number: "301211"
+                                    built_at: "1718205485538",
+                                    build_number: "301214"
                                 }
                             },
                             retries: 1
@@ -254826,7 +254827,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4d7ba1050787b5d41d21b4abe7f4618992ddabc0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e7909808f054b5be4ee15c3aaf6e12e0dba21b15"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283395,7 +283396,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301211"
+                                build_number: "301214"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290706,7 +290707,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301211", "301211"), 10);
+                let s = parseInt((n = "301214", "301214"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318867,4 +318868,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.ad0956bf118652de4c44.js.map
+//# sourceMappingURL=42458.776d3892d11fb4d284da.js.map
