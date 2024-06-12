@@ -40166,7 +40166,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301358", ", Version Hash: ").concat("dbbf0f77fd22f5b4fb9b5291d05128582c9559d5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301377", ", Version Hash: ").concat("522617909963ec4f7dd3dd6757540cb86e1afcf0")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -48921,6 +48921,7 @@
                 PAYMENT_SOURCE_DELETE_DISABLED_TOOLTIP: "Cannot delete this payment source while you have an active Nitro subscription.",
                 PAYMENT_SOURCE_INVALID: "Invalid",
                 PAYMENT_SOURCE_INVALID_HELP: "We were unable to successfully charge this payment source. Please ensure the information is correct.",
+                PAYMENT_SOURCE_ADD_SUCCESS_TOAST: "Payment Method saved!",
                 PAYMENT_SOURCE_SUBSCRIPTION: "Subscription",
                 PAYMENT_SOURCE_REDEMPTION_INVALID: "Sorry, This Payment Source Cannot Be Used for Redemption",
                 PAYMENT_SOURCE_VENMO_DETAILS: "Venmo Details",
@@ -93128,8 +93129,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301358", "301358"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301358")), t = 0), t
+                let t = parseInt((e = "301377", "301377"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301377")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121295,8 +121296,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301358",
-                    versionHash: "dbbf0f77fd22f5b4fb9b5291d05128582c9559d5"
+                    buildNumber: "301377",
+                    versionHash: "522617909963ec4f7dd3dd6757540cb86e1afcf0"
                 }
             }
             n.r(t), n.d(t, {
@@ -160162,18 +160163,18 @@
                 }(s, d, x, ee), en = function(e, t) {
                     let {
                         category: n
-                    } = e, r = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.HANGOUT ? null == e ? void 0 : e.userIds : []), s = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.HANGOUT ? null == e ? void 0 : e.streamUserIds : []), a = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.GAMING ? null == e ? void 0 : e.gameUserIds : []), o = (0, U.default)(e), {
-                        hasChannelStatus: l
-                    } = (0, G.useChannelStatus)(o), {
-                        usersToShow: d
-                    } = (0, G.useGetEventCardUsers)(o), _ = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.HANGOUT && e.isStage ? d.map(e => e.id) : []), c = new Set;
+                    } = e, r = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.HANGOUT ? null == e ? void 0 : e.userIds : []), s = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.HANGOUT ? null == e ? void 0 : e.streamUserIds : []), o = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.GAMING ? null == e ? void 0 : e.gameUserIds : []), l = (0, U.default)(e), {
+                        hasChannelStatus: d
+                    } = (0, G.useChannelStatus)(l), {
+                        usersToShow: _
+                    } = (0, G.useGetEventCardUsers)(l), c = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.HANGOUT && e.isStage ? _.map(e => e.id) : []), E = new Set;
                     n === F.CardCategory.EMBEDDED_ACTIVITY && e.embeddedActivities.forEach(e => {
-                        c = new Set([...c, ...e.userIds])
+                        E = new Set([...E, ...e.userIds])
                     });
-                    let E = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.EMBEDDED_ACTIVITY ? [...c] : []);
+                    let I = (0, G.useSortUserIdsByAffinity)(n === F.CardCategory.EMBEDDED_ACTIVITY ? [...E] : []);
                     switch (n) {
                         case F.CardCategory.HANGOUT: {
-                            if (l && 0 === s.length) {
+                            if (d && 0 === s.length) {
                                 let e = (0, G.getUserNameString)(r, t, !0),
                                     n = r.length - 1;
                                 return (0, i.jsxs)("div", {
@@ -160181,7 +160182,7 @@
                                     children: [(0, i.jsx)(u.Heading, {
                                         color: "header-primary",
                                         variant: "heading-sm/semibold",
-                                        className: W.ellipsis,
+                                        className: a()(W.hangoutStatusUsername, W.ellipsis),
                                         children: e
                                     }), n > 0 && (0, i.jsx)(u.Heading, {
                                         color: "header-primary",
@@ -160193,19 +160194,19 @@
                                     })]
                                 })
                             }
-                            let n = (0, G.getUserNameString)(_.length > 0 ? _ : s.length > 0 ? s : r, t);
+                            let n = (0, G.getUserNameString)(c.length > 0 ? c : s.length > 0 ? s : r, t);
                             if (e.isStage) {
-                                var I, T;
-                                return null !== (T = null === (I = f.default.getStageInstanceByChannel(e.channelId)) || void 0 === I ? void 0 : I.topic) && void 0 !== T ? T : n
+                                var T, S;
+                                return null !== (S = null === (T = f.default.getStageInstanceByChannel(e.channelId)) || void 0 === T ? void 0 : T.topic) && void 0 !== S ? S : n
                             }
                             return n
                         }
                         case F.CardCategory.EVENT:
                             return e.event.name;
                         case F.CardCategory.EMBEDDED_ACTIVITY:
-                            return (0, G.getUserNameString)(E, t);
+                            return (0, G.getUserNameString)(I, t);
                         case F.CardCategory.GAMING:
-                            return (0, G.getUserNameString)(a, t);
+                            return (0, G.getUserNameString)(o, t);
                         default:
                             return null
                     }
@@ -177486,8 +177487,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718221618698",
-                                    build_number: "301358"
+                                    built_at: "1718223465874",
+                                    build_number: "301377"
                                 }
                             },
                             retries: 1
@@ -238212,6 +238213,10 @@
                         n += null != t ? t : 0
                     }), n)
                 }
+                getMentionCountForPrivateChannel(e) {
+                    var t, n;
+                    return null !== (n = null === (t = R[C]) || void 0 === t ? void 0 : t.mentionCounts[e]) && void 0 !== n ? n : 0
+                }
                 getGuildChangeSentinel(e) {
                     return D(e).sentinel
                 }
@@ -254851,7 +254856,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "dbbf0f77fd22f5b4fb9b5291d05128582c9559d5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "522617909963ec4f7dd3dd6757540cb86e1afcf0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283420,7 +283425,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301358"
+                                build_number: "301377"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290731,7 +290736,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301358", "301358"), 10);
+                let s = parseInt((n = "301377", "301377"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318892,4 +318897,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.7a7fd7ee8739c448f774.js.map
+//# sourceMappingURL=42458.9c0643468026bcbe90aa.js.map
