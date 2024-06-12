@@ -1903,9 +1903,6 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     text-align: center
 }
 
-@value responsiveWidthMobile from './WaveSplash.module.css';
-@value maxQRLoginWidth from './WaveSplash.module.css';
-
 .discordLogo__037bb {
     height: 36px;
     width: 112px;
@@ -1970,7 +1967,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
         display: block
     }
 
-    @media(max-width:830px) {
+    @media : (max-width: 830px) {
         .authBox__6f336.authBoxExpanded__1da99 {
             max-width: none
         }
@@ -1982,7 +1979,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     }
 }
 
-@media(max-width:830px) {
+@media : (max-width: 830px) {
     .authBoxExpanded__1da99 {
         max-width: 480px
     }
@@ -2012,7 +2009,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     top: 16px
 }
 
-@media(max-width:830px) {
+@media : (max-width: 830px) {
     .is-mobile .authBox__6f336.authBoxExpanded__1da99 {
         max-width: none
     }
@@ -2992,8 +2989,6 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     display: flex
 }
 
-@value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
-
 .focusLock__28507 {
     display: flex;
     flex-direction: column;
@@ -3028,14 +3023,6 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     min-width: var(--custom-modal-min-width-large);
     max-width: 960px;
     min-height: 400px
-}
-
-@media(max-width:minWidthLarge) {
-    .large_def294 {
-        min-width: 600px;
-        max-width: var(--custom-modal-min-width-large);
-        min-height: 400px
-    }
 }
 
 @media(max-width:485px) {
@@ -5560,11 +5547,6 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     border-width: 1px
 }
 
-@value responsiveWidthMobile: 485px;
-@value responsiveWidthMobileFirst: 486px;
-@value responsiveWidthDesktop: 1080px;
-@value maxQRLoginWidth: 830px;
-
 .wrapper__7e716 {
     position: absolute;
     top: 0;
@@ -5620,7 +5602,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     margin: 24px auto 0
 }
 
-@media(min-width:830px) {
+@media : (min-width: 830px) {
     .logo__35a3d {
         position: fixed;
         top: 24px;
@@ -6218,8 +6200,6 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .enable-forced-colors .disabled_b7ab23 .titleMini_ddd437 {
     opacity: 1
 }
-
-@value responsiveWidthMobileFirst from '../../../../uikit/auth/WaveSplash.module.css';
 
 .interactive__0786a {
     cursor: pointer;
@@ -16008,8 +15988,6 @@ h6.title_c2a544 {
     padding-bottom: 12px
 }
 
-@value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
-
 .body__1451f {
     height: 100%;
     padding: 0 16px;
@@ -17843,7 +17821,7 @@ h3.improved_e02592:after {
     background-color: transparent
 }
 
-@media(max-width:responsiveWidthMobile) {
+@media(max-width:485px) {
     .shaker__407ce {
         position: absolute;
         top: 0;
@@ -24845,8 +24823,6 @@ span.button_ae40a4.disabled__1dc58 {
     margin-left: 8px
 }
 
-@value responsiveWidthMobile from './auth/WaveSplash.module.css';
-
 .emailVerificationModal_a12ecf {
     position: relative;
     width: 440px;
@@ -26417,8 +26393,6 @@ html.disable-forced-colors * {
     overflow: auto
 }
 
-@value responsiveWidthMobile from '../auth/WaveSplash.module.css';
-
 .modal__060da {
     border-radius: 5px;
     position: relative;
@@ -27419,4 +27393,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.0eac4a543f208b9e4d23.css.map*/
+/*# sourceMappingURL=49237.988216d38ca415dbd4b7.css.map*/
