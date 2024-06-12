@@ -121479,6 +121479,10 @@ div:has(>div>.container__8ab05) {
     margin-top: 80px
 }
 
+.skeletons_ca380a {
+    margin-top: var(--spacing-16)
+}
+
 @keyframes placeholderPulse__89700 {
     0% {
         opacity: .3
@@ -140841,4 +140845,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.63a73ab9f9b07f193785.css.map*/
+/*# sourceMappingURL=99387.e75f5400c1cb4cb199ab.css.map*/

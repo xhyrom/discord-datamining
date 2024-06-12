@@ -5924,7 +5924,8 @@
                 pageFullscreen: "pageFullscreen__67fa1",
                 pageWrapper: "pageWrapper__18871",
                 shop: "shop_b31ed2",
-                shopScroll: "shopScroll_caa423"
+                shopScroll: "shopScroll_caa423",
+                skeletons: "skeletons_ca380a"
             }
         },
         897246: function(e) {
