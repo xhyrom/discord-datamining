@@ -7165,8 +7165,7 @@ html .progress__00e29 {
 .children_f15443 {
     display: flex;
     flex-wrap: wrap;
-    -moz-column-gap: var(--spacing-8);
-    column-gap: var(--spacing-8)
+    gap: var(--spacing-8)
 }
 
 .error__0e809 {
@@ -140949,4 +140948,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.08da35698185c193ae54.css.map*/
+/*# sourceMappingURL=99387.707f3266341ac2458a71.css.map*/
