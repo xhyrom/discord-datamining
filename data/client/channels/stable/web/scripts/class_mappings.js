@@ -7049,6 +7049,12 @@
                 switch: "switch__0b70d"
             }
         },
+        706311: function(e) {
+            "use strict";
+            e.exports = {
+                panel: "panel__8073d"
+            }
+        },
         416495: function(e) {
             "use strict";
             e.exports = {
@@ -15573,6 +15579,7 @@
                 hangoutChannelStatusContent: "hangoutChannelStatusContent__4a123",
                 hangoutStatusOthers: "hangoutStatusOthers_bd698a",
                 hangoutStatusTitleContainer: "hangoutStatusTitleContainer__34045",
+                hangoutStatusUsername: "hangoutStatusUsername__87a58",
                 image: "image__75373",
                 imageIcon: "imageIcon_fdf820",
                 inline: "inline__51026",
@@ -22521,8 +22528,13 @@
         493069: function(e) {
             "use strict";
             e.exports = {
-                body: "body_ed81f0",
-                content: "content__753a1"
+                body: "body_ed81f0"
+            }
+        },
+        758283: function(e) {
+            "use strict";
+            e.exports = {
+                footer: "footer__9b24d"
             }
         },
         935689: function(e) {
