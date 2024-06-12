@@ -16507,8 +16507,8 @@ h6.title_c2a544 {
 
 .title_bdbe69 {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase
 }
 
@@ -16598,8 +16598,8 @@ h3.improved_e02592:after {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1rem;
+    line-height: 1.125rem;
     padding: 16px
 }
 
@@ -27393,4 +27393,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.988216d38ca415dbd4b7.css.map*/
+/*# sourceMappingURL=49237.0addd907ea0b60441ece.css.map*/

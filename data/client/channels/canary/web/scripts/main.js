@@ -40166,7 +40166,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301377", ", Version Hash: ").concat("522617909963ec4f7dd3dd6757540cb86e1afcf0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301390", ", Version Hash: ").concat("cf6771e1fe3c0bc40c740492f935711aa1c3bccf")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93129,8 +93129,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301377", "301377"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301377")), t = 0), t
+                let t = parseInt((e = "301390", "301390"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301390")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121296,8 +121296,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301377",
-                    versionHash: "522617909963ec4f7dd3dd6757540cb86e1afcf0"
+                    buildNumber: "301390",
+                    versionHash: "cf6771e1fe3c0bc40c740492f935711aa1c3bccf"
                 }
             }
             n.r(t), n.d(t, {
@@ -139154,7 +139154,7 @@
                 default: function() {
                     return K
                 }
-            }), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120"), n("177593");
+            }), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120"), n("653041"), n("177593");
             var i = n("512722"),
                 r = n.n(i),
                 s = n("457854"),
@@ -139313,7 +139313,10 @@
                                     t: s,
                                     d: a
                                 } = x.unpack(e);
-                            i !== P.Opcode.DISPATCH && o.default.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(i, " ").concat(P.Opcode[i]));
+                            if (i !== P.Opcode.DISPATCH && o.default.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(i, " ").concat(P.Opcode[i])), m.default.isLoggingGatewayEvents) {
+                                let e = [i];
+                                i === P.Opcode.DISPATCH && e.push(s), e.push(a), B.verboseDangerously("<~", ...e)
+                            }
                             let l = Date.now() - n;
                             switch ("READY" === s ? A.default.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === s ? A.default.parseReadySupplemental.set(n, l) : l > 10 && o.default.mark("\uD83C\uDF10", "Parse " + s, l), null != r && (this.seq = r), i) {
                                 case P.Opcode.HELLO:
@@ -139326,7 +139329,7 @@
                                     this._handleInvalidSession(a);
                                     break;
                                 case P.Opcode.HEARTBEAT:
-                                    this._sendHeartbeat();
+                                    this._handleHeartbeatReceive();
                                     break;
                                 case P.Opcode.HEARTBEAT_ACK:
                                     this._handleHeartbeatAck(a);
@@ -139388,6 +139391,9 @@
                 }
                 _getGatewayUrl() {
                     return null != this.resumeUrl ? this.resumeUrl : W
+                }
+                _handleHeartbeatReceive() {
+                    this._sendHeartbeat(), null != this.heartbeater && null != this.heartbeatInterval && (clearInterval(this.heartbeater), this.heartbeater = setInterval(this._doHeartbeatInterval.bind(this), this.heartbeatInterval))
                 }
                 _handleHeartbeatAck(e) {
                     this.lastHeartbeatAckTime = Date.now(), this.heartbeatAck = !0, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, B.verbose("Expedited heartbeat succeeded"))
@@ -139464,16 +139470,15 @@
                     let e = this.lastHeartbeatTime;
                     null != e && Date.now() - e > this.heartbeatInterval + 5e3 && this._sendHeartbeat()
                 }
+                _doHeartbeatInterval() {
+                    this.heartbeatAck ? (this.heartbeatAck = !1, this._sendHeartbeat()) : null === this.expeditedHeartbeatTimeout && this._handleHeartbeatTimeout()
+                }
                 _startHeartbeater() {
                     let {
                         heartbeatInterval: e
                     } = this;
-                    r()(null != e, "GatewaySocket: Heartbeat interval should never null here."), null !== this.initialHeartbeatTimeout && clearTimeout(this.initialHeartbeatTimeout), null !== this.heartbeater && (clearInterval(this.heartbeater), this.heartbeater = null);
-                    let t = () => {
-                        this.heartbeatAck ? (this.heartbeatAck = !1, this._sendHeartbeat()) : null === this.expeditedHeartbeatTimeout && this._handleHeartbeatTimeout()
-                    };
-                    this.initialHeartbeatTimeout = setTimeout(() => {
-                        this.initialHeartbeatTimeout = null, this.heartbeatAck = !0, this.heartbeater = setInterval(t, e), t()
+                    r()(null != e, "GatewaySocket: Heartbeat interval should never null here."), null !== this.initialHeartbeatTimeout && clearTimeout(this.initialHeartbeatTimeout), null !== this.heartbeater && (clearInterval(this.heartbeater), this.heartbeater = null), this.initialHeartbeatTimeout = setTimeout(() => {
+                        this.initialHeartbeatTimeout = null, this.heartbeatAck = !0, this.heartbeater = setInterval(this._doHeartbeatInterval.bind(this), e), this._doHeartbeatInterval()
                     }, Math.floor(Math.random() * e))
                 }
                 _stopHeartbeater() {
@@ -139854,17 +139859,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return T
                 }
             }), n("47120"), n("653041"), n("411104");
             var i, r, s = n("442837"),
                 a = n("710845"),
-                o = n("857192"),
-                l = n("483012"),
-                u = n("138859"),
-                d = n("91247");
+                o = n("483012"),
+                l = n("138859"),
+                u = n("91247");
 
-            function _(e, t, n) {
+            function d(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -139872,12 +139876,12 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let c = new a.default("GatewaySocket"),
-                E = new Set(["INITIAL_GUILD", "READY"]),
-                I = new Set(["READY", "INITIAL_GUILD"]),
-                T = new Set(["READY", "READY_SUPPLEMENTAL", "RESUMED"]);
+            let _ = new a.default("GatewaySocket"),
+                c = new Set(["INITIAL_GUILD", "READY"]),
+                E = new Set(["READY", "INITIAL_GUILD"]),
+                I = new Set(["READY", "READY_SUPPLEMENTAL", "RESUMED"]);
             (r = i || (i = {}))[r.NotStarted = 0] = "NotStarted", r[r.Loading = 1] = "Loading", r[r.Loaded = 2] = "Loaded";
-            class f {
+            class T {
                 hasStuffToDispatchNow() {
                     return this.queue.length > 0 && 2 === this.queue[0].status
                 }
@@ -139903,7 +139907,7 @@
                     this.queue.push(i), !this.maybePreload(i) && this.scheduleFlush(t)
                 }
                 maybePreload(e) {
-                    if (this.paused && !E.has(e.type)) return !1;
+                    if (this.paused && !c.has(e.type)) return !1;
                     if (0 === e.status) {
                         var t;
                         let n = null === (t = this.getDispatchHandler(e.type)) || void 0 === t ? void 0 : t.preload(e.data);
@@ -139917,17 +139921,17 @@
                     return !1
                 }
                 scheduleFlush(e) {
-                    !this.paused && (I.has(e) ? (null != this.dispatchTimeout && clearTimeout(this.dispatchTimeout), this.flush()) : null == this.dispatchTimeout && (this.dispatchTimeout = setTimeout(this.flush, this.nextDispatchTimeout)))
+                    !this.paused && (E.has(e) ? (null != this.dispatchTimeout && clearTimeout(this.dispatchTimeout), this.flush()) : null == this.dispatchTimeout && (this.dispatchTimeout = setTimeout(this.flush, this.nextDispatchTimeout)))
                 }
                 dispatchMultiple(e) {
                     if (0 === e.length) return;
                     let t = "none",
                         n = !1;
                     try {
-                        this.socket.connectionState === u.default.RESUMING && s.default.Emitter.pause(150), s.default.Emitter.batched(() => {
+                        this.socket.connectionState === l.default.RESUMING && s.default.Emitter.pause(150), s.default.Emitter.batched(() => {
                             e.forEach(e => {
-                                t = e.type, n = n || T.has(e.type), this.dispatchOne(e)
-                            }), l.default.flush()
+                                t = e.type, n = n || I.has(e.type), this.dispatchOne(e)
+                            }), o.default.flush()
                         }), n && s.default.Emitter.resume()
                     } catch (e) {
                         this.socket.resetSocketOnDispatchError({
@@ -139942,23 +139946,23 @@
                         data: r,
                         type: s,
                         compressionAnalytics: a,
-                        preloadedData: _
-                    } = e, E = performance.now();
-                    if (this.socket.connectionState === u.default.RESUMING) {
-                        let e = E - this.resumeAnalytics.lastUpdateTime;
-                        0 === this.resumeAnalytics.numEvents ? this.resumeAnalytics.initialWaitTime = e : e > this.resumeAnalytics.largestWaitTime && (this.resumeAnalytics.largestWaitTime = e), this.resumeAnalytics.totalWaitTime += e, this.resumeAnalytics.lastUpdateTime = E, this.resumeAnalytics.numEvents += 1
+                        preloadedData: d
+                    } = e, _ = performance.now();
+                    if (this.socket.connectionState === l.default.RESUMING) {
+                        let e = _ - this.resumeAnalytics.lastUpdateTime;
+                        0 === this.resumeAnalytics.numEvents ? this.resumeAnalytics.initialWaitTime = e : e > this.resumeAnalytics.largestWaitTime && (this.resumeAnalytics.largestWaitTime = e), this.resumeAnalytics.totalWaitTime += e, this.resumeAnalytics.lastUpdateTime = _, this.resumeAnalytics.numEvents += 1
                     }
-                    if (o.default.isLoggingGatewayEvents && c.verboseDangerously("<~", s, r), l.default.flush(s, r), "READY" === s) {
-                        let e = (0, d.getReadyPayloadByteSizeAnalytics)(r);
-                        null === (t = this.getDispatchHandler(s)) || void 0 === t || t.dispatch(r, s, _), (0, d.logReadyPayloadReceived)(this.socket, r, E, a, e)
-                    } else "RESUMED" === s ? (null === (n = this.getDispatchHandler(s)) || void 0 === n || n.dispatch(r, s, _), (0, d.logResumeAnalytics)(this.resumeAnalytics), this.resumeAnalytics = (0, d.createResumeAnalytics)(), this.socket.handleResumeDispatched()) : null === (i = this.getDispatchHandler(s)) || void 0 === i || i.dispatch(r, s, _);
-                    this.socket.connectionState === u.default.RESUMING && (this.resumeAnalytics.dispatchTime += performance.now() - E)
+                    if (o.default.flush(s, r), "READY" === s) {
+                        let e = (0, u.getReadyPayloadByteSizeAnalytics)(r);
+                        null === (t = this.getDispatchHandler(s)) || void 0 === t || t.dispatch(r, s, d), (0, u.logReadyPayloadReceived)(this.socket, r, _, a, e)
+                    } else "RESUMED" === s ? (null === (n = this.getDispatchHandler(s)) || void 0 === n || n.dispatch(r, s, d), (0, u.logResumeAnalytics)(this.resumeAnalytics), this.resumeAnalytics = (0, u.createResumeAnalytics)(), this.socket.handleResumeDispatched()) : null === (i = this.getDispatchHandler(s)) || void 0 === i || i.dispatch(r, s, d);
+                    this.socket.connectionState === l.default.RESUMING && (this.resumeAnalytics.dispatchTime += performance.now() - _)
                 }
                 clear() {
                     this.paused = !1, this.queue.length = 0
                 }
                 constructor(e) {
-                    _(this, "socket", void 0), _(this, "queue", void 0), _(this, "dispatchTimeout", void 0), _(this, "nextDispatchTimeout", void 0), _(this, "paused", void 0), _(this, "resumeAnalytics", void 0), _(this, "getDispatchHandler", void 0), _(this, "flush", void 0), this.socket = e, this.queue = [], this.dispatchTimeout = null, this.nextDispatchTimeout = 33, this.paused = !0, this.resumeAnalytics = (0, d.createResumeAnalytics)(), this.getDispatchHandler = null, this.flush = () => {
+                    d(this, "socket", void 0), d(this, "queue", void 0), d(this, "dispatchTimeout", void 0), d(this, "nextDispatchTimeout", void 0), d(this, "paused", void 0), d(this, "resumeAnalytics", void 0), d(this, "getDispatchHandler", void 0), d(this, "flush", void 0), this.socket = e, this.queue = [], this.dispatchTimeout = null, this.nextDispatchTimeout = 33, this.paused = !0, this.resumeAnalytics = (0, u.createResumeAnalytics)(), this.getDispatchHandler = null, this.flush = () => {
                         if (this.paused) return;
                         clearTimeout(this.dispatchTimeout), this.dispatchTimeout = null;
                         let e = Date.now(),
@@ -139968,7 +139972,7 @@
                         let n = this.queue.splice(0, t);
                         this.dispatchMultiple(n);
                         let i = Date.now() - e;
-                        i > 100 ? (c.log("Dispatched ".concat(n.length, " messages in ").concat(i, "ms")), this.nextDispatchTimeout = 250) : this.nextDispatchTimeout = 33
+                        i > 100 ? (_.log("Dispatched ".concat(n.length, " messages in ").concat(i, "ms")), this.nextDispatchTimeout = 250) : this.nextDispatchTimeout = 33
                     }
                 }
             }
@@ -177487,8 +177491,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718223465874",
-                                    build_number: "301377"
+                                    built_at: "1718224180739",
+                                    build_number: "301390"
                                 }
                             },
                             retries: 1
@@ -254856,7 +254860,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "522617909963ec4f7dd3dd6757540cb86e1afcf0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cf6771e1fe3c0bc40c740492f935711aa1c3bccf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283425,7 +283429,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301377"
+                                build_number: "301390"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290736,7 +290740,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301377", "301377"), 10);
+                let s = parseInt((n = "301390", "301390"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318897,4 +318901,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.9c0643468026bcbe90aa.js.map
+//# sourceMappingURL=42458.baf2df7df874054a50e7.js.map
