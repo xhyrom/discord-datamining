@@ -40166,7 +40166,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301154", ", Version Hash: ").concat("5d931f18854b9067650eb352d33e6084b4cb1f3a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301166", ", Version Hash: ").concat("8792cd2422cec00d212e80b5609a0a1501dbc9c1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58891,7 +58891,6 @@
                 MESSAGE_FORWARD_FAILED_BODY: "The message could not be forwarded to the following {count, plural, one {location} other {locations}}:",
                 MESSAGE_FORWARD_FOOTER_WITH_ORIGIN_A11Y: "Message originally sent in !!{origin}!! at {timestamp}",
                 MESSAGE_FORWARD_FOOTER_A11Y: "Message originally sent at {timestamp}",
-                SELECTED: "Selected",
                 CHECKOUT_RECOVERY_NAGBAR_CONTENT: "Heads up! You’re a few clicks away from unlocking Nitro.",
                 CHECKOUT_RECOVERY_NAGBAR_CTA: "Complete Checkout"
             })
@@ -93133,8 +93132,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301154", "301154"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301154")), t = 0), t
+                let t = parseInt((e = "301166", "301166"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301166")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121300,8 +121299,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301154",
-                    versionHash: "5d931f18854b9067650eb352d33e6084b4cb1f3a"
+                    buildNumber: "301166",
+                    versionHash: "8792cd2422cec00d212e80b5609a0a1501dbc9c1"
                 }
             }
             n.r(t), n.d(t, {
@@ -177424,8 +177423,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718157855925",
-                                    build_number: "301154"
+                                    built_at: "1718166257824",
+                                    build_number: "301166"
                                 }
                             },
                             retries: 1
@@ -254825,7 +254824,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5d931f18854b9067650eb352d33e6084b4cb1f3a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8792cd2422cec00d212e80b5609a0a1501dbc9c1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283394,7 +283393,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301154"
+                                build_number: "301166"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290705,7 +290704,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301154", "301154"), 10);
+                let s = parseInt((n = "301166", "301166"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318866,4 +318865,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.e32842bf284a8096359f.js.map
+//# sourceMappingURL=42458.fa92ba3433e14d7d7977.js.map
