@@ -26916,6 +26916,13 @@ img.thumbnail__18ece {
     margin-bottom: 0
 }
 
+.panel__8073d {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
 .container__0612a {
     margin: 12px
 }
@@ -140976,4 +140983,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.78a5b71c307fff9d1400.css.map*/
+/*# sourceMappingURL=99387.f236b10f45bb78fc8626.css.map*/
