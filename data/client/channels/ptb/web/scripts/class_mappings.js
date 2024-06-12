@@ -22521,8 +22521,13 @@
         493069: function(e) {
             "use strict";
             e.exports = {
-                body: "body_ed81f0",
-                content: "content__753a1"
+                body: "body_ed81f0"
+            }
+        },
+        758283: function(e) {
+            "use strict";
+            e.exports = {
+                footer: "footer__9b24d"
             }
         },
         935689: function(e) {
