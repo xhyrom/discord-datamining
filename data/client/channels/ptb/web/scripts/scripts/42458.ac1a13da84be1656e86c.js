@@ -40166,7 +40166,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301343", ", Version Hash: ").concat("05909871a2df996a4ec11def2caa139b1764ac99")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301352", ", Version Hash: ").concat("3e4404a0d8a600845b9ce5403b08386255bdb268")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87939,20 +87939,13 @@
         419061: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                AvatarDecorationBorderSizes: function() {
-                    return s
-                },
                 DECORATION_TO_AVATAR_RATIO: function() {
                     return r
                 }
             });
             var i = n("182294");
-            let r = 1.2,
-                s = {
-                    [i.AvatarSizes.SIZE_56]: 4,
-                    [i.AvatarSizes.SIZE_80]: 6,
-                    [i.AvatarSizes.SIZE_120]: 8
-                }
+            let r = 1.2;
+            i.AvatarSizes.SIZE_56, i.AvatarSizes.SIZE_80, i.AvatarSizes.SIZE_120
         },
         864106: function(e, t, n) {
             "use strict";
@@ -93135,8 +93128,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301343", "301343"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301343")), t = 0), t
+                let t = parseInt((e = "301352", "301352"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301352")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121302,8 +121295,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301343",
-                    versionHash: "05909871a2df996a4ec11def2caa139b1764ac99"
+                    buildNumber: "301352",
+                    versionHash: "3e4404a0d8a600845b9ce5403b08386255bdb268"
                 }
             }
             n.r(t), n.d(t, {
@@ -177493,8 +177486,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718219521675",
-                                    build_number: "301343"
+                                    built_at: "1718220646069",
+                                    build_number: "301352"
                                 }
                             },
                             retries: 1
@@ -216682,132 +216675,96 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return _
                 }
-            }), n("411104"), n("627341");
+            });
             var i = n("735250");
             n("470079");
-            var r = n("278074"),
-                s = n("481060"),
-                a = n("1585"),
-                o = n("153124"),
-                l = n("793397"),
-                u = n("228168"),
-                d = n("419061"),
-                _ = n("678444");
-            let c = {
-                [u.UserProfileTypes.POPOUT]: s.AvatarSizes.SIZE_80,
-                [u.UserProfileTypes.MODAL]: s.AvatarSizes.SIZE_120,
-                [u.UserProfileTypes.SETTINGS]: s.AvatarSizes.SIZE_80,
-                [u.UserProfileTypes.PANEL]: s.AvatarSizes.SIZE_80,
-                [u.UserProfileTypes.POMELO_POPOUT]: s.AvatarSizes.SIZE_80,
-                [u.UserProfileTypes.CANCEL_MODAL]: s.AvatarSizes.SIZE_56,
-                [u.UserProfileTypes.BITE_SIZE]: s.AvatarSizes.SIZE_80,
-                [u.UserProfileTypes.FULL_SIZE]: s.AvatarSizes.SIZE_120
-            };
+            var r = n("481060"),
+                s = n("153124"),
+                a = n("793397"),
+                o = n("228168"),
+                l = n("678444");
+            let u = e => {
+                    let {
+                        size: t,
+                        stroke: n
+                    } = (0, r.getAvatarSpecs)(e);
+                    return t / 2 + n
+                },
+                d = {
+                    [o.UserProfileTypes.POPOUT]: {
+                        radius: u(r.AvatarSizes.SIZE_80),
+                        offsetX: 16,
+                        offsetY: 4
+                    },
+                    [o.UserProfileTypes.BITE_SIZE]: {
+                        radius: u(r.AvatarSizes.SIZE_80),
+                        offsetX: 10,
+                        offsetY: 4
+                    },
+                    [o.UserProfileTypes.MODAL]: {
+                        radius: u(r.AvatarSizes.SIZE_120),
+                        offsetX: 14,
+                        offsetY: 5
+                    },
+                    [o.UserProfileTypes.FULL_SIZE]: {
+                        radius: u(r.AvatarSizes.SIZE_120),
+                        offsetX: 16,
+                        offsetY: 5
+                    },
+                    [o.UserProfileTypes.SETTINGS]: {
+                        radius: u(r.AvatarSizes.SIZE_80),
+                        offsetX: 16,
+                        offsetY: -22
+                    },
+                    [o.UserProfileTypes.PANEL]: {
+                        radius: u(r.AvatarSizes.SIZE_80),
+                        offsetX: 10,
+                        offsetY: 8
+                    },
+                    [o.UserProfileTypes.POMELO_POPOUT]: {
+                        radius: u(r.AvatarSizes.SIZE_80),
+                        offsetX: 20,
+                        offsetY: -20
+                    },
+                    [o.UserProfileTypes.CANCEL_MODAL]: {
+                        radius: u(r.AvatarSizes.SIZE_56),
+                        offsetX: 8,
+                        offsetY: 2
+                    }
+                };
 
-            function E(e) {
+            function _(e) {
                 let {
                     children: t,
                     profileType: n,
-                    isPremium: E,
-                    hasThemeColors: I,
-                    hasBanner: T,
-                    overrideBannerWidth: f,
-                    hasProfileEffect: S = !1
-                } = e, h = c[n], A = (0, o.useUID)(), m = function(e) {
-                    let {
-                        profileType: t,
-                        avatarSize: n,
-                        hasBanner: i,
-                        isPremium: o,
-                        hasThemeColors: _,
-                        hasProfileEffect: c,
-                        overrideBannerWidth: E
-                    } = e, I = d.AvatarDecorationBorderSizes[n];
-                    if (null == I) throw Error("Unsupported avatar size for banner mask");
-                    let T = (0, a.getDecorationSizeForAvatarSize)(n),
-                        {
-                            size: f,
-                            stroke: S
-                        } = (0, s.getAvatarSpecs)(n),
-                        h = {
-                            avatarSize: f,
-                            avatarBorderSize: S,
-                            avatarDecorationSize: T,
-                            avatarDecorationBorderSize: I,
-                            avatarDecorationOffsetY: -(T + 2 * I) / 2,
-                            bannerHeight: (0, l.getUserBannerHeight)({
-                                profileType: t,
-                                user: {
-                                    hasBanner: i,
-                                    isPremium: o,
-                                    hasProfileEffect: c
-                                }
-                            })
-                        },
-                        A = (0, r.match)(t).with(u.UserProfileTypes.POPOUT, u.UserProfileTypes.BITE_SIZE, () => {
-                            let e = _ ? 4 : 0;
-                            return {
-                                ...h,
-                                bannerWidth: (0, l.getUserBannerSize)(t),
-                                offsetX: 16 - e,
-                                offsetY: 4 + e,
-                                avatarDecorationOffsetX: 4
-                            }
-                        }).with(u.UserProfileTypes.MODAL, u.UserProfileTypes.FULL_SIZE, () => ({
-                            ...h,
-                            bannerWidth: (0, l.getUserBannerSize)(t),
-                            offsetX: 14,
-                            offsetY: 5,
-                            avatarDecorationOffsetX: 2
-                        })).with(u.UserProfileTypes.SETTINGS, () => ({
-                            ...h,
-                            bannerWidth: 660,
-                            offsetX: 16,
-                            offsetY: -22,
-                            avatarDecorationOffsetX: 8
-                        })).with(u.UserProfileTypes.PANEL, () => ({
-                            ...h,
-                            bannerWidth: (0, l.getUserBannerSize)(u.UserProfileTypes.PANEL),
-                            offsetX: 12,
-                            offsetY: 8,
-                            avatarDecorationOffsetX: 4
-                        })).with(u.UserProfileTypes.POMELO_POPOUT, () => ({
-                            ...h,
-                            bannerWidth: (0, l.getUserBannerSize)(u.UserProfileTypes.POMELO_POPOUT),
-                            offsetX: 20,
-                            offsetY: -20,
-                            avatarDecorationOffsetX: 10
-                        })).with(u.UserProfileTypes.CANCEL_MODAL, () => ({
-                            ...h,
-                            bannerWidth: (0, l.getUserBannerSize)(u.UserProfileTypes.CANCEL_MODAL),
-                            offsetX: 8,
-                            offsetY: 2,
-                            avatarDecorationOffsetX: 8
-                        })).exhaustive();
-                    return null != E ? {
-                        ...A,
-                        bannerWidth: E
-                    } : A
-                }({
+                    isPremium: r,
+                    hasThemeColors: u,
+                    hasBanner: _,
+                    overrideBannerWidth: c,
+                    hasProfileEffect: E = !1
+                } = e, I = (0, s.useUID)(), T = null != c ? c : (0, a.getUserBannerSize)(n), f = (0, a.getUserBannerHeight)({
                     profileType: n,
-                    avatarSize: h,
-                    hasBanner: T,
-                    isPremium: E,
-                    hasThemeColors: I,
-                    hasProfileEffect: S,
-                    overrideBannerWidth: f
-                }), N = m.avatarSize / 2 + m.avatarBorderSize, p = m.bannerHeight - m.offsetY;
+                    user: {
+                        hasBanner: _,
+                        isPremium: r,
+                        hasProfileEffect: E
+                    }
+                }), {
+                    radius: S,
+                    offsetX: h,
+                    offsetY: A
+                } = d[n], m = u && (n === o.UserProfileTypes.POPOUT || n === o.UserProfileTypes.BITE_SIZE) ? 4 : 0, N = f - A - m;
                 return (0, i.jsxs)("svg", {
-                    className: _.bannerSVGWrapper,
-                    viewBox: "0 0 ".concat(m.bannerWidth, " ").concat(m.bannerHeight),
+                    className: l.bannerSVGWrapper,
+                    viewBox: "0 0 ".concat(T, " ").concat(f),
                     style: {
-                        minWidth: m.bannerWidth,
-                        minHeight: m.bannerHeight
+                        minWidth: T,
+                        minHeight: f
                     },
                     children: [(0, i.jsxs)("mask", {
-                        id: A,
+                        id: I,
                         children: [(0, i.jsx)("rect", {
                             fill: "white",
                             x: "0",
@@ -216816,9 +216773,9 @@
                             height: "100%"
                         }), (0, i.jsx)("circle", {
                             fill: "black",
-                            cx: m.offsetX + N,
-                            cy: p,
-                            r: N
+                            cx: S + h - m,
+                            cy: N,
+                            r: S
                         })]
                     }), (0, i.jsx)("foreignObject", {
                         x: "0",
@@ -216826,7 +216783,7 @@
                         width: "100%",
                         height: "100%",
                         overflow: "visible",
-                        mask: "url(#".concat(A, ")"),
+                        mask: "url(#".concat(I, ")"),
                         children: t
                     })]
                 })
@@ -216901,7 +216858,7 @@
                     [r.UserProfileTypes.POPOUT]: 340,
                     [r.UserProfileTypes.PANEL]: 340,
                     [r.UserProfileTypes.MODAL]: 600,
-                    [r.UserProfileTypes.SETTINGS]: 600,
+                    [r.UserProfileTypes.SETTINGS]: 660,
                     [r.UserProfileTypes.POMELO_POPOUT]: 432,
                     [r.UserProfileTypes.CANCEL_MODAL]: 172,
                     [r.UserProfileTypes.BITE_SIZE]: 300,
@@ -254894,7 +254851,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "05909871a2df996a4ec11def2caa139b1764ac99"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3e4404a0d8a600845b9ce5403b08386255bdb268"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283463,7 +283420,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301343"
+                                build_number: "301352"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290774,7 +290731,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301343", "301343"), 10);
+                let s = parseInt((n = "301352", "301352"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318935,4 +318892,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.5f264a851f39a9dde8f1.js.map
+//# sourceMappingURL=42458.ac1a13da84be1656e86c.js.map

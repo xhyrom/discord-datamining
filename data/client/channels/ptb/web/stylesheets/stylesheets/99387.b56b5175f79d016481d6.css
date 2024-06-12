@@ -25142,7 +25142,7 @@ div.profileThemedContainer__6e645 {
     z-index: 0;
     position: absolute;
     top: calc(var(--custom-user-banner-banner-height-panel) - (80px + var(--custom-user-profile-modal-header-total-avatar-border-size))/2);
-    left: 18px
+    left: 16px
 }
 
 .clickable__41ac4:hover .overlay__2c5ed:after,
@@ -40460,7 +40460,7 @@ img.thumbnail__18ece {
     z-index: 1;
     position: absolute;
     top: 61px;
-    left: 22px;
+    left: 16px;
     display: flex;
     align-items: center;
     justify-content: center
@@ -55645,7 +55645,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .avatarPositionPanel__2d765 {
     top: 72px;
-    left: 18px
+    left: 16px
 }
 
 .avatarPositionPomelo__6cc14 {
@@ -57046,18 +57046,18 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .invisibleContainer__1e05d.biteSize__4396a {
     top: 4px;
-    left: 112px
+    left: 106px
 }
 
 .invisibleContainer__1e05d.fullSize_b0d012 {
     height: 0;
     top: -54px;
-    left: 142px
+    left: 144px
 }
 
 .invisibleContainer__1e05d.panel__27920 {
     top: 4px;
-    left: 108px
+    left: 106px
 }
 
 .visibleContainer_adf761 {
@@ -57067,22 +57067,22 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .visibleContainer_adf761.biteSize__4396a {
     top: calc(6px + var(--custom-user-banner-height-bite-size));
-    left: 112px
+    left: 106px
 }
 
 .visibleContainer_adf761.fullSize_b0d012 {
     top: 4px;
-    left: 158px
+    left: 160px
 }
 
 .visibleContainer_adf761.panel__27920 {
     top: calc(6px + var(--custom-user-banner-banner-height-panel));
-    left: 108px
+    left: 106px
 }
 
 .custom-profile-theme .invisibleContainer__1e05d.biteSize__4396a {
     top: var(--custom-user-profile-themed-container-user-profile-themed-padding);
-    left: 108px
+    left: 102px
 }
 
 .custom-profile-theme .visibleContainer_adf761.biteSize__4396a {
@@ -57213,7 +57213,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     position: absolute;
     z-index: 0;
     top: 61px;
-    left: 22px
+    left: 16px
 }
 
 .overlay__2bab7:after {
@@ -132558,8 +132558,8 @@ div.nagbar_c731ff {
 
 .avatar__4188a {
     position: absolute;
-    top: calc(-.5*(var(--custom-user-profile-modal-header-avatar-size) + var(--custom-user-profile-modal-header-total-avatar-border-size)));
-    left: 22px
+    top: -68px;
+    left: 24px
 }
 
 .root__8fb4a {
@@ -140850,4 +140850,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3889c6e5092d4bdd6845.css.map*/
+/*# sourceMappingURL=99387.b56b5175f79d016481d6.css.map*/
