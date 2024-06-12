@@ -4731,14 +4731,6 @@
       "POST"
     ]
   },
-  "EXPLICIT_MEDIA_GET_VALID_CONTENT_SCAN_VERSION": {
-    "url": "/explicit-media/current-version",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "EXPLICIT_MEDIA_SCAN_MESSAGES": {
     "url": "/channels/:param/explicit-media",
     "allowed_methods": [
