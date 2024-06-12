@@ -16279,36 +16279,23 @@ html .progress__00e29 {
     margin-top: -8px
 }
 
-.form_d8a4a1:before,
-.form_d8a4a1:after {
+.form_d8a4a1:before {
     content: "";
     position: absolute;
-    height: .5rem;
-    width: 1.25rem
+    height: .5rem
 }
 
 .form_d8a4a1:before {
     top: 0;
-    left: 0
-}
-
-.form_d8a4a1:after {
-    top: 0;
+    left: 0;
     right: 0
 }
 
-.theme-dark .form_d8a4a1:before,
-.theme-dark .form_d8a4a1:after {
-    background: linear-gradient(to bottom, rgba(54, 57, 63, 0)0%, var(--background-primary)100%)
+.form_d8a4a1:before {
+    background: linear-gradient(to bottom, transparent, var(--background-primary)100%)
 }
 
-.theme-light .form_d8a4a1:before,
-.theme-light .form_d8a4a1:after {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0)0%, var(--background-primary)100%)
-}
-
-.custom-theme-background .form_d8a4a1:before,
-.custom-theme-background .form_d8a4a1:after {
+.custom-theme-background .form_d8a4a1:before {
     content: normal
 }
 
@@ -140854,4 +140841,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.49477cb6327fa809a4b8.css.map*/
+/*# sourceMappingURL=99387.63a73ab9f9b07f193785.css.map*/

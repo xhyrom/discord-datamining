@@ -40166,7 +40166,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301436", ", Version Hash: ").concat("5f48c3ae7ff703d85d9199505a1397064bf5070b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301446", ", Version Hash: ").concat("3e5f6ba50db9debf8befce5366b7a5acdee8803b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93061,8 +93061,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301436", "301436"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301436")), t = 0), t
+                let t = parseInt((e = "301446", "301446"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301446")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121228,8 +121228,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301436",
-                    versionHash: "5f48c3ae7ff703d85d9199505a1397064bf5070b"
+                    buildNumber: "301446",
+                    versionHash: "3e5f6ba50db9debf8befce5366b7a5acdee8803b"
                 }
             }
             n.r(t), n.d(t, {
@@ -170730,32 +170730,44 @@
             var i = n("818083");
             let r = (0, i.createExperiment)({
                 kind: "user",
-                id: "2024-03_remb_experiment",
-                label: "Bandwidth Estimation - REMB",
+                id: "2024-06_rtc_pacer__simulcast",
+                label: "RTC Pacer & Golive Simulcast",
                 defaultConfig: {
                     enabled: !0,
-                    fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator"
+                    fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/",
+                    simulcastEnabled: !1
                 },
                 treatments: [{
                     id: 1,
-                    label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker REMB PLI only",
+                    label: "Golive Simulcast",
                     config: {
                         enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,worker-bitrate-remb-pli"
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/",
+                        simulcastEnabled: !0
                     }
                 }, {
                     id: 2,
-                    label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker continuous REMB only",
+                    label: "Golive Simulcast with pacing and probing",
                     config: {
                         enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,worker-bitrate-remb-preemption-v1"
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer,worker-pacer-probe",
+                        simulcastEnabled: !0
                     }
                 }, {
                     id: 3,
-                    label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker REMB PLI with continuous",
+                    label: "Golive with pacing",
                     config: {
                         enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,worker-bitrate-remb-preemption-v1,worker-bitrate-remb-pli"
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer",
+                        simulcastEnabled: !1
+                    }
+                }, {
+                    id: 4,
+                    label: "Golive with pacing and probing",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer,worker-pacer-probe",
+                        simulcastEnabled: !1
                     }
                 }]
             });
@@ -170778,7 +170790,12 @@
                 getMediaEngineExperiments(e) {
                     let t = e.split("/");
                     return 3 !== t.length || "bandwidth_estimation" !== t[0] ? null : t[1].split(",").filter(e => 0 !== e.length)
-                }
+                },
+                supportsSimulcast: () => r.getCurrentConfig({
+                    location: "e1c55b_2"
+                }, {
+                    autoTrackExposure: !1
+                }).simulcastEnabled
             }
         },
         859132: function(e, t, n) {
@@ -170873,26 +170890,6 @@
                     label: "Decoupled Game Clipping",
                     config: {
                         enableDecoupledGameClipping: !0
-                    }
-                }]
-            })
-        },
-        166884: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("818083");
-            t.default = (0, i.createExperiment)({
-                kind: "user",
-                id: "2024-04_go_live_simulcast",
-                label: "Go Live Simulcast",
-                defaultConfig: {
-                    enableGoLiveSimulcast: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "enabled",
-                    config: {
-                        enableGoLiveSimulcast: !0
                     }
                 }]
             })
@@ -177423,8 +177420,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718227782607",
-                                    build_number: "301436"
+                                    built_at: "1718228716746",
+                                    build_number: "301446"
                                 }
                             },
                             retries: 1
@@ -240265,8 +240262,8 @@
                 b = n("227196"),
                 G = n("294473"),
                 w = n("706629"),
-                k = n("836157"),
-                B = n("166884"),
+                k = n("926951"),
+                B = n("836157"),
                 x = n("924371"),
                 V = n("894180"),
                 F = n("86614"),
@@ -240520,12 +240517,8 @@
                 return (0, ei.isMac)() && eg.supports(eh.Features.SCREEN_CAPTURE_KIT) && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, eT.DARWIN_SCKIT_VERSION)
             }
 
-            function ta(e) {
-                return B.default.getCurrentConfig({
-                    location: "GoLiveSimulcastEnabled"
-                }, {
-                    autoTrackExposure: e
-                }).enableGoLiveSimulcast
+            function ta() {
+                return k.default.supportsSimulcast()
             }
             let to = new class {
                 start() {
@@ -240800,7 +240793,7 @@
                                 (0, ei.isMac)() && (null === (E = window.DiscordNative) || void 0 === E ? void 0 : E.os.arch) === "arm64" && (n.hardwareH264 ? e.setExperimentFlag(eh.ExperimentFlags.SIGNAL_H265_SUPPORT, !0) : e.setExperimentFlag(eh.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT, !0))
                             }
                         }
-                        e.context === eh.MediaEngineContextTypes.STREAM && ta(!0) && e.setExperimentFlag(eh.ExperimentFlags.GOLIVE_SIMULCAST, !0);
+                        e.context === eh.MediaEngineContextTypes.STREAM && ta() && e.setExperimentFlag(eh.ExperimentFlags.GOLIVE_SIMULCAST, !0);
                         let {
                             signalAV1Support: I
                         } = U.default.getCurrentConfig({
@@ -241345,7 +241338,7 @@
                             type: e === eh.MediaEngineContextTypes.DEFAULT ? eh.MediaTypes.VIDEO : eh.MediaTypes.SCREEN,
                             quality: 100
                         }] : [];
-                    return this.isSimulcastSupported() && (e === eh.MediaEngineContextTypes.DEFAULT || ta(!1)) && t.push({
+                    return this.isSimulcastSupported() && (e === eh.MediaEngineContextTypes.DEFAULT || ta()) && t.push({
                         rid: "50",
                         type: e === eh.MediaEngineContextTypes.DEFAULT ? eh.MediaTypes.VIDEO : eh.MediaTypes.SCREEN,
                         quality: 50
@@ -241938,7 +241931,7 @@
                         quality: r
                     } = e, {
                         enableDecoupledGameClipping: s
-                    } = k.default.getCurrentConfig({
+                    } = B.default.getCurrentConfig({
                         location: "handleClipsInit"
                     }, {
                         autoTrackExposure: !0
@@ -254783,7 +254776,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5f48c3ae7ff703d85d9199505a1397064bf5070b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3e5f6ba50db9debf8befce5366b7a5acdee8803b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283352,7 +283345,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301436"
+                                build_number: "301446"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290664,7 +290657,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301436", "301436"), 10);
+                let s = parseInt((n = "301446", "301446"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318829,4 +318822,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.fa7e991ca8236ca133ca.js.map
+//# sourceMappingURL=42458.10af149c691538b1c5e6.js.map
