@@ -40166,7 +40166,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301275", ", Version Hash: ").concat("f1cf59c8a869ed4d37dc47d873c99fd4a7ec2171")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301285", ", Version Hash: ").concat("6dc5c1192693ae50e9740b354bc3e28275ab61fd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93135,8 +93135,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301275", "301275"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301275")), t = 0), t
+                let t = parseInt((e = "301285", "301285"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301285")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121302,8 +121302,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301275",
-                    versionHash: "f1cf59c8a869ed4d37dc47d873c99fd4a7ec2171"
+                    buildNumber: "301285",
+                    versionHash: "6dc5c1192693ae50e9740b354bc3e28275ab61fd"
                 }
             }
             n.r(t), n.d(t, {
@@ -121837,7 +121837,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("30386"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46388"), n.e("46453"), n.e("87624"), n.e("15357"), n.e("36861"), n.e("67032"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("19634")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("30386"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("15357"), n.e("46388"), n.e("46453"), n.e("87624"), n.e("36861"), n.e("67032"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("19634")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -177427,8 +177427,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718213499421",
-                                    build_number: "301275"
+                                    built_at: "1718214053556",
+                                    build_number: "301285"
                                 }
                             },
                             retries: 1
@@ -214482,31 +214482,34 @@
             "use strict";
             n.r(t), n.d(t, {
                 TrackUserProfileProperties: function() {
-                    return c
+                    return E
                 },
                 USER_PROFILE_TOOLTIP_DELAY: function() {
-                    return T
+                    return f
                 },
                 UserProfileSections: function() {
-                    return l
+                    return u
                 },
-                UserProfileTypes: function() {
+                UserProfileSubsections: function() {
                     return d
                 },
+                UserProfileTypes: function() {
+                    return _
+                },
                 getBadgeAsset: function() {
-                    return f
+                    return S
                 }
             });
-            var i, r, s, a, o, l, u, d, _, c, E, I = n("981631");
-            let T = 300;
+            var i, r, s, a, o, l, u, d, _, c, E, I, T = n("981631");
+            let f = 300;
 
-            function f(e) {
+            function S(e) {
                 let {
                     API_ENDPOINT: t,
                     CDN_HOST: n
                 } = window.GLOBAL_ENV;
-                return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(I.Endpoints.BADGE_ICON(e))
-            }(i = l || (l = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (u || (u = {})).RECENT_GAMES = "RECENT_GAMES", (r = d || (d = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", r.BITE_SIZE = "BITE_SIZE", r.FULL_SIZE = "FULL_SIZE", (s = _ || (_ = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.SIMPLIFIED_DM_PANEL = "SIMPLIFIED_DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", s.SIMPLIFIED_ACCOUNT_POPOUT = "SIMPLIFIED_ACCOUNT_POPOUT", (a = c || (c = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = E || (E = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", o.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.HOVER_BADGE = "HOVER_BADGE", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", o.ADD_ROLE = "ADD_ROLE", o.REMOVE_ROLE = "REMOVE_ROLE", o.PRESS_APP_CONNECTION = "PRESS_APP_CONNECTION"
+                return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(T.Endpoints.BADGE_ICON(e))
+            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (r = d || (d = {})).ROLES = "ROLES", r.NOTE = "NOTE", (s = _ || (_ = {})).POPOUT = "POPOUT", s.MODAL = "MODAL", s.SETTINGS = "SETTINGS", s.PANEL = "PANEL", s.CARD = "CARD", s.POMELO_POPOUT = "POMELO_POPOUT", s.CANCEL_MODAL = "CANCEL_MODAL", s.BITE_SIZE = "BITE_SIZE", s.FULL_SIZE = "FULL_SIZE", (a = c || (c = {})).POPOUT = "POPOUT", a.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", a.MODAL = "MODAL", a.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", a.DM_PANEL = "DM_PANEL", a.SIMPLIFIED_DM_PANEL = "SIMPLIFIED_DM_PANEL", a.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", a.ACTION_SHEET = "ACTION_SHEET", a.SIMPLIFIED_ACCOUNT_POPOUT = "SIMPLIFIED_ACCOUNT_POPOUT", (o = E || (E = {}))[o.NICKNAME = 0] = "NICKNAME", o[o.PRONOUNS = 1] = "PRONOUNS", o[o.AVATAR = 2] = "AVATAR", o[o.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", o[o.BANNER = 4] = "BANNER", o[o.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", o[o.BIO = 6] = "BIO", o[o.THEME = 7] = "THEME", o[o.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", o[o.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (l = I || (I = {})).VIEW = "VIEW", l.SEND_MESSAGE = "SEND_MESSAGE", l.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", l.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", l.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", l.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", l.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", l.REMOVE_FRIEND = "REMOVE_FRIEND", l.BLOCK = "BLOCK", l.UNBLOCK = "UNBLOCK", l.REPORT = "REPORT", l.COPY_USERNAME = "COPY_USERNAME", l.COPY_USER_ID = "COPY_USER_ID", l.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", l.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", l.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", l.PRESS_OPTIONS = "PRESS_OPTIONS", l.HOVER_BADGE = "HOVER_BADGE", l.PRESS_BADGE = "PRESS_BADGE", l.PRESS_SECTION = "PRESS_SECTION", l.PRESS_PRONOUNS = "PRESS_PRONOUNS", l.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", l.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", l.PRESS_SET_STATUS = "PRESS_SET_STATUS", l.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", l.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", l.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", l.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", l.JOIN_ACTIVITY = "JOIN_ACTIVITY", l.SET_NOTE = "SET_NOTE", l.SET_VOLUME = "SET_VOLUME", l.EDIT_PROFILE = "EDIT_PROFILE", l.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", l.VOICE_CALL = "VOICE_CALL", l.VIDEO_CALL = "VIDEO_CALL", l.MUTE = "MUTE", l.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", l.DISABLE_VIDEO = "DISABLE_VIDEO", l.DEAFEN = "DEAFEN", l.DISCONNECT = "DISCONNECT", l.ADD_ROLE = "ADD_ROLE", l.REMOVE_ROLE = "REMOVE_ROLE", l.PRESS_APP_CONNECTION = "PRESS_APP_CONNECTION"
         },
         255564: function(e, t, n) {
             "use strict";
@@ -218826,17 +218829,17 @@
             function _(e) {
                 let {
                     userId: t,
-                    section: n,
-                    guildId: _ = d.ME,
-                    channelId: c,
-                    messageId: E,
-                    roleId: I,
-                    friendToken: T,
-                    autoFocusNote: f,
+                    guildId: n = d.ME,
+                    channelId: _,
+                    messageId: c,
+                    roleId: E,
+                    section: I,
+                    subsection: T,
+                    friendToken: f,
                     showGuildProfile: S,
                     analyticsLocation: h,
                     sourceAnalyticsLocations: A
-                } = e, m = s.default.getUser(t), N = null != _ && _ !== d.ME ? _ : void 0, p = (0, l.getSimplifiedProfileFriendingExperimentConfig)({
+                } = e, m = s.default.getUser(t), N = null != n && n !== d.ME ? n : void 0, p = (0, l.getSimplifiedProfileFriendingExperimentConfig)({
                     location: "openUserProfileModal",
                     autoTrackExposure: !1
                 }), O = (0, a.isInProfileMutualsExperiment)().enabled || (0, o.getSimplifiedProfileExperimentConfig)({
@@ -218847,18 +218850,18 @@
                     guildId: S ? N : void 0,
                     withMutualGuilds: !0,
                     withMutualFriends: O,
-                    friendToken: T
+                    friendToken: f
                 }).then(() => {
                     i.default.dispatch({
                         type: "USER_PROFILE_MODAL_OPEN",
                         userId: t,
-                        section: n,
-                        guildId: null != _ ? _ : void 0,
-                        channelId: null != c ? c : void 0,
-                        messageId: null != E ? E : void 0,
-                        roleId: null != I ? I : void 0,
-                        friendToken: T,
-                        autoFocusNote: f,
+                        guildId: null != n ? n : void 0,
+                        channelId: null != _ ? _ : void 0,
+                        messageId: null != c ? c : void 0,
+                        roleId: null != E ? E : void 0,
+                        section: I,
+                        subsection: T,
+                        friendToken: f,
                         showGuildProfile: S,
                         analyticsLocation: h,
                         sourceAnalyticsLocations: A
@@ -218868,17 +218871,17 @@
                     guildId: S ? N : void 0,
                     withMutualGuilds: !0,
                     withMutualFriends: O,
-                    friendToken: T
+                    friendToken: f
                 }), i.default.dispatch({
                     type: "USER_PROFILE_MODAL_OPEN",
                     userId: t,
-                    section: n,
-                    guildId: null != _ ? _ : void 0,
-                    channelId: null != c ? c : void 0,
-                    messageId: null != E ? E : void 0,
-                    roleId: null != I ? I : void 0,
-                    friendToken: T,
-                    autoFocusNote: f,
+                    guildId: null != n ? n : void 0,
+                    channelId: null != _ ? _ : void 0,
+                    messageId: null != c ? c : void 0,
+                    roleId: null != E ? E : void 0,
+                    section: I,
+                    subsection: T,
+                    friendToken: f,
                     showGuildProfile: S,
                     analyticsLocation: h,
                     sourceAnalyticsLocations: A
@@ -220327,9 +220330,7 @@
                     children: [(0, i.jsx)(h.default, {
                         user: t,
                         profileType: C.UserProfileTypes.BITE_SIZE,
-                        onOpenProfile: () => M({
-                            autoFocusNote: !1
-                        }),
+                        onOpenProfile: M,
                         usernameIcon: t.hasAvatarForGuild(null == v ? void 0 : v.id) && (0, i.jsx)(A.default, {
                             user: t,
                             nickname: w
@@ -220348,7 +220349,7 @@
                                 user: t,
                                 isHovering: D,
                                 onOpenProfile: () => M({
-                                    autoFocusNote: !0
+                                    subsection: C.UserProfileSubsections.NOTE
                                 })
                             })]
                         })
@@ -220362,8 +220363,7 @@
                     }), t.id !== n.id && (0, i.jsx)(O.default, {
                         user: t,
                         onOpenProfile: e => M({
-                            section: e,
-                            autoFocusNote: !1
+                            section: e
                         })
                     }), x && (0, i.jsx)(o.default, {
                         userId: t.id,
@@ -220384,7 +220384,7 @@
                         currentUser: n,
                         guild: v,
                         onOpenProfile: () => M({
-                            autoFocusNote: !1
+                            subsection: C.UserProfileSubsections.ROLES
                         })
                     })]
                 })
@@ -254828,7 +254828,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f1cf59c8a869ed4d37dc47d873c99fd4a7ec2171"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6dc5c1192693ae50e9740b354bc3e28275ab61fd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283397,7 +283397,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301275"
+                                build_number: "301285"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290708,7 +290708,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301275", "301275"), 10);
+                let s = parseInt((n = "301285", "301285"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318869,4 +318869,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.8a073e2528bb0175527c.js.map
+//# sourceMappingURL=42458.aae36eea7ac0074bccd0.js.map
