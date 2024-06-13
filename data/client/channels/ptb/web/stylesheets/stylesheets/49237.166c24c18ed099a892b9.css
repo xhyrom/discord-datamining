@@ -19738,7 +19738,7 @@ strong {
     color: var(--interactive-normal)
 }
 
-.embed_cc6dae:hover .embedSuppressButton__5aae1,
+.mouse-mode .embed_cc6dae:hover .embedSuppressButton__5aae1,
 .embed_cc6dae:focus-within .embedSuppressButton__5aae1 {
     opacity: 1
 }
@@ -27393,4 +27393,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.62117340d60179281483.css.map*/
+/*# sourceMappingURL=49237.166c24c18ed099a892b9.css.map*/
