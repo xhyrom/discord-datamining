@@ -1,10 +1,9 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <h3><strong>New to Activities: Colonist &amp;&nbsp;Krunker Strive FRVR</strong></h3>
-            <p>Gather supplies and expand your reach in <strong>Colonist</strong>, an online settlement-building board game that’s now playable in Discord! Barter between friends, build the longest roads possible and amass an army worthy of victory. Play with up to seven of your closest frienemies or refine your strats in a solo game against bots that will <em>absolutely</em> see through your terrible bartering offer.&nbsp;</p>
-            <p>If you’re more of an action-oriented player, squad up in Voice and play a few rounds of <strong>Krunker Strike FRVR</strong>: a Discord-exclusive version of Krunker made by our friends at FRVR. As Discord’s first-ever FPS Activity, Krunker Strike FRVR lets you play with friends and jump into online matches with players around the world, at any time. While you play, you’ll be able to collect and use new and special equipment to compete in style.&nbsp;&nbsp;</p>
-            <p>Keep reading to see what Activities are all about, how to use ‘em, and which Activities are available today.</p>
+            <h3><strong>New to Activities: BOPZ.io</strong></h3>
+            <p>Dive into the world of<strong> BOPZ.io</strong>, the ultimate top-down 2D shooter, at any time as one of the newest Discord Activities! Join intense 5v5 battles where strategy, teamwork, and quick reflexes reign supreme. Outsmart your opponents to lead your team to victory, or drop into a variety of solo game modes designed to test your skills and keep your adrenaline pumping.&nbsp;</p>
+            <p>Ready to squad up? Jump into the fast-paced chaos of BOPZ.io now using the App Launcher and show us what you've got!</p>
             <div class="w-embed">
                 <hr class="hr-style">
             </div>
@@ -66,8 +65,10 @@
                 <li><strong>Bobble Bash</strong>: Collect the most gems while bashing your buddies away from them.&nbsp;</li>
                 <li><strong>Chef Showdown:</strong> “YOU’RE COOKED!” - You after defeating your friends, probably.</li>
                 <li><strong>Colonist</strong>: I’ll trade you two wool for one lumber… oops, just built a huge road, I win.</li>
+                <li><strong>Krunker Strike</strong>: Rootin’ tootin’ showdowns, wherever you are! (Not cowboy-themed.)&nbsp;</li>
+                <li><strong>[NEW] BOPZ.io</strong>: Bop the other team in PvP battles, or bop ‘em solo.&nbsp;</li>
             </ul>
-            <p><strong><em>Note: This list of Activities was last updated on February 22, 2024.</em></strong></p>
+            <p><strong><em>Note: This list of Activities was last updated on June 11, 2024.</em></strong></p>
             <p>For the full low-down on how Activities work, repeat after me: "The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>." (Good job!)<em>‍</em>‍</p>
         </div>
     </div>
