@@ -61865,7 +61865,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .unclamp__1fab3 {
-    -webkit-line-clamp: unset
+    -webkit-line-clamp: 9
 }
 
 .placeholderWidth__1e10a {
@@ -61881,16 +61881,13 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .statusText__32d26 {
-    display: inline;
-    color: var(--text-normal);
-    line-height: 18px
+    color: var(--text-normal)
 }
 
 .statusEmojiInline__099a8 {
-    display: inline;
+    float: left;
     height: 16px;
     width: 16px;
-    line-height: 18px;
     margin-right: 4px
 }
 
@@ -140845,4 +140842,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e75f5400c1cb4cb199ab.css.map*/
+/*# sourceMappingURL=99387.1ea1553f260d8cbba92c.css.map*/
