@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-04_app_launcher_recommendation",
+    "label": "App Recommendations in App Launcher",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable the app recommendations in the App Launcher",
+      "Treatment 2: Enable the app recommendations in the App Launcher, with Recents dropdown",
+      "Treatment 3: No app recommendations in the App Launcher and hide activities."
+    ],
+    "hash": 3181664439,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "recentsDropdownEnabled",
+      "hideActivities"
+    ]
+  }
+}
