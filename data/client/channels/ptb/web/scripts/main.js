@@ -40172,7 +40172,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301703", ", Version Hash: ").concat("279f43774d9ffa88c3bfe755df68a20c58ad29a9")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301713", ", Version Hash: ").concat("d4e7a80ee014b0bd225a0c4f674a59f6f0339218")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58534,6 +58534,7 @@
                 CREATE_POLL_DURATION_OPTION_LABEL_N_HOURS: "{num, plural, one {{num} hour} other {{num} hours}}",
                 CREATE_POLL_DURATION_OPTION_LABEL_3_DAYS: "3 days",
                 CREATE_POLL_DURATION_OPTION_LABEL_7_DAYS: "1 week",
+                CREATE_POLL_DURATION_OPTION_LABEL_14_DAYS: "2 weeks",
                 CREATE_POLL_DURATION_SELECTION_ARIA_LABEL: "Poll will be live for {duration}",
                 CREATE_POLL_POLL_DURATION_HEADING: "Poll Duration",
                 CREATE_POLL_DURATION_BUTTON_A11Y_HINT: "Tap to change poll duration",
@@ -65592,32 +65593,37 @@
                     hash: M
                 } = i.parse(e), y = C.default.isDiscordHostname(p) || C.default.isDiscordLocalhost(g, p);
                 if (y && (null == A ? void 0 : A.startsWith("/application-directory"))) {
-                    let [, , e, t] = A.split("/"), i = null != e && (0, l.isSnowflake)(e) ? e : void 0;
-                    return s => {
-                        var a;
-                        null == s || s.preventDefault();
+                    let e;
+                    let t = A.split("/"),
+                        [, , i, s] = t;
+                    5 === t.length && (e = t[4]);
+                    let a = null != i && (0, l.isSnowflake)(i) ? i : void 0;
+                    return t => {
+                        var o;
+                        null == t || t.preventDefault();
                         let {
-                            ApplicationDirectoryProfileSections: o
+                            ApplicationDirectoryProfileSections: l
                         } = n("272242"), {
-                            ApplicationDirectoryViews: l
-                        } = n("132871"), d = null !== (a = N.default.getGuildId()) && void 0 !== a ? a : void 0, _ = l.HOME;
-                        return "search" === e && (_ = l.SEARCH), null != i && (_ = l.APPLICATION, O.default.track(R.AnalyticEvents.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
-                            application_id: i,
+                            ApplicationDirectoryViews: d
+                        } = n("132871"), _ = null !== (o = N.default.getGuildId()) && void 0 !== o ? o : void 0, c = d.HOME;
+                        return "search" === i && (c = d.SEARCH), null != a && (c = d.APPLICATION, O.default.track(R.AnalyticEvents.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
+                            application_id: a,
                             device_platform: r.isMobile ? "mobile_web" : "desktop_web",
-                            guild_id: d,
+                            guild_id: _,
                             channel_id: m.default.getChannelId()
-                        })), Promise.resolve().then(n.bind(n, "147890")).then(e => {
+                        })), Promise.resolve().then(n.bind(n, "147890")).then(t => {
                             let {
                                 goToAppDirectory: n
-                            } = e;
+                            } = t;
                             n({
-                                view: _,
-                                applicationId: i,
-                                guildId: d,
-                                applicationSection: (0, I.default)(o, t),
+                                view: c,
+                                applicationId: a,
+                                guildId: _,
+                                applicationSection: (0, I.default)(l, s),
                                 entrypoint: {
                                     name: u.ApplicationDirectoryEntrypointNames.APPLICATION_DIRECTORY_URL
-                                }
+                                },
+                                skuId: e
                             })
                         }), !0
                     }
@@ -85641,105 +85647,120 @@
             "use strict";
             n.r(t), n.d(t, {
                 goHome: function() {
-                    return u
-                },
-                goSearch: function() {
-                    return E
-                },
-                goToAppDirectory: function() {
-                    return l
-                },
-                goToApplication: function() {
                     return d
                 },
-                goToApplicationSection: function() {
-                    return _
-                },
-                goToApplicationStoreSku: function() {
-                    return c
-                },
-                goToCategory: function() {
+                goSearch: function() {
                     return I
                 },
-                replaceAppDirectoryURLWith: function() {
+                goToAppDirectory: function() {
+                    return u
+                },
+                goToApplication: function() {
+                    return _
+                },
+                goToApplicationSection: function() {
+                    return c
+                },
+                goToApplicationStoreSku: function() {
+                    return E
+                },
+                goToCategory: function() {
                     return T
+                },
+                replaceAppDirectoryURLWith: function() {
+                    return f
                 }
             }), n("610138"), n("216116"), n("78328"), n("815648"), n("47120");
             var i = n("703656"),
                 r = n("626135"),
                 s = n("34674"),
                 a = n("132871"),
-                o = n("981631");
-            let l = e => {
+                o = n("272242"),
+                l = n("981631");
+            let u = e => {
                     let {
                         view: t = a.ApplicationDirectoryViews.HOME,
                         guildId: n,
                         applicationId: i,
                         applicationSection: s,
-                        entrypoint: l
-                    } = e, c = {
-                        ...l,
+                        entrypoint: u,
+                        skuId: T
+                    } = e, f = {
+                        ...u,
                         pathname: window.location.pathname
                     };
-                    switch (r.default.track(o.AnalyticEvents.APP_DIRECTORY_OPENED, {
-                            source: null == c ? void 0 : c.name
-                        }), (0, a.resetApplicationDirectoryHistory)(), (0, a.setEntrypoint)(c), null != n && (0, a.setGuildId)(n), t === a.ApplicationDirectoryViews.APPLICATION && null == i && (t = a.ApplicationDirectoryViews.HOME), t) {
+                    switch (r.default.track(l.AnalyticEvents.APP_DIRECTORY_OPENED, {
+                            source: null == f ? void 0 : f.name
+                        }), (0, a.resetApplicationDirectoryHistory)(), (0, a.setEntrypoint)(f), null != n && (0, a.setGuildId)(n), t === a.ApplicationDirectoryViews.APPLICATION && null == i && (t = a.ApplicationDirectoryViews.HOME), t) {
                         case a.ApplicationDirectoryViews.HOME:
-                            u();
+                            d();
                             break;
                         case a.ApplicationDirectoryViews.SEARCH:
-                            E();
+                            I();
                             break;
                         case a.ApplicationDirectoryViews.APPLICATION:
-                            null != i && (null != s ? _({
-                                applicationId: i,
-                                section: s
-                            }) : d({
-                                applicationId: i
-                            }))
+                            if (null != i) {
+                                if (null != s) {
+                                    if (s === o.ApplicationDirectoryProfileSections.STORE && null != T) {
+                                        E({
+                                            applicationId: i,
+                                            skuId: T
+                                        });
+                                        break
+                                    }
+                                    c({
+                                        applicationId: i,
+                                        section: s
+                                    });
+                                    break
+                                }
+                                _({
+                                    applicationId: i
+                                })
+                            }
                     }
                 },
-                u = () => {
+                d = () => {
                     let e = {
                         previousView: (0, a.getCurrentView)()
                     };
-                    (0, i.transitionTo)(o.Routes.APPLICATION_DIRECTORY, {
+                    (0, i.transitionTo)(l.Routes.APPLICATION_DIRECTORY, {
                         state: e
                     })
                 },
-                d = e => {
+                _ = e => {
                     let {
                         applicationId: t
                     } = e, n = {
                         previousView: (0, a.getCurrentView)()
                     };
-                    (0, i.transitionTo)(o.Routes.APPLICATION_DIRECTORY_PROFILE(t), {
+                    (0, i.transitionTo)(l.Routes.APPLICATION_DIRECTORY_PROFILE(t), {
                         state: n
                     })
                 },
-                _ = e => {
+                c = e => {
                     let {
                         applicationId: t,
                         section: n
                     } = e, r = {
                         previousView: (0, a.getCurrentView)()
                     };
-                    (0, i.transitionTo)(o.Routes.APPLICATION_DIRECTORY_PROFILE_SECTION(t, n), {
+                    (0, i.transitionTo)(l.Routes.APPLICATION_DIRECTORY_PROFILE_SECTION(t, n), {
                         state: r
                     })
                 },
-                c = e => {
+                E = e => {
                     let {
                         applicationId: t,
                         skuId: n
                     } = e, r = {
                         previousView: (0, a.getCurrentView)()
                     };
-                    (0, i.transitionTo)(o.Routes.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(t, n), {
+                    (0, i.transitionTo)(l.Routes.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(t, n), {
                         state: r
                     })
                 },
-                E = function() {
+                I = function() {
                     let {
                         query: e,
                         categoryId: t,
@@ -85747,20 +85768,20 @@
                     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, r = new URLSearchParams, s = {
                         previousView: (0, a.getCurrentView)()
                     };
-                    null != e && r.set("q", e), null != t && r.set("category_id", t.toString()), null != n && r.set("page", n.toString()), (0, i.transitionTo)(o.Routes.APPLICATION_DIRECTORY_SEARCH, {
+                    null != e && r.set("q", e), null != t && r.set("category_id", t.toString()), null != n && r.set("page", n.toString()), (0, i.transitionTo)(l.Routes.APPLICATION_DIRECTORY_SEARCH, {
                         search: r.toString(),
                         state: s
                     })
                 },
-                I = e => {
+                T = e => {
                     let {
                         categoryId: t
                     } = e;
-                    E({
+                    I({
                         categoryId: null != t ? t : s.ALL_CATEGORY_ID
                     })
                 },
-                T = e => {
+                f = e => {
                     let {
                         location: {
                             state: t
@@ -85773,17 +85794,18 @@
             "use strict";
             n.r(t), n.d(t, {
                 useAppStorefrontAvailable: function() {
-                    return a
+                    return o
                 }
             });
             var i = n("442837"),
-                r = n("812206"),
-                s = n("621853");
+                r = n("264043"),
+                s = n("812206"),
+                a = n("621853");
 
-            function a(e) {
-                return (0, i.useStateFromStores)([r.default, s.default], () => {
-                    var t, n, i, a, o;
-                    return null !== (o = null !== (a = null === (t = r.default.getApplication(e)) || void 0 === t ? void 0 : t.storefront_available) && void 0 !== a ? a : null === (i = s.default.getUserProfile(e)) || void 0 === i ? void 0 : null === (n = i.application) || void 0 === n ? void 0 : n.storefront_available) && void 0 !== o && o
+            function o(e) {
+                return (0, i.useStateFromStores)([s.default, a.default, r.default], () => {
+                    var t, n, i, o, l, u, d;
+                    return null !== (d = null !== (u = null !== (l = null === (t = s.default.getApplication(e)) || void 0 === t ? void 0 : t.storefront_available) && void 0 !== l ? l : null === (i = a.default.getUserProfile(e)) || void 0 === i ? void 0 : null === (n = i.application) || void 0 === n ? void 0 : n.storefront_available) && void 0 !== u ? u : null === (o = r.default.getApplication(e)) || void 0 === o ? void 0 : o.storefront_available) && void 0 !== d && d
                 }, [e])
             }
         },
@@ -93487,8 +93509,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301703", "301703"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301703")), t = 0), t
+                let t = parseInt((e = "301713", "301713"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301713")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121710,8 +121732,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301703",
-                    versionHash: "279f43774d9ffa88c3bfe755df68a20c58ad29a9"
+                    buildNumber: "301713",
+                    versionHash: "d4e7a80ee014b0bd225a0c4f674a59f6f0339218"
                 }
             }
             n.r(t), n.d(t, {
@@ -122245,7 +122267,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("30386"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46388"), n.e("46453"), n.e("87624"), n.e("10247"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("5452"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("30386"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46388"), n.e("46453"), n.e("87624"), n.e("10247"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -177951,8 +177973,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718304163787",
-                                    build_number: "301703"
+                                    built_at: "1718304669393",
+                                    build_number: "301713"
                                 }
                             },
                             retries: 1
@@ -183770,7 +183792,7 @@
                 d = 55,
                 _ = 3,
                 c = 50;
-            (r = i || (i = {}))[r.ONE_HOUR = 1] = "ONE_HOUR", r[r.FOUR_HOURS = 4] = "FOUR_HOURS", r[r.EIGHT_HOURS = 8] = "EIGHT_HOURS", r[r.ONE_DAY = 24] = "ONE_DAY", r[r.THREE_DAYS = 72] = "THREE_DAYS", r[r.SEVEN_DAYS = 168] = "SEVEN_DAYS", s.ExpressionPickerViewType.GIF, s.ExpressionPickerViewType.EMOJI
+            (r = i || (i = {}))[r.ONE_HOUR = 1] = "ONE_HOUR", r[r.FOUR_HOURS = 4] = "FOUR_HOURS", r[r.EIGHT_HOURS = 8] = "EIGHT_HOURS", r[r.ONE_DAY = 24] = "ONE_DAY", r[r.THREE_DAYS = 72] = "THREE_DAYS", r[r.SEVEN_DAYS = 168] = "SEVEN_DAYS", r[r.FOURTEEN_DAYS = 336] = "FOURTEEN_DAYS", s.ExpressionPickerViewType.GIF, s.ExpressionPickerViewType.EMOJI
         },
         79390: function(e, t, n) {
             "use strict";
@@ -255320,7 +255342,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "279f43774d9ffa88c3bfe755df68a20c58ad29a9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d4e7a80ee014b0bd225a0c4f674a59f6f0339218"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283950,7 +283972,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301703"
+                                build_number: "301713"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291262,7 +291284,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301703", "301703"), 10);
+                let s = parseInt((n = "301713", "301713"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319445,4 +319467,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.e64843dbb587b1c458ca.js.map
+//# sourceMappingURL=42458.fcd7aab543b6eb6cfc40.js.map
