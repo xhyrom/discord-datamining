@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301885", ", Version Hash: ").concat("4aef9004d80f78ac479712be9c14a898622d046c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301901", ", Version Hash: ").concat("e9335f6e59a98f8a591194ceb75e1b5103473b02")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -77488,24 +77488,25 @@
         499254: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                dismissAppLauncherPopup: function() {
+                dismissAppLauncher: function() {
                     return s
                 },
-                showAppLauncherPopup: function() {
+                showAppLauncher: function() {
                     return r
                 }
             });
             var i = n("570140");
 
-            function r() {
+            function r(e) {
                 i.default.dispatch({
-                    type: "APP_LAUNCHER_SHOW_POPUP"
+                    type: "APP_LAUNCHER_SHOW",
+                    entrypoint: e
                 })
             }
 
             function s() {
                 i.default.dispatch({
-                    type: "APP_LAUNCHER_DISMISS_POPUP"
+                    type: "APP_LAUNCHER_DISMISS"
                 })
             }
         },
@@ -77516,11 +77517,15 @@
                 APP_LAUNCHER_ELEMENT_CLASSNAME: function() {
                     return s
                 },
+                APP_LAUNCHER_WEB_MODAL_KEY: function() {
+                    return a
+                },
                 CommandListSortOrder: function() {
                     return i
                 }
             }), (r = i || (i = {}))[r.POPULAR = 0] = "POPULAR", r[r.ALPHABETICAL = 1] = "ALPHABETICAL";
-            let s = "app-launcher-element"
+            let s = "app-launcher-element",
+                a = "app-launcher-modal"
         },
         424602: function(e, t, n) {
             "use strict";
@@ -77568,36 +77573,53 @@
             "use strict";
             n.r(t);
             var i, r, s, a, o = n("442837"),
-                l = n("570140");
-            let u = {
-                showPopup: !1
+                l = n("570140"),
+                u = n("827498");
+            let d = {
+                show: !1,
+                entrypoint: u.AppLauncherEntrypoint.NONE
             };
 
-            function d() {
-                return u.showPopup = !1, !0
+            function _() {
+                return d.show = !1, d.entrypoint = u.AppLauncherEntrypoint.NONE, !0
             }
-            class _ extends(a = o.default.Store) {
+            class c extends(a = o.default.Store) {
                 initialize() {}
                 shouldShowPopup() {
-                    return u.showPopup
+                    return d.show && d.entrypoint === u.AppLauncherEntrypoint.TEXT
+                }
+                shouldShowModal() {
+                    return d.show && d.entrypoint === u.AppLauncherEntrypoint.VOICE
                 }
             }
-            s = "AppLauncherStore", (r = "displayName") in(i = _) ? Object.defineProperty(i, r, {
+            s = "AppLauncherStore", (r = "displayName") in(i = c) ? Object.defineProperty(i, r, {
                 value: s,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : i[r] = s, t.default = new _(l.default, {
-                APP_LAUNCHER_SHOW_POPUP: function() {
-                    return u.showPopup = !0, !0
+            }) : i[r] = s, t.default = new c(l.default, {
+                APP_LAUNCHER_SHOW: function(e) {
+                    let {
+                        entrypoint: t
+                    } = e;
+                    return d.show = !0, d.entrypoint = t, !0
                 },
-                APP_LAUNCHER_DISMISS_POPUP: d,
-                CONNECTION_OPEN: d,
-                LOGOUT: d,
-                CHANNEL_SELECT: d,
-                APPLICATION_COMMAND_SET_ACTIVE_COMMAND: d,
-                APP_LAUNCHER_SET_ACTIVE_COMMAND: d
+                APP_LAUNCHER_DISMISS: _,
+                CONNECTION_OPEN: _,
+                LOGOUT: _,
+                CHANNEL_SELECT: _,
+                APPLICATION_COMMAND_SET_ACTIVE_COMMAND: _,
+                APP_LAUNCHER_SET_ACTIVE_COMMAND: _
             })
+        },
+        827498: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                AppLauncherEntrypoint: function() {
+                    return i
+                }
+            }), (r = i || (i = {}))[r.NONE = 0] = "NONE", r[r.TEXT = 1] = "TEXT", r[r.VOICE = 2] = "VOICE"
         },
         496158: function(e, t, n) {
             "use strict";
@@ -77782,125 +77804,53 @@
         },
         663924: function(e, t, n) {
             "use strict";
-            n.r(t), n("47120");
+            n.r(t);
             var i = n("735250"),
                 r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("374470"),
-                l = n("952265"),
-                u = n("481060"),
-                d = n("410575"),
-                _ = n("40851"),
-                c = n("566860"),
-                E = n("153850"),
-                I = n("585483"),
-                T = n("5967"),
-                f = n("499254"),
-                S = n("695676"),
-                h = n("173790"),
-                A = n("361917"),
-                m = n("314734"),
-                N = n("981631"),
-                p = n("175323");
+                s = n("374470"),
+                a = n("952265"),
+                o = n("481060"),
+                l = n("40851"),
+                u = n("153850"),
+                d = n("585483"),
+                _ = n("5967"),
+                c = n("499254"),
+                E = n("421591"),
+                I = n("314734"),
+                T = n("981631"),
+                f = n("175323");
 
-            function O(e) {
-                let t, {
-                        channel: n,
-                        closeOnModalOuterClick: s = !1,
-                        parentModalKey: a
-                    } = e,
-                    d = c.AppLauncherRecommendationsExperiment.useExperiment({
-                        location: "App Launcher Popup"
-                    }, {
-                        autoTrackExposure: !0
-                    }),
-                    E = r.useRef(null),
-                    {
-                        renderWindow: O,
-                        windowDispatch: C
-                    } = r.useContext(_.default),
-                    R = null != a,
-                    g = (0, l.useIsModalAtTop)(null != a ? a : ""),
-                    L = r.useCallback(e => {
-                        var t;
-                        if (!R && (0, l.hasAnyModalOpen)() || R && !(g && s)) return;
-                        let {
-                            target: n
-                        } = e;
-                        if ((0, o.isElement)(n) && null != n.closest("." + m.APP_LAUNCHER_ELEMENT_CLASSNAME)) return;
-                        for (;
-                            (0, o.isElement)(n);) {
-                            if (n === E.current) return;
-                            n = n.parentNode
-                        }
-                        f.dismissAppLauncherPopup();
-                        let i = null === (t = (0, T.eventOwnerDocument)(e)) || void 0 === t ? void 0 : t.activeElement;
-                        (null == i || "BODY" === i.tagName) && I.ComponentDispatch.dispatchToLastSubscribed(N.ComponentActions.TEXTAREA_FOCUS)
-                    }, [s, g, R]);
-                r.useLayoutEffect(() => (O.addEventListener("mousedown", L), O.addEventListener("contextmenu", L), C.subscribe(N.ComponentActions.POPOUT_CLOSE, f.dismissAppLauncherPopup), () => {
-                    O.removeEventListener("mousedown", L), O.removeEventListener("contextmenu", L), C.unsubscribe(N.ComponentActions.POPOUT_CLOSE, f.dismissAppLauncherPopup)
-                }), [L, O, C]), (0, u.useFocusLock)(E), r.useEffect(() => {
-                    (!R && (0, l.hasAnyModalOpen)() || R && !g) && f.dismissAppLauncherPopup()
-                }, [g, R]);
+            function S(e) {
                 let {
-                    history: v,
-                    setHistory: D,
-                    currentView: M,
-                    pushHistory: y,
-                    goBack: P
-                } = function() {
-                    let [e, t] = r.useState([{
-                        type: S.HistoryItemType.HOME
-                    }]), n = e[e.length - 1];
-                    return {
-                        history: e,
-                        setHistory: t,
-                        currentView: n,
-                        pushHistory: n => {
-                            t([...e, n])
-                        },
-                        goBack: () => {
-                            if (0 === e.length) return;
-                            let n = [...e];
-                            n.pop(), t(n)
-                        }
+                    channel: t,
+                    closeOnModalOuterClick: n = !1,
+                    parentModalKey: u
+                } = e, f = r.useRef(null), {
+                    renderWindow: S,
+                    windowDispatch: h
+                } = r.useContext(l.default), A = null != u, m = (0, a.useIsModalAtTop)(null != u ? u : ""), N = r.useCallback(e => {
+                    var t;
+                    if (!A && (0, a.hasAnyModalOpen)() || A && !(m && n)) return;
+                    let {
+                        target: i
+                    } = e;
+                    if ((0, s.isElement)(i) && null != i.closest("." + I.APP_LAUNCHER_ELEMENT_CLASSNAME)) return;
+                    for (;
+                        (0, s.isElement)(i);) {
+                        if (i === f.current) return;
+                        i = i.parentNode
                     }
-                }();
-                switch (null == M ? void 0 : M.type) {
-                    case S.HistoryItemType.HOME:
-                        t = (0, i.jsx)(A.default, {
-                            channel: n,
-                            enableRecommendations: d.enabled,
-                            enableRecents: d.recentsDropdownEnabled
-                        });
-                        break;
-                    case S.HistoryItemType.APPLICATION:
-                        t = (0, i.jsx)(h.default, {
-                            channel: n,
-                            application: M.application,
-                            sectionName: M.sectionName
-                        });
-                        break;
-                    default:
-                        t = null
-                }
-                return (0, i.jsx)("div", {
-                    className: p.drawerSizingWrapper,
-                    ref: E,
-                    children: (0, i.jsx)("div", {
-                        className: p.contentWrapper,
-                        children: (0, i.jsx)(S.AppLauncherHistoryContext.Provider, {
-                            value: {
-                                history: v,
-                                setHistory: D,
-                                currentView: M,
-                                pushHistory: y,
-                                goBack: P
-                            },
-                            children: t
-                        })
-                    })
+                    c.dismissAppLauncher();
+                    let r = null === (t = (0, _.eventOwnerDocument)(e)) || void 0 === t ? void 0 : t.activeElement;
+                    (null == r || "BODY" === r.tagName) && d.ComponentDispatch.dispatchToLastSubscribed(T.ComponentActions.TEXTAREA_FOCUS)
+                }, [n, m, A]);
+                return r.useLayoutEffect(() => (S.addEventListener("mousedown", N), S.addEventListener("contextmenu", N), h.subscribe(T.ComponentActions.POPOUT_CLOSE, c.dismissAppLauncher), () => {
+                    S.removeEventListener("mousedown", N), S.removeEventListener("contextmenu", N), h.unsubscribe(T.ComponentActions.POPOUT_CLOSE, c.dismissAppLauncher)
+                }), [N, S, h]), (0, o.useFocusLock)(f), r.useEffect(() => {
+                    (!A && (0, a.hasAnyModalOpen)() || A && !m) && c.dismissAppLauncher()
+                }, [m, A]), (0, i.jsx)(E.default, {
+                    drawerRef: f,
+                    channel: t
                 })
             }
             t.default = r.memo(function(e) {
@@ -77908,28 +77858,106 @@
                     positionTargetRef: t,
                     ...n
                 } = e;
-                return (0, i.jsx)(d.default, {
-                    section: N.AnalyticsSections.EXPRESSION_PICKER,
-                    children: (0, i.jsx)(E.AppReferencePositionLayer, {
-                        className: p.positionLayer,
-                        targetRef: t,
-                        position: "top",
-                        align: "right",
-                        spacing: 8,
-                        autoInvert: !0,
-                        children: e => {
-                            let {
-                                isPositioned: t
-                            } = e;
-                            return (0, i.jsx)("section", {
-                                className: a()(p.positionContainer),
-                                role: "dialog",
-                                "aria-label": "Application Launcher",
-                                children: t && (0, i.jsx)(O, {
-                                    ...n
-                                })
+                return (0, i.jsx)(u.AppReferencePositionLayer, {
+                    className: f.positionLayer,
+                    targetRef: t,
+                    position: "top",
+                    align: "right",
+                    spacing: 8,
+                    autoInvert: !0,
+                    children: e => {
+                        let {
+                            isPositioned: t
+                        } = e;
+                        return (0, i.jsx)("section", {
+                            className: f.positionContainer,
+                            role: "dialog",
+                            "aria-label": "Application Launcher",
+                            children: t && (0, i.jsx)(S, {
+                                ...n
                             })
+                        })
+                    }
+                })
+            })
+        },
+        421591: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("566860"),
+                a = n("695676"),
+                o = n("173790"),
+                l = n("361917"),
+                u = n("579539");
+            t.default = r.memo(function(e) {
+                let t, {
+                        drawerRef: n,
+                        channel: d
+                    } = e,
+                    {
+                        history: _,
+                        setHistory: c,
+                        currentView: E,
+                        pushHistory: I,
+                        goBack: T
+                    } = function() {
+                        let [e, t] = r.useState([{
+                            type: a.HistoryItemType.HOME
+                        }]), n = e[e.length - 1];
+                        return {
+                            history: e,
+                            setHistory: t,
+                            currentView: n,
+                            pushHistory: n => {
+                                t([...e, n])
+                            },
+                            goBack: () => {
+                                if (0 === e.length) return;
+                                let n = [...e];
+                                n.pop(), t(n)
+                            }
                         }
+                    }(),
+                    f = s.AppLauncherRecommendationsExperiment.useExperiment({
+                        location: "App Launcher Root"
+                    }, {
+                        autoTrackExposure: !0
+                    });
+                switch (null == E ? void 0 : E.type) {
+                    case a.HistoryItemType.HOME:
+                        t = (0, i.jsx)(l.default, {
+                            channel: d,
+                            enableRecommendations: f.enabled,
+                            enableRecents: f.recentsDropdownEnabled
+                        });
+                        break;
+                    case a.HistoryItemType.APPLICATION:
+                        t = (0, i.jsx)(o.default, {
+                            channel: d,
+                            application: E.application,
+                            sectionName: E.sectionName
+                        });
+                        break;
+                    default:
+                        t = null
+                }
+                return (0, i.jsx)("div", {
+                    className: u.drawerSizingWrapper,
+                    ref: n,
+                    children: (0, i.jsx)("div", {
+                        className: u.contentWrapper,
+                        children: (0, i.jsx)(a.AppLauncherHistoryContext.Provider, {
+                            value: {
+                                history: _,
+                                setHistory: c,
+                                currentView: E,
+                                pushHistory: I,
+                                goBack: T
+                            },
+                            children: t
+                        })
                     })
                 })
             })
@@ -78038,7 +78066,7 @@
                         let {
                             applicationId: t
                         } = e;
-                        d.dismissAppLauncherPopup(), (0, l.trackWithMetadata)(_.AnalyticEvents.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+                        d.dismissAppLauncher(), (0, l.trackWithMetadata)(_.AnalyticEvents.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
                             location: u.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW,
                             application_id: t,
                             section_name: I,
@@ -78087,7 +78115,7 @@
                     command: n,
                     section: a
                 } = e, l = r.useCallback(() => {
-                    _.dismissAppLauncherPopup(), o.setActiveCommand({
+                    _.dismissAppLauncher(), o.setActiveCommand({
                         channelId: t.id,
                         command: n,
                         section: a,
@@ -93595,8 +93623,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301885", "301885"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301885")), t = 0), t
+                let t = parseInt((e = "301901", "301901"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301901")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121840,8 +121868,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301885",
-                    versionHash: "4aef9004d80f78ac479712be9c14a898622d046c"
+                    buildNumber: "301901",
+                    versionHash: "e9335f6e59a98f8a591194ceb75e1b5103473b02"
                 }
             }
             n.r(t), n.d(t, {
@@ -178081,8 +178109,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718317337048",
-                                    build_number: "301885"
+                                    built_at: "1718318180235",
+                                    build_number: "301901"
                                 }
                             },
                             retries: 1
@@ -255407,7 +255435,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4aef9004d80f78ac479712be9c14a898622d046c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e9335f6e59a98f8a591194ceb75e1b5103473b02"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284037,7 +284065,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301885"
+                                build_number: "301901"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291349,7 +291377,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301885", "301885"), 10);
+                let s = parseInt((n = "301901", "301901"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319532,4 +319560,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.11804cbb441530047749.js.map
+//# sourceMappingURL=42458.7ed7d367ad1188e41491.js.map
