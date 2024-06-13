@@ -69,6 +69,7 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Bigger file sharing (50 MB limit)</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Nitro badge</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Custom video backgrounds</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Custom app icon</span></li>
 </ul>
 <h3 id="h_01HBCK2APPH2Q7ABWTMKADV4H5"><span style="font-weight: 400;">Are you looking for Classic? Check our FAQ at the bottom of this article.</span></h3>
 <h1 id="h_01GFV3PD5V65SNQDEGHD084MBA"><strong>How do I sign up?</strong></h1>
@@ -100,7 +101,7 @@
 <p><span class="wysiwyg-font-size-large"><strong>On Desktop/Browser</strong></span></p>
 <ol>
     <li style="font-weight: 400;" aria-level="1">
-        <span style="font-weight: 400;">Select the </span><strong>cog wheel</strong><span style="font-weight: 400;"> in the bottom left to open </span><strong>User Settings</strong><span style="font-weight: 400;">.</span>
+        <span style="font-weight: 400;">Select the </span><strong>cogwheel</strong><span style="font-weight: 400;"> in the bottom left to open </span><strong>User Settings</strong><span style="font-weight: 400;">.</span>
     </li>
     <li style="font-weight: 400;" aria-level="1">
         <span style="font-weight: 400;">Select </span><strong>Subscribe</strong><span style="font-weight: 400;">, then choose either </span><strong>Switch Plans</strong><span style="font-weight: 400;"> or </span><strong>Cancel</strong><span style="font-weight: 400;">. </span>
