@@ -40168,7 +40168,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301649", ", Version Hash: ").concat("5bf194d8a5070ff431b7863159b56eb89c12bd05")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301663", ", Version Hash: ").concat("5361b2a49f2f1980a0abef1f7738d4bf811cf6a1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93085,8 +93085,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301649", "301649"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301649")), t = 0), t
+                let t = parseInt((e = "301663", "301663"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301663")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -108630,7 +108630,21 @@
                 }, {
                     autoTrackExposure: t
                 })
-            }
+            }(0, r.createExperiment)({
+                kind: "user",
+                id: "2024-06_clans_mobile_tags",
+                label: "Clans - Mobile",
+                defaultConfig: {
+                    clanTagsVisible: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Show tags on mobile",
+                    config: {
+                        clanTagsVisible: !0
+                    }
+                }]
+            })
         },
         645896: function(e, t, n) {
             "use strict";
@@ -108904,37 +108918,47 @@
             "use strict";
             n.r(t), n.d(t, {
                 formatSelectionList: function() {
-                    return E
+                    return A
                 },
                 getClanBadgeUrl: function() {
-                    return T
+                    return N
                 },
                 getClanBannerUrl: function() {
-                    return f
+                    return p
                 },
                 getUserClanData: function() {
-                    return u
+                    return T
                 },
                 isGuildAClan: function() {
-                    return d
+                    return f
                 },
                 isGuildAdoptedUserClanIdentity: function() {
-                    return c
+                    return h
                 },
                 isGuildAdoptedUserClanIdentityChanged: function() {
-                    return _
+                    return S
                 },
                 stableSortSet: function() {
-                    return l
+                    return I
+                },
+                useShouldDisplayClanTag: function() {
+                    return O
                 }
             }), n("47120");
             var i = n("108131"),
                 r = n.n(i),
-                s = n("308083"),
-                a = n("981631"),
-                o = n("689938");
+                s = n("442837"),
+                a = n("607070"),
+                o = n("715903"),
+                l = n("271383"),
+                u = n("594174");
+            n("963202");
+            var d = n("954138"),
+                _ = n("308083"),
+                c = n("981631"),
+                E = n("689938");
 
-            function l(e, t) {
+            function I(e, t) {
                 let n = Array.from(e);
                 return n.sort((e, n) => {
                     let i = r().v3("".concat(e).concat(t));
@@ -108942,7 +108966,7 @@
                 }), new Set(n)
             }
 
-            function u(e) {
+            function T(e) {
                 return null != e && e.identityEnabled ? {
                     guildId: e.identityGuildId,
                     tag: e.tag,
@@ -108950,66 +108974,82 @@
                 } : {}
             }
 
-            function d(e) {
-                return null != e && e.hasFeature(a.GuildFeatures.CLAN)
+            function f(e) {
+                return null != e && e.hasFeature(c.GuildFeatures.CLAN)
             }
 
-            function _(e, t) {
+            function S(e, t) {
                 var n, i;
                 return null != t && t.identityGuildId === (null == e ? void 0 : e.id) && ((null == e ? void 0 : null === (n = e.clan) || void 0 === n ? void 0 : n.tag) != null && (null == e ? void 0 : null === (i = e.clan) || void 0 === i ? void 0 : i.tag) !== t.tag || null == t.identityEnabled)
             }
 
-            function c(e, t) {
+            function h(e, t) {
                 return null != e && null != t && null != t.identityGuildId && t.identityGuildId === e && !!t.identityEnabled || !1
             }
-            let E = (e, t) => {
+            let A = (e, t) => {
                     if (0 === e.length) return null;
                     if (1 === e.length) return e[1];
-                    if (2 === e.length) return o.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
+                    if (2 === e.length) return E.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
                         item1: e[0],
                         item2: e[1]
                     });
                     if (null != t && e.length > t) {
                         let n = e.slice(0, t).join(", "),
-                            i = o.default.Messages.CLAN_OVERVIEW_LIST_OTHERS_COUNT.format({
+                            i = E.default.Messages.CLAN_OVERVIEW_LIST_OTHERS_COUNT.format({
                                 n: e.length - t
                             });
-                        return o.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                        return E.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
                             items: n,
                             last: i
                         })
                     } {
                         let t = e.slice(0, -1).join(", "),
                             n = e[e.length - 1];
-                        return o.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                        return E.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
                             items: t,
                             last: n
                         })
                     }
                 },
-                I = {
-                    [s.ClanTagBadgeSize.SIZE_12]: 16,
-                    [s.ClanTagBadgeSize.SIZE_16]: 16,
-                    [s.ClanTagBadgeSize.SIZE_24]: 24,
-                    [s.ClanTagBadgeSize.SIZE_32]: 32,
-                    [s.ClanTagBadgeSize.SIZE_36]: 40
+                m = {
+                    [_.ClanTagBadgeSize.SIZE_12]: 16,
+                    [_.ClanTagBadgeSize.SIZE_16]: 16,
+                    [_.ClanTagBadgeSize.SIZE_24]: 24,
+                    [_.ClanTagBadgeSize.SIZE_32]: 32,
+                    [_.ClanTagBadgeSize.SIZE_36]: 40
                 };
 
-            function T(e, t) {
-                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.ClanTagBadgeSize.SIZE_12;
+            function N(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : _.ClanTagBadgeSize.SIZE_12;
                 if (null == t) return;
                 let {
                     CDN_HOST: i
                 } = window.GLOBAL_ENV;
-                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(I[n])
+                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(m[n])
             }
 
-            function f(e, t) {
+            function p(e, t) {
                 if (null == t) return;
                 let {
                     CDN_HOST: n
                 } = window.GLOBAL_ENV;
                 if (null != n) return "".concat(location.protocol, "//").concat(n, "/clan-banners/").concat(e, "/").concat(t, ".png?size=512")
+            }
+
+            function O(e, t) {
+                let n = (0, s.useStateFromStores)([a.default], () => a.default.hideTags),
+                    i = (0, s.useStateFromStores)([u.default], () => u.default.getUser(e), [e]),
+                    r = (0, s.useStateFromStores)([l.default], () => {
+                        if (null == t || null == e) return null;
+                        let n = l.default.getMember(t, e);
+                        return (0, o.hasAutomodQuarantinedProfile)(n)
+                    }, [t, e]),
+                    {
+                        tag: _,
+                        guildId: c
+                    } = T(null == i ? void 0 : i.clan),
+                    E = (0, d.default)("clan_tag_chiplet");
+                return !n && !!E && null != c && null != _ && !r && !0
             }
         },
         137920: function(e, t, n) {
@@ -109036,18 +109076,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return s
+                    return r
                 }
             });
-            var i = n("963202"),
-                r = n("169559");
+            var i = n("963202");
 
-            function s(e) {
-                let t = (0, r.default)(e),
-                    {
-                        clanTagsVisible: n
-                    } = (0, i.useClanGeneralExperiment)(e);
-                return t || n
+            function r(e) {
+                return (0, i.useClanGeneralExperiment)(e).clanTagsVisible
             }
         },
         169559: function(e, t, n) {
@@ -109313,13 +109348,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 BaseClanTagChiplet: function() {
-                    return N
+                    return h
                 },
                 ClanTagBadge: function() {
-                    return m
-                },
-                useShouldDisplayClanTag: function() {
-                    return O
+                    return S
                 }
             }), n("47120");
             var i = n("735250"),
@@ -109328,35 +109360,32 @@
                 a = n.n(s),
                 o = n("442837"),
                 l = n("481060"),
-                u = n("607070"),
-                d = n("715903"),
-                _ = n("271383"),
-                c = n("594174"),
-                E = n("645896"),
-                I = n("353093"),
-                T = n("954138"),
-                f = n("426964"),
-                S = n("308083"),
-                h = n("689938"),
-                A = n("53408");
-            let m = r.memo(function(e) {
+                u = n("594174"),
+                d = n("645896"),
+                _ = n("353093"),
+                c = n("954138"),
+                E = n("426964"),
+                I = n("308083"),
+                T = n("689938"),
+                f = n("53408");
+            let S = r.memo(function(e) {
                     let {
                         src: t,
                         tag: n,
                         className: r,
-                        size: s = S.ClanTagBadgeSize.SIZE_16
+                        size: s = I.ClanTagBadgeSize.SIZE_16
                     } = e;
                     return null == t ? null : (0, i.jsx)("img", {
                         src: t,
-                        alt: h.default.Messages.CLAN_BADGE_ALT.format({
+                        alt: T.default.Messages.CLAN_BADGE_ALT.format({
                             tag: n
                         }),
-                        className: a()(A.badge, r),
+                        className: a()(f.badge, r),
                         width: s,
                         height: s
                     })
                 }),
-                N = r.memo(function(e) {
+                h = r.memo(function(e) {
                     let {
                         guildId: t,
                         clanTag: n,
@@ -109365,62 +109394,62 @@
                         textClassName: o,
                         badgeClassName: u,
                         onClick: d,
-                        onMouseEnter: _,
-                        textVariant: c = "text-xs/semibold",
-                        textColor: E = "text-normal",
-                        badgeSize: f = S.ClanTagBadgeSize.SIZE_12,
-                        inline: h = !0
+                        onMouseEnter: E,
+                        textVariant: T = "text-xs/semibold",
+                        textColor: h = "text-normal",
+                        badgeSize: A = I.ClanTagBadgeSize.SIZE_12,
+                        inline: m = !0
                     } = e;
-                    return (0, T.default)("base_clan_tag_chiplet") ? (0, i.jsx)(l.Clickable, {
+                    return (0, c.default)("base_clan_tag_chiplet") ? (0, i.jsx)(l.Clickable, {
                         tag: "span",
                         tabIndex: null == d ? -1 : void 0,
                         onClick: d,
-                        onMouseEnter: _,
-                        className: a()(A.chipletContainerInner, h && A.chipletContainerInline, null != d && A.clickable, s),
+                        onMouseEnter: E,
+                        className: a()(f.chipletContainerInner, m && f.chipletContainerInline, null != d && f.clickable, s),
                         children: (0, i.jsxs)(l.Text, {
-                            variant: c,
-                            color: E,
+                            variant: T,
+                            color: h,
                             tag: "span",
-                            className: a()(A.text, o),
-                            children: [null != r && "string" == typeof r ? (0, i.jsx)(m, {
-                                src: (0, I.getClanBadgeUrl)(t, r, f),
+                            className: a()(f.text, o),
+                            children: [null != r && "string" == typeof r ? (0, i.jsx)(S, {
+                                src: (0, _.getClanBadgeUrl)(t, r, A),
                                 tag: null == n ? void 0 : n.toString(),
-                                size: f,
+                                size: A,
                                 className: u
                             }) : r, (0, i.jsx)("span", {
-                                className: A.unselectable,
+                                className: f.unselectable,
                                 children: n
                             })]
                         })
                     }) : null
                 }),
-                p = r.memo(function(e) {
+                A = r.memo(function(e) {
                     var t, n;
                     let {
                         clan: s,
                         userId: a,
-                        children: u,
-                        profileViewedAnalytics: d
-                    } = e, _ = (0, o.useStateFromStores)([c.default], () => c.default.getUser(a), [a]), I = null !== (t = null == _ ? void 0 : _.clan) && void 0 !== t ? t : s, [T, S] = (0, E.useFetchClanInfo)(null !== (n = null == I ? void 0 : I.identityGuildId) && void 0 !== n ? n : null), h = r.useCallback(() => {
-                        S()
-                    }, [S]);
+                        children: _,
+                        profileViewedAnalytics: c
+                    } = e, I = (0, o.useStateFromStores)([u.default], () => u.default.getUser(a), [a]), T = null !== (t = null == I ? void 0 : I.clan) && void 0 !== t ? t : s, [S, h] = (0, d.useFetchClanInfo)(null !== (n = null == T ? void 0 : T.identityGuildId) && void 0 !== n ? n : null), A = r.useCallback(() => {
+                        h()
+                    }, [h]);
                     return (0, i.jsx)(l.Popout, {
                         renderPopout: e => {
                             let {
                                 closePopout: t
                             } = e;
-                            return (0, i.jsx)(f.default, {
-                                isLoading: T,
-                                clan: I,
+                            return (0, i.jsx)(E.default, {
+                                isLoading: S,
+                                clan: T,
                                 onClose: t,
-                                profileViewedAnalytics: d
+                                profileViewedAnalytics: c
                             })
                         },
                         position: "top",
                         animationPosition: "top",
                         spacing: 16,
                         children: e => (0, i.jsx)(l.Clickable, {
-                            className: A.clickable,
+                            className: f.clickable,
                             tag: "span",
                             ...e,
                             onClick: t => {
@@ -109429,28 +109458,12 @@
                             },
                             onMouseEnter: () => {
                                 var t;
-                                h(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
+                                A(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
                             },
-                            children: u
+                            children: _
                         })
                     })
                 });
-
-            function O(e, t) {
-                let n = (0, o.useStateFromStores)([u.default], () => u.default.hideTags),
-                    i = (0, o.useStateFromStores)([c.default], () => c.default.getUser(e), [e]),
-                    r = (0, o.useStateFromStores)([_.default], () => {
-                        if (null == t || null == e) return null;
-                        let n = _.default.getMember(t, e);
-                        return (0, d.hasAutomodQuarantinedProfile)(n)
-                    }, [t, e]),
-                    {
-                        tag: s,
-                        guildId: a
-                    } = (0, I.getUserClanData)(null == i ? void 0 : i.clan),
-                    l = (0, T.default)("clan_tag_chiplet");
-                return !n && !!l && null != a && null != s && !r && !0
-            }
             t.default = r.memo(function(e) {
                 var t;
                 let {
@@ -109458,38 +109471,38 @@
                     userId: r,
                     contextGuildId: s,
                     className: l,
-                    textVariant: u,
-                    textColor: d,
-                    badgeSize: _,
-                    disableGuildProfile: E = !1,
+                    textVariant: d,
+                    textColor: c,
+                    badgeSize: E,
+                    disableGuildProfile: I = !1,
                     inline: T = !0,
-                    profileViewedAnalytics: f
-                } = e, S = (0, o.useStateFromStores)([c.default], () => c.default.getUser(r), [r]), h = null !== (t = null == S ? void 0 : S.clan) && void 0 !== t ? t : n, {
-                    tag: m,
-                    badge: C,
-                    guildId: R
-                } = (0, I.getUserClanData)(h);
-                return O(r, s) && null != R ? E ? (0, i.jsx)(N, {
-                    guildId: R,
-                    clanTag: m,
-                    clanBadge: C,
-                    className: a()(A.noTooltip, l),
-                    textVariant: u,
-                    textColor: d,
-                    badgeSize: _,
+                    profileViewedAnalytics: S
+                } = e, m = (0, o.useStateFromStores)([u.default], () => u.default.getUser(r), [r]), N = null !== (t = null == m ? void 0 : m.clan) && void 0 !== t ? t : n, {
+                    tag: p,
+                    badge: O,
+                    guildId: C
+                } = (0, _.getUserClanData)(N);
+                return (0, _.useShouldDisplayClanTag)(r, s) && null != C ? I ? (0, i.jsx)(h, {
+                    guildId: C,
+                    clanTag: p,
+                    clanBadge: O,
+                    className: a()(f.noTooltip, l),
+                    textVariant: d,
+                    textColor: c,
+                    badgeSize: E,
                     inline: T
-                }) : (0, i.jsx)(p, {
-                    clan: h,
+                }) : (0, i.jsx)(A, {
+                    clan: N,
                     userId: r,
-                    profileViewedAnalytics: f,
-                    children: (0, i.jsx)(N, {
-                        guildId: R,
-                        clanTag: m,
-                        clanBadge: C,
+                    profileViewedAnalytics: S,
+                    children: (0, i.jsx)(h, {
+                        guildId: C,
+                        clanTag: p,
+                        clanBadge: O,
                         className: l,
-                        textVariant: u,
-                        textColor: d,
-                        badgeSize: _,
+                        textVariant: d,
+                        textColor: c,
+                        badgeSize: E,
                         inline: T
                     })
                 }) : null
@@ -121252,8 +121265,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301649",
-                    versionHash: "5bf194d8a5070ff431b7863159b56eb89c12bd05"
+                    buildNumber: "301663",
+                    versionHash: "5361b2a49f2f1980a0abef1f7738d4bf811cf6a1"
                 }
             }
             n.r(t), n.d(t, {
@@ -177496,8 +177509,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718298812686",
-                                    build_number: "301649"
+                                    built_at: "1718300568263",
+                                    build_number: "301663"
                                 }
                             },
                             retries: 1
@@ -254865,7 +254878,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5bf194d8a5070ff431b7863159b56eb89c12bd05"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5361b2a49f2f1980a0abef1f7738d4bf811cf6a1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283463,7 +283476,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301649"
+                                build_number: "301663"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290775,7 +290788,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301649", "301649"), 10);
+                let s = parseInt((n = "301663", "301663"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318940,4 +318953,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.362dee58bf1979a14e0f.js.map
+//# sourceMappingURL=42458.f6944d17f53cd871f4c2.js.map
