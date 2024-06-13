@@ -40168,7 +40168,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301646", ", Version Hash: ").concat("9bc9ab5291ffb8e0312d1d7fc25338ef3ae884ec")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301649", ", Version Hash: ").concat("5bf194d8a5070ff431b7863159b56eb89c12bd05")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93085,8 +93085,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301646", "301646"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301646")), t = 0), t
+                let t = parseInt((e = "301649", "301649"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301649")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121252,8 +121252,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301646",
-                    versionHash: "9bc9ab5291ffb8e0312d1d7fc25338ef3ae884ec"
+                    buildNumber: "301649",
+                    versionHash: "5bf194d8a5070ff431b7863159b56eb89c12bd05"
                 }
             }
             n.r(t), n.d(t, {
@@ -177496,8 +177496,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718298598939",
-                                    build_number: "301646"
+                                    built_at: "1718298812686",
+                                    build_number: "301649"
                                 }
                             },
                             retries: 1
@@ -187414,16 +187414,18 @@
                             return n.id === e.promotion.id
                         }) ? t : [...t, e])
                     }, []),
-                    O = d.OutboundPromoDesktopUpsellExperiment.useExperiment({
+                    O = l.default.isPremium(n),
+                    C = d.OutboundPromoDesktopUpsellExperiment.useExperiment({
                         location: "useOutboundPromotions"
                     }, {
-                        autoTrackExposure: !0
-                    }).enabled || (0, l.isPremiumExactly)(n, I.PremiumTypes.TIER_2);
+                        autoTrackExposure: !O,
+                        disable: O
+                    }).enabled || l.default.isPremiumExactly(n, I.PremiumTypes.TIER_2);
                 i.useEffect(() => {
                     s.default.wait(() => {
-                        O && null == e && c.default.fetchActiveOutboundPromotions()
+                        C && null == e && c.default.fetchActiveOutboundPromotions()
                     })
-                }, [e, O]), i.useEffect(() => {
+                }, [e, C]), i.useEffect(() => {
                     s.default.wait(() => {
                         (0, _.fetchClaimedOutboundPromotionCodes)().then(e => {
                             N(e), A(!0)
@@ -187432,29 +187434,29 @@
                         })
                     })
                 }, []);
-                let C = {};
+                let R = {};
                 for (let {
                         code: e,
                         promotion: t
                     }
-                    of m) C[t.id] = e;
-                let R = new Set(t.map(e => {
+                    of m) R[t.id] = e;
+                let g = new Set(t.map(e => {
                         let {
                             id: t
                         } = e;
                         return t
                     })),
-                    g = m.filter(e => {
+                    L = m.filter(e => {
                         let {
                             promotion: t
                         } = e;
-                        return !R.has(t.id)
+                        return !g.has(t.id)
                     });
                 return {
-                    promotionsLoaded: h && (!O || null != e),
-                    activeOutboundPromotions: t.filter(e => (0, _.shouldShowOutboundPromotionOnPlatform)(e) && (!(f || S) || (0, _.isTrialUserEligibleToSeeOutboundPromotion)(e, C))),
-                    claimedEndedOutboundPromotions: g.filter(e => (0, _.shouldShowOutboundPromotionOnPlatform)(e.promotion)),
-                    claimedOutboundPromotionCodeMap: C,
+                    promotionsLoaded: h && (!C || null != e),
+                    activeOutboundPromotions: t.filter(e => (0, _.shouldShowOutboundPromotionOnPlatform)(e) && (!(f || S) || (0, _.isTrialUserEligibleToSeeOutboundPromotion)(e, R))),
+                    claimedEndedOutboundPromotions: L.filter(e => (0, _.shouldShowOutboundPromotionOnPlatform)(e.promotion)),
+                    claimedOutboundPromotionCodeMap: R,
                     addClaimedOutboundPromotionCode: p
                 }
             }
@@ -254863,7 +254865,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9bc9ab5291ffb8e0312d1d7fc25338ef3ae884ec"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5bf194d8a5070ff431b7863159b56eb89c12bd05"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283461,7 +283463,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301646"
+                                build_number: "301649"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290773,7 +290775,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301646", "301646"), 10);
+                let s = parseInt((n = "301649", "301649"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318938,4 +318940,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.7f862b36197bda6229e4.js.map
+//# sourceMappingURL=42458.362dee58bf1979a14e0f.js.map
