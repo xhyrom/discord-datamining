@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301826", ", Version Hash: ").concat("a32f29a1506f9f7f9df2f014149e5d798fd23402")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301835", ", Version Hash: ").concat("14b0382bd6e639d2423010487cbbf8672a30b8ec")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93574,8 +93574,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301826", "301826"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301826")), t = 0), t
+                let t = parseInt((e = "301835", "301835"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301835")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121819,8 +121819,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301826",
-                    versionHash: "a32f29a1506f9f7f9df2f014149e5d798fd23402"
+                    buildNumber: "301835",
+                    versionHash: "14b0382bd6e639d2423010487cbbf8672a30b8ec"
                 }
             }
             n.r(t), n.d(t, {
@@ -178060,8 +178060,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718313854514",
-                                    build_number: "301826"
+                                    built_at: "1718314573197",
+                                    build_number: "301835"
                                 }
                             },
                             retries: 1
@@ -218364,7 +218364,7 @@
                 l = n("481060"),
                 u = n("785717"),
                 d = n("702557"),
-                _ = n("537387"),
+                _ = n("993409"),
                 c = n("689938"),
                 E = n("66073");
 
@@ -218383,6 +218383,7 @@
                     }), null == r || r()
                 };
                 return null == T || "" === T ? (0, i.jsx)(_.default, {
+                    variant: "icon",
                     text: c.default.Messages.ADD_NOTE,
                     "aria-label": c.default.Messages.ADD_NOTE,
                     icon: o.PaperPlusIcon,
@@ -218393,6 +218394,7 @@
                         [E.visible]: n
                     })
                 }) : (0, i.jsx)(_.default, {
+                    variant: "icon",
                     text: T,
                     "aria-label": T,
                     icon: a.PaperIcon,
@@ -218638,43 +218640,39 @@
 
             function u(e) {
                 let {
-                    text: t,
-                    icon: n,
-                    compact: r,
-                    className: u,
-                    innerClassName: d,
-                    disabled: _ = !1,
-                    ...c
-                } = e, E = null != n ? (0, i.jsx)(n, {
-                    width: 16,
-                    height: 16,
-                    color: "currentColor"
-                }) : null;
-                return r ? (0, i.jsx)(o.TooltipContainer, {
-                    text: t,
-                    "aria-label": c["aria-label"],
-                    shouldShow: !_,
-                    disableTooltipPointerEvents: _,
-                    children: (0, i.jsx)(a.Button, {
-                        className: s()(l.compactButton, u),
-                        innerClassName: s()(l.compactButtonInner, d),
-                        color: s()(a.ButtonColors.PRIMARY, l.color),
+                    variant: t,
+                    text: n,
+                    icon: r,
+                    tooltipDelay: u,
+                    tooltipClassName: d,
+                    className: _,
+                    innerClassName: c,
+                    ...E
+                } = e, I = {
+                    [l.text]: "text" === t,
+                    [l.icon]: "icon" === t,
+                    [l.banner]: "banner" === t
+                };
+                return (0, i.jsx)(o.TooltipContainer, {
+                    text: n,
+                    "aria-label": E["aria-label"],
+                    delay: u,
+                    tooltipClassName: d,
+                    shouldShow: "text" !== t,
+                    children: (0, i.jsxs)(a.Button, {
+                        className: s()(l.button, I, _),
+                        innerClassName: s()(l.buttonInner, I, c),
+                        color: s()(a.ButtonColors.PRIMARY, l.color, I),
                         look: a.Button.Looks.FILLED,
-                        size: a.Button.Sizes.NONE,
-                        grow: !1,
-                        disabled: _,
-                        ...c,
-                        children: E
+                        size: "text" === t ? a.Button.Sizes.SMALL : a.Button.Sizes.NONE,
+                        grow: "text" === t,
+                        ...E,
+                        children: [null != r && (0, i.jsx)(r, {
+                            width: 16,
+                            height: 16,
+                            color: "currentColor"
+                        }), "text" === t && n]
                     })
-                }) : (0, i.jsxs)(a.Button, {
-                    className: u,
-                    innerClassName: s()(l.button, d),
-                    color: s()(a.ButtonColors.PRIMARY, l.color),
-                    look: a.Button.Looks.FILLED,
-                    size: a.Button.Sizes.SMALL,
-                    disabled: _,
-                    ...c,
-                    children: [E, t]
                 })
             }
         },
@@ -218682,64 +218680,60 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return T
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("120356"),
-                s = n.n(r),
-                a = n("442837"),
-                o = n("693789"),
-                l = n("235874"),
-                u = n("944613"),
-                d = n("607070"),
-                _ = n("605436"),
-                c = n("496675"),
-                E = n("729285"),
-                I = n("993409"),
-                T = n("689938"),
-                f = n("129372");
+            var r = n("442837"),
+                s = n("693789"),
+                a = n("235874"),
+                o = n("944613"),
+                l = n("607070"),
+                u = n("605436"),
+                d = n("496675"),
+                _ = n("729285"),
+                c = n("993409"),
+                E = n("689938"),
+                I = n("129372");
 
-            function S(e) {
+            function T(e) {
                 let {
                     guild: t,
                     guildMember: n,
-                    highestRole: r,
-                    onAddRole: S,
-                    compact: h = !0,
-                    ...A
-                } = e, m = (0, a.useStateFromStores)([d.default], () => d.default.roleStyle), N = e => (0, _.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && c.default.isRoleHigher(t, r, e) && -1 === n.roles.indexOf(e.id);
-                return (0, i.jsx)(l.Popout, {
+                    highestRole: T,
+                    onAddRole: f,
+                    ...S
+                } = e, h = (0, r.useStateFromStores)([l.default], () => l.default.roleStyle), A = e => (0, u.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && d.default.isRoleHigher(t, T, e) && -1 === n.roles.indexOf(e.id);
+                return (0, i.jsx)(a.Popout, {
                     position: "bottom",
                     align: "center",
                     renderPopout: e => {
                         let {
                             closePopout: n
                         } = e;
-                        return (0, i.jsx)(u.default, {
+                        return (0, i.jsx)(o.default, {
                             guild: t,
-                            roleStyle: m,
-                            roleFilter: N,
-                            onSelect: S,
+                            roleStyle: h,
+                            roleFilter: A,
+                            onSelect: f,
                             onClose: n
                         })
                     },
-                    children: e => (0, i.jsx)(I.default, {
-                        className: s()(f.button),
-                        text: T.default.Messages.USER_PROFILE_ADD_ROLE,
-                        icon: E.default,
-                        color: o.Button.Colors.CUSTOM,
-                        size: o.Button.Sizes.NONE,
-                        compact: h,
+                    children: e => (0, i.jsx)(c.default, {
+                        className: I.button,
+                        text: E.default.Messages.USER_PROFILE_ADD_ROLE,
+                        icon: _.default,
+                        color: s.Button.Colors.CUSTOM,
+                        size: s.Button.Sizes.NONE,
                         grow: !1,
                         ...e,
-                        ...A
+                        ...S
                     })
                 })
             }
         },
-        564440: function(e, t, n) {
+        544989: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -218751,7 +218745,7 @@
             var r = n("120356"),
                 s = n.n(r),
                 a = n("228168"),
-                o = n("772892");
+                o = n("674484");
 
             function l(e) {
                 let {
@@ -218804,9 +218798,11 @@
                     trackUserProfileAction: N
                 } = (0, _.useUserProfileAnalyticsContext)(), p = (0, a.default)(), O = m && f === I.UserProfileTypes.FULL_SIZE ? void 0 : u.default;
                 return h ? null == A ? (0, i.jsx)(E.default, {
+                    variant: "text",
                     icon: O,
                     text: T.default.Messages.EDIT_PROFILE,
                     autoFocus: !0,
+                    fullWidth: !0,
                     onClick: () => {
                         N({
                             action: "EDIT_PROFILE"
@@ -218825,15 +218821,17 @@
                         })
                     },
                     children: e => (0, i.jsx)(E.default, {
+                        variant: "text",
                         icon: O,
                         text: T.default.Messages.EDIT_PROFILE,
                         autoFocus: !0,
+                        fullWidth: !0,
                         ...e
                     })
                 }) : null
             }
         },
-        329831: function(e, t, n) {
+        481932: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -218856,7 +218854,7 @@
                 T = n("465670"),
                 f = n("877485"),
                 S = n("785717"),
-                h = n("537387"),
+                h = n("993409"),
                 A = n("228168"),
                 m = n("981631"),
                 N = n("689938");
@@ -218873,7 +218871,7 @@
                     originalFriendingEnabled: R,
                     improvedFriendingEnabled: g
                 } = (0, f.useSimplifiedProfileFriendingExperiment)({
-                    location: "UserProfileFriendRequestOverlayButtons"
+                    location: "UserProfileFriendRequestBannerButtons"
                 }), L = (0, r.useStateFromStores)([E.default], () => E.default.getId() === (null == t ? void 0 : t.id)), v = (0, r.useStateFromStores)([I.default], () => null != t ? I.default.getRelationshipType(t.id) : m.RelationshipTypes.NONE), {
                     analyticsLocations: D,
                     newestAnalyticsLocation: M
@@ -218901,17 +218899,20 @@
                         })
                     },
                     children: e => (0, i.jsx)(h.default, {
+                        variant: "banner",
                         icon: a.UserCheckIcon,
                         text: N.default.Messages.FRIENDS,
                         ...e
                     })
                 });
                 if (v === m.RelationshipTypes.PENDING_INCOMING) return g && O === A.UserProfileTypes.FULL_SIZE ? null : (g || R) && O !== A.UserProfileTypes.PANEL ? (0, i.jsx)(h.default, {
+                    variant: "banner",
                     icon: o.UserClockIcon,
                     text: N.default.Messages.FRIENDS_SECTION_PENDING,
                     disabled: !0
                 }) : (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(h.default, {
+                        variant: "banner",
                         icon: e => (0, i.jsx)(s.CheckmarkLargeIcon, {
                             ...e,
                             color: null != p ? p : u.tokens.colors.TEXT_BRAND
@@ -218929,6 +218930,7 @@
                             })
                         }
                     }), (0, i.jsx)(h.default, {
+                        variant: "banner",
                         icon: T.default,
                         text: N.default.Messages.IGNORE_FRIEND_REQUEST,
                         onClick: () => {
@@ -218941,10 +218943,12 @@
                     })]
                 });
                 return v === m.RelationshipTypes.PENDING_OUTGOING && (!g || g && O === A.UserProfileTypes.BITE_SIZE) ? (0, i.jsx)(h.default, {
+                    variant: "banner",
                     icon: o.UserClockIcon,
                     text: g || R ? N.default.Messages.FRIENDS_SECTION_PENDING : N.default.Messages.REQUEST_SENT,
                     disabled: !0
                 }) : !g || g && O === A.UserProfileTypes.BITE_SIZE ? (0, i.jsx)(h.default, {
+                    variant: "banner",
                     icon: l.UserPlusIcon,
                     text: N.default.Messages.ADD_FRIEND,
                     onClick: () => {
@@ -218961,7 +218965,7 @@
                 }) : null
             }
         },
-        441580: function(e, t, n) {
+        195387: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -218978,7 +218982,7 @@
                 u = n("314897"),
                 d = n("944486"),
                 _ = n("785717"),
-                c = n("537387"),
+                c = n("993409"),
                 E = n("176505"),
                 I = n("50493"),
                 T = n("689938");
@@ -218995,6 +218999,7 @@
                     newestAnalyticsLocation: A
                 } = (0, a.default)(), m = (0, r.useStateFromStores)([u.default], () => u.default.getId() === (null == t ? void 0 : t.id)), N = (0, l.useCanAccessGuildMemberModView)(null != n ? n : null, !0), p = (0, r.useStateFromStores)([d.default], () => null != f ? f : d.default.getChannelId(n, !0), [f, n]);
                 return null == n || !N || m ? null : (0, i.jsx)(c.default, {
+                    variant: "banner",
                     icon: s.ModerationIcon,
                     text: T.default.Messages.GUILD_MEMBER_MOD_VIEW_TITLE,
                     onClick: () => {
@@ -219008,7 +219013,7 @@
                 })
             }
         },
-        146331: function(e, t, n) {
+        272510: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -219027,7 +219032,7 @@
                 _ = n("314897"),
                 c = n("808268"),
                 E = n("785717"),
-                I = n("537387"),
+                I = n("993409"),
                 T = n("228168"),
                 f = n("689938");
 
@@ -219096,6 +219101,7 @@
                                 ...n
                             } = e;
                             return (0, i.jsx)(I.default, {
+                                variant: "banner",
                                 text: f.default.Messages.MORE,
                                 icon: c.default,
                                 onClick: e => {
@@ -219106,56 +219112,6 @@
                                 ...n
                             })
                         }
-                    })
-                })
-            }
-        },
-        537387: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return l
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("120356"),
-                s = n.n(r),
-                a = n("481060"),
-                o = n("766321");
-
-            function l(e) {
-                let {
-                    icon: t,
-                    text: n,
-                    className: r,
-                    innerClassName: l,
-                    tooltipDelay: u,
-                    tooltipClassName: d,
-                    disabled: _ = !1,
-                    ...c
-                } = e;
-                return (0, i.jsx)(a.TooltipContainer, {
-                    tooltipClassName: d,
-                    text: n,
-                    delay: u,
-                    shouldShow: !_,
-                    disableTooltipPointerEvents: _,
-                    children: (0, i.jsx)(a.Button, {
-                        className: s()(o.button, r),
-                        innerClassName: s()(o.buttonInner, l),
-                        color: o.color,
-                        look: a.Button.Looks.FILLED,
-                        size: a.Button.Sizes.NONE,
-                        grow: !1,
-                        "aria-label": n,
-                        disabled: _,
-                        ...c,
-                        children: (0, i.jsx)(t, {
-                            width: 16,
-                            height: 16,
-                            color: "currentColor"
-                        })
                     })
                 })
             }
@@ -221325,12 +221281,12 @@
                                         })
                                     })
                                 }), G && (0, i.jsx)(m.default, {
+                                    variant: c.length > 0 ? "icon" : "text",
                                     buttonRef: k,
                                     guild: s,
                                     guildMember: _,
                                     highestRole: E,
-                                    onAddRole: h,
-                                    compact: c.length > 0
+                                    onAddRole: h
                                 })]
                             })
                         }
@@ -221479,10 +221435,10 @@
                 T = n("785717"),
                 f = n("318661"),
                 S = n("502762"),
-                h = n("564440"),
-                A = n("329831"),
-                m = n("441580"),
-                N = n("146331"),
+                h = n("544989"),
+                A = n("481932"),
+                m = n("195387"),
+                N = n("272510"),
                 p = n("171368"),
                 O = n("958120"),
                 C = n("215633"),
@@ -255430,7 +255386,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a32f29a1506f9f7f9df2f014149e5d798fd23402"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "14b0382bd6e639d2423010487cbbf8672a30b8ec"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284060,7 +284016,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301826"
+                                build_number: "301835"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291372,7 +291328,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301826", "301826"), 10);
+                let s = parseInt((n = "301835", "301835"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319555,4 +319511,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.d766996af276639c95e3.js.map
+//# sourceMappingURL=42458.7e5eb5cf462e08d32562.js.map

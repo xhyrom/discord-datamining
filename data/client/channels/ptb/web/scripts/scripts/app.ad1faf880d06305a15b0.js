@@ -25832,10 +25832,12 @@
         47200: function(e) {
             "use strict";
             e.exports = {
+                banner: "banner__3c2b4",
                 button: "button_c03db1",
+                buttonInner: "buttonInner__40c9f",
                 color: "color__75c7b",
-                compactButton: "compactButton__87ab2",
-                compactButtonInner: "compactButtonInner_cc8cc8"
+                icon: "icon_eea64d",
+                text: "text__366e2"
             }
         },
         129372: function(e) {
@@ -25844,21 +25846,13 @@
                 button: "button__6d63b"
             }
         },
-        772892: function(e) {
+        674484: function(e) {
             "use strict";
             e.exports = {
-                biteSize: "biteSize_dd4657",
-                fullSize: "fullSize__32c87",
-                panel: "panel__98a0d",
-                wrapper: "wrapper__733c9"
-            }
-        },
-        766321: function(e) {
-            "use strict";
-            e.exports = {
-                button: "button_e8c966",
-                buttonInner: "buttonInner__915b1",
-                color: "color_b28e35"
+                biteSize: "biteSize__89563",
+                fullSize: "fullSize__51728",
+                panel: "panel_a9140d",
+                wrapper: "wrapper__7f8df"
             }
         },
         886140: function(e) {
