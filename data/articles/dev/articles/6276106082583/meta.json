@@ -1,0 +1,30 @@
+{
+  "id": 6276106082583,
+  "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6276106082583.json",
+  "html_url": "https://support-dev.discord.com/hc/en-us/articles/6276106082583-An-Update-on-Verifications-for-Users-Under-16",
+  "author_id": 363848936712,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 5110454752023,
+  "created_at": "2022-05-23T17:30:29Z",
+  "name": "An Update on Verifications for Users Under 16",
+  "title": "An Update on Verifications for Users Under 16",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-06-13T14:46:29Z",
+  "user_segment_id": null,
+  "permission_group_id": 6449276657303,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "verification",
+    "bots",
+    "api",
+    "bot verification",
+    "age"
+  ]
+}
