@@ -17440,6 +17440,7 @@
                 ephemeral: "ephemeral_eb5d84",
                 groupStart: "groupStart__7b93c",
                 hasContent: "hasContent__1fe13",
+                hideIfMessageNotFocused: "hideIfMessageNotFocused_fa4341",
                 highlightContainer: "highlightContainer_fc5b8a",
                 highlightIcon: "highlightIcon_b97b37",
                 highlighted: "highlighted_fc800f",
