@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_app_storefront_message_embeds",
+    "label": "Storefront Message Embed",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable"
+    ],
+    "hash": 276020776,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
