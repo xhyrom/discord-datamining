@@ -78,7 +78,7 @@
 <p><span class="wysiwyg-font-size-large"><strong>On Desktop/Browser</strong></span></p>
 <ol>
     <li style="font-weight: 400;" aria-level="1">
-        <span style="font-weight: 400;">Select the </span><strong>cog wheel</strong><span style="font-weight: 400;"> in the bottom left to open </span><strong>User Settings</strong><span style="font-weight: 400;">.</span>
+        <span style="font-weight: 400;">Select the </span><strong>cogwheel</strong><span style="font-weight: 400;"> in the bottom left to open </span><strong>User Settings</strong><span style="font-weight: 400;">.</span>
     </li>
     <li style="font-weight: 400;" aria-level="1">
         <span style="font-weight: 400;">Select </span><strong>Nitro</strong><span style="font-weight: 400;">, then choose your desired plan and hit </span><strong>Subscribe</strong><span style="font-weight: 400;">! </span>
