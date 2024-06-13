@@ -6137,8 +6137,7 @@ html .progress__00e29 {
 }
 
 .container__2c6a3 {
-    display: flex;
-    max-width: 100%
+    display: flex
 }
 
 .quote__5375c {
@@ -6151,8 +6150,7 @@ html .progress__00e29 {
 
 .content__6d5df {
     display: flex;
-    flex-direction: column;
-    max-width: 100%
+    flex-direction: column
 }
 
 .headerContainer_b04aeb {
@@ -10571,15 +10569,12 @@ html .progress__00e29 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12px
+    gap: 12px;
+    width: 100%
 }
 
-.inlineForwardOnHover_c7a135 {
-    visibility: hidden
-}
-
-.embedContainer__5278d:hover .inlineForwardOnHover_c7a135 {
-    visibility: visible
+.embedContainer__5278d .embedWrapper__47b23 {
+    flex-grow: 1
 }
 
 .mainContainer_e56d5d.compact_ae7561 {
@@ -57426,6 +57421,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     -webkit-box-orient: vertical;
     overflow: hidden;
     color: var(--text-normal);
+    font-size: 14px;
     word-wrap: break-word;
     word-break: break-word
 }
@@ -57451,11 +57447,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .statusText__32d26 {
+    display: inline;
     color: var(--text-normal)
 }
 
 .statusEmojiInline__099a8 {
-    float: left;
+    display: inline;
     height: 16px;
     width: 16px;
     margin-right: 4px
@@ -141452,4 +141449,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f1921572005457fd218b.css.map*/
+/*# sourceMappingURL=99387.9b4011baefd0fec0addd.css.map*/
