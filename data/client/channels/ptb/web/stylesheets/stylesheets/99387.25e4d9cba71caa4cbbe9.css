@@ -103750,7 +103750,12 @@ div:has(>div>.container__8ab05) {
     flex: 1;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: start
+}
+
+.title_f08e86 {
+    display: flex;
+    flex-direction: column
 }
 
 .closeButton__7f7b2 {
@@ -103771,7 +103776,12 @@ div:has(>div>.container__8ab05) {
     padding: 0 8px;
     margin-left: 16px;
     margin-right: 8px;
-    border-radius: 4px
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.destinationRow__94c47.disabled__91d6c {
+    cursor: not-allowed
 }
 
 .destinationRow__94c47:not(.disabled__91d6c):hover {
@@ -140842,4 +140852,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1ea1553f260d8cbba92c.css.map*/
+/*# sourceMappingURL=99387.25e4d9cba71caa4cbbe9.css.map*/
