@@ -40173,7 +40173,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301754", ", Version Hash: ").concat("6393430066e5b7ad98956702540f1d599e9c1062")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301757", ", Version Hash: ").concat("89d03db5b37cd4358433803f5f897ee8aeea880f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -59502,10 +59502,17 @@
                 E2EE_VERIFICATION_CODE: "Verification Code",
                 E2EE_USER_VERIFY_MODAL_SUBTITLE: "Compare the numbers below with {username}. If they match, mark them as verified.",
                 E2EE_VOICE_PRIVACY_CODE: "Voice Privacy Code",
-                E2EE_USER_VERIFY_FOOTER_TEXT: "A new code is generated when either of you join a call or change devices. Learn more about end-to-end encryption.",
+                E2EE_USER_VERIFY_FOOTER_TEXT: "A new code is generated when either of you join a call or change devices. [Learn more about end-to-end encryption.]({helpArticle})",
                 E2EE_CLEAR_VERIFICATION: "Clear Verification",
                 E2EE_MARK_AS_VERIFIED: "Mark as Verified",
-                E2EE_VIEW_VERIFICATION_CODE: "View Verification Code"
+                E2EE_VIEW_VERIFICATION_CODE: "View Verification Code",
+                E2EE_VOICE_DETAILS: "Voice Details",
+                E2EE_CONNECTION: "Connection",
+                E2EE_PRIVACY: "Privacy",
+                E2EE_RTC_PANEL_CONNECTION: "End-to-end encryption",
+                E2EE_OVERVIEW_TITLE: "End-to-end encrypted",
+                E2EE_OVERVIEW_SUBTITLE: "Only you and your friends on this call can hear you. Nobody else – not even Wumpus – can listen in!",
+                E2EE_OVERVIEW_FOOTER_TEXT: "A new code is generated when people join or leave this call. [Learn more about end-to-end encryption.]({helpArticle})"
             })
         },
         539590: function(e) {
@@ -93522,8 +93529,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301754", "301754"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301754")), t = 0), t
+                let t = parseInt((e = "301757", "301757"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301757")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121757,8 +121764,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301754",
-                    versionHash: "6393430066e5b7ad98956702540f1d599e9c1062"
+                    buildNumber: "301757",
+                    versionHash: "89d03db5b37cd4358433803f5f897ee8aeea880f"
                 }
             }
             n.r(t), n.d(t, {
@@ -122292,7 +122299,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("30386"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46453"), n.e("61414"), n.e("87624"), n.e("10247"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("30386"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("15357"), n.e("46453"), n.e("61414"), n.e("87624"), n.e("15926"), n.e("36861"), n.e("19282"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -170795,7 +170802,7 @@
                     null != l && (0, r.openContextMenuLazy)(a, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("97418")]).then(n.bind(n, "757387"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             user: e,
@@ -177362,7 +177369,7 @@
                                                     (0, _.openContextMenuLazy)(e, async () => {
                                                         let {
                                                             default: e
-                                                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
+                                                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("97418")]).then(n.bind(n, "757387"));
                                                         return n => (0, i.jsx)(e, {
                                                             ...n,
                                                             user: r,
@@ -177476,7 +177483,7 @@
                     null != P && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("97418")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             viewingChannelId: D,
@@ -177998,8 +178005,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718307312585",
-                                    build_number: "301754"
+                                    built_at: "1718307573090",
+                                    build_number: "301757"
                                 }
                             },
                             retries: 1
@@ -244375,14 +244382,15 @@
                 S = n("938475"),
                 h = n("981631"),
                 A = n("65154");
-            let m = null,
+            let m = [],
                 N = null,
                 p = null,
                 O = null,
-                C = !1,
-                R = !1;
+                C = null,
+                R = !1,
+                g = !1;
 
-            function g(e, t) {
+            function L(e, t) {
                 if (null == r) throw Error("Creating RTCConnection without session.");
                 let i = f.default.getId(),
                     s = new(n("861687")).default({
@@ -244420,7 +244428,7 @@
                         lossRate: e
                     }))
                 }), s.on(_.RTCConnectionEvent.Speaking, (e, t) => {
-                    null == p || p.setSpeaking(e, t)
+                    null == O || O.setSpeaking(e, t)
                 }), s.on(_.RTCConnectionEvent.Flags, (e, t) => {
                     d.default.wait(() => {
                         d.default.dispatch({
@@ -244450,30 +244458,30 @@
                             channelId: n
                         })
                     })
-                }), p = new c.default(f.default.getId(), t), O = null, C = !1, R = !1, s
-            }
-
-            function L() {
-                if (null == i) return !1;
-                O = i.getDuration(), i.destroy(), i = null, p = null
+                }), O = new c.default(f.default.getId(), t), C = null, R = !1, g = !1, s
             }
 
             function v() {
-                m = null
+                if (null == i) return !1;
+                C = i.getDuration(), i.destroy(), i = null, O = null
             }
 
-            function D(e) {
+            function D() {
+                N = null
+            }
+
+            function M(e) {
                 let {
                     channel: t
                 } = e;
                 if (null == i || i.channelId !== t.id) return !1;
-                L()
+                v()
             }
 
-            function M() {
+            function y() {
                 return !0
             }
-            class y extends(s = u.default.Store) {
+            class P extends(s = u.default.Store) {
                 initialize() {
                     this.waitFor(S.default), (0, T.setVideoToggleAnalyticsParams)(this.getRTCConnectionId, this.getMediaSessionId)
                 }
@@ -244490,13 +244498,13 @@
                     return this.getState() === h.RTCConnectionStates.DISCONNECTED
                 }
                 getRemoteDisconnectVoiceChannelId() {
-                    return m
-                }
-                getLastSessionVoiceChannelId() {
                     return N
                 }
+                getLastSessionVoiceChannelId() {
+                    return p
+                }
                 setLastSessionVoiceChannelId(e) {
-                    N = e
+                    p = e
                 }
                 getGuildId() {
                     return null == i ? void 0 : i.guildId
@@ -244511,7 +244519,7 @@
                     return null != i ? i.quality : h.RTCConnectionQuality.UNKNOWN
                 }
                 getPings() {
-                    return null != i ? i.getPings() : []
+                    return null != i ? i.getPings() : m
                 }
                 getAveragePing() {
                     return null != i ? null == i ? void 0 : i.getAveragePing() : 0
@@ -244530,39 +244538,39 @@
                 }
                 getDuration() {
                     var e;
-                    return null !== (e = null == i ? void 0 : i.getDuration()) && void 0 !== e ? e : O
+                    return null !== (e = null == i ? void 0 : i.getDuration()) && void 0 !== e ? e : C
                 }
                 getPacketStats() {
                     return null == i ? void 0 : i.getPacketStats()
                 }
                 getVoiceStateStats() {
-                    return null == p ? void 0 : p.getStats()
+                    return null == O ? void 0 : O.getStats()
                 }
                 getWasEverMultiParticipant() {
-                    return C
-                }
-                getWasEverRtcConnected() {
                     return R
                 }
+                getWasEverRtcConnected() {
+                    return g
+                }
             }
-            l = "RTCConnectionStore", (o = "displayName") in(a = y) ? Object.defineProperty(a, o, {
+            l = "RTCConnectionStore", (o = "displayName") in(a = P) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
             }) : a[o] = l;
-            let P = new y(d.default, __OVERLAY__ ? {} : {
+            let U = new P(d.default, __OVERLAY__ ? {} : {
                 CONNECTION_OPEN: function(e) {
-                    return r = e.sessionId, m = null, N = null, L(), !1
+                    return r = e.sessionId, N = null, p = null, v(), !1
                 },
                 CONNECTION_CLOSED: function() {
-                    r = null, m = null, N = null, L()
+                    r = null, N = null, p = null, v()
                 },
                 RTC_CONNECTION_STATE: function(e) {
-                    return e.state === h.RTCConnectionStates.RTC_CONNECTED && (R = !0), !0
+                    return e.state === h.RTCConnectionStates.RTC_CONNECTED && (g = !0), !0
                 },
-                RTC_CONNECTION_PING: M,
-                RTC_CONNECTION_LOSS_RATE: M,
+                RTC_CONNECTION_PING: y,
+                RTC_CONNECTION_LOSS_RATE: y,
                 RTC_CONNECTION_UPDATE_ID: function(e) {
                     return e.connection === i
                 },
@@ -244572,11 +244580,11 @@
                     } = e;
                     return t.reduce((e, t) => {
                         var n, s, a;
-                        if (null == p || p.updateVoiceStates(t.userId, t.channelId), C = C || (null !== (n = null == p ? void 0 : p.getStats().max_voice_state_count) && void 0 !== n ? n : 0) > 1, f.default.getId() !== t.userId) return !1;
-                        if (null != i) t.sessionId === r ? null != t.guildId && t.guildId === i.guildId || null == t.guildId && t.channelId === i.channelId ? null == t.channelId ? L() : i.channelId = t.channelId : (t.guildId !== i.guildId && null == t.channelId || L(), null != t.channelId && (m = null, N = null, i = g(t.guildId, t.channelId), C = (null !== (s = null == p ? void 0 : p.getStats().max_voice_state_count) && void 0 !== s ? s : 0) > 1)) : t.guildId === i.guildId && (!(null != I.default.getAwaitingRemoteSessionInfo() && null != I.default.getRemoteSessionId()) && (m = i.channelId), L());
+                        if (null == O || O.updateVoiceStates(t.userId, t.channelId), R = R || (null !== (n = null == O ? void 0 : O.getStats().max_voice_state_count) && void 0 !== n ? n : 0) > 1, f.default.getId() !== t.userId) return !1;
+                        if (null != i) t.sessionId === r ? null != t.guildId && t.guildId === i.guildId || null == t.guildId && t.channelId === i.channelId ? null == t.channelId ? v() : i.channelId = t.channelId : (t.guildId !== i.guildId && null == t.channelId || v(), null != t.channelId && (N = null, p = null, i = L(t.guildId, t.channelId), R = (null !== (s = null == O ? void 0 : O.getStats().max_voice_state_count) && void 0 !== s ? s : 0) > 1)) : t.guildId === i.guildId && (!(null != I.default.getAwaitingRemoteSessionInfo() && null != I.default.getRemoteSessionId()) && (N = i.channelId), v());
                         else {
                             if (t.sessionId !== r || null == t.channelId) return e;
-                            m = null, N = null, i = g(t.guildId, t.channelId), C = (null !== (a = null == p ? void 0 : p.getStats().max_voice_state_count) && void 0 !== a ? a : 0) > 1
+                            N = null, p = null, i = L(t.guildId, t.channelId), R = (null !== (a = null == O ? void 0 : O.getStats().max_voice_state_count) && void 0 !== a ? a : 0) > 1
                         }
                         return !0
                     }, !1)
@@ -244586,32 +244594,32 @@
                         channelId: t
                     } = e;
                     if (null == i || null != t && i.channelId === t) return !1;
-                    L()
+                    v()
                 },
                 VOICE_SERVER_UPDATE: function(e) {
                     if (null == i || null != e.guildId && e.guildId !== i.guildId || null != e.channelId && e.channelId !== i.channelId) return !1;
                     i.connect(e.endpoint, e.token)
                 },
-                CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: v,
-                REMOTE_SESSION_CONNECT: v,
+                CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: D,
+                REMOTE_SESSION_CONNECT: D,
                 CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: function() {
-                    N = null
+                    p = null
                 },
                 GUILD_DELETE: function(e) {
                     let {
                         guild: t
                     } = e;
                     if (null == i || i.guildId !== t.id) return !1;
-                    L()
+                    v()
                 },
-                CHANNEL_DELETE: D,
-                THREAD_DELETE: D,
+                CHANNEL_DELETE: M,
+                THREAD_DELETE: M,
                 CALL_DELETE: function(e) {
                     let {
                         channelId: t
                     } = e;
                     if (null == i || i.channelId !== t) return !1;
-                    L()
+                    v()
                 },
                 APP_STATE_UPDATE: function(e) {
                     if (null != i) {
@@ -244635,9 +244643,9 @@
                     addExtraAnalyticsDecorator: t
                 } = e;
                 t(e => {
-                    e.client_rtc_state = P.getState()
+                    e.client_rtc_state = U.getState()
                 })
-            }), t.default = P
+            }), t.default = U
         },
         226961: function(e, t, n) {
             "use strict";
@@ -255365,7 +255373,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6393430066e5b7ad98956702540f1d599e9c1062"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "89d03db5b37cd4358433803f5f897ee8aeea880f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -262606,7 +262614,7 @@
                                             (0, E.openModalLazy)(async () => {
                                                 let {
                                                     default: e
-                                                } = await Promise.all([n.e("99387"), n.e("30386"), n.e("10247"), n.e("62038"), n.e("7613"), n.e("86754")]).then(n.bind(n, "644941"));
+                                                } = await Promise.all([n.e("99387"), n.e("30386"), n.e("15926"), n.e("62038"), n.e("7613"), n.e("31141")]).then(n.bind(n, "644941"));
                                                 return t => {
                                                     var n;
                                                     return (0, a.jsx)(e, {
@@ -283995,7 +284003,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301754"
+                                build_number: "301757"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291307,7 +291315,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301754", "301754"), 10);
+                let s = parseInt((n = "301757", "301757"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319490,4 +319498,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.0668262df98e603461d4.js.map
+//# sourceMappingURL=42458.cb3dd6aa53021db8d6d8.js.map
