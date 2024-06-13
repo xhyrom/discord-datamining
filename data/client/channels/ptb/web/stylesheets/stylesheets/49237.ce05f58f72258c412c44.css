@@ -20362,7 +20362,7 @@ strong {
 
 .container__984a8 {
     border-radius: 8px;
-    width: 320px;
+    width: 100%;
     overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -27347,7 +27347,7 @@ html.disable-forced-colors * {
     background-color: var(--background-secondary-alt);
     border-radius: 8px;
     overflow: hidden;
-    width: 320px
+    width: 100%
 }
 
 .cardHeaderImg_bbd83f {
@@ -27402,4 +27402,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.9c53757dd6dafc3b82b8.css.map*/
+/*# sourceMappingURL=49237.ce05f58f72258c412c44.css.map*/
