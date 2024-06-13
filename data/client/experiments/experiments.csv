@@ -637,6 +637,7 @@ id,hash,label
 2024-06_hd_streaming_desktop_upsell,2144652476,HD Streaming Desktop Upsell
 2024-06_hd_streaming_viewer,2445369146,HD Streaming Viewer Upsell
 2024-06_message_send_failure,3096022268,Message Send Failure Experiment
+2024-06_mobile_app_launcher_in_activities_shelf,3546683530,[Mobile] App Launcher in Activities Shelf
 2024-06_outbound_promo_desktop_upsell,2302949395,Upsell Outbound Promos
 2024-06_rtc_pacer__simulcast,175769529,RTC Pacer & Golive Simulcast
 2024-06_rtc_voice_state_sync_experiment,1254450589,RTC and Voice State Desync Fixes
