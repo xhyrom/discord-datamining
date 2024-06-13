@@ -13747,6 +13747,7 @@
                                                 event: ed.AnalyticEvents.QUEST_LINK_SHARED,
                                                 trackGuildAndChannelMetadata: !0
                                             });
+                                            else if (t === T.CodedLinkType.APP_DIRECTORY_STOREFRONT || t === T.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU);
                                             else throw Error("Unknown coded link type: ".concat(t))
                                         })
                                     }({
@@ -40172,7 +40173,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301752", ", Version Hash: ").concat("f1caacd8d67e3845111bc1b84f4519ac96435a58")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301754", ", Version Hash: ").concat("6393430066e5b7ad98956702540f1d599e9c1062")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58755,6 +58756,7 @@
                 STOREFRONT_APP_PRODUCTS: "Items",
                 STOREFRONT_APP_PRODUCTS_BODY: "Purchase items from {appName}",
                 STOREFRONT_SUBSCRIPTION: "Subscription",
+                STOREFRONT_SUBSCRIBE: "Subscribe",
                 STOREFRONT_SUBSCRIBE_FOR: "Subscribe for {rate}",
                 STOREFRONT_SUBSCRIPTION_BENEFITS: "Subscription Benefits",
                 STOREFRONT_PURCHASE_FOR: "Buy for {price}",
@@ -58765,6 +58767,14 @@
                 STOREFRONT_VIEW_TOS_PP: "View the app's [Terms of Service]({tosUrl}) and [Privacy Policy]({ppUrl})",
                 STOREFRONT_NO_TOS_PP: "This developer has not setup terms of service and privacy policy.",
                 STOREFRONT_DETAILS_TOS_AND_PRIVACY: "[Terms of Service]({tosUrl}) and [Privacy Policy]({ppUrl})",
+                STOREFRONT_SUBSCRIPTION_COUNT: "{count, plural, one {{count} Subscription} other {{count} Subscriptions}}",
+                STOREFRONT_ITEM_COUNT: "{count, plural, one {{count} Item} other {{count} Items}}",
+                STOREFRONT_SUBSCRIPTION_AND_ITEMS_COUNT: "{subCount, plural, one {{subCount} Subscription} other {{subCount} Subscriptions}}, {itemCount, plural, one {{itemCount} Item} other {{itemCount} Items}}",
+                STOREFRONT_UNKNOWN_SUBSCRIPTIONS_OR_ITEMS: "Subscriptions, items",
+                STOREFRONT_OPEN_STORE: "Open Store",
+                STOREFRONT_DETAILS: "Details",
+                STOREFRONT_USER_SUBSCRIPTION: "User subscription",
+                STOREFRONT_SERVER_SUBSCRIPTION: "Server subscription",
                 QUIET_MODE_DISABLED: "Focus Mode Disabled",
                 QUIET_MODE_ENABLED: "Focus Mode Enabled",
                 QUIET_MODE_DND: "Focus Mode (DND) Enabled",
@@ -93512,8 +93522,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301752", "301752"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301752")), t = 0), t
+                let t = parseInt((e = "301754", "301754"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301754")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -100232,7 +100242,7 @@
                             l(!1), (0, I.openModalLazy)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("90508"), n.e("41947"), n.e("53289")]).then(n.bind(n, "273602"));
+                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("41947"), n.e("29042"), n.e("80374")]).then(n.bind(n, "273602"));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
                                     threadId: a,
@@ -115874,7 +115884,7 @@
                 CodedLinkType: function() {
                     return i
                 }
-            }), (r = i || (i = {})).INVITE = "INVITE", r.TEMPLATE = "TEMPLATE", r.BUILD_OVERRIDE = "BUILD_OVERRIDE", r.MANUAL_BUILD_OVERRIDE = "MANUAL_BUILD_OVERRIDE", r.EVENT = "EVENT", r.CHANNEL_LINK = "CHANNEL_LINK", r.APP_DIRECTORY_PROFILE = "APP_DIRECTORY_PROFILE", r.ACTIVITY_BOOKMARK = "ACTIVITY_BOOKMARK", r.EMBEDDED_ACTIVITY_INVITE = "EMBEDDED_ACTIVITY_INVITE", r.GUILD_PRODUCT = "GUILD_PRODUCT", r.SERVER_SHOP = "SERVER_SHOP", r.QUESTS_EMBED = "QUESTS_EMBED"
+            }), (r = i || (i = {})).INVITE = "INVITE", r.TEMPLATE = "TEMPLATE", r.BUILD_OVERRIDE = "BUILD_OVERRIDE", r.MANUAL_BUILD_OVERRIDE = "MANUAL_BUILD_OVERRIDE", r.EVENT = "EVENT", r.CHANNEL_LINK = "CHANNEL_LINK", r.APP_DIRECTORY_PROFILE = "APP_DIRECTORY_PROFILE", r.APP_DIRECTORY_STOREFRONT = "APP_DIRECTORY_STOREFRONT", r.APP_DIRECTORY_STOREFRONT_SKU = "APP_DIRECTORY_STOREFRONT_SKU", r.ACTIVITY_BOOKMARK = "ACTIVITY_BOOKMARK", r.EMBEDDED_ACTIVITY_INVITE = "EMBEDDED_ACTIVITY_INVITE", r.GUILD_PRODUCT = "GUILD_PRODUCT", r.SERVER_SHOP = "SERVER_SHOP", r.QUESTS_EMBED = "QUESTS_EMBED"
         },
         891274: function(e, t, n) {
             "use strict";
@@ -115908,6 +115918,8 @@
                     else if (t === a.CodedLinkType.GUILD_PRODUCT);
                     else if (t === a.CodedLinkType.SERVER_SHOP);
                     else if (t === a.CodedLinkType.QUESTS_EMBED);
+                    else if (t === a.CodedLinkType.APP_DIRECTORY_STOREFRONT);
+                    else if (t === a.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU);
                     else throw Error("Unknown coded link type: ".concat(t))
                 })
             }
@@ -115984,22 +115996,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 DEVLINK_REGEX: function() {
-                    return R
+                    return g
                 },
                 default: function() {
-                    return x
-                },
-                findCodedLink: function() {
-                    return H
-                },
-                parseQuestsEmbedCode: function() {
                     return V
                 },
-                parseURLSafely: function() {
+                findCodedLink: function() {
+                    return Y
+                },
+                parseQuestsEmbedCode: function() {
                     return F
                 },
+                parseURLSafely: function() {
+                    return H
+                },
                 remainingPathFromDiscordHostMatch: function() {
-                    return k
+                    return B
                 }
             }), n("757143"), n("47120"), n("653041");
             var i, r, s, a, o, l, u = n("729594");
@@ -116016,22 +116028,23 @@
                 h = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?$/,
                 A = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
                 m = /^\/application-directory\/([0-9-]+)\/?$/,
-                N = /^\/activities\/([0-9-]+)\/?$/,
-                p = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
-                O = /^\/channels\/([0-9]+)\/shop$/,
-                C = /^\/quests\/([0-9-]+)\/?$/,
-                R = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
-                g = G(window.GLOBAL_ENV.INVITE_HOST),
-                L = G(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-                v = G(null !== (i = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== i ? i : "//canary.".concat(T.PRIMARY_DOMAIN)),
-                D = G("//canary.".concat(T.PRIMARY_DOMAIN)),
-                M = G("//ptb.".concat(T.PRIMARY_DOMAIN)),
-                y = G("discordapp.com"),
-                P = G("discord.com"),
-                U = [c.default.escape(null !== (r = g.host) && void 0 !== r ? r : ""), c.default.escape(null !== (s = L.host) && void 0 !== s ? s : ""), c.default.escape(null !== (a = v.host) && void 0 !== a ? a : ""), c.default.escape(null !== (o = y.host) && void 0 !== o ? o : ""), c.default.escape(null !== (l = P.host) && void 0 !== l ? l : "")].filter(Boolean),
-                b = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(U.join("|"), ")"), "g");
+                N = /^\/application-directory\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
+                p = /^\/activities\/([0-9-]+)\/?$/,
+                O = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
+                C = /^\/channels\/([0-9]+)\/shop$/,
+                R = /^\/quests\/([0-9-]+)\/?$/,
+                g = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
+                L = w(window.GLOBAL_ENV.INVITE_HOST),
+                v = w(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+                D = w(null !== (i = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== i ? i : "//canary.".concat(T.PRIMARY_DOMAIN)),
+                M = w("//canary.".concat(T.PRIMARY_DOMAIN)),
+                y = w("//ptb.".concat(T.PRIMARY_DOMAIN)),
+                P = w("discordapp.com"),
+                U = w("discord.com"),
+                b = [c.default.escape(null !== (r = L.host) && void 0 !== r ? r : ""), c.default.escape(null !== (s = v.host) && void 0 !== s ? s : ""), c.default.escape(null !== (a = D.host) && void 0 !== a ? a : ""), c.default.escape(null !== (o = P.host) && void 0 !== o ? o : ""), c.default.escape(null !== (l = U.host) && void 0 !== l ? l : "")].filter(Boolean),
+                G = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(b.join("|"), ")"), "g");
 
-            function G(e) {
+            function w(e) {
                 if (null == e) return {
                     host: null,
                     pathPrefix: null
@@ -116049,7 +116062,7 @@
                 }
             }
 
-            function w(e, t) {
+            function k(e, t) {
                 var n, i, r;
                 if ((null === (n = t.host) || void 0 === n ? void 0 : n.replace(/^www[.]/i, "")) !== e.host) return null;
                 let s = null !== (i = t.pathname) && void 0 !== i ? i : "",
@@ -116059,23 +116072,23 @@
                 return "" === o ? null : o
             }
 
-            function k(e) {
-                var t, n, i, r;
-                return null !== (r = null !== (i = null !== (n = null !== (t = w(v, e)) && void 0 !== t ? t : w(D, e)) && void 0 !== n ? n : w(M, e)) && void 0 !== i ? i : w(y, e)) && void 0 !== r ? r : w(P, e)
-            }
-
             function B(e) {
                 var t, n, i, r;
-                let s = F(e);
+                return null !== (r = null !== (i = null !== (n = null !== (t = k(D, e)) && void 0 !== t ? t : k(M, e)) && void 0 !== n ? n : k(y, e)) && void 0 !== i ? i : k(P, e)) && void 0 !== r ? r : k(U, e)
+            }
+
+            function x(e) {
+                var t, n, i, r;
+                let s = H(e);
                 if (null == s || null == s.pathname) return {
                     url: null,
                     inviteHostRemainingPath: null,
                     templateHostRemainingPath: null,
                     primaryHostRemainingPath: null
                 };
-                let a = w(g, s),
-                    o = w(L, s),
-                    l = null !== (r = null !== (i = null !== (n = null !== (t = w(v, s)) && void 0 !== t ? t : w(D, s)) && void 0 !== n ? n : w(M, s)) && void 0 !== i ? i : w(y, s)) && void 0 !== r ? r : w(P, s);
+                let a = k(L, s),
+                    o = k(v, s),
+                    l = null !== (r = null !== (i = null !== (n = null !== (t = k(D, s)) && void 0 !== t ? t : k(M, s)) && void 0 !== n ? n : k(y, s)) && void 0 !== i ? i : k(P, s)) && void 0 !== r ? r : k(U, s);
                 return {
                     url: s,
                     inviteHostRemainingPath: a,
@@ -116084,12 +116097,12 @@
                 }
             }
 
-            function x(e) {
+            function V(e) {
                 if (null == e) return [];
                 let t = new Set,
                     n = [],
-                    i = (e = e.replace(b, (e, t, n, i) => null == n ? "".concat(t, "http://").concat(i) : e)).match(E.default.URL_REGEX),
-                    r = e.match(R);
+                    i = (e = e.replace(G, (e, t, n, i) => null == n ? "".concat(t, "http://").concat(i) : e)).match(E.default.URL_REGEX),
+                    r = e.match(g);
                 if (null == (i = (null != i ? i : []).concat(null != r ? r : [])) || 0 === i.length) return [];
                 for (let e of i) {
                     if (n.length >= 10) break;
@@ -116098,7 +116111,7 @@
                         inviteHostRemainingPath: r,
                         templateHostRemainingPath: s,
                         primaryHostRemainingPath: a
-                    } = B(e);
+                    } = x(e);
                     if (null == i || null == i.pathname) continue;
                     let o = (e, i) => {
                         !t.has(i) && (t.add(i), n.push({
@@ -116135,27 +116148,33 @@
                     }
                     let E = null == a ? void 0 : a.match(N);
                     if (null != E) {
-                        let e = E[1];
-                        o(I.CodedLinkType.ACTIVITY_BOOKMARK, e)
+                        let e = E[1],
+                            t = E[2];
+                        null != t ? o(I.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, t) : o(I.CodedLinkType.APP_DIRECTORY_STOREFRONT, e)
                     }
                     let T = null == a ? void 0 : a.match(p);
-                    null != T && o(I.CodedLinkType.GUILD_PRODUCT, "".concat(T[1], "-").concat(T[2]));
-                    let C = null == a ? void 0 : a.match(O);
-                    null != C && o(I.CodedLinkType.SERVER_SHOP, C[1]);
-                    let R = V(e);
-                    null != R && o(I.CodedLinkType.QUESTS_EMBED, R)
+                    if (null != T) {
+                        let e = T[1];
+                        o(I.CodedLinkType.ACTIVITY_BOOKMARK, e)
+                    }
+                    let R = null == a ? void 0 : a.match(O);
+                    null != R && o(I.CodedLinkType.GUILD_PRODUCT, "".concat(R[1], "-").concat(R[2]));
+                    let g = null == a ? void 0 : a.match(C);
+                    null != g && o(I.CodedLinkType.SERVER_SHOP, g[1]);
+                    let L = F(e);
+                    null != L && o(I.CodedLinkType.QUESTS_EMBED, L)
                 }
                 return n
             }
 
-            function V(e) {
+            function F(e) {
                 var t, n;
-                let i = B(e),
-                    r = null == i ? void 0 : null === (t = i.primaryHostRemainingPath) || void 0 === t ? void 0 : t.match(C);
+                let i = x(e),
+                    r = null == i ? void 0 : null === (t = i.primaryHostRemainingPath) || void 0 === t ? void 0 : t.match(R);
                 return null !== (n = null == r ? void 0 : r[1]) && void 0 !== n ? n : null
             }
 
-            function F(e) {
+            function H(e) {
                 try {
                     return (0, u.parse)(e)
                 } catch (e) {
@@ -116163,8 +116182,8 @@
                 }
             }
 
-            function H(e) {
-                return x(e)[0]
+            function Y(e) {
+                return V(e)[0]
             }
         },
         625128: function(e, t, n) {
@@ -121738,8 +121757,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301752",
-                    versionHash: "f1caacd8d67e3845111bc1b84f4519ac96435a58"
+                    buildNumber: "301754",
+                    versionHash: "6393430066e5b7ad98956702540f1d599e9c1062"
                 }
             }
             n.r(t), n.d(t, {
@@ -122273,7 +122292,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("30386"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("90508"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46388"), n.e("46453"), n.e("87624"), n.e("10247"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("30386"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46453"), n.e("61414"), n.e("87624"), n.e("10247"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -158524,7 +158543,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("32493"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("12549"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("46388"), n.e("46453"), n.e("1187"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("20409"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("32493"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("12549"), n.e("29042"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("46453"), n.e("61414"), n.e("1187"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("20409"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -177979,8 +177998,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718307031168",
-                                    build_number: "301752"
+                                    built_at: "1718307312585",
+                                    build_number: "301754"
                                 }
                             },
                             retries: 1
@@ -221780,30 +221799,28 @@
             }
 
             function I(e) {
-                var t;
                 let {
-                    application: r,
-                    user: a,
-                    guildId: l
-                } = e, d = null !== (t = (0, u.default)({
-                    user: a,
-                    guildId: l
-                }).subscriptionGroupListing) && void 0 !== t ? t : void 0;
-                return (0, i.jsx)(o.StorefrontButton, {
-                    onClick: () => (function(e, t, r) {
+                    application: t,
+                    user: r,
+                    guildId: a
+                } = e;
+                return (0, u.default)({
+                    user: r,
+                    guildId: a
+                }), (0, i.jsx)(o.StorefrontButton, {
+                    onClick: () => (function(e, t) {
                         (0, s.openModalLazy)(async () => {
                             let {
-                                default: s
-                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("77172"), n.e("91947"), n.e("98538")]).then(n.bind(n, "7225"));
-                            return n => (0, i.jsx)(s, {
+                                default: r
+                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("77172"), n.e("89131"), n.e("88772")]).then(n.bind(n, "7225"));
+                            return n => (0, i.jsx)(r, {
                                 transitionState: n.transitionState,
                                 onClose: n.onClose,
                                 appId: e.id,
-                                subscriptionGroupListing: t,
-                                guildId: r
+                                guildId: t
                             })
                         })
-                    })(r, d, l),
+                    })(t, a),
                     className: c.button,
                     size: s.ButtonSizes.SMALL
                 })
@@ -255348,7 +255365,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f1caacd8d67e3845111bc1b84f4519ac96435a58"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6393430066e5b7ad98956702540f1d599e9c1062"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283978,7 +283995,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301752"
+                                build_number: "301754"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291290,7 +291307,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301752", "301752"), 10);
+                let s = parseInt((n = "301754", "301754"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319473,4 +319490,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.46f22fb50dca20b0dd03.js.map
+//# sourceMappingURL=42458.0668262df98e603461d4.js.map
