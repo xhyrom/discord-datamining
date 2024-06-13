@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301835", ", Version Hash: ").concat("14b0382bd6e639d2423010487cbbf8672a30b8ec")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301850", ", Version Hash: ").concat("55fb9ee0d3457a04aeab3fa1af1f01b132d470e8")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -77524,24 +77524,43 @@
             "use strict";
             n.r(t), n.d(t, {
                 AppLauncherDesktopExperiment: function() {
-                    return i
+                    return r
+                },
+                DesktopAppLauncherInActivitiesShelfExperiment: function() {
+                    return s
                 }
             });
-            let i = (0, n("818083").createExperiment)({
-                kind: "user",
-                id: "2023-11_app_launcher_desktop",
-                label: "App Launcher - Desktop",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable the app launcher feature on desktop",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
+            var i = n("818083");
+            let r = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2023-11_app_launcher_desktop",
+                    label: "App Launcher - Desktop",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable the app launcher feature on desktop",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                s = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2024-06_desktop_app_launcher_in_activities_shelf",
+                    label: "Desktop App Launcher In Activities Shelf",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable the desktop app launcher in activities shelf",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                })
         },
         541099: function(e, t, n) {
             "use strict";
@@ -93574,8 +93593,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301835", "301835"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301835")), t = 0), t
+                let t = parseInt((e = "301850", "301850"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301850")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121819,8 +121838,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301835",
-                    versionHash: "14b0382bd6e639d2423010487cbbf8672a30b8ec"
+                    buildNumber: "301850",
+                    versionHash: "55fb9ee0d3457a04aeab3fa1af1f01b132d470e8"
                 }
             }
             n.r(t), n.d(t, {
@@ -178060,8 +178079,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718314573197",
-                                    build_number: "301835"
+                                    built_at: "1718315371959",
+                                    build_number: "301850"
                                 }
                             },
                             retries: 1
@@ -255386,7 +255405,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "14b0382bd6e639d2423010487cbbf8672a30b8ec"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "55fb9ee0d3457a04aeab3fa1af1f01b132d470e8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284016,7 +284035,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301835"
+                                build_number: "301850"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291328,7 +291347,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301835", "301835"), 10);
+                let s = parseInt((n = "301850", "301850"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319511,4 +319530,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.7e5eb5cf462e08d32562.js.map
+//# sourceMappingURL=42458.148866878e5990ff2bb4.js.map
