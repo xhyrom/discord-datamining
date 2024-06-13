@@ -97774,6 +97774,170 @@ html .invoiceCancelRow__6ff3e {
     flex-direction: column
 }
 
+.container__30dbe {
+    display: flex;
+    flex-direction: column;
+    min-width: var(--custom-application-directory-search-sidebar-width)
+}
+
+.category_a343a6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1
+}
+
+.category_a343a6:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.category_a343a6:hover .icon__92516 {
+    color: var(--interactive-hover)
+}
+
+.category_a343a6.activeCategory__585b4 {
+    background-color: var(--background-modifier-selected);
+    cursor: inherit
+}
+
+.category_a343a6.activeCategory__585b4 .icon__92516 {
+    color: var(--interactive-active)
+}
+
+.icon__92516 {
+    flex-shrink: 0;
+    color: var(--interactive-normal);
+    margin-right: 12px
+}
+
+.count_cc8bdf {
+    margin-left: auto;
+    padding-left: 16px
+}
+
+.page__5a11b {
+    display: flex;
+    flex-direction: row
+}
+
+.contentContainer__33b77 {
+    margin-top: 16px
+}
+
+.content__63812 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    width: calc(100% - var(--custom-application-directory-search-sidebar-width) - var(--custom-application-directory-search-sidebar-margin-right))
+}
+
+.sidebar__943e9 {
+    flex: 0 0;
+    margin-right: var(--custom-application-directory-search-sidebar-margin-right);
+    min-width: var(--custom-application-directory-search-sidebar-width)
+}
+
+.sidebarImage__4e4b2 {
+    width: 100%
+}
+
+.categoryList_a2ffae {
+    margin-top: 32px
+}
+
+.listing__21b9f .listingDetails_fda518 {
+    margin-left: 64px;
+    padding-bottom: 16px;
+    margin-bottom: -16px
+}
+
+.listing__21b9f:not(:last-child):hover .listingDetails_fda518 {
+    border-bottom: 1px solid transparent
+}
+
+.listing__21b9f:not(:last-child):not(:hover) .listingDetails_fda518 {
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.listingDescription_ef4c24 {
+    margin-top: 8px
+}
+
+.wrapper__17603 {
+    padding: 16px 0
+}
+
+.productSection_d2504b {
+    margin-top: 40px
+}
+
+@value gridSize: 320px;
+
+.productList_b12dd0 {
+    display: grid;
+    grid-gap: 16px;
+    gap: 16px;
+    padding-top: 16px;
+    grid-template-columns: 320px;
+    justify-items: center
+}
+
+@media(min-width:760px) {
+    .productList_b12dd0 {
+        grid-template-columns: 320px 320px
+    }
+}
+
+@media(min-width:1100px) {
+    .productList_b12dd0 {
+        grid-template-columns: 320px 320px 320px
+    }
+}
+
+.legalText__3817f {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
+.productSection__5df5f {
+    margin-bottom: 40px
+}
+
+.productList_f91d9d {
+    padding-top: 16px
+}
+
+.subList__4d77c {
+    display: grid;
+    grid-gap: 16px;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, 320px)
+}
+
+@media(min-width:820px) {
+    .subList__4d77c {
+        grid-template-columns: repeat(auto-fit, 381px)
+    }
+}
+
+.itemList_c05328 {
+    display: grid;
+    grid-gap: 16px;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, 320px)
+}
+
+@media(min-width:820px) {
+    .itemList_c05328 {
+        grid-template-columns: repeat(auto-fit, 246px)
+    }
+}
+
 .list_b1e6a9 {
     display: flex;
     flex-direction: column;
@@ -98341,136 +98505,6 @@ html .invoiceCancelRow__6ff3e {
 .appSlide__73f6c {
     -o-object-fit: contain;
     object-fit: contain
-}
-
-.container__30dbe {
-    display: flex;
-    flex-direction: column;
-    min-width: var(--custom-application-directory-search-sidebar-width)
-}
-
-.category_a343a6 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    margin-bottom: 4px;
-    border-radius: 8px;
-    cursor: pointer;
-    flex: 1
-}
-
-.category_a343a6:hover {
-    background-color: var(--background-modifier-hover)
-}
-
-.category_a343a6:hover .icon__92516 {
-    color: var(--interactive-hover)
-}
-
-.category_a343a6.activeCategory__585b4 {
-    background-color: var(--background-modifier-selected);
-    cursor: inherit
-}
-
-.category_a343a6.activeCategory__585b4 .icon__92516 {
-    color: var(--interactive-active)
-}
-
-.icon__92516 {
-    flex-shrink: 0;
-    color: var(--interactive-normal);
-    margin-right: 12px
-}
-
-.count_cc8bdf {
-    margin-left: auto;
-    padding-left: 16px
-}
-
-.page__5a11b {
-    display: flex;
-    flex-direction: row
-}
-
-.contentContainer__33b77 {
-    margin-top: 16px
-}
-
-.content__63812 {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0;
-    width: calc(100% - var(--custom-application-directory-search-sidebar-width) - var(--custom-application-directory-search-sidebar-margin-right))
-}
-
-.sidebar__943e9 {
-    flex: 0 0;
-    margin-right: var(--custom-application-directory-search-sidebar-margin-right);
-    min-width: var(--custom-application-directory-search-sidebar-width)
-}
-
-.sidebarImage__4e4b2 {
-    width: 100%
-}
-
-.categoryList_a2ffae {
-    margin-top: 32px
-}
-
-.listing__21b9f .listingDetails_fda518 {
-    margin-left: 64px;
-    padding-bottom: 16px;
-    margin-bottom: -16px
-}
-
-.listing__21b9f:not(:last-child):hover .listingDetails_fda518 {
-    border-bottom: 1px solid transparent
-}
-
-.listing__21b9f:not(:last-child):not(:hover) .listingDetails_fda518 {
-    border-bottom: 1px solid var(--background-modifier-accent)
-}
-
-.listingDescription_ef4c24 {
-    margin-top: 8px
-}
-
-.wrapper__17603 {
-    padding: 16px 0
-}
-
-.productSection_d2504b {
-    margin-top: 40px
-}
-
-@value gridSize: 320px;
-
-.productList_b12dd0 {
-    display: grid;
-    grid-gap: 16px;
-    gap: 16px;
-    padding-top: 16px;
-    grid-template-columns: 320px;
-    justify-items: center
-}
-
-@media(min-width:760px) {
-    .productList_b12dd0 {
-        grid-template-columns: 320px 320px
-    }
-}
-
-@media(min-width:1100px) {
-    .productList_b12dd0 {
-        grid-template-columns: 320px 320px 320px
-    }
-}
-
-.legalText__3817f {
-    margin-top: 24px;
-    padding-top: 24px;
-    border-top: 1px solid var(--background-modifier-accent)
 }
 
 .modalContent__8c9b3 {
@@ -141183,4 +141217,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2f4eec9775e374fe5606.css.map*/
+/*# sourceMappingURL=99387.f6a2fd42912fa9e7da6b.css.map*/
