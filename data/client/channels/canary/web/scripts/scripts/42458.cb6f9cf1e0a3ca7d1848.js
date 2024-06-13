@@ -40168,7 +40168,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301675", ", Version Hash: ").concat("0450a1193303f12abf9c5640d79c91c6a963fb9d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301694", ", Version Hash: ").concat("637aac4de75f4cf5de6f96ca874f7fee2e0b6eb1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85248,7 +85248,7 @@
                     return u
                 },
                 goSearch: function() {
-                    return c
+                    return E
                 },
                 goToAppDirectory: function() {
                     return l
@@ -85259,11 +85259,14 @@
                 goToApplicationSection: function() {
                     return _
                 },
+                goToApplicationStoreSku: function() {
+                    return c
+                },
                 goToCategory: function() {
-                    return E
+                    return I
                 },
                 replaceAppDirectoryURLWith: function() {
-                    return I
+                    return T
                 }
             }), n("610138"), n("216116"), n("78328"), n("815648"), n("47120");
             var i = n("703656"),
@@ -85278,18 +85281,18 @@
                         applicationId: i,
                         applicationSection: s,
                         entrypoint: l
-                    } = e, E = {
+                    } = e, c = {
                         ...l,
                         pathname: window.location.pathname
                     };
                     switch (r.default.track(o.AnalyticEvents.APP_DIRECTORY_OPENED, {
-                            source: null == E ? void 0 : E.name
-                        }), (0, a.resetApplicationDirectoryHistory)(), (0, a.setEntrypoint)(E), null != n && (0, a.setGuildId)(n), t === a.ApplicationDirectoryViews.APPLICATION && null == i && (t = a.ApplicationDirectoryViews.HOME), t) {
+                            source: null == c ? void 0 : c.name
+                        }), (0, a.resetApplicationDirectoryHistory)(), (0, a.setEntrypoint)(c), null != n && (0, a.setGuildId)(n), t === a.ApplicationDirectoryViews.APPLICATION && null == i && (t = a.ApplicationDirectoryViews.HOME), t) {
                         case a.ApplicationDirectoryViews.HOME:
                             u();
                             break;
                         case a.ApplicationDirectoryViews.SEARCH:
-                            c();
+                            E();
                             break;
                         case a.ApplicationDirectoryViews.APPLICATION:
                             null != i && (null != s ? _({
@@ -85329,7 +85332,18 @@
                         state: r
                     })
                 },
-                c = function() {
+                c = e => {
+                    let {
+                        applicationId: t,
+                        skuId: n
+                    } = e, r = {
+                        previousView: (0, a.getCurrentView)()
+                    };
+                    (0, i.transitionTo)(o.Routes.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(t, n), {
+                        state: r
+                    })
+                },
+                E = function() {
                     let {
                         query: e,
                         categoryId: t,
@@ -85342,15 +85356,15 @@
                         state: s
                     })
                 },
-                E = e => {
+                I = e => {
                     let {
                         categoryId: t
                     } = e;
-                    c({
+                    E({
                         categoryId: null != t ? t : s.ALL_CATEGORY_ID
                     })
                 },
-                I = e => {
+                T = e => {
                     let {
                         location: {
                             state: t
@@ -85358,15 +85372,6 @@
                     } = (0, i.getHistory)();
                     (0, i.replaceWith)(e, t)
                 }
-        },
-        272242: function(e, t, n) {
-            "use strict";
-            var i, r;
-            n.r(t), n.d(t, {
-                ApplicationDirectoryProfileSections: function() {
-                    return i
-                }
-            }), (r = i || (i = {})).GENERAL = "general", r.IMAGES = "images", r.PREMIUM = "premium", r.STORE = "store", r.PRIVACY = "privacy"
         },
         970321: function(e, t, n) {
             "use strict";
@@ -93086,8 +93091,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301675", "301675"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301675")), t = 0), t
+                let t = parseInt((e = "301694", "301694"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301694")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116610,57 +116615,21 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return _
                 },
                 useFetchPurchases: function() {
-                    return E
-                },
-                useMaybeFetchCollectiblesCategories: function() {
-                    return c
+                    return d
                 }
             }), n("47120");
             var i = n("470079"),
                 r = n("399606"),
                 s = n("634894"),
-                a = n("353926"),
-                o = n("335131"),
-                l = n("597688"),
-                u = n("337679"),
-                d = n("1870"),
-                _ = n("617452");
+                a = n("335131"),
+                o = n("337679"),
+                l = n("1870"),
+                u = n("267097");
 
-            function c(e) {
-                let t = "useMaybeFetchCollectiblesCategories";
-                (0, s.useTriggerDebuggingAA)({
-                    location: t + " auto on",
-                    autoTrackExposure: !0
-                }), (0, s.useTriggerDebuggingAA)({
-                    location: t + " auto off",
-                    autoTrackExposure: !1
-                });
-                let n = (0, r.useStateFromStores)([a.default], () => a.default.hasLoadedExperiments),
-                    u = (0, _.useShopBundleEnabled)("useMaybeFetchCollectiblesCategories"),
-                    [d, c, E, I, T] = (0, r.useStateFromStoresArray)([l.default], () => {
-                        var e;
-                        return [l.default.isFetchingCategories, l.default.lastFetchOptions, l.default.error, null !== (e = l.default.lastSuccessfulFetch) && void 0 !== e ? e : 0, l.default.categories]
-                    });
-                return (0, i.useEffect)(() => {
-                    if (!n || d || E) return;
-                    let t = {
-                            ...e,
-                            includeBundles: u
-                        },
-                        i = !(0, o.areRequestOptionsEqual)(c, t),
-                        r = Date.now() - I < 6e5;
-                    (i || !r) && (0, o.fetchCollectiblesCategories)(t)
-                }, [n, d, c, I, e, E, u]), {
-                    isFetching: d,
-                    categories: T,
-                    error: E
-                }
-            }
-
-            function E() {
+            function d() {
                 let e = "useFetchPurchases";
                 (0, s.useTriggerDebuggingAA)({
                     location: e + " auto on",
@@ -116669,51 +116638,56 @@
                     location: e + " auto off",
                     autoTrackExposure: !1
                 });
-                let [t, n, a, l, _] = (0, r.useStateFromStoresArray)([d.default], () => [d.default.isFetching, d.default.isClaiming, d.default.fetchError, d.default.claimError, d.default.purchases]), {
+                let [t, n, u, d, _] = (0, r.useStateFromStoresArray)([l.default], () => [l.default.isFetching, l.default.isClaiming, l.default.fetchError, l.default.claimError, l.default.purchases]), {
                     shouldFakePurchaseSuccessFlowLocally: c
-                } = (0, u.default)({
+                } = (0, o.default)({
                     location: "useFetchPurchases"
                 });
                 return (0, i.useEffect)(() => {
-                    (!c || !(_.size > 0)) && (0, o.fetchCollectiblesPurchases)()
+                    (!c || !(_.size > 0)) && (0, a.fetchCollectiblesPurchases)()
                 }, [c]), {
                     isClaiming: n,
-                    fetchError: a,
-                    claimError: l,
+                    fetchError: u,
+                    claimError: d,
                     isFetching: t,
                     purchases: _
                 }
             }
 
-            function I(e) {
+            function _(e) {
                 var t;
-                let n = "useFetchCollectiblesCategoriesAndPurchases";
+                let n = null == e ? void 0 : e.paymentGateway,
+                    i = "useFetchCollectiblesCategoriesAndPurchases";
                 (0, s.useTriggerDebuggingAA)({
-                    location: n + " auto on",
+                    location: i + " auto on",
                     autoTrackExposure: !0
                 }), (0, s.useTriggerDebuggingAA)({
-                    location: n + " auto off",
+                    location: i + " auto off",
                     autoTrackExposure: !1
                 });
                 let {
-                    isFetching: i,
-                    categories: r,
-                    error: a
-                } = c(e), {
-                    isClaiming: o,
-                    fetchError: l,
-                    claimError: u,
-                    isFetching: d,
-                    purchases: _
-                } = E();
+                    isFetching: r,
+                    categories: a,
+                    error: o,
+                    refreshCategories: l
+                } = (0, u.default)({
+                    paymentGateway: n
+                }), {
+                    isClaiming: _,
+                    fetchError: c,
+                    claimError: E,
+                    isFetching: I,
+                    purchases: T
+                } = d();
                 return {
-                    isFetching: i || d,
-                    isFetchingCategories: i,
-                    isFetchingPurchases: d,
-                    isClaiming: o,
-                    categories: r,
-                    purchases: _,
-                    error: null !== (t = null != a ? a : l) && void 0 !== t ? t : u
+                    isFetching: r || I,
+                    isFetchingCategories: r,
+                    isFetchingPurchases: I,
+                    isClaiming: _,
+                    categories: a,
+                    purchases: T,
+                    error: null !== (t = null != o ? o : c) && void 0 !== t ? t : E,
+                    refreshCategories: l
                 }
             }
         },
@@ -116740,6 +116714,80 @@
                 }, [e, d, n, u]), {
                     product: d,
                     isFetching: u
+                }
+            }
+        },
+        267097: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var i = n("580747"),
+                r = n("479801");
+
+            function s(e) {
+                let t = null == e ? void 0 : e.paymentGateway,
+                    n = (0, i.default)("shop_disable_cache"),
+                    s = (0, i.default)("shop_include_unpublished");
+                return (0, r.useMaybeFetchCollectiblesCategoriesShared)({
+                    noCache: n,
+                    includeUnpublished: s,
+                    paymentGateway: t
+                })
+            }
+        },
+        479801: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useMaybeFetchCollectiblesCategoriesShared: function() {
+                    return d
+                }
+            }), n("47120");
+            var i = n("470079"),
+                r = n("442837"),
+                s = n("634894"),
+                a = n("353926"),
+                o = n("335131"),
+                l = n("597688"),
+                u = n("617452");
+
+            function d(e) {
+                let t = "useMaybeFetchCollectiblesCategories";
+                (0, s.useTriggerDebuggingAA)({
+                    location: t + " auto on",
+                    autoTrackExposure: !0
+                }), (0, s.useTriggerDebuggingAA)({
+                    location: t + " auto off",
+                    autoTrackExposure: !1
+                });
+                let n = (0, r.useStateFromStores)([a.default], () => a.default.hasLoadedExperiments),
+                    d = (0, u.useShopBundleEnabled)("useMaybeFetchCollectiblesCategories"),
+                    [_, c, E, I, T] = (0, r.useStateFromStoresArray)([l.default], () => {
+                        var e;
+                        return [l.default.isFetchingCategories, l.default.lastFetchOptions, l.default.error, null !== (e = l.default.lastSuccessfulFetch) && void 0 !== e ? e : 0, l.default.categories]
+                    });
+                return (0, i.useEffect)(() => {
+                    if (!n || _ || E) return;
+                    let t = {
+                            ...e,
+                            includeBundles: d
+                        },
+                        i = !(0, o.areRequestOptionsEqual)(c, t),
+                        r = Date.now() - I < 6e5;
+                    (i || !r) && (0, o.fetchCollectiblesCategories)(t)
+                }, [n, _, c, I, e, E, d]), {
+                    isFetching: _,
+                    categories: T,
+                    error: E,
+                    refreshCategories: (0, i.useCallback)(() => {
+                        let t = {
+                            ...e,
+                            includeBundles: d
+                        };
+                        (0, o.fetchCollectiblesCategories)(t)
+                    }, [e, d])
                 }
             }
         },
@@ -121266,8 +121314,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301675",
-                    versionHash: "0450a1193303f12abf9c5640d79c91c6a963fb9d"
+                    buildNumber: "301694",
+                    versionHash: "637aac4de75f4cf5de6f96ca874f7fee2e0b6eb1"
                 }
             }
             n.r(t), n.d(t, {
@@ -177510,8 +177558,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718302804427",
-                                    build_number: "301675"
+                                    built_at: "1718303766360",
+                                    build_number: "301694"
                                 }
                             },
                             retries: 1
@@ -254879,7 +254927,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0450a1193303f12abf9c5640d79c91c6a963fb9d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "637aac4de75f4cf5de6f96ca874f7fee2e0b6eb1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283477,7 +283525,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301675"
+                                build_number: "301694"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -290789,7 +290837,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301675", "301675"), 10);
+                let s = parseInt((n = "301694", "301694"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -318954,4 +319002,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.0cd51cf96f37399d0e87.js.map
+//# sourceMappingURL=42458.cb6f9cf1e0a3ca7d1848.js.map
