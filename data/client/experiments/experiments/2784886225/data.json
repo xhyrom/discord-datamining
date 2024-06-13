@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_clans_mobile_tags",
+    "label": "Clans - Mobile",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show tags on mobile"
+    ],
+    "hash": 2784886225,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
