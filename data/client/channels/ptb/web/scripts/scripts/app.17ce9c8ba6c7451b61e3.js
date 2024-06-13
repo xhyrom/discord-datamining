@@ -3091,6 +3091,30 @@
                 container: "container__2f171"
             }
         },
+        573214: function(e) {
+            "use strict";
+            e.exports = {
+                appDetails: "appDetails_a9e155",
+                appDetailsContainer: "appDetailsContainer__86c05",
+                bannerImage: "bannerImage_bd92bd",
+                bannerImageContainer: "bannerImageContainer__3fe93",
+                container: "container__50faa",
+                fadeIn: "fadeIn_dbae63",
+                icon: "icon__83254",
+                iconContainer: "iconContainer__73a6d",
+                largeBanner: "largeBanner_a47a80",
+                mediumBanner: "mediumBanner__8f752",
+                partnerLabelWrapper: "partnerLabelWrapper_c12876"
+            }
+        },
+        844330: function(e) {
+            "use strict";
+            e.exports = {
+                appGrid: "appGrid_e79031",
+                header: "header__34959",
+                viewMore: "viewMore__6842a"
+            }
+        },
         245199: function(e) {
             "use strict";
             e.exports = {
@@ -3099,26 +3123,12 @@
                 searchBarContainer: "searchBarContainer__4929e"
             }
         },
-        804704: function(e) {
+        54674: function(e) {
             "use strict";
             e.exports = {
-                applicationIcon: "applicationIcon_e475ed",
-                command: "command_b2ecf1",
-                commandList: "commandList__23469",
-                commandListHeading: "commandListHeading__7aa54",
-                commandListHeadingIcon: "commandListHeadingIcon__39d9e"
-            }
-        },
-        38658: function(e) {
-            "use strict";
-            e.exports = {
-                application: "application__1e368",
-                applicationDescription: "applicationDescription_d0181f",
-                applicationDetails: "applicationDetails_ff17bc",
-                applicationIcon: "applicationIcon_c566ee",
-                applicationList: "applicationList__0ac4d",
-                listHeading: "listHeading__167d6",
-                listHeadingIcon: "listHeadingIcon_ee06ce"
+                body: "body__6e2e0",
+                container: "container__00399",
+                image: "image__55e02"
             }
         },
         603649: function(e) {
