@@ -32937,6 +32937,10 @@ img.thumbnail__18ece {
     text-decoration: underline
 }
 
+.custom-theme-background .popout__24e32 {
+    border: 1px solid var(--border-strong)
+}
+
 .flexRow__2c6a6 {
     display: flex
 }
@@ -40817,6 +40821,10 @@ img.thumbnail__18ece {
 
 .enable-forced-colors .container__13b2a {
     border: 2px solid CanvasText
+}
+
+.custom-theme-background .container__13b2a {
+    border: 1px solid var(--border-strong)
 }
 
 .ping__838d2 {
@@ -141264,4 +141272,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.27bef2ea9c7e6a50ced5.css.map*/
+/*# sourceMappingURL=99387.3fc510f9085cf750ec3a.css.map*/
