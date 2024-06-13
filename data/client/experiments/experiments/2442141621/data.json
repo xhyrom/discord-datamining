@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_desktop_app_launcher_in_activities_shelf",
+    "label": "Desktop App Launcher In Activities Shelf",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable the desktop app launcher in activities shelf"
+    ],
+    "hash": 2442141621,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
