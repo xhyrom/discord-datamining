@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301788", ", Version Hash: ").concat("174f7d33b1df8eabb7054fb2d099eacbaec59d25")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301801", ", Version Hash: ").concat("09e88857e38addfd9639ceef86302359c2faccb1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -77781,59 +77781,52 @@
                 m = n("314734"),
                 N = n("981631"),
                 p = n("175323");
-            t.default = r.memo(function(e) {
+
+            function O(e) {
                 let t, {
-                        positionTargetRef: n,
-                        channel: s,
-                        closeOnModalOuterClick: O = !1,
-                        parentModalKey: C
+                        channel: n,
+                        closeOnModalOuterClick: s = !1,
+                        parentModalKey: a
                     } = e,
-                    R = c.AppLauncherRecommendationsExperiment.useExperiment({
+                    d = c.AppLauncherRecommendationsExperiment.useExperiment({
                         location: "App Launcher Popup"
                     }, {
                         autoTrackExposure: !0
                     }),
-                    g = r.useRef(null),
-                    L = r.useRef(null),
+                    E = r.useRef(null),
                     {
-                        renderWindow: v,
-                        windowDispatch: D
+                        renderWindow: O,
+                        windowDispatch: C
                     } = r.useContext(_.default),
-                    M = null != C,
-                    y = (0, l.useIsModalAtTop)(null != C ? C : ""),
-                    P = () => {
-                        f.dismissAppLauncherPopup()
-                    },
-                    U = r.useCallback(e => {
+                    R = null != a,
+                    g = (0, l.useIsModalAtTop)(null != a ? a : ""),
+                    L = r.useCallback(e => {
                         var t;
-                        if (!M && (0, l.hasAnyModalOpen)() || M && !(y && O)) return;
+                        if (!R && (0, l.hasAnyModalOpen)() || R && !(g && s)) return;
                         let {
                             target: n
                         } = e;
                         if ((0, o.isElement)(n) && null != n.closest("." + m.APP_LAUNCHER_ELEMENT_CLASSNAME)) return;
                         for (;
                             (0, o.isElement)(n);) {
-                            if (n === L.current) return;
+                            if (n === E.current) return;
                             n = n.parentNode
                         }
-                        P();
+                        f.dismissAppLauncherPopup();
                         let i = null === (t = (0, T.eventOwnerDocument)(e)) || void 0 === t ? void 0 : t.activeElement;
                         (null == i || "BODY" === i.tagName) && I.ComponentDispatch.dispatchToLastSubscribed(N.ComponentActions.TEXTAREA_FOCUS)
-                    }, [O, y, M]),
-                    b = r.useCallback(() => {
-                        P()
-                    }, []);
-                r.useLayoutEffect(() => (v.addEventListener("mousedown", U), v.addEventListener("contextmenu", U), D.subscribe(N.ComponentActions.POPOUT_CLOSE, b), () => {
-                    v.removeEventListener("mousedown", U), v.removeEventListener("contextmenu", U), D.unsubscribe(N.ComponentActions.POPOUT_CLOSE, b)
-                }), [b, U, v, D]), (0, u.useFocusLock)(g), r.useEffect(() => {
-                    (!M && (0, l.hasAnyModalOpen)() || M && !y) && P()
-                }, [y, M]);
+                    }, [s, g, R]);
+                r.useLayoutEffect(() => (O.addEventListener("mousedown", L), O.addEventListener("contextmenu", L), C.subscribe(N.ComponentActions.POPOUT_CLOSE, f.dismissAppLauncherPopup), () => {
+                    O.removeEventListener("mousedown", L), O.removeEventListener("contextmenu", L), C.unsubscribe(N.ComponentActions.POPOUT_CLOSE, f.dismissAppLauncherPopup)
+                }), [L, O, C]), (0, u.useFocusLock)(E), r.useEffect(() => {
+                    (!R && (0, l.hasAnyModalOpen)() || R && !g) && f.dismissAppLauncherPopup()
+                }, [g, R]);
                 let {
-                    history: G,
-                    setHistory: w,
-                    currentView: k,
-                    pushHistory: B,
-                    goBack: x
+                    history: v,
+                    setHistory: D,
+                    currentView: M,
+                    pushHistory: y,
+                    goBack: P
                 } = function() {
                     let [e, t] = r.useState([{
                         type: S.HistoryItemType.HOME
@@ -77852,61 +77845,67 @@
                         }
                     }
                 }();
-                switch (null == k ? void 0 : k.type) {
+                switch (null == M ? void 0 : M.type) {
                     case S.HistoryItemType.HOME:
                         t = (0, i.jsx)(A.default, {
-                            channel: s,
-                            enableRecommendations: R.enabled,
-                            enableRecents: R.recentsDropdownEnabled
+                            channel: n,
+                            enableRecommendations: d.enabled,
+                            enableRecents: d.recentsDropdownEnabled
                         });
                         break;
                     case S.HistoryItemType.APPLICATION:
                         t = (0, i.jsx)(h.default, {
-                            channel: s,
-                            application: k.application,
-                            sectionName: k.sectionName
+                            channel: n,
+                            application: M.application,
+                            sectionName: M.sectionName
                         });
                         break;
                     default:
                         t = null
                 }
+                return (0, i.jsx)("div", {
+                    className: p.drawerSizingWrapper,
+                    ref: E,
+                    children: (0, i.jsx)("div", {
+                        className: p.contentWrapper,
+                        children: (0, i.jsx)(S.AppLauncherHistoryContext.Provider, {
+                            value: {
+                                history: v,
+                                setHistory: D,
+                                currentView: M,
+                                pushHistory: y,
+                                goBack: P
+                            },
+                            children: t
+                        })
+                    })
+                })
+            }
+            t.default = r.memo(function(e) {
+                let {
+                    positionTargetRef: t,
+                    ...n
+                } = e;
                 return (0, i.jsx)(d.default, {
                     section: N.AnalyticsSections.EXPRESSION_PICKER,
                     children: (0, i.jsx)(E.AppReferencePositionLayer, {
                         className: p.positionLayer,
-                        targetRef: n,
+                        targetRef: t,
                         position: "top",
                         align: "right",
                         spacing: 8,
                         autoInvert: !0,
                         children: e => {
                             let {
-                                isPositioned: n
+                                isPositioned: t
                             } = e;
                             return (0, i.jsx)("section", {
                                 className: a()(p.positionContainer),
-                                ref: g,
                                 role: "dialog",
                                 "aria-label": "Application Launcher",
-                                children: n ? (0, i.jsxs)("div", {
-                                    className: p.drawerSizingWrapper,
-                                    ref: L,
-                                    children: [(0, i.jsx)("div", {
-                                        className: p.resizeHandle
-                                    }), (0, i.jsx)("div", {
-                                        className: p.contentWrapper,
-                                        children: (0, i.jsx)(S.AppLauncherHistoryContext.Provider, {
-                                            value: {
-                                                history: G,
-                                                setHistory: w,
-                                                currentView: k,
-                                                pushHistory: B,
-                                                goBack: x
-                                            },
-                                            children: t
-                                        })
-                                    })]
-                                }) : null
+                                children: t && (0, i.jsx)(O, {
+                                    ...n
+                                })
                             })
                         }
                     })
@@ -93574,8 +93573,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301788", "301788"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301788")), t = 0), t
+                let t = parseInt((e = "301801", "301801"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301801")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121819,8 +121818,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301788",
-                    versionHash: "174f7d33b1df8eabb7054fb2d099eacbaec59d25"
+                    buildNumber: "301801",
+                    versionHash: "09e88857e38addfd9639ceef86302359c2faccb1"
                 }
             }
             n.r(t), n.d(t, {
@@ -178060,8 +178059,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718311983624",
-                                    build_number: "301788"
+                                    built_at: "1718312819984",
+                                    build_number: "301801"
                                 }
                             },
                             retries: 1
@@ -197336,58 +197335,58 @@
             }
 
             function P(e) {
+                var t;
                 let {
-                    transitionState: t,
-                    onClose: n,
-                    quest: a,
-                    location: l,
-                    reward: d,
-                    decoration: c,
-                    onUseNow: E
-                } = e, I = r.useRef(null), [f, S] = r.useState(null), h = r.useRef(new s.Environment), A = (0, o.useStateFromStores)([_.default], () => _.default.useReducedMotion), N = (0, o.useStateFromStores)([m.default], () => m.default.getCurrentUser()), R = (0, C.getHeroAssetUrl)(a), [L, D] = r.useState("loading");
+                    transitionState: n,
+                    onClose: a,
+                    quest: l,
+                    location: d,
+                    reward: c,
+                    decoration: E,
+                    onUseNow: I
+                } = e, f = r.useRef(null), [S, h] = r.useState(null), A = r.useRef(new s.Environment), N = (0, o.useStateFromStores)([_.default], () => _.default.useReducedMotion), R = (0, o.useStateFromStores)([m.default], () => m.default.getCurrentUser()), L = (0, C.getHeroAssetUrl)(l), D = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [y, P] = r.useState(D ? "claimed" : "loading");
                 r.useEffect(() => {
-                    var e;
-                    (null === (e = a.userStatus) || void 0 === e ? void 0 : e.claimedAt) == null && (0, p.claimQuestReward)(a.id, O.QuestRewardCodePlatforms.CROSS_PLATFORM, l).then(() => D("claimed")).catch(() => D("error"))
-                }, [a, l]);
-                let y = null == N || null == c || "loading" === L;
+                    !D && (0, p.claimQuestReward)(l.id, O.QuestRewardCodePlatforms.CROSS_PLATFORM, d).then(() => P("claimed")).catch(() => P("error"))
+                }, [l, d, D]);
+                let b = null == R || null == E || "loading" === y;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(s.ConfettiCanvas, {
-                        ref: S,
+                        ref: h,
                         className: M.confettiCanvas,
-                        environment: h.current
+                        environment: A.current
                     }), (0, i.jsx)("div", {
-                        ref: I,
+                        ref: f,
                         children: (0, i.jsx)(u.ModalRoot, {
-                            transitionState: t,
+                            transitionState: n,
                             size: u.ModalSize.DYNAMIC,
                             className: M.rootContainer,
                             hideShadow: !0,
-                            children: y ? (0, i.jsx)("div", {
+                            children: b ? (0, i.jsx)("div", {
                                 className: M.spinnerContainer,
                                 children: (0, i.jsx)(u.Spinner, {
                                     className: M.spinner,
                                     type: u.Spinner.Type.SPINNING_CIRCLE
                                 })
-                            }) : "error" === L ? (0, i.jsx)(g.default, {
-                                onClose: n
+                            }) : "error" === y ? (0, i.jsx)(g.default, {
+                                onClose: a
                             }) : (0, i.jsx)(U, {
-                                quest: a,
-                                user: N,
-                                primaryColor: a.config.colors.primary,
-                                secondaryColor: a.config.colors.secondary,
-                                decoration: c,
-                                decorationName: d.messages.name,
-                                backgroundUrl: R,
-                                isSaving: "applying" === L,
-                                onClose: n,
+                                quest: l,
+                                user: R,
+                                primaryColor: l.config.colors.primary,
+                                secondaryColor: l.config.colors.secondary,
+                                decoration: E,
+                                decorationName: c.messages.name,
+                                backgroundUrl: L,
+                                isSaving: "applying" === y,
+                                onClose: a,
                                 onConfirm: () => {
-                                    D("applying"), E().finally(n)
+                                    P("applying"), I().finally(a)
                                 }
                             })
                         })
-                    }), !A && "claimed" === L && (0, i.jsx)(T.default, {
-                        confettiTarget: I.current,
-                        confettiCanvas: f,
+                    }), !N && !D && "claimed" === y && (0, i.jsx)(T.default, {
+                        confettiTarget: f.current,
+                        confettiCanvas: S,
                         sprites: v.COMMON_CONFETTI_SPRITES,
                         colors: v.COMMON_CONFETTI_COLORS
                     })]
@@ -197502,13 +197501,9 @@
                     }, [t, n]);
                     return [i, () => null == i ? Promise.reject() : ((0, d.setPendingAvatarDecoration)(i), y())]
                 }(null !== (n = null == _ ? void 0 : _.skuId) && void 0 !== n ? n : null);
-                return null == _ ? null : (null === (t = s.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? (0, i.jsx)(c.default, {
-                    transitionState: u,
-                    onCloseModal: y,
-                    onClose: l,
-                    analyticsLocations: [],
-                    initialSelectedDecoration: E
-                }) : (0, i.jsx)(P, {
+                if (null == _) return null;
+                let f = (0, C.hasVariant)(s, L.QuestVariants.IN_HOUSE_CONSOLE_QUEST);
+                return (null === (t = s.userStatus) || void 0 === t ? void 0 : t.claimedAt) == null || f ? (0, i.jsx)(P, {
                     onClose: l,
                     transitionState: u,
                     quest: s,
@@ -197516,6 +197511,12 @@
                     reward: _,
                     decoration: E,
                     onUseNow: T
+                }) : (0, i.jsx)(c.default, {
+                    transitionState: u,
+                    onCloseModal: y,
+                    onClose: l,
+                    analyticsLocations: [],
+                    initialSelectedDecoration: E
                 })
             }
 
@@ -255428,7 +255429,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "174f7d33b1df8eabb7054fb2d099eacbaec59d25"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "09e88857e38addfd9639ceef86302359c2faccb1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284058,7 +284059,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301788"
+                                build_number: "301801"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291370,7 +291371,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301788", "301788"), 10);
+                let s = parseInt((n = "301801", "301801"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319553,4 +319554,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.957ebd0eb5464b5f361c.js.map
+//# sourceMappingURL=42458.153891f743bad5cfa6e1.js.map
