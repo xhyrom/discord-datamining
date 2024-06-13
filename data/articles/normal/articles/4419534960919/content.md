@@ -23,11 +23,12 @@
             <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PGRY8J6BGTDEW0W1RVM3J" target="_self"><span style="font-weight: 400;">Why isn't my PlayStation Network status displaying on Discord?</span></a></li>
         </ul>
     </li>
-    <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01GR8PGZRVYTZYEBFJS999PA86" target="_self"><span style="font-weight: 400;">How to Transfer your Discord voice chat to PS5</span></a><br>
+    <li>
+        <a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J049N7BER15B39GYQZN0GKE0">How to Join your Discord Voice Chat on your PS5</a>
         <ul>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PGZRVYTZYEBFJS999PA86" target="_self" rel="undefined">Voice Chat Transfer from the Discord Desktop/Browser Client</a></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PJCPTBEG9QQVWAAMDGQW5" target="_self" rel="undefined">Voice Chat Transfer from the Discord Mobile Client</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J049NE2A0N2GDWPWTGQM4T4M">On PS5 Console</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J049S60CM4HB11T9V1WK9PY0">On Discord mobile app</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J049S60CKGSQNEQY6XZMZP52">On Discord Desktop/Browser client</a></li>
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1"><a href="#h_01GR8PJV4MXFH1FAXQRETQXJ25" target="_self"><span style="font-weight: 400;">Frequently Asked Questions</span></a></li>
@@ -79,32 +80,32 @@
 <p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/4421459387671" alt="Discord_HC_PS4_5.jpg"></strong></p>
 <h4 id="h_01HGXPAQBE5AY0J139XJWKE7ES"><strong>PS4</strong></h4>
 <p><span style="font-weight: 400;">5. Go back to your Discord client and refresh to see if the issue persists.</span></p>
-<p><span class="wysiwyg-font-size-large"><strong>On PS5</strong></span></p>
-<p><span style="font-weight: 400;">1. Go to </span><strong>Settings.</strong></p>
-<p><span style="font-weight: 400;">2. In </span><strong>Settings</strong><span style="font-weight: 400;">, go to </span><strong>Users and Accounts.</strong></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12939989296791" alt="image17.jpg"></p>
-<h4 id="h_01HGXPAQBETT2QFZ8CN3QXP6D7"><strong>PS5</strong></h4>
-<p><span style="font-weight: 400;">3. Go to Privacy in the left-hand column, then choose View and Customize Your Privacy Settings.</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12940023534743" alt="image3.jpg"></p>
-<h4 id="h_01HGXPAQBE6QHYDXAFQESQYVHJ"><strong>PS5</strong></h4>
-<p><span style="font-weight: 400;">4. Under the "Who can see your online status and what you're currently playing" option, choose Anyone.</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12940015118743" alt="image16.jpg"></p>
-<h4 id="h_01HGXPAQBEFS5483QA42YJ844G"><strong>PS5</strong></h4>
-<p><span style="font-weight: 400;">5. Go back to your Discord client and refresh to see if the issue persists.</span></p>
-<h1 id="h_01GR8PGZRVYTZYEBFJS999PA86"><strong>How to Transfer Discord voice chat to PS5</strong></h1>
-<h3 id="h_01HGXPAQBETRB017082Z2CG5YS"><span style="font-weight: 400; font-size: 1.2em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">Transferring Discord voice chat is only available on the PS5. However, displaying your PlayStation Network status under your Discord account is available to all PS4 and PS5 users!<br>To transfer Discord voice chat to the PS5, please ensure your PS5 is updated to the latest system software!<br></span></h3>
-<p>1. Ensure that your Discord account is connected to your account for PlayStation Network by following the steps in the <strong><a href="#h_01GR8PBN8T469XJ2V0EV5G15P2" target="_self">How to Connect My PlayStation Network Account</a></strong> from Discord section above.</p>
-<p>2. Join the desired voice channel on your Discord desktop client. Then, in the focused voice channel view, press on <strong>Transfer to Console</strong>, which looks like a phone + game controller icon, in the bottom left corner.</p>
-<p>You may also right click on the voice channel name.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19585601193495" width="624" height="263"></p>
-<p class="wysiwyg-text-align-left">3. Select <strong>Transfer to PlayStation</strong>.</p>
-<p class="wysiwyg-text-align-left">4. The <strong>Transfer Voice to PlayStation</strong> pop-up will appear that will allow you to choose the PS5 console associated with your account for PlayStation Network connected to your Discord account. Select the intended console and press <strong>Transfer Voice</strong>.</p>
-<h2 id="h_01GR8PJCPTBEG9QQVWAAMDGQW5"><span style="font-weight: 400;">Voice Chat Transfer from the Discord Mobile Client</span></h2>
-<p>1. Ensure that your Discord account is connected to your account for PlayStation Network by following the steps in the <a href="#h_01GR8PBN8T469XJ2V0EV5G15P2" target="_self"><strong>How to Connect My PlayStation Network Account</strong> </a>from Discord section above.</p>
+<h1 id="h_01J049N7BER15B39GYQZN0GKE0"><span style="font-weight: 400;"><strong><span style="color: #bf9000;" data-darkreader-inline-color="">How to Join your Discord Voice Chat on your PS5</span></strong></span></h1>
+<h2 id="h_01J049NE2A0N2GDWPWTGQM4T4M"><span class="wysiwyg-font-size-large"><strong>On PS5 console</strong></span></h2>
+<h3 id="h_01J049P6V2C8RFFDGV59HY959A"><strong><span style="background-color: #b6d7a8;" data-darkreader-inline-bgcolor="">Joining Discord directly is only available on your PS5 console.</span></strong></h3>
+<p>1. First make sure you’ve already connected your PlayStation account to your Discord account. If you haven’t yet, you can do so by following <a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01GR8PBN8T469XJ2V0EV5G15P2">these</a> steps above.</p>
+<p>2. Navigate to the <strong>Game Base</strong> in the <strong>PS5 Control Center</strong>.</p>
+<p>3. Next, select the Discord tab.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24112287023511" width="490" height="539"></p>
+<p>4. Choose a voice channel in a server or group message to join. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24112279309463" width="474.50320512820514" height="521.338368199597"><span class="wysiwyg-font-size-large"><strong><br></strong></span></p>
+<p>5. After selecting the correct voice channel, tap on <strong>Join</strong> to join through your PS5.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24112279311767" width="402" height="499"></p>
+<h2 id="h_01J049S60CM4HB11T9V1WK9PY0"><span style="color: #0000ff;" data-darkreader-inline-color="">On Discord mobile app</span></h2>
+<p>1. Ensure that your Discord account is connected to your account for PlayStation Network by following the steps in the <strong>How to Connect My PlayStation Network Account from Discord</strong> section above. </p>
 <p>2. Open the Discord app on your mobile device, navigate to the intended voice channel, swipe up for audio control, and then choose <strong>Join on PlayStation</strong>.</p>
-<p class="wysiwyg-text-align-center"><img src="https://lh7-us.googleusercontent.com/nhBpSMWVl8khcCY7FQSfixJvMHAoV_jDMu6VsSvTW_VmZIhO5W_kZPQ4Lx1r2anmci4xJ9O9Rnir4HR6MGzYlJe3gMk2T4pl-1qdN_cIZH6JjFnwEp1H0g0t6k07XlUHu-VX5043apqvHx-2j5TLeu8" width="196" height="426"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24112279317015" width="196" height="426"></p>
 <p>3. Within the app, a pop-up will appear that will allow you to choose the PS5 console associated with your account for PlayStation Network connected to your Discord account. Select the intended console and press <strong>Transfer Voice</strong>.</p>
+<p> </p>
 <p>On your PS5, open up the console’s control center by pressing the <strong>PlayStation button</strong> on your controller and you’ll see the voice chat card with your transferred <strong>Discord voice chat</strong>. Selecting that card will show all your friends with you in the voice channel. You will also be able to manage your personal audio settings, see other peoples’ PSN accounts if they’re connected to their Discord accounts, and <strong>Report</strong> voice chat participants.</p>
+<h2 id="h_01J049S60CKGSQNEQY6XZMZP52"><span style="color: #0000ff;" data-darkreader-inline-color="">On Discord Desktop/Browser client</span></h2>
+<h3 id="h_01J08DETWTXH0WY78ZFQT4NXFP">Transferring Discord voice chat is only available on the PS5. However, displaying your PlayStation Network status under your Discord account is available to all PS4 and PS5 users!</h3>
+<h3 id="h_01J08DETWTSTGRPR2S58DJV119">To transfer Discord voice chat to the PS5, please ensure your PS5 is updated to the latest system software!</h3>
+<p>1. Ensure that your Discord account is connected to your account for PlayStation Network by following the steps in the<strong> How to Connect My PlayStation Network Account from Discord </strong>section above. </p>
+<p>2. Join the desired voice channel on your Discord desktop client. Then, in the focused voice channel view, press on <strong>Transfer to Console</strong>, which looks like a phone + game controller icon, in the bottom left corner. You may also right click on the voice channel name.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24112279326103" width="624" height="263"></p>
+<p>3. Select <strong>Transfer to PlayStation</strong>.</p>
+<p>4. The <strong>Transfer Voice to PlayStation </strong>pop-up will appear that will allow you to choose the PS5 console associated with your account for PlayStation Network connected to your Discord account. Select the intended console and press <strong>Transfer Voice</strong>.</p>
 <h1 id="h_01GR8PJV4MXFH1FAXQRETQXJ25"><strong>Frequently Asked Questions</strong></h1>
 <p><strong>Q: Is the Discord activity status feature available for child accounts on PlayStation Network? </strong></p>
 <p><span style="font-weight: 400;">A: No, this feature is not available for child accounts on PlayStation Network. For more information, please refer to <a href="https://www.playstation.com/en-us/support/subscriptions/link-psn-status-discord/"><span class="wysiwyg-underline">https://www.playstation.com/en-us/support/subscriptions/link-psn-status-discord/</span></a>. </span></p>
