@@ -40172,7 +40172,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301713", ", Version Hash: ").concat("d4e7a80ee014b0bd225a0c4f674a59f6f0339218")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("301723", ", Version Hash: ").concat("23a35b0069fb252b63869245af0debfb15a6809b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -45623,10 +45623,9 @@
                 READ_ONLY_CHANNEL: "Channel is read-only.",
                 CREATE_CHANNEL: "Create Channel",
                 CHANNEL_NAME_PLACEHOLDER: "new-channel",
-                DELETED_CHANNEL_PLACEHOLDER: "deleted-channel",
                 UNKNOWN_CHANNEL_PLACEHOLDER: "unknown-channel",
                 UNKNOWN_CHANNEL: "Unknown",
-                DELETED_ROLE_PLACEHOLDER: "deleted-role",
+                UNKNOWN_ROLE_PLACEHOLDER: "unknown-role",
                 UNKNOWN_USER_MENTION_PLACEHOLDER: "unknown-user",
                 CATEGORY_NAME_PLACEHOLDER: "New Category",
                 CREATE_CHANNEL_IN_CATEGORY: "Create Channel in !!{categoryName}!!",
@@ -50897,6 +50896,10 @@
                 APPLICATION_STORE_GENRE_PARTY_MINI_GAME: "Party/Mini-Game",
                 APPLICATION_STORE_GENRE_PINBALL: "Pinball",
                 APPLICATION_STORE_GENRE_TRIVIA_BOARD_GAME: "Trivia/Board Game",
+                APPLICATION_STORE_GENRE_TACTICAL: "Tactical",
+                APPLICATION_STORE_GENRE_INDIE: "Indie",
+                APPLICATION_STORE_GENRE_ARCADE: "Arcade",
+                APPLICATION_STORE_GENRE_POINT_AND_CLICK: "Point and Click",
                 APPLICATION_STORE_GENRE_MISCELLANEOUS: "Other",
                 APPLICATION_STORE_COUNTDOWN_SECONDS: "sec",
                 APPLICATION_STORE_COUNTDOWN_MINUTES: "min",
@@ -93509,8 +93512,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "301713", "301713"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301713")), t = 0), t
+                let t = parseInt((e = "301723", "301723"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("301723")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -100743,8 +100746,8 @@
                     id: t,
                     guildId: n
                 } = e, a = (0, r.useStateFromStores)([I.default], () => null != n ? I.default.getRole(n, t) : void 0), o = (0, r.useStateFromStores)([l.default], () => l.default.roleStyle);
-                if (null == a) return (0, i.jsx)("span", {
-                    children: "@deleted-role"
+                if (null == a) return (0, i.jsxs)("span", {
+                    children: ["@", p.default.Messages.UNKNOWN_ROLE_PLACEHOLDER]
                 });
                 let u = null != a.color && 0 !== a.color;
                 return (0, i.jsxs)(S.default, {
@@ -121732,8 +121735,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "301713",
-                    versionHash: "d4e7a80ee014b0bd225a0c4f674a59f6f0339218"
+                    buildNumber: "301723",
+                    versionHash: "23a35b0069fb252b63869245af0debfb15a6809b"
                 }
             }
             n.r(t), n.d(t, {
@@ -169620,7 +169623,7 @@
                                 a = null != s ? _.default.getRole(s.id, r) : null;
                             return null == a ? {
                                 type: "text",
-                                content: "@".concat(v.default.Messages.DELETED_ROLE_PLACEHOLDER)
+                                content: "@".concat(v.default.Messages.UNKNOWN_ROLE_PLACEHOLDER)
                             } : {
                                 type: "mention",
                                 channelId: n.channelId,
@@ -177973,8 +177976,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718304669393",
-                                    build_number: "301713"
+                                    built_at: "1718305252522",
+                                    build_number: "301723"
                                 }
                             },
                             retries: 1
@@ -255342,7 +255345,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d4e7a80ee014b0bd225a0c4f674a59f6f0339218"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "23a35b0069fb252b63869245af0debfb15a6809b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -283972,7 +283975,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "301713"
+                                build_number: "301723"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291284,7 +291287,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "301713", "301713"), 10);
+                let s = parseInt((n = "301723", "301723"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319467,4 +319470,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.fcd7aab543b6eb6cfc40.js.map
+//# sourceMappingURL=42458.dfa69d54443c733d3730.js.map
