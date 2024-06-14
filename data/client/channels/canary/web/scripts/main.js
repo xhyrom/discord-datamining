@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302308", ", Version Hash: ").concat("fa490ed6a47d86ed3ff55db97fc859d0993a56d4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302319", ", Version Hash: ").concat("259128f02d2d72701622a77715b4698dea84830c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58608,6 +58608,7 @@
                 QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
                 QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
                 QUESTS_PLAY_TASK: "Play {gameTitle} for {minutes} minutes",
+                QUESTS_IN_HOUSE_TITLE: "Console Gamers",
                 QUESTS_IN_HOUSE_TASK: "Connect a console and play any game for {minutes} minutes",
                 QUESTS_IN_HOUSE_TASK_WITH_LINK: "Play any game on a [connected console](onClick) for {minutes} minutes",
                 QUESTS_UNLOCK_REWARDS: "Unlock Rewards",
@@ -58719,7 +58720,7 @@
                 QUESTS_MEMBERS_LIST_GAME_TILE_ALT: "A game tile displaying {gameTitle}, published by {gamePublisher}.",
                 QUESTS_REWARD_AVATAR_DECORATION_HEADER: "Congratulations!",
                 QUESTS_REWARD_AVATAR_DECORATION_BODY: "{decorationName} is now yours FOR-EV-ERRRR! You can use it anytime on your profile page.",
-                QUESTS_REWARD_AVATAR_DECORATION_BODY_WITH_EXPIRATION: "{decorationName} is now yours for {duration}! You can use it anytime on your profile page.",
+                QUESTS_REWARD_AVATAR_DECORATION_BODY_WITH_EXPIRATION: "You just leveled up your avatar game with this {decorationName}. It’s yours to show off on your profile for the next {duration}!.",
                 QUESTS_REWARD_SPONSORED_BY: "Sponsored by {publisherName}",
                 QUESTS_VIEW_COLLECTIBLE: "View Deco",
                 QUEST_AVAILABLE: "Quest Available",
@@ -93737,8 +93738,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302308", "302308"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302308")), t = 0), t
+                let t = parseInt((e = "302319", "302319"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302319")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121993,8 +121994,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302308",
-                    versionHash: "fa490ed6a47d86ed3ff55db97fc859d0993a56d4"
+                    buildNumber: "302319",
+                    versionHash: "259128f02d2d72701622a77715b4698dea84830c"
                 }
             }
             n.r(t), n.d(t, {
@@ -178236,8 +178237,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718404808294",
-                                    build_number: "302308"
+                                    built_at: "1718405590019",
+                                    build_number: "302319"
                                 }
                             },
                             retries: 1
@@ -255618,7 +255619,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fa490ed6a47d86ed3ff55db97fc859d0993a56d4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "259128f02d2d72701622a77715b4698dea84830c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284284,7 +284285,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302308"
+                                build_number: "302319"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291596,7 +291597,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302308", "302308"), 10);
+                let s = parseInt((n = "302319", "302319"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319775,4 +319776,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.61e30c356cd56e25a39f.js.map
+//# sourceMappingURL=42458.b84aeb836ae0073f2616.js.map
