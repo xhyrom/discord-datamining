@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302131", ", Version Hash: ").concat("e759c9c3af9bab47cdbb480ff5202d84e5033f8d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302138", ", Version Hash: ").concat("a1d34dee52ee08b1e0a60cd467a078dc3fdb0024")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58851,6 +58851,7 @@
                 MEMBER_LIST_CONTENT_FEED_USER_LISTENING_TO_MEDIA_ARTIST: "{userName} is listening to **{media}** by **{artist}**",
                 MEMBER_LIST_CONTENT_FEED_STREAK_TOOLTIP: "Played {days} days in a row",
                 MEMBER_LIST_CONTENT_FEED_TRENDING: "Trending",
+                MEMBER_LIST_CONTENT_FEED_NEW_RELEASE: "New Release",
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} playing",
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} played",
                 MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} watching",
@@ -59524,10 +59525,26 @@
                 E2EE_VOICE_DETAILS: "Voice Details",
                 E2EE_CONNECTION: "Connection",
                 E2EE_PRIVACY: "Privacy",
-                E2EE_RTC_PANEL_CONNECTION: "End-to-end encryption",
+                E2EE_END_TO_END_ENCRYPTION: "End-to-end encryption",
                 E2EE_OVERVIEW_TITLE: "End-to-end encrypted",
                 E2EE_OVERVIEW_SUBTITLE: "Only you and your friends on this call can hear you. Nobody else – not even Wumpus – can listen in!",
-                E2EE_OVERVIEW_FOOTER_TEXT: "A new code is generated when people join or leave this call. [Learn more about end-to-end encryption.]({helpArticle})"
+                E2EE_OVERVIEW_FOOTER_TEXT: "A new code is generated when people join or leave this call. [Learn more about end-to-end encryption.]({helpArticle})",
+                E2EE_ENCRYPTION: "Encryption",
+                E2EE_SETTINGS_SUBTITLE: "All of your calls on Discord are end-to-end encrypted. That means nobody — not even Wumpus — can listen in on your conversations. You can verify your privacy by comparing verification codes with whoever you’re talking to. [Learn more about end-to-end encryption.]({helpArticle})",
+                E2EE_VERIFICATION_CODES: "Verification codes",
+                E2EE_ENABLE_PERSISTENT_CODES: "Enable persistent verification codes",
+                E2EE_PERSISTENT_CODES_DESCRIPTION: "Gives your devices persistent verification codes. If this setting is on, your friends only have to verify your devices once, instead of every time you enter a voice call. [Learn more about this setting.]({helpArticle})",
+                E2EE_VERIFIED_DEVICES: "Verified Devices",
+                E2EE_VERIFIED_DEVICES_DESCRIPTION: "These are the devices that you have verified. Whenever you're in a call with users on these devices, they will have the verified symbol next to their name. You can clear verification for one or all of a user's devices at any time. [Learn more about verified devices.]({helpArticle})",
+                E2EE_ANONYMOUS_DEVICE_TAG: "Device {index}",
+                E2EE_USER_VERIFIED_YEARS_AGO: "Verified {count} {count, plural, =1 {year} other {years}} ago",
+                E2EE_USER_VERIFIED_MONTHS_AGO: "Verified {count} {count, plural, =1 {month} other {months}} ago",
+                E2EE_USER_VERIFIED_WEEKS_AGO: "Verified {count} {count, plural, =1 {week} other {weeks}} ago",
+                E2EE_USER_VERIFIED_DAYS_AGO: "Verified {count} {count, plural, =1 {day} other {days}} ago",
+                E2EE_USER_VERIFIED_HOURS_AGO: "Verified {count} {count, plural, =1 {hour} other {hours}} ago",
+                E2EE_USER_VERIFIED_MINUTES_AGO: "Verified {count} {count, plural, =1 {minute} other {minutes}} ago",
+                E2EE_USER_VERIFIED_SECONDS_AGO: "Verified {count} {count, plural, =1 {second} other {seconds}} ago",
+                E2EE_DEVICES_COUNT: "{count} {count, plural, =1 {device} other {devices}}"
             })
         },
         539590: function(e) {
@@ -93711,8 +93728,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302131", "302131"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302131")), t = 0), t
+                let t = parseInt((e = "302138", "302138"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302138")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -120218,46 +120235,45 @@
                 P = n("947519"),
                 U = n("243778"),
                 b = n("813744"),
-                G = n("904085"),
-                w = n("892254"),
-                k = n("210887"),
-                B = n("819640"),
-                x = n("594174"),
-                V = n("451478"),
-                F = n("672752"),
-                H = n("812663"),
-                Y = n("153850"),
-                j = n("725568"),
-                W = n("78415"),
-                K = n("806519"),
-                z = n("358085"),
-                Z = n("74538"),
-                Q = n("663993"),
-                X = n("823453"),
-                q = n("628123"),
-                J = n("962745"),
-                $ = n("151851"),
-                ee = n("981631"),
-                et = n("921944"),
-                en = n("776954");
+                G = n("892254"),
+                w = n("210887"),
+                k = n("819640"),
+                B = n("594174"),
+                x = n("451478"),
+                V = n("672752"),
+                F = n("812663"),
+                H = n("153850"),
+                Y = n("725568"),
+                j = n("78415"),
+                W = n("806519"),
+                K = n("358085"),
+                z = n("74538"),
+                Z = n("663993"),
+                Q = n("823453"),
+                X = n("628123"),
+                q = n("962745"),
+                J = n("151851"),
+                $ = n("981631"),
+                ee = n("921944"),
+                et = n("776954");
             n("792295"), Promise.resolve().then(n.bind(n, "62883")).then(e => {
-                z.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, !1) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, !1)
+                K.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, !1) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, !1)
             }), (0, E.setDesignConfig)({
                 getDefaultLinkInterceptor: A.default
-            }), (0, Q.makeLazy)({
+            }), (0, Z.makeLazy)({
                 createPromise: () => Promise.all([n.e("99387"), n.e("40326"), n.e("80451"), n.e("30634"), n.e("54343")]).then(n.bind(n, "849493")),
                 webpackId: "849493"
-            }), (0, Q.makeLazy)({
+            }), (0, Z.makeLazy)({
                 createPromise: () => Promise.all([n.e("40326"), n.e("80451"), n.e("30634"), n.e("81811")]).then(n.bind(n, "80753")),
                 webpackId: "80753"
             });
-            let ei = (0, Q.makeLazy)({
+            let en = (0, Z.makeLazy)({
                     createPromise: () => Promise.all([n.e("99387"), n.e("46369")]).then(n.bind(n, "177741")),
                     webpackId: "177741"
                 }),
-                er = r.memo(function(e) {
-                    let t = (0, _.useStateFromStores)([V.default], () => V.default.isFocused());
-                    return (0, i.jsx)($.default, {
+                ei = r.memo(function(e) {
+                    let t = (0, _.useStateFromStores)([x.default], () => x.default.isFocused());
+                    return (0, i.jsx)(J.default, {
                         ...e,
                         focused: t
                     })
@@ -120268,52 +120284,46 @@
                     skipsSettingDefaultPageTitle: n
                 } = e, {
                     pathname: s
-                } = (0, u.useLocation)(), E = (0, z.getPlatform)(), A = d.isMobile || d.isTablet, V = (0, _.useStateFromStores)([k.default], () => k.default.darkSidebar ? ee.ThemeTypes.DARK : void 0), Q = (0, _.useStateFromStores)([N.default], () => N.default.useForcedColors ? "yes" : "no"), [$, es] = (0, _.useStateFromStoresArray)([D.default], () => [D.default.isEditorOpen, D.default.isCoachmark]), ea = (0, _.useStateFromStores)([R.default], () => R.default.isEditorOpen), {
-                    enabled: eo
-                } = G.default.useExperiment({
-                    location: "client_themes_coachmark_reintro"
-                }, {
-                    autoTrackExposure: !0
-                }), el = (0, _.useStateFromStores)([B.default], () => B.default.getLayers().includes(ee.Layers.USER_SETTINGS)), eu = (0, _.useStateFromStores)([x.default], () => Z.default.canUseClientThemes(x.default.getCurrentUser())), ed = $ && !el, e_ = [];
-                ed && es && eo && !eu && e_.push(c.DismissibleContent.CLIENT_THEMES_COACHMARK);
-                let [ec, eE] = (0, U.useSelectedDismissibleContent)(e_, et.DismissibleContentGroupName.SIDEBAR, !0);
-                e_.push(c.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
-                let eI = ec === c.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
-                    eT = ec === c.DismissibleContent.CLIENT_THEMES_COACHMARK;
+                } = (0, u.useLocation)(), E = (0, K.getPlatform)(), A = d.isMobile || d.isTablet, x = (0, _.useStateFromStores)([w.default], () => w.default.darkSidebar ? $.ThemeTypes.DARK : void 0), Z = (0, _.useStateFromStores)([N.default], () => N.default.useForcedColors ? "yes" : "no"), [J, er] = (0, _.useStateFromStoresArray)([D.default], () => [D.default.isEditorOpen, D.default.isCoachmark]), es = (0, _.useStateFromStores)([R.default], () => R.default.isEditorOpen), ea = (0, _.useStateFromStores)([k.default], () => k.default.getLayers().includes($.Layers.USER_SETTINGS)), eo = (0, _.useStateFromStores)([B.default], () => z.default.canUseClientThemes(B.default.getCurrentUser())), el = J && !ea, eu = [];
+                el && er && !eo && eu.push(c.DismissibleContent.CLIENT_THEMES_COACHMARK);
+                let [ed, e_] = (0, U.useSelectedDismissibleContent)(eu, ee.DismissibleContentGroupName.SIDEBAR, !0);
+                eu.push(c.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
+                let ec = ed === c.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
+                    eE = ed === c.DismissibleContent.CLIENT_THEMES_COACHMARK;
                 r.useEffect(() => {
                     null == (0, l.matchPath)(s, {
                         path: "invite",
                         exact: !1,
                         strict: !1
-                    }) && eI && !eT && (T.default.dispatch({
+                    }) && ec && !eE && (T.default.dispatch({
                         type: "APP_ICON_EDITOR_OPEN"
                     }), T.default.dispatch({
                         type: "APP_ICON_TRACK_IMPRESSION",
-                        markAsDismissed: eE
+                        markAsDismissed: e_
                     }))
-                }, [eI, eT, eE, s]);
-                let ef = r.useRef(document.body);
-                return (0, i.jsx)(w.default, {
+                }, [ec, eE, e_, s]);
+                let eI = r.useRef(document.body);
+                return (0, i.jsx)(G.default, {
                     children: (0, i.jsx)(p.default, {
                         children: (0, i.jsxs)(I.RedesignIconContextProvider, {
-                            children: [(0, i.jsx)(X.default, {
+                            children: [(0, i.jsx)(Q.default, {
                                 skipsSettingDefaultPageTitle: n
-                            }), (0, i.jsx)(J.default, {
-                                children: (0, i.jsx)(q.default, {
+                            }), (0, i.jsx)(q.default, {
+                                children: (0, i.jsx)(X.default, {
                                     children: (0, i.jsxs)(I.FocusRingScope, {
-                                        containerRef: ef,
-                                        children: [(0, i.jsx)(K.MaskLibrary, {}), (0, i.jsx)(F.default, {}), (0, i.jsx)(o.FocusGuard, {}), null != E ? (0, i.jsx)(er, {
+                                        containerRef: eI,
+                                        children: [(0, i.jsx)(W.MaskLibrary, {}), (0, i.jsx)(V.default, {}), (0, i.jsx)(o.FocusGuard, {}), null != E ? (0, i.jsx)(ei, {
                                             type: E,
-                                            themeOverride: V
+                                            themeOverride: x
                                         }) : null, (0, i.jsx)(m.AppWindowContextProvider, {
-                                            appContext: ee.AppContext.APP,
+                                            appContext: $.AppContext.APP,
                                             renderWindow: window,
-                                            children: (0, i.jsxs)(Y.AppLayerProvider, {
+                                            children: (0, i.jsxs)(H.AppLayerProvider, {
                                                 children: [(0, i.jsxs)("div", {
-                                                    className: a()(en.appAsidePanelWrapper, A && en.mobileAppAsidePanelWrapper, {
-                                                        [en.allowsScrolling]: (() => {
+                                                    className: a()(et.appAsidePanelWrapper, A && et.mobileAppAsidePanelWrapper, {
+                                                        [et.allowsScrolling]: (() => {
                                                             let e = (0, l.matchPath)(s, {
-                                                                path: ee.Routes.APPLICATION_DIRECTORY,
+                                                                path: $.Routes.APPLICATION_DIRECTORY,
                                                                 exact: !1,
                                                                 strict: !1
                                                             });
@@ -120321,24 +120331,24 @@
                                                         })()
                                                     }),
                                                     children: [(0, i.jsx)("div", {
-                                                        className: en.notAppAsidePanel,
+                                                        className: et.notAppAsidePanel,
                                                         "data-app-not-dev-tools": !0,
                                                         children: (0, i.jsx)(y.CommonConfettiCannonContextProvider, {
-                                                            children: (0, i.jsx)(W.VerificationLayerProvider, {
-                                                                children: (0, i.jsxs)(H.default.Provider, {
+                                                            children: (0, i.jsx)(j.VerificationLayerProvider, {
+                                                                children: (0, i.jsxs)(F.default.Provider, {
                                                                     value: O.default,
                                                                     children: [(0, i.jsx)("div", {
-                                                                        className: a()(A ? en.mobileApp : en.app),
+                                                                        className: a()(A ? et.mobileApp : et.app),
                                                                         children: t
-                                                                    }), (0, i.jsx)(L.default, {}), (0, i.jsx)(S.default, {}), (0, i.jsx)(I.Modals, {}), (0, i.jsx)(h.default, {}), (0, i.jsx)(j.FullScreenLayers, {}), (0, i.jsx)(Y.AppLayerContainer, {}), (0, i.jsx)(W.VerificationLayerContainer, {}), (0, i.jsx)(I.ToastContainer, {}), (0, i.jsx)(C.default, {}), (0, i.jsx)(b.default, {}), (0, i.jsx)(ei, {})]
+                                                                    }), (0, i.jsx)(L.default, {}), (0, i.jsx)(S.default, {}), (0, i.jsx)(I.Modals, {}), (0, i.jsx)(h.default, {}), (0, i.jsx)(Y.FullScreenLayers, {}), (0, i.jsx)(H.AppLayerContainer, {}), (0, i.jsx)(j.VerificationLayerContainer, {}), (0, i.jsx)(I.ToastContainer, {}), (0, i.jsx)(C.default, {}), (0, i.jsx)(b.default, {}), (0, i.jsx)(en, {})]
                                                                 })
                                                             })
                                                         })
-                                                    }), (0, i.jsx)(v.default, {}), (0, i.jsx)(f.default, {}), ed && !es || eT ? (0, i.jsx)(M.default, {
-                                                        markAsDismissed: eE
-                                                    }) : null, !ea || el || eT ? null : (0, i.jsx)(g.default, {
-                                                        isCoachmark: eI,
-                                                        markAsDismissed: eE
+                                                    }), (0, i.jsx)(v.default, {}), (0, i.jsx)(f.default, {}), el && !er || eE ? (0, i.jsx)(M.default, {
+                                                        markAsDismissed: e_
+                                                    }) : null, !es || ea || eE ? null : (0, i.jsx)(g.default, {
+                                                        isCoachmark: ec,
+                                                        markAsDismissed: e_
                                                     }), (0, i.jsx)(P.default, {
                                                         mobile: A
                                                     })]
@@ -120350,7 +120360,7 @@
                             })]
                         })
                     })
-                }, Q)
+                }, Z)
             }
         },
         628123: function(e, t, n) {
@@ -121974,8 +121984,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302131",
-                    versionHash: "e759c9c3af9bab47cdbb480ff5202d84e5033f8d"
+                    buildNumber: "302138",
+                    versionHash: "a1d34dee52ee08b1e0a60cd467a078dc3fdb0024"
                 }
             }
             n.r(t), n.d(t, {
@@ -122509,7 +122519,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46453"), n.e("61414"), n.e("87624"), n.e("10247"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("91354"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46453"), n.e("61414"), n.e("87624"), n.e("10021"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("12434"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -178285,8 +178295,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718388911244",
-                                    build_number: "302131"
+                                    built_at: "1718389633089",
+                                    build_number: "302138"
                                 }
                             },
                             retries: 1
@@ -187574,26 +187584,6 @@
                 }, {
                     id: 2,
                     label: "users receive a 3 month discount offer when churning",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-            t.default = i
-        },
-        904085: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            let i = (0, n("818083").createExperiment)({
-                kind: "user",
-                id: "2023-09_client_theme_coachmark_reintro",
-                label: "Experiment to reintroduce the client themes experiment",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "enable the coachmark",
                     config: {
                         enabled: !0
                     }
@@ -255707,7 +255697,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e759c9c3af9bab47cdbb480ff5202d84e5033f8d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a1d34dee52ee08b1e0a60cd467a078dc3fdb0024"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -262948,7 +262938,7 @@
                                             (0, E.openModalLazy)(async () => {
                                                 let {
                                                     default: e
-                                                } = await Promise.all([n.e("99387"), n.e("10247"), n.e("62038"), n.e("7613"), n.e("86754")]).then(n.bind(n, "644941"));
+                                                } = await Promise.all([n.e("99387"), n.e("10021"), n.e("62038"), n.e("7613"), n.e("86754")]).then(n.bind(n, "644941"));
                                                 return t => {
                                                     var n;
                                                     return (0, a.jsx)(e, {
@@ -284373,7 +284363,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302131"
+                                build_number: "302138"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291685,7 +291675,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302131", "302131"), 10);
+                let s = parseInt((n = "302138", "302138"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319868,4 +319858,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.e33cbb3986a20b05df68.js.map
+//# sourceMappingURL=42458.247374fcc28f3e6fae8f.js.map
