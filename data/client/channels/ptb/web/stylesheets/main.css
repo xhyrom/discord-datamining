@@ -71273,9 +71273,6 @@ html .invoiceCancelRow_aa7946 {
     height: 100%;
     left: 0;
     padding: 8px 12px;
-    align-items: center;
-    justify-items: center;
-    place-items: center;
     position: absolute;
     width: 100%;
     z-index: 2
@@ -71288,7 +71285,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .contentCollapsedAccepted__3a865 {
-    padding: 0 12px
+    padding: 12px
 }
 
 .contentCollapsedExpanded__6173a {
@@ -141451,4 +141448,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3c80b07ec0d0d988a5bd.css.map*/
+/*# sourceMappingURL=99387.64545859463d4e99b02e.css.map*/
