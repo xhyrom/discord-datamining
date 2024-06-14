@@ -28340,10 +28340,9 @@ img.thumbnail__18ece {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
+    padding: 16px;
     position: relative;
-    z-index: 2;
-    border-bottom: 1px solid var(--border-subtle)
+    z-index: 2
 }
 
 .preferences__16c1a {
@@ -28370,21 +28369,36 @@ img.thumbnail__18ece {
     height: 32px;
     min-height: 32px;
     min-width: 0;
-    border: var(--border-subtle)1px solid;
+    border: 1px solid var(--border-faint);
     box-sizing: border-box;
-    transition: transform.1s ease-in-out
+    transition: transform.1s ease-in-out, color 64ms ease-in-out, border-color 64ms ease-in-out;
+    color: var(--text-normal)
 }
 
 .filterPill__53234:hover,
+.buttonPill__8d5fb:hover {
+    color: var(--interactive-hover);
+    border-color: var(--interactive-hover)
+}
+
 .filterPill__53234:active,
-.buttonPill__8d5fb:hover,
 .buttonPill__8d5fb:active {
-    border-color: var(--border-strong)
+    color: var(--interactive-active);
+    border-color: var(--interactive-active)
 }
 
 .filterPill__53234:active,
 .buttonPill__8d5fb:active {
     transform: translatey(2px)scale(.98)
+}
+
+.theme-dark .filterPill__53234 {
+    background-color: hsl(var(--primary-800-hsl)/.8)
+}
+
+.theme-light .filterPill__53234 {
+    border: 1px solid var(--border-strong);
+    background-color: hsl(var(--white-500-hsl)/.8)
 }
 
 .buttonPill__8d5fb {
@@ -28488,7 +28502,7 @@ img.thumbnail__18ece {
 }
 
 .theme-dark .filterPill__53234 {
-    background-color: transparent
+    background-color: hsl(var(--primary-800-hsl)/.4)
 }
 
 .theme-dark .buttonPill__8d5fb {
@@ -28500,7 +28514,7 @@ img.thumbnail__18ece {
 }
 
 .theme-light .filterPill__53234 {
-    background-color: transparent
+    background-color: hsl(var(--white-500-hsl)/.4)
 }
 
 .theme-light .buttonPill__8d5fb,
@@ -30053,15 +30067,6 @@ img.thumbnail__18ece {
     margin-top: 12px
 }
 
-.buttonWrapper_f57f6c {
-    box-shadow: var(--shadow-high)
-}
-
-.button_cbc314 {
-    min-width: 240px;
-    border-radius: 8px
-}
-
 @value baseClanCardWidth 240px;
 @value baseClanCardHeight 400px;
 @value baseClanCardBorderWidth 1px;
@@ -30070,11 +30075,10 @@ img.thumbnail__18ece {
 @value outerClanScale 0.68;
 
 .upsellContainer_aae5af {
-    padding-top: 40px;
+    padding: 80px 49px;
+    padding-top: 64px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
+    flex-direction: column
 }
 
 .cardsContainer__43887 {
@@ -30145,19 +30149,22 @@ img.thumbnail__18ece {
 .upsellDetails_fe7ec8 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    max-width: 480px
+}
+
+.customizeButton__48348 {
+    display: flex;
     align-items: center;
-    text-align: center;
-    max-width: 480px;
-    margin-top: 40px;
-    margin-bottom: 40px
+    gap: 4px
 }
 
 .upsellTitle__25132 {
-    margin-bottom: 16px
+    margin-bottom: 4px
 }
 
 .upsellSubtitle__06626 {
-    margin-bottom: 40px
+    margin-bottom: 32px
 }
 
 .backgroundContainer__412ee {
@@ -30222,7 +30229,7 @@ img.thumbnail__18ece {
     height: auto;
     position: absolute;
     z-index: 0;
-    top: -60px;
+    top: -64px;
     bottom: auto;
     left: 0;
     right: 0
@@ -30280,14 +30287,61 @@ img.thumbnail__18ece {
     background: radial-gradient(at top center, rgba(245, 191, 196, .8)0%, rgba(252, 238, 196, .8)50%, #fff 100%)
 }
 
+.glassBackground__11035,
+.glassBackgroundTop__487b7 {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px)
+}
+
+.theme-dark .glassBackground__11035,
+.theme-dark .glassBackgroundTop__487b7 {
+    background-color: var(--primary-800)
+}
+
+.theme-light .glassBackground__11035,
+.theme-light .glassBackgroundTop__487b7 {
+    background-color: var(--white-500)
+}
+
 @value backgroundImageElevation 5;
 @value backgroundImageBlurElevation 10;
 @value contentElevation 15;
+@value toolbarElevation 20;
 
 .container_c12432 {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    position: relative
+}
+
+.upsellContainer_a6c100 {
+    display: flex;
+    flex-direction: column;
     height: 100%
+}
+
+.toolbar__886e1 {
+    position: fixed;
+    top: 0;
+    z-index: 20
+}
+
+.toolbarBackground__9841b {
+    height: 64px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 0;
+    z-index: -1
+}
+
+.theme-dark .toolbarBackground__9841b {
+    background-color: hsl(var(--primary-800-hsl)/.85)
+}
+
+.theme-light .toolbarBackground__9841b {
+    background-color: hsl(var(--white-500-hsl)/.85)
 }
 
 .adminUpsell_a0161a {
@@ -30305,10 +30359,11 @@ img.thumbnail__18ece {
 }
 
 .userUpsell__2b410 {
+    flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1
+    flex-direction: column;
+    height: 100%;
+    align-items: normal
 }
 
 .userOnboarding__753ed {
@@ -30332,8 +30387,21 @@ img.thumbnail__18ece {
     z-index: 5
 }
 
+.backgroundImageContainer__7e3ad {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 364px;
+    z-index: 5
+}
+
 .backgroundImageBlur__8990e {
     position: absolute;
+    display: flex;
     top: 0;
     left: 0;
     right: 0;
@@ -30345,12 +30413,28 @@ img.thumbnail__18ece {
     z-index: 10
 }
 
+.theme-dark .backgroundImageBlur__8990e {
+    background: rgba(17, 18, 20, .5)
+}
+
+.theme-light .backgroundImageBlur__8990e {
+    background: hsl(var(--white-500-hsl)/.8)
+}
+
 .genshinUpsellBackgroundImageDark_edee17 {
-    background-image: linear-gradient(180deg, rgba(17, 18, 20, .5)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
+    background-image: url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
 }
 
 .valorantUpsellBackgroundImageDark__8d00e {
-    background-image: linear-gradient(180deg, rgba(17, 18, 20, .5)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
+    background-image: url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
+}
+
+.genshinUpsellBackgroundImageLight_c46b96 {
+    background-image: url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
+}
+
+.valorantUpsellBackgroundImageLight__5ce9b {
+    background-image: url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
 .genshinOnboardingBackgroundImageDark_dd41e7 {
@@ -30359,14 +30443,6 @@ img.thumbnail__18ece {
 
 .valorantOnboardingBackgroundImageDark__69c90 {
     background-image: linear-gradient(180deg, var(--bg-backdrop)0%, var(--black-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
-}
-
-.genshinUpsellBackgroundImageLight_c46b96 {
-    background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.5)0%, var(--white-500)64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
-}
-
-.valorantUpsellBackgroundImageLight__5ce9b {
-    background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.5)0%, var(--white-500)64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
 .genshinOnboardingBackgroundImageLight_f794f5 {
@@ -127530,7 +127606,14 @@ div:has(>div>.container__8ab05) {
     box-shadow: 0 0 0 2px var(--brand-500)
 }
 
+.section__43116 {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
 .list_a2972d {
+    flex: 1;
     width: 298px;
     padding-bottom: 4px;
     margin-top: 2px;
@@ -141539,4 +141622,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.84513fec2e7a2b76f8a0.css.map*/
+/*# sourceMappingURL=99387.7410112b9413b604ee18.css.map*/

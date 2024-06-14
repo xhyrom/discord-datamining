@@ -7686,12 +7686,16 @@
                 adminUpsell: "adminUpsell_a0161a",
                 backgroundImage: "backgroundImage__778b2",
                 backgroundImageBlur: "backgroundImageBlur__8990e",
+                backgroundImageContainer: "backgroundImageContainer__7e3ad",
                 backgroundImageContent: "backgroundImageContent__3a238",
                 container: "container_c12432",
                 genshinOnboardingBackgroundImageDark: "genshinOnboardingBackgroundImageDark_dd41e7 backgroundImage__778b2",
                 genshinOnboardingBackgroundImageLight: "genshinOnboardingBackgroundImageLight_f794f5 backgroundImage__778b2",
                 genshinUpsellBackgroundImageDark: "genshinUpsellBackgroundImageDark_edee17 backgroundImage__778b2",
                 genshinUpsellBackgroundImageLight: "genshinUpsellBackgroundImageLight_c46b96 backgroundImage__778b2",
+                toolbar: "toolbar__886e1",
+                toolbarBackground: "toolbarBackground__9841b",
+                upsellContainer: "upsellContainer_a6c100",
                 upsellScroller: "upsellScroller__0225a",
                 userOnboarding: "userOnboarding__753ed",
                 userUpsell: "userUpsell__2b410",
@@ -7699,13 +7703,6 @@
                 valorantOnboardingBackgroundImageLight: "valorantOnboardingBackgroundImageLight__855b1 backgroundImage__778b2",
                 valorantUpsellBackgroundImageDark: "valorantUpsellBackgroundImageDark__8d00e backgroundImage__778b2",
                 valorantUpsellBackgroundImageLight: "valorantUpsellBackgroundImageLight__5ce9b backgroundImage__778b2"
-            }
-        },
-        108913: function(e) {
-            "use strict";
-            e.exports = {
-                button: "button_cbc314",
-                buttonWrapper: "buttonWrapper_f57f6c"
             }
         },
         297344: function(e) {
@@ -7736,6 +7733,7 @@
                 clanCardOuterContainer: "clanCardOuterContainer__05636",
                 clanCardOuterLeft: "clanCardOuterLeft_a7787d clanCardOuter__79a32 clanCard__50538",
                 clanCardOuterRight: "clanCardOuterRight__19d1a clanCardOuter__79a32 clanCard__50538",
+                customizeButton: "customizeButton__48348",
                 ring: "ring__07750",
                 ringInner: "ringInner__1b7bc ring__07750",
                 ringMiddle: "ringMiddle__02bf7 ring__07750",
@@ -7751,6 +7749,8 @@
             "use strict";
             e.exports = {
                 card: "card_e4e263",
+                glassBackground: "glassBackground__11035",
+                glassBackgroundTop: "glassBackgroundTop__487b7",
                 masonryList: "masonryList__7a8d2",
                 masonryListContainer: "masonryListContainer__755e5",
                 masonryListGradient: "masonryListGradient__25591",
@@ -22674,6 +22674,7 @@
                 notAllowedIcon: "notAllowedIcon_e48f6e icon__31096",
                 presetEffectBackground: "presetEffectBackground__87eb6",
                 presetEffectImg: "presetEffectImg_e57dd7",
+                section: "section__43116",
                 selected: "selected__52c38",
                 shopIcon: "shopIcon__0af17 icon__31096",
                 tooltip: "tooltip_e767f1",
