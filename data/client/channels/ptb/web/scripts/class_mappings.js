@@ -3702,6 +3702,7 @@
                 modal: "modal_af101e",
                 modalCloseBtn: "modalCloseBtn_e2b38c",
                 modalHeader: "modalHeader__4be2e",
+                modalHeaderLinks: "modalHeaderLinks__5ee41",
                 modalTitle: "modalTitle__2413c"
             }
         },
@@ -3711,6 +3712,8 @@
                 appIcon: "appIcon__9aba1",
                 backButton: "backButton__91606",
                 footer: "footer__27b15",
+                footerButtons: "footerButtons__1e01a",
+                linkButton: "linkButton__2954d",
                 modal: "modal__36664"
             }
         },

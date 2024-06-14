@@ -6916,6 +6916,11 @@ html .progress__00e29 {
     gap: 8px
 }
 
+.modalHeaderLinks__5ee41 {
+    display: flex;
+    gap: 12px
+}
+
 .containerScrollGradient__1e7d9 {
     background: linear-gradient(0deg, var(--background-primary)0%, rgba(0, 0, 0, 0)100%);
     bottom: 0;
@@ -6950,6 +6955,18 @@ html .progress__00e29 {
     padding: 16px;
     position: relative;
     flex-direction: row
+}
+
+.footerButtons__1e01a {
+    display: flex;
+    gap: 10px
+}
+
+.linkButton__2954d {
+    background-color: var(--button-secondary-background);
+    width: 38px;
+    box-sizing: border-box;
+    color: var(--white)
 }
 
 .backButton__91606 {
@@ -141605,4 +141622,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f9c60b1f970c99fd38cc.css.map*/
+/*# sourceMappingURL=99387.b73b7ab63e6375a3bcd9.css.map*/
