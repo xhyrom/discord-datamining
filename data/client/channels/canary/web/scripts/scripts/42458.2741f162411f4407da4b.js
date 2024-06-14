@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302327", ", Version Hash: ").concat("9eee8a0bb65d56d06e0204f38721fe0605d11cca")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302333", ", Version Hash: ").concat("9f5d45da1742efaa96e9aca34e4b8004565d10d6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -78014,6 +78014,44 @@
                 })
             })
         },
+        753972: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            });
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("120356"),
+                a = n.n(s),
+                o = n("768581"),
+                l = n("689938"),
+                u = n("377197");
+
+            function d(e) {
+                let {
+                    application: t,
+                    src: n,
+                    className: s,
+                    size: d,
+                    botIconFirst: _,
+                    fallbackAvatar: c
+                } = e, E = r.useMemo(() => null != t ? o.default.getApplicationIconURL({
+                    id: t.id,
+                    icon: t.icon,
+                    bot: t.bot,
+                    size: d,
+                    botIconFirst: _,
+                    fallbackAvatar: c
+                }) : n, [t, n, d, _, c]);
+                return null == E ? null : (0, i.jsx)("img", {
+                    className: a()(u.icon, s),
+                    alt: l.default.Messages.IMAGE,
+                    src: E
+                })
+            }
+        },
         772606: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -78044,38 +78082,6 @@
                         width: 18,
                         height: 18
                     })
-                })
-            }
-        },
-        377658: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return a
-                }
-            });
-            var i = n("735250"),
-                r = n("768581"),
-                s = n("689938");
-
-            function a(e) {
-                let {
-                    application: t,
-                    className: n,
-                    width: a,
-                    height: o
-                } = e, l = r.default.getApplicationIconURL({
-                    id: t.id,
-                    icon: t.icon,
-                    bot: t.bot,
-                    size: a
-                });
-                return null == l ? null : (0, i.jsx)("img", {
-                    className: n,
-                    alt: s.default.Messages.IMAGE,
-                    src: l,
-                    width: a,
-                    height: o
                 })
             }
         },
@@ -78414,7 +78420,7 @@
                 a = n("361213"),
                 o = n("778569"),
                 l = n("783097"),
-                u = n("377658"),
+                u = n("753972"),
                 d = n("387658"),
                 _ = n("536650"),
                 c = n("675993"),
@@ -78437,9 +78443,7 @@
                     }), (0, i.jsx)("div", {
                         children: (0, i.jsx)(u.default, {
                             application: n,
-                            className: E.activityIcon,
-                            width: 80,
-                            height: 80
+                            className: E.activityIcon
                         })
                     }), (0, i.jsx)(r.Spacer, {
                         size: 54
@@ -78645,10 +78649,10 @@
                 _ = n("182906"),
                 c = n("220082"),
                 E = n("318661"),
-                I = n("806519"),
-                T = n("768581"),
-                f = n("792125"),
-                S = n("783097"),
+                I = n("768581"),
+                T = n("792125"),
+                f = n("783097"),
+                S = n("753972"),
                 h = n("231338"),
                 A = n("689938"),
                 m = n("573214");
@@ -78659,7 +78663,7 @@
                     look: n = "large_banner",
                     isPartner: i,
                     onClick: r
-                } = e, o = a.useMemo(() => T.default.getApplicationIconURL({
+                } = e, o = a.useMemo(() => I.default.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon,
                     bot: t.bot,
@@ -78679,7 +78683,7 @@
                         }), i && (0, s.jsx)("div", {
                             className: m.partnerLabelWrapper,
                             children: (0, s.jsx)(u.Text, {
-                                className: (0, f.getThemeClass)(h.ThemeTypes.DARK),
+                                className: (0, T.getThemeClass)(h.ThemeTypes.DARK),
                                 variant: "text-sm/medium",
                                 color: "text-normal",
                                 children: A.default.Messages.APP_DIRECTORY_PARTNER
@@ -78687,15 +78691,10 @@
                         })]
                     }), (0, s.jsxs)("div", {
                         className: m.appDetailsContainer,
-                        children: [null != o && (0, s.jsx)(I.default, {
-                            mask: I.default.Masks.SQUIRCLE,
-                            className: m.iconContainer,
-                            children: (0, s.jsx)("img", {
-                                src: o,
-                                alt: "",
-                                className: m.icon,
-                                "aria-hidden": !0
-                            })
+                        children: [null != o && (0, s.jsx)(S.default, {
+                            src: o,
+                            className: m.icon,
+                            "aria-hidden": !0
                         }), (0, s.jsxs)("div", {
                             className: m.appDetails,
                             children: [(0, s.jsx)(u.Heading, {
@@ -78719,7 +78718,7 @@
                     application: t,
                     fallbackColor: n
                 } = e;
-                return (0, S.isEmbeddedApp)({
+                return (0, f.isEmbeddedApp)({
                     application: t
                 }) ? (0, s.jsx)(O, {
                     application: t
@@ -93736,8 +93735,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302327", "302327"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302327")), t = 0), t
+                let t = parseInt((e = "302333", "302333"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302333")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121992,8 +121991,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302327",
-                    versionHash: "9eee8a0bb65d56d06e0204f38721fe0605d11cca"
+                    buildNumber: "302333",
+                    versionHash: "9f5d45da1742efaa96e9aca34e4b8004565d10d6"
                 }
             }
             n.r(t), n.d(t, {
@@ -178235,8 +178234,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718406856498",
-                                    build_number: "302327"
+                                    built_at: "1718407504750",
+                                    build_number: "302333"
                                 }
                             },
                             retries: 1
@@ -255398,7 +255397,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9eee8a0bb65d56d06e0204f38721fe0605d11cca"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9f5d45da1742efaa96e9aca34e4b8004565d10d6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284064,7 +284063,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302327"
+                                build_number: "302333"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291376,7 +291375,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302327", "302327"), 10);
+                let s = parseInt((n = "302333", "302333"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319555,4 +319554,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.9207df33e0b048eff0b7.js.map
+//# sourceMappingURL=42458.2741f162411f4407da4b.js.map
