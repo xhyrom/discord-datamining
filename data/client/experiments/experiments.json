@@ -10917,7 +10917,8 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "canReceiveMessage"
+        "canReceiveMessage",
+        "canReceiveUnpublishedMessages"
       ]
     }
   },
