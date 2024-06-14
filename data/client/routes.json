@@ -4903,7 +4903,7 @@
     ]
   },
   "MY_CONTENT_INVENTORY": {
-    "url": "/content-inventory/users/@me",
+    "url": "/content-inventory/users/@me?refresh_token=:param",
     "allowed_methods": [
       "GET",
       "HEAD",
