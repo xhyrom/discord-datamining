@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302172", ", Version Hash: ").concat("e40e0f49402894239eb912cecc61dcdc70d93780")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302177", ", Version Hash: ").concat("7c7eaf148f5dd0d1f6a2c60d946f56f7234a864e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44319,7 +44319,6 @@
                 RECONNECT: "Reconnect",
                 RECONNECTING: "Reconnecting",
                 UNLOCK_WITH_NITRO: "Unlock with Nitro",
-                CUSTOMIZE: "Customize",
                 DISMISS: "Dismiss",
                 DISABLE: "Disable",
                 ENABLE: "Enable",
@@ -59407,7 +59406,6 @@
                 CLAN_USER_GO_TO_CLAN_CTA: "Go to Guild",
                 CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA: "View Application",
                 CLAN_USER_PROFILE_USE_CLAN_TAG: "Would you like to adopt the {guildName} guild tag as part of your identity?",
-                CLAN_DISCOVERY_ANY_PLAYSTYLE: "Any Playstyle",
                 SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
                 SIGNUP_COMPLETE_CTA: "Sign Up",
                 SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist",
@@ -59438,7 +59436,7 @@
                 CLAN_DISCOVERY_INSPIRATION_TITLE: "A few Guilds for inspiration",
                 CLAN_DISCOVERY_PREPILOT_SUBTITLE: "Your fellow Guilds waiting to launch!",
                 CLAN_DISCOVERY_PILOT_SUBTITLE: "Select **Browse Guilds** to see them all",
-                CLAN_DISCOVERY_GAME_FILTER: "{count, plural, =1 {1 Game} other {{count} Games}}",
+                CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
                 CLAN_DISCOVERY_PREFERENCES_FILTER: "Preferences",
                 CLAN_DISCOVERY_PRIMETIME_FILTER: "Prime Time",
                 CLAN_DISCOVERY_MEMBER_COUNT: "{count, plural, =1 {1 Member} other {{count} Members}}",
@@ -59471,13 +59469,11 @@
                 CLAN_DISCOVERY_UPSELL_MAX_SIZE: "Guilds are max 200 people in size.",
                 CLAN_DISCOVERY_UPSELL_RESERVE: "Reserve Your Spot",
                 CLAN_DISCOVERY_UPSELL_CONTINUE_SETUP: "Continue Setup",
-                CLAN_DISCOVERY_UPSELL_TITLE: "Play games and make friends",
-                CLAN_DISCOVERY_UPSELL_SUBTITLE: "Join a friendly group of players looking to make more friends. Add your games to find the right Guild for you.",
+                CLAN_DISCOVERY_UPSELL_TITLE: "Join an exclusive gaming Guild",
                 CLAN_DISCOVERY_UPSELL_VALORANT_SUBTITLE: "Check out small Guilds looking to recruit Valorant players and make new friends.",
                 CLAN_DISCOVERY_UPSELL_GENSHIN_TITLE: "Just a few clicks to find your Genshin clique.",
                 CLAN_DISCOVERY_UPSELL_GENSHIN_SUBTITLE: "Check out small Guilds looking to recruit Genshin players and make new friends.",
                 CLAN_DISCOVERY_UPSELL_GET_STARTED: "Get Started",
-                CLAN_DISCOVERY_UPSELL_USER_CTA: "Add my games",
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS: "Questions? Head over to the $[Wumpus Feedback Squad](wfsHook) server to ask Discord questions or give feedback!",
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS_ARIA_LABEL: "Join Wumpus Feedback Squad server",
                 CLAN_DISCOVERY_APPLICATION_DISABLED_TOOLTIP: "You cannot apply to Guilds right now",
@@ -89214,22 +89210,18 @@
                             }, E)
                         })
                     },
-                    renderSection: (e, t) => {
+                    renderSection: e => {
                         let {
-                            header: n
+                            header: t
                         } = _[e];
                         return (0, i.jsx)("div", {
                             className: O.headings,
-                            style: {
-                                ...t,
-                                position: "absolute"
-                            },
                             children: (0, i.jsx)(d.HeadingLevel, {
                                 forceLevel: 5,
                                 children: (0, i.jsx)(d.Heading, {
                                     variant: "eyebrow",
                                     color: "header-secondary",
-                                    children: n
+                                    children: t
                                 })
                             })
                         })
@@ -93729,8 +93721,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302172", "302172"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302172")), t = 0), t
+                let t = parseInt((e = "302177", "302177"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302177")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121985,8 +121977,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302172",
-                    versionHash: "e40e0f49402894239eb912cecc61dcdc70d93780"
+                    buildNumber: "302177",
+                    versionHash: "7c7eaf148f5dd0d1f6a2c60d946f56f7234a864e"
                 }
             }
             n.r(t), n.d(t, {
@@ -178296,8 +178288,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718393797945",
-                                    build_number: "302172"
+                                    built_at: "1718394185559",
+                                    build_number: "302177"
                                 }
                             },
                             retries: 1
@@ -255698,7 +255690,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e40e0f49402894239eb912cecc61dcdc70d93780"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7c7eaf148f5dd0d1f6a2c60d946f56f7234a864e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284364,7 +284356,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302172"
+                                build_number: "302177"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291676,7 +291668,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302172", "302172"), 10);
+                let s = parseInt((n = "302177", "302177"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -300111,7 +300103,7 @@
                             let s = o(f, d, this.columnWidth),
                                 u = {
                                     position: "absolute",
-                                    [c]: this.columnWidth * r + l * (r + 1) - l + E,
+                                    [c]: this.columnWidth * r + l * (r + 1) - l,
                                     width: this.columnWidth,
                                     top: i - I,
                                     height: s
@@ -300125,16 +300117,16 @@
                         }
                         _ > 0 && (this.coordsMap[s(f)] = {
                             position: "sticky",
-                            [c]: E,
+                            [c]: 0,
                             width: this.columnWidth * i + l * i,
                             top: 0,
                             height: _
                         }), this.coordsMap[r(f)] = {
                             position: "absolute",
-                            [c]: T,
-                            width: this.columnWidth * i + l * (i - 1) + 2 * E,
+                            [c]: T + E,
+                            width: this.columnWidth * i + l * (i - 1),
                             top: I,
-                            height: this.getMaxColumnHeight(this.columnHeights) - I
+                            height: this.getMaxColumnHeight(this.columnHeights) - I - l
                         }, f++
                     }
                     this.columnHeights = this.columnHeights.map(e => e - l + I), this.totalHeight = this.getMaxColumnHeight(), this.visibleSections = {}, this.needsFullCompute = !1
@@ -319859,4 +319851,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.ac594514dccb78b63a3f.js.map
+//# sourceMappingURL=42458.fe65d998aee5236505ef.js.map
