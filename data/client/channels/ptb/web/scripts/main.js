@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302037", ", Version Hash: ").concat("c5381d6a329fdabcc915eec2b809535d5fc059c9")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302055", ", Version Hash: ").concat("8d073a6b136f10de32b65facdb18f2fc84795179")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42363,6 +42363,7 @@
                 EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_TITLE: "External Application",
                 EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_DESCRIPTION: "You're about to launch an external app. Do you want to continue?",
                 EMBEDDED_ACTIVITIES_MINI_SHELF_TUNE_IN_POSTER_ALT: "TuneIn",
+                EMBEDDED_ACTIVITIES_MINI_SHELF_BOPZ_IO_POSTER_ALT: "BOPZ.io",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED: "Activity ended. Start a new one?",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity started",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION: "You do not have permissions to join this Voice Channel.",
@@ -58734,6 +58735,8 @@
                 QUESTS_MICROPHONE_UNIT_BODY: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched {gameTitle}.",
                 QUESTS_MICROPHONE_UNIT_BODY_ANY_GAME: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched a game.",
                 QUESTS_MICROHPONE_UNIT_BUTTON_CTA: "Check For Launches",
+                QUESTS_CHECK_FOR_GAME_LAUNCH_TOOLTIP: "Got {gameTitle} running, but not detected? Try this.",
+                QUESTS_CHECK_FOR_ANY_GAME_LAUNCH_TOOLTIP: "Got a game running, but not detected? Try this.",
                 QUESTS_HOME_HERO_EYEBROW: "What are Quests?",
                 QUESTS_HOME_HERO_TITLE: "Play Games. Get Rewards.",
                 QUESTS_HOME_HERO_DESCRIPTION: "Quests are a brand new way for players to discover games and earn rewards for playing them on Discord.",
@@ -69283,7 +69286,7 @@
                     return R
                 },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return ee
+                    return et
                 },
                 AM_HARMONY_PRD_APPLICATION_ID: function() {
                     return Q
@@ -69292,10 +69295,10 @@
                     return Z
                 },
                 APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
-                    return et
+                    return en
                 },
                 APPLICATIONS_WITH_NO_REFFERER: function() {
-                    return en
+                    return ei
                 },
                 ActivityFeedbackReasons: function() {
                     return i
@@ -69321,6 +69324,9 @@
                 BOBBLE_LEAGUE_APPLICATION_ID: function() {
                     return B
                 },
+                BOPZ_IO_APPLICATION_ID: function() {
+                    return q
+                },
                 BYS_LETTER_APP_ID: function() {
                     return Y
                 },
@@ -69340,10 +69346,10 @@
                     return U
                 },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return er
+                    return es
                 },
                 EMBEDDED_ACTIVITY_SURVEY_URL: function() {
-                    return q
+                    return J
                 },
                 END_GAME_APPLICATION_ID: function() {
                     return v
@@ -69355,7 +69361,7 @@
                     return P
                 },
                 ImageSizes: function() {
-                    return J
+                    return $
                 },
                 JAM_SPACE_APPLICATION_ID: function() {
                     return y
@@ -69376,7 +69382,7 @@
                     return H
                 },
                 PRIVATE_APPS_HELP_ARTICLE: function() {
-                    return ea
+                    return eo
                 },
                 PUTT_PARTY_APPLICATION_ID: function() {
                     return K
@@ -69385,10 +69391,10 @@
                     return b
                 },
                 STAFF_RELEASE_PHASES: function() {
-                    return $
+                    return ee
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return es
+                    return ea
                 },
                 TUNE_IN_APPLICATION_ID: function() {
                     return X
@@ -69434,38 +69440,39 @@
                 Z = "1234546995360694434",
                 Q = "1214629548377768066",
                 X = "1196535986226745437",
-                q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-                J = {
+                q = "1199817737728442569",
+                J = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                $ = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                $ = ["in_development", "activities_team", "employee_release"];
+                ee = ["in_development", "activities_team", "employee_release"];
             (E = i || (i = {})).ADS = "ADS", E.FAILED_LOAD = "FAILED_LOAD", E.LAGGING = "LAGGING", E.CONFUSING = "CONFUSING", E.NOT_FUN = "NOT_FUN", E.OTHER = "OTHER", (I = r || (r = {}))[I.PLAY = 0] = "PLAY", I[I.SPECTATE = 1] = "SPECTATE", (T = s || (s = {})).DESKTOP = "desktop", T.MOBILE = "mobile", (f = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", f.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", f.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", f.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (S = o || (o = {}))[S.NO_UPDATE = 0] = "NO_UPDATE", S[S.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", S[S.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", S[S.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", S[S.USER_JOINED = 4] = "USER_JOINED", S[S.USER_LEFT = 5] = "USER_LEFT", S[S.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (h = l || (l = {}))[h.UNLOCKED = 1] = "UNLOCKED", h[h.PORTRAIT = 2] = "PORTRAIT", h[h.LANDSCAPE = 3] = "LANDSCAPE", (A = u || (u = {}))[A.DIRECTORY = 0] = "DIRECTORY", A[A.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", A[A.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let ee = "activity-shelf",
-                et = new Set(["755600276941176913", D, M, w]),
-                en = new Set([D, M, w]);
+            let et = "activity-shelf",
+                en = new Set(["755600276941176913", D, M, w]),
+                ei = new Set([D, M, w]);
             (m = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", m.GDM_ACTIVITIES = "GDM_ACTIVITIES", m.PUTT_PARTY = "PUTT_PARTY", m.JAMSPACE_OLD = "JAMSPACE", m.JAMSPACE = "JAMSPACE2", m.POKER = "POKER", m.FREE = "FREE", (N = _ || (_ = {}))[N.PORTRAIT = 0] = "PORTRAIT", N[N.LANDSCAPE = 1] = "LANDSCAPE", (p = c || (c = {}))[p.FOCUSED = 0] = "FOCUSED", p[p.PIP = 1] = "PIP", p[p.GRID = 2] = "GRID";
-            let ei = {
+            let er = {
                     label_type: O.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                er = {
+                es = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
                     supported_platforms: [O.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [O.EmbeddedActivitySupportedPlatforms.WEB]: ei,
-                        [O.EmbeddedActivitySupportedPlatforms.IOS]: ei,
-                        [O.EmbeddedActivitySupportedPlatforms.ANDROID]: ei
+                        [O.EmbeddedActivitySupportedPlatforms.WEB]: er,
+                        [O.EmbeddedActivitySupportedPlatforms.IOS]: er,
+                        [O.EmbeddedActivitySupportedPlatforms.ANDROID]: er
                     },
                     has_csp_exception: !1,
                     displays_advertisements: !1
                 },
-                es = [C.ChannelTypes.GUILD_TEXT, C.ChannelTypes.DM, C.ChannelTypes.GROUP_DM],
-                ea = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
+                ea = [C.ChannelTypes.GUILD_TEXT, C.ChannelTypes.DM, C.ChannelTypes.GROUP_DM],
+                eo = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
         },
         337682: function(e, t, n) {
             "use strict";
@@ -93651,8 +93658,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302037", "302037"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302037")), t = 0), t
+                let t = parseInt((e = "302055", "302055"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302055")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121896,8 +121903,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302037",
-                    versionHash: "c5381d6a329fdabcc915eec2b809535d5fc059c9"
+                    buildNumber: "302055",
+                    versionHash: "8d073a6b136f10de32b65facdb18f2fc84795179"
                 }
             }
             n.r(t), n.d(t, {
@@ -178207,8 +178214,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718378569631",
-                                    build_number: "302037"
+                                    built_at: "1718382175386",
+                                    build_number: "302055"
                                 }
                             },
                             retries: 1
@@ -193975,17 +193982,20 @@
                 E = n("46140"),
                 I = n("981631");
             async function T(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = (await r.HTTP.post({
+                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                try {
+                    let n = (await r.HTTP.post({
                         url: I.Endpoints.QUEST_ON_CONSOLE_START(e),
                         query: t ? {
                             preview: t
                         } : void 0
                     })).body;
-                return null != n.quest_user_status && s.default.dispatch({
-                    type: "QUESTS_USER_STATUS_UPDATE",
-                    user_status: n.quest_user_status
-                }), null
+                    null != n.quest_user_status && s.default.dispatch({
+                        type: "QUESTS_USER_STATUS_UPDATE",
+                        user_status: n.quest_user_status
+                    })
+                } catch (e) {}
+                return null
             }
             async function f(e) {
                 await r.HTTP.post({
@@ -197144,52 +197154,93 @@
         667105: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                useAnimatedRefreshIcon: function() {
+                    return S
+                },
                 useHandleClaimQuestsReward: function() {
-                    return c
+                    return T
                 },
                 useHasLaunchedGame: function() {
-                    return E
+                    return f
                 }
-            });
-            var i = n("470079"),
-                r = n("442837"),
-                s = n("594190"),
-                a = n("594174"),
-                o = n("617136"),
-                l = n("918701"),
-                u = n("920916"),
-                d = n("669041"),
-                _ = n("341907");
+            }), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("920906"),
+                a = n("442837"),
+                o = n("594190"),
+                l = n("594174"),
+                u = n("869472"),
+                d = n("617136"),
+                _ = n("918701"),
+                c = n("920916"),
+                E = n("669041"),
+                I = n("341907");
 
-            function c(e) {
+            function T(e) {
                 let {
                     quest: t,
                     location: n,
-                    questContentPosition: s
-                } = e, c = (0, r.useStateFromStores)([a.default], () => {
+                    questContentPosition: i
+                } = e, s = (0, a.useStateFromStores)([l.default], () => {
                     var e;
-                    return null === (e = a.default.getCurrentUser()) || void 0 === e ? void 0 : e.verified
+                    return null === (e = l.default.getCurrentUser()) || void 0 === e ? void 0 : e.verified
                 });
-                return i.useCallback(() => {
-                    null != t && ((0, o.trackQuestContentClicked)({
+                return r.useCallback(() => {
+                    null != t && ((0, d.trackQuestContentClicked)({
                         questId: t.id,
                         questContent: n,
-                        questContentCTA: o.QuestContentCTA.CLAIM_REWARD,
-                        questContentPosition: s
-                    }), c ? (0, l.hasCollectiblesQuestReward)(t.config) ? (0, u.openCollectibleRewardModal)(t, n) : (0, _.openQuestsRewardCodeModal)({
+                        questContentCTA: d.QuestContentCTA.CLAIM_REWARD,
+                        questContentPosition: i
+                    }), s ? (0, _.hasCollectiblesQuestReward)(t.config) ? (0, c.openCollectibleRewardModal)(t, n) : (0, I.openQuestsRewardCodeModal)({
                         questId: t.id,
                         location: n,
-                        questContentPosition: s
-                    }) : (0, d.openRewardModalUnverified)())
-                }, [t, n, s, c])
+                        questContentPosition: i
+                    }) : (0, E.openRewardModalUnverified)())
+                }, [t, n, i, s])
             }
 
-            function E(e) {
+            function f(e) {
                 var t;
-                let n = (0, r.useStateFromStoresArray)([s.default], () => s.default.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
+                let n = (0, a.useStateFromStoresArray)([o.default], () => o.default.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
                 if (null == n) return !1;
                 let i = Date.now() - 2592e7;
                 return i <= (null !== (t = n.lastLaunched) && void 0 !== t ? t : 0)
+            }
+            let S = e => {
+                let {
+                    useReducedMotion: t,
+                    className: n,
+                    size: a = 16
+                } = e, [o, l] = (0, s.useSpring)(() => ({})), d = r.useRef(!1), _ = (0, s.animated)(u.default);
+                return {
+                    render: () => (0, i.jsx)(_, {
+                        className: n,
+                        style: t ? void 0 : o,
+                        height: a,
+                        width: a
+                    }),
+                    startAnimation: () => {
+                        d.current = !0, l({
+                            from: {
+                                rotate: "0deg"
+                            },
+                            to: {
+                                rotate: "360deg"
+                            },
+                            config: {
+                                tension: 750,
+                                mass: 5,
+                                friction: 100
+                            },
+                            loop: () => d,
+                            immediate: t
+                        })
+                    },
+                    stopAnimation: () => {
+                        d.current = !1
+                    }
+                }
             }
         },
         553393: function(e, t, n) {
@@ -218785,7 +218836,7 @@
                     onClick: S,
                     className: d.clickableUsername,
                     children: e
-                });
+                }), p = null != I && I.length > 0;
                 return (0, i.jsxs)("div", {
                     className: s()(d.container, T),
                     children: [(0, i.jsxs)("div", {
@@ -218799,7 +218850,7 @@
                             children: E
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: s()(d.tags, m),
+                        className: s()(d.tags, m, p && d.tagsWithPronouns),
                         children: [N((0, i.jsx)(o.default, {
                             user: t,
                             usernameIcon: r,
@@ -218808,7 +218859,7 @@
                             className: d.userTag,
                             usernameClass: d.userTagUsername,
                             discriminatorClass: d.userTagDiscriminator
-                        })), null != I && I.length > 0 && (0, i.jsxs)(i.Fragment, {
+                        })), p && (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
                                 "aria-hidden": "true",
                                 className: d.dotSpacer
@@ -255591,7 +255642,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c5381d6a329fdabcc915eec2b809535d5fc059c9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8d073a6b136f10de32b65facdb18f2fc84795179"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270927,6 +270978,42 @@
                 })
             }
         },
+        869472: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("735250");
+            n("470079");
+            var r = n("960259"),
+                s = n("76162"),
+                a = n("325767");
+            t.default = (0, r.replaceIcon)(function(e) {
+                let {
+                    width: t = 16,
+                    height: n = 16,
+                    color: r = "currentColor",
+                    foreground: s,
+                    ...o
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, a.default)(o),
+                    width: t,
+                    height: n,
+                    viewBox: "0 0 16 16",
+                    children: (0, i.jsx)("g", {
+                        fill: "none",
+                        fillRule: "evenodd",
+                        transform: "translate(-4 -4)",
+                        children: (0, i.jsx)("path", {
+                            fill: r,
+                            className: s,
+                            d: "M17.65,6.35 C16.2,4.9 14.21,4 12,4 C7.58,4 4.01,7.58 4.01,12 C4.01,16.42 7.58,20 12,20 C15.73,20 18.84,17.45 19.73,14 L17.65,14 C16.83,16.33 14.61,18 12,18 C8.69,18 6,15.31 6,12 C6,8.69 8.69,6 12,6 C13.66,6 15.14,6.69 16.22,7.78 L13,11 L20,11 L20,4 L17.65,6.35 L17.65,6.35 Z"
+                        })
+                    })
+                })
+            }, s.RefreshIcon, void 0, {
+                size: 16
+            })
+        },
         181058: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -284221,7 +284308,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302037"
+                                build_number: "302055"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291533,7 +291620,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302037", "302037"), 10);
+                let s = parseInt((n = "302055", "302055"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319716,4 +319803,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.d26602ff2bc9a72ecf7a.js.map
+//# sourceMappingURL=42458.f456ed08bb5f4ec74f18.js.map
