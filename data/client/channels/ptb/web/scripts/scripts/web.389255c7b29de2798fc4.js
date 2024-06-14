@@ -109,8 +109,8 @@
                     r = t("719711"),
                     l = t("271579"),
                     s = t("756647"),
-                    b = t("442837"),
-                    u = t("433517"),
+                    u = t("442837"),
+                    b = t("433517"),
                     p = t("799656"),
                     h = t("540117"),
                     m = t("765717"),
@@ -379,11 +379,11 @@
                             })
                         }), (0, d.jsxs)(E.default, {
                             skipsSettingDefaultPageTitle: n,
-                            children: [e, v.isPlatformEmbedded && (t === I.MigrationStatus.NOT_STARTED || t === I.MigrationStatus.IN_PROGRESS) && !0 !== u.Storage.get(r.DOMAIN_MIGRATION_SUCCESS_KEY) ? (0, d.jsx)(g.default, {}) : null]
+                            children: [e, v.isPlatformEmbedded && (t === I.MigrationStatus.NOT_STARTED || t === I.MigrationStatus.IN_PROGRESS) && !0 !== b.Storage.get(r.DOMAIN_MIGRATION_SUCCESS_KEY) ? (0, d.jsx)(g.default, {}) : null]
                         })
                     }
                 }
-                a.default = b.default.connectStores([T.default, I.default], () => ({
+                a.default = u.default.connectStores([T.default, I.default], () => ({
                     isAuthenticated: T.default.isAuthenticated(),
                     migrationStatus: I.default.getMigrationStatus()
                 }), {
@@ -411,8 +411,8 @@
                 var r = t("202226"),
                     l = t("512722"),
                     s = t.n(l),
-                    b = t("832037"),
-                    u = t("464253"),
+                    u = t("832037"),
+                    b = t("464253"),
                     p = t("485359"),
                     h = t("395727"),
                     m = t("471638"),
@@ -465,8 +465,8 @@
                     let o = Object.keys(t).filter(e => null != t[e]).map(e => "".concat(e, ": ").concat(t[e])).join(", ");
                     new M.default().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(o, ", build: ").concat(a)), O.default.initializeExitHook()
                 }
-                if ((0, N.setupWindow)(window), __OVERLAY__) V(b.default.Overlay);
-                else if (null != window.require && null == window.DiscordNative) V(b.default.OutdatedClient);
+                if ((0, N.setupWindow)(window), __OVERLAY__) V(u.default.Overlay);
+                else if (null != window.require && null == window.DiscordNative) V(u.default.OutdatedClient);
                 else {
                     if (document.addEventListener("scroll", e => e.preventDefault()), A.isPlatformEmbedded) {
                         window.onbeforeunload = () => O.default.beforeUnload(), O.default.on("HELP_OPEN", () => window.open(I.default.getCommunityURL()));
@@ -483,7 +483,7 @@
                             (0, v.hidden)(window)
                         })
                     }
-                    h.default.initialize(), u.default.init(), _.default.init(), y.default.init(), p.default.initialize(), g.default.initialize(), T.default.initialize(), m.initialize(), V(b.default.App)
+                    h.default.initialize(), b.default.init(), _.default.init(), y.default.init(), p.default.initialize(), g.default.initialize(), T.default.initialize(), m.initialize(), V(u.default.App)
                 }
             },
             832037: function(e, a, t) {
@@ -550,8 +550,8 @@
                     r = t("946188"),
                     l = t("481060"),
                     s = t("596454"),
-                    b = t("451478"),
-                    u = t("586576"),
+                    u = t("451478"),
+                    b = t("586576"),
                     p = t("176354"),
                     h = t("63063"),
                     m = t("358085"),
@@ -560,8 +560,8 @@
                     I = t("151851"),
                     g = t("981631"),
                     O = t("689938");
-                let T = o.default.connectStores([b.default], () => ({
-                    focused: b.default.isFocused()
+                let T = o.default.connectStores([u.default], () => ({
+                    focused: u.default.isFocused()
                 }))(I.default);
                 class S extends n.PureComponent {
                     getPlatform() {
@@ -599,7 +599,7 @@
                                 })
                             }), (0, d.jsx)(T, {
                                 type: this.getPlatform()
-                            }), (0, d.jsx)(u.default, {
+                            }), (0, d.jsx)(b.default, {
                                 title: O.default.Messages.UNSUPPORTED_BROWSER_TITLE,
                                 note: e,
                                 action: a
@@ -670,17 +670,17 @@
                     l = t("570140");
                 (d = f || (f = {}))[d.NOT_STARTED = 0] = "NOT_STARTED", d[d.IN_PROGRESS = 1] = "IN_PROGRESS", d[d.FAILED = 2] = "FAILED", d[d.SKIPPED = 3] = "SKIPPED";
                 let s = 0;
-                class b extends(o = r.default.Store) {
+                class u extends(o = r.default.Store) {
                     getMigrationStatus() {
                         return s
                     }
                 }
-                i = "DomainMigrationStore", (c = "displayName") in(n = b) ? Object.defineProperty(n, c, {
+                i = "DomainMigrationStore", (c = "displayName") in(n = u) ? Object.defineProperty(n, c, {
                     value: i,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                }) : n[c] = i, a.default = new b(l.default, {
+                }) : n[c] = i, a.default = new u(l.default, {
                     DOMAIN_MIGRATION_START: function() {
                         s = 1
                     },
@@ -696,7 +696,7 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     default: function() {
-                        return b
+                        return u
                     }
                 });
                 var d = t("470079"),
@@ -713,7 +713,7 @@
                     return null == e ? void 0 : null === (a = e._state) || void 0 === a ? void 0 : a.lastTestTimestamp
                 }
 
-                function b() {
+                function u() {
                     return d.useEffect(() => {
                         window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== c.Storage.get(n.DOMAIN_MIGRATION_SUCCESS_KEY) && o.default.supportsFeature(l.NativeFeatures.USER_DATA_CACHE) && (r.migrate(), i.default.userDataCache.getCached().then(e => {
                             if (null == e) {
@@ -729,15 +729,15 @@
                                 t = 0 !== a.length,
                                 d = null != e.token,
                                 o = null == e.RTCRegionStore ? null : JSON.parse(e.RTCRegionStore),
-                                b = null == o || null == s(o) || s(o) <= s(c.Storage.get("RTCRegionStore"));
-                            t && d && !b && (c.Storage.clear(), a.forEach(a => {
+                                u = null == o || null == s(o) || s(o) <= s(c.Storage.get("RTCRegionStore"));
+                            t && d && !u && (c.Storage.clear(), a.forEach(a => {
                                 let t = e[a];
                                 try {
                                     c.Storage.set(a, JSON.parse(t))
                                 } catch (e) {}
                             })), f.default.track(l.AnalyticEvents.DOMAIN_MIGRATED, {
                                 success: !0,
-                                current_is_newer: b,
+                                current_is_newer: u,
                                 has_data: t
                             }, {
                                 flush: !0
@@ -758,8 +758,8 @@
                     r = t("992774"),
                     l = t("649754"),
                     s = t("376398"),
-                    b = t("846519"),
-                    u = t("570140"),
+                    u = t("846519"),
+                    b = t("570140"),
                     p = t("710845"),
                     h = t("314897"),
                     m = t("358085"),
@@ -769,7 +769,7 @@
                     g = t("981631"),
                     O = t("65154");
                 let T = {},
-                    S = new b.Timeout,
+                    S = new u.Timeout,
                     A = !1,
                     w = window.document.createElement("canvas");
                 w.width = 512, w.height = 288;
@@ -854,7 +854,7 @@
                             })
                         }(t);
                         let n = w.toDataURL("image/jpeg");
-                        if (u.default.dispatch({
+                        if (b.default.dispatch({
                                 type: "STREAM_PREVIEW_FETCH_SUCCESS",
                                 streamKey: a,
                                 previewURL: n
@@ -881,7 +881,7 @@
                 }
                 a.default = {
                     init() {
-                        u.default.subscribe("CONNECTION_OPEN", N), u.default.subscribe("LOGOUT", N), u.default.subscribe("STREAM_DELETE", N), u.default.subscribe("RTC_CONNECTION_VIDEO", e => {
+                        b.default.subscribe("CONNECTION_OPEN", N), b.default.subscribe("LOGOUT", N), b.default.subscribe("STREAM_DELETE", N), b.default.subscribe("RTC_CONNECTION_VIDEO", e => {
                             let {
                                 guildId: a,
                                 channelId: t,
@@ -890,7 +890,7 @@
                                 context: i
                             } = e;
                             !(null == c || i !== O.MediaEngineContextTypes.STREAM || n !== h.default.getId() || __OVERLAY__) && (N(), d = c, R(c, a, t, n))
-                        }), u.default.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
+                        }), b.default.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
                             let {
                                 videoState: a
                             } = e;
@@ -911,8 +911,8 @@
                     r = t("199902"),
                     l = t("314897"),
                     s = t("569545"),
-                    b = t("803647"),
-                    u = t("981631"),
+                    u = t("803647"),
+                    b = t("981631"),
                     p = t("65154");
 
                 function h(e, a, t) {
@@ -1013,7 +1013,7 @@
                                 null != a && (0, c.setStreamPaused)(a, !0);
                                 break;
                             case f.StreamDirectorActionType.STOP:
-                                null != a && (0, b.default)(a);
+                                null != a && (0, u.default)(a);
                                 break;
                             default:
                                 throw Error("unhandled stream action: ".concat(e.type))
@@ -1046,13 +1046,13 @@
                                 sourceId: c,
                                 audioSourceId: f,
                                 sound: o
-                            } = e, r = l.default.getId(), b = (0, s.encodeStreamKey)({
+                            } = e, r = l.default.getId(), u = (0, s.encodeStreamKey)({
                                 streamType: a,
                                 guildId: t,
                                 channelId: d,
                                 ownerId: r
                             });
-                            null == n != (null == c) ? (null != n && this._onStreamApplication(b, n), null != c && this._onStreamDirectSource(b, c, f, o)) : new i.default("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(n, ", source-id: ").concat(c, ")"))
+                            null == n != (null == c) ? (null != n && this._onStreamApplication(u, n), null != c && this._onStreamDirectSource(u, c, f, o)) : new i.default("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(n, ", source-id: ").concat(c, ")"))
                         }), d.default.subscribe("STREAM_DELETE", e => {
                             let {
                                 streamKey: a
@@ -1073,7 +1073,7 @@
                                 videoState: a,
                                 context: t
                             } = e;
-                            t === p.MediaEngineContextTypes.STREAM && this._onCapturePaused(a === u.MediaEngineVideoStates.PAUSED)
+                            t === p.MediaEngineContextTypes.STREAM && this._onCapturePaused(a === b.MediaEngineVideoStates.PAUSED)
                         }), d.default.subscribe("MEDIA_ENGINE_SET_GO_LIVE_SOURCE", e => {
                             let {
                                 settings: a
@@ -1130,8 +1130,8 @@
                     r = t("317770"),
                     l = t("63063"),
                     s = t("981631"),
-                    b = t("689938");
-                class u extends r.default {
+                    u = t("689938");
+                class b extends r.default {
                     _initialize() {
                         f.default.subscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
                     }
@@ -1148,10 +1148,10 @@
                             if (!t) {
                                 let e = "audio" !== a;
                                 (0, i.openModal)(a => (0, d.jsx)(o.default, {
-                                    title: e ? b.default.Messages.NO_CAMERA_TITLE : b.default.Messages.NO_MIC_TITLE,
-                                    body: e ? b.default.Messages.NO_CAMERA_BODY : b.default.Messages.NO_MIC_BODY,
+                                    title: e ? u.default.Messages.NO_CAMERA_TITLE : u.default.Messages.NO_MIC_TITLE,
+                                    body: e ? u.default.Messages.NO_CAMERA_BODY : u.default.Messages.NO_MIC_BODY,
                                     onConfirm: () => window.open(l.default.getArticleURL(n), "_blank"),
-                                    confirmText: b.default.Messages.HELP_DESK,
+                                    confirmText: u.default.Messages.HELP_DESK,
                                     ...a
                                 }))
                             }
@@ -1163,7 +1163,7 @@
                         }) : a[t] = n
                     }
                 }
-                a.default = new u
+                a.default = new b
             },
             534713: function(e, a, t) {
                 "use strict";
@@ -1182,8 +1182,8 @@
                         r = null == e ? void 0 : e.get("redirect_uri"),
                         l = null == e ? void 0 : e.get("response_type"),
                         s = null !== (t = null == e ? void 0 : e.get("nonce")) && void 0 !== t ? t : void 0,
-                        b = null !== (n = null == e ? void 0 : e.get("code_challenge")) && void 0 !== n ? n : void 0,
-                        u = null !== (c = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== c ? c : void 0;
+                        u = null !== (n = null == e ? void 0 : e.get("code_challenge")) && void 0 !== n ? n : void 0,
+                        b = null !== (c = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== c ? c : void 0;
                     return null == i || null == f || null == o || null == r || null == l || ((0, d.openOAuth2Modal)({
                         clientId: i,
                         scopes: f,
@@ -1191,8 +1191,8 @@
                         state: o,
                         responseType: l,
                         nonce: s,
-                        codeChallenge: b,
-                        codeChallengeMethod: u
+                        codeChallenge: u,
+                        codeChallengeMethod: b
                     }), !0)
                 }
             },
@@ -1359,8 +1359,8 @@
                     r = t("287734"),
                     l = t("317770"),
                     s = t("829750"),
-                    b = t("189771"),
-                    u = t("67844"),
+                    u = t("189771"),
+                    b = t("67844"),
                     p = t("173507"),
                     h = t("592125"),
                     m = t("131951"),
@@ -1413,7 +1413,7 @@
                                 d = m.default.isVideoEnabled(),
                                 n = m.default.isVideoAvailable(),
                                 c = h.default.getChannel(e),
-                                i = null == c || (0, b.getVideoPermission)(c),
+                                i = null == c || (0, u.getVideoPermission)(c),
                                 {
                                     reachedLimit: f,
                                     limit: o
@@ -1421,7 +1421,7 @@
                                     reachedLimit: void 0,
                                     limit: void 0
                                 },
-                                r = (0, u.getVideoButtonLabel)({
+                                r = (0, b.getVideoButtonLabel)({
                                     enabled: d,
                                     join: !1,
                                     channel: c,
@@ -1811,13 +1811,13 @@
     }, s.a = function(n, c, i) {
         i && ((f = []).d = -1);
         var f, o, r, l, s = new Set,
-            b = n.exports,
-            u = new Promise(function(e, a) {
+            u = n.exports,
+            b = new Promise(function(e, a) {
                 l = a, r = e
             });
-        u[a] = b, u[e] = function(e) {
-            f && e(f), s.forEach(e), u.catch(function() {})
-        }, n.exports = u, c(function(n) {
+        b[a] = u, b[e] = function(e) {
+            f && e(f), s.forEach(e), b.catch(function() {})
+        }, n.exports = b, c(function(n) {
             o = n.map(function(n) {
                 if (null !== n && "object" == typeof n) {
                     if (n[e]) return n;
@@ -1856,7 +1856,7 @@
                 });
             return c.r ? r : i()
         }, function(e) {
-            e ? l(u[t] = e) : r(b), d(f)
+            e ? l(b[t] = e) : r(u), d(f)
         }), f && f.d < 0 && (f.d = 0)
     }, s.n = function(e) {
         var a = e && e.__esModule ? function() {
@@ -1936,7 +1936,7 @@
             14760: "7f5aec8c85ae03f9b070",
             14894: "97569c20c047bbd8fc81",
             153: "e333e8e91308c42edf8a",
-            15357: "d4b7e54db264f0bd7d87",
+            15357: "b5422436ccb57b8688fa",
             15421: "8154983e509a07d580bb",
             15450: "da072ae27a0853d451b8",
             15915: "80e9b2dccc07d9cd83ad",
@@ -2076,7 +2076,7 @@
             31085: "f0c914b0a40f073c6c72",
             31093: "248ee54c80d820ffde76",
             31177: "ae110c08cf6c0bd668d0",
-            31649: "361263a90eac78d23543",
+            31649: "49faa3e5354b602c1067",
             31835: "abd750ee96bba97ac6f6",
             3190: "c19808b118261ab302e7",
             32157: "9443fc0019c26cb5915f",
@@ -2633,7 +2633,7 @@
             94064: "f9b5889eea38769ba1d7",
             94566: "bde74e26ea8ff5be4eed",
             94633: "232cf70c304360f82a87",
-            94864: "0878b3b413a4fb78be85",
+            94864: "a73243f280b24fc08de3",
             94889: "06de3a26f81350377899",
             94912: "a986bb025bcf65e4c199",
             95136: "1fd8107340f7b48f3245",
@@ -2712,18 +2712,18 @@
                 }
             }
         }!n && (c = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, s.nc && n.setAttribute("nonce", s.nc), n.setAttribute("data-webpack", f + t), n.src = e), i[e] = [a];
-        var b = function(a, t) {
-                n.onerror = n.onload = null, clearTimeout(u);
+        var u = function(a, t) {
+                n.onerror = n.onload = null, clearTimeout(b);
                 var d = i[e];
                 if (delete i[e], n.parentNode && n.parentNode.removeChild(n), d && d.forEach(function(e) {
                         return e(t)
                     }), a) return a(t)
             },
-            u = setTimeout(b.bind(null, void 0, {
+            b = setTimeout(u.bind(null, void 0, {
                 type: "timeout",
                 target: n
             }), 12e4);
-        n.onerror = b.bind(null, n.onerror), n.onload = b.bind(null, n.onload), c && document.head.appendChild(n)
+        n.onerror = u.bind(null, n.onerror), n.onload = u.bind(null, n.onload), c && document.head.appendChild(n)
     }, s.r = function(e) {
         "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
@@ -2791,10 +2791,10 @@
                 var i, f, o = "chunk-" + e;
                 if (!c) {
                     for (var r = document.getElementsByTagName("link"), l = 0; l < r.length; l++) {
-                        var b = r[l],
-                            u = b.getAttribute("href") || b.href;
-                        if (u && !u.startsWith(s.p) && (u = s.p + (u.startsWith("/") ? u.slice(1) : u)), "stylesheet" == b.rel && (u && u.startsWith(d) || b.getAttribute("data-webpack") == a + ":" + o)) {
-                            i = b;
+                        var u = r[l],
+                            b = u.getAttribute("href") || u.href;
+                        if (b && !b.startsWith(s.p) && (b = s.p + (b.startsWith("/") ? b.slice(1) : b)), "stylesheet" == u.rel && (b && b.startsWith(d) || u.getAttribute("data-webpack") == a + ":" + o)) {
+                            i = u;
                             break
                         }
                     }
@@ -2890,9 +2890,9 @@
             t = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
         t.forEach(a.bind(null, 0)), t.push = a.bind(null, t.push.bind(t))
     }();
-    var b = s.O(void 0, ["49237", "99387", "24217", "62734", "42482", "43455", "64787", "2797", "31058", "32948", "84471", "70397", "42458", "54807"], function() {
+    var u = s.O(void 0, ["49237", "99387", "24217", "62734", "42482", "43455", "64787", "2797", "31058", "32948", "84471", "70397", "42458", "54807"], function() {
         return s("650204")
     });
-    s.O(b)
+    s.O(u)
 }();
-//# sourceMappingURL=web.70232473fe843710cd33.js.map
+//# sourceMappingURL=web.389255c7b29de2798fc4.js.map
