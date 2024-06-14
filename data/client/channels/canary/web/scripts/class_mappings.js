@@ -25666,13 +25666,6 @@
                 bannerSVGWrapper: "bannerSVGWrapper__8a38c"
             }
         },
-        157542: function(e) {
-            "use strict";
-            e.exports = {
-                content: "content__2398d",
-                header: "header__608e1"
-            }
-        },
         731208: function(e) {
             "use strict";
             e.exports = {

@@ -1257,6 +1257,122 @@
     color: var(--primary-300)
 }
 
+.upsellTooltipWrapper__11dad {
+    box-sizing: border-box;
+    max-width: 280px;
+    padding: 16px;
+    background-color: var(--brand-500);
+    border-radius: 8px;
+    box-shadow: var(--elevation-medium)
+}
+
+.upsellTooltipWrapper__11dad:after {
+    content: " ";
+    position: absolute;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent
+}
+
+.upsellTooltipWrapper__11dad.caretTopCenter__99bb0:after {
+    left: 50%;
+    bottom: 100%;
+    border-bottom-color: var(--brand-500)
+}
+
+.upsellTooltipWrapper__11dad.caretTopRight_ca1162:after {
+    left: calc(100% - 16px);
+    bottom: 100%;
+    border-bottom-color: var(--brand-500)
+}
+
+.upsellTooltipWrapper__11dad.caretTopLeft_d99386:after {
+    left: 16px;
+    bottom: 100%;
+    border-bottom-color: var(--brand-500)
+}
+
+.upsellTooltipWrapper__11dad.caretBottomCenter_dc05a6:after {
+    left: 50%;
+    top: 100%;
+    border-top-color: var(--brand-500)
+}
+
+.upsellTooltipWrapper__11dad.caretBottomLeft__9284d:after {
+    left: 16px;
+    top: 100%;
+    border-top-color: var(--brand-500)
+}
+
+.upsellTooltipWrapper__11dad.caretLeftCenter__82bf0:after {
+    right: 100%;
+    top: calc(50% - 8px);
+    border-right-color: var(--brand-500)
+}
+
+.upsellTooltipWrapper__11dad.caretLeftTop_b5cd94:after {
+    right: 100%;
+    top: 8px;
+    border-right-color: var(--brand-500)
+}
+
+.upsellTooltipWrapper__11dad.caretRightCenter_ae6c08:after {
+    right: -16px;
+    top: calc(50% - 8px);
+    border-left-color: var(--brand-500)
+}
+
+.upsellTooltipHeader__85849,
+.upsellTooltipText_e9359d {
+    color: var(--white-500);
+    text-align: center
+}
+
+.upsellTooltipHeader__85849 {
+    font-family: var(--font-display);
+    margin-bottom: 4px
+}
+
+.upsellButtonsContainer__4033e {
+    display: flex;
+    justify-content: center;
+    margin: 16px auto 0
+}
+
+.upsellButtonsAdjacent__49f1a :nth-child(2) {
+    margin-left: 8px
+}
+
+.upsellButtonsStacked__82b72 {
+    flex-direction: column-reverse
+}
+
+.upsellButtonsStacked__82b72>* {
+    width: 100%
+}
+
+.upsellButtonsStacked__82b72 :nth-child(2) {
+    margin-bottom: 8px
+}
+
+.fullWidth__2750f {
+    width: 100%
+}
+
+.fullWidthImage__5429e {
+    height: auto;
+    width: 100%;
+    margin: 0 auto 16px;
+    display: block
+}
+
+.content_f59247 {
+    --text-link: white;
+    --link-decoration: underline;
+    text-align: center
+}
+
 .art__75b9c {
     text-align: center;
     margin-bottom: 16px;
@@ -46089,133 +46205,6 @@ div.cardContainer__94a1c {
 span.clanTag_f4aadc {
     margin-top: 2px;
     margin-left: 4px
-}
-
-.upsellTooltipWrapper__11dad {
-    box-sizing: border-box;
-    max-width: 280px;
-    padding: 16px;
-    background-color: var(--brand-500);
-    border-radius: 8px;
-    box-shadow: var(--elevation-medium)
-}
-
-.upsellTooltipWrapper__11dad:after {
-    content: " ";
-    position: absolute;
-    margin-left: -8px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: transparent
-}
-
-.upsellTooltipWrapper__11dad.caretTopCenter__99bb0:after {
-    left: 50%;
-    bottom: 100%;
-    border-bottom-color: var(--brand-500)
-}
-
-.upsellTooltipWrapper__11dad.caretTopRight_ca1162:after {
-    left: calc(100% - 16px);
-    bottom: 100%;
-    border-bottom-color: var(--brand-500)
-}
-
-.upsellTooltipWrapper__11dad.caretTopLeft_d99386:after {
-    left: 16px;
-    bottom: 100%;
-    border-bottom-color: var(--brand-500)
-}
-
-.upsellTooltipWrapper__11dad.caretBottomCenter_dc05a6:after {
-    left: 50%;
-    top: 100%;
-    border-top-color: var(--brand-500)
-}
-
-.upsellTooltipWrapper__11dad.caretBottomLeft__9284d:after {
-    left: 16px;
-    top: 100%;
-    border-top-color: var(--brand-500)
-}
-
-.upsellTooltipWrapper__11dad.caretLeftCenter__82bf0:after {
-    right: 100%;
-    top: calc(50% - 8px);
-    border-right-color: var(--brand-500)
-}
-
-.upsellTooltipWrapper__11dad.caretLeftTop_b5cd94:after {
-    right: 100%;
-    top: 8px;
-    border-right-color: var(--brand-500)
-}
-
-.upsellTooltipWrapper__11dad.caretRightCenter_ae6c08:after {
-    right: -16px;
-    top: calc(50% - 8px);
-    border-left-color: var(--brand-500)
-}
-
-.upsellTooltipHeader__85849,
-.upsellTooltipText_e9359d {
-    color: var(--white-500);
-    text-align: center
-}
-
-.upsellTooltipHeader__85849 {
-    font-family: var(--font-display);
-    margin-bottom: 4px
-}
-
-.upsellButtonsContainer__4033e {
-    display: flex;
-    justify-content: center;
-    margin: 16px auto 0
-}
-
-.upsellButtonsAdjacent__49f1a :nth-child(2) {
-    margin-left: 8px
-}
-
-.upsellButtonsStacked__82b72 {
-    flex-direction: column-reverse
-}
-
-.upsellButtonsStacked__82b72>* {
-    width: 100%
-}
-
-.upsellButtonsStacked__82b72 :nth-child(2) {
-    margin-bottom: 8px
-}
-
-.fullWidth__2750f {
-    width: 100%
-}
-
-.fullWidthImage__5429e {
-    height: auto;
-    width: 100%;
-    margin: 0 auto 16px;
-    display: block
-}
-
-.content_f59247 {
-    --text-link: white;
-    --link-decoration: underline;
-    text-align: center
-}
-
-.header__608e1 {
-    color: var(--white-500);
-    font-family: var(--font-primary);
-    font-size: 16px;
-    line-height: 20px
-}
-
-.content__2398d {
-    text-align: center
 }
 
 .banner__6d414 {
@@ -141622,4 +141611,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7410112b9413b604ee18.css.map*/
+/*# sourceMappingURL=99387.4168a15e0f8fafa4b576.css.map*/
