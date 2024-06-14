@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["17671"], {
+    ["31058"], {
         946188: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -20274,6 +20274,26 @@
                 }
             })
         },
+        227700: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getRoundingMethod: function() {
+                    return i
+                }
+            });
+            var r = {
+                ceil: Math.ceil,
+                round: Math.round,
+                floor: Math.floor,
+                trunc: function(e) {
+                    return e < 0 ? Math.ceil(e) : Math.floor(e)
+                }
+            };
+
+            function i(e) {
+                return e ? r[e] : r.trunc
+            }
+        },
         395913: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -20452,6 +20472,42 @@
                 }
             })
         },
+        70597: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return c
+                }
+            });
+            var r = n("599582"),
+                i = n("788613"),
+                a = n("528734"),
+                o = n("951516"),
+                s = n("217224");
+
+            function u(e) {
+                return (u = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+                    return typeof e
+                } : function(e) {
+                    return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+                })(e)
+            }
+
+            function c(e, t) {
+                if ((0, o.default)(2, arguments), !t || "object" !== u(t)) return new Date(NaN);
+                var n = t.years ? (0, s.default)(t.years) : 0,
+                    c = t.months ? (0, s.default)(t.months) : 0,
+                    l = t.weeks ? (0, s.default)(t.weeks) : 0,
+                    d = t.days ? (0, s.default)(t.days) : 0,
+                    f = t.hours ? (0, s.default)(t.hours) : 0,
+                    p = t.minutes ? (0, s.default)(t.minutes) : 0,
+                    h = t.seconds ? (0, s.default)(t.seconds) : 0,
+                    m = (0, a.default)(e),
+                    g = c || n ? (0, i.default)(m, c + 12 * n) : m,
+                    _ = d || l ? (0, r.default)(g, d + 7 * l) : g;
+                return new Date(_.getTime() + 1e3 * (h + 60 * (p + 60 * f)))
+            }
+        },
         599582: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -20575,6 +20631,24 @@
                 return (0, i.default)(e, 12 * n)
             }
         },
+        991656: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var r = n("528734"),
+                i = n("951516");
+
+            function a(e, t) {
+                (0, i.default)(2, arguments);
+                var n = (0, r.default)(e),
+                    a = (0, r.default)(t),
+                    o = n.getTime() - a.getTime();
+                return o < 0 ? -1 : o > 0 ? 1 : o
+            }
+        },
         250327: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -20660,6 +20734,153 @@
                 var n = (0, r.default)(e),
                     a = (0, r.default)(t);
                 return n.getFullYear() - a.getFullYear()
+            }
+        },
+        991998: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var r = n("528734"),
+                i = n("995638"),
+                a = n("951516");
+
+            function o(e, t) {
+                var n = e.getFullYear() - t.getFullYear() || e.getMonth() - t.getMonth() || e.getDate() - t.getDate() || e.getHours() - t.getHours() || e.getMinutes() - t.getMinutes() || e.getSeconds() - t.getSeconds() || e.getMilliseconds() - t.getMilliseconds();
+                return n < 0 ? -1 : n > 0 ? 1 : n
+            }
+
+            function s(e, t) {
+                (0, a.default)(2, arguments);
+                var n = (0, r.default)(e),
+                    s = (0, r.default)(t),
+                    u = o(n, s),
+                    c = Math.abs((0, i.default)(n, s));
+                n.setDate(n.getDate() - u * c);
+                var l = Number(o(n, s) === -u),
+                    d = u * (c - l);
+                return 0 === d ? 0 : d
+            }
+        },
+        896662: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var r = n("250327"),
+                i = n("226430"),
+                a = n("951516"),
+                o = n("227700");
+
+            function s(e, t, n) {
+                (0, a.default)(2, arguments);
+                var s = (0, i.default)(e, t) / r.millisecondsInHour;
+                return (0, o.getRoundingMethod)(null == n ? void 0 : n.roundingMethod)(s)
+            }
+        },
+        226430: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var r = n("528734"),
+                i = n("951516");
+
+            function a(e, t) {
+                return (0, i.default)(2, arguments), (0, r.default)(e).getTime() - (0, r.default)(t).getTime()
+            }
+        },
+        573347: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var r = n("250327"),
+                i = n("226430"),
+                a = n("951516"),
+                o = n("227700");
+
+            function s(e, t, n) {
+                (0, a.default)(2, arguments);
+                var s = (0, i.default)(e, t) / r.millisecondsInMinute;
+                return (0, o.getRoundingMethod)(null == n ? void 0 : n.roundingMethod)(s)
+            }
+        },
+        536403: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            });
+            var r = n("528734"),
+                i = n("352187"),
+                a = n("991656"),
+                o = n("951516"),
+                s = n("21231");
+
+            function u(e, t) {
+                (0, o.default)(2, arguments);
+                var n, u = (0, r.default)(e),
+                    c = (0, r.default)(t),
+                    l = (0, a.default)(u, c),
+                    d = Math.abs((0, i.default)(u, c));
+                if (d < 1) n = 0;
+                else {
+                    1 === u.getMonth() && u.getDate() > 27 && u.setDate(30), u.setMonth(u.getMonth() - l * d);
+                    var f = (0, a.default)(u, c) === -l;
+                    (0, s.default)((0, r.default)(e)) && 1 === d && 1 === (0, a.default)(e, c) && (f = !1), n = l * (d - Number(f))
+                }
+                return 0 === n ? 0 : n
+            }
+        },
+        188650: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return o
+                }
+            });
+            var r = n("226430"),
+                i = n("951516"),
+                a = n("227700");
+
+            function o(e, t, n) {
+                (0, i.default)(2, arguments);
+                var o = (0, r.default)(e, t) / 1e3;
+                return (0, a.getRoundingMethod)(null == n ? void 0 : n.roundingMethod)(o)
+            }
+        },
+        291750: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var r = n("528734"),
+                i = n("492511"),
+                a = n("991656"),
+                o = n("951516");
+
+            function s(e, t) {
+                (0, o.default)(2, arguments);
+                var n = (0, r.default)(e),
+                    s = (0, r.default)(t),
+                    u = (0, a.default)(n, s),
+                    c = Math.abs((0, i.default)(n, s));
+                n.setFullYear(1584), s.setFullYear(1584);
+                var l = (0, a.default)(n, s) === -u,
+                    d = u * (c - Number(l));
+                return 0 === d ? 0 : d
             }
         },
         221508: function(e, t, n) {
@@ -20966,6 +21187,70 @@
                 return (0, i.default)(1, arguments), (0, r.default)(e).getFullYear()
             }
         },
+        283398: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                intervalToDuration: function() {
+                    return r.default
+                },
+                toDate: function() {
+                    return i.default
+                }
+            });
+            var r = n("164369"),
+                i = n("528734"),
+                a = n("250327");
+            n.es(a, t)
+        },
+        164369: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return p
+                }
+            });
+            var r = n("991656"),
+                i = n("70597"),
+                a = n("991998"),
+                o = n("896662"),
+                s = n("573347"),
+                u = n("536403"),
+                c = n("188650"),
+                l = n("291750"),
+                d = n("528734"),
+                f = n("951516");
+
+            function p(e) {
+                (0, f.default)(1, arguments);
+                var t = (0, d.default)(e.start),
+                    n = (0, d.default)(e.end);
+                if (isNaN(t.getTime())) throw RangeError("Start Date is invalid");
+                if (isNaN(n.getTime())) throw RangeError("End Date is invalid");
+                var p = {};
+                p.years = Math.abs((0, l.default)(n, t));
+                var h = (0, r.default)(n, t),
+                    m = (0, i.default)(t, {
+                        years: h * p.years
+                    });
+                p.months = Math.abs((0, u.default)(n, m));
+                var g = (0, i.default)(m, {
+                    months: h * p.months
+                });
+                p.days = Math.abs((0, a.default)(n, g));
+                var _ = (0, i.default)(g, {
+                    days: h * p.days
+                });
+                p.hours = Math.abs((0, o.default)(n, _));
+                var b = (0, i.default)(_, {
+                    hours: h * p.hours
+                });
+                p.minutes = Math.abs((0, s.default)(n, b));
+                var v = (0, i.default)(b, {
+                    minutes: h * p.minutes
+                });
+                return p.seconds = Math.abs((0, c.default)(n, v)), p
+            }
+        },
         269713: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -21036,6 +21321,24 @@
                 var n = (0, r.default)(e),
                     a = (0, r.default)(t);
                 return n.getTime() === a.getTime()
+            }
+        },
+        21231: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var r = n("528734"),
+                i = n("221508"),
+                a = n("486218"),
+                o = n("951516");
+
+            function s(e) {
+                (0, o.default)(1, arguments);
+                var t = (0, r.default)(e);
+                return (0, i.default)(t).getTime() === (0, a.default)(t).getTime()
             }
         },
         194801: function(e, t, n) {
@@ -165637,4 +165940,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17671.95c50059954dc5dee663.js.map
+//# sourceMappingURL=31058.10ea61b8e142bfffc0a6.js.map
