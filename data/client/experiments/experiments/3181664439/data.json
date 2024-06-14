@@ -8,7 +8,10 @@
       "Control Bucket",
       "Treatment 1: Enable the app recommendations in the App Launcher",
       "Treatment 2: Enable the app recommendations in the App Launcher, with Recents dropdown",
-      "Treatment 3: No app recommendations in the App Launcher and hide activities."
+      "Treatment 3: No app recommendations in the App Launcher and hide activities.",
+      "Treatment 4: Show Recommendations in a single list",
+      "Treatment 5: Show recommendations and banner cards as list items.",
+      "Treatment 6: All recommendations are just activities split into collections"
     ],
     "hash": 3181664439,
     "buckets": [
@@ -16,14 +19,20 @@
       0,
       1,
       2,
-      3
+      3,
+      4,
+      5,
+      6
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled",
+      "recommendationsEnabled",
       "recentsDropdownEnabled",
-      "hideActivities"
+      "hideActivities",
+      "showRecommendationsInSingleList",
+      "showBannerCardsAsListItems",
+      "showActivitiesInCollections"
     ]
   }
 }
