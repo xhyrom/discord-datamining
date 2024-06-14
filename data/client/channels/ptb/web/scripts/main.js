@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302319", ", Version Hash: ").concat("259128f02d2d72701622a77715b4698dea84830c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302327", ", Version Hash: ").concat("9eee8a0bb65d56d06e0204f38721fe0605d11cca")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53501,8 +53501,6 @@
                 USER_SETTINGS_PROFILE_THEMES_UPSELL_TRY_IT_OUT: "Try it out",
                 USER_SETTINGS_PROFILE_THEMES_UPSELL_PREVIEW_NITRO: "Preview Nitro",
                 USER_SETTINGS_PROFILE_THEMES_UPSELL_TRY_IT_OUT_DESCRIPTION: "Like what you see? Get profile themes, animated avatars, profile banners, and more with Nitro!",
-                PROFILE_THEMES_ACCESSIBILITY_TOOLTIP_TITLE: "Are some profiles too bright?",
-                PROFILE_THEMES_ACCESSIBILITY_TOOLTIP_DESCRIPTION: "Make profile colors easier on the eyes by syncing them to your Discord theme under Accessibility settings.",
                 PREMIUM_UPSELL_PROFILE_CUSTOMIZATION_TITLE: "Show up how you want with profile customization",
                 PREMIUM_UPSELL_PROFILE_CUSTOMIZATION_DESCRIPTION: "Get profile themes, animated avatars, banners and more with Nitro!",
                 AVATAR_DECORATION_MODAL_APPLY: "Apply",
@@ -93738,8 +93736,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302319", "302319"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302319")), t = 0), t
+                let t = parseInt((e = "302327", "302327"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302327")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121994,8 +121992,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302319",
-                    versionHash: "259128f02d2d72701622a77715b4698dea84830c"
+                    buildNumber: "302327",
+                    versionHash: "9eee8a0bb65d56d06e0204f38721fe0605d11cca"
                 }
             }
             n.r(t), n.d(t, {
@@ -158780,7 +158778,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("32493"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("12549"), n.e("29042"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("46453"), n.e("61414"), n.e("1187"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("20409"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("32493"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("12549"), n.e("29042"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("46453"), n.e("61414"), n.e("1187"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("3619"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -178237,8 +178235,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718405590019",
-                                    build_number: "302319"
+                                    built_at: "1718406856498",
+                                    build_number: "302327"
                                 }
                             },
                             retries: 1
@@ -215009,93 +215007,6 @@
                 }
             }
         },
-        970731: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ButtonLayout: function() {
-                    return a
-                },
-                CaretPosition: function() {
-                    return s
-                },
-                default: function() {
-                    return I
-                }
-            });
-            var i, r, s, a, o = n("735250"),
-                l = n("470079"),
-                u = n("120356"),
-                d = n.n(u),
-                _ = n("481060"),
-                c = n("921944"),
-                E = n("835104");
-
-            function I(e) {
-                let {
-                    className: t,
-                    header: n,
-                    headerClassName: i,
-                    content: r,
-                    contentClassName: s,
-                    buttonCTA: a,
-                    secondaryButtonCTA: u,
-                    onClick: I,
-                    onSecondaryClick: T,
-                    buttonProps: f = {
-                        color: _.Button.Colors.BRAND,
-                        look: _.Button.Looks.FILLED
-                    },
-                    secondaryButtonProps: S = {
-                        color: _.Button.Colors.BRAND_INVERTED
-                    },
-                    onComponentMount: h,
-                    asset: A,
-                    markAsDismissed: m,
-                    caretPosition: N = "caretTopCenter",
-                    buttonLayout: p = 0
-                } = e;
-                l.useEffect(() => {
-                    null == h || h()
-                }, []);
-                let O = null != u;
-                return (0, o.jsxs)("div", {
-                    className: d()(t, E.upsellTooltipWrapper, E[N]),
-                    children: [A, null == n ? null : (0, o.jsx)(_.Heading, {
-                        className: d()(i, E.upsellTooltipHeader),
-                        variant: "heading-md/semibold",
-                        children: n
-                    }), (0, o.jsx)(_.Text, {
-                        color: "always-white",
-                        className: d()(s, E.content),
-                        variant: "text-sm/normal",
-                        children: r
-                    }), null != a || O ? (0, o.jsxs)("div", {
-                        className: d()(E.upsellButtonsContainer, {
-                            [E.upsellButtonsAdjacent]: 0 === p,
-                            [E.upsellButtonsStacked]: 1 === p
-                        }),
-                        children: [O ? (0, o.jsx)(_.Button, {
-                            ...S,
-                            onClick: () => {
-                                null == T || T(), null == m || m(c.ContentDismissActionType.SECONDARY)
-                            },
-                            children: u
-                        }) : null, null == a ? null : (0, o.jsx)(_.Button, {
-                            className: d()({
-                                [E.fullWidth]: !O
-                            }, f.className),
-                            color: f.color,
-                            look: f.look,
-                            innerClassName: f.innerClassName,
-                            onClick: e => {
-                                I(e), null == m || m(c.ContentDismissActionType.PRIMARY)
-                            },
-                            children: a
-                        })]
-                    }) : null]
-                })
-            }(i = s || (s = {})).TOP_CENTER = "caretTopCenter", i.TOP_RIGHT = "caretTopRight", i.TOP_LEFT = "caretTopLeft", i.BOTTOM_CENTER = "caretBottomCenter", i.BOTTOM_LEFT = "caretBottomLeft", i.LEFT_CENTER = "caretLeftCenter", i.LEFT_TOP = "caretLeftTop", i.RIGHT_CENTER = "caretRightCenter", (r = a || (a = {}))[r.ADJACENT = 0] = "ADJACENT", r[r.STACKED = 1] = "STACKED", I.CaretPosition = s, I.ButtonLayout = a
-        },
         48541: function(e, t, n) {
             "use strict";
             var i, r;
@@ -215762,41 +215673,38 @@
         350327: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                handleProfileAccessibilityTooltipViewed: function() {
-                    return I
-                },
                 resetPendingProfileChanges: function() {
-                    return T
+                    return I
                 },
                 saveProfileChanges: function() {
                     return E
                 },
                 setPendingAccentColor: function() {
-                    return A
-                },
-                setPendingBanner: function() {
-                    return f
-                },
-                setPendingBio: function() {
-                    return S
-                },
-                setPendingPronouns: function() {
                     return h
                 },
+                setPendingBanner: function() {
+                    return T
+                },
+                setPendingBio: function() {
+                    return f
+                },
+                setPendingPronouns: function() {
+                    return S
+                },
                 setPendingThemeColors: function() {
-                    return m
+                    return A
                 },
                 setTryItOutAvatar: function() {
-                    return N
+                    return m
                 },
                 setTryItOutAvatarDecoration: function() {
-                    return p
+                    return N
                 },
                 setTryItOutBanner: function() {
-                    return O
+                    return p
                 },
                 setTryItOutThemeColors: function() {
-                    return C
+                    return O
                 }
             });
             var i = n("544891"),
@@ -215859,73 +215767,67 @@
 
             function I() {
                 r.default.dispatch({
-                    type: "USER_PROFILE_ACCESSIBILITY_TOOLTIP_VIEWED"
-                })
-            }
-
-            function T() {
-                r.default.dispatch({
                     type: "USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
                 })
             }
 
-            function f(e) {
+            function T(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER",
                     banner: e
                 })
             }
 
-            function S(e) {
+            function f(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BIO",
                     bio: e
                 })
             }
 
-            function h(e) {
+            function S(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS",
                     pronouns: e
                 })
             }
 
-            function A(e) {
+            function h(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR",
                     color: e
                 })
             }
 
-            function m(e) {
+            function A(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS",
                     themeColors: e
                 })
             }
 
-            function N(e) {
+            function m(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR",
                     avatar: e
                 }), c(_.AnalyticsPremiumFeatureNames.ANIMATED_AVATAR)
             }
 
-            function p(e) {
+            function N(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION",
                     avatarDecoration: e
                 }), c(_.AnalyticsPremiumFeatureNames.AVATAR_DECORATION)
             }
 
-            function O(e) {
+            function p(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
                     banner: e
                 }), c(_.AnalyticsPremiumFeatureNames.PROFILE_BANNER)
             }
 
-            function C(e) {
+            function O(e) {
                 r.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
                     themeColors: e
@@ -216382,28 +216284,27 @@
                 h = {},
                 A = {},
                 m = {},
-                N = !1,
-                p = !1;
+                N = !1;
 
-            function O() {
+            function p() {
                 I.clear(), T.clear(), f = {}, S = {}, h = {}, A = {}, m = {}, N = !1
             }
 
-            function C(e) {
+            function O(e) {
                 let {
                     userId: t
                 } = e;
                 T.add(t)
             }
 
-            function R(e) {
+            function C(e) {
                 let {
                     userId: t
                 } = e;
                 T.delete(t)
             }
 
-            function g(e) {
+            function R(e) {
                 return r()(e).map(e => ({
                     key: e.id,
                     user: new o.default(e),
@@ -216416,22 +216317,22 @@
                 }).value()
             }
 
-            function L(e) {
-                T.delete(e.userId), h[e.userId] = g(e.mutualFriends), A[e.userId] = e.mutualFriends.length
+            function g(e) {
+                T.delete(e.userId), h[e.userId] = R(e.mutualFriends), A[e.userId] = e.mutualFriends.length
             }
 
-            function v() {
+            function L() {
                 if (0 === Object.keys(m).length) return !1;
                 m = {}
             }
 
-            function D(e) {
+            function v(e) {
                 if (null == m[e.user.id]) return !1;
                 delete m[e.user.id]
             }
 
-            function M(e) {
-                var t, n, i, r, a, o, l, d, _, E, T, N, p, O, C, R, L;
+            function D(e) {
+                var t, n, i, r, a, o, l, d, _, E, T, N, p, O, C, g, L;
                 if (I.delete(e.user.id), null != e.mutual_guilds) {
                     let t = {};
                     e.mutual_guilds.forEach(e => {
@@ -216452,7 +216353,7 @@
                     let t = e.mutual_friends_count;
                     A[e.user.id] = t
                 }
-                null != e.mutual_friends && (h[e.user.id] = g(e.mutual_friends), A[e.user.id] = e.mutual_friends.length);
+                null != e.mutual_friends && (h[e.user.id] = R(e.mutual_friends), A[e.user.id] = e.mutual_friends.length);
                 let v = null !== (_ = e.premium_since) && void 0 !== _ ? _ : null,
                     D = e.application;
                 if (f[e.user.id] = {
@@ -216491,7 +216392,7 @@
                         accentColor: e.guild_member_profile.accent_color,
                         themeColors: null === (O = e.guild_member_profile) || void 0 === O ? void 0 : O.theme_colors,
                         popoutAnimationParticleType: null === (C = e.guild_member_profile) || void 0 === C ? void 0 : C.popout_animation_particle_type,
-                        profileEffectId: null === (L = e.guild_member_profile) || void 0 === L ? void 0 : null === (R = L.profile_effect) || void 0 === R ? void 0 : R.id,
+                        profileEffectId: null === (L = e.guild_member_profile) || void 0 === L ? void 0 : null === (g = L.profile_effect) || void 0 === g ? void 0 : g.id,
                         bio: e.guild_member_profile.bio,
                         pronouns: e.guild_member_profile.pronouns,
                         badges: e.guild_badges
@@ -216502,14 +216403,14 @@
                 }
             }
 
-            function y(e) {
+            function M(e) {
                 let {
                     userId: t
                 } = e;
                 I.add(t)
             }
 
-            function P(e) {
+            function y(e) {
                 var t;
                 let {
                     userId: n
@@ -216531,11 +216432,11 @@
                 }, I.delete(n)
             }
 
-            function U(e) {
+            function P(e) {
                 N = !0
             }
 
-            function b(e) {
+            function U(e) {
                 N = !1, null != e.guild_id ? ! function(e) {
                     let {
                         userId: t,
@@ -216586,15 +216487,11 @@
                 }(e)
             }
 
-            function G(e) {
+            function b(e) {
                 N = !1
             }
 
-            function w(e) {
-                p = !0
-            }
-
-            function k(e) {
+            function G(e) {
                 let {
                     user: t
                 } = e;
@@ -216602,12 +216499,12 @@
                 f[t.id].lastFetched = 0
             }
 
-            function B() {
+            function w() {
                 I.clear(), f = {}, S = {}
             }
-            class V extends _.default {
+            class k extends _.default {
                 initialize() {
-                    this.waitFor(c.default), this.syncWith([a.default], B)
+                    this.waitFor(c.default), this.syncWith([a.default], w)
                 }
                 isFetchingProfile(e) {
                     return I.has(e)
@@ -216634,13 +216531,10 @@
                 getMutualGuilds(e) {
                     return m[e]
                 }
-                getIsAccessibilityTooltipViewed() {
-                    return p
-                }
                 takeSnapshot() {
                     let e = l.default.getId();
                     return {
-                        version: V.LATEST_SNAPSHOT_VERSION,
+                        version: k.LATEST_SNAPSHOT_VERSION,
                         data: [{
                             userId: e,
                             profile: f[e]
@@ -216650,25 +216544,24 @@
                 constructor() {
                     super({
                         CACHE_LOADED_LAZY: () => this.loadCache(),
-                        USER_PROFILE_FETCH_START: y,
-                        USER_PROFILE_FETCH_FAILURE: P,
-                        USER_PROFILE_FETCH_SUCCESS: M,
-                        USER_PROFILE_UPDATE_START: U,
-                        USER_PROFILE_UPDATE_SUCCESS: b,
-                        USER_PROFILE_UPDATE_FAILURE: G,
-                        USER_PROFILE_ACCESSIBILITY_TOOLTIP_VIEWED: w,
-                        MUTUAL_FRIENDS_FETCH_START: C,
-                        MUTUAL_FRIENDS_FETCH_SUCCESS: L,
-                        MUTUAL_FRIENDS_FETCH_FAILURE: R,
-                        GUILD_JOIN: v,
-                        GUILD_DELETE: v,
-                        GUILD_MEMBER_ADD: D,
-                        GUILD_MEMBER_REMOVE: D,
-                        GUILD_MEMBER_UPDATE: k,
-                        USER_UPDATE: k,
-                        LOGOUT: O
+                        USER_PROFILE_FETCH_START: M,
+                        USER_PROFILE_FETCH_FAILURE: y,
+                        USER_PROFILE_FETCH_SUCCESS: D,
+                        USER_PROFILE_UPDATE_START: P,
+                        USER_PROFILE_UPDATE_SUCCESS: U,
+                        USER_PROFILE_UPDATE_FAILURE: b,
+                        MUTUAL_FRIENDS_FETCH_START: O,
+                        MUTUAL_FRIENDS_FETCH_SUCCESS: g,
+                        MUTUAL_FRIENDS_FETCH_FAILURE: C,
+                        GUILD_JOIN: L,
+                        GUILD_DELETE: L,
+                        GUILD_MEMBER_ADD: v,
+                        GUILD_MEMBER_REMOVE: v,
+                        GUILD_MEMBER_UPDATE: G,
+                        USER_UPDATE: G,
+                        LOGOUT: p
                     }), E(this, "loadCache", () => {
-                        let e = this.readSnapshot(V.LATEST_SNAPSHOT_VERSION);
+                        let e = this.readSnapshot(k.LATEST_SNAPSHOT_VERSION);
                         null != e && e.forEach(e => {
                             let {
                                 userId: t,
@@ -216679,7 +216572,7 @@
                     })
                 }
             }
-            E(V, "displayName", "UserProfileStore"), E(V, "LATEST_SNAPSHOT_VERSION", 1), t.default = new V
+            E(k, "displayName", "UserProfileStore"), E(k, "LATEST_SNAPSHOT_VERSION", 1), t.default = new k
         },
         484459: function(e, t, n) {
             "use strict";
@@ -217830,117 +217723,6 @@
                 }) : (0, i.jsx)(d.default, {
                     ...c,
                     user: S
-                })
-            }
-        },
-        725790: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("442837"),
-                a = n("704215"),
-                o = n("230711"),
-                l = n("906732"),
-                u = n("605236"),
-                d = n("970731"),
-                _ = n("350327"),
-                c = n("621853"),
-                E = n("981631"),
-                I = n("921944"),
-                T = n("526761"),
-                f = n("689938"),
-                S = n("157542");
-            let h = a.DismissibleContent.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP,
-                A = e => {
-                    (0, u.markDismissibleContentAsDismissed)(h, {
-                        dismissAction: e,
-                        forceTrack: !0
-                    })
-                };
-            t.default = e => {
-                let {
-                    position: t,
-                    onClose: n
-                } = e, {
-                    analyticsLocations: a
-                } = (0, l.default)(), u = (0, s.useStateFromStores)([c.default], () => c.default.getIsAccessibilityTooltipViewed());
-                return r.useEffect(() => u ? () => A(I.ContentDismissActionType.AUTO) : () => (0, _.handleProfileAccessibilityTooltipViewed)(), [u]), (0, i.jsx)(d.default, {
-                    markAsDismissed: A,
-                    header: f.default.Messages.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP_TITLE,
-                    headerClassName: S.header,
-                    content: (0, i.jsx)("div", {
-                        className: S.content,
-                        children: f.default.Messages.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP_DESCRIPTION
-                    }),
-                    buttonCTA: f.default.Messages.TAKE_ME_THERE,
-                    onClick: () => {
-                        null == n || n(), o.default.open(E.UserSettingsSections.ACCESSIBILITY, null, {
-                            scrollPosition: T.AccessibilityScrollPositions.SYNC_PROFILE_THEME_WITH_USER_THEME,
-                            analyticsLocations: a
-                        })
-                    },
-                    secondaryButtonCTA: f.default.Messages.DISMISS,
-                    onSecondaryClick: n,
-                    buttonLayout: d.ButtonLayout.STACKED,
-                    caretPosition: "left" === t ? d.CaretPosition.RIGHT_CENTER : d.CaretPosition.LEFT_CENTER
-                })
-            }
-        },
-        484404: function(e, t, n) {
-            "use strict";
-            n.r(t), n("47120");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("442837"),
-                a = n("704215"),
-                o = n("780384"),
-                l = n("481060"),
-                u = n("410030"),
-                d = n("980591"),
-                _ = n("607070"),
-                c = n("605236"),
-                E = n("725790"),
-                I = n("652853"),
-                T = n("228168"),
-                f = n("157542");
-            let S = () => {
-                let e = (0, c.useIsDismissibleContentDismissed)(a.DismissibleContent.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP),
-                    t = (0, s.useStateFromStores)([_.default], () => _.default.syncProfileThemeWithUserTheme),
-                    n = (0, u.default)(),
-                    {
-                        theme: i
-                    } = (0, I.useUserProfileThemeContext)(),
-                    r = (0, o.isThemeDark)(n) && (0, o.isThemeLight)(i);
-                return !e && !t && r
-            };
-            t.default = e => {
-                let {
-                    onTooltipClose: t
-                } = e, {
-                    profileType: n
-                } = (0, I.useUserProfileThemeContext)(), s = n === T.UserProfileTypes.POPOUT, a = S(), [o, u] = r.useState(!s && a);
-                return (0, d.default)(() => u(a), s ? 300 : null), (0, i.jsx)(l.Popout, {
-                    shouldShow: o,
-                    position: "left",
-                    align: "center",
-                    spacing: 32,
-                    ignoreModalClicks: !0,
-                    onRequestClose: () => {
-                        !s && u(!1)
-                    },
-                    renderPopout: e => {
-                        let {
-                            position: n
-                        } = e;
-                        return (0, i.jsx)(E.default, {
-                            position: null != n ? n : "left",
-                            onClose: t
-                        })
-                    },
-                    children: () => (0, i.jsx)("span", {
-                        className: f.__invalid_hidden
-                    })
                 })
             }
         },
@@ -219975,7 +219757,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return V
+                    return B
                 }
             }), n("47120");
             var i = n("735250"),
@@ -220002,46 +219784,45 @@
                 C = n("621853"),
                 R = n("505737"),
                 g = n("318661"),
-                L = n("484404"),
-                v = n("502762"),
-                D = n("192133"),
-                M = n("240328"),
-                y = n("436478"),
-                P = n("131640"),
-                U = n("664202"),
-                b = n("228168"),
-                G = n("981631"),
-                w = n("616922"),
-                k = n("245876");
+                L = n("502762"),
+                v = n("192133"),
+                D = n("240328"),
+                M = n("436478"),
+                y = n("131640"),
+                P = n("664202"),
+                U = n("228168"),
+                b = n("981631"),
+                G = n("616922"),
+                w = n("245876");
 
-            function B(e) {
+            function k(e) {
                 e.stopPropagation()
             }
 
-            function V(e) {
+            function B(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: V,
-                    messageId: x,
-                    roleId: F,
-                    setNote: H,
-                    closePopout: Y,
-                    setPopoutRef: j,
-                    disableUserProfileLink: W = __OVERLAY__,
-                    analyticsParams: K = {},
-                    newAnalyticsLocations: z = []
+                    channelId: B,
+                    messageId: V,
+                    roleId: x,
+                    setNote: F,
+                    closePopout: H,
+                    setPopoutRef: Y,
+                    disableUserProfileLink: j = __OVERLAY__,
+                    analyticsParams: W = {},
+                    newAnalyticsLocations: K = []
                 } = e, {
-                    analyticsLocations: Z
-                } = (0, I.default)([...z, E.default.PROFILE_POPOUT]), Q = r.useRef(null), X = (0, g.default)(t.id, n), q = (0, l.default)(Q), J = (0, s.useStateFromStores)([C.default], () => {
+                    analyticsLocations: z
+                } = (0, I.default)([...K, E.default.PROFILE_POPOUT]), Z = r.useRef(null), Q = (0, g.default)(t.id, n), X = (0, l.default)(Z), q = (0, s.useStateFromStores)([C.default], () => {
                     var e;
                     return null === (e = C.default.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
-                }), $ = (0, s.useStateFromStores)([A.default], () => null != n ? A.default.getGuild(n) : null), ee = (0, s.useStateFromStores)([h.default], () => null != n ? h.default.getMember(n, t.id) : null), et = t.isNonUserBot(), {
-                    activity: en,
-                    customStatusActivity: ei,
-                    status: er,
-                    isMobile: es,
-                    isApplicationStreaming: ea
+                }), J = (0, s.useStateFromStores)([A.default], () => null != n ? A.default.getGuild(n) : null), $ = (0, s.useStateFromStores)([h.default], () => null != n ? h.default.getMember(n, t.id) : null), ee = t.isNonUserBot(), {
+                    activity: et,
+                    customStatusActivity: en,
+                    status: ei,
+                    isMobile: er,
+                    isApplicationStreaming: es
                 } = (0, s.useStateFromStoresObject)([S.default, m.default], () => {
                     let e = null != S.default.getAnyStreamForUser(t.id);
                     return {
@@ -220049,137 +219830,135 @@
                             let {
                                 type: n
                             } = t;
-                            return e ? n === G.ActivityTypes.PLAYING : n !== G.ActivityTypes.CUSTOM_STATUS
+                            return e ? n === b.ActivityTypes.PLAYING : n !== b.ActivityTypes.CUSTOM_STATUS
                         }),
                         customStatusActivity: m.default.findActivity(t.id, e => {
                             let {
                                 type: t
                             } = e;
-                            return t === G.ActivityTypes.CUSTOM_STATUS
+                            return t === b.ActivityTypes.CUSTOM_STATUS
                         }),
-                        status: et ? null : m.default.getStatus(t.id),
+                        status: ee ? null : m.default.getStatus(t.id),
                         isMobile: m.default.isMobileOnline(t.id),
                         isApplicationStreaming: e
                     }
-                }), [eo, el] = r.useState(!1), eu = r.useMemo(() => null != n ? {
+                }), [ea, eo] = r.useState(!1), el = r.useMemo(() => null != n ? {
                     [n]: [t.id]
                 } : {}, [n, t.id]);
-                (0, d.useSubscribeGuildMembers)(eu);
-                let ed = (0, R.default)(t.id, n),
-                    e_ = (0, U.useShouldShowUserPopoutCollectiblesUpsell)({
+                (0, d.useSubscribeGuildMembers)(el);
+                let eu = (0, R.default)(t.id, n),
+                    ed = (0, P.useShouldShowUserPopoutCollectiblesUpsell)({
                         popoutUser: t,
-                        source: y.UserPopoutUpsellSource.USER_POPOUT,
+                        source: M.UserPopoutUpsellSource.USER_POPOUT,
                         guildId: n
                     }),
-                    [ec, eE] = r.useState(!1);
-                (0, u.default)(() => eE(!0), e_.shouldShow ? 250 : null);
-                let eI = (0, f.useGetOrFetchApplication)(null == en ? void 0 : en.application_id);
+                    [e_, ec] = r.useState(!1);
+                (0, u.default)(() => ec(!0), ed.shouldShow ? 250 : null);
+                let eE = (0, f.useGetOrFetchApplication)(null == et ? void 0 : et.application_id);
                 return r.useEffect(() => {
-                    null == j || j(null == Q ? void 0 : Q.current)
-                }, [Q, j]), r.useEffect(() => {
-                    if (!eo)((null == en ? void 0 : en.application_id) == null || null != eI) && (null == n || (null == ee ? void 0 : ee.fullProfileLoadedTimestamp) != null) && (function() {
+                    null == Y || Y(null == Z ? void 0 : Z.current)
+                }, [Z, Y]), r.useEffect(() => {
+                    if (!ea)((null == et ? void 0 : et.application_id) == null || null != eE) && (null == n || (null == $ ? void 0 : $.fullProfileLoadedTimestamp) != null) && (function() {
                         var e;
                         let i, r, s;
-                        null != en && (i = en.party, r = en.assets, s = null != en.application_id ? T.default.getApplication(en.application_id) : null);
-                        let a = er;
-                        er === G.StatusTypes.ONLINE && (a = es ? G.AnalyticsUserStatusTypes.ONLINE_MOBILE : G.AnalyticsUserStatusTypes.ONLINE_DESKTOP);
-                        let o = null != ee ? {
-                                has_nickname: !!(null == ee ? void 0 : ee.nick),
-                                has_guild_member_avatar: !!(null == ee ? void 0 : ee.avatar),
-                                has_guild_member_banner: !!(null == X ? void 0 : X.isUsingGuildMemberBanner()),
-                                has_guild_member_bio: !!(null == X ? void 0 : X.isUsingGuildMemberBio())
+                        null != et && (i = et.party, r = et.assets, s = null != et.application_id ? T.default.getApplication(et.application_id) : null);
+                        let a = ei;
+                        ei === b.StatusTypes.ONLINE && (a = er ? b.AnalyticsUserStatusTypes.ONLINE_MOBILE : b.AnalyticsUserStatusTypes.ONLINE_DESKTOP);
+                        let o = null != $ ? {
+                                has_nickname: !!(null == $ ? void 0 : $.nick),
+                                has_guild_member_avatar: !!(null == $ ? void 0 : $.avatar),
+                                has_guild_member_banner: !!(null == Q ? void 0 : Q.isUsingGuildMemberBanner()),
+                                has_guild_member_bio: !!(null == Q ? void 0 : Q.isUsingGuildMemberBio())
                             } : {},
-                            l = null != J ? {
-                                other_application_id: null == J ? void 0 : J.id,
+                            l = null != q ? {
+                                other_application_id: null == q ? void 0 : q.id,
                                 other_application_name: t.toString()
                             } : {};
-                        p.default.track(G.AnalyticEvents.OPEN_POPOUT, {
+                        p.default.track(b.AnalyticEvents.OPEN_POPOUT, {
                             type: "Profile Popout",
                             guild_id: n,
-                            channel_id: V,
+                            channel_id: B,
                             other_user_id: t.id,
-                            application_id: null != en ? en.application_id : void 0,
-                            application_name: null != en ? en.name : void 0,
+                            application_id: null != et ? et.application_id : void 0,
+                            application_name: null != et ? et.name : void 0,
                             sku_id: null != s ? s.primarySkuId : null,
                             is_friend: N.default.isFriend(t.id),
                             has_images: !!(null !== (e = null == r ? void 0 : r.large_image) && void 0 !== e ? e : null == r ? void 0 : r.small_image),
                             party_max: null != i && null != i.size ? i.size[1] : void 0,
                             party_id: null != i ? i.id : void 0,
-                            party_platform: null != i && (0, w.isSpotifyParty)(i.id) ? G.PlatformTypes.SPOTIFY : null,
-                            game_platform: (0, _.default)(en),
+                            party_platform: null != i && (0, G.isSpotifyParty)(i.id) ? b.PlatformTypes.SPOTIFY : null,
+                            game_platform: (0, _.default)(et),
                             profile_user_status: a,
-                            is_streaming: ea,
-                            has_custom_status: null != ei,
+                            is_streaming: es,
+                            has_custom_status: null != en,
                             has_avatar_decoration: null != t.avatarDecoration,
-                            has_profile_effect: (null == X ? void 0 : X.profileEffectId) != null,
-                            profile_has_nitro_customization: null != X && (null == X ? void 0 : X.hasPremiumCustomization()),
-                            profile_has_theme_color_customized: null != X && X.hasThemeColors(),
-                            profile_has_theme_animation: (null == X ? void 0 : X.popoutAnimationParticleType) != null,
+                            has_profile_effect: (null == Q ? void 0 : Q.profileEffectId) != null,
+                            profile_has_nitro_customization: null != Q && (null == Q ? void 0 : Q.hasPremiumCustomization()),
+                            profile_has_theme_color_customized: null != Q && Q.hasThemeColors(),
+                            profile_has_theme_animation: (null == Q ? void 0 : Q.popoutAnimationParticleType) != null,
                             ...o,
                             ...l,
-                            ...K
+                            ...W
                         })
-                    }(), el(!0))
-                }, [ee, null == en ? void 0 : en.application_id, eI, eo, n]), (0, i.jsx)(I.AnalyticsLocationProvider, {
-                    value: Z,
+                    }(), eo(!0))
+                }, [$, null == et ? void 0 : et.application_id, eE, ea, n]), (0, i.jsx)(I.AnalyticsLocationProvider, {
+                    value: z,
                     children: (0, i.jsx)(O.UserProfileAnalyticsProvider, {
                         layout: "POPOUT",
                         userId: t.id,
                         guildId: n,
-                        channelId: V,
-                        messageId: x,
-                        roleId: F,
-                        shouldTrackViewOnMount: null == ee || null != ee.fullProfileLoadedTimestamp,
+                        channelId: B,
+                        messageId: V,
+                        roleId: x,
+                        shouldTrackViewOnMount: null == $ || null != $.fullProfileLoadedTimestamp,
                         children: (0, i.jsx)(o.default, {
-                            section: G.AnalyticsSections.PROFILE_POPOUT,
+                            section: b.AnalyticsSections.PROFILE_POPOUT,
                             children: (0, i.jsx)(a.Dialog, {
-                                ref: Q,
+                                ref: Z,
                                 "aria-label": t.username,
-                                onClick: B,
-                                onContextMenu: B,
-                                style: e_.shouldShow ? {
-                                    marginTop: M.DEFAULT_COLLECTIBLES_UPSELL_HEIGHT
+                                onClick: k,
+                                onContextMenu: k,
+                                style: ed.shouldShow ? {
+                                    marginTop: D.DEFAULT_COLLECTIBLES_UPSELL_HEIGHT
                                 } : void 0,
-                                children: (0, i.jsxs)(v.default, {
+                                children: (0, i.jsxs)(L.default, {
                                     user: t,
-                                    displayProfile: X,
-                                    profileType: b.UserProfileTypes.POPOUT,
-                                    className: e_.shouldShow ? k.hasCollectiblesUpsell : void 0,
-                                    showOutOfBoundaryComponents: ec,
-                                    children: [(0, i.jsx)(P.default, {
+                                    displayProfile: Q,
+                                    profileType: U.UserProfileTypes.POPOUT,
+                                    className: ed.shouldShow ? w.hasCollectiblesUpsell : void 0,
+                                    showOutOfBoundaryComponents: e_,
+                                    children: [(0, i.jsx)(y.default, {
                                         user: t,
-                                        displayProfile: X,
+                                        displayProfile: Q,
                                         guildId: n,
-                                        channelId: V,
-                                        onClose: () => null == Y ? void 0 : Y(),
-                                        isMobile: es,
-                                        isStreaming: (0, c.default)(en),
-                                        status: er,
-                                        disableUserProfileLink: W,
-                                        isHovering: q,
-                                        upsell: e_.shouldShow ? (0, i.jsx)(M.default, {
+                                        channelId: B,
+                                        onClose: () => null == H ? void 0 : H(),
+                                        isMobile: er,
+                                        isStreaming: (0, c.default)(et),
+                                        status: ei,
+                                        disableUserProfileLink: j,
+                                        isHovering: X,
+                                        upsell: ed.shouldShow ? (0, i.jsx)(D.default, {
                                             user: t,
-                                            upsellSource: y.UserPopoutUpsellSource.USER_POPOUT,
-                                            displayProfile: X,
-                                            onClose: Y,
-                                            ...e_
+                                            upsellSource: M.UserPopoutUpsellSource.USER_POPOUT,
+                                            displayProfile: Q,
+                                            onClose: H,
+                                            ...ed
                                         }) : void 0
-                                    }), (0, i.jsxs)(v.default.Overlay, {
-                                        children: [(0, i.jsx)(L.default, {
-                                            onTooltipClose: Y
-                                        }), (0, i.jsx)(D.default, {
-                                            activity: en,
-                                            customStatusActivity: ei,
-                                            displayProfile: X,
+                                    }), (0, i.jsx)(L.default.Overlay, {
+                                        children: (0, i.jsx)(v.default, {
+                                            activity: et,
+                                            customStatusActivity: en,
+                                            displayProfile: Q,
                                             user: t,
-                                            guild: $,
-                                            guildMember: ee,
-                                            channelId: V,
-                                            onClose: Y,
-                                            setNote: H,
-                                            canDM: ed,
-                                            analyticsParams: K
-                                        })]
+                                            guild: J,
+                                            guildMember: $,
+                                            channelId: B,
+                                            onClose: H,
+                                            setNote: F,
+                                            canDM: eu,
+                                            analyticsParams: W
+                                        })
                                     })]
                                 })
                             })
@@ -255619,7 +255398,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "259128f02d2d72701622a77715b4698dea84830c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9eee8a0bb65d56d06e0204f38721fe0605d11cca"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284285,7 +284064,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302319"
+                                build_number: "302327"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291597,7 +291376,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302319", "302319"), 10);
+                let s = parseInt((n = "302327", "302327"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -311276,7 +311055,7 @@
                 DismissibleGuildContent: function() {
                     return r
                 }
-            }), (s = i || (i = {}))[s.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", s[s.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", s[s.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", s[s.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", s[s.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", s[s.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", s[s.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", s[s.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", s[s.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", s[s.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", s[s.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", s[s.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", s[s.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", s[s.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", s[s.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", s[s.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", s[s.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", s[s.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", s[s.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", s[s.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", s[s.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", s[s.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", s[s.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", s[s.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", s[s.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", s[s.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", s[s.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", s[s.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", s[s.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", s[s.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", s[s.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", s[s.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", s[s.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", s[s.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", s[s.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", s[s.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", s[s.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", s[s.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", s[s.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", s[s.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", s[s.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", s[s.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", s[s.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", s[s.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", s[s.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", s[s.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", s[s.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", s[s.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", s[s.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", s[s.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", s[s.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", s[s.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", s[s.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", s[s.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", s[s.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", s[s.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", s[s.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", s[s.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", s[s.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", s[s.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", s[s.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", s[s.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", s[s.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", s[s.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", s[s.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", s[s.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", s[s.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", s[s.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", s[s.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", s[s.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", s[s.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", s[s.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", s[s.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", s[s.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", s[s.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", s[s.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", s[s.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", s[s.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", s[s.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", s[s.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", s[s.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", s[s.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", s[s.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", s[s.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", s[s.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", s[s.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", s[s.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", s[s.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", s[s.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", s[s.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", s[s.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", s[s.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", s[s.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", s[s.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", s[s.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", s[s.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", s[s.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", s[s.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", s[s.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", s[s.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", s[s.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", s[s.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", s[s.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", s[s.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", s[s.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", s[s.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", s[s.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", s[s.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", s[s.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", s[s.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", s[s.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", s[s.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", s[s.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", s[s.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", s[s.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", s[s.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", s[s.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", s[s.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", s[s.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", s[s.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", s[s.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", s[s.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", s[s.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", s[s.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", s[s.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", s[s.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", s[s.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", s[s.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", s[s.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", s[s.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", s[s.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", s[s.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", s[s.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", s[s.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", s[s.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", s[s.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", s[s.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", s[s.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", s[s.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", s[s.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", s[s.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", s[s.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", s[s.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", s[s.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", s[s.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", s[s.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", s[s.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", s[s.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", s[s.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", s[s.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", s[s.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", s[s.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", s[s.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", s[s.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", s[s.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", s[s.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", s[s.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", s[s.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", s[s.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", s[s.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", s[s.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", s[s.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", s[s.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", s[s.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", s[s.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", s[s.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", s[s.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", s[s.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", s[s.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", s[s.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", s[s.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", s[s.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", s[s.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", s[s.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", s[s.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", s[s.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", s[s.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", s[s.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", s[s.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", s[s.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", s[s.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", s[s.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", s[s.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", s[s.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", s[s.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", s[s.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", s[s.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", s[s.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", s[s.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", s[s.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", s[s.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", s[s.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", s[s.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", s[s.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", s[s.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", s[s.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", s[s.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", s[s.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", s[s.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", s[s.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", s[s.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", s[s.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", s[s.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", s[s.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", s[s.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", s[s.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", s[s.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", s[s.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", s[s.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", s[s.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", s[s.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", s[s.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", s[s.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", s[s.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", s[s.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", s[s.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", s[s.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", s[s.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", s[s.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", s[s.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", s[s.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", s[s.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", s[s.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", s[s.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", s[s.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", s[s.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", s[s.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", s[s.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", s[s.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", s[s.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", s[s.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", s[s.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", s[s.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", s[s.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", s[s.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", s[s.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", s[s.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", s[s.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", s[s.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", s[s.VOICE_CALL_BG_PICKER_TOOLTIP = 347] = "VOICE_CALL_BG_PICKER_TOOLTIP", s[s.VOICE_CALL_BG_PICKER_NEW_BADGE = 348] = "VOICE_CALL_BG_PICKER_NEW_BADGE", s[s.SWIPE_TO_REPLY_COACHMARK = 349] = "SWIPE_TO_REPLY_COACHMARK", s[s.MOBILE_ACCESSIBILITY_COLOR_SETTINGS = 350] = "MOBILE_ACCESSIBILITY_COLOR_SETTINGS", s[s.POLLS_CHAT_INPUT_COACHMARK = 354] = "POLLS_CHAT_INPUT_COACHMARK", s[s.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK = 355] = "PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK", s[s.LOOTBOXES_ENTRYPOINT = 358] = "LOOTBOXES_ENTRYPOINT", s[s.TENURE_REWARD_PENDING = 360] = "TENURE_REWARD_PENDING", s[s.TENURE_REWARD_REDEEMABLE = 361] = "TENURE_REWARD_REDEEMABLE", s[s.TENURE_REWARD_REDEEMABLE_CONFETTI = 363] = "TENURE_REWARD_REDEEMABLE_CONFETTI", s[s.GAME_ONE_USER_SIGNUPS = 364] = "GAME_ONE_USER_SIGNUPS", s[s.COLLECTIBLES_SHOP_SHY_COACHTIP = 365] = "COLLECTIBLES_SHOP_SHY_COACHTIP", s[s.APP_LAUNCHER_ONBOARDING_BOTS_BANNER = 366] = "APP_LAUNCHER_ONBOARDING_BOTS_BANNER", s[s.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER = 367] = "APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER", s[s.APP_LAUNCHER_ONBOARDING_APPS_BANNER = 368] = "APP_LAUNCHER_ONBOARDING_APPS_BANNER", s[s.COLLECTIBLES_MOBILE_SHOP_MARKETING = 369] = "COLLECTIBLES_MOBILE_SHOP_MARKETING", s[s.COLLECTIBLES_MOBILE_SHOP_HALF_SHEET = 370] = "COLLECTIBLES_MOBILE_SHOP_HALF_SHEET", s[s.GENSHIN_USER_SIGNUPS = 371] = "GENSHIN_USER_SIGNUPS", s[s.ACTIVITIES_CHAT_BUTTON_NUX_V2 = 372] = "ACTIVITIES_CHAT_BUTTON_NUX_V2", s[s.ACTIVITIES_CHAT_MENU_NEW_BADGE = 373] = "ACTIVITIES_CHAT_MENU_NEW_BADGE", s[s.PREMIUM_2024_APRIL_MARKETING_MODAL = 374] = "PREMIUM_2024_APRIL_MARKETING_MODAL", s[s.PREMIUM_2024_APRIL_MARKETING_BADGE = 375] = "PREMIUM_2024_APRIL_MARKETING_BADGE", s[s.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK = 376] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK", s[s.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE = 377] = "REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE", s[s.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE = 378] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE", s[s.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE = 379] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE", s[s.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE = 380] = "REFERRAL_PROGRAM_PREMIUM_TAB_BADGE", s[s.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP = 381] = "PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP", s[s.COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP = 382] = "COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP", s[s.COLLECTIBLES_SHOP_GALAXY_COACHTIP = 383] = "COLLECTIBLES_SHOP_GALAXY_COACHTIP", s[s.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP = 384] = "CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP", s[s.CHANNEL_LIST_CLAN_ADMIN_UPSELL = 385] = "CHANNEL_LIST_CLAN_ADMIN_UPSELL", s[s.GUILD_LIST_CLAN_ADMIN_UPSELL = 386] = "GUILD_LIST_CLAN_ADMIN_UPSELL", s[s.MOBILE_NITRO_HOME_SETTINGS_BADGE = 387] = "MOBILE_NITRO_HOME_SETTINGS_BADGE", s[s.BRAND_REFRESH_NEW_BADGE = 388] = "BRAND_REFRESH_NEW_BADGE", s[s.BRAND_REFRESH_BLURPLE_TWILIGHT_APP_ICON_BADGE = 389] = "BRAND_REFRESH_BLURPLE_TWILIGHT_APP_ICON_BADGE", s[s.BRAND_REFRESH_CLIENT_THEME_BADGE = 390] = "BRAND_REFRESH_CLIENT_THEME_BADGE", s[s.APP_LAUNCHER_USER_APP_BETA_NOTICE = 391] = "APP_LAUNCHER_USER_APP_BETA_NOTICE", s[s.COLLECTIBLES_PIRATES_MOBILE_BADGING = 392] = "COLLECTIBLES_PIRATES_MOBILE_BADGING", s[s.COLLECTIBLES_SHOP_RETRO_AND_PIRATES_COACHTIP = 393] = "COLLECTIBLES_SHOP_RETRO_AND_PIRATES_COACHTIP", s[s.PRIDE_ICONS = 394] = "PRIDE_ICONS", s[s.PRIDE_ICONS_COACHMARK = 395] = "PRIDE_ICONS_COACHMARK", s[s.PRIDE_ICONS_APPEARANCE_BADGE = 396] = "PRIDE_ICONS_APPEARANCE_BADGE", s[s.CLAN_TAG_WAITLIST = 397] = "CLAN_TAG_WAITLIST", s[s.GUILD_LIST_CLAN_USER_UPSELL = 398] = "GUILD_LIST_CLAN_USER_UPSELL", s[s.QUEST_HOME_FRIENDS_LIST_NEW_BADGE = 399] = "QUEST_HOME_FRIENDS_LIST_NEW_BADGE", s[s.WHATS_NEW_APP_STYLES_JUNE_2024_FLIP = 400] = "WHATS_NEW_APP_STYLES_JUNE_2024_FLIP", s[s.WHATS_NEW_CUSTOM_NOTIFICATION_SOUNDS_FLIP = 401] = "WHATS_NEW_CUSTOM_NOTIFICATION_SOUNDS_FLIP", s[s.WHATS_NEW_REFERRAL_PROGRAM_FLIP = 402] = "WHATS_NEW_REFERRAL_PROGRAM_FLIP", s[s.WHATS_NEW_APP_STYLES_JUNE_2024_NITRO_BADGE = 403] = "WHATS_NEW_APP_STYLES_JUNE_2024_NITRO_BADGE", s[s.WHATS_NEW_CUSTOM_NOTIFICATION_SOUNDS_NITRO_BADGE = 404] = "WHATS_NEW_CUSTOM_NOTIFICATION_SOUNDS_NITRO_BADGE", s[s.WHATS_NEW_REFERRAL_PROGRAM_NITRO_BADGE = 405] = "WHATS_NEW_REFERRAL_PROGRAM_NITRO_BADGE", s[s.WHATS_NEW_SERVER_PROFILE_FLIP = 406] = "WHATS_NEW_SERVER_PROFILE_FLIP", s[s.WHATS_NEW_SERVER_PROFILE_BADGE = 407] = "WHATS_NEW_SERVER_PROFILE_BADGE", s[s.COLLECTIBLES_SHOP_ARCADE_COACHTIP = 408] = "COLLECTIBLES_SHOP_ARCADE_COACHTIP", s[s.CHECKOUT_RECOVERY_NAGBAR = 409] = "CHECKOUT_RECOVERY_NAGBAR", s[s.PREMIUM_2024_JUNE_MARKETING_MODAL = 410] = "PREMIUM_2024_JUNE_MARKETING_MODAL", s[s.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING = 411] = "APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING", (a = r || (r = {}))[a.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", a[a.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", a[a.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", a[a.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", a[a.ADOPT_CLAN_IDENTITY_NOTICE = 4] = "ADOPT_CLAN_IDENTITY_NOTICE"
+            }), (s = i || (i = {}))[s.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", s[s.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", s[s.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", s[s.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", s[s.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", s[s.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", s[s.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", s[s.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", s[s.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", s[s.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", s[s.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", s[s.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", s[s.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", s[s.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", s[s.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", s[s.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", s[s.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", s[s.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", s[s.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", s[s.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", s[s.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", s[s.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", s[s.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", s[s.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", s[s.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", s[s.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", s[s.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", s[s.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", s[s.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", s[s.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", s[s.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", s[s.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", s[s.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", s[s.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", s[s.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", s[s.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", s[s.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", s[s.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", s[s.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", s[s.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", s[s.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", s[s.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", s[s.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", s[s.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", s[s.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", s[s.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", s[s.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", s[s.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", s[s.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", s[s.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", s[s.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", s[s.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", s[s.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", s[s.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", s[s.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", s[s.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", s[s.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", s[s.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", s[s.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", s[s.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", s[s.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", s[s.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", s[s.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", s[s.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", s[s.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", s[s.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", s[s.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", s[s.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", s[s.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", s[s.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", s[s.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", s[s.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", s[s.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", s[s.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", s[s.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", s[s.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", s[s.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", s[s.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", s[s.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", s[s.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", s[s.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", s[s.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", s[s.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", s[s.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", s[s.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", s[s.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", s[s.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", s[s.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", s[s.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", s[s.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", s[s.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", s[s.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", s[s.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", s[s.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", s[s.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", s[s.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", s[s.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", s[s.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", s[s.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", s[s.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", s[s.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", s[s.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", s[s.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", s[s.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", s[s.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", s[s.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", s[s.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", s[s.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", s[s.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", s[s.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", s[s.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", s[s.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", s[s.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", s[s.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", s[s.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", s[s.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", s[s.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", s[s.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", s[s.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", s[s.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", s[s.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", s[s.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", s[s.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", s[s.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", s[s.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", s[s.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", s[s.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", s[s.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", s[s.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", s[s.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", s[s.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", s[s.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", s[s.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", s[s.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", s[s.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", s[s.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", s[s.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", s[s.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", s[s.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", s[s.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", s[s.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", s[s.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", s[s.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", s[s.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", s[s.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", s[s.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", s[s.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", s[s.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", s[s.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", s[s.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", s[s.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", s[s.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", s[s.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", s[s.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", s[s.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", s[s.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", s[s.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", s[s.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", s[s.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", s[s.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", s[s.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", s[s.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", s[s.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", s[s.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", s[s.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", s[s.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", s[s.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", s[s.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", s[s.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", s[s.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", s[s.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", s[s.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", s[s.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", s[s.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", s[s.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", s[s.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", s[s.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", s[s.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", s[s.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", s[s.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", s[s.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", s[s.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", s[s.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", s[s.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", s[s.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", s[s.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", s[s.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", s[s.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", s[s.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", s[s.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", s[s.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", s[s.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", s[s.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", s[s.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", s[s.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", s[s.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", s[s.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", s[s.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", s[s.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", s[s.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", s[s.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", s[s.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", s[s.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", s[s.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", s[s.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", s[s.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", s[s.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", s[s.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", s[s.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", s[s.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", s[s.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", s[s.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", s[s.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", s[s.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", s[s.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", s[s.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", s[s.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", s[s.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", s[s.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", s[s.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", s[s.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", s[s.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", s[s.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", s[s.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", s[s.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", s[s.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", s[s.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", s[s.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", s[s.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", s[s.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", s[s.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", s[s.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", s[s.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", s[s.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", s[s.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", s[s.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", s[s.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", s[s.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", s[s.VOICE_CALL_BG_PICKER_TOOLTIP = 347] = "VOICE_CALL_BG_PICKER_TOOLTIP", s[s.VOICE_CALL_BG_PICKER_NEW_BADGE = 348] = "VOICE_CALL_BG_PICKER_NEW_BADGE", s[s.SWIPE_TO_REPLY_COACHMARK = 349] = "SWIPE_TO_REPLY_COACHMARK", s[s.MOBILE_ACCESSIBILITY_COLOR_SETTINGS = 350] = "MOBILE_ACCESSIBILITY_COLOR_SETTINGS", s[s.POLLS_CHAT_INPUT_COACHMARK = 354] = "POLLS_CHAT_INPUT_COACHMARK", s[s.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK = 355] = "PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK", s[s.LOOTBOXES_ENTRYPOINT = 358] = "LOOTBOXES_ENTRYPOINT", s[s.TENURE_REWARD_PENDING = 360] = "TENURE_REWARD_PENDING", s[s.TENURE_REWARD_REDEEMABLE = 361] = "TENURE_REWARD_REDEEMABLE", s[s.TENURE_REWARD_REDEEMABLE_CONFETTI = 363] = "TENURE_REWARD_REDEEMABLE_CONFETTI", s[s.GAME_ONE_USER_SIGNUPS = 364] = "GAME_ONE_USER_SIGNUPS", s[s.COLLECTIBLES_SHOP_SHY_COACHTIP = 365] = "COLLECTIBLES_SHOP_SHY_COACHTIP", s[s.APP_LAUNCHER_ONBOARDING_BOTS_BANNER = 366] = "APP_LAUNCHER_ONBOARDING_BOTS_BANNER", s[s.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER = 367] = "APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER", s[s.APP_LAUNCHER_ONBOARDING_APPS_BANNER = 368] = "APP_LAUNCHER_ONBOARDING_APPS_BANNER", s[s.COLLECTIBLES_MOBILE_SHOP_MARKETING = 369] = "COLLECTIBLES_MOBILE_SHOP_MARKETING", s[s.COLLECTIBLES_MOBILE_SHOP_HALF_SHEET = 370] = "COLLECTIBLES_MOBILE_SHOP_HALF_SHEET", s[s.GENSHIN_USER_SIGNUPS = 371] = "GENSHIN_USER_SIGNUPS", s[s.ACTIVITIES_CHAT_BUTTON_NUX_V2 = 372] = "ACTIVITIES_CHAT_BUTTON_NUX_V2", s[s.ACTIVITIES_CHAT_MENU_NEW_BADGE = 373] = "ACTIVITIES_CHAT_MENU_NEW_BADGE", s[s.PREMIUM_2024_APRIL_MARKETING_MODAL = 374] = "PREMIUM_2024_APRIL_MARKETING_MODAL", s[s.PREMIUM_2024_APRIL_MARKETING_BADGE = 375] = "PREMIUM_2024_APRIL_MARKETING_BADGE", s[s.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK = 376] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK", s[s.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE = 377] = "REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE", s[s.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE = 378] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE", s[s.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE = 379] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE", s[s.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE = 380] = "REFERRAL_PROGRAM_PREMIUM_TAB_BADGE", s[s.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP = 381] = "PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP", s[s.COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP = 382] = "COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP", s[s.COLLECTIBLES_SHOP_GALAXY_COACHTIP = 383] = "COLLECTIBLES_SHOP_GALAXY_COACHTIP", s[s.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP = 384] = "CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP", s[s.CHANNEL_LIST_CLAN_ADMIN_UPSELL = 385] = "CHANNEL_LIST_CLAN_ADMIN_UPSELL", s[s.GUILD_LIST_CLAN_ADMIN_UPSELL = 386] = "GUILD_LIST_CLAN_ADMIN_UPSELL", s[s.MOBILE_NITRO_HOME_SETTINGS_BADGE = 387] = "MOBILE_NITRO_HOME_SETTINGS_BADGE", s[s.BRAND_REFRESH_NEW_BADGE = 388] = "BRAND_REFRESH_NEW_BADGE", s[s.BRAND_REFRESH_BLURPLE_TWILIGHT_APP_ICON_BADGE = 389] = "BRAND_REFRESH_BLURPLE_TWILIGHT_APP_ICON_BADGE", s[s.BRAND_REFRESH_CLIENT_THEME_BADGE = 390] = "BRAND_REFRESH_CLIENT_THEME_BADGE", s[s.APP_LAUNCHER_USER_APP_BETA_NOTICE = 391] = "APP_LAUNCHER_USER_APP_BETA_NOTICE", s[s.COLLECTIBLES_PIRATES_MOBILE_BADGING = 392] = "COLLECTIBLES_PIRATES_MOBILE_BADGING", s[s.COLLECTIBLES_SHOP_RETRO_AND_PIRATES_COACHTIP = 393] = "COLLECTIBLES_SHOP_RETRO_AND_PIRATES_COACHTIP", s[s.PRIDE_ICONS = 394] = "PRIDE_ICONS", s[s.PRIDE_ICONS_COACHMARK = 395] = "PRIDE_ICONS_COACHMARK", s[s.PRIDE_ICONS_APPEARANCE_BADGE = 396] = "PRIDE_ICONS_APPEARANCE_BADGE", s[s.CLAN_TAG_WAITLIST = 397] = "CLAN_TAG_WAITLIST", s[s.GUILD_LIST_CLAN_USER_UPSELL = 398] = "GUILD_LIST_CLAN_USER_UPSELL", s[s.QUEST_HOME_FRIENDS_LIST_NEW_BADGE = 399] = "QUEST_HOME_FRIENDS_LIST_NEW_BADGE", s[s.WHATS_NEW_APP_STYLES_JUNE_2024_FLIP = 400] = "WHATS_NEW_APP_STYLES_JUNE_2024_FLIP", s[s.WHATS_NEW_CUSTOM_NOTIFICATION_SOUNDS_FLIP = 401] = "WHATS_NEW_CUSTOM_NOTIFICATION_SOUNDS_FLIP", s[s.WHATS_NEW_REFERRAL_PROGRAM_FLIP = 402] = "WHATS_NEW_REFERRAL_PROGRAM_FLIP", s[s.WHATS_NEW_APP_STYLES_JUNE_2024_NITRO_BADGE = 403] = "WHATS_NEW_APP_STYLES_JUNE_2024_NITRO_BADGE", s[s.WHATS_NEW_CUSTOM_NOTIFICATION_SOUNDS_NITRO_BADGE = 404] = "WHATS_NEW_CUSTOM_NOTIFICATION_SOUNDS_NITRO_BADGE", s[s.WHATS_NEW_REFERRAL_PROGRAM_NITRO_BADGE = 405] = "WHATS_NEW_REFERRAL_PROGRAM_NITRO_BADGE", s[s.WHATS_NEW_SERVER_PROFILE_FLIP = 406] = "WHATS_NEW_SERVER_PROFILE_FLIP", s[s.WHATS_NEW_SERVER_PROFILE_BADGE = 407] = "WHATS_NEW_SERVER_PROFILE_BADGE", s[s.COLLECTIBLES_SHOP_ARCADE_COACHTIP = 408] = "COLLECTIBLES_SHOP_ARCADE_COACHTIP", s[s.CHECKOUT_RECOVERY_NAGBAR = 409] = "CHECKOUT_RECOVERY_NAGBAR", s[s.PREMIUM_2024_JUNE_MARKETING_MODAL = 410] = "PREMIUM_2024_JUNE_MARKETING_MODAL", s[s.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING = 411] = "APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING", (a = r || (r = {}))[a.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", a[a.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", a[a.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", a[a.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", a[a.ADOPT_CLAN_IDENTITY_NOTICE = 4] = "ADOPT_CLAN_IDENTITY_NOTICE"
         },
         377108: function(e, t, n) {
             "use strict";
@@ -319776,4 +319555,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.b84aeb836ae0073f2616.js.map
+//# sourceMappingURL=42458.9207df33e0b048eff0b7.js.map
