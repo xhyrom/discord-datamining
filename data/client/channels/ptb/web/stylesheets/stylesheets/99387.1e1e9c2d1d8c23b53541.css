@@ -46896,6 +46896,10 @@ span.clanTag_f4aadc {
     margin-top: 8px
 }
 
+.icon__3c971 {
+    border-radius: 25%
+}
+
 .container__2f171 {
     background-color: var(--background-primary);
     box-shadow: var(--elevation-medium);
@@ -47052,17 +47056,6 @@ span.clanTag_f4aadc {
     color: var(--background-accent)
 }
 
-.iconContainer__73a6d {
-    flex-shrink: 0;
-    width: 38px;
-    height: 38px
-}
-
-.icon__83254 {
-    width: 100%;
-    height: 100%
-}
-
 .container__50faa {
     border-radius: var(--radius-md);
     background-color: var(--bg-surface-raised);
@@ -47081,6 +47074,11 @@ span.clanTag_f4aadc {
 
 .container__50faa:active {
     background-color: var(--background-modifier-active)
+}
+
+.icon__83254 {
+    width: 38px;
+    height: 38px
 }
 
 .bannerImageContainer__3fe93 {
@@ -141611,4 +141609,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4168a15e0f8fafa4b576.css.map*/
+/*# sourceMappingURL=99387.1e1e9c2d1d8c23b53541.css.map*/

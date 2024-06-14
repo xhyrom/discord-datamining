@@ -3028,6 +3028,12 @@
                 resizeHandle: "resizeHandle_f0feac"
             }
         },
+        377197: function(e) {
+            "use strict";
+            e.exports = {
+                icon: "icon__3c971"
+            }
+        },
         259255: function(e) {
             "use strict";
             e.exports = {
@@ -3095,7 +3101,6 @@
                 container: "container__50faa",
                 fadeIn: "fadeIn_dbae63",
                 icon: "icon__83254",
-                iconContainer: "iconContainer__73a6d",
                 largeBanner: "largeBanner_a47a80",
                 mediumBanner: "mediumBanner__8f752",
                 partnerLabelWrapper: "partnerLabelWrapper_c12876"
