@@ -9133,6 +9133,7 @@
                 footerContainer: "footerContainer_bc17b3",
                 footerText: "footerText_c6879e",
                 headerContainer: "headerContainer_b04aeb",
+                headerIcon: "headerIcon_b64324",
                 headerText: "headerText__8431e",
                 originIcon: "originIcon_fee508",
                 quote: "quote__5375c"
@@ -17559,6 +17560,7 @@
                 embedWrapper: "embedWrapper__47b23",
                 gifFavoriteButton: "gifFavoriteButton_bca32d",
                 giftCodeContainer: "giftCodeContainer_fedf35",
+                inlineEmbedWrapper: "inlineEmbedWrapper__632ee",
                 nitroBadgeSvg: "nitroBadgeSvg__7d490",
                 nitroFileSizeUpsell: "nitroFileSizeUpsell__6fa4b",
                 pollContainer: "pollContainer_cfb8c7",
