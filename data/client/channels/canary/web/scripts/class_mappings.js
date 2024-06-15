@@ -3028,6 +3028,21 @@
                 resizeHandle: "resizeHandle_f0feac"
             }
         },
+        741382: function(e) {
+            "use strict";
+            e.exports = {
+                appDetails: "appDetails__52913",
+                appDetailsContainer: "appDetailsContainer__41f11",
+                bannerImage: "bannerImage__25238",
+                bannerImageContainer: "bannerImageContainer__043c5",
+                container: "container__5e18f",
+                fadeIn: "fadeIn__74fcc",
+                icon: "icon__42f10",
+                largeBanner: "largeBanner__00dff",
+                mediumBanner: "mediumBanner__131a5",
+                partnerLabelWrapper: "partnerLabelWrapper__0e059"
+            }
+        },
         377197: function(e) {
             "use strict";
             e.exports = {
@@ -3091,21 +3106,6 @@
                 container: "container__2f171"
             }
         },
-        573214: function(e) {
-            "use strict";
-            e.exports = {
-                appDetails: "appDetails_a9e155",
-                appDetailsContainer: "appDetailsContainer__86c05",
-                bannerImage: "bannerImage_bd92bd",
-                bannerImageContainer: "bannerImageContainer__3fe93",
-                container: "container__50faa",
-                fadeIn: "fadeIn_dbae63",
-                icon: "icon__83254",
-                largeBanner: "largeBanner_a47a80",
-                mediumBanner: "mediumBanner__8f752",
-                partnerLabelWrapper: "partnerLabelWrapper_c12876"
-            }
-        },
         844330: function(e) {
             "use strict";
             e.exports = {
@@ -3128,6 +3128,15 @@
                 body: "body__6e2e0",
                 container: "container__00399",
                 image: "image__55e02"
+            }
+        },
+        274017: function(e) {
+            "use strict";
+            e.exports = {
+                appGrid: "appGrid_efc83f",
+                backButton: "backButton_a3a5d5",
+                container: "container__6d90e",
+                header: "header_c420eb"
             }
         },
         603649: function(e) {
