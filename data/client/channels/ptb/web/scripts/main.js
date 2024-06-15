@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302333", ", Version Hash: ").concat("9f5d45da1742efaa96e9aca34e4b8004565d10d6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302378", ", Version Hash: ").concat("d013555b1c0c4977bf1d2bf14ba871bfbb969f36")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58718,7 +58718,7 @@
                 QUESTS_MEMBERS_LIST_GAME_TILE_ALT: "A game tile displaying {gameTitle}, published by {gamePublisher}.",
                 QUESTS_REWARD_AVATAR_DECORATION_HEADER: "Congratulations!",
                 QUESTS_REWARD_AVATAR_DECORATION_BODY: "{decorationName} is now yours FOR-EV-ERRRR! You can use it anytime on your profile page.",
-                QUESTS_REWARD_AVATAR_DECORATION_BODY_WITH_EXPIRATION: "You just leveled up your avatar game with this {decorationName}. It’s yours to show off on your profile for the next {duration}!.",
+                QUESTS_REWARD_AVATAR_DECORATION_BODY_WITH_EXPIRATION: "You just leveled up your avatar game with this {decorationName}. It’s yours to show off on your profile for the next {duration}.",
                 QUESTS_REWARD_SPONSORED_BY: "Sponsored by {publisherName}",
                 QUESTS_VIEW_COLLECTIBLE: "View Deco",
                 QUEST_AVAILABLE: "Quest Available",
@@ -77841,7 +77841,7 @@
                 }
             });
             var i, r, s = n("470079");
-            (i = r || (r = {})).HOME = "home", i.APPLICATION = "application";
+            (i = r || (r = {})).HOME = "home", i.LIST = "list", i.APPLICATION = "application";
             let a = s.createContext({
                 history: [],
                 setHistory: () => {},
@@ -77942,18 +77942,19 @@
                 a = n("695676"),
                 o = n("173790"),
                 l = n("361917"),
-                u = n("579539");
+                u = n("684256"),
+                d = n("579539");
             t.default = r.memo(function(e) {
                 let t, {
                         drawerRef: n,
-                        channel: d
+                        channel: _
                     } = e,
                     {
-                        history: _,
-                        setHistory: c,
-                        currentView: E,
-                        pushHistory: I,
-                        goBack: T
+                        history: c,
+                        setHistory: E,
+                        currentView: I,
+                        pushHistory: T,
+                        goBack: f
                     } = function() {
                         let [e, t] = r.useState([{
                             type: a.HistoryItemType.HOME
@@ -77972,47 +77973,195 @@
                             }
                         }
                     }(),
-                    f = s.AppLauncherRecommendationsExperiment.useExperiment({
+                    S = s.AppLauncherRecommendationsExperiment.useExperiment({
                         location: "App Launcher Root"
                     }, {
                         autoTrackExposure: !0
                     });
-                switch (null == E ? void 0 : E.type) {
+                switch (null == I ? void 0 : I.type) {
                     case a.HistoryItemType.HOME:
                         t = (0, i.jsx)(l.default, {
-                            channel: d,
-                            enableRecommendations: f.recommendationsEnabled,
-                            enableRecents: f.recentsDropdownEnabled
+                            channel: _,
+                            enableRecommendations: S.recommendationsEnabled,
+                            enableRecents: S.recentsDropdownEnabled
+                        });
+                        break;
+                    case a.HistoryItemType.LIST:
+                        t = (0, i.jsx)(u.default, {
+                            title: I.title,
+                            look: I.look,
+                            items: I.items
                         });
                         break;
                     case a.HistoryItemType.APPLICATION:
                         t = (0, i.jsx)(o.default, {
-                            channel: d,
-                            application: E.application,
-                            sectionName: E.sectionName
+                            channel: _,
+                            application: I.application,
+                            sectionName: I.sectionName
                         });
                         break;
                     default:
                         t = null
                 }
                 return (0, i.jsx)("div", {
-                    className: u.drawerSizingWrapper,
+                    className: d.drawerSizingWrapper,
                     ref: n,
                     children: (0, i.jsx)("div", {
-                        className: u.contentWrapper,
+                        className: d.contentWrapper,
                         children: (0, i.jsx)(a.AppLauncherHistoryContext.Provider, {
                             value: {
-                                history: _,
-                                setHistory: c,
-                                currentView: E,
-                                pushHistory: I,
-                                goBack: T
+                                history: c,
+                                setHistory: E,
+                                currentView: I,
+                                pushHistory: T,
+                                goBack: f
                             },
                             children: t
                         })
                     })
                 })
             })
+        },
+        98880: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i, r, s = n("735250"),
+                a = n("470079"),
+                o = n("120356"),
+                l = n.n(o),
+                u = n("481060"),
+                d = n("778569"),
+                _ = n("182906"),
+                c = n("220082"),
+                E = n("318661"),
+                I = n("768581"),
+                T = n("792125"),
+                f = n("783097"),
+                S = n("753972"),
+                h = n("231338"),
+                A = n("689938"),
+                m = n("741382");
+
+            function N(e) {
+                let {
+                    application: t,
+                    look: n = "large_banner",
+                    isPartner: i,
+                    onClick: r
+                } = e, {
+                    iconURL: o,
+                    name: d,
+                    description: _
+                } = a.useMemo(() => (0, f.isRealApplication)(t) ? {
+                    iconURL: I.default.getApplicationIconURL({
+                        id: t.id,
+                        icon: t.icon,
+                        bot: t.bot,
+                        botIconFirst: !0
+                    }),
+                    name: t.name,
+                    description: t.description
+                } : {
+                    iconURL: null,
+                    name: A.default.Messages.APP_LAUNCHER_BUILT_IN_SECTION_NAME,
+                    description: A.default.Messages.APP_LAUNCHER_BUILT_IN_SECTION_DESCRIPTION
+                }, [t]), E = (0, c.default)(o, "");
+                return (0, s.jsxs)(u.Clickable, {
+                    className: m.container,
+                    onClick: r,
+                    children: [(0, s.jsxs)("div", {
+                        className: l()(m.bannerImageContainer, {
+                            [m.mediumBanner]: "medium_banner" === n,
+                            [m.largeBanner]: "large_banner" === n
+                        }),
+                        children: [(0, s.jsx)(p, {
+                            application: t,
+                            fallbackColor: E
+                        }), i && (0, s.jsx)("div", {
+                            className: m.partnerLabelWrapper,
+                            children: (0, s.jsx)(u.Text, {
+                                className: (0, T.getThemeClass)(h.ThemeTypes.DARK),
+                                variant: "text-sm/medium",
+                                color: "text-normal",
+                                children: A.default.Messages.APP_DIRECTORY_PARTNER
+                            })
+                        })]
+                    }), (0, s.jsxs)("div", {
+                        className: m.appDetailsContainer,
+                        children: [null != o && (0, s.jsx)(S.default, {
+                            src: o,
+                            className: m.icon,
+                            "aria-hidden": !0
+                        }), (0, s.jsxs)("div", {
+                            className: m.appDetails,
+                            children: [(0, s.jsx)(u.Heading, {
+                                variant: "heading-md/semibold",
+                                color: "header-primary",
+                                lineClamp: 1,
+                                children: d
+                            }), (0, s.jsx)(u.Text, {
+                                variant: "text-sm/normal",
+                                color: "text-secondary",
+                                lineClamp: 1,
+                                children: _
+                            })]
+                        })]
+                    })]
+                })
+            }
+
+            function p(e) {
+                let {
+                    application: t,
+                    fallbackColor: n
+                } = e;
+                if ((0, f.isRealApplication)(t)) {
+                    if ((0, f.isEmbeddedApp)({
+                            application: t
+                        })) return (0, s.jsx)(O, {
+                        application: t
+                    });
+                    if (null != t.bot) return (0, s.jsx)(C, {
+                        bot: t.bot
+                    })
+                }
+                return (0, s.jsx)("div", {
+                    className: m.bannerImage,
+                    style: {
+                        backgroundColor: n
+                    }
+                })
+            }
+
+            function O(e) {
+                let {
+                    application: t
+                } = e, n = (0, d.default)({
+                    applicationId: t.id,
+                    size: 600,
+                    names: ["embedded_cover"]
+                });
+                return (0, s.jsx)(_.default, {
+                    imageBackground: n,
+                    applicationName: t.name,
+                    imageClassName: m.bannerImage,
+                    imageNotFoundClassName: m.bannerImage
+                })
+            }
+
+            function C(e) {
+                let {
+                    bot: t
+                } = e, n = (0, E.default)(t.id), i = a.useMemo(() => null == n ? void 0 : n.getBannerURL({
+                    canAnimate: !1,
+                    size: 600
+                }), [n]);
+                return (0, s.jsx)("img", {
+                    src: i,
+                    alt: "",
+                    className: m.bannerImage
+                })
+            }(i = r || (r = {})).NO_BANNER = "no_banner", i.MEDIUM_BANNER = "medium_banner", i.LARGE_BANNER = "large_banner", t.default = N, N.Looks = r
         },
         753972: function(e, t, n) {
             "use strict";
@@ -78056,29 +78205,33 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return c
                 }
             });
             var i = n("735250"),
                 r = n("470079"),
-                s = n("330711"),
-                a = n("270292"),
-                o = n("481060"),
-                l = n("695676"),
-                u = n("259255");
+                s = n("120356"),
+                a = n.n(s),
+                o = n("330711"),
+                l = n("270292"),
+                u = n("481060"),
+                d = n("695676"),
+                _ = n("259255");
 
-            function d() {
+            function c(e) {
                 let {
-                    goBack: e
-                } = (0, l.useAppLauncherHistoryContext)(), t = r.useCallback(() => {
-                    e()
-                }, [e]);
-                return (0, i.jsx)(o.Clickable, {
-                    "aria-label": s.default.Messages.BACK,
-                    onClick: t,
-                    className: u.clickable,
-                    children: (0, i.jsx)(a.ArrowLargeLeftIcon, {
-                        color: o.tokens.colors.INTERACTIVE_ACTIVE,
+                    className: t
+                } = e, {
+                    goBack: n
+                } = (0, d.useAppLauncherHistoryContext)(), s = r.useCallback(() => {
+                    n()
+                }, [n]);
+                return (0, i.jsx)(u.Clickable, {
+                    "aria-label": o.default.Messages.BACK,
+                    onClick: s,
+                    className: a()(_.clickable, t),
+                    children: (0, i.jsx)(l.ArrowLargeLeftIcon, {
+                        color: u.tokens.colors.INTERACTIVE_ACTIVE,
                         width: 18,
                         height: 18
                     })
@@ -78637,131 +78790,6 @@
                 })
             }
         },
-        805522: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i, r, s = n("735250"),
-                a = n("470079"),
-                o = n("120356"),
-                l = n.n(o),
-                u = n("481060"),
-                d = n("778569"),
-                _ = n("182906"),
-                c = n("220082"),
-                E = n("318661"),
-                I = n("768581"),
-                T = n("792125"),
-                f = n("783097"),
-                S = n("753972"),
-                h = n("231338"),
-                A = n("689938"),
-                m = n("573214");
-
-            function N(e) {
-                let {
-                    application: t,
-                    look: n = "large_banner",
-                    isPartner: i,
-                    onClick: r
-                } = e, o = a.useMemo(() => I.default.getApplicationIconURL({
-                    id: t.id,
-                    icon: t.icon,
-                    bot: t.bot,
-                    botIconFirst: !0
-                }), [t]), d = (0, c.default)(o, "");
-                return (0, s.jsxs)(u.Clickable, {
-                    className: m.container,
-                    onClick: r,
-                    children: [(0, s.jsxs)("div", {
-                        className: l()(m.bannerImageContainer, {
-                            [m.mediumBanner]: "medium_banner" === n,
-                            [m.largeBanner]: "large_banner" === n
-                        }),
-                        children: [(0, s.jsx)(p, {
-                            application: t,
-                            fallbackColor: d
-                        }), i && (0, s.jsx)("div", {
-                            className: m.partnerLabelWrapper,
-                            children: (0, s.jsx)(u.Text, {
-                                className: (0, T.getThemeClass)(h.ThemeTypes.DARK),
-                                variant: "text-sm/medium",
-                                color: "text-normal",
-                                children: A.default.Messages.APP_DIRECTORY_PARTNER
-                            })
-                        })]
-                    }), (0, s.jsxs)("div", {
-                        className: m.appDetailsContainer,
-                        children: [null != o && (0, s.jsx)(S.default, {
-                            src: o,
-                            className: m.icon,
-                            "aria-hidden": !0
-                        }), (0, s.jsxs)("div", {
-                            className: m.appDetails,
-                            children: [(0, s.jsx)(u.Heading, {
-                                variant: "heading-md/semibold",
-                                color: "header-primary",
-                                lineClamp: 1,
-                                children: t.name
-                            }), (0, s.jsx)(u.Text, {
-                                variant: "text-sm/normal",
-                                color: "text-secondary",
-                                lineClamp: 1,
-                                children: t.description
-                            })]
-                        })]
-                    })]
-                })
-            }
-
-            function p(e) {
-                let {
-                    application: t,
-                    fallbackColor: n
-                } = e;
-                return (0, f.isEmbeddedApp)({
-                    application: t
-                }) ? (0, s.jsx)(O, {
-                    application: t
-                }) : null != t.bot ? (0, s.jsx)(C, {
-                    bot: t.bot
-                }) : (0, s.jsx)("div", {
-                    className: m.bannerImage,
-                    style: {
-                        backgroundColor: n
-                    }
-                })
-            }
-
-            function O(e) {
-                let {
-                    application: t
-                } = e, n = (0, d.default)({
-                    applicationId: t.id,
-                    size: 600,
-                    names: ["embedded_cover"]
-                });
-                return (0, s.jsx)(_.default, {
-                    imageBackground: n,
-                    applicationName: t.name,
-                    imageClassName: m.bannerImage,
-                    imageNotFoundClassName: m.bannerImage
-                })
-            }
-
-            function C(e) {
-                let {
-                    bot: t
-                } = e, n = (0, E.default)(t.id), i = a.useMemo(() => null == n ? void 0 : n.getBannerURL({
-                    canAnimate: !1,
-                    size: 600
-                }), [n]);
-                return (0, s.jsx)("img", {
-                    src: i,
-                    alt: "",
-                    className: m.bannerImage
-                })
-            }(i = r || (r = {})).NO_BANNER = "no_banner", i.MEDIUM_BANNER = "medium_banner", i.LARGE_BANNER = "large_banner", t.default = N, N.Looks = r
-        },
         601053: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -78790,6 +78818,7 @@
                             children: t
                         }), null != o && (0, i.jsx)(r.Clickable, {
                             className: a.viewMore,
+                            onClick: o,
                             children: (0, i.jsx)(r.Text, {
                                 variant: "text-md/semibold",
                                 color: "text-brand",
@@ -78809,7 +78838,7 @@
                 default: function() {
                     return v
                 }
-            }), n("47120");
+            }), n("47120"), n("653041");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("392711"),
@@ -78828,7 +78857,7 @@
                 h = n("10718"),
                 A = n("148958"),
                 m = n("695676"),
-                N = n("805522"),
+                N = n("98880"),
                 p = n("601053"),
                 O = n("105862"),
                 C = n("689079"),
@@ -78893,7 +78922,7 @@
                     pushHistory: n
                 } = (0, m.useAppLauncherHistoryContext)(), {
                     sectionDescriptors: s,
-                    filterSection: a
+                    filterSection: o
                 } = h.useDiscovery(t, {
                     commandType: _.ApplicationCommandType.CHAT
                 }, {
@@ -78902,19 +78931,34 @@
                     includeFrecency: !0
                 });
                 r.useEffect(() => {
-                    a(C.BuiltInSectionId.FRECENCY)
-                }, [a]);
-                let o = s.filter(e => e.id !== C.BuiltInSectionId.FRECENCY && e.id !== C.BuiltInSectionId.BUILT_IN),
-                    l = (0, A.useSortApplicationsViaFrecency)(o);
-                return (0, i.jsx)(p.default, {
-                    title: R.default.Messages.APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER,
-                    children: l.map(e => {
+                    o(C.BuiltInSectionId.FRECENCY)
+                }, [o]);
+                let l = r.useMemo(() => s.filter(e => e.id !== C.BuiltInSectionId.FRECENCY && e.id !== C.BuiltInSectionId.BUILT_IN), [s]),
+                    u = (0, A.useSortApplicationsViaFrecency)(l),
+                    d = r.useMemo(() => a().compact(u.map(e => {
                         let {
                             application: t
                         } = e;
-                        return null != t && (0, i.jsx)(N.default, {
+                        return t
+                    })).map(e => ({
+                        application: e
+                    })), [u]),
+                    {
+                        items: c,
+                        handleViewMore: E
+                    } = b(R.default.Messages.APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER, N.default.Looks.NO_BANNER, d, 8);
+                return (0, i.jsx)(p.default, {
+                    title: R.default.Messages.APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER,
+                    onClickViewMore: E,
+                    children: c.map(e => {
+                        let {
+                            application: t,
+                            isPartner: r
+                        } = e;
+                        return (0, i.jsx)(N.default, {
                             application: t,
                             look: N.default.Looks.NO_BANNER,
+                            isPartner: r,
                             onClick: e => {
                                 e.stopPropagation(), n({
                                     type: m.HistoryItemType.APPLICATION,
@@ -78929,9 +78973,7 @@
             function P(e) {
                 let {
                     channel: t
-                } = e, {
-                    pushHistory: n
-                } = (0, m.useAppLauncherHistoryContext)(), s = function(e) {
+                } = e, n = function(e) {
                     let {
                         channelId: t,
                         location: n
@@ -78948,10 +78990,10 @@
                 }({
                     channelId: t.id,
                     location: o.AppRecommendationsLocation.APP_LAUNCHER_TEXT
-                }), a = function(e) {
+                }), s = function(e) {
                     let {
                         channel: t,
-                        recommendations: n
+                        recommendationsSections: n
                     } = e;
                     (0, T.useFetchDeveloperActivityShelfItems)();
                     let i = (0, I.default)({
@@ -78969,53 +79011,84 @@
                     }, [n, i])
                 }({
                     channel: t,
-                    recommendations: s
+                    recommendationsSections: n
                 });
                 return (0, i.jsx)(i.Fragment, {
-                    children: s.map(e => {
+                    children: n.map(e => (0, i.jsx)(U, {
+                        recommendationsSection: e,
+                        remainingActivities: s
+                    }, e.key))
+                })
+            }
+
+            function U(e) {
+                let {
+                    recommendationsSection: t,
+                    remainingActivities: n
+                } = e, {
+                    pushHistory: s
+                } = (0, m.useAppLauncherHistoryContext)(), a = t.section_title, o = t.type === l.AppRecommendationsType.BANNER_CARDS ? N.default.Looks.LARGE_BANNER : N.default.Looks.NO_BANNER, {
+                    items: u,
+                    handleViewMore: d
+                } = b(a, o, r.useMemo(() => {
+                    let e = t.items.map(e => {
                         let {
-                            key: t,
-                            type: r,
-                            section_title: s,
-                            items: o,
-                            appends_remaining_activities: u
-                        } = e, d = r === l.AppRecommendationsType.BANNER_CARDS ? N.default.Looks.LARGE_BANNER : N.default.Looks.NO_BANNER;
-                        return (0, i.jsxs)(p.default, {
-                            title: s,
-                            children: [o.map(e => {
-                                let {
-                                    application: t,
-                                    is_partner: r
-                                } = e;
-                                return (0, i.jsx)(N.default, {
-                                    application: t,
-                                    look: d,
-                                    onClick: e => {
-                                        e.stopPropagation(), n({
-                                            type: m.HistoryItemType.APPLICATION,
-                                            application: t
-                                        })
-                                    },
-                                    isPartner: r
-                                }, t.id)
-                            }), u && a.map(e => {
-                                let {
+                            application: t,
+                            is_partner: n
+                        } = e;
+                        return {
+                            application: t,
+                            isPartner: n
+                        }
+                    });
+                    return t.appends_remaining_activities && e.push(...n.map(e => {
+                        let {
+                            application: t
+                        } = e;
+                        return {
+                            application: t
+                        }
+                    })), e
+                }, [t.items, t.appends_remaining_activities, n]), 8);
+                return (0, i.jsx)(p.default, {
+                    title: t.section_title,
+                    onClickViewMore: d,
+                    children: u.map(e => {
+                        let {
+                            application: t,
+                            isPartner: n
+                        } = e;
+                        return (0, i.jsx)(N.default, {
+                            application: t,
+                            look: o,
+                            onClick: e => {
+                                e.stopPropagation(), s({
+                                    type: m.HistoryItemType.APPLICATION,
                                     application: t
-                                } = e;
-                                return (0, i.jsx)(N.default, {
-                                    application: t,
-                                    look: d,
-                                    onClick: e => {
-                                        e.stopPropagation(), n({
-                                            type: m.HistoryItemType.APPLICATION,
-                                            application: t
-                                        })
-                                    }
-                                }, t.id)
-                            })]
-                        }, t)
+                                })
+                            },
+                            isPartner: n
+                        }, t.id)
                     })
                 })
+            }
+
+            function b(e, t, n, i) {
+                let {
+                    pushHistory: s
+                } = (0, m.useAppLauncherHistoryContext)();
+                return r.useMemo(() => n.length <= i ? {
+                    items: n,
+                    handleViewMore: void 0
+                } : {
+                    items: n.slice(0, i),
+                    handleViewMore: () => s({
+                        type: m.HistoryItemType.LIST,
+                        title: e,
+                        look: t,
+                        items: n
+                    })
+                }, [n, i, s, t, e])
             }
         },
         105862: function(e, t, n) {
@@ -79062,6 +79135,64 @@
                         "aria-label": u.default.Messages.APP_LAUNCHER_HOME_LEARN_MORE_SECTION_TITLE,
                         onClick: e,
                         children: u.default.Messages.APP_LAUNCHER_HOME_LEARN_MORE_SECTION_LEARN_MORE
+                    })]
+                })
+            }
+        },
+        684256: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            });
+            var i = n("735250"),
+                r = n("481060"),
+                s = n("695676"),
+                a = n("98880"),
+                o = n("772606"),
+                l = n("274017");
+
+            function u(e) {
+                let {
+                    title: t,
+                    look: n,
+                    items: u
+                } = e, {
+                    pushHistory: d
+                } = (0, s.useAppLauncherHistoryContext)();
+                return (0, i.jsxs)("div", {
+                    className: l.container,
+                    children: [(0, i.jsxs)("div", {
+                        className: l.header,
+                        children: [(0, i.jsx)(o.default, {
+                            className: l.backButton
+                        }), (0, i.jsx)(r.Heading, {
+                            variant: "heading-md/medium",
+                            color: "header-primary",
+                            children: t
+                        })]
+                    }), (0, i.jsx)(r.Scroller, {
+                        children: (0, i.jsx)("div", {
+                            className: l.appGrid,
+                            children: u.map(e => {
+                                let {
+                                    application: t,
+                                    isPartner: r
+                                } = e;
+                                return (0, i.jsx)(a.default, {
+                                    application: t,
+                                    look: n,
+                                    onClick: e => {
+                                        e.stopPropagation(), d({
+                                            type: s.HistoryItemType.APPLICATION,
+                                            application: t
+                                        })
+                                    },
+                                    isPartner: r
+                                }, t.id)
+                            })
+                        })
                     })]
                 })
             }
@@ -85029,50 +85160,56 @@
                 }
             }), n("47120");
             var i, r, s, a, o, l, u = n("442837"),
-                d = n("570140");
+                d = n("570140"),
+                _ = n("973616");
             (s = i || (i = {}))[s.FETCHING = 0] = "FETCHING", s[s.FETCHED = 1] = "FETCHED", s[s.ERROR = 2] = "ERROR";
-            let _ = {},
-                c = {},
-                E = new Set,
-                I = {};
-            class T extends(r = u.default.Store) {
+            let c = {},
+                E = {},
+                I = new Set,
+                T = {};
+            class f extends(r = u.default.Store) {
                 getApplication(e) {
-                    if (null != e) return _[e]
-                }
-                getApplications() {
-                    return _
-                }
-                getApplicationFetchState(e) {
                     if (null != e) return c[e]
                 }
-                getApplicationFetchStates() {
+                getApplicationRecord(e) {
+                    if (null == e) return;
+                    let t = c[e];
+                    if (null != t) return _.default.createFromServer(t)
+                }
+                getApplications() {
                     return c
                 }
+                getApplicationFetchState(e) {
+                    if (null != e) return E[e]
+                }
+                getApplicationFetchStates() {
+                    return E
+                }
                 isInvalidApplication(e) {
-                    return null != e && E.has(e)
+                    return null != e && I.has(e)
                 }
                 getInvalidApplicationIds() {
-                    return E
+                    return I
                 }
                 isFetching(e) {
                     return 0 === this.getApplicationFetchState(e)
                 }
                 getApplicationLastFetchTime(e) {
-                    if (null != e) return I[e]
+                    if (null != e) return T[e]
                 }
             }
-            l = "ApplicationDirectoryApplicationsStore", (o = "displayName") in(a = T) ? Object.defineProperty(a, o, {
+            l = "ApplicationDirectoryApplicationsStore", (o = "displayName") in(a = f) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new T(d.default, {
+            }) : a[o] = l, t.default = new f(d.default, {
                 APPLICATION_DIRECTORY_FETCH_APPLICATION: function(e) {
                     let {
                         applicationId: t
                     } = e;
-                    c = {
-                        ...c,
+                    E = {
+                        ...E,
                         [t]: 0
                     }
                 },
@@ -85080,28 +85217,28 @@
                     let {
                         application: t
                     } = e;
-                    _ = {
-                        ..._,
-                        [t.id]: t
-                    }, c = {
+                    c = {
                         ...c,
+                        [t.id]: t
+                    }, E = {
+                        ...E,
                         [t.id]: 1
                     };
                     let n = Date.now();
-                    I = {
-                        ...I,
+                    T = {
+                        ...T,
                         [t.id]: n
-                    }, E.has(t.id) && (E.delete(t.id), E = new Set(E))
+                    }, I.has(t.id) && (I.delete(t.id), I = new Set(I))
                 },
                 APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE: function(e) {
                     let {
                         applicationId: t,
                         isInvalidApplication: n
                     } = e;
-                    c = {
-                        ...c,
+                    E = {
+                        ...E,
                         [t]: 2
-                    }, n && (E.add(t), E = new Set(E))
+                    }, n && (I.add(t), I = new Set(I))
                 }
             })
         },
@@ -93735,8 +93872,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302333", "302333"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302333")), t = 0), t
+                let t = parseInt((e = "302378", "302378"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302378")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121991,8 +122128,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302333",
-                    versionHash: "9f5d45da1742efaa96e9aca34e4b8004565d10d6"
+                    buildNumber: "302378",
+                    versionHash: "d013555b1c0c4977bf1d2bf14ba871bfbb969f36"
                 }
             }
             n.r(t), n.d(t, {
@@ -178234,8 +178371,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718407504750",
-                                    build_number: "302333"
+                                    built_at: "1718412526401",
+                                    build_number: "302378"
                                 }
                             },
                             retries: 1
@@ -255397,7 +255534,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9f5d45da1742efaa96e9aca34e4b8004565d10d6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d013555b1c0c4977bf1d2bf14ba871bfbb969f36"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284063,7 +284200,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302333"
+                                build_number: "302378"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291375,7 +291512,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302333", "302333"), 10);
+                let s = parseInt((n = "302378", "302378"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319554,4 +319691,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.2741f162411f4407da4b.js.map
+//# sourceMappingURL=42458.79ca09bf14fffd14a7d3.js.map
