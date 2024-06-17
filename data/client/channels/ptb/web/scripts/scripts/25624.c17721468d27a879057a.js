@@ -40452,7 +40452,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, d.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302599", ", Version Hash: ").concat("c285364f5ebc32c3d7b5361de3349b1d1c90c7b9")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302615", ", Version Hash: ").concat("7d31894e75a2b7b67500f035253660366234b60d")), i.Z.setTags({
                 appContext: h.e3s
             }), c.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -59805,10 +59805,9 @@
                 QUESTS_MOBILE_EMBED_UNKNOWN_TITLE: "This is an invalid quest",
                 QUESTS_MOBILE_EMBED_UNKNOWN_BODY: "Check to confirm you're using a valid quest URL",
                 QUESTS_MOBILE_EMBED_UNSUPPORTED_TITLE: "This Quest is not available on mobile",
+                E2EE_ENCRYPTION: "Encryption",
                 E2EE_VERIFICATION_CODE: "Verification Code",
-                E2EE_USER_VERIFY_MODAL_SUBTITLE: "Compare the numbers below with {username}. If they match, mark them as verified.",
                 E2EE_VOICE_PRIVACY_CODE: "Voice Privacy Code",
-                E2EE_USER_VERIFY_FOOTER_TEXT: "A new code is generated when either of you join a call or change devices. [Learn more about end-to-end encryption.]({helpArticle})",
                 E2EE_CLEAR_VERIFICATION: "Clear Verification",
                 E2EE_MARK_AS_VERIFIED: "Mark as Verified",
                 E2EE_VIEW_VERIFICATION_CODE: "View Verification Code",
@@ -59817,9 +59816,13 @@
                 E2EE_PRIVACY: "Privacy",
                 E2EE_END_TO_END_ENCRYPTION: "End-to-end encryption",
                 E2EE_END_TO_END_ENCRYPTED: "End-to-end encrypted",
-                E2EE_CALL_DETAILS_SUBTITLE: "Only you and your friends on this call can hear you. Nobody else – not even Wumpus – can listen in!",
-                E2EE_CALL_DETAILS_FOOTER_TEXT: "A new code is generated when people join or leave this call. [Learn more about end-to-end encryption.]({helpArticle})",
-                E2EE_ENCRYPTION: "Encryption",
+                E2EE_PRIVACY_CODE: "Privacy Code",
+                E2EE_CHECK_PRIVACY_CODE: "Check this call's privacy code",
+                E2EE_USER_VERIFICATION_SUBTITLE: "Compare the numbers below with {username}. If they match, mark them as verified.",
+                E2EE_USER_VERIFICATION_FOOTER_TEXT: "A new code is generated when either of you join a call or change devices. [Learn more about end-to-end encryption.]({helpArticle})",
+                E2EE_RTC_PANEL_CALL_VERIFICATION_SUBTITLE: "Only you and your friends on this call can hear you. Nobody else – not even Wumpus – can listen in!",
+                E2EE_CALL_VERIFICATION_SUBTITLE: "Compare the numbers below with your friends. If they match, this call is end-to-end encrypted.",
+                E2EE_CALL_VERIFICATION_FOOTER_TEXT: "A new code is generated when people join or leave this call. [Learn more about end-to-end encryption.]({helpArticle})",
                 E2EE_SETTINGS_SUBTITLE: "All of your calls on Discord are end-to-end encrypted. That means nobody — not even Wumpus — can listen in on your conversations. You can verify your privacy by comparing verification codes with whoever you’re talking to. [Learn more about end-to-end encryption.]({helpArticle})",
                 E2EE_VERIFICATION_CODES: "Verification codes",
                 E2EE_ENABLE_PERSISTENT_CODES: "Enable persistent verification codes",
@@ -59834,10 +59837,7 @@
                 E2EE_USER_VERIFIED_HOURS_AGO: "Verified {count} {count, plural, =1 {hour} other {hours}} ago",
                 E2EE_USER_VERIFIED_MINUTES_AGO: "Verified {count} {count, plural, =1 {minute} other {minutes}} ago",
                 E2EE_USER_VERIFIED_SECONDS_AGO: "Verified {count} {count, plural, =1 {second} other {seconds}} ago",
-                E2EE_DEVICES_COUNT: "{count} {count, plural, =1 {device} other {devices}}",
-                E2EE_CHECK_PRIVACY_CODE: "Check this call's privacy code",
-                E2EE_MOBILE_CALL_DETAILS_SUBTITLE: "Compare this code with your friends. If these numbers are the same on everyone's screen, then this call is end-to-end encrypted.",
-                E2EE_PRIVACY_CODE: "Privacy Code"
+                E2EE_DEVICES_COUNT: "{count} {count, plural, =1 {device} other {devices}}"
             })
         },
         539590: function(e) {
@@ -94174,8 +94174,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302599", "302599"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302599")), t = 0), t
+                let t = parseInt((e = "302615", "302615"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302615")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122457,8 +122457,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302599",
-                    versionHash: "c285364f5ebc32c3d7b5361de3349b1d1c90c7b9"
+                    buildNumber: "302615",
+                    versionHash: "7d31894e75a2b7b67500f035253660366234b60d"
                 }
             }
             n.d(t, {
@@ -122993,7 +122993,7 @@
                 u = n(31336),
                 _ = n(19759);
             let d = (0, s.Un)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("39709"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("11250"), n.e("6380"), n.e("8016"), n.e("57878"), n.e("4970"), n.e("77172"), n.e("67535"), n.e("32493"), n.e("95393"), n.e("86977"), n.e("68136"), n.e("18101"), n.e("81539"), n.e("90508"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("4934"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("22646"), n.e("38779"), n.e("55207"), n.e("12549"), n.e("15357"), n.e("83256"), n.e("46388"), n.e("87624"), n.e("47403"), n.e("5528"), n.e("44517"), n.e("39072"), n.e("43331"), n.e("11623"), n.e("97403"), n.e("30419"), n.e("18824"), n.e("49508"), n.e("27385"), n.e("31649"), n.e("30634"), n.e("12434"), n.e("75308"), n.e("54807"), n.e("81312")]).then(n.bind(n, 678717)),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("39709"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("11250"), n.e("6380"), n.e("8016"), n.e("57878"), n.e("4970"), n.e("77172"), n.e("67535"), n.e("32493"), n.e("95393"), n.e("86977"), n.e("68136"), n.e("18101"), n.e("81539"), n.e("90508"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("4934"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("22646"), n.e("38779"), n.e("55207"), n.e("12549"), n.e("15357"), n.e("83256"), n.e("46388"), n.e("87624"), n.e("47403"), n.e("5528"), n.e("44517"), n.e("39072"), n.e("43331"), n.e("11623"), n.e("97403"), n.e("30419"), n.e("18824"), n.e("49508"), n.e("27385"), n.e("31649"), n.e("30634"), n.e("44388"), n.e("75308"), n.e("54807"), n.e("81312")]).then(n.bind(n, 678717)),
                 webpackId: 678717
             });
 
@@ -178480,8 +178480,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718652255177",
-                                    build_number: "302599"
+                                    built_at: "1718653315221",
+                                    build_number: "302615"
                                 }
                             },
                             retries: 1
@@ -255542,7 +255542,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c285364f5ebc32c3d7b5361de3349b1d1c90c7b9"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7d31894e75a2b7b67500f035253660366234b60d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284003,7 +284003,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302599"
+                                build_number: "302615"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (d.user_id = c.id, d.user_name = c.tag, null != c.email && (d.email = c.email));
@@ -291315,7 +291315,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302599", "302599"), 10);
+                let s = parseInt((n = "302615", "302615"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -319212,4 +319212,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.7f0b5b31cbe60b3d173d.js.map
+//# sourceMappingURL=25624.c17721468d27a879057a.js.map
