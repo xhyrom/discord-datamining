@@ -22843,6 +22843,26 @@
                 content: "content_acf450"
             }
         },
+        682396: function(e) {
+            "use strict";
+            e.exports = {
+                background: "background__163b6",
+                backgroundAnimation: "backgroundAnimation__6d4c8",
+                backgroundWrapper: "backgroundWrapper__6aed6",
+                interactable: "interactable__0f010",
+                logo: "logo_eac137",
+                promotedBadge: "promotedBadge__08b87",
+                promotedBadgeIcon: "promotedBadgeIcon_fe7125",
+                promotedBadgeWrapper: "promotedBadgeWrapper__0aff8",
+                questAvailable: "questAvailable__6f6f2",
+                questAvailableText: "questAvailableText_b885ab",
+                submenuIcon: "submenuIcon_eb407b",
+                submenuWrapper: "submenuWrapper_a62505",
+                white: "white__898e4",
+                wrapper: "wrapper_a141c1",
+                wreathIcon: "wreathIcon__4ce98"
+            }
+        },
         424716: function(e) {
             "use strict";
             e.exports = {
@@ -22934,9 +22954,12 @@
                 flex: "flex_fcc03e",
                 headerText: "headerText__020fc",
                 heroAsset: "heroAsset__8e1c6",
+                heroAssetDarken: "heroAssetDarken__79f8f",
+                heroAssetTint: "heroAssetTint__46067",
                 heroAssetWrapper: "heroAssetWrapper__954c7",
                 iconButton: "iconButton_a5db4c",
                 interactiveNormal: "interactiveNormal_a449a5",
+                legibilityGradient: "legibilityGradient__4708e",
                 promotedBadge: "promotedBadge__73648",
                 promotedBadgeIcon: "promotedBadgeIcon__07043",
                 promotedBadgeWrapper: "promotedBadgeWrapper__130d9",
@@ -22950,7 +22973,6 @@
                 submenuIcon: "submenuIcon__4f60b",
                 submenuWrapper: "submenuWrapper__19139",
                 title: "title_de2774",
-                utils: "utils_ab6626",
                 white: "white__5d308"
             }
         },

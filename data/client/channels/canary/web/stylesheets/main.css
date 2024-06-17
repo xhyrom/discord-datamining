@@ -71313,12 +71313,144 @@ html .invoiceCancelRow_aa7946 {
     overflow: hidden
 }
 
+.wrapper_a141c1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    z-index: 2;
+    border-radius: inherit;
+    pointer-events: none
+}
+
+.interactable__0f010 {
+    pointer-events: all
+}
+
+.wreathIcon__4ce98 {
+    height: 24px;
+    margin-right: 4px;
+    width: 24px;
+    margin-left: -4px
+}
+
+.questAvailable__6f6f2 {
+    flex: 1 1 auto;
+    pointer-events: none
+}
+
+.questAvailableText_b885ab {
+    text-align: right;
+    white-space: nowrap
+}
+
+.submenuWrapper_a62505 {
+    cursor: pointer;
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    opacity: .8;
+    position: relative;
+    transition: opacity.125s;
+    margin-left: 12px
+}
+
+.submenuWrapper_a62505:focus,
+.submenuWrapper_a62505:hover {
+    opacity: 1
+}
+
+.submenuWrapper_a62505:active {
+    opacity: .7
+}
+
+.submenuIcon_eb407b {
+    height: 16px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 16px
+}
+
+.white__898e4 {
+    color: var(--white-500)
+}
+
+.promotedBadgeWrapper__0aff8 {
+    flex: 0 0 auto;
+    position: absolute;
+    right: 8px;
+    display: flex
+}
+
+.logo_eac137 {
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity.125s
+}
+
+.logo_eac137:hover {
+    opacity: 1
+}
+
+.promotedBadge__08b87 {
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+    opacity: .8;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    transition: opacity.125s;
+    flex: 1 0 auto
+}
+
+.promotedBadge__08b87:hover {
+    opacity: 1
+}
+
+.submenuWrapper_a62505:before {
+    background-color: hsl(var(--white-500-hsl)/.4);
+    content: "";
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-6px, -50%);
+    width: 1px
+}
+
+.promotedBadgeIcon_fe7125 {
+    flex: 0 0 auto;
+    height: 12px;
+    width: 12px
+}
+
+.background__163b6 {
+    background-color: transparent
+}
+
+.backgroundAnimation__6d4c8 {
+    opacity: .5
+}
+
+.backgroundWrapper__6aed6 {
+    pointer-events: none
+}
+
 .wrapper_a1297f {
     position: absolute;
     top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1;
     border-radius: 8px 8px 0 0;
     pointer-events: none;
@@ -71329,9 +71461,9 @@ html .invoiceCancelRow_aa7946 {
     position: absolute;
     border-radius: 8px 8px 0 0;
     top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(180deg, rgba(45, 199, 113, 5%)0%, rgba(45, 199, 113, .1)100%)
 }
 
@@ -71722,18 +71854,6 @@ html .invoiceCancelRow_aa7946 {
     z-index: 2
 }
 
-.utils_ab6626 {
-    align-items: center;
-    -webkit-backdrop-filter: blur(10px)brightness(.8);
-    backdrop-filter: blur(10px)brightness(.8);
-    border-radius: 8px;
-    display: flex;
-    flex: 0 0 auto;
-    justify-content: space-between;
-    padding: 4px 8px;
-    margin-bottom: 42px
-}
-
 .questAcceptedHeader_f7d1f7 {
     display: flex;
     flex-direction: row
@@ -71751,6 +71871,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
+    margin-top: 74px;
     margin-bottom: 2px
 }
 
@@ -71811,10 +71932,9 @@ html .invoiceCancelRow_aa7946 {
     z-index: 1
 }
 
-.heroAssetWrapper__954c7:after {
+.legibilityGradient__4708e {
     background: var(--background-secondary-alt);
     bottom: 0;
-    content: "";
     height: 100%;
     left: 0;
     -webkit-mask-image: linear-gradient(180deg, transparent, black);
@@ -71831,6 +71951,23 @@ html .invoiceCancelRow_aa7946 {
     position: absolute;
     width: 240px;
     z-index: 0
+}
+
+.heroAssetTint__46067 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: .6
+}
+
+.heroAssetDarken__79f8f {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    background-color: var(--primary-760)
 }
 
 .cta_f1dfa0 {
@@ -141628,4 +141765,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4d27ced76eb0dab2939e.css.map*/
+/*# sourceMappingURL=99387.89df44001b6257f89a41.css.map*/
