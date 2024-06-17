@@ -15789,6 +15789,12 @@
                 geoRestrictedBadge: "geoRestrictedBadge__8f321"
             }
         },
+        427122: function(e) {
+            "use strict";
+            e.exports = {
+                guildNotif: "guildNotif_f64bc7"
+            }
+        },
         41004: function(e) {
             "use strict";
             e.exports = {

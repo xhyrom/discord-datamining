@@ -35553,6 +35553,13 @@ img.thumbnail__18ece {
     color: var(--black)
 }
 
+.guildNotif_f64bc7 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--brand-500)
+}
+
 @value popoutBackgroundColor var(--bg-surface-overlay);
 @value guildsBarWidth 72px;
 @value popoutWidth 256px;
@@ -141782,4 +141789,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3d24221a0480dccd110e.css.map*/
+/*# sourceMappingURL=99387.1629a82dcbdfdd150262.css.map*/
