@@ -40452,7 +40452,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, d.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302789", ", Version Hash: ").concat("5458db25309678dfb930153f0456063136cb59fa")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302796", ", Version Hash: ").concat("9a809d679a9ce038090146742ce899001f614d25")), i.Z.setTags({
                 appContext: h.e3s
             }), c.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42247,12 +42247,12 @@
                 APP_LAUNCHER_VIEW_LESS_ROW: "View less",
                 APP_LAUNCHER_SHOW_MORE: "Show More",
                 APP_LAUNCHER_SHOW_LESS: "Show Less",
-                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_TITLE: "New to Apps?",
-                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_BODY: "Check out our starter guide to learn about the cool things apps can do.",
+                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_TITLE: "Have Questions?",
+                APP_LAUNCHER_HOME_LEARN_MORE_SECTION_BODY: "Visit our help center to learn more about using and discovering apps on Discord.",
                 APP_LAUNCHER_HOME_LEARN_MORE_SECTION_LEARN_MORE: "Learn More",
                 APP_LAUNCHER_ACTIVITY_NOT_AVAILABLE_IN_THREAD: "Activities cannot be launched in Threads at this time",
-                APP_LAUNCHER_GLOBAL_SEARCH_COACHMARK_TITLE: "Find hundreds of Apps",
-                APP_LAUNCHER_GLOBAL_SEARCH_COACHMARK_DESCRIPTION: "You now have hundreds of apps within reach. Find something rad.",
+                APP_LAUNCHER_GLOBAL_SEARCH_COACHMARK_TITLE: "Find New Apps",
+                APP_LAUNCHER_GLOBAL_SEARCH_COACHMARK_DESCRIPTION: "Discover games, music, and other fun things to do with friends!",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -94393,8 +94393,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302789", "302789"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302789")), t = 0), t
+                let t = parseInt((e = "302796", "302796"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302796")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122676,8 +122676,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302789",
-                    versionHash: "5458db25309678dfb930153f0456063136cb59fa"
+                    buildNumber: "302796",
+                    versionHash: "9a809d679a9ce038090146742ce899001f614d25"
                 }
             }
             n.d(t, {
@@ -178699,8 +178699,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718667612340",
-                                    build_number: "302789"
+                                    built_at: "1718668291071",
+                                    build_number: "302796"
                                 }
                             },
                             retries: 1
@@ -255823,7 +255823,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5458db25309678dfb930153f0456063136cb59fa"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9a809d679a9ce038090146742ce899001f614d25"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284285,7 +284285,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302789"
+                                build_number: "302796"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (d.user_id = c.id, d.user_name = c.tag, null != c.email && (d.email = c.email));
@@ -291597,7 +291597,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302789", "302789"), 10);
+                let s = parseInt((n = "302796", "302796"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -319494,4 +319494,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.076f57b175f979a2e9ae.js.map
+//# sourceMappingURL=25624.f44d249d75dac3363fb0.js.map
