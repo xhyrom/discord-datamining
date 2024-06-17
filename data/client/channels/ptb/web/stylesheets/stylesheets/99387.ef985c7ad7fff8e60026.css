@@ -77412,16 +77412,6 @@ html .invoiceCancelRow_aa7946 {
     padding: 20px
 }
 
-.authedApp__71a52:hover .deleteApp_b3a490,
-.authedApp__71a52:focus-within .deleteApp_b3a490 {
-    opacity: 1
-}
-
-.deleteApp_b3a490 {
-    opacity: 0;
-    transition: opacity.2s ease
-}
-
 .headerInfo__7273f {
     display: flex;
     align-items: center
@@ -141789,4 +141779,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1629a82dcbdfdd150262.css.map*/
+/*# sourceMappingURL=99387.ef985c7ad7fff8e60026.css.map*/

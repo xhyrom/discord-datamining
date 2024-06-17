@@ -26723,7 +26723,6 @@
                 appAvatar: "appAvatar__1fa87",
                 authedApp: "authedApp__71a52",
                 botTag: "botTag__485a2",
-                deleteApp: "deleteApp_b3a490",
                 disclosureIcon: "disclosureIcon__7a60d",
                 divider: "divider__9741e",
                 externalLinkIcon: "externalLinkIcon_f905c4",
