@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302493", ", Version Hash: ").concat("47161f29ebb190087d2964157e299e53bf1c47a0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302496", ", Version Hash: ").concat("6fdfae05ccb0e09efef7b3568a930a5ea3e8ffc2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93879,8 +93879,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302493", "302493"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302493")), t = 0), t
+                let t = parseInt((e = "302496", "302496"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302496")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122135,8 +122135,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302493",
-                    versionHash: "47161f29ebb190087d2964157e299e53bf1c47a0"
+                    buildNumber: "302496",
+                    versionHash: "6fdfae05ccb0e09efef7b3568a930a5ea3e8ffc2"
                 }
             }
             n.r(t), n.d(t, {
@@ -124397,26 +124397,6 @@
                 },
                 m = 9
         },
-        540780: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            let i = (0, n("818083").createExperiment)({
-                kind: "user",
-                id: "2024-02_nitro_custom_emoji_perk_roadblock",
-                label: "Nitro Custom Emoji Perk Roadblock",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable Nitro custom emoji perk roadblock",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-            t.default = i
-        },
         392552: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -125671,30 +125651,29 @@
                 A = n("642113"),
                 m = n("626135"),
                 N = n("624138"),
-                p = n("540780"),
-                O = n("543241"),
-                C = n("883661"),
-                R = n("880949"),
-                g = n("784222"),
-                L = n("149203"),
-                v = n("981631"),
-                D = n("957825"),
-                M = n("689938"),
-                y = n("271171");
-            let P = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
-                U = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
-                b = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
-                G = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
-                w = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
-                k = (0, N.cssValueToNumber)(y.__invalid_unicodeCategoryShortcutHeight),
-                B = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-                V = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-                x = b + U + 2 * w,
-                F = P + U,
-                H = F + (B + 2 * V),
-                Y = b + G + 2 * w;
+                p = n("543241"),
+                O = n("883661"),
+                C = n("880949"),
+                R = n("784222"),
+                g = n("149203"),
+                L = n("981631"),
+                v = n("957825"),
+                D = n("689938"),
+                M = n("271171");
+            let y = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
+                P = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
+                U = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+                b = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
+                G = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
+                w = (0, N.cssValueToNumber)(M.__invalid_unicodeCategoryShortcutHeight),
+                k = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
+                B = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+                V = U + P + 2 * G,
+                x = y + P,
+                F = x + (k + 2 * B),
+                H = U + b + 2 * G;
 
-            function j(e) {
+            function Y(e) {
                 let {
                     activeIndex: t,
                     categoryIndex: n,
@@ -125704,51 +125683,45 @@
                     handleCategorySelect: d,
                     isWindowFocused: _,
                     useReducedMotion: E
-                } = e, I = (0, u.useListItem)("expression-guild-".concat(n)), T = l.type === L.EmojiCategoryTypes.GUILD ? null : l.id, f = t === n, h = l.type === L.EmojiCategoryTypes.GUILD ? l.guild : null, {
-                    enabled: A
-                } = p.default.useExperiment({
-                    location: "Emoji Picker Category List"
-                }, {
-                    autoTrackExposure: l.isNitroLocked
-                }), N = A && l.isNitroLocked, g = (0, i.jsxs)(c.Clickable, {
+                } = e, I = (0, u.useListItem)("expression-guild-".concat(n)), T = l.type === g.EmojiCategoryTypes.GUILD ? null : l.id, f = t === n, h = l.type === g.EmojiCategoryTypes.GUILD ? l.guild : null, A = (0, i.jsxs)(c.Clickable, {
                     ...I,
-                    "aria-label": (0, O.getAriaIdForEmojiCategory)(l, h),
+                    "aria-label": (0, p.getAriaIdForEmojiCategory)(l, h),
                     className: a()({
-                        [y.categoryItemGuildCategory]: null != h,
-                        [y.categoryItemDefaultCategory]: null == h,
-                        [y.categoryItemDefaultCategorySelected]: null == h && f,
-                        [y.categoryItemRecentEmoji]: l.type === L.EmojiCategoryTypes.RECENT
+                        [M.categoryItemGuildCategory]: null != h,
+                        [M.categoryItemDefaultCategory]: null == h,
+                        [M.categoryItemDefaultCategorySelected]: null == h && f,
+                        [M.categoryItemRecentEmoji]: l.type === g.EmojiCategoryTypes.RECENT
                     }),
                     onClick: () => {
-                        null != h && m.default.track(v.AnalyticEvents.EXPRESSION_PICKER_CATEGORY_SELECTED, {
+                        null != h && m.default.track(L.AnalyticEvents.EXPRESSION_PICKER_CATEGORY_SELECTED, {
                             location: null == s ? void 0 : s.location,
-                            tab: D.ExpressionPickerViewType.EMOJI,
+                            tab: v.ExpressionPickerViewType.EMOJI,
                             guild_id: h.id
                         }), d(n)
                     },
-                    children: [null != h ? (0, i.jsx)(R.default, {
+                    children: [null != h ? (0, i.jsx)(C.default, {
                         guild: h,
                         isSelected: f,
                         shouldAnimate: !E && _,
-                        isLocked: N
-                    }) : null, null == h && null != T ? (0, i.jsx)(C.default, {
+                        isLocked: l.isNitroLocked
+                    }) : null, null == h && null != T ? (0, i.jsx)(O.default, {
                         categoryId: T,
-                        className: y.categoryIcon,
-                        height: b,
-                        width: b
+                        className: M.categoryIcon,
+                        height: U,
+                        width: U
                     }) : null]
-                }), M = o[n + 1], P = null != M && l.type === L.EmojiCategoryTypes.GUILD && M.type !== L.EmojiCategoryTypes.GUILD;
+                }), N = o[n + 1], R = null != N && l.type === g.EmojiCategoryTypes.GUILD && N.type !== g.EmojiCategoryTypes.GUILD;
                 return null != h ? (0, i.jsxs)(r.Fragment, {
                     children: [(0, i.jsx)(S.default, {
                         guild: h,
                         includeActivity: !1,
                         children: (0, i.jsx)("div", {
-                            children: g
+                            children: A
                         })
-                    }), P ? (0, i.jsx)("hr", {
-                        className: y.guildCategorySeparator
+                    }), R ? (0, i.jsx)("hr", {
+                        className: M.guildCategorySeparator
                     }, "separator") : null]
-                }) : g
+                }) : A
             }
             t.default = e => {
                 let {
@@ -125757,12 +125730,12 @@
                     sectionDescriptors: s,
                     intention: o,
                     channel: u
-                } = e, _ = T.EmojiPickerStore.useStore(e => e.activeCategoryIndex), S = (0, g.useCategorySelectHandler)({
+                } = e, _ = T.EmojiPickerStore.useStore(e => e.activeCategoryIndex), S = (0, R.useCategorySelectHandler)({
                     sectionDescriptors: s,
                     emojiListRef: n
-                }), m = (0, E.useAnalyticsContext)(), N = (0, O.useEmojiCategories)(o, u), p = r.useRef(null), C = (0, d.useStateFromStores)([h.default], () => h.default.isFocused()), R = (0, d.useStateFromStores)([I.default], () => I.default.useReducedMotion, []), v = r.useMemo(() => l().memoize((e, t) => {
+                }), m = (0, E.useAnalyticsContext)(), N = (0, p.useEmojiCategories)(o, u), O = r.useRef(null), C = (0, d.useStateFromStores)([h.default], () => h.default.isFocused()), L = (0, d.useStateFromStores)([I.default], () => I.default.useReducedMotion, []), v = r.useMemo(() => l().memoize((e, t) => {
                     let n = N[t];
-                    if (null != n) return (0, i.jsx)(j, {
+                    if (null != n) return (0, i.jsx)(Y, {
                         activeIndex: _,
                         analyticsContext: m,
                         categories: N,
@@ -125770,18 +125743,18 @@
                         categoryIndex: t,
                         handleCategorySelect: S,
                         isWindowFocused: C,
-                        useReducedMotion: R
+                        useReducedMotion: L
                     }, t)
-                }), [_, m, N, S, C, R]), D = r.useMemo(() => [8, 8, 0, 8], []), P = r.useCallback((e, t) => {
+                }), [_, m, N, S, C, L]), y = r.useMemo(() => [8, 8, 0, 8], []), G = r.useCallback((e, t) => {
                     let n = N[t];
-                    if (n.type === L.EmojiCategoryTypes.RECENT) return x;
-                    if (n.type === L.EmojiCategoryTypes.GUILD) {
+                    if (n.type === g.EmojiCategoryTypes.RECENT) return V;
+                    if (n.type === g.EmojiCategoryTypes.GUILD) {
                         let e = N[t + 1];
-                        return null != e && e.type !== L.EmojiCategoryTypes.GUILD ? H : F
+                        return null != e && e.type !== g.EmojiCategoryTypes.GUILD ? F : x
                     }
-                    return Y
+                    return H
                 }, [N]), {
-                    nonUnicodeCategoryCount: w,
+                    nonUnicodeCategoryCount: j,
                     firstUnicodeCategoryIndex: W,
                     firstUnicodeCategoryOffsetTop: K,
                     rowCountBySection: z
@@ -125791,9 +125764,9 @@
                         n = 0,
                         i = 0;
                     N.forEach(r => {
-                        r.type === L.EmojiCategoryTypes.GUILD ? (t += 1, n += 1) : r.type === L.EmojiCategoryTypes.UNICODE ? i += 1 : (e += 1, t += 1)
+                        r.type === g.EmojiCategoryTypes.GUILD ? (t += 1, n += 1) : r.type === g.EmojiCategoryTypes.UNICODE ? i += 1 : (e += 1, t += 1)
                     });
-                    let r = x + t * F + H;
+                    let r = V + t * x + F;
                     return {
                         nonUnicodeCategoryCount: t,
                         firstUnicodeCategoryIndex: t,
@@ -125802,27 +125775,27 @@
                     }
                 }, [N]), [Z, Q] = r.useState(!0);
                 r.useLayoutEffect(() => {
-                    Q(w >= 7)
-                }, [w]);
+                    Q(j >= 7)
+                }, [j]);
                 let X = r.useCallback(e => {
                         var t;
-                        let n = null === (t = p.current) || void 0 === t ? void 0 : t.getListDimensions();
-                        if (null != n) e + n.height - B >= K ? Q(!1) : Q(!0)
+                        let n = null === (t = O.current) || void 0 === t ? void 0 : t.getListDimensions();
+                        if (null != n) e + n.height - k >= K ? Q(!1) : Q(!0)
                     }, [K]),
                     q = r.useCallback(e => {
                         var t;
-                        e(W), null === (t = p.current) || void 0 === t || t.scrollTo(K)
+                        e(W), null === (t = O.current) || void 0 === t || t.scrollTo(K)
                     }, [K, W]),
                     J = r.useCallback((e, t) => {
                         let n = N[e];
                         if (null == n) return 0;
-                        let i = Z ? k : 0;
-                        if (n.type === L.EmojiCategoryTypes.RECENT) return t ? 0 : G;
-                        if (n.type === L.EmojiCategoryTypes.GUILD) {
+                        let i = Z ? w : 0;
+                        if (n.type === g.EmojiCategoryTypes.RECENT) return t ? 0 : b;
+                        if (n.type === g.EmojiCategoryTypes.GUILD) {
                             let n = N[e + 1];
-                            return null != n && n.type !== L.EmojiCategoryTypes.GUILD ? t ? B + -2 * V + U + i : U : t ? i : U
+                            return null != n && n.type !== g.EmojiCategoryTypes.GUILD ? t ? k + -2 * B + P + i : P : t ? i : P
                         }
-                        return t ? U + i : 2 * U
+                        return t ? P + i : 2 * P
                     }, [N, Z]),
                     $ = r.useMemo(() => function(e, t) {
                         return (0, i.jsx)(r.Fragment, {
@@ -125831,30 +125804,30 @@
                     }, []),
                     ee = Z ? "shortcut" : "hiddenshortcut";
                 return (0, i.jsx)(f.default, {
-                    categoryListRef: p,
+                    categoryListRef: O,
                     expressionsListRef: n,
                     className: t,
                     store: T.EmojiPickerStore,
                     categories: N,
-                    listPadding: D,
+                    listPadding: y,
                     onScroll: X,
                     renderCategoryListItem: v,
                     renderSection: $,
                     rowCount: N.length,
-                    categoryHeight: P,
+                    categoryHeight: G,
                     getScrollOffsetForIndex: J,
                     rowCountBySection: z,
-                    children: e => w >= 7 && (0, i.jsx)(c.Clickable, {
+                    children: e => j >= 7 && (0, i.jsx)(c.Clickable, {
                         "aria-hidden": !Z,
-                        "aria-label": M.default.Messages.EMOJI_PICKER_SCROLL_TO_UNICODE_A11Y_LABEL,
-                        className: a()(y.unicodeShortcut, {
-                            [y.unicodeShortcutInvisible]: !Z
+                        "aria-label": D.default.Messages.EMOJI_PICKER_SCROLL_TO_UNICODE_A11Y_LABEL,
+                        className: a()(M.unicodeShortcut, {
+                            [M.unicodeShortcutInvisible]: !Z
                         }),
                         tabIndex: Z ? 0 : -1,
                         onClick: () => q(e),
                         children: (0, i.jsx)(A.default, {
-                            height: b,
-                            width: b
+                            height: U,
+                            width: U
                         })
                     }, ee)
                 })
@@ -126489,88 +126462,6 @@
                     }, [i, n])
                 }
         },
-        566083: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("622535"),
-                l = n("481060"),
-                u = n("2052"),
-                d = n("906732"),
-                _ = n("963249"),
-                c = n("672752"),
-                E = n("465670"),
-                I = n("466111"),
-                T = n("626135"),
-                f = n("74538"),
-                S = n("981631"),
-                h = n("474936"),
-                A = n("689938"),
-                m = n("356623");
-            t.default = function(e) {
-                let {
-                    bodyCopy: t = A.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_BODY,
-                    className: n,
-                    onDismiss: s,
-                    onCtaClick: N
-                } = e, {
-                    location: p
-                } = (0, u.useAnalyticsContext)(), {
-                    analyticsLocations: O
-                } = (0, d.default)(), C = r.useRef(!1), R = r.useCallback(() => {
-                    (0, _.default)({
-                        subscriptionTier: f.default.getSkuIdForPremiumType(h.PremiumTypes.TIER_2),
-                        analyticsLocations: O,
-                        analyticsObject: {
-                            ...p,
-                            object: S.AnalyticsObjects.BUTTON_CTA,
-                            objectType: S.AnalyticsObjectTypes.TIER_2
-                        }
-                    }), null == N || N()
-                }, [O, p, N]);
-                return (0, i.jsx)("div", {
-                    className: a()(m.wrapper, n),
-                    children: (0, i.jsx)(o.VisibilitySensor, {
-                        onChange: e => {
-                            e && !C.current && (T.default.track(S.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
-                                type: h.PremiumUpsellTypes.EMOJI_PICKER_SEARCH,
-                                location: p,
-                                location_stack: O,
-                                sku_id: f.default.getSkuIdForPremiumType(h.PremiumTypes.TIER_2)
-                            }), C.current = !0)
-                        },
-                        children: (0, i.jsxs)("div", {
-                            className: m.upsell,
-                            children: [(0, i.jsx)(I.default, {
-                                color: c.GradientCssUrls.PREMIUM_TIER_2,
-                                className: m.premiumIcon
-                            }), (0, i.jsx)(l.Text, {
-                                color: "interactive-normal",
-                                className: m.body,
-                                variant: "text-sm/normal",
-                                children: t
-                            }), (0, i.jsx)(l.Button, {
-                                look: l.Button.Looks.LINK,
-                                color: l.Button.Colors.LINK,
-                                onClick: R,
-                                children: A.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_CTA
-                            }), null != s && (0, i.jsx)(l.Button, {
-                                onClick: s,
-                                className: m.dismissButton,
-                                look: l.Button.Looks.BLANK,
-                                size: l.Button.Sizes.ICON,
-                                children: (0, i.jsx)(E.default, {
-                                    className: m.dismissIcon
-                                })
-                            })]
-                        })
-                    })
-                })
-            }
-        },
         141507: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -126744,29 +126635,26 @@
                 y = n("626135"),
                 P = n("111361"),
                 U = n("624138"),
-                b = n("540780"),
-                G = n("543241"),
-                w = n("883661"),
-                k = n("880949"),
-                B = n("784222"),
-                V = n("566083"),
-                x = n("172800"),
-                F = n("149203"),
-                H = n("981631"),
-                Y = n("957825"),
-                j = n("474936"),
-                W = n("689938"),
-                K = n("995292");
-            let z = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_TOP),
-                Z = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_RIGHT),
-                Q = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_BOTTOM),
-                X = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_SEARCH_RESULTS_PADDING_TOP),
-                q = (0, U.cssValueToNumber)(E.default.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_LIST_SECTION_HEADING_HEIGHT),
-                J = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_SECTION_MARGIN_BOTTOM),
-                $ = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_PREMIUM_UPSELL_HEIGHT) + (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_PREMIUM_UPSELL_MARGIN_TOP),
-                ee = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
-                et = e => e + 2 * ee,
-                en = e => {
+                b = n("543241"),
+                G = n("883661"),
+                w = n("880949"),
+                k = n("784222"),
+                B = n("172800"),
+                V = n("149203"),
+                x = n("981631"),
+                F = n("957825"),
+                H = n("474936"),
+                Y = n("689938"),
+                j = n("995292");
+            let W = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_TOP),
+                K = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_RIGHT),
+                z = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_BOTTOM),
+                Z = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_SEARCH_RESULTS_PADDING_TOP),
+                Q = (0, U.cssValueToNumber)(E.default.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_LIST_SECTION_HEADING_HEIGHT),
+                X = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_SECTION_MARGIN_BOTTOM),
+                q = (0, U.cssValueToNumber)(E.default.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
+                J = e => e + 2 * q,
+                $ = e => {
                     let {
                         collapsedSections: t,
                         diversitySurrogate: n,
@@ -126786,44 +126674,42 @@
                         isBurstReaction: v,
                         listHeaderClassName: D,
                         activeSectionIndex: M,
-                        upsellGlowOpacity: P,
-                        enableNitroUpsell: U
-                    } = e, b = (0, f.useAnalyticsContext)(), j = r.useRef(H.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID), W = r.useMemo(() => "" !== n ? c.default.convert.toCodePoint(n) : "", [n]), ee = r.useCallback(e => {
-                        if (!U) return !1;
+                        upsellGlowOpacity: P
+                    } = e, U = (0, f.useAnalyticsContext)(), H = r.useRef(x.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID), Y = r.useMemo(() => "" !== n ? c.default.convert.toCodePoint(n) : "", [n]), q = r.useCallback(e => {
                         let t = E[e],
                             n = E[e + 1];
                         return e >= E.length - 1 ? t.isNitroLocked : t.isNitroLocked && !n.isNitroLocked
-                    }, [U, E]), et = r.useCallback(e => {
-                        if (!U || e >= E.length - 1) return !1;
+                    }, [E]), J = r.useCallback(e => {
+                        if (e >= E.length - 1) return !1;
                         let t = E[e],
                             n = E[e + 1];
                         return !t.isNitroLocked && n.isNitroLocked
-                    }, [U, E]), en = r.useCallback(function(e) {
+                    }, [E]), $ = r.useCallback(function(e) {
                         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
                             i = new Set(t),
                             r = t.has(e);
-                        r ? i.delete(e) : i.add(e), null != n && y.default.track(H.AnalyticEvents.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
-                            location: b.location,
-                            tab: Y.ExpressionPickerViewType.EMOJI,
+                        r ? i.delete(e) : i.add(e), null != n && y.default.track(x.AnalyticEvents.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
+                            location: U.location,
+                            tab: F.ExpressionPickerViewType.EMOJI,
                             collapsed: !r,
                             guild_id: n.id
                         }), I(i)
-                    }, [b, t, I]), ei = r.useCallback(e => {
+                    }, [U, t, I]), ee = r.useCallback(e => {
                         let {
                             columnIndex: t,
                             visibleRowIndex: n
-                        } = e, i = e.type === B.EmojiGridItemTypes.EMOJI ? e.emoji.allNamesString : e.name;
-                        j.current !== H.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID && window.cancelAnimationFrame(j.current), j.current = window.requestAnimationFrame(() => {
-                            A.EmojiPickerStore.setInspectedExpressionPosition(t, n, N.InspectedExpressionChangeSource.MOUSE_EVENT), A.EmojiPickerStore.setSearchPlaceholder(i), j.current = H.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID
+                        } = e, i = e.type === k.EmojiGridItemTypes.EMOJI ? e.emoji.allNamesString : e.name;
+                        H.current !== x.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID && window.cancelAnimationFrame(H.current), H.current = window.requestAnimationFrame(() => {
+                            A.EmojiPickerStore.setInspectedExpressionPosition(t, n, N.InspectedExpressionChangeSource.MOUSE_EVENT), A.EmojiPickerStore.setSearchPlaceholder(i), H.current = x.UNREACHABLE_REQUEST_ANIMATION_FRAME_ID
                         })
-                    }, []), er = (0, _.useStateFromStores)([C.HotspotStore], () => C.HotspotStore.hasHotspot(C.HotspotLocations.FAVORITE_EMOJI_TOOLTIP), []), es = r.useMemo(() => l().memoize((e, t) => {
+                    }, []), et = (0, _.useStateFromStores)([C.HotspotStore], () => C.HotspotStore.hasHotspot(C.HotspotLocations.FAVORITE_EMOJI_TOOLTIP), []), en = r.useMemo(() => l().memoize((e, t) => {
                         let n = s[e],
                             r = E[t.sectionIndex];
-                        return (0, i.jsx)(x.default, {
+                        return (0, i.jsx)(B.default, {
                             emojiDescriptors: n,
                             emojiSize: o,
-                            surrogateCodePoint: W,
-                            onInspect: ei,
+                            surrogateCodePoint: Y,
+                            onInspect: ee,
                             onSelect: u,
                             getEmojiItemProps: T,
                             getEmojiRowProps: S,
@@ -126831,20 +126717,20 @@
                             isUsingKeyboardNavigation: m,
                             rowIndex: e,
                             allowAnimatedEmoji: p,
-                            showEmojiFavoriteTooltip: er,
+                            showEmojiFavoriteTooltip: et,
                             channelGuildId: g,
                             category: r.sectionId,
-                            selectedItemClassName: K.__invalid_selectedItem,
+                            selectedItemClassName: j.__invalid_selectedItem,
                             messageId: L,
                             isBurstReaction: v,
                             inNitroLockedSection: r.isNitroLocked
                         }, e)
-                    }), [s, E, o, W, ei, u, T, S, h, m, p, er, g, L, v]);
+                    }), [s, E, o, Y, ee, u, T, S, h, m, p, et, g, L, v]);
                     r.useEffect(() => () => {
                         var e, t;
-                        return null === (t = es.cache) || void 0 === t ? void 0 : null === (e = t.clear) || void 0 === e ? void 0 : e.call(t)
-                    }, [es]);
-                    let ea = r.useMemo(() => l().memoize(e => {
+                        return null === (t = en.cache) || void 0 === t ? void 0 : null === (e = t.clear) || void 0 === e ? void 0 : e.call(t)
+                    }, [en]);
+                    let ei = r.useMemo(() => l().memoize(e => {
                             let n = E[e];
                             if (null == n) return;
                             let {
@@ -126853,78 +126739,70 @@
                                 type: o,
                                 sectionId: l
                             } = n;
-                            if (o === F.EmojiCategoryTypes.SEARCH_RESULTS) return;
-                            let u = o === F.EmojiCategoryTypes.GUILD ? null != r ? (0, i.jsx)(k.default, {
+                            if (o === V.EmojiCategoryTypes.SEARCH_RESULTS) return;
+                            let u = o === V.EmojiCategoryTypes.GUILD ? null != r ? (0, i.jsx)(w.default, {
                                     guild: r,
                                     height: 16,
                                     width: 16
-                                }) : null : null != s ? (0, i.jsx)(w.default, {
+                                }) : null : null != s ? (0, i.jsx)(G.default, {
                                     categoryId: s,
                                     height: 16,
                                     width: 16
                                 }) : null,
                                 d = null == r ? void 0 : r.toString();
-                            null != s && (d = (0, G.getStringForEmojiCategory)(s, null == r ? void 0 : r.toString()));
+                            null != s && (d = (0, b.getStringForEmojiCategory)(s, null == r ? void 0 : r.toString()));
                             let _ = M === e,
                                 c = n.isNitroLocked,
-                                I = U && c && !_,
-                                T = U && c && _;
+                                I = c && !_,
+                                T = c && _;
                             return (0, i.jsx)(O.default, {
-                                className: a()(K.header, D, {
-                                    [K.inactiveNitroHeader]: I,
-                                    [K.activeNitroHeader]: T
+                                className: a()(j.header, D, {
+                                    [j.inactiveNitroHeader]: I,
+                                    [j.activeNitroHeader]: T
                                 }),
                                 icon: u,
                                 isCollapsed: t.has(l),
-                                onClick: () => en(l, r),
+                                onClick: () => $(l, r),
                                 children: d
                             }, l)
-                        }), [E, t, en, D, M, U]),
-                        eo = r.useCallback((e, n) => {
+                        }), [E, t, $, D, M]),
+                        er = r.useCallback((e, n) => {
                             let r = E[e],
-                                s = et(e),
-                                o = ee(e);
+                                s = J(e),
+                                o = q(e);
                             return (0, i.jsx)("div", {
-                                className: a()(K.categorySection, {
-                                    [K.categorySectionLast]: e === E.length - 1,
-                                    [K.categorySectionCollapsed]: t.has(r.sectionId),
-                                    [K.categorySectionNitroLocked]: U && r.isNitroLocked,
-                                    [K.categorySectionNitroDivider]: s || o
+                                className: a()(j.categorySection, {
+                                    [j.categorySectionLast]: e === E.length - 1,
+                                    [j.categorySectionCollapsed]: t.has(r.sectionId),
+                                    [j.categorySectionNitroLocked]: r.isNitroLocked,
+                                    [j.categorySectionNitroDivider]: s || o
                                 }),
                                 children: n
                             }, e)
-                        }, [t, E, U, et, ee]),
-                        el = r.useCallback(e => {
-                            let n = E[e];
-                            return n.sectionId !== F.EmojiCategoryTypes.PREMIUM_UPSELL || t.has(n.sectionId) || U ? et(e) ? (0, i.jsx)(R.default, {
-                                glowOpacity: P
-                            }) : ee(e) ? (0, i.jsx)("div", {
-                                className: K.nitroBottomDivider
-                            }) : null : (0, i.jsx)(V.default, {
-                                className: K.premiumUpsell
-                            }, "emoji-picker-inline-upsell")
-                        }, [E, t, P, U, et, ee]),
-                        eu = r.useCallback(e => {
-                            let n = E[e];
-                            return n.sectionId !== F.EmojiCategoryTypes.PREMIUM_UPSELL || t.has(n.sectionId) || U ? et(e) ? 41 : ee(e) ? 33 : 0 : $
-                        }, [E, t, U, et, ee]),
-                        ed = r.useCallback(e => {
+                        }, [t, E, J, q]),
+                        es = r.useCallback(e => J(e) ? (0, i.jsx)(R.default, {
+                            glowOpacity: P
+                        }) : q(e) ? (0, i.jsx)("div", {
+                            className: j.nitroBottomDivider
+                        }) : null, [P, J, q]),
+                        ea = r.useCallback(e => J(e) ? 41 : q(e) ? 33 : 0, [J, q]),
+                        eo = r.useCallback(e => {
                             var n;
-                            return e === E.length - 1 || t.has(null === (n = E[e]) || void 0 === n ? void 0 : n.sectionId) || et(e) || ee(e) ? 0 : J
-                        }, [t, E, et, ee]),
-                        e_ = r.useMemo(() => ["" !== d ? X : z, Z, Q, 0], [d]);
+                            return e === E.length - 1 || t.has(null === (n = E[e]) || void 0 === n ? void 0 : n.sectionId) || J(e) || q(e) ? 0 : X
+                        }, [t, E, J, q]),
+                        el = r.useMemo(() => ["" !== d ? Z : W, K, z, 0], [d]);
                     return {
-                        listPadding: e_,
-                        renderRow: es,
-                        renderSection: eo,
-                        renderSectionHeader: ea,
-                        renderSectionFooter: el,
-                        sectionMarginBottom: ed,
-                        sectionHeaderHeight: r.useCallback(e => E[e].type === F.EmojiCategoryTypes.SEARCH_RESULTS ? 0 : q, [E]),
-                        sectionFooterHeight: eu
+                        listPadding: el,
+                        renderRow: en,
+                        renderSection: er,
+                        renderSectionHeader: ei,
+                        renderSectionFooter: es,
+                        sectionMarginBottom: eo,
+                        sectionHeaderHeight: r.useCallback(e => E[e].type === V.EmojiCategoryTypes.SEARCH_RESULTS ? 0 : Q, [E]),
+                        sectionFooterHeight: ea
                     }
                 },
-                ei = r.memo(function(e) {
+                ee = r.memo(function(e) {
                     let {
                         diversitySurrogate: t,
                         emojiGrid: n,
@@ -126939,38 +126817,32 @@
                         getEmojiRowProps: C,
                         rowCount: R,
                         isUsingKeyboardNavigation: U,
-                        channelGuildId: G,
-                        messageId: w,
-                        isBurstReaction: k,
-                        listHeaderClassName: B
-                    } = e, V = r.useRef(!1), x = A.EmojiPickerStore.useStore(e => e.activeCategoryIndex), F = (0, m.useExpressionPickerStore)(e => e.searchQuery), Y = L.AnimateEmoji.useSetting(), z = (0, _.useStateFromStores)([v.default], () => v.default.getCurrentUser()), Z = (0, P.isPremium)(z), {
-                        location: Q
+                        channelGuildId: b,
+                        messageId: G,
+                        isBurstReaction: w,
+                        listHeaderClassName: k
+                    } = e, B = r.useRef(!1), V = A.EmojiPickerStore.useStore(e => e.activeCategoryIndex), F = (0, m.useExpressionPickerStore)(e => e.searchQuery), W = L.AnimateEmoji.useSetting(), K = (0, _.useStateFromStores)([v.default], () => v.default.getCurrentUser()), z = (0, P.isPremium)(K), {
+                        location: Z
                     } = (0, f.useAnalyticsContext)(), {
-                        analyticsLocations: X
-                    } = (0, h.default)(), [q, J] = r.useState(0), [$, ee] = r.useState(!1), [ei, er] = r.useState(0), es = (0, _.useStateFromStores)([S.default], () => S.default.useReducedMotion), ea = (0, u.useSpring)({
-                        transform: $ ? "translateY(0%)" : "translateY(120%)",
-                        opacity: $ ? 1 : 0,
+                        analyticsLocations: Q
+                    } = (0, h.default)(), [X, q] = r.useState(0), [ee, et] = r.useState(!1), [en, ei] = r.useState(0), er = (0, _.useStateFromStores)([S.default], () => S.default.useReducedMotion), es = (0, u.useSpring)({
+                        transform: ee ? "translateY(0%)" : "translateY(120%)",
+                        opacity: ee ? 1 : 0,
                         config: {
                             tension: 120,
                             friction: 14
                         },
-                        immediate: es
-                    }), eo = l.some(e => e.isNitroLocked), {
-                        enabled: el
-                    } = b.default.useExperiment({
-                        location: "Emoji Picker List"
-                    }, {
-                        autoTrackExposure: eo
+                        immediate: er
                     }), {
-                        listPadding: eu,
-                        renderRow: ed,
-                        renderSection: e_,
-                        renderSectionHeader: ec,
-                        renderSectionFooter: eE,
-                        sectionMarginBottom: eI,
-                        sectionHeaderHeight: eT,
-                        sectionFooterHeight: ef
-                    } = en({
+                        listPadding: ea,
+                        renderRow: eo,
+                        renderSection: el,
+                        renderSectionHeader: eu,
+                        renderSectionFooter: ed,
+                        sectionMarginBottom: e_,
+                        sectionHeaderHeight: ec,
+                        sectionFooterHeight: eE
+                    } = $({
                         collapsedSections: E,
                         diversitySurrogate: t,
                         emojiGrid: n,
@@ -126981,28 +126853,27 @@
                         setCollapsedSections: N,
                         getEmojiItemProps: O,
                         getEmojiRowProps: C,
-                        isScrolling: V,
+                        isScrolling: B,
                         isUsingKeyboardNavigation: U,
-                        allowAnimatedEmoji: Y,
-                        channelGuildId: G,
-                        messageId: w,
-                        isBurstReaction: k,
-                        listHeaderClassName: B,
-                        activeSectionIndex: q,
-                        upsellGlowOpacity: ei,
-                        enableNitroUpsell: el
-                    }), eS = (0, p.useShowUpsellForScrollPosition)({
+                        allowAnimatedEmoji: W,
+                        channelGuildId: b,
+                        messageId: G,
+                        isBurstReaction: w,
+                        listHeaderClassName: k,
+                        activeSectionIndex: X,
+                        upsellGlowOpacity: en
+                    }), eI = (0, p.useShowUpsellForScrollPosition)({
                         listRef: s,
                         searchQuery: F,
-                        setShowUpsell: ee,
-                        setUpsellGlowOpacity: er,
+                        setShowUpsell: et,
+                        setUpsellGlowOpacity: ei,
                         emojiSectionDescriptors: l
-                    }), eh = (0, p.useSynchronizedActiveCategoryIndexForScrollPosition)({
-                        activeCategoryIndex: x,
-                        isScrolling: V,
+                    }), eT = (0, p.useSynchronizedActiveCategoryIndexForScrollPosition)({
+                        activeCategoryIndex: V,
+                        isScrolling: B,
                         listRef: s,
                         onActiveCategoryIndexChange: e => {
-                            J(e), "" === F && A.EmojiPickerStore.setActiveCategoryIndex(e)
+                            q(e), "" === F && A.EmojiPickerStore.setActiveCategoryIndex(e)
                         },
                         scrollOffset: 0,
                         searchQuery: F,
@@ -127010,73 +126881,73 @@
                     });
                     (0, p.useSynchronizedScrollPositionForActiveCategoryIndex)({
                         searchQuery: F,
-                        activeCategoryIndex: x,
+                        activeCategoryIndex: V,
                         listRef: s
                     });
-                    let eA = r.useCallback(e => {
-                            el && eS(e), eh(e)
-                        }, [eS, eh, el]),
-                        em = l.length > 0;
+                    let ef = r.useCallback(e => {
+                            eI(e), eT(e)
+                        }, [eI, eT]),
+                        eS = l.length > 0;
                     return r.useEffect(() => {
-                        $ && y.default.track(H.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
-                            type: j.PremiumUpsellTypes.EMOJI_PICKER_FLOATING_UPSELL,
-                            location: Q,
-                            location_stack: X
+                        ee && y.default.track(x.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
+                            type: H.PremiumUpsellTypes.EMOJI_PICKER_FLOATING_UPSELL,
+                            location: Z,
+                            location_stack: Q
                         })
-                    }, [Q, X, $]), r.useEffect(() => {
-                        "" !== F && (er(0), ee(!1))
+                    }, [Z, Q, ee]), r.useEffect(() => {
+                        "" !== F && (ei(0), et(!1))
                     }, [F]), (0, i.jsxs)("div", {
-                        className: K.listWrapper,
-                        children: [em ? (0, i.jsx)(D.default, {
+                        className: j.listWrapper,
+                        children: [eS ? (0, i.jsx)(D.default, {
                             role: "none presentation",
-                            className: K.list,
-                            listPadding: eu,
-                            onScroll: eA,
-                            renderRow: ed,
-                            renderSection: e_,
-                            renderSectionHeader: ec,
-                            renderSectionFooter: eE,
+                            className: j.list,
+                            listPadding: ea,
+                            onScroll: ef,
+                            renderRow: eo,
+                            renderSection: el,
+                            renderSectionHeader: eu,
+                            renderSectionFooter: ed,
                             rowCount: R,
                             rowCountBySection: c,
-                            rowHeight: et(a),
-                            sectionHeaderHeight: eT,
-                            sectionMarginBottom: eI,
-                            sectionFooterHeight: ef,
+                            rowHeight: J(a),
+                            sectionHeaderHeight: ec,
+                            sectionMarginBottom: e_,
+                            sectionFooterHeight: eE,
                             stickyHeaders: !0,
                             ref: s
                         }) : (0, i.jsx)(T.default, {
-                            message: W.default.Messages.NO_EMOJI_SEARCH_RESULTS,
-                            className: K.noSearchResultsContainer
-                        }), !el || Z || d.isMobile ? null : (0, i.jsxs)(u.animated.div, {
+                            message: Y.default.Messages.NO_EMOJI_SEARCH_RESULTS,
+                            className: j.noSearchResultsContainer
+                        }), z || d.isMobile ? null : (0, i.jsxs)(u.animated.div, {
                             style: {
-                                ...ea,
-                                opacity: ea.opacity
+                                ...es,
+                                opacity: es.opacity
                             },
-                            className: K.upsellContainer,
+                            className: j.upsellContainer,
                             children: [(0, i.jsx)(M.default, {
                                 width: 16,
                                 height: 16,
-                                className: K.upsellLock
+                                className: j.upsellLock
                             }), (0, i.jsx)(I.Text, {
                                 variant: "text-sm/medium",
                                 color: "header-primary",
-                                className: K.upsellText,
-                                children: W.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_TITLE
+                                className: j.upsellText,
+                                children: Y.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_TITLE
                             }), (0, i.jsx)(g.default, {
-                                className: K.upsellButton,
+                                className: j.upsellButton,
                                 size: I.ButtonSizes.TINY,
-                                shinyButtonClassName: K.upsellButton,
-                                subscriptionTier: j.PremiumSubscriptionSKUs.TIER_2,
-                                buttonText: W.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_CTA,
+                                shinyButtonClassName: j.upsellButton,
+                                subscriptionTier: H.PremiumSubscriptionSKUs.TIER_2,
+                                buttonText: Y.default.Messages.EMOJI_PICKER_PREMIUM_UPSELL_CTA,
                                 premiumModalAnalyticsLocation: {
-                                    section: H.AnalyticsSections.EMOJI_PICKER_FLOATING_UPSELL
+                                    section: x.AnalyticsSections.EMOJI_PICKER_FLOATING_UPSELL
                                 },
-                                tabIndex: $ ? 0 : -1
+                                tabIndex: ee ? 0 : -1
                             })]
                         })]
                     })
                 });
-            t.default = ei
+            t.default = ee
         },
         172800: function(e, t, n) {
             "use strict";
@@ -127271,7 +127142,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return R
+                    return C
                 }
             }), n("47120");
             var i = n("735250"),
@@ -127290,12 +127161,11 @@
                 f = n("912893"),
                 S = n("430824"),
                 h = n("358085"),
-                A = n("540780"),
-                m = n("288406"),
-                N = n("689938"),
-                p = n("687901");
-            let O = (e, t) => "".concat(e, ":").concat(t),
-                C = r.forwardRef(function(e, t) {
+                A = n("288406"),
+                m = n("689938"),
+                N = n("687901");
+            let p = (e, t) => "".concat(e, ":").concat(t),
+                O = r.forwardRef(function(e, t) {
                     let n, {
                             emoji: r,
                             isFavorite: s,
@@ -127306,57 +127176,48 @@
                             showPulse: T,
                             columnIndex: f,
                             rowIndex: h,
-                            size: O,
-                            surrogateCodePoint: C,
-                            allowAnimatedEmoji: R,
-                            selectedItemClassName: g,
-                            inNitroLockedSection: L,
-                            ...v
+                            size: p,
+                            surrogateCodePoint: O,
+                            allowAnimatedEmoji: C,
+                            selectedItemClassName: R,
+                            inNitroLockedSection: g,
+                            ...L
                         } = e,
-                        D = (0, o.useStateFromStores)([S.default], () => r.type === c.EmojiTypes.GUILD ? S.default.getGuild(r.guildId) : void 0, [r]),
-                        {
-                            enabled: M
-                        } = A.default.useExperiment({
-                            location: "Emoji Picker List"
-                        }, {
-                            autoTrackExposure: E
-                        }),
-                        y = E && M && !L;
+                        v = (0, o.useStateFromStores)([S.default], () => r.type === c.EmojiTypes.GUILD ? S.default.getGuild(r.guildId) : void 0, [r]);
                     return (0, i.jsx)(l.FocusRing, {
                         children: (0, i.jsx)("button", {
-                            ...v,
-                            className: a()(p.emojiItem, {
-                                [p.emojiItemLarge]: u,
-                                [p.emojiItemMedium]: d,
-                                [p.emojiItemSelected]: _,
-                                [null != g ? g : ""]: _,
-                                [p.emojiItemDisabled]: E && !M,
-                                [p.showPulse]: T
+                            ...L,
+                            className: a()(N.emojiItem, {
+                                [N.emojiItemLarge]: u,
+                                [N.emojiItemMedium]: d,
+                                [N.emojiItemSelected]: _,
+                                [null != R ? R : ""]: _,
+                                [N.showPulse]: T
                             }),
                             "data-type": I.PickerContextMenuDataTypes.EMOJI,
                             "data-id": r.id,
                             "data-name": r.name,
                             ref: t,
-                            children: (0, i.jsx)(m.default, {
-                                "aria-label": (n = r.allNamesString, ((null == D ? void 0 : D.name) != null && (n = N.default.Messages.EMOJI_FROM_GUILD_LABEL.format({
+                            children: (0, i.jsx)(A.default, {
+                                "aria-label": (n = r.allNamesString, ((null == v ? void 0 : v.name) != null && (n = m.default.Messages.EMOJI_FROM_GUILD_LABEL.format({
                                     names: n,
-                                    guildName: D.name
-                                })), s) ? N.default.Messages.EMOJI_NAMES_WITH_FAVORITED.format({
+                                    guildName: v.name
+                                })), s) ? m.default.Messages.EMOJI_NAMES_WITH_FAVORITED.format({
                                     names: n
                                 }) : n),
                                 columnIndex: f,
                                 rowIndex: h,
                                 emoji: r,
-                                size: O,
-                                surrogateCodePoint: C,
-                                allowAnimatedEmoji: R,
-                                isLocked: y
+                                size: p,
+                                surrogateCodePoint: O,
+                                allowAnimatedEmoji: C,
+                                isLocked: E && !g
                             })
                         })
                     })
                 });
 
-            function R(e) {
+            function C(e) {
                 let {
                     descriptor: t,
                     emojiItemKey: s,
@@ -127365,8 +127226,8 @@
                     channelGuildId: I,
                     onInspect: S,
                     onSelect: A,
-                    isScrolling: m,
-                    isUsingKeyboardNavigation: p,
+                    isScrolling: N,
+                    isUsingKeyboardNavigation: C,
                     showEmojiFavoriteTooltip: R,
                     surrogateCodePoint: g,
                     selectedItemClassName: L,
@@ -127386,14 +127247,14 @@
                     isDisabled: W,
                     columnIndex: K
                 } = t, z = e => {
-                    if (e.stopPropagation(), m.current || p.current) return;
+                    if (e.stopPropagation(), N.current || C.current) return;
                     let n = e.altKey;
                     n && !_.default.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(Y) && U(s), (0, T.hideHotspot)(T.HotspotLocations.FAVORITE_EMOJI_TOOLTIP), A(t, {
                         isFinalSelection: !e.shiftKey,
                         toggleFavorite: n
                     })
                 }, Z = () => {
-                    !m.current && !p.current && S(t)
+                    !N.current && !C.current && S(t)
                 }, Q = e => {
                     (0, u.openContextMenuLazy)(e, async () => {
                         let {
@@ -127418,7 +127279,7 @@
                         ...d,
                         key: s,
                         ref: H
-                    }, B !== O(K, c) && (0, i.jsx)(C, {
+                    }, B !== p(K, c) && (0, i.jsx)(O, {
                         ref: o,
                         emoji: Y,
                         isFavorite: F.isFavoriteEmojiWithoutFetchingLatest(Y),
@@ -127436,7 +127297,7 @@
                             if (null != H.current && null != w && null != b && !e.shiftKey && null != Y.name && G && !x && P) {
                                 let e = null == Y.id ? E.default.convertNameToSurrogate(Y.name) : Y.name,
                                     t = H.current.getBoundingClientRect();
-                                t.x = w.x + (K + 1) * j, V(O(K, c)), (0, f.addReactionPickerAnimation)(b, e, Y.id, t)
+                                t.x = w.x + (K + 1) * j, V(p(K, c)), (0, f.addReactionPickerAnimation)(b, e, Y.id, t)
                             }
                             z(e)
                         },
@@ -127451,7 +127312,7 @@
                     }))
                 };
                 return R ? (0, i.jsx)(l.Tooltip, {
-                    text: N.default.Messages.EMOJI_FAVORITE_TOOLTIP.format({
+                    text: m.default.Messages.EMOJI_FAVORITE_TOOLTIP.format({
                         key: (0, h.isMac)() ? "Opt" : "Alt"
                     }),
                     position: "top",
@@ -178379,8 +178240,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718641819321",
-                                    build_number: "302493"
+                                    built_at: "1718642296060",
+                                    build_number: "302496"
                                 }
                             },
                             retries: 1
@@ -255553,7 +255414,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "47161f29ebb190087d2964157e299e53bf1c47a0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6fdfae05ccb0e09efef7b3568a930a5ea3e8ffc2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284219,7 +284080,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302493"
+                                build_number: "302496"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291531,7 +291392,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302493", "302493"), 10);
+                let s = parseInt((n = "302496", "302496"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319710,4 +319571,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.a5fb24e1f3c204be918c.js.map
+//# sourceMappingURL=42458.7ac185f1ca16d5cb1248.js.map
