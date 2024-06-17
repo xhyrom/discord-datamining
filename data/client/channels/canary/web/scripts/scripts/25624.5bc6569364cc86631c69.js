@@ -40452,7 +40452,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, d.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302769", ", Version Hash: ").concat("f0055821b4755cf21c633c312baa6faa103cf298")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302783", ", Version Hash: ").concat("23a3e8a4b5b16e74d99697b155d688dd6035e93e")), i.Z.setTags({
                 appContext: h.e3s
             }), c.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -94393,8 +94393,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302769", "302769"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302769")), t = 0), t
+                let t = parseInt((e = "302783", "302783"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302783")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122676,8 +122676,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302769",
-                    versionHash: "f0055821b4755cf21c633c312baa6faa103cf298"
+                    buildNumber: "302783",
+                    versionHash: "23a3e8a4b5b16e74d99697b155d688dd6035e93e"
                 }
             }
             n.d(t, {
@@ -178699,8 +178699,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718665520829",
-                                    build_number: "302769"
+                                    built_at: "1718667086245",
+                                    build_number: "302783"
                                 }
                             },
                             retries: 1
@@ -255823,7 +255823,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f0055821b4755cf21c633c312baa6faa103cf298"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "23a3e8a4b5b16e74d99697b155d688dd6035e93e"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275302,64 +275302,60 @@
             }
 
             function x(e, t, n, r, s) {
-                let o, a, l, d;
-                let c = (0, T.Z)(e),
+                let o, a, l, _;
+                let d = (0, T.Z)(e),
                     {
-                        trailingIconClass: E,
-                        leadingIconClass: h,
-                        iconSize: S
+                        trailingIconClass: c,
+                        leadingIconClass: E,
+                        iconSize: h
                     } = s,
-                    f = null == t || "" === t || Array.isArray(t) && 0 === t.length,
-                    N = (0, R.cv)(c).length > 0,
-                    m = null != c.interaction,
-                    O = c.hasFlag(b.iLy.IS_VOICE_MESSAGE),
-                    v = c.isPoll(),
-                    D = c.type === b.uaV.POLL_RESULT;
-                if ((0, I.Z)(e) && (d = (0, i.jsx)(u.a, {
-                        className: h,
-                        width: S,
-                        height: S
-                    })), n) o = G.Z.Messages.REPLY_QUOTE_MESSAGE_BLOCKED;
-                else if (c.type === b.uaV.CHANNEL_PINNED_MESSAGE) o = G.Z.Messages.MESSAGE_PINNED;
-                else if (f) {
-                    if (v) {
-                        var M, P;
-                        a = null == c ? void 0 : null === (P = c.poll) || void 0 === P ? void 0 : null === (M = P.question) || void 0 === M ? void 0 : M.text
-                    } else D ? o = (0, A.N4)(c) : N ? o = G.Z.Messages.REPLY_QUOTE_STICKER : m ? o = G.Z.Messages.REPLY_QUOTE_COMMAND : O ? o = G.Z.Messages.REPLY_QUOTE_VOICE_MESSAGE : (o = G.Z.Messages.REPLY_QUOTE_NO_TEXT_CONTENT, l = (0, i.jsx)(p.Z, {
+                    S = null == t || "" === t || Array.isArray(t) && 0 === t.length,
+                    f = (0, R.cv)(d).length > 0,
+                    N = null != d.interaction,
+                    m = d.hasFlag(b.iLy.IS_VOICE_MESSAGE),
+                    O = d.isPoll(),
+                    v = d.type === b.uaV.POLL_RESULT;
+                if ((0, I.Z)(e) && (_ = (0, i.jsx)(u.a, {
                         className: E,
-                        width: S,
-                        height: S
+                        width: h,
+                        height: h
+                    })), n) o = G.Z.Messages.REPLY_QUOTE_MESSAGE_BLOCKED;
+                else if (d.type === b.uaV.CHANNEL_PINNED_MESSAGE) o = G.Z.Messages.MESSAGE_PINNED;
+                else if (S) {
+                    if (O) {
+                        var D, M;
+                        a = null == d ? void 0 : null === (M = d.poll) || void 0 === M ? void 0 : null === (D = M.question) || void 0 === D ? void 0 : D.text
+                    } else v ? o = (0, A.N4)(d) : f ? o = G.Z.Messages.REPLY_QUOTE_STICKER : N ? o = G.Z.Messages.REPLY_QUOTE_COMMAND : m ? o = G.Z.Messages.REPLY_QUOTE_VOICE_MESSAGE : (o = G.Z.Messages.REPLY_QUOTE_NO_TEXT_CONTENT, l = (0, i.jsx)(p.Z, {
+                        className: c,
+                        width: h,
+                        height: h
                     }))
                 } else a = (0, i.jsx)(y.ZP, {
-                    message: c,
+                    message: d,
                     content: t,
                     className: r
                 });
-                return N ? l = (0, i.jsx)(L.Z, {
-                    className: E,
-                    width: S,
-                    height: S
-                }) : m ? l = (0, i.jsx)(C.Z, {
-                    className: E,
-                    width: S,
-                    height: S
-                }) : O ? l = (0, i.jsx)(g.Z, {
-                    className: E,
-                    width: 19 / 24 * S,
-                    height: S
-                }) : D ? l = (0, i.jsx)(_.Q, {
-                    className: E,
-                    width: S,
-                    height: S
-                }) : (c.attachments.length > 0 || c.embeds.length > 0) && (l = (0, i.jsx)(p.Z, {
-                    className: E,
-                    width: S,
-                    height: S
+                return f ? l = (0, i.jsx)(L.Z, {
+                    className: c,
+                    width: h,
+                    height: h
+                }) : N ? l = (0, i.jsx)(C.Z, {
+                    className: c,
+                    width: h,
+                    height: h
+                }) : m ? l = (0, i.jsx)(g.Z, {
+                    className: c,
+                    width: 19 / 24 * h,
+                    height: h
+                }) : (d.attachments.length > 0 || d.embeds.length > 0) && !v && (l = (0, i.jsx)(p.Z, {
+                    className: c,
+                    width: h,
+                    height: h
                 })), {
                     contentPlaceholder: o,
                     renderedContent: a,
                     trailingIcon: l,
-                    leadingIcon: d
+                    leadingIcon: _
                 }
             }
 
@@ -275370,19 +275366,19 @@
                     baseAuthor: s,
                     baseMessage: a,
                     referencedMessage: u,
-                    renderPopout: _
-                } = e, I = r.useMemo(() => null != _ && u.state === m.Y.LOADED ? e => _(e, u.message) : void 0, [u, _]), T = function(e, t, n) {
+                    renderPopout: I
+                } = e, T = r.useMemo(() => null != I && u.state === m.Y.LOADED ? e => I(e, u.message) : void 0, [u, I]), A = function(e, t, n) {
                     let {
                         referencedMessage: r,
                         compact: s,
                         isReplyAuthorBlocked: a,
                         repliedAuthor: l,
                         showAvatarPopout: u,
-                        onClickAvatar: _,
-                        onContextMenu: I,
-                        onPopoutRequestClose: T
+                        onClickAvatar: I,
+                        onContextMenu: T,
+                        onPopoutRequestClose: h
                     } = e, {
-                        analyticsLocations: h
+                        analyticsLocations: S
                     } = (0, E.ZP)(c.Z.AVATAR);
                     if (s || r.state !== m.Y.LOADED || a) return (0, i.jsx)("div", {
                         className: w.replyBadge,
@@ -275396,9 +275392,14 @@
                     if (r.message.type === b.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, i.jsx)(v.Z, {
                         className: w.ticketIcon
                     });
-                    let S = () => {
+                    if (r.message.type === b.uaV.POLL_RESULT) return (0, i.jsx)(_.Q, {
+                        className: w.repliedTextContentLeadingIcon,
+                        width: U.WW,
+                        height: U.WW
+                    });
+                    let f = () => {
                         var e, n, s, a, u;
-                        return e = r.message.author, n = l, s = t, a = _, u = I, (0, i.jsx)("img", {
+                        return e = r.message.author, n = l, s = t, a = I, u = T, (0, i.jsx)("img", {
                             alt: "",
                             src: (null == n ? void 0 : n.guildMemberAvatar) != null && null != s ? (0, D.JM)({
                                 guildId: s,
@@ -275414,19 +275415,19 @@
                         })
                     };
                     return null != n && null != u ? (0, i.jsx)(E.Gt, {
-                        value: h,
+                        value: S,
                         children: (0, i.jsx)(d.Popout, {
                             renderPopout: n,
                             shouldShow: u,
                             position: "right",
-                            onRequestClose: T,
-                            children: S
+                            onRequestClose: h,
+                            children: f
                         })
                     }) : (0, i.jsx)(E.Gt, {
-                        value: h,
-                        children: S()
+                        value: S,
+                        children: f()
                     })
-                }(e, r.useContext(h.Z), I), A = function(e, t) {
+                }(e, r.useContext(h.Z), T), R = function(e, t) {
                     let {
                         baseMessage: n,
                         channel: r,
@@ -275436,7 +275437,7 @@
                         onContextMenu: l,
                         onPopoutRequestClose: u
                     } = e, _ = (null == s ? void 0 : s.state) === m.Y.LOADED ? s.message : void 0;
-                    return null == _ || _.type === b.uaV.USER_JOIN || _.type === b.uaV.ROLE_SUBSCRIPTION_PURCHASE || _.type === b.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || _.type === b.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || _.type === b.uaV.GUILD_GAMING_STATS_PROMPT ? null : (0, i.jsx)(f.Z, {
+                    return null == _ || _.type === b.uaV.USER_JOIN || _.type === b.uaV.ROLE_SUBSCRIPTION_PURCHASE || _.type === b.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || _.type === b.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || _.type === b.uaV.GUILD_GAMING_STATS_PROMPT || _.type === b.uaV.POLL_RESULT ? null : (0, i.jsx)(f.Z, {
                         message: _,
                         channel: r,
                         compact: !0,
@@ -275448,7 +275449,7 @@
                         onPopoutRequestClose: u,
                         isRepliedMessage: !0
                     })
-                }(e, I), R = function(e) {
+                }(e, T), C = function(e) {
                     let {
                         content: t,
                         referencedMessage: n,
@@ -275499,15 +275500,15 @@
                         default:
                             (0, P.vE)(n)
                     }
-                }(e), C = r.useMemo(() => e.compact ? (0, N.Z)((0, M.vc)(l()(), "LT")) : null, [e.compact]);
+                }(e), p = r.useMemo(() => e.compact ? (0, N.Z)((0, M.vc)(l()(), "LT")) : null, [e.compact]);
                 return null != n && null != s && (t = G.Z.Messages.CHANNEL_MESSAGE_REPLY_A11Y_LABEL.format({
                     author: null == s ? void 0 : s.nick,
                     repliedAuthor: null == n ? void 0 : n.nick
                 })), (0, i.jsxs)("div", {
                     id: (0, S.Gq)(a),
-                    className: o()(w.repliedMessage, C),
+                    className: o()(w.repliedMessage, p),
                     "aria-label": t,
-                    children: [T, A, R]
+                    children: [A, R, C]
                 })
             }
         },
@@ -284284,7 +284285,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302769"
+                                build_number: "302783"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (d.user_id = c.id, d.user_name = c.tag, null != c.email && (d.email = c.email));
@@ -291596,7 +291597,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302769", "302769"), 10);
+                let s = parseInt((n = "302783", "302783"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -319493,4 +319494,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.5940b463d77f16499b67.js.map
+//# sourceMappingURL=25624.5bc6569364cc86631c69.js.map
