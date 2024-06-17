@@ -40178,7 +40178,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302534", ", Version Hash: ").concat("6ecccc182719d99aef790a41724d31a33475ce57")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302545", ", Version Hash: ").concat("4c88edbcabf14ddc85bf23944c5a04809bf49963")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -59545,8 +59545,8 @@
                 E2EE_PRIVACY: "Privacy",
                 E2EE_END_TO_END_ENCRYPTION: "End-to-end encryption",
                 E2EE_END_TO_END_ENCRYPTED: "End-to-end encrypted",
-                E2EE_OVERVIEW_SUBTITLE: "Only you and your friends on this call can hear you. Nobody else – not even Wumpus – can listen in!",
-                E2EE_OVERVIEW_FOOTER_TEXT: "A new code is generated when people join or leave this call. [Learn more about end-to-end encryption.]({helpArticle})",
+                E2EE_CALL_DETAILS_SUBTITLE: "Only you and your friends on this call can hear you. Nobody else – not even Wumpus – can listen in!",
+                E2EE_CALL_DETAILS_FOOTER_TEXT: "A new code is generated when people join or leave this call. [Learn more about end-to-end encryption.]({helpArticle})",
                 E2EE_ENCRYPTION: "Encryption",
                 E2EE_SETTINGS_SUBTITLE: "All of your calls on Discord are end-to-end encrypted. That means nobody — not even Wumpus — can listen in on your conversations. You can verify your privacy by comparing verification codes with whoever you’re talking to. [Learn more about end-to-end encryption.]({helpArticle})",
                 E2EE_VERIFICATION_CODES: "Verification codes",
@@ -59562,7 +59562,10 @@
                 E2EE_USER_VERIFIED_HOURS_AGO: "Verified {count} {count, plural, =1 {hour} other {hours}} ago",
                 E2EE_USER_VERIFIED_MINUTES_AGO: "Verified {count} {count, plural, =1 {minute} other {minutes}} ago",
                 E2EE_USER_VERIFIED_SECONDS_AGO: "Verified {count} {count, plural, =1 {second} other {seconds}} ago",
-                E2EE_DEVICES_COUNT: "{count} {count, plural, =1 {device} other {devices}}"
+                E2EE_DEVICES_COUNT: "{count} {count, plural, =1 {device} other {devices}}",
+                E2EE_CHECK_PRIVACY_CODE: "Check this call's privacy code",
+                E2EE_MOBILE_CALL_DETAILS_SUBTITLE: "Compare this code with your friends. If these numbers are the same on everyone's screen, then this call is end-to-end encrypted.",
+                E2EE_PRIVACY_CODE: "Privacy Code"
             })
         },
         539590: function(e) {
@@ -93894,8 +93897,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302534", "302534"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302534")), t = 0), t
+                let t = parseInt((e = "302545", "302545"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302545")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122180,8 +122183,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302534",
-                    versionHash: "6ecccc182719d99aef790a41724d31a33475ce57"
+                    buildNumber: "302545",
+                    versionHash: "4c88edbcabf14ddc85bf23944c5a04809bf49963"
                 }
             }
             n.r(t), n.d(t, {
@@ -122715,7 +122718,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("81039"), n.e("32948"), n.e("29999"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("83256"), n.e("61414"), n.e("87624"), n.e("10021"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("12434"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("32948"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("83256"), n.e("61414"), n.e("87624"), n.e("10021"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("12434"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -178285,8 +178288,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718647273671",
-                                    build_number: "302534"
+                                    built_at: "1718648515623",
+                                    build_number: "302545"
                                 }
                             },
                             retries: 1
@@ -227496,7 +227499,7 @@
                 if ((0, o.default)(A), T.isPlatformEmbedded)(0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("79477"), n.e("82601")]).then(n.bind(n, "60594"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("79477"), n.e("12977")]).then(n.bind(n, "60594"));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         guildId: e,
@@ -255464,7 +255467,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6ecccc182719d99aef790a41724d31a33475ce57"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4c88edbcabf14ddc85bf23944c5a04809bf49963"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284130,7 +284133,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302534"
+                                build_number: "302545"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291442,7 +291445,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302534", "302534"), 10);
+                let s = parseInt((n = "302545", "302545"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319621,4 +319624,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.de52eae2342bfe88318a.js.map
+//# sourceMappingURL=42458.8ee915963abe537a1c7a.js.map
