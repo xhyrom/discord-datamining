@@ -9228,6 +9228,7 @@
                 clickable: "clickable__8ce70",
                 column: "column_fc59bf",
                 content: "content__83354",
+                emptyFriendsWhoPlay: "emptyFriendsWhoPlay__44e75",
                 followButton: "followButton__601b1",
                 gameArtwork: "gameArtwork__36a6d",
                 gameDetails: "gameDetails_b811c9",
