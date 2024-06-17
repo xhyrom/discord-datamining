@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302526", ", Version Hash: ").concat("10886725a8ecdbf944289a8815dc7020a404ef39")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302528", ", Version Hash: ").concat("4b003c8e13790cd8c1ce74944203352d06103a30")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93886,8 +93886,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302526", "302526"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302526")), t = 0), t
+                let t = parseInt((e = "302528", "302528"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302528")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122172,8 +122172,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302526",
-                    versionHash: "10886725a8ecdbf944289a8815dc7020a404ef39"
+                    buildNumber: "302528",
+                    versionHash: "4b003c8e13790cd8c1ce74944203352d06103a30"
                 }
             }
             n.r(t), n.d(t, {
@@ -122707,7 +122707,7 @@
                 u = n("31336"),
                 d = n("19759");
             let _ = (0, s.makeLazy)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("81039"), n.e("32948"), n.e("29999"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("46453"), n.e("61414"), n.e("87624"), n.e("10021"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("12434"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("49368"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("81039"), n.e("32948"), n.e("29999"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("6380"), n.e("11250"), n.e("57878"), n.e("8016"), n.e("32493"), n.e("77172"), n.e("4970"), n.e("95393"), n.e("67535"), n.e("86977"), n.e("18101"), n.e("68136"), n.e("81539"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("3084"), n.e("30243"), n.e("12549"), n.e("38779"), n.e("29042"), n.e("59743"), n.e("22646"), n.e("4934"), n.e("55207"), n.e("83256"), n.e("61414"), n.e("87624"), n.e("10021"), n.e("15357"), n.e("36861"), n.e("11623"), n.e("43331"), n.e("18824"), n.e("97403"), n.e("30419"), n.e("35522"), n.e("49508"), n.e("5528"), n.e("19282"), n.e("31649"), n.e("27385"), n.e("30634"), n.e("12434"), n.e("75308"), n.e("54807"), n.e("66553")]).then(n.bind(n, "678717")),
                 webpackId: "678717"
             });
 
@@ -158820,7 +158820,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("32493"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("12549"), n.e("29042"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("46453"), n.e("61414"), n.e("1187"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("3619"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("32493"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("12549"), n.e("29042"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("83256"), n.e("61414"), n.e("1187"), n.e("90144"), n.e("11623"), n.e("92557"), n.e("3619"), n.e("85107")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -160630,8 +160630,8 @@
                 T = n("962086"),
                 f = n("160404"),
                 S = n("703656"),
-                h = n("592125"),
-                A = n("800599"),
+                h = n("814443"),
+                A = n("592125"),
                 m = n("940627"),
                 N = n("705600"),
                 p = n("507893"),
@@ -160672,9 +160672,9 @@
                         let s = null !== (E = (0, C.getChannelIdFromCardData)(o)) && void 0 !== E ? E : "",
                             f = (0, g.getVoiceChannelUsers)(s, t.id),
                             S = e.length;
-                        e.push(o.category), i.push(f.length), r.push(f.length > 0 ? f[0].id : "0"), a.push(f.length > 0 && null !== (I = null === (_ = A.default.getUserAffinity(f[0].id)) || void 0 === _ ? void 0 : _.affinity) && void 0 !== I ? I : 0), n.push(Math.min(f.length, 6)), l.push(s), u.push(null !== (T = null === (c = h.default.getChannel(s)) || void 0 === c ? void 0 : c.type) && void 0 !== T ? T : v.ChannelTypes.UNKNOWN), d["position_".concat(S + 1, "_affinity_user_ids")] = f.slice(0, 6).map(e => e.id), d["position_".concat(S + 1, "_user_affinity_scores")] = f.slice(0, 6).map(e => {
+                        e.push(o.category), i.push(f.length), r.push(f.length > 0 ? f[0].id : "0"), a.push(f.length > 0 && null !== (I = null === (_ = h.default.getUserAffinity(f[0].id)) || void 0 === _ ? void 0 : _.affinity) && void 0 !== I ? I : 0), n.push(Math.min(f.length, 6)), l.push(s), u.push(null !== (T = null === (c = A.default.getChannel(s)) || void 0 === c ? void 0 : c.type) && void 0 !== T ? T : v.ChannelTypes.UNKNOWN), d["position_".concat(S + 1, "_affinity_user_ids")] = f.slice(0, 6).map(e => e.id), d["position_".concat(S + 1, "_user_affinity_scores")] = f.slice(0, 6).map(e => {
                             var t, n;
-                            return null !== (n = null === (t = A.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                            return null !== (n = null === (t = h.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                         })
                     }
                     0 !== e.length && (d.card_types = e, d.affinity_users_counts = n, d.total_users_counts = i, d.max_affinity_user_ids = r, d.max_affinity_user_scores = a, d.channel_ids = l, d.channel_types = u, d.guild_id = t.id, O.default.track(v.AnalyticEvents.GUILD_TOOLTIP_SHOWN, {
@@ -161328,15 +161328,15 @@
                 C = n("565799"),
                 R = n("501655"),
                 g = n("344185"),
-                L = n("199902"),
-                v = n("592125"),
-                D = n("480294"),
-                M = n("984933"),
-                y = n("271383"),
-                P = n("496675"),
-                U = n("158776"),
-                b = n("699516"),
-                G = n("800599"),
+                L = n("814443"),
+                v = n("199902"),
+                D = n("592125"),
+                M = n("480294"),
+                y = n("984933"),
+                P = n("271383"),
+                U = n("496675"),
+                b = n("158776"),
+                G = n("699516"),
                 w = n("594174"),
                 k = n("979651"),
                 B = n("938475"),
@@ -161367,11 +161367,11 @@
                         } = e;
                         return t.id
                     }),
-                    i = D.default.hasConsented(K.Consents.PERSONALIZATION),
-                    r = G.default.getUserAffinities();
+                    i = M.default.hasConsented(K.Consents.PERSONALIZATION),
+                    r = L.default.getUserAffinities();
                 return (i && r.length > 0 ? (0, a.orderBy)(n, [e => {
                     var t, n;
-                    return null !== (n = null === (t = G.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                    return null !== (n = null === (t = L.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                 }], ["desc"]) : n).map(e => w.default.getUser(e)).filter(F.isNotNullish)
             }
 
@@ -161417,8 +161417,8 @@
                 let t = e.id,
                     [n, i] = s.useState([]),
                     [r, u] = s.useState(0),
-                    c = (0, l.useStateFromStoresArray)([M.default, g.default], () => {
-                        let e = M.default.getChannels(t)[M.GUILD_VOCAL_CHANNELS_KEY].map(e => {
+                    c = (0, l.useStateFromStoresArray)([y.default, g.default], () => {
+                        let e = y.default.getChannels(t)[y.GUILD_VOCAL_CHANNELS_KEY].map(e => {
                             let {
                                 channel: t
                             } = e;
@@ -161426,12 +161426,12 @@
                         });
                         return [...e, ...Object.values(g.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
                     }, [t]),
-                    E = (0, l.useStateFromStores)([A.default, v.default], () => A.default.getGuildScheduledEventsForGuild(t).filter(e => (0, A.isGuildScheduledEventActive)(e)).map(e => {
+                    E = (0, l.useStateFromStores)([A.default, D.default], () => A.default.getGuildScheduledEventsForGuild(t).filter(e => (0, A.isGuildScheduledEventActive)(e)).map(e => {
                         var t;
                         return {
                             category: W.CardCategory.EVENT,
                             event: e,
-                            isStage: !!(null === (t = v.default.getChannel(e.channel_id)) || void 0 === t ? void 0 : t.isGuildStageVoice())
+                            isStage: !!(null === (t = D.default.getChannel(e.channel_id)) || void 0 === t ? void 0 : t.isGuildStageVoice())
                         }
                     }), [t], a.isEqual),
                     I = E.map(e => {
@@ -161440,7 +161440,7 @@
                         } = e;
                         return t.channel_id
                     }),
-                    T = (0, l.useStateFromStores)([b.default], () => b.default.getRelationships()),
+                    T = (0, l.useStateFromStores)([G.default], () => G.default.getRelationships()),
                     f = s.useMemo(() => Object.keys(T).filter(e => T[e] === K.RelationshipTypes.BLOCKED), [T]),
                     S = (0, l.useStateFromStores)([B.default], () => B.default.getVoiceStates(t), [t]),
                     h = s.useMemo(() => {
@@ -161455,9 +161455,9 @@
                             }) && t !== e.afkChannelId && c.includes(t)
                         })
                     }, [S, I, c, f, e.afkChannelId]),
-                    m = (0, l.useStateFromStores)([d.default, k.default, L.default, U.default, v.default], () => h.map(e => {
+                    m = (0, l.useStateFromStores)([d.default, k.default, v.default, b.default, D.default], () => h.map(e => {
                         var t;
-                        let n = L.default.getAllApplicationStreamsForChannel(e).map(e => e.ownerId),
+                        let n = v.default.getAllApplicationStreamsForChannel(e).map(e => e.ownerId),
                             i = S[e].filter(F.isNotNullish),
                             r = d.default.getEmbeddedActivitiesForChannel(e),
                             s = W.CardCategory.HANGOUT,
@@ -161472,7 +161472,7 @@
                             u = [],
                             c = [];
                         for (let e of (r.length > 0 && (s = W.CardCategory.EMBEDDED_ACTIVITY), i)) {
-                            let t = U.default.findActivity(e.user.id, $(e));
+                            let t = b.default.findActivity(e.user.id, $(e));
                             null != t && !(0, _.default)(t) && (s = W.CardCategory.GAMING, a.push(t), u.push(e.user.id)), e.voiceState.selfVideo && c.push(e.user.id)
                         }
                         if (s === W.CardCategory.EMBEDDED_ACTIVITY) return {
@@ -161496,11 +161496,11 @@
                             streamUserIds: n,
                             channelHasVideo: l,
                             videoUserIds: c,
-                            isStage: !!(null === (t = v.default.getChannel(e)) || void 0 === t ? void 0 : t.isGuildStageVoice())
+                            isStage: !!(null === (t = D.default.getChannel(e)) || void 0 === t ? void 0 : t.isGuildStageVoice())
                         }
                     }), [S, h], a.isEqual),
-                    N = (0, l.useStateFromStores)([D.default], () => D.default.hasConsented(K.Consents.PERSONALIZATION)),
-                    p = (0, l.useStateFromStores)([G.default], () => G.default.getUserAffinities()),
+                    N = (0, l.useStateFromStores)([M.default], () => M.default.hasConsented(K.Consents.PERSONALIZATION)),
+                    p = (0, l.useStateFromStores)([L.default], () => L.default.getUserAffinities()),
                     O = N && p.length > 0,
                     C = [...m, ...E];
                 return r !== C.length && C.length > 0 && (i((function(e) {
@@ -161543,7 +161543,7 @@
                         let n = e => e > 0 ? Math.log(e + 1) : 0,
                             i = e => e.map(e => {
                                 var t, n;
-                                return null !== (n = null === (t = G.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                                return null !== (n = null === (t = L.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                             }).map(n),
                             r = (0, o.match)(e).with({
                                 category: W.CardCategory.EVENT
@@ -161593,23 +161593,23 @@
             let $ = e => e => [K.ActivityTypes.PLAYING, K.ActivityTypes.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && !1;
 
             function ee(e) {
-                return (0, l.useStateFromStoresArray)([D.default, G.default], () => {
-                    let t = D.default.hasConsented(K.Consents.PERSONALIZATION),
-                        n = G.default.getUserAffinities();
+                return (0, l.useStateFromStoresArray)([M.default, L.default], () => {
+                    let t = M.default.hasConsented(K.Consents.PERSONALIZATION),
+                        n = L.default.getUserAffinities();
                     return t && n.length > 0 ? (0, a.orderBy)(e, [e => {
                         var t, n;
-                        return null !== (n = null === (t = G.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                        return null !== (n = null === (t = L.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                     }], ["desc"]) : e
                 }, [e])
             }
 
             function et(e) {
-                return (0, l.useStateFromStoresArray)([D.default, G.default], () => {
-                    let t = D.default.hasConsented(K.Consents.PERSONALIZATION),
-                        n = G.default.getUserAffinities();
+                return (0, l.useStateFromStoresArray)([M.default, L.default], () => {
+                    let t = M.default.hasConsented(K.Consents.PERSONALIZATION),
+                        n = L.default.getUserAffinities();
                     return t && n.length > 0 ? (0, a.orderBy)(e, [e => {
                         var t, n;
-                        return null !== (n = null === (t = G.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                        return null !== (n = null === (t = L.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                     }], ["desc"]) : e
                 }, [e])
             }
@@ -161660,7 +161660,7 @@
                         var t;
                         let n = w.default.getUser(e);
                         if (null == n) return null;
-                        let r = y.default.getNick(i, n.id);
+                        let r = P.default.getNick(i, n.id);
                         return null !== (t = null != r ? r : Y.default.getGlobalName(n)) && void 0 !== t ? t : Y.default.getUserTag(n)
                     }).filter(e => null != e)),
                     a = s.length;
@@ -161678,11 +161678,11 @@
                 var r, s;
                 let a = {},
                     o = null !== (s = (0, j.getChannelIdFromCardData)(e)) && void 0 !== s ? s : "";
-                a.source = i, a.card_type = e.category, a.card_position = n, a.channel_id = o, a.channel_type = null === (r = v.default.getChannel(o)) || void 0 === r ? void 0 : r.type;
+                a.source = i, a.card_type = e.category, a.card_position = n, a.channel_id = o, a.channel_type = null === (r = D.default.getChannel(o)) || void 0 === r ? void 0 : r.type;
                 let l = X(o, t);
                 a.card_affinity_users_count = Math.min(l.length, 6), a.card_total_users_count = l.length, a.card_affinity_user_ids = l.slice(0, 6).map(e => e.id), a.card_max_affinity_user_id = l.length > 0 ? l[0].id : "0", a.card_user_affinity_scores = l.slice(0, 6).map(e => {
                     var t, n;
-                    return null !== (n = null === (t = G.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                    return null !== (n = null === (t = L.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                 }), x.default.track(K.AnalyticEvents.GUILD_TOOLTIP_CARD_CLICKED, {
                     ...a,
                     ...(0, c.collectGuildAnalyticsMetadata)(t)
@@ -161699,14 +161699,14 @@
                         return () => {
                             let {
                                 channelId: i
-                            } = e, r = v.default.getChannel(i), s = P.default.can(K.Permissions.CONNECT, r);
+                            } = e, r = D.default.getChannel(i), s = U.default.can(K.Permissions.CONNECT, r);
                             er(e, t, n, "card"), s ? (0, N.transitionToGuild)(t, i) : ((0, N.transitionToGuild)(t), u.default.channelListScrollTo(t, i))
                         };
                     case W.CardCategory.EMBEDDED_ACTIVITY:
                         return () => {
                             let {
                                 channelId: i
-                            } = e.embeddedActivities[0], r = v.default.getChannel(i), s = P.default.can(K.Permissions.CONNECT, r);
+                            } = e.embeddedActivities[0], r = D.default.getChannel(i), s = U.default.can(K.Permissions.CONNECT, r);
                             er(e, t, n, "card"), s ? (0, N.transitionToGuild)(t, i) : ((0, N.transitionToGuild)(t), u.default.channelListScrollTo(t, i))
                         };
                     case W.CardCategory.EVENT:
@@ -161741,15 +161741,15 @@
                         return () => {
                             let {
                                 channelId: n
-                            } = e, i = v.default.getChannel(n);
-                            null != i && P.default.can(K.Permissions.CONNECT, i) && (i.isGuildStageVoice() ? ea(t, n) : i.isGuildVoice() && eo(t, i))
+                            } = e, i = D.default.getChannel(n);
+                            null != i && U.default.can(K.Permissions.CONNECT, i) && (i.isGuildStageVoice() ? ea(t, n) : i.isGuildVoice() && eo(t, i))
                         };
                     case W.CardCategory.EMBEDDED_ACTIVITY:
                         return () => {
                             let {
                                 channelId: n
-                            } = e.embeddedActivities[0], i = v.default.getChannel(n);
-                            null != i && i.type === K.ChannelTypes.GUILD_VOICE && P.default.can(K.Permissions.CONNECT, i) && eo(t, i)
+                            } = e.embeddedActivities[0], i = D.default.getChannel(n);
+                            null != i && i.type === K.ChannelTypes.GUILD_VOICE && U.default.can(K.Permissions.CONNECT, i) && eo(t, i)
                         };
                     case W.CardCategory.EVENT:
                         return () => {
@@ -161759,8 +161759,8 @@
                                 channel_id: n,
                                 guild_id: i,
                                 entity_type: r
-                            } = t, s = v.default.getChannel(n);
-                            if (null == n || null == s || !P.default.can(K.Permissions.CONNECT, s)) {
+                            } = t, s = D.default.getChannel(n);
+                            if (null == n || null == s || !U.default.can(K.Permissions.CONNECT, s)) {
                                 (0, h.openGuildEventDetails)({
                                     eventId: t.id
                                 });
@@ -161777,8 +161777,8 @@
                 let t, n;
                 let i = (0, m.getLocationFromEvent)(e),
                     r = null == i ? void 0 : i.replace(/[<#>]/g, ""),
-                    s = null != r ? v.default.getChannel(r) : v.default.getChannel(e.channel_id),
-                    a = P.default.can(K.Permissions.VIEW_CHANNEL, s);
+                    s = null != r ? D.default.getChannel(r) : D.default.getChannel(e.channel_id),
+                    a = U.default.can(K.Permissions.VIEW_CHANNEL, s);
                 if (null != s && a) t = (0, f.getSimpleChannelIconComponent)(s.type), n = s.name;
                 else {
                     if (null == i) return null;
@@ -178277,8 +178277,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718645884273",
-                                    build_number: "302526"
+                                    built_at: "1718646066015",
+                                    build_number: "302528"
                                 }
                             },
                             retries: 1
@@ -183142,7 +183142,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("57878"), n.e("8016"), n.e("68136"), n.e("58615"), n.e("68553")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("57878"), n.e("8016"), n.e("68136"), n.e("29625"), n.e("68553")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -215319,6 +215319,100 @@
                 })
             }
         },
+        814443: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i, r = n("442837"),
+                s = n("570140"),
+                a = n("699516");
+
+            function o(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let l = !1,
+                u = Object.freeze({
+                    userAffinities: [],
+                    affinityUserIds: new Set,
+                    lastFetched: 0
+                }),
+                d = Object.freeze({
+                    userAffinitiesMap: new Map,
+                    affinityUserIds: new Set
+                }),
+                _ = {
+                    ...u
+                },
+                c = {
+                    ...d
+                };
+
+            function E() {
+                let e = new Map(_.userAffinities.filter(e => {
+                        let {
+                            user_id: t
+                        } = e;
+                        return !a.default.isBlocked(t)
+                    }).map(e => [e.user_id, e])),
+                    t = new Set(e.keys());
+                c = {
+                    userAffinitiesMap: e,
+                    affinityUserIds: t
+                }
+            }
+            class I extends(i = r.default.PersistedStore) {
+                initialize(e) {
+                    this.waitFor(a.default), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, E()), this.syncWith([a.default], E)
+                }
+                needsRefresh() {
+                    return Date.now() - _.lastFetched > 864e5
+                }
+                getFetching() {
+                    return l
+                }
+                getState() {
+                    return _
+                }
+                getUserAffinities() {
+                    return _.userAffinities
+                }
+                getUserAffinitiesMap() {
+                    return c.userAffinitiesMap
+                }
+                getUserAffinity(e) {
+                    return c.userAffinitiesMap.get(e)
+                }
+                getUserAffinitiesUserIds() {
+                    return c.affinityUserIds
+                }
+            }
+            o(I, "displayName", "UserAffinitiesStore"), o(I, "persistKey", "UserAffinitiesStore"), o(I, "migrations", [e => null]), t.default = new I(s.default, {
+                LOAD_USER_AFFINITIES_SUCCESS: function(e) {
+                    var t;
+                    let {
+                        affinities: n
+                    } = e;
+                    _.userAffinities = null !== (t = n.user_affinities) && void 0 !== t ? t : [], _.lastFetched = Date.now(), E(), l = !1
+                },
+                LOAD_USER_AFFINITIES: function() {
+                    l = !0
+                },
+                LOAD_USER_AFFINITIES_FAILURE: function() {
+                    l = !1
+                },
+                LOGOUT: function() {
+                    _ = {
+                        ...u
+                    }, c = {
+                        ...d
+                    }
+                }
+            })
+        },
         397550: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -215981,10 +216075,10 @@
                 }
             }), n("653041");
             var i = n("367907"),
-                r = n("271383"),
-                s = n("158776"),
-                a = n("699516"),
-                o = n("800599"),
+                r = n("814443"),
+                s = n("271383"),
+                a = n("158776"),
+                o = n("699516"),
                 l = n("594174"),
                 u = n("626135"),
                 d = n("768581"),
@@ -216011,8 +216105,8 @@
                     return (null == s ? void 0 : s.bio) && a.push(E.TrackUserProfileProperties.BIO), (null == s ? void 0 : s.themeColors) != null && void 0 !== s.themeColors.find(e => null !== e) && a.push(E.TrackUserProfileProperties.THEME), (null == t ? void 0 : t.avatarDecoration) != null && a.push(E.TrackUserProfileProperties.AVATAR_DECORATION), (null == s ? void 0 : s.profileEffectId) != null && a.push(E.TrackUserProfileProperties.PROFILE_EFFECT), a
                 },
                 S = e => {
-                    let t = s.default.getStatus(e),
-                        n = s.default.isMobileOnline(e);
+                    let t = a.default.getStatus(e),
+                        n = a.default.isMobileOnline(e);
                     return t === T.StatusTypes.ONLINE && n ? "".concat(t, "-mobile") : t === T.StatusTypes.ONLINE ? "".concat(t, "-desktop") : t
                 },
                 h = e => null == e ? e : Object.keys(I.ActivityTypes)[Object.values(I.ActivityTypes).indexOf(e)],
@@ -216020,13 +216114,13 @@
                     var t, n;
                     let {
                         layout: i,
-                        userId: a,
+                        userId: r,
                         guildId: o,
                         showGuildProfile: u = !0
-                    } = e, d = l.default.getUser(a);
+                    } = e, d = l.default.getUser(r);
                     if (null == d) return {};
                     let _ = (0, c.getDisplayProfile)(null == d ? void 0 : d.id, u ? o : void 0),
-                        E = u && null != o ? r.default.getMember(o, null == d ? void 0 : d.id) : null;
+                        E = u && null != o ? s.default.getMember(o, null == d ? void 0 : d.id) : null;
                     return {
                         profile_layout: i,
                         profile_properties: f({
@@ -216037,7 +216131,7 @@
                             guildMember: E,
                             guildMemberProfile: null == _ ? void 0 : _._guildMemberProfile
                         }),
-                        profile_activity_types: s.default.getActivities(d.id).map(e => {
+                        profile_activity_types: a.default.getActivities(d.id).map(e => {
                             let {
                                 type: t
                             } = e;
@@ -216059,11 +216153,11 @@
                     var t, n;
                     return null == e ? {} : {
                         related_user_id: e,
-                        relationship_type: a.default.getRelationshipType(e),
-                        related_since: a.default.getSince(e),
+                        relationship_type: o.default.getRelationshipType(e),
+                        related_since: o.default.getSince(e),
                         num_mutual_friends: _.default.getMutualFriendsCount(e),
                         num_mutual_guilds: null === (t = _.default.getMutualGuilds(e)) || void 0 === t ? void 0 : t.length,
-                        affinity: null === (n = o.default.getUserAffinity(e)) || void 0 === n ? void 0 : n.affinity
+                        affinity: null === (n = r.default.getUserAffinity(e)) || void 0 === n ? void 0 : n.affinity
                     }
                 },
                 N = e => {
@@ -222664,7 +222758,7 @@
                 a = n("881052"),
                 o = n("699682"),
                 l = n("81897"),
-                u = n("800599"),
+                u = n("814443"),
                 d = n("621853"),
                 _ = n("484459");
 
@@ -248981,100 +249075,6 @@
                 }
             })
         },
-        800599: function(e, t, n) {
-            "use strict";
-            n.r(t), n("47120");
-            var i, r = n("442837"),
-                s = n("570140"),
-                a = n("699516");
-
-            function o(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            let l = !1,
-                u = Object.freeze({
-                    userAffinities: [],
-                    affinityUserIds: new Set,
-                    lastFetched: 0
-                }),
-                d = Object.freeze({
-                    userAffinitiesMap: new Map,
-                    affinityUserIds: new Set
-                }),
-                _ = {
-                    ...u
-                },
-                c = {
-                    ...d
-                };
-
-            function E() {
-                let e = new Map(_.userAffinities.filter(e => {
-                        let {
-                            user_id: t
-                        } = e;
-                        return !a.default.isBlocked(t)
-                    }).map(e => [e.user_id, e])),
-                    t = new Set(e.keys());
-                c = {
-                    userAffinitiesMap: e,
-                    affinityUserIds: t
-                }
-            }
-            class I extends(i = r.default.PersistedStore) {
-                initialize(e) {
-                    this.waitFor(a.default), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, E()), this.syncWith([a.default], E)
-                }
-                needsRefresh() {
-                    return Date.now() - _.lastFetched > 864e5
-                }
-                getFetching() {
-                    return l
-                }
-                getState() {
-                    return _
-                }
-                getUserAffinities() {
-                    return _.userAffinities
-                }
-                getUserAffinitiesMap() {
-                    return c.userAffinitiesMap
-                }
-                getUserAffinity(e) {
-                    return c.userAffinitiesMap.get(e)
-                }
-                getUserAffinitiesUserIds() {
-                    return c.affinityUserIds
-                }
-            }
-            o(I, "displayName", "UserAffinitiesStore"), o(I, "persistKey", "UserAffinitiesStore"), o(I, "migrations", [e => null]), t.default = new I(s.default, {
-                LOAD_USER_AFFINITIES_SUCCESS: function(e) {
-                    var t;
-                    let {
-                        affinities: n
-                    } = e;
-                    _.userAffinities = null !== (t = n.user_affinities) && void 0 !== t ? t : [], _.lastFetched = Date.now(), E(), l = !1
-                },
-                LOAD_USER_AFFINITIES: function() {
-                    l = !0
-                },
-                LOAD_USER_AFFINITIES_FAILURE: function() {
-                    l = !1
-                },
-                LOGOUT: function() {
-                    _ = {
-                        ...u
-                    }, c = {
-                        ...d
-                    }
-                }
-            })
-        },
         9156: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -255456,7 +255456,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "10886725a8ecdbf944289a8815dc7020a404ef39"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4b003c8e13790cd8c1ce74944203352d06103a30"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284122,7 +284122,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302526"
+                                build_number: "302528"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291434,7 +291434,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302526", "302526"), 10);
+                let s = parseInt((n = "302528", "302528"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319613,4 +319613,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.51cac0b51c6089ab6355.js.map
+//# sourceMappingURL=42458.93a90646edec61334cac.js.map
