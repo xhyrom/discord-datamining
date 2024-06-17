@@ -8307,8 +8307,16 @@ html .progress__00e29 {
     cursor: pointer
 }
 
-.ctaTooltipCopy__6fe5f {
+.ctaTooltipText__688ed {
     text-align: center
+}
+
+.ctaTooltipErrorText__3897a {
+    text-align: left
+}
+
+.ctaTooltipErrorHint_d19f30 {
+    margin-top: 4px
 }
 
 .theme-light .outerContainer_a76fe9 {
@@ -8361,6 +8369,10 @@ html .progress__00e29 {
 .refreshIcon__69088 {
     margin-left: 8px;
     color: var(--interactive-normal)
+}
+
+.refreshIconErrorState__85bf5 {
+    color: white
 }
 
 .partnerBranding__2f8d1 {
@@ -71715,6 +71727,11 @@ html .invoiceCancelRow_aa7946 {
 
 .warningCircle__7f604 {
     color: var(--text-warning);
+    margin-right: 4px
+}
+
+.errorCircle__55c7a {
+    color: var(--text-danger);
     margin-right: 4px
 }
 
@@ -141765,4 +141782,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.89df44001b6257f89a41.css.map*/
+/*# sourceMappingURL=99387.3d24221a0480dccd110e.css.map*/
