@@ -2634,14 +2634,22 @@
             n.r(e.exports = {
                 contentContainer: "contentContainer_f37ac2",
                 commandListHeader: "commandListHeader_f37ac2",
-                command: "command_f37ac2"
+                commandContainer: "commandContainer_f37ac2",
+                command: "command_f37ac2",
+                commandSentCTAButton: "commandSentCTAButton_f37ac2",
+                commandTextContainer: "commandTextContainer_f37ac2",
+                commandSentCTAButtonInner: "commandSentCTAButtonInner_f37ac2"
             })
         },
         217992: function(e, t, n) {
             n.r(e.exports = {
-                activityBackground: "activityBackground_e46a21",
+                stickyBanner: "stickyBanner_e46a21",
+                nameContainer: "nameContainer_e46a21",
+                stickyContainer: "stickyContainer_e46a21",
+                stickyBannerContainer: "stickyBannerContainer_e46a21",
                 bannerBackground: "bannerBackground_e46a21",
-                backButtonContainer: "backButtonContainer_e46a21"
+                backButtonContainer: "backButtonContainer_e46a21",
+                textApplicationName: "textApplicationName_e46a21"
             })
         },
         113046: function(e, t, n) {
@@ -2649,17 +2657,19 @@
                 container: "container_e80fe9",
                 profileAndVideoContainer: "profileAndVideoContainer_e80fe9",
                 videoContainer: "videoContainer_e80fe9",
-                video: "video_e80fe9",
+                videoWithOverview: "videoWithOverview_e80fe9",
+                videoNoOverview: "videoNoOverview_e80fe9",
                 overviewContainerWithVideo: "overviewContainerWithVideo_e80fe9",
                 overviewContainerNoVideo: "overviewContainerNoVideo_e80fe9",
                 titleContainer: "titleContainer_e80fe9",
-                titleInnerContainer: "titleInnerContainer_e80fe9"
+                titleInnerContainer: "titleInnerContainer_e80fe9",
+                expandableDescriptionClickable: "expandableDescriptionClickable_e80fe9"
             })
         },
         564446: function(e, t, n) {
             n.r(e.exports = {
                 container: "container_ec8cd2",
-                activityIcon: "activityIcon_ec8cd2"
+                appIcon: "appIcon_ec8cd2"
             })
         },
         36e3: function(e, t, n) {

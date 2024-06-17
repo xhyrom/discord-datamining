@@ -49655,6 +49655,14 @@ span.clanTag_a31c43 {
     margin-right: 8px
 }
 
+.custom-theme-background .tooltipPointer_be6a5c {
+    display: none
+}
+
+.custom-theme-background .container_be6a5c {
+    border: 1px solid var(--border-strong)
+}
+
 .row_a6ae3c {
     display: flex;
     align-items: center
@@ -141888,4 +141896,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.909200678c34251ff5bb.css.map*/
+/*# sourceMappingURL=99387.923b0c908b7a16165e68.css.map*/
