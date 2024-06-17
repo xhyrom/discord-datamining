@@ -40452,7 +40452,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, d.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302759", ", Version Hash: ").concat("200a5beb57fd83a64815bc5285cca27ed858c754")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302769", ", Version Hash: ").concat("f0055821b4755cf21c633c312baa6faa103cf298")), i.Z.setTags({
                 appContext: h.e3s
             }), c.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42227,6 +42227,7 @@
                 APP_LAUNCHER_SEARCH_PLACEHOLDER: "Search Apps & Commands",
                 APP_LAUNCHER_HOME_EMPTY_STATE_BODY: "No apps have been installed in this server yet",
                 APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY: "No apps or commands match your search",
+                APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY_GENERIC: "Nothing matches your search",
                 APP_LAUNCHER_BUILT_IN_SECTION_NAME: "Discord Built-In",
                 APP_LAUNCHER_BUILT_IN_SECTION_DESCRIPTION: "Built-in commands for everyday use",
                 APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_TITLE: "Something went wrong...",
@@ -54523,6 +54524,7 @@
                 AFFINITIES_MARKETING_HEADER_V2_3: "Join {username} and other friends on Nitro",
                 AFFINITIES_MARKETING_HEADER_V2_2: "Join {username} and {otherUsername} on Nitro",
                 AFFINITIES_MARKETING_HEADER_V2_1: "Join {username} on Nitro",
+                AFFINITIES_MARKETING_HEADER_V2_1_WITH_LINK: "Join {username} on Nitro. [Learn more](onClickLearnMore)",
                 PICK_YOUR_PLAN: "Pick Your Plan",
                 AND_MORE: "And more!",
                 PREMIUM_FEATURES_TABLE_TITLE_SUBSCRIBER: "What You've Got",
@@ -77914,13 +77916,22 @@
                 id: "2024-06_mobile_app_launcher_in_activities_shelf",
                 label: "[Mobile] App Launcher in Activities Shelf",
                 defaultConfig: {
-                    enabled: !1
+                    enabled: !1,
+                    clickOnHomeActivityOpensAppDetail: !1
                 },
                 treatments: [{
                     id: 1,
                     label: "Enable the activities shelf getting replaced by App Launcher on mobile",
                     config: {
-                        enabled: !0
+                        enabled: !0,
+                        clickOnHomeActivityOpensAppDetail: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "On home screen, clicking activity card -> activity detail page",
+                    config: {
+                        enabled: !0,
+                        clickOnHomeActivityOpensAppDetail: !0
                     }
                 }]
             })
@@ -94382,8 +94393,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302759", "302759"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302759")), t = 0), t
+                let t = parseInt((e = "302769", "302769"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302769")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122665,8 +122676,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302759",
-                    versionHash: "200a5beb57fd83a64815bc5285cca27ed858c754"
+                    buildNumber: "302769",
+                    versionHash: "f0055821b4755cf21c633c312baa6faa103cf298"
                 }
             }
             n.d(t, {
@@ -178688,8 +178699,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718664642287",
-                                    build_number: "302759"
+                                    built_at: "1718665520829",
+                                    build_number: "302769"
                                 }
                             },
                             retries: 1
@@ -255812,7 +255823,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "200a5beb57fd83a64815bc5285cca27ed858c754"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f0055821b4755cf21c633c312baa6faa103cf298"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284273,7 +284284,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302759"
+                                build_number: "302769"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (d.user_id = c.id, d.user_name = c.tag, null != c.email && (d.email = c.email));
@@ -291585,7 +291596,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302759", "302759"), 10);
+                let s = parseInt((n = "302769", "302769"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -319482,4 +319493,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.7c7f18a59ae0977232f7.js.map
+//# sourceMappingURL=25624.5940b463d77f16499b67.js.map
