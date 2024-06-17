@@ -40452,7 +40452,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, d.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302694", ", Version Hash: ").concat("6949990cc6e823a3dfb6a1036bd63f2af558993d")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302697", ", Version Hash: ").concat("a2768b24119de2368ae23de26ca585caeb794d7b")), i.Z.setTags({
                 appContext: h.e3s
             }), c.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -57219,6 +57219,7 @@
                 COLLECTIBLES_PERMANENT_COLLECTION_BUNDLE: "These decorations are now part of your collection and can be used anytime from your User Profile.",
                 COLLECTIBLES_YOU_COLLECTED: "You've collected {itemName}!",
                 COLLECTIBLES_ALREADY_OWNED: "Already owned",
+                COLLECTIBLES_PARTIALLY_OWNED: "Partially owned",
                 COLLECTIBLES_PARTIALLY_OWNED_DISCLAIMER: "You already own one or more bundle items.",
                 COLLECTIBLES_INCLUDED_WITH_PREMIUM: "Included with Nitro",
                 COLLECTIBLES_DETAILS_MODAL_PREMIUM_PURCHASE_DISCLAIMER: "Once purchased, this decoration will be added to your collection and can be used anytime",
@@ -94181,8 +94182,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302694", "302694"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302694")), t = 0), t
+                let t = parseInt((e = "302697", "302697"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302697")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122464,8 +122465,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302694",
-                    versionHash: "6949990cc6e823a3dfb6a1036bd63f2af558993d"
+                    buildNumber: "302697",
+                    versionHash: "a2768b24119de2368ae23de26ca585caeb794d7b"
                 }
             }
             n.d(t, {
@@ -178487,8 +178488,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718659653714",
-                                    build_number: "302694"
+                                    built_at: "1718659854675",
+                                    build_number: "302697"
                                 }
                             },
                             retries: 1
@@ -255611,7 +255612,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6949990cc6e823a3dfb6a1036bd63f2af558993d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a2768b24119de2368ae23de26ca585caeb794d7b"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284072,7 +284073,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302694"
+                                build_number: "302697"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (d.user_id = c.id, d.user_name = c.tag, null != c.email && (d.email = c.email));
@@ -291384,7 +291385,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302694", "302694"), 10);
+                let s = parseInt((n = "302697", "302697"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -319281,4 +319282,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.ac6ebb613a762b98785a.js.map
+//# sourceMappingURL=25624.01d706164e05545e0d20.js.map
