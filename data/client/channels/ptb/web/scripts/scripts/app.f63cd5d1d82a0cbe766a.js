@@ -22895,6 +22895,7 @@
         700898: function(e) {
             "use strict";
             e.exports = {
+                errorCircle: "errorCircle__55c7a",
                 heading: "heading__5c363",
                 headingChevron: "headingChevron_a9d95d",
                 headingWrapper: "headingWrapper_dfde31",
@@ -23192,7 +23193,9 @@
                 ctaButtonContainer: "ctaButtonContainer__668f2",
                 ctaButtonInner: "ctaButtonInner__6f5b2",
                 ctaButtonWrapper: "ctaButtonWrapper__83da9",
-                ctaTooltipCopy: "ctaTooltipCopy__6fe5f",
+                ctaTooltipErrorHint: "ctaTooltipErrorHint_d19f30",
+                ctaTooltipErrorText: "ctaTooltipErrorText__3897a",
+                ctaTooltipText: "ctaTooltipText__688ed",
                 gridCtaButtons: "gridCtaButtons__298eb",
                 gridImg: "gridImg__488af",
                 gridProgressBar: "gridProgressBar__93562",
@@ -23211,6 +23214,7 @@
                 questRewardEmbedXs: "questRewardEmbedXs_a1f7c1",
                 questRewardGiftInventory: "questRewardGiftInventory__0c5f4",
                 refreshIcon: "refreshIcon__69088",
+                refreshIconErrorState: "refreshIconErrorState__85bf5",
                 rewardTileExpirationTooltip: "rewardTileExpirationTooltip_e04d01",
                 rewardTileExpired: "rewardTileExpired__73fac",
                 rewardTileWrapper: "rewardTileWrapper__4d72d",

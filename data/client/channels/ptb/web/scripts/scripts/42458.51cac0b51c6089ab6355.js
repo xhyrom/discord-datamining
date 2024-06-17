@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302515", ", Version Hash: ").concat("47f2217e1251a7629491f8dd296c0e4d705c13b1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302526", ", Version Hash: ").concat("10886725a8ecdbf944289a8815dc7020a404ef39")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58733,12 +58733,19 @@
                 QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_LAUNCH_ANY_GAME: "Launch any game on your connected console",
                 QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_PLAYTIME: "Play for {numMinutes, number} minutes",
                 QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_CTA: "Connect Console",
+                QUESTS_XBOX_ID: "Xbox ID",
+                QUESTS_PSN_ONLINE_ID: "PSN Online ID",
+                QUESTS_CONNECTED: "Connected",
+                QUESTS_VIEW_MORE_ACCOUNTS: "View more accounts",
                 QUESTS_MICROPHONE_UNIT_HEADER: "Launched a game?",
-                QUESTS_MICROPHONE_UNIT_BODY: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched {gameTitle}.",
-                QUESTS_MICROPHONE_UNIT_BODY_ANY_GAME: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched a game.",
-                QUESTS_MICROHPONE_UNIT_BUTTON_CTA: "Check For Launches",
-                QUESTS_CHECK_FOR_GAME_LAUNCH_TOOLTIP: "Got {gameTitle} running, but not detected? Try this.",
+                QUESTS_LAUNCHED_GAME: "Launched {gameTitle}?",
+                QUESTS_ANY_GAME_NOT_DETECTED: "Game not detected",
+                QUESTS_GAME_NOT_DETECTED: "{gameTitle} not detected",
                 QUESTS_CHECK_FOR_ANY_GAME_LAUNCH_TOOLTIP: "Got a game running, but not detected? Try this.",
+                QUESTS_CHECK_FOR_GAME_LAUNCH_TOOLTIP: "Got {gameTitle} running, but not detected? Try this.",
+                QUESTS_MICROPHONE_UNIT_BODY_ANY_GAME: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched a game.",
+                QUESTS_MICROPHONE_UNIT_BODY: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched {gameTitle}.",
+                QUESTS_MICROHPONE_UNIT_BUTTON_CTA: "Check For Launches",
                 QUESTS_HOME_HERO_EYEBROW: "What are Quests?",
                 QUESTS_HOME_HERO_TITLE: "Play Games. Get Rewards.",
                 QUESTS_HOME_HERO_DESCRIPTION: "Quests are a brand new way for players to discover games and earn rewards for playing them on Discord.",
@@ -93879,8 +93886,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302515", "302515"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302515")), t = 0), t
+                let t = parseInt((e = "302526", "302526"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302526")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122165,8 +122172,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302515",
-                    versionHash: "47f2217e1251a7629491f8dd296c0e4d705c13b1"
+                    buildNumber: "302526",
+                    versionHash: "10886725a8ecdbf944289a8815dc7020a404ef39"
                 }
             }
             n.r(t), n.d(t, {
@@ -178270,8 +178277,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718644743667",
-                                    build_number: "302515"
+                                    built_at: "1718645884273",
+                                    build_number: "302526"
                                 }
                             },
                             retries: 1
@@ -194026,12 +194033,17 @@
                             preview: t
                         } : void 0
                     })).body;
-                    null != n.quest_user_status && s.default.dispatch({
+                    if (null != n.quest_user_status) s.default.dispatch({
                         type: "QUESTS_USER_STATUS_UPDATE",
                         user_status: n.quest_user_status
-                    })
+                    });
+                    else if (null != n.error_hints && n.error_hints.length > 0) return {
+                        errorHints: n.error_hints
+                    }
                 } catch (e) {}
-                return null
+                return {
+                    errorHints: []
+                }
             }
             async function f(e) {
                 await r.HTTP.post({
@@ -255444,7 +255456,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "47f2217e1251a7629491f8dd296c0e4d705c13b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "10886725a8ecdbf944289a8815dc7020a404ef39"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284110,7 +284122,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302515"
+                                build_number: "302526"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291422,7 +291434,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302515", "302515"), 10);
+                let s = parseInt((n = "302526", "302526"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319601,4 +319613,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.2488b8c8ccb167f51c88.js.map
+//# sourceMappingURL=42458.51cac0b51c6089ab6355.js.map
