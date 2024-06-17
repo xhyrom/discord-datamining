@@ -40170,7 +40170,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302496", ", Version Hash: ").concat("6fdfae05ccb0e09efef7b3568a930a5ea3e8ffc2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("302499", ", Version Hash: ").concat("9fdbf3449a179331b6e8239d2eaf5a9261b19857")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -93879,8 +93879,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302496", "302496"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302496")), t = 0), t
+                let t = parseInt((e = "302499", "302499"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("302499")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113501,7 +113501,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 getThemeColorMixValues: function() {
-                    return s
+                    return a
                 }
             }), n("47120");
             var i = n("688619"),
@@ -113509,29 +113509,59 @@
 
             function s(e) {
                 let {
+                    primaryColor: t,
+                    secondaryColor: n,
+                    isDarkTheme: i
+                } = e, s = r()(t), a = r()(n), [o, l] = s.luminance() > a.luminance() ? [s, a] : [a, s], u = l.get("hsl.h");
+                (0 === u || Number.isNaN(u)) && (l = o);
+                let d = i ? o.set("hsl.s", 1) : l.set("hsl.s", 1),
+                    _ = d.get("hsl.h");
+                return d = d.set("hsl.l", _ >= 200 && _ <= 300 ? i ? .8 : .25 : i ? .95 : .15), {
+                    base: i ? l.set("hsl.s", 1).set("hsl.l", .05) : o.set("hsl.s", 1).set("hsl.l", .9),
+                    text: d
+                }
+            }
+
+            function a(e) {
+                let {
                     enabled: t,
                     primaryColor: n,
                     secondaryColor: i,
-                    isDarkTheme: s,
-                    baseMixAmount: a = 50,
-                    textMixAmount: o = 38
-                } = e, l = r()(n), u = r()(i), [d, _] = l.luminance() > u.luminance() ? [l, u] : [u, l], c = _.get("hsl.h");
-                (0 === c || Number.isNaN(c)) && (_ = d);
-                let E = s ? d.set("hsl.s", 1) : _.set("hsl.s", 1),
-                    I = E.get("hsl.h");
-                E = E.set("hsl.l", I >= 200 && I <= 300 ? s ? .8 : .25 : s ? .95 : .15);
-                let T = s ? _.set("hsl.s", 1).set("hsl.l", .05) : d.set("hsl.s", 1).set("hsl.l", .9),
-                    [f, S, h] = T.hsl();
+                    baseMixAmount: r = 50,
+                    textMixAmount: a = 38
+                } = e, {
+                    base: l,
+                    text: u
+                } = s({
+                    primaryColor: n,
+                    secondaryColor: i,
+                    isDarkTheme: !0
+                }), {
+                    base: d,
+                    text: _
+                } = s({
+                    primaryColor: n,
+                    secondaryColor: i,
+                    isDarkTheme: !1
+                });
                 return {
-                    "--custom-theme-mix-base-hsl": "".concat(Number.isNaN(f) ? 0 : f, " ").concat(100 * S, "% ").concat(100 * h, "%"),
-                    "--custom-theme-mix-base": T.css(),
-                    "--custom-theme-mix-text": E.css(),
-                    "--custom-theme-mix-amount-base": "".concat(t ? a : 0, "%"),
-                    "--custom-theme-mix-amount-text": "".concat(t ? o : 0, "%"),
+                    "--theme-base-color-light-hsl": o(d),
+                    "--theme-base-color-light": d.css(),
+                    "--theme-text-color-light": _.css(),
+                    "--theme-base-color-dark-hsl": o(l),
+                    "--theme-base-color-dark": l.css(),
+                    "--theme-text-color-dark": u.css(),
+                    "--theme-base-color-amount": "".concat(t ? r : 0, "%"),
+                    "--theme-text-color-amount": "".concat(t ? a : 0, "%"),
                     "--bg-overlay-selected": "unset",
                     "--bg-overlay-hover": "unset",
                     "--bg-overlay-active": "unset"
                 }
+            }
+
+            function o(e) {
+                let [t, n, i] = e.hsl();
+                return "".concat(Number.isNaN(t) ? 0 : t, " ").concat(100 * n, "% ").concat(100 * i, "%")
             }
         },
         798728: function(e, t, n) {
@@ -122135,8 +122165,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302496",
-                    versionHash: "6fdfae05ccb0e09efef7b3568a930a5ea3e8ffc2"
+                    buildNumber: "302499",
+                    versionHash: "9fdbf3449a179331b6e8239d2eaf5a9261b19857"
                 }
             }
             n.r(t), n.d(t, {
@@ -178240,8 +178270,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718642296060",
-                                    build_number: "302496"
+                                    built_at: "1718642511527",
+                                    build_number: "302499"
                                 }
                             },
                             retries: 1
@@ -255414,7 +255444,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6fdfae05ccb0e09efef7b3568a930a5ea3e8ffc2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9fdbf3449a179331b6e8239d2eaf5a9261b19857"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284080,7 +284110,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302496"
+                                build_number: "302499"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -291392,7 +291422,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302496", "302496"), 10);
+                let s = parseInt((n = "302499", "302499"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -319571,4 +319601,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42458.7ac185f1ca16d5cb1248.js.map
+//# sourceMappingURL=42458.80c35587ec3d1b91580d.js.map
