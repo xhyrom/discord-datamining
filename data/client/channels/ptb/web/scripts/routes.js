@@ -2822,7 +2822,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-b5e8282b6d80e92c757b9f9495f8fd194eacf58b",
+                    release: "discord_web-c285364f5ebc32c3d7b5361de3349b1d1c90c7b9",
                     beforeSend: _ => {
                         var E, I;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || A.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !T() && !("Aborted" === (I = _).message || "cancel captcha" === I.message) && r() ? _ : null
@@ -2840,8 +2840,8 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), R.YA("buildNumber", (_ = "302575", "302575"));
-                R.YA("builtAt", String("1718650512406"));
+                }), R.YA("buildNumber", (_ = "302599", "302599"));
+                R.YA("builtAt", String("1718652255177"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) R.YA(_, E[_]);
@@ -11249,6 +11249,7 @@
                     EMAIL_SUPPORT: "mailto:support@".concat(_O),
                     EMAIL_LAW_ENFORCEMENT: "mailto:lawenforcement@".concat(_O),
                     EMAIL_HYPESQUAD: "mailto:hypesquad@".concat(_O),
+                    EMAIL_JOBS: "mailto:jobs@".concat(_O),
                     DEV_PERKS_FORM: "https://goo.gl/forms/oZfKBStV3sR8GHdU2",
                     VERIFICATION_REQUIREMENTS: "https://dis.gd/vfqual",
                     BASE_URL: "https://".concat(_N),
@@ -14402,4 +14403,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.06fafbbc89835664babe.js.map
+//# sourceMappingURL=84471.67ec1757a20f653a6700.js.map
