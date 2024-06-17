@@ -40452,7 +40452,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, d.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302619", ", Version Hash: ").concat("1393e913f7648664e59132be54c855803826b97c")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302641", ", Version Hash: ").concat("01d2165748f0d413234c355cefa2e457c46e1b71")), i.Z.setTags({
                 appContext: h.e3s
             }), c.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -48254,8 +48254,11 @@
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_HAS_UNAPPLIED_FREE_GUILD_BOOSTS: "Your Boosts are\n\nwaiting",
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_HEADING_V2: "Your {numUnappliedGuildBoostSlots, plural, =1 {Boost} other {Boosts}} {numUnappliedGuildBoostSlots, plural, =1 {is} other {are}} waiting!",
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_HEADING_INCLUDED_WITH_SUBSCRIPTION: "Your free {numUnappliedGuildBoostSlots, plural, =1 {Boost} other {Boosts}} {numUnappliedGuildBoostSlots, plural, =1 {is} other {are}} waiting",
+                GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOSTS_ALL_COOLDOWN: "{numUnappliedGuildBoostSlots, plural, =1 {Boost} other {Boosts}} available soon!",
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING: "Just waiting here until you choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to!",
+                GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING_ALL_COOLDOWN: "Once the cooldown period is over, you’ll be able to Boost another lucky server.",
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING_WITH_PREMIUM_SUBSCRIPTION: "Just waiting here until you choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to! Learn more about your Nitro Perks $[here](learnMoreHook).",
+                GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING_WITH_PREMIUM_SUBSCRIPTION_ALL_COOLDOWN: "Once the cooldown period is over, you’ll be able to Boost another lucky server. Learn more about your Nitro Perks $[here](learnMoreHook)",
                 GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING_WITH_PREMIUM_SUBSCRIPTION_V2: "Just waiting here until you **choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to!** Learn more about your Nitro Perks $[here](learnMoreHook).",
                 GUILD_BOOSTING_USER_SETTINGS_CANCEL_BOOST: "Cancel Boost",
                 GUILD_BOOSTING_USER_SETTINGS_UNCANCEL_BOOST: "Uncancel Boost",
@@ -94174,8 +94177,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302619", "302619"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302619")), t = 0), t
+                let t = parseInt((e = "302641", "302641"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302641")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122457,8 +122460,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302619",
-                    versionHash: "1393e913f7648664e59132be54c855803826b97c"
+                    buildNumber: "302641",
+                    versionHash: "01d2165748f0d413234c355cefa2e457c46e1b71"
                 }
             }
             n.d(t, {
@@ -178480,8 +178483,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718653420449",
-                                    build_number: "302619"
+                                    built_at: "1718654619515",
+                                    build_number: "302641"
                                 }
                             },
                             retries: 1
@@ -255542,7 +255545,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1393e913f7648664e59132be54c855803826b97c"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "01d2165748f0d413234c355cefa2e457c46e1b71"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284003,7 +284006,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302619"
+                                build_number: "302641"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (d.user_id = c.id, d.user_name = c.tag, null != c.email && (d.email = c.email));
@@ -291315,7 +291318,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302619", "302619"), 10);
+                let s = parseInt((n = "302641", "302641"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -319212,4 +319215,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.b30b8a8c640279c2a1a8.js.map
+//# sourceMappingURL=25624.ebd590ce7e8e3c79bfcb.js.map
