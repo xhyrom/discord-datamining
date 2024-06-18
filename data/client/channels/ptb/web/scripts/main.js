@@ -39952,6 +39952,9 @@
                 ThreadRetryIcon: function() {
                     return tN.Xuh
                 },
+                ThreadWarningIcon: function() {
+                    return tN.Xn
+                },
                 ThumbsDownIcon: function() {
                     return tN.kZ9
                 },
@@ -40501,7 +40504,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302997", ", Version Hash: ").concat("5deb23b828a28a8c4601015572aab328fcf99bbc")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303001", ", Version Hash: ").concat("03d356833c5bc3cd49a40678c3ecae295168a009")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -94445,8 +94448,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302997", "302997"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302997")), t = 0), t
+                let t = parseInt((e = "303001", "303001"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303001")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122716,8 +122719,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302997",
-                    versionHash: "5deb23b828a28a8c4601015572aab328fcf99bbc"
+                    buildNumber: "303001",
+                    versionHash: "03d356833c5bc3cd49a40678c3ecae295168a009"
                 }
             }
             n.d(t, {
@@ -176229,6 +176232,7 @@
                         onClick: O,
                         onDoubleClick: e => e.preventDefault(),
                         children: (0, i.jsx)(m, {
+                            color: "currentColor",
                             className: E.icon
                         })
                     })
@@ -178768,8 +178772,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718735099864",
-                                    build_number: "302997"
+                                    built_at: "1718735345257",
+                                    build_number: "303001"
                                 }
                             },
                             retries: 1
@@ -255926,7 +255930,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5deb23b828a28a8c4601015572aab328fcf99bbc"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "03d356833c5bc3cd49a40678c3ecae295168a009"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277666,7 +277670,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302997"
+                                build_number: "303001"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284978,7 +284982,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302997", "302997"), 10);
+                let s = parseInt((n = "303001", "303001"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -302038,6 +302042,49 @@
                 })
             }
         },
+        422620: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                X: function() {
+                    return a
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(692547),
+                s = n(331595),
+                o = n(267843);
+            let a = e => {
+                var t, n;
+                let {
+                    size: a = "md",
+                    width: l,
+                    height: u,
+                    color: _ = r.Z.colors.INTERACTIVE_NORMAL,
+                    colorClass: c = "",
+                    ...d
+                } = e, E = (0, o.m)(a), I = null !== (t = null == E ? void 0 : E.width) && void 0 !== t ? t : l, T = null !== (n = null == E ? void 0 : E.height) && void 0 !== n ? n : u;
+                return (0, i.jsxs)("svg", {
+                    ...(0, s.Z)(d),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: I,
+                    height: T,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, i.jsx)("path", {
+                        d: "M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72A1 1 0 0 1 13 19v.15a1 1 0 0 1-.35.69l-1 1 .35.36ZM14.66 16.32c.1-.39.26-.75.45-1.09l-8.2-5.47a1 1 0 1 0-1.12 1.66l8.13 5.42a3 3 0 0 1 .74-.52ZM16.43 13.8c.62-.43 1.36-.7 2.15-.78a1 1 0 0 0-.37-.43L9.73 6.93a1 1 0 0 0-1.11 1.66l7.81 5.21Z",
+                        fill: "string" == typeof _ ? _ : _.css,
+                        className: c
+                    }), (0, i.jsx)("path", {
+                        fillRule: "evenodd",
+                        d: "M18.09 15.63c.4-.7 1.43-.7 1.82 0l3.96 6.9c.38.66-.12 1.47-.91 1.47h-7.92c-.79 0-1.3-.81-.91-1.48l3.96-6.9Zm.46 1.87h.9c.3 0 .52.26.5.55l-.22 2.02c-.01.16-.17.26-.33.23a1.92 1.92 0 0 0-.8 0c-.16.03-.32-.07-.33-.23l-.21-2.02a.5.5 0 0 1 .5-.55ZM19 23a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z",
+                        clipRule: "evenodd",
+                        fill: "string" == typeof _ ? _ : _.css,
+                        className: c
+                    })]
+                })
+            }
+        },
         417421: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -304262,19 +304309,19 @@
                     return il.A
                 },
                 ANZ: function() {
-                    return sf.A
+                    return sN.A
                 },
                 AO0: function() {
                     return n_.A
                 },
                 ARS: function() {
-                    return sp.A
+                    return sg.A
                 },
                 AVP: function() {
                     return iP.A
                 },
                 Adg: function() {
-                    return sC.A
+                    return sv.A
                 },
                 Aen: function() {
                     return te.A
@@ -304283,7 +304330,7 @@
                     return e5.A
                 },
                 Amn: function() {
-                    return sj.A
+                    return sW.A
                 },
                 AsW: function() {
                     return eO.A
@@ -304310,7 +304357,7 @@
                     return t$.B
                 },
                 BVY: function() {
-                    return sX.B
+                    return sQ.B
                 },
                 B_b: function() {
                     return t_.B
@@ -304370,7 +304417,7 @@
                     return eK.F
                 },
                 Fc4: function() {
-                    return os.F
+                    return oo.F
                 },
                 Ffc: function() {
                     return iH.F
@@ -304388,7 +304435,7 @@
                     return nc.G
                 },
                 GHO: function() {
-                    return s0.G
+                    return s1.G
                 },
                 GNH: function() {
                     return rA.G
@@ -304403,7 +304450,7 @@
                     return nW.G
                 },
                 Gwi: function() {
-                    return s3.G
+                    return s4.G
                 },
                 Gyb: function() {
                     return is.G
@@ -304415,7 +304462,7 @@
                     return ic.H
                 },
                 HT6: function() {
-                    return sS.H
+                    return sf.H
                 },
                 HiA: function() {
                     return et.H
@@ -304433,10 +304480,10 @@
                     return tz.I
                 },
                 I9k: function() {
-                    return sk.I
+                    return sB.I
                 },
                 IMN: function() {
-                    return sL.I
+                    return sD.I
                 },
                 Ibr: function() {
                     return nX.I
@@ -304481,13 +304528,13 @@
                     return n5.L
                 },
                 M3r: function() {
-                    return sH.M
+                    return sF.M
                 },
                 MTm: function() {
-                    return sD.M
+                    return sM.M
                 },
                 Mdg: function() {
-                    return s4.M
+                    return s7.M
                 },
                 Mec: function() {
                     return t0.M
@@ -304532,7 +304579,7 @@
                     return rj.O
                 },
                 Odl: function() {
-                    return sF.O
+                    return sY.O
                 },
                 Oe7: function() {
                     return rn.O
@@ -304559,7 +304606,7 @@
                     return eh.O
                 },
                 OyP: function() {
-                    return sQ.O
+                    return sJ.O
                 },
                 P19: function() {
                     return iy.P
@@ -304571,7 +304618,7 @@
                     return tm.P
                 },
                 PCc: function() {
-                    return s6.P
+                    return s8.P
                 },
                 PEf: function() {
                     return i7.P
@@ -304580,7 +304627,7 @@
                     return nT.P
                 },
                 Prq: function() {
-                    return sh.P
+                    return sS.P
                 },
                 Pt5: function() {
                     return se.P
@@ -304613,13 +304660,13 @@
                     return el.Q
                 },
                 R0: function() {
-                    return on.R
+                    return oi.R
                 },
                 RF_: function() {
                     return ek.R
                 },
                 RJm: function() {
-                    return sA.R
+                    return sm.R
                 },
                 ROc: function() {
                     return tq.R
@@ -304634,7 +304681,7 @@
                     return tT.R
                 },
                 RlC: function() {
-                    return sW.R
+                    return sK.R
                 },
                 Roe: function() {
                     return e7.R
@@ -304682,13 +304729,13 @@
                     return e6.T
                 },
                 TAi: function() {
-                    return or.T
+                    return os.T
                 },
                 TIy: function() {
                     return tE.T
                 },
                 TLW: function() {
-                    return sY.T
+                    return sj.T
                 },
                 ToS: function() {
                     return I.T
@@ -304703,7 +304750,7 @@
                     return ey.U
                 },
                 UEU: function() {
-                    return sv.U
+                    return sL.U
                 },
                 Ujz: function() {
                     return w.U
@@ -304727,10 +304774,10 @@
                     return si.V
                 },
                 VR8: function() {
-                    return s9.V
+                    return oe.V
                 },
                 VRP: function() {
-                    return s7.V
+                    return s5.V
                 },
                 VWR: function() {
                     return nS.V
@@ -304778,7 +304825,7 @@
                     return er.W
                 },
                 WXD: function() {
-                    return sO.W
+                    return sR.W
                 },
                 WZu: function() {
                     return O.W
@@ -304787,7 +304834,7 @@
                     return iG.W
                 },
                 X2j: function() {
-                    return sz.X
+                    return sq.X
                 },
                 X4h: function() {
                     return r6.X
@@ -304802,7 +304849,7 @@
                     return X.X
                 },
                 XHJ: function() {
-                    return sm.X
+                    return sO.X
                 },
                 XJU: function() {
                     return nU.X
@@ -304815,6 +304862,9 @@
                 },
                 Xbz: function() {
                     return iR.X
+                },
+                Xn: function() {
+                    return sI.X
                 },
                 Xuh: function() {
                     return sE.X
@@ -304865,7 +304915,7 @@
                     return i$.Z
                 },
                 Zmm: function() {
-                    return sg.Z
+                    return sC.Z
                 },
                 Zmx: function() {
                     return rv.Z
@@ -304901,7 +304951,7 @@
                     return nQ._
                 },
                 _uN: function() {
-                    return sy._
+                    return sU._
                 },
                 _z9: function() {
                     return iM._
@@ -304913,13 +304963,13 @@
                     return rm.a
                 },
                 aNP: function() {
-                    return s$.a
+                    return s0.a
                 },
                 aPH: function() {
                     return im.a
                 },
                 aQY: function() {
-                    return oi.a
+                    return or.a
                 },
                 aVH: function() {
                     return np.a
@@ -305012,7 +305062,7 @@
                     return t6.e
                 },
                 epB: function() {
-                    return ot.e
+                    return on.e
                 },
                 ewm: function() {
                     return rf.e
@@ -305051,10 +305101,10 @@
                     return to.g
                 },
                 gj8: function() {
-                    return sq.g
+                    return sX.g
                 },
                 gjC: function() {
-                    return sK.g
+                    return sz.g
                 },
                 gkL: function() {
                     return iV.g
@@ -305096,10 +305146,10 @@
                     return t1.i
                 },
                 iHX: function() {
-                    return sG.i
+                    return sw.i
                 },
                 iOO: function() {
-                    return sB.i
+                    return sx.i
                 },
                 iOe: function() {
                     return ee.i
@@ -305135,7 +305185,7 @@
                     return L.j
                 },
                 jdo: function() {
-                    return sV.j
+                    return sZ.j
                 },
                 jdy: function() {
                     return nF.j
@@ -305177,10 +305227,10 @@
                     return eM.k
                 },
                 kYE: function() {
-                    return sZ.k
+                    return sH.k
                 },
                 kZ9: function() {
-                    return sI.k
+                    return sT.k
                 },
                 kZF: function() {
                     return tb.k
@@ -305192,7 +305242,7 @@
                     return eV.k
                 },
                 lMe: function() {
-                    return sU.l
+                    return sb.l
                 },
                 lMq: function() {
                     return rh.l
@@ -305207,7 +305257,7 @@
                     return rg.l
                 },
                 lbB: function() {
-                    return sT.l
+                    return sh.l
                 },
                 ljO: function() {
                     return es.l
@@ -305255,7 +305305,7 @@
                     return tr.n
                 },
                 nOk: function() {
-                    return sP.n
+                    return sy.n
                 },
                 nRN: function() {
                     return n9.n
@@ -305273,13 +305323,13 @@
                     return e0.o
                 },
                 oIc: function() {
-                    return s1.o
+                    return s2.o
                 },
                 oLu: function() {
-                    return sx.o
+                    return sV.o
                 },
                 oaN: function() {
-                    return sJ.o
+                    return s$.o
                 },
                 omf: function() {
                     return tf.o
@@ -305330,7 +305380,7 @@
                     return eA.q
                 },
                 qjv: function() {
-                    return s5.q
+                    return s6.q
                 },
                 qtY: function() {
                     return s_.q
@@ -305345,22 +305395,22 @@
                     return r4.r
                 },
                 rG2: function() {
-                    return sM.r
+                    return sP.r
                 },
                 rIT: function() {
                     return rJ.r
                 },
                 rgF: function() {
-                    return s8.r
+                    return s9.r
                 },
                 rm8: function() {
-                    return sR.r
+                    return sp.r
                 },
                 rqr: function() {
                     return t9.r
                 },
                 sVe: function() {
-                    return sN.s
+                    return sA.s
                 },
                 sXB: function() {
                     return tn.s
@@ -305384,7 +305434,7 @@
                     return tN.t
                 },
                 tBG: function() {
-                    return sw.t
+                    return sk.t
                 },
                 tEF: function() {
                     return ty.t
@@ -305402,7 +305452,7 @@
                     return n2.t
                 },
                 tYf: function() {
-                    return s2.t
+                    return s3.t
                 },
                 tvw: function() {
                     return nm.t
@@ -305489,7 +305539,7 @@
                     return nK.x
                 },
                 xS1: function() {
-                    return oe.x
+                    return ot.x
                 },
                 xVZ: function() {
                     return i6.x
@@ -305540,7 +305590,7 @@
                     return ss.z
                 },
                 z65: function() {
-                    return sb.z
+                    return sG.z
                 },
                 z7b: function() {
                     return eD.z
@@ -305944,62 +305994,63 @@
                 sc = n(580133),
                 sd = n(341290),
                 sE = n(907399),
-                sI = n(417421),
-                sT = n(457474),
-                sh = n(790472),
-                sS = n(149142),
-                sf = n(957473),
-                sN = n(23513),
-                sA = n(232623),
-                sm = n(490236),
-                sO = n(254147),
-                sR = n(964094),
-                sp = n(399006),
-                sg = n(687392),
-                sC = n(425394),
-                sv = n(798077),
-                sL = n(385326),
-                sD = n(808442),
-                sM = n(653498),
-                sP = n(900763),
-                sy = n(175609),
-                sU = n(930450),
-                sb = n(578584),
-                sG = n(440424),
-                sw = n(220427),
-                sk = n(823475),
-                sB = n(885668),
-                sx = n(968144),
-                sV = n(825416),
-                sZ = n(286998),
-                sH = n(391915),
-                sF = n(800595),
-                sY = n(274013),
-                sj = n(222014),
-                sW = n(896772),
-                sK = n(216481),
-                sz = n(284179),
-                sq = n(25307),
-                sX = n(56411),
-                sQ = n(256713),
-                sJ = n(804549),
-                s$ = n(194048),
-                s0 = n(640024),
-                s1 = n(658374),
-                s2 = n(991893),
-                s3 = n(256866),
-                s4 = n(52235),
-                s7 = n(980885),
-                s5 = n(513492),
-                s6 = n(586190),
-                s8 = n(944188),
-                s9 = n(797381),
-                oe = n(20861),
-                ot = n(527301),
-                on = n(770211),
-                oi = n(318948),
-                or = n(623431),
-                os = n(940621)
+                sI = n(422620),
+                sT = n(417421),
+                sh = n(457474),
+                sS = n(790472),
+                sf = n(149142),
+                sN = n(957473),
+                sA = n(23513),
+                sm = n(232623),
+                sO = n(490236),
+                sR = n(254147),
+                sp = n(964094),
+                sg = n(399006),
+                sC = n(687392),
+                sv = n(425394),
+                sL = n(798077),
+                sD = n(385326),
+                sM = n(808442),
+                sP = n(653498),
+                sy = n(900763),
+                sU = n(175609),
+                sb = n(930450),
+                sG = n(578584),
+                sw = n(440424),
+                sk = n(220427),
+                sB = n(823475),
+                sx = n(885668),
+                sV = n(968144),
+                sZ = n(825416),
+                sH = n(286998),
+                sF = n(391915),
+                sY = n(800595),
+                sj = n(274013),
+                sW = n(222014),
+                sK = n(896772),
+                sz = n(216481),
+                sq = n(284179),
+                sX = n(25307),
+                sQ = n(56411),
+                sJ = n(256713),
+                s$ = n(804549),
+                s0 = n(194048),
+                s1 = n(640024),
+                s2 = n(658374),
+                s3 = n(991893),
+                s4 = n(256866),
+                s7 = n(52235),
+                s5 = n(980885),
+                s6 = n(513492),
+                s8 = n(586190),
+                s9 = n(944188),
+                oe = n(797381),
+                ot = n(20861),
+                on = n(527301),
+                oi = n(770211),
+                or = n(318948),
+                os = n(623431),
+                oo = n(940621)
         },
         267843: function(e, t, n) {
             "use strict";
@@ -326434,4 +326485,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.7e1a116d7f3f84ece420.js.map
+//# sourceMappingURL=25624.95d0bfd82c0b94e01a00.js.map
