@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["25624"], {
+    ["95108"], {
         385007: function(e, t, n) {
             var i = {
                 "./de.jsona": ["644753", "30244"],
@@ -4600,6 +4600,14 @@
             "use strict";
             e.exports = n.p + "d958d0f2bf29e9947cb9.png"
         },
+        359734: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "313b9e62ea64b44e7feb.svg"
+        },
+        195794: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "ad6e89d798270b8bbdce.png"
+        },
         105797: function(e, t, n) {
             "use strict";
             e.exports = n.p + "4762eda0917612dab390.webp"
@@ -4727,6 +4735,22 @@
         239840: function(e, t, n) {
             "use strict";
             e.exports = n.p + "a3e663da53e95a625733.svg"
+        },
+        703152: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "59848dfca28e69ff3553.svg"
+        },
+        548617: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "923ebe1687af3952c1c5.svg"
+        },
+        511293: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "9c98a52269227f104a1d.svg"
+        },
+        278198: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "b35d1a1c8adf17410d7c.svg"
         },
         1474: function(e, t, n) {
             "use strict";
@@ -17547,6 +17571,53 @@
                 }
             })(O)
         },
+        497321: function(e, t, n) {
+            "use strict";
+            n(47120);
+            var i, r = n(735250),
+                s = n(470079),
+                o = n(120356),
+                a = n.n(o),
+                l = n(481060),
+                u = n(37234),
+                _ = n(230711),
+                c = n(981631),
+                d = n(689938),
+                E = n(662090);
+
+            function I(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class T extends(i = s.Component) {
+                render() {
+                    return (0, r.jsxs)("div", {
+                        className: E.streamerModeEnabled,
+                        children: [(0, r.jsx)("div", {
+                            className: E.streamerModeEnabledImage
+                        }), (0, r.jsx)(l.Clickable, {
+                            className: a()(E.streamerModeEnabledBtn, {
+                                [E.disabled]: this.props.disableButton
+                            }),
+                            onClick: this.handleClick,
+                            children: d.Z.Messages.STREAMER_MODE_ENABLED
+                        })]
+                    })
+                }
+                constructor(...e) {
+                    super(...e), I(this, "handleClick", () => {
+                        !this.props.disableButton && ((0, u.jN)(c.S9g.USER_SETTINGS), _.Z.setSection(c.oAB.STREAMER_MODE))
+                    })
+                }
+            }
+            I(T, "defaultProps", {
+                disableButton: !1
+            }), t.Z = T
+        },
         788307: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -17824,6 +17895,67 @@
             d.defaultProps = {
                 variant: ""
             }, d.Variants = r, t.Z = d
+        },
+        23551: function(e, t, n) {
+            "use strict";
+            var i = n(735250);
+            n(470079);
+            var r = n(120356),
+                s = n.n(r),
+                o = n(780384),
+                a = n(481060),
+                l = n(410030),
+                u = n(726542),
+                _ = n(122021),
+                c = n(231757),
+                d = n(626135),
+                E = n(981631),
+                I = n(203629);
+            t.Z = e => {
+                let {
+                    disabled: t = !1,
+                    type: n,
+                    className: r,
+                    innerClassName: T,
+                    onConnect: h
+                } = e, S = (0, l.ZP)(), f = u.Z.get((0, _.rR)(n));
+                return (0, i.jsx)(a.Tooltip, {
+                    text: f.name,
+                    children: e => {
+                        let {
+                            onMouseEnter: l,
+                            onMouseLeave: _
+                        } = e;
+                        return (0, i.jsx)("div", {
+                            className: s()(I.wrapper, r),
+                            children: (0, i.jsx)(a.FocusRing, {
+                                children: (0, i.jsx)("button", {
+                                    onMouseEnter: l,
+                                    onMouseLeave: _,
+                                    className: s()(I.inner, T),
+                                    type: "button",
+                                    disabled: t,
+                                    style: {
+                                        backgroundImage: "url('".concat((0, o.wj)(S) ? f.icon.darkSVG : f.icon.lightSVG, "')")
+                                    },
+                                    onClick: null != h ? h : () => (function(e) {
+                                        let t = u.Z.get(e);
+                                        (0, c.Z)({
+                                            platformType: t.type,
+                                            location: "Friends List"
+                                        }), d.default.track(E.rMx.ACCOUNT_LINK_STEP, {
+                                            previous_step: "desktop connections",
+                                            current_step: "desktop oauth",
+                                            platform_type: t.type
+                                        })
+                                    })(n),
+                                    "aria-label": f.name
+                                })
+                            })
+                        })
+                    }
+                })
+            }
         },
         490173: function(e, t, n) {
             "use strict";
@@ -40512,7 +40644,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303140", ", Version Hash: ").concat("ccfd2a72759ea70eb032a145541e79f272c327ef")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303152", ", Version Hash: ").concat("95dd175f5a631cf28ce0cadf1c23a08bdf3f8d34")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -89171,6 +89303,763 @@
             }
             t.Z = new E
         },
+        133853: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return E
+                }
+            }), n(47120);
+            var i, r = n(735250),
+                s = n(470079),
+                o = n(120356),
+                a = n.n(o),
+                l = n(748780),
+                u = n(481060),
+                _ = n(981631),
+                c = n(910530);
+
+            function d(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class E extends(i = s.Component) {
+                componentDidMount() {
+                    this.props.show && this.animate(1)
+                }
+                componentDidUpdate(e) {
+                    e.show !== this.props.show && this.animate(this.props.show ? 1 : 0)
+                }
+                getAnimatedStyle() {
+                    let {
+                        anim: e
+                    } = this, {
+                        reducedMotion: t
+                    } = this.context;
+                    return {
+                        opacity: e,
+                        transform: t.enabled ? void 0 : [{
+                            translateY: e.interpolate({
+                                inputRange: [0, 1],
+                                outputRange: ["-100px", "0px"]
+                            })
+                        }, {
+                            translateZ: 0
+                        }]
+                    }
+                }
+                render() {
+                    return (0, r.jsx)(l.Z.a, {
+                        href: _.Z5c.INDEX,
+                        target: "_blank",
+                        rel: "noopener",
+                        className: a()(c.logo, this.props.className),
+                        style: this.getAnimatedStyle()
+                    })
+                }
+                constructor(...e) {
+                    super(...e), d(this, "anim", new l.Z.Value(0)), d(this, "animate", e => {
+                        l.Z.spring(this.anim, {
+                            toValue: e,
+                            friction: 10,
+                            tension: 100
+                        }).start()
+                    })
+                }
+            }
+            d(E, "contextType", u.AccessibilityPreferencesContext)
+        },
+        686694: function(e, t, n) {
+            "use strict";
+            var i, r = n(735250),
+                s = n(470079),
+                o = n(120356),
+                a = n.n(o),
+                l = n(692547),
+                u = n(477690),
+                _ = n(481060),
+                c = n(585483),
+                d = n(624138),
+                E = n(890056),
+                I = n(636879),
+                T = n(810847),
+                h = n(898625),
+                S = n(981631),
+                f = n(804123);
+
+            function N(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let A = (0, d.Mg)(u.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+                m = 1 / 120;
+            class O extends(i = s.Component) {
+                componentDidMount() {
+                    this.initialize()
+                }
+                componentDidUpdate(e) {
+                    let {
+                        waveState: t
+                    } = this.props;
+                    t === h.hO.FILLING && t !== e.waveState && this.waveFill()
+                }
+                componentWillUnmount() {
+                    this.terminate()
+                }
+                initialize() {
+                    this.children.forEach(e => e.initialize()), this.bindEvents(), this.resizeCanvas(), document.hidden && this.delayedPause()
+                }
+                terminate() {
+                    this.pause(), this.unbindEvents(), this.children.forEach(e => e.terminate())
+                }
+                bindEvents() {
+                    window.addEventListener("resize", this.resizeCanvas, !1), window.addEventListener("blur", this.delayedPause, !1), window.addEventListener("focus", this.play, !1), document.addEventListener("visibilitychange", this.handleVisibilityChange, !1), c.S.subscribe(S.CkL.WAVE_EMPHASIZE, this.handleWaveEmphasize)
+                }
+                unbindEvents() {
+                    window.removeEventListener("resize", this.resizeCanvas, !1), window.removeEventListener("blur", this.delayedPause, !1), window.removeEventListener("focus", this.play, !1), document.removeEventListener("visibilitychange", this.handleVisibilityChange, !1), c.S.unsubscribe(S.CkL.WAVE_EMPHASIZE, this.handleWaveEmphasize)
+                }
+                advanceTransitionalState() {
+                    let {
+                        waveState: e
+                    } = this.props;
+                    (e === h.hO.INITIAL || e === h.hO.FILLING) && this.updateWaveState(e + 1)
+                }
+                waveFill() {
+                    this._isPlaying ? this.children.forEach(e => e.fill()) : this.updateWaveState(h.hO.FILLED)
+                }
+                updateAnimation(e) {
+                    this.children.forEach(t => t.update(e))
+                }
+                renderAnimation() {
+                    let {
+                        canvasFillStyle: e
+                    } = this.props, {
+                        canvasContext: t
+                    } = this;
+                    if (null != t) t.fillStyle = e, t.fillRect(0, 0, this.width, this.height), this.children.forEach(e => e.render(t))
+                }
+                render() {
+                    let {
+                        waveState: e,
+                        hideFallback: t,
+                        embedded: n
+                    } = this.props;
+                    return (0, r.jsx)(_.AccessibilityPreferencesContext.Consumer, {
+                        children: i => {
+                            let {
+                                reducedMotion: s
+                            } = i;
+                            return s.enabled ? (0, r.jsx)("div", {
+                                className: a()(f.fallbackImage, {
+                                    [f.embedded]: n,
+                                    [f.visible]: !t && e >= h.hO.ENTERED
+                                })
+                            }) : (0, r.jsx)("canvas", {
+                                className: a()(f.canvas, {
+                                    [f.embedded]: n
+                                }),
+                                ref: this.setCanvas
+                            })
+                        }
+                    })
+                }
+                constructor(e) {
+                    super(e), N(this, "width", 0), N(this, "height", 0), N(this, "canvas", void 0), N(this, "canvasContext", void 0), N(this, "children", []), N(this, "wave", void 0), N(this, "ratio", 0), N(this, "_lastTick", 0), N(this, "_isPlaying", !1), N(this, "_reqAnimId", null), N(this, "_pauseTimeout", void 0), N(this, "setCanvas", e => {
+                        var t;
+                        if (null == e) return;
+                        this.canvas = e, this.canvasContext = this.canvas.getContext("2d");
+                        let n = null !== (t = window.devicePixelRatio) && void 0 !== t ? t : 1,
+                            i = this.canvasContext.webkitBackingStorePixelRatio || this.canvasContext.mozBackingStorePixelRatio || this.canvasContext.msBackingStorePixelRatio || this.canvasContext.oBackingStorePixelRatio || this.canvasContext.backingStorePixelRatio || 1;
+                        this.ratio = n / i, this.resizeCanvas()
+                    }), N(this, "resizeCanvas", () => {
+                        this.width = window.innerWidth, this.height = window.innerHeight;
+                        let {
+                            canvas: e,
+                            canvasContext: t,
+                            width: n,
+                            height: i,
+                            ratio: r
+                        } = this;
+                        null != e && null != t && (e.width = n * r, e.height = i * r, e.style.width = n + "px", e.style.height = i + "px", t.scale(r, r)), n <= A ? this.pause() : this.play(), this.wave.resizeWave(), this.renderAnimation()
+                    }), N(this, "handleVisibilityChange", () => {
+                        document.hidden ? this.delayedPause() : this.play()
+                    }), N(this, "play", () => {
+                        clearTimeout(this._pauseTimeout), !this._isPlaying && (this._isPlaying = !0, this.run())
+                    }), N(this, "pause", () => {
+                        clearTimeout(this._pauseTimeout), this._isPlaying = !1, null != this._reqAnimId && window.cancelAnimationFrame(this._reqAnimId), this._reqAnimId = null, this.advanceTransitionalState()
+                    }), N(this, "delayedPause", () => {
+                        clearTimeout(this._pauseTimeout), this._pauseTimeout = setTimeout(this.pause, 4e3)
+                    }), N(this, "updateWaveState", e => {
+                        let {
+                            updateWaveState: t
+                        } = this.props;
+                        t(e)
+                    }), N(this, "handleWaveEmphasize", () => {
+                        this.wave.emphasize()
+                    }), N(this, "run", () => {
+                        if (!this._isPlaying) return;
+                        if (0 === this._lastTick) {
+                            this._lastTick = Date.now(), this._reqAnimId = requestAnimationFrame(this.run);
+                            return
+                        }
+                        let e = Date.now(),
+                            t = Math.min((e - this._lastTick) / 1e3, 8 * m);
+                        for (; t > 0;) {
+                            let e = t < m ? t : m;
+                            this.updateAnimation(e), t -= e
+                        }
+                        this.renderAnimation(), this._lastTick = e, this._reqAnimId = requestAnimationFrame(this.run)
+                    }), this.wave = new T.Z(this.updateWaveState), this.children = [new E.Z, new I.Z, this.wave]
+                }
+            }
+            N(O, "defaultProps", {
+                embedded: !1
+            });
+            t.Z = e => {
+                let t = (0, _.useToken)(l.Z.unsafe_rawColors.PRIMARY_630).hex();
+                return (0, r.jsx)(O, {
+                    canvasFillStyle: t,
+                    ...e
+                })
+            }
+        },
+        568154: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                h: function() {
+                    return f
+                }
+            }), n(47120);
+            var i, r = n(735250),
+                s = n(470079),
+                o = n(120356),
+                a = n.n(o),
+                l = n(477690),
+                u = n(257915),
+                _ = n(624138),
+                c = n(133853),
+                d = n(686694),
+                E = n(898625),
+                I = n(770290);
+
+            function T(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let h = (0, _.Mg)(l.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE);
+
+            function S(e, t) {
+                let {
+                    innerWidth: n,
+                    innerHeight: i
+                } = window;
+                if (0 === e || 0 === t) return null;
+                let r = t / e,
+                    s = n,
+                    o = Math.round(n * r);
+                return o < i && (o = i, s = Math.round(i * (r = e / t))), {
+                    naturalWidth: e,
+                    naturalHeight: t,
+                    width: s,
+                    height: o
+                }
+            }
+
+            function f(e) {
+                let {
+                    splash: t,
+                    children: n
+                } = e, [{
+                    width: i,
+                    height: o
+                }, l] = s.useState({
+                    width: 0,
+                    height: 0,
+                    naturalHeight: 0,
+                    naturalWidth: 0
+                });
+                return s.useEffect(() => {
+                    function e() {
+                        l(e => {
+                            let {
+                                naturalWidth: t,
+                                naturalHeight: n
+                            } = e, i = S(t, n);
+                            return null != i ? i : e
+                        })
+                    }
+                    return window.addEventListener("resize", e), () => window.removeEventListener("reslize", e)
+                }, []), (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsx)(u.Z, {
+                        className: a()(I.rightSplit),
+                        onLoad: function(e) {
+                            let {
+                                currentTarget: t
+                            } = e, {
+                                naturalWidth: n,
+                                naturalHeight: i
+                            } = t, r = S(n, i);
+                            null != r && l(r)
+                        },
+                        src: t,
+                        width: i,
+                        height: o
+                    }), (0, r.jsx)("div", {
+                        className: a()(I.leftSplit, {
+                            [I.nonEmbeddedLeftSplit]: !0
+                        }),
+                        children: n
+                    })]
+                })
+            }
+            class N extends(i = s.PureComponent) {
+                componentWillUnmount() {
+                    window.removeEventListener("resize", this.handleResize)
+                }
+                calculateShowWaveAnimation() {
+                    return window.innerWidth > h
+                }
+                renderSplashArt() {
+                    let {
+                        splash: e,
+                        embedded: t
+                    } = this.props, {
+                        width: n,
+                        height: i
+                    } = this.state;
+                    return null != e ? (0, r.jsx)(u.Z, {
+                        className: a()(I.rightSplit, {
+                            [I.embedded]: t
+                        }),
+                        src: e,
+                        width: n,
+                        height: i,
+                        onLoad: this.handleLoad
+                    }) : null
+                }
+                renderWave() {
+                    let {
+                        waveState: e,
+                        updateWaveState: t,
+                        embedded: n
+                    } = this.props, {
+                        showWaveAnimation: i,
+                        splashLoaded: s
+                    } = this.state;
+                    return i ? (0, r.jsx)(d.Z, {
+                        embedded: n,
+                        waveState: e,
+                        updateWaveState: t,
+                        hideFallback: !s
+                    }) : (0, r.jsx)("div", {
+                        className: I.mobileWave
+                    })
+                }
+                renderContent() {
+                    let {
+                        children: e,
+                        waveState: t,
+                        showLogo: n,
+                        logoClassName: i,
+                        embedded: o
+                    } = this.props, {
+                        showWaveAnimation: l
+                    } = this.state;
+                    return (0, r.jsxs)(s.Fragment, {
+                        children: [this.renderWave(), (0, r.jsxs)("div", {
+                            className: a()(I.leftSplit, {
+                                [I.nonEmbeddedLeftSplit]: o
+                            }),
+                            children: [n ? (0, r.jsx)(c.Z, {
+                                show: !l || t === E.hO.ENTERED && t !== E.hO.FILLING,
+                                className: a()(I.logo, i)
+                            }) : null, e]
+                        })]
+                    })
+                }
+                render() {
+                    let {
+                        className: e
+                    } = this.props;
+                    return (0, r.jsxs)("div", {
+                        className: a()(e, I.wrapper),
+                        children: [this.renderSplashArt(), this.renderContent()]
+                    })
+                }
+                constructor(...e) {
+                    super(...e), T(this, "state", {
+                        naturalWidth: 0,
+                        naturalHeight: 0,
+                        width: 0,
+                        height: 0,
+                        showWaveAnimation: this.calculateShowWaveAnimation(),
+                        splashLoaded: !1
+                    }), T(this, "handleResize", () => {
+                        let {
+                            naturalWidth: e,
+                            naturalHeight: t
+                        } = this.state, n = S(e, t), i = this.calculateShowWaveAnimation();
+                        null != n ? this.setState({
+                            ...n,
+                            showWaveAnimation: i
+                        }) : this.setState({
+                            showWaveAnimation: i
+                        })
+                    }), T(this, "handleLoad", e => {
+                        let {
+                            currentTarget: t
+                        } = e, {
+                            naturalWidth: n,
+                            naturalHeight: i
+                        } = t, r = S(n, i);
+                        null != r && this.setState(r), this.setState({
+                            splashLoaded: !0
+                        }), window.removeEventListener("resize", this.handleResize), window.addEventListener("resize", this.handleResize)
+                    })
+                }
+            }
+            T(N, "defaultProps", {
+                embedded: !1
+            }), t.Z = N
+        },
+        890056: function(e, t, n) {
+            "use strict";
+            var i = n(684827),
+                r = n(482682);
+
+            function s(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            t.Z = class e {
+                initialize() {
+                    this.img = new Image, this.img.onload = () => {
+                        this.loaded = !0
+                    }, this.img.src = r, this.bind()
+                }
+                bind() {
+                    window.addEventListener("mousemove", this.handleMouseMove, !1)
+                }
+                unbind() {
+                    window.removeEventListener("mousemove", this.handleMouseMove, !1)
+                }
+                terminate() {
+                    this.img = null, this.loaded = !1, this.isFilled = !1, this.alpha = 0, this.unbind()
+                }
+                update(e) {
+                    if (!!this.loaded) !this.isFilled && this.alpha < 1 ? this.alpha = Math.min(1, this.alpha + e) : this.isFilled && this.alpha > 0 && (this.alpha = Math.max(0, this.alpha - 3 * e)), this.velX += (0, i.B)(this.targetX, this.x, this.velX, this.spring) * e, this.velY += (0, i.B)(this.targetY, this.y, this.velY, this.spring) * e, this.x += this.velX * e, this.y += this.velY * e
+                }
+                render(e) {
+                    let {
+                        img: t
+                    } = this;
+                    if (!!this.loaded && null != t) e.save(), e.globalCompositeOperation = "source-atop", e.globalAlpha = this.alpha, e.drawImage(t, this.x + 20, this.y + 20), e.restore()
+                }
+                fill() {
+                    this.isFilled = !0
+                }
+                constructor() {
+                    s(this, "img", null), s(this, "loaded", !1), s(this, "isFilled", !1), s(this, "alpha", 0), s(this, "mx", 0), s(this, "my", 0), s(this, "x", 0), s(this, "y", 0), s(this, "velX", 0), s(this, "velY", 0), s(this, "targetX", 40), s(this, "targetY", 40), s(this, "spring", {
+                        friction: 60,
+                        tension: 100
+                    }), s(this, "handleMouseMove", e => {
+                        let {
+                            clientX: t,
+                            clientY: n
+                        } = e;
+                        this.targetX = t / window.innerWidth * 20 + 20, this.targetY = n / window.innerWidth * 20 + 20
+                    })
+                }
+            }
+        },
+        956843: function(e, t, n) {
+            "use strict";
+            var i = n(684827),
+                r = n(898625);
+
+            function s(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let o = ["#7d8187", "#18191c", "#8fa2df", "#4f545c"];
+            t.Z = class e {
+                checkBounds() {
+                    this.x > this.offscreenX ? this.x = -this.size : this.y > this.offscreenY ? this.y = -this.size : this.x < -this.size ? this.x = this.offscreenX : this.y < -this.size && (this.y = this.offscreenY)
+                }
+                update(e, t) {
+                    this.checkBounds(), this.y += t * this.positionMultiplier, this.x += e * this.positionMultiplier
+                }
+                render(e, t) {
+                    e.beginPath(), e.globalAlpha = t * this.depth / 4, e.arc(this.x, this.y, this.size, 0, r.uo, !0), e.fillStyle = this.color, e.fill(), e.globalAlpha = 1
+                }
+                constructor() {
+                    s(this, "size", (0, i.M)(2, 3)), s(this, "depth", (0, i.M)(1, 4)), s(this, "positionMultiplier", this.depth / 4), s(this, "color", o[4 - this.depth]), s(this, "offscreenX", r.pg + this.size), s(this, "offscreenY", r.pg + this.size), s(this, "x", (0, i.M)(-this.size, this.offscreenX)), s(this, "y", (0, i.M)(-this.size, this.offscreenY))
+                }
+            }
+        },
+        636879: function(e, t, n) {
+            "use strict";
+            n(653041);
+            var i = n(956843),
+                r = n(722734);
+
+            function s(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            t.Z = class e {
+                initialize() {
+                    this.particles = [], this.wind.initialize(), this.loadInTimer = setTimeout(() => {
+                        for (let e = 0; e < 75; e++) this.particles.push(new i.Z)
+                    }, 250)
+                }
+                terminate() {
+                    this.particles = [], this.wind.terminate(), null != this.loadInTimer && clearTimeout(this.loadInTimer)
+                }
+                update(e) {
+                    if (0 !== this.particles.length) !this.isFilled && this.alpha < 1 ? this.alpha = Math.min(1, this.alpha + e) : this.isFilled && this.alpha > 0 && (this.alpha = Math.max(0, this.alpha - 3 * e)), this.wind.update(), this.particles.forEach(t => t.update(10 * this.wind.forceX * e, 10 * Math.min(this.wind.forceY, -.001) * e + -.1))
+                }
+                render(e) {
+                    if (0 !== this.particles.length) e.save(), e.globalCompositeOperation = "source-atop", this.particles.forEach(t => t.render(e, this.alpha)), e.restore()
+                }
+                fill() {
+                    this.isFilled = !0
+                }
+                constructor() {
+                    s(this, "particles", []), s(this, "wind", new r.Z), s(this, "alpha", 0), s(this, "isFilled", !1), s(this, "loadInTimer", null)
+                }
+            }
+        },
+        50516: function(e, t, n) {
+            "use strict";
+            var i = n(684827),
+                r = n(898625);
+
+            function s(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let o = -2.15;
+            t.Z = class e {
+                updateStatic() {
+                    this.targetX = this.targetX + 30 * Math.cos(this.angle) * Math.sin(this.count), this.targetY = this.targetY + 30 * Math.sin(this.angle) * Math.sin(this.count), this.x = this.targetX, this.y = this.targetY
+                }
+                update(e) {
+                    let t, n;
+                    if (this.speedUp > 0 ? (this.speedUp = Math.max(0, this.speedUp - e), this.count += e * (10 * Math.min(this.speedUp, 1) + .4)) : this.count += .4 * e, t = (0, i.B)(this.targetX, this.x, this.velX, this.spring), n = (0, i.B)(this.targetY, this.y, this.velY, this.spring), this.velX += t * e, this.velY += n * e, this.oscillate) {
+                        let r = this.targetX + this.waveRange * Math.cos(this.angle) * Math.sin(this.count),
+                            s = this.targetY + this.waveRange * Math.sin(this.angle) * Math.sin(this.count);
+                        t = (0, i.B)(r, this.x, this.velX, this.spring), n = (0, i.B)(s, this.y, this.velY, this.spring), this.velX += t * e, this.velY += n * e
+                    }
+                    this.x += this.velX * e, this.y += this.velY * e
+                }
+                render(e) {
+                    e.fillStyle = "#fff", e.fillRect(this.x, this.y, 4, 4)
+                }
+                constructor(e) {
+                    s(this, "x", -40), s(this, "y", -40), s(this, "targetX", 0), s(this, "targetY", 0), s(this, "oscillate", !0), s(this, "velX", 0), s(this, "velY", 0), s(this, "angle", 0), s(this, "speedUp", 1.5), s(this, "waveRange", 60), s(this, "count", void 0), s(this, "index", void 0), s(this, "spring", {
+                        friction: 15,
+                        tension: r.O1
+                    }), this.index = e, this.spring.tension = r.O1 * Math.max(.1, e / 7) + r.O1, this.count = o * e
+                }
+            }
+        },
+        684827: function(e, t, n) {
+            "use strict";
+
+            function i(e, t) {
+                return Math.floor(Math.random() * (t - e + 1) + e)
+            }
+
+            function r(e, t, n, i) {
+                return i.tension * (e - t) - i.friction * n
+            }
+            n.d(t, {
+                B: function() {
+                    return r
+                },
+                M: function() {
+                    return i
+                }
+            })
+        },
+        810847: function(e, t, n) {
+            "use strict";
+            n(47120), n(653041);
+            var i = n(954955),
+                r = n.n(i),
+                s = n(477690),
+                o = n(624138),
+                a = n(50516),
+                l = n(684827),
+                u = n(898625);
+
+            function _(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let c = 7.5,
+                d = (0, o.Mg)(s.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+                E = 1 / 60;
+
+            function I(e, t, n, i) {
+                return n / i * t + e
+            }
+
+            function T() {
+                return Math.min(Math.max(Math.min(.8 * window.innerWidth, .8 * window.innerHeight), u.LE), u.pg)
+            }
+            t.Z = class e {
+                initialize() {
+                    this._resizeWave()
+                }
+                emphasize() {
+                    this.points.forEach(e => e.speedUp = 1)
+                }
+                terminate() {
+                    this.points = []
+                }
+                update(e) {
+                    if (0 !== this.points.length) this.points.forEach(t => t.update(Math.min(e, E))), !this.hasEntered && this.points[0].x > d && (this.hasEntered = !0, this.updateWaveState(u.hO.ENTERED)), this.isFilling && this.points[0].x > this.points[0].targetX && (this.isFilling = !1, this.updateWaveState(u.hO.FILLED))
+                }
+                render(e) {
+                    if (0 === this.points.length) return;
+                    let [t, ...n] = this.points;
+                    e.save(), e.beginPath(), e.moveTo(t.x, t.y), n.forEach((t, i) => {
+                        if (null == n[i + 1]) e.quadraticCurveTo(t.x, t.y, t.x, t.y);
+                        else {
+                            let r = (t.x + n[i + 1].x) / 2,
+                                s = (t.y + n[i + 1].y) / 2;
+                            e.quadraticCurveTo(t.x, t.y, r, s)
+                        }
+                    }), e.lineTo(0, 0), e.closePath(), e.fillStyle = "#000", e.globalCompositeOperation = "destination-in", e.fill(), e.restore()
+                }
+                fill() {
+                    let e = Math.sqrt(window.innerWidth * window.innerWidth + window.innerHeight * window.innerHeight) + 100,
+                        t = T() - 140,
+                        n = (e, t, n, i) => {
+                            e.targetX = -40 + t * Math.cos(u.uo * (n / 15 * .25 + 0)), e.targetY = -40 + t * Math.sin(u.uo * (n / 15 * .25 + 0)), i && (e.targetX += (0, l.M)(0, 30) - 15, e.targetY += (0, l.M)(0, 30) - 15, e.speedUp = 3, e.spring.tension = u.O1 * Math.random() * .5 + u.O1)
+                        };
+                    this.points.forEach((e, i) => n(e, t, i, !0)), setTimeout(() => {
+                        this.points.forEach((t, i) => {
+                            n(t, e, i, !1);
+                            let r = 1 - t.index / 7.5;
+                            t.spring.friction += t.spring.friction + t.spring.friction * r, t.spring.tension = .7 * u.O1 + 80 * Math.random(), t.waveRange = 2 * t.waveRange
+                        }), this.isFilling = !0, this.updateWaveState(u.hO.FILLING)
+                    }, 250)
+                }
+                constructor(e) {
+                    _(this, "points", []), _(this, "hasEntered", !1), _(this, "isFilling", !1), _(this, "updateWaveState", void 0), _(this, "_resizeWave", () => {
+                        let e = T();
+                        this.points.forEach((t, n) => {
+                            let i = -40 + e * Math.cos(u.uo * (n / 15 * .25 + 0)),
+                                r = -40 + e * Math.sin(u.uo * (n / 15 * .25 + 0));
+                            0 !== n ? r += (0, l.M)(0, 30) - 15 : i += (0, l.M)(0, 30) - 15, t.targetX = i, t.targetY = r, t.angle = Math.atan2(r, i)
+                        })
+                    }), _(this, "resizeWave", r()(this._resizeWave, 200)), this.updateWaveState = e, this.hasEntered = !1;
+                    for (let e = 0; e <= 15; e++) this.points.push(new a.Z(Math.floor(c - Math.floor(Math.abs(e - c)))))
+                }
+            }
+        },
+        898625: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                LE: function() {
+                    return i
+                },
+                O1: function() {
+                    return o
+                },
+                hO: function() {
+                    return a
+                },
+                pg: function() {
+                    return r
+                },
+                uo: function() {
+                    return s
+                }
+            });
+            let i = 780,
+                r = 1e3,
+                s = 2 * Math.PI,
+                o = 150,
+                a = {
+                    INITIAL: 0,
+                    ENTERED: 1,
+                    FILLING: 2,
+                    FILLED: 3
+                }
+        },
+        722734: function(e, t) {
+            "use strict";
+
+            function n(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+
+            function i(e, t) {
+                return Math.max(Math.min((e - t) / 30, 1), -1)
+            }
+            t.Z = class e {
+                initialize() {
+                    window.addEventListener("mousemove", this.handleMouseMove)
+                }
+                terminate() {
+                    window.removeEventListener("mousemove", this.handleMouseMove)
+                }
+                update() {
+                    this.x !== this.px && this.y !== this.py && (this.forceX += i(this.x, this.px), this.forceY += i(this.y, this.py), this.px = this.x, this.py = this.y), 0 !== this.forceX && (this.forceX = this.forceX * this.resistance), 0 !== this.forceY && (this.forceY = this.forceY * this.resistance)
+                }
+                render() {}
+                constructor() {
+                    n(this, "resistance", .98), n(this, "px", 0), n(this, "py", 0), n(this, "x", 0), n(this, "y", 0), n(this, "forceX", 0), n(this, "forceY", 0), n(this, "handleMouseMove", e => {
+                        let {
+                            clientX: t,
+                            clientY: n
+                        } = e;
+                        this.x = t, this.y = n
+                    })
+                }
+            }
+        },
         997383: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -95069,8 +95958,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303140", "303140"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303140")), t = 0), t
+                let t = parseInt((e = "303152", "303152"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303152")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -123277,8 +124166,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303140",
-                    versionHash: "ccfd2a72759ea70eb032a145541e79f272c327ef"
+                    buildNumber: "303152",
+                    versionHash: "95dd175f5a631cf28ce0cadf1c23a08bdf3f8d34"
                 }
             }
             n.d(t, {
@@ -123812,7 +124701,7 @@
                 u = n(31336),
                 _ = n(19759);
             let c = (0, s.Un)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("39709"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("6380"), n.e("33053"), n.e("11250"), n.e("8016"), n.e("57878"), n.e("65840"), n.e("77172"), n.e("67535"), n.e("45397"), n.e("95393"), n.e("86977"), n.e("68136"), n.e("18101"), n.e("81539"), n.e("90508"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("4934"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("22646"), n.e("68241"), n.e("12549"), n.e("21078"), n.e("19820"), n.e("47523"), n.e("77594"), n.e("87624"), n.e("30676"), n.e("5528"), n.e("44517"), n.e("95824"), n.e("43331"), n.e("41889"), n.e("97403"), n.e("30419"), n.e("18824"), n.e("49508"), n.e("27385"), n.e("31649"), n.e("30634"), n.e("44388"), n.e("76305"), n.e("54807"), n.e("81312")]).then(n.bind(n, 678717)),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("39709"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("6380"), n.e("33053"), n.e("11250"), n.e("8016"), n.e("57878"), n.e("65840"), n.e("77172"), n.e("67535"), n.e("45397"), n.e("95393"), n.e("86977"), n.e("68136"), n.e("18101"), n.e("81539"), n.e("90508"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("4934"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("22646"), n.e("68241"), n.e("12549"), n.e("21078"), n.e("19820"), n.e("18965"), n.e("77594"), n.e("87624"), n.e("30676"), n.e("5528"), n.e("44517"), n.e("95824"), n.e("43331"), n.e("41889"), n.e("97403"), n.e("30419"), n.e("18824"), n.e("49508"), n.e("27385"), n.e("31649"), n.e("30634"), n.e("44388"), n.e("76305"), n.e("54807"), n.e("81312")]).then(n.bind(n, 678717)),
                 webpackId: 678717
             });
 
@@ -159835,7 +160724,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("11751"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("65840"), n.e("45397"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("3084"), n.e("12549"), n.e("43502"), n.e("47523"), n.e("77594"), n.e("1187"), n.e("19589"), n.e("41889"), n.e("92557"), n.e("96936")]).then(n.bind(n, 994763)), (null === (s = T.Z.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(N.oNc.COMMUNITY)) && (t === N.pNK.GUILD_AUTOMOD && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_AUTOMOD), t === N.pNK.MEMBER_VERIFICATION && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, i, r);
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("11751"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("65840"), n.e("45397"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("3084"), n.e("12549"), n.e("43502"), n.e("18965"), n.e("77594"), n.e("1187"), n.e("19589"), n.e("41889"), n.e("92557"), n.e("96936")]).then(n.bind(n, 994763)), (null === (s = T.Z.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(N.oNc.COMMUNITY)) && (t === N.pNK.GUILD_AUTOMOD && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_AUTOMOD), t === N.pNK.MEMBER_VERIFICATION && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, i, r);
                         (0, o.jN)(N.S9g.GUILD_SETTINGS)
                     },
                     close() {
@@ -179362,8 +180251,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718746425703",
-                                    build_number: "303140"
+                                    built_at: "1718746922396",
+                                    build_number: "303152"
                                 }
                             },
                             retries: 1
@@ -183299,12 +184188,12 @@
                 o = n.n(s),
                 a = n(466377),
                 l = n(481060),
-                u = n(252618),
-                _ = n(612744),
+                u = n(568154),
+                _ = n(252618),
                 c = n(449934),
                 d = n(792125),
                 E = n(981631),
-                I = n(756286),
+                I = n(898625),
                 T = n(689938),
                 h = n(897456);
 
@@ -183316,11 +184205,11 @@
                 } = e, [a, S] = r.useState(I.hO.INITIAL), f = r.useCallback(e => {
                     S(t => Math.max(t, e))
                 }, []);
-                return (0, u.Tt)({
+                return (0, _.Tt)({
                     location: T.Z.Messages.OAUTH2_TITLE
                 }), (0, i.jsx)(l.ThemeContextProvider, {
                     theme: E.BRd.DARK,
-                    children: (0, i.jsx)(_.Z, {
+                    children: (0, i.jsx)(u.Z, {
                         embedded: s,
                         className: o()((0, d.Q)(E.BRd.DARK), h.wave),
                         splash: (0, c.gK)(),
@@ -195131,49 +196020,49 @@
             "use strict";
             n.d(t, {
                 AH: function() {
-                    return A
-                },
-                CS: function() {
-                    return h
-                },
-                EW: function() {
-                    return M
-                },
-                QB: function() {
-                    return O
-                },
-                T0: function() {
-                    return L
-                },
-                Tj: function() {
                     return m
                 },
-                Wf: function() {
-                    return C
-                },
-                eT: function() {
-                    return v
-                },
-                gl: function() {
-                    return p
-                },
-                is: function() {
+                CS: function() {
                     return S
                 },
-                kP: function() {
-                    return D
+                EW: function() {
+                    return P
                 },
-                m0: function() {
-                    return N
-                },
-                nE: function() {
-                    return g
-                },
-                pf: function() {
+                QB: function() {
                     return R
                 },
-                xw: function() {
+                T0: function() {
+                    return D
+                },
+                Tj: function() {
+                    return O
+                },
+                Wf: function() {
+                    return v
+                },
+                eT: function() {
+                    return L
+                },
+                gl: function() {
+                    return g
+                },
+                is: function() {
                     return f
+                },
+                kP: function() {
+                    return M
+                },
+                m0: function() {
+                    return A
+                },
+                nE: function() {
+                    return C
+                },
+                pf: function() {
+                    return p
+                },
+                xw: function() {
+                    return N
                 }
             }), n(411104);
             var i = n(990547),
@@ -195188,8 +196077,9 @@
                 d = n(242755),
                 E = n(566078),
                 I = n(46140),
-                T = n(981631);
-            async function h(e) {
+                T = n(981631),
+                h = n(689938);
+            async function S(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 try {
                     let n = (await r.tn.post({
@@ -195205,17 +196095,26 @@
                     else if (null != n.error_hints && n.error_hints.length > 0) return {
                         errorHints: n.error_hints
                     }
-                } catch (e) {}
+                } catch (t) {
+                    var n;
+                    let e = new o.Z(t);
+                    if (429 === e.status) return {
+                        errorHints: [h.Z.Messages.RATE_LIMITED]
+                    };
+                    return {
+                        errorHints: [null !== (n = e.getAnyErrorMessage()) && void 0 !== n ? n : h.Z.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR]
+                    }
+                }
                 return {
                     errorHints: []
                 }
             }
-            async function S(e) {
+            async function f(e) {
                 await r.tn.post({
                     url: T.ANM.QUEST_ON_CONSOLE_STOP(e)
                 })
             }
-            async function f() {
+            async function N() {
                 if (!_.Z.isFetchingCurrentQuests) {
                     s.Z.dispatch({
                         type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
@@ -195243,7 +196142,7 @@
                     }
                 }
             }
-            async function N(e) {
+            async function A(e) {
                 let {
                     questId: t,
                     streamKey: n,
@@ -195285,7 +196184,7 @@
                     })
                 }
             }
-            async function A(e, t) {
+            async function m(e, t) {
                 if (null != t.questContentCTA && (0, l._3)({
                         questId: e,
                         questContent: t.questContent,
@@ -195315,7 +196214,7 @@
                     }
                 }
             }
-            async function m(e, t, n) {
+            async function O(e, t, n) {
                 if (!_.Z.isClaimingRewardCode(e)) {
                     s.Z.dispatch({
                         type: "QUESTS_CLAIM_REWARD_CODE_BEGIN",
@@ -195343,7 +196242,7 @@
                     }
                 }
             }
-            async function O(e, t, n) {
+            async function R(e, t, n) {
                 if (!_.Z.isClaimingReward(e)) {
                     s.Z.dispatch({
                         type: "QUESTS_CLAIM_REWARD_BEGIN",
@@ -195376,7 +196275,7 @@
                     }
                 }
             }
-            async function R(e) {
+            async function p(e) {
                 if (!_.Z.isFetchingRewardCode(e)) {
                     s.Z.dispatch({
                         type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
@@ -195400,7 +196299,7 @@
                     }
                 }
             }
-            async function p(e, t) {
+            async function g(e, t) {
                 let n = _.Z.isDismissingContent(e),
                     i = (0, c.GN)(t);
                 if (!n && i) {
@@ -195428,13 +196327,13 @@
                 }
             }
 
-            function g(e) {
+            function C(e) {
                 s.Z.dispatch({
                     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
                     streamKey: e
                 })
             }
-            async function C(e) {
+            async function v(e) {
                 try {
                     let t = await r.tn.post({
                         url: T.ANM.QUESTS_PREVIEW_COMPLETE(e),
@@ -195452,7 +196351,7 @@
                     })
                 }
             }
-            async function v(e) {
+            async function L(e) {
                 try {
                     let t = await r.tn.del({
                         url: T.ANM.QUESTS_PREVIEW_STATUS(e),
@@ -195470,7 +196369,7 @@
                     })
                 }
             }
-            async function L(e) {
+            async function D(e) {
                 try {
                     let t = await r.tn.del({
                         url: T.ANM.QUESTS_PREVIEW_DISMISSIBILITY(e),
@@ -195489,14 +196388,14 @@
                 }
             }
 
-            function D(e) {
+            function M(e) {
                 s.Z.dispatch({
                     type: "QUESTS_OPTIMISTIC_PROGRESS_UPDATE",
                     userStatus: e
                 })
             }
 
-            function M(e) {
+            function P(e) {
                 s.Z.dispatch({
                     type: "QUESTS_DELIVERY_OVERRIDE",
                     questId: e
@@ -198397,7 +199296,7 @@
                         questContent: n,
                         questContentCTA: _.jZ.CLAIM_REWARD,
                         questContentPosition: i
-                    }), s ? (0, c.Xv)(t.config) ? (0, d.openCollectibleRewardModal)(t, n) : (0, I.h)({
+                    }), s ? (0, c.Xv)(t.config) ? (0, d.openCollectibleRewardModal)(t, n) : (0, I.hp)({
                         questId: t.id,
                         location: n,
                         questContentPosition: i
@@ -198415,20 +199314,17 @@
             let S = e => {
                 let {
                     useReducedMotion: t,
-                    className: n,
-                    size: o = 16
-                } = e, [l, u] = (0, s.useSpring)(() => ({})), _ = r.useRef(!1), c = (0, s.animated)(a.RefreshIcon);
+                    className: n
+                } = e, [o, l] = (0, s.useSpring)(() => ({})), u = r.useRef(!1), _ = (0, s.animated)(a.RefreshIcon);
                 return {
-                    render: () => (0, i.jsx)(c, {
+                    render: () => (0, i.jsx)(_, {
                         className: n,
-                        style: t ? void 0 : l,
-                        height: null != o ? o : 24,
-                        width: null != o ? o : 24,
+                        style: t ? void 0 : o,
                         color: "currentColor",
-                        size: "custom"
+                        size: "xs"
                     }),
                     startAnimation: () => {
-                        _.current = !0, u({
+                        u.current = !0, l({
                             from: {
                                 rotate: "0deg"
                             },
@@ -198440,12 +199336,12 @@
                                 mass: 5,
                                 friction: 100
                             },
-                            loop: () => _,
+                            loop: () => u.current,
                             immediate: t
                         })
                     },
                     stopAnimation: () => {
-                        _.current = !1
+                        u.current = !1
                     }
                 }
             }
@@ -199123,19 +200019,26 @@
         341907: function(e, t, n) {
             "use strict";
             n.d(t, {
-                a: function() {
-                    return a
+                az: function() {
+                    return c
                 },
-                h: function() {
-                    return o
+                gI: function() {
+                    return d
+                },
+                hp: function() {
+                    return _
                 }
-            });
+            }), n(47120);
             var i = n(735250);
             n(470079);
             var r = n(481060),
-                s = n(617136);
+                s = n(570140),
+                o = n(230711),
+                a = n(327192),
+                l = n(617136),
+                u = n(981631);
 
-            function o(e) {
+            function _(e) {
                 let {
                     questId: t,
                     location: s,
@@ -199154,8 +200057,8 @@
                 })
             }
 
-            function a(e, t) {
-                (0, s._3)({
+            function c(e, t) {
+                (0, l._3)({
                     questId: e.id,
                     questContent: t.content,
                     questContentPosition: t.position,
@@ -199169,6 +200072,17 @@
                         questContent: t.content,
                         quest: e
                     })
+                })
+            }
+
+            function d(e) {
+                let {
+                    showInline: t
+                } = e;
+                !t && o.Z.open(u.oAB.CONNECTIONS), s.Z.dispatch({
+                    type: "CONNECTIONS_GRID_MODAL_SHOW",
+                    onComplete: a.q,
+                    includedPlatformTypes: new Set([u.ABu.XBOX, u.ABu.PLAYSTATION])
                 })
             }
         },
@@ -226753,6 +227667,20 @@
                 }), (0, r.jN)(s.S9g.USER_SETTINGS)
             }
         },
+        349728: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return s
+                }
+            }), n(47120);
+            var i = n(981631);
+            let r = new Set([i.ABu.XBOX, i.ABu.PLAYSTATION, i.ABu.PLAYSTATION_STAGING, i.ABu.CRUNCHYROLL]);
+
+            function s(e) {
+                return r.has(e.type) && e.twoWayLink
+            }
+        },
         996073: function(e, t, n) {
             "use strict";
             var i = n(470079),
@@ -226791,6 +227719,584 @@
                 }, [e, t, c, u, n, l])
             }
         },
+        494620: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return d
+                },
+                z: function() {
+                    return r
+                }
+            });
+            var i, r, s = n(735250);
+            n(470079);
+            var o = n(120356),
+                a = n.n(o),
+                l = n(481060),
+                u = n(239260);
+            (i = r || (r = {})).INFO = "info", i.WARNING = "warning";
+            let _ = {
+                    info: u.info,
+                    warning: u.warning
+                },
+                c = {
+                    info: l.CircleInformationIcon,
+                    warning: l.CircleExclamationPointIcon
+                };
+
+            function d(e) {
+                let {
+                    children: t,
+                    className: n,
+                    look: i = "info"
+                } = e, r = c[i];
+                return (0, s.jsxs)("div", {
+                    className: a()(u.root, n, _[i]),
+                    children: [(0, s.jsx)(r, {
+                        className: u.icon
+                    }), (0, s.jsx)(l.Text, {
+                        className: u.text,
+                        variant: "text-sm/medium",
+                        color: "text-normal",
+                        children: t
+                    })]
+                })
+            }
+        },
+        327192: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                q: function() {
+                    return W
+                }
+            }), n(47120), n(653041), n(773603);
+            var i = n(735250),
+                r = n(470079),
+                s = n(120356),
+                o = n.n(s),
+                a = n(442837),
+                l = n(704215),
+                u = n(692547),
+                _ = n(780384),
+                c = n(481060),
+                d = n(570140),
+                E = n(457330),
+                I = n(497321),
+                T = n(23551),
+                h = n(468026),
+                S = n(410030),
+                f = n(726542),
+                N = n(122021),
+                A = n(275759),
+                m = n(231757),
+                O = n(323588),
+                R = n(605236),
+                p = n(553795),
+                g = n(430824),
+                C = n(771845),
+                v = n(246946),
+                L = n(797717),
+                D = n(346656),
+                M = n(626135),
+                P = n(63063),
+                y = n(706454),
+                U = n(349728),
+                b = n(494620),
+                G = n(205266),
+                w = n(216153),
+                k = n(981631),
+                B = n(856651),
+                x = n(921944),
+                V = n(689938),
+                Z = n(220301),
+                H = n(611273);
+            let F = e => {
+                var t, n;
+                let r, {
+                        integration: s
+                    } = e,
+                    {
+                        isJoining: o,
+                        joinErrorMessage: l,
+                        showJoinErrorMessage: u
+                    } = (0, a.cj)([p.Z], () => ({
+                        isJoining: p.Z.isJoining(s.id),
+                        joinErrorMessage: "" === p.Z.joinErrorMessage(s.id) ? V.Z.Messages.ERROR : p.Z.joinErrorMessage(s.id),
+                        showJoinErrorMessage: void 0 !== p.Z.joinErrorMessage(s.id)
+                    }), [s.id]),
+                    _ = null != (0, a.e7)([g.Z], () => g.Z.getGuild(s.guild.id), [s.guild.id]);
+                return !_ && (r = (0, i.jsx)(c.Button, {
+                    size: c.ButtonSizes.SMALL,
+                    onClick: function() {
+                        E.Z.joinServer(s.id, () => {})
+                    },
+                    disabled: o,
+                    children: (0, i.jsx)("span", {
+                        children: o ? V.Z.Messages.JOINING_GUILD : V.Z.Messages.JOIN_GUILD
+                    })
+                })), (0, i.jsxs)("div", {
+                    className: Z.integrationWrapper,
+                    children: [(0, i.jsxs)("div", {
+                        className: Z.integration,
+                        children: [(0, i.jsx)(D.Z, {
+                            size: D.Z.Sizes.SMALL,
+                            guild: s.guild,
+                            className: Z.guildIcon
+                        }), (0, i.jsxs)("div", {
+                            className: Z.integrationInner,
+                            children: [(0, i.jsx)(c.Text, {
+                                variant: "text-md/semibold",
+                                color: "header-primary",
+                                children: s.guild.toString()
+                            }), (0, i.jsx)(c.Anchor, {
+                                href: null === (n = f.Z.get(s.type)) || void 0 === n ? void 0 : null === (t = n.getPlatformUserUrl) || void 0 === t ? void 0 : t.call(n, s.account),
+                                children: (0, i.jsx)(c.Text, {
+                                    variant: "text-xs/normal",
+                                    color: "header-secondary",
+                                    children: s.account.name
+                                })
+                            })]
+                        }), r]
+                    }), u && (0, i.jsx)(c.Text, {
+                        variant: "text-xs/normal",
+                        color: "text-danger",
+                        className: Z.integrationError,
+                        children: l
+                    })]
+                })
+            };
+
+            function Y(e) {
+                var t, n, s;
+                let o, a, l, {
+                        onDisconnect: d,
+                        account: I,
+                        theme: T,
+                        locale: S
+                    } = e,
+                    [R, p] = r.useState(I.friendSync),
+                    [g, C] = r.useState(I.visibility),
+                    [v, D] = r.useState(I.metadataVisibility),
+                    [M, y] = r.useState(I.showActivity),
+                    [x, H] = r.useState(null),
+                    [Y, j] = r.useState(null),
+                    [W, K] = r.useState(!1),
+                    [z, q] = r.useState([]),
+                    X = (0, N.rR)(I.type),
+                    Q = f.Z.get(X);
+                r.useEffect(() => {
+                    p(I.friendSync), C(I.visibility), D(I.metadataVisibility), y(I.showActivity)
+                }, [I]), r.useEffect(() => {
+                    if (!1 !== I.verified) null != x && (C(x), E.Z.setVisibility(I.type, I.id, x), H(null)), null != Y && (D(Y), E.Z.setMetadataVisibility(I.type, I.id, Y), j(null))
+                }, [I]);
+
+                function J() {
+                    (0, m.Z)({
+                        platformType: I.type,
+                        location: "User Settings"
+                    })
+                }
+
+                function $() {
+                    let e = f.Z.get(I.type),
+                        t = V.Z.Messages.DISCONNECT_ACCOUNT_BODY;
+                    (0, U.Z)(I) && (t = (0, i.jsxs)(i.Fragment, {
+                        children: [t, (0, i.jsx)(b.Z, {
+                            className: Z.infoBox,
+                            children: V.Z.Messages.CONNECTED_ACCOUNT_IS_AUTHORIZED_APP_DISCONNECT_WARNING.format({
+                                platformName: e.name
+                            })
+                        })]
+                    })), (0, c.openModal)(n => (0, i.jsx)(h.default, {
+                        title: V.Z.Messages.DISCONNECT_ACCOUNT_TITLE.format({
+                            name: e.name
+                        }),
+                        body: t,
+                        confirmText: V.Z.Messages.DISCONNECT_ACCOUNT,
+                        cancelText: V.Z.Messages.CANCEL,
+                        onConfirm: d,
+                        ...n
+                    }))
+                }
+
+                function ee(e) {
+                    let {
+                        verified: t
+                    } = I, n = e ? 1 : 0;
+                    if (e && !t) {
+                        H(n), (0, m.Z)({
+                            platformType: I.type,
+                            location: "User Settings"
+                        });
+                        return
+                    }
+                    C(n), E.Z.setVisibility(I.type, I.id, n)
+                }
+
+                function et(e) {
+                    let {
+                        verified: t
+                    } = I, n = e ? 1 : 0;
+                    if (e && !t) {
+                        j(n), (0, m.Z)({
+                            platformType: I.type,
+                            location: "User Settings"
+                        });
+                        return
+                    }
+                    D(n), E.Z.setMetadataVisibility(I.type, I.id, n)
+                }
+
+                function en(e) {
+                    p(e), E.Z.setFriendSync(I.type, I.id, e)
+                }
+
+                function ei(e) {
+                    y(e), E.Z.setShowActivity(I.type, I.id, e)
+                }
+                return (0, i.jsxs)("div", {
+                    className: Z.connection,
+                    children: [function(e) {
+                        var t;
+                        let n = f.Z.get(e.type),
+                            r = f.Z.get(X),
+                            s = "1" === (null !== (t = e.metadata) && void 0 !== t ? t : {})[B.PC.TWITTER_VERIFIED],
+                            o = null;
+                        return n.type === k.ABu.TWITTER && s && (o = (0, i.jsx)(c.Tooltip, {
+                            text: V.Z.Messages.CONNECTION_VERIFIED_ON_TWITTER,
+                            children: e => (0, i.jsx)(L.Z, {
+                                ...e,
+                                className: Z.connectionAccountLabelVerified,
+                                color: u.Z.unsafe_rawColors.TWITTER.css,
+                                children: (0, i.jsx)(c.CheckmarkSmallIcon, {
+                                    size: "xs",
+                                    color: u.Z.unsafe_rawColors.WHITE_500.css
+                                })
+                            })
+                        })), (0, i.jsxs)("div", {
+                            className: Z.connectionHeader,
+                            children: [(0, i.jsx)("img", {
+                                alt: r.name,
+                                className: Z.connectionIcon,
+                                src: (0, _.wj)(T) ? r.icon.darkSVG : r.icon.lightSVG
+                            }), (0, i.jsxs)("div", {
+                                children: [(0, i.jsx)(c.Text, {
+                                    color: "header-primary",
+                                    variant: "text-md/semibold",
+                                    className: Z.connectionAccountValue,
+                                    children: (0, i.jsxs)("div", {
+                                        className: Z.connectionAccountLabelContainer,
+                                        children: [e.name, o]
+                                    })
+                                }), (0, i.jsx)(c.Text, {
+                                    variant: "text-xs/normal",
+                                    color: "header-secondary",
+                                    className: Z.connectionAccountLabel,
+                                    children: r.name
+                                })]
+                            }), (0, i.jsx)(c.Clickable, {
+                                className: Z.connectionDelete,
+                                onClick: $,
+                                "aria-label": V.Z.Messages.SERVICE_CONNECTIONS_DISCONNECT,
+                                focusProps: {
+                                    offset: {
+                                        top: -4,
+                                        left: -4,
+                                        right: -4
+                                    }
+                                },
+                                children: (0, i.jsx)(c.CloseSmallIcon, {
+                                    size: "xs",
+                                    color: "currentColor"
+                                })
+                            })]
+                        })
+                    }(I), (t = I).twoWayLink ? null : t.type === k.ABu.XBOX ? (0, i.jsx)("div", {
+                        className: Z.upsellWrapper,
+                        children: (0, i.jsx)(w.Y, {})
+                    }) : t.type === k.ABu.PLAYSTATION ? (0, i.jsx)("div", {
+                        className: Z.upsellWrapper,
+                        children: (0, i.jsx)(G.t, {})
+                    }) : null, function(e) {
+                        var t;
+                        let n = null !== (t = e.metadata) && void 0 !== t ? t : {},
+                            r = null,
+                            s = (0, A.FI)(n[B.PC.CREATED_AT], S);
+                        switch (e.type) {
+                            case k.ABu.REDDIT:
+                                r = (0, O.oP)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.STEAM:
+                                r = (0, O.Dq)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.TWITTER:
+                                r = (0, O.rJ)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.EBAY:
+                                r = (0, O.ul)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.PAYPAL:
+                                r = (0, O.li)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.TIKTOK:
+                                r = (0, O.hf)(n, Z.metadataItem)
+                        }
+                        null !== s && (null == r && (r = []), null == r || r.push((0, i.jsx)(c.Text, {
+                            variant: "text-xs/normal",
+                            color: "interactive-active",
+                            className: Z.connectedAccountVanityMetadataCreatedAt,
+                            children: V.Z.Messages.CONNECTIONS_PROFILE_MEMBER_SINCE.format({
+                                date: s
+                            })
+                        }, "member-since")));
+                        let o = z.includes(e.id),
+                            a = V.Z.Messages.REFRESH;
+                        if (null == r || 0 === r.length) {
+                            if (!0 !== f.Z.get(e.type).hasMetadata) return null;
+                            r = [(0, i.jsx)(c.TextBadge, {
+                                className: Z.connectionMetadataUpsellTag,
+                                text: V.Z.Messages.NEW
+                            }, "badge"), (0, i.jsx)(c.Text, {
+                                variant: "text-xs/normal",
+                                className: Z.connectionMetadataUpsellDescription,
+                                children: V.Z.Messages.CONNECTED_ACCOUNT_ADD_DETAILS_DESCRIPTION.format({
+                                    helpdeskUrl: P.Z.getArticleURL(k.BhN.CONNECTION_DETAILS)
+                                })
+                            }, "label")], a = V.Z.Messages.CONNECTED_ACCOUNT_ADD_DETAILS
+                        }
+                        return o && (a = V.Z.Messages.DONE), r.push((0, i.jsx)(c.Button, {
+                            className: Z.metadataRefreshButton,
+                            color: o ? c.Button.Colors.GREEN : c.Button.Colors.BRAND,
+                            size: c.Button.Sizes.SMALL,
+                            submitting: W,
+                            disabled: o,
+                            onClick: o ? void 0 : () => {
+                                K(!0), E.Z.refresh(e.type, e.id).finally(() => {
+                                    setTimeout(() => {
+                                        z.push(e.id), q(z), K(!1)
+                                    }, 2e3)
+                                })
+                            },
+                            children: a
+                        }, "refresh-button")), (0, i.jsx)("div", {
+                            className: Z.metadataContainer,
+                            children: r
+                        })
+                    }(I), (n = Q, k.BFP.has(I.type) && (o = (0, i.jsx)(c.FormSwitch, {
+                        className: Z.connectionOptionSwitch,
+                        hideBorder: !0,
+                        value: R,
+                        onChange: en,
+                        children: (0, i.jsx)(c.Text, {
+                            variant: "text-sm/semibold",
+                            children: V.Z.Messages.SYNC_FRIENDS
+                        })
+                    })), k.vbS.has(I.type) && (a = (0, i.jsx)(c.FormSwitch, {
+                        className: Z.connectionOptionSwitch,
+                        hideBorder: !0,
+                        value: M,
+                        onChange: ei,
+                        children: (0, i.jsx)(c.Text, {
+                            variant: "text-sm/semibold",
+                            children: V.Z.Messages.DISPLAY_ACTIVITY.format({
+                                platform: n.name
+                            })
+                        })
+                    })), (null === (s = f.Z.get(I.type)) || void 0 === s ? void 0 : s.hasMetadata) === !0 && (l = (0, i.jsx)(c.FormSwitch, {
+                        className: Z.connectionOptionSwitch,
+                        hideBorder: !0,
+                        value: 1 === v,
+                        onChange: et,
+                        disabled: 1 !== g || null == I.metadata,
+                        children: (0, i.jsx)(c.Text, {
+                            variant: "text-sm/semibold",
+                            children: V.Z.Messages.DISPLAY_DETAILS_ON_PROFILE
+                        })
+                    })), (0, i.jsx)("div", {
+                        className: Z.connectionOptionsWrapper,
+                        children: (0, i.jsxs)("div", {
+                            className: Z.connectionOptions,
+                            children: [(0, i.jsx)(c.FormSwitch, {
+                                className: Z.connectionOptionSwitch,
+                                hideBorder: !0,
+                                value: 1 === g,
+                                onChange: ee,
+                                children: (0, i.jsx)(c.Text, {
+                                    variant: "text-sm/semibold",
+                                    children: V.Z.Messages.DISPLAY_ON_PROFILE
+                                })
+                            }), l, a, o]
+                        })
+                    })), function() {
+                        if (I.revoked || I.integrations.length > 0) return (0, i.jsx)(c.FormDivider, {
+                            className: Z.connectedAccountSeparator
+                        })
+                    }(), I.revoked ? (0, i.jsx)(c.FormItem, {
+                        className: Z.integrationsWrapper,
+                        children: (0, i.jsx)(c.FormText, {
+                            className: Z.integrationRevoked,
+                            children: V.Z.Messages.CONNECTED_ACCOUNT_REVOKED.format({
+                                onReconnect: J
+                            })
+                        })
+                    }) : I.integrations.length > 0 ? (0, i.jsxs)(c.FormItem, {
+                        className: Z.integrationsWrapper,
+                        children: [(0, i.jsx)(c.FormTitle, {
+                            tag: c.FormTitleTags.H5,
+                            children: (0, i.jsx)(c.Text, {
+                                variant: "text-xs/semibold",
+                                children: V.Z.Messages.SUB_ENABLED_SERVERS
+                            })
+                        }), (0, i.jsx)("div", {
+                            children: I.integrations.map(e => (0, i.jsx)(F, {
+                                integration: e
+                            }, e.id))
+                        })]
+                    }) : void 0]
+                })
+            }
+
+            function j() {
+                return r.useEffect(() => () => {
+                    (0, R.EW)(l.z.NEW_CRUNCHYROLL_CONNECTION, {
+                        dismissAction: x.L.AUTO
+                    })
+                }, []), (0, i.jsxs)("div", {
+                    className: Z.connectContainer,
+                    children: [(0, i.jsx)(c.Heading, {
+                        variant: "heading-md/bold",
+                        color: "interactive-active",
+                        className: Z.connectHeader,
+                        children: V.Z.Messages.CONNECTIONS_USER_SETTINGS_CONNECT_ACCOUNTS_HEADER
+                    }), (0, i.jsx)(c.Text, {
+                        variant: "text-xs/normal",
+                        color: "header-secondary",
+                        children: V.Z.Messages.CONNECTIONS_USER_SETTINGS_CONNECT_ACCOUNTS_DESCRIPTION.format({
+                            privacyPolicyUrl: k.EYA.PRIVACY
+                        })
+                    }), (0, i.jsx)(K, {})]
+                })
+            }
+
+            function W(e) {
+                let t = f.Z.get(e);
+                (0, m.Z)({
+                    platformType: t.type
+                }), M.default.track(k.rMx.ACCOUNT_LINK_STEP, {
+                    previous_step: "desktop connections",
+                    current_step: "desktop oauth",
+                    platform_type: t.type
+                })
+            }
+
+            function K() {
+                function e() {
+                    d.Z.dispatch({
+                        type: "CONNECTIONS_GRID_MODAL_SHOW",
+                        onComplete: W
+                    })
+                }
+                let t = (0, N.fq)(),
+                    n = (0, c.useRedesignIconContext)().enabled ? 24 : 18;
+                return (0, i.jsxs)("div", {
+                    className: Z.connectionsContainer,
+                    children: [t.slice(0, 10).map(e => (0, i.jsx)(T.Z, {
+                        type: e.type,
+                        className: Z.__invalid_accountButton,
+                        innerClassName: Z.accountButtonInner
+                    }, e.type)), (0, i.jsx)(c.Tooltip, {
+                        text: V.Z.Messages.CONNECTIONS_VIEW_MORE,
+                        children: t => {
+                            let {
+                                onMouseEnter: r,
+                                onMouseLeave: s
+                            } = t;
+                            return (0, i.jsx)("div", {
+                                className: o()(Z.accountAddWrapper, Z.__invalid_accountButton),
+                                children: (0, i.jsx)(c.FocusRing, {
+                                    children: (0, i.jsx)("button", {
+                                        onMouseEnter: r,
+                                        onMouseLeave: s,
+                                        className: o()(Z.accountAddInner, Z.accountButtonInner),
+                                        type: "button",
+                                        onClick: e,
+                                        "aria-label": V.Z.Messages.ADD_NEW_CONNECTION,
+                                        children: (0, i.jsx)(c.ChevronSmallRightIcon, {
+                                            size: "custom",
+                                            color: "currentColor",
+                                            height: n,
+                                            width: n,
+                                            "aria-label": V.Z.Messages.CONNECTIONS_VIEW_MORE
+                                        })
+                                    })
+                                })
+                            })
+                        }
+                    })]
+                })
+            }
+
+            function z(e) {
+                let t, {
+                    fetching: r,
+                    accounts: s,
+                    theme: o,
+                    locale: a
+                } = e;
+                return t = r ? (0, i.jsx)(c.Spinner, {
+                    className: H.marginTop20,
+                    type: c.Spinner.Type.SPINNING_CIRCLE
+                }) : 0 === s.length ? (0, i.jsxs)(c.EmptyState, {
+                    className: H.marginTop40,
+                    theme: o,
+                    children: [(0, i.jsx)(c.EmptyStateImage, {
+                        darkSrc: n(703152),
+                        lightSrc: n(548617),
+                        width: 230,
+                        height: 220
+                    }), (0, i.jsx)(c.EmptyStateText, {
+                        note: V.Z.Messages.CONNECTED_ACCOUNTS_NONE,
+                        children: V.Z.Messages.CONNECTED_ACCOUNTS_NONE_TITLE
+                    })]
+                }) : s.filter(e => f.Z.isSupported(e.type)).map((e, t) => (0, i.jsx)(Y, {
+                    theme: o,
+                    account: e,
+                    locale: a,
+                    onDisconnect: () => (function(e) {
+                        let {
+                            type: t,
+                            id: n
+                        } = e;
+                        E.Z.disconnect(t, n)
+                    })(e)
+                }, t)), (0, i.jsx)(c.FormItem, {
+                    className: Z.connectionList,
+                    children: t
+                })
+            }
+            t.Z = () => {
+                let e = (0, a.e7)([v.Z], () => v.Z.hidePersonalInformation),
+                    t = (0, a.e7)([p.Z], () => p.Z.isFetching()),
+                    n = (0, a.e7)([p.Z], () => p.Z.getAccounts()),
+                    s = (0, S.ZP)();
+                (0, a.e7)([C.ZP], () => C.ZP.getFlattenedGuildIds());
+                let o = (0, a.e7)([y.default], () => y.default.locale);
+                return (r.useEffect(() => {
+                    E.Z.fetch()
+                }, []), e) ? (0, i.jsx)(I.Z, {}) : (0, i.jsxs)(c.FormSection, {
+                    className: Z.__invalid_connections,
+                    tag: c.FormTitleTags.H1,
+                    title: V.Z.Messages.CONNECTIONS,
+                    children: [(0, i.jsx)(j, {}), (0, i.jsx)(z, {
+                        fetching: t,
+                        accounts: n,
+                        theme: s,
+                        locale: o
+                    })]
+                })
+            }
+        },
         357269: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -226816,6 +228322,71 @@
                 }
                 return null
             }
+        },
+        249881: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                t: function() {
+                    return c
+                }
+            });
+            var i = n(735250),
+                r = n(470079),
+                s = n(481060),
+                o = n(243778),
+                a = n(921944),
+                l = n(689938),
+                u = n(832444);
+            let _ = e => {
+                    let {
+                        markAsDismissed: t
+                    } = e;
+                    return r.useEffect(() => t(a.L.UNKNOWN), [t]), (0, i.jsx)(s.TextBadge, {
+                        className: u.newBadge,
+                        text: l.Z.Messages.NEW
+                    })
+                },
+                c = e => {
+                    let {
+                        title: t,
+                        body: n,
+                        img: r,
+                        newIndicatorDismissibleContent: a,
+                        onClick: c
+                    } = e;
+                    return (0, i.jsxs)("div", {
+                        className: u.container,
+                        children: [r, (0, i.jsxs)("div", {
+                            className: u.textContainer,
+                            children: [(0, i.jsxs)("div", {
+                                className: u.headerText,
+                                children: [(0, i.jsx)(o.Z, {
+                                    contentTypes: [a],
+                                    children: e => {
+                                        let {
+                                            visibleContent: t,
+                                            markAsDismissed: n
+                                        } = e;
+                                        return t === a ? (0, i.jsx)(_, {
+                                            markAsDismissed: n
+                                        }) : null
+                                    }
+                                }), (0, i.jsx)(s.Text, {
+                                    variant: "text-md/semibold",
+                                    children: t
+                                })]
+                            }), (0, i.jsx)(s.Text, {
+                                variant: "text-xs/normal",
+                                children: n
+                            })]
+                        }), (0, i.jsx)(s.Button, {
+                            size: s.ButtonSizes.MEDIUM,
+                            onClick: c,
+                            className: u.reconnectButton,
+                            children: l.Z.Messages.RECONNECT
+                        })]
+                    })
+                }
         },
         842146: function(e, t, n) {
             "use strict";
@@ -226864,6 +228435,43 @@
                 })
             }
         },
+        205266: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                t: function() {
+                    return c
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(704215),
+                s = n(231757),
+                o = n(63063),
+                a = n(249881),
+                l = n(981631),
+                u = n(689938),
+                _ = n(359734);
+            let c = () => {
+                let e = o.Z.getArticleURL(l.BhN.PS_CONNECTION);
+                return (0, i.jsx)(a.t, {
+                    title: u.Z.Messages.PS_TWO_WAY_UPSELL_TITLE,
+                    body: u.Z.Messages.PS_TWO_WAY_UPSELL_BODY.format({
+                        help_article: e
+                    }),
+                    img: (0, i.jsx)("img", {
+                        src: _,
+                        width: "82",
+                        height: "auto",
+                        alt: ""
+                    }),
+                    newIndicatorDismissibleContent: r.z.PS_ONE_WAY_RECONNECT,
+                    onClick: () => (0, s.Z)({
+                        platformType: l.ABu.PLAYSTATION,
+                        location: "PS two way upsell"
+                    })
+                })
+            }
+        },
         349407: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -226883,6 +228491,43 @@
                     return n => (0, i.jsx)(t, {
                         analyticsLocation: e,
                         ...n
+                    })
+                })
+            }
+        },
+        216153: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Y: function() {
+                    return c
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(704215),
+                s = n(231757),
+                o = n(63063),
+                a = n(249881),
+                l = n(981631),
+                u = n(689938),
+                _ = n(195794);
+            let c = () => {
+                let e = o.Z.getArticleURL(l.BhN.XBOX_CONNECTION);
+                return (0, i.jsx)(a.t, {
+                    title: u.Z.Messages.XBOX_TWO_WAY_UPSELL_TITLE,
+                    body: u.Z.Messages.XBOX_TWO_WAY_UPSELL_BODY.format({
+                        help_article: e
+                    }),
+                    img: (0, i.jsx)("img", {
+                        src: _,
+                        width: "auto",
+                        height: "45",
+                        alt: ""
+                    }),
+                    newIndicatorDismissibleContent: r.z.XBOX_ONE_WAY_RECONNECT,
+                    onClick: () => (0, s.Z)({
+                        platformType: l.ABu.XBOX,
+                        location: "Xbox two way upsell"
                     })
                 })
             }
@@ -256580,7 +258225,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ccfd2a72759ea70eb032a145541e79f272c327ef"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "95dd175f5a631cf28ce0cadf1c23a08bdf3f8d34"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -264493,763 +266138,6 @@
                 maxValue: 100,
                 handleSize: 16
             }), t.Z = E
-        },
-        980483: function(e, t, n) {
-            "use strict";
-            n.d(t, {
-                Z: function() {
-                    return E
-                }
-            }), n(47120);
-            var i, r = n(735250),
-                s = n(470079),
-                o = n(120356),
-                a = n.n(o),
-                l = n(748780),
-                u = n(481060),
-                _ = n(981631),
-                c = n(265835);
-
-            function d(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            class E extends(i = s.Component) {
-                componentDidMount() {
-                    this.props.show && this.animate(1)
-                }
-                componentDidUpdate(e) {
-                    e.show !== this.props.show && this.animate(this.props.show ? 1 : 0)
-                }
-                getAnimatedStyle() {
-                    let {
-                        anim: e
-                    } = this, {
-                        reducedMotion: t
-                    } = this.context;
-                    return {
-                        opacity: e,
-                        transform: t.enabled ? void 0 : [{
-                            translateY: e.interpolate({
-                                inputRange: [0, 1],
-                                outputRange: ["-100px", "0px"]
-                            })
-                        }, {
-                            translateZ: 0
-                        }]
-                    }
-                }
-                render() {
-                    return (0, r.jsx)(l.Z.a, {
-                        href: _.Z5c.INDEX,
-                        target: "_blank",
-                        rel: "noopener",
-                        className: a()(c.logo, this.props.className),
-                        style: this.getAnimatedStyle()
-                    })
-                }
-                constructor(...e) {
-                    super(...e), d(this, "anim", new l.Z.Value(0)), d(this, "animate", e => {
-                        l.Z.spring(this.anim, {
-                            toValue: e,
-                            friction: 10,
-                            tension: 100
-                        }).start()
-                    })
-                }
-            }
-            d(E, "contextType", u.AccessibilityPreferencesContext)
-        },
-        450590: function(e, t, n) {
-            "use strict";
-            var i, r = n(735250),
-                s = n(470079),
-                o = n(120356),
-                a = n.n(o),
-                l = n(692547),
-                u = n(477690),
-                _ = n(481060),
-                c = n(585483),
-                d = n(624138),
-                E = n(989823),
-                I = n(713308),
-                T = n(520687),
-                h = n(756286),
-                S = n(981631),
-                f = n(477830);
-
-            function N(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            let A = (0, d.Mg)(u.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-                m = 1 / 120;
-            class O extends(i = s.Component) {
-                componentDidMount() {
-                    this.initialize()
-                }
-                componentDidUpdate(e) {
-                    let {
-                        waveState: t
-                    } = this.props;
-                    t === h.hO.FILLING && t !== e.waveState && this.waveFill()
-                }
-                componentWillUnmount() {
-                    this.terminate()
-                }
-                initialize() {
-                    this.children.forEach(e => e.initialize()), this.bindEvents(), this.resizeCanvas(), document.hidden && this.delayedPause()
-                }
-                terminate() {
-                    this.pause(), this.unbindEvents(), this.children.forEach(e => e.terminate())
-                }
-                bindEvents() {
-                    window.addEventListener("resize", this.resizeCanvas, !1), window.addEventListener("blur", this.delayedPause, !1), window.addEventListener("focus", this.play, !1), document.addEventListener("visibilitychange", this.handleVisibilityChange, !1), c.S.subscribe(S.CkL.WAVE_EMPHASIZE, this.handleWaveEmphasize)
-                }
-                unbindEvents() {
-                    window.removeEventListener("resize", this.resizeCanvas, !1), window.removeEventListener("blur", this.delayedPause, !1), window.removeEventListener("focus", this.play, !1), document.removeEventListener("visibilitychange", this.handleVisibilityChange, !1), c.S.unsubscribe(S.CkL.WAVE_EMPHASIZE, this.handleWaveEmphasize)
-                }
-                advanceTransitionalState() {
-                    let {
-                        waveState: e
-                    } = this.props;
-                    (e === h.hO.INITIAL || e === h.hO.FILLING) && this.updateWaveState(e + 1)
-                }
-                waveFill() {
-                    this._isPlaying ? this.children.forEach(e => e.fill()) : this.updateWaveState(h.hO.FILLED)
-                }
-                updateAnimation(e) {
-                    this.children.forEach(t => t.update(e))
-                }
-                renderAnimation() {
-                    let {
-                        canvasFillStyle: e
-                    } = this.props, {
-                        canvasContext: t
-                    } = this;
-                    if (null != t) t.fillStyle = e, t.fillRect(0, 0, this.width, this.height), this.children.forEach(e => e.render(t))
-                }
-                render() {
-                    let {
-                        waveState: e,
-                        hideFallback: t,
-                        embedded: n
-                    } = this.props;
-                    return (0, r.jsx)(_.AccessibilityPreferencesContext.Consumer, {
-                        children: i => {
-                            let {
-                                reducedMotion: s
-                            } = i;
-                            return s.enabled ? (0, r.jsx)("div", {
-                                className: a()(f.fallbackImage, {
-                                    [f.embedded]: n,
-                                    [f.visible]: !t && e >= h.hO.ENTERED
-                                })
-                            }) : (0, r.jsx)("canvas", {
-                                className: a()(f.canvas, {
-                                    [f.embedded]: n
-                                }),
-                                ref: this.setCanvas
-                            })
-                        }
-                    })
-                }
-                constructor(e) {
-                    super(e), N(this, "width", 0), N(this, "height", 0), N(this, "canvas", void 0), N(this, "canvasContext", void 0), N(this, "children", []), N(this, "wave", void 0), N(this, "ratio", 0), N(this, "_lastTick", 0), N(this, "_isPlaying", !1), N(this, "_reqAnimId", null), N(this, "_pauseTimeout", void 0), N(this, "setCanvas", e => {
-                        var t;
-                        if (null == e) return;
-                        this.canvas = e, this.canvasContext = this.canvas.getContext("2d");
-                        let n = null !== (t = window.devicePixelRatio) && void 0 !== t ? t : 1,
-                            i = this.canvasContext.webkitBackingStorePixelRatio || this.canvasContext.mozBackingStorePixelRatio || this.canvasContext.msBackingStorePixelRatio || this.canvasContext.oBackingStorePixelRatio || this.canvasContext.backingStorePixelRatio || 1;
-                        this.ratio = n / i, this.resizeCanvas()
-                    }), N(this, "resizeCanvas", () => {
-                        this.width = window.innerWidth, this.height = window.innerHeight;
-                        let {
-                            canvas: e,
-                            canvasContext: t,
-                            width: n,
-                            height: i,
-                            ratio: r
-                        } = this;
-                        null != e && null != t && (e.width = n * r, e.height = i * r, e.style.width = n + "px", e.style.height = i + "px", t.scale(r, r)), n <= A ? this.pause() : this.play(), this.wave.resizeWave(), this.renderAnimation()
-                    }), N(this, "handleVisibilityChange", () => {
-                        document.hidden ? this.delayedPause() : this.play()
-                    }), N(this, "play", () => {
-                        clearTimeout(this._pauseTimeout), !this._isPlaying && (this._isPlaying = !0, this.run())
-                    }), N(this, "pause", () => {
-                        clearTimeout(this._pauseTimeout), this._isPlaying = !1, null != this._reqAnimId && window.cancelAnimationFrame(this._reqAnimId), this._reqAnimId = null, this.advanceTransitionalState()
-                    }), N(this, "delayedPause", () => {
-                        clearTimeout(this._pauseTimeout), this._pauseTimeout = setTimeout(this.pause, 4e3)
-                    }), N(this, "updateWaveState", e => {
-                        let {
-                            updateWaveState: t
-                        } = this.props;
-                        t(e)
-                    }), N(this, "handleWaveEmphasize", () => {
-                        this.wave.emphasize()
-                    }), N(this, "run", () => {
-                        if (!this._isPlaying) return;
-                        if (0 === this._lastTick) {
-                            this._lastTick = Date.now(), this._reqAnimId = requestAnimationFrame(this.run);
-                            return
-                        }
-                        let e = Date.now(),
-                            t = Math.min((e - this._lastTick) / 1e3, 8 * m);
-                        for (; t > 0;) {
-                            let e = t < m ? t : m;
-                            this.updateAnimation(e), t -= e
-                        }
-                        this.renderAnimation(), this._lastTick = e, this._reqAnimId = requestAnimationFrame(this.run)
-                    }), this.wave = new T.Z(this.updateWaveState), this.children = [new E.Z, new I.Z, this.wave]
-                }
-            }
-            N(O, "defaultProps", {
-                embedded: !1
-            });
-            t.Z = e => {
-                let t = (0, _.useToken)(l.Z.unsafe_rawColors.PRIMARY_630).hex();
-                return (0, r.jsx)(O, {
-                    canvasFillStyle: t,
-                    ...e
-                })
-            }
-        },
-        612744: function(e, t, n) {
-            "use strict";
-            n.d(t, {
-                h: function() {
-                    return f
-                }
-            }), n(47120);
-            var i, r = n(735250),
-                s = n(470079),
-                o = n(120356),
-                a = n.n(o),
-                l = n(477690),
-                u = n(257915),
-                _ = n(624138),
-                c = n(980483),
-                d = n(450590),
-                E = n(756286),
-                I = n(271225);
-
-            function T(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            let h = (0, _.Mg)(l.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE);
-
-            function S(e, t) {
-                let {
-                    innerWidth: n,
-                    innerHeight: i
-                } = window;
-                if (0 === e || 0 === t) return null;
-                let r = t / e,
-                    s = n,
-                    o = Math.round(n * r);
-                return o < i && (o = i, s = Math.round(i * (r = e / t))), {
-                    naturalWidth: e,
-                    naturalHeight: t,
-                    width: s,
-                    height: o
-                }
-            }
-
-            function f(e) {
-                let {
-                    splash: t,
-                    children: n
-                } = e, [{
-                    width: i,
-                    height: o
-                }, l] = s.useState({
-                    width: 0,
-                    height: 0,
-                    naturalHeight: 0,
-                    naturalWidth: 0
-                });
-                return s.useEffect(() => {
-                    function e() {
-                        l(e => {
-                            let {
-                                naturalWidth: t,
-                                naturalHeight: n
-                            } = e, i = S(t, n);
-                            return null != i ? i : e
-                        })
-                    }
-                    return window.addEventListener("resize", e), () => window.removeEventListener("reslize", e)
-                }, []), (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)(u.Z, {
-                        className: a()(I.rightSplit),
-                        onLoad: function(e) {
-                            let {
-                                currentTarget: t
-                            } = e, {
-                                naturalWidth: n,
-                                naturalHeight: i
-                            } = t, r = S(n, i);
-                            null != r && l(r)
-                        },
-                        src: t,
-                        width: i,
-                        height: o
-                    }), (0, r.jsx)("div", {
-                        className: a()(I.leftSplit, {
-                            [I.nonEmbeddedLeftSplit]: !0
-                        }),
-                        children: n
-                    })]
-                })
-            }
-            class N extends(i = s.PureComponent) {
-                componentWillUnmount() {
-                    window.removeEventListener("resize", this.handleResize)
-                }
-                calculateShowWaveAnimation() {
-                    return window.innerWidth > h
-                }
-                renderSplashArt() {
-                    let {
-                        splash: e,
-                        embedded: t
-                    } = this.props, {
-                        width: n,
-                        height: i
-                    } = this.state;
-                    return null != e ? (0, r.jsx)(u.Z, {
-                        className: a()(I.rightSplit, {
-                            [I.embedded]: t
-                        }),
-                        src: e,
-                        width: n,
-                        height: i,
-                        onLoad: this.handleLoad
-                    }) : null
-                }
-                renderWave() {
-                    let {
-                        waveState: e,
-                        updateWaveState: t,
-                        embedded: n
-                    } = this.props, {
-                        showWaveAnimation: i,
-                        splashLoaded: s
-                    } = this.state;
-                    return i ? (0, r.jsx)(d.Z, {
-                        embedded: n,
-                        waveState: e,
-                        updateWaveState: t,
-                        hideFallback: !s
-                    }) : (0, r.jsx)("div", {
-                        className: I.mobileWave
-                    })
-                }
-                renderContent() {
-                    let {
-                        children: e,
-                        waveState: t,
-                        showLogo: n,
-                        logoClassName: i,
-                        embedded: o
-                    } = this.props, {
-                        showWaveAnimation: l
-                    } = this.state;
-                    return (0, r.jsxs)(s.Fragment, {
-                        children: [this.renderWave(), (0, r.jsxs)("div", {
-                            className: a()(I.leftSplit, {
-                                [I.nonEmbeddedLeftSplit]: o
-                            }),
-                            children: [n ? (0, r.jsx)(c.Z, {
-                                show: !l || t === E.hO.ENTERED && t !== E.hO.FILLING,
-                                className: a()(I.logo, i)
-                            }) : null, e]
-                        })]
-                    })
-                }
-                render() {
-                    let {
-                        className: e
-                    } = this.props;
-                    return (0, r.jsxs)("div", {
-                        className: a()(e, I.wrapper),
-                        children: [this.renderSplashArt(), this.renderContent()]
-                    })
-                }
-                constructor(...e) {
-                    super(...e), T(this, "state", {
-                        naturalWidth: 0,
-                        naturalHeight: 0,
-                        width: 0,
-                        height: 0,
-                        showWaveAnimation: this.calculateShowWaveAnimation(),
-                        splashLoaded: !1
-                    }), T(this, "handleResize", () => {
-                        let {
-                            naturalWidth: e,
-                            naturalHeight: t
-                        } = this.state, n = S(e, t), i = this.calculateShowWaveAnimation();
-                        null != n ? this.setState({
-                            ...n,
-                            showWaveAnimation: i
-                        }) : this.setState({
-                            showWaveAnimation: i
-                        })
-                    }), T(this, "handleLoad", e => {
-                        let {
-                            currentTarget: t
-                        } = e, {
-                            naturalWidth: n,
-                            naturalHeight: i
-                        } = t, r = S(n, i);
-                        null != r && this.setState(r), this.setState({
-                            splashLoaded: !0
-                        }), window.removeEventListener("resize", this.handleResize), window.addEventListener("resize", this.handleResize)
-                    })
-                }
-            }
-            T(N, "defaultProps", {
-                embedded: !1
-            }), t.Z = N
-        },
-        989823: function(e, t, n) {
-            "use strict";
-            var i = n(888618),
-                r = n(482682);
-
-            function s(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            t.Z = class e {
-                initialize() {
-                    this.img = new Image, this.img.onload = () => {
-                        this.loaded = !0
-                    }, this.img.src = r, this.bind()
-                }
-                bind() {
-                    window.addEventListener("mousemove", this.handleMouseMove, !1)
-                }
-                unbind() {
-                    window.removeEventListener("mousemove", this.handleMouseMove, !1)
-                }
-                terminate() {
-                    this.img = null, this.loaded = !1, this.isFilled = !1, this.alpha = 0, this.unbind()
-                }
-                update(e) {
-                    if (!!this.loaded) !this.isFilled && this.alpha < 1 ? this.alpha = Math.min(1, this.alpha + e) : this.isFilled && this.alpha > 0 && (this.alpha = Math.max(0, this.alpha - 3 * e)), this.velX += (0, i.B)(this.targetX, this.x, this.velX, this.spring) * e, this.velY += (0, i.B)(this.targetY, this.y, this.velY, this.spring) * e, this.x += this.velX * e, this.y += this.velY * e
-                }
-                render(e) {
-                    let {
-                        img: t
-                    } = this;
-                    if (!!this.loaded && null != t) e.save(), e.globalCompositeOperation = "source-atop", e.globalAlpha = this.alpha, e.drawImage(t, this.x + 20, this.y + 20), e.restore()
-                }
-                fill() {
-                    this.isFilled = !0
-                }
-                constructor() {
-                    s(this, "img", null), s(this, "loaded", !1), s(this, "isFilled", !1), s(this, "alpha", 0), s(this, "mx", 0), s(this, "my", 0), s(this, "x", 0), s(this, "y", 0), s(this, "velX", 0), s(this, "velY", 0), s(this, "targetX", 40), s(this, "targetY", 40), s(this, "spring", {
-                        friction: 60,
-                        tension: 100
-                    }), s(this, "handleMouseMove", e => {
-                        let {
-                            clientX: t,
-                            clientY: n
-                        } = e;
-                        this.targetX = t / window.innerWidth * 20 + 20, this.targetY = n / window.innerWidth * 20 + 20
-                    })
-                }
-            }
-        },
-        848918: function(e, t, n) {
-            "use strict";
-            var i = n(888618),
-                r = n(756286);
-
-            function s(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            let o = ["#7d8187", "#18191c", "#8fa2df", "#4f545c"];
-            t.Z = class e {
-                checkBounds() {
-                    this.x > this.offscreenX ? this.x = -this.size : this.y > this.offscreenY ? this.y = -this.size : this.x < -this.size ? this.x = this.offscreenX : this.y < -this.size && (this.y = this.offscreenY)
-                }
-                update(e, t) {
-                    this.checkBounds(), this.y += t * this.positionMultiplier, this.x += e * this.positionMultiplier
-                }
-                render(e, t) {
-                    e.beginPath(), e.globalAlpha = t * this.depth / 4, e.arc(this.x, this.y, this.size, 0, r.uo, !0), e.fillStyle = this.color, e.fill(), e.globalAlpha = 1
-                }
-                constructor() {
-                    s(this, "size", (0, i.M)(2, 3)), s(this, "depth", (0, i.M)(1, 4)), s(this, "positionMultiplier", this.depth / 4), s(this, "color", o[4 - this.depth]), s(this, "offscreenX", r.pg + this.size), s(this, "offscreenY", r.pg + this.size), s(this, "x", (0, i.M)(-this.size, this.offscreenX)), s(this, "y", (0, i.M)(-this.size, this.offscreenY))
-                }
-            }
-        },
-        713308: function(e, t, n) {
-            "use strict";
-            n(653041);
-            var i = n(848918),
-                r = n(618980);
-
-            function s(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            t.Z = class e {
-                initialize() {
-                    this.particles = [], this.wind.initialize(), this.loadInTimer = setTimeout(() => {
-                        for (let e = 0; e < 75; e++) this.particles.push(new i.Z)
-                    }, 250)
-                }
-                terminate() {
-                    this.particles = [], this.wind.terminate(), null != this.loadInTimer && clearTimeout(this.loadInTimer)
-                }
-                update(e) {
-                    if (0 !== this.particles.length) !this.isFilled && this.alpha < 1 ? this.alpha = Math.min(1, this.alpha + e) : this.isFilled && this.alpha > 0 && (this.alpha = Math.max(0, this.alpha - 3 * e)), this.wind.update(), this.particles.forEach(t => t.update(10 * this.wind.forceX * e, 10 * Math.min(this.wind.forceY, -.001) * e + -.1))
-                }
-                render(e) {
-                    if (0 !== this.particles.length) e.save(), e.globalCompositeOperation = "source-atop", this.particles.forEach(t => t.render(e, this.alpha)), e.restore()
-                }
-                fill() {
-                    this.isFilled = !0
-                }
-                constructor() {
-                    s(this, "particles", []), s(this, "wind", new r.Z), s(this, "alpha", 0), s(this, "isFilled", !1), s(this, "loadInTimer", null)
-                }
-            }
-        },
-        774643: function(e, t, n) {
-            "use strict";
-            var i = n(888618),
-                r = n(756286);
-
-            function s(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            let o = -2.15;
-            t.Z = class e {
-                updateStatic() {
-                    this.targetX = this.targetX + 30 * Math.cos(this.angle) * Math.sin(this.count), this.targetY = this.targetY + 30 * Math.sin(this.angle) * Math.sin(this.count), this.x = this.targetX, this.y = this.targetY
-                }
-                update(e) {
-                    let t, n;
-                    if (this.speedUp > 0 ? (this.speedUp = Math.max(0, this.speedUp - e), this.count += e * (10 * Math.min(this.speedUp, 1) + .4)) : this.count += .4 * e, t = (0, i.B)(this.targetX, this.x, this.velX, this.spring), n = (0, i.B)(this.targetY, this.y, this.velY, this.spring), this.velX += t * e, this.velY += n * e, this.oscillate) {
-                        let r = this.targetX + this.waveRange * Math.cos(this.angle) * Math.sin(this.count),
-                            s = this.targetY + this.waveRange * Math.sin(this.angle) * Math.sin(this.count);
-                        t = (0, i.B)(r, this.x, this.velX, this.spring), n = (0, i.B)(s, this.y, this.velY, this.spring), this.velX += t * e, this.velY += n * e
-                    }
-                    this.x += this.velX * e, this.y += this.velY * e
-                }
-                render(e) {
-                    e.fillStyle = "#fff", e.fillRect(this.x, this.y, 4, 4)
-                }
-                constructor(e) {
-                    s(this, "x", -40), s(this, "y", -40), s(this, "targetX", 0), s(this, "targetY", 0), s(this, "oscillate", !0), s(this, "velX", 0), s(this, "velY", 0), s(this, "angle", 0), s(this, "speedUp", 1.5), s(this, "waveRange", 60), s(this, "count", void 0), s(this, "index", void 0), s(this, "spring", {
-                        friction: 15,
-                        tension: r.O1
-                    }), this.index = e, this.spring.tension = r.O1 * Math.max(.1, e / 7) + r.O1, this.count = o * e
-                }
-            }
-        },
-        888618: function(e, t, n) {
-            "use strict";
-
-            function i(e, t) {
-                return Math.floor(Math.random() * (t - e + 1) + e)
-            }
-
-            function r(e, t, n, i) {
-                return i.tension * (e - t) - i.friction * n
-            }
-            n.d(t, {
-                B: function() {
-                    return r
-                },
-                M: function() {
-                    return i
-                }
-            })
-        },
-        520687: function(e, t, n) {
-            "use strict";
-            n(47120), n(653041);
-            var i = n(954955),
-                r = n.n(i),
-                s = n(477690),
-                o = n(624138),
-                a = n(774643),
-                l = n(888618),
-                u = n(756286);
-
-            function _(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            let c = 7.5,
-                d = (0, o.Mg)(s.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-                E = 1 / 60;
-
-            function I(e, t, n, i) {
-                return n / i * t + e
-            }
-
-            function T() {
-                return Math.min(Math.max(Math.min(.8 * window.innerWidth, .8 * window.innerHeight), u.LE), u.pg)
-            }
-            t.Z = class e {
-                initialize() {
-                    this._resizeWave()
-                }
-                emphasize() {
-                    this.points.forEach(e => e.speedUp = 1)
-                }
-                terminate() {
-                    this.points = []
-                }
-                update(e) {
-                    if (0 !== this.points.length) this.points.forEach(t => t.update(Math.min(e, E))), !this.hasEntered && this.points[0].x > d && (this.hasEntered = !0, this.updateWaveState(u.hO.ENTERED)), this.isFilling && this.points[0].x > this.points[0].targetX && (this.isFilling = !1, this.updateWaveState(u.hO.FILLED))
-                }
-                render(e) {
-                    if (0 === this.points.length) return;
-                    let [t, ...n] = this.points;
-                    e.save(), e.beginPath(), e.moveTo(t.x, t.y), n.forEach((t, i) => {
-                        if (null == n[i + 1]) e.quadraticCurveTo(t.x, t.y, t.x, t.y);
-                        else {
-                            let r = (t.x + n[i + 1].x) / 2,
-                                s = (t.y + n[i + 1].y) / 2;
-                            e.quadraticCurveTo(t.x, t.y, r, s)
-                        }
-                    }), e.lineTo(0, 0), e.closePath(), e.fillStyle = "#000", e.globalCompositeOperation = "destination-in", e.fill(), e.restore()
-                }
-                fill() {
-                    let e = Math.sqrt(window.innerWidth * window.innerWidth + window.innerHeight * window.innerHeight) + 100,
-                        t = T() - 140,
-                        n = (e, t, n, i) => {
-                            e.targetX = -40 + t * Math.cos(u.uo * (n / 15 * .25 + 0)), e.targetY = -40 + t * Math.sin(u.uo * (n / 15 * .25 + 0)), i && (e.targetX += (0, l.M)(0, 30) - 15, e.targetY += (0, l.M)(0, 30) - 15, e.speedUp = 3, e.spring.tension = u.O1 * Math.random() * .5 + u.O1)
-                        };
-                    this.points.forEach((e, i) => n(e, t, i, !0)), setTimeout(() => {
-                        this.points.forEach((t, i) => {
-                            n(t, e, i, !1);
-                            let r = 1 - t.index / 7.5;
-                            t.spring.friction += t.spring.friction + t.spring.friction * r, t.spring.tension = .7 * u.O1 + 80 * Math.random(), t.waveRange = 2 * t.waveRange
-                        }), this.isFilling = !0, this.updateWaveState(u.hO.FILLING)
-                    }, 250)
-                }
-                constructor(e) {
-                    _(this, "points", []), _(this, "hasEntered", !1), _(this, "isFilling", !1), _(this, "updateWaveState", void 0), _(this, "_resizeWave", () => {
-                        let e = T();
-                        this.points.forEach((t, n) => {
-                            let i = -40 + e * Math.cos(u.uo * (n / 15 * .25 + 0)),
-                                r = -40 + e * Math.sin(u.uo * (n / 15 * .25 + 0));
-                            0 !== n ? r += (0, l.M)(0, 30) - 15 : i += (0, l.M)(0, 30) - 15, t.targetX = i, t.targetY = r, t.angle = Math.atan2(r, i)
-                        })
-                    }), _(this, "resizeWave", r()(this._resizeWave, 200)), this.updateWaveState = e, this.hasEntered = !1;
-                    for (let e = 0; e <= 15; e++) this.points.push(new a.Z(Math.floor(c - Math.floor(Math.abs(e - c)))))
-                }
-            }
-        },
-        756286: function(e, t, n) {
-            "use strict";
-            n.d(t, {
-                LE: function() {
-                    return i
-                },
-                O1: function() {
-                    return o
-                },
-                hO: function() {
-                    return a
-                },
-                pg: function() {
-                    return r
-                },
-                uo: function() {
-                    return s
-                }
-            });
-            let i = 780,
-                r = 1e3,
-                s = 2 * Math.PI,
-                o = 150,
-                a = {
-                    INITIAL: 0,
-                    ENTERED: 1,
-                    FILLING: 2,
-                    FILLED: 3
-                }
-        },
-        618980: function(e, t) {
-            "use strict";
-
-            function n(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-
-            function i(e, t) {
-                return Math.max(Math.min((e - t) / 30, 1), -1)
-            }
-            t.Z = class e {
-                initialize() {
-                    window.addEventListener("mousemove", this.handleMouseMove)
-                }
-                terminate() {
-                    window.removeEventListener("mousemove", this.handleMouseMove)
-                }
-                update() {
-                    this.x !== this.px && this.y !== this.py && (this.forceX += i(this.x, this.px), this.forceY += i(this.y, this.py), this.px = this.x, this.py = this.y), 0 !== this.forceX && (this.forceX = this.forceX * this.resistance), 0 !== this.forceY && (this.forceY = this.forceY * this.resistance)
-                }
-                render() {}
-                constructor() {
-                    n(this, "resistance", .98), n(this, "px", 0), n(this, "py", 0), n(this, "x", 0), n(this, "y", 0), n(this, "forceX", 0), n(this, "forceY", 0), n(this, "handleMouseMove", e => {
-                        let {
-                            clientX: t,
-                            clientY: n
-                        } = e;
-                        this.x = t, this.y = n
-                    })
-                }
-            }
         },
         812663: function(e, t, n) {
             "use strict";
@@ -278323,7 +279211,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303140"
+                                build_number: "303152"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -285635,7 +286523,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303140", "303140"), 10);
+                let s = parseInt((n = "303152", "303152"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -327138,4 +328026,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.9bf4a030ead1b419b0e4.js.map
+//# sourceMappingURL=95108.89c549f361765edcdfe2.js.map
