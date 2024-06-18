@@ -1651,7 +1651,7 @@
                 "./1f469-1f3fc-200d-2764-fe0f-200d-1f468-1f3ff.svg": "170356",
                 "./1f469-1f3fc-200d-2764-fe0f-200d-1f469-1f3fb.svg": "964400",
                 "./1f469-1f3fc-200d-2764-fe0f-200d-1f469-1f3fc.svg": "81556",
-                "./1f469-1f3fc-200d-2764-fe0f-200d-1f469-1f3fd.svg": "176418",
+                "./1f469-1f3fc-200d-2764-fe0f-200d-1f469-1f3fd.svg": "102172",
                 "./1f469-1f3fc-200d-2764-fe0f-200d-1f469-1f3fe.svg": "406890",
                 "./1f469-1f3fc-200d-2764-fe0f-200d-1f469-1f3ff.svg": "117725",
                 "./1f469-1f3fc-200d-2764-fe0f-200d-1f48b-200d-1f468-1f3fb.svg": "452542",
@@ -40504,7 +40504,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303018", ", Version Hash: ").concat("a80a3863ff88b3d6b46ba142040f66cb68b81401")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303026", ", Version Hash: ").concat("3ce8b4b1e3383f84dfad5299deb40ad650783cbe")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -74669,7 +74669,7 @@
                 a = n(287734),
                 l = n(872810),
                 u = n(40851),
-                _ = n(102172),
+                _ = n(382182),
                 c = n(199902),
                 d = n(592125),
                 E = n(585483),
@@ -94448,8 +94448,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303018", "303018"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303018")), t = 0), t
+                let t = parseInt((e = "303026", "303026"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303026")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116822,106 +116822,43 @@
         },
         891274: function(e, t, n) {
             "use strict";
-            n(47120), n(411104), n(570140);
+            n(411104), n(570140);
             var i = n(147913);
             n(674588);
             var r = n(751189),
                 s = n(409059);
-            n(652898), n(701190);
-            var o = n(960904),
-                a = n(830121);
-            let l = new Set;
+            n(652898);
+            var o = n(728675);
+            n(701190);
+            var a = n(960904),
+                l = n(830121);
 
             function u(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                if (t && !l.has(e.channel_id)) return;
-                let n = (0, a.ZP)(e.content);
-                null != n && 0 !== n.length && n.forEach(e => {
+                let t = (0, l.ZP)(e.content);
+                null != t && 0 !== t.length && t.forEach(e => {
                     let {
                         type: t,
                         code: n
                     } = e;
-                    if (t === o.g.INVITE);
-                    else if (t === o.g.TEMPLATE) null == s.Z.getGuildTemplate(n) && r.Z.resolveGuildTemplate(n);
-                    else if (t === o.g.BUILD_OVERRIDE || t === o.g.MANUAL_BUILD_OVERRIDE);
-                    else if (t === o.g.EVENT);
-                    else if (t === o.g.CHANNEL_LINK);
-                    else if (t === o.g.APP_DIRECTORY_PROFILE);
-                    else if (t === o.g.ACTIVITY_BOOKMARK);
-                    else if (t === o.g.EMBEDDED_ACTIVITY_INVITE);
-                    else if (t === o.g.GUILD_PRODUCT);
-                    else if (t === o.g.SERVER_SHOP);
-                    else if (t === o.g.QUESTS_EMBED);
-                    else if (t === o.g.APP_DIRECTORY_STOREFRONT);
-                    else if (t === o.g.APP_DIRECTORY_STOREFRONT_SKU);
+                    if (t === a.g.INVITE);
+                    else if (t === a.g.TEMPLATE) null == s.Z.getGuildTemplate(n) && r.Z.resolveGuildTemplate(n);
+                    else if (t === a.g.BUILD_OVERRIDE || t === a.g.MANUAL_BUILD_OVERRIDE);
+                    else if (t === a.g.EVENT);
+                    else if (t === a.g.CHANNEL_LINK);
+                    else if (t === a.g.APP_DIRECTORY_PROFILE);
+                    else if (t === a.g.ACTIVITY_BOOKMARK);
+                    else if (t === a.g.EMBEDDED_ACTIVITY_INVITE);
+                    else if (t === a.g.GUILD_PRODUCT);
+                    else if (t === a.g.SERVER_SHOP);
+                    else if (t === a.g.QUESTS_EMBED);
+                    else if (t === a.g.APP_DIRECTORY_STOREFRONT);
+                    else if (t === a.g.APP_DIRECTORY_STOREFRONT_SKU);
                     else throw Error("Unknown coded link type: ".concat(t))
                 })
             }
             class _ extends i.Z {
-                handleConnectionOpen() {
-                    l.clear()
-                }
-                handleChannelSelect(e) {
-                    let {
-                        channelId: t
-                    } = e;
-                    null != t && l.add(t)
-                }
-                handleMessage(e) {
-                    let {
-                        message: t
-                    } = e;
-                    return u(t, !0)
-                }
-                handleLoadMessages(e) {
-                    let {
-                        channelId: t,
-                        messages: n
-                    } = e;
-                    l.add(t), n.forEach(e => u(e, !0))
-                }
-                handleLoadRecentMentions(e) {
-                    let {
-                        messages: t
-                    } = e;
-                    t.forEach(e => u(e))
-                }
-                handleLoadPinnedMessages(e) {
-                    let {
-                        messages: t
-                    } = e;
-                    t.forEach(e => u(e))
-                }
-                handleSearchFinish(e) {
-                    e.messages.forEach(e => {
-                        e.forEach(e => u(e))
-                    })
-                }
-                constructor(...e) {
-                    var t, n, i;
-                    super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: this.handleConnectionOpen,
-                        MESSAGE_CREATE: {
-                            callback: this.handleMessage,
-                            autoSubscribe: !1
-                        },
-                        MESSAGE_UPDATE: this.handleMessage,
-                        LOAD_MESSAGES_SUCCESS: this.handleLoadMessages,
-                        LOAD_MESSAGES_AROUND_SUCCESS: this.handleLoadMessages,
-                        LOAD_RECENT_MENTIONS_SUCCESS: this.handleLoadRecentMentions,
-                        LOAD_PINNED_MESSAGES_SUCCESS: this.handleLoadPinnedMessages,
-                        SEARCH_FINISH: this.handleSearchFinish,
-                        MOD_VIEW_SEARCH_FINISH: this.handleSearchFinish,
-                        CHANNEL_SELECT: {
-                            callback: this.handleChannelSelect,
-                            autoSubscribe: !1
-                        }
-                    }, n in t ? Object.defineProperty(t, n, {
-                        value: i,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : t[n] = i
+                constructor() {
+                    super(), (0, o.Z)(this, u)
                 }
             }
             t.Z = new _
@@ -122719,8 +122656,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303018",
-                    versionHash: "a80a3863ff88b3d6b46ba142040f66cb68b81401"
+                    buildNumber: "303026",
+                    versionHash: "3ce8b4b1e3383f84dfad5299deb40ad650783cbe"
                 }
             }
             n.d(t, {
@@ -137121,84 +137058,20 @@
         },
         35260: function(e, t, n) {
             "use strict";
-            n(47120);
             var i = n(147913),
                 r = n(31996),
-                s = n(981631);
-            let o = new Set;
+                s = n(728675),
+                o = n(981631);
 
             function a(e) {
                 var t, n, i;
-                let a = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                if (a && !o.has(e.channel_id) || (null === (t = e.message_reference) || void 0 === t ? void 0 : t.type) !== s.Uvt.FORWARD) return;
-                let l = null === (n = e.message_snapshots) || void 0 === n ? void 0 : n[0];
-                if (null != l && (null === (i = l.guild) || void 0 === i ? void 0 : i.id) != null)(0, r.Q)(l.guild.id)
+                if ((null === (t = e.message_reference) || void 0 === t ? void 0 : t.type) !== o.Uvt.FORWARD) return;
+                let s = null === (n = e.message_snapshots) || void 0 === n ? void 0 : n[0];
+                if (null != s && (null === (i = s.guild) || void 0 === i ? void 0 : i.id) != null)(0, r.Q)(s.guild.id)
             }
             class l extends i.Z {
-                handleConnectionOpen() {
-                    o.clear()
-                }
-                handleChannelSelect(e) {
-                    let {
-                        channelId: t
-                    } = e;
-                    null != t && o.add(t)
-                }
-                handleMessage(e) {
-                    let {
-                        message: t
-                    } = e;
-                    return a(t, !0)
-                }
-                handleLoadMessages(e) {
-                    let {
-                        channelId: t,
-                        messages: n
-                    } = e;
-                    o.add(t), n.forEach(e => a(e, !0))
-                }
-                handleLoadRecentMentions(e) {
-                    let {
-                        messages: t
-                    } = e;
-                    t.forEach(e => a(e))
-                }
-                handleLoadPinnedMessages(e) {
-                    let {
-                        messages: t
-                    } = e;
-                    t.forEach(e => a(e))
-                }
-                handleSearchFinish(e) {
-                    e.messages.forEach(e => {
-                        e.forEach(e => a(e))
-                    })
-                }
-                constructor(...e) {
-                    var t, n, i;
-                    super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: this.handleConnectionOpen,
-                        MESSAGE_CREATE: {
-                            callback: this.handleMessage,
-                            autoSubscribe: !1
-                        },
-                        MESSAGE_UPDATE: this.handleMessage,
-                        LOAD_MESSAGES_SUCCESS: this.handleLoadMessages,
-                        LOAD_MESSAGES_AROUND_SUCCESS: this.handleLoadMessages,
-                        LOAD_RECENT_MENTIONS_SUCCESS: this.handleLoadRecentMentions,
-                        LOAD_PINNED_MESSAGES_SUCCESS: this.handleLoadPinnedMessages,
-                        SEARCH_FINISH: this.handleSearchFinish,
-                        MOD_VIEW_SEARCH_FINISH: this.handleSearchFinish,
-                        CHANNEL_SELECT: {
-                            callback: this.handleChannelSelect,
-                            autoSubscribe: !1
-                        }
-                    }, n in t ? Object.defineProperty(t, n, {
-                        value: i,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : t[n] = i
+                constructor() {
+                    super(), (0, s.Z)(this, a)
                 }
             }
             t.Z = new l
@@ -145491,7 +145364,7 @@
                 }
             }
         },
-        102172: function(e, t, n) {
+        382182: function(e, t, n) {
             "use strict";
             n.d(t, {
                 JL: function() {
@@ -175013,7 +174886,7 @@
                     ...v.toJS(),
                     author: G,
                     webhookId: e.webhook_id,
-                    blocked: E.Z.isBlocked(G.id) || null != B && E.Z.isBlocked(B),
+                    blocked: E.Z.isBlockedForMessage(e) || null != B && E.Z.isBlocked(B),
                     mentionEveryone: e.mention_everyone,
                     mentions: M,
                     mentionRoles: P,
@@ -175988,6 +175861,83 @@
             function S(e) {
                 return e.some(e => "spoiler" === e.type && Array.isArray(e.content) && e.content.some(e => "link" === e.type || "attachmentLink" === e.type))
             }
+        },
+        728675: function(e, t, n) {
+            "use strict";
+
+            function i(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+                    {
+                        onBeforeBatch: i
+                    } = n,
+                    r = new Set;
+
+                function s(e) {
+                    null != e.channel_id && r.has(e.channel_id) && t(e)
+                }
+
+                function o(e) {
+                    let {
+                        message: t
+                    } = e;
+                    if (null != t.channel_id && !!r.has(t.channel_id)) null == i || i(), s(t)
+                }
+
+                function a(e) {
+                    let {
+                        channelId: t,
+                        messages: n
+                    } = e;
+                    r.add(t), null == i || i(), n.forEach(e => s(e))
+                }
+
+                function l(e) {
+                    null == i || i(), e.messages.forEach(e => {
+                        e.forEach(e => t(e))
+                    })
+                }
+                e.actions = {
+                    ...e.actions,
+                    POST_CONNECTION_OPEN: function() {
+                        r.clear()
+                    },
+                    MESSAGE_CREATE: {
+                        callback: o,
+                        autoSubscribe: !1
+                    },
+                    MESSAGE_UPDATE: o,
+                    LOAD_MESSAGES_SUCCESS: a,
+                    LOAD_MESSAGES_AROUND_SUCCESS: a,
+                    LOAD_RECENT_MENTIONS_SUCCESS: function(e) {
+                        let {
+                            messages: n
+                        } = e;
+                        null == i || i(), n.forEach(e => t(e))
+                    },
+                    LOAD_PINNED_MESSAGES_SUCCESS: function(e) {
+                        let {
+                            messages: n
+                        } = e;
+                        null == i || i(), n.forEach(e => t(e))
+                    },
+                    SEARCH_FINISH: l,
+                    MOD_VIEW_SEARCH_FINISH: l,
+                    CHANNEL_SELECT: {
+                        callback: function(e) {
+                            let {
+                                channelId: t
+                            } = e;
+                            null != t && r.add(t)
+                        },
+                        autoSubscribe: !1
+                    }
+                }
+            }
+            n.d(t, {
+                Z: function() {
+                    return i
+                }
+            }), n(47120)
         },
         646504: function(e, t, n) {
             "use strict";
@@ -178772,8 +178722,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718736168118",
-                                    build_number: "303018"
+                                    built_at: "1718736599262",
+                                    build_number: "303026"
                                 }
                             },
                             retries: 1
@@ -197826,7 +197776,7 @@
                 I = n(40851),
                 T = n(607070),
                 h = n(258609),
-                S = n(102172),
+                S = n(382182),
                 f = n(210887),
                 N = n(592125),
                 A = n(430824),
@@ -226916,7 +226866,7 @@
                 }
             });
             var i = n(442837),
-                r = n(102172),
+                r = n(382182),
                 s = n(430824),
                 o = n(496675);
 
@@ -233434,7 +233384,7 @@
                 E = n(258609),
                 I = n(594190),
                 T = n(569545),
-                h = n(102172),
+                h = n(382182),
                 S = n(139656),
                 f = n(855403),
                 N = n(314897),
@@ -243376,7 +243326,7 @@
 
             function Z() {
                 c.Z.forEach(e => {
-                    c.Z.commit(e.reset(e.map(e => e.set("blocked", P.Z.isBlocked(e.author.id)))))
+                    c.Z.commit(e.reset(e.map(e => e.set("blocked", P.Z.isBlockedForMessage(e)))))
                 })
             }
 
@@ -245725,7 +245675,7 @@
 
             function eC(e, t) {
                 let n = j.Z.getChannel(e.channel_id);
-                return !(null == n || J.Z.isBlocked(e.author.id)) && (!!((0, v.ZP)({
+                return !(null == n || J.Z.isBlockedForMessage(e)) && (!!((0, v.ZP)({
                     message: e,
                     userId: t.id,
                     suppressEveryone: ee.ZP.isSuppressEveryoneEnabled(n.guild_id),
@@ -246739,7 +246689,7 @@
                     if (d && eM(a) && !o || null != i && i.isInstanceFocused() && d && i.isInstanceUILocked() && i.isPinned(ei.Odu.TEXT)) return a.ack({
                         messageId: s.id
                     });
-                    (null == a.oldestUnreadMessageId || a.oldestUnreadMessageIdStale) && (a.oldestUnreadMessageId = s.id), a.unreadCount++, !(null != s.author && J.Z.isBlocked(s.author.id) || s.type === ei.uaV.RECIPIENT_REMOVE && (null == u ? void 0 : u.type) === ei.d4z.GROUP_DM) && function(e, t, n) {
+                    (null == a.oldestUnreadMessageId || a.oldestUnreadMessageIdStale) && (a.oldestUnreadMessageId = s.id), a.unreadCount++, !(J.Z.isBlockedForMessage(s) || s.type === ei.uaV.RECIPIENT_REMOVE && (null == u ? void 0 : u.type) === ei.d4z.GROUP_DM) && function(e, t, n) {
                         if (null != t && (0, v.Hl)({
                                 rawMessage: e,
                                 userId: t.id,
@@ -247113,116 +247063,125 @@
                 l = n.n(a),
                 u = n(442837),
                 _ = n(570140),
-                c = n(709054),
-                d = n(594174),
-                E = n(981631);
-            let I = {},
-                T = {},
+                c = n(23750),
+                d = n(709054),
+                E = n(594174),
+                I = n(981631);
+            let T = {},
                 h = {},
-                S = 0,
+                S = {},
                 f = 0,
                 N = 0,
-                A = 0;
+                A = 0,
+                m = 0;
 
-            function m() {
-                A = Object.values(I).length;
+            function O() {
+                m = Object.values(T).length;
                 let {
-                    [E.OGo.PENDING_INCOMING]: e = 0, [E.OGo.PENDING_OUTGOING]: t = 0, [E.OGo.FRIEND]: n = 0
-                } = l().countBy(Object.values(I), e => e);
-                S = e, f = t, N = n
+                    [I.OGo.PENDING_INCOMING]: e = 0, [I.OGo.PENDING_OUTGOING]: t = 0, [I.OGo.FRIEND]: n = 0
+                } = l().countBy(Object.values(T), e => e);
+                f = e, N = t, A = n
             }
-            class O extends(i = u.ZP.Store) {
+            class R extends(i = u.ZP.Store) {
                 initialize() {
-                    this.waitFor(d.default)
+                    this.waitFor(E.default)
                 }
                 isFriend(e) {
-                    return I[e] === E.OGo.FRIEND
+                    return null != e && T[e] === I.OGo.FRIEND
                 }
                 isBlocked(e) {
-                    return I[e] === E.OGo.BLOCKED
+                    return null != e && T[e] === I.OGo.BLOCKED
+                }
+                isBlockedForMessage(e) {
+                    var t, n, i, r;
+                    if (null != e.author && T[e.author.id] === I.OGo.BLOCKED) return !0;
+                    if (e instanceof c.ZP) {
+                        if (this.isBlocked(null === (r = e.interactionMetadata) || void 0 === r ? void 0 : null === (i = r.user) || void 0 === i ? void 0 : i.id)) return !0
+                    } else if (this.isBlocked(null === (n = e.interaction_metadata) || void 0 === n ? void 0 : null === (t = n.user) || void 0 === t ? void 0 : t.id)) return !0;
+                    return !1
                 }
                 getPendingCount() {
-                    return S
-                }
-                getOutgoingCount() {
                     return f
                 }
-                getFriendCount() {
+                getOutgoingCount() {
                     return N
                 }
-                getRelationshipCount() {
+                getFriendCount() {
                     return A
                 }
+                getRelationshipCount() {
+                    return m
+                }
                 getRelationships() {
-                    return I
+                    return T
                 }
                 getRelationshipType(e) {
-                    let t = I[e];
-                    return null != t ? t : E.OGo.NONE
+                    let t = T[e];
+                    return null != t ? t : I.OGo.NONE
                 }
                 getNickname(e) {
-                    return T[e]
-                }
-                getSince(e) {
                     return h[e]
                 }
+                getSince(e) {
+                    return S[e]
+                }
                 getSinces() {
-                    return h
+                    return S
                 }
                 getFriendIDs() {
-                    return c.default.keys(I).filter(e => I[e] === E.OGo.FRIEND)
+                    return d.default.keys(T).filter(e => T[e] === I.OGo.FRIEND)
                 }
             }
-            o = "RelationshipStore", (s = "displayName") in(r = O) ? Object.defineProperty(r, s, {
+            o = "RelationshipStore", (s = "displayName") in(r = R) ? Object.defineProperty(r, s, {
                 value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = o, t.Z = new O(_.Z, {
+            }) : r[s] = o, t.Z = new R(_.Z, {
                 CONNECTION_OPEN: function(e) {
-                    I = {}, T = {}, h = {}, e.relationships.forEach(e => {
-                        I[e.id] = e.type, null != e.nickname && (T[e.id] = e.nickname), null != e.since && (h[e.id] = e.since)
-                    }), m()
+                    T = {}, h = {}, S = {}, e.relationships.forEach(e => {
+                        T[e.id] = e.type, null != e.nickname && (h[e.id] = e.nickname), null != e.since && (S[e.id] = e.since)
+                    }), O()
                 },
                 OVERLAY_INITIALIZE: function(e) {
-                    I = {
+                    T = {
                         ...e.relationships
-                    }, m()
+                    }, O()
                 },
                 RELATIONSHIP_ADD: function(e) {
-                    let t = I[e.relationship.id];
-                    I = {
-                        ...I,
-                        [e.relationship.id]: e.relationship.type
-                    }, null != e.relationship.nickname && (T = {
+                    let t = T[e.relationship.id];
+                    T = {
                         ...T,
-                        [e.relationship.id]: e.relationship.nickname
-                    }), null != e.relationship.since && (h = {
+                        [e.relationship.id]: e.relationship.type
+                    }, null != e.relationship.nickname && (h = {
                         ...h,
+                        [e.relationship.id]: e.relationship.nickname
+                    }), null != e.relationship.since && (S = {
+                        ...S,
                         [e.relationship.id]: e.relationship.since
-                    }), m(), e.relationship.type === E.OGo.FRIEND && t === E.OGo.PENDING_OUTGOING && _.Z.dispatch({
+                    }), O(), e.relationship.type === I.OGo.FRIEND && t === I.OGo.PENDING_OUTGOING && _.Z.dispatch({
                         type: "FRIEND_REQUEST_ACCEPTED",
                         user: e.relationship.user
                     })
                 },
                 RELATIONSHIP_REMOVE: function(e) {
-                    I = {
-                        ...I
-                    }, delete I[e.relationship.id], null != T[e.relationship.id] && (T = {
+                    T = {
                         ...T
-                    }, delete T[e.relationship.id]), null != h[e.relationship.id] && (h = {
+                    }, delete T[e.relationship.id], null != h[e.relationship.id] && (h = {
                         ...h
-                    }, delete h[e.relationship.id]), m()
+                    }, delete h[e.relationship.id]), null != S[e.relationship.id] && (S = {
+                        ...S
+                    }, delete S[e.relationship.id]), O()
                 },
                 RELATIONSHIP_UPDATE: function(e) {
-                    null == e.relationship.since ? delete h[e.relationship.id] : h[e.relationship.id] = e.relationship.since, null == e.relationship.nickname ? delete T[e.relationship.id] : T[e.relationship.id] = e.relationship.nickname
+                    null == e.relationship.since ? delete S[e.relationship.id] : S[e.relationship.id] = e.relationship.since, null == e.relationship.nickname ? delete h[e.relationship.id] : h[e.relationship.id] = e.relationship.nickname
                 },
                 RELATIONSHIP_PENDING_INCOMING_REMOVED: function(e) {
-                    I = {
-                        ...I
-                    }, c.default.keys(I).forEach(e => {
-                        I[e] === E.OGo.PENDING_INCOMING && delete I[e]
-                    }), m()
+                    T = {
+                        ...T
+                    }, d.default.keys(T).forEach(e => {
+                        T[e] === I.OGo.PENDING_INCOMING && delete T[e]
+                    }), O()
                 }
             })
         },
@@ -255930,7 +255889,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a80a3863ff88b3d6b46ba142040f66cb68b81401"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3ce8b4b1e3383f84dfad5299deb40ad650783cbe"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277670,7 +277629,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303018"
+                                build_number: "303026"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284982,7 +284941,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303018", "303018"), 10);
+                let s = parseInt((n = "303026", "303026"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -326485,4 +326444,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.cd5d54c0564a6bd722d2.js.map
+//# sourceMappingURL=25624.f0420125d7a377047939.js.map
