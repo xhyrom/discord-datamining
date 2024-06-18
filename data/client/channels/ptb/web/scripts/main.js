@@ -18516,7 +18516,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return f
+                    return A
                 }
             }), n(47120);
             var i, r = n(735250),
@@ -18526,13 +18526,15 @@
                 l = n(40851),
                 u = n(261922),
                 _ = n(926836),
-                c = n(956664),
-                d = n(506071),
-                E = n(503349),
-                I = n(689938),
-                T = n(381237);
+                c = n(626135),
+                d = n(956664),
+                E = n(506071),
+                I = n(981631),
+                T = n(503349),
+                h = n(689938),
+                S = n(381237);
 
-            function h(e, t, n) {
+            function f(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -18540,7 +18542,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            class S extends(i = s.PureComponent) {
+            class N extends(i = s.PureComponent) {
                 render() {
                     let {
                         appContext: e,
@@ -18555,17 +18557,17 @@
                     })
                 }
                 constructor(...e) {
-                    super(...e), h(this, "onMouseEnter", (e, t) => {
+                    super(...e), f(this, "onMouseEnter", (e, t) => {
                         let {
                             preloadImage: n
                         } = t, {
                             width: i,
                             height: r
                         } = this.props;
-                        n((0, c.zp)(i, r))
-                    }), h(this, "modalContext", (0, a.modalContextFromAppContext)(this.props.appContext)), h(this, "onCloseImage", () => {
-                        (0, a.closeModal)(E.c, this.modalContext)
-                    }), h(this, "onZoom", (e, t) => {
+                        n((0, d.zp)(i, r))
+                    }), f(this, "modalContext", (0, a.modalContextFromAppContext)(this.props.appContext)), f(this, "onCloseImage", () => {
+                        (0, a.closeModal)(T.c, this.modalContext)
+                    }), f(this, "onZoom", (e, t) => {
                         let {
                             zoomThumbnailPlaceholder: n,
                             trigger: i
@@ -18575,59 +18577,61 @@
                             alt: s,
                             src: l,
                             original: u,
-                            width: c,
-                            height: d,
-                            animated: h,
-                            children: S,
-                            renderLinkComponent: f,
-                            renderForwardComponent: N,
-                            isWindowFocused: A,
-                            shouldHideMediaOptions: m = !1
-                        } = this.props, O = {
+                            width: d,
+                            height: E,
+                            animated: f,
+                            children: N,
+                            renderLinkComponent: A,
+                            renderForwardComponent: m,
+                            isWindowFocused: O,
+                            shouldHideMediaOptions: R = !1
+                        } = this.props, p = {
                             alt: s,
                             src: l,
                             original: null != u ? u : l,
-                            width: c,
-                            height: d,
-                            animated: h,
-                            children: S,
+                            width: d,
+                            height: E,
+                            animated: f,
+                            children: N,
                             zoomThumbnailPlaceholder: n,
-                            renderLinkComponent: f,
-                            renderForwardComponent: N,
-                            onContextMenu: m ? e => {
+                            renderLinkComponent: A,
+                            renderForwardComponent: m,
+                            onContextMenu: R ? e => {
                                 e.stopPropagation(), e.preventDefault()
                             } : void 0,
                             trigger: i
                         };
-                        (0, o.k)(e.currentTarget) && e.currentTarget.blur(), (0, a.openModal)(e => (0, r.jsx)(a.ModalRoot, {
-                            className: T.modal,
+                        (0, o.k)(e.currentTarget) && e.currentTarget.blur(), c.default.track(I.rMx.OPEN_MODAL, {
+                            type: "Media Modal"
+                        }), (0, a.openModal)(e => (0, r.jsx)(a.ModalRoot, {
+                            className: S.modal,
                             ...e,
                             size: a.ModalSize.DYNAMIC,
-                            "aria-label": I.Z.Messages.IMAGE,
+                            "aria-label": h.Z.Messages.IMAGE,
                             children: (0, r.jsx)(_.y, {
-                                ...O,
-                                className: T.image,
-                                shouldAnimate: A,
+                                ...p,
+                                className: S.image,
+                                shouldAnimate: O,
                                 onClose: this.onCloseImage,
-                                shouldHideMediaOptions: m
+                                shouldHideMediaOptions: R
                             })
                         }), {
-                            modalKey: E.c
+                            modalKey: T.c
                         }, this.modalContext)
                     })
                 }
             }
 
-            function f(e) {
+            function A(e) {
                 let t = (0, l.bp)(),
-                    n = (0, d.n)();
-                return (0, r.jsx)(S, {
+                    n = (0, E.n)();
+                return (0, r.jsx)(N, {
                     ...e,
                     isWindowFocused: n,
                     appContext: t
                 })
             }
-            h(S, "defaultProps", {
+            f(N, "defaultProps", {
                 shouldLink: !0,
                 autoPlay: !1,
                 animated: !1
@@ -40504,7 +40508,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303026", ", Version Hash: ").concat("3ce8b4b1e3383f84dfad5299deb40ad650783cbe")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303052", ", Version Hash: ").concat("7a70925eed237b73500352b6f0833763da6807ae")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -94448,8 +94452,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303026", "303026"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303026")), t = 0), t
+                let t = parseInt((e = "303052", "303052"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303052")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122656,8 +122660,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303026",
-                    versionHash: "3ce8b4b1e3383f84dfad5299deb40ad650783cbe"
+                    buildNumber: "303052",
+                    versionHash: "7a70925eed237b73500352b6f0833763da6807ae"
                 }
             }
             n.d(t, {
@@ -178722,8 +178726,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718736599262",
-                                    build_number: "303026"
+                                    built_at: "1718738096626",
+                                    build_number: "303052"
                                 }
                             },
                             retries: 1
@@ -255889,7 +255893,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3ce8b4b1e3383f84dfad5299deb40ad650783cbe"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7a70925eed237b73500352b6f0833763da6807ae"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277629,7 +277633,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303026"
+                                build_number: "303052"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284941,7 +284945,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303026", "303026"), 10);
+                let s = parseInt((n = "303052", "303052"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -326444,4 +326448,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.f0420125d7a377047939.js.map
+//# sourceMappingURL=25624.373d37cf8a1cbe170cfc.js.map
