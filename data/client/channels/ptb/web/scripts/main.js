@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303166", ", Version Hash: ").concat("6469a4310ec9dd20f68ba8394f78a3ac259a2f23")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303175", ", Version Hash: ").concat("a12a3a94bb42601ecba50e896a082a5256f92016")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -46833,6 +46833,7 @@
                 OUTGOING_FRIEND_REQUEST_DELETE_MSG: "Are you sure you want to delete your friend request to **!!{name}!!**?",
                 FRIEND_REQUESTS_COMBINED_COUNT: "{incoming, number} received  •  {outgoing, number} sent",
                 INCOMING_FRIEND_REQUEST_ACCEPTED_SUBLABEL: "is now your friend!",
+                INCOMING_FRIEND_REQUEST_ACCEPTED_SUBLABEL_A11Y: "!!{name}!! is now your friend!",
                 BLOCK: "Block",
                 CONFIRM_USER_BLOCK_TITLE: "Block !!{name}!!?",
                 CONFIRM_USER_BLOCK_BODY: "Are you sure you want to block **!!{name}!!**? Blocking this user will also remove them from your friends list.",
@@ -95978,8 +95979,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303166", "303166"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303166")), t = 0), t
+                let t = parseInt((e = "303175", "303175"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303175")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124185,8 +124186,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303166",
-                    versionHash: "6469a4310ec9dd20f68ba8394f78a3ac259a2f23"
+                    buildNumber: "303175",
+                    versionHash: "a12a3a94bb42601ecba50e896a082a5256f92016"
                 }
             }
             n.d(t, {
@@ -180281,8 +180282,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718747742414",
-                                    build_number: "303166"
+                                    built_at: "1718748716916",
+                                    build_number: "303175"
                                 }
                             },
                             retries: 1
@@ -258255,7 +258256,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6469a4310ec9dd20f68ba8394f78a3ac259a2f23"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a12a3a94bb42601ecba50e896a082a5256f92016"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279241,7 +279242,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303166"
+                                build_number: "303175"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286553,7 +286554,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303166", "303166"), 10);
+                let s = parseInt((n = "303175", "303175"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328056,4 +328057,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.e3b4fcfe9cb5011b7db0.js.map
+//# sourceMappingURL=79892.51e57d979d6e5fecfd9f.js.map
