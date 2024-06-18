@@ -6901,9 +6901,9 @@
                         enabled: e
                     })
                 },
-                setHardwareH264(e) {
+                setHardwareEncoding(e) {
                     !S() && i.Z.dispatch({
-                        type: "MEDIA_ENGINE_SET_HARDWARE_H264",
+                        type: "MEDIA_ENGINE_SET_HARDWARE_ENCODING",
                         enabled: e
                     })
                 },
@@ -40501,7 +40501,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302984", ", Version Hash: ").concat("f478897aaaf971d80a02fd93f963c9b58307ac32")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302997", ", Version Hash: ").concat("5deb23b828a28a8c4601015572aab328fcf99bbc")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -49732,10 +49732,9 @@
                 USER_SETTINGS_VOICE_VIDEO_HOOK_LABEL: "Use our advanced technology to capture your screen",
                 USER_SETTINGS_VOICE_VIDEO_CODEC_TITLE: "Video Codec",
                 USER_SETTINGS_VOICE_OPEN_H264: "OpenH264 Video Codec provided by Cisco Systems, Inc.",
-                USER_SETTINGS_VOICE_HARDWARE_H264: "Hardware Acceleration",
+                USER_SETTINGS_VOICE_HARDWARE_ENCODING: "Hardware Acceleration",
                 USER_SETTINGS_VOICE_EXPERIMENTAL_SOUNDSHARE_LABEL: "Use an experimental method to capture audio from applications",
-                FORM_HELP_OPEN_H264: "Disabling OpenH264 may limit available codecs and degrade call quality.",
-                FORM_HELP_HARDWARE_H264: "Hardware acceleration uses your GPU for efficient video encoding and decoding, if available.",
+                FORM_HELP_HARDWARE_ENCODING: "Hardware acceleration uses your GPU for efficient video encoding and decoding, if available.",
                 FORM_HELP_VIDEO_HOOK: "Our signed DLL is injected into the application to capture frames.",
                 USERNAME: "Username",
                 USERNAME_AND_TAG: "Username and Tag",
@@ -54690,6 +54689,7 @@
                 PAYMENT_AUTHORIZING: "Authorizing",
                 PAYMENT_AUTHORIZATION_EXPIRED: "Payment authorization link has expired.",
                 PAYMENT_AUTH_SUCCEEDED_SUGGESTION: "If you followed this link after trying to make a purchase, please go back to the app to see the status of your purchase.",
+                PAYMENT_AUTHORIZED_SUCCEEDED_SUGGESTION: "If you followed this link after trying to make a purchase, please go back to the app and retry the purchase.",
                 PAYMENT_AUTH_EXPIRED_SUGGESTION: "Please try to make the purchase again.",
                 TEXT_IN_VOICE_ONBOARDING_TITLE: "NEW! Text chat in voice!",
                 TEXT_IN_VOICE_ONBOARDING_SUBTITLE: "No more clogging general. Send messages, images, and links to everyone in this voice channel.",
@@ -62444,7 +62444,7 @@
                                 participant_type: "sender",
                                 guild_region: B.Z.getRegion(this.hostname),
                                 hostname: this.hostname,
-                                hardware_enabled: G.Z.getHardwareH264(),
+                                hardware_enabled: G.Z.getHardwareEncoding(),
                                 ...t,
                                 ...e.getNetworkStats(),
                                 ...e.getCodecUsageStats("sender", this.userId),
@@ -62462,7 +62462,7 @@
                                 participant_type: "receiver",
                                 guild_region: B.Z.getRegion(this.hostname),
                                 hostname: this.hostname,
-                                hardware_enabled: G.Z.getHardwareH264(),
+                                hardware_enabled: G.Z.getHardwareEncoding(),
                                 ...r,
                                 ...e.getNetworkStats(),
                                 ...e.getCodecUsageStats("receiver", t)
@@ -62909,7 +62909,7 @@
                             participant_type: "receiver",
                             guild_region: B.Z.getRegion(this.hostname),
                             hostname: this.hostname,
-                            hardware_enabled: G.Z.getHardwareH264(),
+                            hardware_enabled: G.Z.getHardwareEncoding(),
                             ...t,
                             ...r.getNetworkStats(),
                             ...r.getCodecUsageStats("receiver", e)
@@ -80318,7 +80318,7 @@
                     inlineRequire: () => n(978684).Z
                 },
                 ClipsManager: {
-                    actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAME_TOGGLE_DETECTION", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
+                    actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAME_TOGGLE_DETECTION", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_ENCODING"],
                     inlineRequire: () => n(220122).Z
                 },
                 BroadcastingManager: {
@@ -94445,8 +94445,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302984", "302984"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302984")), t = 0), t
+                let t = parseInt((e = "302997", "302997"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302997")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115403,7 +115403,7 @@
                         CLIPS_RESTART: () => this.fireClipsInitEvent(),
                         RTC_CONNECTION_VIDEO: e => this.handleRTCConnectionVideo(e),
                         RTC_CONNECTION_STATE: e => this.handleRTCConnectionState(e),
-                        MEDIA_ENGINE_SET_HARDWARE_H264: e => this.handleMediaEngineSetHardwareH264(e)
+                        MEDIA_ENGINE_SET_HARDWARE_ENCODING: e => this.handleMediaEngineSetHardwareEncoding(e)
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -115612,7 +115612,7 @@
                 }
             }, e => {
                 var t;
-                let i = null === (t = n(131951).Z) || void 0 === t ? void 0 : t.getHardwareH264();
+                let i = null === (t = n(131951).Z) || void 0 === t ? void 0 : t.getHardwareEncoding();
                 return {
                     ...e,
                     clipsSettings: {
@@ -116517,7 +116517,7 @@
                         quality: t.clipsQuality
                     })
                 }
-                handleMediaEngineSetHardwareH264(e) {
+                handleMediaEngineSetHardwareEncoding(e) {
                     let {
                         enabled: t
                     } = e;
@@ -122716,8 +122716,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302984",
-                    versionHash: "f478897aaaf971d80a02fd93f963c9b58307ac32"
+                    buildNumber: "302997",
+                    versionHash: "5deb23b828a28a8c4601015572aab328fcf99bbc"
                 }
             }
             n.d(t, {
@@ -145081,7 +145081,7 @@
                             reason: e,
                             max_viewers: this.analyticsContext.maxViewers,
                             hostname: this.hostname,
-                            hardware_enabled: S.Z.getHardwareH264(),
+                            hardware_enabled: S.Z.getHardwareEncoding(),
                             device_performance_class: this.isOwner ? (0, c.R)() : null
                         })
                     }), o.getInboundParticipants().forEach(t => {
@@ -145100,7 +145100,7 @@
                             reason: e,
                             max_viewers: this.analyticsContext.maxViewers,
                             hostname: this.hostname,
-                            hardware_enabled: S.Z.getHardwareH264(),
+                            hardware_enabled: S.Z.getHardwareEncoding(),
                             device_performance_class: this.isOwner ? (0, c.R)() : null
                         })
                     })
@@ -178768,8 +178768,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718733493620",
-                                    build_number: "302984"
+                                    built_at: "1718735099864",
+                                    build_number: "302997"
                                 }
                             },
                             retries: 1
@@ -229239,7 +229239,7 @@
                     let t = (0, s.P)(d.default.getCurrentUser());
                     return {
                         video_device_name: null === (e = u.Z.getVideoDevices()[u.Z.getVideoDeviceId()]) || void 0 === e ? void 0 : e.name,
-                        video_hardware_scaling_enabled: u.Z.getHardwareH264(),
+                        video_hardware_scaling_enabled: u.Z.getHardwareEncoding(),
                         video_effect_type: (0, a.TA)(t),
                         video_effect_detail: (0, a.V$)(t)
                     }
@@ -241612,6 +241612,7 @@
                     experimentalEncoders: !1,
                     hardwareH264: !0,
                     hardwareEnabledVersion: 0,
+                    hardwareEncoding: null,
                     silenceWarning: !0,
                     attenuation: 0,
                     attenuateWhileSpeakingSelf: !1,
@@ -241993,61 +241994,62 @@
             class tm extends(l = h.ZP.Store) {
                 initialize() {
                     ep.on(S.aB.Connection, e => {
+                        var t, n;
                         let {
-                            maxSyncDelayOverride: t
+                            maxSyncDelayOverride: r
                         } = Z.Z.getCurrentConfig({
                             location: "f627ab_3"
                         }, {
                             autoTrackExposure: !1
                         });
-                        t > 0 && ep.setMaxSyncDelayOverride(t), e6(e), e9(e), tn(e);
-                        let n = e5();
-                        e.setAttenuation(n.attenuation, n.attenuateWhileSpeakingSelf, n.attenuateWhileSpeakingOthers), e.setQoS(n.qos), e.setExperimentalEncoders(n.experimentalEncoders), e.setHardwareH264(n.hardwareH264);
+                        r > 0 && ep.setMaxSyncDelayOverride(r), e6(e), e9(e), tn(e);
+                        let o = e5();
+                        e.setAttenuation(o.attenuation, o.attenuateWhileSpeakingSelf, o.attenuateWhileSpeakingOthers), e.setQoS(o.qos), e.setExperimentalEncoders(o.experimentalEncoders), e.setHardwareH264(null === (t = o.hardwareEncoding) || void 0 === t || t), e.setSoftwareH264(null === (n = o.openH264) || void 0 === n || n);
                         let {
-                            useExperimentalRateControl: r
+                            useExperimentalRateControl: a
                         } = Y.Z.getCurrentConfig({
                             location: "f627ab_4"
                         }, {
                             autoTrackExposure: !1
                         });
-                        r && e.setExperimentFlag(eh.V8.VIDEOTOOLBOX_RATE_CONTROL, !0);
-                        let o = eu.Z.getGuildId(),
+                        a && e.setExperimentFlag(eh.V8.VIDEOTOOLBOX_RATE_CONTROL, !0);
+                        let l = eu.Z.getGuildId(),
                             {
-                                muteBeforeProcessing: a,
-                                pttBeforeProcessing: l,
-                                skipEncode: u
-                            } = (null != o ? w.Z : G.Z).getCurrentConfig({
+                                muteBeforeProcessing: u,
+                                pttBeforeProcessing: _,
+                                skipEncode: c
+                            } = (null != l ? w.Z : G.Z).getCurrentConfig({
                                 location: "setupMediaEngine",
-                                ...null != o && {
-                                    guildId: o
+                                ...null != l && {
+                                    guildId: l
                                 }
                             }, {
                                 autoTrackExposure: !0
                             });
-                        a && e.setExperimentFlag(eh.V8.MUTE_BEFORE_PROCESSING, !0), l && e.setExperimentFlag(eh.V8.PTT_BEFORE_PROCESSING, !0), u && e.setExperimentFlag(eh.V8.SKIP_ENCODE, !0);
+                        u && e.setExperimentFlag(eh.V8.MUTE_BEFORE_PROCESSING, !0), _ && e.setExperimentFlag(eh.V8.PTT_BEFORE_PROCESSING, !0), c && e.setExperimentFlag(eh.V8.SKIP_ENCODE, !0);
                         let {
-                            resetOnErrors: _,
-                            fallbackOnErrors: c,
-                            fallbackOnConsecutiveErrors: d
+                            resetOnErrors: d,
+                            fallbackOnErrors: E,
+                            fallbackOnConsecutiveErrors: I
                         } = F.Z.getCurrentConfig({
                             location: "setupMediaEngine"
                         }, {
                             autoTrackExposure: !0
                         });
-                        _ && e.setExperimentFlag(eh.V8.RESET_DECODER_ON_ERRORS, !0), c && e.setExperimentFlag(eh.V8.SOFTWARE_FALLBACK_ON_ERRORS, !0), d && e.setExperimentFlag(eh.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS, !0);
+                        d && e.setExperimentFlag(eh.V8.RESET_DECODER_ON_ERRORS, !0), E && e.setExperimentFlag(eh.V8.SOFTWARE_FALLBACK_ON_ERRORS, !0), I && e.setExperimentFlag(eh.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS, !0);
                         e.context === eh.Yn.STREAM && ts() && e.setExperimentFlag(eh.V8.GOLIVE_SIMULCAST, !0), (0, ee.isWindows)() ? (null == e3 ? void 0 : e3.startsWith("NVIDIA")) ? e.setExperimentFlag(eh.V8.SIGNAL_AV1, !0) : (null == e3 ? void 0 : e3.startsWith("AMD")) && b.Z.getCurrentConfig({
                             location: "setupMediaEngine"
                         }, {
                             autoTrackExposure: !0
                         }).signalAV1Support ? e.setExperimentFlag(eh.V8.SIGNAL_AV1, !0) : e.setExperimentFlag(eh.V8.SIGNAL_AV1_DECODE, !0) : ((0, ee.isMac)() || (0, ee.isLinux)()) && e.setExperimentFlag(eh.V8.SIGNAL_AV1_DECODE, !0), (0, ee.isWindows)() && e.setExperimentFlag(eh.V8.SIGNAL_AV1_HARDWARE_DECODE, !0);
                         let {
-                            allowSettingFullbandAndroid: E
+                            allowSettingFullbandAndroid: T
                         } = V.Z.getCurrentConfig({
                             location: "f627ab_14"
                         }, {
                             autoTrackExposure: !0
                         });
-                        if (E && ep.setHasFullbandPerformance((0, L.b)()), e.setRemoteAudioHistory(0), (0, C.Z)(i)) {
+                        if (T && ep.setHasFullbandPerformance((0, L.b)()), e.setRemoteAudioHistory(0), (0, C.Z)(i)) {
                             let t = g.Z.getSettings();
                             e.setExperimentFlag(eh.V8.STREAMER_CLIP, t.clipsEnabled);
                             let {
@@ -242067,13 +242069,13 @@
                             });
                             e.setQualityDecoupling(i)
                         }
-                        for (let t of (n = e5(e.context), e.setPostponeDecodeLevel(100), Object.keys(n.localMutes))) t !== er.default.getId() && e.setLocalMute(t, n.localMutes[t]);
-                        for (let t of Object.keys(n.localVolumes)) t !== er.default.getId() && e.setLocalVolume(t, n.localVolumes[t]);
-                        for (let t of Object.keys(n.localPans)) {
-                            let i = n.localPans[t];
-                            e.setLocalPan(t, i.left, i.right)
+                        for (let t of (o = e5(e.context), e.setPostponeDecodeLevel(100), Object.keys(o.localMutes))) t !== er.default.getId() && e.setLocalMute(t, o.localMutes[t]);
+                        for (let t of Object.keys(o.localVolumes)) t !== er.default.getId() && e.setLocalVolume(t, o.localVolumes[t]);
+                        for (let t of Object.keys(o.localPans)) {
+                            let n = o.localPans[t];
+                            e.setLocalPan(t, n.left, n.right)
                         }
-                        for (let t of Object.keys(n.disabledLocalVideos)) e.setLocalVideoDisabled(t, n.disabledLocalVideos[t]);
+                        for (let t of Object.keys(o.disabledLocalVideos)) e.setLocalVideoDisabled(t, o.disabledLocalVideos[t]);
                         e.on(S.Sh.Speaking, (t, n) => {
                             A.Z.dispatch({
                                 type: "SPEAKING",
@@ -242104,11 +242106,11 @@
                                 type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
                             })))
                         });
-                        let I = new N.V7;
+                        let h = new N.V7;
                         e.on(S.Sh.SoundshareTrace, e => {
                             switch (e.type) {
                                 case "soundshare_attach_requested":
-                                    I.start(e7, () => {
+                                    h.start(e7, () => {
                                         A.Z.dispatch({
                                             type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                                             errorMessage: "Sound Hook Failed"
@@ -242119,14 +242121,14 @@
                                     let t = e.reason,
                                         n = e.code,
                                         i = e.retry;
-                                    (null == s ? void 0 : s.desktopSource) != null && (tt(null == s ? void 0 : s.desktopSource, n, t, i), !i && (I.stop(), A.Z.wait(() => A.Z.dispatch({
+                                    (null == s ? void 0 : s.desktopSource) != null && (tt(null == s ? void 0 : s.desktopSource, n, t, i), !i && (h.stop(), A.Z.wait(() => A.Z.dispatch({
                                         type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                                         errorMessage: t,
                                         errorCode: n
                                     }))));
                                     break;
                                 case "soundshare_state_transition":
-                                    4 === e.newState && (I.stop(), A.Z.wait(() => A.Z.dispatch({
+                                    4 === e.newState && (h.stop(), A.Z.wait(() => A.Z.dispatch({
                                         type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
                                     })))
                             }
@@ -242180,7 +242182,7 @@
                                 context: e.context
                             })
                         }), e.on(S.Sh.Destroy, () => {
-                            I.stop()
+                            h.stop()
                         }), e.setBitRate(es.Z.bitrate), e.applyVideoQualityMode(ec.Z.mode)
                     }), ep.on(S.aB.DeviceChange, (e, t, n) => {
                         A.Z.dispatch({
@@ -242259,11 +242261,12 @@
                                 if (E().defaultsDeep(e, eR()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, ei.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && 4 !== e.vadUseKrispSettingVersion && (e.vadUseKrispSettingVersion = 4, e.modeOptions.vadUseKrisp = !0), !e.qosMigrated && (e.qosMigrated = !0, e.qos = !1), !e.vadThrehsoldMigrated) {
                                     var t;
                                     e.vadThrehsoldMigrated = !0, (null === (t = e.modeOptions) || void 0 === t ? void 0 : t.threshold) === -40 && (e.modeOptions.threshold = -60)
-                                }(0, ee.isWeb)() ? 1 !== e.ncUseKrispjsSettingVersion && (e.ncUseKrispjsSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0): 1 !== e.ncUseKrispSettingVersion && (e.ncUseKrispSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0), 1 !== e.hardwareEnabledVersion && (e.hardwareH264 = !0, e.hardwareEnabledVersion = 1)
+                                }(0, ee.isWeb)() ? 1 !== e.ncUseKrispjsSettingVersion && (e.ncUseKrispjsSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0): 1 !== e.ncUseKrispSettingVersion && (e.ncUseKrispSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0), 1 !== e.hardwareEnabledVersion && (e.hardwareH264 = !0, e.hardwareEnabledVersion = 1), null == e.hardwareEncoding && (e.hardwareEncoding = e.hardwareH264)
                             }),
                             function() {
-                                let e = e5();
-                                ep.setAudioInputDevice(e.inputDeviceId), ep.setAudioOutputDevice(e.outputDeviceId), te(), ep.setInputVolume(e.inputVolume), ep.setOutputVolume(e.outputVolume), ep.setH264Enabled(e.openH264), ep.setAv1Enabled(e.hardwareH264), ep.setH265Enabled(e.hardwareH264), ep.setAecDump(e.aecDumpEnabled)
+                                var e, t, n;
+                                let i = e5();
+                                ep.setAudioInputDevice(i.inputDeviceId), ep.setAudioOutputDevice(i.outputDeviceId), te(), ep.setInputVolume(i.inputVolume), ep.setOutputVolume(i.outputVolume), ep.setH264Enabled(null === (e = i.hardwareEncoding) || void 0 === e || e || i.openH264), ep.setAv1Enabled(null === (t = i.hardwareEncoding) || void 0 === t || t), ep.setH265Enabled(null === (n = i.hardwareEncoding) || void 0 === n || n), ep.setAecDump(i.aecDumpEnabled)
                             }()
                     }(), ((0, ee.isWindows)() || (0, ee.isLinux)() || (0, ee.isMac)() && T().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, ">=21.0.0")) && !__OVERLAY__ && !eK && !ez ? (eK = !0, tN()) : (0, ee.isWeb)() && ep.supports(eh.AN.NOISE_CANCELLATION) ? (ez = !0, i.emitChange()) : (0, ee.isWeb)() && ta({
                         noiseCancellation: !1
@@ -242495,8 +242498,9 @@
                 getExperimentalEncoders() {
                     return e5().experimentalEncoders
                 }
-                getHardwareH264() {
-                    return e5().hardwareH264
+                getHardwareEncoding() {
+                    var e;
+                    return null === (e = e5().hardwareEncoding) || void 0 === e || e
                 }
                 getEnableSilenceWarning() {
                     return e5().silenceWarning
@@ -243075,15 +243079,22 @@
                     } = e, n = ta({
                         openH264: t
                     });
-                    ep.setH264Enabled(n.openH264)
+                    ep.setH264Enabled(n.hardwareEncoding || n.openH264), ep.eachConnection(e => {
+                        var t;
+                        return e.setSoftwareH264(null === (t = n.openH264) || void 0 === t || t)
+                    })
                 },
-                MEDIA_ENGINE_SET_HARDWARE_H264: function(e) {
+                MEDIA_ENGINE_SET_HARDWARE_ENCODING: function(e) {
+                    var t, n;
                     let {
-                        enabled: t
-                    } = e, n = ta({
-                        hardwareH264: t
+                        enabled: i
+                    } = e, r = ta({
+                        hardwareEncoding: i
                     });
-                    ep.eachConnection(e => e.setHardwareH264(n.hardwareH264)), ep.setAv1Enabled(n.hardwareH264), ep.setH265Enabled(n.hardwareH264)
+                    ep.eachConnection(e => {
+                        var t;
+                        return e.setHardwareH264(null === (t = r.hardwareEncoding) || void 0 === t || t)
+                    }), ep.setH264Enabled(r.hardwareEncoding || r.openH264), ep.setAv1Enabled(null === (t = r.hardwareEncoding) || void 0 === t || t), ep.setH265Enabled(null === (n = r.hardwareEncoding) || void 0 === n || n)
                 },
                 APP_STATE_UPDATE: function(e) {
                     let {
@@ -255915,7 +255926,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f478897aaaf971d80a02fd93f963c9b58307ac32"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5deb23b828a28a8c4601015572aab328fcf99bbc"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277655,7 +277666,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302984"
+                                build_number: "302997"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284967,7 +284978,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302984", "302984"), 10);
+                let s = parseInt((n = "302997", "302997"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -312445,6 +312456,11 @@
                         hardwareH264: this.hardwareH264
                     })
                 }
+                setSoftwareH264(e) {
+                    this.softwareH264 = e, this.conn.setTransportOptions({
+                        softwareH264: this.softwareH264
+                    })
+                }
                 setQoS(e) {
                     this.qos = e, this.conn.setTransportOptions({
                         qos: this.qos
@@ -312725,7 +312741,8 @@
                         "level-asymmetry-allowed": "1",
                         "packetization-mode": "1",
                         "profile-level-id": "android" === (0, N.zS)().platform ? "42e01f" : "4d0033",
-                        "hardware-h264": this.hardwareH264 && this.useElectronVideo && m.Z.useDirectVideo ? "1" : "0"
+                        "hardware-h264": this.hardwareH264 && this.useElectronVideo && m.Z.useDirectVideo ? "1" : "0",
+                        "software-h264": this.softwareH264 ? "1" : "0"
                     }
                 }
                 getCodecOptions(e, t, n) {
@@ -312798,6 +312815,7 @@
                         encodingVideoDegradationPreference: this.videoDegradationPreference,
                         experimentalEncoders: this.experimentalEncoders,
                         hardwareH264: this.hardwareH264,
+                        softwareH264: this.softwareH264,
                         reconnectInterval: this.reconnectInterval
                     };
                     return (0, N.eJ)(R.eR.VIDEO_EFFECTS) && this.context === R.Yn.STREAM && (e.enableVideoEffects = !0), this.experimentFlags.has(O.V8.MUTE_BEFORE_PROCESSING) && (e.muteBeforeProcessing = !0), this.experimentFlags.has(O.V8.PTT_BEFORE_PROCESSING) && (e.pttBeforeProcessing = !0), this.experimentFlags.has(O.V8.SKIP_ENCODE) && (e.skipEncode = !0), e
@@ -312839,7 +312857,7 @@
                     null === (i = (r = this.conn).processMLSWelcome) || void 0 === i || i.call(r, e, t, n)
                 }
                 constructor(e, t, n) {
-                    super(e, t), p(this, "mediaEngineConnectionId", "Native-".concat(g++)), p(this, "goLiveSourceIdentifier", void 0), p(this, "selfMute", !1), p(this, "selfVideo", !1), p(this, "forceAudioNormal", !1), p(this, "forceAudioPriority", !1), p(this, "codecs", []), p(this, "videoEncoderFallbackPending", !1), p(this, "desktopDegradationPreference", (0, N.zS)().DegradationPreference.MAINTAIN_FRAMERATE), p(this, "sourceDesktopDegradationPreference", (0, N.zS)().DegradationPreference.DISABLED), p(this, "videoDegradationPreference", (0, N.zS)().DegradationPreference.BALANCED), p(this, "localPans", {}), p(this, "remoteAudioSSRCs", {}), p(this, "remoteVideoSSRCs", {}), p(this, "inputMode", R.pM.VOICE_ACTIVITY), p(this, "vadThreshold", -40), p(this, "vadAutoThreshold", !0), p(this, "vadUseKrisp", !0), p(this, "vadLeading", 5), p(this, "vadTrailing", 25), p(this, "pttReleaseDelay", 20), p(this, "soundshareActive", !1), p(this, "soundshareId", null), p(this, "soundshareSentSpeakingEvent", !1), p(this, "echoCancellation", !0), p(this, "noiseSuppression", !0), p(this, "automaticGainControl", !0), p(this, "noiseCancellation", !1), p(this, "experimentalEncoders", !1), p(this, "hardwareH264", !0), p(this, "attenuationFactor", .5), p(this, "attenuateWhileSpeakingSelf", !1), p(this, "attenuateWhileSpeakingOthers", !0), p(this, "qos", !0), p(this, "conn", void 0), p(this, "minimumJitterBufferLevel", 0), p(this, "postponeDecodeLevel", 100), p(this, "reconnectInterval", 6e4), p(this, "keyframeInterval", 0), p(this, "clipsKeyFrameInterval", 0), p(this, "videoQualityMeasurement", ""), p(this, "videoEncoderExperiments", ""), p(this, "numFastUdpReconnects", 0), p(this, "logger", void 0), p(this, "handleSpeakingNative", (e, t) => {
+                    super(e, t), p(this, "mediaEngineConnectionId", "Native-".concat(g++)), p(this, "goLiveSourceIdentifier", void 0), p(this, "selfMute", !1), p(this, "selfVideo", !1), p(this, "forceAudioNormal", !1), p(this, "forceAudioPriority", !1), p(this, "codecs", []), p(this, "videoEncoderFallbackPending", !1), p(this, "desktopDegradationPreference", (0, N.zS)().DegradationPreference.MAINTAIN_FRAMERATE), p(this, "sourceDesktopDegradationPreference", (0, N.zS)().DegradationPreference.DISABLED), p(this, "videoDegradationPreference", (0, N.zS)().DegradationPreference.BALANCED), p(this, "localPans", {}), p(this, "remoteAudioSSRCs", {}), p(this, "remoteVideoSSRCs", {}), p(this, "inputMode", R.pM.VOICE_ACTIVITY), p(this, "vadThreshold", -40), p(this, "vadAutoThreshold", !0), p(this, "vadUseKrisp", !0), p(this, "vadLeading", 5), p(this, "vadTrailing", 25), p(this, "pttReleaseDelay", 20), p(this, "soundshareActive", !1), p(this, "soundshareId", null), p(this, "soundshareSentSpeakingEvent", !1), p(this, "echoCancellation", !0), p(this, "noiseSuppression", !0), p(this, "automaticGainControl", !0), p(this, "noiseCancellation", !1), p(this, "experimentalEncoders", !1), p(this, "hardwareH264", !0), p(this, "softwareH264", !0), p(this, "attenuationFactor", .5), p(this, "attenuateWhileSpeakingSelf", !1), p(this, "attenuateWhileSpeakingOthers", !0), p(this, "qos", !0), p(this, "conn", void 0), p(this, "minimumJitterBufferLevel", 0), p(this, "postponeDecodeLevel", 100), p(this, "reconnectInterval", 6e4), p(this, "keyframeInterval", 0), p(this, "clipsKeyFrameInterval", 0), p(this, "videoQualityMeasurement", ""), p(this, "videoEncoderExperiments", ""), p(this, "numFastUdpReconnects", 0), p(this, "logger", void 0), p(this, "handleSpeakingNative", (e, t) => {
                         let n = R.Dg.NONE;
                         n = "boolean" == typeof t ? t ? R.Dg.VOICE : R.Dg.NONE : t, this.handleSpeakingFlags(e, n)
                     }), p(this, "handleNativeMuteToggled", () => {
@@ -315074,6 +315092,7 @@
                 setLocalPan(e, t, n) {}
                 setExperimentalEncoders(e) {}
                 setHardwareH264(e) {}
+                setSoftwareH264(e) {}
                 setQoS(e) {}
                 isAttenuating() {
                     return !1
@@ -326415,4 +326434,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.7407b9d686f29e941f97.js.map
+//# sourceMappingURL=25624.7e1a116d7f3f84ece420.js.map
