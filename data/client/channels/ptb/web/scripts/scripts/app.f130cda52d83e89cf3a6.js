@@ -2294,7 +2294,6 @@
                 spinnerContainer: "spinnerContainer_f09e45",
                 filterError: "filterError_f09e45",
                 poster: "poster_f09e45",
-                posterClickable: "posterClickable_f09e45",
                 posterBackground: "posterBackground_f09e45",
                 posterTextParent: "posterTextParent_f09e45",
                 posterText: "posterText_f09e45",
@@ -2683,18 +2682,18 @@
                 container: "container_cf2302"
             })
         },
-        844330: function(e, t, n) {
-            n.r(e.exports = {
-                header: "header_fc162f",
-                appGrid: "appGrid_fc162f",
-                viewMore: "viewMore_fc162f"
-            })
-        },
         245199: function(e, t, n) {
             n.r(e.exports = {
                 container: "container_c7c1c7",
                 searchBarContainer: "searchBarContainer_c7c1c7",
-                scrollableContent: "scrollableContent_c7c1c7"
+                scrollableContent: "scrollableContent_c7c1c7",
+                sectionContentContainer: "sectionContentContainer_c7c1c7"
+            })
+        },
+        255610: function(e, t, n) {
+            n.r(e.exports = {
+                header: "header_b7ba1b",
+                viewMore: "viewMore_b7ba1b"
             })
         },
         54674: function(e, t, n) {
@@ -2702,6 +2701,30 @@
                 container: "container_fb1469",
                 image: "image_fb1469",
                 body: "body_fb1469"
+            })
+        },
+        776344: function(e, t, n) {
+            n.r(e.exports = {
+                icon: "icon_e3c63c",
+                underline: "underline_e3c63c",
+                container: "container_e3c63c",
+                appDetails: "appDetails_e3c63c"
+            })
+        },
+        870979: function(e, t, n) {
+            n.r(e.exports = {
+                container: "container_f3112b",
+                underline: "underline_f3112b",
+                icon: "icon_f3112b",
+                cmdDetails: "cmdDetails_f3112b",
+                cmdAppName: "cmdAppName_f3112b"
+            })
+        },
+        117874: function(e, t, n) {
+            n.r(e.exports = {
+                sectionContentContainer: "sectionContentContainer_d193fc",
+                emptyStateContainer: "emptyStateContainer_d193fc",
+                emptyStateImage: "emptyStateImage_d193fc"
             })
         },
         274017: function(e, t, n) {
@@ -8018,10 +8041,12 @@
                 content: "content_e881fc",
                 section: "section_e881fc",
                 gameProfileModal: "gameProfileModal_e881fc",
-                hero: "hero_e881fc",
+                gameArtHero: "gameArtHero_e881fc",
+                gameArtBackground: "gameArtBackground_e881fc",
+                gameHeroGradient: "gameHeroGradient_e881fc",
+                headerInfo: "headerInfo_e881fc",
                 logoWrapper: "logoWrapper_e881fc",
                 logo: "logo_e881fc",
-                headerInfo: "headerInfo_e881fc",
                 followButton: "followButton_e881fc",
                 gameDetails: "gameDetails_e881fc",
                 mainContent: "mainContent_e881fc",
