@@ -6247,6 +6247,10 @@ html .progress_e5f4c6 {
     margin-bottom: var(--spacing-16)
 }
 
+.container_e31053:hover>.text_e31053 {
+    text-decoration: underline
+}
+
 .container_f66b8e {
     display: flex;
     width: 100%
@@ -141625,4 +141629,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6e60ac53dd6fe988587e.css.map*/
+/*# sourceMappingURL=99387.0ebc775fe57a2adb37d7.css.map*/
