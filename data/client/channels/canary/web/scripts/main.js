@@ -40501,7 +40501,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302974", ", Version Hash: ").concat("a8266b6141e1c82ea58401fffd8af7b1c2448df1")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302984", ", Version Hash: ").concat("f478897aaaf971d80a02fd93f963c9b58307ac32")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42500,7 +42500,7 @@
                 EMBEDDED_ACTIVITIES_BOOSTING_BADGE_TOOLTIP: "Activities below require a LVL {tier} Boost",
                 EMBEDDED_ACTIVITIES_MOBILE_ACTIVITIES_SOON_HEADER: "More activities coming soon to mobile",
                 EMBEDDED_ACTIVITIES_MOBILE_ACTIVITIES_SOON_SUBHEADER: "All Activities are available on Desktop!",
-                EMBEDDED_ACTIVITIES_ACTIVITIES_AVAILABLE_IN_TEXT: "Activities now available in text chat",
+                EMBEDDED_ACTIVITIES_ACTIVITIES_AVAILABLE_IN_TEXT: "Activities now available in text chats",
                 EMBEDDED_ACTIVITIES_TUNE_IN_PROMO_BANNER_ALT: "TuneIn app now available!",
                 USE_EMBEDDED_ACTIVITIES: "Use Activities",
                 EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS: "You do not have permissions to use Activities in this channel.",
@@ -94445,8 +94445,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302974", "302974"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302974")), t = 0), t
+                let t = parseInt((e = "302984", "302984"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302984")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122716,8 +122716,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302974",
-                    versionHash: "a8266b6141e1c82ea58401fffd8af7b1c2448df1"
+                    buildNumber: "302984",
+                    versionHash: "f478897aaaf971d80a02fd93f963c9b58307ac32"
                 }
             }
             n.d(t, {
@@ -178768,8 +178768,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718732816188",
-                                    build_number: "302974"
+                                    built_at: "1718733493620",
+                                    build_number: "302984"
                                 }
                             },
                             retries: 1
@@ -255915,7 +255915,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a8266b6141e1c82ea58401fffd8af7b1c2448df1"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f478897aaaf971d80a02fd93f963c9b58307ac32"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277655,7 +277655,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302974"
+                                build_number: "302984"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284967,7 +284967,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302974", "302974"), 10);
+                let s = parseInt((n = "302984", "302984"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -326415,4 +326415,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.45bbd3d71dd7db95420b.js.map
+//# sourceMappingURL=25624.7407b9d686f29e941f97.js.map

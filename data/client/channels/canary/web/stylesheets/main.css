@@ -95874,7 +95874,8 @@ html .invoiceCancelRow_e0a971 {
 .posterText_f09e45 {
     align-content: center;
     align-self: center;
-    text-shadow: 2px 2px black
+    text-shadow: 2px 2px black;
+    color: #eee
 }
 
 .posterDivider_f09e45 {
@@ -141629,4 +141630,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3c3f61d58c2bcdf0dbda.css.map*/
+/*# sourceMappingURL=99387.0f894b33ba3b21ee7133.css.map*/
