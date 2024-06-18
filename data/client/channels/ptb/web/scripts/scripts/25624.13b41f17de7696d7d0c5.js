@@ -40501,7 +40501,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302904", ", Version Hash: ").concat("1b81f194d52646ed70d88216fb810649cd033ec1")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302914", ", Version Hash: ").concat("cc703dc2b22abed162d95f86737f13f867b0ad8e")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -59882,6 +59882,8 @@
                 E2EE_END_TO_END_ENCRYPTED: "End-to-end encrypted",
                 E2EE_PRIVACY_CODE: "Privacy Code",
                 E2EE_CHECK_PRIVACY_CODE: "Check this call's privacy code",
+                E2EE_VERIFIED: "Verified",
+                E2EE_USERNAME_VERIFIED: "{username} verified!",
                 E2EE_USER_VERIFICATION_SUBTITLE: "Compare the numbers below with {username}. If they match, mark them as verified.",
                 E2EE_USER_VERIFICATION_FOOTER_TEXT: "A new code is generated when either of you join a call or change devices. [Learn more about end-to-end encryption.]({helpArticle})",
                 E2EE_RTC_PANEL_CALL_VERIFICATION_SUBTITLE: "Only you and your friends on this call can hear you. Nobody else – not even Wumpus – can listen in!",
@@ -94441,8 +94443,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302904", "302904"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302904")), t = 0), t
+                let t = parseInt((e = "302914", "302914"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302914")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122712,8 +122714,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302904",
-                    versionHash: "1b81f194d52646ed70d88216fb810649cd033ec1"
+                    buildNumber: "302914",
+                    versionHash: "cc703dc2b22abed162d95f86737f13f867b0ad8e"
                 }
             }
             n.d(t, {
@@ -178764,8 +178766,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718722272746",
-                                    build_number: "302904"
+                                    built_at: "1718727574113",
+                                    build_number: "302914"
                                 }
                             },
                             retries: 1
@@ -215967,7 +215969,7 @@
                     CDN_HOST: n
                 } = window.GLOBAL_ENV;
                 return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(T.ANM.BADGE_ICON(e))
-            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (r = _ || (_ = {})).ROLES = "ROLES", r.NOTE = "NOTE", (s = c || (c = {})).POPOUT = "POPOUT", s.MODAL = "MODAL", s.SETTINGS = "SETTINGS", s.PANEL = "PANEL", s.CARD = "CARD", s.POMELO_POPOUT = "POMELO_POPOUT", s.CANCEL_MODAL = "CANCEL_MODAL", s.BITE_SIZE = "BITE_SIZE", s.FULL_SIZE = "FULL_SIZE", (o = d || (d = {})).POPOUT = "POPOUT", o.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", o.MODAL = "MODAL", o.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", o.DM_PANEL = "DM_PANEL", o.SIMPLIFIED_DM_PANEL = "SIMPLIFIED_DM_PANEL", o.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", o.ACTION_SHEET = "ACTION_SHEET", o.SIMPLIFIED_ACCOUNT_POPOUT = "SIMPLIFIED_ACCOUNT_POPOUT", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (l = I || (I = {})).VIEW = "VIEW", l.SEND_MESSAGE = "SEND_MESSAGE", l.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", l.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", l.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", l.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", l.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", l.REMOVE_FRIEND = "REMOVE_FRIEND", l.BLOCK = "BLOCK", l.UNBLOCK = "UNBLOCK", l.REPORT = "REPORT", l.COPY_USERNAME = "COPY_USERNAME", l.COPY_USER_ID = "COPY_USER_ID", l.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", l.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", l.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", l.PRESS_OPTIONS = "PRESS_OPTIONS", l.HOVER_BADGE = "HOVER_BADGE", l.PRESS_BADGE = "PRESS_BADGE", l.PRESS_SECTION = "PRESS_SECTION", l.PRESS_PRONOUNS = "PRESS_PRONOUNS", l.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", l.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", l.PRESS_SET_STATUS = "PRESS_SET_STATUS", l.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", l.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", l.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", l.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", l.JOIN_ACTIVITY = "JOIN_ACTIVITY", l.SET_NOTE = "SET_NOTE", l.SET_VOLUME = "SET_VOLUME", l.EDIT_PROFILE = "EDIT_PROFILE", l.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", l.VOICE_CALL = "VOICE_CALL", l.VIDEO_CALL = "VIDEO_CALL", l.MUTE = "MUTE", l.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", l.DISABLE_VIDEO = "DISABLE_VIDEO", l.DEAFEN = "DEAFEN", l.DISCONNECT = "DISCONNECT", l.ADD_ROLE = "ADD_ROLE", l.REMOVE_ROLE = "REMOVE_ROLE", l.PRESS_APP_CONNECTION = "PRESS_APP_CONNECTION"
+            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (r = _ || (_ = {})).ROLES = "ROLES", r.NOTE = "NOTE", (s = c || (c = {})).POPOUT = "POPOUT", s.MODAL = "MODAL", s.SETTINGS = "SETTINGS", s.PANEL = "PANEL", s.CARD = "CARD", s.POMELO_POPOUT = "POMELO_POPOUT", s.CANCEL_MODAL = "CANCEL_MODAL", s.BITE_SIZE = "BITE_SIZE", s.FULL_SIZE = "FULL_SIZE", (o = d || (d = {})).POPOUT = "POPOUT", o.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", o.MODAL = "MODAL", o.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", o.DM_PANEL = "DM_PANEL", o.SIMPLIFIED_DM_PANEL = "SIMPLIFIED_DM_PANEL", o.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", o.ACTION_SHEET = "ACTION_SHEET", o.SIMPLIFIED_ACCOUNT_POPOUT = "SIMPLIFIED_ACCOUNT_POPOUT", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (l = I || (I = {})).VIEW = "VIEW", l.SEND_MESSAGE = "SEND_MESSAGE", l.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", l.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", l.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", l.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", l.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", l.REMOVE_FRIEND = "REMOVE_FRIEND", l.BLOCK = "BLOCK", l.UNBLOCK = "UNBLOCK", l.REPORT = "REPORT", l.COPY_USERNAME = "COPY_USERNAME", l.COPY_USER_ID = "COPY_USER_ID", l.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", l.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", l.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", l.PRESS_OPTIONS = "PRESS_OPTIONS", l.HOVER_BADGE = "HOVER_BADGE", l.PRESS_BADGE = "PRESS_BADGE", l.PRESS_SECTION = "PRESS_SECTION", l.PRESS_PRONOUNS = "PRESS_PRONOUNS", l.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", l.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", l.PRESS_SET_STATUS = "PRESS_SET_STATUS", l.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", l.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", l.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", l.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", l.JOIN_ACTIVITY = "JOIN_ACTIVITY", l.SET_NOTE = "SET_NOTE", l.SET_VOLUME = "SET_VOLUME", l.EDIT_PROFILE = "EDIT_PROFILE", l.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", l.VOICE_CALL = "VOICE_CALL", l.VIDEO_CALL = "VIDEO_CALL", l.MUTE = "MUTE", l.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", l.DISABLE_VIDEO = "DISABLE_VIDEO", l.DEAFEN = "DEAFEN", l.DISCONNECT = "DISCONNECT", l.ADD_ROLE = "ADD_ROLE", l.REMOVE_ROLE = "REMOVE_ROLE", l.PRESS_APP_CONNECTION = "PRESS_APP_CONNECTION", l.VIEW_SECURE_FRAMES_VERIFICATION_CODE = "VIEW_SECURE_FRAMES_VERIFICATION_CODE"
         },
         255564: function(e, t, n) {
             "use strict";
@@ -255911,7 +255913,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1b81f194d52646ed70d88216fb810649cd033ec1"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cc703dc2b22abed162d95f86737f13f867b0ad8e"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277651,7 +277653,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302904"
+                                build_number: "302914"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284963,7 +284965,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302904", "302904"), 10);
+                let s = parseInt((n = "302914", "302914"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -326406,4 +326408,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.3a75b51824ceb3e68ddc.js.map
+//# sourceMappingURL=25624.13b41f17de7696d7d0c5.js.map
