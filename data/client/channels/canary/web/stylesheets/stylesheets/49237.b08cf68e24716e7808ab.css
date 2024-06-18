@@ -10775,8 +10775,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .redesignIconChildContainer_ff7d90>svg {
-    width: 12px;
-    height: 12px
+    width: 10px;
+    height: 10px
 }
 
 .background_db1980 {
@@ -10800,8 +10800,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .staff_db1980 .icon_db1980 {
-    width: 75%;
-    height: 75%
+    width: 60%;
+    height: 60%
 }
 
 .partnered_db1980 {
@@ -10963,14 +10963,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     text-overflow: ellipsis;
     overflow: hidden;
     position: relative
-}
-
-.full-motion .arrow_d64d50 {
-    transition: transform.2s ease-out
-}
-
-.arrow_d64d50.open_d64d50 {
-    transform: translate3d(0, -3px, 0)rotate(180deg)
 }
 
 .gifTag_b30195 {
@@ -16695,10 +16687,6 @@ h6.title_f54cce {
     min-width: 16px;
     border-radius: 8px;
     padding: 0 4px
-}
-
-.hidden_e7ec69 {
-    visibility: hidden
 }
 
 .divider_fc5f50 {
@@ -27332,4 +27320,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.e0ca86c7bd0d142780f5.css.map*/
+/*# sourceMappingURL=49237.b08cf68e24716e7808ab.css.map*/
