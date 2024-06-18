@@ -2089,11 +2089,6 @@
                 overlayContentHidden: "overlayContentHidden_f316dd"
             }
         },
-        6829: function(e, a, t) {
-            e.exports = {
-                wrapper: "wrapper_a7c28c"
-            }
-        },
         77351: function(e, a, t) {
             e.exports = {
                 nameTag: "nameTag_be84f0",
@@ -2861,48 +2856,6 @@
                 size20: "size20_fb468f",
                 size24: "size24_fb468f",
                 size32: "size32_fb468f"
-            }
-        },
-        504649: function(e, a, t) {
-            e.exports = {
-                icon: "icon_b52c3f",
-                name: "name_b52c3f",
-                iconMentionText: "iconMentionText_b52c3f"
-            }
-        },
-        816184: function(e, a, t) {
-            e.exports = {
-                icon: "icon_d5d194",
-                textIcon: "textIcon_d5d194",
-                imageIcon: "imageIcon_d5d194",
-                name: "name_d5d194"
-            }
-        },
-        590095: function(e, a, t) {
-            e.exports = {
-                icon: "icon_c14a32"
-            }
-        },
-        343956: function(e, a, t) {
-            e.exports = {
-                icon: "icon_da3997"
-            }
-        },
-        54239: function(e, a, t) {
-            e.exports = {
-                nowrap: "nowrap_c74e8c"
-            }
-        },
-        361029: function(e, a, t) {
-            e.exports = {
-                jumboContainer: "jumboContainer_bf9443",
-                jumboOverlay: "jumboOverlay_bf9443",
-                playing: "playing_bf9443",
-                container: "container_bf9443",
-                emoji: "emoji_bf9443",
-                jumboEmoji: "jumboEmoji_bf9443",
-                text: "text_bf9443",
-                unknownSound: "unknownSound_bf9443"
             }
         },
         862903: function(e, a, t) {
