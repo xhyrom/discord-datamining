@@ -18529,10 +18529,11 @@
                 _ = n(926836),
                 d = n(956664),
                 c = n(506071),
-                E = n(689938),
-                I = n(381237);
+                E = n(503349),
+                I = n(689938),
+                T = n(381237);
 
-            function T(e, t, n) {
+            function h(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -18540,7 +18541,6 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let h = "Zoomed Lazy Image Modal";
             class S extends(i = s.PureComponent) {
                 render() {
                     let {
@@ -18556,7 +18556,7 @@
                     })
                 }
                 constructor(...e) {
-                    super(...e), T(this, "onMouseEnter", (e, t) => {
+                    super(...e), h(this, "onMouseEnter", (e, t) => {
                         let {
                             preloadImage: n
                         } = t, {
@@ -18564,9 +18564,9 @@
                             height: r
                         } = this.props;
                         n((0, d.zp)(i, r))
-                    }), T(this, "modalContext", (0, a.modalContextFromAppContext)(this.props.appContext)), T(this, "onCloseImage", () => {
-                        (0, a.closeModal)(h, this.modalContext)
-                    }), T(this, "onZoom", (e, t) => {
+                    }), h(this, "modalContext", (0, a.modalContextFromAppContext)(this.props.appContext)), h(this, "onCloseImage", () => {
+                        (0, a.closeModal)(E.c, this.modalContext)
+                    }), h(this, "onZoom", (e, t) => {
                         let {
                             zoomThumbnailPlaceholder: n,
                             trigger: i
@@ -18578,40 +18578,42 @@
                             original: u,
                             width: d,
                             height: c,
-                            animated: T,
+                            animated: h,
                             children: S,
                             renderLinkComponent: f,
-                            isWindowFocused: N,
-                            shouldHideMediaOptions: A = !1
-                        } = this.props, m = {
+                            renderForwardComponent: N,
+                            isWindowFocused: A,
+                            shouldHideMediaOptions: m = !1
+                        } = this.props, O = {
                             alt: s,
                             src: l,
                             original: null != u ? u : l,
                             width: d,
                             height: c,
-                            animated: T,
+                            animated: h,
                             children: S,
                             zoomThumbnailPlaceholder: n,
                             renderLinkComponent: f,
-                            onContextMenu: A ? e => {
+                            renderForwardComponent: N,
+                            onContextMenu: m ? e => {
                                 e.stopPropagation(), e.preventDefault()
                             } : void 0,
                             trigger: i
                         };
                         (0, o.k)(e.currentTarget) && e.currentTarget.blur(), (0, a.openModal)(e => (0, r.jsx)(a.ModalRoot, {
-                            className: I.modal,
+                            className: T.modal,
                             ...e,
                             size: a.ModalSize.DYNAMIC,
-                            "aria-label": E.Z.Messages.IMAGE,
+                            "aria-label": I.Z.Messages.IMAGE,
                             children: (0, r.jsx)(_.y, {
-                                ...m,
-                                className: I.image,
-                                shouldAnimate: N,
+                                ...O,
+                                className: T.image,
+                                shouldAnimate: A,
                                 onClose: this.onCloseImage,
-                                shouldHideMediaOptions: A
+                                shouldHideMediaOptions: m
                             })
                         }), {
-                            modalKey: h
+                            modalKey: E.c
                         }, this.modalContext)
                     })
                 }
@@ -18626,7 +18628,7 @@
                     appContext: t
                 })
             }
-            T(S, "defaultProps", {
+            h(S, "defaultProps", {
                 shouldLink: !0,
                 autoPlay: !1,
                 animated: !1
@@ -40452,7 +40454,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, d.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302829", ", Version Hash: ").concat("2746b4f3cb0d6eae5e15fc1c904e5bfc74bb9bb9")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302859", ", Version Hash: ").concat("fdbdae48a8963fc8d7d1ca05008f7f621e678fdd")), i.Z.setTags({
                 appContext: h.e3s
             }), c.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -94393,8 +94395,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302829", "302829"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302829")), t = 0), t
+                let t = parseInt((e = "302859", "302859"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302859")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122676,8 +122678,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302829",
-                    versionHash: "2746b4f3cb0d6eae5e15fc1c904e5bfc74bb9bb9"
+                    buildNumber: "302859",
+                    versionHash: "fdbdae48a8963fc8d7d1ca05008f7f621e678fdd"
                 }
             }
             n.d(t, {
@@ -123212,7 +123214,7 @@
                 u = n(31336),
                 _ = n(19759);
             let d = (0, s.Un)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("39709"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("33053"), n.e("11250"), n.e("6380"), n.e("8016"), n.e("57878"), n.e("4970"), n.e("77172"), n.e("67535"), n.e("32493"), n.e("95393"), n.e("86977"), n.e("68136"), n.e("18101"), n.e("81539"), n.e("90508"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("4934"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("22646"), n.e("38779"), n.e("55207"), n.e("12549"), n.e("15357"), n.e("83256"), n.e("46388"), n.e("87624"), n.e("47403"), n.e("5528"), n.e("44517"), n.e("39072"), n.e("43331"), n.e("11623"), n.e("97403"), n.e("30419"), n.e("18824"), n.e("49508"), n.e("27385"), n.e("31649"), n.e("30634"), n.e("44388"), n.e("75308"), n.e("54807"), n.e("81312")]).then(n.bind(n, 678717)),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("39709"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("6380"), n.e("33053"), n.e("11250"), n.e("8016"), n.e("57878"), n.e("4970"), n.e("77172"), n.e("67535"), n.e("32493"), n.e("95393"), n.e("86977"), n.e("68136"), n.e("18101"), n.e("81539"), n.e("90508"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("4934"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("22646"), n.e("38779"), n.e("55207"), n.e("12549"), n.e("15357"), n.e("83256"), n.e("46388"), n.e("87624"), n.e("47403"), n.e("5528"), n.e("44517"), n.e("39072"), n.e("43331"), n.e("11623"), n.e("97403"), n.e("30419"), n.e("18824"), n.e("49508"), n.e("27385"), n.e("31649"), n.e("30634"), n.e("44388"), n.e("75308"), n.e("54807"), n.e("81312")]).then(n.bind(n, 678717)),
                 webpackId: 678717
             });
 
@@ -171767,6 +171769,15 @@
                 })
             })
         },
+        503349: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                c: function() {
+                    return i
+                }
+            });
+            let i = "Zoomed Lazy Image Modal"
+        },
         874748: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -177090,8 +177101,9 @@
                     imageContainerClassName: a,
                     disableAltTextDisplay: u = !1,
                     mediaLayoutType: _,
-                    imageContainerStyle: d
-                } = e, c = _ === j.hV.MOSAIC, I = !u && C.H1.getSetting() && null != t && "" !== t && !0 !== n, T = e => {
+                    imageContainerStyle: d,
+                    renderForwardComponent: c
+                } = e, I = _ === j.hV.MOSAIC, T = !u && C.H1.getSetting() && null != t && "" !== t && !0 !== n, S = e => {
                     let {
                         altText: t
                     } = e;
@@ -177101,7 +177113,7 @@
                         onKeyDown: e => {
                             e.key === F.mR.Escape && setTimeout(() => {
                                 var e;
-                                return null === (e = S.current) || void 0 === e ? void 0 : e.focus()
+                                return null === (e = f.current) || void 0 === e ? void 0 : e.focus()
                             }, 0)
                         },
                         children: [(0, s.jsx)("span", {
@@ -177112,7 +177124,7 @@
                             children: t
                         })]
                     })
-                }, S = o.createRef();
+                }, f = o.createRef();
                 return (0, s.jsxs)("div", {
                     className: l()(K.imageContent, r),
                     children: [(0, s.jsxs)("div", {
@@ -177120,13 +177132,14 @@
                         style: d,
                         children: [(0, s.jsx)(h.Z, {
                             ...e,
-                            renderLinkComponent: et
+                            renderLinkComponent: et,
+                            renderForwardComponent: null != c ? c : H.VqG
                         }), null != i && i()]
-                    }), c && I && (0, s.jsx)("div", {
+                    }), I && T && (0, s.jsx)("div", {
                         className: K.mediaMosaicAltTextContainer,
                         children: (0, s.jsx)(E.Popout, {
                             animation: E.Popout.Animation.FADE,
-                            renderPopout: () => (0, s.jsx)(T, {
+                            renderPopout: () => (0, s.jsx)(S, {
                                 altText: t
                             }),
                             children: e => (0, s.jsx)(E.FocusRing, {
@@ -177134,14 +177147,14 @@
                                 children: (0, s.jsx)("button", {
                                     ...e,
                                     type: "button",
-                                    ref: S,
+                                    ref: f,
                                     "aria-label": W.Z.Messages.MEDIA_MOSAIC_ALT_TEXT_POPOUT_TITLE,
                                     className: K.mediaMosaicAltText,
                                     children: W.Z.Messages.MEDIA_MOSAIC_ALT_TEXT_CTA
                                 })
                             })
                         })
-                    }), !c && I && (0, s.jsx)("span", {
+                    }), !I && T && (0, s.jsx)("span", {
                         className: K.altText,
                         children: t
                     })]
@@ -178699,8 +178712,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718671425211",
-                                    build_number: "302829"
+                                    built_at: "1718675224503",
+                                    build_number: "302859"
                                 }
                             },
                             retries: 1
@@ -255823,7 +255836,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2746b4f3cb0d6eae5e15fc1c904e5bfc74bb9bb9"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "fdbdae48a8963fc8d7d1ca05008f7f621e678fdd"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -259730,10 +259743,10 @@
             "use strict";
             n.d(t, {
                 K: function() {
-                    return R
+                    return C
                 },
                 y: function() {
-                    return O
+                    return R
                 }
             }), n(47120);
             var i = n(735250),
@@ -259812,6 +259825,26 @@
             function O(e) {
                 let {
                     src: t,
+                    renderLinkComponent: n,
+                    renderForwardComponent: r
+                } = e, s = n({
+                    href: t,
+                    target: "_blank",
+                    rel: "noreferrer noopener",
+                    className: N.downloadLink,
+                    children: f.Z.Messages.OPEN_IN_BROWSER
+                }), o = r({
+                    className: N.forward
+                });
+                return null == s && null == o ? null : (0, i.jsxs)("div", {
+                    className: N.optionsContainer,
+                    children: [s, o]
+                })
+            }
+
+            function R(e) {
+                let {
+                    src: t,
                     original: n,
                     placeholder: s,
                     width: o,
@@ -259820,31 +259853,32 @@
                     children: _,
                     responsive: E,
                     renderLinkComponent: T,
-                    maxWidth: h,
-                    maxHeight: O,
-                    shouldAnimate: R,
-                    onClose: C,
-                    shouldHideMediaOptions: p = !1,
-                    obscure: g = !1,
-                    ...L
+                    renderForwardComponent: h,
+                    maxWidth: f,
+                    maxHeight: R,
+                    shouldAnimate: C,
+                    onClose: p,
+                    shouldHideMediaOptions: g = !1,
+                    obscure: L = !1,
+                    ...v
                 } = e, {
-                    width: v,
-                    height: D
-                } = (0, c.zp)(o, l), M = a.tq && null != C;
+                    width: D,
+                    height: M
+                } = (0, c.zp)(o, l), P = a.tq && null != p;
                 r.useEffect(() => {
-                    if (null != C) return d.S.subscribe(S.CkL.MEDIA_MODAL_CLOSE, C), () => {
-                        d.S.unsubscribe(S.CkL.MEDIA_MODAL_CLOSE, C)
+                    if (null != p) return d.S.subscribe(S.CkL.MEDIA_MODAL_CLOSE, p), () => {
+                        d.S.unsubscribe(S.CkL.MEDIA_MODAL_CLOSE, p)
                     }
-                }, [C]);
-                let P = p ? e => {
+                }, [p]);
+                let y = g ? e => {
                     e.stopPropagation(), e.preventDefault()
-                } : L.onContextMenu;
+                } : v.onContextMenu;
                 return (0, i.jsxs)("div", {
                     className: N.wrapper,
-                    children: [M ? (0, i.jsx)(A, {
-                        onClose: C
+                    children: [P ? (0, i.jsx)(A, {
+                        onClose: p
                     }) : null, (0, i.jsx)(m, {
-                        isObscured: g,
+                        isObscured: L,
                         src: t,
                         children: e => (0, i.jsx)(I.Z, {
                             src: t,
@@ -259852,70 +259886,67 @@
                             shouldLink: !1,
                             width: o,
                             height: l,
-                            maxWidth: v,
-                            maxHeight: D,
+                            maxWidth: D,
+                            maxHeight: M,
                             children: _,
                             animated: !e && u,
                             autoPlay: !e,
                             responsive: E,
-                            onContextMenu: P,
-                            ...L
+                            onContextMenu: y,
+                            ...v
                         }, t)
-                    }), null != n && !p && T({
-                        href: n,
-                        target: "_blank",
-                        rel: "noreferrer noopener",
-                        className: N.downloadLink,
-                        children: f.Z.Messages.OPEN_IN_BROWSER
+                    }), null == n || g ? null : (0, i.jsx)(O, {
+                        src: n,
+                        renderLinkComponent: T,
+                        renderForwardComponent: h
                     })]
                 })
             }
 
-            function R(e) {
+            function C(e) {
                 let {
                     src: t,
                     width: n,
                     height: r,
                     onClose: s,
                     renderLinkComponent: l,
-                    shouldHideMediaOptions: u = !1,
-                    obscure: _ = !1,
-                    ...d
+                    renderForwardComponent: u,
+                    shouldHideMediaOptions: _ = !1,
+                    obscure: d = !1,
+                    ...I
                 } = e, {
-                    width: I,
-                    height: h
-                } = (0, c.zp)(n, r), S = a.tq && null != s, O = u ? e => {
+                    width: h,
+                    height: S
+                } = (0, c.zp)(n, r), f = a.tq && null != s, R = _ ? e => {
                     e.stopPropagation(), e.preventDefault()
-                } : d.onContextMenu;
+                } : I.onContextMenu;
                 return (0, i.jsxs)("div", {
                     className: o()(N.wrapper, N.videoWrapper),
-                    children: [S ? (0, i.jsx)(A, {
+                    children: [f ? (0, i.jsx)(A, {
                         onClose: s
                     }) : null, (0, i.jsx)(m, {
                         hasMediaControls: !0,
-                        isObscured: _,
+                        isObscured: d,
                         src: t,
                         children: e => (0, i.jsx)(T.Z, {
                             src: t,
                             width: n,
                             height: r,
-                            maxWidth: I,
-                            maxHeight: h,
+                            maxWidth: h,
+                            maxHeight: S,
                             renderLinkComponent: l,
                             volume: E.FC,
                             autoMute: E.rs,
                             onVolumeChange: E.jA,
                             onMute: E.Zj,
                             autoPlay: !e,
-                            onContextMenu: O,
-                            ...d
+                            onContextMenu: R,
+                            ...I
                         }, t)
-                    }), !u && l({
-                        href: t,
-                        target: "_blank",
-                        rel: "noreferrer noopener",
-                        className: N.downloadLink,
-                        children: f.Z.Messages.OPEN_IN_BROWSER
+                    }), _ ? null : (0, i.jsx)(O, {
+                        src: t,
+                        renderLinkComponent: l,
+                        renderForwardComponent: u
                     })]
                 })
             }
@@ -284285,7 +284316,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302829"
+                                build_number: "302859"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (d.user_id = c.id, d.user_name = c.tag, null != c.email && (d.email = c.email));
@@ -291597,7 +291628,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302829", "302829"), 10);
+                let s = parseInt((n = "302859", "302859"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -319494,4 +319525,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.ccc2ac3d7c3b3c011ae3.js.map
+//# sourceMappingURL=25624.8920dc34b27552126756.js.map

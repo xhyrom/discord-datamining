@@ -6247,6 +6247,10 @@ html .progress_e5f4c6 {
     margin-bottom: var(--spacing-16)
 }
 
+.container_e31053:hover>.text_e31053 {
+    text-decoration: underline
+}
+
 .container_f66b8e {
     display: flex;
     width: 100%
@@ -63760,8 +63764,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -141625,4 +141629,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0747ed18fac646ee0b57.css.map*/
+/*# sourceMappingURL=99387.0ebc775fe57a2adb37d7.css.map*/
