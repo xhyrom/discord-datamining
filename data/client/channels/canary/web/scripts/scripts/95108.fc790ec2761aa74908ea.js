@@ -40644,7 +40644,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303152", ", Version Hash: ").concat("95dd175f5a631cf28ce0cadf1c23a08bdf3f8d34")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303153", ", Version Hash: ").concat("aaa2ddff2f63038833378e504bf99620315912ac")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -95958,8 +95958,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303152", "303152"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303152")), t = 0), t
+                let t = parseInt((e = "303153", "303153"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303153")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124166,8 +124166,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303152",
-                    versionHash: "95dd175f5a631cf28ce0cadf1c23a08bdf3f8d34"
+                    buildNumber: "303153",
+                    versionHash: "aaa2ddff2f63038833378e504bf99620315912ac"
                 }
             }
             n.d(t, {
@@ -138574,10 +138574,10 @@
                 o = n(981631);
 
             function a(e) {
-                var t, n, i;
+                var t;
                 if ((null === (t = e.message_reference) || void 0 === t ? void 0 : t.type) !== o.Uvt.FORWARD) return;
-                let s = null === (n = e.message_snapshots) || void 0 === n ? void 0 : n[0];
-                if (null != s && (null === (i = s.guild) || void 0 === i ? void 0 : i.id) != null)(0, r.Q)(s.guild.id)
+                let n = e.message_reference.guild_id;
+                if (null != n)(0, r.Q)(n)
             }
             class l extends i.Z {
                 constructor() {
@@ -147342,7 +147342,7 @@
                 a = n(981631);
             let l = new Set;
             async function u(e) {
-                if (null == s.Z.getGuild(e) && null == o.Z.getGuild(e)) {
+                if (null == s.Z.getGuild(e) && null == o.Z.getGuildOrStatus(e)) {
                     if (!l.has(e)) {
                         r.Z.dispatch({
                             type: "BASIC_GUILD_FETCH",
@@ -147350,8 +147350,7 @@
                         }), l.add(e);
                         try {
                             let t = (await i.tn.get({
-                                url: a.ANM.GUILD_BASIC(e),
-                                oldFormErrors: !0
+                                url: a.ANM.GUILD_BASIC(e)
                             })).body;
                             r.Z.dispatch({
                                 type: "BASIC_GUILD_FETCH_SUCCESS",
@@ -147378,6 +147377,12 @@
                 _ = {};
             class c extends(o = a.ZP.Store) {
                 getGuild(e) {
+                    let t = _[e];
+                    if (null != t) {
+                        if (!("type" in t)) return t
+                    }
+                }
+                getGuildOrStatus(e) {
                     return _[e]
                 }
                 getVersion() {
@@ -147390,11 +147395,19 @@
                 configurable: !0,
                 writable: !0
             }) : i[r] = s, t.Z = new c(l.Z, {
-                BASIC_GUILD_FETCH: function(e) {},
+                BASIC_GUILD_FETCH: function(e) {
+                    return _[e.guildId] = {
+                        type: "loading"
+                    }, !1
+                },
                 BASIC_GUILD_FETCH_SUCCESS: function(e) {
                     _[e.guildId] = e.guildInfo, u++
                 },
-                BASIC_GUILD_FETCH_FAILURE: function(e) {}
+                BASIC_GUILD_FETCH_FAILURE: function(e) {
+                    return _[e.guildId] = {
+                        type: "failed"
+                    }, !1
+                }
             })
         },
         372900: function(e, t, n) {
@@ -176530,12 +176543,10 @@
             function D(e) {
                 return null == e.message_snapshots ? [] : e.message_snapshots.map(e => {
                     let {
-                        message: t,
-                        guild: n
+                        message: t
                     } = e;
                     return new _.Hx({
-                        message: m(t),
-                        guild: n
+                        message: m(t)
                     })
                 })
             }
@@ -180251,8 +180262,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718746922396",
-                                    build_number: "303152"
+                                    built_at: "1718746948953",
+                                    build_number: "303153"
                                 }
                             },
                             retries: 1
@@ -234287,7 +234298,7 @@
             }
             class E extends r.Z {
                 constructor(e) {
-                    super(), c(this, "message", void 0), c(this, "guild", void 0), this.guild = e.guild, this.message = new d(e.message)
+                    super(), c(this, "message", void 0), this.message = new d(e.message)
                 }
             }
             t.ZP = class e extends d {
@@ -258225,7 +258236,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "95dd175f5a631cf28ce0cadf1c23a08bdf3f8d34"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "aaa2ddff2f63038833378e504bf99620315912ac"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279211,7 +279222,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303152"
+                                build_number: "303153"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286523,7 +286534,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303152", "303152"), 10);
+                let s = parseInt((n = "303153", "303153"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328026,4 +328037,4 @@
         }
     }
 ]);
-//# sourceMappingURL=95108.89c549f361765edcdfe2.js.map
+//# sourceMappingURL=95108.fc790ec2761aa74908ea.js.map
