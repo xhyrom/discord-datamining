@@ -2746,59 +2746,6 @@
                 sliderVisible: "sliderVisible_c30bea"
             })
         },
-        266275: function(e, a, t) {
-            t.r(e.exports = {
-                discordLogo: "discordLogo_dc6abe",
-                authBox: "authBox_dc6abe",
-                authBoxExpanded: "authBoxExpanded_dc6abe authBox_dc6abe",
-                centeringWrapper: "centeringWrapper_dc6abe",
-                title: "title_dc6abe",
-                subText: "subText_dc6abe",
-                pill: "pill_dc6abe",
-                pillOnline: "pillOnline_dc6abe",
-                pillMessage: "pillMessage_dc6abe",
-                pillIconTotal: "pillIconTotal_dc6abe pillIcon_dc6abe",
-                pillIconOnline: "pillIconOnline_dc6abe pillIcon_dc6abe",
-                pillFlat: "pillFlat_dc6abe",
-                joiningAs: "joiningAs_dc6abe",
-                joiningAsAvatar: "joiningAsAvatar_dc6abe",
-                joiningAsUsername: "joiningAsUsername_dc6abe",
-                spinnerVideo: "spinnerVideo_dc6abe",
-                image: "image_dc6abe",
-                block: "block_dc6abe",
-                button: "button_dc6abe",
-                linkButton: "linkButton_dc6abe",
-                inviteIcon: "inviteIcon_dc6abe",
-                inviteLargeIcon: "inviteLargeIcon_dc6abe inviteIcon_dc6abe",
-                downloadButtonSubtext: "downloadButtonSubtext_dc6abe",
-                inputError: "inputError_dc6abe",
-                description: "description_dc6abe"
-            })
-        },
-        265835: function(e, a, t) {
-            t.r(e.exports = {
-                logo: "logo_fde715"
-            })
-        },
-        477830: function(e, a, t) {
-            t.r(e.exports = {
-                canvas: "canvas_a950cf",
-                fallbackImage: "fallbackImage_a950cf",
-                visible: "visible_a950cf",
-                embedded: "embedded_a950cf"
-            })
-        },
-        271225: function(e, a, t) {
-            t.r(e.exports = {
-                wrapper: "wrapper_a50b20 " + t("842648").scrollbarGhost,
-                rightSplit: "rightSplit_a50b20",
-                embedded: "embedded_a50b20",
-                leftSplit: "leftSplit_a50b20",
-                nonEmbeddedLeftSplit: "nonEmbeddedLeftSplit_a50b20",
-                mobileWave: "mobileWave_a50b20",
-                logo: "logo_a50b20"
-            })
-        },
         414497: function(e, a, t) {
             t.r(e.exports = {
                 modal: "modal_ec75c1",
