@@ -9089,12 +9089,8 @@ html .progress_e5f4c6 {
     width: 100%
 }
 
-.embedContainer_b558d0 .embedWrapper_b558d0 {
+.embedContainer_b558d0 .richEmbedWrapper_b558d0 {
     flex-grow: 1
-}
-
-.embedContainer_b558d0 .inlineEmbedWrapper_b558d0 {
-    flex-grow: 0
 }
 
 .boostedGuildIconGem_d4a69b {
@@ -63915,8 +63911,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -141809,4 +141805,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.424e51138dee42b04e7c.css.map*/
+/*# sourceMappingURL=99387.d8c127261c5e46e93774.css.map*/
