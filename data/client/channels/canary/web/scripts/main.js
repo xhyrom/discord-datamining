@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["95108"], {
+    ["79892"], {
         385007: function(e, t, n) {
             var i = {
                 "./de.jsona": ["644753", "30244"],
@@ -4463,6 +4463,26 @@
             r.keys = function() {
                 return Object.keys(i)
             }, r.resolve = s, e.exports = r, r.id = "207653"
+        },
+        205480: function(e) {
+            "use strict";
+            e.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBjbGlwLXBhdGg9InVybCgjYSkiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJtMCAwIDUgMiAxLjUgNEg3VjBIMFptMCAxMyA1LTIgMS41LTRIN3Y2SDBaIiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTYuNDIzIDYuNUM2LjQyMyAzLjMxMiAzLjc4My43NTYuNS41MThjMy4zODYuMjM2IDYgMi44NTUgNiA1Ljk4MiAwIDMuMTI3LTIuNjE0IDUuNzQ2LTYgNS45ODN2LS4wMDFjMy4yODQtLjIzNyA1LjkyMy0yLjc5NCA1LjkyMy01Ljk4MloiIHN0cm9rZT0iI0Q0RDlEQiIvPjxwYXRoIGZpbGw9IiNENEQ5REIiIGQ9Ik0wIDBoMXYxSDB6TTAgMTJoMXYxSDB6Ii8+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iYSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGg3djEzSDB6Ii8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
+        },
+        393019: function(e) {
+            "use strict";
+            e.exports = "data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.195 6.565a1 1 0 0 0 1.6 0l2.992-3.98a1 1 0 0 0-.8-1.602H1.013a1 1 0 0 0-.8 1.6l2.983 3.982Z' fill='%23687282'/%3E%3C/svg%3E"
+        },
+        55273: function(e) {
+            "use strict";
+            e.exports = "data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.195 6.565a1 1 0 0 0 1.6 0l2.992-3.98a1 1 0 0 0-.8-1.602H1.013a1 1 0 0 0-.8 1.6l2.983 3.982Z' fill='%23B9C4C9'/%3E%3C/svg%3E"
+        },
+        720759: function(e) {
+            "use strict";
+            e.exports = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath fill='%2300112C' d='M6.5 11.9a4.5 4.5 0 0 0 2.6-.83l2.77 2.74c.13.13.3.19.48.19.38 0 .65-.29.65-.66a.63.63 0 0 0-.19-.46l-2.75-2.73a4.4 4.4 0 0 0 .92-2.7 4.48 4.48 0 0 0-8.98 0 4.48 4.48 0 0 0 4.5 4.45Zm0-.96a3.53 3.53 0 0 1-3.53-3.49 3.52 3.52 0 0 1 7.04 0c0 1.9-1.59 3.49-3.52 3.49Z'/%3E%3C/svg%3E"
+        },
+        919015: function(e) {
+            "use strict";
+            e.exports = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath fill='%23687282' d='M6.5 11.9a4.5 4.5 0 0 0 2.6-.83l2.77 2.74c.13.13.3.19.48.19.38 0 .65-.29.65-.66a.63.63 0 0 0-.19-.46l-2.75-2.73a4.4 4.4 0 0 0 .92-2.7 4.48 4.48 0 0 0-8.98 0 4.48 4.48 0 0 0 4.5 4.45Zm0-.96a3.53 3.53 0 0 1-3.53-3.49 3.52 3.52 0 0 1 7.04 0c0 1.9-1.59 3.49-3.52 3.49Z'/%3E%3C/svg%3E"
         },
         433764: function(e) {
             "use strict";
@@ -40644,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303153", ", Version Hash: ").concat("aaa2ddff2f63038833378e504bf99620315912ac")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303166", ", Version Hash: ").concat("6469a4310ec9dd20f68ba8394f78a3ac259a2f23")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -95958,8 +95978,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303153", "303153"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303153")), t = 0), t
+                let t = parseInt((e = "303166", "303166"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303166")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -118118,21 +118138,20 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return a
+                    return o
                 }
             }), n(47120), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817);
             var i = n(512722),
                 r = n.n(i),
-                s = n(735630),
-                o = n.n(s);
-            async function a(e) {
+                s = n(735630);
+            async function o(e) {
                 let t;
-                let n = o().createFile(!1),
+                let n = s.createFile(!1),
                     i = new Promise(e => {
                         n.onReady = e
                     }),
-                    s = await e.arrayBuffer();
-                for (let e of (s.fileStart = 0, n.appendBuffer(s), n.flush(), await i, r()(null != n.boxes, "mp4boxInputFile.boxes should not be null after parsing"), n.boxes)) "uuid" === e.type && (t = e.start);
+                    o = await e.arrayBuffer();
+                for (let e of (o.fileStart = 0, n.appendBuffer(o), n.flush(), await i, r()(null != n.boxes, "mp4boxInputFile.boxes should not be null after parsing"), n.boxes)) "uuid" === e.type && (t = e.start);
                 let a = e.slice(0, t, e.type),
                     l = e.slice(t + 4, t + 8 + 16, e.type);
                 return new Blob([a, new Uint8Array([0, 0, 0, 24]), l], {
@@ -124166,8 +124185,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303153",
-                    versionHash: "aaa2ddff2f63038833378e504bf99620315912ac"
+                    buildNumber: "303166",
+                    versionHash: "6469a4310ec9dd20f68ba8394f78a3ac259a2f23"
                 }
             }
             n.d(t, {
@@ -180262,8 +180281,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718746948953",
-                                    build_number: "303153"
+                                    built_at: "1718747742414",
+                                    build_number: "303166"
                                 }
                             },
                             retries: 1
@@ -258236,7 +258255,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "aaa2ddff2f63038833378e504bf99620315912ac"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6469a4310ec9dd20f68ba8394f78a3ac259a2f23"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279222,7 +279241,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303153"
+                                build_number: "303166"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286534,7 +286553,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303153", "303153"), 10);
+                let s = parseInt((n = "303166", "303166"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328037,4 +328056,4 @@
         }
     }
 ]);
-//# sourceMappingURL=95108.fc790ec2761aa74908ea.js.map
+//# sourceMappingURL=79892.e3b4fcfe9cb5011b7db0.js.map
