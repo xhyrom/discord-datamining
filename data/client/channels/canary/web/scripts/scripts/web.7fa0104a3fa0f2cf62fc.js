@@ -11,14 +11,14 @@
             544140: function(e, a, t) {
                 var c = t(796581),
                     d = t(149912);
-                e.exports = function e(a, t, n, i, o) {
-                    var f = -1,
+                e.exports = function e(a, t, n, i, f) {
+                    var o = -1,
                         r = a.length;
-                    for (n || (n = d), o || (o = []); ++f < r;) {
-                        var b = a[f];
-                        t > 0 && n(b) ? t > 1 ? e(b, t - 1, n, i, o) : c(o, b) : !i && (o[o.length] = b)
+                    for (n || (n = d), f || (f = []); ++o < r;) {
+                        var b = a[o];
+                        t > 0 && n(b) ? t > 1 ? e(b, t - 1, n, i, f) : c(f, b) : !i && (f[f.length] = b)
                     }
-                    return o
+                    return f
                 }
             },
             149912: function(e, a, t) {
@@ -43,10 +43,10 @@
                 var d = t(266067),
                     n = t(442837),
                     i = t(353926),
-                    o = t(314897),
-                    f = t(981631);
-                a.Z = n.ZP.connectStores([i.Z, o.default], () => {
-                    let e = o.default.getToken();
+                    f = t(314897),
+                    o = t(981631);
+                a.Z = n.ZP.connectStores([i.Z, f.default], () => {
+                    let e = f.default.getToken();
                     return {
                         token: e,
                         hasLoadedExperiments: null != e || i.Z.hasLoadedExperiments
@@ -57,9 +57,9 @@
                         token: t
                     } = e;
                     return null != t ? (0, c.jsx)(d.l_, {
-                        to: f.Z5c.APP
+                        to: o.Z5c.APP
                     }) : a ? (0, c.jsx)(d.l_, {
-                        to: f.Z5c.DEFAULT_LOGGED_OUT
+                        to: o.Z5c.DEFAULT_LOGGED_OUT
                     }) : null
                 })
             },
@@ -69,14 +69,14 @@
                     d = t(470079),
                     n = t(120356),
                     i = t.n(n),
-                    o = t(715702),
-                    f = t(796163),
+                    f = t(715702),
+                    o = t(796163),
                     r = t(961047);
                 class b extends d.Component {
                     render() {
                         return (0, c.jsx)("div", {
-                            className: i()(f.app, r.vertical),
-                            children: (0, c.jsx)(o.Z, {})
+                            className: i()(o.app, r.vertical),
+                            children: (0, c.jsx)(f.Z, {})
                         })
                     }
                 }
@@ -101,8 +101,8 @@
                     d = t(470079),
                     n = t(664751),
                     i = t(266067),
-                    o = t(990547),
-                    f = t(719711),
+                    f = t(990547),
+                    o = t(719711),
                     r = t(271579),
                     b = t(756647),
                     s = t(442837),
@@ -282,7 +282,7 @@
                             }), (0, c.jsx)(p.Z, {
                                 path: N.Z5c.QUESTS(":questId"),
                                 component: H,
-                                impressionName: o.ImpressionNames.QUESTS_LANDING_PAGE,
+                                impressionName: f.ImpressionNames.QUESTS_LANDING_PAGE,
                                 impressionProperties: e => {
                                     let {
                                         computedMatch: a
@@ -375,7 +375,7 @@
                             })
                         }), (0, c.jsxs)(m.Z, {
                             skipsSettingDefaultPageTitle: d,
-                            children: [e, w.isPlatformEmbedded && (t === E.P.NOT_STARTED || t === E.P.IN_PROGRESS) && !0 !== l.K.get(f.SV) ? (0, c.jsx)(I.Z, {}) : null]
+                            children: [e, w.isPlatformEmbedded && (t === E.P.NOT_STARTED || t === E.P.IN_PROGRESS) && !0 !== l.K.get(o.SV) ? (0, c.jsx)(I.Z, {}) : null]
                         })
                     }
                 }
@@ -402,7 +402,7 @@
             650204: function(e, a, t) {
                 "use strict";
                 t(610138), t(216116), t(78328), t(815648), t(47120), t(177593);
-                var c, d, n, i, o, f = t(735250);
+                var c, d, n, i, f, o = t(735250);
                 t(92138), t(470079);
                 var r = t(202226),
                     b = t(512722),
@@ -438,9 +438,9 @@
                     x = {
                         "/oauth2/authorize": v.Z
                     },
-                    j = e => k.render((0, f.jsx)(C.Z, {
-                        children: (0, f.jsx)(D.Z, {
-                            children: (0, f.jsx)(e, {})
+                    j = e => k.render((0, o.jsx)(C.Z, {
+                        children: (0, o.jsx)(D.Z, {
+                            children: (0, o.jsx)(e, {})
                         })
                     }));
                 if (null != P.Z) {
@@ -450,7 +450,7 @@
                         })
                     });
                     let e = null === (d = (n = P.Z.remoteApp).getVersion) || void 0 === d ? void 0 : d.call(n),
-                        a = null === (i = (o = P.Z.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(o),
+                        a = null === (i = (f = P.Z.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(f),
                         t = {};
                     null != P.Z.remoteApp.getModuleVersions && (t = P.Z.remoteApp.getModuleVersions()), E.Z.setExtra({
                         hostVersion: e,
@@ -458,8 +458,8 @@
                     }), E.Z.setTags({
                         nativeBuildNumber: null == a ? void 0 : a.toString()
                     });
-                    let f = Object.keys(t).filter(e => null != t[e]).map(e => "".concat(e, ": ").concat(t[e])).join(", ");
-                    new R.Z().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(f, ", build: ").concat(a)), A.ZP.initializeExitHook()
+                    let o = Object.keys(t).filter(e => null != t[e]).map(e => "".concat(e, ": ").concat(t[e])).join(", ");
+                    new R.Z().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(o, ", build: ").concat(a)), A.ZP.initializeExitHook()
                 }
                 if ((0, N.O)(window), __OVERLAY__) j(l.Z.Overlay);
                 else if (null != window.require && null == window.DiscordNative) j(l.Z.OutdatedClient);
@@ -539,8 +539,8 @@
                     d = t(470079),
                     n = t(525654),
                     i = t.n(n),
-                    o = t(470716),
-                    f = t(442837),
+                    f = t(470716),
+                    o = t(442837),
                     r = t(946188),
                     b = t(481060),
                     s = t(596454),
@@ -554,7 +554,7 @@
                     I = t(151851),
                     O = t(981631),
                     A = t(689938);
-                let g = f.ZP.connectStores([l.Z], () => ({
+                let g = o.ZP.connectStores([l.Z], () => ({
                     focused: l.Z.isFocused()
                 }))(I.Z);
                 class v extends d.PureComponent {
@@ -587,7 +587,7 @@
                                 children: A.Z.Messages.DOWNLOAD
                             });
                         return (0, c.jsxs)(d.Fragment, {
-                            children: [(0, c.jsx)(o.ql, {
+                            children: [(0, c.jsx)(f.ql, {
                                 children: (0, c.jsx)("html", {
                                     className: (0, m.Q)(O.BRd.DARK)
                                 })
@@ -657,14 +657,14 @@
                 "use strict";
                 t.d(a, {
                     P: function() {
-                        return o
+                        return f
                     }
                 });
-                var c, d, n, i, o, f, r = t(442837),
+                var c, d, n, i, f, o, r = t(442837),
                     b = t(570140);
-                (c = o || (o = {}))[c.NOT_STARTED = 0] = "NOT_STARTED", c[c.IN_PROGRESS = 1] = "IN_PROGRESS", c[c.FAILED = 2] = "FAILED", c[c.SKIPPED = 3] = "SKIPPED";
+                (c = f || (f = {}))[c.NOT_STARTED = 0] = "NOT_STARTED", c[c.IN_PROGRESS = 1] = "IN_PROGRESS", c[c.FAILED = 2] = "FAILED", c[c.SKIPPED = 3] = "SKIPPED";
                 let s = 0;
-                class l extends(f = r.ZP.Store) {
+                class l extends(o = r.ZP.Store) {
                     getMigrationStatus() {
                         return s
                     }
@@ -697,8 +697,8 @@
                     d = t(719711),
                     n = t(433517),
                     i = t(579806),
-                    o = t(626135),
-                    f = t(998502),
+                    f = t(626135),
+                    o = t(998502),
                     r = t(286035),
                     b = t(981631);
 
@@ -709,9 +709,9 @@
 
                 function l() {
                     return c.useEffect(() => {
-                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== n.K.get(d.SV) && f.ZP.supportsFeature(b.eRX.USER_DATA_CACHE) && (r.Te(), i.Z.userDataCache.getCached().then(e => {
+                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== n.K.get(d.SV) && o.ZP.supportsFeature(b.eRX.USER_DATA_CACHE) && (r.Te(), i.Z.userDataCache.getCached().then(e => {
                             if (null == e) {
-                                r.kb(), o.default.track(b.rMx.DOMAIN_MIGRATED, {
+                                r.kb(), f.default.track(b.rMx.DOMAIN_MIGRATED, {
                                     success: !1,
                                     has_data: !1
                                 }, {
@@ -722,14 +722,14 @@
                             let a = Object.keys(e),
                                 t = 0 !== a.length,
                                 c = null != e.token,
-                                f = null == e.RTCRegionStore ? null : JSON.parse(e.RTCRegionStore),
-                                l = null == f || null == s(f) || s(f) <= s(n.K.get("RTCRegionStore"));
+                                o = null == e.RTCRegionStore ? null : JSON.parse(e.RTCRegionStore),
+                                l = null == o || null == s(o) || s(o) <= s(n.K.get("RTCRegionStore"));
                             t && c && !l && (n.K.clear(), a.forEach(a => {
                                 let t = e[a];
                                 try {
                                     n.K.set(a, JSON.parse(t))
                                 } catch (e) {}
-                            })), o.default.track(b.rMx.DOMAIN_MIGRATED, {
+                            })), f.default.track(b.rMx.DOMAIN_MIGRATED, {
                                 success: !0,
                                 current_is_newer: l,
                                 has_data: t
@@ -747,8 +747,8 @@
                 var d = t(512722),
                     n = t.n(d),
                     i = t(392711),
-                    o = t.n(i),
-                    f = t(544891),
+                    f = t.n(i),
+                    o = t(544891),
                     r = t(992774),
                     b = t(649754),
                     s = t(376398),
@@ -772,7 +772,7 @@
                 function N() {
                     v.stop(), null != c && (b.Z.removeSink(c, g), c = null)
                 }
-                let S = o().debounce((e, a, t, c) => {
+                let S = f().debounce((e, a, t, c) => {
                     P(e, (0, E.V9)({
                         streamType: null != a ? I.lo.GUILD : I.lo.CALL,
                         guildId: a,
@@ -791,16 +791,16 @@
                                 let t = (0, r.zS)(),
                                     d = (null == t ? void 0 : t.getNextVideoOutputFrame) != null;
                                 return new Promise((n, i) => {
-                                    let o = e => {
+                                    let f = e => {
                                         try {
                                             null != e && a(e) && n(e)
                                         } catch (e) {
                                             i(e)
                                         }
                                     };
-                                    d ? t.getNextVideoOutputFrame(e).then(o, a => {
+                                    d ? t.getNextVideoOutputFrame(e).then(f, a => {
                                         if (c === e) throw a
-                                    }) : b.Z.addSink(e, g, o)
+                                    }) : b.Z.addSink(e, g, f)
                                 }).finally(() => {
                                     !d && b.Z.removeSink(e, g)
                                 })
@@ -812,11 +812,11 @@
                                     height: d
                                 } = t.getVideoTracks()[0].getSettings(), n = document.createElement("video"), i = document.createElement("canvas");
                                 n.width = i.width = null != c ? c : 512, n.height = i.height = null != d ? d : 288, n.srcObject = t, n.play();
-                                let o = i.getContext("2d");
+                                let f = i.getContext("2d");
                                 return new Promise((e, t) => {
                                     n.ontimeupdate = () => {
-                                        null == o || o.drawImage(n, 0, 0, i.width, i.height);
-                                        let c = null == o ? void 0 : o.getImageData(0, 0, i.width, i.height);
+                                        null == f || f.drawImage(n, 0, 0, i.width, i.height);
+                                        let c = null == f ? void 0 : f.getImageData(0, 0, i.width, i.height);
                                         try {
                                             null != c && a(c) && e(c)
                                         } catch (e) {
@@ -842,8 +842,8 @@
                             let n = window.document.createElement("canvas"),
                                 i = n.getContext("2d");
                             n.width = e.width, n.height = e.height;
-                            let o = new ImageData(e.data, e.width, e.height);
-                            return null == i || i.putImageData(o, 0, 0), new Promise(a => {
+                            let f = new ImageData(e.data, e.width, e.height);
+                            return null == i || i.putImageData(f, 0, 0), new Promise(a => {
                                 null == Z || Z.drawImage(n, 0, 0, e.width, e.height, 0, 0, c, d), a()
                             })
                         }(t);
@@ -860,7 +860,7 @@
                                 method: "POST",
                                 token: e
                             })
-                        } else await f.tn.post({
+                        } else await o.tn.post({
                             url: O.ANM.STREAM_PREVIEW(a),
                             body: {
                                 thumbnail: d
@@ -900,8 +900,8 @@
                     d = t(846027),
                     n = t(872810),
                     i = t(710845),
-                    o = t(252759),
-                    f = t(361291),
+                    f = t(252759),
+                    o = t(361291),
                     r = t(199902),
                     b = t(314897),
                     s = t(569545),
@@ -935,7 +935,7 @@
                     }
                     _onStreamDirectSource(e, a, t, c) {
                         this.mode = "verbatim-source", this.streamKey = e, this._onDirectorAction({
-                            type: o.A.STREAM,
+                            type: f.A.STREAM,
                             sourceId: a,
                             audioSourceId: t,
                             sound: c
@@ -948,7 +948,7 @@
                                 break;
                             case "verbatim-source":
                                 this._onDirectorAction({
-                                    type: o.A.STOP
+                                    type: f.A.STOP
                                 });
                                 break;
                             default:
@@ -970,9 +970,9 @@
                     }
                     _onDirectorAction(e) {
                         let a = r.Z.getCurrentUserActiveStream(),
-                            t = f.Z.getState();
+                            t = o.Z.getState();
                         switch (e.type) {
-                            case o.A.STREAM:
+                            case f.A.STREAM:
                                 if (null != a && (0, n.tK)(a, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
                                     let a = e.sourceId.split(":")[1];
                                     d.Z.setGoLiveSource({
@@ -1003,10 +1003,10 @@
                                     })
                                 }
                                 break;
-                            case o.A.PAUSE:
+                            case f.A.PAUSE:
                                 null != a && (0, n.tK)(a, !0);
                                 break;
-                            case o.A.STOP:
+                            case f.A.STOP:
                                 null != a && (0, l.Z)(a);
                                 break;
                             default:
@@ -1031,22 +1031,22 @@
                         }
                     }
                     constructor() {
-                        p(this, "director", void 0), p(this, "applications", void 0), p(this, "streamKey", void 0), p(this, "mode", void 0), this.mode = null, this.applications = [], this.director = new o.a(e => this._onDirectorAction(e)), c.Z.subscribe("STREAM_START", e => {
+                        p(this, "director", void 0), p(this, "applications", void 0), p(this, "streamKey", void 0), p(this, "mode", void 0), this.mode = null, this.applications = [], this.director = new f.a(e => this._onDirectorAction(e)), c.Z.subscribe("STREAM_START", e => {
                             let {
                                 streamType: a,
                                 guildId: t,
                                 channelId: c,
                                 pid: d,
                                 sourceId: n,
-                                audioSourceId: o,
-                                sound: f
+                                audioSourceId: f,
+                                sound: o
                             } = e, r = b.default.getId(), l = (0, s.V9)({
                                 streamType: a,
                                 guildId: t,
                                 channelId: c,
                                 ownerId: r
                             });
-                            null == d != (null == n) ? (null != d && this._onStreamApplication(l, d), null != n && this._onStreamDirectSource(l, n, o, f)) : new i.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(d, ", source-id: ").concat(n, ")"))
+                            null == d != (null == n) ? (null != d && this._onStreamApplication(l, d), null != n && this._onStreamDirectSource(l, n, f, o)) : new i.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(d, ", source-id: ").concat(n, ")"))
                         }), c.Z.subscribe("STREAM_DELETE", e => {
                             let {
                                 streamKey: a
@@ -1090,7 +1090,7 @@
                     d = t(570140),
                     n = t(317770),
                     i = t(358085);
-                class o extends n.Z {
+                class f extends n.Z {
                     _initialize() {
                         d.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
                     }
@@ -1109,7 +1109,7 @@
                         }) : a[t] = d
                     }
                 }
-                a.Z = new o
+                a.Z = new f
             },
             485359: function(e, a, t) {
                 "use strict";
@@ -1119,18 +1119,18 @@
                 var d = t(525654),
                     n = t.n(d),
                     i = t(481060),
-                    o = t(570140),
-                    f = t(468026),
+                    f = t(570140),
+                    o = t(468026),
                     r = t(317770),
                     b = t(63063),
                     s = t(981631),
                     l = t(689938);
                 class u extends r.Z {
                     _initialize() {
-                        o.Z.subscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
+                        f.Z.subscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
                     }
                     _terminate() {
-                        o.Z.unsubscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
+                        f.Z.unsubscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
                     }
                     constructor(...e) {
                         var a, t, d;
@@ -1141,7 +1141,7 @@
                             } = e, d = "Firefox" === n().name ? s.BhN.ENABLE_MIC_FIREFOX : s.BhN.ENABLE_MIC_CHROME;
                             if (!t) {
                                 let e = "audio" !== a;
-                                (0, i.openModal)(a => (0, c.jsx)(f.default, {
+                                (0, i.openModal)(a => (0, c.jsx)(o.default, {
                                     title: e ? l.Z.Messages.NO_CAMERA_TITLE : l.Z.Messages.NO_MIC_TITLE,
                                     body: e ? l.Z.Messages.NO_CAMERA_BODY : l.Z.Messages.NO_MIC_BODY,
                                     onConfirm: () => window.open(b.Z.getArticleURL(d), "_blank"),
@@ -1171,18 +1171,18 @@
                 function d(e) {
                     var a, t, d, n;
                     let i = null == e ? void 0 : e.get("client_id"),
-                        o = null == e ? void 0 : null === (a = e.get("scope")) || void 0 === a ? void 0 : a.split(" "),
-                        f = null == e ? void 0 : e.get("state"),
+                        f = null == e ? void 0 : null === (a = e.get("scope")) || void 0 === a ? void 0 : a.split(" "),
+                        o = null == e ? void 0 : e.get("state"),
                         r = null == e ? void 0 : e.get("redirect_uri"),
                         b = null == e ? void 0 : e.get("response_type"),
                         s = null !== (t = null == e ? void 0 : e.get("nonce")) && void 0 !== t ? t : void 0,
                         l = null !== (d = null == e ? void 0 : e.get("code_challenge")) && void 0 !== d ? d : void 0,
                         u = null !== (n = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== n ? n : void 0;
-                    return null == i || null == o || null == f || null == r || null == b || ((0, c.openOAuth2Modal)({
+                    return null == i || null == f || null == o || null == r || null == b || ((0, c.openOAuth2Modal)({
                         clientId: i,
-                        scopes: o,
+                        scopes: f,
                         redirectUri: r,
-                        state: f,
+                        state: o,
                         responseType: b,
                         nonce: s,
                         codeChallenge: l,
@@ -1201,16 +1201,16 @@
                     d = t(470079),
                     n = t(470716),
                     i = t(266067),
-                    o = t(304445),
-                    f = t(703656);
+                    f = t(304445),
+                    o = t(703656);
 
                 function r(e) {
                     let {
                         children: a
                     } = e;
-                    return d.useEffect(() => (o.Z.initialize(), () => o.Z.cleanup()), []), (0, c.jsx)(n.B6, {
+                    return d.useEffect(() => (f.Z.initialize(), () => f.Z.cleanup()), []), (0, c.jsx)(n.B6, {
                         children: (0, c.jsx)(i.F0, {
-                            history: (0, f.s1)(),
+                            history: (0, o.s1)(),
                             children: a
                         })
                     })
@@ -1223,7 +1223,7 @@
                         return d
                     },
                     a: function() {
-                        return o
+                        return f
                     }
                 });
                 var c, d, n = t(75834);
@@ -1236,7 +1236,7 @@
                         writable: !0
                     }) : e[a] = t, e
                 }(c = d || (d = {})).STREAM = "stream", c.PAUSE = "pause", c.STOP = "stop";
-                class o {
+                class f {
                     onStreamBegin(e, a) {
                         let t = (0, n.e)(e, a);
                         null == t || null == t.windowHandle ? this.callback({
@@ -1321,23 +1321,23 @@
                     let d = new Map(e.map(e => [e.processId, e])),
                         i = a.processPath.map(e => d.get(e)).find(e => null != e);
                     if (null == i) return null;
-                    let f = e.map(e => {
+                    let o = e.map(e => {
                         let a = e.processPath.findIndex(e => d.has(e));
                         return -1 === a ? null : {
                             application: e,
                             rootedPath: e.processPath.slice(a)
                         }
                     }).filter(c.lm).filter(e => e.rootedPath[0] === i.processId);
-                    f.sort((e, a) => {
+                    o.sort((e, a) => {
                         let t = e.rootedPath.map(e => d.get(e)).filter(e => null != e && null != e.windowHandle),
-                            c = o(a.rootedPath.map(e => d.get(e)).filter(e => null != e && null != e.windowHandle), t);
-                        return 0 !== c ? c : o(a.rootedPath, e.rootedPath)
+                            c = f(a.rootedPath.map(e => d.get(e)).filter(e => null != e && null != e.windowHandle), t);
+                        return 0 !== c ? c : f(a.rootedPath, e.rootedPath)
                     });
-                    let r = null !== (t = f.find(e => null != e.application.windowHandle)) && void 0 !== t ? t : f[0];
+                    let r = null !== (t = o.find(e => null != e.application.windowHandle)) && void 0 !== t ? t : o[0];
                     return null == r ? null : r.application
                 }
 
-                function o(e, a) {
+                function f(e, a) {
                     return e.length - a.length
                 }
             },
@@ -1348,8 +1348,8 @@
                     d = t.n(c),
                     n = t(392711),
                     i = t.n(n),
-                    o = t(570140),
-                    f = t(846027),
+                    f = t(570140),
+                    o = t(846027),
                     r = t(287734),
                     b = t(317770),
                     s = t(829750),
@@ -1374,10 +1374,10 @@
                 }
                 class v extends b.Z {
                     _initialize() {
-                        if (!!this.isSupported) o.Z.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), o.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), o.Z.subscribe("START_SESSION", this.handleViewUpdate), o.Z.subscribe("CONNECTION_OPEN", this.handleViewUpdate), o.Z.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), o.Z.subscribe("CALL_CREATE", this.handleViewUpdate), o.Z.subscribe("CALL_UPDATE", this.handleViewUpdate), o.Z.subscribe("CALL_DELETE", this.handleViewUpdate), o.Z.subscribe("CHANNEL_DELETE", this.handleViewUpdate), o.Z.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), o.Z.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), o.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), o.Z.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), o.Z.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), I.ZP.on("THUMBAR_BUTTONS_CLICKED", (e, a) => this.buttonClicked(a))
+                        if (!!this.isSupported) f.Z.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), f.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), f.Z.subscribe("START_SESSION", this.handleViewUpdate), f.Z.subscribe("CONNECTION_OPEN", this.handleViewUpdate), f.Z.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), f.Z.subscribe("CALL_CREATE", this.handleViewUpdate), f.Z.subscribe("CALL_UPDATE", this.handleViewUpdate), f.Z.subscribe("CALL_DELETE", this.handleViewUpdate), f.Z.subscribe("CHANNEL_DELETE", this.handleViewUpdate), f.Z.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), f.Z.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), f.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), f.Z.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), f.Z.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), I.ZP.on("THUMBAR_BUTTONS_CLICKED", (e, a) => this.buttonClicked(a))
                     }
                     _terminate() {
-                        if (!!this.isSupported) o.Z.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), o.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), o.Z.unsubscribe("START_SESSION", this.handleViewUpdate), o.Z.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), o.Z.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), o.Z.unsubscribe("CALL_CREATE", this.handleViewUpdate), o.Z.unsubscribe("CALL_UPDATE", this.handleViewUpdate), o.Z.unsubscribe("CALL_DELETE", this.handleViewUpdate), o.Z.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), o.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), o.Z.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), o.Z.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), o.Z.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), o.Z.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate)
+                        if (!!this.isSupported) f.Z.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), f.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), f.Z.unsubscribe("START_SESSION", this.handleViewUpdate), f.Z.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), f.Z.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), f.Z.unsubscribe("CALL_CREATE", this.handleViewUpdate), f.Z.unsubscribe("CALL_UPDATE", this.handleViewUpdate), f.Z.unsubscribe("CALL_DELETE", this.handleViewUpdate), f.Z.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), f.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), f.Z.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), f.Z.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), f.Z.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), f.Z.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate)
                     }
                     setThumbarButtons(e) {
                         !d()(this.prevButtons, e) && (this.prevButtons = e, I.ZP.setThumbarButtons(e))
@@ -1385,10 +1385,10 @@
                     constructor(...e) {
                         super(...e), g(this, "callbackActions", {
                             [I.tS.VIDEO]: () => {
-                                _.Z.isVideoEnabled() ? f.Z.setVideoEnabled(!1) : (0, h.Z)(() => f.Z.setVideoEnabled(!0), O.IlC.APP)
+                                _.Z.isVideoEnabled() ? o.Z.setVideoEnabled(!1) : (0, h.Z)(() => o.Z.setVideoEnabled(!0), O.IlC.APP)
                             },
-                            [I.tS.MUTE]: () => f.Z.toggleSelfMute(),
-                            [I.tS.DEAFEN]: () => f.Z.toggleSelfDeaf(),
+                            [I.tS.MUTE]: () => o.Z.toggleSelfMute(),
+                            [I.tS.DEAFEN]: () => o.Z.toggleSelfDeaf(),
                             [I.tS.DISCONNECT]: () => r.default.disconnect()
                         }), g(this, "isSupported", (0, E.isMac)() || (0, E.isWindows)()), g(this, "prevButtons", []), g(this, "buttonClicked", e => {
                             if (!(e.buttonName in this.callbackActions)) {
@@ -1409,8 +1409,8 @@
                                 n = p.Z.getChannel(e),
                                 i = null == n || (0, l.y)(n),
                                 {
-                                    reachedLimit: o,
-                                    limit: f
+                                    reachedLimit: f,
+                                    limit: o
                                 } = null != n ? (0, s.t)(n) : {
                                     reachedLimit: void 0,
                                     limit: void 0
@@ -1421,8 +1421,8 @@
                                     channel: n,
                                     cameraUnavailable: !d,
                                     hasPermission: i,
-                                    channelLimit: f,
-                                    channelLimitReached: o
+                                    channelLimit: o,
+                                    channelLimitReached: f
                                 });
                             this.setThumbarButtons([{
                                 name: I.tS.VIDEO,
@@ -1451,7 +1451,7 @@
                 "use strict";
                 var c, d, n, i;
 
-                function o(e, a, t) {
+                function f(e, a, t) {
                     return a in e ? Object.defineProperty(e, a, {
                         value: t,
                         enumerable: !0,
@@ -1460,7 +1460,7 @@
                     }) : e[a] = t, e
                 }
 
-                function f() {
+                function o() {
                     return {
                         num_failed: 0,
                         num_delta_installed: 0,
@@ -1566,13 +1566,13 @@
                         return this._report
                     }
                     reset() {
-                        this._report = f()
+                        this._report = o()
                     }
                     submissionReady() {
                         return this._report.num_full_installed + this._report.num_failed + this._report.num_delta_installed + this._report.foreground_bytes_total + this._report.background_bytes_total !== 0 && !(Object.keys(this._installingModules).length > 0) && !(Object.keys(this._downloadingModules).length > 0) && !0
                     }
                     constructor() {
-                        o(this, "_installingModules", {}), o(this, "_downloadingModules", {}), o(this, "_report", void 0), this._report = f()
+                        f(this, "_installingModules", {}), f(this, "_downloadingModules", {}), f(this, "_report", void 0), this._report = o()
                     }
                 }
             },
@@ -1583,8 +1583,8 @@
                     d = t(626135),
                     n = t(358085),
                     i = t(998502),
-                    o = t(801814),
-                    f = t(981631);
+                    f = t(801814),
+                    o = t(981631);
                 class r extends c.Z {
                     _initialize() {
                         if (!!n.isPlatformEmbedded) i.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), i.ZP.on("MODULE_INSTALLED", (e, a, t) => this.processModuleEvents()), i.ZP.on("UPDATER_HISTORY_RESPONSE", (e, a) => {
@@ -1599,12 +1599,12 @@
                         if (null == e) return;
                         let a = 0 === Math.floor(1e3 * Math.random());
                         e.forEach(e => {
-                            "analytics" === e.type ? e.name === f.rMx.UPDATER_METRICS_DOWNLOAD || e.name === f.rMx.UPDATER_METRICS_INSTALL || e.name === f.rMx.UPDATER_METRICS_COMBINED || e.name === f.rMx.UPDATER_METRICS_TRANSITION_STATUS ? a && d.default.track(e.name, e.data) : console.warn("Unknown updater analytic event ".concat(e.name)) : this._tracker.trackEvent(e)
-                        }), this._tracker.submissionReady() && (d.default.track(f.rMx.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset())
+                            "analytics" === e.type ? e.name === o.rMx.UPDATER_METRICS_DOWNLOAD || e.name === o.rMx.UPDATER_METRICS_INSTALL || e.name === o.rMx.UPDATER_METRICS_COMBINED || e.name === o.rMx.UPDATER_METRICS_TRANSITION_STATUS ? a && d.default.track(e.name, e.data) : console.warn("Unknown updater analytic event ".concat(e.name)) : this._tracker.trackEvent(e)
+                        }), this._tracker.submissionReady() && (d.default.track(o.rMx.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset())
                     }
                     constructor(...e) {
                         var a, t, c;
-                        super(...e), a = this, t = "_tracker", c = new o.Z, t in a ? Object.defineProperty(a, t, {
+                        super(...e), a = this, t = "_tracker", c = new f.Z, t in a ? Object.defineProperty(a, t, {
                             value: c,
                             enumerable: !0,
                             configurable: !0,
@@ -1618,10 +1618,10 @@
                 "use strict";
                 t.d(a, {
                     Z: function() {
-                        return o
+                        return f
                     },
                     t: function() {
-                        return f
+                        return o
                     }
                 });
                 var c = t(442837),
@@ -1629,7 +1629,7 @@
                     n = t(938475),
                     i = t(981631);
 
-                function o(e) {
+                function f(e) {
                     return (0, c.cj)([n.ZP, d.Z], () => {
                         let a = n.ZP.countVoiceStatesForChannel(e.id),
                             t = d.Z.getGuild(e.getGuildId());
@@ -1646,7 +1646,7 @@
                     }, [e])
                 }
 
-                function f(e) {
+                function o(e) {
                     let a = n.ZP.countVoiceStatesForChannel(e.id),
                         t = d.Z.getGuild(e.getGuildId());
                     return null == t ? {
@@ -1665,7 +1665,7 @@
                 "use strict";
                 t.d(a, {
                     Z: function() {
-                        return o
+                        return f
                     }
                 });
                 var c = t(735250);
@@ -1674,7 +1674,7 @@
                     n = t(695346),
                     i = t(981631);
 
-                function o(e, a) {
+                function f(e, a) {
                     n.qF.getSetting() ? (0, d.openModalLazy)(async () => {
                         let {
                             default: a
@@ -1696,17 +1696,17 @@
                     d = t(556296),
                     n = t(358085),
                     i = t(998502),
-                    o = t(981631);
+                    f = t(981631);
 
-                function f(e, a) {
-                    return !(e === o.MAM.BROWSER && d.Z.hasKeybind(o.MoX.MOUSE_BUTTON, a)) && !0
+                function o(e, a) {
+                    return !(e === f.MAM.BROWSER && d.Z.hasKeybind(f.MoX.MOUSE_BUTTON, a)) && !0
                 }
                 a.Z = new class e {
                     initialize() {
                         (0, n.isDesktop)() && (i.ZP.on("NAVIGATE_BACK", (e, a) => {
-                            f(a, o.qXD.Back) && (0, c.op)()
+                            o(a, f.qXD.Back) && (0, c.op)()
                         }), i.ZP.on("NAVIGATE_FORWARD", (e, a) => {
-                            f(a, o.qXD.Forward) && (0, c.eH)()
+                            o(a, f.qXD.Forward) && (0, c.eH)()
                         }))
                     }
                 }
@@ -1745,23 +1745,23 @@
                 "use strict";
                 t.d(a, {
                     Z: function() {
-                        return f
+                        return o
                     }
                 }), t(653041), t(47120);
                 var c = t(512722),
                     d = t.n(c),
                     n = t(90757),
                     i = t.n(n),
-                    o = t(65154);
+                    f = t(65154);
 
-                function f(e, a, t) {
+                function o(e, a, t) {
                     let c = window.DiscordNative;
-                    d()(null != c, "Can't get desktop sources outside of native app"), a = null != a ? a : [o.vA.WINDOW, o.vA.SCREEN], t = null != t ? t : {
+                    d()(null != c, "Can't get desktop sources outside of native app"), a = null != a ? a : [f.vA.WINDOW, f.vA.SCREEN], t = null != t ? t : {
                         width: 150,
                         height: 150
                     };
                     let n = [];
-                    return a.includes(o.vA.SCREEN) && e.supports(o.AN.SCREEN_PREVIEWS) && (n.push(e.getScreenPreviews(t.width, t.height)), a = a.filter(e => e !== o.vA.SCREEN)), a.includes(o.vA.WINDOW) && e.supports(o.AN.WINDOW_PREVIEWS) && (n.push(e.getWindowPreviews(t.width, t.height)), a = a.filter(e => e !== o.vA.WINDOW)), 0 !== a.length && n.push(c.desktopCapture.getDesktopCaptureSources({
+                    return a.includes(f.vA.SCREEN) && e.supports(f.AN.SCREEN_PREVIEWS) && (n.push(e.getScreenPreviews(t.width, t.height)), a = a.filter(e => e !== f.vA.SCREEN)), a.includes(f.vA.WINDOW) && e.supports(f.AN.WINDOW_PREVIEWS) && (n.push(e.getWindowPreviews(t.width, t.height)), a = a.filter(e => e !== f.vA.WINDOW)), 0 !== a.length && n.push(c.desktopCapture.getDesktopCaptureSources({
                         types: a,
                         thumbnailSize: t
                     })), Promise.all(n).then(e => i()(e))
@@ -1800,16 +1800,16 @@
                 }))
             };
         t.a = function(t, n, i) {
-            i && ((o = []).d = -1);
-            var o, f, r, b, s = new Set,
+            i && ((f = []).d = -1);
+            var f, o, r, b, s = new Set,
                 l = t.exports,
                 u = new Promise(function(e, a) {
                     b = a, r = e
                 });
             u[a] = l, u[e] = function(e) {
-                o && e(o), s.forEach(e), u.catch(function() {})
+                f && e(f), s.forEach(e), u.catch(function() {})
             }, t.exports = u, n(function(t) {
-                f = t.map(function(t) {
+                o = t.map(function(t) {
                     if (null !== t && "object" == typeof t) {
                         if (t[e]) return t;
                         if (t.then) {
@@ -1825,11 +1825,11 @@
                             }, i
                         }
                     }
-                    var o = {};
-                    return o[e] = function() {}, o[a] = t, o
+                    var f = {};
+                    return f[e] = function() {}, f[a] = t, f
                 });
                 var n, i = function() {
-                        return f.map(function(e) {
+                        return o.map(function(e) {
                             if (e[c]) throw e[c];
                             return e[a]
                         })
@@ -1839,16 +1839,16 @@
                             a(i)
                         }).r = 0;
                         var t = function(e) {
-                            e === o || s.has(e) || (s.add(e), e && !e.d && (n.r++, e.push(n)))
+                            e === f || s.has(e) || (s.add(e), e && !e.d && (n.r++, e.push(n)))
                         };
-                        f.map(function(a) {
+                        o.map(function(a) {
                             a[e](t)
                         })
                     });
                 return n.r ? r : i()
             }, function(e) {
-                e ? b(u[c] = e) : r(l), d(o)
-            }), o && o.d < 0 && (o.d = 0)
+                e ? b(u[c] = e) : r(l), d(f)
+            }), f && f.d < 0 && (f.d = 0)
         }
     })(), t.n = function(e) {
         var a = e && e.__esModule ? function() {
@@ -1871,8 +1871,8 @@
             t.r(n);
             var i = {};
             e = e || [null, a({}), a([]), a(a)];
-            for (var o = 2 & d && c;
-                "object" == typeof o && !~e.indexOf(o); o = a(o)) Object.getOwnPropertyNames(o).forEach(function(e) {
+            for (var f = 2 & d && c;
+                "object" == typeof f && !~e.indexOf(f); f = a(f)) Object.getOwnPropertyNames(f).forEach(function(e) {
                 i[e] = function() {
                     return c[e]
                 }
@@ -1929,7 +1929,7 @@
             14653: "2cebf0589b6d491b146f",
             14760: "703dbbee182e6ddcb275",
             153: "3baee5fea27e99d77dc8",
-            15357: "a36da40b2ac026459e04",
+            15357: "30ca02193b84f3207f8b",
             15418: "4572d33ddee64809b3b0",
             15421: "90e053cc75b27ddae9b0",
             15450: "670573a6ae3b1ec013a3",
@@ -2072,7 +2072,7 @@
             31093: "cdb5be0088d05b1a163f",
             31141: "ef7d4c4621b0a540250b",
             31177: "f35d851e685c0e2c6de4",
-            31649: "7c0daefd035242cc8791",
+            31649: "6007f0bb3e863a068fe9",
             31835: "623a47c6ccde749d2029",
             3190: "a026667e17656e7faa1f",
             32006: "568dd3c5e38bd34852f4",
@@ -2631,7 +2631,7 @@
             94064: "6c58294d1bb96f96b91c",
             94364: "c111221ef739733c4a30",
             94566: "d27319c4bc1d392bdf03",
-            94864: "8bd725486ff9a81f2835",
+            94864: "23c7923128ae0772b61d",
             94889: "3bcce8ed555cc6e2235c",
             94912: "5074e5e820f01d55d196",
             95136: "831701ba91be5f92964e",
@@ -2705,26 +2705,26 @@
                 return
             }
             if (void 0 !== n) {
-                for (var o, f, r = document.getElementsByTagName("script"), b = 0; b < r.length; b++) {
+                for (var f, o, r = document.getElementsByTagName("script"), b = 0; b < r.length; b++) {
                     var s = r[b];
                     if (s.getAttribute("src") == c || s.getAttribute("data-webpack") == a + n) {
-                        o = s;
+                        f = s;
                         break
                     }
                 }
-            }!o && (f = !0, (o = document.createElement("script")).charset = "utf-8", o.timeout = 120, t.nc && o.setAttribute("nonce", t.nc), o.setAttribute("data-webpack", a + n), o.src = c), e[c] = [d];
+            }!f && (o = !0, (f = document.createElement("script")).charset = "utf-8", f.timeout = 120, t.nc && f.setAttribute("nonce", t.nc), f.setAttribute("data-webpack", a + n), f.src = c), e[c] = [d];
             var l = function(a, t) {
-                    o.onerror = o.onload = null, clearTimeout(u);
+                    f.onerror = f.onload = null, clearTimeout(u);
                     var d = e[c];
-                    if (delete e[c], o.parentNode && o.parentNode.removeChild(o), d && d.forEach(function(e) {
+                    if (delete e[c], f.parentNode && f.parentNode.removeChild(f), d && d.forEach(function(e) {
                             return e(t)
                         }), a) return a(t)
                 },
                 u = setTimeout(l.bind(null, void 0, {
                     type: "timeout",
-                    target: o
+                    target: f
                 }), 12e4);
-            o.onerror = l.bind(null, o.onerror), o.onload = l.bind(null, o.onload), f && document.head.appendChild(o)
+            f.onerror = l.bind(null, f.onerror), f.onload = l.bind(null, f.onload), o && document.head.appendChild(f)
         }
     })(), t.r = function(e) {
         "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -2743,11 +2743,11 @@
                 e[i] = [c, d, n];
                 return
             }
-            for (var o = 1 / 0, i = 0; i < e.length; i++) {
-                for (var c = e[i][0], d = e[i][1], n = e[i][2], f = !0, r = 0; r < c.length; r++)(!1 & n || o >= n) && Object.keys(t.O).every(function(e) {
+            for (var f = 1 / 0, i = 0; i < e.length; i++) {
+                for (var c = e[i][0], d = e[i][1], n = e[i][2], o = !0, r = 0; r < c.length; r++)(!1 & n || f >= n) && Object.keys(t.O).every(function(e) {
                     return t.O[e](c[r])
-                }) ? c.splice(r--, 1) : (f = !1, n < o && (o = n));
-                if (f) {
+                }) ? c.splice(r--, 1) : (o = !1, n < f && (f = n));
+                if (o) {
                     e.splice(i--, 1);
                     var b = d();
                     void 0 !== b && (a = b)
@@ -2793,32 +2793,32 @@
             a = "discord_app",
             c = "data-webpack-loading",
             d = function(e, d, n, i) {
-                var o, f, r = "chunk-" + e;
+                var f, o, r = "chunk-" + e;
                 if (!i) {
                     for (var b = document.getElementsByTagName("link"), s = 0; s < b.length; s++) {
                         var l = b[s],
                             u = l.getAttribute("href") || l.href;
                         if (u && !u.startsWith(t.p) && (u = t.p + (u.startsWith("/") ? u.slice(1) : u)), "stylesheet" == l.rel && (u && u.startsWith(d) || l.getAttribute("data-webpack") == a + ":" + r)) {
-                            o = l;
+                            f = l;
                             break
                         }
                     }
-                    if (!n) return o
-                }!o && (f = !0, (o = document.createElement("link")).setAttribute("data-webpack", a + ":" + r), o.setAttribute(c, 1), o.rel = "stylesheet", o.href = d);
+                    if (!n) return f
+                }!f && (o = !0, (f = document.createElement("link")).setAttribute("data-webpack", a + ":" + r), f.setAttribute(c, 1), f.rel = "stylesheet", f.href = d);
                 var h = function(e, a) {
-                    if (o.onerror = o.onload = null, o.removeAttribute(c), clearTimeout(p), a && "load" != a.type && o.parentNode.removeChild(o), n(a), e) return e(a)
+                    if (f.onerror = f.onload = null, f.removeAttribute(c), clearTimeout(p), a && "load" != a.type && f.parentNode.removeChild(f), n(a), e) return e(a)
                 };
-                if (o.getAttribute(c)) {
+                if (f.getAttribute(c)) {
                     var p = setTimeout(h.bind(null, void 0, {
                         type: "timeout",
-                        target: o
+                        target: f
                     }), 12e4);
-                    o.onerror = h.bind(null, o.onerror), o.onload = h.bind(null, o.onload)
+                    f.onerror = h.bind(null, f.onerror), f.onload = h.bind(null, f.onload)
                 } else h(void 0, {
                     type: "load",
-                    target: o
+                    target: f
                 });
-                return i ? i.parentNode.insertBefore(o, i) : f && document.head.appendChild(o), o
+                return i ? i.parentNode.insertBefore(f, i) : o && document.head.appendChild(f), f
             };
         t.f.css = function(a, c) {
             var n = t.o(e, a) ? e[a] : void 0;
@@ -2829,14 +2829,14 @@
                         n = e[a] = [t, c]
                     });
                     c.push(n[2] = i);
-                    var o = t.p + t.k(a),
-                        f = Error();
-                    d(a, o, function(c) {
+                    var f = t.p + t.k(a),
+                        o = Error();
+                    d(a, f, function(c) {
                         if (t.o(e, a) && (0 !== (n = e[a]) && (e[a] = void 0), n)) {
                             if ("load" !== c.type) {
                                 var d = c && c.type,
                                     i = c && c.target && c.target.src;
-                                f.message = "Loading css chunk " + a + " failed.\n(" + d + ": " + i + ")", f.name = "ChunkLoadError", f.type = d, f.request = i, n[1](f)
+                                o.message = "Loading css chunk " + a + " failed.\n(" + d + ": " + i + ")", o.name = "ChunkLoadError", o.type = d, o.request = i, n[1](o)
                             } else n[0]()
                         }
                     })
@@ -2865,12 +2865,12 @@
                     });
                     c.push(d[2] = n);
                     var i = t.p + t.u(a),
-                        o = Error();
+                        f = Error();
                     t.l(i, function(c) {
                         if (t.o(e, a) && (0 !== (d = e[a]) && (e[a] = void 0), d)) {
                             var n = c && ("load" === c.type ? "missing" : c.type),
                                 i = c && c.target && c.target.src;
-                            o.message = "Loading chunk " + a + " failed.\n(" + n + ": " + i + ")", o.name = "ChunkLoadError", o.type = n, o.request = i, d[1](o)
+                            f.message = "Loading chunk " + a + " failed.\n(" + n + ": " + i + ")", f.name = "ChunkLoadError", f.type = n, f.request = i, d[1](f)
                         }
                     }, "chunk-" + a, a)
                 }
@@ -2882,14 +2882,14 @@
                 var d = c[0],
                     n = c[1],
                     i = c[2],
-                    o, f, r = 0;
+                    f, o, r = 0;
                 if (d.some(function(a) {
                         return 0 !== e[a]
                     })) {
-                    for (o in n) t.o(n, o) && (t.m[o] = n[o]);
+                    for (f in n) t.o(n, f) && (t.m[f] = n[f]);
                     if (i) var b = i(t)
                 }
-                for (a && a(c); r < d.length; r++) f = d[r], t.o(e, f) && e[f] && e[f][0](), e[f] = 0;
+                for (a && a(c); r < d.length; r++) o = d[r], t.o(e, o) && e[o] && e[o][0](), e[o] = 0;
                 return t.O(b)
             },
             c = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
@@ -2900,4 +2900,4 @@
     });
     c = t.O(c)
 })();
-//# sourceMappingURL=web.5c11f999788019d8995a.js.map
+//# sourceMappingURL=web.7fa0104a3fa0f2cf62fc.js.map

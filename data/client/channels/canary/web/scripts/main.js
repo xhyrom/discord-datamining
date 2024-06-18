@@ -40454,7 +40454,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, d.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302859", ", Version Hash: ").concat("fdbdae48a8963fc8d7d1ca05008f7f621e678fdd")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("302882", ", Version Hash: ").concat("9283f9b7a252d846abe586077fec1f53ede07e8c")), i.Z.setTags({
                 appContext: h.e3s
             }), c.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -80013,7 +80013,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 CommonTriggerPointManager: {
-                    actions: ["POST_CONNECTION_OPEN"],
+                    actions: ["POST_CONNECTION_OPEN", "VOICE_CHANNEL_SELECT", "CALL_CREATE"],
                     inlineRequire: () => n(957899).Z
                 },
                 CommunicationDisabledManager: {
@@ -94395,8 +94395,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "302859", "302859"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302859")), t = 0), t
+                let t = parseInt((e = "302882", "302882"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("302882")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122678,8 +122678,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "302859",
-                    versionHash: "fdbdae48a8963fc8d7d1ca05008f7f621e678fdd"
+                    buildNumber: "302882",
+                    versionHash: "9283f9b7a252d846abe586077fec1f53ede07e8c"
                 }
             }
             n.d(t, {
@@ -130166,7 +130166,7 @@
             let d = "2023-10_triggerdebuggingaa",
                 c = "2023-10_guildaa",
                 E = [d, c];
-            (_ = o || (o = {}))[_.NONE = 0] = "NONE", _[_.POST_CONNECTION_OPEN = 1] = "POST_CONNECTION_OPEN"
+            (_ = o || (o = {}))[_.NONE = 0] = "NONE", _[_.POST_CONNECTION_OPEN = 1] = "POST_CONNECTION_OPEN", _[_.VOICE_CALL = 2] = "VOICE_CALL"
         },
         492435: function(e, t, n) {
             "use strict";
@@ -131197,15 +131197,24 @@
             "use strict";
             n(47120);
             var i = n(147913),
-                r = n(160462);
-            class s extends i.Z {
-                handleConnectionOpen() {
-                    r.W.trigger()
+                r = n(202511),
+                s = n(828354);
+            class o extends i.Z {
+                handlePostConnectionOpen() {
+                    r.d.trigger()
+                }
+                handleVoiceChannelSelect() {
+                    s.M.trigger()
+                }
+                handleCallCreate() {
+                    s.M.trigger()
                 }
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: this.handleConnectionOpen
+                        POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
+                        VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect,
+                        CALL_CREATE: this.handleCallCreate
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -131214,7 +131223,7 @@
                     }) : t[n] = i
                 }
             }
-            t.Z = new s
+            t.Z = new o
         },
         185745: function(e, t, n) {
             "use strict";
@@ -131342,20 +131351,6 @@
                     }]
                 })
         },
-        160462: function(e, t, n) {
-            "use strict";
-            n.d(t, {
-                W: function() {
-                    return o
-                }
-            });
-            var i = n(185745),
-                r = n(91641),
-                s = n(987338);
-            let o = new r.E([i.ul, i.qs, i.vt, i.U5, i.qW], s.$P.POST_CONNECTION_OPEN, {
-                location: "connection open"
-            })
-        },
         91641: function(e, t, n) {
             "use strict";
 
@@ -131388,6 +131383,33 @@
                     this.experiments = e, this.triggerPoint = t, this.params = n
                 }
             }
+        },
+        202511: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                d: function() {
+                    return o
+                }
+            });
+            var i = n(185745),
+                r = n(91641),
+                s = n(987338);
+            let o = new r.E([i.ul, i.qs, i.vt, i.U5, i.qW], s.$P.POST_CONNECTION_OPEN, {
+                location: "app open"
+            })
+        },
+        828354: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                M: function() {
+                    return s
+                }
+            });
+            var i = n(91641),
+                r = n(987338);
+            let s = new i.E([], r.$P.VOICE_CALL, {
+                location: "voice call initiated"
+            })
         },
         980944: function(e, t, n) {
             "use strict";
@@ -178712,8 +178734,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718675224503",
-                                    build_number: "302859"
+                                    built_at: "1718704747066",
+                                    build_number: "302882"
                                 }
                             },
                             retries: 1
@@ -255836,7 +255858,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fdbdae48a8963fc8d7d1ca05008f7f621e678fdd"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9283f9b7a252d846abe586077fec1f53ede07e8c"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -284316,7 +284338,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "302859"
+                                build_number: "302882"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (d.user_id = c.id, d.user_name = c.tag, null != c.email && (d.email = c.email));
@@ -291628,7 +291650,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "302859", "302859"), 10);
+                let s = parseInt((n = "302882", "302882"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -319525,4 +319547,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.8920dc34b27552126756.js.map
+//# sourceMappingURL=25624.c8cacf3860b6a90b8e48.js.map
