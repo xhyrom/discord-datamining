@@ -136386,10 +136386,10 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --control-brand-foreground-new: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --creator-revenue-icon-gradient-end: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136404,7 +136404,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --creator-revenue-locked-channel-icon: color-mix(in oklab,
                 var(--teal-345) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --creator-revenue-progress-bar: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136515,37 +136515,37 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-help-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-help-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-positive-background: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-warning-background: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-warning-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --input-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136554,7 +136554,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16) var(--theme-base-color-amount, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--input-placeholder-text-dark) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --interactive-active: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
@@ -136650,7 +136650,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-activity-card-badge-icon: color-mix(in oklab,
                 var(--primary-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-activity-card-border: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.02) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.02) var(--theme-base-color-amount, 0%));
@@ -136665,7 +136665,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-active-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-danger-background: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136674,7 +136674,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-destructive-background: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136683,7 +136683,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-destructive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-overlay-alpha-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.54) var(--theme-base-color-amount, 0%));
@@ -136692,7 +136692,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.64) var(--theme-base-color-amount, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-overlay-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136701,7 +136701,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-overlay-text: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-positive-background: color-mix(in oklab,
                 var(--green-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136710,7 +136710,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%));
@@ -136731,7 +136731,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-alt-on-blurple-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-700-hsl) / 0.16) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16) var(--theme-base-color-amount, 0%));
@@ -136740,16 +136740,16 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-text: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-background: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-on-blurple-pressed-text: color-mix(in oklab,
                 var(--brand-530) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-overlay-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136758,13 +136758,13 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-overlay-text: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-pressed-background: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-secondary-background: color-mix(in oklab,
                 var(--primary-460) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136779,7 +136779,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.64) var(--theme-base-color-amount, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-secondary-pressed-background: color-mix(in oklab,
                 var(--primary-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136788,7 +136788,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--primary-230) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-selected-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.24) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24) var(--theme-base-color-amount, 0%));
@@ -136797,7 +136797,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.28) var(--theme-base-color-amount, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-background: color-mix(in oklab,
                 var(--primary-660) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136806,22 +136806,22 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--primary-330) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-text: color-mix(in oklab,
                 var(--primary-230) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-category-name-text: color-mix(in oklab,
                 var(--primary-330) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-message-preview-text: color-mix(in oklab,
                 var(--primary-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-name-muted-text: color-mix(in oklab,
                 var(--primary-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-name-text: color-mix(in oklab,
                 var(--primary-130) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-chat-input-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -136917,7 +136917,7 @@ div.nagbar_dccaf1 {
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --textbox-markdown-syntax: color-mix(in oklab,
                 var(--primary-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --theme-locked-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.96) var(--theme-base-color-amount, 0%));
@@ -137486,10 +137486,10 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.54) var(--theme-base-color-amount, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --control-brand-foreground-new: color-mix(in oklab,
                 var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --creator-revenue-icon-gradient-end: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137504,7 +137504,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --creator-revenue-locked-channel-icon: color-mix(in oklab,
                 var(--teal-400) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --creator-revenue-progress-bar: color-mix(in oklab,
                 var(--teal-345) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137615,37 +137615,37 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-430) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-danger-text: color-mix(in oklab,
                 var(--black-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-help-background: color-mix(in oklab,
                 hsl(var(--blue-430-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-430) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-help-text: color-mix(in oklab,
                 var(--black-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-positive-background: color-mix(in oklab,
                 hsl(var(--green-400-hsl) / 0.05) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.05) var(--theme-base-color-amount, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-400) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-positive-text: color-mix(in oklab,
                 var(--black-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-warning-background: color-mix(in oklab,
                 hsl(var(--yellow-400-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-400) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-warning-text: color-mix(in oklab,
                 var(--black-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --input-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%));
@@ -137654,7 +137654,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16) var(--theme-base-color-amount, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--primary-460) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --interactive-active: color-mix(in oklab,
                 var(--primary-860) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
@@ -137750,7 +137750,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-activity-card-badge-icon: color-mix(in oklab,
                 var(--primary-400) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-activity-card-border: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.24) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24) var(--theme-base-color-amount, 0%));
@@ -137765,7 +137765,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-active-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-danger-background: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137774,7 +137774,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-destructive-background: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137783,7 +137783,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-destructive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-overlay-alpha-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.54) var(--theme-base-color-amount, 0%));
@@ -137792,7 +137792,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.64) var(--theme-base-color-amount, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-overlay-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137801,7 +137801,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-overlay-text: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-positive-background: color-mix(in oklab,
                 var(--green-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137810,7 +137810,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%));
@@ -137831,7 +137831,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-alt-on-blurple-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.06) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06) var(--theme-base-color-amount, 0%));
@@ -137840,16 +137840,16 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-560) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-text: color-mix(in oklab,
                 var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-background: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-on-blurple-pressed-text: color-mix(in oklab,
                 var(--brand-530) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-overlay-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137858,13 +137858,13 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-overlay-text: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-pressed-background: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-secondary-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137879,7 +137879,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.64) var(--theme-base-color-amount, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-secondary-pressed-background: color-mix(in oklab,
                 var(--primary-130) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -137888,7 +137888,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.04) var(--theme-base-color-amount, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--primary-600) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-selected-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.16) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16) var(--theme-base-color-amount, 0%));
@@ -137897,7 +137897,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24) var(--theme-base-color-amount, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%));
@@ -137906,22 +137906,22 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16) var(--theme-base-color-amount, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--primary-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-text: color-mix(in oklab,
                 var(--primary-600) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-category-name-text: color-mix(in oklab,
                 var(--primary-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-message-preview-text: color-mix(in oklab,
                 var(--primary-460) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-name-muted-text: color-mix(in oklab,
                 var(--primary-460) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-name-text: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-chat-input-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%));
@@ -138017,7 +138017,7 @@ div.nagbar_dccaf1 {
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --textbox-markdown-syntax: color-mix(in oklab,
                 var(--primary-530) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --theme-locked-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.96) var(--theme-base-color-amount, 0%));
@@ -138586,10 +138586,10 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --control-brand-foreground-new: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --creator-revenue-icon-gradient-end: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138604,7 +138604,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --creator-revenue-locked-channel-icon: color-mix(in oklab,
                 var(--teal-345) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --creator-revenue-progress-bar: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138715,37 +138715,37 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-help-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-help-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-positive-background: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-warning-background: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-warning-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --input-background: color-mix(in oklab,
                 hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.09) var(--theme-base-color-amount, 0%));
@@ -138754,7 +138754,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24) var(--theme-base-color-amount, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--plum-9) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --interactive-active: color-mix(in oklab,
                 var(--plum-3) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
@@ -138850,7 +138850,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-activity-card-badge-icon: color-mix(in oklab,
                 var(--plum-11) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-activity-card-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12) var(--theme-base-color-amount, 0%));
@@ -138865,7 +138865,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-active-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-danger-background: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138874,7 +138874,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-destructive-background: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138883,7 +138883,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-destructive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-overlay-alpha-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.54) var(--theme-base-color-amount, 0%));
@@ -138892,7 +138892,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.64) var(--theme-base-color-amount, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-overlay-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138901,7 +138901,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-overlay-text: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-positive-background: color-mix(in oklab,
                 var(--green-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138910,7 +138910,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%));
@@ -138931,7 +138931,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-alt-on-blurple-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-700-hsl) / 0.16) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16) var(--theme-base-color-amount, 0%));
@@ -138940,16 +138940,16 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-text: color-mix(in oklab,
                 var(--brand-400) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-background: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-on-blurple-pressed-text: color-mix(in oklab,
                 var(--brand-530) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-overlay-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138958,13 +138958,13 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-overlay-text: color-mix(in oklab,
                 var(--plum-25) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-pressed-background: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-secondary-background: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138979,7 +138979,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.64) var(--theme-base-color-amount, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-secondary-pressed-background: color-mix(in oklab,
                 var(--plum-15) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -138988,7 +138988,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06) var(--theme-base-color-amount, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--plum-4) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-selected-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.24) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24) var(--theme-base-color-amount, 0%));
@@ -138997,7 +138997,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.28) var(--theme-base-color-amount, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-background: color-mix(in oklab,
                 hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.09) var(--theme-base-color-amount, 0%));
@@ -139006,22 +139006,22 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--plum-6) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-text: color-mix(in oklab,
                 var(--plum-4) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-category-name-text: color-mix(in oklab,
                 var(--plum-8) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-message-preview-text: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-name-muted-text: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-name-text: color-mix(in oklab,
                 var(--plum-2) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-chat-input-background: color-mix(in oklab,
                 hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.09) var(--theme-base-color-amount, 0%));
@@ -139117,7 +139117,7 @@ div.nagbar_dccaf1 {
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --textbox-markdown-syntax: color-mix(in oklab,
                 var(--plum-9) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --theme-locked-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.96) var(--theme-base-color-amount, 0%));
@@ -139686,10 +139686,10 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --control-brand-foreground-new: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --creator-revenue-icon-gradient-end: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -139704,7 +139704,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --creator-revenue-locked-channel-icon: color-mix(in oklab,
                 var(--teal-345) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --creator-revenue-progress-bar: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -139815,37 +139815,37 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-help-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-help-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-positive-background: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-warning-background: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --info-warning-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --input-background: color-mix(in oklab,
                 hsl(var(--plum-24-hsl) / 0.85) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.85) var(--theme-base-color-amount, 0%));
@@ -139854,7 +139854,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.32) var(--theme-base-color-amount, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --interactive-active: color-mix(in oklab,
                 var(--plum-1) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
@@ -139950,7 +139950,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-activity-card-badge-icon: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-activity-card-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.06) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06) var(--theme-base-color-amount, 0%));
@@ -139965,7 +139965,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-active-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-danger-background: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -139974,7 +139974,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-danger-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-destructive-background: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -139983,7 +139983,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-destructive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-overlay-alpha-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.54) var(--theme-base-color-amount, 0%));
@@ -139992,7 +139992,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.64) var(--theme-base-color-amount, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-overlay-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -140001,7 +140001,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-overlay-text: color-mix(in oklab,
                 var(--primary-860) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-positive-background: color-mix(in oklab,
                 var(--green-430) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -140010,7 +140010,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-positive-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%));
@@ -140031,7 +140031,7 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-alt-on-blurple-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-700-hsl) / 0.16) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16) var(--theme-base-color-amount, 0%));
@@ -140040,16 +140040,16 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-alt-text: color-mix(in oklab,
                 var(--brand-360) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-background: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-on-blurple-pressed-text: color-mix(in oklab,
                 var(--brand-530) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-overlay-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -140058,13 +140058,13 @@ div.nagbar_dccaf1 {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-overlay-text: color-mix(in oklab,
                 var(--plum-25) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-primary-pressed-background: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --redesign-button-primary-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-secondary-background: color-mix(in oklab,
                 var(--plum-15) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -140079,7 +140079,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.64) var(--theme-base-color-amount, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-secondary-pressed-background: color-mix(in oklab,
                 var(--plum-13) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -140088,7 +140088,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06) var(--theme-base-color-amount, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--plum-6) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-selected-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.24) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24) var(--theme-base-color-amount, 0%));
@@ -140097,7 +140097,7 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.28) var(--theme-base-color-amount, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12) var(--theme-base-color-amount, 0%));
@@ -140106,22 +140106,22 @@ div.nagbar_dccaf1 {
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--plum-5) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-text: color-mix(in oklab,
                 var(--plum-6) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-category-name-text: color-mix(in oklab,
                 var(--plum-9) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-message-preview-text: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-name-muted-text: color-mix(in oklab,
                 var(--plum-10) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-channel-name-text: color-mix(in oklab,
                 var(--plum-3) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-chat-input-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12) var(--theme-base-color-amount, 0%));
@@ -140217,7 +140217,7 @@ div.nagbar_dccaf1 {
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --textbox-markdown-syntax: color-mix(in oklab,
                 var(--plum-9) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --theme-locked-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.96) var(--theme-base-color-amount, 0%));
@@ -141629,4 +141629,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0ebc775fe57a2adb37d7.css.map*/
+/*# sourceMappingURL=99387.3c3f61d58c2bcdf0dbda.css.map*/
