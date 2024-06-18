@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303182", ", Version Hash: ").concat("2044874ba341a324b00f67aaf02b0dc42b6ee32f")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303187", ", Version Hash: ").concat("7a685fde0c85839f3426b8ff4b74319761ca07d0")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -95979,8 +95979,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303182", "303182"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303182")), t = 0), t
+                let t = parseInt((e = "303187", "303187"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303187")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124186,8 +124186,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303182",
-                    versionHash: "2044874ba341a324b00f67aaf02b0dc42b6ee32f"
+                    buildNumber: "303187",
+                    versionHash: "7a685fde0c85839f3426b8ff4b74319761ca07d0"
                 }
             }
             n.d(t, {
@@ -180633,8 +180633,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718749341714",
-                                    build_number: "303182"
+                                    built_at: "1718749844547",
+                                    build_number: "303187"
                                 }
                             },
                             retries: 1
@@ -204735,35 +204735,56 @@
         421673: function(e, t, n) {
             "use strict";
             n.d(t, {
-                Z: function() {
-                    return _
+                ZP: function() {
+                    return h
                 }
             }), n(724458), n(653041), n(47120);
             var i = n(658722),
                 r = n.n(i),
-                s = n(339085),
-                o = n(633302),
-                a = n(697426),
-                l = n(242291);
-            let u = [];
+                s = n(954955),
+                o = n.n(s),
+                a = n(339085),
+                l = n(633302),
+                u = n(626135),
+                _ = n(697426),
+                c = n(242291),
+                d = n(981631);
+            let E = [],
+                I = o()(function(e, t) {
+                    u.default.track(d.rMx.SEARCH_STARTED, {
+                        channel_id: t,
+                        search_type: d.aib.SOUNDBOARD,
+                        location_stack: e
+                    })
+                }, 350),
+                T = o()(function(e, t, n, i) {
+                    u.default.track(d.rMx.SEARCH_RESULT_VIEWED, {
+                        search_type: d.aib.SOUNDBOARD,
+                        channel_id: n,
+                        query: i,
+                        total_results: e.length,
+                        location_stack: t
+                    })
+                }, 350);
 
-            function _(e, t, n, i) {
-                if (0 === e.length) return u;
-                let _ = t.reduce((e, t) => {
-                        for (let n of t.items) t.categoryInfo.type !== a.bg.FAVORITES && n.type === a.vB.SOUND && e.push(n.sound);
+            function h(e, t, n, i, s) {
+                if (0 === e.length) return E;
+                let o = t.reduce((e, t) => {
+                        for (let n of t.items) t.categoryInfo.type !== _.bg.FAVORITES && n.type === _.vB.SOUND && e.push(n.sound);
                         return e
                     }, []),
-                    c = _.reduce((t, a) => (t[a.soundId] = function(e, t, n, i) {
-                        var a;
-                        let u = 0,
-                            _ = t.name.toLocaleLowerCase(),
-                            c = null != t.emojiId ? s.Z.getCustomEmojiById(t.emojiId) : null,
-                            d = null != t.emojiName ? o.ZP.convertSurrogateToName(t.emojiName, !1) : null,
-                            E = null != d ? o.ZP.getByName(d) : null,
-                            I = null != c ? [c.name] : null !== (a = null == E ? void 0 : E.names) && void 0 !== a ? a : [];
-                        return e === _ && (u += 8), I.includes(e) && (u += 7), _.startsWith(e) && (u += 6), I.some(t => t.startsWith(e)) && (u += 5), _.endsWith(e) && (u += 4), I.some(t => t.endsWith(e)) && (u += 3), r()(e, t.name.toLocaleLowerCase()) && (u += 2), I.some(t => r()(e, t)) && (u += 1), u > 0 && (0, l.Nq)(n, t, i) && (u += 100), u
-                    }(e.toLocaleLowerCase(), a, n, i), t), {});
-                return _.filter(e => c[e.soundId] > 0).sort((e, t) => c[t.soundId] - c[e.soundId])
+                    u = o.reduce((t, o) => (I(s, null == i ? void 0 : i.id), t[o.soundId] = function(e, t, n, i) {
+                        var s;
+                        let o = 0,
+                            u = t.name.toLocaleLowerCase(),
+                            _ = null != t.emojiId ? a.Z.getCustomEmojiById(t.emojiId) : null,
+                            d = null != t.emojiName ? l.ZP.convertSurrogateToName(t.emojiName, !1) : null,
+                            E = null != d ? l.ZP.getByName(d) : null,
+                            I = null != _ ? [_.name] : null !== (s = null == E ? void 0 : E.names) && void 0 !== s ? s : [];
+                        return e === u && (o += 8), I.includes(e) && (o += 7), u.startsWith(e) && (o += 6), I.some(t => t.startsWith(e)) && (o += 5), u.endsWith(e) && (o += 4), I.some(t => t.endsWith(e)) && (o += 3), r()(e, t.name.toLocaleLowerCase()) && (o += 2), I.some(t => r()(e, t)) && (o += 1), o > 0 && (0, c.Nq)(n, t, i) && (o += 100), o
+                    }(e.toLocaleLowerCase(), o, n, i), t), {}),
+                    d = o.filter(e => u[e.soundId] > 0).sort((e, t) => u[t.soundId] - u[e.soundId]);
+                return T(d, s, null == i ? void 0 : i.id, e), d
             }
         },
         100986: function(e, t, n) {
@@ -205814,7 +205835,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return V
+                    return Z
                 }
             }), n(47120);
             var i = n(735250),
@@ -205835,27 +205856,28 @@
                 f = n(979651),
                 N = n(153124),
                 A = n(259580),
-                m = n(74538),
-                O = n(697426),
-                R = n(242291),
-                p = n(421673),
-                g = n(663215),
-                C = n(409673),
-                v = n(347072),
-                L = n(835648),
-                D = n(650743),
-                M = n(394740),
-                P = n(343747),
-                y = n(981631),
-                U = n(689938),
-                b = n(819245);
-            let G = [8, 0, 8, 8];
+                m = n(626135),
+                O = n(74538),
+                R = n(697426),
+                p = n(242291),
+                g = n(421673),
+                C = n(663215),
+                v = n(409673),
+                L = n(347072),
+                D = n(835648),
+                M = n(650743),
+                P = n(394740),
+                y = n(343747),
+                U = n(981631),
+                b = n(689938),
+                G = n(819245);
+            let w = [8, 0, 8, 8];
 
-            function w(e) {
+            function k(e) {
                 return 0 === e ? 16 : 32
             }
 
-            function k(e) {
+            function B(e) {
                 let {
                     categoryInfo: t,
                     collapsed: n,
@@ -205863,78 +205885,78 @@
                     index: s
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: b.sectionContainer,
+                    className: G.sectionContainer,
                     children: (0, i.jsx)(l.Clickable, {
-                        className: o()(b.sectionHeader, {
-                            [b.notFirstSectionHeader]: 0 !== s
+                        className: o()(G.sectionHeader, {
+                            [G.notFirstSectionHeader]: 0 !== s
                         }),
                         onClick: r,
                         "aria-expanded": !n,
                         children: (0, i.jsxs)("div", {
-                            className: b.sectionHeaderContent,
+                            className: G.sectionHeaderContent,
                             children: [function() {
                                 switch (t.type) {
-                                    case O.bg.FAVORITES:
+                                    case R.bg.FAVORITES:
                                         return (0, i.jsx)(l.StarIcon, {
                                             size: "xs",
                                             color: "currentColor",
-                                            className: b.headerIcon
+                                            className: G.headerIcon
                                         });
-                                    case O.bg.RECENTLY_HEARD:
+                                    case R.bg.RECENTLY_HEARD:
                                         return (0, i.jsx)(l.ClockIcon, {
                                             size: "custom",
                                             width: 20,
                                             height: 20,
                                             color: "currentColor",
-                                            className: b.headerIcon
+                                            className: G.headerIcon
                                         });
-                                    case O.bg.FREQUENTLY_USED:
+                                    case R.bg.FREQUENTLY_USED:
                                         return (0, i.jsx)(l.AnalyticsIcon, {
-                                            className: b.headerIcon
+                                            className: G.headerIcon
                                         });
-                                    case O.bg.GUILD:
+                                    case R.bg.GUILD:
                                         return (0, i.jsx)(d.Z, {
                                             guild: t.guild,
                                             height: 16,
                                             width: 16
                                         });
-                                    case O.bg.DEFAULTS:
+                                    case R.bg.DEFAULTS:
                                         return (0, i.jsx)(l.ClydeIcon, {
                                             size: "custom",
                                             width: 28,
                                             height: 28,
                                             color: "currentColor",
-                                            className: b.headerIcon
+                                            className: G.headerIcon
                                         });
-                                    case O.bg.SEARCH:
+                                    case R.bg.SEARCH:
                                         return (0, i.jsx)(l.MagnifyingGlassIcon, {
                                             size: "md",
                                             color: "currentColor",
-                                            className: b.headerIcon
+                                            className: G.headerIcon
                                         })
                                 }
                             }(), (0, i.jsx)(l.Heading, {
                                 variant: "eyebrow",
                                 color: "none",
-                                className: b.sectionTitle,
+                                className: G.sectionTitle,
                                 children: function() {
                                     switch (t.type) {
-                                        case O.bg.FAVORITES:
-                                            return U.Z.Messages.FAVORITES;
-                                        case O.bg.RECENTLY_HEARD:
-                                            return U.Z.Messages.RECENTLY_HEARD;
-                                        case O.bg.FREQUENTLY_USED:
-                                            return U.Z.Messages.FREQUENTLY_USED;
-                                        case O.bg.GUILD:
+                                        case R.bg.FAVORITES:
+                                            return b.Z.Messages.FAVORITES;
+                                        case R.bg.RECENTLY_HEARD:
+                                            return b.Z.Messages.RECENTLY_HEARD;
+                                        case R.bg.FREQUENTLY_USED:
+                                            return b.Z.Messages.FREQUENTLY_USED;
+                                        case R.bg.GUILD:
                                             return t.guild.name;
-                                        case O.bg.DEFAULTS:
-                                            return U.Z.Messages.SOUNDBOARD_SOUND_SECTION_DEFAULTS;
-                                        case O.bg.SEARCH:
-                                            return U.Z.Messages.SEARCH_RESULTS_SECTION_LABEL
+                                        case R.bg.DEFAULTS:
+                                            return b.Z.Messages.SOUNDBOARD_SOUND_SECTION_DEFAULTS;
+                                        case R.bg.SEARCH:
+                                            return b.Z.Messages.SEARCH_RESULTS_SECTION_LABEL
                                     }
                                 }()
                             }), (0, i.jsx)(A.Z, {
-                                className: b.headerIcon,
+                                className: G.headerIcon,
                                 direction: n ? A.Z.Directions.RIGHT : A.Z.Directions.DOWN
                             })]
                         })
@@ -205942,13 +205964,13 @@
                 })
             }
 
-            function B() {
+            function x() {
                 return (0, i.jsx)(_.Z, {
-                    message: U.Z.Messages.SOUNDBOARD_SEARCH_EMPTY_STATE_BODY
+                    message: b.Z.Messages.SOUNDBOARD_SEARCH_EMPTY_STATE_BODY
                 })
             }
 
-            function x(e) {
+            function V(e) {
                 let {
                     descriptors: t,
                     soundButtonProps: n,
@@ -205963,13 +205985,13 @@
                 } = e, I = E.Wq.useStore(e => e.inspectedExpressionPosition);
                 return (0, i.jsx)("ul", {
                     ...l,
-                    className: b.soundRow,
+                    className: G.soundRow,
                     children: t.map((e, t) => {
                         let i = "item-".concat(t),
                             l = o && I.rowIndex === s && I.columnIndex === t;
                         switch (e.item.type) {
-                            case O.vB.SOUND:
-                                return (0, r.createElement)(C.ZP, {
+                            case R.vB.SOUND:
+                                return (0, r.createElement)(v.ZP, {
                                     ...u(t),
                                     ...n,
                                     key: "".concat(i, "-").concat(e.item.sound.soundId),
@@ -205981,8 +206003,8 @@
                                     enableSecondaryActions: !0,
                                     buttonOverlay: d
                                 });
-                            case O.vB.ADD_SOUND:
-                                return (0, r.createElement)(v.Z, {
+                            case R.vB.ADD_SOUND:
+                                return (0, r.createElement)(L.Z, {
                                     ...u(t),
                                     key: i,
                                     guild: e.item.guild,
@@ -205993,7 +206015,7 @@
                 })
             }
 
-            function V(e) {
+            function Z(e) {
                 let {
                     guildId: t,
                     channel: s,
@@ -206001,37 +206023,42 @@
                     onClose: _,
                     onSelect: d,
                     suppressPlaySound: A = !1,
-                    shouldShowUpsell: C = !0,
-                    gridNotice: v,
-                    soundButtonOverlay: V,
-                    listPadding: Z,
-                    renderHeader: H,
-                    defaultSoundsOnly: F = !1
+                    shouldShowUpsell: v = !0,
+                    gridNotice: L,
+                    soundButtonOverlay: Z,
+                    listPadding: H,
+                    renderHeader: F,
+                    defaultSoundsOnly: Y = !1
                 } = e, {
-                    analyticsLocations: Y
-                } = (0, c.ZP)(), [j, W] = r.useState(null), K = (0, a.e7)([S.default], () => S.default.getCurrentUser()), z = (0, a.e7)([f.Z], () => {
+                    analyticsLocations: j
+                } = (0, c.ZP)(), [W, K] = r.useState(null), z = (0, a.e7)([S.default], () => S.default.getCurrentUser()), q = (0, a.e7)([f.Z], () => {
                     var e;
-                    return f.Z.getVoiceState(t, null !== (e = null == K ? void 0 : K.id) && void 0 !== e ? e : y.lds)
-                }), q = (null == z ? void 0 : z.selfDeaf) || (null == z ? void 0 : z.mute) || (null == z ? void 0 : z.suppress), X = (0, I.Iu)(e => e.searchQuery), Q = (0, N.Dt)(), {
-                    categories: J
-                } = (0, g.ZP)(s, void 0, F), [$, ee] = r.useState([]), et = (0, g.FS)(J, $, X), en = h.T4.useSetting(), ei = r.useMemo(() => new Set(en), [en]), er = null == s, es = m.ZP.canUseCustomCallSounds(K), eo = r.useCallback(e => {
-                    ei.has(e) ? ei.delete(e) : ei.add(e), h.T4.updateSetting(Array.from(ei))
-                }, [ei]), ea = r.useCallback((e, t) => {
-                    if (!A && (0, R.Nq)(K, e, s, !1)) {
+                    return f.Z.getVoiceState(t, null !== (e = null == z ? void 0 : z.id) && void 0 !== e ? e : U.lds)
+                }), X = (null == q ? void 0 : q.selfDeaf) || (null == q ? void 0 : q.mute) || (null == q ? void 0 : q.suppress), Q = (0, I.Iu)(e => e.searchQuery), J = (0, N.Dt)(), {
+                    categories: $
+                } = (0, C.ZP)(s, void 0, Y), [ee, et] = r.useState([]), en = (0, C.FS)($, ee, Q), ei = h.T4.useSetting(), er = r.useMemo(() => new Set(ei), [ei]), es = null == s, eo = O.ZP.canUseCustomCallSounds(z), ea = r.useCallback(e => {
+                    er.has(e) ? er.delete(e) : er.add(e), h.T4.updateSetting(Array.from(er))
+                }, [er]), el = r.useCallback((e, t) => {
+                    if (!A && (0, p.Nq)(z, e, s, !1)) {
                         var n;
-                        (0, R.GN)(e, null !== (n = null == s ? void 0 : s.id) && void 0 !== n ? n : y.lds, t)
+                        (0, p.GN)(e, null !== (n = null == s ? void 0 : s.id) && void 0 !== n ? n : U.lds, t), null != Q && "" !== Q && m.default.track(U.rMx.SEARCH_RESULT_SELECTED, {
+                            search_type: U.aib.SOUNDBOARD,
+                            channel_id: null == s ? void 0 : s.id,
+                            query: Q,
+                            location_stack: t
+                        })
                     } else {
-                        if ((0, R.Nq)(K, e, s)) return;
-                        C && W(e)
+                        if ((0, p.Nq)(z, e, s)) return;
+                        v && K(e)
                     }
-                }, [A, K, s, C]), el = r.useCallback(e => {
+                }, [A, z, s, v, Q]), eu = r.useCallback(e => {
                     switch (e.item.type) {
-                        case O.vB.SOUND:
-                            return null == d || d(e.item.sound), ea(e.item.sound, Y);
-                        case O.vB.ADD_SOUND:
-                            return (0, P.Z)(e.item.guild.id)
+                        case R.vB.SOUND:
+                            return null == d || d(e.item.sound), el(e.item.sound, j);
+                        case R.vB.ADD_SOUND:
+                            return (0, y.Z)(e.item.guild.id)
                     }
-                }, [Y, ea, d]), eu = r.useCallback((e, t, n, r, o) => (0, i.jsx)(x, {
+                }, [j, el, d]), e_ = r.useCallback((e, t, n, r, o) => (0, i.jsx)(V, {
                     descriptors: e,
                     rowIndex: n.rowIndex,
                     isUsingKeyboardNavigation: n.isUsingKeyboardNavigation,
@@ -206039,23 +206066,23 @@
                     getItemProps: r,
                     onItemMouseEnter: o,
                     suppressPlaySound: A,
-                    onSelectItem: el,
+                    onSelectItem: eu,
                     soundButtonProps: {
                         channel: s,
-                        interactive: er ? es : !q,
-                        forceSecondaryActions: er,
-                        analyticsLocations: Y
+                        interactive: es ? eo : !X,
+                        forceSecondaryActions: es,
+                        analyticsLocations: j
                     },
-                    buttonOverlay: V
-                }, "row-".concat(t["aria-rowindex"])), [el, s, q, A, Y, er, es, V]), e_ = r.useCallback((e, t) => {
+                    buttonOverlay: Z
+                }, "row-".concat(t["aria-rowindex"])), [eu, s, X, A, j, es, eo, Z]), ec = r.useCallback((e, t) => {
                     let n = "".concat(e.key);
-                    return (0, i.jsx)(k, {
+                    return (0, i.jsx)(B, {
                         categoryInfo: e.categoryInfo,
-                        toggleCollapsed: () => eo(n),
-                        collapsed: ei.has(n),
+                        toggleCollapsed: () => ea(n),
+                        collapsed: er.has(n),
                         index: t
                     }, "header-".concat(n))
-                }, [ei, eo]), ec = r.useCallback(e => ee((0, p.Z)(e, J, K, s)), [s, K, J]), ed = r.useCallback(e => {
+                }, [er, ea]), ed = r.useCallback(e => et((0, g.ZP)(e, $, z, s, j)), [s, z, $, j]), eE = r.useCallback(e => {
                     (0, u.jW)(e, async () => {
                         let {
                             default: e
@@ -206064,24 +206091,24 @@
                             ...t
                         })
                     })
-                }, []), eE = r.useCallback(() => (0, i.jsx)(l.Clickable, {
+                }, []), eI = r.useCallback(() => (0, i.jsx)(l.Clickable, {
                     tabIndex: 0,
-                    className: b.settingsClickArea,
-                    onClick: ed,
-                    "aria-label": U.Z.Messages.USER_SETTINGS_SOUNDBOARD_VOLUME,
+                    className: G.settingsClickArea,
+                    onClick: eE,
+                    "aria-label": b.Z.Messages.USER_SETTINGS_SOUNDBOARD_VOLUME,
                     children: (0, i.jsx)(l.VoiceNormalIcon, {
                         size: "md",
                         color: "currentColor",
-                        className: b.settingsIcon
+                        className: G.settingsIcon
                     })
-                }), [ed]), eI = r.useCallback(e => (0, i.jsx)(L.Z, {
+                }), [eE]), eT = r.useCallback(e => (0, i.jsx)(D.Z, {
                     soundboardListRef: e,
-                    categories: J,
-                    listPadding: Z
-                }), [J, Z]), eT = r.useCallback(e => {
-                    if ((null == e ? void 0 : e.item.type) === O.vB.SOUND) {
+                    categories: $,
+                    listPadding: H
+                }), [$, H]), eh = r.useCallback(e => {
+                    if ((null == e ? void 0 : e.item.type) === R.vB.SOUND) {
                         var t;
-                        return (0, i.jsx)(D.Z, {
+                        return (0, i.jsx)(M.Z, {
                             closePicker: _,
                             soundboardSound: null !== (t = null == e ? void 0 : e.item.sound) && void 0 !== t ? t : null
                         })
@@ -206089,33 +206116,33 @@
                     return null
                 }, [_]);
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [null != j && (0, i.jsx)(M.Z, {
-                        onClose: () => W(null),
+                    children: [null != W && (0, i.jsx)(P.Z, {
+                        onClose: () => K(null),
                         closePopout: _,
-                        sound: j,
+                        sound: W,
                         channel: s
                     }), (0, i.jsx)(T.Z, {
-                        categories: et,
-                        collapsedCategories: ei,
+                        categories: en,
+                        collapsedCategories: er,
                         containerWidth: o,
                         store: E.Wq,
-                        onSelectItem: el,
-                        onSearchExpressions: ec,
-                        hasSearchResults: $.length > 0,
-                        defaultSearchPlaceholder: U.Z.Messages.SOUNDBOARD_SEARCH_PLACEHOLDER,
-                        renderRow: eu,
-                        renderSectionHeader: e_,
-                        renderCategoryList: eI,
-                        renderHeaderAccessories: eE,
+                        onSelectItem: eu,
+                        onSearchExpressions: ed,
+                        hasSearchResults: ee.length > 0,
+                        defaultSearchPlaceholder: b.Z.Messages.SOUNDBOARD_SEARCH_PLACEHOLDER,
+                        renderRow: e_,
+                        renderSectionHeader: ec,
+                        renderCategoryList: eT,
+                        renderHeaderAccessories: eI,
                         rowHeight: 48,
-                        sectionHeaderHeight: w,
-                        listPadding: G,
+                        sectionHeaderHeight: k,
+                        listPadding: w,
                         itemNodeWidth: 150,
-                        gridNavigatorId: Q,
-                        renderEmptySearchState: B,
-                        renderInspector: eT,
-                        gridNotice: v,
-                        renderHeader: H
+                        gridNavigatorId: J,
+                        renderEmptySearchState: x,
+                        renderInspector: eh,
+                        gridNotice: L,
+                        renderHeader: F
                     })]
                 })
             }
@@ -258607,7 +258634,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2044874ba341a324b00f67aaf02b0dc42b6ee32f"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7a685fde0c85839f3426b8ff4b74319761ca07d0"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279242,7 +279269,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303182"
+                                build_number: "303187"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286554,7 +286581,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303182", "303182"), 10);
+                let s = parseInt((n = "303187", "303187"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328057,4 +328084,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.41c46c2fbb9fa2cc838e.js.map
+//# sourceMappingURL=79892.3a62baf668ef6fcddec9.js.map
