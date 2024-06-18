@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303204", ", Version Hash: ").concat("a0dd5e20b6ace2f54900fcc1218d91fd522106e8")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303219", ", Version Hash: ").concat("868bc614a0e69a7b643b146e4038c46579f87dce")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -59163,6 +59163,7 @@
                 QUESTS_LEARN_MORE_V2: "Learn More",
                 QUESTS_LEARN_MORE_STACKED: "Learn\n\nMore",
                 QUESTS_LEARN_MORE_LINK: "[Learn More]({questsLearnMoreLink})",
+                QUESTS_LEARN_MORE_ABOUT_QUESTS: "Learn More about Quests",
                 QUESTS_ACCEPT_QUEST: "Accept Quest",
                 QUESTS_INSTRUCTIONS_TO_WIN_REWARD: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
                 QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win **{questReward}**.",
@@ -59183,6 +59184,7 @@
                 QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
                 QUESTS_HIDE_THIS: "Hide This",
                 QUESTS_FIND_QUEST: "You can find this again in User Settings > Gift Inventory",
+                QUESTS_FIND_QUEST_QUEST_HOME: "Find this again in User Settings > Quests",
                 QUESTS_CLAIM_BY_DATE: "Claim by {expirationDate}",
                 QUESTS_AVAILABLE_UNTIL_DATE: "Available until {expirationDate}",
                 QUESTS_EXPIRES: "Expires {expirationDate}",
@@ -59233,6 +59235,7 @@
                 QUESTS_COMPLETION_COMPLETE: "Quest Completed!",
                 QUESTS_SHARE_LINK: "Copy Link to Quest",
                 QUESTS_CLAIM_THE_REWARD_HOOK: "Claim the $[reward](rewardHook)",
+                QUESTS_MOBILE_QUEST_BAR_OVERFLOW_MENU_LABEL: "Quest Actions",
                 QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_HEADING: "The Requirements",
                 QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_CONNECT_ACCOUNT: "Connect your console to your Discord account",
                 QUESTS_CONSOLE_CONNECTION_HELPER_STEPS_LAUNCH_GAME: "Launch {gameTitle} on your connected console",
@@ -95979,8 +95982,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303204", "303204"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303204")), t = 0), t
+                let t = parseInt((e = "303219", "303219"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303219")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124186,8 +124189,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303204",
-                    versionHash: "a0dd5e20b6ace2f54900fcc1218d91fd522106e8"
+                    buildNumber: "303219",
+                    versionHash: "868bc614a0e69a7b643b146e4038c46579f87dce"
                 }
             }
             n.d(t, {
@@ -180633,8 +180636,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718751366390",
-                                    build_number: "303204"
+                                    built_at: "1718752990130",
+                                    build_number: "303219"
                                 }
                             },
                             retries: 1
@@ -258634,7 +258637,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a0dd5e20b6ace2f54900fcc1218d91fd522106e8"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "868bc614a0e69a7b643b146e4038c46579f87dce"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279269,7 +279272,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303204"
+                                build_number: "303219"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286581,7 +286584,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303204", "303204"), 10);
+                let s = parseInt((n = "303219", "303219"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -327185,7 +327188,7 @@
                 j: function() {
                     return i
                 }
-            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST", r[r.QUEST_BADGE = 7] = "QUEST_BADGE", r[r.GIFT_INVENTORY_FOR_YOU = 8] = "GIFT_INVENTORY_FOR_YOU", r[r.GIFT_INVENTORY_OTHER = 9] = "GIFT_INVENTORY_OTHER", r[r.QUEST_BAR_V2 = 10] = "QUEST_BAR_V2", r[r.QUEST_HOME_DESKTOP = 11] = "QUEST_HOME_DESKTOP", r[r.QUEST_HOME_MOBILE = 12] = "QUEST_HOME_MOBILE"
+            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST", r[r.QUEST_BADGE = 7] = "QUEST_BADGE", r[r.GIFT_INVENTORY_FOR_YOU = 8] = "GIFT_INVENTORY_FOR_YOU", r[r.GIFT_INVENTORY_OTHER = 9] = "GIFT_INVENTORY_OTHER", r[r.QUEST_BAR_V2 = 10] = "QUEST_BAR_V2", r[r.QUEST_HOME_DESKTOP = 11] = "QUEST_HOME_DESKTOP", r[r.QUEST_HOME_MOBILE = 12] = "QUEST_HOME_MOBILE", r[r.QUEST_BAR_MOBILE = 13] = "QUEST_BAR_MOBILE"
         },
         551910: function(e, t, n) {
             "use strict";
@@ -328084,4 +328087,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.e2b8816e83c2fbeb64c6.js.map
+//# sourceMappingURL=79892.a30f5496783740acf3ed.js.map
