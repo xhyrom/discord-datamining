@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["25624"], {
+    ["95108"], {
         385007: function(e, t, n) {
             var i = {
                 "./de.jsona": ["644753", "30244"],
@@ -4600,6 +4600,14 @@
             "use strict";
             e.exports = n.p + "d958d0f2bf29e9947cb9.png"
         },
+        359734: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "313b9e62ea64b44e7feb.svg"
+        },
+        195794: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "ad6e89d798270b8bbdce.png"
+        },
         105797: function(e, t, n) {
             "use strict";
             e.exports = n.p + "4762eda0917612dab390.webp"
@@ -4727,6 +4735,22 @@
         239840: function(e, t, n) {
             "use strict";
             e.exports = n.p + "a3e663da53e95a625733.svg"
+        },
+        703152: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "59848dfca28e69ff3553.svg"
+        },
+        548617: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "923ebe1687af3952c1c5.svg"
+        },
+        511293: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "9c98a52269227f104a1d.svg"
+        },
+        278198: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "b35d1a1c8adf17410d7c.svg"
         },
         1474: function(e, t, n) {
             "use strict";
@@ -17547,6 +17571,53 @@
                 }
             })(O)
         },
+        497321: function(e, t, n) {
+            "use strict";
+            n(47120);
+            var i, r = n(735250),
+                s = n(470079),
+                o = n(120356),
+                a = n.n(o),
+                l = n(481060),
+                u = n(37234),
+                _ = n(230711),
+                c = n(981631),
+                d = n(689938),
+                E = n(662090);
+
+            function I(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class T extends(i = s.Component) {
+                render() {
+                    return (0, r.jsxs)("div", {
+                        className: E.streamerModeEnabled,
+                        children: [(0, r.jsx)("div", {
+                            className: E.streamerModeEnabledImage
+                        }), (0, r.jsx)(l.Clickable, {
+                            className: a()(E.streamerModeEnabledBtn, {
+                                [E.disabled]: this.props.disableButton
+                            }),
+                            onClick: this.handleClick,
+                            children: d.Z.Messages.STREAMER_MODE_ENABLED
+                        })]
+                    })
+                }
+                constructor(...e) {
+                    super(...e), I(this, "handleClick", () => {
+                        !this.props.disableButton && ((0, u.jN)(c.S9g.USER_SETTINGS), _.Z.setSection(c.oAB.STREAMER_MODE))
+                    })
+                }
+            }
+            I(T, "defaultProps", {
+                disableButton: !1
+            }), t.Z = T
+        },
         788307: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -17824,6 +17895,67 @@
             d.defaultProps = {
                 variant: ""
             }, d.Variants = r, t.Z = d
+        },
+        23551: function(e, t, n) {
+            "use strict";
+            var i = n(735250);
+            n(470079);
+            var r = n(120356),
+                s = n.n(r),
+                o = n(780384),
+                a = n(481060),
+                l = n(410030),
+                u = n(726542),
+                _ = n(122021),
+                c = n(231757),
+                d = n(626135),
+                E = n(981631),
+                I = n(203629);
+            t.Z = e => {
+                let {
+                    disabled: t = !1,
+                    type: n,
+                    className: r,
+                    innerClassName: T,
+                    onConnect: h
+                } = e, S = (0, l.ZP)(), f = u.Z.get((0, _.rR)(n));
+                return (0, i.jsx)(a.Tooltip, {
+                    text: f.name,
+                    children: e => {
+                        let {
+                            onMouseEnter: l,
+                            onMouseLeave: _
+                        } = e;
+                        return (0, i.jsx)("div", {
+                            className: s()(I.wrapper, r),
+                            children: (0, i.jsx)(a.FocusRing, {
+                                children: (0, i.jsx)("button", {
+                                    onMouseEnter: l,
+                                    onMouseLeave: _,
+                                    className: s()(I.inner, T),
+                                    type: "button",
+                                    disabled: t,
+                                    style: {
+                                        backgroundImage: "url('".concat((0, o.wj)(S) ? f.icon.darkSVG : f.icon.lightSVG, "')")
+                                    },
+                                    onClick: null != h ? h : () => (function(e) {
+                                        let t = u.Z.get(e);
+                                        (0, c.Z)({
+                                            platformType: t.type,
+                                            location: "Friends List"
+                                        }), d.default.track(E.rMx.ACCOUNT_LINK_STEP, {
+                                            previous_step: "desktop connections",
+                                            current_step: "desktop oauth",
+                                            platform_type: t.type
+                                        })
+                                    })(n),
+                                    "aria-label": f.name
+                                })
+                            })
+                        })
+                    }
+                })
+            }
         },
         490173: function(e, t, n) {
             "use strict";
@@ -40512,7 +40644,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303140", ", Version Hash: ").concat("ccfd2a72759ea70eb032a145541e79f272c327ef")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303145", ", Version Hash: ").concat("662fb5e0b51bcaaf4a6dd2ee7b5d2a387da9bdd4")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -95069,8 +95201,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303140", "303140"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303140")), t = 0), t
+                let t = parseInt((e = "303145", "303145"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303145")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -123277,8 +123409,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303140",
-                    versionHash: "ccfd2a72759ea70eb032a145541e79f272c327ef"
+                    buildNumber: "303145",
+                    versionHash: "662fb5e0b51bcaaf4a6dd2ee7b5d2a387da9bdd4"
                 }
             }
             n.d(t, {
@@ -123812,7 +123944,7 @@
                 u = n(31336),
                 _ = n(19759);
             let c = (0, s.Un)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("39709"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("6380"), n.e("33053"), n.e("11250"), n.e("8016"), n.e("57878"), n.e("65840"), n.e("77172"), n.e("67535"), n.e("45397"), n.e("95393"), n.e("86977"), n.e("68136"), n.e("18101"), n.e("81539"), n.e("90508"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("4934"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("22646"), n.e("68241"), n.e("12549"), n.e("21078"), n.e("19820"), n.e("47523"), n.e("77594"), n.e("87624"), n.e("30676"), n.e("5528"), n.e("44517"), n.e("95824"), n.e("43331"), n.e("41889"), n.e("97403"), n.e("30419"), n.e("18824"), n.e("49508"), n.e("27385"), n.e("31649"), n.e("30634"), n.e("44388"), n.e("76305"), n.e("54807"), n.e("81312")]).then(n.bind(n, 678717)),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("89350"), n.e("80451"), n.e("19503"), n.e("39709"), n.e("3336"), n.e("29549"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("31605"), n.e("6380"), n.e("33053"), n.e("11250"), n.e("8016"), n.e("57878"), n.e("65840"), n.e("77172"), n.e("67535"), n.e("45397"), n.e("95393"), n.e("86977"), n.e("68136"), n.e("18101"), n.e("81539"), n.e("90508"), n.e("76540"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("4934"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("22646"), n.e("68241"), n.e("12549"), n.e("21078"), n.e("19820"), n.e("18965"), n.e("77594"), n.e("87624"), n.e("30676"), n.e("5528"), n.e("44517"), n.e("95824"), n.e("43331"), n.e("41889"), n.e("97403"), n.e("30419"), n.e("18824"), n.e("49508"), n.e("27385"), n.e("31649"), n.e("30634"), n.e("44388"), n.e("76305"), n.e("54807"), n.e("81312")]).then(n.bind(n, 678717)),
                 webpackId: 678717
             });
 
@@ -159835,7 +159967,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("11751"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("65840"), n.e("45397"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("3084"), n.e("12549"), n.e("43502"), n.e("47523"), n.e("77594"), n.e("1187"), n.e("19589"), n.e("41889"), n.e("92557"), n.e("96936")]).then(n.bind(n, 994763)), (null === (s = T.Z.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(N.oNc.COMMUNITY)) && (t === N.pNK.GUILD_AUTOMOD && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_AUTOMOD), t === N.pNK.MEMBER_VERIFICATION && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, i, r);
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("11751"), n.e("29549"), n.e("7654"), n.e("31605"), n.e("33053"), n.e("65840"), n.e("45397"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("3084"), n.e("12549"), n.e("43502"), n.e("18965"), n.e("77594"), n.e("1187"), n.e("19589"), n.e("41889"), n.e("92557"), n.e("96936")]).then(n.bind(n, 994763)), (null === (s = T.Z.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(N.oNc.COMMUNITY)) && (t === N.pNK.GUILD_AUTOMOD && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_AUTOMOD), t === N.pNK.MEMBER_VERIFICATION && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, i, r);
                         (0, o.jN)(N.S9g.GUILD_SETTINGS)
                     },
                     close() {
@@ -179362,8 +179494,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718746425703",
-                                    build_number: "303140"
+                                    built_at: "1718746666138",
+                                    build_number: "303145"
                                 }
                             },
                             retries: 1
@@ -195131,49 +195263,49 @@
             "use strict";
             n.d(t, {
                 AH: function() {
-                    return A
-                },
-                CS: function() {
-                    return h
-                },
-                EW: function() {
-                    return M
-                },
-                QB: function() {
-                    return O
-                },
-                T0: function() {
-                    return L
-                },
-                Tj: function() {
                     return m
                 },
-                Wf: function() {
-                    return C
-                },
-                eT: function() {
-                    return v
-                },
-                gl: function() {
-                    return p
-                },
-                is: function() {
+                CS: function() {
                     return S
                 },
-                kP: function() {
-                    return D
+                EW: function() {
+                    return P
                 },
-                m0: function() {
-                    return N
-                },
-                nE: function() {
-                    return g
-                },
-                pf: function() {
+                QB: function() {
                     return R
                 },
-                xw: function() {
+                T0: function() {
+                    return D
+                },
+                Tj: function() {
+                    return O
+                },
+                Wf: function() {
+                    return v
+                },
+                eT: function() {
+                    return L
+                },
+                gl: function() {
+                    return g
+                },
+                is: function() {
                     return f
+                },
+                kP: function() {
+                    return M
+                },
+                m0: function() {
+                    return A
+                },
+                nE: function() {
+                    return C
+                },
+                pf: function() {
+                    return p
+                },
+                xw: function() {
+                    return N
                 }
             }), n(411104);
             var i = n(990547),
@@ -195188,8 +195320,9 @@
                 d = n(242755),
                 E = n(566078),
                 I = n(46140),
-                T = n(981631);
-            async function h(e) {
+                T = n(981631),
+                h = n(689938);
+            async function S(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 try {
                     let n = (await r.tn.post({
@@ -195205,17 +195338,26 @@
                     else if (null != n.error_hints && n.error_hints.length > 0) return {
                         errorHints: n.error_hints
                     }
-                } catch (e) {}
+                } catch (t) {
+                    var n;
+                    let e = new o.Z(t);
+                    if (429 === e.status) return {
+                        errorHints: [h.Z.Messages.RATE_LIMITED]
+                    };
+                    return {
+                        errorHints: [null !== (n = e.getAnyErrorMessage()) && void 0 !== n ? n : h.Z.Messages.MFA_V2_WEBAUTHN_GENERIC_ERROR]
+                    }
+                }
                 return {
                     errorHints: []
                 }
             }
-            async function S(e) {
+            async function f(e) {
                 await r.tn.post({
                     url: T.ANM.QUEST_ON_CONSOLE_STOP(e)
                 })
             }
-            async function f() {
+            async function N() {
                 if (!_.Z.isFetchingCurrentQuests) {
                     s.Z.dispatch({
                         type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
@@ -195243,7 +195385,7 @@
                     }
                 }
             }
-            async function N(e) {
+            async function A(e) {
                 let {
                     questId: t,
                     streamKey: n,
@@ -195285,7 +195427,7 @@
                     })
                 }
             }
-            async function A(e, t) {
+            async function m(e, t) {
                 if (null != t.questContentCTA && (0, l._3)({
                         questId: e,
                         questContent: t.questContent,
@@ -195315,7 +195457,7 @@
                     }
                 }
             }
-            async function m(e, t, n) {
+            async function O(e, t, n) {
                 if (!_.Z.isClaimingRewardCode(e)) {
                     s.Z.dispatch({
                         type: "QUESTS_CLAIM_REWARD_CODE_BEGIN",
@@ -195343,7 +195485,7 @@
                     }
                 }
             }
-            async function O(e, t, n) {
+            async function R(e, t, n) {
                 if (!_.Z.isClaimingReward(e)) {
                     s.Z.dispatch({
                         type: "QUESTS_CLAIM_REWARD_BEGIN",
@@ -195376,7 +195518,7 @@
                     }
                 }
             }
-            async function R(e) {
+            async function p(e) {
                 if (!_.Z.isFetchingRewardCode(e)) {
                     s.Z.dispatch({
                         type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
@@ -195400,7 +195542,7 @@
                     }
                 }
             }
-            async function p(e, t) {
+            async function g(e, t) {
                 let n = _.Z.isDismissingContent(e),
                     i = (0, c.GN)(t);
                 if (!n && i) {
@@ -195428,13 +195570,13 @@
                 }
             }
 
-            function g(e) {
+            function C(e) {
                 s.Z.dispatch({
                     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
                     streamKey: e
                 })
             }
-            async function C(e) {
+            async function v(e) {
                 try {
                     let t = await r.tn.post({
                         url: T.ANM.QUESTS_PREVIEW_COMPLETE(e),
@@ -195452,7 +195594,7 @@
                     })
                 }
             }
-            async function v(e) {
+            async function L(e) {
                 try {
                     let t = await r.tn.del({
                         url: T.ANM.QUESTS_PREVIEW_STATUS(e),
@@ -195470,7 +195612,7 @@
                     })
                 }
             }
-            async function L(e) {
+            async function D(e) {
                 try {
                     let t = await r.tn.del({
                         url: T.ANM.QUESTS_PREVIEW_DISMISSIBILITY(e),
@@ -195489,14 +195631,14 @@
                 }
             }
 
-            function D(e) {
+            function M(e) {
                 s.Z.dispatch({
                     type: "QUESTS_OPTIMISTIC_PROGRESS_UPDATE",
                     userStatus: e
                 })
             }
 
-            function M(e) {
+            function P(e) {
                 s.Z.dispatch({
                     type: "QUESTS_DELIVERY_OVERRIDE",
                     questId: e
@@ -198397,7 +198539,7 @@
                         questContent: n,
                         questContentCTA: _.jZ.CLAIM_REWARD,
                         questContentPosition: i
-                    }), s ? (0, c.Xv)(t.config) ? (0, d.openCollectibleRewardModal)(t, n) : (0, I.h)({
+                    }), s ? (0, c.Xv)(t.config) ? (0, d.openCollectibleRewardModal)(t, n) : (0, I.hp)({
                         questId: t.id,
                         location: n,
                         questContentPosition: i
@@ -198415,20 +198557,17 @@
             let S = e => {
                 let {
                     useReducedMotion: t,
-                    className: n,
-                    size: o = 16
-                } = e, [l, u] = (0, s.useSpring)(() => ({})), _ = r.useRef(!1), c = (0, s.animated)(a.RefreshIcon);
+                    className: n
+                } = e, [o, l] = (0, s.useSpring)(() => ({})), u = r.useRef(!1), _ = (0, s.animated)(a.RefreshIcon);
                 return {
-                    render: () => (0, i.jsx)(c, {
+                    render: () => (0, i.jsx)(_, {
                         className: n,
-                        style: t ? void 0 : l,
-                        height: null != o ? o : 24,
-                        width: null != o ? o : 24,
+                        style: t ? void 0 : o,
                         color: "currentColor",
-                        size: "custom"
+                        size: "xs"
                     }),
                     startAnimation: () => {
-                        _.current = !0, u({
+                        u.current = !0, l({
                             from: {
                                 rotate: "0deg"
                             },
@@ -198440,12 +198579,12 @@
                                 mass: 5,
                                 friction: 100
                             },
-                            loop: () => _,
+                            loop: () => u.current,
                             immediate: t
                         })
                     },
                     stopAnimation: () => {
-                        _.current = !1
+                        u.current = !1
                     }
                 }
             }
@@ -199123,19 +199262,26 @@
         341907: function(e, t, n) {
             "use strict";
             n.d(t, {
-                a: function() {
-                    return a
+                az: function() {
+                    return c
                 },
-                h: function() {
-                    return o
+                gI: function() {
+                    return d
+                },
+                hp: function() {
+                    return _
                 }
-            });
+            }), n(47120);
             var i = n(735250);
             n(470079);
             var r = n(481060),
-                s = n(617136);
+                s = n(570140),
+                o = n(230711),
+                a = n(327192),
+                l = n(617136),
+                u = n(981631);
 
-            function o(e) {
+            function _(e) {
                 let {
                     questId: t,
                     location: s,
@@ -199154,8 +199300,8 @@
                 })
             }
 
-            function a(e, t) {
-                (0, s._3)({
+            function c(e, t) {
+                (0, l._3)({
                     questId: e.id,
                     questContent: t.content,
                     questContentPosition: t.position,
@@ -199169,6 +199315,17 @@
                         questContent: t.content,
                         quest: e
                     })
+                })
+            }
+
+            function d(e) {
+                let {
+                    showInline: t
+                } = e;
+                !t && o.Z.open(u.oAB.CONNECTIONS), s.Z.dispatch({
+                    type: "CONNECTIONS_GRID_MODAL_SHOW",
+                    onComplete: a.q,
+                    includedPlatformTypes: new Set([u.ABu.XBOX, u.ABu.PLAYSTATION])
                 })
             }
         },
@@ -226753,6 +226910,20 @@
                 }), (0, r.jN)(s.S9g.USER_SETTINGS)
             }
         },
+        349728: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return s
+                }
+            }), n(47120);
+            var i = n(981631);
+            let r = new Set([i.ABu.XBOX, i.ABu.PLAYSTATION, i.ABu.PLAYSTATION_STAGING, i.ABu.CRUNCHYROLL]);
+
+            function s(e) {
+                return r.has(e.type) && e.twoWayLink
+            }
+        },
         996073: function(e, t, n) {
             "use strict";
             var i = n(470079),
@@ -226791,6 +226962,584 @@
                 }, [e, t, c, u, n, l])
             }
         },
+        494620: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return d
+                },
+                z: function() {
+                    return r
+                }
+            });
+            var i, r, s = n(735250);
+            n(470079);
+            var o = n(120356),
+                a = n.n(o),
+                l = n(481060),
+                u = n(239260);
+            (i = r || (r = {})).INFO = "info", i.WARNING = "warning";
+            let _ = {
+                    info: u.info,
+                    warning: u.warning
+                },
+                c = {
+                    info: l.CircleInformationIcon,
+                    warning: l.CircleExclamationPointIcon
+                };
+
+            function d(e) {
+                let {
+                    children: t,
+                    className: n,
+                    look: i = "info"
+                } = e, r = c[i];
+                return (0, s.jsxs)("div", {
+                    className: a()(u.root, n, _[i]),
+                    children: [(0, s.jsx)(r, {
+                        className: u.icon
+                    }), (0, s.jsx)(l.Text, {
+                        className: u.text,
+                        variant: "text-sm/medium",
+                        color: "text-normal",
+                        children: t
+                    })]
+                })
+            }
+        },
+        327192: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                q: function() {
+                    return W
+                }
+            }), n(47120), n(653041), n(773603);
+            var i = n(735250),
+                r = n(470079),
+                s = n(120356),
+                o = n.n(s),
+                a = n(442837),
+                l = n(704215),
+                u = n(692547),
+                _ = n(780384),
+                c = n(481060),
+                d = n(570140),
+                E = n(457330),
+                I = n(497321),
+                T = n(23551),
+                h = n(468026),
+                S = n(410030),
+                f = n(726542),
+                N = n(122021),
+                A = n(275759),
+                m = n(231757),
+                O = n(323588),
+                R = n(605236),
+                p = n(553795),
+                g = n(430824),
+                C = n(771845),
+                v = n(246946),
+                L = n(797717),
+                D = n(346656),
+                M = n(626135),
+                P = n(63063),
+                y = n(706454),
+                U = n(349728),
+                b = n(494620),
+                G = n(205266),
+                w = n(216153),
+                k = n(981631),
+                B = n(856651),
+                x = n(921944),
+                V = n(689938),
+                Z = n(220301),
+                H = n(611273);
+            let F = e => {
+                var t, n;
+                let r, {
+                        integration: s
+                    } = e,
+                    {
+                        isJoining: o,
+                        joinErrorMessage: l,
+                        showJoinErrorMessage: u
+                    } = (0, a.cj)([p.Z], () => ({
+                        isJoining: p.Z.isJoining(s.id),
+                        joinErrorMessage: "" === p.Z.joinErrorMessage(s.id) ? V.Z.Messages.ERROR : p.Z.joinErrorMessage(s.id),
+                        showJoinErrorMessage: void 0 !== p.Z.joinErrorMessage(s.id)
+                    }), [s.id]),
+                    _ = null != (0, a.e7)([g.Z], () => g.Z.getGuild(s.guild.id), [s.guild.id]);
+                return !_ && (r = (0, i.jsx)(c.Button, {
+                    size: c.ButtonSizes.SMALL,
+                    onClick: function() {
+                        E.Z.joinServer(s.id, () => {})
+                    },
+                    disabled: o,
+                    children: (0, i.jsx)("span", {
+                        children: o ? V.Z.Messages.JOINING_GUILD : V.Z.Messages.JOIN_GUILD
+                    })
+                })), (0, i.jsxs)("div", {
+                    className: Z.integrationWrapper,
+                    children: [(0, i.jsxs)("div", {
+                        className: Z.integration,
+                        children: [(0, i.jsx)(D.Z, {
+                            size: D.Z.Sizes.SMALL,
+                            guild: s.guild,
+                            className: Z.guildIcon
+                        }), (0, i.jsxs)("div", {
+                            className: Z.integrationInner,
+                            children: [(0, i.jsx)(c.Text, {
+                                variant: "text-md/semibold",
+                                color: "header-primary",
+                                children: s.guild.toString()
+                            }), (0, i.jsx)(c.Anchor, {
+                                href: null === (n = f.Z.get(s.type)) || void 0 === n ? void 0 : null === (t = n.getPlatformUserUrl) || void 0 === t ? void 0 : t.call(n, s.account),
+                                children: (0, i.jsx)(c.Text, {
+                                    variant: "text-xs/normal",
+                                    color: "header-secondary",
+                                    children: s.account.name
+                                })
+                            })]
+                        }), r]
+                    }), u && (0, i.jsx)(c.Text, {
+                        variant: "text-xs/normal",
+                        color: "text-danger",
+                        className: Z.integrationError,
+                        children: l
+                    })]
+                })
+            };
+
+            function Y(e) {
+                var t, n, s;
+                let o, a, l, {
+                        onDisconnect: d,
+                        account: I,
+                        theme: T,
+                        locale: S
+                    } = e,
+                    [R, p] = r.useState(I.friendSync),
+                    [g, C] = r.useState(I.visibility),
+                    [v, D] = r.useState(I.metadataVisibility),
+                    [M, y] = r.useState(I.showActivity),
+                    [x, H] = r.useState(null),
+                    [Y, j] = r.useState(null),
+                    [W, K] = r.useState(!1),
+                    [z, q] = r.useState([]),
+                    X = (0, N.rR)(I.type),
+                    Q = f.Z.get(X);
+                r.useEffect(() => {
+                    p(I.friendSync), C(I.visibility), D(I.metadataVisibility), y(I.showActivity)
+                }, [I]), r.useEffect(() => {
+                    if (!1 !== I.verified) null != x && (C(x), E.Z.setVisibility(I.type, I.id, x), H(null)), null != Y && (D(Y), E.Z.setMetadataVisibility(I.type, I.id, Y), j(null))
+                }, [I]);
+
+                function J() {
+                    (0, m.Z)({
+                        platformType: I.type,
+                        location: "User Settings"
+                    })
+                }
+
+                function $() {
+                    let e = f.Z.get(I.type),
+                        t = V.Z.Messages.DISCONNECT_ACCOUNT_BODY;
+                    (0, U.Z)(I) && (t = (0, i.jsxs)(i.Fragment, {
+                        children: [t, (0, i.jsx)(b.Z, {
+                            className: Z.infoBox,
+                            children: V.Z.Messages.CONNECTED_ACCOUNT_IS_AUTHORIZED_APP_DISCONNECT_WARNING.format({
+                                platformName: e.name
+                            })
+                        })]
+                    })), (0, c.openModal)(n => (0, i.jsx)(h.default, {
+                        title: V.Z.Messages.DISCONNECT_ACCOUNT_TITLE.format({
+                            name: e.name
+                        }),
+                        body: t,
+                        confirmText: V.Z.Messages.DISCONNECT_ACCOUNT,
+                        cancelText: V.Z.Messages.CANCEL,
+                        onConfirm: d,
+                        ...n
+                    }))
+                }
+
+                function ee(e) {
+                    let {
+                        verified: t
+                    } = I, n = e ? 1 : 0;
+                    if (e && !t) {
+                        H(n), (0, m.Z)({
+                            platformType: I.type,
+                            location: "User Settings"
+                        });
+                        return
+                    }
+                    C(n), E.Z.setVisibility(I.type, I.id, n)
+                }
+
+                function et(e) {
+                    let {
+                        verified: t
+                    } = I, n = e ? 1 : 0;
+                    if (e && !t) {
+                        j(n), (0, m.Z)({
+                            platformType: I.type,
+                            location: "User Settings"
+                        });
+                        return
+                    }
+                    D(n), E.Z.setMetadataVisibility(I.type, I.id, n)
+                }
+
+                function en(e) {
+                    p(e), E.Z.setFriendSync(I.type, I.id, e)
+                }
+
+                function ei(e) {
+                    y(e), E.Z.setShowActivity(I.type, I.id, e)
+                }
+                return (0, i.jsxs)("div", {
+                    className: Z.connection,
+                    children: [function(e) {
+                        var t;
+                        let n = f.Z.get(e.type),
+                            r = f.Z.get(X),
+                            s = "1" === (null !== (t = e.metadata) && void 0 !== t ? t : {})[B.PC.TWITTER_VERIFIED],
+                            o = null;
+                        return n.type === k.ABu.TWITTER && s && (o = (0, i.jsx)(c.Tooltip, {
+                            text: V.Z.Messages.CONNECTION_VERIFIED_ON_TWITTER,
+                            children: e => (0, i.jsx)(L.Z, {
+                                ...e,
+                                className: Z.connectionAccountLabelVerified,
+                                color: u.Z.unsafe_rawColors.TWITTER.css,
+                                children: (0, i.jsx)(c.CheckmarkSmallIcon, {
+                                    size: "xs",
+                                    color: u.Z.unsafe_rawColors.WHITE_500.css
+                                })
+                            })
+                        })), (0, i.jsxs)("div", {
+                            className: Z.connectionHeader,
+                            children: [(0, i.jsx)("img", {
+                                alt: r.name,
+                                className: Z.connectionIcon,
+                                src: (0, _.wj)(T) ? r.icon.darkSVG : r.icon.lightSVG
+                            }), (0, i.jsxs)("div", {
+                                children: [(0, i.jsx)(c.Text, {
+                                    color: "header-primary",
+                                    variant: "text-md/semibold",
+                                    className: Z.connectionAccountValue,
+                                    children: (0, i.jsxs)("div", {
+                                        className: Z.connectionAccountLabelContainer,
+                                        children: [e.name, o]
+                                    })
+                                }), (0, i.jsx)(c.Text, {
+                                    variant: "text-xs/normal",
+                                    color: "header-secondary",
+                                    className: Z.connectionAccountLabel,
+                                    children: r.name
+                                })]
+                            }), (0, i.jsx)(c.Clickable, {
+                                className: Z.connectionDelete,
+                                onClick: $,
+                                "aria-label": V.Z.Messages.SERVICE_CONNECTIONS_DISCONNECT,
+                                focusProps: {
+                                    offset: {
+                                        top: -4,
+                                        left: -4,
+                                        right: -4
+                                    }
+                                },
+                                children: (0, i.jsx)(c.CloseSmallIcon, {
+                                    size: "xs",
+                                    color: "currentColor"
+                                })
+                            })]
+                        })
+                    }(I), (t = I).twoWayLink ? null : t.type === k.ABu.XBOX ? (0, i.jsx)("div", {
+                        className: Z.upsellWrapper,
+                        children: (0, i.jsx)(w.Y, {})
+                    }) : t.type === k.ABu.PLAYSTATION ? (0, i.jsx)("div", {
+                        className: Z.upsellWrapper,
+                        children: (0, i.jsx)(G.t, {})
+                    }) : null, function(e) {
+                        var t;
+                        let n = null !== (t = e.metadata) && void 0 !== t ? t : {},
+                            r = null,
+                            s = (0, A.FI)(n[B.PC.CREATED_AT], S);
+                        switch (e.type) {
+                            case k.ABu.REDDIT:
+                                r = (0, O.oP)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.STEAM:
+                                r = (0, O.Dq)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.TWITTER:
+                                r = (0, O.rJ)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.EBAY:
+                                r = (0, O.ul)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.PAYPAL:
+                                r = (0, O.li)(n, Z.metadataItem);
+                                break;
+                            case k.ABu.TIKTOK:
+                                r = (0, O.hf)(n, Z.metadataItem)
+                        }
+                        null !== s && (null == r && (r = []), null == r || r.push((0, i.jsx)(c.Text, {
+                            variant: "text-xs/normal",
+                            color: "interactive-active",
+                            className: Z.connectedAccountVanityMetadataCreatedAt,
+                            children: V.Z.Messages.CONNECTIONS_PROFILE_MEMBER_SINCE.format({
+                                date: s
+                            })
+                        }, "member-since")));
+                        let o = z.includes(e.id),
+                            a = V.Z.Messages.REFRESH;
+                        if (null == r || 0 === r.length) {
+                            if (!0 !== f.Z.get(e.type).hasMetadata) return null;
+                            r = [(0, i.jsx)(c.TextBadge, {
+                                className: Z.connectionMetadataUpsellTag,
+                                text: V.Z.Messages.NEW
+                            }, "badge"), (0, i.jsx)(c.Text, {
+                                variant: "text-xs/normal",
+                                className: Z.connectionMetadataUpsellDescription,
+                                children: V.Z.Messages.CONNECTED_ACCOUNT_ADD_DETAILS_DESCRIPTION.format({
+                                    helpdeskUrl: P.Z.getArticleURL(k.BhN.CONNECTION_DETAILS)
+                                })
+                            }, "label")], a = V.Z.Messages.CONNECTED_ACCOUNT_ADD_DETAILS
+                        }
+                        return o && (a = V.Z.Messages.DONE), r.push((0, i.jsx)(c.Button, {
+                            className: Z.metadataRefreshButton,
+                            color: o ? c.Button.Colors.GREEN : c.Button.Colors.BRAND,
+                            size: c.Button.Sizes.SMALL,
+                            submitting: W,
+                            disabled: o,
+                            onClick: o ? void 0 : () => {
+                                K(!0), E.Z.refresh(e.type, e.id).finally(() => {
+                                    setTimeout(() => {
+                                        z.push(e.id), q(z), K(!1)
+                                    }, 2e3)
+                                })
+                            },
+                            children: a
+                        }, "refresh-button")), (0, i.jsx)("div", {
+                            className: Z.metadataContainer,
+                            children: r
+                        })
+                    }(I), (n = Q, k.BFP.has(I.type) && (o = (0, i.jsx)(c.FormSwitch, {
+                        className: Z.connectionOptionSwitch,
+                        hideBorder: !0,
+                        value: R,
+                        onChange: en,
+                        children: (0, i.jsx)(c.Text, {
+                            variant: "text-sm/semibold",
+                            children: V.Z.Messages.SYNC_FRIENDS
+                        })
+                    })), k.vbS.has(I.type) && (a = (0, i.jsx)(c.FormSwitch, {
+                        className: Z.connectionOptionSwitch,
+                        hideBorder: !0,
+                        value: M,
+                        onChange: ei,
+                        children: (0, i.jsx)(c.Text, {
+                            variant: "text-sm/semibold",
+                            children: V.Z.Messages.DISPLAY_ACTIVITY.format({
+                                platform: n.name
+                            })
+                        })
+                    })), (null === (s = f.Z.get(I.type)) || void 0 === s ? void 0 : s.hasMetadata) === !0 && (l = (0, i.jsx)(c.FormSwitch, {
+                        className: Z.connectionOptionSwitch,
+                        hideBorder: !0,
+                        value: 1 === v,
+                        onChange: et,
+                        disabled: 1 !== g || null == I.metadata,
+                        children: (0, i.jsx)(c.Text, {
+                            variant: "text-sm/semibold",
+                            children: V.Z.Messages.DISPLAY_DETAILS_ON_PROFILE
+                        })
+                    })), (0, i.jsx)("div", {
+                        className: Z.connectionOptionsWrapper,
+                        children: (0, i.jsxs)("div", {
+                            className: Z.connectionOptions,
+                            children: [(0, i.jsx)(c.FormSwitch, {
+                                className: Z.connectionOptionSwitch,
+                                hideBorder: !0,
+                                value: 1 === g,
+                                onChange: ee,
+                                children: (0, i.jsx)(c.Text, {
+                                    variant: "text-sm/semibold",
+                                    children: V.Z.Messages.DISPLAY_ON_PROFILE
+                                })
+                            }), l, a, o]
+                        })
+                    })), function() {
+                        if (I.revoked || I.integrations.length > 0) return (0, i.jsx)(c.FormDivider, {
+                            className: Z.connectedAccountSeparator
+                        })
+                    }(), I.revoked ? (0, i.jsx)(c.FormItem, {
+                        className: Z.integrationsWrapper,
+                        children: (0, i.jsx)(c.FormText, {
+                            className: Z.integrationRevoked,
+                            children: V.Z.Messages.CONNECTED_ACCOUNT_REVOKED.format({
+                                onReconnect: J
+                            })
+                        })
+                    }) : I.integrations.length > 0 ? (0, i.jsxs)(c.FormItem, {
+                        className: Z.integrationsWrapper,
+                        children: [(0, i.jsx)(c.FormTitle, {
+                            tag: c.FormTitleTags.H5,
+                            children: (0, i.jsx)(c.Text, {
+                                variant: "text-xs/semibold",
+                                children: V.Z.Messages.SUB_ENABLED_SERVERS
+                            })
+                        }), (0, i.jsx)("div", {
+                            children: I.integrations.map(e => (0, i.jsx)(F, {
+                                integration: e
+                            }, e.id))
+                        })]
+                    }) : void 0]
+                })
+            }
+
+            function j() {
+                return r.useEffect(() => () => {
+                    (0, R.EW)(l.z.NEW_CRUNCHYROLL_CONNECTION, {
+                        dismissAction: x.L.AUTO
+                    })
+                }, []), (0, i.jsxs)("div", {
+                    className: Z.connectContainer,
+                    children: [(0, i.jsx)(c.Heading, {
+                        variant: "heading-md/bold",
+                        color: "interactive-active",
+                        className: Z.connectHeader,
+                        children: V.Z.Messages.CONNECTIONS_USER_SETTINGS_CONNECT_ACCOUNTS_HEADER
+                    }), (0, i.jsx)(c.Text, {
+                        variant: "text-xs/normal",
+                        color: "header-secondary",
+                        children: V.Z.Messages.CONNECTIONS_USER_SETTINGS_CONNECT_ACCOUNTS_DESCRIPTION.format({
+                            privacyPolicyUrl: k.EYA.PRIVACY
+                        })
+                    }), (0, i.jsx)(K, {})]
+                })
+            }
+
+            function W(e) {
+                let t = f.Z.get(e);
+                (0, m.Z)({
+                    platformType: t.type
+                }), M.default.track(k.rMx.ACCOUNT_LINK_STEP, {
+                    previous_step: "desktop connections",
+                    current_step: "desktop oauth",
+                    platform_type: t.type
+                })
+            }
+
+            function K() {
+                function e() {
+                    d.Z.dispatch({
+                        type: "CONNECTIONS_GRID_MODAL_SHOW",
+                        onComplete: W
+                    })
+                }
+                let t = (0, N.fq)(),
+                    n = (0, c.useRedesignIconContext)().enabled ? 24 : 18;
+                return (0, i.jsxs)("div", {
+                    className: Z.connectionsContainer,
+                    children: [t.slice(0, 10).map(e => (0, i.jsx)(T.Z, {
+                        type: e.type,
+                        className: Z.__invalid_accountButton,
+                        innerClassName: Z.accountButtonInner
+                    }, e.type)), (0, i.jsx)(c.Tooltip, {
+                        text: V.Z.Messages.CONNECTIONS_VIEW_MORE,
+                        children: t => {
+                            let {
+                                onMouseEnter: r,
+                                onMouseLeave: s
+                            } = t;
+                            return (0, i.jsx)("div", {
+                                className: o()(Z.accountAddWrapper, Z.__invalid_accountButton),
+                                children: (0, i.jsx)(c.FocusRing, {
+                                    children: (0, i.jsx)("button", {
+                                        onMouseEnter: r,
+                                        onMouseLeave: s,
+                                        className: o()(Z.accountAddInner, Z.accountButtonInner),
+                                        type: "button",
+                                        onClick: e,
+                                        "aria-label": V.Z.Messages.ADD_NEW_CONNECTION,
+                                        children: (0, i.jsx)(c.ChevronSmallRightIcon, {
+                                            size: "custom",
+                                            color: "currentColor",
+                                            height: n,
+                                            width: n,
+                                            "aria-label": V.Z.Messages.CONNECTIONS_VIEW_MORE
+                                        })
+                                    })
+                                })
+                            })
+                        }
+                    })]
+                })
+            }
+
+            function z(e) {
+                let t, {
+                    fetching: r,
+                    accounts: s,
+                    theme: o,
+                    locale: a
+                } = e;
+                return t = r ? (0, i.jsx)(c.Spinner, {
+                    className: H.marginTop20,
+                    type: c.Spinner.Type.SPINNING_CIRCLE
+                }) : 0 === s.length ? (0, i.jsxs)(c.EmptyState, {
+                    className: H.marginTop40,
+                    theme: o,
+                    children: [(0, i.jsx)(c.EmptyStateImage, {
+                        darkSrc: n(703152),
+                        lightSrc: n(548617),
+                        width: 230,
+                        height: 220
+                    }), (0, i.jsx)(c.EmptyStateText, {
+                        note: V.Z.Messages.CONNECTED_ACCOUNTS_NONE,
+                        children: V.Z.Messages.CONNECTED_ACCOUNTS_NONE_TITLE
+                    })]
+                }) : s.filter(e => f.Z.isSupported(e.type)).map((e, t) => (0, i.jsx)(Y, {
+                    theme: o,
+                    account: e,
+                    locale: a,
+                    onDisconnect: () => (function(e) {
+                        let {
+                            type: t,
+                            id: n
+                        } = e;
+                        E.Z.disconnect(t, n)
+                    })(e)
+                }, t)), (0, i.jsx)(c.FormItem, {
+                    className: Z.connectionList,
+                    children: t
+                })
+            }
+            t.Z = () => {
+                let e = (0, a.e7)([v.Z], () => v.Z.hidePersonalInformation),
+                    t = (0, a.e7)([p.Z], () => p.Z.isFetching()),
+                    n = (0, a.e7)([p.Z], () => p.Z.getAccounts()),
+                    s = (0, S.ZP)();
+                (0, a.e7)([C.ZP], () => C.ZP.getFlattenedGuildIds());
+                let o = (0, a.e7)([y.default], () => y.default.locale);
+                return (r.useEffect(() => {
+                    E.Z.fetch()
+                }, []), e) ? (0, i.jsx)(I.Z, {}) : (0, i.jsxs)(c.FormSection, {
+                    className: Z.__invalid_connections,
+                    tag: c.FormTitleTags.H1,
+                    title: V.Z.Messages.CONNECTIONS,
+                    children: [(0, i.jsx)(j, {}), (0, i.jsx)(z, {
+                        fetching: t,
+                        accounts: n,
+                        theme: s,
+                        locale: o
+                    })]
+                })
+            }
+        },
         357269: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -226816,6 +227565,71 @@
                 }
                 return null
             }
+        },
+        249881: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                t: function() {
+                    return c
+                }
+            });
+            var i = n(735250),
+                r = n(470079),
+                s = n(481060),
+                o = n(243778),
+                a = n(921944),
+                l = n(689938),
+                u = n(832444);
+            let _ = e => {
+                    let {
+                        markAsDismissed: t
+                    } = e;
+                    return r.useEffect(() => t(a.L.UNKNOWN), [t]), (0, i.jsx)(s.TextBadge, {
+                        className: u.newBadge,
+                        text: l.Z.Messages.NEW
+                    })
+                },
+                c = e => {
+                    let {
+                        title: t,
+                        body: n,
+                        img: r,
+                        newIndicatorDismissibleContent: a,
+                        onClick: c
+                    } = e;
+                    return (0, i.jsxs)("div", {
+                        className: u.container,
+                        children: [r, (0, i.jsxs)("div", {
+                            className: u.textContainer,
+                            children: [(0, i.jsxs)("div", {
+                                className: u.headerText,
+                                children: [(0, i.jsx)(o.Z, {
+                                    contentTypes: [a],
+                                    children: e => {
+                                        let {
+                                            visibleContent: t,
+                                            markAsDismissed: n
+                                        } = e;
+                                        return t === a ? (0, i.jsx)(_, {
+                                            markAsDismissed: n
+                                        }) : null
+                                    }
+                                }), (0, i.jsx)(s.Text, {
+                                    variant: "text-md/semibold",
+                                    children: t
+                                })]
+                            }), (0, i.jsx)(s.Text, {
+                                variant: "text-xs/normal",
+                                children: n
+                            })]
+                        }), (0, i.jsx)(s.Button, {
+                            size: s.ButtonSizes.MEDIUM,
+                            onClick: c,
+                            className: u.reconnectButton,
+                            children: l.Z.Messages.RECONNECT
+                        })]
+                    })
+                }
         },
         842146: function(e, t, n) {
             "use strict";
@@ -226864,6 +227678,43 @@
                 })
             }
         },
+        205266: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                t: function() {
+                    return c
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(704215),
+                s = n(231757),
+                o = n(63063),
+                a = n(249881),
+                l = n(981631),
+                u = n(689938),
+                _ = n(359734);
+            let c = () => {
+                let e = o.Z.getArticleURL(l.BhN.PS_CONNECTION);
+                return (0, i.jsx)(a.t, {
+                    title: u.Z.Messages.PS_TWO_WAY_UPSELL_TITLE,
+                    body: u.Z.Messages.PS_TWO_WAY_UPSELL_BODY.format({
+                        help_article: e
+                    }),
+                    img: (0, i.jsx)("img", {
+                        src: _,
+                        width: "82",
+                        height: "auto",
+                        alt: ""
+                    }),
+                    newIndicatorDismissibleContent: r.z.PS_ONE_WAY_RECONNECT,
+                    onClick: () => (0, s.Z)({
+                        platformType: l.ABu.PLAYSTATION,
+                        location: "PS two way upsell"
+                    })
+                })
+            }
+        },
         349407: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -226883,6 +227734,43 @@
                     return n => (0, i.jsx)(t, {
                         analyticsLocation: e,
                         ...n
+                    })
+                })
+            }
+        },
+        216153: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Y: function() {
+                    return c
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(704215),
+                s = n(231757),
+                o = n(63063),
+                a = n(249881),
+                l = n(981631),
+                u = n(689938),
+                _ = n(195794);
+            let c = () => {
+                let e = o.Z.getArticleURL(l.BhN.XBOX_CONNECTION);
+                return (0, i.jsx)(a.t, {
+                    title: u.Z.Messages.XBOX_TWO_WAY_UPSELL_TITLE,
+                    body: u.Z.Messages.XBOX_TWO_WAY_UPSELL_BODY.format({
+                        help_article: e
+                    }),
+                    img: (0, i.jsx)("img", {
+                        src: _,
+                        width: "auto",
+                        height: "45",
+                        alt: ""
+                    }),
+                    newIndicatorDismissibleContent: r.z.XBOX_ONE_WAY_RECONNECT,
+                    onClick: () => (0, s.Z)({
+                        platformType: l.ABu.XBOX,
+                        location: "Xbox two way upsell"
                     })
                 })
             }
@@ -256580,7 +257468,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ccfd2a72759ea70eb032a145541e79f272c327ef"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "662fb5e0b51bcaaf4a6dd2ee7b5d2a387da9bdd4"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278323,7 +279211,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303140"
+                                build_number: "303145"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -285635,7 +286523,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303140", "303140"), 10);
+                let s = parseInt((n = "303145", "303145"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -327138,4 +328026,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25624.9bf4a030ead1b419b0e4.js.map
+//# sourceMappingURL=95108.6305fea474d7a59a0f79.js.map
