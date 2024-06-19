@@ -123086,12 +123086,14 @@ div:has(>div>.container_d99f08) {
 .condensedCategoryLogo_be5025 {
     position: relative;
     z-index: 1;
-    max-height: 60px;
-    margin: 0 60px;
+    height: 100px;
+    margin-right: 50px;
     align-self: flex-end
 }
 
 .condensedCategoryLogoLeft_be5025 {
+    margin-right: 0;
+    margin-left: 50px;
     align-self: flex-start
 }
 
@@ -142414,4 +142416,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d4452cda618023d2c546.css.map*/
+/*# sourceMappingURL=99387.e22e9539115c06c5ae6e.css.map*/
