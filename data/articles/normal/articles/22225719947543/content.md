@@ -4,7 +4,7 @@
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#docs-internal-guid-dec01979-7fff-188e-168a-6c87641118dd">Call of Duty</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01J0M3YTKEYJTYAZQ32GXDN24Y">Minecraft</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HXSYAWEMHMCTSD1HCX0RBPES">PUBG: BATTLEGROUNDS </a></li>
         </ul>
     </li>
@@ -20,9 +20,9 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5F0EKW79KK7RGEK1HG">Opting-out of Quests Promotions</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</a></li>
 </ul>
-<h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests </h1>
-<h2 id="docs-internal-guid-dec01979-7fff-188e-168a-6c87641118dd"><a href="https://support.discord.com/hc/articles/23678405984023" target="_blank" rel="noopener noreferrer">Call of Duty - Modern Warfare III Quest</a></h2>
-<p>The <strong><span id="docs-internal-guid-c957af24-7fff-1cd5-7c9a-241b1cd2c23f">Modern Warfare III</span></strong> Quest can be accepted on Discord from <strong>June 4, 2024</strong> until <strong>June 18, 2024 (11:59pm UTC).</strong> Quest requirements must be completed during this period to receive the reward.</p>
+<h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J0M3YTKEYJTYAZQ32GXDN24Y"><a href="https://support.discord.com/hc/articles/24192189535639/" target="_blank" rel="noopener noreferrer">Minecraft - Minecraft Trials Quest</a></h2>
+<p>The <strong>Minecraft Trials Quest</strong> can be accepted on Discord from <strong>June 20, 2024 </strong>until<strong> June 26, 2024 (4:59pm PST)</strong>. Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>July 28, 2024 (11:59pm PST)</strong>. </p>
 <h2 id="h_01HXSYAWEMHMCTSD1HCX0RBPES"><a href="https://support.discord.com/hc/en-us/articles/23351867829527/" target="_blank" rel="noopener noreferrer">PUBG: BATTLEGROUNDS - Erangel Classic Quest</a></h2>
 <p>The <strong>Erangel Classic Quest</strong> can be accepted on Discord from <strong>May 14, 2024</strong> until <strong>May 28, 2024 (11:59pm UTC)</strong>. Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>August 11, 2024</strong>.</p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
