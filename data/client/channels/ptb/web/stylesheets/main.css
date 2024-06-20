@@ -47231,8 +47231,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -70504,7 +70504,9 @@ html .invoiceCancelRow_bca5ca {
 }
 
 .circleSVG_d37103 {
-    overflow: visible
+    overflow: visible;
+    height: 100%;
+    width: 100%
 }
 
 .nitroGemAnimation_ba5739 {
@@ -142435,4 +142437,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ce511b97f95375177fb8.css.map*/
+/*# sourceMappingURL=99387.b70d42e5d45db225d97d.css.map*/

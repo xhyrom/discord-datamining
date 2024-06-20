@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303489", ", Version Hash: ").concat("cc86f5fb8ad2da322144f33091047abf4b011dff")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303502", ", Version Hash: ").concat("045703e529f836abc22fb6998f5c90a6c36ea5ec")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96161,8 +96161,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303489", "303489"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303489")), t = 0), t
+                let t = parseInt((e = "303502", "303502"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303502")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124374,8 +124374,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303489",
-                    versionHash: "cc86f5fb8ad2da322144f33091047abf4b011dff"
+                    buildNumber: "303502",
+                    versionHash: "045703e529f836abc22fb6998f5c90a6c36ea5ec"
                 }
             }
             n.d(t, {
@@ -170015,28 +170015,25 @@
                     }) && null !== (e = t || n || i) && void 0 !== e && e
                 }
         },
-        200120: function(e, t, n) {
+        905405: function(e, t, n) {
             "use strict";
             n.d(t, {
-                B: function() {
-                    return o
+                p: function() {
+                    return s
                 }
-            }), n(653041);
-            var i = n(470079),
-                r = n(592204),
-                s = n(712950);
-            let o = () => {
+            });
+            var i = n(592204),
+                r = n(712950);
+            let s = () => {
+                var e;
                 let {
-                    profanity: e,
-                    sexualContent: t,
-                    slurs: n
-                } = (0, s.g)(), o = (0, r.Xo)({
+                    profanity: t,
+                    sexualContent: n,
+                    slurs: s
+                } = (0, r.g)();
+                return !!(0, i.Xo)({
                     location: "use-should-filter-keywords"
-                });
-                return i.useMemo(() => {
-                    let i = [];
-                    return o ? (e && i.push("profanity"), t && i.push("sexualContent"), n && i.push("slurs"), i.join(":")) : null
-                }, [e, t, n, o])
+                }) && null !== (e = t || n || s) && void 0 !== e && e
             }
         },
         880027: function(e, t, n) {
@@ -180559,7 +180556,7 @@
                 }
             });
             var i = n(470079),
-                r = n(200120),
+                r = n(905405),
                 s = n(626135),
                 o = n(937889),
                 a = n(761910),
@@ -180580,7 +180577,7 @@
                     allowSubtext: f = !1,
                     previewLinkTarget: N = !1,
                     viewingChannelId: A
-                } = t, m = (0, r.B)();
+                } = t, m = (0, r.p)();
                 return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isUnsupported ? {
                     content: u.Z.Messages.MESSAGE_UNSUPPORTED,
                     hasSpoilerEmbeds: !1
@@ -180599,7 +180596,7 @@
                     allowSubtext: f,
                     allowDevLinks: S,
                     previewLinkTarget: N,
-                    shouldFilterKeywords: null != m,
+                    shouldFilterKeywords: m,
                     viewingChannelId: A
                 }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, c, d, E, I, T, h, N, f, m])
             }
@@ -180859,8 +180856,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718904860624",
-                                    build_number: "303489"
+                                    built_at: "1718905384895",
+                                    build_number: "303502"
                                 }
                             },
                             retries: 1
@@ -187632,31 +187629,6 @@
                 CONNECTION_OPEN: c
             })
         },
-        351742: function(e, t, n) {
-            "use strict";
-            let i = (0, n(818083).B)({
-                kind: "user",
-                id: "2024-03_perks_demo_hd_streaming",
-                label: "Perks Demo: HD Streaming",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "With HD Streaming Perk Demo enabled - ML predicted",
-                    config: {
-                        enabled: !0
-                    }
-                }, {
-                    id: 2,
-                    label: "With HD Streaming Perk Demo enabled - no ML prediction",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-            t.Z = i
-        },
         120522: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -187851,8 +187823,8 @@
             var i = n(594174),
                 r = n(74538),
                 s = n(736871),
-                o = n(351742),
-                a = n(114064),
+                o = n(114064),
+                a = n(1163),
                 l = n(474936),
                 u = n(37113);
 
@@ -187869,14 +187841,14 @@
                         autoTrackExposure: !1
                     }), {
                         enabled: t
-                    } = o.Z.getCurrentConfig({
+                    } = a.Z.getCurrentConfig({
                         location: "shouldFetchPerksDemos"
                     }, {
                         autoTrackExposure: !1
                     });
-                    return _() && a.Z.shouldFetch() && e && t
+                    return _() && o.Z.shouldFetch() && e && t
                 },
-                d = e => _() && a.Z.shouldActivate(e),
+                d = e => _() && o.Z.shouldActivate(e),
                 E = (e, t) => e === u.LY.RESOLUTION_720 && t !== u.ws.FPS_60
         },
         474936: function(e, t, n) {
@@ -189919,6 +189891,34 @@
                     hqStreamingPopoutDismissed: e
                 })
             }
+        },
+        1163: function(e, t, n) {
+            "use strict";
+            let i = (0, n(818083).B)({
+                kind: "user",
+                id: "2024-06_perks_demo_hd_streaming_opt_in",
+                label: "Perks Demo: HD Streaming",
+                defaultConfig: {
+                    enabled: !1,
+                    variant1: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Perk Demo Opt In Variant 1",
+                    config: {
+                        enabled: !0,
+                        variant1: !0
+                    }
+                }, {
+                    id: 2,
+                    label: "Perk Demo Opt In Variant 2",
+                    config: {
+                        enabled: !0,
+                        variant1: !1
+                    }
+                }]
+            });
+            t.Z = i
         },
         614011: function(e, t, n) {
             "use strict";
@@ -258898,7 +258898,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "cc86f5fb8ad2da322144f33091047abf4b011dff"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "045703e529f836abc22fb6998f5c90a6c36ea5ec"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279533,7 +279533,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303489"
+                                build_number: "303502"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286845,7 +286845,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303489", "303489"), 10);
+                let s = parseInt((n = "303502", "303502"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328348,4 +328348,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.74af2147d9cc8b0105de.js.map
+//# sourceMappingURL=79892.3ad75b48a1b4181a7af0.js.map
