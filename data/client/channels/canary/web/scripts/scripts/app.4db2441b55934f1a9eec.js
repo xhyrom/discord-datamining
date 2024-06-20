@@ -8108,7 +8108,6 @@
                 gameDetails: "gameDetails_e881fc",
                 mainContent: "mainContent_e881fc",
                 emptyFriendsWhoPlay: "emptyFriendsWhoPlay_e881fc",
-                summary: "summary_e881fc",
                 imageScroller: "imageScroller_e881fc",
                 gameArtwork: "gameArtwork_e881fc",
                 similarGames: "similarGames_e881fc"

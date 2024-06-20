@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303453", ", Version Hash: ").concat("4b682379cff371fb681b48fc15f2d6c660d808a1")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303467", ", Version Hash: ").concat("be7db0da89295d2a477adbd11dc3f62073900a68")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42423,6 +42423,7 @@
                 APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER: "Recents",
                 APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER_OPTION_COMMANDS: "Commands",
                 APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER_OPTION_APPS: "Apps",
+                APP_LAUNCHER_HOME_RECENT_VIEW_ALL: "View All",
                 APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Installed",
                 APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER: "Apps in this Server",
                 APP_LAUNCHER_COMMAND_LIST_SORT_HEADER: "Sort By",
@@ -83963,7 +83964,7 @@
                 ub: function() {
                     return a
                 }
-            }), (u = i || (i = {}))[u.BUILT_IN = 0] = "BUILT_IN", u[u.APPLICATION = 1] = "APPLICATION", (_ = r || (r = {}))[_.BUILT_IN = 0] = "BUILT_IN", _[_.BUILT_IN_TEXT = 1] = "BUILT_IN_TEXT", _[_.BUILT_IN_INTEGRATION = 2] = "BUILT_IN_INTEGRATION", _[_.BOT = 3] = "BOT", _[_.PLACEHOLDER = 4] = "PLACEHOLDER", (c = s || (s = {}))[c.ROLE = 1] = "ROLE", c[c.USER = 2] = "USER", c[c.CHANNEL = 3] = "CHANNEL", (d = o || (o = {})).DISCOVERY = "discovery", d.SUGGESTION = "suggestion", d.MENTION = "mention", d.PASTE = "paste", d.RECALL = "recall", d.POPULAR_COMMANDS = "popular_commands", d.MJ_CHAT_BAR = "mj_chat_bar", d.QUERY = "query", d.SLASH_UI = "slash_ui", d.APP_LAUNCHER = "app_launcher", d.APP_LAUNCHER_HOME = "app_launcher_home", d.APP_LAUNCHER_HOME_SEARCH = "app_launcher_home_search", d.APP_LAUNCHER_APPLICATION_VIEW = "app_launcher_application_view", d.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = "app_launcher_application_view_frecent", d.APP_LAUNCHER_SLASH_SEARCH = "app_launcher_slash_search", (E = a || (a = {}))[E.BUILT_IN = 1] = "BUILT_IN", E[E.FRECENCY = 2] = "FRECENCY", E[E.APP = 3] = "APP", (I = l || (l = {}))[I.CHAT = 0] = "CHAT", I[I.APPLICATION_LAUNCHER = 1] = "APPLICATION_LAUNCHER"
+            }), (u = i || (i = {}))[u.BUILT_IN = 0] = "BUILT_IN", u[u.APPLICATION = 1] = "APPLICATION", (_ = r || (r = {}))[_.BUILT_IN = 0] = "BUILT_IN", _[_.BUILT_IN_TEXT = 1] = "BUILT_IN_TEXT", _[_.BUILT_IN_INTEGRATION = 2] = "BUILT_IN_INTEGRATION", _[_.BOT = 3] = "BOT", _[_.PLACEHOLDER = 4] = "PLACEHOLDER", (c = s || (s = {}))[c.ROLE = 1] = "ROLE", c[c.USER = 2] = "USER", c[c.CHANNEL = 3] = "CHANNEL", (d = o || (o = {})).DISCOVERY = "discovery", d.SUGGESTION = "suggestion", d.MENTION = "mention", d.PASTE = "paste", d.RECALL = "recall", d.POPULAR_COMMANDS = "popular_commands", d.MJ_CHAT_BAR = "mj_chat_bar", d.QUERY = "query", d.SLASH_UI = "slash_ui", d.APP_LAUNCHER = "app_launcher", d.APP_LAUNCHER_HOME = "app_launcher_home", d.APP_LAUNCHER_HOME_SEARCH = "app_launcher_home_search", d.APP_LAUNCHER_APPLICATION_VIEW = "app_launcher_application_view", d.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = "app_launcher_application_view_frecent", d.APP_LAUNCHER_SLASH_SEARCH = "app_launcher_slash_search", d.APP_LAUNCHER_FRECENTS_VIEW_ALL = "app_launcher_frecents_view_all", (E = a || (a = {}))[E.BUILT_IN = 1] = "BUILT_IN", E[E.FRECENCY = 2] = "FRECENCY", E[E.APP = 3] = "APP", (I = l || (l = {}))[I.CHAT = 0] = "CHAT", I[I.APPLICATION_LAUNCHER = 1] = "APPLICATION_LAUNCHER"
         },
         531010: function(e, t, n) {
             "use strict";
@@ -96163,8 +96164,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303453", "303453"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303453")), t = 0), t
+                let t = parseInt((e = "303467", "303467"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303467")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124376,8 +124377,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303453",
-                    versionHash: "4b682379cff371fb681b48fc15f2d6c660d808a1"
+                    buildNumber: "303467",
+                    versionHash: "be7db0da89295d2a477adbd11dc3f62073900a68"
                 }
             }
             n.d(t, {
@@ -180843,8 +180844,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718903451919",
-                                    build_number: "303453"
+                                    built_at: "1718904086438",
+                                    build_number: "303467"
                                 }
                             },
                             retries: 1
@@ -258877,7 +258878,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4b682379cff371fb681b48fc15f2d6c660d808a1"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "be7db0da89295d2a477adbd11dc3f62073900a68"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279512,7 +279513,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303453"
+                                build_number: "303467"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286824,7 +286825,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303453", "303453"), 10);
+                let s = parseInt((n = "303467", "303467"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328327,4 +328328,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.25bea4e39cdaff487778.js.map
+//# sourceMappingURL=79892.5ae5a69326ff47615f26.js.map
