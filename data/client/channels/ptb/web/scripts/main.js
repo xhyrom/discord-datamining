@@ -13807,7 +13807,8 @@
                     },
                     crosspostMessage: (e, t) => r.tn.post({
                         url: el.ANM.MESSAGE_CROSSPOST(e, t),
-                        oldFormErrors: !0
+                        oldFormErrors: !0,
+                        failImmediatelyWhenRateLimited: !0
                     }).catch(e => {
                         let t;
                         t = 429 === e.status ? ec.Z.Messages.PUBLISH_FOLLOWED_NEWS_FAIL_BODY.format({
@@ -40664,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303531", ", Version Hash: ").concat("53135bcf6a9a8b6f1549aca65909caf1112fba6c")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303557", ", Version Hash: ").concat("3b02892f7457f8617efde12cc00159fb083db627")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96161,8 +96162,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303531", "303531"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303531")), t = 0), t
+                let t = parseInt((e = "303557", "303557"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303557")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124374,8 +124375,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303531",
-                    versionHash: "53135bcf6a9a8b6f1549aca65909caf1112fba6c"
+                    buildNumber: "303557",
+                    versionHash: "3b02892f7457f8617efde12cc00159fb083db627"
                 }
             }
             n.d(t, {
@@ -180856,8 +180857,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718907918485",
-                                    build_number: "303531"
+                                    built_at: "1718909331132",
+                                    build_number: "303557"
                                 }
                             },
                             retries: 1
@@ -193072,7 +193073,7 @@
                                 priceOptions: l,
                                 textVariant: i ? "heading-lg/normal" : void 0,
                                 shouldUseModifiedCopy: i,
-                                className: i ? K.modifiedPrice : void 0
+                                className: i ? s ? K.modifiedPrices : K.modifiedPrice : void 0
                             })]
                         }), (0, c.jsx)("div", {
                             children: (0, c.jsx)(et, {
@@ -193277,7 +193278,7 @@
                                 priceOptions: _,
                                 textVariant: i ? "heading-lg/normal" : void 0,
                                 shouldUseModifiedCopy: i,
-                                className: K.modifiedPrice
+                                className: i ? s ? K.modifiedPrices : K.modifiedPrice : void 0
                             })]
                         }), (0, c.jsx)("div", {
                             children: (0, c.jsx)(ei, {
@@ -196703,7 +196704,8 @@
                         url: h.ANM.QUEST_ON_CONSOLE_START(e),
                         query: t ? {
                             preview: t
-                        } : void 0
+                        } : void 0,
+                        failImmediatelyWhenRateLimited: !0
                     })).body;
                     if (null != n.quest_user_status) s.Z.dispatch({
                         type: "QUESTS_USER_STATUS_UPDATE",
@@ -258898,7 +258900,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "53135bcf6a9a8b6f1549aca65909caf1112fba6c"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3b02892f7457f8617efde12cc00159fb083db627"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279533,7 +279535,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303531"
+                                build_number: "303557"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286845,7 +286847,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303531", "303531"), 10);
+                let s = parseInt((n = "303557", "303557"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -310781,22 +310783,22 @@
                     return l.J
                 },
                 Jt: function() {
-                    return L
+                    return D
                 },
                 K0: function() {
-                    return p
+                    return g
                 },
                 f$: function() {
                     return a.f$
                 },
                 lg: function() {
-                    return C
+                    return v
                 },
                 sX: function() {
                     return a.Hx
                 },
                 tn: function() {
-                    return R
+                    return p
                 },
                 yZ: function() {
                     return u.H
@@ -310849,9 +310851,9 @@
                     null === (n = t.onRequestProgress) || void 0 === n || n.call(t, e)
                 });
                 let N = () => {
-                    t.backoff = null != t.backoff ? t.backoff : new s.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => v(t.url).then(() => E(e, t, n, i, o)))
+                    t.backoff = null != t.backoff ? t.backoff : new s.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, i, o)))
                 };
-                null == g || null === (I = g.prepareRequest) || void 0 === I || I.call(g, f), f.ok(e => null != e.status), f.then(r => {
+                null == C || null === (I = C.prepareRequest) || void 0 === I || I.call(C, f), f.ok(e => null != e.status), f.then(r => {
                     var s, u, _;
                     if (null != t.retries && t.retries-- > 0 && d.has(r.status)) return N();
                     let c = {
@@ -310881,7 +310883,7 @@
                                 err: e
                             }))
                         };
-                    if ((null == t ? void 0 : null === (s = t.interceptResponse) || void 0 === s ? void 0 : s.call(t, r, T, S)) !== !0 && (null == g ? void 0 : null === (u = g.interceptResponse) || void 0 === u ? void 0 : u.call(g, r, T, S)) !== !0) {
+                    if ((null == t ? void 0 : null === (s = t.interceptResponse) || void 0 === s ? void 0 : s.call(t, r, T, S)) !== !0 && (null == C ? void 0 : null === (u = C.interceptResponse) || void 0 === u ? void 0 : u.call(C, r, T, S)) !== !0) {
                         if (r.ok) n(c);
                         else {
                             if (t.oldFormErrors && (null == c ? void 0 : null === (_ = c.body) || void 0 === _ ? void 0 : _.code) === a.f$) {
@@ -310926,46 +310928,58 @@
             function h(e, t) {
                 let n = I.get(e.url);
                 if (null != t && 429 === t.status) {
-                    var i, r;
-                    let s = (null === (i = t.body) || void 0 === i ? void 0 : i.retry_after) || 5,
-                        o = Date.now() + 1e3 * s;
+                    var i, r, s;
+                    let o = (null === (i = t.body) || void 0 === i ? void 0 : i.retry_after) || 5,
+                        a = Date.now() + 1e3 * o;
                     if (null != n) {
-                        if (n.retryAfterTimestamp < o) c.verbose("cleanupRequestEntry: extending rate limit for ", e.url), clearTimeout(n.timeoutId);
+                        if (n.retryAfterTimestamp < a) c.verbose("cleanupRequestEntry: extending rate limit for ", e.url), clearTimeout(n.timeoutId);
                         else {
                             c.verbose("cleanupRequestEntry: already has rate limit for ", e.url);
                             return
                         }
                     }
-                    c.verbose("cleanupRequestEntry: rate limit for ".concat(e.url, " retry after ").concat(s, " seconds"));
-                    let a = setTimeout(() => T(e.url), 1e3 * s);
+                    c.verbose("cleanupRequestEntry: rate limit for ".concat(e.url, " retry after ").concat(o, " seconds"));
+                    let l = setTimeout(() => T(e.url), 1e3 * o);
                     I.set(e.url, {
-                        queue: null !== (r = null == n ? void 0 : n.queue) && void 0 !== r ? r : [],
-                        retryAfterTimestamp: o,
-                        timeoutId: a
+                        queue: null !== (s = null == n ? void 0 : n.queue) && void 0 !== s ? s : [],
+                        retryAfterTimestamp: a,
+                        latestErrorMessage: String(null === (r = t.body) || void 0 === r ? void 0 : r.message),
+                        timeoutId: l
                     })
                 } else null != n && n.retryAfterTimestamp < Date.now() && (c.verbose("cleanupRequestEntry: rate limit for ", e.url, "expired"), T(e.url))
             }
+            let S = (e, t) => {
+                let n = Math.round((t.retryAfterTimestamp - Date.now()) / 1e3);
+                return e({
+                    status: 429,
+                    body: {
+                        message: t.latestErrorMessage,
+                        retry_after: n
+                    }
+                })
+            };
 
-            function S(e, t, n) {
+            function f(e, t, n) {
                 return new Promise((i, r) => {
                     "string" == typeof t && (t = {
                         url: t
                     });
                     let s = I.get(t.url);
+                    if (null != s && t.failImmediatelyWhenRateLimited) return S(r, s);
                     null != s ? (c.verbose("makeRequest: queueing request for ", t.url), s.queue.push(E.bind(null, e, t, i, r, n))) : E(e, t, i, r, n)
                 })
             }
-            let f = S.bind(null, "get"),
-                N = S.bind(null, "post"),
-                A = S.bind(null, "put"),
-                m = S.bind(null, "patch"),
-                O = S.bind(null, "del"),
-                R = {
-                    get: f,
-                    post: N,
-                    put: A,
-                    patch: m,
-                    del: O
+            let N = f.bind(null, "get"),
+                A = f.bind(null, "post"),
+                m = f.bind(null, "put"),
+                O = f.bind(null, "patch"),
+                R = f.bind(null, "del"),
+                p = {
+                    get: N,
+                    post: A,
+                    put: m,
+                    patch: O,
+                    del: R
                 };
             if (n.g.isServerRendering) {
                 let e = (e, t) => Promise.resolve({
@@ -310975,22 +310989,22 @@
                     body: null,
                     text: ""
                 });
-                f = e, N = e, A = e, m = e, O = e
+                N = e, A = e, m = e, O = e, R = e
             }
 
-            function p() {
+            function g() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
                 return "https:" + window.GLOBAL_ENV.API_ENDPOINT + (e ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
             }
-            let g = null;
+            let C = null;
 
-            function C(e) {
-                g = e
+            function v(e) {
+                C = e
             }
-            let v = () => Promise.resolve();
+            let L = () => Promise.resolve();
 
-            function L(e) {
-                v = e
+            function D(e) {
+                L = e
             }
         },
         817109: function(e, t, n) {
@@ -328348,4 +328362,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.f7af88556eccf3dabda9.js.map
+//# sourceMappingURL=79892.12f589e0c28d7404f9ba.js.map
