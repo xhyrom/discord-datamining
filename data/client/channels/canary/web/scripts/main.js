@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303480", ", Version Hash: ").concat("62920b4be17b082f6324ef233083107eb3c47258")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303489", ", Version Hash: ").concat("cc86f5fb8ad2da322144f33091047abf4b011dff")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42425,6 +42425,7 @@
                 APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER_OPTION_APPS: "Apps",
                 APP_LAUNCHER_HOME_RECENT_VIEW_ALL: "View All",
                 APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Installed",
+                APP_LAUNCHER_HOME_RECOMMENDATIONS_HEADER: "Recommendations",
                 APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER: "Apps in this Server",
                 APP_LAUNCHER_COMMAND_LIST_SORT_HEADER: "Sort By",
                 APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_POPULAR: "Popular",
@@ -96160,8 +96161,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303480", "303480"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303480")), t = 0), t
+                let t = parseInt((e = "303489", "303489"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303489")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124373,8 +124374,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303480",
-                    versionHash: "62920b4be17b082f6324ef233083107eb3c47258"
+                    buildNumber: "303489",
+                    versionHash: "cc86f5fb8ad2da322144f33091047abf4b011dff"
                 }
             }
             n.d(t, {
@@ -143874,6 +143875,7 @@
                                 type: "CONNECTION_OPEN",
                                 sessionId: e.session_id,
                                 authSessionIdHash: e.auth_session_id_hash,
+                                staticAuthSessionId: e.static_client_session_id,
                                 user: e.user,
                                 users: e.users,
                                 guilds: r,
@@ -146539,22 +146541,22 @@
                                 streamKey: this._streamKey
                             })), e === C.hes.RTC_CONNECTED) {
                             var i;
-                            null === (i = this._connection) || void 0 === i || i.on(s.Sh.ScreenshareFinish, (e, t, n, i, r, s, o, a, l, u, _, c, I, T) => {
-                                let h = this.getMediaSessionId(),
-                                    S = this.getRTCConnectionId(),
-                                    f = this.getGoLiveSource();
-                                (0, m.q)().then(N => {
-                                    var A, m, R;
-                                    let p = null;
-                                    if (null != N) {
+                            null === (i = this._connection) || void 0 === i || i.on(s.Sh.ScreenshareFinish, (e, t, n, i, r, s, o, a, l, u, _, c, I, T, h, S) => {
+                                let f = this.getMediaSessionId(),
+                                    N = this.getRTCConnectionId(),
+                                    A = this.getGoLiveSource();
+                                (0, m.q)().then(m => {
+                                    var R, p, g;
+                                    let L = null;
+                                    if (null != m) {
                                         let {
                                             cpu_brand: e,
                                             cpu_vendor: t,
                                             cpu_memory: n,
                                             gpu_brand: i,
                                             gpu_memory: r
-                                        } = N;
-                                        p = {
+                                        } = m;
+                                        L = {
                                             cpu_brand: e,
                                             cpu_vendor: t,
                                             cpu_memory: n,
@@ -146562,14 +146564,14 @@
                                             gpu_memory: r
                                         }
                                     }
-                                    let g = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != i ? i : 0) + (null != r ? r : 0) + (null != s ? s : 0) + (null != a ? a : 0) + (null != T ? T : 0) + (null != I ? I : 0),
-                                        L = (null == f ? void 0 : null === (A = f.desktopSource) || void 0 === A ? void 0 : A.sourcePid) != null ? E.ZP.getGameForPID(f.desktopSource.sourcePid) : null,
+                                    let D = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != i ? i : 0) + (null != r ? r : 0) + (null != s ? s : 0) + (null != u ? u : 0) + (null != S ? S : 0) + (null != h ? h : 0),
+                                        M = (null == A ? void 0 : null === (R = A.desktopSource) || void 0 === R ? void 0 : R.sourcePid) != null ? E.ZP.getGameForPID(A.desktopSource.sourcePid) : null,
                                         {
-                                            gameName: D,
-                                            gameId: M,
-                                            exe: P,
-                                            distributor: y
-                                        } = (0, d.G8)(L);
+                                            gameName: P,
+                                            gameId: y,
+                                            exe: U,
+                                            distributor: b
+                                        } = (0, d.G8)(M);
                                     O.default.track(C.rMx.SCREENSHARE_FINISHED, {
                                         screenshare_frames: e,
                                         videohook_frames: t,
@@ -146578,23 +146580,25 @@
                                         hybrid_videohook_frames: r,
                                         hybrid_graphics_capture_frames: s,
                                         hybrid_capture_method_switches: o,
-                                        quartz_frames: a,
-                                        screencapturekit_frames: T,
-                                        go_live_camera_frames: I,
-                                        total_frames: g,
-                                        desktop_capturer_type: l,
-                                        media_session_id: h,
-                                        rtc_connection_id: S,
+                                        hybrid_gdi_bitblt_frames: a,
+                                        hybrid_gdi_printwindow_frames: l,
+                                        quartz_frames: u,
+                                        screencapturekit_frames: S,
+                                        go_live_camera_frames: h,
+                                        total_frames: D,
+                                        desktop_capturer_type: _,
+                                        media_session_id: f,
+                                        rtc_connection_id: N,
                                         context: v.Yn.STREAM,
-                                        screens: u,
-                                        windows: _,
-                                        activity: c,
-                                        soundshare_session: null !== (R = null == f ? void 0 : null === (m = f.desktopSource) || void 0 === m ? void 0 : m.soundshareSession) && void 0 !== R ? R : void 0,
-                                        share_game_name: D,
-                                        share_game_id: M,
-                                        share_game_exe: P,
-                                        share_game_distributor: y,
-                                        ...p
+                                        screens: c,
+                                        windows: I,
+                                        activity: T,
+                                        soundshare_session: null !== (g = null == A ? void 0 : null === (p = A.desktopSource) || void 0 === p ? void 0 : p.soundshareSession) && void 0 !== g ? g : void 0,
+                                        share_game_name: P,
+                                        share_game_id: y,
+                                        share_game_exe: U,
+                                        share_game_distributor: b,
+                                        ...L
                                     })
                                 })
                             })
@@ -180855,8 +180859,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718904519672",
-                                    build_number: "303480"
+                                    built_at: "1718904860624",
+                                    build_number: "303489"
                                 }
                             },
                             retries: 1
@@ -236749,27 +236753,28 @@
                 V = null,
                 Z = null,
                 H = null,
-                F = D.u34.NONE,
-                Y = D.$ib.NONE,
-                j = !1,
-                W = [],
-                K = "",
-                z = !1,
-                q = null,
-                X = !1,
+                F = null,
+                Y = D.u34.NONE,
+                j = D.$ib.NONE,
+                W = !1,
+                K = [],
+                z = "",
+                q = !1,
+                X = null,
                 Q = !1,
-                J = "",
-                $ = !1,
+                J = !1,
+                $ = "",
                 ee = !1,
-                et = {},
+                et = !1,
                 en = {},
-                ei = null,
+                ei = {},
                 er = null,
                 es = null,
                 eo = null,
-                ea = !1;
+                ea = null,
+                el = !1;
 
-            function el(e) {
+            function eu(e) {
                 let t = {};
                 if (t.error_code = e.code, null != e.errors) {
                     for (let n of Object.keys(e.errors)) t[n] = [e.getFirstFieldErrorMessage(n)];
@@ -236778,7 +236783,7 @@
                 return t.message = e.message, null != e.retryAfter && (t.retry_after = e.retryAfter), t
             }
 
-            function eu(e) {
+            function e_(e) {
                 let t = null != c.getToken(),
                     n = null != T.K.get(D.B1h);
                 y.verbose(e, {
@@ -236787,20 +236792,20 @@
                 })
             }
 
-            function e_() {
+            function ec() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-                if (V = T.K.get(U), null != er) return er;
-                let t = null != V ? V : c.getToken();
-                if (!(!(0, O.m1)() || !e && null != t || v.Z.isHandoffAvailable())) ec({
+                if (Z = T.K.get(U), null != es) return es;
+                let t = null != Z ? Z : c.getToken();
+                if (!(!(0, O.m1)() || !e && null != t || v.Z.isHandoffAvailable())) ed({
                     withGuildExperiments: !0
                 })
             }
 
-            function ec(e) {
+            function ed(e) {
                 let {
                     withGuildExperiments: t
                 } = e, n = {}, i = p.default.getSuperPropertiesBase64();
-                null != i && (n["X-Super-Properties"] = i), null != V && (n["X-Fingerprint"] = V), er = I.tn.get({
+                null != i && (n["X-Super-Properties"] = i), null != Z && (n["X-Fingerprint"] = Z), es = I.tn.get({
                     url: D.ANM.EXPERIMENTS,
                     query: {
                         with_guild_experiments: t
@@ -236825,66 +236830,66 @@
                         fingerprint: t,
                         experiments: n,
                         guildExperiments: i
-                    }), er = null, (0, f.$L)()
+                    }), es = null, (0, f.$L)()
                 }, () => {
-                    er = null, h.Z.dispatch({
+                    es = null, h.Z.dispatch({
                         type: "EXPERIMENTS_FETCH_FAILURE"
                     })
                 })
             }
 
-            function ed() {
-                Z = V, V = null, T.K.remove(U)
+            function eE() {
+                H = Z, Z = null, T.K.remove(U)
             }
 
-            function eE(e, t) {
-                eu("setAuthToken called."), c.setToken(e, t)
-            }
-
-            function eI() {
-                return eu("removeAuthToken called."), c.removeToken()
+            function eI(e, t) {
+                e_("setAuthToken called."), c.setToken(e, t)
             }
 
             function eT() {
-                j = !0, eh(), h.Z.wait(() => {
+                return e_("removeAuthToken called."), c.removeToken()
+            }
+
+            function eh() {
+                W = !0, eS(), h.Z.wait(() => {
                     (0, O.uL)(D.Z5c.REGISTER)
                 })
             }
 
-            function eh(e) {
+            function eS(e) {
                 var t;
-                eu("handleLogout called.");
-                let n = eI();
-                !(null !== (t = null == e ? void 0 : e.isSwitchingAccount) && void 0 !== t && t) && (n && ed(), e_()), E.ZP.PersistedStore.clearAll({
+                e_("handleLogout called.");
+                let n = eT();
+                !(null !== (t = null == e ? void 0 : e.isSwitchingAccount) && void 0 !== t && t) && (n && eE(), ec()), E.ZP.PersistedStore.clearAll({
                     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
                     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
                 }), L.Z.clearAll();
-                A.ZH(), C.Z.clearUser(), T.K.remove(G), w = null, F = (null == e ? void 0 : e.isSwitchingAccount) ? D.u34.LOGGING_IN : D.u34.NONE, Y = D.$ib.NONE, K = "", J = "", q = null, z = !1, $ = !1, ee = !1, et = {}, en = {}, ea = !1
+                A.ZH(), C.Z.clearUser(), T.K.remove(G), w = null, Y = (null == e ? void 0 : e.isSwitchingAccount) ? D.u34.LOGGING_IN : D.u34.NONE, j = D.$ib.NONE, z = "", $ = "", X = null, q = !1, ee = !1, et = !1, en = {}, ei = {}, el = !1
             }
-            class eS extends(s = E.ZP.Store) {
+            class ef extends(s = E.ZP.Store) {
                 initialize() {
-                    w = T.K.get(G), k = T.K.get(b), es = T.K.get("login_cache"), null == c.getToken() && e_(), this.addChangeListener(() => (0, N.u)(w))
+                    w = T.K.get(G), k = T.K.get(b), eo = T.K.get("login_cache"), null == c.getToken() && ec(), this.addChangeListener(() => (0, N.u)(w))
                 }
                 getEmail() {
                     return k
                 }
                 getLogin() {
-                    return es
+                    return eo
                 }
                 didVerifyFail() {
-                    return $
-                }
-                getVerifyErrors() {
-                    return et
-                }
-                didVerifySucceed() {
                     return ee
                 }
+                getVerifyErrors() {
+                    return en
+                }
+                didVerifySucceed() {
+                    return et
+                }
                 getLoginStatus() {
-                    return F
+                    return Y
                 }
                 getRegisterStatus() {
-                    return Y
+                    return j
                 }
                 getId() {
                     return w
@@ -236895,6 +236900,9 @@
                 getAuthSessionIdHash() {
                     return x
                 }
+                getStaticAuthSessionId() {
+                    return V
+                }
                 getToken() {
                     return (0, g.LP)()
                 }
@@ -236902,84 +236910,84 @@
                     return (0, g.$8)()
                 }
                 getFingerprint() {
-                    return V
+                    return Z
                 }
                 getAnalyticsToken() {
-                    return H
+                    return F
                 }
                 getErrors() {
-                    return en
+                    return ei
                 }
                 getMFATicket() {
-                    return K
-                }
-                getMFASMS() {
                     return z
                 }
-                getMFATotp() {
-                    return X
+                getMFASMS() {
+                    return q
                 }
-                getMFABackup() {
+                getMFATotp() {
                     return Q
                 }
+                getMFABackup() {
+                    return J
+                }
                 getMFAWebAuthn() {
-                    return q
+                    return X
                 }
                 getMFAMethods() {
                     let e = [];
-                    return null != q && e.push({
+                    return null != X && e.push({
                         type: "webauthn",
-                        challenge: q
-                    }), X && e.push({
-                        type: "totp",
-                        backup_codes_allowed: Q
+                        challenge: X
                     }), Q && e.push({
+                        type: "totp",
+                        backup_codes_allowed: J
+                    }), J && e.push({
                         type: "backup"
-                    }), z && e.push({
+                    }), q && e.push({
                         type: "sms"
                     }), e
                 }
                 hasTOTPEnabled() {
-                    return W.includes(S.Pi.TOTP)
+                    return K.includes(S.Pi.TOTP)
                 }
                 hasSMSEnabled() {
-                    return W.includes(S.Pi.SMS)
+                    return K.includes(S.Pi.SMS)
                 }
                 hasWebAuthnEnabled() {
-                    return W.includes(S.Pi.WEBAUTHN)
+                    return K.includes(S.Pi.WEBAUTHN)
                 }
                 getMaskedPhone() {
-                    return J
+                    return $
                 }
                 getCredentials() {
                     if (null == i) throw Error("no credentials");
                     return i
                 }
                 getVerifyingUserId() {
-                    return ei
+                    return er
                 }
                 getCurrentRegistrationOptions() {
                     return r
                 }
                 allowLogoutRedirect() {
-                    return !j
+                    return !W
                 }
                 getWebAuthnChallenge() {
-                    return q
+                    return X
                 }
                 getSuspendedUserToken() {
-                    return eo
-                }
-                getIsPasswordlessActive() {
                     return ea
                 }
+                getIsPasswordlessActive() {
+                    return el
+                }
             }
-            l = "AuthenticationStore", (a = "displayName") in(o = eS) ? Object.defineProperty(o, a, {
+            l = "AuthenticationStore", (a = "displayName") in(o = ef) ? Object.defineProperty(o, a, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : o[a] = l, t.default = new eS(h.Z, {
+            }) : o[a] = l, t.default = new ef(h.Z, {
                 CONNECTION_OPEN: function(e) {
                     var t;
                     let {
@@ -236987,9 +236995,10 @@
                         sessionId: i,
                         authSessionIdHash: r,
                         analyticsToken: s,
-                        auth: o
+                        auth: o,
+                        staticAuthSessionId: a
                     } = e;
-                    eu("handleConnectionOpen called"), C.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, R.Z)(n)), B = i, x = r, H = s, w = n.id, k = n.email, void 0 !== o && (W = o.authenticator_types), T.K.set(b, n.email), T.K.set(G, n.id)
+                    e_("handleConnectionOpen called"), C.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, R.Z)(n)), B = i, x = r, V = a, F = s, w = n.id, k = n.email, void 0 !== o && (K = o.authenticator_types), T.K.set(b, n.email), T.K.set(G, n.id)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     var t;
@@ -236999,20 +237008,20 @@
                         analyticsToken: r,
                         token: s
                     } = e;
-                    C.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, R.Z)(n)), B = i, H = r, eE(s), ed(), w = n.id, T.K.set(G, n.id)
+                    C.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, R.Z)(n)), B = i, F = r, eI(s), eE(), w = n.id, T.K.set(G, n.id)
                 },
                 CONNECTION_CLOSED: function(e) {
                     let {
                         code: t
                     } = e;
-                    if (eu("handleConnectionClosed called with code ".concat(t, ".")), 4004 === t) {
-                        if (j || P(M.$$) || P(M.dG)) {
-                            eT();
+                    if (e_("handleConnectionClosed called with code ".concat(t, ".")), 4004 === t) {
+                        if (W || P(M.$$) || P(M.dG)) {
+                            eh();
                             return
                         }
                         p.default.track(D.rMx.APP_USER_DEAUTHENTICATED, {
                             user_id: T.K.get(G)
-                        }), eh(), setImmediate(() => (0, O.uL)(D.Z5c.DEFAULT_LOGGED_OUT))
+                        }), eS(), setImmediate(() => (0, O.uL)(D.Z5c.DEFAULT_LOGGED_OUT))
                     }
                 },
                 AUTH_SESSION_CHANGE: function(e) {
@@ -237022,19 +237031,19 @@
                     null != t && (x = t)
                 },
                 LOGIN: function(e) {
-                    en = {}, F = D.u34.LOGGING_IN, J = "", r = null, null != e.login && (es = e.login)
+                    ei = {}, Y = D.u34.LOGGING_IN, $ = "", r = null, null != e.login && (eo = e.login)
                 },
                 LOGIN_SUCCESS: function(e) {
                     let {
                         token: t
                     } = e;
-                    F = D.u34.NONE, eE(t), ed(), K = "", z = !1, q = null, ea = !1, J = ""
+                    Y = D.u34.NONE, eI(t), eE(), z = "", q = !1, X = null, el = !1, $ = ""
                 },
                 LOGIN_FAILURE: function(e) {
                     let {
                         error: t
                     } = e;
-                    K = "", z = !1, q = null, F = null != (en = function(e) {
+                    z = "", q = !1, X = null, Y = null != (ei = function(e) {
                         if (Object.keys(e.fields).length > 0) return e.fields;
                         let t = {
                             message: e.message
@@ -237050,62 +237059,62 @@
                         backup: r,
                         totp: s
                     } = e;
-                    null != t && (K = t, z = n, J = "", q = null != i ? i : null, Q = r, X = s), en = {}, F = D.u34.MFA_STEP
+                    null != t && (z = t, q = n, $ = "", X = null != i ? i : null, J = r, Q = s), ei = {}, Y = D.u34.MFA_STEP
                 },
                 LOGIN_MFA: function() {
-                    F = D.u34.LOGGING_IN_MFA
+                    Y = D.u34.LOGGING_IN_MFA
                 },
                 LOGIN_MFA_FAILURE: function(e) {
                     let {
                         message: t
                     } = e;
-                    F = D.u34.MFA_STEP, en = {
+                    Y = D.u34.MFA_STEP, ei = {
                         code: t
                     }
                 },
                 LOGIN_MFA_SMS: function() {
-                    F = D.u34.LOGGING_IN_MFA_SMS
+                    Y = D.u34.LOGGING_IN_MFA_SMS
                 },
                 LOGIN_MFA_SMS_REQUEST_SUCCESS: function(e) {
                     let {
                         phone: t
                     } = e;
-                    F = D.u34.MFA_SMS_STEP, J = t
+                    Y = D.u34.MFA_SMS_STEP, $ = t
                 },
                 LOGIN_MFA_SMS_FAILURE: function(e) {
                     let {
                         message: t
                     } = e;
-                    F = D.u34.MFA_SMS_STEP, en = {
+                    Y = D.u34.MFA_SMS_STEP, ei = {
                         code: t
                     }
                 },
                 LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION: function(e) {
-                    F = D.u34.ACCOUNT_SCHEDULED_FOR_DELETION, i = e.credentials
+                    Y = D.u34.ACCOUNT_SCHEDULED_FOR_DELETION, i = e.credentials
                 },
                 LOGIN_ACCOUNT_DISABLED: function(e) {
-                    F = D.u34.ACCOUNT_DISABLED, i = e.credentials
+                    Y = D.u34.ACCOUNT_DISABLED, i = e.credentials
                 },
                 LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION: function() {
-                    F = D.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION
+                    Y = D.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION
                 },
                 LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: function() {
-                    F = D.u34.PHONE_IP_AUTHORIZATION
+                    Y = D.u34.PHONE_IP_AUTHORIZATION
                 },
                 LOGIN_RESET: function(e) {
                     let {
                         isMultiAccount: t
                     } = e;
-                    if (en = {}, F = D.u34.NONE, K = "", z = !1, q = null, r = null, i = null, !t) eI(), e_(!1)
+                    if (ei = {}, Y = D.u34.NONE, z = "", q = !1, X = null, r = null, i = null, !t) eT(), ec(!1)
                 },
                 LOGIN_STATUS_RESET: function() {
-                    F = D.u34.NONE
+                    Y = D.u34.NONE
                 },
                 LOGIN_SUSPENDED_USER: function(e) {
                     let {
                         suspendedUserToken: t
                     } = e;
-                    ea = !1, eo = t, setImmediate(() => (0, O.uL)(D.Z5c.ACCOUNT_STANDING))
+                    el = !1, ea = t, setImmediate(() => (0, O.uL)(D.Z5c.ACCOUNT_STANDING))
                 },
                 SET_LOGIN_CREDENTIALS: function(e) {
                     let {
@@ -237117,14 +237126,14 @@
                         password: n
                     }
                 },
-                LOGOUT: eh,
+                LOGOUT: eS,
                 FINGERPRINT: function(e) {
                     let t = e.fingerprint;
-                    null == V ? null != t ? (p.default.track(D.rMx.USER_FINGERPRINT_CHANGED, {
-                        old_fingerprint: null != Z ? (0, d.s)(Z) : null,
+                    null == Z ? null != t ? (p.default.track(D.rMx.USER_FINGERPRINT_CHANGED, {
+                        old_fingerprint: null != H ? (0, d.s)(H) : null,
                         new_fingerprint: (0, d.s)(t)
-                    }), V = t, Z = t, T.K.set(U, V)) : e_() : null != t && V !== t && p.default.track(D.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
-                        fingerprint: (0, d.s)(V),
+                    }), Z = t, H = t, T.K.set(U, Z)) : ec() : null != t && Z !== t && p.default.track(D.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+                        fingerprint: (0, d.s)(Z),
                         dropped_fingerprint: (0, d.s)(t)
                     })
                 },
@@ -237132,77 +237141,77 @@
                     let {
                         form: t
                     } = e;
-                    r = t, Y = D.$ib.REGISTER_AGE_GATE
+                    r = t, j = D.$ib.REGISTER_AGE_GATE
                 },
                 REGISTER: function(e) {
                     let {
                         birthday: t
                     } = e;
-                    en = {}, null != t && (_()(null != r, "Got birthday in multistep registration without existing form"), r = {
+                    ei = {}, null != t && (_()(null != r, "Got birthday in multistep registration without existing form"), r = {
                         ...r,
                         birthday: t
-                    }), Y = D.$ib.REGISTERING
+                    }), j = D.$ib.REGISTERING
                 },
                 REGISTER_SUCCESS: function(e) {
                     let {
                         token: t
                     } = e;
-                    Y = D.$ib.NONE, r = null, eE(t), ed()
+                    j = D.$ib.NONE, r = null, eI(t), eE()
                 },
                 REGISTER_FAILURE: function(e) {
                     let {
                         error: t
                     } = e;
-                    en = el(t), Y = null != t.getFieldErrors("date_of_birth") ? D.$ib.REGISTER_AGE_GATE : D.$ib.REGISTER_WITH_ERROR
+                    ei = eu(t), j = null != t.getFieldErrors("date_of_birth") ? D.$ib.REGISTER_AGE_GATE : D.$ib.REGISTER_WITH_ERROR
                 },
                 VERIFY_FAILURE: function(e) {
                     let {
                         errors: t
                     } = e;
-                    $ = !0, ee = !1, et = null != t ? t : {}
+                    ee = !0, et = !1, en = null != t ? t : {}
                 },
                 VERIFY_SUCCESS: function(e) {
-                    ee = !0, $ = !1, et = {}, ei = e.verifyingUserId
+                    et = !0, ee = !1, en = {}, er = e.verifyingUserId
                 },
                 START_SESSION: function() {
-                    if (0 === Object.keys(en).length) return !1;
-                    en = {}
+                    if (0 === Object.keys(ei).length) return !1;
+                    ei = {}
                 },
                 FORGOT_PASSWORD_REQUEST: function() {
-                    F = D.u34.FORGOT_PASSWORD, en = {}
+                    Y = D.u34.FORGOT_PASSWORD, ei = {}
                 },
                 FORGOT_PASSWORD_SENT: function() {
-                    F = D.u34.NONE, en = {}
+                    Y = D.u34.NONE, ei = {}
                 },
                 UPDATE_TOKEN: function(e) {
                     let {
                         token: t,
                         userId: n
                     } = e;
-                    eu("handleUpdateToken called"), eE(t, n), ed()
+                    e_("handleUpdateToken called"), eI(t, n), eE()
                 },
-                EXPERIMENTS_FETCH: ec,
+                EXPERIMENTS_FETCH: ed,
                 CURRENT_USER_UPDATE: function(e) {
                     let {
                         user: t
                     } = e;
-                    w = t.id, k = t.email, void 0 !== t.authenticator_types && (W = t.authenticator_types), T.K.set(b, t.email), T.K.set(G, t.id)
+                    w = t.id, k = t.email, void 0 !== t.authenticator_types && (K = t.authenticator_types), T.K.set(b, t.email), T.K.set(G, t.id)
                 },
-                AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eT,
+                AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eh,
                 CLEAR_AUTHENTICATION_ERRORS: function() {
-                    en = {}
+                    ei = {}
                 },
                 CLOSE_SUSPENDED_USER: function() {
-                    eo = null, F = D.u34.NONE, eh(), setImmediate(() => (0, O.uL)(D.Z5c.DEFAULT_LOGGED_OUT))
+                    ea = null, Y = D.u34.NONE, eS(), setImmediate(() => (0, O.uL)(D.Z5c.DEFAULT_LOGGED_OUT))
                 },
                 PASSWORDLESS_FAILURE: function(e) {
                     let {
                         error: t
                     } = e;
-                    K = "", z = !1, q = null, ea = !1, F = null != (en = el(t)).date_of_birth ? D.u34.LOGIN_AGE_GATE : D.u34.NONE
+                    z = "", q = !1, X = null, el = !1, Y = null != (ei = eu(t)).date_of_birth ? D.u34.LOGIN_AGE_GATE : D.u34.NONE
                 },
                 PASSWORDLESS_START: function() {
-                    en = {}, ea = !0
+                    ei = {}, el = !0
                 }
             }, h.c.Early)
         },
@@ -258889,7 +258898,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "62920b4be17b082f6324ef233083107eb3c47258"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cc86f5fb8ad2da322144f33091047abf4b011dff"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279524,7 +279533,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303480"
+                                build_number: "303489"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286836,7 +286845,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303480", "303480"), 10);
+                let s = parseInt((n = "303489", "303489"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -314168,7 +314177,7 @@
                         else if ("videohook_initialize" === e.type) this.emit(h.Sh.VideoHookInitialize, e.backend, e.format, e.framebufferFormat, e.sampleCount, e.success, e.reinitialization);
                         else if ("screenshare_finish" === e.type) {
                             var t;
-                            this.emit(h.Sh.ScreenshareFinish, e.screenshareFrames, e.videohookFrames, e.hybridDxgiFrames, e.hybridGdiFrames, e.hybridVideohookFrames, e.hybridGraphicsCaptureFrames, e.hybridCaptureMethodSwitches, e.quartzFrames, null !== (t = e.desktopCapturerType) && void 0 !== t ? t : e.desktop_capturer_type, e.screens, e.windows, e.activity, e.goLiveCameraFrames, e.screenCaptureKitFrames)
+                            this.emit(h.Sh.ScreenshareFinish, e.screenshareFrames, e.videohookFrames, e.hybridDxgiFrames, e.hybridGdiFrames, e.hybridVideohookFrames, e.hybridGraphicsCaptureFrames, e.hybridCaptureMethodSwitches, e.hybridGdiBitBltFrames, e.hybridGdiPrintWindowFrames, e.quartzFrames, null !== (t = e.desktopCapturerType) && void 0 !== t ? t : e.desktop_capturer_type, e.screens, e.windows, e.activity, e.goLiveCameraFrames, e.screenCaptureKitFrames)
                         } else "video_state" === e.type ? this.emit(h.Sh.VideoState, e.state) : e.type.startsWith("soundshare_") && this.emit(h.Sh.SoundshareTrace, e)
                     }), this.on("newListener", this.handleNewListenerNative)
                 }
@@ -328339,4 +328348,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.be20eef665d92f609292.js.map
+//# sourceMappingURL=79892.74af2147d9cc8b0105de.js.map
