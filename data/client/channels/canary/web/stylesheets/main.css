@@ -31859,6 +31859,14 @@ div.cardContainer_c22357 {
     margin: 20px 0 10px
 }
 
+.modifiedPrices_c87d73:first-of-type {
+    margin: 16px 0 8px
+}
+
+.modifiedPrices_c87d73:last-of-type {
+    margin: 8px 0 16px
+}
+
 .price_c87d73 {
     margin: 0 0 8px
 }
@@ -47231,8 +47239,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -142423,4 +142431,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6a583d3ba52678902df5.css.map*/
+/*# sourceMappingURL=99387.2ec3234b8357c857e71b.css.map*/

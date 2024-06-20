@@ -18008,6 +18008,7 @@
                 icon: "icon_c87d73",
                 freeTrialPillInline: "freeTrialPillInline_c87d73 freeTrialPillInlineBlock_c87d73",
                 modifiedPrice: "modifiedPrice_c87d73",
+                modifiedPrices: "modifiedPrices_c87d73",
                 price: "price_c87d73",
                 newTagItem: "newTagItem_c87d73",
                 freeTrialPillWithSparkles: "freeTrialPillWithSparkles_c87d73",
