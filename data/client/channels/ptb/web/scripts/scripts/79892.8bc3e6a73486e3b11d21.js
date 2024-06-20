@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303683", ", Version Hash: ").concat("7872649c01d7e25e216f4cf3326c9588b423bc17")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303686", ", Version Hash: ").concat("14fc5d502edf4a0f02d9d23d85f0410c76f0605b")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -82434,7 +82434,7 @@
             "use strict";
             n.d(t, {
                 LU: function() {
-                    return T
+                    return h
                 }
             }), n(47120), n(653041);
             var i, r = n(392711),
@@ -82445,9 +82445,10 @@
                 u = n(704907),
                 _ = n(581883);
             n(689079);
-            var c = n(526761);
+            var c = n(674563),
+                d = n(526761);
 
-            function d(e, t, n) {
+            function E(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -82455,69 +82456,69 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let E = {
+            let I = {
                     pendingUsages: []
                 },
-                I = new u.Z({
+                T = new u.Z({
                     computeBonus: () => 1,
-                    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 0,
+                    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 1,
                     lookupKey: e => e,
                     afterCompute: () => {},
-                    numFrequentlyItems: 500
+                    numFrequentlyItems: c.yP
                 });
 
-            function T(e, t) {
+            function h(e, t) {
                 return e.filter(e => {
                     if (e.includes(":")) return null != t.guild && t.guild.id === e.split(":")[1];
                     return !0
                 }).map(e => e.split(":")[0])
             }
 
-            function h(e, t) {
+            function S(e, t) {
                 return 0 > Number(t.id) ? t.id : null != e.guild && null != t.guildId ? "".concat(t.id, ":").concat(e.guild.id) : t.id
             }
 
-            function S() {
+            function f() {
                 var e, t;
                 let n = null !== (t = null === (e = _.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) || void 0 === e ? void 0 : e.applicationCommands) && void 0 !== t ? t : {};
-                I.overwriteHistory(s().mapValues(n, e => ({
+                T.overwriteHistory(s().mapValues(n, e => ({
                     ...e,
                     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-                })), E.pendingUsages)
+                })), I.pendingUsages)
             }
-            class f extends(i = o.ZP.PersistedStore) {
+            class N extends(i = o.ZP.PersistedStore) {
                 initialize(e) {
-                    null != e && (E = e), this.syncWith([_.Z], S)
+                    null != e && (I = e), this.syncWith([_.Z], f)
                 }
                 getState() {
-                    return E
+                    return I
                 }
                 hasPendingUsage() {
-                    return E.pendingUsages.length > 0
+                    return I.pendingUsages.length > 0
                 }
                 getCommandFrecencyWithoutLoadingLatest() {
-                    return I
+                    return T
                 }
                 getScoreWithoutLoadingLatest(e, t) {
                     var n;
-                    return null !== (n = I.getScore(h(e, t))) && void 0 !== n ? n : 0
+                    return null !== (n = T.getScore(S(e, t))) && void 0 !== n ? n : 0
                 }
                 getTopCommandsWithoutLoadingLatest() {
-                    return I.frequently
+                    return T.frequently
                 }
             }
-            d(f, "displayName", "ApplicationCommandFrecencyStore"), d(f, "persistKey", "ApplicationCommandFrecencyV2"), t.ZP = new f(a.Z, {
+            E(N, "displayName", "ApplicationCommandFrecencyStore"), E(N, "persistKey", "ApplicationCommandFrecencyV2"), t.ZP = new N(a.Z, {
                 APPLICATION_COMMAND_USED: function(e) {
                     let {
                         command: t,
                         context: n
                     } = e;
                     if (t.type !== l.yU.CHAT) return !1;
-                    let i = h(n, t);
-                    E.pendingUsages.push({
+                    let i = S(n, t);
+                    I.pendingUsages.push({
                         key: i,
                         timestamp: Date.now()
-                    }), I.track(i), I.compute()
+                    }), T.track(i), T.compute()
                 },
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     let {
@@ -82526,8 +82527,8 @@
                         },
                         wasSaved: n
                     } = e;
-                    if (t !== c.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
-                    E.pendingUsages = []
+                    if (t !== d.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
+                    I.pendingUsages = []
                 }
             })
         },
@@ -87903,13 +87904,17 @@
                     return r
                 },
                 Yq: function() {
-                    return a
+                    return l
                 },
                 wW: function() {
                     return i
+                },
+                yP: function() {
+                    return a
                 }
             }), (s = i || (i = {}))[s.GAME = 1] = "GAME", s[s.TICKETED_EVENTS = 3] = "TICKETED_EVENTS", s[s.GUILD_ROLE_SUBSCRIPTIONS = 4] = "GUILD_ROLE_SUBSCRIPTIONS", (o = r || (r = {}))[o.BOT = 0] = "BOT", o[o.SERVER = 1] = "SERVER", o[o.SYSTEM_DM = 2] = "SYSTEM_DM", o[o.OFFICIAL = 3] = "OFFICIAL", o[o.STAFF_ONLY_DM = 4] = "STAFF_ONLY_DM", o[o.ORIGINAL_POSTER = 5] = "ORIGINAL_POSTER", o[o.AI = 6] = "AI", o[o.REMIX = 7] = "REMIX";
-            let a = ["1102741339122188349", "1211781489931452447", "1211780388607885393", "1166579889915310151"]
+            let a = 100,
+                l = ["1102741339122188349", "1211781489931452447", "1211780388607885393", "1166579889915310151"]
         },
         148958: function(e, t, n) {
             "use strict";
@@ -87949,11 +87954,7 @@
         },
         822245: function(e, t, n) {
             "use strict";
-            n.d(t, {
-                y: function() {
-                    return E
-                }
-            }), n(653041);
+            n(653041);
             var i, r = n(392711),
                 s = n.n(r),
                 o = n(442837),
@@ -87961,9 +87962,10 @@
                 l = n(911969),
                 u = n(704907),
                 _ = n(581883),
-                c = n(526761);
+                c = n(674563),
+                d = n(526761);
 
-            function d(e, t, n) {
+            function E(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -87971,16 +87973,15 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let E = 250,
-                I = {
+            let I = {
                     pendingUsages: []
                 },
                 T = new u.Z({
                     computeBonus: () => 100,
-                    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 0,
+                    computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 1,
                     lookupKey: e => e,
                     afterCompute: () => {},
-                    numFrequentlyItems: E
+                    numFrequentlyItems: c.yP
                 });
 
             function h(e) {
@@ -88019,7 +88020,7 @@
                     return T.frequently
                 }
             }
-            d(f, "displayName", "ApplicationFrecencyStore"), d(f, "persistKey", "ApplicationFrecency"), t.Z = new f(a.Z, {
+            E(f, "displayName", "ApplicationFrecencyStore"), E(f, "persistKey", "ApplicationFrecency"), t.Z = new f(a.Z, {
                 APPLICATION_COMMAND_USED: function(e) {
                     let {
                         command: t
@@ -88040,7 +88041,7 @@
                         },
                         wasSaved: n
                     } = e;
-                    if (t !== c.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
+                    if (t !== d.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
                     I.pendingUsages = []
                 }
             })
@@ -96173,8 +96174,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303683", "303683"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303683")), t = 0), t
+                let t = parseInt((e = "303686", "303686"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303686")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124386,8 +124387,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303683",
-                    versionHash: "7872649c01d7e25e216f4cf3326c9588b423bc17"
+                    buildNumber: "303686",
+                    versionHash: "14fc5d502edf4a0f02d9d23d85f0410c76f0605b"
                 }
             }
             n.d(t, {
@@ -182342,8 +182343,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718922576393",
-                                    build_number: "303683"
+                                    built_at: "1718923073371",
+                                    build_number: "303686"
                                 }
                             },
                             retries: 1
@@ -206000,7 +206001,7 @@
                 m = new _.Z({
                     computeBonus: () => 100,
                     computeWeight: e => {
-                        let t = 0;
+                        let t = 1;
                         return e <= 3 ? t = 100 : e <= 15 ? t = 70 : e <= 30 ? t = 50 : e <= 45 ? t = 30 : e <= 80 && (t = 10), t
                     },
                     lookupKey: e => I.Z.getSoundById(e),
@@ -212463,7 +212464,7 @@
             let T = new l.Z({
                     computeBonus: () => 100,
                     computeWeight: e => {
-                        let t = 0;
+                        let t = 1;
                         return e <= 3 ? t = 100 : e <= 15 ? t = 70 : e <= 30 ? t = 50 : e <= 45 ? t = 30 : e <= 80 && (t = 10), t
                     },
                     lookupKey: e => c.Z.getStickerById(e),
@@ -228017,18 +228018,19 @@
                 T = n(675478),
                 h = n(581883),
                 S = n(48481),
-                f = n(526761);
-            let N = "lastFrecencySavedTime",
-                A = Math.random() * (5 * I.Z.Millis.MINUTE),
-                m = 1 * I.Z.Millis.DAY + Math.floor(Math.random() * (1 * I.Z.Millis.HOUR)),
-                O = null,
-                R = Date.now();
-            class p extends a.Z {
+                f = n(526761),
+                N = n(674563);
+            let A = "lastFrecencySavedTime",
+                m = Math.random() * (5 * I.Z.Millis.MINUTE),
+                O = 1 * I.Z.Millis.DAY + Math.floor(Math.random() * (1 * I.Z.Millis.HOUR)),
+                R = null,
+                p = Date.now();
+            class g extends a.Z {
                 _initialize() {
                     T.DZ.beforeSendCallbacks.push({
                         hasChanges: () => !1,
                         processProto: () => {
-                            L(!0)
+                            D(!0)
                         }
                     }), T.DZ.beforeSendCallbacks.push({
                         hasChanges: () => d.Z.hasPendingUsage() && h.Z.hasLoaded(f.yP.FRECENCY_AND_FAVORITES_SETTINGS),
@@ -228053,7 +228055,7 @@
                     }), T.DZ.beforeSendCallbacks.push({
                         hasChanges: () => u.Z.hasPendingUsage() && h.Z.hasLoaded(f.yP.FRECENCY_AND_FAVORITES_SETTINGS),
                         processProto: e => {
-                            if (!!u.Z.hasPendingUsage()) h.Z.hasLoaded(f.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationFrecency = s.UY.create(), e.applicationFrecency.applications = (0, S.tU)(u.Z.getApplicationFrecencyWithoutLoadingLatest().usageHistory, u.y))
+                            if (!!u.Z.hasPendingUsage()) h.Z.hasLoaded(f.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationFrecency = s.UY.create(), e.applicationFrecency.applications = (0, S.tU)(u.Z.getApplicationFrecencyWithoutLoadingLatest().usageHistory, N.yP))
                         }
                     }), T.DZ.beforeSendCallbacks.push({
                         hasChanges: () => E.Z.hasPendingUsage() && h.Z.hasLoaded(f.yP.FRECENCY_AND_FAVORITES_SETTINGS),
@@ -228065,9 +228067,9 @@
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: g,
-                        CONNECTION_RESUMED: g,
-                        CONNECTION_CLOSED: C
+                        POST_CONNECTION_OPEN: C,
+                        CONNECTION_RESUMED: C,
+                        CONNECTION_CLOSED: v
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -228077,24 +228079,24 @@
                 }
             }
 
-            function g() {
+            function C() {
                 var e;
-                R = null !== (e = o.K.get(N)) && void 0 !== e ? e : Date.now(), L(!1)
+                p = null !== (e = o.K.get(A)) && void 0 !== e ? e : Date.now(), D(!1)
             }
 
-            function C() {
-                clearTimeout(O), O = null
+            function v() {
+                clearTimeout(R), R = null
             }
-            async function v() {
-                R = Date.now(), L(!0), !h.Z.hasLoaded(f.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (d.Z.hasPendingUsage() || _.Z.hasPendingUsage() || l.ZP.hasPendingUsage() || u.Z.hasPendingUsage() || E.Z.hasPendingUsage()) && await T.DZ.loadIfNecessary(), r().forEach(T.aj, e => {
+            async function L() {
+                p = Date.now(), D(!0), !h.Z.hasLoaded(f.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (d.Z.hasPendingUsage() || _.Z.hasPendingUsage() || l.ZP.hasPendingUsage() || u.Z.hasPendingUsage() || E.Z.hasPendingUsage()) && await T.DZ.loadIfNecessary(), r().forEach(T.aj, e => {
                     e.markDirtyIfHasPendingChange()
                 })
             }
 
-            function L(e) {
-                e && (R = Date.now(), o.K.set(N, R)), null != O && clearTimeout(O), O = setTimeout(v, Math.max(A, m - (Date.now() - R)))
+            function D(e) {
+                e && (p = Date.now(), o.K.set(A, p)), null != R && clearTimeout(R), R = setTimeout(L, Math.max(m, O - (Date.now() - p)))
             }
-            t.Z = new p
+            t.Z = new g
         },
         706454: function(e, t, n) {
             "use strict";
@@ -241641,7 +241643,7 @@
                 f = new l.Z({
                     computeBonus: () => 100,
                     computeWeight: e => {
-                        let t = 0;
+                        let t = 1;
                         return 0 === e ? t = 100 : e >= 1 && e < 2 ? t = 70 : e >= 2 && e < 4 ? t = 50 : e >= 4 && e < 7 ? t = 30 : e >= 7 && (t = 10), t
                     },
                     lookupKey: e => {
@@ -260758,7 +260760,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7872649c01d7e25e216f4cf3326c9588b423bc17"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "14fc5d502edf4a0f02d9d23d85f0410c76f0605b"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279919,7 +279921,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303683"
+                                build_number: "303686"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -287228,7 +287230,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303683", "303683"), 10);
+                let s = parseInt((n = "303686", "303686"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328743,4 +328745,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.7dfeca9c8cbf77d9a83b.js.map
+//# sourceMappingURL=79892.8bc3e6a73486e3b11d21.js.map
