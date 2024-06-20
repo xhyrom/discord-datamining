@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303433", ", Version Hash: ").concat("4936cf545f81a2a3fc5461f4570f0218d9dc2385")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303453", ", Version Hash: ").concat("4b682379cff371fb681b48fc15f2d6c660d808a1")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -59408,6 +59408,7 @@
                 CONTENT_INVENTORY_GAME_STATE_SIZE: "{count} of {max}",
                 GAME_PROFILE_ALSO_PLAYING: "Similar Games",
                 GAME_PROFILE_PUBLISHER: "Publisher",
+                GAME_PROFILE_PLATFORMS: "Platforms",
                 GAME_PROFILE_LINKS: "Links",
                 GAME_PROFILE_GUILDS_TAB: "Guilds",
                 GAME_PROFILE_FRIENDS_WHO_PLAY_TAB: "Friends Who Play",
@@ -96162,8 +96163,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303433", "303433"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303433")), t = 0), t
+                let t = parseInt((e = "303453", "303453"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303453")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124375,8 +124376,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303433",
-                    versionHash: "4936cf545f81a2a3fc5461f4570f0218d9dc2385"
+                    buildNumber: "303453",
+                    versionHash: "4b682379cff371fb681b48fc15f2d6c660d808a1"
                 }
             }
             n.d(t, {
@@ -139772,9 +139773,12 @@
                             websites: r,
                             themes: s,
                             genres: o,
-                            artwork_urls: a,
-                            cover_image_url: l,
-                            first_release_date: _
+                            platforms: a,
+                            artwork_urls: l,
+                            cover_image_url: _,
+                            first_release_date: c,
+                            publisher_names: d,
+                            developer_names: E
                         } = e;
                         u.set(t, {
                             name: n,
@@ -139782,9 +139786,12 @@
                             websites: r,
                             themes: s,
                             genres: o,
-                            artwork: a,
-                            coverImageUrl: l,
-                            firstReleaseDate: _
+                            platforms: a,
+                            artwork: l,
+                            coverImageUrl: _,
+                            firstReleaseDate: c,
+                            publishers: null != d ? d : [],
+                            developers: null != E ? E : []
                         })
                     })
                 },
@@ -180836,8 +180843,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718901814643",
-                                    build_number: "303433"
+                                    built_at: "1718903451919",
+                                    build_number: "303453"
                                 }
                             },
                             retries: 1
@@ -182179,11 +182186,14 @@
                 $U: function() {
                     return l
                 },
+                KP: function() {
+                    return c
+                },
                 Tn: function() {
                     return a
                 },
                 dt: function() {
-                    return c
+                    return d
                 },
                 xx: function() {
                     return u
@@ -182210,7 +182220,12 @@
             async function _(e) {
                 return (await s.tn.del(o.ANM.NOTIFICATION_SNAPSHOT(e))).body
             }
-            async function c(e) {
+            async function c() {
+                let e = await a(),
+                    t = r().sortBy(e, e => new Date(e.recorded_at).getTime());
+                0 !== t.length && await u(t[t.length - 1].id)
+            }
+            async function d(e) {
                 if (e.length > 0) {
                     var t;
                     let n = r().sum(e.map(e => e.length)),
@@ -258862,7 +258877,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4936cf545f81a2a3fc5461f4570f0218d9dc2385"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4b682379cff371fb681b48fc15f2d6c660d808a1"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -266058,7 +266073,7 @@
                                             (0, E.openModalLazy)(async () => {
                                                 let {
                                                     default: e
-                                                } = await Promise.all([n.e("99387"), n.e("30676"), n.e("94920"), n.e("7613"), n.e("65795")]).then(n.bind(n, 644941));
+                                                } = await Promise.all([n.e("99387"), n.e("30676"), n.e("40464"), n.e("7613"), n.e("65795")]).then(n.bind(n, 644941));
                                                 return t => {
                                                     var n;
                                                     return (0, o.jsx)(e, {
@@ -279497,7 +279512,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303433"
+                                build_number: "303453"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286809,7 +286824,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303433", "303433"), 10);
+                let s = parseInt((n = "303453", "303453"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328312,4 +328327,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.2c1b6659a924af0faf2c.js.map
+//# sourceMappingURL=79892.25bea4e39cdaff487778.js.map
