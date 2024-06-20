@@ -45364,7 +45364,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .userTag_c32acf {
     font-size: 14px;
-    display: block;
     font-family: var(--header-primary);
     font-weight: 400;
     line-height: 18px
@@ -45382,7 +45381,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .userTagUsername_c32acf {
-    overflow: auto;
     word-break: break-all;
     text-overflow: clip;
     white-space: normal;
@@ -45394,6 +45392,10 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .userTagDiscriminator_c32acf {
     color: var(--header-primary);
     vertical-align: top
+}
+
+.botTag_c32acf {
+    display: inline-flex
 }
 
 .dotSpacer_c32acf {
@@ -47846,8 +47848,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143038,4 +143040,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4b2908a7668a970139cf.css.map*/
+/*# sourceMappingURL=99387.ce1dd635bafb46b352e3.css.map*/

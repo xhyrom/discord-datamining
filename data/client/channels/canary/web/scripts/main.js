@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303631", ", Version Hash: ").concat("d8fbe196b27160f92a8e3cd2a1a70d5e80463b42")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303642", ", Version Hash: ").concat("341609f7739be00671eee52ad2f0cb62b2be63bb")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -81280,6 +81280,10 @@
                     actions: ["QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "POST_CONNECTION_OPEN", "RUNNING_GAMES_CHANGE", "USER_SETTINGS_PROTO_UPDATE", "LOGOUT"],
                     inlineRequire: () => n(877519).Z
                 },
+                ConsoleQuestOptimisticUpdatesManager: {
+                    actions: ["QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "QUESTS_ENROLL_SUCCESS", "QUESTS_CLAIM_REWARD_SUCCESS", "QUESTS_USER_STATUS_UPDATE"],
+                    inlineRequire: () => n(705951).Z
+                },
                 VoiceChannelGameActivityManager: {
                     actions: ["RUNNING_GAMES_CHANGE", "VOICE_CHANNEL_SELECT"],
                     inlineRequire: () => n(981668).Z,
@@ -96168,8 +96172,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303631", "303631"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303631")), t = 0), t
+                let t = parseInt((e = "303642", "303642"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303642")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124381,8 +124385,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303631",
-                    versionHash: "d8fbe196b27160f92a8e3cd2a1a70d5e80463b42"
+                    buildNumber: "303642",
+                    versionHash: "341609f7739be00671eee52ad2f0cb62b2be63bb"
                 }
             }
             n.d(t, {
@@ -182337,8 +182341,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718916936965",
-                                    build_number: "303631"
+                                    built_at: "1718918270974",
+                                    build_number: "303642"
                                 }
                             },
                             retries: 1
@@ -198531,7 +198535,7 @@
                 o = n(70956),
                 a = n(438954),
                 l = n(670081);
-            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USER_SETTINGS_SEARCH_GIFT_INVENTORY = "user_settings_search_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card", i.QUESTS_STORE = "quests_store", i.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", i.QUEST_HOME_DESKTOP = "quest_home_desktop", i.QUEST_HOME_MOBILE = "quest_home_mobile", i.QUEST_PROGRESS_BAR = "quest_progress_bar", i.EMBED_MOBILE = "embed_mobile";
+            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.QUESTS_CONSOLE_OPTIMISTIC_UPDATES_MANAGER = "quests_console_optimistic_updates_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USER_SETTINGS_SEARCH_GIFT_INVENTORY = "user_settings_search_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card", i.QUESTS_STORE = "quests_store", i.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", i.QUEST_HOME_DESKTOP = "quest_home_desktop", i.QUEST_HOME_MOBILE = "quest_home_mobile", i.QUEST_PROGRESS_BAR = "quest_progress_bar", i.EMBED_MOBILE = "embed_mobile";
             let u = o.Z.Millis.MINUTE * s.c.ConsecutiveHeartbeatPeriodMinutes
         },
         113434: function(e, t, n) {
@@ -199259,13 +199263,13 @@
                     return el
                 },
                 $J: function() {
-                    return em
+                    return eO
                 },
                 AV: function() {
                     return W
                 },
                 Bz: function() {
-                    return eR
+                    return ep
                 },
                 CE: function() {
                     return D
@@ -199275,6 +199279,9 @@
                 },
                 GN: function() {
                     return K
+                },
+                Gh: function() {
+                    return eN
                 },
                 Gs: function() {
                     return Z
@@ -199322,7 +199329,7 @@
                     return k
                 },
                 il: function() {
-                    return eN
+                    return eA
                 },
                 j8: function() {
                     return B
@@ -199809,7 +199816,7 @@
                     taskDetails: s
                 } = e, o = n.config.messages.gameTitle, a = m.r.build(n.config).defaultReward.messages.nameWithArticle, {
                     targetMinutes: l
-                } = null != s ? s : eN({
+                } = null != s ? s : eA({
                     quest: n,
                     location: i
                 }), u = e_(n, R.S7.IN_HOUSE_CONSOLE_QUEST), _ = X(n.config), c = (null === (t = n.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null;
@@ -199821,7 +199828,7 @@
                     rewardNameWithArticle: a,
                     duration: _
                 });
-                if (em(n)) return null != _ ? p.Z.Messages.QUEST_BAR_SUBTITLE_PLAY_GAME_WITH_EXPIRING_COLLECTIBLE_REWARD.format({
+                if (eO(n)) return null != _ ? p.Z.Messages.QUEST_BAR_SUBTITLE_PLAY_GAME_WITH_EXPIRING_COLLECTIBLE_REWARD.format({
                     gameTitle: o,
                     targetMinutes: l,
                     rewardNameWithArticle: a,
@@ -199909,20 +199916,35 @@
                 ef = e => {
                     var t, n;
                     let {
-                        quest: i
+                        quest: i,
+                        consoleOnly: r
                     } = e;
                     for (let e of Object.values(null !== (n = null === (t = i.userStatus) || void 0 === t ? void 0 : t.progress) && void 0 !== n ? n : {}).sort((e, t) => (null == e ? void 0 : e.updatedAt) != null && (null == t ? void 0 : t.updatedAt) != null && e.updatedAt > t.updatedAt ? -1 : 1).filter(I.lm)) {
                         let t = eS(e.eventName);
-                        if (null != t) return eh({
-                            quest: i,
-                            taskType: t
-                        })
+                        if (null != t) {
+                            if (!0 !== r || o.T.CONSOLE.has(t)) return eh({
+                                quest: i,
+                                taskType: t
+                            })
+                        }
                     }
                     return eh({
                         quest: i
                     })
                 },
-                eN = e => {
+                eN = e => (0, s.EQ)(e).with({
+                    config: {
+                        configVersion: 1
+                    }
+                }, () => null).with({
+                    config: {
+                        configVersion: 2
+                    }
+                }, e => em(e) ? ef({
+                    quest: e,
+                    consoleOnly: !0
+                }) : null).exhaustive(),
+                eA = e => {
                     let {
                         quest: t,
                         location: n
@@ -199952,7 +199974,7 @@
                         targetMinutes: 1,
                         percentComplete: 0,
                         taskType: o.X.STREAM_ON_DESKTOP
-                    } : eA(e) ? ef({
+                    } : em(e) ? ef({
                         quest: e
                     }) : el({
                         quest: e,
@@ -199965,8 +199987,8 @@
                         taskType: o.X.STREAM_ON_DESKTOP
                     })).exhaustive()
                 };
-            let eA = (i = [o.X.PLAY_ON_XBOX, o.X.PLAY_ON_PLAYSTATION], e => i.some(t => null != e.config.taskConfig.tasks[t])),
-                em = e => (0, s.EQ)(e).with({
+            let em = (i = [o.X.PLAY_ON_XBOX, o.X.PLAY_ON_PLAYSTATION], e => i.some(t => null != e.config.taskConfig.tasks[t])),
+                eO = e => (0, s.EQ)(e).with({
                     config: {
                         configVersion: 1
                     }
@@ -199974,15 +199996,15 @@
                     config: {
                         configVersion: 2
                     }
-                }, eA).exhaustive(),
-                eO = (e, t) => {
+                }, em).exhaustive(),
+                eR = (e, t) => {
                     var n, i;
                     let r = null == e ? void 0 : null === (i = e.progress[t]) || void 0 === i ? void 0 : null === (n = i.heartbeat) || void 0 === n ? void 0 : n.expiresAt;
                     if (null == r) return !1;
                     let s = new Date(r).valueOf();
                     return !isNaN(s) && s > Date.now()
                 },
-                eR = e => (0, s.EQ)(e).with({
+                ep = e => (0, s.EQ)(e).with({
                     config: {
                         configVersion: 1
                     }
@@ -199990,7 +200012,7 @@
                     config: {
                         configVersion: 2
                     }
-                }, e => null != e.userStatus && (eO(e.userStatus, o.X.PLAY_ON_XBOX) || eO(e.userStatus, o.X.PLAY_ON_PLAYSTATION))).exhaustive()
+                }, e => null != e.userStatus && (eR(e.userStatus, o.X.PLAY_ON_XBOX) || eR(e.userStatus, o.X.PLAY_ON_PLAYSTATION))).exhaustive()
         },
         242755: function(e, t, n) {
             "use strict";
@@ -200313,6 +200335,119 @@
                     });
                     return i && o
                 }
+        },
+        705951: function(e, t, n) {
+            "use strict";
+            n(47120);
+            var i = n(147913),
+                r = n(70956),
+                s = n(272008),
+                o = n(569984),
+                a = n(918701),
+                l = n(5881),
+                u = n(46140);
+
+            function _(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let c = 1 * r.Z.Millis.SECOND,
+                d = (0, l.T)({
+                    location: u.dr.QUESTS_CONSOLE_OPTIMISTIC_UPDATES_MANAGER
+                });
+            class E extends i.Z {
+                constructor(...e) {
+                    super(...e), _(this, "optimisticUpdatesMap", new Map), _(this, "optimisticUpdatesInterval", null), _(this, "_shouldHaveOptimisticUpdates", e => {
+                        let t = o.Z.getQuest(e);
+                        if (null == t || null == t.userStatus) return !1;
+                        let n = null != t.userStatus.completedAt,
+                            i = null != t.userStatus.enrolledAt,
+                            r = null != t.userStatus.claimedAt;
+                        return i && !r && !n && (0, a.$J)(t) && (0, a.Bz)(t)
+                    }), _(this, "_initiateOptimisticUpdatesIfNeeded", e => {
+                        let t = o.Z.getQuest(e);
+                        if (null == t || !this._shouldHaveOptimisticUpdates(e)) return;
+                        let n = (0, a.Gh)(t);
+                        null != n && (this.optimisticUpdatesMap.set(e, {
+                            updateAt: Date.now(),
+                            taskType: n.taskType
+                        }), null == this.optimisticUpdatesInterval && this.optimisticUpdatesMap.size > 0 && (this.optimisticUpdatesInterval = window.setInterval(this._optimisticUpdatesLoop, c)))
+                    }), _(this, "_optimisticUpdatesLoop", () => {
+                        if (this.optimisticUpdatesMap.forEach((e, t) => {
+                                let n = o.Z.getQuest(t);
+                                (null == n || null == n.userStatus || !this._shouldHaveOptimisticUpdates(t)) && this.optimisticUpdatesMap.delete(t)
+                            }), 0 === this.optimisticUpdatesMap.size) {
+                            clearInterval(this.optimisticUpdatesInterval), this.optimisticUpdatesInterval = null;
+                            return
+                        }
+                        this.optimisticUpdatesMap.forEach((e, t) => {
+                            let n = o.Z.getQuest(t);
+                            if (null == n || null == n.userStatus) return;
+                            let i = (0, a.Gh)(n);
+                            if (null != i && Date.now() >= e.updateAt) {
+                                let {
+                                    targetSeconds: o,
+                                    progressSeconds: a,
+                                    taskType: l
+                                } = i, u = (Date.now() - e.updateAt) / r.Z.Millis.SECOND, _ = Math.min(a + u, o), c = {
+                                    ...n.userStatus,
+                                    progress: {
+                                        [l]: {
+                                            ...n.userStatus.progress[l],
+                                            eventName: l,
+                                            value: _
+                                        }
+                                    }
+                                };
+                                if ((0, s.kP)(c), d.log("Dispatching optimistic update:", {
+                                        secondsSinceLastUpdate: u,
+                                        optimisticProgressValue: _,
+                                        optimisticUpdatesMap: this.optimisticUpdatesMap
+                                    }), _ >= o) {
+                                    this.optimisticUpdatesMap.delete(t);
+                                    return
+                                }
+                                this.optimisticUpdatesMap.set(t, {
+                                    updateAt: Date.now(),
+                                    taskType: l
+                                })
+                            }
+                        })
+                    }), _(this, "handleFetchCurrentQuestsSuccess", e => {
+                        let {
+                            quests: t
+                        } = e;
+                        t.forEach(e => {
+                            this._initiateOptimisticUpdatesIfNeeded(e.id)
+                        })
+                    }), _(this, "handleQuestUserStatusUpdate", e => {
+                        let {
+                            user_status: t
+                        } = e;
+                        this._initiateOptimisticUpdatesIfNeeded(t.quest_id)
+                    }), _(this, "handleEnrollSuccess", e => {
+                        let {
+                            enrolledQuestUserStatus: t
+                        } = e;
+                        this._initiateOptimisticUpdatesIfNeeded(t.questId)
+                    }), _(this, "handleClaimRewardSuccess", e => {
+                        let {
+                            questId: t
+                        } = e;
+                        this.optimisticUpdatesMap.has(t) && this.optimisticUpdatesMap.delete(t)
+                    }), _(this, "actions", {
+                        QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: this.handleFetchCurrentQuestsSuccess,
+                        QUESTS_ENROLL_SUCCESS: this.handleEnrollSuccess,
+                        QUESTS_USER_STATUS_UPDATE: this.handleQuestUserStatusUpdate,
+                        QUESTS_CLAIM_REWARD_SUCCESS: this.handleClaimRewardSuccess
+                    })
+                }
+            }
+            t.Z = new E
         },
         877519: function(e, t, n) {
             "use strict";
@@ -222049,7 +222184,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return d
+                    return E
                 }
             });
             var i = n(735250);
@@ -222061,30 +222196,40 @@
                 l = n(447452),
                 u = n(877485),
                 _ = n(788197),
-                c = n(969835);
+                c = n(969835),
+                d = n(985237);
 
-            function d(e) {
+            function E(e) {
                 let {
                     location: t,
                     userId: n,
                     user: r,
-                    ...d
+                    ...E
                 } = e, {
-                    basicsEnabled: E
+                    basicsEnabled: I,
+                    botProfilesEnabled: T
                 } = (0, l.t)({
                     location: t
                 }), {
-                    originalFriendingEnabled: I,
-                    improvedFriendingEnabled: T
+                    originalFriendingEnabled: h,
+                    improvedFriendingEnabled: S
                 } = (0, u.V)({
                     location: t
-                }), h = (0, o.e7)([a.default], () => a.default.getUser(n), [n]), S = null != r ? r : h;
-                return (s()(null != S, "Unexpected missing user"), (E || I || T) && !S.bot && !S.isNonUserBot() && !S.isClyde()) ? (0, i.jsx)(c.Z, {
-                    ...d,
-                    user: S
-                }) : (0, i.jsx)(_.Z, {
-                    ...d,
-                    user: S
+                }), f = I || h || S, N = (0, o.e7)([a.default], () => a.default.getUser(n), [n]), A = null != r ? r : N;
+                s()(null != A, "UserPopoutExperimentWrapper: user cannot be undefined");
+                let m = (0, o.e7)([a.default], () => a.default.getCurrentUser());
+                return (s()(null != m, "UserPopoutExperimentWrapper: currentUser cannot be undefined"), f && T && A.bot && !A.isNonUserBot() && !A.isClyde()) ? (0, i.jsx)(d.Z, {
+                    ...E,
+                    user: A,
+                    currentUser: m
+                }) : !f || A.bot || A.isNonUserBot() || A.isClyde() ? (0, i.jsx)(_.Z, {
+                    ...E,
+                    user: A,
+                    currentUser: m
+                }) : (0, i.jsx)(c.Z, {
+                    ...E,
+                    user: A,
+                    currentUser: m
                 })
             }
         },
@@ -223016,7 +223161,8 @@
                             forcePomelo: h,
                             className: _.userTag,
                             usernameClass: _.userTagUsername,
-                            discriminatorClass: _.userTagDiscriminator
+                            discriminatorClass: _.userTagDiscriminator,
+                            botClass: _.botTag
                         })), O && (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
                                 "aria-hidden": "true",
@@ -225824,7 +225970,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return L
+                    return v
                 }
             }), n(47120);
             var i = n(735250),
@@ -225837,26 +225983,26 @@
                 _ = n(680295),
                 c = n(271383),
                 d = n(430824),
-                E = n(594174),
-                I = n(877485),
-                T = n(785717),
-                h = n(318661),
-                S = n(502762),
-                f = n(544989),
-                N = n(481932),
-                A = n(195387),
-                m = n(272510),
-                O = n(171368),
-                R = n(958120),
-                p = n(215633),
-                g = n(23293),
-                C = n(228168),
-                v = n(689938);
+                E = n(877485),
+                I = n(785717),
+                T = n(318661),
+                h = n(502762),
+                S = n(544989),
+                f = n(481932),
+                N = n(195387),
+                A = n(272510),
+                m = n(171368),
+                O = n(958120),
+                R = n(215633),
+                p = n(23293),
+                g = n(228168),
+                C = n(689938);
 
-            function L(e) {
+            function v(e) {
                 let {
                     user: t,
-                    guildId: n,
+                    currentUser: n,
+                    guildId: v,
                     channelId: L,
                     messageId: D,
                     roleId: M,
@@ -225866,99 +226012,99 @@
                     newAnalyticsLocations: b = []
                 } = e, {
                     originalFriendingEnabled: G
-                } = (0, I.V)({
+                } = (0, E.V)({
                     location: "BiteSizeProfilePopout"
                 }), {
                     analyticsLocations: w
-                } = (0, u.ZP)([...b, l.Z.BITE_SIZE_PROFILE_POPOUT]), k = (0, T.Q1)({
+                } = (0, u.ZP)([...b, l.Z.BITE_SIZE_PROFILE_POPOUT]), k = (0, I.Q1)({
                     layout: "BITE_SIZE_POPOUT",
                     userId: t.id,
-                    guildId: n,
+                    guildId: v,
                     channelId: L,
                     messageId: D,
                     roleId: M
-                }), B = (0, s.e7)([E.default], () => E.default.getCurrentUser()), x = (0, s.e7)([d.Z], () => null != n ? d.Z.getGuild(n) : null), V = (0, s.e7)([c.ZP], () => null != n ? c.ZP.getMember(n, t.id) : null), Z = r.useRef(null), H = (0, h.ZP)(t.id, n), F = (0, a.Z)(Z);
+                }), B = (0, s.e7)([d.Z], () => null != v ? d.Z.getGuild(v) : null), x = (0, s.e7)([c.ZP], () => null != v ? c.ZP.getMember(v, t.id) : null), V = r.useRef(null), Z = (0, T.ZP)(t.id, v), H = (0, a.Z)(V);
                 r.useEffect(() => {
-                    null == y || y(null == Z ? void 0 : Z.current)
-                }, [Z, y]);
-                let Y = e => {
-                    null == P || P(), (0, O.openUserProfileModal)({
+                    null == y || y(null == V ? void 0 : V.current)
+                }, [V, y]);
+                let F = e => {
+                    null == P || P(), (0, m.openUserProfileModal)({
                         sourceAnalyticsLocations: w,
                         userId: t.id,
-                        guildId: n,
+                        guildId: v,
                         channelId: L,
                         messageId: D,
                         roleId: M,
                         ...e
                     })
                 };
-                return null == B ? null : (0, i.jsx)(u.Gt, {
+                return (0, i.jsx)(u.Gt, {
                     value: w,
-                    children: (0, i.jsx)(T.Mt, {
+                    children: (0, i.jsx)(I.Mt, {
                         layout: "BITE_SIZE_POPOUT",
                         userId: t.id,
-                        guildId: n,
+                        guildId: v,
                         channelId: L,
                         messageId: D,
                         roleId: M,
-                        shouldTrackViewOnMount: null == V || null != V.fullProfileLoadedTimestamp,
+                        shouldTrackViewOnMount: null == x || null != x.fullProfileLoadedTimestamp,
                         children: (0, i.jsxs)(o.Dialog, {
-                            ref: Z,
+                            ref: V,
                             "aria-label": t.username,
-                            children: [(0, i.jsxs)(S.Z, {
+                            children: [(0, i.jsxs)(h.Z, {
                                 user: t,
-                                displayProfile: H,
-                                profileType: C.y0.BITE_SIZE,
-                                children: [(0, i.jsxs)(f.Z, {
-                                    profileType: C.y0.BITE_SIZE,
-                                    children: [(0, i.jsx)(A.Z, {
+                                displayProfile: Z,
+                                profileType: g.y0.BITE_SIZE,
+                                children: [(0, i.jsxs)(S.Z, {
+                                    profileType: g.y0.BITE_SIZE,
+                                    children: [(0, i.jsx)(N.Z, {
                                         user: t,
-                                        guildId: n,
+                                        guildId: v,
                                         channelId: L,
                                         onClose: P
-                                    }), (0, i.jsx)(N.Z, {
-                                        profileType: C.y0.BITE_SIZE,
+                                    }), (0, i.jsx)(f.Z, {
+                                        profileType: g.y0.BITE_SIZE,
                                         user: t,
                                         acceptFriendRequestColor: G ? o.tokens.colors.BUTTON_OUTLINE_POSITIVE_BORDER : null
-                                    }), (0, i.jsx)(m.Z, {
+                                    }), (0, i.jsx)(A.Z, {
                                         user: t,
-                                        profileType: C.y0.BITE_SIZE,
-                                        guildId: n,
+                                        profileType: g.y0.BITE_SIZE,
+                                        guildId: v,
                                         viewProfileItem: (0, i.jsx)(o.MenuItem, {
                                             id: "view-profile",
-                                            label: v.Z.Messages.VIEW_FULL_PROFILE,
+                                            label: C.Z.Messages.VIEW_FULL_PROFILE,
                                             action: () => {
                                                 k({
                                                     action: "PRESS_VIEW_PROFILE",
                                                     analyticsLocations: w
-                                                }), Y()
+                                                }), F()
                                             }
                                         })
                                     })]
-                                }), (0, i.jsx)(g.Z, {
-                                    user: t,
-                                    displayProfile: H,
-                                    guildId: n,
-                                    channelId: L,
-                                    onOpenProfile: U ? void 0 : Y
-                                }), (0, i.jsx)(R.Z, {
-                                    user: t,
-                                    currentUser: B,
-                                    displayProfile: H,
-                                    guild: x,
-                                    isHovering: F,
-                                    onOpenProfile: Y,
-                                    channelId: L,
-                                    onClose: P
                                 }), (0, i.jsx)(p.Z, {
                                     user: t,
-                                    guildId: n,
+                                    displayProfile: Z,
+                                    guildId: v,
+                                    channelId: L,
+                                    onOpenProfile: U ? void 0 : F
+                                }), (0, i.jsx)(O.Z, {
+                                    user: t,
+                                    currentUser: n,
+                                    displayProfile: Z,
+                                    guild: B,
+                                    isHovering: H,
+                                    onOpenProfile: F,
+                                    channelId: L,
+                                    onClose: P
+                                }), (0, i.jsx)(R.Z, {
+                                    user: t,
+                                    guildId: v,
                                     channelId: L,
                                     onClose: P
                                 })]
-                            }), (null == H ? void 0 : H.profileEffectId) != null && (0, i.jsx)(_.Z, {
-                                profileEffectId: null == H ? void 0 : H.profileEffectId,
-                                isHovering: F
+                            }), (null == Z ? void 0 : Z.profileEffectId) != null && (0, i.jsx)(_.Z, {
+                                profileEffectId: null == Z ? void 0 : Z.profileEffectId,
+                                isHovering: H
                             })]
                         })
                     })
@@ -226859,6 +227005,197 @@
                     canShowProfileEffectUpsell: g,
                     onDismiss: v
                 }
+            }
+        },
+        777887: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return S
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(442837),
+                s = n(246946),
+                o = n(5192),
+                a = n(741308),
+                l = n(681837),
+                u = n(724593),
+                _ = n(530),
+                c = n(580512),
+                d = n(67152),
+                E = n(579285),
+                I = n(287612),
+                T = n(228168),
+                h = n(766346);
+
+            function S(e) {
+                let {
+                    user: t,
+                    currentUser: n,
+                    displayProfile: S,
+                    guild: f,
+                    isHovering: N,
+                    onOpenProfile: A,
+                    channelId: m,
+                    onClose: O
+                } = e, R = o.ZP.getName(null == f ? void 0 : f.id, m, t), p = (0, r.e7)([s.Z], () => s.Z.hidePersonalInformation);
+                return (0, i.jsxs)("div", {
+                    className: h.body,
+                    children: [(0, i.jsx)(_.Z, {
+                        user: t,
+                        profileType: T.y0.BITE_SIZE,
+                        onOpenProfile: A,
+                        nickname: R,
+                        pronouns: null == S ? void 0 : S.pronouns,
+                        tags: (0, i.jsx)(a.Z, {
+                            displayProfile: S,
+                            profileType: T.y0.BITE_SIZE,
+                            onClose: O
+                        }),
+                        nicknameIcons: (0, i.jsxs)(i.Fragment, {
+                            children: [(0, i.jsx)(l.Z, {
+                                userId: t.id
+                            }), !p && (0, i.jsx)(u.Z, {
+                                user: t,
+                                isHovering: N,
+                                onOpenProfile: () => A({
+                                    subsection: T.Tb.NOTE
+                                })
+                            })]
+                        })
+                    }), (0, i.jsx)(I.Z, {
+                        user: t,
+                        onOpenProfile: e => A({
+                            section: e
+                        })
+                    }), (0, i.jsx)(d.Z, {
+                        user: t,
+                        bio: null == S ? void 0 : S.bio,
+                        hidePersonalInformation: p,
+                        onClose: O
+                    }), (0, i.jsx)(c.Z, {
+                        user: t,
+                        guild: f,
+                        channelId: m,
+                        onClose: O
+                    }), null != f && (0, i.jsx)(E.Z, {
+                        user: t,
+                        currentUser: n,
+                        guild: f,
+                        onOpenProfile: () => A({
+                            subsection: T.Tb.ROLES
+                        })
+                    })]
+                })
+            }
+        },
+        985237: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return O
+                }
+            }), n(47120);
+            var i = n(735250),
+                r = n(470079),
+                s = n(442837),
+                o = n(481060),
+                a = n(727637),
+                l = n(100527),
+                u = n(906732),
+                _ = n(271383),
+                c = n(430824),
+                d = n(785717),
+                E = n(318661),
+                I = n(502762),
+                T = n(544989),
+                h = n(272510),
+                S = n(171368),
+                f = n(215633),
+                N = n(23293),
+                A = n(777887),
+                m = n(228168);
+
+            function O(e) {
+                let {
+                    user: t,
+                    currentUser: n,
+                    guildId: O,
+                    channelId: R,
+                    messageId: p,
+                    roleId: g,
+                    closePopout: C,
+                    setPopoutRef: v,
+                    disableUserProfileLink: L = __OVERLAY__,
+                    newAnalyticsLocations: D = []
+                } = e, {
+                    analyticsLocations: M
+                } = (0, u.ZP)([...D, l.Z.BITE_SIZE_PROFILE_POPOUT]), P = (0, E.ZP)(t.id, O), y = (0, s.e7)([c.Z], () => null != O ? c.Z.getGuild(O) : null), U = (0, s.e7)([_.ZP], () => null != O ? _.ZP.getMember(O, t.id) : null), b = r.useRef(null), G = (0, a.Z)(b);
+                r.useEffect(() => {
+                    null == v || v(null == b ? void 0 : b.current)
+                }, [b, v]);
+                let w = e => {
+                    null == C || C(), (0, S.openUserProfileModal)({
+                        sourceAnalyticsLocations: M,
+                        userId: t.id,
+                        guildId: O,
+                        channelId: R,
+                        messageId: p,
+                        roleId: g,
+                        ...e
+                    })
+                };
+                return (0, i.jsx)(u.Gt, {
+                    value: M,
+                    children: (0, i.jsx)(d.Mt, {
+                        layout: "BITE_SIZE_POPOUT",
+                        userId: t.id,
+                        guildId: O,
+                        channelId: R,
+                        messageId: p,
+                        roleId: g,
+                        shouldTrackViewOnMount: null == U || null != U.fullProfileLoadedTimestamp,
+                        children: (0, i.jsx)(o.Dialog, {
+                            ref: b,
+                            "aria-label": t.username,
+                            children: (0, i.jsxs)(I.Z, {
+                                user: t,
+                                displayProfile: P,
+                                profileType: m.y0.BITE_SIZE,
+                                children: [(0, i.jsx)(T.Z, {
+                                    profileType: m.y0.BITE_SIZE,
+                                    children: (0, i.jsx)(h.Z, {
+                                        user: t,
+                                        profileType: m.y0.BITE_SIZE,
+                                        guildId: O
+                                    })
+                                }), (0, i.jsx)(N.Z, {
+                                    user: t,
+                                    displayProfile: P,
+                                    guildId: O,
+                                    channelId: R,
+                                    onOpenProfile: L ? void 0 : w
+                                }), (0, i.jsx)(A.Z, {
+                                    user: t,
+                                    currentUser: n,
+                                    displayProfile: P,
+                                    guild: y,
+                                    isHovering: G,
+                                    onOpenProfile: w,
+                                    channelId: R,
+                                    onClose: C
+                                }), (0, i.jsx)(f.Z, {
+                                    user: t,
+                                    guildId: O,
+                                    channelId: R,
+                                    onClose: C
+                                })]
+                            })
+                        })
+                    })
+                })
             }
         },
         204197: function(e, t, n) {
@@ -260389,7 +260726,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d8fbe196b27160f92a8e3cd2a1a70d5e80463b42"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "341609f7739be00671eee52ad2f0cb62b2be63bb"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279550,7 +279887,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303631"
+                                build_number: "303642"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286859,7 +287196,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303631", "303631"), 10);
+                let s = parseInt((n = "303642", "303642"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328374,4 +328711,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.55171ac8a9706dff8867.js.map
+//# sourceMappingURL=79892.5bebd1f3e9bbefbf811e.js.map
