@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303401", ", Version Hash: ").concat("3f5b1ac1838c39a5206c0129ac6a690c0d25cab6")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303413", ", Version Hash: ").concat("5ccafe405b8b27277ac5e9510c579bd8ff38ef7d")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -60072,7 +60072,9 @@
                 E2EE_USER_VERIFIED_HOURS_AGO: "Verified {count} {count, plural, =1 {hour} other {hours}} ago",
                 E2EE_USER_VERIFIED_MINUTES_AGO: "Verified {count} {count, plural, =1 {minute} other {minutes}} ago",
                 E2EE_USER_VERIFIED_SECONDS_AGO: "Verified {count} {count, plural, =1 {second} other {seconds}} ago",
-                E2EE_DEVICES_COUNT: "{count} {count, plural, =1 {device} other {devices}}"
+                E2EE_DEVICES_COUNT: "{count} {count, plural, =1 {device} other {devices}}",
+                E2EE_CLEAR_VERIFICATION_FOR_ALL: "Clear all verifications",
+                E2EE_CLEAR_VERIFICATION_SUBTITLE: "You will have to verify these devices again"
             })
         },
         539590: function(e) {
@@ -62418,7 +62420,7 @@
                         return
                     }
                     let r = this._socket;
-                    null != r && this._cleanupSocket(), (r = this._socket = new z.Z(this.endpoint)).on(z.V.Connecting, this._handleConnecting.bind(this, r)), r.on(z.V.Connect, this._handleConnect.bind(this, r)), r.on(z.V.Disconnect, this._handleDisconnect.bind(this, r)), r.on(z.V.Resuming, this._handleResuming.bind(this, r)), r.on(z.V.Ready, this._handleReady.bind(this, r)), r.on(z.V.Speaking, this._handleSpeaking.bind(this, r)), r.on(z.V.Video, this._handleVideo.bind(this, r)), r.on(z.V.Ping, this._handleControlPing.bind(this)), r.on(z.V.ClientDisconnect, this._handleClientDisconnect.bind(this)), r.on(z.V.Codecs, this._handleCodecs.bind(this)), r.on(z.V.MediaSessionId, this._handleMediaSessionId.bind(this)), r.on(z.V.MediaSinkWants, this._handleMediaSinkWants.bind(this)), r.on(z.V.VoiceBackendVersion, this._handleCodeVersion.bind(this)), r.on(z.V.KeyframeInterval, this._handleKeyframeInterval.bind(this)), r.on(z.V.Flags, this.handleFlags.bind(this)), r.on(z.V.Platform, this.handlePlatform.bind(this)), r.on(z.V.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), r.on(z.V.SecureFramesInit, this._handleSecureFramesInit.bind(this)), r.on(z.V.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), r.on(z.V.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), r.on(z.V.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), r.on(z.V.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), r.on(z.V.MLSProposals, this._handleMLSProposals.bind(this, r)), r.on(z.V.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), r.on(z.V.MLSWelcome, this._handleMLSWelcome.bind(this)), this._connectStartTime = (0, E.zO)(), this._connectCount++, this._connecting = !0, null != r && this._socket === r && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = !1, r.connect())
+                    null != r && this._cleanupSocket(), (r = this._socket = new z.Z(this.endpoint)).on(z.V.Connecting, this._handleConnecting.bind(this, r)), r.on(z.V.Connect, this._handleConnect.bind(this, r)), r.on(z.V.Disconnect, this._handleDisconnect.bind(this, r)), r.on(z.V.Resuming, this._handleResuming.bind(this, r)), r.on(z.V.Ready, this._handleReady.bind(this, r)), r.on(z.V.Speaking, this._handleSpeaking.bind(this, r)), r.on(z.V.Video, this._handleVideo.bind(this, r)), r.on(z.V.Ping, this._handleControlPing.bind(this)), r.on(z.V.ClientDisconnect, this._handleClientDisconnect.bind(this)), r.on(z.V.ClientConnect, this._handleClientConnect.bind(this)), r.on(z.V.Codecs, this._handleCodecs.bind(this)), r.on(z.V.MediaSessionId, this._handleMediaSessionId.bind(this)), r.on(z.V.MediaSinkWants, this._handleMediaSinkWants.bind(this)), r.on(z.V.VoiceBackendVersion, this._handleCodeVersion.bind(this)), r.on(z.V.KeyframeInterval, this._handleKeyframeInterval.bind(this)), r.on(z.V.Flags, this.handleFlags.bind(this)), r.on(z.V.Platform, this.handlePlatform.bind(this)), r.on(z.V.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), r.on(z.V.SecureFramesInit, this._handleSecureFramesInit.bind(this)), r.on(z.V.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), r.on(z.V.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), r.on(z.V.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), r.on(z.V.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), r.on(z.V.MLSProposals, this._handleMLSProposals.bind(this, r)), r.on(z.V.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), r.on(z.V.MLSWelcome, this._handleMLSWelcome.bind(this)), this._connectStartTime = (0, E.zO)(), this._connectCount++, this._connecting = !0, null != r && this._socket === r && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = !1, r.connect())
                 }
                 destroy() {
                     var e, t, n, i, r;
@@ -63062,6 +63064,9 @@
                         rtc_worker_backend_version: this.rtcWorkerVersion
                     }
                 }
+                _handleClientConnect(e) {
+                    this.emit(W.z.ClientConnect, e)
+                }
                 _handleClientDisconnect(e) {
                     var t, n, i;
                     let r = this._videoQuality;
@@ -63324,7 +63329,7 @@
                 z: function() {
                     return i
                 }
-            }), (r = i || (i = {})).State = "state", r.Speaking = "speaking", r.VideoSourceQualityChanged = "video-source-quality-changed", r.Video = "video", r.Flags = "flags", r.Platform = "platform", r.Ping = "ping", r.ClientDisconnect = "client-disconnect", r.OutboundLossRate = "outboundlossrate", r.SecureFramesUpdate = "secure-frames-update"
+            }), (r = i || (i = {})).State = "state", r.Speaking = "speaking", r.VideoSourceQualityChanged = "video-source-quality-changed", r.Video = "video", r.Flags = "flags", r.Platform = "platform", r.Ping = "ping", r.ClientConnect = "client-connect", r.ClientDisconnect = "client-disconnect", r.OutboundLossRate = "outboundlossrate", r.SecureFramesUpdate = "secure-frames-update"
         },
         423343: function(e, t, n) {
             "use strict";
@@ -63420,7 +63425,7 @@
                 }) : e[t] = n, e
             }
 
-            function m() {}(a = i || (i = {}))[a.IDENTIFY = 0] = "IDENTIFY", a[a.SELECT_PROTOCOL = 1] = "SELECT_PROTOCOL", a[a.READY = 2] = "READY", a[a.HEARTBEAT = 3] = "HEARTBEAT", a[a.SELECT_PROTOCOL_ACK = 4] = "SELECT_PROTOCOL_ACK", a[a.SPEAKING = 5] = "SPEAKING", a[a.HEARTBEAT_ACK = 6] = "HEARTBEAT_ACK", a[a.RESUME = 7] = "RESUME", a[a.HELLO = 8] = "HELLO", a[a.RESUMED = 9] = "RESUMED", a[a.VIDEO = 12] = "VIDEO", a[a.CLIENT_DISCONNECT = 13] = "CLIENT_DISCONNECT", a[a.SESSION_UPDATE = 14] = "SESSION_UPDATE", a[a.MEDIA_SINK_WANTS = 15] = "MEDIA_SINK_WANTS", a[a.VOICE_BACKEND_VERSION = 16] = "VOICE_BACKEND_VERSION", a[a.CHANNEL_OPTIONS_UPDATE = 17] = "CHANNEL_OPTIONS_UPDATE", a[a.FLAGS = 18] = "FLAGS", a[a.SPEED_TEST = 19] = "SPEED_TEST", a[a.PLATFORM = 20] = "PLATFORM", a[a.SECURE_FRAMES_PREPARE_PROTOCOL_TRANSITION = 21] = "SECURE_FRAMES_PREPARE_PROTOCOL_TRANSITION", a[a.SECURE_FRAMES_EXECUTE_TRANSITION = 22] = "SECURE_FRAMES_EXECUTE_TRANSITION", a[a.SECURE_FRAMES_READY_FOR_TRANSITION = 23] = "SECURE_FRAMES_READY_FOR_TRANSITION", a[a.SECURE_FRAMES_PREPARE_EPOCH = 24] = "SECURE_FRAMES_PREPARE_EPOCH", a[a.MLS_EXTERNAL_SENDER_PACKAGE = 25] = "MLS_EXTERNAL_SENDER_PACKAGE", a[a.MLS_KEY_PACKAGE = 26] = "MLS_KEY_PACKAGE", a[a.MLS_PROPOSALS = 27] = "MLS_PROPOSALS", a[a.MLS_COMMIT_WELCOME = 28] = "MLS_COMMIT_WELCOME", a[a.MLS_PREPARE_COMMIT_TRANSITION = 29] = "MLS_PREPARE_COMMIT_TRANSITION", a[a.MLS_WELCOME = 30] = "MLS_WELCOME", a[a.MLS_INVALID_COMMIT_WELCOME = 31] = "MLS_INVALID_COMMIT_WELCOME", (l = r || (r = {}))[l.AUTHENTICATION_FAILED = 4004] = "AUTHENTICATION_FAILED", l[l.INVALID_SESSION = 4006] = "INVALID_SESSION", l[l.SERVER_NOT_FOUND = 4011] = "SERVER_NOT_FOUND", l[l.SERVER_CRASH = 4015] = "SERVER_CRASH", l[l.CANCELED = 4016] = "CANCELED", l[l.HEARTBEAT_TIMEOUT = 4800] = "HEARTBEAT_TIMEOUT", l[l.UNRESUMABLE = 4801] = "UNRESUMABLE", l[l.RESET_BACKOFF = 4802] = "RESET_BACKOFF", (u = s || (s = {}))[u.DISCONNECTED = 0] = "DISCONNECTED", u[u.CONNECTING = 1] = "CONNECTING", u[u.IDENTIFYING = 2] = "IDENTIFYING", u[u.RESUMING = 3] = "RESUMING", u[u.CONNECTED = 4] = "CONNECTED", u[u.RECONNECTING = 5] = "RECONNECTING";
+            function m() {}(a = i || (i = {}))[a.IDENTIFY = 0] = "IDENTIFY", a[a.SELECT_PROTOCOL = 1] = "SELECT_PROTOCOL", a[a.READY = 2] = "READY", a[a.HEARTBEAT = 3] = "HEARTBEAT", a[a.SELECT_PROTOCOL_ACK = 4] = "SELECT_PROTOCOL_ACK", a[a.SPEAKING = 5] = "SPEAKING", a[a.HEARTBEAT_ACK = 6] = "HEARTBEAT_ACK", a[a.RESUME = 7] = "RESUME", a[a.HELLO = 8] = "HELLO", a[a.RESUMED = 9] = "RESUMED", a[a.CLIENT_CONNECT = 11] = "CLIENT_CONNECT", a[a.VIDEO = 12] = "VIDEO", a[a.CLIENT_DISCONNECT = 13] = "CLIENT_DISCONNECT", a[a.SESSION_UPDATE = 14] = "SESSION_UPDATE", a[a.MEDIA_SINK_WANTS = 15] = "MEDIA_SINK_WANTS", a[a.VOICE_BACKEND_VERSION = 16] = "VOICE_BACKEND_VERSION", a[a.CHANNEL_OPTIONS_UPDATE = 17] = "CHANNEL_OPTIONS_UPDATE", a[a.FLAGS = 18] = "FLAGS", a[a.SPEED_TEST = 19] = "SPEED_TEST", a[a.PLATFORM = 20] = "PLATFORM", a[a.SECURE_FRAMES_PREPARE_PROTOCOL_TRANSITION = 21] = "SECURE_FRAMES_PREPARE_PROTOCOL_TRANSITION", a[a.SECURE_FRAMES_EXECUTE_TRANSITION = 22] = "SECURE_FRAMES_EXECUTE_TRANSITION", a[a.SECURE_FRAMES_READY_FOR_TRANSITION = 23] = "SECURE_FRAMES_READY_FOR_TRANSITION", a[a.SECURE_FRAMES_PREPARE_EPOCH = 24] = "SECURE_FRAMES_PREPARE_EPOCH", a[a.MLS_EXTERNAL_SENDER_PACKAGE = 25] = "MLS_EXTERNAL_SENDER_PACKAGE", a[a.MLS_KEY_PACKAGE = 26] = "MLS_KEY_PACKAGE", a[a.MLS_PROPOSALS = 27] = "MLS_PROPOSALS", a[a.MLS_COMMIT_WELCOME = 28] = "MLS_COMMIT_WELCOME", a[a.MLS_PREPARE_COMMIT_TRANSITION = 29] = "MLS_PREPARE_COMMIT_TRANSITION", a[a.MLS_WELCOME = 30] = "MLS_WELCOME", a[a.MLS_INVALID_COMMIT_WELCOME = 31] = "MLS_INVALID_COMMIT_WELCOME", (l = r || (r = {}))[l.AUTHENTICATION_FAILED = 4004] = "AUTHENTICATION_FAILED", l[l.INVALID_SESSION = 4006] = "INVALID_SESSION", l[l.SERVER_NOT_FOUND = 4011] = "SERVER_NOT_FOUND", l[l.SERVER_CRASH = 4015] = "SERVER_CRASH", l[l.CANCELED = 4016] = "CANCELED", l[l.HEARTBEAT_TIMEOUT = 4800] = "HEARTBEAT_TIMEOUT", l[l.UNRESUMABLE = 4801] = "UNRESUMABLE", l[l.RESET_BACKOFF = 4802] = "RESET_BACKOFF", (u = s || (s = {}))[u.DISCONNECTED = 0] = "DISCONNECTED", u[u.CONNECTING = 1] = "CONNECTING", u[u.IDENTIFYING = 2] = "IDENTIFYING", u[u.RESUMING = 3] = "RESUMING", u[u.CONNECTED = 4] = "CONNECTED", u[u.RECONNECTING = 5] = "RECONNECTING";
             let O = 20 * S.Z.Millis.SECOND,
                 R = 1 * S.Z.Millis.MINUTE,
                 p = 5 * S.Z.Millis.SECOND,
@@ -63478,7 +63483,7 @@
                         height: e.max_resolution.height
                     } : void 0
                 }))) && void 0 !== t ? t : []
-            }(_ = o || (o = {})).Connecting = "connecting", _.Connect = "connect", _.Disconnect = "disconnect", _.Resuming = "resuming", _.Ready = "ready", _.Speaking = "speaking", _.Video = "video", _.Ping = "ping", _.ClientDisconnect = "client-disconnect", _.Codecs = "codecs", _.MediaSessionId = "media-session-id", _.MediaSinkWants = "media-sink-wants", _.VoiceBackendVersion = "voice-backend-version", _.KeyframeInterval = "keyframe-interval", _.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", _.Flags = "flags", _.Platform = "platform", _.SDP = "sdp", _.Encryption = "encryption", _.SpeedTest = "speed-test", _.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", _.SecureFramesInit = "secure-frames-init", _.SecureFramesPrepareTransition = "secure-frames-prepare-transition", _.SecureFramesExecuteTransition = "secure-frames-execute-transition", _.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", _.MLSExternalSenderPackage = "mls-external-sender-package", _.MLSProposals = "mls-proposals", _.MLSPrepareCommitTransition = "mls-prepare-commit-transition", _.MLSWelcome = "mls-welcome";
+            }(_ = o || (o = {})).Connecting = "connecting", _.Connect = "connect", _.Disconnect = "disconnect", _.Resuming = "resuming", _.Ready = "ready", _.Speaking = "speaking", _.Video = "video", _.Ping = "ping", _.ClientConnect = "client-connect", _.ClientDisconnect = "client-disconnect", _.Codecs = "codecs", _.MediaSessionId = "media-session-id", _.MediaSinkWants = "media-sink-wants", _.VoiceBackendVersion = "voice-backend-version", _.KeyframeInterval = "keyframe-interval", _.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", _.Flags = "flags", _.Platform = "platform", _.SDP = "sdp", _.Encryption = "encryption", _.SpeedTest = "speed-test", _.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", _.SecureFramesInit = "secure-frames-init", _.SecureFramesPrepareTransition = "secure-frames-prepare-transition", _.SecureFramesExecuteTransition = "secure-frames-execute-transition", _.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", _.MLSExternalSenderPackage = "mls-external-sender-package", _.MLSProposals = "mls-proposals", _.MLSPrepareCommitTransition = "mls-prepare-commit-transition", _.MLSWelcome = "mls-welcome";
             class D extends I.Z {
                 createWebSocket() {
                     this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
@@ -63526,6 +63531,9 @@
                                 break;
                             case 12:
                                 this.emit("video", n.user_id, n.audio_ssrc, n.video_ssrc, L(n.streams));
+                                break;
+                            case 11:
+                                this.emit("client-connect", n.user_ids);
                                 break;
                             case 13:
                                 this.emit("client-disconnect", n.user_id);
@@ -95982,8 +95990,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303401", "303401"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303401")), t = 0), t
+                let t = parseInt((e = "303413", "303413"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303413")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124195,8 +124203,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303401",
-                    versionHash: "3f5b1ac1838c39a5206c0129ac6a690c0d25cab6"
+                    buildNumber: "303413",
+                    versionHash: "5ccafe405b8b27277ac5e9510c579bd8ff38ef7d"
                 }
             }
             n.d(t, {
@@ -180656,8 +180664,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718897902130",
-                                    build_number: "303401"
+                                    built_at: "1718899143842",
+                                    build_number: "303413"
                                 }
                             },
                             retries: 1
@@ -247828,6 +247836,15 @@
                             context: s.context
                         })
                     })
+                }), s.on(c.z.ClientConnect, e => {
+                    _.Z.wait(() => {
+                        _.Z.dispatch({
+                            type: "RTC_CONNECTION_CLIENT_CONNECT",
+                            userIds: e,
+                            guildId: s.guildId,
+                            channelId: s.channelId
+                        })
+                    })
                 }), s.on(c.z.ClientDisconnect, e => {
                     _.Z.wait(() => {
                         _.Z.dispatch({
@@ -258673,7 +258690,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3f5b1ac1838c39a5206c0129ac6a690c0d25cab6"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5ccafe405b8b27277ac5e9510c579bd8ff38ef7d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279308,7 +279325,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303401"
+                                build_number: "303413"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286620,7 +286637,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303401", "303401"), 10);
+                let s = parseInt((n = "303413", "303413"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328123,4 +328140,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.914ab926f51e2acac7a4.js.map
+//# sourceMappingURL=79892.8057041e317292e157fe.js.map
