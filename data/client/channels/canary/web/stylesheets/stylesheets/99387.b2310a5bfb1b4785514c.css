@@ -34630,7 +34630,6 @@ span.clanTag_a31c43 {
 .container_e5da8b {
     border-radius: var(--radius-md);
     background-color: var(--bg-surface-raised);
-    width: 100%;
     overflow: hidden;
     cursor: pointer
 }
@@ -34650,6 +34649,10 @@ span.clanTag_a31c43 {
 .icon_e5da8b {
     width: 38px;
     height: 38px
+}
+
+.darkenBannerImage_e5da8b {
+    filter: brightness(.4)
 }
 
 .bannerImageContainer_e5da8b {
@@ -34700,6 +34703,7 @@ span.clanTag_a31c43 {
 }
 
 .appDetailsContainer_e5da8b {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: var(--spacing-8);
@@ -34712,6 +34716,26 @@ span.clanTag_a31c43 {
     overflow: hidden;
     flex-direction: column;
     margin-left: var(--spacing-12)
+}
+
+.bannerImageChildContainer_e5da8b {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.voiceLauncherAppCardContainer_e5da8b {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.voiceLauncherAppCardButton_e5da8b {
+    border-radius: var(--radius-round)
 }
 
 .header_b7ba1b {
@@ -47207,8 +47231,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -105302,8 +105326,8 @@ div:has(>div>.container_d99f08) {
 }
 
 .similarGames_e881fc {
-    height: 44px;
-    width: 34px;
+    height: 112px;
+    width: 86px;
     border-radius: 4px
 }
 
@@ -142415,4 +142439,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c1e5a31b121f45b2e09f.css.map*/
+/*# sourceMappingURL=99387.b2310a5bfb1b4785514c.css.map*/

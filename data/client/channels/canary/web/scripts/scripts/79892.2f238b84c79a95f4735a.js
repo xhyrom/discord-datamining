@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303413", ", Version Hash: ").concat("5ccafe405b8b27277ac5e9510c579bd8ff38ef7d")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303425", ", Version Hash: ").concat("783c26cd6a56e5556eb598d41a7bfa0985e1c7f8")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -59406,7 +59406,7 @@
                 CONTENT_INVENTORY_COACHTIP_TEXT: "Friends will receive the emoji as a DM",
                 CONTENT_INVENTORY_COACHTIP_IMAGE_ALT: "Wumpus chatting with a friend while gaming",
                 CONTENT_INVENTORY_GAME_STATE_SIZE: "{count} of {max}",
-                GAME_PROFILE_ALSO_PLAYING: "Also Playing",
+                GAME_PROFILE_ALSO_PLAYING: "Similar Games",
                 GAME_PROFILE_PUBLISHER: "Publisher",
                 GAME_PROFILE_LINKS: "Links",
                 GAME_PROFILE_GUILDS_TAB: "Guilds",
@@ -78128,13 +78128,22 @@
                     id: "2024-06_desktop_app_launcher_in_activities_shelf",
                     label: "Desktop App Launcher In Activities Shelf",
                     defaultConfig: {
-                        enabled: !1
+                        enabled: !1,
+                        clickOnHomeActivityOpensAppDetail: !1
                     },
                     treatments: [{
                         id: 1,
-                        label: "Enable the desktop app launcher in activities shelf",
+                        label: "Enable the desktop app launcher in activities shelf: On home screen, clicking activity card -> performs activity action (i.e. launch)",
                         config: {
-                            enabled: !0
+                            enabled: !0,
+                            clickOnHomeActivityOpensAppDetail: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Enable the desktop app launcher in activities shelf: On home screen, clicking activity card -> activity detail page",
+                        config: {
+                            enabled: !0,
+                            clickOnHomeActivityOpensAppDetail: !0
                         }
                     }]
                 });
@@ -78184,6 +78193,9 @@
                 shouldShowModal() {
                     return _.show && _.entrypoint === u._.VOICE
                 }
+                entrypoint() {
+                    return _.entrypoint
+                }
             }
             s = "AppLauncherStore", (r = "displayName") in(i = d) ? Object.defineProperty(i, r, {
                 value: s,
@@ -78209,10 +78221,23 @@
             "use strict";
             var i, r;
             n.d(t, {
+                L: function() {
+                    return s
+                },
                 _: function() {
                     return i
                 }
-            }), (r = i || (i = {}))[r.NONE = 0] = "NONE", r[r.TEXT = 1] = "TEXT", r[r.VOICE = 2] = "VOICE"
+            }), (r = i || (i = {}))[r.NONE = 0] = "NONE", r[r.TEXT = 1] = "TEXT", r[r.VOICE = 2] = "VOICE";
+            let s = {
+                SEARCH: "search",
+                RECENT: "recent",
+                INSTALLED: "installed",
+                ACTIVITIES: "activities",
+                RECENT_APPS: "recent_apps",
+                RECENT_COMMANDS: "recent_commands",
+                NEW_TO_APPS: "new_to_apps",
+                APPS_IN_THIS_SERVER: "apps_in_this_server"
+            }
         },
         496158: function(e, t, n) {
             "use strict";
@@ -78912,6 +78937,8 @@
                         break;
                     case o.gc.LIST:
                         t = (0, i.jsx)(u.Z, {
+                            channel: c,
+                            entrypoint: d,
                             title: T.title,
                             look: T.look,
                             items: T.items
@@ -78946,133 +78973,262 @@
                 })
             })
         },
+        176412: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                P: function() {
+                    return d
+                }
+            });
+            var i = n(481060),
+                r = n(2052),
+                s = n(542094),
+                o = n(513202),
+                a = n(367907),
+                l = n(895924),
+                u = n(499254),
+                _ = n(981631),
+                c = n(689938);
+
+            function d(e, t, n) {
+                var d;
+                let E = (0, r.O)(),
+                    I = (0, s.Qv)({
+                        applicationId: t.id,
+                        channelId: e.id
+                    }),
+                    T = (0, s.w1)({
+                        applicationId: t.id,
+                        embeddedActivitiesManager: o.Z,
+                        channelId: e.id,
+                        guildId: null !== (d = e.getGuildId()) && void 0 !== d ? d : void 0,
+                        locationObject: E.location,
+                        onActivityItemSelectedProp: e => {
+                            let {
+                                applicationId: t
+                            } = e;
+                            u.y(), (0, a.yw)(_.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+                                location: l.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+                                application_id: t,
+                                section_name: n,
+                                action: I
+                            })
+                        }
+                    }),
+                    h = i.ButtonColors.BRAND,
+                    S = c.Z.Messages.LAUNCH;
+                return I === s.JS.JOIN ? (h = i.ButtonColors.GREEN, S = c.Z.Messages.JOIN_ACTIVITY) : I === s.JS.LEAVE && (h = i.ButtonColors.RED, S = c.Z.Messages.LEAVE), {
+                    onActivityItemSelected: T,
+                    activityAction: I,
+                    buttonColor: h,
+                    buttonText: S
+                }
+            }
+        },
         98880: function(e, t, n) {
             "use strict";
+            n.d(t, {
+                U4: function() {
+                    return i
+                },
+                kA: function() {
+                    return v
+                },
+                qR: function() {
+                    return L
+                }
+            }), n(411104);
             var i, r, s = n(735250),
                 o = n(470079),
                 a = n(120356),
                 l = n.n(a),
                 u = n(481060),
-                _ = n(778569),
-                c = n(182906),
-                d = n(220082),
-                E = n(318661),
-                I = n(792125),
-                T = n(783097),
-                h = n(753972),
-                S = n(231338),
-                f = n(689938),
-                N = n(599632);
+                _ = n(542094),
+                c = n(778569),
+                d = n(182906),
+                E = n(220082),
+                I = n(318661),
+                T = n(792125),
+                h = n(783097),
+                S = n(695676),
+                f = n(176412),
+                N = n(753972),
+                A = n(231338),
+                m = n(689938),
+                O = n(599632);
 
-            function A(e) {
+            function R(e) {
                 let {
                     application: t,
                     look: n = "large_banner",
                     isPartner: i,
-                    onClick: r
+                    onClick: r,
+                    bannerImageStyle: a,
+                    children: _
                 } = e, {
-                    iconURL: a,
-                    name: _,
-                    description: c
-                } = o.useMemo(() => (0, T.sl)(t, {
+                    iconURL: c,
+                    name: d,
+                    description: I
+                } = o.useMemo(() => (0, h.sl)(t, {
                     botIconFirst: !0
-                }), [t]), E = (0, d.ZP)(a, "");
+                }), [t]), S = (0, E.ZP)(c, "");
                 return (0, s.jsxs)(u.Clickable, {
-                    className: N.container,
+                    className: O.container,
                     onClick: r,
                     children: [(0, s.jsxs)("div", {
-                        className: l()(N.bannerImageContainer, {
-                            [N.mediumBanner]: "medium_banner" === n,
-                            [N.largeBanner]: "large_banner" === n
+                        className: l()(O.bannerImageContainer, {
+                            [O.mediumBanner]: "medium_banner" === n,
+                            [O.largeBanner]: "large_banner" === n
                         }),
-                        children: [(0, s.jsx)(m, {
-                            application: t,
-                            fallbackColor: E
+                        children: [(0, s.jsx)("span", {
+                            className: a,
+                            children: (0, s.jsx)(p, {
+                                application: t,
+                                fallbackColor: S
+                            })
                         }), i && (0, s.jsx)("div", {
-                            className: N.partnerLabelWrapper,
+                            className: O.partnerLabelWrapper,
                             children: (0, s.jsx)(u.Text, {
-                                className: (0, I.Q)(S.BR.DARK),
+                                className: (0, T.Q)(A.BR.DARK),
                                 variant: "text-sm/medium",
                                 color: "text-normal",
-                                children: f.Z.Messages.APP_DIRECTORY_PARTNER
+                                children: m.Z.Messages.APP_DIRECTORY_PARTNER
                             })
-                        })]
+                        }), "large_banner" === n || "medium_banner" === n ? (0, s.jsx)("div", {
+                            className: O.bannerImageChildContainer,
+                            children: _
+                        }) : null]
                     }), (0, s.jsxs)("div", {
-                        className: N.appDetailsContainer,
-                        children: [null != a && (0, s.jsx)(h.Z, {
-                            src: a,
-                            className: N.icon,
+                        className: O.appDetailsContainer,
+                        children: [null != c && (0, s.jsx)(N.Z, {
+                            src: c,
+                            className: O.icon,
                             "aria-hidden": !0
                         }), (0, s.jsxs)("div", {
-                            className: N.appDetails,
+                            className: O.appDetails,
                             children: [(0, s.jsx)(u.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "header-primary",
                                 lineClamp: 1,
-                                children: _
+                                children: d
                             }), (0, s.jsx)(u.Text, {
                                 variant: "text-sm/normal",
                                 color: "text-secondary",
                                 lineClamp: 1,
-                                children: c
+                                children: I
                             })]
                         })]
                     })]
                 })
             }
 
-            function m(e) {
+            function p(e) {
                 let {
                     application: t,
                     fallbackColor: n
                 } = e;
-                if ((0, T.BQ)(t)) {
-                    if ((0, T.ye)({
+                if ((0, h.BQ)(t)) {
+                    if ((0, h.ye)({
                             application: t
-                        })) return (0, s.jsx)(O, {
+                        })) return (0, s.jsx)(g, {
                         application: t
                     });
-                    if (null != t.bot) return (0, s.jsx)(R, {
+                    if (null != t.bot) return (0, s.jsx)(C, {
                         bot: t.bot
                     })
                 }
                 return (0, s.jsx)("div", {
-                    className: N.bannerImage,
+                    className: O.bannerImage,
                     style: {
                         backgroundColor: n
                     }
                 })
             }
 
-            function O(e) {
+            function g(e) {
                 let {
                     application: t
-                } = e, n = (0, _.Z)({
+                } = e, n = (0, c.Z)({
                     applicationId: t.id,
                     size: 600,
                     names: ["embedded_cover"]
                 });
-                return (0, s.jsx)(c.Z, {
+                return (0, s.jsx)(d.Z, {
                     imageBackground: n,
                     applicationName: t.name,
-                    imageClassName: N.bannerImage,
-                    imageNotFoundClassName: N.bannerImage
+                    imageClassName: O.bannerImage,
+                    imageNotFoundClassName: O.bannerImage
                 })
             }
 
-            function R(e) {
+            function C(e) {
                 let {
                     bot: t
-                } = e, n = (0, E.ZP)(t.id), i = o.useMemo(() => null == n ? void 0 : n.getBannerURL({
+                } = e, n = (0, I.ZP)(t.id), i = o.useMemo(() => null == n ? void 0 : n.getBannerURL({
                     canAnimate: !1,
                     size: 600
                 }), [n]);
                 return (0, s.jsx)("img", {
                     src: i,
                     alt: "",
-                    className: N.bannerImage
+                    className: O.bannerImage
                 })
-            }(i = r || (r = {})).NO_BANNER = "no_banner", i.MEDIUM_BANNER = "medium_banner", i.LARGE_BANNER = "large_banner", t.Z = A, A.Looks = r
+            }
+
+            function v(e) {
+                let {
+                    pushHistory: t
+                } = (0, S.hH)();
+                return (0, s.jsx)(R, {
+                    ...e,
+                    onClick: n => {
+                        n.stopPropagation(), t({
+                            type: S.gc.APPLICATION,
+                            application: e.application
+                        })
+                    }
+                })
+            }
+
+            function L(e) {
+                let {
+                    channel: t,
+                    application: n,
+                    sectionName: i,
+                    ...r
+                } = e;
+                if (!(0, h.BQ)(n)) throw Error("PerformActivityActionAppCard was passed the Built-in App, which is not supported.");
+                let {
+                    onActivityItemSelected: o,
+                    activityAction: a,
+                    buttonColor: l,
+                    buttonText: c
+                } = (0, f.P)(t, n, i);
+                return a === _.JS.START ? (0, s.jsx)(R, {
+                    ...r,
+                    application: n,
+                    onClick: o
+                }) : (0, s.jsx)(R, {
+                    ...r,
+                    application: n,
+                    onClick: e => {
+                        e.stopPropagation()
+                    },
+                    bannerImageStyle: O.darkenBannerImage,
+                    children: (0, s.jsx)("div", {
+                        className: O.voiceLauncherAppCardContainer,
+                        children: (0, s.jsx)(u.Button, {
+                            className: O.voiceLauncherAppCardButton,
+                            type: "submit",
+                            size: u.Button.Sizes.LARGE,
+                            color: l,
+                            disabled: !1,
+                            onClick: o,
+                            children: c
+                        })
+                    })
+                })
+            }(r = i || (i = {})).NO_BANNER = "no_banner", r.MEDIUM_BANNER = "medium_banner", r.LARGE_BANNER = "large_banner"
         },
         753972: function(e, t, n) {
             "use strict";
@@ -79663,57 +79819,33 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return E
+                    return o
                 }
             });
             var i = n(735250);
             n(470079);
             var r = n(481060),
-                s = n(2052),
-                o = n(542094),
-                a = n(513202),
-                l = n(367907),
-                u = n(895924),
-                _ = n(499254),
-                c = n(981631),
-                d = n(689938);
+                s = n(176412);
 
-            function E(e) {
-                var t;
+            function o(e) {
                 let {
-                    channel: n,
-                    application: E,
-                    sectionName: I,
-                    disabled: T,
-                    commandName: h
-                } = e, S = (0, s.O)(), f = (0, o.Qv)({
-                    applicationId: E.id,
-                    channelId: n.id
-                }), N = (0, o.w1)({
-                    applicationId: E.id,
-                    embeddedActivitiesManager: a.Z,
-                    channelId: n.id,
-                    guildId: null !== (t = n.getGuildId()) && void 0 !== t ? t : void 0,
-                    locationObject: S.location,
-                    onActivityItemSelectedProp: e => {
-                        let {
-                            applicationId: t
-                        } = e;
-                        _.y(), (0, l.yw)(c.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
-                            location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-                            application_id: t,
-                            section_name: I,
-                            action: f
-                        })
-                    }
-                }), A = r.ButtonColors.BRAND, m = null != h ? h : d.Z.Messages.LAUNCH;
-                return f === o.JS.JOIN ? (A = r.ButtonColors.GREEN, m = d.Z.Messages.JOIN_ACTIVITY) : f === o.JS.LEAVE && (A = r.ButtonColors.RED, m = d.Z.Messages.LEAVE), (0, i.jsx)(r.Button, {
+                    channel: t,
+                    application: n,
+                    sectionName: o,
+                    disabled: a,
+                    commandName: l
+                } = e, {
+                    onActivityItemSelected: u,
+                    buttonColor: _,
+                    buttonText: c
+                } = (0, s.P)(t, n, o);
+                return (0, i.jsx)(r.Button, {
                     type: "submit",
                     size: r.ButtonSizes.MEDIUM,
-                    color: A,
-                    disabled: T,
-                    onClick: N,
-                    children: m
+                    color: _,
+                    disabled: a,
+                    onClick: u,
+                    children: null != l ? l : c
                 })
             }
         },
@@ -79845,7 +79977,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return D
+                    return P
                 }
             }), n(47120), n(653041);
             var i = n(735250),
@@ -79865,59 +79997,63 @@
                 S = n(844439),
                 f = n(10718),
                 N = n(148958),
-                A = n(695676),
-                m = n(98880),
-                O = n(41558),
-                R = n(105862),
-                p = n(28147),
-                g = n(689079),
-                C = n(689938),
-                v = n(584915);
-            let L = [];
+                A = n(424602),
+                m = n(827498),
+                O = n(695676),
+                R = n(98880),
+                p = n(41558),
+                g = n(105862),
+                C = n(28147),
+                v = n(689079),
+                L = n(689938),
+                D = n(584915);
+            let M = [];
 
-            function D(e) {
+            function P(e) {
                 let {
                     channel: t,
                     entrypoint: n,
                     enableRecommendations: s,
                     enableRecents: o,
                     enableGlobalSearch: a
-                } = e, l = (0, d.NX)(t.id, !0, "AppLauncherHomeScreen");
+                } = e, l = (0, d.NX)(t.id, !0, "AppLauncherHomeScreen"), u = n === m._.TEXT, c = n === m._.TEXT && s, I = n === m._.VOICE, T = c || u;
                 r.useEffect(() => {
                     l && (0, E.w1)({
                         guildId: t.getGuildId(),
                         force: !0
                     })
                 }, [l, t]);
-                let [u, c] = r.useState(""), I = u.length > 0;
+                let [h, S] = r.useState(""), f = h.length > 0;
                 return (0, i.jsxs)("div", {
-                    className: v.container,
-                    children: [(0, i.jsx)(M, {
-                        searchQuery: u,
-                        setSearchQuery: c
+                    className: D.container,
+                    children: [(0, i.jsx)(y, {
+                        searchQuery: h,
+                        setSearchQuery: S
                     }), (0, i.jsx)(_.Scroller, {
-                        className: v.scrollableContent,
+                        className: D.scrollableContent,
                         fade: !0,
-                        children: I ? (0, i.jsx)("div", {
-                            children: (0, i.jsx)(p.Z, {
+                        children: f ? (0, i.jsx)("div", {
+                            children: (0, i.jsx)(C.Z, {
                                 channel: t,
-                                query: u,
+                                query: h,
                                 entrypoint: n,
                                 enableGlobalSearch: a,
                                 enableShelfSearch: l
                             })
                         }) : (0, i.jsxs)("div", {
-                            children: [o && (0, i.jsx)(P, {}), (0, i.jsx)(y, {
+                            children: [o && (0, i.jsx)(U, {}), u && (0, i.jsx)(G, {
                                 channel: t
-                            }), s && (0, i.jsx)(U, {
+                            }), c && (0, i.jsx)(w, {
                                 channel: t
-                            }), (0, i.jsx)(R.Z, {})]
+                            }), I && (0, i.jsx)(b, {
+                                channel: t
+                            }), T && (0, i.jsx)(g.Z, {})]
                         })
                     })]
                 })
             }
 
-            function M(e) {
+            function y(e) {
                 let {
                     searchQuery: t,
                     setSearchQuery: n
@@ -79928,9 +80064,9 @@
                     n(e), s(e)
                 }, [n, s]), l = r.useCallback(() => n(""), [n]);
                 return (0, i.jsx)("div", {
-                    className: v.searchBarContainer,
+                    className: D.searchBarContainer,
                     children: (0, i.jsx)(_.SearchBar, {
-                        placeholder: C.Z.Messages.APP_LAUNCHER_SEARCH_PLACEHOLDER,
+                        placeholder: L.Z.Messages.APP_LAUNCHER_SEARCH_PLACEHOLDER,
                         query: t,
                         onChange: a,
                         onClear: l,
@@ -79939,70 +80075,102 @@
                 })
             }
 
-            function P() {
+            function U() {
                 return null
             }
 
-            function y(e) {
+            function b(e) {
+                let {
+                    channel: t
+                } = e;
+                (0, T.g)();
+                let n = (0, I.Z)({
+                        guildId: t.getGuildId(),
+                        channel: t
+                    }),
+                    s = R.U4.LARGE_BANNER,
+                    {
+                        clickOnHomeActivityOpensAppDetail: o
+                    } = A.m1.getCurrentConfig({
+                        location: "ActivitiesShelfSection"
+                    }, {
+                        autoTrackExposure: !1
+                    }),
+                    a = r.useMemo(() => o ? R.kA : R.qR, [o]);
+                return (0, i.jsxs)("div", {
+                    children: [(0, i.jsx)(p.Z, {
+                        title: L.Z.Messages.EMBEDDED_ACTIVITIES_SHELF_TITLE
+                    }), (0, i.jsx)("div", {
+                        className: D.sectionContentContainer,
+                        children: n.map(e => {
+                            let {
+                                application: n
+                            } = e;
+                            return (0, i.jsx)(a, {
+                                channel: t,
+                                application: n,
+                                look: s,
+                                sectionName: m.L.ACTIVITIES
+                            }, n.id)
+                        })
+                    })]
+                })
+            }
+
+            function G(e) {
                 let {
                     channel: t
                 } = e, {
-                    pushHistory: n
-                } = (0, A.hH)(), {
-                    sectionDescriptors: s,
-                    filterSection: a
+                    sectionDescriptors: n,
+                    filterSection: s
                 } = f.wi(t, {
                     commandType: c.yU.CHAT
                 }, {
                     placeholderCount: 0,
-                    limit: g.tn,
+                    limit: v.tn,
                     includeFrecency: !0
                 });
                 r.useEffect(() => {
-                    a(g.bi.FRECENCY)
-                }, [a]);
-                let l = r.useMemo(() => s.filter(e => e.id !== g.bi.FRECENCY && e.id !== g.bi.BUILT_IN), [s]),
-                    u = (0, N.h)(l),
-                    _ = r.useMemo(() => o().compact(u.map(e => {
+                    s(v.bi.FRECENCY)
+                }, [s]);
+                let a = r.useMemo(() => n.filter(e => e.id !== v.bi.FRECENCY && e.id !== v.bi.BUILT_IN), [n]),
+                    l = (0, N.h)(a),
+                    u = r.useMemo(() => o().compact(l.map(e => {
                         let {
                             application: t
                         } = e;
                         return t
                     })).map(e => ({
                         application: e
-                    })), [u]),
+                    })), [l]),
                     {
-                        items: d,
-                        handleViewMore: E
-                    } = G(C.Z.Messages.APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER, m.Z.Looks.NO_BANNER, _, 8);
+                        items: _,
+                        handleViewMore: d
+                    } = B(L.Z.Messages.APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER, R.U4.NO_BANNER, u, 8);
                 return (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(O.Z, {
-                        title: C.Z.Messages.APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER,
-                        onClickViewMore: E
+                    children: [(0, i.jsx)(p.Z, {
+                        title: L.Z.Messages.APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER,
+                        onClickViewMore: d
                     }), (0, i.jsx)("div", {
-                        className: v.sectionContentContainer,
-                        children: d.map(e => {
+                        className: D.sectionContentContainer,
+                        children: _.map(e => {
                             let {
-                                application: t,
+                                application: n,
                                 isPartner: r
                             } = e;
-                            return (0, i.jsx)(m.Z, {
-                                application: t,
-                                look: m.Z.Looks.NO_BANNER,
+                            return null != n ? (0, i.jsx)(R.kA, {
+                                channel: t,
+                                application: n,
                                 isPartner: r,
-                                onClick: e => {
-                                    e.stopPropagation(), n({
-                                        type: A.gc.APPLICATION,
-                                        application: t
-                                    })
-                                }
-                            }, t.id)
+                                look: R.U4.NO_BANNER,
+                                sectionName: m.L.APPS_IN_THIS_SERVER
+                            }, n.id) : null
                         })
                     })]
                 })
             }
 
-            function U(e) {
+            function w(e) {
                 let {
                     channel: t
                 } = e, n = function(e) {
@@ -80033,7 +80201,7 @@
                         channel: t
                     });
                     return r.useMemo(() => {
-                        if (!n.some(e => e.appends_remaining_activities)) return L;
+                        if (!n.some(e => e.appends_remaining_activities)) return M;
                         let e = new Set;
                         return n.forEach(t => {
                             t.items.forEach(t => {
@@ -80046,24 +80214,24 @@
                     recommendationsSections: n
                 });
                 return (0, i.jsx)(i.Fragment, {
-                    children: n.map(e => (0, i.jsx)(b, {
+                    children: n.map(e => (0, i.jsx)(k, {
+                        channel: t,
                         recommendationsSection: e,
                         remainingActivities: s
                     }, e.key))
                 })
             }
 
-            function b(e) {
+            function k(e) {
                 let {
-                    recommendationsSection: t,
-                    remainingActivities: n
-                } = e, {
-                    pushHistory: s
-                } = (0, A.hH)(), o = t.section_title, a = t.type === l.i.BANNER_CARDS ? m.Z.Looks.LARGE_BANNER : m.Z.Looks.NO_BANNER, {
+                    channel: t,
+                    recommendationsSection: n,
+                    remainingActivities: s
+                } = e, o = n.section_title, a = n.type === l.i.BANNER_CARDS ? R.U4.LARGE_BANNER : R.U4.NO_BANNER, {
                     items: u,
                     handleViewMore: _
-                } = G(o, a, r.useMemo(() => {
-                    let e = t.items.map(e => {
+                } = B(o, a, r.useMemo(() => {
+                    let e = n.items.map(e => {
                         let {
                             application: t,
                             is_partner: n
@@ -80073,7 +80241,7 @@
                             isPartner: n
                         }
                     });
-                    return t.appends_remaining_activities && e.push(...n.map(e => {
+                    return n.appends_remaining_activities && e.push(...s.map(e => {
                         let {
                             application: t
                         } = e;
@@ -80081,45 +80249,41 @@
                             application: t
                         }
                     })), e
-                }, [t.items, t.appends_remaining_activities, n]), 8);
+                }, [n.items, n.appends_remaining_activities, s]), 8);
                 return (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(O.Z, {
-                        title: t.section_title,
+                    children: [(0, i.jsx)(p.Z, {
+                        title: n.section_title,
                         onClickViewMore: _
                     }), (0, i.jsx)("div", {
-                        className: v.sectionContentContainer,
+                        className: D.sectionContentContainer,
                         children: u.map(e => {
                             let {
-                                application: t,
-                                isPartner: n
+                                application: r,
+                                isPartner: s
                             } = e;
-                            return (0, i.jsx)(m.Z, {
-                                application: t,
+                            return (0, i.jsx)(R.kA, {
+                                channel: t,
+                                application: r,
                                 look: a,
-                                onClick: e => {
-                                    e.stopPropagation(), s({
-                                        type: A.gc.APPLICATION,
-                                        application: t
-                                    })
-                                },
-                                isPartner: n
-                            }, t.id)
+                                isPartner: s,
+                                sectionName: n.key
+                            }, r.id)
                         })
                     })]
                 })
             }
 
-            function G(e, t, n, i) {
+            function B(e, t, n, i) {
                 let {
                     pushHistory: s
-                } = (0, A.hH)();
+                } = (0, O.hH)();
                 return r.useMemo(() => n.length <= i ? {
                     items: n,
                     handleViewMore: void 0
                 } : {
                     items: n.slice(0, i),
                     handleViewMore: () => s({
-                        type: A.gc.LIST,
+                        type: O.gc.LIST,
                         title: e,
                         look: t,
                         items: n
@@ -80463,54 +80627,57 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return u
+                    return c
                 }
             });
             var i = n(735250),
-                r = n(481060),
-                s = n(695676),
-                o = n(98880),
-                a = n(772606),
-                l = n(838246);
+                r = n(470079),
+                s = n(481060),
+                o = n(424602),
+                a = n(827498),
+                l = n(98880),
+                u = n(772606),
+                _ = n(838246);
 
-            function u(e) {
+            function c(e) {
                 let {
-                    title: t,
-                    look: n,
-                    items: u
+                    channel: t,
+                    entrypoint: n,
+                    title: c,
+                    look: d,
+                    items: E
                 } = e, {
-                    pushHistory: _
-                } = (0, s.hH)();
+                    clickOnHomeActivityOpensAppDetail: I
+                } = o.m1.getCurrentConfig({
+                    location: "AppLauncherApplicationListViewScreen"
+                }, {
+                    autoTrackExposure: !1
+                }), T = r.useMemo(() => n === a._.TEXT || I ? l.kA : l.qR, [I, n]);
                 return (0, i.jsxs)("div", {
-                    className: l.container,
+                    className: _.container,
                     children: [(0, i.jsxs)("div", {
-                        className: l.header,
-                        children: [(0, i.jsx)(a.Z, {
-                            className: l.backButton
-                        }), (0, i.jsx)(r.Heading, {
+                        className: _.header,
+                        children: [(0, i.jsx)(u.Z, {
+                            className: _.backButton
+                        }), (0, i.jsx)(s.Heading, {
                             variant: "heading-md/medium",
                             color: "header-primary",
-                            children: t
+                            children: c
                         })]
-                    }), (0, i.jsx)(r.Scroller, {
+                    }), (0, i.jsx)(s.Scroller, {
                         children: (0, i.jsx)("div", {
-                            className: l.appGrid,
-                            children: u.map(e => {
+                            className: _.appGrid,
+                            children: E.map(e => {
                                 let {
-                                    application: t,
+                                    application: n,
                                     isPartner: r
                                 } = e;
-                                return (0, i.jsx)(o.Z, {
-                                    application: t,
-                                    look: n,
-                                    onClick: e => {
-                                        e.stopPropagation(), _({
-                                            type: s.gc.APPLICATION,
-                                            application: t
-                                        })
-                                    },
+                                return (0, i.jsx)(T, {
+                                    channel: t,
+                                    application: n,
+                                    look: d,
                                     isPartner: r
-                                }, t.id)
+                                }, n.id)
                             })
                         })
                     })]
@@ -95990,8 +96157,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303413", "303413"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303413")), t = 0), t
+                let t = parseInt((e = "303425", "303425"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303425")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124203,8 +124370,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303413",
-                    versionHash: "5ccafe405b8b27277ac5e9510c579bd8ff38ef7d"
+                    buildNumber: "303425",
+                    versionHash: "783c26cd6a56e5556eb598d41a7bfa0985e1c7f8"
                 }
             }
             n.d(t, {
@@ -141068,7 +141235,7 @@
                     applicationId: n = ""
                 } = e, l = (0, a.x)(t);
                 i.useEffect(() => {
-                    l && s.Z.getDetectableGamesSupplemental([n])
+                    l && null != n && "" !== n && s.Z.getDetectableGamesSupplemental([n])
                 }, [n, l]);
                 let u = (0, r.e7)([o.Z], () => o.Z.getGame(n));
                 return l && null != u && null != u.summary && u.summary.length > 0
@@ -180664,8 +180831,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718899143842",
-                                    build_number: "303413"
+                                    built_at: "1718900917701",
+                                    build_number: "303425"
                                 }
                             },
                             retries: 1
@@ -258690,7 +258857,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5ccafe405b8b27277ac5e9510c579bd8ff38ef7d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "783c26cd6a56e5556eb598d41a7bfa0985e1c7f8"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279325,7 +279492,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303413"
+                                build_number: "303425"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286637,7 +286804,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303413", "303413"), 10);
+                let s = parseInt((n = "303425", "303425"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328140,4 +328307,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.8057041e317292e157fe.js.map
+//# sourceMappingURL=79892.2f238b84c79a95f4735a.js.map
