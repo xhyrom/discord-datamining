@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303425", ", Version Hash: ").concat("783c26cd6a56e5556eb598d41a7bfa0985e1c7f8")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303433", ", Version Hash: ").concat("4936cf545f81a2a3fc5461f4570f0218d9dc2385")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -65172,66 +65172,73 @@
                             inbound_bitrate_estimate_percentile99: l.percentiles[99],
                             duration_video_effect: I(this.videoEffectDuration.totalDuration() / 1e3),
                             cryptor_max_attempts: e.cryptorMaxAttempts,
+                            duration_decoder_ffmpeg: I(e.decoderBuckets[d.gr.FFMPEG]),
+                            duration_decoder_dav1d: I(e.decoderBuckets[d.gr.DAV1D]),
+                            duration_decoder_vp8_libvpx: I(e.decoderBuckets[d.gr.VP8_LIBVPX]),
+                            duration_decoder_electron: I(e.decoderBuckets[d.gr.ELECTRON]),
+                            duration_decoder_videotoolbox: I(e.decoderBuckets[d.gr.VIDEOTOOLBOX]),
+                            duration_decoder_uncategorized: I(e.decoderBuckets[d.gr.UNCATEGORIZED]),
+                            duration_decoder_unknown: I(e.decoderBuckets[d.gr.UNKNOWN]),
                             ...u
                         },
                         {
                             bytes: c,
-                            framesDropped: d,
-                            framesCodecError: E,
-                            framesCodec: T,
-                            framesNetwork: h,
-                            packets: S,
-                            packetsLost: f,
-                            nackCount: N,
-                            pliCount: A,
-                            qpSum: m,
-                            pauseCount: O,
-                            freezeCount: R,
-                            totalPausesDuration: p,
-                            totalFreezesDuration: g,
-                            totalFramesDuration: C,
-                            keyframes: v,
-                            passthroughCount: L,
-                            cryptorSuccessCount: D,
-                            cryptorFailureCount: M,
-                            cryptorDuration: P,
-                            cryptorAttempts: y,
-                            qualityDecodeErrors: U,
-                            qualityDecoderReboots: b,
-                            qualityScoreErrors: G,
-                            qualityFrameDrops: w,
-                            qualitySizeMismatches: k
+                            framesDropped: E,
+                            framesCodecError: T,
+                            framesCodec: h,
+                            framesNetwork: S,
+                            packets: f,
+                            packetsLost: N,
+                            nackCount: A,
+                            pliCount: m,
+                            qpSum: O,
+                            pauseCount: R,
+                            freezeCount: p,
+                            totalPausesDuration: g,
+                            totalFreezesDuration: C,
+                            totalFramesDuration: v,
+                            keyframes: L,
+                            passthroughCount: D,
+                            cryptorSuccessCount: M,
+                            cryptorFailureCount: P,
+                            cryptorDuration: y,
+                            cryptorAttempts: U,
+                            qualityDecodeErrors: b,
+                            qualityDecoderReboots: G,
+                            qualityScoreErrors: w,
+                            qualityFrameDrops: k,
+                            qualitySizeMismatches: B
                         } = e.aggregatedProperties;
                     return {
                         ..._,
                         avg_bitrate: i > 0 ? Math.round((null != c ? c : 0) * 8 / i) : 0,
-                        avg_fps: i > 0 ? Math.round((null != T ? T : 0) / i) : 0,
+                        avg_fps: i > 0 ? Math.round((null != h ? h : 0) / i) : 0,
                         num_bytes: c,
-                        num_packets_lost: f,
-                        num_packets: S,
-                        num_frames: h,
-                        num_frames_codec_error: E,
+                        num_packets_lost: N,
+                        num_packets: f,
+                        num_frames: S,
+                        num_frames_codec_error: T,
                         time_to_first_frame_ms: e.timeToFirstFrame,
-                        num_frames_dropped: d,
-                        num_nacks: N,
-                        num_plis: A,
-                        qp_sum: m,
-                        receiver_pause_count: O,
-                        receiver_freeze_count: R,
-                        receiver_total_pauses_duration: p,
-                        receiver_total_freezes_duration: g,
-                        receiver_total_frames_duration: C,
-                        num_keyframes: v,
-                        cryptor_passthrough_count: L,
-                        cryptor_success_count: D,
-                        cryptor_failure_count: M,
-                        cryptor_duration: P,
-                        cryptor_attempts: y,
-                        encoder_quality_decode_errors: U,
-                        encoder_quality_decoder_reboots: b,
-                        encoder_quality_score_errors: G,
-                        encoder_quality_frame_drops: w,
-                        encoder_quality_size_mismatches: k
+                        num_frames_dropped: E,
+                        num_nacks: A,
+                        num_plis: m,
+                        qp_sum: O,
+                        receiver_pause_count: R,
+                        receiver_freeze_count: p,
+                        receiver_total_pauses_duration: g,
+                        receiver_total_freezes_duration: C,
+                        receiver_total_frames_duration: v,
+                        num_keyframes: L,
+                        cryptor_passthrough_count: D,
+                        cryptor_success_count: M,
+                        cryptor_failure_count: P,
+                        cryptor_duration: y,
+                        cryptor_attempts: U,
+                        encoder_quality_decode_errors: b,
+                        encoder_quality_decoder_reboots: G,
+                        encoder_quality_score_errors: w,
+                        encoder_quality_frame_drops: k,
+                        encoder_quality_size_mismatches: B
                     }
                 }
                 receivedStats(e, t, n) {
@@ -65295,6 +65302,9 @@
                 Su: function() {
                     return r
                 },
+                gr: function() {
+                    return s
+                },
                 lG: function() {
                     return m
                 },
@@ -65327,7 +65337,7 @@
                 h = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60],
                 S = [720, 480, 360],
                 f = ["framesCodec", "framesNetwork", "packets", "packetsLost", "framesDropped", "framesCodecError", "bytes", "nackCount", "pliCount", "qpSum", "freezeCount", "pauseCount", "totalFreezesDuration", "totalPausesDuration", "totalFramesDuration", "keyframes", "passthroughCount", "cryptorSuccessCount", "cryptorFailureCount", "cryptorDuration", "cryptorAttempts", "qualityDecodeErrors", "qualityDecoderReboots", "qualityScoreErrors", "qualityFrameDrops", "qualitySizeMismatches"];
-            (a = i || (i = {})).H264 = "H264", a.H265 = "H265", a.VP8 = "VP8", a.VP9 = "VP9", a.AV1 = "AV1", a.UNKNOWN = "UNKNOWN", (l = r || (r = {})).NVIDIA_CUDA = "nvidia_cuda", l.NVIDIA_DIRECT_3D = "nvidia_direct_3d", l.OPENH264 = "openh264", l.VIDEOTOOLBOX = "videotoolbox", l.AMD_DIRECT_3D = "amd_direct_3d", l.INTEL = "intel", l.INTEL_DIRECT_3D = "intel_direct_3d", l.VP8_LIBVPX = "vp8_libvpx", l.UNCATEGORIZED = "uncategorized", l.UNKNOWN = "unknown", (u = s || (s = {})).NVIDIA_DIRECT_3D = "nvidia_direct_3d", u.OPENH264 = "openh264", u.VIDEOTOOLBOX = "videotoolbox", u.AMD_DIRECT_3D = "amd_direct_3d", u.INTEL = "intel", u.INTEL_DIRECT_3D = "intel_direct_3d", u.VP8_LIBVPX = "vp8_libvpx", u.UNCATEGORIZED = "uncategorized", u.UNKNOWN = "unknown";
+            (a = i || (i = {})).H264 = "H264", a.H265 = "H265", a.VP8 = "VP8", a.VP9 = "VP9", a.AV1 = "AV1", a.UNKNOWN = "UNKNOWN", (l = r || (r = {})).NVIDIA_CUDA = "nvidia_cuda", l.NVIDIA_DIRECT_3D = "nvidia_direct_3d", l.OPENH264 = "openh264", l.VIDEOTOOLBOX = "videotoolbox", l.AMD_DIRECT_3D = "amd_direct_3d", l.INTEL = "intel", l.INTEL_DIRECT_3D = "intel_direct_3d", l.VP8_LIBVPX = "vp8_libvpx", l.UNCATEGORIZED = "uncategorized", l.UNKNOWN = "unknown", (u = s || (s = {})).VIDEOTOOLBOX = "videotoolbox", u.VP8_LIBVPX = "vp8_libvpx", u.ELECTRON = "electron", u.FFMPEG = "ffmpeg", u.DAV1D = "dav1d", u.UNCATEGORIZED = "uncategorized", u.UNKNOWN = "unknown";
             let N = Object.freeze({
                     "nvidia: cuda": "nvidia_cuda",
                     "nvidia: direct3d": "nvidia_direct_3d",
@@ -65335,17 +65345,14 @@
                     "intel: direct3d": "intel_direct_3d",
                     intel: "intel",
                     VideoToolbox: "videotoolbox",
-                    OpenH264: "openh264",
                     libvpx: "vp8_libvpx"
                 }),
                 A = Object.freeze({
-                    "nvidia: direct3d": "nvidia_direct_3d",
-                    "amd: direct3d": "amd_direct_3d",
-                    "intel: direct3d": "intel_direct_3d",
-                    intel: "intel",
                     VideoToolbox: "videotoolbox",
-                    OpenH264: "openh264",
-                    libvpx: "vp8_libvpx"
+                    libvpx: "vp8_libvpx",
+                    electron: "electron",
+                    ffmpeg: "ffmpeg",
+                    dav1d: "dav1d"
                 });
 
             function m(e) {
@@ -65499,13 +65506,11 @@
                 }
                 constructor(e) {
                     I(this, "decoderBuckets", {
-                        nvidia_direct_3d: 0,
-                        openh264: 0,
-                        videotoolbox: 0,
-                        amd_direct_3d: 0,
-                        intel: 0,
-                        intel_direct_3d: 0,
                         vp8_libvpx: 0,
+                        dav1d: 0,
+                        ffmpeg: 0,
+                        electron: 0,
+                        videotoolbox: 0,
                         uncategorized: 0,
                         unknown: 0
                     }), I(this, "codecBuckets", {
@@ -96157,8 +96162,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303425", "303425"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303425")), t = 0), t
+                let t = parseInt((e = "303433", "303433"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303433")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124370,8 +124375,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303425",
-                    versionHash: "783c26cd6a56e5556eb598d41a7bfa0985e1c7f8"
+                    buildNumber: "303433",
+                    versionHash: "4936cf545f81a2a3fc5461f4570f0218d9dc2385"
                 }
             }
             n.d(t, {
@@ -180831,8 +180836,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718900917701",
-                                    build_number: "303425"
+                                    built_at: "1718901814643",
+                                    build_number: "303433"
                                 }
                             },
                             retries: 1
@@ -258857,7 +258862,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "783c26cd6a56e5556eb598d41a7bfa0985e1c7f8"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4936cf545f81a2a3fc5461f4570f0218d9dc2385"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279492,7 +279497,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303425"
+                                build_number: "303433"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286804,7 +286809,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303425", "303425"), 10);
+                let s = parseInt((n = "303433", "303433"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328307,4 +328312,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.2f238b84c79a95f4735a.js.map
+//# sourceMappingURL=79892.2c1b6659a924af0faf2c.js.map
