@@ -19731,9 +19731,7 @@
                 percentCompleteLabel: "percentCompleteLabel_d572e7",
                 progressBar: "progressBar_d572e7",
                 progressBarFill: "progressBarFill_d572e7",
-                percentCompleteLabelOffset: "percentCompleteLabelOffset_d572e7",
-                desktopTooltip: "desktopTooltip_d572e7",
-                infoIcon: "infoIcon_d572e7"
+                percentCompleteLabelOffset: "percentCompleteLabelOffset_d572e7"
             }
         },
         256129: function(e, t, n) {
@@ -19921,6 +19919,12 @@
                 imgUnderlay: "imgUnderlay_ac01d6",
                 assetTile: "assetTile_ac01d6",
                 ctaButton: "ctaButton_ac01d6"
+            }
+        },
+        307995: function(e, t, n) {
+            e.exports = {
+                desktopTooltip: "desktopTooltip_c8d5bd",
+                infoIcon: "infoIcon_c8d5bd"
             }
         },
         391454: function(e, t, n) {
