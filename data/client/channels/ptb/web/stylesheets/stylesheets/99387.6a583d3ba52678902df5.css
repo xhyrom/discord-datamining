@@ -47231,8 +47231,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -105097,15 +105097,13 @@ div:has(>div>.container_d99f08) {
     border-bottom: 1px solid var(--border-subtle);
     padding-top: 2px;
     padding-bottom: 6px;
-    transition: background.1s linear;
-    opacity: 0;
-    animation-name: show_f1257c;
-    animation-duration: .25s;
-    animation-fill-mode: forwards
+    transition: background.1s linear
 }
 
 .profileEntryCard_f1257c:last-child {
-    border-bottom: none
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0
 }
 
 .profileEntryCard_f1257c:hover {
@@ -105163,18 +105161,6 @@ div:has(>div>.container_d99f08) {
     overflow: hidden;
     opacity: 0;
     transition: width.25s ease-in-out, opacity.15s ease-in-out 0s
-}
-
-@keyframes show_f1257c {
-    0% {
-        opacity: 0;
-        transform: translatey(-16px)
-    }
-
-    to {
-        opacity: 1;
-        transform: translatey(0)
-    }
 }
 
 .row_e881fc {
@@ -142437,4 +142423,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b70d42e5d45db225d97d.css.map*/
+/*# sourceMappingURL=99387.6a583d3ba52678902df5.css.map*/
