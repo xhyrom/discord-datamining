@@ -1,7 +1,7 @@
+"use strict";
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     ["7838"], {
         903204: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 R: function() {
                     return _
@@ -9,17 +9,17 @@
             });
             var r = n(861579),
                 i = n(139782),
-                s = n(468391),
-                a = n(529866),
+                a = n(468391),
+                s = n(529866),
                 o = n(854569),
-                u = n(177668),
-                l = n(590171),
+                l = n(177668),
+                u = n(590171),
                 c = n(643487),
                 d = n(124969),
                 h = n(184612);
             class _ extends r.W {
                 constructor(t) {
-                    let e = c.m9.SENTRY_SDK_SOURCE || (0, s.S)();
+                    let e = c.m9.SENTRY_SDK_SOURCE || (0, a.S)();
                     t._metadata = t._metadata || {}, t._metadata.sdk = t._metadata.sdk || {
                         name: "sentry.javascript.browser",
                         packages: [{
@@ -32,10 +32,10 @@
                     })
                 }
                 eventFromException(t, e) {
-                    return (0, l.dr)(this._options.stackParser, t, e, this._options.attachStacktrace)
+                    return (0, u.dr)(this._options.stackParser, t, e, this._options.attachStacktrace)
                 }
                 eventFromMessage(t, e = "info", n) {
-                    return (0, l.aB)(this._options.stackParser, t, e, n, this._options.attachStacktrace)
+                    return (0, u.aB)(this._options.stackParser, t, e, n, this._options.attachStacktrace)
                 }
                 sendEvent(t, e) {
                     let n = this.getIntegrationById(d.p);
@@ -43,7 +43,7 @@
                 }
                 captureUserFeedback(t) {
                     if (!this._isEnabled()) {
-                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn("SDK not enabled, will not capture user feedback.");
+                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn("SDK not enabled, will not capture user feedback.");
                         return
                     }
                     let e = (0, h.r)(t, {
@@ -59,23 +59,22 @@
                 _flushOutcomes() {
                     let t = this._clearOutcomes();
                     if (0 === t.length) {
-                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.log("No outcomes to send");
+                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.log("No outcomes to send");
                         return
                     }
                     if (!this._dsn) {
-                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.log("No dsn provided, will not send outcomes");
+                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.log("No dsn provided, will not send outcomes");
                         return
-                    }("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.log("Sending outcomes:", t);
-                    let e = (0, o.y)(t, this._options.tunnel && (0, u.RA)(this._dsn));
+                    }("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.log("Sending outcomes:", t);
+                    let e = (0, o.y)(t, this._options.tunnel && (0, l.RA)(this._dsn));
                     this._sendEnvelope(e)
                 }
             }
         },
         590171: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 GJ: function() {
-                    return l
+                    return u
                 },
                 ME: function() {
                     return p
@@ -89,12 +88,12 @@
             });
             var r = n(876122),
                 i = n(46834),
-                s = n(10674),
-                a = n(862315),
+                a = n(10674),
+                s = n(862315),
                 o = n(880803),
-                u = n(442853);
+                l = n(442853);
 
-            function l(t, e) {
+            function u(t, e) {
                 let n = d(t, e),
                     r = {
                         type: e && e.name,
@@ -111,7 +110,7 @@
             function c(t, e) {
                 return {
                     exception: {
-                        values: [l(t, e)]
+                        values: [u(t, e)]
                     }
                 }
             }
@@ -134,40 +133,40 @@
 
             function _(t, e, n, r) {
                 let i = p(t, e, n && n.syntheticException || void 0, r);
-                return (0, a.EG)(i), i.level = "error", n && n.event_id && (i.event_id = n.event_id), (0, o.WD)(i)
+                return (0, s.EG)(i), i.level = "error", n && n.event_id && (i.event_id = n.event_id), (0, o.WD)(i)
             }
 
             function f(t, e, n = "info", r, i) {
-                let s = m(t, e, r && r.syntheticException || void 0, i);
-                return s.level = n, r && r.event_id && (s.event_id = r.event_id), (0, o.WD)(s)
+                let a = m(t, e, r && r.syntheticException || void 0, i);
+                return a.level = n, r && r.event_id && (a.event_id = r.event_id), (0, o.WD)(a)
             }
 
-            function p(t, e, n, o, l) {
+            function p(t, e, n, o, u) {
                 let h;
                 if ((0, i.VW)(e) && e.error) return c(t, e.error);
                 if ((0, i.TX)(e) || (0, i.fm)(e)) {
                     if ("stack" in e) h = c(t, e);
                     else {
                         let r = e.name || ((0, i.TX)(e) ? "DOMError" : "DOMException"),
-                            s = e.message ? `${r}: ${e.message}` : r;
-                        h = m(t, s, n, o), (0, a.Db)(h, s)
+                            a = e.message ? `${r}: ${e.message}` : r;
+                        h = m(t, a, n, o), (0, s.Db)(h, a)
                     }
                     return "code" in e && (h.tags = {
                         ...h.tags,
                         "DOMException.code": `${e.code}`
                     }), h
                 }
-                return (0, i.VZ)(e) ? c(t, e) : (0, i.PO)(e) || (0, i.cO)(e) ? (h = function(t, e, n, a) {
+                return (0, i.VZ)(e) ? c(t, e) : (0, i.PO)(e) || (0, i.cO)(e) ? (h = function(t, e, n, s) {
                     let o = (0, r.Gd)().getClient(),
-                        l = o && o.getOptions().normalizeDepth,
+                        u = o && o.getOptions().normalizeDepth,
                         c = {
                             exception: {
                                 values: [{
-                                    type: (0, i.cO)(e) ? e.constructor.name : a ? "UnhandledRejection" : "Error",
+                                    type: (0, i.cO)(e) ? e.constructor.name : s ? "UnhandledRejection" : "Error",
                                     value: function(t, {
                                         isUnhandledRejection: e
                                     }) {
-                                        let n = (0, u.zf)(t),
+                                        let n = (0, l.zf)(t),
                                             r = e ? "promise rejection" : "exception";
                                         if ((0, i.VW)(t)) return `Event \`ErrorEvent\` captured as ${r} with message \`${t.message}\``;
                                         if ((0, i.cO)(t)) {
@@ -181,12 +180,12 @@
                                         }
                                         return `Object captured as ${r} with keys: ${n}`
                                     }(e, {
-                                        isUnhandledRejection: a
+                                        isUnhandledRejection: s
                                     })
                                 }]
                             },
                             extra: {
-                                __serialized__: (0, s.Qy)(e, l)
+                                __serialized__: (0, a.Qy)(e, u)
                             }
                         };
                     if (n) {
@@ -196,9 +195,9 @@
                         })
                     }
                     return c
-                }(t, e, n, l), (0, a.EG)(h, {
+                }(t, e, n, u), (0, s.EG)(h, {
                     synthetic: !0
-                }), h) : (h = m(t, e, n, o), (0, a.Db)(h, `${e}`, void 0), (0, a.EG)(h, {
+                }), h) : (h = m(t, e, n, o), (0, s.Db)(h, `${e}`, void 0), (0, s.EG)(h, {
                     synthetic: !0
                 }), h)
             }
@@ -222,10 +221,9 @@
             }
         },
         643487: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Wz: function() {
-                    return l
+                    return u
                 },
                 m9: function() {
                     return o
@@ -236,30 +234,30 @@
                         try {
                             let t = e.__sentry_wrapped__;
                             if (t) return t;
-                            if ((0, s.HK)(e)) return e
+                            if ((0, a.HK)(e)) return e
                         } catch (t) {
                             return e
                         }
                         let o = function() {
-                            let s = Array.prototype.slice.call(arguments);
+                            let a = Array.prototype.slice.call(arguments);
                             try {
                                 i && "function" == typeof i && i.apply(this, arguments);
-                                let r = s.map(e => t(e, n));
+                                let r = a.map(e => t(e, n));
                                 return e.apply(this, r)
                             } catch (t) {
-                                throw u++, setTimeout(() => {
-                                    u--
+                                throw l++, setTimeout(() => {
+                                    l--
                                 }), (0, r.$e)(e => {
-                                    e.addEventProcessor(t => (n.mechanism && ((0, a.Db)(t, void 0, void 0), (0, a.EG)(t, n.mechanism)), t.extra = {
+                                    e.addEventProcessor(t => (n.mechanism && ((0, s.Db)(t, void 0, void 0), (0, s.EG)(t, n.mechanism)), t.extra = {
                                         ...t.extra,
-                                        arguments: s
+                                        arguments: a
                                     }, t)), (0, r.Tb)(t)
                                 }), t
                             }
                         };
                         try {
                             for (let t in e) Object.prototype.hasOwnProperty.call(e, t) && (o[t] = e[t])
-                        } catch (t) {}(0, s.$Q)(o, e), (0, s.xp)(e, "__sentry_wrapped__", o);
+                        } catch (t) {}(0, a.$Q)(o, e), (0, a.xp)(e, "__sentry_wrapped__", o);
                         try {
                             Object.getOwnPropertyDescriptor(o, "name").configurable && Object.defineProperty(o, "name", {
                                 get: () => e.name
@@ -271,23 +269,22 @@
             });
             var r = n(138122),
                 i = n(24716),
-                s = n(442853),
-                a = n(862315);
+                a = n(442853),
+                s = n(862315);
             let o = i.n2,
-                u = 0;
+                l = 0;
 
-            function l() {
-                return u > 0
+            function u() {
+                return l > 0
             }
         },
         887117: function(t, e, n) {
-            "use strict";
             n.r(e), n.d(e, {
                 Breadcrumbs: function() {
                     return E.O
                 },
                 BrowserClient: function() {
-                    return a.R
+                    return s.R
                 },
                 BrowserProfilingIntegration: function() {
                     return y._
@@ -335,7 +332,7 @@
                     return b.p
                 },
                 WINDOW: function() {
-                    return s.m9
+                    return a.m9
                 },
                 addBreadcrumb: function() {
                     return i.n_
@@ -359,7 +356,7 @@
                     return h.Jd
                 },
                 chromeStackLineParser: function() {
-                    return l.$3
+                    return u.$3
                 },
                 close: function() {
                     return h.xv
@@ -380,10 +377,10 @@
                     return p.k3
                 },
                 defaultStackLineParsers: function() {
-                    return l.d8
+                    return u.d8
                 },
                 defaultStackParser: function() {
-                    return l.Dt
+                    return u.Dt
                 },
                 eventFromException: function() {
                     return c.dr
@@ -401,7 +398,7 @@
                     return h.Eg
                 },
                 geckoStackLineParser: function() {
-                    return l.$Q
+                    return u.$Q
                 },
                 getActiveTransaction: function() {
                     return i.x1
@@ -434,7 +431,7 @@
                     return i.Wq
                 },
                 makeXHRTransport: function() {
-                    return u.K
+                    return l.K
                 },
                 onLoad: function() {
                     return h.lA
@@ -443,10 +440,10 @@
                     return g.Uv
                 },
                 opera10StackLineParser: function() {
-                    return l.NP
+                    return u.NP
                 },
                 opera11StackLineParser: function() {
-                    return l.HH
+                    return u.HH
                 },
                 setContext: function() {
                     return i.v
@@ -479,7 +476,7 @@
                     return i.g4
                 },
                 winjsStackLineParser: function() {
-                    return l.R2
+                    return u.R2
                 },
                 withScope: function() {
                     return i.$e
@@ -490,11 +487,11 @@
             });
             var r = n(89837),
                 i = n(91320),
-                s = n(643487),
-                a = n(903204),
+                a = n(643487),
+                s = n(903204),
                 o = n(393746),
-                u = n(975927),
-                l = n(202406),
+                l = n(975927),
+                u = n(202406),
                 c = n(590171),
                 d = n(184612),
                 h = n(846297),
@@ -511,7 +508,7 @@
                 w = n(612568),
                 k = n(683900);
             let T = {};
-            s.m9.Sentry && s.m9.Sentry.Integrations && (T = s.m9.Sentry.Integrations);
+            a.m9.Sentry && a.m9.Sentry.Integrations && (T = a.m9.Sentry.Integrations);
             let R = {
                 ...T,
                 ...r,
@@ -519,7 +516,6 @@
             }
         },
         124969: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 O: function() {
                     return _
@@ -530,11 +526,11 @@
             });
             var r = n(876122),
                 i = n(793884),
-                s = n(862315),
-                a = n(529866),
+                a = n(862315),
+                s = n(529866),
                 o = n(829919),
-                u = n(869139),
-                l = n(336344),
+                l = n(869139),
+                u = n(336344),
                 c = n(841866),
                 d = n(643487);
             let h = "Breadcrumbs";
@@ -561,18 +557,18 @@
                         return function(e) {
                             let n;
                             let i = "object" == typeof t ? t.serializeAttribute : void 0,
-                                s = "object" == typeof t && "number" == typeof t.maxStringLength ? t.maxStringLength : void 0;
-                            s && s > 1024 && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`\`dom.maxStringLength\` cannot exceed 1024, but a value of ${s} was configured. Sentry will use 1024 instead.`), s = 1024), "string" == typeof i && (i = [i]);
+                                a = "object" == typeof t && "number" == typeof t.maxStringLength ? t.maxStringLength : void 0;
+                            a && a > 1024 && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`\`dom.maxStringLength\` cannot exceed 1024, but a value of ${a} was configured. Sentry will use 1024 instead.`), a = 1024), "string" == typeof i && (i = [i]);
                             try {
                                 let t = e.event;
                                 n = function(t) {
                                     return !!t && !!t.target
                                 }(t) ? (0, o.Rt)(t.target, {
                                     keyAttrs: i,
-                                    maxStringLength: s
+                                    maxStringLength: a
                                 }) : (0, o.Rt)(t, {
                                     keyAttrs: i,
-                                    maxStringLength: s
+                                    maxStringLength: a
                                 })
                             } catch (t) {
                                 n = "<unknown>"
@@ -593,7 +589,7 @@
                         category: `sentry.${"transaction"===t.type?"transaction":"event"}`,
                         event_id: t.event_id,
                         level: t.level,
-                        message: (0, s.jH)(t)
+                        message: (0, a.jH)(t)
                     }, {
                         event: t
                     })
@@ -612,12 +608,12 @@
                         arguments: t.args,
                         logger: "console"
                     },
-                    level: (0, u.VT)(t.level),
-                    message: (0, l.nK)(t.args, " ")
+                    level: (0, l.VT)(t.level),
+                    message: (0, u.nK)(t.args, " ")
                 };
                 if ("assert" === t.level) {
                     if (!1 !== t.args[0]) return;
-                    e.message = `Assertion failed: ${(0,l.nK)(t.args.slice(1)," ")||"console.assert"}`, e.data.arguments = t.args.slice(1)
+                    e.message = `Assertion failed: ${(0,u.nK)(t.args.slice(1)," ")||"console.assert"}`, e.data.arguments = t.args.slice(1)
                 }(0, r.Gd)().addBreadcrumb(e, {
                     input: t.args,
                     level: t.level
@@ -628,25 +624,25 @@
                 let {
                     startTimestamp: e,
                     endTimestamp: n
-                } = t, s = t.xhr[i.xU];
-                if (!e || !n || !s) return;
+                } = t, a = t.xhr[i.xU];
+                if (!e || !n || !a) return;
                 let {
-                    method: a,
+                    method: s,
                     url: o,
-                    status_code: u,
-                    body: l
-                } = s, c = {
+                    status_code: l,
+                    body: u
+                } = a, c = {
                     xhr: t.xhr,
-                    input: l,
+                    input: u,
                     startTimestamp: e,
                     endTimestamp: n
                 };
                 (0, r.Gd)().addBreadcrumb({
                     category: "xhr",
                     data: {
-                        method: a,
+                        method: s,
                         url: o,
-                        status_code: u
+                        status_code: l
                     },
                     type: "http"
                 }, c)
@@ -660,7 +656,7 @@
                 if (!(!n || t.fetchData.url.match(/sentry_key/) && "POST" === t.fetchData.method))
                     if (t.error) {
                         let i = t.fetchData,
-                            s = {
+                            a = {
                                 data: t.error,
                                 input: t.args,
                                 startTimestamp: e,
@@ -671,13 +667,13 @@
                             data: i,
                             level: "error",
                             type: "http"
-                        }, s)
+                        }, a)
                     } else {
                         let i = {
                                 ...t.fetchData,
                                 status_code: t.response && t.response.status
                             },
-                            s = {
+                            a = {
                                 input: t.args,
                                 response: t.response,
                                 startTimestamp: e,
@@ -687,7 +683,7 @@
                             category: "fetch",
                             data: i,
                             type: "http"
-                        }, s)
+                        }, a)
                     }
             }
 
@@ -695,9 +691,9 @@
                 let e = t.from,
                     n = t.to,
                     i = (0, c.en)(d.m9.location.href),
-                    s = (0, c.en)(e),
-                    a = (0, c.en)(n);
-                !s.path && (s = i), i.protocol === a.protocol && i.host === a.host && (n = a.relative), i.protocol === s.protocol && i.host === s.host && (e = s.relative), (0, r.Gd)().addBreadcrumb({
+                    a = (0, c.en)(e),
+                    s = (0, c.en)(n);
+                !a.path && (a = i), i.protocol === s.protocol && i.host === s.host && (n = s.relative), i.protocol === a.protocol && i.host === a.host && (e = a.relative), (0, r.Gd)().addBreadcrumb({
                     category: "navigation",
                     data: {
                         from: e,
@@ -707,7 +703,6 @@
             }
         },
         683900: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 I: function() {
                     return i
@@ -734,11 +729,11 @@
                                         return !!e && (!!(function(t, e) {
                                             let n = t.message,
                                                 r = e.message;
-                                            return !!((n || r) && (!n || r) && (n || !r) && n === r && a(t, e) && s(t, e)) || !1
+                                            return !!((n || r) && (!n || r) && (n || !r) && n === r && s(t, e) && a(t, e)) || !1
                                         }(t, e) || function(t, e) {
                                             let n = o(e),
                                                 r = o(t);
-                                            return !!(n && r && n.type === r.type && n.value === r.value && a(t, e) && s(t, e)) || !1
+                                            return !!(n && r && n.type === r.type && n.value === r.value && s(t, e) && a(t, e)) || !1
                                         }(t, e)) || !1)
                                     }(t, n._previousEvent)) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn("Event dropped due to being a duplicate of previously captured event."), null
                             } catch (t) {}
@@ -751,9 +746,9 @@
             }
             i.__initStatic();
 
-            function s(t, e) {
-                let n = u(t),
-                    r = u(e);
+            function a(t, e) {
+                let n = l(t),
+                    r = l(e);
                 if (!n && !r) return !0;
                 if (n && !r || !n && r) return !1;
                 if (r.length !== n.length) return !1;
@@ -765,7 +760,7 @@
                 return !0
             }
 
-            function a(t, e) {
+            function s(t, e) {
                 let n = t.fingerprint,
                     r = e.fingerprint;
                 if (!n && !r) return !0;
@@ -781,7 +776,7 @@
                 return t.exception && t.exception.values && t.exception.values[0]
             }
 
-            function u(t) {
+            function l(t) {
                 let e = t.exception;
                 if (e) try {
                     return e.values[0].stacktrace.frames
@@ -789,7 +784,6 @@
             }
         },
         297280: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 d: function() {
                     return d
@@ -797,11 +791,11 @@
             });
             var r = n(876122),
                 i = n(793884),
-                s = n(46834),
-                a = n(829919),
+                a = n(46834),
+                s = n(829919),
                 o = n(529866),
-                u = n(862315),
-                l = n(590171),
+                l = n(862315),
+                u = n(590171),
                 c = n(643487);
             class d {
                 static __initStatic() {
@@ -841,25 +835,25 @@
                     if (!e.getIntegration(d)) return;
                     let {
                         msg: i,
-                        url: a,
+                        url: s,
                         line: o,
-                        column: u,
+                        column: l,
                         error: h
                     } = t;
                     if ((0, c.Wz)() || h && h.__sentry_own_request__) return;
-                    let _ = void 0 === h && (0, s.HD)(i) ? function(t, e, n, r) {
-                        let i = (0, s.VW)(t) ? t.message : t,
-                            a = "Error",
+                    let _ = void 0 === h && (0, a.HD)(i) ? function(t, e, n, r) {
+                        let i = (0, a.VW)(t) ? t.message : t,
+                            s = "Error",
                             o = i.match(/^(?:[Uu]ncaught (?:exception: )?)?(?:((?:Eval|Internal|Range|Reference|Syntax|Type|URI|)Error): )?(.*)$/i);
-                        return o && (a = o[1], i = o[2]), f({
+                        return o && (s = o[1], i = o[2]), f({
                             exception: {
                                 values: [{
-                                    type: a,
+                                    type: s,
                                     value: i
                                 }]
                             }
                         }, e, n, r)
-                    }(i, a, o, u) : f((0, l.ME)(n, h || i, void 0, r, !1), a, o, u);
+                    }(i, s, o, l) : f((0, u.ME)(n, h || i, void 0, r, !1), s, o, l);
                     _.level = "error", p(e, h, _, "onerror")
                 })
             }
@@ -873,7 +867,7 @@
                         "reason" in t ? i = t.reason : "detail" in t && "reason" in t.detail && (i = t.detail.reason)
                     } catch (t) {}
                     if ((0, c.Wz)() || i && i.__sentry_own_request__) return !0;
-                    let a = (0, s.pt)(i) ? function(t) {
+                    let s = (0, a.pt)(i) ? function(t) {
                         return {
                             exception: {
                                 values: [{
@@ -882,8 +876,8 @@
                                 }]
                             }
                         }
-                    }(i) : (0, l.ME)(n, i, void 0, r, !0);
-                    a.level = "error", p(e, i, a, "onunhandledrejection")
+                    }(i) : (0, u.ME)(n, i, void 0, r, !0);
+                    s.level = "error", p(e, i, s, "onunhandledrejection")
                 })
             }
             d.__initStatic();
@@ -891,12 +885,12 @@
             function f(t, e, n, r) {
                 let i = t.exception = t.exception || {},
                     o = i.values = i.values || [],
-                    u = o[0] = o[0] || {},
-                    l = u.stacktrace = u.stacktrace || {},
-                    c = l.frames = l.frames || [],
+                    l = o[0] = o[0] || {},
+                    u = l.stacktrace = l.stacktrace || {},
+                    c = u.frames = u.frames || [],
                     d = isNaN(parseInt(r, 10)) ? void 0 : r,
                     h = isNaN(parseInt(n, 10)) ? void 0 : n,
-                    _ = (0, s.HD)(e) && e.length > 0 ? e : (0, a.l4)();
+                    _ = (0, a.HD)(e) && e.length > 0 ? e : (0, s.l4)();
                 return 0 === c.length && c.push({
                     colno: d,
                     filename: _,
@@ -907,7 +901,7 @@
             }
 
             function p(t, e, n, r) {
-                (0, u.EG)(n, {
+                (0, l.EG)(n, {
                     handled: !1,
                     type: r
                 }), t.captureEvent(n, {
@@ -926,36 +920,35 @@
             }
         },
         612568: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 q: function() {
-                    return a
+                    return s
                 }
             });
             var r = n(703498),
                 i = n(876122),
-                s = n(643487);
-            class a {
+                a = n(643487);
+            class s {
                 constructor() {
-                    a.prototype.__init.call(this)
+                    s.prototype.__init.call(this)
                 }
                 static __initStatic() {
                     this.id = "HttpContext"
                 }
                 __init() {
-                    this.name = a.id
+                    this.name = s.id
                 }
                 setupOnce() {
                     (0, r.c)(t => {
-                        if ((0, i.Gd)().getIntegration(a)) {
-                            if (!s.m9.navigator && !s.m9.location && !s.m9.document) return t;
-                            let e = t.request && t.request.url || s.m9.location && s.m9.location.href,
+                        if ((0, i.Gd)().getIntegration(s)) {
+                            if (!a.m9.navigator && !a.m9.location && !a.m9.document) return t;
+                            let e = t.request && t.request.url || a.m9.location && a.m9.location.href,
                                 {
                                     referrer: n
-                                } = s.m9.document || {},
+                                } = a.m9.document || {},
                                 {
                                     userAgent: r
-                                } = s.m9.navigator || {},
+                                } = a.m9.navigator || {},
                                 i = {
                                     ...t.request && t.request.headers,
                                     ...n && {
@@ -965,7 +958,7 @@
                                         "User-Agent": r
                                     }
                                 },
-                                a = {
+                                s = {
                                     ...t.request,
                                     ...e && {
                                         url: e
@@ -974,23 +967,22 @@
                                 };
                             return {
                                 ...t,
-                                request: a
+                                request: s
                             }
                         }
                         return t
                     })
                 }
             }
-            a.__initStatic()
+            s.__initStatic()
         },
         53383: function(t, e, n) {
-            "use strict";
             n.r(e), n.d(e, {
                 Breadcrumbs: function() {
-                    return s.O
+                    return a.O
                 },
                 Dedupe: function() {
-                    return u.I
+                    return l.I
                 },
                 GlobalHandlers: function() {
                     return r.d
@@ -999,7 +991,7 @@
                     return o.q
                 },
                 LinkedErrors: function() {
-                    return a.i
+                    return s.i
                 },
                 TryCatch: function() {
                     return i.p
@@ -1007,45 +999,43 @@
             });
             var r = n(297280),
                 i = n(382078),
-                s = n(124969),
-                a = n(140735),
+                a = n(124969),
+                s = n(140735),
                 o = n(612568),
-                u = n(683900)
+                l = n(683900)
         },
         140735: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 i: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(147658),
                 i = n(590171);
-            class s {
+            class a {
                 static __initStatic() {
                     this.id = "LinkedErrors"
                 }
                 __init() {
-                    this.name = s.id
+                    this.name = a.id
                 }
                 constructor(t = {}) {
-                    s.prototype.__init.call(this), this._key = t.key || "cause", this._limit = t.limit || 5
+                    a.prototype.__init.call(this), this._key = t.key || "cause", this._limit = t.limit || 5
                 }
                 setupOnce(t, e) {
                     t((t, n) => {
-                        let a = e(),
-                            o = a.getClient(),
-                            u = a.getIntegration(s);
-                        if (!o || !u) return t;
-                        let l = o.getOptions();
-                        return (0, r.Z)(i.GJ, l.stackParser, l.maxValueLength, u._key, u._limit, t, n), t
+                        let s = e(),
+                            o = s.getClient(),
+                            l = s.getIntegration(a);
+                        if (!o || !l) return t;
+                        let u = o.getOptions();
+                        return (0, r.Z)(i.GJ, u.stackParser, u.maxValueLength, l._key, l._limit, t, n), t
                     })
                 }
             }
-            s.__initStatic()
+            a.__initStatic()
         },
         382078: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 p: function() {
                     return o
@@ -1053,8 +1043,8 @@
             });
             var r = n(442853),
                 i = n(432038),
-                s = n(643487);
-            let a = ["EventTarget", "Window", "Node", "ApplicationCache", "AudioTrackList", "ChannelMergerNode", "CryptoOperation", "EventSource", "FileReader", "HTMLUnknownElement", "IDBDatabase", "IDBRequest", "IDBTransaction", "KeyOperation", "MediaController", "MessagePort", "ModalWindow", "Notification", "SVGElementInstance", "Screen", "TextTrack", "TextTrackCue", "TextTrackList", "WebSocket", "WebSocketWorker", "Worker", "XMLHttpRequest", "XMLHttpRequestEventTarget", "XMLHttpRequestUpload"];
+                a = n(643487);
+            let s = ["EventTarget", "Window", "Node", "ApplicationCache", "AudioTrackList", "ChannelMergerNode", "CryptoOperation", "EventSource", "FileReader", "HTMLUnknownElement", "IDBDatabase", "IDBRequest", "IDBTransaction", "KeyOperation", "MediaController", "MessagePort", "ModalWindow", "Notification", "SVGElementInstance", "Screen", "TextTrack", "TextTrackCue", "TextTrackList", "WebSocket", "WebSocketWorker", "Worker", "XMLHttpRequest", "XMLHttpRequestEventTarget", "XMLHttpRequestUpload"];
             class o {
                 static __initStatic() {
                     this.id = "TryCatch"
@@ -1073,16 +1063,16 @@
                     }
                 }
                 setupOnce() {
-                    this._options.setTimeout && (0, r.hl)(s.m9, "setTimeout", u), this._options.setInterval && (0, r.hl)(s.m9, "setInterval", u), this._options.requestAnimationFrame && (0, r.hl)(s.m9, "requestAnimationFrame", l), this._options.XMLHttpRequest && "XMLHttpRequest" in s.m9 && (0, r.hl)(XMLHttpRequest.prototype, "send", c);
+                    this._options.setTimeout && (0, r.hl)(a.m9, "setTimeout", l), this._options.setInterval && (0, r.hl)(a.m9, "setInterval", l), this._options.requestAnimationFrame && (0, r.hl)(a.m9, "requestAnimationFrame", u), this._options.XMLHttpRequest && "XMLHttpRequest" in a.m9 && (0, r.hl)(XMLHttpRequest.prototype, "send", c);
                     let t = this._options.eventTarget;
-                    t && (Array.isArray(t) ? t : a).forEach(d)
+                    t && (Array.isArray(t) ? t : s).forEach(d)
                 }
             }
 
-            function u(t) {
+            function l(t) {
                 return function(...e) {
                     let n = e[0];
-                    return e[0] = (0, s.re)(n, {
+                    return e[0] = (0, a.re)(n, {
                         mechanism: {
                             data: {
                                 function: (0, i.$P)(t)
@@ -1094,9 +1084,9 @@
                 }
             }
 
-            function l(t) {
+            function u(t) {
                 return function(e) {
-                    return t.apply(this, [(0, s.re)(e, {
+                    return t.apply(this, [(0, a.re)(e, {
                         mechanism: {
                             data: {
                                 function: "requestAnimationFrame",
@@ -1124,20 +1114,20 @@
                                         type: "instrument"
                                     }
                                 },
-                                a = (0, r.HK)(e);
-                            return a && (n.mechanism.data.handler = (0, i.$P)(a)), (0, s.re)(e, n)
+                                s = (0, r.HK)(e);
+                            return s && (n.mechanism.data.handler = (0, i.$P)(s)), (0, a.re)(e, n)
                         })
                     }), t.apply(this, e)
                 }
             }
 
             function d(t) {
-                let e = s.m9,
+                let e = a.m9,
                     n = e[t] && e[t].prototype;
                 if (!!n && !!n.hasOwnProperty && !!n.hasOwnProperty("addEventListener"))(0, r.hl)(n, "addEventListener", function(e) {
-                    return function(n, r, a) {
+                    return function(n, r, s) {
                         try {
-                            "function" == typeof r.handleEvent && (r.handleEvent = (0, s.re)(r.handleEvent, {
+                            "function" == typeof r.handleEvent && (r.handleEvent = (0, a.re)(r.handleEvent, {
                                 mechanism: {
                                     data: {
                                         function: "handleEvent",
@@ -1149,7 +1139,7 @@
                                 }
                             }))
                         } catch (t) {}
-                        return e.apply(this, [n, (0, s.re)(r, {
+                        return e.apply(this, [n, (0, a.re)(r, {
                             mechanism: {
                                 data: {
                                     function: "addEventListener",
@@ -1159,7 +1149,7 @@
                                 handled: !0,
                                 type: "instrument"
                             }
-                        }), a])
+                        }), s])
                     }
                 }), (0, r.hl)(n, "removeEventListener", function(t) {
                     return function(e, n, r) {
@@ -1174,10 +1164,9 @@
             o.__initStatic()
         },
         65534: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Uv: function() {
-                    return l
+                    return u
                 },
                 sA: function() {
                     return c
@@ -1185,22 +1174,22 @@
             });
             var r = n(876122),
                 i = n(529866),
-                s = n(862315),
-                a = n(643487),
+                a = n(862315),
+                s = n(643487),
                 o = n(450436);
-            let u = !1;
+            let l = !1;
 
-            function l(t) {
+            function u(t) {
                 return t ? c(t) : (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log("[Profiling] Transaction is undefined, skipping profiling"), t)
             }
 
             function c(t) {
                 let e;
-                let n = a.m9.Profiler;
+                let n = s.m9.Profiler;
                 if ("function" != typeof n) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log("[Profiling] Profiling is not supported by this browser, Profiler interface missing on window object."), t;
-                if (u) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log("[Profiling] Profiling has been disabled for the duration of the current user session."), t;
-                let l = (0, r.Gd)().getClient(),
-                    c = l && l.getOptions();
+                if (l) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log("[Profiling] Profiling has been disabled for the duration of the current user session."), t;
+                let u = (0, r.Gd)().getClient(),
+                    c = u && u.getOptions();
                 if (!c) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log("[Profiling] Profiling disabled, no options found."), t;
                 let d = c.profilesSampleRate;
                 if (!(0, o.X2)(d)) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.warn("[Profiling] Discarding profile because of invalid sample rate."), t;
@@ -1213,20 +1202,20 @@
                         maxBufferSize: h
                     })
                 } catch (t) {
-                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && (i.kg.log("[Profiling] Failed to initialize the Profiling constructor, this is likely due to a missing 'Document-Policy': 'js-profiling' header."), i.kg.log("[Profiling] Disabling profiling for current user session.")), u = !0
+                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && (i.kg.log("[Profiling] Failed to initialize the Profiling constructor, this is likely due to a missing 'Document-Policy': 'js-profiling' header."), i.kg.log("[Profiling] Disabling profiling for current user session.")), l = !0
                 }
                 if (!e) return t;
                 ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`[Profiling] started profiling transaction: ${t.name||t.description}`);
-                let _ = (0, s.DM)();
+                let _ = (0, a.DM)();
                 async function f() {
                     if (!t || !e) return null;
                     let n = t.startChild({
                         description: "profiler.stop",
                         op: "profiler"
                     });
-                    return e.stop().then(e => (n.finish(), p && (a.m9.clearTimeout(p), p = void 0), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`[Profiling] stopped profiling of transaction: ${t.name||t.description}`), e) ? ((0, o.M$)(_, e), null) : (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`[Profiling] profiler returned null profile for: ${t.name||t.description}`, "this may indicate an overlapping transaction or a call to stopProfiling with a profile title that was never started"), null)).catch(t => (n.finish(), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log("[Profiling] error while stopping profiler:", t), null))
+                    return e.stop().then(e => (n.finish(), p && (s.m9.clearTimeout(p), p = void 0), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`[Profiling] stopped profiling of transaction: ${t.name||t.description}`), e) ? ((0, o.M$)(_, e), null) : (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`[Profiling] profiler returned null profile for: ${t.name||t.description}`, "this may indicate an overlapping transaction or a call to stopProfiling with a profile title that was never started"), null)).catch(t => (n.finish(), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log("[Profiling] error while stopping profiler:", t), null))
                 }
-                let p = a.m9.setTimeout(() => {
+                let p = s.m9.setTimeout(() => {
                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log("[Profiling] max profile duration elapsed, stopping profiling for:", t.name || t.description), f()
                     }, 3e4),
                     m = t.finish.bind(t);
@@ -1242,18 +1231,17 @@
             }
         },
         643714: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 _: function() {
-                    return a
+                    return s
                 }
             });
             var r = n(529866),
                 i = n(65534),
-                s = n(450436);
-            class a {
+                a = n(450436);
+            class s {
                 constructor() {
-                    a.prototype.__init.call(this), a.prototype.__init2.call(this)
+                    s.prototype.__init.call(this), s.prototype.__init2.call(this)
                 }
                 __init() {
                     this.name = "BrowserProfilingIntegration"
@@ -1267,8 +1255,8 @@
                     n && "function" == typeof n.on ? (n.on("startTransaction", t => {
                         (0, i.sA)(t)
                     }), n.on("beforeEnvelope", t => {
-                        if (!s.wh.size) return;
-                        let e = (0, s.AJ)(t);
+                        if (!a.wh.size) return;
+                        let e = (0, a.AJ)(t);
                         if (!e.length) return;
                         let n = [];
                         for (let t of e) {
@@ -1279,21 +1267,20 @@
                                 continue
                             }
                             e && e.profile && delete e.profile;
-                            let a = s.wh.get(i);
-                            if (!a) {
+                            let s = a.wh.get(i);
+                            if (!s) {
                                 ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Profiling] Could not retrieve profile for transaction: ${i}`);
                                 continue
                             }
-                            s.wh.delete(i);
-                            let o = (0, s.nm)(i, a, t);
+                            a.wh.delete(i);
+                            let o = (0, a.nm)(i, s, t);
                             o && n.push(o)
-                        }(0, s.db)(t, n)
+                        }(0, a.db)(t, n)
                     })) : r.kg.warn("[Profiling] Client does not support hooks, profiling will be disabled")
                 }
             }
         },
         450436: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 AJ: function() {
                     return E
@@ -1315,11 +1302,11 @@
                 }
             });
             var r, i = n(28434),
-                s = n(876122),
-                a = n(529866),
+                a = n(876122),
+                s = n(529866),
                 o = n(862315),
-                u = n(868145),
-                l = n(50074),
+                l = n(868145),
+                u = n(50074),
                 c = n(24716),
                 d = n(643487);
             let h = String(0),
@@ -1347,7 +1334,7 @@
 
             function E(t) {
                 let e = [];
-                return (0, l.gv)(t, (t, n) => {
+                return (0, u.gv)(t, (t, n) => {
                     if ("transaction" === n)
                         for (let n = 1; n < t.length; n++) {
                             let r = t[n];
@@ -1358,19 +1345,19 @@
             let S = new WeakMap;
 
             function w(t) {
-                return "number" != typeof t && "boolean" != typeof t || "number" == typeof t && isNaN(t) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`[Profiling] Invalid sample rate. Sample rate must be a boolean or a number between 0 and 1. Got ${JSON.stringify(t)} of type ${JSON.stringify(typeof t)}.`), !1) : !0 === t || !1 === t || !(t < 0) && !(t > 1) || (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`[Profiling] Invalid sample rate. Sample rate must be between 0 and 1. Got ${t}.`), !1)
+                return "number" != typeof t && "boolean" != typeof t || "number" == typeof t && isNaN(t) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`[Profiling] Invalid sample rate. Sample rate must be a boolean or a number between 0 and 1. Got ${JSON.stringify(t)} of type ${JSON.stringify(typeof t)}.`), !1) : !0 === t || !1 === t || !(t < 0) && !(t > 1) || (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`[Profiling] Invalid sample rate. Sample rate must be between 0 and 1. Got ${t}.`), !1)
             }
 
             function k(t, e, n) {
                 var r;
-                return ((r = e).samples.length < 2 ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.log("[Profiling] Discarding profile because it contains less than 2 samples"), !1) : !!r.frames.length || (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.log("[Profiling] Discarding profile because it contains no frames"), !1)) ? function(t, e, n) {
+                return ((r = e).samples.length < 2 ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.log("[Profiling] Discarding profile because it contains less than 2 samples"), !1) : !!r.frames.length || (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.log("[Profiling] Discarding profile because it contains no frames"), !1)) ? function(t, e, n) {
                     if ("transaction" !== t.type) throw TypeError("Profiling events may only be attached to transactions, this should never occur.");
                     if (null == e) throw TypeError(`Cannot construct profiling event envelope without a valid profile. Got ${e} instead.`);
                     let r = function(t) {
                             let e = t && t.contexts && t.contexts.trace && t.contexts.trace.trace_id;
-                            return ("string" == typeof e && 32 !== e.length && ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.log(`[Profiling] Invalid traceId: ${e} on profiled event`), "string" != typeof e) ? "" : e
+                            return ("string" == typeof e && 32 !== e.length && ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.log(`[Profiling] Invalid traceId: ${e} on profiled event`), "string" != typeof e) ? "" : e
                         }(t),
-                        l = function(t) {
+                        u = function(t) {
                             return "thread_metadata" in t ? t : function(t) {
                                 let e;
                                 let n = 0,
@@ -1386,36 +1373,36 @@
                                     };
                                 if (!t.samples.length) return r;
                                 let i = t.samples[0].timestamp,
-                                    s = "number" == typeof performance.timeOrigin ? performance.timeOrigin : u.Z1 || 0,
-                                    a = s - (u.Z1 || s);
-                                for (let s = 0; s < t.samples.length; s++) {
-                                    let o = t.samples[s];
+                                    a = "number" == typeof performance.timeOrigin ? performance.timeOrigin : l.Z1 || 0,
+                                    s = a - (l.Z1 || a);
+                                for (let a = 0; a < t.samples.length; a++) {
+                                    let o = t.samples[a];
                                     if (void 0 === o.stackId) {
-                                        void 0 === e && (e = n, r.stacks[e] = [], n++), r.samples[s] = {
-                                            elapsed_since_start_ns: ((o.timestamp + a - i) * 1e6).toFixed(0),
+                                        void 0 === e && (e = n, r.stacks[e] = [], n++), r.samples[a] = {
+                                            elapsed_since_start_ns: ((o.timestamp + s - i) * 1e6).toFixed(0),
                                             stack_id: e,
                                             thread_id: h
                                         };
                                         continue
                                     }
-                                    let u = t.stacks[o.stackId],
-                                        l = [];
-                                    for (; u;) {
-                                        l.push(u.frameId);
-                                        let e = t.frames[u.frameId];
-                                        void 0 === r.frames[u.frameId] && (r.frames[u.frameId] = {
+                                    let l = t.stacks[o.stackId],
+                                        u = [];
+                                    for (; l;) {
+                                        u.push(l.frameId);
+                                        let e = t.frames[l.frameId];
+                                        void 0 === r.frames[l.frameId] && (r.frames[l.frameId] = {
                                             function: e.name,
                                             abs_path: "number" == typeof e.resourceId ? t.resources[e.resourceId] : void 0,
                                             lineno: e.line,
                                             colno: e.column
-                                        }), u = void 0 === u.parentId ? void 0 : t.stacks[u.parentId]
+                                        }), l = void 0 === l.parentId ? void 0 : t.stacks[l.parentId]
                                     }
                                     let c = {
-                                        elapsed_since_start_ns: ((o.timestamp + a - i) * 1e6).toFixed(0),
+                                        elapsed_since_start_ns: ((o.timestamp + s - i) * 1e6).toFixed(0),
                                         stack_id: n,
                                         thread_id: h
                                     };
-                                    r.stacks[n] = l, r.samples[s] = c, n++
+                                    r.stacks[n] = u, r.samples[a] = c, n++
                                 }
                                 return r
                             }(t)
@@ -1450,40 +1437,40 @@
                                 let e;
                                 let n = c.n2._sentryDebugIds;
                                 if (!n) return [];
-                                let r = (0, s.Gd)();
+                                let r = (0, a.Gd)();
                                 if (!r) return [];
                                 let i = r.getClient();
                                 if (!i) return [];
-                                let a = i.getOptions();
-                                if (!a) return [];
-                                let o = a.stackParser;
+                                let s = i.getOptions();
+                                if (!s) return [];
+                                let o = s.stackParser;
                                 if (!o) return [];
-                                let u = S.get(o);
-                                u ? e = u : (e = new Map, S.set(o, e));
-                                let l = Object.keys(n).reduce((t, r) => {
+                                let l = S.get(o);
+                                l ? e = l : (e = new Map, S.set(o, e));
+                                let u = Object.keys(n).reduce((t, r) => {
                                         let i;
-                                        let s = e.get(r);
-                                        s ? i = s : (i = o(r), e.set(r, i));
+                                        let a = e.get(r);
+                                        a ? i = a : (i = o(r), e.set(r, i));
                                         for (let e = i.length - 1; e >= 0; e--) {
-                                            let s = i[e],
-                                                a = s && s.filename;
-                                            if (s && a) {
-                                                t[a] = n[r];
+                                            let a = i[e],
+                                                s = a && a.filename;
+                                            if (a && s) {
+                                                t[s] = n[r];
                                                 break
                                             }
                                         }
                                         return t
                                     }, {}),
                                     d = [];
-                                for (let e of t) e && l[e] && d.push({
+                                for (let e of t) e && u[e] && d.push({
                                     type: "sourcemap",
                                     code_file: e,
-                                    debug_id: l[e]
+                                    debug_id: u[e]
                                 });
                                 return d
                             }(e.resources)
                         },
-                        profile: l,
+                        profile: u,
                         transactions: [{
                             name: t.transaction || "",
                             id: t.event_id || (0, o.DM)(),
@@ -1505,7 +1492,6 @@
             }
         },
         846297: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Eg: function() {
                     return N
@@ -1540,11 +1526,11 @@
             });
             var r = n(344106),
                 i = n(740054),
-                s = n(595208),
-                a = n(110575),
+                a = n(595208),
+                s = n(110575),
                 o = n(876122),
-                u = n(507506),
-                l = n(432038),
+                l = n(507506),
+                u = n(432038),
                 c = n(698892),
                 d = n(529866),
                 h = n(880803),
@@ -1566,11 +1552,11 @@
                 void 0 === t.defaultIntegrations && (t.defaultIntegrations = T), void 0 === t.release && ("string" == typeof __SENTRY_RELEASE__ && (t.release = __SENTRY_RELEASE__), p.m9.SENTRY_RELEASE && p.m9.SENTRY_RELEASE.id && (t.release = p.m9.SENTRY_RELEASE.id)), void 0 === t.autoSessionTracking && (t.autoSessionTracking = !0), void 0 === t.sendClientReports && (t.sendClientReports = !0);
                 let e = {
                     ...t,
-                    stackParser: (0, l.Sq)(t.stackParser || S.Dt),
-                    integrations: (0, s.m8)(t),
+                    stackParser: (0, u.Sq)(t.stackParser || S.Dt),
+                    integrations: (0, a.m8)(t),
                     transport: t.transport || ((0, c.Ak)() ? w.f : k.K)
                 };
-                (0, a.M)(f.R, e), t.autoSessionTracking && function() {
+                (0, s.M)(f.R, e), t.autoSessionTracking && function() {
                     if (void 0 === p.m9.document) {
                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && d.kg.warn("Session tracking in non-browser environment with @sentry/browser is not supported.");
                         return
@@ -1602,10 +1588,10 @@
                     ...r.getUser(),
                     ...t.user
                 }), !t.eventId && (t.eventId = e.lastEventId());
-                let s = p.m9.document.createElement("script");
-                s.async = !0, s.crossOrigin = "anonymous", s.src = (0, u.h)(i, t), t.onLoad && (s.onload = t.onLoad);
-                let a = p.m9.document.head || p.m9.document.body;
-                a ? a.appendChild(s) : ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && d.kg.error("Not injecting report dialog. No injection point found in HTML")
+                let a = p.m9.document.createElement("script");
+                a.async = !0, a.crossOrigin = "anonymous", a.src = (0, l.h)(i, t), t.onLoad && (a.onload = t.onLoad);
+                let s = p.m9.document.head || p.m9.document.body;
+                s ? s.appendChild(a) : ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && d.kg.error("Not injecting report dialog. No injection point found in HTML")
             }
 
             function D() {
@@ -1644,7 +1630,6 @@
             }
         },
         202406: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 $3: function() {
                     return o
@@ -1678,26 +1663,26 @@
                 };
                 return void 0 !== n && (i.lineno = n), void 0 !== r && (i.colno = r), i
             }
-            let s = /^\s*at (?:(.+?\)(?: \[.+\])?|.*?) ?\((?:address at )?)?(?:async )?((?:<anonymous>|[-a-z]+:|.*bundle|\/)?.*?)(?::(\d+))?(?::(\d+))?\)?\s*$/i,
-                a = /\((\S*)(?::(\d+))(?::(\d+))\)/,
+            let a = /^\s*at (?:(.+?\)(?: \[.+\])?|.*?) ?\((?:address at )?)?(?:async )?((?:<anonymous>|[-a-z]+:|.*bundle|\/)?.*?)(?::(\d+))?(?::(\d+))?\)?\s*$/i,
+                s = /\((\S*)(?::(\d+))(?::(\d+))\)/,
                 o = [30, t => {
-                    let e = s.exec(t);
+                    let e = a.exec(t);
                     if (e) {
                         if (e[2] && 0 === e[2].indexOf("eval")) {
-                            let t = a.exec(e[2]);
+                            let t = s.exec(e[2]);
                             t && (e[2] = t[1], e[3] = t[2], e[4] = t[3])
                         }
                         let [t, n] = v(e[1] || "?", e[2]);
                         return i(n, t, e[3] ? +e[3] : void 0, e[4] ? +e[4] : void 0)
                     }
                 }],
-                u = /^\s*(.*?)(?:\((.*?)\))?(?:^|@)?((?:[-a-z]+)?:\/.*?|\[native code\]|[^@]*(?:bundle|\d+\.js)|\/[\w\-. /=]+)(?::(\d+))?(?::(\d+))?\s*$/i,
-                l = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i,
+                l = /^\s*(.*?)(?:\((.*?)\))?(?:^|@)?((?:[-a-z]+)?:\/.*?|\[native code\]|[^@]*(?:bundle|\d+\.js)|\/[\w\-. /=]+)(?::(\d+))?(?::(\d+))?\s*$/i,
+                u = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i,
                 c = [50, t => {
-                    let e = u.exec(t);
+                    let e = l.exec(t);
                     if (e) {
                         if (e[3] && e[3].indexOf(" > eval") > -1) {
-                            let t = l.exec(e[3]);
+                            let t = u.exec(e[3]);
                             t && (e[1] = e[1] || "eval", e[3] = t[1], e[4] = t[2], e[5] = "")
                         }
                         let t = e[3],
@@ -1729,32 +1714,31 @@
                 }
         },
         393746: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 f: function() {
-                    return a
+                    return s
                 }
             });
             var r = n(347421),
                 i = n(880803),
-                s = n(56618);
+                a = n(56618);
 
-            function a(t, e = (0, s.x)()) {
+            function s(t, e = (0, a.x)()) {
                 let n = 0,
-                    a = 0;
+                    s = 0;
                 return (0, r.q)(t, function(r) {
                     let o = r.body.length;
-                    n += o, a++;
-                    let u = {
+                    n += o, s++;
+                    let l = {
                         body: r.body,
                         method: "POST",
                         referrerPolicy: "origin",
                         headers: t.headers,
-                        keepalive: n <= 6e4 && a < 15,
+                        keepalive: n <= 6e4 && s < 15,
                         ...t.fetchOptions
                     };
                     try {
-                        return e(t.url, u).then(t => (n -= o, a--, {
+                        return e(t.url, l).then(t => (n -= o, s--, {
                             statusCode: t.status,
                             headers: {
                                 "x-sentry-rate-limits": t.headers.get("X-Sentry-Rate-Limits"),
@@ -1762,29 +1746,28 @@
                             }
                         }))
                     } catch (t) {
-                        return (0, s.c)(), n -= o, a--, (0, i.$2)(t)
+                        return (0, a.c)(), n -= o, s--, (0, i.$2)(t)
                     }
                 })
             }
         },
         490753: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 O1: function() {
-                    return u
+                    return l
                 }
             });
             var r = n(499833),
                 i = n(50074);
 
-            function s(t) {
+            function a(t) {
                 return new Promise((e, n) => {
                     t.oncomplete = t.onsuccess = () => e(t.result), t.onabort = t.onerror = () => n(t.error)
                 })
             }
 
-            function a(t) {
-                return s(t.getAllKeys())
+            function s(t) {
+                return a(t.getAllKeys())
             }
 
             function o(t) {
@@ -1794,24 +1777,24 @@
                     return void 0 == e && (e = function(t, e) {
                         let n = indexedDB.open(t);
                         n.onupgradeneeded = () => n.result.createObjectStore(e);
-                        let r = s(n);
+                        let r = a(n);
                         return t => r.then(n => t(n.transaction(e, "readwrite").objectStore(e)))
                     }(t.dbName || "sentry-offline", t.storeName || "queue")), e
                 }
                 return {
                     insert: async e => {
                         try {
-                            var r, o, u;
-                            let l = await (0, i.V$)(e, t.textEncoder);
-                            await (r = n(), o = l, u = t.maxQueueSize || 30, r(t => a(t).then(e => {
-                                if (!(e.length >= u)) return t.put(o, Math.max(...e, 0) + 1), s(t.transaction)
+                            var r, o, l;
+                            let u = await (0, i.V$)(e, t.textEncoder);
+                            await (r = n(), o = u, l = t.maxQueueSize || 30, r(t => s(t).then(e => {
+                                if (!(e.length >= l)) return t.put(o, Math.max(...e, 0) + 1), a(t.transaction)
                             })))
                         } catch (t) {}
                     },
                     pop: async () => {
                         try {
-                            let e = await n()(t => a(t).then(e => {
-                                if (0 !== e.length) return s(t.get(e[0])).then(n => (t.delete(e[0]), s(t.transaction).then(() => n)))
+                            let e = await n()(t => s(t).then(e => {
+                                if (0 !== e.length) return a(t.get(e[0])).then(n => (t.delete(e[0]), a(t.transaction).then(() => n)))
                             }));
                             if (e) return (0, i.f4)(e, t.textEncoder || new TextEncoder, t.textDecoder || new TextDecoder)
                         } catch (t) {}
@@ -1819,7 +1802,7 @@
                 }
             }
 
-            function u(t) {
+            function l(t) {
                 var e;
                 return e = (0, r.Pd)(t), t => e({
                     ...t,
@@ -1828,51 +1811,49 @@
             }
         },
         56618: function(t, e, n) {
-            "use strict";
             let r;
             n.d(e, {
                 c: function() {
-                    return u
+                    return l
                 },
                 x: function() {
                     return o
                 }
             });
             var i = n(698892),
-                s = n(529866),
-                a = n(643487);
+                a = n(529866),
+                s = n(643487);
 
             function o() {
                 if (r) return r;
-                if ((0, i.Du)(a.m9.fetch)) return r = a.m9.fetch.bind(a.m9);
-                let t = a.m9.document,
-                    e = a.m9.fetch;
+                if ((0, i.Du)(s.m9.fetch)) return r = s.m9.fetch.bind(s.m9);
+                let t = s.m9.document,
+                    e = s.m9.fetch;
                 if (t && "function" == typeof t.createElement) try {
                     let n = t.createElement("iframe");
                     n.hidden = !0, t.head.appendChild(n);
                     let r = n.contentWindow;
                     r && r.fetch && (e = r.fetch), t.head.removeChild(n)
                 } catch (t) {
-                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", t)
+                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", t)
                 }
-                return r = e.bind(a.m9)
+                return r = e.bind(s.m9)
             }
 
-            function u() {
+            function l() {
                 r = void 0
             }
         },
         975927: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 K: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(347421),
                 i = n(880803);
 
-            function s(t) {
+            function a(t) {
                 return (0, r.q)(t, function(e) {
                     return new i.cW((n, r) => {
                         let i = new XMLHttpRequest;
@@ -1891,21 +1872,20 @@
             }
         },
         184612: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 r: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(177668),
                 i = n(50074);
 
-            function s(t, {
+            function a(t, {
                 metadata: e,
                 tunnel: n,
-                dsn: s
+                dsn: a
             }) {
-                let a = {
+                let s = {
                         event_id: t.event_id,
                         sent_at: new Date().toISOString(),
                         ...e && e.sdk && {
@@ -1914,8 +1894,8 @@
                                 version: e.sdk.version
                             }
                         },
-                        ...!!n && !!s && {
-                            dsn: (0, r.RA)(s)
+                        ...!!n && !!a && {
+                            dsn: (0, r.RA)(a)
                         }
                     },
                     o = function(t) {
@@ -1923,14 +1903,13 @@
                             type: "user_report"
                         }, t]
                     }(t);
-                return (0, i.Jd)(a, [o])
+                return (0, i.Jd)(s, [o])
             }
         },
         507506: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 U: function() {
-                    return a
+                    return s
                 },
                 h: function() {
                     return o
@@ -1939,37 +1918,36 @@
             var r = n(442853),
                 i = n(177668);
 
-            function s(t) {
+            function a(t) {
                 let e = t.protocol ? `${t.protocol}:` : "",
                     n = t.port ? `:${t.port}` : "";
                 return `${e}//${t.host}${n}${t.path?`/${t.path}`:""}/api/`
             }
 
-            function a(t, e = {}) {
-                var n, i, a;
+            function s(t, e = {}) {
+                var n, i, s;
                 let o = "string" == typeof e ? e : e.tunnel,
-                    u = "string" != typeof e && e._metadata ? e._metadata.sdk : void 0;
-                return o || `${n=t,`${s(n)}${n.projectId}/envelope/`}?${i=t,a=u,(0,r._j)({sentry_key:i.publicKey,sentry_version:"7",...a&&{sentry_client:`${a.name}/${a.version}`}})}`
+                    l = "string" != typeof e && e._metadata ? e._metadata.sdk : void 0;
+                return o || `${n=t,`${a(n)}${n.projectId}/envelope/`}?${i=t,s=l,(0,r._j)({sentry_key:i.publicKey,sentry_version:"7",...s&&{sentry_client:`${s.name}/${s.version}`}})}`
             }
 
             function o(t, e) {
                 let n = (0, i.vK)(t);
                 if (!n) return "";
-                let r = `${s(n)}embed/error-page/`,
-                    a = `dsn=${(0,i.RA)(n)}`;
+                let r = `${a(n)}embed/error-page/`,
+                    s = `dsn=${(0,i.RA)(n)}`;
                 for (let t in e) {
                     if ("dsn" !== t)
                         if ("user" === t) {
                             let t = e.user;
                             if (!t) continue;
-                            t.name && (a += `&name=${encodeURIComponent(t.name)}`), t.email && (a += `&email=${encodeURIComponent(t.email)}`)
-                        } else a += `&${encodeURIComponent(t)}=${encodeURIComponent(e[t])}`
+                            t.name && (s += `&name=${encodeURIComponent(t.name)}`), t.email && (s += `&email=${encodeURIComponent(t.email)}`)
+                        } else s += `&${encodeURIComponent(t)}=${encodeURIComponent(e[t])}`
                 }
-                return `${r}?${a}`
+                return `${r}?${s}`
             }
         },
         861579: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 W: function() {
                     return g
@@ -1977,11 +1955,11 @@
             });
             var r = n(177668),
                 i = n(529866),
-                s = n(862315),
-                a = n(46834),
+                a = n(862315),
+                s = n(46834),
                 o = n(880803),
-                u = n(50074),
-                l = n(303155),
+                l = n(50074),
+                u = n(303155),
                 c = n(507506),
                 d = n(419767),
                 h = n(595208),
@@ -2016,7 +1994,7 @@
                     }
                 }
                 captureException(t, e, n) {
-                    if ((0, s.YO)(t)) {
+                    if ((0, a.YO)(t)) {
                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(m);
                         return
                     }
@@ -2027,13 +2005,13 @@
                 }
                 captureMessage(t, e, n, r) {
                     let i = n && n.event_id,
-                        s = (0, a.pt)(t) ? this.eventFromMessage(String(t), e, n) : this.eventFromException(t, n);
-                    return this._process(s.then(t => this._captureEvent(t, n, r)).then(t => {
+                        a = (0, s.pt)(t) ? this.eventFromMessage(String(t), e, n) : this.eventFromException(t, n);
+                    return this._process(a.then(t => this._captureEvent(t, n, r)).then(t => {
                         i = t
                     })), i
                 }
                 captureEvent(t, e, n) {
-                    if (e && e.originalException && (0, s.YO)(e.originalException)) {
+                    if (e && e.originalException && (0, a.YO)(e.originalException)) {
                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(m);
                         return
                     }
@@ -2089,7 +2067,7 @@
                 sendEvent(t, e = {}) {
                     if (this._dsn) {
                         let n = (0, d.M)(t, this._dsn, this._options._metadata, this._options.tunnel);
-                        for (let t of e.attachments || []) n = (0, u.BO)(n, (0, u.zQ)(t, this._options.transportOptions && this._options.transportOptions.textEncoder));
+                        for (let t of e.attachments || []) n = (0, l.BO)(n, (0, l.zQ)(t, this._options.transportOptions && this._options.transportOptions.textEncoder));
                         let r = this._sendEnvelope(n);
                         r && r.then(e => this.emit("afterSendEvent", t, e), null)
                     }
@@ -2124,8 +2102,8 @@
                                 break
                             }
                         }
-                    let s = "ok" === t.status;
-                    (s && 0 === t.errors || s && n) && ((0, _.CT)(t, {
+                    let a = "ok" === t.status;
+                    (a && 0 === t.errors || a && n) && ((0, _.CT)(t, {
                         ...n && {
                             status: "crashed"
                         },
@@ -2155,18 +2133,18 @@
                             let {
                                 traceId: r,
                                 spanId: i,
-                                parentSpanId: s,
-                                dsc: a
+                                parentSpanId: a,
+                                dsc: s
                             } = e;
                             t.contexts = {
                                 trace: {
                                     trace_id: r,
                                     span_id: i,
-                                    parent_span_id: s
+                                    parent_span_id: a
                                 },
                                 ...t.contexts
                             };
-                            let o = a || (0, f._)(r, this, n);
+                            let o = s || (0, f._)(r, this, n);
                             t.sdkProcessingMetadata = {
                                 dynamicSamplingContext: o,
                                 ...t.sdkProcessingMetadata
@@ -2185,24 +2163,24 @@
                         {
                             sampleRate: i
                         } = r;
-                    if (!this._isEnabled()) return (0, o.$2)(new l.b("SDK not enabled, will not capture event.", "log"));
-                    let s = v(t),
-                        u = y(t),
+                    if (!this._isEnabled()) return (0, o.$2)(new u.b("SDK not enabled, will not capture event.", "log"));
+                    let a = v(t),
+                        l = y(t),
                         c = t.type || "error",
                         d = `before send for type \`${c}\``;
-                    if (u && "number" == typeof i && Math.random() > i) return this.recordDroppedEvent("sample_rate", "error", t), (0, o.$2)(new l.b(`Discarding event because it's not included in the random sample (sampling rate = ${i})`, "log"));
+                    if (l && "number" == typeof i && Math.random() > i) return this.recordDroppedEvent("sample_rate", "error", t), (0, o.$2)(new u.b(`Discarding event because it's not included in the random sample (sampling rate = ${i})`, "log"));
                     let h = "replay_event" === c ? "replay" : c;
                     return this._prepareEvent(t, e, n).then(n => {
-                        if (null === n) throw this.recordDroppedEvent("event_processor", h, t), new l.b("An event processor returned `null`, will not send event.", "log");
+                        if (null === n) throw this.recordDroppedEvent("event_processor", h, t), new u.b("An event processor returned `null`, will not send event.", "log");
                         return e.data && !0 === e.data.__sentry__ ? n : function(t, e) {
                             let n = `${e} must return \`null\` or a valid event.`;
-                            if ((0, a.J8)(t)) return t.then(t => {
-                                if (!(0, a.PO)(t) && null !== t) throw new l.b(n);
+                            if ((0, s.J8)(t)) return t.then(t => {
+                                if (!(0, s.PO)(t) && null !== t) throw new u.b(n);
                                 return t
                             }, t => {
-                                throw new l.b(`${e} rejected with ${t}`)
+                                throw new u.b(`${e} rejected with ${t}`)
                             });
-                            if (!(0, a.PO)(t) && null !== t) throw new l.b(n);
+                            if (!(0, s.PO)(t) && null !== t) throw new u.b(n);
                             return t
                         }(function(t, e, n) {
                             let {
@@ -2212,22 +2190,22 @@
                             return y(e) && r ? r(e, n) : v(e) && i ? i(e, n) : e
                         }(r, n, e), d)
                     }).then(r => {
-                        if (null === r) throw this.recordDroppedEvent("before_send", h, t), new l.b(`${d} returned \`null\`, will not send event.`, "log");
+                        if (null === r) throw this.recordDroppedEvent("before_send", h, t), new u.b(`${d} returned \`null\`, will not send event.`, "log");
                         let i = n && n.getSession();
-                        !s && i && this._updateSessionFromEvent(i, r);
-                        let a = r.transaction_info;
-                        return s && a && r.transaction !== t.transaction && (r.transaction_info = {
-                            ...a,
+                        !a && i && this._updateSessionFromEvent(i, r);
+                        let s = r.transaction_info;
+                        return a && s && r.transaction !== t.transaction && (r.transaction_info = {
+                            ...s,
                             source: "custom"
                         }), this.sendEvent(r, e), r
                     }).then(null, t => {
-                        if (t instanceof l.b) throw t;
+                        if (t instanceof u.b) throw t;
                         throw this.captureException(t, {
                             data: {
                                 __sentry__: !0
                             },
                             originalException: t
-                        }), new l.b(`Event processing pipeline threw an error, original event will not be sent. Details have been sent as a new event.
+                        }), new u.b(`Event processing pipeline threw an error, original event will not be sent. Details have been sent as a new event.
 Reason: ${t}`)
                     })
                 }
@@ -2262,7 +2240,6 @@ Reason: ${t}`)
             }
         },
         28434: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 J: function() {
                     return r
@@ -2271,52 +2248,50 @@ Reason: ${t}`)
             let r = "production"
         },
         419767: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 M: function() {
-                    return a
+                    return s
                 },
                 Q: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(50074),
                 i = n(177668);
 
-            function s(t, e, n, s) {
-                let a = (0, r.HY)(n),
+            function a(t, e, n, a) {
+                let s = (0, r.HY)(n),
                     o = {
                         sent_at: new Date().toISOString(),
-                        ...a && {
-                            sdk: a
+                        ...s && {
+                            sdk: s
                         },
-                        ...!!s && {
+                        ...!!a && {
                             dsn: (0, i.RA)(e)
                         }
                     },
-                    u = "aggregates" in t ? [{
+                    l = "aggregates" in t ? [{
                         type: "sessions"
                     }, t] : [{
                         type: "session"
                     }, t.toJSON()];
-                return (0, r.Jd)(o, [u])
+                return (0, r.Jd)(o, [l])
             }
 
-            function a(t, e, n, i) {
-                var s, a;
+            function s(t, e, n, i) {
+                var a, s;
                 let o = (0, r.HY)(n),
-                    u = t.type && "replay_event" !== t.type ? t.type : "event";
-                s = t, !(a = n && n.sdk) || (s.sdk = s.sdk || {}, s.sdk.name = s.sdk.name || a.name, s.sdk.version = s.sdk.version || a.version, s.sdk.integrations = [...s.sdk.integrations || [], ...a.integrations || []], s.sdk.packages = [...s.sdk.packages || [], ...a.packages || []]);
-                let l = (0, r.Cd)(t, o, i, e);
+                    l = t.type && "replay_event" !== t.type ? t.type : "event";
+                a = t, !(s = n && n.sdk) || (a.sdk = a.sdk || {}, a.sdk.name = a.sdk.name || s.name, a.sdk.version = a.sdk.version || s.version, a.sdk.integrations = [...a.sdk.integrations || [], ...s.integrations || []], a.sdk.packages = [...a.sdk.packages || [], ...s.packages || []]);
+                let u = (0, r.Cd)(t, o, i, e);
                 delete t.sdkProcessingMetadata;
                 let c = [{
-                    type: u
+                    type: l
                 }, t];
-                return (0, r.Jd)(l, [c])
+                return (0, r.Jd)(u, [c])
             }
         },
         138122: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 $e: function() {
                     return p
@@ -2337,13 +2312,13 @@ Reason: ${t}`)
                     return o
                 },
                 eN: function() {
-                    return a
+                    return s
                 },
                 mG: function() {
                     return h
                 },
                 n_: function() {
-                    return u
+                    return l
                 },
                 rJ: function() {
                     return c
@@ -2352,10 +2327,10 @@ Reason: ${t}`)
                     return d
                 },
                 uT: function() {
-                    return s
+                    return a
                 },
                 v: function() {
-                    return l
+                    return u
                 }
             });
             var r = n(876122);
@@ -2366,7 +2341,7 @@ Reason: ${t}`)
                 })
             }
 
-            function s(t, e) {
+            function a(t, e) {
                 let n = "string" == typeof e ? e : void 0,
                     i = "string" != typeof e ? {
                         captureContext: e
@@ -2374,7 +2349,7 @@ Reason: ${t}`)
                 return (0, r.Gd)().captureMessage(t, n, i)
             }
 
-            function a(t, e) {
+            function s(t, e) {
                 return (0, r.Gd)().captureEvent(t, e)
             }
 
@@ -2382,11 +2357,11 @@ Reason: ${t}`)
                 (0, r.Gd)().configureScope(t)
             }
 
-            function u(t) {
+            function l(t) {
                 (0, r.Gd)().addBreadcrumb(t)
             }
 
-            function l(t, e) {
+            function u(t, e) {
                 (0, r.Gd)().setContext(t, e)
             }
 
@@ -2421,7 +2396,6 @@ Reason: ${t}`)
             }
         },
         876122: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Gd: function() {
                     return _
@@ -2441,13 +2415,13 @@ Reason: ${t}`)
             });
             var r = n(862315),
                 i = n(868145),
-                s = n(529866),
-                a = n(24716),
+                a = n(529866),
+                s = n(24716),
                 o = n(28434),
-                u = n(703498),
-                l = n(741900);
+                l = n(703498),
+                u = n(741900);
             class c {
-                constructor(t, e = new u.s, n = 4) {
+                constructor(t, e = new l.s, n = 4) {
                     this._version = n, this._stack = [{
                         scope: e
                     }], t && this.bindClient(t)
@@ -2459,7 +2433,7 @@ Reason: ${t}`)
                     this.getStackTop().client = t, t && t.setupIntegrations && t.setupIntegrations()
                 }
                 pushScope() {
-                    let t = u.s.clone(this.getScope());
+                    let t = l.s.clone(this.getScope());
                     return this.getStack().push({
                         client: this.getClient(),
                         scope: t
@@ -2491,25 +2465,25 @@ Reason: ${t}`)
                 captureException(t, e) {
                     let n = this._lastEventId = e && e.event_id ? e.event_id : (0, r.DM)(),
                         i = Error("Sentry syntheticException");
-                    return this._withClient((r, s) => {
+                    return this._withClient((r, a) => {
                         r.captureException(t, {
                             originalException: t,
                             syntheticException: i,
                             ...e,
                             event_id: n
-                        }, s)
+                        }, a)
                     }), n
                 }
                 captureMessage(t, e, n) {
                     let i = this._lastEventId = n && n.event_id ? n.event_id : (0, r.DM)(),
-                        s = Error(t);
-                    return this._withClient((r, a) => {
+                        a = Error(t);
+                    return this._withClient((r, s) => {
                         r.captureMessage(t, e, {
                             originalException: t,
-                            syntheticException: s,
+                            syntheticException: a,
                             ...n,
                             event_id: i
-                        }, a)
+                        }, s)
                     }), i
                 }
                 captureEvent(t, e) {
@@ -2531,16 +2505,16 @@ Reason: ${t}`)
                     } = this.getStackTop();
                     if (!r) return;
                     let {
-                        beforeBreadcrumb: a = null,
+                        beforeBreadcrumb: s = null,
                         maxBreadcrumbs: o = 100
                     } = r.getOptions && r.getOptions() || {};
                     if (o <= 0) return;
-                    let u = {
+                    let l = {
                             timestamp: (0, i.yW)(),
                             ...t
                         },
-                        l = a ? (0, s.Cf)(() => a(u, e)) : u;
-                    null !== l && (r.emit && r.emit("beforeAddBreadcrumb", l, e), n.addBreadcrumb(l, o))
+                        u = s ? (0, a.Cf)(() => s(l, e)) : l;
+                    null !== u && (r.emit && r.emit("beforeAddBreadcrumb", u, e), n.addBreadcrumb(u, o))
                 }
                 setUser(t) {
                     this.getScope().setUser(t)
@@ -2581,7 +2555,7 @@ Reason: ${t}`)
                     try {
                         return e.getIntegration(t)
                     } catch (e) {
-                        return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`Cannot retrieve integration ${t.id} from the current Hub`), null
+                        return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`Cannot retrieve integration ${t.id} from the current Hub`), null
                     }
                 }
                 startTransaction(t, e) {
@@ -2601,7 +2575,7 @@ Sentry.init({...});
                 endSession() {
                     let t = this.getStackTop().scope,
                         e = t.getSession();
-                    e && (0, l.RJ)(e), this._sendSessionUpdate(), t.setSession()
+                    e && (0, u.RJ)(e), this._sendSessionUpdate(), t.setSession()
                 }
                 startSession(t) {
                     let {
@@ -2611,19 +2585,19 @@ Sentry.init({...});
                         release: r,
                         environment: i = o.J
                     } = n && n.getOptions() || {}, {
-                        userAgent: s
-                    } = a.n2.navigator || {}, u = (0, l.Hv)({
+                        userAgent: a
+                    } = s.n2.navigator || {}, l = (0, u.Hv)({
                         release: r,
                         environment: i,
                         user: e.getUser(),
-                        ...s && {
-                            userAgent: s
+                        ...a && {
+                            userAgent: a
                         },
                         ...t
                     }), c = e.getSession && e.getSession();
-                    return c && "ok" === c.status && (0, l.CT)(c, {
+                    return c && "ok" === c.status && (0, u.CT)(c, {
                         status: "exited"
-                    }), this.endSession(), e.setSession(u), u
+                    }), this.endSession(), e.setSession(l), l
                 }
                 shouldSendDefaultPii() {
                     let t = this.getClient(),
@@ -2647,15 +2621,15 @@ Sentry.init({...});
                 _callExtensionMethod(t, ...e) {
                     let n = d().__SENTRY__;
                     if (n && n.extensions && "function" == typeof n.extensions[t]) return n.extensions[t].apply(this, e);
-                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`Extension method ${t} couldn't be found, doing nothing.`)
+                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`Extension method ${t} couldn't be found, doing nothing.`)
                 }
             }
 
             function d() {
-                return a.n2.__SENTRY__ = a.n2.__SENTRY__ || {
+                return s.n2.__SENTRY__ = s.n2.__SENTRY__ || {
                     extensions: {},
                     hub: void 0
-                }, a.n2
+                }, s.n2
             }
 
             function h(t) {
@@ -2678,7 +2652,7 @@ Sentry.init({...});
             }
 
             function f(t) {
-                return (0, a.YO)("hub", () => new c, t)
+                return (0, s.YO)("hub", () => new c, t)
             }
 
             function p(t, e) {
@@ -2686,13 +2660,12 @@ Sentry.init({...});
             }
         },
         91320: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 $e: function() {
                     return o.$e
                 },
                 Gd: function() {
-                    return u.Gd
+                    return l.Gd
                 },
                 Jn: function() {
                     return h.J
@@ -2710,7 +2683,7 @@ Sentry.init({...});
                     return d.W
                 },
                 Xb: function() {
-                    return u.Xb
+                    return l.Xb
                 },
                 YA: function() {
                     return o.YA
@@ -2728,7 +2701,7 @@ Sentry.init({...});
                     return o.av
                 },
                 cc: function() {
-                    return l.c
+                    return u.c
                 },
                 cq: function() {
                     return f.c
@@ -2740,7 +2713,7 @@ Sentry.init({...});
                     return o.eN
                 },
                 g4: function() {
-                    return a.g
+                    return s.g
                 },
                 mG: function() {
                     return o.mG
@@ -2749,7 +2722,7 @@ Sentry.init({...});
                     return o.n_
                 },
                 pj: function() {
-                    return u.pj
+                    return l.pj
                 },
                 qG: function() {
                     return m.qG
@@ -2764,7 +2737,7 @@ Sentry.init({...});
                     return o.sU
                 },
                 sX: function() {
-                    return l.s
+                    return u.s
                 },
                 uT: function() {
                     return o.uT
@@ -2773,19 +2746,19 @@ Sentry.init({...});
                     return o.v
                 },
                 vi: function() {
-                    return u.vi
+                    return l.vi
                 },
                 x1: function() {
-                    return s.x1
+                    return a.x1
                 }
             });
             var r = n(90668),
                 i = n(48950),
-                s = n(147816),
-                a = n(468174),
+                a = n(147816),
+                s = n(468174),
                 o = n(138122),
-                u = n(876122),
-                l = n(703498),
+                l = n(876122),
+                u = n(703498),
                 c = n(347421),
                 d = n(449701),
                 h = n(139782),
@@ -2795,32 +2768,31 @@ Sentry.init({...});
                 m = n(648238)
         },
         595208: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 m7: function() {
                     return c
                 },
                 m8: function() {
-                    return u
+                    return l
                 },
                 q4: function() {
-                    return l
+                    return u
                 }
             });
             var r = n(862315),
                 i = n(529866),
-                s = n(876122),
-                a = n(703498);
+                a = n(876122),
+                s = n(703498);
             let o = [];
 
-            function u(t) {
+            function l(t) {
                 let e;
                 let n = t.defaultIntegrations || [],
                     i = t.integrations;
                 n.forEach(t => {
                     t.isDefaultInstance = !0
                 });
-                let s = function(t) {
+                let a = function(t) {
                         let e = {};
                         return t.forEach(t => {
                             let {
@@ -2829,19 +2801,19 @@ Sentry.init({...});
                             if (!r || !!r.isDefaultInstance || !t.isDefaultInstance) e[n] = t
                         }), Object.keys(e).map(t => e[t])
                     }(e = Array.isArray(i) ? [...n, ...i] : "function" == typeof i ? (0, r.lE)(i(n)) : n),
-                    a = function(t, e) {
+                    s = function(t, e) {
                         for (let n = 0; n < t.length; n++)
                             if (!0 === e(t[n])) return n;
                         return -1
-                    }(s, t => "Debug" === t.name);
-                if (-1 !== a) {
-                    let [t] = s.splice(a, 1);
-                    s.push(t)
+                    }(a, t => "Debug" === t.name);
+                if (-1 !== s) {
+                    let [t] = a.splice(s, 1);
+                    a.push(t)
                 }
-                return s
+                return a
             }
 
-            function l(t) {
+            function u(t) {
                 let e = {};
                 return t.forEach(t => {
                     t && c(t, e)
@@ -2849,27 +2821,26 @@ Sentry.init({...});
             }
 
             function c(t, e) {
-                e[t.name] = t, -1 === o.indexOf(t.name) && (t.setupOnce(a.c, s.Gd), o.push(t.name), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`Integration installed: ${t.name}`))
+                e[t.name] = t, -1 === o.indexOf(t.name) && (t.setupOnce(s.c, a.Gd), o.push(t.name), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`Integration installed: ${t.name}`))
             }
         },
         740054: function(t, e, n) {
-            "use strict";
             let r;
             n.d(e, {
                 c: function() {
-                    return s
+                    return a
                 }
             });
             var i = n(442853);
-            class s {
+            class a {
                 constructor() {
-                    s.prototype.__init.call(this)
+                    a.prototype.__init.call(this)
                 }
                 static __initStatic() {
                     this.id = "FunctionToString"
                 }
                 __init() {
-                    this.name = s.id
+                    this.name = a.id
                 }
                 setupOnce() {
                     r = Function.prototype.toString;
@@ -2881,38 +2852,37 @@ Sentry.init({...});
                     } catch (t) {}
                 }
             }
-            s.__initStatic()
+            a.__initStatic()
         },
         344106: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 QD: function() {
-                    return u
+                    return l
                 }
             });
             var r = n(529866),
                 i = n(862315),
-                s = n(336344);
-            let a = [/^Script error\.?$/, /^Javascript error: Script error\.? on line 0$/],
+                a = n(336344);
+            let s = [/^Script error\.?$/, /^Javascript error: Script error\.? on line 0$/],
                 o = [/^.*healthcheck.*$/, /^.*healthy.*$/, /^.*live.*$/, /^.*ready.*$/, /^.*heartbeat.*$/, /^.*\/health$/, /^.*\/healthz$/];
-            class u {
+            class l {
                 static __initStatic() {
                     this.id = "InboundFilters"
                 }
                 __init() {
-                    this.name = u.id
+                    this.name = l.id
                 }
                 constructor(t = {}) {
-                    this._options = t, u.prototype.__init.call(this)
+                    this._options = t, l.prototype.__init.call(this)
                 }
                 setupOnce(t, e) {
                     let n = t => {
                         let n = e();
                         if (n) {
-                            let e = n.getIntegration(u);
+                            let e = n.getIntegration(l);
                             if (e) {
-                                let u = n.getClient(),
-                                    c = u ? u.getOptions() : {};
+                                let l = n.getClient(),
+                                    c = l ? l.getOptions() : {};
                                 return function(t, e) {
                                     return e.ignoreInternal && function(t) {
                                         try {
@@ -2938,31 +2908,31 @@ Event: ${(0,i.jH)(t)}`), !0) : function(t, e) {
                                                 }
                                             }
                                             return []
-                                        })(t).some(t => (0, s.U0)(t, e))
+                                        })(t).some(t => (0, a.U0)(t, e))
                                     }(t, e.ignoreErrors) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn(`Event dropped due to being matched by \`ignoreErrors\` option.
 Event: ${(0,i.jH)(t)}`), !0) : function(t, e) {
                                         if ("transaction" !== t.type || !e || !e.length) return !1;
                                         let n = t.transaction;
-                                        return !!n && (0, s.U0)(n, e)
+                                        return !!n && (0, a.U0)(n, e)
                                     }(t, e.ignoreTransactions) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn(`Event dropped due to being matched by \`ignoreTransactions\` option.
 Event: ${(0,i.jH)(t)}`), !0) : function(t, e) {
                                         if (!e || !e.length) return !1;
-                                        let n = l(t);
-                                        return !!n && (0, s.U0)(n, e)
+                                        let n = u(t);
+                                        return !!n && (0, a.U0)(n, e)
                                     }(t, e.denyUrls) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn(`Event dropped due to being matched by \`denyUrls\` option.
 Event: ${(0,i.jH)(t)}.
-Url: ${l(t)}`), !0) : ! function(t, e) {
+Url: ${u(t)}`), !0) : ! function(t, e) {
                                         if (!e || !e.length) return !0;
-                                        let n = l(t);
-                                        return !n || (0, s.U0)(n, e)
+                                        let n = u(t);
+                                        return !n || (0, a.U0)(n, e)
                                     }(t, e.allowUrls) && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn(`Event dropped due to not being matched by \`allowUrls\` option.
 Event: ${(0,i.jH)(t)}.
-Url: ${l(t)}`), !0)
+Url: ${u(t)}`), !0)
                                 }(t, function(t = {}, e = {}) {
                                     return {
                                         allowUrls: [...t.allowUrls || [], ...e.allowUrls || []],
                                         denyUrls: [...t.denyUrls || [], ...e.denyUrls || []],
-                                        ignoreErrors: [...t.ignoreErrors || [], ...e.ignoreErrors || [], ...t.disableErrorDefaults ? [] : a],
+                                        ignoreErrors: [...t.ignoreErrors || [], ...e.ignoreErrors || [], ...t.disableErrorDefaults ? [] : s],
                                         ignoreTransactions: [...t.ignoreTransactions || [], ...e.ignoreTransactions || [], ...t.disableTransactionDefaults ? [] : o],
                                         ignoreInternal: void 0 === t.ignoreInternal || t.ignoreInternal
                                     }
@@ -2974,9 +2944,9 @@ Url: ${l(t)}`), !0)
                     n.id = this.name, t(n)
                 }
             }
-            u.__initStatic();
+            l.__initStatic();
 
-            function l(t) {
+            function u(t) {
                 try {
                     let e;
                     try {
@@ -2995,7 +2965,6 @@ Url: ${l(t)}`), !0)
             }
         },
         89837: function(t, e, n) {
-            "use strict";
             n.r(e), n.d(e, {
                 FunctionToString: function() {
                     return r.c
@@ -3008,23 +2977,22 @@ Url: ${l(t)}`), !0)
                 i = n(344106)
         },
         333878: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 _: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(50074),
                 i = n(274484);
-            class s {
+            class a {
                 constructor() {
-                    s.prototype.__init.call(this)
+                    a.prototype.__init.call(this)
                 }
                 static __initStatic() {
                     this.id = "ModuleMetadata"
                 }
                 __init() {
-                    this.name = s.id
+                    this.name = a.id
                 }
                 setupOnce(t, e) {
                     let n = e().getClient();
@@ -3037,46 +3005,45 @@ Url: ${l(t)}`), !0)
                             }
                         })
                     });
-                    let s = n.getOptions().stackParser;
-                    t(t => ((0, i.GY)(s, t), t))
+                    let a = n.getOptions().stackParser;
+                    t(t => ((0, i.GY)(a, t), t))
                 }
             }
-            s.__initStatic()
+            a.__initStatic()
         },
         274484: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 CC: function() {
                     return o
                 },
                 GY: function() {
-                    return a
+                    return s
                 }
             });
             var r = n(24716);
             let i = new Map,
-                s = new Set;
+                a = new Set;
 
-            function a(t, e) {
+            function s(t, e) {
                 try {
                     e.exception.values.forEach(e => {
                         if (!!e.stacktrace)
                             for (let o of e.stacktrace.frames || []) {
-                                var n, a;
+                                var n, s;
                                 if (!o.filename) continue;
-                                let e = (n = t, a = o.filename, ! function(t) {
+                                let e = (n = t, s = o.filename, ! function(t) {
                                     if (!!r.n2._sentryModuleMetadata)
                                         for (let e of Object.keys(r.n2._sentryModuleMetadata)) {
                                             let n = r.n2._sentryModuleMetadata[e];
-                                            if (!s.has(e)) {
-                                                for (let r of (s.add(e), t(e).reverse()))
+                                            if (!a.has(e)) {
+                                                for (let r of (a.add(e), t(e).reverse()))
                                                     if (r.filename) {
                                                         i.set(r.filename, n);
                                                         break
                                                     }
                                             }
                                         }
-                                }(n), i.get(a));
+                                }(n), i.get(s));
                                 e && (o.module_metadata = e)
                             }
                     })
@@ -3093,7 +3060,6 @@ Url: ${l(t)}`), !0)
             }
         },
         703498: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 c: function() {
                     return h
@@ -3104,11 +3070,11 @@ Url: ${l(t)}`), !0)
             });
             var r = n(46834),
                 i = n(868145),
-                s = n(880803),
-                a = n(529866),
+                a = n(880803),
+                s = n(529866),
                 o = n(862315),
-                u = n(24716),
-                l = n(741900);
+                l = n(24716),
+                u = n(741900);
             class c {
                 constructor() {
                     this._notifyingListeners = !1, this._scopeListeners = [], this._eventProcessors = [], this._breadcrumbs = [], this._attachments = [], this._user = {}, this._tags = {}, this._extra = {}, this._contexts = {}, this._sdkProcessingMetadata = {}, this._propagationContext = _()
@@ -3134,7 +3100,7 @@ Url: ${l(t)}`), !0)
                     return this._eventProcessors.push(t), this
                 }
                 setUser(t) {
-                    return this._user = t || {}, this._session && (0, l.CT)(this._session, {
+                    return this._user = t || {}, this._session && (0, u.CT)(this._session, {
                         user: t
                     }), this._notifyScopeListeners(), this
                 }
@@ -3302,14 +3268,14 @@ Url: ${l(t)}`), !0)
                     return this._propagationContext
                 }
                 _notifyEventProcessors(t, e, n, i = 0) {
-                    return new s.cW((s, o) => {
-                        let u = t[i];
-                        if (null === e || "function" != typeof u) s(e);
+                    return new a.cW((a, o) => {
+                        let l = t[i];
+                        if (null === e || "function" != typeof l) a(e);
                         else {
-                            let l = u({
+                            let u = l({
                                 ...e
                             }, n);
-                            ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.id && null === l && a.kg.log(`Event processor "${u.id}" dropped event`), (0, r.J8)(l) ? l.then(e => this._notifyEventProcessors(t, e, n, i + 1).then(s)).then(null, o) : this._notifyEventProcessors(t, l, n, i + 1).then(s).then(null, o)
+                            ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.id && null === u && s.kg.log(`Event processor "${l.id}" dropped event`), (0, r.J8)(u) ? u.then(e => this._notifyEventProcessors(t, e, n, i + 1).then(a)).then(null, o) : this._notifyEventProcessors(t, u, n, i + 1).then(a).then(null, o)
                         }
                     })
                 }
@@ -3324,7 +3290,7 @@ Url: ${l(t)}`), !0)
             }
 
             function d() {
-                return (0, u.YO)("globalEventProcessors", () => [])
+                return (0, l.YO)("globalEventProcessors", () => [])
             }
 
             function h(t) {
@@ -3340,41 +3306,39 @@ Url: ${l(t)}`), !0)
             }
         },
         110575: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 M: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(529866),
                 i = n(876122);
 
-            function s(t, e) {
+            function a(t, e) {
                 !0 === e.debug && ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__ ? r.kg.enable() : console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle."));
                 let n = (0, i.Gd)();
                 n.getScope().update(e.initialScope);
-                let s = new t(e);
-                n.bindClient(s)
+                let a = new t(e);
+                n.bindClient(a)
             }
         },
         741900: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 CT: function() {
                     return o
                 },
                 Hv: function() {
-                    return a
+                    return s
                 },
                 RJ: function() {
-                    return u
+                    return l
                 }
             });
             var r = n(868145),
                 i = n(862315),
-                s = n(442853);
+                a = n(442853);
 
-            function a(t) {
+            function s(t) {
                 let e = (0, r.ph)(),
                     n = {
                         sid: (0, i.DM)(),
@@ -3386,7 +3350,7 @@ Url: ${l(t)}`), !0)
                         errors: 0,
                         ignoreDuration: !1,
                         toJSON: () => (function(t) {
-                            return (0, s.Jr)({
+                            return (0, a.Jr)({
                                 sid: `${t.sid}`,
                                 init: t.init,
                                 started: new Date(1e3 * t.started).toISOString(),
@@ -3417,7 +3381,7 @@ Url: ${l(t)}`), !0)
                 e.release && (t.release = e.release), e.environment && (t.environment = e.environment), !t.ipAddress && e.ipAddress && (t.ipAddress = e.ipAddress), !t.userAgent && e.userAgent && (t.userAgent = e.userAgent), "number" == typeof e.errors && (t.errors = e.errors), e.status && (t.status = e.status)
             }
 
-            function u(t, e) {
+            function l(t, e) {
                 let n = {};
                 e ? n = {
                     status: e
@@ -3427,35 +3391,33 @@ Url: ${l(t)}`), !0)
             }
         },
         154405: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 _: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(442853),
                 i = n(28434);
 
-            function s(t, e, n) {
-                let s = e.getOptions(),
+            function a(t, e, n) {
+                let a = e.getOptions(),
                     {
-                        publicKey: a
+                        publicKey: s
                     } = e.getDsn() || {},
                     {
                         segment: o
                     } = n && n.getUser() || {},
-                    u = (0, r.Jr)({
-                        environment: s.environment || i.J,
-                        release: s.release,
+                    l = (0, r.Jr)({
+                        environment: a.environment || i.J,
+                        release: a.release,
                         user_segment: o,
-                        public_key: a,
+                        public_key: s,
                         trace_id: t
                     });
-                return e.emit && e.emit("createDsc", u), u
+                return e.emit && e.emit("createDsc", l), l
             }
         },
         750513: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 e: function() {
                     return o
@@ -3463,24 +3425,23 @@ Url: ${l(t)}`), !0)
             });
             var r = n(793884),
                 i = n(529866),
-                s = n(147816);
-            let a = !1;
+                a = n(147816);
+            let s = !1;
 
             function o() {
-                if (!a) a = !0, (0, r.oq)("error", u), (0, r.oq)("unhandledrejection", u)
+                if (!s) s = !0, (0, r.oq)("error", l), (0, r.oq)("unhandledrejection", l)
             }
 
-            function u() {
-                let t = (0, s.x1)();
+            function l() {
+                let t = (0, a.x1)();
                 if (t) {
                     let e = "internal_error";
                     ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`[Tracing] Transaction: ${e} -> Global error occured`), t.setStatus(e)
                 }
             }
-            u.tag = "sentry_tracingErrorCallback"
+            l.tag = "sentry_tracingErrorCallback"
         },
         90668: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 T: function() {
                     return f
@@ -3491,11 +3452,11 @@ Url: ${l(t)}`), !0)
             });
             var r = n(529866),
                 i = n(46834),
-                s = n(876122),
-                a = n(633401),
+                a = n(876122),
+                s = n(633401),
                 o = n(750513),
-                u = n(376097),
-                l = n(912033);
+                l = n(376097),
+                u = n(912033);
 
             function c() {
                 let t = this.getScope().getSpan();
@@ -3505,28 +3466,28 @@ Url: ${l(t)}`), !0)
             }
 
             function d(t, e, n) {
-                let s;
-                return (0, a.z)(e) ? void 0 !== t.sampled ? (t.setMetadata({
+                let a;
+                return (0, s.z)(e) ? void 0 !== t.sampled ? (t.setMetadata({
                     sampleRate: Number(t.sampled)
-                }), t) : ("function" == typeof e.tracesSampler ? (s = e.tracesSampler(n), t.setMetadata({
-                    sampleRate: Number(s)
-                })) : void 0 !== n.parentSampled ? s = n.parentSampled : void 0 !== e.tracesSampleRate ? (s = e.tracesSampleRate, t.setMetadata({
-                    sampleRate: Number(s)
-                })) : (s = 1, t.setMetadata({
-                    sampleRate: s
+                }), t) : ("function" == typeof e.tracesSampler ? (a = e.tracesSampler(n), t.setMetadata({
+                    sampleRate: Number(a)
+                })) : void 0 !== n.parentSampled ? a = n.parentSampled : void 0 !== e.tracesSampleRate ? (a = e.tracesSampleRate, t.setMetadata({
+                    sampleRate: Number(a)
+                })) : (a = 1, t.setMetadata({
+                    sampleRate: a
                 })), ! function(t) {
                     return (0, i.i2)(t) || !("number" == typeof t || "boolean" == typeof t) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn(`[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got ${JSON.stringify(t)} of type ${JSON.stringify(typeof t)}.`), !1) : !(t < 0) && !(t > 1) || (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn(`[Tracing] Given sample rate is invalid. Sample rate must be between 0 and 1. Got ${t}.`), !1)
-                }(s)) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn("[Tracing] Discarding transaction because of invalid sample rate."), t.sampled = !1, t) : s ? (t.sampled = Math.random() < s, t.sampled) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] starting ${t.op} transaction - ${t.name}`), t) : (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = ${Number(s)})`), t) : (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] Discarding transaction because ${"function"==typeof e.tracesSampler?"tracesSampler returned 0 or false":"a negative sampling decision was inherited or tracesSampleRate is set to 0"}`), t.sampled = !1, t) : (t.sampled = !1, t)
+                }(a)) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn("[Tracing] Discarding transaction because of invalid sample rate."), t.sampled = !1, t) : a ? (t.sampled = Math.random() < a, t.sampled) ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] starting ${t.op} transaction - ${t.name}`), t) : (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = ${Number(a)})`), t) : (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] Discarding transaction because ${"function"==typeof e.tracesSampler?"tracesSampler returned 0 or false":"a negative sampling decision was inherited or tracesSampleRate is set to 0"}`), t.sampled = !1, t) : (t.sampled = !1, t)
             }
 
             function h(t, e) {
                 let n = this.getClient(),
                     i = n && n.getOptions() || {},
-                    s = i.instrumenter || "sentry",
-                    a = t.instrumenter || "sentry";
-                s !== a && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.error(`A transaction was started with instrumenter=\`${a}\`, but the SDK is configured with the \`${s}\` instrumenter.
-The transaction will not be sampled. Please use the ${s} instrumentation to start transactions.`), t.sampled = !1);
-                let o = new l.Y(t, this);
+                    a = i.instrumenter || "sentry",
+                    s = t.instrumenter || "sentry";
+                a !== s && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.error(`A transaction was started with instrumenter=\`${s}\`, but the SDK is configured with the \`${a}\` instrumenter.
+The transaction will not be sampled. Please use the ${a} instrumentation to start transactions.`), t.sampled = !1);
+                let o = new u.Y(t, this);
                 return (o = d(o, i, {
                     parentSampled: t.parentSampled,
                     transactionContext: t,
@@ -3534,24 +3495,23 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 })).sampled && o.initSpanRecorder(i._experiments && i._experiments.maxSpans), n && n.emit && n.emit("startTransaction", o), o
             }
 
-            function _(t, e, n, r, i, s, a) {
+            function _(t, e, n, r, i, a, s) {
                 let o = t.getClient(),
-                    l = o && o.getOptions() || {},
-                    c = new u.io(e, t, n, r, a, i);
-                return (c = d(c, l, {
+                    u = o && o.getOptions() || {},
+                    c = new l.io(e, t, n, r, s, i);
+                return (c = d(c, u, {
                     parentSampled: e.parentSampled,
                     transactionContext: e,
-                    ...s
-                })).sampled && c.initSpanRecorder(l._experiments && l._experiments.maxSpans), o && o.emit && o.emit("startTransaction", c), c
+                    ...a
+                })).sampled && c.initSpanRecorder(u._experiments && u._experiments.maxSpans), o && o.emit && o.emit("startTransaction", c), c
             }
 
             function f() {
-                let t = (0, s.cu)();
+                let t = (0, a.cu)();
                 if (!!t.__SENTRY__) t.__SENTRY__.extensions = t.__SENTRY__.extensions || {}, !t.__SENTRY__.extensions.startTransaction && (t.__SENTRY__.extensions.startTransaction = h), !t.__SENTRY__.extensions.traceHeaders && (t.__SENTRY__.extensions.traceHeaders = c), (0, o.e)()
             }
         },
         376097: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 AT: function() {
                     return o
@@ -3562,15 +3522,15 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             });
             var r = n(868145),
                 i = n(529866),
-                s = n(48950),
-                a = n(912033);
+                a = n(48950),
+                s = n(912033);
             let o = {
                     idleTimeout: 1e3,
                     finalTimeout: 3e4,
                     heartbeatInterval: 5e3
                 },
-                u = ["heartbeatFailed", "idleTimeout", "documentHidden", "finalTimeout", "externalFinish", "cancelled"];
-            class l extends s.gB {
+                l = ["heartbeatFailed", "idleTimeout", "documentHidden", "finalTimeout", "externalFinish", "cancelled"];
+            class u extends a.gB {
                 constructor(t, e, n, r) {
                     super(r), this._pushActivity = t, this._popActivity = e, this.transactionSpanId = n
                 }
@@ -3580,7 +3540,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     }, void 0 === t.endTimestamp && this._pushActivity(t.spanId)), super.add(t)
                 }
             }
-            class c extends a.Y {
+            class c extends s.Y {
                 __init() {
                     this.activities = {}
                 }
@@ -3599,8 +3559,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 __init6() {
                     this._finishReason = "externalFinish"
                 }
-                constructor(t, e, n = o.idleTimeout, r = o.finalTimeout, s = o.heartbeatInterval, a = !1) {
-                    super(t, e), this._idleHub = e, this._idleTimeout = n, this._finalTimeout = r, this._heartbeatInterval = s, this._onScope = a, c.prototype.__init.call(this), c.prototype.__init2.call(this), c.prototype.__init3.call(this), c.prototype.__init4.call(this), c.prototype.__init5.call(this), c.prototype.__init6.call(this), a && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`Setting idle transaction on scope. Span ID: ${this.spanId}`), e.configureScope(t => t.setSpan(this))), this._restartIdleTimeout(), setTimeout(() => {
+                constructor(t, e, n = o.idleTimeout, r = o.finalTimeout, a = o.heartbeatInterval, s = !1) {
+                    super(t, e), this._idleHub = e, this._idleTimeout = n, this._finalTimeout = r, this._heartbeatInterval = a, this._onScope = s, c.prototype.__init.call(this), c.prototype.__init2.call(this), c.prototype.__init3.call(this), c.prototype.__init4.call(this), c.prototype.__init5.call(this), c.prototype.__init6.call(this), s && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`Setting idle transaction on scope. Span ID: ${this.spanId}`), e.configureScope(t => t.setSpan(this))), this._restartIdleTimeout(), setTimeout(() => {
                         !this._finished && (this.setStatus("deadline_exceeded"), this._finishReason = "finalTimeout", this.finish())
                     }, this._finalTimeout)
                 }
@@ -3624,7 +3584,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     this._beforeFinishCallbacks.push(t)
                 }
                 initSpanRecorder(t) {
-                    !this.spanRecorder && (this.spanRecorder = new l(t => {
+                    !this.spanRecorder && (this.spanRecorder = new u(t => {
                         if (!this._finished) this._pushActivity(t)
                     }, t => {
                         if (!this._finished) this._popActivity(t)
@@ -3669,35 +3629,34 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }
         },
         48950: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Dr: function() {
-                    return l
+                    return u
                 },
                 Zd: function() {
                     return c
                 },
                 gB: function() {
-                    return u
+                    return l
                 }
             });
             var r = n(862315),
                 i = n(868145),
-                s = n(529866),
-                a = n(874230),
+                a = n(529866),
+                s = n(874230),
                 o = n(442853);
-            class u {
+            class l {
                 __init() {
                     this.spans = []
                 }
                 constructor(t = 1e3) {
-                    u.prototype.__init.call(this), this._maxlen = t
+                    l.prototype.__init.call(this), this._maxlen = t
                 }
                 add(t) {
                     this.spans.length > this._maxlen ? t.spanRecorder = void 0 : this.spans.push(t)
                 }
             }
-            class l {
+            class u {
                 __init2() {
                     this.traceId = (0, r.DM)()
                 }
@@ -3717,11 +3676,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     this.instrumenter = "sentry"
                 }
                 constructor(t) {
-                    if (l.prototype.__init2.call(this), l.prototype.__init3.call(this), l.prototype.__init4.call(this), l.prototype.__init5.call(this), l.prototype.__init6.call(this), l.prototype.__init7.call(this), !t) return this;
+                    if (u.prototype.__init2.call(this), u.prototype.__init3.call(this), u.prototype.__init4.call(this), u.prototype.__init5.call(this), u.prototype.__init6.call(this), u.prototype.__init7.call(this), !t) return this;
                     t.traceId && (this.traceId = t.traceId), t.spanId && (this.spanId = t.spanId), t.parentSpanId && (this.parentSpanId = t.parentSpanId), "sampled" in t && (this.sampled = t.sampled), t.op && (this.op = t.op), t.description && (this.description = t.description), t.data && (this.data = t.data), t.tags && (this.tags = t.tags), t.status && (this.status = t.status), t.startTimestamp && (this.startTimestamp = t.startTimestamp), t.endTimestamp && (this.endTimestamp = t.endTimestamp), t.instrumenter && (this.instrumenter = t.instrumenter)
                 }
                 startChild(t) {
-                    let e = new l({
+                    let e = new u({
                         ...t,
                         parentSpanId: this.spanId,
                         sampled: this.sampled,
@@ -3731,10 +3690,10 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         let n = t && t.op || "< unknown op >",
                             r = e.transaction.name || "< unknown name >",
                             i = e.transaction.spanId,
-                            a = `[Tracing] Starting '${n}' span on transaction '${r}' (${i}).`;
+                            s = `[Tracing] Starting '${n}' span on transaction '${r}' (${i}).`;
                         e.transaction.metadata.spanMetadata[e.spanId] = {
-                            logMessage: a
-                        }, s.kg.log(a)
+                            logMessage: s
+                        }, a.kg.log(s)
                     }
                     return e
                 }
@@ -3766,12 +3725,12 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         let {
                             logMessage: t
                         } = this.transaction.metadata.spanMetadata[this.spanId];
-                        t && s.kg.log(t.replace("Starting", "Finishing"))
+                        t && a.kg.log(t.replace("Starting", "Finishing"))
                     }
                     this.endTimestamp = "number" == typeof t ? t : (0, i.ph)()
                 }
                 toTraceparent() {
-                    return (0, a.$p)(this.traceId, this.spanId, this.sampled)
+                    return (0, s.$p)(this.traceId, this.spanId, this.sampled)
                 }
                 toContext() {
                     return (0, o.Jr)({
@@ -3851,58 +3810,56 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }
         },
         468174: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 g: function() {
-                    return a
+                    return s
                 }
             });
             var r = n(46834),
                 i = n(876122),
-                s = n(633401);
+                a = n(633401);
 
-            function a(t, e, n = () => {}) {
-                let a;
+            function s(t, e, n = () => {}) {
+                let s;
                 let o = {
                     ...t
                 };
                 void 0 !== o.name && void 0 === o.description && (o.description = o.name);
-                let u = (0, i.Gd)(),
-                    l = u.getScope(),
-                    c = l.getSpan(),
+                let l = (0, i.Gd)(),
+                    u = l.getScope(),
+                    c = u.getSpan(),
                     d = function() {
-                        if (!!(0, s.z)()) return c ? c.startChild(o) : u.startTransaction(o)
+                        if (!!(0, a.z)()) return c ? c.startChild(o) : l.startTransaction(o)
                     }();
 
                 function h() {
-                    d && d.finish(), u.getScope().setSpan(c)
+                    d && d.finish(), l.getScope().setSpan(c)
                 }
-                l.setSpan(d);
+                u.setSpan(d);
                 try {
-                    a = e(d)
+                    s = e(d)
                 } catch (t) {
                     throw d && d.setStatus("internal_error"), n(t), h(), t
                 }
-                return (0, r.J8)(a) ? Promise.resolve(a).then(() => {
+                return (0, r.J8)(s) ? Promise.resolve(s).then(() => {
                     h()
                 }, t => {
                     d && d.setStatus("internal_error"), n(t), h()
-                }) : h(), a
+                }) : h(), s
             }
         },
         912033: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Y: function() {
-                    return u
+                    return l
                 }
             });
             var r = n(529866),
                 i = n(442853),
-                s = n(876122),
-                a = n(154405),
+                a = n(876122),
+                s = n(154405),
                 o = n(48950);
-            class u extends o.Dr {
+            class l extends o.Dr {
                 __init() {
                     this._measurements = {}
                 }
@@ -3913,7 +3870,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     this._frozenDynamicSamplingContext = void 0
                 }
                 constructor(t, e) {
-                    super(t), u.prototype.__init.call(this), u.prototype.__init2.call(this), u.prototype.__init3.call(this), this._hub = e || (0, s.Gd)(), this._name = t.name || "", this.metadata = {
+                    super(t), l.prototype.__init.call(this), l.prototype.__init2.call(this), l.prototype.__init3.call(this), this._hub = e || (0, a.Gd)(), this._name = t.name || "", this.metadata = {
                         source: "custom",
                         ...t.metadata,
                         spanMetadata: {}
@@ -3961,7 +3918,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     let n = this.spanRecorder ? this.spanRecorder.spans.filter(t => t !== this && t.endTimestamp) : [];
                     this._trimEnd && n.length > 0 && (this.endTimestamp = n.reduce((t, e) => t.endTimestamp && e.endTimestamp ? t.endTimestamp > e.endTimestamp ? t : e : t).endTimestamp);
                     let i = this.metadata,
-                        s = {
+                        a = {
                             contexts: {
                                 ...this._contexts,
                                 trace: this.getTraceContext()
@@ -3982,7 +3939,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 }
                             }
                         };
-                    return Object.keys(this._measurements).length > 0 && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log("[Measurements] Adding measurements to transaction", JSON.stringify(this._measurements, void 0, 2)), s.measurements = this._measurements), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] Finishing ${this.op} transaction: ${this.name}.`), this._hub.captureEvent(s)
+                    return Object.keys(this._measurements).length > 0 && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log("[Measurements] Adding measurements to transaction", JSON.stringify(this._measurements, void 0, 2)), a.measurements = this._measurements), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] Finishing ${this.op} transaction: ${this.name}.`), this._hub.captureEvent(a)
                 }
                 toContext() {
                     let t = super.toContext();
@@ -3997,11 +3954,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 }
                 getDynamicSamplingContext() {
                     if (this._frozenDynamicSamplingContext) return this._frozenDynamicSamplingContext;
-                    let t = this._hub || (0, s.Gd)(),
+                    let t = this._hub || (0, a.Gd)(),
                         e = t.getClient();
                     if (!e) return {};
                     let n = t.getScope(),
-                        r = (0, a._)(this.traceId, e, n),
+                        r = (0, s._)(this.traceId, e, n),
                         i = this.metadata.sampleRate;
                     void 0 !== i && (r.sample_rate = `${i}`);
                     let o = this.metadata.source;
@@ -4013,7 +3970,6 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }
         },
         147816: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 x1: function() {
                     return i
@@ -4026,44 +3982,43 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }
         },
         347421: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 q: function() {
-                    return l
+                    return u
                 }
             });
             var r = n(765497),
                 i = n(50074),
-                s = n(128603),
-                a = n(880803),
+                a = n(128603),
+                s = n(880803),
                 o = n(529866),
-                u = n(303155);
+                l = n(303155);
 
-            function l(t, e, n = (0, r.x)(t.bufferSize || 30)) {
-                let l = {};
+            function u(t, e, n = (0, r.x)(t.bufferSize || 30)) {
+                let u = {};
 
                 function d(r) {
                     let d = [];
                     if ((0, i.gv)(r, (e, n) => {
                             let r = (0, i.mL)(n);
-                            if ((0, s.Q)(l, r)) {
+                            if ((0, a.Q)(u, r)) {
                                 let i = c(e, n);
                                 t.recordDroppedEvent("ratelimit_backoff", r, i)
                             } else d.push(e)
-                        }), 0 === d.length) return (0, a.WD)();
+                        }), 0 === d.length) return (0, s.WD)();
                     let h = (0, i.Jd)(r[0], d),
                         _ = e => {
                             (0, i.gv)(h, (n, r) => {
-                                let s = c(n, r);
-                                t.recordDroppedEvent(e, (0, i.mL)(r), s)
+                                let a = c(n, r);
+                                t.recordDroppedEvent(e, (0, i.mL)(r), a)
                             })
                         };
                     return n.add(() => e({
                         body: (0, i.V$)(h, t.textEncoder)
-                    }).then(t => (void 0 !== t.statusCode && (t.statusCode < 200 || t.statusCode >= 300) && ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.warn(`Sentry responded with status code ${t.statusCode} to sent event.`), l = (0, s.WG)(l, t), t), t => {
+                    }).then(t => (void 0 !== t.statusCode && (t.statusCode < 200 || t.statusCode >= 300) && ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.warn(`Sentry responded with status code ${t.statusCode} to sent event.`), u = (0, a.WG)(u, t), t), t => {
                         throw _("network_error"), t
                     })).then(t => t, t => {
-                        if (t instanceof u.b) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.error("Skipped sending event because buffer is full."), _("queue_overflow"), (0, a.WD)();
+                        if (t instanceof l.b) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.error("Skipped sending event because buffer is full."), _("queue_overflow"), (0, s.WD)();
                         throw t
                     })
                 }
@@ -4078,7 +4033,6 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }
         },
         449701: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 W: function() {
                     return o
@@ -4086,9 +4040,9 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             });
             var r = n(50074),
                 i = n(177668),
-                s = n(507506);
+                a = n(507506);
 
-            function a(t, e) {
+            function s(t, e) {
                 let n;
                 return (0, r.gv)(t, (t, r) => (e.includes(r) && (n = Array.isArray(t) ? t[1] : void 0), !!n)), n
             }
@@ -4098,18 +4052,18 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     let r = t(n),
                         o = {};
 
-                    function u(e, r) {
-                        let u = r ? `${e}:${r}` : e;
-                        if (!o[u]) {
-                            var l, c;
+                    function l(e, r) {
+                        let l = r ? `${e}:${r}` : e;
+                        if (!o[l]) {
+                            var u, c;
                             let d = (0, i.U4)(e);
                             if (!d) return;
-                            let h = (0, s.U)(d);
-                            o[u] = r ? (l = t, c = r, t => {
-                                let e = l(t);
+                            let h = (0, a.U)(d);
+                            o[l] = r ? (u = t, c = r, t => {
+                                let e = u(t);
                                 return {
                                     send: async t => {
-                                        let n = a(t, ["event", "transaction", "profile", "replay_event"]);
+                                        let n = s(t, ["event", "transaction", "profile", "replay_event"]);
                                         return n && (n.release = c), e.send(t)
                                     },
                                     flush: t => e.flush(t)
@@ -4122,16 +4076,16 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 url: h
                             })
                         }
-                        return o[u]
+                        return o[l]
                     }
                     return {
                         send: async function t(t) {
                             let n = e({
                                 envelope: t,
                                 getEvent: function(e) {
-                                    return a(t, e && e.length ? e : ["event"])
+                                    return s(t, e && e.length ? e : ["event"])
                                 }
-                            }).map(t => "string" == typeof t ? u(t, void 0) : u(t.dsn, t.release)).filter(t => !!t);
+                            }).map(t => "string" == typeof t ? l(t, void 0) : l(t.dsn, t.release)).filter(t => !!t);
                             return 0 === n.length && n.push(r), (await Promise.all(n.map(e => e.send(t))))[0]
                         },
                         flush: async function t(t) {
@@ -4143,7 +4097,6 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }
         },
         499833: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Pd: function() {
                     return o
@@ -4151,9 +4104,9 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             });
             var r = n(529866),
                 i = n(50074),
-                s = n(128603);
+                a = n(128603);
 
-            function a(t, e) {
+            function s(t, e) {
                 ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.info(`[Offline]: ${t}`, e)
             }
 
@@ -4162,33 +4115,33 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     let n;
                     let r = t(e),
                         o = e.createStore ? e.createStore(e) : void 0,
-                        u = 5e3;
+                        l = 5e3;
 
-                    function l(t) {
+                    function u(t) {
                         if (!!o) n && clearTimeout(n), "number" != typeof(n = setTimeout(async () => {
                             n = void 0;
                             let t = await o.pop();
-                            t && (a("Attempting to send previously queued event"), d(t).catch(t => {
-                                a("Failed to retry sending", t)
+                            t && (s("Attempting to send previously queued event"), d(t).catch(t => {
+                                s("Failed to retry sending", t)
                             }))
                         }, t)) && n.unref && n.unref()
                     }
 
                     function c() {
-                        if (!n) l(u), u = Math.min(2 * u, 36e5)
+                        if (!n) u(l), l = Math.min(2 * l, 36e5)
                     }
                     async function d(t) {
                         try {
                             let e = await r.send(t),
                                 n = 100;
                             if (e) {
-                                if (e.headers && e.headers["retry-after"]) n = (0, s.JY)(e.headers["retry-after"]);
+                                if (e.headers && e.headers["retry-after"]) n = (0, a.JY)(e.headers["retry-after"]);
                                 else if ((e.statusCode || 0) >= 400) return e
                             }
-                            return l(n), u = 5e3, e
+                            return u(n), l = 5e3, e
                         } catch (r) {
                             var n, d, h;
-                            if (o && await (n = t, d = r, h = u, !(0, i.R)(n, ["replay_event", "replay_recording", "client_report"]) && (!e.shouldStore || e.shouldStore(n, d, h)))) return await o.insert(t), c(), a("Error sending. Event queued", r), {};
+                            if (o && await (n = t, d = r, h = l, !(0, i.R)(n, ["replay_event", "replay_recording", "client_report"]) && (!e.shouldStore || e.shouldStore(n, d, h)))) return await o.insert(t), c(), s("Error sending. Event queued", r), {};
                             throw r
                         }
                     }
@@ -4200,7 +4153,6 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }
         },
         633401: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 z: function() {
                     return i
@@ -4216,7 +4168,6 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }
         },
         392405: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 R: function() {
                     return d
@@ -4224,11 +4175,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             });
             var r = n(862315),
                 i = n(868145),
-                s = n(880803),
-                a = n(336344),
+                a = n(880803),
+                s = n(336344),
                 o = n(24716),
-                u = n(10674),
-                l = n(28434),
+                l = n(10674),
+                u = n(28434),
                 c = n(703498);
 
             function d(t, e, n, d) {
@@ -4245,13 +4196,13 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         environment: n,
                         release: r,
                         dist: i,
-                        maxValueLength: s = 250
+                        maxValueLength: a = 250
                     } = e;
-                    !("environment" in t) && (t.environment = "environment" in e ? n : l.J), void 0 === t.release && void 0 !== r && (t.release = r), void 0 === t.dist && void 0 !== i && (t.dist = i), t.message && (t.message = (0, a.$G)(t.message, s));
+                    !("environment" in t) && (t.environment = "environment" in e ? n : u.J), void 0 === t.release && void 0 !== r && (t.release = r), void 0 === t.dist && void 0 !== i && (t.dist = i), t.message && (t.message = (0, s.$G)(t.message, a));
                     let o = t.exception && t.exception.values && t.exception.values[0];
-                    o && o.value && (o.value = (0, a.$G)(o.value, s));
-                    let u = t.request;
-                    u && u.url && (u.url = (0, a.$G)(u.url, s))
+                    o && o.value && (o.value = (0, s.$G)(o.value, a));
+                    let l = t.request;
+                    l && l.url && (l.url = (0, s.$G)(l.url, a))
                 })(p, t),
                 function(t, e) {
                     e.length > 0 && (t.sdk = t.sdk || {}, t.sdk.integrations = [...t.sdk.integrations || [], ...e])
@@ -4261,12 +4212,12 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     if (!r) return;
                     let i = h.get(e);
                     i ? n = i : (n = new Map, h.set(e, n));
-                    let s = Object.keys(r).reduce((t, i) => {
-                        let s;
-                        let a = n.get(i);
-                        a ? s = a : (s = e(i), n.set(i, s));
-                        for (let e = s.length - 1; e >= 0; e--) {
-                            let n = s[e];
+                    let a = Object.keys(r).reduce((t, i) => {
+                        let a;
+                        let s = n.get(i);
+                        s ? a = s : (a = e(i), n.set(i, a));
+                        for (let e = a.length - 1; e >= 0; e--) {
+                            let n = a[e];
                             if (n.filename) {
                                 t[n.filename] = r[i];
                                 break
@@ -4277,14 +4228,14 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     try {
                         t.exception.values.forEach(t => {
                             t.stacktrace.frames.forEach(t => {
-                                t.filename && (t.debug_id = s[t.filename])
+                                t.filename && (t.debug_id = a[t.filename])
                             })
                         })
                     } catch (t) {}
                 }(p, t.stackParser);
                 let g = d;
                 n.captureContext && (g = c.s.clone(g).update(n.captureContext));
-                let y = (0, s.WD)(p);
+                let y = (0, a.WD)(p);
                 if (g) {
                     if (g.getAttachments) {
                         let t = [...n.attachments || [], ...g.getAttachments()];
@@ -4319,27 +4270,26 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             breadcrumbs: t.breadcrumbs.map(t => ({
                                 ...t,
                                 ...t.data && {
-                                    data: (0, u.Fv)(t.data, e, n)
+                                    data: (0, l.Fv)(t.data, e, n)
                                 }
                             }))
                         },
                         ...t.user && {
-                            user: (0, u.Fv)(t.user, e, n)
+                            user: (0, l.Fv)(t.user, e, n)
                         },
                         ...t.contexts && {
-                            contexts: (0, u.Fv)(t.contexts, e, n)
+                            contexts: (0, l.Fv)(t.contexts, e, n)
                         },
                         ...t.extra && {
-                            extra: (0, u.Fv)(t.extra, e, n)
+                            extra: (0, l.Fv)(t.extra, e, n)
                         }
                     };
-                    return t.contexts && t.contexts.trace && r.contexts && (r.contexts.trace = t.contexts.trace, t.contexts.trace.data && (r.contexts.trace.data = (0, u.Fv)(t.contexts.trace.data, e, n))), t.spans && (r.spans = t.spans.map(t => (t.data && (t.data = (0, u.Fv)(t.data, e, n)), t))), r
+                    return t.contexts && t.contexts.trace && r.contexts && (r.contexts.trace = t.contexts.trace, t.contexts.trace.data && (r.contexts.trace.data = (0, l.Fv)(t.contexts.trace.data, e, n))), t.spans && (r.spans = t.spans.map(t => (t.data && (t.data = (0, l.Fv)(t.data, e, n)), t))), r
                 }(t, _, f) : t)
             }
             let h = new WeakMap
         },
         139782: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 J: function() {
                     return r
@@ -4348,14 +4298,13 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             let r = "7.60.1"
         },
         438142: function(t, e, n) {
-            "use strict";
-            let r, i, s, a, o;
+            let r, i, a, s, o;
             n.d(e, {
                 U: function() {
                     return nn
                 }
             });
-            var u, l, c, d, h, _, f, p, m, g, y, v, b, E, S, w, k = n(876122),
+            var l, u, c, d, h, _, f, p, m, g, y, v, b, E, S, w, k = n(876122),
                 T = n(703498),
                 R = n(392405),
                 x = n(138122),
@@ -4374,7 +4323,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             let z = D.n2,
                 $ = "sentryReplaySession",
                 P = "Unable to send Replay";
-            (u = m || (m = {}))[u.Document = 0] = "Document", u[u.DocumentType = 1] = "DocumentType", u[u.Element = 2] = "Element", u[u.Text = 3] = "Text", u[u.CDATA = 4] = "CDATA", u[u.Comment = 5] = "Comment";
+            (l = m || (m = {}))[l.Document = 0] = "Document", l[l.DocumentType = 1] = "DocumentType", l[l.Element = 2] = "Element", l[l.Text = 3] = "Text", l[l.CDATA = 4] = "CDATA", l[l.Comment = 5] = "Comment";
 
             function F(t) {
                 let e = null == t ? void 0 : t.host;
@@ -4397,16 +4346,16 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 unmaskInputSelector: n,
                 maskInputOptions: r,
                 tagName: i,
-                type: s,
-                value: a,
+                type: a,
+                value: s,
                 maskInputFn: o
             }) {
-                let u = a || "";
-                return n && t.matches(n) ? u : (t.hasAttribute("data-rr-is-password") && (s = "password"), (j({
+                let l = s || "";
+                return n && t.matches(n) ? l : (t.hasAttribute("data-rr-is-password") && (a = "password"), (j({
                     maskInputOptions: r,
                     tagName: i,
-                    type: s
-                }) || e && t.matches(e)) && (u = o ? o(u) : "*".repeat(u.length)), u)
+                    type: a
+                }) || e && t.matches(e)) && (l = o ? o(l) : "*".repeat(l.length)), l)
             }
             let q = "__rrweb_original__";
 
@@ -4452,26 +4401,26 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 tr = /^(data:)([^,]*),(.*)/i;
 
             function ti(t, e) {
-                return (t || "").replace(te, (t, n, r, i, s, a) => {
-                    let o = r || s || a,
-                        u = n || i || "";
+                return (t || "").replace(te, (t, n, r, i, a, s) => {
+                    let o = r || a || s,
+                        l = n || i || "";
                     if (!o) return t;
-                    if (!tn.test(o) || tr.test(o)) return `url(${u}${o}${u})`;
+                    if (!tn.test(o) || tr.test(o)) return `url(${l}${o}${l})`;
                     if ("/" === o[0]) {
-                        var l;
+                        var u;
                         let t;
-                        return `url(${u}${t="",(t=(t=(l=e).indexOf("//")>-1?l.split("/").slice(0,3).join("/"):l.split("/")[0]).split("?")[0])+o}${u})`
+                        return `url(${l}${t="",(t=(t=(u=e).indexOf("//")>-1?u.split("/").slice(0,3).join("/"):u.split("/")[0]).split("?")[0])+o}${l})`
                     }
                     let c = e.split("/"),
                         d = o.split("/");
                     for (let t of (c.pop(), d)) {
                         if ("." !== t) ".." === t ? c.pop() : c.push(t)
                     }
-                    return `url(${u}${c.join("/")}${u})`
+                    return `url(${l}${c.join("/")}${l})`
                 })
             }
-            let ts = /^[^ \t\n\r\u000c]+/,
-                ta = /^[, \t\n\r\u000c]+/;
+            let ta = /^[^ \t\n\r\u000c]+/,
+                ts = /^[, \t\n\r\u000c]+/;
 
             function to(t, e) {
                 if (!e || "" === e.trim()) return e;
@@ -4479,19 +4428,19 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 return n.href = e, n.href
             }
 
-            function tu() {
+            function tl() {
                 let t = document.createElement("a");
                 return t.href = "", t.href
             }
 
-            function tl(t, e, n, r, i, s, a, o) {
+            function tu(t, e, n, r, i, a, s, o) {
                 if (!i) return i;
-                let u = r.toLowerCase(),
-                    l = n.toLowerCase();
-                if ("src" === u || "href" === u) return to(t, i);
-                if ("xlink:href" === u && "#" !== i[0]) return to(t, i);
-                if ("background" === u && ("table" === l || "td" === l || "th" === l)) return to(t, i);
-                else if ("srcset" === u) return function(t, e) {
+                let l = r.toLowerCase(),
+                    u = n.toLowerCase();
+                if ("src" === l || "href" === l) return to(t, i);
+                if ("xlink:href" === l && "#" !== i[0]) return to(t, i);
+                if ("background" === l && ("table" === u || "td" === u || "th" === u)) return to(t, i);
+                else if ("srcset" === l) return function(t, e) {
                     if ("" === e.trim()) return e;
                     let n = 0;
 
@@ -4501,27 +4450,27 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         return i ? (r = i[0], n += r.length, r) : ""
                     }
                     let i = [];
-                    for (; r(ta), !(n >= e.length);) {
+                    for (; r(ts), !(n >= e.length);) {
                         ;
-                        let s = r(ts);
-                        if ("," === s.slice(-1)) s = to(t, s.substring(0, s.length - 1)), i.push(s);
+                        let a = r(ta);
+                        if ("," === a.slice(-1)) a = to(t, a.substring(0, a.length - 1)), i.push(a);
                         else {
                             let r = "";
-                            s = to(t, s);
-                            let a = !1;
+                            a = to(t, a);
+                            let s = !1;
                             for (;;) {
                                 let t = e.charAt(n);
                                 if ("" === t) {
-                                    i.push((s + r).trim());
+                                    i.push((a + r).trim());
                                     break
                                 }
-                                if (a) ")" === t && (a = !1);
+                                if (s) ")" === t && (s = !1);
                                 else {
                                     if ("," === t) {
-                                        n += 1, i.push((s + r).trim());
+                                        n += 1, i.push((a + r).trim());
                                         break
                                     }
-                                    "(" === t && (a = !0)
+                                    "(" === t && (s = !0)
                                 }
                                 r += t, n += 1
                             }
@@ -4529,11 +4478,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     }
                     return i.join(", ")
                 }(t, i);
-                else if ("style" === u) return ti(i, tu());
-                else if ("object" === l && "data" === u) return to(t, i);
-                else if (s && function(t, e, n, r) {
+                else if ("style" === l) return ti(i, tl());
+                else if ("object" === u && "data" === l) return to(t, i);
+                else if (a && function(t, e, n, r) {
                         return !(r && t.matches(r)) && (["placeholder", "title", "aria-label"].indexOf(e) > -1 || "input" === n && "value" === e && t.hasAttribute("type") && ["submit", "button"].indexOf(t.getAttribute("type").toLowerCase()) > -1)
-                    }(e, u, l, a)) return o ? o(i) : K(i);
+                    }(e, l, u, s)) return o ? o(i) : K(i);
                 return i
             }
 
@@ -4559,11 +4508,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             function th(t, e) {
                 let n;
                 let {
-                    doc: s,
-                    map: a,
+                    doc: a,
+                    map: s,
                     blockClass: o,
-                    blockSelector: u,
-                    unblockSelector: l,
+                    blockSelector: l,
+                    unblockSelector: u,
                     maskTextClass: c,
                     maskTextSelector: d,
                     unmaskTextSelector: h,
@@ -4586,11 +4535,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 } = e, {
                     preserveWhiteSpace: C = !0
                 } = e, U = function(t, e) {
-                    var n, s, a;
+                    var n, a, s;
                     let o;
                     let {
-                        doc: u,
-                        blockClass: l,
+                        doc: l,
+                        blockClass: u,
                         blockSelector: c,
                         unblockSelector: d,
                         maskTextClass: h,
@@ -4608,8 +4557,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         recordCanvas: T,
                         keepIframeSrcFn: R
                     } = e;
-                    if (u.__sn) {
-                        let t = u.__sn.id;
+                    if (l.__sn) {
+                        let t = l.__sn.id;
                         o = 1 === t ? void 0 : t
                     }
                     switch (t.nodeType) {
@@ -4639,7 +4588,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                             if (e.test(r)) return !0
                                         }
                                     return !!n && t.matches(n)
-                                }(t, l, c, d),
+                                }(t, u, c, d),
                                 D = function(t) {
                                     if (t instanceof HTMLFormElement) return "form";
                                     let e = t.tagName.toLowerCase().trim();
@@ -4652,15 +4601,15 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 }
                                 of Array.from(t.attributes)) ! function(t, e, n) {
                                 return ("video" === t || "audio" === t) && "autoplay" === e
-                            }(D, e) && (N[e] = tl(u, t, D, e, n, v, f, E));
+                            }(D, e) && (N[e] = tu(l, t, D, e, n, v, f, E));
                             if ("link" === D && p) {
-                                let e = Array.from(u.styleSheets).find(e => e.href === t.href),
+                                let e = Array.from(l.styleSheets).find(e => e.href === t.href),
                                     n = null;
                                 e && (n = X(e)), n && (delete N.rel, delete N.href, N._cssText = ti(n, e.href))
                             }
                             if ("style" === D && t.sheet && !(t.innerText || t.textContent || "").trim().length) {
                                 let e = X(t.sheet);
-                                e && (N._cssText = ti(e, tu()))
+                                e && (N._cssText = ti(e, tl()))
                             }
                             if ("input" === D || "textarea" === D || "select" === D || "option" === D) {
                                 let e = W(t),
@@ -4695,7 +4644,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 }
                             }
                             if ("img" === D && k) {
-                                !r && (i = (r = u.createElement("canvas")).getContext("2d"));
+                                !r && (i = (r = l.createElement("canvas")).getContext("2d"));
                                 let e = t.crossOrigin;
                                 t.crossOrigin = "anonymous";
                                 let n = () => {
@@ -4724,7 +4673,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 tagName: D,
                                 attributes: N,
                                 childNodes: [],
-                                isSVG: !!("svg" === (s = t).tagName || s.ownerSVGElement) || void 0,
+                                isSVG: !!("svg" === (a = t).tagName || a.ownerSVGElement) || void 0,
                                 needBlock: x,
                                 rootId: o
                             };
@@ -4738,12 +4687,12 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                     if (t.nextSibling || t.previousSibling);
                                     else if (null === (n = t.parentNode.sheet) || void 0 === n ? void 0 : n.cssRules) {
                                         ;
-                                        U = (a = t.parentNode.sheet).cssRules ? Array.from(a.cssRules).map(t => t.cssText ? tt(t.cssText) : "").join("") : ""
+                                        U = (s = t.parentNode.sheet).cssRules ? Array.from(s.cssRules).map(t => t.cssText ? tt(t.cssText) : "").join("") : ""
                                     }
                                 } catch (e) {
                                     console.warn(`Cannot get CSS styles from text's parentNode. Error: ${e}`, t)
                                 }
-                                U = ti(U, tu())
+                                U = ti(U, tl())
                             }
                             return A && (U = "SCRIPT_PLACEHOLDER"), "TEXTAREA" === C && U ? U = "" : "OPTION" === C && U ? U = H({
                                 input: t.parentNode,
@@ -4772,10 +4721,10 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             return !1
                     }
                 }(t, {
-                    doc: s,
+                    doc: a,
                     blockClass: o,
-                    blockSelector: u,
-                    unblockSelector: l,
+                    blockSelector: l,
+                    unblockSelector: u,
                     maskTextClass: c,
                     maskTextSelector: d,
                     unmaskTextSelector: h,
@@ -4812,17 +4761,17 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     id: n
                 });
                 if (t.__sn = I, -2 === n) return null;
-                a[n] = t, R && R(t);
+                s[n] = t, R && R(t);
                 let A = !_;
                 if (I.type === m.Element && (A = A && !I.needBlock, delete I.needBlock, t.shadowRoot && (I.isShadowHost = !0)), (I.type === m.Document || I.type === m.Element) && A) {
                     var O;
                     S.headWhitespace && U.type === m.Element && "head" === U.tagName && (C = !1);
                     let e = {
-                        doc: s,
-                        map: a,
+                        doc: a,
+                        map: s,
                         blockClass: o,
-                        blockSelector: u,
-                        unblockSelector: l,
+                        blockSelector: l,
+                        unblockSelector: u,
                         maskTextClass: c,
                         maskTextSelector: d,
                         unmaskTextSelector: h,
@@ -4858,7 +4807,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     let r;
                     let i = t.contentWindow;
                     if (!i) return;
-                    let s = !1;
+                    let a = !1;
                     try {
                         r = i.document.readyState
                     } catch (t) {
@@ -4866,15 +4815,15 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     }
                     if ("complete" !== r) {
                         let r = setTimeout(() => {
-                            !s && (e(), s = !0)
+                            !a && (e(), a = !0)
                         }, n);
                         t.addEventListener("load", () => {
-                            clearTimeout(r), s = !0, e()
+                            clearTimeout(r), a = !0, e()
                         });
                         return
                     }
-                    let a = "about:blank";
-                    if (i.location.href !== a || t.src === a || "" === t.src) {
+                    let s = "about:blank";
+                    if (i.location.href !== s || t.src === s || "" === t.src) {
                         setTimeout(e, 0);
                         return
                     }
@@ -4884,10 +4833,10 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     if (e && x) {
                         let n = th(e, {
                             doc: e,
-                            map: a,
+                            map: s,
                             blockClass: o,
-                            blockSelector: u,
-                            unblockSelector: l,
+                            blockSelector: l,
+                            unblockSelector: u,
                             maskTextClass: c,
                             maskTextSelector: d,
                             unmaskTextSelector: h,
@@ -4920,7 +4869,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     passive: !0
                 };
                 return n.addEventListener(t, e, r), () => n.removeEventListener(t, e, r)
-            }(l = g || (g = {}))[l.DomContentLoaded = 0] = "DomContentLoaded", l[l.Load = 1] = "Load", l[l.FullSnapshot = 2] = "FullSnapshot", l[l.IncrementalSnapshot = 3] = "IncrementalSnapshot", l[l.Meta = 4] = "Meta", l[l.Custom = 5] = "Custom", l[l.Plugin = 6] = "Plugin", (c = y || (y = {}))[c.Mutation = 0] = "Mutation", c[c.MouseMove = 1] = "MouseMove", c[c.MouseInteraction = 2] = "MouseInteraction", c[c.Scroll = 3] = "Scroll", c[c.ViewportResize = 4] = "ViewportResize", c[c.Input = 5] = "Input", c[c.TouchMove = 6] = "TouchMove", c[c.MediaInteraction = 7] = "MediaInteraction", c[c.StyleSheetRule = 8] = "StyleSheetRule", c[c.CanvasMutation = 9] = "CanvasMutation", c[c.Font = 10] = "Font", c[c.Log = 11] = "Log", c[c.Drag = 12] = "Drag", c[c.StyleDeclaration = 13] = "StyleDeclaration", (d = v || (v = {}))[d.MouseUp = 0] = "MouseUp", d[d.MouseDown = 1] = "MouseDown", d[d.Click = 2] = "Click", d[d.ContextMenu = 3] = "ContextMenu", d[d.DblClick = 4] = "DblClick", d[d.Focus = 5] = "Focus", d[d.Blur = 6] = "Blur", d[d.TouchStart = 7] = "TouchStart", d[d.TouchMove_Departed = 8] = "TouchMove_Departed", d[d.TouchEnd = 9] = "TouchEnd", d[d.TouchCancel = 10] = "TouchCancel", (h = b || (b = {}))[h["2D"] = 0] = "2D", h[h.WebGL = 1] = "WebGL", h[h.WebGL2 = 2] = "WebGL2", (_ = E || (E = {}))[_.Play = 0] = "Play", _[_.Pause = 1] = "Pause", _[_.Seeked = 2] = "Seeked", _[_.VolumeChange = 3] = "VolumeChange", (f = S || (S = {})).Start = "start", f.Pause = "pause", f.Resume = "resume", f.Resize = "resize", f.Finish = "finish", f.FullsnapshotRebuilded = "fullsnapshot-rebuilded", f.LoadStylesheetStart = "load-stylesheet-start", f.LoadStylesheetEnd = "load-stylesheet-end", f.SkipStart = "skip-start", f.SkipEnd = "skip-end", f.MouseInteraction = "mouse-interaction", f.EventCast = "event-cast", f.CustomEvent = "custom-event", f.Flush = "flush", f.StateChange = "state-change", f.PlayBack = "play-back";
+            }(u = g || (g = {}))[u.DomContentLoaded = 0] = "DomContentLoaded", u[u.Load = 1] = "Load", u[u.FullSnapshot = 2] = "FullSnapshot", u[u.IncrementalSnapshot = 3] = "IncrementalSnapshot", u[u.Meta = 4] = "Meta", u[u.Custom = 5] = "Custom", u[u.Plugin = 6] = "Plugin", (c = y || (y = {}))[c.Mutation = 0] = "Mutation", c[c.MouseMove = 1] = "MouseMove", c[c.MouseInteraction = 2] = "MouseInteraction", c[c.Scroll = 3] = "Scroll", c[c.ViewportResize = 4] = "ViewportResize", c[c.Input = 5] = "Input", c[c.TouchMove = 6] = "TouchMove", c[c.MediaInteraction = 7] = "MediaInteraction", c[c.StyleSheetRule = 8] = "StyleSheetRule", c[c.CanvasMutation = 9] = "CanvasMutation", c[c.Font = 10] = "Font", c[c.Log = 11] = "Log", c[c.Drag = 12] = "Drag", c[c.StyleDeclaration = 13] = "StyleDeclaration", (d = v || (v = {}))[d.MouseUp = 0] = "MouseUp", d[d.MouseDown = 1] = "MouseDown", d[d.Click = 2] = "Click", d[d.ContextMenu = 3] = "ContextMenu", d[d.DblClick = 4] = "DblClick", d[d.Focus = 5] = "Focus", d[d.Blur = 6] = "Blur", d[d.TouchStart = 7] = "TouchStart", d[d.TouchMove_Departed = 8] = "TouchMove_Departed", d[d.TouchEnd = 9] = "TouchEnd", d[d.TouchCancel = 10] = "TouchCancel", (h = b || (b = {}))[h["2D"] = 0] = "2D", h[h.WebGL = 1] = "WebGL", h[h.WebGL2 = 2] = "WebGL2", (_ = E || (E = {}))[_.Play = 0] = "Play", _[_.Pause = 1] = "Pause", _[_.Seeked = 2] = "Seeked", _[_.VolumeChange = 3] = "VolumeChange", (f = S || (S = {})).Start = "start", f.Pause = "pause", f.Resume = "resume", f.Resize = "resize", f.Finish = "finish", f.FullsnapshotRebuilded = "fullsnapshot-rebuilded", f.LoadStylesheetStart = "load-stylesheet-start", f.LoadStylesheetEnd = "load-stylesheet-end", f.SkipStart = "skip-start", f.SkipEnd = "skip-end", f.MouseInteraction = "mouse-interaction", f.EventCast = "event-cast", f.CustomEvent = "custom-event", f.Flush = "flush", f.StateChange = "state-change", f.PlayBack = "play-back";
             let tf = "Please stop import mirror directly. Instead of that,\r\nnow you can use replayer.getMirror() to access the mirror instance of a replayer,\r\nor you can use record.mirror to access the mirror instance during recording.",
                 tp = {
                     map: {},
@@ -4938,27 +4887,27 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             function tm(t, e, n = {}) {
                 let r = null,
                     i = 0;
-                return function(s) {
-                    let a = Date.now();
-                    !i && !1 === n.leading && (i = a);
-                    let o = e - (a - i),
-                        u = this,
-                        l = arguments;
-                    o <= 0 || o > e ? (r && (clearTimeout(r), r = null), i = a, t.apply(u, l)) : !r && !1 !== n.trailing && (r = setTimeout(() => {
-                        i = !1 === n.leading ? 0 : Date.now(), r = null, t.apply(u, l)
+                return function(a) {
+                    let s = Date.now();
+                    !i && !1 === n.leading && (i = s);
+                    let o = e - (s - i),
+                        l = this,
+                        u = arguments;
+                    o <= 0 || o > e ? (r && (clearTimeout(r), r = null), i = s, t.apply(l, u)) : !r && !1 !== n.trailing && (r = setTimeout(() => {
+                        i = !1 === n.leading ? 0 : Date.now(), r = null, t.apply(l, u)
                     }, o))
                 }
             }
 
             function tg(t, e, n, r, i = window) {
-                let s = i.Object.getOwnPropertyDescriptor(t, e);
+                let a = i.Object.getOwnPropertyDescriptor(t, e);
                 return i.Object.defineProperty(t, e, r ? n : {
                     set(t) {
                         setTimeout(() => {
                             n.set.call(this, t)
-                        }, 0), s && s.set && s.set.call(this, t)
+                        }, 0), a && a.set && a.set.call(this, t)
                     }
-                }), () => tg(t, e, s || {}, !0)
+                }), () => tg(t, e, a || {}, !0)
             }
 
             function ty(t, e, n) {
@@ -4991,10 +4940,10 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 if (!t) return !1;
                 if (t.nodeType === t.ELEMENT_NODE) {
                     let i = !1,
-                        s = r && t.matches(r);
-                    return "string" == typeof e ? i = void 0 !== t.closest ? !s && null !== t.closest("." + e) : !s && t.classList.contains(e) : s || t.classList.forEach(t => {
+                        a = r && t.matches(r);
+                    return "string" == typeof e ? i = void 0 !== t.closest ? !a && null !== t.closest("." + e) : !a && t.classList.contains(e) : a || t.classList.forEach(t => {
                         e.test(t) && (i = !0)
-                    }), !i && n && (i = t.matches(n)), !s && i || tE(t.parentNode, e, n, r)
+                    }), !i && n && (i = t.matches(n)), !a && i || tE(t.parentNode, e, n, r)
                 }
                 return t.nodeType, t.TEXT_NODE, tE(t.parentNode, e, n, r)
             }
@@ -5071,13 +5020,13 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 return n
                             },
                             r = r => {
-                                var i, s, a, o, u;
-                                let l = r.getRootNode ? null === (i = r.getRootNode()) || void 0 === i ? void 0 : i.host : null,
-                                    c = l;
-                                for (; null === (a = null === (s = null == c ? void 0 : c.getRootNode) || void 0 === s ? void 0 : s.call(c)) || void 0 === a ? void 0 : a.host;) c = (null === (u = null === (o = null == c ? void 0 : c.getRootNode) || void 0 === o ? void 0 : o.call(c)) || void 0 === u ? void 0 : u.host) || null;
+                                var i, a, s, o, l;
+                                let u = r.getRootNode ? null === (i = r.getRootNode()) || void 0 === i ? void 0 : i.host : null,
+                                    c = u;
+                                for (; null === (s = null === (a = null == c ? void 0 : c.getRootNode) || void 0 === a ? void 0 : a.call(c)) || void 0 === s ? void 0 : s.host;) c = (null === (l = null === (o = null == c ? void 0 : c.getRootNode) || void 0 === o ? void 0 : o.call(c)) || void 0 === l ? void 0 : l.host) || null;
                                 let d = !this.doc.contains(r) && (!c || !this.doc.contains(c));
                                 if (!r.parentNode || d) return;
-                                let h = F(r.parentNode) ? this.mirror.getId(l) : this.mirror.getId(r.parentNode),
+                                let h = F(r.parentNode) ? this.mirror.getId(u) : this.mirror.getId(r.parentNode),
                                     _ = n(r);
                                 if (-1 === h || -1 === _) return e.addNode(r);
                                 let f = th(r, {
@@ -5143,7 +5092,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             }
                             i = t.previous, e.removeNode(t.value), r(t.value)
                         }
-                        let s = {
+                        let a = {
                             texts: this.texts.map(t => ({
                                 id: this.mirror.getId(t.node),
                                 value: t.value
@@ -5155,7 +5104,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             removes: this.removes,
                             adds: t
                         };
-                        if (!!s.texts.length || !!s.attributes.length || !!s.removes.length || !!s.adds.length) this.texts = [], this.attributes = [], this.removes = [], this.addedSet = new Set, this.movedSet = new Set, this.droppedSet = new Set, this.movedMap = {}, this.mutationCb(s)
+                        if (!!a.texts.length || !!a.attributes.length || !!a.removes.length || !!a.adds.length) this.texts = [], this.attributes = [], this.removes = [], this.addedSet = new Set, this.movedSet = new Set, this.droppedSet = new Set, this.movedMap = {}, this.mutationCb(a)
                     }, this.processMutation = t => {
                         if (!tS(t.target)) switch (t.type) {
                             case "characterData": {
@@ -5190,8 +5139,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                         let t = r.attributes.style;
                                         for (let r of Array.from(e.style)) {
                                             let i = e.style.getPropertyValue(r),
-                                                s = e.style.getPropertyPriority(r);
-                                            (i !== n.style.getPropertyValue(r) || s !== n.style.getPropertyPriority(r)) && ("" === s ? t[r] = i : t[r] = [i, s])
+                                                a = e.style.getPropertyPriority(r);
+                                            (i !== n.style.getPropertyValue(r) || a !== n.style.getPropertyPriority(r)) && ("" === a ? t[r] = i : t[r] = [i, a])
                                         }
                                         for (let r of Array.from(n.style)) "" === e.style.getPropertyValue(r) && (t[r] = !1)
                                     } catch (t) {
@@ -5199,7 +5148,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                     }
                                 } else {
                                     let e = t.target;
-                                    r.attributes[t.attributeName] = tl(this.doc, e, e.tagName, t.attributeName, n, this.maskAllText, this.unmaskTextSelector, this.maskTextFn)
+                                    r.attributes[t.attributeName] = tu(this.doc, e, e.tagName, t.attributeName, n, this.maskAllText, this.unmaskTextSelector, this.maskTextFn)
                                 }
                                 break
                             }
@@ -5301,10 +5250,10 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 var n, r;
                 let i = new tC;
                 tB.push(i), i.init(t);
-                let s = window.MutationObserver || window.__rrMutationObserver,
-                    a = null === (r = null === (n = null == window ? void 0 : window.Zone) || void 0 === n ? void 0 : n.__symbol__) || void 0 === r ? void 0 : r.call(n, "MutationObserver");
-                a && window[a] && (s = window[a]);
-                let o = new s(tO(e => {
+                let a = window.MutationObserver || window.__rrMutationObserver,
+                    s = null === (r = null === (n = null == window ? void 0 : window.Zone) || void 0 === n ? void 0 : n.__symbol__) || void 0 === r ? void 0 : r.call(n, "MutationObserver");
+                s && window[s] && (a = window[s]);
+                let o = new a(tO(e => {
                     if (!t.onMutation || !1 !== t.onMutation(e)) i.processMutations(e)
                 }));
                 return o.observe(e, {
@@ -5323,26 +5272,26 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 mirror: n,
                 blockClass: r,
                 blockSelector: i,
-                unblockSelector: s,
-                sampling: a
+                unblockSelector: a,
+                sampling: s
             }) {
-                let o = tm(a => {
-                    let o = tG(a);
-                    if (!o || tE(o, r, i, s)) return;
-                    let u = n.getId(o);
+                let o = tm(s => {
+                    let o = tG(s);
+                    if (!o || tE(o, r, i, a)) return;
+                    let l = n.getId(o);
                     if (o === e) {
                         let n = e.scrollingElement || e.documentElement;
                         tO(t)({
-                            id: u,
+                            id: l,
                             x: n.scrollLeft,
                             y: n.scrollTop
                         })
                     } else tO(t)({
-                        id: u,
+                        id: l,
                         x: o.scrollLeft,
                         y: o.scrollTop
                     })
-                }, a.scroll || 100);
+                }, s.scroll || 100);
                 return t_("scroll", tO(o), e)
             }
 
@@ -5374,11 +5323,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         mutationCb: n,
                         mousemoveCb: r,
                         mouseInteractionCb: i,
-                        scrollCb: s,
-                        viewportResizeCb: a,
+                        scrollCb: a,
+                        viewportResizeCb: s,
                         inputCb: o,
-                        mediaInteractionCb: u,
-                        styleSheetRuleCb: l,
+                        mediaInteractionCb: l,
+                        styleSheetRuleCb: u,
                         styleDeclarationCb: c,
                         canvasMutationCb: d,
                         fontCb: h
@@ -5390,15 +5339,15 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     }, t.mouseInteractionCb = (...t) => {
                         e.mouseInteraction && e.mouseInteraction(...t), i(...t)
                     }, t.scrollCb = (...t) => {
-                        e.scroll && e.scroll(...t), s(...t)
+                        e.scroll && e.scroll(...t), a(...t)
                     }, t.viewportResizeCb = (...t) => {
-                        e.viewportResize && e.viewportResize(...t), a(...t)
+                        e.viewportResize && e.viewportResize(...t), s(...t)
                     }, t.inputCb = (...t) => {
                         e.input && e.input(...t), o(...t)
                     }, t.mediaInteractionCb = (...t) => {
-                        e.mediaInteaction && e.mediaInteaction(...t), u(...t)
+                        e.mediaInteaction && e.mediaInteaction(...t), l(...t)
                     }, t.styleSheetRuleCb = (...t) => {
-                        e.styleSheetRule && e.styleSheetRule(...t), l(...t)
+                        e.styleSheetRule && e.styleSheetRule(...t), u(...t)
                     }, t.styleDeclarationCb = (...t) => {
                         e.styleDeclaration && e.styleDeclaration(...t), c(...t)
                     }, t.canvasMutationCb = (...t) => {
@@ -5416,71 +5365,71 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     }) {
                         let i;
                         if (!1 === e.mousemove) return () => {};
-                        let s = "number" == typeof e.mousemove ? e.mousemove : 50,
-                            a = "number" == typeof e.mousemoveCallback ? e.mousemoveCallback : 500,
+                        let a = "number" == typeof e.mousemove ? e.mousemove : 50,
+                            s = "number" == typeof e.mousemoveCallback ? e.mousemoveCallback : 500,
                             o = [],
-                            u = tm(e => {
+                            l = tm(e => {
                                 let n = Date.now() - i;
                                 tO(t)(o.map(t => (t.timeOffset -= n, t)), e), o = [], i = null
-                            }, a),
-                            l = tm(t => {
+                            }, s),
+                            u = tm(t => {
                                 let e = tG(t),
                                     {
                                         clientX: n,
-                                        clientY: s
+                                        clientY: a
                                     } = tw(t) ? t.changedTouches[0] : t;
                                 !i && (i = Date.now()), o.push({
                                     x: n,
-                                    y: s,
+                                    y: a,
                                     id: r.getId(e),
                                     timeOffset: Date.now() - i
-                                }), u("undefined" != typeof DragEvent && t instanceof DragEvent ? y.Drag : t instanceof MouseEvent ? y.MouseMove : y.TouchMove)
-                            }, s, {
+                                }), l("undefined" != typeof DragEvent && t instanceof DragEvent ? y.Drag : t instanceof MouseEvent ? y.MouseMove : y.TouchMove)
+                            }, a, {
                                 trailing: !1
                             }),
-                            c = [t_("mousemove", tO(l), n), t_("touchmove", tO(l), n), t_("drag", tO(l), n)];
+                            c = [t_("mousemove", tO(u), n), t_("touchmove", tO(u), n), t_("drag", tO(u), n)];
                         return tO(() => {
                             c.forEach(t => t())
                         })
                     }(t),
-                    s = function({
+                    a = function({
                         mouseInteractionCb: t,
                         doc: e,
                         mirror: n,
                         blockClass: r,
                         blockSelector: i,
-                        unblockSelector: s,
-                        sampling: a
+                        unblockSelector: a,
+                        sampling: s
                     }) {
-                        if (!1 === a.mouseInteraction) return () => {};
-                        let o = !0 === a.mouseInteraction || void 0 === a.mouseInteraction ? {} : a.mouseInteraction,
-                            u = [],
-                            l = e => a => {
-                                let o = tG(a);
-                                if (tE(o, r, i, s)) return;
-                                let u = tw(a) ? a.changedTouches[0] : a;
-                                if (!u) return;
-                                let l = n.getId(o),
+                        if (!1 === s.mouseInteraction) return () => {};
+                        let o = !0 === s.mouseInteraction || void 0 === s.mouseInteraction ? {} : s.mouseInteraction,
+                            l = [],
+                            u = e => s => {
+                                let o = tG(s);
+                                if (tE(o, r, i, a)) return;
+                                let l = tw(s) ? s.changedTouches[0] : s;
+                                if (!l) return;
+                                let u = n.getId(o),
                                     {
                                         clientX: c,
                                         clientY: d
-                                    } = u;
+                                    } = l;
                                 tO(t)({
                                     type: v[e],
-                                    id: l,
+                                    id: u,
                                     x: c,
                                     y: d
                                 })
                             };
                         return Object.keys(v).filter(t => Number.isNaN(Number(t)) && !t.endsWith("_Departed") && !1 !== o[t]).forEach(t => {
                             let n = t.toLowerCase(),
-                                r = tO(l(t));
-                            u.push(t_(n, r, e))
+                                r = tO(u(t));
+                            l.push(t_(n, r, e))
                         }), tO(() => {
-                            u.forEach(t => t())
+                            l.forEach(t => t())
                         })
                     }(t),
-                    a = tY(t),
+                    s = tY(t),
                     o = function({
                         viewportResizeCb: t
                     }) {
@@ -5496,17 +5445,17 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             }, 200);
                         return t_("resize", tO(r), window)
                     }(t),
-                    u = function({
+                    l = function({
                         inputCb: t,
                         doc: e,
                         mirror: n,
                         blockClass: r,
                         blockSelector: i,
-                        unblockSelector: s,
-                        ignoreClass: a,
+                        unblockSelector: a,
+                        ignoreClass: s,
                         ignoreSelector: o,
-                        maskInputSelector: u,
-                        unmaskInputSelector: l,
+                        maskInputSelector: l,
+                        unmaskInputSelector: u,
                         maskInputOptions: c,
                         maskInputFn: d,
                         sampling: h,
@@ -5516,10 +5465,10 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             let n = tG(t),
                                 h = n && n.tagName,
                                 f = t.isTrusted;
-                            if ("OPTION" === h && (n = n.parentElement), !n || !h || 0 > tz.indexOf(h) || tE(n, r, i, s)) return;
+                            if ("OPTION" === h && (n = n.parentElement), !n || !h || 0 > tz.indexOf(h) || tE(n, r, i, a)) return;
                             let m = n,
                                 g = W(m);
-                            if (m.classList.contains(a) || o && m.matches(o)) return;
+                            if (m.classList.contains(s) || o && m.matches(o)) return;
                             let y = Z(m, h, g),
                                 v = !1;
                             ("radio" === g || "checkbox" === g) && (v = n.checked),
@@ -5536,14 +5485,14 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 })
                             }({
                                 maskInputOptions: c,
-                                maskInputSelector: u,
+                                maskInputSelector: l,
                                 tagName: h,
                                 type: g
                             }) && (y = H({
                                 input: m,
                                 maskInputOptions: c,
-                                maskInputSelector: u,
-                                unmaskInputSelector: l,
+                                maskInputSelector: l,
+                                unmaskInputSelector: u,
                                 tagName: h,
                                 type: g,
                                 value: y,
@@ -5559,8 +5508,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                     let e = H({
                                         input: t,
                                         maskInputOptions: c,
-                                        maskInputSelector: u,
-                                        unmaskInputSelector: l,
+                                        maskInputSelector: l,
+                                        unmaskInputSelector: u,
                                         tagName: h,
                                         type: g,
                                         value: Z(t, h, g),
@@ -5605,31 +5554,31 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             m.forEach(t => t())
                         })
                     }(t),
-                    l = function({
+                    u = function({
                         mediaInteractionCb: t,
                         blockClass: e,
                         blockSelector: n,
                         unblockSelector: r,
                         mirror: i,
-                        sampling: s
+                        sampling: a
                     }) {
-                        let a = a => tm(tO(s => {
-                                let o = tG(s);
+                        let s = s => tm(tO(a => {
+                                let o = tG(a);
                                 if (!o || tE(o, e, n, r)) return;
                                 let {
-                                    currentTime: u,
-                                    volume: l,
+                                    currentTime: l,
+                                    volume: u,
                                     muted: c
                                 } = o;
                                 t({
-                                    type: a,
+                                    type: s,
                                     id: i.getId(o),
-                                    currentTime: u,
-                                    volume: l,
+                                    currentTime: l,
+                                    volume: u,
                                     muted: c
                                 })
-                            }), s.media || 500),
-                            o = [t_("play", a(0)), t_("pause", a(1)), t_("seeked", a(2)), t_("volumechange", a(3))];
+                            }), a.media || 500),
+                            o = [t_("play", s(0)), t_("pause", s(1)), t_("seeked", s(2)), t_("volumechange", s(3))];
                         return tO(() => {
                             o.forEach(t => t())
                         })
@@ -5644,12 +5593,12 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         let r = n.CSSStyleSheet.prototype.insertRule;
                         n.CSSStyleSheet.prototype.insertRule = new Proxy(r, {
                             apply: tO((n, r, i) => {
-                                let [s, a] = i, o = e.getId(r.ownerNode);
+                                let [a, s] = i, o = e.getId(r.ownerNode);
                                 return -1 !== o && t({
                                     id: o,
                                     adds: [{
-                                        rule: s,
-                                        index: a
+                                        rule: a,
+                                        index: s
                                     }]
                                 }), n.apply(r, i)
                             })
@@ -5657,47 +5606,47 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         let i = n.CSSStyleSheet.prototype.deleteRule;
                         n.CSSStyleSheet.prototype.deleteRule = new Proxy(i, {
                             apply: tO((n, r, i) => {
-                                let [s] = i, a = e.getId(r.ownerNode);
-                                return -1 !== a && t({
-                                    id: a,
+                                let [a] = i, s = e.getId(r.ownerNode);
+                                return -1 !== s && t({
+                                    id: s,
                                     removes: [{
-                                        index: s
+                                        index: a
                                     }]
                                 }), n.apply(r, i)
                             })
                         });
-                        let s = {};
-                        tH("CSSGroupingRule") ? s.CSSGroupingRule = n.CSSGroupingRule : (tH("CSSMediaRule") && (s.CSSMediaRule = n.CSSMediaRule), tH("CSSConditionRule") && (s.CSSConditionRule = n.CSSConditionRule), tH("CSSSupportsRule") && (s.CSSSupportsRule = n.CSSSupportsRule));
                         let a = {};
-                        return Object.entries(s).forEach(([n, r]) => {
-                            a[n] = {
+                        tH("CSSGroupingRule") ? a.CSSGroupingRule = n.CSSGroupingRule : (tH("CSSMediaRule") && (a.CSSMediaRule = n.CSSMediaRule), tH("CSSConditionRule") && (a.CSSConditionRule = n.CSSConditionRule), tH("CSSSupportsRule") && (a.CSSSupportsRule = n.CSSSupportsRule));
+                        let s = {};
+                        return Object.entries(a).forEach(([n, r]) => {
+                            s[n] = {
                                 insertRule: r.prototype.insertRule,
                                 deleteRule: r.prototype.deleteRule
-                            }, r.prototype.insertRule = new Proxy(a[n].insertRule, {
+                            }, r.prototype.insertRule = new Proxy(s[n].insertRule, {
                                 apply: tO((n, r, i) => {
-                                    let [s, a] = i, o = e.getId(r.parentStyleSheet.ownerNode);
+                                    let [a, s] = i, o = e.getId(r.parentStyleSheet.ownerNode);
                                     return -1 !== o && t({
                                         id: o,
                                         adds: [{
-                                            rule: s,
-                                            index: [...tP(r), a || 0]
+                                            rule: a,
+                                            index: [...tP(r), s || 0]
                                         }]
                                     }), n.apply(r, i)
                                 })
-                            }), r.prototype.deleteRule = new Proxy(a[n].deleteRule, {
+                            }), r.prototype.deleteRule = new Proxy(s[n].deleteRule, {
                                 apply: tO((n, r, i) => {
-                                    let [s] = i, a = e.getId(r.parentStyleSheet.ownerNode);
-                                    return -1 !== a && t({
-                                        id: a,
+                                    let [a] = i, s = e.getId(r.parentStyleSheet.ownerNode);
+                                    return -1 !== s && t({
+                                        id: s,
                                         removes: [{
-                                            index: [...tP(r), s]
+                                            index: [...tP(r), a]
                                         }]
                                     }), n.apply(r, i)
                                 })
                             })
                         }), tO(() => {
-                            n.CSSStyleSheet.prototype.insertRule = r, n.CSSStyleSheet.prototype.deleteRule = i, Object.entries(s).forEach(([t, e]) => {
-                                e.prototype.insertRule = a[t].insertRule, e.prototype.deleteRule = a[t].deleteRule
+                            n.CSSStyleSheet.prototype.insertRule = r, n.CSSStyleSheet.prototype.deleteRule = i, Object.entries(a).forEach(([t, e]) => {
+                                e.prototype.insertRule = s[t].insertRule, e.prototype.deleteRule = s[t].deleteRule
                             })
                         })
                     }(t, {
@@ -5712,14 +5661,14 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         let r = n.CSSStyleDeclaration.prototype.setProperty;
                         n.CSSStyleDeclaration.prototype.setProperty = new Proxy(r, {
                             apply: tO((n, r, i) => {
-                                var s, a;
-                                let [o, u, l] = i, c = e.getId(null === (a = null === (s = r.parentRule) || void 0 === s ? void 0 : s.parentStyleSheet) || void 0 === a ? void 0 : a.ownerNode);
+                                var a, s;
+                                let [o, l, u] = i, c = e.getId(null === (s = null === (a = r.parentRule) || void 0 === a ? void 0 : a.parentStyleSheet) || void 0 === s ? void 0 : s.ownerNode);
                                 return -1 !== c && t({
                                     id: c,
                                     set: {
                                         property: o,
-                                        value: u,
-                                        priority: l
+                                        value: l,
+                                        priority: u
                                     },
                                     index: tP(r.parentRule)
                                 }), n.apply(r, i)
@@ -5728,10 +5677,10 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         let i = n.CSSStyleDeclaration.prototype.removeProperty;
                         return n.CSSStyleDeclaration.prototype.removeProperty = new Proxy(i, {
                             apply: tO((n, r, i) => {
-                                var s, a;
-                                let [o] = i, u = e.getId(null === (a = null === (s = r.parentRule) || void 0 === s ? void 0 : s.parentStyleSheet) || void 0 === a ? void 0 : a.ownerNode);
-                                return -1 !== u && t({
-                                    id: u,
+                                var a, s;
+                                let [o] = i, l = e.getId(null === (s = null === (a = r.parentRule) || void 0 === a ? void 0 : a.parentStyleSheet) || void 0 === s ? void 0 : s.ownerNode);
+                                return -1 !== l && t({
+                                    id: l,
                                     remove: {
                                         property: o
                                     },
@@ -5752,9 +5701,9 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         if (!n) return () => {};
                         let r = [],
                             i = new WeakMap,
-                            s = n.FontFace;
+                            a = n.FontFace;
                         n.FontFace = function(t, e, n) {
-                            let r = new s(t, e, n);
+                            let r = new a(t, e, n);
                             return i.set(r, {
                                 family: t,
                                 buffer: "string" != typeof e,
@@ -5762,7 +5711,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 fontSource: "string" == typeof e ? e : JSON.stringify(Array.from(new Uint8Array(e)))
                             }), r
                         };
-                        let a = ty(e.fonts, "add", function(e) {
+                        let s = ty(e.fonts, "add", function(e) {
                             return function(n) {
                                 return setTimeout(() => {
                                     let e = i.get(n);
@@ -5771,15 +5720,15 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             }
                         });
                         return r.push(() => {
-                            n.FontFace = s
-                        }), r.push(a), tO(() => {
+                            n.FontFace = a
+                        }), r.push(s), tO(() => {
                             r.forEach(t => t())
                         })
                     }(t) : () => {},
                     _ = [];
                 for (let e of t.plugins) _.push(e.observer(e.callback, n, e.options));
                 return tO(() => {
-                    tB.forEach(t => t.reset()), r.disconnect(), i(), s(), a(), o(), u(), l();
+                    tB.forEach(t => t.reset()), r.disconnect(), i(), a(), s(), o(), l(), u();
                     try {
                         c(), d()
                     } catch (t) {}
@@ -5868,12 +5817,12 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             let tX = new Map,
                 tQ = (t, e, n) => {
                     var r, i;
-                    let s;
+                    let a;
                     if (!t || !(t1(t, e) || "object" == typeof t)) return;
-                    let a = t.constructor.name;
-                    let o = (r = n, i = a, !(s = tX.get(r)) && (s = new Map, tX.set(r, s)), !s.has(i) && s.set(i, []), s.get(i)),
-                        u = o.indexOf(t);
-                    return -1 === u && (u = o.length, o.push(t)), u
+                    let s = t.constructor.name;
+                    let o = (r = n, i = s, !(a = tX.get(r)) && (a = new Map, tX.set(r, a)), !a.has(i) && a.set(i, []), a.get(i)),
+                        l = o.indexOf(t);
+                    return -1 === l && (l = o.length, o.push(t)), l
                 },
                 t0 = (t, e, n) => [...t].map(t => (function t(e, n, r) {
                     if (e instanceof Array) return e.map(e => t(e, n, r));
@@ -5916,19 +5865,19 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 })(t, e, n)),
                 t1 = (t, e) => !!["WebGLActiveInfo", "WebGLBuffer", "WebGLFramebuffer", "WebGLProgram", "WebGLRenderbuffer", "WebGLShader", "WebGLShaderPrecisionFormat", "WebGLTexture", "WebGLUniformLocation", "WebGLVertexArrayObject", "WebGLVertexArrayObjectOES"].filter(t => "function" == typeof e[t]).find(n => t instanceof e[n]);
 
-            function t2(t, e, n, r, i, s, a, o) {
-                let u = [];
-                for (let l of Object.getOwnPropertyNames(t)) try {
-                    if ("function" != typeof t[l]) continue;
-                    let c = ty(t, l, function(u) {
+            function t2(t, e, n, r, i, a, s, o) {
+                let l = [];
+                for (let u of Object.getOwnPropertyNames(t)) try {
+                    if ("function" != typeof t[u]) continue;
+                    let c = ty(t, u, function(l) {
                         return function(...c) {
-                            let d = u.apply(this, c);
-                            if (tQ(d, o, t), !tE(this.canvas, r, s, i)) {
-                                a.getId(this.canvas);
+                            let d = l.apply(this, c);
+                            if (tQ(d, o, t), !tE(this.canvas, r, a, i)) {
+                                s.getId(this.canvas);
                                 let r = t0([...c], o, t),
                                     i = {
                                         type: e,
-                                        property: l,
+                                        property: u,
                                         args: r
                                     };
                                 n(this.canvas, i)
@@ -5936,21 +5885,21 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             return d
                         }
                     });
-                    u.push(c)
+                    l.push(c)
                 } catch (i) {
-                    let r = tg(t, l, {
+                    let r = tg(t, u, {
                         set(t) {
                             n(this.canvas, {
                                 type: e,
-                                property: l,
+                                property: u,
                                 args: [t],
                                 setter: !0
                             })
                         }
                     });
-                    u.push(r)
+                    l.push(r)
                 }
-                return u
+                return l
             }
             class t5 {
                 reset() {
@@ -5981,12 +5930,12 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     let i = function(t, e, n, r) {
                             let i = [];
                             try {
-                                let s = ty(t.HTMLCanvasElement.prototype, "getContext", function(t) {
-                                    return function(i, ...s) {
-                                        return !tE(this, e, n, r) && !("__context" in this) && (this.__context = i), t.apply(this, [i, ...s])
+                                let a = ty(t.HTMLCanvasElement.prototype, "getContext", function(t) {
+                                    return function(i, ...a) {
+                                        return !tE(this, e, n, r) && !("__context" in this) && (this.__context = i), t.apply(this, [i, ...a])
                                     }
                                 });
-                                i.push(s)
+                                i.push(a)
                             } catch (t) {
                                 console.error("failed to patch HTMLCanvasElement.prototype.getContext")
                             }
@@ -5994,15 +5943,15 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 i.forEach(t => t())
                             }
                         }(t, e, r, n),
-                        s = function(t, e, n, r, i, s) {
-                            let a = [];
-                            for (let s of Object.getOwnPropertyNames(e.CanvasRenderingContext2D.prototype)) try {
-                                if ("function" != typeof e.CanvasRenderingContext2D.prototype[s]) continue;
-                                let o = ty(e.CanvasRenderingContext2D.prototype, s, function(e) {
-                                    return function(...a) {
+                        a = function(t, e, n, r, i, a) {
+                            let s = [];
+                            for (let a of Object.getOwnPropertyNames(e.CanvasRenderingContext2D.prototype)) try {
+                                if ("function" != typeof e.CanvasRenderingContext2D.prototype[a]) continue;
+                                let o = ty(e.CanvasRenderingContext2D.prototype, a, function(e) {
+                                    return function(...s) {
                                         return !tE(this.canvas, n, i, r) && setTimeout(() => {
-                                            let e = [...a];
-                                            if ("drawImage" === s && e[0] && e[0] instanceof HTMLCanvasElement) {
+                                            let e = [...s];
+                                            if ("drawImage" === a && e[0] && e[0] instanceof HTMLCanvasElement) {
                                                 let t = e[0],
                                                     n = t.getContext("2d"),
                                                     r = null == n ? void 0 : n.getImageData(0, 0, t.width, t.height),
@@ -6011,38 +5960,38 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                             }
                                             t(this.canvas, {
                                                 type: b["2D"],
-                                                property: s,
+                                                property: a,
                                                 args: e
                                             })
-                                        }, 0), e.apply(this, a)
+                                        }, 0), e.apply(this, s)
                                     }
                                 });
-                                a.push(o)
+                                s.push(o)
                             } catch (r) {
-                                let n = tg(e.CanvasRenderingContext2D.prototype, s, {
+                                let n = tg(e.CanvasRenderingContext2D.prototype, a, {
                                     set(e) {
                                         t(this.canvas, {
                                             type: b["2D"],
-                                            property: s,
+                                            property: a,
                                             args: [e],
                                             setter: !0
                                         })
                                     }
                                 });
-                                a.push(n)
+                                s.push(n)
                             }
                             return () => {
-                                a.forEach(t => t())
+                                s.forEach(t => t())
                             }
                         }(this.processMutation.bind(this), t, e, r, n, this.mirror),
-                        a = function(t, e, n, r, i, s) {
-                            let a = [];
-                            return a.push(...t2(e.WebGLRenderingContext.prototype, b.WebGL, t, n, r, i, s, e)), void 0 !== e.WebGL2RenderingContext && a.push(...t2(e.WebGL2RenderingContext.prototype, b.WebGL2, t, n, r, i, s, e)), () => {
-                                a.forEach(t => t())
+                        s = function(t, e, n, r, i, a) {
+                            let s = [];
+                            return s.push(...t2(e.WebGLRenderingContext.prototype, b.WebGL, t, n, r, i, a, e)), void 0 !== e.WebGL2RenderingContext && s.push(...t2(e.WebGL2RenderingContext.prototype, b.WebGL2, t, n, r, i, a, e)), () => {
+                                s.forEach(t => t())
                             }
                         }(this.processMutation.bind(this), t, e, r, n, this.mirror);
                     this.resetObservers = () => {
-                        i(), s(), a()
+                        i(), a(), s()
                     }
                 }
                 startPendingCanvasMutationFlusher() {
@@ -6112,8 +6061,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     checkoutEveryNms: r,
                     checkoutEveryNth: i,
                     blockClass: o = "rr-block",
-                    blockSelector: u = null,
-                    unblockSelector: l = null,
+                    blockSelector: l = null,
+                    unblockSelector: u = null,
                     ignoreClass: c = "rr-ignore",
                     ignoreSelector: d = null,
                     maskTextClass: h = "rr-mask",
@@ -6186,32 +6135,32 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         for (let e of O || []) e.eventProcessor && (t = e.eventProcessor(t));
                         return x && (t = x(t)), t
                     };
-                s = (t, s) => {
+                a = (t, a) => {
                     var o;
-                    if ((null === (o = tB[0]) || void 0 === o ? void 0 : o.isFrozen()) && t.type !== g.FullSnapshot && !(t.type === g.IncrementalSnapshot && t.data.source === y.Mutation) && tB.forEach(t => t.unfreeze()), n(z(t), s), t.type === g.FullSnapshot) e = t, L = 0;
+                    if ((null === (o = tB[0]) || void 0 === o ? void 0 : o.isFrozen()) && t.type !== g.FullSnapshot && !(t.type === g.IncrementalSnapshot && t.data.source === y.Mutation) && tB.forEach(t => t.unfreeze()), n(z(t), a), t.type === g.FullSnapshot) e = t, L = 0;
                     else if (t.type === g.IncrementalSnapshot) {
                         if (t.data.source === y.Mutation && t.data.isAttachIframe) return;
                         L++;
                         let n = i && L >= i,
-                            s = r && t.timestamp - e.timestamp > r;
-                        (n || s) && a(!0)
+                            a = r && t.timestamp - e.timestamp > r;
+                        (n || a) && s(!0)
                     }
                 };
                 let $ = t => {
-                        s(t3({
+                        a(t3({
                             type: g.IncrementalSnapshot,
                             data: Object.assign({
                                 source: y.Mutation
                             }, t)
                         }))
                     },
-                    P = t => s(t3({
+                    P = t => a(t3({
                         type: g.IncrementalSnapshot,
                         data: Object.assign({
                             source: y.Scroll
                         }, t)
                     })),
-                    F = t => s(t3({
+                    F = t => a(t3({
                         type: g.IncrementalSnapshot,
                         data: Object.assign({
                             source: y.CanvasMutation
@@ -6225,8 +6174,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         mutationCb: F,
                         win: window,
                         blockClass: o,
-                        blockSelector: u,
-                        unblockSelector: l,
+                        blockSelector: l,
+                        unblockSelector: u,
                         mirror: t6
                     }),
                     q = new tW({
@@ -6235,8 +6184,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         bypassOptions: {
                             onMutation: G,
                             blockClass: o,
-                            blockSelector: u,
-                            unblockSelector: l,
+                            blockSelector: l,
+                            unblockSelector: u,
                             maskTextClass: h,
                             maskTextSelector: _,
                             unmaskTextSelector: p,
@@ -6256,9 +6205,9 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         },
                         mirror: t6
                     });
-                a = (t = !1) => {
+                s = (t = !1) => {
                     var e, n, r, i;
-                    s(t3({
+                    a(t3({
                         type: g.Meta,
                         data: {
                             href: window.location.href,
@@ -6266,16 +6215,16 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             height: tv()
                         }
                     }), t), tB.forEach(t => t.lock());
-                    let [a, c] = function(t, e) {
+                    let [s, c] = function(t, e) {
                         let {
                             blockClass: n = "rr-block",
                             blockSelector: r = null,
                             unblockSelector: i = null,
-                            maskTextClass: s = "rr-mask",
-                            maskTextSelector: a = null,
+                            maskTextClass: a = "rr-mask",
+                            maskTextSelector: s = null,
                             unmaskTextSelector: o = null,
-                            inlineStylesheet: u = !0,
-                            inlineImages: l = !1,
+                            inlineStylesheet: l = !0,
+                            inlineImages: u = !1,
                             recordCanvas: c = !1,
                             maskInputSelector: d = null,
                             unmaskInputSelector: h = null,
@@ -6297,11 +6246,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             blockClass: n,
                             blockSelector: r,
                             unblockSelector: i,
-                            maskTextClass: s,
-                            maskTextSelector: a,
+                            maskTextClass: a,
+                            maskTextSelector: s,
                             unmaskTextSelector: o,
                             skipChild: !1,
-                            inlineStylesheet: u,
+                            inlineStylesheet: l,
                             maskInputSelector: d,
                             unmaskInputSelector: h,
                             maskAllText: _,
@@ -6337,7 +6286,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                 headMetaVerification: !0
                             } : !1 === g ? {} : g,
                             dataURLOptions: y,
-                            inlineImages: l,
+                            inlineImages: u,
                             recordCanvas: c,
                             preserveWhiteSpace: v,
                             onSerialize: b,
@@ -6347,8 +6296,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         }), k]
                     }(document, {
                         blockClass: o,
-                        blockSelector: u,
-                        unblockSelector: l,
+                        blockSelector: l,
+                        unblockSelector: u,
                         maskTextClass: h,
                         maskTextSelector: _,
                         unmaskTextSelector: p,
@@ -6369,11 +6318,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         },
                         keepIframeSrcFn: B
                     });
-                    if (!a) return console.warn("Failed to snapshot the document");
-                    t6.map = c, s(t3({
+                    if (!s) return console.warn("Failed to snapshot the document");
+                    t6.map = c, a(t3({
                         type: g.FullSnapshot,
                         data: {
-                            node: a,
+                            node: s,
                             initialOffset: {
                                 left: void 0 !== window.pageXOffset ? window.pageXOffset : (null == document ? void 0 : document.documentElement.scrollLeft) || (null === (n = null === (e = null == document ? void 0 : document.body) || void 0 === e ? void 0 : e.parentElement) || void 0 === n ? void 0 : n.scrollLeft) || (null == document ? void 0 : document.body.scrollLeft) || 0,
                                 top: void 0 !== window.pageYOffset ? window.pageYOffset : (null == document ? void 0 : document.documentElement.scrollTop) || (null === (i = null === (r = null == document ? void 0 : document.body) || void 0 === r ? void 0 : r.parentElement) || void 0 === i ? void 0 : i.scrollTop) || (null == document ? void 0 : document.body.scrollTop) || 0
@@ -6384,7 +6333,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 try {
                     let t = [];
                     t.push(t_("DOMContentLoaded", () => {
-                        s(t3({
+                        a(t3({
                             type: g.DomContentLoaded,
                             data: {}
                         }))
@@ -6394,52 +6343,52 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         return tO(tF)({
                             onMutation: G,
                             mutationCb: $,
-                            mousemoveCb: (t, e) => s(t3({
+                            mousemoveCb: (t, e) => a(t3({
                                 type: g.IncrementalSnapshot,
                                 data: {
                                     source: e,
                                     positions: t
                                 }
                             })),
-                            mouseInteractionCb: t => s(t3({
+                            mouseInteractionCb: t => a(t3({
                                 type: g.IncrementalSnapshot,
                                 data: Object.assign({
                                     source: y.MouseInteraction
                                 }, t)
                             })),
                             scrollCb: P,
-                            viewportResizeCb: t => s(t3({
+                            viewportResizeCb: t => a(t3({
                                 type: g.IncrementalSnapshot,
                                 data: Object.assign({
                                     source: y.ViewportResize
                                 }, t)
                             })),
-                            inputCb: t => s(t3({
+                            inputCb: t => a(t3({
                                 type: g.IncrementalSnapshot,
                                 data: Object.assign({
                                     source: y.Input
                                 }, t)
                             })),
-                            mediaInteractionCb: t => s(t3({
+                            mediaInteractionCb: t => a(t3({
                                 type: g.IncrementalSnapshot,
                                 data: Object.assign({
                                     source: y.MediaInteraction
                                 }, t)
                             })),
-                            styleSheetRuleCb: t => s(t3({
+                            styleSheetRuleCb: t => a(t3({
                                 type: g.IncrementalSnapshot,
                                 data: Object.assign({
                                     source: y.StyleSheetRule
                                 }, t)
                             })),
-                            styleDeclarationCb: t => s(t3({
+                            styleDeclarationCb: t => a(t3({
                                 type: g.IncrementalSnapshot,
                                 data: Object.assign({
                                     source: y.StyleDeclaration
                                 }, t)
                             })),
                             canvasMutationCb: F,
-                            fontCb: t => s(t3({
+                            fontCb: t => a(t3({
                                 type: g.IncrementalSnapshot,
                                 data: Object.assign({
                                     source: y.Font
@@ -6464,8 +6413,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             maskAllText: b,
                             maskInputFn: k,
                             maskTextFn: T,
-                            blockSelector: u,
-                            unblockSelector: l,
+                            blockSelector: l,
+                            unblockSelector: u,
                             slimDOMOptions: Y,
                             mirror: t6,
                             iframeManager: j,
@@ -6474,7 +6423,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             plugins: (null === (e = null == O ? void 0 : O.filter(t => t.observer)) || void 0 === e ? void 0 : e.map(t => ({
                                 observer: t.observer,
                                 options: t.options,
-                                callback: e => s(t3({
+                                callback: e => a(t3({
                                     type: g.Plugin,
                                     data: {
                                         plugin: t.name,
@@ -6492,10 +6441,10 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         }
                     });
                     let n = () => {
-                        a(), t.push(e(document))
+                        s(), t.push(e(document))
                     };
                     return "interactive" === document.readyState || "complete" === document.readyState ? n() : t.push(t_("load", () => {
-                        s(t3({
+                        a(t3({
                             type: g.Load,
                             data: {}
                         })), n()
@@ -6511,8 +6460,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                 return t > 9999999999 ? t : 1e3 * t
             }
             t4.addCustomEvent = (t, e) => {
-                if (!s) throw Error("please add custom event after start recording");
-                s(t3({
+                if (!a) throw Error("please add custom event after start recording");
+                a(t3({
                     type: g.Custom,
                     data: {
                         tag: t,
@@ -6522,8 +6471,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
             }, t4.freezePage = () => {
                 tB.forEach(t => t.freeze())
             }, t4.takeFullSnapshot = t => {
-                if (!a) throw Error("please take full snapshot after start recording");
-                a(t)
+                if (!s) throw Error("please take full snapshot after start recording");
+                s(t)
             }, t4.mirror = t6;
 
             function t9(t, e) {
@@ -6644,18 +6593,18 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                         r = t.mutationAfter && t.mutationAfter <= this._threshold,
                         {
                             clickCount: i,
-                            clickBreadcrumb: s
+                            clickBreadcrumb: a
                         } = t;
                     if (!n && !r) {
                         let n = 1e3 * Math.min(t.mutationAfter || this._timeout, this._timeout),
                             r = n < 1e3 * this._timeout ? "mutation" : "timeout",
-                            a = {
+                            s = {
                                 type: "default",
-                                message: s.message,
-                                timestamp: s.timestamp,
+                                message: a.message,
+                                timestamp: a.timestamp,
                                 category: "ui.slowClickDetected",
                                 data: {
-                                    ...s.data,
+                                    ...a.data,
                                     url: z.location.href,
                                     route: e.getCurrentRoute(),
                                     timeAfterClickMs: n,
@@ -6663,17 +6612,17 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                                     clickCount: i || 1
                                 }
                             };
-                        this._addBreadcrumbEvent(e, a);
+                        this._addBreadcrumbEvent(e, s);
                         return
                     }
                     if (i > 1) {
                         let t = {
                             type: "default",
-                            message: s.message,
-                            timestamp: s.timestamp,
+                            message: a.message,
+                            timestamp: a.timestamp,
                             category: "ui.multiClick",
                             data: {
-                                ...s.data,
+                                ...a.data,
                                 url: z.location.href,
                                 route: e.getCurrentRoute(),
                                 clickCount: i,
@@ -6700,8 +6649,8 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     ...t
                 }
             }(p = w || (w = {}))[p.Document = 0] = "Document", p[p.DocumentType = 1] = "DocumentType", p[p.Element = 2] = "Element", p[p.Text = 3] = "Text", p[p.CDATA = 4] = "CDATA", p[p.Comment = 5] = "Comment";
-            let es = new Set(["id", "class", "aria-label", "role", "name", "alt", "title", "data-test-id", "data-testid", "disabled", "aria-disabled"]),
-                ea = t => e => {
+            let ea = new Set(["id", "class", "aria-label", "role", "name", "alt", "title", "data-test-id", "data-testid", "disabled", "aria-disabled"]),
+                es = t => e => {
                     if (!t.isEnabled()) return;
                     let n = function(t) {
                         let {
@@ -6751,7 +6700,7 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                             attributes: function(t) {
                                 let e = {};
                                 for (let n in t)
-                                    if (es.has(n)) {
+                                    if (ea.has(n)) {
                                         let r = n;
                                         ("data-testid" === n || "data-test-id" === n) && (r = "testId"), e[r] = t[n]
                                     } return e
@@ -6760,11 +6709,11 @@ The transaction will not be sampled. Please use the ${s} instrumentation to star
                     } : {}
                 }
             }
-            let eu = ["name", "type", "startTime", "transferSize", "duration"];
+            let el = ["name", "type", "startTime", "transferSize", "duration"];
 
-            function el(t) {
+            function eu(t) {
                 return function(e) {
-                    return eu.every(n => t[n] === e[n])
+                    return el.every(n => t[n] === e[n])
                 }
             }
             let ec = `/*! pako 2.1.0 https://github.com/nodeca/pako @license (MIT AND Zlib) */
@@ -6834,18 +6783,18 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                 postMessage(t, e) {
                     let n = this._getAndIncrementId();
                     return new Promise((r, i) => {
-                        let s = ({
+                        let a = ({
                             data: e
                         }) => {
                             if (e.method === t && e.id === n) {
-                                if (this._worker.removeEventListener("message", s), !e.success) {
+                                if (this._worker.removeEventListener("message", a), !e.success) {
                                     ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && I.kg.error("[Replay]", e.response), i(Error("Error in compression worker"));
                                     return
                                 }
                                 r(e.response)
                             }
                         };
-                        this._worker.addEventListener("message", s), this._worker.postMessage({
+                        this._worker.addEventListener("message", a), this._worker.postMessage({
                             id: n,
                             method: t,
                             arg: e
@@ -6980,12 +6929,12 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     n = t.id || (0, A.DM)(),
                     r = t.started || e,
                     i = t.lastActivity || e,
-                    s = t.segmentId || 0;
+                    a = t.segmentId || 0;
                 return {
                     id: n,
                     started: r,
                     lastActivity: i,
-                    segmentId: s,
+                    segmentId: a,
                     sampled: t.sampled,
                     shouldRefresh: !0
                 }
@@ -6998,7 +6947,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                 sessionSampleRate: r,
                 allowBuffering: i
             }) {
-                let s = e || n && function() {
+                let a = e || n && function() {
                     if (!em()) return null;
                     try {
                         let t = z.sessionStorage.getItem($);
@@ -7009,12 +6958,12 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         return null
                     }
                 }();
-                if (s) {
-                    if (!ey(s, t) || i && s.shouldRefresh) return {
+                if (a) {
+                    if (!ey(a, t) || i && a.shouldRefresh) return {
                         type: "saved",
-                        session: s
+                        session: a
                     };
-                    if (!s.shouldRefresh) return {
+                    if (!a.shouldRefresh) return {
                         type: "new",
                         session: eE({
                             sampled: !1
@@ -7030,10 +6979,10 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         stickySession: n = !1
                     }) {
                         var r, i;
-                        let s = eE({
+                        let a = eE({
                             sampled: (r = t, i = e, ev(r) ? "session" : !!i && "buffer")
                         });
-                        return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && I.kg.log(`[Replay] Creating new session: ${s.id}`), n && eb(s), s
+                        return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && I.kg.log(`[Replay] Creating new session: ${a.id}`), n && eb(a), a
                     }({
                         stickySession: n,
                         sessionSampleRate: r,
@@ -7099,9 +7048,9 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     start: n,
                     end: r,
                     name: i,
-                    data: s
+                    data: a
                 }) => {
-                    let a = t.throttledAddEvent({
+                    let s = t.throttledAddEvent({
                         type: g.Custom,
                         timestamp: n,
                         data: {
@@ -7111,11 +7060,11 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                 description: i,
                                 startTimestamp: n,
                                 endTimestamp: r,
-                                data: s
+                                data: a
                             }
                         }
                     });
-                    return "string" == typeof a ? Promise.resolve(null) : a
+                    return "string" == typeof s ? Promise.resolve(null) : s
                 })
             }
 
@@ -7311,10 +7260,10 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     startTimestamp: n,
                     endTimestamp: r,
                     url: i,
-                    method: s,
-                    statusCode: a,
+                    method: a,
+                    statusCode: s,
                     request: o,
-                    response: u
+                    response: l
                 } = e;
                 return {
                     type: t,
@@ -7322,10 +7271,10 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     end: r / 1e3,
                     name: i,
                     data: (0, C.Jr)({
-                        method: s,
-                        statusCode: a,
+                        method: a,
+                        statusCode: s,
                         request: o,
-                        response: u
+                        response: l
                     })
                 }
             }
@@ -7355,7 +7304,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     },
                     {
                         body: i,
-                        warnings: s
+                        warnings: a
                     } = function(t) {
                         if (!t || "string" != typeof t) return {
                             body: t,
@@ -7383,8 +7332,8 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                             warnings: e ? ["TEXT_TRUNCATED"] : []
                         }
                     }(n);
-                return r.body = i, s.length > 0 && (r._meta = {
-                    warnings: s
+                return r.body = i, a.length > 0 && (r._meta = {
+                    warnings: a
                 }), r
             }
 
@@ -7423,12 +7372,12 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     startTimestamp: r,
                     endTimestamp: i
                 } = e, {
-                    url: s,
-                    method: a,
+                    url: a,
+                    method: s,
                     status_code: o = 0,
-                    request_body_size: u,
-                    response_body_size: l
-                } = t.data, c = eL(s, n.networkDetailAllowUrls) && !eL(s, n.networkDetailDenyUrls), d = c ? function({
+                    request_body_size: l,
+                    response_body_size: u
+                } = t.data, c = eL(a, n.networkDetailAllowUrls) && !eL(a, n.networkDetailDenyUrls), d = c ? function({
                     networkCaptureBodies: t,
                     networkRequestHeaders: e
                 }, n, r) {
@@ -7436,34 +7385,34 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         return 1 === t.length && "string" != typeof t[0] ? eq(t[0], e) : 2 === t.length ? eq(t[1], e) : {}
                     }(n, e);
                     return t ? eG(i, r, eA(ej(n))) : eG(i, r, void 0)
-                }(n, e.input, u) : eB(u);
+                }(n, e.input, l) : eB(l);
                 return {
                     startTimestamp: r,
                     endTimestamp: i,
-                    url: s,
-                    method: a,
+                    url: a,
+                    method: s,
                     statusCode: o,
                     request: d,
-                    response: await eP(c, n, e.response, l)
+                    response: await eP(c, n, e.response, u)
                 }
             }
             async function eP(t, {
                 networkCaptureBodies: e,
                 textEncoder: n,
                 networkResponseHeaders: r
-            }, i, s) {
-                if (!t && void 0 !== s) return eB(s);
-                let a = eH(i.headers, r);
-                if (!e && void 0 !== s) return eG(a, s, void 0);
+            }, i, a) {
+                if (!t && void 0 !== a) return eB(a);
+                let s = eH(i.headers, r);
+                if (!e && void 0 !== a) return eG(s, a, void 0);
                 try {
                     let r = i.clone(),
                         o = await eF(r),
-                        u = o && o.length && void 0 === s ? eU(o, n) : s;
-                    if (!t) return eB(u);
-                    if (e) return eG(a, u, o);
-                    return eG(a, u, void 0)
+                        l = o && o.length && void 0 === a ? eU(o, n) : a;
+                    if (!t) return eB(l);
+                    if (e) return eG(s, l, o);
+                    return eG(s, l, void 0)
                 } catch (t) {
-                    return eG(a, s, void 0)
+                    return eG(s, a, void 0)
                 }
             }
             async function eF(t) {
@@ -7496,12 +7445,12 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                             let {
                                 startTimestamp: r,
                                 endTimestamp: i,
-                                input: s,
-                                xhr: a
+                                input: a,
+                                xhr: s
                             } = e, {
                                 url: o,
-                                method: u,
-                                status_code: l = 0,
+                                method: l,
+                                status_code: u = 0,
                                 request_body_size: c,
                                 response_body_size: d
                             } = t.data;
@@ -7512,13 +7461,13 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                     startTimestamp: r,
                                     endTimestamp: i,
                                     url: o,
-                                    method: u,
-                                    statusCode: l,
+                                    method: l,
+                                    statusCode: u,
                                     request: t,
                                     response: eB(d)
                                 }
                             }
-                            let h = a[O.xU],
+                            let h = s[O.xU],
                                 _ = h ? eM(h.request_headers, n.networkRequestHeaders) : {},
                                 f = eM(function(t) {
                                     let e = t.getAllResponseHeaders();
@@ -7526,14 +7475,14 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                         let [n, r] = e.split(": ");
                                         return t[n.toLowerCase()] = r, t
                                     }, {}) : {}
-                                }(a), n.networkResponseHeaders),
-                                p = eG(_, c, n.networkCaptureBodies ? eA(s) : void 0);
+                                }(s), n.networkResponseHeaders),
+                                p = eG(_, c, n.networkCaptureBodies ? eA(a) : void 0);
                             return {
                                 startTimestamp: r,
                                 endTimestamp: i,
                                 url: o,
-                                method: u,
-                                statusCode: l,
+                                method: l,
+                                statusCode: u,
                                 request: p,
                                 response: eG(f, d, n.networkCaptureBodies ? e.xhr.responseText : void 0)
                             }
@@ -7622,21 +7571,21 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         initiatorType: n,
                         name: r,
                         responseEnd: i,
-                        startTime: s,
-                        decodedBodySize: a,
+                        startTime: a,
+                        decodedBodySize: s,
                         encodedBodySize: o,
-                        responseStatus: u,
-                        transferSize: l
+                        responseStatus: l,
+                        transferSize: u
                     } = t;
                     return ["fetch", "xmlhttprequest"].includes(n) ? null : {
                         type: `${e}.${n}`,
-                        start: e0(s),
+                        start: e0(a),
                         end: e0(i),
                         name: r,
                         data: {
-                            size: l,
-                            statusCode: u,
-                            decodedBodySize: a,
+                            size: u,
+                            statusCode: l,
+                            decodedBodySize: s,
                             encodedBodySize: o
                         }
                     }
@@ -7647,12 +7596,12 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         entryType: n,
                         name: r,
                         startTime: i
-                    } = t, s = e0(i);
+                    } = t, a = e0(i);
                     return {
                         type: n,
                         name: r,
-                        start: s,
-                        end: s + e,
+                        start: a,
+                        end: a + e,
                         data: void 0
                     }
                 },
@@ -7662,11 +7611,11 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         name: n,
                         decodedBodySize: r,
                         duration: i,
-                        domComplete: s,
-                        encodedBodySize: a,
+                        domComplete: a,
+                        encodedBodySize: s,
                         domContentLoadedEventStart: o,
-                        domContentLoadedEventEnd: u,
-                        domInteractive: l,
+                        domContentLoadedEventEnd: l,
+                        domInteractive: u,
                         loadEventStart: c,
                         loadEventEnd: d,
                         redirectCount: h,
@@ -7677,19 +7626,19 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     return 0 === i ? null : {
                         type: `${e}.${p}`,
                         start: e0(_),
-                        end: e0(s),
+                        end: e0(a),
                         name: n,
                         data: {
                             size: f,
                             decodedBodySize: r,
-                            encodedBodySize: a,
+                            encodedBodySize: s,
                             duration: i,
-                            domInteractive: l,
+                            domInteractive: u,
                             domContentLoadedEventStart: o,
-                            domContentLoadedEventEnd: u,
+                            domContentLoadedEventEnd: l,
                             loadEventStart: c,
                             loadEventEnd: d,
-                            domComplete: s,
+                            domComplete: a,
                             redirectCount: h
                         }
                     }
@@ -7704,15 +7653,15 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         let t = z.performance.getEntriesByType("navigation")[0];
                         i = t && t.activationStart || 0
                     }
-                    let s = Math.max(n - i, 0),
-                        a = e0(i) + s / 1e3;
+                    let a = Math.max(n - i, 0),
+                        s = e0(i) + a / 1e3;
                     return {
                         type: e,
                         name: e,
-                        start: a,
-                        end: a,
+                        start: s,
+                        end: s,
                         data: {
-                            value: s,
+                            value: a,
                             size: r,
                             nodeId: t4.mirror.getId(t.element)
                         }
@@ -7734,22 +7683,22 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                 event: r
             }) {
                 let i = "object" != typeof t._integrations || null === t._integrations || Array.isArray(t._integrations) ? void 0 : Object.keys(t._integrations),
-                    s = await (0, R.R)(t.getOptions(), r, {
+                    a = await (0, R.R)(t.getOptions(), r, {
                         event_id: n,
                         integrations: i
                     }, e);
-                if (!s) return null;
-                s.platform = s.platform || "javascript";
-                let a = t.getSdkMetadata && t.getSdkMetadata(),
+                if (!a) return null;
+                a.platform = a.platform || "javascript";
+                let s = t.getSdkMetadata && t.getSdkMetadata(),
                     {
                         name: o,
-                        version: u
-                    } = a && a.sdk || {};
-                return s.sdk = {
-                    ...s.sdk,
+                        version: l
+                    } = s && s.sdk || {};
+                return a.sdk = {
+                    ...a.sdk,
                     name: o || "sentry.javascript.unknown",
-                    version: u || "0.0.0"
-                }, s
+                    version: l || "0.0.0"
+                }, a
             }
             async function e2({
                 recordingData: t,
@@ -7757,9 +7706,9 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                 segmentId: n,
                 eventContext: r,
                 timestamp: i,
-                session: s
+                session: a
             }) {
-                var a, o, u, l;
+                var s, o, l, u;
                 let c;
                 let d = function({
                         recordingData: t,
@@ -7791,7 +7740,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     y = m.getScope(),
                     v = g && g.getTransport(),
                     b = g && g.getDsn();
-                if (!g || !v || !b || !s.sampled) return;
+                if (!g || !v || !b || !a.sampled) return;
                 let E = {
                         type: "replay_event",
                         replay_start_timestamp: p / 1e3,
@@ -7801,7 +7750,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         urls: h,
                         replay_id: e,
                         segment_id: n,
-                        replay_type: s.sampled
+                        replay_type: a.sampled
                     },
                     S = await e1({
                         scope: y,
@@ -7814,10 +7763,10 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     return
                 }
                 delete S.sdkProcessingMetadata;
-                let w = (a = S, o = d, u = b, l = g.getOptions().tunnel, (0, M.Jd)((0, M.Cd)(a, (0, M.HY)(a), l, u), [
+                let w = (s = S, o = d, l = b, u = g.getOptions().tunnel, (0, M.Jd)((0, M.Cd)(s, (0, M.HY)(s), u, l), [
                     [{
                         type: "replay_event"
-                    }, a],
+                    }, s],
                     [{
                         type: "replay_recording",
                         length: "string" == typeof o ? new TextEncoder().encode(o).length : o.length
@@ -7926,23 +7875,23 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     recordingOptions: e
                 }) {
                     e4.prototype.__init.call(this), e4.prototype.__init2.call(this), e4.prototype.__init3.call(this), e4.prototype.__init4.call(this), e4.prototype.__init5.call(this), e4.prototype.__init6.call(this), e4.prototype.__init7.call(this), e4.prototype.__init8.call(this), e4.prototype.__init9.call(this), e4.prototype.__init10.call(this), e4.prototype.__init11.call(this), e4.prototype.__init12.call(this), e4.prototype.__init13.call(this), e4.prototype.__init14.call(this), e4.prototype.__init15.call(this), e4.prototype.__init16.call(this), e4.prototype.__init17.call(this), e4.prototype.__init18.call(this), this._recordingOptions = e, this._options = t, this._debouncedFlush = function(t, e, n) {
-                        let r, i, s;
-                        let a = n && n.maxWait ? Math.max(n.maxWait, e) : 0;
+                        let r, i, a;
+                        let s = n && n.maxWait ? Math.max(n.maxWait, e) : 0;
 
                         function o() {
-                            return u(), r = t()
-                        }
-
-                        function u() {
-                            void 0 !== i && clearTimeout(i), void 0 !== s && clearTimeout(s), i = s = void 0
+                            return l(), r = t()
                         }
 
                         function l() {
-                            return i && clearTimeout(i), i = setTimeout(o, e), a && void 0 === s && (s = setTimeout(o, a)), r
+                            void 0 !== i && clearTimeout(i), void 0 !== a && clearTimeout(a), i = a = void 0
                         }
-                        return l.cancel = u, l.flush = function() {
-                            return void 0 !== i || void 0 !== s ? o() : r
-                        }, l
+
+                        function u() {
+                            return i && clearTimeout(i), i = setTimeout(o, e), s && void 0 === a && (a = setTimeout(o, s)), r
+                        }
+                        return u.cancel = l, u.flush = function() {
+                            return void 0 !== i || void 0 !== a ? o() : r
+                        }, u
                     }(() => this._flush(), this._options.flushMinDelay, {
                         maxWait: this._options.flushMaxDelay
                     }), this._throttledAddEvent = function(t, e, n) {
@@ -7953,15 +7902,15 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                     n < e && r.delete(n)
                                 })
                             },
-                            s = () => [...r.values()].reduce((t, e) => t + e, 0),
-                            a = !1;
+                            a = () => [...r.values()].reduce((t, e) => t + e, 0),
+                            s = !1;
                         return (...e) => {
                             let n = Math.floor(Date.now() / 1e3);
-                            if (i(n), s() >= 300) {
-                                let t = a;
-                                return a = !0, t ? "__SKIPPED" : e6
+                            if (i(n), a() >= 300) {
+                                let t = s;
+                                return s = !0, t ? "__SKIPPED" : e6
                             }
-                            a = !1;
+                            s = !1;
                             let o = r.get(n) || 0;
                             return r.set(n, o + 1), t(...e)
                         }
@@ -8242,7 +8191,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                             var e;
                             let n = (0, k.Gd)().getScope(),
                                 r = (0, k.Gd)().getClient();
-                            n && n.addScopeListener(eJ(t)), (0, O.oq)("dom", ea(t)), (0, O.oq)("history", (e = t, t => {
+                            n && n.addScopeListener(eJ(t)), (0, O.oq)("dom", es(t)), (0, O.oq)("history", (e = t, t => {
                                     if (!e.isEnabled()) return;
                                     let n = function(t) {
                                         let {
@@ -8265,20 +8214,20 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                     try {
                                         let i = new TextEncoder,
                                             {
-                                                networkDetailAllowUrls: s,
-                                                networkDetailDenyUrls: a,
+                                                networkDetailAllowUrls: a,
+                                                networkDetailDenyUrls: s,
                                                 networkCaptureBodies: o,
-                                                networkRequestHeaders: u,
-                                                networkResponseHeaders: l
+                                                networkRequestHeaders: l,
+                                                networkResponseHeaders: u
                                             } = t.getOptions(),
                                             c = {
                                                 replay: t,
                                                 textEncoder: i,
-                                                networkDetailAllowUrls: s,
-                                                networkDetailDenyUrls: a,
+                                                networkDetailAllowUrls: a,
+                                                networkDetailDenyUrls: s,
                                                 networkCaptureBodies: o,
-                                                networkRequestHeaders: u,
-                                                networkResponseHeaders: l
+                                                networkRequestHeaders: l,
+                                                networkResponseHeaders: u
                                             };
                                         if (e && e.on) e.on("beforeAddBreadcrumb", (t, e) => (function(t, e, n) {
                                             if (!!e.data) try {
@@ -8290,8 +8239,8 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                                     let {
                                                         xhr: r,
                                                         input: i
-                                                    } = e, s = eU(i, n.textEncoder), a = r.getResponseHeader("content-length") ? eI(r.getResponseHeader("content-length")) : eU(r.response, n.textEncoder);
-                                                    void 0 !== s && (t.data.request_body_size = s), void 0 !== a && (t.data.response_body_size = a)
+                                                    } = e, a = eU(i, n.textEncoder), s = r.getResponseHeader("content-length") ? eI(r.getResponseHeader("content-length")) : eU(r.response, n.textEncoder);
+                                                    void 0 !== a && (t.data.request_body_size = a), void 0 !== s && (t.data.response_body_size = s)
                                                 }(e, n, t), eW(e, n, t)),
                                                 function(t) {
                                                     return "fetch" === t.category
@@ -8301,8 +8250,8 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                                     let {
                                                         input: r,
                                                         response: i
-                                                    } = e, s = eU(ej(r), n.textEncoder), a = i ? eI(i.headers.get("content-length")) : void 0;
-                                                    void 0 !== s && (t.data.request_body_size = s), void 0 !== a && (t.data.response_body_size = a)
+                                                    } = e, a = eU(ej(r), n.textEncoder), s = i ? eI(i.headers.get("content-length")) : void 0;
+                                                    void 0 !== a && (t.data.request_body_size = a), void 0 !== s && (t.data.response_body_size = s)
                                                 }(e, n, t), ez(e, n, t))
                                             } catch (t) {
                                                 ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && I.kg.warn("Error when enriching network breadcrumb")
@@ -8320,16 +8269,16 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                                     } = t;
                                                     if (!n) return null;
                                                     let {
-                                                        method: s,
-                                                        url: a
+                                                        method: a,
+                                                        url: s
                                                     } = r;
                                                     return {
                                                         type: "resource.fetch",
                                                         start: e / 1e3,
                                                         end: n / 1e3,
-                                                        name: a,
+                                                        name: s,
                                                         data: {
-                                                            method: s,
+                                                            method: a,
                                                             statusCode: i ? i.status : void 0
                                                         }
                                                     }
@@ -8343,17 +8292,17 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                                     } = t, i = r[O.xU];
                                                     if (!e || !n || !i) return null;
                                                     let {
-                                                        method: s,
-                                                        url: a,
+                                                        method: a,
+                                                        url: s,
                                                         status_code: o
                                                     } = i;
-                                                    return void 0 === a ? null : {
+                                                    return void 0 === s ? null : {
                                                         type: "resource.xhr",
-                                                        name: a,
+                                                        name: s,
                                                         start: e / 1e3,
                                                         end: n / 1e3,
                                                         data: {
-                                                            method: s,
+                                                            method: a,
                                                             statusCode: o
                                                         }
                                                     }
@@ -8364,11 +8313,11 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                 }(t), (0, T.c)(function(t, e = !1) {
                                     let n = e ? eR(t) : void 0;
                                     return (e, r) => {
-                                        var i, s, a, o;
+                                        var i, a, s, o;
                                         if ("replay_event" === e.type) return delete e.breadcrumbs, e;
                                         if (e.type && !eT(e)) return e;
-                                        if (i = e, s = r, !i.type && i.exception && i.exception.values && i.exception.values.length && (s.originalException && s.originalException.__rrweb__ || i.exception.values.some(t => !!t.stacktrace && !!t.stacktrace.frames && !!t.stacktrace.frames.length && t.stacktrace.frames.some(t => t.filename && t.filename.includes("/rrweb/src/")))) && !t.getOptions()._experiments.captureExceptions) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && I.kg.log("[Replay] Ignoring error from rrweb internals", e), null;
-                                        return a = t, o = e, ("buffer" === a.recordingMode && o.message !== P && o.exception && !o.type && ev(a.getOptions().errorSampleRate) || "session" === t.recordingMode) && (e.tags = {
+                                        if (i = e, a = r, !i.type && i.exception && i.exception.values && i.exception.values.length && (a.originalException && a.originalException.__rrweb__ || i.exception.values.some(t => !!t.stacktrace && !!t.stacktrace.frames && !!t.stacktrace.frames.length && t.stacktrace.frames.some(t => t.filename && t.filename.includes("/rrweb/src/")))) && !t.getOptions()._experiments.captureExceptions) return ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && I.kg.log("[Replay] Ignoring error from rrweb internals", e), null;
+                                        return s = t, o = e, ("buffer" === s.recordingMode && o.message !== P && o.exception && !o.type && ev(s.getOptions().errorSampleRate) || "session" === t.recordingMode) && (e.tags = {
                                             ...e.tags,
                                             replayId: t.getSessionId()
                                         }), n && n(e, {
@@ -8399,18 +8348,18 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                     [],
                                     [],
                                     []
-                                ]), s = [], a = [], o = r.length ? r[r.length - 1] : void 0;
+                                ]), a = [], s = [], o = r.length ? r[r.length - 1] : void 0;
                                 return e.forEach(t => {
                                     if ("largest-contentful-paint" === t.entryType) {
                                         (!o || o.startTime < t.startTime) && (o = t);
                                         return
                                     }
                                     if ("navigation" === t.entryType) {
-                                        t.duration > 0 && !n.find(el(t)) && !a.find(el(t)) && a.push(t);
+                                        t.duration > 0 && !n.find(eu(t)) && !s.find(eu(t)) && s.push(t);
                                         return
                                     }
-                                    s.push(t)
-                                }), [...o ? [o] : [], ...n, ...i, ...s, ...a].sort((t, e) => t.startTime - e.startTime)
+                                    a.push(t)
+                                }), [...o ? [o] : [], ...n, ...i, ...a, ...s].sort((t, e) => t.startTime - e.startTime)
                             }(t.performanceEvents, e.getEntries());
                             t.performanceEvents = n
                         });
@@ -8463,29 +8412,29 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                     shiftKey: n,
                                     ctrlKey: r,
                                     altKey: i,
-                                    key: s,
-                                    target: a
+                                    key: a,
+                                    target: s
                                 } = t;
-                                if (!a || function(t) {
+                                if (!s || function(t) {
                                         return "INPUT" === t.tagName || "TEXTAREA" === t.tagName || t.isContentEditable
-                                    }(a) || !s) return null;
+                                    }(s) || !a) return null;
                                 let o = e || r || i,
-                                    u = 1 === s.length;
-                                if (!o && u) return null;
-                                let l = (0, U.Rt)(a, {
+                                    l = 1 === a.length;
+                                if (!o && l) return null;
+                                let u = (0, U.Rt)(s, {
                                         maxStringLength: 200
                                     }) || "<unknown>",
-                                    c = eo(a, l);
+                                    c = eo(s, u);
                                 return ei({
                                     category: "ui.keyDown",
-                                    message: l,
+                                    message: u,
                                     data: {
                                         ...c.data,
                                         metaKey: e,
                                         shiftKey: n,
                                         ctrlKey: r,
                                         altKey: i,
-                                        key: s
+                                        key: a
                                     }
                                 })
                             }(e);
@@ -8668,11 +8617,11 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     minReplayDuration: n = 4999,
                     stickySession: r = !0,
                     useCompression: i = !0,
-                    _experiments: s = {},
-                    sessionSampleRate: a,
+                    _experiments: a = {},
+                    sessionSampleRate: s,
                     errorSampleRate: o,
-                    maskAllText: u = !0,
-                    maskAllInputs: l = !0,
+                    maskAllText: l = !0,
+                    maskAllInputs: u = !0,
                     blockAllMedia: c = !0,
                     mutationBreadcrumbLimit: d = 750,
                     mutationLimit: h = 1e4,
@@ -8698,8 +8647,8 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     ignoreClass: I
                 } = {}) {
                     if (nn.prototype.__init.call(this), this._recordingOptions = {
-                            maskAllInputs: l,
-                            maskAllText: u,
+                            maskAllInputs: u,
+                            maskAllText: l,
                             maskInputOptions: {
                                 ...N || {},
                                 password: !0
@@ -8712,24 +8661,24 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                                 block: n,
                                 unblock: r,
                                 ignore: i,
-                                blockClass: s,
-                                blockSelector: a,
+                                blockClass: a,
+                                blockSelector: s,
                                 maskTextClass: o,
-                                maskTextSelector: u,
-                                ignoreClass: l
+                                maskTextSelector: l,
+                                ignoreClass: u
                             }) {
-                                let c = e8(t, [".sentry-mask", "[data-sentry-mask]"], o, u),
+                                let c = e8(t, [".sentry-mask", "[data-sentry-mask]"], o, l),
                                     d = e8(e, [".sentry-unmask", "[data-sentry-unmask]"]),
                                     h = {
                                         maskTextSelector: c,
                                         unmaskTextSelector: d,
                                         maskInputSelector: c,
                                         unmaskInputSelector: d,
-                                        blockSelector: e8(n, [".sentry-block", "[data-sentry-block]", 'base[href="/"]'], s, a),
+                                        blockSelector: e8(n, [".sentry-block", "[data-sentry-block]", 'base[href="/"]'], a, s),
                                         unblockSelector: e8(r, [".sentry-unblock", "[data-sentry-unblock]"]),
-                                        ignoreSelector: e8(i, [".sentry-ignore", "[data-sentry-ignore]", 'input[type="file"]'], l)
+                                        ignoreSelector: e8(i, [".sentry-ignore", "[data-sentry-ignore]", 'input[type="file"]'], u)
                                     };
-                                return s instanceof RegExp && (h.blockClass = s), o instanceof RegExp && (h.maskTextClass = o), h
+                                return a instanceof RegExp && (h.blockClass = a), o instanceof RegExp && (h.maskTextClass = o), h
                             }({
                                 mask: b,
                                 unmask: E,
@@ -8751,12 +8700,12 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                             flushMaxDelay: e,
                             minReplayDuration: Math.min(n, 15e3),
                             stickySession: r,
-                            sessionSampleRate: a,
+                            sessionSampleRate: s,
                             errorSampleRate: o,
                             useCompression: i,
                             blockAllMedia: c,
-                            maskAllInputs: l,
-                            maskAllText: u,
+                            maskAllInputs: u,
+                            maskAllText: l,
                             mutationBreadcrumbLimit: d,
                             mutationLimit: h,
                             slowClickTimeout: _,
@@ -8767,11 +8716,11 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                             networkRequestHeaders: nr(y),
                             networkResponseHeaders: nr(v),
                             beforeAddRecordingEvent: R,
-                            _experiments: s
-                        }, "number" == typeof a && (console.warn(`[Replay] You are passing \`sessionSampleRate\` to the Replay integration.
+                            _experiments: a
+                        }, "number" == typeof s && (console.warn(`[Replay] You are passing \`sessionSampleRate\` to the Replay integration.
 This option is deprecated and will be removed soon.
 Instead, configure \`replaysSessionSampleRate\` directly in the SDK init options, e.g.:
-Sentry.init({ replaysSessionSampleRate: ${a} })`), this._initialOptions.sessionSampleRate = a), "number" == typeof o && (console.warn(`[Replay] You are passing \`errorSampleRate\` to the Replay integration.
+Sentry.init({ replaysSessionSampleRate: ${s} })`), this._initialOptions.sessionSampleRate = s), "number" == typeof o && (console.warn(`[Replay] You are passing \`errorSampleRate\` to the Replay integration.
 This option is deprecated and will be removed soon.
 Instead, configure \`replaysOnErrorSampleRate\` directly in the SDK init options, e.g.:
 Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSampleRate = o), this._initialOptions.blockAllMedia && (this._recordingOptions.blockSelector = this._recordingOptions.blockSelector ? `${this._recordingOptions.blockSelector},${e7}` : e7), this._isInitialized && e9()) throw Error("Multiple Sentry Session Replay instances are not supported");
@@ -8828,41 +8777,40 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
             }
         },
         147658: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Z: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(46834),
                 i = n(336344);
 
-            function s(t, e, n = 250, s, u, l, c) {
-                if (!l.exception || !l.exception.values || !c || !(0, r.V9)(c.originalException, Error)) return;
-                let d = l.exception.values.length > 0 ? l.exception.values[l.exception.values.length - 1] : void 0;
-                d && (l.exception.values = function(t, e) {
+            function a(t, e, n = 250, a, l, u, c) {
+                if (!u.exception || !u.exception.values || !c || !(0, r.V9)(c.originalException, Error)) return;
+                let d = u.exception.values.length > 0 ? u.exception.values[u.exception.values.length - 1] : void 0;
+                d && (u.exception.values = function(t, e) {
                     return t.map(t => (t.value && (t.value = (0, i.$G)(t.value, e)), t))
-                }(function t(e, n, i, s, u, l, c, d) {
-                    if (l.length >= i + 1) return l;
-                    let h = [...l];
-                    if ((0, r.V9)(s[u], Error)) {
-                        a(c, d);
-                        let r = e(n, s[u]),
-                            l = h.length;
-                        o(r, u, l, d), h = t(e, n, i, s[u], u, [r, ...h], r, l)
+                }(function t(e, n, i, a, l, u, c, d) {
+                    if (u.length >= i + 1) return u;
+                    let h = [...u];
+                    if ((0, r.V9)(a[l], Error)) {
+                        s(c, d);
+                        let r = e(n, a[l]),
+                            u = h.length;
+                        o(r, l, u, d), h = t(e, n, i, a[l], l, [r, ...h], r, u)
                     }
-                    return Array.isArray(s.errors) && s.errors.forEach((s, l) => {
-                        if ((0, r.V9)(s, Error)) {
-                            a(c, d);
-                            let r = e(n, s),
+                    return Array.isArray(a.errors) && a.errors.forEach((a, u) => {
+                        if ((0, r.V9)(a, Error)) {
+                            s(c, d);
+                            let r = e(n, a),
                                 _ = h.length;
-                            o(r, `errors[${l}]`, _, d), h = t(e, n, i, s, u, [r, ...h], r, _)
+                            o(r, `errors[${u}]`, _, d), h = t(e, n, i, a, l, [r, ...h], r, _)
                         }
                     }), h
-                }(t, e, u, c.originalException, s, l.exception.values, d, 0), n))
+                }(t, e, l, c.originalException, a, u.exception.values, d, 0), n))
             }
 
-            function a(t, e) {
+            function s(t, e) {
                 t.mechanism = t.mechanism || {
                     type: "generic",
                     handled: !0
@@ -8887,25 +8835,24 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
             }
         },
         545459: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 EN: function() {
-                    return u
-                },
-                IQ: function() {
                     return l
                 },
+                IQ: function() {
+                    return u
+                },
                 bU: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(46834),
                 i = n(529866);
-            let s = "baggage",
-                a = "sentry-",
+            let a = "baggage",
+                s = "sentry-",
                 o = /^sentry-/;
 
-            function u(t) {
+            function l(t) {
                 if (!(0, r.HD)(t) && !Array.isArray(t)) return;
                 let e = {};
                 if (Array.isArray(t)) e = t.reduce((t, e) => {
@@ -8919,18 +8866,18 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
                     if (!t) return;
                     e = c(t)
                 }
-                let n = Object.entries(e).reduce((t, [e, n]) => (e.match(o) && (t[e.slice(a.length)] = n), t), {});
+                let n = Object.entries(e).reduce((t, [e, n]) => (e.match(o) && (t[e.slice(s.length)] = n), t), {});
                 return Object.keys(n).length > 0 ? n : void 0
             }
 
-            function l(t) {
+            function u(t) {
                 if (!!t) return function(t) {
                     if (0 !== Object.keys(t).length) return Object.entries(t).reduce((t, [e, n], r) => {
-                        let s = `${encodeURIComponent(e)}=${encodeURIComponent(n)}`,
-                            a = 0 === r ? s : `${t},${s}`;
-                        return a.length > 8192 ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.warn(`Not adding key: ${e} with val: ${n} to baggage header due to exceeding baggage size limits.`), t) : a
+                        let a = `${encodeURIComponent(e)}=${encodeURIComponent(n)}`,
+                            s = 0 === r ? a : `${t},${a}`;
+                        return s.length > 8192 ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.warn(`Not adding key: ${e} with val: ${n} to baggage header due to exceeding baggage size limits.`), t) : s
                     }, "")
-                }(Object.entries(t).reduce((t, [e, n]) => (n && (t[`${a}${e}`] = n), t), {}))
+                }(Object.entries(t).reduce((t, [e, n]) => (n && (t[`${s}${e}`] = n), t), {}))
             }
 
             function c(t) {
@@ -8938,13 +8885,12 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
             }
         },
         829919: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Rt: function() {
-                    return s
+                    return a
                 },
                 l4: function() {
-                    return a
+                    return s
                 },
                 qT: function() {
                     return o
@@ -8953,40 +8899,40 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
             var r = n(46834);
             let i = (0, n(24716).Rf)();
 
-            function s(t, e = {}) {
+            function a(t, e = {}) {
                 try {
                     let n, i = t,
-                        s = [],
-                        a = 0,
+                        a = [],
+                        s = 0,
                         o = 0,
-                        u = 3,
-                        l = Array.isArray(e) ? e : e.keyAttrs,
+                        l = 3,
+                        u = Array.isArray(e) ? e : e.keyAttrs,
                         c = !Array.isArray(e) && e.maxStringLength || 80;
-                    for (; i && a++ < 5 && (n = function(t, e) {
-                            let n, i, s, a, o;
-                            let u = [];
+                    for (; i && s++ < 5 && (n = function(t, e) {
+                            let n, i, a, s, o;
+                            let l = [];
                             if (!t || !t.tagName) return "";
-                            u.push(t.tagName.toLowerCase());
-                            let l = e && e.length ? e.filter(e => t.getAttribute(e)).map(e => [e, t.getAttribute(e)]) : null;
-                            if (l && l.length) l.forEach(t => {
-                                u.push(`[${t[0]}="${t[1]}"]`)
+                            l.push(t.tagName.toLowerCase());
+                            let u = e && e.length ? e.filter(e => t.getAttribute(e)).map(e => [e, t.getAttribute(e)]) : null;
+                            if (u && u.length) u.forEach(t => {
+                                l.push(`[${t[0]}="${t[1]}"]`)
                             });
-                            else if (t.id && u.push(`#${t.id}`), (n = t.className) && (0, r.HD)(n))
-                                for (o = 0, i = n.split(/\s+/); o < i.length; o++) u.push(`.${i[o]}`);
+                            else if (t.id && l.push(`#${t.id}`), (n = t.className) && (0, r.HD)(n))
+                                for (o = 0, i = n.split(/\s+/); o < i.length; o++) l.push(`.${i[o]}`);
                             let c = ["aria-label", "type", "name", "title", "alt"];
-                            for (o = 0; o < c.length; o++) s = c[o], (a = t.getAttribute(s)) && u.push(`[${s}="${a}"]`);
-                            return u.join("")
-                        }(i, l), "html" !== n && (!(a > 1) || !(o + s.length * u + n.length >= c)));) {
+                            for (o = 0; o < c.length; o++) a = c[o], (s = t.getAttribute(a)) && l.push(`[${a}="${s}"]`);
+                            return l.join("")
+                        }(i, u), "html" !== n && (!(s > 1) || !(o + a.length * l + n.length >= c)));) {
                         ;
-                        s.push(n), o += n.length, i = i.parentNode
+                        a.push(n), o += n.length, i = i.parentNode
                     }
-                    return s.reverse().join(" > ")
+                    return a.reverse().join(" > ")
                 } catch (t) {
                     return "<unknown>"
                 }
             }
 
-            function a() {
+            function s() {
                 try {
                     return i.document.location.href
                 } catch (t) {
@@ -8999,17 +8945,16 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
             }
         },
         854569: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 y: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(50074),
                 i = n(868145);
 
-            function s(t, e, n) {
-                let s = [{
+            function a(t, e, n) {
+                let a = [{
                     type: "client_report"
                 }, {
                     timestamp: n || (0, i.yW)(),
@@ -9017,55 +8962,54 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
                 }];
                 return (0, r.Jd)(e ? {
                     dsn: e
-                } : {}, [s])
+                } : {}, [a])
             }
         },
         177668: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 RA: function() {
-                    return s
-                },
-                U4: function() {
                     return a
                 },
+                U4: function() {
+                    return s
+                },
                 vK: function() {
-                    return u
+                    return l
                 }
             });
             var r = n(529866);
             let i = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
 
-            function s(t, e = !1) {
+            function a(t, e = !1) {
                 let {
                     host: n,
                     path: r,
                     pass: i,
-                    port: s,
-                    projectId: a,
+                    port: a,
+                    projectId: s,
                     protocol: o,
-                    publicKey: u
+                    publicKey: l
                 } = t;
-                return `${o}://${u}${e&&i?`:${i}`:""}@${n}${s?`:${s}`:""}/${r?`${r}/`:r}${a}`
+                return `${o}://${l}${e&&i?`:${i}`:""}@${n}${a?`:${a}`:""}/${r?`${r}/`:r}${s}`
             }
 
-            function a(t) {
+            function s(t) {
                 let e = i.exec(t);
                 if (!e) {
                     console.error(`Invalid Sentry Dsn: ${t}`);
                     return
                 }
-                let [n, r, s = "", a, u = "", l] = e.slice(1), c = "", d = l, h = d.split("/");
+                let [n, r, a = "", s, l = "", u] = e.slice(1), c = "", d = u, h = d.split("/");
                 if (h.length > 1 && (c = h.slice(0, -1).join("/"), d = h.pop()), d) {
                     let t = d.match(/^\d+/);
                     t && (d = t[0])
                 }
                 return o({
-                    host: a,
-                    pass: s,
+                    host: s,
+                    pass: a,
                     path: c,
                     projectId: d,
-                    port: u,
+                    port: l,
                     protocol: n,
                     publicKey: r
                 })
@@ -9083,25 +9027,23 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
                 }
             }
 
-            function u(t) {
-                let e = "string" == typeof t ? a(t) : o(t);
+            function l(t) {
+                let e = "string" == typeof t ? s(t) : o(t);
                 if (!!e && !! function(t) {
                         var e;
                         if (!("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__)) return !0;
                         let {
                             port: n,
                             projectId: i,
-                            protocol: s
+                            protocol: a
                         } = t;
                         if (["protocol", "publicKey", "host", "projectId"].find(e => !t[e] && (r.kg.error(`Invalid Sentry Dsn: ${e} missing`), !0))) return !1;
                         if (!i.match(/^\d+$/)) return r.kg.error(`Invalid Sentry Dsn: Invalid projectId ${i}`), !1;
-                        return "http" === (e = s) || "https" === e ? !(n && isNaN(parseInt(n, 10))) || (r.kg.error(`Invalid Sentry Dsn: Invalid port ${n}`), !1) : (r.kg.error(`Invalid Sentry Dsn: Invalid protocol ${s}`), !1)
+                        return "http" === (e = a) || "https" === e ? !(n && isNaN(parseInt(n, 10))) || (r.kg.error(`Invalid Sentry Dsn: Invalid port ${n}`), !1) : (r.kg.error(`Invalid Sentry Dsn: Invalid protocol ${a}`), !1)
                     }(e)) return e
             }
         },
         468391: function(t, e, n) {
-            "use strict";
-
             function r() {
                 return "undefined" != typeof __SENTRY_BROWSER_BUNDLE__ && !!__SENTRY_BROWSER_BUNDLE__
             }
@@ -9119,7 +9061,6 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
             })
         },
         50074: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 BO: function() {
                     return o
@@ -9131,10 +9072,10 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
                     return m
                 },
                 Jd: function() {
-                    return a
+                    return s
                 },
                 R: function() {
-                    return l
+                    return u
                 },
                 V$: function() {
                     return d
@@ -9143,7 +9084,7 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
                     return h
                 },
                 gv: function() {
-                    return u
+                    return l
                 },
                 mL: function() {
                     return p
@@ -9154,9 +9095,9 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
             });
             var r = n(177668),
                 i = n(10674),
-                s = n(442853);
+                a = n(442853);
 
-            function a(t, e = []) {
+            function s(t, e = []) {
                 return [t, e]
             }
 
@@ -9165,7 +9106,7 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
                 return [n, [...r, e]]
             }
 
-            function u(t, e) {
+            function l(t, e) {
                 for (let n of t[1]) {
                     let t = n[0].type;
                     if (e(n, t)) return !0
@@ -9173,8 +9114,8 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
                 return !1
             }
 
-            function l(t, e) {
-                return u(t, (t, n) => e.includes(n))
+            function u(t, e) {
+                return l(t, (t, n) => e.includes(n))
             }
 
             function c(t, e) {
@@ -9182,16 +9123,16 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`), this._initialOptions.errorSam
             }
 
             function d(t, e) {
-                let [n, r] = t, s = JSON.stringify(n);
+                let [n, r] = t, a = JSON.stringify(n);
 
-                function a(t) {
-                    "string" == typeof s ? s = "string" == typeof t ? s + t : [c(s, e), t] : s.push("string" == typeof t ? c(t, e) : t)
+                function s(t) {
+                    "string" == typeof a ? a = "string" == typeof t ? a + t : [c(a, e), t] : a.push("string" == typeof t ? c(t, e) : t)
                 }
                 for (let t of r) {
                     let [e, n] = t;
-                    if (a(`
+                    if (s(`
 ${JSON.stringify(e)}
-`), "string" == typeof n || n instanceof Uint8Array) a(n);
+`), "string" == typeof n || n instanceof Uint8Array) s(n);
                     else {
                         let t;
                         try {
@@ -9199,15 +9140,15 @@ ${JSON.stringify(e)}
                         } catch (e) {
                             t = JSON.stringify((0, i.Fv)(n))
                         }
-                        a(t)
+                        s(t)
                     }
                 }
-                return "string" == typeof s ? s : function(t) {
+                return "string" == typeof a ? a : function(t) {
                     let e = new Uint8Array(t.reduce((t, e) => t + e.length, 0)),
                         n = 0;
                     for (let r of t) e.set(r, n), n += r.length;
                     return e
-                }(s)
+                }(a)
             }
 
             function h(t, e, n) {
@@ -9218,23 +9159,23 @@ ${JSON.stringify(e)}
                     return r = r.subarray(t + 1), e
                 }
 
-                function s() {
+                function a() {
                     let t = r.indexOf(10);
                     return t < 0 && (t = r.length), JSON.parse(n.decode(i(t)))
                 }
-                let a = s(),
+                let s = a(),
                     o = [];
                 for (; r.length;) {
-                    let t = s(),
+                    let t = a(),
                         e = "number" == typeof t.length ? t.length : void 0;
-                    o.push([t, e ? i(e) : s()])
+                    o.push([t, e ? i(e) : a()])
                 }
-                return [a, o]
+                return [s, o]
             }
 
             function _(t, e) {
                 let n = "string" == typeof t.data ? c(t.data, e) : t.data;
-                return [(0, s.Jr)({
+                return [(0, a.Jr)({
                     type: "attachment",
                     length: n.length,
                     filename: t.filename,
@@ -9273,7 +9214,7 @@ ${JSON.stringify(e)}
             }
 
             function g(t, e, n, i) {
-                let a = t.sdkProcessingMetadata && t.sdkProcessingMetadata.dynamicSamplingContext;
+                let s = t.sdkProcessingMetadata && t.sdkProcessingMetadata.dynamicSamplingContext;
                 return {
                     event_id: t.event_id,
                     sent_at: new Date().toISOString(),
@@ -9283,16 +9224,15 @@ ${JSON.stringify(e)}
                     ...!!n && {
                         dsn: (0, r.RA)(i)
                     },
-                    ...a && {
-                        trace: (0, s.Jr)({
-                            ...a
+                    ...s && {
+                        trace: (0, a.Jr)({
+                            ...s
                         })
                     }
                 }
             }
         },
         303155: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 b: function() {
                     return r
@@ -9305,7 +9245,6 @@ ${JSON.stringify(e)}
             }
         },
         648238: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 qG: function() {
                     return r.qG
@@ -9314,8 +9253,7 @@ ${JSON.stringify(e)}
             var r = n(874230)
         },
         793884: function(t, e, n) {
-            "use strict";
-            let r, i, s;
+            let r, i, a;
             n.d(e, {
                 oq: function() {
                     return g
@@ -9324,10 +9262,10 @@ ${JSON.stringify(e)}
                     return f
                 }
             });
-            var a = n(46834),
+            var s = n(46834),
                 o = n(529866),
-                u = n(442853),
-                l = n(432038),
+                l = n(442853),
+                u = n(432038),
                 c = n(698892),
                 d = n(24716),
                 h = n(30865);
@@ -9342,7 +9280,7 @@ ${JSON.stringify(e)}
                         case "console":
                             (function() {
                                 if ("console" in _) o.RU.forEach(function(t) {
-                                    if (t in _.console)(0, u.hl)(_.console, t, function(e) {
+                                    if (t in _.console)(0, l.hl)(_.console, t, function(e) {
                                         return function(...n) {
                                             y("console", {
                                                 args: n,
@@ -9360,22 +9298,22 @@ ${JSON.stringify(e)}
                                     e = E(t, !0);
                                 _.document.addEventListener("click", e, !1), _.document.addEventListener("keypress", e, !1), ["EventTarget", "Node"].forEach(e => {
                                     let n = _[e] && _[e].prototype;
-                                    if (!!n && !!n.hasOwnProperty && !!n.hasOwnProperty("addEventListener"))(0, u.hl)(n, "addEventListener", function(e) {
+                                    if (!!n && !!n.hasOwnProperty && !!n.hasOwnProperty("addEventListener"))(0, l.hl)(n, "addEventListener", function(e) {
                                         return function(n, r, i) {
                                             if ("click" === n || "keypress" == n) try {
                                                 let r = this.__sentry_instrumentation_handlers__ = this.__sentry_instrumentation_handlers__ || {},
-                                                    s = r[n] = r[n] || {
+                                                    a = r[n] = r[n] || {
                                                         refCount: 0
                                                     };
-                                                if (!s.handler) {
+                                                if (!a.handler) {
                                                     let r = E(t);
-                                                    s.handler = r, e.call(this, n, r, i)
+                                                    a.handler = r, e.call(this, n, r, i)
                                                 }
-                                                s.refCount++
+                                                a.refCount++
                                             } catch (t) {}
                                             return e.call(this, n, r, i)
                                         }
-                                    }), (0, u.hl)(n, "removeEventListener", function(t) {
+                                    }), (0, l.hl)(n, "removeEventListener", function(t) {
                                         return function(e, n, r) {
                                             if ("click" === e || "keypress" == e) try {
                                                 let n = this.__sentry_instrumentation_handlers__ || {},
@@ -9392,15 +9330,15 @@ ${JSON.stringify(e)}
                             (function() {
                                 if (!("XMLHttpRequest" in _)) return;
                                 let t = XMLHttpRequest.prototype;
-                                (0, u.hl)(t, "open", function(t) {
+                                (0, l.hl)(t, "open", function(t) {
                                     return function(...e) {
                                         let n = e[1],
                                             r = this[f] = {
-                                                method: (0, a.HD)(e[0]) ? e[0].toUpperCase() : e[0],
+                                                method: (0, s.HD)(e[0]) ? e[0].toUpperCase() : e[0],
                                                 url: e[1],
                                                 request_headers: {}
                                             };
-                                        (0, a.HD)(n) && "POST" === r.method && n.match(/sentry_key/) && (this.__sentry_own_request__ = !0);
+                                        (0, s.HD)(n) && "POST" === r.method && n.match(/sentry_key/) && (this.__sentry_own_request__ = !0);
                                         let i = () => {
                                             let t = this[f];
                                             if (!!t) {
@@ -9417,18 +9355,18 @@ ${JSON.stringify(e)}
                                                 }
                                             }
                                         };
-                                        return "onreadystatechange" in this && "function" == typeof this.onreadystatechange ? (0, u.hl)(this, "onreadystatechange", function(t) {
+                                        return "onreadystatechange" in this && "function" == typeof this.onreadystatechange ? (0, l.hl)(this, "onreadystatechange", function(t) {
                                             return function(...e) {
                                                 return i(), t.apply(this, e)
                                             }
-                                        }) : this.addEventListener("readystatechange", i), (0, u.hl)(this, "setRequestHeader", function(t) {
+                                        }) : this.addEventListener("readystatechange", i), (0, l.hl)(this, "setRequestHeader", function(t) {
                                             return function(...e) {
                                                 let [n, r] = e, i = this[f];
                                                 return i && (i.request_headers[n.toLowerCase()] = r), t.apply(this, e)
                                             }
                                         }), t.apply(this, e)
                                     }
-                                }), (0, u.hl)(t, "send", function(t) {
+                                }), (0, l.hl)(t, "send", function(t) {
                                     return function(...e) {
                                         let n = this[f];
                                         return n && void 0 !== e[0] && (n.body = e[0]), y("xhr", {
@@ -9442,7 +9380,7 @@ ${JSON.stringify(e)}
                             break;
                         case "fetch":
                             (function() {
-                                if (!!(0, c.t$)())(0, u.hl)(_, "fetch", function(t) {
+                                if (!!(0, c.t$)())(0, l.hl)(_, "fetch", function(t) {
                                     return function(...e) {
                                         let {
                                             method: n,
@@ -9517,7 +9455,7 @@ ${JSON.stringify(e)}
                                         }), t) try {
                                         return t.apply(this, e)
                                     } catch (t) {}
-                                }, (0, u.hl)(_.history, "pushState", e), (0, u.hl)(_.history, "replaceState", e)
+                                }, (0, l.hl)(_.history, "pushState", e), (0, l.hl)(_.history, "replaceState", e)
                             })();
                             break;
                         case "error":
@@ -9554,7 +9492,7 @@ ${JSON.stringify(e)}
                     } catch (e) {
                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.error(`Error while triggering instrumentation handler.
 Type: ${t}
-Name: ${(0,l.$P)(n)}
+Name: ${(0,u.$P)(n)}
 Error:`, e)
                     }
             }
@@ -9569,7 +9507,7 @@ Error:`, e)
 
             function E(t, e = !1) {
                 return n => {
-                    if (!n || s === n || function(t) {
+                    if (!n || a === n || function(t) {
                             if ("keypress" !== t.type) return !1;
                             try {
                                 let e = t.target;
@@ -9583,17 +9521,17 @@ Error:`, e)
                         event: n,
                         name: r,
                         global: e
-                    }), s = n) : function(t, e) {
+                    }), a = n) : function(t, e) {
                         if (!t || t.type !== e.type) return !0;
                         try {
                             if (t.target !== e.target) return !0
                         } catch (t) {}
                         return !1
-                    }(s, n) && (t({
+                    }(a, n) && (t({
                         event: n,
                         name: r,
                         global: e
-                    }), s = n), clearTimeout(i), i = _.setTimeout(() => {
+                    }), a = n), clearTimeout(i), i = _.setTimeout(() => {
                         i = void 0
                     }, 1e3)
                 }
@@ -9602,13 +9540,12 @@ Error:`, e)
                 w = null
         },
         46834: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Cy: function() {
                     return m
                 },
                 HD: function() {
-                    return l
+                    return u
                 },
                 J8: function() {
                     return p
@@ -9626,7 +9563,7 @@ Error:`, e)
                     return y
                 },
                 VW: function() {
-                    return a
+                    return s
                 },
                 VZ: function() {
                     return i
@@ -9635,7 +9572,7 @@ Error:`, e)
                     return h
                 },
                 fm: function() {
-                    return u
+                    return l
                 },
                 i2: function() {
                     return g
@@ -9660,24 +9597,24 @@ Error:`, e)
                 }
             }
 
-            function s(t, e) {
+            function a(t, e) {
                 return r.call(t) === `[object ${e}]`
             }
 
-            function a(t) {
-                return s(t, "ErrorEvent")
+            function s(t) {
+                return a(t, "ErrorEvent")
             }
 
             function o(t) {
-                return s(t, "DOMError")
-            }
-
-            function u(t) {
-                return s(t, "DOMException")
+                return a(t, "DOMError")
             }
 
             function l(t) {
-                return s(t, "String")
+                return a(t, "DOMException")
+            }
+
+            function u(t) {
+                return a(t, "String")
             }
 
             function c(t) {
@@ -9685,7 +9622,7 @@ Error:`, e)
             }
 
             function d(t) {
-                return s(t, "Object")
+                return a(t, "Object")
             }
 
             function h(t) {
@@ -9697,7 +9634,7 @@ Error:`, e)
             }
 
             function f(t) {
-                return s(t, "RegExp")
+                return a(t, "RegExp")
             }
 
             function p(t) {
@@ -9721,27 +9658,26 @@ Error:`, e)
             }
         },
         529866: function(t, e, n) {
-            "use strict";
             let r;
             n.d(e, {
                 Cf: function() {
-                    return a
+                    return s
                 },
                 RU: function() {
-                    return s
+                    return a
                 },
                 kg: function() {
                     return r
                 }
             });
             var i = n(24716);
-            let s = ["debug", "info", "warn", "error", "log", "assert", "trace"];
+            let a = ["debug", "info", "warn", "error", "log", "assert", "trace"];
 
-            function a(t) {
+            function s(t) {
                 if (!("console" in i.n2)) return t();
                 let e = i.n2.console,
                     n = {};
-                s.forEach(t => {
+                a.forEach(t => {
                     let r = e[t] && e[t].__sentry_original__;
                     t in e && r && (n[t] = e[t], e[t] = r)
                 });
@@ -9764,20 +9700,24 @@ Error:`, e)
                             t = !1
                         }
                     };
-                return "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__ ? s.forEach(n => {
+                return "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__ ? a.forEach(n => {
                     e[n] = (...e) => {
-                        t && a(() => {
+                        t && s(() => {
                             i.n2.console[n](`Sentry Logger [${n}]:`, ...e)
                         })
                     }
-                }) : s.forEach(t => {
+                }) : a.forEach(t => {
                     e[t] = () => void 0
                 }), e
             }
             "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__ ? r = (0, i.YO)("logger", o) : r = o()
         },
         537198: function(t, e, n) {
-            "use strict";
+            n.d(e, {
+                i: function() {
+                    return r
+                }
+            });
 
             function r() {
                 let t = "function" == typeof WeakSet,
@@ -9797,23 +9737,17 @@ Error:`, e)
                             }
                 }]
             }
-            n.d(e, {
-                i: function() {
-                    return r
-                }
-            })
         },
         862315: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 DM: function() {
-                    return s
+                    return a
                 },
                 Db: function() {
-                    return u
+                    return l
                 },
                 EG: function() {
-                    return l
+                    return u
                 },
                 YO: function() {
                     return c
@@ -9828,7 +9762,7 @@ Error:`, e)
             var r = n(442853),
                 i = n(24716);
 
-            function s() {
+            function a() {
                 let t = i.n2,
                     e = t.crypto || t.msCrypto;
                 if (e && e.randomUUID) return e.randomUUID().replace(/-/g, "");
@@ -9836,7 +9770,7 @@ Error:`, e)
                 return "10000000100040008000100000000000".replace(/[018]/g, t => (t ^ (15 & n()) >> t / 4).toString(16))
             }
 
-            function a(t) {
+            function s(t) {
                 return t.exception && t.exception.values ? t.exception.values[0] : void 0
             }
 
@@ -9846,20 +9780,20 @@ Error:`, e)
                     event_id: n
                 } = t;
                 if (e) return e;
-                let r = a(t);
+                let r = s(t);
                 if (r) return r.type && r.value ? `${r.type}: ${r.value}` : r.type || r.value || n || "<unknown>";
                 return n || "<unknown>"
             }
 
-            function u(t, e, n) {
+            function l(t, e, n) {
                 let r = t.exception = t.exception || {},
                     i = r.values = r.values || [],
-                    s = i[0] = i[0] || {};
-                !s.value && (s.value = e || ""), !s.type && (s.type = n || "Error")
+                    a = i[0] = i[0] || {};
+                !a.value && (a.value = e || ""), !a.type && (a.type = n || "Error")
             }
 
-            function l(t, e) {
-                let n = a(t);
+            function u(t, e) {
+                let n = s(t);
                 if (!n) return;
                 let r = n.mechanism;
                 if (n.mechanism = {
@@ -9889,29 +9823,27 @@ Error:`, e)
             }
         },
         635602: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 KV: function() {
-                    return s
+                    return a
                 },
                 l$: function() {
-                    return a
+                    return s
                 }
             });
             var r = n(468391);
             t = n.hmd(t);
             var i = n(444675);
 
-            function s() {
+            function a() {
                 return !(0, r.n)() && "[object process]" === Object.prototype.toString.call(void 0 !== i ? i : 0)
             }
 
-            function a(t, e) {
+            function s(t, e) {
                 return t.require(e)
             }
         },
         10674: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Fv: function() {
                     return o
@@ -9927,12 +9859,12 @@ Error:`, e)
             });
             var r = n(46834),
                 i = n(537198),
-                s = n(442853),
-                a = n(432038);
+                a = n(442853),
+                s = n(432038);
 
             function o(t, e = 100, o = Infinity) {
                 try {
-                    return function t(e, o, u = Infinity, l = Infinity, c = (0, i.i)()) {
+                    return function t(e, o, l = Infinity, u = Infinity, c = (0, i.i)()) {
                         let [d, h] = c;
                         if (null == o || ["number", "boolean", "string"].includes(typeof o) && !(0, r.i2)(o)) return o;
                         let _ = function(t, e) {
@@ -9944,7 +9876,7 @@ Error:`, e)
                                 if ("undefined" != typeof document && e === document) return "[Document]";
                                 if ((0, r.Cy)(e)) return "[SyntheticEvent]";
                                 if ("number" == typeof e && e != e) return "[NaN]";
-                                if ("function" == typeof e) return `[Function: ${(0,a.$P)(e)}]`;
+                                if ("function" == typeof e) return `[Function: ${(0,s.$P)(e)}]`;
                                 if ("symbol" == typeof e) return `[${String(e)}]`;
                                 if ("bigint" == typeof e) return `[BigInt: ${String(e)}]`;
                                 let i = function(t) {
@@ -9959,24 +9891,24 @@ Error:`, e)
                         }(e, o);
                         if (!_.startsWith("[object ")) return _;
                         if (o.__sentry_skip_normalization__) return o;
-                        let f = "number" == typeof o.__sentry_override_normalization_depth__ ? o.__sentry_override_normalization_depth__ : u;
+                        let f = "number" == typeof o.__sentry_override_normalization_depth__ ? o.__sentry_override_normalization_depth__ : l;
                         if (0 === f) return _.replace("object ", "");
                         if (d(o)) return "[Circular ~]";
                         if (o && "function" == typeof o.toJSON) try {
                             let e = o.toJSON();
-                            return t("", e, f - 1, l, c)
+                            return t("", e, f - 1, u, c)
                         } catch (t) {}
                         let p = Array.isArray(o) ? [] : {},
                             m = 0,
-                            g = (0, s.Sh)(o);
+                            g = (0, a.Sh)(o);
                         for (let e in g) {
                             if (!Object.prototype.hasOwnProperty.call(g, e)) continue;
-                            if (m >= l) {
+                            if (m >= u) {
                                 p[e] = "[MaxProperties ~]";
                                 break
                             }
                             let n = g[e];
-                            p[e] = t(e, n, f - 1, l, c), m++
+                            p[e] = t(e, n, f - 1, u, c), m++
                         }
                         return h(o), p
                     }("", t, e, o)
@@ -9988,13 +9920,12 @@ Error:`, e)
             }
         },
         442853: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 $Q: function() {
-                    return u
+                    return l
                 },
                 HK: function() {
-                    return l
+                    return u
                 },
                 Jr: function() {
                     return p
@@ -10006,7 +9937,7 @@ Error:`, e)
                     return c
                 },
                 hl: function() {
-                    return a
+                    return s
                 },
                 xp: function() {
                     return o
@@ -10017,14 +9948,14 @@ Error:`, e)
             });
             var r = n(829919),
                 i = n(46834),
-                s = n(336344);
+                a = n(336344);
 
-            function a(t, e, n) {
+            function s(t, e, n) {
                 if (!(e in t)) return;
                 let r = t[e],
                     i = n(r);
                 if ("function" == typeof i) try {
-                    u(i, r)
+                    l(i, r)
                 } catch (t) {}
                 t[e] = i
             }
@@ -10037,12 +9968,12 @@ Error:`, e)
                 })
             }
 
-            function u(t, e) {
+            function l(t, e) {
                 let n = e.prototype || {};
                 t.prototype = e.prototype = n, o(t, "__sentry_original__", e)
             }
 
-            function l(t) {
+            function u(t) {
                 return t.__sentry_original__
             }
 
@@ -10089,12 +10020,12 @@ Error:`, e)
             function f(t, e = 40) {
                 let n = Object.keys(d(t));
                 if (n.sort(), !n.length) return "[object has no keys]";
-                if (n[0].length >= e) return (0, s.$G)(n[0], e);
+                if (n[0].length >= e) return (0, a.$G)(n[0], e);
                 for (let t = n.length; t > 0; t--) {
                     let r = n.slice(0, t).join(", ");
                     if (!(r.length > e)) {
                         if (t === n.length) return r;
-                        return (0, s.$G)(r, e)
+                        return (0, a.$G)(r, e)
                     }
                 }
                 return ""
@@ -10122,16 +10053,15 @@ Error:`, e)
             }
         },
         765497: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 x: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(303155),
                 i = n(880803);
 
-            function s(t) {
+            function a(t) {
                 let e = [];
 
                 function n(t) {
@@ -10139,21 +10069,21 @@ Error:`, e)
                 }
                 return {
                     $: e,
-                    add: function(s) {
+                    add: function(a) {
                         if (!(void 0 === t || e.length < t)) return (0, i.$2)(new r.b("Not adding Promise because buffer limit was reached."));
-                        let a = s();
-                        return -1 === e.indexOf(a) && e.push(a), a.then(() => n(a)).then(null, () => n(a).then(null, () => {})), a
+                        let s = a();
+                        return -1 === e.indexOf(s) && e.push(s), s.then(() => n(s)).then(null, () => n(s).then(null, () => {})), s
                     },
                     drain: function(t) {
                         return new i.cW((n, r) => {
-                            let s = e.length;
-                            if (!s) return n(!0);
-                            let a = setTimeout(() => {
+                            let a = e.length;
+                            if (!a) return n(!0);
+                            let s = setTimeout(() => {
                                 t && t > 0 && n(!1)
                             }, t);
                             e.forEach(t => {
                                 (0, i.WD)(t).then(() => {
-                                    !--s && (clearTimeout(a), n(!0))
+                                    !--a && (clearTimeout(s), n(!0))
                                 }, r)
                             })
                         })
@@ -10162,7 +10092,6 @@ Error:`, e)
             }
         },
         128603: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 JY: function() {
                     return r
@@ -10171,7 +10100,7 @@ Error:`, e)
                     return i
                 },
                 WG: function() {
-                    return s
+                    return a
                 }
             });
 
@@ -10187,27 +10116,26 @@ Error:`, e)
                 return ((r = t)[e] || r.all || 0) > n
             }
 
-            function s(t, {
+            function a(t, {
                 statusCode: e,
                 headers: n
             }, i = Date.now()) {
-                let s = {
+                let a = {
                         ...t
                     },
-                    a = n && n["x-sentry-rate-limits"],
+                    s = n && n["x-sentry-rate-limits"],
                     o = n && n["retry-after"];
-                if (a)
-                    for (let t of a.trim().split(",")) {
-                        let [e, n] = t.split(":", 2), r = parseInt(e, 10), a = (isNaN(r) ? 60 : r) * 1e3;
+                if (s)
+                    for (let t of s.trim().split(",")) {
+                        let [e, n] = t.split(":", 2), r = parseInt(e, 10), s = (isNaN(r) ? 60 : r) * 1e3;
                         if (n)
-                            for (let t of n.split(";")) s[t] = i + a;
-                        else s.all = i + a
-                    } else o ? s.all = i + r(o, i) : 429 === e && (s.all = i + 6e4);
-                return s
+                            for (let t of n.split(";")) a[t] = i + s;
+                        else a.all = i + s
+                    } else o ? a.all = i + r(o, i) : 429 === e && (a.all = i + 6e4);
+                return a
             }
         },
         869139: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 VT: function() {
                     return i
@@ -10220,13 +10148,12 @@ Error:`, e)
             }
         },
         432038: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 $P: function() {
                     return o
                 },
                 Sq: function() {
-                    return s
+                    return a
                 },
                 pE: function() {
                     return i
@@ -10238,14 +10165,14 @@ Error:`, e)
                 let e = t.sort((t, e) => t[0] - e[0]).map(t => t[1]);
                 return (t, n = 0) => {
                     let i = [],
-                        s = t.split("\n");
-                    for (let t = n; t < s.length; t++) {
-                        let n = s[t];
+                        a = t.split("\n");
+                    for (let t = n; t < a.length; t++) {
+                        let n = a[t];
                         if (n.length > 1024) continue;
-                        let a = r.test(n) ? n.replace(r, "$1") : n;
-                        if (!a.match(/\S*Error: /)) {
+                        let s = r.test(n) ? n.replace(r, "$1") : n;
+                        if (!s.match(/\S*Error: /)) {
                             for (let t of e) {
-                                let e = t(a);
+                                let e = t(s);
                                 if (e) {
                                     i.push(e);
                                     break
@@ -10269,31 +10196,30 @@ Error:`, e)
                 }
             }
 
-            function s(t) {
+            function a(t) {
                 return Array.isArray(t) ? i(...t) : t
             }
-            let a = "<anonymous>";
+            let s = "<anonymous>";
 
             function o(t) {
                 try {
-                    if (!t || "function" != typeof t) return a;
-                    return t.name || a
+                    if (!t || "function" != typeof t) return s;
+                    return t.name || s
                 } catch (t) {
-                    return a
+                    return s
                 }
             }
         },
         336344: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 $G: function() {
                     return i
                 },
                 U0: function() {
-                    return a
+                    return s
                 },
                 nK: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(46834);
@@ -10302,7 +10228,7 @@ Error:`, e)
                 return "string" != typeof t || 0 === e ? t : t.length <= e ? t : `${t.slice(0,e)}...`
             }
 
-            function s(t, e) {
+            function a(t, e) {
                 if (!Array.isArray(t)) return "";
                 let n = [];
                 for (let e = 0; e < t.length; e++) {
@@ -10316,20 +10242,19 @@ Error:`, e)
                 return n.join(e)
             }
 
-            function a(t, e = [], n = !1) {
+            function s(t, e = [], n = !1) {
                 return e.some(e => (function(t, e, n = !1) {
                     return !!(0, r.HD)(t) && ((0, r.Kj)(e) ? e.test(t) : !!(0, r.HD)(e) && (n ? t === e : t.includes(e)))
                 })(t, e, n))
             }
         },
         698892: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Ak: function() {
-                    return s
+                    return a
                 },
                 Du: function() {
-                    return a
+                    return s
                 },
                 t$: function() {
                     return o
@@ -10338,7 +10263,7 @@ Error:`, e)
             var r = n(529866);
             let i = (0, n(24716).Rf)();
 
-            function s() {
+            function a() {
                 if (!("fetch" in i)) return !1;
                 try {
                     return new Headers, new Request("http://www.example.com"), new Response, !0
@@ -10347,18 +10272,18 @@ Error:`, e)
                 }
             }
 
-            function a(t) {
+            function s(t) {
                 return t && /^function fetch\(\)\s+\{\s+\[native code\]\s+\}$/.test(t.toString())
             }
 
             function o() {
-                if (!s()) return !1;
-                if (a(i.fetch)) return !0;
+                if (!a()) return !1;
+                if (s(i.fetch)) return !0;
                 let t = !1,
                     e = i.document;
                 if (e && "function" == typeof e.createElement) try {
                     let n = e.createElement("iframe");
-                    n.hidden = !0, e.head.appendChild(n), n.contentWindow && n.contentWindow.fetch && (t = a(n.contentWindow.fetch)), e.head.removeChild(n)
+                    n.hidden = !0, e.head.appendChild(n), n.contentWindow && n.contentWindow.fetch && (t = s(n.contentWindow.fetch)), e.head.removeChild(n)
                 } catch (t) {
                     ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", t)
                 }
@@ -10366,32 +10291,31 @@ Error:`, e)
             }
         },
         880803: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 $2: function() {
                     return o
                 },
                 WD: function() {
-                    return a
+                    return s
                 },
                 cW: function() {
-                    return u
+                    return l
                 }
             });
-            var r, i, s = n(46834);
+            var r, i, a = n(46834);
 
-            function a(t) {
-                return new u(e => {
+            function s(t) {
+                return new l(e => {
                     e(t)
                 })
             }
 
             function o(t) {
-                return new u((e, n) => {
+                return new l((e, n) => {
                     n(t)
                 })
             }(r = i || (i = {}))[r.PENDING = 0] = "PENDING", r[r.RESOLVED = 1] = "RESOLVED", r[r.REJECTED = 2] = "REJECTED";
-            class u {
+            class l {
                 __init() {
                     this._state = i.PENDING
                 }
@@ -10399,7 +10323,7 @@ Error:`, e)
                     this._handlers = []
                 }
                 constructor(t) {
-                    u.prototype.__init.call(this), u.prototype.__init2.call(this), u.prototype.__init3.call(this), u.prototype.__init4.call(this), u.prototype.__init5.call(this), u.prototype.__init6.call(this);
+                    l.prototype.__init.call(this), l.prototype.__init2.call(this), l.prototype.__init3.call(this), l.prototype.__init4.call(this), l.prototype.__init5.call(this), l.prototype.__init6.call(this);
                     try {
                         t(this._resolve, this._reject)
                     } catch (t) {
@@ -10407,7 +10331,7 @@ Error:`, e)
                     }
                 }
                 then(t, e) {
-                    return new u((n, r) => {
+                    return new l((n, r) => {
                         this._handlers.push([!1, e => {
                             if (t) try {
                                 n(t(e))
@@ -10425,7 +10349,7 @@ Error:`, e)
                 } catch (t) {
                     return this.then(t => t, t)
                 } finally(t) {
-                    return new u((e, n) => {
+                    return new l((e, n) => {
                         let r, i;
                         return this.then(e => {
                             i = !1, r = e, t && t()
@@ -10453,7 +10377,7 @@ Error:`, e)
                 __init5() {
                     this._setResult = (t, e) => {
                         if (this._state === i.PENDING) {
-                            if ((0, s.J8)(e)) {
+                            if ((0, a.J8)(e)) {
                                 e.then(this._resolve, this._reject);
                                 return
                             }
@@ -10473,7 +10397,6 @@ Error:`, e)
             }
         },
         868145: function(t, e, n) {
-            "use strict";
             let r;
             n.d(e, {
                 Z1: function() {
@@ -10487,13 +10410,13 @@ Error:`, e)
                 }
             });
             var i = n(635602),
-                s = n(24716);
+                a = n(24716);
             t = n.hmd(t);
-            let a = (0, s.Rf)(),
+            let s = (0, a.Rf)(),
                 o = {
                     nowSeconds: () => Date.now() / 1e3
                 },
-                u = (0, i.KV)() ? function() {
+                l = (0, i.KV)() ? function() {
                     try {
                         return (0, i.l$)(t, "perf_hooks").performance
                     } catch (t) {
@@ -10502,52 +10425,51 @@ Error:`, e)
                 }() : function() {
                     let {
                         performance: t
-                    } = a;
+                    } = s;
                     if (!!t && !!t.now) return {
                         now: () => t.now(),
                         timeOrigin: Date.now() - t.now()
                     }
                 }(),
-                l = void 0 === u ? o : {
-                    nowSeconds: () => (u.timeOrigin + u.now()) / 1e3
+                u = void 0 === l ? o : {
+                    nowSeconds: () => (l.timeOrigin + l.now()) / 1e3
                 },
                 c = o.nowSeconds.bind(o),
-                d = l.nowSeconds.bind(l),
+                d = u.nowSeconds.bind(u),
                 h = (() => {
                     let {
                         performance: t
-                    } = a;
+                    } = s;
                     if (!t || !t.now) return;
                     let e = t.now(),
                         n = Date.now(),
                         r = t.timeOrigin ? Math.abs(t.timeOrigin + e - n) : 36e5,
                         i = t.timing && t.timing.navigationStart,
-                        s = "number" == typeof i ? Math.abs(i + e - n) : 36e5;
-                    if (r < 36e5 || s < 36e5) return r <= s ? t.timeOrigin : i;
+                        a = "number" == typeof i ? Math.abs(i + e - n) : 36e5;
+                    if (r < 36e5 || a < 36e5) return r <= a ? t.timeOrigin : i;
                     return n
                 })()
         },
         874230: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 $p: function() {
-                    return u
+                    return l
                 },
                 KA: function() {
                     return o
                 },
                 qG: function() {
-                    return a
+                    return s
                 }
             });
             var r = n(545459),
                 i = n(862315);
-            let s = RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
+            let a = RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
 
-            function a(t) {
+            function s(t) {
                 let e;
                 if (!t) return;
-                let n = t.match(s);
+                let n = t.match(a);
                 if (!!n) return "1" === n[3] ? e = !0 : "0" === n[3] && (e = !1), {
                     traceId: n[1],
                     parentSampled: e,
@@ -10556,32 +10478,36 @@ Error:`, e)
             }
 
             function o(t, e) {
-                let n = a(t),
-                    s = (0, r.EN)(e),
+                let n = s(t),
+                    a = (0, r.EN)(e),
                     {
                         traceId: o,
-                        parentSpanId: u,
-                        parentSampled: l
+                        parentSpanId: l,
+                        parentSampled: u
                     } = n || {},
                     c = {
                         traceId: o || (0, i.DM)(),
                         spanId: (0, i.DM)().substring(16),
-                        sampled: void 0 !== l && l
+                        sampled: void 0 !== u && u
                     };
-                return u && (c.parentSpanId = u), s && (c.dsc = s), {
+                return l && (c.parentSpanId = l), a && (c.dsc = a), {
                     traceparentData: n,
-                    dynamicSamplingContext: s,
+                    dynamicSamplingContext: a,
                     propagationContext: c
                 }
             }
 
-            function u(t = (0, i.DM)(), e = (0, i.DM)().substring(16), n) {
+            function l(t = (0, i.DM)(), e = (0, i.DM)().substring(16), n) {
                 let r = "";
                 return void 0 !== n && (r = n ? "-1" : "-0"), `${t}-${e}${r}`
             }
         },
         841866: function(t, e, n) {
-            "use strict";
+            n.d(e, {
+                en: function() {
+                    return r
+                }
+            });
 
             function r(t) {
                 if (!t) return {};
@@ -10598,14 +10524,8 @@ Error:`, e)
                     relative: e[5] + n + r
                 }
             }
-            n.d(e, {
-                en: function() {
-                    return r
-                }
-            })
         },
         30865: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 B: function() {
                     return i
@@ -10621,17 +10541,15 @@ Error:`, e)
             }
         },
         24716: function(t, e, n) {
-            "use strict";
-
             function r(t) {
                 return t && t.Math == Math ? t : void 0
             }
             n.d(e, {
                 Rf: function() {
-                    return s
+                    return a
                 },
                 YO: function() {
-                    return a
+                    return s
                 },
                 n2: function() {
                     return i
@@ -10641,31 +10559,30 @@ Error:`, e)
                 return this
             }() || {};
 
-            function s() {
+            function a() {
                 return i
             }
 
-            function a(t, e, n) {
+            function s(t, e, n) {
                 let r = n || i,
-                    s = r.__SENTRY__ = r.__SENTRY__ || {};
-                return s[t] || (s[t] = e())
+                    a = r.__SENTRY__ = r.__SENTRY__ || {};
+                return a[t] || (a[t] = e())
             }
         },
         321611: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 j: function() {
-                    return a
+                    return s
                 }
             });
             var r = n(147816),
                 i = n(529866),
-                s = n(607190);
+                a = n(607190);
 
-            function a() {
-                s.m && s.m.document ? s.m.document.addEventListener("visibilitychange", () => {
+            function s() {
+                a.m && a.m.document ? a.m.document.addEventListener("visibilitychange", () => {
                     let t = (0, r.x1)();
-                    if (s.m.document.hidden && t) {
+                    if (a.m.document.hidden && t) {
                         let e = "cancelled";
                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && i.kg.log(`[Tracing] Transaction: ${e} -> since tab moved to the background, op: ${t.op}`), !t.status && t.setStatus(e), t.setTag("visibilitychange", "document.hidden"), t.finish()
                     }
@@ -10673,7 +10590,6 @@ Error:`, e)
             }
         },
         204325: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 gE: function() {
                     return p
@@ -10681,11 +10597,11 @@ Error:`, e)
             });
             var r = n(376097),
                 i = n(90668),
-                s = n(147816),
-                a = n(529866),
+                a = n(147816),
+                s = n(529866),
                 o = n(874230),
-                u = n(829919),
-                l = n(321611),
+                l = n(829919),
+                u = n(321611),
                 c = n(799821),
                 d = n(722994),
                 h = n(263951),
@@ -10719,9 +10635,9 @@ Error:`, e)
                         r = n && n.getOptions(),
                         {
                             routingInstrumentation: i,
-                            startTransactionOnLocationChange: s,
+                            startTransactionOnLocationChange: a,
                             startTransactionOnPageLoad: o,
-                            markBackgroundTransactions: u,
+                            markBackgroundTransactions: l,
                             traceFetch: c,
                             traceXHR: h,
                             shouldCreateSpanForRequest: _,
@@ -10730,10 +10646,10 @@ Error:`, e)
                         } = this.options,
                         m = r && r.tracePropagationTargets,
                         g = m || this.options.tracePropagationTargets;
-                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && this._hasSetTracePropagationTargets && m && a.kg.warn("[Tracing] The `tracePropagationTargets` option was set in the BrowserTracing integration and top level `Sentry.init`. The top level `Sentry.init` value is being used."), i(t => {
+                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && this._hasSetTracePropagationTargets && m && s.kg.warn("[Tracing] The `tracePropagationTargets` option was set in the BrowserTracing integration and top level `Sentry.init`. The top level `Sentry.init` value is being used."), i(t => {
                         let n = this._createRouteTransaction(t);
                         return this.options._experiments.onStartRouteTransaction && this.options._experiments.onStartRouteTransaction(n, t, e), n
-                    }, o, s), u && (0, l.j)(), p.enableInteractions && this._registerInteractionListener(), (0, d.L7)({
+                    }, o, a), l && (0, u.j)(), p.enableInteractions && this._registerInteractionListener(), (0, d.L7)({
                         traceFetch: c,
                         traceXHR: h,
                         tracePropagationTargets: g,
@@ -10743,19 +10659,19 @@ Error:`, e)
                 }
                 _createRouteTransaction(t) {
                     if (!this._getCurrentHub) {
-                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`[Tracing] Did not create ${t.op} transaction because _getCurrentHub is invalid.`);
+                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`[Tracing] Did not create ${t.op} transaction because _getCurrentHub is invalid.`);
                         return
                     }
                     let e = this._getCurrentHub(),
                         {
                             beforeNavigate: n,
                             idleTimeout: r,
-                            finalTimeout: s,
-                            heartbeatInterval: u
+                            finalTimeout: a,
+                            heartbeatInterval: l
                         } = this.options,
-                        l = "pageload" === t.op,
-                        d = l ? m("sentry-trace") : "",
-                        h = l ? m("baggage") : "",
+                        u = "pageload" === t.op,
+                        d = u ? m("sentry-trace") : "",
+                        h = u ? m("baggage") : "",
                         {
                             traceparentData: f,
                             dynamicSamplingContext: p,
@@ -10778,13 +10694,13 @@ Error:`, e)
                     b.metadata = b.name !== y.name ? {
                         ...b.metadata,
                         source: "custom"
-                    } : b.metadata, this._latestRouteName = b.name, this._latestRouteSource = b.metadata && b.metadata.source, !1 === b.sampled && ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.log(`[Tracing] Will not send ${b.op} transaction because of beforeNavigate.`), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.log(`[Tracing] Starting ${b.op} transaction on scope`);
+                    } : b.metadata, this._latestRouteName = b.name, this._latestRouteSource = b.metadata && b.metadata.source, !1 === b.sampled && ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.log(`[Tracing] Will not send ${b.op} transaction because of beforeNavigate.`), ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.log(`[Tracing] Starting ${b.op} transaction on scope`);
                     let {
                         location: E
-                    } = _.m, S = (0, i.l)(e, b, r, s, !0, {
+                    } = _.m, S = (0, i.l)(e, b, r, a, !0, {
                         location: E
-                    }, u), w = e.getScope();
-                    return l && f ? w.setPropagationContext(g) : w.setPropagationContext({
+                    }, l), w = e.getScope();
+                    return u && f ? w.setPropagationContext(g) : w.setPropagationContext({
                         traceId: S.traceId,
                         spanId: S.spanId,
                         parentSpanId: S.parentSpanId,
@@ -10800,20 +10716,20 @@ Error:`, e)
                             idleTimeout: e,
                             finalTimeout: n,
                             heartbeatInterval: r
-                        } = this.options, o = "ui.action.click", u = (0, s.x1)();
-                        if (u && u.op && ["navigation", "pageload"].includes(u.op)) {
-                            ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`[Tracing] Did not create ${o} transaction because a pageload or navigation transaction is in progress.`);
+                        } = this.options, o = "ui.action.click", l = (0, a.x1)();
+                        if (l && l.op && ["navigation", "pageload"].includes(l.op)) {
+                            ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`[Tracing] Did not create ${o} transaction because a pageload or navigation transaction is in progress.`);
                             return
                         }
                         if (t && (t.setFinishReason("interactionInterrupted"), t.finish(), t = void 0), !this._getCurrentHub) {
-                            ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`[Tracing] Did not create ${o} transaction because _getCurrentHub is invalid.`);
+                            ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`[Tracing] Did not create ${o} transaction because _getCurrentHub is invalid.`);
                             return
                         }
                         if (!this._latestRouteName) {
-                            ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && a.kg.warn(`[Tracing] Did not create ${o} transaction because _latestRouteName is missing.`);
+                            ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && s.kg.warn(`[Tracing] Did not create ${o} transaction because _latestRouteName is missing.`);
                             return
                         }
-                        let l = this._getCurrentHub(),
+                        let u = this._getCurrentHub(),
                             {
                                 location: c
                             } = _.m,
@@ -10825,7 +10741,7 @@ Error:`, e)
                                     source: this._latestRouteSource || "url"
                                 }
                             };
-                        t = (0, i.l)(l, d, e, n, !0, {
+                        t = (0, i.l)(u, d, e, n, !0, {
                             location: c
                         }, r)
                     };
@@ -10839,12 +10755,11 @@ Error:`, e)
             }
 
             function m(t) {
-                let e = (0, u.qT)(`meta[name=${t}]`);
+                let e = (0, l.qT)(`meta[name=${t}]`);
                 return e ? e.getAttribute("content") : void 0
             }
         },
         799821: function(t, e, n) {
-            "use strict";
             let r, i;
             n.d(e, {
                 Fv: function() {
@@ -10860,11 +10775,11 @@ Error:`, e)
                     return S
                 }
             });
-            var s = n(147816),
-                a = n(868145),
+            var a = n(147816),
+                s = n(868145),
                 o = n(829919),
-                u = n(529866),
-                l = n(607190),
+                l = n(529866),
+                u = n(607190),
                 c = n(540161),
                 d = n(282572),
                 h = n(301072),
@@ -10877,22 +10792,22 @@ Error:`, e)
             }
 
             function g() {
-                return l.m && l.m.addEventListener && l.m.performance
+                return u.m && u.m.addEventListener && u.m.performance
             }
             let y = 0,
                 v = {};
 
             function b() {
                 let t = g();
-                if (t && a.Z1) {
-                    t.mark && l.m.performance.mark("sentry-tracing-init"),
+                if (t && s.Z1) {
+                    t.mark && u.m.performance.mark("sentry-tracing-init"),
                         function() {
                             (0, d.F)(t => {
                                 let e = t.entries.pop();
                                 if (!e) return;
-                                let n = m(a.Z1),
+                                let n = m(s.Z1),
                                     r = m(e.startTime);
-                                ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Measurements] Adding FID"), v.fid = {
+                                ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Measurements] Adding FID"), v.fid = {
                                     value: t.value,
                                     unit: "millisecond"
                                 }, v["mark.fid"] = {
@@ -10904,7 +10819,7 @@ Error:`, e)
                     let e = function() {
                             return (0, c.m)(t => {
                                 let e = t.entries.pop();
-                                if (!!e)("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Measurements] Adding CLS"), v.cls = {
+                                if (!!e)("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Measurements] Adding CLS"), v.cls = {
                                     value: t.value,
                                     unit: ""
                                 }, i = e
@@ -10913,7 +10828,7 @@ Error:`, e)
                         n = function() {
                             return (0, h.N)(t => {
                                 let e = t.entries.pop();
-                                if (!!e)("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Measurements] Adding LCP"), v.lcp = {
+                                if (!!e)("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Measurements] Adding LCP"), v.lcp = {
                                     value: t.value,
                                     unit: "millisecond"
                                 }, r = e
@@ -10929,9 +10844,9 @@ Error:`, e)
             function E() {
                 (0, f.N)("longtask", t => {
                     for (let e of t) {
-                        let t = (0, s.x1)();
+                        let t = (0, a.x1)();
                         if (!t) return;
-                        let n = m(a.Z1 + e.startTime),
+                        let n = m(s.Z1 + e.startTime),
                             r = m(e.duration);
                         t.startChild({
                             description: "Main UI thread blocked",
@@ -10946,10 +10861,10 @@ Error:`, e)
             function S() {
                 (0, f.N)("event", t => {
                     for (let e of t) {
-                        let t = (0, s.x1)();
+                        let t = (0, a.x1)();
                         if (!t) return;
                         if ("click" === e.name) {
-                            let n = m(a.Z1 + e.startTime),
+                            let n = m(s.Z1 + e.startTime),
                                 r = m(e.duration);
                             t.startChild({
                                 description: (0, o.Rt)(e.target),
@@ -10966,14 +10881,14 @@ Error:`, e)
 
             function w(t) {
                 let e, n;
-                let s = g();
-                if (!s || !l.m.performance.getEntries || !a.Z1) return;
-                ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Tracing] Adding & adjusting spans using Performance API");
-                let c = m(a.Z1),
-                    d = s.getEntries();
+                let a = g();
+                if (!a || !u.m.performance.getEntries || !s.Z1) return;
+                ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Tracing] Adding & adjusting spans using Performance API");
+                let c = m(s.Z1),
+                    d = a.getEntries();
                 if (d.slice(y).forEach(r => {
                         let i = m(r.startTime),
-                            s = m(r.duration);
+                            a = m(r.duration);
                         if ("navigation" !== t.op || !(c + i < t.startTimestamp)) switch (r.entryType) {
                             case "navigation":
                                 (function(t, e, n) {
@@ -10999,44 +10914,44 @@ Error:`, e)
                             case "paint":
                             case "measure": {
                                 (function(t, e, n, r, i) {
-                                    let s = i + n;
+                                    let a = i + n;
                                     (0, p.H)(t, {
                                         description: e.name,
-                                        endTimestamp: s + r,
+                                        endTimestamp: a + r,
                                         op: e.entryType,
-                                        startTimestamp: s
+                                        startTimestamp: a
                                     })
-                                })(t, r, i, s, c);
+                                })(t, r, i, a, c);
                                 let e = (0, _.Y)(),
                                     n = r.startTime < e.firstHiddenTime;
-                                "first-paint" === r.name && n && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Measurements] Adding FP"), v.fp = {
+                                "first-paint" === r.name && n && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Measurements] Adding FP"), v.fp = {
                                     value: r.startTime,
                                     unit: "millisecond"
-                                }), "first-contentful-paint" === r.name && n && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Measurements] Adding FCP"), v.fcp = {
+                                }), "first-contentful-paint" === r.name && n && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Measurements] Adding FCP"), v.fcp = {
                                     value: r.startTime,
                                     unit: "millisecond"
                                 });
                                 break
                             }
                             case "resource": {
-                                let e = r.name.replace(l.m.location.origin, "");
-                                (function(t, e, n, r, i, s) {
+                                let e = r.name.replace(u.m.location.origin, "");
+                                (function(t, e, n, r, i, a) {
                                     if ("xmlhttprequest" === e.initiatorType || "fetch" === e.initiatorType) return;
-                                    let a = {};
-                                    "transferSize" in e && (a["http.response_transfer_size"] = e.transferSize), "encodedBodySize" in e && (a["http.response_content_length"] = e.encodedBodySize), "decodedBodySize" in e && (a["http.decoded_response_content_length"] = e.decodedBodySize), "renderBlockingStatus" in e && (a["resource.render_blocking_status"] = e.renderBlockingStatus);
-                                    let o = s + r;
+                                    let s = {};
+                                    "transferSize" in e && (s["http.response_transfer_size"] = e.transferSize), "encodedBodySize" in e && (s["http.response_content_length"] = e.encodedBodySize), "decodedBodySize" in e && (s["http.decoded_response_content_length"] = e.decodedBodySize), "renderBlockingStatus" in e && (s["resource.render_blocking_status"] = e.renderBlockingStatus);
+                                    let o = a + r;
                                     (0, p.H)(t, {
                                         description: n,
                                         endTimestamp: o + i,
                                         op: e.initiatorType ? `resource.${e.initiatorType}` : "resource.other",
                                         startTimestamp: o,
-                                        data: a
+                                        data: s
                                     })
-                                })(t, r, e, i, s, c)
+                                })(t, r, e, i, a, c)
                             }
                         }
                     }), y = Math.max(d.length - 1, 0), function(t) {
-                        let e = l.m.navigator;
+                        let e = u.m.navigator;
                         if (!e) return;
                         let n = e.connection;
                         n && (n.effectiveType && t.setTag("effectiveConnectionType", n.effectiveType), n.type && t.setTag("connectionType", n.type), (0, p.n)(n.rtt) && (v["connection.rtt"] = {
@@ -11044,7 +10959,7 @@ Error:`, e)
                             unit: "millisecond"
                         })), (0, p.n)(e.deviceMemory) && t.setTag("deviceMemory", `${e.deviceMemory} GB`), (0, p.n)(e.hardwareConcurrency) && t.setTag("hardwareConcurrency", String(e.hardwareConcurrency))
                     }(t), "pageload" === t.op) {
-                    "number" == typeof e && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Measurements] Adding TTFB"), v.ttfb = {
+                    "number" == typeof e && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Measurements] Adding TTFB"), v.ttfb = {
                         value: (e - t.startTimestamp) * 1e3,
                         unit: "millisecond"
                     }, "number" == typeof n && n <= e && (v["ttfb.requestTime"] = {
@@ -11055,38 +10970,36 @@ Error:`, e)
                         let n = v[e].value,
                             r = Math.abs((c + m(n) - t.startTimestamp) * 1e3),
                             i = r - n;
-                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log(`[Measurements] Normalized ${e} from ${n} to ${r} (${i})`), v[e].value = r
+                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log(`[Measurements] Normalized ${e} from ${n} to ${r} (${i})`), v[e].value = r
                     });
-                    let s = v["mark.fid"];
-                    s && v.fid && ((0, p.H)(t, {
+                    let a = v["mark.fid"];
+                    a && v.fid && ((0, p.H)(t, {
                             description: "first input delay",
-                            endTimestamp: s.value + m(v.fid.value),
+                            endTimestamp: a.value + m(v.fid.value),
                             op: "ui.action",
-                            startTimestamp: s.value
+                            startTimestamp: a.value
                         }), delete v["mark.fid"]), !("fcp" in v) && delete v.cls, Object.keys(v).forEach(e => {
                             t.setMeasurement(e, v[e].value, v[e].unit)
                         }),
                         function(t) {
-                            r && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Measurements] Adding LCP Data"), r.element && t.setTag("lcp.element", (0, o.Rt)(r.element)), r.id && t.setTag("lcp.id", r.id), r.url && t.setTag("lcp.url", r.url.trim().slice(0, 200)), t.setTag("lcp.size", r.size)), i && i.sources && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && u.kg.log("[Measurements] Adding CLS Data"), i.sources.forEach((e, n) => t.setTag(`cls.source.${n+1}`, (0, o.Rt)(e.node))))
+                            r && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Measurements] Adding LCP Data"), r.element && t.setTag("lcp.element", (0, o.Rt)(r.element)), r.id && t.setTag("lcp.id", r.id), r.url && t.setTag("lcp.url", r.url.trim().slice(0, 200)), t.setTag("lcp.size", r.size)), i && i.sources && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && l.kg.log("[Measurements] Adding CLS Data"), i.sources.forEach((e, n) => t.setTag(`cls.source.${n+1}`, (0, o.Rt)(e.node))))
                         }(t)
                 }
                 r = void 0, i = void 0, v = {}
             }
 
-            function k(t, e, n, r, i, s) {
-                let a = s ? e[s] : e[`${n}End`],
+            function k(t, e, n, r, i, a) {
+                let s = a ? e[a] : e[`${n}End`],
                     o = e[`${n}Start`];
-                if (!!o && !!a)(0, p.H)(t, {
+                if (!!o && !!s)(0, p.H)(t, {
                     op: "browser",
                     description: i || n,
                     startTimestamp: r + m(o),
-                    endTimestamp: r + m(a)
+                    endTimestamp: r + m(s)
                 })
             }
         },
         72609: function(t, e, n) {
-            "use strict";
-
             function r(t) {
                 return "number" == typeof t && isFinite(t)
             }
@@ -11110,7 +11023,6 @@ Error:`, e)
             })
         },
         722994: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 L7: function() {
                     return f
@@ -11121,11 +11033,11 @@ Error:`, e)
             });
             var r = n(633401),
                 i = n(876122),
-                s = n(154405),
-                a = n(793884),
+                a = n(154405),
+                s = n(793884),
                 o = n(868145),
-                u = n(336344),
-                l = n(874230),
+                l = n(336344),
+                u = n(874230),
                 c = n(545459),
                 d = n(46834);
             let h = ["localhost", /^\/(?!\/)/],
@@ -11150,29 +11062,29 @@ Error:`, e)
                     traceXHR: _.traceXHR,
                     ...t
                 }, v = "function" == typeof m ? m : t => !0, b = t => (function(t, e) {
-                    return (0, u.U0)(t, e || h)
+                    return (0, l.U0)(t, e || h)
                 })(t, o || f), E = {};
-                e && (0, a.oq)("fetch", t => {
-                    let e = function(t, e, n, a) {
+                e && (0, s.oq)("fetch", t => {
+                    let e = function(t, e, n, s) {
                         if (!(0, r.z)() || !t.fetchData) return;
                         let o = e(t.fetchData.url);
                         if (t.endTimestamp && o) {
                             let e = t.fetchData.__span;
                             if (!e) return;
-                            let n = a[e];
+                            let n = s[e];
                             if (n) {
                                 if (t.response) {
                                     n.setHttpStatus(t.response.status);
                                     let e = parseInt(t.response && t.response.headers && t.response.headers.get("content-length"));
                                     e > 0 && n.setData("http.response_content_length", e)
                                 } else t.error && n.setStatus("internal_error");
-                                n.finish(), delete a[e]
+                                n.finish(), delete s[e]
                             }
                             return
                         }
-                        let u = (0, i.Gd)(),
-                            h = u.getScope(),
-                            _ = u.getClient(),
+                        let l = (0, i.Gd)(),
+                            h = l.getScope(),
+                            _ = l.getClient(),
                             f = h.getSpan(),
                             {
                                 method: p,
@@ -11187,20 +11099,20 @@ Error:`, e)
                                 description: `${p} ${m}`,
                                 op: "http.client"
                             }) : void 0;
-                        if (g && (t.fetchData.__span = g.spanId, a[g.spanId] = g), n(t.fetchData.url) && _) {
+                        if (g && (t.fetchData.__span = g.spanId, s[g.spanId] = g), n(t.fetchData.url) && _) {
                             let e = t.args[0];
                             t.args[1] = t.args[1] || {};
                             let n = t.args[1];
                             n.headers = function(t, e, n, r) {
                                 let i = n.getSpan(),
-                                    a = i && i.transaction,
+                                    s = i && i.transaction,
                                     {
                                         traceId: o,
-                                        sampled: u,
+                                        sampled: l,
                                         dsc: h
                                     } = n.getPropagationContext(),
-                                    _ = i ? i.toTraceparent() : (0, l.$p)(o, void 0, u),
-                                    f = a ? a.getDynamicSamplingContext() : h || (0, s._)(o, e, n),
+                                    _ = i ? i.toTraceparent() : (0, u.$p)(o, void 0, l),
+                                    f = s ? s.getDynamicSamplingContext() : h || (0, a._)(o, e, n),
                                     p = (0, c.IQ)(f),
                                     m = "undefined" != typeof Request && (0, d.V9)(t, Request) ? t.headers : r.headers;
                                 if (!m) return {
@@ -11228,14 +11140,14 @@ Error:`, e)
                         return g
                     }(t, v, b, E);
                     y && e && p(e)
-                }), n && (0, a.oq)("xhr", t => {
+                }), n && (0, s.oq)("xhr", t => {
                     let e = function(t, e, n, o) {
-                        let u = t.xhr,
-                            d = u && u[a.xU];
-                        if (!(0, r.z)() || u && u.__sentry_own_request__ || !u || !d) return;
+                        let l = t.xhr,
+                            d = l && l[s.xU];
+                        if (!(0, r.z)() || l && l.__sentry_own_request__ || !l || !d) return;
                         let h = e(d.url);
                         if (t.endTimestamp && h) {
-                            let t = u.__sentry_xhr_span_id__;
+                            let t = l.__sentry_xhr_span_id__;
                             if (!t) return;
                             let e = o[t];
                             e && (e.setHttpStatus(d.status_code), e.finish(), delete o[t]);
@@ -11254,12 +11166,12 @@ Error:`, e)
                                 description: `${d.method} ${d.url}`,
                                 op: "http.client"
                             }) : void 0;
-                        if (m && (u.__sentry_xhr_span_id__ = m.spanId, o[u.__sentry_xhr_span_id__] = m), u.setRequestHeader && n(d.url)) {
+                        if (m && (l.__sentry_xhr_span_id__ = m.spanId, o[l.__sentry_xhr_span_id__] = m), l.setRequestHeader && n(d.url)) {
                             if (m) {
                                 let t = m && m.transaction,
                                     e = t && t.getDynamicSamplingContext(),
                                     n = (0, c.IQ)(e);
-                                g(u, m.toTraceparent(), n)
+                                g(l, m.toTraceparent(), n)
                             } else {
                                 let t = _.getClient(),
                                     {
@@ -11267,9 +11179,9 @@ Error:`, e)
                                         sampled: n,
                                         dsc: r
                                     } = f.getPropagationContext(),
-                                    i = (0, l.$p)(e, void 0, n),
-                                    a = r || (t ? (0, s._)(e, t, f) : void 0);
-                                g(u, i, (0, c.IQ)(a))
+                                    i = (0, u.$p)(e, void 0, n),
+                                    s = r || (t ? (0, a._)(e, t, f) : void 0);
+                                g(l, i, (0, c.IQ)(s))
                             }
                         }
                         return m
@@ -11336,7 +11248,6 @@ Error:`, e)
             }
         },
         263951: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 R: function() {
                     return o
@@ -11344,33 +11255,33 @@ Error:`, e)
             });
             var r = n(529866),
                 i = n(868145),
-                s = n(793884),
-                a = n(607190);
+                a = n(793884),
+                s = n(607190);
 
             function o(t, e = !0, n = !0) {
                 let o;
-                if (!a.m || !a.m.location) {
+                if (!s.m || !s.m.location) {
                     ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.warn("Could not initialize routing instrumentation due to invalid location");
                     return
                 }
-                let u = a.m.location.href;
+                let l = s.m.location.href;
                 e && (o = t({
-                    name: a.m.location.pathname,
+                    name: s.m.location.pathname,
                     startTimestamp: i.Z1 ? i.Z1 / 1e3 : void 0,
                     op: "pageload",
                     metadata: {
                         source: "url"
                     }
-                })), n && (0, s.oq)("history", ({
+                })), n && (0, a.oq)("history", ({
                     to: e,
                     from: n
                 }) => {
-                    if (void 0 === n && u && -1 !== u.indexOf(e)) {
-                        u = void 0;
+                    if (void 0 === n && l && -1 !== l.indexOf(e)) {
+                        l = void 0;
                         return
                     }
-                    n !== e && (u = void 0, o && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] Finishing current transaction with op: ${o.op}`), o.finish()), o = t({
-                        name: a.m.location.pathname,
+                    n !== e && (l = void 0, o && (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && r.kg.log(`[Tracing] Finishing current transaction with op: ${o.op}`), o.finish()), o = t({
+                        name: s.m.location.pathname,
                         op: "navigation",
                         metadata: {
                             source: "url"
@@ -11380,7 +11291,6 @@ Error:`, e)
             }
         },
         607190: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 m: function() {
                     return r
@@ -11389,7 +11299,6 @@ Error:`, e)
             let r = n(24716).n2
         },
         540161: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 m: function() {
                     return o
@@ -11397,62 +11306,60 @@ Error:`, e)
             });
             var r = n(358133),
                 i = n(416097),
-                s = n(544457),
-                a = n(527475);
+                a = n(544457),
+                s = n(527475);
             let o = t => {
                 let e;
                 let n = (0, i.I)("CLS", 0),
                     o = 0,
-                    u = [],
-                    l = t => {
+                    l = [],
+                    u = t => {
                         t.forEach(t => {
                             if (!t.hadRecentInput) {
-                                let r = u[0],
-                                    i = u[u.length - 1];
-                                o && 0 !== u.length && t.startTime - i.startTime < 1e3 && t.startTime - r.startTime < 5e3 ? (o += t.value, u.push(t)) : (o = t.value, u = [t]), o > n.value && (n.value = o, n.entries = u, e && e())
+                                let r = l[0],
+                                    i = l[l.length - 1];
+                                o && 0 !== l.length && t.startTime - i.startTime < 1e3 && t.startTime - r.startTime < 5e3 ? (o += t.value, l.push(t)) : (o = t.value, l = [t]), o > n.value && (n.value = o, n.entries = l, e && e())
                             }
                         })
                     },
-                    c = (0, s.N)("layout-shift", l);
+                    c = (0, a.N)("layout-shift", u);
                 if (c) {
                     e = (0, r._)(t, n);
                     let i = () => {
-                        l(c.takeRecords()), e(!0)
+                        u(c.takeRecords()), e(!0)
                     };
-                    return (0, a.u)(i), i
+                    return (0, s.u)(i), i
                 }
             }
         },
         282572: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 F: function() {
-                    return u
+                    return l
                 }
             });
             var r = n(358133),
                 i = n(233863),
-                s = n(416097),
-                a = n(544457),
+                a = n(416097),
+                s = n(544457),
                 o = n(527475);
-            let u = t => {
+            let l = t => {
                 let e;
                 let n = (0, i.Y)(),
-                    u = (0, s.I)("FID"),
-                    l = t => {
-                        t.startTime < n.firstHiddenTime && (u.value = t.processingStart - t.startTime, u.entries.push(t), e(!0))
+                    l = (0, a.I)("FID"),
+                    u = t => {
+                        t.startTime < n.firstHiddenTime && (l.value = t.processingStart - t.startTime, l.entries.push(t), e(!0))
                     },
                     c = t => {
-                        t.forEach(l)
+                        t.forEach(u)
                     },
-                    d = (0, a.N)("first-input", c);
-                e = (0, r._)(t, u), d && (0, o.u)(() => {
+                    d = (0, s.N)("first-input", c);
+                e = (0, r._)(t, l), d && (0, o.u)(() => {
                     c(d.takeRecords()), d.disconnect()
                 }, !0)
             }
         },
         301072: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 N: function() {
                     return c
@@ -11460,15 +11367,15 @@ Error:`, e)
             });
             var r = n(358133),
                 i = n(726300),
-                s = n(233863),
-                a = n(416097),
+                a = n(233863),
+                s = n(416097),
                 o = n(544457),
-                u = n(527475);
-            let l = {},
+                l = n(527475);
+            let u = {},
                 c = t => {
                     let e;
-                    let n = (0, s.Y)(),
-                        c = (0, a.I)("LCP"),
+                    let n = (0, a.Y)(),
+                        c = (0, s.I)("LCP"),
                         d = t => {
                             let r = t[t.length - 1];
                             if (r) {
@@ -11480,19 +11387,18 @@ Error:`, e)
                     if (h) {
                         e = (0, r._)(t, c);
                         let n = () => {
-                            !l[c.id] && (d(h.takeRecords()), h.disconnect(), l[c.id] = !0, e(!0))
+                            !u[c.id] && (d(h.takeRecords()), h.disconnect(), u[c.id] = !0, e(!0))
                         };
                         return ["keydown", "click"].forEach(t => {
                             addEventListener(t, n, {
                                 once: !0,
                                 capture: !0
                             })
-                        }), (0, u.u)(n, !0), n
+                        }), (0, l.u)(n, !0), n
                     }
                 }
         },
         358133: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 _: function() {
                     return r
@@ -11500,13 +11406,12 @@ Error:`, e)
             });
             let r = (t, e, n) => {
                 let r, i;
-                return s => {
-                    e.value >= 0 && (s || n) && ((i = e.value - (r || 0)) || void 0 === r) && (r = e.value, e.delta = i, t(e))
+                return a => {
+                    e.value >= 0 && (a || n) && ((i = e.value - (r || 0)) || void 0 === r) && (r = e.value, e.delta = i, t(e))
                 }
             }
         },
         134954: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 f: function() {
                     return r
@@ -11515,7 +11420,6 @@ Error:`, e)
             let r = () => `v3-${Date.now()}-${Math.floor(Math.random()*(9e12-1))+1e12}`
         },
         726300: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 A: function() {
                     return i
@@ -11528,10 +11432,9 @@ Error:`, e)
             }
         },
         27583: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 W: function() {
-                    return s
+                    return a
                 }
             });
             var r = n(607190);
@@ -11546,34 +11449,32 @@ Error:`, e)
                     for (let e in t) "navigationStart" !== e && "toJSON" !== e && (n[e] = Math.max(t[e] - t.navigationStart, 0));
                     return n
                 },
-                s = () => r.m.__WEB_VITALS_POLYFILL__ ? r.m.performance && (performance.getEntriesByType && performance.getEntriesByType("navigation")[0] || i()) : r.m.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0]
+                a = () => r.m.__WEB_VITALS_POLYFILL__ ? r.m.performance && (performance.getEntriesByType && performance.getEntriesByType("navigation")[0] || i()) : r.m.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0]
         },
         233863: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 Y: function() {
-                    return u
+                    return l
                 }
             });
             var r = n(607190),
                 i = n(527475);
-            let s = -1,
-                a = () => "hidden" !== r.m.document.visibilityState || r.m.document.prerendering ? 1 / 0 : 0,
+            let a = -1,
+                s = () => "hidden" !== r.m.document.visibilityState || r.m.document.prerendering ? 1 / 0 : 0,
                 o = () => {
                     (0, i.u)(({
                         timeStamp: t
                     }) => {
-                        s = t
+                        a = t
                     }, !0)
                 },
-                u = () => (s < 0 && (s = a(), o()), {
+                l = () => (a < 0 && (a = s(), o()), {
                     get firstHiddenTime() {
-                        return s
+                        return a
                     }
                 })
         },
         416097: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 I: function() {
                     return o
@@ -11581,12 +11482,12 @@ Error:`, e)
             });
             var r = n(607190),
                 i = n(134954),
-                s = n(726300),
-                a = n(27583);
+                a = n(726300),
+                s = n(27583);
             let o = (t, e) => {
-                let n = (0, a.W)(),
+                let n = (0, s.W)(),
                     o = "navigate";
-                return n && (o = r.m.document.prerendering || (0, s.A)() > 0 ? "prerender" : n.type.replace(/_/g, "-")), {
+                return n && (o = r.m.document.prerendering || (0, a.A)() > 0 ? "prerender" : n.type.replace(/_/g, "-")), {
                     name: t,
                     value: void 0 === e ? -1 : e,
                     rating: "good",
@@ -11598,7 +11499,6 @@ Error:`, e)
             }
         },
         544457: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 N: function() {
                     return r
@@ -11619,7 +11519,6 @@ Error:`, e)
             }
         },
         527475: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 u: function() {
                     return i
@@ -11634,7 +11533,6 @@ Error:`, e)
             }
         },
         752875: function(t, e, n) {
-            "use strict";
             n.d(e, {
                 L7: function() {
                     return i.L7
@@ -11650,64 +11548,58 @@ Error:`, e)
                 i = n(722994)
         },
         974971: function(t, e, n) {
-            "use strict";
             var r = n(525305),
                 i = n(354848),
-                s = n(332916),
-                a = n(641236)("toStringTag"),
+                a = n(332916),
+                s = n(641236)("toStringTag"),
                 o = Object,
-                u = "Arguments" === s(function() {
+                l = "Arguments" === a(function() {
                     return arguments
                 }()),
-                l = function(t, e) {
+                u = function(t, e) {
                     try {
                         return t[e]
                     } catch (t) {}
                 };
-            t.exports = r ? s : function(t) {
+            t.exports = r ? a : function(t) {
                 var e, n, r;
-                return void 0 === t ? "Undefined" : null === t ? "Null" : "string" == typeof(n = l(e = o(t), a)) ? n : u ? s(e) : "Object" === (r = s(e)) && i(e.callee) ? "Arguments" : r
+                return void 0 === t ? "Undefined" : null === t ? "Null" : "string" == typeof(n = u(e = o(t), s)) ? n : l ? a(e) : "Object" === (r = a(e)) && i(e.callee) ? "Arguments" : r
             }
         },
         905145: function(t, e, n) {
-            "use strict";
             var r = n(581031),
                 i = Error,
-                s = r("".replace),
-                a = String(i("zxcasd").stack),
+                a = r("".replace),
+                s = String(i("zxcasd").stack),
                 o = /\n\s*at [^:]*:[^\n]*/,
-                u = o.test(a);
+                l = o.test(s);
             t.exports = function(t, e) {
-                if (u && "string" == typeof t && !i.prepareStackTrace)
-                    for (; e--;) t = s(t, o, "");
+                if (l && "string" == typeof t && !i.prepareStackTrace)
+                    for (; e--;) t = a(t, o, "");
                 return t
             }
         },
         95948: function(t, e, n) {
-            "use strict";
             var r = n(354848),
                 i = n(622281),
-                s = n(276321);
+                a = n(276321);
             t.exports = function(t, e, n) {
-                var a, o;
-                return s && r(a = e.constructor) && a !== n && i(o = a.prototype) && o !== n.prototype && s(t, o), t
+                var s, o;
+                return a && r(s = e.constructor) && s !== n && i(o = s.prototype) && o !== n.prototype && a(t, o), t
             }
         },
         892725: function(t, e, n) {
-            "use strict";
             var r = n(714050);
             t.exports = function(t, e) {
                 return void 0 === t ? arguments.length < 2 ? "" : e : r(t)
             }
         },
         525305: function(t, e, n) {
-            "use strict";
             var r = n(641236)("toStringTag"),
                 i = {};
             i[r] = "z", t.exports = "[object z]" === String(i)
         },
         714050: function(t, e, n) {
-            "use strict";
             var r = n(974971),
                 i = String;
             t.exports = function(t) {
@@ -11717,4 +11609,4 @@ Error:`, e)
         }
     }
 ]);
-//# sourceMappingURL=7838.e93f7efbf4359231b3b2.js.map
+//# sourceMappingURL=7838.21f28cec945f945fd26d.js.map
