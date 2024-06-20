@@ -40664,7 +40664,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303467", ", Version Hash: ").concat("be7db0da89295d2a477adbd11dc3f62073900a68")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303480", ", Version Hash: ").concat("62920b4be17b082f6324ef233083107eb3c47258")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -46912,14 +46912,10 @@
                 FRIEND_PERMITTED_SOURCE_ALL: "Everyone",
                 FRIEND_PERMITTED_SOURCE_MUTUAL_FRIENDS: "Friends of Friends",
                 FRIEND_PERMITTED_SOURCE_MUTUAL_GUILDS: "Server Members",
-                USER_KEYWORD_FILTERS_TITLE: "Obscure Commonly Flagged Words",
-                USER_KEYWORD_FILTERS_DESCRIPTION: "Automatically replace words with asteriks that match our keyword filter presets",
-                USER_KEYWORD_FILTERS_PROFANITY_TITLE: "Severe Profanity",
-                USER_KEYWORD_FILTERS_PROFANITY_DESCRIPTION: "Extreme forms of swearing or cursing",
-                USER_KEYWORD_FILTERS_SLURS_TITLE: "Insults & Slurs",
-                USER_KEYWORD_FILTERS_SLURS_DESCRIPTION: "Personally insulting terms and terms that may be considered hate speech",
-                USER_KEYWORD_FILTERS_SEXUAL_CONTENT_TITLE: "Sexual Content",
-                USER_KEYWORD_FILTERS_SEXUAL_CONTENT_DESCRIPTION: "Terms that refer to sexually explicit behavior or activity",
+                USER_KEYWORD_FILTERS_TITLE: "Language Filter",
+                USER_KEYWORD_FILTERS_TOGGLE_TITLE: "Enable language filter",
+                USER_KEYWORD_FILTERS_DESCRIPTION_V2: "Automatically replace words with asterisks when they match our filters for severe profanity, insults, slurs, or sensitive content. [Learn more about this setting here.]({learnMoreLink})",
+                USER_KEYWORD_FILTERS_DESCRIPTION_SEARCHABLE: "Automatically replace words with asterisks when they match our filters for severe profanity, insults, slurs, or sensitive content.",
                 USER_DIRECT_MESSAGE_FILTERS: "Direct message filters",
                 USER_EXPLICIT_CONTENT_FILTER: "Safe Direct Messaging",
                 USER_EXPLICIT_CONTENT_FILTER_V2: "Explicit image filter",
@@ -96164,8 +96160,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303467", "303467"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303467")), t = 0), t
+                let t = parseInt((e = "303480", "303480"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303480")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124377,8 +124373,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303467",
-                    versionHash: "be7db0da89295d2a477adbd11dc3f62073900a68"
+                    buildNumber: "303480",
+                    versionHash: "62920b4be17b082f6324ef233083107eb3c47258"
                 }
             }
             n.d(t, {
@@ -169982,23 +169978,38 @@
             "use strict";
             n.d(t, {
                 g: function() {
-                    return s
+                    return o
+                },
+                p: function() {
+                    return a
                 }
             });
             var i = n(399606),
-                r = n(581883);
-            let s = () => {
-                var e, t, n;
-                let s = (0, i.cj)([r.Z], () => {
-                    var e, t;
-                    return null !== (t = null === (e = r.Z.settings.textAndImages) || void 0 === e ? void 0 : e.keywordFilterSettings) && void 0 !== t ? t : {}
-                });
-                return {
-                    profanity: null === (e = s.profanity) || void 0 === e ? void 0 : e.value,
-                    sexualContent: null === (t = s.sexualContent) || void 0 === t ? void 0 : t.value,
-                    slurs: null === (n = s.slurs) || void 0 === n ? void 0 : n.value
+                r = n(581883),
+                s = n(592204);
+            let o = () => {
+                    var e, t, n;
+                    let s = (0, i.cj)([r.Z], () => {
+                        var e, t;
+                        return null !== (t = null === (e = r.Z.settings.textAndImages) || void 0 === e ? void 0 : e.keywordFilterSettings) && void 0 !== t ? t : {}
+                    });
+                    return {
+                        profanity: null === (e = s.profanity) || void 0 === e ? void 0 : e.value,
+                        sexualContent: null === (t = s.sexualContent) || void 0 === t ? void 0 : t.value,
+                        slurs: null === (n = s.slurs) || void 0 === n ? void 0 : n.value
+                    }
+                },
+                a = () => {
+                    var e;
+                    let {
+                        profanity: t,
+                        sexualContent: n,
+                        slurs: i
+                    } = o();
+                    return !!(0, s.Xo)({
+                        location: "use-should-filter-keywords"
+                    }) && null !== (e = t || n || i) && void 0 !== e && e
                 }
-            }
         },
         200120: function(e, t, n) {
             "use strict";
@@ -180844,8 +180855,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718904086438",
-                                    build_number: "303467"
+                                    built_at: "1718904519672",
+                                    build_number: "303480"
                                 }
                             },
                             retries: 1
@@ -258878,7 +258889,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "be7db0da89295d2a477adbd11dc3f62073900a68"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "62920b4be17b082f6324ef233083107eb3c47258"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279513,7 +279524,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303467"
+                                build_number: "303480"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -286825,7 +286836,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303467", "303467"), 10);
+                let s = parseInt((n = "303480", "303480"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328328,4 +328339,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.5ae5a69326ff47615f26.js.map
+//# sourceMappingURL=79892.be20eef665d92f609292.js.map
