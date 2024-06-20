@@ -2609,17 +2609,13 @@
             e.exports = {
                 container: "container_e5da8b",
                 icon: "icon_e5da8b",
-                darkenBannerImage: "darkenBannerImage_e5da8b",
                 bannerImageContainer: "bannerImageContainer_e5da8b",
                 mediumBanner: "mediumBanner_e5da8b",
                 largeBanner: "largeBanner_e5da8b",
                 bannerImage: "bannerImage_e5da8b",
                 partnerLabelWrapper: "partnerLabelWrapper_e5da8b",
                 appDetailsContainer: "appDetailsContainer_e5da8b",
-                appDetails: "appDetails_e5da8b",
-                bannerImageChildContainer: "bannerImageChildContainer_e5da8b",
-                voiceLauncherAppCardContainer: "voiceLauncherAppCardContainer_e5da8b",
-                voiceLauncherAppCardButton: "voiceLauncherAppCardButton_e5da8b"
+                appDetails: "appDetails_e5da8b"
             }
         },
         943119: function(e, t, n) {
@@ -8108,6 +8104,7 @@
                 gameDetails: "gameDetails_e881fc",
                 mainContent: "mainContent_e881fc",
                 emptyFriendsWhoPlay: "emptyFriendsWhoPlay_e881fc",
+                summary: "summary_e881fc",
                 imageScroller: "imageScroller_e881fc",
                 gameArtwork: "gameArtwork_e881fc",
                 similarGames: "similarGames_e881fc"
@@ -18008,7 +18005,6 @@
                 icon: "icon_c87d73",
                 freeTrialPillInline: "freeTrialPillInline_c87d73 freeTrialPillInlineBlock_c87d73",
                 modifiedPrice: "modifiedPrice_c87d73",
-                modifiedPrices: "modifiedPrices_c87d73",
                 price: "price_c87d73",
                 newTagItem: "newTagItem_c87d73",
                 freeTrialPillWithSparkles: "freeTrialPillWithSparkles_c87d73",

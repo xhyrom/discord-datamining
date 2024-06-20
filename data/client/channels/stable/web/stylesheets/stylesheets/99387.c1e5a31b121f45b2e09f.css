@@ -31859,14 +31859,6 @@ div.cardContainer_c22357 {
     margin: 20px 0 10px
 }
 
-.modifiedPrices_c87d73:first-of-type {
-    margin: 16px 0 8px
-}
-
-.modifiedPrices_c87d73:last-of-type {
-    margin: 8px 0 16px
-}
-
 .price_c87d73 {
     margin: 0 0 8px
 }
@@ -34638,6 +34630,7 @@ span.clanTag_a31c43 {
 .container_e5da8b {
     border-radius: var(--radius-md);
     background-color: var(--bg-surface-raised);
+    width: 100%;
     overflow: hidden;
     cursor: pointer
 }
@@ -34657,10 +34650,6 @@ span.clanTag_a31c43 {
 .icon_e5da8b {
     width: 38px;
     height: 38px
-}
-
-.darkenBannerImage_e5da8b {
-    filter: brightness(.4)
 }
 
 .bannerImageContainer_e5da8b {
@@ -34711,7 +34700,6 @@ span.clanTag_a31c43 {
 }
 
 .appDetailsContainer_e5da8b {
-    position: relative;
     display: flex;
     flex-direction: row;
     padding: var(--spacing-8);
@@ -34724,26 +34712,6 @@ span.clanTag_a31c43 {
     overflow: hidden;
     flex-direction: column;
     margin-left: var(--spacing-12)
-}
-
-.bannerImageChildContainer_e5da8b {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%
-}
-
-.voiceLauncherAppCardContainer_e5da8b {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.voiceLauncherAppCardButton_e5da8b {
-    border-radius: var(--radius-round)
 }
 
 .header_b7ba1b {
@@ -70512,9 +70480,7 @@ html .invoiceCancelRow_bca5ca {
 }
 
 .circleSVG_d37103 {
-    overflow: visible;
-    height: 100%;
-    width: 100%
+    overflow: visible
 }
 
 .nitroGemAnimation_ba5739 {
@@ -105105,13 +105071,15 @@ div:has(>div>.container_d99f08) {
     border-bottom: 1px solid var(--border-subtle);
     padding-top: 2px;
     padding-bottom: 6px;
-    transition: background.1s linear
+    transition: background.1s linear;
+    opacity: 0;
+    animation-name: show_f1257c;
+    animation-duration: .25s;
+    animation-fill-mode: forwards
 }
 
 .profileEntryCard_f1257c:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0
+    border-bottom: none
 }
 
 .profileEntryCard_f1257c:hover {
@@ -105169,6 +105137,18 @@ div:has(>div>.container_d99f08) {
     overflow: hidden;
     opacity: 0;
     transition: width.25s ease-in-out, opacity.15s ease-in-out 0s
+}
+
+@keyframes show_f1257c {
+    0% {
+        opacity: 0;
+        transform: translatey(-16px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0)
+    }
 }
 
 .row_e881fc {
@@ -105304,6 +105284,10 @@ div:has(>div>.container_d99f08) {
     text-align: center
 }
 
+.summary_e881fc {
+    margin-bottom: var(--custom-spacing)
+}
+
 .imageScroller_e881fc {
     --custom-image-height: 140px;
     min-height: 156px;
@@ -105318,8 +105302,8 @@ div:has(>div>.container_d99f08) {
 }
 
 .similarGames_e881fc {
-    height: 112px;
-    width: 86px;
+    height: 44px;
+    width: 34px;
     border-radius: 4px
 }
 
@@ -142431,4 +142415,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2ec3234b8357c857e71b.css.map*/
+/*# sourceMappingURL=99387.c1e5a31b121f45b2e09f.css.map*/
