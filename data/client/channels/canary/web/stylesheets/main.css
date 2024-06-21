@@ -108627,29 +108627,32 @@ div:has(>div>.container_d99f08) {
 }
 
 .profileEntryCard_f1257c {
-    margin-bottom: 4px;
+    padding: var(--custom-spacing);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border-subtle);
-    padding-top: 2px;
-    padding-bottom: 6px;
     transition: background.1s linear
 }
 
 .profileEntryCard_f1257c:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0
+    border-bottom: none
 }
 
 .profileEntryCard_f1257c:hover {
-    background: var(--background-secondary)
+    background: var(--bg-mod-strong)
 }
 
 .profileEntryCard_f1257c:hover .messageButton_f1257c {
     opacity: 1
+}
+
+.avatar_f1257c {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 8px
 }
 
 .playerInfo_f1257c {
@@ -108731,9 +108734,13 @@ div:has(>div>.container_d99f08) {
 }
 
 .section_e881fc {
-    padding: var(--custom-spacing);
     border-radius: 8px;
-    background: var(--bg-base-secondary)
+    background: var(--bg-mod-subtle);
+    overflow: hidden
+}
+
+.padded_e881fc {
+    padding: var(--custom-spacing)
 }
 
 .gameProfileModal_e881fc {
@@ -108819,15 +108826,18 @@ div:has(>div>.container_d99f08) {
 
 .mainContent_e881fc {
     display: grid;
-    grid-gap: var(--custom-spacing);
-    gap: var(--custom-spacing);
+    grid-gap: var(--custom-spacing)calc(2*var(--custom-spacing));
+    gap: var(--custom-spacing)calc(2*var(--custom-spacing));
     grid-template-columns: 2fr 1fr;
-    padding-bottom: var(--custom-spacing);
-    max-height: 512px
+    padding-bottom: calc(2*var(--custom-spacing))
 }
 
 .mainContent_e881fc>* {
     overflow: hidden
+}
+
+.sidebar_e881fc {
+    border-left: 1px solid var(--border-subtle)
 }
 
 .emptyFriendsWhoPlay_e881fc {
@@ -145961,4 +145971,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8807c6a25bbd1f033480.css.map*/
+/*# sourceMappingURL=99387.b3ad22ea2679e718e349.css.map*/

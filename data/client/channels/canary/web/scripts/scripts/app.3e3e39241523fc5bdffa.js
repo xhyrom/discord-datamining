@@ -8091,6 +8091,7 @@
             e.exports = {
                 profileEntryCard: "profileEntryCard_f1257c",
                 messageButton: "messageButton_f1257c",
+                avatar: "avatar_f1257c",
                 playerInfo: "playerInfo_f1257c",
                 inputWrapper: "inputWrapper_f1257c",
                 input: "input_f1257c",
@@ -8109,6 +8110,7 @@
                 clickable: "clickable_e881fc",
                 content: "content_e881fc",
                 section: "section_e881fc",
+                padded: "padded_e881fc",
                 gameProfileModal: "gameProfileModal_e881fc",
                 gameArtHero: "gameArtHero_e881fc",
                 gameArtBackground: "gameArtBackground_e881fc",
@@ -8119,6 +8121,7 @@
                 followButton: "followButton_e881fc",
                 gameDetails: "gameDetails_e881fc",
                 mainContent: "mainContent_e881fc",
+                sidebar: "sidebar_e881fc",
                 emptyFriendsWhoPlay: "emptyFriendsWhoPlay_e881fc",
                 imageScroller: "imageScroller_e881fc",
                 gameArtwork: "gameArtwork_e881fc",
