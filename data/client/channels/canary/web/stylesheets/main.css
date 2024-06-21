@@ -26989,6 +26989,50 @@ div.profileThemedContainer_d2194f {
     margin: 0 12px
 }
 
+.overlay_a465ac {
+    margin: 12px 16px;
+    padding: 8px 12px
+}
+
+.contentGroup_a465ac {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center
+}
+
+.buttonGroup_a465ac {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.getNitroButton_a465ac {
+    color: var(--white-500);
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    flex: 1
+}
+
+.learnMoreButton_a465ac {
+    color: #b449b6;
+    border-radius: 3px;
+    border: 1px solid#b64ab7;
+    flex: 1
+}
+
+.closeIcon_a465ac {
+    width: 16px;
+    height: 16px
+}
+
+.closeIconWrapper_a465ac {
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    color: var(--text-normal);
+    margin-left: auto
+}
+
 .container_ecc60d {
     position: relative;
     width: 340px
@@ -145809,4 +145853,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ca3134eb881e7a085ecd.css.map*/
+/*# sourceMappingURL=99387.9e15e7f0ccd65ff6b0a5.css.map*/
