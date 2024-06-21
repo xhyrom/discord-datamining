@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303893", ", Version Hash: ").concat("f1dc53c2c1e0c2040cf675ceabbb66a4e74f92c9")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303907", ", Version Hash: ").concat("195293c8ae5be301e9344a81e17c51c017d32a6b")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96344,8 +96344,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303893", "303893"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303893")), t = 0), t
+                let t = parseInt((e = "303907", "303907"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303907")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124557,8 +124557,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303893",
-                    versionHash: "f1dc53c2c1e0c2040cf675ceabbb66a4e74f92c9"
+                    buildNumber: "303907",
+                    versionHash: "195293c8ae5be301e9344a81e17c51c017d32a6b"
                 }
             }
             n.d(t, {
@@ -184576,8 +184576,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718989002761",
-                                    build_number: "303893"
+                                    built_at: "1718989862780",
+                                    build_number: "303907"
                                 }
                             },
                             retries: 1
@@ -191398,14 +191398,14 @@
                 if (a.Z.getActivated()[e]) return !0;
                 let t = o.default.getCurrentUser();
                 try {
-                    return await i.tn.post({
-                        url: l.ANM.USER_PERKS_DEMOS_ACTIVATE(e)
-                    }), c(e), !0
-                } catch {
                     if ((0, s.QI)(t) && function(e) {
                             var t;
                             return (null === (t = a.Z.overrides()[e]) || void 0 === t ? void 0 : t.activateSuccess) === !0
                         }(e)) return c(e), !0;
+                    return await i.tn.post({
+                        url: l.ANM.USER_PERKS_DEMOS_ACTIVATE(e)
+                    }), c(e), !0
+                } catch {
                     return r.Z.dispatch({
                         type: "PREMIUM_PERKS_DEMO_ACTIVATE_FAILURE",
                         perkType: e
@@ -193575,9 +193575,6 @@
                 J1: function() {
                     return r
                 },
-                dE: function() {
-                    return o
-                },
                 hP: function() {
                     return s
                 },
@@ -193585,12 +193582,11 @@
                     return i
                 },
                 pM: function() {
-                    return a
+                    return o
                 }
             });
             let i = (0, n(652874).Z)(() => ({
                 hqStreamingFrameAnimationPlayed: !1,
-                hqStreamingUnlockAnimationPlayed: !1,
                 hqStreamingPopoutDismissed: !1,
                 hqStreamingIsEnabled: !1,
                 hqStreamingDidEnable: !1
@@ -193613,12 +193609,6 @@
             }
 
             function o(e) {
-                i.setState({
-                    hqStreamingUnlockAnimationPlayed: e
-                })
-            }
-
-            function a(e) {
                 i.setState({
                     hqStreamingPopoutDismissed: e
                 })
@@ -263049,7 +263039,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f1dc53c2c1e0c2040cf675ceabbb66a4e74f92c9"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "195293c8ae5be301e9344a81e17c51c017d32a6b"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280868,7 +280858,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303893"
+                                build_number: "303907"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -281968,6 +281958,9 @@
                 Rd: function() {
                     return K
                 },
+                Ro: function() {
+                    return eG
+                },
                 Rt: function() {
                     return eO
                 },
@@ -281987,7 +281980,7 @@
                     return eN
                 },
                 Wz: function() {
-                    return eG
+                    return ew
                 },
                 XK: function() {
                     return eD
@@ -282727,7 +282720,7 @@
             }
 
             function es(e) {
-                let t = m.Z.getPlanIdsForSkus([eG(U.Si.GUILD)]);
+                let t = m.Z.getPlanIdsForSkus([ew(U.Si.GUILD)]);
                 l()(null != t, "Missing guildSubscriptionPlanIds");
                 let n = e.find(e => {
                     let {
@@ -282905,7 +282898,7 @@
                         }
                     }), t
                 }
-                let o = m.Z.getForSkuAndInterval(eG(U.Si.GUILD), s.interval, s.intervalCount);
+                let o = m.Z.getForSkuAndInterval(ew(U.Si.GUILD), s.interval, s.intervalCount);
                 if (null == o) {
                     let t = Error("Unsupported plan");
                     throw (0, R.q2)(t, {
@@ -283175,6 +283168,11 @@
             }
 
             function eG(e) {
+                var t;
+                return null !== (t = I.Z.getActivated()[e]) && void 0 !== t && t
+            }
+
+            function ew(e) {
                 return e
             }
             t.ZP = Object.freeze({
@@ -283376,7 +283374,7 @@
                             return y.Rj.PREMIUM_TIER_2
                     }
                 },
-                castPremiumSubscriptionAsSkuId: eG,
+                castPremiumSubscriptionAsSkuId: ew,
                 canUseAnimatedEmojis: function(e) {
                     return (0, T.ks)(T.g_, e)
                 },
@@ -283435,11 +283433,7 @@
                     return (0, T.ks)(T.uw, e)
                 },
                 canStreamQuality: function(e, t) {
-                    return !! function(e) {
-                        var t;
-                        let n = I.Z.getPerksDemos();
-                        return null !== (t = null == n ? void 0 : n[e]) && void 0 !== t && t
-                    }(c.q.STREAM_HIGH_QUALITY) || ("high" === e ? (0, T.ks)(T.O8, t) : "mid" === e && (0, T.ks)(T.g7, t))
+                    return !!eG(c.q.STREAM_HIGH_QUALITY) || ("high" === e ? (0, T.ks)(T.O8, t) : "mid" === e && (0, T.ks)(T.g7, t))
                 },
                 hasFreeBoosts: function(e) {
                     return (0, T.ks)(T.$0, e)
@@ -288177,7 +288171,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303893", "303893"), 10);
+                let s = parseInt((n = "303907", "303907"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -329692,4 +329686,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.de26a5c0fe0672f01a7b.js.map
+//# sourceMappingURL=79892.8e6bb29ada489614a151.js.map
