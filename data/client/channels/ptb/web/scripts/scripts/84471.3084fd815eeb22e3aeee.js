@@ -2828,7 +2828,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-bd3f57bdceae17085aedd2d2d21220951f4eec96",
+                    release: "discord_web-da55ce5a136a487b43fb1fc983bc20c19838fd9d",
                     beforeSend: _ => {
                         var E, I;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || A.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !T() && !("Aborted" === (I = _).message || "cancel captcha" === I.message) && r() ? _ : null
@@ -2846,8 +2846,8 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), R.YA("buildNumber", (_ = "304010", "304010"));
-                R.YA("builtAt", String("1718999325025"));
+                }), R.YA("buildNumber", (_ = "304023", "304023"));
+                R.YA("builtAt", String("1719000461728"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) R.YA(_, E[_]);
@@ -14409,4 +14409,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.f995837a43e1a87f600a.js.map
+//# sourceMappingURL=84471.3084fd815eeb22e3aeee.js.map
