@@ -61404,135 +61404,6 @@ div:has(>div>.modal_a78559) {
     min-width: 48px
 }
 
-.userMenuItem_e1268c {
-    display: flex;
-    align-items: center
-}
-
-.userMenuUsername_e1268c {
-    display: flex;
-    align-items: center;
-    margin: 0 8px
-}
-
-.userMenuText_e1268c {
-    max-width: 172px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    display: block;
-    color: var(--header-primary)
-}
-
-.userMenuDiscriminator_e1268c {
-    color: var(--header-secondary)
-}
-
-.focused_e1268c .userMenuUsername_e1268c .userMenuText_e1268c,
-.focused_e1268c .userMenuUsername_e1268c .userMenuDiscriminator_e1268c {
-    color: var(--white-500)
-}
-
-.userMenuItemAvatar_e1268c {
-    margin-right: 8px
-}
-
-.activeIcon_e1268c {
-    margin-left: auto
-}
-
-.statusItem_e0f739 {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-areas: "icon status" ". description";
-    grid-template-rows: 24px 1fr;
-    grid-template-columns: 24px 1fr;
-    align-items: center;
-    width: 100%;
-    padding: 4px 8px;
-    min-height: 24px
-}
-
-.statusItemNoPadding_e0f739 {
-    padding: 0
-}
-
-.status_e0f739 {
-    grid-area: status span 2;
-    display: flex;
-    align-items: center
-}
-
-.icon_e0f739 {
-    grid-area: icon
-}
-
-.description_e0f739 {
-    grid-area: description;
-    color: currentColor;
-    margin-bottom: 2px;
-    font-size: 12px;
-    line-height: 16px;
-    white-space: normal
-}
-
-.customStatusItem_e0f739 {
-    grid-template-areas: "status clear";
-    grid-template-rows: 24px;
-    grid-template-columns: 1fr 20px
-}
-
-.customStatusWithEmoji_e0f739 {
-    grid-template-areas: "icon status clear";
-    grid-template-rows: 24px;
-    grid-template-columns: 24px 1fr 20px
-}
-
-.customEmoji_e0f739 {
-    grid-area: icon;
-    margin-left: -2px;
-    width: 18px;
-    height: 18px
-}
-
-.customEmojiPlaceholder_e0f739 {
-    background-image: url(/assets/5d072ffe53b7bf2459b8.svg);
-    background-size: contain;
-    background-repeat: no-repeat
-}
-
-.customText_e0f739 {
-    grid-area: status;
-    min-width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis
-}
-
-.clearStatusButton_e0f739 {
-    grid-area: clear;
-    line-height: 0
-}
-
-.clearStatusButton_e0f739:hover {
-    color: var(--interactive-hover)
-}
-
-.clearStatusIcon_e0f739 {
-    width: 16px;
-    height: 16px;
-    margin-left: 4px
-}
-
-.switchAccountsItem_e0f739 {
-    white-space: normal;
-    grid-template-rows: auto
-}
-
-.switchAccountsIcon_e0f739 {
-    margin-left: -2px
-}
-
 .container_a1eddf {
     background: linear-gradient(180deg, #894c7c, #4b1840);
     display: flex;
@@ -61791,6 +61662,43 @@ div:has(>div>.modal_a78559) {
     background-image: url(/assets/5d072ffe53b7bf2459b8.svg);
     background-size: contain;
     background-repeat: no-repeat
+}
+
+.userMenuItem_e1268c {
+    display: flex;
+    align-items: center
+}
+
+.userMenuUsername_e1268c {
+    display: flex;
+    align-items: center;
+    margin: 0 8px
+}
+
+.userMenuText_e1268c {
+    max-width: 172px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    color: var(--header-primary)
+}
+
+.userMenuDiscriminator_e1268c {
+    color: var(--header-secondary)
+}
+
+.focused_e1268c .userMenuUsername_e1268c .userMenuText_e1268c,
+.focused_e1268c .userMenuUsername_e1268c .userMenuDiscriminator_e1268c {
+    color: var(--white-500)
+}
+
+.userMenuItemAvatar_e1268c {
+    margin-right: 8px
+}
+
+.activeIcon_e1268c {
+    margin-left: auto
 }
 
 .menu_ad5fac {
@@ -62433,7 +62341,28 @@ div:has(>div>.modal_a78559) {
 }
 
 .avatarWrapper_b2ca13 {
-    margin-right: 8px
+    margin-right: 8px;
+    align-items: center;
+    display: flex;
+    margin-left: -2px;
+    min-width: 120px;
+    padding-left: 2px
+}
+
+.avatarWrapper_b2ca13:hover {
+    background-color: var(--background-modifier-selected);
+    border-radius: 4px;
+    color: var(--interactive-hover)
+}
+
+.avatarWrapper_b2ca13 .nameTag_b2ca13 {
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 4px
+}
+
+.avatarWrapper_b2ca13 .avatar_b2ca13:hover {
+    opacity: 1
 }
 
 .nameTag_b2ca13 {
@@ -62496,47 +62425,6 @@ div:has(>div>.modal_a78559) {
     width: 14px;
     height: 14px;
     margin-right: 4px
-}
-
-.withTagAsButton_b2ca13,
-.withTagless_b2ca13 {
-    align-items: center;
-    display: flex;
-    margin-left: -2px;
-    min-width: 120px;
-    padding-left: 2px
-}
-
-.withTagAsButton_b2ca13:hover,
-.withTagless_b2ca13:hover {
-    background-color: var(--background-modifier-selected);
-    border-radius: 4px;
-    color: var(--interactive-hover)
-}
-
-.withTagAsButton_b2ca13 .nameTag_b2ca13,
-.withTagless_b2ca13 .nameTag_b2ca13 {
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-top: 4px
-}
-
-.withTagAsButton_b2ca13 .avatar_b2ca13:hover,
-.withTagless_b2ca13 .avatar_b2ca13:hover {
-    opacity: 1
-}
-
-.withTagless_b2ca13 {
-    min-width: 60px;
-    margin-right: 60px
-}
-
-.withTagless_b2ca13 .nameTag_b2ca13 {
-    padding-left: 0
-}
-
-.withTagless_b2ca13 .nameTag_b2ca13 button:hover {
-    background-color: transparent
 }
 
 .accountProfilePopoutWrapper_b2ca13 {
@@ -137486,7 +137374,27 @@ div.nagbar_dccaf1 {
     box-sizing: border-box
 }
 
-.container_dc6b97 {
+.root_bc9cc2 {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    max-height: none
+}
+
+.headerInner_bc9cc2 {
+    position: relative;
+    padding: 16px 16px 0;
+    z-index: 2
+}
+
+.avatar_bc9cc2 {
+    position: absolute;
+    top: -68px;
+    left: 24px
+}
+
+.body_bc9cc2 {
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -137496,11 +137404,11 @@ div.nagbar_dccaf1 {
     height: 100%
 }
 
-.overlay_dc6b97 {
+.overlay_bc9cc2 {
     height: 100%
 }
 
-.banner_dc6b97 {
+.friendRequestBanner_bc9cc2 {
     overflow: visible
 }
 
@@ -137549,26 +137457,6 @@ div.nagbar_dccaf1 {
     background-color: HighlightText;
     border-color: Highlight;
     color: Highlight
-}
-
-.inner_e1126d {
-    position: relative;
-    padding: 16px 16px 0;
-    z-index: 2
-}
-
-.avatar_e1126d {
-    position: absolute;
-    top: -68px;
-    left: 24px
-}
-
-.root_bc9cc2 {
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    width: auto;
-    max-height: none
 }
 
 .container_bb2fbe {
@@ -145926,4 +145814,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f95388d7ed47f932e868.css.map*/
+/*# sourceMappingURL=99387.06b9a5146c56f8133750.css.map*/
