@@ -61939,14 +61939,13 @@ div:has(>div>.modal_a78559) {
     gap: 16px;
     display: flex;
     flex-direction: column;
-    z-index: 1
+    z-index: 3
 }
 
 .menus_d4e7c2 {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    z-index: 3
+    gap: 12px
 }
 
 .menu_d4e7c2 {
@@ -62048,12 +62047,6 @@ div:has(>div>.modal_a78559) {
 
 .divider_d4e7c2 {
     margin: 12px 12px 0
-}
-
-.popoutContainer_d4e7c2 {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row-reverse
 }
 
 .themeContainer_d4e7c2>div {
@@ -145930,4 +145923,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ff7c4fcb8359cb8e90a2.css.map*/
+/*# sourceMappingURL=99387.dc3c64b40055b9179b2a.css.map*/
