@@ -3187,7 +3187,8 @@ input[type=checked]:focus-visible+.label_b7d6f1 {
     top: 8px;
     right: 8px;
     display: flex;
-    align-items: center
+    align-items: center;
+    z-index: 1
 }
 
 .selectedScreen_ba4b17 {
@@ -145836,4 +145837,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a86b7fb4b15e3f26031a.css.map*/
+/*# sourceMappingURL=99387.2e7b1a3e6323008a8bea.css.map*/
