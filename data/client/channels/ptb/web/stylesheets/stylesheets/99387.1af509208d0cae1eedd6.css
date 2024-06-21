@@ -45959,6 +45959,10 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     height: 10px
 }
 
+.statusBubbleOuterStatusCursor_d0a252 {
+    cursor: pointer
+}
+
 .statusBubbleShape_d0a252 {
     border-radius: 16px
 }
@@ -46005,20 +46009,47 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     position: absolute
 }
 
+.statusBubbleOuter_d0a252:hover .addStatusPrompt_d0a252,
+.statusBubbleOuter_d0a252:focus .addStatusPrompt_d0a252 {
+    color: var(--text-normal)
+}
+
+.statusBubbleOuter_d0a252:hover .addStatusIconColor_d0a252,
+.statusBubbleOuter_d0a252:focus .addStatusIconColor_d0a252 {
+    fill: var(--interactive-hover)
+}
+
 .singleLineAlign_d0a252 {
     text-align: center
 }
 
+.addStatusPrompt_d0a252 {
+    display: inline;
+    color: var(--text-muted);
+    vertical-align: middle
+}
+
+.addStatusIcon_d0a252 {
+    display: inline;
+    height: 18px;
+    width: 18px;
+    margin-right: 4px;
+    fill: var(--interactive-normal);
+    vertical-align: middle
+}
+
 .statusText_d0a252 {
     display: inline;
-    color: var(--text-normal)
+    color: var(--text-normal);
+    vertical-align: middle
 }
 
 .statusEmojiInline_d0a252 {
     display: inline;
     height: 16px;
     width: 16px;
-    margin-right: 4px
+    margin-right: 4px;
+    vertical-align: middle
 }
 
 .statusEmojiOnly_d0a252 {
@@ -143061,4 +143092,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.afd5760e3417efcf9b6b.css.map*/
+/*# sourceMappingURL=99387.1af509208d0cae1eedd6.css.map*/

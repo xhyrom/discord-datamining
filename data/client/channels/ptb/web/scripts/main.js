@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304154", ", Version Hash: ").concat("d1a818d6bf952f5050596800fa1ebac012039827")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304157", ", Version Hash: ").concat("ca9fd36501533a3015c23072fae69f7541b14900")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -75145,7 +75145,7 @@
         100527: function(e, t) {
             "use strict";
             var n, i;
-            (i = n || (n = {})).POPOUT_WINDOW = "popout window", i.OVERLAY = "overlay", i.NOTICE = "notice", i.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", i.BADGE = "badge", i.USER_SETTINGS = "user settings", i.USER_SETTINGS_MENU = "user settings menu", i.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", i.ACCOUNT = "account", i.TEXT_AND_IMAGES = "text and images", i.GUILD_SETTINGS = "guild settings", i.OVERVIEW = "overview", i.STICKERS = "stickers", i.VANITY_URL = "vanity url", i.URI_SCHEME = "uri scheme", i.AKA = "aka", i.MESSAGES = "messages", i.NEW_MESSAGE_COMPOSER = "new message composer", i.NOTIFICATIONS = "notifications", i.NOTIFICATION_CENTER = "notification center", i.PUSH_NOTIFICATION = "push notification", i.FAMILY_CENTER = "family center", i.FRIENDS_LIST = "friends list", i.EXPANDED_FRIENDS_LIST = "expanded friends list", i.CONTACTS_LIST = "contacts list", i.ADD_FRIENDS = "add friends", i.FRIEND_REQUESTS = "friend requests", i.SUGGESTED_FRIENDS = "suggested friends", i.BLOCKED_USERS = "blocked users", i.PREMIUM_MARKETING = "premium marketing", i.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", i.PREMIUM_PAYMENT_MODAL = "premium payment modal", i.PREMIUM_UPSELL_ALERT = "premium upsell alert", i.PREMIUM_UPSELL_MODAL = "premium upsell modal", i.PREMIUM_SETTINGS = "premium settings", i.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", i.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", i.CHANNEL_CALL = "channel call", i.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", i.CHANNEL_DETAILS = "channel details", i.RTC_PANEL = "rtc panel", i.SOUNDBOARD_BUTTON = "soundboard button", i.SOUNDBOARD_POPOUT = "soundboard popout", i.SOUNDBOARD_WHEEL = "soundboard wheel", i.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", i.GIFT_BUTTON = "gift button", i.EXPRESSION_SUGGESTIONS = "expression suggestions", i.EMOJI_PICKER = "emoji picker", i.STICKER_PICKER = "sticker picker", i.STICKER_POPOUT = "sticker popout", i.PREMIUM_UPSELL = "premium upsell", i.EMPTY_STATE = "empty state", i.SUBSCRIPTION_DETAILS = "subscription details", i.SUBSCRIPTION_HEADER = "subscription header", i.ACCOUNT_CREDIT_BANNER = "account credit banner", i.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", i.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", i.STREAM_QUALITY_INDICATOR = "stream quality indicator", i.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", i.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", i.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", i.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", i.RPC = "rpc", i.BILLING_STANDALONE = "billing standalone", i.GUILD_CHANNEL_LIST = "guild channel list", i.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", i.STICKER_MESSAGE = "sticker message", i.CHANNEL_TEXT_AREA = "channel text area", i.HEADER_BAR = "header bar", i.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", i.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", i.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", i.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", i.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", i.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", i.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", i.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", i.GUILD_HEADER = "guild header", i.GUILD_BANNER = "guild banner", i.GUILD_BANNER_NOTICE = "guild banner notice", i.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", i.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", i.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", i.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", i.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", i.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", i.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", i.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", i.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", i.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", i.GUILDS_LIST = "guilds list", i.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", i.ACTIVITY_DIRECTORY = "activity directory", i.ACTIVITY_TILE = "activity tile", i.ACTIVITY_UPSELL = "activity upsell", i.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", i.INSTANT_INVITE_MODAL = "instant invite modal", i.IMAGE_CROPPING_MODAL = "image cropping modal", i.GIF_PICKER = "gif picker", i.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", i.INVITE_MODAL = "invite modal", i.INVITE_EMBED = "invite embed", i.NEW_GUILD_BUTTON = "new guild button", i.CHARACTER_COUNT = "character count", i.DM_CHANNEL = "dm channel", i.GUILD_CHANNEL = "guild channel", i.FORUM_CHANNEL = "forum channel", i.FILE_UPLOAD_POPOUT = "file upload popout", i.VOICE_USER = "voice user", i.USER_LIST_ITEM = "user list item", i.EXECUTED_COMMAND = "executed command", i.EMOJI = "emoji", i.AVATAR = "avatar", i.USERNAME = "username", i.MEMBER_LIST = "member list", i.USER_MENTION = "user mention", i.ROLE_MENTION = "role mention", i.CONNECTIONS_ROLE_POPOUT = "connections role popout", i.PROFILE = "profile", i.PROFILE_MODAL = "profile modal", i.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", i.PROFILE_POPOUT = "profile popout", i.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", i.PROFILE_PANEL = "profile panel", i.GUILD_PROFILE = "guild profile", i.EDIT_AVATAR = "edit avatar", i.EDIT_BANNER = "edit banner", i.CHAT_INPUT = "chat input", i.CHAT_SIDEBAR = "chat sidebar", i.CREATE_THREAD = "create thread", i.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", i.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", i.SELECT_IMAGE_MODAL = "select image modal", i.VIDEO_BACKGROUND_OPTIONS = "video background options", i.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", i.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", i.CAMERA_PREVIEW = "camera preview", i.HOME_PAGE_PREMIUM_TAB = "home page premium tab", i.HOME_PAGE_SHOP_TAB = "home page shop tab", i.QUEST_HOME_PAGE = "quest home page", i.PREMIUM_MARKETING_SURFACE = "premium marketing surface", i.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", i.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", i.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", i.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", i.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", i.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", i.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", i.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", i.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", i.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", i.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", i.PREMIUM_MARKETING_FEATURE = "premium marketing feature", i.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", i.PREMIUM_MARKETING_FOOTER = "premium marketing footer", i.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", i.CHANNEL_CALL_ACTION_BAR = "channel call action bar", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", i.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", i.VOICE_CONTROL_TRAY = "voice control tray", i.ACTIVE_NOW_COLUMN = "active now column", i.CONTEXT_MENU = "context menu", i.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", i.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", i.CHANNEL_CATEGORY_MENU = "channel category menu", i.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", i.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", i.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", i.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", i.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", i.CHANNEL_TITLE_MENU = "channel title menu", i.GROUP_DM_MENU = "group dm menu", i.AUDIT_LOG_USER_MENU = "audit log user menu", i.BANNED_USER_MENU = "banned user menu", i.DM_USER_MENU = "dm user menu", i.GROUP_DM_USER_MENU = "group dm user menu", i.GUILD_CHANNEL_USER_MENU = "guild channel user menu", i.GUILD_MODERATION_USER_MENU = "guild moderation user menu", i.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", i.GUILD_SETTINGS_USER_MENU = "guild settings user menu", i.GUILD_USER_MENU = "guild user menu", i.UNKNOWN_USER_MENU = "unknown user menu", i.THREAD_USER_MENU = "thread user menu", i.USER_GENERIC_MENU = "user generic menu", i.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", i.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", i.VOICE_ACTION_SHEET = "voice action sheet", i.FOCUSED_VOICE_CONTROLS = "focused voice controls", i.MASKED_LINK = "masked link", i.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", i.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", i.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", i.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", i.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", i.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", i.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", i.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", i.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", i.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", i.ACCOUNT_PROFILE_POPOUT = "account profile popout", i.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", i.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", i.USER_SETTINGS_USER_PROFILE = "user settings use profile", i.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", i.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", i.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", i.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", i.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", i.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", i.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", i.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", i.STAGE_CHANNEL_CALL = "stage channel call", i.REQUEST_TO_SPEAK = "request to speak", i.STAGE_VIDEO_LIMIT = "stage video limit", i.ACTIVITIES_MINI_SHELF = "activities mini shelf", i.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", i.APP_LAUNCHER = "app launcher", i.APP_DETAIL = "app detail", i.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", i.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", i.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", i.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", i.MESSAGE_REACTIONS = "message reactions", i.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", i.APP_ICON_EDITOR = "app icon editor", i.APP_ICON_NEW_STYLES_COACHMARK = "app icon new styles coachmark", i.CLIENT_THEMES_EDITOR = "client themes editor", i.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", i.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", i.SHARE_NITRO_EMBED = "share nitro embed", i.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", i.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", i.REFERRAL_TRIALS_POPOUT = "referral trials popout", i.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", i.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", i.ACTIVITY_BOOKMARK = "activity bookmark", i.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", i.ACTIVITY_INSTANCE_EMBED = "activity instance embed", i.ACTIVITY_DETAIL_PAGE = "activity detail page", i.ACTIVITIES_PAGE = "activities page", i.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", i.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", i.VOICE_PANEL = "voice panel", i.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", i.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", i.ACTIVITIES_HAPPENING_NOW = "activities happening now", i.MEDIA_VIEWER = "media viewer", i.MESSAGE_LONG_PRESS_MENU = "message long press menu", i.CHANNEL_LONG_PRESS_MENU = "channel long press menu", i.COLLECTIBLES_SHOP = "collectibles shop", i.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", i.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", i.COLLECTIBLES_SHOP_CARD = "collectibles shop card", i.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", i.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", i.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", i.COLLECTIBLES_SHOP_HEADER_CAROUSEL = "collectibles shop header carousel", i.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", i.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", i.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", i.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", i.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", i.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", i.PREMIUM_BILLING_INFO = "premium billing info", i.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", i.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", i.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", i.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", i.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", i.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", i.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", i.PREMIUM_PLAN_SELECT = "premium_plan_select", i.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", i.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", i.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", i.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", i.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", i.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", i.MEMBER_SAFETY_PAGE = "member safety page", i.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", i.GUILD_MEMBER_MOD_VIEW = "guild member mod view", i.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", i.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", i.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", i.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", i.GUILD_SHOP_PAGE = "guild shop page", i.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", i.MESSAGE_REMIX_TAG = "message remix tag", i.MESSAGE_REMIX_BUTTON = "message remix button", i.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", i.CLIPS_SETTINGS = "clips settings", i.CLIPS_GALLERY = "clips gallery", i.CLIPS_GALLERY_ITEM = "clips gallery item", i.CLIPS_EDITOR = "clips editor", i.CLIPS_SHARE_MODAL = "clips share modal", i.CHANNEL_ATTACH_BUTTON = "channel attach button", i.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", i.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", i.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", i.GUILD_EVENT_MODAL = "guild event modal", i.GUILD_EVENT_CARD = "guild event card", i.EVENT_SETTINGS = "event settings", i.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", i.GIFT_CODE_MODAL = "gift code modal", i.APP_STOREFRONT = "app storefront", i.SHOP_PRODUCT_DETAILS = "shop product details", i.SEARCH_MEMBERS = "search members", i.POLL_VOTES = "poll votes", i.YOU_SCREEN = "you screen", i.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", i.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", i.CLAN_GUILD_PROFILE = "clan guild profile", i.CLAN_TAG = "clan tag", i.CLAN_DISCOVERY = "clan discovery", i.CLAN_REAPPLY = "clan reapply", i.COLLECTIBLES_LIGHTNING_CHECKOUT = "collectibles lightning checkout", i.CHECKOUT_RECOVERY_NAGBAR = "checkout recovery nagbar", i.DEV_TOOLS = "devtools", i.IN_CASE_YOU_MISSED_IT_TAB = "ICYMI Tab", t.Z = n
+            (i = n || (n = {})).POPOUT_WINDOW = "popout window", i.OVERLAY = "overlay", i.NOTICE = "notice", i.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", i.BADGE = "badge", i.USER_SETTINGS = "user settings", i.USER_SETTINGS_MENU = "user settings menu", i.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", i.ACCOUNT = "account", i.TEXT_AND_IMAGES = "text and images", i.GUILD_SETTINGS = "guild settings", i.OVERVIEW = "overview", i.STICKERS = "stickers", i.VANITY_URL = "vanity url", i.URI_SCHEME = "uri scheme", i.AKA = "aka", i.MESSAGES = "messages", i.NEW_MESSAGE_COMPOSER = "new message composer", i.NOTIFICATIONS = "notifications", i.NOTIFICATION_CENTER = "notification center", i.PUSH_NOTIFICATION = "push notification", i.FAMILY_CENTER = "family center", i.FRIENDS_LIST = "friends list", i.EXPANDED_FRIENDS_LIST = "expanded friends list", i.CONTACTS_LIST = "contacts list", i.ADD_FRIENDS = "add friends", i.FRIEND_REQUESTS = "friend requests", i.SUGGESTED_FRIENDS = "suggested friends", i.BLOCKED_USERS = "blocked users", i.PREMIUM_MARKETING = "premium marketing", i.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", i.PREMIUM_PAYMENT_MODAL = "premium payment modal", i.PREMIUM_UPSELL_ALERT = "premium upsell alert", i.PREMIUM_UPSELL_MODAL = "premium upsell modal", i.PREMIUM_SETTINGS = "premium settings", i.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", i.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", i.CHANNEL_CALL = "channel call", i.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", i.CHANNEL_DETAILS = "channel details", i.RTC_PANEL = "rtc panel", i.SOUNDBOARD_BUTTON = "soundboard button", i.SOUNDBOARD_POPOUT = "soundboard popout", i.SOUNDBOARD_WHEEL = "soundboard wheel", i.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", i.GIFT_BUTTON = "gift button", i.EXPRESSION_SUGGESTIONS = "expression suggestions", i.EMOJI_PICKER = "emoji picker", i.STICKER_PICKER = "sticker picker", i.STICKER_POPOUT = "sticker popout", i.PREMIUM_UPSELL = "premium upsell", i.EMPTY_STATE = "empty state", i.SUBSCRIPTION_DETAILS = "subscription details", i.SUBSCRIPTION_HEADER = "subscription header", i.ACCOUNT_CREDIT_BANNER = "account credit banner", i.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", i.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", i.STREAM_QUALITY_INDICATOR = "stream quality indicator", i.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", i.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", i.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", i.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", i.RPC = "rpc", i.BILLING_STANDALONE = "billing standalone", i.GUILD_CHANNEL_LIST = "guild channel list", i.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", i.STICKER_MESSAGE = "sticker message", i.CHANNEL_TEXT_AREA = "channel text area", i.HEADER_BAR = "header bar", i.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", i.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", i.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", i.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", i.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", i.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", i.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", i.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", i.GUILD_HEADER = "guild header", i.GUILD_BANNER = "guild banner", i.GUILD_BANNER_NOTICE = "guild banner notice", i.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", i.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", i.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", i.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", i.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", i.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", i.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", i.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", i.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", i.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", i.GUILDS_LIST = "guilds list", i.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", i.ACTIVITY_DIRECTORY = "activity directory", i.ACTIVITY_TILE = "activity tile", i.ACTIVITY_UPSELL = "activity upsell", i.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", i.INSTANT_INVITE_MODAL = "instant invite modal", i.IMAGE_CROPPING_MODAL = "image cropping modal", i.GIF_PICKER = "gif picker", i.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", i.INVITE_MODAL = "invite modal", i.INVITE_EMBED = "invite embed", i.NEW_GUILD_BUTTON = "new guild button", i.CHARACTER_COUNT = "character count", i.DM_CHANNEL = "dm channel", i.GUILD_CHANNEL = "guild channel", i.FORUM_CHANNEL = "forum channel", i.FILE_UPLOAD_POPOUT = "file upload popout", i.VOICE_USER = "voice user", i.USER_LIST_ITEM = "user list item", i.EXECUTED_COMMAND = "executed command", i.EMOJI = "emoji", i.AVATAR = "avatar", i.USERNAME = "username", i.MEMBER_LIST = "member list", i.USER_MENTION = "user mention", i.ROLE_MENTION = "role mention", i.CONNECTIONS_ROLE_POPOUT = "connections role popout", i.PROFILE = "profile", i.PROFILE_MODAL = "profile modal", i.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", i.PROFILE_POPOUT = "profile popout", i.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", i.PROFILE_PANEL = "profile panel", i.PROFILE_CUSTOM_STATUS = "profile custom status", i.GUILD_PROFILE = "guild profile", i.EDIT_AVATAR = "edit avatar", i.EDIT_BANNER = "edit banner", i.CHAT_INPUT = "chat input", i.CHAT_SIDEBAR = "chat sidebar", i.CREATE_THREAD = "create thread", i.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", i.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", i.SELECT_IMAGE_MODAL = "select image modal", i.VIDEO_BACKGROUND_OPTIONS = "video background options", i.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", i.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", i.CAMERA_PREVIEW = "camera preview", i.HOME_PAGE_PREMIUM_TAB = "home page premium tab", i.HOME_PAGE_SHOP_TAB = "home page shop tab", i.QUEST_HOME_PAGE = "quest home page", i.PREMIUM_MARKETING_SURFACE = "premium marketing surface", i.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", i.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", i.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", i.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", i.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", i.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", i.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", i.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", i.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", i.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", i.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", i.PREMIUM_MARKETING_FEATURE = "premium marketing feature", i.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", i.PREMIUM_MARKETING_FOOTER = "premium marketing footer", i.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", i.CHANNEL_CALL_ACTION_BAR = "channel call action bar", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", i.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", i.VOICE_CONTROL_TRAY = "voice control tray", i.ACTIVE_NOW_COLUMN = "active now column", i.CONTEXT_MENU = "context menu", i.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", i.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", i.CHANNEL_CATEGORY_MENU = "channel category menu", i.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", i.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", i.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", i.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", i.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", i.CHANNEL_TITLE_MENU = "channel title menu", i.GROUP_DM_MENU = "group dm menu", i.AUDIT_LOG_USER_MENU = "audit log user menu", i.BANNED_USER_MENU = "banned user menu", i.DM_USER_MENU = "dm user menu", i.GROUP_DM_USER_MENU = "group dm user menu", i.GUILD_CHANNEL_USER_MENU = "guild channel user menu", i.GUILD_MODERATION_USER_MENU = "guild moderation user menu", i.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", i.GUILD_SETTINGS_USER_MENU = "guild settings user menu", i.GUILD_USER_MENU = "guild user menu", i.UNKNOWN_USER_MENU = "unknown user menu", i.THREAD_USER_MENU = "thread user menu", i.USER_GENERIC_MENU = "user generic menu", i.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", i.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", i.VOICE_ACTION_SHEET = "voice action sheet", i.FOCUSED_VOICE_CONTROLS = "focused voice controls", i.MASKED_LINK = "masked link", i.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", i.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", i.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", i.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", i.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", i.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", i.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", i.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", i.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", i.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", i.ACCOUNT_PROFILE_POPOUT = "account profile popout", i.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", i.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", i.USER_SETTINGS_USER_PROFILE = "user settings use profile", i.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", i.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", i.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", i.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", i.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", i.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", i.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", i.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", i.STAGE_CHANNEL_CALL = "stage channel call", i.REQUEST_TO_SPEAK = "request to speak", i.STAGE_VIDEO_LIMIT = "stage video limit", i.ACTIVITIES_MINI_SHELF = "activities mini shelf", i.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", i.APP_LAUNCHER = "app launcher", i.APP_DETAIL = "app detail", i.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", i.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", i.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", i.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", i.MESSAGE_REACTIONS = "message reactions", i.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", i.APP_ICON_EDITOR = "app icon editor", i.APP_ICON_NEW_STYLES_COACHMARK = "app icon new styles coachmark", i.CLIENT_THEMES_EDITOR = "client themes editor", i.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", i.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", i.SHARE_NITRO_EMBED = "share nitro embed", i.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", i.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", i.REFERRAL_TRIALS_POPOUT = "referral trials popout", i.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", i.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", i.ACTIVITY_BOOKMARK = "activity bookmark", i.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", i.ACTIVITY_INSTANCE_EMBED = "activity instance embed", i.ACTIVITY_DETAIL_PAGE = "activity detail page", i.ACTIVITIES_PAGE = "activities page", i.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", i.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", i.VOICE_PANEL = "voice panel", i.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", i.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", i.ACTIVITIES_HAPPENING_NOW = "activities happening now", i.MEDIA_VIEWER = "media viewer", i.MESSAGE_LONG_PRESS_MENU = "message long press menu", i.CHANNEL_LONG_PRESS_MENU = "channel long press menu", i.COLLECTIBLES_SHOP = "collectibles shop", i.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", i.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", i.COLLECTIBLES_SHOP_CARD = "collectibles shop card", i.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", i.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", i.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", i.COLLECTIBLES_SHOP_HEADER_CAROUSEL = "collectibles shop header carousel", i.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", i.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", i.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", i.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", i.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", i.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", i.PREMIUM_BILLING_INFO = "premium billing info", i.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", i.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", i.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", i.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", i.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", i.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", i.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", i.PREMIUM_PLAN_SELECT = "premium_plan_select", i.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", i.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", i.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", i.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", i.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", i.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", i.MEMBER_SAFETY_PAGE = "member safety page", i.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", i.GUILD_MEMBER_MOD_VIEW = "guild member mod view", i.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", i.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", i.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", i.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", i.GUILD_SHOP_PAGE = "guild shop page", i.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", i.MESSAGE_REMIX_TAG = "message remix tag", i.MESSAGE_REMIX_BUTTON = "message remix button", i.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", i.CLIPS_SETTINGS = "clips settings", i.CLIPS_GALLERY = "clips gallery", i.CLIPS_GALLERY_ITEM = "clips gallery item", i.CLIPS_EDITOR = "clips editor", i.CLIPS_SHARE_MODAL = "clips share modal", i.CHANNEL_ATTACH_BUTTON = "channel attach button", i.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", i.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", i.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", i.GUILD_EVENT_MODAL = "guild event modal", i.GUILD_EVENT_CARD = "guild event card", i.EVENT_SETTINGS = "event settings", i.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", i.GIFT_CODE_MODAL = "gift code modal", i.APP_STOREFRONT = "app storefront", i.SHOP_PRODUCT_DETAILS = "shop product details", i.SEARCH_MEMBERS = "search members", i.POLL_VOTES = "poll votes", i.YOU_SCREEN = "you screen", i.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", i.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", i.CLAN_GUILD_PROFILE = "clan guild profile", i.CLAN_TAG = "clan tag", i.CLAN_DISCOVERY = "clan discovery", i.CLAN_REAPPLY = "clan reapply", i.COLLECTIBLES_LIGHTNING_CHECKOUT = "collectibles lightning checkout", i.CHECKOUT_RECOVERY_NAGBAR = "checkout recovery nagbar", i.DEV_TOOLS = "devtools", i.IN_CASE_YOU_MISSED_IT_TAB = "ICYMI Tab", t.Z = n
         },
         98302: function(e, t, n) {
             "use strict";
@@ -96348,8 +96348,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304154", "304154"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304154")), t = 0), t
+                let t = parseInt((e = "304157", "304157"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304157")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124561,8 +124561,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304154",
-                    versionHash: "d1a818d6bf952f5050596800fa1ebac012039827"
+                    buildNumber: "304157",
+                    versionHash: "ca9fd36501533a3015c23072fae69f7541b14900"
                 }
             }
             n.d(t, {
@@ -183258,8 +183258,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719011744015",
-                                    build_number: "304154"
+                                    built_at: "1719012019094",
+                                    build_number: "304157"
                                 }
                             },
                             retries: 1
@@ -220847,6 +220847,58 @@
                 }
             }
         },
+        751009: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                K: function() {
+                    return r
+                }
+            });
+            let i = (0, n(818083).B)({
+                    kind: "user",
+                    id: "2024-06_enhanced_custom_status",
+                    label: "Enhanced Custom Status Experiment",
+                    defaultConfig: {
+                        modifyStatusEnabled: !1,
+                        permanentStatusEnabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Modifiable custom status",
+                        config: {
+                            modifyStatusEnabled: !0,
+                            permanentStatusEnabled: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Permanent custom status",
+                        config: {
+                            modifyStatusEnabled: !1,
+                            permanentStatusEnabled: !0
+                        }
+                    }, {
+                        id: 3,
+                        label: "Modifiable and permament custom status",
+                        config: {
+                            modifyStatusEnabled: !0,
+                            permanentStatusEnabled: !0
+                        }
+                    }]
+                }),
+                r = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !0,
+                        trackExposureOptions: r = {}
+                    } = e;
+                    return i.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n,
+                        trackExposureOptions: r
+                    })
+                }
+        },
         342656: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -223404,7 +223456,7 @@
             "use strict";
             n.d(t, {
                 J: function() {
-                    return T
+                    return O
                 }
             }), n(47120);
             var i = n(735250),
@@ -223417,124 +223469,166 @@
                 _ = n(481060),
                 c = n(788307),
                 d = n(607070),
-                E = n(228168),
-                I = n(739550);
+                E = n(100527),
+                I = n(906732),
+                T = n(594174),
+                h = n(751009),
+                S = n(785717),
+                f = n(228168),
+                N = n(689938),
+                A = n(739550);
+            let m = "text-sm/medium";
 
-            function T(e) {
+            function O(e) {
                 let {
-                    statusActivity: t,
-                    profileType: n,
-                    hasEntered: s = !0,
-                    animate: T = !0
-                } = e, h = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [S, f] = r.useState(!0), [N] = r.useState(() => new u.V7), A = r.useRef(null), m = r.useRef(null), O = r.useRef(null), R = r.useRef(null), p = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, g = null != p && p.length > 0, {
-                    emoji: C
-                } = null != t ? t : {}, v = null != C, L = v && !g, D = v || g, [M, P] = r.useState(L);
+                    user: t,
+                    statusActivity: s,
+                    profileType: O,
+                    hasEntered: R = !0,
+                    animate: p = !0,
+                    onClose: g
+                } = e, {
+                    modifyStatusEnabled: C
+                } = (0, h.K)({
+                    location: "UserProfileCustomStatusBubble"
+                }), {
+                    analyticsLocations: v
+                } = (0, I.ZP)(E.Z.PROFILE_CUSTOM_STATUS), {
+                    trackUserProfileAction: L
+                } = (0, S.KZ)(), D = (0, l.e7)([T.default], () => T.default.getCurrentUser()), M = t.id === (null == D ? void 0 : D.id), P = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [y, U] = r.useState(!0), [b] = r.useState(() => new u.V7), G = r.useRef(null), w = r.useRef(null), B = r.useRef(null), k = r.useRef(null), x = (null == s ? void 0 : s.state) != null && "" !== s.state ? s.state : null, V = null != x && x.length > 0, {
+                    emoji: Z
+                } = null != s ? s : {}, H = null != Z, F = H && !V, Y = H || V, j = M && !Y && C, [W, K] = r.useState(F);
                 r.useLayoutEffect(() => {
-                    if (null == A.current || L) return;
-                    let e = Math.floor(A.current.getBoundingClientRect().height);
-                    if (P(L || e <= 18), s) {
+                    if (null == G.current || F) return;
+                    let e = Math.floor(G.current.getBoundingClientRect().height);
+                    if (K(F || e <= 18), R) {
                         var t, n, i, r;
-                        m.current = null !== (i = null === (t = A.current) || void 0 === t ? void 0 : t.getBoundingClientRect().height) && void 0 !== i ? i : 144, R.current = null !== (r = null === (n = O.current) || void 0 === n ? void 0 : n.getBoundingClientRect().height) && void 0 !== r ? r : 36
+                        w.current = null !== (i = null === (t = G.current) || void 0 === t ? void 0 : t.getBoundingClientRect().height) && void 0 !== i ? i : 144, k.current = null !== (r = null === (n = B.current) || void 0 === n ? void 0 : n.getBoundingClientRect().height) && void 0 !== r ? r : 36
                     }
-                }, [s, L]);
-                let [y, U] = (0, a.useSpring)(() => ({
+                }, [R, F]);
+                let [z, q] = (0, a.useSpring)(() => ({
                     maxHeight: "".concat(36, "px"),
                     config: {
                         clamp: !0,
-                        immediate: h,
+                        immediate: P,
                         duration: 150
                     }
                 }));
-                if (r.useEffect(() => () => N.stop(), [N]), !D) return null;
-                let b = e => {
+                if (r.useEffect(() => () => b.stop(), [b]), !Y && !j) return null;
+                let X = e => {
                         var t, n;
-                        if (!M) {
-                            e ? U({
-                                maxHeight: "".concat(Math.min(null !== (t = m.current) && void 0 !== t ? t : 144, 144), "px"),
+                        if (!W) {
+                            e ? q({
+                                maxHeight: "".concat(Math.min(null !== (t = w.current) && void 0 !== t ? t : 144, 144), "px"),
                                 delay: 300
-                            }) : U({
-                                maxHeight: "".concat(Math.min(null !== (n = R.current) && void 0 !== n ? n : 36, 36), "px"),
+                            }) : q({
+                                maxHeight: "".concat(Math.min(null !== (n = k.current) && void 0 !== n ? n : 36, 36), "px"),
                                 delay: 0
                             });
-                            N.start(e ? 300 : 150, () => {
-                                f(!e)
+                            b.start(e ? 300 : 150, () => {
+                                U(!e)
                             })
                         }
                     },
-                    G = () => v ? (0, i.jsx)(c.I, {
-                        className: g ? I.statusEmojiInline : I.statusEmojiOnly,
-                        emoji: C,
-                        animate: T,
-                        hideTooltip: !1,
-                        tooltipDelay: E.vB
-                    }) : null,
-                    w = () => g ? (0, i.jsx)(_.Text, {
-                        variant: "text-sm/medium",
-                        className: I.statusText,
-                        children: p
-                    }) : null,
-                    B = {
-                        [I.biteSize]: n === E.y0.BITE_SIZE,
-                        [I.fullSize]: n === E.y0.FULL_SIZE,
-                        [I.panel]: n === E.y0.PANEL
-                    },
-                    k = o()(I.statusBubbleOuter, B, {
-                        [I.statusBubbleShape]: !g && v || !M,
-                        [I.statusBubbleSingleLineWithTextShape]: M && g
+                    Q = () => (0, i.jsxs)("div", {
+                        className: A.content,
+                        children: [(0, i.jsx)(_.CirclePlusIcon, {
+                            className: A.addStatusIcon,
+                            colorClass: A.addStatusIconColor
+                        }), (0, i.jsx)(_.Text, {
+                            variant: m,
+                            className: A.addStatusPrompt,
+                            children: N.Z.Messages.USER_SETTINGS_ADD_STATUS
+                        })]
                     }),
-                    x = o()(I.statusBubble, {
-                        [I.statusBubbleShape]: !g && v || !M,
-                        [I.statusBubbleSingleLineWithTextShape]: M && g,
-                        [I.statusBubbleEmojiOnlyPadding]: L,
-                        [I.statusBubbleWithTextPadding]: g,
-                        [I.statusBubbleWithTextMinWidth]: g,
-                        [I.statusBubbleCopyStatusCursor]: D
+                    J = () => H ? (0, i.jsx)(c.I, {
+                        className: V ? A.statusEmojiInline : A.statusEmojiOnly,
+                        emoji: Z,
+                        animate: p,
+                        hideTooltip: !1,
+                        tooltipDelay: f.vB
+                    }) : null,
+                    $ = () => V ? (0, i.jsx)(_.Text, {
+                        variant: m,
+                        className: A.statusText,
+                        children: x
+                    }) : null,
+                    ee = {
+                        [A.biteSize]: O === f.y0.BITE_SIZE,
+                        [A.fullSize]: O === f.y0.FULL_SIZE,
+                        [A.panel]: O === f.y0.PANEL
+                    },
+                    et = o()(A.statusBubbleOuter, ee, {
+                        [A.statusBubbleShape]: !V && H || !W,
+                        [A.statusBubbleSingleLineWithTextShape]: W && V || j,
+                        [A.statusBubbleOuterStatusCursor]: j
+                    }),
+                    en = o()(A.statusBubble, {
+                        [A.statusBubbleShape]: !V && H || !W,
+                        [A.statusBubbleSingleLineWithTextShape]: W && V || j,
+                        [A.statusBubbleEmojiOnlyPadding]: F,
+                        [A.statusBubbleWithTextPadding]: V || j,
+                        [A.statusBubbleWithTextMinWidth]: V,
+                        [A.statusBubbleCopyStatusCursor]: Y
                     });
                 return (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
-                        className: o()(I.invisibleContainer, B),
+                        className: o()(A.invisibleContainer, ee),
                         children: (0, i.jsx)("div", {
-                            className: k,
+                            className: et,
                             children: (0, i.jsxs)("span", {
-                                className: x,
-                                children: [(0, i.jsxs)("div", {
-                                    className: o()(I.content, I.clamp, I.placeholderWidth, {
-                                        [I.panel]: n === E.y0.PANEL
+                                className: en,
+                                children: [j && Q(), Y && (0, i.jsxs)("div", {
+                                    className: o()(A.content, A.clamp, A.placeholderWidth, {
+                                        [A.panel]: O === f.y0.PANEL
                                     }),
-                                    ref: O,
-                                    children: [G(), w()]
-                                }), (0, i.jsxs)("div", {
-                                    className: o()(I.content, I.unclamp, I.placeholderWidth, I.incorporeal, {
-                                        [I.panel]: n === E.y0.PANEL
+                                    ref: B,
+                                    children: [J(), $()]
+                                }), Y && (0, i.jsxs)("div", {
+                                    className: o()(A.content, A.unclamp, A.placeholderWidth, A.incorporeal, {
+                                        [A.panel]: O === f.y0.PANEL
                                     }),
-                                    ref: A,
-                                    children: [G(), w()]
+                                    ref: G,
+                                    children: [J(), $()]
                                 })]
                             })
                         })
                     }), (0, i.jsx)("div", {
-                        className: o()(I.visibleContainer, B),
-                        children: (0, i.jsx)("div", {
+                        className: o()(A.visibleContainer, ee),
+                        children: (0, i.jsx)(_.Clickable, {
                             tabIndex: 0,
-                            className: k,
-                            onFocus: () => b(!0),
-                            onBlur: () => b(!1),
-                            onMouseEnter: () => b(!0),
-                            onMouseLeave: () => b(!1),
-                            children: (0, i.jsx)("span", {
-                                className: x,
-                                children: (() => {
-                                    let e = o()(I.content, {
-                                        [I.clamp]: S,
-                                        [I.unclamp]: !S,
-                                        [I.singleLineAlign]: M
+                            className: et,
+                            onFocus: () => X(!0),
+                            onBlur: () => X(!1),
+                            onMouseEnter: () => X(!0),
+                            onMouseLeave: () => X(!1),
+                            onClick: j ? () => {
+                                L({
+                                    action: "PRESS_SET_CUSTOM_STATUS"
+                                }), null == g || g(), (0, _.openModalLazy)(async () => {
+                                    let {
+                                        default: e
+                                    } = await Promise.all([n.e("99387"), n.e("47484")]).then(n.bind(n, 211065));
+                                    return t => (0, i.jsx)(e, {
+                                        ...t,
+                                        sourceAnalyticsLocations: v
+                                    })
+                                })
+                            } : void 0,
+                            children: (0, i.jsxs)("span", {
+                                className: en,
+                                children: [j && Q(), Y && (() => {
+                                    let e = o()(A.content, {
+                                        [A.clamp]: y,
+                                        [A.unclamp]: !y,
+                                        [A.singleLineAlign]: W
                                     });
                                     return (0, i.jsxs)(a.animated.div, {
-                                        style: y,
+                                        style: z,
                                         className: e,
-                                        children: [G(), w()]
+                                        children: [J(), $()]
                                     })
-                                })()
+                                })()]
                             })
                         })
                     })]
@@ -226656,8 +226750,9 @@
                     displayProfile: n,
                     guildId: d,
                     channelId: E,
-                    onOpenProfile: I
-                } = e, T = (0, r.e7)([s.Z], () => s.Z.findActivity(t.id, e => {
+                    onOpenProfile: I,
+                    onClose: T
+                } = e, h = (0, r.e7)([s.Z], () => s.Z.findActivity(t.id, e => {
                     let {
                         type: t
                     } = e;
@@ -226678,8 +226773,10 @@
                         channelId: E,
                         onOpenProfile: I
                     }), (0, i.jsx)(a.J, {
-                        statusActivity: T,
-                        profileType: u.y0.BITE_SIZE
+                        user: t,
+                        statusActivity: h,
+                        profileType: u.y0.BITE_SIZE,
+                        onClose: T
                     })]
                 })
             }
@@ -227070,7 +227167,8 @@
                                     displayProfile: Z,
                                     guildId: v,
                                     channelId: L,
-                                    onOpenProfile: U ? void 0 : F
+                                    onOpenProfile: U ? void 0 : F,
+                                    onClose: P
                                 }), (0, i.jsx)(O.Z, {
                                     user: t,
                                     currentUser: n,
@@ -261721,7 +261819,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d1a818d6bf952f5050596800fa1ebac012039827"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ca9fd36501533a3015c23072fae69f7541b14900"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280882,7 +280980,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304154"
+                                build_number: "304157"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288203,7 +288301,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304154", "304154"), 10);
+                let s = parseInt((n = "304157", "304157"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -329727,4 +329825,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.af61afc70ea55d1c2ae9.js.map
+//# sourceMappingURL=79892.73a98b0b8006ffbfe9fe.js.map
