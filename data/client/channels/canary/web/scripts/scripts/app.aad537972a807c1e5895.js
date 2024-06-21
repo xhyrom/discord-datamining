@@ -22006,6 +22006,7 @@
                 panel: "panel_d0a252",
                 visibleContainer: "visibleContainer_d0a252",
                 statusBubbleCopyStatusCursor: "statusBubbleCopyStatusCursor_d0a252",
+                statusBubbleOuterStatusCursor: "statusBubbleOuterStatusCursor_d0a252",
                 statusBubbleShape: "statusBubbleShape_d0a252",
                 statusBubbleSingleLineWithTextShape: "statusBubbleSingleLineWithTextShape_d0a252",
                 statusBubbleEmojiOnlyPadding: "statusBubbleEmojiOnlyPadding_d0a252",
@@ -22016,7 +22017,10 @@
                 unclamp: "unclamp_d0a252",
                 placeholderWidth: "placeholderWidth_d0a252",
                 incorporeal: "incorporeal_d0a252",
+                addStatusPrompt: "addStatusPrompt_d0a252",
+                addStatusIconColor: "addStatusIconColor_d0a252",
                 singleLineAlign: "singleLineAlign_d0a252",
+                addStatusIcon: "addStatusIcon_d0a252",
                 statusText: "statusText_d0a252",
                 statusEmojiInline: "statusEmojiInline_d0a252",
                 statusEmojiOnly: "statusEmojiOnly_d0a252"
