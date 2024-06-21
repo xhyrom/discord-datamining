@@ -165,24 +165,6 @@
                 filled: "filled_a467ac"
             }
         },
-        84381: function(e, t, n) {
-            e.exports = {
-                statusItem: "statusItem_e0f739",
-                statusItemNoPadding: "statusItemNoPadding_e0f739",
-                status: "status_e0f739",
-                icon: "icon_e0f739",
-                description: "description_e0f739",
-                customStatusItem: "customStatusItem_e0f739 statusItem_e0f739",
-                customStatusWithEmoji: "customStatusWithEmoji_e0f739 statusItem_e0f739",
-                customEmoji: "customEmoji_e0f739",
-                customEmojiPlaceholder: "customEmojiPlaceholder_e0f739 customEmoji_e0f739",
-                customText: "customText_e0f739",
-                clearStatusButton: "clearStatusButton_e0f739",
-                clearStatusIcon: "clearStatusIcon_e0f739",
-                switchAccountsItem: "switchAccountsItem_e0f739",
-                switchAccountsIcon: "switchAccountsIcon_e0f739"
-            }
-        },
         37312: function(e, t, n) {
             e.exports = {
                 streamerModeEnabled: "streamerModeEnabled_c50c8b",
@@ -16800,8 +16782,6 @@
                 customStatus: "customStatus_b2ca13",
                 strikethrough: "strikethrough_b2ca13",
                 emoji: "emoji_b2ca13",
-                withTagAsButton: "withTagAsButton_b2ca13",
-                withTagless: "withTagless_b2ca13",
                 accountProfilePopoutWrapper: "accountProfilePopoutWrapper_b2ca13"
             }
         },
@@ -22645,20 +22625,12 @@
         },
         327570: function(e, t, n) {
             e.exports = {
-                root: "root_bc9cc2"
-            }
-        },
-        294070: function(e, t, n) {
-            e.exports = {
-                container: "container_dc6b97",
-                overlay: "overlay_dc6b97",
-                banner: "banner_dc6b97"
-            }
-        },
-        586940: function(e, t, n) {
-            e.exports = {
-                inner: "inner_e1126d",
-                avatar: "avatar_e1126d"
+                root: "root_bc9cc2",
+                headerInner: "headerInner_bc9cc2",
+                avatar: "avatar_bc9cc2",
+                body: "body_bc9cc2",
+                overlay: "overlay_bc9cc2",
+                friendRequestBanner: "friendRequestBanner_bc9cc2"
             }
         },
         143599: function(e, t, n) {
