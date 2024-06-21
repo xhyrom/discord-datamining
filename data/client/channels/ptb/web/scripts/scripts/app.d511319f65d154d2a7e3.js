@@ -8124,6 +8124,7 @@
                 sidebar: "sidebar_e881fc",
                 emptyFriendsWhoPlay: "emptyFriendsWhoPlay_e881fc",
                 imageScroller: "imageScroller_e881fc",
+                mediaModal: "mediaModal_e881fc",
                 gameArtwork: "gameArtwork_e881fc",
                 similarGames: "similarGames_e881fc"
             }
@@ -8298,16 +8299,6 @@
                 guildIcon: "guildIcon_f29418",
                 guildName: "guildName_f29418",
                 guildArrow: "guildArrow_f29418"
-            }
-        },
-        889976: function(e, t, n) {
-            e.exports = {
-                container: "container_ae2f81",
-                gradientGlow: "gradientGlow_ae2f81",
-                content: "content_ae2f81",
-                animation: "animation_ae2f81",
-                animationEndState: "animationEndState_ae2f81",
-                message: "message_ae2f81"
             }
         },
         365644: function(e, t, n) {

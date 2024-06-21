@@ -108851,6 +108851,10 @@ div:has(>div>.container_d99f08) {
     padding-bottom: 8px
 }
 
+.mediaModal_e881fc {
+    background-color: transparent
+}
+
 .gameArtwork_e881fc {
     border-radius: 4px;
     height: var(--custom-image-height);
@@ -109073,49 +109077,6 @@ div:has(>div>.container_d99f08) {
     padding-bottom: 0
 }
 
-.container_ae2f81 {
-    position: relative;
-    margin-top: 8px
-}
-
-.full-motion .container_ae2f81 {
-    transition: all.4s ease-in-out
-}
-
-.gradientGlow_ae2f81 {
-    filter: drop-shadow(0 0 10px rgba(184, 69, 193, .50196))
-}
-
-.content_ae2f81 {
-    background: var(--background-tertiary);
-    position: relative;
-    padding: 8px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: row;
-    align-items: center
-}
-
-.animation_ae2f81 {
-    width: 32px;
-    height: 32px;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .25));
-    transform: translate3d(-4px, -4px, 0)scale3d(1.9, 1.9, 1)
-}
-
-.animationEndState_ae2f81 {
-    transform: translatez(0)scalex(1);
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0))
-}
-
-.full-motion .animationEndState_ae2f81 {
-    transition: transform.75s ease-in-out
-}
-
-.message_ae2f81 {
-    margin-left: 4px
-}
-
 .upsellBanner_f59576 {
     display: flex;
     justify-content: space-between;
@@ -109221,7 +109182,6 @@ div:has(>div>.container_d99f08) {
     width: 100%;
     height: 100%;
     background: var(--brand-500);
-    transition: opacity var(--custom-transition-duration)ease-in-out;
     opacity: 0
 }
 
@@ -109255,8 +109215,7 @@ div:has(>div>.container_d99f08) {
 .selectorText_a78967 {
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--interactive-normal);
-    transition: color var(--custom-transition-duration)ease-in-out
+    color: var(--interactive-normal)
 }
 
 .selectorNitroText_a78967 {
@@ -145971,4 +145930,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b3ad22ea2679e718e349.css.map*/
+/*# sourceMappingURL=99387.ff7c4fcb8359cb8e90a2.css.map*/
