@@ -1285,6 +1285,10 @@
                     TUTORIAL_INDICATOR: _ => "/tutorial/indicators/".concat(_),
                     USERS: "/users",
                     ME: "/users/@me",
+                    GRAVITY_ITEMS_DEHYDRATED: "/users/@me/gravity-icymi",
+                    GRAVITY_ITEMS_HYDRATE: "/gravity-content",
+                    GRAVITY_CHANNEL_SCORE: "/gravity-custom-channel-score",
+                    GRAVITY_CHANNEL_SCORES: "/gravity-custom-channel-scores",
                     USERNAME_LOOKUP: _ => "/users/username/".concat(_),
                     POMELO_SUGGESTIONS: "/users/@me/pomelo-suggestions",
                     POMELO_SUGGESTIONS_UNAUTHED: "/unique-username/username-suggestions-unauthed",
@@ -2824,7 +2828,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-276cd065d6131215d5caadc49a13c916759ccc50",
+                    release: "discord_web-5840e2483b732840a4a9b2e10a0250978618c216",
                     beforeSend: _ => {
                         var E, I;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || A.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !T() && !("Aborted" === (I = _).message || "cancel captcha" === I.message) && r() ? _ : null
@@ -2842,8 +2846,8 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), R.YA("buildNumber", (_ = "303868", "303868"));
-                R.YA("builtAt", String("1718986027591"));
+                }), R.YA("buildNumber", (_ = "303872", "303872"));
+                R.YA("builtAt", String("1718986333546"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) R.YA(_, E[_]);
@@ -14405,4 +14409,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.ab2d5becfb8e2d6e011f.js.map
+//# sourceMappingURL=84471.8aa207b049919ccd6623.js.map

@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303868", ", Version Hash: ").concat("276cd065d6131215d5caadc49a13c916759ccc50")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303872", ", Version Hash: ").concat("5840e2483b732840a4a9b2e10a0250978618c216")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -60038,6 +60038,44 @@
                 CLAN_WELCOME_MESSAGE_7: "Yahaha! [!!{username}!!](usernameOnClick) found us!",
                 CLAN_WELCOME_MESSAGE_8: "Get ready everyone -- a [!!{username}!!](usernameOnClick) has appeared!",
                 CLAN_WELCOME_MESSAGE_9: "Roses are red, violets are blue, [!!{username}!!](usernameOnClick) just joined the Guild with you.",
+                ICYMI_TITLE: "In Case You Missed It",
+                ICYMI_SHORT_TITLE: "ICYMI",
+                ICYMI_DESCRIPTION: "Interesting content from your servers that you might have missed.",
+                ICYMI_SETTING_NAME: "Hide ICYMI tab",
+                ICYMI_END_TITLE: "$[ICYMI](icymiHook) $[—](dashHook) All Caught Up!",
+                ICYMI_END_SUBTITLE: "Check back later when there's new content for you to check out!",
+                ICYMI_BROWSE_SERVERS: "Browse more servers",
+                ICYMI_BACK_TO_HOME: "Back to Home",
+                ICYMI_ITEM_HEADER_SUBTITLE_POPULAR_CONTENT: " sent a popular message",
+                ICYMI_ITEM_HEADER_SUBTITLE_IMAGE: " sent an image",
+                ICYMI_ITEM_HEADER_SUBTITLE_VIDEO: " sent a video",
+                ICYMI_ITEM_HEADER_SUBTITLE_LINK: " sent a link",
+                ICYMI_ITEM_HEADER_SUBTITLE_THREAD: " started a thread",
+                ICYMI_ITEM_HEADER_SUBTITLE_FORUM_POST: " made a post",
+                ICYMI_ITEM_HEADER_SUBTITLE_CHANGED_STATUS: " changed their status",
+                ICYMI_ITEM_HEADER_SUBTITLE_INTERESTING: " posted something you might be interested in",
+                ICYMI_ITEM_HEADER_SUBTITLE_ANNOUNCEMENT: " posted an announcement",
+                ICYMI_ITEM_HEADER_SUBTITLE_FILE: " uploaded a file",
+                ICYMI_ITEM_HEADER_SUBTITLE_SUMMARY: "A conversation about —",
+                ICYMI_CUSTOM_SCORING_OPTIONS: "Custom Sorting Options",
+                ICYMI_CUSTOM_SCORING_MORE_FROM_CHANNEL: "Show me more from this channel",
+                ICYMI_CUSTOM_SCORING_LESS_FROM_CHANNEL: "Show me less from this channel",
+                ICYMI_CUSTOM_SCORING_NONE_CHANNEL: "No custom scoring for this channel",
+                ICYMI_CUSTOM_SCORING_MUTE_CHANNEL: "See nothing from this channel (mute)",
+                IYCMI_NEW_POSTS: "New Content",
+                ICYMI_VALUE_PROP_1: "Sourced from all your servers",
+                ICYMI_VALUE_PROP_2: "Only the freshest content",
+                ICYMI_VALUE_PROP_3: "Know when you've caught up",
+                ICYMI_EXPERIMENTAL_WARNING: "In Case You Missed It (ICYMI) is a super-duper, early-access, experimental, & pre-alpha feature. $[Send Feedback](feedbackHook)",
+                ICYMI_SHOW_NSFW: "Show NSFW content",
+                ICYMI_FEEDBACK_TITLE: "How was your experience with ICYMI?",
+                ICYMI_FEEDBACK_SUBTITLE: "Your feedback helps us improve your experience.",
+                ICYMI_FEEDBACK_ISSUE_SECTION_HEADER: "Choose your main issue",
+                ICYMI_FEEDBACK_IRRELEVANT_CONTENT: "Content was irrelevant",
+                ICYMI_FEEDBACK_NOT_ENOUGH_CONTENT: "Not enough content",
+                ICYMI_FEEDBACK_TOO_MUCH_CONTENT: "Too much content",
+                ICYMI_FEEDBACK_LAGGY: "Laggy or slow",
+                ATTACHMENT_INLINE_PLACEHOLDER: "[attachment]",
                 QUESTS_MOBILE_EMBED_UNKNOWN_TITLE: "This is an invalid quest",
                 QUESTS_MOBILE_EMBED_UNKNOWN_BODY: "Check to confirm you're using a valid quest URL",
                 QUESTS_MOBILE_EMBED_UNSUPPORTED_TITLE: "This Quest is not available on mobile",
@@ -75103,7 +75141,7 @@
         100527: function(e, t) {
             "use strict";
             var n, i;
-            (i = n || (n = {})).POPOUT_WINDOW = "popout window", i.OVERLAY = "overlay", i.NOTICE = "notice", i.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", i.BADGE = "badge", i.USER_SETTINGS = "user settings", i.USER_SETTINGS_MENU = "user settings menu", i.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", i.ACCOUNT = "account", i.TEXT_AND_IMAGES = "text and images", i.GUILD_SETTINGS = "guild settings", i.OVERVIEW = "overview", i.STICKERS = "stickers", i.VANITY_URL = "vanity url", i.URI_SCHEME = "uri scheme", i.AKA = "aka", i.MESSAGES = "messages", i.NEW_MESSAGE_COMPOSER = "new message composer", i.NOTIFICATIONS = "notifications", i.NOTIFICATION_CENTER = "notification center", i.PUSH_NOTIFICATION = "push notification", i.FAMILY_CENTER = "family center", i.FRIENDS_LIST = "friends list", i.EXPANDED_FRIENDS_LIST = "expanded friends list", i.CONTACTS_LIST = "contacts list", i.ADD_FRIENDS = "add friends", i.FRIEND_REQUESTS = "friend requests", i.SUGGESTED_FRIENDS = "suggested friends", i.BLOCKED_USERS = "blocked users", i.PREMIUM_MARKETING = "premium marketing", i.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", i.PREMIUM_PAYMENT_MODAL = "premium payment modal", i.PREMIUM_UPSELL_ALERT = "premium upsell alert", i.PREMIUM_UPSELL_MODAL = "premium upsell modal", i.PREMIUM_SETTINGS = "premium settings", i.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", i.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", i.CHANNEL_CALL = "channel call", i.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", i.CHANNEL_DETAILS = "channel details", i.RTC_PANEL = "rtc panel", i.SOUNDBOARD_BUTTON = "soundboard button", i.SOUNDBOARD_POPOUT = "soundboard popout", i.SOUNDBOARD_WHEEL = "soundboard wheel", i.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", i.GIFT_BUTTON = "gift button", i.EXPRESSION_SUGGESTIONS = "expression suggestions", i.EMOJI_PICKER = "emoji picker", i.STICKER_PICKER = "sticker picker", i.STICKER_POPOUT = "sticker popout", i.PREMIUM_UPSELL = "premium upsell", i.EMPTY_STATE = "empty state", i.SUBSCRIPTION_DETAILS = "subscription details", i.SUBSCRIPTION_HEADER = "subscription header", i.ACCOUNT_CREDIT_BANNER = "account credit banner", i.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", i.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", i.STREAM_QUALITY_INDICATOR = "stream quality indicator", i.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", i.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", i.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", i.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", i.RPC = "rpc", i.BILLING_STANDALONE = "billing standalone", i.GUILD_CHANNEL_LIST = "guild channel list", i.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", i.STICKER_MESSAGE = "sticker message", i.CHANNEL_TEXT_AREA = "channel text area", i.HEADER_BAR = "header bar", i.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", i.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", i.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", i.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", i.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", i.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", i.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", i.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", i.GUILD_HEADER = "guild header", i.GUILD_BANNER = "guild banner", i.GUILD_BANNER_NOTICE = "guild banner notice", i.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", i.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", i.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", i.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", i.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", i.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", i.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", i.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", i.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", i.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", i.GUILDS_LIST = "guilds list", i.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", i.ACTIVITY_DIRECTORY = "activity directory", i.ACTIVITY_TILE = "activity tile", i.ACTIVITY_UPSELL = "activity upsell", i.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", i.INSTANT_INVITE_MODAL = "instant invite modal", i.IMAGE_CROPPING_MODAL = "image cropping modal", i.GIF_PICKER = "gif picker", i.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", i.INVITE_MODAL = "invite modal", i.INVITE_EMBED = "invite embed", i.NEW_GUILD_BUTTON = "new guild button", i.CHARACTER_COUNT = "character count", i.DM_CHANNEL = "dm channel", i.GUILD_CHANNEL = "guild channel", i.FORUM_CHANNEL = "forum channel", i.FILE_UPLOAD_POPOUT = "file upload popout", i.VOICE_USER = "voice user", i.USER_LIST_ITEM = "user list item", i.EXECUTED_COMMAND = "executed command", i.EMOJI = "emoji", i.AVATAR = "avatar", i.USERNAME = "username", i.MEMBER_LIST = "member list", i.USER_MENTION = "user mention", i.ROLE_MENTION = "role mention", i.CONNECTIONS_ROLE_POPOUT = "connections role popout", i.PROFILE = "profile", i.PROFILE_MODAL = "profile modal", i.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", i.PROFILE_POPOUT = "profile popout", i.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", i.PROFILE_PANEL = "profile panel", i.GUILD_PROFILE = "guild profile", i.EDIT_AVATAR = "edit avatar", i.EDIT_BANNER = "edit banner", i.CHAT_INPUT = "chat input", i.CHAT_SIDEBAR = "chat sidebar", i.CREATE_THREAD = "create thread", i.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", i.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", i.SELECT_IMAGE_MODAL = "select image modal", i.VIDEO_BACKGROUND_OPTIONS = "video background options", i.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", i.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", i.CAMERA_PREVIEW = "camera preview", i.HOME_PAGE_PREMIUM_TAB = "home page premium tab", i.HOME_PAGE_SHOP_TAB = "home page shop tab", i.QUEST_HOME_PAGE = "quest home page", i.PREMIUM_MARKETING_SURFACE = "premium marketing surface", i.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", i.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", i.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", i.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", i.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", i.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", i.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", i.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", i.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", i.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", i.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", i.PREMIUM_MARKETING_FEATURE = "premium marketing feature", i.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", i.PREMIUM_MARKETING_FOOTER = "premium marketing footer", i.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", i.CHANNEL_CALL_ACTION_BAR = "channel call action bar", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", i.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", i.VOICE_CONTROL_TRAY = "voice control tray", i.ACTIVE_NOW_COLUMN = "active now column", i.CONTEXT_MENU = "context menu", i.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", i.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", i.CHANNEL_CATEGORY_MENU = "channel category menu", i.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", i.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", i.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", i.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", i.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", i.CHANNEL_TITLE_MENU = "channel title menu", i.GROUP_DM_MENU = "group dm menu", i.AUDIT_LOG_USER_MENU = "audit log user menu", i.BANNED_USER_MENU = "banned user menu", i.DM_USER_MENU = "dm user menu", i.GROUP_DM_USER_MENU = "group dm user menu", i.GUILD_CHANNEL_USER_MENU = "guild channel user menu", i.GUILD_MODERATION_USER_MENU = "guild moderation user menu", i.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", i.GUILD_SETTINGS_USER_MENU = "guild settings user menu", i.GUILD_USER_MENU = "guild user menu", i.UNKNOWN_USER_MENU = "unknown user menu", i.THREAD_USER_MENU = "thread user menu", i.USER_GENERIC_MENU = "user generic menu", i.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", i.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", i.VOICE_ACTION_SHEET = "voice action sheet", i.FOCUSED_VOICE_CONTROLS = "focused voice controls", i.MASKED_LINK = "masked link", i.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", i.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", i.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", i.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", i.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", i.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", i.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", i.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", i.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", i.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", i.ACCOUNT_PROFILE_POPOUT = "account profile popout", i.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", i.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", i.USER_SETTINGS_USER_PROFILE = "user settings use profile", i.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", i.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", i.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", i.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", i.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", i.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", i.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", i.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", i.STAGE_CHANNEL_CALL = "stage channel call", i.REQUEST_TO_SPEAK = "request to speak", i.STAGE_VIDEO_LIMIT = "stage video limit", i.ACTIVITIES_MINI_SHELF = "activities mini shelf", i.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", i.APP_LAUNCHER = "app launcher", i.APP_DETAIL = "app detail", i.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", i.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", i.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", i.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", i.MESSAGE_REACTIONS = "message reactions", i.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", i.APP_ICON_EDITOR = "app icon editor", i.APP_ICON_NEW_STYLES_COACHMARK = "app icon new styles coachmark", i.CLIENT_THEMES_EDITOR = "client themes editor", i.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", i.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", i.SHARE_NITRO_EMBED = "share nitro embed", i.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", i.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", i.REFERRAL_TRIALS_POPOUT = "referral trials popout", i.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", i.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", i.ACTIVITY_BOOKMARK = "activity bookmark", i.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", i.ACTIVITY_INSTANCE_EMBED = "activity instance embed", i.ACTIVITY_DETAIL_PAGE = "activity detail page", i.ACTIVITIES_PAGE = "activities page", i.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", i.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", i.VOICE_PANEL = "voice panel", i.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", i.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", i.ACTIVITIES_HAPPENING_NOW = "activities happening now", i.MEDIA_VIEWER = "media viewer", i.MESSAGE_LONG_PRESS_MENU = "message long press menu", i.CHANNEL_LONG_PRESS_MENU = "channel long press menu", i.COLLECTIBLES_SHOP = "collectibles shop", i.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", i.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", i.COLLECTIBLES_SHOP_CARD = "collectibles shop card", i.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", i.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", i.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", i.COLLECTIBLES_SHOP_HEADER_CAROUSEL = "collectibles shop header carousel", i.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", i.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", i.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", i.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", i.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", i.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", i.PREMIUM_BILLING_INFO = "premium billing info", i.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", i.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", i.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", i.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", i.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", i.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", i.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", i.PREMIUM_PLAN_SELECT = "premium_plan_select", i.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", i.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", i.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", i.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", i.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", i.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", i.MEMBER_SAFETY_PAGE = "member safety page", i.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", i.GUILD_MEMBER_MOD_VIEW = "guild member mod view", i.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", i.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", i.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", i.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", i.GUILD_SHOP_PAGE = "guild shop page", i.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", i.MESSAGE_REMIX_TAG = "message remix tag", i.MESSAGE_REMIX_BUTTON = "message remix button", i.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", i.CLIPS_SETTINGS = "clips settings", i.CLIPS_GALLERY = "clips gallery", i.CLIPS_GALLERY_ITEM = "clips gallery item", i.CLIPS_EDITOR = "clips editor", i.CLIPS_SHARE_MODAL = "clips share modal", i.CHANNEL_ATTACH_BUTTON = "channel attach button", i.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", i.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", i.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", i.GUILD_EVENT_MODAL = "guild event modal", i.GUILD_EVENT_CARD = "guild event card", i.EVENT_SETTINGS = "event settings", i.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", i.GIFT_CODE_MODAL = "gift code modal", i.APP_STOREFRONT = "app storefront", i.SHOP_PRODUCT_DETAILS = "shop product details", i.SEARCH_MEMBERS = "search members", i.POLL_VOTES = "poll votes", i.YOU_SCREEN = "you screen", i.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", i.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", i.CLAN_GUILD_PROFILE = "clan guild profile", i.CLAN_TAG = "clan tag", i.CLAN_DISCOVERY = "clan discovery", i.CLAN_REAPPLY = "clan reapply", i.COLLECTIBLES_LIGHTNING_CHECKOUT = "collectibles lightning checkout", i.CHECKOUT_RECOVERY_NAGBAR = "checkout recovery nagbar", i.DEV_TOOLS = "devtools", t.Z = n
+            (i = n || (n = {})).POPOUT_WINDOW = "popout window", i.OVERLAY = "overlay", i.NOTICE = "notice", i.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", i.BADGE = "badge", i.USER_SETTINGS = "user settings", i.USER_SETTINGS_MENU = "user settings menu", i.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", i.ACCOUNT = "account", i.TEXT_AND_IMAGES = "text and images", i.GUILD_SETTINGS = "guild settings", i.OVERVIEW = "overview", i.STICKERS = "stickers", i.VANITY_URL = "vanity url", i.URI_SCHEME = "uri scheme", i.AKA = "aka", i.MESSAGES = "messages", i.NEW_MESSAGE_COMPOSER = "new message composer", i.NOTIFICATIONS = "notifications", i.NOTIFICATION_CENTER = "notification center", i.PUSH_NOTIFICATION = "push notification", i.FAMILY_CENTER = "family center", i.FRIENDS_LIST = "friends list", i.EXPANDED_FRIENDS_LIST = "expanded friends list", i.CONTACTS_LIST = "contacts list", i.ADD_FRIENDS = "add friends", i.FRIEND_REQUESTS = "friend requests", i.SUGGESTED_FRIENDS = "suggested friends", i.BLOCKED_USERS = "blocked users", i.PREMIUM_MARKETING = "premium marketing", i.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", i.PREMIUM_PAYMENT_MODAL = "premium payment modal", i.PREMIUM_UPSELL_ALERT = "premium upsell alert", i.PREMIUM_UPSELL_MODAL = "premium upsell modal", i.PREMIUM_SETTINGS = "premium settings", i.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", i.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", i.CHANNEL_CALL = "channel call", i.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", i.CHANNEL_DETAILS = "channel details", i.RTC_PANEL = "rtc panel", i.SOUNDBOARD_BUTTON = "soundboard button", i.SOUNDBOARD_POPOUT = "soundboard popout", i.SOUNDBOARD_WHEEL = "soundboard wheel", i.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", i.GIFT_BUTTON = "gift button", i.EXPRESSION_SUGGESTIONS = "expression suggestions", i.EMOJI_PICKER = "emoji picker", i.STICKER_PICKER = "sticker picker", i.STICKER_POPOUT = "sticker popout", i.PREMIUM_UPSELL = "premium upsell", i.EMPTY_STATE = "empty state", i.SUBSCRIPTION_DETAILS = "subscription details", i.SUBSCRIPTION_HEADER = "subscription header", i.ACCOUNT_CREDIT_BANNER = "account credit banner", i.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", i.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", i.STREAM_QUALITY_INDICATOR = "stream quality indicator", i.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", i.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", i.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", i.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", i.RPC = "rpc", i.BILLING_STANDALONE = "billing standalone", i.GUILD_CHANNEL_LIST = "guild channel list", i.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", i.STICKER_MESSAGE = "sticker message", i.CHANNEL_TEXT_AREA = "channel text area", i.HEADER_BAR = "header bar", i.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", i.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", i.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", i.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", i.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", i.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", i.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", i.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", i.GUILD_HEADER = "guild header", i.GUILD_BANNER = "guild banner", i.GUILD_BANNER_NOTICE = "guild banner notice", i.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", i.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", i.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", i.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", i.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", i.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", i.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", i.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", i.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", i.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", i.GUILDS_LIST = "guilds list", i.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", i.ACTIVITY_DIRECTORY = "activity directory", i.ACTIVITY_TILE = "activity tile", i.ACTIVITY_UPSELL = "activity upsell", i.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", i.INSTANT_INVITE_MODAL = "instant invite modal", i.IMAGE_CROPPING_MODAL = "image cropping modal", i.GIF_PICKER = "gif picker", i.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", i.INVITE_MODAL = "invite modal", i.INVITE_EMBED = "invite embed", i.NEW_GUILD_BUTTON = "new guild button", i.CHARACTER_COUNT = "character count", i.DM_CHANNEL = "dm channel", i.GUILD_CHANNEL = "guild channel", i.FORUM_CHANNEL = "forum channel", i.FILE_UPLOAD_POPOUT = "file upload popout", i.VOICE_USER = "voice user", i.USER_LIST_ITEM = "user list item", i.EXECUTED_COMMAND = "executed command", i.EMOJI = "emoji", i.AVATAR = "avatar", i.USERNAME = "username", i.MEMBER_LIST = "member list", i.USER_MENTION = "user mention", i.ROLE_MENTION = "role mention", i.CONNECTIONS_ROLE_POPOUT = "connections role popout", i.PROFILE = "profile", i.PROFILE_MODAL = "profile modal", i.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", i.PROFILE_POPOUT = "profile popout", i.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", i.PROFILE_PANEL = "profile panel", i.GUILD_PROFILE = "guild profile", i.EDIT_AVATAR = "edit avatar", i.EDIT_BANNER = "edit banner", i.CHAT_INPUT = "chat input", i.CHAT_SIDEBAR = "chat sidebar", i.CREATE_THREAD = "create thread", i.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", i.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", i.SELECT_IMAGE_MODAL = "select image modal", i.VIDEO_BACKGROUND_OPTIONS = "video background options", i.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", i.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", i.CAMERA_PREVIEW = "camera preview", i.HOME_PAGE_PREMIUM_TAB = "home page premium tab", i.HOME_PAGE_SHOP_TAB = "home page shop tab", i.QUEST_HOME_PAGE = "quest home page", i.PREMIUM_MARKETING_SURFACE = "premium marketing surface", i.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", i.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", i.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", i.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", i.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", i.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", i.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", i.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", i.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", i.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", i.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", i.PREMIUM_MARKETING_FEATURE = "premium marketing feature", i.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", i.PREMIUM_MARKETING_FOOTER = "premium marketing footer", i.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", i.CHANNEL_CALL_ACTION_BAR = "channel call action bar", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", i.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", i.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", i.VOICE_CONTROL_TRAY = "voice control tray", i.ACTIVE_NOW_COLUMN = "active now column", i.CONTEXT_MENU = "context menu", i.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", i.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", i.CHANNEL_CATEGORY_MENU = "channel category menu", i.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", i.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", i.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", i.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", i.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", i.CHANNEL_TITLE_MENU = "channel title menu", i.GROUP_DM_MENU = "group dm menu", i.AUDIT_LOG_USER_MENU = "audit log user menu", i.BANNED_USER_MENU = "banned user menu", i.DM_USER_MENU = "dm user menu", i.GROUP_DM_USER_MENU = "group dm user menu", i.GUILD_CHANNEL_USER_MENU = "guild channel user menu", i.GUILD_MODERATION_USER_MENU = "guild moderation user menu", i.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", i.GUILD_SETTINGS_USER_MENU = "guild settings user menu", i.GUILD_USER_MENU = "guild user menu", i.UNKNOWN_USER_MENU = "unknown user menu", i.THREAD_USER_MENU = "thread user menu", i.USER_GENERIC_MENU = "user generic menu", i.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", i.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", i.VOICE_ACTION_SHEET = "voice action sheet", i.FOCUSED_VOICE_CONTROLS = "focused voice controls", i.MASKED_LINK = "masked link", i.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", i.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", i.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", i.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", i.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", i.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", i.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", i.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", i.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", i.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", i.ACCOUNT_PROFILE_POPOUT = "account profile popout", i.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", i.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", i.USER_SETTINGS_USER_PROFILE = "user settings use profile", i.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", i.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", i.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", i.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", i.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", i.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", i.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", i.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", i.STAGE_CHANNEL_CALL = "stage channel call", i.REQUEST_TO_SPEAK = "request to speak", i.STAGE_VIDEO_LIMIT = "stage video limit", i.ACTIVITIES_MINI_SHELF = "activities mini shelf", i.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", i.APP_LAUNCHER = "app launcher", i.APP_DETAIL = "app detail", i.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", i.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", i.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", i.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", i.MESSAGE_REACTIONS = "message reactions", i.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", i.APP_ICON_EDITOR = "app icon editor", i.APP_ICON_NEW_STYLES_COACHMARK = "app icon new styles coachmark", i.CLIENT_THEMES_EDITOR = "client themes editor", i.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", i.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", i.SHARE_NITRO_EMBED = "share nitro embed", i.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", i.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", i.REFERRAL_TRIALS_POPOUT = "referral trials popout", i.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", i.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", i.ACTIVITY_BOOKMARK = "activity bookmark", i.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", i.ACTIVITY_INSTANCE_EMBED = "activity instance embed", i.ACTIVITY_DETAIL_PAGE = "activity detail page", i.ACTIVITIES_PAGE = "activities page", i.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", i.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", i.VOICE_PANEL = "voice panel", i.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", i.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", i.ACTIVITIES_HAPPENING_NOW = "activities happening now", i.MEDIA_VIEWER = "media viewer", i.MESSAGE_LONG_PRESS_MENU = "message long press menu", i.CHANNEL_LONG_PRESS_MENU = "channel long press menu", i.COLLECTIBLES_SHOP = "collectibles shop", i.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", i.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", i.COLLECTIBLES_SHOP_CARD = "collectibles shop card", i.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", i.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", i.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", i.COLLECTIBLES_SHOP_HEADER_CAROUSEL = "collectibles shop header carousel", i.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", i.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", i.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", i.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", i.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", i.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", i.PREMIUM_BILLING_INFO = "premium billing info", i.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", i.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", i.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", i.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", i.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", i.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", i.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", i.PREMIUM_PLAN_SELECT = "premium_plan_select", i.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", i.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", i.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", i.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", i.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", i.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", i.MEMBER_SAFETY_PAGE = "member safety page", i.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", i.GUILD_MEMBER_MOD_VIEW = "guild member mod view", i.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", i.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", i.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", i.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", i.GUILD_SHOP_PAGE = "guild shop page", i.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", i.MESSAGE_REMIX_TAG = "message remix tag", i.MESSAGE_REMIX_BUTTON = "message remix button", i.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", i.CLIPS_SETTINGS = "clips settings", i.CLIPS_GALLERY = "clips gallery", i.CLIPS_GALLERY_ITEM = "clips gallery item", i.CLIPS_EDITOR = "clips editor", i.CLIPS_SHARE_MODAL = "clips share modal", i.CHANNEL_ATTACH_BUTTON = "channel attach button", i.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", i.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", i.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", i.GUILD_EVENT_MODAL = "guild event modal", i.GUILD_EVENT_CARD = "guild event card", i.EVENT_SETTINGS = "event settings", i.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", i.GIFT_CODE_MODAL = "gift code modal", i.APP_STOREFRONT = "app storefront", i.SHOP_PRODUCT_DETAILS = "shop product details", i.SEARCH_MEMBERS = "search members", i.POLL_VOTES = "poll votes", i.YOU_SCREEN = "you screen", i.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", i.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", i.CLAN_GUILD_PROFILE = "clan guild profile", i.CLAN_TAG = "clan tag", i.CLAN_DISCOVERY = "clan discovery", i.CLAN_REAPPLY = "clan reapply", i.COLLECTIBLES_LIGHTNING_CHECKOUT = "collectibles lightning checkout", i.CHECKOUT_RECOVERY_NAGBAR = "checkout recovery nagbar", i.DEV_TOOLS = "devtools", i.IN_CASE_YOU_MISSED_IT_TAB = "ICYMI Tab", t.Z = n
         },
         98302: function(e, t, n) {
             "use strict";
@@ -80527,11 +80565,75 @@
                 })
             }
         },
+        79984: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return c
+                }
+            });
+            var i = n(735250),
+                r = n(470079),
+                s = n(120356),
+                o = n.n(s),
+                a = n(442837),
+                l = n(481060),
+                u = n(607070),
+                _ = n(782915);
+
+            function c() {
+                let e = (0, a.e7)([u.Z], () => u.Z.useReducedMotion),
+                    {
+                        styleLarge: t,
+                        styleSmall: n
+                    } = r.useMemo(() => ({
+                        styleLarge: {
+                            width: "".concat(10 + 50 * Math.random(), "%")
+                        },
+                        styleSmall: {
+                            width: "".concat(30 + 60 * Math.random(), "%")
+                        }
+                    }), []);
+                return (0, i.jsxs)("div", {
+                    className: o()(_.container, {
+                        [_.noAnimation]: e
+                    }),
+                    children: [(0, i.jsx)("div", {
+                        className: _.iconPlaceholder
+                    }), (0, i.jsxs)("div", {
+                        className: _.textContainer,
+                        children: [(0, i.jsx)("div", {
+                            className: _.textLargePlaceholder,
+                            style: t,
+                            children: (0, i.jsx)(l.Heading, {
+                                className: _.hidden,
+                                variant: "heading-md/semibold",
+                                color: "header-primary",
+                                lineClamp: 1,
+                                children: "_"
+                            })
+                        }), (0, i.jsx)("div", {
+                            className: _.textSmallPlaceholder,
+                            style: n,
+                            children: (0, i.jsx)(l.Text, {
+                                className: _.hidden,
+                                variant: "text-sm/normal",
+                                color: "text-secondary",
+                                lineClamp: 1,
+                                children: "_"
+                            })
+                        })]
+                    }), (0, i.jsx)("div", {
+                        className: _.underline
+                    })]
+                })
+            }
+        },
         28147: function(e, t, n) {
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return O
+                    return g
                 }
             });
             var i = n(735250);
@@ -80549,21 +80651,24 @@
                 I = n(41558),
                 T = n(299722),
                 h = n(667906),
-                S = n(981631),
-                f = n(689938),
-                N = n(664790),
-                A = n(983008),
-                m = n(478408);
+                S = n(79984),
+                f = n(981631),
+                N = n(689938),
+                A = n(664790),
+                m = n(983008),
+                O = n(478408);
+            let R = Array(6).fill(0).map((e, t) => t),
+                p = [, , , ].fill(0).map((e, t) => t);
 
-            function O(e) {
-                return e.enableGlobalSearch ? (0, i.jsx)(p, {
+            function g(e) {
+                return e.enableGlobalSearch ? (0, i.jsx)(v, {
                     ...e
-                }) : (0, i.jsx)(R, {
+                }) : (0, i.jsx)(C, {
                     ...e
                 })
             }
 
-            function R(e) {
+            function C(e) {
                 let {
                     channel: t,
                     query: n,
@@ -80572,27 +80677,25 @@
                 } = e, {
                     pushHistory: o
                 } = (0, E.hH)(), {
-                    loading: A,
+                    loading: S,
                     isEmptyState: m,
                     commandResults: O,
                     hasCommandResults: R,
                     applicationResults: p,
-                    hasApplicationResults: C
+                    hasApplicationResults: g
                 } = (0, d.pe)({
                     channel: t,
                     query: n,
                     mode: r === c._.VOICE ? d.pe.Modes.SHELF : s ? d.pe.Modes.CMDS_APPS_SHELF : d.pe.Modes.CMDS_APPS
                 });
-                return A ? (0, i.jsx)("div", {
-                    children: "TODO (desktop app launcher): implement loading..."
-                }) : m ? (0, i.jsx)(g, {
+                return S ? (0, i.jsx)(L, {}) : m ? (0, i.jsx)(D, {
                     searchQuery: n
                 }) : (0, i.jsxs)("div", {
                     children: [R && (0, i.jsxs)("div", {
                         children: [(0, i.jsx)(I.Z, {
-                            title: f.Z.Messages.COMMANDS
+                            title: N.Z.Messages.COMMANDS
                         }), (0, i.jsx)("div", {
-                            className: N.sectionContentContainer,
+                            className: A.sectionContentContainer,
                             children: O.map(e => {
                                 let {
                                     command: n,
@@ -80609,18 +80712,18 @@
                                             command: n,
                                             section: s,
                                             location: l.Vh.APP_LAUNCHER_APPLICATION_VIEW
-                                        }), u.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+                                        }), u.S.dispatch(f.CkL.FOCUS_CHANNEL_TEXT_AREA, {
                                             channelId: t.id
                                         })
                                     }
                                 }, n.id)
                             })
                         })]
-                    }), C && (0, i.jsxs)("div", {
+                    }), g && (0, i.jsxs)("div", {
                         children: [(0, i.jsx)(I.Z, {
-                            title: f.Z.Messages.APPS
+                            title: N.Z.Messages.APPS
                         }), (0, i.jsx)("div", {
-                            className: N.sectionContentContainer,
+                            className: A.sectionContentContainer,
                             children: p.map(e => (0, i.jsx)(T.Z, {
                                 application: e,
                                 onClick: t => {
@@ -80635,26 +80738,42 @@
                 })
             }
 
-            function p(e) {
+            function v(e) {
                 let {} = e;
                 return (0, i.jsx)("div", {
                     children: "TODO (desktop app launcher): implement global search view"
                 })
             }
 
-            function g(e) {
-                let t = (0, o.ZP)(),
-                    n = (0, r.ap)(t) ? m : A;
+            function L() {
                 return (0, i.jsxs)("div", {
-                    className: N.emptyStateContainer,
+                    children: [(0, i.jsx)(I.Z, {
+                        title: N.Z.Messages.COMMANDS
+                    }), (0, i.jsx)("div", {
+                        className: A.sectionContentContainer,
+                        children: R.map(e => (0, i.jsx)(S.Z, {}, e))
+                    }), (0, i.jsx)(I.Z, {
+                        title: N.Z.Messages.APPS
+                    }), (0, i.jsx)("div", {
+                        className: A.sectionContentContainer,
+                        children: p.map(e => (0, i.jsx)(S.Z, {}, e))
+                    })]
+                })
+            }
+
+            function D(e) {
+                let t = (0, o.ZP)(),
+                    n = (0, r.ap)(t) ? O : m;
+                return (0, i.jsxs)("div", {
+                    className: A.emptyStateContainer,
                     children: [(0, i.jsx)("img", {
-                        className: N.emptyStateImage,
+                        className: A.emptyStateImage,
                         src: n,
                         alt: ""
                     }), (0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "text-muted",
-                        children: f.Z.Messages.APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY
+                        children: N.Z.Messages.APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY
                     })]
                 })
             }
@@ -96201,8 +96320,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303868", "303868"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303868")), t = 0), t
+                let t = parseInt((e = "303872", "303872"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303872")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124414,8 +124533,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303868",
-                    versionHash: "276cd065d6131215d5caadc49a13c916759ccc50"
+                    buildNumber: "303872",
+                    versionHash: "5840e2483b732840a4a9b2e10a0250978618c216"
                 }
             }
             n.d(t, {
@@ -147537,6 +147656,661 @@
                 u === s.default.getId() && i.Z.setGoLiveSource(null), r.g(_, t)
             }
         },
+        505369: function(e, t, n) {
+            "use strict";
+            var i = n(544891),
+                r = n(570140),
+                s = n(960048),
+                o = n(207205),
+                a = n(981631);
+            t.Z = {
+                async fetchDehydrated() {
+                    if (!!(0, o.rK)("fetchDehydrated")) try {
+                        let e = Date.now(),
+                            t = await i.tn.get({
+                                url: a.ANM.GRAVITY_ITEMS_DEHYDRATED
+                            });
+                        await r.Z.dispatch({
+                            type: "LOAD_GRAVITY_DEHYDRATED",
+                            items: t.body.items,
+                            loadId: t.body.load_id,
+                            startTime: e
+                        })
+                    } catch (e) {
+                        s.Z.captureException(e)
+                    }
+                },
+                async fetchHydrated(e, t, n) {
+                    if (!!(0, o.rK)("fetchHydrated")) try {
+                        let s = await i.tn.post({
+                            url: a.ANM.GRAVITY_ITEMS_HYDRATE,
+                            body: {
+                                message_items: e,
+                                summary_items: t,
+                                activity_items: n
+                            }
+                        });
+                        r.Z.dispatch({
+                            type: "LOAD_GRAVITY_HYDRATED",
+                            requestMessageItems: e,
+                            requestSummaryItems: t,
+                            requestActivityItems: n,
+                            messageItems: s.body.message_items,
+                            summaryItems: s.body.summary_items,
+                            activityItems: s.body.activity_items
+                        })
+                    } catch (e) {
+                        s.Z.captureException(e)
+                    }
+                },
+                async getGuildChannelScores() {
+                    if (!!(0, o.rK)("guildChannelScores")) try {
+                        let e = await i.tn.get({
+                            url: a.ANM.GRAVITY_CHANNEL_SCORES
+                        });
+                        r.Z.dispatch({
+                            type: "LOAD_GRAVITY_CUSTOM_CHANNEL_SCORES",
+                            scores: e.body
+                        })
+                    } catch (e) {
+                        s.Z.captureException(e)
+                    }
+                },
+                reloadICYMITab() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                    r.Z.dispatch({
+                        type: "RELOAD_GRAVITY",
+                        versionOnly: e
+                    })
+                },
+                openICYMITab() {
+                    r.Z.dispatch({
+                        type: "GRAVITY_TAB_OPENED"
+                    })
+                },
+                ackGravityItems: e => r.Z.dispatch({
+                    type: "GRAVITY_ACK_ITEMS",
+                    items: e
+                }),
+                setFilters: e => r.Z.dispatch({
+                    type: "SET_GRAVITY_FILTERS",
+                    filters: e
+                }),
+                giveFeedback: () => r.Z.dispatch({
+                    type: "GRAVITY_FEEDBACK_GIVEN"
+                })
+            }
+        },
+        109911: function(e, t, n) {
+            "use strict";
+            var i = n(818083);
+            t.Z = (0, i.B)({
+                kind: "user",
+                id: "2024-07_icymi",
+                label: "In-case-you-missed-it tab",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "enables the new icymi tab",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            })
+        },
+        265164: function(e, t, n) {
+            "use strict";
+            n(47120), n(653041), n(733860);
+            var i, r = n(512722),
+                s = n.n(r),
+                o = n(442837),
+                a = n(570140),
+                l = n(353926),
+                u = n(786761),
+                _ = n(314897),
+                c = n(592125),
+                d = n(375954),
+                E = n(306680),
+                I = n(9156),
+                T = n(626135),
+                h = n(70956),
+                S = n(709054),
+                f = n(761080),
+                N = n(584925),
+                A = n(207205),
+                m = n(981631);
+
+            function O(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let R = [],
+                p = null,
+                g = [],
+                C = {},
+                v = {},
+                L = {},
+                D = {},
+                M = {},
+                P = {},
+                y = {},
+                U = new Set,
+                b = !1,
+                G = 0,
+                w = !1,
+                B = 0;
+
+            function k() {
+                R = g, g = [], G++, x(R)
+            }
+
+            function x(e) {
+                let t = [],
+                    n = [];
+                if (e.forEach(e => {
+                        let i = null != N.Z.getReadTimestamp(e.id);
+                        e.type === f.Rr.MESSAGE ? i = i || !(0, A.$U)(e.data.channel_id, e.data.message_id) : e.type === f.Rr.SUMMARY && (i = i || !(0, A.$U)(e.data.channel_id, e.data.summary_id)), i ? t.push(e) : n.push(e)
+                    }), null != C.load_id) {
+                    var i;
+                    T.default.track(m.rMx.FEED_LOADED, {
+                        ...C,
+                        unread_feed_item_ids: n.map(e => e.id),
+                        read_feed_item_ids: t.map(e => e.id),
+                        home_session_id: "gravity"
+                    }), p = null !== (i = C.load_id) && void 0 !== i ? i : null, C = {}
+                }
+                let r = [...n, ...t];
+                (0, A.es)(D, r)
+            }
+
+            function V(e) {
+                let {
+                    type: t,
+                    messageId: n,
+                    userId: i,
+                    emoji: r,
+                    reactionType: s
+                } = e, o = D[n];
+                if (null == o || o.type !== f.Rr.MESSAGE) return !1;
+                let a = _.default.getId() === i;
+                "MESSAGE_REACTION_ADD" === t ? o.message = o.message.addReaction(r, a, e.colors, s) : o.message = o.message.removeReaction(r, a, s)
+            }
+            class Z extends(i = o.ZP.PersistedStore) {
+                initialize(e) {
+                    if (this.waitFor(d.Z, c.Z, E.ZP, l.Z, I.ZP, _.default, N.Z), this.syncWith([E.ZP], () => (function() {
+                            if (!(0, A.rK)("GravityStore-recomputeMentionStates")) return !1;
+                            R.forEach(e => {
+                                if (e.type === f.Rr.MESSAGE) {
+                                    if (e.data.has_mention) {
+                                        if (0 !== E.ZP.getMentionCount(e.data.channel_id)) return;
+                                        delete y[e.data.channel_id]
+                                    }
+                                }
+                            }), g.forEach(e => {
+                                if (e.type === f.Rr.MESSAGE) {
+                                    if (e.data.has_mention) {
+                                        if (0 !== E.ZP.getMentionCount(e.data.channel_id)) return;
+                                        delete y[e.data.channel_id]
+                                    }
+                                }
+                            }), Object.values(v).forEach(e => {
+                                if (e.type === f.Rr.MESSAGE) {
+                                    if (e.data.has_mention) {
+                                        if (0 !== E.ZP.getMentionCount(e.data.channel_id)) return;
+                                        delete y[e.data.channel_id]
+                                    }
+                                }
+                            })
+                        })()), null != e) {
+                        var t, n, i;
+                        R = null !== (t = e.dehydratedItems) && void 0 !== t ? t : [], v = null !== (n = e.locallyAddedItems) && void 0 !== n ? n : {}, B = null !== (i = e.numOpens) && void 0 !== i ? i : 0
+                    }
+                }
+                getVersion() {
+                    return G
+                }
+                getDehydratedItems() {
+                    return R
+                }
+                getNewDehydratedItems() {
+                    return g
+                }
+                getDehydratedItem(e) {
+                    var t;
+                    return null !== (t = L[e]) && void 0 !== t ? t : null
+                }
+                getHydratedItem(e) {
+                    var t;
+                    return null !== (t = D[e]) && void 0 !== t ? t : null
+                }
+                getHydratedItems() {
+                    return D
+                }
+                getMissingItems() {
+                    return M
+                }
+                getCustomChannelScore(e) {
+                    var t;
+                    return null !== (t = P[e]) && void 0 !== t ? t : 0
+                }
+                getNumLocallyAddedItems() {
+                    return Object.keys(v).length
+                }
+                getMentionCount(e) {
+                    var t;
+                    return (0, A.rK)("GravityStore-getMentionCount") ? null !== (t = y[e]) && void 0 !== t ? t : 0 : 0
+                }
+                getMentionedGuilds() {
+                    return U
+                }
+                hasNewContent() {
+                    let e = 1 === G && w,
+                        t = g.length > 0 && (0 === R.length || g[0].id !== R[0].id);
+                    return b && (e || t)
+                }
+                getActiveSummary() {
+                    return null
+                }
+                getLoadId() {
+                    return p
+                }
+                hasOpenedEnoughTimes() {
+                    return 5 === B
+                }
+                getState() {
+                    return {
+                        dehydratedItems: R,
+                        locallyAddedItems: v,
+                        numOpens: B
+                    }
+                }
+            }
+            O(Z, "displayName", "GravityStore"), O(Z, "persistKey", "GravityStore"), t.Z = new Z(a.Z, {
+                LOGOUT: function() {
+                    return !1
+                },
+                MESSAGE_CREATE: function(e) {
+                    var t;
+                    let {
+                        message: n,
+                        guildId: i,
+                        channelId: r
+                    } = e;
+                    if (!(0, A.rK)("GravityStore-handleMessageCreate") || null == i || (null === (t = n.author) || void 0 === t ? void 0 : t.id) === _.default.getId()) return !1;
+                    let s = c.Z.getChannel(r);
+                    if (null == s || s.type !== m.d4z.GUILD_ANNOUNCEMENT || I.ZP.isChannelMuted(i, r)) return !1;
+                    let o = d.Z.getMessage(n.channel_id, n.id);
+                    null == o && (o = (0, u.e5)(n));
+                    let a = o.mentionEveryone;
+                    if (n.id in L) return !1;
+                    let l = {
+                        type: f.Rr.MESSAGE,
+                        id: n.id,
+                        score: Date.now(),
+                        data: {
+                            channel_id: n.channel_id,
+                            guild_id: i,
+                            message_id: n.id,
+                            channel_type: m.d4z.GUILD_ANNOUNCEMENT,
+                            has_mention: a
+                        }
+                    };
+                    a && (null == y[r] && (y[r] = 0), y[r]++, U.add(i)), null == (g = 0 === g.length ? [...R] : [...g]).find(e => e.id === n.id) && (g.unshift(l), v[n.id] = l), L[n.id] = l, D[n.id] = {
+                        ...l,
+                        message: o
+                    }
+                },
+                LOAD_GRAVITY_DEHYDRATED: function(e) {
+                    let {
+                        items: t,
+                        loadId: n,
+                        startTime: i
+                    } = e;
+                    g = function(e) {
+                        let t = e.filter(e => f.zd.has(e.type));
+                        t.sort((e, t) => t.score - e.score);
+                        let n = t.filter(e => e.score >= 20 && e.score < 40),
+                            i = t.filter(e => e.score >= 40),
+                            r = [],
+                            o = {},
+                            a = {},
+                            l = 0,
+                            u = 0,
+                            _ = 0;
+                        for (;;) {
+                            if (_++, l >= i.length) {
+                                for (; 0 !== Object.keys(o).length;) {
+                                    ;
+                                    Object.keys(o).forEach(e => {
+                                        o[e].length > 0 ? r.push(o[e].shift()) : delete o[e]
+                                    })
+                                }
+                                break
+                            }
+                            let e = null;
+                            if (Object.keys(o).forEach(t => {
+                                    let n = o[t][0];
+                                    if (null == n) return;
+                                    let i = a[t];
+                                    if (null == i && (null == e || e.score < n.score)) {
+                                        e = n;
+                                        return
+                                    }
+                                    r.length >= i + 3 && (null == e || e.score < n.score) && (e = n)
+                                }), null != e) {
+                                s()(e.type === f.Rr.MESSAGE || e.type === f.Rr.SUMMARY, "Invalid item type");
+                                let t = e.data.guild_id;
+                                a[t] = r.length, r.push(e), o[t].shift();
+                                continue
+                            }
+                            let t = !0;
+                            if (_ % 7 == 0 && u < n.length ? (e = n[u], u++, t = !1) : (e = i[l], l++), e.type !== f.Rr.MESSAGE && e.type !== f.Rr.SUMMARY) {
+                                r.push(e);
+                                continue
+                            }
+                            if (null == a[e.data.guild_id]) {
+                                a[e.data.guild_id] = r.length, o[e.data.guild_id] = [], r.push(e);
+                                continue
+                            } {
+                                let n = a[e.data.guild_id];
+                                r.length < n + 3 ? t ? o[e.data.guild_id].push(e) : u-- : o[e.data.guild_id].length > 0 ? (a[e.data.guild_id] = r.length, r.push(o[e.data.guild_id].shift()), o[e.data.guild_id].push(e)) : (a[e.data.guild_id] = r.length, r.push(e))
+                            }
+                        }
+                        return r
+                    }(t), ! function() {
+                        let e = new Set;
+                        g.forEach(t => {
+                            e.add(t.id)
+                        }), Object.values(v).forEach(t => {
+                            e.has(t.id) || S.default.age(t.id) > h.Z.Millis.DAY || t.type === f.Rr.MESSAGE && I.ZP.isChannelMuted(t.data.guild_id, t.data.channel_id) ? delete v[t.id] : !e.has(t.id) && (g.unshift(t), e.add(t.id))
+                        }), g.forEach(e => {
+                            L[e.id] = e
+                        })
+                    }(), y = {}, g.forEach(e => {
+                        e.type === f.Rr.MESSAGE && e.data.channel_type === m.d4z.GUILD_ANNOUNCEMENT && e.data.has_mention && 0 > S.default.compare(E.ZP.ackMessageId(e.data.channel_id), e.data.message_id) && (null == y[e.data.channel_id] && (y[e.data.channel_id] = 0), y[e.data.channel_id]++, U.add(e.data.guild_id))
+                    }), b = !0, C = {
+                        load_id: n,
+                        load_time_millis: Date.now() - i,
+                        feed_item_ids: g.map(e => e.id)
+                    }, 0 === G && (g.length > 0 && (0 === R.length || R[0].id !== g[0].id) ? (w = !0, x(R), x(g)) : k())
+                },
+                LOAD_GRAVITY_HYDRATED: function(e) {
+                    let {
+                        messageItems: t,
+                        summaryItems: n,
+                        activityItems: i,
+                        requestMessageItems: r,
+                        requestSummaryItems: s,
+                        requestActivityItems: o
+                    } = e;
+                    D = {
+                        ...D
+                    };
+                    let a = r.filter(e => null == t.find(t => t.message.id === e.message_id)),
+                        l = s.filter(e => null == n.find(t => t.id === e.summary_id)),
+                        _ = o.filter(e => null == i.find(t => t.id === e.outbox_content_id));
+                    a.forEach(e => {
+                        M[e.message_id] = !0
+                    }), l.forEach(e => {
+                        M[e.summary_id] = !0
+                    }), _.forEach(e => {
+                        M[e.outbox_content_id] = !0
+                    }), t.forEach(e => {
+                        let t = L[e.message.id];
+                        if (null != t) null != d.Z.getMessage(e.channel_id, e.message.id) ? D[e.message.id] = {
+                            ...t,
+                            message: d.Z.getMessage(e.channel_id, e.message.id)
+                        } : D[e.message.id] = {
+                            ...t,
+                            message: (0, u.e5)(e.message)
+                        }
+                    }), n.forEach(e => {
+                        let t = L[e.id];
+                        if (null == t || t.type !== f.Rr.SUMMARY) return;
+                        let n = (0, A.wV)(e, t.data.guild_id);
+                        if (n.messages.length < 3) {
+                            M[n.id] = !0;
+                            return
+                        }
+                        D[e.id] = {
+                            ...t,
+                            summary: n
+                        }
+                    }), i.forEach(e => {
+                        let t = L[e.id];
+                        if (null != t) D[e.id] = {
+                            ...t,
+                            activity: e
+                        }
+                    })
+                },
+                LOAD_GRAVITY_CUSTOM_CHANNEL_SCORES: function(e) {
+                    let {
+                        scores: t
+                    } = e;
+                    for (let e of t)
+                        for (let t of Object.keys(e.custom_channel_scores)) P[t] = e.custom_channel_scores[t]
+                },
+                CUSTOM_CHANNEL_SCORE_UPDATED: function(e) {
+                    let {
+                        channelId: t,
+                        score: n
+                    } = e;
+                    P[t] = n
+                },
+                RELOAD_GRAVITY: function(e) {
+                    let {
+                        versionOnly: t
+                    } = e;
+                    if (t) {
+                        G++;
+                        return
+                    }
+                    if (0 === g.length) return !1;
+                    k()
+                },
+                GRAVITY_TAB_OPENED: function() {
+                    w && (k(), w = !1), B < 5 && B++
+                },
+                GRAVITY_FEEDBACK_GIVEN: function() {
+                    B = 6
+                },
+                MESSAGE_REACTION_ADD: V,
+                MESSAGE_REACTION_ADD_MANY: function(e) {
+                    let {
+                        messageId: t,
+                        reactions: n
+                    } = e, i = D[t];
+                    if (null == i || i.type !== f.Rr.MESSAGE) return !1;
+                    let r = _.default.getId();
+                    i.message = i.message.addReactionBatch(n, r)
+                },
+                MESSAGE_REACTION_REMOVE: V,
+                MESSAGE_REACTION_REMOVE_ALL: function(e) {
+                    let {
+                        messageId: t
+                    } = e, n = D[t];
+                    if (null == n || n.type !== f.Rr.MESSAGE) return !1;
+                    n.message = n.message.set("reactions", [])
+                },
+                MESSAGE_REACTION_REMOVE_EMOJI: function(e) {
+                    let {
+                        messageId: t,
+                        emoji: n
+                    } = e, i = D[t];
+                    if (null == i || i.type !== f.Rr.MESSAGE) return !1;
+                    i.message = i.message.removeReactionsForEmoji(n)
+                }
+            })
+        },
+        761080: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Rr: function() {
+                    return i
+                },
+                zd: function() {
+                    return o
+                }
+            }), n(47120);
+            var i, r, s = n(981631);
+            (r = i || (i = {}))[r.MESSAGE = 0] = "MESSAGE", r[r.SUMMARY = 1] = "SUMMARY", r[r.ACTIVITY = 2] = "ACTIVITY";
+            let o = new Set([0, 1, 2]);
+            s.hBH.IMAGE, s.hBH.VIDEO, s.hBH.GIFV
+        },
+        584925: function(e, t, n) {
+            "use strict";
+            n(47120);
+            var i, r = n(442837),
+                s = n(570140);
+
+            function o(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let a = 5 * n(70956).Z.Millis.DAY,
+                l = {
+                    readIdToTimestampMap: {}
+                };
+            class u extends(i = r.ZP.DeviceSettingsStore) {
+                initialize(e) {
+                    l = null != e && null != e.readIdToTimestampMap ? {
+                        readIdToTimestampMap: e.readIdToTimestampMap
+                    } : {
+                        readIdToTimestampMap: {}
+                    };
+                    let t = Date.now() - a;
+                    for (let e of Object.keys(l.readIdToTimestampMap).filter(e => l.readIdToTimestampMap[e] < t)) delete l.readIdToTimestampMap[e]
+                }
+                getReadTimestamp(e) {
+                    return l.readIdToTimestampMap[e]
+                }
+                getState() {
+                    return l
+                }
+                getUserAgnosticState() {
+                    return l
+                }
+            }
+            o(u, "displayName", "GravityUnreadStateStore"), o(u, "persistKey", "GravityUnreadStateStore"), t.Z = new u(s.Z, {
+                GRAVITY_ACK_ITEMS: function(e) {
+                    let {
+                        items: t
+                    } = e;
+                    t.forEach(e => {
+                        null != e && (l.readIdToTimestampMap[e.id] = e.timestamp)
+                    })
+                }
+            })
+        },
+        207205: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                $U: function() {
+                    return _
+                },
+                es: function() {
+                    return l
+                },
+                rK: function() {
+                    return c
+                },
+                wV: function() {
+                    return u
+                }
+            }), n(653041), n(724458), n(47120), n(442837), n(638395);
+            var i = n(786761);
+            n(375954);
+            var r = n(306680),
+                s = n(709054),
+                o = n(505369);
+            n(109911), n(265164);
+            var a = n(761080);
+            async function l(e, t) {
+                let n = [];
+                for (let i = 0; i < t.length && (null == e[t[i].id] && n.push(t[i]), !(n.length >= 15)); i++);
+                if (n.length > 0) {
+                    let e = n.filter(e => e.type === a.Rr.MESSAGE).map(e => ({
+                            channel_id: e.data.channel_id,
+                            message_id: e.data.message_id
+                        })),
+                        t = n.filter(e => e.type === a.Rr.SUMMARY).map(e => ({
+                            guild_id: e.data.guild_id,
+                            channel_id: e.data.channel_id,
+                            summary_id: e.data.summary_id
+                        })),
+                        i = n.filter(e => e.type === a.Rr.ACTIVITY).map(e => ({
+                            user_id: e.data.user_id,
+                            outbox_content_id: e.data.outbox_content_id
+                        }));
+                    await o.Z.fetchHydrated(e, t, i)
+                }
+            }
+
+            function u(e, t) {
+                let n = [],
+                    r = [],
+                    s = 0;
+                for (let t of e.messages)
+                    if (null != t.reactions) {
+                        if (n.length < 5)
+                            for (let e of t.reactions) {
+                                var o, a;
+                                (null == e.count_details || (null !== (o = e.count_details.burst) && void 0 !== o ? o : 0) > 0 || (null !== (a = e.count_details.normal) && void 0 !== a ? a : 0) > 0) && n.push(e)
+                            }
+                        s += function(e) {
+                            let t = 0;
+                            if (null != e.reactions) {
+                                let n = (null != e.reactions ? e.reactions : []).map(e => {
+                                    var t, n;
+                                    return null == e.count_details ? 0 : (null !== (t = e.count_details.burst) && void 0 !== t ? t : 0) + (null !== (n = e.count_details.normal) && void 0 !== n ? n : 0)
+                                });
+                                n.length > 0 && (t = n.reduce((e, t) => e + t))
+                            }
+                            return t
+                        }(t)
+                    } let l = null;
+                for (let t of e.messages)
+                    if (null != t.author && l !== t.author.id && (r.push((0, i.e5)(t)), l = t.author.id, r.length >= 3)) break;
+                return {
+                    id: e.id,
+                    topic: e.topic,
+                    summShort: e.summ_short,
+                    people: Array.from(new Set(e.people)),
+                    startId: e.start_id,
+                    endId: e.end_id,
+                    count: e.count,
+                    channelId: e.channel_id,
+                    type: e.type,
+                    messages: r,
+                    reactions: n,
+                    messageIds: e.messages.map(e => e.id),
+                    guildId: t,
+                    reactionCount: s,
+                    numTotalMessages: e.messages.length,
+                    source: e.source
+                }
+            }
+
+            function _(e, t) {
+                let n = r.ZP.ackMessageId(e);
+                return null != n && s.default.extractTimestamp(t) > s.default.extractTimestamp(n)
+            }
+
+            function c(e) {
+                return !1
+            }
+        },
         978684: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -170076,6 +170850,71 @@
                 }) && null !== (e = t || n || s) && void 0 !== e && e
             }
         },
+        638395: function(e, t, n) {
+            "use strict";
+            var i, r = n(442837),
+                s = n(570140),
+                o = n(288219);
+
+            function a(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let l = {};
+            class u extends(i = r.ZP.DeviceSettingsStore) {
+                getUserAgnosticState() {
+                    return {
+                        toggleStates: l
+                    }
+                }
+                initialize(e) {
+                    for (var t in o.Z) {
+                        var n, i;
+                        l[t] = null !== (i = null == e ? void 0 : null === (n = e.toggleStates) || void 0 === n ? void 0 : n[t]) && void 0 !== i && i
+                    }
+                }
+                get(e) {
+                    var t;
+                    return null !== (t = l[e]) && void 0 !== t && t
+                }
+                set(e, t) {
+                    return l[e] = t, t
+                }
+            }
+            a(u, "displayName", "LabFeatureStore"), a(u, "persistKey", "LabFeatureStore"), t.Z = new u(s.Z, {
+                LAB_FEATURE_TOGGLE: function(e) {
+                    let {
+                        labFeature: t,
+                        enabled: n
+                    } = e;
+                    l[t] = n
+                }
+            })
+        },
+        288219: function(e, t) {
+            "use strict";
+            t.Z = {
+                launchPad: {
+                    description: "Launch pad, a powerful way to quickly navigate around the app."
+                },
+                launchPadFull: {
+                    description: "Activate launch pad when dragging from the middle of the screen"
+                },
+                launchPadEdge: {
+                    description: "Activate launch pad when dragging from the right edge of the screen"
+                },
+                launchPadPullTab: {
+                    description: "Launch pad with a visible pull tab to pull it open."
+                },
+                hide_icymi_tab: {
+                    description: "Hide ICYMI tab"
+                }
+            }
+        },
         880027: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -179419,7 +180258,8 @@
                     mentionChannels: [],
                     muted: !1,
                     unknownUserMentionPlaceholder: !0,
-                    viewingChannelId: i.viewingChannelId
+                    viewingChannelId: i.viewingChannelId,
+                    forceWhite: !!i.forceWhite
                 }
             }
 
@@ -183712,8 +184552,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718986027591",
-                                    build_number: "303868"
+                                    built_at: "1718986333546",
+                                    build_number: "303872"
                                 }
                             },
                             retries: 1
@@ -245175,28 +246015,29 @@
             "use strict";
             n.r(t), n(47120), n(789020), n(724458);
             var i = n(392711),
-                r = n.n(i);
+                r = n.n(i),
+                s = n(265164);
             n(57132), n(140155);
-            var s = n(398758),
-                o = n(601070),
-                a = n(569471),
-                l = n(195663),
-                u = n(131704),
-                _ = n(709054),
-                c = n(314897),
-                d = n(592125),
-                E = n(430824),
-                I = n(496675),
-                T = n(306680),
-                h = n(944486),
-                S = n(412788),
-                f = n(9156),
-                N = n(594174),
-                A = n(981631),
-                m = n(176505),
-                O = n(490897);
+            var o = n(398758),
+                a = n(601070),
+                l = n(569471),
+                u = n(195663),
+                _ = n(131704),
+                c = n(709054),
+                d = n(314897),
+                E = n(592125),
+                I = n(430824),
+                T = n(496675),
+                h = n(306680),
+                S = n(944486),
+                f = n(412788),
+                N = n(9156),
+                A = n(594174),
+                m = n(981631),
+                O = n(176505),
+                R = n(490897);
 
-            function R(e, t, n) {
+            function p(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -245204,14 +246045,14 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let p = A.kod,
-                g = {},
-                C = new Set,
-                v = 0;
+            let g = m.kod,
+                C = {},
+                v = new Set,
+                L = 0;
 
-            function L(e) {
+            function D(e) {
                 var t;
-                let n = g[null != e ? e : p];
+                let n = C[null != e ? e : g];
                 return {
                     unread: !1,
                     unreadByType: {},
@@ -245223,29 +246064,29 @@
                 }
             }
 
-            function D(e) {
-                var t;
-                return g[null != e ? e : p] = null !== (t = g[null != e ? e : p]) && void 0 !== t ? t : L(e)
-            }
-
             function M(e) {
-                let t = D(e);
-                t.sentinel++, v++
+                var t;
+                return C[null != e ? e : g] = null !== (t = C[null != e ? e : g]) && void 0 !== t ? t : D(e)
             }
 
-            function P(e, t, n) {
-                return null != e.guild_id && n && !((0, u.Q5)(e.type) || f.ZP.isChannelRecordOrParentOptedIn(e)) && 0 === t
+            function P(e) {
+                let t = M(e);
+                t.sentinel++, L++
             }
 
-            function y(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-                    n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(m.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? a.Z.isMuted(e.id) || f.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : f.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (P(e, t, (0, s.r1)(e.guild_id)) || !I.Z.can(e.accessPermissions, e))) && (t > 0 || f.ZP.resolveUnreadSetting(e) === O.i.ALL_MESSAGES)
+            function y(e, t, n) {
+                return null != e.guild_id && n && !((0, _.Q5)(e.type) || N.ZP.isChannelRecordOrParentOptedIn(e)) && 0 === t
             }
 
             function U(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
+                    n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+                return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(O.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? l.Z.isMuted(e.id) || N.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : N.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (y(e, t, (0, o.r1)(e.guild_id)) || !T.Z.can(e.accessPermissions, e))) && (t > 0 || N.ZP.resolveUnreadSetting(e) === R.i.ALL_MESSAGES)
+            }
+
+            function b(e) {
                 switch (e) {
-                    case p:
+                    case g:
                     case null:
                     case void 0:
                         return null;
@@ -245254,14 +246095,14 @@
                 }
             }
 
-            function b(e, t) {
-                let n = T.ZP.hasUnread(e, t);
-                if (t === O.W.GUILD_EVENT) return !(f.ZP.isMuted(e) || f.ZP.isMuteScheduledEventsEnabled(e)) && n;
+            function G(e, t) {
+                let n = h.ZP.hasUnread(e, t);
+                if (t === R.W.GUILD_EVENT) return !(N.ZP.isMuted(e) || N.ZP.isMuteScheduledEventsEnabled(e)) && n;
                 return n
             }
 
-            function G(e, t) {
-                let n = L(e);
+            function w(e, t) {
+                let n = D(e);
                 return n.mentionCounts = {
                     ...t.mentionCounts
                 }, n.unreadByType = {
@@ -245269,206 +246110,206 @@
                 }, n
             }
 
-            function w(e) {
+            function B(e) {
                 return e.unread = Object.values(e.unreadByType).some(e => e), e
             }
 
-            function B(e, t) {}
+            function k(e, t) {}
 
-            function k(e, t, n) {
-                return w(t), t.mentionCount = r()(t.mentionCounts).values().sum(), (t.unread !== n.unread || t.mentionCount !== n.mentionCount) && (g[null != e ? e : p] = t, null != e && (t.unread ? C.add(e) : C.delete(e)), v++, M(null != e ? e : p), B(t, n), !0)
+            function x(e, t, n) {
+                return B(t), t.mentionCount = r()(t.mentionCounts).values().sum(), (t.unread !== n.unread || t.mentionCount !== n.mentionCount) && (C[null != e ? e : g] = t, null != e && (t.unread ? v.add(e) : v.delete(e)), L++, P(null != e ? e : g), k(t, n), !0)
             }
 
-            function x(e, t) {
-                let n = U(e),
-                    i = D(n),
-                    r = G(n, i),
+            function V(e, t) {
+                let n = b(e),
+                    i = M(n),
+                    r = w(n, i),
                     s = !1;
                 if (t.forEach(e => {
-                        let t = d.Z.getChannel(e);
+                        let t = E.Z.getChannel(e);
                         if (null == t) {
                             delete r.mentionCounts[e];
                             return
                         }
                         if (t.getGuildId() !== n) return;
-                        let i = T.ZP.getMentionCount(e);
-                        null !== n && !s && T.ZP.hasUnread(t.id) && y(t, i, !0) && (s = !0, r.unreadChannelId = t.id), i > 0 && y(t, i) ? r.mentionCounts[t.id] = i : delete r.mentionCounts[t.id]
-                    }), r.unreadByType[O.W.CHANNEL] = s, r.unreadByType[O.W.CHANNEL] !== i.unreadByType[O.W.CHANNEL] && !r.unreadByType[O.W.CHANNEL]) {
-                    let e = d.Z.getChannel(i.unreadChannelId);
-                    if (!(null != e && !t.includes(e.id) && T.ZP.hasUnread(e.id) && y(e))) return Z(n);
-                    null != n && C.add(n), r.unreadByType[O.W.CHANNEL] = !0
+                        let i = h.ZP.getMentionCount(e) - 0;
+                        null !== n && !s && h.ZP.hasUnread(t.id) && U(t, i, !0) && (s = !0, r.unreadChannelId = t.id), i > 0 && U(t, i) ? r.mentionCounts[t.id] = i : delete r.mentionCounts[t.id]
+                    }), r.unreadByType[R.W.CHANNEL] = s, r.unreadByType[R.W.CHANNEL] !== i.unreadByType[R.W.CHANNEL] && !r.unreadByType[R.W.CHANNEL]) {
+                    let e = E.Z.getChannel(i.unreadChannelId);
+                    if (!(null != e && !t.includes(e.id) && h.ZP.hasUnread(e.id) && U(e))) return H(n);
+                    null != n && v.add(n), r.unreadByType[R.W.CHANNEL] = !0
                 }
-                return k(n, r, i)
-            }
-
-            function V(e, t) {
-                if (null == e) return;
-                let n = D(e),
-                    i = G(e, n);
-                return i.unreadByType[O.W.GUILD_EVENT] = b(e, t), k(e, i, n)
+                return x(n, r, i)
             }
 
             function Z(e, t) {
-                let n = U(e),
-                    i = L(n);
-                if (null == n) {
-                    let e = d.Z.getMutablePrivateChannels();
-                    for (let t in e) {
-                        let n = e[t],
-                            r = T.ZP.getMentionCount(t);
-                        r > 0 && y(n, r) && (i.mentionCount += r, i.mentionCounts[n.id] = r)
-                    }
-                } else {
-                    let e = f.ZP.isMuted(n);
-                    if (e && !1 === t) return !1;
-                    let r = f.ZP.getMutedChannels(n),
-                        l = f.ZP.getChannelOverrides(n),
-                        _ = (0, s.r1)(n),
-                        c = d.Z.getMutableBasicGuildChannelsForGuild(n);
-                    for (let t in c) {
-                        let n = c[t],
-                            s = e || r.has(t) || null != n.parent_id && r.has(n.parent_id),
-                            o = i.unreadByType[O.W.CHANNEL],
-                            {
-                                mentionCount: a,
-                                unread: d
-                            } = T.ZP.getGuildChannelUnreadState(n, _, l, s, o),
-                            E = a > 0;
-                        if (!E && s) continue;
-                        let h = !o && (!s || E) && d;
-                        (h || E) && function(e, t, n) {
-                            if ((0, u.bw)(e.type) && 0 === t || !I.Z.canBasicChannel((0, u.Gz)(e.type), e) || P(e, t, n)) return !1;
-                            return !("flags" in e && e.hasFlag(m.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || f.ZP.resolveUnreadSetting(e) === O.i.ALL_MESSAGES)
-                        }(n, a, _) && (h && (i.unreadByType[O.W.CHANNEL] = !0, i.unreadChannelId = t), E && (i.mentionCount += a, i.mentionCounts[n.id] = a))
-                    }
-                    let E = o.Z.getActiveJoinedThreadsForGuild(n);
-                    for (let t in E)
-                        for (let n in E[t]) {
-                            !i.unreadByType[O.W.CHANNEL] && T.ZP.hasUnread(n) && !a.Z.isMuted(n) && !e && (i.unreadByType[O.W.CHANNEL] = !0, i.unreadChannelId = n);
-                            let t = T.ZP.getMentionCount(n);
-                            t > 0 && (i.mentionCount += t, i.mentionCounts[n] = t)
-                        }!i.unreadByType[O.W.GUILD_EVENT] && b(n, O.W.GUILD_EVENT) && (i.unreadByType[O.W.GUILD_EVENT] = !0)
-                }
-                w(i);
-                let r = D(n);
-                return (i.unread !== r.unread || i.mentionCount !== r.mentionCount) && (g[null != n ? n : p] = i, null != n && (i.unread ? C.add(n) : C.delete(n)), v++, M(null != n ? n : p), B(i, r), !0)
+                if (null == e) return;
+                let n = M(e),
+                    i = w(e, n);
+                return i.unreadByType[R.W.GUILD_EVENT] = G(e, t), x(e, i, n)
             }
 
-            function H(e) {
+            function H(e, t) {
+                let n = b(e),
+                    i = D(n);
+                if (null == n) {
+                    let e = E.Z.getMutablePrivateChannels();
+                    for (let t in e) {
+                        let n = e[t],
+                            r = h.ZP.getMentionCount(t);
+                        r > 0 && U(n, r) && (i.mentionCount += r, i.mentionCounts[n.id] = r)
+                    }
+                } else {
+                    let e = N.ZP.isMuted(n);
+                    if (e && !1 === t) return !1;
+                    let r = N.ZP.getMutedChannels(n),
+                        s = N.ZP.getChannelOverrides(n),
+                        u = (0, o.r1)(n),
+                        c = E.Z.getMutableBasicGuildChannelsForGuild(n);
+                    for (let t in c) {
+                        let n = c[t],
+                            o = e || r.has(t) || null != n.parent_id && r.has(n.parent_id),
+                            a = i.unreadByType[R.W.CHANNEL],
+                            {
+                                mentionCount: l,
+                                unread: d
+                            } = h.ZP.getGuildChannelUnreadState(n, u, s, o, a),
+                            E = l > 0;
+                        if (!E && o) continue;
+                        let I = !a && (!o || E) && d;
+                        (I || E) && function(e, t, n) {
+                            if ((0, _.bw)(e.type) && 0 === t || !T.Z.canBasicChannel((0, _.Gz)(e.type), e) || y(e, t, n)) return !1;
+                            return !("flags" in e && e.hasFlag(O.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || N.ZP.resolveUnreadSetting(e) === R.i.ALL_MESSAGES)
+                        }(n, l, u) && (I && (i.unreadByType[R.W.CHANNEL] = !0, i.unreadChannelId = t), E && (i.mentionCount += Math.max(l - 0, 0), i.mentionCounts[n.id] = Math.max(l - 0, 0)))
+                    }
+                    let d = a.Z.getActiveJoinedThreadsForGuild(n);
+                    for (let t in d)
+                        for (let n in d[t]) {
+                            !i.unreadByType[R.W.CHANNEL] && h.ZP.hasUnread(n) && !l.Z.isMuted(n) && !e && (i.unreadByType[R.W.CHANNEL] = !0, i.unreadChannelId = n);
+                            let t = h.ZP.getMentionCount(n);
+                            t > 0 && (i.mentionCount += t, i.mentionCounts[n] = t)
+                        }!i.unreadByType[R.W.GUILD_EVENT] && G(n, R.W.GUILD_EVENT) && (i.unreadByType[R.W.GUILD_EVENT] = !0)
+                }
+                B(i);
+                let r = M(n);
+                return (i.unread !== r.unread || i.mentionCount !== r.mentionCount) && (C[null != n ? n : g] = i, null != n && (i.unread ? v.add(n) : v.delete(n)), L++, P(null != n ? n : g), k(i, r), !0)
+            }
+
+            function F(e) {
                 let {
                     guilds: t
                 } = e;
-                g = {}, v = 0, C = new Set, Z(null);
+                C = {}, L = 0, v = new Set, H(null);
                 let {
                     length: n
                 } = t;
                 for (let e = 0; e < n; e++) {
                     let n = t[e];
-                    null != n && Z(n.id)
+                    null != n && H(n.id)
                 }
             }
 
-            function F(e) {
+            function Y(e) {
                 let {
                     guilds: t,
                     readState: n
                 } = e;
-                g = {}, v = 0, C = new Set;
+                C = {}, L = 0, v = new Set;
                 let i = n.entries.length < 500,
                     r = new Set;
                 for (let e of (i && n.entries.forEach(e => {
                         if (null != e.mention_count && e.mention_count > 0) {
-                            if (null == e.read_state_type || e.read_state_type === O.W.CHANNEL) {
+                            if (null == e.read_state_type || e.read_state_type === R.W.CHANNEL) {
                                 var t;
-                                r.add(null === (t = d.Z.getChannel(e.id)) || void 0 === t ? void 0 : t.guild_id)
+                                r.add(null === (t = E.Z.getChannel(e.id)) || void 0 === t ? void 0 : t.guild_id)
                             } else r.add(e.id)
                         }
-                    }), Z(null), t)) Z(e.id, i ? r.has(e.id) : void 0)
+                    }), H(null), t)) H(e.id, i ? r.has(e.id) : void 0)
             }
 
-            function Y() {
-                for (let e of (g = {}, C = new Set, Z(null), Object.values(E.Z.getGuildIds()))) Z(e)
-            }
-
-            function j(e) {
-                let {
-                    guild: t
-                } = e;
-                return Z(t.id)
+            function j() {
+                for (let e of (C = {}, v = new Set, H(null), Object.values(I.Z.getGuildIds()))) H(e)
             }
 
             function W(e) {
                 let {
                     guild: t
                 } = e;
-                return null != g[t.id] && (delete g[t.id], C.delete(t.id), v++, !0)
+                return H(t.id)
             }
 
             function K(e) {
+                let {
+                    guild: t
+                } = e;
+                return null != C[t.id] && (delete C[t.id], v.delete(t.id), L++, !0)
+            }
+
+            function z(e) {
                 let {
                     channel: {
                         id: t,
                         guild_id: n
                     }
                 } = e;
-                return x(n, [t])
+                return V(n, [t])
             }
 
-            function z() {
-                let e = d.Z.getChannel(h.Z.getChannelId());
-                return null != e && x(e.getGuildId(), [e.id])
-            }
-
-            function q(e) {
-                let {
-                    user: t,
-                    guildId: n
-                } = e;
-                return t.id === c.default.getId() && Z(n)
+            function q() {
+                let e = E.Z.getChannel(S.Z.getChannelId());
+                return null != e && V(e.getGuildId(), [e.id])
             }
 
             function X(e) {
                 let {
-                    channelId: t
-                } = e, n = d.Z.getChannel(t);
-                return null != n && x(n.getGuildId(), [n.id])
+                    user: t,
+                    guildId: n
+                } = e;
+                return t.id === d.default.getId() && H(n)
             }
 
             function Q(e) {
                 let {
                     channelId: t
-                } = e, n = d.Z.getChannel(t);
-                if (null == n) return !1;
-                if (null != n.guild_id) {
-                    let e = D(n.guild_id);
-                    if (((n.isThread() ? !a.Z.hasJoined(n.id) || a.Z.isMuted(n.id) : f.ZP.isGuildOrCategoryOrChannelMuted(n.guild_id, n.id)) || e.unreadByType[O.W.CHANNEL]) && 0 === T.ZP.getMentionCount(t)) return !1
-                }
-                return x(n.getGuildId(), [n.id])
+                } = e, n = E.Z.getChannel(t);
+                return null != n && V(n.getGuildId(), [n.id])
             }
 
             function J(e) {
                 let {
-                    channelId: t,
-                    guildId: n
-                } = e;
-                return n !== A.I_8 && null != t && x(n, [t])
+                    channelId: t
+                } = e, n = E.Z.getChannel(t);
+                if (null == n) return !1;
+                if (null != n.guild_id) {
+                    let e = M(n.guild_id);
+                    if (((n.isThread() ? !l.Z.hasJoined(n.id) || l.Z.isMuted(n.id) : N.ZP.isGuildOrCategoryOrChannelMuted(n.guild_id, n.id)) || e.unreadByType[R.W.CHANNEL]) && 0 === h.ZP.getMentionCount(t)) return !1
+                }
+                return V(n.getGuildId(), [n.id])
             }
 
             function $(e) {
                 let {
-                    channel: t
+                    channelId: t,
+                    guildId: n
                 } = e;
-                return x(t.getGuildId(), [t.id])
+                return n !== m.I_8 && null != t && V(n, [t])
             }
 
             function ee(e) {
                 let {
-                    channels: t
+                    channel: t
                 } = e;
-                return r()(t).groupBy(e => e.getGuildId()).reduce((e, t, n) => x(n, t.map(e => e.id)) || e, !1)
+                return V(t.getGuildId(), [t.id])
             }
 
             function et(e) {
+                let {
+                    channels: t
+                } = e;
+                return r()(t).groupBy(e => e.getGuildId()).reduce((e, t, n) => V(n, t.map(e => e.id)) || e, !1)
+            }
+
+            function en(e) {
                 let {
                     channels: t
                 } = e;
@@ -245477,176 +246318,180 @@
                         channelId: t
                     } = e;
                     return t
-                }).filter(e => null != d.Z.getChannel(e)).groupBy(e => {
+                }).filter(e => null != E.Z.getChannel(e)).groupBy(e => {
                     var t;
-                    return null === (t = d.Z.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
-                }).reduce((e, t, n) => x(n, t) || e, !1)
-            }
-
-            function en(e) {
-                let {
-                    channel: t
-                } = e;
-                return x(t.getGuildId(), [t.id, t.parent_id])
+                    return null === (t = E.Z.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
+                }).reduce((e, t, n) => V(n, t) || e, !1)
             }
 
             function ei(e) {
                 let {
-                    guildScheduledEvent: t
+                    channel: t
                 } = e;
-                return V(t.guild_id, O.W.GUILD_EVENT)
+                return V(t.getGuildId(), [t.id, t.parent_id])
             }
 
             function er(e) {
                 let {
                     guildScheduledEvent: t
                 } = e;
-                return V(t.guild_id, O.W.GUILD_EVENT)
+                return Z(t.guild_id, R.W.GUILD_EVENT)
             }
 
             function es(e) {
                 let {
-                    id: t,
-                    ackType: n
+                    guildScheduledEvent: t
                 } = e;
-                return V(t, n)
+                return Z(t.guild_id, R.W.GUILD_EVENT)
             }
 
             function eo(e) {
                 let {
                     id: t,
-                    guildId: n
+                    ackType: n
                 } = e;
-                return x(n, [t])
+                return Z(t, n)
             }
 
             function ea(e) {
-                return (0, l.s)(e) && x(e.guildId, [e.id])
+                let {
+                    id: t,
+                    guildId: n
+                } = e;
+                return V(n, [t])
             }
 
             function el(e) {
+                return (0, u.s)(e) && V(e.guildId, [e.id])
+            }
+
+            function eu(e) {
                 let {
                     threads: t,
                     guildId: n
                 } = e;
-                return x(n, t.filter(e => a.Z.hasJoined(e.id)).map(e => e.id))
-            }
-
-            function eu(e) {
-                return !!(e.channels.length > 0) && x(e.guildId, e.channels.map(e => e.id))
+                return V(n, t.filter(e => l.Z.hasJoined(e.id)).map(e => e.id))
             }
 
             function e_(e) {
-                let {
-                    guildId: t
-                } = e;
-                return Z(t)
+                return !!(e.channels.length > 0) && V(e.guildId, e.channels.map(e => e.id))
             }
 
             function ec(e) {
                 let {
                     guildId: t
                 } = e;
-                return Z(t)
+                return H(t)
             }
 
             function ed(e) {
                 let {
+                    guildId: t
+                } = e;
+                return H(t)
+            }
+
+            function eE(e) {
+                let {
                     userGuildSettings: t
                 } = e, n = new Set(t.map(e => {
                     var t;
-                    return null !== (t = e.guild_id) && void 0 !== t ? t : p
+                    return null !== (t = e.guild_id) && void 0 !== t ? t : g
                 }));
-                return _.default.keys(g).reduce((e, t) => n.has(t) && Z(t) || e, !1)
+                return c.default.keys(C).reduce((e, t) => n.has(t) && H(t) || e, !1)
             }
 
-            function eE() {
-                for (let e in g) g[e].ncMentionCount = 0
+            function eI() {
+                for (let e in C) C[e].ncMentionCount = 0
             }
 
-            function eI(e) {
+            function eT(e) {
                 let {
                     guildId: t
                 } = e;
-                return Z(t)
+                return H(t)
             }
-            class eT extends S.Z {
+
+            function eh() {
+                return !1
+            }
+            class eS extends f.Z {
                 initialize() {
-                    this.waitFor(d.Z, h.Z, T.ZP, I.Z, c.default, N.default, f.ZP, o.Z, a.Z)
+                    this.waitFor(E.Z, S.Z, h.ZP, T.Z, d.default, A.default, N.ZP, a.Z, l.Z, s.Z)
                 }
                 loadCache() {
-                    let e = this.readSnapshot(eT.LATEST_SNAPSHOT_VERSION);
-                    null != e && (g = e.guilds, C = new Set(e.unreadGuilds))
+                    let e = this.readSnapshot(eS.LATEST_SNAPSHOT_VERSION);
+                    null != e && (C = e.guilds, v = new Set(e.unreadGuilds))
                 }
                 takeSnapshot() {
                     return {
-                        version: eT.LATEST_SNAPSHOT_VERSION,
+                        version: eS.LATEST_SNAPSHOT_VERSION,
                         data: {
-                            guilds: g,
-                            unreadGuilds: Array.from(C)
+                            guilds: C,
+                            unreadGuilds: Array.from(v)
                         }
                     }
                 }
                 hasAnyUnread() {
-                    return C.size > 0
+                    return v.size > 0
                 }
                 getStoreChangeSentinel() {
-                    return v
+                    return L
                 }
                 getMutableUnreadGuilds() {
-                    return C
+                    return v
                 }
                 getMutableGuildStates() {
-                    return g
+                    return C
                 }
                 hasUnread(e) {
-                    return C.has(e)
+                    return v.has(e)
                 }
                 getMentionCount(e) {
-                    return D(e).mentionCount
+                    return M(e).mentionCount
                 }
                 getMutableGuildReadState(e) {
-                    return D(e)
+                    return M(e)
                 }
                 getGuildHasUnreadIgnoreMuted(e) {
-                    let t = d.Z.getMutableGuildChannelsForGuild(e);
+                    let t = E.Z.getMutableGuildChannelsForGuild(e);
                     for (let e in t) {
                         let n = t[e];
                         if (null != n) {
-                            if ((!n.isGuildVocal() || 0 !== T.ZP.getMentionCount(e)) && I.Z.can(n.accessPermissions, n) && T.ZP.hasUnreadOrMentions(e)) return !0
+                            if ((!n.isGuildVocal() || 0 !== h.ZP.getMentionCount(e)) && T.Z.can(n.accessPermissions, n) && h.ZP.hasUnreadOrMentions(e)) return !0
                         }
                     }
-                    let n = o.Z.getActiveJoinedThreadsForGuild(e);
+                    let n = a.Z.getActiveJoinedThreadsForGuild(e);
                     for (let e in n)
-                        if (null != d.Z.getChannel(e)) {
+                        if (null != E.Z.getChannel(e)) {
                             for (let t in n[e])
-                                if (T.ZP.hasUnreadOrMentions(t)) return !0
-                        } return !!T.ZP.hasUnreadOrMentions(e, O.W.GUILD_EVENT) || !1
+                                if (h.ZP.hasUnreadOrMentions(t)) return !0
+                        } return !!h.ZP.hasUnreadOrMentions(e, R.W.GUILD_EVENT) || !1
                 }
                 getTotalMentionCount(e) {
                     let t = 0;
-                    for (let n in g) {
-                        let i = g[n];
-                        if (!0 !== e || n !== p) t += i.mentionCount
+                    for (let n in C) {
+                        let i = C[n];
+                        if (!0 !== e || n !== g) t += i.mentionCount
                     }
                     return t
                 }
                 getTotalNotificationsMentionCount(e) {
                     let t = 0;
-                    for (let n in g) {
-                        let i = g[n];
-                        if (!0 !== e || n !== p) t += i.ncMentionCount
+                    for (let n in C) {
+                        let i = C[n];
+                        if (!0 !== e || n !== g) t += i.ncMentionCount
                     }
                     return t
                 }
                 getPrivateChannelMentionCount() {
                     var e;
-                    let t = g[p];
+                    let t = C[g];
                     return null !== (e = null == t ? void 0 : t.mentionCount) && void 0 !== e ? e : 0
                 }
                 getMentionCountForChannels(e, t) {
                     let n = 0,
-                        i = g[e];
+                        i = C[e];
                     return null == i ? 0 : (t.forEach(e => {
                         let t = i.mentionCounts[e];
                         n += null != t ? t : 0
@@ -245654,63 +246499,64 @@
                 }
                 getMentionCountForPrivateChannel(e) {
                     var t, n;
-                    return null !== (n = null === (t = g[p]) || void 0 === t ? void 0 : t.mentionCounts[e]) && void 0 !== n ? n : 0
+                    return null !== (n = null === (t = C[g]) || void 0 === t ? void 0 : t.mentionCounts[e]) && void 0 !== n ? n : 0
                 }
                 getGuildChangeSentinel(e) {
-                    return D(e).sentinel
+                    return M(e).sentinel
                 }
                 constructor() {
                     super({
-                        CONNECTION_OPEN: F,
-                        OVERLAY_INITIALIZE: H,
+                        CONNECTION_OPEN: Y,
+                        OVERLAY_INITIALIZE: F,
                         CACHE_LOADED_LAZY: () => this.loadCache(),
-                        GUILD_CREATE: j,
-                        GUILD_DELETE: W,
-                        MESSAGE_CREATE: Q,
-                        MESSAGE_ACK: X,
-                        BULK_ACK: et,
-                        UPDATE_CHANNEL_DIMENSIONS: X,
-                        CHANNEL_SELECT: J,
-                        CHANNEL_DELETE: K,
-                        WINDOW_FOCUS: z,
-                        GUILD_ACK: e_,
-                        GUILD_ROLE_CREATE: ec,
-                        GUILD_ROLE_DELETE: ec,
-                        GUILD_ROLE_UPDATE: ec,
-                        CHANNEL_CREATE: $,
-                        CHANNEL_UPDATES: ee,
-                        THREAD_CREATE: en,
-                        THREAD_UPDATE: en,
-                        THREAD_DELETE: en,
-                        THREAD_LIST_SYNC: el,
-                        THREAD_MEMBER_UPDATE: eo,
-                        THREAD_MEMBERS_UPDATE: ea,
-                        PASSIVE_UPDATE_V2: eu,
-                        GUILD_MEMBER_UPDATE: q,
-                        USER_GUILD_SETTINGS_FULL_UPDATE: ed,
-                        USER_GUILD_SETTINGS_CHANNEL_UPDATE: eI,
-                        USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: eI,
-                        USER_GUILD_SETTINGS_GUILD_UPDATE: eI,
-                        USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: eI,
-                        GUILD_FEATURE_ACK: es,
-                        GUILD_SCHEDULED_EVENT_CREATE: ei,
-                        GUILD_SCHEDULED_EVENT_UPDATE: ei,
-                        GUILD_SCHEDULED_EVENT_DELETE: er,
-                        CHANNEL_RTC_UPDATE_CHAT_OPEN: X,
-                        LOAD_MESSAGES_SUCCESS: X,
-                        CHANNEL_ACK: X,
-                        CHANNEL_LOCAL_ACK: X,
-                        NOTIFICATION_SETTINGS_UPDATE: Y,
-                        RECOMPUTE_READ_STATES: Y,
-                        VOICE_CHANNEL_SELECT: X,
-                        ENABLE_AUTOMATIC_ACK: X,
-                        RESORT_THREADS: X,
-                        NOTIFICATION_CENTER_CLEAR_GUILD_MENTIONS: eE,
-                        TRY_ACK: X
+                        GUILD_CREATE: W,
+                        GUILD_DELETE: K,
+                        MESSAGE_CREATE: J,
+                        MESSAGE_ACK: Q,
+                        BULK_ACK: en,
+                        UPDATE_CHANNEL_DIMENSIONS: Q,
+                        CHANNEL_SELECT: $,
+                        CHANNEL_DELETE: z,
+                        WINDOW_FOCUS: q,
+                        GUILD_ACK: ec,
+                        GUILD_ROLE_CREATE: ed,
+                        GUILD_ROLE_DELETE: ed,
+                        GUILD_ROLE_UPDATE: ed,
+                        CHANNEL_CREATE: ee,
+                        CHANNEL_UPDATES: et,
+                        THREAD_CREATE: ei,
+                        THREAD_UPDATE: ei,
+                        THREAD_DELETE: ei,
+                        THREAD_LIST_SYNC: eu,
+                        THREAD_MEMBER_UPDATE: ea,
+                        THREAD_MEMBERS_UPDATE: el,
+                        PASSIVE_UPDATE_V2: e_,
+                        GUILD_MEMBER_UPDATE: X,
+                        USER_GUILD_SETTINGS_FULL_UPDATE: eE,
+                        USER_GUILD_SETTINGS_CHANNEL_UPDATE: eT,
+                        USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: eT,
+                        USER_GUILD_SETTINGS_GUILD_UPDATE: eT,
+                        USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: eT,
+                        GUILD_FEATURE_ACK: eo,
+                        GUILD_SCHEDULED_EVENT_CREATE: er,
+                        GUILD_SCHEDULED_EVENT_UPDATE: er,
+                        GUILD_SCHEDULED_EVENT_DELETE: es,
+                        CHANNEL_RTC_UPDATE_CHAT_OPEN: Q,
+                        LOAD_MESSAGES_SUCCESS: Q,
+                        CHANNEL_ACK: Q,
+                        CHANNEL_LOCAL_ACK: Q,
+                        NOTIFICATION_SETTINGS_UPDATE: j,
+                        RECOMPUTE_READ_STATES: j,
+                        VOICE_CHANNEL_SELECT: Q,
+                        ENABLE_AUTOMATIC_ACK: Q,
+                        RESORT_THREADS: Q,
+                        NOTIFICATION_CENTER_CLEAR_GUILD_MENTIONS: eI,
+                        TRY_ACK: Q,
+                        LOAD_GRAVITY_DEHYDRATED: eh
                     })
                 }
             }
-            R(eT, "displayName", "GuildReadStateStore"), R(eT, "LATEST_SNAPSHOT_VERSION", 1), t.default = new eT
+            p(eS, "displayName", "GuildReadStateStore"), p(eS, "LATEST_SNAPSHOT_VERSION", 1), t.default = new eS
         },
         430824: function(e, t, n) {
             "use strict";
@@ -262180,7 +263026,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "276cd065d6131215d5caadc49a13c916759ccc50"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5840e2483b732840a4a9b2e10a0250978618c216"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279999,7 +280845,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303868"
+                                build_number: "303872"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -287308,7 +288154,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303868", "303868"), 10);
+                let s = parseInt((n = "303872", "303872"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -328823,4 +329669,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.d7a58d4563513804e019.js.map
+//# sourceMappingURL=79892.c39a193454fea6bc3e54.js.map
