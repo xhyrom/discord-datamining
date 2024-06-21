@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304135", ", Version Hash: ").concat("67e44d9583bd5e18f40f2b746da88c282a32b320")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304138", ", Version Hash: ").concat("ce5f429a9061e1dc09c84fec4bee39562995c2b9")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -60046,7 +60046,7 @@
                 ICYMI_DESCRIPTION: "Interesting content from your servers that you might have missed.",
                 ICYMI_SETTING_NAME: "Hide ICYMI tab",
                 ICYMI_END_TITLE: "$[ICYMI](icymiHook) $[—](dashHook) All Caught Up!",
-                ICYMI_END_SUBTITLE: "Check back later when there's new content for you to check out!",
+                ICYMI_END_SUBTITLE: "Check back later for more new content!",
                 ICYMI_BROWSE_SERVERS: "Browse more servers",
                 ICYMI_BACK_TO_HOME: "Back to Home",
                 ICYMI_ITEM_HEADER_SUBTITLE_POPULAR_CONTENT: " sent a popular message",
@@ -60066,6 +60066,7 @@
                 ICYMI_CUSTOM_SCORING_NONE_CHANNEL: "No custom scoring for this channel",
                 ICYMI_CUSTOM_SCORING_MUTE_CHANNEL: "See nothing from this channel (mute)",
                 IYCMI_NEW_POSTS: "New Content",
+                ICYMI_FORWARD_MESSAGE: "Forward Message",
                 ICYMI_VALUE_PROP_1: "Sourced from all your servers",
                 ICYMI_VALUE_PROP_2: "Only the freshest content",
                 ICYMI_VALUE_PROP_3: "Know when you've caught up",
@@ -96347,8 +96348,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304135", "304135"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304135")), t = 0), t
+                let t = parseInt((e = "304138", "304138"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304138")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124560,8 +124561,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304135",
-                    versionHash: "67e44d9583bd5e18f40f2b746da88c282a32b320"
+                    buildNumber: "304138",
+                    versionHash: "ce5f429a9061e1dc09c84fec4bee39562995c2b9"
                 }
             }
             n.d(t, {
@@ -147927,6 +147928,10 @@
                 getHydratedItem(e) {
                     var t;
                     return null !== (t = D[e]) && void 0 !== t ? t : null
+                }
+                getMessage(e) {
+                    let t = D[e];
+                    return null == t || t.type !== f.Rr.MESSAGE ? null : t.message
                 }
                 getHydratedItems() {
                     return D
@@ -184595,8 +184600,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719009799147",
-                                    build_number: "304135"
+                                    built_at: "1719009918628",
+                                    build_number: "304138"
                                 }
                             },
                             retries: 1
@@ -263058,7 +263063,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "67e44d9583bd5e18f40f2b746da88c282a32b320"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ce5f429a9061e1dc09c84fec4bee39562995c2b9"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280877,7 +280882,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304135"
+                                build_number: "304138"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288198,7 +288203,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304135", "304135"), 10);
+                let s = parseInt((n = "304138", "304138"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -329722,4 +329727,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.7752b060fdf8bcf5e93c.js.map
+//# sourceMappingURL=79892.421ce805954481b16883.js.map
