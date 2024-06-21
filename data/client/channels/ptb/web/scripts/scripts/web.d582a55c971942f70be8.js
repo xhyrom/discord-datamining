@@ -108,10 +108,10 @@
                     s = t(442837),
                     l = t(433517),
                     u = t(799656),
-                    h = t(540117),
-                    p = t(765717),
-                    _ = t(663993),
-                    m = t(329816),
+                    p = t(540117),
+                    h = t(765717),
+                    m = t(663993),
+                    _ = t(329816),
                     E = t(554608),
                     I = t(83949),
                     O = t(137412),
@@ -125,89 +125,89 @@
                     S = t(188785),
                     P = t(436620);
                 t(928518), t(972830), t(704806);
-                let D = (0, _.Un)({
+                let D = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("49237"), t.e("61482")]).then(t.bind(t, 576184)),
                         webpackId: 576184,
                         name: "UnsupportedBrowser"
                     }),
-                    C = (0, _.Un)({
+                    C = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("99387"), t.e("88571")]).then(t.bind(t, 431583)),
                         webpackId: 431583,
                         name: "DownloadApps"
                     }),
-                    L = (0, _.Un)({
+                    L = (0, m.Un)({
                         createPromise: () => t.e("81975").then(t.bind(t, 484097)),
                         webpackId: 484097,
                         name: "InviteProxy"
                     }),
-                    U = (0, _.Un)({
+                    U = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("99387"), t.e("20786")]).then(t.bind(t, 417663)),
                         webpackId: 417663,
                         name: "VerifyConnectedAccount"
                     }),
-                    R = (0, _.Un)({
+                    R = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("99387"), t.e("16565")]).then(t.bind(t, 984388)),
                         webpackId: 984388,
                         name: "LinkConnectedAccount"
                     }),
-                    M = (0, _.Un)({
+                    M = (0, m.Un)({
                         createPromise: () => t.e("46882").then(t.bind(t, 924339)),
                         webpackId: 924339,
                         name: "LinkAuthorize"
                     }),
-                    y = (0, _.Un)({
+                    y = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("99387"), t.e("19878"), t.e("49277")]).then(t.bind(t, 197528)),
                         webpackId: 197528,
                         name: "ActivateDevice"
                     }),
-                    k = (0, _.Un)({
+                    k = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("49237"), t.e("99387"), t.e("23755"), t.e("89350"), t.e("11751"), t.e("50990"), t.e("94364"), t.e("18438"), t.e("29549"), t.e("31605"), t.e("6380"), t.e("11250"), t.e("57878"), t.e("65840"), t.e("77172"), t.e("67535"), t.e("95393"), t.e("14262"), t.e("86977"), t.e("18101"), t.e("81539"), t.e("90508"), t.e("7590"), t.e("8739"), t.e("46097"), t.e("39285"), t.e("92511"), t.e("41947"), t.e("30243"), t.e("3084"), t.e("88646"), t.e("68241"), t.e("97458"), t.e("12549"), t.e("21078"), t.e("19820"), t.e("18965"), t.e("77594"), t.e("22036"), t.e("47939"), t.e("1187"), t.e("30676"), t.e("48800"), t.e("19589"), t.e("95824"), t.e("41889"), t.e("3741"), t.e("37220"), t.e("97403"), t.e("40464"), t.e("92557"), t.e("80026"), t.e("49508"), t.e("91315"), t.e("27385"), t.e("72922"), t.e("96936"), t.e("54535"), t.e("11256"), t.e("44388"), t.e("76305"), t.e("22099"), t.e("13546"), t.e("95468"), t.e("94864")]).then(t.bind(t, 457094)),
                         webpackId: 457094,
                         name: "ViewsWithMainInterface",
                         memo: !0,
                         id: 457094
                     }),
-                    x = (0, _.Un)({
+                    x = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("49237"), t.e("99387"), t.e("96427"), t.e("49368"), t.e("75492"), t.e("11250"), t.e("57878"), t.e("67535"), t.e("95393"), t.e("92511"), t.e("52030"), t.e("10778"), t.e("93669"), t.e("84956"), t.e("76990"), t.e("50960")]).then(t.bind(t, 822699)),
                         webpackId: 822699,
                         name: "ViewsWithAuth"
                     }),
-                    j = (0, _.Un)({
+                    j = (0, m.Un)({
                         createPromise: () => t.e("32640").then(t.bind(t, 285773)),
                         webpackId: 285773,
                         name: "ViewsWithOAuth2"
                     }),
-                    G = (0, _.Un)({
+                    G = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("99387"), t.e("10508")]).then(t.bind(t, 549652)),
                         webpackId: 549652,
                         name: "BrowserHandoff"
                     }),
-                    V = (0, _.Un)({
+                    V = (0, m.Un)({
                         createPromise: () => t.e("76888").then(t.bind(t, 573276)),
                         webpackId: 573276,
                         name: "MobileWebHandoffFallback"
                     }),
-                    F = (0, _.Un)({
+                    F = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("49237"), t.e("99387"), t.e("23755"), t.e("89350"), t.e("11751"), t.e("50990"), t.e("94364"), t.e("29549"), t.e("31605"), t.e("6380"), t.e("11250"), t.e("57878"), t.e("65840"), t.e("77172"), t.e("67535"), t.e("95393"), t.e("14262"), t.e("86977"), t.e("18101"), t.e("81539"), t.e("90508"), t.e("7590"), t.e("8739"), t.e("46097"), t.e("39285"), t.e("92511"), t.e("41947"), t.e("30243"), t.e("3084"), t.e("88646"), t.e("68241"), t.e("97458"), t.e("12549"), t.e("21078"), t.e("19820"), t.e("77594"), t.e("22036"), t.e("47939"), t.e("1187"), t.e("30676"), t.e("48800"), t.e("95824"), t.e("41889"), t.e("3741"), t.e("37220"), t.e("40464"), t.e("92557"), t.e("91315"), t.e("72922"), t.e("96936"), t.e("44388"), t.e("22099"), t.e("69240")]).then(t.bind(t, 290161)),
                         webpackId: 290161,
                         name: "Overlay"
                     }),
-                    W = (0, _.Un)({
+                    W = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("99387"), t.e("18824"), t.e("79427")]).then(t.bind(t, 430075)),
                         webpackId: 430075,
                         name: "SuspendedUserSafetyHubPage"
                     }),
-                    H = (0, _.Un)({
+                    H = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("99387"), t.e("19878"), t.e("28296")]).then(t.bind(t, 630107)),
                         webpackId: 630107,
                         name: "QuestsLandingPage"
                     }),
-                    B = (0, _.Un)({
+                    B = (0, m.Un)({
                         createPromise: () => Promise.all([t.e("99387"), t.e("47228")]).then(t.bind(t, 531338)),
                         webpackId: 531338,
                         name: "ConnectionsAuthorizeContinue"
                     }),
-                    K = (0, _.Un)({
+                    K = (0, m.Un)({
                         createPromise: () => t.e("54918").then(t.bind(t, 838134)),
                         webpackId: 838134,
                         name: "ApplicationDirectoryRoutes"
@@ -237,14 +237,14 @@
                                 exact: !0,
                                 path: N.Z5c.INDEX,
                                 render: () => (0, c.jsx)(u.Z, {})
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 exact: !0,
                                 path: N.Z5c.APPS,
                                 component: C
                             }), (0, c.jsx)(i.AW, {
                                 path: q([N.Z5c.LOGIN, N.Z5c.REGISTER, N.Z5c.INVITE(":inviteCode"), N.Z5c.INVITE_LOGIN(":inviteCode"), N.Z5c.GIFT_CODE(":giftCode"), N.Z5c.GIFT_CODE_LOGIN(":giftCode"), N.Z5c.RESET], S.a),
                                 component: x
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.INVITE_PROXY(":channelId"),
                                 component: L
                             }), (0, c.jsx)(i.l_, {
@@ -257,7 +257,7 @@
                                 render: z
                             })]
                         }) : (0, c.jsxs)(i.rs, {
-                            children: [(0, c.jsx)(p.Z, {
+                            children: [(0, c.jsx)(h.Z, {
                                 exact: !0,
                                 path: N.Z5c.INDEX,
                                 render: () => (0, c.jsx)(u.Z, {})
@@ -273,13 +273,13 @@
                             }), (0, c.jsx)(i.l_, {
                                 from: N.Z5c.INVITE(""),
                                 to: N.Z5c.LOGIN
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.INVITE_PROXY(":channelId"),
                                 component: L
                             }), (0, c.jsx)(i.l_, {
                                 from: N.Z5c.GIFT_CODE(""),
                                 to: N.Z5c.LOGIN
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.QUESTS(":questId"),
                                 component: H,
                                 impressionName: f.ImpressionNames.QUESTS_LANDING_PAGE,
@@ -291,28 +291,28 @@
                                         quest_id: a.params.questId
                                     }
                                 }
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.HANDOFF,
                                 component: G
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.MOBILE_WEB_HANDOFF,
                                 component: V
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.CONNECTION_LINK(":type"),
                                 component: R
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
                                 component: M
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.ACTIVATE,
                                 component: y
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
                                 component: B
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.CONNECTIONS(":type"),
                                 component: U
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
                                 render: () => {
                                     var e, a, t;
@@ -328,7 +328,7 @@
                                         qr_code: !0
                                     }), window.location.href = (0, v.Gn)(null != i && "" !== i ? i : "qr_code", c), null
                                 }
-                            }), (0, c.jsx)(p.Z, {
+                            }), (0, c.jsx)(h.Z, {
                                 path: N.Z5c.OPEN_APP_FROM_EMAIL,
                                 render: () => {
                                     var e, a;
@@ -362,7 +362,7 @@
                                 component: W
                             }), a ? null : (0, c.jsx)(i.AW, {
                                 path: N.Z5c.APPLICATION_STORE,
-                                component: h.Z
+                                component: p.Z
                             }), a ? null : (0, c.jsx)(i.AW, {
                                 path: N.Z5c.APPLICATION_DIRECTORY,
                                 component: K
@@ -370,10 +370,10 @@
                                 render: z
                             })]
                         }) : (0, c.jsx)(i.rs, {
-                            children: (0, c.jsx)(p.Z, {
+                            children: (0, c.jsx)(h.Z, {
                                 component: D
                             })
-                        }), (0, c.jsxs)(m.Z, {
+                        }), (0, c.jsxs)(_.Z, {
                             skipsSettingDefaultPageTitle: d,
                             children: [e, w.isPlatformEmbedded && (t === E.P.NOT_STARTED || t === E.P.IN_PROGRESS) && !0 !== l.K.get(o.SV) ? (0, c.jsx)(I.Z, {}) : null]
                         })
@@ -402,84 +402,84 @@
             650204: function(e, a, t) {
                 "use strict";
                 t(610138), t(216116), t(78328), t(815648), t(47120), t(177593);
-                var c, d, n, i, f, o = t(735250);
+                var c, d, n, i, f, o, r, b = t(735250);
                 t(92138), t(470079);
-                var r = t(202226),
-                    b = t(512722),
-                    s = t.n(b),
-                    l = t(832037),
-                    u = t(464253),
-                    h = t(485359),
-                    p = t(395727),
-                    _ = t(471638),
-                    m = t(585275),
-                    E = t(960048),
-                    I = t(63063),
-                    O = t(240849),
-                    A = t(998502),
-                    g = t(513566),
-                    v = t(534713),
-                    T = t(358085),
-                    w = t(703656),
-                    Z = t(284737),
-                    N = t(473159),
-                    S = t(846519),
-                    P = t(579806),
-                    D = t(896361),
-                    C = t(892254);
+                var s = t(202226),
+                    l = t(512722),
+                    u = t.n(l),
+                    p = t(832037),
+                    h = t(464253),
+                    m = t(485359),
+                    _ = t(395727),
+                    E = t(471638),
+                    I = t(585275),
+                    O = t(960048),
+                    A = t(63063),
+                    g = t(240849),
+                    v = t(998502),
+                    T = t(513566),
+                    w = t(534713),
+                    Z = t(358085),
+                    N = t(703656),
+                    S = t(284737),
+                    P = t(473159),
+                    D = t(846519),
+                    C = t(579806),
+                    L = t(896361),
+                    U = t(892254);
                 t(296369);
-                var L = t(183626),
-                    U = t(44163),
-                    R = t(710845);
-                let M = 5 * t(70956).Z.Millis.MINUTE,
-                    y = document.getElementById("app-mount");
-                s()(null != y, "Could not find app-mount"), y.className = __OVERLAY__ ? "" : L.appMount;
-                let k = (0, r.createRoot)(y),
-                    x = {
-                        "/oauth2/authorize": v.Z
+                var R = t(183626),
+                    M = t(44163),
+                    y = t(710845);
+                let k = 5 * t(70956).Z.Millis.MINUTE,
+                    x = document.getElementById("app-mount");
+                u()(null != x, "Could not find app-mount"), x.className = __OVERLAY__ ? "" : R.appMount;
+                let j = (0, s.createRoot)(x),
+                    G = {
+                        "/oauth2/authorize": w.Z
                     },
-                    j = e => k.render((0, o.jsx)(C.Z, {
-                        children: (0, o.jsx)(D.Z, {
-                            children: (0, o.jsx)(e, {})
+                    V = e => j.render((0, b.jsx)(U.Z, {
+                        children: (0, b.jsx)(L.Z, {
+                            children: (0, b.jsx)(e, {})
                         })
                     }));
-                if (null != P.Z) {
-                    null === (c = P.Z.setUncaughtExceptionHandler) || void 0 === c || c.call(P.Z, (e, a) => {
+                if (null != C.Z) {
+                    null === (c = C.Z.setUncaughtExceptionHandler) || void 0 === c || c.call(C.Z, (e, a) => {
                         setImmediate(() => {
-                            throw E.Z.captureCrash(e), e
+                            throw O.Z.captureCrash(e), e
                         })
                     });
-                    let e = null === (d = (n = P.Z.remoteApp).getVersion) || void 0 === d ? void 0 : d.call(n),
-                        a = null === (i = (f = P.Z.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(f),
+                    let e = null === (d = (n = C.Z.remoteApp).getVersion) || void 0 === d ? void 0 : d.call(n),
+                        a = null === (i = (f = C.Z.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(f),
                         t = {};
-                    null != P.Z.remoteApp.getModuleVersions && (t = P.Z.remoteApp.getModuleVersions()), E.Z.setExtra({
+                    null != C.Z.remoteApp.getModuleVersions && (t = C.Z.remoteApp.getModuleVersions()), O.Z.setExtra({
                         hostVersion: e,
                         moduleVersions: t
-                    }), E.Z.setTags({
+                    }), O.Z.setTags({
                         nativeBuildNumber: null == a ? void 0 : a.toString()
                     });
-                    let o = Object.keys(t).filter(e => null != t[e]).map(e => "".concat(e, ": ").concat(t[e])).join(", ");
-                    new R.Z().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(o, ", build: ").concat(a)), A.ZP.initializeExitHook()
+                    let b = Object.keys(t).filter(e => null != t[e]).map(e => "".concat(e, ": ").concat(t[e])).join(", ");
+                    new y.Z().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(b, ", build: ").concat(a)), (null === (o = (r = C.Z.remoteApp).getReleaseChannel) || void 0 === o ? void 0 : o.call(r)) === "canary" && v.ZP.pauseFrameEvictor(), v.ZP.initializeExitHook()
                 }
-                if ((0, N.O)(window), __OVERLAY__) j(l.Z.Overlay);
-                else if (null != window.require && null == window.DiscordNative) j(l.Z.OutdatedClient);
+                if ((0, P.O)(window), __OVERLAY__) V(p.Z.Overlay);
+                else if (null != window.require && null == window.DiscordNative) V(p.Z.OutdatedClient);
                 else {
-                    if (document.addEventListener("scroll", e => e.preventDefault()), T.isPlatformEmbedded) {
-                        window.onbeforeunload = () => A.ZP.beforeUnload(), A.ZP.on("HELP_OPEN", () => window.open(I.Z.getCommunityURL()));
-                        let e = new S.sW(M, () => A.ZP.purgeMemory());
-                        A.ZP.on("MAIN_WINDOW_BLUR", () => {
-                            e.delay(), A.ZP.setFocused(!1), (0, Z.T_)(window, !1)
-                        }), A.ZP.on("MAIN_WINDOW_FOCUS", () => {
-                            e.cancel(), A.ZP.setFocused(!0), (0, Z.T_)(window, !0)
-                        }), A.ZP.on("MAIN_WINDOW_PATH", function(e, a, t) {
+                    if (document.addEventListener("scroll", e => e.preventDefault()), Z.isPlatformEmbedded) {
+                        window.onbeforeunload = () => v.ZP.beforeUnload(), v.ZP.on("HELP_OPEN", () => window.open(A.Z.getCommunityURL()));
+                        let e = new D.sW(k, () => v.ZP.purgeMemory());
+                        v.ZP.on("MAIN_WINDOW_BLUR", () => {
+                            e.delay(), v.ZP.setFocused(!1), (0, S.T_)(window, !1)
+                        }), v.ZP.on("MAIN_WINDOW_FOCUS", () => {
+                            e.cancel(), v.ZP.setFocused(!0), (0, S.T_)(window, !0)
+                        }), v.ZP.on("MAIN_WINDOW_PATH", function(e, a, t) {
                             var c;
                             let d = null != t ? new URLSearchParams(t) : null;
-                            if (null === (c = x[a]) || void 0 === c ? !void 0 : !c.call(x, d))(0, w.uL)(a)
-                        }), A.ZP.on("MAIN_WINDOW_HIDDEN", () => {
-                            (0, Z.al)(window)
+                            if (null === (c = G[a]) || void 0 === c ? !void 0 : !c.call(G, d))(0, N.uL)(a)
+                        }), v.ZP.on("MAIN_WINDOW_HIDDEN", () => {
+                            (0, S.al)(window)
                         })
                     }
-                    p.Z.initialize(), u.Z.init(), m.Z.init(), U.Z.init(), h.Z.initialize(), O.Z.initialize(), g.Z.initialize(), _.j(), j(l.Z.App)
+                    _.Z.initialize(), h.Z.init(), I.Z.init(), M.Z.init(), m.Z.initialize(), g.Z.initialize(), T.Z.initialize(), E.j(), V(p.Z.App)
                 }
             },
             832037: function(e, a, t) {
@@ -546,10 +546,10 @@
                     s = t(596454),
                     l = t(451478),
                     u = t(586576),
-                    h = t(176354),
-                    p = t(63063),
-                    _ = t(358085),
-                    m = t(792125),
+                    p = t(176354),
+                    h = t(63063),
+                    m = t(358085),
+                    _ = t(792125),
                     E = t(998502),
                     I = t(151851),
                     O = t(981631),
@@ -561,7 +561,7 @@
                     getPlatform() {
                         var e;
                         let a = null === (e = i().os) || void 0 === e ? void 0 : e.family;
-                        return null != a && /^win/i.test(a) ? _.PlatformTypes.WINDOWS : null != a && /darwin|os x/i.test(a) ? _.PlatformTypes.OSX : _.PlatformTypes.LINUX
+                        return null != a && /^win/i.test(a) ? m.PlatformTypes.WINDOWS : null != a && /darwin|os x/i.test(a) ? m.PlatformTypes.OSX : m.PlatformTypes.LINUX
                     }
                     componentDidMount() {
                         ! function() {
@@ -575,7 +575,7 @@
                         let e = (0, c.jsx)("div", {
                                 children: (0, c.jsxs)("p", {
                                     children: [A.Z.Messages.VERY_OUT_OF_DATE_DESCRIPTION, " ", (0, c.jsx)(s.Z, {
-                                        src: h.ZP.getURL(r.Z.convert.fromCodePoint("1f44c")),
+                                        src: p.ZP.getURL(r.Z.convert.fromCodePoint("1f44c")),
                                         emojiName: ":ok_hand:",
                                         animated: !1
                                     })]
@@ -589,7 +589,7 @@
                         return (0, c.jsxs)(d.Fragment, {
                             children: [(0, c.jsx)(f.ql, {
                                 children: (0, c.jsx)("html", {
-                                    className: (0, m.Q)(O.BRd.DARK)
+                                    className: (0, _.Q)(O.BRd.DARK)
                                 })
                             }), (0, c.jsx)(g, {
                                 type: this.getPlatform()
@@ -603,7 +603,7 @@
                     constructor(...e) {
                         var a, t, c;
                         super(...e), a = this, t = "handleDownload", c = () => {
-                            window.open(this.getPlatform() === _.PlatformTypes.WINDOWS ? p.Z.getArticleURL(O.BhN.CORRUPT_INSTALLATION) : O.EYA.DOWNLOAD)
+                            window.open(this.getPlatform() === m.PlatformTypes.WINDOWS ? h.Z.getArticleURL(O.BhN.CORRUPT_INSTALLATION) : O.EYA.DOWNLOAD)
                         }, t in a ? Object.defineProperty(a, t, {
                             value: c,
                             enumerable: !0,
@@ -754,10 +754,10 @@
                     s = t(376398),
                     l = t(846519),
                     u = t(570140),
-                    h = t(710845),
-                    p = t(314897),
-                    _ = t(358085),
-                    m = t(998502),
+                    p = t(710845),
+                    h = t(314897),
+                    m = t(358085),
+                    _ = t(998502),
                     E = t(569545),
                     I = t(70722),
                     O = t(981631),
@@ -787,7 +787,7 @@
                         let t = await
                         function(e, a) {
                             let t = 0;
-                            return (_.isPlatformEmbedded ? function(e, a) {
+                            return (m.isPlatformEmbedded ? function(e, a) {
                                 let t = (0, r.zS)(),
                                     d = (null == t ? void 0 : t.getNextVideoOutputFrame) != null;
                                 return new Promise((n, i) => {
@@ -852,9 +852,9 @@
                                 type: "STREAM_PREVIEW_FETCH_SUCCESS",
                                 streamKey: a,
                                 previewURL: d
-                            }), _.isPlatformEmbedded) {
-                            let e = p.default.getToken();
-                            n()(null != e, "Auth token was null while sending screenshot."), await m.ZP.makeChunkedRequest(O.ANM.STREAM_PREVIEW(a), {
+                            }), m.isPlatformEmbedded) {
+                            let e = h.default.getToken();
+                            n()(null != e, "Auth token was null while sending screenshot."), await _.ZP.makeChunkedRequest(O.ANM.STREAM_PREVIEW(a), {
                                 thumbnail: d
                             }, {
                                 method: "POST",
@@ -868,7 +868,7 @@
                             oldFormErrors: !0
                         })
                     } catch (a) {
-                        new h.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", a), c === e && v.start(6e4, t);
+                        new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", a), c === e && v.start(6e4, t);
                         return
                     }
                     c === e && (T ? v.start(6e4, t) : v.start(3e5, t))
@@ -883,7 +883,7 @@
                                 streamId: n,
                                 context: i
                             } = e;
-                            !(null == n || i !== A.Yn.STREAM || d !== p.default.getId() || __OVERLAY__) && (N(), c = n, S(n, a, t, d))
+                            !(null == n || i !== A.Yn.STREAM || d !== h.default.getId() || __OVERLAY__) && (N(), c = n, S(n, a, t, d))
                         }), u.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
                             let {
                                 videoState: a
@@ -907,9 +907,9 @@
                     s = t(569545),
                     l = t(803647),
                     u = t(981631),
-                    h = t(65154);
+                    p = t(65154);
 
-                function p(e, a, t) {
+                function h(e, a, t) {
                     return a in e ? Object.defineProperty(e, a, {
                         value: t,
                         enumerable: !0,
@@ -917,7 +917,7 @@
                         writable: !0
                     }) : e[a] = t, e
                 }
-                class _ {
+                class m {
                     _onGameDetectionUpdate(e) {
                         if (this.applications = e.map(e => {
                                 var a, t;
@@ -985,7 +985,7 @@
                                             resolution: t.resolution,
                                             frameRate: t.fps
                                         },
-                                        context: h.Yn.STREAM
+                                        context: p.Yn.STREAM
                                     })
                                 } else {
                                     var c;
@@ -999,7 +999,7 @@
                                             resolution: t.resolution,
                                             frameRate: t.fps
                                         },
-                                        context: h.Yn.STREAM
+                                        context: p.Yn.STREAM
                                     })
                                 }
                                 break;
@@ -1031,7 +1031,7 @@
                         }
                     }
                     constructor() {
-                        p(this, "director", void 0), p(this, "applications", void 0), p(this, "streamKey", void 0), p(this, "mode", void 0), this.mode = null, this.applications = [], this.director = new f.a(e => this._onDirectorAction(e)), c.Z.subscribe("STREAM_START", e => {
+                        h(this, "director", void 0), h(this, "applications", void 0), h(this, "streamKey", void 0), h(this, "mode", void 0), this.mode = null, this.applications = [], this.director = new f.a(e => this._onDirectorAction(e)), c.Z.subscribe("STREAM_START", e => {
                             let {
                                 streamType: a,
                                 guildId: t,
@@ -1067,19 +1067,19 @@
                                 videoState: a,
                                 context: t
                             } = e;
-                            t === h.Yn.STREAM && this._onCapturePaused(a === u.FQ1.PAUSED)
+                            t === p.Yn.STREAM && this._onCapturePaused(a === u.FQ1.PAUSED)
                         }), c.Z.subscribe("MEDIA_ENGINE_SET_GO_LIVE_SOURCE", e => {
                             let {
                                 settings: a
                             } = e;
-                            (null == a ? void 0 : a.context) === h.Yn.STREAM && (null == a ? void 0 : a.desktopSettings) == null && (null == a ? void 0 : a.cameraSettings) == null && this._onCaptureEnded()
+                            (null == a ? void 0 : a.context) === p.Yn.STREAM && (null == a ? void 0 : a.desktopSettings) == null && (null == a ? void 0 : a.cameraSettings) == null && this._onCaptureEnded()
                         })
                     }
                 }
                 a.Z = {
                     instance: null,
                     init() {
-                        null == this.instance && (this.instance = new _)
+                        null == this.instance && (this.instance = new m)
                     }
                 }
             },
@@ -1355,10 +1355,10 @@
                     s = t(829750),
                     l = t(189771),
                     u = t(67844),
-                    h = t(173507),
-                    p = t(592125),
-                    _ = t(131951),
-                    m = t(944486),
+                    p = t(173507),
+                    h = t(592125),
+                    m = t(131951),
+                    _ = t(944486),
                     E = t(358085),
                     I = t(998502),
                     O = t(981631),
@@ -1385,7 +1385,7 @@
                     constructor(...e) {
                         super(...e), g(this, "callbackActions", {
                             [I.tS.VIDEO]: () => {
-                                _.Z.isVideoEnabled() ? o.Z.setVideoEnabled(!1) : (0, h.Z)(() => o.Z.setVideoEnabled(!0), O.IlC.APP)
+                                m.Z.isVideoEnabled() ? o.Z.setVideoEnabled(!1) : (0, p.Z)(() => o.Z.setVideoEnabled(!0), O.IlC.APP)
                             },
                             [I.tS.MUTE]: () => o.Z.toggleSelfMute(),
                             [I.tS.DEAFEN]: () => o.Z.toggleSelfDeaf(),
@@ -1397,16 +1397,16 @@
                             }
                             this.callbackActions[e.buttonName]()
                         }), g(this, "handleViewUpdate", i().debounce(() => {
-                            let e = m.Z.getVoiceChannelId();
+                            let e = _.Z.getVoiceChannelId();
                             if (null == e) {
                                 this.setThumbarButtons([]);
                                 return
                             }
-                            let a = _.Z.isSelfMute(),
-                                t = _.Z.isSelfDeaf(),
-                                c = _.Z.isVideoEnabled(),
-                                d = _.Z.isVideoAvailable(),
-                                n = p.Z.getChannel(e),
+                            let a = m.Z.isSelfMute(),
+                                t = m.Z.isSelfDeaf(),
+                                c = m.Z.isVideoEnabled(),
+                                d = m.Z.isVideoAvailable(),
+                                n = h.Z.getChannel(e),
                                 i = null == n || (0, l.y)(n),
                                 {
                                     reachedLimit: f,
@@ -1966,7 +1966,7 @@
             19589: "a5a24a75f76ea6466eef",
             19701: "cd06e23ce47e04db7df4",
             19726: "252336af825c6981ff0b",
-            19820: "59072ccf358362e7ac8f",
+            19820: "1f31f6710230241fd3f2",
             19878: "98bdee4b96183ac3211b",
             19945: "276f454eab5807bcd056",
             20196: "ce4228a4321332af03d5",
@@ -2069,7 +2069,7 @@
             31085: "76408177384772aeb890",
             31093: "35ed0dc9a7218d76e742",
             31177: "f35d851e685c0e2c6de4",
-            31649: "1a921b536899b3769edb",
+            31649: "914c8f7e51fbe39d947c",
             31835: "27cd0353da00895fe6b4",
             3190: "a026667e17656e7faa1f",
             32006: "8f3c2586826c9030f62b",
@@ -2620,7 +2620,7 @@
             94064: "e61b5af42556ddd35c8f",
             94364: "6512ee43b08cc1f7dccb",
             94566: "5b66f64055b9769287f1",
-            94864: "b9ddbf83d91a7fe47498",
+            94864: "7a7d92ba7843e03d861a",
             94889: "3bcce8ed555cc6e2235c",
             94912: "5074e5e820f01d55d196",
             95093: "19c19e47050cb9e1c1af",
@@ -2799,16 +2799,16 @@
                     }
                     if (!n) return f
                 }!f && (o = !0, (f = document.createElement("link")).setAttribute("data-webpack", a + ":" + r), f.setAttribute(c, 1), f.rel = "stylesheet", f.href = d);
-                var h = function(e, a) {
-                    if (f.onerror = f.onload = null, f.removeAttribute(c), clearTimeout(p), a && "load" != a.type && f.parentNode.removeChild(f), n(a), e) return e(a)
+                var p = function(e, a) {
+                    if (f.onerror = f.onload = null, f.removeAttribute(c), clearTimeout(h), a && "load" != a.type && f.parentNode.removeChild(f), n(a), e) return e(a)
                 };
                 if (f.getAttribute(c)) {
-                    var p = setTimeout(h.bind(null, void 0, {
+                    var h = setTimeout(p.bind(null, void 0, {
                         type: "timeout",
                         target: f
                     }), 12e4);
-                    f.onerror = h.bind(null, f.onerror), f.onload = h.bind(null, f.onload)
-                } else h(void 0, {
+                    f.onerror = p.bind(null, f.onerror), f.onload = p.bind(null, f.onload)
+                } else p(void 0, {
                     type: "load",
                     target: f
                 });
@@ -2894,4 +2894,4 @@
     });
     c = t.O(c)
 })();
-//# sourceMappingURL=web.91f2aac76c6ce5de31f6.js.map
+//# sourceMappingURL=web.d582a55c971942f70be8.js.map
