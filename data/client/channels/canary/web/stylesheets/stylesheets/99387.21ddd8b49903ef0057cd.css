@@ -39550,14 +39550,16 @@ span.clanTag_a31c43 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
-    overflow: hidden
+    overflow: hidden;
+    word-break: break-word
 }
 
 .multiLineTitle_cfbfb9 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    overflow: hidden
+    overflow: hidden;
+    word-break: break-word
 }
 
 .hangoutStatusTitleContainer_cfbfb9 {
@@ -145923,4 +145925,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.dc3c64b40055b9179b2a.css.map*/
+/*# sourceMappingURL=99387.21ddd8b49903ef0057cd.css.map*/
