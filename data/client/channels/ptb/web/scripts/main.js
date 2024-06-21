@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303955", ", Version Hash: ").concat("e3b159cc980986ff29fc7e1025ab12946b768691")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("303960", ", Version Hash: ").concat("14cf4fdea1b4fb2c0f585da49553e15d8df316d4")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -51642,10 +51642,12 @@
                 GO_LIVE_MODAL_NOTIFY_FRIENDS_CHECKBOX_LABEL: "Notify my friends in this server that I'm streaming.",
                 GO_LIVE_MODAL_ENABLE_SCREEN_SOUNDSHARE_LABEL: "Also share system audio.",
                 GO_LIVE_MODAL_ENABLE_APP_SOUNDSHARE_LABEL: "Also share application audio.",
-                GO_LIVE_MODAL_PERK_DEMO_HD_STREAMING_INITIAL_UPSELL: "Get a taste of Nitro. Try out HD streaming, our treat!",
                 GO_LIVE_MODAL_PERK_DEMO_HD_STREAMING_UPSELL_TOOLTIP: "You are currently streaming in high resolution",
                 GO_LIVE_MODAL_PERK_DEMO_HD_STREAMING_ENDED_UPSELL_TITLE: "Lock in endless HD streaming",
                 GO_LIVE_MODAL_PERK_DEMO_HD_STREAMING_ENDED_UPSELL_BODY: "You don't have to say goodbye to HD streams forever. Access high quality streaming and other premium perks with Nitro.",
+                GO_LIVE_MODAL_PERK_DEMO_HD_STREAMING_OPT_IN_POPOUT_BODY: "Enjoy streaming in HD resolution. This time, it's on us!",
+                GO_LIVE_MODAL_PERK_DEMO_HD_STREAMING_OPT_IN_POPOUT_CTA: "Try HD Streaming",
+                GO_LIVE_MODAL_PERK_DEMO_HD_STREAMING_OPT_IN_UPSELL_BODY: "You are experiencing a free demo of HD resolution.",
                 VOICE_CHANNEL_EFFECTS: "Voice Channel Effects",
                 VOICE_CHANNEL_EFFECTS_COOLDOWN: "Reaction Cooldown {seconds}s",
                 VOICE_CHANNEL_EFFECTS_MORE: "More Reactions",
@@ -96345,8 +96347,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "303955", "303955"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303955")), t = 0), t
+                let t = parseInt((e = "303960", "303960"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("303960")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124558,8 +124560,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "303955",
-                    versionHash: "e3b159cc980986ff29fc7e1025ab12946b768691"
+                    buildNumber: "303960",
+                    versionHash: "14cf4fdea1b4fb2c0f585da49553e15d8df316d4"
                 }
             }
             n.d(t, {
@@ -184577,8 +184579,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1718993720256",
-                                    build_number: "303955"
+                                    built_at: "1718994704129",
+                                    build_number: "303960"
                                 }
                             },
                             retries: 1
@@ -263040,7 +263042,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e3b159cc980986ff29fc7e1025ab12946b768691"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "14cf4fdea1b4fb2c0f585da49553e15d8df316d4"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280859,7 +280861,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "303955"
+                                build_number: "303960"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288172,7 +288174,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "303955", "303955"), 10);
+                let s = parseInt((n = "303960", "303960"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -329687,4 +329689,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.c67d99456d69e5b48829.js.map
+//# sourceMappingURL=79892.d451b12cf90500b3f2a9.js.map
