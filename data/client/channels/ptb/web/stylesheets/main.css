@@ -25745,11 +25745,20 @@ div.profileThemedContainer_d2194f {
     padding: 8px 12px
 }
 
+.overlay2_a465ac {
+    margin: 12px 16px;
+    padding: 8px 18px
+}
+
 .contentGroup_a465ac {
     display: flex;
     flex-direction: row;
     gap: 8px;
     align-items: center
+}
+
+.contentText_a465ac {
+    flex: 1
 }
 
 .buttonGroup_a465ac {
@@ -48054,8 +48063,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -59132,13 +59141,14 @@ div:has(>div>.modal_a78559) {
     gap: 16px;
     display: flex;
     flex-direction: column;
-    z-index: 3
+    z-index: 1
 }
 
 .menus_d4e7c2 {
     display: flex;
     flex-direction: column;
-    gap: 12px
+    gap: 12px;
+    z-index: 3
 }
 
 .menu_d4e7c2 {
@@ -143092,4 +143102,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1af509208d0cae1eedd6.css.map*/
+/*# sourceMappingURL=99387.ae71f2214ce7b0fcdb02.css.map*/
