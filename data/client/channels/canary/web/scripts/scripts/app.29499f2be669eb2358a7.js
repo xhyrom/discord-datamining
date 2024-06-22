@@ -15195,7 +15195,7 @@
                 nitroBadgeSvg: "nitroBadgeSvg_b558d0",
                 ctaButtonContainer: "ctaButtonContainer_b558d0",
                 embedContainer: "embedContainer_b558d0",
-                richEmbedWrapper: "richEmbedWrapper_b558d0"
+                embedFlexGrow: "embedFlexGrow_b558d0"
             }
         },
         846615: function(e, t, n) {
