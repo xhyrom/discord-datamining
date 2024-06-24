@@ -135,12 +135,12 @@
                         webpackId: 431583,
                         name: "DownloadApps"
                     }),
-                    L = (0, m.Un)({
+                    R = (0, m.Un)({
                         createPromise: () => a.e("81975").then(a.bind(a, 484097)),
                         webpackId: 484097,
                         name: "InviteProxy"
                     }),
-                    R = (0, m.Un)({
+                    L = (0, m.Un)({
                         createPromise: () => Promise.all([a.e("99387"), a.e("20786")]).then(a.bind(a, 417663)),
                         webpackId: 417663,
                         name: "VerifyConnectedAccount"
@@ -213,10 +213,10 @@
                         name: "ApplicationDirectoryRoutes"
                     }),
                     z = () => (0, n.jsx)(x, {}),
-                    Y = new Set([S.Z5c.LOGIN, S.Z5c.LOGIN_HANDOFF, S.Z5c.INVITE_LOGIN(":inviteCode"), S.Z5c.GIFT_CODE_LOGIN(":giftCode"), S.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")]);
+                    X = new Set([S.Z5c.LOGIN, S.Z5c.LOGIN_HANDOFF, S.Z5c.INVITE_LOGIN(":inviteCode"), S.Z5c.GIFT_CODE_LOGIN(":giftCode"), S.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")]);
 
-                function X(e, t) {
-                    return t ? e.filter(e => !Y.has(e)) : e
+                function Y(e, t) {
+                    return t ? e.filter(e => !X.has(e)) : e
                 }
                 class q extends c.Component {
                     componentDidMount() {
@@ -242,11 +242,11 @@
                                 path: S.Z5c.APPS,
                                 component: D
                             }), (0, n.jsx)(i.AW, {
-                                path: X([S.Z5c.LOGIN, S.Z5c.REGISTER, S.Z5c.INVITE(":inviteCode"), S.Z5c.INVITE_LOGIN(":inviteCode"), S.Z5c.GIFT_CODE(":giftCode"), S.Z5c.GIFT_CODE_LOGIN(":giftCode"), S.Z5c.RESET], N.a),
+                                path: Y([S.Z5c.LOGIN, S.Z5c.REGISTER, S.Z5c.INVITE(":inviteCode"), S.Z5c.INVITE_LOGIN(":inviteCode"), S.Z5c.GIFT_CODE(":giftCode"), S.Z5c.GIFT_CODE_LOGIN(":giftCode"), S.Z5c.RESET], N.a),
                                 component: k
                             }), (0, n.jsx)(p.Z, {
                                 path: S.Z5c.INVITE_PROXY(":channelId"),
-                                component: L
+                                component: R
                             }), (0, n.jsx)(i.l_, {
                                 from: S.Z5c.INVITE(""),
                                 to: S.Z5c.LOGIN
@@ -262,7 +262,7 @@
                                 path: S.Z5c.INDEX,
                                 render: () => (0, n.jsx)(u.Z, {})
                             }), (0, n.jsx)(i.AW, {
-                                path: X([S.Z5c.LOGIN, S.Z5c.LOGIN_HANDOFF, S.Z5c.REGISTER, S.Z5c.BILLING_PREFIX, S.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), S.Z5c.INVITE(":inviteCode"), S.Z5c.INVITE_LOGIN(":inviteCode"), S.Z5c.GIFT_CODE(":giftCode"), S.Z5c.GIFT_CODE_LOGIN(":giftCode"), S.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), S.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), S.Z5c.DISABLE_EMAIL_NOTIFICATIONS, S.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, S.Z5c.RESET, S.Z5c.REPORT, S.Z5c.REPORT_SECOND_LOOK], N.a),
+                                path: Y([S.Z5c.LOGIN, S.Z5c.LOGIN_HANDOFF, S.Z5c.REGISTER, S.Z5c.BILLING_PREFIX, S.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), S.Z5c.INVITE(":inviteCode"), S.Z5c.INVITE_LOGIN(":inviteCode"), S.Z5c.GIFT_CODE(":giftCode"), S.Z5c.GIFT_CODE_LOGIN(":giftCode"), S.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), S.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), S.Z5c.DISABLE_EMAIL_NOTIFICATIONS, S.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, S.Z5c.RESET, S.Z5c.REPORT, S.Z5c.REPORT_SECOND_LOOK], N.a),
                                 component: k
                             }), t ? null : (0, n.jsx)(i.AW, {
                                 path: S.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
@@ -275,7 +275,7 @@
                                 to: S.Z5c.LOGIN
                             }), (0, n.jsx)(p.Z, {
                                 path: S.Z5c.INVITE_PROXY(":channelId"),
-                                component: L
+                                component: R
                             }), (0, n.jsx)(i.l_, {
                                 from: S.Z5c.GIFT_CODE(""),
                                 to: S.Z5c.LOGIN
@@ -311,7 +311,7 @@
                                 component: B
                             }), (0, n.jsx)(p.Z, {
                                 path: S.Z5c.CONNECTIONS(":type"),
-                                component: R
+                                component: L
                             }), (0, n.jsx)(p.Z, {
                                 path: S.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
                                 render: () => {
@@ -408,79 +408,78 @@
                     b = a(512722),
                     u = a.n(b),
                     h = a(832037),
-                    p = a(752137),
-                    m = a(464253),
-                    _ = a(485359),
-                    E = a(395727),
-                    g = a(471638),
-                    I = a(585275),
-                    v = a(960048),
-                    O = a(63063),
-                    A = a(240849),
-                    w = a(998502),
-                    T = a(513566),
-                    Z = a(534713),
-                    S = a(358085),
-                    N = a(703656),
-                    P = a(284737),
-                    C = a(473159),
-                    D = a(846519),
-                    L = a(579806),
+                    p = a(464253),
+                    m = a(485359),
+                    _ = a(395727),
+                    E = a(471638),
+                    g = a(585275),
+                    I = a(960048),
+                    v = a(63063),
+                    O = a(240849),
+                    A = a(998502),
+                    w = a(513566),
+                    T = a(534713),
+                    Z = a(358085),
+                    S = a(703656),
+                    N = a(284737),
+                    P = a(473159),
+                    C = a(846519),
+                    D = a(579806),
                     R = a(896361),
-                    M = a(892254);
+                    L = a(892254);
                 a(296369);
-                var U = a(183626),
-                    y = a(44163),
-                    x = a(710845);
-                let k = 5 * a(70956).Z.Millis.MINUTE,
-                    j = document.getElementById("app-mount");
-                u()(null != j, "Could not find app-mount"), j.className = __OVERLAY__ ? "" : U.appMount;
-                let G = (0, l.createRoot)(j),
-                    V = {
-                        "/oauth2/authorize": Z.Z
+                var M = a(183626),
+                    U = a(44163),
+                    y = a(710845);
+                let x = 5 * a(70956).Z.Millis.MINUTE,
+                    k = document.getElementById("app-mount");
+                u()(null != k, "Could not find app-mount"), k.className = __OVERLAY__ ? "" : M.appMount;
+                let j = (0, l.createRoot)(k),
+                    G = {
+                        "/oauth2/authorize": T.Z
                     },
-                    F = e => G.render((0, s.jsx)(M.Z, {
+                    V = e => j.render((0, s.jsx)(L.Z, {
                         children: (0, s.jsx)(R.Z, {
                             children: (0, s.jsx)(e, {})
                         })
                     }));
-                if (null != L.Z) {
-                    null === (n = L.Z.setUncaughtExceptionHandler) || void 0 === n || n.call(L.Z, (e, t) => {
+                if (null != D.Z) {
+                    null === (n = D.Z.setUncaughtExceptionHandler) || void 0 === n || n.call(D.Z, (e, t) => {
                         setImmediate(() => {
-                            throw v.Z.captureCrash(e), e
+                            throw I.Z.captureCrash(e), e
                         })
                     });
-                    let e = null === (c = (d = L.Z.remoteApp).getVersion) || void 0 === c ? void 0 : c.call(d),
-                        t = null === (i = (r = L.Z.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(r),
+                    let e = null === (c = (d = D.Z.remoteApp).getVersion) || void 0 === c ? void 0 : c.call(d),
+                        t = null === (i = (r = D.Z.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(r),
                         a = {};
-                    null != L.Z.remoteApp.getModuleVersions && (a = L.Z.remoteApp.getModuleVersions()), v.Z.setExtra({
+                    null != D.Z.remoteApp.getModuleVersions && (a = D.Z.remoteApp.getModuleVersions()), I.Z.setExtra({
                         hostVersion: e,
                         moduleVersions: a
-                    }), v.Z.setTags({
+                    }), I.Z.setTags({
                         nativeBuildNumber: null == t ? void 0 : t.toString()
                     });
                     let s = Object.keys(a).filter(e => null != a[e]).map(e => "".concat(e, ": ").concat(a[e])).join(", ");
-                    new x.Z().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(s, ", build: ").concat(t)), (null === (o = (f = L.Z.remoteApp).getReleaseChannel) || void 0 === o ? void 0 : o.call(f)) === "canary" && w.ZP.pauseFrameEvictor(), w.ZP.initializeExitHook()
+                    new y.Z().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(s, ", build: ").concat(t)), (null === (o = (f = D.Z.remoteApp).getReleaseChannel) || void 0 === o ? void 0 : o.call(f)) === "canary" && A.ZP.pauseFrameEvictor(), A.ZP.initializeExitHook()
                 }
-                if ((0, C.O)(window), __OVERLAY__) F(h.Z.Overlay);
-                else if (null != window.require && null == window.DiscordNative) F(h.Z.OutdatedClient);
+                if ((0, P.O)(window), __OVERLAY__) V(h.Z.Overlay);
+                else if (null != window.require && null == window.DiscordNative) V(h.Z.OutdatedClient);
                 else {
-                    if (document.addEventListener("scroll", e => e.preventDefault()), S.isPlatformEmbedded) {
-                        window.onbeforeunload = () => w.ZP.beforeUnload(), w.ZP.on("HELP_OPEN", () => window.open(O.Z.getCommunityURL()));
-                        let e = new D.sW(k, () => w.ZP.purgeMemory());
-                        w.ZP.on("MAIN_WINDOW_BLUR", () => {
-                            e.delay(), w.ZP.setFocused(!1), (0, P.T_)(window, !1)
-                        }), w.ZP.on("MAIN_WINDOW_FOCUS", () => {
-                            e.cancel(), w.ZP.setFocused(!0), (0, P.T_)(window, !0)
-                        }), w.ZP.on("MAIN_WINDOW_PATH", function(e, t, a) {
+                    if (document.addEventListener("scroll", e => e.preventDefault()), Z.isPlatformEmbedded) {
+                        window.onbeforeunload = () => A.ZP.beforeUnload(), A.ZP.on("HELP_OPEN", () => window.open(v.Z.getCommunityURL()));
+                        let e = new C.sW(x, () => A.ZP.purgeMemory());
+                        A.ZP.on("MAIN_WINDOW_BLUR", () => {
+                            e.delay(), A.ZP.setFocused(!1), (0, N.T_)(window, !1)
+                        }), A.ZP.on("MAIN_WINDOW_FOCUS", () => {
+                            e.cancel(), A.ZP.setFocused(!0), (0, N.T_)(window, !0)
+                        }), A.ZP.on("MAIN_WINDOW_PATH", function(e, t, a) {
                             var n;
                             let c = null != a ? new URLSearchParams(a) : null;
-                            if (null === (n = V[t]) || void 0 === n ? !void 0 : !n.call(V, c))(0, N.uL)(t)
-                        }), w.ZP.on("MAIN_WINDOW_HIDDEN", () => {
-                            (0, P.al)(window)
+                            if (null === (n = G[t]) || void 0 === n ? !void 0 : !n.call(G, c))(0, S.uL)(t)
+                        }), A.ZP.on("MAIN_WINDOW_HIDDEN", () => {
+                            (0, N.al)(window)
                         })
                     }
-                    E.Z.initialize(), p.Z.initialize(), m.Z.init(), I.Z.init(), y.Z.init(), _.Z.initialize(), A.Z.initialize(), T.Z.initialize(), g.j(), F(h.Z.App)
+                    _.Z.initialize(), p.Z.init(), g.Z.init(), U.Z.init(), m.Z.initialize(), O.Z.initialize(), w.Z.initialize(), E.j(), V(h.Z.App)
                 }
             },
             832037: function(e, t, a) {
@@ -499,31 +498,6 @@
                     }),
                     OutdatedClient: d.Z
                 }
-            },
-            752137: function(e, t, a) {
-                "use strict";
-                var n = a(317770),
-                    c = a(626135),
-                    d = a(358085),
-                    i = a(998502),
-                    r = a(981631);
-                class o extends n.Z {
-                    _initialize() {
-                        if (!!d.isPlatformEmbedded) i.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
-                            this._handleEventResponse(t)
-                        }), this.processModuleEvents()
-                    }
-                    _terminate() {}
-                    processModuleEvents() {
-                        i.ZP.send("APP_GET_ANALYTICS_EVENTS")
-                    }
-                    _handleEventResponse(e) {
-                        if (null != e) e.forEach(e => {
-                            "cdm" === e.type ? (e.name === r.rMx.CDM_LOAD_STATUS || e.name === r.rMx.CDM_READY_COMPLETE) && c.default.track(e.name, e.data) : console.log("[analytics] received unknown analytic type event ".concat(e.type))
-                        })
-                    }
-                }
-                t.Z = new o
             },
             44163: function(e, t, a) {
                 "use strict";
@@ -2455,7 +2429,7 @@
             31093: "35ed0dc9a7218d76e742",
             31177: "f35d851e685c0e2c6de4",
             31426: "4df0ac8b3f684d6995af",
-            31649: "eacacdcabfb582169be6",
+            31649: "578e4d8038b29bce938d",
             31835: "27cd0353da00895fe6b4",
             3190: "a026667e17656e7faa1f",
             32006: "8f3c2586826c9030f62b",
@@ -2680,7 +2654,7 @@
             561: "54b68fffb15c9a1c30fd",
             56236: "b4f92e54c3feadf9ff17",
             56268: "9088d541fe8d76e2769e",
-            56399: "fe6f78a39350523841e6",
+            56399: "28f033e4b0db73f57936",
             56446: "5e3a36cf5b73d2854ec8",
             56496: "30ec5cea5128c59f0c16",
             56826: "2bd909350981f83549b2",
@@ -2693,7 +2667,7 @@
             57650: "979f963465eee2ff26d4",
             57742: "fb052e052a7d65b282b9",
             57961: "aac77d3077af88b623b4",
-            58023: "b5f5dcc8feb33a49152c",
+            58023: "de2deaf3633543df7e91",
             5815: "c7ef62bb6ee6e0576a75",
             58175: "f761a173e880e5f98d97",
             58227: "16f8aa997db622893593",
@@ -3011,7 +2985,7 @@
             94064: "e61b5af42556ddd35c8f",
             94364: "6512ee43b08cc1f7dccb",
             94566: "5b66f64055b9769287f1",
-            94864: "bcec3dfdc2074717e042",
+            94864: "362e2c7e077d596277b7",
             94889: "3bcce8ed555cc6e2235c",
             94912: "5074e5e820f01d55d196",
             95093: "19c19e47050cb9e1c1af",
@@ -3282,4 +3256,4 @@
     });
     n = a.O(n)
 })();
-//# sourceMappingURL=web.b8628f2c4f90de7a27f7.js.map
+//# sourceMappingURL=web.aaca5e020ff4d84dba2a.js.map

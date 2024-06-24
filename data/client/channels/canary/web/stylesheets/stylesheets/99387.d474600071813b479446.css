@@ -45855,6 +45855,29 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     flex-direction: column
 }
 
+.popover_a64b81 {
+    position: absolute;
+    z-index: 1;
+    height: 32px;
+    gap: 2px;
+    border-radius: 100px;
+    opacity: 0
+}
+
+.popover_a64b81.visible_a64b81,
+.popover_a64b81:focus-within {
+    opacity: 1
+}
+
+.button_a64b81 {
+    min-width: 22px
+}
+
+.icon_a64b81 {
+    height: 20px;
+    width: 20px
+}
+
 .custom-profile-theme .statusBubble_d0a252,
 .custom-profile-theme .statusBubbleOuter_d0a252,
 .custom-profile-theme .statusBubbleOuter_d0a252:before,
@@ -45908,6 +45931,11 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .visibleContainer_d0a252.panel_d0a252 {
     top: calc(6px + var(--custom-user-banner-banner-height-panel));
     left: 106px
+}
+
+.reactReplyBar_d0a252 {
+    right: 8px;
+    top: -16px
 }
 
 .custom-profile-theme .invisibleContainer_d0a252.biteSize_d0a252 {
@@ -48150,8 +48178,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143106,4 +143134,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.359be5eaf2127837aeab.css.map*/
+/*# sourceMappingURL=99387.d474600071813b479446.css.map*/
