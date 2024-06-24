@@ -14012,7 +14012,6 @@ html .progress_e5f4c6 {
     min-height: var(--custom-o-auth-2-page-oauth-2-min-height);
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
     border-radius: 5px;
     box-shadow: var(--elevation-high);
@@ -14022,6 +14021,11 @@ html .progress_e5f4c6 {
 
 .wave_c2b22e {
     background-color: var(--background-tertiary)
+}
+
+.footer_c2b22e {
+    padding: 0;
+    width: 100%
 }
 
 .wrapper_e1a4cf {
@@ -14094,10 +14098,10 @@ html .progress_e5f4c6 {
 
 .footer_c5a065 {
     padding: 16px;
-    border-radius: 0 0 4px 4px;
     background: var(--modal-footer-background);
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    width: 100%
 }
 
 .footer_c5a065 button {
@@ -48178,8 +48182,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143134,4 +143138,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d474600071813b479446.css.map*/
+/*# sourceMappingURL=99387.9d0d5c70019e834ebe61.css.map*/
