@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304409", ", Version Hash: ").concat("f7425a62ae51d776a8db6f6852f37cb7377cd114")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304417", ", Version Hash: ").concat("9bdc15261d03ed8f138cfbc77f0d2d58b9ed1ba4")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -91933,7 +91933,7 @@
                         user: t,
                         avatarDecorationOverride: n,
                         size: 80,
-                        animateOnHover: !C
+                        onlyAnimateOnHover: !C
                     });
                     return (0, i.jsxs)(m, {
                         className: p ? N.decorationGridItemChurned : void 0,
@@ -92122,43 +92122,44 @@
             n(47120);
             var i = n(470079),
                 r = n(442837),
-                s = n(607070),
+                s = n(812457),
                 o = n(166625),
                 a = n(271383),
                 l = n(594174),
-                u = n(451478),
-                _ = n(768581),
-                c = n(660097);
+                u = n(768581),
+                _ = n(660097);
             t.Z = e => {
                 var t;
                 let {
                     user: n,
-                    guildId: d,
-                    size: E,
-                    animateOnHover: I = !1,
-                    showPending: T = !1,
-                    showTryItOut: h = !1,
-                    avatarDecorationOverride: S
-                } = e, [f, N] = i.useState(!1), A = (0, r.e7)([s.Z], () => s.Z.useReducedMotion), m = (0, r.e7)([u.Z], () => u.Z.isFocused()), O = (0, r.e7)([a.ZP], () => null != d && null != n ? a.ZP.getMember(d, n.id) : null), [R, p] = (0, r.Wu)([l.default], () => {
+                    guildId: c,
+                    size: d,
+                    onlyAnimateOnHover: E = !1,
+                    showPending: I = !1,
+                    showTryItOut: T = !1,
+                    avatarDecorationOverride: h
+                } = e, [S, f] = i.useState(!1), {
+                    canAnimate: N
+                } = (0, s.j)(S, E), A = (0, r.e7)([a.ZP], () => null != c && null != n ? a.ZP.getMember(c, n.id) : null), [m, O] = (0, r.Wu)([l.default], () => {
                     var e;
                     return [null === (e = l.default.getCurrentUser()) || void 0 === e ? void 0 : e.id, l.default.getUser(null == n ? void 0 : n.id)]
-                }), g = null == O ? null == p ? void 0 : p.avatarDecoration : null === O.avatarDecoration ? null : null !== (t = O.avatarDecoration) && void 0 !== t ? t : null == p ? void 0 : p.avatarDecoration, {
-                    pendingAvatarDecoration: C
+                }), R = null == A ? null == O ? void 0 : O.avatarDecoration : null === A.avatarDecoration ? null : null !== (t = A.avatarDecoration) && void 0 !== t ? t : null == O ? void 0 : O.avatarDecoration, {
+                    pendingAvatarDecoration: p
                 } = (0, o.Z)({
-                    isTryItOut: h,
-                    guildId: d
-                }), v = m && (f || !A && !I), L = T && void 0 !== C && void 0 !== R && R === (null == n ? void 0 : n.id), D = null != d && null === C, M = L ? D ? null == n ? void 0 : n.avatarDecoration : null != C ? C : g : null != g ? g : null == n ? void 0 : n.avatarDecoration, P = i.useMemo(() => (0, _.NZ)({
-                    avatarDecoration: void 0 !== S ? S : M,
-                    canAnimate: v,
-                    size: E
-                }), [M, v, E, S]), y = i.useCallback(() => N(!0), []);
+                    isTryItOut: T,
+                    guildId: c
+                }), g = I && void 0 !== p && void 0 !== m && m === (null == n ? void 0 : n.id), C = null != c && null === p, v = g ? C ? null == n ? void 0 : n.avatarDecoration : null != p ? p : R : null != R ? R : null == n ? void 0 : n.avatarDecoration, L = i.useMemo(() => (0, u.NZ)({
+                    avatarDecoration: void 0 !== h ? h : v,
+                    canAnimate: N,
+                    size: d
+                }), [v, N, d, h]), D = i.useCallback(() => f(!0), []);
                 return {
-                    avatarPlaceholderSrc: c,
-                    avatarDecorationSrc: P,
-                    isAvatarDecorationAnimating: v,
+                    avatarPlaceholderSrc: _,
+                    avatarDecorationSrc: L,
+                    isAvatarDecorationAnimating: N,
                     eventHandlers: {
-                        onMouseEnter: y,
-                        onMouseLeave: i.useCallback(() => N(!1), [])
+                        onMouseEnter: D,
+                        onMouseLeave: i.useCallback(() => f(!1), [])
                     }
                 }
             }
@@ -96604,8 +96605,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304409", "304409"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304409")), t = 0), t
+                let t = parseInt((e = "304417", "304417"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304417")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -120715,6 +120716,34 @@
                 })
             }
         },
+        812457: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                j: function() {
+                    return a
+                }
+            }), n(47120);
+            var i = n(470079),
+                r = n(442837),
+                s = n(607070),
+                o = n(451478);
+            let a = (e, t) => {
+                let n = (0, r.e7)([s.Z], () => s.Z.useReducedMotion),
+                    a = (0, r.e7)([o.Z], () => o.Z.isFocused()),
+                    [l, u] = i.useState(!1),
+                    _ = i.useRef(null);
+                return i.useEffect(() => {
+                    clearTimeout(_.current), _.current = null;
+                    let i = !n && !t,
+                        r = a && (e || i);
+                    r && n ? _.current = window.setTimeout(() => {
+                        u(!0)
+                    }, 1e3) : u(r)
+                }, [a, e, n, t]), i.useEffect(() => () => clearTimeout(_.current), []), {
+                    canAnimate: l
+                }
+            }
+        },
         44315: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -124848,8 +124877,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304409",
-                    versionHash: "f7425a62ae51d776a8db6f6852f37cb7377cd114"
+                    buildNumber: "304417",
+                    versionHash: "9bdc15261d03ed8f138cfbc77f0d2d58b9ed1ba4"
                 }
             }
             n.d(t, {
@@ -183547,8 +183576,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719260148363",
-                                    build_number: "304409"
+                                    built_at: "1719260800677",
+                                    build_number: "304417"
                                 }
                             },
                             retries: 1
@@ -228843,7 +228872,7 @@
                     guildId: null != n ? n : void 0,
                     size: (0, s.y9)(l),
                     showPending: u,
-                    animateOnHover: c,
+                    onlyAnimateOnHover: c,
                     avatarDecorationOverride: d,
                     showTryItOut: _
                 }), A = i.useCallback(() => {
@@ -262339,7 +262368,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f7425a62ae51d776a8db6f6852f37cb7377cd114"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9bdc15261d03ed8f138cfbc77f0d2d58b9ed1ba4"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281500,7 +281529,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304409"
+                                build_number: "304417"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288821,7 +288850,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304409", "304409"), 10);
+                let s = parseInt((n = "304417", "304417"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330357,4 +330386,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.c2e70746772d0a6f4a11.js.map
+//# sourceMappingURL=79892.ce777241e6f53c8fa83c.js.map
