@@ -8609,16 +8609,18 @@ html .progress_e5f4c6 {
 }
 
 .inHouseButton_d7df05 {
+    --custom-grapefruit: 255, 70, 85;
     color: var(--white-500);
-    background-color: var(--brand-500)
+    background-color: #ff4655;
+    background-color: rgb(var(--custom-grapefruit))
 }
 
 .inHouseButton_d7df05:hover {
-    background-color: var(--brand-560)
+    background-color: rgb(var(--custom-grapefruit), .8)
 }
 
 .inHouseButton_d7df05:active {
-    background-color: var(--brand-600)
+    background-color: rgb(var(--custom-grapefruit), .6)
 }
 
 .inHouseIcon_d7df05 {
@@ -33492,7 +33494,9 @@ div.cardContainer_c22357 {
 }
 
 .sponsorLogo_b3552d {
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    width: 28px;
+    filter: brightness(0)saturate(100%)invert(39%)sepia(85%)saturate(3822%)hue-rotate(334deg)brightness(115%)contrast(101%)drop-shadow(0 0 5px#ff4655)
 }
 
 .sponsoredBy_b3552d {
@@ -48187,8 +48191,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143144,4 +143148,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.73de5e282d3710b3f932.css.map*/
+/*# sourceMappingURL=99387.50d8810206a51955309d.css.map*/
