@@ -3076,6 +3076,10 @@ input[type=checked]:focus-visible+.label_b7d6f1 {
     margin-right: 8px
 }
 
+.secureFramesIcon_ba4b17 {
+    margin-left: 4px
+}
+
 .statusContainer_ba4b17 {
     flex: 0 0 auto;
     display: flex;
@@ -17164,6 +17168,10 @@ html .progress_e5f4c6 {
     position: relative
 }
 
+.secureFramesIcon_a7d72e {
+    margin-left: 2px
+}
+
 .container_d1c246 {
     display: flex;
     flex-direction: column;
@@ -20786,6 +20794,10 @@ html .progress_e5f4c6 {
     display: flex;
     flex-direction: column;
     position: relative
+}
+
+.secureFramesIcon_c7b3af {
+    margin-left: 2px
 }
 
 .pencilIcon_c7b3af {
@@ -48182,8 +48194,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143138,4 +143150,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.9d0d5c70019e834ebe61.css.map*/
+/*# sourceMappingURL=99387.deaa5e3103b5d68e9602.css.map*/
