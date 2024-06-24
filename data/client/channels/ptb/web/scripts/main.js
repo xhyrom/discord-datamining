@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304337", ", Version Hash: ").concat("73b88de54811aeb78cb568955f052c2351ab6470")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304343", ", Version Hash: ").concat("57234dae2c05967c02e8081fc17f13e3bcdb708d")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -60107,6 +60107,8 @@
                 E2EE_VERIFIED: "Verified",
                 E2EE_USERNAME_VERIFIED: "{username} verified!",
                 E2EE_CALL_DETAILS: "Call Details",
+                E2EE_USER_VERIFIED_A11Y: "End-to-end encryption verified",
+                E2EE_CALL_VERIFIED_A11Y: "End-to-end encryption verified for all users in call",
                 E2EE_USER_VERIFICATION_SUBTITLE: "Compare the numbers below with {username}. If they match, mark them as verified.",
                 E2EE_USER_VERIFICATION_FOOTER_TEXT: "A new code is generated when either of you join a call or change devices. [Learn more about end-to-end encryption.]({helpArticle})",
                 E2EE_RTC_PANEL_CALL_VERIFICATION_SUBTITLE: "Only you and your friends on this call can hear you. Nobody else – not even Wumpus – can listen in!",
@@ -81476,7 +81478,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 ContentInventoryManager: {
-                    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "CONTENT_INVENTORY_MANUAL_REFRESH", "CONTENT_INVENTORY_INBOX_STALE", "SPOTIFY_NEW_TRACK"],
+                    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "CONTENT_INVENTORY_MANUAL_REFRESH", "CONTENT_INVENTORY_INBOX_STALE", "SPOTIFY_NEW_TRACK", "GAME_PROFILE_OPEN"],
                     inlineRequire: () => n(342879).Z,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -96357,8 +96359,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304337", "304337"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304337")), t = 0), t
+                let t = parseInt((e = "304343", "304343"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304343")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -122041,7 +122043,7 @@
         },
         206583: function(e, t, n) {
             "use strict";
-            var i, r, s, o, a;
+            var i, r, s, o, a, l;
             n.d(t, {
                 Kd: function() {
                     return r
@@ -122052,7 +122054,7 @@
                 xP: function() {
                     return s
                 }
-            }), (i || (i = {})).GLOBAL_FEED = "global feed", (o = r || (r = {}))[o.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST", (a = s || (s = {}))[a.CARD_HOVER = 1] = "CARD_HOVER", a[a.CARD_CLICK = 2] = "CARD_CLICK", a[a.REACTION_EMOJI_REACT_SENT = 3] = "REACTION_EMOJI_REACT_SENT", a[a.DM_REACTION_MESSAGE_SENT = 4] = "DM_REACTION_MESSAGE_SENT", a[a.CHANNEL_REACTION_MESSAGE_SENT = 5] = "CHANNEL_REACTION_MESSAGE_SENT", a[a.VOICE_CHANNEL_JOINED = 6] = "VOICE_CHANNEL_JOINED", a[a.VOICE_CHANNEL_PREVIEWED = 7] = "VOICE_CHANNEL_PREVIEWED"
+            }), (o = i || (i = {})).GLOBAL_FEED = "global feed", o.GAME_PROFILE_FEED = "game profile feed", (a = r || (r = {}))[a.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST", (l = s || (s = {}))[l.CARD_HOVER = 1] = "CARD_HOVER", l[l.CARD_CLICK = 2] = "CARD_CLICK", l[l.REACTION_EMOJI_REACT_SENT = 3] = "REACTION_EMOJI_REACT_SENT", l[l.DM_REACTION_MESSAGE_SENT = 4] = "DM_REACTION_MESSAGE_SENT", l[l.CHANNEL_REACTION_MESSAGE_SENT = 5] = "CHANNEL_REACTION_MESSAGE_SENT", l[l.VOICE_CHANNEL_JOINED = 6] = "VOICE_CHANNEL_JOINED", l[l.VOICE_CHANNEL_PREVIEWED = 7] = "VOICE_CHANNEL_PREVIEWED"
         },
         162461: function(e, t, n) {
             "use strict";
@@ -122265,26 +122267,33 @@
             "use strict";
             n.d(t, {
                 m: function() {
-                    return o
+                    return a
                 },
                 y: function() {
-                    return a
+                    return l
                 }
             });
             var i = n(544891),
                 r = n(881052),
-                s = n(981631);
-            let o = async e => {
+                s = n(206583),
+                o = n(981631);
+            let a = async e => {
                 let {
-                    token: t
+                    token: t,
+                    feedId: n
                 } = e;
                 try {
                     let e = (await i.tn.get({
-                            url: s.ANM.MY_CONTENT_INVENTORY(t)
+                            url: o.ANM.MY_CONTENT_INVENTORY(t),
+                            ...n === s.YN.GAME_PROFILE_FEED && {
+                                query: {
+                                    for_game_profile: !0
+                                }
+                            }
                         })).body,
-                        n = e.wait_ms_until_next_fetch;
-                    if (null != n) {
-                        let t = new Date(Date.now() + n);
+                        r = e.wait_ms_until_next_fetch;
+                    if (null != r) {
+                        let t = new Date(Date.now() + r);
                         e.expired_at = t.toISOString()
                     }
                     return e
@@ -122292,10 +122301,10 @@
                     throw new r.Hx(e)
                 }
             };
-            async function a(e, t) {
+            async function l(e, t) {
                 try {
                     await i.tn.post({
-                        url: s.ANM.MY_SPOTIFY_CONTENT_INVENTORY,
+                        url: o.ANM.MY_SPOTIFY_CONTENT_INVENTORY,
                         body: {
                             connection_id: e,
                             tracks: [t]
@@ -122322,73 +122331,88 @@
                 E = n(206583),
                 I = n(981631);
             let T = E.YN.GLOBAL_FEED,
-                h = null,
-                S = !1,
-                f = 0,
+                h = new Map,
+                S = new Set,
+                f = new Map,
                 N = null,
                 A = (0, i.debounce)(c.y, 3e3, {
                     trailing: !0
                 });
 
-            function m(e) {
+            function m(e, t) {
                 r.Z.dispatch({
                     type: "CONTENT_INVENTORY_SET_FEED_STATE",
-                    feedId: T,
-                    state: e
+                    feedId: e,
+                    state: t
                 })
             }
 
             function O() {
-                p()
+                p(T)
             }
 
-            function R() {
-                if (!(0, _.sA)("ContentInventoryManager") || S || d.Z.hidden || !u.Z.isFocused() || !o.Z.isConnected()) return !1;
-                let e = l.Z.getIdleSince();
-                return !(null != e && Date.now() - e > 9e5) && !0
+            function R(e) {
+                if (!(0, _.sA)("ContentInventoryManager") || S.has(e) || e === E.YN.GAME_PROFILE_FEED && void 0 !== d.Z.getFeed(e)) return !1;
+                if (e === T) {
+                    if (d.Z.hidden || !u.Z.isFocused() || !o.Z.isConnected()) return !1;
+                    let e = l.Z.getIdleSince();
+                    if (null != e && Date.now() - e > 9e5) return !1
+                }
+                return !0
             }
 
-            function p() {
-                m({
+            function p(e) {
+                m(e, {
                     loading: !1
-                }), clearTimeout(h), h = null
+                });
+                let t = h.get(e);
+                void 0 !== t && (clearTimeout(t), h.delete(e))
             }
 
             function g() {
-                if (p(), !R()) return;
+                if (p(T), !R(T)) return;
                 let e = d.Z.getFeed(T);
                 if ((null == e ? void 0 : e.refresh_stale_inbox_after_ms) != null && null == N) return;
                 let t = (null == e ? void 0 : e.expired_at) == null ? 0 : new Date(e.expired_at).getTime() - Date.now(),
                     n = Math.max(0, null == N ? 0 : new Date(N).getTime() - Date.now(), t);
-                m({
+                m(T, {
                     loading: !1,
                     nextFetchDate: new Date(Date.now() + n)
-                }), h = setTimeout(() => C(), n)
+                }), h.set(T, setTimeout(() => C(T), n))
             }
-            async function C() {
+            async function C(e) {
                 let {
-                    force: e = !1
-                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                if (!!(R() || e)) try {
-                    let e = d.Z.getFeed(T);
-                    S = !0, m({
+                    force: t = !1
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                if (!!(R(e) || t)) try {
+                    let t = d.Z.getFeed(e);
+                    S.add(e), m(e, {
                         loading: !0
                     });
-                    let t = await (0, c.m)({
-                        token: null == e ? void 0 : e.refresh_token
+                    let n = await (0, c.m)({
+                        token: null == t ? void 0 : t.refresh_token,
+                        feedId: e
                     });
                     r.Z.dispatch({
                         type: "CONTENT_INVENTORY_SET_FEED",
-                        feedId: T,
-                        feed: t
-                    }), f = 0, S = !1, m({
+                        feedId: e,
+                        feed: n
+                    }), f.set(e, 0), S.delete(e), m(e, {
                         loading: !1
-                    }), N = null, g()
-                } catch (e) {
-                    f < 3 ? (h = setTimeout(() => C(), 1e3 * Math.pow(5, f)), f += 1) : r.Z.dispatch({
+                    }), e === T && (N = null, g())
+                } catch (s) {
+                    var n;
+                    let i = null !== (n = f.get(e)) && void 0 !== n ? n : 0;
+                    if (i < 3) {
+                        let n = 1e3 * Math.pow(5, i);
+                        h.set(e, setTimeout(() => C(e, {
+                            force: t
+                        }), n)), f.set(e, i + 1)
+                    } else r.Z.dispatch({
                         type: "CONTENT_INVENTORY_CLEAR_FEED",
-                        feedId: T
-                    }), S = !1
+                        feedId: e
+                    });
+                    S.delete(e)
                 }
             }
 
@@ -122396,8 +122420,11 @@
                 g()
             }
 
-            function L() {
-                p(), C({
+            function L(e) {
+                let {
+                    feedId: t
+                } = e;
+                p(t), C(t, {
                     force: !0
                 })
             }
@@ -122417,7 +122444,11 @@
                 } = e;
                 if (null != n && !!(0, _.Dy)("ContentInventoryManager.handleSpotifyNewTrack"))(null === (t = a.Z.getAccount(n, I.ABu.SPOTIFY)) || void 0 === t ? void 0 : t.showActivity) && A(n, i)
             }
-            class P extends s.Z {
+
+            function P() {
+                C(E.YN.GAME_PROFILE_FEED)
+            }
+            class y extends s.Z {
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
@@ -122428,7 +122459,8 @@
                         CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: v,
                         CONTENT_INVENTORY_MANUAL_REFRESH: L,
                         CONTENT_INVENTORY_INBOX_STALE: D,
-                        SPOTIFY_NEW_TRACK: M
+                        SPOTIFY_NEW_TRACK: M,
+                        GAME_PROFILE_OPEN: P
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -122437,37 +122469,38 @@
                     }) : t[n] = i
                 }
             }
-            t.Z = new P
+            t.Z = new y
         },
         146282: function(e, t, n) {
             "use strict";
-            let i, r;
+            let i;
             n(47120);
-            var s, o, a, l, u = n(442837),
-                _ = n(570140);
-            let c = new Map,
+            var r, s, o, a, l = n(442837),
+                u = n(570140);
+            let _ = new Map,
+                c = new Map,
                 d = new Map,
                 E = !1,
                 I = !1;
 
             function T(e) {
-                e(c), c = new Map(c)
+                e(_), _ = new Map(_)
             }
-            class h extends(s = u.ZP.Store) {
+            class h extends(r = l.ZP.Store) {
                 getFeeds() {
-                    return c
+                    return _
                 }
                 getFeed(e) {
-                    return c.get(e)
+                    return _.get(e)
                 }
                 getFeedState(e) {
+                    return c.get(e)
+                }
+                getLastFeedFetchDate(e) {
                     return d.get(e)
                 }
-                getLastFeedFetchDate() {
-                    return i
-                }
                 getFilters() {
-                    return r
+                    return i
                 }
                 getFeedRequestId(e) {
                     var t;
@@ -122480,40 +122513,40 @@
                     return E
                 }
             }
-            l = "ContentInventoryStore", (a = "displayName") in(o = h) ? Object.defineProperty(o, a, {
-                value: l,
+            a = "ContentInventoryStore", (o = "displayName") in(s = h) ? Object.defineProperty(s, o, {
+                value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : o[a] = l, t.Z = new h(_.Z, {
+            }) : s[o] = a, t.Z = new h(u.Z, {
                 CONNECTION_OPEN: function() {
-                    c = new Map, E = !1
+                    _ = new Map, E = !1
                 },
                 CONTENT_INVENTORY_SET_FEED: function(e) {
                     let {
                         feedId: t,
                         feed: n
                     } = e;
-                    T(e => e.set(t, n)), i = new Date
+                    T(e => e.set(t, n)), d.set(t, new Date)
                 },
                 CONTENT_INVENTORY_SET_FEED_STATE: function(e) {
                     let {
                         feedId: t,
                         state: n
                     } = e;
-                    d.set(t, n)
+                    c.set(t, n)
                 },
                 CONTENT_INVENTORY_SET_FILTERS: function(e) {
                     let {
                         filters: t
                     } = e;
-                    r = t
+                    i = t
                 },
                 CONTENT_INVENTORY_CLEAR_FEED: function(e) {
                     let {
                         feedId: t
                     } = e;
-                    if (!c.has(t)) return !1;
+                    if (!_.has(t)) return !1;
                     T(e => e.delete(t))
                 },
                 CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: function() {
@@ -124570,8 +124603,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304337",
-                    versionHash: "73b88de54811aeb78cb568955f052c2351ab6470"
+                    buildNumber: "304343",
+                    versionHash: "57234dae2c05967c02e8081fc17f13e3bcdb708d"
                 }
             }
             n.d(t, {
@@ -125105,7 +125138,7 @@
                 u = n(31336),
                 _ = n(19759);
             let c = (0, s.Un)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("19503"), n.e("89350"), n.e("39709"), n.e("80451"), n.e("3336"), n.e("15972"), n.e("12013"), n.e("29549"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("8016"), n.e("33053"), n.e("68136"), n.e("31605"), n.e("19464"), n.e("6380"), n.e("76540"), n.e("11250"), n.e("4934"), n.e("22646"), n.e("57878"), n.e("18101"), n.e("65840"), n.e("87624"), n.e("77172"), n.e("67535"), n.e("95393"), n.e("86977"), n.e("5528"), n.e("44517"), n.e("43331"), n.e("81539"), n.e("30419"), n.e("18824"), n.e("90508"), n.e("8739"), n.e("58286"), n.e("31649"), n.e("41947"), n.e("41662"), n.e("97403"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("49508"), n.e("68241"), n.e("97458"), n.e("12549"), n.e("21078"), n.e("37269"), n.e("56399"), n.e("77594"), n.e("54535"), n.e("54443"), n.e("57493"), n.e("35271"), n.e("30676"), n.e("23249"), n.e("36439"), n.e("30634"), n.e("63972")]).then(n.bind(n, 678717)),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("19503"), n.e("89350"), n.e("39709"), n.e("80451"), n.e("3336"), n.e("15972"), n.e("12013"), n.e("29549"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("8016"), n.e("33053"), n.e("68136"), n.e("31605"), n.e("19464"), n.e("6380"), n.e("76540"), n.e("11250"), n.e("4934"), n.e("22646"), n.e("57878"), n.e("18101"), n.e("65840"), n.e("87624"), n.e("77172"), n.e("67535"), n.e("95393"), n.e("86977"), n.e("5528"), n.e("44517"), n.e("43331"), n.e("81539"), n.e("30419"), n.e("18824"), n.e("90508"), n.e("8739"), n.e("58286"), n.e("31649"), n.e("41947"), n.e("41662"), n.e("97403"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("49508"), n.e("68241"), n.e("97458"), n.e("12549"), n.e("21078"), n.e("37269"), n.e("56399"), n.e("77594"), n.e("54535"), n.e("54443"), n.e("93770"), n.e("35271"), n.e("30676"), n.e("37941"), n.e("36439"), n.e("30634"), n.e("63972")]).then(n.bind(n, 678717)),
                 webpackId: 678717
             });
 
@@ -183269,8 +183302,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719253499197",
-                                    build_number: "304337"
+                                    built_at: "1719254169361",
+                                    build_number: "304343"
                                 }
                             },
                             retries: 1
@@ -261977,7 +262010,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "73b88de54811aeb78cb568955f052c2351ab6470"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "57234dae2c05967c02e8081fc17f13e3bcdb708d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -267699,7 +267732,7 @@
                                             (0, E.openModalLazy)(async () => {
                                                 let {
                                                     default: e
-                                                } = await Promise.all([n.e("99387"), n.e("30676"), n.e("40464"), n.e("7613"), n.e("65795")]).then(n.bind(n, 644941));
+                                                } = await Promise.all([n.e("99387"), n.e("30676"), n.e("91026"), n.e("7613"), n.e("65795")]).then(n.bind(n, 644941));
                                                 return t => {
                                                     var n;
                                                     return (0, o.jsx)(e, {
@@ -281138,7 +281171,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304337"
+                                build_number: "304343"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288459,7 +288492,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304337", "304337"), 10);
+                let s = parseInt((n = "304343", "304343"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -329986,4 +330019,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.f73fcca0a39dd3d8260e.js.map
+//# sourceMappingURL=79892.e9755042f83c3f4c1286.js.map
