@@ -10,24 +10,24 @@
             },
             544140: function(e, t, a) {
                 var n = a(796581),
-                    d = a(149912);
-                e.exports = function e(t, a, c, i, r) {
+                    c = a(149912);
+                e.exports = function e(t, a, d, i, r) {
                     var o = -1,
                         f = t.length;
-                    for (c || (c = d), r || (r = []); ++o < f;) {
+                    for (d || (d = c), r || (r = []); ++o < f;) {
                         var s = t[o];
-                        a > 0 && c(s) ? a > 1 ? e(s, a - 1, c, i, r) : n(r, s) : !i && (r[r.length] = s)
+                        a > 0 && d(s) ? a > 1 ? e(s, a - 1, d, i, r) : n(r, s) : !i && (r[r.length] = s)
                     }
                     return r
                 }
             },
             149912: function(e, t, a) {
                 var n = a(466293),
-                    d = a(443735),
-                    c = a(402428),
+                    c = a(443735),
+                    d = a(402428),
                     i = n ? n.isConcatSpreadable : void 0;
                 e.exports = function(e) {
-                    return c(e) || d(e) || !!(i && e && e[i])
+                    return d(e) || c(e) || !!(i && e && e[i])
                 }
             },
             90757: function(e, t, a) {
@@ -40,12 +40,12 @@
                 "use strict";
                 var n = a(735250);
                 a(470079);
-                var d = a(266067),
-                    c = a(442837),
+                var c = a(266067),
+                    d = a(442837),
                     i = a(353926),
                     r = a(314897),
                     o = a(981631);
-                t.Z = c.ZP.connectStores([i.Z, r.default], () => {
+                t.Z = d.ZP.connectStores([i.Z, r.default], () => {
                     let e = r.default.getToken();
                     return {
                         token: e,
@@ -56,9 +56,9 @@
                         hasLoadedExperiments: t,
                         token: a
                     } = e;
-                    return null != a ? (0, n.jsx)(d.l_, {
+                    return null != a ? (0, n.jsx)(c.l_, {
                         to: o.Z5c.APP
-                    }) : t ? (0, n.jsx)(d.l_, {
+                    }) : t ? (0, n.jsx)(c.l_, {
                         to: o.Z5c.DEFAULT_LOGGED_OUT
                     }) : null
                 })
@@ -66,13 +66,13 @@
             540117: function(e, t, a) {
                 "use strict";
                 var n = a(735250),
-                    d = a(470079),
-                    c = a(120356),
-                    i = a.n(c),
+                    c = a(470079),
+                    d = a(120356),
+                    i = a.n(d),
                     r = a(715702),
                     o = a(352867),
                     f = a(83922);
-                class s extends d.Component {
+                class s extends c.Component {
                     render() {
                         return (0, n.jsx)("div", {
                             className: i()(o.app, f.vertical),
@@ -98,8 +98,8 @@
                     }
                 }), a(47120);
                 var n = a(735250),
-                    d = a(470079),
-                    c = a(664751),
+                    c = a(470079),
+                    d = a(664751),
                     i = a(266067),
                     r = a(990547),
                     o = a(719711),
@@ -218,7 +218,7 @@
                 function X(e, t) {
                     return t ? e.filter(e => !Y.has(e)) : e
                 }
-                class q extends d.Component {
+                class q extends c.Component {
                     componentDidMount() {
                         Z.ZP.cleanupDisplaySleep(), I.Z.initialize()
                     }
@@ -230,7 +230,7 @@
                         let {
                             isAuthenticated: t,
                             migrationStatus: a,
-                            skipsSettingDefaultPageTitle: d
+                            skipsSettingDefaultPageTitle: c
                         } = this.props;
                         return e = a === E.P.IN_PROGRESS ? null : P.KO ? T.isPlatformEmbedded ? (0, n.jsxs)(i.rs, {
                             children: [(0, n.jsx)(i.AW, {
@@ -317,13 +317,13 @@
                                 render: () => {
                                     var e, t, a;
                                     let n = null === (e = O.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
-                                        d = (0, c.parse)((null !== (a = window.location.search) && void 0 !== a ? a : "").substr(1)),
-                                        i = null === (t = d.referring_location) || void 0 === t ? void 0 : t.toString();
+                                        c = (0, d.parse)((null !== (a = window.location.search) && void 0 !== a ? a : "").substr(1)),
+                                        i = null === (t = c.referring_location) || void 0 === t ? void 0 : t.toString();
                                     return ("iOS" === n || "Android" === n) && O.default.track(S.rMx.DOWNLOAD_APP, {
                                         platform: n,
                                         ptb: !1,
                                         released: !0,
-                                        has_e_mail: "true" === d.has_e_mail,
+                                        has_e_mail: "true" === c.has_e_mail,
                                         referring_location: i,
                                         qr_code: !0
                                     }), window.location.href = (0, A.Gn)(null != i && "" !== i ? i : "qr_code", n), null
@@ -333,18 +333,18 @@
                                 render: () => {
                                     var e, t;
                                     let a = null === (e = O.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
-                                        d = (0, w.o)(null !== (t = window.location.search) && void 0 !== t ? t : "");
+                                        c = (0, w.o)(null !== (t = window.location.search) && void 0 !== t ? t : "");
                                     if ("iOS" !== a && "Android" !== a) return (0, n.jsx)(i.l_, {
-                                        to: null != d.desktop ? "".concat(d.desktop.pathname).concat(d.desktop.search) : S.Z5c.APP
+                                        to: null != c.desktop ? "".concat(c.desktop.pathname).concat(c.desktop.search) : S.Z5c.APP
                                     });
                                     {
-                                        let e = (0, A.Gn)("app_open_from_email", a, d.mobile),
+                                        let e = (0, A.Gn)("app_open_from_email", a, c.mobile),
                                             t = (0, f.zS)(e);
                                         null != t && O.default.track(S.rMx.DEEP_LINK_CLICKED, {
                                             fingerprint: (0, s.K)(t.fingerprint),
                                             attempt_id: t.attemptId,
                                             source: t.utmSource,
-                                            destination: null != d.mobile ? d.mobile.toString() : null
+                                            destination: null != c.mobile ? c.mobile.toString() : null
                                         }), window.location.href = e
                                     }
                                 }
@@ -374,7 +374,7 @@
                                 component: C
                             })
                         }), (0, n.jsxs)(_.Z, {
-                            skipsSettingDefaultPageTitle: d,
+                            skipsSettingDefaultPageTitle: c,
                             children: [e, T.isPlatformEmbedded && (a === E.P.NOT_STARTED || a === E.P.IN_PROGRESS) && !0 !== b.K.get(o.SV) ? (0, n.jsx)(g.Z, {}) : null]
                         })
                     }
@@ -402,7 +402,7 @@
             650204: function(e, t, a) {
                 "use strict";
                 a(610138), a(216116), a(78328), a(815648), a(47120), a(177593);
-                var n, d, c, i, r, o, f, s = a(735250);
+                var n, c, d, i, r, o, f, s = a(735250);
                 a(92138), a(470079);
                 var l = a(202226),
                     b = a(512722),
@@ -450,7 +450,7 @@
                             throw v.Z.captureCrash(e), e
                         })
                     });
-                    let e = null === (d = (c = L.Z.remoteApp).getVersion) || void 0 === d ? void 0 : d.call(c),
+                    let e = null === (c = (d = L.Z.remoteApp).getVersion) || void 0 === c ? void 0 : c.call(d),
                         t = null === (i = (r = L.Z.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(r),
                         a = {};
                     null != L.Z.remoteApp.getModuleVersions && (a = L.Z.remoteApp.getModuleVersions()), v.Z.setExtra({
@@ -476,8 +476,8 @@
                             e.cancel(), w.ZP.setFocused(!0), (0, P.T_)(window, !0)
                         }), w.ZP.on("MAIN_WINDOW_PATH", function(e, t, a) {
                             var n;
-                            let d = null != a ? new URLSearchParams(a) : null;
-                            if (null === (n = V[t]) || void 0 === n ? !void 0 : !n.call(V, d))(0, N.uL)(t)
+                            let c = null != a ? new URLSearchParams(a) : null;
+                            if (null === (n = V[t]) || void 0 === n ? !void 0 : !n.call(V, c))(0, N.uL)(t)
                         }), w.ZP.on("MAIN_WINDOW_HIDDEN", () => {
                             (0, P.al)(window)
                         })
@@ -489,29 +489,29 @@
                 "use strict";
                 var n = a(735250);
                 a(470079);
-                var d = a(481060),
-                    c = a(204623),
+                var c = a(481060),
+                    d = a(204623),
                     i = a(155221);
                 t.Z = {
-                    App: () => (0, n.jsx)(d.DnDProvider, {
+                    App: () => (0, n.jsx)(c.DnDProvider, {
                         children: (0, n.jsx)(i.Z, {})
                     }),
-                    Overlay: () => (0, n.jsx)(d.DnDProvider, {
+                    Overlay: () => (0, n.jsx)(c.DnDProvider, {
                         children: (0, n.jsx)(i.a, {})
                     }),
-                    OutdatedClient: c.Z
+                    OutdatedClient: d.Z
                 }
             },
             752137: function(e, t, a) {
                 "use strict";
                 var n = a(317770),
-                    d = a(626135),
-                    c = a(358085),
+                    c = a(626135),
+                    d = a(358085),
                     i = a(998502),
                     r = a(981631);
                 class o extends n.Z {
                     _initialize() {
-                        if (!!c.isPlatformEmbedded) i.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
+                        if (!!d.isPlatformEmbedded) i.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
                             this._handleEventResponse(t)
                         }), this.processModuleEvents()
                     }
@@ -525,7 +525,7 @@
                     }
                     _handleEventResponse(e) {
                         if (null != e) e.forEach(e => {
-                            "cdm" === e.type ? (e.name === r.rMx.CDM_LOAD_STATUS || e.name === r.rMx.CDM_READY_COMPLETE) && d.default.track(e.name, e.data) : console.log("[analytics] received unknown analytic type event ".concat(e.type))
+                            "cdm" === e.type ? (e.name === r.rMx.CDM_LOAD_STATUS || e.name === r.rMx.CDM_READY_COMPLETE) && c.default.track(e.name, e.data) : console.log("[analytics] received unknown analytic type event ".concat(e.type))
                         })
                     }
                 }
@@ -534,13 +534,13 @@
             44163: function(e, t, a) {
                 "use strict";
                 var n = a(585483),
-                    d = a(5967),
-                    c = a(933513),
+                    c = a(5967),
+                    d = a(933513),
                     i = a(981631);
                 t.Z = {
                     init() {
                         document.addEventListener("paste", e => {
-                            !(0, c.Z)((0, d.uB)(e)) && n.S.dispatchToLastSubscribed(i.CkL.GLOBAL_CLIPBOARD_PASTE, {
+                            !(0, d.Z)((0, c.uB)(e)) && n.S.dispatchToLastSubscribed(i.CkL.GLOBAL_CLIPBOARD_PASTE, {
                                 event: e
                             })
                         })
@@ -568,9 +568,9 @@
                     }
                 }), a(47120);
                 var n = a(735250),
-                    d = a(470079),
-                    c = a(525654),
-                    i = a.n(c),
+                    c = a(470079),
+                    d = a(525654),
+                    i = a.n(d),
                     r = a(470716),
                     o = a(442837),
                     f = a(946188),
@@ -589,7 +589,7 @@
                 let O = o.ZP.connectStores([b.Z], () => ({
                     focused: b.Z.isFocused()
                 }))(g.Z);
-                class A extends d.PureComponent {
+                class A extends c.PureComponent {
                     getPlatform() {
                         var e;
                         let t = null === (e = i().os) || void 0 === e ? void 0 : e.family;
@@ -618,7 +618,7 @@
                                 onClick: this.handleDownload,
                                 children: v.Z.Messages.DOWNLOAD
                             });
-                        return (0, n.jsxs)(d.Fragment, {
+                        return (0, n.jsxs)(c.Fragment, {
                             children: [(0, n.jsx)(r.ql, {
                                 children: (0, n.jsx)("html", {
                                     className: (0, _.Q)(I.BRd.DARK)
@@ -661,21 +661,21 @@
                         return i
                     },
                     Te: function() {
-                        return d
+                        return c
                     },
                     kb: function() {
-                        return c
+                        return d
                     }
                 });
                 var n = a(570140);
 
-                function d() {
+                function c() {
                     n.Z.wait(() => n.Z.dispatch({
                         type: "DOMAIN_MIGRATION_START"
                     }))
                 }
 
-                function c() {
+                function d() {
                     n.Z.dispatch({
                         type: "DOMAIN_MIGRATION_FAILURE"
                     })
@@ -692,7 +692,7 @@
                         return r
                     }
                 });
-                var n, d, c, i, r, o, f = a(442837),
+                var n, c, d, i, r, o, f = a(442837),
                     s = a(570140);
                 (n = r || (r = {}))[n.NOT_STARTED = 0] = "NOT_STARTED", n[n.IN_PROGRESS = 1] = "IN_PROGRESS", n[n.FAILED = 2] = "FAILED", n[n.SKIPPED = 3] = "SKIPPED";
                 let l = 0;
@@ -701,12 +701,12 @@
                         return l
                     }
                 }
-                i = "DomainMigrationStore", (c = "displayName") in(d = b) ? Object.defineProperty(d, c, {
+                i = "DomainMigrationStore", (d = "displayName") in(c = b) ? Object.defineProperty(c, d, {
                     value: i,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                }) : d[c] = i, t.Z = new b(s.Z, {
+                }) : c[d] = i, t.Z = new b(s.Z, {
                     DOMAIN_MIGRATION_START: function() {
                         l = 1
                     },
@@ -726,8 +726,8 @@
                     }
                 });
                 var n = a(470079),
-                    d = a(719711),
-                    c = a(433517),
+                    c = a(719711),
+                    d = a(433517),
                     i = a(579806),
                     r = a(626135),
                     o = a(998502),
@@ -741,7 +741,7 @@
 
                 function b() {
                     return n.useEffect(() => {
-                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== c.K.get(d.SV) && o.ZP.supportsFeature(s.eRX.USER_DATA_CACHE) && (f.Te(), i.Z.userDataCache.getCached().then(e => {
+                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== d.K.get(c.SV) && o.ZP.supportsFeature(s.eRX.USER_DATA_CACHE) && (f.Te(), i.Z.userDataCache.getCached().then(e => {
                             if (null == e) {
                                 f.kb(), r.default.track(s.rMx.DOMAIN_MIGRATED, {
                                     success: !1,
@@ -755,11 +755,11 @@
                                 a = 0 !== t.length,
                                 n = null != e.token,
                                 o = null == e.RTCRegionStore ? null : JSON.parse(e.RTCRegionStore),
-                                b = null == o || null == l(o) || l(o) <= l(c.K.get("RTCRegionStore"));
-                            a && n && !b && (c.K.clear(), t.forEach(t => {
+                                b = null == o || null == l(o) || l(o) <= l(d.K.get("RTCRegionStore"));
+                            a && n && !b && (d.K.clear(), t.forEach(t => {
                                 let a = e[t];
                                 try {
-                                    c.K.set(t, JSON.parse(a))
+                                    d.K.set(t, JSON.parse(a))
                                 } catch (e) {}
                             })), r.default.track(s.rMx.DOMAIN_MIGRATED, {
                                 success: !0,
@@ -767,7 +767,7 @@
                                 has_data: a
                             }, {
                                 flush: !0
-                            }), c.K.set(d.SV, !0), i.Z.userDataCache.deleteCache(), f.Pg()
+                            }), d.K.set(c.SV, !0), i.Z.userDataCache.deleteCache(), f.Pg()
                         }))
                     }, []), null
                 }
@@ -776,8 +776,8 @@
                 "use strict";
                 let n;
                 a(242167), a(970173), a(520712), a(268111), a(941497), a(32026), a(480839), a(744285), a(492257), a(873817), a(411104), a(773603);
-                var d = a(512722),
-                    c = a.n(d),
+                var c = a(512722),
+                    d = a.n(c),
                     i = a(392711),
                     r = a.n(i),
                     o = a(544891),
@@ -821,33 +821,33 @@
                             let a = 0;
                             return (m.isPlatformEmbedded ? function(e, t) {
                                 let a = (0, f.zS)(),
-                                    d = (null == a ? void 0 : a.getNextVideoOutputFrame) != null;
-                                return new Promise((c, i) => {
+                                    c = (null == a ? void 0 : a.getNextVideoOutputFrame) != null;
+                                return new Promise((d, i) => {
                                     let r = e => {
                                         try {
-                                            null != e && t(e) && c(e)
+                                            null != e && t(e) && d(e)
                                         } catch (e) {
                                             i(e)
                                         }
                                     };
-                                    d ? a.getNextVideoOutputFrame(e).then(r, t => {
+                                    c ? a.getNextVideoOutputFrame(e).then(r, t => {
                                         if (n === e) throw t
                                     }) : s.Z.addSink(e, O, r)
                                 }).finally(() => {
-                                    !d && s.Z.removeSink(e, O)
+                                    !c && s.Z.removeSink(e, O)
                                 })
                             } : function(e, t) {
                                 let a = (0, l.aG)(e);
                                 if (null == a) return Promise.resolve(new ImageData(0, 0));
                                 let {
                                     width: n,
-                                    height: d
-                                } = a.getVideoTracks()[0].getSettings(), c = document.createElement("video"), i = document.createElement("canvas");
-                                c.width = i.width = null != n ? n : 512, c.height = i.height = null != d ? d : 288, c.srcObject = a, c.play();
+                                    height: c
+                                } = a.getVideoTracks()[0].getSettings(), d = document.createElement("video"), i = document.createElement("canvas");
+                                d.width = i.width = null != n ? n : 512, d.height = i.height = null != c ? c : 288, d.srcObject = a, d.play();
                                 let r = i.getContext("2d");
                                 return new Promise((e, a) => {
-                                    c.ontimeupdate = () => {
-                                        null == r || r.drawImage(c, 0, 0, i.width, i.height);
+                                    d.ontimeupdate = () => {
+                                        null == r || r.drawImage(d, 0, 0, i.width, i.height);
                                         let n = null == r ? void 0 : r.getImageData(0, 0, i.width, i.height);
                                         try {
                                             null != n && t(n) && e(n)
@@ -856,7 +856,7 @@
                                         }
                                     }
                                 }).finally(() => {
-                                    c.ontimeupdate = null, c.removeAttribute("srcObject"), c.load()
+                                    d.ontimeupdate = null, d.removeAttribute("srcObject"), d.load()
                                 })
                             })(e, e => {
                                 if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) return !0;
@@ -869,25 +869,25 @@
                             let t = 512 / e.width,
                                 a = Math.min(t, 288 / e.height),
                                 n = e.width * a,
-                                d = e.height * a;
-                            T.width = n, T.height = d;
-                            let c = window.document.createElement("canvas"),
-                                i = c.getContext("2d");
-                            c.width = e.width, c.height = e.height;
+                                c = e.height * a;
+                            T.width = n, T.height = c;
+                            let d = window.document.createElement("canvas"),
+                                i = d.getContext("2d");
+                            d.width = e.width, d.height = e.height;
                             let r = new ImageData(e.data, e.width, e.height);
                             return null == i || i.putImageData(r, 0, 0), new Promise(t => {
-                                null == Z || Z.drawImage(c, 0, 0, e.width, e.height, 0, 0, n, d), t()
+                                null == Z || Z.drawImage(d, 0, 0, e.width, e.height, 0, 0, n, c), t()
                             })
                         }(a);
-                        let d = T.toDataURL("image/jpeg");
+                        let c = T.toDataURL("image/jpeg");
                         if (u.Z.dispatch({
                                 type: "STREAM_PREVIEW_FETCH_SUCCESS",
                                 streamKey: t,
-                                previewURL: d
+                                previewURL: c
                             }), m.isPlatformEmbedded) {
                             let e = p.default.getToken();
-                            c()(null != e, "Auth token was null while sending screenshot."), await _.ZP.makeChunkedRequest(I.ANM.STREAM_PREVIEW(t), {
-                                thumbnail: d
+                            d()(null != e, "Auth token was null while sending screenshot."), await _.ZP.makeChunkedRequest(I.ANM.STREAM_PREVIEW(t), {
+                                thumbnail: c
                             }, {
                                 method: "POST",
                                 token: e
@@ -895,7 +895,7 @@
                         } else await o.tn.post({
                             url: I.ANM.STREAM_PREVIEW(t),
                             body: {
-                                thumbnail: d
+                                thumbnail: c
                             },
                             oldFormErrors: !0
                         })
@@ -911,11 +911,11 @@
                             let {
                                 guildId: t,
                                 channelId: a,
-                                userId: d,
-                                streamId: c,
+                                userId: c,
+                                streamId: d,
                                 context: i
                             } = e;
-                            !(null == c || i !== v.Yn.STREAM || d !== p.default.getId() || __OVERLAY__) && (S(), n = c, N(c, t, a, d))
+                            !(null == d || i !== v.Yn.STREAM || c !== p.default.getId() || __OVERLAY__) && (S(), n = d, N(d, t, a, c))
                         }), u.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
                             let {
                                 videoState: t
@@ -929,8 +929,8 @@
                 "use strict";
                 a(411104);
                 var n = a(570140),
-                    d = a(846027),
-                    c = a(872810),
+                    c = a(846027),
+                    d = a(872810),
                     i = a(710845),
                     r = a(252759),
                     o = a(361291),
@@ -1005,9 +1005,9 @@
                             a = o.Z.getState();
                         switch (e.type) {
                             case r.A.STREAM:
-                                if (null != t && (0, c.tK)(t, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
+                                if (null != t && (0, d.tK)(t, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
                                     let t = e.sourceId.split(":")[1];
-                                    d.Z.setGoLiveSource({
+                                    c.Z.setGoLiveSource({
                                         cameraSettings: {
                                             videoDeviceGuid: t,
                                             audioDeviceGuid: e.audioSourceId
@@ -1021,7 +1021,7 @@
                                     })
                                 } else {
                                     var n;
-                                    d.Z.setGoLiveSource({
+                                    c.Z.setGoLiveSource({
                                         desktopSettings: {
                                             sourceId: e.sourceId,
                                             sound: null === (n = e.sound) || void 0 === n || n
@@ -1036,7 +1036,7 @@
                                 }
                                 break;
                             case r.A.PAUSE:
-                                null != t && (0, c.tK)(t, !0);
+                                null != t && (0, d.tK)(t, !0);
                                 break;
                             case r.A.STOP:
                                 null != t && (0, b.Z)(t);
@@ -1047,7 +1047,7 @@
                     }
                     _onCapturePaused(e) {
                         let t = f.Z.getCurrentUserActiveStream();
-                        null != t && (0, c.tK)(t, e)
+                        null != t && (0, d.tK)(t, e)
                     }
                     _onCaptureEnded() {
                         switch (this.mode) {
@@ -1068,8 +1068,8 @@
                                 streamType: t,
                                 guildId: a,
                                 channelId: n,
-                                pid: d,
-                                sourceId: c,
+                                pid: c,
+                                sourceId: d,
                                 audioSourceId: r,
                                 sound: o
                             } = e, f = s.default.getId(), b = (0, l.V9)({
@@ -1078,7 +1078,7 @@
                                 channelId: n,
                                 ownerId: f
                             });
-                            null == d != (null == c) ? (null != d && this._onStreamApplication(b, d), null != c && this._onStreamDirectSource(b, c, r, o)) : new i.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(d, ", source-id: ").concat(c, ")"))
+                            null == c != (null == d) ? (null != c && this._onStreamApplication(b, c), null != d && this._onStreamDirectSource(b, d, r, o)) : new i.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(c, ", source-id: ").concat(d, ")"))
                         }), n.Z.subscribe("STREAM_DELETE", e => {
                             let {
                                 streamKey: t
@@ -1119,26 +1119,26 @@
                 "use strict";
                 a(47120);
                 var n = a(213919),
-                    d = a(570140),
-                    c = a(317770),
+                    c = a(570140),
+                    d = a(317770),
                     i = a(358085);
-                class r extends c.Z {
+                class r extends d.Z {
                     _initialize() {
-                        d.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
+                        c.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
                     }
                     _terminate() {
-                        d.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
+                        c.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
                     }
                     constructor(...e) {
-                        var t, a, d;
-                        super(...e), t = this, a = "handleConnectionOpen", d = e => {
+                        var t, a, c;
+                        super(...e), t = this, a = "handleConnectionOpen", c = e => {
                             ((0, i.isWindows)() || (0, i.isMac)()) && n.encryptAndStoreTokens()
                         }, a in t ? Object.defineProperty(t, a, {
-                            value: d,
+                            value: c,
                             enumerable: !0,
                             configurable: !0,
                             writable: !0
-                        }) : t[a] = d
+                        }) : t[a] = c
                     }
                 }
                 t.Z = new r
@@ -1147,18 +1147,18 @@
                 "use strict";
                 a.d(t, {
                     Z: function() {
-                        return d
+                        return c
                     }
                 });
                 var n = a(272423);
 
-                function d(e) {
+                function c(e) {
                     let t = (0, n.kf)(e);
                     if (null != t) return [t.params.guildId, t.params.channelId];
                     let a = (0, n.B3)(e);
                     if (null != a) {
-                        var d, c;
-                        return [null === (d = a.params) || void 0 === d ? void 0 : d.guildId, null === (c = a.params) || void 0 === c ? void 0 : c.channelId]
+                        var c, d;
+                        return [null === (c = a.params) || void 0 === c ? void 0 : c.guildId, null === (d = a.params) || void 0 === d ? void 0 : d.channelId]
                     }
                     return [void 0, void 0]
                 }
@@ -1168,8 +1168,8 @@
                 a(47120);
                 var n = a(735250);
                 a(470079);
-                var d = a(525654),
-                    c = a.n(d),
+                var c = a(525654),
+                    d = a.n(c),
                     i = a(481060),
                     r = a(570140),
                     o = a(468026),
@@ -1185,28 +1185,28 @@
                         r.Z.unsubscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
                     }
                     constructor(...e) {
-                        var t, a, d;
-                        super(...e), t = this, a = "handlePermission", d = e => {
+                        var t, a, c;
+                        super(...e), t = this, a = "handlePermission", c = e => {
                             let {
                                 kind: t,
                                 granted: a
-                            } = e, d = "Firefox" === c().name ? l.BhN.ENABLE_MIC_FIREFOX : l.BhN.ENABLE_MIC_CHROME;
+                            } = e, c = "Firefox" === d().name ? l.BhN.ENABLE_MIC_FIREFOX : l.BhN.ENABLE_MIC_CHROME;
                             if (!a) {
                                 let e = "audio" !== t;
                                 (0, i.openModal)(t => (0, n.jsx)(o.default, {
                                     title: e ? b.Z.Messages.NO_CAMERA_TITLE : b.Z.Messages.NO_MIC_TITLE,
                                     body: e ? b.Z.Messages.NO_CAMERA_BODY : b.Z.Messages.NO_MIC_BODY,
-                                    onConfirm: () => window.open(s.Z.getArticleURL(d), "_blank"),
+                                    onConfirm: () => window.open(s.Z.getArticleURL(c), "_blank"),
                                     confirmText: b.Z.Messages.HELP_DESK,
                                     ...t
                                 }))
                             }
                         }, a in t ? Object.defineProperty(t, a, {
-                            value: d,
+                            value: c,
                             enumerable: !0,
                             configurable: !0,
                             writable: !0
-                        }) : t[a] = d
+                        }) : t[a] = c
                     }
                 }
                 t.Z = new u
@@ -1215,21 +1215,21 @@
                 "use strict";
                 a.d(t, {
                     Z: function() {
-                        return d
+                        return c
                     }
                 });
                 var n = a(69580);
 
-                function d(e) {
-                    var t, a, d, c;
+                function c(e) {
+                    var t, a, c, d;
                     let i = null == e ? void 0 : e.get("client_id"),
                         r = null == e ? void 0 : null === (t = e.get("scope")) || void 0 === t ? void 0 : t.split(" "),
                         o = null == e ? void 0 : e.get("state"),
                         f = null == e ? void 0 : e.get("redirect_uri"),
                         s = null == e ? void 0 : e.get("response_type"),
                         l = null !== (a = null == e ? void 0 : e.get("nonce")) && void 0 !== a ? a : void 0,
-                        b = null !== (d = null == e ? void 0 : e.get("code_challenge")) && void 0 !== d ? d : void 0,
-                        u = null !== (c = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== c ? c : void 0;
+                        b = null !== (c = null == e ? void 0 : e.get("code_challenge")) && void 0 !== c ? c : void 0,
+                        u = null !== (d = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== d ? d : void 0;
                     return null == i || null == r || null == o || null == f || null == s || ((0, n.openOAuth2Modal)({
                         clientId: i,
                         scopes: r,
@@ -1245,12 +1245,12 @@
             905423: function(e, t, a) {
                 "use strict";
                 var n = a(266067),
-                    d = a(652874),
-                    c = a(981631);
+                    c = a(652874),
+                    d = a(981631);
 
                 function i(e) {
                     let t = (0, n.LX)(null != e ? e : "", {
-                        path: c.Z5c.CHANNEL(":guildId", ":channelId?", ":messageId?")
+                        path: d.Z5c.CHANNEL(":guildId", ":channelId?", ":messageId?")
                     });
                     if (null != t) {
                         let {
@@ -1258,12 +1258,12 @@
                             channelId: a
                         } = t.params;
                         return {
-                            guildId: e === c.ME ? null : e,
+                            guildId: e === d.ME ? null : e,
                             channelId: null != a ? a : null
                         }
                     }
                     let a = (0, n.LX)(null != e ? e : "", {
-                        path: c.Z5c.GUILD_BOOSTING_MARKETING(":guildId")
+                        path: d.Z5c.GUILD_BOOSTING_MARKETING(":guildId")
                     });
                     return null != a ? {
                         guildId: a.params.guildId,
@@ -1273,7 +1273,7 @@
                         channelId: null
                     }
                 }
-                t.Z = (0, d.Z)(e => ({
+                t.Z = (0, c.Z)(e => ({
                     path: null,
                     basePath: "/",
                     guildId: null,
@@ -1307,8 +1307,8 @@
                 "use strict";
                 a(47120), a(411104);
                 var n = a(934951),
-                    d = a(266067),
-                    c = a(38618),
+                    c = a(266067),
+                    d = a(38618),
                     i = a(57132),
                     r = a(215355),
                     o = a(777639),
@@ -1334,10 +1334,10 @@
                         let {
                             pathname: e
                         } = (0, h.s1)().location;
-                        u.Z.getState().resetPath(e), this.unlistenKeyboardChange = u.Z.subscribe(this.handleKeybindRouteChange), c.Z.addChangeListener(this.handleConnectionChange)
+                        u.Z.getState().resetPath(e), this.unlistenKeyboardChange = u.Z.subscribe(this.handleKeybindRouteChange), d.Z.addChangeListener(this.handleConnectionChange)
                     }
                     convertRouteToNavigation(e, t) {
-                        var a, n, c;
+                        var a, n, d;
                         let {
                             pathname: u
                         } = e, h = (0, o.D)(), m = (0, i.cn)(), {
@@ -1363,15 +1363,15 @@
                             return
                         }
                         if (u.startsWith("/channels/")) {
-                            let e = (0, d.LX)(u, {
+                            let e = (0, c.LX)(u, {
                                     path: p.Z5c.CHANNEL(":guildId", ":channelId?", ":messageId?")
                                 }),
-                                t = (0, d.LX)(u, {
+                                t = (0, c.LX)(u, {
                                     path: "".concat(p.Z5c.CHANNEL(":guildId", ":channelId?")).concat(p.Z5c.VOICE_CHAT_CHANNEL_PARTIAL(":voiceGuildId", ":voiceChannelId", ":voiceMessageId?"))
                                 });
                             if (!m) {
                                 let e = h.getRootState();
-                                (null == e ? void 0 : null === (c = e.routes) || void 0 === c ? void 0 : null === (n = c[0]) || void 0 === n ? void 0 : n.name) !== "panels" && (0, s.H)();
+                                (null == e ? void 0 : null === (d = e.routes) || void 0 === d ? void 0 : null === (n = d[0]) || void 0 === n ? void 0 : n.name) !== "panels" && (0, s.H)();
                                 return
                             }
                             if (null != t) {
@@ -1426,7 +1426,7 @@
                             return
                         }
                         if (u.startsWith("/member-verification/")) {
-                            let e = (0, d.LX)(u, {
+                            let e = (0, c.LX)(u, {
                                 path: p.Z5c.GUILD_MEMBER_VERIFICATION(":guildId", ":inviteCode?")
                             });
                             null != e && (0, s.fA)(e.params.guildId, e.params.inviteCode);
@@ -1451,21 +1451,21 @@
                     executeRouteRewrites(e, t) {
                         if (this.routeChangeCount += 1, this.routeChangeCount < 10)
                             for (let a of this.rewrites) {
-                                let d = (0, h.s1)().location.pathname,
-                                    c = a(e, t);
-                                if (null != c) return (0, n.n_)({
+                                let c = (0, h.s1)().location.pathname,
+                                    d = a(e, t);
+                                if (null != d) return (0, n.n_)({
                                     message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
                                     data: {
-                                        replacePath: c.path,
-                                        previousPath: d
+                                        replacePath: d.path,
+                                        previousPath: c
                                     }
-                                }), (0, h.dL)(c.path, c.state), !0
+                                }), (0, h.dL)(d.path, d.state), !0
                             } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
                         return !1
                     }
                     cleanup() {
                         var e, t;
-                        null === (e = this.unlistenHistory) || void 0 === e || e.call(this), this.unlistenHistory = void 0, null === (t = this.unlistenKeyboardChange) || void 0 === t || t.call(this), this.unlistenKeyboardChange = void 0, c.Z.removeChangeListener(this.handleConnectionChange)
+                        null === (e = this.unlistenHistory) || void 0 === e || e.call(this), this.unlistenHistory = void 0, null === (t = this.unlistenKeyboardChange) || void 0 === t || t.call(this), this.unlistenKeyboardChange = void 0, d.Z.removeChangeListener(this.handleConnectionChange)
                     }
                     addRouteChangeListener(e) {
                         return null != this.unlistenHistory && e((0, h.s1)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
@@ -1488,7 +1488,7 @@
                     }
                     constructor() {
                         m(this, "unlistenHistory", void 0), m(this, "unlistenKeyboardChange", void 0), m(this, "rewrites", new Set), m(this, "listeners", new Set), m(this, "routeChangeCount", 0), m(this, "timer", -1), m(this, "connected", !1), m(this, "handleConnectionChange", () => {
-                            let e = c.Z.isConnected(),
+                            let e = d.Z.isConnected(),
                                 t = e && !this.connected;
                             this.connected = e, t && (this.routeChangeCount = 0, this.executeRouteRewrites((0, h.s1)().location, "REPLACE"))
                         }), m(this, "handleRouteChange", (e, t) => {
@@ -1521,8 +1521,8 @@
                     }
                 });
                 var n = a(735250),
-                    d = a(470079),
-                    c = a(470716),
+                    c = a(470079),
+                    d = a(470716),
                     i = a(266067),
                     r = a(304445),
                     o = a(703656);
@@ -1531,7 +1531,7 @@
                     let {
                         children: t
                     } = e;
-                    return d.useEffect(() => (r.Z.initialize(), () => r.Z.cleanup()), []), (0, n.jsx)(c.B6, {
+                    return c.useEffect(() => (r.Z.initialize(), () => r.Z.cleanup()), []), (0, n.jsx)(d.B6, {
                         children: (0, n.jsx)(i.F0, {
                             history: (0, o.s1)(),
                             children: t
@@ -1543,13 +1543,13 @@
                 "use strict";
                 a.d(t, {
                     A: function() {
-                        return d
+                        return c
                     },
                     a: function() {
                         return r
                     }
                 });
-                var n, d, c = a(75834);
+                var n, c, d = a(75834);
 
                 function i(e, t, a) {
                     return t in e ? Object.defineProperty(e, t, {
@@ -1558,10 +1558,10 @@
                         configurable: !0,
                         writable: !0
                     }) : e[t] = a, e
-                }(n = d || (d = {})).STREAM = "stream", n.PAUSE = "pause", n.STOP = "stop";
+                }(n = c || (c = {})).STREAM = "stream", n.PAUSE = "pause", n.STOP = "stop";
                 class r {
                     onStreamBegin(e, t) {
-                        let a = (0, c.e)(e, t);
+                        let a = (0, d.e)(e, t);
                         null == a || null == a.windowHandle ? this.callback({
                             type: "stop"
                         }) : this._stream(a)
@@ -1584,7 +1584,7 @@
                         return (null === (t = this.application) || void 0 === t ? void 0 : t.windowHandle) != null ? this.onCaptureEnd(e, this.application.windowHandle) : this._stop()
                     }
                     _update(e) {
-                        let t = (0, c.s)(e, this.application);
+                        let t = (0, d.s)(e, this.application);
                         if (null != t) return null == t.windowHandle ? this._pause() : this._stream(t);
                         this._stop()
                     }
@@ -1618,7 +1618,7 @@
                 "use strict";
                 a.d(t, {
                     e: function() {
-                        return d
+                        return c
                     },
                     s: function() {
                         return i
@@ -1626,34 +1626,34 @@
                 }), a(47120);
                 var n = a(823379);
 
-                function d(e, t) {
+                function c(e, t) {
                     let a = e.find(e => e.processId === t);
                     return null == a ? null : i(e, a)
                 }
-                let c = "356869127241072640";
+                let d = "356869127241072640";
 
                 function i(e, t) {
                     var a;
                     if (null == t) return null;
-                    if (t.applicationId === c) return function(e, t) {
+                    if (t.applicationId === d) return function(e, t) {
                         let a = t.processPath.length > 1 ? t.processPath[t.processPath.length - 2] : 0,
-                            n = e.filter(e => e.applicationId === c && e.processPath.includes(a)),
-                            d = n.find(e => "league of legends.exe" === e.executableName);
-                        return void 0 !== d ? d : n.length > 0 ? n[0] : null
+                            n = e.filter(e => e.applicationId === d && e.processPath.includes(a)),
+                            c = n.find(e => "league of legends.exe" === e.executableName);
+                        return void 0 !== c ? c : n.length > 0 ? n[0] : null
                     }(e, t);
-                    let d = new Map(e.map(e => [e.processId, e])),
-                        i = t.processPath.map(e => d.get(e)).find(e => null != e);
+                    let c = new Map(e.map(e => [e.processId, e])),
+                        i = t.processPath.map(e => c.get(e)).find(e => null != e);
                     if (null == i) return null;
                     let o = e.map(e => {
-                        let t = e.processPath.findIndex(e => d.has(e));
+                        let t = e.processPath.findIndex(e => c.has(e));
                         return -1 === t ? null : {
                             application: e,
                             rootedPath: e.processPath.slice(t)
                         }
                     }).filter(n.lm).filter(e => e.rootedPath[0] === i.processId);
                     o.sort((e, t) => {
-                        let a = e.rootedPath.map(e => d.get(e)).filter(e => null != e && null != e.windowHandle),
-                            n = r(t.rootedPath.map(e => d.get(e)).filter(e => null != e && null != e.windowHandle), a);
+                        let a = e.rootedPath.map(e => c.get(e)).filter(e => null != e && null != e.windowHandle),
+                            n = r(t.rootedPath.map(e => c.get(e)).filter(e => null != e && null != e.windowHandle), a);
                         return 0 !== n ? n : r(t.rootedPath, e.rootedPath)
                     });
                     let f = null !== (a = o.find(e => null != e.application.windowHandle)) && void 0 !== a ? a : o[0];
@@ -1668,9 +1668,9 @@
                 "use strict";
                 a(47120);
                 var n = a(348327),
-                    d = a.n(n),
-                    c = a(392711),
-                    i = a.n(c),
+                    c = a.n(n),
+                    d = a(392711),
+                    i = a.n(d),
                     r = a(570140),
                     o = a(846027),
                     f = a(287734),
@@ -1703,7 +1703,7 @@
                         if (!!this.isSupported) r.Z.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), r.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), r.Z.unsubscribe("START_SESSION", this.handleViewUpdate), r.Z.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), r.Z.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), r.Z.unsubscribe("CALL_CREATE", this.handleViewUpdate), r.Z.unsubscribe("CALL_UPDATE", this.handleViewUpdate), r.Z.unsubscribe("CALL_DELETE", this.handleViewUpdate), r.Z.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), r.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), r.Z.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), r.Z.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), r.Z.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), r.Z.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate)
                     }
                     setThumbarButtons(e) {
-                        !d()(this.prevButtons, e) && (this.prevButtons = e, g.ZP.setThumbarButtons(e))
+                        !c()(this.prevButtons, e) && (this.prevButtons = e, g.ZP.setThumbarButtons(e))
                     }
                     constructor(...e) {
                         super(...e), O(this, "callbackActions", {
@@ -1728,21 +1728,21 @@
                             let t = m.Z.isSelfMute(),
                                 a = m.Z.isSelfDeaf(),
                                 n = m.Z.isVideoEnabled(),
-                                d = m.Z.isVideoAvailable(),
-                                c = p.Z.getChannel(e),
-                                i = null == c || (0, b.y)(c),
+                                c = m.Z.isVideoAvailable(),
+                                d = p.Z.getChannel(e),
+                                i = null == d || (0, b.y)(d),
                                 {
                                     reachedLimit: r,
                                     limit: o
-                                } = null != c ? (0, l.t)(c) : {
+                                } = null != d ? (0, l.t)(d) : {
                                     reachedLimit: void 0,
                                     limit: void 0
                                 },
                                 f = (0, u.X)({
                                     enabled: n,
                                     join: !1,
-                                    channel: c,
-                                    cameraUnavailable: !d,
+                                    channel: d,
+                                    cameraUnavailable: !c,
                                     hasPermission: i,
                                     channelLimit: o,
                                     channelLimitReached: r
@@ -1751,7 +1751,7 @@
                                 name: g.tS.VIDEO,
                                 active: !n,
                                 tooltip: f,
-                                flags: d ? [] : ["disabled"]
+                                flags: c ? [] : ["disabled"]
                             }, {
                                 name: g.tS.MUTE,
                                 active: t,
@@ -1772,7 +1772,7 @@
             },
             801814: function(e, t, a) {
                 "use strict";
-                var n, d, c, i;
+                var n, c, d, i;
 
                 function r(e, t, a) {
                     return t in e ? Object.defineProperty(e, t, {
@@ -1804,7 +1804,7 @@
                     Z: function() {
                         return s
                     }
-                }), (c = n || (n = {})).CHECKING_FOR_UPDATES = "checking-for-updates", c.INSTALLED_MODULE = "installed-module", c.UPDATE_CHECK_FINISHED = "update-check-finished", c.DOWNLOADING_MODULE = "downloading-module", c.DOWNLOADING_MODULE_PROGRESS = "downloading-module-progress", c.DOWNLOADING_MODULES_FINISHED = "downloading-modules-finished", c.UPDATE_MANUALLY = "update-manually", c.DOWNLOADED_MODULE = "downloaded-module", c.INSTALLING_MODULES_FINISHED = "installing-modules-finished", c.INSTALLING_MODULE = "installing-module", c.INSTALLING_MODULE_PROGRESS = "installing-module-progress", c.NO_PENDING_UPDATES = "no-pending-updates", (i = d || (d = {})).CLOUD_SYNC = "discord_cloudsync", i.DESKTOP_CORE = "discord_desktop_core", i.DISPATCH = "discord_dispatch", i.ERLPACK = "discord_erlpack", i.GAME_UTILS = "discord_game_utils", i.HOOK = "discord_hook", i.KRISP = "discord_krisp", i.MEDIA = "discord_media", i.MODULES = "discord_modules", i.OVERLAY2 = "discord_overlay2", i.RPC = "discord_rpc", i.SPELLCHECK = "discord_spellcheck", i.UPDATER_BOOTSTRAP = "discord_updater_bootstrap", i.UTILS = "discord_utils", i.VIGILANTE = "discord_vigilante", i.VOICE = "discord_voice", i.ZSTD = "discord_zstd";
+                }), (d = n || (n = {})).CHECKING_FOR_UPDATES = "checking-for-updates", d.INSTALLED_MODULE = "installed-module", d.UPDATE_CHECK_FINISHED = "update-check-finished", d.DOWNLOADING_MODULE = "downloading-module", d.DOWNLOADING_MODULE_PROGRESS = "downloading-module-progress", d.DOWNLOADING_MODULES_FINISHED = "downloading-modules-finished", d.UPDATE_MANUALLY = "update-manually", d.DOWNLOADED_MODULE = "downloaded-module", d.INSTALLING_MODULES_FINISHED = "installing-modules-finished", d.INSTALLING_MODULE = "installing-module", d.INSTALLING_MODULE_PROGRESS = "installing-module-progress", d.NO_PENDING_UPDATES = "no-pending-updates", (i = c || (c = {})).CLOUD_SYNC = "discord_cloudsync", i.DESKTOP_CORE = "discord_desktop_core", i.DISPATCH = "discord_dispatch", i.ERLPACK = "discord_erlpack", i.GAME_UTILS = "discord_game_utils", i.HOOK = "discord_hook", i.KRISP = "discord_krisp", i.MEDIA = "discord_media", i.MODULES = "discord_modules", i.OVERLAY2 = "discord_overlay2", i.RPC = "discord_rpc", i.SPELLCHECK = "discord_spellcheck", i.UPDATER_BOOTSTRAP = "discord_updater_bootstrap", i.UTILS = "discord_utils", i.VIGILANTE = "discord_vigilante", i.VOICE = "discord_voice", i.ZSTD = "discord_zstd";
                 class s {
                     handleDownloadingModule(e) {
                         if (!f(e.name)) {
@@ -1840,10 +1840,10 @@
                         }
                         let a = t.foreground ? "foreground" : "background",
                             n = "".concat(a, "_download_ms_").concat(e.name),
-                            d = "".concat(a, "_bytes_").concat(e.name),
-                            c = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
+                            c = "".concat(a, "_bytes_").concat(e.name),
+                            d = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
                             i = !1 === e.receivedBytes ? 0 : e.receivedBytes;
-                        t.foreground ? (this._report.foreground_download_ms_total += c, this._report.foreground_bytes_total += i) : (this._report.background_download_ms_total += c, this._report.background_bytes_total += i), this.incrementReportField(n, c), this.incrementReportField(d, i), delete this._downloadingModules[e.name]
+                        t.foreground ? (this._report.foreground_download_ms_total += d, this._report.foreground_bytes_total += i) : (this._report.background_download_ms_total += d, this._report.background_bytes_total += i), this.incrementReportField(n, d), this.incrementReportField(c, i), delete this._downloadingModules[e.name]
                     }
                     handleInstallingModule(e) {
                         if (!f(e.name)) {
@@ -1865,10 +1865,10 @@
                         if (null == t) return;
                         let a = t.foreground ? "foreground" : "background",
                             n = "".concat(a, "_install_ms_").concat(e.name),
-                            d = "min_version_".concat(e.name),
-                            c = "max_version_".concat(e.name),
+                            c = "min_version_".concat(e.name),
+                            d = "max_version_".concat(e.name),
                             i = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6));
-                        t.foreground ? this._report.foreground_install_ms_total += i : this._report.background_install_ms_total += i, this.incrementReportField(n, i), this.setReportFieldMinimum(d, t.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(c, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
+                        t.foreground ? this._report.foreground_install_ms_total += i : this._report.background_install_ms_total += i, this.incrementReportField(n, i), this.setReportFieldMinimum(c, t.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(d, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
                     }
                     trackEvent(e) {
                         switch (e.type) {
@@ -1903,14 +1903,14 @@
                 "use strict";
                 a(47120);
                 var n = a(317770),
-                    d = a(626135),
-                    c = a(358085),
+                    c = a(626135),
+                    d = a(358085),
                     i = a(998502),
                     r = a(801814),
                     o = a(981631);
                 class f extends n.Z {
                     _initialize() {
-                        if (!!c.isPlatformEmbedded) i.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), i.ZP.on("MODULE_INSTALLED", (e, t, a) => this.processModuleEvents()), i.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
+                        if (!!d.isPlatformEmbedded) i.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), i.ZP.on("MODULE_INSTALLED", (e, t, a) => this.processModuleEvents()), i.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
                             this._handleHistoryResponse(t)
                         }), this.processModuleEvents()
                     }
@@ -1922,8 +1922,8 @@
                         if (null == e) return;
                         let t = 0 === Math.floor(1e3 * Math.random());
                         e.forEach(e => {
-                            "analytics" === e.type ? e.name === o.rMx.UPDATER_METRICS_DOWNLOAD || e.name === o.rMx.UPDATER_METRICS_INSTALL || e.name === o.rMx.UPDATER_METRICS_COMBINED || e.name === o.rMx.UPDATER_METRICS_TRANSITION_STATUS ? t && d.default.track(e.name, e.data) : console.warn("Unknown updater analytic event ".concat(e.name)) : this._tracker.trackEvent(e)
-                        }), this._tracker.submissionReady() && (d.default.track(o.rMx.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset())
+                            "analytics" === e.type ? e.name === o.rMx.UPDATER_METRICS_DOWNLOAD || e.name === o.rMx.UPDATER_METRICS_INSTALL || e.name === o.rMx.UPDATER_METRICS_COMBINED || e.name === o.rMx.UPDATER_METRICS_TRANSITION_STATUS ? t && c.default.track(e.name, e.data) : console.warn("Unknown updater analytic event ".concat(e.name)) : this._tracker.trackEvent(e)
+                        }), this._tracker.submissionReady() && (c.default.track(o.rMx.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset())
                     }
                     constructor(...e) {
                         var t, a, n;
@@ -1948,14 +1948,14 @@
                     }
                 });
                 var n = a(442837),
-                    d = a(430824),
-                    c = a(938475),
+                    c = a(430824),
+                    d = a(938475),
                     i = a(981631);
 
                 function r(e) {
-                    return (0, n.cj)([c.ZP, d.Z], () => {
-                        let t = c.ZP.countVoiceStatesForChannel(e.id),
-                            a = d.Z.getGuild(e.getGuildId());
+                    return (0, n.cj)([d.ZP, c.Z], () => {
+                        let t = d.ZP.countVoiceStatesForChannel(e.id),
+                            a = c.Z.getGuild(e.getGuildId());
                         return null == a ? {
                             reachedLimit: !1,
                             limit: -1
@@ -1970,8 +1970,8 @@
                 }
 
                 function o(e) {
-                    let t = c.ZP.countVoiceStatesForChannel(e.id),
-                        a = d.Z.getGuild(e.getGuildId());
+                    let t = d.ZP.countVoiceStatesForChannel(e.id),
+                        a = c.Z.getGuild(e.getGuildId());
                     return null == a ? {
                         reachedLimit: !1,
                         limit: -1
@@ -1993,12 +1993,12 @@
                 });
                 var n = a(735250);
                 a(470079);
-                var d = a(481060),
-                    c = a(695346),
+                var c = a(481060),
+                    d = a(695346),
                     i = a(981631);
 
                 function r(e, t) {
-                    c.qF.getSetting() ? (0, d.openModalLazy)(async () => {
+                    d.qF.getSetting() ? (0, c.openModalLazy)(async () => {
                         let {
                             default: t
                         } = await Promise.all([a.e("99387"), a.e("5528"), a.e("91018")]).then(a.bind(a, 601572));
@@ -2009,7 +2009,7 @@
                         })
                     }, {
                         modalKey: "camera-preview",
-                        contextKey: t === i.IlC.POPOUT ? d.POPOUT_MODAL_CONTEXT : d.DEFAULT_MODAL_CONTEXT
+                        contextKey: t === i.IlC.POPOUT ? c.POPOUT_MODAL_CONTEXT : c.DEFAULT_MODAL_CONTEXT
                     }) : null == e || e()
                 }
             },
@@ -2030,8 +2030,8 @@
                     }
                 });
                 var n = a(525654),
-                    d = a.n(n),
-                    c = a(271579),
+                    c = a.n(n),
+                    d = a(271579),
                     i = a(314897),
                     r = a(981631);
                 let o = "linux";
@@ -2044,7 +2044,7 @@
 
                 function s() {
                     var e;
-                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null === (e = d().os) || void 0 === e ? void 0 : e.family;
+                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null === (e = c().os) || void 0 === e ? void 0 : e.family;
                     return null == t ? "win" : -1 !== t.indexOf("Ubuntu") || -1 !== t.indexOf("Debian") || -1 !== t.indexOf("Fedora") || -1 !== t.indexOf("Red Hat") || -1 !== t.indexOf("SuSE") || -1 !== t.indexOf("Linux") ? o : -1 !== t.indexOf("OS X") ? "osx" : "win"
                 }
 
@@ -2065,17 +2065,17 @@
                     let n = null != a ? a.toString() : null;
                     switch (t) {
                         case "iOS":
-                            return (0, c.ZP)(null != n ? n : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
+                            return (0, d.ZP)(null != n ? n : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
                                 utmSource: e,
                                 fingerprint: i.default.getFingerprint(),
-                                attemptId: (0, c.WS)()
+                                attemptId: (0, d.WS)()
                             });
                         case "Android":
-                            return (0, c.ZP)(null != n ? n : "https://play.google.com/store/apps/details", {
+                            return (0, d.ZP)(null != n ? n : "https://play.google.com/store/apps/details", {
                                 utmSource: e,
                                 id: "com.discord",
                                 fingerprint: i.default.getFingerprint(),
-                                attemptId: (0, c.WS)()
+                                attemptId: (0, d.WS)()
                             });
                         default:
                             return null != n ? n : "https://www.discord.com"
@@ -2085,17 +2085,17 @@
             240849: function(e, t, a) {
                 "use strict";
                 var n = a(703656),
-                    d = a(556296),
-                    c = a(358085),
+                    c = a(556296),
+                    d = a(358085),
                     i = a(998502),
                     r = a(981631);
 
                 function o(e, t) {
-                    return !(e === r.MAM.BROWSER && d.Z.hasKeybind(r.MoX.MOUSE_BUTTON, t)) && !0
+                    return !(e === r.MAM.BROWSER && c.Z.hasKeybind(r.MoX.MOUSE_BUTTON, t)) && !0
                 }
                 t.Z = new class e {
                     initialize() {
-                        (0, c.isDesktop)() && (i.ZP.on("NAVIGATE_BACK", (e, t) => {
+                        (0, d.isDesktop)() && (i.ZP.on("NAVIGATE_BACK", (e, t) => {
                             o(t, r.qXD.Back) && (0, n.op)()
                         }), i.ZP.on("NAVIGATE_FORWARD", (e, t) => {
                             o(t, r.qXD.Forward) && (0, n.eH)()
@@ -2111,12 +2111,12 @@
                     }
                 }), a(315314), a(610138), a(216116), a(78328), a(815648), a(47120);
                 var n = a(593473),
-                    d = a(591759);
-                let c = e => {
+                    c = a(591759);
+                let d = e => {
                         if (null == e || "" === e) return null;
                         try {
                             let t = new URL(e);
-                            return d.Z.isDiscordHostname(t.hostname) || window.location.host === t.host ? t : null
+                            return c.Z.isDiscordHostname(t.hostname) || window.location.host === t.host ? t : null
                         } catch (e) {
                             return null
                         }
@@ -2124,8 +2124,8 @@
                     i = e => {
                         let t = (0, n.parse)(e);
                         return {
-                            desktop: c(t.desktop_link),
-                            mobile: c(t.mobile_link)
+                            desktop: d(t.desktop_link),
+                            mobile: d(t.mobile_link)
                         }
                     }
             },
@@ -2141,22 +2141,22 @@
                     }
                 }), a(653041), a(47120);
                 var n = a(512722),
-                    d = a.n(n),
-                    c = a(90757),
-                    i = a.n(c),
+                    c = a.n(n),
+                    d = a(90757),
+                    i = a.n(d),
                     r = a(65154);
 
                 function o(e, t, a) {
                     let n = window.DiscordNative;
-                    d()(null != n, "Can't get desktop sources outside of native app"), t = null != t ? t : [r.vA.WINDOW, r.vA.SCREEN], a = null != a ? a : {
+                    c()(null != n, "Can't get desktop sources outside of native app"), t = null != t ? t : [r.vA.WINDOW, r.vA.SCREEN], a = null != a ? a : {
                         width: 150,
                         height: 150
                     };
-                    let c = [];
-                    return t.includes(r.vA.SCREEN) && e.supports(r.AN.SCREEN_PREVIEWS) && (c.push(e.getScreenPreviews(a.width, a.height)), t = t.filter(e => e !== r.vA.SCREEN)), t.includes(r.vA.WINDOW) && e.supports(r.AN.WINDOW_PREVIEWS) && (c.push(e.getWindowPreviews(a.width, a.height)), t = t.filter(e => e !== r.vA.WINDOW)), 0 !== t.length && c.push(n.desktopCapture.getDesktopCaptureSources({
+                    let d = [];
+                    return t.includes(r.vA.SCREEN) && e.supports(r.AN.SCREEN_PREVIEWS) && (d.push(e.getScreenPreviews(a.width, a.height)), t = t.filter(e => e !== r.vA.SCREEN)), t.includes(r.vA.WINDOW) && e.supports(r.AN.WINDOW_PREVIEWS) && (d.push(e.getWindowPreviews(a.width, a.height)), t = t.filter(e => e !== r.vA.WINDOW)), 0 !== t.length && d.push(n.desktopCapture.getDesktopCaptureSources({
                         types: t,
                         thumbnailSize: a
-                    })), Promise.all(c).then(e => i()(e))
+                    })), Promise.all(d).then(e => i()(e))
                 }
             },
             611600: function(e) {
@@ -2171,27 +2171,27 @@
         t = {};
 
     function a(n) {
-        var d = t[n];
-        if (void 0 !== d) return d.exports;
-        var c = t[n] = {
+        var c = t[n];
+        if (void 0 !== c) return c.exports;
+        var d = t[n] = {
             id: n,
             loaded: !1,
             exports: {}
         };
-        return e[n].call(c.exports, c, c.exports, a), c.loaded = !0, c.exports
+        return e[n].call(d.exports, d, d.exports, a), d.loaded = !0, d.exports
     }
     a.m = e, a.c = t, (() => {
         var e = "function" == typeof Symbol ? Symbol("webpack queues") : "__webpack_queues__",
             t = "function" == typeof Symbol ? Symbol("webpack exports") : "__webpack_exports__",
             n = "function" == typeof Symbol ? Symbol("webpack error") : "__webpack_error__",
-            d = function(e) {
+            c = function(e) {
                 e && e.d < 1 && (e.d = 1, e.forEach(function(e) {
                     e.r--
                 }), e.forEach(function(e) {
                     e.r-- ? e.r++ : e()
                 }))
             };
-        a.a = function(a, c, i) {
+        a.a = function(a, d, i) {
             i && ((r = []).d = -1);
             var r, o, f, s, l = new Set,
                 b = a.exports,
@@ -2200,46 +2200,46 @@
                 });
             u[t] = b, u[e] = function(e) {
                 r && e(r), l.forEach(e), u.catch(function() {})
-            }, a.exports = u, c(function(a) {
+            }, a.exports = u, d(function(a) {
                 o = a.map(function(a) {
                     if (null !== a && "object" == typeof a) {
                         if (a[e]) return a;
                         if (a.then) {
-                            var c = [];
-                            c.d = 0, a.then(function(e) {
-                                i[t] = e, d(c)
+                            var d = [];
+                            d.d = 0, a.then(function(e) {
+                                i[t] = e, c(d)
                             }, function(e) {
-                                i[n] = e, d(c)
+                                i[n] = e, c(d)
                             });
                             var i = {};
                             return i[e] = function(e) {
-                                e(c)
+                                e(d)
                             }, i
                         }
                     }
                     var r = {};
                     return r[e] = function() {}, r[t] = a, r
                 });
-                var c, i = function() {
+                var d, i = function() {
                         return o.map(function(e) {
                             if (e[n]) throw e[n];
                             return e[t]
                         })
                     },
                     f = new Promise(function(t) {
-                        (c = function() {
+                        (d = function() {
                             t(i)
                         }).r = 0;
                         var a = function(e) {
-                            e === r || l.has(e) || (l.add(e), e && !e.d && (c.r++, e.push(c)))
+                            e === r || l.has(e) || (l.add(e), e && !e.d && (d.r++, e.push(d)))
                         };
                         o.map(function(t) {
                             t[e](a)
                         })
                     });
-                return c.r ? f : i()
+                return d.r ? f : i()
             }, function(e) {
-                e ? s(u[n] = e) : f(b), d(r)
+                e ? s(u[n] = e) : f(b), c(r)
             }), r && r.d < 0 && (r.d = 0)
         }
     })(), a.n = function(e) {
@@ -2257,13 +2257,13 @@
         } : function(e) {
             return e.__proto__
         };
-        a.t = function(n, d) {
-            if (1 & d && (n = this(n)), 8 & d || "object" == typeof n && n && (4 & d && n.__esModule || 16 & d && "function" == typeof n.then)) return n;
-            var c = Object.create(null);
-            a.r(c);
+        a.t = function(n, c) {
+            if (1 & c && (n = this(n)), 8 & c || "object" == typeof n && n && (4 & c && n.__esModule || 16 & c && "function" == typeof n.then)) return n;
+            var d = Object.create(null);
+            a.r(d);
             var i = {};
             e = e || [null, t({}), t([]), t(t)];
-            for (var r = 2 & d && n;
+            for (var r = 2 & c && n;
                 "object" == typeof r && !~e.indexOf(r); r = t(r)) Object.getOwnPropertyNames(r).forEach(function(e) {
                 i[e] = function() {
                     return n[e]
@@ -2271,7 +2271,7 @@
             });
             return i.default = function() {
                 return n
-            }, a.d(c, i), c
+            }, a.d(d, i), d
         }
     })(), a.d = function(e, t) {
         for (var n in t) a.o(t, n) && !a.o(e, n) && Object.defineProperty(e, n, {
@@ -2460,7 +2460,7 @@
             31093: "35ed0dc9a7218d76e742",
             31177: "f35d851e685c0e2c6de4",
             31426: "4df0ac8b3f684d6995af",
-            31649: "2bfb81c3a74cfe293d38",
+            31649: "79c522e9324d907e0f7a",
             31835: "27cd0353da00895fe6b4",
             3190: "a026667e17656e7faa1f",
             32006: "8f3c2586826c9030f62b",
@@ -2686,7 +2686,7 @@
             561: "54b68fffb15c9a1c30fd",
             56236: "b4f92e54c3feadf9ff17",
             56268: "9088d541fe8d76e2769e",
-            56399: "da0f33f2228a85b5ff54",
+            56399: "28d3cfcc80b2b155a7a1",
             56446: "ab461a15d7eed3cc7b17",
             56496: "30ec5cea5128c59f0c16",
             56826: "2bd909350981f83549b2",
@@ -3015,7 +3015,7 @@
             94064: "e61b5af42556ddd35c8f",
             94364: "6512ee43b08cc1f7dccb",
             94566: "5b66f64055b9769287f1",
-            94864: "d64bda86d0ba6bf2579e",
+            94864: "8d5763f733c2aa9a9fdf",
             94889: "3bcce8ed555cc6e2235c",
             94912: "5074e5e820f01d55d196",
             95093: "19c19e47050cb9e1c1af",
@@ -3086,24 +3086,24 @@
     }, (() => {
         var e = {},
             t = "discord_app:";
-        a.l = function(n, d, c, i) {
+        a.l = function(n, c, d, i) {
             if (e[n]) {
-                e[n].push(d);
+                e[n].push(c);
                 return
             }
-            if (void 0 !== c) {
+            if (void 0 !== d) {
                 for (var r, o, f = document.getElementsByTagName("script"), s = 0; s < f.length; s++) {
                     var l = f[s];
-                    if (l.getAttribute("src") == n || l.getAttribute("data-webpack") == t + c) {
+                    if (l.getAttribute("src") == n || l.getAttribute("data-webpack") == t + d) {
                         r = l;
                         break
                     }
                 }
-            }!r && (o = !0, (r = document.createElement("script")).charset = "utf-8", r.timeout = 120, a.nc && r.setAttribute("nonce", a.nc), r.setAttribute("data-webpack", t + c), r.src = n), e[n] = [d];
+            }!r && (o = !0, (r = document.createElement("script")).charset = "utf-8", r.timeout = 120, a.nc && r.setAttribute("nonce", a.nc), r.setAttribute("data-webpack", t + d), r.src = n), e[n] = [c];
             var b = function(t, a) {
                     r.onerror = r.onload = null, clearTimeout(u);
-                    var d = e[n];
-                    if (delete e[n], r.parentNode && r.parentNode.removeChild(r), d && d.forEach(function(e) {
+                    var c = e[n];
+                    if (delete e[n], r.parentNode && r.parentNode.removeChild(r), c && c.forEach(function(e) {
                             return e(a)
                         }), t) return t(a)
                 },
@@ -3123,38 +3123,38 @@
         return e.paths = [], !e.children && (e.children = []), e
     }, (() => {
         var e = [];
-        a.O = function(t, n, d, c) {
+        a.O = function(t, n, c, d) {
             if (n) {
-                c = c || 0;
-                for (var i = e.length; i > 0 && e[i - 1][2] > c; i--) e[i] = e[i - 1];
-                e[i] = [n, d, c];
+                d = d || 0;
+                for (var i = e.length; i > 0 && e[i - 1][2] > d; i--) e[i] = e[i - 1];
+                e[i] = [n, c, d];
                 return
             }
             for (var r = 1 / 0, i = 0; i < e.length; i++) {
-                for (var n = e[i][0], d = e[i][1], c = e[i][2], o = !0, f = 0; f < n.length; f++)(!1 & c || r >= c) && Object.keys(a.O).every(function(e) {
+                for (var n = e[i][0], c = e[i][1], d = e[i][2], o = !0, f = 0; f < n.length; f++)(!1 & d || r >= d) && Object.keys(a.O).every(function(e) {
                     return a.O[e](n[f])
-                }) ? n.splice(f--, 1) : (o = !1, c < r && (r = c));
+                }) ? n.splice(f--, 1) : (o = !1, d < r && (r = d));
                 if (o) {
                     e.splice(i--, 1);
-                    var s = d();
+                    var s = c();
                     void 0 !== s && (t = s)
                 }
             }
             return t
         }
-    })(), a.p = "/assets/", a.j = "12633", a.v = function(e, t, n, d) {
-        var c = fetch(a.p + "" + n + ".module.wasm"),
+    })(), a.p = "/assets/", a.j = "12633", a.v = function(e, t, n, c) {
+        var d = fetch(a.p + "" + n + ".module.wasm"),
             i = function() {
-                return c.then(function(e) {
+                return d.then(function(e) {
                     return e.arrayBuffer()
                 }).then(function(e) {
-                    return WebAssembly.instantiate(e, d)
+                    return WebAssembly.instantiate(e, c)
                 }).then(function(t) {
                     return Object.assign(e, t.instance.exports)
                 })
             };
-        return c.then(function(t) {
-            return "function" == typeof WebAssembly.instantiateStreaming ? WebAssembly.instantiateStreaming(t, d).then(function(t) {
+        return d.then(function(t) {
+            return "function" == typeof WebAssembly.instantiateStreaming ? WebAssembly.instantiateStreaming(t, c).then(function(t) {
                 return Object.assign(e, t.instance.exports)
             }, function(e) {
                 if ("application/wasm" !== t.headers.get("Content-Type")) return console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", e), i();
@@ -3178,21 +3178,21 @@
             },
             t = "discord_app",
             n = "data-webpack-loading",
-            d = function(e, d, c, i) {
+            c = function(e, c, d, i) {
                 var r, o, f = "chunk-" + e;
                 if (!i) {
                     for (var s = document.getElementsByTagName("link"), l = 0; l < s.length; l++) {
                         var b = s[l],
                             u = b.getAttribute("href") || b.href;
-                        if (u && !u.startsWith(a.p) && (u = a.p + (u.startsWith("/") ? u.slice(1) : u)), "stylesheet" == b.rel && (u && u.startsWith(d) || b.getAttribute("data-webpack") == t + ":" + f)) {
+                        if (u && !u.startsWith(a.p) && (u = a.p + (u.startsWith("/") ? u.slice(1) : u)), "stylesheet" == b.rel && (u && u.startsWith(c) || b.getAttribute("data-webpack") == t + ":" + f)) {
                             r = b;
                             break
                         }
                     }
-                    if (!c) return r
-                }!r && (o = !0, (r = document.createElement("link")).setAttribute("data-webpack", t + ":" + f), r.setAttribute(n, 1), r.rel = "stylesheet", r.href = d);
+                    if (!d) return r
+                }!r && (o = !0, (r = document.createElement("link")).setAttribute("data-webpack", t + ":" + f), r.setAttribute(n, 1), r.rel = "stylesheet", r.href = c);
                 var h = function(e, t) {
-                    if (r.onerror = r.onload = null, r.removeAttribute(n), clearTimeout(p), t && "load" != t.type && r.parentNode.removeChild(r), c(t), e) return e(t)
+                    if (r.onerror = r.onload = null, r.removeAttribute(n), clearTimeout(p), t && "load" != t.type && r.parentNode.removeChild(r), d(t), e) return e(t)
                 };
                 if (r.getAttribute(n)) {
                     var p = setTimeout(h.bind(null, void 0, {
@@ -3207,56 +3207,56 @@
                 return i ? i.parentNode.insertBefore(r, i) : o && document.head.appendChild(r), r
             };
         a.f.css = function(t, n) {
-            var c = a.o(e, t) ? e[t] : void 0;
-            if (0 !== c) {
-                if (c) n.push(c[2]);
+            var d = a.o(e, t) ? e[t] : void 0;
+            if (0 !== d) {
+                if (d) n.push(d[2]);
                 else if (/^(4923|9938)7$/.test(t)) {
                     var i = new Promise(function(a, n) {
-                        c = e[t] = [a, n]
+                        d = e[t] = [a, n]
                     });
-                    n.push(c[2] = i);
+                    n.push(d[2] = i);
                     var r = a.p + a.k(t),
                         o = Error();
-                    d(t, r, function(n) {
-                        if (a.o(e, t) && (0 !== (c = e[t]) && (e[t] = void 0), c)) {
+                    c(t, r, function(n) {
+                        if (a.o(e, t) && (0 !== (d = e[t]) && (e[t] = void 0), d)) {
                             if ("load" !== n.type) {
-                                var d = n && n.type,
+                                var c = n && n.type,
                                     i = n && n.target && n.target.src;
-                                o.message = "Loading css chunk " + t + " failed.\n(" + d + ": " + i + ")", o.name = "ChunkLoadError", o.type = d, o.request = i, c[1](o)
-                            } else c[0]()
+                                o.message = "Loading css chunk " + t + " failed.\n(" + c + ": " + i + ")", o.name = "ChunkLoadError", o.type = c, o.request = i, d[1](o)
+                            } else d[0]()
                         }
                     })
                 } else e[t] = 0
             }
         };
-        var c = function(t, a) {
+        var d = function(t, a) {
                 var n = a[0];
                 t && t(a);
-                for (var d = 0; d < n.length; d++) void 0 === e[n[d]] && (e[n[d]] = 0)
+                for (var c = 0; c < n.length; c++) void 0 === e[n[c]] && (e[n[c]] = 0)
             },
             i = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
-        i.forEach(c.bind(null, 0)), i.push = c.bind(null, i.push.bind(i))
+        i.forEach(d.bind(null, 0)), i.push = d.bind(null, i.push.bind(i))
     })(), (() => {
         a.b = document.baseURI || self.location.href;
         var e = {
             12633: 0
         };
         a.f.j = function(t, n) {
-            var d = a.o(e, t) ? e[t] : void 0;
-            if (0 !== d) {
-                if (d) n.push(d[2]);
+            var c = a.o(e, t) ? e[t] : void 0;
+            if (0 !== c) {
+                if (c) n.push(c[2]);
                 else {
-                    var c = new Promise(function(a, n) {
-                        d = e[t] = [a, n]
+                    var d = new Promise(function(a, n) {
+                        c = e[t] = [a, n]
                     });
-                    n.push(d[2] = c);
+                    n.push(c[2] = d);
                     var i = a.p + a.u(t),
                         r = Error();
                     a.l(i, function(n) {
-                        if (a.o(e, t) && (0 !== (d = e[t]) && (e[t] = void 0), d)) {
-                            var c = n && ("load" === n.type ? "missing" : n.type),
+                        if (a.o(e, t) && (0 !== (c = e[t]) && (e[t] = void 0), c)) {
+                            var d = n && ("load" === n.type ? "missing" : n.type),
                                 i = n && n.target && n.target.src;
-                            r.message = "Loading chunk " + t + " failed.\n(" + c + ": " + i + ")", r.name = "ChunkLoadError", r.type = c, r.request = i, d[1](r)
+                            r.message = "Loading chunk " + t + " failed.\n(" + d + ": " + i + ")", r.name = "ChunkLoadError", r.type = d, r.request = i, c[1](r)
                         }
                     }, "chunk-" + t, t)
                 }
@@ -3265,17 +3265,17 @@
             return 0 === e[t]
         };
         var t = function(t, n) {
-                var d = n[0],
-                    c = n[1],
+                var c = n[0],
+                    d = n[1],
                     i = n[2],
                     r, o, f = 0;
-                if (d.some(function(t) {
+                if (c.some(function(t) {
                         return 0 !== e[t]
                     })) {
-                    for (r in c) a.o(c, r) && (a.m[r] = c[r]);
+                    for (r in d) a.o(d, r) && (a.m[r] = d[r]);
                     if (i) var s = i(a)
                 }
-                for (t && t(n); f < d.length; f++) o = d[f], a.o(e, o) && e[o] && e[o][0](), e[o] = 0;
+                for (t && t(n); f < c.length; f++) o = c[f], a.o(e, o) && e[o] && e[o][0](), e[o] = 0;
                 return a.O(s)
             },
             n = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
@@ -3286,4 +3286,4 @@
     });
     n = a.O(n)
 })();
-//# sourceMappingURL=web.0f6477803c37ade6417c.js.map
+//# sourceMappingURL=web.e714185e1a522f274487.js.map
