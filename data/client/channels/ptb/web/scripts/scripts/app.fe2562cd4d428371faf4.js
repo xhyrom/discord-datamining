@@ -22010,6 +22010,7 @@
                 fullSize: "fullSize_d0a252",
                 panel: "panel_d0a252",
                 visibleContainer: "visibleContainer_d0a252",
+                reactReplyBar: "reactReplyBar_d0a252",
                 statusBubbleCopyStatusCursor: "statusBubbleCopyStatusCursor_d0a252",
                 statusBubbleOuterStatusCursor: "statusBubbleOuterStatusCursor_d0a252",
                 statusBubbleShape: "statusBubbleShape_d0a252",
@@ -22079,6 +22080,14 @@
                 visible: "visible_a80370",
                 color: "color_a80370",
                 tooltip: "tooltip_a80370"
+            }
+        },
+        517117: function(e, t, n) {
+            e.exports = {
+                popover: "popover_a64b81",
+                visible: "visible_a64b81",
+                button: "button_a64b81",
+                icon: "icon_a64b81"
             }
         },
         66257: function(e, t, n) {

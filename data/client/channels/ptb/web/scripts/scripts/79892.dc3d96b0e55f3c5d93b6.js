@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304313", ", Version Hash: ").concat("64ecc4dcd96a08a39031653a39df04fc2a055299")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304325", ", Version Hash: ").concat("5d3056848cb5cb3a3296cf3b32cebe212fad5bfe")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -51819,6 +51819,8 @@
                 USER_PROFILE_ACTIVITY_LISTENING_TO: "Listening to **{name}**",
                 USER_PROFILE_IN_GUILD_DETAILS: "in {guildName}",
                 USER_PROFILE_REMOVE_ROLE: "Remove Role",
+                USER_PROFILE_SEND_REACTION: "Send Reaction",
+                USER_PROFILE_REPLY: "Reply",
                 SERVER_INSIGHTS: "Server Insights",
                 GUILD_ANALYTICS_DESCRIPTION: "We’ve put together a bunch of helpful data to help you better run your community. Learn how active your community is, where new members are coming from, and much more. Use what you learn to make informed decisions to improve your server’s engagement!\n\nAnalytics about Announcement Channels, Server Discovery, and Welcome Screen also live here.",
                 GUILD_ANALYTICS_DEVELOPERS_CTA: "Server Insights is hosted on a separate website so that it’s easier to share links and browse cross platform.",
@@ -96355,8 +96357,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304313", "304313"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304313")), t = 0), t
+                let t = parseInt((e = "304325", "304325"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304325")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124568,8 +124570,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304313",
-                    versionHash: "64ecc4dcd96a08a39031653a39df04fc2a055299"
+                    buildNumber: "304325",
+                    versionHash: "5d3056848cb5cb3a3296cf3b32cebe212fad5bfe"
                 }
             }
             n.d(t, {
@@ -183267,8 +183269,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719251540272",
-                                    build_number: "304313"
+                                    built_at: "1719252605061",
+                                    build_number: "304325"
                                 }
                             },
                             retries: 1
@@ -220735,7 +220737,7 @@
                     CDN_HOST: n
                 } = window.GLOBAL_ENV;
                 return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(T.ANM.BADGE_ICON(e))
-            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (r = _ || (_ = {})).ROLES = "ROLES", r.NOTE = "NOTE", (s = c || (c = {})).POPOUT = "POPOUT", s.MODAL = "MODAL", s.SETTINGS = "SETTINGS", s.PANEL = "PANEL", s.CARD = "CARD", s.POMELO_POPOUT = "POMELO_POPOUT", s.CANCEL_MODAL = "CANCEL_MODAL", s.BITE_SIZE = "BITE_SIZE", s.FULL_SIZE = "FULL_SIZE", (o = d || (d = {})).POPOUT = "POPOUT", o.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", o.MODAL = "MODAL", o.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", o.DM_PANEL = "DM_PANEL", o.SIMPLIFIED_DM_PANEL = "SIMPLIFIED_DM_PANEL", o.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", o.ACTION_SHEET = "ACTION_SHEET", o.SIMPLIFIED_ACCOUNT_POPOUT = "SIMPLIFIED_ACCOUNT_POPOUT", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (l = I || (I = {})).VIEW = "VIEW", l.SEND_MESSAGE = "SEND_MESSAGE", l.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", l.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", l.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", l.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", l.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", l.REMOVE_FRIEND = "REMOVE_FRIEND", l.BLOCK = "BLOCK", l.UNBLOCK = "UNBLOCK", l.REPORT = "REPORT", l.COPY_USERNAME = "COPY_USERNAME", l.COPY_USER_ID = "COPY_USER_ID", l.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", l.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", l.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", l.PRESS_OPTIONS = "PRESS_OPTIONS", l.HOVER_BADGE = "HOVER_BADGE", l.PRESS_BADGE = "PRESS_BADGE", l.PRESS_SECTION = "PRESS_SECTION", l.PRESS_PRONOUNS = "PRESS_PRONOUNS", l.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", l.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", l.PRESS_SET_STATUS = "PRESS_SET_STATUS", l.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", l.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", l.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", l.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", l.JOIN_ACTIVITY = "JOIN_ACTIVITY", l.SET_NOTE = "SET_NOTE", l.SET_VOLUME = "SET_VOLUME", l.EDIT_PROFILE = "EDIT_PROFILE", l.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", l.VOICE_CALL = "VOICE_CALL", l.VIDEO_CALL = "VIDEO_CALL", l.MUTE = "MUTE", l.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", l.DISABLE_VIDEO = "DISABLE_VIDEO", l.DEAFEN = "DEAFEN", l.DISCONNECT = "DISCONNECT", l.ADD_ROLE = "ADD_ROLE", l.REMOVE_ROLE = "REMOVE_ROLE", l.PRESS_APP_CONNECTION = "PRESS_APP_CONNECTION", l.VIEW_SECURE_FRAMES_VERIFICATION_CODE = "VIEW_SECURE_FRAMES_VERIFICATION_CODE"
+            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (r = _ || (_ = {})).ROLES = "ROLES", r.NOTE = "NOTE", (s = c || (c = {})).POPOUT = "POPOUT", s.MODAL = "MODAL", s.SETTINGS = "SETTINGS", s.PANEL = "PANEL", s.CARD = "CARD", s.POMELO_POPOUT = "POMELO_POPOUT", s.CANCEL_MODAL = "CANCEL_MODAL", s.BITE_SIZE = "BITE_SIZE", s.FULL_SIZE = "FULL_SIZE", (o = d || (d = {})).POPOUT = "POPOUT", o.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", o.MODAL = "MODAL", o.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", o.DM_PANEL = "DM_PANEL", o.SIMPLIFIED_DM_PANEL = "SIMPLIFIED_DM_PANEL", o.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", o.ACTION_SHEET = "ACTION_SHEET", o.SIMPLIFIED_ACCOUNT_POPOUT = "SIMPLIFIED_ACCOUNT_POPOUT", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (l = I || (I = {})).VIEW = "VIEW", l.SEND_MESSAGE = "SEND_MESSAGE", l.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", l.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", l.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", l.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", l.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", l.REMOVE_FRIEND = "REMOVE_FRIEND", l.BLOCK = "BLOCK", l.UNBLOCK = "UNBLOCK", l.REPORT = "REPORT", l.COPY_USERNAME = "COPY_USERNAME", l.COPY_USER_ID = "COPY_USER_ID", l.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", l.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", l.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", l.PRESS_OPTIONS = "PRESS_OPTIONS", l.HOVER_BADGE = "HOVER_BADGE", l.PRESS_BADGE = "PRESS_BADGE", l.PRESS_SECTION = "PRESS_SECTION", l.PRESS_PRONOUNS = "PRESS_PRONOUNS", l.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", l.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", l.PRESS_SET_STATUS = "PRESS_SET_STATUS", l.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", l.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", l.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", l.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", l.PRESS_REACT = "PRESS_REACT", l.PRESS_REPLY = "PRESS_REPLY", l.JOIN_ACTIVITY = "JOIN_ACTIVITY", l.SET_NOTE = "SET_NOTE", l.SET_VOLUME = "SET_VOLUME", l.EDIT_PROFILE = "EDIT_PROFILE", l.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", l.VOICE_CALL = "VOICE_CALL", l.VIDEO_CALL = "VIDEO_CALL", l.MUTE = "MUTE", l.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", l.DISABLE_VIDEO = "DISABLE_VIDEO", l.DEAFEN = "DEAFEN", l.DISCONNECT = "DISCONNECT", l.ADD_ROLE = "ADD_ROLE", l.REMOVE_ROLE = "REMOVE_ROLE", l.PRESS_APP_CONNECTION = "PRESS_APP_CONNECTION", l.VIEW_SECURE_FRAMES_VERIFICATION_CODE = "VIEW_SECURE_FRAMES_VERIFICATION_CODE"
         },
         255564: function(e, t, n) {
             "use strict";
@@ -221175,6 +221177,42 @@
                         originalFriendingEnabled: a,
                         improvedFriendingEnabled: l || !a && o
                     }
+                }
+        },
+        317179: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                t: function() {
+                    return r
+                }
+            });
+            let i = (0, n(818083).B)({
+                    kind: "user",
+                    id: "2024-06_profile_react_reply",
+                    label: "Simplified Profile React Reply",
+                    defaultConfig: {
+                        statusReactReplyEnabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable Status React / Reply",
+                        config: {
+                            statusReactReplyEnabled: !0
+                        }
+                    }]
+                }),
+                r = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !0,
+                        trackExposureOptions: r = {}
+                    } = e;
+                    return i.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n,
+                        trackExposureOptions: r
+                    })
                 }
         },
         350327: function(e, t, n) {
@@ -223465,7 +223503,7 @@
             "use strict";
             n.d(t, {
                 J: function() {
-                    return O
+                    return p
                 }
             }), n(47120);
             var i = n(735250),
@@ -223477,169 +223515,176 @@
                 u = n(846519),
                 _ = n(481060),
                 c = n(788307),
-                d = n(607070),
-                E = n(100527),
-                I = n(906732),
-                T = n(594174),
-                h = n(751009),
-                S = n(785717),
-                f = n(228168),
-                N = n(689938),
-                A = n(739550);
-            let m = "text-sm/medium";
+                d = n(727637),
+                E = n(607070),
+                I = n(100527),
+                T = n(906732),
+                h = n(594174),
+                S = n(751009),
+                f = n(785717),
+                N = n(825801),
+                A = n(228168),
+                m = n(689938),
+                O = n(739550);
+            let R = "text-sm/medium";
 
-            function O(e) {
+            function p(e) {
                 let {
                     user: t,
                     statusActivity: s,
-                    profileType: O,
-                    hasEntered: R = !0,
-                    animate: p = !0,
-                    onClose: g
+                    profileType: p,
+                    hasEntered: g = !0,
+                    animate: C = !0,
+                    onClose: v
                 } = e, {
-                    modifyStatusEnabled: C
-                } = (0, h.K)({
+                    modifyStatusEnabled: L
+                } = (0, S.K)({
                     location: "UserProfileCustomStatusBubble"
                 }), {
-                    analyticsLocations: v
-                } = (0, I.ZP)(E.Z.PROFILE_CUSTOM_STATUS), {
-                    trackUserProfileAction: L
-                } = (0, S.KZ)(), D = (0, l.e7)([T.default], () => T.default.getCurrentUser()), M = t.id === (null == D ? void 0 : D.id), P = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [y, U] = r.useState(!0), [b] = r.useState(() => new u.V7), G = r.useRef(null), w = r.useRef(null), B = r.useRef(null), k = r.useRef(null), x = (null == s ? void 0 : s.state) != null && "" !== s.state ? s.state : null, V = null != x && x.length > 0, {
-                    emoji: Z
-                } = null != s ? s : {}, H = null != Z, F = H && !V, Y = H || V, j = M && !Y && C, [W, K] = r.useState(F);
+                    analyticsLocations: D
+                } = (0, T.ZP)(I.Z.PROFILE_CUSTOM_STATUS), {
+                    trackUserProfileAction: M
+                } = (0, f.KZ)(), P = (0, l.e7)([h.default], () => h.default.getCurrentUser()), y = t.id === (null == P ? void 0 : P.id), U = (0, l.e7)([E.Z], () => E.Z.useReducedMotion), [b, G] = r.useState(!0), [w] = r.useState(() => new u.V7), B = r.useRef(null), k = r.useRef(null), x = r.useRef(null), V = r.useRef(null), Z = r.useRef(null), H = (0, d.Z)(Z), F = (null == s ? void 0 : s.state) != null && "" !== s.state ? s.state : null, Y = null != F && F.length > 0, {
+                    emoji: j
+                } = null != s ? s : {}, W = null != j, K = W && !Y, z = W || Y, q = y && !z && L, [X, Q] = r.useState(K);
                 r.useLayoutEffect(() => {
-                    if (null == G.current || F) return;
-                    let e = Math.floor(G.current.getBoundingClientRect().height);
-                    if (K(F || e <= 18), R) {
+                    if (null == B.current || K) return;
+                    let e = Math.floor(B.current.getBoundingClientRect().height);
+                    if (Q(K || e <= 18), g) {
                         var t, n, i, r;
-                        w.current = null !== (i = null === (t = G.current) || void 0 === t ? void 0 : t.getBoundingClientRect().height) && void 0 !== i ? i : 144, k.current = null !== (r = null === (n = B.current) || void 0 === n ? void 0 : n.getBoundingClientRect().height) && void 0 !== r ? r : 36
+                        k.current = null !== (i = null === (t = B.current) || void 0 === t ? void 0 : t.getBoundingClientRect().height) && void 0 !== i ? i : 144, V.current = null !== (r = null === (n = x.current) || void 0 === n ? void 0 : n.getBoundingClientRect().height) && void 0 !== r ? r : 36
                     }
-                }, [R, F]);
-                let [z, q] = (0, a.useSpring)(() => ({
+                }, [g, K]);
+                let [J, $] = (0, a.useSpring)(() => ({
                     maxHeight: "".concat(36, "px"),
                     config: {
                         clamp: !0,
-                        immediate: P,
+                        immediate: U,
                         duration: 150
                     }
                 }));
-                if (r.useEffect(() => () => b.stop(), [b]), !Y && !j) return null;
-                let X = e => {
+                if (r.useEffect(() => () => w.stop(), [w]), !z && !q) return null;
+                let ee = e => {
                         var t, n;
-                        if (!W) {
-                            e ? q({
-                                maxHeight: "".concat(Math.min(null !== (t = w.current) && void 0 !== t ? t : 144, 144), "px"),
+                        if (!X) {
+                            e ? $({
+                                maxHeight: "".concat(Math.min(null !== (t = k.current) && void 0 !== t ? t : 144, 144), "px"),
                                 delay: 300
-                            }) : q({
-                                maxHeight: "".concat(Math.min(null !== (n = k.current) && void 0 !== n ? n : 36, 36), "px"),
+                            }) : $({
+                                maxHeight: "".concat(Math.min(null !== (n = V.current) && void 0 !== n ? n : 36, 36), "px"),
                                 delay: 0
                             });
-                            b.start(e ? 300 : 150, () => {
-                                U(!e)
+                            w.start(e ? 300 : 150, () => {
+                                G(!e)
                             })
                         }
                     },
-                    Q = () => (0, i.jsxs)("div", {
-                        className: A.content,
+                    et = () => (0, i.jsxs)("div", {
+                        className: O.content,
                         children: [(0, i.jsx)(_.CirclePlusIcon, {
-                            className: A.addStatusIcon,
-                            colorClass: A.addStatusIconColor
+                            className: O.addStatusIcon,
+                            colorClass: O.addStatusIconColor
                         }), (0, i.jsx)(_.Text, {
-                            variant: m,
-                            className: A.addStatusPrompt,
-                            children: N.Z.Messages.USER_SETTINGS_ADD_STATUS
+                            variant: R,
+                            className: O.addStatusPrompt,
+                            children: m.Z.Messages.USER_SETTINGS_ADD_STATUS
                         })]
                     }),
-                    J = () => H ? (0, i.jsx)(c.I, {
-                        className: V ? A.statusEmojiInline : A.statusEmojiOnly,
-                        emoji: Z,
-                        animate: p,
+                    en = () => W ? (0, i.jsx)(c.I, {
+                        className: Y ? O.statusEmojiInline : O.statusEmojiOnly,
+                        emoji: j,
+                        animate: C,
                         hideTooltip: !1,
-                        tooltipDelay: f.vB
+                        tooltipDelay: A.vB
                     }) : null,
-                    $ = () => V ? (0, i.jsx)(_.Text, {
-                        variant: m,
-                        className: A.statusText,
-                        children: x
+                    ei = () => Y ? (0, i.jsx)(_.Text, {
+                        variant: R,
+                        className: O.statusText,
+                        children: F
                     }) : null,
-                    ee = {
-                        [A.biteSize]: O === f.y0.BITE_SIZE,
-                        [A.fullSize]: O === f.y0.FULL_SIZE,
-                        [A.panel]: O === f.y0.PANEL
+                    er = {
+                        [O.biteSize]: p === A.y0.BITE_SIZE,
+                        [O.fullSize]: p === A.y0.FULL_SIZE,
+                        [O.panel]: p === A.y0.PANEL
                     },
-                    et = o()(A.statusBubbleOuter, ee, {
-                        [A.statusBubbleShape]: !V && H || !W,
-                        [A.statusBubbleSingleLineWithTextShape]: W && V || j,
-                        [A.statusBubbleOuterStatusCursor]: j
+                    es = o()(O.statusBubbleOuter, er, {
+                        [O.statusBubbleShape]: !Y && W || !X,
+                        [O.statusBubbleSingleLineWithTextShape]: X && Y || q,
+                        [O.statusBubbleOuterStatusCursor]: q
                     }),
-                    en = o()(A.statusBubble, {
-                        [A.statusBubbleShape]: !V && H || !W,
-                        [A.statusBubbleSingleLineWithTextShape]: W && V || j,
-                        [A.statusBubbleEmojiOnlyPadding]: F,
-                        [A.statusBubbleWithTextPadding]: V || j,
-                        [A.statusBubbleWithTextMinWidth]: V,
-                        [A.statusBubbleCopyStatusCursor]: Y
+                    eo = o()(O.statusBubble, {
+                        [O.statusBubbleShape]: !Y && W || !X,
+                        [O.statusBubbleSingleLineWithTextShape]: X && Y || q,
+                        [O.statusBubbleEmojiOnlyPadding]: K,
+                        [O.statusBubbleWithTextPadding]: Y || q,
+                        [O.statusBubbleWithTextMinWidth]: Y,
+                        [O.statusBubbleCopyStatusCursor]: z
                     });
                 return (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
-                        className: o()(A.invisibleContainer, ee),
+                        className: o()(O.invisibleContainer, er),
                         children: (0, i.jsx)("div", {
-                            className: et,
+                            className: es,
                             children: (0, i.jsxs)("span", {
-                                className: en,
-                                children: [j && Q(), Y && (0, i.jsxs)("div", {
-                                    className: o()(A.content, A.clamp, A.placeholderWidth, {
-                                        [A.panel]: O === f.y0.PANEL
+                                className: eo,
+                                children: [q && et(), z && (0, i.jsxs)("div", {
+                                    className: o()(O.content, O.clamp, O.placeholderWidth, {
+                                        [O.panel]: p === A.y0.PANEL
+                                    }),
+                                    ref: x,
+                                    children: [en(), ei()]
+                                }), z && (0, i.jsxs)("div", {
+                                    className: o()(O.content, O.unclamp, O.placeholderWidth, O.incorporeal, {
+                                        [O.panel]: p === A.y0.PANEL
                                     }),
                                     ref: B,
-                                    children: [J(), $()]
-                                }), Y && (0, i.jsxs)("div", {
-                                    className: o()(A.content, A.unclamp, A.placeholderWidth, A.incorporeal, {
-                                        [A.panel]: O === f.y0.PANEL
-                                    }),
-                                    ref: G,
-                                    children: [J(), $()]
+                                    children: [en(), ei()]
                                 })]
                             })
                         })
-                    }), (0, i.jsx)("div", {
-                        className: o()(A.visibleContainer, ee),
-                        children: (0, i.jsx)(_.Clickable, {
+                    }), (0, i.jsxs)("div", {
+                        className: o()(O.visibleContainer, er),
+                        ref: Z,
+                        children: [(0, i.jsx)(N.Z, {
+                            isHovering: H,
+                            location: "UserProfileCustomStatusBubble",
+                            className: O.reactReplyBar
+                        }), (0, i.jsx)(_.Clickable, {
                             tabIndex: 0,
-                            className: et,
-                            onFocus: () => X(!0),
-                            onBlur: () => X(!1),
-                            onMouseEnter: () => X(!0),
-                            onMouseLeave: () => X(!1),
-                            onClick: j ? () => {
-                                L({
+                            className: es,
+                            onFocus: () => ee(!0),
+                            onBlur: () => ee(!1),
+                            onMouseEnter: () => ee(!0),
+                            onMouseLeave: () => ee(!1),
+                            onClick: q ? () => {
+                                M({
                                     action: "PRESS_SET_CUSTOM_STATUS"
-                                }), null == g || g(), (0, _.openModalLazy)(async () => {
+                                }), null == v || v(), (0, _.openModalLazy)(async () => {
                                     let {
                                         default: e
                                     } = await Promise.all([n.e("99387"), n.e("47484")]).then(n.bind(n, 211065));
                                     return t => (0, i.jsx)(e, {
                                         ...t,
-                                        sourceAnalyticsLocations: v
+                                        sourceAnalyticsLocations: D
                                     })
                                 })
                             } : void 0,
                             children: (0, i.jsxs)("span", {
-                                className: en,
-                                children: [j && Q(), Y && (() => {
-                                    let e = o()(A.content, {
-                                        [A.clamp]: y,
-                                        [A.unclamp]: !y,
-                                        [A.singleLineAlign]: W
+                                className: eo,
+                                children: [q && et(), z && (() => {
+                                    let e = o()(O.content, {
+                                        [O.clamp]: b,
+                                        [O.unclamp]: !b,
+                                        [O.singleLineAlign]: X
                                     });
                                     return (0, i.jsxs)(a.animated.div, {
-                                        style: z,
+                                        style: J,
                                         className: e,
-                                        children: [J(), $()]
+                                        children: [en(), ei()]
                                     })
                                 })()]
                             })
-                        })
+                        })]
                     })]
                 })
             }
@@ -224020,6 +224065,72 @@
                     }),
                     tooltipClassName: c.tooltip
                 })
+            }
+        },
+        825801: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return d
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(120356),
+                s = n.n(r),
+                o = n(481060),
+                a = n(404975),
+                l = n(317179),
+                u = n(785717),
+                _ = n(689938),
+                c = n(517117);
+
+            function d(e) {
+                let {
+                    isHovering: t,
+                    location: n,
+                    className: r
+                } = e, {
+                    trackUserProfileAction: d
+                } = (0, u.KZ)(), {
+                    statusReactReplyEnabled: E
+                } = (0, l.t)({
+                    location: n
+                });
+                return E ? (0, i.jsxs)(a.ZP, {
+                    className: s()(r, c.popover, {
+                        [c.visible]: t
+                    }),
+                    children: [(0, i.jsx)(o.TooltipContainer, {
+                        text: _.Z.Messages.USER_PROFILE_SEND_REACTION,
+                        children: (0, i.jsx)(a.zx, {
+                            className: c.button,
+                            "aria-label": _.Z.Messages.USER_PROFILE_SEND_REACTION,
+                            onClick: () => {
+                                d({
+                                    action: "PRESS_REACT"
+                                })
+                            },
+                            children: (0, i.jsx)(o.ReactionIcon, {
+                                className: c.icon
+                            })
+                        })
+                    }), (0, i.jsx)(o.TooltipContainer, {
+                        text: _.Z.Messages.USER_PROFILE_REPLY,
+                        children: (0, i.jsx)(a.zx, {
+                            className: c.button,
+                            "aria-label": _.Z.Messages.USER_PROFILE_REPLY,
+                            onClick: () => {
+                                d({
+                                    action: "PRESS_REPLY"
+                                })
+                            },
+                            children: (0, i.jsx)(o.ArrowAngleLeftUpIcon, {
+                                className: c.icon
+                            })
+                        })
+                    })]
+                }) : null
             }
         },
         502762: function(e, t, n) {
@@ -261828,7 +261939,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "64ecc4dcd96a08a39031653a39df04fc2a055299"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5d3056848cb5cb3a3296cf3b32cebe212fad5bfe"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280989,7 +281100,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304313"
+                                build_number: "304325"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288310,7 +288421,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304313", "304313"), 10);
+                let s = parseInt((n = "304325", "304325"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -329837,4 +329948,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.b07aa081882f51c1b13c.js.map
+//# sourceMappingURL=79892.dc3d96b0e55f3c5d93b6.js.map
