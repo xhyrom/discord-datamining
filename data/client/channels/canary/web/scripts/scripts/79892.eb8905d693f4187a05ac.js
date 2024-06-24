@@ -40669,7 +40669,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304529", ", Version Hash: ").concat("2502ee53f131d447c08ca7fd6d7ac01c1d5dbb60")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304539", ", Version Hash: ").concat("a72e36501f5f0e1f626c3b1abcf7c7f4d8447def")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96615,8 +96615,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304529", "304529"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304529")), t = 0), t
+                let t = parseInt((e = "304539", "304539"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304539")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124887,8 +124887,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304529",
-                    versionHash: "2502ee53f131d447c08ca7fd6d7ac01c1d5dbb60"
+                    buildNumber: "304539",
+                    versionHash: "a72e36501f5f0e1f626c3b1abcf7c7f4d8447def"
                 }
             }
             n.d(t, {
@@ -125422,7 +125422,7 @@
                 u = n(31336),
                 _ = n(19759);
             let c = (0, s.Un)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("19503"), n.e("89350"), n.e("39709"), n.e("80451"), n.e("3336"), n.e("15972"), n.e("12013"), n.e("29549"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("8016"), n.e("33053"), n.e("68136"), n.e("31605"), n.e("19464"), n.e("6380"), n.e("76540"), n.e("11250"), n.e("4934"), n.e("22646"), n.e("57878"), n.e("18101"), n.e("65840"), n.e("87624"), n.e("77172"), n.e("67535"), n.e("95393"), n.e("86977"), n.e("5528"), n.e("44517"), n.e("43331"), n.e("81539"), n.e("30419"), n.e("18824"), n.e("90508"), n.e("8739"), n.e("58286"), n.e("31649"), n.e("41947"), n.e("41662"), n.e("97403"), n.e("30243"), n.e("3084"), n.e("88646"), n.e("49508"), n.e("68241"), n.e("97458"), n.e("12549"), n.e("21078"), n.e("37269"), n.e("56399"), n.e("77594"), n.e("54535"), n.e("54443"), n.e("93770"), n.e("35271"), n.e("30676"), n.e("37941"), n.e("36439"), n.e("30634"), n.e("63972")]).then(n.bind(n, 678717)),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("19503"), n.e("89350"), n.e("39709"), n.e("80451"), n.e("3336"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("29549"), n.e("32776"), n.e("95900"), n.e("8016"), n.e("33053"), n.e("68136"), n.e("19464"), n.e("76540"), n.e("31605"), n.e("4934"), n.e("6380"), n.e("22646"), n.e("11250"), n.e("87624"), n.e("95854"), n.e("5528"), n.e("44517"), n.e("18101"), n.e("43331"), n.e("65840"), n.e("30419"), n.e("25788"), n.e("77172"), n.e("18824"), n.e("95393"), n.e("86977"), n.e("31649"), n.e("41662"), n.e("81539"), n.e("90508"), n.e("49508"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("54535"), n.e("65371"), n.e("30243"), n.e("3084"), n.e("8540"), n.e("65392"), n.e("68241"), n.e("97458"), n.e("86560"), n.e("42341"), n.e("98928"), n.e("30676"), n.e("37941"), n.e("36439"), n.e("30634"), n.e("92247")]).then(n.bind(n, 678717)),
                 webpackId: 678717
             });
 
@@ -151500,7 +151500,7 @@
                 await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("15972"), n.e("12013"), n.e("29549"), n.e("43906"), n.e("8016"), n.e("22646"), n.e("5349"), n.e("15837")]).then(n.bind(n, 343649));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("15972"), n.e("12013"), n.e("43906"), n.e("29549"), n.e("8016"), n.e("22646"), n.e("5349"), n.e("15837")]).then(n.bind(n, 343649));
                     return n => {
                         let {
                             transitionState: r,
@@ -162140,7 +162140,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("11751"), n.e("29549"), n.e("33053"), n.e("31605"), n.e("19464"), n.e("7654"), n.e("65840"), n.e("90508"), n.e("41662"), n.e("44156"), n.e("3084"), n.e("12549"), n.e("85093"), n.e("85552"), n.e("77594"), n.e("58227"), n.e("43502"), n.e("35271"), n.e("1187"), n.e("27577"), n.e("92557"), n.e("36439"), n.e("96936")]).then(n.bind(n, 994763)), (null === (s = T.Z.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(N.oNc.COMMUNITY)) && (t === N.pNK.GUILD_AUTOMOD && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_AUTOMOD), t === N.pNK.MEMBER_VERIFICATION && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, i, r);
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("11751"), n.e("29549"), n.e("33053"), n.e("19464"), n.e("7654"), n.e("31605"), n.e("65840"), n.e("41662"), n.e("44156"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("3084"), n.e("65392"), n.e("43502"), n.e("98928"), n.e("1187"), n.e("27577"), n.e("92557"), n.e("36439"), n.e("96936")]).then(n.bind(n, 994763)), (null === (s = T.Z.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(N.oNc.COMMUNITY)) && (t === N.pNK.GUILD_AUTOMOD && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_AUTOMOD), t === N.pNK.MEMBER_VERIFICATION && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, i, r);
                         (0, o.jN)(N.S9g.GUILD_SETTINGS)
                     },
                     close() {
@@ -183588,8 +183588,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719271843781",
-                                    build_number: "304529"
+                                    built_at: "1719272671653",
+                                    build_number: "304539"
                                 }
                             },
                             retries: 1
@@ -188492,7 +188492,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("15972"), n.e("12013"), n.e("29549"), n.e("6416"), n.e("43906"), n.e("32776"), n.e("95900"), n.e("8016"), n.e("68136"), n.e("31605"), n.e("57878"), n.e("64012"), n.e("4535")]).then(n.bind(n, 7305));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("29549"), n.e("32776"), n.e("95900"), n.e("8016"), n.e("68136"), n.e("31605"), n.e("95854"), n.e("46524"), n.e("39559")]).then(n.bind(n, 7305));
                     return n => {
                         let {
                             onClose: r,
@@ -203583,7 +203583,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("99387"), n.e("97458"), n.e("54535"), n.e("61624")]).then(n.bind(n, 985866));
+                    } = await Promise.all([n.e("99387"), n.e("54535"), n.e("97458"), n.e("61624")]).then(n.bind(n, 985866));
                     return n => (0, i.jsx)(e, {
                         ...n,
                         questId: t,
@@ -262379,7 +262379,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2502ee53f131d447c08ca7fd6d7ac01c1d5dbb60"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a72e36501f5f0e1f626c3b1abcf7c7f4d8447def"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281540,7 +281540,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304529"
+                                build_number: "304539"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288861,7 +288861,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304529", "304529"), 10);
+                let s = parseInt((n = "304539", "304539"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330397,4 +330397,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.eecd390c22b160eb1fff.js.map
+//# sourceMappingURL=79892.eb8905d693f4187a05ac.js.map
