@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304485", ", Version Hash: ").concat("2e445099b2910b89a58dc96ade7b1b6af9fbd0fe")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304490", ", Version Hash: ").concat("f8815b3fdfe1dafa4f1f8fb8aa671583d3666051")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96611,8 +96611,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304485", "304485"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304485")), t = 0), t
+                let t = parseInt((e = "304490", "304490"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304490")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124883,8 +124883,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304485",
-                    versionHash: "2e445099b2910b89a58dc96ade7b1b6af9fbd0fe"
+                    buildNumber: "304490",
+                    versionHash: "f8815b3fdfe1dafa4f1f8fb8aa671583d3666051"
                 }
             }
             n.d(t, {
@@ -177370,10 +177370,7 @@
                 return t
             }
 
-            function u(e) {
-                return [4098, e]
-            }
-            let _ = [function(e, t, n, i) {
+            function u(e, t, n, i) {
                 let r = [],
                     o = n.map(e => e.map(l).join(":")).join(", ");
                 for (let e = 0; e < i.length; e++) {
@@ -177394,19 +177391,24 @@
                         treatments: r
                     })
                 }
-            }("2024-03_amd_vdec_tests_1", "AMD video decode tests 1", [u(5592), u(5597), u(5686), u(5688), u(5708), u(5761), u(26607), u(26591), u(29471), u(29504), u(29631), u(29679), u(29663), u(29695), u(29759), u(29772), u(29822), u(29824)], ["disable_media_foundation_clear_playback", "disable_d3d11_video_decoder"])];
+            }
 
-            function c(e) {
+            function _(e) {
+                return [4318, e]
+            }
+            let c = [u("2024-06_hardware_hevc_nv_gtx_970", "NVIDIA hardware HEVC decode on GTX 970", [_(5058)], ["disable_accelerated_hevc_decode"]), u("2024-06_hardware_hevc_nv_maxwell", "NVIDIA hardware HEVC decode on Maxwell (except 970)", [_(4928), _(4929), _(4932), _(4934), _(4935), _(4936), _(4937), _(4939), _(4941), _(4942), _(4943), _(4986), _(4987), _(4992), _(4993), _(4994), _(5008), _(5009), _(5010), _(5011), _(5016), _(5017), _(5018), _(5019), _(5020), _(5021), _(5040), _(5041), _(5042), _(5043), _(5044), _(5046), _(5049), _(5050), _(5051), _(5052), _(5056), _(5079), _(5080), _(5081), _(5082), _(5104), _(5105), _(5106), _(5107), _(5112), _(5113), _(5114), _(5115), _(5121), _(5126), _(5127), _(5159), _(5655), _(5656), _(5657), _(5658), _(5735), _(5965), _(5966), _(6044), _(6082), _(6088), _(6128), _(6129), _(6141)], ["disable_accelerated_hevc_decode"])];
+
+            function d(e) {
                 for (let t of e)
                     if (t[0] === a[0] && t[1] === a[1]) return !0;
                 return !1
             }
-            let d = !1;
+            let E = !1;
 
-            function E() {
+            function I() {
                 let e = {};
-                for (let t of _)
-                    if (c(t.gpus)) {
+                for (let t of c)
+                    if (d(t.gpus)) {
                         let n = t.experiment.getCurrentConfig({
                             location: "updateFlags"
                         });
@@ -177416,20 +177418,20 @@
                         }
                     } o.ZP.setChromiumSwitches(e)
             }
-            class I extends i.Z {
+            class T extends i.Z {
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
                         POST_CONNECTION_OPEN: async () => {
                             try {
                                 var e, t, n, i;
-                                if (d || (null === (t = window.DiscordNative) || void 0 === t ? void 0 : null === (e = t.gpuSettings) || void 0 === e ? void 0 : e.setChromiumSwitches) == null) return;
+                                if (E || (null === (t = window.DiscordNative) || void 0 === t ? void 0 : null === (e = t.gpuSettings) || void 0 === e ? void 0 : e.setChromiumSwitches) == null) return;
                                 let s = await r.Z.processUtils.getSystemInfo();
                                 for (let e of null !== (i = null === (n = s.electronGPUInfo) || void 0 === n ? void 0 : n.gpuDevice) && void 0 !== i ? i : []) !0 === e.active && (a = [e.vendorId, e.deviceId]);
-                                for (let e of (d = !0, _)) c(e.gpus) && e.experiment.subscribe({
+                                for (let e of (E = !0, c)) d(e.gpus) && e.experiment.subscribe({
                                     location: "GPU experiment subscription"
-                                }, E);
-                                E()
+                                }, I);
+                                I()
                             } catch (e) {}
                         }
                     }, n in t ? Object.defineProperty(t, n, {
@@ -177440,7 +177442,7 @@
                     }) : t[n] = i
                 }
             }
-            t.Z = new I
+            t.Z = new T
         },
         681694: function(e, t, n) {
             "use strict";
@@ -183582,8 +183584,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719268305643",
-                                    build_number: "304485"
+                                    built_at: "1719268544678",
+                                    build_number: "304490"
                                 }
                             },
                             retries: 1
@@ -262374,7 +262376,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2e445099b2910b89a58dc96ade7b1b6af9fbd0fe"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f8815b3fdfe1dafa4f1f8fb8aa671583d3666051"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281535,7 +281537,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304485"
+                                build_number: "304490"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288856,7 +288858,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304485", "304485"), 10);
+                let s = parseInt((n = "304490", "304490"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330392,4 +330394,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.2e57007baa257dd60d3e.js.map
+//# sourceMappingURL=79892.c34c26075de34a6a803f.js.map
