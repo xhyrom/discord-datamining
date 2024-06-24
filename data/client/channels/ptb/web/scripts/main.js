@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304384", ", Version Hash: ").concat("57cfd2d1a2b1bf7188b65a437c6a61e77197f810")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304401", ", Version Hash: ").concat("ecdc88801c7563ec8bfaffcdd7a5f8f08f396092")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -74254,7 +74254,7 @@
                 O = n(429589),
                 R = n(276149),
                 p = n(636245),
-                g = n(697761),
+                g = n(551514),
                 C = n(611459),
                 v = n(544671),
                 L = n(757182),
@@ -74751,7 +74751,7 @@
                 }, "stage")
             }
         },
-        697761: function(e, t, n) {
+        551514: function(e, t, n) {
             "use strict";
             n.d(t, {
                 Z: function() {
@@ -96256,6 +96256,45 @@
                 }
             }
         },
+        40966: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return _
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(481060),
+                s = n(626135),
+                o = n(596401),
+                a = n(981631),
+                l = n(689938);
+            let u = () => {
+                s.default.track(a.rMx.CHANGE_LOG_CTA_CLICKED, {
+                    cta_type: "profile_bio",
+                    target: o.D2
+                })
+            };
+
+            function _() {
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)("span", {
+                        children: l.Z.Messages.SYSTEM_DM_CHANGELOG_BIO
+                    }), (0, i.jsx)("br", {}), (0, i.jsx)("br", {}), (0, i.jsx)("span", {
+                        children: l.Z.Messages.SYSTEM_DM_CHANGELOG_BIO_WITH_CTA.format({
+                            blogHook: (e, t) => (0, i.jsx)(r.Anchor, {
+                                onClick: u,
+                                target: "_blank",
+                                rel: "noreferrer noopener",
+                                href: o.D2,
+                                children: e
+                            }, t)
+                        })
+                    })]
+                })
+            }
+        },
         596401: function(e, t, n) {
             "use strict";
             var i, r, s, o, a, l, u, _;
@@ -96565,8 +96604,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304384", "304384"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304384")), t = 0), t
+                let t = parseInt((e = "304401", "304401"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304401")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124809,8 +124848,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304384",
-                    versionHash: "57cfd2d1a2b1bf7188b65a437c6a61e77197f810"
+                    buildNumber: "304401",
+                    versionHash: "ecdc88801c7563ec8bfaffcdd7a5f8f08f396092"
                 }
             }
             n.d(t, {
@@ -151197,7 +151236,7 @@
                 s = n(481060),
                 o = n(607070),
                 a = n(689938),
-                l = n(888778),
+                l = n(991971),
                 u = n(567949),
                 _ = n(552781),
                 c = n(952567),
@@ -183508,8 +183547,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719256912867",
-                                    build_number: "304384"
+                                    built_at: "1719259441997",
+                                    build_number: "304401"
                                 }
                             },
                             retries: 1
@@ -216890,7 +216929,7 @@
                 o = n(481060),
                 a = n(730749),
                 l = n(823379),
-                u = n(993819);
+                u = n(697761);
             let _ = (0, a.Z)(e => {
                 let {
                     member: t,
@@ -222797,7 +222836,7 @@
                 I = n(451478),
                 T = n(311715),
                 h = n(768581),
-                S = n(333231),
+                S = n(888778),
                 f = n(943217),
                 N = n(793397),
                 A = n(300388);
@@ -223001,7 +223040,7 @@
                 L = n(74538),
                 D = n(785717),
                 M = n(621853),
-                P = n(333231),
+                P = n(888778),
                 y = n(943217),
                 U = n(793397),
                 b = n(841040),
@@ -223435,7 +223474,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return h
+                    return E
                 }
             });
             var i = n(735250),
@@ -223443,62 +223482,35 @@
                 s = n(120356),
                 o = n.n(s),
                 a = n(481060),
-                l = n(580552),
-                u = n(240991),
-                _ = n(278297),
-                c = n(626135),
-                d = n(981631),
-                E = n(596401),
-                I = n(689938),
-                T = n(622322);
+                l = n(40966),
+                u = n(580552),
+                _ = n(240991),
+                c = n(278297),
+                d = n(622322);
 
-            function h(e) {
+            function E(e) {
                 let {
                     userBio: t,
                     className: n,
                     animateOnHover: s = !1,
-                    isHovering: h = !1,
-                    lineClamp: S = 6,
-                    setLineClamp: f = !0,
-                    textColor: N,
-                    userId: A
-                } = e, m = r.useMemo(() => null != t ? (0, u.YP)(t) : null, [t]);
-                if (null == t && null == A && !(0, l.Z)(A)) return null;
-                if ((0, l.Z)(A)) {
-                    let e = () => {
-                        c.default.track(d.rMx.CHANGE_LOG_CTA_CLICKED, {
-                            cta_type: "profile_bio",
-                            target: E.D2
-                        })
-                    };
-                    m = (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)("span", {
-                            children: I.Z.Messages.SYSTEM_DM_CHANGELOG_BIO
-                        }), (0, i.jsx)("br", {}), (0, i.jsx)("br", {}), (0, i.jsx)("span", {
-                            children: I.Z.Messages.SYSTEM_DM_CHANGELOG_BIO_WITH_CTA.format({
-                                blogHook: (t, n) => (0, i.jsx)(a.Anchor, {
-                                    onClick: e,
-                                    target: "_blank",
-                                    rel: "noreferrer noopener",
-                                    href: E.D2,
-                                    children: t
-                                }, n)
-                            })
-                        })]
-                    })
-                }
-                return (0, i.jsx)("div", {
-                    className: o()(n, T.markup),
+                    isHovering: E = !1,
+                    lineClamp: I = 6,
+                    setLineClamp: T = !0,
+                    textColor: h,
+                    userId: S
+                } = e, f = r.useMemo(() => (0, u.Z)(S) ? (0, i.jsx)(l.Z, {}) : null == t || "" === t ? null : (0, _.YP)(t), [S, t]);
+                return null == f ? null : (0, i.jsx)("div", {
+                    className: o()(n, d.markup),
                     children: (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
-                        lineClamp: f ? S : void 0,
-                        color: void 0 !== N ? N : void 0,
-                        children: (0, i.jsx)(_.G.Provider, {
+                        lineClamp: T ? I : void 0,
+                        color: void 0 !== h ? h : void 0,
+                        children: (0, i.jsx)(c.G.Provider, {
                             value: {
-                                disableAnimations: s && !h,
+                                disableAnimations: s && !E,
                                 disableInteractions: !1
                             },
-                            children: m
+                            children: f
                         })
                     })
                 })
@@ -223508,7 +223520,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return I
+                    return T
                 }
             });
             var i = n(735250);
@@ -223520,44 +223532,49 @@
                 l = n(786874),
                 u = n(447452),
                 _ = n(877485),
-                c = n(788197),
-                d = n(969835),
-                E = n(985237);
+                c = n(103113),
+                d = n(788197),
+                E = n(969835),
+                I = n(985237);
 
-            function I(e) {
+            function T(e) {
                 let {
                     location: t,
                     userId: n,
                     user: r,
-                    ...I
+                    ...T
                 } = e, {
-                    basicsEnabled: T
+                    basicsEnabled: h
                 } = (0, u.t)({
                     location: t
                 }), {
-                    originalFriendingEnabled: h,
-                    improvedFriendingEnabled: S
+                    originalFriendingEnabled: S,
+                    improvedFriendingEnabled: f
                 } = (0, _.V)({
                     location: t
                 }), {
-                    botProfilesEnabled: f
+                    botProfilesEnabled: N
                 } = (0, l.J)({
                     location: t
-                }), N = T || h || S, A = (0, o.e7)([a.default], () => a.default.getUser(n), [n]), m = null != r ? r : A;
-                s()(null != m, "UserPopoutExperimentWrapper: user cannot be undefined");
-                let O = (0, o.e7)([a.default], () => a.default.getCurrentUser());
-                return (s()(null != O, "UserPopoutExperimentWrapper: currentUser cannot be undefined"), N && f && m.bot && !m.isNonUserBot() && !m.isClyde()) ? (0, i.jsx)(E.Z, {
-                    ...I,
-                    user: m,
-                    currentUser: O
-                }) : !N || m.bot || m.isNonUserBot() || m.isClyde() ? (0, i.jsx)(c.Z, {
-                    ...I,
-                    user: m,
-                    currentUser: O
-                }) : (0, i.jsx)(d.Z, {
-                    ...I,
-                    user: m,
-                    currentUser: O
+                }), A = h || S || f, m = (0, o.e7)([a.default], () => a.default.getUser(n), [n]), O = null != r ? r : m;
+                s()(null != O, "UserPopoutExperimentWrapper: user cannot be undefined");
+                let R = (0, o.e7)([a.default], () => a.default.getCurrentUser());
+                return (s()(null != R, "UserPopoutExperimentWrapper: currentUser cannot be undefined"), A && N && O.isNonUserBot()) ? (0, i.jsx)(c.Z, {
+                    ...T,
+                    user: O,
+                    currentUser: R
+                }) : A && N && O.bot ? (0, i.jsx)(I.Z, {
+                    ...T,
+                    user: O,
+                    currentUser: R
+                }) : !A || O.bot || O.isNonUserBot() || O.isClyde() ? (0, i.jsx)(d.Z, {
+                    ...T,
+                    user: O,
+                    currentUser: R
+                }) : (0, i.jsx)(E.Z, {
+                    ...T,
+                    user: O,
+                    currentUser: R
                 })
             }
         },
@@ -225694,6 +225711,106 @@
                 })
             }
         },
+        103113: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return m
+                }
+            }), n(47120);
+            var i = n(735250),
+                r = n(470079),
+                s = n(481060),
+                o = n(727637),
+                a = n(100527),
+                l = n(906732),
+                u = n(680295),
+                _ = n(5192),
+                c = n(785717),
+                d = n(318661),
+                E = n(78675),
+                I = n(741308),
+                T = n(588822),
+                h = n(502762),
+                S = n(530),
+                f = n(513099),
+                N = n(228168),
+                A = n(472375);
+
+            function m(e) {
+                let {
+                    user: t,
+                    guildId: n,
+                    channelId: m,
+                    messageId: O,
+                    roleId: R,
+                    setPopoutRef: p,
+                    closePopout: g,
+                    newAnalyticsLocations: C = []
+                } = e, v = (0, d.ZP)(t.id, n), {
+                    analyticsLocations: L
+                } = (0, l.ZP)([...C, a.Z.BITE_SIZE_PROFILE_POPOUT]), D = r.useRef(null), M = (0, o.Z)(D);
+                return r.useEffect(() => {
+                    null == p || p(null == D ? void 0 : D.current)
+                }, [D, p]), (0, i.jsx)(l.Gt, {
+                    value: L,
+                    children: (0, i.jsx)(c.Mt, {
+                        layout: "BITE_SIZE_POPOUT",
+                        userId: t.id,
+                        guildId: n,
+                        channelId: m,
+                        messageId: O,
+                        roleId: R,
+                        children: (0, i.jsxs)(s.Dialog, {
+                            ref: D,
+                            "aria-label": t.username,
+                            children: [(0, i.jsxs)(h.Z, {
+                                user: t,
+                                displayProfile: v,
+                                profileType: N.y0.BITE_SIZE,
+                                children: [(0, i.jsxs)("header", {
+                                    className: A.header,
+                                    children: [(0, i.jsx)(E.Z, {
+                                        user: t,
+                                        displayProfile: v,
+                                        guildId: n,
+                                        profileType: N.y0.BITE_SIZE,
+                                        hasProfileEffect: (null == v ? void 0 : v.profileEffectId) != null
+                                    }), (0, i.jsx)(f.Z, {
+                                        user: t,
+                                        displayProfile: v,
+                                        guildId: n,
+                                        channelId: m
+                                    })]
+                                }), (0, i.jsxs)("div", {
+                                    className: A.body,
+                                    children: [(0, i.jsx)(S.Z, {
+                                        user: t,
+                                        profileType: N.y0.BITE_SIZE,
+                                        nickname: _.ZP.getName(n, m, t),
+                                        tags: (0, i.jsx)(I.Z, {
+                                            displayProfile: v,
+                                            profileType: N.y0.BITE_SIZE,
+                                            onClose: g
+                                        })
+                                    }), (0, i.jsx)(T.Z, {
+                                        userId: t.id,
+                                        userBio: null == v ? void 0 : v.bio,
+                                        setLineClamp: !1,
+                                        textColor: "header-primary"
+                                    })]
+                                }), (0, i.jsx)("footer", {
+                                    className: A.footer
+                                })]
+                            }), (null == v ? void 0 : v.profileEffectId) != null && (0, i.jsx)(u.Z, {
+                                profileEffectId: null == v ? void 0 : v.profileEffectId,
+                                isHovering: M
+                            })]
+                        })
+                    })
+                })
+            }
+        },
         788197: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -226707,91 +226824,97 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return p
+                    return C
                 }
             });
             var i = n(735250),
                 r = n(470079),
-                s = n(442837),
-                o = n(481060),
-                a = n(420660),
-                l = n(100527),
-                u = n(906732),
-                _ = n(233440),
-                c = n(199902),
-                d = n(158776),
-                E = n(74538),
-                I = n(998502),
-                T = n(785717),
-                h = n(204197),
-                S = n(652853),
-                f = n(228168),
-                N = n(981631),
-                A = n(474936),
-                m = n(148443);
-            let O = o.AvatarSizes.SIZE_80,
-                R = I.ZP.getEnableHardwareAcceleration() ? o.AnimatedAvatar : o.Avatar;
+                s = n(120356),
+                o = n.n(s),
+                a = n(442837),
+                l = n(481060),
+                u = n(420660),
+                _ = n(100527),
+                c = n(906732),
+                d = n(233440),
+                E = n(199902),
+                I = n(158776),
+                T = n(74538),
+                h = n(998502),
+                S = n(785717),
+                f = n(204197),
+                N = n(652853),
+                A = n(228168),
+                m = n(981631),
+                O = n(474936),
+                R = n(148443);
+            let p = l.AvatarSizes.SIZE_80,
+                g = h.ZP.getEnableHardwareAcceleration() ? l.AnimatedAvatar : l.Avatar;
 
-            function p(e) {
+            function C(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    guildId: I,
-                    channelId: p,
-                    animateOnHover: g,
-                    onOpenProfile: C
+                    guildId: s,
+                    channelId: h,
+                    animateOnHover: C,
+                    onOpenProfile: v
                 } = e, {
-                    theme: v
-                } = (0, S.z)(), {
-                    analyticsLocations: L
-                } = (0, u.ZP)(l.Z.AVATAR), {
-                    trackUserProfileAction: D
-                } = (0, T.KZ)(), M = E.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, A.p9.TIER_2), P = r.useMemo(() => (0, _.W)(t, p), [t, p]), {
-                    status: y,
-                    isMobileOnline: U
-                } = (0, s.cj)([c.Z, d.Z], () => {
-                    let e = null != c.Z.getAnyStreamForUser(t.id),
-                        n = d.Z.findActivity(t.id, t => {
+                    theme: L
+                } = (0, N.z)(), {
+                    analyticsLocations: D
+                } = (0, c.ZP)(_.Z.AVATAR), {
+                    trackUserProfileAction: M
+                } = (0, S.KZ)(), P = T.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), y = r.useMemo(() => (0, d.W)(t, h), [t, h]), {
+                    status: U,
+                    isMobileOnline: b
+                } = (0, a.cj)([E.Z, I.Z], () => {
+                    let e = null != E.Z.getAnyStreamForUser(t.id),
+                        n = I.Z.findActivity(t.id, t => {
                             let {
                                 type: n
                             } = t;
-                            return e ? n === N.IIU.PLAYING : n !== N.IIU.CUSTOM_STATUS
+                            return e ? n === m.IIU.PLAYING : n !== m.IIU.CUSTOM_STATUS
                         });
                     return {
-                        status: (0, a.Z)(n) ? N.Skl.STREAMING : d.Z.getStatus(t.id),
-                        isMobileOnline: d.Z.isMobileOnline(t.id)
+                        status: (0, u.Z)(n) ? m.Skl.STREAMING : I.Z.getStatus(t.id),
+                        isMobileOnline: I.Z.isMobileOnline(t.id)
                     }
                 }), {
-                    avatarDecorationSrc: b,
-                    avatarSrc: G,
-                    eventHandlers: w
-                } = (0, h.Z)({
+                    avatarDecorationSrc: G,
+                    avatarSrc: w,
+                    eventHandlers: B
+                } = (0, f.Z)({
                     user: t,
-                    guildId: I,
-                    size: O,
-                    animateOnHover: g
+                    guildId: s,
+                    size: p,
+                    animateOnHover: C
+                }), k = (0, i.jsx)(g, {
+                    src: w,
+                    avatarDecoration: G,
+                    size: p,
+                    "aria-label": t.username,
+                    imageClassName: null != v ? R.overlay : void 0,
+                    status: y ? m.Skl.UNKNOWN : U,
+                    statusBackdropColor: P && !y ? (0, l.getStatusBackdropColor)(L) : void 0,
+                    isMobile: b,
+                    statusTooltip: !0,
+                    statusTooltipDelay: A.vB
                 });
-                return (0, i.jsx)(o.Clickable, {
-                    ...w,
-                    className: m.clickable,
-                    onClick: null == C ? void 0 : () => {
-                        D({
+                return null == v ? (0, i.jsx)("div", {
+                    ...B,
+                    className: R.avatar,
+                    children: k
+                }) : (0, i.jsx)(l.Clickable, {
+                    ...B,
+                    className: o()(R.avatar, R.clickable),
+                    onClick: () => {
+                        M({
                             action: "PRESS_VIEW_PROFILE",
-                            analyticsLocations: L
-                        }), null == C || C()
+                            analyticsLocations: D
+                        }), null == v || v()
                     },
-                    children: (0, i.jsx)(R, {
-                        src: G,
-                        avatarDecoration: b,
-                        size: O,
-                        "aria-label": t.username,
-                        imageClassName: null != C ? m.overlay : void 0,
-                        status: P ? N.Skl.UNKNOWN : y,
-                        statusBackdropColor: M && !P ? (0, o.getStatusBackdropColor)(v) : void 0,
-                        isMobile: U,
-                        statusTooltip: !0,
-                        statusTooltipDelay: f.vB
-                    })
+                    children: k
                 })
             }
         },
@@ -226890,7 +227013,7 @@
                 R = n(287612),
                 p = n(228168),
                 g = n(981631),
-                C = n(766346);
+                C = n(472375);
 
             function v(e) {
                 let {
@@ -226948,7 +227071,7 @@
                             user: t,
                             guildId: null == L ? void 0 : L.id,
                             channelId: P,
-                            className: C.banner
+                            className: C.friendRequestBanner
                         })
                     }), t.id !== n.id && (0, i.jsx)(R.Z, {
                         user: t,
@@ -227098,7 +227221,7 @@
                 s = n(705556),
                 o = n(901952),
                 a = n(228168),
-                l = n(217167);
+                l = n(472375);
 
             function u(e) {
                 let {
@@ -227139,7 +227262,7 @@
                 l = n(513099),
                 u = n(228168),
                 _ = n(981631),
-                c = n(789126);
+                c = n(472375);
 
             function d(e) {
                 let {
@@ -228507,7 +228630,7 @@
                 E = n(579285),
                 I = n(287612),
                 T = n(228168),
-                h = n(766346);
+                h = n(472375);
 
             function S(e) {
                 let {
@@ -228740,7 +228863,7 @@
                 }
             }
         },
-        333231: function(e, t, n) {
+        888778: function(e, t, n) {
             "use strict";
             n.d(t, {
                 Z: function() {
@@ -262216,7 +262339,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "57cfd2d1a2b1bf7188b65a437c6a61e77197f810"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ecdc88801c7563ec8bfaffcdd7a5f8f08f396092"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281377,7 +281500,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304384"
+                                build_number: "304401"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288698,7 +288821,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304384", "304384"), 10);
+                let s = parseInt((n = "304401", "304401"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330234,4 +330357,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.a203e6386cf521f0e147.js.map
+//# sourceMappingURL=79892.84e52198f1bd01f96da8.js.map

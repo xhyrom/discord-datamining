@@ -9025,7 +9025,7 @@
                 perkPreviewImage: "perkPreviewImage_ebd3d3"
             }
         },
-        888778: function(e, t, n) {
+        991971: function(e, t, n) {
             e.exports = {
                 wrapper: "wrapper_adc107",
                 heading: "heading_adc107",
@@ -19303,16 +19303,6 @@
                 clickable: "clickable_d7b346"
             }
         },
-        66288: function(e, t, n) {
-            e.exports = {
-                body: "body_c4213b"
-            }
-        },
-        7227: function(e, t, n) {
-            e.exports = {
-                footer: "footer_a47058"
-            }
-        },
         539: function(e, t, n) {
             e.exports = {
                 profileEffects: "profileEffects_f867f9",
@@ -21642,7 +21632,7 @@
                 upsellClose: "upsellClose_b8772d"
             }
         },
-        993819: function(e, t, n) {
+        697761: function(e, t, n) {
             e.exports = {
                 wrapper: "wrapper_f07d2f",
                 partyMembers: "partyMembers_f07d2f",
@@ -22493,6 +22483,7 @@
         },
         148443: function(e, t, n) {
             e.exports = {
+                avatar: "avatar_cc54d6",
                 clickable: "clickable_cc54d6",
                 overlay: "overlay_cc54d6"
             }
@@ -22504,26 +22495,10 @@
                 descriptionClamp: "descriptionClamp_fc5c48"
             }
         },
-        766346: function(e, t, n) {
-            e.exports = {
-                body: "body_a45fe8",
-                banner: "banner_a45fe8"
-            }
-        },
         682583: function(e, t, n) {
             e.exports = {
                 inner: "inner_dc0b43",
                 editor: "editor_dc0b43"
-            }
-        },
-        217167: function(e, t, n) {
-            e.exports = {
-                footer: "footer_d5223c"
-            }
-        },
-        789126: function(e, t, n) {
-            e.exports = {
-                header: "header_c6e596"
             }
         },
         446384: function(e, t, n) {
@@ -22538,6 +22513,14 @@
                 section: "section_dc9488",
                 text: "text_dc9488",
                 spacer: "spacer_dc9488"
+            }
+        },
+        472375: function(e, t, n) {
+            e.exports = {
+                header: "header_b07019",
+                body: "body_b07019",
+                footer: "footer_b07019",
+                friendRequestBanner: "friendRequestBanner_b07019"
             }
         },
         710598: function(e, t, n) {
