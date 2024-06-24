@@ -33667,12 +33667,12 @@ div.cardContainer_c22357 {
 .streamerModeEnabledBtn_c50c8b {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -48187,8 +48187,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143144,4 +143144,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.48f31fc96afb3668b38b.css.map*/
+/*# sourceMappingURL=99387.301af8dd6c39f5c0bd5d.css.map*/
