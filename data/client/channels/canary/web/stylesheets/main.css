@@ -25280,6 +25280,105 @@ div.profileThemedContainer_d2194f {
     border: 2px solid CanvasText
 }
 
+.section_ba4d80 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.footer_be6801 {
+    z-index: 1;
+    border-top: 1px solid var(--border-subtle)
+}
+
+.buttonColor_be6801 {
+    color: var(--interactive-normal)
+}
+
+.buttonColor_be6801:hover {
+    color: var(--interactive-hover)
+}
+
+.buttonColor_be6801:active {
+    color: var(--interactive-active)
+}
+
+.header_f26c88 {
+    position: relative;
+    z-index: 2;
+    min-height: calc(37px + var(--custom-user-banner-banner-height-panel));
+    margin-bottom: 8px
+}
+
+.overlay_f26c88:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-round);
+    background-color: var(--black-500);
+    opacity: 0;
+    transition: opacity.2s ease
+}
+
+.clickable_f26c88 {
+    cursor: pointer;
+    z-index: 0;
+    position: absolute;
+    top: calc(var(--custom-user-banner-banner-height-panel) - (80px + var(--custom-user-profile-modal-header-total-avatar-border-size))/2);
+    left: 16px
+}
+
+.clickable_f26c88:hover .overlay_f26c88:after,
+.clickable_f26c88:focus-within .overlay_f26c88:after {
+    opacity: .4
+}
+
+.container_ecc60d {
+    position: relative;
+    width: 340px
+}
+
+.body_e9e42f {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 16px
+}
+
+.overlay_e9e42f {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px
+}
+
+.note_e9e42f {
+    margin: -4px
+}
+
+.note_e9e42f textarea {
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 14px;
+    line-height: 18px
+}
+
+.note_e9e42f textarea:focus {
+    background-color: var(--profile-note-background-color)
+}
+
+.note_e9e42f textarea:focus::-moz-placeholder {
+    color: transparent
+}
+
+.note_e9e42f textarea:focus::placeholder {
+    color: transparent
+}
+
 .modalHeader_c3153d {
     align-items: center;
     padding-bottom: 8px
@@ -25645,100 +25744,6 @@ div.profileThemedContainer_d2194f {
     margin-top: 12px
 }
 
-.section_ba4d80 {
-    display: flex;
-    flex-direction: column;
-    gap: 8px
-}
-
-.body_e9e42f {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 0 16px
-}
-
-.overlay_e9e42f {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px
-}
-
-.note_e9e42f {
-    margin: -4px
-}
-
-.note_e9e42f textarea {
-    border-radius: 3px;
-    padding: 4px;
-    font-size: 14px;
-    line-height: 18px
-}
-
-.note_e9e42f textarea:focus {
-    background-color: var(--profile-note-background-color)
-}
-
-.note_e9e42f textarea:focus::-moz-placeholder {
-    color: transparent
-}
-
-.note_e9e42f textarea:focus::placeholder {
-    color: transparent
-}
-
-.footer_be6801 {
-    z-index: 1;
-    border-top: 1px solid var(--border-subtle)
-}
-
-.buttonColor_be6801 {
-    color: var(--interactive-normal)
-}
-
-.buttonColor_be6801:hover {
-    color: var(--interactive-hover)
-}
-
-.buttonColor_be6801:active {
-    color: var(--interactive-active)
-}
-
-.header_f26c88 {
-    position: relative;
-    z-index: 2;
-    min-height: calc(37px + var(--custom-user-banner-banner-height-panel));
-    margin-bottom: 8px
-}
-
-.overlay_f26c88:after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--radius-round);
-    background-color: var(--black-500);
-    opacity: 0;
-    transition: opacity.2s ease
-}
-
-.clickable_f26c88 {
-    cursor: pointer;
-    z-index: 0;
-    position: absolute;
-    top: calc(var(--custom-user-banner-banner-height-panel) - (80px + var(--custom-user-profile-modal-header-total-avatar-border-size))/2);
-    left: 16px
-}
-
-.clickable_f26c88:hover .overlay_f26c88:after,
-.clickable_f26c88:focus-within .overlay_f26c88:after {
-    opacity: .4
-}
-
 .divider_e3d8a6 {
     height: 1px;
     background-color: var(--profile-body-divider-color)
@@ -25807,11 +25812,6 @@ div.profileThemedContainer_d2194f {
     -webkit-app-region: no-drag;
     color: var(--text-normal);
     margin-left: auto
-}
-
-.container_ecc60d {
-    position: relative;
-    width: 340px
 }
 
 .headerContainer_bc6acb {
@@ -143150,4 +143150,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.deaa5e3103b5d68e9602.css.map*/
+/*# sourceMappingURL=99387.71bea8cd12b49d751b89.css.map*/
