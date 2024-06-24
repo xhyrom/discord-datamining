@@ -14396,6 +14396,11 @@ html .progress_e5f4c6 {
     object-fit: contain
 }
 
+.interactionInfoMenuItem_df26f0 {
+    opacity: 1;
+    align-items: flex-start
+}
+
 .container_a3b500 {
     position: absolute;
     right: 0;
@@ -48194,8 +48199,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -103388,7 +103393,8 @@ div:has(>div>.container_d99f08) {
 }
 
 .emptyFriendsWhoPlay_e881fc {
-    text-align: center
+    text-align: center;
+    padding: var(--custom-spacing)0 var(--custom-spacing)
 }
 
 .imageScroller_e881fc {
@@ -143150,4 +143156,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.71bea8cd12b49d751b89.css.map*/
+/*# sourceMappingURL=99387.e84e805785d431214dcb.css.map*/

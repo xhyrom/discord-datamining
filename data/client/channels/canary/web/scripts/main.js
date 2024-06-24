@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304369", ", Version Hash: ").concat("29d7c30c5eb8d8918a86f9541c6a2aaaac1f937b")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304374", ", Version Hash: ").concat("12f8a44e73828f6d4a806525162b84362571421e")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -46406,6 +46406,7 @@
                 MUTE_SOUNDBOARD: "Mute Soundboard",
                 UNMUTE_SOUNDBOARD: "Unmute Soundboard",
                 COPY_VERSION: "Click to copy version",
+                VIEW_INTERACTION_INFO: "View Interaction Info",
                 GENERIC_ACTIONS_MENU_LABEL: "Actions",
                 APPLICATION_ACTIONS_MENU_LABEL: "Application Actions",
                 CHANNEL_ACTIONS_MENU_LABEL: "Channel Actions",
@@ -52574,6 +52575,8 @@
                 APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_ATTACHMENTS: "You cannot send attachments in this channel",
                 APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_EMBEDS: "You cannot send embeds in this channel",
                 APPLICATION_COMMAND_USER_INSTALL_EPHEMERAL_REASON_CANNOT_SEND_STICKERS: "You cannot send stickers in this channel",
+                INTERACTION_RESPONSE_CONTEXT_INSTALLED_BY: "Installed !!{application}!!",
+                INTERACTION_RESPONSE_CONTEXT_TRIGGERED_BY: "Triggered this message",
                 MJ_CHATBAR_BODY: "Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.",
                 APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
                 INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
@@ -96562,8 +96565,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304369", "304369"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304369")), t = 0), t
+                let t = parseInt((e = "304374", "304374"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304374")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124806,8 +124809,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304369",
-                    versionHash: "29d7c30c5eb8d8918a86f9541c6a2aaaac1f937b"
+                    buildNumber: "304374",
+                    versionHash: "12f8a44e73828f6d4a806525162b84362571421e"
                 }
             }
             n.d(t, {
@@ -183505,8 +183508,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719255831019",
-                                    build_number: "304369"
+                                    built_at: "1719256057581",
+                                    build_number: "304374"
                                 }
                             },
                             retries: 1
@@ -262213,7 +262216,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "29d7c30c5eb8d8918a86f9541c6a2aaaac1f937b"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "12f8a44e73828f6d4a806525162b84362571421e"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281374,7 +281377,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304369"
+                                build_number: "304374"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288695,7 +288698,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304369", "304369"), 10);
+                let s = parseInt((n = "304374", "304374"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330231,4 +330234,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.08f5485477272fb26ef5.js.map
+//# sourceMappingURL=79892.24fbaa506c5abd13703b.js.map
