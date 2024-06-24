@@ -48150,8 +48150,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -72989,6 +72989,36 @@ html .invoiceCancelRow_b1a31b {
     left: 100px
 }
 
+.root_c73da7 {
+    height: 32px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: center
+}
+
+.root_c73da7.connected_c73da7 {
+    background-color: var(--status-positive-background)
+}
+
+.root_c73da7.connected_c73da7 .icon_c73da7 {
+    color: var(--white-500)
+}
+
+.root_c73da7.connecting_c73da7 {
+    background-color: var(--background-secondary-alt);
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.icon_c73da7 {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    color: var(--interactive-active)
+}
+
 .graphContainer_c73c22 {
     margin-bottom: 8px;
     padding-bottom: 2px;
@@ -73187,7 +73217,19 @@ html .invoiceCancelRow_b1a31b {
     padding: 16px
 }
 
-.ping_c0cb95 {
+.status_dcb18f {
+    cursor: pointer
+}
+
+.status_dcb18f:hover {
+    text-decoration: underline
+}
+
+.hoverableStatus_dcb18f {
+    cursor: pointer
+}
+
+.ping_c02c63 {
     width: 16px;
     height: 16px;
     display: block;
@@ -73197,12 +73239,12 @@ html .invoiceCancelRow_b1a31b {
     color: var(--text-muted)
 }
 
-.ping_c0cb95.smallPing_c0cb95 {
+.ping_c02c63.smallPing_c02c63 {
     width: 14px;
     height: 14px
 }
 
-.rtcConnectionStatus_c0cb95 {
+.rtcConnectionStatus_c02c63 {
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -73211,66 +73253,36 @@ html .invoiceCancelRow_b1a31b {
     padding-bottom: 2px
 }
 
-.rtcConnectionStatusLabel_c0cb95 {
+.rtcConnectionStatusLabel_c02c63 {
     font-weight: 600
 }
 
-.rtcConnectionStatusConnected_c0cb95 {
+.rtcConnectionStatusConnected_c02c63 {
     color: var(--text-positive)
 }
 
-.rtcConnectionStatusConnecting_c0cb95 {
+.rtcConnectionStatusConnecting_c02c63 {
     color: var(--text-warning)
 }
 
-.rtcConnectionStatusError_c0cb95 {
+.rtcConnectionStatusError_c02c63 {
     color: var(--status-danger)
 }
 
-.rtcConnectionQualityFine_c0cb95 .pingForeground_c0cb95 {
+.rtcConnectionQualityFine_c02c63 .pingForeground_c02c63 {
     color: var(--text-positive)
 }
 
-.rtcConnectionQualityAverage_c0cb95 .pingForeground_c0cb95:not(:last-child) {
+.rtcConnectionQualityAverage_c02c63 .pingForeground_c02c63:not(:last-child) {
     color: var(--text-warning)
 }
 
-.rtcConnectionQualityBad_c0cb95 .pingForeground_c0cb95:first-child {
+.rtcConnectionQualityBad_c02c63 .pingForeground_c02c63:first-child {
     color: var(--status-danger)
 }
 
-.labelWrapper_c0cb95 {
+.labelWrapper_c02c63 {
     overflow: hidden
-}
-
-.root_c73da7 {
-    height: 32px;
-    padding: 8px;
-    box-sizing: border-box;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    display: flex;
-    justify-content: center
-}
-
-.root_c73da7.connected_c73da7 {
-    background-color: var(--status-positive-background)
-}
-
-.root_c73da7.connected_c73da7 .icon_c73da7 {
-    color: var(--white-500)
-}
-
-.root_c73da7.connecting_c73da7 {
-    background-color: var(--background-secondary-alt);
-    border-bottom: 1px solid var(--background-modifier-accent)
-}
-
-.icon_c73da7 {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    color: var(--interactive-active)
 }
 
 .container_adcaac {
@@ -73289,14 +73301,6 @@ html .invoiceCancelRow_b1a31b {
 }
 
 .channel_adcaac:hover {
-    text-decoration: underline
-}
-
-.statusWithPopout_adcaac {
-    cursor: pointer
-}
-
-.statusWithPopout_adcaac:hover {
     text-decoration: underline
 }
 
@@ -143102,4 +143106,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.fa3100ba9a4fbf402ae4.css.map*/
+/*# sourceMappingURL=99387.359be5eaf2127837aeab.css.map*/
