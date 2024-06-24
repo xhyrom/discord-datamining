@@ -40665,7 +40665,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304423", ", Version Hash: ").concat("0c88bfd0bd53c29511478bb57c13194932c995a1")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304427", ", Version Hash: ").concat("aaa1d46d645a10089a1d37dfdba9c3ab7d6a7f47")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -60090,6 +60090,12 @@
                 ICYMI_FEEDBACK_NOT_ENOUGH_CONTENT: "Not enough content",
                 ICYMI_FEEDBACK_TOO_MUCH_CONTENT: "Too much content",
                 ICYMI_FEEDBACK_LAGGY: "Laggy or slow",
+                ICYMI_REPLY_TO_ACTIVITY: "Reply to Activity",
+                ICYMI_REPLY_TO_STATUS: "Reply to Status",
+                ICYMI_REPLY_TO_USER: "Reply to @!!{username}!!",
+                ICYMI_ACTIVITY_PLAYED: "played —",
+                ICYMI_ACTIVITY_PLAYING: "is currently playing —",
+                ICYMI_ACTIVITY_UPDATED_STATUS: "recently updated their status",
                 ATTACHMENT_INLINE_PLACEHOLDER: "[attachment]",
                 QUESTS_MOBILE_EMBED_UNKNOWN_TITLE: "This is an invalid quest",
                 QUESTS_MOBILE_EMBED_UNKNOWN_BODY: "Check to confirm you're using a valid quest URL",
@@ -96605,8 +96611,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304423", "304423"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304423")), t = 0), t
+                let t = parseInt((e = "304427", "304427"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304427")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124877,8 +124883,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304423",
-                    versionHash: "0c88bfd0bd53c29511478bb57c13194932c995a1"
+                    buildNumber: "304427",
+                    versionHash: "aaa1d46d645a10089a1d37dfdba9c3ab7d6a7f47"
                 }
             }
             n.d(t, {
@@ -183576,8 +183582,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719261964851",
-                                    build_number: "304423"
+                                    built_at: "1719262452815",
+                                    build_number: "304427"
                                 }
                             },
                             retries: 1
@@ -262368,7 +262374,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0c88bfd0bd53c29511478bb57c13194932c995a1"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "aaa1d46d645a10089a1d37dfdba9c3ab7d6a7f47"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281529,7 +281535,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304423"
+                                build_number: "304427"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288850,7 +288856,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304423", "304423"), 10);
+                let s = parseInt((n = "304427", "304427"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330386,4 +330392,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.7d6e2eec71cacf16d507.js.map
+//# sourceMappingURL=79892.a801a9082627d6f07750.js.map
