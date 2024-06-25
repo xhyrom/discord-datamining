@@ -40678,7 +40678,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304796", ", Version Hash: ").concat("eb6109661823a567df41b5a4d1974537781362b2")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304817", ", Version Hash: ").concat("a031ab238fbfe031d3dbad191e40a818cb0d61c8")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96759,8 +96759,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304796", "304796"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304796")), t = 0), t
+                let t = parseInt((e = "304817", "304817"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304817")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125031,8 +125031,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304796",
-                    versionHash: "eb6109661823a567df41b5a4d1974537781362b2"
+                    buildNumber: "304817",
+                    versionHash: "a031ab238fbfe031d3dbad191e40a818cb0d61c8"
                 }
             }
             n.d(t, {
@@ -183750,8 +183750,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719339487641",
-                                    build_number: "304796"
+                                    built_at: "1719341018702",
+                                    build_number: "304817"
                                 }
                             },
                             retries: 1
@@ -190661,69 +190661,72 @@
         },
         114064: function(e, t, n) {
             "use strict";
-            var i, r, s, o, a = n(442837),
-                l = n(570140),
-                u = n(168232);
-            let _ = {
+            var i, r, s, o, a = n(848246),
+                l = n(442837),
+                u = n(570140),
+                _ = n(168232),
+                c = n(933843),
+                d = n(485731);
+            let E = {
                     perksDemos: null,
                     activated: {},
                     lastFetched: null,
                     overrides: {}
                 },
-                c = _;
-            class d extends(o = a.ZP.Store) {
+                I = E;
+            class T extends(o = l.ZP.Store) {
                 getPerksDemos() {
-                    return c.perksDemos
+                    return I.perksDemos
                 }
                 getActivated() {
-                    return c.activated
+                    return I.activated
                 }
                 shouldFetch() {
-                    return null == c.lastFetched || Date.now() > c.lastFetched + 864e5
+                    return null == I.lastFetched || Date.now() > I.lastFetched + 864e5
                 }
                 shouldActivate(e) {
                     var t;
-                    return (null === (t = c.perksDemos) || void 0 === t ? void 0 : t[e]) === !0
+                    return (null === (t = I.perksDemos) || void 0 === t ? void 0 : t[e]) === !0 && !0 !== I.activated[e]
                 }
                 overrides() {
-                    return c.overrides
+                    return I.overrides
                 }
             }
-            s = "PerksDemosStore", (r = "displayName") in(i = d) ? Object.defineProperty(i, r, {
+            s = "PerksDemosStore", (r = "displayName") in(i = T) ? Object.defineProperty(i, r, {
                 value: s,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : i[r] = s, t.Z = new d(l.Z, {
+            }) : i[r] = s, t.Z = new T(u.Z, {
                 PREMIUM_PERKS_DEMOS_FETCH_SUCCESS: function(e) {
                     let {
                         demos: t
                     } = e;
-                    c.perksDemos = t, c.lastFetched = Date.now()
+                    I.perksDemos = t, I.lastFetched = Date.now()
                 },
                 PREMIUM_PERKS_DEMOS_FETCH_FAILURE: function() {
-                    c.perksDemos = _.perksDemos, c.lastFetched = null
+                    I.perksDemos = E.perksDemos, I.lastFetched = null
                 },
                 PREMIUM_PERKS_DEMO_ACTIVATE_SUCCESS: function(e) {
                     let {
                         perkType: t
                     } = e;
-                    c.activated[t] = !0
+                    I.activated[t] = !0
                 },
                 PREMIUM_PERKS_DEMO_ACTIVATE_FAILURE: function(e) {
                     let {
                         perkType: t
                     } = e;
-                    c.activated[t] = !1
+                    I.activated[t] = !1
                 },
                 PREMIUM_PERKS_DEMO_COMPLETE: function(e) {
                     let {
                         perkType: t
                     } = e;
-                    null != c.perksDemos && !0 === c.activated[t] && (c.perksDemos[t] = !1)
+                    null != I.perksDemos && !0 === I.activated[t] && (I.perksDemos[t] = !1)
                 },
                 LOGOUT: function() {
-                    c = _
+                    I = E
                 },
                 PREMIUM_PERKS_DEMO_OVERRIDE: function(e) {
                     let {
@@ -190732,10 +190735,16 @@
                         available: i,
                         activateSuccess: r
                     } = e;
-                    void 0 !== t && (0, u.QI)(t) && (c.overrides[n] = {
+                    void 0 !== t && (0, _.QI)(t) && (I.overrides[n] = {
                         available: i,
                         activateSuccess: r
-                    }, null == c.perksDemos && (c.perksDemos = {}), c.perksDemos[n] = i || !1, c.activated[n] = !1, c.lastFetched = null)
+                    }, null == I.perksDemos && (I.perksDemos = {}), I.perksDemos[n] = i || !1, I.activated[n] = !1, I.lastFetched = null)
+                },
+                STREAM_START: function() {
+                    if (!!(0, c.vw)(a.q.STREAM_HIGH_QUALITY))(0, d.cD)(!0)
+                },
+                STREAM_STOP: function() {
+                    (0, d.cD)(!1)
                 }
             })
         },
@@ -190753,7 +190762,7 @@
                 }
             });
             var i = n(594174),
-                r = n(74538),
+                r = n(111361),
                 s = n(736871),
                 o = n(114064),
                 a = n(1163),
@@ -192787,6 +192796,9 @@
                 J1: function() {
                     return r
                 },
+                cD: function() {
+                    return l
+                },
                 hP: function() {
                     return s
                 },
@@ -192795,13 +192807,18 @@
                 },
                 pM: function() {
                     return o
+                },
+                qA: function() {
+                    return a
                 }
             });
             let i = (0, n(652874).Z)(() => ({
                 hqStreamingFrameAnimationPlayed: !1,
                 hqStreamingPopoutDismissed: !1,
+                hqStreamingOptInPopoutDismissed: !1,
                 hqStreamingIsEnabled: !1,
-                hqStreamingDidEnable: !1
+                hqStreamingDidEnable: !1,
+                hqStreamingOptOutPopoutShouldShow: !1
             }));
 
             function r(e) {
@@ -192823,6 +192840,18 @@
             function o(e) {
                 i.setState({
                     hqStreamingPopoutDismissed: e
+                })
+            }
+
+            function a(e) {
+                i.setState({
+                    hqStreamingOptInPopoutDismissed: e
+                })
+            }
+
+            function l(e) {
+                i.setState({
+                    hqStreamingOptOutPopoutShouldShow: e
                 })
             }
         },
@@ -227308,8 +227337,7 @@
                         children: (0, i.jsx)(T.Z, {
                             user: t,
                             guildId: null == L ? void 0 : L.id,
-                            channelId: P,
-                            className: C.friendRequestBanner
+                            channelId: P
                         })
                     }), t.id !== n.id && (0, i.jsx)(R.Z, {
                         user: t,
@@ -262577,7 +262605,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "eb6109661823a567df41b5a4d1974537781362b2"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a031ab238fbfe031d3dbad191e40a818cb0d61c8"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281738,7 +281766,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304796"
+                                build_number: "304817"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289059,7 +289087,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304796", "304796"), 10);
+                let s = parseInt((n = "304817", "304817"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330595,4 +330623,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.059814ae71614dacfa0d.js.map
+//# sourceMappingURL=79892.f379bec1a8093fc663a9.js.map
