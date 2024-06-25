@@ -71563,7 +71563,15 @@ html .invoiceCancelRow_b1a31b {
     -o-object-fit: contain;
     object-fit: contain;
     width: 150px;
-    transform: translatey(-3px)
+    transform: translatey(-3px);
+    pointer-events: none
+}
+
+.tideArt_da1432 {
+    left: -28px;
+    bottom: -30px;
+    width: auto;
+    height: 142px
 }
 
 .tryItOutSection_eb2d2c {
@@ -74996,7 +75004,8 @@ html .invoiceCancelRow_b1a31b {
 
 .customConfetti_a0e502 {
     top: -120px;
-    right: -75px
+    right: -75px;
+    pointer-events: none
 }
 
 .bundlePreview_a0e502 {
@@ -75181,7 +75190,8 @@ html .invoiceCancelRow_b1a31b {
 
 .customConfetti_e84a32 {
     opacity: 1;
-    transition: opacity.5s ease-in-out
+    transition: opacity.5s ease-in-out;
+    pointer-events: none
 }
 
 .customConfetti_e84a32.hidden_e84a32 {
@@ -143187,4 +143197,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4f5123cfd41386e18f68.css.map*/
+/*# sourceMappingURL=99387.64428344abc4ddd5e493.css.map*/
