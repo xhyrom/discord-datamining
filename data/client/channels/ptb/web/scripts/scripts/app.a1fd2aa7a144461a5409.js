@@ -19892,8 +19892,7 @@
                 rewardTileExpirationTooltip: "rewardTileExpirationTooltip_d7df05",
                 inHouseButton: "inHouseButton_d7df05",
                 inHouseIcon: "inHouseIcon_d7df05",
-                refreshIcon: "refreshIcon_d7df05",
-                refreshIconErrorState: "refreshIconErrorState_d7df05"
+                refreshIcon: "refreshIcon_d7df05"
             }
         },
         491829: function(e, t, n) {
@@ -22023,7 +22022,6 @@
                 pencilContainer: "pencilContainer_c3e427",
                 pencilContainerDark: "pencilContainerDark_c3e427 pencilContainer_c3e427",
                 editIcon: "editIcon_c3e427",
-                closeIcon: "closeIcon_c3e427",
                 premiumIconTooltipContent: "premiumIconTooltipContent_c3e427",
                 premiumIconWrapper: "premiumIconWrapper_c3e427",
                 visible: "visible_c3e427",
@@ -22392,11 +22390,6 @@
                 tabBarItem: "tabBarItem_c1519f"
             }
         },
-        170935: function(e, t, n) {
-            e.exports = {
-                icon: "icon_f705d3"
-            }
-        },
         599625: function(e, t, n) {
             e.exports = {
                 connectionList: "connectionList_ce1058",
@@ -22420,11 +22413,7 @@
                 overlay: "overlay_b433b4",
                 mutualGuildsList: "mutualGuildsList_b433b4",
                 mutualFriendsList: "mutualFriendsList_b433b4",
-                mutualFriendsDivider: "mutualFriendsDivider_b433b4",
-                appButtonColor: "appButtonColor_b433b4",
-                appButton: "appButton_b433b4",
-                appButtonContainer: "appButtonContainer_b433b4",
-                appListThemedContainer: "appListThemedContainer_b433b4"
+                mutualFriendsDivider: "mutualFriendsDivider_b433b4"
             }
         },
         651448: function(e, t, n) {
@@ -22654,11 +22643,6 @@
         712543: function(e, t, n) {
             e.exports = {
                 popularApplicationCommandsList: "popularApplicationCommandsList_d2db23"
-            }
-        },
-        818279: function(e, t, n) {
-            e.exports = {
-                button: "button_b5248d"
             }
         },
         166015: function(e, t, n) {
