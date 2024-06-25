@@ -5256,6 +5256,20 @@
                 condensedCategoryLogoLeft: "condensedCategoryLogoLeft_be5025"
             }
         },
+        873268: function(e, t, n) {
+            e.exports = {
+                banner: "banner_d396b3",
+                mainContent: "mainContent_d396b3",
+                bannerImage: "bannerImage_d396b3",
+                overflowImage: "overflowImage_d396b3",
+                overflowLeft: "overflowLeft_d396b3",
+                overflowRight: "overflowRight_d396b3",
+                animatedLayer: "animatedLayer_d396b3",
+                attributionLogos: "attributionLogos_d396b3",
+                categoryLogo: "categoryLogo_d396b3",
+                summary: "summary_d396b3"
+            }
+        },
         120053: function(e, t, n) {
             n.r(e.exports = {
                 marketingBadgeTooltip: "marketingBadgeTooltip_a25714",

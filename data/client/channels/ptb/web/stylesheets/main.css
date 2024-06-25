@@ -48167,8 +48167,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -121568,6 +121568,94 @@ div:has(>div>.container_d99f08) {
     color: var(--white-500)
 }
 
+.banner_d396b3 {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    min-width: 740px;
+    max-width: 1060px;
+    min-height: 240px;
+    border-radius: var(--radius-xxl);
+    border: 2px solid rgba(34, 56, 103, .4)
+}
+
+.mainContent_d396b3 {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 240px;
+    border-radius: inherit;
+    overflow: hidden
+}
+
+.bannerImage_d396b3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 240px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.overflowImage_d396b3 {
+    position: absolute;
+    bottom: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: var(--radius-xxl)
+}
+
+.overflowImage_d396b3.overflowLeft_d396b3 {
+    left: 0;
+    -o-object-position: left center;
+    object-position: left center;
+    height: 300px
+}
+
+.overflowImage_d396b3.overflowRight_d396b3 {
+    right: 0;
+    -o-object-position: right center;
+    object-position: right center;
+    height: 324px
+}
+
+.animatedLayer_d396b3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 240px
+}
+
+.attributionLogos_d396b3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--white);
+    z-index: 1
+}
+
+.attributionLogos_d396b3 img {
+    height: 20px;
+    margin: 0 4px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.categoryLogo_d396b3 {
+    height: 124px;
+    margin-bottom: 16px;
+    z-index: 1
+}
+
+.summary_d396b3 {
+    z-index: 1;
+    color: var(--white-500)
+}
+
 .shopBanner_be5025 {
     grid-column: 1/-1;
     position: relative;
@@ -143202,4 +143290,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b4d3607029eeee6c2b40.css.map*/
+/*# sourceMappingURL=99387.e5851bb533cd68182dba.css.map*/
