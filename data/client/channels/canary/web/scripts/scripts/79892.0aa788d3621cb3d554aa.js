@@ -40669,7 +40669,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304656", ", Version Hash: ").concat("fb73caee39c13c87f4272e14421a269e20afd20d")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304664", ", Version Hash: ").concat("f93e3dce118fc5030ebdd283d3979dbf889ef386")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -81383,7 +81383,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 CommonTriggerPointManager: {
-                    actions: ["POST_CONNECTION_OPEN", "VOICE_CHANNEL_SELECT", "CALL_CREATE"],
+                    actions: ["POST_CONNECTION_OPEN", "VOICE_CHANNEL_SELECT", "CALL_CREATE", "USER_SETTINGS_MODAL_OPEN"],
                     inlineRequire: () => n(957899).Z
                 },
                 CommunicationDisabledManager: {
@@ -96615,8 +96615,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304656", "304656"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304656")), t = 0), t
+                let t = parseInt((e = "304664", "304664"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304664")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124887,8 +124887,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304656",
-                    versionHash: "fb73caee39c13c87f4272e14421a269e20afd20d"
+                    buildNumber: "304664",
+                    versionHash: "f93e3dce118fc5030ebdd283d3979dbf889ef386"
                 }
             }
             n.d(t, {
@@ -132362,7 +132362,7 @@
             let c = "2023-10_triggerdebuggingaa",
                 d = "2023-10_guildaa",
                 E = [c, d];
-            (_ = o || (o = {}))[_.NONE = 0] = "NONE", _[_.POST_CONNECTION_OPEN = 1] = "POST_CONNECTION_OPEN", _[_.VOICE_CALL = 2] = "VOICE_CALL"
+            (_ = o || (o = {}))[_.NONE = 0] = "NONE", _[_.POST_CONNECTION_OPEN = 1] = "POST_CONNECTION_OPEN", _[_.VOICE_CALL = 2] = "VOICE_CALL", _[_.OPEN_USER_SETTINGS = 5] = "OPEN_USER_SETTINGS"
         },
         492435: function(e, t, n) {
             "use strict";
@@ -133393,24 +133393,29 @@
             "use strict";
             n(47120);
             var i = n(147913),
-                r = n(202511),
-                s = n(828354);
-            class o extends i.Z {
+                r = n(604375),
+                s = n(202511),
+                o = n(828354);
+            class a extends i.Z {
                 handlePostConnectionOpen() {
-                    r.d.trigger()
+                    s.d.trigger()
                 }
                 handleVoiceChannelSelect() {
-                    s.M.trigger()
+                    o.M.trigger()
                 }
                 handleCallCreate() {
-                    s.M.trigger()
+                    o.M.trigger()
+                }
+                handleUserSettingsModalOpen() {
+                    r.X.trigger()
                 }
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
                         POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
                         VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect,
-                        CALL_CREATE: this.handleCallCreate
+                        CALL_CREATE: this.handleCallCreate,
+                        USER_SETTINGS_MODAL_OPEN: this.handleUserSettingsModalOpen
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -133419,7 +133424,7 @@
                     }) : t[n] = i
                 }
             }
-            t.Z = new o
+            t.Z = new a
         },
         185745: function(e, t, n) {
             "use strict";
@@ -133579,6 +133584,19 @@
                     this.experiments = e, this.triggerPoint = t, this.params = n
                 }
             }
+        },
+        604375: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                X: function() {
+                    return s
+                }
+            });
+            var i = n(91641),
+                r = n(987338);
+            let s = new i.E([], r.$P.OPEN_USER_SETTINGS, {
+                location: "open user settings"
+            })
         },
         202511: function(e, t, n) {
             "use strict";
@@ -183588,8 +183606,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719296293701",
-                                    build_number: "304656"
+                                    built_at: "1719317384944",
+                                    build_number: "304664"
                                 }
                             },
                             retries: 1
@@ -262379,7 +262397,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fb73caee39c13c87f4272e14421a269e20afd20d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f93e3dce118fc5030ebdd283d3979dbf889ef386"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281540,7 +281558,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304656"
+                                build_number: "304664"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288861,7 +288879,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304656", "304656"), 10);
+                let s = parseInt((n = "304664", "304664"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330397,4 +330415,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.a8573487deaa62804a87.js.map
+//# sourceMappingURL=79892.0aa788d3621cb3d554aa.js.map
