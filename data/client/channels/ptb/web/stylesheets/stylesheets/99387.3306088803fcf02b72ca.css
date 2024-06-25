@@ -48167,8 +48167,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -121520,12 +121520,12 @@ div:has(>div>.container_d99f08) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 12px;
     position: fixed;
     left: calc(50% + 156px);
     border-radius: 48px;
     bottom: 0;
-    width: 450px;
+    width: 444px;
     height: 32px;
     padding: 4px 32px;
     z-index: 100;
@@ -121542,8 +121542,8 @@ div:has(>div>.container_d99f08) {
 }
 
 .countdownIcon_cd5584 {
-    height: 16px;
-    margin-right: 4px
+    height: 40px;
+    pointer-events: none
 }
 
 .countdownLabel_cd5584 {
@@ -121556,6 +121556,22 @@ div:has(>div>.container_d99f08) {
 .countdown_cd5584 {
     font-family: inherit;
     color: inherit
+}
+
+.sparkles_cd5584 {
+    position: absolute
+}
+
+.sparkles_cd5584.left_cd5584 {
+    top: -10px;
+    left: 40px;
+    height: 20px
+}
+
+.sparkles_cd5584.right_cd5584 {
+    bottom: -14px;
+    right: 30px;
+    height: 28px
 }
 
 .badgeDark_e228ee {
@@ -137116,6 +137132,10 @@ div.nagbar_dccaf1 {
     --plum-8-hsl: 230 calc(var(--saturation-factor, 1) * 7.4%) 68.2%;
     --plum-9: hsl(var(--plum-9-hsl) / 1);
     --plum-9-hsl: 231 calc(var(--saturation-factor, 1) * 7.1%) 61.2%;
+    --premium-nitro-pink-dark: hsl(var(--premium-nitro-pink-dark-hsl) / 1);
+    --premium-nitro-pink-dark-hsl: 299 calc(var(--saturation-factor, 1) * 43.1%) 50.4%;
+    --premium-nitro-pink-light: hsl(var(--premium-nitro-pink-light-hsl) / 1);
+    --premium-nitro-pink-light-hsl: 299 calc(var(--saturation-factor, 1) * 42.9%) 58.8%;
     --premium-perk-blue: hsl(var(--premium-perk-blue-hsl) / 1);
     --premium-perk-blue-hsl: 222 calc(var(--saturation-factor, 1) * 100%) 75.1%;
     --premium-perk-blue-alt: hsl(var(--premium-perk-blue-alt-hsl) / 1);
@@ -137704,6 +137724,7 @@ div.nagbar_dccaf1 {
     --polls-normal-image-background: var(--primary-660);
     --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --premium-nitro-pink-text: var(--premium-nitro-pink-light);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl) / 0.3);
@@ -138276,6 +138297,9 @@ div.nagbar_dccaf1 {
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
+        --premium-nitro-pink-text: color-mix(in oklab,
+                var(--premium-nitro-pink-light) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -138804,6 +138828,7 @@ div.nagbar_dccaf1 {
     --polls-normal-image-background: var(--white-500);
     --polls-victor-fill: hsl(var(--green-400-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --premium-nitro-pink-text: var(--premium-nitro-pink-dark);
     --profile-gradient-card-background: hsl(var(--white-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-430-hsl) / 0.24);
     --profile-gradient-note-background: hsl(var(--white-500-hsl) / 0.3);
@@ -139376,6 +139401,9 @@ div.nagbar_dccaf1 {
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
+        --premium-nitro-pink-text: color-mix(in oklab,
+                var(--premium-nitro-pink-dark) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -139904,6 +139932,7 @@ div.nagbar_dccaf1 {
     --polls-normal-image-background: var(--primary-660);
     --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --premium-nitro-pink-text: var(--premium-nitro-pink-light);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl) / 0.3);
@@ -140476,6 +140505,9 @@ div.nagbar_dccaf1 {
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
+        --premium-nitro-pink-text: color-mix(in oklab,
+                var(--premium-nitro-pink-light) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -141004,6 +141036,7 @@ div.nagbar_dccaf1 {
     --polls-normal-image-background: var(--primary-660);
     --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --premium-nitro-pink-text: var(--premium-nitro-pink-light);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl) / 0.3);
@@ -141576,6 +141609,9 @@ div.nagbar_dccaf1 {
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
+        --premium-nitro-pink-text: color-mix(in oklab,
+                var(--premium-nitro-pink-light) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -143290,4 +143326,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ec0678d8702fc0ed4ca8.css.map*/
+/*# sourceMappingURL=99387.3306088803fcf02b72ca.css.map*/

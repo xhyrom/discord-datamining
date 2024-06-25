@@ -14925,7 +14925,8 @@ h6.title_f54cce {
 .benefits_e8df26 {
     display: flex;
     flex-direction: column;
-    gap: 16px
+    gap: 16px;
+    padding-top: 16px
 }
 
 .description_e8df26 {
@@ -26185,4 +26186,4 @@ span.button_f67531.disabled_f67531 {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.d9fbee5888b662202d5a.css.map*/
+/*# sourceMappingURL=49237.f5d0fcfbdfa06ef1195f.css.map*/
