@@ -40678,7 +40678,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304817", ", Version Hash: ").concat("a031ab238fbfe031d3dbad191e40a818cb0d61c8")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304824", ", Version Hash: ").concat("8f4cbd0f078bf25c301be3d15ac4960eb3a4e944")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42454,8 +42454,10 @@
                 APP_LAUNCHER_NO_OPTIONS_CALLOUT: "This command has no options. Send it!",
                 APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER: "Select an option below",
                 APP_LAUNCHER_SEARCH_PLACEHOLDER: "Search Apps & Commands",
+                APP_LAUNCHER_SEARCH_ACTIVITIES_PLACEHOLDER: "Search",
                 APP_LAUNCHER_HOME_EMPTY_STATE_BODY: "No apps have been installed in this server yet",
                 APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY: "No apps or commands match your search",
+                APP_LAUNCHER_SEARCH_EMPTY_STATE_ACTIVITIES_BODY: "No activities match your search",
                 APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY_GENERIC: "Nothing matches your search",
                 APP_LAUNCHER_BUILT_IN_SECTION_NAME: "Discord Built-In",
                 APP_LAUNCHER_BUILT_IN_SECTION_DESCRIPTION: "Built-in commands for everyday use",
@@ -80359,23 +80361,24 @@
                     enableRecommendations: a,
                     enableRecents: l,
                     enableGlobalSearch: u
-                } = e, c = (0, d.NX)(t.id, !0, "AppLauncherHomeScreen"), I = n === m._.TEXT, T = n === m._.TEXT && a, h = n === m._.VOICE, S = T || I;
+                } = e, c = (0, d.NX)(t.id, !0, "AppLauncherHomeScreen"), I = n === m._.TEXT, T = n === m._.TEXT && a, h = n === m._.VOICE, S = T || I, f = n === m._.TEXT;
                 r.useEffect(() => {
                     c && (0, E.w1)({
                         guildId: t.getGuildId(),
                         force: !0
                     })
                 }, [c, t]);
-                let f = s.length > 0;
+                let N = s.length > 0;
                 return (0, i.jsxs)("div", {
                     className: M.container,
                     children: [(0, i.jsx)(G, {
                         searchQuery: s,
-                        setSearchQuery: o
+                        setSearchQuery: o,
+                        placeholder: f ? D.Z.Messages.APP_LAUNCHER_SEARCH_PLACEHOLDER : D.Z.Messages.APP_LAUNCHER_SEARCH_ACTIVITIES_PLACEHOLDER
                     }), (0, i.jsx)(_.Scroller, {
                         className: M.scrollableContent,
                         fade: !0,
-                        children: f ? (0, i.jsx)("div", {
+                        children: N ? (0, i.jsx)("div", {
                             children: (0, i.jsx)(v.Z, {
                                 channel: t,
                                 query: s,
@@ -80399,20 +80402,21 @@
             function G(e) {
                 let {
                     searchQuery: t,
-                    setSearchQuery: n
-                } = e, s = r.useMemo(() => o().debounce(e => {}, 400, {
+                    setSearchQuery: n,
+                    placeholder: s
+                } = e, a = r.useMemo(() => o().debounce(e => {}, 400, {
                     leading: !1,
                     trailing: !0
-                }), []), a = r.useCallback(e => {
-                    n(e), s(e)
-                }, [n, s]), l = r.useCallback(() => n(""), [n]);
+                }), []), l = r.useCallback(e => {
+                    n(e), a(e)
+                }, [n, a]), u = r.useCallback(() => n(""), [n]);
                 return (0, i.jsx)("div", {
                     className: M.searchBarContainer,
                     children: (0, i.jsx)(_.SearchBar, {
-                        placeholder: D.Z.Messages.APP_LAUNCHER_SEARCH_PLACEHOLDER,
+                        placeholder: s,
                         query: t,
-                        onChange: a,
-                        onClear: l,
+                        onChange: l,
+                        onClear: u,
                         size: _.SearchBar.Sizes.MEDIUM,
                         autoFocus: !0
                     })
@@ -81028,7 +81032,8 @@
                     }))]
                 }, [s, N, I]);
                 return u ? (0, i.jsx)(G, {}) : _ ? (0, i.jsx)(w, {
-                    searchQuery: n
+                    searchQuery: n,
+                    textContent: s === h._.TEXT ? p.Z.Messages.APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY : p.Z.Messages.APP_LAUNCHER_SEARCH_EMPTY_STATE_ACTIVITIES_BODY
                 }) : (0, i.jsxs)("div", {
                     children: [d && (0, i.jsx)(U, {
                         channel: t,
@@ -81065,7 +81070,8 @@
                     installOnDemand: !1
                 })), [c]);
                 return a ? (0, i.jsx)(G, {}) : l ? (0, i.jsx)(w, {
-                    searchQuery: n
+                    searchQuery: n,
+                    textContent: s === h._.TEXT ? p.Z.Messages.APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY : p.Z.Messages.APP_LAUNCHER_SEARCH_EMPTY_STATE_ACTIVITIES_BODY
                 }) : (0, i.jsxs)("div", {
                     children: [_ && (0, i.jsx)(U, {
                         channel: t,
@@ -81161,18 +81167,19 @@
             }
 
             function w(e) {
-                let t = (0, _.ZP)(),
-                    n = (0, l.ap)(t) ? v : C;
+                let {
+                    textContent: t
+                } = e, n = (0, _.ZP)(), r = (0, l.ap)(n) ? v : C;
                 return (0, i.jsxs)("div", {
                     className: g.emptyStateContainer,
                     children: [(0, i.jsx)("img", {
                         className: g.emptyStateImage,
-                        src: n,
+                        src: r,
                         alt: ""
                     }), (0, i.jsx)(u.Text, {
                         variant: "text-md/medium",
                         color: "text-muted",
-                        children: p.Z.Messages.APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY
+                        children: t
                     })]
                 })
             }
@@ -96759,8 +96766,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304817", "304817"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304817")), t = 0), t
+                let t = parseInt((e = "304824", "304824"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304824")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125031,8 +125038,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304817",
-                    versionHash: "a031ab238fbfe031d3dbad191e40a818cb0d61c8"
+                    buildNumber: "304824",
+                    versionHash: "8f4cbd0f078bf25c301be3d15ac4960eb3a4e944"
                 }
             }
             n.d(t, {
@@ -183750,8 +183757,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719341018702",
-                                    build_number: "304817"
+                                    built_at: "1719341537992",
+                                    build_number: "304824"
                                 }
                             },
                             retries: 1
@@ -262605,7 +262612,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a031ab238fbfe031d3dbad191e40a818cb0d61c8"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8f4cbd0f078bf25c301be3d15ac4960eb3a4e944"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281766,7 +281773,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304817"
+                                build_number: "304824"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289087,7 +289094,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304817", "304817"), 10);
+                let s = parseInt((n = "304824", "304824"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330623,4 +330630,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.f379bec1a8093fc663a9.js.map
+//# sourceMappingURL=79892.ebbdd4efa59e04c411c4.js.map
