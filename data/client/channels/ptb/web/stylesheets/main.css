@@ -103291,6 +103291,10 @@ div:has(>div>.container_d99f08) {
     gap: 4px
 }
 
+.gapMd_e881fc {
+    gap: 8px
+}
+
 .clickable_e881fc {
     cursor: pointer
 }
@@ -103374,6 +103378,12 @@ div:has(>div>.container_d99f08) {
 .logo_e881fc {
     width: 120px;
     height: 154px;
+    border-radius: 4px
+}
+
+.icon_e881fc {
+    width: 32px;
+    height: 32px;
     border-radius: 4px
 }
 
@@ -143177,4 +143187,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ca30e515ece082bd6a85.css.map*/
+/*# sourceMappingURL=99387.72b2065c8540f73817fa.css.map*/
