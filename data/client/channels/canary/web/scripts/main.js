@@ -40706,7 +40706,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304995", ", Version Hash: ").concat("438e0afac13f360485bfc1eb70b3e3491f21ba6e")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("305010", ", Version Hash: ").concat("cfd258cb752ed26cca728240b0abbf6bfdd5ccad")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96946,8 +96946,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304995", "304995"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304995")), t = 0), t
+                let t = parseInt((e = "305010", "305010"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305010")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125218,8 +125218,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304995",
-                    versionHash: "438e0afac13f360485bfc1eb70b3e3491f21ba6e"
+                    buildNumber: "305010",
+                    versionHash: "cfd258cb752ed26cca728240b0abbf6bfdd5ccad"
                 }
             }
             n.d(t, {
@@ -138212,38 +138212,40 @@
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.x4.getSetting();
                     if (!t) return [];
                     let n = null == e ? void 0 : e.attachments;
-                    return null == e || null == n ? [] : n.filter(N).map(e => {
+                    return null == e || null == n ? [] : n.filter(N).map((e, t) => {
                         let {
-                            proxy_url: t,
-                            url: n,
-                            description: i,
-                            spoiler: r,
-                            flags: s,
-                            width: a,
-                            height: l,
-                            filename: u,
-                            content_scan_version: _
+                            proxy_url: n,
+                            url: i,
+                            description: r,
+                            spoiler: s,
+                            flags: a,
+                            width: l,
+                            height: u,
+                            filename: _,
+                            content_scan_version: c
                         } = e;
-                        if (null == a || null == l) return null;
-                        let c = (0, o.NU)(u),
-                            E = null != e.flags && (0, d.yE)(e.flags, h.J0y.IS_THUMBNAIL),
-                            I = null != t ? t : n;
-                        if (c) {
-                            let e = T.Z.toURLSafe(t);
+                        if (null == l || null == u) return null;
+                        let E = (0, o.NU)(_),
+                            I = null != e.flags && (0, d.yE)(e.flags, h.J0y.IS_THUMBNAIL),
+                            S = null != n ? n : i;
+                        if (E) {
+                            let e = T.Z.toURLSafe(n);
                             if (null == e) return null;
-                            e.searchParams.append("format", "jpeg"), I = e.toString()
+                            e.searchParams.append("format", "jpeg"), S = e.toString()
                         }
                         return {
-                            src: I,
-                            width: a,
-                            height: l,
-                            spoiler: null != r && r,
-                            flags: s,
-                            contentScanVersion: _,
-                            alt: i,
-                            isVideo: c,
-                            isThumbnail: E,
-                            type: "attachment"
+                            src: S,
+                            width: l,
+                            height: u,
+                            spoiler: null != s && s,
+                            flags: a,
+                            contentScanVersion: c,
+                            alt: r,
+                            isVideo: E,
+                            isThumbnail: I,
+                            type: "attachment",
+                            attachmentId: e.id,
+                            mediaIndex: t
                         }
                     }).filter(E.lm)
                 }(e, l.x4.useSetting())
@@ -138254,25 +138256,26 @@
                     i = l.NA.useSetting();
                 if (null == e) return [];
                 let r = e.embeds;
-                return n && i && null != r ? r.map(e => {
-                    var n;
-                    let i = null !== (n = e.image) && void 0 !== n ? n : e.thumbnail;
-                    if (null == i && null != e.images && (i = e.images[0]), null != i && null != i.url) {
+                return n && i && null != r ? r.map((e, n) => {
+                    var i;
+                    let r = null !== (i = e.image) && void 0 !== i ? i : e.thumbnail;
+                    if (null == r && null != e.images && (r = e.images[0]), null != r && null != r.url) {
                         let {
-                            height: n,
-                            proxyURL: r,
-                            url: s,
-                            width: a
-                        } = i, l = null != r && (0, o.cb)(r);
+                            height: i,
+                            proxyURL: s,
+                            url: a,
+                            width: l
+                        } = r, u = null != s && (0, o.cb)(s);
                         return {
-                            src: null != r && "" !== r ? r : s,
-                            height: n,
-                            width: a,
+                            src: null != s && "" !== s ? s : a,
+                            height: i,
+                            width: l,
                             spoiler: t,
                             flags: e.flags,
                             contentScanVersion: e.contentScanVersion,
-                            isVideo: l,
-                            type: "embed"
+                            isVideo: u,
+                            type: "embed",
+                            mediaIndex: n
                         }
                     }
                 }).filter(E.lm) : []
@@ -183958,8 +183961,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719352083779",
-                                    build_number: "304995"
+                                    built_at: "1719353818112",
+                                    build_number: "305010"
                                 }
                             },
                             retries: 1
@@ -221511,6 +221514,62 @@
                     })
                 }
         },
+        332390: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                l: function() {
+                    return r
+                }
+            });
+            let i = (0, n(818083).B)({
+                    kind: "user",
+                    id: "2024-06_profile_engagement_Ctas",
+                    label: "Simplified Profile Primary Engagement Ctas",
+                    defaultConfig: {
+                        messageCtaEnabled: !1,
+                        activeInviteToCallCtaEnabled: !1,
+                        persistentCallCtaEnabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Message Cta on all profiles",
+                        config: {
+                            messageCtaEnabled: !0,
+                            activeInviteToCallCtaEnabled: !1,
+                            persistentCallCtaEnabled: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Message Cta and invite to call Cta when active in call",
+                        config: {
+                            messageCtaEnabled: !0,
+                            activeInviteToCallCtaEnabled: !0,
+                            persistentCallCtaEnabled: !1
+                        }
+                    }, {
+                        id: 3,
+                        label: "Message Cta and persistent call Cta",
+                        config: {
+                            messageCtaEnabled: !0,
+                            activeInviteToCallCtaEnabled: !1,
+                            persistentCallCtaEnabled: !0
+                        }
+                    }]
+                }),
+                r = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !0,
+                        trackExposureOptions: r = {}
+                    } = e;
+                    return i.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n,
+                        trackExposureOptions: r
+                    })
+                }
+        },
         877485: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -227101,94 +227160,116 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return O
+                    return L
                 }
             }), n(411104), n(47120);
             var i = n(735250),
                 r = n(470079),
-                s = n(493683),
-                o = n(904245),
-                a = n(906732),
-                l = n(541716),
-                u = n(752305),
-                _ = n(893718),
-                c = n(957730),
-                d = n(131704),
-                E = n(592125),
-                I = n(5192),
-                T = n(838440),
-                h = n(785717),
-                S = n(981631),
-                f = n(689938),
-                N = n(682583);
-            let A = (0, d.kt)({
+                s = n(120356),
+                o = n.n(s),
+                a = n(481060),
+                l = n(493683),
+                u = n(904245),
+                _ = n(906732),
+                c = n(541716),
+                d = n(752305),
+                E = n(893718),
+                I = n(957730),
+                T = n(131704),
+                h = n(592125),
+                S = n(5192),
+                f = n(838440),
+                N = n(332390),
+                A = n(785717),
+                m = n(993409),
+                O = n(981631),
+                R = n(689938),
+                p = n(717633),
+                g = n(682583);
+            let C = (0, T.kt)({
                     id: "1",
-                    type: S.d4z.DM
+                    type: O.d4z.DM
                 }),
-                m = async e => {
+                v = async e => {
                     let {
                         userId: t,
                         content: n,
                         location: i
                     } = e, {
                         valid: r,
-                        failureReason: a
-                    } = await (0, T.v)({
-                        type: l.I.NORMAL,
+                        failureReason: s
+                    } = await (0, f.v)({
+                        type: c.I.NORMAL,
                         content: n,
                         channel: null
                     });
-                    if (!r) throw Error(a);
-                    let u = await s.Z.openPrivateChannel(t, !1, !1, i),
-                        _ = E.Z.getChannel(u);
-                    if (null == _) throw Error("Failed to open private channel");
-                    let d = c.ZP.parse(_, n);
-                    return o.Z.sendMessage(_.id, d)
+                    if (!r) throw Error(s);
+                    let o = await l.Z.openPrivateChannel(t, !1, !1, i),
+                        a = h.Z.getChannel(o);
+                    if (null == a) throw Error("Failed to open private channel");
+                    let _ = I.ZP.parse(a, n);
+                    return u.Z.sendMessage(a.id, _)
                 };
 
-            function O(e) {
+            function L(e) {
                 let {
                     user: t,
                     guildId: n,
                     channelId: s,
-                    onClose: o
+                    onClose: u
                 } = e, {
-                    newestAnalyticsLocation: c
-                } = (0, a.ZP)(), {
-                    trackUserProfileAction: d
-                } = (0, h.KZ)(), [E, T] = r.useState(""), [S, O] = r.useState((0, u.JM)(E)), R = r.useRef(!1);
-                return (0, i.jsx)(_.Z, {
-                    innerClassName: N.inner,
-                    editorClassName: N.editor,
-                    type: l.I.USER_PROFILE,
-                    placeholder: f.Z.Messages.QUICK_DM_USER.format({
-                        name: I.ZP.getName(n, s, t)
-                    }),
-                    channel: A,
-                    textValue: E,
-                    richValue: S,
-                    onChange: (e, t, n) => {
-                        if (t !== E) T(t), O(n)
+                    newestAnalyticsLocation: I
+                } = (0, _.ZP)(), {
+                    trackUserProfileAction: T
+                } = (0, A.KZ)(), {
+                    messageCtaEnabled: h
+                } = (0, N.l)({
+                    location: "BiteSizeProfileDirectMessageSection"
+                }), [f, O] = r.useState(""), [L, D] = r.useState((0, d.JM)(f)), M = r.useRef(!1);
+                return h ? (0, i.jsx)(m.Z, {
+                    fullWidth: !0,
+                    variant: "text",
+                    look: a.Button.Looks.BLANK,
+                    color: o()(a.Button.Colors.BRAND, p.color),
+                    onClick: () => {
+                        T({
+                            action: "SEND_MESSAGE"
+                        }), l.Z.openPrivateChannel(t.id, !1, !1, I), null == u || u()
                     },
-                    focused: R.current,
+                    icon: a.ChatIcon,
+                    text: R.Z.Messages.USER_PROFILE_MESSAGE
+                }) : (0, i.jsx)(E.Z, {
+                    innerClassName: g.inner,
+                    editorClassName: g.editor,
+                    type: c.I.USER_PROFILE,
+                    placeholder: R.Z.Messages.QUICK_DM_USER.format({
+                        name: S.ZP.getName(n, s, t)
+                    }),
+                    channel: C,
+                    textValue: f,
+                    richValue: L,
+                    onChange: (e, t, n) => {
+                        if (t !== f) O(t), D(n)
+                    },
+                    focused: M.current,
                     onFocus: () => {
-                        R.current = !0
+                        M.current = !0
                     },
                     onBlur: () => {
-                        R.current = !1
+                        M.current = !1
                     },
                     onSubmit: async e => {
                         let {
                             value: n
                         } = e;
                         try {
-                            return d({
+                            return T({
                                 action: "SEND_DIRECT_MESSAGE"
-                            }), await m({
+                            }), await v({
                                 userId: t.id,
                                 content: n.trim(),
-                                location: c
-                            }), null == o || o(), {
+                                location: I
+                            }), null == u || u(), {
                                 shouldClear: !0,
                                 shouldRefocus: !1
                             }
@@ -262312,7 +262393,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "438e0afac13f360485bfc1eb70b3e3491f21ba6e"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cfd258cb752ed26cca728240b0abbf6bfdd5ccad"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281473,7 +281554,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304995"
+                                build_number: "305010"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288794,7 +288875,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304995", "304995"), 10);
+                let s = parseInt((n = "305010", "305010"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330330,4 +330411,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.583f5be9544753ed53b2.js.map
+//# sourceMappingURL=79892.c75113bb0e072757382c.js.map
