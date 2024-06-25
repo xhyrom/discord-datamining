@@ -40678,7 +40678,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304824", ", Version Hash: ").concat("8f4cbd0f078bf25c301be3d15ac4960eb3a4e944")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304835", ", Version Hash: ").concat("706ae4842b61c4e93a98855b05d2be7571a4445e")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42484,6 +42484,7 @@
                 APP_LAUNCHER_ACTIVITY_NOT_AVAILABLE_IN_THREAD: "Activities cannot be launched in Threads at this time",
                 APP_LAUNCHER_GLOBAL_SEARCH_COACHMARK_TITLE: "Find New Apps",
                 APP_LAUNCHER_GLOBAL_SEARCH_COACHMARK_DESCRIPTION: "Discover games, music, and other fun things to do with friends!",
+                APP_LAUNCHER_USE_APP_TOOLTIP: "Use an App",
                 READY: "Ready",
                 CONNECTING: "Connecting…",
                 CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -78194,10 +78195,14 @@
                 },
                 e9: function() {
                     return o
+                },
+                t4: function() {
+                    return a
                 }
             }), (r = i || (i = {}))[r.POPULAR = 0] = "POPULAR", r[r.ALPHABETICAL = 1] = "ALPHABETICAL";
             let s = "app-launcher-element",
-                o = "app-launcher-modal"
+                o = "app-launcher-modal",
+                a = "app-launcher-entrypoint"
         },
         424602: function(e, t, n) {
             "use strict";
@@ -79083,7 +79088,7 @@
                     if ((0, s.k)(i) && null != i.closest("." + T.Jh)) return;
                     for (;
                         (0, s.k)(i);) {
-                        if (i === S.current) return;
+                        if (i === S.current || i.classList.contains(T.t4)) return;
                         i = i.parentNode
                     }
                     d.y();
@@ -96766,8 +96771,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304824", "304824"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304824")), t = 0), t
+                let t = parseInt((e = "304835", "304835"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304835")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125038,8 +125043,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304824",
-                    versionHash: "8f4cbd0f078bf25c301be3d15ac4960eb3a4e944"
+                    buildNumber: "304835",
+                    versionHash: "706ae4842b61c4e93a98855b05d2be7571a4445e"
                 }
             }
             n.d(t, {
@@ -146948,10 +146953,8 @@
                         let e = this.getQualityConfig();
                         if (null === e) return;
                         let [i, r, s, o] = e;
-                        t[i] = r, t[s] = 0, n.push(i), this.hasEverReceivedFrame() && this.supportsSeamless && (-1 === this.pendingSSRC ? (this.pendingSSRC = i, n.push(s), t[s] = o) : this.pendingSSRC === i ? this.pendingSSRCReceived ? (this.pendingSSRC = -1, this.pendingSSRCReceived = !1) : (n.push(s), t[s] = o) : this.pendingSSRC === s && (this.pendingSSRC = -1))
-                    } else t[this.videoStreams[0].ssrc] = 100, n.push(this.videoStreams[0].ssrc);
-                    if (!l.Z.isIncomingVideoEnabled())
-                        for (let e in t) "any" !== e && (t[e] = 0);
+                        t[i] = r, t[s] = 0, n.push(i), this.hasEverReceivedFrame() && this.supportsSeamless && l.Z.isIncomingVideoEnabled() && (-1 === this.pendingSSRC ? (this.pendingSSRC = i, n.push(s), t[s] = o) : this.pendingSSRC === i ? this.pendingSSRCReceived ? (this.pendingSSRC = -1, this.pendingSSRCReceived = !1) : (n.push(s), t[s] = o) : this.pendingSSRC === s && (this.pendingSSRC = -1))
+                    } else t[this.videoStreams[0].ssrc] = l.Z.isIncomingVideoEnabled() ? 100 : 0, n.push(this.videoStreams[0].ssrc);
                     this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, n), this.emit("requested-streams-update", t)
                 }
                 setStreamDowngradedInternal(e) {
@@ -146961,9 +146964,10 @@
                     let e = o().minBy(this.videoStreams, e => e.quality),
                         t = o().maxBy(this.videoStreams, e => e.quality);
                     if (void 0 === e || void 0 === t) return null;
+                    if (!l.Z.isIncomingVideoEnabled()) return [e.ssrc, 0, t.ssrc, 0];
                     if (this.debugQualityOverride === _.Z.LOW) return [e.ssrc, 60, t.ssrc, 100];
                     if (this.debugQualityOverride === _.Z.HIGH) return [t.ssrc, 100, e.ssrc, 60];
-                    if (this.downgraded) return [e.ssrc, 60, t.ssrc, 100];
+                    else if (this.downgraded) return [e.ssrc, 60, t.ssrc, 100];
                     else return [t.ssrc, 100, e.ssrc, 60]
                 }
                 constructor(e) {
@@ -183757,8 +183761,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719341537992",
-                                    build_number: "304824"
+                                    built_at: "1719342014428",
+                                    build_number: "304835"
                                 }
                             },
                             retries: 1
@@ -262612,7 +262616,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8f4cbd0f078bf25c301be3d15ac4960eb3a4e944"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "706ae4842b61c4e93a98855b05d2be7571a4445e"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281773,7 +281777,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304824"
+                                build_number: "304835"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289094,7 +289098,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304824", "304824"), 10);
+                let s = parseInt((n = "304835", "304835"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330630,4 +330634,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.ebbdd4efa59e04c411c4.js.map
+//# sourceMappingURL=79892.f9964725424a88fcaf9e.js.map
