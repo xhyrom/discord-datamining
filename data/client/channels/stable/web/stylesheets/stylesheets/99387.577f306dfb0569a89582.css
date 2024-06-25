@@ -46042,7 +46042,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     height: 10px
 }
 
-.statusBubbleOuterStatusCursor_d0a252 {
+.statusBubbleOuterAddStatusCursor_d0a252 {
     cursor: pointer
 }
 
@@ -46102,8 +46102,47 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     fill: var(--interactive-hover)
 }
 
+.statusBubbleOuter_d0a252:hover .editIcon_d0a252,
+.statusBubbleOuter_d0a252:focus-within .editIcon_d0a252 {
+    display: block
+}
+
 .singleLineAlign_d0a252 {
     text-align: center
+}
+
+.editIcon_d0a252 {
+    display: none
+}
+
+.editGradient_d0a252 {
+    background: linear-gradient(90deg, rgba(49, 51, 56, 0)0%, var(--bg-surface-overlay)100%);
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    max-width: 18px;
+    width: 100%;
+    height: 18px
+}
+
+.editGradientEmojiOnly_d0a252 {
+    top: 8px;
+    max-width: 32px;
+    height: 32px
+}
+
+.editClickable_d0a252 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 1;
+    background: var(--bg-surface-overlay);
+    cursor: pointer
+}
+
+.editClickableEmojiOnly_d0a252 {
+    top: 8px;
+    height: 32px
 }
 
 .addStatusPrompt_d0a252 {
@@ -48167,8 +48206,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -71563,7 +71602,15 @@ html .invoiceCancelRow_b1a31b {
     -o-object-fit: contain;
     object-fit: contain;
     width: 150px;
-    transform: translatey(-3px)
+    transform: translatey(-3px);
+    pointer-events: none
+}
+
+.tideArt_da1432 {
+    left: -28px;
+    bottom: -30px;
+    width: auto;
+    height: 142px
 }
 
 .tryItOutSection_eb2d2c {
@@ -74996,7 +75043,8 @@ html .invoiceCancelRow_b1a31b {
 
 .customConfetti_a0e502 {
     top: -120px;
-    right: -75px
+    right: -75px;
+    pointer-events: none
 }
 
 .bundlePreview_a0e502 {
@@ -75181,7 +75229,8 @@ html .invoiceCancelRow_b1a31b {
 
 .customConfetti_e84a32 {
     opacity: 1;
-    transition: opacity.5s ease-in-out
+    transition: opacity.5s ease-in-out;
+    pointer-events: none
 }
 
 .customConfetti_e84a32.hidden_e84a32 {
@@ -96024,6 +96073,11 @@ input::-webkit-inner-spin-button {
 
 .shyButton_a25714 {
     background: radial-gradient(ellipse at 120%200%, #ff4655 10%, transparent 70%);
+    background-clip: content-box
+}
+
+.tideButton_a25714 {
+    background: linear-gradient(-8deg, rgba(13, 243, 243, .3)-15.16%, rgba(13, 174, 243, .5)9.84%, rgba(43, 45, 49, 0)50%);
     background-clip: content-box
 }
 
@@ -121505,12 +121559,12 @@ div:has(>div>.container_d99f08) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 12px;
     position: fixed;
     left: calc(50% + 156px);
     border-radius: 48px;
     bottom: 0;
-    width: 450px;
+    width: 444px;
     height: 32px;
     padding: 4px 32px;
     z-index: 100;
@@ -121527,8 +121581,8 @@ div:has(>div>.container_d99f08) {
 }
 
 .countdownIcon_cd5584 {
-    height: 16px;
-    margin-right: 4px
+    height: 40px;
+    pointer-events: none
 }
 
 .countdownLabel_cd5584 {
@@ -121543,6 +121597,22 @@ div:has(>div>.container_d99f08) {
     color: inherit
 }
 
+.sparkles_cd5584 {
+    position: absolute
+}
+
+.sparkles_cd5584.left_cd5584 {
+    top: -10px;
+    left: 40px;
+    height: 20px
+}
+
+.sparkles_cd5584.right_cd5584 {
+    bottom: -14px;
+    right: 30px;
+    height: 28px
+}
+
 .badgeDark_e228ee {
     background-color: var(--white-500);
     color: var(--black-500)
@@ -121550,6 +121620,94 @@ div:has(>div>.container_d99f08) {
 
 .badgeLight_e228ee {
     background-color: var(--black-500);
+    color: var(--white-500)
+}
+
+.banner_d396b3 {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    min-width: 740px;
+    max-width: 1060px;
+    min-height: 240px;
+    border-radius: var(--radius-xxl);
+    border: 2px solid rgba(34, 56, 103, .4)
+}
+
+.mainContent_d396b3 {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 240px;
+    border-radius: inherit;
+    overflow: hidden
+}
+
+.bannerImage_d396b3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 240px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.overflowImage_d396b3 {
+    position: absolute;
+    bottom: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: var(--radius-xxl)
+}
+
+.overflowImage_d396b3.overflowLeft_d396b3 {
+    left: 0;
+    -o-object-position: left center;
+    object-position: left center;
+    height: 300px
+}
+
+.overflowImage_d396b3.overflowRight_d396b3 {
+    right: 0;
+    -o-object-position: right center;
+    object-position: right center;
+    height: 324px
+}
+
+.animatedLayer_d396b3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 240px
+}
+
+.attributionLogos_d396b3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--white);
+    z-index: 1
+}
+
+.attributionLogos_d396b3 img {
+    height: 20px;
+    margin: 0 4px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.categoryLogo_d396b3 {
+    height: 124px;
+    margin-bottom: 16px;
+    z-index: 1
+}
+
+.summary_d396b3 {
+    z-index: 1;
     color: var(--white-500)
 }
 
@@ -137013,6 +137171,10 @@ div.nagbar_dccaf1 {
     --plum-8-hsl: 230 calc(var(--saturation-factor, 1) * 7.4%) 68.2%;
     --plum-9: hsl(var(--plum-9-hsl) / 1);
     --plum-9-hsl: 231 calc(var(--saturation-factor, 1) * 7.1%) 61.2%;
+    --premium-nitro-pink-dark: hsl(var(--premium-nitro-pink-dark-hsl) / 1);
+    --premium-nitro-pink-dark-hsl: 299 calc(var(--saturation-factor, 1) * 43.1%) 50.4%;
+    --premium-nitro-pink-light: hsl(var(--premium-nitro-pink-light-hsl) / 1);
+    --premium-nitro-pink-light-hsl: 299 calc(var(--saturation-factor, 1) * 42.9%) 58.8%;
     --premium-perk-blue: hsl(var(--premium-perk-blue-hsl) / 1);
     --premium-perk-blue-hsl: 222 calc(var(--saturation-factor, 1) * 100%) 75.1%;
     --premium-perk-blue-alt: hsl(var(--premium-perk-blue-alt-hsl) / 1);
@@ -137601,6 +137763,7 @@ div.nagbar_dccaf1 {
     --polls-normal-image-background: var(--primary-660);
     --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --premium-nitro-pink-text: var(--premium-nitro-pink-light);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl) / 0.3);
@@ -138173,6 +138336,9 @@ div.nagbar_dccaf1 {
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
+        --premium-nitro-pink-text: color-mix(in oklab,
+                var(--premium-nitro-pink-light) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -138701,6 +138867,7 @@ div.nagbar_dccaf1 {
     --polls-normal-image-background: var(--white-500);
     --polls-victor-fill: hsl(var(--green-400-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --premium-nitro-pink-text: var(--premium-nitro-pink-dark);
     --profile-gradient-card-background: hsl(var(--white-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-430-hsl) / 0.24);
     --profile-gradient-note-background: hsl(var(--white-500-hsl) / 0.3);
@@ -139273,6 +139440,9 @@ div.nagbar_dccaf1 {
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
+        --premium-nitro-pink-text: color-mix(in oklab,
+                var(--premium-nitro-pink-dark) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -139801,6 +139971,7 @@ div.nagbar_dccaf1 {
     --polls-normal-image-background: var(--primary-660);
     --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --premium-nitro-pink-text: var(--premium-nitro-pink-light);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl) / 0.3);
@@ -140373,6 +140544,9 @@ div.nagbar_dccaf1 {
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
+        --premium-nitro-pink-text: color-mix(in oklab,
+                var(--premium-nitro-pink-light) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -140901,6 +141075,7 @@ div.nagbar_dccaf1 {
     --polls-normal-image-background: var(--primary-660);
     --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
     --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+    --premium-nitro-pink-text: var(--premium-nitro-pink-light);
     --profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl) / 0.3);
@@ -141473,6 +141648,9 @@ div.nagbar_dccaf1 {
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
+        --premium-nitro-pink-text: color-mix(in oklab,
+                var(--premium-nitro-pink-light) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -143187,4 +143365,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4f5123cfd41386e18f68.css.map*/
+/*# sourceMappingURL=99387.577f306dfb0569a89582.css.map*/

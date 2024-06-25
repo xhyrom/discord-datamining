@@ -5169,7 +5169,10 @@
                 mobileWrapper: "mobileWrapper_cd5584",
                 countdownIcon: "countdownIcon_cd5584",
                 countdownLabel: "countdownLabel_cd5584",
-                countdown: "countdown_cd5584"
+                countdown: "countdown_cd5584",
+                sparkles: "sparkles_cd5584",
+                left: "left_cd5584",
+                right: "right_cd5584"
             }
         },
         677937: function(e, t, n) {
@@ -5256,6 +5259,20 @@
                 condensedCategoryLogoLeft: "condensedCategoryLogoLeft_be5025"
             }
         },
+        873268: function(e, t, n) {
+            e.exports = {
+                banner: "banner_d396b3",
+                mainContent: "mainContent_d396b3",
+                bannerImage: "bannerImage_d396b3",
+                overflowImage: "overflowImage_d396b3",
+                overflowLeft: "overflowLeft_d396b3",
+                overflowRight: "overflowRight_d396b3",
+                animatedLayer: "animatedLayer_d396b3",
+                attributionLogos: "attributionLogos_d396b3",
+                categoryLogo: "categoryLogo_d396b3",
+                summary: "summary_d396b3"
+            }
+        },
         120053: function(e, t, n) {
             n.r(e.exports = {
                 marketingBadgeTooltip: "marketingBadgeTooltip_a25714",
@@ -5267,7 +5284,8 @@
                 newBadge: "newBadge_a25714",
                 marketingButtonImage: "marketingButtonImage_a25714",
                 marketingButtonImageHovered: "marketingButtonImageHovered_a25714",
-                shyButton: "shyButton_a25714"
+                shyButton: "shyButton_a25714",
+                tideButton: "tideButton_a25714"
             })
         },
         82783: function(e, t, n) {
@@ -5456,7 +5474,8 @@
                 title: "title_da1432",
                 ctaButton: "ctaButton_da1432",
                 artContainer: "artContainer_da1432",
-                art: "art_da1432"
+                art: "art_da1432",
+                tideArt: "tideArt_da1432"
             }
         },
         513915: function(e, t, n) {
@@ -19532,10 +19551,6 @@
         347051: function(e, t, n) {
             e.exports = {
                 flex: "flex_e60321",
-                copyIcon: "copyIcon_e60321",
-                iconButtonLarge: "iconButtonLarge_e60321",
-                iconButton: "iconButton_e60321",
-                iconButtonInner: "iconButtonInner_e60321",
                 ctaContainer: "ctaContainer_e60321",
                 shine: "shine_e60321"
             }
@@ -22013,7 +22028,7 @@
                 visibleContainer: "visibleContainer_d0a252",
                 reactReplyBar: "reactReplyBar_d0a252",
                 statusBubbleCopyStatusCursor: "statusBubbleCopyStatusCursor_d0a252",
-                statusBubbleOuterStatusCursor: "statusBubbleOuterStatusCursor_d0a252",
+                statusBubbleOuterAddStatusCursor: "statusBubbleOuterAddStatusCursor_d0a252",
                 statusBubbleShape: "statusBubbleShape_d0a252",
                 statusBubbleSingleLineWithTextShape: "statusBubbleSingleLineWithTextShape_d0a252",
                 statusBubbleEmojiOnlyPadding: "statusBubbleEmojiOnlyPadding_d0a252",
@@ -22026,7 +22041,12 @@
                 incorporeal: "incorporeal_d0a252",
                 addStatusPrompt: "addStatusPrompt_d0a252",
                 addStatusIconColor: "addStatusIconColor_d0a252",
+                editIcon: "editIcon_d0a252",
                 singleLineAlign: "singleLineAlign_d0a252",
+                editGradient: "editGradient_d0a252",
+                editGradientEmojiOnly: "editGradientEmojiOnly_d0a252",
+                editClickable: "editClickable_d0a252",
+                editClickableEmojiOnly: "editClickableEmojiOnly_d0a252",
                 addStatusIcon: "addStatusIcon_d0a252",
                 statusText: "statusText_d0a252",
                 statusEmojiInline: "statusEmojiInline_d0a252",
