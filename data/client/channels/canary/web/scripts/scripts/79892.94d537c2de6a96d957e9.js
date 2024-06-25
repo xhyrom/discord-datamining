@@ -40678,7 +40678,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304926", ", Version Hash: ").concat("0c6ecb9a042d50d5c27b76b44e62d35ec2d67ad6")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304935", ", Version Hash: ").concat("6dae3c9d4b2ce25b371f895d40daa8ba0a7db32a")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96728,8 +96728,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304926", "304926"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304926")), t = 0), t
+                let t = parseInt((e = "304935", "304935"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304935")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125000,8 +125000,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304926",
-                    versionHash: "0c6ecb9a042d50d5c27b76b44e62d35ec2d67ad6"
+                    buildNumber: "304935",
+                    versionHash: "6dae3c9d4b2ce25b371f895d40daa8ba0a7db32a"
                 }
             }
             n.d(t, {
@@ -183717,8 +183717,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719347761114",
-                                    build_number: "304926"
+                                    built_at: "1719348155137",
+                                    build_number: "304935"
                                 }
                             },
                             retries: 1
@@ -223760,8 +223760,12 @@
                         k.current = null !== (i = null === (t = x.current) || void 0 === t ? void 0 : t.getBoundingClientRect().height) && void 0 !== i ? i : 144, Z.current = null !== (r = null === (n = V.current) || void 0 === n ? void 0 : n.getBoundingClientRect().height) && void 0 !== r ? r : 36
                     }
                 }, [C, z]);
-                let [ee, et] = (0, a.useSpring)(() => ({
+                let [{
+                    maxHeight: ee,
+                    editIconOpacity: et
+                }, en] = (0, a.useSpring)(() => ({
                     maxHeight: "".concat(36, "px"),
+                    editIconOpacity: 0,
                     config: {
                         clamp: !0,
                         immediate: b,
@@ -223769,46 +223773,55 @@
                     }
                 }));
                 if (r.useEffect(() => () => B.stop(), [B]), !q && !X) return null;
-                let en = e => {
+                let ei = e => {
                         var t, n;
-                        if (!J) {
-                            e ? et({
-                                maxHeight: "".concat(Math.min(null !== (t = k.current) && void 0 !== t ? t : 144, 144), "px"),
+                        if (e) {
+                            let e = Math.min(null !== (t = k.current) && void 0 !== t ? t : 144, 144);
+                            en({
+                                maxHeight: "".concat(e, "px"),
+                                editIconOpacity: 1,
                                 delay: 300
-                            }) : et({
-                                maxHeight: "".concat(Math.min(null !== (n = Z.current) && void 0 !== n ? n : 36, 36), "px"),
+                            })
+                        } else {
+                            let e = Math.min(null !== (n = Z.current) && void 0 !== n ? n : 36, 36);
+                            en({
+                                maxHeight: "".concat(e, "px"),
+                                editIconOpacity: 0,
                                 delay: 0
-                            });
-                            B.start(e ? 300 : 150, () => {
-                                w(!e)
                             })
                         }
+                        B.start(e ? 300 : 150, () => {
+                            w(!e)
+                        })
                     },
-                    ei = () => Q ? (0, i.jsxs)("div", {
+                    er = () => Q ? (0, i.jsxs)(a.animated.div, {
+                        style: {
+                            opacity: et
+                        },
                         className: R.editIcon,
                         children: [(0, i.jsx)("div", {
                             className: o()(R.editGradient, z && R.editGradientEmojiOnly)
                         }), (0, i.jsx)(c.Clickable, {
                             className: o()(R.editClickable, z && R.editClickableEmojiOnly),
-                            onClick: ea,
+                            onClick: el,
                             children: (0, i.jsx)(_.v, {
                                 size: "xs"
                             })
                         })]
                     }) : null,
-                    er = () => K ? (0, i.jsx)(d.I, {
+                    es = () => K ? (0, i.jsx)(d.I, {
                         className: j ? R.statusEmojiInline : R.statusEmojiOnly,
                         emoji: W,
                         animate: v,
                         hideTooltip: !1,
                         tooltipDelay: m.vB
                     }) : null,
-                    es = () => j ? (0, i.jsx)(c.Text, {
+                    eo = () => j ? (0, i.jsx)(c.Text, {
                         variant: p,
                         className: R.statusText,
                         children: Y
                     }) : null,
-                    eo = () => (0, i.jsxs)("div", {
+                    ea = () => (0, i.jsxs)("div", {
                         className: R.content,
                         children: [(0, i.jsx)(c.CirclePlusIcon, {
                             className: R.addStatusIcon,
@@ -223819,7 +223832,7 @@
                             children: O.Z.Messages.USER_SETTINGS_ADD_STATUS
                         })]
                     }),
-                    ea = () => {
+                    el = () => {
                         P({
                             action: "PRESS_SET_CUSTOM_STATUS"
                         }), null == L || L(), (0, c.openModalLazy)(async () => {
@@ -223832,17 +223845,17 @@
                             })
                         })
                     },
-                    el = {
+                    eu = {
                         [R.biteSize]: g === m.y0.BITE_SIZE,
                         [R.fullSize]: g === m.y0.FULL_SIZE,
                         [R.panel]: g === m.y0.PANEL
                     },
-                    eu = o()(R.statusBubbleOuter, el, {
+                    e_ = o()(R.statusBubbleOuter, eu, {
                         [R.statusBubbleShape]: !j && K || !J,
                         [R.statusBubbleSingleLineWithTextShape]: J && j || X,
                         [R.statusBubbleOuterAddStatusCursor]: X
                     }),
-                    e_ = o()(R.statusBubble, {
+                    ec = o()(R.statusBubble, {
                         [R.statusBubbleShape]: !j && K || !J,
                         [R.statusBubbleSingleLineWithTextShape]: J && j || X,
                         [R.statusBubbleEmojiOnlyPadding]: z,
@@ -223852,28 +223865,28 @@
                     });
                 return (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
-                        className: o()(R.invisibleContainer, el),
+                        className: o()(R.invisibleContainer, eu),
                         children: (0, i.jsx)("div", {
-                            className: eu,
+                            className: e_,
                             children: (0, i.jsxs)("span", {
-                                className: e_,
-                                children: [X && eo(), q && (0, i.jsxs)("div", {
+                                className: ec,
+                                children: [X && ea(), q && (0, i.jsxs)("div", {
                                     className: o()(R.content, R.clamp, R.placeholderWidth, {
                                         [R.panel]: g === m.y0.PANEL
                                     }),
                                     ref: V,
-                                    children: [er(), es()]
+                                    children: [es(), eo()]
                                 }), q && (0, i.jsxs)("div", {
                                     className: o()(R.content, R.unclamp, R.placeholderWidth, R.incorporeal, {
                                         [R.panel]: g === m.y0.PANEL
                                     }),
                                     ref: x,
-                                    children: [er(), es()]
+                                    children: [es(), eo()]
                                 })]
                             })
                         })
                     }), (0, i.jsxs)("div", {
-                        className: o()(R.visibleContainer, el),
+                        className: o()(R.visibleContainer, eu),
                         ref: H,
                         children: [(0, i.jsx)(A.Z, {
                             isHovering: F,
@@ -223881,24 +223894,28 @@
                             className: R.reactReplyBar
                         }), (0, i.jsx)(c.Clickable, {
                             tabIndex: 0,
-                            className: eu,
-                            onFocus: () => en(!0),
-                            onBlur: () => en(!1),
-                            onMouseEnter: () => en(!0),
-                            onMouseLeave: () => en(!1),
-                            onClick: X ? ea : void 0,
+                            className: e_,
+                            onFocus: () => ei(!0),
+                            onBlur: e => {
+                                !e.currentTarget.contains(e.relatedTarget) && ei(!1)
+                            },
+                            onMouseEnter: () => ei(!0),
+                            onMouseLeave: () => ei(!1),
+                            onClick: X ? el : void 0,
                             children: (0, i.jsxs)("span", {
-                                className: e_,
-                                children: [X && eo(), q && (() => {
+                                className: ec,
+                                children: [X && ea(), q && (() => {
                                     let e = o()(R.content, {
                                         [R.clamp]: G,
                                         [R.unclamp]: !G,
                                         [R.singleLineAlign]: J
                                     });
                                     return (0, i.jsxs)(a.animated.div, {
-                                        style: ee,
+                                        style: {
+                                            maxHeight: ee
+                                        },
                                         className: e,
-                                        children: [ei(), er(), es()]
+                                        children: [er(), es(), eo()]
                                     })
                                 })()]
                             })
@@ -262210,7 +262227,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0c6ecb9a042d50d5c27b76b44e62d35ec2d67ad6"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6dae3c9d4b2ce25b371f895d40daa8ba0a7db32a"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281371,7 +281388,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304926"
+                                build_number: "304935"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288692,7 +288709,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304926", "304926"), 10);
+                let s = parseInt((n = "304935", "304935"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330228,4 +330245,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.7232c6d793bf248862f2.js.map
+//# sourceMappingURL=79892.94d537c2de6a96d957e9.js.map

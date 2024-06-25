@@ -4550,7 +4550,6 @@ html:not(.keyboard-mode) .root_dd069c.idle_dd069c .chatButton_dd069c:not(.chatBu
 
 .buttonContainer_b8d344 {
     display: flex;
-    align-self: end;
     margin-bottom: 24px
 }
 
@@ -46187,7 +46186,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .statusBubbleOuter_d0a252:hover .editIcon_d0a252,
 .statusBubbleOuter_d0a252:focus-within .editIcon_d0a252 {
-    display: block
+    opacity: 1
 }
 
 .singleLineAlign_d0a252 {
@@ -46195,11 +46194,11 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .editIcon_d0a252 {
-    display: none
+    opacity: 0
 }
 
 .editGradient_d0a252 {
-    background: linear-gradient(90deg, rgba(49, 51, 56, 0)0%, var(--bg-surface-overlay)100%);
+    background: linear-gradient(90deg, hsl(var(--primary-600-hsl)/0)0%, var(--bg-surface-overlay)100%);
     position: absolute;
     top: 10px;
     right: 26px;
@@ -46209,23 +46208,27 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .editGradientEmojiOnly_d0a252 {
-    top: 8px;
+    top: 0;
     max-width: 32px;
-    height: 32px
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px
 }
 
 .editClickable_d0a252 {
     position: absolute;
     top: 10px;
     right: 10px;
-    opacity: 1;
+    height: 18px;
+    display: flex;
+    align-items: center;
     background: var(--bg-surface-overlay);
     cursor: pointer
 }
 
 .editClickableEmojiOnly_d0a252 {
-    top: 8px;
-    height: 32px
+    top: 0;
+    height: 100%
 }
 
 .addStatusPrompt_d0a252 {
@@ -48289,8 +48292,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143639,4 +143642,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.cb6228782446d4dce7bf.css.map*/
+/*# sourceMappingURL=99387.c521625c08cea6bd9f84.css.map*/
