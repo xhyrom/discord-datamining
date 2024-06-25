@@ -40669,7 +40669,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304664", ", Version Hash: ").concat("f93e3dce118fc5030ebdd283d3979dbf889ef386")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304669", ", Version Hash: ").concat("bcb4bb7e3f3591df788ddd7e05a389467b3bc141")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42868,6 +42868,7 @@
                 EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_DESCRIPTION: "You're about to launch an external app. Do you want to continue?",
                 EMBEDDED_ACTIVITIES_MINI_SHELF_TUNE_IN_POSTER_ALT: "TuneIn",
                 EMBEDDED_ACTIVITIES_MINI_SHELF_BOPZ_IO_POSTER_ALT: "BOPZ.io",
+                EMBEDDED_ACTIVITIES_MINI_SHELF_RYTHM_POSTER_ALT: "Rythm",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED: "Activity ended. Start a new one?",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity started",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION: "You do not have permissions to join this Voice Channel.",
@@ -69959,6 +69960,9 @@
                 N4: function() {
                     return K
                 },
+                NC: function() {
+                    return $
+                },
                 OF: function() {
                     return eu
                 },
@@ -69967,9 +69971,6 @@
                 },
                 Pc: function() {
                     return er
-                },
-                QJ: function() {
-                    return $
                 },
                 S4: function() {
                     return s
@@ -70083,7 +70084,7 @@
                 X = "1011683823555199066",
                 Q = "1234546995360694434",
                 J = "1214629548377768066",
-                $ = "1199817737728442569",
+                $ = "235088799074484224",
                 ee = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
                 et = {
                     SMALL: 64,
@@ -96615,8 +96616,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304664", "304664"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304664")), t = 0), t
+                let t = parseInt((e = "304669", "304669"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304669")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -124887,8 +124888,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304664",
-                    versionHash: "f93e3dce118fc5030ebdd283d3979dbf889ef386"
+                    buildNumber: "304669",
+                    versionHash: "bcb4bb7e3f3591df788ddd7e05a389467b3bc141"
                 }
             }
             n.d(t, {
@@ -183606,8 +183607,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719317384944",
-                                    build_number: "304664"
+                                    built_at: "1719324561412",
+                                    build_number: "304669"
                                 }
                             },
                             retries: 1
@@ -262397,7 +262398,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f93e3dce118fc5030ebdd283d3979dbf889ef386"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "bcb4bb7e3f3591df788ddd7e05a389467b3bc141"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281558,7 +281559,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304664"
+                                build_number: "304669"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288879,7 +288880,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304664", "304664"), 10);
+                let s = parseInt((n = "304669", "304669"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330415,4 +330416,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.0aa788d3621cb3d554aa.js.map
+//# sourceMappingURL=79892.c0f0da50a89770ac7b57.js.map
