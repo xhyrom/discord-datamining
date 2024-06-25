@@ -4548,38 +4548,45 @@ html:not(.keyboard-mode) .root_dd069c.idle_dd069c .chatButton_dd069c:not(.chatBu
     color: var(--primary-400)
 }
 
-.activityButton_ce9111 {
+.buttonContainer_b8d344 {
+    display: flex;
+    align-self: end;
+    margin-bottom: 24px
+}
+
+.button_b8d344 {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center
-}
-
-.iconUnhovered_ce9111 {
-    color: var(--interactive-normal)
-}
-
-.iconUnhovered_ce9111>* {
-    fill: currentColor
-}
-
-.iconHovered_ce9111 {
-    color: var(--interactive-hover)
-}
-
-.iconHovered_ce9111>* {
-    fill: currentColor
-}
-
-.buttonContainer_b8d344 {
-    display: flex;
     justify-content: center;
-    align-items: center;
     margin-left: var(--spacing-16);
     border-radius: 8px;
     background: var(--bg-overlay-3, var(--channeltextarea-background));
     width: var(--custom-channel-textarea-text-area-height);
-    height: var(--custom-channel-textarea-text-area-height)
+    height: var(--custom-channel-textarea-text-area-height);
+    align-self: start
+}
+
+.iconUnhovered_b8d344 {
+    color: var(--interactive-normal)
+}
+
+.iconUnhovered_b8d344>* {
+    fill: currentColor
+}
+
+.iconHovered_b8d344 {
+    color: var(--interactive-hover)
+}
+
+.iconHovered_b8d344>* {
+    fill: currentColor
+}
+
+.buttonContents_b8d344 {
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .wrapper_da5ed7 {
@@ -48430,8 +48437,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143666,4 +143673,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.9447de35f6ab2a09286f.css.map*/
+/*# sourceMappingURL=99387.43df6ab1a814b8148005.css.map*/

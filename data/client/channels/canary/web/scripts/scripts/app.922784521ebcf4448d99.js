@@ -2318,13 +2318,6 @@
                 wumpusReducedMotion: "wumpusReducedMotion_af7662"
             }
         },
-        71336: function(e, t, n) {
-            e.exports = {
-                activityButton: "activityButton_ce9111",
-                iconUnhovered: "iconUnhovered_ce9111",
-                iconHovered: "iconHovered_ce9111"
-            }
-        },
         545661: function(e, t, n) {
             e.exports = {
                 container: "container_c4a3bb",
@@ -4127,7 +4120,11 @@
         },
         840884: function(e, t, n) {
             e.exports = {
-                buttonContainer: "buttonContainer_b8d344"
+                buttonContainer: "buttonContainer_b8d344",
+                button: "button_b8d344",
+                iconUnhovered: "iconUnhovered_b8d344",
+                iconHovered: "iconHovered_b8d344",
+                buttonContents: "buttonContents_b8d344"
             }
         },
         719065: function(e, t, n) {
