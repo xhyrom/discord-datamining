@@ -40706,7 +40706,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304989", ", Version Hash: ").concat("9f6ad3a856a1db4210f58e7c1c235541da805c81")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304995", ", Version Hash: ").concat("438e0afac13f360485bfc1eb70b3e3491f21ba6e")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -79981,90 +79981,104 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return E
+                    return S
                 }
             }), n(47120);
             var i = n(735250),
                 r = n(470079),
                 s = n(392711),
-                o = n(481060),
-                a = n(220082),
-                l = n(768581),
-                u = n(772606),
-                _ = n(863747);
+                o = n(780384),
+                a = n(481060),
+                l = n(410030),
+                u = n(220082),
+                _ = n(768581),
+                c = n(564334),
+                d = n(302221),
+                E = n(772606),
+                I = n(863747);
 
-            function c(e, t, n) {
+            function T(e, t, n) {
                 return e + (t - e) * n
             }
 
-            function d(e) {
+            function h(e) {
                 let [t, n] = r.useState(void 0);
                 return r.useEffect(() => {
                     null != e.current && n(getComputedStyle(e.current))
                 }, [e]), t
             }
 
-            function E(e) {
+            function S(e) {
                 let {
                     application: t,
                     scrollerRef: n
-                } = e, c = l.ZP.getApplicationIconURL({
+                } = e, T = _.ZP.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon,
                     bot: t.bot,
                     size: 24
-                }), E = r.useRef(null), I = r.useRef(null), T = r.useRef(null), h = (0, o.useToken)(o.tokens.colors.BG_BASE_PRIMARY).hex(), S = (0, a.ZP)("number" == typeof c ? "" : c, null != h ? h : ""), f = d(E), N = d(I);
+                }), S = (0, o.ap)((0, l.ZP)()), f = r.useRef(null), N = r.useRef(null), A = r.useRef(null), m = (0, a.useToken)(a.tokens.colors.BG_BASE_PRIMARY).hex(), O = (0, u.ZP)("number" == typeof T ? "" : T, null != m ? m : ""), R = r.useMemo(() => {
+                    var e, t;
+                    let n = (0, s.compact)([c.Z.parseHexString(O), c.Z.parseHexString(S ? "#000000" : "#ffffff")]);
+                    return null !== (t = null === (e = (0, d.k8)({
+                        colors: n,
+                        ratio: 5,
+                        saturationFactor: .6
+                    })) || void 0 === e ? void 0 : e.toHexString()) && void 0 !== t ? t : O
+                }, [O, S]), p = h(f), g = h(N), C = r.useCallback(() => {
+                    var e, t, i, r, o, a, l, u, _;
+                    let c = n.current,
+                        d = f.current,
+                        E = A.current,
+                        I = parseInt(null !== (e = null == p ? void 0 : p.height) && void 0 !== e ? e : ""),
+                        T = parseInt(null !== (t = null == g ? void 0 : g.height) && void 0 !== t ? t : "");
+                    if (null != c && null != d && null != E && !isNaN(I) && !isNaN(T)) {
+                        ;
+                        let e = null !== (i = c.scrollTop) && void 0 !== i ? i : 0,
+                            t = 0 !== c.scrollHeight ? c.scrollHeight : T + 20,
+                            n = 0 !== c.clientHeight ? c.clientHeight : T + 20,
+                            h = T - I,
+                            f = (0, s.clamp)(t - n, h + 1, T + 20);
+                        let N = (r = e, (o = h) === (a = f) ? 1 : (0, s.clamp)((r - o) / (a - o), 0, 1));
+                        d.style.filter = "brightness(".concat(1 + ((S ? 1.4 : .6) - (l = 1)) * N, ")"), d.style.backgroundColor = "color-mix(in oklab,".concat(O, " ").concat((1 - N) * 100, "%, ").concat(R, ")"), E.style.opacity = "".concat(0 + (1 - (u = 0)) * N), E.style.transform = "translateY(".concat((_ = I / 4) + (0 - _) * N, "px)")
+                    }
+                }, [R, O, null == g ? void 0 : g.height, S, n, null == p ? void 0 : p.height]);
                 return r.useEffect(() => {
+                    C()
+                }, [C, S]), r.useEffect(() => {
                     let e = n.current,
                         t = () => {
-                            var t, n, i, r, o, a, l, u, _;
-                            let c = E.current,
-                                d = T.current,
-                                I = parseInt(null !== (t = null == f ? void 0 : f.height) && void 0 !== t ? t : ""),
-                                h = parseInt(null !== (n = null == N ? void 0 : N.height) && void 0 !== n ? n : "");
-                            if (null != e && null != c && null != d && !isNaN(I) && !isNaN(h)) {
-                                ;
-                                let t = null !== (i = e.scrollTop) && void 0 !== i ? i : 0,
-                                    n = 0 !== e.scrollHeight ? e.scrollHeight : h + 20,
-                                    E = 0 !== e.clientHeight ? e.clientHeight : h + 20,
-                                    T = h - I,
-                                    S = (0, s.clamp)(n - E, T + 1, h + 20);
-                                let f = (r = t, (o = T) === (a = S) ? 1 : (0, s.clamp)((r - o) / (a - o), 0, 1));
-                                c.style.filter = "brightness(".concat(1 + (.6 - (l = 1)) * f, ")"), d.style.opacity = "".concat(0 + (1 - (u = 0)) * f), d.style.transform = "translateY(".concat((_ = I / 4) + (0 - _) * f, "px)")
-                            }
+                            C()
                         };
                     return null == e || e.addEventListener("scroll", t), () => {
                         null == e || e.removeEventListener("scroll", t)
                     }
-                }, [null == N ? void 0 : N.height, n, null == f ? void 0 : f.height]), (0, i.jsxs)(i.Fragment, {
+                }, [n, C]), (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: _.stickyContainer,
+                        className: I.stickyContainer,
                         children: [(0, i.jsx)("div", {
-                            className: _.stickyBannerContainer,
+                            className: I.stickyBannerContainer,
                             children: (0, i.jsx)("div", {
-                                className: _.stickyBanner,
-                                ref: E,
-                                style: {
-                                    backgroundColor: S
-                                }
+                                className: I.stickyBanner,
+                                ref: f
                             })
                         }), (0, i.jsx)("div", {
-                            className: _.backButtonContainer,
-                            children: (0, i.jsx)(u.Z, {})
+                            className: I.backButtonContainer,
+                            children: (0, i.jsx)(E.Z, {})
                         }), (0, i.jsx)("div", {
-                            className: _.nameContainer,
-                            children: (0, i.jsx)(o.Heading, {
-                                ref: T,
-                                className: _.textApplicationName,
+                            className: I.nameContainer,
+                            children: (0, i.jsx)(a.Heading, {
+                                ref: A,
+                                className: I.textApplicationName,
                                 variant: "heading-md/extrabold",
                                 children: t.name
                             })
                         })]
                     }), (0, i.jsx)("div", {
-                        ref: I,
-                        className: _.bannerBackground,
+                        ref: N,
+                        className: I.bannerBackground,
                         style: {
-                            backgroundColor: S
+                            backgroundColor: O
                         }
                     })]
                 })
@@ -96932,8 +96946,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304989", "304989"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304989")), t = 0), t
+                let t = parseInt((e = "304995", "304995"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304995")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125204,8 +125218,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304989",
-                    versionHash: "9f6ad3a856a1db4210f58e7c1c235541da805c81"
+                    buildNumber: "304995",
+                    versionHash: "438e0afac13f360485bfc1eb70b3e3491f21ba6e"
                 }
             }
             n.d(t, {
@@ -183944,8 +183958,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719351510287",
-                                    build_number: "304989"
+                                    built_at: "1719352083779",
+                                    build_number: "304995"
                                 }
                             },
                             retries: 1
@@ -262298,7 +262312,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9f6ad3a856a1db4210f58e7c1c235541da805c81"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "438e0afac13f360485bfc1eb70b3e3491f21ba6e"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281459,7 +281473,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304989"
+                                build_number: "304995"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288780,7 +288794,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304989", "304989"), 10);
+                let s = parseInt((n = "304995", "304995"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330316,4 +330330,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.4ee96808081a82f03fe2.js.map
+//# sourceMappingURL=79892.583f5be9544753ed53b2.js.map

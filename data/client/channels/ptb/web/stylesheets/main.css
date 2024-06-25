@@ -35375,7 +35375,16 @@ span.clanTag_a31c43 {
     justify-content: center;
     padding: var(--spacing-4);
     border-radius: var(--radius-round);
-    background-color: var(--bg-mod-strong)
+    background-color: color-mix(in oklab, var(--bg-surface-overlay)50%, transparent)
+}
+
+.clickable_e82700:hover,
+.keyboard-mode .clickable_e82700:focus {
+    background-color: color-mix(in oklab, var(--interactive-muted)40%, color-mix(in oklab, var(--bg-surface-overlay)50%, transparent))
+}
+
+.clickable_e82700:active {
+    background-color: color-mix(in oklab, var(--interactive-muted)60%, color-mix(in oklab, var(--bg-surface-overlay)50%, transparent))
 }
 
 .stickyBanner_e46a21,
@@ -47493,8 +47502,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143242,4 +143251,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2f2a16744e3baf85ef5f.css.map*/
+/*# sourceMappingURL=99387.3004b46f3224a6f534c5.css.map*/
