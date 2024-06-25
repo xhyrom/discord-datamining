@@ -35548,8 +35548,19 @@ span.clanTag_a31c43 {
 }
 
 .icon_e5da8b {
+    --custom-icon-size: 38px;
     width: 38px;
-    height: 38px
+    width: var(--custom-icon-size);
+    height: 38px;
+    height: var(--custom-icon-size)
+}
+
+.iconCard_e5da8b {
+    --custom-icon-card-size: 48px;
+    width: 48px;
+    width: var(--custom-icon-card-size);
+    height: 48px;
+    height: var(--custom-icon-card-size)
 }
 
 .darkenBannerImage_e5da8b {
@@ -36107,6 +36118,13 @@ span.clanTag_a31c43 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--spacing-12);
     gap: var(--spacing-12)
+}
+
+.frecentList_c7c1c7 {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: var(--spacing-12);
+    column-gap: var(--spacing-12)
 }
 
 .container_bedaeb {
@@ -48292,8 +48310,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143642,4 +143660,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c521625c08cea6bd9f84.css.map*/
+/*# sourceMappingURL=99387.15ad45693d7a912b69ea.css.map*/
