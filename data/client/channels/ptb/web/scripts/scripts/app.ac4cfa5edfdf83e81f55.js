@@ -2599,6 +2599,20 @@
                 clickable: "clickable_e82700"
             }
         },
+        771231: function(e, t, n) {
+            e.exports = {
+                container: "container_f8c206",
+                noAnimation: "noAnimation_f8c206",
+                bannerImage: "bannerImage_f8c206",
+                mediumBanner: "mediumBanner_f8c206",
+                largeBanner: "largeBanner_f8c206",
+                iconPlaceholder: "iconPlaceholder_f8c206",
+                appDetailsContainer: "appDetailsContainer_f8c206",
+                textContainer: "textContainer_f8c206",
+                textPlaceholder: "textPlaceholder_f8c206",
+                hidden: "hidden_f8c206"
+            }
+        },
         271047: function(e, t, n) {
             e.exports = {
                 contentContainer: "contentContainer_f37ac2",
@@ -2664,7 +2678,9 @@
         365155: function(e, t, n) {
             e.exports = {
                 header: "header_b7ba1b",
-                viewMore: "viewMore_b7ba1b"
+                viewMore: "viewMore_b7ba1b",
+                loadingHeader: "loadingHeader_b7ba1b",
+                hidden: "hidden_b7ba1b"
             }
         },
         427010: function(e, t, n) {
@@ -2698,8 +2714,7 @@
                 container: "container_a46f56",
                 noAnimation: "noAnimation_a46f56",
                 textContainer: "textContainer_a46f56",
-                textLargePlaceholder: "textLargePlaceholder_a46f56",
-                textSmallPlaceholder: "textSmallPlaceholder_a46f56",
+                textPlaceholder: "textPlaceholder_a46f56",
                 hidden: "hidden_a46f56"
             }
         },

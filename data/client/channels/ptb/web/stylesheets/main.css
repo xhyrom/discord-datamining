@@ -35684,6 +35684,127 @@ span.clanTag_a31c43 {
     border-radius: var(--radius-round)
 }
 
+.container_f8c206 {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: var(--bg-surface-raised)
+}
+
+.container_f8c206:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .05;
+    background: linear-gradient(315deg, transparent, #fff, transparent);
+    transform: skewx(340deg)translatex(-100%);
+    animation: shimmer_f8c206 1s infinite ease-in-out
+}
+
+.container_f8c206.noAnimation_f8c206:after {
+    display: none
+}
+
+.container_f8c206:nth-child(2):after {
+    animation-delay: 50ms
+}
+
+.container_f8c206:nth-child(3):after {
+    animation-delay: .1s
+}
+
+.container_f8c206:nth-child(4):after {
+    animation-delay: .15s
+}
+
+.container_f8c206:nth-child(5):after {
+    animation-delay: .2s
+}
+
+.container_f8c206:nth-child(6):after {
+    animation-delay: .25s
+}
+
+.container_f8c206:nth-child(7):after {
+    animation-delay: .3s
+}
+
+.container_f8c206:nth-child(8):after {
+    animation-delay: .35s
+}
+
+.theme-light .container_f8c206:after {
+    opacity: .5
+}
+
+@keyframes shimmer_f8c206 {
+    to {
+        transform: skewx(-20deg)translatex(100%)
+    }
+}
+
+.bannerImage_f8c206 {
+    display: none;
+    width: 100%;
+    background-color: var(--bg-mod-subtle);
+    overflow: hidden
+}
+
+.bannerImage_f8c206.mediumBanner_f8c206 {
+    display: block;
+    aspect-ratio: 3/1
+}
+
+.bannerImage_f8c206.largeBanner_f8c206 {
+    display: block;
+    aspect-ratio: 2/1
+}
+
+.iconPlaceholder_f8c206 {
+    --custom-app-icon-size: 38px;
+    width: 38px;
+    width: var(--custom-app-icon-size);
+    height: 38px;
+    height: var(--custom-app-icon-size);
+    border-radius: 25%;
+    background-color: var(--bg-mod-subtle)
+}
+
+.appDetailsContainer_f8c206 {
+    display: flex;
+    flex-direction: row;
+    padding: var(--spacing-8);
+    align-items: center
+}
+
+.textContainer_f8c206 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: var(--spacing-12)
+}
+
+.textPlaceholder_f8c206 {
+    background-color: var(--bg-mod-subtle);
+    border-radius: var(--radius-round);
+    align-self: flex-start
+}
+
+.textPlaceholder_f8c206:not(:last-child) {
+    margin-bottom: 4px
+}
+
+.hidden_f8c206 {
+    opacity: 0;
+    -moz-user-select: none;
+    user-select: none;
+    touch-action: none;
+    line-height: 1
+}
+
 .header_b7ba1b {
     display: flex;
     justify-content: space-between;
@@ -35692,6 +35813,19 @@ span.clanTag_a31c43 {
 
 .viewMore_b7ba1b {
     cursor: pointer
+}
+
+.loadingHeader_b7ba1b {
+    display: flex;
+    border-radius: var(--radius-round);
+    background-color: var(--bg-mod-subtle)
+}
+
+.hidden_b7ba1b {
+    opacity: 0;
+    -moz-user-select: none;
+    user-select: none;
+    touch-action: none
 }
 
 .container_fb1469 {
@@ -35940,24 +36074,22 @@ span.clanTag_a31c43 {
     margin-left: var(--spacing-12)
 }
 
-.textLargePlaceholder_a46f56 {
-    margin-bottom: 4px;
+.textPlaceholder_a46f56 {
     background-color: var(--bg-mod-subtle);
     border-radius: var(--radius-round);
     align-self: flex-start
 }
 
-.textSmallPlaceholder_a46f56 {
-    background-color: var(--bg-mod-subtle);
-    border-radius: var(--radius-round);
-    align-self: flex-start
+.textPlaceholder_a46f56:not(:last-child) {
+    margin-bottom: 4px
 }
 
 .hidden_a46f56 {
     opacity: 0;
     -moz-user-select: none;
     user-select: none;
-    touch-action: none
+    touch-action: none;
+    line-height: 1
 }
 
 .underline_a46f56 {
@@ -48206,8 +48338,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -143436,4 +143568,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3a088dc9e901763db451.css.map*/
+/*# sourceMappingURL=99387.5608b11082044b0a4a07.css.map*/
