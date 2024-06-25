@@ -1,10 +1,10 @@
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-c0180f59-7fff-7798-4966-3ab3ae98b016"><img src="https://support.discord.com/hc/article_attachments/24245474354199" width="564" height="169"></span></p>
 <p id="docs-internal-guid-5fb07bbf-7fff-b602-75fa-35930333acca"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01J0M39NEGKVWM65Z0J79ABHBC">Promotion Terms</a></li>
-    <li><a href="#h_01J0M39NEGXEB0VDVDKBBJFBJY">How to Complete the Quest</a></li>
-    <li><a href="#h_01J0M39NEG4W9321J3YZYQ33TM">Redemption Instructions</a></li>
-    <li><a href="#h_01J0M39NEGFC9XKDGMM4RSDDHM">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/24192189535639#h_01J0M39NEGKVWM65Z0J79ABHBC">Promotion Terms</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/24192189535639#h_01J0M39NEGXEB0VDVDKBBJFBJY">How to Complete the Quest</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/24192189535639#h_01J0M39NEG4W9321J3YZYQ33TM">Redemption Instructions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/24192189535639#h_01J0M39NEGFC9XKDGMM4RSDDHM">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01J0M39NEGKVWM65Z0J79ABHBC">Promotion Terms</h1>
 <p><strong>Quest Game:</strong> <strong>Minecraft</strong></p>
@@ -13,6 +13,9 @@
 </h3>
 <p><strong>Quest Name: Minecraft Trials Quest</strong></p>
 <p><strong>Offer Details: </strong>Stream 15 minutes of <strong>Minecraft </strong>and receive a <strong>Minecraft Trial Mask</strong>. <strong> </strong></p>
+<h3 id="docs-internal-guid-6d925ee4-7fff-1636-46e6-e941b659662d">
+    <strong><span style="color: #434343;">Note: </span></strong><span style="color: #434343;">The Minecraft Trial Mask can only be redeemed through Minecraft: Bedrock.   </span>
+</h3>
 <p><strong>Who is Eligible: </strong><span style="background-color: #ffffff;">Available on all platforms where </span><strong><span style="background-color: #ffffff;">Minecraft</span></strong><span style="background-color: #ffffff;"> is available. </span></p>
 <p><span style="background-color: #ffffff;">Discord’s premium services are restricted in some regions. If you are unable to access the Gift Inventory, you are not eligible for this Quest or reward.</span></p>
 <p><strong>Availability Period: </strong>The <strong>Minecraft Trials Quest </strong>can be accepted on Discord from <strong>June 20, 2024</strong> to <strong>June 26, 2024 (4:59pm PST)</strong>. </p>
@@ -37,6 +40,9 @@
 <p>1. Once you have completed the Quest by streaming 15 minutes of <strong>Minecraft </strong>using <strong>Go Live</strong> on Discord, you will receive a Gift Code in your Discord <strong>Gift Inventory</strong>. You can learn more about Go Live and screen sharing <a href="https://support.discord.com/hc/en-us/articles/360040816151" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <p>2. To redeem your <strong>Minecraft Trials Quest</strong> gift code, visit Minecraft’s <a href="https://www.minecraft.net/en-us/redeem" target="_blank" rel="noopener noreferrer">code redemption website</a> and log in to your account.</p>
 <p>3. While there, scroll to find the module and paste your gift code to obtain your <strong>Minecraft Trial Mask</strong>. </p>
+<h3 id="01J16B2SDEGAB4EC4123SVFJJG">
+    <strong><span style="color: #434343;">Note: </span></strong><span style="color: #434343;">The Minecraft Trial Mask can only be redeemed through Minecraft: Bedrock.   </span>
+</h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24272797406999" alt="Screen Shot 2024-06-18 at 2.01.55 PM copy.png"></p>
 <h1 id="h_01J0M39NEGFC9XKDGMM4RSDDHM">Frequently Asked Questions</h1>
 <p><strong>Q: Is there a limit on how many Quests I can redeem on my Discord account?</strong></p>
