@@ -40706,7 +40706,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304971", ", Version Hash: ").concat("d6130fd9197e6abf9f77672d3ae83bd97763904d")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304979", ", Version Hash: ").concat("a5ff322e6186002713701419ab7974d07cc2353f")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -45666,6 +45666,9 @@
                 FORM_LABEL_VIDEO_PREVIEW: "Preview",
                 TEST_VIDEO: "Test Video",
                 FORM_WARNING_VIDEO_PREVIEW: "\nYou must grant Discord [access to your camera](onEnableClick) in order to be able to preview.\n  ",
+                INPUT_SEARCH_TERM_MICROPHONE: "Microphone",
+                OUTPUT_SEARCH_TERM_SPEAKERS: "Speakers",
+                OUTPUT_SEARCH_TERM_HEADPHONES: "Headphones",
                 ECHO_CANCELLATION: "Echo Cancellation",
                 NOISE_SUPPRESSION: "Noise Suppression",
                 AUTOMATIC_GAIN_CONTROL: "Automatic Gain Control",
@@ -46967,6 +46970,7 @@
                 USER_KEYWORD_FILTERS_TOGGLE_TITLE: "Enable language filter",
                 USER_KEYWORD_FILTERS_DESCRIPTION_V2: "Automatically replace words with asterisks when they match our filters for severe profanity, insults, slurs, or sensitive content. [Learn more about this setting here.]({learnMoreLink})",
                 USER_KEYWORD_FILTERS_DESCRIPTION_SEARCHABLE: "Automatically replace words with asterisks when they match our filters for severe profanity, insults, slurs, or sensitive content.",
+                USER_KEYWORD_FILTERS_SEARCH_TERM_KEYWORD: "Keyword",
                 USER_DIRECT_MESSAGE_FILTERS: "Direct message filters",
                 USER_EXPLICIT_CONTENT_FILTER: "Safe Direct Messaging",
                 USER_EXPLICIT_CONTENT_FILTER_V2: "Explicit image filter",
@@ -47000,6 +47004,8 @@
                 USER_EXPLICIT_CONTENT_FILTER_DISABLED_V2: "Do not filter direct messages",
                 USER_EXPLICIT_CONTENT_FILTER_DISABLED_HELP_V2: "Direct messages will not be filtered for explicit images.",
                 SETTINGS_DM_SPAM_FILTER: "DM Spam Filter",
+                SETTINGS_DM_SPAM_FILTER_SEARCH_TERM_MESSAGES: "Messages",
+                SETTINGS_DM_SPAM_FILTER_SEARCH_TERM_INBOX: "Inbox",
                 USER_DM_SPAM_FILTER: "DM spam filter",
                 USER_DM_SPAM_FILTER_HELP: "Automatically send direct messages that may contain spam into a separate spam inbox. [Learn more about this setting here.]({appealLink})",
                 USER_DM_SPAM_FILTER_DISABLED: "Do not filter direct messages",
@@ -47038,6 +47044,8 @@
                 HARVEST_BACKEND_ACTIVITIES: "Activities",
                 HARVEST_BACKEND_HUBSPOT: "Programs",
                 USER_DM_SETTINGS: "Server Privacy Defaults",
+                USER_DM_SEARCH_TERM_DIRECT_MESSAGES: "Direct Messages",
+                USER_DM_SEARCH_TERM_DM: "DM",
                 USER_DM_SETTINGS_HELP: "This setting is applied when you join a new server. It does not apply retroactively to your existing servers.",
                 USER_DM_SETTINGS_QUESTION: "Do you want to also apply this change to all your existing servers?",
                 NEW_GUILDS_DM_ALLOWED: "Allow direct messages from server members",
@@ -51905,6 +51913,7 @@
                 NOISE_CANCELLATION_CPU_OVERUSE: "We disabled noise suppression to improve performance.",
                 MOBILE_ADVANCED_VOICE_ACTIVITY_CPU_OVERUSE: "We disabled voice activity detection to improve phone performance.",
                 MOBILE_NOISE_CANCELLATION_POPOUT_DESCRIPTION: "While speaking, filter out background noise and showcase your wonderful voice. Powered by Krisp.",
+                NOISE_CANCELLATION_SEARCH_TERM_KRISP: "Krisp",
                 ENABLE_NOISE_CANCELLATION: "Enable Noise Suppression",
                 DISABLE_NOISE_CANCELLATION: "Disable Noise Suppression",
                 MIC_TEST_VOICE_CHANNEL_WARNING: "You'll be muted and deafened in your voice session during Mic Testing.",
@@ -58822,6 +58831,10 @@
                 OBSCURED_CONTENT_SETTINGS_OPTION_SHOW: "Show",
                 OBSCURED_CONTENT_SETTINGS_OPTION_BLUR: "Blur",
                 OBSCURED_CONTENT_SETTINGS_OPTION_BLOCK: "Block",
+                OBSCURED_CONTENT_SEARCH_TERM_FILTER: "Filter",
+                OBSCURED_CONTENT_SEARCH_TERM_BLUR: "Blur",
+                OBSCURED_CONTENT_SEARCH_TERM_SENSITIVE_CONTENT: "Sensitive Content",
+                OBSCURED_CONTENT_SEARCH_TERM_EXPLICIT: "Explicit",
                 GUILD_HEADER_ACTIVE_CHANNELS_COUNT: "{count, plural, =1 {# Active Channel} other {# Active Channels}}",
                 GUILD_HEADER_ACTIVE_CHANNELS_COUNT_UNKNOWN: "— Active Channels",
                 GUILD_HEADER_ONLINE_COUNT: "{count, number} Online",
@@ -96919,8 +96932,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304971", "304971"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304971")), t = 0), t
+                let t = parseInt((e = "304979", "304979"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304979")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125191,8 +125204,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304971",
-                    versionHash: "d6130fd9197e6abf9f77672d3ae83bd97763904d"
+                    buildNumber: "304979",
+                    versionHash: "a5ff322e6186002713701419ab7974d07cc2353f"
                 }
             }
             n.d(t, {
@@ -142037,30 +142050,51 @@
         539746: function(e, t, n) {
             "use strict";
             n.d(t, {
-                x: function() {
-                    return r
+                xG: function() {
+                    return o
                 }
             });
-            let i = (0, n(818083).B)({
-                kind: "user",
-                id: "2024-06_game_profile",
-                label: "Enables the Game Profile",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
+            var i = n(818083);
+            let r = (0, i.B)({
+                    kind: "user",
+                    id: "2024-06_game_profile",
+                    label: "Enables the Game Profile",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                s = (0, i.B)({
+                    kind: "user",
+                    id: "2024-06_game_profile_experiment",
+                    label: "Enables the Game Profile",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                });
 
-            function r(e) {
+            function o(e) {
+                r.useExperiment({
+                    location: e
+                }, {
+                    autoTrackExposure: !0
+                });
                 let {
                     enabled: t
-                } = i.useExperiment({
+                } = s.useExperiment({
                     location: e
                 }, {
                     autoTrackExposure: !0
@@ -142090,7 +142124,7 @@
                 let {
                     location: t,
                     applicationId: n = ""
-                } = e, r = (0, l.x)(t);
+                } = e, r = (0, l.xG)(t);
                 i.useEffect(() => {
                     r && null != n && "" !== n && o.Z.getDetectableGamesSupplemental([n])
                 }, [n, r]);
@@ -183910,8 +183944,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719350280435",
-                                    build_number: "304971"
+                                    built_at: "1719350632653",
+                                    build_number: "304979"
                                 }
                             },
                             retries: 1
@@ -262264,7 +262298,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d6130fd9197e6abf9f77672d3ae83bd97763904d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a5ff322e6186002713701419ab7974d07cc2353f"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281425,7 +281459,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304971"
+                                build_number: "304979"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288746,7 +288780,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304971", "304971"), 10);
+                let s = parseInt((n = "304979", "304979"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330282,4 +330316,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.078be33c775f5885b69b.js.map
+//# sourceMappingURL=79892.964024ea3829e8c004d6.js.map
