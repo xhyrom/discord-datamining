@@ -48167,8 +48167,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -121652,6 +121652,12 @@ div:has(>div>.container_d99f08) {
     right: auto
 }
 
+.tideOverflowImage_be5025 {
+    top: auto;
+    bottom: 0;
+    height: 183px
+}
+
 .condensedCategoryLogo_be5025 {
     position: relative;
     z-index: 1;
@@ -143171,4 +143177,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.00aa673463f2646d8c5f.css.map*/
+/*# sourceMappingURL=99387.ca30e515ece082bd6a85.css.map*/
