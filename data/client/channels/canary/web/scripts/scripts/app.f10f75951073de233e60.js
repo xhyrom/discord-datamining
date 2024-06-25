@@ -2569,6 +2569,7 @@
             e.exports = {
                 container: "container_e5da8b",
                 icon: "icon_e5da8b",
+                iconCard: "iconCard_e5da8b",
                 darkenBannerImage: "darkenBannerImage_e5da8b",
                 bannerImageContainer: "bannerImageContainer_e5da8b",
                 mediumBanner: "mediumBanner_e5da8b",
@@ -2665,7 +2666,8 @@
                 container: "container_c7c1c7",
                 searchBarContainer: "searchBarContainer_c7c1c7",
                 scrollableContent: "scrollableContent_c7c1c7",
-                sectionContentContainer: "sectionContentContainer_c7c1c7"
+                sectionContentContainer: "sectionContentContainer_c7c1c7",
+                frecentList: "frecentList_c7c1c7"
             }
         },
         365155: function(e, t, n) {
