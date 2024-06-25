@@ -48206,8 +48206,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -54302,6 +54302,77 @@ div:has(>div>.modal_a78559) {
 
 .categoryItem_b9fb6e.selectedCategoryItem_b9fb6e .itemInner_b9fb6e {
     background-color: var(--brand-500)
+}
+
+.container_d746e5 {
+    display: flex;
+    flex-direction: column
+}
+
+.platform-osx .dragRegion_d746e5 {
+    -webkit-app-region: drag
+}
+
+.dragRegion_d746e5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px
+}
+
+.container_f1c462 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 16px
+}
+
+.header_f1c462 {
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow-low);
+    padding: 16px
+}
+
+.nav_f1c462 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 16px
+}
+
+.navItem_f1c462 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--interactive-normal)
+}
+
+.navItemIcon_f1c462 {
+    width: 24px;
+    height: 24px;
+    color: var(--interactive-normal)
+}
+
+.navItem_f1c462:hover {
+    color: var(--interactive-active)
+}
+
+.navItem_f1c462:hover .navItemIcon_f1c462 {
+    color: var(--interactive-active)
+}
+
+.selectedNavItem_f1c462 {
+    color: var(--interactive-active);
+    background-color: var(--background-accent)
+}
+
+.selectedNavItem_f1c462 .navItemIcon_f1c462 {
+    color: var(--interactive-active)
 }
 
 .container_a74b6f {
@@ -143365,4 +143436,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.577f306dfb0569a89582.css.map*/
+/*# sourceMappingURL=99387.3a088dc9e901763db451.css.map*/
