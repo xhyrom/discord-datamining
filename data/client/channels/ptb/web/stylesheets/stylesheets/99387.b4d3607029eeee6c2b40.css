@@ -48167,8 +48167,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .message_b6cd66 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -71563,7 +71563,15 @@ html .invoiceCancelRow_b1a31b {
     -o-object-fit: contain;
     object-fit: contain;
     width: 150px;
-    transform: translatey(-3px)
+    transform: translatey(-3px);
+    pointer-events: none
+}
+
+.tideArt_da1432 {
+    left: -28px;
+    bottom: -30px;
+    width: auto;
+    height: 142px
 }
 
 .tryItOutSection_eb2d2c {
@@ -74996,7 +75004,8 @@ html .invoiceCancelRow_b1a31b {
 
 .customConfetti_a0e502 {
     top: -120px;
-    right: -75px
+    right: -75px;
+    pointer-events: none
 }
 
 .bundlePreview_a0e502 {
@@ -75181,7 +75190,8 @@ html .invoiceCancelRow_b1a31b {
 
 .customConfetti_e84a32 {
     opacity: 1;
-    transition: opacity.5s ease-in-out
+    transition: opacity.5s ease-in-out;
+    pointer-events: none
 }
 
 .customConfetti_e84a32.hidden_e84a32 {
@@ -96024,6 +96034,11 @@ input::-webkit-inner-spin-button {
 
 .shyButton_a25714 {
     background: radial-gradient(ellipse at 120%200%, #ff4655 10%, transparent 70%);
+    background-clip: content-box
+}
+
+.tideButton_a25714 {
+    background: linear-gradient(-8deg, rgba(13, 243, 243, .3)-15.16%, rgba(13, 174, 243, .5)9.84%, rgba(43, 45, 49, 0)50%);
     background-clip: content-box
 }
 
@@ -143187,4 +143202,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4f5123cfd41386e18f68.css.map*/
+/*# sourceMappingURL=99387.b4d3607029eeee6c2b40.css.map*/

@@ -5267,7 +5267,8 @@
                 newBadge: "newBadge_a25714",
                 marketingButtonImage: "marketingButtonImage_a25714",
                 marketingButtonImageHovered: "marketingButtonImageHovered_a25714",
-                shyButton: "shyButton_a25714"
+                shyButton: "shyButton_a25714",
+                tideButton: "tideButton_a25714"
             })
         },
         82783: function(e, t, n) {
@@ -5456,7 +5457,8 @@
                 title: "title_da1432",
                 ctaButton: "ctaButton_da1432",
                 artContainer: "artContainer_da1432",
-                art: "art_da1432"
+                art: "art_da1432",
+                tideArt: "tideArt_da1432"
             }
         },
         513915: function(e, t, n) {
