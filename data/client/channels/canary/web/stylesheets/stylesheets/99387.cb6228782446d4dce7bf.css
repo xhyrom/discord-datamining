@@ -8735,11 +8735,7 @@ html .progress_e5f4c6 {
 
 .refreshIcon_d7df05 {
     margin-left: 8px;
-    color: var(--interactive-normal)
-}
-
-.refreshIconErrorState_d7df05 {
-    color: white
+    color: var(--white-500)
 }
 
 .partnerBranding_fc6f68 {
@@ -25467,103 +25463,6 @@ div.profileThemedContainer_d2194f {
     color: transparent
 }
 
-.modalHeader_c3153d {
-    align-items: center;
-    padding-bottom: 8px
-}
-
-.headingContainer_c3153d {
-    padding-top: 8px
-}
-
-.modalContent_c3153d {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0
-}
-
-.modalError_c3153d {
-    padding-bottom: 8px
-}
-
-.modalFooter_c3153d {
-    justify-content: space-between;
-    padding-left: 0
-}
-
-.divider_c3153d {
-    background-color: var(--background-modifier-accent);
-    opacity: .5
-}
-
-.spinner_c3153d {
-    align-self: center;
-    margin-top: 64px
-}
-
-.modal_c3153d {
-    min-height: 400px;
-    max-height: 647px;
-    width: 440px;
-    padding: 0
-}
-
-.image_c3153d {
-    margin-top: 24px;
-    margin-bottom: 16px
-}
-
-.applicationRowContainer_c3153d {
-    max-width: 100%
-}
-
-.applicationRow_c3153d {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 16px;
-    padding-right: 16px
-}
-
-.applicationRow_c3153d:not(:last-child) .applicationRowContent_c3153d {
-    border-bottom: 1px solid var(--background-modifier-accent)
-}
-
-.applicationRowContent_c3153d {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    overflow: hidden
-}
-
-.applicationIcon_c3153d {
-    border-radius: 50%;
-    margin-right: 16px
-}
-
-.applicationText_c3153d {
-    text-align: left;
-    margin-right: 16px;
-    min-width: 0
-}
-
-.applicationButtonHack_c3153d {
-    flex-shrink: 0
-}
-
-.applicationRow_c3153d:hover {
-    background-color: var(--background-modifier-hover);
-    cursor: pointer
-}
-
-.applicationRowContainer_c3153d {
-    max-width: 100%
-}
-
 .listRow_e4be58 {
     display: flex;
     font-weight: 500;
@@ -25684,10 +25583,6 @@ div.profileThemedContainer_d2194f {
     color: var(--text-muted)
 }
 
-.icon_f705d3 {
-    border-radius: 100%
-}
-
 .connectionList_ce1058 {
     margin-bottom: 12px;
     margin-right: 8px
@@ -25802,34 +25697,6 @@ div.profileThemedContainer_d2194f {
 
 .mutualFriendsDivider_b433b4 {
     border-top: solid 1px var(--profile-body-divider-color)
-}
-
-.appButtonColor_b433b4 {
-    background-color: var(--profile-gradient-button-color);
-    color: var(--white-500);
-    transition: opacity.2s ease-in-out
-}
-
-.appButtonColor_b433b4:hover {
-    opacity: .8
-}
-
-.appButtonColor_b433b4:active {
-    opacity: .9
-}
-
-.appButton_b433b4 {
-    margin-top: 12px;
-    padding: 0
-}
-
-.appButtonContainer_b433b4 {
-    padding-left: 12px;
-    padding-right: 4px
-}
-
-.appListThemedContainer_b433b4 {
-    margin-top: 12px
 }
 
 .divider_e3d8a6 {
@@ -34573,11 +34440,6 @@ span.clanTag_a31c43 {
 
 .editIcon_c3e427 {
     color: white
-}
-
-.closeIcon_c3e427 {
-    height: 22px;
-    width: 22px
 }
 
 .popoutBanner_c3e427 .pencilContainer_c3e427,
@@ -44276,10 +44138,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     display: inline-flex;
     gap: 6px;
     flex-wrap: wrap
-}
-
-.button_b5248d {
-    padding-left: 0
 }
 
 .linkIcon_b5435a {
@@ -72971,12 +72829,28 @@ html .invoiceCancelRow_b1a31b {
     margin-left: auto
 }
 
-.microphoneUnitRefreshIcon_f21e08 {
+.theme-light .microphoneUnitRefreshIcon_f21e08 {
+    color: hsl(var(--black-500-hsl)/.5)
+}
+
+.theme-light .microphoneUnitRefreshIcon_f21e08:hover {
+    color: var(--interactive-hover)
+}
+
+.theme-light .microphoneUnitRefreshIcon_f21e08:active {
+    color: var(--interactive-active)
+}
+
+.theme-dark .microphoneUnitRefreshIcon_f21e08 {
     color: var(--interactive-normal)
 }
 
-.microphoneUnitRefreshIcon_f21e08:hover {
+.theme-dark .microphoneUnitRefreshIcon_f21e08:hover {
     color: var(--interactive-hover)
+}
+
+.theme-dark .microphoneUnitRefreshIcon_f21e08:active {
+    color: var(--interactive-active)
 }
 
 .microphoneUnitBodyText_f21e08 {
@@ -128140,6 +128014,103 @@ html .invoiceCancelRow_e0a971 {
     margin-top: 8px
 }
 
+.modalHeader_c3153d {
+    align-items: center;
+    padding-bottom: 8px
+}
+
+.headingContainer_c3153d {
+    padding-top: 8px
+}
+
+.modalContent_c3153d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0
+}
+
+.modalError_c3153d {
+    padding-bottom: 8px
+}
+
+.modalFooter_c3153d {
+    justify-content: space-between;
+    padding-left: 0
+}
+
+.divider_c3153d {
+    background-color: var(--background-modifier-accent);
+    opacity: .5
+}
+
+.spinner_c3153d {
+    align-self: center;
+    margin-top: 64px
+}
+
+.modal_c3153d {
+    min-height: 400px;
+    max-height: 647px;
+    width: 440px;
+    padding: 0
+}
+
+.image_c3153d {
+    margin-top: 24px;
+    margin-bottom: 16px
+}
+
+.applicationRowContainer_c3153d {
+    max-width: 100%
+}
+
+.applicationRow_c3153d {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.applicationRow_c3153d:not(:last-child) .applicationRowContent_c3153d {
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.applicationRowContent_c3153d {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow: hidden
+}
+
+.applicationIcon_c3153d {
+    border-radius: 50%;
+    margin-right: 16px
+}
+
+.applicationText_c3153d {
+    text-align: left;
+    margin-right: 16px;
+    min-width: 0
+}
+
+.applicationButtonHack_c3153d {
+    flex-shrink: 0
+}
+
+.applicationRow_c3153d:hover {
+    background-color: var(--background-modifier-hover);
+    cursor: pointer
+}
+
+.applicationRowContainer_c3153d {
+    max-width: 100%
+}
+
 .profileThemesUpsellModal_c2ff5f {
     width: 600px
 }
@@ -143668,4 +143639,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.71660728661856a916b2.css.map*/
+/*# sourceMappingURL=99387.cb6228782446d4dce7bf.css.map*/
