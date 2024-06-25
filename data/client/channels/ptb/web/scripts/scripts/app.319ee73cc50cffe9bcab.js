@@ -17518,6 +17518,25 @@
                 demoEffectImg: "demoEffectImg_c55fec"
             }
         },
+        778855: function(e, t, n) {
+            e.exports = {
+                optInPopout: "optInPopout_cac3f6",
+                hidden: "hidden_cac3f6",
+                closeIcon: "closeIcon_cac3f6",
+                optInButton: "optInButton_cac3f6",
+                lottie: "lottie_cac3f6",
+                variant1InfoContainerParent: "variant1InfoContainerParent_cac3f6",
+                variant1InfoContainer: "variant1InfoContainer_cac3f6",
+                variant1Text: "variant1Text_cac3f6",
+                variant1CloseButton: "variant1CloseButton_cac3f6",
+                variant2OptInPopout: "variant2OptInPopout_cac3f6",
+                image: "image_cac3f6",
+                variant2InfoContainerParent: "variant2InfoContainerParent_cac3f6",
+                variant2InfoContainer: "variant2InfoContainer_cac3f6",
+                variant2Text: "variant2Text_cac3f6",
+                variant2CloseButton: "variant2CloseButton_cac3f6"
+            }
+        },
         788323: function(e, t, n) {
             e.exports = {
                 demoCta: "demoCta_d99d00",
@@ -22353,6 +22372,7 @@
                 avatar: "avatar_bc9cc2",
                 body: "body_bc9cc2",
                 overlay: "overlay_bc9cc2",
+                friendRequestBannerOverlay: "friendRequestBannerOverlay_bc9cc2",
                 friendRequestBanner: "friendRequestBanner_bc9cc2"
             }
         },
@@ -22573,8 +22593,7 @@
             e.exports = {
                 header: "header_b07019",
                 body: "body_b07019",
-                footer: "footer_b07019",
-                friendRequestBanner: "friendRequestBanner_b07019"
+                footer: "footer_b07019"
             }
         },
         710598: function(e, t, n) {
