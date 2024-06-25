@@ -40706,7 +40706,7 @@
                 S = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(S.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let f = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304944", ", Version Hash: ").concat("f22b50e3fd84d4cfa6372724ec7007e6c09ac644")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(f, ", Build Number: ").concat("304956", ", Version Hash: ").concat("d878eadd2bb3f90d998c62186b7836453d368211")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -96919,8 +96919,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "304944", "304944"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304944")), t = 0), t
+                let t = parseInt((e = "304956", "304956"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("304956")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125191,8 +125191,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "304944",
-                    versionHash: "f22b50e3fd84d4cfa6372724ec7007e6c09ac644"
+                    buildNumber: "304956",
+                    versionHash: "d878eadd2bb3f90d998c62186b7836453d368211"
                 }
             }
             n.d(t, {
@@ -125726,7 +125726,7 @@
                 u = n(31336),
                 _ = n(19759);
             let c = (0, s.Un)({
-                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("19503"), n.e("89350"), n.e("39709"), n.e("80451"), n.e("3336"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("29549"), n.e("32776"), n.e("95900"), n.e("8016"), n.e("33053"), n.e("68136"), n.e("19464"), n.e("76540"), n.e("31605"), n.e("4934"), n.e("6380"), n.e("22646"), n.e("11250"), n.e("87624"), n.e("95854"), n.e("5528"), n.e("44517"), n.e("18101"), n.e("43331"), n.e("65840"), n.e("30419"), n.e("25788"), n.e("77172"), n.e("18824"), n.e("95393"), n.e("86977"), n.e("31649"), n.e("41662"), n.e("81539"), n.e("90508"), n.e("49508"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("54535"), n.e("65371"), n.e("30243"), n.e("3084"), n.e("8540"), n.e("65392"), n.e("68241"), n.e("97458"), n.e("86560"), n.e("42341"), n.e("98928"), n.e("30676"), n.e("37941"), n.e("36439"), n.e("30634"), n.e("92247")]).then(n.bind(n, 678717)),
+                createPromise: () => Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("19503"), n.e("89350"), n.e("39709"), n.e("80451"), n.e("3336"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("43906"), n.e("29549"), n.e("32776"), n.e("95900"), n.e("8016"), n.e("33053"), n.e("68136"), n.e("50654"), n.e("76540"), n.e("31605"), n.e("6380"), n.e("22646"), n.e("11250"), n.e("87624"), n.e("95854"), n.e("5528"), n.e("44517"), n.e("43331"), n.e("18101"), n.e("65840"), n.e("30419"), n.e("25788"), n.e("77172"), n.e("18824"), n.e("95393"), n.e("86977"), n.e("31649"), n.e("41662"), n.e("81539"), n.e("90508"), n.e("49508"), n.e("8739"), n.e("58286"), n.e("41947"), n.e("54535"), n.e("65371"), n.e("30243"), n.e("3084"), n.e("8540"), n.e("65392"), n.e("68241"), n.e("97458"), n.e("86560"), n.e("42341"), n.e("98928"), n.e("30676"), n.e("37941"), n.e("36439"), n.e("30634"), n.e("92247")]).then(n.bind(n, 678717)),
                 webpackId: 678717
             });
 
@@ -152221,65 +152221,62 @@
             "use strict";
             n.d(t, {
                 Cf: function() {
-                    return h
-                },
-                Fq: function() {
-                    return u
-                },
-                HP: function() {
-                    return l
-                },
-                I5: function() {
-                    return d
-                },
-                ID: function() {
-                    return S
-                },
-                IO: function() {
-                    return A
-                },
-                It: function() {
-                    return c
-                },
-                W3: function() {
-                    return O
-                },
-                b9: function() {
-                    return R
-                },
-                cV: function() {
-                    return E
-                },
-                g_: function() {
-                    return T
-                },
-                iq: function() {
-                    return a
-                },
-                jR: function() {
-                    return _
-                },
-                pG: function() {
-                    return m
-                },
-                sr: function() {
-                    return f
-                },
-                xn: function() {
                     return I
                 },
-                z5: function() {
+                Fq: function() {
+                    return l
+                },
+                HP: function() {
+                    return a
+                },
+                I5: function() {
+                    return _
+                },
+                ID: function() {
+                    return T
+                },
+                IO: function() {
+                    return f
+                },
+                It: function() {
+                    return u
+                },
+                W3: function() {
+                    return A
+                },
+                b9: function() {
+                    return m
+                },
+                cV: function() {
+                    return c
+                },
+                g_: function() {
+                    return E
+                },
+                iq: function() {
+                    return o
+                },
+                pG: function() {
                     return N
+                },
+                sr: function() {
+                    return h
+                },
+                xn: function() {
+                    return d
+                },
+                z5: function() {
+                    return S
                 }
             }), n(411104);
             var i = n(544891),
-                r = n(570140),
-                s = n(37234),
-                o = n(981631);
-            async function a(e, t) {
+                r = n(570140);
+            n(37234);
+            var s = n(981631);
+            async function o(e, t) {
                 let {
                     nick: n,
-                    avatar: s,
+                    avatar: o,
                     avatarDecoration: a
                 } = t;
                 if (null == e) throw Error("Need guildId");
@@ -152288,13 +152285,13 @@
                 });
                 let l = {
                     nick: n,
-                    avatar: s,
+                    avatar: o,
                     avatar_decoration_id: null === a ? null : null == a ? void 0 : a.id,
                     avatar_decoration_sku_id: null === a ? null : null == a ? void 0 : a.skuId
                 };
                 try {
                     let t = await i.tn.patch({
-                        url: o.ANM.SET_GUILD_MEMBER(e),
+                        url: s.ANM.SET_GUILD_MEMBER(e),
                         body: l,
                         oldFormErrors: !0
                     });
@@ -152314,14 +152311,14 @@
                 }
             }
 
-            function l(e) {
+            function a(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_GUILD",
                     guild: e
                 })
             }
 
-            function u(e, t) {
+            function l(e, t) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_INIT",
                     guild: e,
@@ -152329,93 +152326,87 @@
                 })
             }
 
-            function _() {
-                r.Z.dispatch({
-                    type: "GUILD_IDENTITY_SETTINGS_CLOSE"
-                }), (0, s.xf)()
-            }
-
-            function c() {
+            function u() {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM"
                 })
             }
 
-            function d(e) {
+            function _(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR",
                     avatar: e
                 })
             }
 
-            function E(e) {
+            function c(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION",
                     avatarDecoration: e
                 })
             }
 
-            function I(e) {
+            function d(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID",
                     profileEffectId: e
                 })
             }
 
-            function T(e) {
+            function E(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER",
                     banner: e
                 })
             }
 
-            function h(e) {
+            function I(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO",
                     bio: e
                 })
             }
 
-            function S(e) {
+            function T(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS",
                     pronouns: e
                 })
             }
 
-            function f(e) {
+            function h(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME",
                     nickname: e
                 })
             }
 
-            function N(e) {
+            function S(e) {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS",
                     themeColors: e
                 })
             }
 
-            function A() {
+            function f() {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
                 })
             }
 
-            function m() {
+            function N() {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
                 })
             }
 
-            function O() {
+            function A() {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
                 })
             }
 
-            function R() {
+            function m() {
                 r.Z.dispatch({
                     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
                 })
@@ -152431,21 +152422,17 @@
                 O = {};
 
             function R() {
-                m = A.QZA.CLOSED, O = {}, c = null, d = void 0, E = []
+                p(), g(), O = {}, m = A.QZA.OPEN
             }
 
             function p() {
-                g(), C(), O = {}, m = A.QZA.OPEN
-            }
-
-            function g() {
                 i = void 0, u = void 0, r = void 0
             }
 
-            function C() {
+            function g() {
                 o = void 0, a = void 0, l = void 0, _ = void 0, s = void 0
             }
-            class v extends(S = f.ZP.Store) {
+            class C extends(S = f.ZP.Store) {
                 getFormState() {
                     return m
                 }
@@ -152507,18 +152494,17 @@
                     return E
                 }
             }
-            h = "GuildIdentitySettingsStore", (T = "displayName") in(I = v) ? Object.defineProperty(I, T, {
+            h = "GuildIdentitySettingsStore", (T = "displayName") in(I = C) ? Object.defineProperty(I, T, {
                 value: h,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : I[T] = h, t.Z = new v(N.Z, {
+            }) : I[T] = h, t.Z = new C(N.Z, {
                 GUILD_IDENTITY_SETTINGS_INIT: function(e) {
                     c = e.guild, m = A.QZA.OPEN, O = {}, d = e.source, E = e.analyticsLocations
                 },
-                GUILD_IDENTITY_SETTINGS_CLOSE: R,
                 GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: function() {
-                    p(), R()
+                    R(), m = A.QZA.CLOSED, O = {}, c = null, d = void 0, E = []
                 },
                 GUILD_IDENTITY_SETTINGS_SET_GUILD: function(e) {
                     c = e.guild, O = {}
@@ -152582,10 +152568,10 @@
                     } = e;
                     _ = t
                 },
-                GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: g,
-                GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: C,
-                GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: p,
-                GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: p,
+                GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: p,
+                GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: g,
+                GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: R,
+                GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: R,
                 GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: function() {
                     O = {}
                 }
@@ -162476,7 +162462,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("11751"), n.e("29549"), n.e("33053"), n.e("19464"), n.e("7654"), n.e("31605"), n.e("65840"), n.e("41662"), n.e("44156"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("3084"), n.e("65392"), n.e("43502"), n.e("98928"), n.e("1187"), n.e("27577"), n.e("92557"), n.e("36439"), n.e("96936")]).then(n.bind(n, 994763)), (null === (s = T.Z.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(N.oNc.COMMUNITY)) && (t === N.pNK.GUILD_AUTOMOD && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_AUTOMOD), t === N.pNK.MEMBER_VERIFICATION && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, i, r);
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("89350"), n.e("11751"), n.e("29549"), n.e("33053"), n.e("50654"), n.e("7654"), n.e("31605"), n.e("65840"), n.e("41662"), n.e("44156"), n.e("90508"), n.e("70161"), n.e("85552"), n.e("58227"), n.e("3084"), n.e("65392"), n.e("43502"), n.e("98928"), n.e("1187"), n.e("27577"), n.e("92557"), n.e("36439"), n.e("96936")]).then(n.bind(n, 994763)), (null === (s = T.Z.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(N.oNc.COMMUNITY)) && (t === N.pNK.GUILD_AUTOMOD && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_AUTOMOD), t === N.pNK.MEMBER_VERIFICATION && (t = N.pNK.SAFETY, r = N.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, i, r);
                         (0, o.jN)(N.S9g.GUILD_SETTINGS)
                     },
                     close() {
@@ -183924,8 +183910,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719348721051",
-                                    build_number: "304944"
+                                    built_at: "1719349385561",
+                                    build_number: "304956"
                                 }
                             },
                             retries: 1
@@ -198437,47 +198423,44 @@
             "use strict";
             n.d(t, {
                 $r: function() {
-                    return I
+                    return d
                 },
                 DP: function() {
-                    return N
-                },
-                Ly: function() {
-                    return S
-                },
-                SG: function() {
                     return h
                 },
-                Wf: function() {
-                    return T
+                Ly: function() {
+                    return I
+                },
+                SG: function() {
+                    return E
                 },
                 ZT: function() {
-                    return f
+                    return T
                 }
             });
             var i = n(735250);
             n(470079);
             var r = n(866442),
-                s = n(481060),
-                o = n(531643),
-                a = n(768581),
-                l = n(403182),
-                u = n(51144),
-                _ = n(661543),
-                c = n(200299),
-                d = n(486324),
-                E = n(689938);
+                s = n(481060);
+            n(531643);
+            var o = n(768581);
+            n(403182);
+            var a = n(51144),
+                l = n(661543),
+                u = n(200299),
+                _ = n(486324),
+                c = n(689938);
 
-            function I(e, t, r, o) {
+            function d(e, t, r, o) {
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: s
                     } = await Promise.all([n.e("99387"), n.e("82634")]).then(n.bind(n, 28130));
                     return n => (0, i.jsx)(s, {
                         filters: o,
-                        maxFileSizeBytes: c.B,
-                        imageSpecifications: e === d.pC.BANNER && E.Z.Messages.USER_SETTINGS_PROFILE_THEMES_BANNER_MODAL_SPECS,
-                        onComplete: (n, i) => (0, _.j)({
+                        maxFileSizeBytes: u.B,
+                        imageSpecifications: e === _.pC.BANNER && c.Z.Messages.USER_SETTINGS_PROFILE_THEMES_BANNER_MODAL_SPECS,
+                        onComplete: (n, i) => (0, l.j)({
                             imageSrc: n,
                             file: i,
                             uploadType: e,
@@ -198491,37 +198474,28 @@
                 })
             }
 
-            function T() {
-                (0, o.openUploadError)({
-                    title: E.Z.Messages.UPLOAD_AREA_TOO_LARGE_TITLE,
-                    help: E.Z.Messages.UPLOAD_AREA_TOO_LARGE_HELP.format({
-                        maxSize: (0, l.Ng)(c.B)
-                    })
-                })
-            }
-
-            function h(e, t, n) {
+            function E(e, t, n) {
                 let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
                 if (null != e) return e;
                 let {
                     size: r = 80,
                     canAnimate: s = !0
-                } = i, o = null === e;
-                return o && null == t ? a.ZP.getDefaultAvatarURL(n.id, n.discriminator) : o || (null == t ? void 0 : t.avatar) == null ? n.getAvatarURL(void 0, r, s) : n.getAvatarURL(null == t ? void 0 : t.guildId, r, s)
+                } = i, a = null === e;
+                return a && null == t ? o.ZP.getDefaultAvatarURL(n.id, n.discriminator) : a || (null == t ? void 0 : t.avatar) == null ? n.getAvatarURL(void 0, r, s) : n.getAvatarURL(null == t ? void 0 : t.guildId, r, s)
             }
 
-            function S(e) {
+            function I(e) {
                 var t;
                 let {
                     pendingNickname: n,
                     pendingGlobalName: i,
                     user: r,
                     guildMember: s
-                } = e, o = "" === n ? null : null != n ? n : null == s ? void 0 : s.nick, a = "" === i ? r.username : i;
-                return null !== (t = null != o ? o : a) && void 0 !== t ? t : u.ZP.getName(r)
+                } = e, o = "" === n ? null : null != n ? n : null == s ? void 0 : s.nick, l = "" === i ? r.username : i;
+                return null !== (t = null != o ? o : l) && void 0 !== t ? t : a.ZP.getName(r)
             }
 
-            function f(e) {
+            function T(e) {
                 var t, n;
                 let {
                     pendingProfileEffectId: i,
@@ -198530,7 +198504,7 @@
                 return a && null != o ? s : a ? null : null != i ? i : null == r ? void 0 : r.profileEffectId
             }
 
-            function N(e) {
+            function h(e) {
                 return (null != e ? (0, r.Bd)(e) : 1) > .25
             }
         },
@@ -199355,7 +199329,7 @@
                     },
                     trackGuildAndChannelMetadata: s
                 })
-            }(i = r || (r = {})).LEARN_MORE = "LEARN_MORE", i.SHOW_REWARD = "SHOW_REWARD", i.CLAIM_REWARD = "CLAIM_REWARD", i.GET_REWARD_CODE = "GET_REWARD_CODE", i.COPY_REWARD_CODE = "COPY_REWARD_CODE", i.ACCEPT_QUEST = "ACCEPT_QUEST", i.COPY_QUEST_URL = "COPY_QUEST_URL", i.TRACK_PROGRESS = "TRACK_PROGRESS", i.CONNECT_CONSOLE = "CONNECT_CONSOLE", i.DEFIBRILLATOR = "DEFIBRILLATOR", i.OPEN_DISCLOSURE = "OPEN_DISCLOSURE", i.WATCH_STREAM = "WATCH_STREAM", i.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", i.OPEN_GAME_LINK = "OPEN_GAME_LINK", i.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", i.QUEST_BAR_COPY_LINK = "QUEST_BAR.COPY_LINK", i.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", i.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", i.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", i.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE", i.CONTEXT_MENU_LEARN_MORE = "CONTEXT_MENU.LEARN_MORE", i.EXPAND = "EXPAND", i.COLLAPSE = "COLLAPSE"
+            }(i = r || (r = {})).LEARN_MORE = "LEARN_MORE", i.SHOW_REWARD = "SHOW_REWARD", i.CLAIM_REWARD = "CLAIM_REWARD", i.GET_REWARD_CODE = "GET_REWARD_CODE", i.COPY_REWARD_CODE = "COPY_REWARD_CODE", i.ACCEPT_QUEST = "ACCEPT_QUEST", i.COPY_QUEST_URL = "COPY_QUEST_URL", i.TRACK_PROGRESS = "TRACK_PROGRESS", i.CONNECT_CONSOLE = "CONNECT_CONSOLE", i.DEFIBRILLATOR = "DEFIBRILLATOR", i.OPEN_QUEST_HOME = "OPEN_QUEST_HOME", i.OPEN_DISCLOSURE = "OPEN_DISCLOSURE", i.WATCH_STREAM = "WATCH_STREAM", i.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", i.OPEN_GAME_LINK = "OPEN_GAME_LINK", i.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", i.QUEST_BAR_COPY_LINK = "QUEST_BAR.COPY_LINK", i.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", i.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", i.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", i.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE", i.CONTEXT_MENU_LEARN_MORE = "CONTEXT_MENU.LEARN_MORE", i.EXPAND = "EXPAND", i.COLLAPSE = "COLLAPSE"
         },
         915750: function(e, t, n) {
             "use strict";
@@ -221386,11 +221360,8 @@
         342656: function(e, t, n) {
             "use strict";
             n.d(t, {
-                oU: function() {
-                    return s
-                },
                 qI: function() {
-                    return o
+                    return s
                 }
             });
             var i = n(818083);
@@ -221410,19 +221381,6 @@
                     }]
                 }),
                 s = function() {
-                    let {
-                        autoTrackExposure: e = !1,
-                        disable: t = !1,
-                        location: n = "24rt789ugh"
-                    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    return r.getCurrentConfig({
-                        location: n
-                    }, {
-                        autoTrackExposure: e,
-                        disable: t
-                    })
-                },
-                o = function() {
                     let {
                         autoTrackExposure: e = !1,
                         disable: t = !1,
@@ -221505,97 +221463,20 @@
                     })
                 }
         },
-        447452: function(e, t, n) {
-            "use strict";
-            n.d(t, {
-                T: function() {
-                    return r
-                },
-                t: function() {
-                    return s
-                }
-            });
-            let i = (0, n(818083).B)({
-                    kind: "user",
-                    id: "2024-03_simplified_profile_phase_one",
-                    label: "Simplified Profile Experiment",
-                    defaultConfig: {
-                        basicsEnabled: !1,
-                        moreUserDetailsEnabled: !1,
-                        updatedOnAllSurfaces: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Only the basics",
-                        config: {
-                            basicsEnabled: !0,
-                            moreUserDetailsEnabled: !1,
-                            updatedOnAllSurfaces: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "More user details",
-                        config: {
-                            basicsEnabled: !0,
-                            moreUserDetailsEnabled: !0,
-                            updatedOnAllSurfaces: !1
-                        }
-                    }, {
-                        id: 3,
-                        label: "Updated detailed profile across all surfaces",
-                        config: {
-                            basicsEnabled: !0,
-                            moreUserDetailsEnabled: !0,
-                            updatedOnAllSurfaces: !0
-                        }
-                    }]
-                }),
-                r = e => {
-                    let {
-                        location: t,
-                        autoTrackExposure: n = !0,
-                        trackExposureOptions: r = {}
-                    } = e;
-                    return i.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: n,
-                        trackExposureOptions: r
-                    })
-                },
-                s = e => {
-                    let {
-                        location: t,
-                        autoTrackExposure: n = !0,
-                        trackExposureOptions: r = {}
-                    } = e;
-                    return i.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: n,
-                        trackExposureOptions: r
-                    })
-                }
-        },
         877485: function(e, t, n) {
             "use strict";
             n.d(t, {
                 V: function() {
-                    return a
-                },
-                c: function() {
-                    return o
+                    return r
                 }
             });
-            var i = n(818083),
-                r = n(447452);
-            let s = (0, i.B)({
+            let i = (0, n(818083).B)({
                     kind: "user",
                     id: "2024-05_simplified_profile_friending",
                     label: "Simplified Profile Friending Experiment",
                     defaultConfig: {
                         originalFriendingEnabled: !1,
-                        improvedFriendingEnabled: !1
+                        improvedFriendingEnabled: !0
                     },
                     treatments: [{
                         id: 1,
@@ -221613,43 +221494,18 @@
                         }
                     }]
                 }),
-                o = e => {
+                r = e => {
                     let {
                         location: t,
                         autoTrackExposure: n = !0,
-                        trackExposureOptions: i = {}
+                        trackExposureOptions: r = {}
                     } = e;
-                    return s.getCurrentConfig({
+                    return i.useExperiment({
                         location: t
                     }, {
                         autoTrackExposure: n,
-                        trackExposureOptions: i
+                        trackExposureOptions: r
                     })
-                },
-                a = e => {
-                    let {
-                        location: t,
-                        autoTrackExposure: n = !0,
-                        trackExposureOptions: i = {}
-                    } = e, {
-                        updatedOnAllSurfaces: o
-                    } = (0, r.t)({
-                        location: t,
-                        autoTrackExposure: n,
-                        trackExposureOptions: i
-                    }), {
-                        originalFriendingEnabled: a,
-                        improvedFriendingEnabled: l
-                    } = s.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: n,
-                        trackExposureOptions: i
-                    });
-                    return {
-                        originalFriendingEnabled: a,
-                        improvedFriendingEnabled: l || !a && o
-                    }
                 }
         },
         317179: function(e, t, n) {
@@ -222597,10 +222453,10 @@
             "use strict";
             n.d(t, {
                 W: function() {
-                    return h
+                    return E
                 },
                 Z: function() {
-                    return S
+                    return I
                 }
             }), n(411104);
             var i = n(570140),
@@ -222611,13 +222467,10 @@
                 l = n(598077),
                 u = n(592125),
                 _ = n(271383),
-                c = n(342656),
-                d = n(447452),
-                E = n(877485),
-                I = n(621853),
-                T = n(120569);
+                c = n(621853),
+                d = n(120569);
 
-            function h() {
+            function E() {
                 let e, t, n;
                 for (var i, r, s = arguments.length, o = Array(s), a = 0; a < s; a++) o[a] = arguments[a];
                 let u = o[0],
@@ -222625,25 +222478,16 @@
                 if ("string" == typeof u && ("string" == typeof _ || null == _)) e = u, t = _, n = o[2];
                 else if (u instanceof l.Z && ("object" == typeof _ || null == _)) e = u.id, t = u.getAvatarURL(void 0, 80), n = _;
                 else throw Error("Invalid arguments");
-                if (null == e) return Promise.resolve();
-                let I = (0, E.c)({
-                        location: "maybeFetchUserProfileForPopout",
-                        autoTrackExposure: !1
-                    }),
-                    T = (0, c.oU)().enabled || (0, d.T)({
-                        location: "maybeFetchUserProfileForPopout",
-                        autoTrackExposure: !1
-                    }).basicsEnabled || I.originalFriendingEnabled || I.improvedFriendingEnabled;
-                return S(e, t, {
-                    withMutualFriends: null !== (i = null == n ? void 0 : n.withMutualFriends) && void 0 !== i ? i : T,
-                    withMutualGuilds: null !== (r = null == n ? void 0 : n.withMutualGuilds) && void 0 !== r ? r : T,
+                return null == e ? Promise.resolve() : I(e, t, {
+                    withMutualFriends: null === (i = null == n ? void 0 : n.withMutualFriends) || void 0 === i || i,
+                    withMutualGuilds: null === (r = null == n ? void 0 : n.withMutualGuilds) || void 0 === r || r,
                     ...n
                 })
             }
-            async function S(e, t) {
-                var n, l, c;
-                let d, {
-                    withMutualGuilds: E = !1,
+            async function I(e, t) {
+                var n, l, E;
+                let I, {
+                    withMutualGuilds: T = !1,
                     withMutualFriendsCount: h = !1,
                     withMutualFriends: S = !1,
                     friendToken: f,
@@ -222654,37 +222498,37 @@
                     abortSignal: R
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 if ("" === e) return;
-                (0, a.z)(), null != t && (0, s.vM)(t), null != m && !E && (E = !0), null != m && (d = null !== (l = null === (n = (0, o.Ur)({
+                (0, a.z)(), null != t && (0, s.vM)(t), null != m && !T && (T = !0), null != m && (I = null !== (l = null === (n = (0, o.Ur)({
                     guildMember: _.ZP.getMember(m, e),
                     channel: u.Z.getChannel(O)
                 })) || void 0 === n ? void 0 : n.id) && void 0 !== l ? l : void 0);
-                let p = I.Z.getUserProfile(e),
-                    g = I.Z.getGuildMemberProfile(e, m),
-                    C = I.Z.getMutualGuilds(e),
-                    v = I.Z.getMutualFriends(e),
-                    L = I.Z.getMutualFriendsCount(e),
-                    D = I.Z.isFetchingProfile(e),
-                    M = N ? T.Z : void 0,
-                    P = null == C && E,
+                let p = c.Z.getUserProfile(e),
+                    g = c.Z.getGuildMemberProfile(e, m),
+                    C = c.Z.getMutualGuilds(e),
+                    v = c.Z.getMutualFriends(e),
+                    L = c.Z.getMutualFriendsCount(e),
+                    D = c.Z.isFetchingProfile(e),
+                    M = N ? d.Z : void 0,
+                    P = null == C && T,
                     y = null == v && S,
                     U = null == L && h,
                     b = null != m && null == g,
-                    G = Date.now() - (null !== (c = null == p ? void 0 : p.lastFetched) && void 0 !== c ? c : 0) >= 6e4;
+                    G = Date.now() - (null !== (E = null == p ? void 0 : p.lastFetched) && void 0 !== E ? E : 0) >= 6e4;
                 if (!!(!D && (P || U || y)) || !!b || !!G) A ? await i.Z.wait(() => (0, r.In)(e, {
-                    withMutualGuilds: E,
+                    withMutualGuilds: T,
                     withMutualFriends: S,
                     withMutualFriendsCount: h,
                     friendToken: f,
                     guildId: m,
-                    connectionsRoleId: d,
+                    connectionsRoleId: I,
                     abortSignal: R
                 }, M)) : await (0, r.In)(e, {
-                    withMutualGuilds: E,
+                    withMutualGuilds: T,
                     withMutualFriends: S,
                     withMutualFriendsCount: h,
                     friendToken: f,
                     guildId: m,
-                    connectionsRoleId: d,
+                    connectionsRoleId: I,
                     abortSignal: R
                 }, M)
             }
@@ -222812,39 +222656,27 @@
             "use strict";
             n.d(t, {
                 Of: function() {
-                    return E
-                },
-                ZP: function() {
                     return _
                 },
-                le: function() {
-                    return c
+                ZP: function() {
+                    return l
                 }
-            }), n(47120);
-            var i = n(470079),
-                r = n(442837),
-                s = n(594174),
-                o = n(251625),
-                a = n(255564),
-                l = n(621853),
-                u = n(484459);
+            }), n(47120), n(470079);
+            var i = n(442837),
+                r = n(594174),
+                s = n(251625),
+                o = n(255564),
+                a = n(621853);
+
+            function l(e, t) {
+                return (0, i.e7)([r.default, a.Z], () => _(e, t, [r.default, a.Z]))
+            }
+            n(484459);
+            let u = (0, s.oH)((e, t) => new o.Z(e, t));
 
             function _(e, t) {
-                return (0, r.e7)([s.default, l.Z], () => E(e, t, [s.default, l.Z]))
-            }
-
-            function c(e, t) {
-                return i.useEffect(() => {
-                    (0, u.Z)(e, void 0, {
-                        guildId: null != t ? t : void 0
-                    })
-                }, [t, e]), _(e, t)
-            }
-            let d = (0, o.oH)((e, t) => new a.Z(e, t));
-
-            function E(e, t) {
-                let [n, i] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [s.default, l.Z], r = n.getUser(e), o = i.getUserProfile(e), a = i.getGuildMemberProfile(e, t);
-                return null == r || null == o ? null : d(o, a)
+                let [n, i] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [r.default, a.Z], s = n.getUser(e), o = i.getUserProfile(e), l = i.getGuildMemberProfile(e, t);
+                return null == s || null == o ? null : u(o, l)
             }
         },
         702557: function(e, t, n) {
@@ -223655,7 +223487,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return T
+                    return I
                 }
             });
             var i = n(735250);
@@ -223665,51 +223497,45 @@
                 o = n(442837),
                 a = n(594174),
                 l = n(786874),
-                u = n(447452),
-                _ = n(877485),
-                c = n(103113),
-                d = n(788197),
-                E = n(969835),
-                I = n(985237);
+                u = n(877485),
+                _ = n(103113),
+                c = n(788197),
+                d = n(969835),
+                E = n(985237);
 
-            function T(e) {
+            function I(e) {
                 let {
                     location: t,
                     userId: n,
                     user: r,
-                    ...T
-                } = e, {
-                    basicsEnabled: h
-                } = (0, u.t)({
+                    ...I
+                } = e;
+                (0, u.V)({
                     location: t
-                }), {
-                    originalFriendingEnabled: S,
-                    improvedFriendingEnabled: f
-                } = (0, _.V)({
-                    location: t
-                }), {
-                    botProfilesEnabled: N
+                });
+                let {
+                    botProfilesEnabled: T
                 } = (0, l.J)({
                     location: t
-                }), A = h || S || f, m = (0, o.e7)([a.default], () => a.default.getUser(n), [n]), O = null != r ? r : m;
-                s()(null != O, "UserPopoutExperimentWrapper: user cannot be undefined");
-                let R = (0, o.e7)([a.default], () => a.default.getCurrentUser());
-                return (s()(null != R, "UserPopoutExperimentWrapper: currentUser cannot be undefined"), A && N && O.isNonUserBot()) ? (0, i.jsx)(c.Z, {
-                    ...T,
-                    user: O,
-                    currentUser: R
-                }) : A && N && O.bot ? (0, i.jsx)(I.Z, {
-                    ...T,
-                    user: O,
-                    currentUser: R
-                }) : !A || O.bot || O.isNonUserBot() || O.isClyde() ? (0, i.jsx)(d.Z, {
-                    ...T,
-                    user: O,
-                    currentUser: R
-                }) : (0, i.jsx)(E.Z, {
-                    ...T,
-                    user: O,
-                    currentUser: R
+                }), h = (0, o.e7)([a.default], () => a.default.getUser(n), [n]), S = null != r ? r : h;
+                s()(null != S, "UserPopoutExperimentWrapper: user cannot be undefined");
+                let f = (0, o.e7)([a.default], () => a.default.getCurrentUser());
+                return (s()(null != f, "UserPopoutExperimentWrapper: currentUser cannot be undefined"), T && S.isNonUserBot()) ? (0, i.jsx)(_.Z, {
+                    ...I,
+                    user: S,
+                    currentUser: f
+                }) : T && S.bot ? (0, i.jsx)(E.Z, {
+                    ...I,
+                    user: S,
+                    currentUser: f
+                }) : S.bot ? (0, i.jsx)(c.Z, {
+                    ...I,
+                    user: S,
+                    currentUser: f
+                }) : (0, i.jsx)(d.Z, {
+                    ...I,
+                    user: S,
+                    currentUser: f
                 })
             }
         },
@@ -225535,84 +225361,75 @@
             "use strict";
             n.r(t), n.d(t, {
                 closeUserProfileModal: function() {
-                    return d
+                    return u
                 },
                 openUserProfileModal: function() {
-                    return c
+                    return l
                 }
             });
             var i = n(570140),
                 r = n(232567),
                 s = n(594174),
-                o = n(342656),
-                a = n(447452),
-                l = n(877485),
-                u = n(484459),
-                _ = n(981631);
+                o = n(484459),
+                a = n(981631);
 
-            function c(e) {
+            function l(e) {
                 let {
                     userId: t,
-                    guildId: n = _.ME,
-                    channelId: c,
-                    messageId: d,
-                    roleId: E,
-                    section: I,
-                    subsection: T,
-                    friendToken: h,
-                    showGuildProfile: S,
-                    analyticsLocation: f,
-                    sourceAnalyticsLocations: N
-                } = e, A = s.default.getUser(t), m = null != n && n !== _.ME ? n : void 0, O = (0, l.c)({
-                    location: "openUserProfileModal",
-                    autoTrackExposure: !1
-                }), R = (0, o.oU)().enabled || (0, a.T)({
-                    location: "openUserProfileModal",
-                    autoTrackExposure: !1
-                }).basicsEnabled || O.originalFriendingEnabled || O.improvedFriendingEnabled;
-                if (null == A) return (0, r.In)(t, {
-                    guildId: S ? m : void 0,
+                    guildId: n = a.ME,
+                    channelId: l,
+                    messageId: u,
+                    roleId: _,
+                    section: c,
+                    subsection: d,
+                    friendToken: E,
+                    showGuildProfile: I,
+                    analyticsLocation: T,
+                    sourceAnalyticsLocations: h
+                } = e, S = s.default.getUser(t), f = null != n && n !== a.ME ? n : void 0;
+                if (null == S) return (0, r.In)(t, {
+                    guildId: I ? f : void 0,
                     withMutualGuilds: !0,
-                    withMutualFriends: R,
-                    friendToken: h
+                    withMutualFriends: !0,
+                    friendToken: E
                 }).then(() => {
                     i.Z.dispatch({
                         type: "USER_PROFILE_MODAL_OPEN",
                         userId: t,
                         guildId: null != n ? n : void 0,
-                        channelId: null != c ? c : void 0,
-                        messageId: null != d ? d : void 0,
-                        roleId: null != E ? E : void 0,
-                        section: I,
-                        subsection: T,
-                        friendToken: h,
-                        showGuildProfile: S,
-                        analyticsLocation: f,
-                        sourceAnalyticsLocations: N
+                        channelId: null != l ? l : void 0,
+                        messageId: null != u ? u : void 0,
+                        roleId: null != _ ? _ : void 0,
+                        section: c,
+                        subsection: d,
+                        friendToken: E,
+                        showGuildProfile: I,
+                        analyticsLocation: T,
+                        sourceAnalyticsLocations: h
                     })
                 });
-                (0, u.W)(A, {
-                    guildId: S ? m : void 0,
+                (0, o.W)(S, {
+                    guildId: I ? f : void 0,
                     withMutualGuilds: !0,
-                    withMutualFriends: R,
-                    friendToken: h
+                    withMutualFriends: !0,
+                    friendToken: E
                 }), i.Z.dispatch({
                     type: "USER_PROFILE_MODAL_OPEN",
                     userId: t,
                     guildId: null != n ? n : void 0,
-                    channelId: null != c ? c : void 0,
-                    messageId: null != d ? d : void 0,
-                    roleId: null != E ? E : void 0,
-                    section: I,
-                    subsection: T,
-                    friendToken: h,
-                    showGuildProfile: S,
-                    analyticsLocation: f,
-                    sourceAnalyticsLocations: N
+                    channelId: null != l ? l : void 0,
+                    messageId: null != u ? u : void 0,
+                    roleId: null != _ ? _ : void 0,
+                    section: c,
+                    subsection: d,
+                    friendToken: E,
+                    showGuildProfile: I,
+                    analyticsLocation: T,
+                    sourceAnalyticsLocations: h
                 })
             }
 
-            function d() {
+            function u() {
                 i.Z.dispatch({
                     type: "USER_PROFILE_MODAL_CLOSE"
                 })
@@ -226608,9 +226425,6 @@
         131640: function(e, t, n) {
             "use strict";
             n.d(t, {
-                Cb: function() {
-                    return w
-                },
                 ZP: function() {
                     return k
                 },
@@ -227131,7 +226945,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return v
+                    return g
                 }
             });
             var i = n(735250),
@@ -227142,105 +226956,94 @@
                 l = n(699516),
                 u = n(246946),
                 _ = n(5192),
-                c = n(447452),
-                d = n(877485),
-                E = n(741308),
-                I = n(681837),
-                T = n(91433),
-                h = n(724593),
-                S = n(502762),
-                f = n(530),
-                N = n(790711),
-                A = n(580512),
-                m = n(67152),
-                O = n(579285),
-                R = n(287612),
-                p = n(228168),
-                g = n(981631),
-                C = n(472375);
+                c = n(741308),
+                d = n(681837),
+                E = n(91433),
+                I = n(724593),
+                T = n(502762),
+                h = n(530),
+                S = n(790711),
+                f = n(580512),
+                N = n(67152),
+                A = n(579285),
+                m = n(287612),
+                O = n(228168),
+                R = n(981631),
+                p = n(472375);
 
-            function v(e) {
+            function g(e) {
                 let {
                     user: t,
                     currentUser: n,
-                    displayProfile: v,
-                    guild: L,
-                    isHovering: D,
-                    onOpenProfile: M,
-                    channelId: P,
-                    onClose: y
-                } = e, {
-                    moreUserDetailsEnabled: U
-                } = (0, c.t)({
-                    location: "BiteSizeProfileBody"
-                }), {
-                    originalFriendingEnabled: b,
-                    improvedFriendingEnabled: G
-                } = (0, d.V)({
-                    location: "BiteSizeProfileBody"
-                }), w = _.ZP.getName(null == L ? void 0 : L.id, P, t), B = (0, s.e7)([l.Z], () => l.Z.getRelationshipType(t.id)), x = (0, s.e7)([u.Z], () => u.Z.hidePersonalInformation), k = (0, o.Z)("username"), V = r.useMemo(() => ({
-                    source: g.jXE.PROFILE_POPOUT,
+                    displayProfile: g,
+                    guild: C,
+                    isHovering: v,
+                    onOpenProfile: L,
+                    channelId: D,
+                    onClose: M
+                } = e, P = _.ZP.getName(null == C ? void 0 : C.id, D, t), y = (0, s.e7)([l.Z], () => l.Z.getRelationshipType(t.id)), U = (0, s.e7)([u.Z], () => u.Z.hidePersonalInformation), b = (0, o.Z)("username"), G = r.useMemo(() => ({
+                    source: R.jXE.PROFILE_POPOUT,
                     tagUserId: t.id
                 }), [t.id]);
                 return (0, i.jsxs)("div", {
-                    className: C.body,
-                    children: [(0, i.jsx)(f.Z, {
+                    className: p.body,
+                    children: [(0, i.jsx)(h.Z, {
                         user: t,
-                        profileType: p.y0.BITE_SIZE,
-                        onOpenProfile: M,
-                        usernameIcon: t.hasAvatarForGuild(null == L ? void 0 : L.id) && (0, i.jsx)(N.Z, {
+                        profileType: O.y0.BITE_SIZE,
+                        onOpenProfile: L,
+                        usernameIcon: t.hasAvatarForGuild(null == C ? void 0 : C.id) && (0, i.jsx)(S.Z, {
                             user: t,
-                            nickname: w
+                            nickname: P
                         }),
-                        nickname: w,
-                        pronouns: null == v ? void 0 : v.pronouns,
-                        tags: (0, i.jsx)(E.Z, {
-                            displayProfile: v,
-                            profileType: p.y0.BITE_SIZE,
-                            onClose: y
+                        nickname: P,
+                        pronouns: null == g ? void 0 : g.pronouns,
+                        tags: (0, i.jsx)(c.Z, {
+                            displayProfile: g,
+                            profileType: O.y0.BITE_SIZE,
+                            onClose: M
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(I.Z, {
+                            children: [(0, i.jsx)(d.Z, {
                                 userId: t.id
-                            }), (U || b || G) && !x && (0, i.jsx)(h.Z, {
+                            }), !U && (0, i.jsx)(I.Z, {
                                 user: t,
-                                isHovering: D,
-                                onOpenProfile: () => M({
-                                    subsection: p.Tb.NOTE
+                                isHovering: v,
+                                onOpenProfile: () => L({
+                                    subsection: O.Tb.NOTE
                                 })
                             })]
                         })
-                    }), (G || b) && B === g.OGo.PENDING_INCOMING && (0, i.jsx)(S.Z.Overlay, {
-                        children: (0, i.jsx)(T.Z, {
+                    }), y === R.OGo.PENDING_INCOMING && (0, i.jsx)(T.Z.Overlay, {
+                        children: (0, i.jsx)(E.Z, {
                             user: t,
-                            guildId: null == L ? void 0 : L.id,
-                            channelId: P
+                            guildId: null == C ? void 0 : C.id,
+                            channelId: D
                         })
-                    }), t.id !== n.id && (0, i.jsx)(R.Z, {
+                    }), t.id !== n.id && (0, i.jsx)(m.Z, {
                         user: t,
-                        onOpenProfile: e => M({
+                        onOpenProfile: e => L({
                             section: e
                         })
-                    }), k && (0, i.jsx)(a.ZP, {
+                    }), b && (0, i.jsx)(a.ZP, {
                         userId: t.id,
                         inline: !1,
-                        profileViewedAnalytics: V
-                    }), (U || b || G) && (0, i.jsx)(m.Z, {
+                        profileViewedAnalytics: G
+                    }), (0, i.jsx)(N.Z, {
                         user: t,
-                        bio: null == v ? void 0 : v.bio,
-                        hidePersonalInformation: x,
-                        onClose: y
-                    }), (0, i.jsx)(A.Z, {
+                        bio: null == g ? void 0 : g.bio,
+                        hidePersonalInformation: U,
+                        onClose: M
+                    }), (0, i.jsx)(f.Z, {
                         user: t,
-                        guild: L,
-                        channelId: P,
-                        onClose: y
-                    }), null != L && (0, i.jsx)(O.Z, {
+                        guild: C,
+                        channelId: D,
+                        onClose: M
+                    }), null != C && (0, i.jsx)(A.Z, {
                         user: t,
                         currentUser: n,
-                        guild: L,
-                        onOpenProfile: () => M({
-                            subsection: p.Tb.ROLES
+                        guild: C,
+                        onOpenProfile: () => L({
+                            subsection: O.Tb.ROLES
                         })
                     })]
                 })
@@ -262461,7 +262264,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f22b50e3fd84d4cfa6372724ec7007e6c09ac644"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d878eadd2bb3f90d998c62186b7836453d368211"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281622,7 +281425,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "304944"
+                                build_number: "304956"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -288943,7 +288746,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "304944", "304944"), 10);
+                let s = parseInt((n = "304956", "304956"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -330479,4 +330282,4 @@
         }
     }
 ]);
-//# sourceMappingURL=79892.280b5cc7ad8ff72fc577.js.map
+//# sourceMappingURL=79892.21d3e3178db3373989cf.js.map

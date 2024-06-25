@@ -10,24 +10,24 @@
             },
             544140: function(e, t, a) {
                 var n = a(796581),
-                    c = a(149912);
-                e.exports = function e(t, a, d, i, r) {
+                    d = a(149912);
+                e.exports = function e(t, a, c, i, r) {
                     var o = -1,
                         f = t.length;
-                    for (d || (d = c), r || (r = []); ++o < f;) {
+                    for (c || (c = d), r || (r = []); ++o < f;) {
                         var s = t[o];
-                        a > 0 && d(s) ? a > 1 ? e(s, a - 1, d, i, r) : n(r, s) : !i && (r[r.length] = s)
+                        a > 0 && c(s) ? a > 1 ? e(s, a - 1, c, i, r) : n(r, s) : !i && (r[r.length] = s)
                     }
                     return r
                 }
             },
             149912: function(e, t, a) {
                 var n = a(466293),
-                    c = a(443735),
-                    d = a(402428),
+                    d = a(443735),
+                    c = a(402428),
                     i = n ? n.isConcatSpreadable : void 0;
                 e.exports = function(e) {
-                    return d(e) || c(e) || !!(i && e && e[i])
+                    return c(e) || d(e) || !!(i && e && e[i])
                 }
             },
             90757: function(e, t, a) {
@@ -40,12 +40,12 @@
                 "use strict";
                 var n = a(735250);
                 a(470079);
-                var c = a(266067),
-                    d = a(442837),
+                var d = a(266067),
+                    c = a(442837),
                     i = a(353926),
                     r = a(314897),
                     o = a(981631);
-                t.Z = d.ZP.connectStores([i.Z, r.default], () => {
+                t.Z = c.ZP.connectStores([i.Z, r.default], () => {
                     let e = r.default.getToken();
                     return {
                         token: e,
@@ -56,9 +56,9 @@
                         hasLoadedExperiments: t,
                         token: a
                     } = e;
-                    return null != a ? (0, n.jsx)(c.l_, {
+                    return null != a ? (0, n.jsx)(d.l_, {
                         to: o.Z5c.APP
-                    }) : t ? (0, n.jsx)(c.l_, {
+                    }) : t ? (0, n.jsx)(d.l_, {
                         to: o.Z5c.DEFAULT_LOGGED_OUT
                     }) : null
                 })
@@ -71,8 +71,8 @@
                     }
                 }), a(47120);
                 var n = a(735250),
-                    c = a(470079),
-                    d = a(664751),
+                    d = a(470079),
+                    c = a(664751),
                     i = a(266067),
                     r = a(990547),
                     o = a(719711),
@@ -190,7 +190,7 @@
                 function Y(e, t) {
                     return t ? e.filter(e => !z.has(e)) : e
                 }
-                class X extends c.Component {
+                class X extends d.Component {
                     componentDidMount() {
                         T.ZP.cleanupDisplaySleep(), g.Z.initialize()
                     }
@@ -202,7 +202,7 @@
                         let {
                             isAuthenticated: t,
                             migrationStatus: a,
-                            skipsSettingDefaultPageTitle: c
+                            skipsSettingDefaultPageTitle: d
                         } = this.props;
                         return e = a === _.P.IN_PROGRESS ? null : N.KO ? w.isPlatformEmbedded ? (0, n.jsxs)(i.rs, {
                             children: [(0, n.jsx)(i.AW, {
@@ -289,13 +289,13 @@
                                 render: () => {
                                     var e, t, a;
                                     let n = null === (e = v.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
-                                        c = (0, d.parse)((null !== (a = window.location.search) && void 0 !== a ? a : "").substr(1)),
-                                        i = null === (t = c.referring_location) || void 0 === t ? void 0 : t.toString();
+                                        d = (0, c.parse)((null !== (a = window.location.search) && void 0 !== a ? a : "").substr(1)),
+                                        i = null === (t = d.referring_location) || void 0 === t ? void 0 : t.toString();
                                     return ("iOS" === n || "Android" === n) && v.default.track(Z.rMx.DOWNLOAD_APP, {
                                         platform: n,
                                         ptb: !1,
                                         released: !0,
-                                        has_e_mail: "true" === c.has_e_mail,
+                                        has_e_mail: "true" === d.has_e_mail,
                                         referring_location: i,
                                         qr_code: !0
                                     }), window.location.href = (0, O.Gn)(null != i && "" !== i ? i : "qr_code", n), null
@@ -305,18 +305,18 @@
                                 render: () => {
                                     var e, t;
                                     let a = null === (e = v.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
-                                        c = (0, A.o)(null !== (t = window.location.search) && void 0 !== t ? t : "");
+                                        d = (0, A.o)(null !== (t = window.location.search) && void 0 !== t ? t : "");
                                     if ("iOS" !== a && "Android" !== a) return (0, n.jsx)(i.l_, {
-                                        to: null != c.desktop ? "".concat(c.desktop.pathname).concat(c.desktop.search) : Z.Z5c.APP
+                                        to: null != d.desktop ? "".concat(d.desktop.pathname).concat(d.desktop.search) : Z.Z5c.APP
                                     });
                                     {
-                                        let e = (0, O.Gn)("app_open_from_email", a, c.mobile),
+                                        let e = (0, O.Gn)("app_open_from_email", a, d.mobile),
                                             t = (0, f.zS)(e);
                                         null != t && v.default.track(Z.rMx.DEEP_LINK_CLICKED, {
                                             fingerprint: (0, s.K)(t.fingerprint),
                                             attempt_id: t.attemptId,
                                             source: t.utmSource,
-                                            destination: null != c.mobile ? c.mobile.toString() : null
+                                            destination: null != d.mobile ? d.mobile.toString() : null
                                         }), window.location.href = e
                                     }
                                 }
@@ -343,7 +343,7 @@
                                 component: P
                             })
                         }), (0, n.jsxs)(m.Z, {
-                            skipsSettingDefaultPageTitle: c,
+                            skipsSettingDefaultPageTitle: d,
                             children: [e, w.isPlatformEmbedded && (a === _.P.NOT_STARTED || a === _.P.IN_PROGRESS) && !0 !== b.K.get(o.SV) ? (0, n.jsx)(E.Z, {}) : null]
                         })
                     }
@@ -371,7 +371,7 @@
             650204: function(e, t, a) {
                 "use strict";
                 a(610138), a(216116), a(78328), a(815648), a(47120), a(177593);
-                var n, c, d, i, r, o, f, s = a(735250);
+                var n, d, c, i, r, o, f, s = a(735250);
                 a(92138), a(470079);
                 var l = a(202226),
                     b = a(512722),
@@ -419,7 +419,7 @@
                             throw v.Z.captureCrash(e), e
                         })
                     });
-                    let e = null === (c = (d = L.Z.remoteApp).getVersion) || void 0 === c ? void 0 : c.call(d),
+                    let e = null === (d = (c = L.Z.remoteApp).getVersion) || void 0 === d ? void 0 : d.call(c),
                         t = null === (i = (r = L.Z.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(r),
                         a = {};
                     null != L.Z.remoteApp.getModuleVersions && (a = L.Z.remoteApp.getModuleVersions()), v.Z.setExtra({
@@ -445,8 +445,8 @@
                             e.cancel(), w.ZP.setFocused(!0), (0, P.T_)(window, !0)
                         }), w.ZP.on("MAIN_WINDOW_PATH", function(e, t, a) {
                             var n;
-                            let c = null != a ? new URLSearchParams(a) : null;
-                            if (null === (n = V[t]) || void 0 === n ? !void 0 : !n.call(V, c))(0, N.uL)(t)
+                            let d = null != a ? new URLSearchParams(a) : null;
+                            if (null === (n = V[t]) || void 0 === n ? !void 0 : !n.call(V, d))(0, N.uL)(t)
                         }), w.ZP.on("MAIN_WINDOW_HIDDEN", () => {
                             (0, P.al)(window)
                         })
@@ -458,29 +458,29 @@
                 "use strict";
                 var n = a(735250);
                 a(470079);
-                var c = a(481060),
-                    d = a(204623),
+                var d = a(481060),
+                    c = a(204623),
                     i = a(155221);
                 t.Z = {
-                    App: () => (0, n.jsx)(c.DnDProvider, {
+                    App: () => (0, n.jsx)(d.DnDProvider, {
                         children: (0, n.jsx)(i.Z, {})
                     }),
-                    Overlay: () => (0, n.jsx)(c.DnDProvider, {
+                    Overlay: () => (0, n.jsx)(d.DnDProvider, {
                         children: (0, n.jsx)(i.a, {})
                     }),
-                    OutdatedClient: d.Z
+                    OutdatedClient: c.Z
                 }
             },
             752137: function(e, t, a) {
                 "use strict";
                 var n = a(317770),
-                    c = a(626135),
-                    d = a(358085),
+                    d = a(626135),
+                    c = a(358085),
                     i = a(998502),
                     r = a(981631);
                 class o extends n.Z {
                     _initialize() {
-                        if (!!d.isPlatformEmbedded) i.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
+                        if (!!c.isPlatformEmbedded) i.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
                             this._handleEventResponse(t)
                         }), this.processModuleEvents()
                     }
@@ -494,7 +494,7 @@
                     }
                     _handleEventResponse(e) {
                         if (null != e) e.forEach(e => {
-                            "cdm" === e.type ? (e.name === r.rMx.CDM_LOAD_STATUS || e.name === r.rMx.CDM_READY_COMPLETE) && c.default.track(e.name, e.data) : console.log("[analytics] received unknown analytic type event ".concat(e.type))
+                            "cdm" === e.type ? (e.name === r.rMx.CDM_LOAD_STATUS || e.name === r.rMx.CDM_READY_COMPLETE) && d.default.track(e.name, e.data) : console.log("[analytics] received unknown analytic type event ".concat(e.type))
                         })
                     }
                 }
@@ -503,13 +503,13 @@
             44163: function(e, t, a) {
                 "use strict";
                 var n = a(585483),
-                    c = a(5967),
-                    d = a(933513),
+                    d = a(5967),
+                    c = a(933513),
                     i = a(981631);
                 t.Z = {
                     init() {
                         document.addEventListener("paste", e => {
-                            !(0, d.Z)((0, c.uB)(e)) && n.S.dispatchToLastSubscribed(i.CkL.GLOBAL_CLIPBOARD_PASTE, {
+                            !(0, c.Z)((0, d.uB)(e)) && n.S.dispatchToLastSubscribed(i.CkL.GLOBAL_CLIPBOARD_PASTE, {
                                 event: e
                             })
                         })
@@ -537,9 +537,9 @@
                     }
                 }), a(47120);
                 var n = a(735250),
-                    c = a(470079),
-                    d = a(525654),
-                    i = a.n(d),
+                    d = a(470079),
+                    c = a(525654),
+                    i = a.n(c),
                     r = a(470716),
                     o = a(442837),
                     f = a(946188),
@@ -558,7 +558,7 @@
                 let O = o.ZP.connectStores([b.Z], () => ({
                     focused: b.Z.isFocused()
                 }))(g.Z);
-                class A extends c.PureComponent {
+                class A extends d.PureComponent {
                     getPlatform() {
                         var e;
                         let t = null === (e = i().os) || void 0 === e ? void 0 : e.family;
@@ -587,7 +587,7 @@
                                 onClick: this.handleDownload,
                                 children: v.Z.Messages.DOWNLOAD
                             });
-                        return (0, n.jsxs)(c.Fragment, {
+                        return (0, n.jsxs)(d.Fragment, {
                             children: [(0, n.jsx)(r.ql, {
                                 children: (0, n.jsx)("html", {
                                     className: (0, _.Q)(I.BRd.DARK)
@@ -630,21 +630,21 @@
                         return i
                     },
                     Te: function() {
-                        return c
+                        return d
                     },
                     kb: function() {
-                        return d
+                        return c
                     }
                 });
                 var n = a(570140);
 
-                function c() {
+                function d() {
                     n.Z.wait(() => n.Z.dispatch({
                         type: "DOMAIN_MIGRATION_START"
                     }))
                 }
 
-                function d() {
+                function c() {
                     n.Z.dispatch({
                         type: "DOMAIN_MIGRATION_FAILURE"
                     })
@@ -661,7 +661,7 @@
                         return r
                     }
                 });
-                var n, c, d, i, r, o, f = a(442837),
+                var n, d, c, i, r, o, f = a(442837),
                     s = a(570140);
                 (n = r || (r = {}))[n.NOT_STARTED = 0] = "NOT_STARTED", n[n.IN_PROGRESS = 1] = "IN_PROGRESS", n[n.FAILED = 2] = "FAILED", n[n.SKIPPED = 3] = "SKIPPED";
                 let l = 0;
@@ -670,12 +670,12 @@
                         return l
                     }
                 }
-                i = "DomainMigrationStore", (d = "displayName") in(c = b) ? Object.defineProperty(c, d, {
+                i = "DomainMigrationStore", (c = "displayName") in(d = b) ? Object.defineProperty(d, c, {
                     value: i,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                }) : c[d] = i, t.Z = new b(s.Z, {
+                }) : d[c] = i, t.Z = new b(s.Z, {
                     DOMAIN_MIGRATION_START: function() {
                         l = 1
                     },
@@ -695,8 +695,8 @@
                     }
                 });
                 var n = a(470079),
-                    c = a(719711),
-                    d = a(433517),
+                    d = a(719711),
+                    c = a(433517),
                     i = a(579806),
                     r = a(626135),
                     o = a(998502),
@@ -710,7 +710,7 @@
 
                 function b() {
                     return n.useEffect(() => {
-                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== d.K.get(c.SV) && o.ZP.supportsFeature(s.eRX.USER_DATA_CACHE) && (f.Te(), i.Z.userDataCache.getCached().then(e => {
+                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== c.K.get(d.SV) && o.ZP.supportsFeature(s.eRX.USER_DATA_CACHE) && (f.Te(), i.Z.userDataCache.getCached().then(e => {
                             if (null == e) {
                                 f.kb(), r.default.track(s.rMx.DOMAIN_MIGRATED, {
                                     success: !1,
@@ -724,11 +724,11 @@
                                 a = 0 !== t.length,
                                 n = null != e.token,
                                 o = null == e.RTCRegionStore ? null : JSON.parse(e.RTCRegionStore),
-                                b = null == o || null == l(o) || l(o) <= l(d.K.get("RTCRegionStore"));
-                            a && n && !b && (d.K.clear(), t.forEach(t => {
+                                b = null == o || null == l(o) || l(o) <= l(c.K.get("RTCRegionStore"));
+                            a && n && !b && (c.K.clear(), t.forEach(t => {
                                 let a = e[t];
                                 try {
-                                    d.K.set(t, JSON.parse(a))
+                                    c.K.set(t, JSON.parse(a))
                                 } catch (e) {}
                             })), r.default.track(s.rMx.DOMAIN_MIGRATED, {
                                 success: !0,
@@ -736,7 +736,7 @@
                                 has_data: a
                             }, {
                                 flush: !0
-                            }), d.K.set(c.SV, !0), i.Z.userDataCache.deleteCache(), f.Pg()
+                            }), c.K.set(d.SV, !0), i.Z.userDataCache.deleteCache(), f.Pg()
                         }))
                     }, []), null
                 }
@@ -745,8 +745,8 @@
                 "use strict";
                 let n;
                 a(242167), a(970173), a(520712), a(268111), a(941497), a(32026), a(480839), a(744285), a(492257), a(873817), a(411104), a(773603);
-                var c = a(512722),
-                    d = a.n(c),
+                var d = a(512722),
+                    c = a.n(d),
                     i = a(392711),
                     r = a.n(i),
                     o = a(544891),
@@ -790,33 +790,33 @@
                             let a = 0;
                             return (m.isPlatformEmbedded ? function(e, t) {
                                 let a = (0, f.zS)(),
-                                    c = (null == a ? void 0 : a.getNextVideoOutputFrame) != null;
-                                return new Promise((d, i) => {
+                                    d = (null == a ? void 0 : a.getNextVideoOutputFrame) != null;
+                                return new Promise((c, i) => {
                                     let r = e => {
                                         try {
-                                            null != e && t(e) && d(e)
+                                            null != e && t(e) && c(e)
                                         } catch (e) {
                                             i(e)
                                         }
                                     };
-                                    c ? a.getNextVideoOutputFrame(e).then(r, t => {
+                                    d ? a.getNextVideoOutputFrame(e).then(r, t => {
                                         if (n === e) throw t
                                     }) : s.Z.addSink(e, O, r)
                                 }).finally(() => {
-                                    !c && s.Z.removeSink(e, O)
+                                    !d && s.Z.removeSink(e, O)
                                 })
                             } : function(e, t) {
                                 let a = (0, l.aG)(e);
                                 if (null == a) return Promise.resolve(new ImageData(0, 0));
                                 let {
                                     width: n,
-                                    height: c
-                                } = a.getVideoTracks()[0].getSettings(), d = document.createElement("video"), i = document.createElement("canvas");
-                                d.width = i.width = null != n ? n : 512, d.height = i.height = null != c ? c : 288, d.srcObject = a, d.play();
+                                    height: d
+                                } = a.getVideoTracks()[0].getSettings(), c = document.createElement("video"), i = document.createElement("canvas");
+                                c.width = i.width = null != n ? n : 512, c.height = i.height = null != d ? d : 288, c.srcObject = a, c.play();
                                 let r = i.getContext("2d");
                                 return new Promise((e, a) => {
-                                    d.ontimeupdate = () => {
-                                        null == r || r.drawImage(d, 0, 0, i.width, i.height);
+                                    c.ontimeupdate = () => {
+                                        null == r || r.drawImage(c, 0, 0, i.width, i.height);
                                         let n = null == r ? void 0 : r.getImageData(0, 0, i.width, i.height);
                                         try {
                                             null != n && t(n) && e(n)
@@ -825,7 +825,7 @@
                                         }
                                     }
                                 }).finally(() => {
-                                    d.ontimeupdate = null, d.removeAttribute("srcObject"), d.load()
+                                    c.ontimeupdate = null, c.removeAttribute("srcObject"), c.load()
                                 })
                             })(e, e => {
                                 if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) return !0;
@@ -838,25 +838,25 @@
                             let t = 512 / e.width,
                                 a = Math.min(t, 288 / e.height),
                                 n = e.width * a,
-                                c = e.height * a;
-                            T.width = n, T.height = c;
-                            let d = window.document.createElement("canvas"),
-                                i = d.getContext("2d");
-                            d.width = e.width, d.height = e.height;
+                                d = e.height * a;
+                            T.width = n, T.height = d;
+                            let c = window.document.createElement("canvas"),
+                                i = c.getContext("2d");
+                            c.width = e.width, c.height = e.height;
                             let r = new ImageData(e.data, e.width, e.height);
                             return null == i || i.putImageData(r, 0, 0), new Promise(t => {
-                                null == Z || Z.drawImage(d, 0, 0, e.width, e.height, 0, 0, n, c), t()
+                                null == Z || Z.drawImage(c, 0, 0, e.width, e.height, 0, 0, n, d), t()
                             })
                         }(a);
-                        let c = T.toDataURL("image/jpeg");
+                        let d = T.toDataURL("image/jpeg");
                         if (u.Z.dispatch({
                                 type: "STREAM_PREVIEW_FETCH_SUCCESS",
                                 streamKey: t,
-                                previewURL: c
+                                previewURL: d
                             }), m.isPlatformEmbedded) {
                             let e = p.default.getToken();
-                            d()(null != e, "Auth token was null while sending screenshot."), await _.ZP.makeChunkedRequest(I.ANM.STREAM_PREVIEW(t), {
-                                thumbnail: c
+                            c()(null != e, "Auth token was null while sending screenshot."), await _.ZP.makeChunkedRequest(I.ANM.STREAM_PREVIEW(t), {
+                                thumbnail: d
                             }, {
                                 method: "POST",
                                 token: e
@@ -864,7 +864,7 @@
                         } else await o.tn.post({
                             url: I.ANM.STREAM_PREVIEW(t),
                             body: {
-                                thumbnail: c
+                                thumbnail: d
                             },
                             oldFormErrors: !0
                         })
@@ -880,11 +880,11 @@
                             let {
                                 guildId: t,
                                 channelId: a,
-                                userId: c,
-                                streamId: d,
+                                userId: d,
+                                streamId: c,
                                 context: i
                             } = e;
-                            !(null == d || i !== v.Yn.STREAM || c !== p.default.getId() || __OVERLAY__) && (S(), n = d, N(d, t, a, c))
+                            !(null == c || i !== v.Yn.STREAM || d !== p.default.getId() || __OVERLAY__) && (S(), n = c, N(c, t, a, d))
                         }), u.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
                             let {
                                 videoState: t
@@ -898,8 +898,8 @@
                 "use strict";
                 a(411104);
                 var n = a(570140),
-                    c = a(846027),
-                    d = a(872810),
+                    d = a(846027),
+                    c = a(872810),
                     i = a(710845),
                     r = a(252759),
                     o = a(361291),
@@ -974,9 +974,9 @@
                             a = o.Z.getState();
                         switch (e.type) {
                             case r.A.STREAM:
-                                if (null != t && (0, d.tK)(t, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
+                                if (null != t && (0, c.tK)(t, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
                                     let t = e.sourceId.split(":")[1];
-                                    c.Z.setGoLiveSource({
+                                    d.Z.setGoLiveSource({
                                         cameraSettings: {
                                             videoDeviceGuid: t,
                                             audioDeviceGuid: e.audioSourceId
@@ -990,7 +990,7 @@
                                     })
                                 } else {
                                     var n;
-                                    c.Z.setGoLiveSource({
+                                    d.Z.setGoLiveSource({
                                         desktopSettings: {
                                             sourceId: e.sourceId,
                                             sound: null === (n = e.sound) || void 0 === n || n
@@ -1005,7 +1005,7 @@
                                 }
                                 break;
                             case r.A.PAUSE:
-                                null != t && (0, d.tK)(t, !0);
+                                null != t && (0, c.tK)(t, !0);
                                 break;
                             case r.A.STOP:
                                 null != t && (0, b.Z)(t);
@@ -1016,7 +1016,7 @@
                     }
                     _onCapturePaused(e) {
                         let t = f.Z.getCurrentUserActiveStream();
-                        null != t && (0, d.tK)(t, e)
+                        null != t && (0, c.tK)(t, e)
                     }
                     _onCaptureEnded() {
                         switch (this.mode) {
@@ -1037,8 +1037,8 @@
                                 streamType: t,
                                 guildId: a,
                                 channelId: n,
-                                pid: c,
-                                sourceId: d,
+                                pid: d,
+                                sourceId: c,
                                 audioSourceId: r,
                                 sound: o
                             } = e, f = s.default.getId(), b = (0, l.V9)({
@@ -1047,7 +1047,7 @@
                                 channelId: n,
                                 ownerId: f
                             });
-                            null == c != (null == d) ? (null != c && this._onStreamApplication(b, c), null != d && this._onStreamDirectSource(b, d, r, o)) : new i.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(c, ", source-id: ").concat(d, ")"))
+                            null == d != (null == c) ? (null != d && this._onStreamApplication(b, d), null != c && this._onStreamDirectSource(b, c, r, o)) : new i.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(d, ", source-id: ").concat(c, ")"))
                         }), n.Z.subscribe("STREAM_DELETE", e => {
                             let {
                                 streamKey: t
@@ -1088,26 +1088,26 @@
                 "use strict";
                 a(47120);
                 var n = a(213919),
-                    c = a(570140),
-                    d = a(317770),
+                    d = a(570140),
+                    c = a(317770),
                     i = a(358085);
-                class r extends d.Z {
+                class r extends c.Z {
                     _initialize() {
-                        c.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
+                        d.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
                     }
                     _terminate() {
-                        c.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
+                        d.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
                     }
                     constructor(...e) {
-                        var t, a, c;
-                        super(...e), t = this, a = "handleConnectionOpen", c = e => {
+                        var t, a, d;
+                        super(...e), t = this, a = "handleConnectionOpen", d = e => {
                             ((0, i.isWindows)() || (0, i.isMac)()) && n.encryptAndStoreTokens()
                         }, a in t ? Object.defineProperty(t, a, {
-                            value: c,
+                            value: d,
                             enumerable: !0,
                             configurable: !0,
                             writable: !0
-                        }) : t[a] = c
+                        }) : t[a] = d
                     }
                 }
                 t.Z = new r
@@ -1116,18 +1116,18 @@
                 "use strict";
                 a.d(t, {
                     Z: function() {
-                        return c
+                        return d
                     }
                 });
                 var n = a(272423);
 
-                function c(e) {
+                function d(e) {
                     let t = (0, n.kf)(e);
                     if (null != t) return [t.params.guildId, t.params.channelId];
                     let a = (0, n.B3)(e);
                     if (null != a) {
-                        var c, d;
-                        return [null === (c = a.params) || void 0 === c ? void 0 : c.guildId, null === (d = a.params) || void 0 === d ? void 0 : d.channelId]
+                        var d, c;
+                        return [null === (d = a.params) || void 0 === d ? void 0 : d.guildId, null === (c = a.params) || void 0 === c ? void 0 : c.channelId]
                     }
                     return [void 0, void 0]
                 }
@@ -1137,8 +1137,8 @@
                 a(47120);
                 var n = a(735250);
                 a(470079);
-                var c = a(525654),
-                    d = a.n(c),
+                var d = a(525654),
+                    c = a.n(d),
                     i = a(481060),
                     r = a(570140),
                     o = a(468026),
@@ -1154,28 +1154,28 @@
                         r.Z.unsubscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
                     }
                     constructor(...e) {
-                        var t, a, c;
-                        super(...e), t = this, a = "handlePermission", c = e => {
+                        var t, a, d;
+                        super(...e), t = this, a = "handlePermission", d = e => {
                             let {
                                 kind: t,
                                 granted: a
-                            } = e, c = "Firefox" === d().name ? l.BhN.ENABLE_MIC_FIREFOX : l.BhN.ENABLE_MIC_CHROME;
+                            } = e, d = "Firefox" === c().name ? l.BhN.ENABLE_MIC_FIREFOX : l.BhN.ENABLE_MIC_CHROME;
                             if (!a) {
                                 let e = "audio" !== t;
                                 (0, i.openModal)(t => (0, n.jsx)(o.default, {
                                     title: e ? b.Z.Messages.NO_CAMERA_TITLE : b.Z.Messages.NO_MIC_TITLE,
                                     body: e ? b.Z.Messages.NO_CAMERA_BODY : b.Z.Messages.NO_MIC_BODY,
-                                    onConfirm: () => window.open(s.Z.getArticleURL(c), "_blank"),
+                                    onConfirm: () => window.open(s.Z.getArticleURL(d), "_blank"),
                                     confirmText: b.Z.Messages.HELP_DESK,
                                     ...t
                                 }))
                             }
                         }, a in t ? Object.defineProperty(t, a, {
-                            value: c,
+                            value: d,
                             enumerable: !0,
                             configurable: !0,
                             writable: !0
-                        }) : t[a] = c
+                        }) : t[a] = d
                     }
                 }
                 t.Z = new u
@@ -1184,21 +1184,21 @@
                 "use strict";
                 a.d(t, {
                     Z: function() {
-                        return c
+                        return d
                     }
                 });
                 var n = a(69580);
 
-                function c(e) {
-                    var t, a, c, d;
+                function d(e) {
+                    var t, a, d, c;
                     let i = null == e ? void 0 : e.get("client_id"),
                         r = null == e ? void 0 : null === (t = e.get("scope")) || void 0 === t ? void 0 : t.split(" "),
                         o = null == e ? void 0 : e.get("state"),
                         f = null == e ? void 0 : e.get("redirect_uri"),
                         s = null == e ? void 0 : e.get("response_type"),
                         l = null !== (a = null == e ? void 0 : e.get("nonce")) && void 0 !== a ? a : void 0,
-                        b = null !== (c = null == e ? void 0 : e.get("code_challenge")) && void 0 !== c ? c : void 0,
-                        u = null !== (d = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== d ? d : void 0;
+                        b = null !== (d = null == e ? void 0 : e.get("code_challenge")) && void 0 !== d ? d : void 0,
+                        u = null !== (c = null == e ? void 0 : e.get("code_challenge_method")) && void 0 !== c ? c : void 0;
                     return null == i || null == r || null == o || null == f || null == s || ((0, n.openOAuth2Modal)({
                         clientId: i,
                         scopes: r,
@@ -1214,12 +1214,12 @@
             905423: function(e, t, a) {
                 "use strict";
                 var n = a(266067),
-                    c = a(652874),
-                    d = a(981631);
+                    d = a(652874),
+                    c = a(981631);
 
                 function i(e) {
                     let t = (0, n.LX)(null != e ? e : "", {
-                        path: d.Z5c.CHANNEL(":guildId", ":channelId?", ":messageId?")
+                        path: c.Z5c.CHANNEL(":guildId", ":channelId?", ":messageId?")
                     });
                     if (null != t) {
                         let {
@@ -1227,12 +1227,12 @@
                             channelId: a
                         } = t.params;
                         return {
-                            guildId: e === d.ME ? null : e,
+                            guildId: e === c.ME ? null : e,
                             channelId: null != a ? a : null
                         }
                     }
                     let a = (0, n.LX)(null != e ? e : "", {
-                        path: d.Z5c.GUILD_BOOSTING_MARKETING(":guildId")
+                        path: c.Z5c.GUILD_BOOSTING_MARKETING(":guildId")
                     });
                     return null != a ? {
                         guildId: a.params.guildId,
@@ -1242,7 +1242,7 @@
                         channelId: null
                     }
                 }
-                t.Z = (0, c.Z)(e => ({
+                t.Z = (0, d.Z)(e => ({
                     path: null,
                     basePath: "/",
                     guildId: null,
@@ -1276,8 +1276,8 @@
                 "use strict";
                 a(47120), a(411104);
                 var n = a(934951),
-                    c = a(266067),
-                    d = a(38618),
+                    d = a(266067),
+                    c = a(38618),
                     i = a(57132),
                     r = a(215355),
                     o = a(777639),
@@ -1303,10 +1303,10 @@
                         let {
                             pathname: e
                         } = (0, h.s1)().location;
-                        u.Z.getState().resetPath(e), this.unlistenKeyboardChange = u.Z.subscribe(this.handleKeybindRouteChange), d.Z.addChangeListener(this.handleConnectionChange)
+                        u.Z.getState().resetPath(e), this.unlistenKeyboardChange = u.Z.subscribe(this.handleKeybindRouteChange), c.Z.addChangeListener(this.handleConnectionChange)
                     }
                     convertRouteToNavigation(e, t) {
-                        var a, n, d;
+                        var a, n, c;
                         let {
                             pathname: u
                         } = e, h = (0, o.D)(), m = (0, i.cn)(), {
@@ -1332,15 +1332,15 @@
                             return
                         }
                         if (u.startsWith("/channels/")) {
-                            let e = (0, c.LX)(u, {
+                            let e = (0, d.LX)(u, {
                                     path: p.Z5c.CHANNEL(":guildId", ":channelId?", ":messageId?")
                                 }),
-                                t = (0, c.LX)(u, {
+                                t = (0, d.LX)(u, {
                                     path: "".concat(p.Z5c.CHANNEL(":guildId", ":channelId?")).concat(p.Z5c.VOICE_CHAT_CHANNEL_PARTIAL(":voiceGuildId", ":voiceChannelId", ":voiceMessageId?"))
                                 });
                             if (!m) {
                                 let e = h.getRootState();
-                                (null == e ? void 0 : null === (d = e.routes) || void 0 === d ? void 0 : null === (n = d[0]) || void 0 === n ? void 0 : n.name) !== "panels" && (0, s.H)();
+                                (null == e ? void 0 : null === (c = e.routes) || void 0 === c ? void 0 : null === (n = c[0]) || void 0 === n ? void 0 : n.name) !== "panels" && (0, s.H)();
                                 return
                             }
                             if (null != t) {
@@ -1395,7 +1395,7 @@
                             return
                         }
                         if (u.startsWith("/member-verification/")) {
-                            let e = (0, c.LX)(u, {
+                            let e = (0, d.LX)(u, {
                                 path: p.Z5c.GUILD_MEMBER_VERIFICATION(":guildId", ":inviteCode?")
                             });
                             null != e && (0, s.fA)(e.params.guildId, e.params.inviteCode);
@@ -1420,21 +1420,21 @@
                     executeRouteRewrites(e, t) {
                         if (this.routeChangeCount += 1, this.routeChangeCount < 10)
                             for (let a of this.rewrites) {
-                                let c = (0, h.s1)().location.pathname,
-                                    d = a(e, t);
-                                if (null != d) return (0, n.n_)({
+                                let d = (0, h.s1)().location.pathname,
+                                    c = a(e, t);
+                                if (null != c) return (0, n.n_)({
                                     message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
                                     data: {
-                                        replacePath: d.path,
-                                        previousPath: c
+                                        replacePath: c.path,
+                                        previousPath: d
                                     }
-                                }), (0, h.dL)(d.path, d.state), !0
+                                }), (0, h.dL)(c.path, c.state), !0
                             } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
                         return !1
                     }
                     cleanup() {
                         var e, t;
-                        null === (e = this.unlistenHistory) || void 0 === e || e.call(this), this.unlistenHistory = void 0, null === (t = this.unlistenKeyboardChange) || void 0 === t || t.call(this), this.unlistenKeyboardChange = void 0, d.Z.removeChangeListener(this.handleConnectionChange)
+                        null === (e = this.unlistenHistory) || void 0 === e || e.call(this), this.unlistenHistory = void 0, null === (t = this.unlistenKeyboardChange) || void 0 === t || t.call(this), this.unlistenKeyboardChange = void 0, c.Z.removeChangeListener(this.handleConnectionChange)
                     }
                     addRouteChangeListener(e) {
                         return null != this.unlistenHistory && e((0, h.s1)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
@@ -1457,7 +1457,7 @@
                     }
                     constructor() {
                         m(this, "unlistenHistory", void 0), m(this, "unlistenKeyboardChange", void 0), m(this, "rewrites", new Set), m(this, "listeners", new Set), m(this, "routeChangeCount", 0), m(this, "timer", -1), m(this, "connected", !1), m(this, "handleConnectionChange", () => {
-                            let e = d.Z.isConnected(),
+                            let e = c.Z.isConnected(),
                                 t = e && !this.connected;
                             this.connected = e, t && (this.routeChangeCount = 0, this.executeRouteRewrites((0, h.s1)().location, "REPLACE"))
                         }), m(this, "handleRouteChange", (e, t) => {
@@ -1490,8 +1490,8 @@
                     }
                 });
                 var n = a(735250),
-                    c = a(470079),
-                    d = a(470716),
+                    d = a(470079),
+                    c = a(470716),
                     i = a(266067),
                     r = a(304445),
                     o = a(703656);
@@ -1500,7 +1500,7 @@
                     let {
                         children: t
                     } = e;
-                    return c.useEffect(() => (r.Z.initialize(), () => r.Z.cleanup()), []), (0, n.jsx)(d.B6, {
+                    return d.useEffect(() => (r.Z.initialize(), () => r.Z.cleanup()), []), (0, n.jsx)(c.B6, {
                         children: (0, n.jsx)(i.F0, {
                             history: (0, o.s1)(),
                             children: t
@@ -1512,13 +1512,13 @@
                 "use strict";
                 a.d(t, {
                     A: function() {
-                        return c
+                        return d
                     },
                     a: function() {
                         return r
                     }
                 });
-                var n, c, d = a(75834);
+                var n, d, c = a(75834);
 
                 function i(e, t, a) {
                     return t in e ? Object.defineProperty(e, t, {
@@ -1527,10 +1527,10 @@
                         configurable: !0,
                         writable: !0
                     }) : e[t] = a, e
-                }(n = c || (c = {})).STREAM = "stream", n.PAUSE = "pause", n.STOP = "stop";
+                }(n = d || (d = {})).STREAM = "stream", n.PAUSE = "pause", n.STOP = "stop";
                 class r {
                     onStreamBegin(e, t) {
-                        let a = (0, d.e)(e, t);
+                        let a = (0, c.e)(e, t);
                         null == a || null == a.windowHandle ? this.callback({
                             type: "stop"
                         }) : this._stream(a)
@@ -1553,7 +1553,7 @@
                         return (null === (t = this.application) || void 0 === t ? void 0 : t.windowHandle) != null ? this.onCaptureEnd(e, this.application.windowHandle) : this._stop()
                     }
                     _update(e) {
-                        let t = (0, d.s)(e, this.application);
+                        let t = (0, c.s)(e, this.application);
                         if (null != t) return null == t.windowHandle ? this._pause() : this._stream(t);
                         this._stop()
                     }
@@ -1587,7 +1587,7 @@
                 "use strict";
                 a.d(t, {
                     e: function() {
-                        return c
+                        return d
                     },
                     s: function() {
                         return i
@@ -1595,34 +1595,34 @@
                 }), a(47120);
                 var n = a(823379);
 
-                function c(e, t) {
+                function d(e, t) {
                     let a = e.find(e => e.processId === t);
                     return null == a ? null : i(e, a)
                 }
-                let d = "356869127241072640";
+                let c = "356869127241072640";
 
                 function i(e, t) {
                     var a;
                     if (null == t) return null;
-                    if (t.applicationId === d) return function(e, t) {
+                    if (t.applicationId === c) return function(e, t) {
                         let a = t.processPath.length > 1 ? t.processPath[t.processPath.length - 2] : 0,
-                            n = e.filter(e => e.applicationId === d && e.processPath.includes(a)),
-                            c = n.find(e => "league of legends.exe" === e.executableName);
-                        return void 0 !== c ? c : n.length > 0 ? n[0] : null
+                            n = e.filter(e => e.applicationId === c && e.processPath.includes(a)),
+                            d = n.find(e => "league of legends.exe" === e.executableName);
+                        return void 0 !== d ? d : n.length > 0 ? n[0] : null
                     }(e, t);
-                    let c = new Map(e.map(e => [e.processId, e])),
-                        i = t.processPath.map(e => c.get(e)).find(e => null != e);
+                    let d = new Map(e.map(e => [e.processId, e])),
+                        i = t.processPath.map(e => d.get(e)).find(e => null != e);
                     if (null == i) return null;
                     let o = e.map(e => {
-                        let t = e.processPath.findIndex(e => c.has(e));
+                        let t = e.processPath.findIndex(e => d.has(e));
                         return -1 === t ? null : {
                             application: e,
                             rootedPath: e.processPath.slice(t)
                         }
                     }).filter(n.lm).filter(e => e.rootedPath[0] === i.processId);
                     o.sort((e, t) => {
-                        let a = e.rootedPath.map(e => c.get(e)).filter(e => null != e && null != e.windowHandle),
-                            n = r(t.rootedPath.map(e => c.get(e)).filter(e => null != e && null != e.windowHandle), a);
+                        let a = e.rootedPath.map(e => d.get(e)).filter(e => null != e && null != e.windowHandle),
+                            n = r(t.rootedPath.map(e => d.get(e)).filter(e => null != e && null != e.windowHandle), a);
                         return 0 !== n ? n : r(t.rootedPath, e.rootedPath)
                     });
                     let f = null !== (a = o.find(e => null != e.application.windowHandle)) && void 0 !== a ? a : o[0];
@@ -1637,9 +1637,9 @@
                 "use strict";
                 a(47120);
                 var n = a(348327),
-                    c = a.n(n),
-                    d = a(392711),
-                    i = a.n(d),
+                    d = a.n(n),
+                    c = a(392711),
+                    i = a.n(c),
                     r = a(570140),
                     o = a(846027),
                     f = a(287734),
@@ -1672,7 +1672,7 @@
                         if (!!this.isSupported) r.Z.unsubscribe("AUDIO_SET_MODE", this.handleViewUpdate), r.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), r.Z.unsubscribe("START_SESSION", this.handleViewUpdate), r.Z.unsubscribe("CONNECTION_OPEN", this.handleViewUpdate), r.Z.unsubscribe("CONNECTION_CLOSED", this.handleViewUpdate), r.Z.unsubscribe("CALL_CREATE", this.handleViewUpdate), r.Z.unsubscribe("CALL_UPDATE", this.handleViewUpdate), r.Z.unsubscribe("CALL_DELETE", this.handleViewUpdate), r.Z.unsubscribe("CHANNEL_DELETE", this.handleViewUpdate), r.Z.unsubscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), r.Z.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), r.Z.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), r.Z.unsubscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), r.Z.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate)
                     }
                     setThumbarButtons(e) {
-                        !c()(this.prevButtons, e) && (this.prevButtons = e, g.ZP.setThumbarButtons(e))
+                        !d()(this.prevButtons, e) && (this.prevButtons = e, g.ZP.setThumbarButtons(e))
                     }
                     constructor(...e) {
                         super(...e), O(this, "callbackActions", {
@@ -1697,21 +1697,21 @@
                             let t = m.Z.isSelfMute(),
                                 a = m.Z.isSelfDeaf(),
                                 n = m.Z.isVideoEnabled(),
-                                c = m.Z.isVideoAvailable(),
-                                d = p.Z.getChannel(e),
-                                i = null == d || (0, b.y)(d),
+                                d = m.Z.isVideoAvailable(),
+                                c = p.Z.getChannel(e),
+                                i = null == c || (0, b.y)(c),
                                 {
                                     reachedLimit: r,
                                     limit: o
-                                } = null != d ? (0, l.t)(d) : {
+                                } = null != c ? (0, l.t)(c) : {
                                     reachedLimit: void 0,
                                     limit: void 0
                                 },
                                 f = (0, u.X)({
                                     enabled: n,
                                     join: !1,
-                                    channel: d,
-                                    cameraUnavailable: !c,
+                                    channel: c,
+                                    cameraUnavailable: !d,
                                     hasPermission: i,
                                     channelLimit: o,
                                     channelLimitReached: r
@@ -1720,7 +1720,7 @@
                                 name: g.tS.VIDEO,
                                 active: !n,
                                 tooltip: f,
-                                flags: c ? [] : ["disabled"]
+                                flags: d ? [] : ["disabled"]
                             }, {
                                 name: g.tS.MUTE,
                                 active: t,
@@ -1741,7 +1741,7 @@
             },
             801814: function(e, t, a) {
                 "use strict";
-                var n, c, d, i;
+                var n, d, c, i;
 
                 function r(e, t, a) {
                     return t in e ? Object.defineProperty(e, t, {
@@ -1773,7 +1773,7 @@
                     Z: function() {
                         return s
                     }
-                }), (d = n || (n = {})).CHECKING_FOR_UPDATES = "checking-for-updates", d.INSTALLED_MODULE = "installed-module", d.UPDATE_CHECK_FINISHED = "update-check-finished", d.DOWNLOADING_MODULE = "downloading-module", d.DOWNLOADING_MODULE_PROGRESS = "downloading-module-progress", d.DOWNLOADING_MODULES_FINISHED = "downloading-modules-finished", d.UPDATE_MANUALLY = "update-manually", d.DOWNLOADED_MODULE = "downloaded-module", d.INSTALLING_MODULES_FINISHED = "installing-modules-finished", d.INSTALLING_MODULE = "installing-module", d.INSTALLING_MODULE_PROGRESS = "installing-module-progress", d.NO_PENDING_UPDATES = "no-pending-updates", (i = c || (c = {})).CLOUD_SYNC = "discord_cloudsync", i.DESKTOP_CORE = "discord_desktop_core", i.DISPATCH = "discord_dispatch", i.ERLPACK = "discord_erlpack", i.GAME_UTILS = "discord_game_utils", i.HOOK = "discord_hook", i.KRISP = "discord_krisp", i.MEDIA = "discord_media", i.MODULES = "discord_modules", i.OVERLAY2 = "discord_overlay2", i.RPC = "discord_rpc", i.SPELLCHECK = "discord_spellcheck", i.UPDATER_BOOTSTRAP = "discord_updater_bootstrap", i.UTILS = "discord_utils", i.VIGILANTE = "discord_vigilante", i.VOICE = "discord_voice", i.ZSTD = "discord_zstd";
+                }), (c = n || (n = {})).CHECKING_FOR_UPDATES = "checking-for-updates", c.INSTALLED_MODULE = "installed-module", c.UPDATE_CHECK_FINISHED = "update-check-finished", c.DOWNLOADING_MODULE = "downloading-module", c.DOWNLOADING_MODULE_PROGRESS = "downloading-module-progress", c.DOWNLOADING_MODULES_FINISHED = "downloading-modules-finished", c.UPDATE_MANUALLY = "update-manually", c.DOWNLOADED_MODULE = "downloaded-module", c.INSTALLING_MODULES_FINISHED = "installing-modules-finished", c.INSTALLING_MODULE = "installing-module", c.INSTALLING_MODULE_PROGRESS = "installing-module-progress", c.NO_PENDING_UPDATES = "no-pending-updates", (i = d || (d = {})).CLOUD_SYNC = "discord_cloudsync", i.DESKTOP_CORE = "discord_desktop_core", i.DISPATCH = "discord_dispatch", i.ERLPACK = "discord_erlpack", i.GAME_UTILS = "discord_game_utils", i.HOOK = "discord_hook", i.KRISP = "discord_krisp", i.MEDIA = "discord_media", i.MODULES = "discord_modules", i.OVERLAY2 = "discord_overlay2", i.RPC = "discord_rpc", i.SPELLCHECK = "discord_spellcheck", i.UPDATER_BOOTSTRAP = "discord_updater_bootstrap", i.UTILS = "discord_utils", i.VIGILANTE = "discord_vigilante", i.VOICE = "discord_voice", i.ZSTD = "discord_zstd";
                 class s {
                     handleDownloadingModule(e) {
                         if (!f(e.name)) {
@@ -1809,10 +1809,10 @@
                         }
                         let a = t.foreground ? "foreground" : "background",
                             n = "".concat(a, "_download_ms_").concat(e.name),
-                            c = "".concat(a, "_bytes_").concat(e.name),
-                            d = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
+                            d = "".concat(a, "_bytes_").concat(e.name),
+                            c = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
                             i = !1 === e.receivedBytes ? 0 : e.receivedBytes;
-                        t.foreground ? (this._report.foreground_download_ms_total += d, this._report.foreground_bytes_total += i) : (this._report.background_download_ms_total += d, this._report.background_bytes_total += i), this.incrementReportField(n, d), this.incrementReportField(c, i), delete this._downloadingModules[e.name]
+                        t.foreground ? (this._report.foreground_download_ms_total += c, this._report.foreground_bytes_total += i) : (this._report.background_download_ms_total += c, this._report.background_bytes_total += i), this.incrementReportField(n, c), this.incrementReportField(d, i), delete this._downloadingModules[e.name]
                     }
                     handleInstallingModule(e) {
                         if (!f(e.name)) {
@@ -1834,10 +1834,10 @@
                         if (null == t) return;
                         let a = t.foreground ? "foreground" : "background",
                             n = "".concat(a, "_install_ms_").concat(e.name),
-                            c = "min_version_".concat(e.name),
-                            d = "max_version_".concat(e.name),
+                            d = "min_version_".concat(e.name),
+                            c = "max_version_".concat(e.name),
                             i = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6));
-                        t.foreground ? this._report.foreground_install_ms_total += i : this._report.background_install_ms_total += i, this.incrementReportField(n, i), this.setReportFieldMinimum(c, t.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(d, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
+                        t.foreground ? this._report.foreground_install_ms_total += i : this._report.background_install_ms_total += i, this.incrementReportField(n, i), this.setReportFieldMinimum(d, t.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(c, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
                     }
                     trackEvent(e) {
                         switch (e.type) {
@@ -1872,14 +1872,14 @@
                 "use strict";
                 a(47120);
                 var n = a(317770),
-                    c = a(626135),
-                    d = a(358085),
+                    d = a(626135),
+                    c = a(358085),
                     i = a(998502),
                     r = a(801814),
                     o = a(981631);
                 class f extends n.Z {
                     _initialize() {
-                        if (!!d.isPlatformEmbedded) i.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), i.ZP.on("MODULE_INSTALLED", (e, t, a) => this.processModuleEvents()), i.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
+                        if (!!c.isPlatformEmbedded) i.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), i.ZP.on("MODULE_INSTALLED", (e, t, a) => this.processModuleEvents()), i.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
                             this._handleHistoryResponse(t)
                         }), this.processModuleEvents()
                     }
@@ -1891,8 +1891,8 @@
                         if (null == e) return;
                         let t = 0 === Math.floor(1e3 * Math.random());
                         e.forEach(e => {
-                            "analytics" === e.type ? e.name === o.rMx.UPDATER_METRICS_DOWNLOAD || e.name === o.rMx.UPDATER_METRICS_INSTALL || e.name === o.rMx.UPDATER_METRICS_COMBINED || e.name === o.rMx.UPDATER_METRICS_TRANSITION_STATUS ? t && c.default.track(e.name, e.data) : console.warn("Unknown updater analytic event ".concat(e.name)) : this._tracker.trackEvent(e)
-                        }), this._tracker.submissionReady() && (c.default.track(o.rMx.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset())
+                            "analytics" === e.type ? e.name === o.rMx.UPDATER_METRICS_DOWNLOAD || e.name === o.rMx.UPDATER_METRICS_INSTALL || e.name === o.rMx.UPDATER_METRICS_COMBINED || e.name === o.rMx.UPDATER_METRICS_TRANSITION_STATUS ? t && d.default.track(e.name, e.data) : console.warn("Unknown updater analytic event ".concat(e.name)) : this._tracker.trackEvent(e)
+                        }), this._tracker.submissionReady() && (d.default.track(o.rMx.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset())
                     }
                     constructor(...e) {
                         var t, a, n;
@@ -1917,14 +1917,14 @@
                     }
                 });
                 var n = a(442837),
-                    c = a(430824),
-                    d = a(938475),
+                    d = a(430824),
+                    c = a(938475),
                     i = a(981631);
 
                 function r(e) {
-                    return (0, n.cj)([d.ZP, c.Z], () => {
-                        let t = d.ZP.countVoiceStatesForChannel(e.id),
-                            a = c.Z.getGuild(e.getGuildId());
+                    return (0, n.cj)([c.ZP, d.Z], () => {
+                        let t = c.ZP.countVoiceStatesForChannel(e.id),
+                            a = d.Z.getGuild(e.getGuildId());
                         return null == a ? {
                             reachedLimit: !1,
                             limit: -1
@@ -1939,8 +1939,8 @@
                 }
 
                 function o(e) {
-                    let t = d.ZP.countVoiceStatesForChannel(e.id),
-                        a = c.Z.getGuild(e.getGuildId());
+                    let t = c.ZP.countVoiceStatesForChannel(e.id),
+                        a = d.Z.getGuild(e.getGuildId());
                     return null == a ? {
                         reachedLimit: !1,
                         limit: -1
@@ -1962,12 +1962,12 @@
                 });
                 var n = a(735250);
                 a(470079);
-                var c = a(481060),
-                    d = a(695346),
+                var d = a(481060),
+                    c = a(695346),
                     i = a(981631);
 
                 function r(e, t) {
-                    d.qF.getSetting() ? (0, c.openModalLazy)(async () => {
+                    c.qF.getSetting() ? (0, d.openModalLazy)(async () => {
                         let {
                             default: t
                         } = await Promise.all([a.e("99387"), a.e("5528"), a.e("91018")]).then(a.bind(a, 601572));
@@ -1978,7 +1978,7 @@
                         })
                     }, {
                         modalKey: "camera-preview",
-                        contextKey: t === i.IlC.POPOUT ? c.POPOUT_MODAL_CONTEXT : c.DEFAULT_MODAL_CONTEXT
+                        contextKey: t === i.IlC.POPOUT ? d.POPOUT_MODAL_CONTEXT : d.DEFAULT_MODAL_CONTEXT
                     }) : null == e || e()
                 }
             },
@@ -1999,8 +1999,8 @@
                     }
                 });
                 var n = a(525654),
-                    c = a.n(n),
-                    d = a(271579),
+                    d = a.n(n),
+                    c = a(271579),
                     i = a(314897),
                     r = a(981631);
                 let o = "linux";
@@ -2013,7 +2013,7 @@
 
                 function s() {
                     var e;
-                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null === (e = c().os) || void 0 === e ? void 0 : e.family;
+                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null === (e = d().os) || void 0 === e ? void 0 : e.family;
                     return null == t ? "win" : -1 !== t.indexOf("Ubuntu") || -1 !== t.indexOf("Debian") || -1 !== t.indexOf("Fedora") || -1 !== t.indexOf("Red Hat") || -1 !== t.indexOf("SuSE") || -1 !== t.indexOf("Linux") ? o : -1 !== t.indexOf("OS X") ? "osx" : "win"
                 }
 
@@ -2034,17 +2034,17 @@
                     let n = null != a ? a.toString() : null;
                     switch (t) {
                         case "iOS":
-                            return (0, d.ZP)(null != n ? n : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
+                            return (0, c.ZP)(null != n ? n : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
                                 utmSource: e,
                                 fingerprint: i.default.getFingerprint(),
-                                attemptId: (0, d.WS)()
+                                attemptId: (0, c.WS)()
                             });
                         case "Android":
-                            return (0, d.ZP)(null != n ? n : "https://play.google.com/store/apps/details", {
+                            return (0, c.ZP)(null != n ? n : "https://play.google.com/store/apps/details", {
                                 utmSource: e,
                                 id: "com.discord",
                                 fingerprint: i.default.getFingerprint(),
-                                attemptId: (0, d.WS)()
+                                attemptId: (0, c.WS)()
                             });
                         default:
                             return null != n ? n : "https://www.discord.com"
@@ -2054,17 +2054,17 @@
             240849: function(e, t, a) {
                 "use strict";
                 var n = a(703656),
-                    c = a(556296),
-                    d = a(358085),
+                    d = a(556296),
+                    c = a(358085),
                     i = a(998502),
                     r = a(981631);
 
                 function o(e, t) {
-                    return !(e === r.MAM.BROWSER && c.Z.hasKeybind(r.MoX.MOUSE_BUTTON, t)) && !0
+                    return !(e === r.MAM.BROWSER && d.Z.hasKeybind(r.MoX.MOUSE_BUTTON, t)) && !0
                 }
                 t.Z = new class e {
                     initialize() {
-                        (0, d.isDesktop)() && (i.ZP.on("NAVIGATE_BACK", (e, t) => {
+                        (0, c.isDesktop)() && (i.ZP.on("NAVIGATE_BACK", (e, t) => {
                             o(t, r.qXD.Back) && (0, n.op)()
                         }), i.ZP.on("NAVIGATE_FORWARD", (e, t) => {
                             o(t, r.qXD.Forward) && (0, n.eH)()
@@ -2080,12 +2080,12 @@
                     }
                 }), a(315314), a(610138), a(216116), a(78328), a(815648), a(47120);
                 var n = a(593473),
-                    c = a(591759);
-                let d = e => {
+                    d = a(591759);
+                let c = e => {
                         if (null == e || "" === e) return null;
                         try {
                             let t = new URL(e);
-                            return c.Z.isDiscordHostname(t.hostname) || window.location.host === t.host ? t : null
+                            return d.Z.isDiscordHostname(t.hostname) || window.location.host === t.host ? t : null
                         } catch (e) {
                             return null
                         }
@@ -2093,8 +2093,8 @@
                     i = e => {
                         let t = (0, n.parse)(e);
                         return {
-                            desktop: d(t.desktop_link),
-                            mobile: d(t.mobile_link)
+                            desktop: c(t.desktop_link),
+                            mobile: c(t.mobile_link)
                         }
                     }
             },
@@ -2110,22 +2110,22 @@
                     }
                 }), a(653041), a(47120);
                 var n = a(512722),
-                    c = a.n(n),
-                    d = a(90757),
-                    i = a.n(d),
+                    d = a.n(n),
+                    c = a(90757),
+                    i = a.n(c),
                     r = a(65154);
 
                 function o(e, t, a) {
                     let n = window.DiscordNative;
-                    c()(null != n, "Can't get desktop sources outside of native app"), t = null != t ? t : [r.vA.WINDOW, r.vA.SCREEN], a = null != a ? a : {
+                    d()(null != n, "Can't get desktop sources outside of native app"), t = null != t ? t : [r.vA.WINDOW, r.vA.SCREEN], a = null != a ? a : {
                         width: 150,
                         height: 150
                     };
-                    let d = [];
-                    return t.includes(r.vA.SCREEN) && e.supports(r.AN.SCREEN_PREVIEWS) && (d.push(e.getScreenPreviews(a.width, a.height)), t = t.filter(e => e !== r.vA.SCREEN)), t.includes(r.vA.WINDOW) && e.supports(r.AN.WINDOW_PREVIEWS) && (d.push(e.getWindowPreviews(a.width, a.height)), t = t.filter(e => e !== r.vA.WINDOW)), 0 !== t.length && d.push(n.desktopCapture.getDesktopCaptureSources({
+                    let c = [];
+                    return t.includes(r.vA.SCREEN) && e.supports(r.AN.SCREEN_PREVIEWS) && (c.push(e.getScreenPreviews(a.width, a.height)), t = t.filter(e => e !== r.vA.SCREEN)), t.includes(r.vA.WINDOW) && e.supports(r.AN.WINDOW_PREVIEWS) && (c.push(e.getWindowPreviews(a.width, a.height)), t = t.filter(e => e !== r.vA.WINDOW)), 0 !== t.length && c.push(n.desktopCapture.getDesktopCaptureSources({
                         types: t,
                         thumbnailSize: a
-                    })), Promise.all(d).then(e => i()(e))
+                    })), Promise.all(c).then(e => i()(e))
                 }
             },
             611600: function(e) {
@@ -2140,27 +2140,27 @@
         t = {};
 
     function a(n) {
-        var c = t[n];
-        if (void 0 !== c) return c.exports;
-        var d = t[n] = {
+        var d = t[n];
+        if (void 0 !== d) return d.exports;
+        var c = t[n] = {
             id: n,
             loaded: !1,
             exports: {}
         };
-        return e[n].call(d.exports, d, d.exports, a), d.loaded = !0, d.exports
+        return e[n].call(c.exports, c, c.exports, a), c.loaded = !0, c.exports
     }
     a.m = e, a.c = t, (() => {
         var e = "function" == typeof Symbol ? Symbol("webpack queues") : "__webpack_queues__",
             t = "function" == typeof Symbol ? Symbol("webpack exports") : "__webpack_exports__",
             n = "function" == typeof Symbol ? Symbol("webpack error") : "__webpack_error__",
-            c = function(e) {
+            d = function(e) {
                 e && e.d < 1 && (e.d = 1, e.forEach(function(e) {
                     e.r--
                 }), e.forEach(function(e) {
                     e.r-- ? e.r++ : e()
                 }))
             };
-        a.a = function(a, d, i) {
+        a.a = function(a, c, i) {
             i && ((r = []).d = -1);
             var r, o, f, s, l = new Set,
                 b = a.exports,
@@ -2169,46 +2169,46 @@
                 });
             u[t] = b, u[e] = function(e) {
                 r && e(r), l.forEach(e), u.catch(function() {})
-            }, a.exports = u, d(function(a) {
+            }, a.exports = u, c(function(a) {
                 o = a.map(function(a) {
                     if (null !== a && "object" == typeof a) {
                         if (a[e]) return a;
                         if (a.then) {
-                            var d = [];
-                            d.d = 0, a.then(function(e) {
-                                i[t] = e, c(d)
+                            var c = [];
+                            c.d = 0, a.then(function(e) {
+                                i[t] = e, d(c)
                             }, function(e) {
-                                i[n] = e, c(d)
+                                i[n] = e, d(c)
                             });
                             var i = {};
                             return i[e] = function(e) {
-                                e(d)
+                                e(c)
                             }, i
                         }
                     }
                     var r = {};
                     return r[e] = function() {}, r[t] = a, r
                 });
-                var d, i = function() {
+                var c, i = function() {
                         return o.map(function(e) {
                             if (e[n]) throw e[n];
                             return e[t]
                         })
                     },
                     f = new Promise(function(t) {
-                        (d = function() {
+                        (c = function() {
                             t(i)
                         }).r = 0;
                         var a = function(e) {
-                            e === r || l.has(e) || (l.add(e), e && !e.d && (d.r++, e.push(d)))
+                            e === r || l.has(e) || (l.add(e), e && !e.d && (c.r++, e.push(c)))
                         };
                         o.map(function(t) {
                             t[e](a)
                         })
                     });
-                return d.r ? f : i()
+                return c.r ? f : i()
             }, function(e) {
-                e ? s(u[n] = e) : f(b), c(r)
+                e ? s(u[n] = e) : f(b), d(r)
             }), r && r.d < 0 && (r.d = 0)
         }
     })(), a.n = function(e) {
@@ -2226,13 +2226,13 @@
         } : function(e) {
             return e.__proto__
         };
-        a.t = function(n, c) {
-            if (1 & c && (n = this(n)), 8 & c || "object" == typeof n && n && (4 & c && n.__esModule || 16 & c && "function" == typeof n.then)) return n;
-            var d = Object.create(null);
-            a.r(d);
+        a.t = function(n, d) {
+            if (1 & d && (n = this(n)), 8 & d || "object" == typeof n && n && (4 & d && n.__esModule || 16 & d && "function" == typeof n.then)) return n;
+            var c = Object.create(null);
+            a.r(c);
             var i = {};
             e = e || [null, t({}), t([]), t(t)];
-            for (var r = 2 & c && n;
+            for (var r = 2 & d && n;
                 "object" == typeof r && !~e.indexOf(r); r = t(r)) Object.getOwnPropertyNames(r).forEach(function(e) {
                 i[e] = function() {
                     return n[e]
@@ -2240,7 +2240,7 @@
             });
             return i.default = function() {
                 return n
-            }, a.d(d, i), d
+            }, a.d(c, i), c
         }
     })(), a.d = function(e, t) {
         for (var n in t) a.o(t, n) && !a.o(e, n) && Object.defineProperty(e, n, {
@@ -2254,12 +2254,12 @@
     }, a.k = function(e) {
         return "" + e + ".css"
     }, a.u = function(e) {
-        return "52030" === e ? "" + e + ".ca1c22ec7a94357d1d1e.js" : "49368" === e ? "" + e + ".d227d0675415e3ad4b59.js" : "11250" === e ? "" + e + ".aaa0bfc8652b5a8bcb83.js" : "96427" === e ? "" + e + ".cba9412be32074294065.js" : "29549" === e ? "" + e + ".5cfb3167683d1813a189.js" : "31605" === e ? "" + e + ".0b529051c2837df87c1d.js" : "65392" === e ? "" + e + ".69149007ab714ef5c48a.js" : "77298" === e ? "" + e + ".add29e679c343fc5f07a.js" : "23357" === e ? "" + e + ".c115422bb3b96b3eb973.js" : "12013" === e ? "" + e + ".0acbd590e399c02870d2.js" : "43906" === e ? "" + e + ".60f9c0951f193deb85cb.js" : "95900" === e ? "" + e + ".8ebf002efe0369269518.js" : "95854" === e ? "" + e + ".6efb7ea4c8159ecf6b30.js" : "15972" === e ? "" + e + ".db967ed1b932be348416.js" : "6416" === e ? "6416.ea338e771d33aa6f29f9.js" : "32776" === e ? "" + e + ".9f7cbf28fdf182da088e.js" : "25788" === e ? "" + e + ".fed8fe718d7133d497a9.js" : "8016" === e ? "8016.54f933a339aa9c535c49.js" : "68136" === e ? "" + e + ".c94893768700cbc94d48.js" : "46524" === e ? "" + e + ".a26f9eff7082ce96603b.js" : "22646" === e ? "" + e + ".6adff5dc6f60ec53c43b.js" : "44517" === e ? "" + e + ".e7b302e99aa76e046d40.js" : "65371" === e ? "" + e + ".71d5493d0e645ec60333.js" : "75492" === e ? "" + e + ".8a460639b246ed09d8ac.js" : "84956" === e ? "" + e + ".bd6129a034378fffd9e4.js" : "17764" === e ? "" + e + ".0630e8fb112a36726258.js" : "93669" === e ? "" + e + ".afe7bb7829a10436b564.js" : "76990" === e ? "" + e + ".fc897ae4d1e6aba57298.js" : "5349" === e ? "5349.fbaad66bb92f00bb8c50.js" : "" + ({
+        return "52030" === e ? "" + e + ".ca1c22ec7a94357d1d1e.js" : "49368" === e ? "" + e + ".d227d0675415e3ad4b59.js" : "11250" === e ? "" + e + ".aaa0bfc8652b5a8bcb83.js" : "96427" === e ? "" + e + ".cba9412be32074294065.js" : "29549" === e ? "" + e + ".5cfb3167683d1813a189.js" : "31605" === e ? "" + e + ".0b529051c2837df87c1d.js" : "65392" === e ? "" + e + ".69149007ab714ef5c48a.js" : "77298" === e ? "" + e + ".add29e679c343fc5f07a.js" : "23357" === e ? "" + e + ".c115422bb3b96b3eb973.js" : "12013" === e ? "" + e + ".0acbd590e399c02870d2.js" : "43906" === e ? "" + e + ".60f9c0951f193deb85cb.js" : "95900" === e ? "" + e + ".3b90e8e776d42fe1bf5c.js" : "95854" === e ? "" + e + ".6efb7ea4c8159ecf6b30.js" : "15972" === e ? "" + e + ".db967ed1b932be348416.js" : "6416" === e ? "6416.ea338e771d33aa6f29f9.js" : "32776" === e ? "" + e + ".9f7cbf28fdf182da088e.js" : "25788" === e ? "" + e + ".fed8fe718d7133d497a9.js" : "8016" === e ? "8016.54f933a339aa9c535c49.js" : "68136" === e ? "" + e + ".c94893768700cbc94d48.js" : "46524" === e ? "" + e + ".a26f9eff7082ce96603b.js" : "22646" === e ? "" + e + ".6adff5dc6f60ec53c43b.js" : "44517" === e ? "" + e + ".e7b302e99aa76e046d40.js" : "65371" === e ? "" + e + ".71d5493d0e645ec60333.js" : "75492" === e ? "" + e + ".8a460639b246ed09d8ac.js" : "84956" === e ? "" + e + ".bd6129a034378fffd9e4.js" : "17764" === e ? "" + e + ".0630e8fb112a36726258.js" : "93669" === e ? "" + e + ".afe7bb7829a10436b564.js" : "76990" === e ? "" + e + ".fc897ae4d1e6aba57298.js" : "5349" === e ? "5349.fbaad66bb92f00bb8c50.js" : "" + ({
             10377: "12746c5d4488c32bb0b8",
             10508: "5c68c910bc402e0cc496",
             10667: "d3fbb59b4bc9027c1bba",
             10778: "c8582f00afa38130035c",
-            11047: "722481fa550c35cdb744",
+            11047: "2d4c75e54bbf1fcb9486",
             11166: "b6d1adfe693cff93000b",
             11193: "5ea36115f3d8d06199ba",
             11256: "e78142fb2766c6a9fcfa",
@@ -2272,6 +2272,7 @@
             12241: "25d4c38dc0731ec87257",
             12435: "bf3faad0f6b52f1d96f0",
             12611: "bbcd6c4b8f276ab0864b",
+            12736: "4a5c0a7f33aeb30b6a83",
             12817: "f9e3a32ba0f19aaf9f9c",
             12831: "e75288b88b8bc29ac706",
             12891: "527fb02e9e3354b15a49",
@@ -2305,7 +2306,7 @@
             16609: "72b8abfa8fdf74e584ec",
             1716: "79792f8fccf02caff5f8",
             17699: "634d6173a9363aec6859",
-            17712: "f23a631e68efdccf1062",
+            17712: "88cda1a84696316457cd",
             17945: "b8b05f0d976cc25b0bb6",
             18101: "aea7bd182d9d79149313",
             1812: "73544fce55644fe820f0",
@@ -2322,7 +2323,6 @@
             1906: "5143f0354ee2356c5a7d",
             19213: "a7a05c8b9c69116e0ba5",
             19452: "413b5acfb4192fd175e2",
-            19464: "84668e5eef5a8990362a",
             19503: "958e558c1af8f296058a",
             19538: "b37a2178fb76fc158e3d",
             19701: "cd06e23ce47e04db7df4",
@@ -2331,7 +2331,7 @@
             19945: "276f454eab5807bcd056",
             20196: "ce4228a4321332af03d5",
             20212: "9ccfbc537ce1f73bd91c",
-            2026: "26ff5c3bffb024e8376c",
+            2026: "5f148f7ae86da51b9efa",
             20268: "c0704abdca4d2cbeb4b9",
             20294: "bdcf3472e781dfb0c941",
             20353: "29fd2ed92f6cc58c7196",
@@ -2363,7 +2363,7 @@
             22602: "81d728492798a71b74bc",
             22732: "d54ca5cf2fd9707e6ffa",
             22862: "f6d341f2489226993e07",
-            22872: "06dfe40e463658a69583",
+            22872: "05e85067892f9d9eeb59",
             22942: "e1877948687676fa0534",
             23401: "eb14bae17a9d4a2ec444",
             2356: "285cbb4bf8ac178b43d9",
@@ -2427,7 +2427,7 @@
             31085: "76408177384772aeb890",
             31093: "35ed0dc9a7218d76e742",
             31177: "f35d851e685c0e2c6de4",
-            31649: "b003fff9f08e4631714f",
+            31649: "09c89c95c9072a4142ef",
             31835: "27cd0353da00895fe6b4",
             3190: "a026667e17656e7faa1f",
             32006: "8f3c2586826c9030f62b",
@@ -2442,7 +2442,7 @@
             33065: "a373911938e6f1ccce63",
             33156: "a913bc13a99c93af57b7",
             33184: "ce05af58e8a72ebd245d",
-            33213: "23c2d1736c0f22752fb4",
+            33213: "b876dbcf973adb89932f",
             33238: "29f52f0d9a358f13f0f1",
             33273: "18c38d6bac5757724b6f",
             3336: "34bb548615edb8b5273f",
@@ -2460,7 +2460,7 @@
             35262: "59948bf8fc212bff5cb8",
             35282: "66d344cf0b56a262186b",
             35401: "652c16ccfa16990cba20",
-            35489: "33d65f661702ef759d57",
+            35489: "94e684dc908e70d88139",
             35641: "2c913575449b061e6cce",
             358: "57cade9bcb9d35248e53",
             35822: "67037973545c94658d14",
@@ -2533,7 +2533,7 @@
             41947: "da2c9144bd5227d0827e",
             41953: "c98d2773f3638357a686",
             41984: "6eadea1895c857d27970",
-            42341: "9bde0621ab061b52ec93",
+            42341: "df7c2583dc6f588c468e",
             42358: "d02fce2b7f960c435446",
             42483: "074f2b352698eac52ee3",
             4266: "5cb1e4db02cb1234a150",
@@ -2541,10 +2541,10 @@
             42758: "2a1667011b4e5a2d9c7a",
             43057: "800a2c2c8bcebbe8b010",
             43133: "d189ed6c3dcc18c29fd2",
-            43331: "2228033ac805526958a8",
+            43331: "054a3aa9343fa90f1480",
             43350: "346c47e796161fbea371",
             43353: "205592446e40fd926113",
-            43502: "9517b3dc4f661ee89214",
+            43502: "48633c2424ed0c2ed26e",
             43782: "76092b61d0bb6b6748c1",
             43903: "af928c3cadff5e7b3f4c",
             43966: "6cea69ae596d0a8a2583",
@@ -2568,7 +2568,7 @@
             46161: "a1cf5c32169cf060ba58",
             46369: "febe0a9bb0149ac195c7",
             46468: "1724e7c7211041fc9907",
-            46826: "84d6f190c35c27020c23",
+            46826: "0b750bf6121e037cc8a5",
             46865: "19a66a7efc3bfde3c87a",
             46882: "4a730d596fb1b55c4033",
             46896: "11933da4e55705e10995",
@@ -2591,15 +2591,14 @@
             48934: "00e154ebf8c20da42c14",
             49131: "94226acde9ce4e1cf798",
             49277: "1163afbadcbf816f16f8",
-            4934: "fa7925ae575316fce5ba",
             49365: "376aa1ba40ac4573f1ae",
             49508: "3985c6c4f1f1c03b1bfc",
             49827: "74f66883175894f7b07d",
-            49838: "bf9bcbeaf90a3595be56",
             4984: "a80766bb5457e743ed56",
             5004: "f408213201efa0b2fa30",
             50331: "7cf5d9442e8d08525a6e",
             50498: "4cd375248e87df257b07",
+            50654: "b54154234ebb3b525f01",
             50872: "177ab3091f00511cde65",
             50929: "76724f760b175425d8e7",
             50987: "cecea816515ad30cb304",
@@ -2642,7 +2641,7 @@
             54845: "964778e5b7fd50a43ed9",
             54918: "1b9243a32993d4416ca8",
             54931: "12affc988f62c8e0f397",
-            55228: "dbcfdea367f08b6cf6e4",
+            55183: "067227f4108277663da3",
             5528: "3f225881b0933dc1ddd9",
             55601: "1c804e7ca28b58dabf5d",
             5577: "47074c0b7c77e74cdd8b",
@@ -2693,7 +2692,6 @@
             6045: "fbe793d8b666bfa0f01e",
             60493: "5dfc06e1001a5bf81ee1",
             60592: "c9db5767bf0a385b9982",
-            60618: "899968c08486d8bb84b5",
             60677: "1f2f55033015cfe2b61b",
             6074: "6ec32745f06580d3ac48",
             60878: "5c62b07494d8cf930f84",
@@ -2769,6 +2767,7 @@
             69923: "c6b1cbe3de1ba1492140",
             70036: "d505dc42c99f7ad2b495",
             70061: "25fd6e5cb14424ad9258",
+            70161: "df0e4fda30266a5306a7",
             70253: "b5c3830300dede5d7bca",
             70528: "4ef4916fc18fd7255a77",
             70623: "bc73b1cdf5733511a802",
@@ -2787,11 +2786,12 @@
             72637: "07374d243590d3021bf6",
             72760: "114720b4fa42358d8931",
             7285: "9bdd79c5bb250cbdd939",
-            72891: "cfe852d1988c7b59ff51",
+            72891: "c414f7a04a01a90dde0c",
             72920: "ffd42c93eb1966bea801",
-            72922: "c55bd70b0e348e793216",
+            72922: "43bfc98929012a964641",
             7302: "455dba1f0cd603bc0dc5",
             73149: "2c6561abb86a93551b07",
+            73685: "fc17100b2eedb8c19b20",
             73872: "ac30938ff53f2411f505",
             73921: "ffe21f51ff69de83c582",
             7402: "6cf2de3e75ed9c1f4e00",
@@ -2805,7 +2805,7 @@
             74590: "b700c68921cbe40ad1ad",
             74602: "88911b6e1ed3871d75c2",
             74673: "476933a49c8db4b85b00",
-            75409: "34257adce4cd513daa3f",
+            75409: "4929c8e1f25f695ef568",
             75613: "f5547ba63830902d12c5",
             7573: "f05933b557d2089e5c00",
             7584: "625ebdc2fe4a76211267",
@@ -2838,8 +2838,7 @@
             78073: "07c2d5c4b0e1514590e7",
             78221: "970fe774e141f182b7ad",
             78273: "44f0e6fad70da8fe427b",
-            7848: "c43886bd97c7af2d0459",
-            78587: "6d70763886e92ceea8f9",
+            7848: "d9be2b3ecc491e4e6ed3",
             78607: "e751b6b5a6482850ab04",
             78650: "47be053eb4594dc4b92a",
             78670: "2f89e36b419131b63031",
@@ -2873,7 +2872,7 @@
             81975: "7033560035e5ce44b8f5",
             821: "f1d7c7b92f5459352ded",
             82143: "d6288c6f442d5aeebcbb",
-            824: "b6cee2ce53d2cd0733f5",
+            824: "0e93583763485ec25444",
             82560: "2e47b0c57ed8245d91fd",
             82634: "28140ab593b0c84f2b43",
             8286: "19a3aee578a8c8c74944",
@@ -2901,7 +2900,6 @@
             84722: "530cfd6b84dad451e530",
             84725: "3b0aa2d4f436a559ec66",
             84778: "0869cc8f9883a5660650",
-            85093: "4031a768005d776ccbe9",
             85100: "f3472c4a65368dbcaf3c",
             85281: "9021d814cd4beafd0170",
             85342: "0fe5f304c28f8f0af5b1",
@@ -2924,8 +2922,7 @@
             87249: "4d071c8a26a04afdb9b5",
             8739: "c76a37e2d76682395e53",
             87549: "873641efbcb983e3456b",
-            87624: "eb8e3b736bb26da1cd51",
-            87793: "b35049d162e26865cf05",
+            87624: "629d1b4e94f4502f3788",
             8790: "6f8ac38639e8fd28181c",
             88358: "f24710d020086ca1ca1a",
             88571: "96ee45f03010dac5040c",
@@ -2947,6 +2944,7 @@
             90542: "8aa8490edfd09c09410d",
             90688: "8c3883be5ec459b8080f",
             90861: "8ebd075c3edd224367c8",
+            9088: "2cd7ddebddf714e33965",
             91018: "7b8a9f7b04f93cdf3cb4",
             91026: "133ffca43f66d37e2c8a",
             91032: "d9fc4c6eaaa9e6e22336",
@@ -2959,7 +2957,7 @@
             92247: "77cc15b135816cf94220",
             92339: "2558a73e7a9407c13778",
             92401: "5b321a330d4c5d927d00",
-            92446: "52fdf89db207f1e51827",
+            92446: "d250ad90adc2b1070577",
             92557: "1e52e7fbc875ae8557aa",
             92575: "3fda323f7f741259f407",
             92695: "c7208e03dfab2e795f11",
@@ -2971,7 +2969,6 @@
             9343: "170df71f9624a34b81aa",
             9354: "48c50dd80f262a3d1316",
             93554: "28b0a6121e3c3817d50a",
-            9362: "f3f5b39d0eead7f524c5",
             93626: "f26a8e8637b4871966d3",
             93698: "c6b88a7108a2ed253f19",
             93776: "92fe5584f4a42fe0a060",
@@ -3052,24 +3049,24 @@
     }, (() => {
         var e = {},
             t = "discord_app:";
-        a.l = function(n, c, d, i) {
+        a.l = function(n, d, c, i) {
             if (e[n]) {
-                e[n].push(c);
+                e[n].push(d);
                 return
             }
-            if (void 0 !== d) {
+            if (void 0 !== c) {
                 for (var r, o, f = document.getElementsByTagName("script"), s = 0; s < f.length; s++) {
                     var l = f[s];
-                    if (l.getAttribute("src") == n || l.getAttribute("data-webpack") == t + d) {
+                    if (l.getAttribute("src") == n || l.getAttribute("data-webpack") == t + c) {
                         r = l;
                         break
                     }
                 }
-            }!r && (o = !0, (r = document.createElement("script")).charset = "utf-8", r.timeout = 120, a.nc && r.setAttribute("nonce", a.nc), r.setAttribute("data-webpack", t + d), r.src = n), e[n] = [c];
+            }!r && (o = !0, (r = document.createElement("script")).charset = "utf-8", r.timeout = 120, a.nc && r.setAttribute("nonce", a.nc), r.setAttribute("data-webpack", t + c), r.src = n), e[n] = [d];
             var b = function(t, a) {
                     r.onerror = r.onload = null, clearTimeout(u);
-                    var c = e[n];
-                    if (delete e[n], r.parentNode && r.parentNode.removeChild(r), c && c.forEach(function(e) {
+                    var d = e[n];
+                    if (delete e[n], r.parentNode && r.parentNode.removeChild(r), d && d.forEach(function(e) {
                             return e(a)
                         }), t) return t(a)
                 },
@@ -3089,38 +3086,38 @@
         return e.paths = [], !e.children && (e.children = []), e
     }, (() => {
         var e = [];
-        a.O = function(t, n, c, d) {
+        a.O = function(t, n, d, c) {
             if (n) {
-                d = d || 0;
-                for (var i = e.length; i > 0 && e[i - 1][2] > d; i--) e[i] = e[i - 1];
-                e[i] = [n, c, d];
+                c = c || 0;
+                for (var i = e.length; i > 0 && e[i - 1][2] > c; i--) e[i] = e[i - 1];
+                e[i] = [n, d, c];
                 return
             }
             for (var r = 1 / 0, i = 0; i < e.length; i++) {
-                for (var n = e[i][0], c = e[i][1], d = e[i][2], o = !0, f = 0; f < n.length; f++)(!1 & d || r >= d) && Object.keys(a.O).every(function(e) {
+                for (var n = e[i][0], d = e[i][1], c = e[i][2], o = !0, f = 0; f < n.length; f++)(!1 & c || r >= c) && Object.keys(a.O).every(function(e) {
                     return a.O[e](n[f])
-                }) ? n.splice(f--, 1) : (o = !1, d < r && (r = d));
+                }) ? n.splice(f--, 1) : (o = !1, c < r && (r = c));
                 if (o) {
                     e.splice(i--, 1);
-                    var s = c();
+                    var s = d();
                     void 0 !== s && (t = s)
                 }
             }
             return t
         }
-    })(), a.p = "/assets/", a.j = "12633", a.v = function(e, t, n, c) {
-        var d = fetch(a.p + "" + n + ".module.wasm"),
+    })(), a.p = "/assets/", a.j = "12633", a.v = function(e, t, n, d) {
+        var c = fetch(a.p + "" + n + ".module.wasm"),
             i = function() {
-                return d.then(function(e) {
+                return c.then(function(e) {
                     return e.arrayBuffer()
                 }).then(function(e) {
-                    return WebAssembly.instantiate(e, c)
+                    return WebAssembly.instantiate(e, d)
                 }).then(function(t) {
                     return Object.assign(e, t.instance.exports)
                 })
             };
-        return d.then(function(t) {
-            return "function" == typeof WebAssembly.instantiateStreaming ? WebAssembly.instantiateStreaming(t, c).then(function(t) {
+        return c.then(function(t) {
+            return "function" == typeof WebAssembly.instantiateStreaming ? WebAssembly.instantiateStreaming(t, d).then(function(t) {
                 return Object.assign(e, t.instance.exports)
             }, function(e) {
                 if ("application/wasm" !== t.headers.get("Content-Type")) return console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", e), i();
@@ -3144,21 +3141,21 @@
             },
             t = "discord_app",
             n = "data-webpack-loading",
-            c = function(e, c, d, i) {
+            d = function(e, d, c, i) {
                 var r, o, f = "chunk-" + e;
                 if (!i) {
                     for (var s = document.getElementsByTagName("link"), l = 0; l < s.length; l++) {
                         var b = s[l],
                             u = b.getAttribute("href") || b.href;
-                        if (u && !u.startsWith(a.p) && (u = a.p + (u.startsWith("/") ? u.slice(1) : u)), "stylesheet" == b.rel && (u && u.startsWith(c) || b.getAttribute("data-webpack") == t + ":" + f)) {
+                        if (u && !u.startsWith(a.p) && (u = a.p + (u.startsWith("/") ? u.slice(1) : u)), "stylesheet" == b.rel && (u && u.startsWith(d) || b.getAttribute("data-webpack") == t + ":" + f)) {
                             r = b;
                             break
                         }
                     }
-                    if (!d) return r
-                }!r && (o = !0, (r = document.createElement("link")).setAttribute("data-webpack", t + ":" + f), r.setAttribute(n, 1), r.rel = "stylesheet", r.href = c);
+                    if (!c) return r
+                }!r && (o = !0, (r = document.createElement("link")).setAttribute("data-webpack", t + ":" + f), r.setAttribute(n, 1), r.rel = "stylesheet", r.href = d);
                 var h = function(e, t) {
-                    if (r.onerror = r.onload = null, r.removeAttribute(n), clearTimeout(p), t && "load" != t.type && r.parentNode.removeChild(r), d(t), e) return e(t)
+                    if (r.onerror = r.onload = null, r.removeAttribute(n), clearTimeout(p), t && "load" != t.type && r.parentNode.removeChild(r), c(t), e) return e(t)
                 };
                 if (r.getAttribute(n)) {
                     var p = setTimeout(h.bind(null, void 0, {
@@ -3173,56 +3170,56 @@
                 return i ? i.parentNode.insertBefore(r, i) : o && document.head.appendChild(r), r
             };
         a.f.css = function(t, n) {
-            var d = a.o(e, t) ? e[t] : void 0;
-            if (0 !== d) {
-                if (d) n.push(d[2]);
+            var c = a.o(e, t) ? e[t] : void 0;
+            if (0 !== c) {
+                if (c) n.push(c[2]);
                 else if (/^(4923|9938)7$/.test(t)) {
                     var i = new Promise(function(a, n) {
-                        d = e[t] = [a, n]
+                        c = e[t] = [a, n]
                     });
-                    n.push(d[2] = i);
+                    n.push(c[2] = i);
                     var r = a.p + a.k(t),
                         o = Error();
-                    c(t, r, function(n) {
-                        if (a.o(e, t) && (0 !== (d = e[t]) && (e[t] = void 0), d)) {
+                    d(t, r, function(n) {
+                        if (a.o(e, t) && (0 !== (c = e[t]) && (e[t] = void 0), c)) {
                             if ("load" !== n.type) {
-                                var c = n && n.type,
+                                var d = n && n.type,
                                     i = n && n.target && n.target.src;
-                                o.message = "Loading css chunk " + t + " failed.\n(" + c + ": " + i + ")", o.name = "ChunkLoadError", o.type = c, o.request = i, d[1](o)
-                            } else d[0]()
+                                o.message = "Loading css chunk " + t + " failed.\n(" + d + ": " + i + ")", o.name = "ChunkLoadError", o.type = d, o.request = i, c[1](o)
+                            } else c[0]()
                         }
                     })
                 } else e[t] = 0
             }
         };
-        var d = function(t, a) {
+        var c = function(t, a) {
                 var n = a[0];
                 t && t(a);
-                for (var c = 0; c < n.length; c++) void 0 === e[n[c]] && (e[n[c]] = 0)
+                for (var d = 0; d < n.length; d++) void 0 === e[n[d]] && (e[n[d]] = 0)
             },
             i = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
-        i.forEach(d.bind(null, 0)), i.push = d.bind(null, i.push.bind(i))
+        i.forEach(c.bind(null, 0)), i.push = c.bind(null, i.push.bind(i))
     })(), (() => {
         a.b = document.baseURI || self.location.href;
         var e = {
             12633: 0
         };
         a.f.j = function(t, n) {
-            var c = a.o(e, t) ? e[t] : void 0;
-            if (0 !== c) {
-                if (c) n.push(c[2]);
+            var d = a.o(e, t) ? e[t] : void 0;
+            if (0 !== d) {
+                if (d) n.push(d[2]);
                 else {
-                    var d = new Promise(function(a, n) {
-                        c = e[t] = [a, n]
+                    var c = new Promise(function(a, n) {
+                        d = e[t] = [a, n]
                     });
-                    n.push(c[2] = d);
+                    n.push(d[2] = c);
                     var i = a.p + a.u(t),
                         r = Error();
                     a.l(i, function(n) {
-                        if (a.o(e, t) && (0 !== (c = e[t]) && (e[t] = void 0), c)) {
-                            var d = n && ("load" === n.type ? "missing" : n.type),
+                        if (a.o(e, t) && (0 !== (d = e[t]) && (e[t] = void 0), d)) {
+                            var c = n && ("load" === n.type ? "missing" : n.type),
                                 i = n && n.target && n.target.src;
-                            r.message = "Loading chunk " + t + " failed.\n(" + d + ": " + i + ")", r.name = "ChunkLoadError", r.type = d, r.request = i, c[1](r)
+                            r.message = "Loading chunk " + t + " failed.\n(" + c + ": " + i + ")", r.name = "ChunkLoadError", r.type = c, r.request = i, d[1](r)
                         }
                     }, "chunk-" + t, t)
                 }
@@ -3231,17 +3228,17 @@
             return 0 === e[t]
         };
         var t = function(t, n) {
-                var c = n[0],
-                    d = n[1],
+                var d = n[0],
+                    c = n[1],
                     i = n[2],
                     r, o, f = 0;
-                if (c.some(function(t) {
+                if (d.some(function(t) {
                         return 0 !== e[t]
                     })) {
-                    for (r in d) a.o(d, r) && (a.m[r] = d[r]);
+                    for (r in c) a.o(c, r) && (a.m[r] = c[r]);
                     if (i) var s = i(a)
                 }
-                for (t && t(n); f < c.length; f++) o = c[f], a.o(e, o) && e[o] && e[o][0](), e[o] = 0;
+                for (t && t(n); f < d.length; f++) o = d[f], a.o(e, o) && e[o] && e[o][0](), e[o] = 0;
                 return a.O(s)
             },
             n = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
@@ -3252,4 +3249,4 @@
     });
     n = a.O(n)
 })();
-//# sourceMappingURL=web.f5fa07db356df3ea93a1.js.map
+//# sourceMappingURL=web.d34dfcdf3507b47ecbe3.js.map
