@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305251", ", Version Hash: ").concat("834e663e1d4ae15707a0c733a54a760c17224f9c")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305264", ", Version Hash: ").concat("7698ab23bdefa01f4df95216426594d6902e65a2")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -46453,6 +46453,7 @@
                 COPY_ID_GUILD: "Copy Server ID",
                 COPY_ID_MESSAGE: "Copy Message ID",
                 COPY_ID_ROLE: "Copy Role ID",
+                COPY_ID_STICKER: "Copy Sticker ID",
                 COPY_ID_THREAD: "Copy Thread ID",
                 COPY_ID_UNKNOWN: "Copy ID",
                 COPY_ID_USER: "Copy User ID",
@@ -46461,6 +46462,7 @@
                 PASTE: "Paste",
                 COPY_IMAGE_MENU_ITEM: "Copy Image",
                 SAVE_IMAGE_MENU_ITEM: "Save Image",
+                COPY_EMOJI: "Copy Emoji",
                 LINK_OPTIONS: "Link Options",
                 COPY_LINK: "Copy Link",
                 COPIED_LINK: "Link Copied!",
@@ -60255,7 +60257,15 @@
                 GLOBAL_DISCOVERY_SERVERS_TITLE: "Servers",
                 GLOBAL_DISCOVERY_APPS_TITLE: "Apps",
                 GLOBAL_DISCOVERY_QUESTS_TITLE: "Quests",
-                GLOBAL_DISCOVERY_SHOP_TITLE: "Shop"
+                GLOBAL_DISCOVERY_SHOP_TITLE: "Shop",
+                GLOBAL_DISCOVERY_SEARCH_PLACEHOLDER: "Search {title}",
+                GLOBAL_DISCOVERY_SERVERS_GUILDS_CATEGORY: "Guilds",
+                GLOBAL_DISCOVERY_SERVERS_GAMING_CATEGORY: "Gaming",
+                GLOBAL_DISCOVERY_SERVERS_MUSIC_CATEGORY: "Music",
+                GLOBAL_DISCOVERY_SERVERS_ENTERTAINMENT_CATEGORY: "Entertainment",
+                GLOBAL_DISCOVERY_SERVERS_TECH_CATEGORY: "Science & Tech",
+                GLOBAL_DISCOVERY_SERVERS_EDUCATION_CATEGORY: "Education",
+                GLOBAL_DISCOVERY_SERVERS_HUBS_CATEGORY: "Student Hubs"
             })
         },
         539590: function(e) {
@@ -97110,8 +97120,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305251", "305251"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305251")), t = 0), t
+                let t = parseInt((e = "305264", "305264"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305264")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125397,8 +125407,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305251",
-                    versionHash: "834e663e1d4ae15707a0c733a54a760c17224f9c"
+                    buildNumber: "305264",
+                    versionHash: "7698ab23bdefa01f4df95216426594d6902e65a2"
                 }
             }
             n.d(t, {
@@ -130478,6 +130488,8 @@
                             "data-type": I.S.EMOJI,
                             "data-id": r.id,
                             "data-name": r.name,
+                            "data-surrogates": "surrogates" in r ? r.surrogates : null,
+                            "data-animated": r.animated ? "true" : null,
                             ref: t,
                             children: (0, i.jsx)(N.Z, {
                                 "aria-label": (n = r.allNamesString, ((null == L ? void 0 : L.name) != null && (n = A.Z.Messages.EMOJI_FROM_GUILD_LABEL.format({
@@ -184382,8 +184394,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719425282100",
-                                    build_number: "305251"
+                                    built_at: "1719426121649",
+                                    build_number: "305264"
                                 }
                             },
                             retries: 1
@@ -221833,29 +221845,13 @@
                     id: "2024-06_enhanced_custom_status",
                     label: "Enhanced Custom Status Experiment",
                     defaultConfig: {
-                        modifyStatusEnabled: !1,
-                        permanentStatusEnabled: !1
+                        modifyStatusEnabled: !1
                     },
                     treatments: [{
                         id: 1,
                         label: "Modifiable custom status",
                         config: {
-                            modifyStatusEnabled: !0,
-                            permanentStatusEnabled: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "Permanent custom status",
-                        config: {
-                            modifyStatusEnabled: !1,
-                            permanentStatusEnabled: !0
-                        }
-                    }, {
-                        id: 3,
-                        label: "Modifiable and permament custom status",
-                        config: {
-                            modifyStatusEnabled: !0,
-                            permanentStatusEnabled: !0
+                            modifyStatusEnabled: !0
                         }
                     }]
                 }),
@@ -262864,7 +262860,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "834e663e1d4ae15707a0c733a54a760c17224f9c"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7698ab23bdefa01f4df95216426594d6902e65a2"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282095,7 +282091,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305251"
+                                build_number: "305264"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289416,7 +289412,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305251", "305251"), 10);
+                let s = parseInt((n = "305264", "305264"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -337175,4 +337171,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.5b8411aa94eb421f118a.js.map
+//# sourceMappingURL=54746.82ff4a6d82bd61fa02be.js.map

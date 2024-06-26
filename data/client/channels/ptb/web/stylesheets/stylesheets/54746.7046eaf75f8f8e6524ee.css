@@ -10262,13 +10262,20 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .buttonShine_a669f8 {
+    color: hsl(var(--white-500-hsl)/.1);
+    pointer-events: none
+}
+
+.full-motion .buttonShine_a669f8 {
     animation-delay: .75s;
     animation-duration: 2s;
     animation-name: Shine_a669f8;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    color: hsl(var(--white-500-hsl)/.1);
-    pointer-events: none
+    animation-timing-function: ease-in-out
+}
+
+.reduce-motion .buttonShine_a669f8 {
+    transform: translate3d(calc(100% - 32px), 0, 0)
 }
 
 .onlyShineOnHover_a669f8 {
@@ -43669,4 +43676,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.9ceb86d5707f7483ee59.css.map*/
+/*# sourceMappingURL=54746.7046eaf75f8f8e6524ee.css.map*/
