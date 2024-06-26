@@ -34947,7 +34947,12 @@ h3.improved_f017d0:after {
 }
 
 .editIcon_d0a252 {
-    opacity: 0
+    opacity: 0;
+    transition: opacity.3s ease
+}
+
+.editIcon_d0a252.expandable_d0a252 {
+    transition: none
 }
 
 .editGradient_d0a252 {
@@ -43718,4 +43723,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.da754437bedeabfe8de7.css.map*/
+/*# sourceMappingURL=54746.9c220e0f7fe5718e32d3.css.map*/
