@@ -16,9 +16,9 @@
 </ol>
 <p class="wysiwyg-text-align-left"><span class="wysiwyg-font-size-medium"><em>To find those folders, open <strong>Finder</strong>, press <strong>⇧⌘+G </strong>(or <strong>Go &gt; Go to Folder</strong> in the menubar), and enter:</em></span></p>
 <p class="wysiwyg-text-align-left"><em>~/Library/Application Support in the window and hit enter: </em></p>
-<p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/360018976612/Screen_Shot_2019-01-16_at_7.40.53_PM.png" alt="Screen_Shot_2019-01-16_at_7.40.53_PM.png"></p>
+<p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/360018976612" alt="Screen_Shot_2019-01-16_at_7.40.53_PM.png"></p>
 <p> <em>Then /Library/Application Support in the run window and hit enter:</em></p>
-<p><em><br><img src="https://support.discord.com/hc/article_attachments/360018976652/Screen_Shot_2019-01-16_at_7.41.20_PM.png" alt="Screen_Shot_2019-01-16_at_7.41.20_PM.png"></em></p>
+<p><em><br><img src="https://support.discord.com/hc/article_attachments/360018976652" alt="Screen_Shot_2019-01-16_at_7.41.20_PM.png"></em></p>
 <p>In both of these cases, find the Discord folders in these files and drag them to your Trash. <strong>Note:</strong> There may not be a Discord folder in the second file (/Library/Application Support). If there isn't, that's okay!<br><br>Next, open your <strong>Applications</strong> folder. Find Discord and drag it to your Trash. Finally, empty your Trash!</p>
 <p class="wysiwyg-text-align-left"><span class="wysiwyg-font-size-medium"><em>If your OS tells you that the file cannot be deleted because it's still in use. Open up the Activity Monitor and terminate all instances of Discord.</em></span></p>
 <ul class="oldschool">

@@ -11,10 +11,10 @@
 </ol>
 <p class="wysiwyg-text-align-left"><span class="wysiwyg-font-size-medium"><em>To find those folders, hit the<strong> </strong><strong>Start button + R</strong>, and enter:</em></span></p>
 <p class="wysiwyg-text-align-left"><em>%appdata% in the run window and hit enter: </em></p>
-<p class="wysiwyg-text-align-left"><img class="shadow" src="https://support.discord.com/hc/en-us/article_attachments/209205268/RunDat.png" alt=""></p>
+<p class="wysiwyg-text-align-left"><img class="shadow" src="https://support.discord.com/hc/article_attachments/209205268" alt=""></p>
 <p><br><br></p>
 <p><em>Then %localappdata% in the run window and hit enter:</em></p>
-<p><em><br><img class="shadow" src="https://support.discord.com/hc/en-us/article_attachments/209275467/RunDatLocal.png" alt=""><br></em></p>
+<p><em><br><img class="shadow" src="https://support.discord.com/hc/article_attachments/209275467" alt=""><br></em></p>
 <p> </p>
 <p> </p>
 <p class="wysiwyg-text-align-left">Then find the "Discord" folder in both of those windows, and delete it. </p>

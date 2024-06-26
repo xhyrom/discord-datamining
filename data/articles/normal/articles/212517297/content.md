@@ -11,7 +11,7 @@
 <h2>Method One: Notification Settings &amp; Server-Wide Mute</h2>
 <p>The first TTS toggle setting can be found here:</p>
 <p><strong>User Settings -&gt; Notifications -&gt; Text-to-Speech</strong></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/115002556711/Text_to_Speech_1.PNG" alt="Text_to_Speech_1.PNG" width="601" height="204"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/115002556711" alt="Text_to_Speech_1.PNG" width="601" height="204"></p>
 <p> You'll see three selections here:</p>
 <ul>
     <li>
@@ -29,7 +29,7 @@
 <p>The second TTS toggle setting can be found here:</p>
 <p><strong>User Settings button &gt; App Settings &gt; Accessibility</strong></p>
 <p>Use the Text to speech rate setting to adjust the speed at which the text is being read back to you.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407495059863/Screenshot_96.png" alt="Screenshot_96.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407495059863" alt="Screenshot_96.png"></p>
 <p>What this does is enable or disable the <strong>/tts </strong>command. If you have this option de-selected, and type in a <strong>/tts</strong> sentence the Text-to-Speech bot will not read it aloud. A sad tale indeed.</p>
 <h3><em>Important Note: The TTS option in the Accessibility tab is completely separate from the TTS options in the Notifications tab. If a user has TTS notifications enabled like in method one, they will hear your sentences written in TTS, regardless of what TTS settings you've selected. Similarly, if they disable TTS notifications, they won't hear your sentences read in TTS at all.</em></h3>
 <p>That wraps that up! We wish you the best in your robot adventures and hope that these tips will help you Discord!</p>

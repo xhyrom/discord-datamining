@@ -36,7 +36,7 @@
 <p>In addition to the requirements listed above, we recommend considering the following items when creating your custom sticker creations.</p>
 <h2 id="h_01F9BDH7QVCRSEZJF1P9YQ996J">Transparency</h2>
 <p>Due to their uniqueness, stickers are often created with transparent backgrounds. This can be achieved through a few different methods depending on what you’re using to create stickers:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4403149313815/Screenshot_61.png" alt="Screenshot_61.png" width="297" height="298"><img src="https://support.discord.com/hc/article_attachments/4403155223319/Screenshot_62.png" alt="Screenshot_62.png" width="298" height="298"><br>Transparent background (left), Solid background (right)</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4403149313815" alt="Screenshot_61.png" width="297" height="298"><img src="https://support.discord.com/hc/article_attachments/4403155223319" alt="Screenshot_62.png" width="298" height="298"><br>Transparent background (left), Solid background (right)</p>
 <ul>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Make sure your background layer is transparent when saving the image. </span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Cutting the background out with a photo editing tool<br></span></li>
@@ -45,7 +45,7 @@
 <p><span style="font-weight: 400;">When creating stickers, make sure that your sticker takes up as much canvas space as possible for the best results. </span></p>
 <p><span style="font-weight: 400;">Stickers in the desktop chat will render at 160x160 dp, which is why we recommend uploading stickers as 320x320 px exactly. This scaling helps keep your stickers looking crisp on most displays. </span></p>
 <h3><span style="font-weight: 400;"><strong>Note:</strong> Keep in mind that depending on what device you're using, and depending on where stickers are displayed (in the sticker drawer, in chat, etc), the sticker may display at different sizes.<br></span></h3>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403149540247/bad.png" alt="bad.png"> <img src="https://support.discord.com/hc/article_attachments/4403149539351/good.png" alt="good.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403149540247" alt="bad.png"> <img src="https://support.discord.com/hc/article_attachments/4403149539351" alt="good.png"></span></p>
 <h3><span style="font-weight: 400;"><strong>Note:</strong> <br>- Your APNG stickers will not render if you only upload the files through the chat bar &gt; upload file section! <br>- You’ll need to preview the stickers instead in the Server Settings &gt; Stickers &gt; Upload window. </span></h3>
 <h1 id="h_01F9BDHS0QS576MNYS6XCPB565">Q&amp;A</h1>
 <p><span class="wysiwyg-font-size-large"><strong>Q: Is there a frame rate limit for my stickers?</strong></span></p>
