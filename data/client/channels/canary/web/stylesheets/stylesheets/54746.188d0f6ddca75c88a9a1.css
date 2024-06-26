@@ -5868,7 +5868,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .applicationDetails_d6f023 {
-    padding: 24px 0
+    padding-top: 24px
 }
 
 .entry_d6f023 {
@@ -6605,6 +6605,11 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     text-transform: uppercase;
     color: var(--header-secondary);
     padding-bottom: 8px
+}
+
+.intObserver_c5a065 {
+    height: 24px;
+    margin-bottom: 16px
 }
 
 .errorCodeMessage_c78a6e {
@@ -43681,4 +43686,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.e72a354e2d442a435c7b.css.map*/
+/*# sourceMappingURL=54746.188d0f6ddca75c88a9a1.css.map*/
