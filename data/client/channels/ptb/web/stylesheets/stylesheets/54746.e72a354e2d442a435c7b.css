@@ -43041,13 +43041,6 @@ code {
 }
 
 :root {
-    --custom-color-swatch-color-swatch-height: 50px;
-    --custom-profile-customization-preview-avatar-size: 80px;
-    --custom-profile-customization-preview-avatar-decoration-size: calc(var(--custom-profile-customization-preview-avatar-size) * var(--decoration-to-avatar-ratio));
-    --custom-profile-customization-preview-avatar-decoration-position: calc((var(--custom-profile-customization-preview-avatar-size) - var(--custom-profile-customization-preview-avatar-decoration-size)) / 2)
-}
-
-:root {
     --custom-outbound-promotion-redemption-modal-art-height: 120px;
     --custom-premium-colors-premium-gradient-tier-0: linear-gradient(to right,
             var(--premium-tier-0-purple-for-gradients),
@@ -43688,4 +43681,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.e14e0d86efaa03e7bea8.css.map*/
+/*# sourceMappingURL=54746.e72a354e2d442a435c7b.css.map*/
