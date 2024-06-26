@@ -22430,71 +22430,6 @@ span.clanTag_a31c43 {
     margin-right: var(--spacing-32)
 }
 
-.icon_e3c63c,
-.underline_e3c63c {
-    --custom-app-icon-size: 32px
-}
-
-.container_e3c63c {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    padding: var(--spacing-8);
-    align-items: center;
-    overflow: hidden;
-    background-color: var(--bg-surface-raised);
-    cursor: pointer
-}
-
-.container_e3c63c:hover {
-    background-color: var(--background-modifier-hover)
-}
-
-.keyboard-mode .container_e3c63c:focus {
-    background-color: var(--background-modifier-selected)
-}
-
-.container_e3c63c:active {
-    background-color: var(--background-modifier-active)
-}
-
-.container_e3c63c:first-child {
-    border-top-left-radius: var(--radius-md);
-    border-top-right-radius: var(--radius-md)
-}
-
-.container_e3c63c:last-child {
-    border-bottom-left-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md)
-}
-
-.container_e3c63c:last-child .underline_e3c63c {
-    display: none
-}
-
-.icon_e3c63c {
-    width: var(--custom-app-icon-size);
-    height: var(--custom-app-icon-size)
-}
-
-.appDetails_e3c63c {
-    display: flex;
-    flex-shrink: 1;
-    overflow: hidden;
-    flex-direction: column;
-    margin-left: var(--spacing-12);
-    margin-right: auto
-}
-
-.underline_e3c63c {
-    position: absolute;
-    bottom: 0;
-    left: calc(var(--custom-app-icon-size) + var(--spacing-8) + var(--spacing-12));
-    right: 0;
-    height: 1px;
-    background-color: var(--bg-mod-subtle)
-}
-
 .icon_f3112b,
 .underline_f3112b {
     --custom-app-icon-size: 32px
@@ -25279,7 +25214,8 @@ span.clanTag_a31c43 {
 
 .gameIcon_cfbfb9 {
     width: 64px;
-    height: 64px
+    height: 64px;
+    border-radius: 2px
 }
 
 .pillContainer_cfbfb9 {
@@ -33344,6 +33280,10 @@ h3.improved_f017d0:after {
     width: 100%
 }
 
+.repliedTextPreview_ec86aa .repliedTextContent_ec86aa a {
+    word-break: break-all
+}
+
 .repliedTextPreview_ec86aa {
     display: flex;
     max-height: 1.25em
@@ -34485,6 +34425,49 @@ h3.improved_f017d0:after {
 
 .buttonColor_cd74cc:active {
     opacity: .9
+}
+
+.buttonColor_cd74cc:disabled,
+.buttonColor_cd74cc[aria-disabled=true] {
+    opacity: .5
+}
+
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc {
+    background-color: hsl(var(--white-500-hsl)/.24);
+    color: var(--interactive-active);
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc:hover {
+    opacity: .8
+}
+
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc:active {
+    opacity: .9
+}
+
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc:disabled,
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc[aria-disabled=true] {
+    opacity: .5
+}
+
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc {
+    background-color: hsl(var(--white-500-hsl)/.72);
+    color: var(--interactive-active);
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc:hover {
+    opacity: .8
+}
+
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc:active {
+    opacity: .9
+}
+
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc:disabled,
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc[aria-disabled=true] {
+    opacity: .5
 }
 
 .viewFullBio_fc5c48 {
@@ -43686,4 +43669,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.188d0f6ddca75c88a9a1.css.map*/
+/*# sourceMappingURL=54746.9ceb86d5707f7483ee59.css.map*/
