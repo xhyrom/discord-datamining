@@ -22437,12 +22437,12 @@ span.clanTag_a31c43 {
     margin-right: var(--spacing-32)
 }
 
-.icon_f3112b,
-.underline_f3112b {
+.icon_b78bb6,
+.underline_b78bb6 {
     --custom-app-icon-size: 32px
 }
 
-.container_f3112b {
+.container_b78bb6 {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -22453,38 +22453,38 @@ span.clanTag_a31c43 {
     cursor: pointer
 }
 
-.container_f3112b:hover {
+.container_b78bb6:hover {
     background-color: var(--background-modifier-hover)
 }
 
-.keyboard-mode .container_f3112b:focus {
+.keyboard-mode .container_b78bb6:focus {
     background-color: var(--background-modifier-selected)
 }
 
-.container_f3112b:active {
+.container_b78bb6:active {
     background-color: var(--background-modifier-active)
 }
 
-.container_f3112b:first-child {
+.container_b78bb6:first-child {
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md)
 }
 
-.container_f3112b:last-child {
+.container_b78bb6:last-child {
     border-bottom-left-radius: var(--radius-md);
     border-bottom-right-radius: var(--radius-md)
 }
 
-.container_f3112b:last-child .underline_f3112b {
+.container_b78bb6:last-child .underline_b78bb6 {
     display: none
 }
 
-.icon_f3112b {
+.icon_b78bb6 {
     width: var(--custom-app-icon-size);
     height: var(--custom-app-icon-size)
 }
 
-.cmdDetails_f3112b {
+.cmdDetails_b78bb6 {
     display: flex;
     flex-shrink: 1;
     overflow: hidden;
@@ -22493,12 +22493,12 @@ span.clanTag_a31c43 {
     margin-right: auto
 }
 
-.cmdAppName_f3112b {
+.cmdAppName_b78bb6 {
     margin-left: var(--spacing-8);
     white-space: nowrap
 }
 
-.underline_f3112b {
+.underline_b78bb6 {
     position: absolute;
     bottom: 0;
     left: calc(var(--custom-app-icon-size) + var(--spacing-8) + var(--spacing-12));
@@ -22629,6 +22629,15 @@ span.clanTag_a31c43 {
     flex-direction: column;
     margin-top: var(--spacing-12);
     margin-bottom: var(--spacing-24)
+}
+
+.sectionActivitiesContentContainer_d193fc {
+    display: grid;
+    margin-top: var(--spacing-12);
+    margin-bottom: var(--spacing-24);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--spacing-12);
+    gap: var(--spacing-12)
 }
 
 .emptyStateContainer_d193fc {
@@ -43723,4 +43732,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.9c220e0f7fe5718e32d3.css.map*/
+/*# sourceMappingURL=54746.572f5929a19ca26fe3cf.css.map*/
