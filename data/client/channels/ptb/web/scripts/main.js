@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305393", ", Version Hash: ").concat("eed79e6489246468659afc968adf454501395674")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305409", ", Version Hash: ").concat("a9ca955ed26b934a075c6af4184c9cec4fdbab83")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42501,7 +42501,7 @@
                 APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Installed",
                 APP_LAUNCHER_HOME_RECOMMENDATIONS_HEADER: "Recommendations",
                 APP_LAUNCHER_HOME_APPS_IN_SERVER_HEADER: "Apps in this Server",
-                APP_LAUNCHER_HOME_IN_SERVER_HEADER: "In this Server",
+                APP_LAUNCHER_HOME_IN_SERVER_HEADER: "In This Server",
                 APP_LAUNCHER_COMMAND_LIST_SORT_HEADER: "Sort By",
                 APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_POPULAR: "Popular",
                 APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_ALPHABETICAL: "Alphabetical",
@@ -59355,6 +59355,8 @@
                 QUESTS_MICROPHONE_UNIT_BODY_ANY_GAME: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched a game.",
                 QUESTS_MICROPHONE_UNIT_BODY: "We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched {gameTitle}.",
                 QUESTS_MICROHPONE_UNIT_BUTTON_CTA: "Check For Launches",
+                QUESTS_MICROPHONE_UNIT_FOOTER_SINGLE_CONSOLE: "[Need help?]({helpdeskArticle})",
+                QUESTS_MICROPHONE_UNIT_FOOTER_PLAYSTATION_OR_XBOX: "Need help with your [PSN online ID]({psHelpdeskArticle}) or [Xbox account]({xboxHelpdeskArticle})?",
                 QUESTS_COLLECTIBLES_TEMPORARY_COLLECTION: "This decoration is now yours until {expirationDate, date, short} and you can use it any time until then.",
                 QUESTS_HOME_HERO_EYEBROW: "What are Quests?",
                 QUESTS_HOME_HERO_TITLE: "Play Games. Get Rewards.",
@@ -60211,7 +60213,7 @@
                 E2EE_CHECK_PRIVACY_CODE: "Check this call's privacy code",
                 E2EE_VERIFIED: "Verified",
                 E2EE_USERNAME_VERIFIED: "{username} verified!",
-                E2EE_CALL_DETAILS: "Call Details",
+                E2EE_CALL_DETAILS: "Voice Details",
                 E2EE_USER_VERIFIED_A11Y: "End-to-end encryption verified",
                 E2EE_CALL_VERIFIED_A11Y: "End-to-end encryption verified for all users in call",
                 E2EE_USER_VERIFICATION_SUBTITLE: "Compare the numbers below with {username}. If they match, mark them as verified.",
@@ -60244,7 +60246,7 @@
                 E2EE_DISABLE_PERSISTENT_KEYS_CONFIRM_SUBTITLE: "This will clear verification for all devices that you have verified.",
                 E2EE_LINKING_OTHER_USER_DISCONNECTED_TITLE: "Cannot Determine Code",
                 E2EE_LINKING_OTHER_USER_DISCONNECTED_SUBTITLE: " It looks like **{username}** has left the call.",
-                E2EE_LINKING_DISCONNECTED_TITLE: "Call Disconnected",
+                E2EE_LINKING_DISCONNECTED_TITLE: "Disconnected",
                 E2EE_LINKING_DISCONNECTED_SUBTITLE: "It looks like you are not connected to any voice channel right now.",
                 E2EE_LINKING_CODE_UNABLE_TO_VERIFY_TITLE: "Cannot Determine Code",
                 E2EE_LINKING_CODE_UNABLE_TO_VERIFY_SUBTITLE: "We were unable to verify the code for **{username}**.",
@@ -78594,7 +78596,7 @@
                                 return e && null !== (n = null === (t = _.Z.getApps()) || void 0 === t ? void 0 : t.filter(e => e.scopes.includes(r.x.APPLICATIONS_COMMANDS))) && void 0 !== n ? n : []
                             }, [e]),
                             a = t.filter(e => e.id !== c.bi.FRECENCY && e.id !== c.bi.BUILT_IN);
-                        return (0, u.h)(a, null != n ? n : [])
+                        return (0, u.h)(a, e ? n : [])
                     }(t, n)
                 }
             }
@@ -85306,14 +85308,15 @@
                 return null == e ? void 0 : e.id === h.bi.BUILT_IN ? I.ub.BUILT_IN : e.id === h.bi.FRECENCY ? I.ub.FRECENCY : I.ub.APP
             }
 
-            function M(e) {
-                var t, n;
+            function M(e, t) {
+                var n, i;
                 return {
                     type: I.Qi.APPLICATION,
                     id: e.id,
-                    name: null !== (n = null == e ? void 0 : null === (t = e.bot) || void 0 === t ? void 0 : t.username) && void 0 !== n ? n : e.name,
+                    name: null !== (i = null == e ? void 0 : null === (n = e.bot) || void 0 === n ? void 0 : n.username) && void 0 !== i ? i : e.name,
                     icon: e.icon,
-                    application: e
+                    application: e,
+                    isUserApp: null != t && t
                 }
             }
 
@@ -88876,21 +88879,28 @@
                     o.DZ.loadIfNecessary()
                 }, []);
                 let n = (0, r.e7)([l.Z], () => l.Z.getApplicationFrecencyWithoutLoadingLatest()),
-                    u = i.useMemo(() => null == t ? void 0 : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]);
+                    u = i.useMemo(() => null == t || 0 === t.length ? e : e.map(e => {
+                        var n;
+                        return {
+                            ...e,
+                            isUserApp: null !== (n = null == t ? void 0 : t.some(t => t.application.id === e.id)) && void 0 !== n && n
+                        }
+                    }), [e, t]),
+                    _ = i.useMemo(() => null == t ? void 0 : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]);
                 return i.useMemo(() => {
-                    var t;
-                    null == u || u.forEach(e => {
+                    var e;
+                    null == _ || _.forEach(e => {
                         let t = a.default.extractTimestamp(e.id);
                         null == n.getEntry(e.application.id) && n.track(e.application.id, t)
                     }), n.compute();
-                    let i = null !== (t = null == u ? void 0 : u.map(e => (0, s.X0)(e.application))) && void 0 !== t ? t : [],
-                        r = [...e];
-                    return r.push(...i), r.sort((e, t) => {
+                    let t = null !== (e = null == _ ? void 0 : _.map(e => (0, s.X0)(e.application, !0))) && void 0 !== e ? e : [],
+                        i = [...u];
+                    return i.push(...t), i.sort((e, t) => {
                         var i, r;
                         let s = (null !== (i = n.getScore(t.id)) && void 0 !== i ? i : 0) - (null !== (r = n.getScore(e.id)) && void 0 !== r ? r : 0);
                         return 0 !== s ? s : e.name.localeCompare(t.name)
-                    }), r
-                }, [e, n, u])
+                    }), i
+                }, [u, n, _])
             }
         },
         822245: function(e, t, n) {
@@ -97121,8 +97131,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305393", "305393"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305393")), t = 0), t
+                let t = parseInt((e = "305409", "305409"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305409")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125409,8 +125419,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305393",
-                    versionHash: "eed79e6489246468659afc968adf454501395674"
+                    buildNumber: "305409",
+                    versionHash: "a9ca955ed26b934a075c6af4184c9cec4fdbab83"
                 }
             }
             n.d(t, {
@@ -184507,8 +184517,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719435271960",
-                                    build_number: "305393"
+                                    built_at: "1719436149867",
+                                    build_number: "305409"
                                 }
                             },
                             retries: 1
@@ -224512,7 +224522,7 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return D
+                    return P
                 }
             }), n(47120);
             var i = n(735250),
@@ -224539,9 +224549,11 @@
                 R = n(981631),
                 g = n(689938),
                 C = n(739550);
-            let v = "text-sm/medium";
+            let v = "text-sm/medium",
+                L = 36,
+                D = 144;
 
-            function L(e) {
+            function M(e) {
                 let {
                     statusActivity: t,
                     profileType: s,
@@ -224552,81 +224564,85 @@
                 } = e, {
                     analyticsLocations: R
                 } = (0, h.ZP)(T.Z.PROFILE_CUSTOM_STATUS), {
-                    trackUserProfileAction: L
-                } = (0, m.KZ)(), D = (0, l.e7)([I.Z], () => I.Z.useReducedMotion), [M, P] = r.useState(!0), [y] = r.useState(() => new u.V7), U = r.useRef(null), b = r.useRef(null), G = r.useRef(null), w = r.useRef(null), x = r.useRef(null), B = (0, E.Z)(x), {
-                    emoji: k,
-                    state: V
-                } = null != t ? t : {}, Z = null != V && "" !== V ? V : null, H = null != Z && Z.length > 0, F = null != k, Y = F && !H, j = F || H, W = f && !j, K = f && j, [z, q] = r.useState(Y);
+                    trackUserProfileAction: M
+                } = (0, m.KZ)(), P = (0, l.e7)([I.Z], () => I.Z.useReducedMotion), [y, U] = r.useState(!0), [b] = r.useState(() => new u.V7), G = r.useRef(null), w = r.useRef(null), x = r.useRef(null), B = r.useRef(null), k = r.useRef(null), V = (0, E.Z)(k), {
+                    emoji: Z,
+                    state: H
+                } = null != t ? t : {}, F = null != H && "" !== H ? H : null, Y = null != F && F.length > 0, j = null != Z, W = j && !Y, K = j || Y, z = f && !K, q = f && K, [X, Q] = r.useState(W ? 1 : 0), J = 1 === X, $ = X > 2;
                 r.useLayoutEffect(() => {
-                    if (null == U.current || Y) return;
-                    let e = Math.floor(U.current.getBoundingClientRect().height);
-                    if (q(Y || e <= 18), S) {
-                        var t, n, i, r;
-                        b.current = null !== (i = null === (t = U.current) || void 0 === t ? void 0 : t.getBoundingClientRect().height) && void 0 !== i ? i : 144, w.current = null !== (r = null === (n = G.current) || void 0 === n ? void 0 : n.getBoundingClientRect().height) && void 0 !== r ? r : 36
+                    if (null != G.current && !W) {
+                        if (Q(Math.ceil(Math.floor(G.current.getBoundingClientRect().height) / 18)), S) {
+                            var e, t, n, i;
+                            w.current = null !== (n = null === (e = G.current) || void 0 === e ? void 0 : e.getBoundingClientRect().height) && void 0 !== n ? n : D, B.current = null !== (i = null === (t = x.current) || void 0 === t ? void 0 : t.getBoundingClientRect().height) && void 0 !== i ? i : L
+                        }
                     }
-                }, [S, Y]);
+                }, [S, W]);
                 let [{
-                    maxHeight: X,
-                    editIconOpacity: Q
-                }, J] = (0, a.useSpring)(() => ({
-                    maxHeight: "".concat(36, "px"),
+                    maxHeight: ee,
+                    editIconOpacity: et
+                }, en] = (0, a.useSpring)(() => ({
+                    maxHeight: "".concat(L, "px"),
                     editIconOpacity: 0,
                     config: {
                         clamp: !0,
-                        immediate: D,
+                        immediate: P,
                         duration: 150
                     }
                 }));
-                if (r.useEffect(() => () => y.stop(), [y]), !j && !W) return null;
-                let $ = e => {
+                if (r.useEffect(() => () => b.stop(), [b]), !K && !z) return null;
+                let ei = e => {
                         var t, n;
-                        if (e) {
-                            let e = Math.min(null !== (t = b.current) && void 0 !== t ? t : 144, 144);
-                            J({
-                                maxHeight: "".concat(e, "px"),
-                                editIconOpacity: 1,
-                                delay: 300
-                            })
-                        } else {
-                            let e = Math.min(null !== (n = w.current) && void 0 !== n ? n : 36, 36);
-                            J({
-                                maxHeight: "".concat(e, "px"),
-                                editIconOpacity: 0,
-                                delay: 0
+                        if (!!$) {
+                            if (e) {
+                                let e = Math.min(null !== (t = w.current) && void 0 !== t ? t : D, D);
+                                en({
+                                    maxHeight: "".concat(e, "px"),
+                                    editIconOpacity: 1,
+                                    delay: 300
+                                })
+                            } else {
+                                let e = Math.min(null !== (n = B.current) && void 0 !== n ? n : L, L);
+                                en({
+                                    maxHeight: "".concat(e, "px"),
+                                    editIconOpacity: 0,
+                                    delay: 0
+                                })
+                            }
+                            b.start(e ? 300 : 150, () => {
+                                U(!e)
                             })
                         }
-                        y.start(e ? 300 : 150, () => {
-                            P(!e)
-                        })
                     },
-                    ee = () => K ? (0, i.jsxs)(a.animated.div, {
-                        style: {
-                            opacity: Q
-                        },
-                        className: C.editIcon,
+                    er = () => q ? (0, i.jsxs)(a.animated.div, {
+                        style: $ ? {
+                            opacity: et
+                        } : void 0,
+                        className: o()(C.editIcon, {
+                            [C.expandable]: $
+                        }),
                         children: [(0, i.jsx)("div", {
-                            className: o()(C.editGradient, Y && C.editGradientEmojiOnly)
+                            className: o()(C.editGradient, W && C.editGradientEmojiOnly)
                         }), (0, i.jsx)(c.Clickable, {
-                            className: o()(C.editClickable, Y && C.editClickableEmojiOnly),
-                            onClick: er,
+                            className: o()(C.editClickable, W && C.editClickableEmojiOnly),
+                            onClick: el,
                             children: (0, i.jsx)(_.v, {
                                 size: "xs"
                             })
                         })]
                     }) : null,
-                    et = () => F ? (0, i.jsx)(d.I, {
-                        className: H ? C.statusEmojiInline : C.statusEmojiOnly,
-                        emoji: k,
+                    es = () => j ? (0, i.jsx)(d.I, {
+                        className: Y ? C.statusEmojiInline : C.statusEmojiOnly,
+                        emoji: Z,
                         animate: N,
                         hideTooltip: !1,
                         tooltipDelay: p.vB
                     }) : null,
-                    en = () => H ? (0, i.jsx)(c.Text, {
+                    eo = () => Y ? (0, i.jsx)(c.Text, {
                         variant: v,
                         className: C.statusText,
-                        children: Z
+                        children: F
                     }) : null,
-                    ei = () => (0, i.jsxs)("div", {
+                    ea = () => (0, i.jsxs)("div", {
                         className: C.content,
                         children: [(0, i.jsx)(c.CirclePlusIcon, {
                             className: C.addStatusIcon,
@@ -224637,8 +224653,8 @@
                             children: g.Z.Messages.USER_SETTINGS_ADD_STATUS
                         })]
                     }),
-                    er = () => {
-                        L({
+                    el = () => {
+                        M({
                             action: "PRESS_SET_CUSTOM_STATUS"
                         }), null == A || A(), (0, c.openModalLazy)(async () => {
                             let {
@@ -224650,77 +224666,77 @@
                             })
                         })
                     },
-                    es = {
+                    eu = {
                         [C.biteSize]: s === p.y0.BITE_SIZE,
                         [C.fullSize]: s === p.y0.FULL_SIZE,
                         [C.panel]: s === p.y0.PANEL
                     },
-                    eo = o()(C.statusBubbleOuter, es, {
-                        [C.statusBubbleShape]: !H && F || !z,
-                        [C.statusBubbleSingleLineWithTextShape]: z && H || W,
-                        [C.statusBubbleOuterAddStatusCursor]: W
+                    e_ = o()(C.statusBubbleOuter, eu, {
+                        [C.statusBubbleShape]: !Y && j || !J,
+                        [C.statusBubbleSingleLineWithTextShape]: J && Y || z,
+                        [C.statusBubbleOuterAddStatusCursor]: z
                     }),
-                    ea = o()(C.statusBubble, {
-                        [C.statusBubbleShape]: !H && F || !z,
-                        [C.statusBubbleSingleLineWithTextShape]: z && H || W,
-                        [C.statusBubbleEmojiOnlyPadding]: Y,
-                        [C.statusBubbleWithTextPadding]: H || W,
-                        [C.statusBubbleWithTextMinWidth]: H,
-                        [C.statusBubbleCopyStatusCursor]: j
+                    ec = o()(C.statusBubble, {
+                        [C.statusBubbleShape]: !Y && j || !J,
+                        [C.statusBubbleSingleLineWithTextShape]: J && Y || z,
+                        [C.statusBubbleEmojiOnlyPadding]: W,
+                        [C.statusBubbleWithTextPadding]: Y || z,
+                        [C.statusBubbleWithTextMinWidth]: Y,
+                        [C.statusBubbleCopyStatusCursor]: K
                     });
                 return (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
-                        className: o()(C.invisibleContainer, es),
+                        className: o()(C.invisibleContainer, eu),
                         children: (0, i.jsx)("div", {
-                            className: eo,
+                            className: e_,
                             children: (0, i.jsxs)("span", {
-                                className: ea,
-                                children: [W && ei(), j && (0, i.jsxs)("div", {
+                                className: ec,
+                                children: [z && ea(), K && (0, i.jsxs)("div", {
                                     className: o()(C.content, C.clamp, C.placeholderWidth, {
                                         [C.panel]: s === p.y0.PANEL
                                     }),
-                                    ref: G,
-                                    children: [et(), en()]
-                                }), j && (0, i.jsxs)("div", {
+                                    ref: x,
+                                    children: [es(), eo()]
+                                }), K && (0, i.jsxs)("div", {
                                     className: o()(C.content, C.unclamp, C.placeholderWidth, C.incorporeal, {
                                         [C.panel]: s === p.y0.PANEL
                                     }),
-                                    ref: U,
-                                    children: [et(), en()]
+                                    ref: G,
+                                    children: [es(), eo()]
                                 })]
                             })
                         })
                     }), (0, i.jsxs)("div", {
-                        className: o()(C.visibleContainer, es),
-                        ref: x,
+                        className: o()(C.visibleContainer, eu),
+                        ref: k,
                         children: [(0, i.jsx)(O.Z, {
-                            isHovering: B,
+                            isHovering: V,
                             location: "UserProfileCustomStatusBubble",
                             className: C.reactReplyBar
                         }), (0, i.jsx)(c.Clickable, {
                             tabIndex: 0,
-                            className: eo,
-                            onFocus: () => $(!0),
+                            className: e_,
+                            onFocus: () => ei(!0),
                             onBlur: e => {
-                                !e.currentTarget.contains(e.relatedTarget) && $(!1)
+                                !e.currentTarget.contains(e.relatedTarget) && ei(!1)
                             },
-                            onMouseEnter: () => $(!0),
-                            onMouseLeave: () => $(!1),
-                            onClick: W ? er : void 0,
+                            onMouseEnter: () => ei(!0),
+                            onMouseLeave: () => ei(!1),
+                            onClick: z ? el : void 0,
                             children: (0, i.jsxs)("span", {
-                                className: ea,
-                                children: [W && ei(), j && (() => {
+                                className: ec,
+                                children: [z && ea(), K && (() => {
                                     let e = o()(C.content, {
-                                        [C.clamp]: M,
-                                        [C.unclamp]: !M,
-                                        [C.singleLineAlign]: z
+                                        [C.clamp]: y,
+                                        [C.unclamp]: !y,
+                                        [C.singleLineAlign]: J
                                     });
                                     return (0, i.jsxs)(a.animated.div, {
                                         style: {
-                                            maxHeight: X
+                                            maxHeight: ee
                                         },
                                         className: e,
-                                        children: [ee(), et(), en()]
+                                        children: [er(), es(), eo()]
                                     })
                                 })()]
                             })
@@ -224729,7 +224745,7 @@
                 })
             }
 
-            function D(e) {
+            function P(e) {
                 let {
                     user: t,
                     ...n
@@ -224743,7 +224759,7 @@
                 } = (0, A.K)({
                     location: "UserProfileCustomStatusBubble"
                 }), u = r && a;
-                return (0, i.jsx)(L, {
+                return (0, i.jsx)(M, {
                     canModifyStatus: u,
                     statusActivity: u ? s : o,
                     ...n
@@ -263154,7 +263170,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "eed79e6489246468659afc968adf454501395674"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a9ca955ed26b934a075c6af4184c9cec4fdbab83"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282385,7 +282401,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305393"
+                                build_number: "305409"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289706,7 +289722,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305393", "305393"), 10);
+                let s = parseInt((n = "305409", "305409"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -335509,6 +335525,7 @@
                 addStatusIconColor: "addStatusIconColor_d0a252",
                 editIcon: "editIcon_d0a252",
                 singleLineAlign: "singleLineAlign_d0a252",
+                expandable: "expandable_d0a252",
                 editGradient: "editGradient_d0a252",
                 editGradientEmojiOnly: "editGradientEmojiOnly_d0a252",
                 editClickable: "editClickable_d0a252",
@@ -337470,4 +337487,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.3614f0423d6fb14ee839.js.map
+//# sourceMappingURL=54746.9d675cdd11376d9b9a66.js.map
