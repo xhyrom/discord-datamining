@@ -10262,13 +10262,20 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .buttonShine_a669f8 {
+    color: hsl(var(--white-500-hsl)/.1);
+    pointer-events: none
+}
+
+.full-motion .buttonShine_a669f8 {
     animation-delay: .75s;
     animation-duration: 2s;
     animation-name: Shine_a669f8;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    color: hsl(var(--white-500-hsl)/.1);
-    pointer-events: none
+    animation-timing-function: ease-in-out
+}
+
+.reduce-motion .buttonShine_a669f8 {
+    transform: translate3d(calc(100% - 32px), 0, 0)
 }
 
 .onlyShineOnHover_a669f8 {
@@ -30925,8 +30932,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     justify-content: flex-end;
     border-radius: 8px;
     width: 100px;
-    height: 32px;
-    margin-top: 8px
+    height: 32px
 }
 
 .reply_d0fc0d {
@@ -34687,6 +34693,49 @@ h3.improved_f017d0:after {
     font-size: 14px
 }
 
+.ctaRow_dc0b43 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.ctaTooltipContainer_dc0b43 {
+    display: flex;
+    flex: 1
+}
+
+.menuItemLabel_dc0b43 {
+    display: flex;
+    gap: 6px
+}
+
+.engagementExpButton_dc0b43 {
+    display: flex;
+    flex: 1;
+    background-color: var(--profile-gradient-button-color);
+    color: var(--white-500);
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.engagementExpButton_dc0b43:hover {
+    opacity: .8
+}
+
+.engagementExpButton_dc0b43:active {
+    opacity: .9
+}
+
+.engagementExpButton_dc0b43:disabled,
+.engagementExpButton_dc0b43[aria-disabled=true] {
+    opacity: .5
+}
+
+.engagementExpButtonInner_dc0b43 {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
 .popover_a64b81 {
     position: absolute;
     z-index: 1;
@@ -34898,7 +34947,12 @@ h3.improved_f017d0:after {
 }
 
 .editIcon_d0a252 {
-    opacity: 0
+    opacity: 0;
+    transition: opacity.3s ease
+}
+
+.editIcon_d0a252.expandable_d0a252 {
+    transition: none
 }
 
 .editGradient_d0a252 {
@@ -43669,4 +43723,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.9ceb86d5707f7483ee59.css.map*/
+/*# sourceMappingURL=54746.9c220e0f7fe5718e32d3.css.map*/
