@@ -22430,71 +22430,6 @@ span.clanTag_a31c43 {
     margin-right: var(--spacing-32)
 }
 
-.icon_e3c63c,
-.underline_e3c63c {
-    --custom-app-icon-size: 32px
-}
-
-.container_e3c63c {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    padding: var(--spacing-8);
-    align-items: center;
-    overflow: hidden;
-    background-color: var(--bg-surface-raised);
-    cursor: pointer
-}
-
-.container_e3c63c:hover {
-    background-color: var(--background-modifier-hover)
-}
-
-.keyboard-mode .container_e3c63c:focus {
-    background-color: var(--background-modifier-selected)
-}
-
-.container_e3c63c:active {
-    background-color: var(--background-modifier-active)
-}
-
-.container_e3c63c:first-child {
-    border-top-left-radius: var(--radius-md);
-    border-top-right-radius: var(--radius-md)
-}
-
-.container_e3c63c:last-child {
-    border-bottom-left-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md)
-}
-
-.container_e3c63c:last-child .underline_e3c63c {
-    display: none
-}
-
-.icon_e3c63c {
-    width: var(--custom-app-icon-size);
-    height: var(--custom-app-icon-size)
-}
-
-.appDetails_e3c63c {
-    display: flex;
-    flex-shrink: 1;
-    overflow: hidden;
-    flex-direction: column;
-    margin-left: var(--spacing-12);
-    margin-right: auto
-}
-
-.underline_e3c63c {
-    position: absolute;
-    bottom: 0;
-    left: calc(var(--custom-app-icon-size) + var(--spacing-8) + var(--spacing-12));
-    right: 0;
-    height: 1px;
-    background-color: var(--bg-mod-subtle)
-}
-
 .icon_f3112b,
 .underline_f3112b {
     --custom-app-icon-size: 32px
@@ -43687,4 +43622,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.eed99d8b2ff887ba77b1.css.map*/
+/*# sourceMappingURL=54746.b76d4a9b10c6edfe74ce.css.map*/
