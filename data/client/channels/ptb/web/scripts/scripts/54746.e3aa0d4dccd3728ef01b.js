@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305289", ", Version Hash: ").concat("2885314abacc9c4a3fa1fb661ad935321acc79f4")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305300", ", Version Hash: ").concat("640f140961fd20fc51a7f4cde8083292e258e8d7")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -82008,8 +82008,8 @@
                     inlineRequire: () => n(950143).Z
                 },
                 HangStatusManager: {
-                    actions: ["VOICE_CHANNEL_SELECT", "LOGOUT", "GUILD_MEMBER_UPDATE"],
-                    inlineRequire: () => n(500272).Z,
+                    actions: ["POST_CONNECTION_OPEN", "VOICE_CHANNEL_SELECT", "LOGOUT", "GUILD_MEMBER_UPDATE"],
+                    inlineRequire: () => n(669750).Z,
                     hasStoreChangeListeners: !0
                 },
                 InteractionModalManager: {
@@ -97120,8 +97120,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305289", "305289"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305289")), t = 0), t
+                let t = parseInt((e = "305300", "305300"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305300")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125407,8 +125407,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305289",
-                    versionHash: "2885314abacc9c4a3fa1fb661ad935321acc79f4"
+                    buildNumber: "305300",
+                    versionHash: "640f140961fd20fc51a7f4cde8083292e258e8d7"
                 }
             }
             n.d(t, {
@@ -166563,44 +166563,49 @@
             "use strict";
             n.d(t, {
                 Sc: function() {
-                    return c
+                    return E
+                },
+                UP: function() {
+                    return I
                 },
                 Zx: function() {
-                    return u
+                    return c
                 },
                 _s: function() {
-                    return _
+                    return d
                 }
-            });
+            }), n(47120);
             var i = n(570140),
-                r = n(592125),
-                s = n(19780),
-                o = n(944486),
-                a = n(626135),
-                l = n(981631);
+                r = n(339085),
+                s = n(592125),
+                o = n(19780),
+                a = n(944486),
+                l = n(626135),
+                u = n(106301),
+                _ = n(981631);
 
-            function u(e, t) {
+            function c(e, t) {
                 var n;
                 if (null == e) {
-                    c(t);
+                    E(t);
                     return
                 }
                 i.Z.dispatch({
                     type: "UPDATE_HANG_STATUS",
                     status: e,
                     saveAsDefault: t
-                }), a.default.track(l.rMx.SET_HANG_STATUS, {
+                }), l.default.track(_.rMx.SET_HANG_STATUS, {
                     status_type: e,
-                    channel_id: o.Z.getVoiceChannelId(),
-                    guild_id: null === (n = r.Z.getChannel(o.Z.getVoiceChannelId())) || void 0 === n ? void 0 : n.guild_id,
-                    media_session_id: s.Z.getMediaSessionId()
+                    channel_id: a.Z.getVoiceChannelId(),
+                    guild_id: null === (n = s.Z.getChannel(a.Z.getVoiceChannelId())) || void 0 === n ? void 0 : n.guild_id,
+                    media_session_id: o.Z.getMediaSessionId()
                 })
             }
 
-            function _(e, t, n) {
-                var u;
+            function d(e, t, n) {
+                var r;
                 if ("" === e || null == t) {
-                    c(n);
+                    E(n);
                     return
                 }
                 i.Z.dispatch({
@@ -166608,23 +166613,34 @@
                     emoji: t,
                     status: e,
                     saveAsDefault: n
-                }), a.default.track(l.rMx.SET_HANG_STATUS, {
+                }), l.default.track(_.rMx.SET_HANG_STATUS, {
                     status_type: e,
-                    channel_id: o.Z.getVoiceChannelId(),
-                    guild_id: null === (u = r.Z.getChannel(o.Z.getVoiceChannelId())) || void 0 === u ? void 0 : u.guild_id,
-                    media_session_id: s.Z.getMediaSessionId()
+                    channel_id: a.Z.getVoiceChannelId(),
+                    guild_id: null === (r = s.Z.getChannel(a.Z.getVoiceChannelId())) || void 0 === r ? void 0 : r.guild_id,
+                    media_session_id: o.Z.getMediaSessionId()
                 })
             }
 
-            function c(e) {
+            function E(e) {
                 var t;
                 i.Z.dispatch({
                     type: "CLEAR_HANG_STATUS",
                     saveAsDefault: e
-                }), a.default.track(l.rMx.CLEAR_HANG_STATUS, {
-                    channel_id: o.Z.getVoiceChannelId(),
-                    guild_id: null === (t = r.Z.getChannel(o.Z.getVoiceChannelId())) || void 0 === t ? void 0 : t.guild_id,
-                    media_session_id: s.Z.getMediaSessionId()
+                }), l.default.track(_.rMx.CLEAR_HANG_STATUS, {
+                    channel_id: a.Z.getVoiceChannelId(),
+                    guild_id: null === (t = s.Z.getChannel(a.Z.getVoiceChannelId())) || void 0 === t ? void 0 : t.guild_id,
+                    media_session_id: o.Z.getMediaSessionId()
+                })
+            }
+
+            function I() {
+                let e = [u.Z.getCustomHangStatus(), ...u.Z.getRecentCustomStatuses()].filter(e => {
+                    var t;
+                    return null != e && null != e.emoji && (null === (t = e.emoji) || void 0 === t ? void 0 : t.id) != null && null == r.Z.getCustomEmojiById(e.emoji.id)
+                });
+                e.length > 0 && i.Z.dispatch({
+                    type: "DELETE_INVALID_HANG_STATUSES",
+                    statuses: e
                 })
             }
         },
@@ -166671,7 +166687,7 @@
                 }]
             })
         },
-        500272: function(e, t, n) {
+        669750: function(e, t, n) {
             "use strict";
             n(47120);
             var i = n(147913),
@@ -166682,9 +166698,10 @@
                 l = n(906605),
                 u = n(574176),
                 _ = n(106301),
-                c = n(981631);
+                c = n(866071),
+                d = n(981631);
 
-            function d(e, t, n) {
+            function E(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -166692,13 +166709,16 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            class E extends i.Z {
+            class I extends i.Z {
                 constructor(...e) {
-                    super(...e), d(this, "previousVoiceChannelId", void 0), d(this, "actions", {
+                    super(...e), E(this, "previousVoiceChannelId", void 0), E(this, "actions", {
+                        POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
                         VOICE_CHANNEL_SELECT: e => this.handleVoiceChannelSelect(e),
                         GUILD_MEMBER_UPDATE: e => this.handleGuildMemberUpdate(e),
                         LOGOUT: () => this.handleLogout()
-                    }), d(this, "handleVoiceChannelSelect", e => {
+                    }), E(this, "handlePostConnectionOpen", () => {
+                        (0, l.UP)()
+                    }), E(this, "handleVoiceChannelSelect", e => {
                         let {
                             channelId: t,
                             guildId: n
@@ -166706,7 +166726,7 @@
                             enableHangStatus: i,
                             setDefaultStatus: s
                         } = u.n.getCurrentConfig({
-                            guildId: null != n ? n : c.lds,
+                            guildId: null != n ? n : d.lds,
                             location: "HangStatusManager"
                         }, {
                             autoTrackExposure: !0
@@ -166718,25 +166738,26 @@
                         if (!i || t === this.previousVoiceChannelId) return;
                         if (this.previousVoiceChannelId = t, null == n || null == t) return;
                         let a = o.Z.getChannel(t);
-                        if (null == a || a.type !== c.d4z.GUILD_VOICE || !(0, r.w)(a, !0) || null != _.Z.getCurrentHangStatus()) return;
-                        let d = _.Z.getCurrentDefaultStatus();
-                        if ((null == d ? void 0 : d.expiresAt) != null && (null == d ? void 0 : d.expiresAt) >= Date.now()) {
-                            if (d.status === c.tNA.CUSTOM && null != d.customHangStatus) {
+                        if (null == a || a.type !== d.d4z.GUILD_VOICE || !(0, r.w)(a, !0) || null != _.Z.getCurrentHangStatus()) return;
+                        let E = _.Z.getCurrentDefaultStatus();
+                        if ((null == E ? void 0 : E.expiresAt) != null && (null == E ? void 0 : E.expiresAt) >= Date.now()) {
+                            if (E.status === d.tNA.CUSTOM && null != E.customHangStatus) {
                                 let {
                                     status: e,
                                     emoji: t
-                                } = d.customHangStatus;
+                                } = E.customHangStatus;
+                                if (null != t && !(0, c.K)(t, a)) return;
                                 (0, l._s)(e, t);
                                 return
                             }
-                            if (null == d.status) return;
+                            if (null == E.status) return;
                             else {
-                                (0, l.Zx)(d.status);
+                                (0, l.Zx)(E.status);
                                 return
                             }
                         }
-                        s && (0, l.Zx)(c.tNA.CHILLING)
-                    }), d(this, "handleGuildMemberUpdate", e => {
+                        s && (0, l.Zx)(d.tNA.CHILLING)
+                    }), E(this, "handleGuildMemberUpdate", e => {
                         let {
                             user: t,
                             guildId: n
@@ -166746,14 +166767,14 @@
                         if (null == i || null == _.Z.getCurrentHangStatus()) return;
                         let u = o.Z.getChannel(i);
                         !(0, r.w)(u, !0) && (0, l.Sc)()
-                    }), d(this, "handleDisconnectFromVoiceChannel", () => {
+                    }), E(this, "handleDisconnectFromVoiceChannel", () => {
                         (0, l.Sc)()
-                    }), d(this, "handleLogout", () => {
+                    }), E(this, "handleLogout", () => {
                         this.handleDisconnectFromVoiceChannel()
                     })
                 }
             }
-            t.Z = new E
+            t.Z = new I
         },
         106301: function(e, t, n) {
             "use strict";
@@ -166849,6 +166870,17 @@
                         emoji: n
                     }
                 },
+                DELETE_INVALID_HANG_STATUSES: function(e) {
+                    let {
+                        statuses: t
+                    } = e, n = [...E.recentCustomStatuses];
+                    t.forEach(e => {
+                        let {
+                            status: t,
+                            emoji: o
+                        } = e, a = n.findIndex(e => e.status === t && l().isEqual(e.emoji, o)); - 1 !== a && n.splice(a, 1), t === (null == r ? void 0 : r.status) && l().isEqual(o, null == r ? void 0 : r.emoji) && (i = null, r = null, E.currentDefaultStatus = null, s = null)
+                    }), E.recentCustomStatuses = n
+                },
                 CLEAR_HANG_STATUS: function(e) {
                     let {
                         saveAsDefault: t
@@ -166929,6 +166961,27 @@
                     var t;
                     return ((null == e ? void 0 : e.state) != null ? e.state : null) === i.tNA.CUSTOM ? null == e ? void 0 : e.details : null === (t = E(e)) || void 0 === t ? void 0 : t.title
                 }
+        },
+        866071: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                K: function() {
+                    return o
+                }
+            });
+            var i = n(339085),
+                r = n(176354),
+                s = n(185923);
+
+            function o(e, t) {
+                if (null == e.id) return !0;
+                let n = i.Z.getCustomEmojiById(e.id);
+                return null != n && !r.ZP.isEmojiDisabled({
+                    emoji: n,
+                    channel: t,
+                    intention: s.Hz.STATUS
+                })
+            }
         },
         223135: function(e, t, n) {
             "use strict";
@@ -184394,8 +184447,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719429312884",
-                                    build_number: "305289"
+                                    built_at: "1719430060614",
+                                    build_number: "305300"
                                 }
                             },
                             retries: 1
@@ -263002,7 +263055,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2885314abacc9c4a3fa1fb661ad935321acc79f4"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "640f140961fd20fc51a7f4cde8083292e258e8d7"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282233,7 +282286,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305289"
+                                build_number: "305300"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289554,7 +289607,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305289", "305289"), 10);
+                let s = parseInt((n = "305300", "305300"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -337318,4 +337371,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.9beae24410f127575e76.js.map
+//# sourceMappingURL=54746.e3aa0d4dccd3728ef01b.js.map
