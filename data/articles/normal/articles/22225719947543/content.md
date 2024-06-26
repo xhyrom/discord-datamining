@@ -4,6 +4,7 @@
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
         <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01J1AK4JDWX63NDT2EJFNQ1WH1">Console Gaming Quest</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01J0M3YTKEYJTYAZQ32GXDN24Y">Minecraft</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HXSYAWEMHMCTSD1HCX0RBPES">PUBG: BATTLEGROUNDS </a></li>
         </ul>
@@ -21,6 +22,8 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J1AK4JDWX63NDT2EJFNQ1WH1"><a href="https://support.discord.com/hc/articles/24342965982871" target="_blank" rel="noopener noreferrer">Console Gaming Quest</a></h2>
+<p>The <strong>Console Gaming Quest </strong>can be accepted on Discord from <strong>June 26, 2024 </strong>until <strong>July 10, 2024 (11:59pm UTC)</strong>. Quest requirements must be completed during this period to receive the reward.</p>
 <h2 id="h_01J0M3YTKEYJTYAZQ32GXDN24Y"><a href="https://support.discord.com/hc/articles/24192189535639/" target="_blank" rel="noopener noreferrer">Minecraft - Minecraft Trials Quest</a></h2>
 <p>The <strong>Minecraft Trials Quest</strong> can be accepted on Discord from <strong>June 20, 2024 </strong>until<strong> June 26, 2024 (4:59pm PST)</strong>. Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>July 28, 2024 (11:59pm PST)</strong>. </p>
 <h2 id="h_01HXSYAWEMHMCTSD1HCX0RBPES"><a href="https://support.discord.com/hc/en-us/articles/23351867829527/" target="_blank" rel="noopener noreferrer">PUBG: BATTLEGROUNDS - Erangel Classic Quest</a></h2>
