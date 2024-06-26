@@ -19936,12 +19936,14 @@
                         }), Y && (0, i.jsx)(I.ZP, {
                             showReact: !0,
                             showReply: !0,
-                            replyHeaderText: M.Z.Messages.ACTIVITY_REACTION_REPLY_TITLE.format({
-                                activity: t.name
-                            }),
-                            replyPlaceholder: M.Z.Messages.TEXTAREA_PLACEHOLDER.format({
-                                channel: "@".concat(n.globalName)
-                            }),
+                            popoutProps: {
+                                replyHeaderText: M.Z.Messages.ACTIVITY_REACTION_REPLY_TITLE.format({
+                                    activity: t.name
+                                }),
+                                replyPlaceholder: M.Z.Messages.TEXTAREA_PLACEHOLDER.format({
+                                    channel: "@".concat(n.globalName)
+                                })
+                            },
                             onInteraction: e => {
                                 let {
                                     interactionType: i,
@@ -40735,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305154", ", Version Hash: ").concat("2ae485f86c0193d0e2a56da7d6fec60039388da0")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305164", ", Version Hash: ").concat("d5c1ab2471305b1ed6366fd95d451a561c74cb1d")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -59500,6 +59502,9 @@
                 CONTENT_INVENTORY_COACHTIP_TEXT: "Friends will receive the emoji as a DM",
                 CONTENT_INVENTORY_COACHTIP_IMAGE_ALT: "Wumpus chatting with a friend while gaming",
                 CONTENT_INVENTORY_GAME_STATE_SIZE: "{count} of {max}",
+                GAME_PROFILE_UNFOLLOW_GAME: "Unfollow",
+                GAME_PROFILE_FOLLOW_TOOLTIP: "Get notified about this game",
+                GAME_PROFILE_UNFOLLOW_TOOLTIP: "Stop getting notified about this game",
                 GAME_PROFILE_ALSO_PLAYING: "Similar Games",
                 GAME_PROFILE_PUBLISHER: "Publisher",
                 GAME_PROFILE_PLATFORMS: "Platforms",
@@ -59513,6 +59518,8 @@
                 GAME_PROFILE_GAME_ICON_ALT: "Game icon for {game}",
                 GAME_PROFILE_GAME_ARTWORK_ALT: "Game artwork for {game}",
                 GAME_PROFILE_GUILD_ICON_ALT: "Icon for the {guildName} discord server",
+                GAME_PROFILE_GAME_REACT_REPLY_ALT: "Preview of {userName}'s activity playing {gameName}",
+                GAME_PROFILE_USER_AVATAR_ALT: "{userName}'s Discord avatar.",
                 LIGHTNING_CHECKOUT_NON_REFUNDABLE_DISCLAIMER: "Non-refundable. By clicking pay, you agree to our [Paid Services Terms]({paidURL})",
                 LIGHTNING_CHECKOUT_GENERIC_ERROR_TITLE: "There was a problem with your payment",
                 LIGHTNING_CHECKOUT_GENERIC_ERROR_DESCRIPTION: "Recheck your payment information, then try again.",
@@ -89294,15 +89301,16 @@
                         onEnter: s,
                         showPopout: u,
                         children: _,
-                        hide: c
-                    } = e, d = (0, l.ZP)();
+                        body: c,
+                        hide: d
+                    } = e, E = (0, l.ZP)();
                     return (0, i.jsx)(a.Popout, {
                         align: "right",
                         position: "bottom",
                         shouldShow: u,
                         disablePointerEvents: !1,
                         renderPopout: () => (0, i.jsx)("div", {
-                            className: o()([S.reply, "theme-".concat(d)]),
+                            className: o()([S.reply, "theme-".concat(E)]),
                             ref: t,
                             children: (0, i.jsx)(a.FocusLock, {
                                 containerRef: t,
@@ -89311,9 +89319,9 @@
                                         variant: "text-xs/bold",
                                         className: S.replyHeader,
                                         children: null != r ? r : f.Z.Messages.CHAT
-                                    }), (0, i.jsx)(m, {
+                                    }), c, (0, i.jsx)(m, {
                                         onEnter: e => {
-                                            s(e), c()
+                                            s(e), d()
                                         },
                                         placeholder: null != n ? n : f.Z.Messages.CHAT
                                     })]
@@ -89442,15 +89450,18 @@
             t.ZP = e => {
                 let {
                     onInteraction: t,
-                    replyHeaderText: n,
-                    replyPlaceholder: s,
-                    showReact: l = !0,
-                    showReply: u = !0
-                } = e, [_, c] = r.useState(!1), d = r.useRef(null);
-                return O(() => c(!1), d), (0, i.jsx)(i.Fragment, {
+                    showReact: n = !0,
+                    showReply: s = !0,
+                    popoutProps: l = {}
+                } = e, {
+                    replyHeaderText: u,
+                    replyPlaceholder: _,
+                    popoutBody: c
+                } = l, [d, E] = r.useState(!1), I = r.useRef(null);
+                return O(() => E(!1), I), (0, i.jsx)(i.Fragment, {
                     children: (0, i.jsxs)("div", {
                         className: S.reactions,
-                        children: [l && (0, i.jsx)(p, {
+                        children: [n && (0, i.jsx)(p, {
                             onSelectEmoji: e => {
                                 null != e && t({
                                     interactionType: T.L.ReactSubmit,
@@ -89463,14 +89474,15 @@
                                     interactionType: T.L.ReactBegin,
                                     emoji: null,
                                     reply: null
-                                }), c(!1)
+                                }), E(!1)
                             }
-                        }), u && (0, i.jsx)(A, {
-                            hide: () => c(!1),
-                            ref: d,
-                            headerText: n,
-                            placeholder: s,
-                            showPopout: _,
+                        }), s && (0, i.jsx)(A, {
+                            hide: () => E(!1),
+                            ref: I,
+                            headerText: u,
+                            placeholder: _,
+                            showPopout: d,
+                            body: c,
                             onEnter: e => {
                                 t({
                                     interactionType: T.L.ReplySubmit,
@@ -89488,7 +89500,7 @@
                                             interactionType: T.L.ReplyBegin,
                                             emoji: null,
                                             reply: null
-                                        }), c(!0)
+                                        }), E(!0)
                                     },
                                     children: (0, i.jsx)(a.ArrowAngleLeftUpIcon, {})
                                 })
@@ -96968,8 +96980,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305154", "305154"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305154")), t = 0), t
+                let t = parseInt((e = "305164", "305164"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305164")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125240,8 +125252,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305154",
-                    versionHash: "2ae485f86c0193d0e2a56da7d6fec60039388da0"
+                    buildNumber: "305164",
+                    versionHash: "d5c1ab2471305b1ed6366fd95d451a561c74cb1d"
                 }
             }
             n.d(t, {
@@ -184107,8 +184119,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719416024982",
-                                    build_number: "305154"
+                                    built_at: "1719417112193",
+                                    build_number: "305164"
                                 }
                             },
                             retries: 1
@@ -262583,7 +262595,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2ae485f86c0193d0e2a56da7d6fec60039388da0"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d5c1ab2471305b1ed6366fd95d451a561c74cb1d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281744,7 +281756,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305154"
+                                build_number: "305164"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289065,7 +289077,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305154", "305154"), 10);
+                let s = parseInt((n = "305164", "305164"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -336832,4 +336844,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.7fa96415e459e491c07c.js.map
+//# sourceMappingURL=54746.99da661f8d990b5ac4e9.js.map
