@@ -25279,7 +25279,8 @@ span.clanTag_a31c43 {
 
 .gameIcon_cfbfb9 {
     width: 64px;
-    height: 64px
+    height: 64px;
+    border-radius: 2px
 }
 
 .pillContainer_cfbfb9 {
@@ -43686,4 +43687,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.188d0f6ddca75c88a9a1.css.map*/
+/*# sourceMappingURL=54746.eed99d8b2ff887ba77b1.css.map*/
