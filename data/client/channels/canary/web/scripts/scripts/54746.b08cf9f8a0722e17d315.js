@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305303", ", Version Hash: ").concat("a390f6c8380a05b987a07d1d3c6d32eb57e40a6b")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305350", ", Version Hash: ").concat("f74a51994b0abdf6f696202ef208873f72ba35b2")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -42745,6 +42745,7 @@
                 EMBEDDED_ACTIVITIES_MOBILE_ACTIVITIES_SOON_SUBHEADER: "All Activities are available on Desktop!",
                 EMBEDDED_ACTIVITIES_ACTIVITIES_AVAILABLE_IN_TEXT: "Activities now available in text chats",
                 EMBEDDED_ACTIVITIES_TUNE_IN_PROMO_BANNER_ALT: "TuneIn app now available!",
+                EMBEDDED_ACTIVITIES_AMAZON_MUSIC_PROMO_BANNER_ALT: "Amazon Music Listening Party",
                 USE_EMBEDDED_ACTIVITIES: "Use Activities",
                 EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS: "You do not have permissions to use Activities in this channel.",
                 EMBEDDED_ACTIVITIES_INVALID_CHANNEL: "You cannot launch Activities in this channel.",
@@ -97120,8 +97121,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305303", "305303"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305303")), t = 0), t
+                let t = parseInt((e = "305350", "305350"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305350")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -97956,12 +97957,12 @@
                     case c.d4z.GROUP_DM:
                         return i.AtIcon;
                     case c.d4z.PRIVATE_THREAD:
-                        return i.TextLockIcon;
+                        return i.ThreadLockIcon;
                     case c.d4z.ANNOUNCEMENT_THREAD:
                     case c.d4z.PUBLIC_THREAD:
-                        if (e.isNSFW()) return i.TextWarningIcon;
+                        if (e.isNSFW()) return i.ThreadWarningIcon;
                         if (e.isForumPost()) return i.ChatIcon;
-                        else return i.TextIcon;
+                        else return i.ThreadIcon;
                     case c.d4z.GUILD_TEXT:
                         if (T) {
                             if (e.isNSFW()) return i.TextWarningIcon;
@@ -98019,9 +98020,10 @@
                     case c.d4z.GROUP_DM:
                         return i.AtIcon;
                     case c.d4z.PRIVATE_THREAD:
-                        return i.TextLockIcon;
+                        return i.ThreadLockIcon;
                     case c.d4z.ANNOUNCEMENT_THREAD:
                     case c.d4z.PUBLIC_THREAD:
+                        return i.ThreadIcon;
                     case c.d4z.GUILD_TEXT:
                     case c.d4z.GUILD_FORUM:
                     case c.d4z.GUILD_MEDIA:
@@ -125407,8 +125409,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305303",
-                    versionHash: "a390f6c8380a05b987a07d1d3c6d32eb57e40a6b"
+                    buildNumber: "305350",
+                    versionHash: "f74a51994b0abdf6f696202ef208873f72ba35b2"
                 }
             }
             n.d(t, {
@@ -147552,7 +147554,10 @@
                     this.audioSSRC = e, this.videoStreams = t, this.update()
                 }
                 setGoLiveStreamDowngraded(e) {
-                    this.throttleDowngradeChanges ? this.throttledSetStreamDowngraded(e) : this.setStreamDowngradedInternal(e)
+                    e !== this.downgraded && (this.throttleDowngradeChanges ? this.throttledSetStreamDowngraded(e) : this.setStreamDowngradedInternal(e))
+                }
+                isDowngraded() {
+                    return this.downgraded
                 }
                 setSimulcastDebugOverride(e) {
                     this.debugQualityOverride = e, this.update()
@@ -147580,7 +147585,7 @@
                     this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, n), this.emit("requested-streams-update", t)
                 }
                 setStreamDowngradedInternal(e) {
-                    e !== this.downgraded && (this.downgraded = e, this.update())
+                    this.downgraded = e, this.update()
                 }
                 getQualityConfig() {
                     let e = o().minBy(this.videoStreams, e => e.quality),
@@ -147835,18 +147840,19 @@
                 }
                 updateStats(e) {
                     for (let {
-                            connection: n,
-                            stats: i
+                            connection: o,
+                            stats: a
                         }
                         of e)
-                        if (n === this._connection) {
-                            let e = i.transport.inboundBitrateEstimate;
+                        if (o === this._connection) {
+                            let e = a.transport.inboundBitrateEstimate;
                             if (null != e) {
                                 if (e > 1e8) break;
                                 if (this._bandwidthSamples.push(e), this._bandwidthSamples.length > 15 && this._bandwidthSamples.shift(), 15 === this._bandwidthSamples.length) {
-                                    var t;
-                                    let e = r().mean(this._bandwidthSamples);
-                                    null === (t = this._goLiveQualityManager) || void 0 === t || t.setGoLiveStreamDowngraded(e < 1e6)
+                                    var t, n, i, s;
+                                    let e = r().mean(this._bandwidthSamples),
+                                        o = null !== (n = null === (t = this._goLiveQualityManager) || void 0 === t ? void 0 : t.isDowngraded()) && void 0 !== n && n;
+                                    o && e > 2e6 ? null === (i = this._goLiveQualityManager) || void 0 === i || i.setGoLiveStreamDowngraded(!1) : !o && e < 1e6 && (null === (s = this._goLiveQualityManager) || void 0 === s || s.setGoLiveStreamDowngraded(!0))
                                 }
                                 break
                             }
@@ -184447,8 +184453,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719430252762",
-                                    build_number: "305303"
+                                    built_at: "1719432761434",
+                                    build_number: "305350"
                                 }
                             },
                             retries: 1
@@ -235056,7 +235062,7 @@
                 if ((0, a.Z)(N), T.isPlatformEmbedded)(0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("79477"), n.e("32444")]).then(n.bind(n, 60594));
+                    } = await Promise.all([n.e("79477"), n.e("99926")]).then(n.bind(n, 60594));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         guildId: e,
@@ -263055,7 +263061,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a390f6c8380a05b987a07d1d3c6d32eb57e40a6b"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f74a51994b0abdf6f696202ef208873f72ba35b2"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282286,7 +282292,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305303"
+                                build_number: "305350"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289607,7 +289613,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305303", "305303"), 10);
+                let s = parseInt((n = "305350", "305350"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -337371,4 +337377,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.4999a508372ab5df9cab.js.map
+//# sourceMappingURL=54746.b08cf9f8a0722e17d315.js.map
