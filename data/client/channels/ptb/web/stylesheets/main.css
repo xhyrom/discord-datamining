@@ -19695,12 +19695,12 @@ div.cardContainer_c22357 {
 .streamerModeEnabledBtn_c50c8b {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -30932,8 +30932,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     justify-content: flex-end;
     border-radius: 8px;
     width: 100px;
-    height: 32px;
-    margin-top: 8px
+    height: 32px
 }
 
 .reply_d0fc0d {
@@ -43719,4 +43718,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.a1c94af347a269501cb9.css.map*/
+/*# sourceMappingURL=54746.da754437bedeabfe8de7.css.map*/
