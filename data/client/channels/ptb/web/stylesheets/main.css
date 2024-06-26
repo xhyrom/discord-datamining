@@ -19695,12 +19695,12 @@ div.cardContainer_c22357 {
 .streamerModeEnabledBtn_c50c8b {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -43719,4 +43719,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.070b30452c37ac3f28d5.css.map*/
+/*# sourceMappingURL=54746.a1c94af347a269501cb9.css.map*/
