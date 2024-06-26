@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305177", ", Version Hash: ").concat("f401d45443199ea8139fbb4a7ebe779abadf2e20")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305189", ", Version Hash: ").concat("5fec1dd1705a3cd6b4d309b97f78ef9d5b21ef42")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -74356,20 +74356,22 @@
                 T = n(979651),
                 h = n(285952),
                 f = n(543595),
-                S = n(503438),
-                N = n(802856),
-                A = n(606925),
-                m = n(719216),
-                O = n(429589),
-                p = n(276149),
-                R = n(636245),
-                g = n(551514),
-                C = n(611459),
-                v = n(544671),
-                L = n(757182),
-                D = n(910424),
-                M = n(981631),
-                P = n(366173);
+                S = n(374129),
+                N = n(639351),
+                A = n(503438),
+                m = n(802856),
+                O = n(606925),
+                p = n(719216),
+                R = n(429589),
+                g = n(276149),
+                C = n(636245),
+                v = n(551514),
+                L = n(611459),
+                D = n(544671),
+                M = n(757182),
+                P = n(910424),
+                y = n(981631),
+                U = n(366173);
             t.Z = (0, _.Z)(e => {
                 let {
                     activity: t,
@@ -74377,60 +74379,62 @@
                     user: r,
                     applicationStream: o,
                     className: _,
-                    guildId: y,
-                    channelId: U,
-                    source: b,
-                    color: G = u.Button.Colors.WHITE,
-                    look: w = u.Button.Looks.OUTLINED,
-                    type: x,
-                    onAction: B,
-                    isEmbedded: k = !1
-                } = e, V = (0, l.e7)([I.default], () => {
+                    guildId: b,
+                    channelId: G,
+                    source: w,
+                    color: x = u.Button.Colors.WHITE,
+                    look: B = u.Button.Looks.OUTLINED,
+                    type: k,
+                    onAction: V,
+                    isEmbedded: Z = !1
+                } = e, H = (0, l.e7)([I.default], () => {
                     let e = I.default.getCurrentUser();
                     return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-                }), Z = x === f.Y.PROFILE || x === f.Y.PROFILE_V2 || x === f.Y.SIMPLIFIED_PROFILE, H = x === f.Y.STREAM_PREVIEW || null != o, F = x === f.Y.SIMPLIFIED_PROFILE || x === f.Y.BITE_SIZE_POPOUT, Y = (0, S.Z)(t), j = Z ? h.Z.Align.END : h.Z.Align.STRETCH, W = Y || H ? h.Z.Direction.HORIZONTAL : h.Z.Direction.VERTICAL, K = (null == t ? void 0 : t.type) === M.IIU.HANG_STATUS, z = (0, l.e7)([T.Z, E.Z], () => {
+                }), F = k === f.Y.PROFILE || k === f.Y.PROFILE_V2 || k === f.Y.SIMPLIFIED_PROFILE, Y = k === f.Y.STREAM_PREVIEW || null != o, j = k === f.Y.SIMPLIFIED_PROFILE || k === f.Y.BITE_SIZE_POPOUT, W = (0, A.Z)(t), K = F ? h.Z.Align.END : h.Z.Align.STRETCH, z = W || Y ? h.Z.Direction.HORIZONTAL : h.Z.Direction.VERTICAL, q = (null == t ? void 0 : t.type) === y.IIU.HANG_STATUS, X = (0, l.e7)([T.Z, E.Z], () => {
                     var e;
-                    return K ? E.Z.getChannel(null === (e = T.Z.getVoiceStateForUser(r.id)) || void 0 === e ? void 0 : e.channelId) : null
-                }), q = W === h.Z.Direction.VERTICAL;
+                    return q ? E.Z.getChannel(null === (e = T.Z.getVoiceStateForUser(r.id)) || void 0 === e ? void 0 : e.channelId) : null
+                }), Q = z === h.Z.Direction.VERTICAL;
                 return (0, i.jsx)(h.Z, {
                     grow: 0,
-                    align: j,
-                    direction: W,
-                    wrap: q ? h.Z.Wrap.WRAP : h.Z.Wrap.NO_WRAP,
-                    className: s()(_, P.buttonsWrapper, q ? P.vertical : P.horizontal),
+                    align: K,
+                    direction: z,
+                    wrap: Q ? h.Z.Wrap.WRAP : h.Z.Wrap.NO_WRAP,
+                    className: s()(_, U.buttonsWrapper, Q ? U.vertical : U.horizontal),
                     children: (() => {
-                        if ((0, N.Z)(t)) return (0, i.jsx)(A.Z, {
-                            platform: c.Z.get(M.ABu.XBOX),
-                            look: w,
-                            color: G,
-                            onAction: B
+                        if ((0, m.Z)(t)) return (0, i.jsx)(O.Z, {
+                            platform: c.Z.get(y.ABu.XBOX),
+                            look: B,
+                            color: x,
+                            onAction: V,
+                            Icon: N.Z
                         }, "ConnectPlatformActivityButton");
-                        if ((null == t ? void 0 : t.platform) === M.M7m.PS4 || (null == t ? void 0 : t.platform) === M.M7m.PS5) return (0, i.jsx)(A.Z, {
-                            look: w,
-                            color: G,
-                            platform: c.Z.get(M.ABu.PLAYSTATION),
-                            onAction: B
+                        if ((null == t ? void 0 : t.platform) === y.M7m.PS4 || (null == t ? void 0 : t.platform) === y.M7m.PS5) return (0, i.jsx)(O.Z, {
+                            look: B,
+                            color: x,
+                            platform: c.Z.get(y.ABu.PLAYSTATION),
+                            onAction: V,
+                            Icon: S.Z
                         }, "ConnectPlatformActivityButton");
-                        if (Y) {
-                            let e = (0, i.jsx)(v.Z, {
+                        if (W) {
+                            let e = (0, i.jsx)(D.Z, {
                                     activity: t,
                                     user: r,
-                                    guildId: y,
-                                    channelId: U,
-                                    source: b,
-                                    look: w,
-                                    color: G,
-                                    onAction: B
+                                    guildId: b,
+                                    channelId: G,
+                                    source: w,
+                                    look: B,
+                                    color: x,
+                                    onAction: V
                                 }, "spotify-activity-sync-button"),
-                                n = (0, i.jsx)(C.Z, {
+                                n = (0, i.jsx)(L.Z, {
                                     activity: t,
                                     user: r,
-                                    source: b,
-                                    look: w,
-                                    color: G,
-                                    onAction: B
+                                    source: w,
+                                    look: B,
+                                    color: x,
+                                    onAction: V
                                 }, "spotify-activity-play-button");
-                            return F ? (0, i.jsxs)(i.Fragment, {
+                            return j ? (0, i.jsxs)(i.Fragment, {
                                 children: [e, n]
                             }) : (0, i.jsxs)(i.Fragment, {
                                 children: [n, e]
@@ -74438,52 +74442,52 @@
                         }
                         if ((0, d.dS)(t)) {
                             let e = (0, d.rq)(t);
-                            return null == e ? null : (0, i.jsx)(R.Z, {
+                            return null == e ? null : (0, i.jsx)(C.Z, {
                                 guildId: e.guildId,
                                 channelId: e.channelId,
-                                color: G,
-                                look: w,
-                                isProfile: Z,
-                                onAction: B
+                                color: x,
+                                look: B,
+                                isProfile: F,
+                                onAction: V
                             }, e.channelId)
                         }
-                        return H ? (0, i.jsx)(D.Z, {
-                            isCurrentUser: V.id === r.id,
-                            color: G,
-                            look: w,
+                        return Y ? (0, i.jsx)(P.Z, {
+                            isCurrentUser: H.id === r.id,
+                            color: x,
+                            look: B,
                             applicationStream: o,
-                            onAction: B
-                        }, "watch-button") : K && null != z ? (0, i.jsx)(p.Z, {
-                            color: G,
-                            look: w,
-                            hangStatusChannel: z,
-                            onAction: B
+                            onAction: V
+                        }, "watch-button") : q && null != X ? (0, i.jsx)(g.Z, {
+                            color: x,
+                            look: B,
+                            hangStatusChannel: X,
+                            onAction: V
                         }, "hang-status-button") : (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(L.Z, {
+                            children: [(0, i.jsx)(M.Z, {
                                 activity: t,
-                                color: G,
-                                look: w,
-                                onAction: B
-                            }, "watch-button"), (0, i.jsx)(O.Z, {
+                                color: x,
+                                look: B,
+                                onAction: V
+                            }, "watch-button"), (0, i.jsx)(R.Z, {
                                 activity: t,
                                 embeddedActivity: n,
                                 user: r,
-                                color: G,
-                                look: w,
-                                isEmbedded: k,
-                                onAction: B
-                            }, "join-activity-button"), (0, i.jsx)(g.Z, {
+                                color: x,
+                                look: B,
+                                isEmbedded: Z,
+                                onAction: V
+                            }, "join-activity-button"), (0, i.jsx)(v.Z, {
                                 activity: t,
                                 user: r,
-                                color: G,
-                                look: w,
-                                onAction: B
-                            }, "notify-button"), (0, i.jsx)(m.Z, {
+                                color: x,
+                                look: B,
+                                onAction: V
+                            }, "notify-button"), (0, i.jsx)(p.Z, {
                                 user: r,
-                                color: G,
-                                look: w,
+                                color: x,
+                                look: B,
                                 activity: t,
-                                onAction: B
+                                onAction: V
                             }, "custom-activity-button")]
                         })
                     })()
@@ -74538,9 +74542,18 @@
                     platform: t,
                     color: n,
                     look: _,
-                    onAction: c
+                    onAction: c,
+                    Icon: d
                 } = e;
-                return (0, r.e7)([o.Z], () => o.Z.getAccounts().some(e => e.type === t.type)) ? null : (0, i.jsx)(a.Z, {
+                if ((0, r.e7)([o.Z], () => o.Z.getAccounts().some(e => e.type === t.type))) return null;
+                let E = null != d ? (0, i.jsx)(d, {
+                    className: u.platformIcon
+                }) : (0, i.jsx)("img", {
+                    alt: "",
+                    className: u.platformIcon,
+                    src: t.icon.whiteSVG
+                });
+                return (0, i.jsx)(a.Z, {
                     onClick: () => {
                         null == c || c(), (0, s.Z)({
                             platformType: t.type,
@@ -74552,11 +74565,7 @@
                     fullWidth: !0,
                     children: (0, i.jsxs)("div", {
                         className: u.flex,
-                        children: [(0, i.jsx)("img", {
-                            alt: "",
-                            className: u.platformIcon,
-                            src: t.icon.whiteSVG
-                        }), l.Z.Messages.USER_ACTIVITY_CONNECT_PLATFORM.format({
+                        children: [E, l.Z.Messages.USER_ACTIVITY_CONNECT_PLATFORM.format({
                             platform: t.name
                         })]
                     })
@@ -97090,8 +97099,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305177", "305177"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305177")), t = 0), t
+                let t = parseInt((e = "305189", "305189"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305189")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125362,8 +125371,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305177",
-                    versionHash: "f401d45443199ea8139fbb4a7ebe779abadf2e20"
+                    buildNumber: "305189",
+                    versionHash: "5fec1dd1705a3cd6b4d309b97f78ef9d5b21ef42"
                 }
             }
             n.d(t, {
@@ -125897,7 +125906,7 @@
                 u = n(31336),
                 _ = n(19759);
             let c = (0, s.Un)({
-                createPromise: () => Promise.all([n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("19503"), n.e("89350"), n.e("39709"), n.e("80451"), n.e("3336"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("39612"), n.e("29549"), n.e("32776"), n.e("95900"), n.e("33053"), n.e("8016"), n.e("68136"), n.e("50654"), n.e("76540"), n.e("31605"), n.e("6380"), n.e("22646"), n.e("11250"), n.e("87624"), n.e("95854"), n.e("5528"), n.e("3746"), n.e("43331"), n.e("18101"), n.e("65840"), n.e("30419"), n.e("25788"), n.e("77172"), n.e("18824"), n.e("95393"), n.e("86977"), n.e("3729"), n.e("41662"), n.e("81539"), n.e("90508"), n.e("49508"), n.e("8739"), n.e("58286"), n.e("22173"), n.e("54535"), n.e("65371"), n.e("30243"), n.e("3084"), n.e("8540"), n.e("65392"), n.e("68241"), n.e("97458"), n.e("130"), n.e("36148"), n.e("62993"), n.e("30676"), n.e("37941"), n.e("36439"), n.e("30634"), n.e("13419")]).then(n.bind(n, 678717)),
+                createPromise: () => Promise.all([n.e("96427"), n.e("77298"), n.e("23357"), n.e("23755"), n.e("19503"), n.e("89350"), n.e("39709"), n.e("80451"), n.e("3336"), n.e("15972"), n.e("12013"), n.e("6416"), n.e("39612"), n.e("29549"), n.e("32776"), n.e("95900"), n.e("33053"), n.e("8016"), n.e("68136"), n.e("50654"), n.e("76540"), n.e("31605"), n.e("6380"), n.e("22646"), n.e("11250"), n.e("87624"), n.e("95854"), n.e("5528"), n.e("3746"), n.e("43331"), n.e("18101"), n.e("65840"), n.e("30419"), n.e("25788"), n.e("77172"), n.e("18824"), n.e("95393"), n.e("86977"), n.e("80229"), n.e("41662"), n.e("81539"), n.e("90508"), n.e("49508"), n.e("8739"), n.e("58286"), n.e("22173"), n.e("54535"), n.e("65371"), n.e("30243"), n.e("3084"), n.e("8540"), n.e("65392"), n.e("68241"), n.e("97458"), n.e("130"), n.e("36148"), n.e("62993"), n.e("30676"), n.e("37941"), n.e("36439"), n.e("30634"), n.e("13419")]).then(n.bind(n, 678717)),
                 webpackId: 678717
             });
 
@@ -184338,8 +184347,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719419805068",
-                                    build_number: "305177"
+                                    built_at: "1719420784587",
+                                    build_number: "305189"
                                 }
                             },
                             retries: 1
@@ -227230,78 +227239,85 @@
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return I
+                    return f
                 }
             });
             var i = n(735250);
             n(470079);
-            var r = n(442837),
-                s = n(717881),
-                o = n(906732),
-                a = n(199902),
-                l = n(158776),
-                u = n(594174),
-                _ = n(785717),
-                c = n(221292),
-                d = n(981631),
-                E = n(387690);
+            var r = n(120356),
+                s = n.n(r),
+                o = n(442837),
+                a = n(717881),
+                l = n(906732),
+                u = n(199902),
+                _ = n(158776),
+                c = n(594174),
+                d = n(332390),
+                E = n(785717),
+                I = n(221292),
+                T = n(981631),
+                h = n(387690);
 
-            function I(e) {
+            function f(e) {
                 let {
                     user: t,
                     guild: n,
-                    channelId: I,
-                    onClose: T
+                    channelId: r,
+                    onClose: f
                 } = e, {
-                    analyticsLocations: h,
-                    newestAnalyticsLocation: f
-                } = (0, o.ZP)(), {
-                    trackUserProfileAction: S,
-                    ...N
-                } = (0, _.KZ)(), A = (0, r.e7)([u.default], () => u.default.getCurrentUser()), {
-                    isApplicationStreaming: m,
-                    activity: O
-                } = (0, r.cj)([a.Z, l.Z], () => {
-                    let e = null != a.Z.getAnyStreamForUser(t.id);
+                    analyticsLocations: S,
+                    newestAnalyticsLocation: N
+                } = (0, l.ZP)(), {
+                    trackUserProfileAction: A,
+                    ...m
+                } = (0, E.KZ)(), O = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+                    messageCtaEnabled: p
+                } = (0, d.l)({
+                    location: "BiteSizeProfileActivitySection"
+                }), {
+                    isApplicationStreaming: R,
+                    activity: g
+                } = (0, o.cj)([u.Z, _.Z], () => {
+                    let e = null != u.Z.getAnyStreamForUser(t.id);
                     return {
                         isApplicationStreaming: e,
-                        activity: e ? l.Z.findActivity(t.id, e => {
+                        activity: e ? _.Z.findActivity(t.id, e => {
                             let {
                                 type: t
                             } = e;
-                            return t === d.IIU.PLAYING
-                        }) : l.Z.findActivity(t.id, e => {
+                            return t === T.IIU.PLAYING
+                        }) : _.Z.findActivity(t.id, e => {
                             let {
                                 type: t
                             } = e;
-                            return t !== d.IIU.CUSTOM_STATUS
+                            return t !== T.IIU.CUSTOM_STATUS
                         })
                     }
                 });
-                return (0, i.jsx)(s.Z, {
-                    type: s.P.BITE_SIZE_POPOUT,
-                    activity: O,
-                    className: E.activity,
-                    source: f,
+                return (0, i.jsx)(a.Z, {
+                    type: a.P.BITE_SIZE_POPOUT,
+                    activity: g,
+                    className: h.activity,
+                    source: N,
                     user: t,
                     guildId: null == n ? void 0 : n.id,
-                    channelId: I,
-                    onOpenGameProfile: T,
+                    channelId: r,
+                    onOpenGameProfile: f,
                     onAction: () => {
-                        S({
+                        A({
                             action: "JOIN_ACTIVITY"
-                        }), (0, c.Ac)({
-                            activityType: m ? d.IIU.STREAMING : null == O ? void 0 : O.type,
-                            activityName: null == O ? void 0 : O.name,
-                            activityPlatform: null == O ? void 0 : O.platform,
-                            activitySessionId: null == O ? void 0 : O.session_id,
-                            applicationId: null == O ? void 0 : O.application_id,
-                            analyticsLocations: h,
-                            ...N
-                        }), null == T || T()
+                        }), (0, I.Ac)({
+                            activityType: R ? T.IIU.STREAMING : null == g ? void 0 : g.type,
+                            activityName: null == g ? void 0 : g.name,
+                            activityPlatform: null == g ? void 0 : g.platform,
+                            activitySessionId: null == g ? void 0 : g.session_id,
+                            applicationId: null == g ? void 0 : g.application_id,
+                            analyticsLocations: S,
+                            ...m
+                        }), null == f || f()
                     },
-                    showActions: t.id !== (null == A ? void 0 : A.id),
-                    actionColor: E.buttonColor,
+                    showActions: t.id !== (null == O ? void 0 : O.id),
+                    actionColor: s()(h.buttonColor, p ? h.engagementExpButtonColor : void 0),
                     showChannelDetails: !0
                 })
             }
@@ -227650,7 +227666,6 @@
                 return h ? (0, i.jsx)(m.Z, {
                     fullWidth: !0,
                     variant: "text",
-                    look: a.Button.Looks.BLANK,
                     color: o()(a.Button.Colors.BRAND, R.color),
                     onClick: () => {
                         T({
@@ -262814,7 +262829,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f401d45443199ea8139fbb4a7ebe779abadf2e20"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5fec1dd1705a3cd6b4d309b97f78ef9d5b21ef42"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270206,6 +270221,40 @@
                 })
             }
         },
+        374129: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return s
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(325767);
+
+            function s(e) {
+                let {
+                    width: t = 18,
+                    height: n = 18,
+                    color: s = "currentColor",
+                    foreground: o,
+                    ...a
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, r.Z)(a),
+                    width: t,
+                    height: n,
+                    viewBox: "0 0 18 18",
+                    children: (0, i.jsx)("path", {
+                        className: o,
+                        fillRule: "evenodd",
+                        clipRule: "evenodd",
+                        d: "M17.7516 12.8667C17.4035 13.3058 16.5507 13.6191 16.5507 13.6191L10.2065 15.8979V14.2173L14.8754 12.5538C15.4052 12.364 15.4866 12.0956 15.0559 11.9547C14.6261 11.8135 13.8477 11.854 13.3175 12.0446L10.2065 13.1403V11.3962L10.3858 11.3355C10.3858 11.3355 11.2848 11.0173 12.5488 10.8773C13.8129 10.738 15.3607 10.8963 16.5758 11.3569C17.9451 11.7896 18.0993 12.4275 17.7516 12.8667ZM10.8104 10.005V5.70728C10.8104 5.20255 10.7173 4.73788 10.2437 4.60633C9.88107 4.49017 9.65602 4.82693 9.65602 5.33126V16.0938L6.75349 15.1726V2.34009C7.9876 2.56918 9.78554 3.11075 10.7521 3.43658C13.2102 4.2805 14.0436 5.33085 14.0436 7.69748C14.0436 10.0042 12.6197 10.8785 10.8104 10.005ZM1.42767 14.0417C0.0219393 13.6458 -0.212012 12.8209 0.428722 12.3457C1.02089 11.907 2.02793 11.5767 2.02793 11.5767L6.18966 10.0969V11.7839L3.19485 12.8557C2.66583 13.0456 2.58447 13.3143 3.01432 13.4552C3.44458 13.596 4.22334 13.556 4.75317 13.3657L6.18966 12.8444V14.3537C6.09859 14.3699 5.997 14.3861 5.90309 14.4019C4.4662 14.6367 2.9358 14.5387 1.42767 14.0417Z",
+                        fill: s
+                    })
+                })
+            }
+        },
         395361: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -270241,6 +270290,42 @@
                             width: "16",
                             height: "16"
                         })]
+                    })
+                })
+            }
+        },
+        639351: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                Z: function() {
+                    return s
+                }
+            });
+            var i = n(735250);
+            n(470079);
+            var r = n(325767);
+
+            function s(e) {
+                let {
+                    width: t = 16,
+                    height: n = 16,
+                    color: s = "currentColor",
+                    foreground: o,
+                    ...a
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, r.Z)(a),
+                    width: t,
+                    height: n,
+                    viewBox: "0 0 60 60",
+                    children: (0, i.jsx)("g", {
+                        fill: "none",
+                        fillRule: "evenodd",
+                        children: (0, i.jsx)("path", {
+                            className: o,
+                            fill: s,
+                            d: "M8.95185131,8.62650012 L8.92775494,8.65059649 C3.20486729,14.2891468 -0.0119979765,21.9758886 5.02080018e-05,29.9999795 C-0.0119979765,36.56624 2.14462705,42.9517778 6.13257613,48.1686417 C6.16872068,48.2168345 6.24100979,48.252979 6.28920253,48.2168345 C6.33739527,48.1806899 6.34944345,48.120449 6.32534708,48.0602081 C4.03619202,40.9879237 15.722931,23.8433572 21.7711196,16.6626392 C21.795216,16.6385428 21.8193124,16.6144465 21.8193124,16.5783019 C21.8193124,16.5421573 21.795216,16.5060128 21.7590715,16.4819164 C11.6024519,6.37348961 8.8795622,8.68674104 8.92775494,8.65059649 M51.048208,8.62650012 L51.0723044,8.65059649 C56.795192,14.2770987 60.0000091,21.9758886 59.9879609,29.9999795 C60.0000091,36.56624 57.8433841,42.9517778 53.855435,48.1686417 C53.8192905,48.2168345 53.7470014,48.252979 53.6988086,48.2168345 C53.6506159,48.1806899 53.6506159,48.120449 53.6626641,48.0602081 C55.9518191,40.9879237 44.2650801,23.831309 38.2289397,16.650591 C38.2048433,16.6264946 38.180747,16.6023983 38.180747,16.5662537 C38.180747,16.518061 38.2048433,16.4939646 38.2409879,16.4698682 C48.4096556,6.36144143 51.0964008,8.68674104 51.0602562,8.65059649 M30.0000297,0 C36.0482183,0 41.0361667,1.66264946 45.626525,4.38553917 C45.6867659,4.40963554 45.6988141,4.48192464 45.6747177,4.53011738 C45.6506214,4.57831012 45.5903804,4.5903583 45.5301395,4.57831012 C39.7229146,3.32529893 30.8915953,8.33734369 30.0602706,8.84336744 C30.0361742,8.85541562 30.024126,8.86746381 30.0000297,8.86746381 C29.9759333,8.86746381 29.9518369,8.85541562 29.9397887,8.84336744 C27.7229228,7.56625988 19.5663019,3.28915437 14.4217271,4.61445467 C14.3614862,4.62650286 14.3012452,4.61445467 14.2771489,4.56626193 C14.2530525,4.50602101 14.2771489,4.44578009 14.3253416,4.42168372 C18.9156999,1.66264946 23.9638892,0 30.0000297,0 M30.0000297,24.0602245 C30.0361742,24.0602245 30.0723188,24.0843209 30.0964151,24.1084172 C39.0723126,30.9397379 54.4337479,47.8071962 49.7470041,52.5782773 L49.7590523,52.5662291 L49.7590523,52.5782773 L49.7470041,52.5782773 C44.2771283,57.3734547 37.2650849,60.0120071 30.0000297,59.9999589 C22.7349744,60.0120071 15.7108828,57.3734547 10.2530552,52.5782773 L10.2410071,52.5662291 L10.2530552,52.5782773 C5.56631146,47.8071962 20.9277467,30.9276897 29.9036442,24.1084172 C29.9156924,24.0843209 29.9638851,24.0602245 30.0000297,24.0602245"
+                        })
                     })
                 })
             }
@@ -281975,7 +282060,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305177"
+                                build_number: "305189"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289296,7 +289381,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305177", "305177"), 10);
+                let s = parseInt((n = "305189", "305189"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -335361,7 +335446,8 @@
             "use strict";
             e.exports = {
                 activity: "activity_cd74cc",
-                buttonColor: "buttonColor_cd74cc"
+                buttonColor: "buttonColor_cd74cc",
+                engagementExpButtonColor: "engagementExpButtonColor_cd74cc"
             }
         },
         148443: function(e, t, n) {
@@ -337054,4 +337140,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.93139a3f4af163d79d0b.js.map
+//# sourceMappingURL=54746.09af6e72769e311256b6.js.map

@@ -33280,6 +33280,10 @@ h3.improved_f017d0:after {
     width: 100%
 }
 
+.repliedTextPreview_ec86aa .repliedTextContent_ec86aa a {
+    word-break: break-all
+}
+
 .repliedTextPreview_ec86aa {
     display: flex;
     max-height: 1.25em
@@ -34421,6 +34425,49 @@ h3.improved_f017d0:after {
 
 .buttonColor_cd74cc:active {
     opacity: .9
+}
+
+.buttonColor_cd74cc:disabled,
+.buttonColor_cd74cc[aria-disabled=true] {
+    opacity: .5
+}
+
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc {
+    background-color: hsl(var(--white-500-hsl)/.24);
+    color: var(--interactive-active);
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc:hover {
+    opacity: .8
+}
+
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc:active {
+    opacity: .9
+}
+
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc:disabled,
+.theme-dark.custom-profile-theme .engagementExpButtonColor_cd74cc[aria-disabled=true] {
+    opacity: .5
+}
+
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc {
+    background-color: hsl(var(--white-500-hsl)/.72);
+    color: var(--interactive-active);
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc:hover {
+    opacity: .8
+}
+
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc:active {
+    opacity: .9
+}
+
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc:disabled,
+.theme-light.custom-profile-theme .engagementExpButtonColor_cd74cc[aria-disabled=true] {
+    opacity: .5
 }
 
 .viewFullBio_fc5c48 {
@@ -43622,4 +43669,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.b76d4a9b10c6edfe74ce.css.map*/
+/*# sourceMappingURL=54746.9ceb86d5707f7483ee59.css.map*/
