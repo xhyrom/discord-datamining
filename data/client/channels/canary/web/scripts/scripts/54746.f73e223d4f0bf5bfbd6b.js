@@ -40735,7 +40735,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305104", ", Version Hash: ").concat("943ad104f3ac957124c9652a538252be5dc01818")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305115", ", Version Hash: ").concat("f38acded98cd61a3f1289c09f0548c381045ea9e")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -49364,9 +49364,6 @@
                 TERMS_AND_CONDITIONS: "Terms & Conditions",
                 OUTBOUND_PROMOTION_NOTICE: "Hey, you have something waiting for you in your gift inventory! Don’t forget to claim it before it’s lost.",
                 TAKE_ME_THERE: "Take me there",
-                PREMIUM_UPSELL_ANIMATED_AVATAR: "Want an animated avatar?",
-                PREMIUM_UPSELL_ANIMATED_AVATAR_SUBTITLE: "Join Nitro to get this feature and more!",
-                PREMIUM_UPSELL_ANIMATED_AVATAR_TEXT: "Get Nitro and you'll be able to set .gifs as your profile picture",
                 PREMIUM_UPSELL_EMOJI_ACTIVE_MOBILE: "You can’t use this emoji right now",
                 PREMIUM_UPSELL_EMOJI_PASSIVE_MOBILE: "Get upgraded emoji power!",
                 PREMIUM_UPSELL_EMOJI_MOBILE: "You can’t use this emoji right now",
@@ -54035,7 +54032,6 @@
                 USER_SETTINGS_AVATAR_SPECS: "Upload a PNG or JPG under 8MB. Images should be at least 128x128.",
                 USER_SETTINGS_PROFILE_BANNER: "Profile Banner",
                 USER_SETTINGS_ADD_BANNER_SPECS: "Turn your favorite photos, memes, or GIFs into profile banners!",
-                USER_SETTINGS_CUSTOMIZE_PROFILE_TITLE: "Customizing My Profile",
                 USER_SETTINGS_CUSTOMIZE_PROFILE_EXAMPLE_BUTTON: "Example Button",
                 USER_SETTINGS_REMOVE_BANNER: "Remove Banner",
                 USER_SETTINGS_RESET_BANNER: "Reset Banner",
@@ -54121,7 +54117,6 @@
                 PROFILE_USER_BADGE_A11Y_LABEL: "Badge, {badgeLabel}",
                 PROFILE_HEADING_COPY_ID_A11Y_HINT: "double tap to copy user I.D",
                 PROFILE_CUSTOMIZATION_PREVIEW: "Preview",
-                PROFILE_CUSTOMIZATION_ACTIVITY_TIME: "$[](renderTimeHook) elapsed",
                 USER_SETTINGS_BANNER_A11Y_LABEL: "Change Profile Banner",
                 PROFILE_CUSTOMIZATION_GUILD_SELECT_TITLE: "Choose a Server",
                 PROFILE_CUSTOMIZATION_GUILD_SELECT_PLACEHOLDER: "Search servers",
@@ -54196,7 +54191,6 @@
                 BUG_REPORT_ATTACHMENTS: "Attachments",
                 BUG_REPORT_ADD_ATTACHMENTS: "Add attachment(s)",
                 BUG_REPORT_UPLOAD_ATTACHMENT: "Upload Attachment",
-                UNLOCK_GUILD_MEMBER_AVATAR: "Unlock\nAvatar",
                 GUILD_IDENTITY_UPSELL_MODAL_TITLE: "Express yourself fully with server profiles",
                 GUILD_IDENTITY_UPSELL_MODAL_BODY: "Be who you want and use a different avatar, banner, and bio in each of your servers, unlock animated avatars, and more with [Discord Nitro!](onAndMore)",
                 GUILD_IDENTITY_BANNER_A11Y_LABEL: "Change Server Profile Banner",
@@ -96975,8 +96969,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305104", "305104"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305104")), t = 0), t
+                let t = parseInt((e = "305115", "305115"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305115")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125247,8 +125241,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305104",
-                    versionHash: "943ad104f3ac957124c9652a538252be5dc01818"
+                    buildNumber: "305115",
+                    versionHash: "f38acded98cd61a3f1289c09f0548c381045ea9e"
                 }
             }
             n.d(t, {
@@ -184114,8 +184108,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719366459195",
-                                    build_number: "305104"
+                                    built_at: "1719369193894",
+                                    build_number: "305115"
                                 }
                             },
                             retries: 1
@@ -262578,7 +262572,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "943ad104f3ac957124c9652a538252be5dc01818"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f38acded98cd61a3f1289c09f0548c381045ea9e"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281739,7 +281733,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305104"
+                                build_number: "305115"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289060,7 +289054,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305104", "305104"), 10);
+                let s = parseInt((n = "305115", "305115"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -336826,4 +336820,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.818b3358880c10099e7d.js.map
+//# sourceMappingURL=54746.f73e223d4f0bf5bfbd6b.js.map
