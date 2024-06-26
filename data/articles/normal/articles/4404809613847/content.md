@@ -1,7 +1,7 @@
 <h3><span style="font-weight: 400;">To learn more about Threads, <a href="https://support.discord.com/hc/en-us/articles/4403205878423" target="_blank" rel="noopener noreferrer">make sure to check out this article here</a>!<br><strong>[Update as of 8/19/21] <br></strong>- We’re updating Thread permissions! Later in September, all the permission changes listed in this article will go live! <a href="#h_01FDGC4JW2D665Y230KPKWQZPN" target="_self" rel="undefined">See what’s changing here</a>.<br></span></h3>
 <p><span style="font-weight: 400;">Since <strong><a href="https://support.discord.com/hc/en-us/articles/4403205878423" target="_blank" rel="noopener noreferrer">Threads</a></strong> are a new surface to consider when moderating servers, we wanted to give our communities the opportunity to choose where and how they can be used. Not every community will want every member to be able to create a Thread, and that’s okay. </span></p>
 <p><span style="font-weight: 400;">Having control over who can use Threads is important as a server grows in size and scope.</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4405045040663/0_HYed_1mRELDpUACo.png" alt="0_HYed_1mRELDpUACo.png" width="756" height="303"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4405045040663" alt="0_HYed_1mRELDpUACo.png" width="756" height="303"></span></p>
 <p><span class="wysiwyg-font-size-large"><strong>What does this article cover? </strong></span></p>
 <ul>
     <li><a href="#h_01FDGC4JW2D665Y230KPKWQZPN" target="_self"><strong>Thread Updates</strong></a></li>
@@ -57,7 +57,7 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Create Private Threads</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Manage Threads</span></li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4406694312727/image6.png" alt="image6.png" width="535" height="370"><img src="https://support.discord.com/hc/article_attachments/4406694322455/image1.png" alt="image1.png" width="540" height="184"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4406694312727" alt="image6.png" width="535" height="370"><img src="https://support.discord.com/hc/article_attachments/4406694322455" alt="image1.png" width="540" height="184"></p>
 <h1 id="h_01FBM6Z82HQQ7PV3CCDPKEYC3M"><span style="font-weight: 400;">General Thread Moderation Management</span></h1>
 <p><span style="font-weight: 400;">Generally, threads inherit permissions from the channel in which they were created. </span></p>
 <p><span style="font-weight: 400;">If members are able to view a channel, then they are also able to view threads in that channel. </span></p>
@@ -101,15 +101,15 @@
     </li>
 </ul>
 <p>Additionally, sometimes when creating a private thread and you <strong>don’t</strong> want to allow others to add people to it, you can uncheck the "Anyone can invite" option in the Thread dropdown menu!</p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;" src="https://support.discord.com/hc/article_attachments/4406694114967/image5.png" alt="image5.png" width="423" height="780"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;" src="https://support.discord.com/hc/article_attachments/4406694114967" alt="image5.png" width="423" height="780"></span></p>
 <p> </p>
 <h2 id="h_01FBSVGX50W2FWBRJFZ19RMFT1"><span style="font-weight: 400;">Slow Mode</span></h2>
 <p><span style="font-weight: 400;">Discord already allows slowmode to be set on a channel. When set, it allows users to only send one message and create one thread within your designated time interval. For example, if you set slowmode to 1 minute, users can only create one thread and send one message per minute.</span></p>
 <p><span style="font-weight: 400;">However, for even more granularity, slowmode can also be set for each individual thread. This won’t copy over from the parent channel and only moderators with the “Manage Threads” permission can adjust this setting.</span></p>
 <p><span style="font-weight: 400;">You can set specific slow modes in each individual thread by right-clicking a thread (or by clicking on the three dot symbol at the top of your window), and then selecting <strong>Edit Thread. </strong></span></p>
 <p><span style="font-weight: 400;">Then once you're in the Threads Settings menu, you can move the slowmode slider to your desired time interval!</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4405250629911/edit_thread_screenshot.png" alt="edit_thread_screenshot.png" width="613" height="382"></p>
-<p><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4405198133655/thread.png" alt="thread.png"></span></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4405250629911" alt="edit_thread_screenshot.png" width="613" height="382"></p>
+<p><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4405198133655" alt="thread.png"></span></p>
 <h1 id="h_01FBJE3H1M0DM4KYZ027GDVJF8">Tips for Moderating Threads</h1>
 <p>With Threads being a new feature, we wanted to share some tips and tricks to help get you started with moderating Threads and Thread permissions</p>
 <p><strong>1. Use the <a href="https://support.discord.com/hc/en-us/articles/360055709773" target="_blank" rel="noopener noreferrer">View Server as Role</a> feature within your Role Settings to test your Thread permissions! </strong></p>
@@ -130,4 +130,4 @@
 <ul>
     <li>New features are exciting to test for the first time, but it may cause server chaos if Threads are spammed within an already established channel. Having a dedicated testing ground will help avoid both figurative and literal loose Threads. </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4405079321495/testing_threads_demo_screenshot.png" alt="testing_threads_demo_screenshot.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4405079321495" alt="testing_threads_demo_screenshot.png"></p>

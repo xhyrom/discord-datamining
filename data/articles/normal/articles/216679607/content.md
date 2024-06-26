@@ -1,4 +1,4 @@
-<p id="docs-internal-guid-bab4ed58-7fff-36bf-6b52-dcf3ee538cae">Do you own a server where many members come together? If so, Discord provides multiple security options called <strong>Verification Levels</strong>. By setting the Verification Levels within a server, you and your members can stay protected and safe.  </p>
+<p id="docs-internal-guid-bab4ed58-7fff-36bf-6b52-dcf3ee538cae">Do you own a server where many members come together? If so, Discord provides multiple security options called <strong>Verification Levels</strong>. By setting the Verification Levels within a server, you and your members can stay protected and safe. </p>
 <p id="docs-internal-guid-8be697c9-7fff-8ba9-f4a6-4ebcc162072d"><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
 <ul>
     <li>
@@ -18,7 +18,7 @@
             <li><a href="#docs-internal-guid-34e25a79-7fff-596d-21b0-2db3815eebcd" target="_self">Mobile</a></li>
         </ul>
     </li>
-    <li><a href="#docs-internal-guid-1131d2ad-7fff-f3fd-9f2a-f5d89780f46b">Still having issues?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/216679607#docs-internal-guid-1131d2ad-7fff-f3fd-9f2a-f5d89780f46b">Still having issues?</a></li>
 </ul>
 <h1 id="docs-internal-guid-1a87b9bb-7fff-2371-ce0a-92178bbcc6d0">What are Verification Levels?</h1>
 <p>Verification Levels refer to the levels of security a user must meet before they're <strong>allowed to send text messages in a channel</strong>. This is particularly useful in preventing bots and spam accounts from mass-joining your server, especially if you've made it public or have a never-expiring Instant Invite hanging around the web somewhere. We can see there's five different levels of verification to check out here, so let's break them down piece by piece:</p>

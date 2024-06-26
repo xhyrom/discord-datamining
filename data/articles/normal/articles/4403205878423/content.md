@@ -2,7 +2,7 @@
 <p>Discord can feel like an ocean sometimes with walls of text rapidly flooding your screen. Interesting conversations can be confusing to follow in the middle of other conversations and may just disappear entirely.</p>
 <p>With <strong>Threads</strong>, you can belong to any conversation important to you and follow at your own pace.</p>
 <p><em>No, this is not the new drip we are selling in the merch store. </em></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4405086336279/threads_demo_gif.gif" alt="threads_demo_gif.gif" width="648" height="365"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4405086336279" alt="threads_demo_gif.gif" width="648" height="365"></p>
 <h1><strong>What does this FAQ cover?</strong></h1>
 <ul>
     <li><a href="#h_01F99Z9HJEBXXK8JJ45SZAE0FC" target="_self"><strong>What are Threads?</strong></a></li>
@@ -86,12 +86,12 @@
         </ul>
     </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4406694620055/image6.png" alt="image6.png" width="565" height="391"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4406694620055" alt="image6.png" width="565" height="391"></p>
 <h2 id="h_01GDXVYE6AZA3QRSB42F5AGGYG"><span style="font-weight: 400;">How do I create a Thread?</span></h2>
 <p><span style="font-weight: 400;">If you have the "Create Public Threads" permission and want to create a Thread, hover over any existing message you would like to create a thread from and press on the <strong>#</strong> icon to create a thread. </span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403200565911/create_thread.gif" alt="create_thread.gif" width="546" height="524"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403200565911" alt="create_thread.gif" width="546" height="524"></span></p>
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">You can also create a new thread by pressing the + button in your chat bar</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403368742295/add_new_thread.png" alt="add_new_thread.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403368742295" alt="add_new_thread.png"></span></p>
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">You may choose the visibility of your thread with the Hide After Inactivity drop-down menu:</span></p>
 <h2 id="h_01FBQZH4F0E9RX2K078Y6EG6QB" class="wysiwyg-text-align-left"><span style="font-weight: 400;">Private Threads</span></h2>
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">You will need the "Create Private Threads" permission to create private threads. <br><br>To create a private thread, head to the create thread menu (#) at the top of the app or from the attachment menu (+) in the chat bar.<br><br>Then make sure to have Private Thread checked:</span></p>
@@ -114,20 +114,20 @@
 </ul>
 <p><span style="font-weight: 400;">Navigate to the Threads Discovery button at the top of the channel. </span></p>
 <p><span style="font-weight: 400;">Once you press the Thread Discovery button, you can now browse all threads in the channel. </span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403200760471/Thread_discover.png" alt="Thread_discover.png" width="547" height="280"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403200760471" alt="Thread_discover.png" width="547" height="280"></span></p>
 <ul>
     <li class="wysiwyg-text-align-left"><strong><span class="wysiwyg-font-size-large">Channel Sidebar</span></strong></li>
 </ul>
 <p class="wysiwyg-text-align-left">Additionally, on the desktop and browser app, you can hover over the channel name in the sidebar with your mouse to view and discover active threads and then click the <strong>See All</strong> option to view all other threads. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4405269739415/threads_in_channel_sidebar_screenshot.png" alt="threads_in_channel_sidebar_screenshot.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4405269739415" alt="threads_in_channel_sidebar_screenshot.png"></p>
 <h2 id="h_01F99ZBEDTQ5AAQ8E1MB2Z7D3N" class="wysiwyg-text-align-left"><span style="font-weight: 400;">How do I join a Thread?</span></h2>
-<p><span style="font-weight: 400;">To join an active thread, first press on the thread in the thread discovery tab, or press <strong>See Thread &gt;</strong> on a thread you see in chat. An active thread is signified with a # plus a speech bubble icon <img src="https://support.discord.com/hc/article_attachments/4403357180567/active_thread.png" alt="active_thread.png" width="22" height="23"></span></p>
+<p><span style="font-weight: 400;">To join an active thread, first press on the thread in the thread discovery tab, or press <strong>See Thread &gt;</strong> on a thread you see in chat. An active thread is signified with a # plus a speech bubble icon <img src="https://support.discord.com/hc/article_attachments/4403357180567" alt="active_thread.png" width="22" height="23"></span></p>
 <h3><span style="font-weight: 400;"><strong>Note:</strong> You can also send a message in the thread to automatically join in!</span></h3>
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">Once you opened the thread, press <strong>Join</strong>. </span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403207335191/Screenshot_79.png" alt="Screenshot_79.png" width="562" height="623"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403207335191" alt="Screenshot_79.png" width="562" height="623"></span></p>
 <h2 id="h_01F99ZC4TMXQ1BEFZRGJWG8MMQ" class="wysiwyg-text-align-left"><span style="font-weight: 400;">I want to leave a thread</span></h2>
 <p><span style="font-weight: 400;">To leave a thread that you joined, Navigate to the three dots (...) at the top right of the thread and press <strong>Leave Thread</strong>.</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403207353623/leave_thread.png" alt="leave_thread.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/4403207353623" alt="leave_thread.png"></span></p>
 <h2 id="h_01FBM7FY3D1J3WC3TP71EC7JRF"><span style="font-weight: 400;">Threads in Community Servers</span></h2>
 <p><span style="font-weight: 400;">For now, <strong>Threads</strong> will not be enabled by default for <a href="https://support.discord.com/hc/en-us/articles/360047132851" target="_blank" rel="noopener noreferrer">Community servers</a>. However, once you get access, you will have a new server settings tab on the web or in your client called “Threads Early Access.” </span></p>
 <p><span style="font-weight: 400;">From there, you can turn it on by clicking “Enable Threads,” and customize your Thread permissions for your community (e.g. enable in specific channels or disable for certain roles). </span></p>

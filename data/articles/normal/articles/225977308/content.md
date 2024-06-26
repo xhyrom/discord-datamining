@@ -4,21 +4,21 @@
 <p><span class="wysiwyg-font-size-medium">I guess this is a bit of a subjective opinion, but here are some of the more widely-used or super-cool shortcuts that will help you keep your hands on the keys for longer (read: more rapid fire meme-cannoning).</span></p>
 <p> </p>
 <p><span class="wysiwyg-underline wysiwyg-font-size-large">Server &amp; Channel Navigation:</span></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211337307/nav_servers.png" alt=""><img src="https://support.discord.com/hc/en-us/article_attachments/211200828/nav_channels.png" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/211337307" alt=""><img src="https://support.discord.com/hc/article_attachments/211200828" alt=""></p>
 <p><span class="wysiwyg-underline wysiwyg-font-size-large">Speedy Message Reading:</span></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211337427/nav_unread_channels.png" alt=""><img src="https://support.discord.com/hc/en-us/article_attachments/211201048/nav_unread_wmentions.png" alt=""></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211337447/mark_channel_read.png" alt=""><img src="https://support.discord.com/hc/en-us/article_attachments/211337467/mark_server_read.png" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/211337427" alt=""><img src="https://support.discord.com/hc/article_attachments/211201048" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/211337447" alt=""><img src="https://support.discord.com/hc/article_attachments/211337467" alt=""></p>
 <p><span class="wysiwyg-underline wysiwyg-font-size-large">How Did I Get Here Again?:</span></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211201088/toggle_hotkeys.png" alt=""><img src="https://support.discord.com/hc/en-us/article_attachments/211337507/return_previous_text_channel.png" alt=""></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211337487/return_to_active_audio_channel.png" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/211201088" alt=""><img src="https://support.discord.com/hc/article_attachments/211337507" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/211337487" alt=""></p>
 <p><span class="wysiwyg-underline wysiwyg-font-size-large">Menu Surfing:</span></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211201148/toggle_pins_popout.png" alt=""><img src="https://support.discord.com/hc/en-us/article_attachments/211201168/toggle_mentions_popout.png" alt=""></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211201188/toggle_member_list.png" alt=""><img src="https://support.discord.com/hc/en-us/article_attachments/211337647/toggle_emoji_picker.png" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/211201148" alt=""><img src="https://support.discord.com/hc/article_attachments/211201168" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/211201188" alt=""><img src="https://support.discord.com/hc/article_attachments/211337647" alt=""></p>
 <p> </p>
 <p><span class="wysiwyg-underline wysiwyg-font-size-large">In-Channel Text Cruising:</span></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211201228/scrollchat_up_down.png" alt=""><img src="https://support.discord.com/hc/en-us/article_attachments/211201248/jump_oldest_unread.png" alt=""> </p>
+<p><img src="https://support.discord.com/hc/article_attachments/211201228" alt=""><img src="https://support.discord.com/hc/article_attachments/211201248" alt=""> </p>
 <p>And just for reference, here's the whole chart:</p>
-<p> <img src="https://support.discord.com/hc/en-us/article_attachments/211337747/keyboard_combo_breaker.png" alt=""></p>
+<p> <img src="https://support.discord.com/hc/article_attachments/211337747" alt=""></p>
 <p> </p>
 <p class="wysiwyg-text-align-left"> </p>
 <p>Here is a more friendly copy-paste version:  </p>
