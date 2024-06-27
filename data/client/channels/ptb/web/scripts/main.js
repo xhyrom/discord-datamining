@@ -40569,7 +40569,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305963", ", Version Hash: ").concat("11a2447ee8df7722c45940745eb390e78186fb02")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305973", ", Version Hash: ").concat("012437879eaa252a9184b3725c19638542091c06")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -77819,9 +77819,9 @@
                     actions: ["POST_CONNECTION_OPEN"],
                     inlineRequire: () => n(70655).Z
                 },
-                MessageRemindersManager: {
+                SavedMessagesManager: {
                     actions: ["POST_CONNECTION_OPEN"],
-                    inlineRequire: () => n(903707).Z,
+                    inlineRequire: () => n(580506).Z,
                     neverLoadBeforeConnectionOpen: !0
                 },
                 MessageRemindersNotificationManager: {
@@ -92831,8 +92831,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305963", "305963"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305963")), t = 0), t
+                let t = parseInt((e = "305973", "305973"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305973")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121090,8 +121090,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305963",
-                    versionHash: "11a2447ee8df7722c45940745eb390e78186fb02"
+                    buildNumber: "305973",
+                    versionHash: "012437879eaa252a9184b3725c19638542091c06"
                 }
             }
             n.d(t, {
@@ -179925,8 +179925,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719530711147",
-                                    build_number: "305963"
+                                    built_at: "1719531703454",
+                                    build_number: "305973"
                                 }
                             },
                             retries: 1
@@ -202051,6 +202051,44 @@
                 })).body.saved_messages.map(c.lY))
             }
         },
+        580506: function(e, t, n) {
+            "use strict";
+            n(47120);
+            var i = n(147913),
+                r = n(70956),
+                s = n(192720),
+                o = n(121254),
+                a = n(742989);
+
+            function l(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class u extends i.Z {
+                constructor(...e) {
+                    super(...e), l(this, "actions", {
+                        POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
+                    }), l(this, "handlePostConnectionOpen", () => {
+                        ! function e() {
+                            (o.Z.getCurrentConfig({
+                                location: "saved_messages_manager"
+                            }, {
+                                autoTrackExposure: !1
+                            }).enabled || a.Z.getCurrentConfig({
+                                location: "saved_messages_manager"
+                            }, {
+                                autoTrackExposure: !1
+                            }).showReminders) && (0, s.sE)().then(() => setTimeout(e, 15 * r.Z.Millis.MINUTE))
+                        }()
+                    })
+                }
+            }
+            t.Z = new u
+        },
         686478: function(e, t, n) {
             "use strict";
 
@@ -202102,6 +202140,25 @@
                 }
             })
         },
+        121254: function(e, t, n) {
+            "use strict";
+            let i = (0, n(818083).B)({
+                kind: "user",
+                id: "2024-06_message_bookmarks",
+                label: "Message Bookmarks",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable message bookmarks",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+            t.Z = i
+        },
         742989: function(e, t, n) {
             "use strict";
             let i = (0, n(818083).B)({
@@ -202120,39 +202177,6 @@
                 }]
             });
             t.Z = i
-        },
-        903707: function(e, t, n) {
-            "use strict";
-            n(47120);
-            var i = n(147913),
-                r = n(70956),
-                s = n(192720),
-                o = n(742989);
-
-            function a(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            class l extends i.Z {
-                constructor(...e) {
-                    super(...e), a(this, "actions", {
-                        POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-                    }), a(this, "handlePostConnectionOpen", () => {
-                        ! function e() {
-                            o.Z.getCurrentConfig({
-                                location: "e391b1_1"
-                            }, {
-                                autoTrackExposure: !1
-                            }).showReminders && (0, s.sE)().then(() => setTimeout(e, 15 * r.Z.Millis.MINUTE))
-                        }()
-                    })
-                }
-            }
-            t.Z = new l
         },
         802463: function(e, t, n) {
             "use strict";
@@ -258218,7 +258242,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "11a2447ee8df7722c45940745eb390e78186fb02"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "012437879eaa252a9184b3725c19638542091c06"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277422,7 +277446,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305963"
+                                build_number: "305973"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284755,7 +284779,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305963", "305963"), 10);
+                let s = parseInt((n = "305973", "305973"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -332234,4 +332258,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.b101fe8ae552e750cfb6.js.map
+//# sourceMappingURL=54746.18f80e3162f079b981a3.js.map
