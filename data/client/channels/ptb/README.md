@@ -1,10 +1,10 @@
 # Public Testing Beta
 
 ### Info
-Build number: 305932  
-Version hash: 192925201dfe27a0885533014aa2446ba60cc504  
+Build number: 305947  
+Version hash: 51f5da067f3d2a129d59bfb28e08c04184fd34b2  
 Host version: 1.0.1079  
-Built at: 6/27/2024, 10:45:44 PM  
+Built at: 6/27/2024, 11:00:28 PM  
 
 ### Modules
 | Module               | Version | Package sha256                                                   | URL                                                                                              |
