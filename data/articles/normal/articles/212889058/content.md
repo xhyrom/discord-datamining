@@ -1,4 +1,4 @@
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/206303208/eJwVyksOwiAQANC7sJfp8Ke7Lt15A0MoUpJWGmZcGe-ubl_eW7zGLmaxMZ80A6yNch-rJO4j1SJr73Uv6Wwkcz8gMae8HeXJBOjC5NEap42dokUX_4SotI8GVfBaYYDldr3n3y_jomRtD_H5ArCeI9g.zGz1JSL-9DXgpkX_SkmMDM8NWGg.gif" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/206303208" alt=""></p>
 <p>Making an app on Discord opens up many possibilities for deeper integrations with your other services and platforms.</p>
 <p>To learn how to use Discord's API to empower your application and create awesome bots for your communities. Please refer to our documented developer pages found here: <a href="https://discordapp.com/developers/docs/intro">https://discord.com/developers</a></p>
 <p>We look forward to seeing what all of you Bot Makers have in store!  </p>

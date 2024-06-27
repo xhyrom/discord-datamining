@@ -43,7 +43,7 @@
     <li class="wysiwyg-text-align-left">In the next window, confirm the permissions request by pressing the <strong>Authorize</strong> button</li>
     <li class="wysiwyg-text-align-left">And that's it! When you head back to your server, you'll now see the pronoun bot in your Member's List</li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019908161/authorizing_bot_process_screenshot.png" alt="authorizing_bot_process_screenshot.png" width="439" height="672"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019908161" alt="authorizing_bot_process_screenshot.png" width="439" height="672"></p>
 <h3>
     <strong>Note:</strong> <br>- You will need to be the server owner or have Manage Server permissions in the server in order to add the bot. <br>- If you do not have those permissions, the server will not appear in the Add to Server options. 
 </h3>
@@ -67,7 +67,7 @@
 </ul>
 <h2 id="h_01F6T5FPPHHJ45Q3N2X38A712D">Do I have to customize it?</h2>
 <p>Nope! If you don't make any changes, this is what the pronoun bot's default prompt will be:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019844601/buttons.png" alt="buttons.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019844601" alt="buttons.png"></p>
 <p>The default pronoun options are:</p>
 <ul>
     <li>They/Them</li>
@@ -96,7 +96,7 @@
         </ul>
     </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019844641/slash_commands.png" alt="slash_commands.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019844641" alt="slash_commands.png"></p>
 <ul>
     <li>
         <strong>To remove pronouns:</strong>
@@ -127,10 +127,10 @@
     </li>
 </ul>
 <h2 id="h_01F6T5GH35Y0T71H6WXJFXBCFD">How are the pronouns I select displayed for me?</h2>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019844681/roles.png" alt="roles.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019844681" alt="roles.png"></p>
 <p>The default setting is for pronouns to be displayed as roles, but those with permissions to customize the bot can choose to change this to an alternative option: adding to the nickname field.</p>
 <p>To do this, choose the <strong>/config edit</strong> command, and for <strong>use-roles</strong> choose "<strong>false</strong>." This will switch the default to the other display option.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019571302/members_list.png" alt="members_list.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019571302" alt="members_list.png"></p>
 <p>At any time, you can choose <strong>/config reset</strong> to return to the bot's default settings.</p>
 <h2 id="h_01F6T5GXQ6YW1TN3Z1SEC6085N">How do I change the text displayed within the prompt?</h2>
 <p>To do this, choose the <strong>/config edit</strong> command, and for <strong>prompt-message</strong> simply type the text you want to display in the bot prompt.</p>
@@ -138,7 +138,7 @@
 <h2 id="h_01F6T5H9C1WGGZWWAP5BB6SD9X">How do I test what my prompt looks like before I post it for my users?</h2>
 <p>To do this, choose the <strong>/config view</strong> command.</p>
 <p>This will display an ephemeral message (one only you can see and no one else) so you can check whether the bot will use roles or nicknames, reread the text within the prompt, and also check the permissions for who can customize the bot prompt.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019844781/config.png" alt="config.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500019844781" alt="config.png"></p>
 <h2 id="h_01F6T5HGK6XPFF6CYQH4BQ1YZB">What's the difference between the blurple buttons and the gray buttons?</h2>
 <p>The blurple buttons are configurable - you can remove the default three blurple buttons or you can add up to 12 more, for a total of 15 configurable buttons.</p>
 <h1 id="h_01F6T5HQ91DBBZ2JJF0WFYEZB9">Anything I should watch out for?</h1>

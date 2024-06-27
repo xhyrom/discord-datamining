@@ -1,5 +1,5 @@
 <h3><span class="wysiwyg-font-size-large">To learn more about <a href="https://support.discord.com/hc/en-us/articles/4415163187607" target="_blank" rel="noopener noreferrer">Premium Memberships, check out this article</a>.</span></h3>
-<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><img src="https://support.discord.com/hc/article_attachments/5313232609175/trial.png" alt="trial.png"></span></p>
+<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><img src="https://support.discord.com/hc/article_attachments/5313232609175" alt="trial.png"></span></p>
 <p><span class="wysiwyg-font-size-large"><strong>What are Premium Memberships Trials?</strong></span><br>If a server owner enables them, trials allow you to get access to premium membership benefits for free during the trial window. This lets you get a sense of what the experience is like so you can decide if you’d like to continue subscribing!</p>
 <p><span class="wysiwyg-font-size-large"><strong>Why doesn’t my server have Trials?</strong></span><br>There could be a few reasons:</p>
 <ol>
