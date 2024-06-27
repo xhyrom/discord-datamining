@@ -34778,6 +34778,12 @@ h3.improved_f017d0:after {
 .theme-dark .statusBubbleOuter_d0a252,
 .theme-dark .statusBubbleOuter_d0a252:before,
 .theme-dark .statusBubbleOuter_d0a252:after {
+    border: 1px solid var(--border-faint)
+}
+
+.custom-profile-theme.theme-dark .statusBubbleOuter_d0a252,
+.custom-profile-theme.theme-dark .statusBubbleOuter_d0a252:before,
+.custom-profile-theme.theme-dark .statusBubbleOuter_d0a252:after {
     border: 1px solid var(--border-strong)
 }
 
@@ -34937,13 +34943,13 @@ h3.improved_f017d0:after {
 }
 
 .statusBubbleOuter_d0a252:hover .addStatusPrompt_d0a252,
-.statusBubbleOuter_d0a252:focus .addStatusPrompt_d0a252 {
+.statusBubbleOuter_d0a252:focus-within .addStatusPrompt_d0a252 {
     color: var(--text-normal)
 }
 
 .statusBubbleOuter_d0a252:hover .addStatusIconColor_d0a252,
-.statusBubbleOuter_d0a252:focus .addStatusIconColor_d0a252 {
-    fill: var(--interactive-hover)
+.statusBubbleOuter_d0a252:focus-within .addStatusIconColor_d0a252 {
+    fill: var(--text-normal)
 }
 
 .statusBubbleOuter_d0a252:hover .editIcon_d0a252,
@@ -35007,8 +35013,8 @@ h3.improved_f017d0:after {
     display: inline;
     height: 18px;
     width: 18px;
-    margin-right: 4px;
-    fill: var(--interactive-normal);
+    margin-right: 8px;
+    fill: var(--text-muted);
     vertical-align: middle
 }
 
@@ -43732,4 +43738,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54746.572f5929a19ca26fe3cf.css.map*/
+/*# sourceMappingURL=54746.bc549509350385cd578e.css.map*/
