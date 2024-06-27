@@ -1,1 +1,0 @@
-<p>NOTICE: The Discord Help Center is currently undergoing maintenance. We'll be finished with our updates soon. Thank you for your patience!</p>
