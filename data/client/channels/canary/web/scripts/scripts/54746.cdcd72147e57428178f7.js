@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305743", ", Version Hash: ").concat("624c6041a8fdd73964a5802bc19067997d03447a")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305756", ", Version Hash: ").concat("668ac449e4e7b4565b22573cb2c156ca670d08ee")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -60144,7 +60144,7 @@
                 CLAN_WELCOME_MESSAGE_9: "Roses are red, violets are blue, [!!{username}!!](usernameOnClick) just joined the Guild with you.",
                 ICYMI_TITLE: "In Case You Missed It",
                 ICYMI_SHORT_TITLE: "ICYMI",
-                ICYMI_DESCRIPTION: "Interesting content from your servers that you might have missed.",
+                ICYMI_DESCRIPTION: "Breeze through the best across all your servers",
                 ICYMI_SETTING_NAME: "Hide ICYMI tab",
                 ICYMI_END_TITLE: "$[ICYMI](icymiHook) $[—](dashHook) All Caught Up!",
                 ICYMI_END_SUBTITLE: "Check back later for more new content!",
@@ -97057,8 +97057,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305743", "305743"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305743")), t = 0), t
+                let t = parseInt((e = "305756", "305756"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305756")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125345,8 +125345,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305743",
-                    versionHash: "624c6041a8fdd73964a5802bc19067997d03447a"
+                    buildNumber: "305756",
+                    versionHash: "668ac449e4e7b4565b22573cb2c156ca670d08ee"
                 }
             }
             n.d(t, {
@@ -184179,8 +184179,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719512275126",
-                                    build_number: "305743"
+                                    built_at: "1719513206391",
+                                    build_number: "305756"
                                 }
                             },
                             retries: 1
@@ -200595,23 +200595,23 @@
         },
         569984: function(e, t, n) {
             "use strict";
-            let i, r, s, o, a, l, u, _, c, d, E, I;
+            let i, r, s, o, a, l, u, _, c, d, E, I, T;
             n(47120);
-            var T, h, f, S, N = n(906280),
-                A = n.n(N),
-                m = n(887003),
-                O = n(442837),
-                p = n(570140),
-                R = n(497505),
-                g = n(918701),
-                C = n(5881),
-                v = n(46140);
+            var h, f, S, N, A = n(906280),
+                m = n.n(A),
+                O = n(887003),
+                p = n(442837),
+                R = n(570140),
+                g = n(497505),
+                C = n(918701),
+                v = n(5881),
+                L = n(46140);
 
-            function L() {
-                i = !1, r = new Map, s = 0, o = new Set, a = new Set, l = new Set, u = new Set, _ = new Set, c = new Map, d = new Map, E = new Map, I = null
+            function D() {
+                i = !1, r = new Map, s = 0, o = new Set, a = new Set, l = new Set, u = new Set, _ = new Set, c = new Map, d = new Map, E = new Map, I = new Map, T = null
             }
 
-            function D(e, t) {
+            function M(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
                         updateProgress: !1
                     },
@@ -200633,38 +200633,38 @@
                 }
             }
 
-            function M(e, t) {
+            function P(e, t) {
                 let n = new Map(c);
                 n.set(e, t), c = n
             }
 
-            function P(e, t) {
-                M(e, t);
+            function y(e, t) {
+                P(e, t);
                 let n = r.get(e),
                     i = null == n ? void 0 : n.userStatus;
-                null != i && null == i.claimedAt && D(e, {
+                null != i && null == i.claimedAt && M(e, {
                     userStatus: {
                         ...i,
                         claimedAt: t.claimedAt
                     }
                 })
             }
-            L();
+            D();
 
-            function y(e) {
+            function U(e) {
                 null != E.get(e) && (E = new Map(E)).delete(e)
             }
 
-            function U(e) {
+            function b(e) {
                 let t = new Set(o);
                 t.delete(e), o = t
             }
 
-            function b(e) {
+            function G(e) {
                 let t = new Set(_);
                 t.delete(e), _ = t
             }
-            class G extends(T = O.ZP.Store) {
+            class w extends(h = p.ZP.Store) {
                 get quests() {
                     return r
                 }
@@ -200675,7 +200675,7 @@
                     return s
                 }
                 get questDeliveryOverride() {
-                    return r.get(null != I ? I : "")
+                    return r.get(null != T ? T : "")
                 }
                 isEnrolling(e) {
                     return o.has(e)
@@ -200701,18 +200701,21 @@
                 getStreamHeartbeatFailure(e) {
                     return E.get(e)
                 }
+                getQuestLastSuccessfulHeartbeat(e) {
+                    return I.get(e)
+                }
                 getQuest(e) {
                     return r.get(e)
                 }
             }
-            S = "QuestsStore", (f = "displayName") in(h = G) ? Object.defineProperty(h, f, {
-                value: S,
+            N = "QuestsStore", (S = "displayName") in(f = w) ? Object.defineProperty(f, S, {
+                value: N,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : h[f] = S, t.Z = new G(p.Z, {
+            }) : f[S] = N, t.Z = new w(R.Z, {
                 LOGOUT: function() {
-                    L()
+                    D()
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
                     s = Date.now(), i = !0
@@ -200725,7 +200728,7 @@
                     let n = new Map(r);
                     for (let e of (r = new Map, t)) {
                         var s, o;
-                        let t = A()(e),
+                        let t = m()(e),
                             i = n.get(t.id),
                             a = (null === (s = t.userStatus) || void 0 === s ? void 0 : s.enrolledAt) != null && null == t.userStatus.completedAt;
                         if ((null == i ? void 0 : i.userStatus) != null && null != t.userStatus && a) {
@@ -200736,8 +200739,8 @@
                                 null != e && null != i && e > i.value && (i.value = e)
                             }
                         }
-                        r.set(t.id, t), t.targetedContent.includes(R.jn.QUEST_BAR) && (0, C.T)({
-                            location: v.dr.QUESTS_STORE
+                        r.set(t.id, t), t.targetedContent.includes(g.jn.QUEST_BAR) && (0, v.T)({
+                            location: L.dr.QUESTS_STORE
                         }).log("Delivered ".concat(t.config.messages.questName, " (").concat(t.id, ")"))
                     }
                 },
@@ -200750,11 +200753,11 @@
                         streamKey: n,
                         userStatus: i
                     } = e;
-                    D(t, {
+                    M(t, {
                         userStatus: i
                     }, {
                         updateProgress: !0
-                    }), y(n)
+                    }), U(n), (I = new Map(I)).set(t, Date.now())
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
                     let {
@@ -200777,15 +200780,15 @@
                     let {
                         enrolledQuestUserStatus: t
                     } = e;
-                    D(t.questId, {
+                    M(t.questId, {
                         userStatus: t
-                    }), U(t.questId)
+                    }), b(t.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    U(t)
+                    b(t)
                 },
                 QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
                     let {
@@ -200798,7 +200801,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(u);
-                    i.delete(t), u = i, P(t, n)
+                    i.delete(t), u = i, y(t, n)
                 },
                 QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -200817,7 +200820,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(a);
-                    i.delete(t), a = i, P(t, n)
+                    i.delete(t), a = i, y(t, n)
                 },
                 QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -200848,11 +200851,11 @@
                                 let {
                                     entitlements: n
                                 } = e, i = null === (t = n.items[0].tenantMetadata) || void 0 === t ? void 0 : t.questRewards.reward;
-                                return (null == i ? void 0 : i.tag) !== m.w.REWARD_CODE ? null : i.rewardCode
+                                return (null == i ? void 0 : i.tag) !== O.w.REWARD_CODE ? null : i.rewardCode
                             }({
                                 entitlements: t
                             });
-                            null != n && M(e, n), D(e, {
+                            null != n && P(e, n), M(e, {
                                 userStatus: {
                                     ...s,
                                     claimedAt: t.claimedAt,
@@ -200878,24 +200881,24 @@
                     let {
                         dismissedQuestUserStatus: t
                     } = e;
-                    D(t.questId, {
+                    M(t.questId, {
                         userStatus: t
-                    }), b(t.questId)
+                    }), G(t.questId)
                 },
                 QUESTS_DISMISS_CONTENT_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    b(t)
+                    G(t)
                 },
                 QUESTS_USER_STATUS_UPDATE: function(e) {
                     let {
                         user_status: t
                     } = e;
-                    (0, C.T)({
-                        location: v.dr.QUESTS_STORE
-                    }).log("Received user status update for ".concat(t.quest_id), t), D(t.quest_id, {
-                        userStatus: (0, g.U3)(t)
+                    (0, v.T)({
+                        location: L.dr.QUESTS_STORE
+                    }).log("Received user status update for ".concat(t.quest_id), t), M(t.quest_id, {
+                        userStatus: (0, C.U3)(t)
                     }, {
                         updateProgress: !0
                     })
@@ -200904,19 +200907,19 @@
                     let {
                         streamKey: t
                     } = e;
-                    y(t)
+                    U(t)
                 },
                 QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    y(t)
+                    U(t)
                 },
                 QUESTS_PREVIEW_UPDATE_SUCCESS: function(e) {
                     let {
                         previewQuestUserStatus: t
                     } = e;
-                    D(t.questId, {
+                    M(t.questId, {
                         userStatus: t
                     }), null == t.claimedAt && (c = new Map(c)).delete(t.questId)
                 },
@@ -200924,7 +200927,7 @@
                     let {
                         userStatus: t
                     } = e;
-                    D(t.questId, {
+                    M(t.questId, {
                         userStatus: t
                     }, {
                         updateProgress: !0
@@ -200934,7 +200937,7 @@
                     let {
                         questId: t
                     } = e;
-                    I = I === t ? null : t
+                    T = T === t ? null : t
                 }
             })
         },
@@ -263285,7 +263288,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "624c6041a8fdd73964a5802bc19067997d03447a"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "668ac449e4e7b4565b22573cb2c156ca670d08ee"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282521,7 +282524,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305743"
+                                build_number: "305756"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289854,7 +289857,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305743", "305743"), 10);
+                let s = parseInt((n = "305756", "305756"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -337619,4 +337622,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.b39001df8c5c396e5786.js.map
+//# sourceMappingURL=54746.cdcd72147e57428178f7.js.map
