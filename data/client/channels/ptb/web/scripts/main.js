@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305638", ", Version Hash: ").concat("d7f21ead45fe76c71aea143da593d1bcbe0753b6")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305642", ", Version Hash: ").concat("78804a411b96347ecd5cb56c23959c6fc84ef59d")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -97055,8 +97055,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305638", "305638"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305638")), t = 0), t
+                let t = parseInt((e = "305642", "305642"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305642")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125343,8 +125343,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305638",
-                    versionHash: "d7f21ead45fe76c71aea143da593d1bcbe0753b6"
+                    buildNumber: "305642",
+                    versionHash: "78804a411b96347ecd5cb56c23959c6fc84ef59d"
                 }
             }
             n.d(t, {
@@ -134043,12 +134043,13 @@
             "use strict";
             n.d(t, {
                 X: function() {
-                    return s
+                    return o
                 }
             });
             var i = n(91641),
-                r = n(987338);
-            let s = new i.E([], r.$P.OPEN_USER_SETTINGS, {
+                r = n(89805),
+                s = n(987338);
+            let o = new i.E([r.NR, r.ZI, r.Ob, r.uc, r.m1], s.$P.OPEN_USER_SETTINGS, {
                 location: "open user settings"
             })
         },
@@ -134197,6 +134198,114 @@
                     defaultConfig: {
                         doSomething: !1
                     },
+                    treatments: [{
+                        id: 1,
+                        label: "Treatment",
+                        config: {
+                            doSomething: !0
+                        }
+                    }]
+                })
+        },
+        89805: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                NR: function() {
+                    return s
+                },
+                Ob: function() {
+                    return l
+                },
+                ZI: function() {
+                    return o
+                },
+                m1: function() {
+                    return u
+                },
+                uc: function() {
+                    return a
+                }
+            });
+            var i = n(987170),
+                r = n(987338);
+            let s = (0, i.Z)({
+                    kind: "user",
+                    id: "2024-06_ctp_voice_call_vanilla",
+                    label: "CTP voice call - A/A test - Vanilla",
+                    defaultConfig: {
+                        doSomething: !1
+                    },
+                    commonTriggerPoint: r.$P.VOICE_CALL,
+                    treatments: [{
+                        id: 1,
+                        label: "Treatment",
+                        config: {
+                            doSomething: !0
+                        }
+                    }]
+                }),
+                o = (0, i.Z)({
+                    kind: "user",
+                    id: "2024-06_ctp_voice_call_filters",
+                    label: "CTP voice call - A/A test - Filters",
+                    defaultConfig: {
+                        doSomething: !1
+                    },
+                    commonTriggerPoint: r.$P.VOICE_CALL,
+                    treatments: [{
+                        id: 1,
+                        label: "Treatment",
+                        config: {
+                            doSomething: !0
+                        }
+                    }]
+                }),
+                a = (0, i.Z)({
+                    kind: "user",
+                    id: "2024-06_ctp_voice_call_multiple_buckets",
+                    label: "CTP voice call - A/A test - Multiple buckets",
+                    defaultConfig: {
+                        doSomething: !1
+                    },
+                    commonTriggerPoint: r.$P.VOICE_CALL,
+                    treatments: [{
+                        id: 1,
+                        label: "Treatment 1",
+                        config: {
+                            doSomething: !0
+                        }
+                    }, {
+                        id: 2,
+                        label: "Treatment 2",
+                        config: {
+                            doSomething: !0
+                        }
+                    }]
+                }),
+                l = (0, i.Z)({
+                    kind: "user",
+                    id: "2024-06_ctp_voice_call_everyone",
+                    label: "CTP voice call - A/A test - Everyone",
+                    defaultConfig: {
+                        doSomething: !1
+                    },
+                    commonTriggerPoint: r.$P.VOICE_CALL,
+                    treatments: [{
+                        id: 1,
+                        label: "Treatment",
+                        config: {
+                            doSomething: !0
+                        }
+                    }]
+                }),
+                u = (0, i.Z)({
+                    kind: "user",
+                    id: "2024-06_ctp_voice_call_uneven_buckets",
+                    label: "CTP voice call - A/A test - Uneven buckets",
+                    defaultConfig: {
+                        doSomething: !1
+                    },
+                    commonTriggerPoint: r.$P.VOICE_CALL,
                     treatments: [{
                         id: 1,
                         label: "Treatment",
@@ -184464,8 +184573,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719496006223",
-                                    build_number: "305638"
+                                    built_at: "1719497338298",
+                                    build_number: "305642"
                                 }
                             },
                             retries: 1
@@ -263200,7 +263309,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d7f21ead45fe76c71aea143da593d1bcbe0753b6"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "78804a411b96347ecd5cb56c23959c6fc84ef59d"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282436,7 +282545,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305638"
+                                build_number: "305642"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289769,7 +289878,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305638", "305638"), 10);
+                let s = parseInt((n = "305642", "305642"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -337534,4 +337643,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.b86d167e2e11535cce29.js.map
+//# sourceMappingURL=54746.ee9c1c8dcc7175af8809.js.map
