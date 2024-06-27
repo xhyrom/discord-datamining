@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305664", ", Version Hash: ").concat("9a597dc7a33778a58b954f82652a8133eab538e6")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305680", ", Version Hash: ").concat("cf8298306e7b7cd5667d6df31f8cd488ca76d89e")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -79319,7 +79319,11 @@
                     if ((0, s.k)(i) && null != i.closest("." + T.Jh)) return;
                     for (;
                         (0, s.k)(i);) {
-                        if (i === d.current || i.classList.contains(T.t4)) return;
+                        if (i === d.current) return;
+                        if (i.classList.contains(T.t4)) {
+                            e.preventDefault();
+                            return
+                        }
                         i = i.parentNode
                     }
                     S();
@@ -79331,7 +79335,7 @@
                 }), [O, f, N]), (0, a.useFocusLock)(d), r.useEffect(() => {
                     (!A && (0, o.$s)() || A && !m) && S()
                 }, [m, A]), (0, i.jsx)(I.Z, {
-                    drawerRef: d,
+                    ref: d,
                     channel: t,
                     entrypoint: E._b.TEXT
                 })
@@ -79377,9 +79381,8 @@
                 _ = n(684256),
                 c = n(981631),
                 d = n(987421);
-            t.Z = r.memo(function(e) {
-                let t, {
-                        drawerRef: n,
+            t.Z = r.memo(r.forwardRef(function(e, t) {
+                let n, {
                         channel: E,
                         entrypoint: I
                     } = e,
@@ -79425,7 +79428,7 @@
                         }
                     }, [I]), null == N ? void 0 : N.type) {
                     case a.gc.HOME:
-                        t = (0, i.jsx)(u.Z, {
+                        n = (0, i.jsx)(u.Z, {
                             channel: E,
                             entrypoint: I,
                             searchQuery: T,
@@ -79433,7 +79436,7 @@
                         });
                         break;
                     case a.gc.LIST:
-                        t = (0, i.jsx)(_.Z, {
+                        n = (0, i.jsx)(_.Z, {
                             channel: E,
                             entrypoint: I,
                             title: N.title,
@@ -79443,18 +79446,18 @@
                         });
                         break;
                     case a.gc.APPLICATION:
-                        t = (0, i.jsx)(l.Z, {
+                        n = (0, i.jsx)(l.Z, {
                             channel: E,
                             application: N.application,
                             sectionName: N.sectionName
                         });
                         break;
                     default:
-                        t = null
+                        n = null
                 }
                 return (0, i.jsx)("div", {
                     className: d.drawerSizingWrapper,
-                    ref: n,
+                    ref: t,
                     children: (0, i.jsx)("div", {
                         className: d.contentWrapper,
                         children: (0, i.jsx)(a.uX.Provider, {
@@ -79465,11 +79468,11 @@
                                 pushHistory: A,
                                 goBack: m
                             },
-                            children: t
+                            children: n
                         })
                     })
                 })
-            })
+            }))
         },
         176412: function(e, t, n) {
             "use strict";
@@ -97055,8 +97058,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305664", "305664"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305664")), t = 0), t
+                let t = parseInt((e = "305680", "305680"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305680")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125343,8 +125346,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305664",
-                    versionHash: "9a597dc7a33778a58b954f82652a8133eab538e6"
+                    buildNumber: "305680",
+                    versionHash: "cf8298306e7b7cd5667d6df31f8cd488ca76d89e"
                 }
             }
             n.d(t, {
@@ -184573,8 +184576,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719502988692",
-                                    build_number: "305664"
+                                    built_at: "1719506760195",
+                                    build_number: "305680"
                                 }
                             },
                             retries: 1
@@ -263309,7 +263312,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9a597dc7a33778a58b954f82652a8133eab538e6"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cf8298306e7b7cd5667d6df31f8cd488ca76d89e"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282545,7 +282548,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305664"
+                                build_number: "305680"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289878,7 +289881,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305664", "305664"), 10);
+                let s = parseInt((n = "305680", "305680"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -337643,4 +337646,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.a955a04b058014299311.js.map
+//# sourceMappingURL=54746.8470563bd51b1e83f167.js.map
