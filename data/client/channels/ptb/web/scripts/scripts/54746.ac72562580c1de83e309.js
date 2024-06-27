@@ -40569,7 +40569,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305872", ", Version Hash: ").concat("c044df489f87bc64282b1cd672f0af6f1c24c4f5")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305877", ", Version Hash: ").concat("8f9e1b073627eb6a792fd34a4aecacb8314da0ac")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -92828,8 +92828,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305872", "305872"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305872")), t = 0), t
+                let t = parseInt((e = "305877", "305877"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305877")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121087,8 +121087,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305872",
-                    versionHash: "c044df489f87bc64282b1cd672f0af6f1c24c4f5"
+                    buildNumber: "305877",
+                    versionHash: "8f9e1b073627eb6a792fd34a4aecacb8314da0ac"
                 }
             }
             n.d(t, {
@@ -135943,6 +135943,7 @@
                     components: t.message.components,
                     editedTimestamp: null,
                     timestamp: t.message.timestamp,
+                    codedLinks: t.message.codedLinks,
                     reactions: [],
                     messageSnapshots: [],
                     customRenderedContent: null
@@ -176065,54 +176066,54 @@
                     embeds: v(e),
                     components: (0, o.uZ)(null !== (t = e.components) && void 0 !== t ? t : [], {
                         includeEmojiSrc: !1
-                    })
+                    }),
+                    codedLinks: e.type === A.uaV.THREAD_CREATED ? [] : (0, s.ZP)(e.content)
                 })
             }
 
             function O(e) {
-                var t, n, i, r, o, l, T, S, O, R;
+                var t, n, i, r, s, o, l, T, S, O;
                 let {
-                    reactions: p,
-                    interactionData: g
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, v = m(e), M = null !== (r = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== r ? r : [], P = null !== (o = e.mention_roles) && void 0 !== o ? o : [], y = null !== (l = e.mention_channels) && void 0 !== l ? l : [], U = e.message_reference, b = e.type === A.uaV.THREAD_CREATED ? [] : (0, s.ZP)(e.content);
-                let G = null == (S = e).author ? N : null != S.webhook_id ? new c.Z(S.author) : null !== (O = I.default.getUser(S.author.id)) && void 0 !== O ? O : new c.Z(S.author),
-                    w = null == e ? void 0 : e.gift_info,
-                    B = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
-                    x = e.type === A.uaV.THREAD_STARTER_MESSAGE ? null === (i = e.referenced_message) || void 0 === i ? void 0 : null === (n = i.author) || void 0 === n ? void 0 : n.id : void 0,
-                    k = e.type === A.uaV.PREMIUM_REFERRAL ? e.content : void 0,
-                    V = e.content;
-                return e.type === A.uaV.PREMIUM_REFERRAL && (V = ""), R = 0, new _.ZP({
+                    reactions: R,
+                    interactionData: p
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, g = m(e), v = null !== (r = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== r ? r : [], M = null !== (s = e.mention_roles) && void 0 !== s ? s : [], P = null !== (o = e.mention_channels) && void 0 !== o ? o : [], y = e.message_reference;
+                let U = null == (T = e).author ? N : null != T.webhook_id ? new c.Z(T.author) : null !== (S = I.default.getUser(T.author.id)) && void 0 !== S ? S : new c.Z(T.author),
+                    b = null == e ? void 0 : e.gift_info,
+                    G = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
+                    w = e.type === A.uaV.THREAD_STARTER_MESSAGE ? null === (i = e.referenced_message) || void 0 === i ? void 0 : null === (n = i.author) || void 0 === n ? void 0 : n.id : void 0,
+                    B = e.type === A.uaV.PREMIUM_REFERRAL ? e.content : void 0,
+                    x = e.content;
+                return e.type === A.uaV.PREMIUM_REFERRAL && (x = ""), O = 0, new _.ZP({
                     ...e,
-                    ...v.toJS(),
-                    author: G,
+                    ...g.toJS(),
+                    author: U,
                     webhookId: e.webhook_id,
-                    blocked: E.Z.isBlockedForMessage(e) || null != x && E.Z.isBlocked(x),
+                    blocked: E.Z.isBlockedForMessage(e) || null != w && E.Z.isBlocked(w),
                     mentionEveryone: e.mention_everyone,
-                    mentions: M,
-                    mentionRoles: P,
-                    mentionChannels: y,
-                    messageReference: U,
+                    mentions: v,
+                    mentionRoles: M,
+                    mentionChannels: P,
+                    messageReference: y,
                     mentioned: (0, f.Sz)({
                         userId: d.default.getId(),
                         channelId: e.channel_id,
-                        mentionEveryone: null !== (T = e.mention_everyone) && void 0 !== T && T,
-                        mentionUsers: M,
-                        mentionRoles: P
+                        mentionEveryone: null !== (l = e.mention_everyone) && void 0 !== l && l,
+                        mentionUsers: v,
+                        mentionRoles: M
                     }),
-                    codedLinks: b,
                     giftCodes: (0, h.Fp)(e) ? (0, h.Q_)(null == e ? void 0 : e.embeds[0].url) : (0, h.Q_)(e.content),
-                    content: V,
-                    referralTrialOfferId: k,
-                    call: C(e.call, v.timestamp),
+                    content: x,
+                    referralTrialOfferId: B,
+                    call: C(e.call, g.timestamp),
                     messageSnapshots: D(e),
-                    reactions: L(null != p ? p : e.reactions, e.poll),
-                    interaction: B,
-                    interactionData: null != g ? g : e.interaction_data,
+                    reactions: L(null != R ? R : e.reactions, e.poll),
+                    interaction: G,
+                    interactionData: null != p ? p : e.interaction_data,
                     interactionMetadata: e.interaction_metadata,
                     roleSubscriptionData: e.role_subscription_data,
                     purchaseNotification: e.purchase_notification,
                     poll: null == e.poll ? void 0 : (0, a.Z)(e.poll),
-                    giftInfo: null == w ? void 0 : w
+                    giftInfo: null == b ? void 0 : b
                 })
             }
 
@@ -179921,8 +179922,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719524964927",
-                                    build_number: "305872"
+                                    built_at: "1719525097455",
+                                    build_number: "305877"
                                 }
                             },
                             retries: 1
@@ -234213,8 +234214,8 @@
             }
             class d extends r.Z {
                 constructor(e) {
-                    var t;
-                    super(), c(this, "type", void 0), c(this, "channel_id", void 0), c(this, "content", void 0), c(this, "attachments", void 0), c(this, "embeds", void 0), c(this, "timestamp", void 0), c(this, "editedTimestamp", void 0), c(this, "flags", void 0), c(this, "components", void 0), this.type = e.type || _.uaV.DEFAULT, this.channel_id = e.channel_id, this.content = e.content || "", this.attachments = e.attachments || [], this.embeds = e.embeds || [], this.timestamp = e.timestamp || new Date, this.editedTimestamp = e.editedTimestamp || null, this.flags = e.flags || 0, this.components = null !== (t = e.components) && void 0 !== t ? t : []
+                    var t, n, i, r, s, o, a, l, u;
+                    super(), c(this, "type", void 0), c(this, "channel_id", void 0), c(this, "content", void 0), c(this, "attachments", void 0), c(this, "embeds", void 0), c(this, "timestamp", void 0), c(this, "editedTimestamp", void 0), c(this, "flags", void 0), c(this, "components", void 0), c(this, "codedLinks", void 0), this.type = null !== (t = e.type) && void 0 !== t ? t : _.uaV.DEFAULT, this.channel_id = e.channel_id, this.content = null !== (n = e.content) && void 0 !== n ? n : "", this.attachments = null !== (i = e.attachments) && void 0 !== i ? i : [], this.embeds = null !== (r = e.embeds) && void 0 !== r ? r : [], this.timestamp = null !== (s = e.timestamp) && void 0 !== s ? s : new Date, this.editedTimestamp = null !== (o = e.editedTimestamp) && void 0 !== o ? o : null, this.flags = null !== (a = e.flags) && void 0 !== a ? a : 0, this.components = null !== (l = e.components) && void 0 !== l ? l : [], this.codedLinks = null !== (u = e.codedLinks) && void 0 !== u ? u : []
                 }
             }
             class E extends r.Z {
@@ -234436,7 +234437,7 @@
                 }
                 constructor(e) {
                     var t, n, i, r;
-                    super(e), c(this, "id", void 0), c(this, "author", void 0), c(this, "bot", void 0), c(this, "customRenderedContent", void 0), c(this, "pinned", void 0), c(this, "mentions", void 0), c(this, "mentionRoles", void 0), c(this, "mentionChannels", void 0), c(this, "mentionEveryone", void 0), c(this, "mentioned", void 0), c(this, "tts", void 0), c(this, "codedLinks", void 0), c(this, "giftCodes", void 0), c(this, "state", void 0), c(this, "nonce", void 0), c(this, "blocked", void 0), c(this, "call", void 0), c(this, "webhookId", void 0), c(this, "reactions", void 0), c(this, "applicationId", void 0), c(this, "application", void 0), c(this, "activity", void 0), c(this, "activityInstance", void 0), c(this, "interaction", void 0), c(this, "interactionData", void 0), c(this, "interactionMetadata", void 0), c(this, "interactionError", void 0), c(this, "messageReference", void 0), c(this, "isSearchHit", void 0), c(this, "stickers", void 0), c(this, "stickerItems", void 0), c(this, "roleSubscriptionData", void 0), c(this, "purchaseNotification", void 0), c(this, "poll", void 0), c(this, "loggingName", void 0), c(this, "referralTrialOfferId", void 0), c(this, "giftInfo", void 0), c(this, "messageSnapshots", void 0), c(this, "isUnsupported", void 0), c(this, "changelogId", void 0), c(this, "colorString", void 0), c(this, "nick", void 0), this.id = e.id, this.author = e.author, this.customRenderedContent = e.customRenderedContent, this.mentions = e.mentions || [], this.mentionRoles = e.mentionRoles || [], this.mentionChannels = e.mentionChannels || [], this.mentioned = e.mentioned || !1, this.pinned = e.pinned || !1, this.mentionEveryone = e.mentionEveryone || !1, this.tts = e.tts || !1, this.codedLinks = e.codedLinks || [], this.giftCodes = e.giftCodes || [], this.state = e.state || _.yb.SENT, this.nonce = e.nonce || null, this.blocked = e.blocked || !1, this.call = e.call || null, this.bot = e.bot || !1, this.webhookId = e.webhookId || null, this.reactions = e.reactions || [], this.applicationId = e.application_id || e.applicationId || null, this.application = e.application || null, this.activity = e.activity || null, this.activityInstance = e.activity_instance || e.activityInstance || null, this.messageReference = e.messageReference || null, this.isSearchHit = e.hit || e.isSearchHit || !1, this.stickers = e.stickers || [], this.stickerItems = null !== (n = null !== (t = e.sticker_items) && void 0 !== t ? t : e.stickerItems) && void 0 !== n ? n : [], this.loggingName = e.loggingName || null, this.colorString = e.colorString, this.nick = e.nick, this.interaction = e.interaction || null, this.interactionData = e.interactionData || null, this.interactionMetadata = e.interactionMetadata || null, this.interactionError = e.interactionError || null, this.roleSubscriptionData = e.roleSubscriptionData, this.purchaseNotification = e.purchaseNotification, this.poll = e.poll, this.referralTrialOfferId = e.referralTrialOfferId || null, this.giftInfo = null !== (i = e.gift_info) && void 0 !== i ? i : e.giftInfo, this.messageSnapshots = e.messageSnapshots || [], this.isUnsupported = e.isUnsupported || !1, this.changelogId = null !== (r = e.changelog_id) && void 0 !== r ? r : e.changelogId || null
+                    super(e), c(this, "id", void 0), c(this, "author", void 0), c(this, "bot", void 0), c(this, "customRenderedContent", void 0), c(this, "pinned", void 0), c(this, "mentions", void 0), c(this, "mentionRoles", void 0), c(this, "mentionChannels", void 0), c(this, "mentionEveryone", void 0), c(this, "mentioned", void 0), c(this, "tts", void 0), c(this, "giftCodes", void 0), c(this, "state", void 0), c(this, "nonce", void 0), c(this, "blocked", void 0), c(this, "call", void 0), c(this, "webhookId", void 0), c(this, "reactions", void 0), c(this, "applicationId", void 0), c(this, "application", void 0), c(this, "activity", void 0), c(this, "activityInstance", void 0), c(this, "interaction", void 0), c(this, "interactionData", void 0), c(this, "interactionMetadata", void 0), c(this, "interactionError", void 0), c(this, "messageReference", void 0), c(this, "isSearchHit", void 0), c(this, "stickers", void 0), c(this, "stickerItems", void 0), c(this, "roleSubscriptionData", void 0), c(this, "purchaseNotification", void 0), c(this, "poll", void 0), c(this, "loggingName", void 0), c(this, "referralTrialOfferId", void 0), c(this, "giftInfo", void 0), c(this, "messageSnapshots", void 0), c(this, "isUnsupported", void 0), c(this, "changelogId", void 0), c(this, "colorString", void 0), c(this, "nick", void 0), this.id = e.id, this.author = e.author, this.customRenderedContent = e.customRenderedContent, this.mentions = e.mentions || [], this.mentionRoles = e.mentionRoles || [], this.mentionChannels = e.mentionChannels || [], this.mentioned = e.mentioned || !1, this.pinned = e.pinned || !1, this.mentionEveryone = e.mentionEveryone || !1, this.tts = e.tts || !1, this.giftCodes = e.giftCodes || [], this.state = e.state || _.yb.SENT, this.nonce = e.nonce || null, this.blocked = e.blocked || !1, this.call = e.call || null, this.bot = e.bot || !1, this.webhookId = e.webhookId || null, this.reactions = e.reactions || [], this.applicationId = e.application_id || e.applicationId || null, this.application = e.application || null, this.activity = e.activity || null, this.activityInstance = e.activity_instance || e.activityInstance || null, this.messageReference = e.messageReference || null, this.isSearchHit = e.hit || e.isSearchHit || !1, this.stickers = e.stickers || [], this.stickerItems = null !== (n = null !== (t = e.sticker_items) && void 0 !== t ? t : e.stickerItems) && void 0 !== n ? n : [], this.loggingName = e.loggingName || null, this.colorString = e.colorString, this.nick = e.nick, this.interaction = e.interaction || null, this.interactionData = e.interactionData || null, this.interactionMetadata = e.interactionMetadata || null, this.interactionError = e.interactionError || null, this.roleSubscriptionData = e.roleSubscriptionData, this.purchaseNotification = e.purchaseNotification, this.poll = e.poll, this.referralTrialOfferId = e.referralTrialOfferId || null, this.giftInfo = null !== (i = e.gift_info) && void 0 !== i ? i : e.giftInfo, this.messageSnapshots = e.messageSnapshots || [], this.isUnsupported = e.isUnsupported || !1, this.changelogId = null !== (r = e.changelog_id) && void 0 !== r ? r : e.changelogId || null
                 }
             }
         },
@@ -258183,7 +258184,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c044df489f87bc64282b1cd672f0af6f1c24c4f5"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8f9e1b073627eb6a792fd34a4aecacb8314da0ac"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277387,7 +277388,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305872"
+                                build_number: "305877"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284720,7 +284721,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305872", "305872"), 10);
+                let s = parseInt((n = "305877", "305877"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -332199,4 +332200,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.6cb634811071eae53e74.js.map
+//# sourceMappingURL=54746.ac72562580c1de83e309.js.map
