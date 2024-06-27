@@ -40737,7 +40737,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305698", ", Version Hash: ").concat("ae8853d7e663ff111a884b4daff24acc9064feba")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305710", ", Version Hash: ").concat("8c49d32d37a4fdcadeaed0b9b10143f48b4d4c6c")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -82005,12 +82005,12 @@
                 },
                 MessageRemindersManager: {
                     actions: ["POST_CONNECTION_OPEN"],
-                    inlineRequire: () => n(652244).Z,
+                    inlineRequire: () => n(903707).Z,
                     neverLoadBeforeConnectionOpen: !0
                 },
                 MessageRemindersNotificationManager: {
                     actions: ["POST_CONNECTION_OPEN"],
-                    inlineRequire: () => n(211040).Z,
+                    inlineRequire: () => n(937603).Z,
                     neverLoadBeforeConnectionOpen: !0
                 },
                 SearchManager: {
@@ -97058,8 +97058,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305698", "305698"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305698")), t = 0), t
+                let t = parseInt((e = "305710", "305710"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305710")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -125346,8 +125346,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305698",
-                    versionHash: "ae8853d7e663ff111a884b4daff24acc9064feba"
+                    buildNumber: "305710",
+                    versionHash: "8c49d32d37a4fdcadeaed0b9b10143f48b4d4c6c"
                 }
             }
             n.d(t, {
@@ -179105,402 +179105,6 @@
             }
             s(h, "displayName", "SpamMessageRequestStore"), s(h, "LATEST_SNAPSHOT_VERSION", 1), t.Z = new h
         },
-        822893: function(e, t, n) {
-            "use strict";
-            n.d(t, {
-                BW: function() {
-                    return I
-                },
-                Kp: function() {
-                    return f
-                },
-                Mf: function() {
-                    return S
-                },
-                Y_: function() {
-                    return h
-                },
-                dR: function() {
-                    return T
-                },
-                sE: function() {
-                    return m
-                }
-            });
-            var i = n(544891),
-                r = n(570140),
-                s = n(933557),
-                o = n(592125),
-                a = n(430824),
-                l = n(699516),
-                u = n(594174),
-                _ = n(626135),
-                c = n(329461),
-                d = n(831267),
-                E = n(981631);
-
-            function I(e, t) {
-                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
-                    skipped: !1,
-                    reason: "adding",
-                    rating: "".concat(c.Z.getMessageReminders().length)
-                }), A([{
-                    messageId: e.id,
-                    channelId: e.channel_id,
-                    savedAt: new Date,
-                    dueAt: t,
-                    ... function(e) {
-                        let t = o.Z.getChannel(e.channel_id);
-                        if (null == t) return null;
-                        let n = a.Z.getGuild(t.guild_id),
-                            i = "",
-                            r = (0, s.F6)(t, u.default, l.Z, !0);
-                        if (t.isPrivate()) i = r;
-                        else if (t.isThread()) {
-                            let e = o.Z.getChannel(t.parent_id);
-                            if (null == e) return null;
-                            let n = (0, s.F6)(e, u.default, l.Z, !0);
-                            i = "".concat(n, " > ").concat(r)
-                        } else i = r;
-                        let _ = "".concat(e.content.length > 0 ? e.content : "".concat(e.attachments.length, " attachments"));
-                        return {
-                            authorSummary: e.author.username,
-                            authorId: e.author.id,
-                            channelSummary: i,
-                            messageSummary: _.length > 200 ? "".concat(_.slice(0, 197), "...") : _,
-                            guildId: null == n ? void 0 : n.id
-                        }
-                    }(e)
-                }], [])
-            }
-
-            function T(e, t) {
-                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
-                    skipped: !1,
-                    reason: "updating_due_at",
-                    rating: "".concat(c.Z.getMessageReminders().length)
-                });
-                let n = c.Z.getMessageReminders().find(t => t.messageId === e);
-                if (null != n) A([{
-                    ...n,
-                    savedAt: new Date,
-                    dueAt: t
-                }], [n])
-            }
-
-            function h(e, t) {
-                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
-                    skipped: t,
-                    reason: "updating within the list",
-                    rating: "".concat(c.Z.getMessageReminders().length)
-                }), r.Z.dispatch({
-                    type: "MESSAGE_REMINDER_TOGGLE",
-                    messageId: e,
-                    complete: t
-                })
-            }
-
-            function f(e) {
-                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
-                    skipped: !1,
-                    reason: "complete and clear immediately",
-                    rating: "".concat(c.Z.getMessageReminders().length)
-                }), A([], c.Z.getMessageReminders().filter(t => t.messageId === e))
-            }
-
-            function S() {
-                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
-                    skipped: !1,
-                    reason: "clearing",
-                    rating: "".concat(c.Z.getMessageReminders().length)
-                });
-                let e = c.Z.getMessageReminders();
-                e.some(e => e.complete) && A([], e.filter(e => e.complete))
-            }
-
-            function N(e) {
-                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
-                    skipped: !1,
-                    reason: "updated_from_server",
-                    rating: "".concat(c.Z.getMessageReminders().length)
-                }), r.Z.dispatch({
-                    type: "SAVED_MESSAGES_UPDATE",
-                    messages: e
-                })
-            }
-
-            function A(e, t) {
-                (0 !== e.length || 0 !== t.length) && i.tn.post({
-                    url: E.ANM.SAVED_MESSAGES,
-                    body: {
-                        added: e.map(d.cu),
-                        removed: t.map(d.cu)
-                    }
-                }).then(e => {
-                    N(e.body.saved_messages.map(d.lY))
-                })
-            }
-
-            function m() {
-                return c.Z.recentlyFetched() ? Promise.resolve() : i.tn.get({
-                    url: E.ANM.SAVED_MESSAGES
-                }).then(e => {
-                    N(e.body.saved_messages.map(d.lY))
-                })
-            }
-        },
-        641051: function(e, t, n) {
-            "use strict";
-            let i = (0, n(818083).B)({
-                kind: "user",
-                id: "2022-08_message_todos_staff_only",
-                label: "Message TODO list",
-                defaultConfig: {
-                    showReminders: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Show message TODOs CTA",
-                    config: {
-                        showReminders: !0
-                    }
-                }]
-            });
-            t.Z = i
-        },
-        652244: function(e, t, n) {
-            "use strict";
-            n(47120);
-            var i = n(147913),
-                r = n(70956),
-                s = n(822893),
-                o = n(641051);
-
-            function a(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            class l extends i.Z {
-                constructor(...e) {
-                    super(...e), a(this, "actions", {
-                        POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-                    }), a(this, "handlePostConnectionOpen", () => {
-                        ! function e() {
-                            o.Z.getCurrentConfig({
-                                location: "e391b1_1"
-                            }, {
-                                autoTrackExposure: !1
-                            }).showReminders && (0, s.sE)().then(() => setTimeout(e, 15 * r.Z.Millis.MINUTE))
-                        }()
-                    })
-                }
-            }
-            t.Z = new l
-        },
-        329461: function(e, t, n) {
-            "use strict";
-            n(47120);
-            var i, r, s, o, a = n(442837),
-                l = n(570140),
-                u = n(70956);
-            let _ = [],
-                c = new Set,
-                d = 0;
-            class E extends(i = a.ZP.Store) {
-                initialize() {
-                    setInterval(() => {
-                        this.emitChange()
-                    }, 1 * u.Z.Millis.MINUTE)
-                }
-                getMessageReminders() {
-                    return _
-                }
-                isMessageReminder(e) {
-                    let t = _.find(t => t.messageId === e);
-                    return null != t && !t.complete
-                }
-                getOverdueMessageReminderCount() {
-                    return _.filter(e => null == e.dueAt || new Date > e.dueAt).length
-                }
-                recentlyFetched() {
-                    return new Date().getTime() - d < 1 * u.Z.Millis.MINUTE
-                }
-                hasSentNotification(e) {
-                    return c.has(e)
-                }
-                getState() {
-                    return {
-                        messages: _
-                    }
-                }
-            }
-            o = "MessageRemindersStore", (s = "displayName") in(r = E) ? Object.defineProperty(r, s, {
-                value: o,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-            }) : r[s] = o, t.Z = new E(l.Z, {
-                SAVED_MESSAGES_UPDATE: function(e) {
-                    let {
-                        messages: t
-                    } = e;
-                    d = new Date().getTime(), _ = t.map(e => ({
-                        ...e,
-                        complete: !1
-                    })), t.forEach(e => {
-                        null != e.dueAt && e.dueAt > new Date && c.delete(e.messageId), null != e.dueAt && e.dueAt < new Date && c.add(e.messageId)
-                    })
-                },
-                MESSAGE_REMINDER_TOGGLE: function(e) {
-                    let {
-                        messageId: t,
-                        complete: n
-                    } = e, i = _.findIndex(e => e.messageId === t);
-                    if (-1 === i) return !1;
-                    _[i] = {
-                        ..._[i],
-                        complete: n
-                    }
-                },
-                MESSAGE_REMINDER_NOTIFIED: function(e) {
-                    let {
-                        messageId: t
-                    } = e;
-                    c.add(t)
-                }
-            })
-        },
-        831267: function(e, t, n) {
-            "use strict";
-            n.d(t, {
-                BS: function() {
-                    return l
-                },
-                cu: function() {
-                    return s
-                },
-                lY: function() {
-                    return o
-                },
-                uX: function() {
-                    return a
-                }
-            });
-            var i = n(70956),
-                r = n(689938);
-
-            function s(e) {
-                var t;
-                return {
-                    channel_id: e.channelId,
-                    message_id: e.messageId,
-                    saved_at: e.savedAt.toISOString(),
-                    author_summary: e.authorSummary,
-                    channel_summary: e.channelSummary,
-                    message_summary: e.messageSummary,
-                    guild_id: e.guildId,
-                    author_id: e.authorId,
-                    notes: e.notes,
-                    due_at: null === (t = e.dueAt) || void 0 === t ? void 0 : t.toISOString()
-                }
-            }
-
-            function o(e) {
-                return {
-                    channelId: e.channel_id,
-                    messageId: e.message_id,
-                    savedAt: new Date(e.saved_at),
-                    authorSummary: e.author_summary,
-                    channelSummary: e.channel_summary,
-                    messageSummary: e.message_summary,
-                    guildId: 0 === e.guild_id ? void 0 : e.guild_id,
-                    authorId: 0 === e.author_id ? void 0 : e.author_id,
-                    notes: e.notes,
-                    dueAt: null != e.due_at ? new Date(e.due_at) : void 0
-                }
-            }
-
-            function a(e) {
-                return null != e.authorSummary && e.authorSummary.length > 0 && null != e.channelSummary && e.channelSummary.length > 0 && null != e.messageSummary && e.messageSummary.length > 0 && null != e.authorId && e.authorId.length > 0
-            }
-            let l = [{
-                duration: i.Z.Millis.HOUR,
-                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_ONE_HOUR
-            }, {
-                duration: 2 * i.Z.Millis.HOUR,
-                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_TWO_HOURS
-            }, {
-                duration: 4 * i.Z.Millis.HOUR,
-                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_FOUR_HOURS
-            }, {
-                duration: i.Z.Millis.DAY,
-                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_ONE_DAY
-            }, {
-                duration: i.Z.Millis.WEEK,
-                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_ONE_WEEK
-            }]
-        },
-        211040: function(e, t, n) {
-            "use strict";
-            n(47120);
-            var i = n(570140),
-                r = n(147913),
-                s = n(703656),
-                o = n(70956),
-                a = n(654769),
-                l = n(641051),
-                u = n(329461),
-                _ = n(981631);
-
-            function c(e, t, n) {
-                return t in e ? Object.defineProperty(e, t, {
-                    value: n,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                }) : e[t] = n, e
-            }
-            class d extends r.Z {
-                constructor(...e) {
-                    super(...e), c(this, "actions", {
-                        POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-                    }), c(this, "handlePostConnectionOpen", () => {
-                        ! function e() {
-                            l.Z.getCurrentConfig({
-                                location: "8fe27d_1"
-                            }, {
-                                autoTrackExposure: !1
-                            }).showReminders && (u.Z.getMessageReminders().filter(e => null != e.dueAt && new Date > e.dueAt).filter(e => !u.Z.hasSentNotification(e.messageId)).forEach(e => {
-                                var t, n;
-                                a.Z.showNotification(null, "Overdue reminder in ".concat(e.channelSummary), null !== (n = null !== (t = e.notes) && void 0 !== t ? t : e.messageSummary) && void 0 !== n ? n : "", {
-                                    notif_type: "OVERDUE_MESSAGE_REMINDER",
-                                    notif_user_id: e.authorId,
-                                    message_id: e.messageId,
-                                    channel_id: e.channelId,
-                                    guild_id: e.guildId
-                                }, {
-                                    omitViewTracking: !0,
-                                    tag: e.messageId,
-                                    onClick() {
-                                        (0, s.uL)(_.Z5c.CHANNEL(e.guildId, e.channelId, e.messageId))
-                                    }
-                                }), i.Z.dispatch({
-                                    type: "MESSAGE_REMINDER_NOTIFIED",
-                                    messageId: e.messageId
-                                })
-                            }), setTimeout(() => {
-                                e()
-                            }, 5 * o.Z.Millis.MINUTE))
-                        }()
-                    })
-                }
-            }
-            t.Z = new d
-        },
         529726: function(e, t, n) {
             "use strict";
             n(47120), n(653041);
@@ -184576,8 +184180,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719507985440",
-                                    build_number: "305698"
+                                    built_at: "1719509284171",
+                                    build_number: "305710"
                                 }
                             },
                             retries: 1
@@ -206623,6 +206227,402 @@
                 }
             }
             t.Z = new I
+        },
+        962796: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                BW: function() {
+                    return I
+                },
+                Kp: function() {
+                    return f
+                },
+                Mf: function() {
+                    return S
+                },
+                Y_: function() {
+                    return h
+                },
+                dR: function() {
+                    return T
+                },
+                sE: function() {
+                    return m
+                }
+            });
+            var i = n(544891),
+                r = n(570140),
+                s = n(933557),
+                o = n(592125),
+                a = n(430824),
+                l = n(699516),
+                u = n(594174),
+                _ = n(626135),
+                c = n(802463),
+                d = n(981014),
+                E = n(981631);
+
+            function I(e, t) {
+                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
+                    skipped: !1,
+                    reason: "adding",
+                    rating: "".concat(c.Z.getMessageReminders().length)
+                }), A([{
+                    messageId: e.id,
+                    channelId: e.channel_id,
+                    savedAt: new Date,
+                    dueAt: t,
+                    ... function(e) {
+                        let t = o.Z.getChannel(e.channel_id);
+                        if (null == t) return null;
+                        let n = a.Z.getGuild(t.guild_id),
+                            i = "",
+                            r = (0, s.F6)(t, u.default, l.Z, !0);
+                        if (t.isPrivate()) i = r;
+                        else if (t.isThread()) {
+                            let e = o.Z.getChannel(t.parent_id);
+                            if (null == e) return null;
+                            let n = (0, s.F6)(e, u.default, l.Z, !0);
+                            i = "".concat(n, " > ").concat(r)
+                        } else i = r;
+                        let _ = "".concat(e.content.length > 0 ? e.content : "".concat(e.attachments.length, " attachments"));
+                        return {
+                            authorSummary: e.author.username,
+                            authorId: e.author.id,
+                            channelSummary: i,
+                            messageSummary: _.length > 200 ? "".concat(_.slice(0, 197), "...") : _,
+                            guildId: null == n ? void 0 : n.id
+                        }
+                    }(e)
+                }], [])
+            }
+
+            function T(e, t) {
+                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
+                    skipped: !1,
+                    reason: "updating_due_at",
+                    rating: "".concat(c.Z.getMessageReminders().length)
+                });
+                let n = c.Z.getMessageReminders().find(t => t.messageId === e);
+                if (null != n) A([{
+                    ...n,
+                    savedAt: new Date,
+                    dueAt: t
+                }], [n])
+            }
+
+            function h(e, t) {
+                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
+                    skipped: t,
+                    reason: "updating within the list",
+                    rating: "".concat(c.Z.getMessageReminders().length)
+                }), r.Z.dispatch({
+                    type: "MESSAGE_REMINDER_TOGGLE",
+                    messageId: e,
+                    complete: t
+                })
+            }
+
+            function f(e) {
+                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
+                    skipped: !1,
+                    reason: "complete and clear immediately",
+                    rating: "".concat(c.Z.getMessageReminders().length)
+                }), A([], c.Z.getMessageReminders().filter(t => t.messageId === e))
+            }
+
+            function S() {
+                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
+                    skipped: !1,
+                    reason: "clearing",
+                    rating: "".concat(c.Z.getMessageReminders().length)
+                });
+                let e = c.Z.getMessageReminders();
+                e.some(e => e.complete) && A([], e.filter(e => e.complete))
+            }
+
+            function N(e) {
+                _.default.track(E.rMx.GUILD_JOIN_FEEDBACK, {
+                    skipped: !1,
+                    reason: "updated_from_server",
+                    rating: "".concat(c.Z.getMessageReminders().length)
+                }), r.Z.dispatch({
+                    type: "SAVED_MESSAGES_UPDATE",
+                    messages: e
+                })
+            }
+
+            function A(e, t) {
+                (0 !== e.length || 0 !== t.length) && i.tn.post({
+                    url: E.ANM.SAVED_MESSAGES,
+                    body: {
+                        added: e.map(d.cu),
+                        removed: t.map(d.cu)
+                    }
+                }).then(e => {
+                    N(e.body.saved_messages.map(d.lY))
+                })
+            }
+
+            function m() {
+                return c.Z.recentlyFetched() ? Promise.resolve() : i.tn.get({
+                    url: E.ANM.SAVED_MESSAGES
+                }).then(e => {
+                    N(e.body.saved_messages.map(d.lY))
+                })
+            }
+        },
+        742989: function(e, t, n) {
+            "use strict";
+            let i = (0, n(818083).B)({
+                kind: "user",
+                id: "2022-08_message_todos_staff_only",
+                label: "Message TODO list",
+                defaultConfig: {
+                    showReminders: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Show message TODOs CTA",
+                    config: {
+                        showReminders: !0
+                    }
+                }]
+            });
+            t.Z = i
+        },
+        903707: function(e, t, n) {
+            "use strict";
+            n(47120);
+            var i = n(147913),
+                r = n(70956),
+                s = n(962796),
+                o = n(742989);
+
+            function a(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class l extends i.Z {
+                constructor(...e) {
+                    super(...e), a(this, "actions", {
+                        POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
+                    }), a(this, "handlePostConnectionOpen", () => {
+                        ! function e() {
+                            o.Z.getCurrentConfig({
+                                location: "e391b1_1"
+                            }, {
+                                autoTrackExposure: !1
+                            }).showReminders && (0, s.sE)().then(() => setTimeout(e, 15 * r.Z.Millis.MINUTE))
+                        }()
+                    })
+                }
+            }
+            t.Z = new l
+        },
+        802463: function(e, t, n) {
+            "use strict";
+            n(47120);
+            var i, r, s, o, a = n(442837),
+                l = n(570140),
+                u = n(70956);
+            let _ = [],
+                c = new Set,
+                d = 0;
+            class E extends(i = a.ZP.Store) {
+                initialize() {
+                    setInterval(() => {
+                        this.emitChange()
+                    }, 1 * u.Z.Millis.MINUTE)
+                }
+                getMessageReminders() {
+                    return _
+                }
+                isMessageReminder(e) {
+                    let t = _.find(t => t.messageId === e);
+                    return null != t && !t.complete
+                }
+                getOverdueMessageReminderCount() {
+                    return _.filter(e => null == e.dueAt || new Date > e.dueAt).length
+                }
+                recentlyFetched() {
+                    return new Date().getTime() - d < 1 * u.Z.Millis.MINUTE
+                }
+                hasSentNotification(e) {
+                    return c.has(e)
+                }
+                getState() {
+                    return {
+                        messages: _
+                    }
+                }
+            }
+            o = "MessageRemindersStore", (s = "displayName") in(r = E) ? Object.defineProperty(r, s, {
+                value: o,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : r[s] = o, t.Z = new E(l.Z, {
+                SAVED_MESSAGES_UPDATE: function(e) {
+                    let {
+                        messages: t
+                    } = e;
+                    d = new Date().getTime(), _ = t.map(e => ({
+                        ...e,
+                        complete: !1
+                    })), t.forEach(e => {
+                        null != e.dueAt && e.dueAt > new Date && c.delete(e.messageId), null != e.dueAt && e.dueAt < new Date && c.add(e.messageId)
+                    })
+                },
+                MESSAGE_REMINDER_TOGGLE: function(e) {
+                    let {
+                        messageId: t,
+                        complete: n
+                    } = e, i = _.findIndex(e => e.messageId === t);
+                    if (-1 === i) return !1;
+                    _[i] = {
+                        ..._[i],
+                        complete: n
+                    }
+                },
+                MESSAGE_REMINDER_NOTIFIED: function(e) {
+                    let {
+                        messageId: t
+                    } = e;
+                    c.add(t)
+                }
+            })
+        },
+        981014: function(e, t, n) {
+            "use strict";
+            n.d(t, {
+                BS: function() {
+                    return l
+                },
+                cu: function() {
+                    return s
+                },
+                lY: function() {
+                    return o
+                },
+                uX: function() {
+                    return a
+                }
+            });
+            var i = n(70956),
+                r = n(689938);
+
+            function s(e) {
+                var t;
+                return {
+                    channel_id: e.channelId,
+                    message_id: e.messageId,
+                    saved_at: e.savedAt.toISOString(),
+                    author_summary: e.authorSummary,
+                    channel_summary: e.channelSummary,
+                    message_summary: e.messageSummary,
+                    guild_id: e.guildId,
+                    author_id: e.authorId,
+                    notes: e.notes,
+                    due_at: null === (t = e.dueAt) || void 0 === t ? void 0 : t.toISOString()
+                }
+            }
+
+            function o(e) {
+                return {
+                    channelId: e.channel_id,
+                    messageId: e.message_id,
+                    savedAt: new Date(e.saved_at),
+                    authorSummary: e.author_summary,
+                    channelSummary: e.channel_summary,
+                    messageSummary: e.message_summary,
+                    guildId: 0 === e.guild_id ? void 0 : e.guild_id,
+                    authorId: 0 === e.author_id ? void 0 : e.author_id,
+                    notes: e.notes,
+                    dueAt: null != e.due_at ? new Date(e.due_at) : void 0
+                }
+            }
+
+            function a(e) {
+                return null != e.authorSummary && e.authorSummary.length > 0 && null != e.channelSummary && e.channelSummary.length > 0 && null != e.messageSummary && e.messageSummary.length > 0 && null != e.authorId && e.authorId.length > 0
+            }
+            let l = [{
+                duration: i.Z.Millis.HOUR,
+                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_ONE_HOUR
+            }, {
+                duration: 2 * i.Z.Millis.HOUR,
+                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_TWO_HOURS
+            }, {
+                duration: 4 * i.Z.Millis.HOUR,
+                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_FOUR_HOURS
+            }, {
+                duration: i.Z.Millis.DAY,
+                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_ONE_DAY
+            }, {
+                duration: i.Z.Millis.WEEK,
+                getLabel: () => r.Z.Messages.MESSAGE_REMINDERS_IN_ONE_WEEK
+            }]
+        },
+        937603: function(e, t, n) {
+            "use strict";
+            n(47120);
+            var i = n(570140),
+                r = n(147913),
+                s = n(703656),
+                o = n(70956),
+                a = n(654769),
+                l = n(742989),
+                u = n(802463),
+                _ = n(981631);
+
+            function c(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class d extends r.Z {
+                constructor(...e) {
+                    super(...e), c(this, "actions", {
+                        POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
+                    }), c(this, "handlePostConnectionOpen", () => {
+                        ! function e() {
+                            l.Z.getCurrentConfig({
+                                location: "8fe27d_1"
+                            }, {
+                                autoTrackExposure: !1
+                            }).showReminders && (u.Z.getMessageReminders().filter(e => null != e.dueAt && new Date > e.dueAt).filter(e => !u.Z.hasSentNotification(e.messageId)).forEach(e => {
+                                var t, n;
+                                a.Z.showNotification(null, "Overdue reminder in ".concat(e.channelSummary), null !== (n = null !== (t = e.notes) && void 0 !== t ? t : e.messageSummary) && void 0 !== n ? n : "", {
+                                    notif_type: "OVERDUE_MESSAGE_REMINDER",
+                                    notif_user_id: e.authorId,
+                                    message_id: e.messageId,
+                                    channel_id: e.channelId,
+                                    guild_id: e.guildId
+                                }, {
+                                    omitViewTracking: !0,
+                                    tag: e.messageId,
+                                    onClick() {
+                                        (0, s.uL)(_.Z5c.CHANNEL(e.guildId, e.channelId, e.messageId))
+                                    }
+                                }), i.Z.dispatch({
+                                    type: "MESSAGE_REMINDER_NOTIFIED",
+                                    messageId: e.messageId
+                                })
+                            }), setTimeout(() => {
+                                e()
+                            }, 5 * o.Z.Millis.MINUTE))
+                        }()
+                    })
+                }
+            }
+            t.Z = new d
         },
         941467: function(e, t, n) {
             "use strict";
@@ -263312,7 +263312,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ae8853d7e663ff111a884b4daff24acc9064feba"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8c49d32d37a4fdcadeaed0b9b10143f48b4d4c6c"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -282548,7 +282548,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305698"
+                                build_number: "305710"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -289881,7 +289881,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305698", "305698"), 10);
+                let s = parseInt((n = "305710", "305710"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -337646,4 +337646,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.81302c0b9125f5ee7394.js.map
+//# sourceMappingURL=54746.ebc8608385868aacca10.js.map
