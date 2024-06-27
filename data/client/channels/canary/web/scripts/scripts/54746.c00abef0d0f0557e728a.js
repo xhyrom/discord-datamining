@@ -40569,7 +40569,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305932", ", Version Hash: ").concat("192925201dfe27a0885533014aa2446ba60cc504")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305947", ", Version Hash: ").concat("51f5da067f3d2a129d59bfb28e08c04184fd34b2")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -92829,8 +92829,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305932", "305932"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305932")), t = 0), t
+                let t = parseInt((e = "305947", "305947"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305947")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121088,8 +121088,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305932",
-                    versionHash: "192925201dfe27a0885533014aa2446ba60cc504"
+                    buildNumber: "305947",
+                    versionHash: "51f5da067f3d2a129d59bfb28e08c04184fd34b2"
                 }
             }
             n.d(t, {
@@ -179923,8 +179923,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719528344688",
-                                    build_number: "305932"
+                                    built_at: "1719529228198",
+                                    build_number: "305947"
                                 }
                             },
                             retries: 1
@@ -183828,7 +183828,7 @@
                     icon: u.UserPlusIcon,
                     title: h.Z.Messages.OAUTH2_INTEGRATION_SELECT_USER,
                     subtitle: h.Z.Messages.OAUTH2_INTEGRATION_SELECT_USER_SUBTITLE,
-                    beta: !0
+                    beta: !1
                 }, {
                     type: a.Y.GUILD_INSTALL,
                     icon: u.ServerIcon,
@@ -201983,39 +201983,70 @@
             "use strict";
             n.d(t, {
                 L9: function() {
-                    return u
+                    return h
                 },
                 sE: function() {
-                    return _
+                    return f
+                },
+                sd: function() {
+                    return I
                 }
             });
             var i = n(544891),
                 r = n(570140),
-                s = n(686478),
-                o = n(802463),
-                a = n(981631);
+                s = n(933557),
+                o = n(592125),
+                a = n(430824),
+                l = n(699516),
+                u = n(594174),
+                _ = n(70956),
+                c = n(686478),
+                d = n(802463),
+                E = n(981631);
 
-            function l(e) {
+            function I(e) {
+                let t = o.Z.getChannel(e.channel_id);
+                if (null == t) return null;
+                let n = a.Z.getGuild(t.guild_id),
+                    i = "",
+                    r = (0, s.F6)(t, u.default, l.Z, !0);
+                if (t.isPrivate()) i = r;
+                else if (t.isThread()) {
+                    let e = o.Z.getChannel(t.parent_id);
+                    if (null == e) return null;
+                    let n = (0, s.F6)(e, u.default, l.Z, !0);
+                    i = "".concat(n, " > ").concat(r)
+                } else i = r;
+                let _ = "".concat(e.content.length > 0 ? e.content : "".concat(e.attachments.length, " attachments"));
+                return {
+                    authorSummary: e.author.username,
+                    authorId: e.author.id,
+                    channelSummary: i,
+                    messageSummary: _.length > 200 ? "".concat(_.slice(0, 197), "...") : _,
+                    guildId: null == n ? void 0 : n.id
+                }
+            }
+
+            function T(e) {
                 r.Z.dispatch({
                     type: "SAVED_MESSAGES_UPDATE",
                     messages: e
                 })
             }
-            async function u(e, t) {
-                if (0 !== e.length || 0 !== t.length) l((await i.tn.post({
-                    url: a.ANM.SAVED_MESSAGES,
+            async function h(e, t) {
+                if (0 !== e.length || 0 !== t.length) T((await i.tn.post({
+                    url: E.ANM.SAVED_MESSAGES,
                     body: {
-                        added: e.map(s.cu),
-                        removed: t.map(s.cu)
+                        added: e.map(c.cu),
+                        removed: t.map(c.cu)
                     }
-                })).body.saved_messages.map(s.lY))
+                })).body.saved_messages.map(c.lY))
             }
-            async function _() {
-                if (o.Z.recentlyFetched()) return Promise.resolve();
-                let e = await i.tn.get({
-                    url: a.ANM.SAVED_MESSAGES
-                });
-                return l(e.body.saved_messages.map(s.lY)), e
+            async function f() {
+                if (new Date().getTime() - d.Z.getLastFetched() < 1 * _.Z.Millis.MINUTE) return Promise.resolve();
+                T((await i.tn.get({
+                    url: E.ANM.SAVED_MESSAGES
+                })).body.saved_messages.map(c.lY))
             }
         },
         686478: function(e, t, n) {
@@ -202147,8 +202178,8 @@
                 getOverdueMessageReminderCount() {
                     return c.filter(e => null == e.dueAt || new Date > e.dueAt).length
                 }
-                recentlyFetched() {
-                    return new Date().getTime() - E < 1 * _.Z.Millis.MINUTE
+                getLastFetched() {
+                    return E
                 }
                 hasSentNotification(e) {
                     return d.has(e)
@@ -258185,7 +258216,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "192925201dfe27a0885533014aa2446ba60cc504"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "51f5da067f3d2a129d59bfb28e08c04184fd34b2"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277389,7 +277420,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305932"
+                                build_number: "305947"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284722,7 +284753,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305932", "305932"), 10);
+                let s = parseInt((n = "305947", "305947"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -332201,4 +332232,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.38988b29c29186a0f573.js.map
+//# sourceMappingURL=54746.c00abef0d0f0557e728a.js.map
