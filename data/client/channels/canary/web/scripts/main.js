@@ -40569,7 +40569,7 @@
                 f = n(689938);
             (0, l.yR)(_.Z), (0, s.Y)(f.Z, r, c.Z), a.ZP.Emitter.injectBatchEmitChanges(o.j), a.ZP.PersistedStore.disableWrites = __OVERLAY__, a.ZP.initialize();
             let S = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305947", ", Version Hash: ").concat("51f5da067f3d2a129d59bfb28e08c04184fd34b2")), i.Z.setTags({
+            new T.Z().log("[BUILD INFO] Release Channel: ".concat(S, ", Build Number: ").concat("305960", ", Version Hash: ").concat("fe11a4cdf2ee8e9b3d4a2f92e2292cf1c4415224")), i.Z.setTags({
                 appContext: h.e3s
             }), d.Z.initBasic(), E.Z.init(), u.d.init(), I.S1()
         },
@@ -63524,7 +63524,7 @@
                     }, O);
                     let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(7));
                     e.binaryType = "arraybuffer", e.onopen = () => {
-                        1 === this.connectionState ? this.emit("connect") : 5 === this.connectionState && this.doResumeOrClose(), this.connectionState = 4;
+                        this.webSocketCloseTime = null, 1 === this.connectionState ? this.emit("connect") : 5 === this.connectionState && this.doResumeOrClose(), this.connectionState = 4;
                         let e = Date.now() - this.connectionStartTime;
                         this.logger.info("[CONNECTED] ".concat(this.url, " in ").concat(e, " ms")), this.emit("ping", Math.round(e / 2))
                     }, e.onmessage = e => {
@@ -63682,7 +63682,7 @@
                     this.backoff.succeed()
                 }
                 handleClose(e, t, n) {
-                    if (this.connectionState = 0, e = e || !1, this.cleanupWebSocket(), 4004 === t || 4015 === t || 4011 === t || 4006 === t) return this.disconnect(e, t, n);
+                    if (this.connectionState = 0, e = e || !1, this.webSocketCloseTime = performance.now(), this.cleanupWebSocket(), 4004 === t || 4015 === t || 4011 === t || 4006 === t) return this.disconnect(e, t, n);
                     if (this.backoff.fails > 3) this.logger.warn("[WS CLOSED] Backoff exceed. Resetting."), this.disconnect(e, t, n);
                     else {
                         let i = this.backoff.fail(() => this.reconnect(e, t, n));
@@ -63853,10 +63853,12 @@
                     this.heartbeatIntervalModifier = e
                 }
                 sendHeartbeatIfOverdue() {
-                    if (null != this.heartbeatInterval && null != this.heartbeater && null != this.lastHeartbeatTime) performance.now() - this.lastHeartbeatTime > this.heartbeatInterval + p && (this.logger.info("Forcing heartbeat"), this.sendHeartbeat())
+                    if (null == this.heartbeatInterval) return;
+                    let e = performance.now();
+                    this.backoff.pending && null == this.webSocket && null != this.webSocketCloseTime && e - this.webSocketCloseTime > this.backoff.current + p ? this.resetBackoff("Forcing reconnect") : null != this.heartbeater && null != this.lastHeartbeatTime && e - this.lastHeartbeatTime > this.heartbeatInterval + p && (this.logger.info("Forcing heartbeat"), this.sendHeartbeat())
                 }
                 constructor(e) {
-                    super(), N(this, "url", void 0), N(this, "logger", new T.Z("RTCControlSocket")), N(this, "backoff", new E.Z(1e3, 5e3)), N(this, "webSocket", void 0), N(this, "connectionState", void 0), N(this, "heartbeatInterval", void 0), N(this, "helloTimeout", void 0), N(this, "heartbeater", void 0), N(this, "lastHeartbeatTime", void 0), N(this, "lastHeartbeatAckTime", void 0), N(this, "expeditedHeartbeatTimeout", void 0), N(this, "heartbeatAck", void 0), N(this, "heartbeatIntervalModifier", void 0), N(this, "connectionStartTime", void 0), N(this, "sessionId", void 0), N(this, "serverId", void 0), N(this, "token", void 0), N(this, "resumable", void 0), N(this, "serverVersion", 0), this.url = e, this.webSocket = null, this.connectionState = 0, this.helloTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.expeditedHeartbeatTimeout = null, this.heartbeatIntervalModifier = 1, this.connectionStartTime = 0, this.sessionId = null, this.serverId = null, this.token = null, this.resumable = !1
+                    super(), N(this, "url", void 0), N(this, "logger", new T.Z("RTCControlSocket")), N(this, "backoff", new E.Z(1e3, 5e3)), N(this, "webSocket", void 0), N(this, "connectionState", void 0), N(this, "heartbeatInterval", void 0), N(this, "helloTimeout", void 0), N(this, "heartbeater", void 0), N(this, "lastHeartbeatTime", void 0), N(this, "lastHeartbeatAckTime", void 0), N(this, "expeditedHeartbeatTimeout", void 0), N(this, "heartbeatAck", void 0), N(this, "heartbeatIntervalModifier", void 0), N(this, "connectionStartTime", void 0), N(this, "webSocketCloseTime", void 0), N(this, "sessionId", void 0), N(this, "serverId", void 0), N(this, "token", void 0), N(this, "resumable", void 0), N(this, "serverVersion", 0), this.url = e, this.webSocket = null, this.connectionState = 0, this.helloTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.expeditedHeartbeatTimeout = null, this.heartbeatIntervalModifier = 1, this.connectionStartTime = 0, this.sessionId = null, this.serverId = null, this.token = null, this.resumable = !1
                 }
             }
         },
@@ -92829,8 +92831,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "305947", "305947"));
-                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305947")), t = 0), t
+                let t = parseInt((e = "305960", "305960"));
+                return Number.isNaN(t) && (i.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("305960")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -121088,8 +121090,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "305947",
-                    versionHash: "51f5da067f3d2a129d59bfb28e08c04184fd34b2"
+                    buildNumber: "305960",
+                    versionHash: "fe11a4cdf2ee8e9b3d4a2f92e2292cf1c4415224"
                 }
             }
             n.d(t, {
@@ -179923,8 +179925,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1719529228198",
-                                    build_number: "305947"
+                                    built_at: "1719530243140",
+                                    build_number: "305960"
                                 }
                             },
                             retries: 1
@@ -258216,7 +258218,7 @@
                     } = e;
                     K = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "51f5da067f3d2a129d59bfb28e08c04184fd34b2"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "fe11a4cdf2ee8e9b3d4a2f92e2292cf1c4415224"), n.append("rpc", String(t)), n.append("rpc_auth_token", K), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277420,7 +277422,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "305947"
+                                build_number: "305960"
                             },
                             d = l.default.getCurrentUser();
                         null != d && (c.user_id = d.id, c.user_name = d.tag, null != d.email && (c.email = d.email));
@@ -284753,7 +284755,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "305947", "305947"), 10);
+                let s = parseInt((n = "305960", "305960"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let o = null == p ? void 0 : null === (e = (t = p.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(o) && (i.native_build_number = o), i.client_event_source = function() {
@@ -332232,4 +332234,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54746.c00abef0d0f0557e728a.js.map
+//# sourceMappingURL=54746.54283e29cd01bdfc8947.js.map
