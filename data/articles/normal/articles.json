@@ -114,7 +114,7 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2024-06-14T21:57:00Z",
+    "edited_at": "2024-06-28T17:02:09Z",
     "user_segment_id": null,
     "permission_group_id": 1720952,
     "content_tag_ids": [],
@@ -124,7 +124,7 @@
       "hacked",
       "hacked account"
     ],
-    "body": "<p>As per our<strong> <a href=\"https://discord.com/terms\" target=\"_blank\" rel=\"noopener noreferrer\">Terms of Service</a></strong>, you are responsible for the security of your account. </p>\n<p>Please note that if you fail to secure your account and it is compromised, Discord may be unable to assist in its recovery.</p>\n<h3 id=\"h_01J0984FNG2YJY7NCCSP3G51XE\">If you believe your account has been compromised, submit a report to the <strong>Discord Trust &amp; Safety </strong>team <a href=\"https://dis.gd/hackedaccount\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.</h3>\n<h2 id=\"h_01J098298YV08T122AV2ECPHDR\">How to Keep Your Discord Account Safe</h2>\n<p>For more information on how to keep your account safe, visit our <strong><a href=\"https://discord.com/safety\" target=\"_blank\" rel=\"noopener noreferrer\">Discord Safety Center</a> </strong>to read these articles below:</p>\n<ul>\n<li><strong><a href=\"https://discord.com/safety/360043857751-four-steps-to-a-super-safe-account\" target=\"_blank\" rel=\"noopener noreferrer\">Four steps to a super safe account</a></strong></li>\n<li><strong><a href=\"https://discord.com/safety/common-scams-what-to-look-out-for\" target=\"_blank\" rel=\"noopener noreferrer\">Scams and what to look out for</a></strong></li>\n<li><strong><a href=\"https://discord.com/safety/360044104071-tips-against-spam-and-hacking\" target=\"_blank\" rel=\"noopener noreferrer\">Tips against spam and hacking</a></strong></li>\n</ul>\n<h2 id=\"h_01J098298Y3CMZ25YRD2K1BQZ0\">How to Report Abusive Behavior on Discord</h2>\n<p>For more information on reporting abusive behavior, visit our <strong><a href=\"https://discord.com/safety\" target=\"_blank\" rel=\"noopener noreferrer\">Discord Safety Center</a></strong> to read this article below:</p>\n<ul>\n<li><strong><a href=\"https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord\" target=\"_blank\" rel=\"noopener noreferrer\">Reporting Abusive Behavior to Discord</a></strong></li>\n</ul>\n<p><!-- notionvc: 5d8f15bf-f928-440b-910a-e5cb59b8b821 --></p>"
+    "body": "<p>As per our<strong> <a href=\"https://discord.com/terms\" target=\"_blank\" rel=\"noopener noreferrer\">Terms of Service</a></strong>, you are responsible for the security of your account. </p>\n<p>Please note that if you fail to secure your account and it is compromised, Discord may be unable to assist in its recovery.</p>\n<div class=\"form-box\">If you believe your account has been compromised, submit a report to the Discord Trust &amp; Safety team through <strong><a href=\"https://dis.gd/hackedaccount\" target=\"_blank\" rel=\"noopener noreferrer\">our support form linked here</a></strong>.</div>\n<h2 id=\"h_01J098298YV08T122AV2ECPHDR\">How to Keep Your Discord Account Safe</h2>\n<p>For more information on how to keep your account safe, visit our <strong><a href=\"https://discord.com/safety\" target=\"_blank\" rel=\"noopener noreferrer\">Discord Safety Center</a> </strong>to read these articles below:</p>\n<ul>\n<li><strong><a href=\"https://discord.com/safety/360043857751-four-steps-to-a-super-safe-account\" target=\"_blank\" rel=\"noopener noreferrer\">Four steps to a super safe account</a></strong></li>\n<li><strong><a href=\"https://discord.com/safety/common-scams-what-to-look-out-for\" target=\"_blank\" rel=\"noopener noreferrer\">Scams and what to look out for</a></strong></li>\n<li><strong><a href=\"https://discord.com/safety/360044104071-tips-against-spam-and-hacking\" target=\"_blank\" rel=\"noopener noreferrer\">Tips against spam and hacking</a></strong></li>\n</ul>\n<h2 id=\"h_01J098298Y3CMZ25YRD2K1BQZ0\">How to Report Abusive Behavior on Discord</h2>\n<p>For more information on reporting abusive behavior, visit our <strong><a href=\"https://discord.com/safety\" target=\"_blank\" rel=\"noopener noreferrer\">Discord Safety Center</a></strong> to read this article below:</p>\n<ul>\n<li><strong><a href=\"https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord\" target=\"_blank\" rel=\"noopener noreferrer\">Reporting Abusive Behavior to Discord</a></strong></li>\n</ul>\n<p><!-- notionvc: 5d8f15bf-f928-440b-910a-e5cb59b8b821 --></p>"
   },
   {
     "id": 23957313048343,
@@ -379,7 +379,7 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2024-06-13T20:44:59Z",
+    "edited_at": "2024-06-28T17:01:14Z",
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [
@@ -396,7 +396,7 @@
       "reporting",
       "abusive"
     ],
-    "body": "<p>If you encounter a violation of our <a href=\"https://discord.com/terms\" target=\"_blank\" rel=\"noopener noreferrer\">Terms of Service</a> or <a href=\"https://discord.com/guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">Community Guidelines</a>, we ask that you report this behavior to us.</p>\n<p>For more information on reporting abusive behavior, visit our <a href=\"https://discord.com/safety\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Discord Safety Center</strong> </a>to read this article below. </p>\n<p><span class=\"wysiwyg-font-size-x-large\"><strong><span class=\"wysiwyg-color-orange110\">Discord Safety Center:</span> 🔗 </strong><a href=\"https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord\" target=\"_blank\" rel=\"noopener noreferrer\">Reporting Abusive Behavior to Discord</a></span></p>"
+    "body": "<p>If you encounter a violation of our <a href=\"https://discord.com/terms\" target=\"_blank\" rel=\"noopener noreferrer\">Terms of Service</a> or <a href=\"https://discord.com/guidelines\" target=\"_blank\" rel=\"noopener noreferrer\">Community Guidelines</a>, we ask that you report this behavior to us.</p>\n<p>For more information on reporting abusive behavior, visit our <a href=\"https://discord.com/safety\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Discord Safety Center</strong> </a>to read this article below. </p>\n<div class=\"book-box\">\n<strong>Discord Safety Center: 🔗 </strong><a href=\"https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord\" target=\"_blank\" rel=\"noopener noreferrer\">Reporting Abusive Behavior to Discord</a>\n</div>"
   },
   {
     "id": 22567595858327,

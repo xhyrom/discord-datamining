@@ -1,6 +1,6 @@
 <p>As per our<strong> <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a></strong>, you are responsible for the security of your account. </p>
 <p>Please note that if you fail to secure your account and it is compromised, Discord may be unable to assist in its recovery.</p>
-<h3 id="h_01J0984FNG2YJY7NCCSP3G51XE">If you believe your account has been compromised, submit a report to the <strong>Discord Trust &amp; Safety </strong>team <a href="https://dis.gd/hackedaccount" target="_blank" rel="noopener noreferrer">here</a>.</h3>
+<div class="form-box">If you believe your account has been compromised, submit a report to the Discord Trust &amp; Safety team through <strong><a href="https://dis.gd/hackedaccount" target="_blank" rel="noopener noreferrer">our support form linked here</a></strong>.</div>
 <h2 id="h_01J098298YV08T122AV2ECPHDR">How to Keep Your Discord Account Safe</h2>
 <p>For more information on how to keep your account safe, visit our <strong><a href="https://discord.com/safety" target="_blank" rel="noopener noreferrer">Discord Safety Center</a> </strong>to read these articles below:</p>
 <ul>
