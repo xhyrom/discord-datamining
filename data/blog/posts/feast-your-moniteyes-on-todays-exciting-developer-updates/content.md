@@ -71,7 +71,6 @@
             <h3><strong>Improving Monetization Tools to Help Your App Thrive</strong></h3>
             <p>Our new suite of features and revised fee structure can help generate additional funds you can use to reinvest in tons of ways: Making your app even better? Marketing it to the world? Finally add that new feature you've had on the back burner for ages?&nbsp;</p>
             <p>Whether it's the convenience of one-time purchases, the added exposure from the Store, or the increased profitability offered by the new Growth Tier, each feature announced today contributes to elevating your app's performance… or just more resources to invest in your passion for video games, your call.</p>
-            <p>Looking to learn more? We’re inviting all developers to join us at the upcoming “Platform Updates” event on Friday, June 28, 2024, in the<a href="http://www.discord.com/invite/discord-developers"> Discord Developers Server</a> (or DDevs for short). You'll be able to hear about all these updates firsthand from Discord Staff, and if you stick around our community afterward, we've also got some fun surprises planned for you.&nbsp;</p>
             <p>That's all from us for now, folks! We hope you're as thrilled about these new features and updates as we are. We're eagerly waiting to see how you'll harness them to create new and exciting experiences on Discord.&nbsp;</p>
             <p>Here's to happy development!</p>
         </div>
