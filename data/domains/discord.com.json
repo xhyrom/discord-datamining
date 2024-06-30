@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 56,
+  "subdomain_count": 57,
   "subdomains": [
     "support",
     "blog",
@@ -40,6 +40,7 @@
     "o19.ptr4192",
     "o14.ptr6344",
     "o22.ptr2763",
+    "static",
     "snowsgiving-tale-2022-es-es",
     "snowsgiving-tale-2022-pt-br",
     "snowsgiving-tale-2022-zh-tw",
