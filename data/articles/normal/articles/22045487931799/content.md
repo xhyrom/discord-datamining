@@ -1,5 +1,5 @@
 <h3 id="docs-internal-guid-65f73da0-7fff-048e-8b8d-35b5aea54717">
-    <span style="color: #434343;">To learn more about activity status, check out the </span><a href="https://support.discord.com/hc/en-us/articles/7931156448919" target="_blank" rel="noopener noreferrer">Activity Status (Recent Activity)</a><span style="color: #434343;"> article.</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">To learn more about activity status, check out the </span><a href="https://support.discord.com/hc/en-us/articles/7931156448919" target="_blank" rel="noopener noreferrer">Activity Status (Recent Activity)</a><span style="color: #434343;" data-darkreader-inline-color=""> article.</span>
 </h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
@@ -13,10 +13,11 @@
             <li><a href="https://support.discord.com/hc/en-us/articles/22045487931799#h_01HRZ59A41W46PH064PDY7PWEZ">Activity Privacy</a></li>
         </ul>
     </li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22045487931799#h_01J1R2F8J2HK83DGBXQXJY4WK8">Game Profile</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/22045487931799#h_01HRZ59A41N8S7TGV154X8HDGB">Have Ideas or Feedback?</a></li>
 </ul>
 <h1 id="h_01HRZ59A41YS32ZJVG8XK9W998">What is the Members List Recent Activity Feature?</h1>
-<h3 id="h_01HRZ59A41MYQCS32MT16QRG1V"><span style="color: #434343;">This feature is currently in beta. It is limited to a small percentage of users within English-prominent regions and available only on the desktop app. This being the case, the experiment is subject to change or may be removed.</span></h3>
+<h3 id="h_01HRZ59A41MYQCS32MT16QRG1V"><span style="color: #434343;" data-darkreader-inline-color="">This feature is currently in beta. It is limited to a small percentage of users within English-prominent regions and available only on the desktop app. This being the case, the experiment is subject to change or may be removed.</span></h3>
 <p>Want to easily catch up with your friends and create more shared experiences together?</p>
 <p>With the <strong>Members List Recent Activity </strong>feature, you’ll be able to view the recent activities of your friends and recent contacts - including the video games they’re playing, the music they’re listening to, and much more!</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22075711408535" width="624" height="444"></p>
@@ -49,5 +50,15 @@
 <p>2. Then under the <strong>Activity Settings </strong>section, select <strong>Registered Games</strong>.</p>
 <p>3. From here, you can select the icon for <strong>Toggle Detection </strong>to prevent a game from showing up in the activity cards going forward.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22075683844119" width="624" height="237"></p>
+<h1 id="h_01J1R2F8J2HK83DGBXQXJY4WK8">Game Profile</h1>
+<h3 id="h_01J1R2F8J2Z7S3H6HWZD6TCGAM"><span style="color: #434343;" data-darkreader-inline-color="">This feature does not display on the browser or mobile app, and is only available on the desktop app (Windows, Mac, and Linux).</span></h3>
+<p>If someone is playing a game and a game profile exists for this game, you can tap on the game icon within the app and be provided with additional information. Here is how to access this.</p>
+<p>1. Tap on the profile of the user you want to view (this can be done through a server’s members list in a server, DM, group chat message, or your friend’s list) and tap on the icon of the game they’re playing.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24578027168151" width="264" height="73"></p>
+<p>2. If the game has a game profile, the game icon will not only be clickable, but a page within the app will open to display information about the game. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24578027173911" width="624" height="488"></p>
+<p>3. On a game profile, you can find any available information about the game (eg. genre, game summary, social links, Discord server, publisher, available platforms like device type, consoles, etc.)</p>
+<p>It will also include screenshots and promotional art of the game, recommendations for similar games, and usernames of friends who have played the same game.</p>
+<h3 id="h_01J1R2F8J2AWHHFZWNX75AJKBY"><span style="color: #434343;" data-darkreader-inline-color="">If a game does not have a game profile, it’s because not enough users have played the game to display any data. </span></h3>
 <h1 id="h_01HRZ59A41N8S7TGV154X8HDGB">Have Ideas or Feedback? </h1>
 <p>Let us know via this <a href="https://dis.gd/mlfb" target="_blank" rel="noopener noreferrer">link</a>! We’re especially curious to hear what other types of activities you and your friend groups would have fun talking about together!</p>
