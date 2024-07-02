@@ -10291,7 +10291,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     transform: translate3d(calc(100% - 32px), 0, 0)
 }
 
-.onlyShineOnHover_a669f8 {
+.full-motion .onlyShineOnHover_a669f8 {
     animation-name: InstantShine_a669f8;
     animation-delay: 0s
 }
@@ -13559,7 +13559,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     padding: 4px;
     cursor: pointer;
     flex: 0 0 auto;
-    opacity: .6
+    opacity: .6;
+    color: var(--white)
 }
 
 .controlIcon_f72aac:hover {
@@ -17710,12 +17711,15 @@ div.cardContainer_c22357 {
 
 .uploadDropModal_f82cc7.error_f82cc7 {
     background-color: var(--red-430);
-    animation: uploadModalShake_f82cc7.82s cubic-bezier(.36, .07, .19, .97)both;
     transform: translatez(0);
     padding: 10px;
     border-radius: 4px;
     box-sizing: border-box;
     height: auto
+}
+
+.full-motion .uploadDropModal_f82cc7.error_f82cc7 {
+    animation: uploadModalShake_f82cc7.82s cubic-bezier(.36, .07, .19, .97)both
 }
 
 .uploadDropModal_f82cc7.error_f82cc7 .instructions_f82cc7 {
@@ -17751,7 +17755,10 @@ div.cardContainer_c22357 {
     left: 0;
     z-index: -1;
     border-radius: 10px;
-    background: var(--brand-500);
+    background: var(--brand-500)
+}
+
+.full-motion .uploadDropModal_f82cc7 .bgScale_f82cc7 {
     animation: uploadModalBounce_f82cc7.8s ease 0s forwards normal
 }
 
@@ -17805,19 +17812,19 @@ div.cardContainer_c22357 {
     transform: translatez(0)
 }
 
-.icon_f82cc7.one_f82cc7 {
+.full-motion .icon_f82cc7.one_f82cc7 {
     opacity: 0;
     animation: uploadIconAnimateInLeft_f82cc7.8s ease 0s forwards normal;
     position: absolute
 }
 
-.icon_f82cc7.two_f82cc7 {
+.full-motion .icon_f82cc7.two_f82cc7 {
     filter: drop-shadow(0 0 48px rgba(88, 101, 242, .5));
     animation: uploadIconAnimateInMiddle_f82cc7.8s ease 0s forwards normal;
     position: absolute
 }
 
-.icon_f82cc7.three_f82cc7 {
+.full-motion .icon_f82cc7.three_f82cc7 {
     opacity: 0;
     animation: uploadIconAnimateInRight_f82cc7.8s ease 0s forwards normal;
     position: absolute
@@ -18827,7 +18834,7 @@ div.cardContainer_c22357 {
     padding: 12px
 }
 
-.messageLengthUpsellContainer_aac415.messageLengthUpsellAppearAnimation_aac415 {
+.full-motion .messageLengthUpsellContainer_aac415.messageLengthUpsellAppearAnimation_aac415 {
     animation-duration: .4s;
     animation-timing-function: ease-in;
     animation-delay: 0s;
@@ -19880,17 +19887,6 @@ div.cardContainer_c22357 {
     overflow: hidden
 }
 
-.subtext_a31c43 {
-    flex: 0 1 auto;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-size: 12px;
-    line-height: 16px;
-    color: var(--channels-default);
-    font-weight: 500
-}
-
 .activityEmoji_a31c43 {
     margin-right: 4px;
     width: 14px;
@@ -20385,7 +20381,7 @@ span.clanTag_a31c43 {
 
 .footer_b07019 {
     z-index: 1;
-    padding: 0 16px 16px;
+    padding: 0 16px 12px;
     display: flex;
     flex-direction: column
 }
@@ -25912,14 +25908,17 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .placeholder_bad108 {
     border-radius: 5px;
-    opacity: 0;
     width: 100%;
     height: 100%;
-    animation: loadIN_bad108.6s cubic-bezier(.17, .67, .16, .99);
-    animation-fill-mode: forwards;
-    will-change: transform3d, opacity;
-    transform: translate3d(0, 48px, 0);
     background: var(--bg-mod-faint)
+}
+
+.full-motion .placeholder_bad108 {
+    will-change: transform3d, opacity;
+    opacity: 0;
+    transform: translate3d(0, 48px, 0);
+    animation: loadIN_bad108.6s cubic-bezier(.17, .67, .16, .99);
+    animation-fill-mode: forwards
 }
 
 .theme-dark .endContainer_bad108:after {
@@ -30611,13 +30610,13 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     padding: 2px
 }
 
-.animation_e18107 {
+.full-motion .animation_e18107 {
     animation: slideInFromBottom_e18107.6s cubic-bezier(.26, .17, .28, 1.27).25s 1 forwards;
     transform: translatey(90px);
     z-index: -1
 }
 
-.animation_e18107.inSidebar_e18107 {
+.full-motion .animation_e18107.inSidebar_e18107 {
     animation: slideInFromTop_e18107.6s cubic-bezier(.26, .17, .28, 1.27).25s 1 forwards;
     transform: translatey(-90px)
 }
@@ -38954,8 +38953,11 @@ h3.improved_f017d0:after {
 
 .easterEggSelection_f45ea6 {
     transform: rotate(0), scale(0);
-    animation: scale-bounce-wiggle_f45ea6.5s 0s forwards;
     position: relative
+}
+
+.full-motion .easterEggSelection_f45ea6 {
+    animation: scale-bounce-wiggle_f45ea6.5s 0s forwards
 }
 
 .sparkles_f45ea6 {
@@ -45986,4 +45988,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.4d84ef209b92b5896931.css.map*/
+/*# sourceMappingURL=12633.bad4689e0da805110ef7.css.map*/
