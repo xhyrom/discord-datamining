@@ -39392,6 +39392,8 @@ html.disable-forced-colors * {
     --bg-gradient-under-the-sea-2-hsl: 159 calc(var(--saturation-factor, 1) * 20.4%) 43.3%;
     --bg-gradient-under-the-sea-3: hsl(var(--bg-gradient-under-the-sea-3-hsl) / 1);
     --bg-gradient-under-the-sea-3-hsl: 175 calc(var(--saturation-factor, 1) * 10.9%) 46.7%;
+    --black: hsl(var(--black-hsl) / 1);
+    --black-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
     --black-100: hsl(var(--black-100-hsl) / 1);
     --black-100-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 94.9%;
     --black-130: hsl(var(--black-130-hsl) / 1);
@@ -40046,6 +40048,8 @@ html.disable-forced-colors * {
     --twitch-hsl: 262 calc(var(--saturation-factor, 1) * 46.8%) 39.8%;
     --twitter: hsl(var(--twitter-hsl) / 1);
     --twitter-hsl: 203 calc(var(--saturation-factor, 1) * 89.1%) 53.1%;
+    --white: hsl(var(--white-hsl) / 1);
+    --white-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 100%;
     --white-100: hsl(var(--white-100-hsl) / 1);
     --white-100-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 100%;
     --white-130: hsl(var(--white-130-hsl) / 1);
@@ -45949,4 +45953,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.7d9e262c9a8ff0968263.css.map*/
+/*# sourceMappingURL=12633.6db65b63b8e04b43d02e.css.map*/
