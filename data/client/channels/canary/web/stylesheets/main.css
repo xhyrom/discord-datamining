@@ -33445,8 +33445,52 @@ h3.improved_f017d0:after {
     fill: var(--text-normal)
 }
 
+.statusBubbleOuter_d0a252:hover .editIcon_d0a252,
+.statusBubbleOuter_d0a252:focus-within .editIcon_d0a252 {
+    opacity: 1
+}
+
 .singleLineAlign_d0a252 {
     text-align: center
+}
+
+.editIcon_d0a252 {
+    opacity: 0;
+    transition: opacity.3s ease
+}
+
+.editIcon_d0a252.expandable_d0a252 {
+    transition: none
+}
+
+.editGradient_d0a252 {
+    background: linear-gradient(90deg, hsl(var(--primary-600-hsl)/0)0%, var(--bg-surface-overlay)100%);
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    max-width: 18px;
+    width: 100%;
+    height: 18px
+}
+
+.editClickable_d0a252 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface-overlay);
+    cursor: pointer
+}
+
+.editClickableEmojiOnly_d0a252 {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px
 }
 
 .addStatusPrompt_d0a252 {
@@ -45949,4 +45993,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.7d9e262c9a8ff0968263.css.map*/
+/*# sourceMappingURL=12633.d08a9d2ae8375ef1c2a4.css.map*/
