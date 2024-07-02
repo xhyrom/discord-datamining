@@ -13559,7 +13559,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     padding: 4px;
     cursor: pointer;
     flex: 0 0 auto;
-    opacity: .6
+    opacity: .6;
+    color: var(--white)
 }
 
 .controlIcon_f72aac:hover {
@@ -45987,4 +45988,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.48198fbcb9972868cc5a.css.map*/
+/*# sourceMappingURL=12633.bad4689e0da805110ef7.css.map*/
