@@ -1,4 +1,6 @@
-<h3 id="h_01J18GH10TN8PEF2G502AYEF8W">Note:  This Quest will be gradually rolled out to all eligible users. If you do not see it immediately in your Gift Inventory, please check again in a few days.</h3>
+<h3 id="h_01J18GH10TN8PEF2G502AYEF8W">
+    <strong>Note</strong>: This Quest will be gradually rolled out to all eligible users. If you do not see it immediately in your Gift Inventory, please check again in a few days.
+</h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24429569992471" width="598" height="251"></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
@@ -10,7 +12,9 @@
 <h1 id="h_01J18GH10TJ6VJ6ZCY1VDT9YRZ">Promotion Terms</h1>
 <p><strong>Quest Game:</strong> <strong>Any PlayStation or Xbox console game</strong><br><strong>Quest Name: Console Gaming Quest</strong></p>
 <p><strong>Offer Details: </strong>Connect your console to Discord and play any console game for 10 minutes to receive the <strong>Warp Helmet avatar decoration</strong>. You can learn more about avatar decorations <a href="https://support.discord.com/hc/en-us/articles/13410113109911"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">here</span>. </a> </p>
-<h3 id="h_01J18GH10TNV3K8D6DR74CY5MN">Note: The Warp Helmet is a limited-time avatar decoration and will only be yours as an avatar decoration until September 9, 2024. After this date, you will no longer have access to this avatar decoration. </h3>
+<h3 id="h_01J18GH10TNV3K8D6DR74CY5MN">
+    <strong>Note</strong>: The Warp Helmet is a limited-time avatar decoration and will only be yours as an avatar decoration until September 9, 2024. After this date, you will no longer have access to this avatar decoration. 
+</h3>
 <p>Once the Quest has been completed, participants will also be able to sign up for a chance to join the free <strong>VALORANT Console Limited Beta</strong>! VALORANT is headed to PlayStation 5 and Xbox Series X|S. <br>For more information, visit the official <a href="https://beta.playvalorant.com/en-us/"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">VALORANT Console Limited Beta website</span></a>!</p>
 <p><strong>Who is Eligible: </strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Available to players on PlayStation 4, PlayStation 5, Xbox Series X, and Xbox Series S where </span><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Discord</span></strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor=""> is available. </span></p>
 <p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Discord’s premium services are restricted in some regions. If you are unable to access the Gift Inventory, you are not eligible for this Quest or reward.</span></p>
@@ -34,7 +38,7 @@
 <p>If you’re unsure whether your Discord account is already connected to your console, navigate to <strong>User Settings</strong> &gt; <strong>Connections</strong> to review all available connections.</p>
 <p>Once you’ve connected Discord to your console, play any console game for 10 minutes to complete the Quest. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24429570003479" width="624" height="472"></p>
-<h3 id="h_01J18GH10T10YVGAKK9146HA6S">If you are running into any issues with the Quest completion, you can select the Check for Launches button within the Quest banner to check if you’ve launched a game. </h3>
+<h3 id="h_01J18GH10T10YVGAKK9146HA6S">If you are running into any issues with the Quest completion, you can select the Check for Launches button within the Quest banner to check if you’ve launched a game. For additional troubleshooting steps, check out the following Help Center articles: <br>- <a href="https://support.discord.com/hc/articles/360003953831-Discord-and-Xbox-Connection-FAQ#docs-internal-guid-2d845ec1-7fff-baa6-57ce-893ad1405d29" target="_blank" rel="noopener noreferrer">Discord and Xbox Connection FAQ</a><br>- <a href="https://support.discord.com/hc/articles/4419534960919-Discord-and-PlayStation-Network-Connection-FAQ#h_01J1TXNAT4RFSX9R7HQ30MHFCC" target="_blank" rel="noopener noreferrer">Discord and PlayStation® Network Connection FAQ</a> </h3>
 <p class="wysiwyg-text-align-center"><span style="background-color: #d9ead3;" data-darkreader-inline-bgcolor=""><img src="https://support.discord.com/hc/article_attachments/24429585338519" width="586" height="262"></span></p>
 <h1 id="h_01J18GH10TWV754HS7G8Y0HK8Q">Redemption Instructions</h1>
 <p>Once you’ve completed the Quest by connecting Discord to your console and playing a console game, you’ll be able to claim the <strong>Warp Helmet avatar decoration</strong>. The Warp Helmet avatar decoration needs to be redeemed by <strong>July 10, 2024</strong>.</p>
