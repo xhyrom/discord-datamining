@@ -5,38 +5,38 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01G8DY0TKDFS1GFYVRYCZBV7CZ" target="_self"><span style="font-weight: 400;">How to Link Your Discord and Xbox Accounts</span></a>
+        <a href="#h_01G8DY0TKDFS1GFYVRYCZBV7CZ" target="_self">How to Link Your Discord and Xbox Accounts</a>
         <ul>
-            <li style="font-weight: 400;" aria-level="1"><a href="#h_01G8DY30NM50BZB5TVQ1XN4QXX" target="_self"><span style="font-weight: 400;">How to Connect My Xbox Account from Discord</span></a></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01G8DY39HTJBD06B5Z0VBZMQJA" target="_self"><span style="font-weight: 400;">How to Connect My Discord Account from Xbox</span></a></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01G8DY3K1JRRETTS1E83MMW9KC" target="_self"><span style="font-weight: 400;">How Do I Remove the Xbox Connection from My Discord Account?</span></a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="#h_01G8DY30NM50BZB5TVQ1XN4QXX" target="_self">How to Connect My Xbox Account from Discord</a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01G8DY39HTJBD06B5Z0VBZMQJA" target="_self">How to Connect My Discord Account from Xbox</a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01G8DY3K1JRRETTS1E83MMW9KC" target="_self">How Do I Remove the Xbox Connection from My Discord Account?</a></li>
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01G8DY3XCXJ874AM7Z7PRR92J4" target="_self"><span style="font-weight: 400;">How to Display Connection &amp; Game Activity on My Profile</span></a>
+        <a href="#h_01G8DY3XCXJ874AM7Z7PRR92J4" target="_self">How to Display Connection &amp; Game Activity on My Profile</a>
         <ul>
             <li style="font-weight: 400;" aria-level="1"><a href="#h_01G8DY4EPD3YPQNYPMZXDD7HFD" target="_self">On Desktop - Display Your Connected Account on Your User Profile </a></li>
             <li style="font-weight: 400;" aria-level="2"><a href="#h_01G8DY4TY0SYGT175FHRA2RM1R" target="_self" rel="undefined">Display your Xbox activity as your status</a></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01G8DY53M87V88AMZ3JBP0ZWJD" target="_self"><span style="font-weight: 400;">On Mobile - Display your Xbox Connected Account and activity as your status</span></a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01G8DY53M87V88AMZ3JBP0ZWJD" target="_self">On Mobile - Display your Xbox Connected Account and activity as your status</a></li>
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1">
         <a href="#h_01G8DY5EF772G2DR9TSEQ4WZHB" target="_self">How to Join your Discord Voice Chat on your Xbox</a><br>
         <ul>
-            <li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;"><a href="#h_01GJ0N0MFMK6816S9DQMM2SQ0J" target="_self">On Xbox Console </a></span></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GJ0MKFCCG5FHZTJJ4JJEWYHJ" target="_self"><span style="font-weight: 400;">On Discord mobile app</span></a></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GJ0MKPMS590HPVWJTK81WJJ4" target="_self"><span style="font-weight: 400;">On Discord Desktop client</span></a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GJ0N0MFMK6816S9DQMM2SQ0J" target="_self">On Xbox Console </a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GJ0MKFCCG5FHZTJJ4JJEWYHJ" target="_self">On Discord mobile app</a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GJ0MKPMS590HPVWJTK81WJJ4" target="_self">On Discord Desktop client</a></li>
         </ul>
     </li>
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/360003953831#h_01J1TYJ22SN8Q4YND06JAGPA57">How to Complete Discord Quests on Your Xbox</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/360003953831#h_01J1TW883SC50S6Q2ZRCNGS1V8">Via Xbox Website</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/360003953831#h_01J1TWB8DMWMKV1N33ZQCGWV84">On Xbox Series X/S Console</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360003953831#h_01J1TW883SC50S6Q2ZRCNGS1V8">Verify Your Privacy Settings via Xbox Website</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/360003953831#h_01J1TWB8DMWMKV1N33ZQCGWV84">Verify Your Privacy Settings on Xbox Series X/S Console</a></li>
         </ul>
     </li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-83aca2cf-7fff-0fda-62ee-45bee8c7c518" target="_self"><span style="font-weight: 400;">Stream Gameplay to Discord from Xbox</span></a></li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#h_01G8DY5V80CNBEY9FWHN8BDEHY" target="_self"><span style="font-weight: 400;">Frequently Asked Questions</span></a></li>
+    <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-83aca2cf-7fff-0fda-62ee-45bee8c7c518" target="_self">Stream Gameplay to Discord from Xbox</a></li>
+    <li style="font-weight: 400;" aria-level="1"><a href="#h_01G8DY5V80CNBEY9FWHN8BDEHY" target="_self">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01G8DY0TKDFS1GFYVRYCZBV7CZ"><span style="font-weight: 400;">How to Link Your Discord and Xbox Accounts</span></h1>
 <p><span style="font-weight: 400;">To take full advantage of an Xbox connection for your Discord experience, you will need to connect your Discord and Xbox accounts. Connecting your Xbox account to your Discord account means you can:</span></p>
@@ -149,13 +149,13 @@
 <p class="p2"><span class="s1">6. Follow the prompts on your Discord mobile app to complete the Discord voice transfer to Xbox.</span></p>
 <h1 id="h_01J1TYJ22SN8Q4YND06JAGPA57" class="undefined"><span class="s1">How to Complete Discord Quests on Your Xbox</span></h1>
 <p id="docs-internal-guid-fa65b6f8-7fff-1a94-ceca-5536cf675cce">To get started, follow the steps above in the <a href="https://support.discord.com/hc/en-us/articles/360003953831#h_01G8DY30NM50BZB5TVQ1XN4QXX">How to Connect My Xbox Account from Discord</a> section to properly connect your Discord and Xbox accounts.</p>
-<h2 id="h_01J1TW883SC50S6Q2ZRCNGS1V8">Via Xbox Website</h2>
+<h2 id="h_01J1TW883SC50S6Q2ZRCNGS1V8"><span id="docs-internal-guid-95003f83-7fff-2568-ba4e-eaf51c044401">Verify Your Privacy Settings via Xbox Website</span></h2>
 <p>1. Via the <a href="https://www.xbox.com/en-US/user/settings/privacy-and-safety" target="_blank" rel="noopener noreferrer">Xbox website</a>, log in to your<strong> Microsoft account</strong>. </p>
 <p>2. Once you’re logged in, go to <strong>Xbox Settings</strong> <strong>&gt;</strong> <strong>Privacy Settings Management &gt; Others Can.</strong> </p>
 <p>3. While there, set the <strong>Others can see if you’re online</strong> option to <strong>“Anyone</strong>” to make progress on a <a href="https://support.discord.com/hc/articles/22225719947543" target="_blank" rel="noopener noreferrer">Discord Quest</a>.</p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-90952419-7fff-4048-9bde-bbb4afe18f88"><img src="https://support.discord.com/hc/article_attachments/24611317511575" width="624" height="361"></span></p>
 <p id="docs-internal-guid-64d8b89d-7fff-82c5-2108-e845c286a6ee">You can accomplish this on your account via Xbox website or directly on your Xbox console</p>
-<h2 id="h_01J1TWB8DMWMKV1N33ZQCGWV84">On Xbox Series X/S Console</h2>
+<h2 id="h_01J1TWB8DMWMKV1N33ZQCGWV84">Verify Your Privacy Settings on Xbox Series X/S Console</h2>
 <p>1. On your Xbox Series X/S console, go to <strong>Settings</strong> &gt; <strong>Accounts</strong> &gt;<strong> Privacy</strong> <strong>&amp; online safety</strong>. </p>
 <p>2. Then, navigate to <strong>Xbox privacy &gt;</strong> <strong>View details &amp; customize</strong> &gt; <strong>Online status &amp; history</strong>.</p>
 <p>3. Once there, set the <strong>Others can see if you’re online</strong> option to “<strong>Everybody</strong>”. </p>

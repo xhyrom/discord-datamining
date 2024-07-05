@@ -30,7 +30,6 @@
 <p>While your membership is in the past due state, you will retain access to your perks for the duration of time listed above. </p>
 <p>If a successful payment for the membership is not made before the window ends, the membership will automatically end and you’ll lose access to your membership perks and related streaks.</p>
 <p>After you successfully make the past due payment , keep in mind that your next renewal charge may occur soon after depending on your renewal date. You can find your renewal date under <strong>Payment </strong>information in the <strong>Subscriptions Tab.</strong></p>
-<h3 id="h_01HX06Y9YSX4DGR1EJ29Y3WHN5">Please note: Gift credits cannot be used to pay for a past due membership.  </h3>
 <h1 id="h_01HX06JJ3T0CMQPEPC85FCBW2J">Why did my payment fail?</h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23247451171991" width="624" height="249"></p>
 <p>There are several reasons that can cause a payment to fail. In order to figure out what’s going on, we recommend following the steps below:</p>
@@ -51,8 +50,10 @@
 <p>A: After you have paid for your past due membership, your next membership renewal may be charged immediately depending on the renewal date of your membership. You can find the date your membership renews under <strong>User Settings &gt; Subscriptions &gt; Payment</strong>. </p>
 <p><strong>Q: Can I cancel or change my membership plan while it has a past due payment? </strong></p>
 <p>A: You can cancel your membership while it’s in a past due state by visiting <strong>User Settings &gt; Subscriptions &gt; Cancel</strong>. However, you won’t be able to change the plan you’re on until you pay for the past due payment on your current plan. Learn more about managing your subscription <a href="https://support.discord.com/hc/en-us/articles/19580873036695" target="_blank" rel="noopener noreferrer">here</a>. </p>
-<p><strong>Q: Can I redeem my Nitro gift credits while my membership is past due?</strong></p>
-<p>A:  Gift credits cannot be used to pay for the past due membership. You can find out more about what happens to your membership when it’s past due <a href="https://support.discord.com/hc/en-us/articles/23082866222871#h_01HX06JJ3T7FGTGYNQCXNW7P9W">here</a>. </p>
+<p><strong>Q: Can I redeem my Nitro gift credits while my membership is past due? </strong><br>A: Yes, you can redeem Nitro gift credits even if your membership is past due. If you have a Nitro gift credit before your payment fails, the credit will be applied immediately to your membership’s upcoming billing cycle.<br>Also, if your account is already past due and you receive a gift credit, the credit will be applied during the next renewal attempt, and your membership will become active again.</p>
+<h3 id="h_01J1XDM7GJP4F7WB3XZ0G5FHMF">
+    <strong>Please note</strong>: Using a gift credit does not change the billing date for your membership. If your account has been past due for some time (e.g., 10 days), part of the gift credit will be used to cover that period.
+</h3>
 <p><strong>Q: If my payment is not made on time, what happens to my perks?</strong></p>
 <p>A: Depending on which platform you purchased the membership, you’ll have access to your membership perks for 28-30 days after your payment fails. If you do not make the payment before this window ends, your membership will automatically end.</p>
 <p><strong>Q: Does my billing date change if I resolve my payment issues after my membership is past due?</strong></p>

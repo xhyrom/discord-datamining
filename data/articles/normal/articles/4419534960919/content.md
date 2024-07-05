@@ -10,17 +10,17 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01GR8PBN8T469XJ2V0EV5G15P2" target="_self"><span style="font-weight: 400;">How to Connect My Account for PlayStation Network from Discord</span></a>
+        <a href="#h_01GR8PBN8T469XJ2V0EV5G15P2" target="_self">How to Connect My Account for PlayStation Network from Discord</a>
         <ul>
-            <li style="font-weight: 400;" aria-level="1"><a href="#h_01GR8PF2VH9BS8CFKBHNHBTQ2G" target="_self"><span style="font-weight: 400;">How Do I Remove the Connection from My Account?</span></a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="#h_01GR8PF2VH9BS8CFKBHNHBTQ2G" target="_self">How Do I Remove the Connection from My Account?</a></li>
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01GR8PFBW9PFTVBATEGV20Z916" target="_self"><span style="font-weight: 400;">How to Display Connection &amp; Game Activity on My Profile</span></a>
+        <a href="#h_01GR8PFBW9PFTVBATEGV20Z916" target="_self">How to Display Connection &amp; Game Activity on My Profile</a>
         <ul>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PFXHG2Y6T34TD64VZ0S47" target="_self"><span style="font-weight: 400;">Display on User Profile</span></a></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PGFSE731F5WRTYE5WCEPB" target="_self"><span style="font-weight: 400;">Display PlayStation Network as Your status</span></a></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PGRY8J6BGTDEW0W1RVM3J" target="_self"><span style="font-weight: 400;">Why isn't my PlayStation Network status displaying on Discord?</span></a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PFXHG2Y6T34TD64VZ0S47" target="_self">Display on User Profile</a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PGFSE731F5WRTYE5WCEPB" target="_self">Display PlayStation Network as Your status</a></li>
+            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GR8PGRY8J6BGTDEW0W1RVM3J" target="_self">Why isn't my PlayStation Network status displaying on Discord?</a></li>
         </ul>
     </li>
     <li>
@@ -34,12 +34,12 @@
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J1TXNAT4RFSX9R7HQ30MHFCC">How to Complete Discord Quests on Your PlayStation</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J1TXQ49RPB0RJDBVK4HV28VS">Via PlayStation Website</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J1TXTBG0SA4NDB7B7B00YQVV">On PS4 Console</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J1TXXFSZPMPA9T3JTNH838SY">On PS5 Console</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J1TXQ49RPB0RJDBVK4HV28VS">Verify Your Privacy Settings via PlayStation Website</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J1TXTBG0SA4NDB7B7B00YQVV">Verify Your Privacy Settings on PS4 Console</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01J1TXXFSZPMPA9T3JTNH838SY">Verify Your Privacy Settings on PS5 Console</a></li>
         </ul>
     </li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#h_01GR8PJV4MXFH1FAXQRETQXJ25" target="_self"><span style="font-weight: 400;">Frequently Asked Questions</span></a></li>
+    <li style="font-weight: 400;" aria-level="1"><a href="#h_01GR8PJV4MXFH1FAXQRETQXJ25" target="_self">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01GR8PBN8T469XJ2V0EV5G15P2"><strong>How to Connect My Account for PlayStation Network from Discord</strong></h1>
 <h3 id="h_01HGXPAQBE64GRSP2P6JP33YTB">
@@ -122,19 +122,19 @@
 <p>4. The <strong>Transfer Voice to PlayStation </strong>pop-up will appear that will allow you to choose the PS5 console associated with your account for PlayStation Network connected to your Discord account. Select the intended console and press <strong>Transfer Voice</strong>.</p>
 <h1 id="h_01J1TXNAT4RFSX9R7HQ30MHFCC">How to Complete Discord Quests on Your PlayStation</h1>
 <p id="docs-internal-guid-e8a1ea08-7fff-ecaa-ea06-d1e1f4c2cbc8">To get started, follow the steps above in the <a href="https://support.discord.com/hc/en-us/articles/4419534960919#h_01GR8PBN8T469XJ2V0EV5G15P2">How to Connect My PlayStation Account from Discord</a> section to properly connect your Discord and PlayStation accounts. </p>
-<h2 id="h_01J1TXQ49RPB0RJDBVK4HV28VS">Via PlayStation Website</h2>
+<h2 id="h_01J1TXQ49RPB0RJDBVK4HV28VS"><span id="docs-internal-guid-682a7c52-7fff-8061-b2e1-6627b5fda02f">Verify Your Privacy Settings via PlayStation Website</span></h2>
 <p id="docs-internal-guid-f512acfa-7fff-aed7-79b5-0423a664962f">1. Via the <a href="https://www.playstation.com/acct/management" target="_blank" rel="noopener noreferrer">PlayStation website</a>, log in to your <strong>PlayStation Network account</strong>.<strong> </strong></p>
 <p>2. Once you’re logged in, go to your <strong>Account Settings &gt; Privacy Settings &gt; Personal Info | Messaging</strong>. </p>
 <p>3. In <strong>Personal Info | Messaging</strong>, be sure to set your <strong>Online Status and Now Playing</strong> <strong>settings</strong> to “<strong>Anyone</strong>” to make progress on a <a href="https://support.discord.com/hc/articles/22225719947543-Discord-Quests-FAQ" target="_blank" rel="noopener noreferrer">Discord Quest</a>. </p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-db28f1bd-7fff-9412-bc99-906c5334af50"><img src="https://support.discord.com/hc/article_attachments/24611765093399" width="624" height="535"></span></p>
-<h2 id="h_01J1TXTBG0SA4NDB7B7B00YQVV" class="wysiwyg-text-align-left">On PS4 Console</h2>
+<h2 id="h_01J1TXTBG0SA4NDB7B7B00YQVV" class="wysiwyg-text-align-left">Verify Your Privacy Settings on PS4 Console</h2>
 <p id="docs-internal-guid-d7891382-7fff-45c0-59bc-3c2c67d30700">1. On your PS4 console, go to <strong>Settings &gt; Account Management &gt; Privacy Settings</strong>.</p>
 <p>2. Select <strong>Personal Info | Messages</strong>.</p>
 <p>3. Set <strong>Online Status and Now Playing</strong> to “<strong>Anyone</strong>”.</p>
 <h3 id="docs-internal-guid-cfbe1215-7fff-773f-8cb0-c691d41ec897">
     <strong>Note: </strong>Make sure your online status is not hidden: <br>- On your PlayStation console, open your <strong>PSN</strong> <strong>profile</strong>.<br>- Your <strong>Online Status</strong> should be “<strong>Online</strong>” and <em>not</em> “<strong>Appear Offline</strong>”.
 </h3>
-<h2 id="h_01J1TXXFSZPMPA9T3JTNH838SY">On PS5 Console</h2>
+<h2 id="h_01J1TXXFSZPMPA9T3JTNH838SY">Verify Your Privacy Settings on PS5 Console</h2>
 <p>1. On your PS5 console, go to <strong>Settings</strong> &gt; <strong>Users and Accounts</strong> &gt; <strong>Privacy</strong>.</p>
 <p>2. Select <strong>View and Customize Your Privacy Settings</strong>.</p>
 <p id="h_01J1TXWXJP156DJS7KN44PS7G9">3. Set <strong>Who can see your online status and what you’re currently playing</strong> to “<strong>Anyone</strong>”.</p>
