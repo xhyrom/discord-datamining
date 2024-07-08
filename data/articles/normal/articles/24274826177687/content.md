@@ -1,10 +1,10 @@
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-7bf5a5bd-7fff-b8bb-6285-51e2d502603f"><img src="https://support.discord.com/hc/article_attachments/24405600213399" width="375" height="112"></span></p>
 <p id="docs-internal-guid-ee3d58e7-7fff-dc23-b2a3-270469c4a147"><strong>What this article covers: </strong></p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/24274826177687#h_01J1673SQE8YGYH4ASZQQT6CVF">Promotion Terms</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/24274826177687#h_01J1673SQFWKRWYT794FZ5CTSK">How to Complete the Quest</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/24274826177687#h_01J1673SQFDJE579F04B5PGJWG">Redemption Instructions</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/24274826177687#h_01J1673SQFEXAMZQW2HS2DGJZT">Frequently Asked Questions</a></li>
+    <li><a href="#h_01J1673SQE8YGYH4ASZQQT6CVF">Promotion Terms</a></li>
+    <li><a href="#h_01J1673SQFWKRWYT794FZ5CTSK">How to Complete the Quest</a></li>
+    <li><a href="#h_01J1673SQFDJE579F04B5PGJWG">Redemption Instructions</a></li>
+    <li><a href="#h_01J1673SQFEXAMZQW2HS2DGJZT">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01J1673SQE8YGYH4ASZQQT6CVF">Promotion Terms</h1>
 <p><strong>Quest Game:</strong> <strong>Fortnite</strong><br><strong>Quest Name: Fortnite Reload Quest </strong></p>
@@ -14,7 +14,7 @@
 </h3>
 <p><strong>Who is Eligible: </strong><span style="background-color: #ffffff;">Available to Fortnite players on desktop and platforms where Discord is available.</span></p>
 <p><span style="background-color: #ffffff;">Discord’s premium services are restricted in some regions. If you’re unable to access the Gift Inventory, you are not eligible for this Quest or reward.</span></p>
-<p><strong>Availability Period: </strong>The <strong>Fortnite Reload Quest</strong> can be accepted on Discord from <strong>June 27, 2024 </strong>until <strong>July 4, 2024 (11:59pm UTC)</strong>. The Fortnite Victory Crown avatar decoration needs to be redeemed by July 9, 2024.</p>
+<p><strong>Availability Period: </strong>The <strong>Fortnite Reload Quest</strong> can be accepted on Discord from <strong>June 27, 2024 </strong>until <strong>July 4, 2024 (11:59pm UTC)</strong>. The Fortnite Victory Crown avatar decoration needs to be redeemed by <strong>August 3,</strong> <strong>2024</strong>.</p>
 <p>Quest requirements must be completed during this period to receive the reward. </p>
 <p><strong>Other Terms:</strong> </p>
 <p>Limit of one reward redemption per Discord account. </p>
@@ -26,7 +26,7 @@
 </h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24405592201495" width="624" height="351"></p>
 <h1 id="h_01J1673SQFDJE579F04B5PGJWG">Redemption Instructions</h1>
-<p>Once you have completed the Quest by playing 15 minutes of <strong>Fortnite </strong>on Discord, you’ll be able to claim the <strong>Fortnite Victory Crown</strong>. The Fortnite Victory Crown avatar decoration needs to be redeemed by July 9, 2024.</p>
+<p>Once you have completed the Quest by playing 15 minutes of <strong>Fortnite </strong>on Discord, you’ll be able to claim the <strong>Fortnite Victory Crown</strong>. The Fortnite Victory Crown avatar decoration needs to be redeemed by <strong>August 3, 2024</strong>.</p>
 <p>You can use the following methods to claim your <strong>Fortnite Victory Crown avatar decoration</strong>:</p>
 <p><strong>Option 1</strong></p>
 <p>Head over to your <strong>User Settings</strong> by selecting the <strong>cogwheel</strong> [<img src="https://support.discord.com/hc/article_attachments/24405592204183" width="23" height="24">] in the lower left corner. </p>
