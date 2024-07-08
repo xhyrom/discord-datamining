@@ -17823,7 +17823,7 @@ Error:`, e)
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-95a6eba19bd279b9c8351e0cf28a8796f4067370",
+                        release: "discord_web-da5a385531d9b290c1490b1f856ad5f99e0b5ee3",
                         beforeSend: t => {
                             var e, r;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || o.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !E() && !("Aborted" === (r = t).message || "cancel captcha" === r.message) && s() ? t : null
@@ -17841,8 +17841,8 @@ Error:`, e)
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), a.YA("buildNumber", (t = "307828", "307828"));
-                    a.YA("builtAt", String("1720465947171"));
+                    }), a.YA("buildNumber", (t = "307837", "307837"));
+                    a.YA("builtAt", String("1720467512288"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) a.YA(t, e[t]);
@@ -18399,7 +18399,7 @@ Error:`, e)
                         },
                         [n.MIDNIGHT]: {
                             raw: "PLUM_23_ALPHA",
-                            opacity: 1
+                            opacity: .1
                         },
                         [n.DARKER]: {
                             raw: "PLUM_11",
@@ -21283,19 +21283,19 @@ Error:`, e)
                         category: "generic",
                         [n.DARK]: {
                             raw: "TRANSPARENT",
-                            opacity: .01
+                            opacity: 0
                         },
                         [n.LIGHT]: {
                             raw: "TRANSPARENT",
-                            opacity: .01
+                            opacity: 0
                         },
                         [n.MIDNIGHT]: {
                             raw: "TRANSPARENT",
-                            opacity: .01
+                            opacity: 0
                         },
                         [n.DARKER]: {
                             raw: "TRANSPARENT",
-                            opacity: .01
+                            opacity: 0
                         }
                     },
                     INFO_BOX_BACKGROUND: {
@@ -21557,7 +21557,7 @@ Error:`, e)
                         },
                         [n.MIDNIGHT]: {
                             raw: "PLUM_23_ALPHA",
-                            opacity: 1
+                            opacity: .1
                         },
                         [n.DARKER]: {
                             raw: "PLUM_24",
@@ -23262,7 +23262,7 @@ Error:`, e)
                         },
                         [n.MIDNIGHT]: {
                             raw: "PLUM_23_ALPHA",
-                            opacity: 1
+                            opacity: .1
                         },
                         [n.DARKER]: {
                             raw: "PLUM_11",
@@ -23434,7 +23434,7 @@ Error:`, e)
                         },
                         [n.MIDNIGHT]: {
                             raw: "PLUM_23_ALPHA",
-                            opacity: 1
+                            opacity: .1
                         },
                         [n.DARKER]: {
                             raw: "PLUM_11",
@@ -24743,7 +24743,7 @@ Error:`, e)
                         PARTNER: "#4087ed",
                         PAYPAL: "#13216b",
                         PLAYSTATION: "#032f87",
-                        PLUM_23_ALPHA: "#A5B0E9",
+                        PLUM_23_ALPHA: "#BCBCF0",
                         PLUM_0: "#f9f9fa",
                         PLUM_1: "#f3f3f4",
                         PLUM_10: "#818491",
@@ -27008,7 +27008,7 @@ Error:`, e)
                         hex: "#032f87"
                     },
                     "plum-23-alpha": {
-                        hex: "#A5B0E9"
+                        hex: "#BCBCF0"
                     },
                     "plum-0": {
                         hex: "#f9f9fa"
@@ -27916,7 +27916,7 @@ Error:`, e)
                     PARTNER: "#4087ed",
                     PAYPAL: "#13216b",
                     PLAYSTATION: "#032f87",
-                    PLUM_23_ALPHA: "#A5B0E9",
+                    PLUM_23_ALPHA: "#BCBCF0",
                     PLUM_0: "#f9f9fa",
                     PLUM_1: "#f3f3f4",
                     PLUM_10: "#818491",
@@ -28732,7 +28732,7 @@ Error:`, e)
                     PARTNER: "hsl(215, calc(var(--saturation-factor, 1) * 82.8%), 59%)",
                     PAYPAL: "hsl(230, calc(var(--saturation-factor, 1) * 69.8%), 24.7%)",
                     PLAYSTATION: "hsl(220, calc(var(--saturation-factor, 1) * 95.7%), 27.1%)",
-                    PLUM_23_ALPHA: "hsl(230, calc(var(--saturation-factor, 1) * 60.7%), 78%)",
+                    PLUM_23_ALPHA: "hsl(240, calc(var(--saturation-factor, 1) * 63.4%), 83.9%)",
                     PLUM_0: "hsl(240, calc(var(--saturation-factor, 1) * 9.1%), 97.8%)",
                     PLUM_1: "hsl(240, calc(var(--saturation-factor, 1) * 4.3%), 95.5%)",
                     PLUM_10: "hsl(229, calc(var(--saturation-factor, 1) * 6.8%), 53.7%)",
@@ -31105,4 +31105,4 @@ Error:`, e)
         window.DiscordSentry = (0, t.j)()
     })()
 })();
-//# sourceMappingURL=sentry.027e9755cfdc29ac2265.js.map
+//# sourceMappingURL=sentry.1c758566aa8080079a05.js.map
