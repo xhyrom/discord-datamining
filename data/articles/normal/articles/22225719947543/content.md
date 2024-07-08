@@ -2,29 +2,30 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
+        <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
         <ul>
-            <li>
-                <a href="https://support.discord.com/hc/en-us/articles/22225719947543#docs-internal-guid-7e118986-7fff-7590-ca2a-0bb618200550">Fortnite</a>
-            </li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01J1AK4JDWX63NDT2EJFNQ1WH1">Console Gaming</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01J0M3YTKEYJTYAZQ32GXDN24Y">Minecraft</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HXSYAWEMHMCTSD1HCX0RBPES">PUBG: BATTLEGROUNDS </a></li>
+            <li><a href="#h_01J1XC6E97615MWHRQBWGP3T9T" target="_blank" rel="noopener noreferrer">Zenless Zone Zero</a></li>
+            <li><a href="#docs-internal-guid-7e118986-7fff-7590-ca2a-0bb618200550">Fortnite</a></li>
+            <li><a href="#h_01J1AK4JDWX63NDT2EJFNQ1WH1">Console Gaming</a></li>
+            <li><a href="#h_01J0M3YTKEYJTYAZQ32GXDN24Y">Minecraft</a></li>
+            <li><a href="#h_01HXSYAWEMHMCTSD1HCX0RBPES">PUBG: BATTLEGROUNDS </a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
+    <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FQS4M587DJ82JV20N">How do I complete Discord Quests?</a>
+        <a href="#h_01HVPBZR5FQS4M587DJ82JV20N">How do I complete Discord Quests?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FXKRBNJ7N20KCJVEP">Accept the Quest</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5F04KP8ZD303GZGABH">Stream a Game to Friends on Discord</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FKKSQ3R1JXB9E4DM3">Claim Your Reward</a></li>
+            <li><a href="#h_01HVPBZR5FXKRBNJ7N20KCJVEP">Accept the Quest</a></li>
+            <li><a href="#h_01HVPBZR5F04KP8ZD303GZGABH">Stream a Game to Friends on Discord</a></li>
+            <li><a href="#h_01HVPBZR5FKKSQ3R1JXB9E4DM3">Claim Your Reward</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5F0EKW79KK7RGEK1HG">Opting-out of Quests Promotions</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</a></li>
+    <li><a href="#h_01HVPBZR5F0EKW79KK7RGEK1HG">Opting-out of Quests Promotions</a></li>
+    <li><a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J1XC6E97615MWHRQBWGP3T9T"><a href="https://support.discord.com/hc/articles/24567583191831" target="_blank" rel="noopener noreferrer">Zenless Zone Zero - V1.0 Quest</a></h2>
+<p>The <strong>V1.0 Quest </strong>can be accepted on Discord from <strong>July 8, 2024 </strong>until <strong>July 15, 2024 (5:00pm PST)</strong>. The Version 1.0 bundle needs to be redeemed by <strong>August 14, 2024 (3:00am PST)</strong>. Quest requirements must be completed during this period to receive the reward.</p>
 <h2 id="docs-internal-guid-7e118986-7fff-7590-ca2a-0bb618200550"><a href="https://support.discord.com/hc/articles/24274826177687" target="_blank" rel="noopener noreferrer">Fortnite - Fortnite Reload Quest </a></h2>
 <p>The <strong>Fortnite Reload Quest</strong> can be accepted on Discord from <strong>June 27, 2024 </strong>until <strong>July 4, 2024 (11:59pm UTC)</strong>. Quest requirements must be completed during this period to receive the reward. </p>
 <h2 id="h_01J1AK4JDWX63NDT2EJFNQ1WH1"><a href="https://support.discord.com/hc/articles/24342965982871" target="_blank" rel="noopener noreferrer">Console Gaming Quest</a></h2>
@@ -62,7 +63,7 @@
 <h3 id="h_01HWEBM02XXB2Z00KXM6CQ79AF">Users who have completed quests after <strong>April 24, 2024</strong> will automatically obtain the <strong>Discord Quests Badge</strong>, which will be added to their profiles. For more information about profile badges, visit our <a href="https://support.discord.com/hc/articles/360035962891" target="_blank" rel="noopener noreferrer">Profile Badges 101 Help Center article</a>.</h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22871262511639" width="624" height="299"></p>
 <p>The easiest way to claim your reward is by heading over to your <strong>User Settings &gt; Gift Inventory</strong>. </p>
-<p>When you claim an <strong>in-game item reward,</strong> you will be given a Discord Quest redemption code that you will need to redeem on the partnered game redemption website. You can find a link by heading over to our <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a> section! You will also receive an email with redemption instructions once you’ve completed the Quest.</p>
+<p>When you claim an <strong>in-game item reward,</strong> you will be given a Discord Quest redemption code that you will need to redeem on the partnered game redemption website. You can find a link by heading over to our <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a> section! You will also receive an email with redemption instructions once you’ve completed the Quest.</p>
 <p>When you claim <strong>Discord rewards</strong>, once you finish the Quest you can claim your reward by selecting the <strong>Claim Reward </strong>button. You can learn more about adding / removing your Discord avatar decoration or profile effect <a href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <h1 id="h_01HVPBZR5F0EKW79KK7RGEK1HG">Opting-out of Quests Promotions</h1>
 <p>If you’re not interested in receiving promotions of Discord Quests, you can control these promotions in the following ways: </p>
