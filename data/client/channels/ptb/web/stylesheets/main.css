@@ -33585,6 +33585,18 @@ h3.improved_f017d0:after {
     max-height: 32px
 }
 
+.section_ba4d80 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.list_fa6679 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px
+}
+
 .avatar_db70f7 {
     flex-shrink: 0
 }
@@ -46027,4 +46039,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.e9c339a06ac2ec29caeb.css.map*/
+/*# sourceMappingURL=12633.1555ec3f56f3d751f0f1.css.map*/
