@@ -39830,8 +39830,8 @@ html.disable-forced-colors * {
     --paypal-hsl: 230 calc(var(--saturation-factor, 1) * 69.8%) 24.7%;
     --playstation: hsl(var(--playstation-hsl) / 1);
     --playstation-hsl: 220 calc(var(--saturation-factor, 1) * 95.7%) 27.1%;
-    --plum-23-alpha: hsl(var(--plum-23-alpha-hsl) / 0.09);
-    --plum-23-alpha-hsl: 230 calc(var(--saturation-factor, 1) * 60.7%) 78%;
+    --plum-23-alpha: hsl(var(--plum-23-alpha-hsl) / 0.1);
+    --plum-23-alpha-hsl: 240 calc(var(--saturation-factor, 1) * 63.4%) 83.9%;
     --plum-0: hsl(var(--plum-0-hsl) / 1);
     --plum-0-hsl: 240 calc(var(--saturation-factor, 1) * 9.1%) 97.8%;
     --plum-1: hsl(var(--plum-1-hsl) / 1);
@@ -40442,7 +40442,7 @@ html.disable-forced-colors * {
     --icon-muted: var(--primary-400);
     --icon-primary: var(--primary-130);
     --icon-secondary: var(--primary-330);
-    --icon-transparent: hsl(var(--transparent-hsl) / 0.01);
+    --icon-transparent: hsl(var(--transparent-hsl) / 0);
     --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
     --info-danger-background: hsl(var(--red-400-hsl) / 0.1);
     --info-danger-foreground: var(--red-400);
@@ -40938,8 +40938,8 @@ html.disable-forced-colors * {
                 var(--primary-330) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --icon-transparent: color-mix(in oklab,
-                hsl(var(--transparent-hsl) / 0.01) 100%,
-                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-text-color-amount, 0%));
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-text-color-amount, 0%));
         --info-box-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
@@ -41541,7 +41541,7 @@ html.disable-forced-colors * {
     --icon-muted: var(--primary-400);
     --icon-primary: var(--primary-860);
     --icon-secondary: var(--primary-500);
-    --icon-transparent: hsl(var(--transparent-hsl) / 0.01);
+    --icon-transparent: hsl(var(--transparent-hsl) / 0);
     --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
     --info-danger-background: hsl(var(--red-430-hsl) / 0.1);
     --info-danger-foreground: var(--red-430);
@@ -42035,8 +42035,8 @@ html.disable-forced-colors * {
                 var(--primary-500) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --icon-transparent: color-mix(in oklab,
-                hsl(var(--transparent-hsl) / 0.01) 100%,
-                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-text-color-amount, 0%));
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-text-color-amount, 0%));
         --info-box-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
@@ -42494,7 +42494,7 @@ html.disable-forced-colors * {
     --background-message-hover: var(--plum-21);
     --background-mobile-primary: var(--black);
     --background-mobile-secondary: var(--black);
-    --background-modifier-accent: var(--plum-23-alpha);
+    --background-modifier-accent: hsl(var(--plum-23-alpha-hsl) / 0.1);
     --background-modifier-accent-2: hsl(var(--plum-11-hsl) / 0.32);
     --background-modifier-active: hsl(var(--plum-13-hsl) / 0.48);
     --background-modifier-hover: hsl(var(--plum-13-hsl) / 0.3);
@@ -42634,7 +42634,7 @@ html.disable-forced-colors * {
     --icon-muted: var(--plum-12);
     --icon-primary: var(--plum-5);
     --icon-secondary: var(--plum-9);
-    --icon-transparent: hsl(var(--transparent-hsl) / 0.01);
+    --icon-transparent: hsl(var(--transparent-hsl) / 0);
     --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
     --info-danger-background: hsl(var(--red-400-hsl) / 0.1);
     --info-danger-foreground: var(--red-400);
@@ -42648,7 +42648,7 @@ html.disable-forced-colors * {
     --info-warning-background: hsl(var(--yellow-300-hsl) / 0.1);
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white);
-    --input-background: var(--plum-23-alpha);
+    --input-background: hsl(var(--plum-23-alpha-hsl) / 0.1);
     --input-focused-border: hsl(var(--plum-11-hsl) / 0.24);
     --input-placeholder-text: var(--plum-9);
     --interactive-active: var(--plum-3);
@@ -42733,7 +42733,7 @@ html.disable-forced-colors * {
     --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.24);
     --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.28);
     --redesign-button-selected-text: var(--brand-500);
-    --redesign-button-tertiary-background: var(--plum-23-alpha);
+    --redesign-button-tertiary-background: hsl(var(--plum-23-alpha-hsl) / 0.1);
     --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
     --redesign-button-tertiary-pressed-text: var(--plum-6);
     --redesign-button-tertiary-text: var(--plum-4);
@@ -42741,7 +42741,7 @@ html.disable-forced-colors * {
     --redesign-channel-message-preview-text: var(--plum-10);
     --redesign-channel-name-muted-text: var(--plum-10);
     --redesign-channel-name-text: var(--plum-2);
-    --redesign-chat-input-background: var(--plum-23-alpha);
+    --redesign-chat-input-background: hsl(var(--plum-23-alpha-hsl) / 0.1);
     --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
     --redesign-input-control-active-bg: var(--plum-17);
     --redesign-input-control-selected: var(--brand-500);
@@ -42855,8 +42855,8 @@ html.disable-forced-colors * {
                 var(--black) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --background-modifier-accent: color-mix(in oklab,
-                var(--plum-23-alpha) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
+                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --background-modifier-accent-2: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.32) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.32) var(--theme-base-color-amount, 0%));
@@ -43128,8 +43128,8 @@ html.disable-forced-colors * {
                 var(--plum-9) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --icon-transparent: color-mix(in oklab,
-                hsl(var(--transparent-hsl) / 0.01) 100%,
-                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-text-color-amount, 0%));
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-text-color-amount, 0%));
         --info-box-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
@@ -43170,8 +43170,8 @@ html.disable-forced-colors * {
                 var(--white) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --input-background: color-mix(in oklab,
-                var(--plum-23-alpha) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
+                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --input-focused-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.24) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24) var(--theme-base-color-amount, 0%));
@@ -43425,8 +43425,8 @@ html.disable-forced-colors * {
                 var(--brand-500) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-button-tertiary-background: color-mix(in oklab,
-                var(--plum-23-alpha) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
+                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --redesign-button-tertiary-pressed-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.2) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%));
@@ -43449,8 +43449,8 @@ html.disable-forced-colors * {
                 var(--plum-2) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --redesign-chat-input-background: color-mix(in oklab,
-                var(--plum-23-alpha) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+                hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
+                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
         --redesign-image-button-pressed-background: color-mix(in oklab,
                 hsl(var(--black-hsl) / 0.08) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%));
@@ -43731,7 +43731,7 @@ html.disable-forced-colors * {
     --icon-muted: var(--plum-11);
     --icon-primary: var(--plum-4);
     --icon-secondary: var(--plum-9);
-    --icon-transparent: hsl(var(--transparent-hsl) / 0.01);
+    --icon-transparent: hsl(var(--transparent-hsl) / 0);
     --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
     --info-danger-background: hsl(var(--red-400-hsl) / 0.1);
     --info-danger-foreground: var(--red-400);
@@ -44227,8 +44227,8 @@ html.disable-forced-colors * {
                 var(--plum-9) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --icon-transparent: color-mix(in oklab,
-                hsl(var(--transparent-hsl) / 0.01) 100%,
-                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-text-color-amount, 0%));
+                hsl(var(--transparent-hsl) / 0) 100%,
+                hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-text-color-amount, 0%));
         --info-box-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%));
@@ -46047,4 +46047,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.3620963dde59bd8022bf.css.map*/
+/*# sourceMappingURL=12633.2532cfe72f3e57ea0a4d.css.map*/
