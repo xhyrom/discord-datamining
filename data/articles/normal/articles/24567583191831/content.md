@@ -25,17 +25,17 @@
 <p>Limit of one reward redemption per Discord account. </p>
 <p>For more information on Discord Quests and to view the currently active quests, visit our <a href="https://support.discord.com/hc/articles/22225719947543" target="_blank" rel="noopener noreferrer">Discord Quest Help Center</a>. </p>
 <h1 id="h_01J1XAZTJYWX1RGKJM6HMAP64E">How to Complete the Quest</h1>
-<h3 id="h_01J1XBVAZ88XSAZJV2XMYJEKS3">Once you have accepted the Quest, you must stream the game through the Discord desktop app and have at least one friend actively watching the stream to complete the Quest requirement. </h3>
+<h3 id="h_01J1XBVAZ88XSAZJV2XMYJEKS3">Once you have accepted the Quest, you must stream the game through the Discord desktop app and have at least one friend actively watching the stream to complete the Quest requirement.</h3>
 <p>In order to successfully complete the <strong>Zenless Zone Zero</strong> <strong>Quest</strong>, players who meet the eligibility criteria must live stream their<strong> Zenless Zone Zero </strong>gameplay to a friend via a Discord voice channel for a minimum duration of 15 minutes on the desktop app. </p>
 <p>1. Before you can begin the Quest, you must launch the game first.</p>
 <p>2. Head to your Discord desktop app and navigate to a direct message (<strong>DM</strong>), group chat, or a server of your choice.</p>
 <p>3. Start a voice call or join a voice channel and select the <strong>Screen Share </strong>[<img src="https://support.discord.com/hc/article_attachments/24640299089175" width="24" height="24">] icon located in the voice status panel. Be sure to select the individual application for the game before you Go Live. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24640327688343" width="600" height="414"></p>
-<h3 id="h_01J1XAZTJYCRS9J8AJW2J5974M">NOTE: You must select the game application to stream! Streaming your device’s screen will not progress your Quest forward. Once you stream, you can check the progress bar on the Gift inventory to ensure progress is being made on the Quest. </h3>
+<h3 id="h_01J1XAZTJYCRS9J8AJW2J5974M">NOTE: You must select the game application to stream! Streaming your device’s screen will not progress your Quest forward. Once you stream, you can check the progress bar on the Gift inventory to ensure progress is being made on the Quest.</h3>
 <p>4. When you’re ready to stream your gameplay, press <strong>Go Live. </strong>You can learn more about streaming your game <a href="https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJAY9AHGRQ85XRSF8G" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01J1XAZTJYFJN2KRKYET5RD0Q8">Redemption Instructions</h1>
 <p>1. Once you have completed the Quest by streaming 15 minutes of <strong>Zenless Zone Zero </strong>using <strong>Go Live</strong> on Discord, you will receive a Gift Code in your Discord <strong>Gift Inventory</strong>. You can learn more about Go Live and screen sharing <a href="https://support.discord.com/hc/en-us/articles/360040816151" target="_blank" rel="noopener noreferrer">here</a>.</p>
-<p>2. Then, visit the official  website's <a href="https://genshin.hoyoverse.com/en/gift" target="_blank" rel="noopener noreferrer">code redemption page</a> and log in to your game account. </p>
+<p>2. Then, visit the official  website's <a href="https://zenless.hoyoverse.com/redemption" target="_blank" rel="noopener noreferrer">code redemption page</a> and log in to your game account. </p>
 <p>3. Enter the redemption code and you'll receive the bundle via in-game mail.  </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24640327691159" width="624" height="408"></p>
 <h1 id="h_01J1XAZTJYN8X5J9RM028AJ2ME">Frequently Asked Questions</h1>
