@@ -119,7 +119,7 @@
 <p>This does not include Nitro Basic, Nitro Classic, or Server Boost-only members.</p>
 <p><strong>Q: Who can redeem this Super Duolingo trial to their Duolingo account?</strong></p>
 <p><strong>A: </strong>This offer is only valid for free Duolingo learners and must be redeemed through the Duolingo x Discord landing page or by redeeming your unique code on <a href="http://duolingo.com/redeem" target="_blank" rel="noopener noreferrer">duolingo.com/redeem</a>. </p>
-<p>Current Super or Duolingo Max subscribers are <em>not</em> eligible. Additional eligibility criteria can be found here.</p>
+<p>Current Super or Duolingo Max subscribers are <em>not</em> eligible. Additional eligibility criteria can be found <a href="#h_01J1G8PAM40762TYNP5J15KPGF">here</a>.</p>
 <p><strong>Q: Can I redeem the Super Duolingo promotion to my Duolingo account in my region? </strong></p>
 <p><strong>A:</strong> Eligible Discord Nitro members will receive a Super Duolingo free trial code within Discord. Once you have received this, you can redeem the code through the web browser as long as you meet the eligibility criteria.</p>
 <h2 id="h_01J1G8X4GFRK4D5MA4FW2XFN1D">Claiming and Redemption Process</h2>
