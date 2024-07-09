@@ -27,6 +27,9 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24405592201495" width="624" height="351"></p>
 <h1 id="h_01J1673SQFDJE579F04B5PGJWG">Redemption Instructions</h1>
 <p>Once you have completed the Quest by playing 15 minutes of <strong>Fortnite </strong>on Discord, you’ll be able to claim the <strong>Fortnite Victory Crown</strong>. The Fortnite Victory Crown avatar decoration needs to be redeemed by <strong>August 3, 2024</strong>.</p>
+<h3 id="h_01J2AASZCFFM1EEFS5149JTPGF">
+    <strong><span style="color: #434343;">Note</span></strong><span style="color: #434343;">: If the Quest is not completed by July 4, 2024, the Quest will no longer be available within your </span><strong><span style="color: #434343;">Gift Inventory</span></strong><span style="color: #434343;">. </span>
+</h3>
 <p>You can use the following methods to claim your <strong>Fortnite Victory Crown avatar decoration</strong>:</p>
 <p><strong>Option 1</strong></p>
 <p>Head over to your <strong>User Settings</strong> by selecting the <strong>cogwheel</strong> [<img src="https://support.discord.com/hc/article_attachments/24405592204183" width="23" height="24">] in the lower left corner. </p>

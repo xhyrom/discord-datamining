@@ -1,5 +1,5 @@
-<h3 id="h_01J18GH10TN8PEF2G502AYEF8W">
-    <strong>Note</strong>: This Quest will be gradually rolled out to all eligible users. If you do not see it immediately in your Gift Inventory, please check again in a few days.
+<h3>
+    <strong>Note</strong>: This Quest will be gradually rolled out to all eligible users. If you do not see it immediately in your Gift Inventory, please check again in a few days. <span style="color: #434343;">If the Quest is not completed by July 10, 2024, the Quest will no longer be available within your </span><strong><span style="color: #434343;">Gift Inventory</span></strong><span style="color: #434343;">. </span>
 </h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24429569992471" width="598" height="251"></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
@@ -38,11 +38,14 @@
 <p>If you’re unsure whether your Discord account is already connected to your console, navigate to <strong>User Settings</strong> &gt; <strong>Connections</strong> to review all available connections.</p>
 <p>Once you’ve connected Discord to your console, play any console game for 10 minutes to complete the Quest. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24429570003479" width="624" height="472"></p>
-<h3 id="h_01J18GH10T10YVGAKK9146HA6S">If you are running into any issues with the Quest completion, you can select the Check for Launches button within the Quest banner to check if you’ve launched a game. For additional troubleshooting steps, check out the following Help Center articles: <br>- <a href="https://support.discord.com/hc/articles/360003953831-Discord-and-Xbox-Connection-FAQ#docs-internal-guid-2d845ec1-7fff-baa6-57ce-893ad1405d29" target="_blank" rel="noopener noreferrer">Discord and Xbox Connection FAQ</a><br>- <a href="https://support.discord.com/hc/articles/4419534960919-Discord-and-PlayStation-Network-Connection-FAQ#h_01J1TXNAT4RFSX9R7HQ30MHFCC" target="_blank" rel="noopener noreferrer">Discord and PlayStation® Network Connection FAQ</a>
+<h3 id="h_01J18GH10T10YVGAKK9146HA6S">If you are running into any issues with the Quest completion, you can select the Check for Launches button within the Quest banner to check if you’ve launched a game. For additional troubleshooting steps, check out the following Help Center articles: <br>- <a href="https://support.discord.com/hc/articles/360003953831-Discord-and-Xbox-Connection-FAQ#h_01J1TYJ22SN8Q4YND06JAGPA57" target="_blank" rel="noopener noreferrer">Discord and Xbox Connection FAQ</a><br>- <a href="https://support.discord.com/hc/articles/4419534960919-Discord-and-PlayStation-Network-Connection-FAQ#h_01J1TXNAT4RFSX9R7HQ30MHFCC" target="_blank" rel="noopener noreferrer">Discord and PlayStation® Network Connection FAQ</a>
 </h3>
 <p class="wysiwyg-text-align-center"><span style="background-color: #d9ead3;" data-darkreader-inline-bgcolor=""><img src="https://support.discord.com/hc/article_attachments/24429585338519" width="586" height="262"></span></p>
 <h1 id="h_01J18GH10TWV754HS7G8Y0HK8Q">Redemption Instructions</h1>
 <p>Once you’ve completed the Quest by connecting Discord to your console and playing a console game, you’ll be able to claim the <strong>Warp Helmet avatar decoration</strong>. The Warp Helmet avatar decoration needs to be redeemed by <strong>August 9, 2024</strong>.</p>
+<h3 id="h_01J2AAJ3HG111GB8MAQCC2GV2P">
+    <strong><span style="color: #434343;">Note</span></strong><span style="color: #434343;">: If the Quest is not completed by July 10, 2024, the Quest will no longer be available within your </span><strong><span style="color: #434343;">Gift Inventory</span></strong><span style="color: #434343;">. </span>
+</h3>
 <p>You can use the following methods to claim your <strong>Warp Helmet avatar decoration</strong>:</p>
 <p><strong>Option 1</strong></p>
 <p>Head over to your <strong>User Settings</strong> by selecting the <strong>cogwheel</strong> [<img src="https://support.discord.com/hc/article_attachments/24429570020887" width="23" height="24">] in the lower right corner. </p>
