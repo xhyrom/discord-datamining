@@ -20243,6 +20243,13 @@ span.clanTag_a31c43 {
     border-radius: 50%
 }
 
+.tag_f2440e {
+    position: absolute;
+    margin-top: 8px;
+    right: 16px;
+    border-radius: 4px
+}
+
 :where(.button_f1cdcc).icon_f1cdcc,
 :where(.button_f1cdcc).banner_f1cdcc {
     border-radius: var(--radius-round);
@@ -46047,4 +46054,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.2532cfe72f3e57ea0a4d.css.map*/
+/*# sourceMappingURL=12633.09ed04f750081d970ad5.css.map*/
