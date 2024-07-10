@@ -33633,6 +33633,21 @@ h3.improved_f017d0:after {
     gap: 6px
 }
 
+.buttons_e274c3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+.buttons_e274c3:empty {
+    display: none
+}
+
+.button_e274c3 {
+    flex: 1 1 auto;
+    min-width: calc(50% - 8px)
+}
+
 .avatar_db70f7 {
     flex-shrink: 0
 }
@@ -46075,4 +46090,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.f01abd45a794d110f650.css.map*/
+/*# sourceMappingURL=12633.4f18c9f55cb10e0a8f5f.css.map*/
