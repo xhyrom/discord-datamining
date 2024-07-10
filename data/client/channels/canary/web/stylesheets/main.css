@@ -33627,6 +33627,10 @@ h3.improved_f017d0:after {
     gap: 8px
 }
 
+.section_ba4d80:has(>.heading_ba4d80:only-child) {
+    display: none
+}
+
 .list_fa6679 {
     display: inline-flex;
     flex-wrap: wrap;
@@ -46090,4 +46094,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.4f18c9f55cb10e0a8f5f.css.map*/
+/*# sourceMappingURL=12633.ab2c7aa7a9944a9f28bd.css.map*/
