@@ -17827,7 +17827,7 @@ Error:`, e)
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-d8fafaa53d5ecced608e1c3cae408dc5705aadf6",
+                        release: "discord_web-49e9068845efbb157ff7e5ecf635b17fa4449c6f",
                         beforeSend: t => {
                             var e, r;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || o.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !E() && !("Aborted" === (r = t).message || "cancel captcha" === r.message) && s() ? t : null
@@ -17845,8 +17845,8 @@ Error:`, e)
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), a.YA("buildNumber", (t = "308467", "308467"));
-                    a.YA("builtAt", String("1720629172819"));
+                    }), a.YA("buildNumber", (t = "308482", "308482"));
+                    a.YA("builtAt", String("1720631023447"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) a.YA(t, e[t]);
@@ -31109,4 +31109,4 @@ Error:`, e)
         window.DiscordSentry = (0, t.j)()
     })()
 })();
-//# sourceMappingURL=sentry.f82c970b08f79e949102.js.map
+//# sourceMappingURL=sentry.2409f24bf3125785069d.js.map
