@@ -2988,7 +2988,10 @@
   },
   "ANNUAL_USER_OFFER": {
     "url": "/users/@me/billing/annual-user-offer",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_OFFER_ACKNOWLEDGED": {
     "url": "/users/@me/billing/user-offer/ack",
