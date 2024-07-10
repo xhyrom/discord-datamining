@@ -20130,6 +20130,12 @@ span.clanTag_a31c43 {
     user-select: text
 }
 
+.container_c32acf.bot_c32acf {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
 .clickableUsername_c32acf {
     cursor: pointer
 }
@@ -20195,9 +20201,14 @@ span.clanTag_a31c43 {
     row-gap: 8px
 }
 
-.tagsWithPronouns_c32acf {
+.tags_c32acf.pronouns_c32acf {
     -moz-column-gap: 6px;
     column-gap: 6px
+}
+
+.tags_c32acf.bot_c32acf {
+    -moz-column-gap: 8px;
+    column-gap: 8px
 }
 
 .userTag_c32acf {
@@ -20230,10 +20241,6 @@ span.clanTag_a31c43 {
 .userTagDiscriminator_c32acf {
     color: var(--header-primary);
     vertical-align: top
-}
-
-.botTag_c32acf {
-    display: inline-flex
 }
 
 .dotSpacer_c32acf {
@@ -46046,4 +46053,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.7713bfb3d5804c4e7ae8.css.map*/
+/*# sourceMappingURL=12633.e26aae3274ef97299f65.css.map*/
