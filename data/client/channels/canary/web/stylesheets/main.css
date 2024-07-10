@@ -19060,6 +19060,16 @@ div.cardContainer_c22357 {
     margin-top: -2px
 }
 
+.betaBadge_ffaecb {
+    position: absolute;
+    text-transform: uppercase;
+    border-radius: var(--spacing-8);
+    background: var(--brand-500);
+    color: var(--text-normal);
+    margin: var(--spacing-16);
+    padding: 0 6px
+}
+
 .learnMoreLink_ffaecb {
     cursor: pointer;
     color: var(--text-link)
@@ -46065,4 +46075,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.398cd41ccb6fb3d005b4.css.map*/
+/*# sourceMappingURL=12633.f01abd45a794d110f650.css.map*/
