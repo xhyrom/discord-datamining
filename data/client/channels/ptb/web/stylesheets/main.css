@@ -25132,7 +25132,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     bottom: 0;
     left: 0;
     background: hsl(var(--black-500-hsl)/.6);
-    border-radius: 2px
+    border-radius: 2px;
+    pointer-events: none
 }
 
 .emojiLockIcon_bcf389 {
@@ -32946,8 +32947,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .title_f017d0 {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase
 }
 
@@ -33037,8 +33038,8 @@ h3.improved_f017d0:after {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1rem;
+    line-height: 1.125rem;
     padding: 16px
 }
 
@@ -46094,4 +46095,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.ab2c7aa7a9944a9f28bd.css.map*/
+/*# sourceMappingURL=12633.16d6efc31eddd7eae8dc.css.map*/
