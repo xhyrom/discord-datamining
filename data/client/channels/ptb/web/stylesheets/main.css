@@ -32947,8 +32947,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .title_f017d0 {
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase
 }
 
@@ -33038,8 +33038,8 @@ h3.improved_f017d0:after {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 1rem;
-    line-height: 1.125rem;
+    font-size: 16px;
+    line-height: 18px;
     padding: 16px
 }
 
@@ -46095,4 +46095,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.16d6efc31eddd7eae8dc.css.map*/
+/*# sourceMappingURL=12633.e6fb0d512ebb2ada07c9.css.map*/
