@@ -16994,7 +16994,6 @@ Error:`, e)
                         DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION: t => "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/developers/servers/").concat(t, "/analytics/premium-membership"),
                         COMPANY: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/company"),
                         PARTNERS: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/partners"),
-                        HYPESQUAD: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/hypesquad"),
                         TERMS: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/terms"),
                         PAID_TERMS: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/terms/paid-services-terms"),
                         PRIVACY: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/privacy"),
@@ -17831,7 +17830,7 @@ Error:`, e)
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-8c3e981f03e72cb204b42a8a39b4432b8aeb1b65",
+                        release: "discord_web-d7ebabcf419402c50996342ad0550d5f37d79d53",
                         beforeSend: t => {
                             var e, r;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || o.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !E() && !("Aborted" === (r = t).message || "cancel captcha" === r.message) && s() ? t : null
@@ -17849,8 +17848,8 @@ Error:`, e)
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), a.YA("buildNumber", (t = "308779", "308779"));
-                    a.YA("builtAt", String("1720674687737"));
+                    }), a.YA("buildNumber", (t = "308782", "308782"));
+                    a.YA("builtAt", String("1720675437416"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) a.YA(t, e[t]);
@@ -31113,4 +31112,4 @@ Error:`, e)
         window.DiscordSentry = (0, t.j)()
     })()
 })();
-//# sourceMappingURL=sentry.0104ca9fdb2e4074aa2c.js.map
+//# sourceMappingURL=sentry.9ce579f38bdde70b14d0.js.map
