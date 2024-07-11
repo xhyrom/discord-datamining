@@ -51,10 +51,11 @@
 <p>To create a header you just need to include a specific number of the hash/pound sign character (#). Use (#) for a big header, (##) for a smaller header, or (###) for an even smaller header as the first character(s) in a new line to make a header. Here is an example of what each header type looks like.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13850284963735" alt="headers_example.png"></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13850287234583" alt="headers_example_two.png"></p>
-<h2 id="h_01J2FADV0288YAX4BZ1GNGCHP3">Subtext</h2>
+<h2 id="h_01J2HBMKS7587KC8PMAJ47PZR2">Subtext</h2>
 <p>Like <strong>Headers</strong>, you can add subtext to any chat message. To do so, add a (-# ) before the text you want to appear in the subtext. Don’t forget the space after # before your message. For example: </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24802671833623" width="600" height="337"></p>
-<h3 id="h_01J2FADV02R1Q475STF0R8FFY9"><span style="color: #434343;" data-darkreader-inline-color="">Subtext works very similarly to Headers, so the (-#) must be at the very beginning in order for it to work.</span></h3>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24823996842903" width="711" height="161"></p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/24823966227735" width="624" height="351"></strong></p>
+<h3 id="h_01J2HBMKS7E7DPDZZDJSYVYJN4"><span style="color: #434343;" data-darkreader-inline-color="">Subtext works very similarly to Headers, so the (-#) must be at the very beginning of the line in order for it to work.</span></h3>
 <h2 id="h_01H53FJBNB9B5RT9M1M9V1EQ7W"><span style="color: #666666;" data-darkreader-inline-color="">Masked links</span></h2>
 <p>You can use masked links to make text a clickable or pressable hyperlink. To do so, you need to include the text you want displayed in brackets and then the URL in parentheses. For example:</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13850326299287" alt="link_example.png"></p>
@@ -83,6 +84,3 @@
 <h3 id="h_01HNBJCHFXG8KDWVE7AECYBCQ0">
     <span style="color: #434343;" data-darkreader-inline-color="">Spoilers is another type of formatting too! Using the syntax || around your text will mark it as a spoiler. Please note, this is negated by a code block. You can learn more about Spoiler Tags </span><a href="https://support.discord.com/hc/en-us/articles/360022320632" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">!</span>
 </h3>
-<div id="gtx-trans" style="position: absolute; left: 45px; top: 173.797px;">
-    <div class="gtx-trans-icon"> </div>
-</div>
