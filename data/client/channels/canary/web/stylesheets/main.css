@@ -4817,7 +4817,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .full-motion .translate_f88ae3[data-popout-animating=false] {
     transform: none;
-    transition: none
+    transition: none;
+    position: relative;
+    z-index: 0
 }
 
 .full-motion .scale_f88ae3 {
@@ -4850,7 +4852,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .full-motion .scale_f88ae3[data-popout-animating=false] {
     transform: none;
-    transition: none
+    transition: none;
+    position: relative;
+    z-index: 0
 }
 
 .fade_f88ae3 {
@@ -46294,4 +46298,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.189266f632ae2997bf11.css.map*/
+/*# sourceMappingURL=12633.18ce18d8842ec9020d22.css.map*/
