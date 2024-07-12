@@ -12692,7 +12692,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .theme-dark.low-contrast .wrapper_bf1b19 {
-    background: var(--brand-experiment-05a);
+    background: var(--brand-05a);
     color: var(--brand-300)
 }
 
@@ -26105,12 +26105,12 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .theme-dark .categoryFadeBlurple_af1167,
 .theme-light .categoryFadeBlurple_af1167 {
-    background-color: var(--brand-experiment-80a)
+    background-color: var(--brand-80a)
 }
 
 .theme-dark .categoryFadeBlurple_af1167:hover,
 .theme-light .categoryFadeBlurple_af1167:hover {
-    background-color: var(--brand-experiment-95a)
+    background-color: var(--brand-95a)
 }
 
 .theme-dark .categoryText_af1167,
@@ -39357,6 +39357,29 @@ h3.improved_f017d0:after {
     padding-left: .5rem
 }
 
+html,
+[data-popout-root] {
+    --brand-05a: hsla(var(--brand-500-hsl) / 0.05);
+    --brand-10a: hsla(var(--brand-500-hsl) / 0.1);
+    --brand-15a: hsla(var(--brand-500-hsl) / 0.15);
+    --brand-20a: hsla(var(--brand-500-hsl) / 0.2);
+    --brand-25a: hsla(var(--brand-500-hsl) / 0.25);
+    --brand-30a: hsla(var(--brand-500-hsl) / 0.3);
+    --brand-35a: hsla(var(--brand-500-hsl) / 0.35);
+    --brand-40a: hsla(var(--brand-500-hsl) / 0.4);
+    --brand-45a: hsla(var(--brand-500-hsl) / 0.45);
+    --brand-50a: hsla(var(--brand-500-hsl) / 0.5);
+    --brand-55a: hsla(var(--brand-500-hsl) / 0.55);
+    --brand-60a: hsla(var(--brand-500-hsl) / 0.6);
+    --brand-65a: hsla(var(--brand-500-hsl) / 0.65);
+    --brand-70a: hsla(var(--brand-500-hsl) / 0.7);
+    --brand-75a: hsla(var(--brand-500-hsl) / 0.75);
+    --brand-80a: hsla(var(--brand-500-hsl) / 0.8);
+    --brand-85a: hsla(var(--brand-500-hsl) / 0.85);
+    --brand-90a: hsla(var(--brand-500-hsl) / 0.9);
+    --brand-95a: hsla(var(--brand-500-hsl) / 0.95)
+}
+
 html.low-saturation,
 [data-popout-root].low-saturation {
     --control-brand-foreground: var(--interactive-normal)
@@ -46173,4 +46196,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.3839132a4168c92e5480.css.map*/
+/*# sourceMappingURL=12633.903774f28749c51d1f16.css.map*/
