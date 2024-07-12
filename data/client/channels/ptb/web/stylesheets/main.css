@@ -20037,24 +20037,12 @@ span.clanTag_a31c43 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    overflow: hidden
-}
-
-.userProfileInner_c69a7b:before {
-    content: "";
-    pointer-events: none;
-    background-color: var(--profile-gradient-overlay-color);
-    position: absolute
+    overflow: hidden;
+    border-radius: var(--radius-xs)
 }
 
 .userPopoutInner_c69a7b {
     max-height: calc(100vh - 28px - var(--custom-user-popout-outside-components-height))
-}
-
-.userPopoutInner_c69a7b:before {
-    border-radius: var(--radius-xs);
-    height: calc(100% - 8px);
-    width: calc(100% - 8px)
 }
 
 .userProfileModalInner_c69a7b {
@@ -20083,19 +20071,47 @@ span.clanTag_a31c43 {
 }
 
 .userPanelInnerThemed_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-end))
 }
 
 .userProfileInnerThemedWithBanner_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-premium-banner-height-popout), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-premium-banner-height-popout), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-premium-banner-height-popout), var(--profile-gradient-end))
 }
 
 .userProfileInnerThemedPremiumWithoutBanner_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-premium-banner-height-no-banner-image-popout), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-premium-banner-height-no-banner-image-popout), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-premium-banner-height-no-banner-image-popout), var(--profile-gradient-end))
 }
 
 .userProfileInnerThemedNonPremium_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-banner-height-popout), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-banner-height-popout), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-banner-height-popout), var(--profile-gradient-end))
 }
 
 .biteSizeInnerThemed_c69a7b {
@@ -20109,11 +20125,25 @@ span.clanTag_a31c43 {
 }
 
 .custom-profile-theme .biteSizeInnerThemed_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-height-bite-size), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-height-bite-size), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-height-bite-size), var(--profile-gradient-end))
 }
 
 .custom-profile-theme .fullSizeInnerThemed_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-height-full-size), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-height-full-size), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-height-full-size), var(--profile-gradient-end))
 }
 
 .overlayBackground_c69a7b {
@@ -46143,4 +46173,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.a1b64a6582cb035a5cd3.css.map*/
+/*# sourceMappingURL=12633.3839132a4168c92e5480.css.map*/
