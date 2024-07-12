@@ -31038,26 +31038,79 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .popover_a64b81 {
-    position: absolute;
     z-index: 1;
-    height: 32px;
-    gap: 2px;
+    position: absolute;
+    height: auto;
     border-radius: 100px;
-    opacity: 0
+    display: inline-flex;
+    gap: 2px;
+    padding: 2px;
+    top: -16px;
+    right: min(8px, 50% - 29px);
+    opacity: 0;
+    pointer-events: none
 }
 
 .popover_a64b81.visible_a64b81,
 .popover_a64b81:focus-within {
-    opacity: 1
+    opacity: 1;
+    pointer-events: all
+}
+
+:not(.keyboard-mode).full-motion .popover_a64b81.visible_a64b81,
+:not(.keyboard-mode).full-motion .popover_a64b81:focus-within {
+    opacity: 0;
+    animation: hoverIn_a64b81.15s ease forwards
+}
+
+:not(.keyboard-mode).full-motion .popover_a64b81.visible_a64b81.expandable_a64b81,
+:not(.keyboard-mode).full-motion .popover_a64b81:focus-within.expandable_a64b81 {
+    animation-delay: .3s
+}
+
+@keyframes hoverIn_a64b81 {
+    0% {
+        top: -14px;
+        opacity: 0
+    }
+
+    to {
+        top: -16px;
+        opacity: 1
+    }
 }
 
 .button_a64b81 {
-    min-width: 22px
+    height: auto;
+    min-width: 0;
+    min-width: auto;
+    padding: 4px
 }
 
-.icon_a64b81 {
-    height: 20px;
-    width: 20px
+.button_a64b81.left_a64b81 {
+    padding-left: 6px;
+    border-radius: 100px 6px 6px 100px
+}
+
+.button_a64b81.right_a64b81 {
+    padding-right: 6px;
+    border-radius: 6px 100px 100px 6px
+}
+
+.button_a64b81:hover {
+    background: var(--background-modifier-hover)
+}
+
+.button_a64b81:hover .icon_a64b81 {
+    fill: var(--interactive-hover)
+}
+
+.button_a64b81:active {
+    background: var(--background-modifier-active)
+}
+
+.button_a64b81:active .icon_a64b81 {
+    fill: var(--interactive-active)
 }
 
 .background_d0a252 {
@@ -31135,11 +31188,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .visibleContainer_d0a252.panel_d0a252 {
     top: calc(6px + var(--custom-user-banner-banner-height-panel));
     left: 106px
-}
-
-.reactReplyBar_d0a252 {
-    right: 8px;
-    top: -16px
 }
 
 .custom-profile-theme .invisibleContainer_d0a252.biteSize_d0a252 {
@@ -46095,4 +46143,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.b6ae58e6dea795f05ecc.css.map*/
+/*# sourceMappingURL=12633.244453bb4ae7f0018bc0.css.map*/
