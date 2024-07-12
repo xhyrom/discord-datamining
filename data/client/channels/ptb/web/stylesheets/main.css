@@ -5881,7 +5881,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .applicationDetails_d6f023 {
-    padding-top: 24px
+    padding-top: 24px;
+    padding-bottom: 24px
 }
 
 .entry_d6f023 {
@@ -6602,7 +6603,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .content_c5a065 {
-    padding: 0 16px
+    padding: 0 16px;
+    position: relative
 }
 
 .sectionGroup_c5a065 {
@@ -6621,8 +6623,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .intObserver_c5a065 {
-    height: 24px;
-    margin-bottom: 16px
+    bottom: 24px;
+    height: 1px;
+    pointer-events: none;
+    position: absolute
 }
 
 .errorCodeMessage_c78a6e {
@@ -20254,14 +20258,10 @@ span.clanTag_a31c43 {
     row-gap: 8px
 }
 
-.tags_c32acf.pronouns_c32acf {
+.tags_c32acf.pronouns_c32acf,
+.tags_c32acf.bot_c32acf {
     -moz-column-gap: 6px;
     column-gap: 6px
-}
-
-.tags_c32acf.bot_c32acf {
-    -moz-column-gap: 8px;
-    column-gap: 8px
 }
 
 .userTag_c32acf {
@@ -46143,4 +46143,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.244453bb4ae7f0018bc0.css.map*/
+/*# sourceMappingURL=12633.a38bdb4c96b4793b6be9.css.map*/
