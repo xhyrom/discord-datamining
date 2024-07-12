@@ -23,7 +23,7 @@
 </ul>
 <h1 id="h_01H3MBQT5DJMFYWFZC9SE52DZ1">How to Edit Profiles Under User Settings</h1>
 <h3 id="h_01HA5Q9PKNWAKKBQ95HWAJWCKR">
-    <span style="color: #434343;" data-darkreader-inline-color="">Looking to personalize your account identity in each of your servers? You must be a </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscriber to unlock </span><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener noreferrer">Server Profiles</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">Looking to personalize your account identity in each of your servers? You must be a </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> member to unlock </span><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener noreferrer">Server Profiles</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <p>In order to change anything in your User Profile, you first need to access <strong>User Settings</strong>.</p>
 <h2 id="h_01H3MBQYKRKWTZNXSM1ZDKKQPG">Desktop</h2>
@@ -42,11 +42,11 @@
 <h1 id="h_01H3MBR8H9AJMP6J8F4G37MGR0">How to Customize your Profile</h1>
 <h2 id="h_01H3MBRCHQ4QMKR4AZ99ZSEKPP">Avatar</h2>
 <h3 id="h_01HA5Q9PKN7K3DVTAMQFZVCCQ4">
-    <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can upload animated GIFs as their profile avatar.</span>
+    <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> members can upload animated GIFs as their profile avatar.</span>
 </h3>
 <p>After heading to your <strong>Profiles </strong>tab you can change your avatar via the <strong>Change Avatar</strong> button or by tapping on your current avatar.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24857019301271" width="624" height="475"></p>
-<p>Here you can either upload your own image or choose a GIF (if you’re <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> subscriber) as your Avatar. Supported file types include PNG and GIFs. </p>
+<p>Here you can either upload your own image or choose a GIF (if you’re <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> member) as your Avatar. Supported file types include PNG and GIFs. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24857019309591" width="398" height="258"></p>
 <p>Once you’re happy with how it looks, tap on <strong>Apply</strong> to save changes.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24857019313303" width="398" height="401"></p>
