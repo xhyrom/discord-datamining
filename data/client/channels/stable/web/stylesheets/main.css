@@ -4815,6 +4815,13 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     transform: translatez(0)
 }
 
+.full-motion .translate_f88ae3[data-popout-animating=false] {
+    transform: none;
+    transition: none;
+    position: relative;
+    z-index: 0
+}
+
 .full-motion .scale_f88ae3 {
     transform: scale(.01);
     opacity: 0
@@ -4841,6 +4848,13 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     transition: transform.12s ease-out, opacity.12s ease-out;
     transform: scale(1);
     opacity: 1
+}
+
+.full-motion .scale_f88ae3[data-popout-animating=false] {
+    transform: none;
+    transition: none;
+    position: relative;
+    z-index: 0
 }
 
 .fade_f88ae3 {
@@ -6095,7 +6109,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .px_a02df3 .botText_a02df3 {
     font-size: 12px;
-    line-height: 15px
+    line-height: 16px
 }
 
 .rem_a02df3 .botText_a02df3 {
@@ -7611,6 +7625,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .custom-theme-background .menu_d90b3d {
     border: 1px solid var(--border-strong)
+}
+
+[data-popout-animating=true] .item_d90b3d[aria-haspopup=true] {
+    pointer-events: none
 }
 
 .listWrapper_dcade6 {
@@ -12692,7 +12710,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .theme-dark.low-contrast .wrapper_bf1b19 {
-    background: var(--brand-experiment-05a);
+    background: var(--brand-05a);
     color: var(--brand-300)
 }
 
@@ -20037,24 +20055,12 @@ span.clanTag_a31c43 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    overflow: hidden
-}
-
-.userProfileInner_c69a7b:before {
-    content: "";
-    pointer-events: none;
-    background-color: var(--profile-gradient-overlay-color);
-    position: absolute
+    overflow: hidden;
+    border-radius: var(--radius-xs)
 }
 
 .userPopoutInner_c69a7b {
     max-height: calc(100vh - 28px - var(--custom-user-popout-outside-components-height))
-}
-
-.userPopoutInner_c69a7b:before {
-    border-radius: var(--radius-xs);
-    height: calc(100% - 8px);
-    width: calc(100% - 8px)
 }
 
 .userProfileModalInner_c69a7b {
@@ -20083,19 +20089,47 @@ span.clanTag_a31c43 {
 }
 
 .userPanelInnerThemed_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-end))
 }
 
 .userProfileInnerThemedWithBanner_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-premium-banner-height-popout), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-premium-banner-height-popout), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-premium-banner-height-popout), var(--profile-gradient-end))
 }
 
 .userProfileInnerThemedPremiumWithoutBanner_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-premium-banner-height-no-banner-image-popout), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-premium-banner-height-no-banner-image-popout), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-premium-banner-height-no-banner-image-popout), var(--profile-gradient-end))
 }
 
 .userProfileInnerThemedNonPremium_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-banner-height-popout), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-banner-height-popout), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-banner-height-popout), var(--profile-gradient-end))
 }
 
 .biteSizeInnerThemed_c69a7b {
@@ -20109,11 +20143,25 @@ span.clanTag_a31c43 {
 }
 
 .custom-profile-theme .biteSizeInnerThemed_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-height-bite-size), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-height-bite-size), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-height-bite-size), var(--profile-gradient-end))
 }
 
 .custom-profile-theme .fullSizeInnerThemed_c69a7b {
-    background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-height-full-size), var(--profile-gradient-secondary-color))
+    --profile-gradient-start: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,
+            var(--profile-gradient-overlay-color) 100%,
+            var(--profile-gradient-secondary-color));
+    background: linear-gradient(color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color)), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-primary-color))var(--custom-user-banner-height-full-size), color-mix(in oklab, var(--profile-gradient-overlay-color)100%, var(--profile-gradient-secondary-color)));
+    background: linear-gradient(var(--profile-gradient-start), var(--profile-gradient-start)var(--custom-user-banner-height-full-size), var(--profile-gradient-end))
 }
 
 .overlayBackground_c69a7b {
@@ -25567,18 +25615,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     color: var(--header-secondary)
 }
 
-.container_ca9b56 {
-    box-sizing: border-box;
-    position: absolute;
-    background-color: var(--background-secondary);
-    z-index: 1001;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
-}
-
 .noParentContainer_ca9b56 {
     top: 0;
     left: 0;
@@ -25595,6 +25631,18 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     top: -48px;
     left: 0;
     bottom: 0
+}
+
+.container_ca9b56 {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: var(--background-secondary);
+    z-index: 1001;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
 }
 
 .contentContainer_ca9b56 {
@@ -26075,12 +26123,12 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .theme-dark .categoryFadeBlurple_af1167,
 .theme-light .categoryFadeBlurple_af1167 {
-    background-color: var(--brand-experiment-80a)
+    background-color: var(--brand-80a)
 }
 
 .theme-dark .categoryFadeBlurple_af1167:hover,
 .theme-light .categoryFadeBlurple_af1167:hover {
-    background-color: var(--brand-experiment-95a)
+    background-color: var(--brand-95a)
 }
 
 .theme-dark .categoryText_af1167,
@@ -26245,6 +26293,90 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .enable-forced-colors .header_d0dc1d {
     border-bottom: 1px solid CanvasText
+}
+
+.noParentContainer_f7a22f {
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+
+.hasParentContainer_f7a22f {
+    top: -16px;
+    left: 0;
+    bottom: 0
+}
+
+.hasTabParentContainer_f7a22f {
+    top: -48px;
+    left: 0;
+    bottom: 0
+}
+
+.container_f7a22f {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: var(--background-secondary);
+    z-index: 1001;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.closeButton_f7a22f {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    color: var(--interactive-active)
+}
+
+.contentContainer_f7a22f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2
+}
+
+.image_f7a22f {
+    margin: 0 0 32px
+}
+
+.title_f7a22f {
+    padding: 0 32px
+}
+
+.titleNoSocialProof_f7a22f {
+    margin-bottom: 24px
+}
+
+.body_f7a22f {
+    padding: 0 32px;
+    text-align: center
+}
+
+.ctaContainer_f7a22f {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--background-tertiary);
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 16px
+}
+
+.secondaryCTA_f7a22f {
+    margin-right: 8px;
+    color: var(--premium-nitro-pink-text)
+}
+
+.secondaryCTA_f7a22f:hover {
+    text-decoration: underline
 }
 
 .soundButtonWrapper_f40049 {
@@ -39327,6 +39459,29 @@ h3.improved_f017d0:after {
     padding-left: .5rem
 }
 
+html,
+[data-popout-root] {
+    --brand-05a: hsla(var(--brand-500-hsl) / 0.05);
+    --brand-10a: hsla(var(--brand-500-hsl) / 0.1);
+    --brand-15a: hsla(var(--brand-500-hsl) / 0.15);
+    --brand-20a: hsla(var(--brand-500-hsl) / 0.2);
+    --brand-25a: hsla(var(--brand-500-hsl) / 0.25);
+    --brand-30a: hsla(var(--brand-500-hsl) / 0.3);
+    --brand-35a: hsla(var(--brand-500-hsl) / 0.35);
+    --brand-40a: hsla(var(--brand-500-hsl) / 0.4);
+    --brand-45a: hsla(var(--brand-500-hsl) / 0.45);
+    --brand-50a: hsla(var(--brand-500-hsl) / 0.5);
+    --brand-55a: hsla(var(--brand-500-hsl) / 0.55);
+    --brand-60a: hsla(var(--brand-500-hsl) / 0.6);
+    --brand-65a: hsla(var(--brand-500-hsl) / 0.65);
+    --brand-70a: hsla(var(--brand-500-hsl) / 0.7);
+    --brand-75a: hsla(var(--brand-500-hsl) / 0.75);
+    --brand-80a: hsla(var(--brand-500-hsl) / 0.8);
+    --brand-85a: hsla(var(--brand-500-hsl) / 0.85);
+    --brand-90a: hsla(var(--brand-500-hsl) / 0.9);
+    --brand-95a: hsla(var(--brand-500-hsl) / 0.95)
+}
+
 html.low-saturation,
 [data-popout-root].low-saturation {
     --control-brand-foreground: var(--interactive-normal)
@@ -46143,4 +46298,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.a38bdb4c96b4793b6be9.css.map*/
+/*# sourceMappingURL=12633.18ce18d8842ec9020d22.css.map*/
