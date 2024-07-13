@@ -1,5 +1,5 @@
-<p id="docs-internal-guid-fac764f6-7fff-80ee-9ed8-2ab03ea12016">While using Discord, you might have encountered a “Verification Required” message, which is one of our safety efforts for our platform. We want users to feel secure using Discord, and we invest in features that help protect you from scams or abuse. Requiring that you verify your email address or phone number helps prove you are not a robot and helps keep spammers out.</p>
-<p id="docs-internal-guid-b1798927-7fff-aff0-2ced-fe32490d855b"><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
+<p>While using Discord, you might have encountered a “<strong>Verification Required</strong>” message, which is one of our safety efforts for our platform. We want users to feel secure using Discord, and we invest in features that help protect you from scams or abuse. Requiring that you verify your email address or phone number helps prove you are not a robot and helps keep spammers out.</p>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1"><a href="#h_01G3CTDAACPA8E9BRFWCQNSBY4" target="_self">Why do I need to verify my account?</a></li>
     <li style="font-weight: 400;" aria-level="1"><a href="#h_01G3CTDK98QB8PPW9Q8V9ZK5AM" target="_self">How does Discord use my phone number?</a></li>
@@ -7,8 +7,9 @@
     <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-87f6cde3-7fff-adec-3c4b-a9462532ff3a" target="_self">Having trouble verifying?</a></li>
 </ul>
 <h1 id="h_01G3CTDAACPA8E9BRFWCQNSBY4"><strong>Why do I need to verify my account?</strong></h1>
-<p><span style="font-weight: 400;"><span id="docs-internal-guid-f011b72a-7fff-174e-1422-b7ab811f6414">The “Verification Required” message is part of our verification system to help protect both you and the communities on Discord. This means sometimes our systems detect activity that calls for extra information. This verification not only serves to help confirm to Discord that you are more likely to not be spam but also provides additional barriers of defense against malicious activity on your account.</span></span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12476192844183" alt="veri_captcha.png"></span></p>
+<p><span style="font-weight: 400;"><span id="docs-internal-guid-f011b72a-7fff-174e-1422-b7ab811f6414">The “<strong>Verification Required</strong>” message is part of our verification system to help protect both you and the communities on Discord. This means sometimes our systems detect activity that calls for extra information. </span></span></p>
+<p><span style="font-weight: 400;"><span id="docs-internal-guid-f011b72a-7fff-174e-1422-b7ab811f6414">This verification not only serves to help confirm to Discord that you are more likely to not be spam but also provides additional barriers of defense against malicious activity on your account.</span></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12476192844183" alt="veri_captcha.png" width="606" height="440"></span></p>
 <p id="docs-internal-guid-2646e7f4-7fff-3272-941a-68915faf910a">So you might see this message because you want to join a server that<a href="https://support.discord.com/hc/en-us/articles/216679607" target="_blank" rel="noopener noreferrer"> requires its members</a> to have verified accounts. Some other reasons might be that you:</p>
 <ul>
     <li>joined multiple servers in a short period of time</li>
@@ -20,9 +21,7 @@
 <h1 id="h_01G3CTDK98QB8PPW9Q8V9ZK5AM"><span style="font-weight: 400;"><strong><span id="docs-internal-guid-9d6cc6d0-7fff-d04a-3449-0088646914de">How does Discord use my phone number?</span></strong></span></h1>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-a76a6543-7fff-4681-085d-c02359ee2610">Discord uses your phone number for safety and security purposes. Discord also supports opt-in features like</span><a href="https://support.discord.com/hc/en-us/articles/360061878534" target="_blank" rel="noopener noreferrer"> Find Your Friends</a>, which allows you to discover friends on Discord using your phone contacts!</span></p>
 <h1 id="docs-internal-guid-9cd047ed-7fff-8e25-e1e6-0cf5644e2255"><strong>How to verify your account</strong></h1>
-<h3 id="h_01HKDSK6WBV5K9WV1TJ20417N4">
-    <span style="font-weight: 400;">If you’re looking to verify the email address associated with your Discord account but can’t find the original verification email, you can check out this </span><a href="https://support.discord.com/hc/en-us/articles/213219267" target="_blank" rel="noopener noreferrer">article</a><span style="font-weight: 400;">.</span>
-</h3>
+<div class="tip-box">If you’re looking to verify the email address associated with your Discord account but can’t find the original verification email, you can check out <a href="https://support.discord.com/hc/en-us/articles/213219267" target="_blank" rel="noopener noreferrer">this article here</a>. </div>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-112d9bbf-7fff-f9bd-e48d-af5086a69bba">We may require you to verify your account using a valid phone number. </span><strong>The phone number you use cannot be associated with an existing Discord account</strong>. The process will look a little something like this:</span></p>
 <p id="docs-internal-guid-18a4c0d3-7fff-3af2-2d40-4aebba7c66a0">1. Press on the <strong>Start Verification </strong>button<strong>.</strong></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12476380374807" alt="start_verification.png" width="350" height="577"></span></p>
@@ -31,9 +30,7 @@
 <p id="docs-internal-guid-14a92830-7fff-3ff9-c2a0-1626f3fca89f">3. Wait for the SMS to be sent to your mobile phone and follow the instructions to input the verification code. This should complete the phone verification process!</p>
 <h1 id="docs-internal-guid-87f6cde3-7fff-adec-3c4b-a9462532ff3a"><strong>Having trouble verifying? </strong></h1>
 <p id="docs-internal-guid-aa5cbc5b-7fff-de0d-25eb-5ef358d58e9a">When going through the motions, you may run into the following errors below: </p>
-<table style="border-collapse: collapse;
-height: 461px;
-width: 98.9993%;">
+<table style="border-collapse: collapse; height: 461px; width: 98.9993%;">
     <tbody>
         <tr style="height: 34px;">
             <td class="wysiwyg-text-align-center" style="width: 35.1111%; height: 34px;">
@@ -79,4 +76,5 @@ width: 98.9993%;">
         </tr>
     </tbody>
 </table>
-<h3 id="h_01HKDSK6WB7FSXYYQ6KMNZSWHF" class="wysiwyg-text-align-left"><span style="font-weight: 400;"><a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"><span id="docs-internal-guid-108056b4-7fff-8aa3-dccb-79917c69d9f8" style="color: #434343;" data-darkreader-inline-color="">If you have additional questions about the “Verification Required” message or issues verifying your account, you can submit a ticket to our Support team here:</span></a><a href="https://dis.gd/contact"><span class="wysiwyg-underline"> https://dis.gd/contact</span></a></span></h3>
+<div class="form-box">If you have additional questions about the “Verification Required” message or issues verifying your account, you can submit a ticket to our Support team here: <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer">https://dis.gd/contact</a>
+</div>
