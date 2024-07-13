@@ -1,9 +1,9 @@
 <p id="docs-internal-guid-5caf3839-7fff-ea94-fb64-7b1f9802cc64"><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor=""><span class="wysiwyg-font-size-large">What this article covers:</span><br></span></strong></p>
 <ul>
     <li><a href="#h_01GWJJPDWA7210GPEJB5Z4R5WC" target="_self">What are avatar decorations?</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/13410113109911#docs-internal-guid-3376417a-7fff-e38e-b0eb-3fc85a230fdb">How can I collect an avatar decoration?</a></li>
+    <li><a href="#docs-internal-guid-3376417a-7fff-e38e-b0eb-3fc85a230fdb">How can I collect an avatar decoration?</a></li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/13410113109911#docs-internal-guid-e73a0c54-7fff-dbc0-6e07-40581ee1ea3f">How to apply an avatar decoration to my profile <br></a>
+        <a href="#docs-internal-guid-e73a0c54-7fff-dbc0-6e07-40581ee1ea3f">How to apply an avatar decoration to my profile <br></a>
         <ul>
             <li><a href="#h_01GWJJPTV8YQ3C3BDW7Q93ARGX" target="_self">Desktop</a></li>
             <li><a href="#h_01GWJJPZTY0EKDJJSAHPBA6VWN" target="_self">Mobile</a></li>

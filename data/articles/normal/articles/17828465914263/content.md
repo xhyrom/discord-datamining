@@ -6,7 +6,7 @@
         <a href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX6VDPBCGPY25WKK6TN">How do I apply a profile effect to my profile?</a>
         <ul>
             <li><a href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX6G2DRMA6NNAD38F9W">Desktop</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HQY9V1GJ98FMQCWRJA1V58TC">Mobile</a></li>
+            <li><a href="#h_01HQY9V1GJ98FMQCWRJA1V58TC">Mobile</a></li>
         </ul>
     </li>
     <li><a href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX68ZV93YHYX7P3JMSK">Frequently Asked Questions</a></li>
