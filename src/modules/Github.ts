@@ -24,6 +24,8 @@ import {
   writeFile,
   octokit,
   rm,
+  pushToGit,
+  postToGithub,
 } from "../utils.ts";
 import type { Module } from ".";
 
@@ -85,6 +87,10 @@ export class Github implements Module {
         )
       );
     }
+
+    await pushToGit(
+      "📝 Something in Discord's github organisation has been changed"
+    );
   }
 
   async organisation() {
