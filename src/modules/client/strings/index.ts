@@ -21,9 +21,9 @@ import {
   diff as lDiff,
   buildString as lBuildString,
   // @ts-expect-error - No types
-} from "@xhyrom-forks/discord-datamining-lang-differ";
+} from "@xhyrom/discord-datamining-lang-differ";
 // @ts-expect-error - No types
-import getLangStrings from "@xhyrom-forks/discord-datamining-lang-differ/getLangStrings.js";
+import getLangStrings from "@xhyrom/discord-datamining-lang-differ/getLangStrings.js";
 import type { Module } from "../../index.ts";
 import { Client } from "../index.ts";
 import {

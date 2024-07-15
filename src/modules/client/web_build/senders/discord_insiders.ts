@@ -36,12 +36,11 @@ export class DiscordInsidersSender implements Sender {
     date: Date
   ) {
     const importantScripts = [
-      scriptFiles.chunkLoader,
-      scriptFiles.classMappings,
       scriptFiles.mainScript,
-      scriptFiles.vendor,
-      scriptFiles.shared,
       scriptFiles.strings,
+      scriptFiles.endpoints,
+      scriptFiles.strings,
+      scriptFiles.sentry,
     ].filter((script): script is File => script !== null);
 
     const embed = new EmbedBuilder()
@@ -110,18 +109,11 @@ export class DiscordInsidersSender implements Sender {
 
     if (script.name === scriptFiles.mainScript.name) suffix = "main";
 
-    if (script.name === scriptFiles.vendor?.name) suffix = "vendor";
-
-    if (script.name === scriptFiles.chunkLoader?.name) suffix = "chunk loader";
-
-    if (script.name === scriptFiles.classMappings?.name)
-      suffix = "class mappings";
-
     if (script.name === scriptFiles.strings?.name) suffix = "strings";
 
-    if (script.name === scriptFiles.shared?.name) suffix = "shared";
+    if (script.name === scriptFiles.endpoints?.name) suffix = "routes";
 
-    if (script.name === scriptFiles.routes?.name) suffix = "routes";
+    if (script.name === scriptFiles.sentry?.name) suffix = "sentry";
 
     return `${script.path}${suffix ? ` (${suffix})` : ""}`;
   }

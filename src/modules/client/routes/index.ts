@@ -20,7 +20,7 @@ import { join } from "node:path";
 import {
   buildString as lBuildString,
   // @ts-expect-error - No types
-} from "@xhyrom-forks/discord-datamining-lang-differ";
+} from "@xhyrom/discord-datamining-lang-differ";
 import deepEqual from "fast-deep-equal";
 import type { Module } from "../../index.ts";
 import { Client } from "../index.ts";

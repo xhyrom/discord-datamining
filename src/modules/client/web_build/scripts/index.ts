@@ -28,13 +28,10 @@ import type { WebBuild } from "../index.ts";
 export class Scripts implements Module {
   #files?: {
     scripts: File[];
-    chunkLoader: File | null;
-    classMappings: File | null;
-    vendor: File | null;
-    shared: File | null;
-    routes: File | null;
-    strings: File | null;
     mainScript: File;
+    strings: File | null;
+    endpoints: File | null;
+    sentry: File | null;
     html: string;
   };
   #build?: Build;
@@ -110,38 +107,24 @@ export class Scripts implements Module {
       beautify(await files.mainScript!.content(), "js")
     );
 
-    if (files.chunkLoader) {
-      await writeFile(
-        join(this.baseDir, "chunk_loader.js"),
-        beautify(await files.chunkLoader.content(), "js")
-      );
-    }
-
-    if (files.classMappings) {
-      await writeFile(
-        join(this.baseDir, "class_mappings.js"),
-        beautify(await files.classMappings.content(), "js")
-      );
-    }
-
-    if (files.vendor) {
-      await writeFile(
-        join(this.baseDir, "vendor.js"),
-        beautify(await files.vendor.content(), "js")
-      );
-    }
-
-    if (files.routes) {
-      await writeFile(
-        join(this.baseDir, "routes.js"),
-        beautify(await files.routes.content(), "js")
-      );
-    }
-
     if (files.strings) {
       await writeFile(
         join(this.baseDir, "strings.js"),
         beautify(await files.strings.content(), "js")
+      );
+    }
+
+    if (files.endpoints) {
+      await writeFile(
+        join(this.baseDir, "routes.js"),
+        beautify(await files.endpoints.content(), "js")
+      );
+    }
+
+    if (files.sentry) {
+      await writeFile(
+        join(this.baseDir, "sentry.js"),
+        beautify(await files.sentry.content(), "js")
       );
     }
   }
@@ -160,50 +143,17 @@ export class Scripts implements Module {
 
     let mainScript;
     let stringsScript;
-    let classMappingsScript;
-    let sharedScript;
-    let vendorScript;
-    let routesScript;
-    let chunkLoaderScript;
+    let endpointsScript;
+    let sentryScript;
     for (const script of scripts) {
-      const content = await script.content();
-
-      if (
-        content.match(/(?<!\w)buildNumber:\s*"(?<number>[0-9]+)"/g)?.length ===
-        1
-      ) {
+      if (script.name.startsWith("web.")) {
         mainScript = script;
-        continue;
-      }
-
-      if (content.match(/(?<!\w)DISCORD:\s*"Discord"/g)?.length === 1) {
         stringsScript = script;
-        continue;
+        endpointsScript = script;
       }
 
-      if (content.match(/(?<!\w)loadingBar:\s*"/g)?.length === 1) {
-        classMappingsScript = script;
-        continue;
-      }
-
-      if (content.match(/(?<!\w)READY_TO_TRY_DISCORD:\s*".*"/g)?.length === 1) {
-        sharedScript = script;
-        continue;
-      }
-
-      if (content.match(/setServerDeaf:\s*/g)?.length === 1) {
-        vendorScript = script;
-        continue;
-      }
-
-      if (content.match(/(?<!\w)ME:\s*"\/users\/@me"/g)?.length === 1) {
-        routesScript = script;
-        continue;
-      }
-
-      if (content.match(/(?<!\w)(\d*):(?<!\w)"[\d\w.]*.js",/g)) {
-        chunkLoaderScript = script;
-        continue;
+      if (script.name.startsWith("sentry.")) {
+        sentryScript = script;
       }
     }
 
@@ -213,22 +163,17 @@ export class Scripts implements Module {
     }
 
     console.log("Found scripts");
-    console.log(`Class Mappings: ${classMappingsScript?.path}`);
-    console.log(`Chunk Loader: ${scripts?.[scripts.length - 1]?.path}`);
-    console.log(`Vendor: ${vendorScript?.path}`);
-    console.log(`Routes: ${routesScript?.path}`);
-    console.log(`Strings: ${stringsScript?.path}`);
     console.log(`Main Script: ${mainScript?.path}`);
+    console.log(`Strings: ${stringsScript?.path}`);
+    console.log(`Routes: ${endpointsScript?.path}`);
+    console.log(`Sentry: ${sentryScript?.path}`);
 
     this.#files = {
       scripts,
-      classMappings: classMappingsScript ?? null, // contains css classes
-      chunkLoader: chunkLoaderScript ?? scripts?.[scripts.length - 1] ?? null,
-      vendor: vendorScript ?? null,
-      shared: sharedScript ?? null,
-      routes: routesScript ?? null,
-      strings: stringsScript ?? null, // contains all strings
       mainScript: mainScript!, // contains build info
+      strings: stringsScript ?? null, // contains all strings
+      endpoints: endpointsScript ?? null, // contains all endpoints
+      sentry: sentryScript ?? null, // sentry shit
       html: res,
     };
 
