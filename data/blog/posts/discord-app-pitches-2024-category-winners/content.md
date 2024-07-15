@@ -1,6 +1,23 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
+            <p>You played, you voted, and you probably played a bunch more after voting… we have some exciting news about this year’s Discord App Pitches!&nbsp;</p>
+            <p>We trimmed it down to the category winners in this article, tallied up your votes, and brought our judges together for one final decision: deciding which team becomes the Grand Prize Winner of up to $30,000!&nbsp;</p>
+            <p>Drumroll please... 🥁 🥁 🥁 🥁 🥁 🥁 🥁 🥁 🥁</p>
+            <p>...</p>
+            <p><strong>IT’S SOULBOUND!</strong></p>
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/669552cc3338cbf61c49923a_AD_4nXcuxbFci767-IVldOVAtiy9AeW1veSrSf0gaWmrKbgeeHsRhhyhZOc4O9ZNrE30PyPkc_yP1n5ihVABHx8od6jNMlBHfstnb-SAKvqpynn7TEVBM53IktMhM9J4c8Ls1y71xyQqQio1OumE81jUsSRwAIbK.png" alt="A “grand prize winner” banner showing off Soulbound,&nbsp;the grand prize winner of Discord App Pitches 2024."></div>
+            </figure>
+            <p>‍</p>
+            <p>Read up on the winning team’s submission by hopping to their section <a href="https://discord.com/blog/discord-app-pitches-2024-category-winners#heading-3">here</a>! Congrats to the Webb Technology LTD team! We can’t wait to see how Soulbound and the rest of the category winners take shape as they further develop their Activities. &lt;3&nbsp;</p>
+            <p>The creativity doesn’t end here though! If you’re looking to bring your own Activity to Discord, <a href="https://discord.com/developers/docs/activities/overview">consider building it today</a>! Coming soon, any developer will be able to release their game or Activity on Discord and opt-in to easy user discovery, giving friends even more ways to have fun with their favorite people.&nbsp;</p>
+            <p>Soulbound stole the hearts of our judges and users in Discord Town Hall. Throughout the two-week voting period, Soulbound consistently held over 50% of the votes and saw the most repeat usage among any category winner in the server. Our Judges are very excited about the potential of an MMO Activity on Discord and look forward to working with the Soulbound team as they add more social elements for players to enjoy with their friends.</p>
+            <p>We hope you had fun trying out the category winners in our Town Hall server. For now, you can play the <a href="https://discord.com/blog/server-activities-games-voice-watch-together#heading-3">Activities listed here</a> (and more!) in any place you can talk on Discord: in a server’s voice and text channels, and DM calls with your friends. </p>
+            <p>Continue reading for the original article containing the finalists, including our Grand Prize Winner!&nbsp;</p>
+            <div class="w-embed">
+                <hr class="hr-style">
+            </div>
             <p>Game, Set, MATCH! Your Discord App Pitches category winners for 2024 are here!</p>
             <p>For this year’s Discord App Pitches, we asked the developer community to pitch their Activity prototypes. You know, those games and apps that can be enjoyed anywhere you talk on Discord, whether in the middle of the late-night call or a server’s text channel.</p>
             <p>We received thousands of entries for potential Activities on Discord this year, which is incredibly impressive with this year's competition requiring entrants to submit a playable prototype. Out of all the entries, five made it to the top.</p>
