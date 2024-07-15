@@ -16,30 +16,29 @@
 <p>From <strong>avatar decorations</strong> to <strong>profile effects</strong>, our Shop has a variety of items you can buy and collect to customize your profile! Items purchased from the Shop are yours to keep and apply whenever you want. Now you can add your favorite styles to your profile for any occasion!  </p>
 <h1 id="h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</h1>
 <p id="docs-internal-guid-06d82dee-7fff-3f1f-f01d-d16bf0924909">Once you enter the Shop, you will be able to preview and purchase available avatar decorations and profile effects! Nitro members can also claim any Nitro exclusive items while in the Shop! </p>
-<h3 id="h_01HDMK5TEP5B8G32PSB4RX24MG">Selections available for purchase in the Shop will change periodically and may be available for a limited time. However, any purchased items are yours to keep and can be used at any time.</h3>
+<h3 id="h_01HDMK5TEP5B8G32PSB4RX24MG">Items available for purchase in the Shop will change periodically and may be available for a limited time. However, any purchased items are yours to keep and can be used at any time.</h3>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-cc44709e-7fff-de9d-20e9-c2ebcbe2461e"><img src="https://support.discord.com/hc/article_attachments/19612054117399" width="624" height="452"></span></p>
 <p>You can learn more about customizing your profile by heading over to our Custom Profiles article <a href="https://support.discord.com/hc/en-us/articles/4403147417623" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
-<h3 id="h_01HDMK6AQ36K30F267HFT18CV1">At this time, you can only access the Shop on the desktop app, your browser, or on iOS.</h3>
 <p id="docs-internal-guid-d5fed4b0-7fff-a231-7cd7-51087e31cc58">Head over to the Shop to start collecting avatar decorations and profile effects! </p>
 <h2 id="h_01HVHE1RAM3Y86Y72M182775GF"><span id="docs-internal-guid-80a013df-7fff-bf2a-521c-bff4299bcea0">Desktop</span></h2>
 <p><strong>Option 1</strong></p>
 <p>1. Navigate to your <strong>Direct Messages list </strong>by selecting the Discord app icon in the upper left corner. </p>
 <p>2. Then, press the <strong>Shop</strong> tab to enter the Shop!</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432495557399" alt="image1.gif"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432495557399" alt="image1.gif" width="688" height="345"></p>
 <p id="docs-internal-guid-de74f951-7fff-dd4c-a6a8-4b2abf7618b8"><strong>Option 2</strong></p>
 <p>1. Navigate to your <strong>User Settings &gt; Profiles</strong>. </p>
 <p class="wysiwyg-text-align-left">2. Once there, you will see the banner to the Shop where you can select <strong>Check it Out</strong>. You can also select <strong>Change Effect </strong>or <strong>Change Decoration </strong>and press the <strong>Shop </strong>icon. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432495562647" alt="image2.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432495562647" alt="image2.png" width="677" height="421"></p>
 <p>3. Once directed to the Shop, you can preview and buy avatar decorations and profile effects to add to your collection! </p>
 <p>Head over to the <a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a> article and the <a href="https://support.discord.com/hc/en-us/articles/17828465914263" target="_blank" rel="noopener noreferrer">Profile Effects</a> article to find steps on how to apply your collection and customize your profile! </p>
 <h2 id="docs-internal-guid-a5d55ffd-7fff-5128-21cb-7acf5fea56eb">Mobile</h2>
 <p>1. To navigate to the Shop on your mobile device, head over to your <strong>User Profile </strong>by selecting your <strong>avatar</strong> icon in the lower right corner. </p>
 <p>2. Then, tap the <strong>Shop</strong> [<img src="https://support.discord.com/hc/article_attachments/22820221364887" width="24" height="24">] icon in the upper right corner. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22820197440663" width="250" height="496"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24913300016535" width="284" height="589"></p>
 <p>3. This will direct you to the Shop where you can preview and buy avatar decorations and profile effects! </p>
 <p> </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22820197451543" width="226" height="748"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24913300021143" width="274" height="593"></p>
 <h1 id="docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d">Gifting from the Shop</h1>
 <h3 id="docs-internal-guid-650ed8fe-7fff-b23d-cc06-e6cb2703ef20"><span style="color: #434343;">Gifting from the Shop is only available on desktop and browser. </span></h3>
 <p>Along with collecting items for yourself, you can also gift items from the Shop to your friends! </p>
