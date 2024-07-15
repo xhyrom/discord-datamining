@@ -17714,7 +17714,7 @@
   "EMAIL_CHANGE_REASONING_NEW_EMAIL": "\"I recently created a new email\"",
   "EMAIL_CHANGE_REASONING_SOMETHING_ELSE": "\"Something else\"",
   "EMAIL_CHANGE_REASONING_WARNING_HEADER": "\"Potential scam alert!\"",
-  "EMAIL_CHANGE_REASONING_IMPERSONATION_EDUCATION": "\"Changing your email address can give someone else access to your account! Discord will never ask you to change your email - [learn more about common scams here]({hcArticle}).\"",
+  "EMAIL_CHANGE_REASONING_IMPERSONATION_EDUCATION": "\"This sounds very similar to common scams going around! Changing your email address can give someone else access to your account - [learn more about trending scams here]({hcArticle}).\"",
   "EMAIL_CHANGE_REASONING_DISCORD_NEVER_ASKS_FOR_EMAIL_CHANGE": "\"Discord will never ask you to change your email - report anyone who asks you to do this.\"",
   "EMAIL_CHANGE_REASONING_CONTINUE": "\"I know the risks, continue\"",
   "DISCORD_NAME": "\"Discord\"",
