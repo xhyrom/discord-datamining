@@ -60,6 +60,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

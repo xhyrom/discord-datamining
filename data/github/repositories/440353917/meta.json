@@ -29,8 +29,8 @@
   "url": "https://api.github.com/repos/discord/react-native-video",
   "created_at": "2021-12-21T01:23:43Z",
   "homepage": "https://www.npmjs.com/package/react-native-video",
-  "size": 13089,
-  "language": null,
+  "size": 14995,
+  "language": "Java",
   "has_issues": false,
   "has_projects": true,
   "has_downloads": true,
@@ -57,6 +57,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

@@ -1,8 +1,8 @@
 {
-  "id": 72689065,
-  "node_id": "MDEwOlJlcG9zaXRvcnk3MjY4OTA2NQ==",
-  "name": "node",
-  "full_name": "discord/node",
+  "id": 767097046,
+  "node_id": "R_kgDOLbj41g",
+  "name": "ezstd",
+  "full_name": "discord/ezstd",
   "private": false,
   "owner": {
     "login": "discord",
@@ -24,39 +24,39 @@
     "type": "Organization",
     "site_admin": false
   },
-  "description": "Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:",
+  "description": "Zstd binding for Erlang",
   "fork": true,
-  "url": "https://api.github.com/repos/discord/node",
-  "created_at": "2016-11-02T23:06:12Z",
-  "homepage": "https://nodejs.org",
-  "size": 365477,
-  "language": "JavaScript",
+  "url": "https://api.github.com/repos/discord/ezstd",
+  "created_at": "2024-03-04T17:41:52Z",
+  "homepage": "",
+  "size": 56,
+  "language": "Erlang",
   "has_issues": false,
-  "has_projects": true,
+  "has_projects": false,
   "has_downloads": true,
-  "has_wiki": true,
+  "has_wiki": false,
   "has_pages": false,
   "has_discussions": false,
   "archived": false,
   "disabled": false,
   "license": {
-    "key": "other",
-    "name": "Other",
-    "spdx_id": "NOASSERTION",
-    "url": null,
-    "node_id": "MDc6TGljZW5zZTA="
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
   },
   "allow_forking": true,
   "is_template": false,
   "web_commit_signoff_required": false,
   "topics": [],
   "visibility": "public",
-  "default_branch": "discord",
+  "default_branch": "master",
   "permissions": {
     "admin": false,
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

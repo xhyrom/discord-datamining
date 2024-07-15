@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/use-memo-value",
   "created_at": "2020-04-21T00:43:26Z",
   "homepage": null,
-  "size": 1211,
+  "size": 501,
   "language": "TypeScript",
   "has_issues": true,
   "has_projects": true,
@@ -61,6 +61,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

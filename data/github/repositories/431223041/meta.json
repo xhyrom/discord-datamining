@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/limited_queue",
   "created_at": "2021-11-23T19:09:47Z",
   "homepage": "",
-  "size": 14,
+  "size": 18,
   "language": "Elixir",
   "has_issues": true,
   "has_projects": true,
@@ -57,6 +57,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

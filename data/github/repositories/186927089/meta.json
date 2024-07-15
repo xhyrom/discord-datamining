@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/PodToBUILD",
   "created_at": "2019-05-16T01:21:39Z",
   "homepage": "",
-  "size": 62115,
+  "size": 62094,
   "language": "Swift",
   "has_issues": false,
   "has_projects": true,
@@ -57,6 +57,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

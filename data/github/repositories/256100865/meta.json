@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/babel-plugin-define-patterns",
   "created_at": "2020-04-16T03:36:20Z",
   "homepage": null,
-  "size": 163,
+  "size": 186,
   "language": "JavaScript",
   "has_issues": false,
   "has_projects": false,
@@ -63,6 +63,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

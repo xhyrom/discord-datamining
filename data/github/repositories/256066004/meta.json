@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/black",
   "created_at": "2020-04-16T00:09:17Z",
   "homepage": "https://black.readthedocs.io/en/stable/",
-  "size": 6576,
+  "size": 6769,
   "language": "Python",
   "has_issues": false,
   "has_projects": true,
@@ -57,6 +57,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

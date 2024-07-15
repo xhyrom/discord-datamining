@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/breakpad",
   "created_at": "2017-03-30T23:24:25Z",
   "homepage": "https://chromium.googlesource.com/breakpad/breakpad",
-  "size": 40591,
+  "size": 42621,
   "language": "C++",
   "has_issues": false,
   "has_projects": true,
@@ -57,6 +57,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

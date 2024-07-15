@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/select.rs",
   "created_at": "2020-02-13T07:11:51Z",
   "homepage": "",
-  "size": 196,
+  "size": 236,
   "language": "Rust",
   "has_issues": false,
   "has_projects": true,
@@ -51,6 +51,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

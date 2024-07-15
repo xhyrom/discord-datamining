@@ -37,7 +37,7 @@
   "has_wiki": true,
   "has_pages": false,
   "has_discussions": false,
-  "archived": false,
+  "archived": true,
   "disabled": false,
   "license": {
     "key": "mit",
@@ -57,6 +57,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

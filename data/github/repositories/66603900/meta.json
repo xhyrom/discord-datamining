@@ -28,7 +28,7 @@
   "fork": false,
   "url": "https://api.github.com/repos/discord/sample-game-integration",
   "created_at": "2016-08-26T00:50:12Z",
-  "homepage": null,
+  "homepage": "",
   "size": 54,
   "language": "JavaScript",
   "has_issues": false,
@@ -43,7 +43,9 @@
   "allow_forking": true,
   "is_template": false,
   "web_commit_signoff_required": false,
-  "topics": [],
+  "topics": [
+    "samples"
+  ],
   "visibility": "public",
   "default_branch": "master",
   "permissions": {
@@ -51,6 +53,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/focus-layers",
   "created_at": "2020-04-27T01:24:57Z",
   "homepage": "",
-  "size": 810,
+  "size": 1057,
   "language": "TypeScript",
   "has_issues": true,
   "has_projects": true,
@@ -65,6 +65,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }

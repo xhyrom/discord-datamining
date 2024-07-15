@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/rabbitmq-amqp1.0-client",
   "created_at": "2018-02-13T20:42:30Z",
   "homepage": "",
-  "size": 1419,
+  "size": 1420,
   "language": "Erlang",
   "has_issues": false,
   "has_projects": true,
@@ -51,6 +51,6 @@
     "maintain": false,
     "push": false,
     "triage": false,
-    "pull": true
+    "pull": false
   }
 }
