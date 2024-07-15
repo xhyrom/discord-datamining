@@ -16736,7 +16736,10 @@ Error:`, e)
                         SHARED_CANVAS_EMOJI_HOSE: (t, e, r) => "/channels/".concat(t, "/").concat(e, "/shared-canvas/emoji-hose/").concat(r),
                         USER_PREMIUM_LIKELIHOOD: "/users/@me/billing/premium-likelihood",
                         BURST_CREDIT_BALANCE: "/users/@me/burst-credits",
-                        SAVED_MESSAGES: "/saved-messages",
+                        SAVED_MESSAGES_LEGACY: "/saved-messages",
+                        GET_SAVED_MESSAGES: "/users/@me/saved-messages",
+                        PUT_SAVED_MESSAGE: (t, e) => "/users/@me/saved-messages/".concat(t, "/").concat(e),
+                        DELETE_SAVED_MESSAGE: (t, e) => "/users/@me/saved-messages/".concat(t, "/").concat(e),
                         GET_REFERRALS_REMAINING: "/users/@me/referrals/eligibility",
                         GET_REFERRAL_ELIGIBLE_USERS: "/users/@me/referrals/eligible-users",
                         CREATE_REFERRAL_PREVIEW: t => "/users/@me/referrals/".concat(t, "/preview"),
@@ -17831,7 +17834,7 @@ Error:`, e)
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-19c538606f934762b5ae7b101f16fd79f81ebeef",
+                        release: "discord_web-4287af1680f4bc4695cad64ba58153c91d03f405",
                         beforeSend: t => {
                             var e, r;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || o.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !E() && !("Aborted" === (r = t).message || "cancel captcha" === r.message) && s() ? t : null
@@ -17849,8 +17852,8 @@ Error:`, e)
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), a.YA("buildNumber", (t = "309722", "309722"));
-                    a.YA("builtAt", String("1721068513598"));
+                    }), a.YA("buildNumber", (t = "309745", "309745"));
+                    a.YA("builtAt", String("1721070271729"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) a.YA(t, e[t]);
@@ -31114,4 +31117,4 @@ Error:`, e)
         window.DiscordSentry = (0, t.j)()
     })()
 })();
-//# sourceMappingURL=sentry.92f2953539d428497e9d.js.map
+//# sourceMappingURL=sentry.ff332fd29364bd6eecd3.js.map
