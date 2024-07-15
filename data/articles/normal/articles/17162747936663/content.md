@@ -5,11 +5,11 @@
     <li>
         <a href="#h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/17162747936663#h_01HVHE1RAM3Y86Y72M182775GF">Desktop</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/17162747936663#docs-internal-guid-a5d55ffd-7fff-5128-21cb-7acf5fea56eb">Mobile</a></li>
+            <li><a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop</a></li>
+            <li><a href="#docs-internal-guid-a5d55ffd-7fff-5128-21cb-7acf5fea56eb">Mobile</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/17162747936663#docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d">Gifting from the Shop</a></li>
+    <li><a href="#docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d">Gifting from the Shop</a></li>
     <li><a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop</h1>
