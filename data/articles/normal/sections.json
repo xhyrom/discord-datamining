@@ -1,5 +1,21 @@
 [
   {
+    "id": 24774654721815,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/24774654721815.json",
+    "html_url": "https://support.discord.com/hc/en-us/sections/24774654721815-Vendor-Agreements",
+    "category_id": 115000168351,
+    "position": 0,
+    "sorting": "creation_asc",
+    "created_at": "2024-07-09T22:23:39Z",
+    "name": "Vendor Agreements",
+    "description": "",
+    "locale": "en-us",
+    "source_locale": "en-us",
+    "outdated": false,
+    "parent_section_id": null,
+    "theme_template": "section_page"
+  },
+  {
     "id": 24453122216087,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/24453122216087.json",
     "html_url": "https://support.discord.com/hc/en-us/sections/24453122216087-Account-Safety",
