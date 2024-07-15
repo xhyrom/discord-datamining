@@ -6459,7 +6459,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     margin: 24px auto 0
 }
 
-@media : (min-width: 830px) {
+@media(min-width:830px) {
     .logo_bb3b80 {
         position: fixed;
         top: 24px;
@@ -12102,7 +12102,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .fillParent_a3d160 {
     width: 100%;
     height: 100%;
-    display: block
+    display: block;
+    overflow: clip
 }
 
 .hiddenIframeContainer_a3d160 {
@@ -46298,4 +46299,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.18ce18d8842ec9020d22.css.map*/
+/*# sourceMappingURL=12633.c3f1fe477e65f61bcabd.css.map*/
