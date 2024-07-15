@@ -219,7 +219,7 @@ export class Routes implements Module {
     }
 
     const builtString = lBuildString(
-      "routes",
+      "endpoints",
       "codeblock",
       addedRoutes,
       updatedRoutes,
