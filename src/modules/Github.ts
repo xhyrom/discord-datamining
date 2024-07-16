@@ -25,7 +25,6 @@ import {
   octokit,
   rm,
   pushToGit,
-  postToGithub,
 } from "../utils.ts";
 import type { Module } from ".";
 
@@ -66,12 +65,14 @@ export class Github implements Module {
         join(
           this.baseDir,
           "repositories",
+          // @ts-expect-error
           repository.id.toString(),
           "meta.json"
         ),
         JSON.stringify(
           omitEndsWith(
             omit(
+              // @ts-expect-error
               repository,
               "open_issues",
               "watchers",
@@ -108,6 +109,7 @@ export class Github implements Module {
   async repositories() {
     try {
       const repositories = await octokit.paginate(
+        // @ts-expect-error
         octokit.rest.repos.listForOrg,
         {
           org: "discord",
