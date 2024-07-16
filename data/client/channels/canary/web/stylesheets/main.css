@@ -27957,7 +27957,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .scrollableContainer_d0696b {
     overflow-x: hidden;
     overflow-y: scroll;
-    max-height: 50vh;
+    max-height: var(--custom-channel-textarea-text-area-max-height);
     border-radius: 8px;
     backface-visibility: hidden
 }
@@ -46579,7 +46579,8 @@ code {
 :root {
     --custom-channel-attachment-upload-spoiler-blur-radius: 44px;
     --custom-channel-attachment-upload-mini-attachment-size: 78px;
-    --custom-channel-textarea-text-area-height: 44px
+    --custom-channel-textarea-text-area-height: 44px;
+    --custom-channel-textarea-text-area-max-height: 50vh
 }
 
 :root {
@@ -46903,4 +46904,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.4c04e4d0fbd40f6bcc98.css.map*/
+/*# sourceMappingURL=12633.40821f389aa51c9f8482.css.map*/
