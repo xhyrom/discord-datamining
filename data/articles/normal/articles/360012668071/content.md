@@ -59,20 +59,21 @@
 <p>We are unable to provide refunds for items purchased from a Server Shop. If your Server Shop purchase is defective or you’re experiencing problems with the purchase, please contact us at <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a>.</p>
 <h2 id="h_01GXCJT1K30JVPCNX51X4DY8EF"><span style="font-weight: 400;"><strong>Premium App Refunds</strong><br></span></h2>
 <div class="warn-box">One-time Premium App purchases are non-refundable.</div>
-<p>If you would like to request a refund for a Premium App Subscription purchase you’ve made, you must reach out to our Support Team within <strong>5 days</strong>of your initial purchase of the subscription at <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a></p>
+<p>If you would like to request a refund for a Premium App Subscription purchase you’ve made, you must reach out to our Support Team within <strong>5 days</strong> of your initial purchase of the subscription at <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a></p>
 <p>In addition, if an app you’ve purchased a Premium App Subscription for is removed from the applicable server by us or the developer, you may also request a pro-rated refund for the remainder of the subscription within <strong>5 days</strong> of such event.</p>
 <div class="form-box">For any refund requests or issues not covered by the above, please contact the developer of the applicable app.</div>
 <h1 id="h_01GK7B09R0VYPAT6VJWV2JR9RR"><strong>How to Submit a Refund Request</strong></h1>
 <p>To submit a refund request, or for any questions related to billing, please fill out the request form using the email address associated with your Discord account <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612" target="_blank" rel="noopener noreferrer">here.</a></p>
+<p><strong>Make sure to keep the following information in mind when submitting your refund request:</strong></p>
 <ul>
-    <li>When submitting a refund request, be sure to select the product category that you’re requesting a refund for.
+    <li>Select the correct product category that you’re requesting a refund for.<br>
         <ul>
-            <li>For example, if you are requesting a refund for a Premium App Subscription, select “<strong>Premium Apps</strong>” from the <span class="wysiwyg-underline">Type of Billing Issue</span> dropdown menu.</li>
+            <li><em>For example, if you are requesting a refund for a Premium App Subscription, select Premium Apps” from the Type of Billing Issue dropdown menu.<br><br></em></li>
         </ul>
     </li>
-    <li>Also, please ensure that you provide all of the requested information relevant to the purchase you’re seeking a refund for.
+    <li>Provide all of the requested information relevant to the purchase you’re seeking a refund for.<br>
         <ul>
-            <li>Failure to provide this information within the refund eligibility period may result in a denial of your request. </li>
+            <li><em>Failure to provide this information within the refund eligibility period may result in a denial of your request. </em></li>
         </ul>
     </li>
 </ul>
