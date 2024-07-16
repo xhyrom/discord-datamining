@@ -1178,7 +1178,7 @@
   "FORM_HELP_ACTIVITY_FEED": "\"Shows a feed of activity from games and connected apps in this server.\"",
   "FORM_ACTIVITY_FEED_TOGGLE": "\"Display Activity Feed in this server\"",
   "FORM_LABEL_DEFAULT_NOTIFICATION_SETTINGS": "\"Default Notification Settings\"",
-  "FORM_HELP_DEFAULT_NOTIFICATION_SETTINGS_MOBILE": "\"\\nThis will determine whether members who have not explicitly set their notification settings receive a notification for\\nevery message sent in this server or not. We highly recommend setting this to only @mentions for a Community Server.\\n\"",
+  "FORM_HELP_DEFAULT_NOTIFICATION_SETTINGS_MOBILE": "\"\\nThis will determine whether members who have not explicitly set their notification settings receive a notification for every message sent in this server or not. We highly recommend setting this to only @mentions for a Community Server.\\n\"",
   "DELETE_SERVER_TITLE": "\"Delete '!!{name}!!'\"",
   "DELETE_SERVER_BODY": "\"Are you sure you want to delete **!!{name}!!**? This action cannot be undone.\"",
   "DELETE_SERVER": "\"Delete Server\"",
