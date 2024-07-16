@@ -27957,7 +27957,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .scrollableContainer_d0696b {
     overflow-x: hidden;
     overflow-y: scroll;
-    max-height: 50vh;
+    max-height: var(--custom-channel-textarea-text-area-max-height);
     border-radius: 8px;
     backface-visibility: hidden
 }
@@ -33458,6 +33458,292 @@ h3.improved_f017d0:after {
 
 .tooltip_a778ee {
     max-width: 224px
+}
+
+.textXsNormal_ae1fa2 {
+    color: var(--text-normal);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400
+}
+
+.textSmSemibold_ae1fa2 {
+    color: var(--text-normal);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600
+}
+
+.textEllipsis_ae1fa2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.textLink_ae1fa2 {
+    color: currentColor;
+    cursor: pointer
+}
+
+.textLink_ae1fa2:hover {
+    text-decoration: underline
+}
+
+.headerContainer_ae1fa2 {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between
+}
+
+.headerText_ae1fa2 {
+    font-weight: 700
+}
+
+.headerText_ae1fa2+div {
+    margin-left: 8px
+}
+
+.body_ae1fa2 {
+    display: flex;
+    align-items: center
+}
+
+.openGameProfile_ae1fa2 {
+    cursor: pointer
+}
+
+.openGameProfile_ae1fa2:hover {
+    text-decoration: underline
+}
+
+.assets_ae1fa2 {
+    position: relative;
+    align-self: flex-start
+}
+
+.assets_ae1fa2.fullSize_ae1fa2 {
+    max-height: 144px
+}
+
+.assets_ae1fa2>.hangStatus_ae1fa2 {
+    width: 40px;
+    height: 40px
+}
+
+.assetsLargeMask_ae1fa2.biteSize_ae1fa2,
+.assetsLargeMask_ae1fa2.panel_ae1fa2 {
+    -webkit-mask: url(/assets/3e405b86c55c8d5007fd.svg);
+    mask: url(/assets/3e405b86c55c8d5007fd.svg)
+}
+
+.assetsLargeMask_ae1fa2.fullSize_ae1fa2 {
+    -webkit-mask: url(/assets/658353e531bde7fbe174.svg);
+    mask: url(/assets/658353e531bde7fbe174.svg)
+}
+
+.assetsLargeImage_ae1fa2 {
+    -webkit-user-drag: none;
+    border-radius: var(--radius-sm);
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.assetsLargeImage_ae1fa2.spotify_ae1fa2 {
+    border-radius: var(--radius-none)
+}
+
+.assetsLargeImage_ae1fa2.biteSize_ae1fa2,
+.assetsLargeImage_ae1fa2.panel_ae1fa2 {
+    width: 60px;
+    height: 60px
+}
+
+.assetsLargeImage_ae1fa2.fullSize_ae1fa2 {
+    width: 90px;
+    height: 90px
+}
+
+.assetsLargeImage_ae1fa2.fullSize_ae1fa2.xbox_ae1fa2 {
+    width: 60px;
+    height: 60px
+}
+
+.assetsLargeImage_ae1fa2.voiceChannel_ae1fa2 {
+    width: 64px;
+    height: 64px
+}
+
+.assetsSmallImage_ae1fa2 {
+    -webkit-user-drag: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4px;
+    right: -4px
+}
+
+.assetsSmallImage_ae1fa2.biteSize_ae1fa2,
+.assetsSmallImage_ae1fa2.panel_ae1fa2 {
+    width: 20px;
+    height: 20px
+}
+
+.assetsSmallImage_ae1fa2.biteSize_ae1fa2.withoutLargeImage_ae1fa2,
+.assetsSmallImage_ae1fa2.panel_ae1fa2.withoutLargeImage_ae1fa2 {
+    width: 40px;
+    height: 40px
+}
+
+.assetsSmallImage_ae1fa2.fullSize_ae1fa2 {
+    width: 30px;
+    height: 30px
+}
+
+.assetsSmallImage_ae1fa2.fullSize_ae1fa2.withoutLargeImage_ae1fa2 {
+    width: 72px;
+    height: 72px
+}
+
+.gameIcon_ae1fa2 {
+    flex: 0 0 auto
+}
+
+.screenshareIcon_ae1fa2 {
+    width: 40px;
+    height: 40px;
+    background-image: url(/assets/7b057c07b77e5ef1edd3.svg)
+}
+
+.content_ae1fa2 {
+    overflow: hidden;
+    margin-left: 10px
+}
+
+.content_ae1fa2.biteSize_ae1fa2,
+.content_ae1fa2.panel_ae1fa2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.content_ae1fa2.noImages_ae1fa2 {
+    margin-left: 0
+}
+
+.content_ae1fa2.noImages_ae1fa2.fullSize_ae1fa2 {
+    margin-bottom: -4px
+}
+
+.content_ae1fa2.gameImage_ae1fa2.biteSize_ae1fa2,
+.content_ae1fa2.gameImage_ae1fa2.panel_ae1fa2 {
+    margin-bottom: -1px
+}
+
+.content_ae1fa2.gameImage_ae1fa2.fullSize_ae1fa2 {
+    margin-bottom: -2px
+}
+
+.activityDetails_ae1fa2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+.guildIcon_ae1fa2 {
+    border-radius: var(--radius-xs)
+}
+
+.guildDetails_ae1fa2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px
+}
+
+.voiceChannelInfo_ae1fa2 {
+    display: flex;
+    align-items: center;
+    gap: 2px
+}
+
+.timeBar_ae1fa2.biteSize_ae1fa2,
+.timeBar_ae1fa2.panel_ae1fa2 {
+    margin-top: 12px
+}
+
+.timeBar_ae1fa2.fullSize_ae1fa2 {
+    margin-top: 10px
+}
+
+.platformIcon_ae1fa2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    padding: inherit
+}
+
+.platformIconMargin_ae1fa2.biteSize_ae1fa2,
+.platformIconMargin_ae1fa2.panel_ae1fa2 {
+    margin-right: 18px
+}
+
+.icon_ae1fa2 {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    color: var(--header-secondary);
+    flex: 0 0 auto
+}
+
+.actions_ae1fa2 {
+    align-items: center;
+    display: flex
+}
+
+.actionsStreamPreview_e5819a {
+    margin-top: 10px
+}
+
+.actionsProfile_e5819a,
+.actionsProfileV2_e5819a {
+    margin-left: 20px;
+    margin-top: 0;
+    flex: 1 1 auto
+}
+
+.actionsSimplifiedProfile_e5819a {
+    margin-left: 10px;
+    margin-top: 0;
+    flex: 1 1 auto
+}
+
+.actionsActivityFeed_e5819a {
+    margin-top: 8px
+}
+
+.errorImage_e5819a {
+    height: 135px
+}
+
+.actionsWrapper_e5819a {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%
+}
+
+.actionsWrapper_e5819a .actionsSimplifiedProfile_e5819a,
+.actionsWrapper_e5819a .actionsProfile_e5819a,
+.actionsWrapper_e5819a .actionsProfileV2_e5819a {
+    margin-left: 0;
+    margin-top: 12px
 }
 
 .activity_cd74cc {
@@ -45975,7 +46261,8 @@ code {
 :root {
     --custom-channel-attachment-upload-spoiler-blur-radius: 44px;
     --custom-channel-attachment-upload-mini-attachment-size: 78px;
-    --custom-channel-textarea-text-area-height: 44px
+    --custom-channel-textarea-text-area-height: 44px;
+    --custom-channel-textarea-text-area-max-height: 50vh
 }
 
 :root {
@@ -46299,4 +46586,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.c3f1fe477e65f61bcabd.css.map*/
+/*# sourceMappingURL=12633.ae055cb48d614ff89fda.css.map*/
