@@ -1,20 +1,18 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_collectibles_shop_bundle",
-    "label": "Collectibles Shop Bundle",
+    "id": "2024-07_user_profile_past_activity",
+    "label": "User Profile Past Activity Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Shop with bundle",
-      "Treatment 2: Bundle + Use Now Non-Bundle"
+      "Treatment 1: Past activity enabled"
     ],
-    "hash": 2635331203,
+    "hash": 4175610728,
     "buckets": [
       -1,
       0,
-      1,
-      2
+      1
     ],
     "holdout": {},
     "aa_mode": false,

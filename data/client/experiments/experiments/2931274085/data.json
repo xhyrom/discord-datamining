@@ -1,20 +1,18 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_collectibles_shop_bundle",
-    "label": "Collectibles Shop Bundle",
+    "id": "2024-06_profile_react_reply",
+    "label": "Simplified Profile React Reply",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Shop with bundle",
-      "Treatment 2: Bundle + Use Now Non-Bundle"
+      "Treatment 1: Enable Status React / Reply"
     ],
-    "hash": 2635331203,
+    "hash": 2931274085,
     "buckets": [
       -1,
       0,
-      1,
-      2
+      1
     ],
     "holdout": {},
     "aa_mode": false,

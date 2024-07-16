@@ -10,7 +10,10 @@
       "Treatment 2: Lofi Vibes",
       "Treatment 3: Galaxy",
       "Treatment 4: Retro & Pirates",
-      "Treatment 5: Arcade"
+      "Treatment 5: Arcade",
+      "Treatment 6: Tide",
+      "Treatment 7: Dark Fantasy",
+      "Treatment 8: Robert"
     ],
     "hash": 3087218047,
     "buckets": [
@@ -20,7 +23,10 @@
       2,
       3,
       4,
-      5
+      5,
+      6,
+      7,
+      8
     ],
     "holdout": {},
     "aa_mode": false,

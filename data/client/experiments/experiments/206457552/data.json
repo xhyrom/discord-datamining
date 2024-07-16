@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_gdm_blocked_user_warning",
+    "label": "GDM Blocked User Warning",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show blocked user warning in GDMs as a modal",
+      "Treatment 2: Show blocked user warning in GDMs as a banner"
+    ],
+    "hash": 206457552,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "showAsModal",
+      "showAsBanner"
+    ]
+  }
+}

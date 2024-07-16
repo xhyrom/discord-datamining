@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_shop_marketing_variants",
+    "label": "Shop Marketing Variants Experiment",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control (Badge + Coachtip with headline and copy)",
+      "Treatment 1: Badge + Coachtip with headline",
+      "Treatment 2: Badge only"
+    ],
+    "hash": 644476508,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

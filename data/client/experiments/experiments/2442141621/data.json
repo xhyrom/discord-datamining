@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable the desktop app launcher in activities shelf"
+      "Treatment 1: Enable the desktop app launcher in activities shelf: On home screen, clicking activity card -> performs activity action (i.e. launch)",
+      "Treatment 2: Enable the desktop app launcher in activities shelf: On home screen, clicking activity card -> activity detail page"
     ],
     "hash": 2442141621,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "enabled",
+      "clickOnHomeActivityOpensAppDetail"
     ]
   }
 }

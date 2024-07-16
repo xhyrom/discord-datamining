@@ -1,15 +1,15 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_collectibles_shop_bundle",
-    "label": "Collectibles Shop Bundle",
+    "id": "2024-07_sky_load",
+    "label": "Sky Load",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Shop with bundle",
-      "Treatment 2: Bundle + Use Now Non-Bundle"
+      "Treatment 1: Variant 1",
+      "Treatment 2: Variant 2"
     ],
-    "hash": 2635331203,
+    "hash": 2472873852,
     "buckets": [
       -1,
       0,
@@ -19,7 +19,8 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "enabled",
+      "variant2"
     ]
   }
 }

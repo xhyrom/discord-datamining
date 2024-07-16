@@ -1,15 +1,15 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_collectibles_shop_bundle",
-    "label": "Collectibles Shop Bundle",
+    "id": "2024-06_ctp_voice_call_multiple_buckets",
+    "label": "CTP voice call - A/A test - Multiple buckets",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Shop with bundle",
-      "Treatment 2: Bundle + Use Now Non-Bundle"
+      "Treatment 1: Treatment 1",
+      "Treatment 2: Treatment 2"
     ],
-    "hash": 2635331203,
+    "hash": 967281137,
     "buckets": [
       -1,
       0,
@@ -19,7 +19,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "doSomething"
     ]
   }
 }

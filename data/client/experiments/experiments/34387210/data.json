@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_premium_soundboard_desktop_upsell",
+    "label": "Premium Soundboard Desktop Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable inline upsell only",
+      "Treatment 2: Enable inline and roadblock upsells only",
+      "Treatment 3: Enable inline and roadblock upsells with social proof"
+    ],
+    "hash": 34387210,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enableInlineUpsell",
+      "enableRoadblock",
+      "enableRoadblockWithSocialProof"
+    ]
+  }
+}

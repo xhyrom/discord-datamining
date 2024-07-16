@@ -1,15 +1,15 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_collectibles_shop_bundle",
-    "label": "Collectibles Shop Bundle",
+    "id": "2024-06_user_affinities_v2",
+    "label": "User Affinity V2",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Shop with bundle",
-      "Treatment 2: Bundle + Use Now Non-Bundle"
+      "Treatment 1: Use User Affinity V1 Model",
+      "Treatment 2: Use the new User Affinity V2 Model"
     ],
-    "hash": 2635331203,
+    "hash": 4050975723,
     "buckets": [
       -1,
       0,
@@ -19,7 +19,8 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "useV2",
+      "useV1"
     ]
   }
 }

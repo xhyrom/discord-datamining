@@ -10,7 +10,9 @@
       "Treatment 2: Jan 2024",
       "Treatment 4: Springtoons 2024",
       "Treatment 5: Shy 2024",
-      "Treatment 6: Galaxy 2024"
+      "Treatment 6: Galaxy 2024",
+      "Treatment 7: Tide 2024",
+      "Treatment 8: Robert 2024"
     ],
     "hash": 488433301,
     "buckets": [
@@ -20,7 +22,9 @@
       2,
       4,
       5,
-      6
+      6,
+      7,
+      8
     ],
     "holdout": {},
     "aa_mode": false,

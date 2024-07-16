@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_quest_home",
-    "label": "Quest Home",
+    "id": "2024-06_amd_av1_video_encoding",
+    "label": "Test how AV1 works on windows with AMD GPU",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Quest Home in Discovery"
+      "Treatment 1: AMD AV1 video encoding"
     ],
-    "hash": 1633289124,
+    "hash": 1887363890,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "signalAV1Support"
     ]
   }
 }

@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_global_discovery",
+    "label": "Global Discovery",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable mobile tab",
+      "Treatment 2: Enable discover button takeover",
+      "Treatment 3: Enable mobile tab and discover button takeover"
+    ],
+    "hash": 2456783224,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

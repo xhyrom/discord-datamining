@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_profile_engagement_ctas",
+    "label": "Simplified Profile Primary Engagement Ctas",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Message Cta on all profiles",
+      "Treatment 2: Message Cta and invite to call Cta when active in call",
+      "Treatment 3: Message Cta and persistent call Cta"
+    ],
+    "hash": 1411781330,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

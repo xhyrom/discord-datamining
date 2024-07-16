@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_hardware_hevc_nv_maxwell",
+    "label": "GPU Workarounds: NVIDIA hardware HEVC decode on Maxwell (except 970) (10de:1340, 10de:1341, 10de:1344, 10de:1346, 10de:1347, 10de:1348, 10de:1349, 10de:134b, 10de:134d, 10de:134e, 10de:134f, 10de:137a, 10de:137b, 10de:1380, 10de:1381, 10de:1382, 10de:1390, 10de:1391, 10de:1392, 10de:1393, 10de:1398, 10de:1399, 10de:139a, 10de:139b, 10de:139c, 10de:139d, 10de:13b0, 10de:13b1, 10de:13b2, 10de:13b3, 10de:13b4, 10de:13b6, 10de:13b9, 10de:13ba, 10de:13bb, 10de:13bc, 10de:13c0, 10de:13d7, 10de:13d8, 10de:13d9, 10de:13da, 10de:13f0, 10de:13f1, 10de:13f2, 10de:13f3, 10de:13f8, 10de:13f9, 10de:13fa, 10de:13fb, 10de:1401, 10de:1406, 10de:1407, 10de:1427, 10de:1617, 10de:1618, 10de:1619, 10de:161a, 10de:1667, 10de:174d, 10de:174e, 10de:179c, 10de:17c2, 10de:17c8, 10de:17f0, 10de:17f1, 10de:17fd)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: disable_accelerated_hevc_decode"
+    ],
+    "hash": 3299391845,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

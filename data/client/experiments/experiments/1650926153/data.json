@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_quest_home",
-    "label": "Quest Home",
+    "id": "2024-06_frecency_list_split",
+    "label": "Frecency List Split",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Quest Home in Discovery"
+      "Treatment 1: Split frecency emoji messages from reactions"
     ],
-    "hash": 1633289124,
+    "hash": 1650926153,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "canSplitFrecencyList"
     ]
   }
 }

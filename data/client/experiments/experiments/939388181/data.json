@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-06_premium_emoji_desktop_upsell",
+    "label": "Premium Emoji Desktop Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable new roadblock experience",
+      "Treatment 2: Enable new roadblock experience with social proof"
+    ],
+    "hash": 939388181,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "addSocialProof"
+    ]
+  }
+}
