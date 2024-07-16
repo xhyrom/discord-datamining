@@ -2721,6 +2721,7 @@
   "SIGN_IN_WITH_PASSKEY": "\"Or, sign in with passkey\"",
   "SMS_CONFIRMATION_TITLE": "\"Enter your confirmation code\"",
   "SMS_CONFIRMATION_DESCRIPTION": "\"An SMS was sent to !!{phone}!!.\"",
+  "SMS_CONFIRMATION_INPUT_ACCESSIBILITY_LABEL": "\"Confirmation Code\"",
   "PASSWORD_RECOVERY_TITLE": "\"Password Recovery\"",
   "PASSWORD_RECOVERY_EXTERNAL_LINK_DESCRIPTION": "\"To continue, open our change password page in your browser by tapping the button below.\"",
   "PASSWORD_RECOVERY_VERIFY_PHONE_TITLE": "\"Enter your confirmation code to reset your password\"",
