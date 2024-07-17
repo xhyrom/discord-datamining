@@ -24882,7 +24882,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    z-index: 9999
 }
 
 .nitroTopDividerLockBorderReversed_e8f337 {
@@ -24893,7 +24894,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .nitroTopDividerLower_e8f337 {
     height: 12px;
-    background-color: hsl(var(--premium-tier-2-purple-hsl)/.2)
+    background-color: var(--premium-tier-2-purple)
 }
 
 .image_b000dd {
@@ -26131,7 +26132,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     background: var(--background-secondary);
     border-radius: var(--radius-sm);
     height: 40px;
-    width: 150px;
+    width: 148px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26275,11 +26276,16 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     color: var(--text-warning)
 }
 
-.playIcon_f40049 {
+.primaryIcon_f40049 {
     width: 24px;
     height: 24px;
     color: var(--interactive-active);
     flex: 1
+}
+
+.primaryIconTopLevel_f40049 {
+    position: absolute;
+    z-index: 9999
 }
 
 .unavailableTooltip_f40049 {
@@ -26319,7 +26325,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .category_ceda83 {
     cursor: pointer;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    position: relative
 }
 
 .categoryIcon_ceda83 {
@@ -26398,7 +26405,12 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .sectionContainer_ca5acd {
-    display: flex
+    display: flex;
+    padding-left: 8px
+}
+
+.sectionContainerNitroLocked_ca5acd {
+    background-color: hsl(var(--premium-tier-2-purple-hsl)/.4)
 }
 
 .sectionHeader_ca5acd {
@@ -26440,7 +26452,16 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .soundRow_ca5acd {
     display: flex;
     gap: 8px;
-    margin-top: 8px
+    padding-top: 8px;
+    padding-left: 8px
+}
+
+.soundRowNitroLocked_ca5acd {
+    background-color: hsl(var(--premium-tier-2-purple-hsl)/.4)
+}
+
+.lastSoundRow_ca5acd {
+    padding-bottom: 8px
 }
 
 .settingsClickArea_ca5acd {
@@ -46289,4 +46310,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.6761b94e3714f9819f52.css.map*/
+/*# sourceMappingURL=12633.4143c285b6a809924df4.css.map*/
