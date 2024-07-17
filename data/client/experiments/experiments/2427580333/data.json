@@ -1,20 +1,18 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_simplified_profile_friending",
-    "label": "Simplified Profile Friending Experiment",
+    "id": "2024-07_profile_effects_webp",
+    "label": "Uses WEBP for Profile Effect Assets",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Original friending",
-      "Treatment 2: Improved friending"
+      "Treatment 1: Enabled"
     ],
-    "hash": 1094016555,
+    "hash": 2427580333,
     "buckets": [
       -1,
       0,
-      1,
-      2
+      1
     ],
     "holdout": {},
     "aa_mode": false,
