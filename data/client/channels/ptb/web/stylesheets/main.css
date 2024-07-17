@@ -12293,7 +12293,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     width: -moz-fit-content;
     width: fit-content;
     gap: 2px;
-    margin: 1px 2px;
+    margin: 1px 0;
+    padding: 0 2px;
     background: var(--bg-mod-faint);
     border-radius: var(--radius-xs);
     border: 1px solid var(--border-faint)
@@ -20141,7 +20142,7 @@ span.clanTag_a31c43 {
     max-width: 100%
 }
 
-.pronouns_c32acf {
+.pronounsText_c32acf {
     margin-right: 2px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -46298,4 +46299,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.aa26ecde552e9dd56b52.css.map*/
+/*# sourceMappingURL=12633.ecddd90f44c22fd77351.css.map*/
