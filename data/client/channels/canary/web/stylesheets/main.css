@@ -33214,20 +33214,10 @@ h3.improved_f017d0:after {
     text-decoration: underline
 }
 
-.headerContainer_ae1fa2 {
-    width: 100%;
-    min-width: 0;
-    margin-bottom: 8px;
+.card_ae1fa2 {
     display: flex;
-    justify-content: space-between
-}
-
-.headerText_ae1fa2 {
-    font-weight: 700
-}
-
-.headerText_ae1fa2+div {
-    margin-left: 8px
+    flex-direction: column;
+    gap: 8px
 }
 
 .body_ae1fa2 {
@@ -46299,4 +46289,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.ecddd90f44c22fd77351.css.map*/
+/*# sourceMappingURL=12633.6761b94e3714f9819f52.css.map*/
