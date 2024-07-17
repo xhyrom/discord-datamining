@@ -1,7 +1,7 @@
 name: Mine Domains
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 */3 * *"
   workflow_dispatch:
 
 permissions:

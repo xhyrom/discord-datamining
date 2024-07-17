@@ -41,7 +41,7 @@ interface Response {
 
 export class Domains implements Module {
   #apiKey: string;
-  domains = ["discord.com"];
+  domains = ["discord.com", "discord.co"];
 
   constructor(apiKey: string) {
     this.#apiKey = apiKey;
