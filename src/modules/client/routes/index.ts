@@ -63,10 +63,10 @@ export class Routes implements Module {
     );
 
     const result = await pushToGit(
-      "🗺️ Routes were updated",
-      `Routes (${formatNumber(Object.keys(routes).length)}):\n${Object.entries(
-        routes
-      )
+      "🗺️ Endpoints has been updated",
+      `Endpoints (${formatNumber(
+        Object.keys(routes).length
+      )}):\n${Object.entries(routes)
         .map(
           ([key, value]) =>
             `${key}: ${value.url}${
@@ -111,7 +111,7 @@ export class Routes implements Module {
   private async routes(
     oldRoutes: Record<string, Route>
   ): Promise<Record<string, Route> | null> {
-    const routes = await fetch("https://api.distools.xhyrom.dev/v2/routes");
+    const routes = await fetch("https://dux.xhyrom.dev/v2/endpoints");
     if (!routes.ok) {
       return null;
     }
@@ -230,6 +230,7 @@ export class Routes implements Module {
   }
 
   private async getAllowedMethods(route: string) {
+    route = route.replace(/:param/g, "param");
     const res = await fetch(`https://discord.com/api/v10${route}`, {
       method: "OPTIONS",
     });
