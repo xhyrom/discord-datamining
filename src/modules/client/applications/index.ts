@@ -146,23 +146,27 @@ export class Applications implements Module {
 
       console.log(`[applications] 429: Waiting ${retryAfter}ms`);
 
-      await sleep(retryAfter + 1000);
+      await sleep(retryAfter * 1000 + 1000);
       return await this.fetchSnowflake(id);
     }
 
     const body = await response.json();
-    if (body.code === 10002) {
+    if (body.code === 10002 || body.code === 50035) {
+      console.log(`[applications] ${id} is invalid`);
       return {
         type: "invalid",
       };
     }
 
     if (response.status === 200) {
+      console.log(`[applications] ${id} is valid`);
       return {
         type: "valid",
         data: body,
       };
     }
+
+    console.log(`[applications] ${id} is unknown ${response}`);
 
     // Probably outage
     return {
