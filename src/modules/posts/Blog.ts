@@ -13,7 +13,7 @@ import {
 import { join } from "node:path";
 import type { Module } from "..";
 import { Posts } from "./index.ts";
-import { sendBlog } from "./sender/index.ts"; 
+import { sendBlog } from "./sender/index.ts";
 
 interface RssResponse {
   rss: {
@@ -131,22 +131,22 @@ export class Blog implements Module {
     const oldPosts = structuredClone(posts);
 
     for (const post of response) {
-        // update existing post
-        const cached = posts.find(p => p.id === post.id);
-        if (cached) {
-            cached.guid = post.guid;
-            cached.link = post.link;
-            cached.title = post.title;
-            cached.pubDate = post.pubDate;
-            cached.description = post.description;
-            cached["media:content"] = post["media:content"];
-            cached["media:thumbnail"] = post["media:thumbnail"];
-            cached.body = post.body;
+      // update existing post
+      const cached = posts.find((p) => p.id === post.id);
+      if (cached) {
+        cached.guid = post.guid;
+        cached.link = post.link;
+        cached.title = post.title;
+        cached.pubDate = post.pubDate;
+        cached.description = post.description;
+        cached["media:content"] = post["media:content"];
+        cached["media:thumbnail"] = post["media:thumbnail"];
+        cached.body = post.body;
 
-            continue;
-        }
+        continue;
+      }
 
-        posts.push(post);
+      posts.push(post);
     }
 
     await writeFile(
@@ -169,8 +169,8 @@ export class Blog implements Module {
     }
 
     const result = await pushToGit(
-      `📰 Blog posts were updated`,
-      `Posts (${formatNumber(posts.length)})`,
+      `📰 Blog posts have been updated`,
+      `Posts (${formatNumber(posts.length)})`
     );
 
     if (!result?.update?.hash) return;
@@ -218,11 +218,13 @@ export class Blog implements Module {
 
       let querySelector: string | undefined = "";
 
-      if (response.url.includes("/blog/")) querySelector = dom.window.document.querySelector(
-        ".blog-post-container > div:first-child > div:nth-child(2)"
-      )?.outerHTML;
-      else if (response.url.includes("/safety")) querySelector = dom.window.document
-          .querySelector(".w-layout-grid")?.outerHTML;
+      if (response.url.includes("/blog/"))
+        querySelector = dom.window.document.querySelector(
+          ".blog-post-container > div:first-child > div:nth-child(2)"
+        )?.outerHTML;
+      else if (response.url.includes("/safety"))
+        querySelector =
+          dom.window.document.querySelector(".w-layout-grid")?.outerHTML;
 
       if (!querySelector)
         querySelector =

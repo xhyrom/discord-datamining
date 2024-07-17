@@ -77,7 +77,7 @@ export class Domains implements Module {
       );
 
       const result = await pushToGit(
-        `🌐 Domain ${domainName} was updated`,
+        `🌐 Domain ${domainName} has been updated`,
         `Subdomains (${formatNumber(
           domain.subdomains.length
         )}):\n${domain.subdomains.map((key) => `${key}`).join("\n")}`

@@ -30,7 +30,7 @@ import {
 import { Experiment } from "./Experiment.ts";
 import deepEqual from "fast-deep-equal";
 import { parse as csvParse } from "csv-parse/sync";
-import { stringify as csvStringify } from "csv-stringify/sync"; 
+import { stringify as csvStringify } from "csv-stringify/sync";
 import { send } from "./sender/index.ts";
 
 export interface Diff {
@@ -60,11 +60,13 @@ export class Experiments implements Module {
     const oldExperiments = JSON.parse(
       (await readFile(join(this.baseDir, "experiments.json"))) ?? "[]"
     ).map((e: any) => new Experiment(e));
-    const experimentsDatabase = (await readFile(join(this.baseDir, "experiments.csv"))) ?? "id,hash,label";
+    const experimentsDatabase =
+      (await readFile(join(this.baseDir, "experiments.csv"))) ??
+      "id,hash,label";
     const experimentsDatabaseCache = csvParse(experimentsDatabase, {
-        columns: true,
-        skip_empty_lines: true,
-    }) as { id: string; hash: string; label: string; }[];
+      columns: true,
+      skip_empty_lines: true,
+    }) as { id: string; hash: string; label: string }[];
     experimentsDatabaseCache.shift(); // remove id,hash,label
 
     await writeFile(
@@ -86,43 +88,40 @@ export class Experiments implements Module {
       );
 
       if (experiment.data.id) {
-        const dbEntry = experimentsDatabaseCache.find(e => e.hash === experiment.data.hash.toString());
+        const dbEntry = experimentsDatabaseCache.find(
+          (e) => e.hash === experiment.data.hash.toString()
+        );
         if (!dbEntry) {
-            experimentsDatabaseCache.push({
-                label: experiment.data.label ?? "",
-                id: experiment.data.id,
-                hash: experiment.data.hash.toString()
-            });
+          experimentsDatabaseCache.push({
+            label: experiment.data.label ?? "",
+            id: experiment.data.id,
+            hash: experiment.data.hash.toString(),
+          });
 
-            continue;
+          continue;
         }
-        
+
         dbEntry.label = experiment.data.label ?? "";
         dbEntry.id = experiment.data.id;
         dbEntry.hash = experiment.data.hash.toString();
       }
     }
 
-    const newExperimentsDatabase = [
-      ["id", "hash", "label"]
-    ];
+    const newExperimentsDatabase = [["id", "hash", "label"]];
 
     experimentsDatabaseCache.sort((a, b) => a.id.localeCompare(b.id));
 
     for (const dbEntry of experimentsDatabaseCache) {
-      newExperimentsDatabase.push([ dbEntry.id, dbEntry.hash, dbEntry.label ]);
+      newExperimentsDatabase.push([dbEntry.id, dbEntry.hash, dbEntry.label]);
     }
 
     await writeFile(
-      join(
-        this.baseDir,
-        "experiments.csv"
-      ),
+      join(this.baseDir, "experiments.csv"),
       csvStringify(newExperimentsDatabase)
     );
 
     const result = await pushToGit(
-      `🧪 Experiments were updated`,
+      `🧪 Experiments have been updated`,
       `Experiments (${formatNumber(experiments.length)}):\n${experiments
         .map((experiment) => {
           if (!experiment.data.label && !experiment.data.id)

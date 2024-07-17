@@ -60,7 +60,7 @@ export class Strings implements Module {
     );
 
     const result = await pushToGit(
-      `📃 Strings were updated`,
+      `📃 Strings have been updated`,
       `Strings - ${formatNumber(Object.keys(strings).length)}`
     );
 

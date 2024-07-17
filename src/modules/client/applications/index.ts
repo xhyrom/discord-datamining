@@ -89,7 +89,7 @@ export class Applications implements Module {
 
     await git.pull(); // one more time to make sure we have the latest changes
     await pushToGit(
-      "📱 Applications were updated",
+      "📱 Applications have been updated",
       `${formatNumber(applications.length)} valid, ${formatNumber(
         invalidIds.size
       )} invalid`,
