@@ -10557,6 +10557,7 @@
   "EMOJI_POPOUT_PUBLIC_SERVER": "\"Discoverable Server\"",
   "EMOJI_POPOUT_PRIVATE_SERVER": "\"Invite-only server\"",
   "EMOJI_POPOUT_STANDARD_EMOJI_DESCRIPTION": "\"A default emoji. You can use this emoji everywhere on Discord.\"",
+  "EMOJI_POPOUT_APPLICATION_DESCRIPTION": "\"This emoji is from the {appName} app\"",
   "TEST_NEWLINES_KEY": "\"\\nThis is a test string, let's see if we can preserve newlines.\\n\\n  \"",
   "POLLS_MARKETING_EASTER_EGG_PIZZA_EMOJI_DESCRIPTION": "\"{emojiName} (without pineapple)\"",
   "POLLS_MARKETING_EASTER_EGG_LOADING_LINE": "\"Statistically speaking, the majority of Discord users believe that pineapple and pizza is the most cursed food combo. Thank our Polls feature launch for this Discord Fact™.\"",
