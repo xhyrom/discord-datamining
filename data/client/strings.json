@@ -561,7 +561,7 @@
   "APP_LAUNCHER_ACTIVITY_NOT_AVAILABLE_IN_THREAD": "\"Activities cannot be launched in Threads at this time\"",
   "APP_LAUNCHER_GLOBAL_SEARCH_COACHMARK_TITLE": "\"Find New Apps\"",
   "APP_LAUNCHER_GLOBAL_SEARCH_COACHMARK_DESCRIPTION": "\"Discover games, music, and other fun things to do with friends!\"",
-  "APP_LAUNCHER_USE_APP_TOOLTIP": "\"Use an App\"",
+  "APP_LAUNCHER_ENTRYPOINT_BUTTON_ARIA_LABEL": "\"Apps\"",
   "APP_LAUNCHER_APP_CARD_ARIA_LABEL": "\"{applicationName} {applicationDescription}\"",
   "APP_LAUNCHER_SEND_COMMAND_ARIA_LABEL": "\"Send {commandName}\"",
   "APP_LAUNCHER_ACTIVITY_ITEM_SELECTED_BUTTON_ARIA_LABEL": "\"{buttonText} {applicationName}\"",
