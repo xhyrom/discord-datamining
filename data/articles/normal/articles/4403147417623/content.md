@@ -50,7 +50,6 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24857019309591" width="398" height="258"></p>
 <p>Once you’re happy with how it looks, tap on <strong>Apply</strong> to save changes.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24857019313303" width="398" height="401"></p>
-<p>Once you’re happy with how it looks, tap on <strong>Apply</strong> to save changes.</p>
 <h2 id="h_01HAWGZQYY8B5KQH1FJ2N2VJ01"><strong>Avatar Decorations</strong></h2>
 <h3 id="h_01HAWGZQYYZB9RS5CGB0SF7G8B">
     <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> members can purchase and apply </span><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a><span style="color: #434343;" data-darkreader-inline-color=""> to their profile’s avatar.</span>
