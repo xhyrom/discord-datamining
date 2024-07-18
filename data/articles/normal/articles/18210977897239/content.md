@@ -1,10 +1,9 @@
 <p id="docs-internal-guid-caa37f7c-7fff-e8d4-d95a-cee86575f377">Discord safety alerts are part of our Teen Safety Assist initiative to help make Discord a safer and more private place for teens to hang out online. These safety alerts are default enabled for teens globally. No action is needed to turn safety alerts on for teens. </p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/18210977897239#h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/18210977897239#docs-internal-guid-9703b95f-7fff-7d5c-79aa-1353c1ad3554">Safety alerts in chat</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/18210977897239#h_01HD4T7W175WSNRAA92JG3GMBG">Future safety alerts</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/18210977897239#h_01HD4T7W17V4WYW74FVP5B9GQ9">Frequently Asked Questions</a></li>
+    <li><a href="#h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</a></li>
+    <li><a href="#h_01HD4T7W175WSNRAA92JG3GMBG">Future safety alerts</a></li>
+    <li><a href="#h_01HD4T7W17V4WYW74FVP5B9GQ9">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</h1>
 <p>1. When a teen receives direct messages (DMs) from a sender for the first time, Discord will detect if a safety alert should be sent to the teen for this DM. If detected, Discord will notify the teen with a safety alert encouraging them to double check if they want to reply, and will provide links to block the user or view more safety tips to safeguard themselves. </p>
@@ -22,28 +21,6 @@
 <p>The safety alert feature is enabled by default for all teens. </p>
 <p>The safety alert will override a teen’s server privacy defaults within <strong>User Settings &gt; Privacy &amp; Safety</strong>. If a teen has <strong>Allow direct messages from server members</strong> enabled, they could still receive these safety alerts. </p>
 <p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;" data-darkreader-inline-bgcolor=""><span id="docs-internal-guid-ab61a57f-7fff-3f31-3932-cc89404c5b79" style="background-color: #d9d9d9;" data-darkreader-inline-bgcolor=""><img src="https://support.discord.com/hc/article_attachments/21552617178903" width="703" height="455"></span></span></p>
-<h1 id="docs-internal-guid-9703b95f-7fff-7d5c-79aa-1353c1ad3554">Safety alerts in chat</h1>
-<p>1. When a teen user receives a message that we detect is potentially unwanted, a safety alert in chat will pop up to offer protections either to take action (i.e. block) or to read safety tips. This alert provides an additional layer of protection based on the message(s) received.</p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-ec2b9baa-7fff-d8c8-8ca9-f357833e4076"><img src="https://support.discord.com/hc/article_attachments/21552617191319" width="702" height="511"></span></p>
-<p>2. Teen users who select <strong>Take action</strong> will be prompted to either block the sender, report the sender or contact a third-party support provider. </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-8d50b556-7fff-46ba-4cc7-2a8694a331e9"><img src="https://support.discord.com/hc/article_attachments/21552572331799" width="682" height="496"></span></p>
-<p>3. If the teen blocks the sender, they will see a confirmation that the sender is blocked. </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-f44500af-7fff-a3bb-9ebe-143f98176b6f"><img src="https://support.discord.com/hc/article_attachments/21552572339351" width="681" height="496"></span></p>
-<p>4. If the teen reports the sender, they will see a confirmation that the sender is reported. </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-1f0aaf23-7fff-ec6c-ce6c-fb67930c3789"><img src="https://support.discord.com/hc/article_attachments/21552572349207" width="693" height="504"></span></p>
-<p>5. For teens in the United States, they will have the option to contact <a href="https://support.discord.com/hc/en-us/articles/7925648993943" target="_blank" rel="noopener noreferrer">Crisis Text Line</a>. For teens in other international English-prominent regions, they will be prompted to reach out to <a href="https://nofiltr.org/" target="_blank" rel="noopener noreferrer">NoFiltr</a>, a community that empowers young people to safely navigate online. </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-dc59daf9-7fff-a95b-c414-6a8cd0cbeb95"><img src="https://support.discord.com/hc/article_attachments/21552572357143" width="693" height="505"></span></p>
-<p>6. When a teen user receives the initial safety alert in chat and selects <strong>Read safety tips</strong>, they will be directed to our top safety tips to protect themselves. </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-b49558d6-7fff-fec8-d930-e6bec7db822b"><img src="https://support.discord.com/hc/article_attachments/21552617225623" width="695" height="506"></span></p>
-<p>7. If the teen user dismissed the initial safety alert in chat, they can still access the safety tools by tapping on the <strong>shield icon</strong> located in the upper right-hand corner. </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-36902223-7fff-81b0-b6a2-92f05d67f06b"><img src="https://support.discord.com/hc/article_attachments/21552572374167" width="534" height="329"><span id="docs-internal-guid-f57ae393-7fff-9463-3bd0-94f727c1349b">   <img src="https://support.discord.com/hc/article_attachments/21552617236759" width="257" height="345"></span></span></p>
-<p>8. If another unwanted message is detected, the teen user will receive another safety alert in the chat, reminding them to protect themselves with the safety tools in the upper right-hand corner. </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-612f7b23-7fff-54ed-30d3-6310de6cc42b"><img src="https://support.discord.com/hc/article_attachments/21552617240983" width="707" height="514"></span></p>
-<p id="docs-internal-guid-a6ea3b72-7fff-6b3a-51a8-72e46f3e3e09">For some messages that we detect may be unwanted, teen users will receive the safety alert in chat via a banner at the top of their screen. Teen users could receive this banner style alert or the full screen alert (shown above), depending on the context of the message. This will guide them to the same safety tools or a shortcut option to block the sender.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21552572393751" width="778" height="565"></p>
-<h3 id="docs-internal-guid-99ca16d5-7fff-1f57-d0c3-adc2e767a996"><span style="color: #434343;" data-darkreader-inline-color="">Safety alerts in chat are currently available globally, but will be in English. This is also enabled by default for all teen users in English-prominent regions. </span></h3>
-<p id="h_01HQK3WQCQSVR0PHWT26DMQ615"><span style="color: #434343;" data-darkreader-inline-color="">Teen users can manage these alerts in their Privacy settings. Simply go to <strong>User Settings</strong> ⚙️ &gt; <strong>Privacy &amp; Safety</strong> , then toggle the "<strong>Show alerts in direct messages</strong>" switch to on or off.</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21624165208855" width="586" height="105"></p>
 <h1 id="h_01HD4T7W175WSNRAA92JG3GMBG">Future safety alerts</h1>
 <p>Discord will be launching additional safety alerts for teens and adults that focus on protecting against additional harm types. Check our <a href="https://discord.com/safety-news" target="_blank" rel="noopener noreferrer">Safety News Hub</a> for the latest information. </p>
 <h1 id="h_01HD4T7W17V4WYW74FVP5B9GQ9">Frequently Asked Questions</h1>
