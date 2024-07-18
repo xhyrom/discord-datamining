@@ -3,7 +3,7 @@
         <div class="blog-post-content w-richtext">
             <p><em>Here's the Discord Changelog from May 13, 2024. You can also find the most recent Changelog in the Discord app under </em><strong><em>Settings &gt; What's New</em></strong><em>.</em></p>
             <figure style="max-width:2000px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65ce55fc7a104bbdcf043417_Untitled%20(1).png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65ce55fc7a104bbdcf043417_Untitled%20(1).png" loading="lazy" alt=""></div>
             </figure>
             <figure style="max-width:1921pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663e9c0869122880b29bc14b_BDAY_Changelog.png" loading="lazy" alt="Discord's Clyde logo in a gold sticker with &quot;9th birthday&quot; in decorative text, over party streamers, confetti, and balloons"></div>

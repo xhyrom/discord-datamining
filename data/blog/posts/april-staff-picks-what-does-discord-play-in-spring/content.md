@@ -12,13 +12,13 @@
         <div class="blog-post-content w-richtext">
             <p>‍</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301c84a70e868c8f8874df_W_cPFdJQrBQrP8AQQkV8Eh2CKb6GH3i4oK0nYJGmWwmL_9irOpFrhCTcmvjUxe09h7q0hbomZut2iH6AqBFBAV1Wm00nV3EvLs47X_voRMKVoLmk4DqJ73ZwSdJf2-te-t-1-noNyEMrG08KZI4HCz4.png" alt="A stylized nameplate that says “Alex.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate.‍"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301c84a70e868c8f8874df_W_cPFdJQrBQrP8AQQkV8Eh2CKb6GH3i4oK0nYJGmWwmL_9irOpFrhCTcmvjUxe09h7q0hbomZut2iH6AqBFBAV1Wm00nV3EvLs47X_voRMKVoLmk4DqJ73ZwSdJf2-te-t-1-noNyEMrG08KZI4HCz4.png" loading="lazy" alt="A stylized nameplate that says “Alex.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate.‍"></div>
             </figure>
             <h3><strong>Nice to see you again, friend! What’s your Staff Pick for April?</strong></h3>
             <p>2024 started with a few months of quality but long and narrative-heavy RPG releases (Infinite Wealth, FFVII Rebirth, Dragon’s Dogma 2, etc.) so I’m recommending something to serve as a little respite before the RPG releases pick up again.&nbsp;</p>
             <p>My Staff Pick for April is <strong>Crypt of the Necrodancer </strong>or its Zelda-themed spinoff, <strong>Cadence of Hyrule</strong>. Both are roguelikes but make the pressure of potentially dying and losing all your progress better because of their tracks by Danny Baranowsky (The Binding of Isaac, Super Meat Boy).</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6630159c9589176cb2aebc70_eOzSzaPkkfhGxV8kDp0hbllfebxZMk4Wu9YK7GRq2ESRriRaf6D3VjtFFwKwA-etd0TVXNYzA869mzCg4wWzeZidl3WcPVGtoKEWxZUELWwmA6B3RTmD7cSlmr4keH4a9hb2JI82f93uI88O6cGlJ_A.png" alt="A screenshot from Crypt of the Necrodancer"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6630159c9589176cb2aebc70_eOzSzaPkkfhGxV8kDp0hbllfebxZMk4Wu9YK7GRq2ESRriRaf6D3VjtFFwKwA-etd0TVXNYzA869mzCg4wWzeZidl3WcPVGtoKEWxZUELWwmA6B3RTmD7cSlmr4keH4a9hb2JI82f93uI88O6cGlJ_A.png" loading="lazy" alt="A screenshot from Crypt of the Necrodancer"></div>
             </figure>
             <p><a href="https://discord.com/blog/introducing-staff-picks-what-discords-been-playing-lately#heading-5">As I noted last month</a>, a game’s soundtrack contributes heavily to if a game makes my list. But Crypt of the Necrodancer and Cadence of Hyrule take “immersive soundtrack” to another level. In addition to your usual dungeon-crawling fare, these roguelikes are part rhythm game and require you to move and attack to the beat of the BGM for score multipliers and stronger attacks.&nbsp;</p>
             <p>A sequel, <strong>Rift of the Necrodancer</strong>, was announced one year ago today and is slated for release sometime in 2024. Consider adding one or both of these games to your regular rotation as a palate cleanser between intense RPGs and to gear up for Rift’s release later this year!</p>
@@ -31,12 +31,12 @@
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301cbdf7c429e911c33959_7U097cYsdB7Cy-Ix0RVvydG4-r-VGB5e7MPoKMCHjtc4qIW5xdtXsy3SUOVxuokd_tR-o9BAb-eMW81JmP_JBLjmGNY4c9chlGy2XTPiTnpWAsOnMT9wvanT6lR7zs5aBEBvavollDsr3a_s9m37nLQ.png" alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301cbdf7c429e911c33959_7U097cYsdB7Cy-Ix0RVvydG4-r-VGB5e7MPoKMCHjtc4qIW5xdtXsy3SUOVxuokd_tR-o9BAb-eMW81JmP_JBLjmGNY4c9chlGy2XTPiTnpWAsOnMT9wvanT6lR7zs5aBEBvavollDsr3a_s9m37nLQ.png" loading="lazy" alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
             </figure>
             <h3>‍<strong>Nice to see you again, friend! What’s your Staff Pick for April?</strong></h3>
             <p>I’ve been playing a lot of <strong>Tabletop Simulator</strong> lately! I’ve had a bit more time to get friends together on Discord this month, and we’ve really been enjoying having chill nights. People can drop in or out as needed, and there are thousands of mods you can add to the game.&nbsp;</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663015cb8d87410f988c92ca_0rxiXfuyU2gXau5BntNFjkH4TucF3HEL-2qnbuEHNrkHkEY4W3mbXX_VxFOeXNZEQRhREPPGu1KyLvsq4MZelnQ4F4o32fpP2Cg8fYr1ub90L-G6gj9v-ABFBzYWWJPGXGNV8U7E_oogHQN_tFmTBtI.png" alt="A screenshot from Tabletop Simulator."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663015cb8d87410f988c92ca_0rxiXfuyU2gXau5BntNFjkH4TucF3HEL-2qnbuEHNrkHkEY4W3mbXX_VxFOeXNZEQRhREPPGu1KyLvsq4MZelnQ4F4o32fpP2Cg8fYr1ub90L-G6gj9v-ABFBzYWWJPGXGNV8U7E_oogHQN_tFmTBtI.png" loading="lazy" alt="A screenshot from Tabletop Simulator."></div>
             </figure>
             <p>Sometimes the table gets flipped, but at least I don’t have to clean it. If you want a tabletop card game that’s already set up, <strong>Puzzline</strong> is also reasonably chill, but with a smidge of chaos.</p>
             <h3><strong>Around the United States, spring is in full bloom! Do your gaming habits ever change with the seasons?&nbsp;</strong></h3>
@@ -50,12 +50,12 @@
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301d59d0c1545ed838df33_2bIk_7eKIivFwu-CUg6v83wx3sKAiQybWQaKKsQOIk0TR52rjcpr9L7WMm0Mb-8HsZtvSPNx41WjJeMc4J_D6xox8EBCJZFVrAGyGq2Ha5AZH7RYVq1kBKZDrgVqPmdqUHD4AvAD9BeNbdFlKHGXAuA.png" alt="A stylized nameplate that says “Matt.”"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301d59d0c1545ed838df33_2bIk_7eKIivFwu-CUg6v83wx3sKAiQybWQaKKsQOIk0TR52rjcpr9L7WMm0Mb-8HsZtvSPNx41WjJeMc4J_D6xox8EBCJZFVrAGyGq2Ha5AZH7RYVq1kBKZDrgVqPmdqUHD4AvAD9BeNbdFlKHGXAuA.png" loading="lazy" alt="A stylized nameplate that says “Matt.”"></div>
             </figure>
             <h3><strong>Nice to see you again, friend! What’s your Staff Pick for April?</strong></h3>
             <p>I’m going opposite of Alex and awarding my pick to <strong>Like a Dragon: Infinite Wealth</strong> since I’m nearly done and have 75 hours in it. Q1 of 2024 has been awesome for RPG’s. If you enjoy turn-based JRPGs but never dipped your toe in the Yakuza-filled waters, you should absolutely give this game a try.&nbsp;</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663016db015c3fee015d0559_pBfeQsbA1VxzwJhHCT1Y-hSIXRpE_7JK8ADe-X630YxSczWzSpf02qdKtqzVLCZoANLYILn_XyIjYzBSum_Tn6tHlJyooNIqCOcFCCPm32GzeZXRh9xRpEIITiETSGkUzX1f8zY1nFJccM8ZPfjXdSc.png" alt="A screenshot from Like a Dragon: Infinite Wealth."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663016db015c3fee015d0559_pBfeQsbA1VxzwJhHCT1Y-hSIXRpE_7JK8ADe-X630YxSczWzSpf02qdKtqzVLCZoANLYILn_XyIjYzBSum_Tn6tHlJyooNIqCOcFCCPm32GzeZXRh9xRpEIITiETSGkUzX1f8zY1nFJccM8ZPfjXdSc.png" loading="lazy" alt="A screenshot from Like a Dragon: Infinite Wealth."></div>
             </figure>
             <p>It’s the second game in the Like a Dragon Series which takes place after the original Yakuza series and it’s bonkers. 90% of my time has been chasing every side quest they throw my way because they’re hysterical and very well made. Easily a contender for my GOTY.&nbsp;&nbsp;</p>
             <h3><strong>Around the United States, spring is in full bloom! Do your gaming habits ever change with the seasons?&nbsp;</strong></h3>
@@ -85,13 +85,13 @@
         <div class="blog-post-content w-richtext">
             <p>‍</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301d93fd007aef87a1a5e4_gpwHS3tow7ITUkCEU-2N1Tl2QGSKXVGK6tCrmt7pPQA9XR7ieUxCqwZx_Pvy_357IXgiTN7GXFi018XYiMaKNm2JEZewPi45WQAvVQsPHphvGHLonBwUi0ZZe2IqsA7HsvCgWfjzwb9Voqmg4mzD2gU.png" alt="“Cody.”&nbsp;‍"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301d93fd007aef87a1a5e4_gpwHS3tow7ITUkCEU-2N1Tl2QGSKXVGK6tCrmt7pPQA9XR7ieUxCqwZx_Pvy_357IXgiTN7GXFi018XYiMaKNm2JEZewPi45WQAvVQsPHphvGHLonBwUi0ZZe2IqsA7HsvCgWfjzwb9Voqmg4mzD2gU.png" loading="lazy" alt="“Cody.”&nbsp;‍"></div>
             </figure>
             <h3>‍<strong>Nice to see you again, fri- oh wait, you’re me. So what’s my Staff Pick for April?</strong></h3>
             <p>My pick would be <strong>Rock Band 4 </strong>as<strong> </strong>I’ve been reliving the days of using my plastic instruments single day. I’ve gathered up a library of about 1200 songs since Rock Band 1 was first released in 2007. Even though RB4 was released in 2015, it was still releasing new songs every week up until January of this year!&nbsp;</p>
             <p>Now that there’s nothing new coming out every single week, I’ve been instead diving into the years of DLC that I completely missed. It’s always stuff that I heard on the radio ages ago and never quite knew the title to, I see it in the Rock Band store and I’m like “OOOHHH!!!” and buy it immediately.&nbsp;</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663017dfab658da72f90bbb1_iZaJl0I7NGNAGv0hTHOXwIoSAy0WwzFPV7mwSTetH5P32SiBpPZR_5JEp3sBcZkqjvk7ap19xBCtoUVX-5vnVOH5mLzUrcJiZ_3DajJ32evJops5FtoEcj4Ks-rzCemg-acAJIwVpk2P6Og9lyfWfIg.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663017dfab658da72f90bbb1_iZaJl0I7NGNAGv0hTHOXwIoSAy0WwzFPV7mwSTetH5P32SiBpPZR_5JEp3sBcZkqjvk7ap19xBCtoUVX-5vnVOH5mLzUrcJiZ_3DajJ32evJops5FtoEcj4Ks-rzCemg-acAJIwVpk2P6Og9lyfWfIg.png" loading="lazy" alt=""></div>
             </figure>
             <p>Rather than being an irresponsible teenager playing Rock Band instead of focusing on homework, I’m now a somewhat responsible adult whose job includes getting to talk about Rock Band *AS* my work. Take THAT, rude high school English teacher!&nbsp;</p>
             <p>Somewhat related — I’ve also been modding my Rock Band guitars to have slick new strum bars with mechanical switches (and it LIGHTS UP). If you have an existing Rock Band 4 guitar that you wish had a more responsive strum bar, I can’t recommend the <a href="https://www.bytearts.com/store/strum-fix-plus-4">Strum Fix Plus 4</a> enough. (Did I mention it lights up?)</p>

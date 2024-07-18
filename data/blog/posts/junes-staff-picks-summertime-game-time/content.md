@@ -10,12 +10,12 @@
     <div id="heading-2" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de537e0653034533c05c1_AD_4nXe0g745qa3Fjh0qdCfHEnCG82de_8emUZY1lk1NNY5TbbDtmEFhPNs816vi92ZBIfHSm52piu71OeZDaf0fRS1bhiOldP8yHzikBSHUf5ihjwyrozbezmsnlnFGdBbUEMNj4YXi3BL9c8ExwyrTYyNvbPU.png" alt="A stylized nameplate that says “Matt.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de537e0653034533c05c1_AD_4nXe0g745qa3Fjh0qdCfHEnCG82de_8emUZY1lk1NNY5TbbDtmEFhPNs816vi92ZBIfHSm52piu71OeZDaf0fRS1bhiOldP8yHzikBSHUf5ihjwyrozbezmsnlnFGdBbUEMNj4YXi3BL9c8ExwyrTYyNvbPU.png" loading="lazy" alt="A stylized nameplate that says “Matt.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
             </figure>
             <h3><strong>It’s officially summertime! What have you been playing in the last month?&nbsp;</strong></h3>
             <p>Uhhh.. it’s probably nothing I mentioned last month. <strong>Nine Sols</strong> carried over into June and I highly recommend it if you’re looking to scratch that Silksong-shaped itch. Other than that, I’m farming like crazy in Elden Ring to finally beat Mohg which gets me into the DLC club.</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de538a834ca93c34036fb_AD_4nXcEstUfp_GM2ch5gQc7QeFG3PXIIVEf6etE_ngna7zE9_TTGv4fZV8fdZ26oy6Pi7WyRAvrSZbZyKSgJlVoHNFY1x-fjU3RXAi8qgDdFb8HOsTwUehGTtA6mFkJ7LwhmTT8xL_xErb2gbpvp1z0IByjhs3C.png" alt="A screenshot from the game “Nine Sols.”&nbsp;"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de538a834ca93c34036fb_AD_4nXcEstUfp_GM2ch5gQc7QeFG3PXIIVEf6etE_ngna7zE9_TTGv4fZV8fdZ26oy6Pi7WyRAvrSZbZyKSgJlVoHNFY1x-fjU3RXAi8qgDdFb8HOsTwUehGTtA6mFkJ7LwhmTT8xL_xErb2gbpvp1z0IByjhs3C.png" loading="lazy" alt="A screenshot from the game “Nine Sols.”&nbsp;"></div>
                 <figcaption>Nine Sols (<a href="https://store.steampowered.com/app/1809540/Nine_Sols/">Steam</a>)</figcaption>
             </figure>
             <h3><strong>We’ve made it through June’s huge slew of gaming news! Did any new game announcements catch your eye?</strong></h3>
@@ -27,12 +27,12 @@
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de5b3fe820ede479cf901_AD_4nXcapO3r3C6eRD8B3eL2wlu-9a0r5lIUooj5WL4rfcQSoqtGQI_5yoB3tjgGKRl03YzEHAugQVZEe6IRRqwUREXl18OpmwDzBwKgNRn4d1S6bfHssxtbkUaJ7hcbcSOv5gVTq5RO70rq95GA39z9_F95tREE.png" alt="A stylized nameplate that says “Alex.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de5b3fe820ede479cf901_AD_4nXcapO3r3C6eRD8B3eL2wlu-9a0r5lIUooj5WL4rfcQSoqtGQI_5yoB3tjgGKRl03YzEHAugQVZEe6IRRqwUREXl18OpmwDzBwKgNRn4d1S6bfHssxtbkUaJ7hcbcSOv5gVTq5RO70rq95GA39z9_F95tREE.png" loading="lazy" alt="A stylized nameplate that says “Alex.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
             </figure>
             <h3><strong>It’s officially summertime! What have you been playing in the last month?&nbsp;</strong></h3>
             <p><strong>Paper Mario: The Thousand-Year Door</strong> (Switch Remake), catching up to <strong>Dragon’s Dogma 2</strong>, <strong>Eiyuden Chronicle: Hundred Heroes</strong>, and <strong>Final Fantasy XIV</strong>. I’m actually always playing FFXIV, but never thought to mention it. Mentioning it now since the new expansion, Dawntrail, is coming out on June 28th for early access. Nothing else too surprising here though, if you’ve been keeping up with the blog.</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de5f3948fbae90419d12f_AD_4nXcx5dV16Pt2eBFfK8u4m_FGJdE50BuqCO2ShJyzVDrrsdL-BOxBis8iNcxfHOAdXq43wGoRYmrAn9d4_EcvUW22XoDe0De3gvnzsCYyUeFvBbYnwZ4QIWbA8AvkA7B1DDwImhBpr8RDAp4DbUfzvm_v4Mci.png" alt="A screenshot from the game “Eiyuden Chronicle: Hundred Heroes.”&nbsp;"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de5f3948fbae90419d12f_AD_4nXcx5dV16Pt2eBFfK8u4m_FGJdE50BuqCO2ShJyzVDrrsdL-BOxBis8iNcxfHOAdXq43wGoRYmrAn9d4_EcvUW22XoDe0De3gvnzsCYyUeFvBbYnwZ4QIWbA8AvkA7B1DDwImhBpr8RDAp4DbUfzvm_v4Mci.png" loading="lazy" alt="A screenshot from the game “Eiyuden Chronicle: Hundred Heroes.”&nbsp;"></div>
                 <figcaption>Eiyuden Chronicle: Hundred Heroes (<a href="https://store.steampowered.com/app/1658280/Eiyuden_Chronicle_Hundred_Heroes/">Steam</a>)</figcaption>
             </figure>
             <p>Some of my friends at work also recently got me into the Nancy Drew games by HeR Interactive, which are point-and-click mystery adventures with a cult-like following. The 34th installment, Nancy Drew: Mystery of the Seven Keys, just came out in May and is the first of the series that has free navigation instead of point-and-click. I picked that one up and also played Nancy Drew: The Phantom of Venice.</p>
@@ -65,12 +65,12 @@
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de6e7e4841b24dce2d2fb_AD_4nXenl5oYbLUfYPHYfD_ffv_eRPthg-JvEXaltgVppBToKjA-X4NhgrdLTepjrS0XjXOydAvRscKZfNDHb6R9_kfhbSUb11s5FtznS-eRRcVdQYhmSBkLRzerQbWeGYLaGABCjFm8GIqXTJO1hdeKDXdQqSRC.png" alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de6e7e4841b24dce2d2fb_AD_4nXenl5oYbLUfYPHYfD_ffv_eRPthg-JvEXaltgVppBToKjA-X4NhgrdLTepjrS0XjXOydAvRscKZfNDHb6R9_kfhbSUb11s5FtznS-eRRcVdQYhmSBkLRzerQbWeGYLaGABCjFm8GIqXTJO1hdeKDXdQqSRC.png" loading="lazy" alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
             </figure>
             <h4><strong>It’s officially summertime! What have you been playing in the last month?&nbsp;</strong></h4>
             <p>It’s been a party! Well, specifically, there's been a lot of <strong>Super Mario Party</strong> and <strong>Pummel Party</strong>. I think my friends and I are just in the mood to test our minigame skills and the strength of our friendships.</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de6ff2e7d8a9021388ad2_AD_4nXcrHZOTMEQoYA6t8pNSOQJeoHVZtjFkAKx8IDdaTUvd198orug8dLjkublgPv0Didgtgo7FBrb7CiKCD2qVIQ9IFJbTNZa_kcAVWA9Gi0u53mCI3-M1JzeEp2doq4KlasQOiM0WNV22NVDgTZ8afayG9eE.png" alt="A screenshot from the game “Pummel Party.”&nbsp;"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de6ff2e7d8a9021388ad2_AD_4nXcrHZOTMEQoYA6t8pNSOQJeoHVZtjFkAKx8IDdaTUvd198orug8dLjkublgPv0Didgtgo7FBrb7CiKCD2qVIQ9IFJbTNZa_kcAVWA9Gi0u53mCI3-M1JzeEp2doq4KlasQOiM0WNV22NVDgTZ8afayG9eE.png" loading="lazy" alt="A screenshot from the game “Pummel Party.”&nbsp;"></div>
                 <figcaption>Pummel Party (<a href="https://store.steampowered.com/app/880940/Pummel_Party/">Steam</a>)</figcaption>
             </figure>
             <h3><strong>We’ve made it through June’s huge slew of gaming news! Did any new game announcements catch your eye?</strong></h3>
@@ -82,13 +82,13 @@
     <div id="heading-5" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de74d2e7d8a902138e138_AD_4nXftJNykaPn7qhrdXkb4SR8YLMbWLfm9ole-ocnyCh4fX4HMpSVmR_J0iW6XgADq3_4exUCN4S6IhIS77v2kWmbSm72tPNoa8cSGCnrrFV9OLg9avJp_To7a6QhgohiAd2GSJz71A0X8-r3JpvwZ5KeNyLA.png" alt="A stylized nameplate that says “Cody.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de74d2e7d8a902138e138_AD_4nXftJNykaPn7qhrdXkb4SR8YLMbWLfm9ole-ocnyCh4fX4HMpSVmR_J0iW6XgADq3_4exUCN4S6IhIS77v2kWmbSm72tPNoa8cSGCnrrFV9OLg9avJp_To7a6QhgohiAd2GSJz71A0X8-r3JpvwZ5KeNyLA.png" loading="lazy" alt="A stylized nameplate that says “Cody.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
             </figure>
             <h3><strong>It’s officially summertime! What have you been playing in the last month?&nbsp;</strong></h3>
             <p>If you read the last Staff Picks I was a part of (over here), you might remember I was playing a whole lotta Rock Band 4. Now, I’m playing mostly the same type of game, except in Fortnite.&nbsp;&nbsp;</p>
             <p>A new season of <strong>Fortnite Festival</strong>’s kicked off and I’ve been grinding my Festival Pass nearly every day since. They seem to have also boosted the amount of XP you get from playing Festival in general, so all my Fortnite Festival playing has also contributed to my main Fortnite Battle Pass.&nbsp;</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de7699cd4c9610fe7d913_AD_4nXd7Ir5IErmBr8M_Rugb4UA1BWfbaWNuKlAWLcF2ZIpLPTRM0z8mfbvjd_QtYmbE3Oa2_JUKXOsom8WWisr-z-gd9JnLSPX7tDOiOIxQtrbKZFjYH3PdrHhTiNGzc3LKa6Lg6cD29hr3O68Uq3Hxuw4AQyTa.png" alt="A screenshot from the game “Fortnite Festival.”"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667de7699cd4c9610fe7d913_AD_4nXd7Ir5IErmBr8M_Rugb4UA1BWfbaWNuKlAWLcF2ZIpLPTRM0z8mfbvjd_QtYmbE3Oa2_JUKXOsom8WWisr-z-gd9JnLSPX7tDOiOIxQtrbKZFjYH3PdrHhTiNGzc3LKa6Lg6cD29hr3O68Uq3Hxuw4AQyTa.png" loading="lazy" alt="A screenshot from the game “Fortnite Festival.”"></div>
                 <figcaption>Fortnite Festival (<a href="https://store.epicgames.com/en-US/p/fortnite--festival">Epic Games Store</a>)</figcaption>
             </figure>
             <p>Also, the new Battle Stage? A battle-royale-like PvP rhythm game? Absolutely sick idea.&nbsp;</p>

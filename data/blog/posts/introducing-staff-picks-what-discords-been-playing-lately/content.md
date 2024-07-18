@@ -12,7 +12,7 @@
     <div id="heading-2" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5712c582768920c5029_zR5P93d597K7P6gyNB8lSSyhjZmr8AzPi4UDVOHb1UolqrOwM-TFZmDoVU1ow8-s2_v-7ouTpwqybXyzlAHxIdSnYopoNq5IveTiBWDJ3nwlng09pcfU_Y6kwLZ23tmk4WSzta2j6Bk_zeUIgH66Yl8.jpeg" alt="A stylized nameplate that says “Matt.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5712c582768920c5029_zR5P93d597K7P6gyNB8lSSyhjZmr8AzPi4UDVOHb1UolqrOwM-TFZmDoVU1ow8-s2_v-7ouTpwqybXyzlAHxIdSnYopoNq5IveTiBWDJ3nwlng09pcfU_Y6kwLZ23tmk4WSzta2j6Bk_zeUIgH66Yl8.jpeg" loading="lazy" alt="A stylized nameplate that says “Matt.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
             </figure>
             <p><strong>What’s your name? What do you do at Discord?&nbsp;</strong></p>
             <p>Matt, Gaming Platform Partnerships. I've been at Discord for just over five years. I've had the privilege of working with game devs and major game platforms. My work has spanned across Discord Game Stores, to building verified servers, to integrating Game SDKs, to launching awesome products like Discord voice on console.</p>
@@ -27,7 +27,7 @@
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da58391023d0279338bb4_wH27S71-QN2UzKZ94ZvbDfXxdMgTupKXJlDjNt1AhCY7kSe3ywk7tj43fN3UkBnR5nvcKeDKh3Z5EhfVN5GYu2SRPUQAWXOD0G2YFdM-EWjr04wTidOSb444GLPAnwtyr04v9xN4JZBi22A82mOc174.jpeg" alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da58391023d0279338bb4_wH27S71-QN2UzKZ94ZvbDfXxdMgTupKXJlDjNt1AhCY7kSe3ywk7tj43fN3UkBnR5nvcKeDKh3Z5EhfVN5GYu2SRPUQAWXOD0G2YFdM-EWjr04wTidOSb444GLPAnwtyr04v9xN4JZBi22A82mOc174.jpeg" loading="lazy" alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."></div>
             </figure>
             <p><strong>What’s your name? What do you do at Discord?&nbsp;</strong></p>
             <p>Emi — I’m an account manager primarily working with developers, publishers, and studios in the gaming space.</p>
@@ -42,7 +42,7 @@
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5ade5d78688378c8367_dLxzwfwq-Lcw8qbYN1vVh-6sZnJdYwZek5h1KZVTmbUG_8bhB4pduVsR0jy4J8lqTei2PYt8UU-vJ4tyCW8kk4IdkYFiD2kidO5iyguYdDhB64Ms6Ffybsa4-gKWsPGXNvNhxvvHkP6FSFytytNQcIs.jpeg" alt="A stylized nameplate that says “Jonathan.”"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5ade5d78688378c8367_dLxzwfwq-Lcw8qbYN1vVh-6sZnJdYwZek5h1KZVTmbUG_8bhB4pduVsR0jy4J8lqTei2PYt8UU-vJ4tyCW8kk4IdkYFiD2kidO5iyguYdDhB64Ms6Ffybsa4-gKWsPGXNvNhxvvHkP6FSFytytNQcIs.jpeg" loading="lazy" alt="A stylized nameplate that says “Jonathan.”"></div>
             </figure>
             <p>‍<strong>What’s your name? What do you do at Discord?&nbsp;</strong></p>
             <p>Hey! My name is Jonathan, I work in marketing at Discord. I’ve been involved with all the marketing you’ve enjoyed, but none of the stuff you didn’t like. I’ve worked in gaming most of my career and honored to be part of the Discord team.&nbsp;</p>
@@ -57,7 +57,7 @@
     <div id="heading-5" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5c5ee40e0f12975ced9_CX73giuK_eGBqp6ACsfvEw4z1fyWPTnWMOwxu3Zteg_4oalGagFG-KWclVES1bhLOz9qV3ZoK8F5pc4rHDpt1eZX1wVeFRTVVyEFvmMP38h4rUwMJWiUJ26mUN6J6BwvQQqUkIo3bs3CNx5pNF7jp_U.jpeg" alt="A stylized nameplate that says “Alex.”"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5c5ee40e0f12975ced9_CX73giuK_eGBqp6ACsfvEw4z1fyWPTnWMOwxu3Zteg_4oalGagFG-KWclVES1bhLOz9qV3ZoK8F5pc4rHDpt1eZX1wVeFRTVVyEFvmMP38h4rUwMJWiUJ26mUN6J6BwvQQqUkIo3bs3CNx5pNF7jp_U.jpeg" loading="lazy" alt="A stylized nameplate that says “Alex.”"></div>
             </figure>
             <h3><strong>What’s your name? What do you do at Discord?&nbsp;</strong></h3>
             <p>Alex — I’m a user experience researcher. While some people just think this means I test out UIs in usability tests, that’s not the case at Discord. I’m our UXR for gaming, which means I study players and the broader gaming market.&nbsp;</p>
@@ -72,7 +72,7 @@
     <div id="heading-6" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5d26ec07d97bf9d0cf5_HbR-n-QrUTQJ6dW9_oOyKLMcf1EClKg1Udl6xwm0ynGS9iier5Z7e36zrxbSUXnMVbviBIE4nfdRIpFkhcHJpuberWIYeXyzj25Iasqvee7j5yOlR6Nhu720odp3_KKdjoAQZIx1Qb2e_FLWaoIAe3s.jpeg" alt="A stylized nameplate that says “Tracie.”"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5d26ec07d97bf9d0cf5_HbR-n-QrUTQJ6dW9_oOyKLMcf1EClKg1Udl6xwm0ynGS9iier5Z7e36zrxbSUXnMVbviBIE4nfdRIpFkhcHJpuberWIYeXyzj25Iasqvee7j5yOlR6Nhu720odp3_KKdjoAQZIx1Qb2e_FLWaoIAe3s.jpeg" loading="lazy" alt="A stylized nameplate that says “Tracie.”"></div>
             </figure>
             <p><strong>What’s your name? What do you do at Discord?&nbsp;</strong></p>
             <p>Tracie! I am a social media manager here at Discord. I help run our social channels and support various social events (a little behind-the-scenes: there is more than one voice behind the curtain of the Discord social channels). I also run our largest public Discord server, Town Hall.</p>
