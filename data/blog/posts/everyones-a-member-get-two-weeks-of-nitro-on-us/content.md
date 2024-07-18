@@ -29,7 +29,7 @@
             </ul>
             <p>If this sounds like YOU, head into <strong>User Settings &gt; Nitro</strong> in-app and you should see a banner that looks like this:</p>
             <figure style="max-width:1280pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65457fdadb0c3f9422781dcc_IigbKIgUPZSPoIa_zyEsHrVcnRlxqIqpSDNg67F0Nf_m8xHPO061EjTuN-ovJSQHiLGf2DTheORjgUxv9XcjRs87WdZOxOLLyFy20Nh7mQ_jdvaBE2kNsd-MUXjLUn60Zcb_y-9RGxaRmrXthGGF6aY.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65457fdadb0c3f9422781dcc_IigbKIgUPZSPoIa_zyEsHrVcnRlxqIqpSDNg67F0Nf_m8xHPO061EjTuN-ovJSQHiLGf2DTheORjgUxv9XcjRs87WdZOxOLLyFy20Nh7mQ_jdvaBE2kNsd-MUXjLUn60Zcb_y-9RGxaRmrXthGGF6aY.png" alt="" loading="lazy"></div>
             </figure>
             <p>If you’re still itching for more info about this particular Nitro promo, scoot over to our <a href="https://support.discord.com/hc/articles/18509957729175">Help Center article</a> to learn more.</p>
         </div>

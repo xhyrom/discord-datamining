@@ -16,7 +16,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Party With Your Friends: For our Birthday, All Activities are Free!<br></strong></h2>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf229fcb1fb19dd5b04ce_8a4f7021.png" alt="Alt-text: Key artwork for Discord’s Eighth Birthday. In bold, stylised lettering reads “Activities are free for all through June 15th.”"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf229fcb1fb19dd5b04ce_8a4f7021.png" alt="Alt-text: Key artwork for Discord’s Eighth Birthday. In bold, stylised lettering reads “Activities are free for all through June 15th.”" loading="lazy"></div>
             </figure>
             <p>Between May 15–June 15, <strong>ALL </strong><a href="https://discord.com/blog/server-activities-games-voice-watch-together"><strong>ACTIVITIES</strong></a><strong> ARE FREE</strong>. Yes, you read that right: Sketch Heads? Sketch your heart out for free. Putt Party? More like FREE Party. Bobble League? Enter the big leagues for the low price of FREE — just click the rocketship (🚀) button and get playin’!</p>
             <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
@@ -51,7 +51,7 @@
             <p>Your friends are together in Voice, playing Sketch Heads, blaring some party airhorns using Soundboard, and using Reactions in Voice to cover your screen in 🎉 emojis … the only thing that’s missing is your trusty Personal Party Equipment (PPE for short).&nbsp;</p>
             <p><strong>During our birthday celebration, </strong><a href="https://discord.com/nitro"><strong>Nitro</strong></a><strong> members can join the party in style with a new set of Avatar Decorations</strong>. Head to <strong>User Settings &gt; Profiles</strong> on either desktop or mobile and choose from a selection of snazzy new decorations, such as headphones, space-ready helmets, and a HUD interface to make yourself look like you’re piloting a mech.&nbsp;</p>
             <figure style="max-width:1280pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3a4d16abf1f77400c80_0b31d378.gif" alt="An animated preview of the new set of Avatar Decorations that are available during the birthday celebrations."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3a4d16abf1f77400c80_0b31d378.gif" alt="An animated preview of the new set of Avatar Decorations that are available during the birthday celebrations." loading="lazy"></div>
             </figure>
             <p>Birthday parties aren’t complete without gifting something to the friends you care about. That’s why, <strong>Nitro members can share a special two-week trial of Discord Nitro with up to three of their soon-to-be-lucky friends</strong>!&nbsp;</p>
             <p>If one of your friends is eligible for a Nitro trial, you’ll see a new Nitro-shaped button when you go to talk to them in DMs. Select that, and you can offer them one of your three free trials. They’ll be able to use the special birthday avatar decorations and try out our newest features like Super Reactions, Color Themes, and more.</p>
@@ -77,7 +77,7 @@
             <p><em>Get in the hoodie, Wumpus.&nbsp;</em>‍</p>
             <p>Introducing the <strong>DISXCORE </strong>collection: a selection of stylish, streetwear-inspired apparel. Alongside favorites like shirts, hoodies, pins, and water bottles. Unique to the DISXCORE line are a sling bag, a women’s fit tee, and a button-down shirt.</p>
             <figure style="max-width:1200px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3d67f62e35ae1e2f22c_0723eea4.png" alt="A preview of the DISXCORE merch line, including three shirts, a sling bag and a Wumpus pin."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3d67f62e35ae1e2f22c_0723eea4.png" alt="A preview of the DISXCORE merch line, including three shirts, a sling bag and a Wumpus pin." loading="lazy"></div>
             </figure>
             <p>Plus, complete your desk setup with a set of Wumpus-themed Wave:3 Microphone and Stream Deck from our friends at Elgato. Have Wumpus bring your crisp, clear voice to your friends as if you were in the same room as them.</p>
             <p><strong>The DISXCORE line drops Wednesday, May 17 at 10am PDT</strong>. In the meantime, check out everything the Discord Merch Store has on offer and bookmark the store for when DISXCORE drops:<strong><br></strong></p>
@@ -92,7 +92,7 @@
             <p>Discord is home to a seemingly endless amount of community spaces big and small that help make people feel like they have a place to call home on the platform. It probably sounds pretty obvious saying this out loud, but a good chunk of these servers involve gaming with your friends late into the night.</p>
             <p>Our buddies at Riot Games are offering @everyone <a href="https://www.riotgames.com/en/news/discord-riot-games-emotes">a special set of Riot-themed Discord emojis</a> that anyone can download and add to their servers. They’re based on characters from Riot's own games, so you’ll likely recognize a few faces if you play any of their games. Even if you don’t play any games at all, they’re still <em>really</em> adorable emojis.&nbsp;&nbsp;</p>
             <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3fdf8b94559656e768b_5dfca559.png" alt="A preview of the special set of Riot-themed emojis."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3fdf8b94559656e768b_5dfca559.png" alt="A preview of the special set of Riot-themed emojis." loading="lazy"></div>
             </figure>
             <p>Download the whole set and add ‘em to your own Discord community <a href="https://www.riotgames.com/en/news/discord-riot-games-emotes">over at Riot’s blog</a>.&nbsp;</p>
         </div>
