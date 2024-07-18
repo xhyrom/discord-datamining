@@ -17834,7 +17834,7 @@ Error:`, e)
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-1cead9132160ced56c807cd89f9c28cee3af2e1d",
+                        release: "discord_web-65784db476ca701386ef8d136dd9dde6048693ab",
                         beforeSend: t => {
                             var e, r;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || o.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !E() && !("Aborted" === (r = t).message || "cancel captcha" === r.message) && s() ? t : null
@@ -17852,8 +17852,8 @@ Error:`, e)
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), a.YA("buildNumber", (t = "311036", "311036"));
-                    a.YA("builtAt", String("1721334638477"));
+                    }), a.YA("buildNumber", (t = "311041", "311041"));
+                    a.YA("builtAt", String("1721335037671"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) a.YA(t, e[t]);
@@ -23790,7 +23790,7 @@ Error:`, e)
                             opacity: 1
                         },
                         [n.DARKER]: {
-                            raw: "PLUM_17",
+                            raw: "PLUM_19",
                             opacity: 1
                         }
                     },
@@ -28567,7 +28567,7 @@ Error:`, e)
                     "scrollbar-auto-scrollbar-color-thumb": [a.I.PRIMARY_730, a.I.PRIMARY_230, a.I.PLUM_20, a.I.PLUM_21],
                     "scrollbar-auto-scrollbar-color-track": [a.I.PRIMARY_630, a.I.PRIMARY_130, a.I.PLUM_17, a.I.PLUM_17],
                     "scrollbar-auto-thumb": [a.I.PRIMARY_730, a.I.PRIMARY_300, a.I.PLUM_16, a.I.PLUM_21],
-                    "scrollbar-auto-track": [a.I.PRIMARY_630, a.I.PRIMARY_160, a.I.PLUM_25, a.I.PLUM_17],
+                    "scrollbar-auto-track": [a.I.PRIMARY_630, a.I.PRIMARY_160, a.I.PLUM_25, a.I.PLUM_19],
                     "scrollbar-thin-thumb": [a.I.PRIMARY_730, a.I.PRIMARY_500, a.I.PLUM_20, a.I.PLUM_21],
                     "scrollbar-thin-track": [a.I.BLACK, a.I.BLACK, a.I.BLACK, a.I.BLACK],
                     "spoiler-hidden-background": [a.I.PRIMARY_700, a.I.PRIMARY_200, a.I.PLUM_14, a.I.PLUM_14],
@@ -31237,4 +31237,4 @@ Error:`, e)
         window.DiscordSentry = (0, t.j)()
     })()
 })();
-//# sourceMappingURL=sentry.e9f62afd6a36f41423b7.js.map
+//# sourceMappingURL=sentry.9d52566ae3939747f7b1.js.map

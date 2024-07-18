@@ -7244,6 +7244,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     border-radius: 4px
 }
 
+.visual-refresh .menu_d90b3d {
+    background: var(--bg-surface-overlay)
+}
+
 .scroller_d90b3d {
     padding: 6px 8px
 }
@@ -9571,6 +9575,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     background: transparent
 }
 
+.visual-refresh .container_fc4f04 {
+    --__header-bar-background: var(--bg-base-primary)
+}
+
 .upperContainer_fc4f04 {
     display: flex;
     flex: 1
@@ -9665,6 +9673,36 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .selected_fc4f04 .icon_fc4f04 {
     color: var(--interactive-active)
+}
+
+.visual-refresh .clickable_fc4f04 {
+    background-color: var(--redesign-button-tertiary-background);
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-round);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color.1s ease-in-out;
+    margin-left: 6px;
+    margin-right: 6px
+}
+
+.visual-refresh .clickable_fc4f04:hover {
+    background-color: var(--redesign-button-tertiary-pressed-background)
+}
+
+.visual-refresh .iconWrapper_fc4f04 {
+    height: 32px;
+    display: flex;
+    align-items: center
+}
+
+.visual-refresh .icon_fc4f04 {
+    width: 16px;
+    height: 16px;
+    color: var(--redesign-button-tertiary-text)
 }
 
 .iconBadge_fc4f04 {
@@ -15238,6 +15276,12 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     box-shadow: var(--elevation-low)
 }
 
+.visual-refresh .popoutContainer_cf58b5 {
+    background-color: color-mix(in oklab, var(--bg-surface-overlay), transparent 10%);
+    backdrop-filter: blur(8px);
+    box-shadow: var(--shadow-border), var(--shadow-low)
+}
+
 @keyframes popout-loading_cf58b5 {
     0% {
         transform: translate3d(calc(-1*var(--custom-message-helpers-popout-content-width)), 0, 0)
@@ -15750,6 +15794,16 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .theme-light .popoutContent_e58351 {
     background-color: var(--background-floating);
     box-shadow: var(--elevation-high)
+}
+
+.visual-refresh .popoutLoader_e58351,
+.visual-refresh .popoutContent_e58351 {
+    background-color: transparent;
+    background-color: initial
+}
+
+.visual-refresh .guildSection_e58351 {
+    background-color: var(--bg-mod-strong)
 }
 
 .joinGuildLink_e58351 {
@@ -27693,6 +27747,10 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     background: var(--bg-overlay-3, var(--channeltextarea-background))
 }
 
+.visual-refresh .themedBackground_d0696b {
+    background: var(--bg-overlay-3, var(--bg-mod-faint))
+}
+
 .sticker_d0696b {
     display: block
 }
@@ -39459,6 +39517,10 @@ html.disable-forced-colors * {
     height: 100%
 }
 
+.visual-refresh .appAsidePanelWrapper_bd26cc {
+    padding: 8px
+}
+
 .mobileApp_bd26cc {
     z-index: auto;
     overflow: auto;
@@ -44086,7 +44148,7 @@ html.disable-forced-colors * {
     --scrollbar-auto-scrollbar-color-thumb: var(--plum-21);
     --scrollbar-auto-scrollbar-color-track: var(--plum-17);
     --scrollbar-auto-thumb: var(--plum-21);
-    --scrollbar-auto-track: var(--plum-17);
+    --scrollbar-auto-track: var(--plum-19);
     --scrollbar-thin-thumb: var(--plum-21);
     --scrollbar-thin-track: hsl(var(--black-hsl) / 0);
     --spoiler-hidden-background: var(--plum-14);
@@ -44838,7 +44900,7 @@ html.disable-forced-colors * {
                 var(--plum-21) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --scrollbar-auto-track: color-mix(in oklab,
-                var(--plum-17) 100%,
+                var(--plum-19) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --scrollbar-thin-thumb: color-mix(in oklab,
                 var(--plum-21) 100%,
@@ -46255,6 +46317,11 @@ body,
     text-rendering: optimizeLegibility
 }
 
+.visual-refresh body,
+.visual-refresh .appMount_ea7e65 {
+    background: var(--bg-base-tertiary)
+}
+
 .overlay body,
 .overlay .appMount_ea7e65 {
     background: transparent
@@ -46302,4 +46369,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.e0a2ae8e4f1d4ccca480.css.map*/
+/*# sourceMappingURL=12633.c7d3ca883d33fdc1de7e.css.map*/
