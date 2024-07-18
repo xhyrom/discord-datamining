@@ -20,7 +20,7 @@
             <p>Throughout these interviews, you’ll also see responses from <strong>Kelly</strong>, a <em>Product Engineering - Revenue Infrastructure Intern</em>, and <strong>Chenxi</strong>, who joined as a <em>Data Engineering Intern</em>.&nbsp;</p>
             <p>We’d also like to give a shoutout to <strong>Janelle</strong>, this year’s <em>Product Design Intern</em> who made the banner on this very blog — it’s a beauty!</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png" loading="lazy" alt=""></div>
             </figure>
         </div>
     </div>
@@ -34,7 +34,7 @@
             <p><strong>Kaylee:</strong> I found this internship through the <a href="https://discord.com/careers">Discord Careers</a> site (lol). The recruiting team put a great deal of care into making the process really personable and fun, which is pretty rare nowadays. I walked away from every interview feeling energized and having learned something new. Through my conversations, I could tell that employees were very enthusiastic [about] Discord’s mission and truly embodied the values.</p>
             <p><strong>Paul:</strong> I stumbled upon this opportunity on Linkedin when I was searching for summer internships in the gaming space. I’ve always wanted to work in a gaming/gaming adjacent company and getting this internship was a dream come true. The kid in me who spent hours in internet cafes playing Runescape and League with friends is so happy I did this.<br><br>The process was quite different compared to other companies. People took the time to truly listen to me and get to know me as a person. It felt like a casual chat with a friend rather than some sort of test!</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6500de3f4f7dd941e750b69a_Ny7HBGTFDyx5BSUqzVezJUSMxFNRYOWcKs8BYoTG_AcWXTzJeA4vsTp7_IeKb09qD7MzMfKeVyyjWHQ2xrHw2ZxNyCHiBhXua5N5aVGwERl6DPg_uLNkppFPMQE4ofU3i5Gg7P65NYvK_1hMwV1GVdA.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6500de3f4f7dd941e750b69a_Ny7HBGTFDyx5BSUqzVezJUSMxFNRYOWcKs8BYoTG_AcWXTzJeA4vsTp7_IeKb09qD7MzMfKeVyyjWHQ2xrHw2ZxNyCHiBhXua5N5aVGwERl6DPg_uLNkppFPMQE4ofU3i5Gg7P65NYvK_1hMwV1GVdA.png" loading="lazy" alt=""></div>
             </figure>
         </div>
     </div>
@@ -46,7 +46,7 @@
             <p>The final version was completed in about four weeks. This involved refactoring a big part of the team’s current system, learning completely new technologies, managing big amounts of data, and learning Discord-specific processes for testing things in staging. I really appreciate all the trust of the team in me to tackle this big task and the freedom I had when doing the work.</p>
             <p><strong>Caleb: </strong>[It] was fantastic. I got to meet so many awesome and brilliant people here at Discord. My work consisted primarily of internal tooling: I built a mega Figma plugin called Mirage that consolidates a lot of our existing plugins into one mega plugin. Even though I was familiar with a lot of the tech I was working with on a day-to-day basis, I was always learning something, whether it be from the feedback I received on my code, discussions happening in our internal team chat, or from questions I was asking and the responses I was receiving.</p>
             <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6500df00062c5baa00807284_SQgoi-oqM6voauO7ifJ9VBXhui-9A7Y_iCluqMLcRYh2EZQ3embaZmKr1GSqfVsaCj4miY01a6V206EVrFtpkAtZv4iQkeQsEjcuFbYAqDJR5vm5UWkCNX734Mh0LCmp1EqFxwJUqIqtH6hzzQjMewA.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6500df00062c5baa00807284_SQgoi-oqM6voauO7ifJ9VBXhui-9A7Y_iCluqMLcRYh2EZQ3embaZmKr1GSqfVsaCj4miY01a6V206EVrFtpkAtZv4iQkeQsEjcuFbYAqDJR5vm5UWkCNX734Mh0LCmp1EqFxwJUqIqtH6hzzQjMewA.png" loading="lazy" alt=""></div>
             </figure>
         </div>
     </div>
@@ -58,7 +58,7 @@
             <p><strong>Kaylee:</strong> All of my interactions with Discordians! Everyone at Discord is very warm and welcoming. Not only was my team very supportive and invested in my growth, but other Discord teams were also open and willing to expose Interns to different areas. Even though I was on the Security Team, I got to talk with people from Trust and Safety, Infrastructure, Revenue, and more! I really appreciated how genuine everyone was. People at Discord truly make the company what it is.</p>
             <p><strong>Kelly:</strong> Without a doubt, my favorite part of my Discord internship was HQ IRL where Discord flew all the employees into San Francisco for a few days. From hilarious talk-show-style presentations to minigolf at Ghirardelli Square, I got to experience the palpable effect of Surprise and Delight in action at Discord.</p>
             <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6500df148d1962a2f8cfc415_FAS-9HRiV0kZfghv4hU7tH-8Nlz50o3xHsK1pzLw6-AynplD4rZnztEEYOpcM3qaXeQfc2ERky0rz5Yun7g1RTy8PzQSNfu_fdC-SzpyCb92Xmrdj2qzq-JH2vRMl5YDtW69PcDO23TjbI0kYjWiJRA.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6500df148d1962a2f8cfc415_FAS-9HRiV0kZfghv4hU7tH-8Nlz50o3xHsK1pzLw6-AynplD4rZnztEEYOpcM3qaXeQfc2ERky0rz5Yun7g1RTy8PzQSNfu_fdC-SzpyCb92Xmrdj2qzq-JH2vRMl5YDtW69PcDO23TjbI0kYjWiJRA.png" loading="lazy" alt=""></div>
             </figure>
         </div>
     </div>
@@ -74,7 +74,7 @@
             <p><strong>Chenxi:</strong> Don’t be afraid to ask questions! Everyone here is so nice and willing to help. Learn as much as possible during these 12 weeks. It will be a truly meaningful, rewarding joinery I promise!&nbsp;</p>
             <p><strong>Kaylee:</strong> Reach out to people and ask questions! The great thing about Discord is that there is a wide spectrum of roles and teams, but one uniting factor is that everyone is passionate about Discord and the people they work with.</p>
             <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png" loading="lazy" alt=""></div>
             </figure>
         </div>
     </div>
