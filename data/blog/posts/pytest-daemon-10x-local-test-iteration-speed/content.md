@@ -17,7 +17,7 @@
             <h2>Why is it important?</h2>
             <p>Simply put: humans get distracted. When I’m waiting for a test for more than a few seconds, I might click on a notification, open my browser, or get distracted for a few minutes. These distractions extend the feedback loop and make me less efficient in completing my current task.</p>
             <figure style="max-width:413pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/657257bafeeb80b48e72c137_compiling.png" alt="An XKCD comic. Two engineers are swordfighting, looking as if they're not working. The caption reads: &quot;The #1 programmer excuse for legitimately slacking off: 'My code's compiling.'&quot;"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/657257bafeeb80b48e72c137_compiling.png" alt="An XKCD comic. Two engineers are swordfighting, looking as if they're not working. The caption reads: &quot;The #1 programmer excuse for legitimately slacking off: 'My code's compiling.'&quot;" loading="lazy"></div>
                 <figcaption><a href="https://3d.xkcd.com/303/"><em>https://3d.xkcd.com/303/</em></a></figcaption>
             </figure>
         </div>
