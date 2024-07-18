@@ -17834,7 +17834,7 @@ Error:`, e)
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-65784db476ca701386ef8d136dd9dde6048693ab",
+                        release: "discord_web-e44d32531833d65d0cd201a0efea22f2f1d36494",
                         beforeSend: t => {
                             var e, r;
                             return !(null != (e = t).exception && null != e.exception.values && e.exception.values.every(t => null == t.stacktrace || null != t.stacktrace.frames && 1 === t.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || o.some(t => window.navigator.appVersion.toLowerCase().indexOf(t) >= 0)) && !E() && !("Aborted" === (r = t).message || "cancel captcha" === r.message) && s() ? t : null
@@ -17852,8 +17852,8 @@ Error:`, e)
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), a.YA("buildNumber", (t = "311041", "311041"));
-                    a.YA("builtAt", String("1721335037671"));
+                    }), a.YA("buildNumber", (t = "311046", "311046"));
+                    a.YA("builtAt", String("1721335885527"));
                     let e = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != e && "object" == typeof e)
                         for (let t in e) a.YA(t, e[t]);
@@ -17945,7 +17945,7 @@ Error:`, e)
                         triggeredMigrations: !1,
                         offlineEditDataVersion: void 0
                     }
-                }(A = s || (s = {}))[A.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", A[A.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", A[A.TEST_SETTINGS = 3] = "TEST_SETTINGS", (N = c || (c = {}))[N.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", N[N.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", N[N.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", N[N.AUTOMATED = 30] = "AUTOMATED", N[N.DAILY = 86400] = "DAILY", (d = I || (I = {}))[d.CONFIRM_START = 0] = "CONFIRM_START", d[d.CONFIRM_CODE = 1] = "CONFIRM_CODE", d[d.CHANGE_EMAIL_REASONS = 2] = "CHANGE_EMAIL_REASONS", d[d.EMAIL_AND_PASSWORD = 3] = "EMAIL_AND_PASSWORD", d[d.COMPLETE = 4] = "COMPLETE";
+                }(A = s || (s = {}))[A.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", A[A.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", A[A.TEST_SETTINGS = 3] = "TEST_SETTINGS", (N = c || (c = {}))[N.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", N[N.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", N[N.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", N[N.AUTOMATED = 30] = "AUTOMATED", N[N.DAILY = 86400] = "DAILY", (d = I || (I = {}))[d.CONFIRM_START = 0] = "CONFIRM_START", d[d.CONFIRM_CODE = 1] = "CONFIRM_CODE", d[d.CHANGE_EMAIL_REASONS = 2] = "CHANGE_EMAIL_REASONS", d[d.CHANGE_EMAIL_WARNING = 3] = "CHANGE_EMAIL_WARNING", d[d.EMAIL_AND_PASSWORD = 4] = "EMAIL_AND_PASSWORD", d[d.COMPLETE = 5] = "COMPLETE";
                 let g = {
                         NEW_FORUM_THREADS_ON: 16384,
                         NEW_FORUM_THREADS_OFF: 8192,
@@ -31237,4 +31237,4 @@ Error:`, e)
         window.DiscordSentry = (0, t.j)()
     })()
 })();
-//# sourceMappingURL=sentry.9d52566ae3939747f7b1.js.map
+//# sourceMappingURL=sentry.38a0b4b5269c9e992ae9.js.map
