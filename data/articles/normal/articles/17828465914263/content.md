@@ -63,6 +63,5 @@
 <p>A: No. If you’ve purchased a profile effect within <strong>5 days </strong>of your Nitro subscription renewing or becoming a new Nitro member, you will not be eligible to refund that Nitro subscription.</p>
 <p id="docs-internal-guid-d722d8e3-7fff-6b75-265c-013ad3cd054e"><strong>Q: Do I get to keep the DISXCORE profile effects I’ve collected?</strong></p>
 <p>A: The Nitro exclusive DISXCORE profile effects can be freely collected by Nitro members, but require an active Nitro subscription to use. If you decide to cancel your Nitro subscription, the effects will remain in your collection but you won’t be able to use them.</p>
-<p><strong>Q: Can I gift profile effects to others?</strong><br>A: At this time, items purchased from the Shop like profile effects cannot be gifted to others.</p>
 <p id="docs-internal-guid-b47eaca1-7fff-16d3-e1a5-daf0c4c8bbba"><strong>Q: Can profile effects be turned off? I don't want to see them. </strong></p>
 <p id="docs-internal-guid-d20afd1b-7fff-3003-0bb3-c920a3079b93">A: If you’re trying to completely disable any profile effects from animating within the app, you’ll need to go <strong>User Settings</strong> &gt; <strong>Accessibility</strong> &gt; <strong>Enable Reduced Motion</strong>. Toggling this on will prevent any effects from animating, including other users’.</p>

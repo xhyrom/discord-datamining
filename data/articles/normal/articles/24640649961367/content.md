@@ -30,8 +30,9 @@
 <p>Your forwarded messages will be labeled as<strong> “Forwarded”</strong> without any indication of the message’s original author. The original message's source destination will only show as a link to those who already have access to that server or if the server is public. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24640726775831" width="624" height="535"></p>
 <h2 id="h_01J1XD0SEFBJ6SHEZ9HJHBDPT3">Mobile</h2>
-<p>1. On your mobile device, tap the <strong>Forward button [</strong><strong><img src="https://support.discord.com/hc/article_attachments/24640764950807" width="29" height="24"></strong><strong>] </strong>to the right of the message.  </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24640764956439" width="292" height="632"></p>
+<p>1. To get started forwarding a message on mobile, long-press the message and select the <strong>Forward option</strong> in the context menu. This action will forward the entire message. </p>
+<p>Others may see the <strong>Forward button [</strong><strong><img src="https://support.discord.com/hc/article_attachments/24995144694679" width="29" height="24"></strong><strong>] </strong>located next to media and embeds. Using this option will only forward the specific media or embed, not the entire message.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24995175165847" width="293" height="634">.  <img src="https://support.discord.com/hc/article_attachments/24640764956439" width="293" height="634"></p>
 <p>2. The <strong>Forward To menu</strong> will appear, allowing you to select where you would like to forward your message. Once you’re ready, tap <strong>Send</strong>. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/24640726783127" width="318" height="689"></p>
 <p>3. Your message will be forwarded to the selected places and be labeled as <strong>Forwarded. </strong></p>
