@@ -23,12 +23,12 @@
             <p>If “Shop” in the context of Discord is completely new to you, no worries — it’s just as quick as purchasing your equipment at the beginning of a round of VALORANT.</p>
             <p>The next time you open up the desktop or web app, you’ll see a Shop tab right as you open it. Click that, and you’ll head straight to the Shop.</p>
             <figure style="max-width:950pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6601d5987fa76a77cda4282b_VoLWpza0iTSRJe5cZjWtKdCTw8Tm2wXz43SuSEo8RVrUtAzYjpwqxCETMzlxpWjFFFHMqQBEhdASluNDyy6aTbsJgSl9-OmQaXHOTHEMMUCM7O1r9OOge2UogbUmaUY0K8BApRXkijUMX0DPzeTXP4g.png" loading="lazy" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6601d5987fa76a77cda4282b_VoLWpza0iTSRJe5cZjWtKdCTw8Tm2wXz43SuSEo8RVrUtAzYjpwqxCETMzlxpWjFFFHMqQBEhdASluNDyy6aTbsJgSl9-OmQaXHOTHEMMUCM7O1r9OOge2UogbUmaUY0K8BApRXkijUMX0DPzeTXP4g.png" alt=""></div>
             </figure>
             <p>From there, it’s up to you! Preview what a particular avatar decoration or profile effect looks like on your profile by clicking on it. If you purchase it, you can use it in your profile even after the VALORANT collection leaves the Shop.</p>
             <p>Tie it all together with a matching avatar to set up a killer profile combo to impress your friends and style on your rivals. If you’ve got Nitro, you can also pair your new VALORANT items with a profile banner and profile colors, and even use your decorations on a <a href="https://dis.gd/per-server-profiles">per-server basis</a>!</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png" loading="lazy" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png" alt=""></div>
             </figure>
             <p>The VALORANT collection will be available in the Shop until May 7th, so grab whichever one calls to you while you can — no need to queue up with a squad before entering the Shop.</p>
             <p>If you’ve never played VALORANT, what’re ya waitin’ for?! It’s available to download on Windows PCs, so <a href="https://playvalorant.com/en-us/">head on over to the official site and give it a shot</a>. It might end up being your newest obsession — there’s a reason why it’s in the top 5 most-played games on Discord.</p>

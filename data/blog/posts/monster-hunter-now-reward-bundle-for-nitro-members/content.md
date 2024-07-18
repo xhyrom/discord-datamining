@@ -29,7 +29,7 @@
                 <li>On that page, sign in with your Monster Hunter Now account. You’ll then be presented with the page displayed below:&nbsp;</li>
             </ul>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f4bd3a3f0a07d09c723724_29RXfoEzEg0b3w5P8gs5u3LPOM08zMANexqwK-yJ1Q6SHGPcgIgRgSZ4B0qm-RfQDR7Lcw6DGQ8Yu7ba55omtFPNz7-6Yu-suqTIYJrXpOZv_gSUADY_dxvFAP6i6tuBpTXXWr-6NI6J8FlVAxgOrRU.png" loading="lazy" alt="A screenshot of Niantic’s Offer Redemption page."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f4bd3a3f0a07d09c723724_29RXfoEzEg0b3w5P8gs5u3LPOM08zMANexqwK-yJ1Q6SHGPcgIgRgSZ4B0qm-RfQDR7Lcw6DGQ8Yu7ba55omtFPNz7-6Yu-suqTIYJrXpOZv_gSUADY_dxvFAP6i6tuBpTXXWr-6NI6J8FlVAxgOrRU.png" alt="A screenshot of Niantic’s Offer Redemption page."></div>
             </figure>
             <ul role="list">
                 <li>Enter your code in the aptly named “Enter Offer Code” field and hit “<strong>Apply</strong>.”&nbsp;</li>
