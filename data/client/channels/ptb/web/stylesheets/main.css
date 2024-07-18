@@ -2009,7 +2009,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .tooltip_b6c360 {
-    box-shadow: var(--elevation-high);
+    box-shadow: var(--shadow-high);
     color: var(--text-normal)
 }
 
@@ -4967,7 +4967,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-sm\/normal_c46f6a {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -4978,7 +4978,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-sm\/medium_c46f6a {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -4989,7 +4989,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-sm\/semibold_c46f6a {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -5000,7 +5000,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-sm\/bold_c46f6a {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -5011,7 +5011,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-sm\/extrabold_c46f6a {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 800
 }
@@ -5022,7 +5022,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-md\/normal_c46f6a {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 400
 }
@@ -5033,7 +5033,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-md\/medium_c46f6a {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 500
 }
@@ -5044,7 +5044,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-md\/semibold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 600
 }
@@ -5055,7 +5055,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-md\/bold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 700
 }
@@ -5066,7 +5066,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-md\/extrabold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 800
 }
@@ -5077,7 +5077,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-lg\/normal_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 400
 }
@@ -5088,7 +5088,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-lg\/medium_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 500
 }
@@ -5099,7 +5099,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-lg\/semibold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 600
 }
@@ -5110,7 +5110,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-lg\/bold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 700
 }
@@ -5121,7 +5121,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-lg\/extrabold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 800
 }
@@ -5132,7 +5132,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xl\/normal_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 400
 }
@@ -5143,7 +5143,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xl\/medium_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 500
 }
@@ -5154,7 +5154,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xl\/semibold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 600
 }
@@ -5165,7 +5165,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xl\/bold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 700
 }
@@ -5176,7 +5176,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xl\/extrabold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 800
 }
@@ -5187,7 +5187,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xxl\/normal_c46f6a {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 400
 }
@@ -5198,7 +5198,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xxl\/medium_c46f6a {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 500
 }
@@ -5209,7 +5209,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xxl\/semibold_c46f6a {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 600
 }
@@ -5220,7 +5220,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xxl\/bold_c46f6a {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 700
 }
@@ -5231,7 +5231,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-xxl\/extrabold_c46f6a {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 800
 }
@@ -5242,7 +5242,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .eyebrow_c46f6a {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 700;
     text-transform: uppercase;
@@ -5255,7 +5255,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-deprecated-12\/normal_c46f6a {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -5266,7 +5266,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-deprecated-12\/medium_c46f6a {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -5277,7 +5277,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-deprecated-12\/semibold_c46f6a {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -5288,7 +5288,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-deprecated-12\/bold_c46f6a {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5299,7 +5299,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .heading-deprecated-12\/extrabold_c46f6a {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 800
 }
@@ -5310,7 +5310,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/heading-18\/bold_c46f6a {
     font-family: var(--font-display);
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5321,7 +5321,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-xxs\/normal_c46f6a {
     font-family: var(--font-primary);
-    font-size: .625rem;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 400
 }
@@ -5332,7 +5332,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-xxs\/medium_c46f6a {
     font-family: var(--font-primary);
-    font-size: .625rem;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 500
 }
@@ -5343,7 +5343,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-xxs\/semibold_c46f6a {
     font-family: var(--font-primary);
-    font-size: .625rem;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 600
 }
@@ -5354,7 +5354,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-xxs\/bold_c46f6a {
     font-family: var(--font-primary);
-    font-size: .625rem;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 700
 }
@@ -5365,7 +5365,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-xs\/normal_c46f6a {
     font-family: var(--font-primary);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -5376,7 +5376,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-xs\/medium_c46f6a {
     font-family: var(--font-primary);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -5387,7 +5387,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-xs\/semibold_c46f6a {
     font-family: var(--font-primary);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -5398,7 +5398,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-xs\/bold_c46f6a {
     font-family: var(--font-primary);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5409,7 +5409,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-sm\/normal_c46f6a {
     font-family: var(--font-primary);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -5420,7 +5420,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-sm\/medium_c46f6a {
     font-family: var(--font-primary);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -5431,7 +5431,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-sm\/semibold_c46f6a {
     font-family: var(--font-primary);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -5442,7 +5442,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-sm\/bold_c46f6a {
     font-family: var(--font-primary);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -5453,7 +5453,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-md\/normal_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 400
 }
@@ -5464,7 +5464,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-md\/medium_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 500
 }
@@ -5475,7 +5475,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-md\/semibold_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 600
 }
@@ -5486,7 +5486,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-md\/bold_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 700
 }
@@ -5497,7 +5497,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-lg\/normal_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 400
 }
@@ -5508,7 +5508,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-lg\/medium_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 500
 }
@@ -5519,7 +5519,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-lg\/semibold_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 600
 }
@@ -5530,7 +5530,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .text-lg\/bold_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 700
 }
@@ -5541,7 +5541,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/message-preview\/normal_c46f6a {
     font-family: var(--font-primary);
-    font-size: .9375rem;
+    font-size: 15px;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -5552,7 +5552,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/message-preview\/medium_c46f6a {
     font-family: var(--font-primary);
-    font-size: .9375rem;
+    font-size: 15px;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -5563,7 +5563,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/message-preview\/semibold_c46f6a {
     font-family: var(--font-primary);
-    font-size: .9375rem;
+    font-size: 15px;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -5574,7 +5574,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/message-preview\/bold_c46f6a {
     font-family: var(--font-primary);
-    font-size: .9375rem;
+    font-size: 15px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5585,7 +5585,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/channel-title\/normal_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.375;
     font-weight: 400
 }
@@ -5596,7 +5596,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/channel-title\/medium_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.375;
     font-weight: 500
 }
@@ -5607,7 +5607,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/channel-title\/semibold_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.375;
     font-weight: 600
 }
@@ -5618,7 +5618,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .redesign\/channel-title\/bold_c46f6a {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.375;
     font-weight: 700
 }
@@ -5629,7 +5629,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .display-sm_c46f6a {
     font-family: var(--font-headline);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1;
     font-weight: 800
 }
@@ -5640,7 +5640,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .display-md_c46f6a {
     font-family: var(--font-headline);
-    font-size: 2.125rem;
+    font-size: 34px;
     line-height: 1.0588235294117647;
     font-weight: 800
 }
@@ -5651,7 +5651,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .display-lg_c46f6a {
     font-family: var(--font-headline);
-    font-size: 2.75rem;
+    font-size: 44px;
     line-height: .9545454545454546;
     font-weight: 800
 }
@@ -5662,7 +5662,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .code_c46f6a {
     font-family: var(--font-code);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5678,29 +5678,29 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .h1_c46f6a {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 600
 }
 
 .h2_c46f6a {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 600;
     text-transform: uppercase
 }
 
 .h3_c46f6a {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 500
 }
 
 .h4_c46f6a {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 600;
-    letter-spacing: .01875rem;
+    letter-spacing: .3px;
     text-transform: uppercase
 }
 
@@ -5732,7 +5732,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .errorMessage_c46f6a {
-    font-size: .75rem;
+    font-size: 12px;
     font-weight: 500;
     font-style: italic;
     text-transform: none
@@ -6013,8 +6013,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .botTagRegular_a9e77f {
-    background: var(--brand-500);
-    color: var(--white-500)
+    background: var(--bg-brand);
+    color: var(--white)
 }
 
 .botTagInvert_a9e77f {
@@ -6024,7 +6024,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .botTagAI_a9e77f {
     background: var(--text-positive);
-    color: var(--white-500)
+    color: var(--white)
 }
 
 .botTag_a9e77f.botTagRemix_a9e77f {
@@ -7239,8 +7239,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     height: auto;
     cursor: default;
     max-height: calc(100vh - 32px);
-    box-shadow: var(--elevation-high);
     background: var(--background-floating);
+    box-shadow: var(--shadow-high);
     border-radius: 4px
 }
 
@@ -7374,45 +7374,41 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .colorDefault_d90b3d .checkbox_d90b3d,
 .colorDefault_d90b3d .radioSelection_d90b3d {
-    color: var(--brand-500)
+    color: var(--control-brand-foreground-new)
 }
 
 .colorDefault_d90b3d .check_d90b3d {
-    color: var(--white-500)
+    color: var(--white)
 }
 
 .colorDefault_d90b3d.focused_d90b3d {
-    background-color: var(--brand-530);
-    color: var(--white-500)
+    background-color: var(--menu-item-default-hover-bg);
+    color: var(--white)
 }
 
 .colorDefault_d90b3d.focused_d90b3d .subtext_d90b3d,
 .colorDefault_d90b3d.focused_d90b3d .checkbox_d90b3d,
 .colorDefault_d90b3d.focused_d90b3d .radioSelection_d90b3d,
 .colorDefault_d90b3d.focused_d90b3d .caret_d90b3d {
-    color: var(--white-500)
+    color: var(--white)
 }
 
 .colorDefault_d90b3d.focused_d90b3d .check_d90b3d {
-    color: var(--brand-560);
-    fill: var(--brand-560)
+    color: var(--text-brand);
+    fill: var(--text-brand)
 }
 
 .colorDefault_d90b3d.focused_d90b3d path {
-    fill: var(--white-500)
+    fill: var(--white)
 }
 
 .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
-    background-color: var(--brand-600);
-    color: var(--white-500)
+    background-color: var(--menu-item-default-active-bg);
+    color: var(--white)
 }
 
 .colorBrand_d90b3d {
-    color: var(--brand-360)
-}
-
-.theme-light .colorBrand_d90b3d:not(.focused_d90b3d) {
-    color: var(--brand-500)
+    color: var(--text-brand)
 }
 
 .colorDanger_d90b3d,
@@ -7422,8 +7418,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .colorDanger_d90b3d.focused_d90b3d {
-    background-color: var(--button-danger-background);
-    color: var(--white-500)
+    background-color: var(--menu-item-danger-hover-bg);
+    color: var(--white)
 }
 
 .colorDanger_d90b3d.focused_d90b3d .check_d90b3d {
@@ -7431,8 +7427,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .colorDanger_d90b3d:active:not(.hideInteraction_d90b3d) {
-    background-color: var(--red-500);
-    color: var(--white-500)
+    background-color: var(--menu-item-danger-active-bg);
+    color: var(--white)
 }
 
 .colorPremium_d90b3d .icon_d90b3d {
@@ -7441,7 +7437,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .colorPremium_d90b3d.focused_d90b3d .icon_d90b3d,
 .colorPremium_d90b3d:active:not(.hideInteraction_d90b3d) .icon_d90b3d {
-    color: var(--white-500)
+    color: var(--white)
 }
 
 .colorPremiumGradient_d90b3d.focused_d90b3d,
@@ -7451,7 +7447,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .colorPremiumGradient_d90b3d .check_d90b3d,
 .colorPremiumGradient_d90b3d .radioSelection_d90b3d {
-    color: var(--white-500)
+    color: var(--white)
 }
 
 .colorPremiumGradient_d90b3d .checkbox_d90b3d,
@@ -7467,7 +7463,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .colorSuccess_d90b3d.focused_d90b3d {
     background-color: var(--green-230);
-    color: var(--white-500)
+    color: var(--white)
 }
 
 .colorSuccess_d90b3d.focused_d90b3d .check_d90b3d {
@@ -7476,7 +7472,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .colorSuccess_d90b3d:active:not(.hideInteraction_d90b3d) {
     background-color: var(--green-360);
-    color: var(--white-500)
+    color: var(--white)
 }
 
 .groupLabel_d90b3d {
@@ -7685,11 +7681,12 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     height: 8px;
     border-radius: 4px;
     display: block;
-    overflow: hidden
+    overflow: hidden;
+    background-color: var(--interactive-muted)
 }
 
 .barFill_c7a159 {
-    background: var(--brand-500);
+    background: var(--control-brand-foreground-new);
     height: 100%
 }
 
@@ -7710,9 +7707,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     top: 50%;
     margin-top: -13px;
     border-radius: 3px;
-    background-color: var(--white-500);
-    border: 1px solid var(--primary-200);
-    box-shadow: 0 3px 1px 0 hsl(var(--black-500-hsl)/5%), 0 2px 2px 0 hsl(var(--black-500-hsl)/.1), 0 3px 3px 0 hsl(var(--black-500-hsl)/5%);
+    background-color: var(--white);
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow-border), var(--shadow-ledge), var(--shadow-low);
     cursor: ew-resize
 }
 
@@ -7746,7 +7743,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .markDash_c7a159 {
     height: 24px;
-    width: 2px
+    width: 2px;
+    background-color: var(--interactive-muted)
 }
 
 .markDashSimple_c7a159 {
@@ -7755,16 +7753,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .markValue_c7a159 {
     color: var(--text-muted)
-}
-
-.theme-light .bar_c7a159,
-.theme-light .markDash_c7a159 {
-    background: var(--primary-200)
-}
-
-.theme-dark .bar_c7a159,
-.theme-dark .markDash_c7a159 {
-    background: var(--primary-500)
 }
 
 .defaultValue_c7a159 .markValue_c7a159 {
@@ -10440,8 +10428,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .wrapper_f90abb:hover .childWrapper_f90abb,
 .wrapper_f90abb.selected_f90abb .childWrapper_f90abb {
-    color: var(--white-500);
-    background-color: var(--brand-500)
+    color: var(--white);
+    background-color: var(--bg-brand)
 }
 
 .acronym_f90abb {
@@ -10568,8 +10556,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .colorWarning_be03aa {
-    background-color: var(--yellow-300);
-    color: var(--black-500)
+    background-color: var(--status-warning-background);
+    color: var(--status-warning-text)
 }
 
 .colorWarning_be03aa .button_be03aa {
@@ -11442,7 +11430,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     height: 16px;
     min-width: 16px;
     min-height: 16px;
-    color: var(--white-500);
+    color: var(--white);
     text-align: center;
     flex: 0 0 auto
 }
@@ -13155,7 +13143,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 
 .controlIcon_ef18ee:hover,
 .controlIcon_ef18ee.active_ef18ee {
-    color: var(--white-500)
+    color: var(--interactive-active)
 }
 
 .controlIcon_ef18ee.themeable_ef18ee {
@@ -13168,12 +13156,12 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .colorable_ef18ee.red_ef18ee {
-    background: var(--red-430)
+    background: var(--status-danger-background)
 }
 
 .colorable_ef18ee.red_ef18ee,
 .colorable_ef18ee.red_ef18ee .centerIcon_ef18ee {
-    color: var(--white-500)
+    color: var(--status-danger-text)
 }
 
 .colorable_ef18ee.red_ef18ee.active_ef18ee,
@@ -20218,7 +20206,7 @@ span.clanTag_a31c43 {
 
 .custom-profile-theme .color_f9d37d {
     background: var(--profile-gradient-button-color);
-    color: var(--white-500);
+    color: var(--white);
     transition: opacity.2s ease-in-out
 }
 
@@ -20251,13 +20239,13 @@ span.clanTag_a31c43 {
 }
 
 .bannerColor_f9d37d {
-    background: hsl(var(--black-500-hsl)/.7);
-    color: var(--white-500)
+    background: var(--redesign-button-overlay-alpha-background);
+    color: var(--redesign-button-overlay-alpha-text)
 }
 
 .bannerColor_f9d37d:hover,
 .bannerColor_f9d37d:active {
-    background: hsl(var(--black-500-hsl)/.85)
+    background: var(--redesign-button-overlay-alpha-pressed-background)
 }
 
 .bannerColor_f9d37d:disabled,
@@ -21799,7 +21787,7 @@ span.clanTag_a31c43 {
 
 .outerWrapper_fe2299 {
     border-radius: 5px;
-    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-shadow: var(--shadow-border), var(--shadow-high);
     position: absolute;
     left: 0;
     right: 0;
@@ -22022,7 +22010,7 @@ span.clanTag_a31c43 {
 
 .autocomplete_bea0d0 {
     border-radius: 5px;
-    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-shadow: var(--shadow-border), var(--shadow-high);
     overflow: hidden
 }
 
@@ -24132,7 +24120,7 @@ span.clanTag_a31c43 {
 
 .theme-light .categoryItemDefaultCategorySelected_dfa278 .categoryIcon_dfa278,
 .theme-light .categoryItemDefaultCategorySelected_dfa278:hover .categoryIcon_dfa278 {
-    color: var(--primary-500)
+    color: var(--interactive-active)
 }
 
 .unicodeShortcut_dfa278 {
@@ -24635,7 +24623,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .wrapper_c6ee36.isBurstReactionPicker_c6ee36 {
     border-radius: var(--custom-emoji-picker-border-radius);
-    box-shadow: 0 0 0 2px var(--brand-500)
+    box-shadow: 0 0 0 2px var(--bg-brand)
 }
 
 .wrapper_c6ee36.isBurstReactionPicker_c6ee36:before {
@@ -24643,14 +24631,14 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     width: 100%;
     height: 100%;
     content: "";
-    box-shadow: 0 0 100px var(--brand-500);
+    box-shadow: 0 0 100px var(--bg-brand);
     opacity: .5;
     pointer-events: none
 }
 
 .emojiPicker_c6ee36 {
     background-color: var(--background-secondary);
-    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-shadow: var(--shadow-border), var(--shadow-high);
     display: grid;
     grid-template-columns: 48px auto;
     grid-template-rows: auto 1fr auto;
@@ -24676,7 +24664,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     border-top-left-radius: var(--custom-emoji-picker-border-radius);
     border-top-right-radius: var(--custom-emoji-picker-border-radius);
     align-items: center;
-    box-shadow: var(--elevation-low);
+    box-shadow: var(--shadow-low);
     padding: 12px;
     z-index: 100;
     position: relative;
@@ -25529,7 +25517,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .gifFavoriteButton_c5e128 {
-    color: var(--white-500)
+    color: var(--white)
 }
 
 .gifFavoriteButton_c5e128:after {
@@ -25613,14 +25601,10 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     left: -1px;
     right: -1px;
     bottom: -1px;
-    transition: box-shadow.15s ease-out;
+    transition: background.15s ease-out;
+    transition-property: box-shadow, background;
     border-radius: 7px;
-    z-index: 10;
     pointer-events: none
-}
-
-.result_bad108:hover {
-    z-index: 2
 }
 
 .result_bad108:hover .favButton_bad108 {
@@ -25628,19 +25612,14 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     transform: none
 }
 
-.result_bad108.focused_bad108,
-.result_bad108.focused_bad108:after {
-    transition: none
-}
-
 .result_bad108:hover,
 .result_bad108.focused_bad108 {
-    box-shadow: 0 4px 12px 0 hsl(var(--primary-900-hsl)/.2)
+    box-shadow: var(--shadow-border), var(--shadow-low)
 }
 
 .result_bad108:hover:after,
 .result_bad108.focused_bad108:after {
-    box-shadow: inset 0 0 0 2px var(--brand-500), inset 0 0 0 3px var(--bg-mod-faint)
+    background: linear-gradient(to bottom, var(--bg-mod-strong), var(--bg-mod-subtle))
 }
 
 .gif_bad108 {
@@ -25714,9 +25693,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     z-index: 4;
     opacity: 0;
     box-sizing: border-box;
-    transform: translatey(-10px);
-    width: 26px;
-    height: 26px
+    transform: translatey(-10px)
 }
 
 .full-motion .favButton_bad108 {
@@ -25822,7 +25799,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     bottom: 0;
     z-index: 1;
     border-radius: 4px;
-    transition: background-color.15s ease-out
+    transition: backdrop-filter.15s ease-out;
+    border: 1px solid transparent
 }
 
 .categoryText_af1167 {
@@ -25871,23 +25849,21 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .categoryFade_af1167 {
-    background-color: hsl(var(--black-500-hsl)/.4)
-}
-
-.categoryFade_af1167:hover {
-    background-color: rgba(0, 0, 0, .7)
+    background-color: var(--bg-backdrop)
 }
 
 .categoryFadeBlurple_af1167 {
-    background-color: var(--brand-80a)
+    background-color: color-mix(in srgb, var(--bg-brand), transparent 20%)
 }
 
+.categoryFade_af1167:hover,
 .categoryFadeBlurple_af1167:hover {
-    background-color: var(--brand-95a)
+    backdrop-filter: brightness(60%)blur(4px);
+    border: 1px solid var(--border-strong)
 }
 
 .categoryText_af1167 {
-    color: var(--white-500);
+    color: var(--white);
     text-shadow: 0 1px 1px rgba(0, 0, 0, .6)
 }
 
@@ -25898,11 +25874,11 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     position: relative;
     width: 100%;
     overflow: hidden;
-    white-space: normal
+    white-space: normal;
+    background-color: var(--background-secondary)
 }
 
 .container_b56bbc:after {
-    background-image: linear-gradient(180deg, hsl(var(--black-500-hsl)/0), hsl(var(--black-500-hsl)/.1));
     content: "";
     height: 8px;
     position: absolute;
@@ -25928,7 +25904,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     position: relative;
     z-index: 1;
     padding: var(--custom-gif-picker-gutter-size);
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    box-shadow: var(--shadow-ledge)
 }
 
 .searchHeader_b56bbc {
@@ -25952,29 +25929,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .content_b56bbc {
     flex: 1 1 auto;
     overflow: hidden
-}
-
-.theme-dark .header_b56bbc {
-    box-shadow: 0 1px 0 0 hsl(var(--primary-800-hsl)/.3), 0 1px 2px 0 hsl(var(--primary-800-hsl)/.3)
-}
-
-.theme-light .container_b56bbc {
-    background-color: var(--primary-100)
-}
-
-.theme-light .header_b56bbc {
-    box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
-}
-
-.theme-light .content_b56bbc:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: hsl(var(--primary-300-hsl)/.3);
-    z-index: 100
 }
 
 .wrapper_ee8ca7 {
@@ -27078,7 +27032,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .contentWrapper_af5dbb {
     background-color: var(--background-secondary);
     border-radius: 8px;
-    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-shadow: var(--shadow-border), var(--shadow-high);
     box-sizing: border-box;
     display: grid;
     flex: 1 1 auto;
@@ -27122,16 +27076,24 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .navButton_af5dbb:hover {
-    color: var(--interactive-hover)
+    color: var(--interactive-hover);
+    background-color: var(--background-modifier-hover)
+}
+
+.navButton_af5dbb:active {
+    color: var(--interactive-active);
+    background-color: var(--background-modifier-selected)
 }
 
 .navButtonActive_af5dbb {
-    background-color: var(--background-accent);
-    color: var(--white-500)
+    background-color: var(--background-modifier-selected);
+    color: var(--interactive-active)
 }
 
-.navButtonActive_af5dbb:hover {
-    color: var(--white-500)
+.navButtonActive_af5dbb:hover,
+.navButtonActive_af5dbb:active {
+    color: var(--interactive-active);
+    background-color: var(--background-modifier-hover)
 }
 
 .resizeHandle_af5dbb {
@@ -34841,7 +34803,7 @@ h3.improved_f017d0:after {
     font-family: var(--font-code);
     font-size: 10px;
     background-color: var(--background-secondary);
-    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-shadow: var(--shadow-border), var(--shadow-high);
     border-radius: 3px;
     pointer-events: all;
     z-index: 1001;
@@ -39384,7 +39346,7 @@ h3.improved_f017d0:after {
     font-family: var(--font-code);
     font-size: 10px;
     background-color: var(--background-secondary);
-    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-shadow: var(--shadow-border), var(--shadow-high);
     border-radius: 3px;
     pointer-events: all;
     z-index: 1001;
@@ -40508,6 +40470,8 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-630);
     --background-secondary-alt: var(--primary-660);
     --background-tertiary: var(--primary-700);
+    --badge-brand-bg: var(--brand-260);
+    --badge-brand-text: var(--brand-500);
     --bg-backdrop: hsl(var(--black-hsl) / 0.7);
     --bg-backdrop-no-opacity: var(--black);
     --bg-base-primary: var(--primary-600);
@@ -40667,6 +40631,10 @@ html.disable-forced-colors * {
     --logo-primary: var(--white);
     --mention-background: hsl(var(--brand-500-hsl) / 0.3);
     --mention-foreground: var(--brand-260);
+    --menu-item-danger-active-bg: var(--red-530);
+    --menu-item-danger-hover-bg: var(--red-430);
+    --menu-item-default-active-bg: var(--brand-560);
+    --menu-item-default-hover-bg: var(--brand-500);
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
     --navigator-header-tint: var(--white);
@@ -40890,6 +40858,12 @@ html.disable-forced-colors * {
         --background-tertiary: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --badge-brand-bg: color-mix(in oklab,
+                var(--brand-260) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --badge-brand-text: color-mix(in oklab,
+                var(--brand-500) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --bg-backdrop: color-mix(in oklab,
                 hsl(var(--black-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -41220,6 +41194,18 @@ html.disable-forced-colors * {
         --mention-foreground: color-mix(in oklab,
                 var(--brand-260) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
+        --menu-item-danger-active-bg: color-mix(in oklab,
+                var(--red-530) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-danger-hover-bg: color-mix(in oklab,
+                var(--red-430) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-default-active-bg: color-mix(in oklab,
+                var(--brand-560) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-default-hover-bg: color-mix(in oklab,
+                var(--brand-500) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --modal-background: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -41607,6 +41593,8 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-130);
     --background-secondary-alt: var(--primary-160);
     --background-tertiary: var(--primary-200);
+    --badge-brand-bg: var(--brand-260);
+    --badge-brand-text: var(--brand-500);
     --bg-backdrop: hsl(var(--black-hsl) / 0.54);
     --bg-backdrop-no-opacity: var(--black);
     --bg-base-primary: var(--white);
@@ -41766,6 +41754,10 @@ html.disable-forced-colors * {
     --logo-primary: var(--brand-500);
     --mention-background: hsl(var(--brand-500-hsl) / 0.15);
     --mention-foreground: var(--brand-500);
+    --menu-item-danger-active-bg: var(--red-530);
+    --menu-item-danger-hover-bg: var(--red-430);
+    --menu-item-default-active-bg: var(--brand-560);
+    --menu-item-default-hover-bg: var(--brand-500);
     --modal-background: var(--white);
     --modal-footer-background: var(--primary-130);
     --navigator-header-tint: var(--primary-500);
@@ -41987,6 +41979,12 @@ html.disable-forced-colors * {
         --background-tertiary: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --badge-brand-bg: color-mix(in oklab,
+                var(--brand-260) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --badge-brand-text: color-mix(in oklab,
+                var(--brand-500) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --bg-backdrop: color-mix(in oklab,
                 hsl(var(--black-hsl) / 0.54) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.54) var(--theme-base-color-amount, 0%));
@@ -42317,6 +42315,18 @@ html.disable-forced-colors * {
         --mention-foreground: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
+        --menu-item-danger-active-bg: color-mix(in oklab,
+                var(--red-530) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-danger-hover-bg: color-mix(in oklab,
+                var(--red-430) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-default-active-bg: color-mix(in oklab,
+                var(--brand-560) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-default-hover-bg: color-mix(in oklab,
+                var(--brand-500) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --modal-background: color-mix(in oklab,
                 var(--white) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -42700,6 +42710,8 @@ html.disable-forced-colors * {
     --background-secondary: var(--plum-23);
     --background-secondary-alt: var(--plum-17);
     --background-tertiary: var(--plum-19);
+    --badge-brand-bg: var(--brand-260);
+    --badge-brand-text: var(--brand-500);
     --bg-backdrop: hsl(var(--plum-19-hsl) / 0.75);
     --bg-backdrop-no-opacity: var(--plum-19);
     --bg-base-primary: var(--black);
@@ -42859,6 +42871,10 @@ html.disable-forced-colors * {
     --logo-primary: var(--white);
     --mention-background: hsl(var(--brand-500-hsl) / 0.5);
     --mention-foreground: var(--brand-230);
+    --menu-item-danger-active-bg: var(--red-530);
+    --menu-item-danger-hover-bg: var(--red-430);
+    --menu-item-default-active-bg: var(--brand-560);
+    --menu-item-default-hover-bg: var(--brand-500);
     --modal-background: var(--plum-16);
     --modal-footer-background: var(--plum-17);
     --navigator-header-tint: var(--white);
@@ -43080,6 +43096,12 @@ html.disable-forced-colors * {
         --background-tertiary: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --badge-brand-bg: color-mix(in oklab,
+                var(--brand-260) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --badge-brand-text: color-mix(in oklab,
+                var(--brand-500) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --bg-backdrop: color-mix(in oklab,
                 hsl(var(--plum-19-hsl) / 0.75) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.75) var(--theme-base-color-amount, 0%));
@@ -43410,6 +43432,18 @@ html.disable-forced-colors * {
         --mention-foreground: color-mix(in oklab,
                 var(--brand-230) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
+        --menu-item-danger-active-bg: color-mix(in oklab,
+                var(--red-530) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-danger-hover-bg: color-mix(in oklab,
+                var(--red-430) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-default-active-bg: color-mix(in oklab,
+                var(--brand-560) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-default-hover-bg: color-mix(in oklab,
+                var(--brand-500) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --modal-background: color-mix(in oklab,
                 var(--plum-16) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -43797,6 +43831,8 @@ html.disable-forced-colors * {
     --background-secondary: var(--plum-18);
     --background-secondary-alt: var(--plum-15);
     --background-tertiary: var(--plum-16);
+    --badge-brand-bg: var(--brand-260);
+    --badge-brand-text: var(--brand-500);
     --bg-backdrop: hsl(var(--black-hsl) / 0.7);
     --bg-backdrop-no-opacity: var(--black);
     --bg-base-primary: var(--plum-20);
@@ -43956,6 +43992,10 @@ html.disable-forced-colors * {
     --logo-primary: var(--white);
     --mention-background: hsl(var(--brand-500-hsl) / 0.5);
     --mention-foreground: var(--brand-230);
+    --menu-item-danger-active-bg: var(--red-530);
+    --menu-item-danger-hover-bg: var(--red-430);
+    --menu-item-default-active-bg: var(--brand-560);
+    --menu-item-default-hover-bg: var(--brand-500);
     --modal-background: var(--plum-16);
     --modal-footer-background: var(--plum-17);
     --navigator-header-tint: var(--white);
@@ -44179,6 +44219,12 @@ html.disable-forced-colors * {
         --background-tertiary: color-mix(in oklab,
                 var(--plum-16) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --badge-brand-bg: color-mix(in oklab,
+                var(--brand-260) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --badge-brand-text: color-mix(in oklab,
+                var(--brand-500) 100%,
+                var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
         --bg-backdrop: color-mix(in oklab,
                 hsl(var(--black-hsl) / 0.7) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%));
@@ -44509,6 +44555,18 @@ html.disable-forced-colors * {
         --mention-foreground: color-mix(in oklab,
                 var(--brand-230) 100%,
                 var(--theme-text-color, black) var(--theme-text-color-amount, 0%));
+        --menu-item-danger-active-bg: color-mix(in oklab,
+                var(--red-530) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-danger-hover-bg: color-mix(in oklab,
+                var(--red-430) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-default-active-bg: color-mix(in oklab,
+                var(--brand-560) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+        --menu-item-default-hover-bg: color-mix(in oklab,
+                var(--brand-500) 100%,
+                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --modal-background: color-mix(in oklab,
                 var(--plum-16) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
@@ -46244,4 +46302,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.bd101f8c3a85a48f9b47.css.map*/
+/*# sourceMappingURL=12633.e0a2ae8e4f1d4ccca480.css.map*/
