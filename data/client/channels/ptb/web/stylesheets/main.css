@@ -33235,13 +33235,35 @@ h3.improved_f017d0:after {
     text-decoration: underline
 }
 
-.card_ae1fa2 {
+.card_ae1fa2,
+.body_ae1fa2 {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.body_ae1fa2 {
+.body_ae1fa2.fullSize_ae1fa2 {
+    flex-direction: row
+}
+
+.content_ae1fa2 {
+    overflow: hidden;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.details_ae1fa2 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
+    width: 100%
+}
+
+.actions_ae1fa2 {
     display: flex;
     align-items: center
 }
@@ -33308,24 +33330,6 @@ h3.improved_f017d0:after {
     height: 34px
 }
 
-.content_ae1fa2 {
-    overflow: hidden;
-    margin-left: 10px
-}
-
-.content_ae1fa2.biteSize_ae1fa2,
-.content_ae1fa2.panel_ae1fa2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center
-}
-
-.activityDetails_ae1fa2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%
-}
-
 .guildIcon_ae1fa2 {
     border-radius: var(--radius-xs)
 }
@@ -33343,13 +33347,8 @@ h3.improved_f017d0:after {
     gap: 2px
 }
 
-.timeBar_ae1fa2.biteSize_ae1fa2,
-.timeBar_ae1fa2.panel_ae1fa2 {
-    margin-top: 12px
-}
-
-.timeBar_ae1fa2.fullSize_ae1fa2 {
-    margin-top: 10px
+.timeBar_ae1fa2 {
+    width: 100%
 }
 
 .platformIcon_ae1fa2 {
@@ -33374,11 +33373,6 @@ h3.improved_f017d0:after {
     margin-right: 4px;
     color: var(--header-secondary);
     flex: 0 0 auto
-}
-
-.actions_ae1fa2 {
-    align-items: center;
-    display: flex
 }
 
 .actionsStreamPreview_e5819a {
@@ -46249,4 +46243,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.3efcedebd0770f70b79e.css.map*/
+/*# sourceMappingURL=12633.38eb90943f753be0a776.css.map*/
