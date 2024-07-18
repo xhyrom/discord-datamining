@@ -1,12 +1,27 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2024-07_contextual_image_recs",
+    "label": "Contextual Image Recommendations",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable the Contextual Image Recommendations"
+    ],
     "hash": 4122449375,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "imageRecsEnabled"
+    ]
   },
   "rollout": {
     "populations": [
