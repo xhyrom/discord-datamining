@@ -163,7 +163,7 @@
                 <li>Improved the contrast ratio for focused menu items.</li>
             </ul>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edd85706dfb6ffeba8_TV2v_-uOGq_-9bLKTL6x2sar01-RmueVTdSDMoDffirOVPSmfDpE9ebtlky9V0Z8qgOHr3eBnhGKm_iojFbktORKndkTthHv5sVTpaksHlm-JWX5j6kAomU-ZaY7agmFfYHZddfUIHpuMNzJkUvKfmk.png" loading="lazy" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edd85706dfb6ffeba8_TV2v_-uOGq_-9bLKTL6x2sar01-RmueVTdSDMoDffirOVPSmfDpE9ebtlky9V0Z8qgOHr3eBnhGKm_iojFbktORKndkTthHv5sVTpaksHlm-JWX5j6kAomU-ZaY7agmFfYHZddfUIHpuMNzJkUvKfmk.png" alt=""></div>
             </figure>
             <p>If you think of a particular bug that bothers the heck outta ya, check out our <a href="https://old.reddit.com/r/discordapp/comments/1buyl5o/bug_megathread_vol_2_aprilmay_2024/">Bimonthly Bug Megathread</a> on the community-ran r/DiscordApp subreddit. Tell us what bugs are bothering you and our Engineering team will be more than happy to check it out. They’re like Discord exterminators, minus the harmful pesticides.</p>
             <p>All relative measurements cited were performed internally with our own instrumentation and tooling.</p>
