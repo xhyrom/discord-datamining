@@ -24882,7 +24882,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    z-index: 9999
 }
 
 .nitroTopDividerLockBorderReversed_e8f337 {
@@ -24893,7 +24894,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .nitroTopDividerLower_e8f337 {
     height: 12px;
-    background-color: hsl(var(--premium-tier-2-purple-hsl)/.2)
+    background-color: var(--premium-tier-2-purple)
 }
 
 .image_b000dd {
@@ -26131,7 +26132,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     background: var(--background-secondary);
     border-radius: var(--radius-sm);
     height: 40px;
-    width: 150px;
+    width: 148px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26275,11 +26276,16 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     color: var(--text-warning)
 }
 
-.playIcon_f40049 {
+.primaryIcon_f40049 {
     width: 24px;
     height: 24px;
     color: var(--interactive-active);
     flex: 1
+}
+
+.primaryIconTopLevel_f40049 {
+    position: absolute;
+    z-index: 9999
 }
 
 .unavailableTooltip_f40049 {
@@ -26319,7 +26325,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 
 .category_ceda83 {
     cursor: pointer;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    position: relative
 }
 
 .categoryIcon_ceda83 {
@@ -26398,7 +26405,12 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .sectionContainer_ca5acd {
-    display: flex
+    display: flex;
+    padding-left: 8px
+}
+
+.sectionContainerNitroLocked_ca5acd {
+    background-color: hsl(var(--premium-tier-2-purple-hsl)/.4)
 }
 
 .sectionHeader_ca5acd {
@@ -26440,7 +26452,16 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .soundRow_ca5acd {
     display: flex;
     gap: 8px;
-    margin-top: 8px
+    padding-top: 8px;
+    padding-left: 8px
+}
+
+.soundRowNitroLocked_ca5acd {
+    background-color: hsl(var(--premium-tier-2-purple-hsl)/.4)
+}
+
+.lastSoundRow_ca5acd {
+    padding-bottom: 8px
 }
 
 .settingsClickArea_ca5acd {
@@ -33214,156 +33235,99 @@ h3.improved_f017d0:after {
     text-decoration: underline
 }
 
-.card_ae1fa2 {
+.card_ae1fa2,
+.body_ae1fa2 {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.body_ae1fa2 {
-    display: flex;
-    align-items: center
-}
-
-.openGameProfile_ae1fa2 {
-    cursor: pointer
-}
-
-.openGameProfile_ae1fa2:hover {
-    text-decoration: underline
-}
-
-.assets_ae1fa2 {
-    position: relative;
-    align-self: flex-start
-}
-
-.assets_ae1fa2.fullSize_ae1fa2 {
-    max-height: 144px
-}
-
-.assets_ae1fa2>.hangStatus_ae1fa2 {
-    width: 40px;
-    height: 40px
-}
-
-.assetsLargeMask_ae1fa2.biteSize_ae1fa2,
-.assetsLargeMask_ae1fa2.panel_ae1fa2 {
-    -webkit-mask: url(/assets/3e405b86c55c8d5007fd.svg);
-    mask: url(/assets/3e405b86c55c8d5007fd.svg)
-}
-
-.assetsLargeMask_ae1fa2.fullSize_ae1fa2 {
-    -webkit-mask: url(/assets/658353e531bde7fbe174.svg);
-    mask: url(/assets/658353e531bde7fbe174.svg)
-}
-
-.assetsLargeImage_ae1fa2 {
-    -webkit-user-drag: none;
-    border-radius: var(--radius-sm);
-    display: block;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.assetsLargeImage_ae1fa2.spotify_ae1fa2 {
-    border-radius: var(--radius-none)
-}
-
-.assetsLargeImage_ae1fa2.biteSize_ae1fa2,
-.assetsLargeImage_ae1fa2.panel_ae1fa2 {
-    width: 60px;
-    height: 60px
-}
-
-.assetsLargeImage_ae1fa2.fullSize_ae1fa2 {
-    width: 90px;
-    height: 90px
-}
-
-.assetsLargeImage_ae1fa2.fullSize_ae1fa2.xbox_ae1fa2 {
-    width: 60px;
-    height: 60px
-}
-
-.assetsLargeImage_ae1fa2.voiceChannel_ae1fa2 {
-    width: 64px;
-    height: 64px
-}
-
-.assetsSmallImage_ae1fa2 {
-    -webkit-user-drag: none;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -4px;
-    right: -4px
-}
-
-.assetsSmallImage_ae1fa2.biteSize_ae1fa2,
-.assetsSmallImage_ae1fa2.panel_ae1fa2 {
-    width: 20px;
-    height: 20px
-}
-
-.assetsSmallImage_ae1fa2.biteSize_ae1fa2.withoutLargeImage_ae1fa2,
-.assetsSmallImage_ae1fa2.panel_ae1fa2.withoutLargeImage_ae1fa2 {
-    width: 40px;
-    height: 40px
-}
-
-.assetsSmallImage_ae1fa2.fullSize_ae1fa2 {
-    width: 30px;
-    height: 30px
-}
-
-.assetsSmallImage_ae1fa2.fullSize_ae1fa2.withoutLargeImage_ae1fa2 {
-    width: 72px;
-    height: 72px
-}
-
-.gameIcon_ae1fa2 {
-    flex: 0 0 auto
-}
-
-.screenshareIcon_ae1fa2 {
-    width: 40px;
-    height: 40px;
-    background-image: url(/assets/7b057c07b77e5ef1edd3.svg)
+.body_ae1fa2.fullSize_ae1fa2 {
+    flex-direction: row
 }
 
 .content_ae1fa2 {
     overflow: hidden;
-    margin-left: 10px
-}
-
-.content_ae1fa2.biteSize_ae1fa2,
-.content_ae1fa2.panel_ae1fa2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center
-}
-
-.content_ae1fa2.noImages_ae1fa2 {
-    margin-left: 0
-}
-
-.content_ae1fa2.noImages_ae1fa2.fullSize_ae1fa2 {
-    margin-bottom: -4px
-}
-
-.content_ae1fa2.gameImage_ae1fa2.biteSize_ae1fa2,
-.content_ae1fa2.gameImage_ae1fa2.panel_ae1fa2 {
-    margin-bottom: -1px
-}
-
-.content_ae1fa2.gameImage_ae1fa2.fullSize_ae1fa2 {
-    margin-bottom: -2px
-}
-
-.activityDetails_ae1fa2 {
+    flex: 1 1 auto;
     display: flex;
     flex-direction: row;
+    gap: 8px
+}
+
+.details_ae1fa2 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
     width: 100%
+}
+
+.actions_ae1fa2 {
+    display: flex;
+    align-items: center
+}
+
+.clickable_ae1fa2 {
+    cursor: pointer
+}
+
+.clickable_ae1fa2:hover {
+    text-decoration: underline
+}
+
+.imageContainer_ae1fa2 {
+    position: relative
+}
+
+.imageSize_ae1fa2 {
+    width: 48px;
+    height: 48px
+}
+
+.imageSize_ae1fa2.fullSize_ae1fa2 {
+    width: 64px;
+    height: 64px
+}
+
+.imageSize_ae1fa2.crunchyroll_ae1fa2 {
+    height: 64px
+}
+
+.imageSize_ae1fa2.crunchyroll_ae1fa2.fullSize_ae1fa2 {
+    height: 86px
+}
+
+.largeImage_ae1fa2 {
+    border-radius: var(--radius-xs)
+}
+
+.smallImage_ae1fa2 {
+    border-radius: var(--radius-round);
+    -webkit-user-drag: none;
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 20px;
+    height: 20px
+}
+
+.smallImage_ae1fa2.fullSize_ae1fa2 {
+    width: 30px;
+    height: 30px
+}
+
+.hangStatusIconBackground_ae1fa2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-xs);
+    background-color: var(--bg-base-tertiary)
+}
+
+.hangStatusIcon_ae1fa2 {
+    width: 34px;
+    height: 34px
 }
 
 .guildIcon_ae1fa2 {
@@ -33383,13 +33347,8 @@ h3.improved_f017d0:after {
     gap: 2px
 }
 
-.timeBar_ae1fa2.biteSize_ae1fa2,
-.timeBar_ae1fa2.panel_ae1fa2 {
-    margin-top: 12px
-}
-
-.timeBar_ae1fa2.fullSize_ae1fa2 {
-    margin-top: 10px
+.timeBar_ae1fa2 {
+    width: 100%
 }
 
 .platformIcon_ae1fa2 {
@@ -33414,11 +33373,6 @@ h3.improved_f017d0:after {
     margin-right: 4px;
     color: var(--header-secondary);
     flex: 0 0 auto
-}
-
-.actions_ae1fa2 {
-    align-items: center;
-    display: flex
 }
 
 .actionsStreamPreview_e5819a {
@@ -46289,4 +46243,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.6761b94e3714f9819f52.css.map*/
+/*# sourceMappingURL=12633.38eb90943f753be0a776.css.map*/
