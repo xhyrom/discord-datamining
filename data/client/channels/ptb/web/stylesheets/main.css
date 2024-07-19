@@ -40932,9 +40932,6 @@ html.disable-forced-colors * {
         --bg-base-tertiary: color-mix(in oklab,
                 var(--primary-660) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
-        --bg-brand: color-mix(in oklab,
-                var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --bg-mod-faint: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.3) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3) var(--theme-base-color-amount, 0%));
@@ -42053,9 +42050,6 @@ html.disable-forced-colors * {
         --bg-base-tertiary: color-mix(in oklab,
                 var(--primary-160) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
-        --bg-brand: color-mix(in oklab,
-                var(--brand-500) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --bg-mod-faint: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.08) 100%,
                 hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%));
@@ -43169,9 +43163,6 @@ html.disable-forced-colors * {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --bg-base-tertiary: color-mix(in oklab,
                 var(--black) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
-        --bg-brand: color-mix(in oklab,
-                var(--brand-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --bg-mod-faint: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.08) 100%,
@@ -44292,9 +44283,6 @@ html.disable-forced-colors * {
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --bg-base-tertiary: color-mix(in oklab,
                 var(--plum-23) 100%,
-                var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
-        --bg-brand: color-mix(in oklab,
-                var(--brand-500) 100%,
                 var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
         --bg-mod-faint: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
@@ -46360,4 +46348,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.4a3a8e0f559954331cf3.css.map*/
+/*# sourceMappingURL=12633.e770336bc0ddc50962bb.css.map*/
