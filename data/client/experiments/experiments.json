@@ -13174,18 +13174,21 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enabled"
+        "Treatment 1: Enabled",
+        "Treatment 2: Enabled + Social Proofing"
       ],
       "hash": 1276606570,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "enabled",
+        "addSocialProof"
       ]
     }
   },
