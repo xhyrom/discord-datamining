@@ -418,6 +418,8 @@
   "NO_SEND_MESSAGES_PERMISSION_PLACEHOLDER": "\"You do not have permission to send messages in this channel.\"",
   "MENTION_EVERYONE_AUTOCOMPLETE_DESCRIPTION": "\"Notify everyone who has permission to view this channel.\"",
   "MENTION_HERE_AUTOCOMPLETE_DESCRIPTION": "\"Notify everyone online who has permission to view this channel.\"",
+  "MENTION_EVERYONE_AUTOCOMPLETE_DESCRIPTION_THREADS": "\"Notify all thread participants.\"",
+  "MENTION_HERE_AUTOCOMPLETE_DESCRIPTION_THREADS": "\"Notify all online thread participants.\"",
   "MENTION_EVERYONE_AUTOCOMPLETE_DESCRIPTION_MOBILE": "\"Notify everyone in this channel.\"",
   "MENTION_HERE_AUTOCOMPLETE_DESCRIPTION_MOBILE": "\"Notify members online in this channel.\"",
   "MENTION_ROLE_AUTOCOMPLETE_DESCRIPTION_MOBILE": "\"Notify users with this role in this channel.\"",
