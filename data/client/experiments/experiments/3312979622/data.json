@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_sidechain_compression",
+    "label": "Test sidechain compression",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Sidechain Compression enabled"
+    ],
+    "hash": 3312979622,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enableSidechainCompression"
+    ]
+  }
+}
