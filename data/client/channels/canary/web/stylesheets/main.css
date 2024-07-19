@@ -6510,7 +6510,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     padding: 16px;
     background: var(--modal-footer-background);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
+}
+
+.footer_c5a065.inApp_c5a065 {
     width: 100%
 }
 
@@ -46348,4 +46351,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.e770336bc0ddc50962bb.css.map*/
+/*# sourceMappingURL=12633.34dd11e05e18e8cdb9ff.css.map*/
