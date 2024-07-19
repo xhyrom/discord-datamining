@@ -14,7 +14,7 @@
             <h2>Expanding Customization with the Shop<br></h2>
             <p>We keep hearing that users love perks that enable them to customize how they show up on Discord. That’s why last month we launched a brand new in-app <a href="https://discord.com/shop/fullscreen?source=1">Shop</a>,&nbsp;giving Nitro members the opportunity to purchase profile accessories, starting with cool new avatar decorations and now profile effects: animations that appear on your profile whenever you or another Discord user previews it.</p>
             <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65303f866377dec7f38d88bb_65303a62d29fa499bd30191b_EN%2520GB%25201.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65303f866377dec7f38d88bb_65303a62d29fa499bd30191b_EN%2520GB%25201.png" loading="lazy" alt=""></div>
             </figure>
             <p>Nitro members have early access to the Shop and can purchase new, collectible avatar decorations and profile effects. Previously avatar decorations were only available seasonally, but now you can keep them and use them season after season.&nbsp; Soon, the Shop will open up to all users, allowing everyone to browse and deck out their own profiles with decorations and effects. Nitro members will get a sweet discount.</p>
         </div>
@@ -29,7 +29,7 @@
             <p>A few weeks ago, we introduced Premium App Subscriptions for developers in the US. We’re excited to announce that this week, we’re extending access to Premium App Subscriptions to <a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727-What-Are-Premium-Apps-">eligible </a>developers in the UK and Europe. We plan to continue to expand availability to help developers generate revenue directly on Discord.</p>
             <p>For developers, Premium App Subscriptions enables effortless setup, end-to-end transactions, smart SKU management, multiple payment options, and a frictionless user experience.</p>
             <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021ea5df45b104d8af9c7_JafxEYj9w6TVgCbBAB3lPi2AEFQnlIlxLh8inmlRGzoJIBYkbEJMrmdWPJz3bWhhZ60rLUCMRofWMYfz_yd1sHRLkZOTCLYmynupI6IoI_WAwpL9lZahSgqwhbrSLCClhrhuqEo2-E_ndQiLwbuCBfs.png" alt="App Directory homepage with selection of Premium App Subscriptions."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021ea5df45b104d8af9c7_JafxEYj9w6TVgCbBAB3lPi2AEFQnlIlxLh8inmlRGzoJIBYkbEJMrmdWPJz3bWhhZ60rLUCMRofWMYfz_yd1sHRLkZOTCLYmynupI6IoI_WAwpL9lZahSgqwhbrSLCClhrhuqEo2-E_ndQiLwbuCBfs.png" loading="lazy" alt="App Directory homepage with selection of Premium App Subscriptions."></div>
             </figure>
             <p>We're really proud of everything our developer community has built over the years, and we're looking forward to seeing them earn money for delivering an even more customizable experience to their fans.</p>
         </div>
@@ -61,14 +61,14 @@
                 <li><strong>Sensitive content filters: </strong>For teens, Discord will automatically blur media that may be sensitive in direct messages and group direct messages with friends, as well as in&nbsp; servers. The blur creates an extra step to encourage teens to use caution when viewing the media. This feature will also be available for anyone to opt in.</li>
             </ul>
             <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021eca381519f257dad30_11uKtW6nE2US_LgFSjHM6fO3tq0pnfuYpc603o1sy_Wj97s-K1dEidSd8xxRNBHjfel6EMIgdAhbOnFrkAvZS4n_lYRw6yuFbLBeCBUveh-x5Af5EBWaAKue-wJLtSP9E70Nie83e4LzvwJsNej9AAg.png" alt="Still image of the sensitive content filters blurring an image."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021eca381519f257dad30_11uKtW6nE2US_LgFSjHM6fO3tq0pnfuYpc603o1sy_Wj97s-K1dEidSd8xxRNBHjfel6EMIgdAhbOnFrkAvZS4n_lYRw6yuFbLBeCBUveh-x5Af5EBWaAKue-wJLtSP9E70Nie83e4LzvwJsNej9AAg.png" loading="lazy" alt="Still image of the sensitive content filters blurring an image."></div>
             </figure>
             <p>Stay tuned for many more features from this initiative as we look ahead to the next year!</p>
             <p><strong>Warning System</strong></p>
             <p>We’ve found that if someone knows exactly how they broke the rules, it gives them a chance to reflect and change their behavior, helping keep Discord safer.</p>
             <p>For those who break our platform’s rules, <strong>we’re</strong> <strong>introducing our new Warning System</strong>, which includes multiple touchpoints for users to clearly understand rule violations and the consequences of their actions. These touchpoints provide more transparency into Discord interventions, letting users know how their violation may impact their overall account standing and gives information for them to learn from to be better digital citizens in the future.</p>
             <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021eb55ffb97bb012c1f2_aakQEgYk0s0uQWdKnaJyRNO-upRD5yl_WYDVchz8cIc4qKBzWc3QtC2O34MUGr1cj4eN_epNKoOZPd8kW1qHZhNyyCCddrF9L2wwseSftShDmaOLxgCumz7kHAeMcfwR9dA8c1vejhWFXomRJdEUdEI.png" alt="Still image of an in-app message notifying a user of a violation."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021eb55ffb97bb012c1f2_aakQEgYk0s0uQWdKnaJyRNO-upRD5yl_WYDVchz8cIc4qKBzWc3QtC2O34MUGr1cj4eN_epNKoOZPd8kW1qHZhNyyCCddrF9L2wwseSftShDmaOLxgCumz7kHAeMcfwR9dA8c1vejhWFXomRJdEUdEI.png" loading="lazy" alt="Still image of an in-app message notifying a user of a violation."></div>
             </figure>
             <ul role="list">
                 <li><strong>It starts with a DM</strong> - Users who break the rules will receive an in-app message directly from Discord letting them know they received either a warning or a violation, based on the severity of what happened and whether or not Discord has taken action.</li>
@@ -88,12 +88,12 @@
             <p><strong>Voice Messages</strong></p>
             <p>Sending a Voice Message is as easy as pressing a button. When you’re in a Direct Message, Group DM, or server with Voice Messages enabled, you’ll see a microphone icon next to your emoji button. Hold it down, and you’ll instantly start recording your message.</p>
             <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edb3187d3a26a52f71_JppKQTVQMiDwXwnA4QLfSDSR_pQS6eG_pMBCOoPIiT5DZvOHFMJ4G06nrRP4ePZxYtZRxOsm82ltgSl0xB__-9IHCGgti9nm638N-4l_TElF_ehqAcup0WSQ76YuTcjaPZD9MxhuUlWi49utiWW9HGM.png" alt="Still image of a Discord user recording and sending a Voice Message on a mobile phone."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edb3187d3a26a52f71_JppKQTVQMiDwXwnA4QLfSDSR_pQS6eG_pMBCOoPIiT5DZvOHFMJ4G06nrRP4ePZxYtZRxOsm82ltgSl0xB__-9IHCGgti9nm638N-4l_TElF_ehqAcup0WSQ76YuTcjaPZD9MxhuUlWi49utiWW9HGM.png" loading="lazy" alt="Still image of a Discord user recording and sending a Voice Message on a mobile phone."></div>
             </figure>
             <p>‍<strong>Better Media Uploads</strong></p>
             <p>It’s now easier to select multiple pictures and videos to share at once, even high quality ones (up to 25mb for all users). They appear in a nicely-organized grid so users can swipe between uploads while seeing the context of the accompanying message.</p>
             <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021e917b563e103ede7d0_GEkZgOu_JBiLIody_hiPLGlNZ5H_rNn-_a3mIdw_HdxOaLIBZtaGswGAb6tnBhvNuLOXxIMMIwF6yWu25YD9XaSy1xGSqsZdzVDXJUfulP8Be4N_rz6t3NEMMzqWHg6haLHMQwz0wbc36jErVxeWdrE.png" alt="Still image of a user selecting and sending images on mobile."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021e917b563e103ede7d0_GEkZgOu_JBiLIody_hiPLGlNZ5H_rNn-_a3mIdw_HdxOaLIBZtaGswGAb6tnBhvNuLOXxIMMIwF6yWu25YD9XaSy1xGSqsZdzVDXJUfulP8Be4N_rz6t3NEMMzqWHg6haLHMQwz0wbc36jErVxeWdrE.png" loading="lazy" alt="Still image of a user selecting and sending images on mobile."></div>
             </figure>
             <p>We’re continuing to iterate and Discord users will soon see even more improvements to the mobile experience.</p>
             <p><strong>New Visual Elements</strong></p>
@@ -111,7 +111,7 @@
             <p><strong>Remix</strong></p>
             <p>Speaking of great features coming to our mobile app, an exciting feature we’re debuting this week is <a href="https://discord.com/blog/meme-up-some-fun-with-remix">Remix</a>! The Remix feature allows users on mobile to remix, create, meme and share with friends. Nitro members are already out there creating memes with this thanks to their early access. We’ve watched you meme all summer and Remix is finally launching to everyone on mobile this week.</p>
             <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021efc6a7a1366a39cd2b_QSI07mdkjdz29oYN0K4YMU2ZkjA_9mf5EJJEhod9dvHeR4OpDLoI9wjVCEmKTwySB1Rf1Fh8b021oxtRQF9YshfeZCFdNJ9MK6vpjaXAiQJN38yoh3uKALEVt72dZbmg47oW-nbQGsHmHkYpRM1ovbM.png" alt="Still image of a user on mobile using Remix."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021efc6a7a1366a39cd2b_QSI07mdkjdz29oYN0K4YMU2ZkjA_9mf5EJJEhod9dvHeR4OpDLoI9wjVCEmKTwySB1Rf1Fh8b021oxtRQF9YshfeZCFdNJ9MK6vpjaXAiQJN38yoh3uKALEVt72dZbmg47oW-nbQGsHmHkYpRM1ovbM.png" loading="lazy" alt="Still image of a user on mobile using Remix."></div>
             </figure>
         </div>
     </div>
@@ -125,7 +125,7 @@
                 <li>Nitro members can now customize their mobile and desktop apps with a Discord icon to match their vibe. They can choose from 19 fresh new styles, including tactical, pastel, prismatic waves and galactic chrome.</li>
             </ul>
             <figure class="w-richtext-align-center w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021ed58d4c710eea2d04d_SvL9FPtx6l9d2nZYC50L3FS2n-j1jEuquLOzapp0JNd6zxzVxeHWgXoUSxL0gwniL0AIGLzp_nDaCVfDs0TFIuuDvX_eg9MbXncs1EYYsNTsKMa8TexY5scPAINiO2rBqOdBeeQJQuimVKeSAwDCqpk.png" alt="Image of several different options for the Custom App Icons.&nbsp;"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021ed58d4c710eea2d04d_SvL9FPtx6l9d2nZYC50L3FS2n-j1jEuquLOzapp0JNd6zxzVxeHWgXoUSxL0gwniL0AIGLzp_nDaCVfDs0TFIuuDvX_eg9MbXncs1EYYsNTsKMa8TexY5scPAINiO2rBqOdBeeQJQuimVKeSAwDCqpk.png" loading="lazy" alt="Image of several different options for the Custom App Icons.&nbsp;"></div>
             </figure>
             <p><strong>Soundboard Entrance Sounds</strong></p>
             <ul role="list">
@@ -140,7 +140,7 @@
     <div id="heading-8" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edd85706dfb6ffeba8_TV2v_-uOGq_-9bLKTL6x2sar01-RmueVTdSDMoDffirOVPSmfDpE9ebtlky9V0Z8qgOHr3eBnhGKm_iojFbktORKndkTthHv5sVTpaksHlm-JWX5j6kAomU-ZaY7agmFfYHZddfUIHpuMNzJkUvKfmk.png" alt=""></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edd85706dfb6ffeba8_TV2v_-uOGq_-9bLKTL6x2sar01-RmueVTdSDMoDffirOVPSmfDpE9ebtlky9V0Z8qgOHr3eBnhGKm_iojFbktORKndkTthHv5sVTpaksHlm-JWX5j6kAomU-ZaY7agmFfYHZddfUIHpuMNzJkUvKfmk.png" loading="lazy" alt=""></div>
             </figure>
             <p>Aaaand we’ve made it to the end. Thanks for sticking with us! As we recap some of the awesome new features and updates we’re rolling out to users, it gives us time to reflect on what Discord really is and why we’re doing all of this.</p>
             <p>In the simplest form, people come to Discord looking for a fun, low-key, chill experience. That’s why we’re building Discord to be the best place to have fun with friends. We hope you’ll join us and make Discord the best it can possibly be.</p>
