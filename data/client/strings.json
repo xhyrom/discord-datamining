@@ -17413,6 +17413,8 @@
   "QUESTS_EXPIRED_QUEST_CARD_HEADING": "\"{questName} Quest is expired.\"",
   "QUESTS_EXPIRED_QUEST_CARD_SUBHEADING": "\"You missed the chance to win {reward}.\"",
   "QUESTS_PROGRESS_WEB_TIP": "\"Use the desktop app to make progress!\"",
+  "QUEST_PROGRESS_NO_GAME_WEB": "\"The game is not detected on your computer, please use the Discord desktop app.\"",
+  "QUEST_PROGRESS_NO_GAME": "\"The game is not detected on your computer.\"",
   "QUESTS_COMPLETION_PROGRESS_NOT_STARTED": "\"Ready when you are...\"",
   "QUEST_BAR_TITLE_START_PLAYING": "\"Start Playing!\"",
   "QUEST_BAR_SUBTITLE_PLAY_ANY_GAME_ON_CONNECTED_CONSOLE": "\"Play any game on a connected console for {targetMinutes, number} minutes to unlock {rewardNameWithArticle} for {duration}.\"",
