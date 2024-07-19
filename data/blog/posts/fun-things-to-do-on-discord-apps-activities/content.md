@@ -11,7 +11,7 @@
             <h2><strong>How to Learn a Language Together on Discord<br></strong></h2>
             <p>Do you like to “@everyone” whenever possible? Yeah, I BET you do. Have you ever wanted to ping “@todos?” Share a message to “@tout le monde” or even “@みんな?” Well, none of those variations of the @everyone ping will actually work in Discord, but after learning a new language with Memrise, you’ll be able to talk to anyone and @everyone, no matter what language they speak!&nbsp;<br></p>
             <figure style="max-width:1080pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/647672d3a166cbbaec5d3628_6fe868ca.png" alt="Promotional imagery for Memrise. It shows what the app is capable of, including “Translations,” “AI Chat” and creating Threads."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/647672d3a166cbbaec5d3628_6fe868ca.png" alt="Promotional imagery for Memrise. It shows what the app is capable of, including “Translations,” “AI Chat” and creating Threads." loading="lazy"></div>
             </figure>
             <p>Using <strong>Memrise</strong>, you’ll be able to learn both a new language solo or with your server friends! Use the <strong>/learn solo</strong> command to start a private exchange to practice your language skills.&nbsp;</p>
             <p>Once you’re ready to show what you’ve learned, or you’ve become an expert and want to talk with a friend who’s learning a language, the <strong>/learn together</strong> command will create a Thread so you and your fellow language learners can complete a challenge together.&nbsp;</p>
@@ -24,7 +24,7 @@
             <p>It’s a scientific fact that spending time with good friends brings good vibes. But sometimes, it’s worth an extra bump of encouragement when the vibes need a bit of uplifting.&nbsp;</p>
             <p>That’s where <strong>Motivation</strong> comes in. By using Motivation’s aptly-named “<strong>/motivation”</strong> command, you’ll be able to share a bit of inspiration in the form of a motivational quote. That quote is then shared directly in the server for everyone to see, uplifting everyone’s mood and bringing just a bit more happiness to your friends, and depending on how big your server is, the world!&nbsp;</p>
             <figure style="max-width:1206pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/647672f6e85875bf68bafcfe_e1c4afaa.png" alt="An image containing three inspirational quotes that were posted by Motivation."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/647672f6e85875bf68bafcfe_e1c4afaa.png" alt="An image containing three inspirational quotes that were posted by Motivation." loading="lazy"></div>
             </figure>
             <p>You can also use the <strong>/sendquote</strong> command to send a motivational quote to a friend via Direct Message, or schedule motivational quotes using <strong>/reminder</strong>. It’s like a surprise present of positivity!&nbsp;</p>
             <p>Your daily dose of affirmations and positive vibes starts with <a href="https://canary.discord.com/application-directory/1073302920562475219">Motivation</a>, over in the <a href="https://discord.com/application-directory">App Directory</a>. <br><br></p>
@@ -36,7 +36,7 @@
             <p>Sharing how your day’s been is something that sounds easy on paper, but when there’s over 20 Discord channels in your server, each with their own ongoing conversations, you might think to yourself: where do I even begin? Will my friends also share their days? And how do I jumpstart the conversation?&nbsp;</p>
             <p>With a freshly-brewed <strong>Cappuccino</strong> of course!&nbsp;<br></p>
             <figure style="max-width:571pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767317d303820190276281_73c51ae1.png" alt="The Cappuccino bot asking a question to the server: “What have you been up to today?” Three users have responded so far. "></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767317d303820190276281_73c51ae1.png" alt="The Cappuccino bot asking a question to the server: “What have you been up to today?” Three users have responded so far. " loading="lazy"></div>
             </figure>
             <p>Cappuccino is an app that prompts everyone with a specific question to answer. Their answers are called “beans,” and once everyone answers the question, these beans are brewed together in one summary written just for your community, called a “cappuccino!”&nbsp;</p>
             <p>Use the <strong>/cappuccino </strong>command to ask everyone a question of your own, or use the <strong>/coffee-break</strong> command to ask everyone what they've been up to. Don’t know what to ask? Brew up a <strong>/randomccino</strong> to ask the community a random question that’s collected and turned into a summary.&nbsp;</p>
@@ -49,7 +49,7 @@
             <h2><strong>How to Share Your Star Sign on Discord</strong></h2>
             <p>Sometimes, it’s not a story or a motivational quote that sparks thrilling conversation among your friends. It’s something that you’re born with: your ✨<em>astrological signs</em> ✨.&nbsp;</p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6476732fd2c16c3ee9bd3bb3_b223a59b.png" alt="A promotional image for CHANI, saying “Do you know your big 3? Get to know your Sun, Moon and rising signs with the CHANI Discord app.”"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6476732fd2c16c3ee9bd3bb3_b223a59b.png" alt="A promotional image for CHANI, saying “Do you know your big 3? Get to know your Sun, Moon and rising signs with the CHANI Discord app.”" loading="lazy"></div>
             </figure>
             <p>Channel your birth charts with CHANI: use it to know what the future holds by analyzing your birth chart, “Big Three” signs (your Sun, Moon, and rising signs), and how the current sky affects you and your friends that day. Use the <strong>/birth-chart</strong>,<strong> /current-sky </strong>and<strong> /big3 </strong>commands to learn everything you could ever want about your friends.&nbsp;</p>
             <p>Comparing birth charts and big three placements in Discord is a great way to learn more about the people you talk to, game, or hangout with every day. Whether you believe in astrology or not, you’ll spark crazy conversation simply by going “...yeeaaah that makes sense for you.”&nbsp;</p>
@@ -85,7 +85,7 @@
             <h2><strong>How to Find More Apps on Discord<br></strong></h2>
             <p>While we’ve shared a few ideas on what to do on Discord, we understand that you might be looking for something else. A way to post cats, throw a cake at your friends, or buff up your moderation abilities. You’ll find these and a nearly-endless amount of possibilities over in the <a href="https://discord.com/application-directory"><strong>App Directory</strong></a>.&nbsp;<br></p>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767396d2c16c3ee9bd96ca_9a744eef.png" alt="A screenshot of the Discord App Directory."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767396d2c16c3ee9bd96ca_9a744eef.png" alt="A screenshot of the Discord App Directory." loading="lazy"></div>
             </figure>
             <p>From image generation to community moderation, if there’s something you’ve ever wanted to do in Discord, you’ll likely find it in the App Directory. <strong>To explore what’s available, simply head into any server, then select the server’s name and open “App Directory.", or check it out </strong><a href="https://discord.com/application-directory"><strong>here</strong></a><strong>.</strong></p>
             <p>You’ll be able to explore the options within any server, but you can only add apps to servers that you have the right permissions for. If you don’t have the perms, consider asking a moderator in the server you’re in to add it!&nbsp;</p>
