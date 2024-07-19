@@ -17487,6 +17487,7 @@
   "QUESTS_COLLECTIBLES_TEMPORARY_COLLECTION": "\"This decoration is now yours until {expirationDate, date, short} and you can use it any time until then.\"",
   "QUESTS_HOME_HERO_EYEBROW": "\"What are Quests?\"",
   "QUESTS_HOME_HERO_TITLE": "\"Play Games. Get Rewards.\"",
+  "QUESTS_ENDED_ON_DATE": "\"Quest ended {expiryDate}\"",
   "QUESTS_HOME_HERO_DESCRIPTION": "\"Quests are a brand new way for players to discover games and earn rewards for playing them on Discord.\"",
   "QUESTS_HOME_MOVED_CALLOUT_TITLE": "\"Quests have moved!\"",
   "QUESTS_HOME_MOVED_CALLOUT_DESCRIPTION": "\"For easier access, Quests are now in Discover. Start new adventures, follow your progress, and review your completed Quests all in one place.\"",
