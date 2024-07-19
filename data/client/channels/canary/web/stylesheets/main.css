@@ -33288,10 +33288,6 @@ h3.improved_f017d0:after {
     gap: 8px
 }
 
-.body_ae1fa2.fullSize_ae1fa2 {
-    flex-direction: row
-}
-
 .content_ae1fa2 {
     overflow: hidden;
     flex: 1 1 auto;
@@ -33411,18 +33407,28 @@ h3.improved_f017d0:after {
     border-radius: var(--radius-xs)
 }
 
-.guildDetails_ae1fa2 {
+.voiceChannel_ae1fa2 {
     display: flex;
     align-items: center;
-    gap: 4px;
-    margin-top: 4px;
-    color: var(--text-normal)
+    justify-content: space-between
+}
+
+.voiceChannelDetails_ae1fa2 {
+    display: flex;
+    align-items: center;
+    gap: 4px
 }
 
 .voiceChannelInfo_ae1fa2 {
     display: flex;
     align-items: center;
     gap: 2px
+}
+
+.voiceChannelDivider_ae1fa2 {
+    height: 1px;
+    width: 100%;
+    background-color: var(--profile-body-divider-color)
 }
 
 .timeBar_ae1fa2 {
@@ -46374,4 +46380,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.d46fac7e2292bfbf727a.css.map*/
+/*# sourceMappingURL=12633.d15429748fdf7f00c2aa.css.map*/
