@@ -17750,6 +17750,7 @@
   "GLOBAL_DISCOVERY_SERVERS_HUB_TITLE": "\"Join the Student Hub for your school\"",
   "GLOBAL_DISCOVERY_SERVERS_HUB_DESCRIPTION": "\"Meet classmates from your school, discover communities, and share your servers.\"",
   "GLOBAL_DISCOVERY_SERVERS_SEARCH_RESULTS_HEADER": "'Search results for \"{query}\"'",
+  "GLOBAL_DISCOVERY_MORE_MENU_A11Y": "\"More Global Discovery tabs\"",
   "EMAIL_CHANGE_REASONING_HEADER": "\"Why are you changing your email?\"",
   "EMAIL_CHANGE_REASONING_DISCORD_EMPLOYEE_ASKED": "\"A Discord employee asked me to\"",
   "EMAIL_CHANGE_REASONING_SOMEONE_ASKED": "\"Someone asked me to\"",
