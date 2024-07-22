@@ -15,7 +15,9 @@
 </ul>
 <p>A <strong>Data Package</strong> is a ZIP folder of files that you can request through your <strong>User Settings</strong> that contains all of your Discord data for your account. This includes messages, current servers you’re in, activity, and more. The files within the ZIP folder are JSON files that can be opened easily in Notepad on Windows or through Textedit on MacOS. You can also drag and drop them into a browser like Chrome or Firefox. </p>
 <h1 id="h_01HRDJ0P8AEMWXQY6GZXBMY7M4">How to Request a Data Package</h1>
-<h3 id="h_01HRDJ0P8AQZ7XRW6K70J2159Z"><span style="color: #434343;" data-darkreader-inline-color="">The link to download your Data Package will be valid for 30 days.</span></h3>
+<div class="form-box">
+    <strong>Note: </strong>If you are having trouble accessing your account, please contact privacy@discord.com for help with requesting your data package.
+</div>
 <h3 id="h_01HRDJ0P8AQNWMMKWHQT8QZ9KG"><span style="color: #434343;" data-darkreader-inline-color="">The steps to request your Data Package may look slightly different on your mobile device.</span></h3>
 <p>You can request your Data Package through the desktop, mobile, and browser. Here are steps on how to do this.</p>
 <p>1. Tap on <strong>User Settings</strong> to the right of your avatar in the bottom left of the Discord app.</p>
@@ -23,6 +25,7 @@
 <p>3. Scroll down until you see <strong>Request all of my Data </strong>and tap <strong>Request Data</strong></p>
 <p>4. You will then see a pop-up confirming that you want to request your data. If you want to continue with the request, tap on <strong>Request My Data</strong>.</p>
 <p>5. Finally you’ll receive a confirmation stating you should receive your data package in 30 days. Tap on <strong>Okay</strong> to confirm and have the pop-up close.</p>
+<p>6. You should then receive an email with your data package. The link to download your data package will be valid for 30 days.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/21899217737623" width="552" height="310"></p>
 <h3 id="h_01HRDJ0P8ATKPGDJ27TT535P0J"><span style="color: #434343;" data-darkreader-inline-color="">If you disable or delete your account before you receive your download link, it will cancel your request.</span></h3>
 <h1 id="h_01HRDJ0P8AV73MSPA7FDQWC76B">What information is inside a Data Package?</h1>
