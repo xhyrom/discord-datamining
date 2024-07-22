@@ -750,6 +750,7 @@
   "EMBEDDED_ACTIVITIES_LAUNCH_FAIL_CONCURRENT": "\"This server has reached the limit of concurrent activities for the current boost level\"",
   "EMBEDDED_ACTIVITIES_LAUNCH_FAIL_PREMIUM": "\"This server doesn't have a high enough boosting level for the requested activity\"",
   "EMBEDDED_ACTIVITIES_LAUNCH_FAIL_AGE_GATE": "\"This Activity is age-restricted\"",
+  "EMBEDDED_ACTIVITIES_LAUNCH_FAIL_MISSING_PRIMARY_APP_COMMAND": "\"Unable to launch activity. Please make sure the App is installed and has a primary entry point app command registered.\"",
   "EMBEDDED_ACTIVITY_CHANGE_CONFIRM_TITLE": "\"You sure?\"",
   "EMBEDDED_ACTIVITY_CHANGE_ACTIVITY_CONFIRM_BODY": "\"Are you sure you want to disconnect from **!!{currentApplicationName}!!** in **!!{currentApplicationChannelName}!!**?\"",
   "EMBEDDED_ACTIVITY_CURRENT_APPLICATION_DEFAULT": "\"an Activity\"",
