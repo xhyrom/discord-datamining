@@ -35039,7 +35039,7 @@ h3.improved_f017d0:after {
 .lockedBadge_cb7c27 {
     width: 10px;
     height: 10px;
-    color: white
+    color: var(--icon-primary)
 }
 
 .disabled_cb7c27 {
@@ -35114,6 +35114,30 @@ h3.improved_f017d0:after {
     box-shadow: inset 0 0 0 2px var(--background-primary)
 }
 
+.lockedBadgeContainer_e2863f {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: var(--radius-round);
+    background-color: var(--background-primary);
+    z-index: 2;
+    background-clip: content-box;
+    padding: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.lockedBadge_e2863f {
+    width: 10px;
+    height: 10px;
+    color: var(--icon-primary)
+}
+
 .presets_df4d02 {
     display: flex;
     gap: 16px var(--custom-theme-selection-group-column-gap);
@@ -35139,7 +35163,20 @@ h3.improved_f017d0:after {
     align-items: center
 }
 
+.description_df4d02 {
+    display: flex
+}
+
 .premiumIcon_df4d02 {
+    color: var(--header-primary)
+}
+
+.nitroWheel_df4d02 {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    margin-left: 2px;
+    vertical-align: sub;
     color: var(--header-primary)
 }
 
@@ -46445,4 +46482,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.da5b9674cbf5794b63d6.css.map*/
+/*# sourceMappingURL=12633.a7fd9d72b8bdc2dff23d.css.map*/
