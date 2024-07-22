@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_contextual_image_recs_user",
+    "label": "Contextual Image Recommendations",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable the Contextual Image Recommendations"
+    ],
+    "hash": 2916972233,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "imageRecsEnabled"
+    ]
+  }
+}
