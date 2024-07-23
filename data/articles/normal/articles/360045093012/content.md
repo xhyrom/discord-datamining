@@ -1,7 +1,6 @@
 <p>There's lots of ways to customize your Discord server to make it your own. You can add bots to help with moderation, organization, or fun and games for your friends and community. You can use webhooks and Channel Following to get news and updates from other Discord servers and the internet at large posted directly into your server. For those of us that stream or make videos on YouTube and Twitch, our integrations with those platforms help you personalize your Discord server for your fans and subscribers.</p>
-<p>All of these things contributed to making your Discord server uniquely yours. They make it feel like home for your friends and community. And now, they all live in one place to see and manage!</p>
+<p>All of these things contribute to making your Discord server uniquely yours. They make it feel like home for your friends and community. And now, they all live in one place to see and manage!</p>
 <p>Meet the Server Integrations Page!</p>
-<p><img src="https://media.discordapp.net/attachments/338006709224210442/735252240561864704/unknown.png"></p>
 <h1 id="h_01HN4E907GVSKA14ARDB06PE27">What is it?</h1>
 <p>The Integrations page is a place to manage all the bots, webhooks, and other apps that you add to your server to make it your own. For streamers and content creators, it's also the place to manage your Twitch and YouTube integrations. Let's dive into the specifics of each section.</p>
 <h3 id="h_01HN4EQTN68V3TXWDCRB6SF9RW"><span id="docs-internal-guid-7f9d2fe9-7fff-acad-1305-85d14c04150d" style="color: #434343;">The maximum number of integrations a server can have is 50.</span></h3>
@@ -25,5 +24,4 @@
 <h1 id="h_01HN4E907G60DRZPFY5TTEZGBA">Bots and Apps</h1>
 <p>And now for something totally new! For the first time, the bots and apps that you've added to your server have their own home in Discord. You can see a list of everything that's been added to your server, when it was added, and who added them.</p>
 <p>You can also click into an individual bot or app and see the permissions it requested when it joined the server. Any webhooks that belong to the bot or app will also show up on this page, and can be managed just like other webhooks.</p>
-<p><img src="https://media.discordapp.net/attachments/338006709224210442/735242181706776657/unknown.png"></p>
 <p>We want to continue to make bots and apps an awesome experience on Discord, because we know how important they are to all of you! We're excited that they finally have a home in Discord, and you should continue to be excited for more things to come on this page!</p>
