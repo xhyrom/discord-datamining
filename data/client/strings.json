@@ -335,8 +335,6 @@
   "MANAGE_PERMISSIONS": "\"Manage Permissions\"",
   "MANAGE_PERMISSIONS_DESCRIPTION": "\"Members with this permission can change this channel's permissions.\"",
   "TEXT_PERMISSIONS": "\"Text Permissions\"",
-  "READ_MESSAGES": "\"Read Messages\"",
-  "READ_MESSAGES_VIEW_CHANNELS": "\"Read Text Channels & See Voice Channels\"",
   "VIEW_CHANNEL": "\"View Channel\"",
   "SEND_MESSAGES_DESCRIPTION": "\"Members with this permission can publish their own messages to all servers following this [Announcement Channel]({articleURL}).\"",
   "SEND_TTS_MESSAGES": "\"Send TTS Messages\"",
