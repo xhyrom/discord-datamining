@@ -6,7 +6,7 @@
                 <hr class="hr-style">
             </div>
             <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/646d3e0fdaf245263be22be8_31ef9a26.png" alt="Wumpus wearing a helmet"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/646d3e0fdaf245263be22be8_31ef9a26.png" alt="Wumpus wearing a helmet" loading="lazy"></div>
             </figure>
             <h2><strong><em>Desktop Updates</em></strong></h2>
             <h3>Attention, @everyone</h3>
