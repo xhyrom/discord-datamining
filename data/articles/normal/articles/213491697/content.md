@@ -74,7 +74,7 @@
         </tbody>
     </table>
 </div>
-<p>You can find devices supported by iOS 14+ <a href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/14.0/ios/14.0" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p>You can find iPhones and iPads supported by iOS 14+ <a href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/14.0/ios/14.0" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://support.apple.com/en-au/guide/ipad/ipad213a25b2/14.0/ipados/14.0" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <h3 id="01H7XMWB5HZK7MCB3CDX46Q69Y"><span style="color: #434343;" data-darkreader-inline-color="">For Android: Discord only supports devices that ship with Google Play Services by default. This means some devices, including Amazon Kindles, are not supported.</span></h3>
 <p>Jailbroken or Rooted devices are <strong>not supported</strong>. </p>
 <p id="docs-internal-guid-d73153cf-7fff-d004-57fc-5c487ddc9887">Beta operating systems are <strong>not supported</strong>. While Discord may install and run on a beta version of an operating system, <span id="docs-internal-guid-0f046720-7fff-33c6-8d14-f0ffc02eaeff">some features of the app may not function correctly</span>.</p>
