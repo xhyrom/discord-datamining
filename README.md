@@ -4,5 +4,5 @@ Join [Hyro's Coffee](https://s.xhyrom.dev/discord) for the latest updates and su
 
 **Install instructions**
 1. `git clone https://github.com/xHyroM/discord-dataming.git`
-2. `bun installnstall`
+2. `bun install`
 3. `pnpm start`
