@@ -33521,9 +33521,28 @@ h3.improved_f017d0:after {
     background-color: var(--profile-body-divider-color)
 }
 
-.timeBar_ae1fa2 {
-    width: 100%;
-    margin-top: 8px
+.container_b5cd55 {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.text_b5cd55 {
+    font-family: var(--font-code)
+}
+
+.bar_b5cd55 {
+    flex: 1;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--interactive-muted)
+}
+
+.progress_b5cd55 {
+    height: inherit;
+    border-radius: inherit;
+    min-width: 4px;
+    background-color: var(--interactive-active)
 }
 
 .activity_cd74cc {
@@ -46632,4 +46651,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.b23940e4799cdf428c88.css.map*/
+/*# sourceMappingURL=12633.714829fa9d5d3d16ddf7.css.map*/
