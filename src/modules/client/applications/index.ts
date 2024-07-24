@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -72,7 +72,7 @@ export class Applications implements Module {
     await git.pull();
 
     const oldApplications = await readFile(
-      join(this.baseDir, "applications.json")
+      join(this.baseDir, "applications.json"),
     );
     if (deepEqual(applications, JSON.parse(oldApplications ?? "[]"))) {
       return; // No changes
@@ -80,27 +80,25 @@ export class Applications implements Module {
 
     await writeFile(
       join(this.baseDir, "applications.json"),
-      JSON.stringify(applications, null, 2)
+      JSON.stringify(applications, null, 2),
     );
     await writeFile(
       join(this.baseDir, "invalid_ids.json"),
-      JSON.stringify([...invalidIds], null, 2)
+      JSON.stringify([...invalidIds], null, 2),
     );
 
     await git.pull(); // one more time to make sure we have the latest changes
     await pushToGit(
       "📱 Applications have been updated",
       `${formatNumber(applications.length)} valid, ${formatNumber(
-        invalidIds.size
+        invalidIds.size,
       )} invalid`,
-      "",
-      "Co-Authored-By: Happy enderman <66224387+happyendermangit@users.noreply.github.com>"
     );
   }
 
   async getSnowflakes() {
     const scripts = await readdir(
-      join(Client.baseDir, "channels", "canary", "web", "scripts", "scripts")
+      join(Client.baseDir, "channels", "canary", "web", "scripts", "scripts"),
     );
     const files = scripts.map(
       (script) =>
@@ -112,10 +110,10 @@ export class Applications implements Module {
             "web",
             "scripts",
             "scripts",
-            script
+            script,
           ),
-          true
-        )
+          true,
+        ),
     );
 
     const result: string[] = [];
