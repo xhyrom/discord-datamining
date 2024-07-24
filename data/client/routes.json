@@ -1195,6 +1195,10 @@
       "POST"
     ]
   },
+  "CHANNEL_BLOCKED_USER_WARNING_ACK": {
+    "url": "/channels/:param/blocked-user-warning-dismissal",
+    "allowed_methods": null
+  },
   "FORUM_TAGS": {
     "url": "/channels/:param/tags",
     "allowed_methods": [
@@ -1263,6 +1267,26 @@
       "OPTIONS",
       "PATCH"
     ]
+  },
+  "GRAVITY_ITEMS_DEHYDRATED": {
+    "url": "/users/@me/gravity-icymi",
+    "allowed_methods": null
+  },
+  "GRAVITY_ITEMS_NEGATIVE": {
+    "url": "/users/@me/gravity-icymi-negative",
+    "allowed_methods": null
+  },
+  "GRAVITY_ITEMS_HYDRATE": {
+    "url": "/gravity-content",
+    "allowed_methods": null
+  },
+  "GRAVITY_CUSTOM_GUILD_SCORES": {
+    "url": "/gravity-custom-guild-score",
+    "allowed_methods": null
+  },
+  "GRAVITY_CUSTOM_SCORES": {
+    "url": "/gravity-custom-channel-scores",
+    "allowed_methods": null
   },
   "USERNAME_LOOKUP": {
     "url": "/users/username/:param",
@@ -2986,13 +3010,6 @@
       "POST"
     ]
   },
-  "ANNUAL_USER_OFFER": {
-    "url": "/users/@me/billing/annual-user-offer",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "USER_OFFER_ACKNOWLEDGED": {
     "url": "/users/@me/billing/user-offer/ack",
     "allowed_methods": [
@@ -3112,6 +3129,10 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "USER_AFFINITIES_V2": {
+    "url": "/users/@me/affinities/v2/users",
+    "allowed_methods": null
   },
   "GUILD_AFFINITIES": {
     "url": "/users/@me/affinities/guilds",
@@ -4483,14 +4504,17 @@
       "OPTIONS"
     ]
   },
-  "SAVED_MESSAGES": {
-    "url": "/saved-messages",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
+  "GET_SAVED_MESSAGES": {
+    "url": "/users/@me/saved-messages",
+    "allowed_methods": null
+  },
+  "PUT_SAVED_MESSAGE": {
+    "url": "/users/@me/saved-messages/:param/:param",
+    "allowed_methods": null
+  },
+  "DELETE_SAVED_MESSAGE": {
+    "url": "/users/@me/saved-messages/:param/:param",
+    "allowed_methods": null
   },
   "GET_REFERRALS_REMAINING": {
     "url": "/users/@me/referrals/eligibility",
@@ -4910,6 +4934,10 @@
       "OPTIONS"
     ]
   },
+  "CONTENT_INVENTORY_OUTBOX": {
+    "url": "/content-inventory/users/:param/outbox",
+    "allowed_methods": null
+  },
   "MY_SPOTIFY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me/spotify",
     "allowed_methods": [
@@ -4947,5 +4975,17 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "SIMILAR_GAMES": {
+    "url": "/content-inventory/users/@me/similar-games/:param",
+    "allowed_methods": null
+  },
+  "VOICE_PUBLIC_KEYS": {
+    "url": "/voice/public-keys",
+    "allowed_methods": null
+  },
+  "VOICE_MATCH_PUBLIC_KEY": {
+    "url": "/voice/:param/match-public-key",
+    "allowed_methods": null
   }
 }
