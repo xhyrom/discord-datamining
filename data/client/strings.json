@@ -18121,6 +18121,7 @@
   "CLAN_SETUP_GAMES_TITLE": "\"What games does your Guild play?\"",
   "CLAN_SETUP_GAMES_SUBTITLE": "\"You can always edit this later. More game options coming soon!\"",
   "CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER": "\"Search for a game...\"",
+  "CLAN_SETUP_GAMES_ONE_GAME_REQUIRED": "\"You must select at least one game\"",
   "CLAN_SETUP_SELECTED_GAMES": "\"Selected Games\"",
   "CLAN_SETUP_PLAYSTYLE_TITLE": "\"What's your Guild's playstyle?\"",
   "CLAN_SETUP_PLAYSTYLE_SUBTITLE": "\"Let potential members know the expectations and vibe in your server. How competitive or chill is your Guild?\"",
