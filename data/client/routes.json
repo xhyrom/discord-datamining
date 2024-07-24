@@ -1282,7 +1282,10 @@
   },
   "GRAVITY_CUSTOM_GUILD_SCORES": {
     "url": "/gravity-custom-guild-score",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GRAVITY_CUSTOM_SCORES": {
     "url": "/gravity-custom-channel-scores",
@@ -4514,7 +4517,11 @@
   },
   "DELETE_SAVED_MESSAGE": {
     "url": "/users/@me/saved-messages/:param/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GET_REFERRALS_REMAINING": {
     "url": "/users/@me/referrals/eligibility",
