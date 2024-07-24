@@ -4513,7 +4513,11 @@
   },
   "GET_SAVED_MESSAGES": {
     "url": "/users/@me/saved-messages",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "PUT_SAVED_MESSAGE": {
     "url": "/users/@me/saved-messages/:param/:param",
