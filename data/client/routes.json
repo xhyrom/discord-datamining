@@ -4982,7 +4982,10 @@
   },
   "VOICE_PUBLIC_KEYS": {
     "url": "/voice/public-keys",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "VOICE_MATCH_PUBLIC_KEY": {
     "url": "/voice/:param/match-public-key",
