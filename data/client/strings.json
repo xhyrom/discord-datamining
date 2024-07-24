@@ -10189,6 +10189,8 @@
   "SHARE_SETTINGS_TITLE": "\"Sharing\"",
   "IOS_SHARE_SUGGESTIONS_TOGGLE": "\"iOS Conversation Suggestions\"",
   "IOS_SHARE_SUGGESTIONS_HINT": "\"Allows Discord conversations to appear as suggestions for sharing and search in iOS. Disabling this will hide those suggestions and make iOS forget which friends and servers are your favorite.\"",
+  "SUPPRESS_EMBED": "\"Remove Embed\"",
+  "SUPPRESS_EMBEDS": "\"Remove Embeds\"",
   "SUPPRESS_EMBED_TITLE": "\"Are you sure?\"",
   "SUPPRESS_EMBED_BODY": "\"This will remove all embeds on this message for everyone.\"",
   "SUPPRESS_EMBED_CONFIRM": "\"Remove All Embeds\"",
