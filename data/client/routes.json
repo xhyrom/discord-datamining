@@ -1270,7 +1270,11 @@
   },
   "GRAVITY_ITEMS_DEHYDRATED": {
     "url": "/users/@me/gravity-icymi",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GRAVITY_ITEMS_NEGATIVE": {
     "url": "/users/@me/gravity-icymi-negative",
@@ -4996,6 +5000,9 @@
   },
   "VOICE_MATCH_PUBLIC_KEY": {
     "url": "/voice/:param/match-public-key",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
