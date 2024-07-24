@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -39,7 +39,7 @@ export const DATA_DIR = join(__dirname, "..", "data");
 
 export const git = simpleGit();
 export const discordRest = new REST({ version: "10" }).setToken(
-  process.env.DISCORD_TOKEN ?? ""
+  process.env.DISCORD_TOKEN ?? "",
 );
 export const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN ?? "",
@@ -66,54 +66,70 @@ export const postToGithub = async (commitHash: string, body: string) => {
   });
 };
 
+interface Webhooks {
+  name: string;
+  urls: string[];
+}
+
 export const postToDiscord = async (
-  webhooks: string[],
+  webhooks: Webhooks,
   pushHash: string | undefined,
   body: {
     content?: string;
     embeds?: APIEmbed[];
   },
-  url?: string
+  url?: string,
 ) => {
-  for (const webhook of webhooks) {
+  for (const webhook of webhooks.urls) {
     const [id, token] = webhook.split("/").slice(-2);
 
-    await discordRest.post(Routes.webhook(id!, token!), {
-      body: {
-        components: [
-          new ActionRowBuilder()
-            .setComponents(
-              new ButtonBuilder()
-                .setLabel("View on GitHub")
-                .setStyle(ButtonStyle.Link)
-                .setURL(
-                  url
-                    ? url
-                    : pushHash
-                    ? `https://github.com/xHyroM/discord-datamining/commit/${pushHash}`
-                    : "https://github.com/xHyroM/discord-datamining"
-                )
-            )
-            .toJSON(),
-        ],
-        ...body,
-        allowed_mentions: {
-          parse: ["roles"],
+    try {
+      await discordRest.post(Routes.webhook(id!, token!), {
+        body: {
+          components: [
+            new ActionRowBuilder()
+              .setComponents(
+                new ButtonBuilder()
+                  .setLabel("View on GitHub")
+                  .setStyle(ButtonStyle.Link)
+                  .setURL(
+                    url
+                      ? url
+                      : pushHash
+                        ? `https://github.com/xHyroM/discord-datamining/commit/${pushHash}`
+                        : "https://github.com/xHyroM/discord-datamining",
+                  ),
+              )
+              .toJSON(),
+          ],
+          ...body,
+          allowed_mentions: {
+            parse: ["roles"],
+          },
         },
-      },
-    });
+      });
+    } catch (e) {
+      console.log("Failed to push ", webhooks.name);
+      continue;
+    }
   }
 };
 
-export const getWebhookFromEnv = (name: string): string[] => {
+export const getWebhookFromEnv = (name: string): Webhooks => {
   const webhook =
     process.env[process.env.IS_DEV ? "DISCORD_WEBHOOK_DEV" : name];
   if (!webhook) throw new Error(`Missing webhook: ${name}`);
 
   try {
-    return JSON.parse(webhook) as string[];
+    return {
+      name,
+      urls: JSON.parse(webhook) as string[],
+    };
   } catch {
-    return [webhook];
+    return {
+      name,
+      urls: [webhook],
+    };
   }
 };
 
@@ -121,7 +137,7 @@ export const getPaginator = async (
   url: string,
   dataField: any,
   page: number,
-  partial?: any[]
+  partial?: any[],
 ): Promise<any[]> => {
   if (!partial) partial = [];
 
@@ -207,7 +223,7 @@ export const rm = async (path: string) => {
 
 export const beautify = (
   content: string,
-  type: "js" | "css" | "html"
+  type: "js" | "css" | "html",
 ): string => {
   switch (type) {
     case "js":

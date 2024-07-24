@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -55,7 +55,7 @@ export class Domains implements Module {
     console.log("Scraping domains");
 
     const domainsResponse = await Promise.all(
-      this.domains.map((domain) => this.get(domain))
+      this.domains.map((domain) => this.get(domain)),
     );
 
     for (let i = 0; i < domainsResponse.length; i++) {
@@ -63,7 +63,7 @@ export class Domains implements Module {
       const domainName = this.domains[i];
 
       const oldDomain = JSON.parse(
-        (await readFile(join(this.baseDir, `${domainName}.json`))) ?? "{}"
+        (await readFile(join(this.baseDir, `${domainName}.json`))) ?? "{}",
       );
 
       if (!domain || !domainName) {
@@ -73,14 +73,14 @@ export class Domains implements Module {
 
       await writeFile(
         join(this.baseDir, `${domainName}.json`),
-        JSON.stringify(omit(domain, "meta", "endpoint"), null, 2)
+        JSON.stringify(omit(domain, "meta", "endpoint"), null, 2),
       );
 
       const result = await pushToGit(
         `🌐 Domain ${domainName} has been updated`,
         `Subdomains (${formatNumber(
-          domain.subdomains.length
-        )}):\n${domain.subdomains.map((key) => `${key}`).join("\n")}`
+          domain.subdomains.length,
+        )}):\n${domain.subdomains.map((key) => `${key}`).join("\n")}`,
       );
 
       if (!result?.update?.hash) continue;
@@ -99,17 +99,7 @@ export class Domains implements Module {
             diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
           }`,
         },
-        comment.data.html_url
-      );
-      await postToDiscord(
-        getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_MISCELLANEOUS"),
-        result?.update?.hash.to,
-        {
-          content: `<@&1167155150884962304>${
-            diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
-          }`,
-        },
-        comment.data.html_url
+        comment.data.html_url,
       );
     }
   }
@@ -121,7 +111,7 @@ export class Domains implements Module {
         headers: {
           APIKEY: this.#apiKey,
         },
-      }
+      },
     );
 
     if (!res.ok) return null;
@@ -134,7 +124,7 @@ export class Domains implements Module {
   diff<T extends Omit<Response, "meta" | "endpoint">>(
     name: string,
     oldDomain: T,
-    newDomain: T
+    newDomain: T,
   ) {
     if (!oldDomain.subdomains) oldDomain.subdomains = [];
     if (!newDomain.subdomains) newDomain.subdomains = [];
