@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 51,
+  "subdomain_count": 52,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
@@ -16,6 +16,7 @@
     "latency",
     "us-east1001",
     "jupyterhub-data-analytics-prd",
+    "static-edge.staging",
     "staging-gateway-us-east1-b",
     "datahub-stg",
     "airflow-data-tns-stg",
