@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -48,7 +48,7 @@ export class Routes implements Module {
     console.log("Scraping routes");
 
     const oldRoutes = JSON.parse(
-      (await readFile(join(this.baseDir, "routes.json"))) ?? "{}"
+      (await readFile(join(this.baseDir, "routes.json"))) ?? "{}",
     );
 
     const routes = await this.routes(oldRoutes);
@@ -59,13 +59,13 @@ export class Routes implements Module {
 
     await writeFile(
       join(this.baseDir, "routes.json"),
-      JSON.stringify(routes, null, 2)
+      JSON.stringify(routes, null, 2),
     );
 
     const result = await pushToGit(
       "🗺️ Endpoints has been updated",
       `Endpoints (${formatNumber(
-        Object.keys(routes).length
+        Object.keys(routes).length,
       )}):\n${Object.entries(routes)
         .map(
           ([key, value]) =>
@@ -73,9 +73,9 @@ export class Routes implements Module {
               value.allowed_methods
                 ? ` (${value.allowed_methods.join(", ")})`
                 : ""
-            }`
+            }`,
         )
-        .join("\n")}`
+        .join("\n")}`,
     );
 
     if (!result?.update?.hash) return;
@@ -94,7 +94,7 @@ export class Routes implements Module {
           diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
         }`,
       },
-      comment.data.html_url
+      comment.data.html_url,
     );
     await postToDiscord(
       getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_ROUTES"),
@@ -104,12 +104,12 @@ export class Routes implements Module {
           diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
         }`,
       },
-      comment.data.html_url
+      comment.data.html_url,
     );
   }
 
   private async routes(
-    oldRoutes: Record<string, Route>
+    oldRoutes: Record<string, Route>,
   ): Promise<Record<string, Route> | null> {
     const routes = await fetch("https://dux.xhyrom.dev/v2/endpoints");
     if (!routes.ok) {
@@ -169,7 +169,7 @@ export class Routes implements Module {
 
   private diff(
     routesOld: Record<string, Route>,
-    routesCurrent: Record<string, Route>
+    routesCurrent: Record<string, Route>,
   ) {
     const addedRoutes = [];
     const updatedRoutes = [];
@@ -223,7 +223,7 @@ export class Routes implements Module {
       "codeblock",
       addedRoutes,
       updatedRoutes,
-      removedRoutes
+      removedRoutes,
     );
 
     return builtString ? builtString : "";
@@ -231,23 +231,32 @@ export class Routes implements Module {
 
   private async getAllowedMethods(route: string) {
     route = route.replace(/:param/g, "param");
-    const res = await fetch(`https://discord.com/api/v10${route}`, {
-      method: "OPTIONS",
-    });
+    try {
+      const res = await fetch(`https://discord.com/api/v10${route}`, {
+        method: "OPTIONS",
+      });
 
-    if (!res.ok)
+      if (!res.ok)
+        return {
+          allowed_methods: null,
+          status: res.status,
+          text: res.statusText,
+          ok: res.ok,
+        };
+
       return {
-        allowed_methods: null,
+        allowed_methods: res.headers.get("allow")?.split(", ")?.sort() ?? [],
         status: res.status,
         text: res.statusText,
         ok: res.ok,
       };
-
-    return {
-      allowed_methods: res.headers.get("allow")?.split(", ")?.sort() ?? [],
-      status: res.status,
-      text: res.statusText,
-      ok: res.ok,
-    };
+    } catch (e) {
+      return {
+        allowed_methods: null,
+        status: 429, // workaround, change it later
+        text: e,
+        ok: false,
+      };
+    }
   }
 }
