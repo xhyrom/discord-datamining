@@ -30896,82 +30896,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
     color: ButtonText
 }
 
-.popover_bba79b {
-    z-index: 1;
-    position: absolute;
-    height: auto;
-    border-radius: 100px;
-    display: inline-flex;
-    gap: 2px;
-    padding: 2px;
-    top: -16px;
-    right: min(8px, 50% - 29px);
-    opacity: 0;
-    pointer-events: none
-}
-
-.popover_bba79b.visible_bba79b,
-.popover_bba79b:focus-within {
-    opacity: 1;
-    pointer-events: all
-}
-
-:not(.keyboard-mode).full-motion .popover_bba79b.visible_bba79b,
-:not(.keyboard-mode).full-motion .popover_bba79b:focus-within {
-    opacity: 0;
-    animation: hoverIn_bba79b.15s ease forwards
-}
-
-:not(.keyboard-mode).full-motion .popover_bba79b.visible_bba79b.expandable_bba79b,
-:not(.keyboard-mode).full-motion .popover_bba79b:focus-within.expandable_bba79b {
-    animation-delay: .3s
-}
-
-@keyframes hoverIn_bba79b {
-    0% {
-        top: -14px;
-        opacity: 0
-    }
-
-    to {
-        top: -16px;
-        opacity: 1
-    }
-}
-
-.button_bba79b {
-    height: auto;
-    min-width: 0;
-    min-width: auto;
-    padding: 4px
-}
-
-.button_bba79b.left_bba79b {
-    padding-left: 6px;
-    border-radius: 100px 6px 6px 100px
-}
-
-.button_bba79b.right_bba79b {
-    padding-right: 6px;
-    border-radius: 6px 100px 100px 6px
-}
-
-.button_bba79b:hover {
-    background: var(--background-modifier-hover)
-}
-
-.button_bba79b:hover .icon_bba79b {
-    fill: var(--interactive-hover)
-}
-
-.button_bba79b:active {
-    background: var(--background-modifier-active)
-}
-
-.button_bba79b:active .icon_bba79b {
-    fill: var(--interactive-active)
-}
-
 .popover_a64b81 {
     z-index: 1;
     position: absolute;
@@ -31045,6 +30969,82 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 }
 
 .button_a64b81:active .icon_a64b81 {
+    fill: var(--interactive-active)
+}
+
+.popover_bba79b {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    border-radius: 100px;
+    display: inline-flex;
+    gap: 2px;
+    padding: 2px;
+    top: -16px;
+    right: min(8px, 50% - 29px);
+    opacity: 0;
+    pointer-events: none
+}
+
+.popover_bba79b.visible_bba79b,
+.popover_bba79b:focus-within {
+    opacity: 1;
+    pointer-events: all
+}
+
+:not(.keyboard-mode).full-motion .popover_bba79b.visible_bba79b,
+:not(.keyboard-mode).full-motion .popover_bba79b:focus-within {
+    opacity: 0;
+    animation: hoverIn_bba79b.15s ease forwards
+}
+
+:not(.keyboard-mode).full-motion .popover_bba79b.visible_bba79b.expandable_bba79b,
+:not(.keyboard-mode).full-motion .popover_bba79b:focus-within.expandable_bba79b {
+    animation-delay: .3s
+}
+
+@keyframes hoverIn_bba79b {
+    0% {
+        top: -14px;
+        opacity: 0
+    }
+
+    to {
+        top: -16px;
+        opacity: 1
+    }
+}
+
+.button_bba79b {
+    height: auto;
+    min-width: 0;
+    min-width: auto;
+    padding: 4px
+}
+
+.button_bba79b.left_bba79b {
+    padding-left: 6px;
+    border-radius: 100px 6px 6px 100px
+}
+
+.button_bba79b.right_bba79b {
+    padding-right: 6px;
+    border-radius: 6px 100px 100px 6px
+}
+
+.button_bba79b:hover {
+    background: var(--background-modifier-hover)
+}
+
+.button_bba79b:hover .icon_bba79b {
+    fill: var(--interactive-hover)
+}
+
+.button_bba79b:active {
+    background: var(--background-modifier-active)
+}
+
+.button_bba79b:active .icon_bba79b {
     fill: var(--interactive-active)
 }
 
@@ -46612,4 +46612,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.c65dc7a0e115a0702446.css.map*/
+/*# sourceMappingURL=12633.7eab21581cb4dc511fc5.css.map*/
