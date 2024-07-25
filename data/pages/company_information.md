@@ -611,14 +611,14 @@ var t=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<argument
     </script>
 
 
-    <script nonce="MTc1LDExOCwxNjksODYsMjMzLDY2LDE2OSwxODA=">
+    <script nonce="NTEsOTksODYsNDcsMTU0LDcxLDEzNiwxOTQ=">
         (function() {
             function c() {
                 var b = a.contentDocument || a.contentWindow.document;
                 if (b) {
                     var d = b.createElement('script');
-                    d.nonce = 'MTc1LDExOCwxNjksODYsMjMzLDY2LDE2OSwxODA=';
-                    d.innerHTML = "window.__CF$cv$params={r:'8a8c75daae9b5ad3',t:'MTcyMTkxMzc2My4wMDAwMDA='};var a=document.createElement('script');a.nonce='MTc1LDExOCwxNjksODYsMjMzLDY2LDE2OSwxODA=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    d.nonce = 'NTEsOTksODYsNDcsMTU0LDcxLDEzNiwxOTQ=';
+                    d.innerHTML = "window.__CF$cv$params={r:'8a8c77f2995c5a5a',t:'MTcyMTkxMzg0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='NTEsOTksODYsNDcsMTU0LDcxLDEzNiwxOTQ=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
                     b.getElementsByTagName('head')[0].appendChild(d)
                 }
             }
