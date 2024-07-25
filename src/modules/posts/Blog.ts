@@ -1,6 +1,5 @@
 import { xml2js } from "xml-js";
 import { JSDOM } from "jsdom";
-import jsBeautify from "js-beautify";
 import {
   DATA_DIR,
   writeFile,
@@ -122,11 +121,11 @@ export class Blog implements Module {
 
     await writeFile(
       join(this.baseDir, "channel.json"),
-      JSON.stringify(channel, null, 2)
+      JSON.stringify(channel, null, 2),
     );
 
     const posts = JSON.parse(
-      (await readFile(join(this.baseDir, "posts.json"))) ?? "[]"
+      (await readFile(join(this.baseDir, "posts.json"))) ?? "[]",
     ) as Post[];
     const oldPosts = structuredClone(posts);
 
@@ -151,7 +150,7 @@ export class Blog implements Module {
 
     await writeFile(
       join(this.baseDir, "posts.json"),
-      JSON.stringify(posts, null, 2)
+      JSON.stringify(posts, null, 2),
     );
 
     // todo: scrape blog posts better
@@ -160,17 +159,17 @@ export class Blog implements Module {
     for (const post of posts) {
       await writeFile(
         join(this.baseDir, "posts", post.id, "content.md"),
-        beautify(post.body, "html")
+        beautify(post.body, "html"),
       );
       await writeFile(
         join(this.baseDir, "posts", post.id, "meta.json"),
-        JSON.stringify(omit(post, "body"), null, 2)
+        JSON.stringify(omit(post, "body"), null, 2),
       );
     }
 
     const result = await pushToGit(
       `📰 Blog posts have been updated`,
-      `Posts (${formatNumber(posts.length)})`
+      `Posts (${formatNumber(posts.length)})`,
     );
 
     if (!result?.update?.hash) return;
@@ -180,7 +179,7 @@ export class Blog implements Module {
       result.update.hash.to,
       "blog/posts",
       oldPosts,
-      posts
+      posts,
     );
 
     await sendBlog(diff, result);
@@ -220,7 +219,7 @@ export class Blog implements Module {
 
       if (response.url.includes("/blog/"))
         querySelector = dom.window.document.querySelector(
-          ".blog-post-container > div:first-child > div:nth-child(2)"
+          ".blog-post-container > div:first-child > div:nth-child(2)",
         )?.outerHTML;
       else if (response.url.includes("/safety"))
         querySelector =
@@ -230,7 +229,7 @@ export class Blog implements Module {
         querySelector =
           dom.window.document.querySelector(".blog-post-content")?.outerHTML;
 
-      const beautifiedBody = jsBeautify.html_beautify(querySelector ?? "");
+      const beautifiedBody = beautify(querySelector ?? "", "html");
 
       posts.push({
         id: post.guid._text.split("/").pop() as string,

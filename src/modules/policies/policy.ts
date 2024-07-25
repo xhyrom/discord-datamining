@@ -18,6 +18,7 @@
 
 import { join } from "node:path";
 import { beautify, writeFile } from "../../utils.ts";
+import { JSDOM } from "jsdom";
 
 export abstract class Policy {
   private baseDir: string;
@@ -36,6 +37,18 @@ export abstract class Policy {
     const res = await fetch(url);
     if (!res.ok) return null;
 
-    return beautify(await res.text(), "html");
+    const dom = new JSDOM(await res.text());
+
+    const scriptElements = [
+      ...dom.window.document.querySelectorAll("script"),
+      ...dom.window.document.querySelectorAll("noscript"),
+    ];
+    scriptElements.forEach((script) => script.remove());
+
+    const body = dom.window.document
+      .querySelector("body")
+      ?.outerHTML?.replace(/(<!--.*?-->)/g, "");
+
+    return body ? beautify(body, "html") : null;
   }
 }
