@@ -3146,7 +3146,11 @@
   },
   "USER_AFFINITIES_V2": {
     "url": "/users/@me/affinities/v2/users",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_AFFINITIES": {
     "url": "/users/@me/affinities/guilds",
