@@ -16,16 +16,15 @@
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
-import { join } from "node:path";
-import { DATA_DIR, formatNumber, pushToGit, writeFile } from "../../utils.ts";
+import { formatNumber, pushToGit } from "../../utils.ts";
 import { File } from "../../File.ts";
-import type { Module } from "..";
+import { Policy } from "./policy.ts";
 
-export class Acknowledgements implements Module {
+export class Acknowledgements extends Policy {
   #file?: File;
 
-  get baseDir() {
-    return join(DATA_DIR, "acknowledgements");
+  constructor(baseDir: string) {
+    super(baseDir);
   }
 
   async run() {
@@ -43,8 +42,8 @@ export class Acknowledgements implements Module {
       acknowledgements.push({ name, link });
     }
 
-    await writeFile(
-      join(this.baseDir, `acknowledgements.json`),
+    await this.writeFile(
+      "acknowledgements.json",
       JSON.stringify(acknowledgements, null, 2),
     );
 
