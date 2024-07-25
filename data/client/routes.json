@@ -4528,7 +4528,11 @@
   },
   "PUT_SAVED_MESSAGE": {
     "url": "/users/@me/saved-messages/:param/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "DELETE_SAVED_MESSAGE": {
     "url": "/users/@me/saved-messages/:param/:param",
