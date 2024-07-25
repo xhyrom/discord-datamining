@@ -1,8 +1,6 @@
 <body>
 
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7BVC2W&amp;gtm_auth=GI0g9O-54_SitcgmxQKxlA&amp;gtm_preview=env-2&amp;gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden" sandbox=""></iframe>
-    </noscript>
+
 
     <div id="app-mount">
         <div style="height:100%;overflow-x:hidden">
