@@ -47,7 +47,8 @@ export abstract class Policy {
 
     const body = dom.window.document
       .querySelector("body")
-      ?.outerHTML?.replace(/(<!--.*?-->)/g, "");
+      ?.outerHTML?.replace(/(<!--.*?-->)/gs, "")
+      ?.replace(/^\s*\n/gm, "");
 
     return body ? beautify(body, "html") : null;
   }
