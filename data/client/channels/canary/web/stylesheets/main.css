@@ -20411,13 +20411,10 @@ span.clanTag_a31c43 {
     justify-content: center;
     align-items: center;
     padding: 0 8px;
-    font-size: 12px;
-    line-height: 16px;
     width: auto;
     height: 24px;
     border-radius: 16px;
-    background-color: var(--background-tertiary);
-    color: var(--interactive-normal)
+    background-color: var(--background-tertiary)
 }
 
 .mainContainer_f005b2 {
@@ -46913,4 +46910,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=12633.1d2faaa366c7b69c7260.css.map*/
+/*# sourceMappingURL=12633.157aded0c674381221b4.css.map*/
