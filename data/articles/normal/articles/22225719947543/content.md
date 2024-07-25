@@ -4,6 +4,7 @@
     <li>
         <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
         <ul>
+            <li><a href="#h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">The Sims 4 </a></li>
             <li><a href="#h_01J1XC6E97615MWHRQBWGP3T9T" target="_blank" rel="noopener noreferrer">Zenless Zone Zero</a></li>
             <li><a href="#docs-internal-guid-7e118986-7fff-7590-ca2a-0bb618200550">Fortnite</a></li>
             <li><a href="#h_01J1AK4JDWX63NDT2EJFNQ1WH1">Console Gaming</a></li>
@@ -24,6 +25,8 @@
     <li><a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J3NDZ4B8K4BX9BZQ2SYXDYNM"><a href="https://support.discord.com/hc/articles/24948010607383-The-Sims-4-Quest" target="_blank" rel="noopener noreferrer">The Sims 4 - Lovestruck Quest</a></h2>
+<p>The <strong>Lovestruck Quest</strong> can be accepted on Discord from <strong>July 25, 2024</strong> until <strong>July 30, 2024</strong> <strong>(11:59pm UTC)</strong>. The Freezer Bunny Lovebug avatar decoration needs to be redeemed by <strong>September 30, 2024</strong>. Quest requirements must be completed during this period to receive the reward.</p>
 <h2 id="h_01J1XC6E97615MWHRQBWGP3T9T"><a href="https://support.discord.com/hc/articles/24567583191831" target="_blank" rel="noopener noreferrer">Zenless Zone Zero - V1.0 Quest</a></h2>
 <p>The <strong>V1.0 Quest </strong>can be accepted on Discord from <strong>July 8, 2024 </strong>until <strong>July 15, 2024 (5:00pm PST)</strong>. The Version 1.0 bundle needs to be redeemed by <strong>August 14, 2024 (3:00am PST)</strong>. Quest requirements must be completed during this period to receive the reward.</p>
 <h2 id="docs-internal-guid-7e118986-7fff-7590-ca2a-0bb618200550"><a href="https://support.discord.com/hc/articles/24274826177687" target="_blank" rel="noopener noreferrer">Fortnite - Fortnite Reload Quest </a></h2>
