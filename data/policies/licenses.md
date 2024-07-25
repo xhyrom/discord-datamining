@@ -1,7 +1,4 @@
 <body>
-
-
-
     <div id="app-mount">
         <div style="height:100%;overflow-x:hidden">
             <div class="">
@@ -189,17 +186,14 @@
                                     THE SOFTWARE.</span>
                                 <hr><span class="paragraph-3ckiht">The following software may be included in this product: @types/babel<span class="underline-2cPmjS">traverse, @types/color-name, @types/eslint-visitor-keys, @types/events, @types/glob, @types/hoist-non-react-statics, @types/istanbul-lib-coverage, @types/istanbul-lib-report, @types/istanbul-reports, @types/json-schema, @types/minimatch, @types/node, @types/prop-types, @types/react, @types/stack-utils, @types/unist, @types/vfile, @types/vfile-message, @types/yargs, @types/yargs-parser. A copy of the source code may be downloaded from <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/babel</span>traverse), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/color-name), <a href="https://www.github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://www.github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/eslint-visitor-keys), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/events), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/glob), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/hoist-non-react-statics), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/istanbul-lib-coverage), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/istanbul-lib-report), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/istanbul-reports), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/json-schema), <a href="https://www.github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://www.github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/minimatch), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/node), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/prop-types), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/react), <a href="https://www.github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://www.github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/stack-utils), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/unist), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/vfile), <a href="https://github.com/vfile/vfile-message#readme" target="_blank" rel="noreferrer"><span>https://github.com/vfile/vfile-message#readme</span></a> (@types/vfile-message), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/yargs), <a href="https://github.com/DefinitelyTyped/DefinitelyTyped.git" target="_blank" rel="noreferrer"><span>https://github.com/DefinitelyTyped/DefinitelyTyped.git</span></a> (@types/yargs-parser). This software contains the following license and notice below:</span><span class="paragraph-3ckiht">MIT License</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">Copyright (c) Microsoft Corporation. All rights reserved.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -2510,7 +2504,6 @@ SOFTWARE</code></pre>
  licensed material, or material used under an exception or
  limitation to copyright. More considerations for licensors:
 wiki.creativecommons.org/Considerations_for_licensors
-
  Considerations for the public: By using one of our public
  licenses, a licensor grants the public permission to use the
  licensed material under specified terms and conditions. If
@@ -2577,20 +2570,15 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
       the Licensor hereby grants You a worldwide, royalty-free,
       non-sublicensable, non-exclusive, irrevocable license to
       exercise the Licensed Rights in the Licensed Material to:
-
         a. reproduce and Share the Licensed Material, in whole or
            in part; and
-
         b. produce, reproduce, and Share Adapted Material.
-
    2. Exceptions and Limitations. For the avoidance of doubt, where
       Exceptions and Limitations apply to Your use, this Public
       License does not apply, and You do not need to comply with
       its terms and conditions.
-
    3. Term. The term of this Public License is specified in Section
       6(a).
-
    4. Media and formats; technical modifications allowed. The
       Licensor authorizes You to exercise the Licensed Rights in
       all media and formats whether now known or hereafter created,
@@ -2602,22 +2590,18 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
       Technological Measures. For purposes of this Public License,
       simply making modifications authorized by this Section 2(a)
       (4) never produces Adapted Material.
-
    5. Downstream recipients.
-
         a. Offer from the Licensor -- Licensed Material. Every
            recipient of the Licensed Material automatically
            receives an offer from the Licensor to exercise the
            Licensed Rights under the terms and conditions of this
            Public License.
-
         b. No downstream restrictions. You may not offer or impose
            any additional or different terms or conditions on, or
            apply any Effective Technological Measures to, the
            Licensed Material if doing so restricts exercise of the
            Licensed Rights by any recipient of the Licensed
            Material.
-
    6. No endorsement. Nothing in this Public License constitutes or
       may be construed as permission to assert or imply that You
       are, or that Your use of the Licensed Material is, connected
@@ -2631,10 +2615,8 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
       assert any such rights held by the Licensor to the limited
       extent necessary to allow You to exercise the Licensed
       Rights, but not otherwise.
-
    2. Patent and trademark rights are not licensed under this
       Public License.
-
    3. To the extent possible, the Licensor waives any right to
       collect royalties from You for the exercise of the Licensed
       Rights, whether directly or through a collecting society
@@ -2644,44 +2626,33 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
                                     following conditions.</span><span class="paragraph-3ckiht"> a. Attribution.</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">   1. If You Share the Licensed Material (including in modified
       form), You must:
-
         a. retain the following if it is supplied by the Licensor
            with the Licensed Material:
-
              i. identification of the creator(s) of the Licensed
                 Material and any others designated to receive
                 attribution, in any reasonable manner requested by
                 the Licensor (including by pseudonym if
                 designated);
-
             ii. a copyright notice;
-
            iii. a notice that refers to this Public License;
-
             iv. a notice that refers to the disclaimer of
                 warranties;
-
              v. a URI or hyperlink to the Licensed Material to the
                 extent reasonably practicable;
-
         b. indicate if You modified the Licensed Material and
            retain an indication of any previous modifications; and
-
         c. indicate the Licensed Material is licensed under this
            Public License, and include the text of, or the URI or
            hyperlink to, this Public License.
-
    2. You may satisfy the conditions in Section 3(a)(1) in any
       reasonable manner based on the medium, means, and context in
       which You Share the Licensed Material. For example, it may be
       reasonable to satisfy the conditions by providing a URI or
       hyperlink to a resource that includes the required
       information.
-
    3. If requested by the Licensor, You must remove any of the
       information required by Section 3(a)(1)(A) to the extent
       reasonably practicable.
-
    4. If You Share Adapted Material You produce, the Adapter's
       License You apply must not prevent recipients of the Adapted
       Material from complying with this Public License.</code></pre><span class="paragraph-3ckiht">Section 4 -- Sui Generis Database Rights.</span><span class="paragraph-3ckiht">Where the Licensed Rights include Sui Generis Database Rights that
@@ -2721,9 +2692,7 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">   1. automatically as of the date the violation is cured, provided
       it is cured within 30 days of Your discovery of the
       violation; or
-
    2. upon express reinstatement by the Licensor.
-
  For the avoidance of doubt, this Section 6(b) does not affect any
  right the Licensor may have to seek remedies for Your violations
  of this Public License.</code></pre><span class="paragraph-3ckiht"> c. For the avoidance of doubt, the Licensor may also offer the
@@ -2789,7 +2758,6 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
  licensed material, or material used under an exception or
  limitation to copyright. More considerations for licensors:
 wiki.creativecommons.org/Considerations_for_licensors
-
  Considerations for the public: By using one of our public
  licenses, a licensor grants the public permission to use the
  licensed material under specified terms and conditions. If
@@ -2856,20 +2824,15 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
       the Licensor hereby grants You a worldwide, royalty-free,
       non-sublicensable, non-exclusive, irrevocable license to
       exercise the Licensed Rights in the Licensed Material to:
-
         a. reproduce and Share the Licensed Material, in whole or
            in part; and
-
         b. produce, reproduce, and Share Adapted Material.
-
    2. Exceptions and Limitations. For the avoidance of doubt, where
       Exceptions and Limitations apply to Your use, this Public
       License does not apply, and You do not need to comply with
       its terms and conditions.
-
    3. Term. The term of this Public License is specified in Section
       6(a).
-
    4. Media and formats; technical modifications allowed. The
       Licensor authorizes You to exercise the Licensed Rights in
       all media and formats whether now known or hereafter created,
@@ -2881,22 +2844,18 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
       Technological Measures. For purposes of this Public License,
       simply making modifications authorized by this Section 2(a)
       (4) never produces Adapted Material.
-
    5. Downstream recipients.
-
         a. Offer from the Licensor -- Licensed Material. Every
            recipient of the Licensed Material automatically
            receives an offer from the Licensor to exercise the
            Licensed Rights under the terms and conditions of this
            Public License.
-
         b. No downstream restrictions. You may not offer or impose
            any additional or different terms or conditions on, or
            apply any Effective Technological Measures to, the
            Licensed Material if doing so restricts exercise of the
            Licensed Rights by any recipient of the Licensed
            Material.
-
    6. No endorsement. Nothing in this Public License constitutes or
       may be construed as permission to assert or imply that You
       are, or that Your use of the Licensed Material is, connected
@@ -2910,10 +2869,8 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
       assert any such rights held by the Licensor to the limited
       extent necessary to allow You to exercise the Licensed
       Rights, but not otherwise.
-
    2. Patent and trademark rights are not licensed under this
       Public License.
-
    3. To the extent possible, the Licensor waives any right to
       collect royalties from You for the exercise of the Licensed
       Rights, whether directly or through a collecting society
@@ -2923,44 +2880,33 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
                                     following conditions.</span><span class="paragraph-3ckiht"> a. Attribution.</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">   1. If You Share the Licensed Material (including in modified
       form), You must:
-
         a. retain the following if it is supplied by the Licensor
            with the Licensed Material:
-
              i. identification of the creator(s) of the Licensed
                 Material and any others designated to receive
                 attribution, in any reasonable manner requested by
                 the Licensor (including by pseudonym if
                 designated);
-
             ii. a copyright notice;
-
            iii. a notice that refers to this Public License;
-
             iv. a notice that refers to the disclaimer of
                 warranties;
-
              v. a URI or hyperlink to the Licensed Material to the
                 extent reasonably practicable;
-
         b. indicate if You modified the Licensed Material and
            retain an indication of any previous modifications; and
-
         c. indicate the Licensed Material is licensed under this
            Public License, and include the text of, or the URI or
            hyperlink to, this Public License.
-
    2. You may satisfy the conditions in Section 3(a)(1) in any
       reasonable manner based on the medium, means, and context in
       which You Share the Licensed Material. For example, it may be
       reasonable to satisfy the conditions by providing a URI or
       hyperlink to a resource that includes the required
       information.
-
    3. If requested by the Licensor, You must remove any of the
       information required by Section 3(a)(1)(A) to the extent
       reasonably practicable.
-
    4. If You Share Adapted Material You produce, the Adapter's
       License You apply must not prevent recipients of the Adapted
       Material from complying with this Public License.</code></pre><span class="paragraph-3ckiht">Section 4 -- Sui Generis Database Rights.</span><span class="paragraph-3ckiht">Where the Licensed Rights include Sui Generis Database Rights that
@@ -3000,9 +2946,7 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">   1. automatically as of the date the violation is cured, provided
       it is cured within 30 days of Your discovery of the
       violation; or
-
    2. upon express reinstatement by the Licensor.
-
  For the avoidance of doubt, this Section 6(b) does not affect any
  right the Licensor may have to seek remedies for Your violations
  of this Public License.</code></pre><span class="paragraph-3ckiht"> c. For the avoidance of doubt, the Licensor may also offer the
@@ -5906,11 +5850,9 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
                                     modification, are permitted provided that the following conditions are met:</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">* Redistributions of source code must retain the above copyright
   notice, this list of conditions and the following disclaimer.
-
 * Redistributions in binary form must reproduce the above copyright
   notice, this list of conditions and the following disclaimer in the
   documentation and/or other materials provided with the distribution.
-
 * Neither the name of the Yahoo! Inc. nor the
   names of its contributors may be used to endorse or promote products
   derived from this software without specific prior written permission.</code></pre><span class="paragraph-3ckiht">THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -5933,11 +5875,9 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
                                     modification, are permitted provided that the following conditions are met:</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">* Redistributions of source code must retain the above copyright
   notice, this list of conditions and the following disclaimer.
-
 * Redistributions in binary form must reproduce the above copyright
   notice, this list of conditions and the following disclaimer in the
   documentation and/or other materials provided with the distribution.
-
 * Neither the name of the Yahoo! Inc. nor the
   names of its contributors may be used to endorse or promote products
   derived from this software without specific prior written permission.</code></pre><span class="paragraph-3ckiht">THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -6047,7 +5987,6 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
                                     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
                                     THE SOFTWARE.</span>
                                 <hr><span class="paragraph-3ckiht">The following software may be included in this product: is-utf8. A copy of the source code may be downloaded from <a href="https://github.com/wayfind/is-utf8.git" target="_blank" rel="noreferrer"><span>https://github.com/wayfind/is-utf8.git</span></a>. This software contains the following license and notice below:</span><span class="paragraph-3ckiht">The MIT License (MIT)</span><span class="paragraph-3ckiht">Copyright (C) 2014 Wei Fanzhe</span><span class="paragraph-3ckiht">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-                                    　　
                                     The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</span><span class="paragraph-3ckiht">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span>
                                 <hr><span class="paragraph-3ckiht">The following software may be included in this product: isbinaryfile. A copy of the source code may be downloaded from <a href="https://github.com/gjtorikian/isBinaryFile" target="_blank" rel="noreferrer"><span>https://github.com/gjtorikian/isBinaryFile</span></a>. This software contains the following license and notice below:</span><span class="paragraph-3ckiht">Copyright (c) 2019 Garen J. Torikian</span><span class="paragraph-3ckiht">MIT License</span><span class="paragraph-3ckiht">Permission is hereby granted, free of charge, to any person obtaining
                                     a copy of this software and associated documentation files (the
@@ -8772,7 +8711,6 @@ wiki.creativecommons.org/Considerations_for_licensees</code></pre><span class="p
                                     IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</span><span class="paragraph-3ckiht">====</span><span class="paragraph-3ckiht"><code>String.fromCodePoint</code> by Mathias Bynens used according to terms of MIT
                                     License, as follows:</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">Copyright Mathias Bynens &lt;https://mathiasbynens.be/&gt;
-
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
 "Software"), to deal in the Software without restriction, including
@@ -8780,10 +8718,8 @@ without limitation the rights to use, copy, modify, merge, publish,
 distribute, sublicense, and/or sell copies of the Software, and to
 permit persons to whom the Software is furnished to do so, subject to
 the following conditions:
-
 The above copyright notice and this permission notice shall be
 included in all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -8860,11 +8796,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre>
                                     modification, are permitted provided that the following conditions are met:</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">* Redistributions of source code must retain the above copyright
   notice, this list of conditions and the following disclaimer.
-
 * Redistributions in binary form must reproduce the above copyright
   notice, this list of conditions and the following disclaimer in the
   documentation and/or other materials provided with the distribution.
-
 * Neither the name of the Yahoo! Inc. nor the
   names of its contributors may be used to endorse or promote products
   derived from this software without specific prior written permission.</code></pre><span class="paragraph-3ckiht">THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -9532,7 +9466,6 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">* Redistributions of source code must retain the above
   copyright notice, this list of conditions and the following
   disclaimer.
-
 * Redistributions in binary form must reproduce the above
   copyright notice, this list of conditions and the following
   disclaimer in the documentation and/or other materials
@@ -9604,17 +9537,14 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre>
                                         <div name="timersbrowserify"></div>
                                     </a></h1><span class="paragraph-3ckiht">This project uses the <a href="http://jryans.mit-license.org/" target="_blank" rel="noreferrer"><span>MIT</span></a> license:</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">Copyright © 2012 J. Ryan Stinnett &lt;jryans@gmail.com&gt;
-
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the “Software”),
 to deal in the Software without restriction, including without limitation
 the rights to use, copy, modify, merge, publish, distribute, sublicense,
 and/or sell copies of the Software, and to permit persons to whom the
 Software is furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -9632,10 +9562,8 @@ deal in the Software without restriction, including without limitation the
 rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 sell copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -9834,7 +9762,6 @@ IN THE SOFTWARE.</code></pre>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">* Redistributions of source code must retain the above
   copyright notice, this list of conditions and the following
   disclaimer.
-
 * Redistributions in binary form must reproduce the above
   copyright notice, this list of conditions and the following
   disclaimer in the documentation and/or other materials
@@ -9856,7 +9783,6 @@ IN THE SOFTWARE.</code></pre>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">* Redistributions of source code must retain the above
   copyright notice, this list of conditions and the following
   disclaimer.
-
 * Redistributions in binary form must reproduce the above
   copyright notice, this list of conditions and the following
   disclaimer in the documentation and/or other materials
@@ -13260,17 +13186,14 @@ IN THE SOFTWARE.</code></pre>
                                             of your accepting any such warranty or additional liability.</span><span class="paragraph-3ckiht">END OF TERMS AND CONDITIONS</span></li>
                                 </ol><span class="paragraph-3ckiht">Files in folly/external/farmhash licensed as follows</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">Copyright (c) 2014 Google, Inc.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -13771,9 +13694,7 @@ THE SOFTWARE.</code></pre>
                                     This project makes use of the sources for ogg from <a href="https://xiph.org/downloads/" target="_blank" rel="noreferrer"><span>xiph.org/downloads</span></a>.
                                     Ogg is licensed under the <a href="https://wiki.xiph.org/XiphWiki:Copyrights" target="_blank" rel="noreferrer"><span>New BSD License</span></a>.</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">Copyright (c) 2002, Xiph.org Foundation
-
 The New BSD License states that:
-
 Redistribution and use in source and binary forms [of this work], with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the copyright notice, this list of conditions, and the following disclaimer.
 Redistributions in binary form must reproduce the copyright notice, this list of conditions, and the following disclaimer in the documentation, and/or other materials provided with the distribution.
@@ -13783,7 +13704,6 @@ THIS WORK IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND 
                                         <div name="ybridopus"></div>
                                     </a></h2><span class="paragraph-3ckiht">MIT License</span><span class="paragraph-3ckiht">Copyright (c) 2021 nacamar GmbH - Ybrid®, a Hybrid Dynamic Live Audio Technology</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre><span class="paragraph-3ckiht">3rd party licenses
                                     opus
@@ -13791,21 +13711,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                                     Both the reference implementation and the revised implementations on opus-codec.org are available under the three-clause BSD license. This BSD license is compatible with all common open source and commercial software licenses, see <a href="https://opus-codec.org/license" target="_blank" rel="noreferrer"><span>details</span></a>.</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">Copyright 2001-2011 Xiph.Org, Skype Limited, Octasic, Jean-Marc Valin, Timothy B. Terriberry,
                     CSIRO, Gregory Maxwell, Mark Borgerding, Erik de Castro Lopo
-
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 Neither the name of Internet Society, IETF or IETF Trust, nor the names of specific contributors, may be used to endorse or promote products derived from this software without specific prior written permission.
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 Opus is subject to the royalty-free patent licenses which are specified at:
-
 Xiph.Org Foundation:
 https://datatracker.ietf.org/ipr/1524/
-
 Microsoft Corporation:
 https://datatracker.ietf.org/ipr/1914/
-
 Broadcom Corporation:
 https://datatracker.ietf.org/ipr/1526/</code></pre>
                                 <h2 id="yogakit">YogaKit<a class="hyperlink" href="#yogakit">
@@ -14747,17 +14662,14 @@ https://datatracker.ietf.org/ipr/1526/</code></pre>
                                             of your accepting any such warranty or additional liability.</span><span class="paragraph-3ckiht">END OF TERMS AND CONDITIONS</span></li>
                                 </ol><span class="paragraph-3ckiht">Files in folly/external/farmhash licensed as follows</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">Copyright (c) 2014 Google, Inc.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -15010,12 +14922,10 @@ THE SOFTWARE.</code></pre>
                                     met:</span>
                                 <pre class="pre-NiP_FO"><code class="hljs scroller">* Redistributions of source code must retain the above copyright
 notice, this list of conditions and the following disclaimer.
-
 * Redistributions in binary form must reproduce the above copyright
 notice, this list of conditions and the following disclaimer in
 the documentation and/or other materials provided with the
 distribution.
-
 * Neither the name of Google nor the names of its contributors may
 be used to endorse or promote products derived from this software
 without specific prior written permission.</code></pre><span class="paragraph-3ckiht">THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
@@ -15438,11 +15348,4 @@ without specific prior written permission.</code></pre><span class="paragraph-3c
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
 </body>
