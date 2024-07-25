@@ -11,14 +11,14 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
 import { join } from "node:path";
 
-import { File } from "../../File.ts";
+import { File } from "../../../../File.ts";
 import type { Module } from "../../../index.ts";
 import { Build } from "./Build.ts";
 import { BuildResolver } from "./BuildResolver.ts";
@@ -86,45 +86,45 @@ export class Scripts implements Module {
           built_at: build.builtAt,
         },
         null,
-        2
-      )
+        2,
+      ),
     );
 
     await writeFile(
       join(this.baseDir, "index.html"),
-      beautify(files.html, "html")
+      beautify(files.html, "html"),
     );
 
     for (const file of files.scripts ?? []) {
       await writeFile(
         join(this.baseDir, "scripts", file.path),
-        beautify(await file.content(), "js")
+        beautify(await file.content(), "js"),
       );
     }
 
     await writeFile(
       join(this.baseDir, "main.js"),
-      beautify(await files.mainScript!.content(), "js")
+      beautify(await files.mainScript!.content(), "js"),
     );
 
     if (files.strings) {
       await writeFile(
         join(this.baseDir, "strings.js"),
-        beautify(await files.strings.content(), "js")
+        beautify(await files.strings.content(), "js"),
       );
     }
 
     if (files.endpoints) {
       await writeFile(
         join(this.baseDir, "routes.js"),
-        beautify(await files.endpoints.content(), "js")
+        beautify(await files.endpoints.content(), "js"),
       );
     }
 
     if (files.sentry) {
       await writeFile(
         join(this.baseDir, "sentry.js"),
-        beautify(await files.sentry.content(), "js")
+        beautify(await files.sentry.content(), "js"),
       );
     }
   }

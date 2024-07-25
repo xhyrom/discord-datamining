@@ -1,4 +1,4 @@
-name: Mine Posts
+name: Mine Posts & Related
 on:
   schedule:
     - cron: "0 */1 * * *"
@@ -61,3 +61,4 @@ jobs:
           DISCORDINSIDERS_DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORDINSIDERS_DISCORD_WEBHOOK_MISCELLANEOUS }} # miscellaneous but for discord insiders
 
           SCRAPE_POSTS: true
+          SCRAPE_ACKNOWLEDGEMENTS: true

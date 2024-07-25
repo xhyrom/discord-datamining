@@ -17,7 +17,7 @@
   * **/
 
 import { join } from "node:path";
-import { File } from "../File.ts";
+import { File } from "../../../File.ts";
 import type { Module } from "../../index.ts";
 import {
   writeFile,

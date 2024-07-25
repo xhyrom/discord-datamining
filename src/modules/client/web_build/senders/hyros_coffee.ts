@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -24,7 +24,7 @@ import type { Build } from "../scripts/Build.ts";
 import type { Channel } from "../../Channel.ts";
 import type { Scripts } from "../scripts/index.ts";
 import type { Stylesheets } from "../stylesheets/index.ts";
-import type { File } from "../../File.ts";
+import type { File } from "../../../../File.ts";
 
 export class HyrosCoffeeSender implements Sender {
   async send(
@@ -33,7 +33,7 @@ export class HyrosCoffeeSender implements Sender {
     build: Build,
     scriptFiles: Awaited<ReturnType<Scripts["files"]>>,
     stylesheetFiles: Awaited<ReturnType<Stylesheets["files"]>>,
-    date: Date
+    date: Date,
   ) {
     const importantScripts = [
       scriptFiles.mainScript,
@@ -61,7 +61,7 @@ export class HyrosCoffeeSender implements Sender {
         {
           name: "Built At",
           value: `<t:${Math.floor(date.getTime() / 1000)}> (<t:${Math.floor(
-            date.getTime() / 1000
+            date.getTime() / 1000,
           )}:R>)`,
           inline: true,
         },
@@ -82,10 +82,10 @@ export class HyrosCoffeeSender implements Sender {
             .map((stylesheet) =>
               stylesheet.name === stylesheetFiles.mainStylesheet.name
                 ? `${stylesheet.path} (main)`
-                : `${stylesheet.path}`
+                : `${stylesheet.path}`,
             )
             .join("\n"),
-        }
+        },
       );
 
     await postToDiscord(
@@ -94,13 +94,13 @@ export class HyrosCoffeeSender implements Sender {
       {
         content: "<@&1117194731328393396>",
         embeds: [embed.toJSON()],
-      }
+      },
     );
   }
 
   formatScriptName(
     scriptFiles: Awaited<ReturnType<Scripts["files"]>>,
-    script: File
+    script: File,
   ) {
     let suffix = "";
 

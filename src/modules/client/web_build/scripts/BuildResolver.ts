@@ -11,13 +11,13 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
-import type { File } from "../../File.js";
-import type { Channel } from "../../Channel.js";
+import type { File } from "../../../../File.ts";
+import type { Channel } from "../../Channel.ts";
 
 export class BuildResolver {
   script: File;
@@ -37,7 +37,7 @@ export class BuildResolver {
 
     const content = await this.data();
     const buildNumber = Array.from(
-      content.matchAll(/buildNumber:\s*"(?<number>[0-9]+)"/g)
+      content.matchAll(/buildNumber:\s*"(?<number>[0-9]+)"/g),
     )[0]?.groups?.number;
 
     this.#buildNumber = buildNumber;
@@ -49,7 +49,7 @@ export class BuildResolver {
 
     const content = await this.data();
     const versionHash = Array.from(
-      content.matchAll(/versionHash:\s*"(?<hash>[a-fA-F0-9]{40})"/g)
+      content.matchAll(/versionHash:\s*"(?<hash>[a-fA-F0-9]{40})"/g),
     )[0]?.groups?.hash;
 
     this.#versionHash = versionHash;
@@ -62,8 +62,8 @@ export class BuildResolver {
     const content = await this.data();
     const builtAt = Array.from(
       content.matchAll(
-        /"builtAt",\s*(?:String\("(?<timestamp>[^"]+)"\)|"(?<value>[^"]+)")\s*/g
-      )
+        /"builtAt",\s*(?:String\("(?<timestamp>[^"]+)"\)|"(?<value>[^"]+)")\s*/g,
+      ),
     )[0]?.groups?.timestamp;
 
     this.#builtAt = builtAt ? parseInt(builtAt) : null;

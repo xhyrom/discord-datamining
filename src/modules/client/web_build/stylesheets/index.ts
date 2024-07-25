@@ -11,13 +11,13 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
 import { join } from "node:path";
-import { File } from "../../File.ts";
+import { File } from "../../../../File.ts";
 import type { Module } from "../../../index.ts";
 import {
   beautify,
@@ -55,13 +55,13 @@ export class Stylesheets implements Module {
     for (const file of files.stylesheets ?? []) {
       await writeFile(
         join(this.baseDir, "stylesheets", file.path),
-        beautify(await file.content(), "css")
+        beautify(await file.content(), "css"),
       );
     }
 
     await writeFile(
       join(this.baseDir, "main.css"),
-      beautify(await files.mainStylesheet!.content(), "css")
+      beautify(await files.mainStylesheet!.content(), "css"),
     );
 
     // Stylesheets diff is posted in WebBuild#run
@@ -74,7 +74,7 @@ export class Stylesheets implements Module {
     if (!diff) return;
 
     const currentCssFile = diff.data.files?.find((f) =>
-      f.filename.includes("main.css")
+      f.filename.includes("main.css"),
     );
     if (!currentCssFile || !currentCssFile.patch) return;
 
@@ -88,7 +88,7 @@ export class Stylesheets implements Module {
         content: `<@&1105847524662706226>\n${
           desc.length > 2000 ? desc.slice(0, 1968) + "...```" : desc
         }`,
-      }
+      },
     );
     await postToDiscord(
       getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STYLESHEETS"),
@@ -97,7 +97,7 @@ export class Stylesheets implements Module {
         content: `<@&1167155230836789288>${
           desc.length > 2000 ? desc.slice(0, 1968) + "...```" : desc
         }`,
-      }
+      },
     );
   }
 

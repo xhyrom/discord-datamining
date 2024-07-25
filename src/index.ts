@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -24,6 +24,7 @@ import { Client } from "./modules/client/index.ts";
 import { Posts } from "./modules/posts/index.ts";
 import { Applications } from "./modules/client/applications/index.ts";
 import { Routes } from "./modules/client/routes/index.ts";
+import { Acknowledgements } from "./modules/acknowledgements/index.ts";
 
 console.log("discord-datamining  Copyright (C) 2023 Jozef Steinhübl");
 
@@ -35,6 +36,9 @@ if (process.env.SCRAPE_CLIENT === "true") await client.run();
 // Scrape applications (inside client)
 if (process.env.SCRAPE_CLIENT_APPLICATIONS === "true")
   await new Applications().run();
+
+if (process.env.SCRAPE_ACKNOWLEDGEMENTS === "true")
+  await new Acknowledgements().run();
 
 if (process.env.SCRAPE_DOMAINS === "true")
   await new Domains(process.env.SECURITYTRAILS_API_KEY!).run();
