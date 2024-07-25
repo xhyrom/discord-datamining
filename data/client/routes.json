@@ -1197,7 +1197,10 @@
   },
   "CHANNEL_BLOCKED_USER_WARNING_ACK": {
     "url": "/channels/:param/blocked-user-warning-dismissal",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FORUM_TAGS": {
     "url": "/channels/:param/tags",
@@ -1278,7 +1281,11 @@
   },
   "GRAVITY_ITEMS_NEGATIVE": {
     "url": "/users/@me/gravity-icymi-negative",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GRAVITY_ITEMS_HYDRATE": {
     "url": "/gravity-content",
@@ -4993,7 +5000,11 @@
   },
   "SIMILAR_GAMES": {
     "url": "/content-inventory/users/@me/similar-games/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "VOICE_PUBLIC_KEYS": {
     "url": "/voice/public-keys",
