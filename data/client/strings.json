@@ -18417,6 +18417,8 @@
   "ICYMI_FORWARD": "\"Forward\"",
   "ICYMI_REPLY": "\"Reply\"",
   "ICYMI_REPLY_REACT": "\"React or Reply to {activity}\"",
+  "ICYMI_SUMMARIES_VIEW_MORE": "\"View more messages\"",
+  "ICYMI_VIEW_FULL_ANNOUNCEMENT": "\"View full announcement\"",
   "ICYMI_EVERYONE_WAS_MENTIONED": "\"Everyone was mentioned.\"",
   "ICYMI_CUSTOM_CHANNEL_OPTIONS": "\"Channel Settings\"",
   "ICYMI_CUSTOM_SCORING_MORE_FROM_CHANNEL": "\"Show me more from this channel\"",
