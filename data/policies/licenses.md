@@ -1,7 +1,7 @@
 <body>
-    <!-- section:gtmNoScript-->
 
-    <!-- endsection -->
+
+
     <div id="app-mount">
         <div style="height:100%;overflow-x:hidden">
             <div class="">
