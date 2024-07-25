@@ -17629,6 +17629,7 @@
   "MEMBER_LIST_CONTENT_POPOUT_USER_LISTENING": "\"{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listening to\"",
   "MEMBER_LIST_CONTENT_POPOUT_BLOCKED_USER_WARNING": "\"Users you've blocked or muted are in this voice channel\"",
   "MEMBER_LIST_CONTENT_POPOUT_PREVIEW_VOICE_CHANNEL": "\"Preview voice channel without joining\"",
+  "CONTENT_INVENTORY_ENTRY_USERS": "\"{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}}\"",
   "CONTENT_INVENTORY_REACTION_USER_PLAYING": "\"{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}} playing **{gameName}**\"",
   "CONTENT_INVENTORY_REACTION_USER_PLAYED": "\"{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}} played **{gameName}**\"",
   "CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE": "\"Activity\"",
