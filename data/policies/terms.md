@@ -334,25 +334,4 @@
             <div class="footer-line-blue"><a data-track="logo" href="/" class="w-inline-block"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6257d23c5fb25be7e0b6e220_Open%20Source%20Projects%20_%20Discord-7.svg" loading="lazy" alt="Click for home" class="discord-footer"></a><a data-track="login_footer" data-w-id="205fcd10-f41c-19e7-855a-15227d0501d8" href="https://discord.com/app" class="button-white color-blue-right footer-open-discord-button footer-open-discord-button-js w-button">Sign up</a></div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
