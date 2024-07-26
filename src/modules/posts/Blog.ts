@@ -159,7 +159,7 @@ export class Blog implements Module {
     for (const post of posts) {
       await writeFile(
         join(this.baseDir, "posts", post.id, "content.md"),
-        beautify(post.body, "html"),
+        await beautify(post.body, "html"),
       );
       await writeFile(
         join(this.baseDir, "posts", post.id, "meta.json"),
@@ -229,7 +229,7 @@ export class Blog implements Module {
         querySelector =
           dom.window.document.querySelector(".blog-post-content")?.outerHTML;
 
-      const beautifiedBody = beautify(querySelector ?? "", "html");
+      const beautifiedBody = await beautify(querySelector ?? "", "html");
 
       posts.push({
         id: post.guid._text.split("/").pop() as string,

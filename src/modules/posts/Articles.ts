@@ -107,23 +107,23 @@ export class Articles implements Module {
       JSON.stringify(
         sections.map((s) => omit(s, "updated_at")),
         null,
-        2
-      )
+        2,
+      ),
     );
 
     const oldArticles = JSON.parse(
-      (await readFile(join(this.baseDir, "articles.json"))) ?? "[]"
+      (await readFile(join(this.baseDir, "articles.json"))) ?? "[]",
     );
 
     await writeFile(
       join(this.baseDir, "articles.json"),
       JSON.stringify(
         articles.map((article) =>
-          omit(article, "vote_sum", "vote_count", "updated_at")
+          omit(article, "vote_sum", "vote_count", "updated_at"),
         ),
         null,
-        2
-      )
+        2,
+      ),
     );
 
     await rm(join(this.baseDir, "articles"));
@@ -131,15 +131,15 @@ export class Articles implements Module {
     for (const article of articles) {
       await writeFile(
         join(this.baseDir, "articles", article.id.toString(), "content.md"),
-        beautify(article.body, "html")
+        await beautify(article.body, "html"),
       );
       await writeFile(
         join(this.baseDir, "articles", article.id.toString(), "meta.json"),
         JSON.stringify(
           omit(article, "body", "vote_sum", "vote_count", "updated_at"),
           null,
-          2
-        )
+          2,
+        ),
       );
     }
 
@@ -147,7 +147,7 @@ export class Articles implements Module {
       `📰 ${this.displayType} Articles have been updated`,
       `Articles (${formatNumber(articles.length)}):\n${articles
         .map((a) => `${a.title}`)
-        .join("\n")}`
+        .join("\n")}`,
     );
 
     if (!result?.update?.hash) return;
@@ -157,7 +157,7 @@ export class Articles implements Module {
       result.update.hash.to,
       `articles/${this.type}/articles`,
       oldArticles,
-      articles
+      articles,
     );
 
     await sendArticles(diff, result, this);
@@ -167,7 +167,7 @@ export class Articles implements Module {
     const res = await getPaginator(
       `${this.baseUrl}/api/v2/help_center/en-us/articles.json`,
       "articles",
-      1
+      1,
     );
 
     return res;
@@ -179,7 +179,7 @@ export class Articles implements Module {
     const res = await getPaginator(
       `${this.baseUrl}/api/v2/help_center/en-us/sections.json`,
       "sections",
-      1
+      1,
     );
     this.#sections = res;
 

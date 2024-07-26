@@ -50,6 +50,6 @@ export abstract class Policy {
       ?.outerHTML?.replace(/(<!--.*?-->)/gs, "")
       ?.replace(/^\s*\n/gm, "");
 
-    return body ? beautify(body, "html") : null;
+    return body ? await beautify(body, "html") : null;
   }
 }

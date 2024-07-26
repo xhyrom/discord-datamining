@@ -32,12 +32,7 @@ import { Octokit } from "@octokit/rest";
 import { setTimeout as sleep } from "node:timers/promises";
 import { Routes, type APIEmbed, ButtonStyle } from "discord-api-types/v10";
 import { ActionRowBuilder, ButtonBuilder } from "@discordjs/builders";
-
-import { Biome, Distribution } from "@biomejs/js-api";
-
-const biome = await Biome.create({
-  distribution: Distribution.NODE, // Or BUNDLER / WEB depending on the distribution package you've installed
-});
+import prettier from "prettier";
 
 export const __dirname = fileURLToPath(new URL(".", import.meta.url));
 export const DATA_DIR = join(__dirname, "..", "data");
@@ -226,23 +221,23 @@ export const rm = async (path: string) => {
   } catch {}
 };
 
-export const beautify = (
+export const beautify = async (
   content: string,
   type: "js" | "css" | "html",
-): string => {
+): Promise<string> => {
   switch (type) {
     case "js":
-      return biome.formatContent(content, {
-        filePath: "virtual.js",
-      }).content;
+      return await prettier.format(content, {
+        parser: "babel",
+      });
     case "css":
-      return biome.formatContent(content, {
-        filePath: "virtual.css",
-      }).content;
+      return await prettier.format(content, {
+        parser: "css",
+      });
     case "html":
-      return biome.formatContent(content, {
-        filePath: "virtual.html",
-      }).content;
+      return await prettier.format(content, {
+        parser: "html",
+      });
   }
 };
 

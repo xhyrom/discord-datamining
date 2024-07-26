@@ -92,39 +92,39 @@ export class Scripts implements Module {
 
     await writeFile(
       join(this.baseDir, "index.html"),
-      beautify(files.html, "html"),
+      await beautify(files.html, "html"),
     );
 
     for (const file of files.scripts ?? []) {
       await writeFile(
         join(this.baseDir, "scripts", file.path),
-        beautify(await file.content(), "js"),
+        await beautify(await file.content(), "js"),
       );
     }
 
     await writeFile(
       join(this.baseDir, "main.js"),
-      beautify(await files.mainScript!.content(), "js"),
+      await beautify(await files.mainScript!.content(), "js"),
     );
 
     if (files.strings) {
       await writeFile(
         join(this.baseDir, "strings.js"),
-        beautify(await files.strings.content(), "js"),
+        await beautify(await files.strings.content(), "js"),
       );
     }
 
     if (files.endpoints) {
       await writeFile(
         join(this.baseDir, "routes.js"),
-        beautify(await files.endpoints.content(), "js"),
+        await beautify(await files.endpoints.content(), "js"),
       );
     }
 
     if (files.sentry) {
       await writeFile(
         join(this.baseDir, "sentry.js"),
-        beautify(await files.sentry.content(), "js"),
+        await beautify(await files.sentry.content(), "js"),
       );
     }
   }

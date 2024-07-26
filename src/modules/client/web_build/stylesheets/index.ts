@@ -55,13 +55,13 @@ export class Stylesheets implements Module {
     for (const file of files.stylesheets ?? []) {
       await writeFile(
         join(this.baseDir, "stylesheets", file.path),
-        beautify(await file.content(), "css"),
+        await beautify(await file.content(), "css"),
       );
     }
 
     await writeFile(
       join(this.baseDir, "main.css"),
-      beautify(await files.mainStylesheet!.content(), "css"),
+      await beautify(await files.mainStylesheet!.content(), "css"),
     );
 
     // Stylesheets diff is posted in WebBuild#run
