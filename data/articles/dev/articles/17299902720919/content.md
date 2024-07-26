@@ -1,12 +1,171 @@
-<p class="callout"><span role="img" aria-label="⚠️">⚠️</span> Currently Premium Apps are available to developers based <span class="discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad notion-enable-hover" data-token-index="1">in the </span><span class="discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-level-3 discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover" data-token-index="2">US</span><span class="discussion-level-1 discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover" data-token-index="3">, UK, and EU but check</span> the <a class="notion-link-token notion-focusable-token notion-enable-hover" tabindex="0" href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HB90E77QPN986GFV0S01ZSF2" target="_blank" rel="noopener noreferrer" data-token-index="4">Supported Locales section</a> and in the Discord Developers server for future announcements.</p>
-<p>Once your app has been monetized with <a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727" target="_blank" rel="noopener noreferrer">Premium Apps</a>, your team will become eligible for payout review after the first 100 dollars is earned. If needed you can review the <a href="https://support-dev.discord.com/hc/en-us/articles/17297949965079" target="_blank" rel="noopener noreferrer">How Do I Monetize My App?</a> article and <a href="https://support-dev.discord.com/hc/en-us/articles/17298449675927" target="_blank" rel="noopener noreferrer">set up SKUs</a> for more information on how to get to this step in the process, or learn more about the payout process in our <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms" target="_blank" rel="noopener noreferrer">Monetization Terms</a>.</p>
+<p class="callout">
+  <span role="img" aria-label="⚠️">⚠️</span> Currently Premium Apps are
+  available to developers based
+  <span
+    class="discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad notion-enable-hover"
+    data-token-index="1"
+    >in the </span
+  ><span
+    class="discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-level-3 discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover"
+    data-token-index="2"
+    >US</span
+  ><span
+    class="discussion-level-1 discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover"
+    data-token-index="3"
+    >, UK, and EU but check</span
+  > the
+  <a
+    class="notion-link-token notion-focusable-token notion-enable-hover"
+    tabindex="0"
+    href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HB90E77QPN986GFV0S01ZSF2"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-token-index="4"
+    >Supported Locales section</a
+  >
+  and in the Discord Developers server for future announcements.
+</p>
+<p>
+  Once your app has been monetized with
+  <a
+    href="https://support-dev.discord.com/hc/en-us/articles/17709085688727"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Premium Apps</a
+  >, your team will become eligible for payout review after the first 100
+  dollars is earned. If needed you can review the
+  <a
+    href="https://support-dev.discord.com/hc/en-us/articles/17297949965079"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How Do I Monetize My App?</a
+  >
+  article and
+  <a
+    href="https://support-dev.discord.com/hc/en-us/articles/17298449675927"
+    target="_blank"
+    rel="noopener noreferrer"
+    >set up SKUs</a
+  >
+  for more information on how to get to this step in the process, or learn more
+  about the payout process in our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Monetization Terms</a
+  >.
+</p>
 <h3 id="h_01HB8YZFMVJZZJH9ZJK9FPFX87">Payout Eligibility Review</h3>
-<p>This payout does not happen automatically, however. A ticket will be created on behalf of the team owner, and a payout eligibility review will be conducted by Developer Support. If the app is approved for payout, Developer Support will enable payout and the team will then be able to receive payouts.</p>
-<p>Please note that if not all criteria are met and you have the ability to remedy this, you will be given guidance on what is left to complete in order to receive payouts.</p>
+<p>
+  This payout does not happen automatically, however. A ticket will be created
+  on behalf of the team owner, and a payout eligibility review will be conducted
+  by Developer Support. If the app is approved for payout, Developer Support
+  will enable payout and the team will then be able to receive payouts.
+</p>
+<p>
+  Please note that if not all criteria are met and you have the ability to
+  remedy this, you will be given guidance on what is left to complete in order
+  to receive payouts.
+</p>
 <h3 id="h_01HB8YZFMVC6DEWD4Z02MSSQY6">Payout</h3>
-<p>All payouts are processed through Stripe and revenue history can be viewed from your dashboard there. This dashboard can be accessed via your Team’s <a href="https://discord.com/developers/teams" target="_blank" rel="noopener noreferrer">Developer Portal page</a> under the Payout Settings tab.</p>
-<p>Eligible payouts will be provided within 45 days after the end of each calendar month. For example, for Offerings purchased in January, you will receive payouts within 45 days after January 31st. An eligible payout can be defined as the first $100 earned and for the following billing cycles, in amounts greater than $25. This means that if your balance is less than $25 on time of payout, the balance is carried over to the next billing cycle until an amount of $25 or greater can be paid.</p>
-<p>As described in our <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms" target="_blank" rel="noopener noreferrer">Monetization Terms</a>, for each Premium App Subscription or One-Time Purchase you offer, you will receive 85% of the total payments from the user less applicable payment processing fees and transaction fees with the remaining 15% as a platform fee to Discord for the first $1 million USD in cumulative gross sales generated by their apps on Discord, effective June 6, 2024. Once your developer team's cumulative gross sales reach $1 million USD, the Platform Fee will move back to the standard rate of 30%. We may also deduct chargebacks, refunds, and associated fees from your payout.</p>
-<p>The platform fee allows Discord to invest more money back into the developer community. This reinvestment can come in the form of improved tools, resources, and support for developers, as well as financial incentives such as grants or bonuses. By investing in the developer community, the platform can encourage further innovation and growth, ultimately benefiting both the platform and its users.</p>
-<p>If Developer Support determines you or your app is not complying with our applicable <a class="notion-link-token notion-focusable-token notion-enable-hover" tabindex="0" href="http://dis.gd/terms" target="_blank" rel="noopener noreferrer" data-token-index="1">Terms of Service</a>, <a class="notion-link-token notion-focusable-token notion-enable-hover" tabindex="0" href="http://dis.gd/guidelines" target="_blank" rel="noopener noreferrer" data-token-index="3">Community Guidelines</a>, <a class="notion-link-token notion-focusable-token notion-enable-hover" tabindex="0" href="https://discord.com/developers/docs/policies-and-agreements/developer-terms-of-service" target="_blank" rel="noopener noreferrer" data-token-index="5">Developer Terms</a>, <a class="notion-link-token notion-focusable-token notion-enable-hover" tabindex="0" href="https://discord.com/developers/docs/policies-and-agreements/developer-policy" target="_blank" rel="noopener noreferrer" data-token-index="7">Developer Policy</a>, and <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Monetization-Policy" target="_blank" rel="noopener noreferrer">Monetization Policy</a> your app will not be approved, and you will not be eligible, for payout.</p>
-<p>After reviewing this and other linked articles, if you have any questions about Premium Apps payouts, please <a href="https://dis.gd/developer-support/premium-apps" target="_blank" rel="noopener noreferrer">reach out to our Developer Support team</a>!</p>
+<p>
+  All payouts are processed through Stripe and revenue history can be viewed
+  from your dashboard there. This dashboard can be accessed via your Team’s
+  <a
+    href="https://discord.com/developers/teams"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Developer Portal page</a
+  >
+  under the Payout Settings tab.
+</p>
+<p>
+  Eligible payouts will be provided within 45 days after the end of each
+  calendar month. For example, for Offerings purchased in January, you will
+  receive payouts within 45 days after January 31st. An eligible payout can be
+  defined as the first $100 earned and for the following billing cycles, in
+  amounts greater than $25. This means that if your balance is less than $25 on
+  time of payout, the balance is carried over to the next billing cycle until an
+  amount of $25 or greater can be paid.
+</p>
+<p>
+  As described in our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Monetization Terms</a
+  >, for each Premium App Subscription or One-Time Purchase you offer, you will
+  receive 85% of the total payments from the user less applicable payment
+  processing fees and transaction fees with the remaining 15% as a platform fee
+  to Discord for the first $1 million USD in cumulative gross sales generated by
+  their apps on Discord, effective June 6, 2024. Once your developer team's
+  cumulative gross sales reach $1 million USD, the Platform Fee will move back
+  to the standard rate of 30%. We may also deduct chargebacks, refunds, and
+  associated fees from your payout.
+</p>
+<p>
+  The platform fee allows Discord to invest more money back into the developer
+  community. This reinvestment can come in the form of improved tools,
+  resources, and support for developers, as well as financial incentives such as
+  grants or bonuses. By investing in the developer community, the platform can
+  encourage further innovation and growth, ultimately benefiting both the
+  platform and its users.
+</p>
+<p>
+  If Developer Support determines you or your app is not complying with our
+  applicable <a
+    class="notion-link-token notion-focusable-token notion-enable-hover"
+    tabindex="0"
+    href="http://dis.gd/terms"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-token-index="1"
+    >Terms of Service</a
+  >,
+  <a
+    class="notion-link-token notion-focusable-token notion-enable-hover"
+    tabindex="0"
+    href="http://dis.gd/guidelines"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-token-index="3"
+    >Community Guidelines</a
+  >,
+  <a
+    class="notion-link-token notion-focusable-token notion-enable-hover"
+    tabindex="0"
+    href="https://discord.com/developers/docs/policies-and-agreements/developer-terms-of-service"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-token-index="5"
+    >Developer Terms</a
+  >,
+  <a
+    class="notion-link-token notion-focusable-token notion-enable-hover"
+    tabindex="0"
+    href="https://discord.com/developers/docs/policies-and-agreements/developer-policy"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-token-index="7"
+    >Developer Policy</a
+  >, and
+  <a
+    href="https://support.discord.com/hc/en-us/articles/10575066024983-Monetization-Policy"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Monetization Policy</a
+  >
+  your app will not be approved, and you will not be eligible, for payout.
+</p>
+<p>
+  After reviewing this and other linked articles, if you have any questions
+  about Premium Apps payouts, please
+  <a
+    href="https://dis.gd/developer-support/premium-apps"
+    target="_blank"
+    rel="noopener noreferrer"
+    >reach out to our Developer Support team</a
+  >!
+</p>
