@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_activity_launch_via_primary_app_command_in_voice",
+    "label": "Activities - Launch via Primary App Command in Voice",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable launching activities via primary app command in guild voice."
+    ],
+    "hash": 601014749,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
