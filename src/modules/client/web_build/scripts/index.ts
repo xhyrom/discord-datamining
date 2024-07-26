@@ -138,7 +138,7 @@ export class Scripts implements Module {
 
     const scripts = [
       ...res.matchAll(
-        /<script src="[^>]+\/assets\/(?<script_name>[a-z0-9.]+\.js)"[^>]+><\/script>/g,
+        /<script src="?([^>]+)\/assets\/(?<script_name>[a-z0-9.]+\.js)"[^>]+><\/script>/g,
       ),
     ]
       .map((match) => match.groups?.script_name)
