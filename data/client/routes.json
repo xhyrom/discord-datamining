@@ -4877,8 +4877,7 @@
     "allowed_methods": [
       "GET",
       "HEAD",
-      "OPTIONS",
-      "POST"
+      "OPTIONS"
     ]
   },
   "QUESTS_CLAIM_REWARD": {
