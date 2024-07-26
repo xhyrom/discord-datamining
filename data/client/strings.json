@@ -17986,6 +17986,8 @@
   "ROLE_PERMISSIONS_USE_EXTERNAL_APPS_DESCRIPTION_THREADS": "\"Allows members to use External Apps in this channel's threads.\"",
   "FOR_LATER": "\"For Later\"",
   "SAVE_FOR_LATER": "\"Save for Later\"",
+  "FOR_LATER_TAB_ALL": "\"All\"",
+  "FOR_LATER_TAB_REMINDERS": "\"Reminders ({count, number})\"",
   "MESSAGE_REMINDERS_EMPTY": "\"You have no Reminders!\"",
   "MESSAGE_REMINDERS_EMPTY_TIP": "\"You can mark any message as a Reminder to have it appear here.\"",
   "MESSAGE_REMINDERS_HEADER": "\"Message Reminders\"",
