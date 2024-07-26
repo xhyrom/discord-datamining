@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_user_profile_blocker_skeleton",
+    "label": "User Profile Blocker Skeleton",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable User Profile Blocker Skeleton"
+    ],
+    "hash": 2213424224,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
