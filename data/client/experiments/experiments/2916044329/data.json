@@ -37,20 +37,7 @@
     "populations": [
       {
         "buckets": {
-          "9": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": []
-      },
-      {
-        "buckets": {
-          "8": {
+          "none": {
             "rollout": [
               {
                 "start": 0,
