@@ -1300,7 +1300,11 @@
   },
   "GRAVITY_CUSTOM_SCORES": {
     "url": "/gravity-custom-channel-scores",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USERNAME_LOOKUP": {
     "url": "/users/username/:param",
