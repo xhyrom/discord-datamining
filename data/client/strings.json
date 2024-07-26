@@ -17833,6 +17833,7 @@
   "E2EE_LINKING_CODE_MATCH_SUBTITLE": "\"Your verification code with **{username}** matches. You can mark them as verified!\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
+  "BACKGROUND": "\"Background\"",
   "DISAPPROVAL": "\"ಠ_ಠ\"",
   "ENGLISH_LANGUAGE": "\"English\"",
   "GO_LIVE_MODAL_SELECT_GUILD_FORM_TITLE": "\"Select a server for your stream\"",
