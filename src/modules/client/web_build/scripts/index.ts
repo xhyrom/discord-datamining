@@ -136,9 +136,12 @@ export class Scripts implements Module {
       await fetch(`${this.#webBuild.channel.baseUrl}/login`)
     ).text();
 
-    const scripts = res
-      .match(/<script src="\/assets\/[a-z0-9.]+\.js"[^>]+><\/script>/g)
-      ?.map((s) => s.match(/src="[^"]+"/g)?.[0].slice(13, -1))
+    const scripts = [
+      ...res.matchAll(
+        /<script src="[^>]+\/assets\/(?<script_name>[a-z0-9.]+\.js)"[^>]+><\/script>/g,
+      ),
+    ]
+      .map((match) => match.groups?.script_name)
       ?.map((s) => new File(s!))!;
 
     let mainScript;
