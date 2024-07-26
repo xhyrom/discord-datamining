@@ -1,5 +1,28 @@
-<p>If you encounter a violation of our <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> or <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>, we ask that you report this behavior to us.</p>
-<p>For more information on reporting abusive behavior, visit our <a href="https://discord.com/safety" target="_blank" rel="noopener noreferrer"><strong>Discord Safety Center</strong> </a>to read this article below. </p>
+<p>
+  If you encounter a violation of our
+  <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"
+    >Terms of Service</a
+  >
+  or
+  <a
+    href="https://discord.com/guidelines"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Community Guidelines</a
+  >, we ask that you report this behavior to us.
+</p>
+<p>
+  For more information on reporting abusive behavior, visit our
+  <a href="https://discord.com/safety" target="_blank" rel="noopener noreferrer"
+    ><strong>Discord Safety Center</strong> </a
+  >to read this article below. 
+</p>
 <div class="book-box">
-    <strong>Discord Safety Center: 🔗 </strong><a href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord" target="_blank" rel="noopener noreferrer">Reporting Abusive Behavior to Discord</a>
+  <strong>Discord Safety Center: 🔗 </strong
+  ><a
+    href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Reporting Abusive Behavior to Discord</a
+  >
 </div>

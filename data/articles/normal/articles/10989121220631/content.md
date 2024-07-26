@@ -1,59 +1,388 @@
-<p><span style="font-weight: 400;">On Discord, a raid is when a large number of users or bots join a server at once for disruptive or malicious intents and purposes. Raiding is against our Terms of Service </span><a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">guidelines</a><span style="font-weight: 400;">.</span></p>
-<p><span style="font-weight: 400;">While there are different types of behavior and activities that raiders engage in, there are a number of steps you can take to prevent raids of all types before they occur, or minimize damage as they’re happening.</span></p>
+<p>
+  <span style="font-weight: 400"
+    >On Discord, a raid is when a large number of users or bots join a server at
+    once for disruptive or malicious intents and purposes. Raiding is against
+    our Terms of Service </span
+  ><a
+    href="https://discord.com/guidelines"
+    target="_blank"
+    rel="noopener noreferrer"
+    >guidelines</a
+  ><span style="font-weight: 400">.</span>
+</p>
+<p>
+  <span style="font-weight: 400"
+    >While there are different types of behavior and activities that raiders
+    engage in, there are a number of steps you can take to prevent raids of all
+    types before they occur, or minimize damage as they’re happening.</span
+  >
+</p>
 <h1>Raid prevention tips:</h1>
-<p>1. <strong>Turn on <a href="https://support.discord.com/hc/en-us/articles/4421269296535-AutoMod-FAQ" target="_blank" rel="noopener noreferrer">AutoMod</a></strong><span style="font-weight: 400;">. </span></p>
-<p><span style="font-weight: 400;"><em><strong>Go to </strong></em><em><strong>Server Settings &gt; AutoMod</strong></em></span></p>
-<p>AutoMod lets you detect and block undesirable messages before they’re ever posted. Prevent raids from happening by using AutoMod to proactively identify potential raiders via alerts and block their messages from being posted in your server.</p>
-<p><span style="font-weight: 400;">Here’s how:</span></p>
-<p><strong>Create your own Custom Rules to detect raiders</strong><span style="font-weight: 400;"> - Enter keywords or phrases you think raiders may post in your server - or what they may have posted in the past - in the event of a raid. Turn on the “Send alert” response to receive alerts that allow you to identify potential raiders, and the “Block message” response to have AutoMod prevent raiders’ messages from being posted in your server when containing any of your keywords.</span></p>
-<p><span style="font-weight: 400;">Tip: You can set up AutoMod to work as an alert system for potential raiders without resorting to blocking people’s messages from the get-go by turning on “Send alert” and turning off “Block message” in your rules.</span></p>
-<p><strong>Customize your Block Mention Spam rule </strong><span style="font-weight: 400;">- Mention raids are when raiders join your server to annoy or expose your members to undesirable content by spamming mentions via @usernames or @roles. To minimize the likelihood of raiders pulling this off successfully, turn on AutoMod’s “Block Mention Spam” rule.</span></p>
-<p><span style="font-weight: 400;">Set a mention limit you think works best for your server, and enable “Block message,” “Send alert”, and/or “Timeout member” responses. This way, members can’t post messages containing an excessive number of unique mentions.</span></p>
-<p>2.<strong> Disable @here and @everyone permissions</strong><span style="font-weight: 400;">. </span></p>
-<p><span style="font-weight: 400;"><em><strong>Go to Server Settings &gt; Roles &gt; Select a non-Admin or non-Moderator role &gt; Toggle off “Mention @everyone, @here, and All Roles.”</strong></em></span></p>
-<p><span style="font-weight: 400;">This prevents raiders from being able to spam mentions to your entire server and/or particular channels. We recommend only granting this permission to people with roles you trust (e.g. Administrators, Moderators).</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10991042183447" alt="raids101_3.jpg"></span></p>
-<p class="wysiwyg-text-align-left">3. <strong>Set up Raid Protection alerts. </strong></p>
-<p class="wysiwyg-text-align-left"><em><strong>Go to Server Settings &gt; Safety Setup &gt; Raid Protection</strong></em></p>
-<p class="wysiwyg-text-align-left"><span style="font-weight: 400;">Our Raid Protection system provides protection from join-raids by using machine learning to evaluate various signals that are likely indicative of an upcoming raid and taking automated actions to safeguard your server. Set up Raid Protection alerts to stay notified whenever a raid is detected.</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10997721637399" alt="set-up-raid-protection-steps.gif"></span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10991043567767" alt="raids101_1.jpg"></span></p>
-<p class="wysiwyg-text-align-left"><span style="font-weight: 400;">When a raid has been detected, we’ll automatically take action against suspicious joiners by sending you an alert to a dedicated channel of your choice and require CAPTCHA for new joiners within the next hour to prevent raiders from joining your server. You can disable CAPTCHA at any time.</span><span style="font-weight: 400;"><br></span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10991090245911" alt="raids101_2.jpg"><br>Left: Set up to receive alerts when a possible join-raid has been detected in your server.<br>Right: What an alert looks like in a text channel<br></span></p>
-<h3>We're gradually rolling out Raid Protection alerts to community servers! At this time, availability may be limited.</h3>
-<p>4. <strong>Set a <a href="https://support.discord.com/hc/en-us/articles/216679607" target="_blank" rel="noopener noreferrer">Verification Level</a></strong><span style="font-weight: 400;">. </span></p>
-<p><em><strong>Go to Server Settings &gt; Safety Setup &gt; Verification Level</strong></em></p>
-<p><span style="font-weight: 400;">To prevent raids on your Discord server, you can set a Verification Level in the Server Settings. Verification Levels require users to verify their email address or phone number before sending messages, which can help prevent bots and spam accounts from joining your server. We recommend setting the Verification Level to "Low" for basic security on public servers.</span></p>
-<p>5. <strong>Set your Explicit Media Content Filter to Medium or High. </strong></p>
-<p><em><strong>Go to Server Settings &gt; Safety Setup &gt; Explicit Media Content Filter</strong></em></p>
-<p><span style="font-weight: 400;">Raiders may often try to raid your server and post explicit content to shock, harass, or spur your members to leave. Enable this filter to automatically scan and block explicit media from being posted in your server. Community-enabled servers have the High Explicit Media Content filter on by default.</span></p>
-<p>6. <strong>Find and recruit moderators</strong><span style="font-weight: 400;">. It’s always useful to have a moderator you trust online to immediately prevent or de-escalate a raid should one occur. </span><span id="docs-internal-guid-49b3ece1-7fff-25e2-1578-7c868eaa3abf">Our </span><a href="https://discord.com/community/identifying-assigning-moderators" target="_blank" rel="noopener">Identifying and Assigning Moderators article</a> covers best practices you should know on finding and recruiting moderators.</p>
+<p>
+  1.
+  <strong
+    >Turn on
+    <a
+      href="https://support.discord.com/hc/en-us/articles/4421269296535-AutoMod-FAQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      >AutoMod</a
+    ></strong
+  ><span style="font-weight: 400">. </span>
+</p>
+<p>
+  <span style="font-weight: 400"
+    ><em><strong>Go to </strong></em
+    ><em><strong>Server Settings &gt; AutoMod</strong></em></span
+  >
+</p>
+<p>
+  AutoMod lets you detect and block undesirable messages before they’re ever
+  posted. Prevent raids from happening by using AutoMod to proactively identify
+  potential raiders via alerts and block their messages from being posted in
+  your server.
+</p>
+<p><span style="font-weight: 400">Here’s how:</span></p>
+<p>
+  <strong>Create your own Custom Rules to detect raiders</strong
+  ><span style="font-weight: 400">
+    - Enter keywords or phrases you think raiders may post in your server - or
+    what they may have posted in the past - in the event of a raid. Turn on the
+    “Send alert” response to receive alerts that allow you to identify potential
+    raiders, and the “Block message” response to have AutoMod prevent raiders’
+    messages from being posted in your server when containing any of your
+    keywords.</span
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >Tip: You can set up AutoMod to work as an alert system for potential
+    raiders without resorting to blocking people’s messages from the get-go by
+    turning on “Send alert” and turning off “Block message” in your rules.</span
+  >
+</p>
+<p>
+  <strong>Customize your Block Mention Spam rule </strong
+  ><span style="font-weight: 400"
+    >- Mention raids are when raiders join your server to annoy or expose your
+    members to undesirable content by spamming mentions via @usernames or
+    @roles. To minimize the likelihood of raiders pulling this off successfully,
+    turn on AutoMod’s “Block Mention Spam” rule.</span
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >Set a mention limit you think works best for your server, and enable “Block
+    message,” “Send alert”, and/or “Timeout member” responses. This way, members
+    can’t post messages containing an excessive number of unique mentions.</span
+  >
+</p>
+<p>
+  2.<strong> Disable @here and @everyone permissions</strong
+  ><span style="font-weight: 400">. </span>
+</p>
+<p>
+  <span style="font-weight: 400"
+    ><em
+      ><strong
+        >Go to Server Settings &gt; Roles &gt; Select a non-Admin or
+        non-Moderator role &gt; Toggle off “Mention @everyone, @here, and All
+        Roles.”</strong
+      ></em
+    ></span
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >This prevents raiders from being able to spam mentions to your entire
+    server and/or particular channels. We recommend only granting this
+    permission to people with roles you trust (e.g. Administrators,
+    Moderators).</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/10991042183447"
+      alt="raids101_3.jpg"
+  /></span>
+</p>
+<p class="wysiwyg-text-align-left">
+  3. <strong>Set up Raid Protection alerts. </strong>
+</p>
+<p class="wysiwyg-text-align-left">
+  <em
+    ><strong
+      >Go to Server Settings &gt; Safety Setup &gt; Raid Protection</strong
+    ></em
+  >
+</p>
+<p class="wysiwyg-text-align-left">
+  <span style="font-weight: 400"
+    >Our Raid Protection system provides protection from join-raids by using
+    machine learning to evaluate various signals that are likely indicative of
+    an upcoming raid and taking automated actions to safeguard your server. Set
+    up Raid Protection alerts to stay notified whenever a raid is
+    detected.</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/10997721637399"
+      alt="set-up-raid-protection-steps.gif"
+  /></span>
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/10991043567767"
+      alt="raids101_1.jpg"
+  /></span>
+</p>
+<p class="wysiwyg-text-align-left">
+  <span style="font-weight: 400"
+    >When a raid has been detected, we’ll automatically take action against
+    suspicious joiners by sending you an alert to a dedicated channel of your
+    choice and require CAPTCHA for new joiners within the next hour to prevent
+    raiders from joining your server. You can disable CAPTCHA at any time.</span
+  ><span style="font-weight: 400"><br /></span>
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/10991090245911"
+      alt="raids101_2.jpg" /><br />Left: Set up to receive alerts when a
+    possible join-raid has been detected in your server.<br />Right: What an
+    alert looks like in a text channel<br
+  /></span>
+</p>
+<h3>
+  We're gradually rolling out Raid Protection alerts to community servers! At
+  this time, availability may be limited.
+</h3>
+<p>
+  4.
+  <strong
+    >Set a
+    <a
+      href="https://support.discord.com/hc/en-us/articles/216679607"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Verification Level</a
+    ></strong
+  ><span style="font-weight: 400">. </span>
+</p>
+<p>
+  <em
+    ><strong
+      >Go to Server Settings &gt; Safety Setup &gt; Verification Level</strong
+    ></em
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >To prevent raids on your Discord server, you can set a Verification Level
+    in the Server Settings. Verification Levels require users to verify their
+    email address or phone number before sending messages, which can help
+    prevent bots and spam accounts from joining your server. We recommend
+    setting the Verification Level to "Low" for basic security on public
+    servers.</span
+  >
+</p>
+<p>
+  5. <strong>Set your Explicit Media Content Filter to Medium or High. </strong>
+</p>
+<p>
+  <em
+    ><strong
+      >Go to Server Settings &gt; Safety Setup &gt; Explicit Media Content
+      Filter</strong
+    ></em
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >Raiders may often try to raid your server and post explicit content to
+    shock, harass, or spur your members to leave. Enable this filter to
+    automatically scan and block explicit media from being posted in your
+    server. Community-enabled servers have the High Explicit Media Content
+    filter on by default.</span
+  >
+</p>
+<p>
+  6. <strong>Find and recruit moderators</strong
+  ><span style="font-weight: 400"
+    >. It’s always useful to have a moderator you trust online to immediately
+    prevent or de-escalate a raid should one occur. </span
+  ><span id="docs-internal-guid-49b3ece1-7fff-25e2-1578-7c868eaa3abf">Our </span
+  ><a
+    href="https://discord.com/community/identifying-assigning-moderators"
+    target="_blank"
+    rel="noopener"
+    >Identifying and Assigning Moderators article</a
+  >
+  covers best practices you should know on finding and recruiting moderators.
+</p>
 <h1>Being raided? Here are ways to de-escalate the raid:</h1>
 <p>1.<strong> Pause invitations to your server.</strong></p>
-<p><em><strong>Go to Server Settings &gt; Invites &gt; Pause Invites</strong></em></p>
-<p><span style="font-weight: 400;">Prevent incoming raiders from joining your server through your invite links for as long as needed by pausing your invite links. Pausing invites to your server is a great means of crowd control if your server is being raided so you can tend to your server and de-escalate a raid without having to resort to drastic measures like deleting your invite links. You can unpause at any time.</span><span style="font-weight: 400;"><br></span></p>
-<p>2. <strong>Enable </strong><a href="https://support.discord.com/hc/en-us/articles/360016150952-Slowmode-Slllooowwwiiinng-down-your-channel" target="_self" rel="undefined"><strong>Slowmode</strong></a><span style="font-weight: 400;">. </span></p>
-<p><em><strong>Right-click a channel or press the cog wheel next to the channel name &gt; Edit Channel &gt; Overview &gt; Slowmode</strong></em></p>
-<p><span style="font-weight: 400;">If raiders have made their way in and are spamming large volumes of messages, turn on Slowmode to limit the number of messages they’re able to send in a channel based on a timed cooldown. This will help you reduce the chaos and make it easier for you to weed out bad actors.</span><span style="font-weight: 400;"><br></span></p>
+<p>
+  <em
+    ><strong>Go to Server Settings &gt; Invites &gt; Pause Invites</strong></em
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >Prevent incoming raiders from joining your server through your invite links
+    for as long as needed by pausing your invite links. Pausing invites to your
+    server is a great means of crowd control if your server is being raided so
+    you can tend to your server and de-escalate a raid without having to resort
+    to drastic measures like deleting your invite links. You can unpause at any
+    time.</span
+  ><span style="font-weight: 400"><br /></span>
+</p>
+<p>
+  2. <strong>Enable </strong
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/360016150952-Slowmode-Slllooowwwiiinng-down-your-channel"
+    target="_self"
+    rel="undefined"
+    ><strong>Slowmode</strong></a
+  ><span style="font-weight: 400">. </span>
+</p>
+<p>
+  <em
+    ><strong
+      >Right-click a channel or press the cog wheel next to the channel name
+      &gt; Edit Channel &gt; Overview &gt; Slowmode</strong
+    ></em
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >If raiders have made their way in and are spamming large volumes of
+    messages, turn on Slowmode to limit the number of messages they’re able to
+    send in a channel based on a timed cooldown. This will help you reduce the
+    chaos and make it easier for you to weed out bad actors.</span
+  ><span style="font-weight: 400"><br /></span>
+</p>
 <p>3. <strong>Adjust your AutoMod rules as needed. </strong></p>
-<p><em><strong>Go to Server Settings &gt; AutoMod </strong></em></p>
-<p><span style="font-weight: 400;">During a raid, it’s important to identify the raiders, prevent them from posting in your server, and remove them as soon as possible.</span></p>
-<p><span style="font-weight: 400;">If your server is being raided, consider fine-tuning your AutoMod rules as such:</span></p>
+<p>
+  <em><strong>Go to Server Settings &gt; AutoMod </strong></em>
+</p>
+<p>
+  <span style="font-weight: 400"
+    >During a raid, it’s important to identify the raiders, prevent them from
+    posting in your server, and remove them as soon as possible.</span
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >If your server is being raided, consider fine-tuning your AutoMod rules as
+    such:</span
+  >
+</p>
 <ul>
-    <li>
-        <span style="font-weight: 400;">Add words or phrases you see raiders spamming to one of your Custom Rules, and turn on the “Block Message” response to prevent raiders’ messages from being posted. <br></span><span style="font-weight: 400;">Identify raiders and remove them by turning on “Send alerts” to receive alerts containing who-what-where information on raiders. <br></span><span style="font-weight: 400;">Enable the “Timeout member” response to temporarily disable a raider’s ability to send messages or join voice channels.</span>
-    </li>
-    <li><span style="font-weight: 400;">Depending on what raiders are doing, consider enabling the “Block Message,” “Send alerts” and “Timeout member” responses across all of your other AutoMod rules.</span></li>
-    <li>Adjust your “Block Mention Spam” filter - Set a lower, more restrictive mention limit if raiders are spamming mentions in your server. Note that your mention limit means that members can’t exceed that number of <strong>unique</strong> mentions <em>per individual message</em>.</li>
+  <li>
+    <span style="font-weight: 400"
+      >Add words or phrases you see raiders spamming to one of your Custom
+      Rules, and turn on the “Block Message” response to prevent raiders’
+      messages from being posted. <br /></span
+    ><span style="font-weight: 400"
+      >Identify raiders and remove them by turning on “Send alerts” to receive
+      alerts containing who-what-where information on raiders. <br /></span
+    ><span style="font-weight: 400"
+      >Enable the “Timeout member” response to temporarily disable a raider’s
+      ability to send messages or join voice channels.</span
+    >
+  </li>
+  <li>
+    <span style="font-weight: 400"
+      >Depending on what raiders are doing, consider enabling the “Block
+      Message,” “Send alerts” and “Timeout member” responses across all of your
+      other AutoMod rules.</span
+    >
+  </li>
+  <li>
+    Adjust your “Block Mention Spam” filter - Set a lower, more restrictive
+    mention limit if raiders are spamming mentions in your server. Note that
+    your mention limit means that members can’t exceed that number of
+    <strong>unique</strong> mentions <em>per individual message</em>.
+  </li>
 </ul>
-<p>4.<strong> Increase your <a href="https://support.discord.com/hc/en-us/articles/216679607-What-are-Verification-Levels-" target="_blank" rel="noopener noreferrer">Verification to High or Highest</a></strong><span style="font-weight: 400;"><strong>.</strong> </span></p>
-<p><em><strong>Go to Server Settings &gt; Safety Setup &gt; Verification Level</strong></em></p>
-<p><span style="font-weight: 400;">To strengthen the security of your Discord server during a raid, you can increase the Verification Level in the Server Settings.</span></p>
-<p><span style="font-weight: 400;">Higher Verification Levels require users to verify their email address, phone number, and/or have been a member of the server for a certain amount of time before they can interact in the server. This can give you time to focus on de-escalating the raid without worrying about incoming raiders. Once the raid has been stopped, you can return your Verification Level to its prior settings.</span></p>
-<p>5.<strong> Report the raid to Discord</strong><span style="font-weight: 400;">. </span></p>
-<p><em><strong>Click on your server name to open the server dropdown menu &gt; Report Raid</strong></em></p>
-<p><span style="font-weight: 400;">Be our partner-in-crime (or against crime…?) in combating raids by reporting them directly to us from your server dropdown menu. If your Community is being raided, you can help us in our moderation efforts by reporting the situation as we’ll be regularly reviewing your raid reports to develop tooling designed to prevent future raids.</span></p>
-<p><em><span style="font-weight: 400;">To use Report Raid, you must have “Ban Members” or “Kick Members” permissions. Only accessible on the Desktop client and in Community servers.</span></em></p>
-<p class="wysiwyg-text-align-center"><em><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10991093447191" alt="raids101_4.jpg" width="237" height="514"></span></em></p>
+<p>
+  4.<strong>
+    Increase your
+    <a
+      href="https://support.discord.com/hc/en-us/articles/216679607-What-are-Verification-Levels-"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Verification to High or Highest</a
+    ></strong
+  ><span style="font-weight: 400"><strong>.</strong> </span>
+</p>
+<p>
+  <em
+    ><strong
+      >Go to Server Settings &gt; Safety Setup &gt; Verification Level</strong
+    ></em
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >To strengthen the security of your Discord server during a raid, you can
+    increase the Verification Level in the Server Settings.</span
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >Higher Verification Levels require users to verify their email address,
+    phone number, and/or have been a member of the server for a certain amount
+    of time before they can interact in the server. This can give you time to
+    focus on de-escalating the raid without worrying about incoming raiders.
+    Once the raid has been stopped, you can return your Verification Level to
+    its prior settings.</span
+  >
+</p>
+<p>
+  5.<strong> Report the raid to Discord</strong
+  ><span style="font-weight: 400">. </span>
+</p>
+<p>
+  <em
+    ><strong
+      >Click on your server name to open the server dropdown menu &gt; Report
+      Raid</strong
+    ></em
+  >
+</p>
+<p>
+  <span style="font-weight: 400"
+    >Be our partner-in-crime (or against crime…?) in combating raids by
+    reporting them directly to us from your server dropdown menu. If your
+    Community is being raided, you can help us in our moderation efforts by
+    reporting the situation as we’ll be regularly reviewing your raid reports to
+    develop tooling designed to prevent future raids.</span
+  >
+</p>
+<p>
+  <em
+    ><span style="font-weight: 400"
+      >To use Report Raid, you must have “Ban Members” or “Kick Members”
+      permissions. Only accessible on the Desktop client and in Community
+      servers.</span
+    ></em
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <em
+    ><span style="font-weight: 400"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/10991093447191"
+        alt="raids101_4.jpg"
+        width="237"
+        height="514" /></span
+  ></em>
+</p>
 <p> </p>
 <p class="wysiwyg-text-align-center"> </p>

@@ -1,6 +1,52 @@
-<p>We use certain information to help us understand and improve Discord and to develop features that make Discord safer and better for you to use. <span style="color: #23272a; background-color: #ffffff;">This includes information such as how you use our services, the games you play, and how servers are structured. </span></p>
-<p>Turning <strong>the Use Data to Improve Discord Setting</strong> off means we will no longer collect new information about how you use and/or navigate Discord in order to understand and improve our products. We may continue to use the information we collected when the setting was enabled. More detail can be found in our <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22110737551383" width="720" height="503"></p>
-<p>It will also prevent us from automatically improving the quality of voice or video communications on Discord based on your usage.</p>
-<p>If you’d like to further assert your right to object to our processing of your data, email <strong><a href="mailto:privacy@discord.com" target="_blank" rel="noopener noreferrer">privacy@discord.com</a></strong>.</p>
-<h3 id="h_01HS20E4N6AJQQYNQ5PSCQMEBV">When you turn the setting off, the signals associated with your use of Discord continue to be sent, but we do not use the information for the purposes described above. This is an account-based setting and applies to your use of Discord regardless of the device used to access your account. This allows us to keep your account experience consistent across devices and access points of Discord.</h3>
+<p>
+  We use certain information to help us understand and improve Discord and to
+  develop features that make Discord safer and better for you to use.
+  <span style="color: #23272a; background-color: #ffffff"
+    >This includes information such as how you use our services, the games you
+    play, and how servers are structured. </span
+  >
+</p>
+<p>
+  Turning <strong>the Use Data to Improve Discord Setting</strong> off means we
+  will no longer collect new information about how you use and/or navigate
+  Discord in order to understand and improve our products. We may continue to
+  use the information we collected when the setting was enabled. More detail can
+  be found in our
+  <a
+    href="https://discord.com/privacy"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Privacy Policy</a
+  >. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/22110737551383"
+    width="720"
+    height="503"
+  />
+</p>
+<p>
+  It will also prevent us from automatically improving the quality of voice or
+  video communications on Discord based on your usage.
+</p>
+<p>
+  If you’d like to further assert your right to object to our processing of your
+  data, email
+  <strong
+    ><a
+      href="mailto:privacy@discord.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      >privacy@discord.com</a
+    ></strong
+  >.
+</p>
+<h3 id="h_01HS20E4N6AJQQYNQ5PSCQMEBV">
+  When you turn the setting off, the signals associated with your use of Discord
+  continue to be sent, but we do not use the information for the purposes
+  described above. This is an account-based setting and applies to your use of
+  Discord regardless of the device used to access your account. This allows us
+  to keep your account experience consistent across devices and access points of
+  Discord.
+</h3>

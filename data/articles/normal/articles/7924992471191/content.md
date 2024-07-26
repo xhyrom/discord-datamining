@@ -1,35 +1,281 @@
-<p id="docs-internal-guid-b704be2a-7fff-fb55-ecd5-5a1e169dd64f"><span style="color: #4f545c;" data-darkreader-inline-color="">If someone you are not friends with sends you a direct message (DM), Discord may filter that DM into a separate “Message Requests” folder to help you screen out unwanted DMs from your DM list. If Discord thinks</span><span style="color: #4f545c;" data-darkreader-inline-color=""> a direct message is from a spam bot, we may filter that DM into a more hidden “Spam” folder.    </span></p>
-<p><span style="color: #4f545c;" data-darkreader-inline-color="">You will need to approve the message request before being able to chat directly with the message requestor.  </span></p>
-<p id="docs-internal-guid-571e0869-7fff-bb8e-57f8-3ecf3c771865"><span class="wysiwyg-font-size-large"><strong><span style="color: #4f545c;" data-darkreader-inline-color="">What does this article cover?</span></strong></span></p>
+<p id="docs-internal-guid-b704be2a-7fff-fb55-ecd5-5a1e169dd64f">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >If someone you are not friends with sends you a direct message (DM),
+    Discord may filter that DM into a separate “Message Requests” folder to help
+    you screen out unwanted DMs from your DM list. If Discord thinks</span
+  ><span style="color: #4f545c" data-darkreader-inline-color="">
+    a direct message is from a spam bot, we may filter that DM into a more
+    hidden “Spam” folder.    </span
+  >
+</p>
+<p>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >You will need to approve the message request before being able to chat
+    directly with the message requestor. 
+  </span>
+</p>
+<p id="docs-internal-guid-571e0869-7fff-bb8e-57f8-3ecf3c771865">
+  <span class="wysiwyg-font-size-large"
+    ><strong
+      ><span style="color: #4f545c" data-darkreader-inline-color=""
+        >What does this article cover?</span
+      ></strong
+    ></span
+  >
+</p>
 <ul>
-    <li><a href="#h_01GSGQB3C28RSFRFMYYV6KWM42" target="_self"><span style="color: #5865f2;" data-darkreader-inline-color="">What do Message Requests look like?</span></a></li>
-    <li><a href="#h_01GSGQB9DMM2Q45BPS23N6D9NE" target="_self"><span style="color: #5865f2;" data-darkreader-inline-color="">What is the Spam folder?</span></a></li>
-    <li><a href="#h_01GSGQBGSZ42G3ZDVBD1ZV40R3" target="_self"><span style="color: #5865f2;" data-darkreader-inline-color="">Message Requests on mobile</span></a></li>
-    <li><a href="#h_01GSGQBPQ3JW1659RJ3S87FF43" target="_self"><span style="color: #5865f2;" data-darkreader-inline-color="">How to turn Message Requests off</span></a></li>
+  <li>
+    <a href="#h_01GSGQB3C28RSFRFMYYV6KWM42" target="_self"
+      ><span style="color: #5865f2" data-darkreader-inline-color=""
+        >What do Message Requests look like?</span
+      ></a
+    >
+  </li>
+  <li>
+    <a href="#h_01GSGQB9DMM2Q45BPS23N6D9NE" target="_self"
+      ><span style="color: #5865f2" data-darkreader-inline-color=""
+        >What is the Spam folder?</span
+      ></a
+    >
+  </li>
+  <li>
+    <a href="#h_01GSGQBGSZ42G3ZDVBD1ZV40R3" target="_self"
+      ><span style="color: #5865f2" data-darkreader-inline-color=""
+        >Message Requests on mobile</span
+      ></a
+    >
+  </li>
+  <li>
+    <a href="#h_01GSGQBPQ3JW1659RJ3S87FF43" target="_self"
+      ><span style="color: #5865f2" data-darkreader-inline-color=""
+        >How to turn Message Requests off</span
+      ></a
+    >
+  </li>
 </ul>
 <h1 id="h_01GSGQB3C28RSFRFMYYV6KWM42">What do Message Requests look like?</h1>
-<p><span id="docs-internal-guid-c45cb860-7fff-507e-8622-8fa9388ddba4" style="color: #4f545c;" data-darkreader-inline-color="">To view <strong>Message Requests</strong> on the desktop or web browser client, you can select your <strong>Home tab</strong> and find the folder located in the image below:</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17507432347543" alt="pasted image 0.png"></p>
-<h4 id="docs-internal-guid-0e294a52-7fff-4223-c284-0e6cb5dced27" class="wysiwyg-text-align-center"><span style="color: #4f545c;" data-darkreader-inline-color="">Message Requests On Desktop</span></h4>
-<p><span style="color: #4f545c;" data-darkreader-inline-color=""><span id="docs-internal-guid-9c040444-7fff-7e47-f032-761493bc07e1" style="color: #4f545c;" data-darkreader-inline-color="">From this tab, you’ll be able to view user profiles to check shared servers, and accept or ignore Message Requests. While it isn’t possible to retrieve ignored requests, people will be able to resend Message Requests to your account depending on your <strong>Server Settings and User Settings &gt; Privacy &amp; Safety </strong>settings.</span></span></p>
-<h3 id="docs-internal-guid-054dfc88-7fff-a761-aa6c-d2369528c94e"><strong><span style="color: #104c32;" data-darkreader-inline-color="">Note: The Message Requests tab will only display if there is at least one pending request. All Message Requests will display a notification badge on the client.</span></strong></h3>
-<h1 id="h_01GSGQB9DMM2Q45BPS23N6D9NE"><strong><span style="color: #104c32;" data-darkreader-inline-color="">What is the Spam Folder?</span></strong></h1>
-<p id="docs-internal-guid-0fb461c5-7fff-2573-1ef8-f209c96c0b74"><span style="color: #4f545c;" data-darkreader-inline-color="">To view your Spam folder, select the <strong>Spam</strong> tab inside the <strong>Message Requests view</strong>.</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17507437481623" alt="pasted image 0 (1).png"></p>
-<p id="docs-internal-guid-ccc5a42e-7fff-9066-54ba-6f731554beab"><span style="color: #4f545c;" data-darkreader-inline-color="">From this tab, you’ll be able to view user profiles to check shared servers, and accept or report spam folder message requests. You may also preview and ignore messages by selecting the message itself.</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17507432358039" alt="pasted image 0 (2).png"></p>
+<p>
+  <span
+    id="docs-internal-guid-c45cb860-7fff-507e-8622-8fa9388ddba4"
+    style="color: #4f545c"
+    data-darkreader-inline-color=""
+    >To view <strong>Message Requests</strong> on the desktop or web browser
+    client, you can select your <strong>Home tab</strong> and find the folder
+    located in the image below:</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/17507432347543"
+    alt="pasted image 0.png"
+  />
+</p>
+<h4
+  id="docs-internal-guid-0e294a52-7fff-4223-c284-0e6cb5dced27"
+  class="wysiwyg-text-align-center"
+>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >Message Requests On Desktop</span
+  >
+</h4>
+<p>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><span
+      id="docs-internal-guid-9c040444-7fff-7e47-f032-761493bc07e1"
+      style="color: #4f545c"
+      data-darkreader-inline-color=""
+      >From this tab, you’ll be able to view user profiles to check shared
+      servers, and accept or ignore Message Requests. While it isn’t possible to
+      retrieve ignored requests, people will be able to resend Message Requests
+      to your account depending on your
+      <strong
+        >Server Settings and User Settings &gt; Privacy &amp; Safety </strong
+      >settings.</span
+    ></span
+  >
+</p>
+<h3 id="docs-internal-guid-054dfc88-7fff-a761-aa6c-d2369528c94e">
+  <strong
+    ><span style="color: #104c32" data-darkreader-inline-color=""
+      >Note: The Message Requests tab will only display if there is at least one
+      pending request. All Message Requests will display a notification badge on
+      the client.</span
+    ></strong
+  >
+</h3>
+<h1 id="h_01GSGQB9DMM2Q45BPS23N6D9NE">
+  <strong
+    ><span style="color: #104c32" data-darkreader-inline-color=""
+      >What is the Spam Folder?</span
+    ></strong
+  >
+</h1>
+<p id="docs-internal-guid-0fb461c5-7fff-2573-1ef8-f209c96c0b74">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >To view your Spam folder, select the <strong>Spam</strong> tab inside the
+    <strong>Message Requests view</strong>.</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/17507437481623"
+    alt="pasted image 0 (1).png"
+  />
+</p>
+<p id="docs-internal-guid-ccc5a42e-7fff-9066-54ba-6f731554beab">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >From this tab, you’ll be able to view user profiles to check shared
+    servers, and accept or report spam folder message requests. You may also
+    preview and ignore messages by selecting the message itself.</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/17507432358039"
+    alt="pasted image 0 (2).png"
+  />
+</p>
 <h1 id="h_01GSGQBGSZ42G3ZDVBD1ZV40R3">Message Requests on mobile</h1>
-<p id="docs-internal-guid-6347a724-7fff-cd84-b3c7-e30a8dca3d27"><span style="color: #4f545c;" data-darkreader-inline-color="">On your mobile device, you can tap into your DMs and find a tab labeled <strong>Message Requests</strong> if you have at least one request pending. This will pull up a view listing the requests you’ve received.</span></p>
-<p><span style="color: #4f545c;" data-darkreader-inline-color=""><span id="docs-internal-guid-9429b5a5-7fff-a245-82f7-1fef56f4b4fe" style="color: #4f545c;" data-darkreader-inline-color="">You’ll be able to both view user profiles and choose between accepting or declining requests on your mobile app, as shown below:</span></span></p>
-<p class="wysiwyg-text-align-center"><span style="color: #4f545c;" data-darkreader-inline-color=""><span id="docs-internal-guid-fad3e8b3-7fff-1e5f-d2e6-2096fc0c58b5" style="color: #4f545c;" data-darkreader-inline-color=""><img src="https://lh4.googleusercontent.com/T5LSNzBG_35Bc9qH5dDfR1lcWO1DFcUgo-Y8_W8EjXJRwrwJtqq39pLXkQqiLyPaaOcEZiLUS0qoGkFIwXB2lopnafOMM-kxXCiv0ykoPm_iy0gdDHLhOgJymOEEmBsS05XF1-Ptf1OYUk3obJgJvNE" alt="DM_List.jpg" width="220" height="477">  <img src="https://support.discord.com/hc/article_attachments/17507432359703" alt="pasted image 0 (4).png" width="220" height="477"></span></span><span style="color: #4f545c;" data-darkreader-inline-color=""><span id="docs-internal-guid-74412929-7fff-ed72-50c9-697b345581cb" style="color: #4f545c;" data-darkreader-inline-color=""> <img src="https://support.discord.com/hc/article_attachments/17507432365591" alt="Message_Requests.png" width="220" height="476"></span></span></p>
-<h4 id="docs-internal-guid-0241cb41-7fff-7ed1-0cbc-699c184e02c1" class="wysiwyg-text-align-center"><span style="color: #4f545c;" data-darkreader-inline-color="">Direct Messages tab &gt; Message Requests tab on mobile</span></h4>
-<h4 id="h_01HA83TR8Z6BH2BVQ6019MVMP2" class="wysiwyg-text-align-center"><span style="color: #4f545c;" data-darkreader-inline-color="">Preview enabled (middle image), Preview disabled (image located on right)</span></h4>
-<h1 id="h_01GSGQBPQ3JW1659RJ3S87FF43"><span style="color: #4f545c;" data-darkreader-inline-color="">How to turn Message Requests off</span></h1>
-<p class="wysiwyg-text-align-center"><span style="color: #4f545c;" data-darkreader-inline-color=""><span id="docs-internal-guid-9120f491-7fff-dd9f-55a4-0f0420b6a569" style="color: #4f545c;" data-darkreader-inline-color="">To turn this feature off for a particular server, navigate to the <strong>Server dropdown menu &gt; Select Privacy Settings &gt; Toggle off “Message Requests”</strong>:<img src="https://support.discord.com/hc/article_attachments/17507437511575" alt="message-request-settings-options.png"></span></span></p>
-<h3 id="docs-internal-guid-a3033e24-7fff-6a6b-f51b-42f44e38563a"><strong><span style="color: #104c32;" data-darkreader-inline-color="">Note that turning this feature off in a server will disable Message Requests from that server.</span></strong></h3>
-<p id="docs-internal-guid-c4f39c91-7fff-baf8-1245-b57a3d311531"><span style="color: #4f545c;" data-darkreader-inline-color="">This means that, unless restricted by Server Settings or your User Settings &gt; Privacy &amp; Safety settings, messages sent from other members of that server will automatically populate in your DM list.</span></p>
-<p><span style="color: #4f545c;" data-darkreader-inline-color="">You can also toggle your global message request setting in the <strong>Privacy &amp; Safety</strong> <strong>section</strong> of your  User Settings, as shown in the screenshot below.</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18403068058263" alt="image8.png"></p>
-<p id="docs-internal-guid-b1b08e5e-7fff-2a58-e577-e37d262bb095"><span id="docs-internal-guid-e7fca209-7fff-4ff2-513c-70bb4f062c16">When a teen receives direct messages (DMs) from a sender for the first time, Discord will detect if a safety alert should be sent to the teen for this DM. If detected, Discord will notify the teen with a safety alert encouraging them to double check if they want to reply, and will provide links to block the user or view more safety tips to safeguard themselves. </span><a href="https://support.discord.com/hc/articles/18210977897239/" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Learn more about this experience here</span></a>.</p>
-<p id="docs-internal-guid-2fc75f60-7fff-87e4-d367-348312d519a1"><span style="color: #4f545c; background-color: #ffffff;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">Please note that the spam folder cannot be turned off at this time. </span></p>
-<h3 id="h_01HD4H51136BKQZSSBEGQAM0VJ"><span style="color: #4f545c;" data-darkreader-inline-color="">In certain countries and situations, you will not be able to turn off message requests, and you will not see the global or per-server message request settings. </span></h3>
+<p id="docs-internal-guid-6347a724-7fff-cd84-b3c7-e30a8dca3d27">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >On your mobile device, you can tap into your DMs and find a tab labeled
+    <strong>Message Requests</strong> if you have at least one request pending.
+    This will pull up a view listing the requests you’ve received.</span
+  >
+</p>
+<p>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><span
+      id="docs-internal-guid-9429b5a5-7fff-a245-82f7-1fef56f4b4fe"
+      style="color: #4f545c"
+      data-darkreader-inline-color=""
+      >You’ll be able to both view user profiles and choose between accepting or
+      declining requests on your mobile app, as shown below:</span
+    ></span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><span
+      id="docs-internal-guid-fad3e8b3-7fff-1e5f-d2e6-2096fc0c58b5"
+      style="color: #4f545c"
+      data-darkreader-inline-color=""
+      ><img
+        src="https://lh4.googleusercontent.com/T5LSNzBG_35Bc9qH5dDfR1lcWO1DFcUgo-Y8_W8EjXJRwrwJtqq39pLXkQqiLyPaaOcEZiLUS0qoGkFIwXB2lopnafOMM-kxXCiv0ykoPm_iy0gdDHLhOgJymOEEmBsS05XF1-Ptf1OYUk3obJgJvNE"
+        alt="DM_List.jpg"
+        width="220"
+        height="477" /> 
+      <img
+        src="https://support.discord.com/hc/article_attachments/17507432359703"
+        alt="pasted image 0 (4).png"
+        width="220"
+        height="477" /></span></span
+  ><span style="color: #4f545c" data-darkreader-inline-color=""
+    ><span
+      id="docs-internal-guid-74412929-7fff-ed72-50c9-697b345581cb"
+      style="color: #4f545c"
+      data-darkreader-inline-color=""
+    >
+      <img
+        src="https://support.discord.com/hc/article_attachments/17507432365591"
+        alt="Message_Requests.png"
+        width="220"
+        height="476" /></span
+  ></span>
+</p>
+<h4
+  id="docs-internal-guid-0241cb41-7fff-7ed1-0cbc-699c184e02c1"
+  class="wysiwyg-text-align-center"
+>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >Direct Messages tab &gt; Message Requests tab on mobile</span
+  >
+</h4>
+<h4 id="h_01HA83TR8Z6BH2BVQ6019MVMP2" class="wysiwyg-text-align-center">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >Preview enabled (middle image), Preview disabled (image located on
+    right)</span
+  >
+</h4>
+<h1 id="h_01GSGQBPQ3JW1659RJ3S87FF43">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >How to turn Message Requests off</span
+  >
+</h1>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><span
+      id="docs-internal-guid-9120f491-7fff-dd9f-55a4-0f0420b6a569"
+      style="color: #4f545c"
+      data-darkreader-inline-color=""
+      >To turn this feature off for a particular server, navigate to the
+      <strong
+        >Server dropdown menu &gt; Select Privacy Settings &gt; Toggle off
+        “Message Requests”</strong
+      >:<img
+        src="https://support.discord.com/hc/article_attachments/17507437511575"
+        alt="message-request-settings-options.png" /></span
+  ></span>
+</p>
+<h3 id="docs-internal-guid-a3033e24-7fff-6a6b-f51b-42f44e38563a">
+  <strong
+    ><span style="color: #104c32" data-darkreader-inline-color=""
+      >Note that turning this feature off in a server will disable Message
+      Requests from that server.</span
+    ></strong
+  >
+</h3>
+<p id="docs-internal-guid-c4f39c91-7fff-baf8-1245-b57a3d311531">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >This means that, unless restricted by Server Settings or your User Settings
+    &gt; Privacy &amp; Safety settings, messages sent from other members of that
+    server will automatically populate in your DM list.</span
+  >
+</p>
+<p>
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >You can also toggle your global message request setting in the
+    <strong>Privacy &amp; Safety</strong> <strong>section</strong> of your  User
+    Settings, as shown in the screenshot below.</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/18403068058263"
+    alt="image8.png"
+  />
+</p>
+<p id="docs-internal-guid-b1b08e5e-7fff-2a58-e577-e37d262bb095">
+  <span id="docs-internal-guid-e7fca209-7fff-4ff2-513c-70bb4f062c16"
+    >When a teen receives direct messages (DMs) from a sender for the first
+    time, Discord will detect if a safety alert should be sent to the teen for
+    this DM. If detected, Discord will notify the teen with a safety alert
+    encouraging them to double check if they want to reply, and will provide
+    links to block the user or view more safety tips to safeguard themselves. </span
+  ><a
+    href="https://support.discord.com/hc/articles/18210977897239/"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Learn more about this experience here</span
+    ></a
+  >.
+</p>
+<p id="docs-internal-guid-2fc75f60-7fff-87e4-d367-348312d519a1">
+  <span
+    style="color: #4f545c; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    >Please note that the spam folder cannot be turned off at this time. </span
+  >
+</p>
+<h3 id="h_01HD4H51136BKQZSSBEGQAM0VJ">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >In certain countries and situations, you will not be able to turn off
+    message requests, and you will not see the global or per-server message
+    request settings.
+  </span>
+</h3>
