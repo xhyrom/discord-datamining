@@ -26714,6 +26714,52 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   background-color: ButtonFace;
   color: ButtonText;
 }
+.header_b9cd33 {
+  z-index: 2;
+  min-height: calc(45px + var(--custom-user-banner-height-bite-size));
+  flex-shrink: 0;
+}
+.custom-profile-theme .header_b9cd33 {
+  min-height: calc(35px + var(--custom-user-banner-height-bite-size));
+}
+.body_b9cd33 {
+  z-index: 1;
+  padding: 0 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer_b9cd33 {
+  z-index: 1;
+  padding: 0 16px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.footer_b9cd33:empty {
+  visibility: hidden;
+  padding: 0;
+}
+.preview_b9cd33 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.previewForCollected_b9cd33 {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: top;
+  object-position: top;
+}
+.container_b9cd33 {
+  position: relative;
+}
+.centeredButton_b9cd33 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
 .popover_a64b81 {
   z-index: 1;
   position: absolute;
@@ -44214,4 +44260,4 @@ img[alt] {
     --font-weight-semibold-1x-light-theme: 600;
   }
 }
-/*# sourceMappingURL=12633.1a74559260005b62dcef.css.map*/
+/*# sourceMappingURL=12633.5287ecb51bf012d29a1a.css.map*/
