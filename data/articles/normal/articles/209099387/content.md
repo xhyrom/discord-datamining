@@ -26,4 +26,3 @@
 <p><em><strong>In some cases, these extra steps may be necessary.</strong></em></p>
 <p><em>Set the Discord application (%LocalAppData%/Discord/most recent version) to run as Administrator and set Compatibility to Windows 7 or 8 (try both)</em></p>
 <p><em>Make sure that all instances of Discord, including the browser version, are closed out before attempting the steps. </em></p>
-<p><em>If you're seeing Kernel32.dll errors, please reference <a href="https://support.discord.com/hc/en-us/articles/115002834812" target="_blank" rel="noopener">this article</a>!<br><br>If you're on Windows 7 and these steps haven't worked for you, try the steps listed in <a href="https://support.discord.com/hc/en-us/articles/360016319392--Known-Issue-Update-Stuck-on-Windows-7" target="_self">this article</a> as well!</em></p>
