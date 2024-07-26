@@ -108,9 +108,12 @@ export class Stylesheets implements Module {
       await fetch(`${this.#webBuild.channel.baseUrl}/login`)
     ).text();
 
-    const stylesheets = res
-      .match(/<link href="\/assets\/[a-z0-9.]+\.css"[^>]+>/g)
-      ?.map((s) => s.match(/href="[^"]+"/g)?.[0].slice(14, -1))
+    const stylesheets = [
+      ...res.matchAll(
+        /<link?([^>]+)href="?([^>]+)\/assets\/(?<link_name>[a-z0-9.]+\.css)"?([^>]+)+>/g,
+      ),
+    ]
+      .map((match) => match.groups?.link_name)
       ?.map((s) => new File(s!))!;
 
     this.#files = {
