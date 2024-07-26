@@ -8,9 +8,7 @@
         ><strong><em>Settings &gt; What's New</em></strong
         ><em>.</em>
       </p>
-      <div class="w-embed">
-        <hr class="hr-style" />
-      </div>
+      <div class="w-embed"><hr class="hr-style" /></div>
       <figure
         style="max-width: 1600pxpx"
         class="w-richtext-align-fullwidth w-richtext-figure-type-image"
