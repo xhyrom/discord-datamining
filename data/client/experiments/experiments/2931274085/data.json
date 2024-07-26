@@ -6,13 +6,17 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Status React / Reply"
+      "Treatment 1: Enable Status React / Reply",
+      "Treatment 2: Enable Avatar React / Reply",
+      "Treatment 3: Enable Status & Avatar React / Reply"
     ],
     "hash": 2931274085,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,

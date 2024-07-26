@@ -1,0 +1,48 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2024-07_rapidash_m3_guilds",
+    "label": "Rapidash M3 Guilds",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Targeted guilds",
+      "Treatment 2: Untargeted guilds"
+    ],
+    "hash": 1486731487,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": []
+  }
+}

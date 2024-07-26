@@ -7,19 +7,22 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Use User Affinity V1 Model",
-      "Treatment 2: Use the new User Affinity V2 Model"
+      "Treatment 2: Use the new User Affinity V2 Model with dm_probability",
+      "Treatment 3: Use the new User Affinity V2 Model with communication_probability"
     ],
     "hash": 4050975723,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "useV2",
+      "useV2Communication",
+      "useV2Dm",
       "useV1"
     ]
   }

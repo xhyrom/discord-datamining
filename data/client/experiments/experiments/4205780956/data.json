@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_open_platform_app_launcher",
+    "label": "Open Platform App Launcher",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable the App Launcher changes for Open Platform"
+    ],
+    "hash": 4205780956,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -679,6 +679,11 @@ id,hash,label
 2024-07_collectibles_android_shop_clientside,2459707680,Android Shop Experiment
 2024-07_contextual_image_recs,4122449375,Contextual Image Recommendations
 2024-07_contextual_image_recs_user,2916972233,Contextual Image Recommendations
+2024-07_ctp_open_nitro_everyone,2186054133,CTP open nitro - A/A test - Everyone
+2024-07_ctp_open_nitro_filters,919330149,CTP open nitro - A/A test - Filters
+2024-07_ctp_open_nitro_multiple_buckets,2877495005,CTP open nitro - A/A test - Multiple buckets
+2024-07_ctp_open_nitro_uneven_buckets,3652203932,CTP open nitro - A/A test - Uneven buckets
+2024-07_ctp_open_nitro_vanilla,893386376,CTP open nitro - A/A test - Vanilla
 2024-07_ctp_open_user_settings_everyone,2882656906,CTP open user settings - A/A test - Everyone
 2024-07_ctp_open_user_settings_filters,765549105,CTP open user settings - A/A test - Filters
 2024-07_ctp_open_user_settings_multiple_buckets,1154689066,CTP open user settings - A/A test - Multiple buckets
@@ -690,7 +695,9 @@ id,hash,label
 2024-07_global_discovery,2456783224,Global Discovery
 2024-07_icymi,4207551078,In-case-you-missed-it tab
 2024-07_icymi_negative_items,501017028,icymi negative content (debugging only)
+2024-07_open_platform_app_launcher,4205780956,Open Platform App Launcher
 2024-07_profile_effects_webp,2427580333,Uses WEBP for Profile Effect Assets
+2024-07_rapidash_m3_guilds,1486731487,Rapidash M3 Guilds
 2024-07_shop_marketing_variants,644476508,Shop Marketing Variants Experiment
 2024-07_sidechain_compression,3312979622,Test sidechain compression
 2024-07_sky_load,2472873852,Sky Load

@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-07_expand_roles_inline",
-    "label": "Expand Roles Inline",
+    "id": "2024-07_ctp_open_nitro_filters",
+    "label": "CTP open nitro - A/A test - Filters",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Expand roles inline when +X is clicked in the redesigned profile popout"
+      "Treatment 1: Treatment"
     ],
-    "hash": 512190380,
+    "hash": 919330149,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "doSomething"
     ]
   }
 }

@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_ctp_open_nitro_uneven_buckets",
+    "label": "CTP open nitro - A/A test - Uneven buckets",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Treatment"
+    ],
+    "hash": 3652203932,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "doSomething"
+    ]
+  }
+}
