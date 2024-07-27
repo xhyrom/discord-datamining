@@ -16,15 +16,13 @@
           href="https://discordmerch.com/dxcbl"
           target="_blank"
           class="w-inline-block"
-        >
-          <div>
+          ><div>
             <img
               src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6465091ba44155981a2b2c90_09d406b5.png"
               alt="Three friends wearing DISXCORE-themed merchandise."
               loading="lazy"
-            />
-          </div>
-        </a>
+            /></div
+        ></a>
       </figure>
       <p>
         Plus, a special release made just for your desk: Wumpus-themed Elgato
@@ -78,15 +76,13 @@
           href="https://discordmerch.com/dxcbl"
           target="_blank"
           class="w-inline-block"
-        >
-          <div>
+          ><div>
             <img
               src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6465095a626154d9959bddc8_0ee1c735.png"
               alt="Three friends wearing the DISXCORE long-sleeve tee, DISXCORE short-sleeve tee, and the DISXCORE women’s cut tee."
               loading="lazy"
-            />
-          </div>
-        </a>
+            /></div
+        ></a>
       </figure>
       <p>
         No matter which one you go for, you’ll be able to wear your stylish new
@@ -109,15 +105,13 @@
           href="https://discordmerch.com/dxcbl"
           target="_blank"
           class="w-inline-block"
-        >
-          <div>
+          ><div>
             <img
               src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64650955ee2b3c6dea9e0de8_ed3e24d8.png"
               alt="A person wearing the DISXCORE pullover hoodie. There are two angles shown, one from the side and one from the back."
               loading="lazy"
-            />
-          </div>
-        </a>
+            /></div
+        ></a>
       </figure>
     </div>
   </div>
@@ -139,15 +133,13 @@
           href="https://discordmerch.com/dxcbl"
           target="_blank"
           class="w-inline-block"
-        >
-          <div>
+          ><div>
             <img
               src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/646509b413c90bf92296c105_7f583cde.png"
               alt="Someone using the DISXCORE Sling Bag. They have DISXCORE pins on the bag’s strap."
               loading="lazy"
-            />
-          </div>
-        </a>
+            /></div
+        ></a>
       </figure>
       <p>
         Pack your things and swing ‘em around your torso (I didn’t say “core”
@@ -186,15 +178,13 @@
           href="https://discordmerch.com/dxcbl"
           target="_blank"
           class="w-inline-block"
-        >
-          <div>
+          ><div>
             <img
               src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/646509e9f631e331639d2407_82f3ade3.png"
               alt="Two images side by side. One is a person putting stickers on the DISXCORE water bottle, while the other is someone modeling the DISXCORE dad hat.&nbsp;"
               loading="lazy"
-            />
-          </div>
-        </a>
+            /></div
+        ></a>
       </figure>
       <p>
         The DISXCORE water bottle comes with its own sticker sheet, letting them
@@ -226,15 +216,13 @@
           href="https://discordmerch.com/dxcbl"
           target="_blank"
           class="w-inline-block"
-        >
-          <div>
+          ><div>
             <img
               src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64650a14c534e467fd61f6f7_647ef912.png"
               alt="A photo of the Wumpus-themed Elgato Wave:3 Microphone and Stream Deck.&nbsp;"
               loading="lazy"
-            />
-          </div>
-        </a>
+            /></div
+        ></a>
       </figure>
       <p>
         While you’re talking with your friends, use your
