@@ -96,7 +96,7 @@ export class Channel implements Module {
       case ChannelType.Canary:
         return 0xfcba03;
       case ChannelType.Development:
-        return 0x363533;
+        return 0x1c1c1b;
     }
   }
 
