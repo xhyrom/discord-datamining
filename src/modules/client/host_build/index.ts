@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -65,7 +65,7 @@ export class HostBuild implements Module {
     }
 
     const oldManifest = JSON.parse(
-      (await readFile(join(this.baseDir, "manifest.json"))) ?? "{}"
+      (await readFile(join(this.baseDir, "manifest.json"))) ?? "{}",
     );
 
     if (deepEqual(manifest, oldManifest)) {
@@ -92,15 +92,15 @@ export class HostBuild implements Module {
               moduleData.full.module_version.toString(),
               moduleData.full.package_sha256,
               moduleData.full.url,
-            ]
+            ],
           ),
         ]),
-      ].join("\n")
+      ].join("\n"),
     );
 
     await writeFile(
       join(this.baseDir, "manifest.json"),
-      JSON.stringify(manifest, null, 2)
+      JSON.stringify(manifest, null, 2),
     );
 
     await writeFile(
@@ -113,13 +113,13 @@ export class HostBuild implements Module {
               version: moduleData.full.module_version,
               package_sha256: moduleData.full.package_sha256,
               url: moduleData.full.url,
-            })
+            }),
           ),
           host_version: await this.hostVersion(),
         },
         null,
-        2
-      )
+        2,
+      ),
     );
 
     for (const [moduleName, moduleData] of Object.entries(manifest.modules)) {
@@ -142,8 +142,8 @@ export class HostBuild implements Module {
               })) ?? [],
           },
           null,
-          2
-        )
+          2,
+        ),
       );
     }
 
@@ -151,15 +151,17 @@ export class HostBuild implements Module {
 
     const result = await pushToGit(
       `📥 ${this.#channel.name} Host Build ${manifest.full.host_version.join(
-        "."
+        ".",
       )}`,
       [`Host Version: ${await this.hostVersion()}`].join("\n"),
-      `Modules (${manifest.modules.length}):\n${Object.entries(manifest.modules)
+      `Modules (${Object.entries(manifest.modules).length}):\n${Object.entries(
+        manifest.modules,
+      )
         .map(
           ([moduleName, moduleVersion]) =>
-            `  ${moduleName}: ${moduleVersion.full.module_version}`
+            `  ${moduleName}: ${moduleVersion.full.module_version}`,
         )
-        .join("\n")}`
+        .join("\n")}`,
     );
 
     if (!result?.update?.hash) return;
@@ -180,7 +182,7 @@ export class HostBuild implements Module {
     const manifest = await fetch(
       `https://canary.discord.com/api/updates/distributions/app/manifests/latest?platform=win&channel=${
         this.#channel.displayType
-      }&arch=x86`
+      }&arch=x86`,
     );
     if (!manifest.ok) return null;
 
