@@ -6,9 +6,7 @@
         > </strong>This promo has ended, but you’re welcome to read on and see
         what was available previously.
       </p>
-      <div class="w-embed">
-        <hr class="hr-style" />
-      </div>
+      <div class="w-embed"><hr class="hr-style" /></div>
       <p>
         For May the 4th, we’re doing something special with our friends at Epic
         Games and Lucasfilm Games: dropping in the Coruscant's Pride Wrap!
