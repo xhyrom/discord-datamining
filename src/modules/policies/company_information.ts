@@ -36,7 +36,7 @@ export class CompanyInformation extends Policy {
     const result = await pushToGit(`👮 Company information has been updated`);
 
     if (!result?.update?.hash) return;
-    this.send(result);
+    await this.send(result);
   }
 
   async send(result: PushResult) {

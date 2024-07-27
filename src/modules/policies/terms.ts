@@ -34,7 +34,7 @@ export class Terms extends Policy {
     const result = await pushToGit(`👮 Terms has been updated`);
 
     if (!result?.update?.hash) return;
-    this.send(result);
+    await this.send(result);
   }
 
   async send(result: PushResult) {

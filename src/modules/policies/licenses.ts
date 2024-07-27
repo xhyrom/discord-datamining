@@ -34,7 +34,7 @@ export class Licenses extends Policy {
     const result = await pushToGit(`👮 Licenses has been updated`);
 
     if (!result?.update?.hash) return;
-    this.send(result);
+    await this.send(result);
   }
 
   async send(result: PushResult) {

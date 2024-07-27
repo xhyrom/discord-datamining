@@ -16,9 +16,24 @@
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
-import { formatNumber, pushToGit } from "../../utils.ts";
+import { join } from "node:path";
+import {
+  formatNumber,
+  getWebhookFromEnv,
+  postToDiscord,
+  postToGithub,
+  pushToGit,
+} from "../../utils.ts";
 import { File } from "../../File.ts";
 import { Policy } from "./policy.ts";
+import type { PushResult } from "simple-git";
+import { EmbedBuilder } from "@discordjs/builders";
+import type { APIEmbed } from "discord-api-types/v10";
+
+interface Acknowledgement {
+  name: string;
+  link: string;
+}
 
 export class Acknowledgements extends Policy {
   #file?: File;
@@ -28,16 +43,22 @@ export class Acknowledgements extends Policy {
   }
 
   async run() {
+    const old = JSON.parse(await this.readFile("acknowledgements.json", "[]"));
     const file = (await this.file())!;
     const content = await file.content();
 
     const matches = content.match(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g) || [];
-    const acknowledgements = [];
+    const acknowledgements: Acknowledgement[] = [];
 
     for (const input of matches) {
       const [_, name, link] = input.match(
         /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/,
       )!;
+
+      if (!name || !link) {
+        console.log(`Failed to get name & link from ${input}`);
+        process.exit(1);
+      }
 
       acknowledgements.push({ name, link });
     }
@@ -47,12 +68,16 @@ export class Acknowledgements extends Policy {
       JSON.stringify(acknowledgements, null, 2),
     );
 
-    await pushToGit(
+    const result = await pushToGit(
       `💡 Acknowledgements has been updated`,
       `Acknowledgements (${formatNumber(
         acknowledgements.length,
       )}):\n${acknowledgements.map((key) => `${key.name}: ${key.link}`).join("\n")}`,
     );
+
+    if (!result?.update?.hash) return;
+
+    await post(result, old, acknowledgements);
   }
 
   async file() {
@@ -81,5 +106,123 @@ export class Acknowledgements extends Policy {
     }
 
     return this.#file;
+  }
+
+  async post(
+    result: PushResult,
+    old: Acknowledgement[],
+    current: Acknowledgement[],
+  ) {
+    if (!result?.update?.hash.to) return;
+
+    const diff = this.diff(old, current);
+    if (diff.added.length === 0 && diff.removed.length === 0) return;
+
+    const simpleDiff = this.simpleDiffString(diff.added, diff.removed);
+
+    const comment = await postToGithub(result.update.hash.to, simpleDiff);
+
+    await postToDiscord(
+      getWebhookFromEnv("DISCORD_WEBHOOK_MISCELLANEOUS"),
+      result?.update?.hash.to,
+      {
+        content: `<@&1112738631615008818>\n${
+          simpleDiff.length > 2000 ? simpleDiff.slice(0, 1968) + "...```" : diff
+        }`,
+      },
+      comment.data.html_url,
+    );
+
+    await postToDiscord(
+      getWebhookFromEnv("WUMPUSCENTRAL_DISCORD_WEBHOOK_ACKNOWLEDGEMENTS"),
+      result?.update?.hash.to,
+      {
+        embeds: this.embedDiff(diff.added, diff.removed),
+      },
+      comment.data.html_url,
+    );
+  }
+
+  diff(
+    old: Acknowledgement[],
+    current: Acknowledgement[],
+  ): {
+    added: Acknowledgement[];
+    removed: Acknowledgement[];
+  } {
+    const added: Acknowledgement[] = [];
+    const removed: Acknowledgement[] = [];
+
+    for (const acknowledgement of current) {
+      if (!old.some((a) => a.name === acknowledgement.name)) {
+        added.push(acknowledgement);
+      }
+    }
+
+    for (const acknowledgement of old) {
+      if (!current.some((a) => a.name === acknowledgement.name)) {
+        removed.push(acknowledgement);
+      }
+    }
+
+    return {
+      added,
+      removed,
+    };
+  }
+
+  simpleDiffString(added: Acknowledgement[], removed: Acknowledgement[]) {
+    let diff = `## Acknowledgements\n\`\`\`diff`;
+
+    if (removed.length > 0) {
+      diff += "\n# Removed\n";
+
+      for (const acknowledgement of removed) {
+        diff += `- ${acknowledgement.name}\n`;
+      }
+    }
+
+    if (added.length > 0) {
+      diff += "\n# Added\n";
+
+      for (const acknowledgement of added) {
+        diff += `+ ${acknowledgement.name}\n`;
+      }
+    }
+
+    diff += "```";
+
+    return diff;
+  }
+
+  embedDiff(added: Acknowledgement[], removed: Acknowledgement[]): APIEmbed[] {
+    const removedEmbed = new EmbedBuilder()
+      .setTitle("Removed Software")
+      .setColor(0xff5151);
+    const addedEmbed = new EmbedBuilder()
+      .setTitle("New Software")
+      .setColor(0x4cff76);
+
+    let removedDescription = "";
+    let addedDescription = "";
+
+    if (removed.length > 0) {
+      for (const acknowledgement of removed) {
+        removedDescription += `* [${acknowledgement.name}](${acknowledgement.link})\n`;
+      }
+    }
+
+    if (added.length > 0) {
+      for (const acknowledgement of added) {
+        addedDescription += `* [${acknowledgement.name}](${acknowledgement.link})\n`;
+      }
+    }
+
+    const embeds: APIEmbed[] = [];
+
+    if (removedDescription) embeds.push(removedEmbed.toJSON());
+    if (addedDescription) embeds.push(addedEmbed.toJSON());
+
+    return embeds;
   }
 }

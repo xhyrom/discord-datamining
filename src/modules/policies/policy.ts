@@ -17,7 +17,7 @@
   * **/
 
 import { join } from "node:path";
-import { beautify, writeFile } from "../../utils.ts";
+import { beautify, readFile, writeFile } from "../../utils.ts";
 import { JSDOM } from "jsdom";
 
 export abstract class Policy {
@@ -31,6 +31,13 @@ export abstract class Policy {
 
   protected async writeFile(name: string, content: string) {
     await writeFile(join(this.baseDir, name), content);
+  }
+
+  protected async readFile(
+    name: string,
+    defaultContent: string,
+  ): Promise<string> {
+    return (await readFile(join(this.baseDir, name))) ?? defaultContent;
   }
 
   protected async getHtmlContent(url: string): Promise<string | null> {

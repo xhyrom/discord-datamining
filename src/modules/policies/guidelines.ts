@@ -34,7 +34,7 @@ export class Guidelines extends Policy {
     const result = await pushToGit(`👮 Guidelines has been updated`);
 
     if (!result?.update?.hash) return;
-    this.send(result);
+    await this.send(result);
   }
 
   async send(result: PushResult) {
