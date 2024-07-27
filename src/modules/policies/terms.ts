@@ -17,7 +17,9 @@
   * **/
 
 import { Policy } from "./policy.ts";
-import { pushToGit } from "../../utils.ts";
+import { getWebhookFromEnv, postToDiscord, pushToGit } from "../../utils.ts";
+import type { PushResult } from "simple-git";
+import { EmbedBuilder } from "@discordjs/builders";
 
 export class Terms extends Policy {
   async run() {
@@ -29,6 +31,27 @@ export class Terms extends Policy {
 
     await this.writeFile(`terms.md`, content);
 
-    await pushToGit(`👮 Terms has been updated`);
+    const result = await pushToGit(`👮 Terms has been updated`);
+
+    if (!result?.update?.hash) return;
+    this.send(result);
+  }
+
+  async send(result: PushResult) {
+    await postToDiscord(
+      getWebhookFromEnv("WUMPUSCENTRAL_DISCORD_WEBHOOK_POLICIES"),
+      result.update?.hash.to,
+      {
+        embeds: [
+          new EmbedBuilder()
+            .setTitle("Terms of Services Update")
+            .setURL(
+              `https://github.com/xhyrom/discord-datamining/commit/${result?.update?.hash.to}`,
+            )
+            .setColor(0xffe45b)
+            .toJSON(),
+        ],
+      },
+    );
   }
 }

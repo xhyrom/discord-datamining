@@ -17,7 +17,9 @@
   * **/
 
 import { Policy } from "./policy.ts";
-import { pushToGit } from "../../utils.ts";
+import { getWebhookFromEnv, postToDiscord, pushToGit } from "../../utils.ts";
+import type { PushResult } from "simple-git";
+import { EmbedBuilder } from "@discordjs/builders";
 
 export class CompanyInformation extends Policy {
   async run() {
@@ -31,6 +33,27 @@ export class CompanyInformation extends Policy {
 
     await this.writeFile(`company_information.md`, content);
 
-    await pushToGit(`👮 Company information has been updated`);
+    const result = await pushToGit(`👮 Company information has been updated`);
+
+    if (!result?.update?.hash) return;
+    this.send(result);
+  }
+
+  async send(result: PushResult) {
+    await postToDiscord(
+      getWebhookFromEnv("WUMPUSCENTRAL_DISCORD_WEBHOOK_POLICIES"),
+      result.update?.hash.to,
+      {
+        embeds: [
+          new EmbedBuilder()
+            .setTitle("Company Info Update")
+            .setURL(
+              `https://github.com/xhyrom/discord-datamining/commit/${result?.update?.hash.to}`,
+            )
+            .setColor(0xffe45b)
+            .toJSON(),
+        ],
+      },
+    );
   }
 }
