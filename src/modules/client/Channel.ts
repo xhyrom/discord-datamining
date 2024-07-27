@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -30,6 +30,7 @@ export enum ChannelType {
   Stable,
   PublicTestingBeta, // PTB
   Canary,
+  Development,
 }
 
 export class Channel implements Module {
@@ -50,6 +51,8 @@ export class Channel implements Module {
         return "ptb";
       case ChannelType.Canary:
         return "canary";
+      case ChannelType.Development:
+        return "development";
     }
   }
 
@@ -61,6 +64,8 @@ export class Channel implements Module {
         return "Public Testing Beta";
       case ChannelType.Canary:
         return "Canary";
+      case ChannelType.Development:
+        return "Development";
     }
   }
 
@@ -76,6 +81,9 @@ export class Channel implements Module {
         return "https://ptb.discord.com";
       case ChannelType.Canary:
         return "https://canary.discord.com";
+      case ChannelType.Development:
+        console.log("Development uses canary");
+        process.exit(1);
     }
   }
 
@@ -87,6 +95,8 @@ export class Channel implements Module {
         return 0x7289da;
       case ChannelType.Canary:
         return 0xfcba03;
+      case ChannelType.Development:
+        return 0x363533;
     }
   }
 
@@ -94,17 +104,25 @@ export class Channel implements Module {
     console.log(`Scraping ${this.displayType} channel`);
 
     await this.hostBuild.run();
-    await this.webBuild.run();
+
+    if (this.type !== ChannelType.Development) await this.webBuild.run();
 
     await this.summary();
   }
 
   async summary() {
     const hostManifest = await this.hostBuild.manifest();
-    const webBuild = await this.webBuild.scripts.build();
+    const webBuild =
+      this.type !== ChannelType.Development
+        ? await this.webBuild.scripts.build()
+        : {
+            buildNumber: "as canary",
+            versionHash: "as canary",
+            builtAt: "as canary",
+          };
 
     const oldInfo = JSON.parse(
-      (await readFile(join(this.baseDir, "info.json"))) ?? "{}"
+      (await readFile(join(this.baseDir, "info.json"))) ?? "{}",
     );
 
     await writeFile(
@@ -119,8 +137,8 @@ export class Channel implements Module {
           built_at: webBuild.builtAt,
         },
         null,
-        2
-      )
+        2,
+      ),
     );
 
     if (hostManifest) {
@@ -144,10 +162,10 @@ export class Channel implements Module {
                 moduleData.full.module_version.toString(),
                 moduleData.full.package_sha256,
                 moduleData.full.url,
-              ]
+              ],
             ),
           ]),
-        ].join("\n")
+        ].join("\n"),
       );
     }
   }
