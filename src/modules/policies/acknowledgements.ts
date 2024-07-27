@@ -139,7 +139,6 @@ export class Acknowledgements extends Policy {
       {
         embeds: this.embedDiff(diff.added, diff.removed),
       },
-      comment.data.html_url,
     );
   }
 
