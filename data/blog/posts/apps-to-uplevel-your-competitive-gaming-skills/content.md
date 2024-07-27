@@ -255,9 +255,7 @@
     </div>
   </div>
   <div id="heading-6" class="rich-wrapper">
-    <div class="blog-post-content w-richtext">
-      <p>‍</p>
-    </div>
+    <div class="blog-post-content w-richtext"><p>‍</p></div>
   </div>
   <div id="heading-7" class="rich-wrapper">
     <div class="blog-post-content w-dyn-bind-empty w-richtext"></div>

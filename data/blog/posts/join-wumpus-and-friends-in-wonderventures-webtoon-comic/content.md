@@ -8,9 +8,7 @@
           article! </strong
         ><br />
       </p>
-      <div class="w-embed">
-        <hr class="hr-style" />
-      </div>
+      <div class="w-embed"><hr class="hr-style" /></div>
       <p>
         Get ready for your next journey! Join Wumpus, Locke, Graggle, Mallow,
         and plenty more as they explore the world together, make new friends,
