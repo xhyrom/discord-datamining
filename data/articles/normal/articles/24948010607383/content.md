@@ -20,7 +20,7 @@
     <a href="#h_01J3EMXJQA5NP9H763QX763MDF">Redemption Instructions</a>
   </li>
   <li class="wysiwyg-text-align-left">
-    <a href="#h_01J3EPC6VT72S3NTZ3Y5FGQ44K">Frequently Asked Questions</a>
+    <a href="#h_01J3RRAJ7MXV0JM80FXWHVGMTA">Frequently Asked Questions</a>
   </li>
 </ul>
 <h1 id="h_01J3EKM3G1JYKD7FQ0X327NJD1">Promotion Terms</h1>
@@ -128,7 +128,37 @@
     >here</a
   >.
 </h3>
-<h1 id="h_01J3EPC6VT72S3NTZ3Y5FGQ44K">Frequently Asked Questions</h1>
+<h1 id="h_01J3RRAJ7MXV0JM80FXWHVGMTA">Frequently Asked Questions</h1>
+<p><strong>Q: Why is my Sims 4 game not being detected by Discord?</strong></p>
+<p>
+  A: If your Sims 4 game is not being detected by Discord, please try the
+  following steps:
+</p>
+<ol>
+  <li>Close your Sims game.</li>
+  <li>Restart the Discord browser or desktop app.</li>
+  <li>Relaunch your Sims game.</li>
+  <li>Re-check the Quest progress bar to see if the game is now detected.</li>
+</ol>
+<p>
+  <strong
+    >Q: Why is Discord not tracking or updating my progress towards the
+    Lovestruck Quest?</strong
+  >
+</p>
+<p>
+  A: To begin tracking progress for the Lovestruck Quest, you must first accept
+  the Quest. If you have already accepted the Quest and are still experiencing
+  issues, please follow these steps:
+</p>
+<ol>
+  <li>Close your Sims game.</li>
+  <li>Restart the Discord browser or desktop app.</li>
+  <li>Relaunch your Sims game.</li>
+  <li>
+    Re-check the Quest progress bar to see if the game is now being tracked.
+  </li>
+</ol>
 <p>
   <strong
     >Q: Is there a limit on how many Quests I can redeem on my Discord
