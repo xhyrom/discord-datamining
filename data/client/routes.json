@@ -4969,7 +4969,11 @@
   },
   "CONTENT_INVENTORY_OUTBOX": {
     "url": "/content-inventory/users/:param/outbox",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "MY_SPOTIFY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me/spotify",
