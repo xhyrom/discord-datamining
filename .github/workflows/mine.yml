@@ -11,7 +11,7 @@ jobs:
   mine:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: false
       - uses: oven-sh/setup-bun@v2
