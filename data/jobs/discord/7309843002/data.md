@@ -42,12 +42,12 @@ We’re working toward an inclusive world where no one feels like an outsider, w
 **Education:**
 education_optional
 
-** Data Compliance:**
+**Data Compliance:**
 - GDPR: No consent required for processing or retention.
 
-** Departments:**
+**Departments:**
 - Product Engineering
 
-** Offices:**
+**Offices:**
 - San Francisco, CA in San Francisco, California, United States
     

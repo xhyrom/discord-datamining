@@ -41,12 +41,12 @@ We’re working toward an inclusive world where no one feels like an outsider, w
 **Education:**
 education_optional
 
-** Data Compliance:**
+**Data Compliance:**
 - GDPR: No consent required for processing or retention.
 
-** Departments:**
+**Departments:**
 - Data Science & Engineering
 
-** Offices:**
+**Offices:**
 - Remote (U.S.)
     

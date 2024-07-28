@@ -50,12 +50,12 @@ Experience with customer support or technical support roles is required, as well
 Discord is a voice, video and text app that helps friends and communities come together to hang out and explore their interests — from artists and activists, to study groups, sneakerheads, plant parents, and more. With 150 million monthly users across 19 million active communities, called servers, Discord has grown to become one of the most popular communications services in the world. Discord was built without selling ads or user data and instead, offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
 We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. So if this strikes a chord with you, come build belonging with us!
 
-** Data Compliance:**
+**Data Compliance:**
 - GDPR: No consent required for processing or retention.
 
-** Departments:**
+**Departments:**
 - Customer Experience
 
-** Offices:**
+**Offices:**
 - Remote (International)
     

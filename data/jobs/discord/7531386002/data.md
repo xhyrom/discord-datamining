@@ -41,12 +41,12 @@ About Us
 Discord is a voice, video and text app that helps friends come together to hang out, have fun, and play games. With over 150 million monthly users, Discord has grown to become one of the most popular communications services in the world. Discord offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
 We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. So if this strikes a chord with you, come build belonging with us!
 
-** Data Compliance:**
+**Data Compliance:**
 - GDPR: No consent required for processing or retention.
 
-** Departments:**
+**Departments:**
 - Sales
 
-** Offices:**
+**Offices:**
 - San Francisco, CA in San Francisco, California, United States
     

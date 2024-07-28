@@ -117,7 +117,7 @@ export class Jobs implements Module {
 **Job Description:**
 ${new JSDOM(`<!DOCTYPE html><body>${job.content}</body>`).window.document.body.innerHTML.replace(/&lt;.*?&gt;/g, "")}
 ${job.education ? `\n**Education:**\n${job.education}\n` : ""}
-** Data Compliance:**
+**Data Compliance:**
 ${job.data_compliance
   .map(
     (item) =>
@@ -131,10 +131,10 @@ ${job.data_compliance
   )
   .join("\n")}
 
-** Departments:**
+**Departments:**
 ${job.departments.map((item) => `- ${item.name}`).join("\n")}
 
-** Offices:**
+**Offices:**
 ${job.offices.map((item) => `- ${item.name}${item.location ? ` in ${item.location}` : ""}`).join("\n")}
     `;
 
