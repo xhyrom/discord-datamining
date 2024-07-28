@@ -7,9 +7,7 @@
           it was all about!
         </strong>
       </p>
-      <div class="w-embed">
-        <hr class="hr-style" />
-      </div>
+      <div class="w-embed"><hr class="hr-style" /></div>
       <p>
         It’s time to enjoy the summer heat with a Nitro BOGO treat!&nbsp;&nbsp;
       </p>
