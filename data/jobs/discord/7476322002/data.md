@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA or Remote (West Coast U.S.)
 
-**Id**: 7476322002 <br/>
-**Internal Job Id:**: 5928480002 <br/>
+**Id:** 7476322002 <br/>
+**Internal Job Id:** 5928480002 <br/>
 **Requisition Id:** Pipeline Role <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7476322002](https://discord.com/jobs/7476322002)

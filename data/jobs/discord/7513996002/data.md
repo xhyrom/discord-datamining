@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA
 
-**Id**: 7513996002 <br/>
-**Internal Job Id:**: 5948811002 <br/>
+**Id:** 7513996002 <br/>
+**Internal Job Id:** 5948811002 <br/>
 **Requisition Id:** R-100575 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7513996002](https://discord.com/jobs/7513996002)

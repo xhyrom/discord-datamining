@@ -4,8 +4,8 @@
 
 **Location:** New York, NY or Remote (East Coast U.S.)
 
-**Id**: 7474722002 <br/>
-**Internal Job Id:**: 5928481002 <br/>
+**Id:** 7474722002 <br/>
+**Internal Job Id:** 5928481002 <br/>
 **Requisition Id:** Pipeline Role 2 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7474722002](https://discord.com/jobs/7474722002)

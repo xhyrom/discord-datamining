@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA or Remote (U.S.)
 
-**Id**: 7442309002 <br/>
-**Internal Job Id:**: 5914515002 <br/>
+**Id:** 7442309002 <br/>
+**Internal Job Id:** 5914515002 <br/>
 **Requisition Id:** Pipeline-3 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7442309002](https://discord.com/jobs/7442309002)

@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA
 
-**Id**: 7566503002 <br/>
-**Internal Job Id:**: 5932545002 <br/>
+**Id:** 7566503002 <br/>
+**Internal Job Id:** 5932545002 <br/>
 **Requisition Id:** Pipeline Req 123 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7566503002](https://discord.com/jobs/7566503002)

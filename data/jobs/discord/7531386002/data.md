@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA or Remote (U.S.)
 
-**Id**: 7531386002 <br/>
-**Internal Job Id:**: 5956454002 <br/>
+**Id:** 7531386002 <br/>
+**Internal Job Id:** 5956454002 <br/>
 **Requisition Id:** R-100593 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7531386002](https://discord.com/jobs/7531386002)

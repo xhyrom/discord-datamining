@@ -4,8 +4,8 @@
 
 **Location:** Remote (U.S.)
 
-**Id**: 7559196002 <br/>
-**Internal Job Id:**: 5969722002 <br/>
+**Id:** 7559196002 <br/>
+**Internal Job Id:** 5969722002 <br/>
 **Requisition Id:** R-100606 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7559196002](https://discord.com/jobs/7559196002)

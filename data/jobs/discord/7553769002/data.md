@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA (or Remote)
 
-**Id**: 7553769002 <br/>
-**Internal Job Id:**: 5870692002 <br/>
+**Id:** 7553769002 <br/>
+**Internal Job Id:** 5870692002 <br/>
 **Requisition Id:** 7005-P4-2215-MLE <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7553769002](https://discord.com/jobs/7553769002)

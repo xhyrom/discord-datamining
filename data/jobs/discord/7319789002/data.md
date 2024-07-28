@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA or Remote (U.S.)
 
-**Id**: 7319789002 <br/>
-**Internal Job Id:**: 5873140002 <br/>
+**Id:** 7319789002 <br/>
+**Internal Job Id:** 5873140002 <br/>
 **Requisition Id:** 7004-P4-2310-PS <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7319789002](https://discord.com/jobs/7319789002)

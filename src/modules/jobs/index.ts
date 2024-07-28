@@ -106,8 +106,8 @@ export class Jobs implements Module {
 
 **Location:** ${job.location.name}
 
-**Id**: ${job.id} <br/>
-**Internal Job Id:**: ${job.internal_job_id} <br/>
+**Id:** ${job.id} <br/>
+**Internal Job Id:** ${job.internal_job_id} <br/>
 **Requisition Id:** ${job.requisition_id} <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/${job.id}](https://discord.com/jobs/${job.id})

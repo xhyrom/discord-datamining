@@ -4,8 +4,8 @@
 
 **Location:** New York, NY or Remote (East Coast U.S) 
 
-**Id**: 7428401002 <br/>
-**Internal Job Id:**: 5908035002 <br/>
+**Id:** 7428401002 <br/>
+**Internal Job Id:** 5908035002 <br/>
 **Requisition Id:** R-100513 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7428401002](https://discord.com/jobs/7428401002)

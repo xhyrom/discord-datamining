@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA or Remote (U.S.)
 
-**Id**: 7422366002 <br/>
-**Internal Job Id:**: 5904969002 <br/>
+**Id:** 7422366002 <br/>
+**Internal Job Id:** 5904969002 <br/>
 **Requisition Id:** 6003-P3-2215-DE <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7422366002](https://discord.com/jobs/7422366002)

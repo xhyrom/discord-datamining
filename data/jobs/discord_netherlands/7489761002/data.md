@@ -4,8 +4,8 @@
 
 **Location:** Netherlands
 
-**Id**: 7489761002 <br/>
-**Internal Job Id:**: 5936344002 <br/>
+**Id:** 7489761002 <br/>
+**Internal Job Id:** 5936344002 <br/>
 **Requisition Id:** Pipeline Req 1234 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7489761002](https://discord.com/jobs/7489761002)

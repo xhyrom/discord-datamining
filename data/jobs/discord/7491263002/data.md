@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA or Remote (West Coast U.S.)
 
-**Id**: 7491263002 <br/>
-**Internal Job Id:**: 5937090002 <br/>
+**Id:** 7491263002 <br/>
+**Internal Job Id:** 5937090002 <br/>
 **Requisition Id:** R-100558 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7491263002](https://discord.com/jobs/7491263002)

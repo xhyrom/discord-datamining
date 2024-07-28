@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA or Remote
 
-**Id**: 7280468002 <br/>
-**Internal Job Id:**: 5855775002 <br/>
+**Id:** 7280468002 <br/>
+**Internal Job Id:** 5855775002 <br/>
 **Requisition Id:** 7005-P3-2110-DfB-1 <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7280468002](https://discord.com/jobs/7280468002)

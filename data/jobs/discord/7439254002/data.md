@@ -4,8 +4,8 @@
 
 **Location:** San Francisco, CA
 
-**Id**: 7439254002 <br/>
-**Internal Job Id:**: 5913015002 <br/>
+**Id:** 7439254002 <br/>
+**Internal Job Id:** 5913015002 <br/>
 **Requisition Id:** 7005-P4-231-RTI <br/>
 
 **Discord Jobs:** [https://discord.com/jobs/7439254002](https://discord.com/jobs/7439254002)
