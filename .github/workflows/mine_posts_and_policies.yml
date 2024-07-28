@@ -44,3 +44,4 @@ jobs:
 
           SCRAPE_POSTS: true
           SCRAPE_POLICIES: true
+          SCRAPE_JOBS: true

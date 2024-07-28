@@ -16,7 +16,6 @@
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
-import { join } from "node:path";
 import {
   formatNumber,
   getWebhookFromEnv,
@@ -77,7 +76,7 @@ export class Acknowledgements extends Policy {
 
     if (!result?.update?.hash) return;
 
-    await post(result, old, acknowledgements);
+    await this.post(result, old, acknowledgements);
   }
 
   async file() {

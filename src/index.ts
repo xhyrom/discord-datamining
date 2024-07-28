@@ -25,6 +25,7 @@ import { Posts } from "./modules/posts/index.ts";
 import { Applications } from "./modules/client/applications/index.ts";
 import { Routes } from "./modules/client/routes/index.ts";
 import { Policies } from "./modules/policies/index.ts";
+import { Jobs } from "./modules/jobs/index.ts";
 
 console.log("discord-datamining  Copyright (C) 2023 Jozef Steinhübl");
 
@@ -38,6 +39,8 @@ if (process.env.SCRAPE_CLIENT_APPLICATIONS === "true")
   await new Applications().run();
 
 if (process.env.SCRAPE_POLICIES === "true") await new Policies().run();
+
+if (process.env.SCRAPE_JOBS === "true") await new Jobs().run();
 
 if (process.env.SCRAPE_DOMAINS === "true")
   await new Domains(process.env.SECURITYTRAILS_API_KEY!).run();

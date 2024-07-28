@@ -1,0 +1,52 @@
+# Job Listing
+
+## Senior Engineering Manager - Machine Learning Platform
+
+**Location:** San Francisco, CA
+
+**Id**: 7513996002 <br/>
+**Internal Job Id:**: 5948811002 <br/>
+**Requisition Id:** R-100575 <br/>
+
+**Discord Jobs:** [https://discord.com/jobs/7513996002](https://discord.com/jobs/7513996002)
+
+**Updated At:** Thu, 18 Jul 2024 16:34:51 GMT
+
+**Job Description:**
+Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;The machine learning platform (MLP) at Discord is responsible for the end to end model lifecycle across all ML applications. We sit at the intersection of machine learning engineers (MLEs), core infrastructure, and ML consumers to provide tools, capabilities, and services that make machine learning easy, safe, and widely accessible. In this role, you will lead a high-performing team of engineers as you build, extend, and maintain critical ML systems that power everything from user facing recommendations and safety to revenue optimization and business insights. This role reports to our Senior Director of AI and Machine Learning, Chris Harland.
+What You'll Be Doing
+
+Drive engineering execution within the MLP team on a regular basis
+Craft, communicate, and execute on the team’s vision and roadmap in partnership with our platform PM
+Collaborate with core infrastructure and data platform to make sound, first-principle decisions
+Partner with product engineering teams to ensure high quality, efficient delivery of model outputs into production
+Work closely with MLEs to create an ergonomic workflow as a paved path that maintains some flexibility
+Act as a strong summarizer that is able to make tradeoffs among priorities to ensure consistent, high-quality deliver
+
+What you should have
+
+3+ years of experience managing a team of engineers delivering data products
+5+ years of experience as a software or machine learning engineer
+Demonstrated experience building ML products from 0 -&amp;gt; 1
+Strong execution skills to keep work on track
+A healthy balance between digging into code/architecture and leading through others
+A bias towards quantitative measure of progress and performance
+Demonstrated experience managing and growing engineers up to and through the staff level
+
+#LI-RemoteThe US base salary range for this full-time position is $290,000 to $318,800 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Please see our Applicant and Candidate Privacy Policy for details regarding Discord's collection and use of personal information relating to the application and recruitment process by clicking here.&amp;nbsp;Discord is an equal opportunity employer that believes diversity inspires creativity and innovation. We are committed to fostering an inclusive environment where employees can do their best work free of harassment or discrimination, regardless of race, ethnicity, religion, gender identity or expression, sexual orientation, age, disability, military status, or any other protected characteristics or identities. We encourage all candidates to apply for roles where they may make the most impact.
+About Us
+Discord is a voice, video and text app that helps friends come together to hang out, have fun, and play games. With over 150 million monthly users, Discord has grown to become one of the most popular communications services in the world. Discord offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
+We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. So if this strikes a chord with you, come build belonging with us!
+
+**Education:**
+education_optional
+
+** Data Compliance:**
+- GDPR: No consent required for processing or retention.
+
+** Departments:**
+- Data Science & Engineering
+
+** Offices:**
+- Remote (U.S.)
+    
