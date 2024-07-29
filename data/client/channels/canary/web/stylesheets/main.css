@@ -24193,7 +24193,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .sansAttachButtonCreateThread_d0696b {
   padding-left: 10px;
 }
-.sansAttachButtonCreatePost_d0696b {
+.sansAttachButtonCreatePost_d0696b,
+.sansAttachButtonUserProfileReply_d0696b {
   padding-left: 0;
 }
 .attachButton_d0696b {
@@ -29034,31 +29035,11 @@ h3.improved_f017d0:after {
 .inline_ae1fa2 {
   display: inline;
 }
-.imageContainer_ae1fa2 {
+.imagePosition_ae1fa2 {
+  display: flex;
+  height: -moz-max-content;
+  height: max-content;
   position: relative;
-}
-.imageSize_ae1fa2 {
-  min-width: 48px;
-  max-width: 48px;
-  min-height: 48px;
-  max-height: 48px;
-}
-.imageSize_ae1fa2.fullSize_ae1fa2 {
-  min-width: 64px;
-  max-width: 64px;
-  min-height: 64px;
-  max-height: 64px;
-}
-.imageSize_ae1fa2.crunchyroll_ae1fa2 {
-  min-height: 64px;
-  max-height: 64px;
-}
-.imageSize_ae1fa2.crunchyroll_ae1fa2.fullSize_ae1fa2 {
-  min-height: 86px;
-  max-height: 86px;
-}
-.largeImage_ae1fa2 {
-  border-radius: var(--radius-xs);
 }
 .smallImage_ae1fa2 {
   border-radius: var(--radius-round);
@@ -29066,14 +29047,11 @@ h3.improved_f017d0:after {
   position: absolute;
   bottom: -4px;
   right: -4px;
-  width: 20px;
-  height: 20px;
-}
-.smallImage_ae1fa2.fullSize_ae1fa2 {
-  width: 30px;
-  height: 30px;
 }
 .hangStatusIconBackground_ae1fa2 {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29083,6 +29061,10 @@ h3.improved_f017d0:after {
 .hangStatusIconBackground_ae1fa2 .hangStatusIcon_ae1fa2 {
   width: 34px;
   height: 34px;
+}
+.hangStatusIconBackground_ae1fa2.fullSize_ae1fa2 {
+  width: 64px;
+  height: 64px;
 }
 .hangStatusIconBackground_ae1fa2.fullSize_ae1fa2 .hangStatusIcon_ae1fa2 {
   width: 46px;
@@ -29169,6 +29151,11 @@ h3.improved_f017d0:after {
   flex-wrap: wrap;
   row-gap: 4px;
   margin-top: 2px;
+}
+:where(.contentImage_a3b998) {
+  border-radius: var(--radius-xs);
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .container_b5cd55 {
   display: flex;
@@ -45004,4 +44991,4 @@ img[alt] {
     --font-weight-semibold-1x-light-theme: 600;
   }
 }
-/*# sourceMappingURL=12633.b587f4fe2373c12612b5.css.map*/
+/*# sourceMappingURL=12633.5ef33177d71573355a31.css.map*/
