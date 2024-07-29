@@ -1289,7 +1289,10 @@
   },
   "GRAVITY_ITEMS_HYDRATE": {
     "url": "/gravity-content",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GRAVITY_CUSTOM_GUILD_SCORES": {
     "url": "/gravity-custom-guild-score",
