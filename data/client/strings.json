@@ -429,6 +429,8 @@
   "STICKERS_YOU_MIGHT_LIKE_A11Y": "\"Category: Stickers you might like\"",
   "COMMAND_GIPHY_DESCRIPTION": "\"Search Animated GIFs on the Web\"",
   "COMMAND_GIPHY_QUERY_DESCRIPTION": "\"Search for a GIF\"",
+  "COMMAND_STICKER_DESCRIPTION": "\"Search your stickers\"",
+  "COMMAND_STICKER_QUERY_DESCRIPTION": "\"Search for a sticker\"",
   "COMMAND_SPOILER_DESCRIPTION": "\"Marks your message as a spoiler.\"",
   "COMMAND_SPOILER_MESSAGE_DESCRIPTION": "\"Your message\"",
   "COMMAND_TTS_DESCRIPTION": "\"Use text-to-speech to read the message to all members currently viewing the channel.\"",
