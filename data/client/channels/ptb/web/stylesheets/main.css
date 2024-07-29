@@ -30622,16 +30622,6 @@ h3.improved_f017d0:after {
 .disabled_e2863f {
   pointer-events: none;
 }
-.newBadgeCircle_e2863f {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: var(--red-430);
-  box-shadow: inset 0 0 0 2px var(--background-primary);
-}
 .lockedBadgeContainer_e2863f {
   position: absolute;
   right: 0;
@@ -44260,4 +44250,4 @@ img[alt] {
     --font-weight-semibold-1x-light-theme: 600;
   }
 }
-/*# sourceMappingURL=12633.5287ecb51bf012d29a1a.css.map*/
+/*# sourceMappingURL=12633.d5cadf3a18c618f764ba.css.map*/
