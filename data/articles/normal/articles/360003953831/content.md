@@ -111,20 +111,17 @@
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360003953831#h_01J1TYJ22SN8Q4YND06JAGPA57"
+    <a href="#h_01J1TYJ22SN8Q4YND06JAGPA57"
       >How to Complete Discord Quests on Your Xbox</a
     >
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360003953831#h_01J1TW883SC50S6Q2ZRCNGS1V8"
+        <a href="#h_01J1TW883SC50S6Q2ZRCNGS1V8"
           >Verify Your Privacy Settings via Xbox Website</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360003953831#h_01J1TWB8DMWMKV1N33ZQCGWV84"
+        <a href="#h_01J1TWB8DMWMKV1N33ZQCGWV84"
           >Verify Your Privacy Settings on Xbox Series X/S Console</a
         >
       </li>
@@ -931,8 +928,7 @@
 </h1>
 <p id="docs-internal-guid-fa65b6f8-7fff-1a94-ceca-5536cf675cce">
   To get started, follow the steps above in the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360003953831#h_01G8DY30NM50BZB5TVQ1XN4QXX"
+  <a href="#h_01G8DY30NM50BZB5TVQ1XN4QXX"
     >How to Connect My Xbox Account from Discord</a
   >
   section to properly connect your Discord and Xbox accounts.
