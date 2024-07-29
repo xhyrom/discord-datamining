@@ -17,7 +17,7 @@
   * **/
 
 import { join } from "node:path";
-import { DATA_DIR, rm, writeFile } from "../../utils.ts";
+import { DATA_DIR, pushToGit, rm, writeFile } from "../../utils.ts";
 import { JSDOM } from "jsdom";
 import type { Module } from "..";
 
@@ -89,6 +89,8 @@ export class Jobs implements Module {
 
     await this.writeJobs("discord", discord.jobs);
     await this.writeJobs("discord_netherlands", discordNetherlands.jobs);
+
+    await pushToGit("💼 Jobs has been updated");
   }
 
   async writeJobs(board: string, jobs: GreenHouseJob[]) {
