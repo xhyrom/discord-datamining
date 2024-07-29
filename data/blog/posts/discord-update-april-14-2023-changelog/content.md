@@ -8,9 +8,7 @@
         ><strong><em>Settings &gt; What's New</em></strong
         ><em>.</em>
       </p>
-      <div class="w-embed">
-        <hr class="hr-style" />
-      </div>
+      <div class="w-embed"><hr class="hr-style" /></div>
       <h2>Desktop and Mobile (iOS &amp; Android) Updates</h2>
       <figure
         style="max-width: 2560px"
