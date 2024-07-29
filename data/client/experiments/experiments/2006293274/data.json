@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_ctp_payment_flow_started_uneven_buckets",
+    "label": "CTP payment flow started - A/A test - Uneven buckets",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Treatment"
+    ],
+    "hash": 2006293274,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "doSomething"
+    ]
+  }
+}

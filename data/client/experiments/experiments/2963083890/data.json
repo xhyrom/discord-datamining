@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_ctp_payment_flow_started_filters",
+    "label": "CTP payment flow started - A/A test - Filters",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Treatment"
+    ],
+    "hash": 2963083890,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "doSomething"
+    ]
+  }
+}
