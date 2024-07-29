@@ -17498,23 +17498,50 @@ span.clanTag_a31c43 {
   max-width: 16px;
   max-height: 16px;
 }
-.custom-profile-theme .color_f9d37d {
-  background: var(--profile-gradient-button-color);
-  color: var(--white);
-  transition: opacity.2s ease-in-out;
+.custom-profile-theme .themeColor_f9d37d {
+  transition: background var(--custom-button-transition-duration) ease-in-out;
 }
-.custom-profile-theme .color_f9d37d:hover {
-  background: var(--profile-gradient-button-color);
-  opacity: 0.8;
-}
-.custom-profile-theme .color_f9d37d:active {
-  background: var(--profile-gradient-button-color);
-  opacity: 0.9;
-}
-.custom-profile-theme .color_f9d37d:disabled,
-.custom-profile-theme .color_f9d37d[aria-disabled="true"] {
-  background: var(--profile-gradient-button-color);
+.custom-profile-theme .themeColor_f9d37d:disabled,
+.custom-profile-theme .themeColor_f9d37d[aria-disabled="true"] {
   opacity: 0.5;
+}
+.custom-profile-theme .themeColor_f9d37d.primary_f9d37d {
+  color: var(--white-500);
+  background: var(--profile-gradient-button-color);
+}
+.custom-profile-theme .themeColor_f9d37d.primary_f9d37d:hover {
+  background: color-mix(
+    in srgb,
+    var(--profile-gradient-button-color) 80%,
+    transparent
+  );
+}
+.custom-profile-theme .themeColor_f9d37d.primary_f9d37d:active {
+  background: color-mix(
+    in srgb,
+    var(--profile-gradient-button-color) 90%,
+    transparent
+  );
+}
+.custom-profile-theme.theme-dark .themeColor_f9d37d.secondary_f9d37d {
+  color: var(--interactive-active);
+  background: rgba(var(--bg-overlay-color-inverse) / 0.24);
+}
+.custom-profile-theme.theme-dark .themeColor_f9d37d.secondary_f9d37d:hover {
+  background: rgb(var(--bg-overlay-color-inverse) / 0.3);
+}
+.custom-profile-theme.theme-dark .themeColor_f9d37d.secondary_f9d37d:active {
+  background: rgb(var(--bg-overlay-color-inverse) / 0.34);
+}
+.custom-profile-theme.theme-light .themeColor_f9d37d.secondary_f9d37d {
+  color: var(--interactive-active);
+  background: rgb(var(--bg-overlay-color) / 0.72);
+}
+.custom-profile-theme.theme-light .themeColor_f9d37d.secondary_f9d37d:hover {
+  background: rgb(var(--bg-overlay-color) / 0.68);
+}
+.custom-profile-theme.theme-light .themeColor_f9d37d.secondary_f9d37d:active {
+  background: rgb(var(--bg-overlay-color) / 0.62);
 }
 .hoverColor_f9d37d {
   color: var(--interactive-normal);
@@ -44219,4 +44246,4 @@ img[alt] {
     --font-weight-semibold-1x-light-theme: 600;
   }
 }
-/*# sourceMappingURL=12633.eaaeacc5d12520aa4a63.css.map*/
+/*# sourceMappingURL=12633.538e4e0aacb3383ddd37.css.map*/
