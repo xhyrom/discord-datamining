@@ -5108,6 +5108,7 @@
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_TOOLTIP": "\"Your account must be verified with an email address to request data. You can verify your account in the My Account section\"",
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_TITLE": "\"Submit Data Request\"",
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_NOTE": "\"It may take us up to 30 days to collect your data. We will send you an email to the address you registered with when the package is ready.\"",
+  "DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_NATIVE_NOTE": "\"It may take us up to 30 days to collect your data. We will send you an email to the address you registered with when the package is ready. If you'd just like to request a subset of your data, you can do so on our web client.\"",
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_WEB_NOTE": "\"Select the data that you'd like to be included in your data package below. You can learn more about each of these selections [here]({helpdeskArticle}). \\n\\n Note that some selections, like Messages, may delay the delivery of your package, and it may take us up to 30 days to collect your data. We will send you an email to the address you registered with when the package is ready.\"",
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_CONFIRM": "\"Request My Data\"",
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_CANCEL": "\"I've changed my mind\"",
