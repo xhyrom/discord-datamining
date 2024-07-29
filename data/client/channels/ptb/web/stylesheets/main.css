@@ -28985,9 +28985,6 @@ h3.improved_f017d0:after {
 .tooltip_a778ee {
   max-width: 224px;
 }
-.tooltipContainer_b7e5b1 {
-  width: 100%;
-}
 .timestamp_c5d1c1 {
   font-family: var(--font-code);
 }
@@ -29083,6 +29080,13 @@ h3.improved_f017d0:after {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
+}
+.actions_ae1fa2.fullSize_ae1fa2 {
+  flex-wrap: nowrap;
+  margin-left: 20px;
+}
+.actions_ae1fa2 .tooltipContainer_ae1fa2 {
+  flex: 1;
 }
 .actions_ae1fa2 > button {
   flex: 1 1 auto;
@@ -44246,4 +44250,4 @@ img[alt] {
     --font-weight-semibold-1x-light-theme: 600;
   }
 }
-/*# sourceMappingURL=12633.538e4e0aacb3383ddd37.css.map*/
+/*# sourceMappingURL=12633.01760d179a6204f89a95.css.map*/
