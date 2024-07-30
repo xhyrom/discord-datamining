@@ -7,9 +7,7 @@
           what it was all about!
         </strong>
       </p>
-      <div class="w-embed">
-        <hr class="hr-style" />
-      </div>
+      <div class="w-embed"><hr class="hr-style" /></div>
       <p>
         Say this out loud: “I’ve got <em>Nitro</em>.” Sounds good, right? But we
         can do better… <br /><br />Now say this: “<strong
