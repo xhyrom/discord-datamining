@@ -15612,6 +15612,7 @@
   "FAMILY_CENTER_SETTINGS_EMAIL_DIGEST_ENABLE_SWITCH_NOTE": "\"You will receive a weekly email summarizing your teen(s)' recent activity. We recommend keeping this setting on.\"",
   "FAMILY_CENTER_HELP_LINE_HEADER": "\"Need extra support?\"",
   "FAMILY_CENTER_HELP_LINE_CONTENT": "\"Text DISCORD to 741741 to speak to a trained volunteer crisis counselor at Crisis Text Line, available 24/7. [Learn more]({helpLink}) about our partnership with Crisis Text Line\"",
+  "FAMILY_CENTER_THROUGHLINE_CONTENT": "\"Visit [Throughline Care's]({helpLink}) vetted directory of global helplines for free and confidential support in your country.\"",
   "SAFETY_USER_SENTIMENT_NOTICE": "\"Tell us how you feel about safety on Discord.\"",
   "SAFETY_USER_SENTIMENT_NOTICE_CTA": "\"Let us know\"",
   "SAFETY_USER_SENTIMENT_FEEDBACK_PROMPT": "\"Do you feel safe on Discord?\"",
