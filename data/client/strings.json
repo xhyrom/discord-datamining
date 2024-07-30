@@ -727,7 +727,7 @@
   "EMBEDDED_ACTIVITIES_INVITE_TO_ACTIVITY": "\"Invite To Activity\"",
   "EMBEDDED_ACTIVITIES_INVITE_FRIENDS_TO_ACTIVITY_NAME": "\"Invite friends to {applicationName}\"",
   "EMBEDDED_ACTIVITIES_SHARE_LINK_TO_ACTIVITY": "\"Share this link with others to grant access to this server and join the activity\"",
-  "EMBEDDED_ACTIVITIES_INVITE_CHANNEL_IN_SERVER": "\"**{channelName}** in **{serverName}**\"",
+  "EMBEDDED_ACTIVITIES_INVITE_CHANNEL_IN_SERVER": "\"**!!{channelName}!!** in **!!{serverName}!!**\"",
   "EMBEDDED_ACTIVITIES_INVITE_ACTIVITY_FOOTER_LINK_HEADER": "\"Send an activity invite link to a friend\"",
   "EMBEDDED_ACTIVITIES_INVITE_IN": "\"in\"",
   "EMBEDDED_ACTIVITIES_INVITE_ACTIVITY_ENDED": "\"Activity has ended\"",
