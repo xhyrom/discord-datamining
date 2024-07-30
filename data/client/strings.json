@@ -17992,6 +17992,7 @@
   "SAVE_FOR_LATER": "\"Save for Later\"",
   "FOR_LATER_TAB_ALL": "\"All\"",
   "FOR_LATER_TAB_REMINDERS": "\"Reminders ({count, number})\"",
+  "FOR_LATER_EMPTY": "\"You have nothing saved!\"",
   "MESSAGE_REMINDERS_EMPTY": "\"You have no Reminders!\"",
   "MESSAGE_REMINDERS_EMPTY_TIP": "\"You can mark any message as a Reminder to have it appear here.\"",
   "MESSAGE_REMINDERS_HEADER": "\"Message Reminders\"",
