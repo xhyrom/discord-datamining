@@ -1,23 +1,38 @@
 <h2 id="h_01J01RHCF7JPDKM8ZWRY9T339Z">TLDR</h2>
 <p>
-  You can apply for Privileged Intents as part of the bot verification process,
-  or anytime after, from your bot’s page on the Developer Portal.
+  You can apply for Privileged Intents once your app is installed in 75 or more
+  servers, from your bot’s page on the Developer Portal.
 </p>
 <h2 id="h_01J01RHCF78NJMZ0GMAEN6H9VV">Details</h2>
 <p>
-  If your bot is not yet verified, you will have the option to apply for
-  Privileged Intents during the verification process. Note that unverified bots
-  can use Privileged Intents without needing to apply; just turn them on from
-  the bot’s page on the Developer Portal.
-</p>
-<p>
-  If your app is already verified, and you’d like access to a new Privileged
-  Intent for your bot, have a look at the top of your bot’s settings page on the
-  Developer Portal. You should see a button there to begin the process. If you
-  don't see that and believe you should, please
-  <a href="https://dis.gd/contact">reach out to us via support</a>. Once you
-  submit an application, a human will look at your submission and get back to
-  you.
+  <span
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >If your app is in more than 75 servers, and you’d like access to a new
+    Privileged Intent for your bot, have a look at the top of your bot’s
+    settings page on the Developer Portal. You should see a button there to
+    begin the process. You will not see this if your app is installed in fewer
+    than 75 servers. If you don't see that and believe you should, please </span
+  ><a
+    style="
+      background-color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    href="https://dis.gd/contact"
+    >reach out to us via support</a
+  ><span
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >. Once you submit an application, a human will look at your submission and
+    get back to you. Note that apps in fewer than 100 servers can use Privileged
+    Intents without needing to apply; just turn them on from the bot’s page on
+    the Developer Portal.</span
+  >
 </p>
 <p>
   When you apply for Privileged Intents, you'll be redirected to a

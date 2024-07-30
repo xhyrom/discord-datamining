@@ -12,7 +12,8 @@
     href="https://discord.com/developers/docs/topics/gateway#privileged-intents"
     >list of the current Privileged Intents</a
   >. Unverified bots may use Privileged Intents freely. However, verified bots
-  will need to apply for access to these intents.
+  will need to apply for access to these intents in order to be installed in
+  more than 100 servers.
 </p>
 <p>
   Verified bots will be able to do most of what they can do on Discord without

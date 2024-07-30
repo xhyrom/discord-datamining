@@ -4,16 +4,20 @@
   maturing platform, we need to update our policies to reflect the current needs
   of the ecosystem.
 </p>
-<h2><strong>MESSAGE CONTENT IS BECOMING A NEW PRIVILEGED INTENT</strong></h2>
+<h2 id="h_01J42H36XENJR4X25YK3GQMS84">
+  <strong>MESSAGE CONTENT IS BECOMING A NEW PRIVILEGED INTENT</strong>
+</h2>
 <p>
   On <strong>August 31, 2022</strong>, access to message content will become a
   Privileged Intent—like presence and guild member data—for developers building
   or managing verified Discord bots and apps.
 </p>
 <p>
-  <strong>This change affects</strong> <strong>only verified bots</strong>, bots
-  that are in 100 or more servers. Unverified bots in fewer than 100 servers are
-  not affected at all.
+  <strong
+    >This change affects only verified bots that are in 100 or more
+    servers.</strong
+  >
+  Unverified bots are not affected at all.
 </p>
 <p>
   Developers should begin to update their apps to reflect these new
@@ -66,17 +70,19 @@
   who haven't yet leveraged these new tools begin to do so over the next nine
   months.
 </p>
-<h2><strong>WHO IS IMPACTED?</strong></h2>
+<h2 id="h_01J42H36XEMETPSACSHMRMV9XW"><strong>WHO IS IMPACTED?</strong></h2>
 <p>
-  This change applies only to <strong>verified bots and apps</strong>, which
-  means those that are in 100 or more servers.
+  This change applies only to <strong>verified bots and apps</strong> that are
+  in 100 or more servers.
 </p>
 <p>
   We know developers rely on being able to test and iterate quickly, so
   unverified apps and bots will continue to be able to access message content
   without restrictions, just like presence and guild member data.
 </p>
-<h3><strong>WHAT WILL AN UNAPPROVED BOT LOSE ACCESS TO?</strong></h3>
+<h3 id="h_01J42H36XE8JZFP5XX1AVWZEW2">
+  <strong>WHAT WILL AN UNAPPROVED BOT LOSE ACCESS TO?</strong>
+</h3>
 <p>
   If your bot or app is not approved for message content, the following fields
   of the message object in Gateway and API payloads will be empty—either an
@@ -111,7 +117,9 @@
     interaction payloads</strong
   > (like buttons interactions).
 </p>
-<h2><strong>WHY IS DISCORD MAKING THIS CHANGE?</strong></h2>
+<h2 id="h_01J42H36XEAPBAX92Q97157067">
+  <strong>WHY IS DISCORD MAKING THIS CHANGE?</strong>
+</h2>
 <p>
   As the popularity and number of Discord bots grow, it's important to keep our
   users and developers safe and healthy. Our existing policies require that
@@ -137,13 +145,17 @@
   new slash command option types, better moderation controls, and new types of
   interactions.
 </p>
-<h3><strong>WHAT ABOUT UNVERIFIED BOTS?</strong></h3>
+<h3 id="h_01J42H36XEGBY0EAWASWZN61AF">
+  <strong>WHAT ABOUT UNVERIFIED BOTS?</strong>
+</h3>
 <p>
   <strong>Unverified bots and apps will not be impacted by this change</strong>
   and can continue to use message content in their bot development without
   requesting any Privileged Intent.
 </p>
-<h3><strong>HOW MUCH TIME DO I HAVE TO MIGRATE?</strong></h3>
+<h3 id="h_01J42H36XEE2TD6NHQDNN44VG9">
+  <strong>HOW MUCH TIME DO I HAVE TO MIGRATE?</strong>
+</h3>
 <p>
   We know change takes time, which is why we've created a lengthy transition
   period of <strong>nine months</strong> to help ease into the new changes. The
@@ -162,7 +174,7 @@
     ></strong
   >.
 </p>
-<h3>
+<h3 id="h_01J42H36XFJBXZN6GEFKJT23R6">
   <strong
     >WILL MY BOT BE ABLE TO READ MESSAGES IN DMs (DIRECT MESSAGES)?</strong
   >
@@ -171,7 +183,9 @@
   Yes, this change does not impact a bot's ability to access Message Content in
   DMs.
 </p>
-<h3><strong>WHAT ABOUT MODERATION BOTS?</strong></h3>
+<h3 id="h_01J42H36XFAS9WY10D90ZVYZYB">
+  <strong>WHAT ABOUT MODERATION BOTS?</strong>
+</h3>
 <p>
   We know that many bots and apps function specifically to read, moderate, and
   otherwise manage messages sent by Discord users. We expect to grant those
@@ -181,7 +195,9 @@
   If your bot has unique functionality that cannot be replicated or otherwise
   implemented with interactions, you can apply for the intent.
 </p>
-<h3><strong>WHEN CAN I APPLY FOR THE NEW INTENT?</strong></h3>
+<h3 id="h_01J42H36XFJ9ZG8XX0BTR3E3XQ">
+  <strong>WHEN CAN I APPLY FOR THE NEW INTENT?</strong>
+</h3>
 <p>
   We expect most bots and apps to migrate to new ways of engaging with users,
   like slash commands and other interactions. Please bear in mind that only bots
@@ -194,7 +210,9 @@
   <strong>October 25, 2021</strong>. You can apply directly from the form
   available in the Developer Portal. 
 </p>
-<h3><strong>WHO WILL GET THE INTENT?</strong></h3>
+<h3 id="h_01J42H36XF6YZTCY0ZWN244SWM">
+  <strong>WHO WILL GET THE INTENT?</strong>
+</h3>
 <p>
   We intend to grant message content approval for features that are unique,
   compelling, and transformative; non-invasive and put user privacy and safety
@@ -210,7 +228,7 @@
     >here</a
   >.
 </p>
-<h3>
+<h3 id="h_01J42H36XF09ZT6SSSAA40MD0E">
   <strong>WHAT HAPPENS IF I REQUEST AN INTENT AND IT GETS DENIED?</strong>
 </h3>
 <p>
@@ -223,11 +241,13 @@
   all applications closely, and in certain cases will provide feedback for why
   your Intent request was not granted.
 </p>
-<h3><strong>WHERE DO I APPLY FOR MESSAGE INTENT?</strong></h3>
+<h3 id="h_01J42H36XFE15KTRMVBT80XPK2">
+  <strong>WHERE DO I APPLY FOR MESSAGE INTENT?</strong>
+</h3>
 <p>
   You can apply for the Message Content intent, along with our other privileged
   intents,
   <strong>directly through your bot's page in the Developer Portal</strong>.
   Note that this form will only be available if you are eligible to apply, i.e.
-  if you are in 75 or more servers or are already verified).
+  if you are in 75 or more servers and already verified).
 </p>
