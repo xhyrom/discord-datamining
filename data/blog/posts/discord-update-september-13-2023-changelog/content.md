@@ -8,9 +8,7 @@
         ><strong><em>Settings &gt; What's New</em></strong
         ><em>.</em>
       </p>
-      <div class="w-embed">
-        <hr class="hr-style" />
-      </div>
+      <div class="w-embed"><hr class="hr-style" /></div>
       <h2>Desktop Updates</h2>
       <h3>Big exciting news</h3>
       <ul role="list">

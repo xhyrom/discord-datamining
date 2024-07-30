@@ -60,7 +60,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65669669408aef793eb07574_Gift%20Nitro%20Animation%20462PX%204MB.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65669669408aef793eb07574_Gift%20Nitro%20Animation%20462PX%204MB.gif"
             loading="lazy"
             alt=""
           />
@@ -103,7 +103,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655e96733b9fa4fce89cf032_QAgA7Q1kW-ELXxw7kTqc12cZRKxwqV9IytZX7F-j_8yS7WIQOpFWBBortBozfGU-hFqVSspNbD-ebW4WgXnnhqFsJzNmMmMgTp3Ui7S3LLCUinvu7C1Gnh4mAVWQ0HY3LCclSJDV_HhOebxyTynjMuA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655e96733b9fa4fce89cf032_QAgA7Q1kW-ELXxw7kTqc12cZRKxwqV9IytZX7F-j_8yS7WIQOpFWBBortBozfGU-hFqVSspNbD-ebW4WgXnnhqFsJzNmMmMgTp3Ui7S3LLCUinvu7C1Gnh4mAVWQ0HY3LCclSJDV_HhOebxyTynjMuA.png"
             loading="lazy"
             alt="The “Shop” button highlighted on the desktop app."
           />

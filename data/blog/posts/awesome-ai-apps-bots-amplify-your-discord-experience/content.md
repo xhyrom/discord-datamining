@@ -62,7 +62,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af38ddd67a6670dcb734d8_3Qa9fBBRxeQCP6InxVuEUnm1zoIzKMrolh5KusZETRDptKFObcsw9gX9Yw2bujyyDsHVP3sPPCorz4Uo-w7YGyJaMZMM-mf9hUz-Dc61WpBoNXj4l0wKvkrLk796YATTZH5w8445kL66WtfPzx6Ui8M.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64af38ddd67a6670dcb734d8_3Qa9fBBRxeQCP6InxVuEUnm1zoIzKMrolh5KusZETRDptKFObcsw9gX9Yw2bujyyDsHVP3sPPCorz4Uo-w7YGyJaMZMM-mf9hUz-Dc61WpBoNXj4l0wKvkrLk796YATTZH5w8445kL66WtfPzx6Ui8M.png"
             alt="A demonstration of the Cappuccino app for Discord. Two screenshots are shown, the first is the Cappuccino app in the process of “brewing” a Cappuccino. The second is the app completing its task, and the Cappuccino is ready for viewing.&nbsp;"
             loading="lazy"
           />
@@ -100,7 +100,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af38ddd67a6670dcb734e7_IUFA73QwkKY09GCT9Y5BcrFEAi1EifQpzPuocfxgLMrzwnzXR-TxkoGeIoU2_qPs5uMqdTkuNzgCxtlZhJ09dWzPaQZe9K-ih7zpKPTXKVTJqmKz_M8VSahh1ELRob9CJR0R8HqO1Wayz7vrorDgShU.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64af38ddd67a6670dcb734e7_IUFA73QwkKY09GCT9Y5BcrFEAi1EifQpzPuocfxgLMrzwnzXR-TxkoGeIoU2_qPs5uMqdTkuNzgCxtlZhJ09dWzPaQZe9K-ih7zpKPTXKVTJqmKz_M8VSahh1ELRob9CJR0R8HqO1Wayz7vrorDgShU.png"
             alt=" preview of the Memrise app for Discord. Multiple community members in a Discord server are learning languages using the app, with users holding multiple conversations within different Threads. A preview of the App’s profile page on a smartphone is also shown.&nbsp;"
             loading="lazy"
           />
@@ -160,7 +160,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39abe2fae9ed43c0d370_PFeeG0Sp-tOzjID-B4nZZqiQuMwxg_Rf5C8UMze7jDftxLpZe99S0PoaBtcXt-tswQG-losf0aT7IMyRZh45MUsgaGBV2tWqbqldr9ZkOiJBGTxlQGtKBGLctwsyeP3g0Zm1AhS0_E6Etq5neRt09yo.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64af39abe2fae9ed43c0d370_PFeeG0Sp-tOzjID-B4nZZqiQuMwxg_Rf5C8UMze7jDftxLpZe99S0PoaBtcXt-tswQG-losf0aT7IMyRZh45MUsgaGBV2tWqbqldr9ZkOiJBGTxlQGtKBGLctwsyeP3g0Zm1AhS0_E6Etq5neRt09yo.png"
             alt="A preview of the Midjourney app for Discord. A user has promoted “a celebratory discord blog post with confetti and fun cakes,” generating four images of colorful blurple cakes and confetti shooting out from behind them."
             loading="lazy"
           />
@@ -203,7 +203,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab46dca2e24f1eaebb_ZuV8GUf3v6Kd4wQqcW_AuJTLTi-ep8jUdMfS7KxHM0Al3pLrGA3fSADf0yff9lKpT_IrEsQ31EPwcp1ubMoXs5B0MfA1gREXpakIxtIpmQByFRLj2W-S0FD_7v7P0P_pspxDiDSHhESDfxK0YX3IUEc.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab46dca2e24f1eaebb_ZuV8GUf3v6Kd4wQqcW_AuJTLTi-ep8jUdMfS7KxHM0Al3pLrGA3fSADf0yff9lKpT_IrEsQ31EPwcp1ubMoXs5B0MfA1gREXpakIxtIpmQByFRLj2W-S0FD_7v7P0P_pspxDiDSHhESDfxK0YX3IUEc.png"
             alt="A preview of the AI Image Generator app. A user has requested the app to upscale a small image of a dog, and AI Image Generator has provided a very fluffy puppy as a result. They look very soft.&nbsp;"
             loading="lazy"
           />
@@ -252,7 +252,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab29866b3f86f15911_nMKY537Jha8VSwwXLyQ5HnZCBBykILSMWUjG-yBrRbfjGTzVQjkas9w374UnrblbJhXE0W7WW6nBnI0_AuYGodJ3bL7jG7WGMMjwjbPnKO_LYWun19STvzZzlB9jW-Pot9UiNpLiH62exlzrornyIbs.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab29866b3f86f15911_nMKY537Jha8VSwwXLyQ5HnZCBBykILSMWUjG-yBrRbfjGTzVQjkas9w374UnrblbJhXE0W7WW6nBnI0_AuYGodJ3bL7jG7WGMMjwjbPnKO_LYWun19STvzZzlB9jW-Pot9UiNpLiH62exlzrornyIbs.png"
             alt="A preview of AI Bot. A user has promoted an image of “a space vehicle in the shape of an alien spaceship flying in the air and looking at the planet,” and the bot has generated their request."
             loading="lazy"
           />
@@ -294,7 +294,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab186fe9a3397ea483_35ThpvLe0Ngqw5QUetbebZHQ0y9kLd3oUSpGRyBgKE7bK2GDM1BvrLnc7M3SvszjvjEzB7BzSxv1hzalXa1WEpitDc5bRSIygUEh1wHrMwE0BZDHKZbKaTrdM9zCaBy1ysngXVcybjpQZYu1_eza3OQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab186fe9a3397ea483_35ThpvLe0Ngqw5QUetbebZHQ0y9kLd3oUSpGRyBgKE7bK2GDM1BvrLnc7M3SvszjvjEzB7BzSxv1hzalXa1WEpitDc5bRSIygUEh1wHrMwE0BZDHKZbKaTrdM9zCaBy1ysngXVcybjpQZYu1_eza3OQ.png"
             alt="A preview of the Picsart app for Discord. A user has requested “dog surfing waves wearing a party hat,” and the Picsart app has generated four possible variations to choose from. All four dogs are looking at the viewer, happy and smiling as they surf along the coastline.&nbsp;"
             loading="lazy"
           />
@@ -329,7 +329,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png"
             loading="lazy"
             alt=""
           />

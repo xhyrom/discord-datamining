@@ -35,7 +35,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd00f678511e6f607ea85_QmvaqbkeOIJgHHuoj5ClYGtAMg7WpkwtePN-FLIZyLLndrnj-040cmlyLXxM1qk6lYmYTDnBAfRpCB8J1ROVXG6LqXimIRFFI9n0h25xWlse43p_pxFgHbjZBDFAXefD5uxitsBLBIrrfD8R8XJfj7M.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655bd00f678511e6f607ea85_QmvaqbkeOIJgHHuoj5ClYGtAMg7WpkwtePN-FLIZyLLndrnj-040cmlyLXxM1qk6lYmYTDnBAfRpCB8J1ROVXG6LqXimIRFFI9n0h25xWlse43p_pxFgHbjZBDFAXefD5uxitsBLBIrrfD8R8XJfj7M.png"
             loading="lazy"
             alt="A preview of the user Sunn’s Discord profile."
           />
@@ -99,7 +99,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd09e08f8ef023a571267_c9DdRoRW6vpO1EzQQu58bRTnvEvd1jAJirhj87S73xZq2bcvDBLd4YqnqtGD_ee_r73byyPezYPmCXJyKUX2rO5EIoXEz7PH2fCbNy_v7Y8YApzkC3iqwBVaFJ2OkaVDxDon5SgwNCSNPzqjWVvDsUs.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655bd09e08f8ef023a571267_c9DdRoRW6vpO1EzQQu58bRTnvEvd1jAJirhj87S73xZq2bcvDBLd4YqnqtGD_ee_r73byyPezYPmCXJyKUX2rO5EIoXEz7PH2fCbNy_v7Y8YApzkC3iqwBVaFJ2OkaVDxDon5SgwNCSNPzqjWVvDsUs.png"
             loading="lazy"
             alt="The Appearance page in User Settings."
           />
@@ -140,7 +140,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd10e8af190848bdbdbbe_JBKDcvRMe3Si2f9ZF6_fC9hnJwQ8J2g12wgyHGv9Pumn7Uv-CRZ7eDP1RtPKYojeWq4ptU6fuModnpNtnM5GHAGG35gp4Uq1WlFA5exqDlAiswNGgtNsPvfbF7J1b8_3jdV_ZUZ5Ve3Omv8Wmv_Ho2c.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655bd10e8af190848bdbdbbe_JBKDcvRMe3Si2f9ZF6_fC9hnJwQ8J2g12wgyHGv9Pumn7Uv-CRZ7eDP1RtPKYojeWq4ptU6fuModnpNtnM5GHAGG35gp4Uq1WlFA5exqDlAiswNGgtNsPvfbF7J1b8_3jdV_ZUZ5Ve3Omv8Wmv_Ho2c.png"
             loading="lazy"
             alt="A user setting a status.&nbsp;"
           />
@@ -178,7 +178,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd1ed2426600a6e3ed0da_KigjrEsTQKiXUKF3lb6g3p0VhnERMHymWqFi4hwlsEE9RBNqzT89U333U2F96qWgrxz68SnvKoVZJ2YLECU5P2v3kAcFpKfVCe_Xt9stB712L5BzfRJBNksaqP2orG5BmsRbQ1k4lVoxyWDIIxhVRKI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655bd1ed2426600a6e3ed0da_KigjrEsTQKiXUKF3lb6g3p0VhnERMHymWqFi4hwlsEE9RBNqzT89U333U2F96qWgrxz68SnvKoVZJ2YLECU5P2v3kAcFpKfVCe_Xt9stB712L5BzfRJBNksaqP2orG5BmsRbQ1k4lVoxyWDIIxhVRKI.png"
             loading="lazy"
             alt="A preview of a user’s Discord profile showing their Spotify activity.&nbsp;"
           />
@@ -236,7 +236,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd249ab9b86178bfed47a_Avatar%20Decorations%20Profile%20Effects.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655bd249ab9b86178bfed47a_Avatar%20Decorations%20Profile%20Effects.gif"
             loading="lazy"
             alt=""
           />
@@ -287,7 +287,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd2a72161f30e5ab469fb_99nOnTzlvQy-POBTwSgll-ktPt59PerAReyeE0GqPGAMBM9IOiBdf-lE5bgAVceeb50aQ4sykzlH9QyBxbPfQHrRqP_xn8JxZqMbRWhlEowa1eKH1s-z3wT81ZjfO7c6mw_XssjQ4iVdrqqA13wloRw.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655bd2a72161f30e5ab469fb_99nOnTzlvQy-POBTwSgll-ktPt59PerAReyeE0GqPGAMBM9IOiBdf-lE5bgAVceeb50aQ4sykzlH9QyBxbPfQHrRqP_xn8JxZqMbRWhlEowa1eKH1s-z3wT81ZjfO7c6mw_XssjQ4iVdrqqA13wloRw.png"
             loading="lazy"
             alt="A user named “Phibi” using three different profiles in three different servers."
           />
@@ -329,7 +329,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd2f3add761da74b01693_14z-atnYx2Vr7-6DzZtea7vUk_DfCtg95Ohsa-FEVuQ2Cabhn0u9-7v0weppgCDmgTJwjBB1SFlJ9ko26iL8xf448rPnOSWvQOGdKg0Jyjq4G7-EVH5j9TISKta5qZLvbU7C-8q9KCF2Te5n7lN7rdU.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655bd2f3add761da74b01693_14z-atnYx2Vr7-6DzZtea7vUk_DfCtg95Ohsa-FEVuQ2Cabhn0u9-7v0weppgCDmgTJwjBB1SFlJ9ko26iL8xf448rPnOSWvQOGdKg0Jyjq4G7-EVH5j9TISKta5qZLvbU7C-8q9KCF2Te5n7lN7rdU.png"
             loading="lazy"
             alt="A preview of four Nitro-exclusive themes."
           />
@@ -350,7 +350,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655bd2f4e640824640444586_DAQkodvUWNndAtSOK9CN8Yf6mqLx1pxNv51cGOQniSgO9z1CCeNL1kCoCWPPhIjTxyQc9x-H3AJo1SN4SqK0ii7a2mfWOKJ5gl6X3iVBY-ILji23-mlWE8zNXLWd1mTe4zBpChcg8VbFJ4Gt-w653B8.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655bd2f4e640824640444586_DAQkodvUWNndAtSOK9CN8Yf6mqLx1pxNv51cGOQniSgO9z1CCeNL1kCoCWPPhIjTxyQc9x-H3AJo1SN4SqK0ii7a2mfWOKJ5gl6X3iVBY-ILji23-mlWE8zNXLWd1mTe4zBpChcg8VbFJ4Gt-w653B8.png"
             loading="lazy"
             alt=""
           />

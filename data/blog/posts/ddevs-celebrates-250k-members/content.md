@@ -51,7 +51,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65690526627854932f68f636_PBB40iQPwQfJkZbdLK9Jc0HrfA3dSXQ4ENKvpeTJldnLvXsZM-z2iAX8BbwIa5pVUab5mOPuT62q4X4Ww9wlFQG4gIBekGdR_JY5ppKobi1vJ71SeVXbkODCDMmXbJZK5-lW9iuMb3uPBD_LOxPV4Z8.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65690526627854932f68f636_PBB40iQPwQfJkZbdLK9Jc0HrfA3dSXQ4ENKvpeTJldnLvXsZM-z2iAX8BbwIa5pVUab5mOPuT62q4X4Ww9wlFQG4gIBekGdR_JY5ppKobi1vJ71SeVXbkODCDMmXbJZK5-lW9iuMb3uPBD_LOxPV4Z8.png"
             loading="lazy"
             alt="Screenshot of the Server Guide in the Discord Developers server."
           />

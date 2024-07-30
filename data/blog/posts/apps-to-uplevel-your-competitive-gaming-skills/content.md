@@ -42,7 +42,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65551280f96dad6954fd852e_cj-i3K1mwG8j0XRX3mdk0gP2PHp0zhcu1c-24WhcwBaOZwed1Q03pjkpNYj2pSa8-rwkunvWugxpdM5kAjQM8wYFDGmN8PaqMAknryyJZ2essf8VxYzODO11gFV7fZ3ENM568gOywfrYbYYRIBPlgK0.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65551280f96dad6954fd852e_cj-i3K1mwG8j0XRX3mdk0gP2PHp0zhcu1c-24WhcwBaOZwed1Q03pjkpNYj2pSa8-rwkunvWugxpdM5kAjQM8wYFDGmN8PaqMAknryyJZ2essf8VxYzODO11gFV7fZ3ENM568gOywfrYbYYRIBPlgK0.png"
             loading="lazy"
             alt="A screenshot of Tourney Bot’s App Directory listing."
           />
@@ -93,7 +93,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655512bb29648bedee3bf520_cYjbbeIG68P92iPWzdTf-YevIJjO3hsOzpDCu7Nj-mYb_G8XDAp8ZdhqU8IquRQhWkjeJNfYWepisr0jpMPvNaHhvFguqANNqxbYAtBWelqt30hZgtSOTEDAXF7Iue7BhvyGBrFMp2yPCJsiDyAYYfA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655512bb29648bedee3bf520_cYjbbeIG68P92iPWzdTf-YevIJjO3hsOzpDCu7Nj-mYb_G8XDAp8ZdhqU8IquRQhWkjeJNfYWepisr0jpMPvNaHhvFguqANNqxbYAtBWelqt30hZgtSOTEDAXF7Iue7BhvyGBrFMp2yPCJsiDyAYYfA.png"
             loading="lazy"
             alt="A screenshot of Guess The Rank’s App Directory listing."
           />
@@ -136,7 +136,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6555134b6cd515c5cfd3464e_r12eaPBmw2wJLOiimoQ5OxDcgQnGGD_C3oXNqVWYACKchTp75TkskeILLL_Tov2kgtNhRGd12sgIbGUywJckhH0h4lbci2qo_fZYf6cuHO7n54r2faRvQvhOnYy_lX4epJIro9Dr7QNGKjr8JRrU8Qw.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6555134b6cd515c5cfd3464e_r12eaPBmw2wJLOiimoQ5OxDcgQnGGD_C3oXNqVWYACKchTp75TkskeILLL_Tov2kgtNhRGd12sgIbGUywJckhH0h4lbci2qo_fZYf6cuHO7n54r2faRvQvhOnYy_lX4epJIro9Dr7QNGKjr8JRrU8Qw.png"
             loading="lazy"
             alt="A screenshot of FN Leaderboard’s App Directory listing."
           />
@@ -187,7 +187,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655513b2113e0a5c018ae449_6NagKiusctzBR-dB3bPU7DT5AC-0vHl5840ReSS25EXJnBkoFYQGsgRlS7z6icbWYzGxJdZhFuUV23FKmgpSTo6xcf3H91HRWaZAA403YT84P8xqfAIRdL-9DYETYZ8D7JfsZdSQGXJV1QDlPg1ZBZk.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655513b2113e0a5c018ae449_6NagKiusctzBR-dB3bPU7DT5AC-0vHl5840ReSS25EXJnBkoFYQGsgRlS7z6icbWYzGxJdZhFuUV23FKmgpSTo6xcf3H91HRWaZAA403YT84P8xqfAIRdL-9DYETYZ8D7JfsZdSQGXJV1QDlPg1ZBZk.png"
             loading="lazy"
             alt="A screenshot of TREBEL Music Bot’s App Directory listing."
           />
@@ -210,7 +210,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655513b2dd72b55e7dc2d543__sncPS95rYnFF_fn6aCk4qBo3KyINGXjeb-2f0oZl8zJIJF2HhfORcmM_UZ8Vf87mT76R431lk29UL_HQkOd8OwUXMwBs0IAX8LWdy_X-qiBe8sgFjHwBi6EaoPRTpq_YY1JKTwMqucVEf2OSKbMVi4.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655513b2dd72b55e7dc2d543__sncPS95rYnFF_fn6aCk4qBo3KyINGXjeb-2f0oZl8zJIJF2HhfORcmM_UZ8Vf87mT76R431lk29UL_HQkOd8OwUXMwBs0IAX8LWdy_X-qiBe8sgFjHwBi6EaoPRTpq_YY1JKTwMqucVEf2OSKbMVi4.png"
             loading="lazy"
             alt=""
           />

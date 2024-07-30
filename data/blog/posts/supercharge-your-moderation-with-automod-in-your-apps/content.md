@@ -84,7 +84,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64407bb1e29c2f6e210eb6e3_image2.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64407bb1e29c2f6e210eb6e3_image2.png"
             loading="lazy"
             alt=""
           />

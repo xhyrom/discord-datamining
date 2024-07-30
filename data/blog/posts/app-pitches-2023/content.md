@@ -49,7 +49,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a67bc3474da2d0d1cf59e_p2o-NCL_qqmJgI5tvXzE4iaJ0ZbSFTGbF5Uq1NAbS2wYWi6qmEPmj3uXbJIJlw2o_laOh7dRgA6igVFE9Xe5MAIrhwD6WOADAYetS-9Yrgy03r2AA0FRx7nc2sdHw2yITtKR611CFOVwAbwFdkfp4iQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654a67bc3474da2d0d1cf59e_p2o-NCL_qqmJgI5tvXzE4iaJ0ZbSFTGbF5Uq1NAbS2wYWi6qmEPmj3uXbJIJlw2o_laOh7dRgA6igVFE9Xe5MAIrhwD6WOADAYetS-9Yrgy03r2AA0FRx7nc2sdHw2yITtKR611CFOVwAbwFdkfp4iQ.png"
             loading="lazy"
             alt="Prototype assets for Art Arena. Support for competitions, portfolios, and profiles are shown."
           />
@@ -101,7 +101,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a67f5f0e80150a0c5311c_JAxwRlaCr47JmfnAVnvoXxEogVWfuAAIDbkD2KwK3N-hsnLwYyKuwPrYR97v3iHdUaYM_MhmiRZZHZD3LIoAF12KBi2dSWMxyfHSciPtTQzH4Khfss4NVExWrYhldd4YYm1hvKuJAIKW7g5241jRys4.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654a67f5f0e80150a0c5311c_JAxwRlaCr47JmfnAVnvoXxEogVWfuAAIDbkD2KwK3N-hsnLwYyKuwPrYR97v3iHdUaYM_MhmiRZZHZD3LIoAF12KBi2dSWMxyfHSciPtTQzH4Khfss4NVExWrYhldd4YYm1hvKuJAIKW7g5241jRys4.jpeg"
             loading="lazy"
             alt="A diver standing at the end of a wooden pier, overlooking a cove."
           />
@@ -142,7 +142,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a68251334cbbd111dc7bd_rIktUaw1p1oELTUFfNQBtzCHJd5VSBaMSup7mWeaRnWj28ITmCo-3kcL2RXFdIq6r4oSl9Mc9XU_z_ufII6nZtt_iUEErI6y0ooDX8E4mndjCRPOBuK4tvQfrKNQonLZ-Q-1WypFy3hxttr7DJ7b690.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654a68251334cbbd111dc7bd_rIktUaw1p1oELTUFfNQBtzCHJd5VSBaMSup7mWeaRnWj28ITmCo-3kcL2RXFdIq6r4oSl9Mc9XU_z_ufII6nZtt_iUEErI6y0ooDX8E4mndjCRPOBuK4tvQfrKNQonLZ-Q-1WypFy3hxttr7DJ7b690.png"
             loading="lazy"
             alt="Promotional material for Teranga. The example shows a drag-and-drop interface for creating a Discord app."
           />
@@ -194,7 +194,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a684ff330ff8ab1cc844d_jgMySHso_81MWcEdMGd-thUwlIg_GnCqLr8HnPvtoYdDd_A7PsDn-7yKbCLtdePZBP7drv8-E9IxTvYhcALJHNKpGQKsKESWsJqTt8W0p7b0OV5VySbmPgydOnc6rhe1ROzbSP53Fy4dB7Za0B3oNnY.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654a684ff330ff8ab1cc844d_jgMySHso_81MWcEdMGd-thUwlIg_GnCqLr8HnPvtoYdDd_A7PsDn-7yKbCLtdePZBP7drv8-E9IxTvYhcALJHNKpGQKsKESWsJqTt8W0p7b0OV5VySbmPgydOnc6rhe1ROzbSP53Fy4dB7Za0B3oNnY.png"
             loading="lazy"
             alt="A promotional image for Towntopia. It shows a user starting out their town in Towntopia, and another user&nbsp;working on their digital home."
           />
@@ -241,7 +241,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a6888d7df7c62af4fc2d8_90RsJpLSAFEZzo7FMAwJsnuOSfejYruQA8O6DR_lpQxBLe1z8lzyEzj0H0I63sEDx0BA95hHEuMIo1OpahdTrRGYf0P1qP_hB8WxRpEiQhC7TCqkkbFZ8qQ2-uQzs0o2mUz3ouguC-xg_fFe5GIFCJ0.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654a6888d7df7c62af4fc2d8_90RsJpLSAFEZzo7FMAwJsnuOSfejYruQA8O6DR_lpQxBLe1z8lzyEzj0H0I63sEDx0BA95hHEuMIo1OpahdTrRGYf0P1qP_hB8WxRpEiQhC7TCqkkbFZ8qQ2-uQzs0o2mUz3ouguC-xg_fFe5GIFCJ0.jpeg"
             loading="lazy"
             alt="The words “Paper, Paper AI, AI,” and the phrase “Create your story” on a gradient background."
           />
@@ -294,7 +294,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a799c9ed969bfcdb94fb9_Updated%20(1)..png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654a799c9ed969bfcdb94fb9_Updated%20(1)..png"
             loading="lazy"
             alt="A promotional image showing the differences between using and not using Cohezion.ai. One is a mess of text channels while the other is utilizing Apps and Forum Channels."
           />
@@ -322,7 +322,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a68c8ecfc14ea3dd70f68_l4cQIjfPdDVyrlAWAxJLkRPxM_-_VehoMnGftMA5tXKU0VjV2OscYAg3znRbhhGo4n4fJVQ2KcO9yoAJvcp6lYH8JhlSWJADHMPH4jU9MqGmCnCH2EHdeLpWGAoqOO89T1sTffW6nodOGVOI9R2d68o.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654a68c8ecfc14ea3dd70f68_l4cQIjfPdDVyrlAWAxJLkRPxM_-_VehoMnGftMA5tXKU0VjV2OscYAg3znRbhhGo4n4fJVQ2KcO9yoAJvcp6lYH8JhlSWJADHMPH4jU9MqGmCnCH2EHdeLpWGAoqOO89T1sTffW6nodOGVOI9R2d68o.png"
             loading="lazy"
             alt=""
           />
@@ -355,7 +355,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a6a6cb3fada8f5a90cac3_Untitled.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654a6a6cb3fada8f5a90cac3_Untitled.png"
             loading="lazy"
             alt=""
           />
@@ -518,7 +518,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/650b813dd52ad4201bd92080_pvrp6I-E3ztbsDsx4Sy6VCqf18ENWSaNbd_Fnc2vJMWb4Um7RW82VtMtd6bw7jpVPXutHFZrMDCkrtNGlKhWfvPQuphyfX8XyEXtQ9BZ_-5Zjs_uZNHXEt6voUY1NXpMMtlfiT_gkrvYrnzRgxZuhDE.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/650b813dd52ad4201bd92080_pvrp6I-E3ztbsDsx4Sy6VCqf18ENWSaNbd_Fnc2vJMWb4Um7RW82VtMtd6bw7jpVPXutHFZrMDCkrtNGlKhWfvPQuphyfX8XyEXtQ9BZ_-5Zjs_uZNHXEt6voUY1NXpMMtlfiT_gkrvYrnzRgxZuhDE.png"
             loading="lazy"
             alt=""
           />
