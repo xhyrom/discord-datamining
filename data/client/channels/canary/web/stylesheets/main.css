@@ -28940,7 +28940,7 @@ h3.improved_f017d0:after {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 12px;
+  padding: 8px;
   overflow: visible;
   position: relative;
 }
@@ -29115,7 +29115,7 @@ h3.improved_f017d0:after {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.badgesContainer_d60c6d {
+:where(.badgesContainer_d60c6d) {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -44994,4 +44994,4 @@ img[alt] {
     --font-weight-semibold-1x-light-theme: 600;
   }
 }
-/*# sourceMappingURL=12633.3504837c60288cda4e6e.css.map*/
+/*# sourceMappingURL=12633.e41ddb2448a8e2c95b2f.css.map*/
