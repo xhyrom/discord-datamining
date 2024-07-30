@@ -13,7 +13,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64c7e9dcefdae8344aef8a5c_games.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64c7e9dcefdae8344aef8a5c_games.png"
             loading="lazy"
             alt="Two Discord characters playing a board game while two other characters cheer them on."
           />
@@ -77,7 +77,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64c7e9dcefdae8344aef8a5c_games.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64c7e9dcefdae8344aef8a5c_games.png"
             loading="lazy"
             alt="Two Discord characters playing a board game while two other characters cheer them on."
           />
