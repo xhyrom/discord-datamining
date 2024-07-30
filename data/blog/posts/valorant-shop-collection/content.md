@@ -45,7 +45,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660319941dd5f1200351e6e1_VLR_Blog_GIF_V06-(Optimized).gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660319941dd5f1200351e6e1_VLR_Blog_GIF_V06-(Optimized).gif"
             loading="lazy"
             alt="An animated preview of the new VALORANT Shop collection. It displays items based on Clove and Omen."
           />
@@ -102,7 +102,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6601d5987fa76a77cda4282b_VoLWpza0iTSRJe5cZjWtKdCTw8Tm2wXz43SuSEo8RVrUtAzYjpwqxCETMzlxpWjFFFHMqQBEhdASluNDyy6aTbsJgSl9-OmQaXHOTHEMMUCM7O1r9OOge2UogbUmaUY0K8BApRXkijUMX0DPzeTXP4g.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6601d5987fa76a77cda4282b_VoLWpza0iTSRJe5cZjWtKdCTw8Tm2wXz43SuSEo8RVrUtAzYjpwqxCETMzlxpWjFFFHMqQBEhdASluNDyy6aTbsJgSl9-OmQaXHOTHEMMUCM7O1r9OOge2UogbUmaUY0K8BApRXkijUMX0DPzeTXP4g.png"
             loading="lazy"
             alt=""
           />
@@ -127,7 +127,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
             loading="lazy"
             alt=""
           />

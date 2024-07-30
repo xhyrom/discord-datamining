@@ -184,7 +184,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66033f70a84c36a88a4b1692_V5h4Nm-lC9eKhQ4hGShV-WSFnuW1sFxTbxyYuzWBTQn0uc-mMXsirVsBgKqGTVWB-XQuAJ092fF1yvbM0AghIO3UQqo6S4Bo-rphAyJbp9wr82UV4s56DHolW5aQ9CMru-uRa3fgI2D8A12anGEqBqE.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66033f70a84c36a88a4b1692_V5h4Nm-lC9eKhQ4hGShV-WSFnuW1sFxTbxyYuzWBTQn0uc-mMXsirVsBgKqGTVWB-XQuAJ092fF1yvbM0AghIO3UQqo6S4Bo-rphAyJbp9wr82UV4s56DHolW5aQ9CMru-uRa3fgI2D8A12anGEqBqE.png"
             loading="lazy"
             alt="The image has three columns. The first contains a team made up of a manager, a software engineer, and a data scientist. The second column contains a list of different job functions that could be set as roles: All Employees, Manager, Engineering, Data Science. The third column contains a list of resources like email, a manager Google group, GitHub, and a ML database. There are arrows between the columns showing how team members with different jobs may have many roles from the job function column which then map to permissions associated with the different resources."
           />
@@ -306,7 +306,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66033fc5d82b867596f925ab_YN6fT5s4pQlxlJ2LSoJUO5pcTmED7EWrAFrvAQDkQFxDLuP6Dibv_OhZDUy2cUsXZMoWzrGkBkYNNSJDrM1_p1ogGlEF7FLzm18_N33p0RrLTvcs0HnFxr2V0n2Kfpr3xyoiuqNlCfkyFrnqW63NG5w.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66033fc5d82b867596f925ab_YN6fT5s4pQlxlJ2LSoJUO5pcTmED7EWrAFrvAQDkQFxDLuP6Dibv_OhZDUy2cUsXZMoWzrGkBkYNNSJDrM1_p1ogGlEF7FLzm18_N33p0RrLTvcs0HnFxr2V0n2Kfpr3xyoiuqNlCfkyFrnqW63NG5w.png"
             loading="lazy"
             alt="The image is a screenshot of an Access user audit page. It displays the membership history for Locke, including which groups he has been in, whether he was a member or owner, and the duration of the access."
           />

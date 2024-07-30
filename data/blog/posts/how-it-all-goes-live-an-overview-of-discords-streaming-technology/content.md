@@ -25,7 +25,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65e7a73341316477bbe762bd_mfTdsXeXxfgdiEXUtpk64hi-v2l7D5xAlsD_DUACvsAPC3UCj046mZLYITFUMnRyhBQPCsab_WsivmXciauQqgCDoIjn8g9DbsG8m74F6DR4cADyU_SWkV2kgSrcmzLooG1ero6UvhunsxQ0YBzXVPk.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65e7a73341316477bbe762bd_mfTdsXeXxfgdiEXUtpk64hi-v2l7D5xAlsD_DUACvsAPC3UCj046mZLYITFUMnRyhBQPCsab_WsivmXciauQqgCDoIjn8g9DbsG8m74F6DR4cADyU_SWkV2kgSrcmzLooG1ero6UvhunsxQ0YBzXVPk.png"
             loading="lazy"
             alt="The streamer captures and encodes the frames and transmits them to viewers, who decode and display them."
           />
@@ -111,7 +111,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65e7a78256d4f9f7466f8acc_B2Iz2yy7i8CFTwq2Wsv784npLylozP0vHhXFpbPOzbTd0J-3HWJDScPuO0dKfiG4XwasdzDjqDQptT-ayhbz0tFNEElpv_H66uXAJVHttX29U4ycfVPAmDHk2Z5Sj7NzafBjKHnbIvC8GfmGqUD9LX0.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65e7a78256d4f9f7466f8acc_B2Iz2yy7i8CFTwq2Wsv784npLylozP0vHhXFpbPOzbTd0J-3HWJDScPuO0dKfiG4XwasdzDjqDQptT-ayhbz0tFNEElpv_H66uXAJVHttX29U4ycfVPAmDHk2Z5Sj7NzafBjKHnbIvC8GfmGqUD9LX0.png"
             loading="lazy"
             alt="The streamer transmits the stream to the Discord RTC Worker, which routes the data to each viewer watching it.&nbsp;"
           />

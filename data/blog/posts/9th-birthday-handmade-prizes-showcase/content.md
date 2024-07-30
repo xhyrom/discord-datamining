@@ -69,7 +69,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663d4ba17c41d77497f488a2_keyboardrug_1920x1080.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/663d4ba17c41d77497f488a2_keyboardrug_1920x1080.png"
             loading="lazy"
             alt="A keyboard rug shaped like Wumpus's head with their tongue sticking out, in front of a keyboard."
           />
@@ -129,7 +129,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663d4bd83ef5061b23072bac_Pinata_1920x1080.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/663d4bd83ef5061b23072bac_Pinata_1920x1080.png"
             loading="lazy"
             alt="A giant Wumpus Pinata! It’s got a 2D-style look, with Wumpus having a larger-than-usual head meant for holding candy."
           />
@@ -192,7 +192,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663d4b81947169d0f4cfd084_StudioSession-005.jpg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/663d4b81947169d0f4cfd084_StudioSession-005.jpg"
             loading="lazy"
             alt="A Discord-colored headphone stand designed to look like a cake."
           />
@@ -243,7 +243,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663d45ac1ed596bf3fb80e02_IMG_8029.jpg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/663d45ac1ed596bf3fb80e02_IMG_8029.jpg"
             loading="lazy"
             alt="An arcade stick with an illustration of Wumpus in a fighting stance wearing karate gear"
           />

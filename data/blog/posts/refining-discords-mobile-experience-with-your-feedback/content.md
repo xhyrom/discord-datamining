@@ -48,7 +48,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/664ce3ca9b88927a184ca918_bX_W2goAdArWrKK_EgX2fzy7Ij6DMcLIOHrldvOmwpRGwo2F7kARZs4eRUdy9dEBvNXwTrkQ6Nzeem6xZIBckreEp5q37kAg81cwtErI4y-Gx3nBzruVjzg7i244e2PD1f5ZEHjbrUzjU6n1J-STuZw.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/664ce3ca9b88927a184ca918_bX_W2goAdArWrKK_EgX2fzy7Ij6DMcLIOHrldvOmwpRGwo2F7kARZs4eRUdy9dEBvNXwTrkQ6Nzeem6xZIBckreEp5q37kAg81cwtErI4y-Gx3nBzruVjzg7i244e2PD1f5ZEHjbrUzjU6n1J-STuZw.png"
             loading="lazy"
             alt='A preview of the new merged "Home" tab. It now includes both servers and DMs in one place.'
           />
@@ -87,7 +87,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/664ce3dc5bf70617c18036e0_WnurZgs_ndvv8KeVxVTvTzYuCj95z8K2OfGRC6z4yjFTiBnEa6UdXnb2ug8oUp2Yto6t7ersZKc3aDCRgF1TbkhiJyQ4BemV7xcciKlePKYearmIl4yJNrN3nHNFHe5MvF7Vh6CjI-IxXLIz8uAGVWU.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/664ce3dc5bf70617c18036e0_WnurZgs_ndvv8KeVxVTvTzYuCj95z8K2OfGRC6z4yjFTiBnEa6UdXnb2ug8oUp2Yto6t7ersZKc3aDCRgF1TbkhiJyQ4BemV7xcciKlePKYearmIl4yJNrN3nHNFHe5MvF7Vh6CjI-IxXLIz8uAGVWU.png"
             loading="lazy"
             alt="Three side-by-side images demonstrating the new search filters and improved functionality."
           />
@@ -117,7 +117,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/664ce3e9189bdbc616d5c08f_e4MRHKJ061eahVyhzZ10S5o1ZONWEKKVKIjH12zl2mpXjHmNNCxXvfbGiIVZPt7elsFdEOjD4GnE3VeZMWN7I--yJumyWNiPXMMrpfc8_evDfhkxe7zWt1GgsvDlrtfnMbqjqhsFtO0QfV6hLy3xF9Y.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/664ce3e9189bdbc616d5c08f_e4MRHKJ061eahVyhzZ10S5o1ZONWEKKVKIjH12zl2mpXjHmNNCxXvfbGiIVZPt7elsFdEOjD4GnE3VeZMWN7I--yJumyWNiPXMMrpfc8_evDfhkxe7zWt1GgsvDlrtfnMbqjqhsFtO0QfV6hLy3xF9Y.jpeg"
             loading="lazy"
             alt="A screenshot of the new Contrast and Saturation sliders in the Accessibility section of the User Settings page. "
           />

@@ -56,7 +56,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
             loading="lazy"
             alt=""
           />

@@ -81,7 +81,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a3f99c18b234b2ffe5f204_669ec169c71c4fd9bbb72922_Nitro%2520In-App%2520Promo.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a3f99c18b234b2ffe5f204_669ec169c71c4fd9bbb72922_Nitro%2520In-App%2520Promo.png"
             loading="lazy"
             alt="A preview of the Nitro Promo banner inside the Nitro tab on desktop."
           />
@@ -166,7 +166,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/669ea483809c5fcc51c1ac65_AD_4nXeyh_Fv0cvtiHY8vsm45YfsYtRZWXPro7P7J8_3neN6TNFr3QPbw3eB0AlUfnwEfaM8bzV3YOODmlxCQ1DI54ILGh4L6SxvO7xI_i8TMxu9ZdALss4uq2ij-82n-TkNzst9byr32usbkzRZwB6DC3vmurAx.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/669ea483809c5fcc51c1ac65_AD_4nXeyh_Fv0cvtiHY8vsm45YfsYtRZWXPro7P7J8_3neN6TNFr3QPbw3eB0AlUfnwEfaM8bzV3YOODmlxCQ1DI54ILGh4L6SxvO7xI_i8TMxu9ZdALss4uq2ij-82n-TkNzst9byr32usbkzRZwB6DC3vmurAx.gif"
             loading="lazy"
             alt="A demonstration of the Custom Emoji Nitro perk. Nitro is letting the user access their emojis from all their servers to use in their conversation."
           />
@@ -185,7 +185,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
             loading="lazy"
             alt=""
           />

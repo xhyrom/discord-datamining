@@ -40,7 +40,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656fac637ab4aef0b67cb9ef_ww-lrEeZEzwwreZ-1bZefPxoSNYK-IXOSktSroLka-SddHArVnG8SyGAENWKmNZ25TrkO9qPdjoTxdFpfmpamf4OfMaAPE1cYk-KtKrjhMqFMNObPhHZwNsVReVVmCoNONcqdpjLr2TQquSGYdUpU2NL9mdItcIgXCy6hDEe7tqYdN85VKg_51DOIJQpIw.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656fac637ab4aef0b67cb9ef_ww-lrEeZEzwwreZ-1bZefPxoSNYK-IXOSktSroLka-SddHArVnG8SyGAENWKmNZ25TrkO9qPdjoTxdFpfmpamf4OfMaAPE1cYk-KtKrjhMqFMNObPhHZwNsVReVVmCoNONcqdpjLr2TQquSGYdUpU2NL9mdItcIgXCy6hDEe7tqYdN85VKg_51DOIJQpIw.gif"
             loading="lazy"
             alt="A winter-themed Nitro gift. It includes a personalized note and an animation of Wumpus drinking frothy hot cocoa with sprinkles."
           />
@@ -92,7 +92,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/657214bc07701aba8771f955_G3ItCQWCNyUankg3sKj_4EDc_FAm5_il-ORPetQ-kvr30YD1WQY6w5JDGycO4-5C-zziNf9lilvgVpCgDTCsM_U-WbNWfb5dsl_oc6dnWbSYdg_toiRCO-uLFz3EvpB6d3NYYYUsPVBqRfavetJKFomTyJjqdDmh9rdEAJyQx4rxdA8v2nQXivsecseL4A.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/657214bc07701aba8771f955_G3ItCQWCNyUankg3sKj_4EDc_FAm5_il-ORPetQ-kvr30YD1WQY6w5JDGycO4-5C-zziNf9lilvgVpCgDTCsM_U-WbNWfb5dsl_oc6dnWbSYdg_toiRCO-uLFz3EvpB6d3NYYYUsPVBqRfavetJKFomTyJjqdDmh9rdEAJyQx4rxdA8v2nQXivsecseL4A.png"
             loading="lazy"
             alt="A collage of Discord Nitro gift cards. 1-month, 3-month, 6-month, and 12-month options are shown."
           />
@@ -147,7 +147,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656faceffae5a484773a3723_FkDHov4BxVnogGd3ToxRUIfrbzHRoWMWOfUCz3sb_VHddkqI4oIGr-kKXOOuOz863n4n-FjcONkzrmJkNuUqZhT617_SGjvJNr9uNddxCaPJe_mQd7iHPQJBcbI-LY6Wl69ZweyctXlH9P0KIzRcwgyPHNEZqG3tqZtb7OLgtI3vWxuneWJgNY7AxjieJQ.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656faceffae5a484773a3723_FkDHov4BxVnogGd3ToxRUIfrbzHRoWMWOfUCz3sb_VHddkqI4oIGr-kKXOOuOz863n4n-FjcONkzrmJkNuUqZhT617_SGjvJNr9uNddxCaPJe_mQd7iHPQJBcbI-LY6Wl69ZweyctXlH9P0KIzRcwgyPHNEZqG3tqZtb7OLgtI3vWxuneWJgNY7AxjieJQ.gif"
             loading="lazy"
             alt="A preview of the monster-themed Avatar Decorations and Profile Effects from the Shop."
           />
@@ -211,7 +211,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656fad739fe7f2a78547491b_3DwaazEXAVacid-gQiGyAjG42sjmBlHSOeH5YER3vvA3FGOeBW3Z0cM9oQkeZL0iHlw-HZlv0XyyDuW3qqbymfnq7Rzzy-mpehjW_bjNvqY-9SOqjEdwccIvwGfZJRgMA7lK4g7ZbZ9c8uOcm1WcrqhBFKp2Cr-2o6RnLUtvxVJNGqp5YTzHLS1Y3fo7KQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656fad739fe7f2a78547491b_3DwaazEXAVacid-gQiGyAjG42sjmBlHSOeH5YER3vvA3FGOeBW3Z0cM9oQkeZL0iHlw-HZlv0XyyDuW3qqbymfnq7Rzzy-mpehjW_bjNvqY-9SOqjEdwccIvwGfZJRgMA7lK4g7ZbZ9c8uOcm1WcrqhBFKp2Cr-2o6RnLUtvxVJNGqp5YTzHLS1Y3fo7KQ.png"
             loading="lazy"
             alt="A preview of six collections from the Discord merch store."
           />

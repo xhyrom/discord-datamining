@@ -60,7 +60,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f06e75aac64aeb6677700b_Putt%20Party.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65f06e75aac64aeb6677700b_Putt%20Party.png"
             loading="lazy"
             alt="Discord users playing Putt Party, an Activity created using the Embedded App SDK."
           />
@@ -165,7 +165,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65ef6505b8644012497d158c_agjuMLQ-rP50LQ8OoI5VUbQ2BJFBbY-dU1V2TsUSz2VdUGUGfrSniIFcqzIEwE6Shr-XQ5KO441xMwR1cbk9_vYfE-KB9nKnfsujaNpffELU8n9JEQoEaYWaFyIDMVPpMSYYg84Vd7ynSEnDO5kfJOg.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65ef6505b8644012497d158c_agjuMLQ-rP50LQ8OoI5VUbQ2BJFBbY-dU1V2TsUSz2VdUGUGfrSniIFcqzIEwE6Shr-XQ5KO441xMwR1cbk9_vYfE-KB9nKnfsujaNpffELU8n9JEQoEaYWaFyIDMVPpMSYYg84Vd7ynSEnDO5kfJOg.png"
             loading="lazy"
             alt="A two-image demonstration of someone adding an app called Meal Time to their account. The first image shows an App’s “Use App” button on their profile. The second image is a prompt asking a user whether they want to “Add to My Apps,” or “Add to Another Server.”"
           />
@@ -267,7 +267,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65ef657574db670328178aaa_PAebamt0wA2_Z_C2QAv43DukFAnpF6fVV0myM-uBpKqRvb2jagruXQn0ZI4y9PERLMXEYtMm2Of2qLgXcz5T3Vjrl3_QtaieQQJcEKFznzsoowSjoEW-794yH-nrLGINhJhAn5v809zNxQsxUh4TgJ0.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65ef657574db670328178aaa_PAebamt0wA2_Z_C2QAv43DukFAnpF6fVV0myM-uBpKqRvb2jagruXQn0ZI4y9PERLMXEYtMm2Of2qLgXcz5T3Vjrl3_QtaieQQJcEKFznzsoowSjoEW-794yH-nrLGINhJhAn5v809zNxQsxUh4TgJ0.png"
             loading="lazy"
             alt=""
           />

@@ -56,7 +56,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/665615a07cb9e193a24d3d10_Discord_Website_Refresh_Hop_In_EN.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/665615a07cb9e193a24d3d10_Discord_Website_Refresh_Hop_In_EN.gif"
             loading="lazy"
             alt="A group of four friends hanging out in a Discord server called “The Crew.” One of the friends has their video camera on, while the other three chat along using voice."
           />
@@ -217,7 +217,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/665617bf7d3debc25879425f_Discord_Website_Refresh_Same_Room_EN.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/665617bf7d3debc25879425f_Discord_Website_Refresh_Same_Room_EN.gif"
             loading="lazy"
             alt="Three friends in an ongoing Discord call. One of the three friends has their camera on and is streaming Fortnite Battle Royale for the other two to enjoy."
           />

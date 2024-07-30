@@ -125,7 +125,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65ce55fc7a104bbdcf043417_Untitled%20(1).png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65ce55fc7a104bbdcf043417_Untitled%20(1).png"
             loading="lazy"
             alt=""
           />

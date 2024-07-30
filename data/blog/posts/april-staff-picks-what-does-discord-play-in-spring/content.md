@@ -50,7 +50,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301c84a70e868c8f8874df_W_cPFdJQrBQrP8AQQkV8Eh2CKb6GH3i4oK0nYJGmWwmL_9irOpFrhCTcmvjUxe09h7q0hbomZut2iH6AqBFBAV1Wm00nV3EvLs47X_voRMKVoLmk4DqJ73ZwSdJf2-te-t-1-noNyEMrG08KZI4HCz4.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66301c84a70e868c8f8874df_W_cPFdJQrBQrP8AQQkV8Eh2CKb6GH3i4oK0nYJGmWwmL_9irOpFrhCTcmvjUxe09h7q0hbomZut2iH6AqBFBAV1Wm00nV3EvLs47X_voRMKVoLmk4DqJ73ZwSdJf2-te-t-1-noNyEMrG08KZI4HCz4.png"
             loading="lazy"
             alt="A stylized nameplate that says “Alex.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate.‍"
           />
@@ -81,7 +81,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6630159c9589176cb2aebc70_eOzSzaPkkfhGxV8kDp0hbllfebxZMk4Wu9YK7GRq2ESRriRaf6D3VjtFFwKwA-etd0TVXNYzA869mzCg4wWzeZidl3WcPVGtoKEWxZUELWwmA6B3RTmD7cSlmr4keH4a9hb2JI82f93uI88O6cGlJ_A.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6630159c9589176cb2aebc70_eOzSzaPkkfhGxV8kDp0hbllfebxZMk4Wu9YK7GRq2ESRriRaf6D3VjtFFwKwA-etd0TVXNYzA869mzCg4wWzeZidl3WcPVGtoKEWxZUELWwmA6B3RTmD7cSlmr4keH4a9hb2JI82f93uI88O6cGlJ_A.png"
             loading="lazy"
             alt="A screenshot from Crypt of the Necrodancer"
           />
@@ -146,7 +146,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301cbdf7c429e911c33959_7U097cYsdB7Cy-Ix0RVvydG4-r-VGB5e7MPoKMCHjtc4qIW5xdtXsy3SUOVxuokd_tR-o9BAb-eMW81JmP_JBLjmGNY4c9chlGy2XTPiTnpWAsOnMT9wvanT6lR7zs5aBEBvavollDsr3a_s9m37nLQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66301cbdf7c429e911c33959_7U097cYsdB7Cy-Ix0RVvydG4-r-VGB5e7MPoKMCHjtc4qIW5xdtXsy3SUOVxuokd_tR-o9BAb-eMW81JmP_JBLjmGNY4c9chlGy2XTPiTnpWAsOnMT9wvanT6lR7zs5aBEBvavollDsr3a_s9m37nLQ.png"
             loading="lazy"
             alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -171,7 +171,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663015cb8d87410f988c92ca_0rxiXfuyU2gXau5BntNFjkH4TucF3HEL-2qnbuEHNrkHkEY4W3mbXX_VxFOeXNZEQRhREPPGu1KyLvsq4MZelnQ4F4o32fpP2Cg8fYr1ub90L-G6gj9v-ABFBzYWWJPGXGNV8U7E_oogHQN_tFmTBtI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/663015cb8d87410f988c92ca_0rxiXfuyU2gXau5BntNFjkH4TucF3HEL-2qnbuEHNrkHkEY4W3mbXX_VxFOeXNZEQRhREPPGu1KyLvsq4MZelnQ4F4o32fpP2Cg8fYr1ub90L-G6gj9v-ABFBzYWWJPGXGNV8U7E_oogHQN_tFmTBtI.png"
             loading="lazy"
             alt="A screenshot from Tabletop Simulator."
           />
@@ -230,7 +230,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301d59d0c1545ed838df33_2bIk_7eKIivFwu-CUg6v83wx3sKAiQybWQaKKsQOIk0TR52rjcpr9L7WMm0Mb-8HsZtvSPNx41WjJeMc4J_D6xox8EBCJZFVrAGyGq2Ha5AZH7RYVq1kBKZDrgVqPmdqUHD4AvAD9BeNbdFlKHGXAuA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66301d59d0c1545ed838df33_2bIk_7eKIivFwu-CUg6v83wx3sKAiQybWQaKKsQOIk0TR52rjcpr9L7WMm0Mb-8HsZtvSPNx41WjJeMc4J_D6xox8EBCJZFVrAGyGq2Ha5AZH7RYVq1kBKZDrgVqPmdqUHD4AvAD9BeNbdFlKHGXAuA.png"
             loading="lazy"
             alt="A stylized nameplate that says “Matt.”"
           />
@@ -255,7 +255,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663016db015c3fee015d0559_pBfeQsbA1VxzwJhHCT1Y-hSIXRpE_7JK8ADe-X630YxSczWzSpf02qdKtqzVLCZoANLYILn_XyIjYzBSum_Tn6tHlJyooNIqCOcFCCPm32GzeZXRh9xRpEIITiETSGkUzX1f8zY1nFJccM8ZPfjXdSc.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/663016db015c3fee015d0559_pBfeQsbA1VxzwJhHCT1Y-hSIXRpE_7JK8ADe-X630YxSczWzSpf02qdKtqzVLCZoANLYILn_XyIjYzBSum_Tn6tHlJyooNIqCOcFCCPm32GzeZXRh9xRpEIITiETSGkUzX1f8zY1nFJccM8ZPfjXdSc.png"
             loading="lazy"
             alt="A screenshot from Like a Dragon: Infinite Wealth."
           />
@@ -313,7 +313,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66301d93fd007aef87a1a5e4_gpwHS3tow7ITUkCEU-2N1Tl2QGSKXVGK6tCrmt7pPQA9XR7ieUxCqwZx_Pvy_357IXgiTN7GXFi018XYiMaKNm2JEZewPi45WQAvVQsPHphvGHLonBwUi0ZZe2IqsA7HsvCgWfjzwb9Voqmg4mzD2gU.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66301d93fd007aef87a1a5e4_gpwHS3tow7ITUkCEU-2N1Tl2QGSKXVGK6tCrmt7pPQA9XR7ieUxCqwZx_Pvy_357IXgiTN7GXFi018XYiMaKNm2JEZewPi45WQAvVQsPHphvGHLonBwUi0ZZe2IqsA7HsvCgWfjzwb9Voqmg4mzD2gU.png"
             loading="lazy"
             alt="“Cody.”&nbsp;‍"
           />
@@ -345,7 +345,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/663017dfab658da72f90bbb1_iZaJl0I7NGNAGv0hTHOXwIoSAy0WwzFPV7mwSTetH5P32SiBpPZR_5JEp3sBcZkqjvk7ap19xBCtoUVX-5vnVOH5mLzUrcJiZ_3DajJ32evJops5FtoEcj4Ks-rzCemg-acAJIwVpk2P6Og9lyfWfIg.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/663017dfab658da72f90bbb1_iZaJl0I7NGNAGv0hTHOXwIoSAy0WwzFPV7mwSTetH5P32SiBpPZR_5JEp3sBcZkqjvk7ap19xBCtoUVX-5vnVOH5mLzUrcJiZ_3DajJ32evJops5FtoEcj4Ks-rzCemg-acAJIwVpk2P6Og9lyfWfIg.png"
             loading="lazy"
             alt=""
           />

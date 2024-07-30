@@ -60,7 +60,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/666cb6627d327f1342f7f6e5_AD_4nXcCvuUZl-oPPxB43BIjdsJHhl06Hk5-tUhAegozAuf66Qo4fkZCb7gxejxvb_FXDpV9bqXUg_gWL4INzQyRq4UxQHIvZOoFJuLbQSkqcX5ZftBgGpeVqBLY66B4vfB0Quw8tATAjyJVISRyN7RFPGk_saPQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/666cb6627d327f1342f7f6e5_AD_4nXcCvuUZl-oPPxB43BIjdsJHhl06Hk5-tUhAegozAuf66Qo4fkZCb7gxejxvb_FXDpV9bqXUg_gWL4INzQyRq4UxQHIvZOoFJuLbQSkqcX5ZftBgGpeVqBLY66B4vfB0Quw8tATAjyJVISRyN7RFPGk_saPQ.png"
             loading="lazy"
             alt="The “Share Nitro with Friends” menu within the Nitro tab."
           />
@@ -110,7 +110,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/666cbad6573395c1d2878ad5_AD_4nXcJyVAmg6mzjLDnHUpZQY4IV60t6pSB_M4MNVPyvHPm1hdnCJnvRtdfZE1EGW9JmXgU4vnZezIizRmOU55E9UL2_AqizVr9eq7KdgXn8XHsrtpRigV6s2Z7kqR4b1CppwrtxOhdTYCxYWQK1ahTXjnrN-s_.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/666cbad6573395c1d2878ad5_AD_4nXcJyVAmg6mzjLDnHUpZQY4IV60t6pSB_M4MNVPyvHPm1hdnCJnvRtdfZE1EGW9JmXgU4vnZezIizRmOU55E9UL2_AqizVr9eq7KdgXn8XHsrtpRigV6s2Z7kqR4b1CppwrtxOhdTYCxYWQK1ahTXjnrN-s_.png"
             loading="lazy"
             alt="A preview of the four new App Icons."
           />
@@ -133,7 +133,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/666cbad7e8bf7a9df3b07c49_AD_4nXcR2hjyPIC2buyaMKKpnXb4Yvutpi_dl7R8SNXfaG9vIR5rXiSGOtHI1lteybUuAuj6DErApNk_y4OOYJp83NdVdzccY154QPjkcbVINqtwqwERL_leb12ghdXMx5IuY3t5njOTBdBflRqYiIVHu0lV_JvK.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/666cbad7e8bf7a9df3b07c49_AD_4nXcR2hjyPIC2buyaMKKpnXb4Yvutpi_dl7R8SNXfaG9vIR5rXiSGOtHI1lteybUuAuj6DErApNk_y4OOYJp83NdVdzccY154QPjkcbVINqtwqwERL_leb12ghdXMx5IuY3t5njOTBdBflRqYiIVHu0lV_JvK.png"
             loading="lazy"
             alt="A preview of the new “Blurple Twilight” color Theme on the desktop Discord client."
           />
@@ -173,7 +173,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/666cbb1af146edc5144e518f_AD_4nXcj1ia062d3ftDUsqWvFVWEZqxUUjVmDvbYKl6ujSW1mabod10G10HtDWmBJJ_BdJcy1fp6zUDTSBQTwmoQIYbt5HN_Gf8GLBQih_90N8n-UhA-GsVAi1tL3nGO3v6hE0IiRPLnBgR6rK-kafruiRjwbauG.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/666cbb1af146edc5144e518f_AD_4nXcj1ia062d3ftDUsqWvFVWEZqxUUjVmDvbYKl6ujSW1mabod10G10HtDWmBJJ_BdJcy1fp6zUDTSBQTwmoQIYbt5HN_Gf8GLBQih_90N8n-UhA-GsVAi1tL3nGO3v6hE0IiRPLnBgR6rK-kafruiRjwbauG.png"
             loading="lazy"
             alt="A demonstration of a user with three unique Server Profiles, each with different Shop items equipped."
           />

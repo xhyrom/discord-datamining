@@ -52,7 +52,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65e90a9668c90690be12ad3f_QtK1sBMpK2Gry3ShRm1SiukXQnwC8CZBY8I83RGHrc62g550Zlj9JuhTRPJ3FBnW2avIALJw3XgoqlNrr8n--sbfbkQJqDmCi9WhBzekbHpp4lgRkvMdDUfFhb-rdS-__vSHEIVfmgJxSNaHMFfVykQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65e90a9668c90690be12ad3f_QtK1sBMpK2Gry3ShRm1SiukXQnwC8CZBY8I83RGHrc62g550Zlj9JuhTRPJ3FBnW2avIALJw3XgoqlNrr8n--sbfbkQJqDmCi9WhBzekbHpp4lgRkvMdDUfFhb-rdS-__vSHEIVfmgJxSNaHMFfVykQ.png"
             loading="lazy"
             alt="An example of a Quest appearing within a user’s Gift Inventory page on the desktop app."
           />
@@ -91,7 +91,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65e90c1069a09ffe46b71584_Shop%20Preview.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65e90c1069a09ffe46b71584_Shop%20Preview.png"
             loading="lazy"
             alt="The Discord Shop, showcasing the Fantasy collection of Avatar Decorations."
           />

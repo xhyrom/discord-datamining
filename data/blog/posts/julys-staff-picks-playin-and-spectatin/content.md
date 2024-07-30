@@ -33,7 +33,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a908fa8c365e8c2c017516_AD_4nXe1AsTqWMJ-f-SZXZTpnJF9d5UQm3i_a_v9P3s3vmRI9mruDuNHdUvL1EWfdih4_2njQ2Fv5Lx51WAqcl9WepB2hPKEK64qF_yoTiiLAHdRRE7KTPBHQYAB9JDm9o5OuMBM2uQfHqwNHHibvajj10uon60W.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a908fa8c365e8c2c017516_AD_4nXe1AsTqWMJ-f-SZXZTpnJF9d5UQm3i_a_v9P3s3vmRI9mruDuNHdUvL1EWfdih4_2njQ2Fv5Lx51WAqcl9WepB2hPKEK64qF_yoTiiLAHdRRE7KTPBHQYAB9JDm9o5OuMBM2uQfHqwNHHibvajj10uon60W.png"
             loading="lazy"
             alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -63,7 +63,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a908fabbfc506201505c91_AD_4nXf9Mq0XBmlmJMKNaqtAZ3ju1SJ2LENThF8GYBM6v6Js5B17kv0bVo3SrgWs-fZDo7n_mzNxzZ87R8t3OKGIT2tBoU_MQt2Ewo6mhwR47jFydDcxK0fofzmcDfaHcvbOGU15gOupMEy6aXetGSxVPwis981W.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a908fabbfc506201505c91_AD_4nXf9Mq0XBmlmJMKNaqtAZ3ju1SJ2LENThF8GYBM6v6Js5B17kv0bVo3SrgWs-fZDo7n_mzNxzZ87R8t3OKGIT2tBoU_MQt2Ewo6mhwR47jFydDcxK0fofzmcDfaHcvbOGU15gOupMEy6aXetGSxVPwis981W.png"
             loading="lazy"
             alt="A screenshot from the game “New Pokémon Snap.”"
           />
@@ -107,7 +107,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a90a07c118a26649a5c769_AD_4nXeLCwiL-FchsMqYEc_kgzdx4jye_XeEGymKKChgpzm2WwiXko_DoqZUNWcMh-V0h3-uf-uZN7pnQKKIVNCKYGhOb3Uy-qBSeEKnzYcgir8jH8DDHVO0pogCZC2RXcT830Mp6OKXjlaU8bFSdDme1kKmQqmm.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a90a07c118a26649a5c769_AD_4nXeLCwiL-FchsMqYEc_kgzdx4jye_XeEGymKKChgpzm2WwiXko_DoqZUNWcMh-V0h3-uf-uZN7pnQKKIVNCKYGhOb3Uy-qBSeEKnzYcgir8jH8DDHVO0pogCZC2RXcT830Mp6OKXjlaU8bFSdDme1kKmQqmm.png"
             loading="lazy"
             alt="A stylized nameplate that says “Cody.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -140,7 +140,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a90a08658a31339d17b3e6_AD_4nXfzukrFj9kXaZn8fXhtY9plOewbsxELLdwgm5VooHMrjjUZSEPcPWeMdltpS0gENieML0qfxvH5y8BqaydP9jHUcbx7GvHYBpyFSbmyTX-oRo_tJiIzql_mrkKLKViexdiP7yAveN4ogjaLXiebKlIyX5Q.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a90a08658a31339d17b3e6_AD_4nXfzukrFj9kXaZn8fXhtY9plOewbsxELLdwgm5VooHMrjjUZSEPcPWeMdltpS0gENieML0qfxvH5y8BqaydP9jHUcbx7GvHYBpyFSbmyTX-oRo_tJiIzql_mrkKLKViexdiP7yAveN4ogjaLXiebKlIyX5Q.png"
             loading="lazy"
             alt="A screenshot from the game “Marvel Snap.”"
           />
@@ -206,7 +206,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a90a58ac7e7d0b3b447812_AD_4nXfvoy7OjV-Opq7tHhTG8shmo9EEQUqPUOVQ_VIt2HitjsKD6bd1rAUffamajX-9fpfmTQ3V_RJ_rYdSTWSeaFxaJrKKV-El0cCCIp1mzFsscTjxpx6IkAKxiofQdhkt8ZKSPwLT_dA2tsU4lLrZ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a90a58ac7e7d0b3b447812_AD_4nXfvoy7OjV-Opq7tHhTG8shmo9EEQUqPUOVQ_VIt2HitjsKD6bd1rAUffamajX-9fpfmTQ3V_RJ_rYdSTWSeaFxaJrKKV-El0cCCIp1mzFsscTjxpx6IkAKxiofQdhkt8ZKSPwLT_dA2tsU4lLrZ.png"
             loading="lazy"
             alt="A stylized nameplate that says “Matt.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -237,7 +237,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a90a580401acfc952b50c3_AD_4nXdXkkncNb1eeurDZ6q1efA0etNBM6xJ7giVJefWt-VkSM2gXgGsqsW73zxgVGm9ArnoDqYDdIsvfiViru6TVi6DiJ6zU1JAu4GSMiwfHY78ggxkJx-m5_33pY9PLx2Mh00r02nq0gZKI89FU9LtOaHrUEr7.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a90a580401acfc952b50c3_AD_4nXdXkkncNb1eeurDZ6q1efA0etNBM6xJ7giVJefWt-VkSM2gXgGsqsW73zxgVGm9ArnoDqYDdIsvfiViru6TVi6DiJ6zU1JAu4GSMiwfHY78ggxkJx-m5_33pY9PLx2Mh00r02nq0gZKI89FU9LtOaHrUEr7.png"
             loading="lazy"
             alt="A screenshot from the game “Pacific Drive.”"
           />
@@ -277,7 +277,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a90bf4f0e384ac6c8715e8_AD_4nXejXhB61iboMcwHwQpnxC2Nf1NovHwwFlxYU1wMAORYnMzJbrCsP2M66LNcMKWBrYJBwxXNL-C_jOkAoXHZsgO2LmiQue5rtFP3dDrdrDmscQo5HEXoGgQMiok3t-wEtCzhJ1vibXnJyt84CYjB-dZlAgTd.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a90bf4f0e384ac6c8715e8_AD_4nXejXhB61iboMcwHwQpnxC2Nf1NovHwwFlxYU1wMAORYnMzJbrCsP2M66LNcMKWBrYJBwxXNL-C_jOkAoXHZsgO2LmiQue5rtFP3dDrdrDmscQo5HEXoGgQMiok3t-wEtCzhJ1vibXnJyt84CYjB-dZlAgTd.png"
             loading="lazy"
             alt="A stylized nameplate that says “Mark.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -307,7 +307,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a90bf66485d317eea59e40_AD_4nXdhAesd2LKF-LO_F65DhWgFb3VIMMS5RCS8ex2Wn7yii_tPfV3Z31c-XR98ndMf2GdlIBFtjVoHsP4JJrLbE3bE7Fy2INTqSBVwUrt5VGjgVBWHUvVEjx7WZsATPI2UYBwJ_z4Yh-NJUiOONgcvKszxBDk.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a90bf66485d317eea59e40_AD_4nXdhAesd2LKF-LO_F65DhWgFb3VIMMS5RCS8ex2Wn7yii_tPfV3Z31c-XR98ndMf2GdlIBFtjVoHsP4JJrLbE3bE7Fy2INTqSBVwUrt5VGjgVBWHUvVEjx7WZsATPI2UYBwJ_z4Yh-NJUiOONgcvKszxBDk.png"
             loading="lazy"
             alt="A screenshot from the game “The First Descendant.”"
           />

@@ -39,7 +39,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5712c582768920c5029_zR5P93d597K7P6gyNB8lSSyhjZmr8AzPi4UDVOHb1UolqrOwM-TFZmDoVU1ow8-s2_v-7ouTpwqybXyzlAHxIdSnYopoNq5IveTiBWDJ3nwlng09pcfU_Y6kwLZ23tmk4WSzta2j6Bk_zeUIgH66Yl8.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660da5712c582768920c5029_zR5P93d597K7P6gyNB8lSSyhjZmr8AzPi4UDVOHb1UolqrOwM-TFZmDoVU1ow8-s2_v-7ouTpwqybXyzlAHxIdSnYopoNq5IveTiBWDJ3nwlng09pcfU_Y6kwLZ23tmk4WSzta2j6Bk_zeUIgH66Yl8.jpeg"
             loading="lazy"
             alt="A stylized nameplate that says “Matt.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -85,7 +85,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da58391023d0279338bb4_wH27S71-QN2UzKZ94ZvbDfXxdMgTupKXJlDjNt1AhCY7kSe3ywk7tj43fN3UkBnR5nvcKeDKh3Z5EhfVN5GYu2SRPUQAWXOD0G2YFdM-EWjr04wTidOSb444GLPAnwtyr04v9xN4JZBi22A82mOc174.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660da58391023d0279338bb4_wH27S71-QN2UzKZ94ZvbDfXxdMgTupKXJlDjNt1AhCY7kSe3ywk7tj43fN3UkBnR5nvcKeDKh3Z5EhfVN5GYu2SRPUQAWXOD0G2YFdM-EWjr04wTidOSb444GLPAnwtyr04v9xN4JZBi22A82mOc174.jpeg"
             loading="lazy"
             alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -130,7 +130,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5ade5d78688378c8367_dLxzwfwq-Lcw8qbYN1vVh-6sZnJdYwZek5h1KZVTmbUG_8bhB4pduVsR0jy4J8lqTei2PYt8UU-vJ4tyCW8kk4IdkYFiD2kidO5iyguYdDhB64Ms6Ffybsa4-gKWsPGXNvNhxvvHkP6FSFytytNQcIs.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660da5ade5d78688378c8367_dLxzwfwq-Lcw8qbYN1vVh-6sZnJdYwZek5h1KZVTmbUG_8bhB4pduVsR0jy4J8lqTei2PYt8UU-vJ4tyCW8kk4IdkYFiD2kidO5iyguYdDhB64Ms6Ffybsa4-gKWsPGXNvNhxvvHkP6FSFytytNQcIs.jpeg"
             loading="lazy"
             alt="A stylized nameplate that says “Jonathan.”"
           />
@@ -181,7 +181,7 @@
       <figure class="w-richtext-align-fullwidth w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5c5ee40e0f12975ced9_CX73giuK_eGBqp6ACsfvEw4z1fyWPTnWMOwxu3Zteg_4oalGagFG-KWclVES1bhLOz9qV3ZoK8F5pc4rHDpt1eZX1wVeFRTVVyEFvmMP38h4rUwMJWiUJ26mUN6J6BwvQQqUkIo3bs3CNx5pNF7jp_U.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660da5c5ee40e0f12975ced9_CX73giuK_eGBqp6ACsfvEw4z1fyWPTnWMOwxu3Zteg_4oalGagFG-KWclVES1bhLOz9qV3ZoK8F5pc4rHDpt1eZX1wVeFRTVVyEFvmMP38h4rUwMJWiUJ26mUN6J6BwvQQqUkIo3bs3CNx5pNF7jp_U.jpeg"
             loading="lazy"
             alt="A stylized nameplate that says “Alex.”"
           />
@@ -259,7 +259,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5d26ec07d97bf9d0cf5_HbR-n-QrUTQJ6dW9_oOyKLMcf1EClKg1Udl6xwm0ynGS9iier5Z7e36zrxbSUXnMVbviBIE4nfdRIpFkhcHJpuberWIYeXyzj25Iasqvee7j5yOlR6Nhu720odp3_KKdjoAQZIx1Qb2e_FLWaoIAe3s.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660da5d26ec07d97bf9d0cf5_HbR-n-QrUTQJ6dW9_oOyKLMcf1EClKg1Udl6xwm0ynGS9iier5Z7e36zrxbSUXnMVbviBIE4nfdRIpFkhcHJpuberWIYeXyzj25Iasqvee7j5yOlR6Nhu720odp3_KKdjoAQZIx1Qb2e_FLWaoIAe3s.jpeg"
             loading="lazy"
             alt="A stylized nameplate that says “Tracie.”"
           />
@@ -317,7 +317,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da5fa48b6653d4a193fa4_StaffPicks_BlogNamePlates_Cody.jpg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660da5fa48b6653d4a193fa4_StaffPicks_BlogNamePlates_Cody.jpg"
             loading="lazy"
             alt="A stylized nameplate that says “Cody.”"
           />
@@ -372,7 +372,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da611a51f5b00f33c42d3_StaffPicks_BlogNamePlates_Lil.jpg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660da611a51f5b00f33c42d3_StaffPicks_BlogNamePlates_Lil.jpg"
             loading="lazy"
             alt="A stylized nameplate that says “Lil.”"
           />
@@ -419,7 +419,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/660da62aa7d4e43b67109772_StaffPicks_BlogNamePlates_Mark.jpg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/660da62aa7d4e43b67109772_StaffPicks_BlogNamePlates_Mark.jpg"
             loading="lazy"
             alt="A stylized nameplate that says “Mark.”"
           />

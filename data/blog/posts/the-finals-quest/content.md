@@ -61,7 +61,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66074688e5f307e192d181da_Accepting%20The%20Quest.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66074688e5f307e192d181da_Accepting%20The%20Quest.gif"
             loading="lazy"
             alt="A GIF demonstrating how to accept a Quest in User Settings > Gift Inventory"
           />
@@ -88,7 +88,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6607478eba138a2a37257d37_mhwyG5pTBwwMc_cSdrTFHmvNOmhWc6OFAkqAs4cOwHp0munniEisAtu8W7Cc9PRx5-RUZzeJ1V-nqNgOH4-0NnbAV_akoKpVxqlJ-29tfsNsc8hvXimt_KMR0HfjKRY0f8zygUuZXZaUmxjbq2eR93o.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6607478eba138a2a37257d37_mhwyG5pTBwwMc_cSdrTFHmvNOmhWc6OFAkqAs4cOwHp0munniEisAtu8W7Cc9PRx5-RUZzeJ1V-nqNgOH4-0NnbAV_akoKpVxqlJ-29tfsNsc8hvXimt_KMR0HfjKRY0f8zygUuZXZaUmxjbq2eR93o.png"
             loading="lazy"
             alt="A user is being rewarded the Skill Issue Set for THE FINALS from completing a Discord Quest"
           />
@@ -121,7 +121,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
             loading="lazy"
             alt=""
           />

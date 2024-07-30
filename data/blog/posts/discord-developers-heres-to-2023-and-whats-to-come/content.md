@@ -67,7 +67,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png"
             loading="lazy"
             alt=""
           />
@@ -122,7 +122,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/657b9a0a8844db26de8bd02e_yLSwTf_GXlRC10wJM1QTtp5Xdo9iFoH4ONuC6LUusWt3uSH38R9evQU_6ne153t1I8NCxEA04707jBY7rrotlKndgbb5hBQcgLh5TMcJ52CftF4uqGWG1Krp_l2-GcPsyqJgvrH7Z-IOZirpTToWxLo.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/657b9a0a8844db26de8bd02e_yLSwTf_GXlRC10wJM1QTtp5Xdo9iFoH4ONuC6LUusWt3uSH38R9evQU_6ne153t1I8NCxEA04707jBY7rrotlKndgbb5hBQcgLh5TMcJ52CftF4uqGWG1Krp_l2-GcPsyqJgvrH7Z-IOZirpTToWxLo.png"
             loading="lazy"
             alt="An example of a user going through the purchase flow to subscribe to “Plant Pal Plus.”"
           />
@@ -219,7 +219,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png"
             loading="lazy"
             alt=""
           />

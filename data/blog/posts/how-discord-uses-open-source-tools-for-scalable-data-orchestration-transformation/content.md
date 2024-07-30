@@ -226,7 +226,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6690335426b54c7d266614cc_AD_4nXdBaYzrg8FSibu1kVK2-zEQ9ozPQRvedSAhvdYIDHqzZSEpT0siqsycq2REOPjKnXluKxOEu0VAWpgEEdbHdff6tpGdJtzj1pHc2uz3_ImJ-AfzeaA-4rGXDZoz2EFAzAI0IgBq1jgMugxjo0y9OZZ7z0bw.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6690335426b54c7d266614cc_AD_4nXdBaYzrg8FSibu1kVK2-zEQ9ozPQRvedSAhvdYIDHqzZSEpT0siqsycq2REOPjKnXluKxOEu0VAWpgEEdbHdff6tpGdJtzj1pHc2uz3_ImJ-AfzeaA-4rGXDZoz2EFAzAI0IgBq1jgMugxjo0y9OZZ7z0bw.png"
             loading="lazy"
             alt="A data lineage diagram illustrating how multiple daily tables are derived from a single hourly source. The central 'staging_hourly_table' feeds into three 'int_daily_table' nodes, each representing a daily aggregation. This structure highlights how higher-frequency (hourly) data can be scheduled with lower-frequency (daily) tables using declarative automation."
           />
@@ -318,7 +318,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/669033b68467f79d18b0989a_AD_4nXcMeXNg4AAf6SRZ0zW3H7mmaAo28BtyYhCGFHECLYECLnUyd-5CGrRShi0lD_pWYmasfvFOiDtOS_RZPNf7zz6kvpfmQnvUjepcZ_z4hlkQWLtP_YGHqnqdUyHl6XBx5QCUiGnVbTNq4lyrmVqpNeuaXwfb.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/669033b68467f79d18b0989a_AD_4nXcMeXNg4AAf6SRZ0zW3H7mmaAo28BtyYhCGFHECLYECLnUyd-5CGrRShi0lD_pWYmasfvFOiDtOS_RZPNf7zz6kvpfmQnvUjepcZ_z4hlkQWLtP_YGHqnqdUyHl6XBx5QCUiGnVbTNq4lyrmVqpNeuaXwfb.png"
             loading="lazy"
             alt="A table titled 'Evaluation metadata' displaying two rows of dependency information. The first row shows 'waiting_on_ancestor_1' corresponding to 'core / dim_users_growth_accounting'. The second row shows 'waiting_on_ancestor_2' corresponding to 'core / dim_users_hfu'. This metadata indicates that an asset's materialization is pending completion of these two ancestor assets in the Dagster pipeline."
           />
@@ -343,7 +343,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/669033b6f8365ff56558428f_AD_4nXfoznVRlESqgY8sujahZ436AapKE3Id-TnbET7QB5B5kuXF81MKn1VhMsS_XmzZR4B6IpRucPADFV0suVHAnfRR0y7BHRZ42xVNsVmoRXdjkiqimSrC_80llVIIVfijbYJMhimy-1xDR4-1Awt7efPFgIDN.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/669033b6f8365ff56558428f_AD_4nXfoznVRlESqgY8sujahZ436AapKE3Id-TnbET7QB5B5kuXF81MKn1VhMsS_XmzZR4B6IpRucPADFV0suVHAnfRR0y7BHRZ42xVNsVmoRXdjkiqimSrC_80llVIIVfijbYJMhimy-1xDR4-1Awt7efPFgIDN.png"
             loading="lazy"
             alt="A screenshot of Dagster's data lineage view, showcasing interconnected data assets. The view displays four tables: table_a, table_b, table_c, and table_d, with arrows indicating dependencies. Tables a, b, and c are marked as 'Materialized' with timestamps, while table_d is currently 'Materializing'. The image highlights Dagster's ability to visualize data freshness and dependencies in a data pipeline."
           />
@@ -437,7 +437,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66903435291d41b500844fbd_AD_4nXejUSE5GJjDd5T8cTXw5dkF1J8r3ca6ENQhnLGrMWy30Sp6pOLCqzlP1oskvl6pT4YZy9wpTU10WIeZilNG7pLIl20ftAelg6oY43qGhcdC7xAUXUZFYUI94gw6dFRElUAlEj0wh3nrqQXbPq57pOWhgh1m.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66903435291d41b500844fbd_AD_4nXejUSE5GJjDd5T8cTXw5dkF1J8r3ca6ENQhnLGrMWy30Sp6pOLCqzlP1oskvl6pT4YZy9wpTU10WIeZilNG7pLIl20ftAelg6oY43qGhcdC7xAUXUZFYUI94gw6dFRElUAlEj0wh3nrqQXbPq57pOWhgh1m.png"
             loading="lazy"
             alt="A timeline visualization from the Dagster UI 'overview' page, showing multiple scheduled runs across a deployment. The chart uses color-coded bars to represent different run statuses and durations. Predominantly green bars indicate successful runs, with occasional red sections for failures. Blue bars represent ongoing or queued runs. The timeline is densely populated, suggesting frequent and regular job executions."
           />

@@ -184,7 +184,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8b592fd5884ecd65a8_6p5cvv2mn1XFf6KFQ0JpaLtoruQyuefgpsHXrHjOmkRtpKL3hMsp6iGOZ1phK3EmLXFUlb_FyMt5Pn4ZEl2oN4XfT5g0eptZ0udoudjsjx91ft80lcbvDFdCB7v0yb1Q8J8T-LdWobTS34QzuM9lcG4.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8b592fd5884ecd65a8_6p5cvv2mn1XFf6KFQ0JpaLtoruQyuefgpsHXrHjOmkRtpKL3hMsp6iGOZ1phK3EmLXFUlb_FyMt5Pn4ZEl2oN4XfT5g0eptZ0udoudjsjx91ft80lcbvDFdCB7v0yb1Q8J8T-LdWobTS34QzuM9lcG4.png"
             loading="lazy"
             alt='A collage of the seven judges for App Pitches 2024. The text reads: "Say hello to the official judges for App Pitches 2024!"'
           />
@@ -300,7 +300,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
             loading="lazy"
             alt=""
           />

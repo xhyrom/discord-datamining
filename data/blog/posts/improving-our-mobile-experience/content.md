@@ -121,7 +121,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60420a03b885cb7c9d21_hVRj12rlKlDP3WQczGGKNcLj-6nlrYUY61a7nkeFgAvv3VGyK2Y8kGMgFrSMnajyXNOkvzqhsrEIvaP-d9BhrhGpCtvolytN3oseO5DPx1xuQz6xWhVlfBiCWsU0EkParNDUWUdf1UbHYWDgnQu8tsc.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60420a03b885cb7c9d21_hVRj12rlKlDP3WQczGGKNcLj-6nlrYUY61a7nkeFgAvv3VGyK2Y8kGMgFrSMnajyXNOkvzqhsrEIvaP-d9BhrhGpCtvolytN3oseO5DPx1xuQz6xWhVlfBiCWsU0EkParNDUWUdf1UbHYWDgnQu8tsc.png"
             loading="lazy"
             alt="A preview of the new Servers tab."
           />
@@ -150,7 +150,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6042c6f89cc308e796a4_bxhpCx1oDftnfdthYVhDHVDmv9Bf6vPTPE-PKnw5YgwvzhTG-YwfEcdkolavbirC3k6vqKld7M1s6ZQi4YH2d0KCYZkJvEItHcv4DMq8Pu01yzFxvyXCPFYg_GbEQardpQuBJrpgZRQVT2xX_k73FYo.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a6042c6f89cc308e796a4_bxhpCx1oDftnfdthYVhDHVDmv9Bf6vPTPE-PKnw5YgwvzhTG-YwfEcdkolavbirC3k6vqKld7M1s6ZQi4YH2d0KCYZkJvEItHcv4DMq8Pu01yzFxvyXCPFYg_GbEQardpQuBJrpgZRQVT2xX_k73FYo.png"
             loading="lazy"
             alt="A preview of the new Servers tab."
           />
@@ -171,7 +171,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60423734ba889bff349b_LM-KQ39LJXULU8YoJy5oJXNAsvS1b1L7QRUa26JGoK4DBeK5qIsE2jQ_eta83PZahC00RRAWU_QsZVdisFvFCLZWbJ_XIG2njbsL19RIjsKnUYtWM6dq23CAW2ahjNWIIgfzaxvDczLSYDEaFTbyisw.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60423734ba889bff349b_LM-KQ39LJXULU8YoJy5oJXNAsvS1b1L7QRUa26JGoK4DBeK5qIsE2jQ_eta83PZahC00RRAWU_QsZVdisFvFCLZWbJ_XIG2njbsL19RIjsKnUYtWM6dq23CAW2ahjNWIIgfzaxvDczLSYDEaFTbyisw.png"
             loading="lazy"
             alt="A preview of the new Search functionality."
           />
@@ -190,7 +190,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60429a225c292d078113_-9arQmJld2wyjT5rYrwDuMwKcjCh1E0PcbqydoR9qLTnv-COE4nA8yujYk_9Xkq6qRqOYjZepo6cXJJ1TosYltI2a-a6yYg3Siz0ySR9WLcPhpxX2uzE8sza3beVM-p4JsLQNebckPvkjC79vOOXiGI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60429a225c292d078113_-9arQmJld2wyjT5rYrwDuMwKcjCh1E0PcbqydoR9qLTnv-COE4nA8yujYk_9Xkq6qRqOYjZepo6cXJJ1TosYltI2a-a6yYg3Siz0ySR9WLcPhpxX2uzE8sza3beVM-p4JsLQNebckPvkjC79vOOXiGI.png"
             loading="lazy"
             alt="A preview of the new Group DM tab."
           />
@@ -208,7 +208,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60423918e1deeada2d49_bqcEb3HVPENwtA_Lxv3B_oV0P7ZTV8NyR6HB41ppO2IhBI-fuPv0vez5-aJEuo7vo_rF4MujG9NfofC1csXHHrxA5wdRIWlabBs8FdnoTn02mBnos_W3Ll7-eNoWwXxfK_uv1FPI25uwWpvsW7SogH8.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60423918e1deeada2d49_bqcEb3HVPENwtA_Lxv3B_oV0P7ZTV8NyR6HB41ppO2IhBI-fuPv0vez5-aJEuo7vo_rF4MujG9NfofC1csXHHrxA5wdRIWlabBs8FdnoTn02mBnos_W3Ll7-eNoWwXxfK_uv1FPI25uwWpvsW7SogH8.png"
             loading="lazy"
             alt="A preview of the new experience when creating a new Group DM."
           />
@@ -231,7 +231,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6042df822be86e1de7bb_dtU0k1yFh1CTBH_6Tsmg0T1i0hWx8D0sppvPfx21Giy_GdfFYavl-fpeV28wq-0TxnGS5C_iiP0ygjwI6GmT4EHETCu6Sg8XNPNJDpwDYV8yNXYblDR8LVi8me_NifkLv-oK0zOXvi0TgBklYnSB80c.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a6042df822be86e1de7bb_dtU0k1yFh1CTBH_6Tsmg0T1i0hWx8D0sppvPfx21Giy_GdfFYavl-fpeV28wq-0TxnGS5C_iiP0ygjwI6GmT4EHETCu6Sg8XNPNJDpwDYV8yNXYblDR8LVi8me_NifkLv-oK0zOXvi0TgBklYnSB80c.png"
             loading="lazy"
             alt="A preview of the new Swipe-to-Reply feature."
           />
@@ -250,7 +250,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6042d5918c11d1d96359_aVslPvmv52v-xcsYM7wGdynd3FHxxRaGe6xM_wtNrCvYGpZaKV3J8peMmsBEXu9cSSJN0Eln0fGBpb9DJwn0OGHgzGBc4NeSBmzkx2cX7avgAhwqx_jlHQxl4lZD6yvlU1Be7c_kci15WgyyvDUE1Yg.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a6042d5918c11d1d96359_aVslPvmv52v-xcsYM7wGdynd3FHxxRaGe6xM_wtNrCvYGpZaKV3J8peMmsBEXu9cSSJN0Eln0fGBpb9DJwn0OGHgzGBc4NeSBmzkx2cX7avgAhwqx_jlHQxl4lZD6yvlU1Be7c_kci15WgyyvDUE1Yg.png"
             loading="lazy"
             alt="A preview of the new Notifications tab."
           />
@@ -287,7 +287,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60438f209f99725e947b_O2MG6ALQmqy9OI5CEZTEIyFCTQmDqidVQM-J6uH9yqrmRk-NhoguoVjthlhiK_EVgZhHuMjYvUXEzETvJGs2nXwJ4G_L67AuV-b1k-VtS80RSXU9bmHOymr42CuEnTRsTZuQkCQfvs87jDJ-YjGSb1I.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60438f209f99725e947b_O2MG6ALQmqy9OI5CEZTEIyFCTQmDqidVQM-J6uH9yqrmRk-NhoguoVjthlhiK_EVgZhHuMjYvUXEzETvJGs2nXwJ4G_L67AuV-b1k-VtS80RSXU9bmHOymr42CuEnTRsTZuQkCQfvs87jDJ-YjGSb1I.png"
             loading="lazy"
             alt="A preview of the new You tab."
           />
@@ -305,7 +305,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60424b9b42a827f6f62b_NwFl7YMLYGKgsNZS40-YL4cikvc6RDldOcL-RK5Pxz-kCCCnBl5FC8TeIxYvsMQHdiEC239hm1hZRX50XoXC9mQvbJK9aZfESKjuAG0IKiaS3KywzN4L88p52_AgOsZTT-3_5y-K9G420Ih4RGkWYgo.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60424b9b42a827f6f62b_NwFl7YMLYGKgsNZS40-YL4cikvc6RDldOcL-RK5Pxz-kCCCnBl5FC8TeIxYvsMQHdiEC239hm1hZRX50XoXC9mQvbJK9aZfESKjuAG0IKiaS3KywzN4L88p52_AgOsZTT-3_5y-K9G420Ih4RGkWYgo.png"
             loading="lazy"
             alt="A preview of the new search functionality in User Settings."
           />
@@ -332,7 +332,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60cf4e8e0d4b3c44bfa0_Fa-DEWmCgbgImdZBxG2mx3TkwAIqFGkzH3s0gItWhRdrYX51JkG25TcrGtg7ecr-z1SlF6XRQlRbCFezsikFK_3mLHldtwIMy1GJKJKigKclpInNdyA2ueLOft_jOmvbUSgwEEuAVMH3MTGyU3CvqqA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60cf4e8e0d4b3c44bfa0_Fa-DEWmCgbgImdZBxG2mx3TkwAIqFGkzH3s0gItWhRdrYX51JkG25TcrGtg7ecr-z1SlF6XRQlRbCFezsikFK_3mLHldtwIMy1GJKJKigKclpInNdyA2ueLOft_jOmvbUSgwEEuAVMH3MTGyU3CvqqA.png"
             loading="lazy"
             alt="A preview of the new Midnight theme."
           />
@@ -366,7 +366,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60dcc6f89cc308e81feb_JXe0YoHOFj6g2jI_b2l6uPebdAeCquJumeoY2TO3LEz_zNCqRCXmMgJiWFl0ffaDBDInWzWEu7Imzfr6il3CrnLHjnD0TsHr_I6h8NFm2rPVEAcwKm63xesv6YNpR4hvr1vXh8fw9oMHrkoimJCIXz0.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60dcc6f89cc308e81feb_JXe0YoHOFj6g2jI_b2l6uPebdAeCquJumeoY2TO3LEz_zNCqRCXmMgJiWFl0ffaDBDInWzWEu7Imzfr6il3CrnLHjnD0TsHr_I6h8NFm2rPVEAcwKm63xesv6YNpR4hvr1vXh8fw9oMHrkoimJCIXz0.png"
             alt="A preview of the new Media uploading experience."
             loading="lazy"
           />
@@ -390,7 +390,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60f12bb7f524b9fcea72_OlSyt3oNWJUrSCj349lqaOOzOBN03XN2E_fmWT8LhC2PttKlHouWhbETOQOrjzzWEP_vXx-BKcFfVYC8_Fwz5M2vzvVm_-BQXTViR_frMAgD2Uk1JDNDGIXbzJpN5lVYUvYlPuYDO8iLuhB3L7S0m-M.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a60f12bb7f524b9fcea72_OlSyt3oNWJUrSCj349lqaOOzOBN03XN2E_fmWT8LhC2PttKlHouWhbETOQOrjzzWEP_vXx-BKcFfVYC8_Fwz5M2vzvVm_-BQXTViR_frMAgD2Uk1JDNDGIXbzJpN5lVYUvYlPuYDO8iLuhB3L7S0m-M.png"
             loading="lazy"
             alt="A preview of the new Voice &amp; Video call experience."
           />
@@ -422,7 +422,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6101dddcec0d0cb174bc_C3YPHpR0qUAxOX_LlGR-SC1V-lh4t8Nh1Y8Tb3PW_tgGFRVRdiMdvTo0iW9N7-EKIlkJkkLrAVu7liPX0tKu-v-YPoi6DxtkC8kwKWmBCttEcbOaFOJZ7vYCse4uF-nvV_TLcoebqweC0tZHGg1E8HY.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/656a6101dddcec0d0cb174bc_C3YPHpR0qUAxOX_LlGR-SC1V-lh4t8Nh1Y8Tb3PW_tgGFRVRdiMdvTo0iW9N7-EKIlkJkkLrAVu7liPX0tKu-v-YPoi6DxtkC8kwKWmBCttEcbOaFOJZ7vYCse4uF-nvV_TLcoebqweC0tZHGg1E8HY.png"
             loading="lazy"
             alt="An illutration of Wumpus running fast, representing the speed of the new Mobile experience."
           />

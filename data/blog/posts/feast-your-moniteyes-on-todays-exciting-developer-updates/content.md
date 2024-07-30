@@ -48,7 +48,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/665a173d99c014096ee5a76d_AD_4nXcOpFr7HCOqS9zVkJ3ahaB2mtGB09wE6SAOrN9R7l4YC6g4hlzcOL5uXL9vpSeMmLkGeZYTigdFFycBD3Zr9hPZdoe4xHEnPd-tbOoT652gLIOvPaTkfQoUhJzgEUiy7FGHMNo4y6lHHkv8TFVnERAqwZmH.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/665a173d99c014096ee5a76d_AD_4nXcOpFr7HCOqS9zVkJ3ahaB2mtGB09wE6SAOrN9R7l4YC6g4hlzcOL5uXL9vpSeMmLkGeZYTigdFFycBD3Zr9hPZdoe4xHEnPd-tbOoT652gLIOvPaTkfQoUhJzgEUiy7FGHMNo4y6lHHkv8TFVnERAqwZmH.png"
             loading="lazy"
             alt=""
           />
@@ -74,7 +74,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66633672410bdb61c5bb164e_blogimg.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66633672410bdb61c5bb164e_blogimg.png"
             loading="lazy"
             alt=""
           />
@@ -112,7 +112,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/665a173d28bee9826464565e_AD_4nXfgE06QNhNOgjpYpH3cOVz74EV0ZPN5HIQhBG3D0cnvlVi6b0QZNY2rwsmqfQ42W2R7W-9w7ZqBv0F6Okx2vxwyBMceBrPgCkKZgcd_b2zU-atoUHHefafGG-mFyg6pwDyMozM4XPBoTcscf7tO0HAuoM7i.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/665a173d28bee9826464565e_AD_4nXfgE06QNhNOgjpYpH3cOVz74EV0ZPN5HIQhBG3D0cnvlVi6b0QZNY2rwsmqfQ42W2R7W-9w7ZqBv0F6Okx2vxwyBMceBrPgCkKZgcd_b2zU-atoUHHefafGG-mFyg6pwDyMozM4XPBoTcscf7tO0HAuoM7i.png"
             loading="lazy"
             alt=""
           />

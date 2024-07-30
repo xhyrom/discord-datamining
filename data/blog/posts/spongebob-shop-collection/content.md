@@ -27,7 +27,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a3f9a64f8684e7db71ea0a_6696aefc560bd63a8de2d901_SpongeBob%2520Banner.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a3f9a64f8684e7db71ea0a_6696aefc560bd63a8de2d901_SpongeBob%2520Banner.png"
             loading="lazy"
             alt="A preview of two profiles wearing SpongeBob SquarePants-themed Avatar Decorations &amp; Profile Effects."
           />
@@ -87,7 +87,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6691b007c2517e2ef7cddcc3_AD_4nXcKNnl_yRsBiN9NV9Oke9jNgb5lsxq0vzupZhO7WVjYr1HtRna9flhMW24pYebU7A8O0BZ_BJOigXv1VjWwq_BHdu-hcSB0wwFxaKLtrkVFou2ZI3oTuuN6yu5mFvIHe5V1JV3wKXBAA_NVaNE6u57QLwlg.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6691b007c2517e2ef7cddcc3_AD_4nXcKNnl_yRsBiN9NV9Oke9jNgb5lsxq0vzupZhO7WVjYr1HtRna9flhMW24pYebU7A8O0BZ_BJOigXv1VjWwq_BHdu-hcSB0wwFxaKLtrkVFou2ZI3oTuuN6yu5mFvIHe5V1JV3wKXBAA_NVaNE6u57QLwlg.gif"
             loading="lazy"
             alt="A preview of the seven SpongeBob SquarePants-themed Avatar Decorations."
           />
@@ -124,7 +124,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6691b040d1ed268f80bca356_AD_4nXd_pJZJP7zgfUbkXLqQwPqujRm0NWBn_G3cXaF1IcGF8683NfdF7pVv3kB2yAuNE4JqWLkNk3_E4_GHFuwnf8Vc5Vp7xizR34R0MQc9iEsfWn_Hw1mb1CTSyWksMpDqnhVBBBugFRm5mkvNyPjHGBGeF6R-.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6691b040d1ed268f80bca356_AD_4nXd_pJZJP7zgfUbkXLqQwPqujRm0NWBn_G3cXaF1IcGF8683NfdF7pVv3kB2yAuNE4JqWLkNk3_E4_GHFuwnf8Vc5Vp7xizR34R0MQc9iEsfWn_Hw1mb1CTSyWksMpDqnhVBBBugFRm5mkvNyPjHGBGeF6R-.jpeg"
             loading="lazy"
             alt="A preview of the Shop, with the SpongeBob collection displayed prominently."
           />
@@ -146,7 +146,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png"
             loading="lazy"
             alt=""
           />

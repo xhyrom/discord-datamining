@@ -68,7 +68,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66315325dd016047d62c9100_Blog_Chart.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66315325dd016047d62c9100_Blog_Chart.png"
             loading="lazy"
             alt="A graph of VMAF scores, frame counts from 0 to 3600 form the ticks on the horizontal axis, VMAF score from 0 to 100 is on the vertical axis, VMAF score dips regularly on 120 frame intervals and more sporadically throughout. The legend suggests this clip targets an 8000 kbps from a clip called “gta_updating_keyint”"
           />
@@ -190,7 +190,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66315462badd8d0cf3129e65_VB_DmkslCx1fMpdk9LzS0PQ0VM1g2EUXWE6L-1MUPEzyMVJDGhBTbQB3kdFClGAaikmaF8bsC6r_hIZQ_4d6GosmJv01DhF1brKJPKUKwcNjHuCfiuBz4qEoXYUXIkE85HF4rbKRNlWBIBO6lq_Ywg0.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66315462badd8d0cf3129e65_VB_DmkslCx1fMpdk9LzS0PQ0VM1g2EUXWE6L-1MUPEzyMVJDGhBTbQB3kdFClGAaikmaF8bsC6r_hIZQ_4d6GosmJv01DhF1brKJPKUKwcNjHuCfiuBz4qEoXYUXIkE85HF4rbKRNlWBIBO6lq_Ywg0.png"
             loading="lazy"
             alt="Graph titled “Percent of session hitting less than 50 fps (when targeting 60, AMD GPU on Windows).” Horizontal axis is labeled with dates from July 1, 2023 to January 1, 2024. The vertical axis is labeled “percent of sessions” (ranging from 15 to 45). The line on the graph starts at 39% on July 1, wiggles up and down over time, and ends at 18% on January 1."
           />

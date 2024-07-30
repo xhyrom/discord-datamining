@@ -136,7 +136,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65d7ab31adc625e013ce709c_3I-9ahl1LkT0bqglH-BoShQ11tIYECFYHbGzSIXqzFqHlOKsVHTfil63skYjP3UQB8Zzj4cD__WpeUeBQct1ebnQPiUnZEk1436ppRuqlxWJ3asp_MB3LUxJgz7GRWjwhyGnZOmUBj7xL8t_Re7aUUY.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65d7ab31adc625e013ce709c_3I-9ahl1LkT0bqglH-BoShQ11tIYECFYHbGzSIXqzFqHlOKsVHTfil63skYjP3UQB8Zzj4cD__WpeUeBQct1ebnQPiUnZEk1436ppRuqlxWJ3asp_MB3LUxJgz7GRWjwhyGnZOmUBj7xL8t_Re7aUUY.png"
             loading="lazy"
             alt="A diagram, displaying a developer’s laptop accessing remote services in the Cloud, with backend services running remotely, and local services optionally local or remote. Explicit callout is given that code can live either locally or remotely, which can be confusing."
           />
@@ -195,7 +195,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65d7ab5b128ec85ab5a0652a_4WVsDbGfFq2uxnUD1ifK1Mvt7pt8lA8A1X7ETMPuwcCL-SnOF458gWZ1vW3oAA-07EUXgYc20gAK2C8WhMS4QxOK1XQkLPbgMzGAmrGbLXbmuZ0X7cejYgqWatDkxkTiteMFbUr0ZLA-9gOFul_fYqM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65d7ab5b128ec85ab5a0652a_4WVsDbGfFq2uxnUD1ifK1Mvt7pt8lA8A1X7ETMPuwcCL-SnOF458gWZ1vW3oAA-07EUXgYc20gAK2C8WhMS4QxOK1XQkLPbgMzGAmrGbLXbmuZ0X7cejYgqWatDkxkTiteMFbUr0ZLA-9gOFul_fYqM.png"
             loading="lazy"
             alt="A collage of discord messages, displaying people happy with Coder V2."
           />

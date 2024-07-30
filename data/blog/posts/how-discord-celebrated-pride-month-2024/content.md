@@ -73,7 +73,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/665621b2394563f88633a9ed_ZUJ-_mUj99A8Vpzgf-yeBGSLj7vzA56VRhrAZnIoSGBp32ruKaKMQSoNaG56MRD2yUjJNuNxHk1-srqJudK7akmG_CuZNvt6qNPP_LQOXD8ABglN71ijcdKRSU9AhaRQUJZalLX7o878v_pZqyKSUSo.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/665621b2394563f88633a9ed_ZUJ-_mUj99A8Vpzgf-yeBGSLj7vzA56VRhrAZnIoSGBp32ruKaKMQSoNaG56MRD2yUjJNuNxHk1-srqJudK7akmG_CuZNvt6qNPP_LQOXD8ABglN71ijcdKRSU9AhaRQUJZalLX7o878v_pZqyKSUSo.png"
             loading="lazy"
             alt=""
           />

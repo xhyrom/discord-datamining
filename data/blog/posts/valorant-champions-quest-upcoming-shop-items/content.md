@@ -70,7 +70,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a3c2bc51fe301473381062_66a3c2aeb4d670d02127eac6_Val%2520Quest.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a3c2bc51fe301473381062_66a3c2aeb4d670d02127eac6_Val%2520Quest.png"
             loading="lazy"
             alt="A screenshot of the VALORANT Quest displayed in User Settings > Gift Inventory."
           />
@@ -137,7 +137,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66a2b2cec0d9f672f3a85aac_AD_4nXcGB6snjfU-fqhzateT-eecLOfVs1kZ6Ul3AAeXp1S3S2yCzn6-HsxPpnNxS_ESZ44Up64HlTTzSUWxv18BG_aTsp7QTIwKCbsj5blFb71nbUW41V1bw4D-uRAv9l2ChsAZrJAL0mJvs2f_2Rx2lbXmYg6Q.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66a2b2cec0d9f672f3a85aac_AD_4nXcGB6snjfU-fqhzateT-eecLOfVs1kZ6Ul3AAeXp1S3S2yCzn6-HsxPpnNxS_ESZ44Up64HlTTzSUWxv18BG_aTsp7QTIwKCbsj5blFb71nbUW41V1bw4D-uRAv9l2ChsAZrJAL0mJvs2f_2Rx2lbXmYg6Q.png"
             loading="lazy"
             alt=""
           />

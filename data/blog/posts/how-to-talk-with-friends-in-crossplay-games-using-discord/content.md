@@ -45,7 +45,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6671e2fa57d2b177fe6cab78_AD_4nXdnmcYN7b5Hfm4n-Taq-ftCG981YRTl9e4RDxqhTIc3ns3Jy24Rs-gvOIPaIsgSgnbya1rOtMj-Y6vdpmztaxGXc2HEqW0did6y2DlhQJxntI2PATAf-xgjUQo6yEo-r19LQb1vARLxdInp6FeDf932mas.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6671e2fa57d2b177fe6cab78_AD_4nXdnmcYN7b5Hfm4n-Taq-ftCG981YRTl9e4RDxqhTIc3ns3Jy24Rs-gvOIPaIsgSgnbya1rOtMj-Y6vdpmztaxGXc2HEqW0did6y2DlhQJxntI2PATAf-xgjUQo6yEo-r19LQb1vARLxdInp6FeDf932mas.png"
             loading="lazy"
             alt="A screenshot of the Connection page within User Settings."
           />
@@ -175,7 +175,7 @@
       <figure class="w-richtext-align-fullwidth w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6671e37486646e8a6c0e166b_AD_4nXc8F3cypqIwmdKJV-3MtMq0Gyfp1fQxZqZunF-QO7oDsXxyQ-mFqA1oW-hS0M7z2vkgPqCSdChcfOg4Z-9bUpEgD3HXLIDGm9Vbc_fvd4u9jDVoePWlycrwP8zL_eBCacy4S2lKSQd7hhn8LJGnyLsRtkoH.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6671e37486646e8a6c0e166b_AD_4nXc8F3cypqIwmdKJV-3MtMq0Gyfp1fQxZqZunF-QO7oDsXxyQ-mFqA1oW-hS0M7z2vkgPqCSdChcfOg4Z-9bUpEgD3HXLIDGm9Vbc_fvd4u9jDVoePWlycrwP8zL_eBCacy4S2lKSQd7hhn8LJGnyLsRtkoH.gif"
             loading="lazy"
             alt="A GIF demonstrating how to connect to Discord voice channels on Xbox. It follows the same steps as previously mentioned."
           />
@@ -226,7 +226,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6671e39fff58a92f2ff30af6_AD_4nXcOhHp2mYM3cxNugMbzEcBCOhByi3MoDWIB9p3A8wa0bkNd4zfw8GwPLWfMl4GzaehWwDjPpO12T_8j2rtYKzsjpgZ5vleup2EeAvPZoaViTCukNEfZgYAdMZp5VLB-OWlYrbJ6j-XELLYXh1iuxZ9vyrI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6671e39fff58a92f2ff30af6_AD_4nXcOhHp2mYM3cxNugMbzEcBCOhByi3MoDWIB9p3A8wa0bkNd4zfw8GwPLWfMl4GzaehWwDjPpO12T_8j2rtYKzsjpgZ5vleup2EeAvPZoaViTCukNEfZgYAdMZp5VLB-OWlYrbJ6j-XELLYXh1iuxZ9vyrI.png"
             loading="lazy"
             alt="An ongoing Discord call on the desktop app. It highlights the “Transfer Voice to Xbox” and “Transfer to PlayStation” options."
           />

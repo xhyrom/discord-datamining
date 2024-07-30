@@ -54,7 +54,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/657257bafeeb80b48e72c137_compiling.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/657257bafeeb80b48e72c137_compiling.png"
             alt="An XKCD comic. Two engineers are swordfighting, looking as if they're not working. The caption reads: &quot;The #1 programmer excuse for legitimately slacking off: 'My code's compiling.'&quot;"
             loading="lazy"
           />
@@ -87,7 +87,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725a338ca0f27dc38d69f9_Flowchart.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65725a338ca0f27dc38d69f9_Flowchart.png"
             loading="lazy"
             alt='A flowchart that goes as such: "Dev -> Test -> daemon manager -> daemon"'
           />
@@ -122,7 +122,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725adf90e0e3bcaa3f64e6_Screenshot%202023-12-07%20at%203.52.46%E2%80%AFPM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65725adf90e0e3bcaa3f64e6_Screenshot%202023-12-07%20at%203.52.46%E2%80%AFPM.png"
             loading="lazy"
             alt='A flowchart with two paths. One goes: "Test -> import -> view -> import -> model." The other goes: "test -> import - model"'
           />
@@ -155,7 +155,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725b1754caa81aae5cc169_Screenshot%202023-12-07%20at%203.53.37%E2%80%AFPM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65725b1754caa81aae5cc169_Screenshot%202023-12-07%20at%203.53.37%E2%80%AFPM.png"
             loading="lazy"
             alt='A flowchart with two paths. One goes: "model -> dependancy -> test." The other goes "model -> dependancy -> view -> dependancy -> test."'
           />
@@ -223,7 +223,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725d02f8432d5f01ef30a6_Screenshot%202023-12-07%20at%204.01.59%E2%80%AFPM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65725d02f8432d5f01ef30a6_Screenshot%202023-12-07%20at%204.01.59%E2%80%AFPM.png"
             loading="lazy"
             alt='A table comparing two results. One row reads: "empty test with daemon, .4 seconds, without daemon, 12.7 seconds." The second row reads "complex test with many dependancies, with daemon 3.9/2.4/2.4 seconds, without daemon 17.5 seconds."'
           />

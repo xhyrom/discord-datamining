@@ -85,7 +85,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66678785bb453c074c09c1ee_AD_4nXeeHljbeYx3KecYX9ELeLb77a-WISikbUB5S94p3aaF45h94PB_sfeov2GDw6YMhysujhHmbieQlBIByX6narboIKTMpWw5Wp2_WSu4PHjvrlHym3mWBR4eRBZFlkZ3uKx3oi9C8YZeAFDGbiE7diuA7RY.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66678785bb453c074c09c1ee_AD_4nXeeHljbeYx3KecYX9ELeLb77a-WISikbUB5S94p3aaF45h94PB_sfeov2GDw6YMhysujhHmbieQlBIByX6narboIKTMpWw5Wp2_WSu4PHjvrlHym3mWBR4eRBZFlkZ3uKx3oi9C8YZeAFDGbiE7diuA7RY.png"
             loading="lazy"
             alt="A demonstration of the PS5 User Interface. The “Game Base” button is highlighted at the bottom of the screenshot."
           />
@@ -104,7 +104,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6667878409854bcecf18538b_AD_4nXdEZC8hIqYVlKXE61hXVrTq65NRCSTspuRiMgW5Vlhl5Lr7SnOQvVWU2Uuu3WQOcM0UCROtJiwcqjr9iAKilsNSuiyTEqyZr97aOOnkCNUiOIU7dRYAUrl68tox5quxhkEfX-VykgG07PoFVGVHxVYAcF4.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6667878409854bcecf18538b_AD_4nXdEZC8hIqYVlKXE61hXVrTq65NRCSTspuRiMgW5Vlhl5Lr7SnOQvVWU2Uuu3WQOcM0UCROtJiwcqjr9iAKilsNSuiyTEqyZr97aOOnkCNUiOIU7dRYAUrl68tox5quxhkEfX-VykgG07PoFVGVHxVYAcF4.png"
             loading="lazy"
             alt="A demonstration of connecting to a Discord call on a PS5 console. In the “Game Base,” a Discord button is highlighted for users to select."
           />
@@ -121,7 +121,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/666787856d40924aff2dc6f8_AD_4nXfZtMgX-_YMGmlONrhcpl7WNtQWOgeeGha7aM_OMZvKcOsJu4EKIQNaZkTHLOVzAW4NGGxTFT0exsAs-P0rslkm0UyMGhf6J2JpoA6Y_M7DHJe3wRhJ-NuFjsBUhq8fyNByMeCj0b0PfFot8Bb-BApw2Kwq.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/666787856d40924aff2dc6f8_AD_4nXfZtMgX-_YMGmlONrhcpl7WNtQWOgeeGha7aM_OMZvKcOsJu4EKIQNaZkTHLOVzAW4NGGxTFT0exsAs-P0rslkm0UyMGhf6J2JpoA6Y_M7DHJe3wRhJ-NuFjsBUhq8fyNByMeCj0b0PfFot8Bb-BApw2Kwq.png"
             loading="lazy"
             alt="A demonstration of connecting to a Discord call on a PS5 console. The user is selecting a Discord voice channel to connect to.&nbsp;"
           />
@@ -166,7 +166,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/666787fe3824efced1cbfe7f_AD_4nXeqKz-xl6dfaxDY75A5kqzc9gHiMxIxI_gb2p4x8nOmhI8rK-c3LTE6V5Zjzeanp-DeH59M1WedmhwO1kyhLWw0LTHvOTYD1VLxZOM-8ZRUxWaEfWfWhJcyL85AyCOYmRhUM8bUrjqkRf6V97ceODO2m3qo.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/666787fe3824efced1cbfe7f_AD_4nXeqKz-xl6dfaxDY75A5kqzc9gHiMxIxI_gb2p4x8nOmhI8rK-c3LTE6V5Zjzeanp-DeH59M1WedmhwO1kyhLWw0LTHvOTYD1VLxZOM-8ZRUxWaEfWfWhJcyL85AyCOYmRhUM8bUrjqkRf6V97ceODO2m3qo.png"
             loading="lazy"
             alt="One final demonstration of the Discord experience on PS5 console. Here, the “Direct Calls” button is prominently displayed.‍"
           />

@@ -25,7 +25,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66107c36aba21f3a702efda8_gxPN0o6QwrI5agJtv8uq-nfK98WRjx6p4SjFIIGzc6mncw-fm9k4_lJsg4aPioknaAPdYT9bc7o79shM_tYxlkw99EIPsBYvU7REEHzb2736FxK3ufWolklwPBgLHbfxoIH0LGELrKGCbJLa4Sz4a5A.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66107c36aba21f3a702efda8_gxPN0o6QwrI5agJtv8uq-nfK98WRjx6p4SjFIIGzc6mncw-fm9k4_lJsg4aPioknaAPdYT9bc7o79shM_tYxlkw99EIPsBYvU7REEHzb2736FxK3ufWolklwPBgLHbfxoIH0LGELrKGCbJLa4Sz4a5A.png"
             loading="lazy"
             alt="A flow chart showing the steps: ideation, define requirements, prototype, collect learnings, and deploy at scale. Collect learnings has an arrow back to “prototype” to show several iterations of prototypes may be needed."
           />
@@ -178,7 +178,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66107cb4b5357212cdd178e1_CcYGASYqjXXfmM9eS_FnvFIKtU0JZf7gpY5r7V_wDGrcwKX62DOs1B7XortdtSYJq7nQ_UtK-WdD2BcNxVzgSlcIoi7624ug4VZPD1JVKSAsExXFFQT7hBw1X4kSWcjveE1x16TSJIx02BjG9ebFJZQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66107cb4b5357212cdd178e1_CcYGASYqjXXfmM9eS_FnvFIKtU0JZf7gpY5r7V_wDGrcwKX62DOs1B7XortdtSYJq7nQ_UtK-WdD2BcNxVzgSlcIoi7624ug4VZPD1JVKSAsExXFFQT7hBw1X4kSWcjveE1x16TSJIx02BjG9ebFJZQ.png"
             loading="lazy"
             alt="A developer makes an API call to GPT-4 with an input prompt for their task “Write a story about Wumpus”. GPT-4 returns “Once upon a time, in the digital realm of Discordia, a curious creator named Wumpus roamed…”. The developer inputs the story into a critic prompt back to GPT-4 “Was the story about Wumpsum?”. GPT-4 responds with the evaluation “Yes”."
           />
@@ -239,7 +239,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66107d20b5357212cdd1e6f0_IJdCCUv_muZC1xzxjCTUeyuXn5exkN8fpGbFraHIeuZkCaEh2uh5vwyhurqyTsJfpiKscibX0lWu0qVF8sULT84Q7IaZnHf1cNRDpmRpZQzbvqSchGwzra3-IWyka5w6q2ozxkloX7IhmT7t1r3keNM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66107d20b5357212cdd1e6f0_IJdCCUv_muZC1xzxjCTUeyuXn5exkN8fpGbFraHIeuZkCaEh2uh5vwyhurqyTsJfpiKscibX0lWu0qVF8sULT84Q7IaZnHf1cNRDpmRpZQzbvqSchGwzra3-IWyka5w6q2ozxkloX7IhmT7t1r3keNM.png"
             loading="lazy"
             alt="A user sends a request through an API gateway which requests to an LLM inference server and receives the LLM output. Then the gateway hydrates the LLM output and passes it to a content safety service which scans the content for trust and safety before returning it to the user."
           />
@@ -323,7 +323,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66107d5cf0fba1ac59936b01_utFdP6WCqlJm7Ssf3Tdc7GEhPLdX8LjCl_ml3mDTvrEQYlUUGAHvMzFOIrqkw2YhuZ3FqQCwjmEnvZZOEXUkaMJWvKJkGaeL8PYpXavYHP8X0WI3yW_vjBYH5S3EiYVm2kJws8xwY41eCX5MM4XiE7k.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66107d5cf0fba1ac59936b01_utFdP6WCqlJm7Ssf3Tdc7GEhPLdX8LjCl_ml3mDTvrEQYlUUGAHvMzFOIrqkw2YhuZ3FqQCwjmEnvZZOEXUkaMJWvKJkGaeL8PYpXavYHP8X0WI3yW_vjBYH5S3EiYVm2kJws8xwY41eCX5MM4XiE7k.png"
             loading="lazy"
             alt="A flow chart of a self-hosted LLM architecture and request flow. 3 requests enter a load balancer and then inference server swarm. The inference server swarm has 2 pods each with its own request queue, batch scheduler, and LLM. The output of the system is 3 LLM generated outputs."
           />

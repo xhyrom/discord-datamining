@@ -59,7 +59,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6670b46ae73169cd71c8ab60_AD_4nXdpGY763tVlrtApSwqwiI1KpxMFzj2rXz2MnUPhuIimG6hab7fdWC8D82JVS20epVQtm5RT3FqFRWCxfxfae6YFXzpzdYWX3HKV-wdmjhZr38pQ2197zc_6_Z1Co4ysWlzN728FLuX1bqba-2q_Dg6oe1Y.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6670b46ae73169cd71c8ab60_AD_4nXdpGY763tVlrtApSwqwiI1KpxMFzj2rXz2MnUPhuIimG6hab7fdWC8D82JVS20epVQtm5RT3FqFRWCxfxfae6YFXzpzdYWX3HKV-wdmjhZr38pQ2197zc_6_Z1Co4ysWlzN728FLuX1bqba-2q_Dg6oe1Y.jpeg"
             loading="lazy"
             alt="Wumpus, in a puffy jacket and wearing a gaming headset, standing in front of two screenshots. These screenshots show examples of the Discord Voice on PS5 experience."
           />
@@ -98,7 +98,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6670b48e7045d49c76353602_AD_4nXcovpiFTUIm0_bY-EQ2qcVe8rrc-vBpende0ALog0fhLM1QbFQxv_f9VVsml2Yl34q23Jo03zSjjIqThkXj4AsJc2IVVc97m_1hm_QWwXIlO45iYtDhWgSSApehPomcG0sKEVF-Usxx5dLBSK_vCoovdLuF.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6670b48e7045d49c76353602_AD_4nXcovpiFTUIm0_bY-EQ2qcVe8rrc-vBpende0ALog0fhLM1QbFQxv_f9VVsml2Yl34q23Jo03zSjjIqThkXj4AsJc2IVVc97m_1hm_QWwXIlO45iYtDhWgSSApehPomcG0sKEVF-Usxx5dLBSK_vCoovdLuF.png"
             loading="lazy"
             alt="A smartphone prominently displays the App Launcher icon, which is four different shapes aligned in a 2x2 grid. Images of headphones, paintbrushes, and swords float around the phone."
           />
@@ -134,7 +134,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6670b60c68d815c88a82cf19_AD_4nXfnFv84jaNBB1XoTqTya-YvfJ_YA_7FgIxaud3zFw5Np7ATC8kO6g4VhkdiXGXRGajimgjjntc1P_k9NPHO4DCzAaX3NJw0rFmpcaiGFGK3gF1M2slhdYec-fN_Afu6x_cfMfVGLIgThluO7zAgziIEQd2S.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6670b60c68d815c88a82cf19_AD_4nXfnFv84jaNBB1XoTqTya-YvfJ_YA_7FgIxaud3zFw5Np7ATC8kO6g4VhkdiXGXRGajimgjjntc1P_k9NPHO4DCzAaX3NJw0rFmpcaiGFGK3gF1M2slhdYec-fN_Afu6x_cfMfVGLIgThluO7zAgziIEQd2S.png"
             loading="lazy"
             alt="Stars and sparkles shooting out of a mobile phone that's currently running Discord."
           />
@@ -190,7 +190,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6670b64fdef24895c4296f0b_AD_4nXcIwIK301zAJ0S4j-mtEE0FidjHCdqcZyXBJNzHy-0pwbSseeN9PWQyrlpCKY-ST83xBTTuRWri68aqiJx2alixG-1-Z3LOdwD3Rt51QJ8TMELeXHa0A_C9jLVLagsxpZITskD8lgxhKmbIJxZVCwnka8_4.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6670b64fdef24895c4296f0b_AD_4nXcIwIK301zAJ0S4j-mtEE0FidjHCdqcZyXBJNzHy-0pwbSseeN9PWQyrlpCKY-ST83xBTTuRWri68aqiJx2alixG-1-Z3LOdwD3Rt51QJ8TMELeXHa0A_C9jLVLagsxpZITskD8lgxhKmbIJxZVCwnka8_4.png"
             loading="lazy"
             alt="A preview of four Discord profiles with Avatar Decorations and Profile Effects on them."
           />

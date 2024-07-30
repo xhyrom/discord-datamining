@@ -18,7 +18,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/669552cc3338cbf61c49923a_AD_4nXcuxbFci767-IVldOVAtiy9AeW1veSrSf0gaWmrKbgeeHsRhhyhZOc4O9ZNrE30PyPkc_yP1n5ihVABHx8od6jNMlBHfstnb-SAKvqpynn7TEVBM53IktMhM9J4c8Ls1y71xyQqQio1OumE81jUsSRwAIbK.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/669552cc3338cbf61c49923a_AD_4nXcuxbFci767-IVldOVAtiy9AeW1veSrSf0gaWmrKbgeeHsRhhyhZOc4O9ZNrE30PyPkc_yP1n5ihVABHx8od6jNMlBHfstnb-SAKvqpynn7TEVBM53IktMhM9J4c8Ls1y71xyQqQio1OumE81jUsSRwAIbK.png"
             loading="lazy"
             alt="A “grand prize winner” banner showing off Soulbound,&nbsp;the grand prize winner of Discord App Pitches 2024."
           />
@@ -157,7 +157,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667ca845d5387aa23b6e34a7_AD_4nXfFL496ZumxVi0nvNPCAnPoQvL3r972KS6BTWwlm4IYL2cd9qvOkPWcwO193VAYb6XYb5ZB3NaNVdP89a-MxicNCE4DaaxU-BR85yWOfBi_XeyX1nLqnR5wM8tuzC5Yf4-neaRFXlngcf71VK6VDgPu2GM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/667ca845d5387aa23b6e34a7_AD_4nXfFL496ZumxVi0nvNPCAnPoQvL3r972KS6BTWwlm4IYL2cd9qvOkPWcwO193VAYb6XYb5ZB3NaNVdP89a-MxicNCE4DaaxU-BR85yWOfBi_XeyX1nLqnR5wM8tuzC5Yf4-neaRFXlngcf71VK6VDgPu2GM.png"
             loading="lazy"
             alt="Key artwork for Exoracer."
           />
@@ -203,7 +203,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667ca8b9d2e65b0d35b920d0_AD_4nXdOmuUFP2ZZzm9VXkhYdbPUWr1pET3Y8SmlyFm9KSWwNP7QqyGVTOKiMtRhdO-ZhBnW-U_1lfUsqRlD3vnUYqBVgxiWYLmcxxwOmHedRDd7eeRG-cQhDwoAK1A2_1gN1U0s2O0NX8Ozj2RibZ374bwKFzE.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/667ca8b9d2e65b0d35b920d0_AD_4nXdOmuUFP2ZZzm9VXkhYdbPUWr1pET3Y8SmlyFm9KSWwNP7QqyGVTOKiMtRhdO-ZhBnW-U_1lfUsqRlD3vnUYqBVgxiWYLmcxxwOmHedRDd7eeRG-cQhDwoAK1A2_1gN1U0s2O0NX8Ozj2RibZ374bwKFzE.png"
             loading="lazy"
             alt="Key artwork for Soulbound."
           />
@@ -241,7 +241,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667ca8db3a2e3d81ba8008f8_AD_4nXft6AItIAqdCqKGasLOSxi6WlfMiYhWC02JQagFri-VapbPUQkUsT87En6fzUJftYMa6XVAUZxiM1ery5Ctl9ZGeniO0IAy-jQY-zkZXI8ho7MO1ibZg-STHhJm3m6q15TwnReHx4bQSUX_wL3Ak-S5UCk.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/667ca8db3a2e3d81ba8008f8_AD_4nXft6AItIAqdCqKGasLOSxi6WlfMiYhWC02JQagFri-VapbPUQkUsT87En6fzUJftYMa6XVAUZxiM1ery5Ctl9ZGeniO0IAy-jQY-zkZXI8ho7MO1ibZg-STHhJm3m6q15TwnReHx4bQSUX_wL3Ak-S5UCk.jpeg"
             loading="lazy"
             alt="Key artwork for Papery Match."
           />
@@ -293,7 +293,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667ca90030ffc51a9fa0695d_AD_4nXcSgRdPaGqzlKlIXUrMBqXTDBUPYLcqR7cgqXgcbR2ASWZaE4blDq05JTiGZIAWDfGEYtXzJPmzD2M-QKhUWCSOqkWK9zDavkggnZ4INISZUQZr1Y_rsagLzU0EJIsF14C7e9fWaILH6Rf252paxf8IQB6Y.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/667ca90030ffc51a9fa0695d_AD_4nXcSgRdPaGqzlKlIXUrMBqXTDBUPYLcqR7cgqXgcbR2ASWZaE4blDq05JTiGZIAWDfGEYtXzJPmzD2M-QKhUWCSOqkWK9zDavkggnZ4INISZUQZr1Y_rsagLzU0EJIsF14C7e9fWaILH6Rf252paxf8IQB6Y.png"
             loading="lazy"
             alt="A screenshot of Magic Circle."
           />
@@ -336,7 +336,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/667ca91dfb52bbf96afddbd5_AD_4nXdfu2zLAA9sCfDzmHWlrdunKpGbWq7GGLb9tCvTOJQKCxsrtmW0158nL4brSvpecgQF2vuYSH4Bwo34_0yk9JoHctkB80x0y2dM1--F3eOMfQeZAp6N3V-1u0iXOy1s_FzNJ57oOCiNilIxPwXIiQVnkvVI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/667ca91dfb52bbf96afddbd5_AD_4nXdfu2zLAA9sCfDzmHWlrdunKpGbWq7GGLb9tCvTOJQKCxsrtmW0158nL4brSvpecgQF2vuYSH4Bwo34_0yk9JoHctkB80x0y2dM1--F3eOMfQeZAp6N3V-1u0iXOy1s_FzNJ57oOCiNilIxPwXIiQVnkvVI.png"
             loading="lazy"
             alt="A screenshot of Clash Gem Card Party."
           />

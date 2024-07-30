@@ -239,7 +239,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578b914bf7d06d9d47ed6c4_2hM-UCQvxgQrHRrQuGBcLKKgH_H78NknLqW-LqakLumSZHbHnKFZEUOrUE94T0CLvdcnYOUU89Ld6pBacT160GWUvV3f-N0EF3zDoCVw8havtgukGPw30e4sK_HuVKvyn8vnpKI_NAkzF3vtv4u3yaA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6578b914bf7d06d9d47ed6c4_2hM-UCQvxgQrHRrQuGBcLKKgH_H78NknLqW-LqakLumSZHbHnKFZEUOrUE94T0CLvdcnYOUU89Ld6pBacT160GWUvV3f-N0EF3zDoCVw8havtgukGPw30e4sK_HuVKvyn8vnpKI_NAkzF3vtv4u3yaA.png"
             loading="lazy"
             alt="Sequence diagram showing the MFAv2 flow on protected routes."
           />
@@ -306,7 +306,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578b931cdfe5516f83fc499_e8OCxPJEpS9Hn4O6OGLNnXneQdOB1z00qb06cH1du8vYQGE3YrcRaivJcxApsjFSqdT-jab_bfZiSGJ7xrp9Jk2b6387J5rNQdjVRUB3zkULNzOj9j5AVDtRC4XW2Qjk_J_2qM1xS32Eb8wNL98dRA0.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6578b931cdfe5516f83fc499_e8OCxPJEpS9Hn4O6OGLNnXneQdOB1z00qb06cH1du8vYQGE3YrcRaivJcxApsjFSqdT-jab_bfZiSGJ7xrp9Jk2b6387J5rNQdjVRUB3zkULNzOj9j5AVDtRC4XW2Qjk_J_2qM1xS32Eb8wNL98dRA0.png"
             loading="lazy"
             alt="Sequence diagram showing the authentication service creating an MFAv2 ticket on protected routes."
           />
@@ -342,7 +342,7 @@
         <div>
           <img
             alt="Discord promoting to the user to choose between three MFA options: Use a security key, use your authenticator app, or use a backup code.‍"
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578b9318a9cbcc6d0691cf0_zyOaANGmW_sDGui47z4Wkt4uZJamYzxicbxoVdjc6uaFSnyb4-4tVRg8pNZMSVabxxq0_Yfe_QbkS5RypwQVFX9XEvIJlHp3SsrwE0H-ehKq6spPKevTjHTL07C8UbxD1Oo0vKAe4NOZKzZZAvhlce8.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6578b9318a9cbcc6d0691cf0_zyOaANGmW_sDGui47z4Wkt4uZJamYzxicbxoVdjc6uaFSnyb4-4tVRg8pNZMSVabxxq0_Yfe_QbkS5RypwQVFX9XEvIJlHp3SsrwE0H-ehKq6spPKevTjHTL07C8UbxD1Oo0vKAe4NOZKzZZAvhlce8.png"
             loading="lazy"
           />
         </div>
@@ -399,7 +399,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578bac7b297fd20f56bbeba_x7jZqyj1aBxOyg01I95KZBh8GSGcg8YQyhhIilmOgt9IresFS9pNMikeqgW6v6WshatT8o5aeeNePE8kfHN4WX1-jfJy30mTTCKHzhfD1WnrQk1HUSKj8IAmT49weILkjgFJhRgGeIwxzCykNElKAhI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6578bac7b297fd20f56bbeba_x7jZqyj1aBxOyg01I95KZBh8GSGcg8YQyhhIilmOgt9IresFS9pNMikeqgW6v6WshatT8o5aeeNePE8kfHN4WX1-jfJy30mTTCKHzhfD1WnrQk1HUSKj8IAmT49weILkjgFJhRgGeIwxzCykNElKAhI.png"
             loading="lazy"
             alt="Sequence diagram showing the renderer Electron process sending an IPC to the main Electron process in order to trigger ASAuthorizationController code."
           />
@@ -426,7 +426,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png"
             loading="lazy"
             alt=""
           />

@@ -34,7 +34,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e36b0bd509d63ee24d7d_aSw8KmMzGPmTmtNVP17onhUEP9Sp5DSk_bMJZFy9JsrDkYMeyoDlhi44byiBf-aCkO63xreHbD85il5CFYrcwo3tnA4qHlrr-RGqZTfIsKOWJt48tBqevd8yACHTgbE3nDVzOFFeH-jeGuntqGjG5rs.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e36b0bd509d63ee24d7d_aSw8KmMzGPmTmtNVP17onhUEP9Sp5DSk_bMJZFy9JsrDkYMeyoDlhi44byiBf-aCkO63xreHbD85il5CFYrcwo3tnA4qHlrr-RGqZTfIsKOWJt48tBqevd8yACHTgbE3nDVzOFFeH-jeGuntqGjG5rs.png"
             loading="lazy"
             alt=" A stylized nameplate that says “Matt.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -64,7 +64,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e390e5b8773c18a8bcad_Y2M54DrUF19hoAmMH3_UkVvenhrVjxu6yhy7SuEmDQggGFM0rWZZhcTY-ua1GLbXIXhdv9FlpPpKH0p9UTRAEqoi0MVjdX4XYskVLnD-XYNsHwGN1ff5P7CjXvmiSDGn4WtiA1kwG561e-Jp2yeIM1M.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e390e5b8773c18a8bcad_Y2M54DrUF19hoAmMH3_UkVvenhrVjxu6yhy7SuEmDQggGFM0rWZZhcTY-ua1GLbXIXhdv9FlpPpKH0p9UTRAEqoi0MVjdX4XYskVLnD-XYNsHwGN1ff5P7CjXvmiSDGn4WtiA1kwG561e-Jp2yeIM1M.png"
             loading="lazy"
             alt="A screenshot from Ghost of Tsushima DIRECTOR’S CUT."
           />
@@ -101,7 +101,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e3eb4ccbfc3a50b5562f_MRQBkBCmMG5cXyjHklKCz4xwIs_XAAZQFwXU6B9-AsydJIg0UI7zNw1EMhdM_NI3xUr9_7u0p2eP2uMyCeTC-D14SAhSFX9YNqhtyTIjFNJ5tvXaYVFAH_Tl-aJJj1N9OWh_H0TB3l4zuFbJ3z2sHxg.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e3eb4ccbfc3a50b5562f_MRQBkBCmMG5cXyjHklKCz4xwIs_XAAZQFwXU6B9-AsydJIg0UI7zNw1EMhdM_NI3xUr9_7u0p2eP2uMyCeTC-D14SAhSFX9YNqhtyTIjFNJ5tvXaYVFAH_Tl-aJJj1N9OWh_H0TB3l4zuFbJ3z2sHxg.png"
             loading="lazy"
             alt="A stylized nameplate that says “Emi.” Icons and imagery of gamepads, microphones, and VHS tapes surround the nameplate."
           />
@@ -127,7 +127,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e4104c83b621699cc1d9_4oOavU8Fde8ZIUPEcjouDQ8N0s4an3E4OF6low6s-jwhJyy42i-7jnUyZOXDqjmLzz-zURxO4iwRnd9_uCqQN6nzeR1XNKW9IKAUC_oy5ESeRn4JkmNgIWQO-HN5aqmWM27CB03LloVVH_9w4tn_xbA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e4104c83b621699cc1d9_4oOavU8Fde8ZIUPEcjouDQ8N0s4an3E4OF6low6s-jwhJyy42i-7jnUyZOXDqjmLzz-zURxO4iwRnd9_uCqQN6nzeR1XNKW9IKAUC_oy5ESeRn4JkmNgIWQO-HN5aqmWM27CB03LloVVH_9w4tn_xbA.png"
             loading="lazy"
             alt="A screenshot from Baldur’s Gate 3."
           />
@@ -176,7 +176,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e45164e6619e8a7eb60c_Uvf9kMsg21kTZ96irg6TjZ1qY8iH0v7zr9lM06DUMxwfgGYJ2QODcukkWZl_ojj-oIIi4Upn5L1lyVhvz91ItlqWH-MyZVRkFMA0gybT7np7sHeFc9xd5gj5kLLF-nGnSLTuAIR_0nLn1B75FveOlos.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e45164e6619e8a7eb60c_Uvf9kMsg21kTZ96irg6TjZ1qY8iH0v7zr9lM06DUMxwfgGYJ2QODcukkWZl_ojj-oIIi4Upn5L1lyVhvz91ItlqWH-MyZVRkFMA0gybT7np7sHeFc9xd5gj5kLLF-nGnSLTuAIR_0nLn1B75FveOlos.png"
             loading="lazy"
             alt="A stylized nameplate that says “Jonathan.”"
           />
@@ -203,7 +203,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e47364e6619e8a7ee067_AFXxE2h9hYPRSe__A5CJNo2mXP0NdW1tWO4X6cAX6K5sUGz7HtF6uFislRex1RQkkxu0WJWVuT2A-1wLaNjYfnVqfA-u9wugvwVys7_hs2CyAzwhmWoEPPbinT2AlvNmzr5Zyoh1oSliEjRZyj30hMM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e47364e6619e8a7ee067_AFXxE2h9hYPRSe__A5CJNo2mXP0NdW1tWO4X6cAX6K5sUGz7HtF6uFislRex1RQkkxu0WJWVuT2A-1wLaNjYfnVqfA-u9wugvwVys7_hs2CyAzwhmWoEPPbinT2AlvNmzr5Zyoh1oSliEjRZyj30hMM.png"
             loading="lazy"
             alt="A screenshot from Hollow Knight."
           />
@@ -242,7 +242,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e4b1483a0b65bb3953be_kAjC5kZDlyrjdUtVRTK_XzEy6nz_9lrEbsxKyl654kk7Maw-bWNN4H0fn7FJtEiz9MCtLK0CsNwULTDADyxcEgFqaiqvcfBnYveadx8dTrEquwNPSfWXFileWZzAt8K681PuNK0TcGh87c9H91yqhaM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e4b1483a0b65bb3953be_kAjC5kZDlyrjdUtVRTK_XzEy6nz_9lrEbsxKyl654kk7Maw-bWNN4H0fn7FJtEiz9MCtLK0CsNwULTDADyxcEgFqaiqvcfBnYveadx8dTrEquwNPSfWXFileWZzAt8K681PuNK0TcGh87c9H91yqhaM.png"
             loading="lazy"
             alt="A stylized nameplate that says “Tracie.”&nbsp;"
           />
@@ -270,7 +270,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e4a80b2b56fe910b9cad_rAZBmIwKchlSdOXuvxQUcigP6ljZ92gRekjUPnI4zpZ4faceh2NOK7j-5rKdoMST4-ZOzX_NCXtCOeJviC-YAyvae4ffvyVgGwK_tZvU_oMekJUgj8Ei4j3d9FEM2CDcI9ESJEO6g-sQ9rn4ZJxbwXQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e4a80b2b56fe910b9cad_rAZBmIwKchlSdOXuvxQUcigP6ljZ92gRekjUPnI4zpZ4faceh2NOK7j-5rKdoMST4-ZOzX_NCXtCOeJviC-YAyvae4ffvyVgGwK_tZvU_oMekJUgj8Ei4j3d9FEM2CDcI9ESJEO6g-sQ9rn4ZJxbwXQ.png"
             loading="lazy"
             alt="Key artwork from Abiotic Factor.‍"
           />
@@ -316,7 +316,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e4df2b8cce62cc7808e2_k3g22e4JyLAdyJ4-IeQijYJgd68HRb-yCNAd830Yv7rssZme9A5FevopNDYGKcnz8_hItaNbI0OZ9QnHaiOdv_d8feoJ4LYBIB8tMBqccfbMvTl0WxQDdhV0RjfzCKVUBDdEtcOcO9APbJGhqwnpW9s.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e4df2b8cce62cc7808e2_k3g22e4JyLAdyJ4-IeQijYJgd68HRb-yCNAd830Yv7rssZme9A5FevopNDYGKcnz8_hItaNbI0OZ9QnHaiOdv_d8feoJ4LYBIB8tMBqccfbMvTl0WxQDdhV0RjfzCKVUBDdEtcOcO9APbJGhqwnpW9s.png"
             loading="lazy"
             alt="A stylized nameplate that says “Mark.” "
           />
@@ -341,7 +341,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6658e4fd5b29977cde33e241_I_p9VHozJHW63SWgRulPHyVcexcZS4GxETy0-xxUlId3oQ27H0kMCmGDdfvLk9HWWW0CpdP-Jh6tImHuCxIYZrQS6vYoaUMokBZpQ0Rml5m7R_e2gJGyQghQxFs-KwtE6r941X7018CKIdDN0x04-Fg.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6658e4fd5b29977cde33e241_I_p9VHozJHW63SWgRulPHyVcexcZS4GxETy0-xxUlId3oQ27H0kMCmGDdfvLk9HWWW0CpdP-Jh6tImHuCxIYZrQS6vYoaUMokBZpQ0Rml5m7R_e2gJGyQghQxFs-KwtE6r941X7018CKIdDN0x04-Fg.png"
             loading="lazy"
             alt="A screenshot from THE FINALS."
           />
