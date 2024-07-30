@@ -12,7 +12,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6494b277fe84ae2482c3620b_unnamed.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6494b277fe84ae2482c3620b_unnamed.png"
             loading="lazy"
             alt='Banner reading "Activities are staying free for all".'
           />
