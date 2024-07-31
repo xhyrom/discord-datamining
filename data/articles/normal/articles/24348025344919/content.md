@@ -1,10 +1,9 @@
 <p id="docs-internal-guid-2a6e502d-7fff-a68b-f5a5-a2e7eea0868f">
   Starting from <strong>July 2, 2024</strong> <strong>(10:00am PST)</strong> to
-  <strong>August 1, 2024 (11:59pm PST)</strong>, free Duolingo learners can
-  claim 1 month of Discord Nitro. Learn below about how you can claim<a
-    href="https://support.discord.com/hc/en-us/articles/115000435108"
-  >
-    <span class="wysiwyg-underline" style="color: #1155cc"
+  <strong>August 31, 2024 (11:59pm PST)</strong>, free Duolingo learners can
+  claim 1 month of Discord Nitro. Learn below about how you can claim
+  <a href="https://support.discord.com/hc/en-us/articles/115000435108"
+    ><span class="wysiwyg-underline" style="color: #1155cc"
       >Discord Nitro</span
     ></a
   >.
@@ -59,7 +58,7 @@
   <strong>Requirements:</strong> Claim through the Duolingo iOS or Android
   mobile app by <strong>July 2, 2024</strong> <strong>(10:00am PST)</strong>,
   and redeem in your Discord account by
-  <strong>September 1, 2024 (11:59pm PST)</strong>.
+  <strong>September 30, 2024 (11:59pm PST)</strong>.
 </p>
 <p>
   <strong>Membership:</strong> After the 1 month trial period, your Nitro
@@ -292,7 +291,7 @@
 <p>
   Once you have claimed the promo, you'll now need to officially redeem this
   promo on your Discord account. You must redeem this Nitro trial by
-  <strong>September 1, 2024 (11:59pm PST).</strong>
+  <strong>September 30, 2024 (11:59pm PST).</strong>
 </p>
 <h2 id="h_01J1G47CER3T3FFVBY86VFYXWC">
   Eligibility for Redeeming the Nitro Trial
@@ -539,20 +538,20 @@
 <p>
   <strong>A:</strong> Eligible Duolingo users can claim Discord Nitro promo
   between
-  <strong>July 2, 2024 (10:00am PST) to August 1, 2024 (11:59pm PST).</strong>
+  <strong>July 2, 2024 (10:00am PST) to August 31, 2024 (11:59pm PST).</strong>
 </p>
 <p>
-  After <strong>August 1, 2024 (11:59pm PST)</strong>, eligible Duolingo users
+  After <strong>August 31, 2024 (11:59pm PST)</strong>, eligible Duolingo users
   will no longer be able to claim a trial promo.
 </p>
 <p><strong>Q: How long does the Discord Nitro promotion last for?</strong></p>
 <p>
   <strong>A:</strong> You must redeem the Nitro promotion by
-  <strong>September 1, 2024 (11:59pm PST)</strong>.
+  <strong>September 30, 2024 (11:59pm PST)</strong>.
 </p>
 <p>
   If a code has not been redeemed to the Discord account by
-  <strong>September 1, 2024 (11:59pm PST)</strong>, it will expire and you will
+  <strong>September 30, 2024 (11:59pm PST)</strong>, it will expire and you will
   no longer be able to have 1 month of Discord Nitro.
 </p>
 <h2 id="h_01J1G47CESR1W6PJSZMDVNDBBV">Eligibility for the Promotion</h2>
