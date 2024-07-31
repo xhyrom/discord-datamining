@@ -1,6 +1,6 @@
 # Job Listing
 
-## Account Executive, Gaming Advertising Solutions - West
+## Account Executive, Advertising Solutions (Quests) - West
 
 **Location:** San Francisco, CA or Remote (West Coast U.S.)
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7472970002](https://discord.com/jobs/7472970002)
 
-**Updated At:** Fri, 26 Jul 2024 00:05:55 GMT
+**Updated At:** Wed, 31 Jul 2024 01:23:38 GMT
 
 **Job Description:**
 This position is US based only.Discord is the place for all things gaming.&amp;nbsp; Discord is the place where players have their entire hangout experience with friends – from before, during, and after gaming sessions.&amp;nbsp; Discord is also the place where every major game publisher and studio maintains an official community.&amp;nbsp; And finally Discord is the place where the latest news, beta codes, and big gaming moments happen.&amp;nbsp;&amp;nbsp;

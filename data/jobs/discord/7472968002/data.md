@@ -1,6 +1,6 @@
 # Job Listing
 
-## Account Manager, Gaming Advertising Solutions - East
+## Account Manager, Advertising Solutions (Quests) - East
 
 **Location:** New York, NY or Remote (East Coast U.S.)
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7472968002](https://discord.com/jobs/7472968002)
 
-**Updated At:** Fri, 26 Jul 2024 00:10:25 GMT
+**Updated At:** Wed, 31 Jul 2024 01:24:42 GMT
 
 **Job Description:**
 This position is US based only.We are looking for an Account Manager who is passionate about managing, maintaining and growing our relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;

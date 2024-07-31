@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Software Engineer, Ads
+## Senior Software Engineer, Ads (Quests)
 
 **Location:** San Francisco, CA or Remote (U.S.)
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7531689002](https://discord.com/jobs/7531689002)
 
-**Updated At:** Fri, 26 Jul 2024 00:00:08 GMT
+**Updated At:** Wed, 31 Jul 2024 01:02:49 GMT
 
 **Job Description:**
 This position is US based only.
