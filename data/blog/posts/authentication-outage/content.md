@@ -83,7 +83,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65554f032ca59b02f43a41a4_mermaid-diagram-2023-11-08-144652.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65554f032ca59b02f43a41a4_mermaid-diagram-2023-11-08-144652.png"
             loading="lazy"
             alt='A chart starting at "API", and moving through "validate users", "Authentication Service", and ending on "scylla-authentication".'
           />
@@ -164,7 +164,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65555237eff274bf055e3e3b_Screenshot%202023-11-08%20at%204.46.15%20PM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65555237eff274bf055e3e3b_Screenshot%202023-11-08%20at%204.46.15%20PM.png"
             loading="lazy"
             alt='"discord-ap Availability" chart from November 6th, showing a drop just before 19:00 and ending around 19:45.'
           />
@@ -265,7 +265,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655555ee5834a96f71f6e2e9_Screenshot%202023-11-08%20at%206.57.05%20PM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/655555ee5834a96f71f6e2e9_Screenshot%202023-11-08%20at%206.57.05%20PM.png"
             loading="lazy"
             alt='Chart for "Load (scylla reactor) by Shard of Host" with many lines jumping during the 19:00 to 19:45 time period.'
           />

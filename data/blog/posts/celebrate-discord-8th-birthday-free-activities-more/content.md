@@ -65,7 +65,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf229fcb1fb19dd5b04ce_8a4f7021.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/645bf229fcb1fb19dd5b04ce_8a4f7021.png"
             alt="Alt-text: Key artwork for Discord’s Eighth Birthday. In bold, stylised lettering reads “Activities are free for all through June 15th.”"
             loading="lazy"
           />
@@ -87,7 +87,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6567c28eedfe018ab2439f66_8th%20Bday%20-%20Activities.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6567c28eedfe018ab2439f66_8th%20Bday%20-%20Activities.png"
             loading="lazy"
             alt="Two users playing an Activity in a Discord server. The Activity button is circled in the screenshot."
           />
@@ -222,7 +222,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3a4d16abf1f77400c80_0b31d378.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/645bf3a4d16abf1f77400c80_0b31d378.gif"
             alt="An animated preview of the new set of Avatar Decorations that are available during the birthday celebrations."
             loading="lazy"
           />
@@ -267,7 +267,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/646413426d105215a6ff86e6_Screenshot%202023-05-16%20at%204.30.32%20PM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/646413426d105215a6ff86e6_Screenshot%202023-05-16%20at%204.30.32%20PM.png"
             loading="lazy"
             alt='Discord Town Hall server located in Server Discovery, reading "Welcome to Discord Town Hall—the official place for general conversation as well as hanging out with the community."'
           />
@@ -309,7 +309,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3d67f62e35ae1e2f22c_0723eea4.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/645bf3d67f62e35ae1e2f22c_0723eea4.png"
             alt="A preview of the DISXCORE merch line, including three shirts, a sling bag and a Wumpus pin."
             loading="lazy"
           />
@@ -370,7 +370,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3fdf8b94559656e768b_5dfca559.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/645bf3fdf8b94559656e768b_5dfca559.png"
             alt="A preview of the special set of Riot-themed emojis."
             loading="lazy"
           />
