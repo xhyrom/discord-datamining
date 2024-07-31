@@ -12559,13 +12559,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enabled"
+        "Treatment 1: WEBP Enabled",
+        "Treatment 2: WEBM Enabled"
       ],
       "hash": 2427580333,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
