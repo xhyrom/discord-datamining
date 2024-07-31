@@ -8492,6 +8492,7 @@
   "CHAT_ATTACH_INVITE_TO_WATCH": "\"Invite !!{channel}!! to Watch !!{name}!!\"",
   "CHAT_ATTACH_USE_SLASH_COMMAND": "\"Use Apps\"",
   "CHAT_ATTACH_UPLOAD_TEXT_AS_FILE": "\"Upload your message as a file\"",
+  "CHAT_ATTACH_PLUS_BUTTON_A11Y_LABEL": "\"More message options\"",
   "CHANNEL_LOCKED_TO_CATEGORY": "\"Permissions synced with category: **{categoryName}**\"",
   "PERMISSIONS_UNSYNCED": "\"Permissions not synced with category: **{categoryName}**\"",
   "CONFIRM_CHANNEL_DRAG_TITLE": "\"Sync permissions?\"",
