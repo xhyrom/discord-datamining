@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Past activity enabled"
+      "Treatment 1: Past activity enabled",
+      "Treatment 2: Past and most recent activity enabled"
     ],
     "hash": 4175610728,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
