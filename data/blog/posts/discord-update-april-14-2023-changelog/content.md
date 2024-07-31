@@ -16,7 +16,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6441bb5d3394b50a6058a6c3_VoiceMessages_Changelog_1280x720_1%402x.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6441bb5d3394b50a6058a6c3_VoiceMessages_Changelog_1280x720_1%402x.png"
             loading="lazy"
             alt="Two friends using the voice messages feature to communicate on Discord"
           />

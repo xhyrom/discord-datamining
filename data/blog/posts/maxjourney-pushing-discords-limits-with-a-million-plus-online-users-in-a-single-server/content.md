@@ -52,7 +52,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65383f8878c471448f670f11_Fanout%20img%20002.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65383f8878c471448f670f11_Fanout%20img%20002.png"
             loading="lazy"
             alt=""
           />
@@ -135,7 +135,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65383fa42958fff301795b73_Screenshot%20Aug%2029%20Maxjourney.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65383fa42958fff301795b73_Screenshot%20Aug%2029%20Maxjourney.png"
             loading="lazy"
             alt='A line chart labeled "Guild % of time busy by message type."'
           />
@@ -213,7 +213,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65384120babecef04669da7a_Fanout%20001.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65384120babecef04669da7a_Fanout%20001.png"
             loading="lazy"
             alt="A chart representing a Guild tranferring to three separate relay sessions. One of the three Relay sessions splits off into two sessions, which move to Mobile and Desktop. The second Relay session moves to a mobile device. The third Relay session moves to a robot."
           />
