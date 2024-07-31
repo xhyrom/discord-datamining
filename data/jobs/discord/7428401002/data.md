@@ -1,6 +1,6 @@
 # Job Listing
 
-## Director of Sales, Gaming Ad Solutions - East
+## Director of Sales, Advertising Solutions (Quests) - East
 
 **Location:** New York, NY or Remote (East Coast U.S) 
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7428401002](https://discord.com/jobs/7428401002)
 
-**Updated At:** Thu, 25 Jul 2024 23:57:34 GMT
+**Updated At:** Wed, 31 Jul 2024 01:52:05 GMT
 
 **Job Description:**
 This position is US based only.Discord is the place for all things gaming. Discord is the place where players have their entire hangout experience with friends – from before, during, and after gaming sessions. Discord is also the place where every major game publisher and studio maintains an official community. And finally Discord is the place where the latest news, beta codes, and big gaming moments happen. &amp;nbsp;
