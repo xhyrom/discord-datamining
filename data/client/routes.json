@@ -4984,7 +4984,10 @@
   },
   "DELETE_MY_CONTENT_INVENTORY_OUTBOX_ENTRY_HISTORY": {
     "url": "/content-inventory/users/@me/outbox/entries/id/:param/history",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "MY_SPOTIFY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me/spotify",
