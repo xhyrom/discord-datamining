@@ -42,7 +42,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64bed95de8b66b6d4789a1ab_np07Z2Ekf20sALxux0SQBtdRYFw3cxG3b37RYN574gxIK3LP7_eexkmnd6ORF1syrCfIMC3O6uQdsW-DOt3b1ImQfe4FImPCeJK3CttgrjWi-zenQa-OWsGdmMwNcD7gOEaw6Ejsw9wWaAM9-YMqHWM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64bed95de8b66b6d4789a1ab_np07Z2Ekf20sALxux0SQBtdRYFw3cxG3b37RYN574gxIK3LP7_eexkmnd6ORF1syrCfIMC3O6uQdsW-DOt3b1ImQfe4FImPCeJK3CttgrjWi-zenQa-OWsGdmMwNcD7gOEaw6Ejsw9wWaAM9-YMqHWM.png"
             alt='An in-app preview of the Nitro BOGO Promo. On the Nitro tab in User Settings is a message that reads: "Buy Nitro &amp; Get 1 Month Free!" '
             loading="lazy"
           />
@@ -101,7 +101,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/649e02d14ef0f368c76e8352_iYKY5MAFPTRW5ZyMe0xuhYjmEi_FIGpq6qMz7vNgh6OulJeMW7lFSZ3t98qoEB0ReVZbBZMDrFUm_pCIFJBfjmyoGm4eWQ67f3qKOiy90PW2on27eWg4QOxfZRYUO24CmBSFGYA4mJeNfr6oDH6-T1U.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/649e02d14ef0f368c76e8352_iYKY5MAFPTRW5ZyMe0xuhYjmEi_FIGpq6qMz7vNgh6OulJeMW7lFSZ3t98qoEB0ReVZbBZMDrFUm_pCIFJBfjmyoGm4eWQ67f3qKOiy90PW2on27eWg4QOxfZRYUO24CmBSFGYA4mJeNfr6oDH6-T1U.png"
             alt="Two screenshots side-by-side. One shows the “Remix” prompt, while the other shows an image that’s had emojis, stickers, text and drawings bestowed upon it."
             loading="lazy"
           />
@@ -152,7 +152,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64bed9b6a1a8928d14cae2d2_w5xpCQ1diy5Z1XH2FCnZKBUhQrZTO3RG2g6O5Tdd0Soi274UbMfqvoWbTRRX1UqiB74fnDyyEw1bDVNHeb70oRjOhQg_dPJvjN4AAC7gXyBM8zWJlGg0RDX2i244XRbVUQ9uohAlGWIkkJrEQpdVTto.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64bed9b6a1a8928d14cae2d2_w5xpCQ1diy5Z1XH2FCnZKBUhQrZTO3RG2g6O5Tdd0Soi274UbMfqvoWbTRRX1UqiB74fnDyyEw1bDVNHeb70oRjOhQg_dPJvjN4AAC7gXyBM8zWJlGg0RDX2i244XRbVUQ9uohAlGWIkkJrEQpdVTto.png"
             alt="A collage of four theme colors on the Discord desktop app."
             loading="lazy"
           />
@@ -192,7 +192,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64bed9b705968c5f70474545_M3I0Ibzmd-0jfuTc4gy0F_1lfqr7ZOd0lL2uqaooYm1SHNkHd0NSayexO3vFlTi2VH7Fqb3-G9hIf2l56z70wn6kgqsn9NxYdcecVCdeHZe-5VzP7VT_eEu6sgbLcCqXUUv-4FadlIFNTBoqg-LbkGw.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64bed9b705968c5f70474545_M3I0Ibzmd-0jfuTc4gy0F_1lfqr7ZOd0lL2uqaooYm1SHNkHd0NSayexO3vFlTi2VH7Fqb3-G9hIf2l56z70wn6kgqsn9NxYdcecVCdeHZe-5VzP7VT_eEu6sgbLcCqXUUv-4FadlIFNTBoqg-LbkGw.png"
             alt="A screenshot of Discord’s desktop app. The user is in a Voice call, and the Soundboard panel is opened up."
             loading="lazy"
           />
