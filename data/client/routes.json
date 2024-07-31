@@ -903,6 +903,10 @@
       "OPTIONS"
     ]
   },
+  "COLLECTIBLES_MARKETING": {
+    "url": "/users/@me/collectibles-marketing",
+    "allowed_methods": null
+  },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
     "allowed_methods": null
