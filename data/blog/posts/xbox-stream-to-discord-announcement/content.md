@@ -50,7 +50,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64c949cbcdc69ba8187888a1_wA3eAcEvlfK-nB3SUR00Hdm26uNLsBF8XIq5XWwlfQ1Ai1oDnp9L0Z2DbtZI89SubmC8cPvT6VUPceeDc-SxjEZ6D3D5eFGGHXOqVwN49fe88cC3nwaWsvydFod8itPw1GE0NWdYOdTA3PjEFzydNmA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64c949cbcdc69ba8187888a1_wA3eAcEvlfK-nB3SUR00Hdm26uNLsBF8XIq5XWwlfQ1Ai1oDnp9L0Z2DbtZI89SubmC8cPvT6VUPceeDc-SxjEZ6D3D5eFGGHXOqVwN49fe88cC3nwaWsvydFod8itPw1GE0NWdYOdTA3PjEFzydNmA.png"
             loading="lazy"
             alt="A screenshot of an Xbox in the middle of a Discord Voice call. The player using the Xbox is playing Sea of Thieves in the background, and they have the new “Stream your game” option highlighted, implying they’re about to Stream to Discord from their Xbox."
           />
@@ -108,7 +108,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64c949ef1435063628483aba_TmkRi3asrZEidaKNlMnXjxPd3eESP5emHwcfOvCVhrNWpOhpnVZeZm7Ji3htE9OY1rqTh4Zll0F0T2JCqnrMSYAJLesWej1bLmciZIUrM-TexI0ixKL7ApG_iEWVc8S-eYTDH_1kMQ2j9_rF3JPWEZ0.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64c949ef1435063628483aba_TmkRi3asrZEidaKNlMnXjxPd3eESP5emHwcfOvCVhrNWpOhpnVZeZm7Ji3htE9OY1rqTh4Zll0F0T2JCqnrMSYAJLesWej1bLmciZIUrM-TexI0ixKL7ApG_iEWVc8S-eYTDH_1kMQ2j9_rF3JPWEZ0.png"
             loading="lazy"
             alt="The User Settings menu of the Discord desktop app. The “Connections” tab is opened, and option to connect an Xbox account to your Discord profile is highlighted by a dotted circle.&nbsp;&nbsp;"
           />
@@ -178,7 +178,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png"
             loading="lazy"
             alt=""
           />
