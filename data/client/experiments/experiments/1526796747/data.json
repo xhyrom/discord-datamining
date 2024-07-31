@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_rapidash_m3_joiners",
+    "label": "Rapidash M3 Users",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Targeted users"
+    ],
+    "hash": 1526796747,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
