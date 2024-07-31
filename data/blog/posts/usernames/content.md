@@ -236,7 +236,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645c2a012698cf52d94bbb25_Username%20example.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/645c2a012698cf52d94bbb25_Username%20example.png"
             loading="lazy"
             alt='A Discord profile with a new username. Their username is now "phibiscool," and their display name is "PhiBi."'
           />
