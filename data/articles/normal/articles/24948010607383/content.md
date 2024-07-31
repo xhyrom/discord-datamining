@@ -40,8 +40,8 @@
 <p>
   <strong>Availability Period:</strong> The
   <strong>Lovestruck Quest</strong> can be accepted on Discord from
-  <strong>July 25, 2024</strong> until
-  <strong>July 30, 2024 (11:59pm UTC)</strong>.
+  <strong>July 25, 2024</strong> until <strong>August 1, 2024</strong
+  ><strong> (11:59pm UTC)</strong>.
 </p>
 <p>
   Quest requirements must be completed during this period to receive the reward.
@@ -79,11 +79,11 @@
   Once you have completed the Quest by playing 15 minutes of
   <strong>Sims 4</strong> on Discord, you’ll be able to claim the
   <strong>Freezer Bunny Lovebug</strong>. The Sims 4 avatar decoration needs to
-  be redeemed by <strong>September 30, 2024</strong>.
+  be redeemed by <strong>September 1, 2024</strong>.
 </p>
 <h3 id="h_01J3EN18BC4C60FEBA79MTZN28">
-  Note: If the Quest is not completed by July 30, 2024, the Quest will no longer
-  be available within your Gift Inventory.
+  Note: If the Quest is not completed by August 1, 2024, the Quest will no
+  longer be available within your Gift Inventory.
 </h3>
 <p>
   You can use the following methods to claim your

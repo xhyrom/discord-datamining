@@ -80,10 +80,11 @@
 </h2>
 <p>
   The <strong>Lovestruck Quest</strong> can be accepted on Discord from
-  <strong>July 25, 2024</strong> until <strong>July 30, 2024</strong>
-  <strong>(11:59pm UTC)</strong>. The Freezer Bunny Lovebug avatar decoration
-  needs to be redeemed by <strong>September 30, 2024</strong>. Quest
-  requirements must be completed during this period to receive the reward.
+  <strong>July 25, 2024</strong> until <strong>August 1</strong
+  ><strong>, 2024</strong> <strong>(11:59pm UTC)</strong>. The Freezer Bunny
+  Lovebug avatar decoration needs to be redeemed by
+  <strong>September 1, 2024</strong>. Quest requirements must be completed
+  during this period to receive the reward.
 </p>
 <h2 id="h_01J1XC6E97615MWHRQBWGP3T9T">
   <a
