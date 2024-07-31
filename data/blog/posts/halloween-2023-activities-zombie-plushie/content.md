@@ -117,7 +117,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/652f08db9f17d2f460c64e90_g9pV_E3csWLIzx4rW3L9Qg4PglknLIuxjKNiBWK3jRg8c2nxLp6QsIDr1A9rwzQTU92TBTzwlFlo3nHu-vfQRC2Q2VBKJNT-VQ0Z1iM7VjU9mCv864FT91BbmhxvKbUeaEFhwqmr-sz6AIvfrXGa4Jw.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/652f08db9f17d2f460c64e90_g9pV_E3csWLIzx4rW3L9Qg4PglknLIuxjKNiBWK3jRg8c2nxLp6QsIDr1A9rwzQTU92TBTzwlFlo3nHu-vfQRC2Q2VBKJNT-VQ0Z1iM7VjU9mCv864FT91BbmhxvKbUeaEFhwqmr-sz6AIvfrXGa4Jw.png"
             loading="lazy"
             alt="A photo of the Zombie Wumpus plushie. It’s holding a brain, has zombie-like stitches all over, and has a spider crawling from its ear. "
           />
@@ -166,7 +166,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/652f08dbf28c68155f62d6d5_zFIme23es_QWFLAul_nJi453FWLyjeqJnc0UIhTPAK_k3u8O2vehRen7wCAe2X265cMTvnHUa0OA1Lnbaj5NRJDXQV4dip-zkB-7BgonnZuDSdzJLoYxT3In4-1Nkc0kvRyDDKmoDkLfhRN4k0Dyl5s.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/652f08dbf28c68155f62d6d5_zFIme23es_QWFLAul_nJi453FWLyjeqJnc0UIhTPAK_k3u8O2vehRen7wCAe2X265cMTvnHUa0OA1Lnbaj5NRJDXQV4dip-zkB-7BgonnZuDSdzJLoYxT3In4-1Nkc0kvRyDDKmoDkLfhRN4k0Dyl5s.png"
             loading="lazy"
             alt="A preview of the Halloween-specific Shop section."
           />
