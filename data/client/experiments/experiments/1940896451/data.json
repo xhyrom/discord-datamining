@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_persistent_reaction_button",
+    "label": "Persistent Reaction Button (Desktop)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show the reaction button next to message reactions on Desktop"
+    ],
+    "hash": 1940896451,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
