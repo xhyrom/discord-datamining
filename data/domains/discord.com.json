@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 60,
+  "subdomain_count": 63,
   "subdomains": [
     "support",
     "blog",
@@ -28,6 +28,7 @@
     "pax",
     "snowsgiving-tale-2022-de",
     "app",
+    "prod-wf2",
     "o21.ptr6759",
     "o15.ptr9908",
     "o17.ptr8588",
@@ -49,8 +50,10 @@
     "snowsgiving-tale-2022-zh-tw",
     "snowsgiving-tale-2022-tr",
     "snowsgiving-tale-2022-pl",
+    "prod-wf1",
     "snowsgiving-tale-2022-sv-se",
     "seo",
+    "prod-wf3",
     "o24.ptr4166",
     "crawl-35-196-132-85.ptr",
     "updates",
