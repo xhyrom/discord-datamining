@@ -1146,7 +1146,8 @@
 </h1>
 <h3 id="h_01J3Z9Z0HG8WPQZW74M2QNZTR6">
   <span style="color: #434343" data-darkreader-inline-color=""
-    >This feature is currently only available for Xbox Insiders.</span
+    >This feature is currently rolling out and only available for Xbox
+    Insiders.</span
   >
 </h3>
 <p>
@@ -1157,9 +1158,7 @@
 </p>
 <h1 id="h_01J3Z9Z0HGSAHPZVR155HQQJQG">How to Watch a Stream on Your Xbox</h1>
 <h3 id="h_01J3Z9Z0HHB63X3DZDZK2NN6BW">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >This feature is currently only available for Xbox Insiders.</span
-  >
+  This feature is currently rolling out and only available for Xbox Insiders.
 </h3>
 <p>
   You can now watch a stream on Discord through your Xbox console. Here’s how:
