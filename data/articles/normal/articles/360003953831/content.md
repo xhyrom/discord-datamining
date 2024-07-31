@@ -135,6 +135,16 @@
     >
   </li>
   <li style="font-weight: 400" aria-level="1">
+    <a href="#h_01J3Z9Z0HG2QA15FXST4NHNQKX"
+      >How to View Your Discord Friend’s List on Your Xbox</a
+    >
+  </li>
+  <li style="font-weight: 400" aria-level="1">
+    <a href="#h_01J3Z9Z0HGSAHPZVR155HQQJQG"
+      >How to Watch a Stream on Your Xbox</a
+    >
+  </li>
+  <li style="font-weight: 400" aria-level="1">
     <a href="#h_01G8DY5V80CNBEY9FWHN8BDEHY" target="_self"
       >Frequently Asked Questions</a
     >
@@ -993,24 +1003,44 @@
   to “<strong>Everybody</strong>”. 
 </p>
 <h3 id="docs-internal-guid-b1f72d0e-7fff-d1a6-41b2-0a1483425d4c">
-  <strong><span style="color: #434343">Note</span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Note</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >: Make sure your online status is not hidden:<br /></span
-  ><span style="color: #434343">- On your Xbox console, go to </span
-  ><strong><span style="color: #434343">Xbox home screen</span></strong
-  ><span style="color: #434343"> and open your </span
+  ><span style="color: #434343" data-darkreader-inline-color=""
+    >- On your Xbox console, go to </span
   ><strong
-    ><span style="color: #434343">Xbox profile.<br /></span></strong
-  ><span style="color: #434343">- </span
-  ><span style="color: #434343">Your </span
-  ><strong><span style="color: #434343">Xbox status</span></strong
-  ><span style="color: #434343"> should be “</span
-  ><strong><span style="color: #434343">Appear online</span></strong
-  ><span style="color: #434343">” and </span
-  ><em><span style="color: #434343">not</span></em
-  ><span style="color: #434343"> “</span
-  ><strong><span style="color: #434343">Appear offline</span></strong
-  ><span style="color: #434343">”.</span>
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Xbox home screen</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">
+    and open your </span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Xbox profile.<br /></span></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">- </span
+  ><span style="color: #434343" data-darkreader-inline-color="">Your </span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Xbox status</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">
+    should be “</span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Appear online</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">” and </span
+  ><em
+    ><span style="color: #434343" data-darkreader-inline-color="">not</span></em
+  ><span style="color: #434343" data-darkreader-inline-color=""> “</span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Appear offline</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">”.</span>
 </h3>
 <h1 id="h_01J1TW7WY3DGDCJF403X47M4Z5">Stream Gameplay to Discord from Xbox</h1>
 <h3 id="h_01H9NM34SJGGDTBCMYQ1CEJN6B">
@@ -1111,6 +1141,37 @@
     >.</span
   >
 </h3>
+<h1 id="h_01J3Z9Z0HG2QA15FXST4NHNQKX">
+  How to View your Discord Friend’s List on Your Xbox
+</h1>
+<h3 id="h_01J3Z9Z0HG8WPQZW74M2QNZTR6">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >This feature is currently only available for Xbox Insiders.</span
+  >
+</h3>
+<p>
+  If you’ve connected your Xbox account to Discord, you can opt-in to have your
+  Discord friends displayed in the Xbox Guide Friends List. Your Discord friends
+  will be displayed under <strong>Happening now</strong>, if they are playing a
+  game or chatting in a Discord voice channel.
+</p>
+<h1 id="h_01J3Z9Z0HGSAHPZVR155HQQJQG">How to Watch a Stream on Your Xbox</h1>
+<h3 id="h_01J3Z9Z0HHB63X3DZDZK2NN6BW">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >This feature is currently only available for Xbox Insiders.</span
+  >
+</h3>
+<p>
+  You can now watch a stream on Discord through your Xbox console. Here’s how:
+</p>
+<p>1. Open up your active call’s member list within the Xbox guide.</p>
+<p>
+  2. Select the profile of someone that is currently streaming and then tap on
+  <strong>Watch Stream</strong>.
+</p>
+<p>
+  3. Their stream should now display in full-screen for you to watch and enjoy!
+</p>
 <h1 id="h_01G8DY5V80CNBEY9FWHN8BDEHY">
   <span style="font-weight: 400">Frequently Asked Questions</span>
 </h1>
