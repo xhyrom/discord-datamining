@@ -92,7 +92,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65457fdadb0c3f9422781dcc_IigbKIgUPZSPoIa_zyEsHrVcnRlxqIqpSDNg67F0Nf_m8xHPO061EjTuN-ovJSQHiLGf2DTheORjgUxv9XcjRs87WdZOxOLLyFy20Nh7mQ_jdvaBE2kNsd-MUXjLUn60Zcb_y-9RGxaRmrXthGGF6aY.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65457fdadb0c3f9422781dcc_IigbKIgUPZSPoIa_zyEsHrVcnRlxqIqpSDNg67F0Nf_m8xHPO061EjTuN-ovJSQHiLGf2DTheORjgUxv9XcjRs87WdZOxOLLyFy20Nh7mQ_jdvaBE2kNsd-MUXjLUn60Zcb_y-9RGxaRmrXthGGF6aY.png"
             alt=""
             loading="lazy"
           />

@@ -78,7 +78,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/651470eb49519b35ab89e4a8_O5wd-8e6sE9dyluYfqqj1CeThwerhpl88okrL2IrqGXhcDRrcvro4_OtABDtHLJw0mvEWvn7Obj1ZGU1tLP0hVh96xgSTEoSM-NCvRHuPvhYhK4Zn4pY8HFMVpxVNmski0ILqqMjet1N99EUZB6odvU.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/651470eb49519b35ab89e4a8_O5wd-8e6sE9dyluYfqqj1CeThwerhpl88okrL2IrqGXhcDRrcvro4_OtABDtHLJw0mvEWvn7Obj1ZGU1tLP0hVh96xgSTEoSM-NCvRHuPvhYhK4Zn4pY8HFMVpxVNmski0ILqqMjet1N99EUZB6odvU.gif"
             loading="lazy"
             alt="A demonstration of the shop in action. A user is scrolling through the “Fantasy” section of the shop, and getting a closer inspection of the “Magical Potion” avatar decoration."
           />
@@ -178,7 +178,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6514742dc2ac93f91825414b_U5i6Q9F60XOyRwjiFjc4_6AmrqLDWwjGGQdYZgWw-ualUHlUN5luejr_vVB4AcyLGgelfKvvZz3xIl83Wubua6VY5g-9gs7z8sq0sTPEQbetLRH9iVYqRXIKHcD3q4I8l3KtJ4ja0j5TZXdr0abgaY4.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6514742dc2ac93f91825414b_U5i6Q9F60XOyRwjiFjc4_6AmrqLDWwjGGQdYZgWw-ualUHlUN5luejr_vVB4AcyLGgelfKvvZz3xIl83Wubua6VY5g-9gs7z8sq0sTPEQbetLRH9iVYqRXIKHcD3q4I8l3KtJ4ja0j5TZXdr0abgaY4.gif"
             loading="lazy"
             alt="A user on Discord picking between a handful of Avatar Decorations to equip and use."
           />
@@ -208,7 +208,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/652856ae6bbf2622b43b30ae_Q3aiF4uAyylU3xqREbuGEZb39Yh1jLvBjhqL4pPcQrlJ7cQIiXBrhGpwPy22t7oKc_7OT1k779AIWZNgj7ZdqjnybVKxC-i708ceEr3gk1CLW4NxbF2QdYUaNSXlppNJcxBCoVyXAxLRs0EXrzsyhOo.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/652856ae6bbf2622b43b30ae_Q3aiF4uAyylU3xqREbuGEZb39Yh1jLvBjhqL4pPcQrlJ7cQIiXBrhGpwPy22t7oKc_7OT1k779AIWZNgj7ZdqjnybVKxC-i708ceEr3gk1CLW4NxbF2QdYUaNSXlppNJcxBCoVyXAxLRs0EXrzsyhOo.gif"
             loading="lazy"
             alt=""
           />

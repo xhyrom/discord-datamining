@@ -55,7 +55,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/644afca3ba70fd01f89a3647_e17fb9fa.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/644afca3ba70fd01f89a3647_e17fb9fa.png"
             alt="The server icon, name, and banner for the partnered “Design Buddies” server."
             loading="lazy"
           />
@@ -103,7 +103,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/644afca4a05d738266c9837f_2eab8b42.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/644afca4a05d738266c9837f_2eab8b42.png"
             loading="lazy"
             alt=""
           />

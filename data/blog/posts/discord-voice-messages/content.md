@@ -48,7 +48,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6437324beea4affa1feaa3e2_bkeEn_gZwAqmFr1dfyI9OghzjrD-2RlLrZ5mWi8dMUpmWOJksOGSYjResmf8z-JlLAYgvmhKoidB-Hx5fSbXrp9wbrqjYQmvZk39DJrn4liaj0yI6dn3lY6Tgd5lWxEBAYwXqLkJ5OfcYXlh9XhRngg.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6437324beea4affa1feaa3e2_bkeEn_gZwAqmFr1dfyI9OghzjrD-2RlLrZ5mWi8dMUpmWOJksOGSYjResmf8z-JlLAYgvmhKoidB-Hx5fSbXrp9wbrqjYQmvZk39DJrn4liaj0yI6dn3lY6Tgd5lWxEBAYwXqLkJ5OfcYXlh9XhRngg.gif"
             alt="An animated GIF demonstrating how to send a Voice Message. The user is holding down a microphone button, speaking into their mobile device, and letting go of the button to send off their message.&nbsp;"
             loading="lazy"
           />
@@ -89,7 +89,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6437324c17c2bacb78c95600_yOARInZ73h-WR-JxiN_sDH47NkHc1Sza1ibjTv4VC04rK4F7vGxRvK7suvrFB7l9BwGCmYmGAn1_HX0ot9Zwcfv8q_dF4RtKjgBPrBRFvyHkYzuLWZoHnBDUwoPiZt_c8MElyuBfj0eASEPc5CuOke8.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6437324c17c2bacb78c95600_yOARInZ73h-WR-JxiN_sDH47NkHc1Sza1ibjTv4VC04rK4F7vGxRvK7suvrFB7l9BwGCmYmGAn1_HX0ot9Zwcfv8q_dF4RtKjgBPrBRFvyHkYzuLWZoHnBDUwoPiZt_c8MElyuBfj0eASEPc5CuOke8.png"
             loading="lazy"
             alt=""
           />
