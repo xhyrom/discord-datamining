@@ -50,7 +50,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/649e02d14ef0f368c76e8352_iYKY5MAFPTRW5ZyMe0xuhYjmEi_FIGpq6qMz7vNgh6OulJeMW7lFSZ3t98qoEB0ReVZbBZMDrFUm_pCIFJBfjmyoGm4eWQ67f3qKOiy90PW2on27eWg4QOxfZRYUO24CmBSFGYA4mJeNfr6oDH6-T1U.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/649e02d14ef0f368c76e8352_iYKY5MAFPTRW5ZyMe0xuhYjmEi_FIGpq6qMz7vNgh6OulJeMW7lFSZ3t98qoEB0ReVZbBZMDrFUm_pCIFJBfjmyoGm4eWQ67f3qKOiy90PW2on27eWg4QOxfZRYUO24CmBSFGYA4mJeNfr6oDH6-T1U.png"
             alt="Two screenshots side-by-side. One shows the “Remix” prompt, while the other shows an image that’s had emojis, stickers, text and drawings bestowed upon it."
             loading="lazy"
           />

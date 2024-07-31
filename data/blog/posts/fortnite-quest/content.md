@@ -23,7 +23,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64503af18bcc502e25656301_2a6761a0.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64503af18bcc502e25656301_2a6761a0.png"
             alt="A preview image of the Coruscant's Pride Wrap from Fortnite."
             loading="lazy"
           />
@@ -82,7 +82,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64503b1ac749500384f03e3e_57602271.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64503b1ac749500384f03e3e_57602271.png"
             alt="A screensharing session in a Discord server. Someone is streaming Fortnite!"
             loading="lazy"
           />
@@ -184,7 +184,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64503b662c55143c2f2daddf_39b7716b.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64503b662c55143c2f2daddf_39b7716b.png"
             alt="The “Gift Inventory” screen in User Settings on desktop. A Fortnite promotion is able to be redeemed.&nbsp;"
             loading="lazy"
           />
@@ -212,7 +212,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64503b66d707dd30fd5791f6_d38ad9b1.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64503b66d707dd30fd5791f6_d38ad9b1.png"
             loading="lazy"
             alt=""
           />
