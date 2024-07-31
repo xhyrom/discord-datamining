@@ -4,13 +4,13 @@
 
 **Location:** Netherlands
 
-**Id:** 7489761002 <br/>
+**Id:** 7574349002 <br/>
 **Internal Job Id:** 5936344002 <br/>
 **Requisition Id:** Pipeline Req 1234 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/7489761002](https://discord.com/jobs/7489761002)
+**Discord Jobs:** [https://discord.com/jobs/7574349002](https://discord.com/jobs/7574349002)
 
-**Updated At:** Thu, 18 Jul 2024 16:34:51 GMT
+**Updated At:** Wed, 31 Jul 2024 02:35:36 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
@@ -37,7 +37,7 @@ What you should have
 
 Proficiency in troubleshooting account-related issues.
 Excellent communication skills, both written and verbal, with the ability to explain technical concepts clearly to non-technical users.
-Multilingual in English and one or more of the following languages: Brazilian Portuguese, Russian, French, German, and Turkish with both written and speaking fluency.
+Multilingual in English and Brazilian Portuguese.
 Ability to work collaboratively in a fast-paced environment and prioritize tasks effectively.
 Technical skills with knowledge of desktop and mobile operating systems.
 Experience with customer service solutions platforms.
@@ -45,7 +45,6 @@ A passion for building communities and belief in our mission at Discord.
 A commitment to diversity and inclusion.
 Experience with customer support or technical support roles is required, as well as a passion for supporting our users with unwavering patience and empathy.
 
-&amp;nbsp;
 ***Note - the benefits listed here are for US based locations.***About Us
 Discord is a voice, video and text app that helps friends and communities come together to hang out and explore their interests — from artists and activists, to study groups, sneakerheads, plant parents, and more. With 150 million monthly users across 19 million active communities, called servers, Discord has grown to become one of the most popular communications services in the world. Discord was built without selling ads or user data and instead, offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
 We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. So if this strikes a chord with you, come build belonging with us!
