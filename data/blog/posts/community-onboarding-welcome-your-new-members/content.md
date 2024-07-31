@@ -33,7 +33,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/643ef58d99d2c21e24ca8c6b_onboarding-mobile-horizontal-gif.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/643ef58d99d2c21e24ca8c6b_onboarding-mobile-horizontal-gif.gif"
             loading="lazy"
             alt="An animated GIF demonstrating how Discord’s new Onboarding feature works."
           />

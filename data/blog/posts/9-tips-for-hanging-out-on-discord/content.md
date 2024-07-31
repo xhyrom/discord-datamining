@@ -44,7 +44,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654167fba2237476571a364c_T-ia1Tc7Oy8BZ1liQVzbAvpBu6nSIy1pp4sgfmsuhFB2xnWfdOTGaYk0icYMdPz5qp6l0smg_VDViMhCKcWIUVjriyGGEni_STPmG0ZYaiSwhaoPes3mzwCRsHhiBVUggJd2ERZFm_KarYyJZDIu7Cc.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654167fba2237476571a364c_T-ia1Tc7Oy8BZ1liQVzbAvpBu6nSIy1pp4sgfmsuhFB2xnWfdOTGaYk0icYMdPz5qp6l0smg_VDViMhCKcWIUVjriyGGEni_STPmG0ZYaiSwhaoPes3mzwCRsHhiBVUggJd2ERZFm_KarYyJZDIu7Cc.png"
             loading="lazy"
             alt="A very long message about to be posted in a Discord channel. It has no formatting applied, so it’s one giant block of text that’s hard to parse through."
           />
@@ -66,7 +66,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654167fb5ae3bcd1ac2d6b11_0CQLPEmMI3l9a_TeI20F_FRzuY7m7IEYIU1s5F4eIYm1xUmLWxXKQoSrrWSko-ln74l7LsgPdrAs6xXBxgbz9pawyKxNaDcWRqOU2DR7QbBCNR41W5IID3wWDFWiNadSXYuXRXgL57vaMhGeZNv8IVI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654167fb5ae3bcd1ac2d6b11_0CQLPEmMI3l9a_TeI20F_FRzuY7m7IEYIU1s5F4eIYm1xUmLWxXKQoSrrWSko-ln74l7LsgPdrAs6xXBxgbz9pawyKxNaDcWRqOU2DR7QbBCNR41W5IID3wWDFWiNadSXYuXRXgL57vaMhGeZNv8IVI.png"
             loading="lazy"
             alt="A very long Discord message posted in a channel. It’s using formatting to make the message easier to parse through.&nbsp;"
           />
@@ -93,7 +93,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6541681187381fbd44cdf8d8_Ov9e1KdPJGN4v5SRriB5WXYK2lDM8O_l9H6r8xdhBCzAoHHslJJ1Cr6p70nAaA9_D0VypMBznQ-VsTvlZklX3E7By-v_ozoZ_S47aufUs-k8e34ZKoEaL1tFcUtftVd1bQvwHLkGBQg8oVvayt0gBWI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6541681187381fbd44cdf8d8_Ov9e1KdPJGN4v5SRriB5WXYK2lDM8O_l9H6r8xdhBCzAoHHslJJ1Cr6p70nAaA9_D0VypMBznQ-VsTvlZklX3E7By-v_ozoZ_S47aufUs-k8e34ZKoEaL1tFcUtftVd1bQvwHLkGBQg8oVvayt0gBWI.png"
             loading="lazy"
             alt="The Friend Requests menu in User Settings. Toggles for allowing “Everyone,” “Friends of Friends,” or “Server Members” to send the user a friend request are shown.&nbsp;"
           />
@@ -111,7 +111,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65416821fb621f06b100a0eb_VLE-sJEo3PCbHGGyNpljKjcdtRybzrd3WjNGbAWd4umdOfaLv2ZukVaYxvdiXZlXzi-L32qVMX96XxRuKZhJaznBMioaAwdrxVLuCG9knNqtBOGUHgqlfUwj6jv5YeDv3nMLPORnq_aulg3J_xM8z1w.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65416821fb621f06b100a0eb_VLE-sJEo3PCbHGGyNpljKjcdtRybzrd3WjNGbAWd4umdOfaLv2ZukVaYxvdiXZlXzi-L32qVMX96XxRuKZhJaznBMioaAwdrxVLuCG9knNqtBOGUHgqlfUwj6jv5YeDv3nMLPORnq_aulg3J_xM8z1w.png"
             loading="lazy"
             alt="The “Copy Link” button for a Voice channel highlighted.&nbsp;"
           />
@@ -147,7 +147,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6541684bc7a287181060ab06_wssMRFt_6vIzqBhINaFvn4UxBXDaeGgpCLMkC1wCiJz0-3iM6LD6RgqPjmkhzSHPJpXVFkTNd4O-UgDdVoCnJIwnF6RTNGhgnmeZ1-4fjXxDLRbN08RmbU-9yfm7aAgvqpIWgk5J6j9ergQOF0Td6JY.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6541684bc7a287181060ab06_wssMRFt_6vIzqBhINaFvn4UxBXDaeGgpCLMkC1wCiJz0-3iM6LD6RgqPjmkhzSHPJpXVFkTNd4O-UgDdVoCnJIwnF6RTNGhgnmeZ1-4fjXxDLRbN08RmbU-9yfm7aAgvqpIWgk5J6j9ergQOF0Td6JY.png"
             loading="lazy"
             alt="The Inbox in Discord. The “Mentions” tab is shown, showing the user the last time someone mentioned them in a channel."
           />
@@ -184,7 +184,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65416863c7a287181060c2f0_71uc4DqFwoCvJy3wxbEhIPbWG8_wQ_3zkQqtF1BAhAyUfw5ZW9EGag80RpMpsqZSm8d2HKjpWftFgM8_iZ8yCAGhvzymGloZNyrW0EhNr86L2cUDTTtMBJPW_tR4KcWgc__f2de2pXNWMlMrWZ7ZOeE.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65416863c7a287181060c2f0_71uc4DqFwoCvJy3wxbEhIPbWG8_wQ_3zkQqtF1BAhAyUfw5ZW9EGag80RpMpsqZSm8d2HKjpWftFgM8_iZ8yCAGhvzymGloZNyrW0EhNr86L2cUDTTtMBJPW_tR4KcWgc__f2de2pXNWMlMrWZ7ZOeE.png"
             loading="lazy"
             alt="The Discord Inbox, this time focused on the “Mark Inbox as Read” button."
           />
@@ -222,7 +222,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65416875b796fac9cd798e42_9I8mAGuP5hMbyTc85a976VmkdC2-TIdyIK2zxxnuW5LClEitGzY_FxrpidmnbAozHDNUAoy9t4wQeF9YK-SbBLuBNSZFZC9zKaKmlxnEqaS1H_v5iJIuLb4jCua1sVOgIl_3i8IahfekKAXfyCAkVzQ.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65416875b796fac9cd798e42_9I8mAGuP5hMbyTc85a976VmkdC2-TIdyIK2zxxnuW5LClEitGzY_FxrpidmnbAozHDNUAoy9t4wQeF9YK-SbBLuBNSZFZC9zKaKmlxnEqaS1H_v5iJIuLb4jCua1sVOgIl_3i8IahfekKAXfyCAkVzQ.png"
             loading="lazy"
             alt="The “Notifications” page inside User Settings. A handful of customization options are displayed."
           />
@@ -245,7 +245,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654168758aafb865dbc2d28d_-H-v6N3_NK0Y1dThqgQahggIVNRuvxjblWXHj6gydupyL0ywTODMEJ9rr_OGOo5ng9OAIY3zZa01wnXzhC7oQfaHe0Zywe8H_ASxRNKqgL-lFCUdCXl6yI_saY2p8LoAtNnZZ0jRz8rdgRtnVbb8Zhw.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654168758aafb865dbc2d28d_-H-v6N3_NK0Y1dThqgQahggIVNRuvxjblWXHj6gydupyL0ywTODMEJ9rr_OGOo5ng9OAIY3zZa01wnXzhC7oQfaHe0Zywe8H_ASxRNKqgL-lFCUdCXl6yI_saY2p8LoAtNnZZ0jRz8rdgRtnVbb8Zhw.png"
             loading="lazy"
             alt=" The per-server notification settings, access by the user right-clicking on one of their servers."
           />
@@ -270,7 +270,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65416875cec02eac3022acc2_90qJxEA0AvomULi4E4p--Cl8vq-OVVj5Dgezt_raIDFbw9QeGORczxcwySNT3L6YdekWv-DNJzboY8QX0rPkyxWPOdANtiVLY2jYaJ-gcxe_UEaA5F_4TaNwVPnmpbdYiGsBuJKH3h-HsNw4YvMg5fY.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65416875cec02eac3022acc2_90qJxEA0AvomULi4E4p--Cl8vq-OVVj5Dgezt_raIDFbw9QeGORczxcwySNT3L6YdekWv-DNJzboY8QX0rPkyxWPOdANtiVLY2jYaJ-gcxe_UEaA5F_4TaNwVPnmpbdYiGsBuJKH3h-HsNw4YvMg5fY.png"
             loading="lazy"
             alt="The Notification Settings of a server. The user has a handful of Overrides enabled, letting them pick and choose what they want notifications from.&nbsp;"
           />
@@ -303,7 +303,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654175c0f922c1c382f4f40e_Server%20Folder%204MB.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654175c0f922c1c382f4f40e_Server%20Folder%204MB.gif"
             loading="lazy"
             alt="A user drag-and-dropping a server on top of another server, creating a Folder that contains the two servers in it.&nbsp;"
           />
@@ -333,7 +333,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654168bb2f2282b19a3e8969_h5c8l4o-KAxytzagMa_nT2rm5TaiBm9f_FpWf3TWTzAuwzn5A6TdhI1La21gzggn-Qle1926f7SHWWdMhSsy8Amskdo8sXq0MrrAgE6Be618TmKXHN36wnG3vsyTPcPhoaxfatsD99YNLVAf-aqGezk.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654168bb2f2282b19a3e8969_h5c8l4o-KAxytzagMa_nT2rm5TaiBm9f_FpWf3TWTzAuwzn5A6TdhI1La21gzggn-Qle1926f7SHWWdMhSsy8Amskdo8sXq0MrrAgE6Be618TmKXHN36wnG3vsyTPcPhoaxfatsD99YNLVAf-aqGezk.png"
             loading="lazy"
             alt="The per-user settings in a Voice Channel. The buttons shown include things like adjusting a particular user’s volume, muting them or their soundboard, or disabling their Video."
           />
@@ -351,7 +351,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654168bb161dc3060fc797a5_UUCemKk6TStaRMwoNua0GYZB3eMXFr7_aNoiVITuJVowyYKoOPhvdpK8V6-1TT_ROWcI7b7hXaaWKA9ZgycBJcdXLE_guWsGoAUiYrLHTmh7N6VbedvVCdG0natQwJv8yx_-Q_DqE0gFYqpapVCUBak.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654168bb161dc3060fc797a5_UUCemKk6TStaRMwoNua0GYZB3eMXFr7_aNoiVITuJVowyYKoOPhvdpK8V6-1TT_ROWcI7b7hXaaWKA9ZgycBJcdXLE_guWsGoAUiYrLHTmh7N6VbedvVCdG0natQwJv8yx_-Q_DqE0gFYqpapVCUBak.png"
             loading="lazy"
             alt="The “Voice &amp; Video” page inside User Settings."
           />
@@ -378,7 +378,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654168d7ada081c01bd3478d_U0tPDwzQUwLGQ6vnEb9HQHMcZd5PVygerVbgX78VbcxiFy841fHVhggpQ3E7vEnmxaylrY6YF3U4eoNs6dfOYTJz6syurp8UWJ3i0S4Y8z27FNaRjvXwZ7a4EmCC-6PrOIkJgfq9ZORvqlqvO-SiU2A.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654168d7ada081c01bd3478d_U0tPDwzQUwLGQ6vnEb9HQHMcZd5PVygerVbgX78VbcxiFy841fHVhggpQ3E7vEnmxaylrY6YF3U4eoNs6dfOYTJz6syurp8UWJ3i0S4Y8z27FNaRjvXwZ7a4EmCC-6PrOIkJgfq9ZORvqlqvO-SiU2A.png"
             loading="lazy"
             alt="A user adding a Voice Channel status. The current status shown is “being normal challenge (impossible).”"
           />
@@ -395,7 +395,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654168d7555bb62c9a6fdd5d_GnWRpeKRvWuz-o3VNOnXfp5MR8ZCN3XmTWVduxVsqkGTjb0qDGACjz9jL__LdkfYutpIqpa5JzHlmTT7Leb8VDUbPAvipP-JLEqbE8JeYgs0yWV1-ReUdVAd9Dtg3PTC5I_pYiNrTdzGqDNdece53zs.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/654168d7555bb62c9a6fdd5d_GnWRpeKRvWuz-o3VNOnXfp5MR8ZCN3XmTWVduxVsqkGTjb0qDGACjz9jL__LdkfYutpIqpa5JzHlmTT7Leb8VDUbPAvipP-JLEqbE8JeYgs0yWV1-ReUdVAd9Dtg3PTC5I_pYiNrTdzGqDNdece53zs.png"
             loading="lazy"
             alt=""
           />

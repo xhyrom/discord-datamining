@@ -37,7 +37,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/647672d3a166cbbaec5d3628_6fe868ca.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/647672d3a166cbbaec5d3628_6fe868ca.png"
             alt="Promotional imagery for Memrise. It shows what the app is capable of, including “Translations,” “AI Chat” and creating Threads."
             loading="lazy"
           />
@@ -87,7 +87,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/647672f6e85875bf68bafcfe_e1c4afaa.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/647672f6e85875bf68bafcfe_e1c4afaa.png"
             alt="An image containing three inspirational quotes that were posted by Motivation."
             loading="lazy"
           />
@@ -131,7 +131,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767317d303820190276281_73c51ae1.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64767317d303820190276281_73c51ae1.png"
             alt="The Cappuccino bot asking a question to the server: “What have you been up to today?” Three users have responded so far. "
             loading="lazy"
           />
@@ -180,7 +180,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6476732fd2c16c3ee9bd3bb3_b223a59b.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6476732fd2c16c3ee9bd3bb3_b223a59b.png"
             alt="A promotional image for CHANI, saying “Do you know your big 3? Get to know your Sun, Moon and rising signs with the CHANI Discord app.”"
             loading="lazy"
           />
@@ -237,7 +237,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65692b4edc198147146a8c66_FTTD%20-%20Activity%20(1).png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65692b4edc198147146a8c66_FTTD%20-%20Activity%20(1).png"
             loading="lazy"
             alt="A group of six friends playing Sketch Heads during a Discord call."
           />
@@ -284,7 +284,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6483a2e644858da15db812fc_Watch%20Together.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6483a2e644858da15db812fc_Watch%20Together.gif"
             loading="lazy"
             alt="A preview image of the “Watch Together” Activity in Discord."
           />
@@ -325,7 +325,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767396d2c16c3ee9bd96ca_9a744eef.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64767396d2c16c3ee9bd96ca_9a744eef.png"
             alt="A screenshot of the Discord App Directory."
             loading="lazy"
           />

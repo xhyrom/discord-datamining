@@ -52,7 +52,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65303f866377dec7f38d88bb_65303a62d29fa499bd30191b_EN%2520GB%25201.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65303f866377dec7f38d88bb_65303a62d29fa499bd30191b_EN%2520GB%25201.png"
             loading="lazy"
             alt=""
           />
@@ -82,7 +82,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65305b7e90de3a7822b4085c_EN-profile%20monitor.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65305b7e90de3a7822b4085c_EN-profile%20monitor.png"
             loading="lazy"
             alt=""
           />
@@ -106,7 +106,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021ea5df45b104d8af9c7_JafxEYj9w6TVgCbBAB3lPi2AEFQnlIlxLh8inmlRGzoJIBYkbEJMrmdWPJz3bWhhZ60rLUCMRofWMYfz_yd1sHRLkZOTCLYmynupI6IoI_WAwpL9lZahSgqwhbrSLCClhrhuqEo2-E_ndQiLwbuCBfs.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/653021ea5df45b104d8af9c7_JafxEYj9w6TVgCbBAB3lPi2AEFQnlIlxLh8inmlRGzoJIBYkbEJMrmdWPJz3bWhhZ60rLUCMRofWMYfz_yd1sHRLkZOTCLYmynupI6IoI_WAwpL9lZahSgqwhbrSLCClhrhuqEo2-E_ndQiLwbuCBfs.png"
             loading="lazy"
             alt="App Directory homepage with selection of Premium App Subscriptions."
           />
@@ -213,7 +213,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021eca381519f257dad30_11uKtW6nE2US_LgFSjHM6fO3tq0pnfuYpc603o1sy_Wj97s-K1dEidSd8xxRNBHjfel6EMIgdAhbOnFrkAvZS4n_lYRw6yuFbLBeCBUveh-x5Af5EBWaAKue-wJLtSP9E70Nie83e4LzvwJsNej9AAg.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/653021eca381519f257dad30_11uKtW6nE2US_LgFSjHM6fO3tq0pnfuYpc603o1sy_Wj97s-K1dEidSd8xxRNBHjfel6EMIgdAhbOnFrkAvZS4n_lYRw6yuFbLBeCBUveh-x5Af5EBWaAKue-wJLtSP9E70Nie83e4LzvwJsNej9AAg.png"
             loading="lazy"
             alt="Still image of the sensitive content filters blurring an image."
           />
@@ -242,7 +242,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021eb55ffb97bb012c1f2_aakQEgYk0s0uQWdKnaJyRNO-upRD5yl_WYDVchz8cIc4qKBzWc3QtC2O34MUGr1cj4eN_epNKoOZPd8kW1qHZhNyyCCddrF9L2wwseSftShDmaOLxgCumz7kHAeMcfwR9dA8c1vejhWFXomRJdEUdEI.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/653021eb55ffb97bb012c1f2_aakQEgYk0s0uQWdKnaJyRNO-upRD5yl_WYDVchz8cIc4qKBzWc3QtC2O34MUGr1cj4eN_epNKoOZPd8kW1qHZhNyyCCddrF9L2wwseSftShDmaOLxgCumz7kHAeMcfwR9dA8c1vejhWFXomRJdEUdEI.png"
             loading="lazy"
             alt="Still image of an in-app message notifying a user of a violation."
           />
@@ -307,7 +307,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edb3187d3a26a52f71_JppKQTVQMiDwXwnA4QLfSDSR_pQS6eG_pMBCOoPIiT5DZvOHFMJ4G06nrRP4ePZxYtZRxOsm82ltgSl0xB__-9IHCGgti9nm638N-4l_TElF_ehqAcup0WSQ76YuTcjaPZD9MxhuUlWi49utiWW9HGM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/653021edb3187d3a26a52f71_JppKQTVQMiDwXwnA4QLfSDSR_pQS6eG_pMBCOoPIiT5DZvOHFMJ4G06nrRP4ePZxYtZRxOsm82ltgSl0xB__-9IHCGgti9nm638N-4l_TElF_ehqAcup0WSQ76YuTcjaPZD9MxhuUlWi49utiWW9HGM.png"
             loading="lazy"
             alt="Still image of a Discord user recording and sending a Voice Message on a mobile phone."
           />
@@ -323,7 +323,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021e917b563e103ede7d0_GEkZgOu_JBiLIody_hiPLGlNZ5H_rNn-_a3mIdw_HdxOaLIBZtaGswGAb6tnBhvNuLOXxIMMIwF6yWu25YD9XaSy1xGSqsZdzVDXJUfulP8Be4N_rz6t3NEMMzqWHg6haLHMQwz0wbc36jErVxeWdrE.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/653021e917b563e103ede7d0_GEkZgOu_JBiLIody_hiPLGlNZ5H_rNn-_a3mIdw_HdxOaLIBZtaGswGAb6tnBhvNuLOXxIMMIwF6yWu25YD9XaSy1xGSqsZdzVDXJUfulP8Be4N_rz6t3NEMMzqWHg6haLHMQwz0wbc36jErVxeWdrE.png"
             loading="lazy"
             alt="Still image of a user selecting and sending images on mobile."
           />
@@ -382,7 +382,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021efc6a7a1366a39cd2b_QSI07mdkjdz29oYN0K4YMU2ZkjA_9mf5EJJEhod9dvHeR4OpDLoI9wjVCEmKTwySB1Rf1Fh8b021oxtRQF9YshfeZCFdNJ9MK6vpjaXAiQJN38yoh3uKALEVt72dZbmg47oW-nbQGsHmHkYpRM1ovbM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/653021efc6a7a1366a39cd2b_QSI07mdkjdz29oYN0K4YMU2ZkjA_9mf5EJJEhod9dvHeR4OpDLoI9wjVCEmKTwySB1Rf1Fh8b021oxtRQF9YshfeZCFdNJ9MK6vpjaXAiQJN38yoh3uKALEVt72dZbmg47oW-nbQGsHmHkYpRM1ovbM.png"
             loading="lazy"
             alt="Still image of a user on mobile using Remix."
           />
@@ -416,7 +416,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021ed58d4c710eea2d04d_SvL9FPtx6l9d2nZYC50L3FS2n-j1jEuquLOzapp0JNd6zxzVxeHWgXoUSxL0gwniL0AIGLzp_nDaCVfDs0TFIuuDvX_eg9MbXncs1EYYsNTsKMa8TexY5scPAINiO2rBqOdBeeQJQuimVKeSAwDCqpk.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/653021ed58d4c710eea2d04d_SvL9FPtx6l9d2nZYC50L3FS2n-j1jEuquLOzapp0JNd6zxzVxeHWgXoUSxL0gwniL0AIGLzp_nDaCVfDs0TFIuuDvX_eg9MbXncs1EYYsNTsKMa8TexY5scPAINiO2rBqOdBeeQJQuimVKeSAwDCqpk.png"
             loading="lazy"
             alt="Image of several different options for the Custom App Icons.&nbsp;"
           />
@@ -462,7 +462,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edd85706dfb6ffeba8_TV2v_-uOGq_-9bLKTL6x2sar01-RmueVTdSDMoDffirOVPSmfDpE9ebtlky9V0Z8qgOHr3eBnhGKm_iojFbktORKndkTthHv5sVTpaksHlm-JWX5j6kAomU-ZaY7agmFfYHZddfUIHpuMNzJkUvKfmk.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/653021edd85706dfb6ffeba8_TV2v_-uOGq_-9bLKTL6x2sar01-RmueVTdSDMoDffirOVPSmfDpE9ebtlky9V0Z8qgOHr3eBnhGKm_iojFbktORKndkTthHv5sVTpaksHlm-JWX5j6kAomU-ZaY7agmFfYHZddfUIHpuMNzJkUvKfmk.png"
             loading="lazy"
             alt=""
           />

@@ -98,7 +98,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ed17a9ea76ea1cb9564721_kC9Fht0aCBah8aNhjA-6zKTxweV3fYqlMzENIcSTE9-CxKQCGHzwYvg5Ia6IiCtW20mX_r1oJE-cLswmHCXj5e_qiPJ7gzbbFyJTDCbzTQ4ermBmFbvKbYKmifbkW7XahzhJzeDxNjM4-lpVYJfz-Do.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64ed17a9ea76ea1cb9564721_kC9Fht0aCBah8aNhjA-6zKTxweV3fYqlMzENIcSTE9-CxKQCGHzwYvg5Ia6IiCtW20mX_r1oJE-cLswmHCXj5e_qiPJ7gzbbFyJTDCbzTQ4ermBmFbvKbYKmifbkW7XahzhJzeDxNjM4-lpVYJfz-Do.png"
             alt="A preview of StudyLion’s Statistics features. It shows a server member’s studying history and a chart mapping their study habits over the previous week.‍"
             loading="lazy"
           />
@@ -135,7 +135,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64f7bb46a4f297bebc5291aa_kjrjwzD.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64f7bb46a4f297bebc5291aa_kjrjwzD.png"
             loading="lazy"
             alt=" A conversation in Discord utilizing the Discord Algebra System app. A user is inputting a formula into D.A.S., and the app has embedded a visual representation of it as an image."
           />
@@ -171,7 +171,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ed17aa9756b17cf482a6dd_FxRxwNUBB96oQr6iXoaXUw6gXDdcfbEGDM0Ph5Ho_2mKS5smnUvdw6YXO-y9qBRywIdtJ35fg3sb3w0n2clEuRVbrx2r-xu6nM69Gag5g5u1RqUtzicROzv0VoOuKRQhy2EiFQBUfP8-7Ge-fMja7Fs.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64ed17aa9756b17cf482a6dd_FxRxwNUBB96oQr6iXoaXUw6gXDdcfbEGDM0Ph5Ho_2mKS5smnUvdw6YXO-y9qBRywIdtJ35fg3sb3w0n2clEuRVbrx2r-xu6nM69Gag5g5u1RqUtzicROzv0VoOuKRQhy2EiFQBUfP8-7Ge-fMja7Fs.png"
             alt="A screenshot demonstrating the TStudy app for Discord. A to-do list is shown, with one task marked off. In-app buttons for managing a to-do list are selectable.&nbsp;"
             loading="lazy"
           />
@@ -211,7 +211,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ed17aae48c71162d8f4a39_dzLTqyxObUw-iyiQLjlrgghoQPpfoRZC9UTbU2LcvKt-4xbCXarWiGOwq4XDFL3PUwwB2DHO5mtkp3ZmHvJTW8mg4NS7jVBCF4RLjFkz33asboAJF_JCEVHigeKQgLxLNX2I4gh5Q55iZk2vRfZUTck.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64ed17aae48c71162d8f4a39_dzLTqyxObUw-iyiQLjlrgghoQPpfoRZC9UTbU2LcvKt-4xbCXarWiGOwq4XDFL3PUwwB2DHO5mtkp3ZmHvJTW8mg4NS7jVBCF4RLjFkz33asboAJF_JCEVHigeKQgLxLNX2I4gh5Q55iZk2vRfZUTck.png"
             alt="An in-server conversation using Memrise. The Memrise app is creating Threads inside a dedicated #memrise-bot chat channel. Each channel has a different role-playing scenario that lets members practice their new multilingual abilities."
             loading="lazy"
           />
@@ -274,7 +274,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ee1a9258b8d51236e773db_PaKWMt5o01dP25DWFXZmeRM9e4evleLwzN8hWCwX9JQq8NVHZCq2FNaFURZw3b8ShhURk0fzAAo400R5PrP5OL-JCk43-Kb0sI-hiRZlN_d_HHqG8Ce6WXZ4RBWOKnGup2V1qSOwUlx-2PvG4Ii1zlM.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64ee1a9258b8d51236e773db_PaKWMt5o01dP25DWFXZmeRM9e4evleLwzN8hWCwX9JQq8NVHZCq2FNaFURZw3b8ShhURk0fzAAo400R5PrP5OL-JCk43-Kb0sI-hiRZlN_d_HHqG8Ce6WXZ4RBWOKnGup2V1qSOwUlx-2PvG4Ii1zlM.png"
             alt="A demonstration of the Cappuccino app in-use. Cappuccino is asking server members what they’ve been up to lately, which it’ll eventually use to create an AI summarization of the answers supplied."
             loading="lazy"
           />
@@ -385,7 +385,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ee1b45cd054db5a1805416_Untitled%20(7).png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64ee1b45cd054db5a1805416_Untitled%20(7).png"
             loading="lazy"
             alt=""
           />

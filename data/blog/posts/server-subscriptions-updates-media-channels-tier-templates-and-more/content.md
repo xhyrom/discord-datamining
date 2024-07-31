@@ -65,7 +65,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/648cece8f3478a7b6e085337_YqkgHDXwOH2xaK6qzcuRAuekR_rlIx6HyKUoZVgOXBzOr-RoWqNXulKg2jvavcXBqkBYz9t0APhwnNOkvm4vsjnvESDOHG-vBeU7dCRxvZGX9zZSTwl6goAyTY04LoTCe7PYrLJZ-jpBZuZY-WYg1vE.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/648cece8f3478a7b6e085337_YqkgHDXwOH2xaK6qzcuRAuekR_rlIx6HyKUoZVgOXBzOr-RoWqNXulKg2jvavcXBqkBYz9t0APhwnNOkvm4vsjnvESDOHG-vBeU7dCRxvZGX9zZSTwl6goAyTY04LoTCe7PYrLJZ-jpBZuZY-WYg1vE.png"
             alt="Two examples of a piece of content shared within a new Media Channel. One image shows a blurred preview of the content, with a message saying “Subscribe to View” shown over the blurred image and the other image is visible showing Wumpus in their room.&nbsp;"
             loading="lazy"
           />
@@ -123,7 +123,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/648cece8b0f8692222b59a2e_QgEY2xuYyiDO6s_-AGmSEtOOCDbUIDmvWmTjt3jGfnbExfUBR7MmHSZSLiP04q43WN9HGXON9L_gaLbEc2lREiqwxhPGpOL_x41IAiEuJqUkceU5WUg0X1BBjzNpi5d4u6EvP2nhtqrcHyCqC7pbVhg.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/648cece8b0f8692222b59a2e_QgEY2xuYyiDO6s_-AGmSEtOOCDbUIDmvWmTjt3jGfnbExfUBR7MmHSZSLiP04q43WN9HGXON9L_gaLbEc2lREiqwxhPGpOL_x41IAiEuJqUkceU5WUg0X1BBjzNpi5d4u6EvP2nhtqrcHyCqC7pbVhg.gif"
             alt="An animated GIF showing an example of someone choosing between different Tier Templates.&nbsp;"
             loading="lazy"
           />
@@ -212,7 +212,7 @@
         <div>
           <img
             alt="A preview of the Server Shop feature. This example shop includes mini-coures, filters and wallpaper sets for one-time purchases sold directly within Discord.Image"
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/648cedbeadb132963b6b2c3c_XgOQhnR0rd3kvfEPC7Jh8efN31y6F-dXrveGHlHk-zq1snkA054AfR0EHox7pNrrwna0iVuPSd3bbVsH4Uh0Znfy87TXCxacJBAVIbHbglnu95Erj6e8woZtNxppC6DnJMuMpWN0nAiSb9uYHMlT-RA.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/648cedbeadb132963b6b2c3c_XgOQhnR0rd3kvfEPC7Jh8efN31y6F-dXrveGHlHk-zq1snkA054AfR0EHox7pNrrwna0iVuPSd3bbVsH4Uh0Znfy87TXCxacJBAVIbHbglnu95Erj6e8woZtNxppC6DnJMuMpWN0nAiSb9uYHMlT-RA.png"
             loading="lazy"
           />
         </div>

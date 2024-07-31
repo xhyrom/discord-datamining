@@ -38,7 +38,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/651760cb609d69aaf9582308__jzKNEuI3iyq08luD_aZsiC4oTYajDiwuj6a415uYUrIBr0lPRfDAj2GZJWHAXfdPFeBB8owDBKdZfWBm8fC--j5BG8h66kM_WgH61zRzFvz6GAgwTIBy9SAcxCrfcQswWfsfjl2QT8YLcnZMwDcVSQ.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/651760cb609d69aaf9582308__jzKNEuI3iyq08luD_aZsiC4oTYajDiwuj6a415uYUrIBr0lPRfDAj2GZJWHAXfdPFeBB8owDBKdZfWBm8fC--j5BG8h66kM_WgH61zRzFvz6GAgwTIBy9SAcxCrfcQswWfsfjl2QT8YLcnZMwDcVSQ.gif"
             loading="lazy"
             alt="A Discord-like embed for the verified Latinx in Gaming server."
           />
@@ -83,7 +83,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/651760cbfc62a4514acbe953_KPuc0Ckw3Zee_ZcJl89ge24vUG10qx8P3AlR9ZxveeXIysTnX60e4EMRoo5f7ueiKcRwcfM6mrrxnUeRb9fvZCI4AQOyZtFKfkBSyzfuLHKbY3Hvin5r4OuDWK2cti6ohMJCDQvuhXM1FxqcE1gqcE8.gif"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/651760cbfc62a4514acbe953_KPuc0Ckw3Zee_ZcJl89ge24vUG10qx8P3AlR9ZxveeXIysTnX60e4EMRoo5f7ueiKcRwcfM6mrrxnUeRb9fvZCI4AQOyZtFKfkBSyzfuLHKbY3Hvin5r4OuDWK2cti6ohMJCDQvuhXM1FxqcE1gqcE8.gif"
             alt="A Discord-like embed for the partnered Fyre House server."
             loading="lazy"
           />

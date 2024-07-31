@@ -97,7 +97,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64a5c74c2cce684638433145_Znv45dvfxIp6-NfPzNcTPlu40vhHKL-8gnS_76mgzT9akh7F3TzbXrhXQiZJolGBhJkO_IW0KRqgGSxjvjkKXri1i8a8CvGRei5xv7eQ2aez2YRxGIV0WaBia4oqUReGQtQ_fffjV3r53vnfrqV4S1A.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64a5c74c2cce684638433145_Znv45dvfxIp6-NfPzNcTPlu40vhHKL-8gnS_76mgzT9akh7F3TzbXrhXQiZJolGBhJkO_IW0KRqgGSxjvjkKXri1i8a8CvGRei5xv7eQ2aez2YRxGIV0WaBia4oqUReGQtQ_fffjV3r53vnfrqV4S1A.png"
             alt="An in-app preview of the information that Family Center provides. The image explains the following: Parents can see the Names and Avatars of Recently-added Friends, the names, icons and member counts of Servers they’ve joined or participated in, and the names, avatars, and times of last message or call of Users a Teen has messaged or called in DMs and Group Chats. Parents cannot see “what their teen writes or says.”&nbsp;"
             loading="lazy"
           />
@@ -129,7 +129,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64a5cd3a82f9e3fec201f0e5_Email%20Summary%20Cropped.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64a5cd3a82f9e3fec201f0e5_Email%20Summary%20Cropped.png"
             loading="lazy"
             alt="A preview of the weekly recap email from the Family Center. It shows a teen’s count of Users Messaged, Users Called, New Friends, Servers Joined, and Active Servers within the last week."
           />

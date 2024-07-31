@@ -25,7 +25,7 @@
       <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/652f1badf0be725f59b7b6c0_Urq1oPcvrQKG6cehARN70WPKsOntPFc4xsaKbre5y6oGx0i-IcVzzj4iqLr18SLUlg0YMJnNEOGPYqtdPZkxoitbQubOsxWDKfLkNDjNiSMEj8bpkQzjtOktuMZmEwgQ-IcUN9wcZtRu7bXQAL5MJmo.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/652f1badf0be725f59b7b6c0_Urq1oPcvrQKG6cehARN70WPKsOntPFc4xsaKbre5y6oGx0i-IcVzzj4iqLr18SLUlg0YMJnNEOGPYqtdPZkxoitbQubOsxWDKfLkNDjNiSMEj8bpkQzjtOktuMZmEwgQ-IcUN9wcZtRu7bXQAL5MJmo.png"
             loading="lazy"
             alt="An in-app screen for a user in the profess of purchasing an App Subscription."
           />

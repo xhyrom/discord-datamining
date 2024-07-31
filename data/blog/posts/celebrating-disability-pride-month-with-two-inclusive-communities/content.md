@@ -45,7 +45,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64a6f907d35a52e4bf4d147d_N1wKQUp3mMNa-AxK8zxuIVAUbUYW5Piq0tWrJ_Ztj8Tx5BstDBr7iJYB2EqFW6d4ImE2pzTu7ufuUxaY5UW8HM1ei9Ow-ovyTdZ3lJAeCv5EdR_lyDjdgqs5BLGEI-QBL_J8Tgor7vsOPCtZCKZiX3k.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64a6f907d35a52e4bf4d147d_N1wKQUp3mMNa-AxK8zxuIVAUbUYW5Piq0tWrJ_Ztj8Tx5BstDBr7iJYB2EqFW6d4ImE2pzTu7ufuUxaY5UW8HM1ei9Ow-ovyTdZ3lJAeCv5EdR_lyDjdgqs5BLGEI-QBL_J8Tgor7vsOPCtZCKZiX3k.png"
             alt='Server invite artwork for the featured server "The Kuni Corner."'
             loading="lazy"
           />
@@ -100,7 +100,7 @@
       >
         <div>
           <img
-            src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64a6f92527652649536373bc_E40iRb9NN8bLhrTL9nKZ9RM06e2lQ-RP2eRsanQx4_imD0TNZ3v-DTL5n0U01Mq9QGVWhjKylEIn1hrpra6k40iN6Ka5iTQyI8bGJRW3AQglcbB7SsjurZzC6FfZ26osJF6uqlT-pQIKutmAWceDgFU.png"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64a6f92527652649536373bc_E40iRb9NN8bLhrTL9nKZ9RM06e2lQ-RP2eRsanQx4_imD0TNZ3v-DTL5n0U01Mq9QGVWhjKylEIn1hrpra6k40iN6Ka5iTQyI8bGJRW3AQglcbB7SsjurZzC6FfZ26osJF6uqlT-pQIKutmAWceDgFU.png"
             alt='Server invite artwork for the featured server "ADHD Dopamine."'
             loading="lazy"
           />
