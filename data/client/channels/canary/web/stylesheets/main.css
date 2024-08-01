@@ -30098,24 +30098,24 @@ img.thumbnail_c64476 {
   height: 100%;
   border-radius: var(--radius-xs);
   background-color: var(--black-500);
+  opacity: 0;
+}
+.overlay_a08002:hover:after {
   opacity: 0.4;
 }
 .full-motion .overlay_a08002:after {
   transition: opacity var(--custom-button-transition-duration) ease;
 }
-.overlay_a08002:hover:after {
-  opacity: 0;
-}
-.overlay_a08002:hover .clyde_a08002 {
-  display: none;
+.full-motion .overlay_a08002:hover .clyde_a08002 {
+  display: inline;
+  display: initial;
 }
 .clyde_a08002 {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-}
-.full-motion .clyde_a08002 {
   animation:
     fadeIn_a08002 7.6s linear 19s forwards,
     x_a08002 3.8s linear 19s infinite alternate,
@@ -45299,4 +45299,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.47e219331e44b925975f.css.map*/
+/*# sourceMappingURL=12633.de86c94b3445093d4f08.css.map*/
