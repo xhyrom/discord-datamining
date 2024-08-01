@@ -28,7 +28,6 @@
         >
       </li>
       <li><a href="#h_01J1AK4JDWX63NDT2EJFNQ1WH1">Console Gaming</a></li>
-      <li><a href="#h_01J0M3YTKEYJTYAZQ32GXDN24Y">Minecraft</a></li>
       <li><a href="#h_01HXSYAWEMHMCTSD1HCX0RBPES">PUBG: BATTLEGROUNDS </a></li>
     </ul>
   </li>
@@ -81,7 +80,7 @@
 <p>
   The <strong>Lovestruck Quest</strong> can be accepted on Discord from
   <strong>July 25, 2024</strong> until <strong>August 1</strong
-  ><strong>, 2024</strong> <strong>(11:59pm UTC)</strong>. The Freezer Bunny
+  ><strong>, 2024</strong> <strong>(11:59PM UTC)</strong>. The Freezer Bunny
   Lovebug avatar decoration needs to be redeemed by
   <strong>September 1, 2024</strong>. Quest requirements must be completed
   during this period to receive the reward.
@@ -97,8 +96,8 @@
 <p>
   The <strong>V1.0 Quest </strong>can be accepted on Discord from
   <strong>July 8, 2024 </strong>until
-  <strong>July 15, 2024 (5:00pm PST)</strong>. The Version 1.0 bundle needs to
-  be redeemed by <strong>August 14, 2024 (3:00am PST)</strong>. Quest
+  <strong>July 15, 2024 (5:00PM PST)</strong>. The Version 1.0 bundle needs to
+  be redeemed by <strong>August 14, 2024 (3:00AM PST)</strong>. Quest
   requirements must be completed during this period to receive the reward.
 </p>
 <h2 id="docs-internal-guid-7e118986-7fff-7590-ca2a-0bb618200550">
@@ -112,8 +111,9 @@
 <p>
   The <strong>Fortnite Reload Quest</strong> can be accepted on Discord from
   <strong>June 27, 2024 </strong>until
-  <strong>July 4, 2024 (11:59pm UTC)</strong>. Quest requirements must be
-  completed during this period to receive the reward. 
+  <strong>July 4, 2024 (11:59PM UTC)</strong>. The Fortnite Victory Crown avatar
+  decoration needs to be redeemed by <strong>August 3, 2024.</strong> Quest
+  requirements must be completed during this period to receive the reward. 
 </p>
 <h2 id="h_01J1AK4JDWX63NDT2EJFNQ1WH1">
   <a
@@ -126,24 +126,11 @@
 <p>
   The <strong>Console Gaming Quest </strong>can be accepted on Discord from
   <strong>June 26, 2024 </strong>until
-  <strong>July 10, 2024 (11:59pm UTC)</strong>. Quest requirements must be
-  completed during this period to receive the reward.
+  <strong>July 10, 2024 (11:59PM UTC)</strong>.The Warp Helmet avatar decoration
+  needs to be redeemed by <strong>August 9, 2024.</strong> 
 </p>
-<h2 id="h_01J0M3YTKEYJTYAZQ32GXDN24Y">
-  <a
-    href="https://support.discord.com/hc/articles/24192189535639/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Minecraft - Minecraft Trials Quest</a
-  >
-</h2>
 <p>
-  The <strong>Minecraft Trials Quest</strong> can be accepted on Discord from
-  <strong>June 20, 2024 </strong>until<strong>
-    June 26, 2024 (4:59pm PST)</strong
-  >. Quest requirements must be completed during this period to receive the
-  reward. Reward gift codes expire
-  <strong>July 28, 2024 (11:59pm PST)</strong>. 
+  Quest requirements must be completed during this period to receive the reward.
 </p>
 <h2 id="h_01HXSYAWEMHMCTSD1HCX0RBPES">
   <a
@@ -156,7 +143,7 @@
 <p>
   The <strong>Erangel Classic Quest</strong> can be accepted on Discord from
   <strong>May 14, 2024</strong> until
-  <strong>May 28, 2024 (11:59pm UTC)</strong>. Quest requirements must be
+  <strong>May 28, 2024 (11:59PM UTC)</strong>. Quest requirements must be
   completed during this period to receive the reward. Reward gift codes expire
   <strong>August 11, 2024</strong>.
 </p>
