@@ -568,8 +568,8 @@
   <span style="font-weight: 400"
     >A:
     <span id="docs-internal-guid-3ca05bc3-7fff-fe7a-993e-3d2cedafcf64"
-      >A: Gifting Nitro Basic is available on the desktop/browser clients and
-      the mobile clients. To gift Nitro Basic, you must go to the </span
+      >Gifting Nitro Basic is available on the desktop/browser clients and the
+      mobile clients. To gift Nitro Basic, you must go to the </span
     ><strong>Nitro</strong> page which you can find by pressing the Discord logo
     in your desktop or browser app or you can go to the Nitro page in your
     <strong>User Settings.</strong> Learn more about
