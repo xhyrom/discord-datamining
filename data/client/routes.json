@@ -4160,6 +4160,8 @@
     "url": "/guilds/:param/soundboard-sounds/:param",
     "allowed_methods": [
       "DELETE",
+      "GET",
+      "HEAD",
       "OPTIONS",
       "PATCH"
     ]
