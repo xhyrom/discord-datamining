@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7531683002](https://discord.com/jobs/7531683002)
 
-**Updated At:** Wed, 31 Jul 2024 18:22:52 GMT
+**Updated At:** Thu, 01 Aug 2024 17:03:07 GMT
 
 **Job Description:**
 This position is US based only.
@@ -21,18 +21,19 @@ To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering
 &amp;nbsp;
 What you'll do
 
-Design, build and maintain new Ads products and infrastructure from the backend to frontend. Collaborate with engineers on the team, and other engineering teams such as Revenue Infrastructure &amp;amp; Core Product, and Core Tech.
+Design, build and maintain new Ads products and infrastructure from the backend to frontend. Collaborate with both engineers on and off the team - from Revenue Infrastructure, to Core Tech, to Machine Learning, to Data Science.
 Be a strategic partner with engineering, product, and cross functional leadership in designing, developing and scaling digital advertising features that drive revenue growth and enhance user engagement.
-Act as a technical leader and domain expert in building scalable and high-performance systems for cutting-edge ad delivery solutions.
-Architect elegant and maintainable code with focus on autonomy and support from the team. Uphold a high product and technical quality bar while quickly launching and iterating on features. Introduce coding and operational best practices to the team; always be learning &amp;amp; teaching.
+Architect simple and maintainable systems to enable us to launch quickly and iterate while sustaining a high product and technical quality bar.
+Model strong ownership by acting autonomously when possible and looping in others to build confidence on critical questions. Introduce coding and operational best practices to the team; always be learning &amp;amp; teaching.
 Own projects end to end — you’ll be responsible for working with Product and other stakeholders to refine requirements, creating technical designs and specs, implementing changes, and seeing projects through to launch and maintenance.
 
 What we look for
 
-A focus on impact.&amp;nbsp;You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems
-A sense of ownership.&amp;nbsp;You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments
-A growth mindset.&amp;nbsp;You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve
-A love of mentorship&amp;nbsp;of fellow engineers, providing feedback and guidance on system architecture, API design, data modeling, and tradeoffs
+A focus on impact. You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems.
+A sense of ownership. You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.
+A growth mindset. You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.
+A love of mentorship. Helping fellow engineers, providing feedback and guidance on system architecture, API design, data modeling, and tradeoffs.
+Domain knowledge. We’re looking for engineers with experience in the ad delivery space.
 4+ years of experience, with 2 years in relevant roles
 
 Bonus Points
