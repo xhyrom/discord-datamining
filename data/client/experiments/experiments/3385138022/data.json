@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_quest_interactable_expired_crendentials",
+    "label": "Quest interactable expired crendentials errors",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: not interactable",
+      "Treatment 1: interactable"
+    ],
+    "hash": 3385138022,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
