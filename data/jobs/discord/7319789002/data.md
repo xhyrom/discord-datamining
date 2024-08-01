@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7319789002](https://discord.com/jobs/7319789002)
 
-**Updated At:** Thu, 25 Jul 2024 17:50:28 GMT
+**Updated At:** Thu, 01 Aug 2024 18:40:19 GMT
 
 **Job Description:**
 This position is US based only.Discord empowers people to create spaces where they can find a sense of belonging in their lives. Millions of people trust Discord to keep their communications secure, private, and out of the hands of evildoers, so security and privacy are necessary to Discord's success.&amp;nbsp;

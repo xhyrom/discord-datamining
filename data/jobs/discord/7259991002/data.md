@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7259991002](https://discord.com/jobs/7259991002)
 
-**Updated At:** Thu, 25 Jul 2024 17:50:28 GMT
+**Updated At:** Thu, 01 Aug 2024 18:20:15 GMT
 
 **Job Description:**
 This position is US based only.At Discord, we believe everyone can find a place where they belong. Our mission is to help make it easy for everyone to find and join meaningful conversations, and to make every part of our product feel smart and delightful.
