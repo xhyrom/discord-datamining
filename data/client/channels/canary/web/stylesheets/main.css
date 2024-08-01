@@ -26851,6 +26851,28 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .button_a64b81:active .icon_a64b81 {
   fill: var(--interactive-active);
 }
+.inner_b84fc9 {
+  background: var(--input-background);
+  border-radius: 3px;
+}
+.custom-profile-theme .inner_b84fc9 {
+  background: rgb(var(--bg-overlay-color-inverse) / 0.1);
+}
+.editor_b84fc9 {
+  --channel-text-area-placeholder: var(--text-muted);
+  font-size: 14px;
+  min-height: 88px;
+}
+.container_b84fc9 {
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--bg-base-primary);
+  box-shadow: var(--elevation-high);
+  width: 300px;
+}
+.container_b84fc9.panel_b84fc9 {
+  width: 276px;
+}
 .popover_bba79b {
   z-index: 1;
   position: absolute;
@@ -27115,28 +27137,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   min-height: 32px;
   max-width: 32px;
   max-height: 32px;
-}
-.inner_b84fc9 {
-  background: var(--input-background);
-  border-radius: 3px;
-}
-.custom-profile-theme .inner_b84fc9 {
-  background: rgb(var(--bg-overlay-color-inverse) / 0.1);
-}
-.editor_b84fc9 {
-  --channel-text-area-placeholder: var(--text-muted);
-  font-size: 14px;
-  min-height: 88px;
-}
-.container_b84fc9 {
-  padding: 16px;
-  border-radius: 8px;
-  background: var(--bg-base-primary);
-  box-shadow: var(--elevation-high);
-  width: 300px;
-}
-.container_b84fc9.panel_b84fc9 {
-  width: 276px;
 }
 .background_e6ac4a {
   --custom-status-bubble-background-color: var(--bg-surface-raised);
@@ -45160,4 +45160,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.9f52c2b56065954eafe2.css.map*/
+/*# sourceMappingURL=12633.e54b072e1b8615fdccb2.css.map*/
