@@ -17498,6 +17498,8 @@
   "QUESTS_LAUNCHED_GAME": "\"Launched {gameTitle}?\"",
   "QUESTS_ANY_GAME_NOT_DETECTED": "\"Game not detected\"",
   "QUESTS_GAME_NOT_DETECTED": "\"{gameTitle} not detected\"",
+  "QUESTS_CONSOLE_EXPIRED_CREDENTIALS_PSN": "\"PSN online ID {account_name} needs to be reconnected to Discord, [click here to reconnect.](onClick)\"",
+  "QUESTS_CONSOLE_EXPIRED_CREDENTIALS_XBOX": "\"Xbox account {account_name} needs to be reconnected to Discord, [click here to reconnect.](onClick)\"",
   "QUESTS_CHECK_FOR_ANY_GAME_LAUNCH_TOOLTIP": "\"Got a game running, but not detected? Try this.\"",
   "QUESTS_CHECK_FOR_GAME_LAUNCH_TOOLTIP": "\"Got {gameTitle} running, but not detected? Try this.\"",
   "QUESTS_MICROPHONE_UNIT_BODY_ANY_GAME": "\"We automatically check for launched games, but no one’s perfect. Hit the refresh button to check if you’ve launched a game.\"",
