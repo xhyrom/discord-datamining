@@ -905,7 +905,11 @@
   },
   "COLLECTIBLES_MARKETING": {
     "url": "/users/@me/collectibles-marketing",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
@@ -1285,11 +1289,7 @@
   },
   "GRAVITY_ITEMS_NEGATIVE": {
     "url": "/users/@me/gravity-icymi-negative",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "GRAVITY_ITEMS_HYDRATE": {
     "url": "/gravity-content",
