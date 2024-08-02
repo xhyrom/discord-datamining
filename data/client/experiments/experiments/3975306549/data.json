@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_perks_demo_hd_streaming_opt_in_v2",
+    "label": "HD Streaming",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: duration",
+      "Treatment 2: optin duration",
+      "Treatment 3: Perk Demo Opt In - Extended Demo & Opt In Duration"
+    ],
+    "hash": 3975306549,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "extendedDemoDuration",
+      "extendedOptInDuration"
+    ]
+  }
+}
