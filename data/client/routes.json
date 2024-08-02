@@ -4152,6 +4152,8 @@
   "GUILD_SOUNDBOARD_SOUNDS": {
     "url": "/guilds/:param/soundboard-sounds",
     "allowed_methods": [
+      "GET",
+      "HEAD",
       "OPTIONS",
       "POST"
     ]
