@@ -9793,6 +9793,8 @@
   "GO_LIVE_MODAL_DESCRIPTION_SELECT_SOURCE": "\"Select something to stream and have your friends grab a seat!\"",
   "GO_LIVE_MODAL_APPLICATIONS": "\"Applications\"",
   "GO_LIVE_MODAL_SCREENS": "\"Screens\"",
+  "GO_LIVE_MODAL_WINDOW": "\"Window\"",
+  "GO_LIVE_MODAL_SCREEN": "\"Screen\"",
   "GO_LIVE_MODAL_APPLICATION_FORM_TITLE": "\"What you're streaming\"",
   "GO_LIVE_MODAL_SELECT_CHANNEL_FORM_TITLE": "\"Select a voice channel\"",
   "GO_LIVE_MODAL_CURRENT_CHANNEL_FORM_TITLE": "\"Streaming channel\"",
