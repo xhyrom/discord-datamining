@@ -2,16 +2,10 @@
 <p>Last updated: June 6, 2024</p>
 <p>
   <a
-    href="https://support-dev.discord.com/hc/en-us/articles/25280499088279"
+    href="https://support-dev.discord.com/hc/articles/25280499088279"
     target="_blank"
     rel="noopener noreferrer"
-    ><em
-      ><span style="color: #23272a" data-darkreader-inline-color=""
-        >For a link to the previous policy, please see
-      </span></em
-    >here<em
-      ><span style="color: #23272a" data-darkreader-inline-color="">.</span></em
-    ></a
+    >For a link to the previous policy, please see here.</a
   >
 </p>
 <p> </p>
@@ -30,13 +24,10 @@
   <span style="color: #23272a" data-darkreader-inline-color=""
     >This Discord Developer Policy is incorporated into the </span
   ><a
-    href="https://discord.com/developers/docs/policies-and-agreements/developer-terms-of-service"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Discord Developer Terms of Service</span
-    ></a
+    href="https://dis.gd/discord-developer-terms-of-service"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Developer Terms of Service</a
   ><span style="color: #23272a" data-darkreader-inline-color="">
     (“Developer Terms”), and you agree that it applies to your access to and use
     of our APIs in addition to the Developer Terms and other Terms. Capitalized
@@ -563,13 +554,10 @@
   <span style="color: #23272a" data-darkreader-inline-color=""
     >As described in the </span
   ><a
-    href="https://discord.com/developers/docs/policies-and-agreements/developer-terms-of-service"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Developer Terms</span
-    ></a
+    href="https://dis.gd/discord-developer-terms-of-service"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Developer Terms</a
   ><span style="color: #23272a" data-darkreader-inline-color=""
     >, Discord may set and enforce limits on your use of the APIs (e.g., by
     limiting the number of API requests that you may make, or the number of
