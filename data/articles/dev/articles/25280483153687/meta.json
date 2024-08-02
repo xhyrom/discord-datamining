@@ -1,0 +1,23 @@
+{
+  "id": 25280483153687,
+  "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/25280483153687.json",
+  "html_url": "https://support-dev.discord.com/hc/en-us/articles/25280483153687-2020-Discord-Developer-Terms-of-Service",
+  "author_id": 1531775952001,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 3,
+  "section_id": 25277842336151,
+  "created_at": "2024-07-30T17:38:03Z",
+  "name": "2020 Discord Developer Terms of Service",
+  "title": "2020 Discord Developer Terms of Service",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-08-01T18:09:08Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": []
+}
