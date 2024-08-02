@@ -4725,6 +4725,8 @@
   "OAUTH2_FAKE_SCOPE_8": "\"Read you a bedtime story\"",
   "OAUTH2_UNKNOWN_ERROR": "\"Oops, something went wrong...\"",
   "OAUTH2_SCROLL_TO_READ_DISCLOSURES": "\"Scroll down to read all disclosures\"",
+  "OAUTH2_KEEP_SCROLLING": "\"Keep Scrolling...\"",
+  "OAUTH2_MISSED_FIELDS": "\"You missed some fields\"",
   "SCOPE_IDENTIFY": "\"Access your username, avatar, and banner\"",
   "SCOPE_OPENID": "\"Access your profile information\"",
   "SCOPE_EMAIL": "\"Access your email address\"",
