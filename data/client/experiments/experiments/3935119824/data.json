@@ -1,15 +1,15 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_message_forwarding",
-    "label": "Message forwarding",
+    "id": "2024-07_message_forwarding_iterations",
+    "label": "Message forwarding iterations",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled",
-      "Treatment 2: Enabled + inline forward button"
+      "Treatment 1: T2 + One tap send + preview",
+      "Treatment 2: T2 + Context message + preview"
     ],
-    "hash": 2255117514,
+    "hash": 3935119824,
     "buckets": [
       -1,
       0,
