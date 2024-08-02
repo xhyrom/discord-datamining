@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_native_screen_share_picker",
+    "label": "Use system picker for screen sharing",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable system picker"
+    ],
+    "hash": 1062665695,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enableSystemPicker"
+    ]
+  }
+}
