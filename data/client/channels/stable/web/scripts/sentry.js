@@ -21167,6 +21167,7 @@ Error:`,
             COLLECTIBLES_PRODUCTS: (t) => "/collectibles-products/".concat(t),
             COLLECTIBLES_VALID_GIFT_RECIPIENT:
               "/users/@me/valid-collectibles-gift-recipient",
+            COLLECTIBLES_MARKETING: "/users/@me/collectibles-marketing",
             GUILD_MEMBER_BANNER: function (t, e, r) {
               let n =
                 arguments.length > 3 && void 0 !== arguments[3]
@@ -25262,6 +25263,9 @@ Error:`,
           (nd.FORWARD_COPY_LINK = "forward_copy_link"),
           (nd.FORWARD_ADD_RECIPIENT = "forward_add_recipient"),
           (nd.FORWARD_EDIT_SEARCH = "forward_edit_search"),
+          (nd.FORWARD_EDIT_CONTEXT_MESSAGE = "forward_edit_context_message"),
+          (nd.FORWARD_ONE_TAP_UNDO = "forward_one_tap_undo"),
+          (nd.FORWARD_ONE_TAP_VIEW = "forward_one_tap_view"),
           (nd.CDM_LOAD_STATUS = "cdm_load_status"),
           (nd.CDM_READY_COMPLETE = "cdm_ready_complete"),
           (nd.RTC_PANEL_VIEWED = "rtc_panel_viewed"),
@@ -25293,6 +25297,10 @@ Error:`,
             "user_account_email_change_reason_continue"),
           (nd.USER_ACCOUNT_EMAIL_CHANGE_REASON_SELECTED =
             "user_account_email_change_reason_selected"),
+          (nd.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL =
+            "user_account_email_change_save_new_email"),
+          (nd.USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE =
+            "user_account_email_change_warning_continue"),
           ((nO = tF || (tF = {})).CANARY = "canary"),
           (nO.PTB = "ptb"),
           (nO.STABLE = "stable"),
@@ -26913,7 +26921,7 @@ Error:`,
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-408a13eaadb864ced4894ebe23374b34bf3980df",
+            release: "discord_web-c86f7ede5370c7ca12beefd7197e59b0826d64ac",
             beforeSend: (t) => {
               var e, r;
               return !(
@@ -26985,8 +26993,8 @@ Error:`,
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", ((t = "314046"), "314046"));
-          a.YA("builtAt", String("1722372368377"));
+            a.YA("buildNumber", ((t = "315285"), "315285"));
+          a.YA("builtAt", String("1722630036646"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -40275,4 +40283,4 @@ Error:`,
     window.DiscordSentry = (0, t.j)();
   })();
 })();
-//# sourceMappingURL=sentry.0b78d0965d28d3959598.js.map
+//# sourceMappingURL=sentry.083ebdf93ee3a8a7a92e.js.map
