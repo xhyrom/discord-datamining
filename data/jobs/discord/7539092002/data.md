@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7539092002](https://discord.com/jobs/7539092002)
 
-**Updated At:** Thu, 01 Aug 2024 18:20:15 GMT
+**Updated At:** Fri, 02 Aug 2024 00:22:46 GMT
 
 **Job Description:**
 The Senior Revenue Accountant will take on the month-end revenue close process and prepare workpapers to ensure revenue numbers are in accordance with U.S GAAP each period. You will assist in SOX compliance and ensure controls are being effectively performed and documented. You will work with the team to identify inefficiencies and work cross-functionally with our business partners to streamline the revenue reporting process. As the company grows, you will have the opportunity to help develop our accounting policies, in accordance with U.S GAAP, for new revenue streams.
