@@ -29111,7 +29111,6 @@ h3.improved_f017d0:after {
 .actions_ae1fa2 {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 8px;
   margin: 4px 0 0;
 }
@@ -29122,7 +29121,11 @@ h3.improved_f017d0:after {
 .actions_ae1fa2 .primaryButton_ae1fa2 {
   flex: 1;
 }
-.actions_ae1fa2 .customButton_ae1fa2 {
+.actions_ae1fa2:has(> .customButton_ae1fa2) {
+  flex-wrap: wrap;
+  align-content: center;
+}
+.actions_ae1fa2:has(> .customButton_ae1fa2) .customButton_ae1fa2 {
   flex: 1 1 auto;
   min-width: calc(50% - 8px);
 }
@@ -45356,4 +45359,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.f80ed2fe5057a06dc0ff.css.map*/
+/*# sourceMappingURL=12633.03bb3a004504090bbbe0.css.map*/
