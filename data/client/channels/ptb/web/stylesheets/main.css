@@ -5695,6 +5695,18 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     margin-top: 8px;
   }
 }
+.action_c5a065 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.helpText_c5a065 {
+  margin-left: 12px;
+  flex-wrap: wrap;
+  max-width: 300px;
+  align-self: center;
+  text-align: right;
+}
 .authorize_c5a065 {
   flex: 1;
   width: 100%;
@@ -5746,6 +5758,36 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   height: 1px;
   pointer-events: none;
   position: absolute;
+}
+.overlay_c5a065 {
+  pointer-events: none;
+  height: 72px;
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
+  background-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--background-floating)
+  );
+}
+.emoji_c5a065 {
+  display: inline-block;
+}
+.full-motion .emoji_c5a065 {
+  animation: moveUpDown_c5a065 1s ease-in-out infinite;
+}
+@keyframes moveUpDown_c5a065 {
+  0%,
+  to {
+    transform: translatey(-3px);
+  }
+  50% {
+    transform: translatey(3px);
+  }
+}
+.buttonOverflow_c5a065 {
+  overflow: visible !important;
 }
 .errorCodeMessage_c78a6e {
   margin-top: 16px;
@@ -45314,4 +45356,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.e46d379d696a8a9bb8e3.css.map*/
+/*# sourceMappingURL=12633.f80ed2fe5057a06dc0ff.css.map*/
