@@ -29161,17 +29161,33 @@ h3.improved_f017d0:after {
   display: inline;
 }
 .imagePosition_ae1fa2 {
+  position: relative;
+  overflow: visible;
   display: flex;
+  justify-content: center;
+  min-width: 60px;
   height: -moz-max-content;
   height: max-content;
-  position: relative;
 }
-.smallImage_ae1fa2 {
-  border-radius: var(--radius-round);
-  -webkit-user-drag: none;
+.imageContainer_ae1fa2 {
+  display: flex;
+  border-radius: var(--radius-xs);
+}
+.richImageContainer_ae1fa2 {
   position: absolute;
   bottom: -4px;
   right: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-base-secondary);
+  border-radius: var(--radius-round);
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.contentImage_ae1fa2 {
+  border-radius: inherit;
 }
 .hangStatusIconBackground_ae1fa2 {
   box-sizing: border-box;
@@ -45375,4 +45391,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.adb928ee677f0043ef54.css.map*/
+/*# sourceMappingURL=12633.e7e49d859087eaa146b1.css.map*/
