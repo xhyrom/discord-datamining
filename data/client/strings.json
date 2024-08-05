@@ -4624,6 +4624,7 @@
   "USER_PROFILE_ACTIVITY_ACTION_MENU_A11Y_LABEL": "\"User Profile Activity Action Menu\"",
   "USER_PROFILE_RECENT_ACTIVITY_EDUCATION_TOOLTIP_HEADER": "\"View Your Recent Activity\"",
   "USER_PROFILE_RECENT_ACTIVITY_EDUCATION_TOOLTIP_BODY": "\"Easily review the recent activities that are visible on your profile\"",
+  "USER_PROFILE_RECENT_ACTIVITY_INFORMATION_TOOLTIP": "\"Your activity for the last 30 days will show up here\"",
   "CONNECTION_VERIFIED": "\"Verified Connection\"",
   "CONNECTION_VERIFIED_ON_TWITTER": "\"Verified on Twitter\"",
   "NO_MUTUAL_GUILDS": "\"No servers in common\"",
