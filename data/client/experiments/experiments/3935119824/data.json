@@ -6,15 +6,17 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: T2 + One tap send + preview",
-      "Treatment 2: T2 + Context message + preview"
+      "Treatment 1: T2 only (inline forward button)",
+      "Treatment 2: T2 + One tap send + preview",
+      "Treatment 3: T2 + Context message + preview"
     ],
     "hash": 3935119824,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,
