@@ -6,17 +6,13 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable mobile tab",
-      "Treatment 2: Enable discover button takeover",
-      "Treatment 3: Enable mobile tab and discover button takeover"
+      "Treatment 1: Enabled"
     ],
     "hash": 2456783224,
     "buckets": [
       -1,
       0,
-      1,
-      2,
-      3
+      1
     ],
     "holdout": {},
     "aa_mode": false,
