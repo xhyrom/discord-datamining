@@ -17688,6 +17688,7 @@
   "CONTENT_INVENTORY_COACHTIP_IMAGE_ALT": "\"Wumpus chatting with a friend while gaming\"",
   "CONTENT_INVENTORY_GAME_STATE_SIZE": "\"{count} of {max}\"",
   "GAME_PROFILE": "\"Game Profile\"",
+  "GAME_PROFILE_SEE_ALL_ENTRIES": "\"See All\"",
   "GAME_PROFILE_UNFOLLOW_GAME": "\"Unfollow\"",
   "GAME_PROFILE_FOLLOW_TOOLTIP": "\"Get notified about this game\"",
   "GAME_PROFILE_UNFOLLOW_TOOLTIP": "\"Stop getting notified about this game\"",
