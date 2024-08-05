@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_shy_project",
+    "label": "Shy Project Marketing Variation",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Summer 2024"
+    ],
+    "hash": 2483448920,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
