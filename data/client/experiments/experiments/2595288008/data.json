@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show reactions on message hover"
+      "Treatment 1: Show reactions on message hover",
+      "Treatment 2: Show reactions on message hover with visual changes"
     ],
     "hash": 2595288008,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "canShowReactionsOnMessageHover"
+      "canShowReactionsOnMessageHover",
+      "canShowReactionsWithVisualOnMessageHover"
     ]
   }
 }
