@@ -26856,7 +26856,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   gap: 2px;
   padding: 2px;
   top: -16px;
-  right: min(8px, 50% - 29px);
   opacity: 0;
   pointer-events: none;
 }
@@ -26864,6 +26863,16 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .popover_a64b81:focus-within {
   opacity: 1;
   pointer-events: all;
+}
+.statusPopover_a64b81 {
+  right: min(8px, 50% - 29px);
+}
+.avatarPopover_a64b81 {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 :not(.keyboard-mode).full-motion .popover_a64b81.visible_a64b81,
 :not(.keyboard-mode).full-motion .popover_a64b81:focus-within {
@@ -45355,4 +45364,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.cb1d6ee19846c653c6ae.css.map*/
+/*# sourceMappingURL=12633.6e40e08b5ba759c4d025.css.map*/
