@@ -11021,7 +11021,7 @@
   "ROLE_PERMISSIONS_MANAGE_MESSAGES_DESCRIPTION": "\"Allows members to delete messages by other members or pin any message.\"",
   "READ_MESSAGE_HISTORY": "\"Read Message History\"",
   "READ_POST_HISTORY": "\"Read Post History\"",
-  "ROLE_PERMISSIONS_READ_MESSAGE_HISTORY_DESCRIPTION": "\"Allows members to read previous messages sent in channels. If this permission is disabled, members only see messages sent when they are online and focused on that channel.\"",
+  "ROLE_PERMISSIONS_READ_MESSAGE_HISTORY_DESCRIPTION": "\"Allows members to read previous messages sent in channels. If this permission is disabled, members only see messages sent when they are online and focused on that channel. This does not fully apply to threads and forum posts.\"",
   "ROLE_PERMISSIONS_SEND_TTS_MESSAGES": "\"Send Text-to-Speech Messages\"",
   "ROLE_PERMISSIONS_SEND_TTS_MESSAGES_DESCRIPTION": "\"Allows members to send text-to-speech messages by starting a message with /tts. These messages can be heard by anyone focused on the channel.\"",
   "ROLE_PERMISSIONS_USE_APPLICATION_COMMANDS": "\"Use Application Commands\"",
