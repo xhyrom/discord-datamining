@@ -1,4 +1,4 @@
-<h3>
+<h3 id="h_01J4HPR59FKARHPDDNCFMFZTY7">
   <span style="font-weight: 400"
     >Note: Beginning on August 1st, 2022, Discord users can expect to see
     improvements to the Discord Android application, including:<br />- </span
@@ -42,10 +42,13 @@
 <p>Tapping that bubble will expand to show what you see below!</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360036962311/10.png"
+    src="https://support.discord.com/hc/article_attachments/25421595260055"
     alt="10.png"
-  />Well, almost exactly what you see here if you have the same name and you
-  have the same friends with the same avatars and you're playing the same game.
+  />
+</p>
+<p class="wysiwyg-text-align-center">
+  Well, almost exactly what you see here if you have the same name and you have
+  the same friends with the same avatars and you're playing the same game.
 </p>
 <p>
   <br />You will be able to see who's talking, who's in the call, and access
@@ -63,11 +66,11 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360036962331/11.jpg"
+    src="https://support.discord.com/hc/article_attachments/25421595277207"
     alt="11.jpg"
   />
 </p>
-<h3>
+<h3 id="h_01J4HPR59FTVDAQCGESQ7T9D6D">
   <span class="wysiwyg-color-red"><strong>Note:</strong></span
   > Moving the bubble onto the "<span class="wysiwyg-color-red"
     ><strong>X</strong></span
@@ -77,7 +80,7 @@
   hang up the call. You will need to hang up explicitly by tapping on the hangup
   button within the expanded overlay or within Discord.
 </h3>
-<h1>How to enable mobile voice overlay</h1>
+<h1 id="h_01J4HPR59FBRPBWXRBHVT825S7">How to enable mobile voice overlay</h1>
 <p>
   Make sure you are on Discord Android Version 9.4.5. You can enable the
   <strong>Mobile Voice Overlay</strong> by going into <em>Settings</em> -&gt;
@@ -87,7 +90,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360036962391/12.png"
+    src="https://support.discord.com/hc/article_attachments/19436247825559"
     alt="12.png"
   />
 </p>
@@ -96,9 +99,9 @@
   to allow Discord to "draw on top". This permission is required to allow you to
   see the overlay while using other apps!
 </p>
-<h4 class="wysiwyg-text-align-center">
+<h4 id="h_01J4HPR59FTSGNE46ZEQ1X3S9Q" class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360036969352/13.jpg"
+    src="https://support.discord.com/hc/article_attachments/19436219630999"
     alt="13.jpg"
   /><br /><span class="wysiwyg-font-size-medium"
     >Tadaa, now you can use the mobile voice overlay!</span
