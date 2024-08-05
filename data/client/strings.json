@@ -17881,6 +17881,8 @@
   "USER_PROFILE_BLOCKED_SPEED_BUMP_ACTION_SHEET_NOTIFIED": "\"They won't be notified\"",
   "USER_PROFILE_BLOCKED_SPEED_BUMP_ACTION_SHEET_STILL_BLOCKED": "\"They will still be blocked\"",
   "USER_PROFILE_BLOCKED_SPEED_BUMP_ACTION_SHEET_BUTTON": "\"Yes, Proceed\"",
+  "CHANNEL_LINKED_LOBBY_CHANNEL_HEADER": "\"Syncing with **!!{applicationName}!!** • [Learn more]({helpdeskArticle})\"",
+  "CHANNEL_LINKED_LOBBY_CHANNEL_HEADER_UNKNOWN_APPLICATION": "\"Syncing with an application • [Learn more]({helpdeskArticle})\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
   "BACKGROUND": "\"Background\"",
