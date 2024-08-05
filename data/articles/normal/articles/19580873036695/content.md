@@ -332,7 +332,8 @@
   >. 
 </p>
 <p>
-  If you’re wanting to submit a refund request instead, and it’s within our
+  If you want to submit a refund request instead, and your purchase is within
+  our
   <a
     href="https://support.discord.com/hc/en-us/articles/360012668071"
     target="_blank"
