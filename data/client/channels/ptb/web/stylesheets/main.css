@@ -35633,6 +35633,15 @@ img.thumbnail_c64476 {
 .statusText_c45b04 {
   padding-left: 0.5rem;
 }
+.right_ea4310 {
+  transform: rotate(90deg);
+}
+.down_ea4310 {
+  transform: rotate(180deg);
+}
+.left_ea4310 {
+  transform: rotate(270deg);
+}
 .draggableContainer_ca37d0 {
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
 }
@@ -35707,7 +35716,7 @@ img.thumbnail_c64476 {
 }
 .footerButtonContainer_ca37d0 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: var(--spacing-8);
 }
 .footerNitro_ca37d0 {
@@ -35718,9 +35727,11 @@ img.thumbnail_c64476 {
 .footerText_ca37d0 {
   pointer-events: all;
 }
+.footerButtonBack_ca37d0 {
+  height: 100%;
+}
 .footerButton_ca37d0 {
   pointer-events: all;
-  flex: 1;
 }
 html,
 [data-popout-root] {
@@ -45364,4 +45375,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.6e40e08b5ba759c4d025.css.map*/
+/*# sourceMappingURL=12633.adb928ee677f0043ef54.css.map*/
