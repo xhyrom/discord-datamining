@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7259991002](https://discord.com/jobs/7259991002)
 
-**Updated At:** Mon, 05 Aug 2024 20:49:43 GMT
+**Updated At:** Mon, 05 Aug 2024 21:53:08 GMT
 
 **Job Description:**
 This position is US based only.At Discord, we believe everyone can find a place where they belong. Our mission is to help make it easy for everyone to find and join meaningful conversations, and to make every part of our product feel smart and delightful.
@@ -52,7 +52,7 @@ education_optional
 - GDPR: No consent required for processing or retention.
 
 **Departments:**
-- Data Platform Engineering
+- Data Science & Engineering
 
 **Offices:**
 - San Francisco, CA in San Francisco, California, United States
