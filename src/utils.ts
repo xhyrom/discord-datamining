@@ -53,7 +53,7 @@ export const pushToGit = async (...message: string[]) => {
     msg.push(maximumStringLen(m, 20000));
   }
 
-  if (process.env.DEBUG) {
+  if (process.env.DEBUG === "true") {
     console.log(`Avoiding ${msg} push`);
     return;
   }
