@@ -17,11 +17,20 @@
   * **/
 
 import { join } from "node:path";
-import { DATA_DIR, pushToGit, rm, writeFile } from "../../utils.ts";
+import {
+  createDiff,
+  DATA_DIR,
+  mergeDiffs,
+  pushToGit,
+  readFile,
+  rm,
+  writeFile,
+} from "../../utils.ts";
 import { JSDOM } from "jsdom";
 import type { Module } from "..";
+import { wumpusCentralSend } from "./wumpus_central.ts";
 
-interface GreenHouseJob {
+export interface GreenHouseJob {
   absolute_url: string;
   data_compliance: {
     type: string;
@@ -61,7 +70,7 @@ interface GreenHouseJob {
   }[];
 }
 
-interface GreenHouseResponse {
+export interface GreenHouseResponse {
   jobs: GreenHouseJob[];
   meta: {
     total: number;
@@ -74,6 +83,12 @@ export class Jobs implements Module {
   }
 
   public async run() {
+    const oldDiscord = JSON.parse(
+      (await readFile(join(this.baseDir, "discord.json"))) ?? "{}",
+    );
+    const oldDiscordNetherlands = JSON.parse(
+      (await readFile(join(this.baseDir, "discord_netherlands.json"))) ?? "{}",
+    );
     const discord = await this.getJobs("discord");
     const discordNetherlands = await this.getJobs("discordnetherlands");
 
@@ -90,7 +105,18 @@ export class Jobs implements Module {
     await this.writeJobs("discord", discord.jobs);
     await this.writeJobs("discord_netherlands", discordNetherlands.jobs);
 
-    await pushToGit("💼 Jobs has been updated");
+    const result = await pushToGit("💼 Jobs has been updated");
+
+    if (!result?.update?.hash) return;
+    await wumpusCentralSend(
+      mergeDiffs<GreenHouseJob>(
+        createDiff(oldDiscord.jobs, discord.jobs, "id", ["updated_at"]),
+        createDiff(oldDiscordNetherlands.jobs, discordNetherlands.jobs, "id", [
+          "updated_at",
+        ]),
+      ),
+      `https://github.com/xhyrom/discord-datamining/commit/${result.update.hash}`,
+    );
   }
 
   async writeJobs(board: string, jobs: GreenHouseJob[]) {
