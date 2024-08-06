@@ -337,7 +337,7 @@
               return l.gE;
             },
             Dedupe: function () {
-              return f.I;
+              return L.I;
             },
             FunctionToString: function () {
               return _.cq;
@@ -346,7 +346,7 @@
               return O.d;
             },
             HttpContext: function () {
-              return L.q;
+              return f.q;
             },
             Hub: function () {
               return _.Xb;
@@ -549,8 +549,8 @@
           S = r(382078),
           p = r(124969),
           D = r(140735),
-          L = r(612568),
-          f = r(683900);
+          f = r(612568),
+          L = r(683900);
         let h = {};
         a.m9.Sentry &&
           a.m9.Sentry.Integrations &&
@@ -1542,13 +1542,13 @@
             return C;
           },
           X2: function () {
-            return L;
+            return f;
           },
           db: function () {
             return S;
           },
           nm: function () {
-            return f;
+            return L;
           },
           wh: function () {
             return h;
@@ -1624,7 +1624,7 @@
           );
         }
         let D = new WeakMap();
-        function L(t) {
+        function f(t) {
           return ("number" != typeof t && "boolean" != typeof t) ||
             ("number" == typeof t && isNaN(t))
             ? (("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) &&
@@ -1641,7 +1641,7 @@
                   ),
                 !1);
         }
-        function f(t, e, r) {
+        function L(t, e, r) {
           var n;
           return (
             (n = e).samples.length < 2
@@ -1895,8 +1895,8 @@
           S = r(612568),
           p = r(683900),
           D = r(202406),
-          L = r(393746),
-          f = r(975927);
+          f = r(393746),
+          L = r(975927);
         let h = [
           new n.QD(),
           new _.c(),
@@ -1921,7 +1921,7 @@
             ...t,
             stackParser: (0, s.Sq)(t.stackParser || D.Dt),
             integrations: (0, a.m8)(t),
-            transport: t.transport || ((0, c.Ak)() ? L.f : f.K),
+            transport: t.transport || ((0, c.Ak)() ? f.f : L.K),
           };
           (0, i.M)(u.R, e),
             t.autoSessionTracking &&
@@ -5485,8 +5485,8 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
           S,
           p,
           D,
-          L,
-          f = r(876122),
+          f,
+          L = r(876122),
           h = r(703498),
           C = r(392405),
           g = r(138122),
@@ -5726,8 +5726,8 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
               maskTextFn: S,
               maskInputFn: p,
               slimDOMOptions: D,
-              dataURLOptions: L = {},
-              inlineImages: f = !1,
+              dataURLOptions: f = {},
+              inlineImages: L = !1,
               recordCanvas: h = !1,
               onSerialize: C,
               onIframeLoad: g,
@@ -5753,8 +5753,8 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                 maskInputOptions: S = {},
                 maskTextFn: p,
                 maskInputFn: D,
-                dataURLOptions: L = {},
-                inlineImages: f,
+                dataURLOptions: f = {},
+                inlineImages: L,
                 recordCanvas: h,
                 keepIframeSrcFn: C,
               } = e;
@@ -5875,17 +5875,17 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                               return !1;
                           }
                         return !0;
-                      })(t) && (M.rr_dataURL = t.toDataURL(L.type, L.quality));
+                      })(t) && (M.rr_dataURL = t.toDataURL(f.type, f.quality));
                     else if (!("__context" in t)) {
-                      let e = t.toDataURL(L.type, L.quality),
+                      let e = t.toDataURL(f.type, f.quality),
                         r = document.createElement("canvas");
                       (r.width = t.width),
                         (r.height = t.height),
-                        e !== r.toDataURL(L.type, L.quality) &&
+                        e !== r.toDataURL(f.type, f.quality) &&
                           (M.rr_dataURL = e);
                     }
                   }
-                  if ("img" === P && f) {
+                  if ("img" === P && L) {
                     !n &&
                       (_ = (n = E.createElement("canvas")).getContext("2d"));
                     let e = t.crossOrigin;
@@ -5895,7 +5895,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                         (n.width = t.naturalWidth),
                           (n.height = t.naturalHeight),
                           _.drawImage(t, 0, 0),
-                          (M.rr_dataURL = n.toDataURL(L.type, L.quality));
+                          (M.rr_dataURL = n.toDataURL(f.type, f.quality));
                       } catch (e) {
                         console.warn(
                           `Cannot inline img src=${t.currentSrc}! Error: ${e}`,
@@ -6016,8 +6016,8 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
               maskInputOptions: O,
               maskTextFn: S,
               maskInputFn: p,
-              dataURLOptions: L,
-              inlineImages: f,
+              dataURLOptions: f,
+              inlineImages: L,
               recordCanvas: h,
               keepIframeSrcFn: M,
             });
@@ -6150,8 +6150,8 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
               maskTextFn: S,
               maskInputFn: p,
               slimDOMOptions: D,
-              dataURLOptions: L,
-              inlineImages: f,
+              dataURLOptions: f,
+              inlineImages: L,
               recordCanvas: h,
               preserveWhiteSpace: U,
               onSerialize: C,
@@ -6221,8 +6221,8 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                       maskTextFn: S,
                       maskInputFn: p,
                       slimDOMOptions: D,
-                      dataURLOptions: L,
-                      inlineImages: f,
+                      dataURLOptions: f,
+                      inlineImages: L,
                       recordCanvas: h,
                       preserveWhiteSpace: U,
                       onSerialize: C,
@@ -6421,10 +6421,10 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
               "map" === e && console.error(tu), Reflect.get(t, e, r)
             ),
           }));
-        function tL(t) {
+        function tf(t) {
           return !!t.changedTouches;
         }
-        function tf(t) {
+        function tL(t) {
           return (
             "__sn" in t &&
             t.__sn.type === A.Element &&
@@ -6574,7 +6574,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                       recordCanvas: this.recordCanvas,
                       inlineImages: this.inlineImages,
                       onSerialize: (t) => {
-                        tf(t) && this.iframeManager.addIframe(t),
+                        tL(t) && this.iframeManager.addIframe(t),
                           th(n) &&
                             this.shadowDomManager.addShadowRoot(
                               n.shadowRoot,
@@ -7064,7 +7064,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                 s = tA(
                   (t) => {
                     let e = tv(t),
-                      { clientX: r, clientY: a } = tL(t)
+                      { clientX: r, clientY: a } = tf(t)
                         ? t.changedTouches[0]
                         : t;
                     !_ && (_ = Date.now()),
@@ -7113,7 +7113,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                 s = (e) => (i) => {
                   let o = tv(i);
                   if (tp(o, n, _, a)) return;
-                  let E = tL(i) ? i.changedTouches[0] : i;
+                  let E = tf(i) ? i.changedTouches[0] : i;
                   if (!E) return;
                   let s = r.getId(o),
                     { clientX: c, clientY: I } = E;
@@ -8002,8 +8002,8 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
             maskAllText: S = !1,
             maskAllInputs: p,
             maskInputOptions: D,
-            slimDOMOptions: L,
-            maskInputFn: f,
+            slimDOMOptions: f,
+            maskInputFn: L,
             maskTextFn: h,
             hooks: C,
             packFn: g,
@@ -8044,7 +8044,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                   ? D
                   : {},
             H =
-              !0 === L || "all" === L
+              !0 === f || "all" === f
                 ? {
                     script: !0,
                     comment: !0,
@@ -8054,10 +8054,10 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                     headMetaRobots: !0,
                     headMetaHttpEquiv: !0,
                     headMetaVerification: !0,
-                    headMetaAuthorship: "all" === L,
-                    headMetaDescKeywords: "all" === L,
+                    headMetaAuthorship: "all" === f,
+                    headMetaDescKeywords: "all" === f,
                   }
-                : L || {};
+                : f || {};
           !(function (t = window) {
             "NodeList" in t &&
               !t.NodeList.prototype.forEach &&
@@ -8151,7 +8151,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                 maskAllText: S,
                 maskInputOptions: w,
                 maskTextFn: h,
-                maskInputFn: f,
+                maskInputFn: L,
                 recordCanvas: U,
                 inlineImages: y,
                 sampling: P,
@@ -8194,13 +8194,13 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                   onSerialize: S,
                   onIframeLoad: p,
                   iframeLoadTimeout: D,
-                  keepIframeSrcFn: L = () => !1,
+                  keepIframeSrcFn: f = () => !1,
                 } = e || {},
-                f = {};
+                L = {};
               return [
                 tR(t, {
                   doc: t,
-                  map: f,
+                  map: L,
                   blockClass: r,
                   blockSelector: n,
                   unblockSelector: _,
@@ -8260,9 +8260,9 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                   onSerialize: S,
                   onIframeLoad: p,
                   iframeLoadTimeout: D,
-                  keepIframeSrcFn: L,
+                  keepIframeSrcFn: f,
                 }),
-                f,
+                L,
               ];
             })(document, {
               blockClass: o,
@@ -8281,7 +8281,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
               recordCanvas: U,
               inlineImages: y,
               onSerialize: (t) => {
-                tf(t) && F.addIframe(t),
+                tL(t) && F.addIframe(t),
                   th(t) && X.addShadowRoot(t.shadowRoot, document);
               },
               onIframeLoad: (t, e) => {
@@ -8433,7 +8433,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                   collectFonts: m,
                   doc: t,
                   maskAllText: S,
-                  maskInputFn: f,
+                  maskInputFn: L,
                   maskTextFn: h,
                   blockSelector: E,
                   unblockSelector: s,
@@ -8743,7 +8743,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
         function e_(t) {
           return { timestamp: Date.now() / 1e3, type: "default", ...t };
         }
-        ((l = L || (L = {}))[(l.Document = 0)] = "Document"),
+        ((l = f || (f = {}))[(l.Document = 0)] = "Document"),
           (l[(l.DocumentType = 1)] = "DocumentType"),
           (l[(l.Element = 2)] = "Element"),
           (l[(l.Text = 3)] = "Text"),
@@ -8800,7 +8800,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
             (function (t) {
               return "__sn" in t;
             })(t) &&
-            t.__sn.type === L.Element
+            t.__sn.type === f.Element
               ? t.__sn
               : null;
           return {
@@ -8816,7 +8816,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                           .map(
                             (t) =>
                               "__sn" in t &&
-                              t.__sn.type === L.Text &&
+                              t.__sn.type === f.Text &&
                               t.__sn.textContent,
                           )
                           .filter(Boolean)
@@ -9144,7 +9144,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
             })({ stickySession: r, sessionSampleRate: n, allowBuffering: _ }),
           };
         }
-        async function eL(t, e, r) {
+        async function ef(t, e, r) {
           if (
             !t.eventBuffer ||
             t.isPaused() ||
@@ -9178,11 +9178,11 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
             ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) &&
               m.kg.error(n),
               await t.stop(e);
-            let r = (0, f.Gd)().getClient();
+            let r = (0, L.Gd)().getClient();
             r && r.recordDroppedEvent("internal_sdk_error", "replay");
           }
         }
-        function ef(t) {
+        function eL(t) {
           return !t.type;
         }
         function eh(t) {
@@ -9190,7 +9190,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
         }
         function eC(t) {
           let e = (function () {
-            let t = (0, f.Gd)().getClient();
+            let t = (0, L.Gd)().getClient();
             if (!t) return !1;
             let e = t.getTransport();
             return !!e && (e.send.__sentry__baseTransport__ || !1);
@@ -9247,7 +9247,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
               (!("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) ||
                 !r.getOptions()._experiments.traceInternals) &&
               (function (t) {
-                let e = (0, f.Gd)().getClient(),
+                let e = (0, L.Gd)().getClient(),
                   r = e && e.getDsn();
                 return !!r && t.includes(r.host);
               })(n)
@@ -9941,7 +9941,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
               return r;
             })({ recordingData: t, headers: { segment_id: r } }),
             { urls: R, errorIds: T, traceIds: u, initialTimestamp: l } = n,
-            A = (0, f.Gd)(),
+            A = (0, L.Gd)(),
             N = A.getClient(),
             d = A.getScope(),
             O = N && N.getTransport(),
@@ -9968,7 +9968,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
             return;
           }
           delete D.sdkProcessingMetadata;
-          let L =
+          let f =
             ((i = D),
             (o = I),
             (E = S),
@@ -9987,7 +9987,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
               ],
             ]));
           try {
-            c = await O.send(L);
+            c = await O.send(f);
           } catch (e) {
             let t = Error(V);
             try {
@@ -10161,7 +10161,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                   let o = n.get(r) || 0;
                   return n.set(r, o + 1), t(...e);
                 };
-              })((t, e) => eL(this, t, e), 300, 5));
+              })((t, e) => ef(this, t, e), 300, 5));
             let { slowClickTimeout: r, slowClickIgnoreSelectors: n } =
                 this.getOptions(),
               _ = r
@@ -10264,14 +10264,14 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                           ("buffer" === t.recordingMode &&
                             _ &&
                             t.setInitialState(),
-                          eL(t, r, _),
+                          ef(t, r, _),
                           !_)
                         )
                           return !1;
                         if (
                           ((function (t, e) {
                             e && t.session && 0 === t.session.segmentId
-                              ? eL(
+                              ? ef(
                                   t,
                                   (function (t) {
                                     let e = t.getOptions();
@@ -10472,7 +10472,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
             if (r === e5) {
               let t = e_({ category: "replay.throttled" });
               this.addUpdate(() => {
-                eL(this, {
+                ef(this, {
                   type: N.Custom,
                   timestamp: t.timestamp || 0,
                   data: { tag: "breadcrumb", payload: t, metric: !0 },
@@ -10483,7 +10483,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
           }
           getCurrentRoute() {
             let t =
-              this.lastTransaction || (0, f.Gd)().getScope().getTransaction();
+              this.lastTransaction || (0, L.Gd)().getScope().getTransaction();
             if (!!t && !!["route", "custom"].includes(t.metadata.source))
               return t.name;
           }
@@ -10558,8 +10558,8 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                 !this._hasInitializedCoreListeners &&
                   (!(function (t) {
                     var e;
-                    let r = (0, f.Gd)().getScope(),
-                      n = (0, f.Gd)().getClient();
+                    let r = (0, L.Gd)().getScope(),
+                      n = (0, L.Gd)().getClient();
                     r && r.addScopeListener(eq(t)),
                       (0, b.oq)("dom", ei(t)),
                       (0, b.oq)(
@@ -10585,7 +10585,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                         }),
                       ),
                       !(function (t) {
-                        let e = (0, f.Gd)().getClient();
+                        let e = (0, L.Gd)().getClient();
                         try {
                           let _ = new TextEncoder(),
                             {
@@ -11068,7 +11068,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                   });
               } catch (e) {
                 this._handleException(e), this.stop("sendReplay");
-                let t = (0, f.Gd)().getClient();
+                let t = (0, L.Gd)().getClient();
                 t && t.recordDroppedEvent("send_error", "replay");
               }
           }
@@ -11193,8 +11193,8 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
             mask: S = [],
             unmask: p = [],
             block: D = [],
-            unblock: L = [],
-            ignore: f = [],
+            unblock: f = [],
+            ignore: L = [],
             maskFn: h,
             beforeAddRecordingEvent: C,
             blockClass: g,
@@ -11264,8 +11264,8 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                   mask: S,
                   unmask: p,
                   block: D,
-                  unblock: L,
-                  ignore: f,
+                  unblock: f,
+                  ignore: L,
                   blockClass: g,
                   blockSelector: P,
                   maskTextClass: U,
@@ -11356,7 +11356,7 @@ Sentry.init({ replaysOnErrorSampleRate: ${o} })`),
           }
           _setup() {
             let t = (function (t) {
-              let e = (0, f.Gd)().getClient(),
+              let e = (0, L.Gd)().getClient(),
                 r = e && e.getOptions(),
                 n = {
                   sessionSampleRate: 0,
@@ -12207,13 +12207,13 @@ ${JSON.stringify(e)}
                     break;
                   case "unhandledrejection":
                     (function () {
-                      (L = T.onunhandledrejection),
+                      (f = T.onunhandledrejection),
                         (T.onunhandledrejection = function (t) {
                           return (
                             d("unhandledrejection", t),
-                            !L ||
-                              !!L.__SENTRY_LOADER__ ||
-                              L.apply(this, arguments)
+                            !f ||
+                              !!f.__SENTRY_LOADER__ ||
+                              f.apply(this, arguments)
                           );
                         }),
                         (T.onunhandledrejection.__SENTRY_INSTRUMENTED__ = !0);
@@ -12295,7 +12295,7 @@ Error:`,
           };
         }
         let D = null,
-          L = null;
+          f = null;
       },
       46834: function (t, e, r) {
         "use strict";
@@ -13607,11 +13607,11 @@ Error:`,
                 i.kg.log(`[Tracing] Starting ${S.op} transaction on scope`);
             let { location: p } = T.m,
               D = (0, _.l)(e, S, n, a, !0, { location: p }, E),
-              L = e.getScope();
+              f = e.getScope();
             return (
               s && u
-                ? L.setPropagationContext(N)
-                : L.setPropagationContext({
+                ? f.setPropagationContext(N)
+                : f.setPropagationContext({
                     traceId: D.traceId,
                     spanId: D.spanId,
                     parentSpanId: D.parentSpanId,
@@ -13691,7 +13691,7 @@ Error:`,
             return S;
           },
           f7: function () {
-            return L;
+            return f;
           },
           sn: function () {
             return D;
@@ -13799,7 +13799,7 @@ Error:`,
             { durationThreshold: 0 },
           );
         }
-        function L(t) {
+        function f(t) {
           let e, r;
           let a = N();
           if (!a || !s.m.performance.getEntries || !i.Z1) return;
@@ -13824,11 +13824,11 @@ Error:`,
                         "loadEvent",
                         "connect",
                       ].forEach((n) => {
-                        f(t, e, n, r);
+                        L(t, e, n, r);
                       }),
-                        f(t, e, "secureConnection", r, "TLS/SSL", "connectEnd"),
-                        f(t, e, "fetch", r, "cache", "domainLookupStart"),
-                        f(t, e, "domainLookup", r, "DNS"),
+                        L(t, e, "secureConnection", r, "TLS/SSL", "connectEnd"),
+                        L(t, e, "fetch", r, "cache", "domainLookupStart"),
+                        L(t, e, "domainLookup", r, "DNS"),
                         (function (t, e, r) {
                           (0, l.H)(t, {
                             op: "browser",
@@ -13992,7 +13992,7 @@ Error:`,
           }
           (n = void 0), (_ = void 0), (O = {});
         }
-        function f(t, e, r, n, _, a) {
+        function L(t, e, r, n, _, a) {
           let i = a ? e[a] : e[`${r}End`],
             o = e[`${r}Start`];
           if (!!o && !!i)
@@ -14899,10 +14899,10 @@ Error:`,
             (E.prototype.abs = function () {
               return new E(this.value >= 0 ? this.value : -this.value);
             });
-          function L(t, e, r) {
+          function f(t, e, r) {
             return t < 1e7 ? new i(p(e, t), r) : new i(S(e, c(t)), r);
           }
-          function f(t) {
+          function L(t) {
             var e,
               r,
               n,
@@ -14958,7 +14958,7 @@ Error:`,
             (o.prototype._multiplyBySmall = function (t) {
               return s(t.value * this.value)
                 ? new o(t.value * this.value)
-                : L(
+                : f(
                     Math.abs(t.value),
                     c(Math.abs(this.value)),
                     this.sign !== t.sign,
@@ -14971,7 +14971,7 @@ Error:`,
                   ? this
                   : -1 === t.value
                     ? this.negate()
-                    : L(Math.abs(t.value), this.value, this.sign !== t.sign);
+                    : f(Math.abs(t.value), this.value, this.sign !== t.sign);
             }),
             (o.prototype.multiply = function (t) {
               return W(t)._multiplyBySmall(this);
@@ -14982,11 +14982,11 @@ Error:`,
             }),
             (E.prototype.times = E.prototype.multiply),
             (i.prototype.square = function () {
-              return new i(f(this.value), !1);
+              return new i(L(this.value), !1);
             }),
             (o.prototype.square = function () {
               var t = this.value * this.value;
-              return s(t) ? new o(t) : new i(f(c(Math.abs(this.value))), !1);
+              return s(t) ? new o(t) : new i(L(c(Math.abs(this.value))), !1);
             }),
             (E.prototype.square = function (t) {
               return new E(this.value * this.value);
@@ -15118,16 +15118,16 @@ Error:`,
                     return s.reverse(), [I(s), I(c)];
                   })(l, A))[0];
             var D = t.sign !== s.sign,
-              L = n[1],
-              f = t.sign;
+              f = n[1],
+              L = t.sign;
             return (
               "number" == typeof r
                 ? (D && (r = -r), (r = new o(r)))
                 : (r = new i(r, D)),
-              "number" == typeof L
-                ? (f && (L = -L), (L = new o(L)))
-                : (L = new i(L, f)),
-              [r, L]
+              "number" == typeof f
+                ? (L && (f = -f), (f = new o(f)))
+                : (f = new i(f, L)),
+              [r, f]
             );
           }
           function g(t, e) {
@@ -16674,8 +16674,8 @@ Error:`,
           S = A.BUGGY_SAFARI_ITERATORS,
           p = u("iterator"),
           D = "keys",
-          L = "values",
-          f = "entries",
+          f = "values",
+          L = "entries",
           h = function () {
             return this;
           };
@@ -16689,8 +16689,8 @@ Error:`,
               if (!S && t && t in y) return y[t];
               switch (t) {
                 case D:
-                case L:
                 case f:
+                case L:
                   return function () {
                     return new r(this, t);
                   };
@@ -16713,18 +16713,18 @@ Error:`,
               I(g, G, !0, !0),
               a && (l[G] = h)),
             N &&
-              u === L &&
+              u === f &&
               b &&
-              b.name !== L &&
+              b.name !== f &&
               (!a && d
-                ? R(y, "name", L)
+                ? R(y, "name", f)
                 : ((m = !0),
                   (B = function () {
                     return _(b, this);
                   }))),
             u)
           ) {
-            if (((P = { values: U(L), keys: A ? B : U(D), entries: U(f) }), C))
+            if (((P = { values: U(f), keys: A ? B : U(D), entries: U(L) }), C))
               for (M in P) (S || m || !(M in y)) && T(y, M, P[M]);
             else n({ target: e, proto: !0, forced: S || m }, P);
           }
@@ -17393,32 +17393,32 @@ Error:`,
           if (p) {
             var D = p.prototype;
             if ((!l && _(D, "cause") && delete D.cause, !r)) return p;
-            var L = n("Error"),
-              f = e(function (t, e) {
+            var f = n("Error"),
+              L = e(function (t, e) {
                 var r = I(A ? e : t, void 0),
                   n = A ? new p(t) : new p();
                 return (
                   void 0 !== r && a(n, "message", r),
-                  T(n, f, n.stack, 2),
-                  this && i(D, this) && c(n, this, f),
+                  T(n, L, n.stack, 2),
+                  this && i(D, this) && c(n, this, L),
                   arguments.length > d && R(n, arguments[d]),
                   n
                 );
               });
             if (
-              ((f.prototype = D),
+              ((L.prototype = D),
               "Error" !== S
                 ? o
-                  ? o(f, L)
-                  : E(f, L, { name: !0 })
-                : u && N in p && (s(f, p, N), s(f, p, "prepareStackTrace")),
-              E(f, p),
+                  ? o(L, f)
+                  : E(L, f, { name: !0 })
+                : u && N in p && (s(L, p, N), s(L, p, "prepareStackTrace")),
+              E(L, p),
               !l)
             )
               try {
-                D.name !== S && a(D, "name", S), (D.constructor = f);
+                D.name !== S && a(D, "name", S), (D.constructor = L);
               } catch (t) {}
-            return f;
+            return L;
           }
         };
       },
@@ -17908,27 +17908,27 @@ Error:`,
             p = O ? R : o(e);
           (S = S == I ? T : S), (p = p == I ? T : p);
           var D = S == T,
-            L = p == T,
-            f = S == p;
-          if (f && s(t)) {
+            f = p == T,
+            L = S == p;
+          if (L && s(t)) {
             if (!s(e)) return !1;
             (d = !0), (D = !1);
           }
-          if (f && !D)
+          if (L && !D)
             return (
               N || (N = new n()),
               d || c(t) ? _(t, e, r, l, A, N) : a(t, e, S, r, l, A, N)
             );
           if (!(1 & r)) {
             var h = D && u.call(t, "__wrapped__"),
-              C = L && u.call(e, "__wrapped__");
+              C = f && u.call(e, "__wrapped__");
             if (h || C) {
               var g = h ? t.value() : t,
                 P = C ? e.value() : e;
               return N || (N = new n()), A(g, P, r, l, N);
             }
           }
-          return !!f && (N || (N = new n()), i(t, e, r, l, A, N));
+          return !!L && (N || (N = new n()), i(t, e, r, l, A, N));
         };
       },
       46166: function (t, e, r) {
@@ -19402,7 +19402,7 @@ Error:`,
             return _k.QL;
           },
           QR$: function () {
-            return eL;
+            return ef;
           },
           QZA: function () {
             return i;
@@ -19597,7 +19597,7 @@ Error:`,
             return k;
           },
           a5g: function () {
-            return tL;
+            return tf;
           },
           aIL: function () {
             return _$;
@@ -19666,7 +19666,7 @@ Error:`,
             return ty;
           },
           eWB: function () {
-            return aL;
+            return af;
           },
           ecB: function () {
             return tQ;
@@ -19696,7 +19696,7 @@ Error:`,
             return _V.fM;
           },
           fo$: function () {
-            return af;
+            return aL;
           },
           frH: function () {
             return _k.fr;
@@ -19711,7 +19711,7 @@ Error:`,
             return _k.gg;
           },
           gkr: function () {
-            return ef;
+            return eL;
           },
           hBH: function () {
             return _m.h;
@@ -19876,7 +19876,7 @@ Error:`,
             return d;
           },
           r2o: function () {
-            return L;
+            return f;
           },
           rMx: function () {
             return tx;
@@ -20045,8 +20045,8 @@ Error:`,
           S,
           p,
           D,
-          L,
           f,
+          L,
           h,
           C,
           g,
@@ -20099,8 +20099,8 @@ Error:`,
           tS,
           tp,
           tD,
-          tL,
           tf,
+          tL,
           th,
           tC,
           tg,
@@ -20163,8 +20163,8 @@ Error:`,
           eS,
           ep,
           eD,
-          eL,
           ef,
+          eL,
           eh,
           eC,
           eg,
@@ -20227,8 +20227,8 @@ Error:`,
           rS,
           rp,
           rD,
-          rL,
           rf,
+          rL,
           rh,
           rC,
           rg,
@@ -20291,8 +20291,8 @@ Error:`,
           nS,
           np,
           nD,
-          nL,
           nf,
+          nL,
           nh,
           nC,
           ng,
@@ -20355,8 +20355,8 @@ Error:`,
           _S,
           _p,
           _D,
-          _L,
           _f,
+          _L,
           _h,
           _C,
           _g,
@@ -20676,7 +20676,7 @@ Error:`,
           (rE.QUESTS_PROGRESS_INTERRUPTION = "QUESTS_PROGRESS_INTERRUPTION"),
           (rE.CHECKOUT_RECOVERY_NAGBAR = "CHECKOUT_RECOVERY_NAGBAR"),
           (rE.CASH_APP_PAY_AWARENESS_NAGBAR = "CASH_APP_PAY_AWARENESS_NAGBAR"),
-          ((rs = L || (L = {})).RESOLVING = "RESOLVING"),
+          ((rs = f || (f = {})).RESOLVING = "RESOLVING"),
           (rs.RESOLVED = "RESOLVED"),
           (rs.EXPIRED = "EXPIRED"),
           (rs.BANNED = "BANNED"),
@@ -20686,7 +20686,7 @@ Error:`,
           (rs.APP_OPENED = "APP_OPENED"),
           (rs.APP_NOT_OPENED = "APP_NOT_OPENED"),
           (rs.ERROR = "ERROR"),
-          ((rc = f || (f = {})).OPENING = "OPENING"),
+          ((rc = L || (L = {})).OPENING = "OPENING"),
           (rc.OPEN = "OPEN"),
           (rc.OPEN_FAIL = "OPEN_FAIL"),
           ((rI = h || (h = {})).INVITE_SPLASH = "INVITE_SPLASH"),
@@ -20857,17 +20857,17 @@ Error:`,
           (rp.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"),
           ((rD = v || (v = {})).ALWAYS = "ALWAYS"),
           (rD.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"),
-          ((rL = w || (w = {})).GUILDS = "GUILDS"),
-          (rL.VOICE = "VOICE"),
-          (rL.TEXT = "TEXT"),
-          (rL.GUILDS_TEXT = "GUILDS_TEXT"),
-          ((rf = H || (H = {})).DEFAULT = "DEFAULT"),
-          (rf.PINNED = "PINNED"),
-          (rf.UNPINNED = "UNPINNED"),
-          (rf.IN_GAME = "IN_GAME"),
-          (rf.IN_GAME_TEXT = "IN_GAME_TEXT"),
-          (rf.IN_GAME_ACTIVE = "IN_GAME_ACTIVE"),
-          (rf.IN_GAME_PREVIEW = "IN_GAME_PREVIEW"),
+          ((rf = w || (w = {})).GUILDS = "GUILDS"),
+          (rf.VOICE = "VOICE"),
+          (rf.TEXT = "TEXT"),
+          (rf.GUILDS_TEXT = "GUILDS_TEXT"),
+          ((rL = H || (H = {})).DEFAULT = "DEFAULT"),
+          (rL.PINNED = "PINNED"),
+          (rL.UNPINNED = "UNPINNED"),
+          (rL.IN_GAME = "IN_GAME"),
+          (rL.IN_GAME_TEXT = "IN_GAME_TEXT"),
+          (rL.IN_GAME_ACTIVE = "IN_GAME_ACTIVE"),
+          (rL.IN_GAME_PREVIEW = "IN_GAME_PREVIEW"),
           ((rh = Y || (Y = {})).LARGE = "large"),
           (rh.SMALL = "small"),
           ((rC = K || (K = {}))[(rC.ACTIVE = 0)] = "ACTIVE"),
@@ -22396,8 +22396,8 @@ Error:`,
           aS = 1024,
           ap = 2e3,
           aD = 64e3,
-          aL = 96e3,
-          af = "0000",
+          af = 96e3,
+          aL = "0000",
           ah = "1",
           aC = 1e4,
           ag = 50,
@@ -23690,10 +23690,10 @@ Error:`,
           (r8.FRIEND_INVITE = "Friend Invite"),
           (r8.SPOTIFY = "Spotify"),
           (r8.STREAM = "Stream"),
-          ((r7 = tL || (tL = {})).DIRECT_MESSAGE = "Direct Message"),
+          ((r7 = tf || (tf = {})).DIRECT_MESSAGE = "Direct Message"),
           (r7.SMS = "SMS"),
           (r7.EMAIL = "Email"),
-          ((r9 = tf || (tf = {})).SHARE = "Share"),
+          ((r9 = tL || (tL = {})).SHARE = "Share"),
           (r9.COPY = "Copy"),
           (r9.CONTACTS = "Contacts"),
           (r9.GMAIL = "Gmail"),
@@ -25390,17 +25390,17 @@ Error:`,
             },
           }),
           a9 = 864e5;
-        ((nL = tz || (tz = {})).NORMAL = "normal"),
-          (nL.MINIMUM = "minimum"),
-          (nL.NO_CHAT = "no-chat"),
-          (nL.FULL_SCREEN = "full-screen"),
-          ((nf = tq || (tq = {})).THEATRE = "theatre"),
+        ((nf = tz || (tz = {})).NORMAL = "normal"),
+          (nf.MINIMUM = "minimum"),
+          (nf.NO_CHAT = "no-chat"),
           (nf.FULL_SCREEN = "full-screen"),
-          (nf.PIP = "pip"),
-          (nf.POPOUT = "popout"),
-          (nf.PORTRAIT = "portrait"),
-          (nf.LANDSCAPE = "landscape"),
-          (nf.MINIMIZED = "minimized"),
+          ((nL = tq || (tq = {})).THEATRE = "theatre"),
+          (nL.FULL_SCREEN = "full-screen"),
+          (nL.PIP = "pip"),
+          (nL.POPOUT = "popout"),
+          (nL.PORTRAIT = "portrait"),
+          (nL.LANDSCAPE = "landscape"),
+          (nL.MINIMIZED = "minimized"),
           ((nh = t$ || (t$ = {})).USER_SETTINGS = "USER_SETTINGS"),
           (nh.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
           (nh.GUILD_SETTINGS = "GUILD_SETTINGS"),
@@ -26025,11 +26025,11 @@ Error:`,
           (n5[(n5.COLLECTIBLES = 7)] = "COLLECTIBLES"),
           ((n4 = eD || (eD = {})).HOME = "1"),
           (n4.BROWSE = "2"),
-          ((n8 = eL || (eL = {})).WIN32 = "win32"),
+          ((n8 = ef || (ef = {})).WIN32 = "win32"),
           (n8.WIN64 = "win64"),
           (n8.MACOS = "macos"),
           (n8.LINUX = "linux"),
-          ((n7 = ef || (ef = {})).HOUSE_1 = "HOUSE_1"),
+          ((n7 = eL || (eL = {})).HOUSE_1 = "HOUSE_1"),
           (n7.HOUSE_2 = "HOUSE_2"),
           (n7.HOUSE_3 = "HOUSE_3");
         let ic = "RANDOM_HYPESQUAD_HOUSE";
@@ -26496,11 +26496,11 @@ Error:`,
         let iA = 2500,
           iN = 0,
           id = 2592e6;
-        ((_L = eq || (eq = {})).USERS = "users"),
-          (_L.ROLES = "roles"),
-          (_L.EVERYONE = "everyone"),
-          ((_f = e$ || (e$ = {}))[(_f.AUTO = 1)] = "AUTO"),
-          (_f[(_f.FULL = 2)] = "FULL");
+        ((_f = eq || (eq = {})).USERS = "users"),
+          (_f.ROLES = "roles"),
+          (_f.EVERYONE = "everyone"),
+          ((_L = e$ || (e$ = {}))[(_L.AUTO = 1)] = "AUTO"),
+          (_L[(_L.FULL = 2)] = "FULL");
         let iO = 100,
           iS =
             /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
@@ -26562,8 +26562,8 @@ Error:`,
           S,
           p,
           D,
-          L,
           f,
+          L,
           h,
           C,
           g,
@@ -26685,7 +26685,7 @@ Error:`,
           ((q = D || (D = {})).OVERVIEW = "OVERVIEW"),
           (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
           (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          (($ = L || (L = {})).INVITE = "invite"),
+          (($ = f || (f = {})).INVITE = "invite"),
           ($.GUILD_TEMPLATE = "guild-template"),
           ($.CHANNEL = "channel"),
           ($.GIFT_CODE = "gift-code"),
@@ -26724,7 +26724,7 @@ Error:`,
         let to = "CacheStoreLazy",
           tE = "CacheStoreChannelsLazy",
           ts = "CacheStore";
-        ((Z = f || (f = {})).UPLOAD = "upload"),
+        ((Z = L || (L = {})).UPLOAD = "upload"),
           (Z.GLOBAL_EMOJI = "global-emoji"),
           (Z.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
           (Z.BADGE = "badge"),
@@ -26920,7 +26920,7 @@ Error:`,
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-18095462ed907a19664a0d127b8384b661c560c3",
+            release: "discord_web-f944caa5ece5ea16d69f7825fb394069f3de0595",
             beforeSend: (t) => {
               var e, r;
               return !(
@@ -26992,8 +26992,8 @@ Error:`,
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", ((t = "315969"), "315969"));
-          a.YA("builtAt", String("1722965092347"));
+            a.YA("buildNumber", ((t = "315978"), "315978"));
+          a.YA("builtAt", String("1722966500484"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -27007,7 +27007,7 @@ Error:`,
             return I;
           },
           GA: function () {
-            return f;
+            return L;
           },
           JC: function () {
             return C;
@@ -27019,7 +27019,7 @@ Error:`,
             return n;
           },
           XZ: function () {
-            return L;
+            return f;
           },
           Y_: function () {
             return a;
@@ -27061,8 +27061,8 @@ Error:`,
         let S = 250,
           p = 762880,
           D = "ROLE_SUBSCRIPTIONS",
-          L = "APPLICATION_SUBSCRIPTION_SUBSECTION",
-          f = "SOUNDBOARD_SUBSECTION";
+          f = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+          L = "SOUNDBOARD_SUBSECTION";
         ((T = n || (n = {})).USER_PROFILE = "user_profile"),
           (T.GUILD = "guild"),
           (T.TRY_IT_OUT = "try_it_out"),
@@ -31101,7 +31101,7 @@ Error:`,
             return tm;
           },
           X7: function () {
-            return tf;
+            return tL;
           },
           XM: function () {
             return tw;
@@ -31128,7 +31128,7 @@ Error:`,
             return tO;
           },
           j8: function () {
-            return tL;
+            return tf;
           },
           lT: function () {
             return d;
@@ -31137,7 +31137,7 @@ Error:`,
             return tD;
           },
           pK: function () {
-            return L;
+            return f;
           },
           rx: function () {
             return tT;
@@ -31185,8 +31185,8 @@ Error:`,
           S,
           p,
           D,
-          L,
           f,
+          L,
           h,
           C,
           g,
@@ -31354,8 +31354,8 @@ Error:`,
           tS = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
           tp = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
           tD = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
-          tL = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
-          tf = new Set([6]);
+          tf = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
+          tL = new Set([6]);
         ((w = s || (s = {}))[(w.NEW = 1)] = "NEW"),
           ((H = c || (c = {}))[(H.PENDING = 0)] = "PENDING"),
           (H[(H.COMPLETED = 1)] = "COMPLETED"),
@@ -31818,7 +31818,7 @@ Error:`,
           (q.CREATOR_STORE_PAGE_CTA_CLICKED = "creator_store_page_cta_clicked"),
           ((D || (D = {})).MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN =
             "mktg_ack_modal_open"),
-          (($ = L || (L = {})).AED = "aed"),
+          (($ = f || (f = {})).AED = "aed"),
           ($.AFN = "afn"),
           ($.ALL = "all"),
           ($.AMD = "amd"),
@@ -32001,7 +32001,7 @@ Error:`,
           ($.ZMW = "zmw"),
           ($.ZWL = "zwl");
         let tx = "US";
-        ((Z = f || (f = {})).COUNTRY = "US"),
+        ((Z = L || (L = {})).COUNTRY = "US"),
           (Z.CURRENCY = "usd"),
           ((J = h || (h = {}))[(J.SINGLE_PLAYER = 1)] = "SINGLE_PLAYER"),
           (J[(J.ONLINE_MULTIPLAYER = 2)] = "ONLINE_MULTIPLAYER"),
@@ -36800,7 +36800,7 @@ Error:`,
             return D;
           },
           Od: function () {
-            return L;
+            return f;
           },
           U_: function () {
             return N;
@@ -36815,7 +36815,7 @@ Error:`,
             return u;
           },
           r0: function () {
-            return f;
+            return L;
           },
           ug: function () {
             return h;
@@ -37069,10 +37069,10 @@ Error:`,
         function D(t, e) {
           return e === T ? t : l(t, e);
         }
-        function L(t, e) {
+        function f(t, e) {
           return e === T ? t : A(t, u(t, e));
         }
-        let f = s
+        let L = s
             ? function (t) {
                 return BigInt(1) << BigInt(t);
               }
@@ -37492,11 +37492,11 @@ Error:`,
               D = function (t) {
                 return Math.round(100 * t) / 100;
               },
-              L = o.unpack,
-              f = function () {
+              f = o.unpack,
+              L = function () {
                 for (var t, e, r = [], n = arguments.length; n--; )
                   r[n] = arguments[n];
-                var _ = (r = L(r, "rgba"))[0],
+                var _ = (r = f(r, "rgba"))[0],
                   a = r[1],
                   i = r[2],
                   o = Math.min((_ /= 255), (a /= 255), (i /= 255)),
@@ -37631,7 +37631,7 @@ Error:`,
                 var r = h(t, "rgba"),
                   n = C(t) || "rgb";
                 return "hsl" == n.substr(0, 3)
-                  ? g(f(r), n)
+                  ? g(L(r), n)
                   : ((r[0] = P(r[0])),
                     (r[1] = P(r[1])),
                     (r[2] = P(r[2])),
@@ -37954,7 +37954,7 @@ Error:`,
             var tA = o.unpack,
               tN = o.type;
             (R.prototype.hsl = function () {
-              return f(this._rgb);
+              return L(this._rgb);
             }),
               (T.hsl = function () {
                 for (var t = [], e = arguments.length; e--; )
@@ -37979,8 +37979,8 @@ Error:`,
               tS = Math.max,
               tp = o.unpack,
               tD = Math.floor,
-              tL = o.unpack,
-              tf = o.type,
+              tf = o.unpack,
+              tL = o.type,
               th = function () {
                 for (var t, e, r, n = [], _ = arguments.length; _--; )
                   n[_] = arguments[_];
@@ -38060,7 +38060,7 @@ Error:`,
                 test: function () {
                   for (var t = [], e = arguments.length; e--; )
                     t[e] = arguments[e];
-                  if ("array" === tf((t = tL(t, "hsv"))) && 3 === t.length)
+                  if ("array" === tL((t = tf(t, "hsv"))) && 3 === t.length)
                     return "hsv";
                 },
               });
@@ -38681,8 +38681,8 @@ Error:`,
               });
             var ep = o.unpack,
               eD = o.unpack,
-              eL = o.unpack,
-              ef = o.type,
+              ef = o.unpack,
+              eL = o.type,
               eh = function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
@@ -38713,7 +38713,7 @@ Error:`,
                 test: function () {
                   for (var t = [], e = arguments.length; e--; )
                     t[e] = arguments[e];
-                  if ("array" === ef((t = eL(t, "oklch"))) && 3 === t.length)
+                  if ("array" === eL((t = ef(t, "oklch"))) && 3 === t.length)
                     return "oklch";
                 },
               });
@@ -39093,12 +39093,12 @@ Error:`,
                     return (u = {});
                   };
                 N(t);
-                var L = function (t) {
+                var f = function (t) {
                   var e = T(p(t));
                   return s && e[s] ? e[s]() : e;
                 };
                 return (
-                  (L.classes = function (t) {
+                  (f.classes = function (t) {
                     if (null != t) {
                       if ("array" === ej(t))
                         (o = t), (_ = [t[0], t[t.length - 1]]);
@@ -39106,11 +39106,11 @@ Error:`,
                         var e = T.analyze(_);
                         o = 0 === t ? [e.min, e.max] : T.limits(e, "e", t);
                       }
-                      return L;
+                      return f;
                     }
                     return o;
                   }),
-                  (L.domain = function (t) {
+                  (f.domain = function (t) {
                     if (!arguments.length) return _;
                     (c = t[0]), (I = t[t.length - 1]), (a = []);
                     var e = E.length;
@@ -39139,21 +39139,21 @@ Error:`,
                           });
                       }
                     }
-                    return (_ = [c, I]), L;
+                    return (_ = [c, I]), f;
                   }),
-                  (L.mode = function (t) {
-                    return arguments.length ? ((e = t), D(), L) : e;
+                  (f.mode = function (t) {
+                    return arguments.length ? ((e = t), D(), f) : e;
                   }),
-                  (L.range = function (t, e) {
-                    return N(t), L;
+                  (f.range = function (t, e) {
+                    return N(t), f;
                   }),
-                  (L.out = function (t) {
-                    return (s = t), L;
+                  (f.out = function (t) {
+                    return (s = t), f;
                   }),
-                  (L.spread = function (t) {
-                    return arguments.length ? ((n = t), L) : n;
+                  (f.spread = function (t) {
+                    return arguments.length ? ((n = t), f) : n;
                   }),
-                  (L.correctLightness = function (t) {
+                  (f.correctLightness = function (t) {
                     return (
                       null == t && (t = !0),
                       (R = t),
@@ -39183,19 +39183,19 @@ Error:`,
                         : function (t) {
                             return t;
                           }),
-                      L
+                      f
                     );
                   }),
-                  (L.padding = function (t) {
+                  (f.padding = function (t) {
                     return null != t
-                      ? ("number" === ej(t) && (t = [t, t]), (i = t), L)
+                      ? ("number" === ej(t) && (t = [t, t]), (i = t), f)
                       : i;
                   }),
-                  (L.colors = function (e, r) {
+                  (f.colors = function (e, r) {
                     arguments.length < 2 && (r = "hex");
                     var n = [];
                     if (0 == arguments.length) n = E.slice(0);
-                    else if (1 === e) n = [L(0.5)];
+                    else if (1 === e) n = [f(0.5)];
                     else if (e > 1) {
                       var a = _[0],
                         i = _[1] - a;
@@ -39211,7 +39211,7 @@ Error:`,
                           n.push(i);
                         return n;
                       })(0, e, !1).map(function (t) {
-                        return L(a + (t / (e - 1)) * i);
+                        return f(a + (t / (e - 1)) * i);
                       });
                     } else {
                       t = [];
@@ -39225,7 +39225,7 @@ Error:`,
                           s.push((o[c - 1] + o[c]) * 0.5);
                       else s = _;
                       n = s.map(function (t) {
-                        return L(t);
+                        return f(t);
                       });
                     }
                     return (
@@ -39236,16 +39236,16 @@ Error:`,
                       n
                     );
                   }),
-                  (L.cache = function (t) {
-                    return null != t ? ((l = t), L) : l;
+                  (f.cache = function (t) {
+                    return null != t ? ((l = t), f) : l;
                   }),
-                  (L.gamma = function (t) {
-                    return null != t ? ((A = t), L) : A;
+                  (f.gamma = function (t) {
+                    return null != t ? ((A = t), f) : A;
                   }),
-                  (L.nodata = function (t) {
-                    return null != t ? ((r = T(t)), L) : r;
+                  (f.nodata = function (t) {
+                    return null != t ? ((r = T(t)), f) : r;
                   }),
-                  L
+                  f
                 );
               },
               e$ = function (t) {
@@ -39498,9 +39498,9 @@ Error:`,
                       p = 0,
                       D = null;
                     (D = []).push(n);
-                    for (var L = 1; L < r; L++) D.push(n + (L / r) * (_ - n));
+                    for (var f = 1; f < r; f++) D.push(n + (f / r) * (_ - n));
                     for (D.push(_); S; ) {
-                      for (var f = 0; f < r; f++) O[f] = 0;
+                      for (var L = 0; L < r; L++) O[L] = 0;
                       for (var h = 0; h < N; h++) {
                         for (
                           var C = i[h], g = Number.MAX_VALUE, P = void 0, M = 0;
@@ -40142,10 +40142,10 @@ Error:`,
                   S = u * (1 + d),
                   p = ro(rE(O, 2) + rE(c, 2)),
                   D = ro(rE(S, 2) + rE(l, 2)),
-                  L = (p + D) / 2,
-                  f = a(rI(c, O)),
+                  f = (p + D) / 2,
+                  L = a(rI(c, O)),
                   h = a(rI(l, S)),
-                  C = f >= 0 ? f : f + 360,
+                  C = L >= 0 ? L : L + 360,
                   g = h >= 0 ? h : h + 360,
                   P = rR(C - g) > 180 ? (C + g + 360) / 2 : (C + g) / 2,
                   M =
@@ -40159,11 +40159,11 @@ Error:`,
                   (U = 2 * ro(p * D) * ru(i(U) / 2));
                 var G = D - p,
                   m = 1 + (0.015 * rE(A - 50, 2)) / ro(20 + rE(A - 50, 2)),
-                  y = 1 + 0.045 * L,
-                  b = 1 + 0.015 * L * M,
+                  y = 1 + 0.045 * f,
+                  b = 1 + 0.015 * f * M,
                   B = 30 * rl(-rE((P - 275) / 25, 2)),
                   v =
-                    -(2 * ro(rE(L, 7) / (rE(L, 7) + rE(25, 7)))) * ru(2 * i(B));
+                    -(2 * ro(rE(f, 7) / (rE(f, 7) + rE(25, 7)))) * ru(2 * i(B));
                 return rc(
                   0,
                   rs(
@@ -40282,4 +40282,4 @@ Error:`,
     window.DiscordSentry = (0, t.j)();
   })();
 })();
-//# sourceMappingURL=sentry.5c0e0aa1031a01f6911a.js.map
+//# sourceMappingURL=sentry.89459a981a0b8ae5b4f3.js.map
