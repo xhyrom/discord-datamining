@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Sidechain Compression enabled"
+      "Treatment 1: Sidechain Compression available, default enabled",
+      "Treatment 2: Sidechain Compression avialable, default disabled"
     ],
     "hash": 3312979622,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enableSidechainCompression"
+      "sidechainAvailable",
+      "sidechainEnabled"
     ]
   }
 }
