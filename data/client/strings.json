@@ -94,6 +94,7 @@
   "MINIMUM_SIZE": "\"Minimum Size: **{size}x{size}**\"",
   "IMAGES": "\"Images\"",
   "AVATAR_CONVERT_FAILURE_MOBILE": "\"Unable to convert avatar to data URL. {avatarUrl}\"",
+  "CUSTOMIZE_PROFILE_SELECT_GIF": "\"Select GIF\"",
   "CHANGE_ICON": "\"Change\\nIcon\"",
   "CHANGE_SPLASH": "\"Change Background\"",
   "CHANGE_HOME_HEADER": "\"Change Home Header\"",
