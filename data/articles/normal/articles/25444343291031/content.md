@@ -1,21 +1,26 @@
-<p><span class="wysiwyg-font-size-large">What this article covers:</span></p>
-<ul>
-  <li>
-    <a href="#h_01J4M00QYZN32G2KQM21D4F5ZF">What is a File Attachment?</a>
-  </li>
-  <li><a href="#h_01J4M00QYZTXY5FV9KDWT05H5T">How to Attach Files</a></li>
-  <li>
-    <a href="#h_01J4M00QYZ1NVBTHE6E6A3BSXR">File Upload Settings</a>
-    <ul>
-      <li><a href="#h_01J4M00QYZG2NM4G307YCRNS5B">Desktop/Browser</a></li>
-      <li><a href="#h_01J4M00QYZT1EQE0XSJJ326S6Q">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J4M00QYZMNPF2W7MRC1QHWSZ">What is NSFW Content Scanning?</a>
-  </li>
-  <li><a href="#h_01J4M00QYZM3445WFF5918B3R4">How to Use Alt Text</a></li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01J4M00QYZN32G2KQM21D4F5ZF">What is a File Attachment?</a>
+    </li>
+    <li><a href="#h_01J4M00QYZTXY5FV9KDWT05H5T">How to Attach Files</a></li>
+    <li>
+      <a href="#h_01J4M00QYZ1NVBTHE6E6A3BSXR">File Upload Settings</a>
+      <ul>
+        <li><a href="#h_01J4M00QYZG2NM4G307YCRNS5B">Desktop/Browser</a></li>
+        <li><a href="#h_01J4M00QYZT1EQE0XSJJ326S6Q">Mobile</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01J4M00QYZMNPF2W7MRC1QHWSZ">What is NSFW Content Scanning?</a>
+    </li>
+    <li><a href="#h_01J4M00QYZM3445WFF5918B3R4">How to Use Alt Text</a></li>
+  </ul>
+</div>
 <h1 id="h_01J4M00QYZN32G2KQM21D4F5ZF">What is a File Attachment?</h1>
 <p>
   In addition to text messages, users can upload file attachments in Discord to
