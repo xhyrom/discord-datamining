@@ -29,6 +29,7 @@ import {
 import simpleGit from "simple-git";
 import { REST } from "@discordjs/rest";
 import { Octokit } from "@octokit/rest";
+import deepEqual from "fast-deep-equal";
 import { setTimeout as sleep } from "node:timers/promises";
 import { Routes, type APIEmbed, ButtonStyle } from "discord-api-types/v10";
 import { ActionRowBuilder, ButtonBuilder } from "@discordjs/builders";
@@ -50,6 +51,15 @@ export const pushToGit = async (...message: string[]) => {
 
   for (const m of message) {
     msg.push(maximumStringLen(m, 20000));
+  }
+
+  if (process.env.DEBUG === "true") {
+    console.log(`Avoiding ${msg} push`);
+    return {
+      update: {
+        hash: "dev-debug",
+      },
+    };
   }
 
   await git.add("data/*");
@@ -109,6 +119,7 @@ export const postToDiscord = async (
         },
       });
     } catch (e) {
+      if (process.env.DEBUG === "true") console.log(e);
       console.log("Failed to push ", webhooks.name);
       continue;
     }
@@ -164,7 +175,7 @@ export const getPaginator = async (
     : partial;
 };
 
-export const omit = <T extends Record<string, any>, K extends keyof T>(
+export const omit = <T, K extends keyof T>(
   obj: T,
   ...keys: (keyof T)[]
 ): Omit<T, K> => {
@@ -268,3 +279,121 @@ export const numberPad = (num: number): string => {
 
   return num.toString();
 };
+
+export interface ArrayDiff<T> {
+  added: T[];
+  removed: T[];
+  updated: {
+    new: T;
+    old: T;
+    changes: Record<string, { new: unknown; old: unknown }>;
+  }[];
+}
+
+export function createDiff<T>(
+  a: T[],
+  b: T[],
+  compareKey: keyof T,
+  updateIgnoreKeys: (keyof T)[] = [],
+): ArrayDiff<T> {
+  const added: T[] = [];
+  const removed: T[] = [];
+  const updated: {
+    new: T;
+    old: T;
+    changes: Record<string, { new: unknown; old: unknown }>;
+  }[] = [];
+
+  for (const b1 of b) {
+    const aItem = a.find((item) => item[compareKey] === b1[compareKey]);
+    if (!aItem) {
+      added.push(b1);
+    } else {
+      const aItemOmitted = omit(aItem, ...updateIgnoreKeys);
+      const b1Omitted = omit(b1, ...updateIgnoreKeys);
+
+      if (!deepEqual(aItemOmitted, b1Omitted)) {
+        updated.push({
+          old: aItem,
+          new: b1,
+          changes: getChanges(aItem, b1, updateIgnoreKeys),
+        });
+      }
+    }
+  }
+
+  for (const a1 of a) {
+    if (!b.some((a) => a[compareKey] === a1[compareKey])) {
+      removed.push(a1);
+    }
+  }
+
+  return { added, removed, updated };
+}
+
+export function mergeDiffs<T>(...diffs: ArrayDiff<T>[]): ArrayDiff<T> {
+  const added = [];
+  const removed = [];
+  const updated = [];
+
+  for (const diff of diffs) {
+    added.push(...diff.added);
+    removed.push(...diff.removed);
+    updated.push(...diff.updated);
+  }
+
+  return { added, removed, updated };
+}
+
+function getChanges<T>(
+  oldObj: T,
+  newObj: T,
+  updateIgnoreKeys: (keyof T)[] = [],
+  path = "",
+): Record<string, { new: unknown; old: unknown }> {
+  const changes: Record<string, { new: unknown; old: unknown }> = {};
+
+  for (const key in newObj) {
+    if (updateIgnoreKeys.includes(key as keyof T)) continue;
+    const newPath = path ? `${path}.${key}` : key;
+
+    if (Array.isArray(newObj[key])) {
+      (newObj[key] as unknown[]).forEach((item, index) => {
+        if (typeof item === "object" && item !== null) {
+          Object.assign(
+            changes,
+            getChanges(
+              (oldObj[key as keyof T] as T[])[index] as T,
+              item as T,
+              updateIgnoreKeys,
+              `${newPath}[${index}]`,
+            ),
+          );
+        } else if (!deepEqual((oldObj[key] as unknown[])[index], item)) {
+          changes[`${newPath}[${index}]`] = {
+            old: (oldObj[key] as unknown[])[index],
+            new: item,
+          };
+        }
+      });
+    } else if (
+      typeof newObj[key] === "object" &&
+      newObj[key] !== null &&
+      !Array.isArray(newObj[key])
+    ) {
+      Object.assign(
+        changes,
+        getChanges(
+          oldObj[key as keyof T] as T,
+          newObj[key as keyof T] as T,
+          updateIgnoreKeys,
+          newPath,
+        ),
+      );
+    } else if (!deepEqual(oldObj[key], newObj[key])) {
+      changes[newPath] = { old: oldObj[key], new: newObj[key] };
+    }
+  }
+
+  return changes;
+}
