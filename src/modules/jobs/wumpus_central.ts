@@ -42,12 +42,12 @@ export async function wumpusCentralSend(
           },
           {
             name: "Updated At",
-            value: new Date(job.updated_at).toUTCString(),
+            value: `<t:${Math.round(new Date(job.updated_at).getTime() / 1000)}>`,
             inline: true,
           },
           {
             name: "Education",
-            value: job.education!,
+            value: job.education ?? "?",
             inline: true,
           },
           {
@@ -136,7 +136,7 @@ export async function wumpusCentralSend(
             value: updates,
           },
         )
-        .setColor(0x58ff80)
+        .setColor(0xfff673)
         .toJSON(),
     );
   }
