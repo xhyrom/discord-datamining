@@ -10,7 +10,6 @@ import type { APIEmbed } from "discord-api-types/v10";
 
 export async function wumpusCentralSend(
   diff: ArrayDiff<GreenHouseJob>,
-  commitHash: string,
   commitUrl: string,
 ) {
   const embeds: APIEmbed[] = [];
@@ -105,7 +104,7 @@ export async function wumpusCentralSend(
     const changesLength = Object.values(job.changes).length;
     let i = 0;
     for (const [path, change] of Object.entries(job.changes)) {
-      updates += `${path}\n- ${change.old}\n+${change.new}${i !== changesLength - 1 ? "\n\n" : ""}`;
+      updates += `${path}\n- ${change.old}\n+ ${change.new}${i !== changesLength - 1 ? "\n\n" : ""}`;
 
       i++;
     }

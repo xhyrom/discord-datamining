@@ -55,7 +55,11 @@ export const pushToGit = async (...message: string[]) => {
 
   if (process.env.DEBUG === "true") {
     console.log(`Avoiding ${msg} push`);
-    return;
+    return {
+      update: {
+        hash: "dev-debug",
+      },
+    };
   }
 
   await git.add("data/*");
@@ -115,6 +119,7 @@ export const postToDiscord = async (
         },
       });
     } catch (e) {
+      if (process.env.DEBUG === "true") console.log(e);
       console.log("Failed to push ", webhooks.name);
       continue;
     }
@@ -347,10 +352,31 @@ function getChanges<T>(
   path = "",
 ): Record<string, { new: unknown; old: unknown }> {
   const changes: Record<string, { new: unknown; old: unknown }> = {};
+
   for (const key in newObj) {
     if (updateIgnoreKeys.includes(key as keyof T)) continue;
     const newPath = path ? `${path}.${key}` : key;
-    if (
+
+    if (Array.isArray(newObj[key])) {
+      (newObj[key] as unknown[]).forEach((item, index) => {
+        if (typeof item === "object" && item !== null) {
+          Object.assign(
+            changes,
+            getChanges(
+              (oldObj[key as keyof T] as T[])[index] as T,
+              item as T,
+              updateIgnoreKeys,
+              `${newPath}[${index}]`,
+            ),
+          );
+        } else if (!deepEqual((oldObj[key] as unknown[])[index], item)) {
+          changes[`${newPath}[${index}]`] = {
+            old: (oldObj[key] as unknown[])[index],
+            new: item,
+          };
+        }
+      });
+    } else if (
       typeof newObj[key] === "object" &&
       newObj[key] !== null &&
       !Array.isArray(newObj[key])
@@ -368,5 +394,6 @@ function getChanges<T>(
       changes[newPath] = { old: oldObj[key], new: newObj[key] };
     }
   }
+
   return changes;
 }
