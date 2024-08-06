@@ -53,6 +53,11 @@ export const pushToGit = async (...message: string[]) => {
     msg.push(maximumStringLen(m, 20000));
   }
 
+  if (process.env.DEBUG) {
+    console.log(`Avoiding ${msg} push`);
+    return;
+  }
+
   await git.add("data/*");
   await git.commit(msg);
   return await git.push();
