@@ -20915,7 +20915,6 @@ Error:`,
           (rv[(rv.IOS_APP = 2)] = "IOS_APP"),
           (rv[(rv.WEB_APP = 3)] = "WEB_APP"),
           (rv[(rv.ANDROID_APP = 4)] = "ANDROID_APP"),
-          (rv[(rv.SPEED_TEST = 5)] = "SPEED_TEST"),
           ((rw = J || (J = {}))[(rw.DEFAULT = 0)] = "DEFAULT"),
           (rw[(rw.HIGH_SCHOOL = 1)] = "HIGH_SCHOOL"),
           (rw[(rw.COLLEGE = 2)] = "COLLEGE");
@@ -23197,7 +23196,6 @@ Error:`,
           (rQ.SETTINGS_FAMILY_CENTER = "Family Center"),
           (rQ.SETTINGS_CONTEXT_MENU = "Settings Context Menu"),
           (rQ.SETTINGS_CLIPS = "Settings Clips"),
-          (rQ.SETTINGS_SPEED_TEST = "RTC Speed Test"),
           (rQ.SETTINGS_CUSTOM_STATUS = "Custom Status"),
           (rQ.SETTINGS_EDIT_PROFILE = "Edit Profile"),
           (rQ.SETTINGS_BROWSER = "Browser"),
@@ -23618,7 +23616,6 @@ Error:`,
           FAMILY_CENTER: "Family Center",
           FRIEND_REQUESTS: "Friend Requests",
           CLIPS: "Settings Clips",
-          SPEED_TEST: "RTC Speed Test",
           COLLECTIBLES_SHOP: "Shop",
           COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS:
             "Collectibles Shop View All Category Items",
@@ -26923,7 +26920,7 @@ Error:`,
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-e0d3337200cf542514bb6bf941194204c0a71aef",
+            release: "discord_web-fe20bbb1cd9f14e90067accbf2cc85e4c33e440f",
             beforeSend: (t) => {
               var e, r;
               return !(
@@ -26995,8 +26992,8 @@ Error:`,
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", ((t = "315958"), "315958"));
-          a.YA("builtAt", String("1722963901632"));
+            a.YA("buildNumber", ((t = "315966"), "315966"));
+          a.YA("builtAt", String("1722964813699"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -40285,4 +40282,4 @@ Error:`,
     window.DiscordSentry = (0, t.j)();
   })();
 })();
-//# sourceMappingURL=sentry.a3377ccba5b1cf1d414a.js.map
+//# sourceMappingURL=sentry.bf6be2e1d7f81b781fe4.js.map
