@@ -15346,13 +15346,17 @@ div.cardContainer_c22357 {
   height: 60px;
 }
 .icon_f82cc7 {
-  position: absolute;
   flex-shrink: 0;
   width: 100px;
   height: 130px;
   background-repeat: no-repeat;
   background-position: center;
   transform: translatez(0);
+}
+.icon_f82cc7.one_f82cc7,
+.icon_f82cc7.two_f82cc7,
+.icon_f82cc7.three_f82cc7 {
+  position: absolute;
 }
 .full-motion .icon_f82cc7.one_f82cc7 {
   opacity: 0;
@@ -45391,4 +45395,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.e7e49d859087eaa146b1.css.map*/
+/*# sourceMappingURL=12633.b083a624c2b12626188a.css.map*/
