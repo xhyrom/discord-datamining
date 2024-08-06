@@ -17074,6 +17074,9 @@ span.clanTag_a31c43 {
   top: 72px;
   left: 16px;
 }
+.avatar_f94206.hoisted_f94206 {
+  z-index: 4;
+}
 .clickable_f94206 {
   cursor: pointer;
 }
@@ -17670,7 +17673,6 @@ span.clanTag_a31c43 {
   right: 8px;
 }
 .header_b07019 {
-  z-index: 2;
   min-height: calc(45px + var(--custom-user-banner-height-bite-size));
   flex-shrink: 0;
 }
@@ -17693,6 +17695,15 @@ span.clanTag_a31c43 {
 .footer_b07019:empty {
   visibility: hidden;
   padding: 0;
+}
+.backdrop_b07019 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--bg-backdrop);
+  z-index: 4;
 }
 .popoutWrapper_ccc074 {
   position: relative;
@@ -27065,6 +27076,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .visibleContainer_d0a252 {
   position: absolute;
   visibility: visible;
+  z-index: 2;
 }
 .visibleContainer_d0a252.biteSize_d0a252 {
   top: calc(6px + var(--custom-user-banner-height-bite-size));
@@ -27265,6 +27277,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .visibleContainer_e6ac4a {
   position: absolute;
   visibility: visible;
+  z-index: 2;
 }
 .visibleContainer_e6ac4a.biteSize_e6ac4a {
   top: calc(6px + var(--custom-user-banner-height-bite-size));
@@ -27277,6 +27290,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .visibleContainer_e6ac4a.panel_e6ac4a {
   top: calc(6px + var(--custom-user-banner-banner-height-panel));
   left: 106px;
+}
+.visibleContainer_e6ac4a.hoisted_e6ac4a {
+  z-index: 4;
 }
 .custom-profile-theme .invisibleContainer_e6ac4a.biteSize_e6ac4a {
   top: var(--custom-user-profile-themed-container-user-profile-themed-padding);
@@ -45395,4 +45411,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.b083a624c2b12626188a.css.map*/
+/*# sourceMappingURL=12633.8ed2be6ef1a73fdf550b.css.map*/
