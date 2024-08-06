@@ -13,7 +13,8 @@
       "Treatment 5: Arcade",
       "Treatment 6: Tide",
       "Treatment 7: Dark Fantasy",
-      "Treatment 8: Robert"
+      "Treatment 8: Robert",
+      "Treatment 9: Storm"
     ],
     "hash": 3087218047,
     "buckets": [
@@ -26,7 +27,8 @@
       5,
       6,
       7,
-      8
+      8,
+      9
     ],
     "holdout": {},
     "aa_mode": false,
