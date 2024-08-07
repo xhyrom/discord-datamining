@@ -18274,7 +18274,7 @@
   "CLAN_SETUP_CUSTOMIZE_HELP_TEXT": "\"Maxmimum 4 characters, alphabet (A-Z) and numbers only\"",
   "CLAN_SETUP_TAG_PLACEHOLDER": "\"GLHF\"",
   "CLAN_SETUP_SIGN_TITLE": "\"You're almost done!\"",
-  "CLAN_SETUP_SIGN_SUBTITLE": "\"One last step - sign the charter to become a Guild. Your Guild won't be discoverable for a few days while the Guilds page gets ready. When it launches, only a select number of people will be able to see it and apply.\"",
+  "CLAN_SETUP_SIGN_SUBTITLE": "\"One last step - sign the charter to become a Guild.\"",
   "CLAN_SETUP_OPTIONAL": "\"Optional\"",
   "CLAN_SETUP_WILDCARDS_SUBTITLE": "\"Choose up to 3 words that describe your Guild. Be creative!!\"",
   "CLAN_SETUP_NUM_TRAITS": "\"{n, plural, one {1 Trait} other {{n} Traits}}\"",
