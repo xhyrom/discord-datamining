@@ -17771,6 +17771,8 @@
   "GAME_PROFILE_SURVEY_PROGRESS": "\"{step} of {total}\"",
   "GAME_PROFILE_SURVEY_SELECT_ALL": "\"Select all that apply\"",
   "GAME_PROFILE_SURVEY_NOTIFY_ME": "\"Notify me when this feature is launched\"",
+  "GAME_PROFILE_SURVEY_TY": "\"Thank You!\"",
+  "GAME_PROFILE_SURVEY_TY_MORE": "\"Your response will go toward developing this feature.\"",
   "LIGHTNING_CHECKOUT_NON_REFUNDABLE_DISCLAIMER": "\"Non-refundable. By clicking pay, you agree to our [Paid Services Terms]({paidURL})\"",
   "LIGHTNING_CHECKOUT_GENERIC_ERROR_TITLE": "\"There was a problem with your payment\"",
   "LIGHTNING_CHECKOUT_GENERIC_ERROR_DESCRIPTION": "\"Recheck your payment information, then try again.\"",
