@@ -12805,19 +12805,34 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 3000,
+                  "end": 6000
+                }
+              ]
+            },
             "none": {
               "rollout": [
                 {
-                  "start": 0,
+                  "start": 6000,
                   "end": 10000
                 }
               ]
             }
           },
-          "filters": []
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "RAPIDASH_TEST"
+              ]
+            }
+          ]
         }
       ],
-      "revision": 0,
+      "revision": 1,
       "overrides": {
         "1": [
           "836308171886428261"
