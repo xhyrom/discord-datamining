@@ -1,3 +1,21 @@
+/**
+  *  discord-dataming - powerful discord datamining, datamines discord
+  *  Copyright (C) 2023 Jozef Steinhübl
+
+  *  This program is free software: you can redistribute it and/or modify
+  *  it under the terms of the GNU General Public License as published by
+  *  the Free Software Foundation, either version 3 of the License, or
+  *  (at your option) any later version.
+
+  *  This program is distributed in the hope that it will be useful,
+  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  *  GNU General Public License for more details.
+
+  *  You should have received a copy of the GNU General Public License
+  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  * **/
+
 import type { PushResult } from "simple-git";
 import type { Sender } from "../index.ts";
 import type { Diff } from "../../index.ts";
@@ -19,13 +37,13 @@ export class WumpusCentralSender implements Sender<Post> {
 
     for (const post of diff.addedPosts) {
       embeds.push(
-        this.buildEmbed("New", post, commitUrl).setColor(0x4cff76).toJSON()
+        this.buildEmbed("New", post, commitUrl).setColor(0x4cff76).toJSON(),
       );
     }
 
     for (const post of diff.removedPosts) {
       embeds.push(
-        this.buildEmbed("Removed", post, commitUrl).setColor(0xff5151).toJSON()
+        this.buildEmbed("Removed", post, commitUrl).setColor(0xff5151).toJSON(),
       );
     }
 
@@ -33,7 +51,7 @@ export class WumpusCentralSender implements Sender<Post> {
       if (!post.diff) continue;
 
       embeds.push(
-        this.buildEmbed("Updated", post, commitUrl).setColor(0xffe45b).toJSON()
+        this.buildEmbed("Updated", post, commitUrl).setColor(0xffe45b).toJSON(),
       );
     }
 
@@ -46,7 +64,7 @@ export class WumpusCentralSender implements Sender<Post> {
         {
           content: "<@&1106559083391238276>",
           embeds,
-        }
+        },
       );
     }
   }
@@ -80,7 +98,7 @@ export class WumpusCentralSender implements Sender<Post> {
             name: "Link",
             value: post.link ?? "Unknown",
           },
-        ]
+        ],
       );
     } else {
       fields.push(
@@ -95,7 +113,7 @@ export class WumpusCentralSender implements Sender<Post> {
             value: `<t:${Math.floor(new Date(post.pubDate).getTime() / 1000)}>`,
             inline: true,
           },
-        ]
+        ],
       );
     }
 

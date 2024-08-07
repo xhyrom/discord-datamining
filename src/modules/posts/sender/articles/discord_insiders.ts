@@ -1,3 +1,21 @@
+/**
+  *  discord-dataming - powerful discord datamining, datamines discord
+  *  Copyright (C) 2023 Jozef Steinhübl
+
+  *  This program is free software: you can redistribute it and/or modify
+  *  it under the terms of the GNU General Public License as published by
+  *  the Free Software Foundation, either version 3 of the License, or
+  *  (at your option) any later version.
+
+  *  This program is distributed in the hope that it will be useful,
+  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  *  GNU General Public License for more details.
+
+  *  You should have received a copy of the GNU General Public License
+  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  * **/
+
 import type { PushResult } from "simple-git";
 import type { Sender } from "..";
 import type { Diff } from "../../.";
@@ -15,7 +33,7 @@ export class DiscordInsidersSender implements Sender<Article> {
   async sendArticles(
     diff: Diff<Article>,
     result: PushResult,
-    articles: Articles
+    articles: Articles,
   ) {
     const sections = await articles.sections();
     const displayType = articles.displayType;
@@ -26,7 +44,7 @@ export class DiscordInsidersSender implements Sender<Article> {
       embeds.push(
         this.buildEmbed(sections, "New", article, displayType)
           .setColor(0x2cde5c)
-          .toJSON()
+          .toJSON(),
       );
     }
 
@@ -34,7 +52,7 @@ export class DiscordInsidersSender implements Sender<Article> {
       embeds.push(
         this.buildEmbed(sections, "Removed", article, displayType)
           .setColor(0xde2c2c)
-          .toJSON()
+          .toJSON(),
       );
     }
 
@@ -44,10 +62,10 @@ export class DiscordInsidersSender implements Sender<Article> {
       embeds.push(
         this.buildEmbed(sections, "Updated", article, displayType)
           .setDescription(
-            maximumStringLen(`\`\`\`diff\n${article.diff}\n\`\`\``, 3000)
+            maximumStringLen(`\`\`\`diff\n${article.diff}\n\`\`\``, 3000),
           )
           .setColor(0x2c5cde)
-          .toJSON()
+          .toJSON(),
       );
     }
 
@@ -60,7 +78,7 @@ export class DiscordInsidersSender implements Sender<Article> {
         {
           content: "<@&1167155230836789288>",
           embeds,
-        }
+        },
       );
     }
   }
@@ -69,7 +87,7 @@ export class DiscordInsidersSender implements Sender<Article> {
     sections: Section[],
     action: string,
     article: Article,
-    displayType: string
+    displayType: string,
   ) {
     return new EmbedBuilder()
       .setTitle(`${action} ${displayType} Article`)
@@ -87,13 +105,13 @@ export class DiscordInsidersSender implements Sender<Article> {
         {
           name: "Created At",
           value: `<t:${Math.floor(
-            new Date(article.created_at).getTime() / 1000
+            new Date(article.created_at).getTime() / 1000,
           )}>`,
         },
         {
           name: "Edited At",
           value: `<t:${Math.floor(
-            new Date(article.edited_at).getTime() / 1000
+            new Date(article.edited_at).getTime() / 1000,
           )}>`,
         },
         {
@@ -114,7 +132,7 @@ export class DiscordInsidersSender implements Sender<Article> {
           name: "Comments Enabled",
           value: !article.comments_disabled ? "✅" : "❌",
           inline: true,
-        }
+        },
       )
       .setFooter({
         text: "Powered by xHyroM/discord-datamining",

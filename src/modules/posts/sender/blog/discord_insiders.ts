@@ -1,3 +1,21 @@
+/**
+  *  discord-dataming - powerful discord datamining, datamines discord
+  *  Copyright (C) 2023 Jozef Steinhübl
+
+  *  This program is free software: you can redistribute it and/or modify
+  *  it under the terms of the GNU General Public License as published by
+  *  the Free Software Foundation, either version 3 of the License, or
+  *  (at your option) any later version.
+
+  *  This program is distributed in the hope that it will be useful,
+  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  *  GNU General Public License for more details.
+
+  *  You should have received a copy of the GNU General Public License
+  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  * **/
+
 import type { PushResult } from "simple-git";
 import type { Sender } from "../index.ts";
 import type { Diff } from "../../index.ts";
@@ -29,10 +47,10 @@ export class DiscordInsidersSender implements Sender<Post> {
       embeds.push(
         this.buildEmbed("Updated", post)
           .setDescription(
-            maximumStringLen(`\`\`\`diff\n${post.diff}\n\`\`\``, 3000)
+            maximumStringLen(`\`\`\`diff\n${post.diff}\n\`\`\``, 3000),
           )
           .setColor(0x2c5cde)
-          .toJSON()
+          .toJSON(),
       );
     }
 
@@ -45,7 +63,7 @@ export class DiscordInsidersSender implements Sender<Post> {
         {
           content: "<@&1167155230836789288>",
           embeds,
-        }
+        },
       );
     }
   }
@@ -69,7 +87,7 @@ export class DiscordInsidersSender implements Sender<Post> {
         {
           name: "Link",
           value: post.link ?? "Unknown",
-        }
+        },
       )
       .setFooter({
         text: "Powered by xHyroM/discord-datamining",

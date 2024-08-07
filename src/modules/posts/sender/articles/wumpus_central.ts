@@ -1,3 +1,21 @@
+/**
+  *  discord-dataming - powerful discord datamining, datamines discord
+  *  Copyright (C) 2023 Jozef Steinhübl
+
+  *  This program is free software: you can redistribute it and/or modify
+  *  it under the terms of the GNU General Public License as published by
+  *  the Free Software Foundation, either version 3 of the License, or
+  *  (at your option) any later version.
+
+  *  This program is distributed in the hope that it will be useful,
+  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  *  GNU General Public License for more details.
+
+  *  You should have received a copy of the GNU General Public License
+  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  * **/
+
 import type { PushResult } from "simple-git";
 import type { Sender } from "..";
 import type { Diff } from "../../.";
@@ -10,7 +28,7 @@ export class WumpusCentralSender implements Sender<Article> {
   async sendArticles(
     diff: Diff<Article>,
     result: PushResult,
-    articles: Articles
+    articles: Articles,
   ) {
     const sections = await articles.sections();
     const displayType = articles.displayType;
@@ -22,7 +40,7 @@ export class WumpusCentralSender implements Sender<Article> {
       embeds.push(
         this.buildEmbed(sections, "New", article, displayType, commitUrl)
           .setColor(0x4cff76)
-          .toJSON()
+          .toJSON(),
       );
     }
 
@@ -30,7 +48,7 @@ export class WumpusCentralSender implements Sender<Article> {
       embeds.push(
         this.buildEmbed(sections, "Removed", article, displayType, commitUrl)
           .setColor(0xff5151)
-          .toJSON()
+          .toJSON(),
       );
     }
 
@@ -40,7 +58,7 @@ export class WumpusCentralSender implements Sender<Article> {
       embeds.push(
         this.buildEmbed(sections, "Updated", article, displayType, commitUrl)
           .setColor(0xffe45b)
-          .toJSON()
+          .toJSON(),
       );
     }
 
@@ -53,7 +71,7 @@ export class WumpusCentralSender implements Sender<Article> {
         {
           content: "<@&1106559083391238276>",
           embeds,
-        }
+        },
       );
     }
   }
@@ -63,7 +81,7 @@ export class WumpusCentralSender implements Sender<Article> {
     action: string,
     article: Article,
     displayType: string,
-    commitUrl: string
+    commitUrl: string,
   ) {
     const fields: APIEmbedField[] = [
       {
@@ -85,7 +103,7 @@ export class WumpusCentralSender implements Sender<Article> {
           {
             name: "Creation Date",
             value: `<t:${Math.floor(
-              new Date(article.created_at).getTime() / 1000
+              new Date(article.created_at).getTime() / 1000,
             )}>`,
             inline: true,
           },
@@ -94,7 +112,7 @@ export class WumpusCentralSender implements Sender<Article> {
             value: `[View Changes](${commitUrl})`,
             inline: false,
           },
-        ]
+        ],
       );
     }
 
