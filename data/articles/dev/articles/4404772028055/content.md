@@ -249,5 +249,5 @@
   intents,
   <strong>directly through your bot's page in the Developer Portal</strong>.
   Note that this form will only be available if you are eligible to apply, i.e.
-  if you are in 75 or more servers and already verified).
+  if you are in 75 or more servers and already verified.
 </p>
