@@ -365,6 +365,9 @@ function getChanges<T extends Record<string, any>>(
     { new: string | number | boolean; old: string | number | boolean }
   > = {};
 
+  if (oldObj == undefined) oldObj = {} as T;
+  if (newObj == undefined) newObj = {} as T;
+
   for (const key of new Set([...Object.keys(oldObj), ...Object.keys(newObj)])) {
     if (updateIgnoreKeys.includes(key as keyof T)) continue;
     const newPath = path ? `${path}.${key}` : key;
