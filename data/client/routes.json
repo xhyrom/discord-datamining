@@ -1576,6 +1576,10 @@
       "POST"
     ]
   },
+  "CAPTCHA_TEST": {
+    "url": "/captcha/decider",
+    "allowed_methods": null
+  },
   "EXPERIMENTS": {
     "url": "/experiments",
     "allowed_methods": [
