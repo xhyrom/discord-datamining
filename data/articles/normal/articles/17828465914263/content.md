@@ -15,6 +15,10 @@
       href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX6SF10DY6CCGC7Y9MH"
       >How can I collect a profile effect? </a
     >
+    <ul>
+      <li><a href="#h_01J4QG17ZP65H4KR7MHPKMGVKH">Desktop/Browser</a></li>
+      <li><a href="#h_01J4QGGYQCHNP6P6RDASSRWS1B">Mobile</a></li>
+    </ul>
   </li>
   <li>
     <a
@@ -22,12 +26,7 @@
       >How do I apply a profile effect to my profile?</a
     >
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX6G2DRMA6NNAD38F9W"
-          >Desktop</a
-        >
-      </li>
+      <li><a href="#h_01J4QG17ZP65H4KR7MHPKMGVKH">Desktop/Browser</a></li>
       <li><a href="#h_01HQY9V1GJ98FMQCWRJA1V58TC">Mobile</a></li>
     </ul>
   </li>
@@ -52,93 +51,154 @@
   effects are yours to keep and apply to your profile whenever you want. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-134b8ff5-7fff-83e9-55c9-3743ded79262"
-    ><span id="docs-internal-guid-ec8dd186-7fff-8939-bdcc-927df3f96100"
-      ><img
-        src="https://support.discord.com/hc/article_attachments/23985250021399"
-        width="341"
-        height="443" /></span
-  ></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488908828183"
+    width="352"
+    height="434"
+  />
 </p>
 <h1 id="h_01HBVVFMX6SF10DY6CCGC7Y9MH">How Can I Collect A Profile Effect?</h1>
+<h2 id="h_01J4QG17ZP65H4KR7MHPKMGVKH">Desktop/Browser</h2>
 <p id="docs-internal-guid-ffba87a3-7fff-3d31-13f6-e61f83885a48">
   You can head over to the Shop to preview and purchase profile effects! 
 </p>
-<p><strong>Option 1</strong></p>
+<p>
+  <span class="wysiwyg-font-size-large"><strong>Option 1</strong></span>
+</p>
 <p>
   1. Navigate to your <strong>Direct Messages list </strong>by selecting the
-  Discord app icon in the upper left corner. 
+  <strong>Discord</strong> <strong>app</strong> icon in the upper-left corner. 
 </p>
-<p>2. Then, press the <strong>Shop</strong> tab to enter the Shop!</p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-1f06d2bf-7fff-f2b3-7177-f53017abe6f8"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/21751010494871"
-      width="600"
-      height="425"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488918270231"
+    width="624"
+    height="437"
+  />
+</p>
+<p>
+  2. Then, press the <strong>Shop</strong> tab [<img
+    src="https://support.discord.com/hc/article_attachments/25488908845719"
+    width="24"
+    height="24"
+  />] to the right of the server list to enter the Shop!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488918286487"
+    width="311"
+    height="366"
+  />
 </p>
 <p id="docs-internal-guid-30949fc9-7fff-412e-46f7-831bb8a6638b">
-  <strong>Option 2</strong>
+  <span class="wysiwyg-font-size-large"><strong>Option 2</strong></span>
 </p>
-<p>1. Navigate to your <strong>User Settings &gt; Profiles</strong>. </p>
-<p class="wysiwyg-text-align-left">
-  2. Once there, you will see the banner to the Shop where you can select
-  <strong>Check it out</strong>. You can also select
-  <strong>Change Effect </strong>and select the <strong>Shop </strong>icon. 
+<p>
+  1. To access your <strong>User Settings, </strong>select the
+  <strong>cogwheel </strong>icon [<img
+    src="https://support.discord.com/hc/article_attachments/25488918294935"
+    width="24"
+    height="24"
+  />] in the lower-left corner of the app, then navigate to the
+  <strong>Profiles </strong>section. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-1a562536-7fff-a09a-f1bd-33addf6fcff7"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/23985250023959"
-      width="455"
-      height="296" /></span
-  >   <span id="docs-internal-guid-71103847-7fff-fd97-f913-650668ce838a"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/23985257506711"
-      width="228"
-      height="297"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488908869783"
+    width="278"
+    height="60"
+  />
+</p>
+<p>
+  2. Once there, you will see the banner to the Shop where you can select
+  <strong>Check it out</strong>. You can also select
+  <strong>Change Effect </strong>and select the <strong>Shop </strong>icon [<img
+    src="https://support.discord.com/hc/article_attachments/25488908878103"
+    width="24"
+    height="24"
+  />].  
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488918319511"
+    width="500"
+    height="342"
+  />. 
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488918327703"
+    width="496"
+    height="413"
+  />
 </p>
 <p>
   3. Once directed to the Shop, you can preview and buy profile effects to add
   to your collection. 
 </p>
-<h3 id="h_01HETN75EJ2C506TNDVJGH19JF">
+<div class="info-box">
   Purchased profile effects are yours to keep and can be used at any time! Items
   available for purchase in the Shop will change periodically.
-</h3>
+</div>
+<h2 id="h_01J4QGGYQCHNP6P6RDASSRWS1B">Mobile</h2>
+<p>
+  1. To navigate to the Shop on your mobile device, head over to your
+  <strong>User Profile </strong>by selecting your <strong>avatar</strong> icon
+  in the lower-right corner. 
+</p>
+<p>
+  2. Then, tap the <strong>Shop</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/25488918334231"
+    width="24"
+    height="24"
+  />] icon in the upper-right corner.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488918344983"
+    width="284"
+    height="589"
+  />
+</p>
+<p>
+  3. This will direct you to the Shop where you can preview and buy profile
+  effects.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7w2PVZi2bOtCWqXGbbIejvuuw8_uH-Fx_xfnSwrpcN2dcJikm-WOLgEYvTlrcn54OY3n7NztCt1LRc_eVydBNEImOFufFVLu9wxVSYUsbiUB6qZnByW2oV3yWeaYjfLIwfMDDrvIZnbeGKKEKG-PsFfv5?key=hy-3JnLw2-R0JXHDbUI9BA"
+    width="278"
+    height="573"
+  />
+</p>
+<p class="wysiwyg-text-align-center"> </p>
 <h1 id="h_01HBVVFMX6VDPBCGPY25WKK6TN">
   How Do I Apply A Profile Effect To My Profile? 
 </h1>
-<h2 id="h_01HBVVFMX6G2DRMA6NNAD38F9W">Desktop</h2>
+<h2 id="h_01HBVVFMX6G2DRMA6NNAD38F9W">Desktop/Browser</h2>
 <p>
   1. On the desktop app or web app, head into your
-  <strong>User Settings </strong>by selecting the cogwheel [<img
+  <strong>User Settings </strong>by selecting the
+  <strong>cogwheel</strong> [<img
     style="height: 20px; width: 20px"
     src="https://support.discord.com/hc/article_attachments/19432529510039"
   />]. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-437a502b-7fff-5bc0-dd4c-c2552e6cc1ca"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/21751010511767"
-      width="241"
-      height="56"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488908919447"
+    width="278"
+    height="60"
+  />
 </p>
 <p>
   2. Once directed to your <strong>User Settings</strong>, select the
   <strong>Profiles </strong>tab to view your profile settings. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-5bf23acd-7fff-7955-8aaa-0837271348a0"
-    ><span id="docs-internal-guid-a38725b2-7fff-9d8d-1106-2ec8f8048e90"
-      ><img
-        src="https://support.discord.com/hc/article_attachments/23985257511959"
-        width="624"
-        height="377" /></span
-  ></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488918364311"
+    width="685"
+    height="414"
+  />
 </p>
 <p>
   3. Then, press the <strong>Change Effect </strong>button to open the
@@ -149,13 +209,11 @@
   <strong>Apply</strong> to add the effect to your profile. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-ed7158de-7fff-9e9c-9622-f72bafda3f03"
-    ><span id="docs-internal-guid-fa6fdc93-7fff-b637-eaa5-ba077fdca13e"
-      ><img
-        src="https://support.discord.com/hc/article_attachments/23985257515415"
-        width="349"
-        height="470" /></span
-  ></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25488918373015"
+    width="387"
+    height="478"
+  />
 </p>
 <p>
   5. After you apply a profile effect, you will need to confirm your changes by
@@ -167,17 +225,17 @@
     alt="image2.png"
   />
 </p>
-<h3 id="docs-internal-guid-15bcdbd5-7fff-d0fc-efa1-4eae2fa5940c">
-  <span style="color: #434343"
-    >Profile effects can also be applied to your Server Profiles! You can find
-    out more </span
-  ><a
+<div class="tip-box">
+  If you have multiple server profiles, you can wear a different profile effect
+  for each one to add a unique touch in each of your servers. You can find out
+  more
+  <a
     href="https://support.discord.com/hc/en-us/articles/4409388345495"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="color: #434343">.</span>
-</h3>
+  >.
+</div>
 <h2 id="h_01HQY9V1GJ98FMQCWRJA1V58TC">
   <span style="color: #434343"
     ><span id="docs-internal-guid-b896025e-7fff-51be-4fbf-c446dd915769"
@@ -222,7 +280,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdp9_PrD_K8QgARCqUuATvxaVg8YRy8b2aSSxJF1Cj6uESKY9eJ5z5AjVsX9WCDwH87kDz0SlzEQKVLV7-tK9dFWLBO8gVLuOTRn1Fo53y1t5U4BbtJZS2VQZXjkBwkqxIV26tDzqPWLANmUPnzN39h9Y1V?key=hy-3JnLw2-R0JXHDbUI9BA"
+    src="https://support.discord.com/hc/article_attachments/25488918382103"
     width="284"
     height="593"
   />
@@ -252,6 +310,20 @@
     >here</a
   >. 
 </p>
+<p>
+  <strong
+    >Q: I already have a profile effect that is part of the Shop Bundle. Why
+    can't I purchase the Shop Bundle to get the avatar decoration?</strong
+  >
+</p>
+<p>
+  A: Shop Bundles offer a discounted price on two items from the same
+  collection. However, these bundles are only available if you haven't purchased
+  any of the items included. If you already own one or both items, the bundle
+  will be marked as partially or fully owned, and you won't be able to purchase
+  the remaining item(s) at a discounted rate. In this case, you'll need to buy
+  the remaining item individually.
+</p>
 <p id="docs-internal-guid-c12e64a5-7fff-2ec9-f66a-e4ca8278dc74">
   <strong>Q: Is localized pricing available for profile effects?</strong>
 </p>
@@ -266,13 +338,11 @@
     >here</a
   >. 
 </p>
-<h3 id="h_01HZN98JYYY64Z6KJ9ZN8VA5AE">
-  <span style="color: #434343"
-    >Note: Profile effect gifts are not available at localized prices. Depending
-    on a user’s region, they may be able to pay for a gift in their local
-    currency, but the price will still be equivalent to the USD price.</span
-  >
-</h3>
+<div class="info-box">
+  <strong>Note: </strong> Profile effect gifts are not available at localized
+  prices. Depending on a user’s region, they may be able to pay for a gift in
+  their local currency, but the price will still be equivalent to the USD price.
+</div>
 <p><strong>Q: Do I keep the profile effects I’ve purchased? </strong></p>
 <p>
   A: Yes, any profile effects you’ve purchased are yours to keep and use
@@ -287,7 +357,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  >. <br /><strong>Q: Can I refund Nitro after buying a profile effect?</strong>
+  >.<br /><strong>Q: Can I refund Nitro after buying a profile effect?</strong>
 </p>
 <p>
   A: No. If you’ve purchased a profile effect within <strong>5 days </strong>of
