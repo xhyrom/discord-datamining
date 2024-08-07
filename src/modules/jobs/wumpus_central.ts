@@ -104,7 +104,15 @@ export async function wumpusCentralSend(
     const changesLength = Object.values(job.changes).length;
     let i = 0;
     for (const [path, change] of Object.entries(job.changes)) {
-      updates += `${path}\n- ${change.old}\n+ ${change.new}${i !== changesLength - 1 ? "\n\n" : ""}`;
+      if (!change.old && change.new) {
+        updates += `${path}\n+ ${change.new.toString()}`;
+      } else if (change.old && change.new) {
+        updates += `${path}\n- ${change.old.toString()}\n+ ${change.new.toString()}`;
+      } else {
+        updates += `${path}\n- ${change.old}`;
+      }
+
+      updates += `${i !== changesLength - 1 ? "\n\n" : ""}`;
 
       i++;
     }

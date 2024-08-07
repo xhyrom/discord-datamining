@@ -286,11 +286,14 @@ export interface ArrayDiff<T> {
   updated: {
     new: T;
     old: T;
-    changes: Record<string, { new: unknown; old: unknown }>;
+    changes: Record<
+      string,
+      { new: string | number | boolean; old: string | number | boolean }
+    >;
   }[];
 }
 
-export function createDiff<T>(
+export function createDiff<T extends Record<string, any>>(
   a: T[],
   b: T[],
   compareKey: keyof T,
@@ -301,7 +304,10 @@ export function createDiff<T>(
   const updated: {
     new: T;
     old: T;
-    changes: Record<string, { new: unknown; old: unknown }>;
+    changes: Record<
+      string,
+      { new: string | number | boolean; old: string | number | boolean }
+    >;
   }[] = [];
 
   for (const b1 of b) {
@@ -345,15 +351,21 @@ export function mergeDiffs<T>(...diffs: ArrayDiff<T>[]): ArrayDiff<T> {
   return { added, removed, updated };
 }
 
-function getChanges<T>(
+function getChanges<T extends Record<string, any>>(
   oldObj: T,
   newObj: T,
   updateIgnoreKeys: (keyof T)[] = [],
   path = "",
-): Record<string, { new: unknown; old: unknown }> {
-  const changes: Record<string, { new: unknown; old: unknown }> = {};
+): Record<
+  string,
+  { new: string | number | boolean; old: string | number | boolean }
+> {
+  const changes: Record<
+    string,
+    { new: string | number | boolean; old: string | number | boolean }
+  > = {};
 
-  for (const key in newObj) {
+  for (const key of new Set([...Object.keys(oldObj), ...Object.keys(newObj)])) {
     if (updateIgnoreKeys.includes(key as keyof T)) continue;
     const newPath = path ? `${path}.${key}` : key;
 
