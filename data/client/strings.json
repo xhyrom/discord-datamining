@@ -8719,6 +8719,7 @@
   "USER_ACTIVITY_USER_JOIN": "\"**!!{username}!!** is joining your game via Discord.\"",
   "USER_ACTIVITY_USER_JOIN_HINT": "\"This may take a moment while their game launches.\"",
   "USER_ACTIVITY_STAGE_STATE_SIZE": "\"{numSpeakers, number} speakers, {numListeners, number} listeners\"",
+  "USER_ACTIVITY_DELETE_HISTORY_ERROR": "\"Clear failed\"",
   "INVITE_EMBED_GAME_INVITE": "\"Game Invite\"",
   "INVITE_EMBED_LISTENING_INVITE": "\"Listen Along Invite\"",
   "INVITE_EMBED_ASK_TO_JOIN": "\"Ask to Join\"",
