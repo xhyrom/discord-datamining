@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_private_channel_hiding",
+    "label": "Private Channel Hiding",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Obfuscation Enable"
+    ],
+    "hash": 687045128,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
