@@ -7540,6 +7540,7 @@
   "EMOJI_PICKER_PREMIUM_PROMO_DESCRIPTION": "\"Lift off with **{planName}** to use animated and custom emoji anywhere.\"",
   "EMOJI_PICKER_PREMIUM_UPSELL_TITLE_V2": "\"Take your emoji game to the next level\"",
   "EMOJI_PICKER_PREMIUM_UPSELL_DESCRIPTION_V2": "\"Add your own flair to any conversation with animated and custom emoji across all servers. Only with Nitro.\"",
+  "EMOJI_PICKER_EXPAND_EMOJI_SECTION": "\"See all emojis in this server\"",
   "SUBSCRIPTION_PAYMENT_LEGALESE_MONTHLY": "\"Hey! What you're purchasing is a recurring subscription, which means we'll charge you today and continue to charge you monthly until you cancel the subscription. You can cancel anytime from your Settings page, though!\"",
   "SUBSCRIPTION_PAYMENT_LEGALESE_MULTI_MONTH": "\"Hey! What you're purchasing is a recurring subscription, which means we'll charge today and continue to charge you every {intervalCount} months until you cancel the subscription. You can cancel anytime from your Settings page, though!\"",
   "SUBSCRIPTION_PAYMENT_LEGALESE_YEARLY": "\"Hey! What you're purchasing is a recurring subscription, which means we'll charge you today and continue to charge you yearly until you cancel the subscription. You can cancel anytime from your Settings page, though!\"",
