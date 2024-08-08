@@ -1,7 +1,18 @@
+<p>
+  <strong>Quests</strong> are a way for players to discover games and earn
+  rewards for playing them on Discord. Whether you are playing or streaming your
+  favorite game on Discord, you now have a chance to get rewards!
+</p>
 <p id="docs-internal-guid-5c66372c-7fff-93b0-2ab1-471cb2da4439">
-  If you’re streaming your favorite game to friends through
-  <strong>Go Live</strong> on Discord, you now have the chance to get rewards
-  for that game! Continuing reading below to learn more.
+  By completing Quests, you can unlock exclusive in-game items, gain in-game
+  currency, or even Discord
+  <a
+    href="https://support.discord.com/hc/articles/13410113109911-Avatar-Decorations"
+    target="_blank"
+    rel="noopener noreferrer"
+    >avatar decorations</a
+  >
+  to showcase your achievements. Keep reading to learn more!
 </p>
 <p>
   <span class="wysiwyg-font-size-large"
@@ -13,8 +24,13 @@
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
       <li><a href="#h_01J4SF7Q7RR11ESD39ZTSEWAE6">Krunker Strike FRVR</a></li>
-      <li><a href="#h_01J4SE37FBGRQ4PFWJVR16YGNQ">GTA Online and GTAV</a></li>
+      <li><a href="#h_01J4SE37FBGRQ4PFWJVR16YGNQ">GTA Online</a></li>
       <li><a href="#h_01J3R3GFTCSGW9KKXCG37JDZ30">VALORANT </a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </a>
+    <ul>
       <li><a href="#h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">The Sims 4 </a></li>
       <li>
         <a
@@ -72,7 +88,7 @@
     href="https://support.discord.com/hc/articles/25139456801687"
     target="_blank"
     rel="noopener noreferrer"
-    >GTA Online and GTAV - GTA Online Quest</a
+    >GTA Online - GTA Online Quest</a
   >
 </h2>
 <p>
@@ -97,6 +113,7 @@
   needs to be redeemed by <strong>September 7, 2024</strong>. Quest requirements
   must be completed during this period to receive the reward.
 </p>
+<h1 id="h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </h1>
 <h2 id="h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">
   <a
     href="https://support.discord.com/hc/articles/24948010607383-The-Sims-4-Quest"
@@ -173,18 +190,15 @@
 <h1 id="h_01HVPBZR5FQS4M587DJ82JV20N">How do I complete a Discord Quest?</h1>
 <p>Here are the steps to complete a Discord Quest: </p>
 <p><strong>1. Accept the Quest </strong></p>
-<p><strong>2. Stream the game to friends on Discord</strong></p>
+<p><strong>2. Complete the Quest Requirements</strong></p>
 <p><strong>3. Claim your reward </strong></p>
 <p>
   Please see below for more detailed information on how to complete each step. 
 </p>
 <h2 id="h_01HVPBZR5FXKRBNJ7N20KCJVEP">Accept the Quest </h2>
-<h3 id="h_01HVPBZR5FG766J8H47TFKTZTA">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Quests can only be accepted through the Discord desktop and browser
-    apps.</span
-  >
-</h3>
+<div class="info-box">
+  Quests can only be accepted through the Discord desktop and browser apps.
+</div>
 <p>
   You may see an alert in your Discord app about a Discord Quest. Hover over the
   <strong>Quest</strong> <strong>bar</strong> and select it to expand and learn
@@ -213,59 +227,32 @@
     height="284"
   />
 </p>
-<h2 id="h_01HVPBZR5F04KP8ZD303GZGABH">
-  Stream the Game to Friends on Discord 
-</h2>
-<h3 id="h_01HVPBZR5FDZJQZWK03A3BZQ9Q">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >To complete a Quest requirement, you must stream the game through the
-    Discord desktop app and have at least one friend actively watching the
-    stream. </span
-  >
-</h3>
+<h2 id="h_01J4SWYM6CM246C86NVF5J3XVX">Completing Quest Requirements </h2>
+<p>Each Quest will have its own requirements:</p>
+<ul>
+  <li>
+    <strong>Playtime Requirement</strong> - To fulfill a Quest, players must
+    engage with the game for a specified duration (e.g., 15 minutes). Ensure you
+    are logged into the Discord desktop app while playing to accurately track
+    your progress. 
+  </li>
+  <li>
+    <strong>Streaming Requirement</strong> - To complete a Quest, players need
+    to stream the game to at least one friend in a voice channel using the
+    Discord desktop app for a minimum duration (e.g., 15 minutes). For more
+    details on how to use Go Live and screen sharing, please refer to the
+    <a
+      href="https://support.discord.com/hc/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Go Live and Screen Share support article</a
+    >.
+  </li>
+</ul>
 <p>
-  Each Quest will have its own required time to stream and you can confirm how
-  long you need to stream the game for in the <strong>Promotion Terms</strong>. 
-</p>
-<p>1. Before you can begin the Quest, launch the game .</p>
-<p>
-  2. Then, head to your Discord desktop app and navigate to a direct message
-  (DM), group chat, or a server of your choice.
-</p>
-<p>
-  3. Once there, start a voice call or join a voice channel and select the
-  <strong>Screen Share</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/22871266944407"
-    width="24"
-    height="24"
-  />] icon located in the voice status panel or within the voice call. Be sure
-  to select the individual application for the game before you
-  <strong>Go Live</strong>. 
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/22871262498839"
-    width="624"
-    height="377"
-  />
-</p>
-<h3 id="h_01HVPBZR5FBB0W2TAKB7NBEBN3">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >NOTE: You must select the game application to stream! Streaming your
-    device’s screen will not progress your Quest forward. Once you stream, you
-    can check the progress bar on the Gift inventory to ensure progress is being
-    made on the Quest.  </span
-  >
-</h3>
-<p>
-  4. When you’re ready to stream your gameplay, press
-  <strong>Go Live. </strong>You can learn more about streaming your game
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >. 
+  Within each Quest’s<a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">
+    <strong>Promotion Terms</strong></a
+  >, you will find the steps on how to complete the Quest. 
 </p>
 <h2 id="h_01HVPBZR5FKKSQ3R1JXB9E4DM3">Claim Your Reward </h2>
 <p>
@@ -273,7 +260,7 @@
   <strong>Claim Reward</strong> button within any Discord Quest in-app
   notification.
 </p>
-<h3 id="h_01HWEBM02XXB2Z00KXM6CQ79AF">
+<div class="info-box">
   Users who have completed quests after <strong>April 24, 2024</strong> will
   automatically obtain the <strong>Discord Quests Badge</strong>, which will be
   added to their profiles. For more information about profile badges, visit our
@@ -283,7 +270,7 @@
     rel="noopener noreferrer"
     >Profile Badges 101 Help Center article</a
   >.
-</h3>
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22871262511639"
@@ -296,24 +283,17 @@
   <strong>User Settings &gt; Gift Inventory</strong>. 
 </p>
 <p>
-  When you claim an <strong>in-game item reward,</strong> you will be given a
-  Discord Quest redemption code that you will need to redeem on the partnered
-  game redemption website. You can find a link by heading over to our
-  <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a> section! You
-  will also receive an email with redemption instructions once you’ve completed
-  the Quest.
+  If you’re claiming an <strong>in-game item reward,</strong> you’ll be given a
+  Discord Quest redemption code that you’ll need to redeem on the partnered game
+  redemption website. You can find a link by heading over to our
+  <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a> section and
+  referring to the steps mentioned specifically for that Quest! You’ll also
+  receive an email with redemption instructions once you’ve completed the Quest.
 </p>
 <p>
-  When you claim <strong>Discord rewards</strong>, once you finish the Quest you
-  can claim your reward by selecting the <strong>Claim Reward </strong>button.
-  You can learn more about adding / removing your Discord avatar decoration or
-  profile effect
-  <a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
+  If you’re ready to claim a <strong>Discord reward</strong>, such as an avatar
+  decoration, you can claim your reward by selecting the
+  <strong>Claim Reward </strong>button.
 </p>
 <h1 id="h_01HVPBZR5F0EKW79KK7RGEK1HG">Opting-out of Quests Promotions</h1>
 <p>
@@ -343,16 +323,10 @@
   of the Discord app) you can hide those by following the steps mentioned
   above. 
 </p>
-<h3 id="h_01HVPBZR5FP3VP91FVAK364HT5">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you hide all the in-app promotions of a specific Quest, you can still
-    view and accept the Quest in your </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Gift Inventory</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">. </span>
-</h3>
+<div class="tip-box">
+  If you hide all the in-app promotions of a specific Quest, you can still view
+  and accept the Quest in your <strong>Gift Inventory</strong>.
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22871266982551"
@@ -394,19 +368,12 @@
     >here</a
   >. 
 </p>
-<h3 id="h_01HVPBZR5FZCGNBK4HZM6PD4V6">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Although these settings are disabled, you will still be able to participate
-    in Quests if you navigate to your </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Gift Inventory</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >. You may see Quests shared by your friends or reflected in their activity
-    status on Discord.  </span
-  >
-</h3>
+<div class="info-box">
+  Although these settings are disabled, you will still be able to participate in
+  Quests if you navigate to your <strong>Gift Inventory</strong>. You may see
+  Quests shared by your friends or reflected in their activity status on
+  Discord.
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22871262555799"
@@ -414,36 +381,27 @@
     height="421"
   />
 </p>
-<h3 id="h_01HVPBZR5F41CWH2S52X328V9M">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you decide later that you want to receive notifications about Discord
-    Quests based on your activity, you will need to make sure to enable the </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >In-game rewards (aka Quests)</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    setting in </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Privacy &amp; Safety</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >. You can learn more about these settings by visiting </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls"
+<div class="info-box">
+  If you decide later that you want to receive notifications about Discord
+  Quests based on your activity, you will need to make sure to enable the<strong>
+    In-game rewards (aka Quests)</strong
+  >
+  setting in <strong>Privacy &amp; Safety</strong>. You can learn more about
+  these settings by visiting
+  <a
+    href="https://support.discord.com/hc/articles/360004109911-Data-Privacy-Controls"
     target="_blank"
     rel="noopener noreferrer"
     >Data Privacy Controls</a
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    or reading our </span
-  ><a
+  >
+  or reading our
+  <a
     href="https://discord.com/privacy"
     target="_blank"
     rel="noopener noreferrer"
     >Privacy Policy</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
-</h3>
+  >.
+</div>
 <h1 id="h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</h1>
 <p>
   <strong
