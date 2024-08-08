@@ -10,12 +10,12 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7508787002](https://discord.com/jobs/7508787002)
 
-**Updated At:** Thu, 08 Aug 2024 17:01:32 GMT
+**Updated At:** Thu, 08 Aug 2024 18:00:45 GMT
 
 **Job Description:**
 This position is US based only.
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
-The Tax Manager will join Discord’s dynamic Tax team and be an integral part of the global tax function. You will play a key role in helping the team with day-to-day tax operations functions such as tax planning, global tax compliance and reporting, tax controversy and other tax projects to support business needs. This position will work closely with key accounting, engineering, finance, legal, and other business partners across Discord.
+The Tax Manager will join Discord’s dynamic Tax team and be an integral part of the global tax function. You will play a key role in helping the team with day-to-day tax operations functions such as tax planning, global tax compliance and reporting, tax controversy and other tax projects to support business needs. This position will work closely with key accounting, engineering, finance, legal, and other business partners across Discord. This is an individual contributor position.
 The ideal candidate can pair a global mindset with locally relevant execution and be able to manage evolving business priorities. You should be a team leader, problem solver and self-starter who can drive initiatives with executive leadership, internal stakeholders and external advisers. The successful candidate will display a balance of hard and soft skills, including the ability to respond quickly to changing business needs.
 What You'll Be Doing
 
