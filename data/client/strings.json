@@ -3272,7 +3272,7 @@
   "UPLOAD_AREA_OPTIONAL": "\"optional\"",
   "UPLOAD_AREA_CANCEL_ALL": "\"Cancel All\"",
   "UPLOAD": "\"Upload\"",
-  "UPLOAD_TO": "\"Upload to **{destination}**\"",
+  "UPLOAD_TO": "\"Upload to **!!{destination}!!**\"",
   "UPLOAD_TO_NEW_THREAD": "\"Upload to thread\"",
   "UPLOAD_TO_NEW_POST": "\"Upload to post\"",
   "UPLOAD_OPEN_FILE_FAILED": "\"Unable to open file: {file}.\"",
