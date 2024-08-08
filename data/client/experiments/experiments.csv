@@ -723,6 +723,7 @@ id,hash,label
 2024-07_user_profile_new_activity_cards,2344802807,User Profile New Activity Cards Experiment
 2024-07_user_profile_past_activity,4175610728,User Profile Past Activity Experiment
 2024-08_dismissible_pip,3654487046,Dismissible Desktop PiP
+2024-08_emoji_picker_limit_emojis_experiment,2390760015,"Desktop: Show three rows of emojis per server, with the option to expand"
 2024-08_iar_privacy_and_safety_settings_upsells,2629592978,IAR Privacy & Safety Settings Upsells
 2024-08_perks_demo_hd_streaming_opt_in_v2,3975306549,HD Streaming
 2024-08_private_channel_hiding,687045128,Private Channel Hiding
