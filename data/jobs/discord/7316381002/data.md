@@ -1,6 +1,6 @@
 # Job Listing
 
-## Exploitative Content Specialist - Russian 
+## Minor Safety and Exploitative Content Specialist - Bilingual
 
 **Location:** Netherlands 
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7316381002](https://discord.com/jobs/7316381002)
 
-**Updated At:** Wed, 07 Aug 2024 22:10:22 GMT
+**Updated At:** Thu, 08 Aug 2024 14:53:25 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
@@ -18,7 +18,7 @@ This role is critical in supporting Discord to deeply understand and mitigate ho
 Reporting to Exploitative Content Lead, you'll play a pivotal role in keeping Discord's platform safe for all users.
 What you'll be doing&amp;nbsp;
 
-Review and respond to sensitive content reports, including but not limited to the review of child exploitation, graphic violence, self-injury and suicide,&amp;nbsp; explicit images, videos and other objectionable and/or disturbing content
+Review and respond to sensitive content reports, including but not limited to the review of child exploitation, graphic violence, self-injury and suicide, explicit images, videos and other objectionable and/or disturbing content
 Investigate complex cases to develop a detailed understanding of how abuse is occurring and attribute it to the person(s) and/or networks responsible in order to prepare high-quality written reports for both internal and external audiences, including law enforcement agencies
 Demonstrate operational excellence when evaluating risks, threats, and user privacy in time-critical situations and execute decision-making while analyzing a variety of factors that include imminence of danger, sensitivities, and/or graphic content
 Work collaboratively in responding to sensitive issues, providing deep knowledge into different exploitative content types and sharing insights and expertise about minor safety and exploitative content issues
@@ -31,13 +31,7 @@ You Will Thrive In This Role If
 Prior experience investigating, analyzing, assessing risk or acting on internet crimes against children, threat-based laws or policies (i.e. intelligence, law enforcement, or NGOs)
 Demonstrated ability to operate in a high-tempo, sensitive environment while meeting specific SLAs
 Previous experience working in a cross-functional, high-pressure, sensitive environment, with demonstrated ability to use risk-based assessments to prioritize workload
-
-
-
-Native language skills in Russian&amp;nbsp;
-
-
-
+Proficiency with a second language
 
 Bonus Points
 
