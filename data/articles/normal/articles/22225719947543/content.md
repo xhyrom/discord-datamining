@@ -12,9 +12,8 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
-      <li>
-        <a href="#h_01J4SE37FBGRQ4PFWJVR16YGNQ">Grand Theft Auto Online</a>
-      </li>
+      <li><a href="#h_01J4SF7Q7RR11ESD39ZTSEWAE6">Krunker Strike FRVR</a></li>
+      <li><a href="#h_01J4SE37FBGRQ4PFWJVR16YGNQ">GTA Online and GTAV</a></li>
       <li><a href="#h_01J3R3GFTCSGW9KKXCG37JDZ30">VALORANT </a></li>
       <li><a href="#h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">The Sims 4 </a></li>
       <li>
@@ -23,11 +22,6 @@
           target="_blank"
           rel="noopener noreferrer"
           >Zenless Zone Zero</a
-        >
-      </li>
-      <li>
-        <a href="#docs-internal-guid-7e118986-7fff-7590-ca2a-0bb618200550"
-          >Fortnite</a
         >
       </li>
       <li><a href="#h_01J1AK4JDWX63NDT2EJFNQ1WH1">Console Gaming</a></li>
@@ -57,12 +51,28 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J4SF7Q7RR11ESD39ZTSEWAE6">
+  <a
+    href="https://support.discord.com/hc/articles/25459791491735/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Krunker Strike FRVR - Mom, I'm Winning Quest</a
+  >
+</h2>
+<p>
+  The <strong>Mom, I'm Winning</strong> Quest can be accepted on Discord from
+  <strong>August 8, 2024 </strong>until
+  <strong>August 15, 2024 (11:59PM UTC)</strong>. The
+  <strong>Methane Mask</strong> must be redeemed by
+  <strong>September 14, 2024</strong>. Quest requirements must be completed
+  during this period to receive the reward.
+</p>
 <h2 id="h_01J4SE37FBGRQ4PFWJVR16YGNQ">
   <a
     href="https://support.discord.com/hc/articles/25139456801687"
     target="_blank"
     rel="noopener noreferrer"
-    >Grand Theft Auto Online - GTA Online Quest</a
+    >GTA Online and GTAV - GTA Online Quest</a
   >
 </h2>
 <p>
@@ -117,21 +127,6 @@
   <strong>July 15, 2024 (5:00PM PST)</strong>. The Version 1.0 bundle needs to
   be redeemed by <strong>August 14, 2024 (3:00AM PST)</strong>. Quest
   requirements must be completed during this period to receive the reward.
-</p>
-<h2 id="docs-internal-guid-7e118986-7fff-7590-ca2a-0bb618200550">
-  <a
-    href="https://support.discord.com/hc/articles/24274826177687"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Fortnite - Fortnite Reload Quest </a
-  >
-</h2>
-<p>
-  The <strong>Fortnite Reload Quest</strong> can be accepted on Discord from
-  <strong>June 27, 2024 </strong>until
-  <strong>July 4, 2024 (11:59PM UTC)</strong>. The Fortnite Victory Crown avatar
-  decoration needs to be redeemed by <strong>August 3, 2024.</strong> Quest
-  requirements must be completed during this period to receive the reward. 
 </p>
 <h2 id="h_01J1AK4JDWX63NDT2EJFNQ1WH1">
   <a

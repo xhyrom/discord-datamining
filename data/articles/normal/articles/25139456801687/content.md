@@ -22,10 +22,11 @@
 </ul>
 <h1 id="h_01J4Q8XK0CQW5D6NXPSFQZFK7X">Promotion Terms</h1>
 <p>
-  <strong>Quest Game</strong>:<strong> Grand Theft Auto Online </strong
-  ><br /><strong>Quest Name</strong>: <strong>GTA Online Quest</strong
-  ><br /><strong>Offer</strong> <strong>Details</strong>: Play 15 minutes of
-  <strong>Grand Theft Auto Online</strong> and receive
+  <strong>Quest Game</strong>:<strong> GTA Online and GTAV</strong><br /><strong
+    >Quest Name</strong
+  >: <strong>GTA Online Quest</strong><br /><strong>Offer</strong>
+  <strong>Details</strong>: Play 15 minutes of <strong>GTA</strong
+  ><strong> Online</strong>/<strong>GTAV</strong> and receive
   <strong>The Los Santos avatar</strong> <strong>decoration</strong>. You can
   learn more about avatar decorations
   <a
@@ -34,7 +35,7 @@
     rel="noopener noreferrer"
     >here</a
   >. <br /><strong>Who is Eligible</strong>: Available on PC for US players
-  where Grand Theft Auto and Discord is available. <br />Discord’s premium
+  where GTA Online/GTAV and Discord is available. <br />Discord’s premium
   services are restricted in some regions. If you are unable to access the Gift
   Inventory, you are not eligible for this Quest or reward.
 </p>
@@ -47,7 +48,7 @@
 <p>
   <strong>Availability</strong> <strong>Period</strong>: The
   <strong>GTA Online Quest</strong> can be accepted on Discord from
-  <strong>August 8, 2024</strong> until August
+  <strong>August 8, 2024</strong> until <strong>August</strong>
   <strong>14, 2024 (11:59PM UTC)</strong>. The Los Santos avatar decoration
   needs to be redeemed by <strong>September 14, 2024</strong>. <br />Quest
   requirements must be completed during this period to receive the reward.
@@ -64,18 +65,18 @@
 <h1 id="h_01J4Q9965ATCJ8JEJ7XR3FCJMZ">How to Complete the Quest</h1>
 <p>
   In order to successfully complete the GTA Online Quest, players who meet the
-  eligibility criteria must play Grand Theft Auto Online for a minimum duration
-  of 15 minutes.
+  eligibility criteria must play GTA Online/GTAV for a minimum duration of 15
+  minutes.
 </p>
 <h3 id="h_01J4Q99RSWFGV97REDXG8417HG">
   <strong>Note</strong>: To fulfill the Quest requirement,
-  <strong>Grand Theft Auto Online</strong> must be played with your Discord app
-  open simultaneously (on browser or desktop).
+  <strong>GTA Online/GTAV</strong> must be played with your Discord app open
+  simultaneously (on browser or desktop).
 </h3>
 <h1 id="h_01J4Q9BY1N8MTJM9JDK1MYBYCH">Redemption Instructions</h1>
 <p>
   Once you have completed the Quest on Discord, by playing 15 minutes of
-  <strong>Grand Theft Auto Online</strong>, you’ll be able to claim the
+  <strong>GTA</strong> <strong>Online/GTAV</strong>, you’ll be able to claim the
   <strong>Los Santos avatar decoration</strong>. The Los Santos avatar
   decoration needs to be redeemed by <strong>September 14, 2024.</strong>
 </p>
