@@ -22792,6 +22792,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   -webkit-backdrop-filter: brightness(60%) blur(4px);
   backdrop-filter: brightness(60%) blur(4px);
   border: 1px solid var(--border-strong);
+  border-radius: 5px;
 }
 .categoryText_af1167 {
   color: var(--white);
@@ -45515,4 +45516,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.a88a2c32992f839aa211.css.map*/
+/*# sourceMappingURL=12633.c03a88c018ff9db19751.css.map*/
