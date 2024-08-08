@@ -12,6 +12,9 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
+      <li>
+        <a href="#h_01J4SE37FBGRQ4PFWJVR16YGNQ">Grand Theft Auto Online</a>
+      </li>
       <li><a href="#h_01J3R3GFTCSGW9KKXCG37JDZ30">VALORANT </a></li>
       <li><a href="#h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">The Sims 4 </a></li>
       <li>
@@ -54,6 +57,21 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J4SE37FBGRQ4PFWJVR16YGNQ">
+  <a
+    href="https://support.discord.com/hc/articles/25139456801687"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Grand Theft Auto Online - GTA Online Quest</a
+  >
+</h2>
+<p>
+  The <strong>GTA Online Quest</strong> can be accepted on Discord from
+  <strong>August 8, 2024</strong> until
+  <strong>August 14, 2024 (11:59PM UTC)</strong>. The Los Santos Avatar
+  Decoration needs to be redeemed by <strong>September 14, 2024. </strong>Quest
+  requirements must be completed during this period to receive the reward. 
+</p>
 <h2 id="h_01J3R3GFTCSGW9KKXCG37JDZ30">
   <a
     href="https://support.discord.com/hc/articles/24733159359895"
