@@ -210,9 +210,13 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
+    src="https://support.discord.com/hc/article_attachments/25504642192663"
+    width="426"
+    height="303"
+  /><img
     src="https://support.discord.com/hc/article_attachments/25488918373015"
-    width="387"
-    height="478"
+    width="421"
+    height="520"
   />
 </p>
 <p>
