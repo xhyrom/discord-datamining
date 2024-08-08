@@ -683,7 +683,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   display: inline;
   width: auto;
   height: auto;
-  padding: 2px 4px;
+  padding: 0 4px;
+}
+.sizeMin_dd4f85 .contents_dd4f85 {
+  display: inline;
 }
 .sizeMax_dd4f85 {
   width: 100%;
@@ -45516,4 +45519,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.c03a88c018ff9db19751.css.map*/
+/*# sourceMappingURL=12633.d144c7e17d750fa1c5a7.css.map*/
