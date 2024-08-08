@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7442309002](https://discord.com/jobs/7442309002)
 
-**Updated At:** Thu, 08 Aug 2024 19:42:09 GMT
+**Updated At:** Thu, 08 Aug 2024 22:21:19 GMT
 
 **Job Description:**
 This position is US based only.Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
@@ -25,6 +25,7 @@ Helping find the right solutions that balance delight, speed of delivery and imp
 You Will Thrive In This Role If
 
 You have 5+ years of experience as a Software Engineer
+You have experience with React and/or Javascript
 You have specialized in building consumer-facing products on web and mobile platforms
 You have developed domain expertise in either web or mobile front-end (or both)
 You are eager to learn new languages and frameworks, and are comfortable working across the full stack when needed
