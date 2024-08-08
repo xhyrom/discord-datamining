@@ -3282,6 +3282,7 @@
   "UPLOAD_IMAGE_BODY": "\"Is this your card? Err, do you want to upload this image?\"",
   "CROP": "\"Crop\"",
   "UNABLE_TO_PROCESS_IMAGE": "\"Unable to process image\"",
+  "UNABLE_TO_EDIT_IMAGE": "\"Unable to edit image: {reason}\"",
   "IMAGE_COMPRESSION": "\"Image compression\"",
   "IMAGE_COMPRESSION_LABEL": "\"Auto-compress Images\"",
   "IMAGE_COMPRESSION_NITRO_UPSELL": "\"When this is on, images sent will be compressed. Get Nitro to send a crystal clear image! **[Get Nitro]({nitroLink})**\"",
