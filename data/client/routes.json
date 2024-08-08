@@ -1578,7 +1578,10 @@
   },
   "CAPTCHA_TEST": {
     "url": "/captcha/decider",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "EXPERIMENTS": {
     "url": "/experiments",
