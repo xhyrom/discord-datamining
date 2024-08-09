@@ -134,9 +134,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25477893651351"
-    width="685"
-    height="471"
+    src="https://support.discord.com/hc/article_attachments/25541025404183"
+    alt="Screenshot 2024-08-09 at 2.21.05 PM.png"
   />
 </p>
 <h1 id="h_01J4PWQM5KW5J53Y91BZ5HA81M">Frequently Asked Questions</h1>
