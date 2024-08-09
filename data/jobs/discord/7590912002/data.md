@@ -2,15 +2,15 @@
 
 ## Senior Software Engineer, Machine Learning - Ads (Quests)
 
-**Location:** San Francisco, CA
+**Location:** San Francisco, CA (or Remote)
 
-**Id:** 7566503002 <br/>
+**Id:** 7590912002 <br/>
 **Internal Job Id:** 5932545002 <br/>
 **Requisition Id:** Pipeline Req 123 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/7566503002](https://discord.com/jobs/7566503002)
+**Discord Jobs:** [https://discord.com/jobs/7590912002](https://discord.com/jobs/7590912002)
 
-**Updated At:** Thu, 08 Aug 2024 19:42:09 GMT
+**Updated At:** Fri, 09 Aug 2024 19:35:25 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
