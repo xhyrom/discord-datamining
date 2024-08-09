@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_message_forwarding_icon",
+    "label": "Message forwarding icon change",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Use old icon"
+    ],
+    "hash": 1378883154,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
