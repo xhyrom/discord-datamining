@@ -78,9 +78,9 @@
 <p>
   The <strong>Mom, I'm Winning</strong> Quest can be accepted on Discord from
   <strong>August 8, 2024 </strong>until
-  <strong>August 15, 2024 (11:59PM UTC)</strong>. The
+  <strong>August 16, 2024 (11:59PM UTC)</strong>. The
   <strong>Methane Mask</strong> must be redeemed by
-  <strong>September 14, 2024</strong>. Quest requirements must be completed
+  <strong>September 15, 2024</strong>. Quest requirements must be completed
   during this period to receive the reward.
 </p>
 <h2 id="h_01J4SE37FBGRQ4PFWJVR16YGNQ">

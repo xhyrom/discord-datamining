@@ -34,9 +34,9 @@
   >
   The <strong>Mom, I'm Winning</strong> Quest can be accepted on Discord from
   <strong>August 8, 2024</strong> until
-  <strong>August 15, 2024 (11:59PM UTC)</strong>. The
+  <strong>August 16, 2024 (11:59PM UTC)</strong>. The
   <strong>Methane Mask</strong> must be redeemed by
-  <strong>September 14, 2024</strong>.<br />Quest requirements must be completed
+  <strong>September 15, 2024</strong>.<br />Quest requirements must be completed
   during this period to receive the reward. <br /><strong>Other Terms:</strong>
   <br />Limit of one reward redemption per account. <br />For more information
   on Discord Quests and to view the currently active quests, visit our<a
@@ -85,10 +85,10 @@
   Once you have completed the Quest on Discord by winning 5 games of
   <strong>Krunker Strike FRVR</strong>, you’ll be able to claim the
   <strong>Methane Mask</strong>. The Methane Mask must be redeemed by
-  <strong>September 14, 2024</strong>.
+  <strong>September 15, 2024</strong>.
 </p>
 <h3 id="h_01J4PWG17RXN8FAENMPT093QR1">
-  <strong>Note</strong>: If the Quest is not completed by August 15, 2024, the
+  <strong>Note</strong>: If the Quest is not completed by August 16, 2024, the
   Quest will no longer be available within your <strong>Gift Inventory</strong>.
 </h3>
 <p>
@@ -121,9 +121,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25477893644695"
-    width="692"
-    height="489"
+    src="https://support.discord.com/hc/article_attachments/25540077204631"
+    width="674"
+    height="476"
   />
 </p>
 <p>
