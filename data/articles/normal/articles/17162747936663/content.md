@@ -7,23 +7,18 @@
   <li><a href="#h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop </a></li>
   <li>
     <a href="#h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</a>
+    <ul>
+      <li><a href="#h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</a></li>
+    </ul>
   </li>
   <li>
     <a href="#h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</a>
     <ul>
-      <li><a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop</a></li>
-      <li>
-        <a href="#docs-internal-guid-a5d55ffd-7fff-5128-21cb-7acf5fea56eb"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop/Browser</a></li>
+      <li><a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH">Mobile</a></li>
     </ul>
   </li>
-  <li>
-    <a href="#docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d"
-      >Gifting from the Shop</a
-    >
-  </li>
+  <li><a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G">Gifting from the Shop</a></li>
   <li>
     <a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions</a>
   </li>
@@ -42,18 +37,17 @@
   avatar decorations and profile effects! Nitro members can also claim any Nitro
   exclusive items while in the Shop! 
 </p>
-<h3 id="h_01HDMK5TEP5B8G32PSB4RX24MG">
+<div class="info-box">
   Items available for purchase in the Shop will change periodically and may be
   available for a limited time. However, any purchased items are yours to keep
   and can be used at any time.
-</h3>
+</div>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-cc44709e-7fff-de9d-20e9-c2ebcbe2461e"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/19612054117399"
-      width="624"
-      height="452"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25517233436439"
+    width="624"
+    height="453"
+  />
 </p>
 <p>
   You can learn more about customizing your profile by heading over to our
@@ -65,6 +59,25 @@
     >here</a
   >. 
 </p>
+<h2 id="h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</h2>
+<p>
+  In the Shop, you’ll also find <strong>Bundles</strong>! Bundles include a
+  matching or complementary pair of avatar decorations and profile effects from
+  the same collection and come with a larger discount.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25517233437975"
+    width="624"
+    height="313"
+  />
+</p>
+<div class="warn-box">
+  <strong>Note</strong>: Once you purchase at least one item from a bundle, the
+  bundle will no longer be available for purchase. As a result, you will not be
+  eligible for a discount on the remaining item in the bundle. Furthermore, the
+  bundle will be marked as “partially owned.”
+</div>
 <h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
 <p id="docs-internal-guid-d5fed4b0-7fff-a231-7cd7-51087e31cc58">
   Head over to the Shop to start collecting avatar decorations and profile
@@ -72,39 +85,71 @@
 </p>
 <h2 id="h_01HVHE1RAM3Y86Y72M182775GF">
   <span id="docs-internal-guid-80a013df-7fff-bf2a-521c-bff4299bcea0"
-    >Desktop</span
+    >Desktop/Browser</span
   >
 </h2>
-<p><strong>Option 1</strong></p>
+<p>
+  <span class="wysiwyg-font-size-large"><strong>Option 1</strong></span>
+</p>
 <p>
   1. Navigate to your <strong>Direct Messages list </strong>by selecting the
-  Discord app icon in the upper left corner. 
+  <strong>Discord</strong> <strong>app</strong> icon in the upper-left corner. 
 </p>
-<p>2. Then, press the <strong>Shop</strong> tab to enter the Shop!</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19432495557399"
-    alt="image1.gif"
-    width="688"
-    height="345"
+    src="https://support.discord.com/hc/article_attachments/25517203372567"
+    width="648"
+    height="454"
+  />
+</p>
+<p>
+  2. Then, press the <strong>Shop</strong> tab [<img
+    src="https://support.discord.com/hc/article_attachments/25517203373463"
+    width="24"
+    height="24"
+  />] to the right of your server list to enter the Shop!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25517233440151"
+    width="311"
+    height="366"
   />
 </p>
 <p id="docs-internal-guid-de74f951-7fff-dd4c-a6a8-4b2abf7618b8">
-  <strong>Option 2</strong>
+  <span class="wysiwyg-font-size-large"><strong>Option 2</strong></span>
 </p>
-<p>1. Navigate to your <strong>User Settings &gt; Profiles</strong>. </p>
+<p>
+  1. To access your <strong>User Settings, </strong>select the
+  <strong>cogwheel </strong>icon [<img
+    src="https://support.discord.com/hc/article_attachments/25517203381143"
+    width="24"
+    height="24"
+  />] in the lower-left corner of the app, then navigate to the
+  <strong>Profiles </strong>section. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25517203391127"
+    width="508"
+    height="497"
+  />
+</p>
 <p class="wysiwyg-text-align-left">
   2. Once there, you will see the banner to the Shop where you can select
   <strong>Check it Out</strong>. You can also select
   <strong>Change Effect </strong>or <strong>Change Decoration </strong>and press
-  the <strong>Shop </strong>icon. 
+  the <strong>Shop </strong>icon [<img
+    src="https://support.discord.com/hc/article_attachments/25517233446295"
+    width="24"
+    height="24"
+  />]. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19432495562647"
-    alt="image2.png"
-    width="677"
-    height="421"
+    src="https://support.discord.com/hc/article_attachments/25517233450647"
+    width="624"
+    height="383"
   />
 </p>
 <p>
@@ -114,14 +159,14 @@
 <p>
   Head over to the
   <a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911"
+    href="https://support.discord.com/hc/articles/13410113109911"
     target="_blank"
     rel="noopener noreferrer"
     >Avatar Decorations</a
   >
   article and the
   <a
-    href="https://support.discord.com/hc/en-us/articles/17828465914263"
+    href="https://support.discord.com/hc/articles/17828465914263"
     target="_blank"
     rel="noopener noreferrer"
     >Profile Effects</a
@@ -129,7 +174,16 @@
   article to find steps on how to apply your collection and customize your
   profile! 
 </p>
-<h2 id="docs-internal-guid-a5d55ffd-7fff-5128-21cb-7acf5fea56eb">Mobile</h2>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25517203396119"
+    width="600"
+    height="435"
+  />
+</p>
+<h2 id="h_01J4T4TY98TVE2FGXE2HW9YTPH" class="wysiwyg-text-align-left">
+  Mobile
+</h2>
 <p>
   1. To navigate to the Shop on your mobile device, head over to your
   <strong>User Profile </strong>by selecting your <strong>avatar</strong> icon
@@ -140,7 +194,7 @@
     src="https://support.discord.com/hc/article_attachments/22820221364887"
     width="24"
     height="24"
-  />] icon in the upper right corner. 
+  />] icon in the upper-right corner. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -153,7 +207,6 @@
   3. This will direct you to the Shop where you can preview and buy avatar
   decorations and profile effects! 
 </p>
-<p> </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/24913300021143"
@@ -161,31 +214,31 @@
     height="593"
   />
 </p>
-<h1 id="docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d">
+<h1 id="h_01J4T4Z6G3GCXP9S76GKGBR98G" class="wysiwyg-text-align-left">
   Gifting from the Shop
 </h1>
-<h3 id="docs-internal-guid-650ed8fe-7fff-b23d-cc06-e6cb2703ef20">
-  <span style="color: #434343"
-    >Gifting from the Shop is only available on desktop and browser. </span
-  >
-</h3>
+<div class="info-box">
+  Gifting from the Shop is only available on desktop and browser.
+</div>
 <p>
   Along with collecting items for yourself, you can also gift items from the
   Shop to your friends! 
 </p>
 <p>
-  1. Select the item you would like to send and press the <strong>gift</strong>
-  <strong>icon</strong> located to the right of the
-  <strong>Buy Decoration </strong>button. You can also select the gift icon
-  within the main Shop page to send a gift. 
+  1. Select the item you would like to send and press the
+  <strong>gift</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/25517233455127"
+    width="24"
+    height="24"
+  />] located to the right of the <strong>Buy Decoration </strong>button. You
+  can also select the gift icon within the main Shop page to send a gift. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-744e18a4-7fff-7f1d-093b-e2c7e113d3b7"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/19550225912983"
-      width="624"
-      height="452"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25517233457175"
+    width="624"
+    height="475"
+  />
 </p>
 <p id="docs-internal-guid-728f0c68-7fff-e50c-1d4b-f70e617cccab">
   2. Then, the <strong>Send a gift </strong>window will appear. While here, you
@@ -196,37 +249,27 @@
   3. Once you have chosen who you would like to send the gift to and have added
   your personal touches, press <strong>Next </strong>to proceed.
 </p>
-<h3 id="docs-internal-guid-cab4eef2-7fff-0e80-443b-f6a8e42f7b13">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Note: If your Discord account does not have a previously saved payment
-    method, you will need to add your payment method details before
-    proceeding.  </span
-  >
-</h3>
+<div class="warn-box">
+  <strong>Note</strong>: If your Discord account does not have a previously
+  saved payment method, you will need to add your payment method details before
+  proceeding.
+</div>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    ><span id="docs-internal-guid-52d89e1f-7fff-2554-dbb0-b6b078a091bf"
-      ><img
-        src="https://support.discord.com/hc/article_attachments/19550225921047"
-        width="624"
-        height="452" /></span
-  ></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25517233459991"
+    width="600"
+    height="438"
+  />
 </p>
 <p id="docs-internal-guid-152b98e9-7fff-6e8d-3e01-9c066ef3758c">
   And that’s it! You should see a confirmation that your gift was sent. 
 </p>
-<h3 id="h_01HJ49ZVS8EBSFDVKZBE2STRNZ">
-  <span
-    id="docs-internal-guid-f7642f45-7fff-cf3b-1ecb-cc8089ddae41"
-    style="color: #434343"
-    >Any purchased gifts that haven’t been sent and claimed can be found in your
-    Discord Gift Inventory, which you can find by going to </span
-  ><strong
-    ><span style="color: #434343"
-      >User Settings &gt; Gift Inventory</span
-    ></strong
-  ><span style="color: #434343">.</span>
-</h3>
+<div class="tip-box">
+  Any purchased gifts that haven’t been sent and claimed can be found in your
+  Discord Gift Inventory, which you can find by going to<strong>
+    User Settings &gt; Gift Inventory</strong
+  >. 
+</div>
 <h1 id="h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions </h1>
 <p id="docs-internal-guid-19fc1892-7fff-8091-9662-2453d7666148">
   <strong
@@ -250,6 +293,21 @@
     >here</a
   >. 
 </p>
+<p>
+  <strong
+    >Q: I already have the avatar decoration which is part of a Shop Bundle. Why
+    am I unable to purchase the Shop Bundle to obtain the profile
+    effect? </strong
+  >
+</p>
+<p>
+  A: Shop Bundles allow you to buy two items from the same collection at a
+  discounted price. These bundles are available only if you haven't purchased
+  any of the items included. If you already own one or both items, the bundle
+  will be marked as partially or fully owned, and you won't be able to purchase
+  the remaining item(s) at a discount. In such cases, you'll need to buy the
+  remaining item individually.
+</p>
 <p id="docs-internal-guid-9c48c930-7fff-3935-9058-795b8d132156">
   <strong>Q: Is localized pricing available for Shop purchases?</strong>
 </p>
@@ -264,15 +322,11 @@
     >here</a
   >. 
 </p>
-<h3 id="h_01HZN8NEFV9BFA1F7D2SD72KT9">
-  <span style="color: #434343">Note: Shop gifts are not available </span
-  ><span style="color: #434343">at localized</span
-  ><span style="color: #434343">
-    prices. Depending on a user’s region, they may be able to pay for a gift in
-    their local currency, but the price will still be equivalent to the USD
-    price.</span
-  >
-</h3>
+<div class="info-box">
+  <strong>Note</strong>: Shop gifts are not available at localized prices.
+  Depending on a user’s region, they may be able to pay for a gift in their
+  local currency, but the price will still be equivalent to the USD price.
+</div>
 <p><strong>Q: What is your refund policy for Shop purchases?</strong></p>
 <p>
   A: You can find our full refund policy, including Shop purchases and Nitro

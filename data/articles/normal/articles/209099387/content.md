@@ -46,13 +46,12 @@
 <p>2. Restart your Windows device.</p>
 <p>
   3. Reinstall the Discord app via<a
-    href="https://discordapp.com/api/download?platform=winIn"
+    href="https://discordapp.com/api/download?platform=win"
     target="_blank"
     rel="noopener noreferrer"
   >
-    https://discordapp.com/api/download?platform=winIn</a
-  >
-  some cases, these extra steps may be necessary.
+    https://discordapp.com/api/download?platform=win</a
+  >. In some cases, these extra steps may be necessary.
 </p>
 <ul>
   <li>
@@ -65,9 +64,9 @@
   </li>
 </ul>
 <div class="form-box">
-  <strong>Note: </strong>If even after trying all of the above, you’re still
-  running into an issue installing Discord. Please reach out to our Support team
-  through here:
+  <strong>Note: </strong>If you are still running into issues installing Discord
+  after trying all of the above, please reach out to our Support team through
+  here:
   <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
     >https://dis.gd/contact</a
   >

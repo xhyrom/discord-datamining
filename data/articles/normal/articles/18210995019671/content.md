@@ -8,36 +8,36 @@
 <p><strong>What this article covers:</strong></p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210995019671#h_01HD4TKHH294XX3M5MY2PMXXCA"
-      >How teens experience filters</a
-    >
+    <a href="#h_01HD4TKHH294XX3M5MY2PMXXCA">How teens experience filters</a>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210995019671#h_01HD4TKHH2W7FYQVK7XJ2WFQ5C"
-      >How adults experience filters</a
-    >
+    <a href="#h_01HD4TKHH2W7FYQVK7XJ2WFQ5C">How adults experience filters</a>
   </li>
+  <li><a href="#h_01HD4TKHH2VG36J2KNSNNFGHT7">Future updates</a></li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210995019671#h_01HD4TKHH2VG36J2KNSNNFGHT7"
-      >Future updates</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210995019671#h_01HD4TKHH2Q6DKD538XWFJ2SW6"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01HD4TKHH2Q6DKD538XWFJ2SW6">Frequently Asked Questions</a>
   </li>
 </ul>
 <h1 id="h_01HD4TKHH294XX3M5MY2PMXXCA">How teens experience filters</h1>
 <p>
   Through sensitive content filters, Discord detects if media posted on our
   platform may be sensitive. When these new filters are set to
-  <strong>blur</strong>, they apply to all historic and new media. 
+  <strong>blur</strong>, they apply to all historic and new media.
 </p>
+<div class="info-box">
+  <strong>Note:</strong> The filter currently processes image-based media posted
+  on Discord and blurs or blocks content when we detect that the content might
+  contain nudity, graphic sex acts, or sexually explicit material. <br />If you
+  believe we missed something or made a mistake, you can
+  <a
+    href="https://discord.com/safety/360044103651"
+    target="_blank"
+    rel="noopener noreferrer"
+    >report the content</a
+  >
+  to us. We are always working to improve our features that help keep users
+  safe.
+</div>
 <p>
   1. Discord will blur media that may be sensitive in direct messages (DMs),
   group direct messages (GDMs), and servers for teens. The blur protects teens
@@ -166,14 +166,22 @@
     blocked from being uploaded in DMs and GDMs.
   </li>
 </ul>
-<h3 id="h_01HD4TKHH20476GDFY1GQ8NZ3X">
-  <span style="color: #444746" data-darkreader-inline-color=""
-    >Note: Sensitive media in servers can only be selected to "show" or "blur."
-    Blocking sensitive media in servers is based on each server's safety
-    settings.</span
+<div class="info-box">
+  <strong>Note:</strong> Sensitive media in servers can only be selected to
+  "show" or "blur." Blocking sensitive media in servers is based on each
+  server's safety settings.<br />The filter currently processes image-based
+  media posted on Discord and blurs content when we detect that the content
+  might contain nudity, graphic sex acts, or sexually explicit material.
+  <br />If you believe we missed something or made a mistake, you can
+  <a
+    href="https://discord.com/safety/360044103651"
+    target="_blank"
+    rel="noopener noreferrer"
+    >report the content</a
   >
-  <span style="color: #434343" data-darkreader-inline-color=""><br /></span>
-</h3>
+  to us. We are always working to improve our features that help keep users
+  safe.
+</div>
 <p class="wysiwyg-text-align-center">
   <span style="background-color: #d9d9d9" data-darkreader-inline-bgcolor=""
     ><img
@@ -275,9 +283,23 @@
 </p>
 <p><strong>Q: </strong>How does Discord detect potentially sensitive media? </p>
 <p>
-  <strong>A:</strong> When a user has this feature on, every message sent to
-  them will be automatically checked to see if it contains potentially sensitive
-  media. Discord will then blur or block potentially sensitive media depending
-  on the user's settings. That detection process does not report any message
-  content or other information to Discord for enforcement purposes.
+  <strong>A: </strong>When a user has this feature on, messages containing
+  image-based media will be processed by our automated detection system to see
+  if it contains potentially sensitive media.
+</p>
+<p>
+  At times, our detection may misunderstand or miss when image-based content
+  contains nudity, graphic sex acts, or sexually explicit material. In these
+  instances, users can
+  <a
+    href="https://discord.com/safety/360044103651"
+    target="_blank"
+    rel="noopener noreferrer"
+    >report the content</a
+  >
+  to us.
+</p>
+<p>
+  This feature does not report any message content or other information to
+  Discord for enforcement purposes.
 </p>
