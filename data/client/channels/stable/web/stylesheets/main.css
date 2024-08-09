@@ -683,7 +683,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   display: inline;
   width: auto;
   height: auto;
-  padding: 2px 4px;
+  padding: 0 4px;
+}
+.sizeMin_dd4f85 .contents_dd4f85 {
+  display: inline;
 }
 .sizeMax_dd4f85 {
   width: 100%;
@@ -14578,8 +14581,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   width: 24px;
   height: 24px;
   border-radius: 4px;
-  border: 1px solid var(--border-subtle);
-  overflow: hidden;
+}
+.highlighted_fda254 {
+  border: 1.5px solid var(--border-strong);
 }
 .extraGameCount_fda254 {
   position: absolute;
@@ -14594,9 +14598,31 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   justify-content: center;
   align-items: center;
 }
+.gameActivityLevel_fda254 {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  border-radius: 50%;
+  background-color: var(--background-tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameActivityLevelInner_fda254 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
 .gameImage_fda254 {
   width: 24px;
   height: 24px;
+  border-radius: 4px;
+}
+.tooltipText_fda254 {
+  text-align: center;
 }
 .tooltipGameImageContainer_fda254 {
   width: 16px;
@@ -14618,7 +14644,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .tooltipGame_fda254 {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
 }
 .container_d1e805 {
@@ -14676,7 +14702,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   border-radius: 8px;
   border: 1px solid var(--border-subtle);
   overflow: hidden;
-  background-color: var(--bg-surface-overlay);
+  background-color: var(--bg-base-tertiary);
   display: flex;
   flex-direction: column;
 }
@@ -22792,6 +22818,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   -webkit-backdrop-filter: brightness(60%) blur(4px);
   backdrop-filter: brightness(60%) blur(4px);
   border: 1px solid var(--border-strong);
+  border-radius: 5px;
 }
 .categoryText_af1167 {
   color: var(--white);
@@ -26912,30 +26939,18 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   background-color: ButtonFace;
   color: ButtonText;
 }
-.header_b9cd33 {
-  z-index: 2;
-  min-height: calc(45px + var(--custom-user-banner-height-bite-size));
-  flex-shrink: 0;
-}
-.custom-profile-theme .header_b9cd33 {
-  min-height: calc(35px + var(--custom-user-banner-height-bite-size));
-}
-.body_b9cd33 {
-  z-index: 1;
-  padding: 0 16px 8px;
+.avatar_fa7805 {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  justify-content: center;
 }
-.footer_b9cd33 {
-  z-index: 1;
-  padding: 0 16px 12px;
+.avatarHalo_fa7805 {
   display: flex;
-  flex-direction: column;
-}
-.footer_b9cd33:empty {
-  visibility: hidden;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-16);
+  border-radius: 50%;
+  background-color: var(--background-modifier-accent);
 }
 .preview_b9cd33 {
   position: relative;
@@ -26947,17 +26962,32 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   object-fit: contain;
   -o-object-position: top;
   object-position: top;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .container_b9cd33 {
   position: relative;
 }
+.header_b9cd33 {
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
 .centeredButton_b9cd33 {
+  margin-top: var(--spacing-16);
+  width: 100%;
+  z-index: 1;
+}
+.body_b9cd33 {
   position: absolute;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .popover_a64b81 {
   z-index: 1;
@@ -37612,16 +37642,6 @@ html.disable-forced-colors * {
       var(--primary-700) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
-    --badge-brand-bg: color-mix(
-      in oklab,
-      var(--brand-260) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --badge-brand-text: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
     --bg-backdrop: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.7) 100%,
@@ -39361,16 +39381,6 @@ html.disable-forced-colors * {
       var(--primary-200) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
-    --badge-brand-bg: color-mix(
-      in oklab,
-      var(--brand-260) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --badge-brand-text: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
     --bg-backdrop: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.54) 100%,
@@ -41109,16 +41119,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-19) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --badge-brand-bg: color-mix(
-      in oklab,
-      var(--brand-260) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --badge-brand-text: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --bg-backdrop: color-mix(
       in oklab,
@@ -42860,16 +42860,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-16) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --badge-brand-bg: color-mix(
-      in oklab,
-      var(--brand-260) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --badge-brand-text: color-mix(
-      in oklab,
-      var(--brand-500) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --bg-backdrop: color-mix(
       in oklab,
@@ -45555,4 +45545,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.19ce6f52a8a9fee92084.css.map*/
+/*# sourceMappingURL=12633.e3cb6bf76513ea8188b7.css.map*/
