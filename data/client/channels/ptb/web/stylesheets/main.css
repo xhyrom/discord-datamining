@@ -14581,8 +14581,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   width: 24px;
   height: 24px;
   border-radius: 4px;
-  border: 1px solid var(--border-subtle);
-  overflow: hidden;
+}
+.highlighted_fda254 {
+  border: 1.5px solid var(--border-strong);
 }
 .extraGameCount_fda254 {
   position: absolute;
@@ -14597,9 +14598,31 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   justify-content: center;
   align-items: center;
 }
+.gameActivityLevel_fda254 {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  border-radius: 50%;
+  background-color: var(--background-tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameActivityLevelInner_fda254 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
 .gameImage_fda254 {
   width: 24px;
   height: 24px;
+  border-radius: 4px;
+}
+.tooltipText_fda254 {
+  text-align: center;
 }
 .tooltipGameImageContainer_fda254 {
   width: 16px;
@@ -14621,7 +14644,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .tooltipGame_fda254 {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
 }
 .container_d1e805 {
@@ -14679,7 +14702,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   border-radius: 8px;
   border: 1px solid var(--border-subtle);
   overflow: hidden;
-  background-color: var(--bg-surface-overlay);
+  background-color: var(--bg-base-tertiary);
   display: flex;
   flex-direction: column;
 }
@@ -45519,4 +45542,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.d144c7e17d750fa1c5a7.css.map*/
+/*# sourceMappingURL=12633.75a5e3282696f9e14800.css.map*/
