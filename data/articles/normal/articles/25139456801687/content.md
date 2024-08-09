@@ -75,9 +75,10 @@
 <h1 id="h_01J4Q9BY1N8MTJM9JDK1MYBYCH">Redemption Instructions</h1>
 <p>
   Once you have completed the Quest on Discord, by playing 15 minutes of
-  <strong>GTA</strong> <strong>Online/GTAV</strong>, you’ll be able to claim the
-  <strong>Los Santos avatar decoration</strong>. The Los Santos avatar
-  decoration needs to be redeemed by <strong>September 14, 2024.</strong>
+  <strong>GTA</strong> <strong>Online</strong> or <strong>GTAV</strong>, you’ll
+  be able to claim the <strong>Los Santos avatar decoration</strong>. The Los
+  Santos avatar decoration needs to be redeemed by
+  <strong>September 14, 2024.</strong>
 </p>
 <h3 id="h_01J4Q9DVFWRFZVC1D7PC395XCH">
   <strong>Note</strong>: If the Quest is not completed by August 14, 2024, the

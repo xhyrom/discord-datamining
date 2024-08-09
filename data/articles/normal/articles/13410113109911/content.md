@@ -23,7 +23,7 @@
   <li>
     <a href="#h_01J4SCH0SP77EJ2328CYGRS05Y"
       >How to apply an avatar decoration to my profile</a
-    ><a href="#docs-internal-guid-e73a0c54-7fff-dbc0-6e07-40581ee1ea3f"
+    ><a href="https://support.discord.com/hc/en-us/articles/13410113109911"
       ><br
     /></a>
     <ul>
