@@ -1709,8 +1709,8 @@
     "privacy_policy_url": "https://help.roll20.net/hc/articles/360037770793-Terms-of-Service-and-Privacy-Policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "1"
     },
@@ -1718,8 +1718,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "1"
         }
@@ -2271,7 +2271,7 @@
       "1": {}
     },
     "verify_key": "94acd5a9e9337b574a7e454a4b11ac864869c8946eadea0eb2f9f2d3946589ec",
-    "flags": 2228234,
+    "flags": 131082,
     "max_participants": null,
     "embedded_activity_config": {
       "activity_preview_video_asset_id": "1256309110803267615",
@@ -3301,7 +3301,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "aoe2de_s.exe",
+        "name": "aoe2de/aoe2de_s.exe",
         "is_launcher": false
       },
       {
@@ -3311,7 +3311,7 @@
       },
       {
         "os": "win32",
-        "name": "aoe2de/aoe2de_s.exe",
+        "name": "aoe2de_s.exe",
         "is_launcher": false
       }
     ],
@@ -3561,12 +3561,12 @@
       },
       {
         "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "name": "roblox.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "roblox.exe",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       }
     ],
@@ -3614,12 +3614,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -3731,13 +3731,13 @@
     "guild_id": "322850917248663552",
     "executables": [
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -3805,7 +3805,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -3814,23 +3814,23 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
       },
       {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -3884,14 +3884,14 @@
     "guild_id": "302094807046684672",
     "executables": [
       {
-        "os": "darwin",
-        "name": ">java",
+        "os": "win32",
+        "name": ">javaw.exe",
         "arguments": "net.minecraft.client.main.Main",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": ">javaw.exe",
+        "os": "darwin",
+        "name": ">java",
         "arguments": "net.minecraft.client.main.Main",
         "is_launcher": false
       },
@@ -4025,14 +4025,14 @@
     "primary_sku_id": "491748506516717599",
     "third_party_skus": [
       {
-        "id": "491748506516717599",
-        "sku": "491748506516717599",
-        "distributor": "discord"
-      },
-      {
         "id": "271590",
         "sku": "271590",
         "distributor": "steam"
+      },
+      {
+        "id": "491748506516717599",
+        "sku": "491748506516717599",
+        "distributor": "discord"
       }
     ],
     "overlay": true,
@@ -4044,27 +4044,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "installers/social-club-setup.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/fivem.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_dumpserver",
         "is_launcher": false
       },
       {
@@ -4074,7 +4054,27 @@
       },
       {
         "os": "win32",
+        "name": "subprocess/fivem_dumpserver",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/fivem.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "lspdfr/lspdfr configurator.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_gtaprocess.exe",
         "is_launcher": false
       }
     ],
@@ -4250,12 +4250,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "call of duty hq/cod.exe",
+        "name": "_retail_/cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "mp23/mp23-cod.exe",
+        "name": "call of duty hq/cod.exe",
         "is_launcher": false
       },
       {
@@ -4265,7 +4265,7 @@
       },
       {
         "os": "win32",
-        "name": "_retail_/cod.exe",
+        "name": "mp23/mp23-cod.exe",
         "is_launcher": false
       }
     ],
@@ -4412,12 +4412,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "tslgame_be.exe",
+        "name": "tslgame.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tslgame.exe",
+        "name": "tslgame_be.exe",
         "is_launcher": false
       }
     ],
@@ -4460,7 +4460,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rainbowsix.exe",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       },
       {
@@ -4470,7 +4470,7 @@
       },
       {
         "os": "win32",
-        "name": "rainbowsix_be.exe",
+        "name": "rainbowsix.exe",
         "is_launcher": false
       },
       {
@@ -4480,7 +4480,7 @@
       },
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "name": "rainbowsix_be.exe",
         "is_launcher": false
       }
     ],
@@ -4732,8 +4732,8 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "the sims 4.app",
+        "os": "win32",
+        "name": "ts4_dx9_x64.exe",
         "is_launcher": false
       },
       {
@@ -4742,13 +4742,13 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "ts4.exe",
+        "os": "darwin",
+        "name": "the sims 4.app",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "ts4_dx9_x64.exe",
+        "name": "ts4.exe",
         "is_launcher": false
       }
     ],
@@ -4849,12 +4849,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "fallguys_client_game.exe",
+        "name": "fallguys_client.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "fallguys_client.exe",
+        "name": "fallguys_client_game.exe",
         "is_launcher": false
       }
     ],
@@ -5110,13 +5110,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -5151,6 +5151,11 @@
     "guild_id": "118778495085182976",
     "executables": [
       {
+        "os": "darwin",
+        "name": "brawlhalla.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "brawlhalla/brawlhallagame.exe",
         "is_launcher": false
@@ -5158,11 +5163,6 @@
       {
         "os": "win32",
         "name": "brawlhalla.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "brawlhalla.app",
         "is_launcher": false
       }
     ],
@@ -5276,7 +5276,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "_retail_/wow-64.exe",
+        "name": "_ptr_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow.exe",
         "is_launcher": false
       },
       {
@@ -5291,7 +5296,7 @@
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow-64.exe",
+        "name": "_ptr_/wow.exe",
         "is_launcher": false
       },
       {
@@ -5301,12 +5306,7 @@
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_retail_/wow.exe",
+        "name": "_retail_/wow-64.exe",
         "is_launcher": false
       }
     ],
@@ -5377,12 +5377,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "dead by daylight/deadbydaylight.exe",
+        "name": "deadbydaylight.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "deadbydaylight.exe",
+        "name": "dead by daylight/deadbydaylight.exe",
         "is_launcher": false
       },
       {
@@ -5421,23 +5421,23 @@
     "guild_id": "251072485095636994",
     "executables": [
       {
-        "os": "win32",
-        "name": "terraria/terraria.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "terraria.app",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "terraria.exe",
+        "name": "terraria/terraria.exe",
         "is_launcher": false
       },
       {
         "os": "linux",
         "name": "terraria.bin.x86",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "terraria.exe",
         "is_launcher": false
       }
     ],
@@ -5473,12 +5473,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "among us - tou/among us.exe",
+        "name": "among us - copy/among us.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "among us - copy/among us.exe",
+        "name": "among us/among us.exe",
         "is_launcher": false
       },
       {
@@ -5488,7 +5488,7 @@
       },
       {
         "os": "win32",
-        "name": "among us/among us.exe",
+        "name": "among us - tou/among us.exe",
         "is_launcher": false
       }
     ],
@@ -5595,12 +5595,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bakkesmod/plugininstaller.exe",
+        "name": "rocketleague.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rocketleague.exe",
+        "name": "bakkesmod/plugininstaller.exe",
         "is_launcher": false
       }
     ],
@@ -5699,8 +5699,8 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "left 4 dead 2/left4dead2.exe",
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -5711,8 +5711,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
+        "os": "win32",
+        "name": "left 4 dead 2/left4dead2.exe",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -5894,17 +5894,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bloonstd6.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "bloonstd6/bloonstd6.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "cleaner/cleaner-btd6.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "bloonstd6.exe",
         "is_launcher": false
       }
     ],
@@ -5970,18 +5970,6 @@
     "guild_id": "565105920414318602",
     "executables": [
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
-        "arguments": "-game garrysmod",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": ">hl2.exe",
-        "arguments": "-game garrysmod",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "garrysmod/hl2.exe",
         "arguments": "-game garrysmod",
@@ -5990,6 +5978,18 @@
       {
         "os": "win32",
         "name": "hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": ">hl2_osx",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": ">hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -6150,12 +6150,12 @@
       },
       {
         "os": "win32",
-        "name": "dayz_x64.exe",
+        "name": "dayz/dayzuninstaller.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "dayz/dayzuninstaller.exe",
+        "name": "dayz_x64.exe",
         "is_launcher": false
       }
     ],
@@ -6185,12 +6185,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "projectzomboid32.exe",
+        "name": "projectzomboid64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "projectzomboid64.exe",
+        "name": "projectzomboid32.exe",
         "is_launcher": false
       }
     ],
@@ -6320,12 +6320,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "monster hunter world/mhw_modmanager.exe",
+        "name": "monsterhunterworld.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "monsterhunterworld.exe",
+        "name": "monster hunter world/mhw_modmanager.exe",
         "is_launcher": false
       }
     ],
@@ -6408,6 +6408,11 @@
     "executables": [
       {
         "os": "win32",
+        "name": "assettocorsa/content manager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "server/acservermanager.exe",
         "is_launcher": false
       },
@@ -6418,22 +6423,17 @@
       },
       {
         "os": "win32",
-        "name": "assettocorsa/content manager.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "assettocorsa/acs.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "assettocorsa/acshowroom.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa.exe",
         "is_launcher": false
       },
       {
@@ -6470,13 +6470,13 @@
     "guild_id": "127167843383902209",
     "executables": [
       {
-        "os": "win32",
-        "name": "hearthstone.exe",
+        "os": "darwin",
+        "name": "hearthstone.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "hearthstone.app",
+        "os": "win32",
+        "name": "hearthstone.exe",
         "is_launcher": false
       }
     ],
@@ -6600,13 +6600,13 @@
     "executables": [
       {
         "os": "win32",
-        "name": "vrchat/launch.exe",
-        "is_launcher": true
+        "name": "vrchat/vrchat.exe",
+        "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "vrchat/vrchat.exe",
-        "is_launcher": false
+        "name": "vrchat/launch.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -6657,12 +6657,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "6.0.0/dotnet.exe",
+        "name": "tmodloader/tmodloader64bit.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader64bit.exe",
+        "name": "6.0.0/dotnet.exe",
         "is_launcher": false
       },
       {
@@ -7015,11 +7015,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "final fantasy xiv.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "ffxiv_dx11.exe",
         "is_launcher": false
@@ -7027,6 +7022,11 @@
       {
         "os": "win32",
         "name": "ffxiv.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "final fantasy xiv.app",
         "is_launcher": false
       }
     ],
@@ -7072,12 +7072,12 @@
       },
       {
         "os": "win32",
-        "name": "win64/shootergameserver.exe",
+        "name": "shootergame.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "shootergame.exe",
+        "name": "win64/shootergameserver.exe",
         "is_launcher": false
       }
     ],
@@ -7114,12 +7114,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "7daystodie_eac.exe",
+        "name": "7daystodie.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "7daystodie.exe",
+        "name": "7daystodie_eac.exe",
         "is_launcher": false
       }
     ],
@@ -7236,17 +7236,17 @@
       },
       {
         "os": "win32",
+        "name": "_retail_/sp22/sp22-cod.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "_retail_/cod22/cod22-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "call of duty hq/sp22/sp22-cod.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_retail_/sp22/sp22-cod.exe",
         "is_launcher": false
       }
     ],
@@ -7310,12 +7310,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "lms.exe",
+        "name": "2013/vcredist_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "2013/vcredist_x64.exe",
+        "name": "lms.exe",
         "is_launcher": false
       }
     ],
@@ -7487,12 +7487,12 @@
       },
       {
         "os": "win32",
-        "name": "skyrimlauncher.exe",
+        "name": "tesv_original.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tesv_original.exe",
+        "name": "skyrimlauncher.exe",
         "is_launcher": false
       }
     ],
@@ -7798,12 +7798,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "mcc-win64-shipping.exe",
+        "name": "win64/mcc-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "win64/mcc-win64-shipping.exe",
+        "name": "mcc-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -7847,8 +7847,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "469887038"
     },
@@ -7989,8 +7989,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -8089,8 +8089,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "268561430"
     },
@@ -8098,8 +8098,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "268561430"
         }
@@ -8146,8 +8146,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147601472"
     },
@@ -8155,8 +8155,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "2147601472"
         }
@@ -8245,23 +8245,13 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
       },
       {
         "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -8270,9 +8260,19 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       }
     ],
     "storefront_available": false,
