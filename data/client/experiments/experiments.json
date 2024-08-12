@@ -7226,7 +7226,7 @@
           "filters": []
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "overrides": {
         "10": [
           "175987125626339328",
@@ -13135,7 +13135,7 @@
         "Control Bucket",
         "Treatment 1: duration",
         "Treatment 2: optin duration",
-        "Treatment 3: Perk Demo Opt In - Extended Demo & Opt In Duration"
+        "Treatment 3: both"
       ],
       "hash": 3975306549,
       "buckets": [
