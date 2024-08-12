@@ -5559,8 +5559,8 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
             ? t.getAttribute("value") || ""
             : t.value;
         }
-        let q = 1,
-          $ = RegExp("[^a-z0-9-_:]");
+        let $ = 1,
+          q = RegExp("[^a-z0-9-_:]");
         function Z(t) {
           return t ? t.replace(/[\S]/g, "*") : "";
         }
@@ -5795,7 +5795,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                     P = (function (t) {
                       if (t instanceof HTMLFormElement) return "form";
                       let e = t.tagName.toLowerCase().trim();
-                      return $.test(e) ? "div" : e;
+                      return q.test(e) ? "div" : e;
                     })(t),
                     M = {};
                   for (let { name: e, value: r } of Array.from(t.attributes))
@@ -6114,7 +6114,7 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
                     G.type !== A.Text ||
                     G.isStyle ||
                     G.textContent.replace(/^\s+|\s+$/gm, "").length)
-                ? q++
+                ? $++
                 : -2;
           let m = Object.assign(G, { id: r });
           if (((t.__sn = m), -2 === r)) return null;
@@ -7605,12 +7605,12 @@ The transaction will not be sampled. Please use the ${a} instrumentation to star
         for (
           var tz =
               "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
-            tq = "undefined" == typeof Uint8Array ? [] : new Uint8Array(256),
-            t$ = 0;
-          t$ < tz.length;
-          t$++
+            t$ = "undefined" == typeof Uint8Array ? [] : new Uint8Array(256),
+            tq = 0;
+          tq < tz.length;
+          tq++
         )
-          tq[tz.charCodeAt(t$)] = t$;
+          t$[tz.charCodeAt(tq)] = tq;
         var tZ = function (t) {
           var e,
             r = new Uint8Array(t),
@@ -9710,7 +9710,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
           }
         }
         let ez = null,
-          eq = (t) => (e) => {
+          e$ = (t) => (e) => {
             if (!t.isEnabled()) return;
             let r = (function (t) {
               let e = t.getLastBreadcrumb && t.getLastBreadcrumb();
@@ -9761,7 +9761,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
             })(e);
             if (!!r) t7(t, r);
           };
-        function e$(t) {
+        function eq(t) {
           return !!(t && t.on);
         }
         async function eZ(t) {
@@ -10560,7 +10560,7 @@ function t(t){let e=t.length;for(;--e>=0;)t[e]=0}const e=new Uint8Array([0,0,0,0
                     var e;
                     let r = (0, L.Gd)().getScope(),
                       n = (0, L.Gd)().getClient();
-                    r && r.addScopeListener(eq(t)),
+                    r && r.addScopeListener(e$(t)),
                       (0, b.oq)("dom", ei(t)),
                       (0, b.oq)(
                         "history",
@@ -19098,6 +19098,9 @@ Error:`,
           $Ab: function () {
             return O;
           },
+          $Dd: function () {
+            return _k.$D;
+          },
           $R1: function () {
             return _k.$R;
           },
@@ -19438,7 +19441,7 @@ Error:`,
             return _k.S7;
           },
           S9g: function () {
-            return t$;
+            return tq;
           },
           SOq: function () {
             return ei;
@@ -19489,7 +19492,7 @@ Error:`,
             return l;
           },
           Ucd: function () {
-            return e$;
+            return eq;
           },
           Uk1: function () {
             return _k.Uk;
@@ -19600,7 +19603,7 @@ Error:`,
             return tf;
           },
           aIL: function () {
-            return _$;
+            return _q;
           },
           aO5: function () {
             return _k.aO;
@@ -19702,7 +19705,7 @@ Error:`,
             return _k.fr;
           },
           fzT: function () {
-            return a$;
+            return aq;
           },
           gLR: function () {
             return eZ;
@@ -19717,13 +19720,13 @@ Error:`,
             return _m.h;
           },
           hCA: function () {
-            return eq;
+            return e$;
           },
           hUK: function () {
             return tK;
           },
           hVg: function () {
-            return tq;
+            return t$;
           },
           hes: function () {
             return C;
@@ -19777,7 +19780,7 @@ Error:`,
             return E;
           },
           kod: function () {
-            return _q;
+            return _$;
           },
           l$U: function () {
             return ao;
@@ -19804,7 +19807,7 @@ Error:`,
             return aR;
           },
           mFx: function () {
-            return $;
+            return q;
           },
           nkL: function () {
             return i_;
@@ -19942,7 +19945,7 @@ Error:`,
             return a1;
           },
           vbS: function () {
-            return aq;
+            return a$;
           },
           vpv: function () {
             return aV;
@@ -19966,7 +19969,7 @@ Error:`,
             return eB;
           },
           wZ8: function () {
-            return q;
+            return $;
           },
           xAR: function () {
             return iN;
@@ -20071,8 +20074,8 @@ Error:`,
           X,
           j,
           z,
-          q,
           $,
+          q,
           Z,
           J,
           Q,
@@ -20125,8 +20128,8 @@ Error:`,
           tX,
           tj,
           tz,
-          tq,
           t$,
+          tq,
           tZ,
           tJ,
           tQ,
@@ -20189,8 +20192,8 @@ Error:`,
           eX,
           ej,
           ez,
-          eq,
           e$,
+          eq,
           eZ,
           eJ,
           eQ,
@@ -20253,8 +20256,8 @@ Error:`,
           rX,
           rj,
           rz,
-          rq,
           r$,
+          rq,
           rZ,
           rJ,
           rQ,
@@ -20317,8 +20320,8 @@ Error:`,
           nX,
           nj,
           nz,
-          nq,
           n$,
+          nq,
           nZ,
           nJ,
           nQ,
@@ -20903,11 +20906,11 @@ Error:`,
           (ry[(ry.PENDING_OUTGOING = 4)] = "PENDING_OUTGOING"),
           (ry[(ry.IMPLICIT = 5)] = "IMPLICIT"),
           (ry[(ry.SUGGESTION = 6)] = "SUGGESTION"),
-          ((rb = q || (q = {})).CONFIRM = "CONFIRM"),
+          ((rb = $ || ($ = {})).CONFIRM = "CONFIRM"),
           (rb.SUCCESS = "SUCCESS"),
           (rb.ERROR = "ERROR"),
           (rb.OPEN = "OPEN"),
-          ((rB = $ || ($ = {}))[(rB.JOIN = 1)] = "JOIN"),
+          ((rB = q || (q = {}))[(rB.JOIN = 1)] = "JOIN"),
           (rB[(rB.LISTEN = 3)] = "LISTEN"),
           (rB[(rB.WATCH = 4)] = "WATCH"),
           (rB[(rB.JOIN_REQUEST = 5)] = "JOIN_REQUEST"),
@@ -20921,8 +20924,8 @@ Error:`,
         let _X = "@me",
           _j = "@favorites",
           _z = "",
-          _q = "null",
-          _$ = "0",
+          _$ = "null",
+          _q = "0",
           _Z = "null",
           _J = "1096190356233670716",
           _Q = Object.freeze({
@@ -22134,6 +22137,7 @@ Error:`,
             TENURE_REWARD_SYNC: "/users/@me/tenure-reward/sync",
             STORE_LAYOUT: (t) => "/applications/".concat(t, "/store-layout"),
             CHECKOUT_RECOVERY: "/users/@me/billing/checkout-recovery",
+            CAMPAIGN_CONTEXT: "/users/@me/billing/campaign-context",
             SIMILAR_GAMES: (t) =>
               "/content-inventory/users/@me/similar-games/".concat(t),
             VOICE_PUBLIC_KEYS: () => "/voice/public-keys",
@@ -22818,99 +22822,99 @@ Error:`,
             "DSA_RSL_REPORT_INELIGIBLE"),
           (rz[(rz.DSA_APPEAL_REQUEST_DEFLECTION = 522001)] =
             "DSA_APPEAL_REQUEST_DEFLECTION"),
-          ((rq = tc || (tc = {})).GUILD_CREATE_INVITE_SUGGESTION =
+          ((r$ = tc || (tc = {})).GUILD_CREATE_INVITE_SUGGESTION =
             "Guild Create Invite Suggestion"),
-          (rq.ADD_FRIENDS_TO_DM = "Add Friends to DM"),
-          (rq.CAROUSEL_PROMOTION_UNIT = "Carousel Promotion Unit"),
-          (rq.MESSAGE_EMBED = "Message Embed"),
-          (rq.GAME_POPOUT = "Game Popout"),
-          (rq.GAME_MODAL = "Game Modal"),
-          (rq.PROFILE_POPOUT = "Profile Popout"),
-          (rq.BOT_PROFILE_POPOUT = "Bot Profile Popout"),
-          (rq.QUICK_LAUNCHER = "Quick Launcher"),
-          (rq.TRAY_CONTEXT_MENU = "Tray Context Menu"),
-          (rq.QUICK_SWITCHER = "Quick Switcher"),
-          (rq.APPLICATION_LIBRARY = "Application Library"),
-          (rq.APPLICATION_LIBRARY_UPDATES = "Application Library Updates"),
-          (rq.APPLICATION_STORE = "Application Store"),
-          (rq.APPLICATION_STORE_HEADER = "Application Store Header"),
-          (rq.APPLICATION_STORE_TILE = "Application Store Tile"),
-          (rq.APPLICATION_STORE_HERO = "Application Store Hero"),
-          (rq.APPLICATION_STORE_PAYMENT_MODAL =
+          (r$.ADD_FRIENDS_TO_DM = "Add Friends to DM"),
+          (r$.CAROUSEL_PROMOTION_UNIT = "Carousel Promotion Unit"),
+          (r$.MESSAGE_EMBED = "Message Embed"),
+          (r$.GAME_POPOUT = "Game Popout"),
+          (r$.GAME_MODAL = "Game Modal"),
+          (r$.PROFILE_POPOUT = "Profile Popout"),
+          (r$.BOT_PROFILE_POPOUT = "Bot Profile Popout"),
+          (r$.QUICK_LAUNCHER = "Quick Launcher"),
+          (r$.TRAY_CONTEXT_MENU = "Tray Context Menu"),
+          (r$.QUICK_SWITCHER = "Quick Switcher"),
+          (r$.APPLICATION_LIBRARY = "Application Library"),
+          (r$.APPLICATION_LIBRARY_UPDATES = "Application Library Updates"),
+          (r$.APPLICATION_STORE = "Application Store"),
+          (r$.APPLICATION_STORE_HEADER = "Application Store Header"),
+          (r$.APPLICATION_STORE_TILE = "Application Store Tile"),
+          (r$.APPLICATION_STORE_HERO = "Application Store Hero"),
+          (r$.APPLICATION_STORE_PAYMENT_MODAL =
             "Application Store Purchase Modal"),
-          (rq.APPLICATION_STORE_LISTING_BACK_BUTTON =
+          (r$.APPLICATION_STORE_LISTING_BACK_BUTTON =
             "Application Store Listing Back Button"),
-          (rq.APPLICATION_STORE_LISTING_DETAILS =
+          (r$.APPLICATION_STORE_LISTING_DETAILS =
             "Application Store Listing Details"),
-          (rq.APPLICATION_STORE_RELATED_CONTENT =
+          (r$.APPLICATION_STORE_RELATED_CONTENT =
             "Application Store Related Content"),
-          (rq.APPLICATION_STORE_PREMIUM_CAROUSEL =
+          (r$.APPLICATION_STORE_PREMIUM_CAROUSEL =
             "Application Store Premium Carousel"),
-          (rq.APPLICATION_STORE_WARNING = "Application Store Warning"),
-          (rq.APPLICATION_CONTEXT_MENU_TOGGLE_INSTALL =
+          (r$.APPLICATION_STORE_WARNING = "Application Store Warning"),
+          (r$.APPLICATION_CONTEXT_MENU_TOGGLE_INSTALL =
             "Application Context Menu Toggle Install"),
-          (rq.APPLICATION_CONTEXT_MENU_PLAY = "Application Context Menu Play"),
-          (rq.APPLICATION_TEST_MODE_NOTICE = "Application Test Mode Notice"),
-          (rq.HOME_BUTTON = "Home Button"),
-          (rq.HOME_NAVIGATION = "Home Navigation"),
-          (rq.IN_APPLICATION_PURCHASE_OVERLAY =
+          (r$.APPLICATION_CONTEXT_MENU_PLAY = "Application Context Menu Play"),
+          (r$.APPLICATION_TEST_MODE_NOTICE = "Application Test Mode Notice"),
+          (r$.HOME_BUTTON = "Home Button"),
+          (r$.HOME_NAVIGATION = "Home Navigation"),
+          (r$.IN_APPLICATION_PURCHASE_OVERLAY =
             "In-Application Purchase - Overlay"),
-          (rq.IN_APPLICATION_PURCHASE_FALLBACK =
+          (r$.IN_APPLICATION_PURCHASE_FALLBACK =
             "In-Application Purchase - App"),
-          (rq.URI_SCHEME = "URI Scheme"),
-          (rq.CREATE_JOIN_GUILD_MODAL = "Create or Join Guild Modal"),
-          (rq.LOCKED_OVERLAY = "Locked Overlay"),
-          (rq.UNLOCKED_OVERLAY = "Unlocked Overlay"),
-          (rq.OVERLAY_NUDGE = "Overlay Nudge"),
-          (rq.PROMOTION_CARD = "Promotion Card"),
-          (rq.SHARE_NEWS_MODAL = "Share News Modal"),
-          (rq.GO_LIVE_MODAL = "Go Live Modal"),
-          (rq.ACTIVITY_PANEL = "Activity Panel"),
-          (rq.VOICE_PANEL = "Voice Panel"),
-          (rq.STREAM = "Stream"),
-          (rq.INTENT_DISCOVERY = "Intent Discovery"),
-          (rq.REGISTRATION = "Registration"),
-          (rq.LARGE_SERVER_INTENT_DISCOVERY =
+          (r$.URI_SCHEME = "URI Scheme"),
+          (r$.CREATE_JOIN_GUILD_MODAL = "Create or Join Guild Modal"),
+          (r$.LOCKED_OVERLAY = "Locked Overlay"),
+          (r$.UNLOCKED_OVERLAY = "Unlocked Overlay"),
+          (r$.OVERLAY_NUDGE = "Overlay Nudge"),
+          (r$.PROMOTION_CARD = "Promotion Card"),
+          (r$.SHARE_NEWS_MODAL = "Share News Modal"),
+          (r$.GO_LIVE_MODAL = "Go Live Modal"),
+          (r$.ACTIVITY_PANEL = "Activity Panel"),
+          (r$.VOICE_PANEL = "Voice Panel"),
+          (r$.STREAM = "Stream"),
+          (r$.INTENT_DISCOVERY = "Intent Discovery"),
+          (r$.REGISTRATION = "Registration"),
+          (r$.LARGE_SERVER_INTENT_DISCOVERY =
             "Large Game Server Intent Discovery"),
-          (rq.USER_ACTIVITY_ACTIONS = "User Activity Actions"),
-          (rq.ACTIVITY_RPC = "Activity RPC"),
-          (rq.EXTERNAL_INVITE_LINK_MODAL = "External Invite Link Modal"),
-          (rq.STANDALONE_MANAGE_SUBSCRIPTIONS =
+          (r$.USER_ACTIVITY_ACTIONS = "User Activity Actions"),
+          (r$.ACTIVITY_RPC = "Activity RPC"),
+          (r$.EXTERNAL_INVITE_LINK_MODAL = "External Invite Link Modal"),
+          (r$.STANDALONE_MANAGE_SUBSCRIPTIONS =
             "Standalone Manage Subscriptions"),
-          (rq.UNCANCEL_WINBACK_MODAL = "Premium Uncancel Winback Modal"),
-          (rq.HUB_PROGRESS = "Hub Progress"),
-          (rq.CHANNEL_CALL = "Channel Call"),
-          (rq.ROLE_SUBSCRIPTIONS_TAB = "Role Subscriptions Tab"),
-          (rq.ROLE_SUBSCRIPTION_GATED_CHANNEL =
+          (r$.UNCANCEL_WINBACK_MODAL = "Premium Uncancel Winback Modal"),
+          (r$.HUB_PROGRESS = "Hub Progress"),
+          (r$.CHANNEL_CALL = "Channel Call"),
+          (r$.ROLE_SUBSCRIPTIONS_TAB = "Role Subscriptions Tab"),
+          (r$.ROLE_SUBSCRIPTION_GATED_CHANNEL =
             "Role Subscription Gated Channel"),
-          (rq.MANAGE_ACCOUNTS_MODAL = "Manage Accounts Modal"),
-          (rq.CONTEXT_MENU = "Context Menu"),
-          (rq.GUILD_CHANNEL_LIST = "Guild Channel List"),
-          (rq.ACTIVITY_SHELF = "Activity Shelf"),
-          (rq.USER_SETTINGS = "User Settings"),
-          (rq.DEEP_LINK = "Deep Link"),
-          (rq.RELINK_UPSELL = "Relink Upsell"),
-          (rq.INBOUND_PARTNER_PROMOTION_REDEMPTION_MODAL =
+          (r$.MANAGE_ACCOUNTS_MODAL = "Manage Accounts Modal"),
+          (r$.CONTEXT_MENU = "Context Menu"),
+          (r$.GUILD_CHANNEL_LIST = "Guild Channel List"),
+          (r$.ACTIVITY_SHELF = "Activity Shelf"),
+          (r$.USER_SETTINGS = "User Settings"),
+          (r$.DEEP_LINK = "Deep Link"),
+          (r$.RELINK_UPSELL = "Relink Upsell"),
+          (r$.INBOUND_PARTNER_PROMOTION_REDEMPTION_MODAL =
             "Inbound Partner Promotion Redemption Modal"),
-          (rq.NOTIFICATION_CENTER = "Notification Center"),
-          (rq.GUILD_INTEGRATION_SETTINGS = "Guild Integration Settings"),
-          (rq.APP_DIRECTORY_PROFILE = "App Directory Profile"),
-          (rq.INTERACTION_RESPONSE = "Interaction Response"),
-          (rq.CONSOLE_LAN_DETECTION_ACTION_SHEET =
+          (r$.NOTIFICATION_CENTER = "Notification Center"),
+          (r$.GUILD_INTEGRATION_SETTINGS = "Guild Integration Settings"),
+          (r$.APP_DIRECTORY_PROFILE = "App Directory Profile"),
+          (r$.INTERACTION_RESPONSE = "Interaction Response"),
+          (r$.CONSOLE_LAN_DETECTION_ACTION_SHEET =
             "Console LAN Detection Action Sheet"),
-          (rq.PARTNER_PROMOTIONS_CLAIM_MODAL =
+          (r$.PARTNER_PROMOTIONS_CLAIM_MODAL =
             "Partner Promotions Claim Modal"),
-          (rq.APP_STOREFRONT = "app storefront"),
-          (rq.CLAN_DISCOVERY_CARD = "clan discovery card"),
-          (rq.CLAN_ADOPT_IDENTITY_MODAL = "clan adopt identity modal"),
-          (rq.CLAN_SETUP_MODAL = "clan setup modal"),
-          (rq.CHECKOUT_RECOVERY_NAGBAR = "Checkout Recovery Nagbar"),
-          (rq.E2EE_USER_VERIFY_MODAL = "E2EE User Verify Modal"),
-          (rq.REPEAT_GIFT_PURCHASE_BUTTON = "Repeat Gift Purchase Button"),
-          ((r$ = tI || (tI = {})).JOIN = "join"),
-          (r$.ASK_TO_JOIN = "ask to join"),
-          (r$.LAUNCH = "launch"),
-          (r$.SPECTATE = "spectate"),
+          (r$.APP_STOREFRONT = "app storefront"),
+          (r$.CLAN_DISCOVERY_CARD = "clan discovery card"),
+          (r$.CLAN_ADOPT_IDENTITY_MODAL = "clan adopt identity modal"),
+          (r$.CLAN_SETUP_MODAL = "clan setup modal"),
+          (r$.CHECKOUT_RECOVERY_NAGBAR = "Checkout Recovery Nagbar"),
+          (r$.E2EE_USER_VERIFY_MODAL = "E2EE User Verify Modal"),
+          (r$.REPEAT_GIFT_PURCHASE_BUTTON = "Repeat Gift Purchase Button"),
+          ((rq = tI || (tI = {})).JOIN = "join"),
+          (rq.ASK_TO_JOIN = "ask to join"),
+          (rq.LAUNCH = "launch"),
+          (rq.SPECTATE = "spectate"),
           ((rZ = tR || (tR = {})).ONLINE_DESKTOP = "online-desktop"),
           (rZ.ONLINE_MOBILE = "online-mobile-only"),
           ((rJ = tT || (tT = {})).AUTH = "Auth"),
@@ -23849,14 +23853,14 @@ Error:`,
             AUTHORIZATION_CANCEL_FRAGMENT: "/_discord/auth?cancel=true",
           });
         let az = new Set(["facebook", "contacts"]),
-          aq = new Set([
+          a$ = new Set([
             "spotify",
             "xbox",
             "playstation",
             "playstation-stg",
             "crunchyroll",
           ]),
-          a$ = Object.freeze({
+          aq = Object.freeze({
             DESKTOP: ""
               .concat(location.protocol)
               .concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
@@ -24416,6 +24420,7 @@ Error:`,
           (nd.GIF_FAVORITED = "gif_favorited"),
           (nd.GIF_UNFAVORITED = "gif_unfavorited"),
           (nd.GUILD_DISCOVERY_VIEWED = "guild_discovery_viewed"),
+          (nd.GUILD_DISCOVERY_SEARCH_FAILED = "guild_discovery_search_failed"),
           (nd.GUILD_DISCOVERY_GUILD_SELECTED =
             "guild_discovery_guild_selected"),
           (nd.GUILD_DISCOVERY_GUILD_JOIN_CLICKED =
@@ -25396,14 +25401,14 @@ Error:`,
           (nf.MINIMUM = "minimum"),
           (nf.NO_CHAT = "no-chat"),
           (nf.FULL_SCREEN = "full-screen"),
-          ((nL = tq || (tq = {})).THEATRE = "theatre"),
+          ((nL = t$ || (t$ = {})).THEATRE = "theatre"),
           (nL.FULL_SCREEN = "full-screen"),
           (nL.PIP = "pip"),
           (nL.POPOUT = "popout"),
           (nL.PORTRAIT = "portrait"),
           (nL.LANDSCAPE = "landscape"),
           (nL.MINIMIZED = "minimized"),
-          ((nh = t$ || (t$ = {})).USER_SETTINGS = "USER_SETTINGS"),
+          ((nh = tq || (tq = {})).USER_SETTINGS = "USER_SETTINGS"),
           (nh.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
           (nh.GUILD_SETTINGS = "GUILD_SETTINGS"),
           (nh.RTC_DEBUG = "RTC_DEBUG"),
@@ -25961,19 +25966,19 @@ Error:`,
           (nz.REPAIRING = "repairing"),
           (nz.POST_INSTALL_SCRIPTS = "running_install_scripts"),
           (nz.UNINSTALLING = "uninstalling"),
-          ((nq = eI || (eI = {})).INSTALL_REQUIRED = "install_required"),
-          (nq.INSTALLING = "installing"),
-          (nq.UP_TO_DATE = "up_to_date"),
-          (nq.UPDATE_REQUIRED = "update_required"),
-          (nq.UPDATING = "updating"),
-          (nq.REPAIRING = "repairing"),
-          (nq.UNINSTALLING = "uninstalling"),
-          ((n$ = eR || (eR = {})).PLAY = "play"),
-          (n$.INSTALL = "install"),
-          (n$.UPDATE = "update"),
-          (n$.PAUSE = "pause"),
-          (n$.MOVE_UP = "move_up"),
-          (n$.RESUME = "resume"),
+          ((n$ = eI || (eI = {})).INSTALL_REQUIRED = "install_required"),
+          (n$.INSTALLING = "installing"),
+          (n$.UP_TO_DATE = "up_to_date"),
+          (n$.UPDATE_REQUIRED = "update_required"),
+          (n$.UPDATING = "updating"),
+          (n$.REPAIRING = "repairing"),
+          (n$.UNINSTALLING = "uninstalling"),
+          ((nq = eR || (eR = {})).PLAY = "play"),
+          (nq.INSTALL = "install"),
+          (nq.UPDATE = "update"),
+          (nq.PAUSE = "pause"),
+          (nq.MOVE_UP = "move_up"),
+          (nq.RESUME = "resume"),
           ((nZ = eT || (eT = {})).NAME = "name"),
           (nZ.PLATFORM = "platform"),
           (nZ.ACTIONS = "actions"),
@@ -26498,10 +26503,10 @@ Error:`,
         let iA = 2500,
           iN = 0,
           id = 2592e6;
-        ((_f = eq || (eq = {})).USERS = "users"),
+        ((_f = e$ || (e$ = {})).USERS = "users"),
           (_f.ROLES = "roles"),
           (_f.EVERYONE = "everyone"),
-          ((_L = e$ || (e$ = {}))[(_L.AUTO = 1)] = "AUTO"),
+          ((_L = eq || (eq = {}))[(_L.AUTO = 1)] = "AUTO"),
           (_L[(_L.FULL = 2)] = "FULL");
         let iO = 100,
           iS =
@@ -26590,8 +26595,8 @@ Error:`,
           X,
           j,
           z,
-          q,
           $,
+          q,
           Z,
           J,
           Q,
@@ -26684,45 +26689,45 @@ Error:`,
           ((S || (S = {})).ADVANCED = "ADVANCED"),
           ((z = p || (p = {})).USER = "USER"),
           (z.ACTION = "ACTION"),
-          ((q = D || (D = {})).OVERVIEW = "OVERVIEW"),
-          (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
-          (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          (($ = f || (f = {})).INVITE = "invite"),
-          ($.GUILD_TEMPLATE = "guild-template"),
-          ($.CHANNEL = "channel"),
-          ($.GIFT_CODE = "gift-code"),
-          ($.MESSAGE = "message"),
-          ($.OAUTH2_AUTHORIZE = "oauth2-authorize"),
-          ($.APP_DIRECTORY_PROFILE = "app-directory-profile"),
-          ($.PROMOTIONS = "promotions"),
-          ($.NONE = "none"),
-          ($.REMOTE_AUTH = "remote-auth"),
-          ($.USER_PROFILE = "user-profile"),
-          ($.BUILD_OVERRIDE = "build-override"),
-          ($.CONTACT_SYNC = "contact-sync"),
-          ($.ADD_FRIENDS = "add-friends"),
-          ($.COMPOSE_MESSAGE = "compose-message"),
-          ($.GUILD_EVENT_DETAILS = "guild-event-details"),
-          ($.FRIENDS = "friends"),
-          ($.EDIT_PROFILE = "edit-profile"),
-          ($.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
-          ($.VOICE_CHANNEL = "voice-channel"),
-          ($.GUILD_HOME = "guild-home"),
-          ($.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
-          ($.SESSION_MANAGEMENT = "session-management"),
-          ($.CONNECTIONS = "connections"),
-          ($.GUILD_SETTINGS = "guild-settings"),
-          ($.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
-          ($.ACTIVATE_DEVICE = "activate-device"),
-          ($.FAMILY_CENTER = "family-center"),
-          ($.SHARE = "share"),
-          ($.CREATE_VOICE_INVITE = "create_voice_invite"),
-          ($.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
-          ($.ACCOUNT_STANDING = "account-standing"),
-          ($.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
-          ($.SHOP = "shop"),
-          ($.AUTHORIZED_APPS = "authorized-apps"),
-          ($.SECURE_FRAMES_VERIFICATION = "secure-frames-verification");
+          (($ = D || (D = {})).OVERVIEW = "OVERVIEW"),
+          ($.ADD_OVERRIDE = "ADD_OVERRIDE"),
+          ($.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
+          ((q = f || (f = {})).INVITE = "invite"),
+          (q.GUILD_TEMPLATE = "guild-template"),
+          (q.CHANNEL = "channel"),
+          (q.GIFT_CODE = "gift-code"),
+          (q.MESSAGE = "message"),
+          (q.OAUTH2_AUTHORIZE = "oauth2-authorize"),
+          (q.APP_DIRECTORY_PROFILE = "app-directory-profile"),
+          (q.PROMOTIONS = "promotions"),
+          (q.NONE = "none"),
+          (q.REMOTE_AUTH = "remote-auth"),
+          (q.USER_PROFILE = "user-profile"),
+          (q.BUILD_OVERRIDE = "build-override"),
+          (q.CONTACT_SYNC = "contact-sync"),
+          (q.ADD_FRIENDS = "add-friends"),
+          (q.COMPOSE_MESSAGE = "compose-message"),
+          (q.GUILD_EVENT_DETAILS = "guild-event-details"),
+          (q.FRIENDS = "friends"),
+          (q.EDIT_PROFILE = "edit-profile"),
+          (q.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
+          (q.VOICE_CHANNEL = "voice-channel"),
+          (q.GUILD_HOME = "guild-home"),
+          (q.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
+          (q.SESSION_MANAGEMENT = "session-management"),
+          (q.CONNECTIONS = "connections"),
+          (q.GUILD_SETTINGS = "guild-settings"),
+          (q.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
+          (q.ACTIVATE_DEVICE = "activate-device"),
+          (q.FAMILY_CENTER = "family-center"),
+          (q.SHARE = "share"),
+          (q.CREATE_VOICE_INVITE = "create_voice_invite"),
+          (q.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
+          (q.ACCOUNT_STANDING = "account-standing"),
+          (q.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
+          (q.SHOP = "shop"),
+          (q.AUTHORIZED_APPS = "authorized-apps"),
+          (q.SECURE_FRAMES_VERIFICATION = "secure-frames-verification");
         let to = "CacheStoreLazy",
           tE = "CacheStoreChannelsLazy",
           ts = "CacheStore";
@@ -26922,7 +26927,7 @@ Error:`,
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-efcbc69b02e8f610a12a1fa3b258367631808d54",
+            release: "discord_web-05f5cbac62a7780fe9c6212c4eb49d5ada8f349b",
             beforeSend: (t) => {
               var e, r;
               return !(
@@ -26994,8 +26999,8 @@ Error:`,
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            a.YA("buildNumber", ((t = "317454"), "317454"));
-          a.YA("builtAt", String("1723466805132"));
+            a.YA("buildNumber", ((t = "317468"), "317468"));
+          a.YA("builtAt", String("1723472727606"));
           let e = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != e && "object" == typeof e) for (let t in e) a.YA(t, e[t]);
           return _;
@@ -30988,182 +30993,185 @@ Error:`,
       231338: function (t, e, r) {
         "use strict";
         r.d(e, {
+          $D: function () {
+            return o;
+          },
           $R: function () {
-            return tI;
+            return tT;
           },
           $V: function () {
-            return O;
+            return S;
           },
           Ai: function () {
-            return tN;
+            return tO;
           },
           Al: function () {
-            return t_.A;
+            return ti.A;
           },
           B1: function () {
-            return tv;
+            return tH;
           },
           BR: function () {
-            return t_.Z;
+            return ti.Z;
           },
           BZ: function () {
-            return tB;
+            return tw;
           },
           Cw: function () {
-            return s;
-          },
-          Cy: function () {
-            return tM;
-          },
-          EK: function () {
-            return C;
-          },
-          ET: function () {
-            return P;
-          },
-          Et: function () {
-            return A;
-          },
-          GZ: function () {
-            return u;
-          },
-          H0: function () {
-            return tS;
-          },
-          He: function () {
-            return E;
-          },
-          Il: function () {
-            return to.I;
-          },
-          Jj: function () {
-            return T;
-          },
-          MA: function () {
-            return M;
-          },
-          NY: function () {
-            return I;
-          },
-          OL: function () {
-            return tl;
-          },
-          OM: function () {
-            return tx;
-          },
-          Pl: function () {
-            return tC;
-          },
-          Py: function () {
             return c;
           },
-          Q: function () {
-            return h;
+          Cy: function () {
+            return tG;
           },
-          QL: function () {
-            return td;
-          },
-          RG: function () {
+          EK: function () {
             return g;
           },
+          ET: function () {
+            return M;
+          },
+          Et: function () {
+            return N;
+          },
+          GZ: function () {
+            return l;
+          },
+          H0: function () {
+            return tD;
+          },
+          He: function () {
+            return s;
+          },
+          Il: function () {
+            return ts.I;
+          },
+          Jj: function () {
+            return u;
+          },
+          MA: function () {
+            return U;
+          },
+          NY: function () {
+            return R;
+          },
+          OL: function () {
+            return tN;
+          },
+          OM: function () {
+            return tW;
+          },
+          Pl: function () {
+            return tP;
+          },
+          Py: function () {
+            return I;
+          },
+          Q: function () {
+            return C;
+          },
+          QL: function () {
+            return tS;
+          },
+          RG: function () {
+            return P;
+          },
           RK: function () {
-            return tK;
+            return tV;
           },
           S7: function () {
-            return l;
+            return A;
           },
           Sk: function () {
             return _;
           },
           TC: function () {
-            return tG;
-          },
-          U6: function () {
-            return R;
-          },
-          U9: function () {
-            return tu;
-          },
-          Uk: function () {
-            return tp;
-          },
-          V6: function () {
             return ty;
           },
+          U6: function () {
+            return T;
+          },
+          U9: function () {
+            return tA;
+          },
+          Uk: function () {
+            return tf;
+          },
+          V6: function () {
+            return tB;
+          },
           Vq: function () {
-            return tP;
+            return tU;
           },
           Vz: function () {
-            return tA;
+            return td;
           },
           X5: function () {
             return i;
           },
           X6: function () {
-            return tm;
-          },
-          X7: function () {
-            return tL;
-          },
-          XM: function () {
-            return tw;
-          },
-          Zu: function () {
-            return th;
-          },
-          aO: function () {
-            return U;
-          },
-          dG: function () {
-            return tg;
-          },
-          fK: function () {
-            return tV;
-          },
-          fr: function () {
             return tb;
           },
+          X7: function () {
+            return tC;
+          },
+          XM: function () {
+            return tY;
+          },
+          Zu: function () {
+            return tg;
+          },
+          aO: function () {
+            return G;
+          },
+          dG: function () {
+            return tM;
+          },
+          fK: function () {
+            return tF;
+          },
+          fr: function () {
+            return tv;
+          },
           gg: function () {
-            return o;
+            return E;
           },
           i$: function () {
-            return tO;
+            return tp;
           },
           j8: function () {
-            return tf;
+            return th;
           },
           lT: function () {
-            return d;
+            return O;
           },
           ld: function () {
-            return tD;
+            return tL;
           },
           pK: function () {
-            return f;
+            return L;
           },
           rx: function () {
-            return tT;
+            return tl;
           },
           tN: function () {
             return a;
           },
           tP: function () {
-            return tE.t;
+            return tc.t;
           },
           xr: function () {
-            return tR;
+            return tu;
           },
           yA: function () {
-            return tH;
+            return tK;
           },
           yX: function () {
-            return tY;
+            return tk;
           },
           yY: function () {
-            return tU;
+            return tm;
           },
           zM: function () {
-            return N;
+            return d;
           },
         }),
           r(47120);
@@ -31213,8 +31221,8 @@ Error:`,
           X,
           j,
           z,
-          q,
           $,
+          q,
           Z,
           J,
           Q,
@@ -31222,19 +31230,21 @@ Error:`,
           te,
           tr,
           tn,
-          t_ = r(290926),
-          ta = r(149765),
-          ti = r(860911);
+          t_,
+          ta,
+          ti = r(290926),
+          to = r(149765),
+          tE = r(860911);
         r(674746);
-        var to = r(691324),
-          tE = r(481677);
+        var ts = r(691324),
+          tc = r(481677);
         r(722770);
-        let ts = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
-          tc = location.protocol + "//discord.gg",
-          tI = "discord.com",
-          tR = "support.discord.com",
-          tT = "support-dev.discord.com",
-          tu = "discord.com";
+        let tI = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
+          tR = location.protocol + "//discord.gg",
+          tT = "discord.com",
+          tu = "support.discord.com",
+          tl = "support-dev.discord.com",
+          tA = "discord.com";
         Object.freeze({
           HINT_PURPLE: "#c9d2f0",
           DARK_PURPLE: "#697ec4",
@@ -31259,45 +31269,47 @@ Error:`,
           GREY7: "#1c242b",
           GREY9: "#202226",
         }),
-          ((G = n || (n = {})).PRIMARY_NORMAL =
+          ((m = n || (n = {})).PRIMARY_NORMAL =
             "ggsans-Normal, NotoSans-Normal"),
-          (G.PRIMARY_MEDIUM = "ggsans-Medium, NotoSans-Medium"),
-          (G.PRIMARY_SEMIBOLD = "ggsans-Semibold, NotoSans-Semibold"),
-          (G.PRIMARY_BOLD = "ggsans-Bold, NotoSans-Bold"),
-          (G.DISPLAY_NORMAL = "ggsans-Normal, NotoSans-Normal"),
-          (G.DISPLAY_MEDIUM = "ggsans-Medium, NotoSans-Medium"),
-          (G.DISPLAY_SEMIBOLD = "ggsans-Semibold, NotoSans-Semibold"),
-          (G.DISPLAY_BOLD = "ggsans-Bold, NotoSans-Bold"),
-          (G.DISPLAY_EXTRABOLD = "ggsans-ExtraBold, NotoSans-ExtraBold"),
-          (G.CODE_NORMAL = "ggmono-Normal, SourceCodePro-Normal"),
-          (G.CODE_BOLD = "ggmono-Bold, SourceCodePro-Bold"),
-          ((m = _ || (_ = {})).ONLINE = "online"),
-          (m.OFFLINE = "offline"),
-          (m.IDLE = "idle"),
-          (m.DND = "dnd"),
-          (m.INVISIBLE = "invisible"),
-          (m.STREAMING = "streaming"),
-          (m.UNKNOWN = "unknown"),
-          ((y = a || (a = {})).CHILLING = "chilling"),
-          (y.GAMING = "gaming"),
-          (y.FOCUSING = "focusing"),
-          (y.BRB = "brb"),
-          (y.EATING = "eating"),
-          (y.IN_TRANSIT = "in-transit"),
-          (y.WATCHING = "watching"),
-          (y.CUSTOM = "custom"),
-          ((b = i || (i = {})).DESKTOP = "desktop"),
-          (b.WEB = "web"),
-          (b.MOBILE = "mobile"),
-          (b.UNKNOWN = "unknown");
-        let tl = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";
-        ((B = o || (o = {}))[(B.STRIPE = 1)] = "STRIPE"),
-          (B[(B.BRAINTREE = 2)] = "BRAINTREE"),
-          (B[(B.APPLE = 3)] = "APPLE"),
-          (B[(B.GOOGLE = 4)] = "GOOGLE"),
-          (B[(B.ADYEN = 5)] = "ADYEN"),
-          (B[(B.APPLE_PARTNER = 6)] = "APPLE_PARTNER");
-        let tA = Object.freeze({
+          (m.PRIMARY_MEDIUM = "ggsans-Medium, NotoSans-Medium"),
+          (m.PRIMARY_SEMIBOLD = "ggsans-Semibold, NotoSans-Semibold"),
+          (m.PRIMARY_BOLD = "ggsans-Bold, NotoSans-Bold"),
+          (m.DISPLAY_NORMAL = "ggsans-Normal, NotoSans-Normal"),
+          (m.DISPLAY_MEDIUM = "ggsans-Medium, NotoSans-Medium"),
+          (m.DISPLAY_SEMIBOLD = "ggsans-Semibold, NotoSans-Semibold"),
+          (m.DISPLAY_BOLD = "ggsans-Bold, NotoSans-Bold"),
+          (m.DISPLAY_EXTRABOLD = "ggsans-ExtraBold, NotoSans-ExtraBold"),
+          (m.CODE_NORMAL = "ggmono-Normal, SourceCodePro-Normal"),
+          (m.CODE_BOLD = "ggmono-Bold, SourceCodePro-Bold"),
+          ((y = _ || (_ = {})).ONLINE = "online"),
+          (y.OFFLINE = "offline"),
+          (y.IDLE = "idle"),
+          (y.DND = "dnd"),
+          (y.INVISIBLE = "invisible"),
+          (y.STREAMING = "streaming"),
+          (y.UNKNOWN = "unknown"),
+          ((b = a || (a = {})).CHILLING = "chilling"),
+          (b.GAMING = "gaming"),
+          (b.FOCUSING = "focusing"),
+          (b.BRB = "brb"),
+          (b.EATING = "eating"),
+          (b.IN_TRANSIT = "in-transit"),
+          (b.WATCHING = "watching"),
+          (b.CUSTOM = "custom"),
+          ((B = i || (i = {})).DESKTOP = "desktop"),
+          (B.WEB = "web"),
+          (B.MOBILE = "mobile"),
+          (B.UNKNOWN = "unknown");
+        let tN = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";
+        ((v = o || (o = {}))[(v.CHECKOUT_RECOVERY = 1)] = "CHECKOUT_RECOVERY"),
+          (v[(v.CASH_APP_PAY_AWARENESS = 2)] = "CASH_APP_PAY_AWARENESS"),
+          ((w = E || (E = {}))[(w.STRIPE = 1)] = "STRIPE"),
+          (w[(w.BRAINTREE = 2)] = "BRAINTREE"),
+          (w[(w.APPLE = 3)] = "APPLE"),
+          (w[(w.GOOGLE = 4)] = "GOOGLE"),
+          (w[(w.ADYEN = 5)] = "ADYEN"),
+          (w[(w.APPLE_PARTNER = 6)] = "APPLE_PARTNER");
+        let td = Object.freeze({
             1: "Stripe",
             2: "Braintree",
             3: "Apple",
@@ -31305,7 +31317,7 @@ Error:`,
             5: "Adyen",
             6: "Apple Partner",
           }),
-          tN = Object.freeze({
+          tO = Object.freeze({
             BRAINTREE: {
               KEY: window.GLOBAL_ENV.BRAINTREE_KEY,
               PAYMENT_GATEWAY: "braintree",
@@ -31319,27 +31331,27 @@ Error:`,
               PAYMENT_GATEWAY: "adyen",
             },
           });
-        ((v = E || (E = {}))[(v.UNKNOWN = 0)] = "UNKNOWN"),
-          (v[(v.CARD = 1)] = "CARD"),
-          (v[(v.PAYPAL = 2)] = "PAYPAL"),
-          (v[(v.GIROPAY = 3)] = "GIROPAY"),
-          (v[(v.SOFORT = 4)] = "SOFORT"),
-          (v[(v.PRZELEWY24 = 5)] = "PRZELEWY24"),
-          (v[(v.SEPA_DEBIT = 6)] = "SEPA_DEBIT"),
-          (v[(v.PAYSAFE_CARD = 7)] = "PAYSAFE_CARD"),
-          (v[(v.GCASH = 8)] = "GCASH"),
-          (v[(v.GRABPAY_MY = 9)] = "GRABPAY_MY"),
-          (v[(v.MOMO_WALLET = 10)] = "MOMO_WALLET"),
-          (v[(v.VENMO = 11)] = "VENMO"),
-          (v[(v.GOPAY_WALLET = 12)] = "GOPAY_WALLET"),
-          (v[(v.KAKAOPAY = 13)] = "KAKAOPAY"),
-          (v[(v.BANCONTACT = 14)] = "BANCONTACT"),
-          (v[(v.EPS = 15)] = "EPS"),
-          (v[(v.IDEAL = 16)] = "IDEAL"),
-          (v[(v.CASH_APP = 17)] = "CASH_APP"),
-          (v[(v.APPLE = 18)] = "APPLE"),
-          (v[(v.PAYMENT_REQUEST = 99)] = "PAYMENT_REQUEST");
-        let td = new Map([
+        ((H = s || (s = {}))[(H.UNKNOWN = 0)] = "UNKNOWN"),
+          (H[(H.CARD = 1)] = "CARD"),
+          (H[(H.PAYPAL = 2)] = "PAYPAL"),
+          (H[(H.GIROPAY = 3)] = "GIROPAY"),
+          (H[(H.SOFORT = 4)] = "SOFORT"),
+          (H[(H.PRZELEWY24 = 5)] = "PRZELEWY24"),
+          (H[(H.SEPA_DEBIT = 6)] = "SEPA_DEBIT"),
+          (H[(H.PAYSAFE_CARD = 7)] = "PAYSAFE_CARD"),
+          (H[(H.GCASH = 8)] = "GCASH"),
+          (H[(H.GRABPAY_MY = 9)] = "GRABPAY_MY"),
+          (H[(H.MOMO_WALLET = 10)] = "MOMO_WALLET"),
+          (H[(H.VENMO = 11)] = "VENMO"),
+          (H[(H.GOPAY_WALLET = 12)] = "GOPAY_WALLET"),
+          (H[(H.KAKAOPAY = 13)] = "KAKAOPAY"),
+          (H[(H.BANCONTACT = 14)] = "BANCONTACT"),
+          (H[(H.EPS = 15)] = "EPS"),
+          (H[(H.IDEAL = 16)] = "IDEAL"),
+          (H[(H.CASH_APP = 17)] = "CASH_APP"),
+          (H[(H.APPLE = 18)] = "APPLE"),
+          (H[(H.PAYMENT_REQUEST = 99)] = "PAYMENT_REQUEST");
+        let tS = new Map([
             [7, "paysafecard"],
             [8, "gcash"],
             [9, "grabpay_MY"],
@@ -31348,301 +31360,301 @@ Error:`,
             [12, "gopay_wallet"],
             [17, "cashapp"],
           ]),
-          tO = new Map([
+          tp = new Map([
             [14, "bancontact"],
             [3, "giropay"],
             [16, "ideal"],
           ]),
-          tS = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
-          tp = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
-          tD = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
-          tf = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
-          tL = new Set([6]);
-        ((w = s || (s = {}))[(w.NEW = 1)] = "NEW"),
-          ((H = c || (c = {}))[(H.PENDING = 0)] = "PENDING"),
-          (H[(H.COMPLETED = 1)] = "COMPLETED"),
-          (H[(H.FAILED = 2)] = "FAILED"),
-          (H[(H.REVERSED = 3)] = "REVERSED"),
-          (H[(H.REFUNDED = 4)] = "REFUNDED"),
-          (H[(H.CANCELED = 5)] = "CANCELED"),
-          ((Y = I || (I = {}))[(Y.PREMIUM = 1)] = "PREMIUM"),
-          (Y[(Y.GUILD = 2)] = "GUILD"),
-          (Y[(Y.APPLICATION = 3)] = "APPLICATION"),
-          ((K = R || (R = {})).PAYPAL_POPUP_CLOSED = "PAYPAL_POPUP_CLOSED"),
-          (K.VENMO_APP_CANCELED = "VENMO_APP_CANCELED"),
-          (K.VENMO_CANCELED = "VENMO_CANCELED"),
+          tD = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
+          tf = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
+          tL = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
+          th = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
+          tC = new Set([6]);
+        ((Y = c || (c = {}))[(Y.NEW = 1)] = "NEW"),
+          ((K = I || (I = {}))[(K.PENDING = 0)] = "PENDING"),
+          (K[(K.COMPLETED = 1)] = "COMPLETED"),
+          (K[(K.FAILED = 2)] = "FAILED"),
+          (K[(K.REVERSED = 3)] = "REVERSED"),
+          (K[(K.REFUNDED = 4)] = "REFUNDED"),
+          (K[(K.CANCELED = 5)] = "CANCELED"),
+          ((k = R || (R = {}))[(k.PREMIUM = 1)] = "PREMIUM"),
+          (k[(k.GUILD = 2)] = "GUILD"),
+          (k[(k.APPLICATION = 3)] = "APPLICATION"),
+          ((V = T || (T = {})).PAYPAL_POPUP_CLOSED = "PAYPAL_POPUP_CLOSED"),
+          (V.VENMO_APP_CANCELED = "VENMO_APP_CANCELED"),
+          (V.VENMO_CANCELED = "VENMO_CANCELED"),
           Object.freeze({ CONSTANT: 1, APPLE_STICKER: 2 }),
-          ((k = T || (T = {}))[(k.DISCOVERY = 0)] = "DISCOVERY"),
-          (k[(k.CHECKOUT = 1)] = "CHECKOUT"),
-          ((V = u || (u = {}))[(V.SUBSCRIPTION = 0)] = "SUBSCRIPTION"),
-          (V[(V.ONE_TIME = 1)] = "ONE_TIME");
-        let th = Object.freeze({ 0: "subscription", 1: "sku" });
-        ((x = l || (l = {}))[(x.VIEW_CHANNEL = 1024)] = "VIEW_CHANNEL"),
-          (x[(x.READ_MESSAGE_HISTORY = 65536)] = "READ_MESSAGE_HISTORY"),
-          (x[(x.CONNECT = 1048576)] = "CONNECT");
-        let tC = Object.freeze({
-            CREATE_INSTANT_INVITE: ta.r0(0),
-            KICK_MEMBERS: ta.r0(1),
-            BAN_MEMBERS: ta.r0(2),
-            ADMINISTRATOR: ta.r0(3),
-            MANAGE_CHANNELS: ta.r0(4),
-            MANAGE_GUILD: ta.r0(5),
-            CHANGE_NICKNAME: ta.r0(26),
-            MANAGE_NICKNAMES: ta.r0(27),
-            MANAGE_ROLES: ta.r0(28),
-            MANAGE_WEBHOOKS: ta.r0(29),
-            MANAGE_GUILD_EXPRESSIONS: ta.r0(30),
-            CREATE_GUILD_EXPRESSIONS: ta.r0(43),
-            VIEW_AUDIT_LOG: ta.r0(7),
-            VIEW_CHANNEL: ta.r0(10),
-            VIEW_GUILD_ANALYTICS: ta.r0(19),
-            VIEW_CREATOR_MONETIZATION_ANALYTICS: ta.r0(41),
-            MODERATE_MEMBERS: ta.r0(40),
-            USE_EMBEDDED_ACTIVITIES: ta.r0(39),
-            USE_EXTERNAL_APPS: ta.r0(50),
-            SEND_MESSAGES: ta.r0(11),
-            SEND_TTS_MESSAGES: ta.r0(12),
-            MANAGE_MESSAGES: ta.r0(13),
-            EMBED_LINKS: ta.r0(14),
-            ATTACH_FILES: ta.r0(15),
-            READ_MESSAGE_HISTORY: ta.r0(16),
-            MENTION_EVERYONE: ta.r0(17),
-            USE_EXTERNAL_EMOJIS: ta.r0(18),
-            ADD_REACTIONS: ta.r0(6),
-            USE_APPLICATION_COMMANDS: ta.r0(31),
-            MANAGE_THREADS: ta.r0(34),
-            CREATE_PUBLIC_THREADS: ta.r0(35),
-            CREATE_PRIVATE_THREADS: ta.r0(36),
-            USE_EXTERNAL_STICKERS: ta.r0(37),
-            SEND_MESSAGES_IN_THREADS: ta.r0(38),
-            SEND_VOICE_MESSAGES: ta.r0(46),
-            USE_CLYDE_AI: ta.r0(47),
-            SEND_POLLS: ta.r0(49),
-            CONNECT: ta.r0(20),
-            SPEAK: ta.r0(21),
-            MUTE_MEMBERS: ta.r0(22),
-            DEAFEN_MEMBERS: ta.r0(23),
-            MOVE_MEMBERS: ta.r0(24),
-            USE_VAD: ta.r0(25),
-            PRIORITY_SPEAKER: ta.r0(8),
-            STREAM: ta.r0(9),
-            USE_SOUNDBOARD: ta.r0(42),
-            USE_EXTERNAL_SOUNDS: ta.r0(45),
-            SET_VOICE_CHANNEL_STATUS: ta.r0(48),
-            REQUEST_TO_SPEAK: ta.r0(32),
-            MANAGE_EVENTS: ta.r0(33),
-            CREATE_EVENTS: ta.r0(44),
+          ((x = u || (u = {}))[(x.DISCOVERY = 0)] = "DISCOVERY"),
+          (x[(x.CHECKOUT = 1)] = "CHECKOUT"),
+          ((F = l || (l = {}))[(F.SUBSCRIPTION = 0)] = "SUBSCRIPTION"),
+          (F[(F.ONE_TIME = 1)] = "ONE_TIME");
+        let tg = Object.freeze({ 0: "subscription", 1: "sku" });
+        ((W = A || (A = {}))[(W.VIEW_CHANNEL = 1024)] = "VIEW_CHANNEL"),
+          (W[(W.READ_MESSAGE_HISTORY = 65536)] = "READ_MESSAGE_HISTORY"),
+          (W[(W.CONNECT = 1048576)] = "CONNECT");
+        let tP = Object.freeze({
+            CREATE_INSTANT_INVITE: to.r0(0),
+            KICK_MEMBERS: to.r0(1),
+            BAN_MEMBERS: to.r0(2),
+            ADMINISTRATOR: to.r0(3),
+            MANAGE_CHANNELS: to.r0(4),
+            MANAGE_GUILD: to.r0(5),
+            CHANGE_NICKNAME: to.r0(26),
+            MANAGE_NICKNAMES: to.r0(27),
+            MANAGE_ROLES: to.r0(28),
+            MANAGE_WEBHOOKS: to.r0(29),
+            MANAGE_GUILD_EXPRESSIONS: to.r0(30),
+            CREATE_GUILD_EXPRESSIONS: to.r0(43),
+            VIEW_AUDIT_LOG: to.r0(7),
+            VIEW_CHANNEL: to.r0(10),
+            VIEW_GUILD_ANALYTICS: to.r0(19),
+            VIEW_CREATOR_MONETIZATION_ANALYTICS: to.r0(41),
+            MODERATE_MEMBERS: to.r0(40),
+            USE_EMBEDDED_ACTIVITIES: to.r0(39),
+            USE_EXTERNAL_APPS: to.r0(50),
+            SEND_MESSAGES: to.r0(11),
+            SEND_TTS_MESSAGES: to.r0(12),
+            MANAGE_MESSAGES: to.r0(13),
+            EMBED_LINKS: to.r0(14),
+            ATTACH_FILES: to.r0(15),
+            READ_MESSAGE_HISTORY: to.r0(16),
+            MENTION_EVERYONE: to.r0(17),
+            USE_EXTERNAL_EMOJIS: to.r0(18),
+            ADD_REACTIONS: to.r0(6),
+            USE_APPLICATION_COMMANDS: to.r0(31),
+            MANAGE_THREADS: to.r0(34),
+            CREATE_PUBLIC_THREADS: to.r0(35),
+            CREATE_PRIVATE_THREADS: to.r0(36),
+            USE_EXTERNAL_STICKERS: to.r0(37),
+            SEND_MESSAGES_IN_THREADS: to.r0(38),
+            SEND_VOICE_MESSAGES: to.r0(46),
+            USE_CLYDE_AI: to.r0(47),
+            SEND_POLLS: to.r0(49),
+            CONNECT: to.r0(20),
+            SPEAK: to.r0(21),
+            MUTE_MEMBERS: to.r0(22),
+            DEAFEN_MEMBERS: to.r0(23),
+            MOVE_MEMBERS: to.r0(24),
+            USE_VAD: to.r0(25),
+            PRIORITY_SPEAKER: to.r0(8),
+            STREAM: to.r0(9),
+            USE_SOUNDBOARD: to.r0(42),
+            USE_EXTERNAL_SOUNDS: to.r0(45),
+            SET_VOICE_CHANNEL_STATUS: to.r0(48),
+            REQUEST_TO_SPEAK: to.r0(32),
+            MANAGE_EVENTS: to.r0(33),
+            CREATE_EVENTS: to.r0(44),
           }),
-          tg = function () {
+          tM = function () {
             for (var t = arguments.length, e = Array(t), r = 0; r < t; r++)
               e[r] = arguments[r];
           },
-          tP = () => null,
-          tM = () => Promise.resolve(),
-          tU = [
-            tC.KICK_MEMBERS,
-            tC.BAN_MEMBERS,
-            tC.ADMINISTRATOR,
-            tC.MANAGE_CHANNELS,
-            tC.MANAGE_GUILD,
-            tC.MANAGE_ROLES,
-            tC.MANAGE_MESSAGES,
-            tC.MANAGE_THREADS,
-            tC.MODERATE_MEMBERS,
+          tU = () => null,
+          tG = () => Promise.resolve(),
+          tm = [
+            tP.KICK_MEMBERS,
+            tP.BAN_MEMBERS,
+            tP.ADMINISTRATOR,
+            tP.MANAGE_CHANNELS,
+            tP.MANAGE_GUILD,
+            tP.MANAGE_ROLES,
+            tP.MANAGE_MESSAGES,
+            tP.MANAGE_THREADS,
+            tP.MODERATE_MEMBERS,
           ],
-          tG = ta.$e(...tU),
-          tm = 1,
-          ty = 6463,
-          tb = 10,
-          tB = "RpcApplicationLogger";
-        ((F = A || (A = {})).DISPATCH = "DISPATCH"),
-          (F.SET_CONFIG = "SET_CONFIG"),
-          (F.AUTHORIZE = "AUTHORIZE"),
-          (F.AUTHENTICATE = "AUTHENTICATE"),
-          (F.GET_GUILD = "GET_GUILD"),
-          (F.GET_GUILDS = "GET_GUILDS"),
-          (F.GET_CHANNEL = "GET_CHANNEL"),
-          (F.GET_CHANNELS = "GET_CHANNELS"),
-          (F.GET_CHANNEL_PERMISSIONS = "GET_CHANNEL_PERMISSIONS"),
-          (F.CREATE_CHANNEL_INVITE = "CREATE_CHANNEL_INVITE"),
-          (F.GET_RELATIONSHIPS = "GET_RELATIONSHIPS"),
-          (F.GET_USER = "GET_USER"),
-          (F.SUBSCRIBE = "SUBSCRIBE"),
-          (F.UNSUBSCRIBE = "UNSUBSCRIBE"),
-          (F.SET_USER_VOICE_SETTINGS = "SET_USER_VOICE_SETTINGS"),
-          (F.SET_USER_VOICE_SETTINGS_2 = "SET_USER_VOICE_SETTINGS_2"),
-          (F.PUSH_TO_TALK = "PUSH_TO_TALK"),
-          (F.SELECT_VOICE_CHANNEL = "SELECT_VOICE_CHANNEL"),
-          (F.GET_SELECTED_VOICE_CHANNEL = "GET_SELECTED_VOICE_CHANNEL"),
-          (F.SELECT_TEXT_CHANNEL = "SELECT_TEXT_CHANNEL"),
-          (F.GET_VOICE_SETTINGS = "GET_VOICE_SETTINGS"),
-          (F.SET_VOICE_SETTINGS_2 = "SET_VOICE_SETTINGS_2"),
-          (F.SET_VOICE_SETTINGS = "SET_VOICE_SETTINGS"),
-          (F.SET_ACTIVITY = "SET_ACTIVITY"),
-          (F.SEND_ACTIVITY_JOIN_INVITE = "SEND_ACTIVITY_JOIN_INVITE"),
-          (F.CLOSE_ACTIVITY_JOIN_REQUEST = "CLOSE_ACTIVITY_JOIN_REQUEST"),
-          (F.ACTIVITY_INVITE_USER = "ACTIVITY_INVITE_USER"),
-          (F.ACCEPT_ACTIVITY_INVITE = "ACCEPT_ACTIVITY_INVITE"),
-          (F.OPEN_INVITE_DIALOG = "OPEN_INVITE_DIALOG"),
-          (F.OPEN_SHARE_MOMENT_DIALOG = "OPEN_SHARE_MOMENT_DIALOG"),
-          (F.INITIATE_IMAGE_UPLOAD = "INITIATE_IMAGE_UPLOAD"),
-          (F.INVITE_BROWSER = "INVITE_BROWSER"),
-          (F.DEEP_LINK = "DEEP_LINK"),
-          (F.CONNECTIONS_CALLBACK = "CONNECTIONS_CALLBACK"),
-          (F.BILLING_POPUP_BRIDGE_CALLBACK = "BILLING_POPUP_BRIDGE_CALLBACK"),
-          (F.BRAINTREE_POPUP_BRIDGE_CALLBACK =
+          ty = to.$e(...tm),
+          tb = 1,
+          tB = 6463,
+          tv = 10,
+          tw = "RpcApplicationLogger";
+        ((X = N || (N = {})).DISPATCH = "DISPATCH"),
+          (X.SET_CONFIG = "SET_CONFIG"),
+          (X.AUTHORIZE = "AUTHORIZE"),
+          (X.AUTHENTICATE = "AUTHENTICATE"),
+          (X.GET_GUILD = "GET_GUILD"),
+          (X.GET_GUILDS = "GET_GUILDS"),
+          (X.GET_CHANNEL = "GET_CHANNEL"),
+          (X.GET_CHANNELS = "GET_CHANNELS"),
+          (X.GET_CHANNEL_PERMISSIONS = "GET_CHANNEL_PERMISSIONS"),
+          (X.CREATE_CHANNEL_INVITE = "CREATE_CHANNEL_INVITE"),
+          (X.GET_RELATIONSHIPS = "GET_RELATIONSHIPS"),
+          (X.GET_USER = "GET_USER"),
+          (X.SUBSCRIBE = "SUBSCRIBE"),
+          (X.UNSUBSCRIBE = "UNSUBSCRIBE"),
+          (X.SET_USER_VOICE_SETTINGS = "SET_USER_VOICE_SETTINGS"),
+          (X.SET_USER_VOICE_SETTINGS_2 = "SET_USER_VOICE_SETTINGS_2"),
+          (X.PUSH_TO_TALK = "PUSH_TO_TALK"),
+          (X.SELECT_VOICE_CHANNEL = "SELECT_VOICE_CHANNEL"),
+          (X.GET_SELECTED_VOICE_CHANNEL = "GET_SELECTED_VOICE_CHANNEL"),
+          (X.SELECT_TEXT_CHANNEL = "SELECT_TEXT_CHANNEL"),
+          (X.GET_VOICE_SETTINGS = "GET_VOICE_SETTINGS"),
+          (X.SET_VOICE_SETTINGS_2 = "SET_VOICE_SETTINGS_2"),
+          (X.SET_VOICE_SETTINGS = "SET_VOICE_SETTINGS"),
+          (X.SET_ACTIVITY = "SET_ACTIVITY"),
+          (X.SEND_ACTIVITY_JOIN_INVITE = "SEND_ACTIVITY_JOIN_INVITE"),
+          (X.CLOSE_ACTIVITY_JOIN_REQUEST = "CLOSE_ACTIVITY_JOIN_REQUEST"),
+          (X.ACTIVITY_INVITE_USER = "ACTIVITY_INVITE_USER"),
+          (X.ACCEPT_ACTIVITY_INVITE = "ACCEPT_ACTIVITY_INVITE"),
+          (X.OPEN_INVITE_DIALOG = "OPEN_INVITE_DIALOG"),
+          (X.OPEN_SHARE_MOMENT_DIALOG = "OPEN_SHARE_MOMENT_DIALOG"),
+          (X.INITIATE_IMAGE_UPLOAD = "INITIATE_IMAGE_UPLOAD"),
+          (X.INVITE_BROWSER = "INVITE_BROWSER"),
+          (X.DEEP_LINK = "DEEP_LINK"),
+          (X.CONNECTIONS_CALLBACK = "CONNECTIONS_CALLBACK"),
+          (X.BILLING_POPUP_BRIDGE_CALLBACK = "BILLING_POPUP_BRIDGE_CALLBACK"),
+          (X.BRAINTREE_POPUP_BRIDGE_CALLBACK =
             "BRAINTREE_POPUP_BRIDGE_CALLBACK"),
-          (F.GIFT_CODE_BROWSER = "GIFT_CODE_BROWSER"),
-          (F.GUILD_TEMPLATE_BROWSER = "GUILD_TEMPLATE_BROWSER"),
-          (F.OVERLAY = "OVERLAY"),
-          (F.BROWSER_HANDOFF = "BROWSER_HANDOFF"),
-          (F.SET_CERTIFIED_DEVICES = "SET_CERTIFIED_DEVICES"),
-          (F.GET_IMAGE = "GET_IMAGE"),
-          (F.SET_OVERLAY_LOCKED = "SET_OVERLAY_LOCKED"),
-          (F.OPEN_OVERLAY_ACTIVITY_INVITE = "OPEN_OVERLAY_ACTIVITY_INVITE"),
-          (F.OPEN_OVERLAY_GUILD_INVITE = "OPEN_OVERLAY_GUILD_INVITE"),
-          (F.OPEN_OVERLAY_VOICE_SETTINGS = "OPEN_OVERLAY_VOICE_SETTINGS"),
-          (F.VALIDATE_APPLICATION = "VALIDATE_APPLICATION"),
-          (F.GET_ENTITLEMENT_TICKET = "GET_ENTITLEMENT_TICKET"),
-          (F.GET_APPLICATION_TICKET = "GET_APPLICATION_TICKET"),
-          (F.START_PURCHASE = "START_PURCHASE"),
-          (F.START_PREMIUM_PURCHASE = "START_PREMIUM_PURCHASE"),
-          (F.GET_SKUS = "GET_SKUS"),
-          (F.GET_ENTITLEMENTS = "GET_ENTITLEMENTS"),
-          (F.GET_SKUS_EMBEDDED = "GET_SKUS_EMBEDDED"),
-          (F.GET_ENTITLEMENTS_EMBEDDED = "GET_ENTITLEMENTS_EMBEDDED"),
-          (F.GET_NETWORKING_CONFIG = "GET_NETWORKING_CONFIG"),
-          (F.NETWORKING_SYSTEM_METRICS = "NETWORKING_SYSTEM_METRICS"),
-          (F.NETWORKING_PEER_METRICS = "NETWORKING_PEER_METRICS"),
-          (F.NETWORKING_CREATE_TOKEN = "NETWORKING_CREATE_TOKEN"),
-          (F.SET_USER_ACHIEVEMENT = "SET_USER_ACHIEVEMENT"),
-          (F.GET_USER_ACHIEVEMENTS = "GET_USER_ACHIEVEMENTS"),
-          (F.USER_SETTINGS_GET_LOCALE = "USER_SETTINGS_GET_LOCALE"),
-          (F.SEND_GENERIC_EVENT = "SEND_GENERIC_EVENT"),
-          (F.SEND_ANALYTICS_EVENT = "SEND_ANALYTICS_EVENT"),
-          (F.OPEN_EXTERNAL_LINK = "OPEN_EXTERNAL_LINK"),
-          (F.CAPTURE_LOG = "CAPTURE_LOG"),
-          (F.ENCOURAGE_HW_ACCELERATION = "ENCOURAGE_HW_ACCELERATION"),
-          (F.SET_ORIENTATION_LOCK_STATE = "SET_ORIENTATION_LOCK_STATE"),
-          (F.GET_PLATFORM_BEHAVIORS = "GET_PLATFORM_BEHAVIORS"),
-          (F.GET_SOUNDBOARD_SOUNDS = "GET_SOUNDBOARD_SOUNDS"),
-          (F.PLAY_SOUNDBOARD_SOUND = "PLAY_SOUNDBOARD_SOUND"),
-          (F.TOGGLE_VIDEO = "TOGGLE_VIDEO"),
-          (F.TOGGLE_SCREENSHARE = "TOGGLE_SCREENSHARE"),
-          (F.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS =
+          (X.GIFT_CODE_BROWSER = "GIFT_CODE_BROWSER"),
+          (X.GUILD_TEMPLATE_BROWSER = "GUILD_TEMPLATE_BROWSER"),
+          (X.OVERLAY = "OVERLAY"),
+          (X.BROWSER_HANDOFF = "BROWSER_HANDOFF"),
+          (X.SET_CERTIFIED_DEVICES = "SET_CERTIFIED_DEVICES"),
+          (X.GET_IMAGE = "GET_IMAGE"),
+          (X.SET_OVERLAY_LOCKED = "SET_OVERLAY_LOCKED"),
+          (X.OPEN_OVERLAY_ACTIVITY_INVITE = "OPEN_OVERLAY_ACTIVITY_INVITE"),
+          (X.OPEN_OVERLAY_GUILD_INVITE = "OPEN_OVERLAY_GUILD_INVITE"),
+          (X.OPEN_OVERLAY_VOICE_SETTINGS = "OPEN_OVERLAY_VOICE_SETTINGS"),
+          (X.VALIDATE_APPLICATION = "VALIDATE_APPLICATION"),
+          (X.GET_ENTITLEMENT_TICKET = "GET_ENTITLEMENT_TICKET"),
+          (X.GET_APPLICATION_TICKET = "GET_APPLICATION_TICKET"),
+          (X.START_PURCHASE = "START_PURCHASE"),
+          (X.START_PREMIUM_PURCHASE = "START_PREMIUM_PURCHASE"),
+          (X.GET_SKUS = "GET_SKUS"),
+          (X.GET_ENTITLEMENTS = "GET_ENTITLEMENTS"),
+          (X.GET_SKUS_EMBEDDED = "GET_SKUS_EMBEDDED"),
+          (X.GET_ENTITLEMENTS_EMBEDDED = "GET_ENTITLEMENTS_EMBEDDED"),
+          (X.GET_NETWORKING_CONFIG = "GET_NETWORKING_CONFIG"),
+          (X.NETWORKING_SYSTEM_METRICS = "NETWORKING_SYSTEM_METRICS"),
+          (X.NETWORKING_PEER_METRICS = "NETWORKING_PEER_METRICS"),
+          (X.NETWORKING_CREATE_TOKEN = "NETWORKING_CREATE_TOKEN"),
+          (X.SET_USER_ACHIEVEMENT = "SET_USER_ACHIEVEMENT"),
+          (X.GET_USER_ACHIEVEMENTS = "GET_USER_ACHIEVEMENTS"),
+          (X.USER_SETTINGS_GET_LOCALE = "USER_SETTINGS_GET_LOCALE"),
+          (X.SEND_GENERIC_EVENT = "SEND_GENERIC_EVENT"),
+          (X.SEND_ANALYTICS_EVENT = "SEND_ANALYTICS_EVENT"),
+          (X.OPEN_EXTERNAL_LINK = "OPEN_EXTERNAL_LINK"),
+          (X.CAPTURE_LOG = "CAPTURE_LOG"),
+          (X.ENCOURAGE_HW_ACCELERATION = "ENCOURAGE_HW_ACCELERATION"),
+          (X.SET_ORIENTATION_LOCK_STATE = "SET_ORIENTATION_LOCK_STATE"),
+          (X.GET_PLATFORM_BEHAVIORS = "GET_PLATFORM_BEHAVIORS"),
+          (X.GET_SOUNDBOARD_SOUNDS = "GET_SOUNDBOARD_SOUNDS"),
+          (X.PLAY_SOUNDBOARD_SOUND = "PLAY_SOUNDBOARD_SOUND"),
+          (X.TOGGLE_VIDEO = "TOGGLE_VIDEO"),
+          (X.TOGGLE_SCREENSHARE = "TOGGLE_SCREENSHARE"),
+          (X.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS =
             "GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS"),
-          (F.GET_PROVIDER_ACCESS_TOKEN = "GET_PROVIDER_ACCESS_TOKEN"),
-          (F.MAYBE_GET_PROVIDER_ACCESS_TOKEN =
+          (X.GET_PROVIDER_ACCESS_TOKEN = "GET_PROVIDER_ACCESS_TOKEN"),
+          (X.MAYBE_GET_PROVIDER_ACCESS_TOKEN =
             "MAYBE_GET_PROVIDER_ACCESS_TOKEN"),
-          (F.NAVIGATE_TO_CONNECTIONS = "NAVIGATE_TO_CONNECTIONS"),
-          ((W = N || (N = {})).CURRENT_USER_UPDATE = "CURRENT_USER_UPDATE"),
-          (W.CURRENT_GUILD_MEMBER_UPDATE = "CURRENT_GUILD_MEMBER_UPDATE"),
-          (W.GUILD_STATUS = "GUILD_STATUS"),
-          (W.GUILD_CREATE = "GUILD_CREATE"),
-          (W.CHANNEL_CREATE = "CHANNEL_CREATE"),
-          (W.RELATIONSHIP_UPDATE = "RELATIONSHIP_UPDATE"),
-          (W.VOICE_CHANNEL_SELECT = "VOICE_CHANNEL_SELECT"),
-          (W.VOICE_STATE_CREATE = "VOICE_STATE_CREATE"),
-          (W.VOICE_STATE_DELETE = "VOICE_STATE_DELETE"),
-          (W.VOICE_STATE_UPDATE = "VOICE_STATE_UPDATE"),
-          (W.VOICE_SETTINGS_UPDATE = "VOICE_SETTINGS_UPDATE"),
-          (W.VOICE_SETTINGS_UPDATE_2 = "VOICE_SETTINGS_UPDATE_2"),
-          (W.VOICE_CONNECTION_STATUS = "VOICE_CONNECTION_STATUS"),
-          (W.SPEAKING_START = "SPEAKING_START"),
-          (W.SPEAKING_STOP = "SPEAKING_STOP"),
-          (W.GAME_JOIN = "GAME_JOIN"),
-          (W.GAME_SPECTATE = "GAME_SPECTATE"),
-          (W.ACTIVITY_JOIN = "ACTIVITY_JOIN"),
-          (W.ACTIVITY_JOIN_REQUEST = "ACTIVITY_JOIN_REQUEST"),
-          (W.ACTIVITY_SPECTATE = "ACTIVITY_SPECTATE"),
-          (W.ACTIVITY_INVITE = "ACTIVITY_INVITE"),
-          (W.ACTIVITY_PIP_MODE_UPDATE = "ACTIVITY_PIP_MODE_UPDATE"),
-          (W.ACTIVITY_LAYOUT_MODE_UPDATE = "ACTIVITY_LAYOUT_MODE_UPDATE"),
-          (W.THERMAL_STATE_UPDATE = "THERMAL_STATE_UPDATE"),
-          (W.ORIENTATION_UPDATE = "ORIENTATION_UPDATE"),
-          (W.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE =
+          (X.NAVIGATE_TO_CONNECTIONS = "NAVIGATE_TO_CONNECTIONS"),
+          ((j = d || (d = {})).CURRENT_USER_UPDATE = "CURRENT_USER_UPDATE"),
+          (j.CURRENT_GUILD_MEMBER_UPDATE = "CURRENT_GUILD_MEMBER_UPDATE"),
+          (j.GUILD_STATUS = "GUILD_STATUS"),
+          (j.GUILD_CREATE = "GUILD_CREATE"),
+          (j.CHANNEL_CREATE = "CHANNEL_CREATE"),
+          (j.RELATIONSHIP_UPDATE = "RELATIONSHIP_UPDATE"),
+          (j.VOICE_CHANNEL_SELECT = "VOICE_CHANNEL_SELECT"),
+          (j.VOICE_STATE_CREATE = "VOICE_STATE_CREATE"),
+          (j.VOICE_STATE_DELETE = "VOICE_STATE_DELETE"),
+          (j.VOICE_STATE_UPDATE = "VOICE_STATE_UPDATE"),
+          (j.VOICE_SETTINGS_UPDATE = "VOICE_SETTINGS_UPDATE"),
+          (j.VOICE_SETTINGS_UPDATE_2 = "VOICE_SETTINGS_UPDATE_2"),
+          (j.VOICE_CONNECTION_STATUS = "VOICE_CONNECTION_STATUS"),
+          (j.SPEAKING_START = "SPEAKING_START"),
+          (j.SPEAKING_STOP = "SPEAKING_STOP"),
+          (j.GAME_JOIN = "GAME_JOIN"),
+          (j.GAME_SPECTATE = "GAME_SPECTATE"),
+          (j.ACTIVITY_JOIN = "ACTIVITY_JOIN"),
+          (j.ACTIVITY_JOIN_REQUEST = "ACTIVITY_JOIN_REQUEST"),
+          (j.ACTIVITY_SPECTATE = "ACTIVITY_SPECTATE"),
+          (j.ACTIVITY_INVITE = "ACTIVITY_INVITE"),
+          (j.ACTIVITY_PIP_MODE_UPDATE = "ACTIVITY_PIP_MODE_UPDATE"),
+          (j.ACTIVITY_LAYOUT_MODE_UPDATE = "ACTIVITY_LAYOUT_MODE_UPDATE"),
+          (j.THERMAL_STATE_UPDATE = "THERMAL_STATE_UPDATE"),
+          (j.ORIENTATION_UPDATE = "ORIENTATION_UPDATE"),
+          (j.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE =
             "ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE"),
-          (W.NOTIFICATION_CREATE = "NOTIFICATION_CREATE"),
-          (W.MESSAGE_CREATE = "MESSAGE_CREATE"),
-          (W.MESSAGE_UPDATE = "MESSAGE_UPDATE"),
-          (W.MESSAGE_DELETE = "MESSAGE_DELETE"),
-          (W.OVERLAY = "OVERLAY"),
-          (W.OVERLAY_UPDATE = "OVERLAY_UPDATE"),
-          (W.ENTITLEMENT_CREATE = "ENTITLEMENT_CREATE"),
-          (W.ENTITLEMENT_DELETE = "ENTITLEMENT_DELETE"),
-          (W.USER_ACHIEVEMENT_UPDATE = "USER_ACHIEVEMENT_UPDATE"),
-          (W.VOICE_CHANNEL_EFFECT_SEND = "VOICE_CHANNEL_EFFECT_SEND"),
-          (W.VOICE_CHANNEL_EFFECT_RECENT_EMOJI =
+          (j.NOTIFICATION_CREATE = "NOTIFICATION_CREATE"),
+          (j.MESSAGE_CREATE = "MESSAGE_CREATE"),
+          (j.MESSAGE_UPDATE = "MESSAGE_UPDATE"),
+          (j.MESSAGE_DELETE = "MESSAGE_DELETE"),
+          (j.OVERLAY = "OVERLAY"),
+          (j.OVERLAY_UPDATE = "OVERLAY_UPDATE"),
+          (j.ENTITLEMENT_CREATE = "ENTITLEMENT_CREATE"),
+          (j.ENTITLEMENT_DELETE = "ENTITLEMENT_DELETE"),
+          (j.USER_ACHIEVEMENT_UPDATE = "USER_ACHIEVEMENT_UPDATE"),
+          (j.VOICE_CHANNEL_EFFECT_SEND = "VOICE_CHANNEL_EFFECT_SEND"),
+          (j.VOICE_CHANNEL_EFFECT_RECENT_EMOJI =
             "VOICE_CHANNEL_EFFECT_RECENT_EMOJI"),
-          (W.VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE =
+          (j.VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE =
             "VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE"),
-          (W.SCREENSHARE_STATE_UPDATE = "SCREENSHARE_STATE_UPDATE"),
-          (W.VIDEO_STATE_UPDATE = "VIDEO_STATE_UPDATE"),
-          (W.READY = "READY"),
-          (W.ERROR = "ERROR"),
-          ((X = d || (d = {}))[(X.UNKNOWN_ERROR = 1e3)] = "UNKNOWN_ERROR"),
-          (X[(X.SERVICE_UNAVAILABLE = 1001)] = "SERVICE_UNAVAILABLE"),
-          (X[(X.TRANSACTION_ABORTED = 1002)] = "TRANSACTION_ABORTED"),
-          (X[(X.INVALID_PAYLOAD = 4e3)] = "INVALID_PAYLOAD"),
-          (X[(X.INVALID_COMMAND = 4002)] = "INVALID_COMMAND"),
-          (X[(X.INVALID_GUILD = 4003)] = "INVALID_GUILD"),
-          (X[(X.INVALID_EVENT = 4004)] = "INVALID_EVENT"),
-          (X[(X.INVALID_CHANNEL = 4005)] = "INVALID_CHANNEL"),
-          (X[(X.INVALID_PERMISSIONS = 4006)] = "INVALID_PERMISSIONS"),
-          (X[(X.INVALID_CLIENTID = 4007)] = "INVALID_CLIENTID"),
-          (X[(X.INVALID_ORIGIN = 4008)] = "INVALID_ORIGIN"),
-          (X[(X.INVALID_TOKEN = 4009)] = "INVALID_TOKEN"),
-          (X[(X.INVALID_USER = 4010)] = "INVALID_USER"),
-          (X[(X.INVALID_INVITE = 4011)] = "INVALID_INVITE"),
-          (X[(X.INVALID_ACTIVITY_JOIN_REQUEST = 4012)] =
+          (j.SCREENSHARE_STATE_UPDATE = "SCREENSHARE_STATE_UPDATE"),
+          (j.VIDEO_STATE_UPDATE = "VIDEO_STATE_UPDATE"),
+          (j.READY = "READY"),
+          (j.ERROR = "ERROR"),
+          ((z = O || (O = {}))[(z.UNKNOWN_ERROR = 1e3)] = "UNKNOWN_ERROR"),
+          (z[(z.SERVICE_UNAVAILABLE = 1001)] = "SERVICE_UNAVAILABLE"),
+          (z[(z.TRANSACTION_ABORTED = 1002)] = "TRANSACTION_ABORTED"),
+          (z[(z.INVALID_PAYLOAD = 4e3)] = "INVALID_PAYLOAD"),
+          (z[(z.INVALID_COMMAND = 4002)] = "INVALID_COMMAND"),
+          (z[(z.INVALID_GUILD = 4003)] = "INVALID_GUILD"),
+          (z[(z.INVALID_EVENT = 4004)] = "INVALID_EVENT"),
+          (z[(z.INVALID_CHANNEL = 4005)] = "INVALID_CHANNEL"),
+          (z[(z.INVALID_PERMISSIONS = 4006)] = "INVALID_PERMISSIONS"),
+          (z[(z.INVALID_CLIENTID = 4007)] = "INVALID_CLIENTID"),
+          (z[(z.INVALID_ORIGIN = 4008)] = "INVALID_ORIGIN"),
+          (z[(z.INVALID_TOKEN = 4009)] = "INVALID_TOKEN"),
+          (z[(z.INVALID_USER = 4010)] = "INVALID_USER"),
+          (z[(z.INVALID_INVITE = 4011)] = "INVALID_INVITE"),
+          (z[(z.INVALID_ACTIVITY_JOIN_REQUEST = 4012)] =
             "INVALID_ACTIVITY_JOIN_REQUEST"),
-          (X[(X.INVALID_ENTITLEMENT = 4015)] = "INVALID_ENTITLEMENT"),
-          (X[(X.INVALID_GIFT_CODE = 4016)] = "INVALID_GIFT_CODE"),
-          (X[(X.INVALID_GUILD_TEMPLATE = 4017)] = "INVALID_GUILD_TEMPLATE"),
-          (X[(X.INVALID_SOUND = 4018)] = "INVALID_SOUND"),
-          (X[(X.INVALID_PROVIDER = 4019)] = "INVALID_PROVIDER"),
-          (X[(X.OAUTH2_ERROR = 5e3)] = "OAUTH2_ERROR"),
-          (X[(X.SELECT_CHANNEL_TIMED_OUT = 5001)] = "SELECT_CHANNEL_TIMED_OUT"),
-          (X[(X.GET_GUILD_TIMED_OUT = 5002)] = "GET_GUILD_TIMED_OUT"),
-          (X[(X.SELECT_VOICE_FORCE_REQUIRED = 5003)] =
+          (z[(z.INVALID_ENTITLEMENT = 4015)] = "INVALID_ENTITLEMENT"),
+          (z[(z.INVALID_GIFT_CODE = 4016)] = "INVALID_GIFT_CODE"),
+          (z[(z.INVALID_GUILD_TEMPLATE = 4017)] = "INVALID_GUILD_TEMPLATE"),
+          (z[(z.INVALID_SOUND = 4018)] = "INVALID_SOUND"),
+          (z[(z.INVALID_PROVIDER = 4019)] = "INVALID_PROVIDER"),
+          (z[(z.OAUTH2_ERROR = 5e3)] = "OAUTH2_ERROR"),
+          (z[(z.SELECT_CHANNEL_TIMED_OUT = 5001)] = "SELECT_CHANNEL_TIMED_OUT"),
+          (z[(z.GET_GUILD_TIMED_OUT = 5002)] = "GET_GUILD_TIMED_OUT"),
+          (z[(z.SELECT_VOICE_FORCE_REQUIRED = 5003)] =
             "SELECT_VOICE_FORCE_REQUIRED"),
-          (X[(X.INVALID_ACTIVITY_SECRET = 5005)] = "INVALID_ACTIVITY_SECRET"),
-          (X[(X.NO_ELIGIBLE_ACTIVITY = 5006)] = "NO_ELIGIBLE_ACTIVITY"),
-          (X[(X.PURCHASE_CANCELED = 5008)] = "PURCHASE_CANCELED"),
-          (X[(X.PURCHASE_ERROR = 5009)] = "PURCHASE_ERROR"),
-          (X[(X.UNAUTHORIZED_FOR_ACHIEVEMENT = 5010)] =
+          (z[(z.INVALID_ACTIVITY_SECRET = 5005)] = "INVALID_ACTIVITY_SECRET"),
+          (z[(z.NO_ELIGIBLE_ACTIVITY = 5006)] = "NO_ELIGIBLE_ACTIVITY"),
+          (z[(z.PURCHASE_CANCELED = 5008)] = "PURCHASE_CANCELED"),
+          (z[(z.PURCHASE_ERROR = 5009)] = "PURCHASE_ERROR"),
+          (z[(z.UNAUTHORIZED_FOR_ACHIEVEMENT = 5010)] =
             "UNAUTHORIZED_FOR_ACHIEVEMENT"),
-          (X[(X.RATE_LIMITED = 5011)] = "RATE_LIMITED"),
-          (X[(X.UNAUTHORIZED_FOR_APPLICATION = 5012)] =
+          (z[(z.RATE_LIMITED = 5011)] = "RATE_LIMITED"),
+          (z[(z.UNAUTHORIZED_FOR_APPLICATION = 5012)] =
             "UNAUTHORIZED_FOR_APPLICATION"),
-          (X[(X.NO_CONNECTION_FOUND = 5013)] = "NO_CONNECTION_FOUND"),
-          ((j = O || (O = {}))[(j.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
-          (j[(j.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
-          (j[(j.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
-          (j[(j.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
-          (j[(j.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
-          (j[(j.RATELIMITED = 4002)] = "RATELIMITED"),
-          (j[(j.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
-          (j[(j.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
-          (j[(j.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
-        let tv = "token",
-          tw = "tokens",
-          tH = "https://".concat("status.discord.com"),
-          tY = {
+          (z[(z.NO_CONNECTION_FOUND = 5013)] = "NO_CONNECTION_FOUND"),
+          (($ = S || (S = {}))[($.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
+          ($[($.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
+          ($[($.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
+          ($[($.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
+          ($[($.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
+          ($[($.RATELIMITED = 4002)] = "RATELIMITED"),
+          ($[($.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
+          ($[($.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
+          ($[($.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
+        let tH = "token",
+          tY = "tokens",
+          tK = "https://".concat("status.discord.com"),
+          tk = {
             PRESSKIT: "https://app.box.com/s/5puqm5ijahrrdao7yldi7fr3zah5i1am",
             REBRAND_PRESSKIT:
               "https://www.dropbox.com/scl/fo/2vittfakjukwa3zl4gnxh/AOS0AZlx-zA4TjDyv-M-dgk?rlkey=kn0v1lcqfq1lurj3lk3x1ujhf&dl=0",
             STATUS: "https://discordstatus.com",
-            HELP_AND_SUPPORT: "//".concat(tR, "/hc/en-us"),
+            HELP_AND_SUPPORT: "//".concat(tu, "/hc/en-us"),
             FEEDBACK: "//".concat("feedback.discord.com"),
-            EMAIL_SUPPORT: "mailto:support@".concat(tu),
-            EMAIL_LAW_ENFORCEMENT: "mailto:lawenforcement@".concat(tu),
-            EMAIL_HYPESQUAD: "mailto:hypesquad@".concat(tu),
-            EMAIL_JOBS: "mailto:jobs@".concat(tu),
+            EMAIL_SUPPORT: "mailto:support@".concat(tA),
+            EMAIL_LAW_ENFORCEMENT: "mailto:lawenforcement@".concat(tA),
+            EMAIL_HYPESQUAD: "mailto:hypesquad@".concat(tA),
+            EMAIL_JOBS: "mailto:jobs@".concat(tA),
             DEV_PERKS_FORM: "https://goo.gl/forms/oZfKBStV3sR8GHdU2",
             VERIFICATION_REQUIREMENTS: "https://dis.gd/vfqual",
-            BASE_URL: "https://".concat(tI),
-            PRESS_INQUIRIES: "mailto:press@".concat(tu),
+            BASE_URL: "https://".concat(tT),
+            PRESS_INQUIRIES: "mailto:press@".concat(tA),
             CONTACT_US: "https://dis.gd/contact",
             DEV_LANDING: "/build",
             DEV_PORTAL: "/developers",
@@ -31650,7 +31662,7 @@ Error:`,
             DEV_PORTAL_DOCUMENTATION: "/developers/docs",
             DEV_PORTAL_SELF_SERVE_MODAL: "/developers/?store_signup=true",
             PARTNER_CODE_OF_CONDUCT: "https://".concat(
-              tR,
+              tu,
               "/hc/en-us/articles/360024871991",
             ),
             SUBMIT_TNS_REPORT: "https://dis.gd/request",
@@ -31662,441 +31674,441 @@ Error:`,
             TWITTER_SUPPORT: "https://twitter.com/discord_support",
             QUESTS: "/quests",
           },
-          tK = Object.freeze({
+          tV = Object.freeze({
             TWITTER: Object.freeze({
               default: "https://twitter.com/discord",
               ja: "https://twitter.com/discord_jp",
             }),
           }),
-          tk = Object.freeze({
-            WELCOME: "".concat(ts, "/welcome/"),
-            ME: "".concat(ts, "/channels/@me"),
+          tx = Object.freeze({
+            WELCOME: "".concat(tI, "/welcome/"),
+            ME: "".concat(tI, "/channels/@me"),
             SETTINGS: (t, e) =>
               ""
-                .concat(ts, "/settings/")
+                .concat(tI, "/settings/")
                 .concat(t)
                 .concat(e ? "/".concat(e) : ""),
-            CONNECTION: (t) => "".concat(ts, "/connections/").concat(t),
-            CHANGELOGS: "".concat(ts, "/settings/changelogs"),
-            LOGIN: "".concat(ts, "/login"),
+            CONNECTION: (t) => "".concat(tI, "/connections/").concat(t),
+            CHANGELOGS: "".concat(tI, "/settings/changelogs"),
+            LOGIN: "".concat(tI, "/login"),
             LOGIN_WITH_REDIRECT: (t) =>
-              "".concat(ts, "/login?redirect_to=").concat(t),
-            REGISTER: "".concat(ts, "/register"),
+              "".concat(tI, "/login?redirect_to=").concat(t),
+            REGISTER: "".concat(tI, "/register"),
             REGISTER_WITH_REDIRECT: (t) =>
-              "".concat(ts, "/register?redirect_to=").concat(t),
-            CREATE_GUILD: "".concat(ts, "/guilds/create"),
-            VANITY_INVITE: (t) => "".concat(tc, "/").concat(t),
-            HYPESQUAD_ONLINE: "".concat(ts, "/settings/hypesquad-online"),
-            BROWSE_NITRO_TITLES: "".concat(ts, "/store/browse?type=nitro"),
+              "".concat(tI, "/register?redirect_to=").concat(t),
+            CREATE_GUILD: "".concat(tI, "/guilds/create"),
+            VANITY_INVITE: (t) => "".concat(tR, "/").concat(t),
+            HYPESQUAD_ONLINE: "".concat(tI, "/settings/hypesquad-online"),
+            BROWSE_NITRO_TITLES: "".concat(tI, "/store/browse?type=nitro"),
             SKU_DETAILS: (t, e) =>
               ""
-                .concat(ts, "/store/skus/")
+                .concat(tI, "/store/skus/")
                 .concat(t)
                 .concat(null != e ? "?store_listing_id=".concat(e) : ""),
             MESSAGE: (t, e, r) =>
               "/channels/".concat(t, "/").concat(e, "/").concat(r),
             CHANNEL: (t, e) => "/channels/".concat(t, "/").concat(e),
-            REPORT: "".concat(ts, "/report"),
+            REPORT: "".concat(tI, "/report"),
           });
-        ((z = S || (S = {})).INDEX = "/"),
-          (z.INDEX_WORD = "/index"),
-          (z.INDEX_BUCKET = "/index/:bucketId"),
-          (z.CHANGELOGS = "/changelogs/:date"),
-          (z.COMMUNITY = "/community"),
-          (z.COMPANY = "/company"),
-          (z.COMPANY_INFORMATION = "/company-information"),
-          (z.CREATORS = "/creators"),
-          (z.DOWNLOADS = "/downloads"),
-          (z.DOWNLOAD = "/download"),
-          (z.GAMING = "/gaming"),
-          (z.PRIVACY = "/privacy"),
-          (z.TOS = "/tos"),
-          (z.TERMS = "/terms"),
-          (z.STORE_TERMS = "/store-terms"),
-          (z.ACKNOWLEDGEMENTS = "/acknowledgements"),
-          (z.LICENSES = "/licenses"),
-          (z.PARTNERS = "/partners"),
-          (z.HYPESQUAD = "/hypesquad"),
-          (z.HYPESQUAD_RIOT = "/hypesquad-riot"),
-          (z.BRANDING = "/branding"),
-          (z.ERROR_404 = "/404"),
-          (z.JOBS = "/jobs"),
-          (z.JOB = "/jobs/:jobId"),
-          (z.STREAMKIT = "/streamkit"),
-          (z.SECURITY = "/security"),
-          (z.NITRO = "/nitro"),
-          (z.DISCOVER = "/servers"),
-          (z.GUIDELINES = "/guidelines"),
-          (z.RICH_PRESENCE = "/rich-presence"),
-          (z.VERIFICATION = "/verification"),
-          (z.OPEN_SOURCE = "/open-source"),
-          (z.WARFRAME = "/warframe"),
-          (z.REMOTE_AUTH = "/ra/:remoteAuthFingerprint"),
-          (z.SAFETY_LANDING = "/safetycenter"),
-          (z.SAFETY_ARTICLE_ROOT = "/safety"),
-          (z.SAFETY_ARTICLE = "/safety/:article"),
-          (z.NEWSROOM = "/newsroom"),
-          (z.INSPIRATION = "/inspiration"),
-          (z.MOD_ACADEMY_LANDING = "/moderation"),
-          (z.MOD_ACADEMY_EXAM = "/moderation/exam"),
-          (z.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
-          (z.BLOG = "/blog"),
-          (z.APP_DIRECTORY = "/application-directory"),
-          (z.REFRESH_INDEX = "/new"),
-          (z.REFRESH_INDEX_WORD = "/new/index"),
-          (z.REFRESH_COMPANY = "/new/company"),
-          (z.REFRESH_DOWNLOAD = "/new/download"),
-          (z.REFRESH_PRIVACY = "/new/privacy"),
-          (z.REFRESH_TERMS = "/new/terms"),
-          (z.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements"),
-          (z.REFRESH_LICENSES = "/new/licenses"),
-          (z.REFRESH_BRANDING = "/new/branding"),
-          (z.REFRESH_JOBS = "/new/jobs"),
-          (z.REFRESH_JOB = "/new/jobs/:jobId"),
-          (z.REFRESH_STREAMKIT = "/new/streamkit"),
-          (z.REFRESH_NITRO = "/new/nitro"),
-          (z.REFRESH_GUIDELINES = "/new/guidelines"),
-          (z.REFRESH_SAFETY_LANDING = "/new/safety"),
-          (z.REFRESH_SAFETY_ARTICLE = "/new/safety/:article"),
-          (z.COLLEGE = "/college"),
-          (z.LEAGUE_CLUBS = "/league-communities"),
-          (z.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams"),
-          (z.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter"),
-          (z.LEGACY_DEV_NEWSLETTER = "/newsletter"),
-          (z.LEGAL_ARCHIVE = "/archive/"),
-          (z.TERMS_MAY_2020 = "/archive/terms/may-2020"),
-          (z.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020"),
-          (z.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020"),
-          (z.FALL_RELEASE_2023 = "/fallrelease"),
-          (z.MOBILE_REDESIGN_2023 = "/mobile"),
-          (z.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019"),
-          (z.REFRESH_WHY_DISCORD = "/why-discord-is-different"),
-          (z.WHY_DISCORD = "/why-discord"),
-          (z.XBOX_OFFER = "/discord-xbox-offer-2020"),
-          (z.COLLEGE_BRUINS = "/bruins"),
-          (z.COLLEGE_ANTEATERS = "/anteaters"),
-          (z.COLLEGE_GAUCHOS = "/gauchos"),
-          (z.COLLEGE_BEARS = "/bears"),
-          (z.COLLEGE_SLUGS = "/slugs"),
-          (z.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM =
+        ((q = p || (p = {})).INDEX = "/"),
+          (q.INDEX_WORD = "/index"),
+          (q.INDEX_BUCKET = "/index/:bucketId"),
+          (q.CHANGELOGS = "/changelogs/:date"),
+          (q.COMMUNITY = "/community"),
+          (q.COMPANY = "/company"),
+          (q.COMPANY_INFORMATION = "/company-information"),
+          (q.CREATORS = "/creators"),
+          (q.DOWNLOADS = "/downloads"),
+          (q.DOWNLOAD = "/download"),
+          (q.GAMING = "/gaming"),
+          (q.PRIVACY = "/privacy"),
+          (q.TOS = "/tos"),
+          (q.TERMS = "/terms"),
+          (q.STORE_TERMS = "/store-terms"),
+          (q.ACKNOWLEDGEMENTS = "/acknowledgements"),
+          (q.LICENSES = "/licenses"),
+          (q.PARTNERS = "/partners"),
+          (q.HYPESQUAD = "/hypesquad"),
+          (q.HYPESQUAD_RIOT = "/hypesquad-riot"),
+          (q.BRANDING = "/branding"),
+          (q.ERROR_404 = "/404"),
+          (q.JOBS = "/jobs"),
+          (q.JOB = "/jobs/:jobId"),
+          (q.STREAMKIT = "/streamkit"),
+          (q.SECURITY = "/security"),
+          (q.NITRO = "/nitro"),
+          (q.DISCOVER = "/servers"),
+          (q.GUIDELINES = "/guidelines"),
+          (q.RICH_PRESENCE = "/rich-presence"),
+          (q.VERIFICATION = "/verification"),
+          (q.OPEN_SOURCE = "/open-source"),
+          (q.WARFRAME = "/warframe"),
+          (q.REMOTE_AUTH = "/ra/:remoteAuthFingerprint"),
+          (q.SAFETY_LANDING = "/safetycenter"),
+          (q.SAFETY_ARTICLE_ROOT = "/safety"),
+          (q.SAFETY_ARTICLE = "/safety/:article"),
+          (q.NEWSROOM = "/newsroom"),
+          (q.INSPIRATION = "/inspiration"),
+          (q.MOD_ACADEMY_LANDING = "/moderation"),
+          (q.MOD_ACADEMY_EXAM = "/moderation/exam"),
+          (q.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
+          (q.BLOG = "/blog"),
+          (q.APP_DIRECTORY = "/application-directory"),
+          (q.REFRESH_INDEX = "/new"),
+          (q.REFRESH_INDEX_WORD = "/new/index"),
+          (q.REFRESH_COMPANY = "/new/company"),
+          (q.REFRESH_DOWNLOAD = "/new/download"),
+          (q.REFRESH_PRIVACY = "/new/privacy"),
+          (q.REFRESH_TERMS = "/new/terms"),
+          (q.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements"),
+          (q.REFRESH_LICENSES = "/new/licenses"),
+          (q.REFRESH_BRANDING = "/new/branding"),
+          (q.REFRESH_JOBS = "/new/jobs"),
+          (q.REFRESH_JOB = "/new/jobs/:jobId"),
+          (q.REFRESH_STREAMKIT = "/new/streamkit"),
+          (q.REFRESH_NITRO = "/new/nitro"),
+          (q.REFRESH_GUIDELINES = "/new/guidelines"),
+          (q.REFRESH_SAFETY_LANDING = "/new/safety"),
+          (q.REFRESH_SAFETY_ARTICLE = "/new/safety/:article"),
+          (q.COLLEGE = "/college"),
+          (q.LEAGUE_CLUBS = "/league-communities"),
+          (q.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams"),
+          (q.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter"),
+          (q.LEGACY_DEV_NEWSLETTER = "/newsletter"),
+          (q.LEGAL_ARCHIVE = "/archive/"),
+          (q.TERMS_MAY_2020 = "/archive/terms/may-2020"),
+          (q.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020"),
+          (q.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020"),
+          (q.FALL_RELEASE_2023 = "/fallrelease"),
+          (q.MOBILE_REDESIGN_2023 = "/mobile"),
+          (q.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019"),
+          (q.REFRESH_WHY_DISCORD = "/why-discord-is-different"),
+          (q.WHY_DISCORD = "/why-discord"),
+          (q.XBOX_OFFER = "/discord-xbox-offer-2020"),
+          (q.COLLEGE_BRUINS = "/bruins"),
+          (q.COLLEGE_ANTEATERS = "/anteaters"),
+          (q.COLLEGE_GAUCHOS = "/gauchos"),
+          (q.COLLEGE_BEARS = "/bears"),
+          (q.COLLEGE_SLUGS = "/slugs"),
+          (q.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM =
             "/terms/back-to-school-2020/instagram"),
-          (z.BACK_TO_SCHOOL_GIVEAWAY_TWITTER =
+          (q.BACK_TO_SCHOOL_GIVEAWAY_TWITTER =
             "/terms/back-to-school-2020/twitter"),
-          (z.SNOWSGIVING_GIVEAWAY_INSTAGRAM =
+          (q.SNOWSGIVING_GIVEAWAY_INSTAGRAM =
             "/terms/snowsgiving-2020/instagram"),
-          (z.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
-          (0, ti.F)(tk),
-          (0, ti.F)(S);
-        let tV = Object.freeze({
+          (q.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
+          (0, tE.F)(tx),
+          (0, tE.F)(p);
+        let tF = Object.freeze({
           FACEBOOK_URL: "https://www.facebook.com/discord/",
           INSTAGRAM_URL: "https://www.instagram.com/discord/",
           YOUTUBE_URL: "https://www.youtube.com/discord/",
           TIKTOK_URL: "https://www.tiktok.com/@discord",
         });
-        ((q = p || (p = {})).EXPERIMENT_USER_TRIGGERED =
+        ((Z = D || (D = {})).EXPERIMENT_USER_TRIGGERED =
           "experiment_user_triggered"),
-          (q.EXPERIMENT_GUILD_TRIGGERED = "experiment_guild_triggered"),
-          (q.EXPERIMENT_SAVE_EXPOSURE_FAILED =
+          (Z.EXPERIMENT_GUILD_TRIGGERED = "experiment_guild_triggered"),
+          (Z.EXPERIMENT_SAVE_EXPOSURE_FAILED =
             "experiment_save_exposure_failed"),
-          (q.MKTG_PAGE_VIEWED = "mktg_page_viewed"),
-          (q.CLICK_LANDING_CTA = "click_landing_cta"),
-          (q.DOWNLOAD_APP = "download_app"),
-          (q.MKTG_HYPESQUAD_FORM_SUBMITTED = "mktg_hypesquad_form_submitted"),
-          (q.MKTG_HYPESQUAD_FORM_OPENED = "mktg_hypesquad_form_opened"),
-          (q.CHANGE_MARKETING_LOCALE = "change_marketing_locale"),
-          (q.GAME_CLICKED_LANDING = "game_clicked_landing"),
-          (q.MAIN_NAVIGATION_MENU = "main_navigation_menu"),
-          (q.MKTG_APPLICATION_STEP = "mktg_application_step"),
-          (q.MKTG_WARFRAME_CTA_CLICKED = "mktg_warframe_cta_clicked"),
-          (q.MKTG_PAGE_CTA_CLICKED = "mktg_page_cta_clicked"),
-          (q.MKTG_VIDEO_PLAYED = "mktg_video_played"),
-          (q.DEEP_LINK_CLICKED = "deep_link_clicked"),
-          (q.SEO_PAGE_VIEWED = "seo_server_landing_page_viewed"),
-          (q.SEO_PAGE_CTA_CLICKED = "seo_server_landing_page_cta_clicked"),
-          (q.SEO_AGGREGATOR_PAGE_VIEWED = "seo_aggregator_page_viewed"),
-          (q.SEO_AGGREGATOR_CTA_CLICKED = "seo_aggregator_page_cta_clicked"),
-          (q.LOCATION_STACK_METADATA = "location_stack_metadata"),
-          (q.CREATOR_STORE_PAGE_VIEWED = "creator_store_page_viewed"),
-          (q.CREATOR_STORE_PAGE_CTA_CLICKED = "creator_store_page_cta_clicked"),
-          ((D || (D = {})).MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN =
+          (Z.MKTG_PAGE_VIEWED = "mktg_page_viewed"),
+          (Z.CLICK_LANDING_CTA = "click_landing_cta"),
+          (Z.DOWNLOAD_APP = "download_app"),
+          (Z.MKTG_HYPESQUAD_FORM_SUBMITTED = "mktg_hypesquad_form_submitted"),
+          (Z.MKTG_HYPESQUAD_FORM_OPENED = "mktg_hypesquad_form_opened"),
+          (Z.CHANGE_MARKETING_LOCALE = "change_marketing_locale"),
+          (Z.GAME_CLICKED_LANDING = "game_clicked_landing"),
+          (Z.MAIN_NAVIGATION_MENU = "main_navigation_menu"),
+          (Z.MKTG_APPLICATION_STEP = "mktg_application_step"),
+          (Z.MKTG_WARFRAME_CTA_CLICKED = "mktg_warframe_cta_clicked"),
+          (Z.MKTG_PAGE_CTA_CLICKED = "mktg_page_cta_clicked"),
+          (Z.MKTG_VIDEO_PLAYED = "mktg_video_played"),
+          (Z.DEEP_LINK_CLICKED = "deep_link_clicked"),
+          (Z.SEO_PAGE_VIEWED = "seo_server_landing_page_viewed"),
+          (Z.SEO_PAGE_CTA_CLICKED = "seo_server_landing_page_cta_clicked"),
+          (Z.SEO_AGGREGATOR_PAGE_VIEWED = "seo_aggregator_page_viewed"),
+          (Z.SEO_AGGREGATOR_CTA_CLICKED = "seo_aggregator_page_cta_clicked"),
+          (Z.LOCATION_STACK_METADATA = "location_stack_metadata"),
+          (Z.CREATOR_STORE_PAGE_VIEWED = "creator_store_page_viewed"),
+          (Z.CREATOR_STORE_PAGE_CTA_CLICKED = "creator_store_page_cta_clicked"),
+          ((f || (f = {})).MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN =
             "mktg_ack_modal_open"),
-          (($ = f || (f = {})).AED = "aed"),
-          ($.AFN = "afn"),
-          ($.ALL = "all"),
-          ($.AMD = "amd"),
-          ($.ANG = "ang"),
-          ($.AOA = "aoa"),
-          ($.ARS = "ars"),
-          ($.AUD = "aud"),
-          ($.AWG = "awg"),
-          ($.AZN = "azn"),
-          ($.BAM = "bam"),
-          ($.BBD = "bbd"),
-          ($.BDT = "bdt"),
-          ($.BGN = "bgn"),
-          ($.BHD = "bhd"),
-          ($.BIF = "bif"),
-          ($.BMD = "bmd"),
-          ($.BND = "bnd"),
-          ($.BOB = "bob"),
-          ($.BOV = "bov"),
-          ($.BRL = "brl"),
-          ($.BSD = "bsd"),
-          ($.BTN = "btn"),
-          ($.BWP = "bwp"),
-          ($.BYN = "byn"),
-          ($.BYR = "byr"),
-          ($.BZD = "bzd"),
-          ($.CAD = "cad"),
-          ($.CDF = "cdf"),
-          ($.CHE = "che"),
-          ($.CHF = "chf"),
-          ($.CHW = "chw"),
-          ($.CLF = "clf"),
-          ($.CLP = "clp"),
-          ($.CNY = "cny"),
-          ($.COP = "cop"),
-          ($.COU = "cou"),
-          ($.CRC = "crc"),
-          ($.CUC = "cuc"),
-          ($.CUP = "cup"),
-          ($.CVE = "cve"),
-          ($.CZK = "czk"),
-          ($.DJF = "djf"),
-          ($.DKK = "dkk"),
-          ($.DOP = "dop"),
-          ($.DZD = "dzd"),
-          ($.EGP = "egp"),
-          ($.ERN = "ern"),
-          ($.ETB = "etb"),
-          ($.EUR = "eur"),
-          ($.FJD = "fjd"),
-          ($.FKP = "fkp"),
-          ($.GBP = "gbp"),
-          ($.GEL = "gel"),
-          ($.GHS = "ghs"),
-          ($.GIP = "gip"),
-          ($.GMD = "gmd"),
-          ($.GNF = "gnf"),
-          ($.GTQ = "gtq"),
-          ($.GYD = "gyd"),
-          ($.HKD = "hkd"),
-          ($.HNL = "hnl"),
-          ($.HRK = "hrk"),
-          ($.HTG = "htg"),
-          ($.HUF = "huf"),
-          ($.IDR = "idr"),
-          ($.ILS = "ils"),
-          ($.INR = "inr"),
-          ($.IQD = "iqd"),
-          ($.IRR = "irr"),
-          ($.ISK = "isk"),
-          ($.JMD = "jmd"),
-          ($.JOD = "jod"),
-          ($.JPY = "jpy"),
-          ($.KES = "kes"),
-          ($.KGS = "kgs"),
-          ($.KHR = "khr"),
-          ($.KMF = "kmf"),
-          ($.KPW = "kpw"),
-          ($.KRW = "krw"),
-          ($.KWD = "kwd"),
-          ($.KYD = "kyd"),
-          ($.KZT = "kzt"),
-          ($.LAK = "lak"),
-          ($.LBP = "lbp"),
-          ($.LKR = "lkr"),
-          ($.LRD = "lrd"),
-          ($.LSL = "lsl"),
-          ($.LTL = "ltl"),
-          ($.LVL = "lvl"),
-          ($.LYD = "lyd"),
-          ($.MAD = "mad"),
-          ($.MDL = "mdl"),
-          ($.MGA = "mga"),
-          ($.MKD = "mkd"),
-          ($.MMK = "mmk"),
-          ($.MNT = "mnt"),
-          ($.MOP = "mop"),
-          ($.MRO = "mro"),
-          ($.MUR = "mur"),
-          ($.MVR = "mvr"),
-          ($.MWK = "mwk"),
-          ($.MXN = "mxn"),
-          ($.MXV = "mxv"),
-          ($.MYR = "myr"),
-          ($.MZN = "mzn"),
-          ($.NAD = "nad"),
-          ($.NGN = "ngn"),
-          ($.NIO = "nio"),
-          ($.NOK = "nok"),
-          ($.NPR = "npr"),
-          ($.NZD = "nzd"),
-          ($.OMR = "omr"),
-          ($.PAB = "pab"),
-          ($.PEN = "pen"),
-          ($.PGK = "pgk"),
-          ($.PHP = "php"),
-          ($.PKR = "pkr"),
-          ($.PLN = "pln"),
-          ($.PYG = "pyg"),
-          ($.QAR = "qar"),
-          ($.RON = "ron"),
-          ($.RSD = "rsd"),
-          ($.RUB = "rub"),
-          ($.RWF = "rwf"),
-          ($.SAR = "sar"),
-          ($.SBD = "sbd"),
-          ($.SCR = "scr"),
-          ($.SDG = "sdg"),
-          ($.SEK = "sek"),
-          ($.SGD = "sgd"),
-          ($.SHP = "shp"),
-          ($.SLL = "sll"),
-          ($.SOS = "sos"),
-          ($.SRD = "srd"),
-          ($.SSP = "ssp"),
-          ($.STD = "std"),
-          ($.SVC = "svc"),
-          ($.SYP = "syp"),
-          ($.SZL = "szl"),
-          ($.THB = "thb"),
-          ($.TJS = "tjs"),
-          ($.TMT = "tmt"),
-          ($.TND = "tnd"),
-          ($.TOP = "top"),
-          ($.TRY = "try"),
-          ($.TTD = "ttd"),
-          ($.TWD = "twd"),
-          ($.TZS = "tzs"),
-          ($.UAH = "uah"),
-          ($.UGX = "ugx"),
-          ($.USD = "usd"),
-          ($.USN = "usn"),
-          ($.USS = "uss"),
-          ($.UYI = "uyi"),
-          ($.UYU = "uyu"),
-          ($.UZS = "uzs"),
-          ($.VEF = "vef"),
-          ($.VND = "vnd"),
-          ($.VUV = "vuv"),
-          ($.WST = "wst"),
-          ($.XAF = "xaf"),
-          ($.XAG = "xag"),
-          ($.XAU = "xau"),
-          ($.XBA = "xba"),
-          ($.XBB = "xbb"),
-          ($.XBC = "xbc"),
-          ($.XBD = "xbd"),
-          ($.XCD = "xcd"),
-          ($.XDR = "xdr"),
-          ($.XFU = "xfu"),
-          ($.XOF = "xof"),
-          ($.XPD = "xpd"),
-          ($.XPF = "xpf"),
-          ($.XPT = "xpt"),
-          ($.XSU = "xsu"),
-          ($.XTS = "xts"),
-          ($.XUA = "xua"),
-          ($.YER = "yer"),
-          ($.ZAR = "zar"),
-          ($.ZMW = "zmw"),
-          ($.ZWL = "zwl");
-        let tx = "US";
-        ((Z = L || (L = {})).COUNTRY = "US"),
-          (Z.CURRENCY = "usd"),
-          ((J = h || (h = {}))[(J.SINGLE_PLAYER = 1)] = "SINGLE_PLAYER"),
-          (J[(J.ONLINE_MULTIPLAYER = 2)] = "ONLINE_MULTIPLAYER"),
-          (J[(J.LOCAL_MULTIPLAYER = 3)] = "LOCAL_MULTIPLAYER"),
-          (J[(J.PVP = 4)] = "PVP"),
-          (J[(J.LOCAL_COOP = 5)] = "LOCAL_COOP"),
-          (J[(J.CROSS_PLATFORM = 6)] = "CROSS_PLATFORM"),
-          (J[(J.RICH_PRESENCE = 7)] = "RICH_PRESENCE"),
-          (J[(J.DISCORD_GAME_INVITES = 8)] = "DISCORD_GAME_INVITES"),
-          (J[(J.SPECTATOR_MODE = 9)] = "SPECTATOR_MODE"),
-          (J[(J.CONTROLLER_SUPPORT = 10)] = "CONTROLLER_SUPPORT"),
-          (J[(J.CLOUD_SAVES = 11)] = "CLOUD_SAVES"),
-          (J[(J.ONLINE_COOP = 12)] = "ONLINE_COOP"),
-          (J[(J.SECURE_NETWORKING = 13)] = "SECURE_NETWORKING"),
-          ((Q = C || (C = {}))[(Q.ACTION = 1)] = "ACTION"),
-          (Q[(Q.ACTION_RPG = 2)] = "ACTION_RPG"),
-          (Q[(Q.BRAWLER = 3)] = "BRAWLER"),
-          (Q[(Q.HACK_AND_SLASH = 4)] = "HACK_AND_SLASH"),
-          (Q[(Q.PLATFORMER = 5)] = "PLATFORMER"),
-          (Q[(Q.STEALTH = 6)] = "STEALTH"),
-          (Q[(Q.SURVIVAL = 7)] = "SURVIVAL"),
-          (Q[(Q.ADVENTURE = 8)] = "ADVENTURE"),
-          (Q[(Q.ACTION_ADVENTURE = 9)] = "ACTION_ADVENTURE"),
-          (Q[(Q.METROIDVANIA = 10)] = "METROIDVANIA"),
-          (Q[(Q.OPEN_WORLD = 11)] = "OPEN_WORLD"),
-          (Q[(Q.PSYCHOLOGICAL_HORROR = 12)] = "PSYCHOLOGICAL_HORROR"),
-          (Q[(Q.SANDBOX = 13)] = "SANDBOX"),
-          (Q[(Q.SURVIVAL_HORROR = 14)] = "SURVIVAL_HORROR"),
-          (Q[(Q.VISUAL_NOVEL = 15)] = "VISUAL_NOVEL"),
-          (Q[(Q.DRIVING_RACING = 16)] = "DRIVING_RACING"),
-          (Q[(Q.VEHICULAR_COMBAT = 17)] = "VEHICULAR_COMBAT"),
-          (Q[(Q.MASSIVELY_MULTIPLAYER = 18)] = "MASSIVELY_MULTIPLAYER"),
-          (Q[(Q.MMORPG = 19)] = "MMORPG"),
-          (Q[(Q.ROLE_PLAYING = 20)] = "ROLE_PLAYING"),
-          (Q[(Q.DUNGEON_CRAWLER = 21)] = "DUNGEON_CRAWLER"),
-          (Q[(Q.ROGUELIKE = 22)] = "ROGUELIKE"),
-          (Q[(Q.SHOOTER = 23)] = "SHOOTER"),
-          (Q[(Q.LIGHT_GUN = 24)] = "LIGHT_GUN"),
-          (Q[(Q.SHOOT_EM_UP = 25)] = "SHOOT_EM_UP"),
-          (Q[(Q.FPS = 26)] = "FPS"),
-          (Q[(Q.DUAL_JOYSTICK_SHOOTER = 27)] = "DUAL_JOYSTICK_SHOOTER"),
-          (Q[(Q.SIMULATION = 28)] = "SIMULATION"),
-          (Q[(Q.FLIGHT_SIMULATOR = 29)] = "FLIGHT_SIMULATOR"),
-          (Q[(Q.TRAIN_SIMULATOR = 30)] = "TRAIN_SIMULATOR"),
-          (Q[(Q.LIFE_SIMULATOR = 31)] = "LIFE_SIMULATOR"),
-          (Q[(Q.FISHING = 32)] = "FISHING"),
-          (Q[(Q.SPORTS = 33)] = "SPORTS"),
-          (Q[(Q.BASEBALL = 34)] = "BASEBALL"),
-          (Q[(Q.BASKETBALL = 35)] = "BASKETBALL"),
-          (Q[(Q.BILLIARDS = 36)] = "BILLIARDS"),
-          (Q[(Q.BOWLING = 37)] = "BOWLING"),
-          (Q[(Q.BOXING = 38)] = "BOXING"),
-          (Q[(Q.FOOTBALL = 39)] = "FOOTBALL"),
-          (Q[(Q.GOLF = 40)] = "GOLF"),
-          (Q[(Q.HOCKEY = 41)] = "HOCKEY"),
-          (Q[(Q.SKATEBOARDING_SKATING = 42)] = "SKATEBOARDING_SKATING"),
-          (Q[(Q.SNOWBOARDING_SKIING = 43)] = "SNOWBOARDING_SKIING"),
-          (Q[(Q.SOCCER = 44)] = "SOCCER"),
-          (Q[(Q.TRACK_FIELD = 45)] = "TRACK_FIELD"),
-          (Q[(Q.SURFING_WAKEBOARDING = 46)] = "SURFING_WAKEBOARDING"),
-          (Q[(Q.WRESTLING = 47)] = "WRESTLING"),
-          (Q[(Q.STRATEGY = 48)] = "STRATEGY"),
-          (Q[(Q.FOUR_X = 49)] = "FOUR_X"),
-          (Q[(Q.ARTILLERY = 50)] = "ARTILLERY"),
-          (Q[(Q.RTS = 51)] = "RTS"),
-          (Q[(Q.TOWER_DEFENSE = 52)] = "TOWER_DEFENSE"),
-          (Q[(Q.TURN_BASED_STRATEGY = 53)] = "TURN_BASED_STRATEGY"),
-          (Q[(Q.WARGAME = 54)] = "WARGAME"),
-          (Q[(Q.MOBA = 55)] = "MOBA"),
-          (Q[(Q.FIGHTING = 56)] = "FIGHTING"),
-          (Q[(Q.PUZZLE = 57)] = "PUZZLE"),
-          (Q[(Q.CARD_GAME = 58)] = "CARD_GAME"),
-          (Q[(Q.EDUCATION = 59)] = "EDUCATION"),
-          (Q[(Q.FITNESS = 60)] = "FITNESS"),
-          (Q[(Q.GAMBLING = 61)] = "GAMBLING"),
-          (Q[(Q.MUSIC_RHYTHM = 62)] = "MUSIC_RHYTHM"),
-          (Q[(Q.PARTY_MINI_GAME = 63)] = "PARTY_MINI_GAME"),
-          (Q[(Q.PINBALL = 64)] = "PINBALL"),
-          (Q[(Q.TRIVIA_BOARD_GAME = 65)] = "TRIVIA_BOARD_GAME"),
-          (Q[(Q.TACTICAL = 66)] = "TACTICAL"),
-          (Q[(Q.INDIE = 67)] = "INDIE"),
-          (Q[(Q.ARCADE = 68)] = "ARCADE"),
-          (Q[(Q.POINT_AND_CLICK = 69)] = "POINT_AND_CLICK"),
-          ((tt = g || (g = {}))[(tt.GUILD_ROLE_SUBSCRIPTIONS = 1)] =
+          ((J = L || (L = {})).AED = "aed"),
+          (J.AFN = "afn"),
+          (J.ALL = "all"),
+          (J.AMD = "amd"),
+          (J.ANG = "ang"),
+          (J.AOA = "aoa"),
+          (J.ARS = "ars"),
+          (J.AUD = "aud"),
+          (J.AWG = "awg"),
+          (J.AZN = "azn"),
+          (J.BAM = "bam"),
+          (J.BBD = "bbd"),
+          (J.BDT = "bdt"),
+          (J.BGN = "bgn"),
+          (J.BHD = "bhd"),
+          (J.BIF = "bif"),
+          (J.BMD = "bmd"),
+          (J.BND = "bnd"),
+          (J.BOB = "bob"),
+          (J.BOV = "bov"),
+          (J.BRL = "brl"),
+          (J.BSD = "bsd"),
+          (J.BTN = "btn"),
+          (J.BWP = "bwp"),
+          (J.BYN = "byn"),
+          (J.BYR = "byr"),
+          (J.BZD = "bzd"),
+          (J.CAD = "cad"),
+          (J.CDF = "cdf"),
+          (J.CHE = "che"),
+          (J.CHF = "chf"),
+          (J.CHW = "chw"),
+          (J.CLF = "clf"),
+          (J.CLP = "clp"),
+          (J.CNY = "cny"),
+          (J.COP = "cop"),
+          (J.COU = "cou"),
+          (J.CRC = "crc"),
+          (J.CUC = "cuc"),
+          (J.CUP = "cup"),
+          (J.CVE = "cve"),
+          (J.CZK = "czk"),
+          (J.DJF = "djf"),
+          (J.DKK = "dkk"),
+          (J.DOP = "dop"),
+          (J.DZD = "dzd"),
+          (J.EGP = "egp"),
+          (J.ERN = "ern"),
+          (J.ETB = "etb"),
+          (J.EUR = "eur"),
+          (J.FJD = "fjd"),
+          (J.FKP = "fkp"),
+          (J.GBP = "gbp"),
+          (J.GEL = "gel"),
+          (J.GHS = "ghs"),
+          (J.GIP = "gip"),
+          (J.GMD = "gmd"),
+          (J.GNF = "gnf"),
+          (J.GTQ = "gtq"),
+          (J.GYD = "gyd"),
+          (J.HKD = "hkd"),
+          (J.HNL = "hnl"),
+          (J.HRK = "hrk"),
+          (J.HTG = "htg"),
+          (J.HUF = "huf"),
+          (J.IDR = "idr"),
+          (J.ILS = "ils"),
+          (J.INR = "inr"),
+          (J.IQD = "iqd"),
+          (J.IRR = "irr"),
+          (J.ISK = "isk"),
+          (J.JMD = "jmd"),
+          (J.JOD = "jod"),
+          (J.JPY = "jpy"),
+          (J.KES = "kes"),
+          (J.KGS = "kgs"),
+          (J.KHR = "khr"),
+          (J.KMF = "kmf"),
+          (J.KPW = "kpw"),
+          (J.KRW = "krw"),
+          (J.KWD = "kwd"),
+          (J.KYD = "kyd"),
+          (J.KZT = "kzt"),
+          (J.LAK = "lak"),
+          (J.LBP = "lbp"),
+          (J.LKR = "lkr"),
+          (J.LRD = "lrd"),
+          (J.LSL = "lsl"),
+          (J.LTL = "ltl"),
+          (J.LVL = "lvl"),
+          (J.LYD = "lyd"),
+          (J.MAD = "mad"),
+          (J.MDL = "mdl"),
+          (J.MGA = "mga"),
+          (J.MKD = "mkd"),
+          (J.MMK = "mmk"),
+          (J.MNT = "mnt"),
+          (J.MOP = "mop"),
+          (J.MRO = "mro"),
+          (J.MUR = "mur"),
+          (J.MVR = "mvr"),
+          (J.MWK = "mwk"),
+          (J.MXN = "mxn"),
+          (J.MXV = "mxv"),
+          (J.MYR = "myr"),
+          (J.MZN = "mzn"),
+          (J.NAD = "nad"),
+          (J.NGN = "ngn"),
+          (J.NIO = "nio"),
+          (J.NOK = "nok"),
+          (J.NPR = "npr"),
+          (J.NZD = "nzd"),
+          (J.OMR = "omr"),
+          (J.PAB = "pab"),
+          (J.PEN = "pen"),
+          (J.PGK = "pgk"),
+          (J.PHP = "php"),
+          (J.PKR = "pkr"),
+          (J.PLN = "pln"),
+          (J.PYG = "pyg"),
+          (J.QAR = "qar"),
+          (J.RON = "ron"),
+          (J.RSD = "rsd"),
+          (J.RUB = "rub"),
+          (J.RWF = "rwf"),
+          (J.SAR = "sar"),
+          (J.SBD = "sbd"),
+          (J.SCR = "scr"),
+          (J.SDG = "sdg"),
+          (J.SEK = "sek"),
+          (J.SGD = "sgd"),
+          (J.SHP = "shp"),
+          (J.SLL = "sll"),
+          (J.SOS = "sos"),
+          (J.SRD = "srd"),
+          (J.SSP = "ssp"),
+          (J.STD = "std"),
+          (J.SVC = "svc"),
+          (J.SYP = "syp"),
+          (J.SZL = "szl"),
+          (J.THB = "thb"),
+          (J.TJS = "tjs"),
+          (J.TMT = "tmt"),
+          (J.TND = "tnd"),
+          (J.TOP = "top"),
+          (J.TRY = "try"),
+          (J.TTD = "ttd"),
+          (J.TWD = "twd"),
+          (J.TZS = "tzs"),
+          (J.UAH = "uah"),
+          (J.UGX = "ugx"),
+          (J.USD = "usd"),
+          (J.USN = "usn"),
+          (J.USS = "uss"),
+          (J.UYI = "uyi"),
+          (J.UYU = "uyu"),
+          (J.UZS = "uzs"),
+          (J.VEF = "vef"),
+          (J.VND = "vnd"),
+          (J.VUV = "vuv"),
+          (J.WST = "wst"),
+          (J.XAF = "xaf"),
+          (J.XAG = "xag"),
+          (J.XAU = "xau"),
+          (J.XBA = "xba"),
+          (J.XBB = "xbb"),
+          (J.XBC = "xbc"),
+          (J.XBD = "xbd"),
+          (J.XCD = "xcd"),
+          (J.XDR = "xdr"),
+          (J.XFU = "xfu"),
+          (J.XOF = "xof"),
+          (J.XPD = "xpd"),
+          (J.XPF = "xpf"),
+          (J.XPT = "xpt"),
+          (J.XSU = "xsu"),
+          (J.XTS = "xts"),
+          (J.XUA = "xua"),
+          (J.YER = "yer"),
+          (J.ZAR = "zar"),
+          (J.ZMW = "zmw"),
+          (J.ZWL = "zwl");
+        let tW = "US";
+        ((Q = h || (h = {})).COUNTRY = "US"),
+          (Q.CURRENCY = "usd"),
+          ((tt = C || (C = {}))[(tt.SINGLE_PLAYER = 1)] = "SINGLE_PLAYER"),
+          (tt[(tt.ONLINE_MULTIPLAYER = 2)] = "ONLINE_MULTIPLAYER"),
+          (tt[(tt.LOCAL_MULTIPLAYER = 3)] = "LOCAL_MULTIPLAYER"),
+          (tt[(tt.PVP = 4)] = "PVP"),
+          (tt[(tt.LOCAL_COOP = 5)] = "LOCAL_COOP"),
+          (tt[(tt.CROSS_PLATFORM = 6)] = "CROSS_PLATFORM"),
+          (tt[(tt.RICH_PRESENCE = 7)] = "RICH_PRESENCE"),
+          (tt[(tt.DISCORD_GAME_INVITES = 8)] = "DISCORD_GAME_INVITES"),
+          (tt[(tt.SPECTATOR_MODE = 9)] = "SPECTATOR_MODE"),
+          (tt[(tt.CONTROLLER_SUPPORT = 10)] = "CONTROLLER_SUPPORT"),
+          (tt[(tt.CLOUD_SAVES = 11)] = "CLOUD_SAVES"),
+          (tt[(tt.ONLINE_COOP = 12)] = "ONLINE_COOP"),
+          (tt[(tt.SECURE_NETWORKING = 13)] = "SECURE_NETWORKING"),
+          ((te = g || (g = {}))[(te.ACTION = 1)] = "ACTION"),
+          (te[(te.ACTION_RPG = 2)] = "ACTION_RPG"),
+          (te[(te.BRAWLER = 3)] = "BRAWLER"),
+          (te[(te.HACK_AND_SLASH = 4)] = "HACK_AND_SLASH"),
+          (te[(te.PLATFORMER = 5)] = "PLATFORMER"),
+          (te[(te.STEALTH = 6)] = "STEALTH"),
+          (te[(te.SURVIVAL = 7)] = "SURVIVAL"),
+          (te[(te.ADVENTURE = 8)] = "ADVENTURE"),
+          (te[(te.ACTION_ADVENTURE = 9)] = "ACTION_ADVENTURE"),
+          (te[(te.METROIDVANIA = 10)] = "METROIDVANIA"),
+          (te[(te.OPEN_WORLD = 11)] = "OPEN_WORLD"),
+          (te[(te.PSYCHOLOGICAL_HORROR = 12)] = "PSYCHOLOGICAL_HORROR"),
+          (te[(te.SANDBOX = 13)] = "SANDBOX"),
+          (te[(te.SURVIVAL_HORROR = 14)] = "SURVIVAL_HORROR"),
+          (te[(te.VISUAL_NOVEL = 15)] = "VISUAL_NOVEL"),
+          (te[(te.DRIVING_RACING = 16)] = "DRIVING_RACING"),
+          (te[(te.VEHICULAR_COMBAT = 17)] = "VEHICULAR_COMBAT"),
+          (te[(te.MASSIVELY_MULTIPLAYER = 18)] = "MASSIVELY_MULTIPLAYER"),
+          (te[(te.MMORPG = 19)] = "MMORPG"),
+          (te[(te.ROLE_PLAYING = 20)] = "ROLE_PLAYING"),
+          (te[(te.DUNGEON_CRAWLER = 21)] = "DUNGEON_CRAWLER"),
+          (te[(te.ROGUELIKE = 22)] = "ROGUELIKE"),
+          (te[(te.SHOOTER = 23)] = "SHOOTER"),
+          (te[(te.LIGHT_GUN = 24)] = "LIGHT_GUN"),
+          (te[(te.SHOOT_EM_UP = 25)] = "SHOOT_EM_UP"),
+          (te[(te.FPS = 26)] = "FPS"),
+          (te[(te.DUAL_JOYSTICK_SHOOTER = 27)] = "DUAL_JOYSTICK_SHOOTER"),
+          (te[(te.SIMULATION = 28)] = "SIMULATION"),
+          (te[(te.FLIGHT_SIMULATOR = 29)] = "FLIGHT_SIMULATOR"),
+          (te[(te.TRAIN_SIMULATOR = 30)] = "TRAIN_SIMULATOR"),
+          (te[(te.LIFE_SIMULATOR = 31)] = "LIFE_SIMULATOR"),
+          (te[(te.FISHING = 32)] = "FISHING"),
+          (te[(te.SPORTS = 33)] = "SPORTS"),
+          (te[(te.BASEBALL = 34)] = "BASEBALL"),
+          (te[(te.BASKETBALL = 35)] = "BASKETBALL"),
+          (te[(te.BILLIARDS = 36)] = "BILLIARDS"),
+          (te[(te.BOWLING = 37)] = "BOWLING"),
+          (te[(te.BOXING = 38)] = "BOXING"),
+          (te[(te.FOOTBALL = 39)] = "FOOTBALL"),
+          (te[(te.GOLF = 40)] = "GOLF"),
+          (te[(te.HOCKEY = 41)] = "HOCKEY"),
+          (te[(te.SKATEBOARDING_SKATING = 42)] = "SKATEBOARDING_SKATING"),
+          (te[(te.SNOWBOARDING_SKIING = 43)] = "SNOWBOARDING_SKIING"),
+          (te[(te.SOCCER = 44)] = "SOCCER"),
+          (te[(te.TRACK_FIELD = 45)] = "TRACK_FIELD"),
+          (te[(te.SURFING_WAKEBOARDING = 46)] = "SURFING_WAKEBOARDING"),
+          (te[(te.WRESTLING = 47)] = "WRESTLING"),
+          (te[(te.STRATEGY = 48)] = "STRATEGY"),
+          (te[(te.FOUR_X = 49)] = "FOUR_X"),
+          (te[(te.ARTILLERY = 50)] = "ARTILLERY"),
+          (te[(te.RTS = 51)] = "RTS"),
+          (te[(te.TOWER_DEFENSE = 52)] = "TOWER_DEFENSE"),
+          (te[(te.TURN_BASED_STRATEGY = 53)] = "TURN_BASED_STRATEGY"),
+          (te[(te.WARGAME = 54)] = "WARGAME"),
+          (te[(te.MOBA = 55)] = "MOBA"),
+          (te[(te.FIGHTING = 56)] = "FIGHTING"),
+          (te[(te.PUZZLE = 57)] = "PUZZLE"),
+          (te[(te.CARD_GAME = 58)] = "CARD_GAME"),
+          (te[(te.EDUCATION = 59)] = "EDUCATION"),
+          (te[(te.FITNESS = 60)] = "FITNESS"),
+          (te[(te.GAMBLING = 61)] = "GAMBLING"),
+          (te[(te.MUSIC_RHYTHM = 62)] = "MUSIC_RHYTHM"),
+          (te[(te.PARTY_MINI_GAME = 63)] = "PARTY_MINI_GAME"),
+          (te[(te.PINBALL = 64)] = "PINBALL"),
+          (te[(te.TRIVIA_BOARD_GAME = 65)] = "TRIVIA_BOARD_GAME"),
+          (te[(te.TACTICAL = 66)] = "TACTICAL"),
+          (te[(te.INDIE = 67)] = "INDIE"),
+          (te[(te.ARCADE = 68)] = "ARCADE"),
+          (te[(te.POINT_AND_CLICK = 69)] = "POINT_AND_CLICK"),
+          ((tr = P || (P = {}))[(tr.GUILD_ROLE_SUBSCRIPTIONS = 1)] =
             "GUILD_ROLE_SUBSCRIPTIONS"),
-          (tt[(tt.GUILD_PRODUCTS = 2)] = "GUILD_PRODUCTS"),
-          ((te = P || (P = {})).PERMISSION_DENIED = "PERMISSION_DENIED"),
-          (te.PERMISSION_DISMISSED = "PERMISSION_DISMISSED"),
-          (te.NO_DEVICES_FOUND = "NO_DEVICES_FOUND"),
-          ((tr = M || (M = {})).SWIPE = "SWIPE"),
-          (tr.BROWSER = "BROWSER"),
-          (tr.KEYBIND = "KEYBIND"),
-          ((tn = U || (U = {}))[(tn.IN_PROMPT = 1)] = "IN_PROMPT");
+          (tr[(tr.GUILD_PRODUCTS = 2)] = "GUILD_PRODUCTS"),
+          ((tn = M || (M = {})).PERMISSION_DENIED = "PERMISSION_DENIED"),
+          (tn.PERMISSION_DISMISSED = "PERMISSION_DISMISSED"),
+          (tn.NO_DEVICES_FOUND = "NO_DEVICES_FOUND"),
+          ((t_ = U || (U = {})).SWIPE = "SWIPE"),
+          (t_.BROWSER = "BROWSER"),
+          (t_.KEYBIND = "KEYBIND"),
+          ((ta = G || (G = {}))[(ta.IN_PROMPT = 1)] = "IN_PROMPT");
       },
       691324: function (t, e, r) {
         "use strict";
@@ -37769,18 +37781,18 @@ Error:`,
                     return "hcg";
                 },
               });
-            var q = o.unpack,
-              $ = o.last,
+            var $ = o.unpack,
+              q = o.last,
               Z = Math.round,
               J = function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
-                var r = q(t, "rgba"),
+                var r = $(t, "rgba"),
                   n = r[0],
                   _ = r[1],
                   a = r[2],
                   i = r[3],
-                  o = $(t) || "auto";
+                  o = q(t) || "auto";
                 void 0 === i && (i = 1),
                   "auto" === o && (o = i < 1 ? "rgba" : "rgb"),
                   (n = Z(n)),
@@ -38192,8 +38204,8 @@ Error:`,
               tX = o.unpack,
               tj = o.unpack,
               tz = o.DEG2RAD,
-              tq = Math.sin,
-              t$ = Math.cos,
+              t$ = Math.sin,
+              tq = Math.cos,
               tZ = function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
@@ -38201,7 +38213,7 @@ Error:`,
                   n = r[0],
                   _ = r[1],
                   a = r[2];
-                return isNaN(a) && (a = 0), [n, t$((a *= tz)) * _, tq(a) * _];
+                return isNaN(a) && (a = 0), [n, tq((a *= tz)) * _, t$(a) * _];
               },
               tJ = o.unpack,
               tQ = function () {
@@ -39008,7 +39020,7 @@ Error:`,
               },
               ej = o.type,
               ez = Math.pow,
-              eq = function (t) {
+              e$ = function (t) {
                 var e = "rgb",
                   r = T("#ccc"),
                   n = 0,
@@ -39250,7 +39262,7 @@ Error:`,
                   f
                 );
               },
-              e$ = function (t) {
+              eq = function (t) {
                 for (var e = [1, 1], r = 1; r < t; r++) {
                   for (var n = [1], _ = 1; _ <= e.length; _++)
                     n[_] = (e[_] || 0) + e[_ - 1];
@@ -39320,7 +39332,7 @@ Error:`,
                   (s = t.map(function (t) {
                     return t.lab();
                   })),
-                    (c = e$((I = t.length - 1))),
+                    (c = eq((I = t.length - 1))),
                     (_ = function (t) {
                       var e = 1 - t;
                       return new R(
@@ -40039,7 +40051,7 @@ Error:`,
                 var e = eZ(t);
                 return (
                   (e.scale = function () {
-                    return eq(e);
+                    return e$(e);
                   }),
                   e
                 );
@@ -40108,7 +40120,7 @@ Error:`,
                   t += "0123456789abcdef".charAt(e8(16 * e7()));
                 return new R(t, "hex");
               }),
-              (T.scale = eq),
+              (T.scale = e$),
               (T.analyze = ra),
               (T.contrast = function (t, e) {
                 (t = new R(t)), (e = new R(e));
@@ -40205,10 +40217,10 @@ Error:`,
               }),
               (T.scales = {
                 cool: function () {
-                  return eq([T.hsl(180, 1, 0.9), T.hsl(250, 0.7, 0.4)]);
+                  return e$([T.hsl(180, 1, 0.9), T.hsl(250, 0.7, 0.4)]);
                 },
                 hot: function () {
-                  return eq(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
+                  return e$(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
                 },
               }),
               (T.colors = t6),
@@ -40284,4 +40296,4 @@ Error:`,
     window.DiscordSentry = (0, t.j)();
   })();
 })();
-//# sourceMappingURL=sentry.31bc97058817cfecad80.js.map
+//# sourceMappingURL=sentry.bbc107250df44bc7ff36.js.map
