@@ -29391,17 +29391,29 @@ h3.improved_f017d0:after {
 .voiceChannel_ae1fa2 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.voiceChannelDetails_ae1fa2 {
-  display: flex;
-  align-items: center;
   gap: 4px;
 }
-.voiceChannelInfo_ae1fa2 {
+.voiceChannelText_ae1fa2 {
+  flex: 1;
+  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 2px;
+}
+.voiceChannelText_ae1fa2 .clickable_ae1fa2 {
+  overflow: hidden;
+}
+.voiceChannelText_ae1fa2 .voiceIcon_ae1fa2 {
+  flex-shrink: 0;
+}
+.voiceChannelHeading_ae1fa2 {
+  overflow: hidden;
+  word-break: break-all;
+}
+.voiceChannelHeading_ae1fa2 .voiceIcon_ae1fa2 {
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
 }
 .voiceChannelDivider_ae1fa2 {
   height: 1px;
@@ -45558,4 +45570,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.33d01bd2130684f3ec99.css.map*/
+/*# sourceMappingURL=12633.f942ea4dd27c6a6f906f.css.map*/
