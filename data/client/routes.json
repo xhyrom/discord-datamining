@@ -342,6 +342,8 @@
     "url": "/guilds/:param/roles/:param",
     "allowed_methods": [
       "DELETE",
+      "GET",
+      "HEAD",
       "OPTIONS",
       "PATCH"
     ]
