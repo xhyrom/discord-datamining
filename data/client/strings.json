@@ -7083,6 +7083,7 @@
   "REFERRAL_INCENTIVE_KEEP_SHARING_TO_EARN_ANOTHER_DISCOUNT": "\"Nice work. Keep sharing to earn another discount and more passes. [Learn more]({learnMoreLink}).\"",
   "REFERRAL_INCENTIVE_NITRO_FRIEND_PASSES_INCOMING": "\"Nitro Friend Passes Incoming\"",
   "REFERRAL_INCENTIVE_FRIEND_PASS_COUNTDOWN_HAS_BEGUN": "\"The countdown has begun! You’ll get more Nitro friend passes in {numberOfTimerPeriods} {timePeriodInterval}. [Learn more]({learnMoreLink}).\"",
+  "REFERRAL_INCENTIVE_FRIEND_PASS_COUNTDOWN_HAS_BEGUN_V2": "\"The countdown has begun! You’ll get more Nitro friend passes in {numberOfTimePeriods, plural, =1 {# month} other {# months}}. [Learn more]({learnMoreLink}).\"",
   "REFERRAL_INCENTIVE_MORE_FRIEND_PASSES_ALMOST_HERE": "\"More Nitro friend passes are almost here! Might be time to review who’s on your nice list. [Learn more]({learnMoreLink}).\"",
   "REFERRAL_INCENTIVE_GET_DISCOUNT_OFF_YOUR_NEXT_MONTH": "\"Get {discountRate} off your next month or year of Nitro when a friend becomes a paying member.\"",
   "REFERRAL_INCENTIVE_SELECT_3_FRIENDS_TO_SHARE_PASS": "\"Select up to 3 friends to share a Nitro friend pass with. The pass will be sent in a direct message.\"",
