@@ -40,8 +40,6 @@
           >Zenless Zone Zero</a
         >
       </li>
-      <li><a href="#h_01J1AK4JDWX63NDT2EJFNQ1WH1">Console Gaming</a></li>
-      <li><a href="#h_01HXSYAWEMHMCTSD1HCX0RBPES">PUBG: BATTLEGROUNDS </a></li>
     </ul>
   </li>
   <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
@@ -144,38 +142,6 @@
   <strong>July 15, 2024 (5:00PM PST)</strong>. The Version 1.0 bundle needs to
   be redeemed by <strong>August 14, 2024 (3:00AM PST)</strong>. Quest
   requirements must be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J1AK4JDWX63NDT2EJFNQ1WH1">
-  <a
-    href="https://support.discord.com/hc/articles/24342965982871"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Console Gaming Quest</a
-  >
-</h2>
-<p>
-  The <strong>Console Gaming Quest </strong>can be accepted on Discord from
-  <strong>June 26, 2024 </strong>until
-  <strong>July 10, 2024 (11:59PM UTC)</strong>.The Warp Helmet avatar decoration
-  needs to be redeemed by <strong>August 9, 2024.</strong> 
-</p>
-<p>
-  Quest requirements must be completed during this period to receive the reward.
-</p>
-<h2 id="h_01HXSYAWEMHMCTSD1HCX0RBPES">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/23351867829527/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >PUBG: BATTLEGROUNDS - Erangel Classic Quest</a
-  >
-</h2>
-<p>
-  The <strong>Erangel Classic Quest</strong> can be accepted on Discord from
-  <strong>May 14, 2024</strong> until
-  <strong>May 28, 2024 (11:59PM UTC)</strong>. Quest requirements must be
-  completed during this period to receive the reward. Reward gift codes expire
-  <strong>August 11, 2024</strong>.
 </p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
 <p>
