@@ -473,6 +473,10 @@
       "OPTIONS"
     ]
   },
+  "DISCOVERY_RECOMMENDATIONS": {
+    "url": "/discovery/recommendations",
+    "allowed_methods": null
+  },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
     "allowed_methods": [
@@ -5037,6 +5041,10 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "CAMPAIGN_CONTEXT": {
+    "url": "/users/@me/billing/campaign-context",
+    "allowed_methods": null
   },
   "SIMILAR_GAMES": {
     "url": "/content-inventory/users/@me/similar-games/:param",
