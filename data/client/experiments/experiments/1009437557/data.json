@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-06_rtc_voice_state_sync_experiment",
-    "label": "RTC and Voice State Desync Fixes",
+    "id": "2024-07_cash_app_pay_awareness_campaign",
+    "label": "cash_app_pay_awareness",
     "description": [
       "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Desync fixes enabled"
+      "Treatment 0: Users will not see the nagbar",
+      "Treatment 1: Users will see the nagbar"
     ],
-    "hash": 1254450589,
+    "hash": 1009437557,
     "buckets": [
       -1,
       0,
