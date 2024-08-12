@@ -15109,7 +15109,22 @@ div.cardContainer_c22357 {
   width: 64px;
   height: 64px;
 }
-.questRewardTile_cc6d33:before {
+.rewardHighlight_cc6d33 {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.rewardHighlight_cc6d33:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  box-sizing: border-box;
+  border: 1px solid hsl(var(--white-500-hsl) / 0.15);
+}
+.borderOverlay_cc6d33:before {
   border: 2px solid var(--white-500);
   border-radius: inherit;
   box-sizing: border-box;
@@ -15163,6 +15178,33 @@ div.cardContainer_c22357 {
 }
 .hideLearnMore_cc6d33 {
   cursor: default;
+}
+@keyframes Shine_cc6d33 {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translate3d(150%, 0, 0);
+  }
+}
+.shine_cc6d33 {
+  color: hsl(var(--white-500-hsl) / 0.1);
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+}
+.reduce-motion .shine_cc6d33 {
+  opacity: 0;
+}
+.full-motion .shine_cc6d33 {
+  animation-delay: 0.75s;
+  animation-duration: 2s;
+  animation-name: Shine_cc6d33;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 @keyframes uploadIconAnimateInLeft_f82cc7 {
   0% {
@@ -45570,4 +45612,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.f942ea4dd27c6a6f906f.css.map*/
+/*# sourceMappingURL=12633.97ce2675e48a01f5c7a1.css.map*/
