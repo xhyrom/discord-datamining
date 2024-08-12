@@ -9153,14 +9153,14 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   color: var(--status-warning-text);
 }
 .colorWarning_be03aa .button_be03aa {
-  border-color: var(--black-500) !important;
-  color: var(--black-500);
+  border-color: var(--status-warning-text) !important;
+  color: var(--status-warning-text);
 }
 .colorWarning_be03aa .button_be03aa:hover {
   background-color: rgba(255, 255, 255, 0.26667) !important;
 }
 .colorWarning_be03aa .button_be03aa:hover {
-  color: var(--black-500);
+  color: var(--status-warning-text);
 }
 .colorWarning_be03aa .closeIcon_be03aa path {
   fill: var(--black-500);
@@ -45550,4 +45550,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.26c7a7498c35400b7ecb.css.map*/
+/*# sourceMappingURL=12633.5cb3edcb8193c35b150e.css.map*/
