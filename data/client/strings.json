@@ -570,7 +570,6 @@
   "APP_LAUNCHER_APP_CARD_ARIA_LABEL": "\"{applicationName} {applicationDescription}\"",
   "APP_LAUNCHER_SEND_COMMAND_ARIA_LABEL": "\"Send {commandName}\"",
   "APP_LAUNCHER_ACTIVITY_ITEM_SELECTED_BUTTON_ARIA_LABEL": "\"{buttonText} {applicationName}\"",
-  "APP_IMAGE_REC_USE_APP_TOOLTIP": "\"Use an App\"",
   "APP_IMAGE_REC_MENU_ARIA_LABEL": "\"Image Command Actions\"",
   "APP_IMAGE_REC_MENU_HEADER": "\"Edit Image with Apps\"",
   "APP_IMAGE_REC_MENU_SEND_LABEL": "\"Send\"",
