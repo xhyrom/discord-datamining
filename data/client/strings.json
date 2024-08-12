@@ -17433,7 +17433,6 @@
   "QUESTS_CONNECT_CONSOLE": "\"Connect Console\"",
   "QUESTS_VIEW_MORE_ACCOUNTS": "\"View more accounts\"",
   "QUESTS_CLAIMED_QUEST_EMPTY_STATE": "\"You haven't completed any Quests yet! [See all Quests](onClick)\"",
-  "QUESTS_PROGRESS": "\"{percent}%\"",
   "QUESTS_REWARD_VERIFICATION_TITLE": "\"Verify your account to claim rewards!\"",
   "QUESTS_REWARD_VERIFICATION_BODY": "\"We have sent a verification email to: [{emailAddress}]({emailAddressLink})\"",
   "QUESTS_REWARD_VERIFICATION_ERROR": "\"Uh oh! We failed to send you a verification email.\"",
