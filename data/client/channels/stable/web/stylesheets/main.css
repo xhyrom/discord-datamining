@@ -6404,6 +6404,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   margin-top: 2px;
   white-space: normal;
 }
+.subtextLineClamp_d90b3d {
+  white-space: pre;
+}
 .iconContainer_d90b3d {
   position: relative;
   flex: 0 0 auto;
@@ -6419,7 +6422,14 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   width: 18px;
   height: 18px;
 }
-.imageContainer_d90b3d,
+.imageContainer_d90b3d {
+  flex: 0 0 auto;
+  margin-left: 8px;
+}
+.imageContainerLeft_d90b3d {
+  margin-left: 0;
+  margin-right: 8px;
+}
 .hintContainer_d90b3d {
   flex: 0 0 auto;
   max-height: 18px;
@@ -6460,8 +6470,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .colorDefault_d90b3d .subtext_d90b3d {
   color: var(--text-muted);
-  font-size: 12px;
-  line-height: 16px;
 }
 .colorDefault_d90b3d .checkbox_d90b3d,
 .colorDefault_d90b3d .radioSelection_d90b3d {
@@ -9153,14 +9161,14 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   color: var(--status-warning-text);
 }
 .colorWarning_be03aa .button_be03aa {
-  border-color: var(--black-500) !important;
-  color: var(--black-500);
+  border-color: var(--status-warning-text) !important;
+  color: var(--status-warning-text);
 }
 .colorWarning_be03aa .button_be03aa:hover {
   background-color: rgba(255, 255, 255, 0.26667) !important;
 }
 .colorWarning_be03aa .button_be03aa:hover {
-  color: var(--black-500);
+  color: var(--status-warning-text);
 }
 .colorWarning_be03aa .closeIcon_be03aa path {
   fill: var(--black-500);
@@ -45550,4 +45558,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.26c7a7498c35400b7ecb.css.map*/
+/*# sourceMappingURL=12633.33d01bd2130684f3ec99.css.map*/
