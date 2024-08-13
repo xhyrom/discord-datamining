@@ -685,9 +685,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   height: auto;
   padding: 0 4px;
 }
-.sizeMin_dd4f85 .contents_dd4f85 {
-  display: inline;
-}
 .sizeMax_dd4f85 {
   width: 100%;
   height: 100%;
@@ -1010,6 +1007,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .lookLink_dd4f85.colorTransparent_dd4f85 {
   color: var(--text-normal);
+}
+.lookLink_dd4f85.sizeMin_dd4f85 .contents_dd4f85 {
+  display: inline;
 }
 .scrollerBase_eed6a8 {
   position: relative;
@@ -45612,4 +45612,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.97ce2675e48a01f5c7a1.css.map*/
+/*# sourceMappingURL=12633.1e7f618926170a981b9c.css.map*/
