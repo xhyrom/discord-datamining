@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7472970002](https://discord.com/jobs/7472970002)
 
-**Updated At:** Thu, 08 Aug 2024 19:42:09 GMT
+**Updated At:** Tue, 13 Aug 2024 16:25:31 GMT
 
 **Job Description:**
 This position is US based only.Discord is the place for all things gaming.&amp;nbsp; Discord is the place where players have their entire hangout experience with friends – from before, during, and after gaming sessions.&amp;nbsp; Discord is also the place where every major game publisher and studio maintains an official community.&amp;nbsp; And finally Discord is the place where the latest news, beta codes, and big gaming moments happen.&amp;nbsp;&amp;nbsp;
@@ -37,7 +37,7 @@ You will demonstrate expertise around the gaming, media, marketing, and advertis
 
 What you should have
 
-4 to 8 years of direct experience in in media buying, brand marketing digital advertising, and ad sales in the gaming industry&amp;nbsp;
+4 years of direct experience in in media buying, brand marketing digital advertising, and ad sales in the gaming industry&amp;nbsp;
 Proven experience in delivering against account and revenue goals
 Experience in managing gaming clients throughout the funnel with a deep understanding of their challenges and objectives
 Experience in building relationships with top marketing decision-makers at game publishers and their agencies
@@ -47,7 +47,7 @@ Experience with marketing and ad technology ecosystem including ability to colle
 Experience in negotiating and structuring standard and non-standard ad-buying agreements
 Willingness to travel for regional in-person client meetings
 
-The total annual target compensation range for this full-time position is $255,000 to $320,850 + equity + benefits. Our compensation ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed reflect the OTE (base salary + target variable compensation) only, and do not include equity, or benefits. &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;
+The total annual target compensation range for this full-time position is $183,350 to $320,850 + equity + benefits. Our compensation ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed reflect the OTE (base salary + target variable compensation) only, and do not include equity, or benefits. &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;
 #LI-remotePlease see our Applicant and Candidate Privacy Policy for details regarding Discord's collection and use of personal information relating to the application and recruitment process by clicking here.&amp;nbsp;Discord is an equal opportunity employer that believes diversity inspires creativity and innovation. We are committed to fostering an inclusive environment where employees can do their best work free of harassment or discrimination, regardless of race, ethnicity, religion, gender identity or expression, sexual orientation, age, disability, military status, or any other protected characteristics or identities. We encourage all candidates to apply for roles where they may make the most impact.
 About Us
 Discord is a voice, video and text app that helps friends come together to hang out, have fun, and play games. With over 150 million monthly users, Discord has grown to become one of the most popular communications services in the world. Discord offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
