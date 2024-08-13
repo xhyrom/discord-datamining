@@ -5050,7 +5050,11 @@
   },
   "CAMPAIGN_CONTEXT": {
     "url": "/users/@me/billing/campaign-context",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SIMILAR_GAMES": {
     "url": "/content-inventory/users/@me/similar-games/:param",
