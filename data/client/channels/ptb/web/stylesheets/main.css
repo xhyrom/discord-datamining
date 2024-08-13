@@ -29377,13 +29377,20 @@ h3.improved_f017d0:after {
   position: relative;
   overflow: visible;
   display: flex;
-  justify-content: center;
-  min-width: 60px;
-  max-height: 100px;
+  height: -moz-max-content;
+  height: max-content;
+  aspect-ratio: 1/1;
+}
+.imagePosition_ae1fa2.aspectRatioCrunchyroll_ae1fa2 {
+  aspect-ratio: 2/3;
 }
 .imageContainer_ae1fa2 {
   display: flex;
+  justify-content: center;
   border-radius: var(--radius-xs);
+}
+.imageContainer_ae1fa2 .contentImage_ae1fa2 {
+  min-width: 60px;
 }
 .richImageContainer_ae1fa2 {
   position: absolute;
@@ -29398,13 +29405,9 @@ h3.improved_f017d0:after {
   height: 28px;
   flex-shrink: 0;
 }
-.imageAspectRatioDefault_ae1fa2 {
-  aspect-ratio: 1/1;
-}
-.imageAspectRatioCrunchyroll_ae1fa2 {
-  aspect-ratio: 2/3;
-}
 .contentImage_ae1fa2 {
+  -o-object-fit: cover;
+  object-fit: cover;
   border-radius: inherit;
 }
 .hangStatusIconBackground_ae1fa2 {
@@ -45612,4 +45615,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.1e7f618926170a981b9c.css.map*/
+/*# sourceMappingURL=12633.8dfd6abdd4c28a1fc684.css.map*/
