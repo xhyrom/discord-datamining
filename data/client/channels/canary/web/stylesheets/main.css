@@ -29348,7 +29348,7 @@ h3.improved_f017d0:after {
   display: flex;
   flex-direction: column;
   align-self: center;
-  gap: 8px;
+  gap: 4px;
   width: 100%;
 }
 .actions_ae1fa2 {
@@ -29490,6 +29490,7 @@ h3.improved_f017d0:after {
 .contextMenu_ae1fa2 {
   display: flex;
   cursor: pointer;
+  margin-right: 4px;
 }
 .timestamp_c5d1c1 {
   font-family: var(--font-code);
@@ -45637,4 +45638,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.f1fc8821286e74ee627c.css.map*/
+/*# sourceMappingURL=12633.a855489007e3504edb5c.css.map*/
