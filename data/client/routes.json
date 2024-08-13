@@ -554,6 +554,10 @@
       "OPTIONS"
     ]
   },
+  "GUILD_TOP_GAMES": {
+    "url": "/guilds/:param/top-games",
+    "allowed_methods": null
+  },
   "GUILD_TOP_READ_CHANNELS": {
     "url": "/guilds/:param/top-read-channels",
     "allowed_methods": [
