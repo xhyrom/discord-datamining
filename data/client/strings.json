@@ -18565,7 +18565,7 @@
   "CLAN_DISCOVERY_UPSELL_JOIN_WFS": "\"Questions? Head over to the $[Wumpus Feedback Squad](wfsHook) server to ask Discord questions or give feedback!\"",
   "CLAN_DISCOVERY_UPSELL_JOIN_WFS_ARIA_LABEL": "\"Join Wumpus Feedback Squad server\"",
   "CLAN_DISCOVERY_APPLICATION_DISABLED_TOOLTIP": "\"You cannot apply to Guilds right now\"",
-  "CLAN_DISCOVERY_APPLICATION_MAX_MEMBERS": "\"This Guild is at maximum capacity. You may want to apply for more Guilds.\"",
+  "CLAN_DISCOVERY_APPLICATION_MAX_MEMBERS": "\"This Guild is at maximum capacity. You may want to apply for other Guilds.\"",
   "CLAN_CARD_BADGE_APPLIED": "\"Applied\"",
   "CLAN_MEMBER_APPLICATION_REPORT_CTA": "\"Report Applicant\"",
   "CLAN_MEMBER_APPLICATION_REPORT_REASON_ABUSIVE": "\"Abuse or harassment\"",
