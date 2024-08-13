@@ -17844,6 +17844,9 @@ span.clanTag_a31c43 {
   top: calc(0.5 * (-56px + var(--custom-user-banner-height-bite-size)));
   z-index: 5;
 }
+.activity_b07019 {
+  border-radius: var(--radius-xs);
+}
 .popoutWrapper_ccc074 {
   position: relative;
   left: -30px;
@@ -29292,6 +29295,7 @@ h3.improved_f017d0:after {
   padding: 8px;
   overflow: visible;
   position: relative;
+  border: none;
 }
 .header_ae1fa2 {
   display: flex;
@@ -45633,4 +45637,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.5934f4c3c6bd8293b79e.css.map*/
+/*# sourceMappingURL=12633.f1fc8821286e74ee627c.css.map*/
