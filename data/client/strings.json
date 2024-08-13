@@ -15715,6 +15715,7 @@
   "COLLECTIBLES_USE_NOW": "\"Use Now\"",
   "COLLECTIBLES_CTA_GO_TO_SHOP": "\"Go to Shop\"",
   "COLLECTIBLES_ACQUIRED_DATE": "\"Acquired {date}\"",
+  "COLLECTIBLES_EXPIRE_DATE": "\"Expires {date}\"",
   "COLLECTIBLES_MOBILE_IAP_NOTICE": "\"The ability to acquire new decorations is not available on this platform.\"",
   "COLLECTIBLES_MOBILE_IAP_NOTICE_EDIT_HEADER": "\"Add more flair to your avatar.\"",
   "COLLECTIBLES_PURCHASE": "\"Buy for {price}\"",
