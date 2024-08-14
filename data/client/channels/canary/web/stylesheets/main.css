@@ -29192,6 +29192,45 @@ h3.improved_f017d0:after {
 .checkboxRow_a7652f:not(:last-child) {
   margin-bottom: 24px;
 }
+.row_e33a4d {
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid var(--channeltextarea-background);
+  margin: 0 var(--spacing-16);
+  padding: var(--spacing-16) 0 var(--spacing-16);
+}
+.row_e33a4d:last-child {
+  border-bottom: none;
+}
+.iconContainer_e33a4d {
+  display: flex;
+  justify-content: center;
+  margin-right: var(--spacing-16);
+  height: var(--spacing-24);
+  width: var(--spacing-24);
+}
+.icon_e33a4d {
+  height: var(--spacing-24);
+  width: var(--spacing-24);
+  color: var(--icon-secondary);
+}
+.textContainer_e33a4d {
+  display: flex;
+  flex-direction: column;
+}
+.button_e33a4d {
+  margin-left: auto;
+}
+.container_c07bcc {
+  margin-bottom: var(--spacing-16);
+}
+.header_c07bcc {
+  margin-bottom: var(--spacing-8);
+}
+.upsellsContainer_c07bcc {
+  border-radius: var(--spacing-8);
+  border: 1px solid var(--background-modifier-accent);
+}
 .container_bdd4e2 {
   margin-bottom: 24px;
 }
@@ -45637,4 +45676,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.81c321b52ca1be5acdca.css.map*/
+/*# sourceMappingURL=12633.3ed5bbe2339fa2fe7fc7.css.map*/
