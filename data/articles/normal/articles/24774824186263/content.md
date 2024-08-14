@@ -1019,26 +1019,31 @@
   arbitration provisions. 
 </p>
 <p class="wysiwyg-text-align-justify">
-  (b) Except as described in Section 13.15(c), below, the parties agree to
-  resolve any dispute or claim relating to this MSA through final and binding
-  arbitration in New York, New York.  The arbitration will be conducted by a
-  single arbitrator, governed by these terms and the American Arbitration
-  Association Rules and Procedures, excluding any rules or procedures governing
-  or permitting class or representative actions (the “AAA Rules”). If any
-  conflict between these terms and the AAA Rules, these terms will prevail. The
-  decision of the arbitrator will be in writing and binding on the parties, and
-  judgment to enforce the decision may be entered by any court of competent
-  jurisdiction. Dispositive motions will be allowed in the arbitration. Except
-  as explicitly described in this arbitration section, the arbitrator will have
-  exclusive authority to resolve all disputes arising out of or relating to the
-  interpretation, enforceability, or formation of these terms of service,
-  including, but not limited to any claim that all or any part of these terms of
-  service are void or voidable, and any dispute regarding the payment of AAA
-  administrative or arbitrator fees (including the timing of such payments and
-  remedies for nonpayment). The arbitrator must follow these terms and can award
-  the same damages and relief as a court. No arbitration award or decision will
-  have any preclusive effect as to issues or claims in any dispute with anyone
-  who is not a named party to the arbitration.
+  (b)
+  <span
+    id="docs-internal-guid-159b841a-7fff-e9b0-de20-b82621a0a393"
+    style="color: #2e3338; background-color: #ffffff"
+    >Except as described in Section 13.15(c), below, the parties agree to
+    resolve any dispute or claim relating to this MSA through final and binding
+    arbitration in New York, New York.  The arbitration will be conducted by a
+    single arbitrator, governed by this MSA and the American Arbitration
+    Association Rules and Procedures, excluding any rules or procedures
+    governing or permitting class or representative actions (the “AAA Rules”).
+    If any conflict between this MSA and the AAA Rules, this MSA will prevail.
+    The decision of the arbitrator will be in writing and binding on the
+    parties, and judgment to enforce the decision may be entered by any court of
+    competent jurisdiction. Dispositive motions will be allowed in the
+    arbitration. Except as explicitly described in this arbitration section, the
+    arbitrator will have exclusive authority to resolve all disputes arising out
+    of or relating to the interpretation, enforceability, or formation of this
+    MSA, including, but not limited to any claim that all or any part of this
+    MSA are void or voidable, and any dispute regarding the payment of AAA
+    administrative or arbitrator fees (including the timing of such payments and
+    remedies for nonpayment). The arbitrator must follow this MSA and can award
+    the same damages and relief as a court. No arbitration award or decision
+    will have any preclusive effect as to issues or claims in any dispute with
+    anyone who is not a named party to the arbitration.</span
+  >
 </p>
 <p class="wysiwyg-text-align-justify">
   (c) Notwithstanding anything to the contrary, the provisions of Section
