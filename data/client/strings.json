@@ -17949,6 +17949,8 @@
   "E2EE_VIDEO_DETAILS": "\"Video Details\"",
   "E2EE_USER_VERIFIED_A11Y": "\"End-to-end encryption verified\"",
   "E2EE_CALL_VERIFIED_A11Y": "\"End-to-end encryption verified for all users in call\"",
+  "E2EE_USER_VERIFIED_TOOLTIP": "\"Privacy Code Verified\"",
+  "E2EE_CALL_VERIFIED_TOOLTIP": "\"All Participants Verified\"",
   "E2EE_USER_VERIFICATION_SUBTITLE": "\"Compare the numbers below with {username}. If they match, mark them as verified.\"",
   "E2EE_TRANSIENT_VERIFICATION_DESC": "\"A new code is generated when either of you join a call or change devices. [Learn more about end-to-end encryption.]({helpArticle})\"",
   "E2EE_OTHER_USER_TRANSIENT_VERIFICATION_DESC": "\"A new code is generated when {username} joins a call or either of you change devices. [Learn more about end-to-end encryption.]({helpArticle})\"",
