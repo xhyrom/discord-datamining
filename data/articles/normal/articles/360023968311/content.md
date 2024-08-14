@@ -8,7 +8,7 @@
     src="https://support.discord.com/hc/article_attachments/14997610867351"
   />
 </p>
-<h3>
+<h3 id="h_01J593PRF68YWX8J3C5Z8BKVFT">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Please note that only Community Servers are eligible to be on our Server
     Discovery list.</span
