@@ -35952,6 +35952,10 @@ img.thumbnail_c64476 {
   z-index: 9999;
 }
 .gridOverlay_c86be3 {
+  background-size: var(--custom-grid-spacing) var(--custom-grid-spacing);
+  background-position:
+    0 var(--custom-grid-spacing),
+    var(--custom-grid-spacing) 0;
   --custom-grid-line-color: var(--border-strong);
   --custom-grid-line-width: 0.3px;
   --custom-grid-vertical-lines: linear-gradient(
@@ -45725,4 +45729,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.064e084a4a649c1db3af.css.map*/
+/*# sourceMappingURL=12633.f37606c74792d1818229.css.map*/
