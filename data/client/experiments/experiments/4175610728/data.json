@@ -7,26 +7,19 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Past activity enabled",
-      "Treatment 2: Past and most recent activity enabled",
-      "Treatment 3: New activity cards enabled",
-      "Treatment 4: Fallback - only self recent activity enabled"
+      "Treatment 2: Past and most recent activity enabled"
     ],
     "hash": 4175610728,
     "buckets": [
       -1,
       0,
       1,
-      2,
-      3,
-      4
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "pastActivityEnabled",
-      "mostRecentActivityEnabled",
-      "newActivityCardsEnabled",
-      "selfRecentActivityFallbackEnabled"
+      "enabled"
     ]
   }
 }
