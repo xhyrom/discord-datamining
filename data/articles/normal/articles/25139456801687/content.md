@@ -1,8 +1,8 @@
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25485370428823"
-    width="766"
-    height="318"
+    src="https://support.discord.com/hc/article_attachments/25678628588311"
+    width="636"
+    height="351"
   />
 </p>
 <p>
@@ -35,21 +35,20 @@
     >here</a
   >. <br /><strong>Who is Eligible</strong>: Available on PC for US players
   where GTA Online, GTAV, and Discord are available. <br />Discord’s premium
-  services are restricted in some regions. If you are unable to access the Gift
-  Inventory, you are not eligible for this Quest or reward.
+  services are restricted in some regions.
 </p>
 <h3 id="h_01J4Q96HDBTTNTE0ZDZ2QCQ7MC">
   <strong>Note</strong>: The Los Santos avatar decoration is a limited-time
   avatar decoration and will only be yours as an avatar decoration until
-  <strong>October 14, 2024</strong>. After this date, you will no longer have
+  <strong>October 15, 2024</strong>. After this date, you will no longer have
   access to this avatar decoration.
 </h3>
 <p>
   <strong>Availability</strong> <strong>Period</strong>: The
   <strong>GTA Online Quest</strong> can be accepted on Discord from
   <strong>August 8, 2024</strong> until <strong>August</strong>
-  <strong>14, 2024 (11:59PM UTC)</strong>. The Los Santos avatar decoration
-  needs to be redeemed by <strong>September 14, 2024</strong>. <br />Quest
+  <strong>15, 2024 (11:59PM UTC)</strong>. The Los Santos avatar decoration
+  needs to be redeemed by <strong>September 15, 2024</strong>. <br />Quest
   requirements must be completed during this period to receive the reward.
   <br /><strong>Other Terms: </strong><br />Limit of one reward redemption per
   account. <br />For more information on Discord Quests and to view the
@@ -78,33 +77,42 @@
   <strong>GTA</strong> <strong>Online</strong> or <strong>GTAV</strong>, you’ll
   be able to claim the <strong>Los Santos avatar decoration</strong>. The Los
   Santos avatar decoration needs to be redeemed by
-  <strong>September 14, 2024.</strong>
+  <strong>September 15, 2024.</strong>
 </p>
 <h3 id="h_01J4Q9DVFWRFZVC1D7PC395XCH">
-  <strong>Note</strong>: If the Quest is not completed by August 14, 2024, the
-  Quest will no longer be available within your <strong>Gift</strong>
-  <strong>Inventory</strong>.
+  <strong>Note</strong>: If the Quest is not completed by August 15, 2024, the
+  Quest will no longer be available within
+  <strong>Discover &gt; Quests</strong>.
 </h3>
 <p>
   You can use the following methods to claim your
   <strong>Los Santos avatar decoration</strong>:<br /><strong
     ><span class="wysiwyg-font-size-large">Option 1</span></strong
-  ><br />Head over to your <strong>User Settings</strong> by selecting the
-  <strong>cogwheel</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/25485391518615"
-    width="23"
+  ><br />1.Head over to the <strong>Discover</strong> tab by selecting the
+  <strong>Discover</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/25678576825239"
+    width="26"
     height="24"
-  />] in the lower left corner. <br />Then, navigate to your
-  <strong>Gift Inventory</strong> and select
-  <strong>Claim Reward</strong> within the
-  <strong>GTA Online Quest</strong> banner.
+  />] at the bottom of the server list on the left side of the app. <br />2.This
+  will direct you to the <strong>Discover</strong> page where you can explore
+  available Discord Quests, by selecting the <strong>Quest</strong> tab within
+  the <strong>Discover</strong> list. You can learn more about Discovery
+  <a
+    href="https://support.discord.com/hc/articles/25323248535319"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.<br />3. While here, select <strong>Claim</strong>
+  <strong>Reward</strong> for the <strong>GTA</strong> <strong>Online</strong>
+  <strong>Quest</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/25485370435863"
-    width="726"
-    height="550"
-  />
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/25678628596631"
+      width="578"
+      height="328"
+  /></strong>
 </p>
 <p>
   <strong><span class="wysiwyg-font-size-large">Option 2</span></strong
@@ -146,8 +154,7 @@
   ><br />A: Some Quests will not be available in all regions based on terms and
   conditions. If you are in an ineligible region for a Quest, you will not be
   able to complete it.<br />Additionally, Discord’s premium services are
-  restricted in some regions. If you are unable to access the Gift Inventory,
-  you are not eligible for Quests.<br /><strong
+  restricted in some regions. <br /><strong
     >Q: Why am I unable to see Quests on the Discord mobile app?</strong
   ><br />A: This feature is only available on the desktop and browser app.<br /><strong
     >Q: I have concerns or questions regarding privacy and Quests. </strong
@@ -177,6 +184,7 @@
   this specific issue.<br /><strong
     >Q: I no longer see a Quest. Where did it go?</strong
   ><br />A: Quests are typically only available for a limited amount of time. If
-  you no longer see a Quest in the Gift Inventory or in-app notifications about
-  the quest, the period to complete and claim the reward for the Quest is over.
+  you no longer see a Quest in the <strong>Discover &gt; Quests</strong> or
+  in-app notifications about the quest, the period to complete and claim the
+  reward for the Quest is over.
 </p>

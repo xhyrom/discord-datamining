@@ -84,8 +84,8 @@
 <p>
   The <strong>GTA Online Quest</strong> can be accepted on Discord from
   <strong>August 8, 2024</strong> until
-  <strong>August 14, 2024 (11:59PM UTC)</strong>. The Los Santos Avatar
-  Decoration needs to be redeemed by <strong>September 14, 2024. </strong>Quest
+  <strong>August 15, 2024 (11:59PM UTC)</strong>. The Los Santos Avatar
+  Decoration needs to be redeemed by <strong>September 15, 2024. </strong>Quest
   requirements must be completed during this period to receive the reward. 
 </p>
 <h2 id="h_01J3R3GFTCSGW9KKXCG37JDZ30">
