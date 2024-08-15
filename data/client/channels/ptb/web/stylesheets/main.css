@@ -25858,41 +25858,35 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .actionButton_f5dff0 {
   margin-left: auto;
 }
-.container_f91b40 {
-  margin-bottom: 24px;
-}
-.userContainer_f91b40 {
-  padding: 16px;
-  border: 1px solid var(--background-modifier-accent);
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-}
-.header_f91b40 {
-  margin-bottom: 8px;
-  color: var(--header-secondary);
-}
-.description_f91b40 {
-  margin-bottom: 8px;
-}
-.userInfo_f91b40 {
-  display: flex;
+.row_e33a4d {
   align-items: center;
-  max-width: 80%;
-}
-.avatar_f91b40 {
-  margin-right: 8px;
-  flex-shrink: 0;
-}
-.userName_f91b40 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.actionButtonsContainer_f91b40 {
   display: flex;
-  flex-direction: row;
-  gap: var(--spacing-4);
+  border-bottom: 1px solid var(--channeltextarea-background);
+  margin: 0 var(--spacing-16);
+  padding: var(--spacing-16) 0 var(--spacing-16);
+}
+.row_e33a4d:last-child {
+  border-bottom: none;
+}
+.iconContainer_e33a4d {
+  display: flex;
+  justify-content: center;
+  margin-right: var(--spacing-16);
+  height: var(--spacing-24);
+  width: var(--spacing-24);
+}
+.icon_e33a4d {
+  height: var(--spacing-24);
+  width: var(--spacing-24);
+  color: var(--icon-secondary);
+}
+.textContainer_e33a4d {
+  display: flex;
+  flex-direction: column;
+}
+.button_e33a4d {
+  min-width: 75px;
+  margin-left: auto;
 }
 .container_d74c59 {
   margin-bottom: 24px;
@@ -25967,20 +25961,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .externalLinkWrapper_f45bfc {
   padding-top: 8px;
-}
-.container_a5fee0 {
-  margin-bottom: 24px;
-  padding: 16px;
-  border: 1px solid var(--background-modifier-accent);
-  border-radius: 8px;
-}
-.messageContainer_a5fee0 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.description_a5fee0 {
-  max-width: 70%;
 }
 .required_daab4e {
   color: var(--status-danger);
@@ -26201,37 +26181,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .infoBox_a644f3 {
   margin-top: 16px;
   font-weight: 400;
-}
-.container_c60574 {
-  margin-bottom: 24px;
-}
-.guildContainer_c60574 {
-  padding: 16px;
-  border: 1px solid var(--background-modifier-accent);
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-}
-.header_c60574 {
-  margin-bottom: 8px;
-  color: var(--header-secondary);
-}
-.description_c60574 {
-  margin-bottom: 8px;
-}
-.guildInfo_c60574 {
-  display: flex;
-  align-items: center;
-  max-width: 80%;
-}
-.icon_c60574 {
-  margin-right: 8px;
-  flex-shrink: 0;
-}
-.guildName_c60574 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 @use postcss-pxtorem;
 .visual-refresh {
@@ -27439,34 +27388,15 @@ h3.improved_f017d0:after {
 .checkboxRow_a7652f:not(:last-child) {
   margin-bottom: 24px;
 }
-.row_e33a4d {
-  align-items: center;
-  display: flex;
-  border-bottom: 1px solid var(--channeltextarea-background);
-  margin: 0 var(--spacing-16);
-  padding: var(--spacing-16) 0 var(--spacing-16);
+.container_b712b6 {
+  margin-bottom: var(--spacing-16);
 }
-.row_e33a4d:last-child {
-  border-bottom: none;
+.header_b712b6 {
+  margin-bottom: var(--spacing-8);
 }
-.iconContainer_e33a4d {
-  display: flex;
-  justify-content: center;
-  margin-right: var(--spacing-16);
-  height: var(--spacing-24);
-  width: var(--spacing-24);
-}
-.icon_e33a4d {
-  height: var(--spacing-24);
-  width: var(--spacing-24);
-  color: var(--icon-secondary);
-}
-.textContainer_e33a4d {
-  display: flex;
-  flex-direction: column;
-}
-.button_e33a4d {
-  margin-left: auto;
+.upsellsContainer_b712b6 {
+  border-radius: var(--spacing-8);
+  border: 1px solid var(--background-modifier-accent);
 }
 .container_c07bcc {
   margin-bottom: var(--spacing-16);
@@ -44617,4 +44547,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.7bacd1404feddb2b3fef.css.map*/
+/*# sourceMappingURL=12633.ce00a51248e7abfd0c72.css.map*/
