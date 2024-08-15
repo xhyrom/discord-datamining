@@ -1,20 +1,20 @@
-<p id="docs-internal-guid-1d3c3afd-7fff-c4da-0b7b-6a18dac61322">
+<p>
   <strong>Multi-Factor Authentication</strong> (MFA for short) is the best way
   to add an extra layer of security to your Discord account to make sure that
   only you have the ability to log in.
 </p>
-<p id="docs-internal-guid-d9166d1b-7fff-15b1-173b-cfcbd562f19a">
+<p>
   <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
+    ><strong>What this article covers:</strong></span
   >
 </p>
 <ul>
   <li>
     <a href="#h_01J5BFD166FYKB7EDH6ASATZHT"
-      >Types of Multi-Factor Authentication </a
+      >Types of Multi-Factor Authentication</a
     >
     <ul>
-      <li><a href="#h_01J5BFTAREYNK7KR2AG82SBEA0">Security Keys </a></li>
+      <li><a href="#h_01J5BFTAREYNK7KR2AG82SBEA0">Security Keys</a></li>
       <li><a href="#h_01J5BFF3MARKSYE1QZ0XPEYXK2">Authenticator App</a></li>
       <li><a href="#h_01J5BFF7HC5PSG3NBP3TYCQ8PB">SMS/Texts</a></li>
       <li><a href="#h_01J5BFFW7Q5A7H6TKDX4JDKEWQ">Backup Codes</a></li>
@@ -60,11 +60,11 @@
     </ul>
   </li>
   <li>
-    <a href="#h_01J5BFMC6SS725MBY1RKSPV8AV">I forgot to download my codes! </a>
+    <a href="#h_01J5BFMC6SS725MBY1RKSPV8AV">I forgot to download my codes!</a>
   </li>
   <li>
     <a href="#h_01J5BFMSZT74DFNKSYCRJTQYJN"
-      >I forgot to add my phone as backup! </a
+      >I forgot to add my phone as backup!</a
     >
   </li>
   <li><a href="#h_01J5BFN3CY04CA6VN2BBYCC2JW">Server-wide 2FA</a></li>
@@ -80,9 +80,7 @@
     each option and give you some info on the security of each one.</span
   >
 </p>
-<h2 id="h_01J5BFTAREYNK7KR2AG82SBEA0">
-  <span style="color: #2e3338">Security Keys</span>
-</h2>
+<h2 id="h_01J5BFTAREYNK7KR2AG82SBEA0">Security Keys</h2>
 <p>
   <span style="color: #2e3338"
     >This is the latest in personal security, and also the most secure! With
@@ -109,7 +107,7 @@
   security. Plus the name makes us think we’re in a spy novel. With an
   Authenticator App, you’ll register a QR code or manually enter a key with an
   app on your phone or a password manager and then generate a new code for you
-  to use every 30 seconds. 
+  to use every 30 seconds.
 </p>
 <p>
   As long as you have your phone or access to your password manager, you can
@@ -122,7 +120,7 @@
   This is a common option. If we can be transparent with you, SMS MFA is better
   than no MFA, but not by a lot. Hackers have been able to intercept text
   messages or call up phone carriers to do a “SIM Swap” attack and take over
-  phone numbers. 
+  phone numbers.
 </p>
 <p>
   Since you can only use SMS if you already have an Authenticator App enabled,
@@ -141,7 +139,7 @@
   Backup codes are special, random codes we give you after signing up for MFA.
   Keep these secret and well-protected. We recommend storing them in a password
   manager (like 1Password, or KeePas[XC]), but you can also print them out and
-  hide them if you’d prefer. 
+  hide them if you’d prefer.
 </p>
 <p>
   If you are locked out of your account and need to get past MFA, you can use
@@ -150,10 +148,11 @@
   new MFA configured, generate some new codes and hide them away safely again.
 </p>
 <h1 id="h_01J5BFGTKB8GY9HX6M53KBMTJW">The Setup Process on Desktop</h1>
-<p id="docs-internal-guid-7452720d-7fff-0d9e-9c55-5feac6fead01">
-  Start by selecting the the cog wheel [<img
-    style="height: 20px; width: 20px"
-    src="https://support.discord.com/hc/article_attachments/25674697565975"
+<p>
+  Start by selecting the the <strong>cogwheel</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/25675410793623"
+    width="20"
+    height="20"
   />] next to your username.
 </p>
 <p class="wysiwyg-text-align-center">
@@ -162,7 +161,7 @@
     alt="image23.png"
   />
 </p>
-<p id="docs-internal-guid-795a155d-7fff-f426-435f-35d27117a4cf">
+<p>
   You'll be redirected to your <strong>User Settings</strong> and land on the
   <strong>My Account</strong> page. While here, you will be able to view the
   Multi-Factor Authentication options by referring to
@@ -175,7 +174,7 @@
   />
 </p>
 <h2 id="h_01J5BFHD2MAB4M808ZD86JEFVX" class="wysiwyg-text-align-left">
-  <span style="color: #2e3338">Registering Security Keys on Desktop </span>
+  <span style="color: #2e3338">Registering Security Keys on Desktop</span>
 </h2>
 <p class="wysiwyg-text-align-left">
   <span style="color: #2e3338">To set up a Security Key, select </span
@@ -192,7 +191,7 @@
       alt="image17.png"
   /></strong>
 </p>
-<p id="docs-internal-guid-c1d4b875-7fff-6207-c178-424c4a8f274c">
+<p>
   <span style="color: #2e3338">Press </span
   ><strong><span style="color: #2e3338">Let’s go </span></strong
   ><span style="color: #2e3338"
@@ -221,9 +220,7 @@
     height="406"
   />
 </p>
-<p id="docs-internal-guid-facef78e-7fff-660e-0e50-4855d56f9fc8">
-  <span style="color: #2e3338">And you’re done! </span>
-</p>
+<p><span style="color: #2e3338">And you’re done!</span></p>
 <p>
   <span style="color: #2e3338"
     >You can now register another Security Key on this device or a different
@@ -247,7 +244,7 @@
       alt="image6.png"
   /></span>
 </p>
-<p id="docs-internal-guid-0c66b8e9-7fff-d868-1c1e-63c361e799bf">
+<p>
   <span style="color: #2e3338">Press </span
   ><strong
     ><span style="color: #2e3338">Authenticate with security key</span></strong
@@ -256,13 +253,14 @@
   >
 </p>
 <h1 id="h_01J5BFJ9JZEDTA2W83J9TAHG0Z">
-  <span style="color: #2e3338">Setting up your Authentication App </span>
+  <span style="color: #2e3338">Setting up your Authentication App</span>
 </h1>
-<h2 id="h_01J5BFJCE7C1V2CXA8ZH6WCJFV">Authenticating with Google </h2>
+<h2 id="h_01J5BFJCE7C1V2CXA8ZH6WCJFV">Authenticating with Google</h2>
 <p id="docs-internal-guid-03d35702-7fff-2937-32aa-ad9f2a8a8c0a">
   If you're using Google Authenticator, you'll be prompted to choose your input
-  method, either <strong>scanning a barcode</strong> or
-  <strong>entering a provided key</strong>:
+  method, either <strong>scanning a barcode</strong> or <strong
+    >entering a provided key</strong
+  >:
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -275,13 +273,11 @@
 </p>
 <p id="docs-internal-guid-8da8c25a-7fff-7276-cbf1-69cd10a68ffe">
   Either one of these will work fine (since Discord provides both input methods)
-  but keep in mind,
-  <strong
+  but keep in mind, <strong
     >Google Authenticator on Android will need you to install another barcode
     scanning app if you want to use that option.</strong
-  >
-  They require the <strong>ZXing Barcode Scanner</strong> app, which is totally
-  fine and dandy:
+  > They require the <strong>ZXing Barcode Scanner</strong> app, which is
+  totally fine and dandy:
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -296,7 +292,7 @@
   Or, you can just input the code provided in Discord; no Barcode Scanner
   required.
 </p>
-<h2 id="h_01J5BFJN0GSXP8EEC2565M7RWQ">Authentication with Authy </h2>
+<h2 id="h_01J5BFJN0GSXP8EEC2565M7RWQ">Authentication with Authy</h2>
 <p id="docs-internal-guid-ceaeddba-7fff-595c-b4b3-9aaee08441b4">
   Within Authy, you'll first need to enter your phone number and email to
   authenticate your phone:
@@ -331,7 +327,7 @@
     height="749"
   />
 </p>
-<h2 id="h_01J5BFK10BK8KKB4F2BASQGK66">Authenticating with MFA </h2>
+<h2 id="h_01J5BFK10BK8KKB4F2BASQGK66">Authenticating with MFA</h2>
 <p>
   Use Authy's (or Google Authenticator's) QR scanner on the QR code provided
   within Discord here:
@@ -345,7 +341,7 @@
   />
 </p>
 <p>
-  This'll generate a 6 digit code that is the final piece to enabling 2FA in
+  This'll generate a 6-digit code that is the final piece to enabling 2FA in
   Discord. Enter it in, and you're good to go.
 </p>
 <p class="wysiwyg-text-align-center">
@@ -373,9 +369,7 @@
   losing access to your authenticator app say by dropping your phone in
   water/lava/a hippo/etc.
 </p>
-<p id="docs-internal-guid-2f29011f-7fff-053c-7539-b6bbf827274b">
-  Make sure to also <strong>download your backup codes</strong>. 
-</p>
+<p>Make sure to also <strong>download your backup codes</strong>. </p>
 <p>
   <span style="color: #2e3338"
     >Now when you log in, you’ll see an additional prompt to enter an
@@ -389,7 +383,7 @@
       alt="image5.png"
   /></span>
 </p>
-<p id="docs-internal-guid-3726a8a8-7fff-08de-ca2f-1d52cc70ecbd">
+<p>
   <span style="color: #2e3338">Enter a code, select </span
   ><strong><span style="color: #2e3338">Confirm</span></strong
   ><span style="color: #2e3338"> and you’re in!</span>
@@ -413,7 +407,7 @@
         height="705" /></strong
   ></span>
 </p>
-<p id="docs-internal-guid-f7c1dab9-7fff-d164-5440-80f450d95de0">
+<p>
   <span style="color: #2e3338"
     >Now you’re looking at the same options as on Desktop.</span
   >
@@ -449,9 +443,10 @@
 </p>
 <p id="docs-internal-guid-ba066723-7fff-be8b-fd16-b28124d11ae7">
   Your phone will wait to let you get ready (get your physical token, stretch
-  that finger, fix your hair). When you’re good to go, press
-  <strong>Let’s go</strong>. Your phone will then let you register and choose a
-  name for this key, then tap <strong>Finish.</strong>
+  that finger, fix your hair). When you’re good to go, press <strong
+    >Let’s go</strong
+  >. Your phone will then let you register and choose a name for this key, then
+  tap <strong>Finish.</strong>
 </p>
 <p class="wysiwyg-text-align-center">
   <strong
@@ -463,8 +458,9 @@
   /></strong>
 </p>
 <p id="docs-internal-guid-0f329a94-7fff-87ed-8534-1f1e7584b604">
-  And you’re done! Make sure to
-  <strong>download and store your backup codes</strong>.
+  And you’re done! Make sure to <strong
+    >download and store your backup codes</strong
+  >.
 </p>
 <h2 id="h_01J5BFM24FGT05EY1711DXVEEM">Authenticating on the Go</h2>
 <p>
@@ -483,7 +479,9 @@
 <p id="docs-internal-guid-fb742fe8-7fff-4c2f-8487-9dff850b72fc">
   Once you have either Google Authenticator or Authy installed, you will be
   prompted to connect your account to the authentication app. (<a
-    href="#docs-internal-guid-fcb90c67-7fff-111c-157c-24acbed2410f"
+    href="https://support.discord.com/hc/articles/219576828-Setting-up-Multi-Factor-Authentication#docs-internal-guid-fcb90c67-7fff-111c-157c-24acbed2410f"
+    target="_blank"
+    rel="noopener noreferrer"
     >Press here for instructions</a
   >.)
 </p>
@@ -495,7 +493,6 @@
     width="316"
     height="655"
   />
-   
   <img
     src="https://support.discord.com/hc/article_attachments/18702883716503"
     alt="image2.png"
@@ -532,12 +529,12 @@
         height="646" /></span
   ></strong>
 </p>
-<p id="docs-internal-guid-4658e3f3-7fff-e615-f0b7-92b9bc9f84c6">
-  <span style="color: #2e3338">Select  </span
+<p>
+  <span style="color: #2e3338">Select </span
   ><strong><span style="color: #2e3338">View Backup Codes</span></strong
   ><span style="color: #2e3338">
     to see your codes (and which one’s you’ve used) as well as get the option to
-    download them. </span
+    download them.</span
   >
 </p>
 <p class="wysiwyg-text-align-center">

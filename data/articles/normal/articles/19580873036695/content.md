@@ -5,66 +5,40 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13YPGXWD5Y2RPFXT6P"
+    <a href="#h_01J5BJRTN1F7M6REQEK1DMD2E2"
       >How do I Cancel my Nitro or Nitro Basic subscription?</a
     >
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13Z8V328JEPDSFM21N"
-          >Desktop/Browser</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13NGS5M7VESTFQTYT0"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01J5BJS511N0A649X4NWD02T8J">Desktop/Browser</a></li>
+      <li><a href="#h_01J5BJSJVMKDW22J5F8355NYQH">Mobile</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13GJJ2MQ080K8P5XAG"
+    <a href="#h_01J5BJSYXFA30JXYGPCSF1TAAZ"
       >How do I Cancel my Server Boost subscription?</a
     >
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13YMX447P5J0JYGRRH"
-          >Desktop/Browser</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13D6WYJQMXYV850W2E"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01J5BJYYF43YCJGWJ4YYYSVA15">Desktop/Browser</a></li>
+      <li><a href="#h_01J5BJTJG0GJSVSQJXKKE6CSBQ">Mobile</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG130EZKGQQ03A3ZHFEY"
+    <a href="#h_01J5BJTYNA8WQQE8JEN9D7DSJ0"
       >How do I Cancel my Server subscription?</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG13G0RWJRW9H0NW53EF"
+    <a href="#h_01J5BJV6PAVWEFCZTEAJ0XFSDJ"
       >How do I Cancel my Premium App subscription?</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG130B6SFP2DWZTYQAEJ"
+    <a href="#h_01J5BJVEBSA4HM68DD2F807EYF"
       >How do I Re-subscribe after canceling my subscription?</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/19580873036695#h_01HGXEYG139RRPM6W0K67RWS8N"
+    <a href="#h_01J5BJVTBZ6ZS1XXZY7XA26D1A"
       >What if I can’t access my Discord and need to cancel?</a
     >
   </li>
@@ -81,10 +55,10 @@
   through the desktop app or browser. <br />If you purchased through a mobile
   device, you can only cancel through a mobile device.
 </div>
-<h1 id="h_01HGXEYG13YPGXWD5Y2RPFXT6P">
+<h1 id="h_01J5BJRTN1F7M6REQEK1DMD2E2">
   How do I Cancel my Nitro or Nitro Basic subscription?
 </h1>
-<h2 id="h_01HGXEYG13Z8V328JEPDSFM21N">Desktop/Browser</h2>
+<h2 id="h_01J5BJS511N0A649X4NWD02T8J">Desktop/Browser</h2>
 <p>
   1. Tap on <strong>cogwheel</strong> [<img
     src="https://support.discord.com/hc/article_attachments/19580886034967"
@@ -106,7 +80,9 @@
     height="475"
   />
 </p>
-<h2 id="h_01HGXEYG13NGS5M7VESTFQTYT0">Mobile</h2>
+<h2 id="h_01J5BJSJVMKDW22J5F8355NYQH" class="wysiwyg-text-align-left">
+  Mobile
+</h2>
 <p>1. Tap on your <strong>avatar </strong>in the bottom right.</p>
 <p>
   2. Then, tap on the <strong>cogwheel </strong>[<img
@@ -153,7 +129,7 @@
     height="528"
   />
 </p>
-<h1 id="h_01HGXEYG13GJJ2MQ080K8P5XAG">
+<h1 id="h_01J5BJSYXFA30JXYGPCSF1TAAZ" class="wysiwyg-text-align-left">
   How do I Cancel my Server Boost subscription?
 </h1>
 <div class="info-box">
@@ -161,7 +137,7 @@
   Server Boosting badge will be removed from your profile. You’ll have a grace
   period of 3 days to resubscribe and reapply your Server Boost to a server.
 </div>
-<h2 id="h_01HGXEYG13YMX447P5J0JYGRRH">Desktop/Browser</h2>
+<h2 id="h_01J5BJYYF43YCJGWJ4YYYSVA15">Desktop/Browser</h2>
 <p>
   1. Tap on the <strong>cogwheel</strong> [<img
     src="https://support.discord.com/hc/article_attachments/19580901985431"
@@ -191,7 +167,7 @@
     height="351"
   />
 </p>
-<h2 id="h_01HGXEYG13D6WYJQMXYV850W2E">Mobile</h2>
+<h2 id="h_01J5BJTJG0GJSVSQJXKKE6CSBQ">Mobile</h2>
 <p>1. Tap on your <strong>avatar </strong>in the bottom right.</p>
 <p>
   2. Then tap on the <strong>cogwheel </strong>[<img
@@ -211,7 +187,7 @@
     height="526"
   />
 </p>
-<h1 id="h_01HGXEYG130EZKGQQ03A3ZHFEY">
+<h1 id="h_01J5BJTYNA8WQQE8JEN9D7DSJ0">
   How do I Cancel my Server subscription?
 </h1>
 <p>
@@ -240,7 +216,7 @@
   cancel and then tap on <strong>Cancel my Membership.</strong>
 </p>
 <p>5. Follow the prompts to fully cancel your Server Subscription.</p>
-<h1 id="h_01HGXEYG13G0RWJRW9H0NW53EF">
+<h1 id="h_01J5BJV6PAVWEFCZTEAJ0XFSDJ">
   How do I Cancel my Premium App subscription?
 </h1>
 <p>
@@ -269,7 +245,7 @@
   cancel and then tap on <strong>Cancel my Membership.</strong>
 </p>
 <p>5. Follow the prompts to fully cancel your Premium Membership.</p>
-<h1 id="h_01HGXEYG13S2Y2NKK1H1YJBB8A">
+<h1 id="h_01J5BJVEBSA4HM68DD2F807EYF">
   How do I Re-subscribe after canceling my subscription?
 </h1>
 <div class="info-box">
@@ -308,7 +284,7 @@
     height="475"
   />
 </p>
-<h1 id="h_01HGXEYG139RRPM6W0K67RWS8N">
+<h1 id="h_01J5BJVTBZ6ZS1XXZY7XA26D1A" class="wysiwyg-text-align-left">
   What if I can’t access my Discord and need to cancel?
 </h1>
 <div class="info-box">

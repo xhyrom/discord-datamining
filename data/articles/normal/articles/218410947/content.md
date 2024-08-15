@@ -12,47 +12,21 @@
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93Y5XVH4NWKAAJSV7SS"
-      >How to change your password</a
-    >
+    <a href="#h_01J5BH76627K07N1C23RWXSCN9">How to change your password</a>
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93YC2MXAG2ZVPM5KS9R"
-          >Desktop/Browser</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93ZK80XN4N92334FJPN"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01J5BH7EM316FZKCTK0GNTEV15">Desktop/Browser</a></li>
+      <li><a href="#h_01J5BHBK8V87GWJQ98X1F6QWCS">Mobile</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93YTS0XV71J7EQGVCYD"
-      >How to reset your password</a
-    >
+    <a href="#h_01HGXDF93YTS0XV71J7EQGVCYD">How to reset your password</a>
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93ZCXMSCH791AR6QFVK"
-          >Desktop/Browser</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93ZK80XN4N92334FJPN"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01HGXDF93ZCXMSCH791AR6QFVK">Desktop/Browser</a></li>
+      <li><a href="#h_01HGXDF93ZK80XN4N92334FJPN">Mobile</a></li>
     </ul>
   </li>
 </ul>
-<h1 id="h_01HGXDF93YCX2JB199SXJXY20G">Password Requirements</h1>
+<h1 id="h_01J5BH7661T1WQC3A7F11BC2J5">Password Requirements</h1>
 <p>
   When making your password for your Discord account, it must be a minimum of 8
   characters. We will not accept passwords that are less than 8 characters.
@@ -64,7 +38,7 @@
   secure, and use strong passwords for each site you log in to.
 </p>
 <p>Depending on your region, additional password requirements may apply.</p>
-<h1 id="h_01HGXDF93Y5XVH4NWKAAJSV7SS">How to change your password</h1>
+<h1 id="h_01J5BH76627K07N1C23RWXSCN9">How to change your password</h1>
 <h3 id="h_01HGXDF93YM3Q2RR57BXQ582Q4">
   <span style="color: #434343" data-darkreader-inline-color=""
     >If you have </span
@@ -85,9 +59,9 @@
   can reset the password under your <strong>User Settings</strong>. Let’s go
   over exactly how.
 </p>
-<h2 id="h_01HGXDF93YC2MXAG2ZVPM5KS9R">Desktop/Browser</h2>
+<h2 id="h_01J5BH7EM316FZKCTK0GNTEV15">Desktop/Browser</h2>
 <p>
-  1. Tap on <strong>cog wheel</strong> [<img
+  1. Tap on <strong>cogwheel</strong> [<img
     src="https://support.discord.com/hc/article_attachments/19580052066583"
     width="20"
     height="20"
@@ -98,7 +72,7 @@
   2. Under the <strong>My Account </strong>tab, tap on
   <strong>Change Password</strong> to change your password.
 </p>
-<p>3. Type in your current password and the password you want to change to. </p>
+<p>3. Type in your current password and the password you want to change to.</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/19580052076951"
@@ -106,10 +80,10 @@
     height="532"
   />
 </p>
-<h2 id="h_01HGXDF93YAF8Z74JME2FEERP8">Mobile </h2>
+<h2 id="h_01J5BHBK8V87GWJQ98X1F6QWCS">Mobile</h2>
 <p>1. Tap on your avatar in the bottom right corner.</p>
 <p>
-  2. Then tap on the <strong>cog wheel</strong> [<img
+  2. Then tap on the <strong>cogwheel</strong> [<img
     src="https://support.discord.com/hc/article_attachments/19580052066583"
     width="20"
     height="20"
@@ -117,7 +91,7 @@
 </p>
 <p>
   3. Next, tap on<strong> Account</strong> under
-  <strong>Account Settings</strong>. 
+  <strong>Account Settings</strong>.
 </p>
 <p>
   4. Finally, tap on <strong>Password</strong> and then enter your current
@@ -183,7 +157,7 @@
 </p>
 <p>
   2. After entering the email address tied to your Discord account, tap on
-  <strong>Forgot your password?</strong>
+  <strong>Forgot your password?. </strong>
 </p>
 <p>
   3. You’ll receive an email to the email address tied to your Discord account
@@ -204,6 +178,6 @@
     team through the support form:
     <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
       >https://dis.gd/contact</a
-    > </span
+    ></span
   >
 </h3>
