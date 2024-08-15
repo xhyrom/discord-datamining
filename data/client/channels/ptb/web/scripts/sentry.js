@@ -5758,6 +5758,7 @@
           (t6.TOGGLE_USERS = "TOGGLE_USERS"),
           (t6.TOGGLE_INBOX_UNREADS_TAB = "TOGGLE_INBOX_UNREADS_TAB"),
           (t6.MARK_TOP_INBOX_CHANNEL_READ = "MARK_TOP_INBOX_CHANNEL_READ"),
+          (t6.TOGGLE_FOR_LATER = "TOGGLE_FOR_LATER"),
           (t6.TOGGLE_CHANNEL_PINS = "TOGGLE_CHANNEL_PINS"),
           (t6.TOGGLE_PREVIOUS_GUILD = "TOGGLE_PREVIOUS_GUILD"),
           (t6.TOGGLE_MUTE = "TOGGLE_MUTE"),
@@ -9066,6 +9067,7 @@
           (nt.SCROLLTO_PRESENT = "SCROLLTO_PRESENT"),
           (nt.SCROLLTO_CHANNEL = "SCROLLTO_CHANNEL"),
           (nt.TOGGLE_CHANNEL_PINS = "TOGGLE_CHANNEL_PINS"),
+          (nt.TOGGLE_FOR_LATER = "TOGGLE_FOR_LATER"),
           (nt.TOGGLE_INBOX_UNREADS_TAB = "TOGGLE_INBOX_UNREADS_TAB"),
           (nt.MARK_TOP_INBOX_CHANNEL_READ = "MARK_TOP_INBOX_CHANNEL_READ"),
           (nt.TOGGLE_EMOJI_POPOUT = "TOGGLE_EMOJI_POPOUT"),
@@ -12278,7 +12280,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9393d31e416c01a2437083d05419bc906670e051",
+            release: "discord_web-b84e56404da3b8092ada15c06d04bfb3d7c073b7",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12347,8 +12349,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "318899"), "318899"));
-          i.YA("builtAt", String("1723747563113"));
+            i.YA("buildNumber", ((e = "318925"), "318925"));
+          i.YA("builtAt", String("1723748870718"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48377,4 +48379,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.7b617e98cd2a14199ac8.js.map
+//# sourceMappingURL=sentry.274d7904a358fe9d4d43.js.map
