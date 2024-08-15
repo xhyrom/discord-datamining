@@ -25,21 +25,13 @@
     <ul>
       <li><a href="#h_01J4SF7Q7RR11ESD39ZTSEWAE6">Krunker Strike FRVR</a></li>
       <li><a href="#h_01J4SE37FBGRQ4PFWJVR16YGNQ">GTA Online</a></li>
-      <li><a href="#h_01J3R3GFTCSGW9KKXCG37JDZ30">VALORANT </a></li>
+      <li><a href="#h_01J3R3GFTCSGW9KKXCG37JDZ30">VALORANT</a></li>
     </ul>
   </li>
   <li>
     <a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </a>
     <ul>
       <li><a href="#h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">The Sims 4 </a></li>
-      <li>
-        <a
-          href="#h_01J1XC6E97615MWHRQBWGP3T9T"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Zenless Zone Zero</a
-        >
-      </li>
     </ul>
   </li>
   <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
@@ -128,21 +120,6 @@
   <strong>September 1, 2024</strong>. Quest requirements must be completed
   during this period to receive the reward.
 </p>
-<h2 id="h_01J1XC6E97615MWHRQBWGP3T9T">
-  <a
-    href="https://support.discord.com/hc/articles/24567583191831"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Zenless Zone Zero - V1.0 Quest</a
-  >
-</h2>
-<p>
-  The <strong>V1.0 Quest </strong>can be accepted on Discord from
-  <strong>July 8, 2024 </strong>until
-  <strong>July 15, 2024 (5:00PM PST)</strong>. The Version 1.0 bundle needs to
-  be redeemed by <strong>August 14, 2024 (3:00AM PST)</strong>. Quest
-  requirements must be completed during this period to receive the reward.
-</p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
 <p>
   <span
@@ -162,6 +139,9 @@
   Please see below for more detailed information on how to complete each step. 
 </p>
 <h2 id="h_01HVPBZR5FXKRBNJ7N20KCJVEP">Accept the Quest </h2>
+<p>
+  <span class="wysiwyg-font-size-large"><strong>Via Quest Bar</strong></span>
+</p>
 <div class="info-box">
   Quests can only be accepted through the Discord desktop and browser apps.
 </div>
@@ -178,19 +158,52 @@
     height="377"
   />
 </p>
-<p>
-  If you don't see the Quest bar, navigate to your
-  <strong>User Settings &gt; Gift Inventory.</strong>
+<p class="wysiwyg-text-align-left">
+  <span class="wysiwyg-font-size-large"><strong>Via Discover</strong></span>
 </p>
 <p>
-  While there, you will see the active Discord Quests that are available to
-  join. Press <strong>Accept Quest</strong> to join the quest.
+  You can also select the <strong>Discover</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/25630275040663"
+    width="26"
+    height="24"
+  />] at the bottom of the <strong>server list</strong> on the left side of the
+  app. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22871262474519"
+    src="https://support.discord.com/hc/article_attachments/25630294689303"
+    width="606"
+    height="385"
+  />
+</p>
+<p>
+  This will direct you to the <strong>Discover</strong> page where you can
+  explore available Discord Quests, by selecting the <strong>Quest</strong> tab
+  within the <strong>Discover</strong> list. You can learn more about Discovery
+  <a
+    href="https://support.discord.com/hc/articles/25323248535319"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25630294693399"
     width="624"
-    height="284"
+    height="396"
+  />
+</p>
+<p>
+  In <strong>Quests</strong>, you can view recent and current Discord Quests.
+  While here, press <strong>Accept</strong> <strong>Quest</strong> for active
+  Quests to begin.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25630275044631"
+    width="624"
+    height="396"
   />
 </p>
 <h2 id="h_01J4SWYM6CM246C86NVF5J3XVX">Completing Quest Requirements </h2>
@@ -239,14 +252,14 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22871262511639"
-    width="624"
-    height="299"
+    src="https://support.discord.com/hc/article_attachments/25630294705303"
+    width="382"
+    height="370"
   />
 </p>
 <p>
   The easiest way to claim your reward is by heading over to your
-  <strong>User Settings &gt; Gift Inventory</strong>. 
+  <strong>Discover &gt; Quests</strong>. 
 </p>
 <p>
   If you’re claiming an <strong>in-game item reward,</strong> you’ll be given a
@@ -291,13 +304,13 @@
 </p>
 <div class="tip-box">
   If you hide all the in-app promotions of a specific Quest, you can still view
-  and accept the Quest in your <strong>Gift Inventory</strong>.
+  and accept the Quest in <strong>Discover &gt; Quests</strong>.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22871266982551"
-    width="594"
-    height="380"
+    src="https://support.discord.com/hc/article_attachments/25630294711063"
+    width="454"
+    height="323"
   />
 </p>
 <h2 id="h_01HVPBZR5FZ4PEXTW08Q4RYP41">
@@ -336,7 +349,7 @@
 </p>
 <div class="info-box">
   Although these settings are disabled, you will still be able to participate in
-  Quests if you navigate to your <strong>Gift Inventory</strong>. You may see
+  Quests if you navigate to <strong>Discover &gt; Quests</strong>. You may see
   Quests shared by your friends or reflected in their activity status on
   Discord.
 </div>
@@ -384,10 +397,7 @@
   A: Quests will not be available in certain regions. If you are in an
   ineligible region for a Quest, you will not be able to complete it.
 </p>
-<p>
-  Additionally, Discord’s premium services are restricted in some regions. If
-  you are unable to access the Gift Inventory, you are not eligible for Quests.
-</p>
+<p>Additionally, Discord’s premium services are restricted in some regions. </p>
 <p>
   <strong>Q: Why am I unable to see Quests on the Discord mobile app?</strong>
 </p>
@@ -431,7 +441,7 @@
 <p><strong>Q: I no longer see a Quest. Where did it go?</strong></p>
 <p>
   A: Quests are typically only available for a limited amount of time. If you no
-  longer see a Quest in the <strong>Gift Inventory</strong> or in-app
+  longer see a Quest in <strong>Discover &gt; Quests</strong> or in-app
   notifications about the quest, the period to complete and claim the reward for
   the Quest is over.
 </p>
