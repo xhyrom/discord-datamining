@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_toggle_soundshare_menu_experiment",
+    "label": "Toggle soundshare from stream settings menu",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable"
+    ],
+    "hash": 3853396589,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
