@@ -12273,7 +12273,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f3fb696fae0ad61c7e1b9ee91ca17080dace808a",
+            release: "discord_web-5b3a6a23371738a7624966a0b749f5d53ad0b45d",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12342,8 +12342,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "318361"), "318361"));
-          i.YA("builtAt", String("1723652328470"));
+            i.YA("buildNumber", ((e = "318710"), "318710"));
+          i.YA("builtAt", String("1723694094554"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -22006,6 +22006,7 @@
           ROLE_SUBSCRIPTIONS: new Set([0, 2, 5, 13, 15, 16]),
           ICON_EMOJIS: new Set([0, 2, 5, 13, 15]),
           SUMMARIZEABLE: new Set([0]),
+          CONTENT_ENTRY_EMBEDS: new Set([0, 1, 3, 5]),
           POLLS: new Set([0, 1, 2, 3, 5, 10, 11, 12, 13]),
           ACTIVITY_LAUNCHABLE: new Set([0, 1, 2, 3]),
           ALL: new Set([0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16]),
@@ -48371,4 +48372,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.368bfa315375541bbac0.js.map
+//# sourceMappingURL=sentry.47d15323f97d35a729c1.js.map
