@@ -1,3 +1,16 @@
+<div class="exp-box">
+  The <strong>Discover</strong> <strong>tab</strong> is an experimental feature
+  that will be available on <strong>August 15, 2024</strong> to a limited number
+  of users. This new tab will include <strong>Server Discovery</strong>,
+  allowing users to explore and join various servers. You can learn more about
+  the Discover tab
+  <a
+    href="https://support.discord.com/hc/articles/25323248535319"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
+</div>
 <p>
   Our goal from the start was to bring people closer to their favorite
   communities. With Server Discovery, you can find new communities with ease!
@@ -8,7 +21,7 @@
     src="https://support.discord.com/hc/article_attachments/14997610867351"
   />
 </p>
-<h3 id="h_01J593PRF68YWX8J3C5Z8BKVFT">
+<h3 id="h_01J593HP3CV7FE4BX88AAWP6CQ">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Please note that only Community Servers are eligible to be on our Server
     Discovery list.</span

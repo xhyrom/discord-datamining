@@ -15,10 +15,19 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2024-08-14T20:17:02Z",
+  "edited_at": "2024-08-15T16:03:44Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
-  "content_tag_ids": [],
+  "content_tag_ids": [
+    "01J5BC6Q1XRYTAEST0Q77YCYFT",
+    "01J5BC6SMPP3RR8VNAM6GMFPFY",
+    "01J5BC6XG2K4PGYHM31JB3S8Y1",
+    "01J5BC71228PR078J21DGFP9AW",
+    "01J5BC76Y3TYQND68A3P2NR43Q",
+    "01J5BCG74NAMBP9KA6BF2PKE60",
+    "01J5BCGDFBVSGJNGN2SRK3C807",
+    "01J5BCH5B7RFXS2Y9Y33FV9XJ0"
+  ],
   "label_names": [
     "servers",
     "community",
