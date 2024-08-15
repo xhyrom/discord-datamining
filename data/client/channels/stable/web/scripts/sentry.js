@@ -5758,6 +5758,7 @@
           (t6.TOGGLE_USERS = "TOGGLE_USERS"),
           (t6.TOGGLE_INBOX_UNREADS_TAB = "TOGGLE_INBOX_UNREADS_TAB"),
           (t6.MARK_TOP_INBOX_CHANNEL_READ = "MARK_TOP_INBOX_CHANNEL_READ"),
+          (t6.TOGGLE_FOR_LATER = "TOGGLE_FOR_LATER"),
           (t6.TOGGLE_CHANNEL_PINS = "TOGGLE_CHANNEL_PINS"),
           (t6.TOGGLE_PREVIOUS_GUILD = "TOGGLE_PREVIOUS_GUILD"),
           (t6.TOGGLE_MUTE = "TOGGLE_MUTE"),
@@ -7598,6 +7599,7 @@
             GUILD_DISCOVERY: "/guild-discovery",
             GLOBAL_DISCOVERY: "/discovery",
             QUEST_HOME: "/discovery/quests",
+            GLOBAL_DISCOVERY_SERVERS: "/discovery/servers",
             GUILD_MEMBER_VERIFICATION: (e, t) =>
               "/member-verification/"
                 .concat(e)
@@ -9065,6 +9067,7 @@
           (nt.SCROLLTO_PRESENT = "SCROLLTO_PRESENT"),
           (nt.SCROLLTO_CHANNEL = "SCROLLTO_CHANNEL"),
           (nt.TOGGLE_CHANNEL_PINS = "TOGGLE_CHANNEL_PINS"),
+          (nt.TOGGLE_FOR_LATER = "TOGGLE_FOR_LATER"),
           (nt.TOGGLE_INBOX_UNREADS_TAB = "TOGGLE_INBOX_UNREADS_TAB"),
           (nt.MARK_TOP_INBOX_CHANNEL_READ = "MARK_TOP_INBOX_CHANNEL_READ"),
           (nt.TOGGLE_EMOJI_POPOUT = "TOGGLE_EMOJI_POPOUT"),
@@ -9679,6 +9682,8 @@
             "quest_content_rendering_failure"),
           (nN.QUEST_BAR_RENDER_PERFORMANCE_MEASURED =
             "quest_bar_render_performance_measured"),
+          (nN.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT =
+            "quest_share_link_deep_linked_into_desktop_client"),
           (nN.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (nN.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
           (nN.USER_AVATAR_UPDATED = "user_avatar_updated"),
@@ -9839,6 +9844,8 @@
             "expression_picker_expression_focus"),
           (nN.EXPRESSION_PICKER_EXPRESSION_SELECTED =
             "expression_picker_expression_selected"),
+          (nN.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED =
+            "emoji_picker_three_row_collapse_toggled"),
           (nN.EXPRESSION_FAVORITED = "expression_favorited"),
           (nN.REACTION_PICKER_OPENED = "reaction_picker_opened"),
           (nN.REACTION_PICKER_TAB_CLICKED = "reaction_picker_tab_clicked"),
@@ -12273,7 +12280,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-5b3a6a23371738a7624966a0b749f5d53ad0b45d",
+            release: "discord_web-48a348b72f59e693934e95db9eb53d8637379c2a",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12342,8 +12349,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "318710"), "318710"));
-          i.YA("builtAt", String("1723694094554"));
+            i.YA("buildNumber", ((e = "318966"), "318966"));
+          i.YA("builtAt", String("1723751474225"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48372,4 +48379,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.47d15323f97d35a729c1.js.map
+//# sourceMappingURL=sentry.c642bdd37dc7a9d6ffea.js.map
