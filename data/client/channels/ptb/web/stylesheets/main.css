@@ -17777,7 +17777,7 @@ span.clanTag_a31c43 {
 }
 .bannerColor_f9d37d {
   background: var(--redesign-button-overlay-alpha-background);
-  color: var(--redesign-button-overlay-alpha-text);
+  color: var(--white);
 }
 .bannerColor_f9d37d:hover,
 .bannerColor_f9d37d:active {
@@ -44549,4 +44549,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.dc58e4d640126a4f1306.css.map*/
+/*# sourceMappingURL=12633.017cafeeb9cc484a993a.css.map*/
