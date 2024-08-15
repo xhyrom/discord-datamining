@@ -18335,7 +18335,7 @@
   "CLAN_SETUP_APPLICATION_SUBTITLE": "\"Ask questions to get to know potential members better. You'll review their answers and decide if they are approved to join. You'll also be able to interview applicants to get to know them better.\"",
   "CLAN_SETUP_GAMES_TITLE": "\"What games does your Guild play?\"",
   "CLAN_SETUP_GAMES_SUBTITLE": "\"You can always add more games later.\"",
-  "CLAN_SETUP_GAMES_SUGGESTED": "\"Suggested Games\"",
+  "CLAN_SETUP_GAMES_SUGGESTED": "\"Games Your Members Are Playing\"",
   "CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER": "\"Search for a game...\"",
   "CLAN_SETUP_GAMES_ONE_GAME_REQUIRED": "\"You must select at least one game\"",
   "CLAN_SETUP_SELECTED_GAMES": "\"Selected Games\"",
