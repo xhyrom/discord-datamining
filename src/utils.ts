@@ -64,9 +64,10 @@ export const pushToGit = async (...message: string[]) => {
   }
 
   console.log(await $`git add data/*`);
-  const text = await $`git commit ${msg.map((m) => `-m "${m}"`).join(" ")}`
-    .throws(false)
-    .text();
+  const text =
+    await $`git commit ${{ raw: msg.map((m) => `-m "${m}"`).join(" ") }}`
+      .throws(false)
+      .text();
 
   if (text.includes("Your branch is up to date with")) {
     console.log("Up to date!!");
