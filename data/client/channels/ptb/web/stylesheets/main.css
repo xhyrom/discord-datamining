@@ -21850,29 +21850,32 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .itemWrapper_fe2299 {
   padding: 0;
 }
+.closeButton_cb4d21 {
+  flex: 0 0 auto;
+  cursor: pointer;
+  color: var(--interactive-normal);
+  line-height: 0;
+  padding: 8px 18px 8px 16px;
+}
+.closeButton_cb4d21:hover {
+  color: var(--interactive-hover);
+}
+.closeIcon_cb4d21 {
+  width: 16px;
+  height: 16px;
+}
 .bar_d1cd43 {
   display: flex;
   flex-direction: row;
   align-items: center;
   line-height: 16px;
   font-weight: 500;
-  padding: 8px 8px 8px 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 16px;
   color: var(--interactive-active);
   font-size: 16px;
   justify-content: space-between;
-}
-.closeButton_d1cd43 {
-  flex: 0 0 auto;
-  cursor: pointer;
-  color: var(--interactive-normal);
-  line-height: 0;
-}
-.closeButton_d1cd43:hover {
-  color: var(--interactive-hover);
-}
-.closeIcon_d1cd43 {
-  width: 16px;
-  height: 16px;
 }
 .assetWrapper_cb3343 {
   position: relative;
@@ -24331,10 +24334,17 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  padding-left: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.commandInfo_f60904 {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: baseline;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  padding: 8px 16px;
   gap: 8px;
 }
 .name_f60904 {
@@ -24354,6 +24364,11 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   overflow: hidden;
   text-overflow: ellipsis;
   color: var(--red-400);
+}
+.actions_f60904 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
 }
 .bar_cab5bc {
   display: flex;
@@ -24432,20 +24447,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   width: 1px;
   height: 20px;
   background-color: var(--background-modifier-accent);
-}
-.closeButton_b11c5e {
-  flex: 0 0 auto;
-  cursor: pointer;
-  color: var(--interactive-normal);
-  line-height: 0;
-  padding: 8px 18px 8px 16px;
-}
-.closeButton_b11c5e:hover {
-  color: var(--interactive-hover);
-}
-.closeIcon_b11c5e {
-  width: 16px;
-  height: 16px;
 }
 .createThreadButton_b11c5e {
   white-space: nowrap;
@@ -44607,4 +44608,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.855143b75a464f44c621.css.map*/
+/*# sourceMappingURL=12633.161ffaedb358280dd0f4.css.map*/
