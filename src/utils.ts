@@ -70,7 +70,7 @@ export const pushToGit = async (...message: string[]) => {
     1000,
     async () => {
       try {
-        await git.pull("origin", "master", ["--rebase", "--depth 1"]);
+        await git.pull("origin", "master", ["--rebase"]);
       } catch (e) {
         console.log(e);
       }
@@ -83,7 +83,7 @@ export const pushToGit = async (...message: string[]) => {
       }
 
       try {
-        await git.pull("origin", "master", ["--rebase", "--depth 1"]);
+        await git.pull("origin", "master", ["--rebase"]);
       } catch (e) {
         console.log(e);
       }
@@ -102,7 +102,7 @@ export const pushToGit = async (...message: string[]) => {
       }
 
       try {
-        await git.pull("origin", "master", ["--depth 1"]);
+        await git.pull("origin", "master");
       } catch (e) {
         console.log(e);
       }
