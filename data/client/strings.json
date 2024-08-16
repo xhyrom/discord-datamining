@@ -18584,6 +18584,8 @@
   "CLAN_DISCOVERY_ADMIN_UPSELL_COMPLETE_SUBTITLE": "\"Sit tight, this discovery page is only visible to you and your fellow Guild leaders for now. Your Guild will appear soon. We’ll give you a heads up when this Guilds page launches. When it does, only a select number of people will be able to see it and apply.\"",
   "CLAN_DISCOVERY_SAVED_GUILDS_EMPTY_TITLE": "\"No Saved Guilds\"",
   "CLAN_DISCOVERY_SAVED_GUILDS_EMPTY_DESCRIPTION": "\"Browse Guilds to find the right one for you.\"",
+  "CLAN_DISCOVERY_EMPTY_LIST_TITLE": "\"No Guilds Found\"",
+  "CLAN_DISCOVERY_EMPTY_LIST_DESCRIPTION": "\"Try changing your filters or check back later.\"",
   "CLAN_DISCOVERY_SAVED_FILTER": "\"{count, number} Saved\"",
   "CLAN_DISCOVERY_MAX_GAMES_SELECTED": "\"Only a maximum of three games can be selected at a time.\"",
   "CLAN_DISCOVERY_UPSELL_CTA_GUILD_INVITE": "\"You're invited to become a Guild!\"",
