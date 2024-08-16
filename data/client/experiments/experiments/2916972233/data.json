@@ -6,21 +6,18 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable the Contextual Image Recommendations",
-      "Treatment 2: Enable the Contextual Image Recommendations with Options"
+      "Treatment 1: Enable the Contextual Image Recommendations with options"
     ],
     "hash": 2916972233,
     "buckets": [
       -1,
       0,
-      1,
-      2
+      1
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "imageRecsEnabled",
-      "optionsEnabled"
+      "imageRecsEnabled"
     ]
   }
 }
