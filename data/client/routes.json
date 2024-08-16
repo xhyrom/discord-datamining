@@ -556,11 +556,15 @@
   },
   "GUILD_TOP_GAMES": {
     "url": "/guilds/:param/top-games",
+<<<<<<< HEAD
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
+=======
+    "allowed_methods": null
+>>>>>>> 541bf54 (🧪 Experiments have been updated)
   },
   "GUILD_TOP_READ_CHANNELS": {
     "url": "/guilds/:param/top-read-channels",
