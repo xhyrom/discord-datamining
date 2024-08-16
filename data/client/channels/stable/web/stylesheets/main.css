@@ -8400,12 +8400,18 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .iconBadge_fc4f04 {
   position: absolute;
-  right: 2px;
-  bottom: 2px;
   width: 8px;
   height: 8px;
   border-radius: 8px;
   background-color: var(--status-danger);
+}
+.iconBadgeTop_fc4f04 {
+  right: 2px;
+  top: 2px;
+}
+.iconBadgeBottom_fc4f04 {
+  right: 2px;
+  bottom: 2px;
 }
 .divider_fc4f04 {
   width: 1px;
@@ -13063,6 +13069,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   display: flex;
   flex-flow: column nowrap;
   flex: auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .imageContainer_cf58b5 {
   display: flex;
@@ -17775,7 +17783,7 @@ span.clanTag_a31c43 {
 }
 .bannerColor_f9d37d {
   background: var(--redesign-button-overlay-alpha-background);
-  color: var(--redesign-button-overlay-alpha-text);
+  color: var(--white);
 }
 .bannerColor_f9d37d:hover,
 .bannerColor_f9d37d:active {
@@ -44547,4 +44555,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.ce00a51248e7abfd0c72.css.map*/
+/*# sourceMappingURL=12633.d12194fb89e5824a61f1.css.map*/
