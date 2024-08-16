@@ -89,6 +89,13 @@ export const pushToGit = async (...message: string[]) => {
       }
 
       try {
+        await git.add("data/*");
+        await git.commit(msg);
+      } catch (e) {
+        console.log(e);
+      }
+
+      try {
         await git.rebase(["--skip"]);
       } catch (e) {
         console.log(e);
