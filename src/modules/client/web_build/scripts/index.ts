@@ -216,6 +216,10 @@ export class Scripts implements Module {
   async chunks() {
     if (this.#chunks) return this.#chunks;
 
-    return getChunks((await (await this.files()).mainScript.content())!);
+    this.#chunks = await getChunks(
+      (await (await this.files()).mainScript.content())!,
+    );
+
+    return this.#chunks;
   }
 }
