@@ -14592,6 +14592,23 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .selected_c18810:active {
   border-color: var(--brand-500);
 }
+@keyframes placeholderPulse_d82d0d {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+.placeholderSkeleton_d82d0d {
+  border-radius: 8px;
+  background: var(--bg-mod-faint);
+  opacity: 0.2;
+  animation: placeholderPulse_d82d0d 3s ease-in-out infinite;
+}
 .gameImageContainer_fda254 {
   position: relative;
   width: 24px;
@@ -14704,6 +14721,14 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .full-motion .clickableCard_e0fe28 {
   transition: transform.2s, box-shadow.1s;
 }
+.nonClickableCard_e0fe28 {
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: var(--shadow-low);
+  min-width: 240px;
+  max-width: 360px;
+  height: 400px;
+}
 .clickableCard_e0fe28:hover {
   box-shadow: var(--shadow-high);
   transform: translatey(-2px);
@@ -14721,6 +14746,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: var(--bg-base-tertiary);
   display: flex;
   flex-direction: column;
+}
+.skeletonCard_e0fe28 {
+  height: 100%;
+  background-color: var(--bg-base-tertiary);
 }
 .favoriteButton_e0fe28 {
   position: absolute;
@@ -14759,6 +14788,15 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .clanIconInner_e0fe28 {
   background-color: var(--bg-surface-overlay);
   padding: 3px;
+}
+.skeletonIconInner_e0fe28 {
+  background-color: var(--bg-base-tertiary);
+  padding: 3px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.skeletonIcon_e0fe28 {
+  border-radius: 16px;
 }
 .clanBadge_e0fe28 {
   position: absolute;
@@ -44613,4 +44651,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.a9017d1122ab0e605ff2.css.map*/
+/*# sourceMappingURL=12633.b6cda4a405722b4d3619.css.map*/
