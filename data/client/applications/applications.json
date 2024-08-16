@@ -7,22 +7,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
-    "hook": true,
-    "storefront_available": false,
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
-    "flags": 0
-  },
-  {
-    "id": "1096190356233670716",
-    "name": "Collectibles Shop",
-    "icon": null,
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "storefront_available": false,
     "integration_types_config": {
@@ -39,6 +24,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "storefront_available": false,
     "integration_types_config": {
@@ -55,6 +41,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "0227b2e89ea08d666c43003fbadbc72a",
     "hook": true,
     "storefront_available": false,
@@ -106,6 +93,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "f22f4184f95706fef2024a10110d47aa",
     "bot": {
       "id": "880218832743055411",
@@ -182,6 +170,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1050941315912835122",
       "username": "Watch Together QA",
@@ -257,6 +246,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "9a04eab3b9f50302006577b769354520",
     "bot": {
       "id": "1070087967294631976",
@@ -334,6 +324,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "7293b549efff3c5a809999d883f09202",
     "bot": {
       "id": "1007373802981822582",
@@ -412,6 +403,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "800aeb4c6899941eb52a743abe773a0b",
     "hook": true,
     "storefront_available": false,
@@ -472,6 +464,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "9a4a52c760994654a416740ae0b19fbb",
     "bot": {
       "id": "852509694341283871",
@@ -548,6 +541,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "0a6b8f4795c66ba12afbc766dd920bfb",
     "bot": {
       "id": "903769130790969345",
@@ -625,6 +619,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "3cc9446876ae9eec6e06ff565703c292",
     "bot": {
       "id": "880218394199220334",
@@ -701,6 +696,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "6f547114b2979b8bc83e4ba91b4d770d",
     "bot": {
       "id": "1078728822972764312",
@@ -778,6 +774,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "b485f75e95e6486a758a4aa5db3352f4",
     "bot": {
       "id": "947957217959759964",
@@ -855,6 +852,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "97e50fed67f44802dbb4901d74a6f9a1",
     "bot": {
       "id": "832013003968348200",
@@ -932,6 +930,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "3b3981ddf67c8702920fae10b5f123ed",
     "bot": {
       "id": "832012774040141894",
@@ -1009,6 +1008,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "6fe6e3dda7657b83758693205a833aa1",
     "bot": {
       "id": "832025144389533716",
@@ -1086,6 +1086,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "e70dcb600e0b0fccf90ba90ed1021ff4",
     "splash": "b511208e677d7c07358c480a14ab2f98",
     "bot": {
@@ -1168,6 +1169,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "0096355142a9b00bc2676ec09b9c8dbc",
     "bot": {
       "id": "879863686565621790",
@@ -1194,7 +1196,7 @@
       "1": {}
     },
     "verify_key": "c282d4b2693092a1f657cc699ddbcc26b83b7d7a1bfd0eae1697583ee04e1bef",
-    "flags": 3276802,
+    "flags": 11665410,
     "max_participants": 8,
     "embedded_activity_config": {
       "activity_preview_video_asset_id": "951327524460310568",
@@ -1244,6 +1246,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "05f3ad2c91d157cd1a0bd8e904a3182e",
     "bot": {
       "id": "902271654783242291",
@@ -1321,6 +1324,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "61847edf739aba25c08069b7df4ff191",
     "bot": {
       "id": "1037680572660727838",
@@ -1398,6 +1402,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "cover_image": "95c64853134eb048670d9cfbbe92853b",
     "bot": {
       "id": "945737671223947305",
@@ -1474,6 +1479,7 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": true,
     "cover_image": "6ed44e27aadafd1897c633c49cf9e111",
     "bot": {
       "id": "1011683823555199066",
@@ -1551,6 +1557,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "9ba1bd6109617a4b32ef4b986793e578",
     "bot": {
       "id": "1234546995360694434",
@@ -1621,6 +1628,7 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": true,
     "cover_image": "9ba1bd6109617a4b32ef4b986793e578",
     "bot": {
       "id": "1214629548377768066",
@@ -1650,7 +1658,7 @@
     "flags": 2228234,
     "max_participants": null,
     "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1253039614327783504",
+      "activity_preview_video_asset_id": "1273632671460753522",
       "supported_platforms": [
         "web",
         "ios",
@@ -1700,6 +1708,7 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": true,
     "primary_sku_id": "1240025819242299462",
     "bot": {
       "id": "235088799074484224",
@@ -1801,6 +1810,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "storefront_available": false,
     "terms_of_service_url": "https://garticphone.com/en/terms",
@@ -1856,6 +1866,7 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": true,
     "cover_image": "8b9927c8c2ee042e5967c451f57c76be",
     "primary_sku_id": "1225878725757894857",
     "bot": {
@@ -1935,10 +1946,11 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": false,
     "cover_image": "674cc3a06c5f81a663846d3c3b5133b7",
     "bot": {
       "id": "1245041113882955918",
-      "username": "Tiny Royale PRODUCTION",
+      "username": "Tiny Royale - Army of Boom",
       "global_name": null,
       "avatar": "a9c7e642093dae6a79e895da60869f9b",
       "avatar_decoration_data": null,
@@ -1961,7 +1973,7 @@
       "1": {}
     },
     "verify_key": "94acd5a9e9337b574a7e454a4b11ac864869c8946eadea0eb2f9f2d3946589ec",
-    "flags": 131082,
+    "flags": 2228234,
     "max_participants": null,
     "embedded_activity_config": {
       "activity_preview_video_asset_id": "1256309110803267615",
@@ -2012,6 +2024,7 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": false,
     "bot": {
       "id": "1245040907732910201",
       "username": "Tiny Royale STAGING",
@@ -2088,9 +2101,10 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": false,
     "bot": {
       "id": "1245040436427489471",
-      "username": "Tiny Royale - DEV2",
+      "username": "Tiny Royale DEV2",
       "global_name": null,
       "avatar": "40f0d0e46a7621b9973b7393aa60db3e",
       "avatar_decoration_data": null,
@@ -2164,9 +2178,10 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": false,
     "bot": {
       "id": "1208090049871351890",
-      "username": "Tiny Royale Dev",
+      "username": "Tiny Royale DEV",
       "global_name": null,
       "avatar": "f10a2d7675cf85377b882dc737de0543",
       "avatar_decoration_data": null,
@@ -2240,6 +2255,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "20d9c743a0e4abb893034d1d530dae4c",
     "bot": {
       "id": "1235205910863806484",
@@ -2335,6 +2351,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1220052815590723654",
       "username": "Exoracer",
@@ -2355,9 +2372,29 @@
     "bot_require_code_grant": false,
     "terms_of_service_url": "https://exoracer.io/terms-of-service",
     "privacy_policy_url": "https://exoracer.io/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
     "integration_types_config": {
-      "0": {},
-      "1": {}
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
     },
     "verify_key": "a5ac68c1692cd3180db3ce42f40f862dd98cc836848943a9bd34cbc55f7c55eb",
     "flags": 2228226,
@@ -2365,9 +2402,7 @@
     "embedded_activity_config": {
       "activity_preview_video_asset_id": "1231058431922671636",
       "supported_platforms": [
-        "web",
-        "ios",
-        "android"
+        "web"
       ],
       "default_orientation_lock_state": 2,
       "tablet_default_orientation_lock_state": 2,
@@ -2411,6 +2446,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "01c240edfe38950aeaf3139d37e6d85e",
     "bot": {
       "id": "1222080278672179220",
@@ -2488,6 +2524,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "a7924d511c493c458ff2074b75320ebe",
     "bot": {
       "id": "1227719606223765687",
@@ -2565,6 +2602,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "dc73f8a0e3b2b519f0332dc1ffc9ad4e",
     "hook": true,
     "rpc_origins": [],
@@ -2619,6 +2657,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1102741339122188349",
       "username": "Donald's Test App",
@@ -2710,6 +2749,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1211781489931452447",
       "username": "Wagons",
@@ -2782,6 +2822,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "bot": {
       "id": "1211780388607885393",
       "username": "Wagons QA",
@@ -2854,6 +2895,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1166579889915310151",
       "username": "Wagons DEV",
@@ -2926,6 +2968,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -2954,6 +2997,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "aliases": [
       "Genshin Impact"
@@ -2980,6 +3024,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "479d98514a15ead4dcf0ca3290ba8b83",
     "third_party_skus": [
       {
@@ -3024,6 +3069,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -3052,6 +3098,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "553850",
@@ -3101,16 +3148,17 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
-      {
-        "id": "",
-        "sku": "",
-        "distributor": "origin"
-      },
       {
         "id": "1172470",
         "sku": "1172470",
         "distributor": "steam"
+      },
+      {
+        "id": "",
+        "sku": "",
+        "distributor": "origin"
       }
     ],
     "hook": true,
@@ -3145,6 +3193,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1966720",
@@ -3191,6 +3240,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "4bf8d6cfe112edc9295cb7e8d93db7a6",
     "third_party_skus": [
       {
@@ -3205,23 +3255,23 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "ts4.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "ts4_dx9_x64.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "the sims 4.app",
         "is_launcher": false
       },
       {
         "os": "win32",
+        "name": "ts4.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "ts4_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ts4_dx9_x64.exe",
         "is_launcher": false
       }
     ],
@@ -3240,6 +3290,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "e970e33dd647f87dc87f4dc4b28f4627",
     "overlay_methods": 1,
     "hook": true,
@@ -3279,6 +3330,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1086940",
@@ -3308,12 +3360,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -3334,6 +3386,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "172f9eb99e935d9231bf2b512cf32fa0",
     "third_party_skus": [
       {
@@ -3365,6 +3418,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1121201675240210523",
       "username": "Honkai Star Rail",
@@ -3407,6 +3461,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "c1864b38910c209afd5bf6423b672022",
     "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
     "third_party_skus": [
@@ -3425,13 +3480,13 @@
     "guild_id": "322850917248663552",
     "executables": [
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -3450,6 +3505,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "e970e33dd647f87dc87f4dc4b28f4627",
     "overlay_methods": 1,
     "hook": true,
@@ -3489,6 +3545,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
     "overlay": true,
     "hook": true,
@@ -3499,12 +3556,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
       },
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -3514,17 +3576,12 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       }
     ],
@@ -3543,6 +3600,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -3571,6 +3629,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "aliases": [
       "Minecraft Windows 10 Edition"
@@ -3615,6 +3674,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "730",
@@ -3665,6 +3725,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1623730",
@@ -3715,6 +3776,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "6063707ba43224ee22f9de7bf0339aa1",
     "primary_sku_id": "491748506516717599",
     "third_party_skus": [
@@ -3738,12 +3800,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "gta5.exe",
+        "name": "grand theft auto v/ragepluginhook.exe",
         "is_launcher": false
       },
       {
@@ -3753,7 +3810,12 @@
       },
       {
         "os": "win32",
-        "name": "grand theft auto v/ragepluginhook.exe",
+        "name": "gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_gtaprocess.exe",
         "is_launcher": false
       },
       {
@@ -3763,7 +3825,7 @@
       },
       {
         "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
+        "name": "lspdfr/lspdfr configurator.exe",
         "is_launcher": false
       },
       {
@@ -3787,6 +3849,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1966720",
@@ -3833,6 +3896,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "",
@@ -3877,16 +3941,17 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
-        "id": null,
-        "sku": null,
+        "id": "Pro",
+        "sku": "Pro",
         "distributor": "battlenet"
       },
       {
-        "id": "Pro",
-        "sku": "Pro",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       }
     ],
@@ -3915,6 +3980,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "7dd9116c1287c1469cd14329cbc9c46f",
     "third_party_skus": [
       {
@@ -3949,17 +4015,17 @@
       },
       {
         "os": "win32",
-        "name": "call of duty hq/cod.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "_retail_/cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "sp23/sp23-cod.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "call of duty hq/cod.exe",
         "is_launcher": false
       }
     ],
@@ -3980,6 +4046,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "39a82b92cc95af7a11d024fec8540d28",
     "third_party_skus": [
       {
@@ -3997,12 +4064,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rocketleague.exe",
+        "name": "bakkesmod/plugininstaller.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bakkesmod/plugininstaller.exe",
+        "name": "rocketleague.exe",
         "is_launcher": false
       }
     ],
@@ -4021,6 +4088,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "b97e78635ec0fb2b79d19736e74ad2d2",
     "third_party_skus": [
       {
@@ -4062,6 +4130,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "aliases": [
       "Genshin Impact"
@@ -4088,6 +4157,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "75621361e5ffb56d789b973b5e575b22",
     "third_party_skus": [
       {
@@ -4130,17 +4200,18 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "028fe9a1748d259872a0dfa49eb818f2",
     "third_party_skus": [
-      {
-        "id": "635",
-        "sku": "635",
-        "distributor": "uplay"
-      },
       {
         "id": "359550",
         "sku": "359550",
         "distributor": "steam"
+      },
+      {
+        "id": "635",
+        "sku": "635",
+        "distributor": "uplay"
       }
     ],
     "overlay": true,
@@ -4154,12 +4225,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rainbowsix.exe",
+        "name": "rainbowsix_be.exe",
         "is_launcher": false
       },
       {
@@ -4169,12 +4245,7 @@
       },
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "rainbowsix_be.exe",
+        "name": "rainbowsix.exe",
         "is_launcher": false
       }
     ],
@@ -4193,6 +4264,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "553850",
@@ -4242,6 +4314,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "2073850",
@@ -4288,6 +4361,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "d6fef6748f631e91707a8f866bdf9396",
     "third_party_skus": [
       {
@@ -4324,6 +4398,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1086940",
@@ -4379,6 +4454,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "04d71799c6c65c202262a7335f039264",
     "third_party_skus": [
       {
@@ -4412,6 +4488,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "4bf8d6cfe112edc9295cb7e8d93db7a6",
     "third_party_skus": [
       {
@@ -4427,22 +4504,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "ts4_dx9_x64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "ts4_x64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "the sims 4.app",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "ts4.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ts4_dx9_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "the sims 4.app",
         "is_launcher": false
       }
     ],
@@ -4461,6 +4538,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1121201675240210523",
       "username": "Honkai Star Rail",
@@ -4503,6 +4581,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "b68121c4ece68d5ab313f797a5ca1107",
     "hook": true,
     "executables": [
@@ -4527,6 +4606,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1097150",
@@ -4567,6 +4647,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "a5fcb17e0be802587ad64fa14a3578de",
     "splash": "edfdddb7a7270c154bcbda5477e2ba59",
     "third_party_skus": [
@@ -4610,6 +4691,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1203620",
@@ -4656,6 +4738,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "739630",
@@ -4705,6 +4788,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -4732,6 +4816,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "b125c7b6bd1ea27c2cef8b50b09c8c19",
     "hook": true,
     "guild_id": "502101454253981697",
@@ -4757,6 +4842,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1551360",
@@ -4795,6 +4881,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "b76db81b683527961ee1432c24a02774",
     "splash": "8029278a3fab0e30108bd335f26ab8a0",
     "primary_sku_id": "367827983903490050",
@@ -4804,13 +4891,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       }
     ],
@@ -4829,6 +4916,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "5f69a75ff4a835e2edb7d97eba43d050",
     "third_party_skus": [
       {
@@ -4846,17 +4934,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "brawlhalla.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "brawlhalla/brawlhallagame.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "brawlhalla.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "brawlhalla.exe",
         "is_launcher": false
       }
     ],
@@ -4875,6 +4963,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "cb3735ab8d02aa2ecd78ede3f06aee1e",
     "third_party_skus": [
       {
@@ -4890,12 +4979,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "geometry dash/geometrydash.exe",
+        "name": "geometrydash.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "geometrydash.exe",
+        "name": "geometry dash/geometrydash.exe",
         "is_launcher": false
       }
     ],
@@ -4914,6 +5003,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1245620",
@@ -4948,6 +5038,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "a04bfb0f10a2a531447e713a9e2443f0",
     "third_party_skus": [
       {
@@ -4969,13 +5060,18 @@
     "guild_id": "113103747126747136",
     "executables": [
       {
-        "os": "win32",
-        "name": "_beta_/wow.exe",
+        "os": "darwin",
+        "name": "world of warcraft.app",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow-64.exe",
+        "name": "_retail_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow.exe",
         "is_launcher": false
       },
       {
@@ -4985,12 +5081,7 @@
       },
       {
         "os": "win32",
-        "name": "_retail_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "world of warcraft.app",
+        "name": "_ptr_/wow-64.exe",
         "is_launcher": false
       },
       {
@@ -5000,7 +5091,7 @@
       },
       {
         "os": "win32",
-        "name": "_retail_/wow.exe",
+        "name": "_beta_/wow.exe",
         "is_launcher": false
       }
     ],
@@ -5019,6 +5110,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "WoW",
@@ -5054,6 +5146,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "21f6220ac81c817f2228e4e856b61d23",
     "third_party_skus": [
       {
@@ -5100,6 +5193,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "b41510892fcefd0b5e4037ebaf7ae1ec",
     "third_party_skus": [
       {
@@ -5150,6 +5244,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "6b05f8bebdb9740a1d56569916f8c56a",
     "third_party_skus": [
       {
@@ -5167,22 +5262,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "among us - kopie/among us.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "among us - tou/among us.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "among us/among us.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "among us - copy/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "among us - kopie/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "among us - tou/among us.exe",
         "is_launcher": false
       }
     ],
@@ -5201,6 +5296,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1091500",
@@ -5240,6 +5336,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "2a901aa3dc38e84d9cc46f7b5f712ff8",
     "third_party_skus": [
       {
@@ -5272,6 +5369,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "39a82b92cc95af7a11d024fec8540d28",
     "third_party_skus": [
       {
@@ -5289,12 +5387,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rocketleague.exe",
+        "name": "bakkesmod/plugininstaller.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bakkesmod/plugininstaller.exe",
+        "name": "rocketleague.exe",
         "is_launcher": false
       }
     ],
@@ -5313,6 +5411,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "6b0e4d8c05e14f630548eccc956324d9",
     "splash": "e5185fe1f9ac1bd77cfdf3b2a5b97448",
     "primary_sku_id": "494959992483348480",
@@ -5378,6 +5477,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "6f327596a069605fbea022abc3a9666e",
     "third_party_skus": [
       {
@@ -5393,12 +5493,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
-        "arguments": "-game left4dead2",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "left4dead2.exe",
         "arguments": "-game left4dead2",
@@ -5407,6 +5501,12 @@
       {
         "os": "win32",
         "name": "left 4 dead 2/left4dead2.exe",
+        "arguments": "-game left4dead2",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -5431,6 +5531,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "81ff372fbd0557b8908331db0ae94524",
     "third_party_skus": [
       {
@@ -5470,6 +5571,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "113400",
@@ -5484,12 +5586,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "2012/vcredist_x86.exe",
+        "name": "apb.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "apb.exe",
+        "name": "2012/vcredist_x86.exe",
         "is_launcher": false
       }
     ],
@@ -5508,17 +5610,18 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "99195e630e7865c4332d2584d03d5876",
     "hook": true,
     "executables": [
       {
         "os": "win32",
-        "name": "gta_sa.exe",
+        "name": "gta-sa.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "gta-sa.exe",
+        "name": "gta_sa.exe",
         "is_launcher": false
       }
     ],
@@ -5537,6 +5640,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "2d646423539ce9fa89f06a5c1ae8cfcc",
     "third_party_skus": [
       {
@@ -5568,6 +5672,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "ba35fab3925cc6cee14d84791930ba58",
     "third_party_skus": [
       {
@@ -5593,12 +5698,12 @@
       },
       {
         "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
+        "name": "bloonstd6.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bloonstd6.exe",
+        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       }
     ],
@@ -5617,6 +5722,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "172f9eb99e935d9231bf2b512cf32fa0",
     "third_party_skus": [
       {
@@ -5648,6 +5754,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "df179a691e75ad59389974454187e7fe",
     "third_party_skus": [
       {
@@ -5665,12 +5772,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "garrysmod/hl2.exe",
-        "arguments": "-game garrysmod",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
@@ -5678,6 +5779,12 @@
       {
         "os": "win32",
         "name": ">hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garrysmod/hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -5713,6 +5820,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "686810",
@@ -5762,6 +5870,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "guild_id": "423075122610700288",
     "executables": [
@@ -5786,6 +5895,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "1e6f52750013a9088823845a235826d5",
     "third_party_skus": [
       {
@@ -5822,6 +5932,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "c94c6673d3bf8514f3f6a25b9e925c77",
     "third_party_skus": [
       {
@@ -5839,12 +5950,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "dayz.exe",
+        "name": "dayz/dayzuninstaller.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "dayz/dayzuninstaller.exe",
+        "name": "dayz.exe",
         "is_launcher": false
       },
       {
@@ -5868,6 +5979,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "108600",
@@ -5903,6 +6015,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1144200",
@@ -5952,6 +6065,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1677740",
@@ -5998,6 +6112,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "fdd5d30ff7a802d7ec38f2dff0e63046",
     "third_party_skus": [
       {
@@ -6038,6 +6153,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "",
@@ -6088,6 +6204,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "244210",
@@ -6102,7 +6219,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "assettocorsa.exe",
+        "name": "assettocorsa/jsgme.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/acs.exe",
         "is_launcher": false
       },
       {
@@ -6117,12 +6239,7 @@
       },
       {
         "os": "win32",
-        "name": "assettocorsa/acs.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/jsgme.exe",
+        "name": "assettocorsa.exe",
         "is_launcher": false
       },
       {
@@ -6151,6 +6268,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "d48d8206d9cb89c8a31b461e3c64ff8b",
     "third_party_skus": [
       {
@@ -6164,13 +6282,13 @@
     "guild_id": "127167843383902209",
     "executables": [
       {
-        "os": "win32",
-        "name": "hearthstone.exe",
+        "os": "darwin",
+        "name": "hearthstone.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "hearthstone.app",
+        "os": "win32",
+        "name": "hearthstone.exe",
         "is_launcher": false
       }
     ],
@@ -6189,6 +6307,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "892970",
@@ -6235,6 +6354,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "a109376e705e71ab44e7d2d966cecc35",
     "third_party_skus": [
       {
@@ -6248,6 +6368,12 @@
     "guild_id": "132349439506382848",
     "executables": [
       {
+        "os": "win32",
+        "name": "hl2tf.exe",
+        "arguments": "-game tf",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": ">hl2_osx",
         "arguments": "-game tf",
@@ -6256,12 +6382,6 @@
       {
         "os": "win32",
         "name": ">hl2.exe",
-        "arguments": "-game tf",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "hl2tf.exe",
         "arguments": "-game tf",
         "is_launcher": false
       }
@@ -6281,6 +6401,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "a93eb36a39f180dcab448a053c3bfee9",
     "third_party_skus": [
       {
@@ -6294,13 +6415,13 @@
     "executables": [
       {
         "os": "win32",
-        "name": "vrchat/launch.exe",
-        "is_launcher": true
+        "name": "vrchat/vrchat.exe",
+        "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "vrchat/vrchat.exe",
-        "is_launcher": false
+        "name": "vrchat/launch.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -6323,6 +6444,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1281930",
@@ -6351,12 +6473,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader64bit.exe",
+        "name": "tmodloader/tmodloader.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader.exe",
+        "name": "launchutils/busybox64.exe",
         "is_launcher": false
       },
       {
@@ -6366,7 +6488,7 @@
       },
       {
         "os": "win32",
-        "name": "launchutils/busybox64.exe",
+        "name": "tmodloader/tmodloader64bit.exe",
         "is_launcher": false
       }
     ],
@@ -6387,6 +6509,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "96e0cd3d86c0af9289f400e4d49b6924",
     "overlay": true,
     "hook": true,
@@ -6412,6 +6535,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "990080",
@@ -6449,6 +6573,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "548430",
@@ -6480,6 +6605,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "8f4c6a58ab9bb909df9b42cee8934dff",
     "third_party_skus": [
       {
@@ -6500,13 +6626,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "the binding of isaac rebirth.app",
+        "os": "win32",
+        "name": "roomeditor/roomeditor.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "isaac-ng.exe",
+        "os": "darwin",
+        "name": "the binding of isaac rebirth.app",
         "is_launcher": false
       },
       {
@@ -6516,7 +6642,7 @@
       },
       {
         "os": "win32",
-        "name": "roomeditor/roomeditor.exe",
+        "name": "isaac-ng.exe",
         "is_launcher": false
       }
     ],
@@ -6535,6 +6661,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "185ff33b31468763b4caa6c757b72eed",
     "third_party_skus": [
       {
@@ -6574,6 +6701,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "149210e7069943518df545565dbb8f7f",
     "third_party_skus": [
       {
@@ -6605,6 +6733,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1248130",
@@ -6654,6 +6783,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1778820",
@@ -6700,6 +6830,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "c99384f8b68bf43672bdb79d0a3833ea",
     "overlay": true,
     "overlay_compatibility_hook": true,
@@ -6709,13 +6840,13 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "final fantasy xiv.app",
+        "os": "win32",
+        "name": "ffxiv_dx11.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "ffxiv_dx11.exe",
+        "os": "darwin",
+        "name": "final fantasy xiv.app",
         "is_launcher": false
       },
       {
@@ -6739,6 +6870,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "67be84bd214e91241cdba7c41e0ac9b8",
     "third_party_skus": [
       {
@@ -6756,12 +6888,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/shootergameserver.exe",
+        "name": "win64/shootergame_be.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "shootergame_be.exe",
+        "name": "win64/shootergameserver.exe",
         "is_launcher": false
       },
       {
@@ -6771,7 +6903,7 @@
       },
       {
         "os": "win32",
-        "name": "win64/shootergame_be.exe",
+        "name": "shootergame_be.exe",
         "is_launcher": false
       }
     ],
@@ -6790,6 +6922,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "bf8c81db7593a64576d4861a7316aec7",
     "third_party_skus": [
       {
@@ -6832,6 +6965,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1164697075582238730",
       "username": "FIFA 23",
@@ -6874,6 +7008,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1599340",
@@ -6909,6 +7044,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "cover_image": "449b6e642a4cec60f079d3112243d33d",
     "third_party_skus": [
       {
@@ -6935,12 +7071,12 @@
       },
       {
         "os": "win32",
-        "name": "call of duty hq/sp22/sp22-cod.exe",
+        "name": "call of duty hq/cod22/cod22-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "call of duty hq/cod22/cod22-cod.exe",
+        "name": "call of duty hq/sp22/sp22-cod.exe",
         "is_launcher": false
       }
     ],
@@ -6964,6 +7100,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "overlay": true,
     "overlay_compatibility_hook": true,
     "hook": true,
@@ -6989,6 +7126,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "be4bb04701b0aba0a2d725d37ce96a06",
     "third_party_skus": [
       {
@@ -7028,6 +7166,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "c38f8822fa7d54eb12acd546c8f1d22f",
     "third_party_skus": [
       {
@@ -7068,6 +7207,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "1162076274622222346",
       "username": "Battlefield 2042",
@@ -7110,6 +7250,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1943950",
@@ -7159,6 +7300,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "60a0e606e903fd1558362715097a209c",
     "third_party_skus": [
       {
@@ -7176,17 +7318,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "tesv.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "tesv_original.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "skyrimlauncher.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tesv.exe",
         "is_launcher": false
       }
     ],
@@ -7205,6 +7347,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "60a0e606e903fd1558362715097a209c",
     "third_party_skus": [
       {
@@ -7240,6 +7383,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "632360",
@@ -7279,6 +7423,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "bot": {
       "id": "457301824110723113",
       "username": "NoxPlayer-bot",
@@ -7318,6 +7463,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "1449850",
@@ -7364,6 +7510,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "280680",
@@ -7410,16 +7557,17 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
-      {
-        "id": "1172470",
-        "sku": "1172470",
-        "distributor": "steam"
-      },
       {
         "id": "",
         "sku": "",
         "distributor": "origin"
+      },
+      {
+        "id": "1172470",
+        "sku": "1172470",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -7454,6 +7602,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "guild_id": "140933721929940992",
     "executables": [
@@ -7478,6 +7627,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "third_party_skus": [
       {
         "id": "976730",
@@ -7516,6 +7666,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": true,
+    "is_verified": true,
     "primary_sku_id": "1022656689784225922",
     "bot": {
       "id": "426537812993638400",
@@ -7541,8 +7692,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "469887038"
     },
@@ -7568,6 +7719,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "bot": {
       "id": "1042836142560645130",
       "username": "Solana",
@@ -7591,8 +7743,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147483648"
     },
@@ -7615,6 +7767,7 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": true,
     "primary_sku_id": "1168932216332623912",
     "bot": {
       "id": "296023718839451649",
@@ -7660,6 +7813,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "bot": {
       "id": "979802510766268446",
       "username": "DeviantArt",
@@ -7709,6 +7863,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "bot": {
       "id": "1031611223235637258",
       "username": "JEFIT",
@@ -7758,6 +7913,7 @@
     "summary": "",
     "type": null,
     "is_monetized": true,
+    "is_verified": true,
     "primary_sku_id": "1156324820724760636",
     "bot": {
       "id": "512333785338216465",
@@ -7783,8 +7939,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "268561430"
     },
@@ -7792,8 +7948,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "268561430"
         }
@@ -7817,6 +7973,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": true,
     "bot": {
       "id": "936929561302675456",
       "username": "Midjourney Bot",
@@ -7882,6 +8039,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "storefront_available": false,
     "integration_types_config": {
@@ -7898,6 +8056,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "storefront_available": false,
     "integration_types_config": {
@@ -7914,6 +8073,7 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "storefront_available": false,
     "integration_types_config": {
@@ -7930,6 +8090,7 @@
     "summary": "",
     "type": 1,
     "is_monetized": false,
+    "is_verified": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
     "overlay": true,
     "hook": true,
@@ -7939,8 +8100,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -7949,13 +8110,13 @@
         "is_launcher": true
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -7964,8 +8125,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
@@ -7984,12 +8145,30 @@
     "summary": "",
     "type": null,
     "is_monetized": false,
+    "is_verified": false,
     "hook": true,
     "storefront_available": false,
     "integration_types_config": {
       "0": {}
     },
     "verify_key": "e8bdc7615658d007cc4dc8c1600a1324e015397dd831cb6244330b77ced29d3a",
+    "flags": 0
+  },
+  {
+    "id": "1096190356233670716",
+    "name": "Collectibles Shop",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
     "flags": 0
   }
 ]
