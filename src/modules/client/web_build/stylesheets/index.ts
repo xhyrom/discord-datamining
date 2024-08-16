@@ -29,6 +29,7 @@ import {
 import { ChannelType, type Channel } from "../../Channel.ts";
 import type { PushResult } from "simple-git";
 import type { WebBuild } from "../index.ts";
+import * as csstree from "css-tree";
 
 export class Stylesheets implements Module {
   #files?: {
@@ -52,16 +53,38 @@ export class Stylesheets implements Module {
 
     await rm(join(this.baseDir, "stylesheets"));
 
+    const classes: Record<string, string> = {};
+
     for (const file of files.stylesheets ?? []) {
+      const content = await file.content();
+      if (!content) continue;
+
+      csstree.walk(csstree.parse(content), (node) => {
+        if (
+          node.type === "ClassSelector" &&
+          !node.name.startsWith("adyen-checkout")
+        ) {
+          const match = node.name.match(/^(.*)_[a-zA-Z0-9]{6}$/)?.[1];
+          if (!match) return;
+
+          classes[match] = node.name;
+        }
+      });
+
       await writeFile(
         join(this.baseDir, "stylesheets", file.path),
-        await beautify(await file.content(), "css"),
+        await beautify(content, "css"),
       );
     }
 
     await writeFile(
       join(this.baseDir, "main.css"),
-      await beautify(await files.mainStylesheet!.content(), "css"),
+      await beautify((await files.mainStylesheet!.content())!, "css"),
+    );
+
+    await writeFile(
+      join(this.baseDir, "classes.json"),
+      JSON.stringify(classes, null, 2),
     );
 
     // Stylesheets diff is posted in WebBuild#run
