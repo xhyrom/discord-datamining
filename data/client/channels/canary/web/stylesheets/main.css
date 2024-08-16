@@ -23031,6 +23031,16 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .unownedStickerLockIcon_a5e382 {
   color: var(--interactive-normal);
 }
+@keyframes ripple_a708c4 {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
 .row_a708c4 {
   display: grid;
   margin-bottom: var(--custom-stickers-constants-sticker-picker-preview-margin);
@@ -23043,6 +23053,27 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   );
   padding: var(--custom-stickers-constants-sticker-picker-preview-padding);
   position: relative;
+}
+.sticker_a708c4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transform-origin: center;
+  opacity: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--yellow-300);
+  border-radius: 100%;
+  pointer-events: none;
+}
+.full-motion .sticker_a708c4:after {
+  transition: all.15s ease-in-out;
+}
+.sticker_a708c4.showPulse_a708c4:after {
+  animation: ripple_a708c4.25s ease-out 1;
 }
 .createSticker_a708c4 {
   position: relative;
@@ -44556,4 +44587,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.83d16b0b967a92766ded.css.map*/
+/*# sourceMappingURL=12633.defb8b4b783cd43e0a93.css.map*/
