@@ -63,13 +63,16 @@ export const pushToGit = async (...message: string[]) => {
     };*/
   }
 
-  const r = await $`git add data/*`.text();
-  if (r.includes("Your branch is up to date with")) {
+  console.log(await $`git add data/*`);
+  const text = await $`git commit ${msg.map((m) => `-m "${m}"`).join(" ")}`
+    .throws(false)
+    .text();
+
+  if (text.includes("Your branch is up to date with")) {
     console.log("Up to date!!");
     return;
   }
 
-  console.log(await $`git commit ${msg.map((m) => `-m "${m}"`).join(" ")}`);
   try {
     console.log(await $`git push`);
   } catch (e) {
