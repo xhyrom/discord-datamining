@@ -121,8 +121,6 @@ export class Scripts implements Module {
     }
 
     for (const file of chunks) {
-      if (oldChunkChecksums.includes(file.name)) continue; // we can skip since the file didn't change (name is checksum)
-
       const content = await file.content();
       if (!content) continue;
 
