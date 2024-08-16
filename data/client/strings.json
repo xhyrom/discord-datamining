@@ -17797,6 +17797,7 @@
   "CONTENT_INVENTORY_COACHTIP_IMAGE_ALT": "\"Wumpus chatting with a friend while gaming\"",
   "CONTENT_INVENTORY_GAME_STATE_SIZE": "\"{count} of {max}\"",
   "CONTENT_INVENTORY_VIEW_ACTIVITY": "\"View Activity\"",
+  "CONTENT_INVENTORY_ACTIVITY_CARD_ARIA_ROLE_DESCRIPTION": "\"Activity Card\"",
   "GAME_PROFILE": "\"Game Profile\"",
   "GAME_PROFILE_SEE_ALL_ENTRIES": "\"See All\"",
   "GAME_PROFILE_UNFOLLOW_GAME": "\"Unfollow\"",
