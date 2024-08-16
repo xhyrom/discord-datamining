@@ -1,146 +1,26 @@
 {
   "modules": {
-    "discord_game_utils": {
+    "discord_modules": {
       "full": {
         "host_version": [
           1,
           0,
-          1087
+          1088
         ],
         "module_version": 1,
-        "package_sha256": "a76d8981e540359b5d77636dcc15aa589de038e169ed854ca23f0e3e9fc158cc",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_game_utils/1/full.distro"
+        "package_sha256": "dcfa7422221e12f661ae798d78426368b946cdb02ffc96f39d69a3fefd87aaa3",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_modules/1/full.distro"
       },
       "deltas": [
         {
           "host_version": [
             1,
             0,
-            1086
+            1087
           ],
           "module_version": 1,
-          "package_sha256": "02486707de65e836179fb2ca083a973c18cad57d7f74c2f9dd2f14e7d2631603",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_game_utils/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_overlay2": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "254cb223b77cdedac3362ac855840769a0fbd42aa42f4031f812ea923e6440cd",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_overlay2/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "fa11c97a13e619f09c33ba5857169babfb26a09f8a063167e81ccb2902621877",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_overlay2/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_rpc": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "8a69f230a6e1cb73345d97b3c5e30e560ad4043fddce0b29276d0a75604dfa71",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_rpc/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "10ed1832913bd19feac441fd182e367bb68ffc6a37ce59abe73b0b83a8674e50",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_rpc/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_sekrit": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "7992fcaef5192d7e6ec22e3ce6fa54f7ec443f4a0ca2e20073a812a46d5ea835",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_sekrit/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "5b8642e6671bda782954111fc618f4ea65ac6111a26c48c5884912cbc269ce69",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_sekrit/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_desktop_core": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "455bc8b62db15a751acf61cc86913284e9457b6c29037a04733b3e92ac678c79",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_desktop_core/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "8ff74920d9ce714c2f60bdc8573705081d14639c7f269374d44dcaa53d2519d6",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_desktop_core/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_hook": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "11ae656135ddde334a3d4dcd21c0ece3e81cc027d43e8f24614d50b0468285c4",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_hook/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "734748ad1a85e75010492f55692718894fc7420c04aae958314316c9310d5ea7",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_hook/1/from/1.0.1086/1"
+          "package_sha256": "22fc702bf674e1c2044f66f2fa668ca4042d970f846ceb2dd17827b7bd5ac0ab",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_modules/1/from/1.0.1087/1"
         }
       ]
     },
@@ -149,214 +29,46 @@
         "host_version": [
           1,
           0,
-          1087
+          1088
         ],
         "module_version": 1,
-        "package_sha256": "729e98cd2137c3ff59445e7b4a8673318be9bc3ee58b98a5ecbb9ca122bb682c",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_dispatch/1/full.distro"
+        "package_sha256": "1cf737a4f17e4f981ec229abd60c5c185629e9291b40cb8b8f07527a7ba819ad",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_dispatch/1/full.distro"
       },
       "deltas": [
         {
           "host_version": [
             1,
             0,
-            1086
+            1087
           ],
           "module_version": 1,
-          "package_sha256": "4f2cdb1e7b4873d5c6d35fcf93c1b24b6aae9d77d0fbca6941955f3397083890",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_dispatch/1/from/1.0.1086/1"
+          "package_sha256": "fc96cdebfce5ddb24bc3b0d8b2e35c2dd461a87dfba6919c2a588dd8fc3d9d2b",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_dispatch/1/from/1.0.1087/1"
         }
       ]
     },
-    "discord_spellcheck": {
+    "discord_hook": {
       "full": {
         "host_version": [
           1,
           0,
-          1087
+          1088
         ],
         "module_version": 1,
-        "package_sha256": "decaf05cb9594bf1d3a174545b3027dffa9e33e0fe68727a1ab8c217b324a5a4",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_spellcheck/1/full.distro"
+        "package_sha256": "edc6d5ce0bcd9ca8fa8067dddfcd8e6774a46e4ebd5e1374371addd7a1eb9ff6",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_hook/1/full.distro"
       },
       "deltas": [
         {
           "host_version": [
             1,
             0,
-            1086
+            1087
           ],
           "module_version": 1,
-          "package_sha256": "3c4604635e2b69cf391633ffb1faf90ee3406708c06d71301c317fc4fca34e5a",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_spellcheck/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_erlpack": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "795935e4ad2afd771b7538a6db2b8024bef32f4eb3be9c6a9968371f30c78916",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_erlpack/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "270e7056461ce963477475ea733037cbf35425a007946f5869ed8a14f7509cd8",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_erlpack/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_media": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "27c4db1ecd7c52175f82d33cf5d1faf738d67ea796fbdb9f87aad80e2d337ed2",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_media/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "7cb03ccbeddd0fb629049956f9acc5f13f331c06f83b0ca18c31f49eb7ad2e02",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_media/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_krisp": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "8c1f2638dcec0f927090256f9a96ebd2611ff2a07acc0aa4bab65f7cdc0db409",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_krisp/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "5b8e6d5c3bb6309ab3aede6d49bea1401be66480f622e50beaed5f2c6f506fbc",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_krisp/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_modules": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "81862c70b152bdbc4a8b97d7adac31acef652531cd182e4c341e899763f228b2",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_modules/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "29c3b4a3aec64414311339481a70a63832e1927d499243587a3a8cf18e3042a3",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_modules/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_utils": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "82f05032d34f3a133410f9552595f0f74f01ff827e946c1655c00d989bf153c7",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_utils/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "5d97a3969f01f259570b443ec8ce79e5a70fda9d01672ebf0af700e8503b147e",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_utils/1/from/1.0.1086/1"
-        }
-      ]
-    },
-    "discord_voice": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "40b4a641103aa2a8bd2f19be79b368701fe383c39f825d6b75c2234a90f6a2b4",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_voice/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 3,
-          "package_sha256": "ef00170ab22d7165a7cef7768769815ffba4f86e7683f5ba7a13fe4024639152",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_voice/1/from/1.0.1086/3"
-        }
-      ]
-    },
-    "discord_vigilante": {
-      "full": {
-        "host_version": [
-          1,
-          0,
-          1087
-        ],
-        "module_version": 1,
-        "package_sha256": "b6efc4e2d17f56bdc3cb2bdce1020ccf6074942e628b2693734f97e8707d5580",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_vigilante/1/full.distro"
-      },
-      "deltas": [
-        {
-          "host_version": [
-            1,
-            0,
-            1086
-          ],
-          "module_version": 1,
-          "package_sha256": "1cd8d0d52a962db2063264c2b647dd731a0a01a5475c513b9ca1587fadfb26e9",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_vigilante/1/from/1.0.1086/1"
+          "package_sha256": "f07489936490a36ba71ab1db566f6181e0370a86d9153581dde8637441409591",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_hook/1/from/1.0.1087/1"
         }
       ]
     },
@@ -365,22 +77,46 @@
         "host_version": [
           1,
           0,
-          1087
+          1088
         ],
         "module_version": 1,
-        "package_sha256": "d267f045bc24cd8375933e81e3b6172c449d0b547231d69dbb3202fbb5d1057d",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_cloudsync/1/full.distro"
+        "package_sha256": "fb4231d0d6e279f360b26f5c567d7279d10828f521910c0b4e65cd98aafc6e70",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_cloudsync/1/full.distro"
       },
       "deltas": [
         {
           "host_version": [
             1,
             0,
-            1086
+            1087
           ],
           "module_version": 1,
-          "package_sha256": "04806584253371b1efcff772af1ca134f3468dfada83ece9a1b119465b29c5d0",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_cloudsync/1/from/1.0.1086/1"
+          "package_sha256": "7071030323bd3f0818ae0811112b4cb46ad6b7cf6cc66f16c97cc688e4b61ad1",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_cloudsync/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_rpc": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "3ccce94fd0fb667038d645f124aa79b7098645914933e04ae6c83b150cee8aff",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_rpc/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "abbdb5f7507101b5007a21a9c7ea7c96e397e464436f1d9f3ac9c56fc72bc429",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_rpc/1/from/1.0.1087/1"
         }
       ]
     },
@@ -389,22 +125,286 @@
         "host_version": [
           1,
           0,
-          1087
+          1088
         ],
         "module_version": 1,
-        "package_sha256": "cb412cdd5b75d3d2733eee28ac275841d6da34e61915d8d12d7817b48f1fb14e",
-        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_zstd/1/full.distro"
+        "package_sha256": "169d17343d8e7162c855aa0db22747e346e7f440b95d1361e8210f0b45b6584c",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_zstd/1/full.distro"
       },
       "deltas": [
         {
           "host_version": [
             1,
             0,
-            1086
+            1087
           ],
           "module_version": 1,
-          "package_sha256": "9239e13905c42723f31812106bbfb5de94ebe7da486a9eeffb6fab2501a93758",
-          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/discord_zstd/1/from/1.0.1086/1"
+          "package_sha256": "e82c80a3c31fcd92fadc82ec219423a651a5dee445cdf92db1d4a589e2e46d5b",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_zstd/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_spellcheck": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "2a506fed56302abcf35c883a7ada3568ca6033b4fe802a2ea4ec4d5f13d7d2c2",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_spellcheck/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "7d3503011c0190577c51c6d5a5eed64cdea94cb4639102e605b972d32a6e8188",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_spellcheck/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_krisp": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "3f0427ae47830a9d68436363a10f3bf75168e6f31042258b774e62239afef38a",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_krisp/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "15c88bbede7f5e829e0ba919524b25f8c946936ee538b5300e71635603b07779",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_krisp/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_erlpack": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "b57f297a7bda9aa49675b0eaad49ba0a57c2fb7900095233770619164ac1bfef",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_erlpack/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "b2cbbdc13fd69a1d3f3e48de200cfbba814b2a5f932f73e82faed2ff7b33841a",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_erlpack/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_media": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "fcce21e618665034d02b0d98062103299789fc81eb6bcb010213075403c994f1",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_media/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "3fe6617de626ccb92e25be3ab34131a8419bd5fa5ec69e6f43c85ce601b0d306",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_media/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_utils": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "f5d73b402e5c5d26f383facb743ef6314798e71d8ff6fe3b9daa39c48e4178a5",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_utils/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "770dc2efc60fd0538c9af8353875209c91ff7779a4b9757222d7aef285437946",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_utils/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_voice": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "f8375d913eb10fb43b300abc10a7343631cffd1b1fb4718e22d01224ad853c07",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_voice/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "072f59fe714b410acf1645f5b10cac4954ecb4c460202bd4bc6ae14ad0bd019c",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_voice/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_game_utils": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "abf25d4aefbb69751dfc1903a32feef12a6345ea3e259a54d717a85e2ffc3f2a",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_game_utils/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "8cce3cb349f6f7512db3619b3cbec56c771bc467ddbc36e57c04e4047a4309d2",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_game_utils/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_overlay2": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "60b091d09f554836f86e1094927f129fd86b478f2896456ae286bea2f96edb2d",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_overlay2/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "3340d39dce78f3c803de5191b84e7d6487a2d070b8b88887e905de19da0421ce",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_overlay2/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_vigilante": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "6398253a7c17efc3bf5e126256acb6668f5747fd3d8c9bddb4cc308ceb743ff3",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_vigilante/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "101a390cdc5d257d2d84b8880542f35e37075b52e69c627d49922842fcc4bcc6",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_vigilante/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_desktop_core": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "f8f6a25700a1dd02363ce4923b80d8f95ca1b294992f9fe3bd0da81d2fc54032",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_desktop_core/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "4e129022e062b8d27a1a4118433b25ed3daafc091d41cec54d06af8312b7143d",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_desktop_core/1/from/1.0.1087/1"
+        }
+      ]
+    },
+    "discord_sekrit": {
+      "full": {
+        "host_version": [
+          1,
+          0,
+          1088
+        ],
+        "module_version": 1,
+        "package_sha256": "8de6b258321c2d23ae229d54ed5ea7fea408f371a98df66f452964e658035333",
+        "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_sekrit/1/full.distro"
+      },
+      "deltas": [
+        {
+          "host_version": [
+            1,
+            0,
+            1087
+          ],
+          "module_version": 1,
+          "package_sha256": "824628b46021b7f0073f8e973da0f0168b9eb717229626b939418818e1000009",
+          "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/discord_sekrit/1/from/1.0.1087/1"
         }
       ]
     }
@@ -413,20 +413,20 @@
     "host_version": [
       1,
       0,
-      1087
+      1088
     ],
-    "package_sha256": "dce1176ebbf1a9531d59fc2802ff0c5fb523d38bb55ffef2c9f709e6b642e165",
-    "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/full.distro"
+    "package_sha256": "2badc56ac8ba8ca8166190254f61869ea104123d94eca66a578752ab99db1d4c",
+    "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/full.distro"
   },
   "deltas": [
     {
       "host_version": [
         1,
         0,
-        1086
+        1087
       ],
-      "package_sha256": "7c46437a68ec3bf65f9ac3b34f6adc7c0733f8e10b084646641621462f900676",
-      "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1087/from/1.0.1086"
+      "package_sha256": "85a0b9edbd78572d8131c61eae94fa18390c028707b0e9d6b77902b100e48f53",
+      "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1088/from/1.0.1087"
     }
   ],
   "required_modules": [
