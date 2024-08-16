@@ -21,6 +21,7 @@ import type { GreenHouseJob } from ".";
 import {
   chunk,
   getWebhookFromEnv,
+  maximumStringLen,
   postToDiscord,
   type ArrayDiff,
 } from "../../utils";
@@ -159,7 +160,7 @@ export async function wumpusCentralSend(
           },
           {
             name: "Updates",
-            value: updates,
+            value: maximumStringLen(updates, 1024),
           },
         )
         .setColor(0xfff673)

@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -23,57 +23,73 @@ import {
   getWebhookFromEnv,
   maximumStringLen,
   postToDiscord,
+  type ArrayDiff,
 } from "../../../../utils.ts";
-import type { Diff } from "../.";
 import type { APIEmbed, APIEmbedField } from "discord-api-types/v10";
 import type { Experiment } from "../Experiment.ts";
 import { EmbedBuilder } from "@discordjs/builders";
 
 export class HyrosCoffeeSender implements Sender {
-  async send(diff: Diff, result: PushResult) {
+  async send(diff: ArrayDiff<Experiment>, result: PushResult) {
     const embeds: APIEmbed[] = [];
 
-    for (const exp of diff.addedExperiments) {
+    for (const exp of diff.added) {
       embeds.push(
         this.buildEmbed(
           {
             before: "New",
           },
-          exp
+          exp,
         )
           .setColor(0x2cde5c)
-          .toJSON()
+          .toJSON(),
       );
     }
 
-    for (const exp of diff.removedExperiments) {
+    for (const exp of diff.removed) {
       embeds.push(
         this.buildEmbed(
           {
             after: "Removed",
           },
-          exp
+          exp,
         )
           .setColor(0xde2c2c)
-          .toJSON()
+          .toJSON(),
       );
     }
 
-    for (const exp of diff.updatedExperiments) {
-      if (!exp.after.diff) continue;
+    for (const exp of diff.updated) {
+      let updates = "```diff\n";
+
+      const changesLength = Object.values(exp.changes).length;
+      let i = 0;
+      for (const [path, change] of Object.entries(exp.changes)) {
+        if (!change.old && change.new) {
+          updates += `${path}\n+ ${change.new.toString()}`;
+        } else if (change.old && change.new) {
+          updates += `${path}\n- ${change.old.toString()}\n+ ${change.new.toString()}`;
+        } else {
+          updates += `${path}\n- ${change.old}`;
+        }
+
+        updates += `${i !== changesLength - 1 ? "\n\n" : ""}`;
+
+        i++;
+      }
+
+      updates += "\n```";
 
       embeds.push(
         this.buildEmbed(
           {
             after: "Updated",
           },
-          exp.after
+          exp.new,
         )
-          .setDescription(
-            maximumStringLen(`\`\`\`diff\n${exp.after.diff}\n\`\`\``, 4096)
-          )
+          .setDescription(maximumStringLen(updates, 1024))
           .setColor(0x2c5cde)
-          .toJSON()
+          .toJSON(),
       );
     }
 
@@ -86,7 +102,7 @@ export class HyrosCoffeeSender implements Sender {
         {
           content: "<@&1105589221185568851>",
           embeds,
-        }
+        },
       );
     }
   }
@@ -96,7 +112,7 @@ export class HyrosCoffeeSender implements Sender {
       before?: string | null;
       after?: string | null;
     },
-    experiment: Experiment
+    experiment: Experiment,
   ) {
     const fields = [
       {
@@ -140,7 +156,7 @@ export class HyrosCoffeeSender implements Sender {
       .setTitle(
         `${title.before ? `${title.before} ` : ""}Experiment${
           title.after ? ` ${title.after}` : ""
-        }`
+        }`,
       )
       .addFields(possibleFields);
   }

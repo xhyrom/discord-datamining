@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -20,28 +20,17 @@ import { join } from "node:path";
 import type { Module } from "../../index.ts";
 import { Client } from "../index.ts";
 import {
+  createDiff,
   formatNumber,
-  octokit,
   pushToGit,
   readFile,
   rm,
   writeFile,
 } from "../../../utils.ts";
 import { Experiment } from "./Experiment.ts";
-import deepEqual from "fast-deep-equal";
 import { parse as csvParse } from "csv-parse/sync";
 import { stringify as csvStringify } from "csv-stringify/sync";
 import { send } from "./sender/index.ts";
-
-export interface Diff {
-  addedExperiments: Experiment[];
-  removedExperiments: Experiment[];
-  updatedExperiments: {
-    before: Experiment;
-    after: Experiment;
-  }[];
-  firstRolloutBeganExperiments: Experiment[];
-}
 
 export class Experiments implements Module {
   get baseDir() {
@@ -57,8 +46,8 @@ export class Experiments implements Module {
       return;
     }
 
-    const oldExperiments = JSON.parse(
-      (await readFile(join(this.baseDir, "experiments.json"))) ?? "[]"
+    const oldExperiments: Experiment[] = JSON.parse(
+      (await readFile(join(this.baseDir, "experiments.json"))) ?? "[]",
     ).map((e: any) => new Experiment(e));
     const experimentsDatabase =
       (await readFile(join(this.baseDir, "experiments.csv"))) ??
@@ -71,7 +60,7 @@ export class Experiments implements Module {
 
     await writeFile(
       join(this.baseDir, "experiments.json"),
-      JSON.stringify(experiments, null, 2)
+      JSON.stringify(experiments, null, 2),
     );
 
     await rm(join(this.baseDir, "experiments"));
@@ -82,14 +71,14 @@ export class Experiments implements Module {
           this.baseDir,
           "experiments",
           experiment.data.hash.toString(),
-          "data.json"
+          "data.json",
         ),
-        JSON.stringify(experiment, null, 2)
+        JSON.stringify(experiment, null, 2),
       );
 
       if (experiment.data.id) {
         const dbEntry = experimentsDatabaseCache.find(
-          (e) => e.hash === experiment.data.hash.toString()
+          (e) => e.hash === experiment.data.hash.toString(),
         );
         if (!dbEntry) {
           experimentsDatabaseCache.push({
@@ -117,7 +106,7 @@ export class Experiments implements Module {
 
     await writeFile(
       join(this.baseDir, "experiments.csv"),
-      csvStringify(newExperimentsDatabase)
+      csvStringify(newExperimentsDatabase),
     );
 
     const result = await pushToGit(
@@ -131,92 +120,21 @@ export class Experiments implements Module {
             ? `${experiment.data.label} - ${experiment.data.id} (${experiment.data.hash})`
             : `${experiment.data.id} (${experiment.data.hash})`;
         })
-        .join("\n")}`
+        .join("\n")}`,
     );
 
     if (!result?.update?.hash) return;
 
-    const diff = await this.diff(
-      result.update.hash.from,
-      result.update.hash.to,
-      oldExperiments,
-      experiments
-    );
-
-    await send(diff, result);
+    await send(createDiff(oldExperiments, experiments, "hash"), result);
   }
 
   async experiments(): Promise<Experiment[] | null> {
     const experiments = await fetch(
-      "https://api.distools.xhyrom.dev/v2/experiments?also_with_unknown_ids=true"
+      "https://api.distools.xhyrom.dev/v2/experiments?also_with_unknown_ids=true",
     );
     if (!experiments.ok) return null;
 
     const json = await experiments.json();
     return json.map((e: any) => new Experiment(e));
-  }
-
-  private async diff(
-    before: string,
-    after: string,
-    oldExperiments: Experiment[],
-    newExperiments: Experiment[]
-  ): Promise<Diff> {
-    const diff = await octokit.repos.compareCommits({
-      owner: "xHyroM",
-      repo: "discord-datamining",
-      base: before,
-      head: after,
-    });
-
-    const removedExperiments = [];
-    const updatedExperiments = [];
-    const addedExperiments = [];
-    const firstRolloutBeganExperiments = [];
-
-    for (const oldExperiment of oldExperiments) {
-      const newExperiment = newExperiments.find(
-        (a) => a.hash === oldExperiment.hash
-      );
-
-      if (!newExperiment) {
-        removedExperiments.push(oldExperiment);
-        continue;
-      }
-
-      if (!deepEqual(oldExperiment, newExperiment)) {
-        newExperiment.diff = diff.data.files?.find(
-          (f) =>
-            f.filename ===
-            `data/client/experiments/experiments/${newExperiment.hash}/data.json`
-        )?.patch;
-
-        updatedExperiments.push({
-          before: oldExperiment,
-          after: newExperiment,
-        });
-
-        if (!oldExperiment.rollout && newExperiment.rollout) {
-          firstRolloutBeganExperiments.push(newExperiment);
-        }
-      }
-    }
-
-    for (const newExperiment of newExperiments) {
-      const oldExperiment = oldExperiments.find(
-        (a) => a.hash === newExperiment.hash
-      );
-
-      if (!oldExperiment) {
-        addedExperiments.push(newExperiment);
-      }
-    }
-
-    return {
-      removedExperiments,
-      updatedExperiments,
-      addedExperiments,
-      firstRolloutBeganExperiments,
-    };
   }
 }

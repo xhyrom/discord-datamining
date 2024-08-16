@@ -17,15 +17,14 @@
   * **/
 
 import type { PushResult } from "simple-git";
-import type { Diff } from "../.";
 import { HyrosCoffeeSender } from "./hyros_coffee.ts";
-import { WumpusCentralSender } from "./wumpus_central.ts";
+import type { ArrayDiff } from "../../../../utils.ts";
+import type { Experiment } from "../Experiment.ts";
 
 export interface Sender {
-  send(diff: Diff, result: PushResult): Promise<void>;
+  send(diff: ArrayDiff<Experiment>, result: PushResult): Promise<void>;
 }
 
-export const send = async (diff: Diff, result: PushResult) => {
+export const send = async (diff: ArrayDiff<Experiment>, result: PushResult) => {
   await new HyrosCoffeeSender().send(diff, result);
-  await new WumpusCentralSender().send(diff, result);
 };
