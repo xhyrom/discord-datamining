@@ -445,7 +445,7 @@ function getChanges<T extends Record<string, any>>(
           Object.assign(
             changes,
             getChanges(
-              (oldObj[key as keyof T] as T[])[index] as T,
+              (oldObj?.[key as keyof T] as T[])?.[index] as T,
               item as T,
               updateIgnoreKeys,
               `${newPath}[${index}]`,
@@ -466,8 +466,8 @@ function getChanges<T extends Record<string, any>>(
       Object.assign(
         changes,
         getChanges(
-          oldObj[key as keyof T] as T,
-          newObj[key as keyof T] as T,
+          oldObj?.[key as keyof T] as T,
+          newObj?.[key as keyof T] as T,
           updateIgnoreKeys,
           newPath,
         ),
