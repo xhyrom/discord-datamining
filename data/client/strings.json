@@ -8465,6 +8465,7 @@
   "IAR_UPSELLS_SECTION_TITLE": "\"Recommended Settings\"",
   "IAR_UPSELLS_APPLY_BUTTON": "\"Apply\"",
   "IAR_UPSELLS_APPLIED_BUTTON": "\"Applied\"",
+  "IAR_UPSELLS_GO_TO_SAFETY_SETTINGS": "\"Go to Privacy & Safety Settings\"",
   "IAR_UPSELLS_DM_SPAM_FILTER_TITLE": "\"DM spam filter\"",
   "IAR_UPSELLS_DM_SPAM_FILTER_DESCRIPTION": "\"Move potential spam to a spam inbox\"",
   "IAR_UPSELLS_LANGUAGE_FILTER_TITLE": "\"Language filter\"",
