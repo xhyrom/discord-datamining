@@ -75,7 +75,7 @@ export const pushToGit = async (...message: string[]) => {
   }
 
   try {
-    console.log(await $`git push`);
+    return await git.push();
   } catch (e) {
     console.log(e);
     console.log(await $`git stash`);
@@ -84,7 +84,7 @@ export const pushToGit = async (...message: string[]) => {
       console.log(await $`git rebase --skip`);
     }
     console.log(await $`git stash pop`);
-    console.log(await $`git push`);
+    return await git.push();
   }
 };
 
