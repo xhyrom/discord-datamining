@@ -43878,9 +43878,6 @@ code {
   --custom-user-profile-modal-user-profile-modal-width: 600px;
   --custom-user-profile-modal-header-avatar-size: 120px;
   --custom-user-profile-modal-header-total-avatar-border-size: 16px;
-  --custom-direct-message-section-delay: 150ms;
-  --custom-direct-message-section-opacity-delay: 20ms;
-  --custom-direct-message-section-duration: 150ms;
   --custom-user-banner-premium-banner-height-popout: 120px;
   --custom-user-banner-premium-banner-height-no-banner-image-popout: 90px;
   --custom-user-banner-premium-banner-height-profile: 212px;
@@ -44652,4 +44649,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.bf839a47b9e9703a7e5b.css.map*/
+/*# sourceMappingURL=12633.a1f75e0f91f3803856e0.css.map*/
