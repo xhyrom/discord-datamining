@@ -26,6 +26,7 @@ import {
   access as nodeAccess,
   constants,
 } from "node:fs/promises";
+import { $ } from "bun";
 import simpleGit from "simple-git";
 import { REST } from "@discordjs/rest";
 import { Octokit } from "@octokit/rest";
@@ -62,27 +63,15 @@ export const pushToGit = async (...message: string[]) => {
     };*/
   }
 
-  await git.add("data/*");
-  await git.commit(msg);
-  return await retry(
-    async () => await git.push(),
-    2,
-    1000,
-    async () => {
-      try {
-        try {
-          await git.add("data/*");
-          await git.commit(msg);
-        } catch (e) {
-          console.log(e);
-        }
-
-        await git.pull("origin", "master");
-      } catch (e) {
-        console.log(e);
-      }
-    },
-  );
+  console.log(await $`git add data/*`);
+  console.log(await $`git commit ${msg.map((m) => `-m "${m}"`).join(" ")}`);
+  try {
+    console.log(await $`git push`);
+  } catch (e) {
+    console.log(e);
+    console.log(await $`git pull`);
+    console.log(await $`git push`);
+  }
 };
 
 export const postToGithub = async (commitHash: string, body: string) => {
