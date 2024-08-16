@@ -120,7 +120,11 @@ export const postToDiscord = async (
       });
     } catch (e) {
       if (process.env.DEBUG === "true") console.log(e);
-      console.log("Failed to push ", webhooks.name);
+      console.log(
+        "Failed to push ",
+        webhooks.name,
+        e.toString().replaceAll(id, "").replaceAll(token, ""),
+      );
       continue;
     }
   }
