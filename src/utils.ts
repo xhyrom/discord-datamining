@@ -68,8 +68,25 @@ export const pushToGit = async (...message: string[]) => {
     async () => await git.push(),
     2,
     1000,
-    async () =>
-      void (await git.pull("origin", "master", ["--rebase", "--autostash"])),
+    async () => {
+      try {
+        await git.pull("origin", "master", ["--rebase", "--depth 1"]);
+      } catch (e) {
+        console.log(e);
+      }
+
+      try {
+        await git.rebase(["--skip"]);
+      } catch (e) {
+        console.log(e);
+      }
+
+      try {
+        await git.pull("origin", "master", ["--depth 1"]);
+      } catch (e) {
+        console.log(e);
+      }
+    },
   );
 };
 
