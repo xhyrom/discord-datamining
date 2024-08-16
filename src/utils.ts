@@ -77,7 +77,9 @@ export const pushToGit = async (...message: string[]) => {
     console.log(await $`git push`);
   } catch (e) {
     console.log(e);
+    console.log(await $`git stash`);
     console.log(await $`git pull`);
+    console.log(await $`git stash pop`);
     console.log(await $`git push`);
   }
 };
