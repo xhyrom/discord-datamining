@@ -79,7 +79,10 @@ export const pushToGit = async (...message: string[]) => {
   } catch (e) {
     console.log(e);
     console.log(await $`git stash`);
-    console.log(await $`git pull`);
+    const text = await $`git pull`.throws(false).text();
+    if (text.includes("You can instead skip this commit")) {
+      console.log(await $`git rebase --skip`);
+    }
     console.log(await $`git stash pop`);
     console.log(await $`git push`);
   }
