@@ -52,8 +52,7 @@ export class WebBuild implements Module {
     if (
       latestVersionHash &&
       currentVersionHash &&
-      latestVersionHash === currentVersionHash.version_hash &&
-      false
+      latestVersionHash === currentVersionHash.version_hash
     ) {
       console.log(
         `${this.#channel.name} Web Build of Client %s (%s) is up to date`,
