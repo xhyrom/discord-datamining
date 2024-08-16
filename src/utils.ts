@@ -76,6 +76,12 @@ export const pushToGit = async (...message: string[]) => {
       }
 
       try {
+        await git.pull("origin", "master", ["--rebase", "--depth 1"]);
+      } catch (e) {
+        console.log(e);
+      }
+
+      try {
         await git.rebase(["--skip"]);
       } catch (e) {
         console.log(e);
