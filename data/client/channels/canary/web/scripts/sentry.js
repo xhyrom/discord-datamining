@@ -8352,7 +8352,6 @@
             "Voice Channel Effect Emoji Picker Popout"),
           (rZ.FILE_UPLOAD_POPOUT = "File Upload Popout"),
           (rZ.GUILD_POPOUT = "Guild Popout"),
-          (rZ.PROFILE_POPOUT = "Profile Popout"),
           (rZ.BITE_SIZE_PROFILE_POPOUT = "Bite Size Profile Popout"),
           (rZ.ROLE_ICON_POPOUT = "Role Icon Popout"),
           (rZ.GAME_MODAL = "Game Modal"),
@@ -12285,7 +12284,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-a88af0e5df743c6d6940877c4d724092792fef06",
+            release: "discord_web-ab4450f713ef6f3136fe3c60705855c969bac453",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12354,8 +12353,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "319574"), "319574"));
-          i.YA("builtAt", String("1723850942490"));
+            i.YA("buildNumber", ((e = "319577"), "319577"));
+          i.YA("builtAt", String("1723851534293"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48384,4 +48383,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.6c93cb98b847ce043b56.js.map
+//# sourceMappingURL=sentry.d3df940d93fe87c9699a.js.map
