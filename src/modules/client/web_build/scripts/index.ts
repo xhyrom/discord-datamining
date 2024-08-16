@@ -22,7 +22,7 @@ import { File } from "../../../../File.ts";
 import type { Module } from "../../../index.ts";
 import { Build } from "./Build.ts";
 import { BuildResolver } from "./BuildResolver.ts";
-import { beautify, writeFile, rm } from "../../../../utils.ts";
+import { beautify, writeFile, rm, readFile } from "../../../../utils.ts";
 import type { WebBuild } from "../index.ts";
 
 export class Scripts implements Module {
@@ -73,6 +73,9 @@ export class Scripts implements Module {
   async run() {
     console.log(`Scraping scripts for ${this.#webBuild.channel.type}`);
 
+    const oldChunkChecksums = JSON.parse(
+      (await readFile(join(this.baseDir, "chunks.json"))) ?? "[]",
+    ) as string[];
     const files = await this.files();
     const chunks = await this.chunks();
     const build = await this.build();
@@ -97,7 +100,28 @@ export class Scripts implements Module {
       await beautify(files.html, "html"),
     );
 
-    for (const file of [...files.scripts, ...chunks]) {
+    await writeFile(
+      join(this.baseDir, "chunks.json"),
+      JSON.stringify(
+        chunks.map((item) => item.name),
+        null,
+        2,
+      ),
+    );
+
+    for (const file of files.scripts ?? []) {
+      const content = await file.content();
+      if (!content) continue;
+
+      await writeFile(
+        join(this.baseDir, "scripts", file.path),
+        await beautify(content, "js"),
+      );
+    }
+
+    for (const file of chunks) {
+      if (oldChunkChecksums.includes(file.name)) continue; // we can skip since the file didn't change (name is checksum)
+
       const content = await file.content();
       if (!content) continue;
 
@@ -109,27 +133,27 @@ export class Scripts implements Module {
 
     await writeFile(
       join(this.baseDir, "main.js"),
-      await beautify(await files.mainScript!.content(), "js"),
+      await beautify((await files.mainScript!.content())!, "js"),
     );
 
     if (files.strings) {
       await writeFile(
         join(this.baseDir, "strings.js"),
-        await beautify(await files.strings.content(), "js"),
+        await beautify((await files.strings.content())!, "js"),
       );
     }
 
     if (files.endpoints) {
       await writeFile(
         join(this.baseDir, "routes.js"),
-        await beautify(await files.endpoints.content(), "js"),
+        await beautify((await files.endpoints.content())!, "js"),
       );
     }
 
     if (files.sentry) {
       await writeFile(
         join(this.baseDir, "sentry.js"),
-        await beautify(await files.sentry.content(), "js"),
+        await beautify((await files.sentry.content())!, "js"),
       );
     }
   }
