@@ -17878,7 +17878,8 @@ span.clanTag_a31c43 {
   object-fit: contain;
   -o-object-position: top;
   object-position: top;
-  opacity: 0.2;
+  opacity: 0.3;
+  filter: blur(5px);
 }
 .container_b9cd33 {
   position: relative;
@@ -44555,4 +44556,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.d12194fb89e5824a61f1.css.map*/
+/*# sourceMappingURL=12633.83d16b0b967a92766ded.css.map*/
