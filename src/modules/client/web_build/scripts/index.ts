@@ -34,6 +34,7 @@ export class Scripts implements Module {
     sentry: File | null;
     html: string;
   };
+  #chunks?: File[];
   #build?: Build;
   #webBuild: WebBuild;
 
@@ -73,6 +74,7 @@ export class Scripts implements Module {
     console.log(`Scraping scripts for ${this.#webBuild.channel.type}`);
 
     const files = await this.files();
+    const chunks = await this.chunks();
     const build = await this.build();
 
     await rm(join(this.baseDir, "scripts"));
@@ -95,7 +97,7 @@ export class Scripts implements Module {
       await beautify(files.html, "html"),
     );
 
-    for (const file of files.scripts ?? []) {
+    for (const file of [...files.scripts, ...chunks]) {
       await writeFile(
         join(this.baseDir, "scripts", file.path),
         await beautify(await file.content(), "js"),
@@ -181,5 +183,18 @@ export class Scripts implements Module {
     };
 
     return this.#files;
+  }
+
+  async chunks() {
+    if (this.#chunks) return this.#chunks;
+
+    const main = (await this.files()).mainScript;
+    const matches = (await main.content()).matchAll(
+      /\s*(\d+):\s*"([a-f0-9]{20})"\s*,?/g,
+    );
+
+    this.#chunks = [...matches].map((item) => new File(item[2]! + ".js"));
+
+    return this.#chunks;
   }
 }

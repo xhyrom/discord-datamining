@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -47,7 +47,7 @@ export class WebBuild implements Module {
 
     const latestVersionHash = await this.getVersionHash();
     const currentVersionHash = JSON.parse(
-      (await readFile(join(this.baseDir, "web_build.json"))) ?? "{}"
+      (await readFile(join(this.baseDir, "web_build.json"))) ?? "{}",
     );
     if (
       latestVersionHash &&
@@ -57,7 +57,7 @@ export class WebBuild implements Module {
       console.log(
         `${this.#channel.name} Web Build of Client %s (%s) is up to date`,
         currentVersionHash.build_number,
-        currentVersionHash.version_hash
+        currentVersionHash.version_hash,
       );
       return;
     }
@@ -68,6 +68,7 @@ export class WebBuild implements Module {
     const build = await this.scripts.build();
     const date = new Date(build.builtAt);
     const scriptFiles = await this.scripts.files();
+    const chunkFiles = await this.scripts.chunks();
     const stylesheetFiles = await this.stylesheets.files();
 
     await this.#channel.summary();
@@ -80,27 +81,28 @@ export class WebBuild implements Module {
         `Build Number: ${build.buildNumber}`,
         `Version Hash: ${build.versionHash}`,
         `Build At: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${numberPad(
-          date.getHours()
+          date.getHours(),
         )}:${numberPad(date.getMinutes())}:${numberPad(
-          date.getSeconds()
+          date.getSeconds(),
         )} (${numberPad(date.getTime())})`,
       ].join("\n"),
       `Scripts (${scriptFiles.scripts.length}):\n${scriptFiles.scripts
         .map((script) =>
           script.name === scriptFiles.mainScript.name
             ? `* ${script.path}`
-            : `  ${script.path}`
+            : `  ${script.path}`,
         )
         .join("\n")}`,
+      `Chunks (${chunkFiles.length})`,
       `Stylesheets (${
         stylesheetFiles.stylesheets.length
       }):\n${stylesheetFiles.stylesheets
         .map((stylesheet) =>
           stylesheet.name === stylesheetFiles.mainStylesheet.name
             ? `* ${stylesheet.path}`
-            : `  ${stylesheet.path}`
+            : `  ${stylesheet.path}`,
         )
-        .join("\n")}`
+        .join("\n")}`,
     );
 
     if (!result?.update?.hash) return;
@@ -111,7 +113,7 @@ export class WebBuild implements Module {
       build,
       scriptFiles,
       stylesheetFiles,
-      date
+      date,
     );
 
     if (this.#channel.type !== ChannelType.Canary) return;
