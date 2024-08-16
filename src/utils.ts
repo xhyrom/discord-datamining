@@ -47,7 +47,7 @@ export const octokit = new Octokit({
 });
 
 export const pushToGit = async (...message: string[]) => {
-  const msg = [];
+  const msg: string[] = [];
 
   for (const m of message) {
     msg.push(maximumStringLen(m, 20000));
