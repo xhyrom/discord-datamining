@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -46,22 +46,29 @@ export class Strings implements Module {
 
     const strings = getLangStrings(
       (await readFile(
-        join(this.baseDir, "channels", "canary", "web", "scripts", "strings.js")
-      )) ?? ""
+        join(
+          this.baseDir,
+          "channels",
+          "canary",
+          "web",
+          "scripts",
+          "strings.js",
+        ),
+      )) ?? "",
     );
 
     const oldStrings = JSON.parse(
-      (await readFile(join(this.baseDir, "strings.json"))) ?? "{}"
+      (await readFile(join(this.baseDir, "strings.json"))) ?? "{}",
     );
 
     await writeFile(
       join(this.baseDir, "strings.json"),
-      JSON.stringify(strings, null, 2)
+      JSON.stringify(strings, null, 2),
     );
 
     const result = await pushToGit(
       `📃 Strings have been updated`,
-      `Strings - ${formatNumber(Object.keys(strings).length)}`
+      `Strings - ${formatNumber(Object.keys(strings).length)}`,
     );
 
     if (!result?.update?.hash) return;
@@ -80,23 +87,13 @@ export class Strings implements Module {
           diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
         }`,
       },
-      comment.data.html_url
-    );
-    await postToDiscord(
-      getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STRINGS"),
-      result?.update?.hash.to,
-      {
-        content: `<@&1167155135403794572>${
-          diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
-        }`,
-      },
-      comment.data.html_url
+      comment.data.html_url,
     );
   }
 
   private diff(
     stringsOld: Record<string, string>,
-    stringsCurrent: Record<string, string>
+    stringsCurrent: Record<string, string>,
   ) {
     const { addedStrings, updatedStrings, removedStrings } = lDiff([
       stringsOld,
@@ -108,7 +105,7 @@ export class Strings implements Module {
       "codeblock",
       addedStrings,
       updatedStrings,
-      removedStrings
+      removedStrings,
     );
 
     return builtString ? builtString : "";

@@ -1,7 +1,7 @@
-name: Mine Applications
+name: Every 5 Minutes Mining (client)
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -33,15 +33,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-          DISCORD_USER_TOKEN: ${{ secrets.DISCORD_USER_TOKEN }}
+
           DISCORD_WEBHOOK_BUILDS: ${{ secrets.DISCORD_WEBHOOK_BUILDS }}
           WUMPUSCENTRAL_DISCORD_WEBHOOK_BUILDS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_BUILDS }} # builds but for wumpuscentral
+
+          DISCORD_WEBHOOK_HOST_BUILDS: ${{ secrets.DISCORD_WEBHOOK_HOST_BUILDS }}
+
           DISCORD_WEBHOOK_ROUTES: ${{ secrets.DISCORD_WEBHOOK_ROUTES }}
+
           DISCORD_WEBHOOK_STRINGS: ${{ secrets.DISCORD_WEBHOOK_STRINGS }}
+
           DISCORD_WEBHOOK_STYLESHEETS: ${{ secrets.DISCORD_WEBHOOK_STYLESHEET }} # todo: change to STYLESHEETS
+
           DISCORD_WEBHOOK_EXPERIMENTS: ${{ secrets.DISCORD_WEBHOOK_EXPERIMENTS }}
           WUMPUSCENTRAL_DISCORD_WEBHOOK_EXPERIMENTS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_EXPERIMENTS }} # experiments but for wumpuscentral
+
           DISCORD_WEBHOOK_POSTS: ${{ secrets.DISCORD_WEBHOOK_POSTS }}
           WUMPUSCENTRAL_DISCORD_WEBHOOK_POSTS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_POSTS }} # posts but for wumpuscentral
+
           DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORD_WEBHOOK_MISCELLANEOUS }}
-          SCRAPE_CLIENT_APPLICATIONS: true
+
+          SCRAPE_CLIENT: true

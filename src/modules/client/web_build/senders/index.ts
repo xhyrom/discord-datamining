@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -19,8 +19,6 @@
 import type { PushResult } from "simple-git";
 
 import { HyrosCoffeeSender } from "./hyros_coffee.ts";
-import { DiscordInsidersSender } from "./discord_insiders.ts";
-//import { WumpusCentralSender } from "./wumpus_central.ts";
 
 import type { Channel } from "../../Channel.ts";
 import type { Build } from "../scripts/Build.ts";
@@ -34,7 +32,7 @@ export interface Sender {
     build: Build,
     scriptFiles: Awaited<ReturnType<Scripts["files"]>>,
     stylesheetFiles: Awaited<ReturnType<Stylesheets["files"]>>,
-    date: Date
+    date: Date,
   ): Promise<void>;
 }
 
@@ -44,7 +42,7 @@ export const send = async (
   build: Build,
   scriptFiles: Awaited<ReturnType<Scripts["files"]>>,
   stylesheetFiles: Awaited<ReturnType<Stylesheets["files"]>>,
-  date: Date
+  date: Date,
 ) => {
   await new HyrosCoffeeSender().send(
     result,
@@ -52,22 +50,6 @@ export const send = async (
     build,
     scriptFiles,
     stylesheetFiles,
-    date
+    date,
   );
-  await new DiscordInsidersSender().send(
-    result,
-    channel,
-    build,
-    scriptFiles,
-    stylesheetFiles,
-    date
-  );
-  /**await new WumpusCentralSender().send(
-    result,
-    channel,
-    build,
-    scriptFiles,
-    stylesheetFiles,
-    date
-  );**/
 };

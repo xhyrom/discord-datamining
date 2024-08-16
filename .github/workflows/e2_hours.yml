@@ -1,7 +1,7 @@
-name: Mine Github
+name: Every 2 Hours Mining (routes)
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -33,10 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-          DISCORD_WEBHOOK_BUILDS: ${{ secrets.DISCORD_WEBHOOK_BUILDS }}
+
           DISCORD_WEBHOOK_ROUTES: ${{ secrets.DISCORD_WEBHOOK_ROUTES }}
-          DISCORD_WEBHOOK_STRINGS: ${{ secrets.DISCORD_WEBHOOK_STRINGS }}
-          DISCORD_WEBHOOK_STYLESHEETS: ${{ secrets.DISCORD_WEBHOOK_STYLESHEET }} # todo: change to STYLESHEETS
-          DISCORD_WEBHOOK_EXPERIMENTS: ${{ secrets.DISCORD_WEBHOOK_EXPERIMENTS }}
-          DISCORD_WEBHOOK_POSTS: ${{ secrets.DISCORD_WEBHOOK_POSTS }}
-          SCRAPE_GITHUB: true
+
+          SCRAPE_CLIENT_ROUTES: true

@@ -90,15 +90,6 @@ export class Stylesheets implements Module {
         }`,
       },
     );
-    await postToDiscord(
-      getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STYLESHEETS"),
-      result.update?.hash.to,
-      {
-        content: `<@&1167155230836789288>${
-          desc.length > 2000 ? desc.slice(0, 1968) + "...```" : desc
-        }`,
-      },
-    );
   }
 
   async files() {

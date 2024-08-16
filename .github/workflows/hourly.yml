@@ -1,7 +1,7 @@
-name: Mine Routes
+name: Hourly Mining (posts, policies, jobs)
 on:
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "0 */1 * * *"
   workflow_dispatch:
 
 permissions:
@@ -34,7 +34,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
 
-          DISCORD_WEBHOOK_ROUTES: ${{ secrets.DISCORD_WEBHOOK_ROUTES }}
-          DISCORDINSIDERS_DISCORD_WEBHOOK_ROUTES: ${{ secrets.DISCORDINSIDERS_DISCORD_WEBHOOK_LOCAL }} # routes but for discord insiders
+          DISCORD_WEBHOOK_POSTS: ${{ secrets.DISCORD_WEBHOOK_POSTS }}
+          WUMPUSCENTRAL_DISCORD_WEBHOOK_POSTS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_POSTS }} # posts but for wumpuscentral
 
-          SCRAPE_CLIENT_ROUTES: true
+          DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORD_WEBHOOK_MISCELLANEOUS }}
+          WUMPUSCENTRAL_DISCORD_WEBHOOK_POLICIES: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_POLICIES }} # wumpus central
+          WUMPUSCENTRAL_DISCORD_WEBHOOK_ACKNOWLEDGEMENTS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_ACKNOWLEDGEMENTS }} # wumpus central
+
+          WUMPUSCENTRAL_DISCORD_WEBHOOK_JOBS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_JOBS }}
+
+          SCRAPE_POSTS: true
+          SCRAPE_POLICIES: true
+          SCRAPE_JOBS: true

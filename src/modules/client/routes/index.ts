@@ -96,16 +96,6 @@ export class Routes implements Module {
       },
       comment.data.html_url,
     );
-    await postToDiscord(
-      getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_ROUTES"),
-      result?.update?.hash.to,
-      {
-        content: `<@&1167155230836789288>${
-          diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
-        }`,
-      },
-      comment.data.html_url,
-    );
   }
 
   private async routes(
