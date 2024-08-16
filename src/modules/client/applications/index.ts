@@ -25,7 +25,6 @@ import {
   readFile,
   pushToGit,
   formatNumber,
-  git,
 } from "../../../utils.ts";
 import { setTimeout as sleep } from "node:timers/promises";
 import { Client } from "../index.ts";
@@ -69,8 +68,6 @@ export class Applications implements Module {
       applications.push(result.data!);
     }
 
-    await git.pull();
-
     const oldApplications = await readFile(
       join(this.baseDir, "applications.json"),
     );
@@ -87,7 +84,6 @@ export class Applications implements Module {
       JSON.stringify([...invalidIds], null, 2),
     );
 
-    await git.pull(); // one more time to make sure we have the latest changes
     await pushToGit(
       "📱 Applications have been updated",
       `${formatNumber(applications.length)} valid, ${formatNumber(

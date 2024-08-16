@@ -70,38 +70,6 @@ export const pushToGit = async (...message: string[]) => {
     1000,
     async () => {
       try {
-        await git.pull("origin", "master", ["--rebase"]);
-      } catch (e) {
-        console.log(e);
-      }
-
-      try {
-        await git.add("data/*");
-        await git.commit(msg);
-      } catch (e) {
-        console.log(e);
-      }
-
-      try {
-        await git.pull("origin", "master", ["--rebase"]);
-      } catch (e) {
-        console.log(e);
-      }
-
-      try {
-        await git.add("data/*");
-        await git.commit(msg);
-      } catch (e) {
-        console.log(e);
-      }
-
-      try {
-        await git.rebase(["--skip"]);
-      } catch (e) {
-        console.log(e);
-      }
-
-      try {
         await git.pull("origin", "master");
       } catch (e) {
         console.log(e);

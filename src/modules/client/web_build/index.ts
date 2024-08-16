@@ -19,7 +19,7 @@
 import { join } from "node:path";
 
 import type { Module } from "../../index.ts";
-import { git, numberPad, pushToGit, readFile } from "../../../utils.ts";
+import { numberPad, pushToGit, readFile } from "../../../utils.ts";
 import { ChannelType, type Channel } from "../Channel.ts";
 import { Scripts } from "./scripts/index.ts";
 import { Stylesheets } from "./stylesheets/index.ts";
@@ -73,7 +73,6 @@ export class WebBuild implements Module {
 
     await this.#channel.summary();
 
-    await git.pull();
     const result = await pushToGit(
       `📥 ${this.#channel.name} Web Build ${build.buildNumber} (${
         build.versionHash
