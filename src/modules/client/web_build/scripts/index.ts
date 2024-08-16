@@ -24,6 +24,7 @@ import { Build } from "./Build.ts";
 import { BuildResolver } from "./BuildResolver.ts";
 import { beautify, writeFile, rm, readFile } from "../../../../utils.ts";
 import type { WebBuild } from "../index.ts";
+import { getChunks } from "./chunks.ts";
 
 export class Scripts implements Module {
   #files?: {
@@ -215,13 +216,6 @@ export class Scripts implements Module {
   async chunks() {
     if (this.#chunks) return this.#chunks;
 
-    const main = (await this.files()).mainScript;
-    const matches = (await main.content())!.matchAll(
-      /\s*(\d+):\s*"([a-f0-9]{20})"\s*,?/g,
-    );
-
-    this.#chunks = [...matches].map((item) => new File(item[2]! + ".js"));
-
-    return this.#chunks;
+    return getChunks((await (await this.files()).mainScript.content())!);
   }
 }
