@@ -64,7 +64,12 @@ export const pushToGit = async (...message: string[]) => {
 
   await git.add("data/*");
   await git.commit(msg);
-  return await git.push();
+  return await retry(
+    async () => await git.push(),
+    2,
+    1000,
+    async () => void (await git.pull()),
+  );
 };
 
 export const postToGithub = async (commitHash: string, body: string) => {
@@ -283,6 +288,26 @@ export const numberPad = (num: number): string => {
 
   return num.toString();
 };
+
+export async function retry<T>(
+  fn: () => Promise<T>,
+  retries: number,
+  timeout = 1000,
+  onRetry?: () => Promise<void>,
+): Promise<T> {
+  try {
+    return await fn();
+  } catch (err) {
+    if (retries <= 0) {
+      throw err;
+    }
+    if (onRetry) {
+      await onRetry();
+    }
+    await new Promise((resolve) => setTimeout(resolve, timeout));
+    return retry(fn, retries - 1, timeout, onRetry);
+  }
+}
 
 export interface ArrayDiff<T> {
   added: T[];
