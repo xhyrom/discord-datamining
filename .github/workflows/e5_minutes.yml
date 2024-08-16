@@ -9,7 +9,15 @@ permissions:
 
 jobs:
   mine:
+    name: mine ${{ matrix.channel }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        channel:
+          - stable
+          - ptb
+          - canary
+          - development
     steps:
       - uses: actions/checkout@v4
         with:
@@ -54,3 +62,4 @@ jobs:
           DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORD_WEBHOOK_MISCELLANEOUS }}
 
           SCRAPE_CLIENT: true
+          SCRAPE_CLIENT_CHANNEL: ${{ matrix.channel }}

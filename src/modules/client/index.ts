@@ -33,13 +33,21 @@ export class Client implements Module {
   }
 
   async run() {
-    await new Experiments().run();
-
-    await new Channel(ChannelType.Stable).run();
-    await new Channel(ChannelType.PublicTestingBeta).run();
-    await new Channel(ChannelType.Canary).run();
-    await new Channel(ChannelType.Development).run();
-
-    await new Strings().run();
+    switch (process.env.SCRAPE_CLIENT_CHANNEL) {
+      case "stable":
+        await new Channel(ChannelType.Stable).run();
+        break;
+      case "ptb":
+        await new Channel(ChannelType.PublicTestingBeta).run();
+        break;
+      case "canary":
+        await new Experiments().run(); // scrape experiments with canary
+        await new Channel(ChannelType.Canary).run();
+        await new Strings().run(); // scrape strings with canary
+        break;
+      case "development":
+        await new Channel(ChannelType.Development).run();
+        break;
+    }
   }
 }
