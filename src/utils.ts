@@ -55,11 +55,11 @@ export const pushToGit = async (...message: string[]) => {
 
   if (process.env.DEBUG === "true") {
     console.log(`Avoiding ${msg} push`);
-    return {
+    return; /*{
       update: {
         hash: "dev-debug",
       },
-    };
+    };*/
   }
 
   await git.add("data/*");

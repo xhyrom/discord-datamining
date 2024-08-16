@@ -98,9 +98,12 @@ export class Scripts implements Module {
     );
 
     for (const file of [...files.scripts, ...chunks]) {
+      const content = await file.content();
+      if (!content) continue;
+
       await writeFile(
         join(this.baseDir, "scripts", file.path),
-        await beautify(await file.content(), "js"),
+        await beautify(content, "js"),
       );
     }
 
@@ -189,7 +192,7 @@ export class Scripts implements Module {
     if (this.#chunks) return this.#chunks;
 
     const main = (await this.files()).mainScript;
-    const matches = (await main.content()).matchAll(
+    const matches = (await main.content())!.matchAll(
       /\s*(\d+):\s*"([a-f0-9]{20})"\s*,?/g,
     );
 

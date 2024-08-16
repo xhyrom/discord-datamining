@@ -40,10 +40,9 @@ export class File {
     if (this.#content) return this.#content;
     if (this.local) return await this.localContent();
 
-    this.#content = await (
-      await fetch(`https://canary.discord.com/assets/${this.path}`)
-    ).text();
-    return this.#content;
+    const res = await fetch(`https://canary.discord.com/assets/${this.path}`);
+
+    return res.ok ? await res.text() : null;
   }
 
   async localContent() {
