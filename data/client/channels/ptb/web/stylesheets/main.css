@@ -43875,9 +43875,6 @@ code {
   --video-calls-base-tile-border-radius: var(--radius-lg);
 }
 :root {
-  --custom-user-profile-modal-user-profile-modal-width: 600px;
-  --custom-user-profile-modal-header-avatar-size: 120px;
-  --custom-user-profile-modal-header-total-avatar-border-size: 16px;
   --custom-user-banner-premium-banner-height-popout: 120px;
   --custom-user-banner-premium-banner-height-no-banner-image-popout: 90px;
   --custom-user-banner-premium-banner-height-profile: 212px;
@@ -44649,4 +44646,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.a1f75e0f91f3803856e0.css.map*/
+/*# sourceMappingURL=12633.0d63e708a55fa81b346a.css.map*/
