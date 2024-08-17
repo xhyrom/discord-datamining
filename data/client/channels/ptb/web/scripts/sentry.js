@@ -8690,7 +8690,6 @@
           (rZ.FORUM_CHANNEL_FOOTER = "Forum Channel Footer"),
           (rZ.FORUM_CHANNEL_GUIDELINES = "Forum Channel Guidelines"),
           (rZ.FORUM_POST_HEADER = "Forum Post Header"),
-          (rZ.DM_PROFILE = "DM Profile"),
           (rZ.NOTIFICATION_CENTER = "Notification Center"),
           (rZ.STAGE_VIDEO_LIMIT = "Stage Video Limit"),
           (rZ.CHANNEL_PIN = "Channel Pin"),
@@ -8754,7 +8753,6 @@
           (r0.AVATAR = "Avatar"),
           (r0.ANIMATED_AVATAR = "Animated Avatar"),
           (r0.EDIT_GUILD_PROFILE_AVATAR = "Edit Guild Profile Avatar"),
-          (r0.GUILD_ICON = "Guild Icon"),
           (r0.CHANNEL = "Channel"),
           (r0.CHANNEL_TAG = "Channel Tag"),
           (r0.BADGE = "Badge"),
@@ -10396,7 +10394,6 @@
             "user_profile_recent_games_setting_disabled"),
           (nN.USER_PROFILE_BADGE_HOVERED = "user_profile_badge_hovered"),
           (nN.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
-          (nN.DM_PROFILE_VIEWED = "dm_profile_viewed"),
           (nN.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (nN.PREMIUM_FEATURE_HELPER_ACTIONS =
             "premium_feature_helper_actions"),
@@ -12284,7 +12281,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b352e0ec7bff0f8723cb8ad1c9ba1c34031f7cf5",
+            release: "discord_web-cf8ce049ebaedc0bd5c64a6401a57a3937775eb3",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12353,8 +12350,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "319591"), "319591"));
-          i.YA("builtAt", String("1723853280685"));
+            i.YA("buildNumber", ((e = "319623"), "319623"));
+          i.YA("builtAt", String("1723857027441"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48383,4 +48380,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.ebf9883c51d62087378b.js.map
+//# sourceMappingURL=sentry.aa94822824fc1b5884bd.js.map
