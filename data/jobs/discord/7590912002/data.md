@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7590912002](https://discord.com/jobs/7590912002)
 
-**Updated At:** Fri, 09 Aug 2024 19:35:25 GMT
+**Updated At:** Sat, 17 Aug 2024 00:26:07 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
