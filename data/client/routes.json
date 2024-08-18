@@ -481,7 +481,12 @@
   },
   "DISCOVERY_GUILD_PROFILES": {
     "url": "/discovery/guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
