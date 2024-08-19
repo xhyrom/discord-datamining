@@ -5,67 +5,30 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
+    <a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
       >What is Activity Status (Recent Activity)?</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV5TNKJRY98GXQSHJQQ"
-      >How to View Activity Status</a
-    >
+    <a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ">How to View Activity Status</a>
     <ul>
+      <li><a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</a></li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV5GP22NWFTXYNKW3GX"
-          >Within User Profiles</a
-        >
+        <a href="#h_01HTJA8QV59M70ZB3DY4THZM27">On Global Activity Cards</a>
       </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV59M70ZB3DY4THZM27"
-          >On Global Activity Cards</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ"
-          >As a Status Message</a
-        >
-      </li>
+      <li><a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ">As a Status Message</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
+    <a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
       >How do I control who sees my activity?</a
     >
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV5H72HKXSNDXME2NAS"
-          >Global Settings</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV5M1VHRW89M024JHDT"
-          >Connection Settings</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV5ABSA6FY6GEPMA946"
-          >Game Detection</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/7931156448919#h_01HTJA8QV57FRX82WP3T41Z3G8"
-          >Per-server Control</a
-        >
-      </li>
+      <li><a href="#h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</a></li>
+      <li><a href="#h_01HTJA8QV5M1VHRW89M024JHDT">Connection Settings</a></li>
+      <li><a href="#h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</a></li>
+      <li><a href="#h_01HTJA8QV57FRX82WP3T41Z3G8">Per-server Control</a></li>
+      <li><a href="#h_01J5NNZS153N6H9V1S5A6WMMPK">Past Activity History</a></li>
     </ul>
   </li>
 </ul>
@@ -142,14 +105,14 @@
 <p>Activity can be seen in multiple places within the Discord app.</p>
 <h2 id="h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</h2>
 <p>
-  When referring to a User Profile, you will be able to view their activity
-  status. 
+  When referring to a User Profile, you will be able to view a user's activity
+  status and their activity history for the past 30 days.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22536176531607"
-    width="385"
-    height="437"
+    src="https://support.discord.com/hc/article_attachments/25750646264599"
+    width="396"
+    height="505"
   />
 </p>
 <h2 id="h_01HTJA8QV59M70ZB3DY4THZM27">On Global Activity Cards</h2>
@@ -343,3 +306,65 @@
     >.<br
   /></span>
 </h3>
+<h2 id="h_01J5NNZS153N6H9V1S5A6WMMPK">
+  <span style="color: #434343">Past Activity History</span>
+</h2>
+<p>
+  While viewing your User Profile, you can also clear your
+  <strong>Game History</strong> to clear it from your activity history. 
+</p>
+<p>
+  1. Select your <strong>User</strong> <strong>Profile</strong> in the
+  lower-left corner of the app to view your <strong>User Status </strong>menu.
+</p>
+<p class="wysiwyg-text-align-left">
+  2. Select your <strong>profile avatar</strong> to view your
+  <strong>full profile</strong>.  
+</p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/25750646290583"
+      width="624"
+      height="468"
+  /></strong>
+</p>
+<p>
+  3. While here, press <strong>Activity </strong>within the profile categories.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25750646296855"
+    width="624"
+    height="467"
+  />
+</p>
+<p>
+  4. This will bring you to your activity history where you can select the
+  ellipsis [<img
+    src="https://support.discord.com/hc/article_attachments/25750646300183"
+    width="30"
+    height="24"
+  />] to the right of the activity and press
+  <strong>Clear Game History</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #434343"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/25750632675607"
+      width="624"
+      height="497"
+  /></span>
+</p>
+<p>
+  5. Within <strong>Clear Game History</strong> press the
+  <strong>Clear </strong>button in the lower-right corner to remove the activity
+  from your history.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25750632689047"
+    width="624"
+    height="427"
+  />
+</p>
