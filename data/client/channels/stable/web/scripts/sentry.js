@@ -6396,6 +6396,7 @@
               "/guilds/".concat(e, "/discovery-requirements"),
             DISCOVERY_ALL_GAMES: "/discovery/games/all",
             DISCOVERY_RECOMMENDATIONS: "/discovery/recommendations",
+            DISCOVERY_GUILD_PROFILES: "/discovery/guilds",
             GUILD_RECOMMENDATIONS: () => "/guild-recommendations",
             GUILD_EMOJIS: (e) => "/guilds/".concat(e, "/emojis"),
             GUILD_EMOJI: (e, t) => "/guilds/".concat(e, "/emojis/").concat(t),
@@ -8351,7 +8352,6 @@
             "Voice Channel Effect Emoji Picker Popout"),
           (rZ.FILE_UPLOAD_POPOUT = "File Upload Popout"),
           (rZ.GUILD_POPOUT = "Guild Popout"),
-          (rZ.PROFILE_POPOUT = "Profile Popout"),
           (rZ.BITE_SIZE_PROFILE_POPOUT = "Bite Size Profile Popout"),
           (rZ.ROLE_ICON_POPOUT = "Role Icon Popout"),
           (rZ.GAME_MODAL = "Game Modal"),
@@ -8690,7 +8690,6 @@
           (rZ.FORUM_CHANNEL_FOOTER = "Forum Channel Footer"),
           (rZ.FORUM_CHANNEL_GUIDELINES = "Forum Channel Guidelines"),
           (rZ.FORUM_POST_HEADER = "Forum Post Header"),
-          (rZ.DM_PROFILE = "DM Profile"),
           (rZ.NOTIFICATION_CENTER = "Notification Center"),
           (rZ.STAGE_VIDEO_LIMIT = "Stage Video Limit"),
           (rZ.CHANNEL_PIN = "Channel Pin"),
@@ -8754,7 +8753,6 @@
           (r0.AVATAR = "Avatar"),
           (r0.ANIMATED_AVATAR = "Animated Avatar"),
           (r0.EDIT_GUILD_PROFILE_AVATAR = "Edit Guild Profile Avatar"),
-          (r0.GUILD_ICON = "Guild Icon"),
           (r0.CHANNEL = "Channel"),
           (r0.CHANNEL_TAG = "Channel Tag"),
           (r0.BADGE = "Badge"),
@@ -10396,7 +10394,6 @@
             "user_profile_recent_games_setting_disabled"),
           (nN.USER_PROFILE_BADGE_HOVERED = "user_profile_badge_hovered"),
           (nN.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
-          (nN.DM_PROFILE_VIEWED = "dm_profile_viewed"),
           (nN.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (nN.PREMIUM_FEATURE_HELPER_ACTIONS =
             "premium_feature_helper_actions"),
@@ -12284,7 +12281,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-45a1ed08309c74f6bff77c0f6a02b463afdbcf99",
+            release: "discord_web-74c37b39a319535e06d894a7e780ceb1d5840b25",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12353,8 +12350,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "319436"), "319436"));
-          i.YA("builtAt", String("1723838715732"));
+            i.YA("buildNumber", ((e = "319737"), "319737"));
+          i.YA("builtAt", String("1724086867103"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48383,4 +48380,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.c499cef07e1029d44c11.js.map
+//# sourceMappingURL=sentry.ba48824cfb4ad620504c.js.map
