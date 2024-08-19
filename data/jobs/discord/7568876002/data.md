@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7568876002](https://discord.com/jobs/7568876002)
 
-**Updated At:** Mon, 19 Aug 2024 22:08:25 GMT
+**Updated At:** Mon, 19 Aug 2024 23:06:00 GMT
 
 **Job Description:**
 Discord is looking for a Senior Financial Reporting and Technical Accountant to join our growing team! This position will play a critical role in the preparation of the company’s financial statements and related disclosures, performing accounting research, preparing position papers, and accounting for some of the more complex areas of the business. This hire will report to our Director of Technical Accounting &amp;amp; Financial Reporting. We are looking for an individual who is excited to work both independently and collaboratively, demonstrates strong communication skills and attention to detail, and collaborates well cross-functionally.
