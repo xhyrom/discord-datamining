@@ -22793,6 +22793,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   color: var(--interactive-active);
   flex: 1;
 }
+.lockIcon_f40049 {
+  pointer-events: none;
+}
 .primaryIconTopLevel_f40049 {
   position: absolute;
   z-index: 9999;
@@ -44748,4 +44751,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.64da55e52555a2c3ed1e.css.map*/
+/*# sourceMappingURL=12633.87a54441628369dc379b.css.map*/
