@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-07_hover_bar_reaction_suggestions",
-    "label": "Hover Bar Reaction Suggestions",
+    "id": "2024-07_friend_request_spam_inbox",
+    "label": "Friend request spam inbox",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show reactions on message hover"
+      "Treatment 1: Separate spam friend requests into separate inbox and suppress notifications"
     ],
-    "hash": 2595288008,
+    "hash": 2045608872,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "canShowReactionsOnMessageHover"
+      "enabled"
     ]
   }
 }
