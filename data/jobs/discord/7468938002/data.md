@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7468938002](https://discord.com/jobs/7468938002)
 
-**Updated At:** Sat, 17 Aug 2024 00:26:07 GMT
+**Updated At:** Mon, 19 Aug 2024 21:56:18 GMT
 
 **Job Description:**
 This position is US based only.Discord is looking for a Senior Staff Engineer to join our Platform Ecosystem team to help lead the next era of Discord’s development platform. You will oversee the technical roadmap for Apps and Activities, working across APIs, SDKs, and Developer tools. You will work with teams across the organization including Engineering, Product, Data Science, Design, Infrastructure, and Customer Success to ensure that the technical strategy meets our goals.

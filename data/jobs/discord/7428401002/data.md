@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7428401002](https://discord.com/jobs/7428401002)
 
-**Updated At:** Sat, 17 Aug 2024 00:26:07 GMT
+**Updated At:** Mon, 19 Aug 2024 21:56:18 GMT
 
 **Job Description:**
 This position is US based only.Discord is the place for all things gaming. Discord is the place where players have their entire hangout experience with friends – from before, during, and after gaming sessions. Discord is also the place where every major game publisher and studio maintains an official community. And finally Discord is the place where the latest news, beta codes, and big gaming moments happen. &amp;nbsp;
