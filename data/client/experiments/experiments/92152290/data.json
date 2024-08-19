@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_reaction_frecency_algorithms",
+    "label": "Reaction Frecency Algorithms",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Change frecency algorithm",
+      "Treatment 2: Change frecency algorithm and day weights",
+      "Treatment 3: Change frecency algorithm to be faster and day weights",
+      "Treatment 4: Change frecency algorithm to be faster and day weights faster"
+    ],
+    "hash": 92152290,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "frecencyAlgorithm"
+    ]
+  }
+}
