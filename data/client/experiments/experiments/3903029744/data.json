@@ -6,16 +6,12 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enables custom status bubble editing in the account popout",
-      "Treatment 2: Enables custom status bubble editing in the user profile",
-      "Treatment 3: Enables custom status bubble editing in the account popout and user profile"
+      "Treatment 3: Enables custom status bubble editing in all user profile surfaces"
     ],
     "hash": 3903029744,
     "buckets": [
       -1,
       0,
-      1,
-      2,
       3
     ],
     "holdout": {},
