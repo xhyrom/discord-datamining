@@ -1,37 +1,12 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-11_secure_frames_encryption_guilds",
-    "label": "Allowing testing secure frames for voice/video (Guilds)",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 6: Can support secure frames above protocol version 10",
-      "Treatment 7: Can support secure frames above protocol version 110 (MLS)",
-      "Treatment 8: Can support secure frames above protocol version 11",
-      "Treatment 9: Can support secure frames above protocol version 111 (MLS)",
-      "Treatment 10: Can support secure frames above protocol version 112 (MLS)"
-    ],
     "hash": 2916044329,
-    "buckets": [
-      -1,
-      0,
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "protocolVersionFloor",
-      "canSupportSecureFrames",
-      "canSupportMls"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [
