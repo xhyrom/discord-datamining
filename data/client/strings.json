@@ -6843,6 +6843,7 @@
   "PREMIUM_TIER_2_TRIAL_CTA_SUBTITLE": "\"Claim by signing up for Nitro and start your emoji collection today.\"",
   "PREMIUM_TIER_2_TRIAL_CTA_NOTE": "\"*Please note that gifts and Nitro Classic are not included in this offer.\"",
   "PREMIUM_TRIAL_CTA_BUTTON_VARIANT": "\"Try Nitro for Free\"",
+  "PREMIUM_REVERSE_TRIAL_BADGE": "\"Active Trial\"",
   "PREMIUM_TRIAL_TIER_0_CTA_BUTTON_VARIANT": "\"Try Nitro Basic for Free\"",
   "PREMIUM_TRIAL_FREE_DURATION_DAYS": "\"{days, plural, =1 {# day free} other {# days free}}\"",
   "PREMIUM_TRIAL_FREE_DURATION_WEEKS": "\"{weeks, plural, =1 {# week free} other {# weeks free}}\"",
