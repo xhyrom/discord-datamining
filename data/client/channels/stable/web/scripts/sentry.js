@@ -8262,6 +8262,7 @@
           (rq.E2EE_USER_VERIFY_MODAL = "E2EE User Verify Modal"),
           (rq.REPEAT_GIFT_PURCHASE_BUTTON = "Repeat Gift Purchase Button"),
           (rq.PROFILE_MODAL_TABS = "Profile Modal Tabs"),
+          (rq.PROFILE_MODAL_RELATIONS = "Profile Modal Relations"),
           ((rz = eI || (eI = {})).JOIN = "join"),
           (rz.ASK_TO_JOIN = "ask to join"),
           (rz.LAUNCH = "launch"),
@@ -8364,6 +8365,7 @@
           (rZ.EMOJI_PICKER_FLOATING_UPSELL = "Emoji Picker Floating Upsell"),
           (rZ.SOUND_PICKER_FLOATING_UPSELL = "Sound Picker Floating Upsell"),
           (rZ.EMPTY_STICKER_PICKER_UPSELL = "Empty Sticker Picker Upsell"),
+          (rZ.FOR_LATER_POPOUT_UPSELL = "For Later Popout Upsell"),
           (rZ.CREATE_STICKER_MODAL = "Create Sticker Modal"),
           (rZ.IOS_TWO_FA_MODAL = "Two Factor Auth Modal"),
           (rZ.IOS_TWO_FA_EMAIL_VERIFICATION = "Two Factor Email Verification"),
@@ -10629,6 +10631,7 @@
           (nN.FORWARD_EDIT_CONTEXT_MESSAGE = "forward_edit_context_message"),
           (nN.FORWARD_ONE_TAP_UNDO = "forward_one_tap_undo"),
           (nN.FORWARD_ONE_TAP_VIEW = "forward_one_tap_view"),
+          (nN.FORWARD_BREADCRUMB_CLICKED = "forward_breadcrumb_clicked"),
           (nN.CDM_LOAD_STATUS = "cdm_load_status"),
           (nN.CDM_READY_COMPLETE = "cdm_ready_complete"),
           (nN.RTC_PANEL_VIEWED = "rtc_panel_viewed"),
@@ -12291,7 +12294,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-3fce75b7718ee0bd45353d912a59644755303612",
+            release: "discord_web-517408c2f52ef7308d26177fe775a9707e6ba9ef",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12360,8 +12363,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "320157"), "320157"));
-          i.YA("builtAt", String("1724176298474"));
+            i.YA("buildNumber", ((e = "320374"), "320374"));
+          i.YA("builtAt", String("1724193805003"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48390,4 +48393,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.d7f76655f36ca4bad82c.js.map
+//# sourceMappingURL=sentry.4ddd7668f49bfc50da46.js.map
