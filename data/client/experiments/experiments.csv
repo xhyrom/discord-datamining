@@ -726,6 +726,7 @@ id,hash,label
 2024-07_sky_load,2472873852,Sky Load
 2024-07_user_profile_new_activity_cards,2344802807,User Profile New Activity Cards Experiment
 2024-07_user_profile_past_activity,4175610728,User Profile Past Activity Experiment
+2024-08_blocking_voice_states,3896794487,Blocking Voice States
 2024-08_content_inventory_entry_signed_hash,1324956790,Check Signature On Content Inventory Embed
 2024-08_dismissible_pip,3654487046,Dismissible Desktop PiP
 2024-08_emoji_picker_limit_emojis_experiment,2390760015,"Desktop: Show three rows of emojis per server, with the option to expand"
