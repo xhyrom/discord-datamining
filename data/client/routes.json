@@ -477,7 +477,12 @@
   },
   "DISCOVERY_RECOMMENDATIONS": {
     "url": "/discovery/recommendations",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DISCOVERY_GUILD_PROFILES": {
     "url": "/discovery/guilds",
