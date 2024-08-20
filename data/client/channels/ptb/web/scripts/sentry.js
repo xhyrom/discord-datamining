@@ -12294,7 +12294,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-517408c2f52ef7308d26177fe775a9707e6ba9ef",
+            release: "discord_web-a8cfe6f8893456e3ae1fb274c5ffad83edc51640",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12363,8 +12363,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "320374"), "320374"));
-          i.YA("builtAt", String("1724193805003"));
+            i.YA("buildNumber", ((e = "320391"), "320391"));
+          i.YA("builtAt", String("1724195621871"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -21992,6 +21992,7 @@
           (a[(a.GUILD_DIRECTORY = 14)] = "GUILD_DIRECTORY"),
           (a[(a.GUILD_FORUM = 15)] = "GUILD_FORUM"),
           (a[(a.GUILD_MEDIA = 16)] = "GUILD_MEDIA"),
+          (a[(a.LOBBY = 17)] = "LOBBY"),
           (a[(a.UNKNOWN = 1e4)] = "UNKNOWN");
         let o = {
           CALLABLE: new Set([1, 3]),
@@ -48393,4 +48394,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.4ddd7668f49bfc50da46.js.map
+//# sourceMappingURL=sentry.51b1dacc43fd4c1c89a0.js.map
