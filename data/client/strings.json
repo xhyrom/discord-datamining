@@ -7082,6 +7082,7 @@
   "PREMIUM_MARKETING_WHATS_NEW_SO_NEW_BADGE": "\"SO NEW\"",
   "PREMIUM_MARKETING_WHATS_NEW_NEW_NEW_BADGE": "\"NEW NEW\"",
   "REFERRAL_INCENTIVE_SHARE_NITRO_GET_DISCOUNT": "\"Share Nitro & Get {discountRate} Off\"",
+  "REFERRAL_INCENTIVE_COUNTDOWN_DAYS": "\"In {days, plural, =1 {# Day} other {# Days}}\"",
   "REFERRAL_INCENTIVE_FRIEND_PASSES_CONVERT_GET_INCENTIVE": "\"You’ve got Nitro friend passes! Get {discountRate} off your next {subscriptionInterval} when a friend becomes a paying member. [Learn more]({learnMoreLink}).\"",
   "REFERRAL_INCENTIVE_FRIEND_PASSES_KEEP_GOING": "\"Keep Going! Share Nitro & Get {discountRate} Off\"",
   "REFERRAL_INCENTIVE_FRIEND_PASSES_REDEEMED": "\"Your friend passes have been redeemed! Get {discountRate} off your next {subscriptionInterval} when a friend becomes a paying member. [Learn more]({learnMoreLink}).\"",
