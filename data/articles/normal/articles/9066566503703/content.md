@@ -1,10 +1,12 @@
-<h3>
+<h3 id="h_01J5RTHM844FH5TNSSZ4GKD48Y">
   <span style="font-weight: 400"
     ><strong>Note:</strong> You cannot add a new payment method directly on the
     <strong>Discord mobile app</strong>.</span
   >
 </h3>
-<h1><strong>What does this article cover? </strong></h1>
+<h1 id="h_01J5RTHM84TVGDFW3JEY50A041">
+  <strong>What does this article cover? </strong>
+</h1>
 <ul>
   <li>
     <a href="#h_01GDK2YZWAX228HDAKAYK7737H" target="_self"
@@ -36,12 +38,11 @@
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://cdn.discordapp.com/attachments/908780812479115296/1022555490653323295/venmo_launch_0a.png"
-      width="605"
-      height="280"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25789156765591"
+    width="605"
+    height="280"
+  />
 </p>
 <h2 id="h_01GDKADKBZJJ8FESKYW7SXFJRD">
   <strong>On Desktop/Web Browser</strong>
@@ -61,12 +62,11 @@
   </span>
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://cdn.discordapp.com/attachments/908780812479115296/1022555943357136977/unknown.png"
-      width="500"
-      height="371"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25789143284887"
+    width="346"
+    height="257"
+  />
 </p>
 <p>
   <span style="font-weight: 400"
@@ -101,12 +101,11 @@
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://cdn.discordapp.com/attachments/908780812479115296/1022556953601388635/unknown.png"
-      width="493"
-      height="366"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/25789156768023"
+    width="412"
+    height="307"
+  />
 </p>
 <p>
   <span style="font-weight: 400"
@@ -126,7 +125,7 @@
 <h2 id="h_01GDK3DRZ6JRE0EWNMH63DE1DY">
   <strong>On Mobile Web Browser</strong>
 </h2>
-<h3>
+<h3 id="h_01J5RTHM847A5QZK49JGB3D01B">
   <span style="font-weight: 400"
     >As a reminder, you cannot add a new payment method directly on the </span
   ><strong>Discord mobile app</strong
