@@ -25,50 +25,37 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/22567595858327#h_01HVRY7E8SNEPQT1Q6H7T6ME4X"
-      >Share Nitro Eligibility</a
-    >
+    <a href="#h_01HVRY7E8SNEPQT1Q6H7T6ME4X">Share Nitro Eligibility</a>
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/22567595858327#h_01HVRY7E8SSPXDFV3PXM9CHTNE"
+        <a href="#h_01HVRY7E8SSPXDFV3PXM9CHTNE"
           >Nitro Members Sharing a Trial</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/22567595858327#h_01HVRY7E8S1GMH2YZTN907BAY5"
-          >Friends Receiving a Trial</a
-        >
+        <a href="#h_01HVRY7E8S1GMH2YZTN907BAY5">Friends Receiving a Trial</a>
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/22567595858327#h_01HVRY7E8S7RJM0888YQMZCMGE"
+    <a href="#h_01HVRY7E8S7RJM0888YQMZCMGE"
       >How to Share a Nitro Trial with your Friends</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/22567595858327#h_01HVRY7E8SC0MH4T9WR6EH6GJG"
+    <a href="#h_01HVRY7E8SC0MH4T9WR6EH6GJG"
       >Receiving a Nitro Trial from Someone</a
     >
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/22567595858327#h_01HVRY7E8S3S0XYVK5FMMT1C69"
+        <a href="#h_01HVRY7E8S3S0XYVK5FMMT1C69"
           >How to Redeem your 2-week Trial</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/22567595858327#h_01HVRY7E8T0ADKKTYZWQXHSE7D"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01HVRY7E8T0ADKKTYZWQXHSE7D">Frequently Asked Questions</a>
   </li>
 </ul>
 <h1 id="h_01HVRY7E8SNEPQT1Q6H7T6ME4X">SHARE NITRO ELIGIBILITY </h1>
