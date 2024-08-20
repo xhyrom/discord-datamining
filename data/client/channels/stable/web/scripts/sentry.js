@@ -5933,6 +5933,7 @@
           (rr.ALL = "ALL"),
           (rr.ONLINE = "ONLINE"),
           (rr.PENDING = "PENDING"),
+          (rr.SPAM = "SPAM"),
           (rr.BLOCKED = "BLOCKED"),
           (rr.SUGGESTIONS = "SUGGESTIONS"),
           ((rn = d || (d = {})).SEARCH = "SEARCH"),
@@ -8726,6 +8727,8 @@
           (rZ.APPEAL_INGESTION_SPAM = "Appeal Ingestion Spam"),
           (rZ.SETTINGS_SURVEY_OVERRIDE = "Survey Override"),
           (rZ.QUEST_PREVIEW_TOOL = "Quest Preview Tool"),
+          (rZ.SECURE_FRAMES_STREAM_BOTTOM_SHEET =
+            "Secure Frames Stream Bottom Sheet"),
           (rZ.SECURE_FRAMES_VOICE_BOTTOM_SHEET =
             "Secure Frames Voice Bottom Sheet"),
           (rZ.SECURE_FRAMES_VERIFIED_DEVICES =
@@ -10638,6 +10641,10 @@
             "e2ee_call_verification_code_copied"),
           (nN.E2EE_CALL_VERIFICATION_SHARE_CLICKED =
             "e2ee_call_verification_share_clicked"),
+          (nN.E2EE_STREAM_VERIFICATION_SHARE_CLICKED =
+            "e2ee_stream_verification_share_clicked"),
+          (nN.E2EE_STREAM_VERIFICATION_CODE_COPIED =
+            "e2ee_stream_verification_code_copied"),
           (nN.E2EE_SETTINGS_USER_DELETE = "e2ee_settings_user_delete"),
           (nN.E2EE_SETTINGS_DEVICE_DELETE = "e2ee_settings_device_delete"),
           (nN.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH =
@@ -12281,7 +12288,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-74c37b39a319535e06d894a7e780ceb1d5840b25",
+            release: "discord_web-278aa9f0a35405a8d2f475b02053e85419c0b87e",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12350,8 +12357,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "319737"), "319737"));
-          i.YA("builtAt", String("1724086867103"));
+            i.YA("buildNumber", ((e = "320089"), "320089"));
+          i.YA("builtAt", String("1724168641862"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48380,4 +48387,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.ba48824cfb4ad620504c.js.map
+//# sourceMappingURL=sentry.b11dee3bacef129f147a.js.map
