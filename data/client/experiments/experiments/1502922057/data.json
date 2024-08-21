@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_user_profile_blockee_hide_mutuals",
+    "label": "User Profile Blockee Hide Mutuals",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable User Profile Blockee Hide Mutuals"
+    ],
+    "hash": 1502922057,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
