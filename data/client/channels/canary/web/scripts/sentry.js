@@ -8281,7 +8281,6 @@
           (rQ.USER_SETTINGS = "User Settings"),
           (rQ.USER_PROFILE = "User Profile"),
           (rQ.APP_ICONS = "App Icons"),
-          (rQ.USER_POPOUT = "User Popout"),
           (rQ.GUILD_CHANNEL = "Guild Channel"),
           (rQ.GUILD_SETTINGS = "Guild Settings"),
           (rQ.CHANNEL_SETTINGS = "Channel Settings"),
@@ -8636,7 +8635,6 @@
           (rZ.GUILD_CAP_UPSELL_MODAL = "Guild Cap Upsell Modal"),
           (rZ.CHAT_USERNAME = "Chat Username"),
           (rZ.GUILD_DROPDOWN_MENU = "Guild Dropdown Menu"),
-          (rZ.NITRO_BANNER = "Nitro Banner"),
           (rZ.PREMIUM_GUILD_MEMBER_PROFILE =
             "Edit Premium Guild Member Profile"),
           (rZ.CREATE_THREAD_SIDEBAR = "Create Thread Sidebar"),
@@ -8780,7 +8778,6 @@
           (r0.EMOJI = "Emoji"),
           (r0.SOUNDBOARD_SOUND = "Soundboard Sound"),
           (r0.EDIT_PER_SERVER_IDENTITY = "Edit Per Server Identity"),
-          (r0.NITRO_BADGE = "Nitro Badge"),
           (r0.EDIT_PROFILE_BANNER = "Edit Profile Banner"),
           (r0.EDIT_GUILD_PROFILE_BANNER = "Edit Guild Profile Banner"),
           (r0.BOOSTING_BANNER = "Boosting Banner"),
@@ -12303,7 +12300,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4fc8d9eebbbb028d94b75f66caa77bb562349c39",
+            release: "discord_web-805944ad8c1c653b95b9a64f2181fbbcfcaa5de4",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12372,8 +12369,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "320565"), "320565"));
-          i.YA("builtAt", String("1724261790353"));
+            i.YA("buildNumber", ((e = "320569"), "320569"));
+          i.YA("builtAt", String("1724262052648"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48403,4 +48400,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.99aa95943492fa892f6c.js.map
+//# sourceMappingURL=sentry.3d30d4e42d2ef3adf94c.js.map
