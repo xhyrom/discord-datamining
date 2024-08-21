@@ -6,10 +6,10 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Change frecency algorithm",
-      "Treatment 2: Change frecency algorithm and day weights",
-      "Treatment 3: Change frecency algorithm to be faster and day weights",
-      "Treatment 4: Change frecency algorithm to be faster and day weights faster"
+      "Treatment 1: Stable algorithm with no hover bar",
+      "Treatment 2: Volatile algorithm with no hover bar",
+      "Treatment 3: Stable algorithm with hover bar",
+      "Treatment 4: Volatile algorithm with hover bar"
     ],
     "hash": 92152290,
     "buckets": [
@@ -23,7 +23,8 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "frecencyAlgorithm"
+      "frecencyAlgorithm",
+      "canShowReactionsOnMessageHover"
     ]
   }
 }
