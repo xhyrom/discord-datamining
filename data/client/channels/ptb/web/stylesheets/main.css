@@ -6419,25 +6419,18 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   margin-left: 0;
   margin-right: 8px;
 }
+.iconContainerLarge_d90b3d {
+  height: 32px;
+  width: 32px;
+}
 .icon_d90b3d {
-  width: 18px;
-  height: 18px;
-}
-.imageContainer_d90b3d {
-  flex: 0 0 auto;
-  margin-left: 8px;
-}
-.imageContainerLeft_d90b3d {
-  margin-left: 0;
-  margin-right: 8px;
+  width: 100%;
+  height: 100%;
 }
 .hintContainer_d90b3d {
   flex: 0 0 auto;
   max-height: 18px;
   margin-left: 8px;
-}
-.image_d90b3d {
-  height: 18px;
 }
 .caret_d90b3d {
   width: 10px;
@@ -44752,4 +44745,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.d91aba409552a5761b78.css.map*/
+/*# sourceMappingURL=12633.2b8434dda03ab9ae76f4.css.map*/
