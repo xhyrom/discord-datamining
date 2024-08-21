@@ -7377,6 +7377,8 @@
               "/users/@me/saved-messages/".concat(e, "/").concat(t),
             GET_REFERRALS_REMAINING: "/users/@me/referrals/eligibility",
             GET_REFERRAL_ELIGIBLE_USERS: "/users/@me/referrals/eligible-users",
+            GET_REFERRAL_INCENTIVE_ELIGIBILITY:
+              "/users/@me/referrals/incentive-eligibility",
             CREATE_REFERRAL_PREVIEW: (e) =>
               "/users/@me/referrals/".concat(e, "/preview"),
             CREATE_REFERRAL: (e) => "/users/@me/referrals/".concat(e),
@@ -10574,6 +10576,13 @@
             "guild_member_application_reported"),
           (nN.GUILD_APPLICATION_INTENDS_TO_JOIN =
             "guild_application_intends_to_join"),
+          (nN.DISCOVERY_GUILD_IMPRESSIONED = "discovery_guild_impressioned"),
+          (nN.DISCOVERY_GUILD_PAGINATION_CLICKED =
+            "discovery_guild_pagination_clicked"),
+          (nN.DISCOVERY_GUILD_FAVORITED = "discovery_guild_favorited"),
+          (nN.DISCOVERY_GUILD_CARD_INTERACTION =
+            "discovery_guild_card_interaction"),
+          (nN.GUILD_APPLICATION_ABANDONED = "guild_application_abandoned"),
           (nN.CHANNEL_PROMPT_ACTION_CLICKED = "channel_prompt_action_clicked"),
           (nN.GPLAY_PURCHASE_FAILED = "gplay_purchase_failed"),
           (nN.LIVE_ACTIVITY_SETTINGS_UPDATED =
@@ -12294,7 +12303,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-517408c2f52ef7308d26177fe775a9707e6ba9ef",
+            release: "discord_web-f819c21e45e54bbe65364b9fff42a3cce16bc5d6",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12363,8 +12372,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "320374"), "320374"));
-          i.YA("builtAt", String("1724193805003"));
+            i.YA("buildNumber", ((e = "320516"), "320516"));
+          i.YA("builtAt", String("1724255009023"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -21992,6 +22001,7 @@
           (a[(a.GUILD_DIRECTORY = 14)] = "GUILD_DIRECTORY"),
           (a[(a.GUILD_FORUM = 15)] = "GUILD_FORUM"),
           (a[(a.GUILD_MEDIA = 16)] = "GUILD_MEDIA"),
+          (a[(a.LOBBY = 17)] = "LOBBY"),
           (a[(a.UNKNOWN = 1e4)] = "UNKNOWN");
         let o = {
           CALLABLE: new Set([1, 3]),
@@ -48393,4 +48403,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.4ddd7668f49bfc50da46.js.map
+//# sourceMappingURL=sentry.4dfaa8a284326f5e80dc.js.map
