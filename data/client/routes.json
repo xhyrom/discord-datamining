@@ -4618,7 +4618,12 @@
   },
   "GET_REFERRAL_INCENTIVE_ELIGIBILITY": {
     "url": "/users/@me/referrals/incentive-eligibility",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATE_REFERRAL_PREVIEW": {
     "url": "/users/@me/referrals/:param/preview",
