@@ -238,7 +238,11 @@
           where Amazon Music Unlimited is available. </strong
         >You can use the Activity with your friends in voice channels, server
         text chats, and even DMs on desktop, web, and mobile! Hop into a
-        conversation with your friends and try the Activity for yourself!
+        conversation with your friends and try the Activity for yourself!<br /><br /><em
+          >Running into issues when linking your Amazon account?&nbsp;</em
+        ><a href="https://support.discord.com/hc/en-us/articles/25787427602967"
+          ><em>Check out this support article for guidance!</em></a
+        >
       </p>
     </div>
   </div>
