@@ -24505,7 +24505,23 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   mask-position: var(--custom-emoji-sprite-bg-position);
   -webkit-mask-size: var(--custom-emoji-sprite-bg-size);
   mask-size: var(--custom-emoji-sprite-bg-size);
-  background-color: var(--premium-tier-2-purple-for-gradients);
+}
+.spritePremiumColored_d91a75.reducedMotion_d91a75 {
+  background-color: var(--premium-tier-2-purple-for-gradients-2);
+}
+.spritePremiumColored_d91a75:not(.reducedMotion_d91a75) {
+  animation: spritePremiumPulsing_d91a75 2s infinite;
+}
+@keyframes spritePremiumPulsing_d91a75 {
+  0% {
+    background-color: var(--premium-tier-2-purple);
+  }
+  50% {
+    background-color: var(--premium-tier-2-purple-for-gradients-2);
+  }
+  to {
+    background-color: var(--premium-tier-2-purple);
+  }
 }
 .inactive_d91a75 {
   opacity: 0;
@@ -24516,51 +24532,19 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .premiumTooltip_d91a75 {
   max-width: 316px;
   border-radius: 4px;
-  background: linear-gradient(90deg, #522247 2.01%, #1e1f22 96.77%),
-    var(--primary-800);
-  box-shadow: 0 0 4px 0 rgba(194, 105, 195, 0.6) inset;
 }
 .premiumTooltipContainer_d91a75 {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  padding: 16px;
+  padding: 8px 4px;
   align-items: center;
 }
 .premiumUnlockAnimation_d91a75 {
-  position: absolute;
-}
-.premiumUnlockAnimation_d91a75.reducedMotion_d91a75 {
   height: 32px;
   width: 32px;
-  left: 24px;
-  top: 26px;
-}
-.premiumUnlockAnimation_d91a75:not(.reducedMotion_d91a75) {
-  animation: shrink_d91a75 2s forwards;
-}
-@keyframes shrink_d91a75 {
-  0% {
-    height: 66px;
-    width: 66px;
-    left: 0;
-    top: 0;
-  }
-  75% {
-    height: 66px;
-    width: 66px;
-    left: 0;
-    top: 0;
-  }
-  to {
-    height: 32px;
-    width: 32px;
-    left: 24px;
-    top: 26px;
-  }
-}
-.premiumTooltipText_d91a75 {
-  padding-left: 32px;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
   fill: var(--__lottieIconColor, var(--interactive-normal));
@@ -44612,4 +44596,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.67690a9fe5ac84401718.css.map*/
+/*# sourceMappingURL=12633.4bd3f63c57e80cf6356e.css.map*/
