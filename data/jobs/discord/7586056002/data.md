@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7586056002](https://discord.com/jobs/7586056002)
 
-**Updated At:** Wed, 21 Aug 2024 18:59:57 GMT
+**Updated At:** Wed, 21 Aug 2024 19:33:43 GMT
 
 **Job Description:**
 Discord is hiring a technical, hands-on, empathetic senior software engineer to help define and deliver our Developer Platforms mission: build platform solutions to accelerate every Engineer at our company. With your expertise in delivering high quality products, you’ll equip our engineering organization with tools to move quickly and deliver features that bring millions of people together.
