@@ -17900,6 +17900,8 @@
   "CASH_APP_PAY_AWARENESS_SUBSCRIBER_CTA": "\"Update Payment Method\"",
   "CASH_APP_PAY_AWARENESS_NON_SUBSCRIBER_CONTENT": "\"Cash App Pay is now available as a payment method on Discord!\"",
   "CASH_APP_PAY_AWARENESS_NON_SUBSCRIBER_CTA": "\"Add Payment Method\"",
+  "CASH_APP_PAY_AWARENESS_NON_SUBSCRIBER_UPSELL_CONTENT": "\"Level up your Discord experience with Nitro's **custom profiles**, **HD streaming**, and more!\"",
+  "CASH_APP_PAY_AWARENESS_NON_SUBSCRIBER_UPSELL_CTA": "\"Get Nitro\"",
   "GLOBAL_DISCOVERY_TITLE": "\"Discover\"",
   "GLOBAL_DISCOVERY_SERVERS_TITLE": "\"Servers\"",
   "GLOBAL_DISCOVERY_APPS_TITLE": "\"Apps\"",
