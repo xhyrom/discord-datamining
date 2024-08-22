@@ -30421,7 +30421,7 @@ img.thumbnail_c64476 {
 }
 .pictureInPictureWindow_e0c856 {
   position: absolute;
-  z-index: 1002;
+  z-index: 1000;
 }
 .borderRadius_e0c856 {
   border-radius: 8px;
@@ -34583,7 +34583,7 @@ img.thumbnail_c64476 {
   color: var(--header-primary);
 }
 .wrapper_cbf230 {
-  z-index: 1003;
+  z-index: 1001;
   pointer-events: all;
 }
 .actions_cbf230 {
@@ -44577,4 +44577,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.5b54ccf13a13de4e19cd.css.map*/
+/*# sourceMappingURL=12633.8cba8d1eb49c0e60f6b4.css.map*/
