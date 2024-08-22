@@ -1,0 +1,30 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_reverse_trial",
+    "label": "Reverse Trials",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users recieve 2 week trial.",
+      "Treatment 2: User recieves 1 week trial and 1 week followup trial",
+      "Treatment 98: User recieves 1 week trial and 1 week followup trial",
+      "Treatment 99: User recieves 1 week trial and 1 week followup trial"
+    ],
+    "hash": 3433628153,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      98,
+      99
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "isFollowup"
+    ]
+  }
+}
