@@ -7574,6 +7574,7 @@
             CONNECTION_LINK: (e) => "/connections/".concat(e, "/link"),
             CONNECTION_LINK_AUTHORIZE: (e) =>
               "/connections/".concat(e, "/link-authorize"),
+            CONNECTIONS_SUCCESS: (e) => "/connections/".concat(e, "/success"),
             CONNECTIONS: (e) => "/connections/".concat(e),
             CONNECTIONS_AUTHORIZE_CONTINUE: (e) =>
               "/connections/".concat(e, "/authorize-continue"),
@@ -7718,7 +7719,7 @@
           oR = 524288e3,
           oA = (e) => "||".concat(e, "||"),
           oT = /^\|\|([\s\S]+?)\|\|/,
-          od = /^<id:(home|browse|customize|guide)>/,
+          od = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
           oN = /^\d{17,19}$/;
         ((rK = et || (et = {})).MESSAGE = "MESSAGE"),
           (rK.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED"),
@@ -7983,6 +7984,8 @@
           (r$[(r$.TOO_MANY_BLOCKED_USERS = 30059)] = "TOO_MANY_BLOCKED_USERS"),
           (r$[(r$.TOO_MANY_PUBLISHED_PRODUCT_LISTINGS = 30065)] =
             "TOO_MANY_PUBLISHED_PRODUCT_LISTINGS"),
+          (r$[(r$.TOO_MANY_SAVED_MESSAGES = 30074)] =
+            "TOO_MANY_SAVED_MESSAGES"),
           (r$[(r$.UNAUTHORIZED = 40001)] = "UNAUTHORIZED"),
           (r$[(r$.EMAIL_VERIFICATION_REQUIRED = 40002)] =
             "EMAIL_VERIFICATION_REQUIRED"),
@@ -12311,7 +12314,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-5edc5afd38ba4c5b67832e6a54441c199b661628",
+            release: "discord_web-fa7e68c831435ccb31f0bbdc3f6dee1797e5f52a",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12380,8 +12383,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "320974"), "320974"));
-          i.YA("builtAt", String("1724346466798"));
+            i.YA("buildNumber", ((e = "321118"), "321118"));
+          i.YA("builtAt", String("1724358669839"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48411,4 +48414,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.54197b91be74a5d66c75.js.map
+//# sourceMappingURL=sentry.51be40a608d75a09319b.js.map
