@@ -739,7 +739,10 @@
   },
   "GUILD_JOIN_REQUEST_ID": {
     "url": "/guilds/:param/requests/id/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_JOIN_REQUEST_ACK": {
     "url": "/guilds/:param/requests/:param/ack",
