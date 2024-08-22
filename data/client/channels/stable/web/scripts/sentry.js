@@ -8265,6 +8265,7 @@
           (rq.REPEAT_GIFT_PURCHASE_BUTTON = "Repeat Gift Purchase Button"),
           (rq.PROFILE_MODAL_TABS = "Profile Modal Tabs"),
           (rq.PROFILE_MODAL_RELATIONS = "Profile Modal Relations"),
+          (rq.PROFILE_MODAL_MUTUALS = "Profile Modal Mutuals"),
           (rq.PROFILE_PANEL = "Profile Panel"),
           (rq.SIMPLIFIED_USER_PROFILE = "Simplified User Profile"),
           (rq.BITE_SIZE_POPOUT = "Bite Size Popout"),
@@ -8742,6 +8743,7 @@
           (rZ.SECURE_FRAMES_VERIFIED_DEVICES =
             "Secure Frames Verified Devices"),
           (rZ.SECURE_FRAMES = "Secure Frames"),
+          (rZ.CONTENT_INVENTORY_EMBED = "Content Inventory Embed"),
           ((r0 = eA || (eA = {})).TOOLTIP = "Tooltip"),
           (r0.CARD = "Card"),
           (r0.CAROUSEL = "Carousel"),
@@ -10731,6 +10733,8 @@
             "APPLICATION_COMMAND_BADGE"),
           (nf[(nf.SOCIAL_LAYER_INTEGRATION = 134217728)] =
             "SOCIAL_LAYER_INTEGRATION"),
+          (nf[(nf.PROMOTED = 536870912)] = "PROMOTED"),
+          (nf[(nf.PARTNER = 1073741824)] = "PARTNER"),
           ((nS = ej || (ej = {})).MFA_WARNING = "MFA_WARNING"),
           (nS.INVITE = "INVITE"),
           (nS.QUICKSWITCHER = "QUICKSWITCHER"),
@@ -12101,7 +12105,8 @@
           (z.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
           (z.SHOP = "shop"),
           (z.AUTHORIZED_APPS = "authorized-apps"),
-          (z.SECURE_FRAMES_VERIFICATION = "secure-frames-verification");
+          (z.SECURE_FRAMES_VERIFICATION = "secure-frames-verification"),
+          (z.ICYMI = "icymi");
         let e_ = "CacheStoreLazy",
           eE = "CacheStoreChannelsLazy",
           es = "CacheStore";
@@ -12303,7 +12308,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ed6129f6feec98e1b31b062ac7434df81d75cbfc",
+            release: "discord_web-527d3acde5537f46f8839e518a5c4ddc9c2d693a",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12372,8 +12377,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "320705"), "320705"));
-          i.YA("builtAt", String("1724274844516"));
+            i.YA("buildNumber", ((e = "320887"), "320887"));
+          i.YA("builtAt", String("1724291880326"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48403,4 +48408,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.079ad4a3f723895c3f34.js.map
+//# sourceMappingURL=sentry.9919ca44b71ba0d41c6b.js.map

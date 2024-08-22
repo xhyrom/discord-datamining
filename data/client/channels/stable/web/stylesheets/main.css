@@ -6214,6 +6214,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   height: 24px;
   cursor: pointer;
 }
+.container_cebd1c.disabled_cebd1c {
+  cursor: not-allowed;
+}
 .input_cebd1c {
   position: absolute;
   opacity: 0;
@@ -6226,7 +6229,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   margin: 0;
 }
 .input_cebd1c[disabled] {
-  cursor: not-allowed;
   pointer-events: none;
 }
 .slider_cebd1c {
@@ -6294,6 +6296,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .note_ed1d57 {
   margin-top: 8px;
+}
+.disabledText_ed1d57 {
+  margin-top: 4px;
 }
 .dividerDefault_ed1d57 {
   margin-top: 20px;
@@ -20736,17 +20741,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   height: 12px;
   background-color: var(--premium-tier-2-purple);
 }
-.turnTransparent_e8f337.reducedMotion_e8f337 {
-  opacity: 1;
-}
-.turnTransparent_e8f337:not(.reducedMotion_e8f337) {
-  animation: turnTransparentAnimation_e8f337 1s 4s forwards;
-}
-@keyframes turnTransparentAnimation_e8f337 {
-  to {
-    opacity: 0;
-  }
-}
 .premiumUnlockAnimation_e8f337 {
   position: absolute;
   left: 50%;
@@ -20783,12 +20777,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   gap: 4px;
   padding: 4px 16px;
   border-radius: 14px;
-  background: linear-gradient(
-    90deg,
-    #b252a5 1.54%,
-    #522247 51.78%,
-    #1e1f22 106.77%
-  );
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
   box-shadow: 0 0 4px 0 rgba(194, 105, 195, 0.6) inset;
   opacity: 0;
   height: 24px;
@@ -21109,14 +21098,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .header_a3bc57 {
   position: sticky;
   top: 0;
-}
-.categorySectionOpacityAnimation_a3bc57 {
-  animation: opacityAnimation_a3bc57 1s 4s forwards;
-}
-@keyframes opacityAnimation_a3bc57 {
-  to {
-    background: transparent;
-  }
 }
 .inactiveNitroHeader_a3bc57 {
   background-color: transparent;
@@ -44596,4 +44577,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.4bd3f63c57e80cf6356e.css.map*/
+/*# sourceMappingURL=12633.9ec3715ece372627452e.css.map*/
