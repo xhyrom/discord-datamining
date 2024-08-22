@@ -3778,6 +3778,8 @@
   "FORM_LABEL_ANDROID_OPENSL_FORCE_DISABLED": "\"Force calls to not use OpenSL ES.\"",
   "FORM_LABEL_ANDROID_OPENSL_FORCE_DISABLED_DESC": "\"If you have an older device, this may fix issues you experience on voice calls.\"",
   "FORM_CHECKBOX_DEBUG_LOGGING": "\"Debug Logging\"",
+  "FORM_HELP_STREAM_INFO_OVERLAY": "\"Display stream information on video tiles on mouseover\"",
+  "FORM_LABEL_STREAM_INFO_OVERLAY": "\"Stream Info Overlay\"",
   "FORM_HELP_DEBUG_LOGGING": "\"Saves debug logs to voice module folder that you can upload to Discord Support for troubleshooting.\"",
   "SET_DEBUG_LOGGING": "\"Change Debug Logging\"",
   "SET_DEBUG_LOGGING_BODY": "\"\\nChanging debug logging will quit and re-launch Discord.\\nAre you sure you want to do this?\\n\"",
