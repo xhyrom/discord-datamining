@@ -197,8 +197,7 @@
 <p>
   However, our team is looking into a resolution for this issue so that earning
   Quest rewards is possible on Linux in the future. For now, we recommend
-  completing the requirement on a different operating system, like Windows or
-  MacOS. 
+  completing the requirement on a different operating system, like Windows. 
 </p>
 <p>
   Our support team does not have an exact ETA for when a solution will be
