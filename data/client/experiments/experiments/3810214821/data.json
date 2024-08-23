@@ -1,0 +1,55 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 3810214821,
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "INTERNAL_EMPLOYEE_ONLY"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "1199152226233483358"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}
