@@ -44570,11 +44570,11 @@ img[alt] {
   }
 }
 .visual-refresh {
-  --custom-app-sidebar-target-width: 340px;
   --custom-guild-list-width: 72px;
-  --custom-guild-sidebar-width: calc(
-    var(--custom-app-sidebar-target-width) - var(--custom-guild-list-width)
+  --custom-guild-sidebar-width: 268px;
+  --custom-app-sidebar-target-width: calc(
+    var(--custom-guild-sidebar-width) + var(--custom-guild-list-width)
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.8cba8d1eb49c0e60f6b4.css.map*/
+/*# sourceMappingURL=12633.879cf96ec7995ce5b391.css.map*/
