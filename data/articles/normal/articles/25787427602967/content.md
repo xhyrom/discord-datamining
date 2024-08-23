@@ -297,6 +297,15 @@
   ><strong><span style="color: #2e3338">Manage Connection</span></strong
   ><span style="color: #2e3338"> column. </span>
 </p>
+<div class="form-box">
+  <span style="color: #2e3338"
+    >If you have additional questions or encounter any issues with the Activity
+    or Connections, please reach out to our Support team
+    <a href="http://dis.gd/support" target="_blank" rel="noopener noreferrer"
+      >here</a
+    >.</span
+  >
+</div>
 <p>
   <span style="color: #2e3338"
     >And that’s it! Enjoy sharing and listening to sweet tunes with your

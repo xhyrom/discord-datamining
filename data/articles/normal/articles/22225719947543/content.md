@@ -23,14 +23,16 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
-      <li><a href="#h_01J4SF7Q7RR11ESD39ZTSEWAE6">Krunker Strike FRVR</a></li>
-      <li><a href="#h_01J4SE37FBGRQ4PFWJVR16YGNQ">GTA Online</a></li>
-      <li><a href="#h_01J3R3GFTCSGW9KKXCG37JDZ30">VALORANT</a></li>
+      <li><a href="#h_01J6006XQ2BKXT4ADDBYR3XKCV">World of Warcraft</a></li>
+      <li><a href="#h_01J60070GYC9JRMN1THG499F5C"> Skull and Bones</a></li>
     </ul>
   </li>
   <li>
-    <a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </a>
+    <a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests</a>
     <ul>
+      <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Krunker Strike FRVR</a></li>
+      <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">GTA Online</a></li>
+      <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">VALORANT </a></li>
       <li><a href="#h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">The Sims 4 </a></li>
     </ul>
   </li>
@@ -57,7 +59,39 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
-<h2 id="h_01J4SF7Q7RR11ESD39ZTSEWAE6">
+<h2 id="h_01J6006XQ2BKXT4ADDBYR3XKCV">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/25757260267543"
+    target="_blank"
+    rel="noopener noreferrer"
+    >World of Warcraft - World of Warcraft: The War Within Quest</a
+  >
+</h2>
+<p>
+  The<strong> World of Warcraft: The War Within Quest</strong> can be accepted
+  on Discord from <strong>August 23, 2024 </strong>until<strong>
+    September 8, 2024 (11:59PM UTC)</strong
+  >. Quest requirements must be completed during this period to receive the
+  reward.
+</p>
+<h2 id="h_01J60070GYC9JRMN1THG499F5C">
+  <a
+    href="https://support.discord.com/hc/articles/25685158256407"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Skull and Bones - Skull and Bones Quest</a
+  >
+</h2>
+<p>
+  The<strong> Skull and Bones</strong> <strong>Quest</strong> can be accepted on
+  Discord from <strong>August 23, 2024 </strong>until<strong>
+    August 30, 2024</strong
+  >
+  <strong>(11:59PM UTC)</strong>. Quest requirements must be completed during
+  this period to receive the reward.
+</p>
+<h1 id="h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </h1>
+<h2 id="01J600SFT31JAMN09G681BW71N">
   <a
     href="https://support.discord.com/hc/articles/25459791491735/"
     target="_blank"
@@ -73,7 +107,7 @@
   <strong>September 15, 2024</strong>. Quest requirements must be completed
   during this period to receive the reward.
 </p>
-<h2 id="h_01J4SE37FBGRQ4PFWJVR16YGNQ">
+<h2 id="01J600SFT4XHCWHK7242RAZFW2">
   <a
     href="https://support.discord.com/hc/articles/25139456801687"
     target="_blank"
@@ -88,7 +122,7 @@
   Decoration needs to be redeemed by <strong>September 15, 2024. </strong>Quest
   requirements must be completed during this period to receive the reward. 
 </p>
-<h2 id="h_01J3R3GFTCSGW9KKXCG37JDZ30">
+<h2 id="01J600SFT430BYDXR4VBW19JHZ">
   <a
     href="https://support.discord.com/hc/articles/24733159359895"
     target="_blank"
@@ -103,7 +137,6 @@
   needs to be redeemed by <strong>September 7, 2024</strong>. Quest requirements
   must be completed during this period to receive the reward.
 </p>
-<h1 id="h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </h1>
 <h2 id="h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">
   <a
     href="https://support.discord.com/hc/articles/24948010607383-The-Sims-4-Quest"
@@ -179,7 +212,7 @@
 <p>
   This will direct you to the <strong>Discover</strong> page where you can
   explore available Discord Quests, by selecting the <strong>Quest</strong> tab
-  within the <strong>Discover</strong> list. You can learn more about Discovery
+  within the <strong>Discover</strong> list. You can learn more about Discover
   <a
     href="https://support.discord.com/hc/articles/25323248535319"
     target="_blank"
@@ -259,7 +292,7 @@
 </p>
 <p>
   The easiest way to claim your reward is by heading over to your
-  <strong>Discover &gt; Quests</strong>. 
+  <strong>Quest Home</strong> (<strong>Discover &gt; Quests</strong>). 
 </p>
 <p>
   If you’re claiming an <strong>in-game item reward,</strong> you’ll be given a
@@ -304,7 +337,9 @@
 </p>
 <div class="tip-box">
   If you hide all the in-app promotions of a specific Quest, you can still view
-  and accept the Quest in <strong>Discover &gt; Quests</strong>.
+  and accept the Quest in <strong>Quest Home</strong> (<strong
+    >Discover &gt; Quests</strong
+  >).
 </div>
 <p class="wysiwyg-text-align-center">
   <img
@@ -349,9 +384,10 @@
 </p>
 <div class="info-box">
   Although these settings are disabled, you will still be able to participate in
-  Quests if you navigate to <strong>Discover &gt; Quests</strong>. You may see
-  Quests shared by your friends or reflected in their activity status on
-  Discord.
+  Quests if you navigate to <strong>Quest Home</strong> (<strong
+    >Discover &gt; Quests</strong
+  >). You may see Quests shared by your friends or reflected in their activity
+  status on Discord.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
@@ -441,9 +477,10 @@
 <p><strong>Q: I no longer see a Quest. Where did it go?</strong></p>
 <p>
   A: Quests are typically only available for a limited amount of time. If you no
-  longer see a Quest in <strong>Discover &gt; Quests</strong> or in-app
-  notifications about the quest, the period to complete and claim the reward for
-  the Quest is over.
+  longer see a Quest in <strong>Quest Home </strong>(<strong
+    >Discover &gt; Quests</strong
+  >) or in-app notifications about the quest, the period to complete and claim
+  the reward for the Quest is over.
 </p>
 <p id="docs-internal-guid-71d96506-7fff-8afb-2bbe-3b99192e8c49">
   <strong
