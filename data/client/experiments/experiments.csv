@@ -728,6 +728,11 @@ id,hash,label
 2024-07_user_profile_past_activity,4175610728,User Profile Past Activity Experiment
 2024-08_blocking_voice_states,3896794487,Blocking Voice States
 2024-08_content_inventory_entry_signed_hash,1324956790,Check Signature On Content Inventory Embed
+2024-08_ctp_dmgdm_list_render__everyone,1907391960,CTP DM/GDM List Render - A/A test - Everyone
+2024-08_ctp_dmgdm_list_render__filters,857226402,CTP DM/GDM List Render - A/A test - Filters
+2024-08_ctp_dmgdm_list_render__multiple_buckets,727071739,CTP DM/GDM List Render - A/A test - Multiple buckets
+2024-08_ctp_dmgdm_list_render__uneven_buckets,2569252158,CTP DM/GDM List Render - A/A test - Uneven buckets
+2024-08_ctp_dmgdm_list_render__vanilla_,3781250242,CTP DM/GDM List Render - A/A test - Vanilla
 2024-08_dismissible_pip,3654487046,Dismissible Desktop PiP
 2024-08_emoji_picker_limit_emojis_experiment,2390760015,"Desktop: Show three rows of emojis per server, with the option to expand"
 2024-08_hd_streaming_viewer,1274486444,HD Streaming Viewer Upsell
