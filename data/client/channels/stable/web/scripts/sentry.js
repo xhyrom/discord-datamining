@@ -12314,7 +12314,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-7e4b8c980e1ffa129d56a2cdf43fd2821ad57734",
+            release: "discord_web-9891c1767ee5b2401c9a7b9377b28392ff6bdb32",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12383,8 +12383,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "321279"), "321279"));
-          i.YA("builtAt", String("1724376967828"));
+            i.YA("buildNumber", ((e = "321379"), "321379"));
+          i.YA("builtAt", String("1724432691804"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -22174,7 +22174,7 @@
             0, 7, 19, 20, 23, 24, 25, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
             42, 45, 46,
           ]),
-          FORWARDABLE: new Set([0, 19]),
+          FORWARDABLE: new Set([0, 19, 20, 23]),
           REFERENCED_MESSAGE_AVAILABLE: new Set([19, 21]),
           AVAILABLE_IN_GUILD_FEED: new Set([0, 19]),
           DEADCHAT_PROMPTS: new Set([40, 42]),
@@ -48414,4 +48414,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.424d2b21eb7766faa7cf.js.map
+//# sourceMappingURL=sentry.3590e613a48abfe27c07.js.map
