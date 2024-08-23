@@ -10817,13 +10817,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Use old icon"
+        "Treatment 1: Icon: upper right arrow",
+        "Treatment 2: Icon: chat bubble"
       ],
       "hash": 1378883154,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
