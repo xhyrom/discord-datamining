@@ -2526,7 +2526,7 @@
   "CONNECTED_ACCOUNT_VERIFY_FAILURE_DETAILS": "\"We're sorry, there was a problem connecting. You can close this window and try again.\"",
   "CONNECTED_ACCOUNT_VERIFY_FAILURE_PSN_CHILD_ACCOUNT_DETAILS": "\"This PlayStation Network account requires communication features to be enabled by a parent account.\"",
   "CONNECTED_ACCOUNT_HELP_CENTER_ARTICLE": "\"If problem continues see $[link](link) for help.\"",
-  "CONNECTED_ACCOUNT_HELP_CENTER_ARTICLE_MOBILE": "\"We're sorry, there was a problem connecting. You can close this window and try again. If problem continues try connecting on desktop or see $[link](link) for help.\"",
+  "CONNECTED_ACCOUNT_HELP_CENTER_ARTICLE_MOBILE": "\"If problem continues try connecting on desktop or see $[link](link) for help.\"",
   "DISCONNECT_ACCOUNT": "\"Disconnect\"",
   "DISCONNECT_ACCOUNT_TITLE": "\"Disconnect !!{name}!!\"",
   "DISCONNECT_ACCOUNT_BODY": "\"Disconnecting your account might remove you from servers you joined via this account.\"",
