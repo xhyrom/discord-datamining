@@ -27,8 +27,8 @@
 <h1 id="h_01J5VAX887T9Z4AT86JZ5QT60Y">Promotion Terms</h1>
 <p>
   <strong>Quest Game:</strong> Skull and Bones<br />(<strong>Note</strong>: A
-  6-hour free trial is available through the official Skulls and Bones free
-  trial website.)<br /><strong>Quest Name:</strong> Skull and Bones Quest<br /><strong
+  6-hour free trial is available through the official Skull and Bones free trial
+  website.)<br /><strong>Quest Name:</strong> Skull and Bones Quest<br /><strong
     >Offer Details:</strong
   >
   Play 15 minutes of <strong>Skull</strong> <strong>and</strong>
@@ -135,13 +135,13 @@
       href="https://www.ubisoft.com/en-us/game/skull-and-bones/free-trial"
       target="_blank"
       rel="noopener noreferrer"
-      >official Skulls and Bones free trial website</a
+      >official Skull and Bones free trial website</a
     >. 
   </li>
   <li>Accept and download the trial. </li>
   <li>
     You can now play the game to complete the
-    <strong>Skulls and Bones Quest</strong>. 
+    <strong>Skull and Bones Quest</strong>. 
   </li>
 </ol>
 <p>
