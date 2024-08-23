@@ -12314,7 +12314,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9891c1767ee5b2401c9a7b9377b28392ff6bdb32",
+            release: "discord_web-0e14626c750d9d845e10787105607930a4c8a9c3",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12383,8 +12383,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "321379"), "321379"));
-          i.YA("builtAt", String("1724432691804"));
+            i.YA("buildNumber", ((e = "321384"), "321384"));
+          i.YA("builtAt", String("1724433513733"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -16997,6 +16997,8 @@
           ($[($.INVALID_GUILD_TEMPLATE = 4017)] = "INVALID_GUILD_TEMPLATE"),
           ($[($.INVALID_SOUND = 4018)] = "INVALID_SOUND"),
           ($[($.INVALID_PROVIDER = 4019)] = "INVALID_PROVIDER"),
+          ($[($.INVALID_CONNECTION_CALLBACK_STATE = 4020)] =
+            "INVALID_CONNECTION_CALLBACK_STATE"),
           ($[($.OAUTH2_ERROR = 5e3)] = "OAUTH2_ERROR"),
           ($[($.SELECT_CHANNEL_TIMED_OUT = 5001)] = "SELECT_CHANNEL_TIMED_OUT"),
           ($[($.GET_GUILD_TIMED_OUT = 5002)] = "GET_GUILD_TIMED_OUT"),
@@ -48414,4 +48416,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.3590e613a48abfe27c07.js.map
+//# sourceMappingURL=sentry.2f0bc1ed2b64195cb169.js.map
