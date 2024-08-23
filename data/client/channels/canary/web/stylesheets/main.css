@@ -20801,6 +20801,11 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   height: 12px;
   background-color: var(--premium-tier-2-purple);
 }
+.reverseTrialTopDividerLower_e8f337 {
+  height: 25px;
+  background-color: var(--premium-tier-2-purple);
+  opacity: 0.2;
+}
 .premiumUnlockAnimation_e8f337 {
   position: absolute;
   left: 50%;
@@ -24575,17 +24580,50 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   border-radius: 4px;
 }
 .premiumTooltipContainer_d91a75 {
+  overflow: visible;
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 8px;
   padding: 8px 4px;
   align-items: center;
+  overflow: visible;
 }
 .premiumUnlockAnimation_d91a75 {
-  height: 32px;
-  width: 32px;
-  flex-grow: 1;
-  flex-shrink: 0;
+  position: absolute;
+  z-index: 100;
+}
+.premiumUnlockAnimation_d91a75.reducedMotion_d91a75 {
+  height: 40px;
+  width: 40px;
+  left: 0;
+  top: 6px;
+}
+.premiumUnlockAnimation_d91a75:not(.reducedMotion_d91a75) {
+  animation: shrink_d91a75 2s forwards;
+}
+@keyframes shrink_d91a75 {
+  0% {
+    height: 76px;
+    width: 76px;
+    left: -26px;
+    top: -26px;
+  }
+  75% {
+    height: 76px;
+    width: 76px;
+    left: -26px;
+    top: -26px;
+  }
+  to {
+    height: 40px;
+    width: 40px;
+    left: 0;
+    top: 6px;
+  }
+}
+.premiumTooltipText_d91a75 {
+  padding-left: 32px;
 }
 .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
   fill: var(--__lottieIconColor, var(--interactive-normal));
@@ -44574,4 +44612,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.54dffa46e4ba56bc3554.css.map*/
+/*# sourceMappingURL=12633.a7814d44ae6d5c714eea.css.map*/
