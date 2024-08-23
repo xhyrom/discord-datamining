@@ -14819,6 +14819,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   align-items: center;
   padding: 12px;
   border-top: 1px solid var(--border-subtle);
+  min-height: 24px;
 }
 .cardFooterInfo_e0fe28 {
   display: flex;
@@ -44577,4 +44578,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.a379d4f1ac1184dfc789.css.map*/
+/*# sourceMappingURL=12633.68345e615a97e48b30eb.css.map*/
