@@ -24143,6 +24143,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .buttons_d0696b {
   display: flex;
   flex-direction: row;
+  align-self: flex-end;
   height: var(--custom-channel-textarea-text-area-height);
   position: sticky;
   top: 0;
@@ -44612,4 +44613,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.a7814d44ae6d5c714eea.css.map*/
+/*# sourceMappingURL=12633.5a55a29c1c2b175574ff.css.map*/
