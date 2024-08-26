@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_content_inventory_analytics_sampling",
+    "label": "Content Inventory Analytics Sampling",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Tracking disabled"
+    ],
+    "hash": 1274464129,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
