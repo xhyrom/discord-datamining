@@ -10607,8 +10607,6 @@
           (np.ACTIVITY_REACTOR_INTERACTED = "activity_reactor_interacted"),
           (np.GUILD_TOOLTIP_SHOWN = "guild_tooltip_shown"),
           (np.GUILD_TOOLTIP_CARD_CLICKED = "guild_tooltip_card_clicked"),
-          (np.RANKING_ITEMS_SEEN = "ranking_items_seen"),
-          (np.RANKING_ITEM_INTERACTED = "ranking_item_interacted"),
           (np.MEMBERLIST_CONTENT_FEED_TOGGLED =
             "memberlist_content_feed_expander_toggled"),
           (np.MEMBERLIST_CONTENT_FEED_HIDDEN =
@@ -10617,6 +10615,9 @@
             "content_inventory_reaction_popout_emoji_clicked"),
           (np.MEMBERLIST_POPOUT_SHARE_TO_CHANNEL_TOGGLED =
             "memberlist_popout_share_to_channel_toggled"),
+          (np.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED = "ranking_items_seen"),
+          (np.RANKING_ITEM_INTERACTED_MUST_BE_SAMPLED =
+            "ranking_item_interacted"),
           (np.GAME_PROFILE_ACTION = "game_profile_action"),
           (np.GAME_PROFILE_OPEN = "game_profile_open"),
           (np.GAME_PROFILE_CLOSE = "game_profile_close"),
@@ -12321,7 +12322,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b2e4cbe3e09e8626f12c7f5dad486d30c1693df2",
+            release: "discord_web-1b0d3f465a303ac6386e9257208fcb4f583d2640",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12390,8 +12391,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "321708"), "321708"));
-          i.YA("builtAt", String("1724682132602"));
+            i.YA("buildNumber", ((e = "321711"), "321711"));
+          i.YA("builtAt", String("1724684502083"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48423,4 +48424,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.92625951d5ccf8ca1a27.js.map
+//# sourceMappingURL=sentry.041b6dbb636d5c4c03d0.js.map
