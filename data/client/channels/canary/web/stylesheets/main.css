@@ -17171,6 +17171,10 @@ span.clanTag_a31c43 {
   top: 61px;
   left: 16px;
 }
+.custom-profile-theme .avatar_f94206.biteSize_f94206 {
+  top: 57px;
+  left: 12px;
+}
 .avatar_f94206.fullSize_f94206 {
   top: -68px;
   left: 24px;
@@ -17203,6 +17207,9 @@ span.clanTag_a31c43 {
 }
 .clickable_f94206:hover .overlay_f94206:after {
   opacity: 0.4;
+}
+.focusRing_f94206 {
+  border-radius: var(--radius-round);
 }
 .userProfileOuter_c69a7b {
   border-radius: var(--radius-sm);
@@ -17655,12 +17662,6 @@ span.clanTag_a31c43 {
   height: 4px;
   border-radius: 50%;
 }
-.tag_f2440e {
-  position: absolute;
-  margin-top: 8px;
-  right: 16px;
-  border-radius: 4px;
-}
 :where(.button_f9d37d).icon_f9d37d {
   width: var(--custom-button-button-sm-height);
   height: var(--custom-button-button-sm-height);
@@ -17781,15 +17782,22 @@ span.clanTag_a31c43 {
   right: 8px;
 }
 .header_b07019 {
-  min-height: calc(45px + var(--custom-user-banner-height-bite-size));
+  position: relative;
+  min-height: calc(35px + var(--custom-user-banner-height-bite-size));
   flex-shrink: 0;
 }
 .custom-profile-theme .header_b07019 {
-  min-height: calc(35px + var(--custom-user-banner-height-bite-size));
+  min-height: calc(31px + var(--custom-user-banner-height-bite-size));
+}
+.headerTag_b07019 {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  border-radius: var(--radius-xs);
 }
 .body_b07019 {
   z-index: 1;
-  padding: 0 16px 8px;
+  padding: 4px 16px 8px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -44613,4 +44621,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.5a55a29c1c2b175574ff.css.map*/
+/*# sourceMappingURL=12633.65459c293553848d0b4d.css.map*/
