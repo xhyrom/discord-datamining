@@ -8409,6 +8409,9 @@
             "Premium Custom Notification Sound Settings Upsell"),
           (r0.PREMIUM_PERKS_DEMO_UPSELL_MODAL =
             "Premium Perks Demo Upsell Modal"),
+          (r0.PREMIUM_FOR_LATER_UPSELL_MODAL =
+            "Premium For Later Upsell Modal"),
+          (r0.FOR_LATER_CREATE = "For Later Create"),
           (r0.SERVER_BANNER_TOOLTIP = "Server Banner Tooltip"),
           (r0.CHANNEL_NOTICE = "Channel Notice"),
           (r0.CHANNEL_ACTION_SHEET = "Channel Action Sheet"),
@@ -12324,7 +12327,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-5a5cc30e93db26a822f292ea2cd4b2d7288dff5a",
+            release: "discord_web-cf93c0e6c95a0c5116e61b7b2b59e1614ceda3df",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12393,8 +12396,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "321913"), "321913"));
-          i.YA("builtAt", String("1724705811255"));
+            i.YA("buildNumber", ((e = "321935"), "321935"));
+          i.YA("builtAt", String("1724707194457"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48426,4 +48429,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.1aa1c8570db00e847c39.js.map
+//# sourceMappingURL=sentry.68de0de94b81028d9858.js.map
