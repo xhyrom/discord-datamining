@@ -17921,6 +17921,8 @@
   "CASH_APP_PAY_AWARENESS_NON_SUBSCRIBER_CTA": "\"Add Payment Method\"",
   "CASH_APP_PAY_AWARENESS_NON_SUBSCRIBER_UPSELL_CONTENT": "\"Level up your Discord experience with Nitro's **custom profiles**, **HD streaming**, and more!\"",
   "CASH_APP_PAY_AWARENESS_NON_SUBSCRIBER_UPSELL_CTA": "\"Get Nitro\"",
+  "CASH_APP_PAY_AWARENESS_UPDATE_NON_NITRO_PAYMENT_METHOD_TOAST": "\"Your payment method has been saved\"",
+  "CASH_APP_PAY_AWARENESS_UPDATE_NITRO_PAYMENT_METHOD_TOAST": "\"Your payment method has been updated\"",
   "GLOBAL_DISCOVERY_TITLE": "\"Discover\"",
   "GLOBAL_DISCOVERY_SERVERS_TITLE": "\"Servers\"",
   "GLOBAL_DISCOVERY_APPS_TITLE": "\"Apps\"",
