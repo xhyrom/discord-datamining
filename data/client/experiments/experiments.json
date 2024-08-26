@@ -10136,13 +10136,15 @@
       "description": [
         "Not Eligible",
         "Treatment 0: Users will not see the nagbar",
-        "Treatment 1: Users will see the nagbar"
+        "Treatment 1: Users will see the nagbar",
+        "Treatment 2: Bypass eligibility check (testing only)"
       ],
       "hash": 1009437557,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
