@@ -4661,6 +4661,7 @@
   "SHOW_USER_PROFILE": "\"Show User Profile\"",
   "HIDE_USER_PROFILE": "\"Hide User Profile\"",
   "SHOW_USER_PROFILE_UNAVAILABLE": "\"Show User Profile (Unavailable)\"",
+  "USER_PROFILE_MOD_ACTIONS": "\"Moderator Actions\"",
   "CLIENT_THEMES_EDITOR_HEADER": "\"Preview Theme\"",
   "CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION": "\"Change the color of your theme.\\nOnly with Nitro.\"",
   "CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_SETTINGS": "\"Make Discord yours. Only with Nitro.\"",
