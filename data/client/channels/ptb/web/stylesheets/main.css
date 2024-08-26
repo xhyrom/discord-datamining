@@ -12734,7 +12734,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .barBase_cf58b5 {
   position: absolute;
   left: 16px;
-  right: 16px;
+  right: calc(
+    16px + var(--custom-channel-textarea-text-area-height) +
+      var(--custom-channel-textarea-app-launcher-button-gap)
+  );
   display: flex;
   align-items: center;
   z-index: 2;
@@ -29614,13 +29617,7 @@ img.thumbnail_c64476 {
   vertical-align: middle;
 }
 .roleName_f9575e {
-  max-width: 200px;
   margin-right: 2px;
-  overflow: hidden;
-}
-.roleNameOverflow_f9575e {
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .roleRemoveIcon_f9575e {
@@ -29693,7 +29690,7 @@ img.thumbnail_c64476 {
   background: rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-6));
   border-color: var(--profile-body-border-color);
 }
-.showMoreButton_c83b44 {
+.expandButton_c83b44 {
   padding: 3px 7px;
   cursor: pointer;
   align-items: center;
@@ -44240,6 +44237,7 @@ code {
   --custom-channel-attachment-upload-mini-attachment-size: 78px;
   --custom-channel-textarea-text-area-height: 44px;
   --custom-channel-textarea-text-area-max-height: 50vh;
+  --custom-channel-textarea-app-launcher-button-gap: 8px;
 }
 :root {
   --custom-channel-notice-icon-size: 16px;
@@ -44621,4 +44619,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.65459c293553848d0b4d.css.map*/
+/*# sourceMappingURL=12633.3ae60e3c5ce3163ab91b.css.map*/
