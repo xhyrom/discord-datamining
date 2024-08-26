@@ -7579,6 +7579,7 @@
             CONNECTION_LINK_AUTHORIZE: (e) =>
               "/connections/".concat(e, "/link-authorize"),
             CONNECTIONS_SUCCESS: (e) => "/connections/".concat(e, "/success"),
+            CONNECTIONS_ERROR: (e) => "/connections/".concat(e, "/error"),
             CONNECTIONS: (e) => "/connections/".concat(e),
             CONNECTIONS_AUTHORIZE_CONTINUE: (e) =>
               "/connections/".concat(e, "/authorize-continue"),
@@ -10606,8 +10607,6 @@
           (np.ACTIVITY_REACTOR_INTERACTED = "activity_reactor_interacted"),
           (np.GUILD_TOOLTIP_SHOWN = "guild_tooltip_shown"),
           (np.GUILD_TOOLTIP_CARD_CLICKED = "guild_tooltip_card_clicked"),
-          (np.RANKING_ITEMS_SEEN = "ranking_items_seen"),
-          (np.RANKING_ITEM_INTERACTED = "ranking_item_interacted"),
           (np.MEMBERLIST_CONTENT_FEED_TOGGLED =
             "memberlist_content_feed_expander_toggled"),
           (np.MEMBERLIST_CONTENT_FEED_HIDDEN =
@@ -10616,6 +10615,9 @@
             "content_inventory_reaction_popout_emoji_clicked"),
           (np.MEMBERLIST_POPOUT_SHARE_TO_CHANNEL_TOGGLED =
             "memberlist_popout_share_to_channel_toggled"),
+          (np.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED = "ranking_items_seen"),
+          (np.RANKING_ITEM_INTERACTED_MUST_BE_SAMPLED =
+            "ranking_item_interacted"),
           (np.GAME_PROFILE_ACTION = "game_profile_action"),
           (np.GAME_PROFILE_OPEN = "game_profile_open"),
           (np.GAME_PROFILE_CLOSE = "game_profile_close"),
@@ -12320,7 +12322,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f7d9cdb936f359353e222691ca568ba00c061c16",
+            release: "discord_web-8118c8ffafe49e7002776697809ccd50c20490eb",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12389,8 +12391,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "321531"), "321531"));
-          i.YA("builtAt", String("1724447365916"));
+            i.YA("buildNumber", ((e = "321760"), "321760"));
+          i.YA("builtAt", String("1724692317803"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48422,4 +48424,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.1efb6a057fcd89cbdaf0.js.map
+//# sourceMappingURL=sentry.695183428ffe4180018f.js.map
