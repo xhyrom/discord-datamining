@@ -6606,6 +6606,8 @@
   "PREMIUM_UPSELL_MOBILE_CLIENT_THEMES_DESCRIPTION_V2": "\"Personalize your Discord with a selection of 20+ unique themes. Only with Nitro.\"",
   "PREMIUM_UPSELL_MOBILE_FEATURE_IN_APP_ICONS_TITLE": "\"Unlock this app icon with Nitro\"",
   "PREMIUM_UPSELL_MOBILE_FEATURE_IN_APP_ICONS_DESCRIPTION": "\"Choose from 20+ styles to find an app icon that fits your vibe.\"",
+  "PREMIUM_UPSELL_MOBILE_FEATURE_FOR_LATER_TITLE": "\"Get access to Saved Messages & Reminders with Nitro\"",
+  "PREMIUM_UPSELL_MOBILE_FEATURE_FOR_LATER_DESCRIPTION": "\"Upgrade to Nitro to bookmark and organize important messages.\"",
   "PREMIUM_GRANDFATHERED_YEARLY": "\"As a thank you for supporting Discord, you have access to Nitro for two years. Your access ends **{date, date, medium}**.\"",
   "PREMIUM_GRANDFATHERED_MONTHLY": "\"Thanks for being an early supporter. Your grandfathered Nitro subscription changes to Nitro Classic on **{date, date, medium}**. Upgrade now for a free month and keep your current perks\"",
   "PREMIUM_GUILD_SUBSCRIPTION_TITLE": "\"Server Boost\"",
