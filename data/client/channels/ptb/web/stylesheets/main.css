@@ -15949,6 +15949,11 @@ div.cardContainer_c22357 {
   border-top-right-radius: 16px;
   overflow: hidden;
 }
+.wumpusImage_c87d73 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 .tier0_c87d73.withTier0Rim_c87d73:before {
   content: "";
   position: absolute;
@@ -20469,6 +20474,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   border-top-right-radius: var(--custom-emoji-picker-border-radius);
   align-items: center;
   box-shadow: var(--shadow-low);
+  margin: 0 -1px;
   padding: 12px;
   z-index: 100;
   position: relative;
@@ -20476,6 +20482,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .emojiPickerHasTabWrapper_c6ee36 .header_c6ee36 {
   padding: 0 16px 16px;
+  margin: 0;
   background-color: transparent;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -44619,4 +44626,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.3ae60e3c5ce3163ab91b.css.map*/
+/*# sourceMappingURL=12633.99df56208c6381c3c425.css.map*/
