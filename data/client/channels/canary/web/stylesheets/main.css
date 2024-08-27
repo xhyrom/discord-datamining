@@ -14492,7 +14492,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     border-color ease-in-out.2s;
 }
 .theme-dark .selectable_c18810 {
-  border-color: var(--border-subtle);
+  border-color: var(--border-strong);
 }
 .theme-dark .selectable_c18810:hover,
 .theme-dark .selectable_c18810:active {
@@ -44626,4 +44626,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.99df56208c6381c3c425.css.map*/
+/*# sourceMappingURL=12633.c01ed56530deed508959.css.map*/
