@@ -13331,18 +13331,21 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Show limited emojis experiment"
+        "Treatment 1: Show limited emojis experiment with solid icons",
+        "Treatment 2: Show limited emojis experiment with transparent icons"
       ],
       "hash": 2390760015,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "enabled",
+        "useTransparentIcons"
       ]
     }
   },
