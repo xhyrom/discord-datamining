@@ -450,7 +450,7 @@
 <h2 id="h_01J604ZZAFZHGA96VEKARNTET3">Promotion Details</h2>
 <p><strong>Q: How long does this promotion run for?</strong></p>
 <p>
-  <strong>A:</strong> WEBTOON can claim Discord Nitro promo between
+  <strong>A:</strong> WEBTOON members can claim Discord Nitro promo between
   <strong>August 26, 2024 (4PM PST)</strong> to
   <strong>September 22, 2024 (11:59PM PST).</strong>
 </p>
