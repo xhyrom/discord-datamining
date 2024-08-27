@@ -20736,11 +20736,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .upsellContainer_ad7baa {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: auto;
-  right: 16px;
-  bottom: 8px;
-  left: 8px;
   padding: 0 12px;
   height: 52px;
   border-radius: 12px;
@@ -20748,7 +20743,20 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
     linear-gradient(var(--background-secondary), var(--background-secondary))
       padding-box,
     var(--custom-premium-colors-premium-gradient-tier-2-tri-color) border-box;
+}
+.upsellContainerShadow_ad7baa {
   filter: drop-shadow(0 0 10px rgba(184, 69, 193, 0.50196));
+}
+.upsellContainerFloating_ad7baa {
+  position: absolute;
+  top: auto;
+  right: var(--spacing-16);
+  bottom: var(--spacing-8);
+  left: var(--spacing-8);
+}
+.upsellContainerInline_ad7baa {
+  flex: 1;
+  margin: var(--spacing-8) var(--spacing-16);
 }
 .upsellText_ad7baa {
   margin: auto 16px auto 4px;
@@ -44626,4 +44634,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.c01ed56530deed508959.css.map*/
+/*# sourceMappingURL=12633.c0874c3f56ba56657205.css.map*/
