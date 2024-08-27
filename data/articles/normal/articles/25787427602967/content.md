@@ -78,7 +78,7 @@
         src="https://support.discord.com/hc/article_attachments/25790379447447"
         width="24"
         height="24" /></span
-    ><span style="color: #2e3338">] button located left of the chat bar</span>
+    ><span style="color: #2e3338">] button located right of the chat bar</span>
     <span style="color: #2e3338">option</span
     ><strong><span style="color: #2e3338">. </span></strong
     ><span style="color: #2e3338">Then, select the </span
