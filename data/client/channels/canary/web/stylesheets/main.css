@@ -15949,6 +15949,11 @@ div.cardContainer_c22357 {
   border-top-right-radius: 16px;
   overflow: hidden;
 }
+.wumpusImage_c87d73 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 .tier0_c87d73.withTier0Rim_c87d73:before {
   content: "";
   position: absolute;
@@ -44619,4 +44624,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.3ae60e3c5ce3163ab91b.css.map*/
+/*# sourceMappingURL=12633.2f54f247cc2afbd59037.css.map*/
