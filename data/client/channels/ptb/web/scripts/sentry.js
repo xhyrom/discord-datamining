@@ -12328,7 +12328,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c190d805022cf5664d3756871d32f9a36598f955",
+            release: "discord_web-58a0583c3a4621a109f521790cb0d6bac1bfd469",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12397,8 +12397,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "322093"), "322093"));
-          i.YA("builtAt", String("1724722291911"));
+            i.YA("buildNumber", ((e = "322105"), "322105"));
+          i.YA("builtAt", String("1724726194358"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -17013,6 +17013,7 @@
           ($[($.INVALID_PROVIDER = 4019)] = "INVALID_PROVIDER"),
           ($[($.INVALID_CONNECTION_CALLBACK_STATE = 4020)] =
             "INVALID_CONNECTION_CALLBACK_STATE"),
+          ($[($.BAD_REQUEST_FOR_PROVIDER = 4021)] = "BAD_REQUEST_FOR_PROVIDER"),
           ($[($.OAUTH2_ERROR = 5e3)] = "OAUTH2_ERROR"),
           ($[($.SELECT_CHANNEL_TIMED_OUT = 5001)] = "SELECT_CHANNEL_TIMED_OUT"),
           ($[($.GET_GUILD_TIMED_OUT = 5002)] = "GET_GUILD_TIMED_OUT"),
@@ -48430,4 +48431,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.4caa654f51e869f40670.js.map
+//# sourceMappingURL=sentry.c9746bcc77be39684c8b.js.map
