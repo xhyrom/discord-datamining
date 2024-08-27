@@ -8269,6 +8269,7 @@
           (rz.CLAN_ADOPT_IDENTITY_MODAL = "clan adopt identity modal"),
           (rz.CLAN_SETUP_MODAL = "clan setup modal"),
           (rz.CHECKOUT_RECOVERY_NAGBAR = "Checkout Recovery Nagbar"),
+          (rz.CASH_APP_PAY_AWARENESS_NAGBAR = "Cash App Pay Awareness Nagbar"),
           (rz.CASH_APP_PAY_AWARENESS_NON_NITRO_FLOW_UPSELL =
             "Cash App Pay Awareness Non Nitro Flow Upsell"),
           (rz.E2EE_USER_VERIFY_MODAL = "E2EE User Verify Modal"),
@@ -12327,7 +12328,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b64fdf07fa23604f93f50b0c0cab440800264cc2",
+            release: "discord_web-ef53d56ec4d485df2501c306f0eeac58bc281128",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12396,8 +12397,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "321939"), "321939"));
-          i.YA("builtAt", String("1724707317928"));
+            i.YA("buildNumber", ((e = "322113"), "322113"));
+          i.YA("builtAt", String("1724729427418"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -17012,6 +17013,7 @@
           ($[($.INVALID_PROVIDER = 4019)] = "INVALID_PROVIDER"),
           ($[($.INVALID_CONNECTION_CALLBACK_STATE = 4020)] =
             "INVALID_CONNECTION_CALLBACK_STATE"),
+          ($[($.BAD_REQUEST_FOR_PROVIDER = 4021)] = "BAD_REQUEST_FOR_PROVIDER"),
           ($[($.OAUTH2_ERROR = 5e3)] = "OAUTH2_ERROR"),
           ($[($.SELECT_CHANNEL_TIMED_OUT = 5001)] = "SELECT_CHANNEL_TIMED_OUT"),
           ($[($.GET_GUILD_TIMED_OUT = 5002)] = "GET_GUILD_TIMED_OUT"),
@@ -48429,4 +48431,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.d8f23575a435962a35f5.js.map
+//# sourceMappingURL=sentry.0a37261fcd659dfd002e.js.map
