@@ -14271,6 +14271,7 @@
   "CONSOLE_STREAM_UNAVAILABLE_TOOLTIP": "\"Streams are not viewable while connected via console\"",
   "PROACTIVE_UPSELL_CUSTOM_PROFILE": "\"Get custom profiles like this __with Nitro__\"",
   "CONNECTIONS_ADD_CONNECTIONS": "\"Add Connection\"",
+  "CONNECTIONS_OPEN_LINK": "\"Open Connection link\"",
   "CONNECTIONS_VIEW_MORE": "\"View more\"",
   "CONNECTIONS_EBAY_TOP_RATED_SELLER": "\"Top Rated Seller\"",
   "CONNECTIONS_EBAY_POSITIVE_FEEDBACK_PERCENTAGE": "\"Percentage of Positive Ratings\"",
