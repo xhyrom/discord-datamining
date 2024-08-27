@@ -23,6 +23,7 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
+      <li><a href="#h_01J6A8FGA5ANQQTQ73FSKGRK1F">Predecessor </a></li>
       <li><a href="#h_01J6006XQ2BKXT4ADDBYR3XKCV">World of Warcraft</a></li>
       <li><a href="#h_01J60070GYC9JRMN1THG499F5C"> Skull and Bones</a></li>
     </ul>
@@ -59,6 +60,21 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J6A8FGA5ANQQTQ73FSKGRK1F">
+  <a
+    href="https://support.discord.com/hc/articles/25871940367895"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Predecessor - Predecessor Skin Quest</a
+  >
+</h2>
+<p>
+  The <strong>Predecessor</strong> <strong>Skin</strong>
+  <strong>Quest</strong> can be accepted on Discord from
+  <strong>August</strong> <strong>27, 2024</strong> until
+  <strong>September 3, 2024 (11:59PM UTC)</strong>. Quest requirements must be
+  completed during this period to receive the reward.
+</p>
 <h2 id="h_01J6006XQ2BKXT4ADDBYR3XKCV">
   <a
     href="https://support.discord.com/hc/en-us/articles/25757260267543"
