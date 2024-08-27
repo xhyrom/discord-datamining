@@ -5021,6 +5021,8 @@
   "FRIEND_REQUESTS_TAB_SPAM_SUBHEADING": "\"Potential Spam\"",
   "FRIEND_REQUESTS_TAB_SPAM_CTA": "\"Spam requests\"",
   "FRIEND_REQUEST_SPAM_COUNT": "\"{spam} potential spam\"",
+  "FRIEND_REQUESTS_VIEW_SPAM_REQUESTS": "\"View spam requests\"",
+  "FRIEND_REQUESTS_SPAM_REQUESTS": "\"Spam requests\"",
   "FRIENDS_SECTION_ADD_FRIEND": "\"Add Friend\"",
   "FRIENDS_SECTION_ALL": "\"All\"",
   "FRIENDS_SECTION_ONLINE": "\"Online\"",
