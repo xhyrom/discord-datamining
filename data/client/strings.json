@@ -8807,7 +8807,7 @@
   "USER_ACTIVITY_USER_JOIN_HINT": "\"This may take a moment while their game launches.\"",
   "USER_ACTIVITY_STAGE_STATE_SIZE": "\"{numSpeakers, number} speakers, {numListeners, number} listeners\"",
   "USER_ACTIVITY_DELETE_HISTORY_ERROR": "\"Clear failed\"",
-  "USER_RECENT_ACTIVITY_LEARN_MORE": "\"You'll see your activity from the last 30 days here. $[Learn more](learnMoreHook).\"",
+  "USER_RECENT_ACTIVITY_LEARN_MORE": "\"You'll see your activity from the last 30 days here. $[Learn more](learnMoreHook)\"",
   "USER_RECENT_ACTIVITY_ONLY_YOU_CAN_SEE": "\"Only you can see your recent activity on your profile.\"",
   "USER_RECENT_ACTIVITY_SHARE_MULTIPLE_PLACES": "\"Share your current and past activity such as games played or custom status in multiple places within the Discord app. [Learn more about this setting here.]({helpdeskArticle})\"",
   "USER_RECENT_ACTIVITY_SHARE_SERVER": "\"Share your current and past activity such as games played or custom status in this server. [Learn more about this setting here.]({helpdeskArticle})\"",
