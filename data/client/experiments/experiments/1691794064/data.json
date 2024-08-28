@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-07_rapidash_m3_admins_browse",
+    "label": "Rapidash M3 Admins Browse",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Admins can browse"
+    ],
+    "hash": 1691794064,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
