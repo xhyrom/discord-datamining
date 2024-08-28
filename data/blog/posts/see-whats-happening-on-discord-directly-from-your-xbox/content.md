@@ -21,10 +21,8 @@
         >.&nbsp;
       </p>
       <p>
-        These new features are beginning to roll out over the coming weeks,
-        starting today for those in the Xbox Insiders program with global
-        availability soon to follow. Read on to see how Discord soon will feel
-        more and more like a natural part of your Xbox console!&nbsp;
+        Read on to see how Discord soon will feel more and more like a natural
+        part of your Xbox console!&nbsp;
       </p>
     </div>
   </div>
@@ -141,10 +139,20 @@
         experience for both you and your friends!
       </p>
       <p>
-        These features are currently rolling out to users, staring with Xbox
-        Insiders! Find out what the Xbox Insider program’s all about by
-        following their account on X
-        <a href="https://x.com/xboxinsider">here</a>.
+        These new features are now available on Xbox Series X|S and Xbox One, so
+        make sure your Xbox and Discord accounts are all linked up! Head into
+        <strong>User Settings &gt; Connections</strong> to see all your
+        connected accounts.
+      </p>
+      <p>
+        If you don’t see any active Discord friends or channels on your
+        “Happening Now” tab on Xbox, you may need to reconnect your accounts. If
+        you’re unsure how to do that,
+        <a
+          href="https://support.discord.com/hc/en-us/articles/360003953831-Discord-and-Xbox-Connection-FAQ#h_01G8DY30NM50BZB5TVQ1XN4QXX"
+          >follow the steps here</a
+        >
+        for some guidance (no judgments on following walkthroughs here!).&nbsp;
       </p>
     </div>
   </div>
