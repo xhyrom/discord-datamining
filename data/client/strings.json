@@ -17867,7 +17867,7 @@
   "GAME_PROFILE_LINKS": "\"Links\"",
   "GAME_PROFILE_GUILDS_TAB": "\"Guilds\"",
   "GAME_PROFILE_FRIENDS_WHO_PLAY_TAB": "\"Friends Who Play\"",
-  "GAME_PROFILE_EMPTY_FRIENDS_WHO_PLAY": "\"Nobody you know has played yet. Be the first!\"",
+  "GAME_PROFILE_EMPTY_FRIENDS_WHO_PLAY": "\"Nobody you know has played recently. Invite them to play!\"",
   "GAME_PROFILE_SCREENSHOTS": "\"Screenshots\"",
   "GAME_PROFILE_OFFICIAL_GUILD": "\"Official Server\"",
   "GAME_PROFILE_GAME_LOGO_ALT": "\"Game logo for {game}\"",
