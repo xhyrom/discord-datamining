@@ -7458,6 +7458,7 @@
                 .concat(r),
             PREMIUM_MARKETING: "/premium-marketing",
             QUESTS_CURRENT_QUESTS: "/quests/@me",
+            QUESTS_CLAIMED_QUESTS: "/quests/@me/claimed",
             QUESTS_ENROLL: (e) => "/quests/".concat(e, "/enroll"),
             QUEST_ON_CONSOLE_START: (e) =>
               "/quests/".concat(e, "/console/start"),
@@ -9791,6 +9792,9 @@
           (nf.SEARCH_V2_FILTERS_APPLIED = "search_v2_filters_applied"),
           (nf.SEARCH_V2_TAB_SELECTED = "search_v2_tab_selected"),
           (nf.SEARCH_V2_JUMP_TO_MESSAGE = "search_v2_jump_to_message"),
+          (nf.GLOBAL_DISCOVERY_VIEWED = "global_discovery_viewed"),
+          (nf.GLOBAL_DISCOVERY_SERVERS_VIEWED =
+            "global_discovery_servers_viewed"),
           (nf.UPSELL_VIEWED = "upsell_viewed"),
           (nf.UPSELL_CLICKED = "upsell_clicked"),
           (nf.PREMIUM_UPSELL_VIEWED = "premium_upsell_viewed"),
@@ -9808,6 +9812,8 @@
           (nf.GIF_UNFAVORITED = "gif_unfavorited"),
           (nf.GUILD_DISCOVERY_VIEWED = "guild_discovery_viewed"),
           (nf.GUILD_DISCOVERY_SEARCH_FAILED = "guild_discovery_search_failed"),
+          (nf.GUILD_DISCOVERY_GET_FEATURED_GUILDS_FAILED =
+            "guild_discovery_get_featured_guilds_failed"),
           (nf.GUILD_DISCOVERY_GUILD_SELECTED =
             "guild_discovery_guild_selected"),
           (nf.GUILD_DISCOVERY_GUILD_JOIN_CLICKED =
@@ -9851,6 +9857,7 @@
             "oauth2_authorize_success_go_to_guild_clicked"),
           (nf.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED =
             "oauth2_authorize_success_close_clicked"),
+          (nf.OAUTH2_AUTHORIZE_STEP_VIEWED = "oauth2_authorize_step_viewed"),
           (nf.GUILD_OUTAGE_VIEWED = "guild_outage_viewed"),
           (nf.CONTACT_SYNC_FLOW_KEY = "relationship_sync_flow"),
           (nf.LOGIN_SUCCESSFUL = "login_successful"),
@@ -12342,7 +12349,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2dbfdd9a76b77401271ed9c3f0927540e36d0744",
+            release: "discord_web-017b9c7c4c2648b1051a539976cc00b5a9595e1a",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12411,8 +12418,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "322607"), "322607"));
-          i.YA("builtAt", String("1724866908225"));
+            i.YA("buildNumber", ((e = "322784"), "322784"));
+          i.YA("builtAt", String("1724883141344"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48445,4 +48452,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.2789e48e8aa3c5955f57.js.map
+//# sourceMappingURL=sentry.5a1aaa136f5d927bcead.js.map
