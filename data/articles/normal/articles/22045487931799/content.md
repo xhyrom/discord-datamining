@@ -1,4 +1,4 @@
-<h3 id="docs-internal-guid-65f73da0-7fff-048e-8b8d-35b5aea54717">
+<div class="tip-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >To learn more about activity status, check out the </span
   ><a
@@ -7,7 +7,7 @@
     rel="noopener noreferrer"
     >Activity Status (Recent Activity)</a
   ><span style="color: #434343" data-darkreader-inline-color=""> article.</span>
-</h3>
+</div>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers: </strong></span
@@ -68,14 +68,11 @@
 <h1 id="h_01HRZ59A41YS32ZJVG8XK9W998">
   What is the Members List Recent Activity Feature?
 </h1>
-<h3 id="h_01HRZ59A41MYQCS32MT16QRG1V">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >This feature is currently in beta. It is limited to a small percentage of
-    users within English-prominent regions and available only on the desktop
-    app. This being the case, the experiment is subject to change or may be
-    removed.</span
-  >
-</h3>
+<div class="exp-box">
+  This feature is currently in beta. It is limited to a small percentage of
+  users within English-prominent regions and available only on the desktop app.
+  The experiment may be modified or discontinued.
+</div>
 <p>
   Want to easily catch up with your friends and create more shared experiences
   together?
@@ -167,14 +164,14 @@
 </p>
 <h2 id="h_01HRZ59A41W46PH064PDY7PWEZ">Activity Privacy</h2>
 <p>
-  If you want to prevent your activity from showing up in this feature, you can
-  do so in two ways: 1) globally or 2) for a specific game.
+  You can prevent your activity from appearing in this feature in three ways:
+  (1) globally, (2) for a specific server, or (3) for a specific game.
 </p>
 <p>
   <span class="wysiwyg-font-size-large"><strong>Globally</strong></span>
 </p>
 <p>
-  If you want to control whether <strong><em>any</em></strong> activity is
+  If you want to control whether <strong><em>any</em></strong> detected game is
   shared, you can enable or disable your global settings in the
   <strong>Activity Privacy</strong> settings. 
 </p>
@@ -203,6 +200,49 @@
     height="386"
   />
 </p>
+<div class="info-box">
+  <strong>Note</strong>: Connected Accounts such as Xbox, PlayStation, Spotify,
+  or Crunchyroll have their own settings for activity sharing. To disable
+  sharing these activities, you can adjust the settings in
+  <strong>Connections</strong> <strong>&gt;</strong> toggle
+  <strong>Display</strong> <strong>as</strong> <strong>your</strong>
+  <strong>status</strong>.
+  <p class="wysiwyg-text-align-center">
+    <span class="wysiwyg-font-size-large"
+      ><strong
+        ><img
+          src="https://support.discord.com/hc/article_attachments/25974404869015"
+          width="624"
+          height="399" /></strong
+    ></span>
+  </p>
+</div>
+<p class="wysiwyg-text-align-left">
+  <span class="wysiwyg-font-size-large"
+    ><strong>Specific Server<br /></strong
+  ></span>
+</p>
+<p class="wysiwyg-text-align-left">
+  If you only want to prevent your detected game activity from appearing in a
+  specific server, you can adjust your server-specific <strong>Privacy</strong>
+  <strong>Settings</strong>.  Select the dropdown menu [<img
+    src="https://support.discord.com/hc/article_attachments/25974376237591"
+    width="24"
+    height="24"
+  />] next to the server's name, select Privacy Settings, and then toggle
+  <strong>Activity</strong> <strong>Status</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/25974376241175"
+    width="618"
+    height="404"
+  />
+</p>
+<div class="info-box">
+  <strong>Note</strong>: Anyone you’ve friended in this server can still see
+  your activity.
+</div>
 <p>
   <span class="wysiwyg-font-size-large"><strong>Specific Games</strong></span>
 </p>
@@ -237,12 +277,12 @@
   />
 </p>
 <h1 id="h_01J1R2F8J2HK83DGBXQXJY4WK8">Game Profile</h1>
-<h3 id="h_01J1R2F8J2Z7S3H6HWZD6TCGAM">
+<div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
-    >This feature does not display on the browser or mobile app, and is only
+    >This feature does not display on the browser or mobile app and is only
     available on the desktop app (Windows, Mac, and Linux).</span
   >
-</h3>
+</div>
 <p>
   If someone is playing a game and a game profile exists for this game, you can
   tap on the game icon within the app and be provided with additional
@@ -281,12 +321,12 @@
   recommendations for similar games, and usernames of friends who have played
   the same game.
 </p>
-<h3 id="h_01J1R2F8J2AWHHFZWNX75AJKBY">
+<div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >If a game does not have a game profile, it’s because not enough users have
     played the game to display any data.
   </span>
-</h3>
+</div>
 <h1 id="h_01HRZ59A41N8S7TGV154X8HDGB">Have Ideas or Feedback? </h1>
 <p>
   Let us know via this
