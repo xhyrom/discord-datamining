@@ -13530,7 +13530,7 @@
       "label": "Reverse Trials",
       "description": [
         "Not Eligible",
-        "Control Bucket",
+        "Treatment 0: Users receives no trial.",
         "Treatment 1: Users recieve 2 week trial.",
         "Treatment 2: User recieves 1 week trial and 1 week followup trial",
         "Treatment 98: Users recieve 2 week trial.",
@@ -13549,7 +13549,8 @@
       "aa_mode": false,
       "config_keys": [
         "enabled",
-        "isFollowup"
+        "isFollowup",
+        "inExperiment"
       ]
     }
   },
