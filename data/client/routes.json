@@ -4908,7 +4908,11 @@
   },
   "QUESTS_CLAIMED_QUESTS": {
     "url": "/quests/@me/claimed",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "QUESTS_ENROLL": {
     "url": "/quests/:param/enroll",
