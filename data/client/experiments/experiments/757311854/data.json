@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-03_quests_members_list_entrypoint",
-    "label": "Quests Members List Entrypoint",
+    "id": "2024-08_user_app_subscription_redesign",
+    "label": "User App Subscription Redesign",
     "description": [
       "Not Eligible",
-      "Treatment 0: Control",
-      "Treatment 1: Quests Members List Entrypoint enabled"
+      "Control Bucket",
+      "Treatment 1: Enable"
     ],
-    "hash": 950109088,
+    "hash": 757311854,
     "buckets": [
       -1,
       0,
