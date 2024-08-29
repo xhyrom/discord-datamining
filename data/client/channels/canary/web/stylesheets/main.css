@@ -22613,6 +22613,68 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   overflow: hidden;
   text-align: center;
 }
+.soundButtonRefresh_f40049 {
+  box-sizing: border-box;
+  position: relative;
+  background: var(--card-primary-bg);
+  border-radius: var(--radius-md);
+  height: 72px;
+  width: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--border-faint);
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  transition:
+    height.1s ease,
+    margin-top.1s ease,
+    outline.3s ease;
+}
+.soundButtonRefresh_f40049:hover,
+.soundButtonRefresh_f40049:active:not(:focus-within) {
+  border-color: var(--border-strong);
+}
+.soundButtonRefresh_f40049:hover .soundInfoRefresh_f40049,
+.soundButtonRefresh_f40049:active:not(:focus-within) .soundInfoRefresh_f40049 {
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.12);
+}
+.soundButtonRefresh_f40049:hover .soundNameRefresh_f40049,
+.soundButtonRefresh_f40049:active:not(:focus-within) .soundNameRefresh_f40049 {
+  color: var(--interactive-hover);
+}
+.soundButtonRefresh_f40049:hover .buttonOverlayActionsRefresh_f40049,
+.soundButtonRefresh_f40049:active:not(:focus-within)
+  .buttonOverlayActionsRefresh_f40049 {
+  padding-top: 8px;
+}
+.soundButtonRefresh_f40049:active:not(:focus-within) {
+  background: var(--card-primary-pressed-bg);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  height: 68px;
+  margin-top: 4px;
+  outline-width: 1px;
+}
+.soundButtonRefresh_f40049:active:not(:focus-within) .soundInfoRefresh_f40049 {
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 8%);
+}
+.soundButtonRefresh_f40049:active:not(:focus-within)
+  .primaryIconRefresh_f40049 {
+  padding-top: 15px;
+}
+.soundButtonRefresh_f40049:active:not(:focus-within)
+  .primaryIconRefresh_f40049.hasEmoji_f40049 {
+  padding-top: 4px;
+}
+.soundButtonRefresh_f40049:active:not(:focus-within)
+  .secondaryButtonRefresh_f40049 {
+  opacity: 0;
+  pointer-events: none;
+}
+.theme-light .soundButtonRefresh_f40049 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 8%);
+}
 .addButton_f40049 {
   margin: 3px;
   display: flex;
@@ -22628,18 +22690,27 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .soundButton_f40049.focused_f40049.hoverActiveBackground_f40049,
 .soundButton_f40049:focus-within.hoverActiveBackground_f40049,
-.soundButton_f40049:hover.hoverActiveBackground_f40049 {
+.soundButton_f40049:hover.hoverActiveBackground_f40049,
+.soundButtonRefresh_f40049.focused_f40049.hoverActiveBackground_f40049,
+.soundButtonRefresh_f40049:focus-within.hoverActiveBackground_f40049,
+.soundButtonRefresh_f40049:hover.hoverActiveBackground_f40049 {
   background: var(--background-tertiary);
 }
 .soundButton_f40049.focused_f40049 .buttonOverlay_f40049,
 .soundButton_f40049:focus-within .buttonOverlay_f40049,
-.soundButton_f40049:hover .buttonOverlay_f40049 {
+.soundButton_f40049:hover .buttonOverlay_f40049,
+.soundButtonRefresh_f40049.focused_f40049 .buttonOverlay_f40049,
+.soundButtonRefresh_f40049:focus-within .buttonOverlay_f40049,
+.soundButtonRefresh_f40049:hover .buttonOverlay_f40049 {
   opacity: 1;
   visibility: visible;
 }
 .soundButton_f40049.focused_f40049 .addButtonOverlay_f40049,
 .soundButton_f40049:focus-within .addButtonOverlay_f40049,
-.soundButton_f40049:hover .addButtonOverlay_f40049 {
+.soundButton_f40049:hover .addButtonOverlay_f40049,
+.soundButtonRefresh_f40049.focused_f40049 .addButtonOverlay_f40049,
+.soundButtonRefresh_f40049:focus-within .addButtonOverlay_f40049,
+.soundButtonRefresh_f40049:hover .addButtonOverlay_f40049 {
   opacity: 1;
   visibility: visible;
 }
@@ -22653,7 +22724,23 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   gap: 8px;
   overflow: hidden;
 }
+.soundInfoRefresh_f40049 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 0 8px;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 8%);
+  border-radius: 8px;
+  height: 60px;
+  transition:
+    gap.1s ease,
+    padding-bottom.1s ease;
+}
 .soundName_f40049 {
+  color: var(--header-primary);
   flex-grow: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -22664,16 +22751,82 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .soundName_f40049.hasEmoji_f40049 {
   text-align: left;
 }
+.soundNameRefresh_f40049 {
+  color: var(--interactive-normal);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+.soundNameRefresh_f40049.hasEmoji_f40049 {
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
 .emoji_f40049 {
   flex-shrink: 0;
   width: 20px;
   height: 20px;
+}
+.emojiCircle_f40049 {
+  background: var(--bg-mod-subtle);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    width.1s ease,
+    height.1s ease;
+}
+.emojiCircle_f40049 .emoji_f40049 {
+  width: 18px;
+  height: 18px;
+  transition:
+    width.3s ease,
+    height.3s ease;
 }
 .soundButtonInteractive_f40049 {
   cursor: pointer;
 }
 .soundButtonInteractive_f40049.playing_f40049 {
   border-color: var(--status-positive-background);
+}
+.soundButtonInteractiveRefresh_f40049 {
+  cursor: pointer;
+}
+.soundButtonInteractiveRefresh_f40049.previewing_f40049 {
+  outline: 2px solid var(--button-outline-brand-border);
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049 {
+  outline: 2px solid var(--button-outline-positive-border);
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049
+  .soundInfoRefresh_f40049.hasEmoji_f40049,
+.soundButtonInteractiveRefresh_f40049.previewing_f40049
+  .soundInfoRefresh_f40049.hasEmoji_f40049 {
+  padding-bottom: 4px;
+  gap: 0;
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049 .emojiCircle_f40049,
+.soundButtonInteractiveRefresh_f40049.previewing_f40049 .emojiCircle_f40049 {
+  width: 40px;
+  height: 40px;
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049
+  .emojiCircle_f40049
+  .emoji_f40049,
+.soundButtonInteractiveRefresh_f40049.previewing_f40049
+  .emojiCircle_f40049
+  .emoji_f40049 {
+  width: 24px;
+  height: 24px;
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049 .soundNameRefresh_f40049,
+.soundButtonInteractiveRefresh_f40049.previewing_f40049
+  .soundNameRefresh_f40049 {
+  color: var(--interactive-active);
 }
 .buttonDisabledSecondaryActionsEnabled_f40049 {
   cursor: default;
@@ -22683,6 +22836,45 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .premiumDisabled_f40049 {
   opacity: 0.5;
+}
+.premiumDisabledRefresh_f40049 {
+  border-color: var(--border-subtle);
+  --custom-gradient-border: linear-gradient(
+      90deg,
+      var(--premium-tier-2-purple-for-gradients) 0%,
+      var(--premium-tier-2-purple-for-gradients-2) 50.24%,
+      var(--premium-tier-2-pink-for-gradients) 100%
+    )
+    border-box;
+}
+.premiumDisabledRefresh_f40049:hover {
+  background:
+    linear-gradient(var(--card-primary-bg), var(--card-primary-bg)) padding-box,
+    var(--custom-gradient-border);
+}
+.premiumDisabledRefresh_f40049:hover .emojiCircle_f40049 {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--premium-tier-2-purple-for-gradients-hsl) / 0.2) 0%,
+    hsl(var(--premium-tier-2-purple-for-gradients-2-hsl) / 0.2) 50.24%,
+    hsl(var(--premium-tier-2-pink-for-gradients-hsl) / 0.2) 100%
+  );
+}
+.premiumDisabledRefresh_f40049:hover .emoji_f40049 {
+  opacity: 0.1;
+}
+.premiumDisabledRefresh_f40049:hover
+  .soundNameRefresh_f40049:not(.hasEmoji_f40049) {
+  opacity: 0.5;
+}
+.premiumDisabledRefresh_f40049:active:not(:focus-within) {
+  background:
+    linear-gradient(
+        var(--card-primary-pressed-bg),
+        var(--card-primary-pressed-bg)
+      )
+      padding-box,
+    var(--custom-gradient-border);
 }
 .absoluteFill_f40049 {
   position: absolute;
@@ -22707,12 +22899,29 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   align-items: center;
   justify-content: space-between;
 }
+.buttonOverlayActionsRefresh_f40049 {
+  padding: 6px 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: padding.2s ease;
+}
 .secondaryButton_f40049 {
   color: var(--interactive-normal);
   display: flex;
 }
 .secondaryButton_f40049:focus,
 .secondaryButton_f40049:hover {
+  color: var(--interactive-hover);
+  cursor: pointer;
+}
+.secondaryButtonRefresh_f40049 {
+  color: var(--interactive-muted);
+  display: flex;
+  transition: opacity.2s ease;
+}
+.secondaryButtonRefresh_f40049:focus,
+.secondaryButtonRefresh_f40049:hover {
   color: var(--interactive-hover);
   cursor: pointer;
 }
@@ -22728,6 +22937,17 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   height: 20px;
   color: var(--interactive-active);
   flex: 1;
+  pointer-events: none;
+}
+.primaryIconRefresh_f40049 {
+  width: 20px;
+  height: 20px;
+  color: var(--interactive-active);
+  padding-top: 17px;
+  transition: padding-top.1s ease;
+}
+.primaryIconRefresh_f40049.hasEmoji_f40049 {
+  padding-top: 6px;
 }
 .lockIcon_f40049 {
   pointer-events: none;
@@ -22742,6 +22962,12 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   height: 40px;
   width: 150px;
 }
+.unavailableTooltipRefresh_f40049 {
+  position: absolute;
+  top: 0;
+  height: 72px;
+  width: 102px;
+}
 .soundButtonWrapper_c06ee5 {
   list-style: none;
 }
@@ -22752,11 +22978,44 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .soundAddButton_c06ee5.focused_c06ee5 {
   background-color: var(--background-tertiary);
 }
+.soundAddButtonRefresh_c06ee5 {
+  cursor: pointer;
+  border: 1px dashed var(--border-subtle);
+  background-color: var(--background-secondary);
+  box-shadow: none;
+}
+.soundAddButtonRefresh_c06ee5:hover .soundAddInfoRefresh_c06ee5,
+.soundAddButtonRefresh_c06ee5.focused_c06ee5 .soundAddInfoRefresh_c06ee5,
+.soundAddButtonRefresh_c06ee5:active:not(:focus-within)
+  .soundAddInfoRefresh_c06ee5 {
+  box-shadow: none;
+}
+.soundAddButtonRefresh_c06ee5:hover .soundAddIconRefresh_c06ee5,
+.soundAddButtonRefresh_c06ee5:hover .soundAddTextRefresh_c06ee5,
+.soundAddButtonRefresh_c06ee5.focused_c06ee5 .soundAddIconRefresh_c06ee5,
+.soundAddButtonRefresh_c06ee5.focused_c06ee5 .soundAddTextRefresh_c06ee5,
+.soundAddButtonRefresh_c06ee5:active:not(:focus-within)
+  .soundAddIconRefresh_c06ee5,
+.soundAddButtonRefresh_c06ee5:active:not(:focus-within)
+  .soundAddTextRefresh_c06ee5 {
+  color: var(--interactive-hover);
+}
+.soundAddInfoRefresh_c06ee5 {
+  box-shadow: none;
+}
 .soundAddIcon_c06ee5 {
   width: 16px;
   height: 16px;
   color: var(--header-primary);
-  margin-right: 4px;
+}
+.soundAddIconRefresh_c06ee5 {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  color: var(--interactive-normal);
+}
+.soundAddTextRefresh_c06ee5 {
+  color: var(--interactive-normal);
 }
 .disabled_c06ee5 {
   pointer-events: none;
@@ -22905,6 +23164,11 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   border-radius: var(--radius-sm);
   overflow: hidden;
   box-shadow: var(--elevation-high);
+}
+.picker_cd703d.refresh_cd703d {
+  background-color: var(--background-secondary);
+  height: 450px;
+  width: 500px;
 }
 .picker_cd703d.autoWidth_cd703d {
   width: auto;
@@ -44637,4 +44901,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.5bd6ea1c15f9336f313a.css.map*/
+/*# sourceMappingURL=12633.3b9c7ea8fc62ad49361d.css.map*/
