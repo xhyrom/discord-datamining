@@ -15180,6 +15180,15 @@ div.cardContainer_c22357 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+.nitroUpsellContainer_f03ca8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: auto;
+}
+.nitroWheel_f03ca8 {
+  margin-right: 6px;
+}
 @keyframes uploadIconAnimateInLeft_f82cc7 {
   0% {
     transform: translatez(0) rotate(0);
@@ -44901,4 +44910,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.3b9c7ea8fc62ad49361d.css.map*/
+/*# sourceMappingURL=12633.2bbb922def595c646bc1.css.map*/
