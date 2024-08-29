@@ -13005,8 +13005,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   display: flex;
   flex-flow: column nowrap;
   flex: auto;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .imageContainer_cf58b5 {
   display: flex;
@@ -44640,4 +44638,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.09ce48a585d9b9c6875e.css.map*/
+/*# sourceMappingURL=12633.7c70f83b0c763429b7c8.css.map*/
