@@ -8733,29 +8733,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-05_quest_home",
-      "label": "Quest Home",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Quest Home in Discovery"
-      ],
-      "hash": 1633289124,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-05_secure_frames_ui_rollout",
       "label": "Secure Frames Rollout",
       "description": [
@@ -10740,7 +10717,7 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Admins can browse"
+        "Treatment 1: Enable"
       ],
       "hash": 1691794064,
       "buckets": [
@@ -12494,6 +12471,29 @@
         "Treatment 1: Enable Upsell for Keyword Language Filters"
       ],
       "hash": 3902307858,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-08_load_test_guild_recs",
+      "label": "Guild Recs Load Testing",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable"
+      ],
+      "hash": 1642760143,
       "buckets": [
         -1,
         0,
