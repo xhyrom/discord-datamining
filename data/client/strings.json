@@ -18121,6 +18121,7 @@
   "E2EE_USER_VERIFIED_MINUTES_AGO": "\"Verified {count} {count, plural, =1 {minute} other {minutes}} ago\"",
   "E2EE_USER_VERIFIED_SECONDS_AGO": "\"Verified {count} {count, plural, =1 {second} other {seconds}} ago\"",
   "E2EE_DEVICES_COUNT": "\"{count} {count, plural, =1 {device} other {devices}}\"",
+  "E2EE_USER_EXISTING_PERSISTENT_VERIFICATIONS": "\"{count} {count, plural, =1 {device} other {devices}} previously verified\"",
   "E2EE_CLEAR_VERIFICATION_FOR_ALL": "\"Clear all verifications\"",
   "E2EE_CLEAR_VERIFICATION_SUBTITLE": "\"You will have to verify these devices again\"",
   "E2EE_CLEAR_VERIFICATION_CONFIRM_TITLE": "\"Clear verification\"",
