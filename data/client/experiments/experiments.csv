@@ -746,11 +746,13 @@ id,hash,label
 2024-08_new_gateway_dispatcher,191973690,New Gateway Dispatcher
 2024-08_open_platform_link_sharing,1276301734,Open Platform Link Sharing
 2024-08_perks_demo_hd_streaming_opt_in_v2,3975306549,HD Streaming
+2024-08_premium_user_profile_upsell_desktop,3350499368,User Profile Upsell
 2024-08_private_channel_hiding,687045128,Private Channel Hiding
 2024-08_reaction_frecency_algorithms,92152290,Reaction Frecency Algorithms
 2024-08_reverse_trial,3433628153,Reverse Trials
 2024-08_secure_frames_encryption_guilds_v2,2125168757,Allowing testing secure frames for voice/video (Guilds)
 2024-08_self_recent_activity,3657218045,Self Recent Activity Experiment
+2024-08_soundboard_refresh,670930559,Soundboard UI Refresh
 2024-08_toggle_soundshare_menu_experiment,3853396589,Toggle soundshare from stream settings menu
 2024-08_user_profile_blockee_hide_mutuals,1502922057,User Profile Blockee Hide Mutuals
 2024-08_user_profile_blocker_skeleton,2213424224,User Profile Blocker Skeleton
