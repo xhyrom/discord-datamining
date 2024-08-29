@@ -27353,8 +27353,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .title_f017d0 {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-transform: uppercase;
 }
 .lead_f017d0 {
@@ -27433,8 +27433,8 @@ h3.improved_f017d0:after {
   display: flex;
   align-items: center;
   border-radius: 5px;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
   padding: 16px;
 }
 .premiumBanner_f017d0 .premiumIcon_f017d0 {
@@ -44638,4 +44638,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.7c70f83b0c763429b7c8.css.map*/
+/*# sourceMappingURL=12633.cbc34827fe7fd0e3312a.css.map*/
