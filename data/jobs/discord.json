@@ -797,6 +797,66 @@
       ]
     },
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7613663002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null
+        }
+      ],
+      "education": "education_optional",
+      "internal_job_id": 5993258002,
+      "location": {
+        "name": "Remote "
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 7613663002,
+      "updated_at": "2024-08-29T13:27:08-04:00",
+      "requisition_id": "R-100651",
+      "title": "Senior Financial Analyst, Business Partnership Finance",
+      "content": "&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;We are looking for a passionate and experienced Senior Financial Analyst to join our growing Finance team. The Finance organization at Discord is responsible for planning, forecasting, and strategic analysis. Senior Product and Engineering leadership rely on the Finance organization to develop actionable insights, steer headcount and engineering investment decisions, and build scalable financial reporting solutions.&lt;/p&gt;\n&lt;p&gt;Given this team&#39;s unique position in the company, you will help establish coordination and communication between various teams, such as Product Management, Engineering, Finance and accounting, and our Talent teams. With these teams, you will drive our planning and forecasting process, ensuring that both are aligned with our longer-term strategic and financial aspirations. In addition, you will gain invaluable experience that offers autonomy, deep interactions with business partners, and the opportunity to impact a rapidly growing business.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Establish financial planning processes related to headcount planning, expense forecasting, and resource allocation&lt;/li&gt;\n&lt;li&gt;Collaborate with business partners on designing and developing metrics, reports, analyses, dashboards, etc., to drive key business decisions related to EPAD planning&lt;/li&gt;\n&lt;li&gt;Identify opportunities to enhance, automate, and scale our forecasting and reporting tools and processes&lt;/li&gt;\n&lt;li&gt;Conduct cost/benefit analyses and communicate key drivers/inputs to support business decisions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What You Should Have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of related experience (e.g., FP&amp;amp;A, Accounting backgrounds, management consulting)&lt;/li&gt;\n&lt;li&gt;Strong analytical skills and ability to use data to drive decision-making; demonstrated proficiency in communicating analysis in a clear and easily understood manner&lt;/li&gt;\n&lt;li&gt;Willingness to build relationships and collaborate across all levels and teams&lt;/li&gt;\n&lt;li&gt;Ability to deal with ambiguity and competing objectives in a fast-paced environment&lt;/li&gt;\n&lt;li&gt;High-level understanding of financial planning and accounting concepts&lt;/li&gt;\n&lt;li&gt;Proficiency in Excel &amp;amp; financial modeling; experience working with data sets, SQL, and Looker&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $152,000 to $167,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p class=&quot;margin-top-40 margin-bottom-8 textH4-3Bngsz headingDefault-2s3GxE sizeLarge-2FUtr2 lineTiny-1v9oiX weightSemiBold-19z6Hb&quot;&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord&#39;s collection and use of personal information relating to the application and recruitment process by clicking &lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;here.&amp;nbsp;&lt;/a&gt;&lt;br&gt;&lt;br&gt;Discord is an equal opportunity employer that believes diversity inspires creativity and innovation. We are committed to fostering an inclusive environment where employees can do their best work free of harassment or discrimination, regardless of race, ethnicity, religion, gender identity or expression, sexual orientation, age, disability, military status, or any other protected characteristics or identities. We encourage all candidates to apply for roles where they may make the most impact.&lt;/p&gt;\n&lt;h4 class=&quot;margin-top-40 margin-bottom-8 textH4-3Bngsz headingDefault-2s3GxE sizeLarge-2FUtr2 lineTiny-1v9oiX weightSemiBold-19z6Hb&quot;&gt;About Us&lt;/h4&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Discord is a voice, video and text app that helps friends come together to hang out, have fun, and play games. With over 150 million monthly users, Discord has grown to become one of the most popular communications services in the world. Discord offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. &lt;/span&gt;&lt;strong&gt;So if this strikes a chord with you, come build belonging with us!&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4000665002,
+          "name": "Finance",
+          "child_ids": [],
+          "parent_id": 4094262002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7568876002",
       "data_compliance": [
         {
@@ -2103,63 +2163,6 @@
           "child_ids": [],
           "parent_id": null
         },
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7319789002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 5873140002,
-      "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [
-            "1"
-          ],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": "Security Engineering",
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7319789002,
-      "updated_at": "2024-08-21T15:33:43-04:00",
-      "requisition_id": "7004-P4-2310-PS",
-      "title": "Staff Product Security Engineer",
-      "content": "&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;This position is US based only.&lt;br&gt;&lt;br&gt;Discord empowers people to create spaces where they can find a sense of belonging in their lives. Millions of people trust Discord to keep their communications secure, private, and out of the hands of evildoers, so security and privacy are necessary to Discord&#39;s success.&amp;nbsp;&lt;/p&gt;\n&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;We are looking for a Security Engineer reporting to the Product Security Engineering Manager to join our team in building a secure and protected platform for Discord&#39;s users. If you are an Engineer with a wealth of experience making the secure way the easy way, a deep sense of curiosity, and an endless desire to improve Discord, read on!&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design and develop technical solutions to find and address security issues (including libraries and frameworks).&lt;/li&gt;\n&lt;li&gt;Build tools with an emphasis on self-service, automation, and performance, to help identify and mitigate application security flaws.&lt;/li&gt;\n&lt;li&gt;Perform reviews ranging from architectural design to threat modeling and source code level assessments, providing recommendations to make our products more secure.&lt;/li&gt;\n&lt;li&gt;Review development frameworks for security functionality, consistency, and uplift opportunities.&lt;/li&gt;\n&lt;li&gt;Deep-dive into the architectural and technical aspects of new projects, providing expert security guidance and/or writing technical security controls&lt;/li&gt;\n&lt;li&gt;Discover weaknesses in Discord by using both manual and automated methods (code reviews, threat models, static scans, penetration tests).&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;You Will Thrive In This Role If&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You have 5+ years experience securing production applications.&lt;/li&gt;\n&lt;li&gt;You have 5+ years of experience with application security tooling and processes, including code review, static code analysis, penetration testing, and risk management.&lt;/li&gt;\n&lt;li&gt;You have 5+ years of experience programming in at least one general purpose programming language (e.g. Python, Rust, Go).&lt;/li&gt;\n&lt;li&gt;You have experience leading multiple security projects with a cross-functional group.&lt;/li&gt;\n&lt;li&gt;Expertise with common application vulnerabilities on the platforms Discord ships on (that&#39;s all of them).&lt;/li&gt;\n&lt;li&gt;You are well-experienced implementing and using application security tools.&lt;/li&gt;\n&lt;li&gt;You have experience operating in cloud-based environments (we use Google Cloud, but experience with other platforms is ok too).&lt;/li&gt;\n&lt;li&gt;You are an expert at reasoning about the security of complex systems, even if they contain components you aren&#39;t familiar with.&lt;/li&gt;\n&lt;li&gt;Experienced with Threat Modeling and analyzing complex designs.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience programming in at least one systems programming language (e.g. C, C++).&lt;/li&gt;\n&lt;li&gt;Experience with Linux system administration (we use Ubuntu).&lt;/li&gt;\n&lt;li&gt;Experience developing, operating, and debugging distributed systems.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $223,000 to $245,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p class=&quot;margin-top-40 margin-bottom-8 textH4-3Bngsz headingDefault-2s3GxE sizeLarge-2FUtr2 lineTiny-1v9oiX weightSemiBold-19z6Hb&quot;&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord&#39;s collection and use of personal information relating to the application and recruitment process by clicking &lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;here.&amp;nbsp;&lt;/a&gt;&lt;br&gt;&lt;br&gt;Discord is an equal opportunity employer that believes diversity inspires creativity and innovation. We are committed to fostering an inclusive environment where employees can do their best work free of harassment or discrimination, regardless of race, ethnicity, religion, gender identity or expression, sexual orientation, age, disability, military status, or any other protected characteristics or identities. We encourage all candidates to apply for roles where they may make the most impact.&lt;/p&gt;\n&lt;h4 class=&quot;margin-top-40 margin-bottom-8 textH4-3Bngsz headingDefault-2s3GxE sizeLarge-2FUtr2 lineTiny-1v9oiX weightSemiBold-19z6Hb&quot;&gt;About Us&lt;/h4&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Discord is a voice, video and text app that helps friends come together to hang out, have fun, and play games. With over 150 million monthly users, Discord has grown to become one of the most popular communications services in the world. Discord offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. &lt;/span&gt;&lt;strong&gt;So if this strikes a chord with you, come build belonging with us!&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074059002,
-          "name": "Core Tech Engineering",
-          "child_ids": [
-            4074060002
-          ],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
