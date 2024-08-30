@@ -28,7 +28,9 @@
       <li><a href="#h_01HTJA8QV5M1VHRW89M024JHDT">Connection Settings</a></li>
       <li><a href="#h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</a></li>
       <li><a href="#h_01HTJA8QV57FRX82WP3T41Z3G8">Per-server Control</a></li>
-      <li><a href="#h_01J5NNZS153N6H9V1S5A6WMMPK">Past Activity History</a></li>
+      <li>
+        <a href="#h_01J5NNZS153N6H9V1S5A6WMMPK">Recent Activity History</a>
+      </li>
     </ul>
   </li>
 </ul>
@@ -105,9 +107,16 @@
 <p>Activity can be seen in multiple places within the Discord app.</p>
 <h2 id="h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</h2>
 <p>
-  When referring to a User Profile, you will be able to view a user's activity
-  status and their activity history for the past 30 days.
+  When viewing your User Profile, you will be able to see your Recent Activity
+  history within the last 30 days.
 </p>
+<div class="exp-box">
+  <strong>Note: </strong>Recent Activity history is an experimental feature
+  available to a limited number of users. While all users can view, manage, and
+  delete their own Recent Activity history, only those added to this experiment
+  can view others' Recent Activity history. You can learn more about
+  <a href="#h_01J5NNZS153N6H9V1S5A6WMMPK">Recent Activity history below</a>.
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/25750646264599"
@@ -139,17 +148,25 @@
 </p>
 <h3 id="h_01HTJA8QV5EBWAT0D8Z93TGDQX">
   <span style="color: #434343"
-    >Note: Activity Cards may appear in the server’s Members List while the
-    Recent Activity experiment is in beta. You can learn more about this
-    experiment </span
-  ><a href="https://support.discord.com/hc/en-us/articles/22045487931799"
+    >Note: Activity Cards may appear in the server’s Members List during the
+    Recent Activity experiment. You can learn more about this
+    <a
+      href="https://support.discord.com/hc/en-us/articles/22045487931799"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Members List Recent Activity experiment
+    </a></span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/22045487931799"
+    target="_blank"
+    rel="noopener noreferrer"
     ><span style="color: #434343">here</span></a
   ><span style="color: #434343">.</span>
 </h3>
 <h2 id="h_01HTJA8QV5ZFGKBM8QNZA4S4JZ">As a Status Message </h2>
 <p>
-  While in a server, the activity status will show as a status message within
-  the Members List. 
+  While in a server, the activity status may appear as a status in the Members
+  list depending on your settings.
 </p>
 <p id="h_01HTJA8QV500D229RX3F47SAG8" class="wysiwyg-text-align-center">
   <strong
@@ -163,9 +180,9 @@
   How do I control who sees my activity?
 </h1>
 <p>
-  By default in most regions, people who can see your activity include anyone
-  you’ve Friended and anyone you share a server with. You can control this in a
-  few ways.
+  By default in most regions, your current and recent activity can be viewed by
+  your friends or other users who are in the same server as you. You can control
+  this in a few ways.
 </p>
 <h2 id="h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</h2>
 <p>
@@ -222,13 +239,11 @@
     height="425"
   />
 </p>
-<h3 id="h_01HTJA8QV57SYJP3CZEHMQMTMJ">
-  <span style="color: #434343"
-    >In certain countries and situations, this setting might be disabled by
-    default for you. You can always change your settings by following the
-    instructions above. </span
-  >
-</h3>
+<div class="info-box">
+  In certain countries and situations, this setting might be disabled by default
+  for you. You can always change your settings by following the instructions
+  above.
+</div>
 <h2 id="h_01HTJA8QV5M1VHRW89M024JHDT">Connections Settings</h2>
 <p>
   For any connected accounts that support sharing recent activity or rich
@@ -259,13 +274,11 @@
   />
 </p>
 <h2 id="h_01HTJA8QV57FRX82WP3T41Z3G8">Per-server Control</h2>
-<p>
-  <span style="color: #434343"
-    >Note: This Activity Status is enabled for servers you join by default, but
-    you can change the default behavior when joining servers over 200 members
-    within your global settings. in the Global Settings menu.</span
-  >
-</p>
+<div class="tip-box">
+  <strong>Note:</strong> Activity Status is automatically enabled for servers
+  you join. However, you can adjust this default setting for servers with over
+  200 members in your Global Settings menu.
+</div>
 <p>
   If you want to control which servers can see your recent activity, you can
   disable or enable settings per server.
@@ -286,28 +299,21 @@
     height="425"
   />
 </p>
-<h3 id="h_01HTJA8QV5VTJPKMZZQ39MSWPZ">
-  <span style="color: #434343"
-    >Note: <br />- Members of a disabled server will still be able to see your
-    activity if they’re also friends with you or if they share another server
-    with you where your activity is allowed.<br />- Although the Activity Status
-    may be turned off for a specific server, you’ll still see the status on your
-    end unless you have it fully disabled.<br
-  /></span>
-</h3>
-<h3 id="h_01HTJA8QV5XCF523X3WPR5Q59Z">
-  <span style="color: #434343"
-    >For the experiment that displays Activity Cards in a server’s Members List,
-    these privacy settings will not affect
-    <span
-      id="docs-internal-guid-b089d301-7fff-118f-64d6-33c94744c572"
-      style="color: #434343"
-      >activity prior to when the toggle was disabled</span
-    >.<br
-  /></span>
-</h3>
+<div class="info-box">
+  <strong>Note:</strong> <br />- Members of a disabled server will still be able
+  to see your activity if they’re also friends with you or if they share another
+  server with you where your activity is allowed.<br />- Although the Activity
+  Status may be turned off for a specific server, you’ll still see the status on
+  your end unless you have it fully disabled.
+</div>
+<div class="exp-box">
+  For the experiment that displays Activity Cards in a server’s Members List,
+  the server-specific privacy settings will not affect the experiment at this
+  time. The activity shown in that experiment features are controlled by global,
+  connection, and game-level controls within Discord.
+</div>
 <h2 id="h_01J5NNZS153N6H9V1S5A6WMMPK">
-  <span style="color: #434343">Past Activity History</span>
+  <span style="color: #434343">Recent Activity History</span>
 </h2>
 <p>
   While viewing your User Profile, you can also clear your
@@ -351,9 +357,10 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #434343"
     ><img
-      src="https://support.discord.com/hc/article_attachments/25750632675607"
-      width="624"
-      height="497"
+      src="https://support.discord.com/hc/article_attachments/26032842903447"
+      alt="Recent-Activity-History-Clear-Game-History-option.png"
+      width="620"
+      height="495"
   /></span>
 </p>
 <p>
