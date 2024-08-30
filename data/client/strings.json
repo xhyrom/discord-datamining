@@ -18811,5 +18811,9 @@
   "ICYMI_ACTIVITY_PLAYED": "\"Recently played:\"",
   "ICYMI_ACTIVITY_PLAYING": "\"Currently playing:\"",
   "ICYMI_ACTIVITY_UPDATED_STATUS": "\"Updated their status:\"",
-  "ATTACHMENT_INLINE_PLACEHOLDER": "\"[attachment]\""
+  "ATTACHMENT_INLINE_PLACEHOLDER": "\"[attachment]\"",
+  "QUESTS_NITRO_REWARD_MODAL_FOOTER_IN_GAME_BODY": "\"You earned **{rewardNameWithArticle}**! It has been automatically applied to your account.\"",
+  "QUESTS_NITRO_REWARD_MODAL_ERROR_HAVE_A_SUB": "\"You already have Nitro! You can accept this reward if and when your subscription ends.\"",
+  "QUESTS_NITRO_REWARD_MODAL_ERROR_MISC": "\"Something went wrong\"",
+  "QUESTS_NITRO_REWARD_MODAL_BACKGROUND_IMAGE_ALT": "\"Rocket Ships fly over a stary galaxy.\""
 }
