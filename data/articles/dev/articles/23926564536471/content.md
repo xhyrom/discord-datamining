@@ -27,8 +27,8 @@
 <p> </p>
 <p>
   <img
-    src="https://support-dev.discord.com/hc/article_attachments/24040991844247"
-    alt="Screenshot 2024-05-30 at 9.43.40 AM.png"
+    src="https://support-dev.discord.com/hc/article_attachments/26036176576919"
+    alt="Screenshot 2024-08-30 at 3.53.42 PM.png"
   />
 </p>
 <p id="h_01HZTGYAGWDVGZQCYZPH812Z0X">
