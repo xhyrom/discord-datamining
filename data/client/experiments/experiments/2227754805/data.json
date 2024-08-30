@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_premium_user_profile_try_it_out_desktop",
+    "label": "Try It Out Entry Points",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Segmented Control",
+      "Treatment 2: Floating Upsell"
+    ],
+    "hash": 2227754805,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "showSegmentedControl",
+      "showFloatingUpsell"
+    ]
+  }
+}
