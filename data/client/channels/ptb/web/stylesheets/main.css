@@ -26282,12 +26282,19 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   margin: 0 auto;
   width: -moz-fit-content;
   width: fit-content;
-  height: 56px;
+  height: 40px;
 }
-.loadingSpinner_f3571f {
+.toastPadding_f3571f {
+  padding: 10px 16px;
+}
+.toastIcon_f3571f {
+  width: 20px;
+  height: 20px;
   margin-right: 8px;
-  width: 24px;
-  height: 24px;
+}
+.successToast_f3571f {
+  gap: 40px;
+  display: flex;
 }
 .actionButton_f5dff0 {
   margin-left: auto;
@@ -44913,4 +44920,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.ea5e58164375f58c97b6.css.map*/
+/*# sourceMappingURL=12633.165a877ba566dd2a05de.css.map*/
