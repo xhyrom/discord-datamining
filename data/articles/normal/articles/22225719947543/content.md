@@ -23,6 +23,7 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
+      <li><a href="#h_01J6G4D7V76YHX2F60YETE63JJ">The First Descendant </a></li>
       <li><a href="#h_01J6CYAK9AGQZA822DFWMHB6JJ">Genshin Impact </a></li>
       <li><a href="#h_01J6A8FGA5ANQQTQ73FSKGRK1F">Predecessor </a></li>
       <li><a href="#h_01J6006XQ2BKXT4ADDBYR3XKCV">World of Warcraft</a></li>
@@ -61,6 +62,21 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J6G4D7V76YHX2F60YETE63JJ">
+  <a
+    href="https://support.discord.com/hc/articles/25946905644695"
+    target="_blank"
+    rel="noopener noreferrer"
+    >The First Descendant - Season 1 Invasion Quest</a
+  >
+</h2>
+<p>
+  The <strong>Season 1 Invasion Quest</strong> can be accepted on Discord from
+  <strong>August 30, 2024 </strong>until<strong>
+    September 5, 2024 (11:59PM UTC)</strong
+  >. Quest requirements must be completed during this period to receive the
+  reward.
+</p>
 <h2 id="h_01J6CYAK9AGQZA822DFWMHB6JJ">
   <a
     href="https://support.discord.com/hc/articles/25871146063511"
