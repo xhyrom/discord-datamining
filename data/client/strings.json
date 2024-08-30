@@ -10140,6 +10140,7 @@
   "USER_PROFILE_SENDING": "\"Sending\"",
   "USER_PROFILE_REACTION_FAILED_TO_SEND": "\"Reaction failed to send\"",
   "USER_PROFILE_REPLY_FAILED_TO_SEND": "\"Reply failed to send\"",
+  "USER_PROFILE_TOAST_VIEW": "\"[View](onClick)\"",
   "USER_PROFILE_REPLY_TO_STATUS_PLACEHOLDER": "\"Reply to {username}'s status\"",
   "USER_PROFILE_REACTED_TO_STATUS": "\"Reacted to {username}'s status\"",
   "USER_PROFILE_REPLIED_TO_STATUS": "\"Replied to {username}'s status\"",
