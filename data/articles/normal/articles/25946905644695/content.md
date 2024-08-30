@@ -38,7 +38,7 @@
 <div class="tip-box">
   <strong>NOTE</strong>: The Hailey avatar decoration is a limited-time avatar
   decoration and will only be yours as an avatar decoration until
-  <strong>October 5, 2024.</strong> After this date, you will no longer have
+  <strong>November 5, 2024.</strong> After this date, you will no longer have
   access to this avatar decoration.
 </div>
 <p>
