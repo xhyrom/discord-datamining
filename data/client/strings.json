@@ -10851,6 +10851,7 @@
   "VOICE_PANEL_SCREENSHARE_SHORTCUTS": "\"Screen Share Shortcuts\"",
   "VOICE_PANEL_HIDE_DRAWER": "\"Hide Drawer\"",
   "VOICE_PANEL_SHOW_DRAWER": "\"Show Settings Drawer\"",
+  "VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP": "\"Play Activities here\"",
   "NUF_DESKTOP_TEMPLATES_TITLE": "\"Create Your First Discord Server\"",
   "NUF_DESKTOP_TEMPLATES_SUBTITLE": "\"Your server is where you and your friends hang out.\\n  Make yours and start talking.\"",
   "TOO_MANY_USER_GUILDS_TITLE_2": "\"You are at the {quantity, number} server limit.\"",
