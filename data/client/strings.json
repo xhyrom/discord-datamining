@@ -8664,6 +8664,7 @@
   "NITRO_HOME_REWARDING_LOCKED_STATE_DESCRIPTION": "\"Your extra Boost is yours to use as long as your current Nitro subscription remains active.\"",
   "NITRO_HOME_REWARDING_REDEEMABLE_STATE_TITLE": "\"Redeem Your Reward!\"",
   "NITRO_HOME_REWARDING_FREE_BOOST_REDEEMABLE_STATE_SUBTITLE_1_MONTH_VARIANT": "\"Congratulations on your first month of Nitro.\"",
+  "NITRO_HOME_REWARDING_FREE_BOOST_REDEEMABLE_STATE_SUBTITLE_BACKFILL_VARIANT": "\"You earned an extra Boost by reaching your first month of Nitro.\"",
   "NITRO_HOME_REWARDING_FREE_BOOST_REDEEMABLE_STATE_SUBTITLE_3_MONTHS_VARIANT": "\"Congratulations on 3 months of Nitro.\"",
   "NITRO_HOME_REWARDING_REDEEMED_STATE_SUBTITLE": "\"Thanks for being a Nitro member.\"",
   "NITRO_HOME_REWARDING_REDEEMED_STATE_DESCRIPTION": "\"Keep your Boost with an active Nitro subscription. Canceling resets progress and removes the Boost.\"",
