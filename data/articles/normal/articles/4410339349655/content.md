@@ -6,22 +6,32 @@
 </p>
 <p><strong>Copyright Policy</strong></p>
 <p>
-  <span style="font-weight: 400">Copyright complaints</span
-  ><span style="font-weight: 400"
-    >. If you believe someone is infringing your intellectual property rights,
-    let us know via the procedure below. We’ll process and investigate your
-    notice in compliance with the Digital Millennium Copyright Act (DMCA) and
-    other applicable intellectual property laws. The most efficient way to
-    submit a complaint of copyright infringement is to go </span
-  ><a
-    href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=18954746269463"
-    >here</a
-  ><span style="font-weight: 400">
-    and select the DMCA request option from the drop-down menu. Alternatively,
-    you can email our Copyright Agent at copyright@discord.com (subject line
-    “DMCA Takedown Request”) or send us a letter at Discord, Attention: DMCA
-    Takedown Request, 444 De Haro Street #200, San Francisco, CA 94107. Your
-    notice must include:</span
+  Copyright complaints: If you believe your copyrighted material is being
+  infringed upon, the most efficient way to request the removal of the allegedly
+  infringing content is to file a DMCA takedown request using the form
+  <a
+    href="https://support.discord.com/hc/requests/new?ticket_form_id=18954746269463"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >here</span
+    ></a
+  >. 
+</p>
+<p>
+  Do not mislead Discord’s support teams. Do not make false or malicious reports
+  to our Legal Response or other customer support teams, send multiple reports
+  about the same issue, or ask a group of users to report the same content or
+  issue. Repeated violations of this guideline may result in account warnings or
+  other penalties.
+</p>
+<p>
+  <span style="font-weight: 400"
+    >Alternatively, you can email our Copyright Agent at copyright@discord.com
+    (subject line “DMCA Takedown Request”) or send us a letter at Discord,
+    Attention: DMCA Takedown Request, 444 De Haro Street #200, San Francisco, CA
+    94107. Your notice must include:</span
   >
 </p>
 <ul>
@@ -61,6 +71,22 @@
     <span style="font-weight: 400">Your physical or electronic signature.</span>
   </li>
 </ul>
+<p>
+  <span style="font-weight: 400"
+    >Counter-notices: If you believe that your removed or disabled content did
+    not infringe on copyright, or was removed as the result of a mistake or
+    misidentification, you may file a DMCA counter-notice using the form
+    <a
+      href="https://support.discord.com/hc/requests/new?ticket_form_id=18233546099863"
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
+        >here</span
+      ></a
+    >.</span
+  >
+</p>
 <p>
   <span style="font-weight: 400"
     >There are legal and financial consequences for fraudulent or bad faith
@@ -112,6 +138,14 @@
     <span style="font-weight: 400">Your physical or electronic signature.</span>
   </li>
 </ul>
+<p>
+  <span style="font-weight: 400"
+    >Discord is unable to process counter-notifications with missing or
+    defective elements. If your counter-notification contains missing or
+    defective elements we will notify you of the missing or defective elements
+    and ask that you submit a new, corrected, counter-notification.</span
+  >
+</p>
 <p>
   <span style="font-weight: 400">Complaint resolution</span
   ><span style="font-weight: 400">. </span

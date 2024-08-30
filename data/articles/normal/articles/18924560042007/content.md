@@ -5,6 +5,13 @@
   claim efficiently and effectively, so please use them! 
 </p>
 <p>
+  <strong>Do not mislead Discord’s support teams.</strong> Do not make false or
+  malicious reports to our Legal Response or other customer support teams, send
+  multiple reports about the same issue, or ask a group of users to report the
+  same content or issue. Repeated violations of this guideline may result in
+  account warnings or other penalties.
+</p>
+<p>
   <strong
     ><span class="wysiwyg-font-size-large"
       >What this article covers: </span
@@ -139,13 +146,13 @@
   >
 </p>
 <p>
-  Instructions on how to locate server, channel, and message IDs can be found
-  <a
-    href="https://support.discordapp.com/hc/articles/360000291932"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
+  To get the Message Link on iOS, hold down on the Message, then select “Copy
+  Message Link.”
+</p>
+<p>On Android, hold down on the Message, then select “Copy Message Link.”</p>
+<p>
+  On desktop/browser, “right-click” on the Message, and select “Copy Message
+  Link.”
 </p>
 <h1 id="h_01HER6WT6HF2X0DNVVTYWRN883">How to report an emoji or sticker</h1>
 <p>Please provide the server ID and the emoji or sticker link. </p>

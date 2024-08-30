@@ -5,12 +5,7 @@
 </p>
 <p><strong>What this article covers:</strong></p>
 <ul>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/218410947#h_01HGXDF93YCX2JB199SXJXY20G"
-      >Password Requirements</a
-    >
-  </li>
+  <li><a href="#h_01J5BH7661T1WQC3A7F11BC2J5">Password Requirements</a></li>
   <li>
     <a href="#h_01J5BH76627K07N1C23RWXSCN9">How to change your password</a>
     <ul>
