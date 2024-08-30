@@ -30762,9 +30762,6 @@ img.thumbnail_c64476 {
   position: absolute;
   z-index: 1000;
 }
-.pictureInPictureWindowFloatingPIP_e0c856 {
-  z-index: 1002;
-}
 .borderRadius_e0c856 {
   border-radius: 8px;
 }
@@ -44920,4 +44917,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.165a877ba566dd2a05de.css.map*/
+/*# sourceMappingURL=12633.f7a8c0bfab46204fa51b.css.map*/
