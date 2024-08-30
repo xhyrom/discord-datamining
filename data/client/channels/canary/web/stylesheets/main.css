@@ -20747,8 +20747,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .upsellContainer_ad7baa {
   display: flex;
   align-items: center;
-  padding: 0 12px;
-  height: 52px;
+  padding: 12px;
   border-radius: 12px;
   background:
     linear-gradient(var(--background-secondary), var(--background-secondary))
@@ -21444,6 +21443,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .popover_a64b81.visible_a64b81,
 .popover_a64b81:focus-within {
   opacity: 1;
+}
+.reduce-motion .popover_a64b81 {
+  pointer-events: all;
 }
 .statusPopover_a64b81 {
   right: min(8px, 50% - 29px);
@@ -44917,4 +44919,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.f7a8c0bfab46204fa51b.css.map*/
+/*# sourceMappingURL=12633.7ac4741d9b328a42a5cd.css.map*/
