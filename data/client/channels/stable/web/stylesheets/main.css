@@ -14541,9 +14541,11 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   width: 24px;
   height: 24px;
   border-radius: 4px;
+  border: 1.5px solid transparent;
 }
 .highlighted_fda254 {
-  border: 1.5px solid var(--border-strong);
+  background-color: var(--border-strong);
+  border-radius: 5px;
 }
 .extraGameCount_fda254 {
   position: absolute;
@@ -14557,6 +14559,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 .gameActivityLevel_fda254 {
   position: absolute;
@@ -14840,7 +14843,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .cardFooterGames_e0fe28 {
   display: flex;
-  gap: 4px;
+  gap: 2px;
 }
 .overflowTooltip_e0fe28 {
   display: flex;
@@ -15179,6 +15182,15 @@ div.cardContainer_c22357 {
   animation-name: Shine_cc6d33;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+.nitroUpsellContainer_f03ca8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: auto;
+}
+.nitroWheel_f03ca8 {
+  margin-right: 6px;
 }
 @keyframes uploadIconAnimateInLeft_f82cc7 {
   0% {
@@ -44901,4 +44913,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.3b9c7ea8fc62ad49361d.css.map*/
+/*# sourceMappingURL=12633.ea5e58164375f58c97b6.css.map*/
