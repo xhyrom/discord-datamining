@@ -5097,6 +5097,7 @@
   "FRIEND_PERMITTED_SOURCE_MUTUAL_GUILDS": "\"Server Members\"",
   "USER_KEYWORD_FILTERS_TITLE": "\"Language Filter\"",
   "USER_KEYWORD_FILTERS_TOGGLE_TITLE": "\"Enable language filter\"",
+  "USER_KEYWORD_FILTERS_TOGGLE_TITLE_V2": "\"Language filter\"",
   "USER_KEYWORD_FILTERS_DESCRIPTION_V2": "\"Automatically replace words with asterisks when they match our filters for severe profanity, insults, slurs, or sensitive content. [Learn more about this setting here.]({learnMoreLink})\"",
   "USER_KEYWORD_FILTERS_DESCRIPTION_SEARCHABLE": "\"Automatically replace words with asterisks when they match our filters for severe profanity, insults, slurs, or sensitive content.\"",
   "USER_KEYWORD_FILTERS_SEARCH_TERM_KEYWORD": "\"Keyword\"",
