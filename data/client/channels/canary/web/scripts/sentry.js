@@ -4474,9 +4474,6 @@
           Ai1: function () {
             return aF.Ai;
           },
-          AlD: function () {
-            return aF.Al;
-          },
           AzA: function () {
             return tG;
           },
@@ -12359,7 +12356,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-203d50d38df6514aeab8fdd4b07599d2db47269f",
+            release: "discord_web-8f21b84d594312a93edffdcaa43173e26829c124",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12428,8 +12425,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "323786"), "323786"));
-          i.YA("builtAt", String("1725392887735"));
+            i.YA("buildNumber", ((e = "323796"), "323796"));
+          i.YA("builtAt", String("1725394129235"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48462,4 +48459,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.42862d40d880c77b9ba6.js.map
+//# sourceMappingURL=sentry.7f2ce9e5b0a7f3378bb7.js.map
