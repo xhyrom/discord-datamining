@@ -429,6 +429,29 @@
     >.</span
   >
 </p>
+<p>
+  <span style="font-weight: 400"
+    ><span class="wysiwyg-font-size-large"
+      ><strong
+        >Q: Why do I need Nitro to upload more than 10MB of files?</strong
+      ></span
+    ></span
+  >
+</p>
+<p>
+  A: Every day, millions of files are uploaded to Discord and stored securely
+  for your future access. Storage management is expensive, so we regularly
+  review how people use Discord and their storage needs. In fact, our data shows
+  that 99% of users stick to files smaller than 10MB.
+</p>
+<p>
+  In order to maintain our service without compromising on quality of storage,
+  we decided to reduce the free file size upload limit. Unlike other platforms,
+  we store your files for as long as you need them, so it’s crucial that we
+  manage our storage sustainably. If you need more upload capacity, Nitro Basic
+  offers a 50MB limit, and Nitro gives you up to 500 MB, so you have options
+  that fit your needs.
+</p>
 <h2 id="h_01HBCK2APPN2Y15C13HGT52NWZ"><strong>Classic</strong></h2>
 <p>
   <span class="wysiwyg-font-size-large"
