@@ -990,7 +990,7 @@
   "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE_CANNOT_LAUNCH": "\"[!!{username}!!](usernameOnClick) started an activity\"",
   "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE": "\"[!!{username}!!](usernameOnClick) started an [activity](activityTextOnClick)\"",
   "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_NOTIFICATION": "\"{username} started an activity\"",
-  "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_MISSING_WARNING": "\"Your app has enabled Activities but has no commands registered to launch them. You may want to register an [Entry Point Command](https://discord.com/developers/docs/interactions/application-commands#entry-point-commands).\"",
+  "APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_MISSING_WARNING": "\"Your app has enabled Activities but has no commands registered to launch them. You may want to register an [Entry Point Command](https://discord.com/developers/docs/activities/development-guides#setting-up-an-entry-point-command).\"",
   "ACTIVITY_REPORT_POST_ACTIVITY_HEADER": "\"How'd !!{applicationName}!! go?\"",
   "ACTIVITY_REPORT_POST_ACTIVITY_PROBLEM_TITLE": "\"What could have gone better?\"",
   "ACTIVITY_REPORTED_POSITIVE": "\"Thanks for sharing! Feedback like yours helps us improve Activities.\"",
