@@ -12356,7 +12356,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9bb3153753af9b816d867e48549e1b99d271c828",
+            release: "discord_web-deff93b7a6c145cdb914ac1e4cfbef3dca8681d6",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12425,8 +12425,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "323919"), "323919"));
-          i.YA("builtAt", String("1725402117762"));
+            i.YA("buildNumber", ((e = "323926"), "323926"));
+          i.YA("builtAt", String("1725402488255"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -12879,10 +12879,10 @@
             },
             BADGE_BRAND_TEXT: {
               category: "text",
-              [n.DARK]: { raw: "BRAND_500", opacity: 1 },
-              [n.LIGHT]: { raw: "BRAND_500", opacity: 1 },
-              [n.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
-              [n.DARKER]: { raw: "BRAND_500", opacity: 1 },
+              [n.DARK]: { raw: "BRAND_560", opacity: 1 },
+              [n.LIGHT]: { raw: "BRAND_560", opacity: 1 },
+              [n.MIDNIGHT]: { raw: "BRAND_560", opacity: 1 },
+              [n.DARKER]: { raw: "BRAND_560", opacity: 1 },
             },
             BG_BACKDROP: {
               category: "background",
@@ -14090,7 +14090,7 @@
             MENTION_FOREGROUND: {
               category: "generic",
               [n.DARK]: { raw: "BRAND_260", opacity: 1 },
-              [n.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+              [n.LIGHT]: { raw: "BRAND_560", opacity: 1 },
               [n.MIDNIGHT]: { raw: "BRAND_230", opacity: 1 },
               [n.DARKER]: { raw: "BRAND_230", opacity: 1 },
             },
@@ -19583,10 +19583,10 @@
               o.I.BRAND_260,
             ],
             "badge-brand-text": [
-              o.I.BRAND_500,
-              o.I.BRAND_500,
-              o.I.BRAND_500,
-              o.I.BRAND_500,
+              o.I.BRAND_560,
+              o.I.BRAND_560,
+              o.I.BRAND_560,
+              o.I.BRAND_560,
             ],
             "bg-backdrop": [o.I.BLACK, o.I.BLACK, o.I.PLUM_19, o.I.BLACK],
             "bg-backdrop-no-opacity": [
@@ -20479,7 +20479,7 @@
             ],
             "mention-foreground": [
               o.I.BRAND_260,
-              o.I.BRAND_500,
+              o.I.BRAND_560,
               o.I.BRAND_230,
               o.I.BRAND_230,
             ],
@@ -48459,4 +48459,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.f61eab6a16fc1e3e50af.js.map
+//# sourceMappingURL=sentry.25a38905cf361254c8fd.js.map
