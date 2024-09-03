@@ -32,12 +32,12 @@ export async function wumpusCentralSend(
   commitUrl: string,
 ) {
   const embeds: APIEmbed[] = [];
+  console.log(commitUrl);
 
   for (const job of diff.added) {
     embeds.push(
       new EmbedBuilder()
         .setTitle(job.title)
-        .setURL(commitUrl)
         .addFields(
           {
             name: "Department",
@@ -94,7 +94,6 @@ export async function wumpusCentralSend(
     embeds.push(
       new EmbedBuilder()
         .setTitle(job.title)
-        .setURL(commitUrl)
         .addFields(
           {
             name: "Id",
