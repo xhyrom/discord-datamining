@@ -36546,7 +36546,7 @@ html.disable-forced-colors * {
   --background-secondary-alt: var(--primary-660);
   --background-tertiary: var(--primary-700);
   --badge-brand-bg: var(--brand-260);
-  --badge-brand-text: var(--brand-500);
+  --badge-brand-text: var(--brand-560);
   --bg-backdrop: hsl(var(--black-hsl) / 0.7);
   --bg-backdrop-no-opacity: var(--black);
   --bg-base-primary: var(--primary-600);
@@ -38283,7 +38283,7 @@ html.disable-forced-colors * {
   --background-secondary-alt: var(--primary-160);
   --background-tertiary: var(--primary-200);
   --badge-brand-bg: var(--brand-260);
-  --badge-brand-text: var(--brand-500);
+  --badge-brand-text: var(--brand-560);
   --bg-backdrop: hsl(var(--black-hsl) / 0.54);
   --bg-backdrop-no-opacity: var(--black);
   --bg-base-primary: var(--white);
@@ -38446,7 +38446,7 @@ html.disable-forced-colors * {
   --live-stage-tile-border: hsl(var(--primary-430-hsl) / 0.15);
   --logo-primary: var(--brand-500);
   --mention-background: hsl(var(--brand-500-hsl) / 0.15);
-  --mention-foreground: var(--brand-500);
+  --mention-foreground: var(--brand-560);
   --menu-item-danger-active-bg: var(--red-530);
   --menu-item-danger-hover-bg: var(--red-430);
   --menu-item-default-active-bg: var(--brand-560);
@@ -39346,7 +39346,7 @@ html.disable-forced-colors * {
     );
     --mention-foreground: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--brand-560) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --menu-item-danger-active-bg: color-mix(
@@ -40025,7 +40025,7 @@ html.disable-forced-colors * {
   --background-secondary-alt: var(--plum-17);
   --background-tertiary: var(--plum-19);
   --badge-brand-bg: var(--brand-260);
-  --badge-brand-text: var(--brand-500);
+  --badge-brand-text: var(--brand-560);
   --bg-backdrop: hsl(var(--plum-19-hsl) / 0.75);
   --bg-backdrop-no-opacity: var(--plum-19);
   --bg-base-primary: var(--black);
@@ -41766,7 +41766,7 @@ html.disable-forced-colors * {
   --background-secondary-alt: var(--plum-15);
   --background-tertiary: var(--plum-16);
   --badge-brand-bg: var(--brand-260);
-  --badge-brand-text: var(--brand-500);
+  --badge-brand-text: var(--brand-560);
   --bg-backdrop: hsl(var(--black-hsl) / 0.7);
   --bg-backdrop-no-opacity: var(--black);
   --bg-base-primary: var(--plum-20);
@@ -44919,4 +44919,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.5be591af17f01a6d2cb3.css.map*/
+/*# sourceMappingURL=12633.ce84aa46796eccc0ce08.css.map*/
