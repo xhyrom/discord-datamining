@@ -17506,7 +17506,7 @@
   "POLL_OPTIONS_ARIA": "\"Poll options\"",
   "POLL_EXPIRY_DAYS_REMAINING": "\"{days, plural, one {{days, number}d} other {{days, number}d}} left\"",
   "POLL_EXPIRY_HOURS_REMAINING": "\"{hours, plural, one {{hours, number}h} other {{hours, number}h}} left\"",
-  "POLL_EXPIRY_MINUTES_REMAINING": "\"{minutes, plural, one {{minutes, number}m} other {{minutes, number}m}} left\"",
+  "POLL_EXPIRY_MINUTES_REMAINING": "\"{minutes, plural, =0 {< 1m} one {{minutes, number}m} other {{minutes, number}m}} left\"",
   "POLL_EXPIRED": "\"Poll closed\"",
   "POLL_SELECT_ONE_ANSWER": "\"Select one answer\"",
   "POLL_SELECT_MULTIPLE_ANSWERS": "\"Select one or more answers\"",
