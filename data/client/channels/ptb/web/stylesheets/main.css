@@ -30092,7 +30092,7 @@ img.thumbnail_c64476 {
   gap: 8px;
 }
 .section_ba4d80:empty,
-.section_ba4d80:has(> .heading_ba4d80:only-child) {
+.section_ba4d80:has(> .headings_ba4d80:only-child) {
   display: none;
 }
 .list_fa6679 {
@@ -44919,4 +44919,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.7ac4741d9b328a42a5cd.css.map*/
+/*# sourceMappingURL=12633.5be591af17f01a6d2cb3.css.map*/
