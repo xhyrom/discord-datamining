@@ -17652,6 +17652,7 @@
   "QUEST_MULTIPLATFORM_SELECT_SUBTITLE": "\"Select a platform to get started\"",
   "QUEST_MULTIPLATFORM_SELECT_DESKTOP": "\"Quest on Desktop\"",
   "QUEST_MULTIPLATFORM_SELECT_CONSOLE": "\"Quest on Console\"",
+  "QUEST_MULTIPLATFORM_SELECT_FUN_SUBTITLE": "\"Your adventure awaits...\"",
   "QUEST_BAR_WEB_WARNING_HEADER": "\"Switch to Desktop\"",
   "QUEST_BAR_WEB_WARNING_BODY": "\"Quest progress can only be made on the Discord desktop app\"",
   "QUEST_BAR_MAC_WARNING_HEADER": "\"Switch to PC\"",
