@@ -4474,9 +4474,6 @@
           Ai1: function () {
             return aF.Ai;
           },
-          AlD: function () {
-            return aF.Al;
-          },
           AzA: function () {
             return tG;
           },
@@ -11857,6 +11854,7 @@
           (aI.BUG_REPORTER = "BUG_REPORTER"),
           (aI.ALERT = "ALERT"),
           (aI.REACTION = "REACTION"),
+          (aI.MESSAGE_REMINDER = "MESSAGE_REMINDER"),
           ((au = tw || (tw = {})).TRENDING_GIFS = "Trending"),
           (au.FAVORITES = "Favorites"),
           (au.TRENDING_CATEGORY = "Category"),
@@ -12359,7 +12357,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bd18b261e3ede1aad8188cfc097e86ea8fde44b0",
+            release: "discord_web-81c142c56831d0a4cc5f8444576829a2df72f15b",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12428,8 +12426,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "323738"), "323738"));
-          i.YA("builtAt", String("1725388372063"));
+            i.YA("buildNumber", ((e = "323975"), "323975"));
+          i.YA("builtAt", String("1725405486858"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -12882,10 +12880,10 @@
             },
             BADGE_BRAND_TEXT: {
               category: "text",
-              [n.DARK]: { raw: "BRAND_500", opacity: 1 },
-              [n.LIGHT]: { raw: "BRAND_500", opacity: 1 },
-              [n.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
-              [n.DARKER]: { raw: "BRAND_500", opacity: 1 },
+              [n.DARK]: { raw: "BRAND_560", opacity: 1 },
+              [n.LIGHT]: { raw: "BRAND_560", opacity: 1 },
+              [n.MIDNIGHT]: { raw: "BRAND_560", opacity: 1 },
+              [n.DARKER]: { raw: "BRAND_560", opacity: 1 },
             },
             BG_BACKDROP: {
               category: "background",
@@ -14093,7 +14091,7 @@
             MENTION_FOREGROUND: {
               category: "generic",
               [n.DARK]: { raw: "BRAND_260", opacity: 1 },
-              [n.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+              [n.LIGHT]: { raw: "BRAND_560", opacity: 1 },
               [n.MIDNIGHT]: { raw: "BRAND_230", opacity: 1 },
               [n.DARKER]: { raw: "BRAND_230", opacity: 1 },
             },
@@ -19586,10 +19584,10 @@
               o.I.BRAND_260,
             ],
             "badge-brand-text": [
-              o.I.BRAND_500,
-              o.I.BRAND_500,
-              o.I.BRAND_500,
-              o.I.BRAND_500,
+              o.I.BRAND_560,
+              o.I.BRAND_560,
+              o.I.BRAND_560,
+              o.I.BRAND_560,
             ],
             "bg-backdrop": [o.I.BLACK, o.I.BLACK, o.I.PLUM_19, o.I.BLACK],
             "bg-backdrop-no-opacity": [
@@ -20482,7 +20480,7 @@
             ],
             "mention-foreground": [
               o.I.BRAND_260,
-              o.I.BRAND_500,
+              o.I.BRAND_560,
               o.I.BRAND_230,
               o.I.BRAND_230,
             ],
@@ -48462,4 +48460,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.639ff02f8e785fbef2c4.js.map
+//# sourceMappingURL=sentry.b6bb70d3be3dccf882f0.js.map
