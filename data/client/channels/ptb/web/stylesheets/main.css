@@ -20591,6 +20591,45 @@ h3.improved_f017d0:after {
   background-color: var(--background-modifier-accent);
   border-radius: 50%;
 }
+.tieredTenureBadgeBronzeGlow_b64375 {
+  box-shadow: 0 0 18px 0#f78d41;
+}
+.tieredTenureBadgeSilverGlow_b64375 {
+  box-shadow: 0 0 18px 0#d2d2d2;
+}
+.tieredTenureBadgeGoldGlow_b64375 {
+  box-shadow: 0 0 18px 0#ffa813;
+}
+.tieredTenureBadgePlatinumGlow_b64375 {
+  box-shadow: 0 0 18px 0#5eacc2;
+}
+.tieredTenureBadgeDiamondGlow_b64375 {
+  box-shadow: 0 0 18px 0#6d5cf2;
+}
+.tieredTenureBadgeEmeraldGlow_b64375 {
+  box-shadow: 0 0 18px 0#32c102;
+}
+.tieredTenureBadgeRubyGlow_b64375 {
+  box-shadow: 0 0 18px 0#f29cc3;
+}
+.tieredTenureBadgeFireGlow_b64375 {
+  box-shadow: 0 0 18px 0#e95c03;
+}
+.starContainer_b64375 {
+  position: relative;
+}
+.topLeftStar_b64375,
+.bottomRightStar_b64375 {
+  position: absolute;
+}
+.topLeftStar_b64375 {
+  top: -34px;
+  left: -13px;
+}
+.bottomRightStar_b64375 {
+  bottom: -16px;
+  right: -15px;
+}
 :where(.contentImage_dc67b6) {
   border-radius: var(--radius-xs);
   -o-object-fit: contain;
@@ -44810,4 +44849,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.e6560a1b6961949c05bc.css.map*/
+/*# sourceMappingURL=12633.eb8aa5a4880e33f05f8a.css.map*/
