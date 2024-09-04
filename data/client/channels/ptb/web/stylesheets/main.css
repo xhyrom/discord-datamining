@@ -12195,6 +12195,13 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .root_ffaecb p {
   margin: 0 0 16px;
 }
+.contentContainer_ffaecb {
+  display: flex;
+  flex-direction: row;
+}
+.bodyContent_ffaecb {
+  align-content: center;
+}
 .header_ffaecb {
   margin-bottom: 24px;
 }
@@ -44849,4 +44856,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.eb8aa5a4880e33f05f8a.css.map*/
+/*# sourceMappingURL=12633.f993861a2b023c8c33c2.css.map*/
