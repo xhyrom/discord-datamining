@@ -18871,7 +18871,7 @@
   "REACTION_IN_APP_NOTIFICATION_CONTENT": "\"reacted to your message: {message}\"",
   "ATTACHMENT_INLINE_PLACEHOLDER": "\"[attachment]\"",
   "QUESTS_NITRO_REWARD_MODAL_FOOTER_IN_GAME_BODY": "\"You earned **{rewardNameWithArticle}**! It has been automatically applied to your account.\"",
-  "QUESTS_NITRO_REWARD_MODAL_ERROR_HAVE_A_SUB": "\"You already have Nitro! You can accept this reward if and when your subscription ends.\"",
+  "QUESTS_NITRO_REWARD_MODAL_ERROR_HAVE_A_SUB": "\"You already have Nitro! This Quest reward is only available to users who aren't subscribed to Nitro.\"",
   "QUESTS_NITRO_REWARD_MODAL_ERROR_MISC": "\"Something went wrong\"",
   "QUESTS_NITRO_REWARD_MODAL_BACKGROUND_IMAGE_ALT": "\"Rocket Ships fly over a stary galaxy.\""
 }
