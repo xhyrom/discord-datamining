@@ -7728,7 +7728,7 @@
           aK.Z.Seconds.HOUR;
         let oR = 10,
           oA = 26214400,
-          oT = 8388608,
+          oT = 10485760,
           od = 524288e3,
           oN = (e) => "||".concat(e, "||"),
           op = /^\|\|([\s\S]+?)\|\|/,
@@ -8767,7 +8767,6 @@
           (r3.SECURE_FRAMES_VERIFIED_DEVICES =
             "Secure Frames Verified Devices"),
           (r3.SECURE_FRAMES = "Secure Frames"),
-          (r3.CONTENT_INVENTORY_EMBED = "Content Inventory Embed"),
           (r3.REVERSE_TRIAL_UPSELL_MODAL = "Reverse trial Upsell Modal"),
           ((r2 = eT || (eT = {})).TOOLTIP = "Tooltip"),
           (r2.CARD = "Card"),
@@ -11326,6 +11325,7 @@
           (nk.CLANS_FAQ = "23187611406999"),
           (nk.SUMMER_BOGO_2024 = "24485661785495"),
           (nk.CHANNEL_LINKED_LOBBIES = "24485661785495"),
+          (nk.NITRO_FAQ = "115000435108#h_01GFV3PWAGD4EGTD91ERBZ5R4S"),
           ((tr || (tr = {})).INVALID_BILLING_ADDRESS =
             "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
           ((nV = tn || (tn = {}))[(nV.HIDDEN = 1)] = "HIDDEN"),
@@ -12357,7 +12357,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6ac151465a90871b62746c1566e65eb17ac31f9a",
+            release: "discord_web-b609eed53d63268f5902af7ec70538f7230bd069",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12426,8 +12426,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "324190"), "324190"));
-          i.YA("builtAt", String("1725472130397"));
+            i.YA("buildNumber", ((e = "324219"), "324219"));
+          i.YA("builtAt", String("1725474316619"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48460,4 +48460,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.baef0d4036de78a3d6e9.js.map
+//# sourceMappingURL=sentry.cedd822dc7e9ecc8ea93.js.map
