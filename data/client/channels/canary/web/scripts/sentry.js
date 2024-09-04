@@ -8768,6 +8768,7 @@
             "Secure Frames Verified Devices"),
           (r3.SECURE_FRAMES = "Secure Frames"),
           (r3.REVERSE_TRIAL_UPSELL_MODAL = "Reverse trial Upsell Modal"),
+          (r3.WEB_SETTING_TREE_TOOL = "Web Setting Tree Tool"),
           ((r2 = eT || (eT = {})).TOOLTIP = "Tooltip"),
           (r2.CARD = "Card"),
           (r2.CAROUSEL = "Carousel"),
@@ -9013,6 +9014,7 @@
           QUEST_PREVIEW_TOOL: "Quest Preview Tool",
           SECURE_FRAMES: "Secure Frames",
           SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
+          WEB_SETTING_TREE_TOOL: "Web Setting Tree Tool",
         });
         ((r4 = ep || (ep = {})).APPLICATION_STORE =
           "Application Store Verified Guild Invite - Lurker"),
@@ -12357,7 +12359,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8f36f1685727ffecbcae1939027faa7895605336",
+            release: "discord_web-4a3b9d7f315b57b3d1978373af27844fea9ecc8a",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12426,8 +12428,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "324245"), "324245"));
-          i.YA("builtAt", String("1725475924690"));
+            i.YA("buildNumber", ((e = "324265"), "324265"));
+          i.YA("builtAt", String("1725477098748"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48460,4 +48462,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.6f924ed17a41a53cff36.js.map
+//# sourceMappingURL=sentry.52e8d12073be0b3d32e4.js.map
