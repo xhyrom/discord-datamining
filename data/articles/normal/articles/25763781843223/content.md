@@ -310,9 +310,19 @@
 </p>
 <p>
   After claiming the Chess.com Diamond offer in your
-  <strong>Gift Inventory</strong>, you’ll be automatically redirected to
-  Chess.com. If you’re not logged in, you’ll  be prompted to do so. Once logged 
-  your account will be instantly credited with the Chess.com Diamond trial.
+  <strong>Gift Inventory </strong>by selecting <strong>R</strong
+  ><strong>edeem</strong>, you’ll be automatically redirected to Chess.com.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26145435856279"
+    width="664"
+    height="450"
+  />
+</p>
+<p>
+  If you’re not logged in, you’ll  be prompted to do so. Once logged  your
+  account will be instantly credited with the Chess.com Diamond trial.
 </p>
 <div class="info-box">
   <strong>NOTE</strong>: If you encounter any issues while trying to redeem this
