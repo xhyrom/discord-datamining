@@ -1,26 +1,23 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-07_sky_load",
+    "id": "2024-09_sky_load",
     "label": "Sky Load",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Variant 1",
-      "Treatment 2: Variant 2"
+      "Treatment 1: Variant 1"
     ],
-    "hash": 2472873852,
+    "hash": 2717647907,
     "buckets": [
       -1,
       0,
-      1,
-      2
+      1
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled",
-      "variant2"
+      "enabled"
     ]
   }
 }
