@@ -4729,7 +4729,7 @@
   "OAUTH2_SIGNED_IN_AS": "\"Signed in as $[](userHook)\"",
   "OAUTH2_THIRD_PARTY_APPLICATION": "\"An external application\"",
   "OAUTH2_LOGOUT": "\"Not you?\"",
-  "OAUTH2_DETAILS_REDIRECT": "\"Once you authorize, you will be redirected outside of Discord to: !!{origin}!!\"",
+  "OAUTH2_DETAILS_REDIRECT": "\"Once you authorize, you will be redirected **outside of Discord** to: **!!{origin}!!**\"",
   "OAUTH2_DETAILS_PRIVACY_POLICY": "\"The developer of !!{application}!!'s privacy policy and terms of service apply to this application.\"",
   "OAUTH2_DETAILS_PRIVACY_POLICY_WITH_LINKS": "\"The developer of !!{application}!!'s [privacy policy]({privacyPolicyURL}) and [terms of service]({termsOfServiceURL}) apply to this application.\"",
   "OAUTH2_DETAILS_PRIVACY_POLICY_WITH_PRIVACY_POLICY_LINK": "\"The developer of !!{application}!!'s [privacy policy]({privacyPolicyURL}) and terms of service apply to this application.\"",
