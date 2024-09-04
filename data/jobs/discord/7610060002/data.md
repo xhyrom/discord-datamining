@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7610060002](https://discord.com/jobs/7610060002)
 
-**Updated At:** Fri, 30 Aug 2024 21:22:34 GMT
+**Updated At:** Wed, 04 Sep 2024 21:29:06 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
@@ -65,6 +65,5 @@ We’re working toward an inclusive world where no one feels like an outsider, w
 - Core Tech Engineering
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     
