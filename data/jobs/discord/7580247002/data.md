@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7580247002](https://discord.com/jobs/7580247002)
 
-**Updated At:** Mon, 26 Aug 2024 22:04:56 GMT
+**Updated At:** Wed, 04 Sep 2024 05:24:28 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
@@ -34,7 +34,7 @@ Maintain up-to-date knowledge of digital media trends, technologies, and competi
 
 What you should have
 
-5+ years of proven experience in digital media analysis, sales planning, ad operations or related roles within the online advertising industry.
+8+ years of proven experience in digital media analysis, sales planning, ad operations or related roles within the online advertising industry.
 Strong understanding of the digital advertising ecosystem, metrics and analytics.
 Proficiency in data analysis tools, advanced analytic methods, and platforms such as Google Analytics, Excel, and data visualization software (e.g., Tableau, Power BI).
 Familiarity with online advertising platforms, ad measurement platforms, and media planning tools
