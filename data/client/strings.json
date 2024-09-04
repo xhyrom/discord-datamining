@@ -2811,6 +2811,7 @@
   "MARKED_AS_READ": "\"Marked As Read\"",
   "JUMP_TO_PRESENT": "\"Jump To Present\"",
   "JUMP_TO_REPLY": "\"Jump To Reply\"",
+  "JUMP_TO_TOP": "\"Jump To Top\"",
   "YOURE_VIEWING_OLDER_MESSAGES": "\"You're viewing older messages\"",
   "BEGINNING_DM": "\"This is the beginning of your direct message history with **!!{username}!!**.\"",
   "BEGINNING_GROUP_DM_MANAGED": "\"You will automatically leave this group when you're done.\"",
