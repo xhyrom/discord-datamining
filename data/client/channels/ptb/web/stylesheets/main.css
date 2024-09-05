@@ -5522,8 +5522,11 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   .oauth2ModalWrapper_c2b22e {
     box-shadow: none;
     border-radius: 0;
-    min-height: 100vh;
-    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 .footer_c2b22e {
@@ -44913,4 +44916,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.040bcaea2c432c07e9a7.css.map*/
+/*# sourceMappingURL=12633.29c40636835d7c53b02d.css.map*/
