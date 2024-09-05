@@ -297,17 +297,6 @@
   >
   account.
 </p>
-<h2 id="h_01J6X1C0KQ94VBDXNB5ZCYG8SD">
-  Eligibility for Redeeming the Chess.com Diamond Trial
-</h2>
-<p>
-  This offer is only available for Chess.com members who are not currently
-  subscribed to any Chess.com Premium Plan during the promotional period. 
-</p>
-<p>
-  Offer not available in the following countries: Cuba, Iran, North Korea,
-  Syria, Venezuela, Russia, and Myanmar.
-</p>
 <p>
   After claiming the Chess.com Diamond offer in your
   <strong>Gift Inventory </strong>by selecting <strong>R</strong
@@ -320,9 +309,20 @@
     height="450"
   />
 </p>
-<p>
-  If you’re not logged in, you’ll  be prompted to do so. Once logged  your
+<p class="wysiwyg-text-align-left">
+  If you’re not logged in, you’ll  be prompted to do so. Once logged in, your
   account will be instantly credited with the Chess.com Diamond trial.
+</p>
+<h2 id="h_01J6X1C0KQ94VBDXNB5ZCYG8SD">
+  Eligibility for Redeeming the Chess.com Diamond Trial
+</h2>
+<p>
+  This offer is only available for Chess.com members who are not currently
+  subscribed to any Chess.com Premium Plan during the promotional period. 
+</p>
+<p>
+  Offer not available in the following countries: Cuba, Iran, North Korea,
+  Syria, Venezuela, Russia, and Myanmar.
 </p>
 <div class="info-box">
   <strong>NOTE</strong>: If you encounter any issues while trying to redeem this
