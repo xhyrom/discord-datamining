@@ -15364,6 +15364,13 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   display: flex;
   flex-flow: column nowrap;
   flex: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.imageContentSafari_cf58b5 {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: auto;
 }
 .imageContainer_cf58b5 {
   display: flex;
@@ -17550,6 +17557,9 @@ div.cardContainer_c22357 {
 }
 .nitroWheel_f03ca8 {
   margin-right: 6px;
+}
+.nitroText_f03ca8 {
+  flex-wrap: wrap;
 }
 .modalPreview_aba31b {
   width: 280px;
@@ -26142,7 +26152,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .soundButtonRefresh_f40049:hover .buttonOverlayActionsRefresh_f40049,
 .soundButtonRefresh_f40049:active:not(:focus-within)
   .buttonOverlayActionsRefresh_f40049 {
-  padding-top: 8px;
+  margin-top: 0;
 }
 .soundButtonRefresh_f40049:active:not(:focus-within) {
   background: var(--card-primary-pressed-bg);
@@ -26395,11 +26405,11 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   justify-content: space-between;
 }
 .buttonOverlayActionsRefresh_f40049 {
-  padding: 6px 8px 0;
+  margin-top: -2px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  transition: padding.2s ease;
+  transition: margin-top.2s ease;
 }
 .secondaryButton_f40049 {
   color: var(--interactive-normal);
@@ -26413,7 +26423,14 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .secondaryButtonRefresh_f40049 {
   color: var(--interactive-muted);
   display: flex;
+  padding: 8px 4px 4px;
   transition: opacity.2s ease;
+}
+.secondaryButtonRefresh_f40049:first-child {
+  padding-left: 8px;
+}
+.secondaryButtonRefresh_f40049:last-child {
+  padding-right: 8px;
 }
 .secondaryButtonRefresh_f40049:focus,
 .secondaryButtonRefresh_f40049:hover {
@@ -26441,7 +26458,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   padding-top: 17px;
   transition: padding-top.1s ease;
 }
-.primaryIconRefresh_f40049.hasEmoji_f40049 {
+.primaryIconRefresh_f40049.hasEmoji_f40049,
+.primaryIconRefresh_f40049.primaryIconTopLevel_f40049 {
   padding-top: 6px;
 }
 .lockIcon_f40049 {
@@ -44856,4 +44874,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.f993861a2b023c8c33c2.css.map*/
+/*# sourceMappingURL=12633.5ac4f9eea33f77432bdd.css.map*/
