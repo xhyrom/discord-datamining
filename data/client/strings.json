@@ -5910,8 +5910,6 @@
   "SCREENSHARE_STREAM_QUALITY": "\"Stream Quality\"",
   "SCREENSHARE_FRAME_RATE": "\"Frame Rate\"",
   "SCREENSHARE_INCLUDE_AUDIO": "\"Share Audio\"",
-  "SCREENSHARE_RELAUNCH": "\"Screen Share Problems\"",
-  "SCREENSHARE_RELAUNCH_BODY": "\"Our robots have gone wild and need to re-launch Discord to get screen share working again. Are you sure you want to do this?\"",
   "SCREENSHARE_RESOLUTION_ABBREVIATED": "\"{resolution}p\"",
   "SCREENSHARE_FPS_ABBREVIATED": "\"{fps}FPS\"",
   "SCREENSHARE_QUALITY_TOOLTIP_NORMAL": "\"Streaming quality\"",
