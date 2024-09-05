@@ -17558,6 +17558,9 @@ div.cardContainer_c22357 {
 .nitroWheel_f03ca8 {
   margin-right: 6px;
 }
+.nitroText_f03ca8 {
+  flex-wrap: wrap;
+}
 .modalPreview_aba31b {
   width: 280px;
   box-sizing: border-box;
@@ -44871,4 +44874,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.b21f0be4225be1ee3084.css.map*/
+/*# sourceMappingURL=12633.5ac4f9eea33f77432bdd.css.map*/
