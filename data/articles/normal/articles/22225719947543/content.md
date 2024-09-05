@@ -20,23 +20,21 @@
   >
 </p>
 <ul>
-  <li>
-    <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
+  <li><a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a></li>
+  <li style="list-style-type: none">
     <ul>
+      <li><a href="#h_01J71E6SB3E6C2WB0T0D994406">Wuthering Waves </a></li>
       <li><a href="#h_01J6G4D7V76YHX2F60YETE63JJ">The First Descendant </a></li>
-      <li><a href="#h_01J6CYAK9AGQZA822DFWMHB6JJ">Genshin Impact </a></li>
-      <li><a href="#h_01J6A8FGA5ANQQTQ73FSKGRK1F">Predecessor </a></li>
       <li><a href="#h_01J6006XQ2BKXT4ADDBYR3XKCV">World of Warcraft</a></li>
-      <li><a href="#h_01J60070GYC9JRMN1THG499F5C"> Skull and Bones</a></li>
     </ul>
   </li>
   <li>
     <a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests</a>
     <ul>
+      <li><a href="#h_01J71F0RY3F0CF02065Y2P5ARZ">Predecessor</a></li>
       <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Krunker Strike FRVR</a></li>
       <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">GTA Online</a></li>
       <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">VALORANT </a></li>
-      <li><a href="#h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">The Sims 4 </a></li>
     </ul>
   </li>
   <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
@@ -62,6 +60,21 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J71E6SB3E6C2WB0T0D994406">
+  <a
+    href="https://support.discord.com/hc/articles/26110830890135"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Wuthering Waves - V1.2 WUWA Quest</a
+  >
+</h2>
+<p>
+  The <strong>V1.2 WUWA Quest</strong> can be accepted on Discord from
+  <strong>September 5, 2024 </strong>until<strong>
+    September 9, 2024 (11:59PM UTC)</strong
+  >. Reward gift codes expire <strong>October 9, 2024 (4AM UTC)</strong>. Quest
+  requirements must be completed during this period to receive the reward.
+</p>
 <h2 id="h_01J6G4D7V76YHX2F60YETE63JJ">
   <a
     href="https://support.discord.com/hc/articles/25946905644695"
@@ -76,36 +89,6 @@
     September 5, 2024 (11:59PM UTC)</strong
   >. Quest requirements must be completed during this period to receive the
   reward.
-</p>
-<h2 id="h_01J6CYAK9AGQZA822DFWMHB6JJ">
-  <a
-    href="https://support.discord.com/hc/articles/25871146063511"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Genshin Impact - V5.0 Quest</a
-  >
-</h2>
-<p>
-  The <strong>V5.0 Quest</strong> can be accepted on Discord from
-  <strong>August 28, 2024 </strong>until<strong>
-    September 4, 2024 (11:59PM UTC)</strong
-  >. Quest requirements must be completed during this period to receive the
-  reward.
-</p>
-<h2 id="h_01J6A8FGA5ANQQTQ73FSKGRK1F">
-  <a
-    href="https://support.discord.com/hc/articles/25871940367895"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Predecessor - Predecessor Skin Quest</a
-  >
-</h2>
-<p>
-  The <strong>Predecessor</strong> <strong>Skin</strong>
-  <strong>Quest</strong> can be accepted on Discord from
-  <strong>August</strong> <strong>27, 2024</strong> until
-  <strong>September 3, 2024 (11:59PM UTC)</strong>. Quest requirements must be
-  completed during this period to receive the reward.
 </p>
 <h2 id="h_01J6006XQ2BKXT4ADDBYR3XKCV">
   <a
@@ -122,23 +105,23 @@
   >. Quest requirements must be completed during this period to receive the
   reward.
 </p>
-<h2 id="h_01J60070GYC9JRMN1THG499F5C">
+<h1 id="h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </h1>
+<h2 id="h_01J71F0RY3F0CF02065Y2P5ARZ">
   <a
-    href="https://support.discord.com/hc/articles/25685158256407"
+    href="https://support.discord.com/hc/articles/25871940367895-Predecessor-Quest"
     target="_blank"
     rel="noopener noreferrer"
-    >Skull and Bones - Skull and Bones Quest</a
+    >Predecessor - Predecessor Skin Quest</a
   >
 </h2>
 <p>
-  The<strong> Skull and Bones</strong> <strong>Quest</strong> can be accepted on
-  Discord from <strong>August 23, 2024 </strong>until<strong>
-    August 30, 2024</strong
-  >
-  <strong>(11:59PM UTC)</strong>. Quest requirements must be completed during
-  this period to receive the reward.
+  The <strong>Predecessor</strong> <strong>Skin</strong>
+  <strong>Quest</strong> can be accepted on Discord from
+  <strong>August 27, 2024 </strong>until<strong>
+    September 3, 2024 (11:59PM UTC)</strong
+  >. Reward gift codes expire <strong>October 3, 2024</strong>. Quest
+  requirements must be completed during this period to receive the reward.
 </p>
-<h1 id="h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </h1>
 <h2 id="01J600SFT31JAMN09G681BW71N">
   <a
     href="https://support.discord.com/hc/articles/25459791491735/"
@@ -166,9 +149,10 @@
 <p>
   The <strong>GTA Online Quest</strong> can be accepted on Discord from
   <strong>August 8, 2024</strong> until
-  <strong>August 15, 2024 (11:59PM UTC)</strong>. The Los Santos Avatar
-  Decoration needs to be redeemed by <strong>September 15, 2024. </strong>Quest
-  requirements must be completed during this period to receive the reward. 
+  <strong>August 15, 2024 (11:59PM UTC)</strong>. The
+  <strong>Los Santos Avatar Decoration</strong> needs to be redeemed by
+  <strong>September 15, 2024. </strong>Quest requirements must be completed
+  during this period to receive the reward. 
 </p>
 <h2 id="01J600SFT430BYDXR4VBW19JHZ">
   <a
@@ -181,24 +165,9 @@
 <p>
   The <strong>Wingman Quest</strong> can be accepted on Discord from
   <strong>July 26, 2024 </strong>until
-  <strong>August 8, 2024 (11:59PM UTC)</strong>. The Wingman avatar decoration
-  needs to be redeemed by <strong>September 7, 2024</strong>. Quest requirements
-  must be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J3NDZ4B8K4BX9BZQ2SYXDYNM">
-  <a
-    href="https://support.discord.com/hc/articles/24948010607383-The-Sims-4-Quest"
-    target="_blank"
-    rel="noopener noreferrer"
-    >The Sims 4 - Lovestruck Quest</a
-  >
-</h2>
-<p>
-  The <strong>Lovestruck Quest</strong> can be accepted on Discord from
-  <strong>July 25, 2024</strong> until <strong>August 1</strong
-  ><strong>, 2024</strong> <strong>(11:59PM UTC)</strong>. The Freezer Bunny
-  Lovebug avatar decoration needs to be redeemed by
-  <strong>September 1, 2024</strong>. Quest requirements must be completed
+  <strong>August 8, 2024 (11:59PM UTC)</strong>. The
+  <strong>Wingman avatar decoration</strong> needs to be redeemed by
+  <strong>September 7, 2024</strong>. Quest requirements must be completed
   during this period to receive the reward.
 </p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
