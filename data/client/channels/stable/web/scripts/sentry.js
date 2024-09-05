@@ -239,10 +239,10 @@
             (E.prototype.abs = function () {
               return new E(this.value >= 0 ? this.value : -this.value);
             });
-          function D(e, t, r) {
+          function L(e, t, r) {
             return e < 1e7 ? new i(f(t, e), r) : new i(O(t, c(e)), r);
           }
-          function L(e) {
+          function D(e) {
             var t,
               r,
               n,
@@ -298,7 +298,7 @@
             (_.prototype._multiplyBySmall = function (e) {
               return s(e.value * this.value)
                 ? new _(e.value * this.value)
-                : D(
+                : L(
                     Math.abs(e.value),
                     c(Math.abs(this.value)),
                     this.sign !== e.sign,
@@ -311,7 +311,7 @@
                   ? this
                   : -1 === e.value
                     ? this.negate()
-                    : D(Math.abs(e.value), this.value, this.sign !== e.sign);
+                    : L(Math.abs(e.value), this.value, this.sign !== e.sign);
             }),
             (_.prototype.multiply = function (e) {
               return W(e)._multiplyBySmall(this);
@@ -322,11 +322,11 @@
             }),
             (E.prototype.times = E.prototype.multiply),
             (i.prototype.square = function () {
-              return new i(L(this.value), !1);
+              return new i(D(this.value), !1);
             }),
             (_.prototype.square = function () {
               var e = this.value * this.value;
-              return s(e) ? new _(e) : new i(L(c(Math.abs(this.value))), !1);
+              return s(e) ? new _(e) : new i(D(c(Math.abs(this.value))), !1);
             }),
             (E.prototype.square = function (e) {
               return new E(this.value * this.value);
@@ -458,16 +458,16 @@
                     return s.reverse(), [I(s), I(c)];
                   })(A, T))[0];
             var S = e.sign !== s.sign,
-              D = n[1],
-              L = e.sign;
+              L = n[1],
+              D = e.sign;
             return (
               "number" == typeof r
                 ? (S && (r = -r), (r = new _(r)))
                 : (r = new i(r, S)),
-              "number" == typeof D
-                ? (L && (D = -D), (D = new _(D)))
-                : (D = new i(D, L)),
-              [r, D]
+              "number" == typeof L
+                ? (D && (L = -L), (L = new _(L)))
+                : (L = new i(L, D)),
+              [r, L]
             );
           }
           function g(e, t) {
@@ -2014,8 +2014,8 @@
           O = T.BUGGY_SAFARI_ITERATORS,
           f = R("iterator"),
           S = "keys",
-          D = "values",
-          L = "entries",
+          L = "values",
+          D = "entries",
           h = function () {
             return this;
           };
@@ -2029,8 +2029,8 @@
               if (!O && e && e in y) return y[e];
               switch (e) {
                 case S:
-                case D:
                 case L:
+                case D:
                   return function () {
                     return new r(this, e);
                   };
@@ -2053,18 +2053,18 @@
               I(g, U, !0, !0),
               o && (A[U] = h)),
             d &&
-              R === D &&
+              R === L &&
               v &&
-              v.name !== D &&
+              v.name !== L &&
               (!o && N
-                ? u(y, "name", D)
+                ? u(y, "name", L)
                 : ((G = !0),
                   (b = function () {
                     return a(v, this);
                   }))),
             R)
           ) {
-            if (((M = { values: m(D), keys: T ? b : m(S), entries: m(L) }), C))
+            if (((M = { values: m(L), keys: T ? b : m(S), entries: m(D) }), C))
               for (P in M) (O || G || !(P in y)) && l(y, P, M[P]);
             else n({ target: t, proto: !0, forced: O || G }, M);
           }
@@ -2733,32 +2733,32 @@
           if (f) {
             var S = f.prototype;
             if ((!A && a(S, "cause") && delete S.cause, !r)) return f;
-            var D = n("Error"),
-              L = t(function (e, t) {
+            var L = n("Error"),
+              D = t(function (e, t) {
                 var r = I(T ? t : e, void 0),
                   n = T ? new f(e) : new f();
                 return (
                   void 0 !== r && o(n, "message", r),
-                  l(n, L, n.stack, 2),
-                  this && i(S, this) && c(n, this, L),
+                  l(n, D, n.stack, 2),
+                  this && i(S, this) && c(n, this, D),
                   arguments.length > N && u(n, arguments[N]),
                   n
                 );
               });
             if (
-              ((L.prototype = S),
+              ((D.prototype = S),
               "Error" !== O
                 ? _
-                  ? _(L, D)
-                  : E(L, D, { name: !0 })
-                : R && d in f && (s(L, f, d), s(L, f, "prepareStackTrace")),
-              E(L, f),
+                  ? _(D, L)
+                  : E(D, L, { name: !0 })
+                : R && d in f && (s(D, f, d), s(D, f, "prepareStackTrace")),
+              E(D, f),
               !A)
             )
               try {
-                S.name !== O && o(S, "name", O), (S.constructor = L);
+                S.name !== O && o(S, "name", O), (S.constructor = D);
               } catch (e) {}
-            return L;
+            return D;
           }
         };
       },
@@ -3248,27 +3248,27 @@
             f = p ? u : _(t);
           (O = O == I ? l : O), (f = f == I ? l : f);
           var S = O == l,
-            D = f == l,
-            L = O == f;
-          if (L && s(e)) {
+            L = f == l,
+            D = O == f;
+          if (D && s(e)) {
             if (!s(t)) return !1;
             (N = !0), (S = !1);
           }
-          if (L && !S)
+          if (D && !S)
             return (
               d || (d = new n()),
               N || c(e) ? a(e, t, r, A, T, d) : o(e, t, O, r, A, T, d)
             );
           if (!(1 & r)) {
             var h = S && R.call(e, "__wrapped__"),
-              C = D && R.call(t, "__wrapped__");
+              C = L && R.call(t, "__wrapped__");
             if (h || C) {
               var g = h ? e.value() : e,
                 M = C ? t.value() : t;
               return d || (d = new n()), T(g, M, r, A, d);
             }
           }
-          return !!L && (d || (d = new n()), i(e, t, r, A, T, d));
+          return !!D && (d || (d = new n()), i(e, t, r, A, T, d));
         };
       },
       46166: function (e, t, r) {
@@ -4433,7 +4433,7 @@
             return aW.$7;
           },
           $92: function () {
-            return op;
+            return oO;
           },
           $Ab: function () {
             return O;
@@ -4448,7 +4448,7 @@
             return aF.$V;
           },
           $Y6: function () {
-            return ow;
+            return oH;
           },
           $ib: function () {
             return i;
@@ -4481,10 +4481,10 @@
             return aF.B1;
           },
           B9o: function () {
-            return om;
+            return oU;
           },
           BFP: function () {
-            return oJ;
+            return oQ;
           },
           BRd: function () {
             return aF.BR;
@@ -4526,7 +4526,7 @@
             return a4;
           },
           E07: function () {
-            return ox;
+            return oF;
           },
           EKQ: function () {
             return aF.EK;
@@ -4535,7 +4535,7 @@
             return aF.ET;
           },
           EYA: function () {
-            return oV;
+            return ox;
           },
           EkH: function () {
             return E;
@@ -4553,7 +4553,7 @@
             return aW.Fs;
           },
           GNZ: function () {
-            return ii;
+            return i_;
           },
           GQo: function () {
             return ti;
@@ -4568,7 +4568,7 @@
             return aF.H0;
           },
           HGf: function () {
-            return ic;
+            return iI;
           },
           HN8: function () {
             return o_;
@@ -4577,10 +4577,10 @@
             return aF.He;
           },
           Hqc: function () {
-            return ir;
+            return ia;
           },
           HsE: function () {
-            return iR;
+            return iA;
           },
           IE4: function () {
             return M;
@@ -4592,7 +4592,7 @@
             return tW;
           },
           IXf: function () {
-            return oS;
+            return oL;
           },
           I_8: function () {
             return az;
@@ -4616,22 +4616,22 @@
             return aF.Jj;
           },
           JkL: function () {
-            return oY;
+            return oK;
           },
           Jn9: function () {
-            return iL;
+            return ih;
           },
           JuI: function () {
-            return ou;
+            return ol;
           },
           JwP: function () {
-            return o9;
+            return ie;
           },
           K3D: function () {
             return tx;
           },
           KA4: function () {
-            return oj;
+            return o$;
           },
           KFR: function () {
             return e1;
@@ -4642,8 +4642,11 @@
           KsC: function () {
             return l;
           },
+          L4X: function () {
+            return oE;
+          },
           LAt: function () {
-            return oM;
+            return oP;
           },
           LPv: function () {
             return eM;
@@ -4652,7 +4655,7 @@
             return e_;
           },
           Lg6: function () {
-            return iN;
+            return ip;
           },
           M7m: function () {
             return em;
@@ -4673,7 +4676,7 @@
             return e9;
           },
           N_j: function () {
-            return iE;
+            return is;
           },
           NgX: function () {
             return c;
@@ -4688,7 +4691,7 @@
             return aj;
           },
           OBo: function () {
-            return o7;
+            return o9;
           },
           OGo: function () {
             return q;
@@ -4697,7 +4700,7 @@
             return aF.OM;
           },
           OSm: function () {
-            return ol;
+            return oR;
           },
           OYC: function () {
             return w;
@@ -4709,16 +4712,16 @@
             return H;
           },
           PEY: function () {
-            return oO;
+            return of;
           },
           PNu: function () {
             return ot;
           },
           POd: function () {
-            return tD;
+            return tL;
           },
           PRK: function () {
-            return od;
+            return oN;
           },
           PUi: function () {
             return e5;
@@ -4730,7 +4733,7 @@
             return f;
           },
           PrS: function () {
-            return oB;
+            return ow;
           },
           PyE: function () {
             return aF.Py;
@@ -4760,10 +4763,10 @@
             return eW;
           },
           R7I: function () {
-            return oH;
+            return oY;
           },
           REU: function () {
-            return iA;
+            return iT;
           },
           RG5: function () {
             return aF.RG;
@@ -4772,10 +4775,10 @@
             return aF.RK;
           },
           RcX: function () {
-            return oG;
+            return oy;
           },
           Rg9: function () {
-            return io;
+            return ii;
           },
           S7T: function () {
             return aF.S7;
@@ -4787,7 +4790,7 @@
             return tE;
           },
           SRg: function () {
-            return it;
+            return ir;
           },
           Sap: function () {
             return ew;
@@ -4802,19 +4805,19 @@
             return aF.Sk;
           },
           T23: function () {
-            return ih;
+            return iC;
           },
           TC2: function () {
             return aF.TC;
           },
           TNx: function () {
-            return oX;
+            return oj;
           },
           TPd: function () {
             return av.T;
           },
           TU7: function () {
-            return oP;
+            return om;
           },
           TaA: function () {
             return td;
@@ -4856,7 +4859,7 @@
             return e7;
           },
           VKK: function () {
-            return oE;
+            return os;
           },
           V_K: function () {
             return eC;
@@ -4868,10 +4871,10 @@
             return aF.Vz;
           },
           WKe: function () {
-            return oT;
+            return od;
           },
           WND: function () {
-            return o8;
+            return o7;
           },
           WtW: function () {
             return en;
@@ -4889,13 +4892,13 @@
             return a1;
           },
           XKF: function () {
-            return is;
+            return ic;
           },
           XmY: function () {
-            return oN;
+            return op;
           },
           Xyh: function () {
-            return of;
+            return oS;
           },
           YKx: function () {
             return eU;
@@ -4931,7 +4934,7 @@
             return k;
           },
           _8R: function () {
-            return iS;
+            return iL;
           },
           _s_: function () {
             return I;
@@ -4940,7 +4943,7 @@
             return V;
           },
           a5g: function () {
-            return eL;
+            return eD;
           },
           aIL: function () {
             return aZ;
@@ -4949,7 +4952,7 @@
             return aF.aO;
           },
           aZC: function () {
-            return oz;
+            return oJ;
           },
           aib: function () {
             return eE;
@@ -4958,13 +4961,13 @@
             return tR;
           },
           b2L: function () {
-            return o2;
+            return o6;
           },
           b4C: function () {
             return tz;
           },
           b8q: function () {
-            return o$;
+            return oq;
           },
           bL: function () {
             return et;
@@ -4979,7 +4982,7 @@
             return av.d;
           },
           dAT: function () {
-            return eD;
+            return eL;
           },
           dCx: function () {
             return eb;
@@ -4994,13 +4997,13 @@
             return aF.yA;
           },
           dN1: function () {
-            return oR;
+            return oA;
           },
           e3s: function () {
-            return iu;
+            return il;
           },
           eBq: function () {
-            return iI;
+            return iu;
           },
           eHb: function () {
             return tn;
@@ -5009,13 +5012,13 @@
             return ev;
           },
           eWB: function () {
-            return oC;
+            return og;
           },
           ecB: function () {
             return e0;
           },
           eez: function () {
-            return oU;
+            return oG;
           },
           en1: function () {
             return oo;
@@ -5024,7 +5027,7 @@
             return tO;
           },
           epw: function () {
-            return oh;
+            return oC;
           },
           evJ: function () {
             return ec;
@@ -5039,13 +5042,13 @@
             return aW.fM;
           },
           fo$: function () {
-            return og;
+            return oM;
           },
           frH: function () {
             return aF.fr;
           },
           fzT: function () {
-            return oZ;
+            return o0;
           },
           g2L: function () {
             return o;
@@ -5075,7 +5078,7 @@
             return g;
           },
           iC$: function () {
-            return iT;
+            return id;
           },
           iEv: function () {
             return tA;
@@ -5105,7 +5108,7 @@
             return tk;
           },
           jsM: function () {
-            return il;
+            return iR;
           },
           jwA: function () {
             return eZ;
@@ -5114,10 +5117,10 @@
             return tf;
           },
           kVF: function () {
-            return D;
+            return L;
           },
           keq: function () {
-            return ov;
+            return ob;
           },
           kg4: function () {
             return s;
@@ -5126,7 +5129,7 @@
             return aQ;
           },
           l$U: function () {
-            return oc;
+            return oI;
           },
           l4R: function () {
             return tS;
@@ -5147,37 +5150,37 @@
             return $;
           },
           mBz: function () {
-            return oA;
+            return oT;
           },
           mFx: function () {
             return J;
           },
           nkL: function () {
-            return i_;
+            return iE;
           },
           nnr: function () {
             return a;
           },
           o3l: function () {
-            return o4;
+            return o8;
           },
           oAB: function () {
-            return oq;
+            return oz;
           },
           oCV: function () {
-            return o5;
+            return o4;
           },
           oNc: function () {
             return C;
           },
           p3w: function () {
-            return ob;
+            return oB;
           },
           p6O: function () {
-            return o0;
+            return o1;
           },
           pAY: function () {
-            return oy;
+            return ov;
           },
           pJs: function () {
             return d;
@@ -5198,7 +5201,7 @@
             return t_;
           },
           pmI: function () {
-            return o1;
+            return o3;
           },
           q5t: function () {
             return eu;
@@ -5210,28 +5213,28 @@
             return eT;
           },
           qWG: function () {
-            return ip;
+            return iO;
           },
           qc2: function () {
             return tN;
           },
           qhL: function () {
-            return oL;
+            return oh;
           },
           qrD: function () {
             return p;
           },
           r2o: function () {
-            return L;
+            return D;
           },
           rMx: function () {
             return eF;
           },
           rnv: function () {
-            return oF;
+            return oW;
           },
           rsA: function () {
-            return ia;
+            return io;
           },
           rtL: function () {
             return eB;
@@ -5246,7 +5249,7 @@
             return tT;
           },
           scU: function () {
-            return oK;
+            return ok;
           },
           si2: function () {
             return tV;
@@ -5264,7 +5267,7 @@
             return aF.tN;
           },
           tPV: function () {
-            return oI;
+            return ou;
           },
           tPk: function () {
             return aF.tP;
@@ -5285,25 +5288,25 @@
             return eQ;
           },
           vTt: function () {
-            return o6;
+            return o5;
           },
           vbS: function () {
-            return oQ;
+            return oZ;
           },
           vpv: function () {
-            return oW;
+            return oX;
           },
           vtS: function () {
             return ep;
           },
           vuo: function () {
-            return os;
+            return oc;
           },
           vxO: function () {
             return tl;
           },
           w2V: function () {
-            return id;
+            return iN;
           },
           wC$: function () {
             return B;
@@ -5315,7 +5318,7 @@
             return z;
           },
           xAR: function () {
-            return iO;
+            return iS;
           },
           xPJ: function () {
             return b;
@@ -5348,13 +5351,13 @@
             return tq;
           },
           yqN: function () {
-            return ie;
+            return it;
           },
           ys_: function () {
             return er;
           },
           z7k: function () {
-            return ok;
+            return oV;
           },
           zMe: function () {
             return aF.zM;
@@ -5391,8 +5394,8 @@
           O,
           f,
           S,
-          D,
           L,
+          D,
           h,
           C,
           g,
@@ -5445,8 +5448,8 @@
           eO,
           ef,
           eS,
-          eD,
           eL,
+          eD,
           eh,
           eC,
           eg,
@@ -5509,8 +5512,8 @@
           tO,
           tf,
           tS,
-          tD,
           tL,
+          tD,
           th,
           tC,
           tg,
@@ -5573,8 +5576,8 @@
           rO,
           rf,
           rS,
-          rD,
           rL,
+          rD,
           rh,
           rC,
           rg,
@@ -5637,8 +5640,8 @@
           nO,
           nf,
           nS,
-          nD,
           nL,
+          nD,
           nh,
           nC,
           ng,
@@ -5701,8 +5704,8 @@
           aO,
           af,
           aS,
-          aD,
           aL,
+          aD,
           ah,
           aC,
           ag,
@@ -5930,6 +5933,7 @@
           (rn.PERMISSION_OVERRIDES = "PERMISSION_OVERRIDES"),
           (rn.CHANGE_CATEGORY = "CHANGE_CATEGORY"),
           (rn.WEBHOOKS = "WEBHOOKS"),
+          (rn.CHANNELS_FOLLOWED = "CHANNELS_FOLLOWED"),
           (rn.EDIT_WEBHOOK = "EDIT_WEBHOOK"),
           (rn.CHANGE_RTC_REGION = "CHANGE_RTC_REGION"),
           (rn.EDIT_FORUM_TAG = "EDIT_FORUM_TAG"),
@@ -5959,7 +5963,7 @@
           (rs.SELECTED_CHANNEL = "SELECTED_CHANNEL"),
           ((rc = S || (S = {})).PUSH_TO_TALK = "PUSH_TO_TALK"),
           (rc.VOICE_ACTIVITY = "VOICE_ACTIVITY"),
-          ((rI = D || (D = {})).GENERIC = "GENERIC"),
+          ((rI = L || (L = {})).GENERIC = "GENERIC"),
           (rI.LAUNCH_GAME_FAILURE = "LAUNCH_GAME_FAILURE"),
           (rI.UNCLAIMED_ACCOUNT = "UNCLAIMED_ACCOUNT"),
           (rI.UNVERIFIED_ACCOUNT = "UNVERIFIED_ACCOUNT"),
@@ -6032,7 +6036,7 @@
           (rI.QUESTS_PROGRESS_INTERRUPTION = "QUESTS_PROGRESS_INTERRUPTION"),
           (rI.CHECKOUT_RECOVERY_NAGBAR = "CHECKOUT_RECOVERY_NAGBAR"),
           (rI.CASH_APP_PAY_AWARENESS_NAGBAR = "CASH_APP_PAY_AWARENESS_NAGBAR"),
-          ((ru = L || (L = {})).RESOLVING = "RESOLVING"),
+          ((ru = D || (D = {})).RESOLVING = "RESOLVING"),
           (ru.RESOLVED = "RESOLVED"),
           (ru.EXPIRED = "EXPIRED"),
           (ru.BANNED = "BANNED"),
@@ -6206,13 +6210,13 @@
           (rS[(rS.IS_REMIX = 4)] = "IS_REMIX"),
           (rS[(rS.IS_SPOILER = 8)] = "IS_SPOILER"),
           (rS[(rS.CONTAINS_EXPLICIT_MEDIA = 16)] = "CONTAINS_EXPLICIT_MEDIA"),
-          ((rD = b || (b = {}))[(rD.CONTAINS_EXPLICIT_MEDIA = 16)] =
+          ((rL = b || (b = {}))[(rL.CONTAINS_EXPLICIT_MEDIA = 16)] =
             "CONTAINS_EXPLICIT_MEDIA"),
-          (rD[(rD.IS_CONTENT_INVENTORY_ENTRY = 32)] =
+          (rL[(rL.IS_CONTENT_INVENTORY_ENTRY = 32)] =
             "IS_CONTENT_INVENTORY_ENTRY"),
-          ((rL = B || (B = {})).ALWAYS = "ALWAYS"),
-          (rL.NEVER = "NEVER"),
-          (rL.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"),
+          ((rD = B || (B = {})).ALWAYS = "ALWAYS"),
+          (rD.NEVER = "NEVER"),
+          (rD.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"),
           ((rh = w || (w = {})).ALWAYS = "ALWAYS"),
           (rh.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"),
           ((rC = H || (H = {})).GUILDS = "GUILDS"),
@@ -6471,6 +6475,8 @@
             USER_JOIN_REQUEST_GUILDS: "/users/@me/join-request-guilds",
             GUILD_MEMBER_REQUEST_TO_JOIN: (e) =>
               "/guilds/".concat(e, "/requests/@me"),
+            GUILD_MEMBER_JOIN_REQUEST_COOLDOWN: (e) =>
+              "/guilds/".concat(e, "/requests/@me/cooldown"),
             GUILD_JOIN_REQUEST: (e, t) =>
               "/guilds/".concat(e, "/requests/").concat(t),
             GUILD_JOIN_REQUEST_ID: (e, t) =>
@@ -7711,12 +7717,13 @@
           oo = 4e3,
           oi = 50,
           o_ = 100,
-          oE = 100,
-          os = 256,
-          oc = 32,
-          oI = 190,
-          ou = 32,
-          ol = 6e5;
+          oE = 1e3,
+          os = 100,
+          oc = 256,
+          oI = 32,
+          ou = 190,
+          ol = 32,
+          oR = 6e5;
         aK.Z.Seconds.HOUR,
           aK.Z.Seconds.MINUTE,
           aK.Z.Seconds.MINUTE,
@@ -7726,14 +7733,14 @@
           aK.Z.Seconds.MINUTE,
           aK.Z.Seconds.HOUR,
           aK.Z.Seconds.HOUR;
-        let oR = 10,
-          oA = 26214400,
-          oT = 10485760,
-          od = 524288e3,
-          oN = (e) => "||".concat(e, "||"),
-          op = /^\|\|([\s\S]+?)\|\|/,
-          oO = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
-          of = /^\d{17,19}$/;
+        let oA = 10,
+          oT = 26214400,
+          od = 10485760,
+          oN = 524288e3,
+          op = (e) => "||".concat(e, "||"),
+          oO = /^\|\|([\s\S]+?)\|\|/,
+          of = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
+          oS = /^\d{17,19}$/;
         ((rx = er || (er = {})).MESSAGE = "MESSAGE"),
           (rx.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED"),
           (rx.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER"),
@@ -7763,27 +7770,27 @@
           (r$.GAMES_YOU_PLAY = "gamesYouPlay"),
           (r$.SEARCH = "search"),
           (r$.MISC = "misc");
-        let oS = 128,
+        let oL = 128,
           oD = 1024,
-          oL = 2e3,
-          oh = 64e3,
-          oC = 96e3,
-          og = "0000",
-          oM = "1",
-          oP = 1e4,
-          om = 50,
-          oU = 150,
-          oG = 300,
-          oy = 10,
-          ov = 20,
-          ob = 25,
-          oB = 240,
-          ow = 480,
-          oH = 650,
-          oY = "DEVICE_TOKEN",
-          oK = "DEVICE_VOIP_TOKEN",
-          ok = "first_run_date_key",
-          oV = Object.freeze({
+          oh = 2e3,
+          oC = 64e3,
+          og = 96e3,
+          oM = "0000",
+          oP = "1",
+          om = 1e4,
+          oU = 50,
+          oG = 150,
+          oy = 300,
+          ov = 10,
+          ob = 20,
+          oB = 25,
+          ow = 240,
+          oH = 480,
+          oY = 650,
+          oK = "DEVICE_TOKEN",
+          ok = "DEVICE_VOIP_TOKEN",
+          oV = "first_run_date_key",
+          ox = Object.freeze({
             API_DOCS: "".concat(
               window.GLOBAL_ENV.MARKETING_ENDPOINT,
               "/developers/docs/intro",
@@ -7904,7 +7911,7 @@
               "/safetycenter",
             ),
           }),
-          ox = Object.freeze({
+          oF = Object.freeze({
             DEVELOPER_PORTAL: "/developers",
             DEVELOPER_PORTAL_GUILD_ANALYTICS: (e) =>
               "/developers/servers/".concat(e),
@@ -7912,10 +7919,10 @@
             DEVELOPER_PORTAL_EDIT_PAYOUTS: (e) =>
               "/developers/teams/".concat(e, "/payout-settings"),
           }),
-          oF = 10,
-          oW = 25,
-          oX = /^FILTER_/,
-          oj = /^ANSWER_/;
+          oW = 10,
+          oX = 25,
+          oj = /^FILTER_/,
+          o$ = /^ANSWER_/;
         ((rq = eE || (eE = {})).GUILD = "GUILD"),
           (rq.FAVORITES = "FAVORITES"),
           (rq.CHANNEL = "CHANNEL"),
@@ -8368,7 +8375,7 @@
           (r1.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"),
           (r1.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r1.NITRO_HOME = "Nitro Home");
-        let o$ = "help_center_cta";
+        let oq = "help_center_cta";
         ((r3 = eA || (eA = {})).HERO = "Hero"),
           (r3.BODY = "Body"),
           (r3.NAVIGATION = "Navigation"),
@@ -8902,7 +8909,7 @@
           ((r5 = eN || (eN = {})).PRIMARY = "primary"),
           (r5.SECONDARY = "secondary"),
           (r5.DISMISS = "dismiss");
-        let oq = Object.freeze({
+        let oz = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
           INTL_TESTING: "Intl Testing",
@@ -9074,13 +9081,13 @@
           (r9.SUMMARIES_NOTICE = "Summaries Channel Notice"),
           (r9.SUMMARIES_ENABLED_NOTICE = "Summaries Enabled Notice"),
           (r9.CLAN_ADMIN_UPSELL = "Clan Admin Upsell"),
-          ((ne = eD || (eD = {})).APPLICATION = "Application"),
+          ((ne = eL || (eL = {})).APPLICATION = "Application"),
           (ne.SERVER_INVITE = "Server Invite"),
           (ne.GDM_INVITE = "GDM Invite"),
           (ne.FRIEND_INVITE = "Friend Invite"),
           (ne.SPOTIFY = "Spotify"),
           (ne.STREAM = "Stream"),
-          ((nt = eL || (eL = {})).DIRECT_MESSAGE = "Direct Message"),
+          ((nt = eD || (eD = {})).DIRECT_MESSAGE = "Direct Message"),
           (nt.SMS = "SMS"),
           (nt.EMAIL = "Email"),
           ((nr = eh || (eh = {})).SHARE = "Share"),
@@ -9192,7 +9199,7 @@
             "TOGGLE_REACTION_POPOUT"),
           (no.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"),
           (no.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND");
-        let oz = 50;
+        let oJ = 50;
         ((ni = eP || (eP = {})).TWITCH = "twitch"),
           (ni.YOUTUBE = "youtube"),
           (ni.SKYPE = "skype"),
@@ -9239,15 +9246,15 @@
             GAME_INVITE_FRAGMENT: "/_discord/join?secret=",
             AUTHORIZATION_CANCEL_FRAGMENT: "/_discord/auth?cancel=true",
           });
-        let oJ = new Set(["facebook", "contacts"]),
-          oQ = new Set([
+        let oQ = new Set(["facebook", "contacts"]),
+          oZ = new Set([
             "spotify",
             "xbox",
             "playstation",
             "playstation-stg",
             "crunchyroll",
           ]),
-          oZ = Object.freeze({
+          o0 = Object.freeze({
             DESKTOP: ""
               .concat(location.protocol)
               .concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
@@ -9255,14 +9262,14 @@
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
           }),
-          o0 = 10070709,
-          o1 = [
+          o1 = 10070709,
+          o3 = [
             1752220, 3066993, 3447003, 10181046, 15277667, 15844367, 15105570,
             15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530,
             11342935, 12745742, 11027200, 10038562, 9936031, 5533306,
           ],
-          o3 = (0, aH._i)(ay.Z.BRAND_500);
-        aG()(null != o3, "Brand color could not be parsed"),
+          o2 = (0, aH._i)(ay.Z.BRAND_500);
+        aG()(null != o2, "Brand color could not be parsed"),
           ((nc = ey || (ey = {})).ROLE = "ROLE"),
           (nc.MEMBER = "MEMBER"),
           ((nI = ev || (ev = {})).VOICE_LEGACY_SUBSYSTEM =
@@ -9299,15 +9306,15 @@
           ((nR = ew || (ew = {})).EMPTY = "EMPTY"),
           (nR.FILTER = "FILTER"),
           (nR.FILTER_ALL = "FILTER_ALL");
-        let o2 = "YYYY-MM-DD",
-          o6 = "PrivateChannelRecipientsInvitePopout";
+        let o6 = "YYYY-MM-DD",
+          o5 = "PrivateChannelRecipientsInvitePopout";
         ((nA = eH || (eH = {}))[(nA.NONE = 0)] = "NONE"),
           (nA[(nA.TIER_1 = 1)] = "TIER_1"),
           (nA[(nA.TIER_2 = 2)] = "TIER_2"),
           (nA[(nA.TIER_3 = 3)] = "TIER_3");
-        let o5 = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
-          o4 = 7,
-          o8 = 0;
+        let o4 = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
+          o8 = 7,
+          o7 = 0;
         ((nT = eY || (eY = {}))[(nT.DEFAULT = 0)] = "DEFAULT"),
           (nT[(nT.GIFT = 1)] = "GIFT"),
           (nT[(nT.SALE = 2)] = "SALE"),
@@ -9316,7 +9323,7 @@
           (nT[(nT.MOBILE = 5)] = "MOBILE"),
           (nT[(nT.PREMIUM_TIER_0 = 6)] = "PREMIUM_TIER_0"),
           (nT[(nT.MOBILE_PREMIUM_TIER_2 = 7)] = "MOBILE_PREMIUM_TIER_2");
-        let o7 = Object.freeze({
+        let o9 = Object.freeze({
           fonts: [
             {
               src: "url(https://cdn.discordapp.com/assets/stripe/ggsans-vf.woff2)",
@@ -9333,7 +9340,7 @@
           (nd[(nd.BILLING_RETRY = 7)] = "BILLING_RETRY"),
           (nd[(nd.PAUSED = 8)] = "PAUSED"),
           (nd[(nd.PAUSE_PENDING = 9)] = "PAUSE_PENDING");
-        let o9 = { ALL_PAUSE: new Set([9, 8]), ALL_PAUSEABLE: new Set([1, 8]) };
+        let ie = { ALL_PAUSE: new Set([9, 8]), ALL_PAUSEABLE: new Set([1, 8]) };
         ((nN = ek || (ek = {}))[(nN.OPEN = 1)] = "OPEN"),
           (nN[(nN.PAID = 2)] = "PAID"),
           (nN[(nN.VOID = 3)] = "VOID"),
@@ -9349,7 +9356,7 @@
           (np.STICKER = "STICKER"),
           (np.CHOICE_LOADING = "CHOICE_LOADING"),
           (np.LABEL = "LABEL");
-        let ie = Object.freeze({
+        let it = Object.freeze({
           FONT_SIZE_DEFAULT: 16,
           FONT_SIZE_MIN: 12,
           FONT_SIZE_MAX: 24,
@@ -9796,6 +9803,8 @@
           (nf.SEARCH_V2_TAB_SELECTED = "search_v2_tab_selected"),
           (nf.SEARCH_V2_JUMP_TO_MESSAGE = "search_v2_jump_to_message"),
           (nf.GLOBAL_DISCOVERY_VIEWED = "global_discovery_viewed"),
+          (nf.GLOBAL_DISCOVERY_ENTRYPOINT_CLICKED =
+            "global_discovery_entrypoint_clicked"),
           (nf.GLOBAL_DISCOVERY_SERVERS_VIEWED =
             "global_discovery_servers_viewed"),
           (nf.UPSELL_VIEWED = "upsell_viewed"),
@@ -9858,6 +9867,8 @@
             "oauth2_authorize_success_viewed"),
           (nf.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED =
             "oauth2_authorize_success_go_to_guild_clicked"),
+          (nf.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED =
+            "oauth2_authorize_success_open_app_clicked"),
           (nf.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED =
             "oauth2_authorize_success_close_clicked"),
           (nf.OAUTH2_AUTHORIZE_STEP_VIEWED = "oauth2_authorize_step_viewed"),
@@ -10734,56 +10745,56 @@
           ((nS = eW || (eW = {})).CANARY = "canary"),
           (nS.PTB = "ptb"),
           (nS.STABLE = "stable"),
-          ((nD = eX || (eX = {}))[(nD.STAFF = 1)] = "STAFF"),
-          (nD[(nD.COLLABORATOR = 0x4000000000000)] = "COLLABORATOR"),
-          (nD[(nD.RESTRICTED_COLLABORATOR = 0x8000000000000)] =
+          ((nL = eX || (eX = {}))[(nL.STAFF = 1)] = "STAFF"),
+          (nL[(nL.COLLABORATOR = 0x4000000000000)] = "COLLABORATOR"),
+          (nL[(nL.RESTRICTED_COLLABORATOR = 0x8000000000000)] =
             "RESTRICTED_COLLABORATOR"),
-          (nD[(nD.PARTNER = 2)] = "PARTNER"),
-          (nD[(nD.HYPESQUAD = 4)] = "HYPESQUAD"),
-          (nD[(nD.BUG_HUNTER_LEVEL_1 = 8)] = "BUG_HUNTER_LEVEL_1"),
-          (nD[(nD.BUG_HUNTER_LEVEL_2 = 16384)] = "BUG_HUNTER_LEVEL_2"),
-          (nD[(nD.HYPESQUAD_ONLINE_HOUSE_1 = 64)] = "HYPESQUAD_ONLINE_HOUSE_1"),
-          (nD[(nD.HYPESQUAD_ONLINE_HOUSE_2 = 128)] =
+          (nL[(nL.PARTNER = 2)] = "PARTNER"),
+          (nL[(nL.HYPESQUAD = 4)] = "HYPESQUAD"),
+          (nL[(nL.BUG_HUNTER_LEVEL_1 = 8)] = "BUG_HUNTER_LEVEL_1"),
+          (nL[(nL.BUG_HUNTER_LEVEL_2 = 16384)] = "BUG_HUNTER_LEVEL_2"),
+          (nL[(nL.HYPESQUAD_ONLINE_HOUSE_1 = 64)] = "HYPESQUAD_ONLINE_HOUSE_1"),
+          (nL[(nL.HYPESQUAD_ONLINE_HOUSE_2 = 128)] =
             "HYPESQUAD_ONLINE_HOUSE_2"),
-          (nD[(nD.HYPESQUAD_ONLINE_HOUSE_3 = 256)] =
+          (nL[(nL.HYPESQUAD_ONLINE_HOUSE_3 = 256)] =
             "HYPESQUAD_ONLINE_HOUSE_3"),
-          (nD[(nD.PREMIUM_EARLY_SUPPORTER = 512)] = "PREMIUM_EARLY_SUPPORTER"),
-          (nD[(nD.VERIFIED_BOT = 65536)] = "VERIFIED_BOT"),
-          (nD[(nD.VERIFIED_DEVELOPER = 131072)] = "VERIFIED_DEVELOPER"),
-          (nD[(nD.CERTIFIED_MODERATOR = 262144)] = "CERTIFIED_MODERATOR"),
-          (nD[(nD.BOT_HTTP_INTERACTIONS = 524288)] = "BOT_HTTP_INTERACTIONS"),
-          (nD[(nD.SPAMMER = 1048576)] = "SPAMMER"),
-          (nD[(nD.DISABLE_PREMIUM = 2097152)] = "DISABLE_PREMIUM"),
-          (nD[(nD.ACTIVE_DEVELOPER = 4194304)] = "ACTIVE_DEVELOPER"),
-          (nD[(nD.PROVISIONAL_ACCOUNT = 8388608)] = "PROVISIONAL_ACCOUNT"),
-          (nD[(nD.MFA_SMS = 16)] = "MFA_SMS"),
-          (nD[(nD.PREMIUM_PROMO_DISMISSED = 32)] = "PREMIUM_PROMO_DISMISSED"),
-          (nD[(nD.HAS_UNREAD_URGENT_MESSAGES = 8192)] =
+          (nL[(nL.PREMIUM_EARLY_SUPPORTER = 512)] = "PREMIUM_EARLY_SUPPORTER"),
+          (nL[(nL.VERIFIED_BOT = 65536)] = "VERIFIED_BOT"),
+          (nL[(nL.VERIFIED_DEVELOPER = 131072)] = "VERIFIED_DEVELOPER"),
+          (nL[(nL.CERTIFIED_MODERATOR = 262144)] = "CERTIFIED_MODERATOR"),
+          (nL[(nL.BOT_HTTP_INTERACTIONS = 524288)] = "BOT_HTTP_INTERACTIONS"),
+          (nL[(nL.SPAMMER = 1048576)] = "SPAMMER"),
+          (nL[(nL.DISABLE_PREMIUM = 2097152)] = "DISABLE_PREMIUM"),
+          (nL[(nL.ACTIVE_DEVELOPER = 4194304)] = "ACTIVE_DEVELOPER"),
+          (nL[(nL.PROVISIONAL_ACCOUNT = 8388608)] = "PROVISIONAL_ACCOUNT"),
+          (nL[(nL.MFA_SMS = 16)] = "MFA_SMS"),
+          (nL[(nL.PREMIUM_PROMO_DISMISSED = 32)] = "PREMIUM_PROMO_DISMISSED"),
+          (nL[(nL.HAS_UNREAD_URGENT_MESSAGES = 8192)] =
             "HAS_UNREAD_URGENT_MESSAGES"),
-          (nD[(nD.QUARANTINED = 17592186044416)] = "QUARANTINED"),
-          ((nL = ej || (ej = {}))[(nL.EMBEDDED_RELEASED = 2)] =
+          (nL[(nL.QUARANTINED = 17592186044416)] = "QUARANTINED"),
+          ((nD = ej || (ej = {}))[(nD.EMBEDDED_RELEASED = 2)] =
             "EMBEDDED_RELEASED"),
-          (nL[(nL.EMBEDDED_IAP = 8)] = "EMBEDDED_IAP"),
-          (nL[(nL.APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE = 64)] =
+          (nD[(nD.EMBEDDED_IAP = 8)] = "EMBEDDED_IAP"),
+          (nD[(nD.APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE = 64)] =
             "APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE"),
-          (nL[(nL.GATEWAY_PRESENCE = 4096)] = "GATEWAY_PRESENCE"),
-          (nL[(nL.GATEWAY_PRESENCE_LIMITED = 8192)] =
+          (nD[(nD.GATEWAY_PRESENCE = 4096)] = "GATEWAY_PRESENCE"),
+          (nD[(nD.GATEWAY_PRESENCE_LIMITED = 8192)] =
             "GATEWAY_PRESENCE_LIMITED"),
-          (nL[(nL.GATEWAY_GUILD_MEMBERS = 16384)] = "GATEWAY_GUILD_MEMBERS"),
-          (nL[(nL.GATEWAY_GUILD_MEMBERS_LIMITED = 32768)] =
+          (nD[(nD.GATEWAY_GUILD_MEMBERS = 16384)] = "GATEWAY_GUILD_MEMBERS"),
+          (nD[(nD.GATEWAY_GUILD_MEMBERS_LIMITED = 32768)] =
             "GATEWAY_GUILD_MEMBERS_LIMITED"),
-          (nL[(nL.EMBEDDED = 131072)] = "EMBEDDED"),
-          (nL[(nL.GATEWAY_MESSAGE_CONTENT = 262144)] =
+          (nD[(nD.EMBEDDED = 131072)] = "EMBEDDED"),
+          (nD[(nD.GATEWAY_MESSAGE_CONTENT = 262144)] =
             "GATEWAY_MESSAGE_CONTENT"),
-          (nL[(nL.GATEWAY_MESSAGE_CONTENT_LIMITED = 524288)] =
+          (nD[(nD.GATEWAY_MESSAGE_CONTENT_LIMITED = 524288)] =
             "GATEWAY_MESSAGE_CONTENT_LIMITED"),
-          (nL[(nL.EMBEDDED_FIRST_PARTY = 1048576)] = "EMBEDDED_FIRST_PARTY"),
-          (nL[(nL.APPLICATION_COMMAND_BADGE = 8388608)] =
+          (nD[(nD.EMBEDDED_FIRST_PARTY = 1048576)] = "EMBEDDED_FIRST_PARTY"),
+          (nD[(nD.APPLICATION_COMMAND_BADGE = 8388608)] =
             "APPLICATION_COMMAND_BADGE"),
-          (nL[(nL.SOCIAL_LAYER_INTEGRATION = 134217728)] =
+          (nD[(nD.SOCIAL_LAYER_INTEGRATION = 134217728)] =
             "SOCIAL_LAYER_INTEGRATION"),
-          (nL[(nL.PROMOTED = 536870912)] = "PROMOTED"),
-          (nL[(nL.PARTNER = 1073741824)] = "PARTNER"),
+          (nD[(nD.PROMOTED = 536870912)] = "PROMOTED"),
+          (nD[(nD.PARTNER = 1073741824)] = "PARTNER"),
           ((nh = e$ || (e$ = {})).MFA_WARNING = "MFA_WARNING"),
           (nh.INVITE = "INVITE"),
           (nh.QUICKSWITCHER = "QUICKSWITCHER"),
@@ -10809,7 +10820,7 @@
           (nh.SUMMARIES = "SUMMARIES"),
           (nh.SUMMARIES_ENABLED = "SUMMARIES_ENABLED"),
           (nh.CLAN_ADMIN_UPSELL = "CLAN_ADMIN_UPSELL");
-        let it = Object.freeze({
+        let ir = Object.freeze({
             STORAGE_MANIFEST: (e, t) =>
               "".concat(e, "/storage/").concat(t, "/MANIFEST"),
             INSTALL_DIR: (e) => "".concat(e, "/content"),
@@ -10823,7 +10834,7 @@
               linux: "linux",
             },
           }),
-          ir = 864e5;
+          ia = 864e5;
         ((nC = eq || (eq = {})).NORMAL = "normal"),
           (nC.MINIMUM = "minimum"),
           (nC.NO_CHAT = "no-chat"),
@@ -10841,7 +10852,7 @@
           (nM.RTC_DEBUG = "RTC_DEBUG"),
           (nM.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS"),
           (nM.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP");
-        let ia = Object.freeze({
+        let io = Object.freeze({
           ALL: null,
           GUILD_UPDATE: 1,
           CHANNEL_CREATE: 10,
@@ -11084,7 +11095,7 @@
           (ny.SCHEDULED_START_TIME = "scheduled_start_time"),
           (ny.SCHEDULED_END_TIME = "scheduled_end_time"),
           (ny.IS_CANCELED = "is_canceled");
-        let io = 50;
+        let ii = 50;
         ((nv = e2 || (e2 = {})).AGREEMENTS = "AGREEMENTS"),
           (nv.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA"),
           (nv.REQUIRE_VERIFIED_EMAIL = "REQUIRE_VERIFIED_EMAIL"),
@@ -11106,7 +11117,7 @@
           (nb.EMAIL = "email"),
           (nb.REVERIFY_PHONE = "reverify_phone"),
           (nb.REVERIFY_EMAIL = "reverify_email");
-        let ii = 512;
+        let i_ = 512;
         ((nB = e4 || (e4 = {}))[(nB.PRIMARY = 0)] = "PRIMARY"),
           (nB[(nB.SECONDARY = 2)] = "SECONDARY"),
           (nB[(nB.WHEEL = 4)] = "WHEEL"),
@@ -11154,7 +11165,7 @@
           (nY.EMBED_IFRAME = "EMBED_IFRAME"),
           ((nK = te || (te = {})).GIF = "GIF"),
           (nK.STICKER = "STICKER");
-        let i_ = Object.freeze({
+        let iE = Object.freeze({
           GIF: { type: "GIF", command: "gif", title: "Gif", commandId: "-16" },
           TENOR: {
             type: "GIF",
@@ -11368,22 +11379,22 @@
             twitch: "Twitch",
             epic: "Epic",
           });
-        let iE = 6016,
-          is = 3384;
+        let is = 6016,
+          ic = 3384;
         ((nX = t_ || (t_ = {})).USAGE_STATISTICS = "usage_statistics"),
           (nX.PERSONALIZATION = "personalization"),
           ((nj = tE || (tE = {}))[(nj.MUTUAL_FRIENDS = 2)] = "MUTUAL_FRIENDS"),
           (nj[(nj.MUTUAL_GUILDS = 4)] = "MUTUAL_GUILDS"),
           (nj[(nj.NO_RELATION = 8)] = "NO_RELATION");
-        let ic = 14;
+        let iI = 14;
         ((n$ = ts || (ts = {}))[(n$.NONE = 0)] = "NONE"),
           (n$[(n$.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
           (n$[(n$.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
-        let iI = 30;
+        let iu = 30;
         ((nq = tc || (tc = {})).OVERLAY = "OVERLAY"),
           (nq.APP = "APP"),
           (nq.POPOUT = "POPOUT");
-        let iu = __OVERLAY__ ? "OVERLAY" : "APP";
+        let il = __OVERLAY__ ? "OVERLAY" : "APP";
         ((nz = tI || (tI = {})).COMPLETE = "complete"),
           (nz.TRANSITION = "transition"),
           ((nJ = tu || (tu = {})).QUEUED = "queued"),
@@ -11453,14 +11464,14 @@
             "APPLICATION_GUILD_SUBSCRIPTION"),
           (n8[(n8.APPLICATION_USER_SUBSCRIPTION = 256)] =
             "APPLICATION_USER_SUBSCRIPTION"),
-          ((n7 = tD || (tD = {}))[(n7.PREMIUM = 1)] = "PREMIUM"),
+          ((n7 = tL || (tL = {}))[(n7.PREMIUM = 1)] = "PREMIUM"),
           (n7[(n7.BOOST = 2)] = "BOOST"),
           (n7[(n7.ACTIVITY_IAP = 3)] = "ACTIVITY_IAP"),
           (n7[(n7.GUILD_ROLE = 4)] = "GUILD_ROLE"),
           (n7[(n7.GUILD_PRODUCT = 5)] = "GUILD_PRODUCT"),
           (n7[(n7.APPLICATION = 6)] = "APPLICATION"),
           (n7[(n7.COLLECTIBLES = 7)] = "COLLECTIBLES"),
-          ((n9 = tL || (tL = {})).HOME = "1"),
+          ((n9 = tD || (tD = {})).HOME = "1"),
           (n9.BROWSE = "2"),
           ((ae = th || (th = {})).WIN32 = "win32"),
           (ae.WIN64 = "win64"),
@@ -11469,12 +11480,12 @@
           ((at = tC || (tC = {})).HOUSE_1 = "HOUSE_1"),
           (at.HOUSE_2 = "HOUSE_2"),
           (at.HOUSE_3 = "HOUSE_3");
-        let il = "RANDOM_HYPESQUAD_HOUSE";
+        let iR = "RANDOM_HYPESQUAD_HOUSE";
         ((ar = tg || (tg = {}))[(ar.KEYBOARD_KEY = 0)] = "KEYBOARD_KEY"),
           (ar[(ar.MOUSE_BUTTON = 1)] = "MOUSE_BUTTON"),
           (ar[(ar.KEYBOARD_MODIFIER_KEY = 2)] = "KEYBOARD_MODIFIER_KEY"),
           (ar[(ar.GAMEPAD_BUTTON = 3)] = "GAMEPAD_BUTTON");
-        let iR = Object.freeze({
+        let iA = Object.freeze({
             esc: 9,
             f1: 67,
             f2: 68,
@@ -11593,7 +11604,7 @@
             "track back": 173,
             "track skip": 171,
           }),
-          iA = Object.freeze({
+          iT = Object.freeze({
             a: 4,
             s: 22,
             d: 7,
@@ -11709,7 +11720,7 @@
           (an[(an.Center = 2)] = "Center"),
           (an[(an.Back = 3)] = "Back"),
           (an[(an.Forward = 4)] = "Forward");
-        let iT = Object.freeze({
+        let id = Object.freeze({
           a: 65,
           s: 83,
           d: 68,
@@ -11866,7 +11877,7 @@
           (au.TRENDING_CATEGORY = "Category"),
           (au.SEARCH = "Search"),
           (au.SEARCH_SUGGESTION = "Search Suggestion");
-        let id = new Set([
+        let iN = new Set([
           aF.pK.USD,
           aF.pK.CAD,
           aF.pK.EUR,
@@ -11881,7 +11892,7 @@
         ((al = tH || (tH = {})).ALWAYS = "ALWAYS"),
           (al.ON_CLICK = "ON_CLICK"),
           (al.IF_MODERATOR = "IF_MODERATOR");
-        let iN = [];
+        let ip = [];
         ((aR = tY || (tY = {})).CHANNEL_CALL_POPOUT =
           "DISCORD_CHANNEL_CALL_POPOUT"),
           (aR.SOUNDBOARD = "DISCORD_SOUNDBOARD"),
@@ -11921,32 +11932,32 @@
           (aS.ENTER = "enter"),
           (aS.UPDATE = "update"),
           (aS.LEAVE = "leave"),
-          ((aD = t$ || (t$ = {})).CHANNEL_SETTINGS = "Channel Settings"),
-          (aD.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings"),
-          (aD.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"),
-          ((aL = tq || (tq = {}))[(aL.INCOMING = 1)] = "INCOMING"),
-          (aL[(aL.CHANNEL_FOLLOWER = 2)] = "CHANNEL_FOLLOWER"),
+          ((aL = t$ || (t$ = {})).CHANNEL_SETTINGS = "Channel Settings"),
+          (aL.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings"),
+          (aL.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"),
+          ((aD = tq || (tq = {}))[(aD.INCOMING = 1)] = "INCOMING"),
+          (aD[(aD.CHANNEL_FOLLOWER = 2)] = "CHANNEL_FOLLOWER"),
           ((ah = tz || (tz = {}))[(ah.APPLICATION = 0)] = "APPLICATION"),
           (ah[(ah.OVERVIEW = 1)] = "OVERVIEW"),
           (ah[(ah.CHANNEL_FOLLOWING = 2)] = "CHANNEL_FOLLOWING"),
           (ah[(ah.TWITCH = 3)] = "TWITCH"),
           (ah[(ah.YOUTUBE = 4)] = "YOUTUBE"),
           (ah[(ah.WEBHOOKS = 5)] = "WEBHOOKS");
-        let ip = 2500,
-          iO = 0,
-          iS = 2592e6;
+        let iO = 2500,
+          iS = 0,
+          iL = 2592e6;
         ((aC = tJ || (tJ = {})).USERS = "users"),
           (aC.ROLES = "roles"),
           (aC.EVERYONE = "everyone"),
           ((ag = tQ || (tQ = {}))[(ag.AUTO = 1)] = "AUTO"),
           (ag[(ag.FULL = 2)] = "FULL");
         let iD = 100,
-          iL =
+          ih =
             /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
         ((aM = tZ || (tZ = {}))[(aM.NULL = 0)] = "NULL"),
           (aM[(aM.DISABLED = 1)] = "DISABLED"),
           (aM[(aM.ENABLED = 2)] = "ENABLED");
-        let ih =
+        let iC =
           "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
         ((aP = t0 || (t0 = {}))[(aP.CLIPS_ENABLED = 1)] = "CLIPS_ENABLED"),
           (aP[(aP.ALLOW_VOICE_RECORDING = 2)] = "ALLOW_VOICE_RECORDING"),
@@ -12001,8 +12012,8 @@
           O,
           f,
           S,
-          D,
           L,
+          D,
           h,
           C,
           g,
@@ -12124,7 +12135,7 @@
           ((q = S || (S = {})).OVERVIEW = "OVERVIEW"),
           (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
           (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          ((z = D || (D = {})).INVITE = "invite"),
+          ((z = L || (L = {})).INVITE = "invite"),
           (z.GUILD_TEMPLATE = "guild-template"),
           (z.CHANNEL = "channel"),
           (z.GIFT_CODE = "gift-code"),
@@ -12164,7 +12175,7 @@
         let e_ = "CacheStoreLazy",
           eE = "CacheStoreChannelsLazy",
           es = "CacheStore";
-        ((J = L || (L = {})).UPLOAD = "upload"),
+        ((J = D || (D = {})).UPLOAD = "upload"),
           (J.GLOBAL_EMOJI = "global-emoji"),
           (J.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
           (J.BADGE = "badge"),
@@ -12363,7 +12374,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-fe1bb36bf4a41782f941651f0db3e518613fc061",
+            release: "discord_web-01e754953f699fd76722d2d4e6efb752a73cb27d",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12432,8 +12443,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "324693"), "324693"));
-          i.YA("builtAt", String("1725558456748"));
+            i.YA("buildNumber", ((e = "324969"), "324969"));
+          i.YA("builtAt", String("1725576276865"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -12447,7 +12458,7 @@
             return I;
           },
           GA: function () {
-            return L;
+            return D;
           },
           JC: function () {
             return C;
@@ -12459,7 +12470,7 @@
             return n;
           },
           XZ: function () {
-            return D;
+            return L;
           },
           Y_: function () {
             return o;
@@ -12501,8 +12512,8 @@
         let O = 250,
           f = 762880,
           S = "ROLE_SUBSCRIPTIONS",
-          D = "APPLICATION_SUBSCRIPTION_SUBSECTION",
-          L = "SOUNDBOARD_SUBSECTION";
+          L = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+          D = "SOUNDBOARD_SUBSECTION";
         ((l = n || (n = {})).USER_PROFILE = "user_profile"),
           (l.GUILD = "guild"),
           (l.TRY_IT_OUT = "try_it_out"),
@@ -16526,7 +16537,7 @@
             return eT;
           },
           Uk: function () {
-            return eD;
+            return eL;
           },
           V6: function () {
             return eb;
@@ -16577,10 +16588,10 @@
             return p;
           },
           ld: function () {
-            return eL;
+            return eD;
           },
           pK: function () {
-            return L;
+            return D;
           },
           rx: function () {
             return eA;
@@ -16628,8 +16639,8 @@
           O,
           f,
           S,
-          D,
           L,
+          D,
           h,
           C,
           g,
@@ -16799,8 +16810,8 @@
             [16, "ideal"],
           ]),
           eS = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
-          eD = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
-          eL = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
+          eL = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
+          eD = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
           eh = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
           eC = new Set([6]);
         ((Y = c || (c = {}))[(Y.NEW = 1)] = "NEW"),
@@ -17266,9 +17277,9 @@
           (J.LOCATION_STACK_METADATA = "location_stack_metadata"),
           (J.CREATOR_STORE_PAGE_VIEWED = "creator_store_page_viewed"),
           (J.CREATOR_STORE_PAGE_CTA_CLICKED = "creator_store_page_cta_clicked"),
-          ((D || (D = {})).MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN =
+          ((L || (L = {})).MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN =
             "mktg_ack_modal_open"),
-          ((Q = L || (L = {})).AED = "aed"),
+          ((Q = D || (D = {})).AED = "aed"),
           (Q.AFN = "afn"),
           (Q.ALL = "all"),
           (Q.AMD = "amd"),
@@ -22252,7 +22263,7 @@
             return S;
           },
           Od: function () {
-            return D;
+            return L;
           },
           U_: function () {
             return d;
@@ -22267,7 +22278,7 @@
             return R;
           },
           r0: function () {
-            return L;
+            return D;
           },
           ug: function () {
             return h;
@@ -22521,10 +22532,10 @@
         function S(e, t) {
           return t === l ? e : A(e, t);
         }
-        function D(e, t) {
+        function L(e, t) {
           return t === l ? e : T(e, R(e, t));
         }
-        let L = s
+        let D = s
             ? function (e) {
                 return BigInt(1) << BigInt(e);
               }
@@ -22944,11 +22955,11 @@
               S = function (e) {
                 return Math.round(100 * e) / 100;
               },
-              D = _.unpack,
-              L = function () {
+              L = _.unpack,
+              D = function () {
                 for (var e, t, r = [], n = arguments.length; n--; )
                   r[n] = arguments[n];
-                var a = (r = D(r, "rgba"))[0],
+                var a = (r = L(r, "rgba"))[0],
                   o = r[1],
                   i = r[2],
                   _ = Math.min((a /= 255), (o /= 255), (i /= 255)),
@@ -23083,7 +23094,7 @@
                 var r = h(e, "rgba"),
                   n = C(e) || "rgb";
                 return "hsl" == n.substr(0, 3)
-                  ? g(L(r), n)
+                  ? g(D(r), n)
                   : ((r[0] = M(r[0])),
                     (r[1] = M(r[1])),
                     (r[2] = M(r[2])),
@@ -23406,7 +23417,7 @@
             var eT = _.unpack,
               ed = _.type;
             (u.prototype.hsl = function () {
-              return L(this._rgb);
+              return D(this._rgb);
             }),
               (l.hsl = function () {
                 for (var e = [], t = arguments.length; t--; )
@@ -23431,8 +23442,8 @@
               eO = Math.max,
               ef = _.unpack,
               eS = Math.floor,
-              eD = _.unpack,
-              eL = _.type,
+              eL = _.unpack,
+              eD = _.type,
               eh = function () {
                 for (var e, t, r, n = [], a = arguments.length; a--; )
                   n[a] = arguments[a];
@@ -23512,7 +23523,7 @@
                 test: function () {
                   for (var e = [], t = arguments.length; t--; )
                     e[t] = arguments[t];
-                  if ("array" === eL((e = eD(e, "hsv"))) && 3 === e.length)
+                  if ("array" === eD((e = eL(e, "hsv"))) && 3 === e.length)
                     return "hsv";
                 },
               });
@@ -24133,8 +24144,8 @@
               });
             var tf = _.unpack,
               tS = _.unpack,
-              tD = _.unpack,
-              tL = _.type,
+              tL = _.unpack,
+              tD = _.type,
               th = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
@@ -24165,7 +24176,7 @@
                 test: function () {
                   for (var e = [], t = arguments.length; t--; )
                     e[t] = arguments[t];
-                  if ("array" === tL((e = tD(e, "oklch"))) && 3 === e.length)
+                  if ("array" === tD((e = tL(e, "oklch"))) && 3 === e.length)
                     return "oklch";
                 },
               });
@@ -24545,12 +24556,12 @@
                     return (R = {});
                   };
                 d(e);
-                var D = function (e) {
+                var L = function (e) {
                   var t = l(f(e));
                   return s && t[s] ? t[s]() : t;
                 };
                 return (
-                  (D.classes = function (e) {
+                  (L.classes = function (e) {
                     if (null != e) {
                       if ("array" === tj(e))
                         (_ = e), (a = [e[0], e[e.length - 1]]);
@@ -24558,11 +24569,11 @@
                         var t = l.analyze(a);
                         _ = 0 === e ? [t.min, t.max] : l.limits(t, "e", e);
                       }
-                      return D;
+                      return L;
                     }
                     return _;
                   }),
-                  (D.domain = function (e) {
+                  (L.domain = function (e) {
                     if (!arguments.length) return a;
                     (c = e[0]), (I = e[e.length - 1]), (o = []);
                     var t = E.length;
@@ -24591,21 +24602,21 @@
                           });
                       }
                     }
-                    return (a = [c, I]), D;
+                    return (a = [c, I]), L;
                   }),
-                  (D.mode = function (e) {
-                    return arguments.length ? ((t = e), S(), D) : t;
+                  (L.mode = function (e) {
+                    return arguments.length ? ((t = e), S(), L) : t;
                   }),
-                  (D.range = function (e, t) {
-                    return d(e), D;
+                  (L.range = function (e, t) {
+                    return d(e), L;
                   }),
-                  (D.out = function (e) {
-                    return (s = e), D;
+                  (L.out = function (e) {
+                    return (s = e), L;
                   }),
-                  (D.spread = function (e) {
-                    return arguments.length ? ((n = e), D) : n;
+                  (L.spread = function (e) {
+                    return arguments.length ? ((n = e), L) : n;
                   }),
-                  (D.correctLightness = function (e) {
+                  (L.correctLightness = function (e) {
                     return (
                       null == e && (e = !0),
                       (u = e),
@@ -24635,19 +24646,19 @@
                         : function (e) {
                             return e;
                           }),
-                      D
+                      L
                     );
                   }),
-                  (D.padding = function (e) {
+                  (L.padding = function (e) {
                     return null != e
-                      ? ("number" === tj(e) && (e = [e, e]), (i = e), D)
+                      ? ("number" === tj(e) && (e = [e, e]), (i = e), L)
                       : i;
                   }),
-                  (D.colors = function (t, r) {
+                  (L.colors = function (t, r) {
                     arguments.length < 2 && (r = "hex");
                     var n = [];
                     if (0 == arguments.length) n = E.slice(0);
-                    else if (1 === t) n = [D(0.5)];
+                    else if (1 === t) n = [L(0.5)];
                     else if (t > 1) {
                       var o = a[0],
                         i = a[1] - o;
@@ -24663,7 +24674,7 @@
                           n.push(i);
                         return n;
                       })(0, t, !1).map(function (e) {
-                        return D(o + (e / (t - 1)) * i);
+                        return L(o + (e / (t - 1)) * i);
                       });
                     } else {
                       e = [];
@@ -24677,7 +24688,7 @@
                           s.push((_[c - 1] + _[c]) * 0.5);
                       else s = a;
                       n = s.map(function (e) {
-                        return D(e);
+                        return L(e);
                       });
                     }
                     return (
@@ -24688,16 +24699,16 @@
                       n
                     );
                   }),
-                  (D.cache = function (e) {
-                    return null != e ? ((A = e), D) : A;
+                  (L.cache = function (e) {
+                    return null != e ? ((A = e), L) : A;
                   }),
-                  (D.gamma = function (e) {
-                    return null != e ? ((T = e), D) : T;
+                  (L.gamma = function (e) {
+                    return null != e ? ((T = e), L) : T;
                   }),
-                  (D.nodata = function (e) {
-                    return null != e ? ((r = l(e)), D) : r;
+                  (L.nodata = function (e) {
+                    return null != e ? ((r = l(e)), L) : r;
                   }),
-                  D
+                  L
                 );
               },
               tz = function (e) {
@@ -24950,9 +24961,9 @@
                       f = 0,
                       S = null;
                     (S = []).push(n);
-                    for (var D = 1; D < r; D++) S.push(n + (D / r) * (a - n));
+                    for (var L = 1; L < r; L++) S.push(n + (L / r) * (a - n));
                     for (S.push(a); O; ) {
-                      for (var L = 0; L < r; L++) p[L] = 0;
+                      for (var D = 0; D < r; D++) p[D] = 0;
                       for (var h = 0; h < d; h++) {
                         for (
                           var C = i[h], g = Number.MAX_VALUE, M = void 0, P = 0;
@@ -25594,10 +25605,10 @@
                   O = R * (1 + N),
                   f = r_(rE(p, 2) + rE(c, 2)),
                   S = r_(rE(O, 2) + rE(A, 2)),
-                  D = (f + S) / 2,
-                  L = o(rI(c, p)),
+                  L = (f + S) / 2,
+                  D = o(rI(c, p)),
                   h = o(rI(A, O)),
-                  C = L >= 0 ? L : L + 360,
+                  C = D >= 0 ? D : D + 360,
                   g = h >= 0 ? h : h + 360,
                   M = ru(C - g) > 180 ? (C + g + 360) / 2 : (C + g) / 2,
                   P =
@@ -25611,11 +25622,11 @@
                   (m = 2 * r_(f * S) * rR(i(m) / 2));
                 var U = S - f,
                   G = 1 + (0.015 * rE(T - 50, 2)) / r_(20 + rE(T - 50, 2)),
-                  y = 1 + 0.045 * D,
-                  v = 1 + 0.015 * D * P,
+                  y = 1 + 0.045 * L,
+                  v = 1 + 0.015 * L * P,
                   b = 30 * rA(-rE((M - 275) / 25, 2)),
                   B =
-                    -(2 * r_(rE(D, 7) / (rE(D, 7) + rE(25, 7)))) * rR(2 * i(b));
+                    -(2 * r_(rE(L, 7) / (rE(L, 7) + rE(25, 7)))) * rR(2 * i(b));
                 return rc(
                   0,
                   rs(
@@ -26136,10 +26147,10 @@
               return S.Q;
             },
             feedbackIntegration: function () {
-              return D.r;
+              return L.r;
             },
             feedbackSyncIntegration: function () {
-              return D.r;
+              return L.r;
             },
             flush: function () {
               return n.yl;
@@ -26169,7 +26180,7 @@
               return c.nV;
             },
             getFeedback: function () {
-              return L.qm;
+              return D.qm;
             },
             getGlobalScope: function () {
               return n.lW;
@@ -26262,7 +26273,7 @@
               return n.vU;
             },
             sendFeedback: function () {
-              return L.fA;
+              return D.fA;
             },
             sessionTimingIntegration: function () {
               return n.rE;
@@ -26366,8 +26377,8 @@
           O = r(616456),
           f = r(778600),
           S = r(780850),
-          D = r(226483),
-          L = r(185461),
+          L = r(226483),
+          D = r(185461),
           h = r(166800),
           C = r(799033),
           g = r(325124),
@@ -27416,7 +27427,7 @@
             return P;
           },
           AJ: function () {
-            return L;
+            return D;
           },
           Ei: function () {
             return M;
@@ -27428,7 +27439,7 @@
             return g;
           },
           db: function () {
-            return D;
+            return L;
           },
           dz: function () {
             return v;
@@ -27495,12 +27506,12 @@
         function S(e) {
           return "pageload" === (0, o.XU)(e).op;
         }
-        function D(e, t) {
+        function L(e, t) {
           if (!t.length) return e;
           for (let r of t) e[1].push([{ type: "profile" }, r]);
           return e;
         }
-        function L(e) {
+        function D(e) {
           let t = [];
           return (
             (0, c.gv)(e, (e, r) => {
@@ -27853,8 +27864,8 @@
           O = r(804410),
           f = r(376457),
           S = r(42367),
-          D = r(297117),
-          L = r(387486);
+          L = r(297117),
+          D = r(387486);
         function h(e) {
           return [
             (0, n.S)(),
@@ -27915,9 +27926,9 @@
             );
           let r = {
               ...t,
-              stackParser: (0, l.Sq)(t.stackParser || D.Dt),
+              stackParser: (0, l.Sq)(t.stackParser || L.Dt),
               integrations: (0, i.m8)(t),
-              transport: t.transport || L.f,
+              transport: t.transport || D.f,
             },
             n = (0, _.M)(A.R, r);
           return (
@@ -28165,10 +28176,10 @@
             return S;
           },
           Wo: function () {
-            return D;
+            return L;
           },
           og: function () {
-            return L;
+            return D;
           },
         });
         var n = r(650665),
@@ -28308,7 +28319,7 @@
                   }),
                   N.m9.location &&
                     (v &&
-                      D(e, {
+                      L(e, {
                         name: N.m9.location.pathname,
                         startTime: R.Z1 ? R.Z1 / 1e3 : void 0,
                         attributes: {
@@ -28324,7 +28335,7 @@
                         }
                         r !== t &&
                           ((n = void 0),
-                          L(e, {
+                          D(e, {
                             name: N.m9.location.pathname,
                             attributes: {
                               [E.Zj]: "url",
@@ -28396,13 +28407,13 @@
               },
             };
           };
-        function D(e, t, r) {
+        function L(e, t, r) {
           e.emit("startPageLoadSpan", t, r),
             (0, s.nZ)().setTransactionName(t.name);
           let n = (0, c.HN)();
           return "pageload" === (n && (0, c.XU)(n).op) ? n : void 0;
         }
-        function L(e, t) {
+        function D(e, t) {
           (0, s.aF)().setPropagationContext((0, A.Q)()),
             (0, s.nZ)().setPropagationContext((0, A.Q)()),
             e.emit("startNavigationSpan", t),
@@ -28419,10 +28430,10 @@
         "use strict";
         r.d(t, {
           L7: function () {
-            return L;
+            return D;
           },
           k3: function () {
-            return D;
+            return L;
           },
         });
         var n = r(157079),
@@ -28445,15 +28456,15 @@
           O = r(163162);
         let f = new WeakMap(),
           S = new Map(),
-          D = { traceFetch: !0, traceXHR: !0, enableHTTPTimings: !0 };
-        function L(e, t) {
+          L = { traceFetch: !0, traceXHR: !0, enableHTTPTimings: !0 };
+        function D(e, t) {
           let {
               traceFetch: r,
               traceXHR: a,
               shouldCreateSpanForRequest: T,
-              enableHTTPTimings: L,
+              enableHTTPTimings: D,
               tracePropagationTargets: C,
-            } = { traceFetch: D.traceFetch, traceXHR: D.traceXHR, ...t },
+            } = { traceFetch: L.traceFetch, traceXHR: L.traceXHR, ...t },
             M = "function" == typeof T ? T : (e) => !0,
             P = (e) =>
               (function (e, t) {
@@ -28509,7 +28520,7 @@
                   n = r ? (0, A.en)(r).host : void 0;
                 t.setAttributes({ "http.url": r, "server.address": n });
               }
-              L && t && h(t);
+              D && t && h(t);
             })),
             a &&
               (0, n.UK)((e) => {
@@ -28547,11 +28558,11 @@
                         : new I.b();
                   (o.__sentry_xhr_span_id__ = S.spanContext().spanId),
                     (a[o.__sentry_xhr_span_id__] = S);
-                  let D = (0, u.s3)();
+                  let L = (0, u.s3)();
                   return (
                     o.setRequestHeader &&
                       r(R.url) &&
-                      D &&
+                      L &&
                       (function (e, t, r) {
                         let n = (0, u.nZ)(),
                           {
@@ -28575,11 +28586,11 @@
                           c,
                           (0, p.IQ)(s || (r ? (0, l.jC)(r) : (0, l._l)(a, t))),
                         );
-                      })(o, D, (0, _.z)() && f ? S : void 0),
+                      })(o, L, (0, _.z)() && f ? S : void 0),
                     S
                   );
                 })(e, M, P, m);
-                L && t && h(t);
+                D && t && h(t);
               });
         }
         function h(e) {
@@ -29299,8 +29310,8 @@
           _processEvent(e, t, r) {
             let n = this.getOptions(),
               { sampleRate: a } = n,
-              o = L(e),
-              E = D(e),
+              o = D(e),
+              E = L(e),
               s = e.type || "error",
               I = `before send for type \`${s}\``,
               u = void 0 === a ? void 0 : (0, p.o)(a);
@@ -29349,8 +29360,8 @@
                           beforeSendTransaction: o,
                           beforeSendSpan: i,
                         } = t;
-                        if (D(r) && a) return a(r, n);
-                        if (L(r)) {
+                        if (L(r) && a) return a(r, n);
+                        if (D(r)) {
                           if (r.spans && i) {
                             let t = [];
                             for (let n of r.spans) {
@@ -29452,10 +29463,10 @@ Reason: ${e}`))
             this.sendEnvelope(t);
           }
         }
-        function D(e) {
+        function L(e) {
           return void 0 === e.type;
         }
-        function L(e) {
+        function D(e) {
           return "transaction" === e.type;
         }
       },
@@ -29704,7 +29715,7 @@ Reason: ${e}`))
         "use strict";
         r.d(t, {
           Qy: function () {
-            return D;
+            return L;
           },
           TM: function () {
             return h;
@@ -29749,7 +29760,7 @@ Reason: ${e}`))
             return f;
           },
           yj: function () {
-            return L;
+            return D;
           },
           yl: function () {
             return O;
@@ -29814,10 +29825,10 @@ Reason: ${e}`))
         function S() {
           return !!(0, i.s3)();
         }
-        function D(e) {
+        function L(e) {
           (0, i.aF)().addEventProcessor(e);
         }
-        function L(e) {
+        function D(e) {
           let t = (0, i.s3)(),
             r = (0, i.aF)(),
             n = (0, i.nZ)(),
@@ -29954,10 +29965,10 @@ Reason: ${e}`))
                 return;
               }
             })(f),
-            D = S ? (0, n.en)(S).host : void 0,
-            L = !!(0, c.HN)(),
+            L = S ? (0, n.en)(S).host : void 0,
+            D = !!(0, c.HN)(),
             h =
-              d && L
+              d && D
                 ? (0, l.qp)({
                     name: `${O} ${f}`,
                     attributes: {
@@ -29965,7 +29976,7 @@ Reason: ${e}`))
                       type: "fetch",
                       "http.method": O,
                       "http.url": S,
-                      "server.address": D,
+                      "server.address": L,
                       [E.S3]: T,
                       [E.$J]: "http.client",
                     },
@@ -30017,7 +30028,7 @@ Reason: ${e}`))
                   }
                 );
               }
-            })(t, p, N, r, (0, s.z)() && L ? h : void 0);
+            })(t, p, N, r, (0, s.z)() && D ? h : void 0);
           }
           return h;
         }
@@ -30160,7 +30171,7 @@ Reason: ${e}`))
             return N.XU;
           },
           Xs: function () {
-            return D.X;
+            return L.X;
           },
           YA: function () {
             return c.YA;
@@ -30229,7 +30240,7 @@ Reason: ${e}`))
             return I.s3;
           },
           sC: function () {
-            return L.s;
+            return D.s;
           },
           sU: function () {
             return c.sU;
@@ -30288,8 +30299,8 @@ Reason: ${e}`))
           O = r(502990),
           f = r(636361),
           S = r(546453),
-          D = r(116430),
-          L = r(522521),
+          L = r(116430),
+          D = r(522521),
           h = r(907765),
           C = r(898029),
           g = r(757502),
@@ -32224,10 +32235,10 @@ Url: ${c(e)}`),
               idleTimeout: O = R.idleTimeout,
               finalTimeout: f = R.finalTimeout,
               childSpanTimeout: S = R.childSpanTimeout,
-              beforeSpanEnd: D,
+              beforeSpanEnd: L,
             } = t,
-            L = (0, o.s3)();
-          if (!L || !(0, E.z)()) return new I.b();
+            D = (0, o.s3)();
+          if (!D || !(0, E.z)()) return new I.b();
           let h = (0, o.nZ)(),
             C = (0, c.HN)(),
             g = (function (e) {
@@ -32254,7 +32265,7 @@ Url: ${c(e)}`),
           }
           g.end = new Proxy(g.end, {
             apply(e, t, r) {
-              D && D(g);
+              L && L(g);
               let [a, ...o] = r,
                 i = a || (0, n.ph)(),
                 _ = (0, c.$k)(i),
@@ -32310,7 +32321,7 @@ Url: ${c(e)}`),
           }
           return (
             p.push(
-              L.on("spanStart", (e) => {
+              D.on("spanStart", (e) => {
                 if (!T && e !== g && !(0, c.XU)(e).timestamp) {
                   if ((0, c.Dp)(g).includes(e)) {
                     var t;
@@ -32323,7 +32334,7 @@ Url: ${c(e)}`),
               }),
             ),
             p.push(
-              L.on("spanEnd", (e) => {
+              D.on("spanEnd", (e) => {
                 var t;
                 if (!T)
                   (t = e.spanContext().spanId),
@@ -32332,7 +32343,7 @@ Url: ${c(e)}`),
               }),
             ),
             p.push(
-              L.on("idleSpanEnableAutoFinish", (e) => {
+              D.on("idleSpanEnableAutoFinish", (e) => {
                 e === g && ((N = !0), P(), A.size && m());
               }),
             ),
@@ -32808,13 +32819,13 @@ Url: ${c(e)}`),
         "use strict";
         r.d(t, {
           GK: function () {
-            return D;
+            return L;
           },
           Iw: function () {
             return M;
           },
           V0: function () {
-            return L;
+            return D;
           },
           _d: function () {
             return g;
@@ -32846,7 +32857,7 @@ Url: ${c(e)}`),
           O = r(793373),
           f = r(881243);
         let S = "__SENTRY_SUPPRESS_TRACING__";
-        function D(e, t) {
+        function L(e, t) {
           let r = U();
           if (r.startSpan) return r.startSpan(e, t);
           let n = m(e),
@@ -32880,7 +32891,7 @@ Url: ${c(e)}`),
             }),
           );
         }
-        function L(e, t) {
+        function D(e, t) {
           let r = U();
           if (r.startSpanManual) return r.startSpanManual(e, t);
           let n = m(e),
@@ -33633,18 +33644,18 @@ Url: ${c(e)}`),
           })(l, r.captureContext);
           r.mechanism && (0, n.EG)(p, r.mechanism);
           let S = A ? A.getEventProcessors() : [],
-            D = (0, s.lW)().getScopeData();
+            L = (0, s.lW)().getScopeData();
           if (T) {
             let e = T.getScopeData();
-            (0, u.yo)(D, e);
+            (0, u.yo)(L, e);
           }
           if (f) {
             let e = f.getScopeData();
-            (0, u.yo)(D, e);
+            (0, u.yo)(L, e);
           }
-          let L = [...(r.attachments || []), ...D.attachments];
-          L.length && (r.attachments = L), (0, u.gi)(p, D);
-          let h = [...S, ...D.eventProcessors];
+          let D = [...(r.attachments || []), ...L.attachments];
+          D.length && (r.attachments = D), (0, u.gi)(p, L);
+          let h = [...S, ...L.eventProcessors];
           return (0, c.R)(h, p, r).then((e) =>
             (e &&
               (function (e) {
@@ -33926,15 +33937,15 @@ Url: ${c(e)}`),
               : e.message || "unknown_error"
             : void 0;
         }
-        let D = "_sentryChildSpans",
-          L = "_sentryRootSpan";
+        let L = "_sentryChildSpans",
+          D = "_sentryRootSpan";
         function h(e, t) {
-          let r = e[L] || e;
-          (0, n.xp)(t, L, r),
-            e[D] ? e[D].add(t) : (0, n.xp)(e, D, new Set([t]));
+          let r = e[D] || e;
+          (0, n.xp)(t, D, r),
+            e[L] ? e[L].add(t) : (0, n.xp)(e, L, new Set([t]));
         }
         function C(e, t) {
-          e[D] && e[D].delete(t);
+          e[L] && e[L].delete(t);
         }
         function g(e) {
           let t = new Set();
@@ -33942,14 +33953,14 @@ Url: ${c(e)}`),
             !(function e(r) {
               if (!t.has(r)) {
                 if (f(r))
-                  for (let n of (t.add(r), r[D] ? Array.from(r[D]) : [])) e(n);
+                  for (let n of (t.add(r), r[L] ? Array.from(r[L]) : [])) e(n);
               }
             })(e),
             Array.from(t)
           );
         }
         function M(e) {
-          return e[L] || e;
+          return e[D] || e;
         }
         function P() {
           let e = (0, _.c)(),
@@ -36484,7 +36495,7 @@ Error:`,
             return S;
           },
           Jk: function () {
-            return D;
+            return L;
           },
           PR: function () {
             return f;
@@ -36493,7 +36504,7 @@ Error:`,
             return h;
           },
           sn: function () {
-            return L;
+            return D;
           },
         });
         var o = r(696486),
@@ -36574,7 +36585,7 @@ Error:`,
             }
           });
         }
-        function D() {
+        function L() {
           new PerformanceObserver((e) => {
             for (let t of e.getEntries()) {
               if (!(0, o.HN)() || !t.scripts[0]) return;
@@ -36606,7 +36617,7 @@ Error:`,
             }
           }).observe({ type: "long-animation-frame", buffered: !0 });
         }
-        function L() {
+        function D() {
           (0, A._j)("event", ({ entries: e }) => {
             for (let t of e) {
               if (!(0, o.HN)()) return;
@@ -36882,9 +36893,9 @@ Error:`,
                   O = (0, n.nZ)(),
                   f = (0, a.HN)(),
                   S = f ? (0, a.Gx)(f) : void 0,
-                  D = (null != l ? R.get(l) : void 0) || S,
-                  L = D
-                    ? (0, a.XU)(D).description
+                  L = (null != l ? R.get(l) : void 0) || S,
+                  D = L
+                    ? (0, a.XU)(L).description
                     : O.getScopeData().transactionName,
                   h = O.getUser(),
                   C = r.getIntegrationByName("Replay"),
@@ -36897,7 +36908,7 @@ Error:`,
                   m = (0, s.Jr)({
                     release: d.release,
                     environment: d.environment,
-                    transaction: L,
+                    transaction: D,
                     [o.JQ]: e.value,
                     [o.S3]: "auto.http.browser.inp",
                     user: M || void 0,
@@ -36981,13 +36992,13 @@ Error:`,
             return p;
           },
           YF: function () {
-            return D;
+            return L;
           },
           _4: function () {
             return S;
           },
           _j: function () {
-            return L;
+            return D;
           },
           cN: function () {
             return v;
@@ -37019,10 +37030,10 @@ Error:`,
         function S(e) {
           return U("ttfb", e, P, i);
         }
-        function D(e) {
+        function L(e) {
           return U("inp", e, m, _);
         }
-        function L(e, t) {
+        function D(e, t) {
           return (
             G(e, t),
             !N[e] &&
@@ -37722,8 +37733,8 @@ Error:`,
           O = "Description",
           f = "Your Name",
           S = "Name",
-          D = "Thank you for your report!",
-          L = "(required)",
+          L = "Thank you for your report!",
+          D = "(required)",
           h = "Add a screenshot",
           C = "Remove screenshot",
           g = (e, t = { includeReplay: !0 }) => {
@@ -37863,14 +37874,14 @@ Error:`,
             emailLabel: j = N,
             emailPlaceholder: $ = d,
             formTitle: q = T,
-            isRequiredLabel: z = L,
+            isRequiredLabel: z = D,
             messageLabel: J = O,
             messagePlaceholder: Q = p,
             nameLabel: Z = S,
             namePlaceholder: ee = f,
             removeScreenshotButtonLabel: et = C,
             submitButtonLabel: er = R,
-            successMessageText: en = D,
+            successMessageText: en = L,
             triggerLabel: ea = u,
             triggerAriaLabel: eo = "",
             onFormOpen: ei,
@@ -38593,8 +38604,8 @@ ${
             O,
             f,
             S,
-            D,
             L,
+            D,
             h = t.type;
           if (void 0 !== t.constructor) return null;
           128 & r.__u && ((E = !!(32 & r.__u)), (o = [(_ = t.__e = r.__e)])),
@@ -38682,11 +38693,11 @@ ${
                     I.__d = !1,
                     f && f(t),
                     c = I.render(I.props, I.state, I.context),
-                    D = 0;
-                  D < I._sb.length;
-                  D++
+                    L = 0;
+                  L < I._sb.length;
+                  L++
                 )
-                  I.__h.push(I._sb[D]);
+                  I.__h.push(I._sb[L]);
                 I._sb = [];
               } else
                 do
@@ -38704,13 +38715,13 @@ ${
                 en(
                   e,
                   j(
-                    (L =
+                    (D =
                       null != c && c.type === Q && null == c.key
                         ? c.props.children
                         : c),
                   )
-                    ? L
-                    : [L],
+                    ? D
+                    : [D],
                   t,
                   r,
                   n,
@@ -38941,8 +38952,8 @@ ${
           eO = H,
           ef = eO.__b,
           eS = eO.__r,
-          eD = eO.diffed,
-          eL = eO.__c,
+          eL = eO.diffed,
+          eD = eO.__c,
           eh = eO.unmount,
           eC = eO.__;
         function eg(e, t) {
@@ -39057,7 +39068,7 @@ ${
               (eA = eR);
           }),
           (eO.diffed = function (e) {
-            eD && eD(e);
+            eL && eL(e);
             var t = e.__c;
             t &&
               t.__H &&
@@ -39099,7 +39110,7 @@ ${
                   eO.__e(r, e.__v);
               }
             }),
-              eL && eL(e, t);
+              eD && eD(e, t);
           }),
           (eO.unmount = function (e) {
             eh && eh(e);
@@ -39296,8 +39307,8 @@ ${
               messagePlaceholder: O,
               nameLabel: f,
               namePlaceholder: S,
-              submitButtonLabel: D,
-              isRequiredLabel: L,
+              submitButtonLabel: L,
+              isRequiredLabel: D,
             } = e,
             [h, C] = eM(null),
             [g, P] = eM(!1),
@@ -39421,7 +39432,7 @@ ${
                       },
                       z(eW, {
                         label: f,
-                        isRequiredLabel: L,
+                        isRequiredLabel: D,
                         isRequired: N,
                         __self: this,
                         __source: { fileName: eV, lineNumber: 155 },
@@ -39457,7 +39468,7 @@ ${
                       },
                       z(eW, {
                         label: A,
-                        isRequiredLabel: L,
+                        isRequiredLabel: D,
                         isRequired: d,
                         __self: this,
                         __source: { fileName: eV, lineNumber: 172 },
@@ -39492,7 +39503,7 @@ ${
                   },
                   z(eW, {
                     label: p,
-                    isRequiredLabel: L,
+                    isRequiredLabel: D,
                     isRequired: !0,
                     __self: this,
                     __source: { fileName: eV, lineNumber: 188 },
@@ -39560,7 +39571,7 @@ ${
                     __self: this,
                     __source: { fileName: eV, lineNumber: 217 },
                   },
-                  D,
+                  L,
                 ),
                 z(
                   "button",
@@ -40432,7 +40443,7 @@ ${eQ}
                           },
                         [],
                       ),
-                      D = t.useRef({ initialX: 0, initialY: 0 });
+                      L = t.useRef({ initialX: 0, initialY: 0 });
                     return (
                       o({
                         onBeforeScreenshot: t.useCallback(() => {
@@ -40491,15 +40502,15 @@ ${eQ}
                             e("canvas", {
                               onMouseDown: function (e) {
                                 if (N) return;
-                                D.current = {
+                                L.current = {
                                   initialX: e.clientX,
                                   initialY: e.clientY,
                                 };
                                 let t = (e) => {
                                     let t = l.current;
                                     if (!t) return;
-                                    let r = e.clientX - D.current.initialX,
-                                      n = e.clientY - D.current.initialY;
+                                    let r = e.clientX - L.current.initialX,
+                                      n = e.clientY - L.current.initialY;
                                     A((a) => {
                                       let o = Math.max(
                                           0,
@@ -40518,8 +40529,8 @@ ${eQ}
                                         _ = o + (a.endX - a.startX),
                                         E = i + (a.endY - a.startY);
                                       return (
-                                        (D.current.initialX = e.clientX),
-                                        (D.current.initialY = e.clientY),
+                                        (L.current.initialX = e.clientX),
+                                        (L.current.initialY = e.clientY),
                                         {
                                           startX: o,
                                           startY: i,
@@ -40850,12 +40861,12 @@ ${eQ}
         for (
           var S =
               "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
-            D = "undefined" == typeof Uint8Array ? [] : new Uint8Array(256),
-            L = 0;
-          L < S.length;
-          L++
+            L = "undefined" == typeof Uint8Array ? [] : new Uint8Array(256),
+            D = 0;
+          D < S.length;
+          D++
         )
-          D[S.charCodeAt(L)] = L;
+          L[S.charCodeAt(D)] = D;
         var h = function (e) {
           var t,
             r = new Uint8Array(e),
@@ -41520,8 +41531,8 @@ ${eQ}
           O = r(263449),
           f = r(946471),
           S = r(233517),
-          D = r(822578),
-          L = r(696486),
+          L = r(822578),
+          D = r(696486),
           h = r(988097),
           C = r(820754),
           g = r(899517),
@@ -41804,11 +41815,11 @@ ${eQ}
           let r = e.createElement("a");
           return (r.href = t), r.href;
         }
-        function eD() {
+        function eL() {
           let e = document.createElement("a");
           return (e.href = ""), e.href;
         }
-        function eL(e, t, r, n, a, o) {
+        function eD(e, t, r, n, a, o) {
           if (!n) return n;
           if ("src" === r || ("href" === r && !("use" === t && "#" === n[0])))
             return eS(e, n);
@@ -41853,7 +41864,7 @@ ${eQ}
               }
               return a.join(", ");
             })(e, n);
-          else if ("style" === r) return ep(n, eD());
+          else if ("style" === r) return ep(n, eL());
           else if ("object" === t && "data" === r) return eS(e, n);
           return "function" == typeof o ? o(r, n, a) : n;
         }
@@ -41947,8 +41958,8 @@ ${eQ}
               maskTextFn: O,
               maskInputFn: f,
               slimDOMOptions: S,
-              dataURLOptions: D = {},
-              inlineImages: L = !1,
+              dataURLOptions: L = {},
+              inlineImages: D = !1,
               recordCanvas: h = !1,
               onSerialize: C,
               onIframeLoad: g,
@@ -41979,8 +41990,8 @@ ${eQ}
                   dataURLOptions: O = {},
                   inlineImages: f,
                   recordCanvas: S,
-                  keepIframeSrcFn: D,
-                  newlyAddedElement: L = !1,
+                  keepIframeSrcFn: L,
+                  newlyAddedElement: D = !1,
                 } = t,
                 h = (function (e, t) {
                   if (!t.hasNode(e)) return;
@@ -42025,8 +42036,8 @@ ${eQ}
                         rootId: O,
                         maskAllText: f,
                         maskTextClass: S,
-                        unmaskTextClass: D,
-                        maskTextSelector: L,
+                        unmaskTextClass: L,
+                        maskTextSelector: D,
                         unmaskTextSelector: h,
                       } = t,
                       C = (function (e, t, r, n) {
@@ -42054,7 +42065,7 @@ ${eQ}
                       let r = e.attributes[t];
                       r.name &&
                         !eh(g, r.name, r.value) &&
-                        (M[r.name] = eL(i, g, er(r.name), r.value, e, u));
+                        (M[r.name] = eD(i, g, er(r.name), r.value, e, u));
                     }
                     if ("link" === g && c) {
                       let t = Array.from(i.styleSheets).find(
@@ -42073,7 +42084,7 @@ ${eQ}
                       !(e.innerText || e.textContent || "").trim().length
                     ) {
                       let t = J(e.sheet);
-                      t && (M._cssText = ep(t, eD()));
+                      t && (M._cssText = ep(t, eL()));
                     }
                     if (
                       "input" === g ||
@@ -42088,8 +42099,8 @@ ${eQ}
                         let n = eM(
                           e,
                           S,
-                          L,
                           D,
+                          L,
                           h,
                           ee({ type: t, tagName: en(g), maskInputOptions: I }),
                         );
@@ -42213,8 +42224,8 @@ ${eQ}
                     dataURLOptions: O,
                     inlineImages: f,
                     recordCanvas: S,
-                    keepIframeSrcFn: D,
-                    newlyAddedElement: L,
+                    keepIframeSrcFn: L,
+                    newlyAddedElement: D,
                     rootId: h,
                     maskAllText: s,
                     maskTextClass: I,
@@ -42260,7 +42271,7 @@ ${eQ}
                           e,
                         );
                       }
-                      u = ep(u, eD());
+                      u = ep(u, eL());
                     }
                     R && (u = "SCRIPT_PLACEHOLDER");
                     let d = eM(e, n, o, a, i, r);
@@ -42337,8 +42348,8 @@ ${eQ}
               maskAttributeFn: p,
               maskTextFn: O,
               maskInputFn: f,
-              dataURLOptions: D,
-              inlineImages: L,
+              dataURLOptions: L,
+              inlineImages: D,
               recordCanvas: h,
               keepIframeSrcFn: U,
               newlyAddedElement: G,
@@ -42467,8 +42478,8 @@ ${eQ}
               maskTextFn: O,
               maskInputFn: f,
               slimDOMOptions: S,
-              dataURLOptions: D,
-              inlineImages: L,
+              dataURLOptions: L,
+              inlineImages: D,
               recordCanvas: h,
               preserveWhiteSpace: y,
               onSerialize: C,
@@ -42542,8 +42553,8 @@ ${eQ}
                       maskTextFn: O,
                       maskInputFn: f,
                       slimDOMOptions: S,
-                      dataURLOptions: D,
-                      inlineImages: L,
+                      dataURLOptions: L,
+                      inlineImages: D,
                       recordCanvas: h,
                       preserveWhiteSpace: y,
                       onSerialize: C,
@@ -42602,8 +42613,8 @@ ${eQ}
                       maskTextFn: O,
                       maskInputFn: f,
                       slimDOMOptions: S,
-                      dataURLOptions: D,
-                      inlineImages: L,
+                      dataURLOptions: L,
+                      inlineImages: D,
                       recordCanvas: h,
                       preserveWhiteSpace: y,
                       onSerialize: C,
@@ -43316,7 +43327,7 @@ ${eQ}
                           "password" === (e.oldValue || "").toLowerCase() &&
                           t.setAttribute("data-rr-is-password", "true"),
                         !eh(t.tagName, r) &&
-                          ((a.attributes[r] = eL(
+                          ((a.attributes[r] = eD(
                             this.doc,
                             er(t.tagName),
                             er(r),
@@ -43916,10 +43927,10 @@ ${eQ}
                   O = ei(N, T, p),
                   f = !1,
                   S = ee({ maskInputOptions: E, tagName: T, type: p }),
-                  D = eM(r, u, R, l, A, S);
+                  L = eM(r, u, R, l, A, S);
                 ("radio" === p || "checkbox" === p) && (f = r.checked),
                   (O = et({
-                    isMasked: D,
+                    isMasked: L,
                     element: r,
                     value: O,
                     maskInputFn: s,
@@ -43930,16 +43941,16 @@ ${eQ}
                       ? { text: O, isChecked: f, userTriggered: c }
                       : { text: O, isChecked: f },
                   );
-                let L = r.name;
+                let D = r.name;
                 "radio" === p &&
-                  L &&
+                  D &&
                   f &&
                   t
-                    .querySelectorAll(`input[type="radio"][name="${L}"]`)
+                    .querySelectorAll(`input[type="radio"][name="${D}"]`)
                     .forEach((e) => {
                       if (e !== r) {
                         let t = et({
-                          isMasked: D,
+                          isMasked: L,
                           element: e,
                           value: ei(e, T, p),
                           maskInputFn: s,
@@ -44857,7 +44868,7 @@ ${eQ}
           }
           trackStylesheetInLinkElement(e) {}
         }
-        class tD {
+        class tL {
           constructor() {
             (this.nodeMap = new WeakMap()),
               (this.loop = !0),
@@ -44903,7 +44914,7 @@ ${eQ}
         } catch (e) {
           console.debug("Unable to override Array.from", e);
         }
-        let tL = new Z();
+        let tD = new Z();
         function th(e = {}) {
           let t;
           let {
@@ -44924,8 +44935,8 @@ ${eQ}
             maskAllInputs: O,
             maskInputOptions: f,
             slimDOMOptions: S,
-            maskAttributeFn: D,
-            maskInputFn: L,
+            maskAttributeFn: L,
+            maskInputFn: D,
             maskTextFn: h,
             maxCanvasSize: C = null,
             packFn: g,
@@ -44959,7 +44970,7 @@ ${eQ}
             }
           if (F && !r) throw Error("emit function is required");
           void 0 !== m && void 0 === M.mousemove && (M.mousemove = m),
-            tL.reset();
+            tD.reset();
           let X =
               !0 === O
                 ? {
@@ -45090,7 +45101,7 @@ ${eQ}
               __RRWEB_EXCLUDE_IFRAME__
                 ? new td()
                 : new tN({
-                    mirror: tL,
+                    mirror: tD,
                     mutationCb: z,
                     stylesheetManager: ee,
                     recordCrossOriginIframes: y,
@@ -45099,11 +45110,11 @@ ${eQ}
           for (let e of H || [])
             e.getMirror &&
               e.getMirror({
-                nodeMirror: tL,
+                nodeMirror: tD,
                 crossOriginIframeMirror: et.crossOriginIframeMirror,
                 crossOriginIframeStyleMirror: et.crossOriginIframeStyleMirror,
               });
-          let er = new tD(),
+          let er = new tL(),
             en = (function (e, t) {
               try {
                 return e ? e(t) : new tf();
@@ -45113,7 +45124,7 @@ ${eQ}
                 );
               }
             })(x, {
-              mirror: tL,
+              mirror: tD,
               win: window,
               mutationCb: (e) =>
                 i({
@@ -45149,9 +45160,9 @@ ${eQ}
                       inlineStylesheet: p,
                       maskInputOptions: X,
                       dataURLOptions: P,
-                      maskAttributeFn: D,
+                      maskAttributeFn: L,
                       maskTextFn: h,
-                      maskInputFn: L,
+                      maskInputFn: D,
                       recordCanvas: G,
                       inlineImages: w,
                       sampling: M,
@@ -45162,7 +45173,7 @@ ${eQ}
                       keepIframeSrcFn: Y,
                       processedNodeManager: er,
                     },
-                    mirror: tL,
+                    mirror: tD,
                   }),
             eo = (e = !1) => {
               if (!U) return;
@@ -45203,8 +45214,8 @@ ${eQ}
                   preserveWhiteSpace: O,
                   onSerialize: f,
                   onIframeLoad: S,
-                  iframeLoadTimeout: D,
-                  onStylesheetLoad: L,
+                  iframeLoadTimeout: L,
+                  onStylesheetLoad: D,
                   stylesheetLoadTimeout: h,
                   keepIframeSrcFn: C = () => !1,
                 } = t || {};
@@ -45269,14 +45280,14 @@ ${eQ}
                   preserveWhiteSpace: O,
                   onSerialize: f,
                   onIframeLoad: S,
-                  iframeLoadTimeout: D,
-                  onStylesheetLoad: L,
+                  iframeLoadTimeout: L,
+                  onStylesheetLoad: D,
                   stylesheetLoadTimeout: h,
                   keepIframeSrcFn: C,
                   newlyAddedElement: !1,
                 });
               })(document, {
-                mirror: tL,
+                mirror: tD,
                 blockClass: E,
                 blockSelector: s,
                 unblockSelector: c,
@@ -45287,16 +45298,16 @@ ${eQ}
                 unmaskTextSelector: d,
                 inlineStylesheet: p,
                 maskAllInputs: X,
-                maskAttributeFn: D,
-                maskInputFn: L,
+                maskAttributeFn: L,
+                maskInputFn: D,
                 maskTextFn: h,
                 slimDOM: j,
                 dataURLOptions: P,
                 recordCanvas: G,
                 inlineImages: w,
                 onSerialize: (e) => {
-                  eW(e, tL) && et.addIframe(e),
-                    eX(e, tL) && ee.trackLinkElement(e),
+                  eW(e, tD) && et.addIframe(e),
+                    eX(e, tD) && ee.trackLinkElement(e),
                     ej(e) && ea.addShadowRoot(e.shadowRoot, document);
                 },
                 onIframeLoad: (e, t) => {
@@ -45319,7 +45330,7 @@ ${eQ}
                   document.adoptedStyleSheets.length > 0 &&
                   ee.adoptStyleSheets(
                     document.adoptedStyleSheets,
-                    tL.getId(document),
+                    tD.getId(document),
                   );
             };
           _ = eo;
@@ -45401,15 +45412,15 @@ ${eQ}
                     userTriggeredOnInput: b,
                     collectFonts: B,
                     doc: e,
-                    maskAttributeFn: D,
-                    maskInputFn: L,
+                    maskAttributeFn: L,
+                    maskInputFn: D,
                     maskTextFn: h,
                     keepIframeSrcFn: Y,
                     blockSelector: s,
                     unblockSelector: c,
                     slimDOMOptions: j,
                     dataURLOptions: P,
-                    mirror: tL,
+                    mirror: tD,
                     iframeManager: et,
                     stylesheetManager: ee,
                     shadowDomManager: ea,
@@ -45477,7 +45488,7 @@ ${eQ}
             console.warn(e);
           }
         }
-        (th.mirror = tL),
+        (th.mirror = tD),
           (th.takeFullSnapshot = function (e) {
             if (!_)
               throw Error("please take full snapshot after start recording");
@@ -46538,10 +46549,10 @@ ${eQ}
             method: _,
             statusCode: E,
             request: u,
-            response: await rD(I, r, t.response, c),
+            response: await rL(I, r, t.response, c),
           };
         }
-        async function rD(
+        async function rL(
           e,
           { networkCaptureBodies: t, networkResponseHeaders: r },
           n,
@@ -46550,7 +46561,7 @@ ${eQ}
           if (!e && void 0 !== a) return rT(a);
           let o = n ? rC(n.headers, r) : {};
           if (!n || (!t && void 0 !== a)) return rd(o, a, void 0);
-          let [i, _] = await rL(n),
+          let [i, _] = await rD(n),
             E = (function (
               e,
               {
@@ -46580,7 +46591,7 @@ ${eQ}
             });
           return _ ? rR(E, _) : E;
         }
-        async function rL(e) {
+        async function rD(e) {
           let t = (function (e) {
             try {
               return e.clone();
@@ -46799,7 +46810,7 @@ ${eQ}
                 : Object.keys(e._integrations),
           };
           e.emit("preprocessEvent", n, a);
-          let o = await (0, D.R)(e.getOptions(), n, a, t, e, (0, O.aF)());
+          let o = await (0, L.R)(e.getOptions(), n, a, t, e, (0, O.aF)());
           if (!o) return null;
           o.platform = o.platform || "javascript";
           let i = e.getSdkMetadata(),
@@ -46860,7 +46871,7 @@ ${eQ}
               (0, B.WD)({})
             );
           delete S.sdkProcessingMetadata;
-          let D =
+          let L =
             ((i = S),
             (_ = I),
             (E = p),
@@ -46879,7 +46890,7 @@ ${eQ}
               ],
             ]));
           try {
-            c = await N.send(D);
+            c = await N.send(L);
           } catch (t) {
             let e = Error(X);
             try {
@@ -46892,8 +46903,8 @@ ${eQ}
             (c.statusCode < 200 || c.statusCode >= 300)
           )
             throw new ry(c.statusCode);
-          let L = (0, w.WG)({}, c);
-          if ((0, w.Q)(L, "replay")) throw new rv(L);
+          let D = (0, w.WG)({}, c);
+          if ((0, w.Q)(D, "replay")) throw new rv(D);
           return c;
         }
         class ry extends Error {
@@ -47425,11 +47436,11 @@ ${eQ}
             return r;
           }
           getCurrentRoute() {
-            let e = this.lastActiveSpan || (0, L.HN)(),
-              t = e && (0, L.Gx)(e),
-              r = ((t && (0, L.XU)(t).data) || {})[h.Zj];
+            let e = this.lastActiveSpan || (0, D.HN)(),
+              t = e && (0, D.Gx)(e),
+              r = ((t && (0, D.XU)(t).data) || {})[h.Zj];
             if (!!t && !!r && !!["route", "custom"].includes(r))
-              return (0, L.XU)(t).description;
+              return (0, D.XU)(t).description;
           }
           _initializeRecording() {
             this.setInitialState(),
@@ -48217,8 +48228,8 @@ ${eQ}
             mask: O = [],
             maskAttributes: f = ["title", "placeholder"],
             unmask: S = [],
-            block: D = [],
-            unblock: L = [],
+            block: L = [],
+            unblock: D = [],
             ignore: h = [],
             maskFn: C,
             beforeAddRecordingEvent: g,
@@ -48248,7 +48259,7 @@ ${eQ}
                   'input[type="file"]',
                 ]),
               };
-            })({ mask: O, unmask: S, block: D, unblock: L, ignore: h });
+            })({ mask: O, unmask: S, block: L, unblock: D, ignore: h });
             if (
               ((this._recordingOptions = {
                 maskAllInputs: s,
@@ -48466,4 +48477,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.4a626f922f9a30b86266.js.map
+//# sourceMappingURL=sentry.dc8713254ded613dd6db.js.map
