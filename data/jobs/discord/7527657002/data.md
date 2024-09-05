@@ -2,7 +2,7 @@
 
 ## Senior Staff Marketing Researcher
 
-**Location:** Remote (U.S.)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7527657002 <br/>
 **Internal Job Id:** 5954563002 <br/>

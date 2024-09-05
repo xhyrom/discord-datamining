@@ -1,6 +1,59 @@
 {
   "jobs": [
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discordnetherlands/jobs/7626153002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null
+        }
+      ],
+      "education": "education_optional",
+      "internal_job_id": 5998513002,
+      "location": {
+        "name": "Netherlands"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 7626153002,
+      "updated_at": "2024-09-05T18:25:23-04:00",
+      "requisition_id": "R-100658",
+      "title": "Exploitative Content Manager",
+      "content": "&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;&lt;/p&gt;\n&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;As the Manager of Exploitative Content, you will lead our EU team to deliver responsible safety operations for our users in alignment with European domestic and international standards, and support initiatives to protect and enhance the working experiences for the team.&lt;/p&gt;\n&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;You will serve as the internal subject matter expert on teen and child safety, provide strategic guidance and oversight to an EU team, and liaise with internal and external stakeholders to deliver program capability and processes. You will report into our Senior Manager of Exploitative Content.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Inform Discord’s policies, programs, and plans to promote and ensure quality, consistency, and integration of the Exploitative Content mission&lt;/li&gt;\n&lt;li&gt;Manage initiatives, report results, and make recommendations based on risk mitigation, brand reputation, and opportunities to generate safety-related impact&lt;/li&gt;\n&lt;li&gt;Lead engagement with EU business leaders and subject matter experts on strategies, plans, and specific projects relating to the Exploitative Content mission&lt;/li&gt;\n&lt;li&gt;Advise and guide efforts by supporting Discord stakeholder teams, including scaled enforcement, data engineering, threat research, and adaptive analytics, to incorporate user safety initiatives, projects, and planning&lt;/li&gt;\n&lt;li&gt;Manage EU industry initiatives, external partnerships and collaborations, and serve as the principal Exploitative Content resource for team and company leaders&lt;/li&gt;\n&lt;li&gt;Ensure delivery of high quality, trauma-informed, person-centered services to prevent crimes against children and other vulnerable populations&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;6+ years of experience investigating and acting on digital crimes and internet-enabled abuse against children or experience in reviewing and acting on violating adult explicit content&lt;/li&gt;\n&lt;li&gt;A Bachelor’s degree in social impact, human rights, or related field/equivalent work experience&lt;/li&gt;\n&lt;li&gt;Adept at prioritizing and planning multi-stakeholder initiatives, providing direction and removing obstacles when needed&lt;/li&gt;\n&lt;li&gt;Ability to create effective relationships, influence, and collaborate at all organizational levels&lt;/li&gt;\n&lt;li&gt;Demonstrated experience with organizational capacity, namely building and strengthening teams at scale as well as building and strengthening stakeholder partnerships&lt;/li&gt;\n&lt;li&gt;Advocacy and/or policy experience with key stakeholders including European federal agencies, civil society organizations, non-profit agencies, and other international partners&lt;/li&gt;\n&lt;li&gt;Experience analyzing and mitigating high-impact threats and online threat actors, with a track record of managing tactical &amp;amp; strategic initiatives resulting in measurable change&lt;/li&gt;\n&lt;li&gt;Proven leadership in developing, articulating, and advocating policies and strategies relating to teen and child safety&lt;/li&gt;\n&lt;li&gt;Strong understanding of European and global regulation related to digital/online safety&lt;/li&gt;\n&lt;li&gt;Demonstrated leadership managing enterprise strategy, policy, and planning, to include liaison relationships with relevant organizations (e.g., NCMEC), law enforcement agencies, oversight organizations, and international partners&lt;/li&gt;\n&lt;li&gt;Proven experience in partnering with people operations to support wellness initiatives for employees&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;h4 class=&quot;margin-top-40 margin-bottom-8 textH4-3Bngsz headingDefault-2s3GxE sizeLarge-2FUtr2 lineTiny-1v9oiX weightSemiBold-19z6Hb&quot;&gt;About Us&lt;/h4&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Discord is a voice, video and text app that helps friends and communities come together to hang out and explore their interests — from artists and activists, to study groups, sneakerheads, plant parents, and more. With 150 million monthly users across 19 million active communities, called servers, Discord has grown to become one of the most popular communications services in the world. Discord was built without selling ads or user data and instead, offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. &lt;/span&gt;&lt;strong&gt;So if this strikes a chord with you, come build belonging with us!&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4000669002,
+          "name": "Trust & Safety",
+          "child_ids": [],
+          "parent_id": 4094263002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4058029002,
+          "name": "Remote (International)",
+          "location": null,
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discordnetherlands/jobs/7316381002",
       "data_compliance": [
         {
@@ -55,6 +108,6 @@
     }
   ],
   "meta": {
-    "total": 1
+    "total": 2
   }
 }
