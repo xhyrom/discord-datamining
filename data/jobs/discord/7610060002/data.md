@@ -2,7 +2,7 @@
 
 ## Senior Engineering Manager, Realtime Infrastructure
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA 
 
 **Id:** 7610060002 <br/>
 **Internal Job Id:** 5991662002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7610060002](https://discord.com/jobs/7610060002)
 
-**Updated At:** Thu, 05 Sep 2024 16:21:06 GMT
+**Updated At:** Thu, 05 Sep 2024 19:42:04 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
@@ -53,7 +53,7 @@ How Discord Scaled Elixir to 5,000,000 Concurrent Users
 How Discord handles push request bursts of over a million per minute with Elixir’s GenStage
 
 
-#LI-RemoteThe US base salary range for this full-time position is $263,000 to $289,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Please see our Applicant and Candidate Privacy Policy for details regarding Discord's collection and use of personal information relating to the application and recruitment process by clicking here.&amp;nbsp;Discord is an equal opportunity employer that believes diversity inspires creativity and innovation. We are committed to fostering an inclusive environment where employees can do their best work free of harassment or discrimination, regardless of race, ethnicity, religion, gender identity or expression, sexual orientation, age, disability, military status, or any other protected characteristics or identities. We encourage all candidates to apply for roles where they may make the most impact.
+PLEASE NOTE: This is not a 100% remote role. We are looking for someone to work in our San Francisco office at least 1 time per week.The US base salary range for this full-time position is $263,000 to $289,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Please see our Applicant and Candidate Privacy Policy for details regarding Discord's collection and use of personal information relating to the application and recruitment process by clicking here.&amp;nbsp;Discord is an equal opportunity employer that believes diversity inspires creativity and innovation. We are committed to fostering an inclusive environment where employees can do their best work free of harassment or discrimination, regardless of race, ethnicity, religion, gender identity or expression, sexual orientation, age, disability, military status, or any other protected characteristics or identities. We encourage all candidates to apply for roles where they may make the most impact.
 About Us
 Discord is a voice, video and text app that helps friends come together to hang out, have fun, and play games. With over 150 million monthly users, Discord has grown to become one of the most popular communications services in the world. Discord offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
 We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. So if this strikes a chord with you, come build belonging with us!
