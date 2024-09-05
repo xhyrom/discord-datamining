@@ -730,6 +730,10 @@
       "PUT"
     ]
   },
+  "GUILD_MEMBER_JOIN_REQUEST_COOLDOWN": {
+    "url": "/guilds/:param/requests/@me/cooldown",
+    "allowed_methods": null
+  },
   "GUILD_JOIN_REQUEST": {
     "url": "/guilds/:param/requests/:param",
     "allowed_methods": [
