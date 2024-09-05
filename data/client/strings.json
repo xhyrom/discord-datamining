@@ -10526,6 +10526,7 @@
   "MEMBER_VERIFICATION_PENDING_APPLICATION_MODAL_WITHDRAW_AND_LEAVE": "\"Withdraw and Leave Server\"",
   "MEMBER_VERIFICATION_PENDING_APPLICATION_MODAL_DISMISS": "\"Never mind\"",
   "MEMBER_VERIFICATION_PENDING_APPLICATION_MODAL_REAPPLY": "\"Reapply\"",
+  "MEMBER_VERIFICATION_PENDING_APPLICATION_MODAL_REAPPLY_COOLDOWN": "\"{days, plural, =1 {1 day} other {{days} days}} until you can reapply\"",
   "MEMBER_VERIFICATION_LEAVE_APPLICATION_TITLE": "\"Are you sure you want to quit?\"",
   "MEMBER_VERIFICATION_LEAVE_APPLICATION_DESC": "\"You’ll have to resubmit your application if you want to join again in the future.\"",
   "MEMBER_VERIFICATION_LEAVE_APPLICATION_COMPLETE_LATER": "\"Complete Application Later\"",
