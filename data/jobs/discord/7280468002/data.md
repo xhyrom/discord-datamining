@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7280468002](https://discord.com/jobs/7280468002)
 
-**Updated At:** Thu, 05 Sep 2024 18:01:32 GMT
+**Updated At:** Thu, 05 Sep 2024 20:57:55 GMT
 
 **Job Description:**
 This position is US based only.Come build the future of Discord’s business with us! We are looking for impact-focused engineers to join our world-class Revenue group as we accelerate Discord’s growth through the creation of compelling paid products. These products allow us to grow our business while keeping Discord’s core functionality free. &amp;nbsp;You will be reporting to the Senior Engineering Manager of Revenue Infrastructure. &amp;nbsp;To learn more about Discord Engineering, take a look at our engineering blog.
