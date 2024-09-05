@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7316381002](https://discord.com/jobs/7316381002)
 
-**Updated At:** Thu, 05 Sep 2024 16:21:06 GMT
+**Updated At:** Thu, 05 Sep 2024 22:04:46 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
@@ -39,9 +39,8 @@ Tertiary qualifications or equivalent experience in Intelligence Studies, Cybers
 Experience utilizing SQL, Python, or other programming languages for data manipulation
 Knowledge of common networking and routing protocols (e.g., TCP/IP), services (e.g., web, mail, DNS), and how they interact to facilitate network communications
 Experience with Discord’s API
-Please see our Applicant and Candidate Privacy Policy for details regarding Discord's collection and use of personal information relating to the application and recruitment process by clicking here.&amp;nbsp;Discord is an equal opportunity employer that believes diversity inspires creativity and innovation. We are committed to fostering an inclusive environment where employees can do their best work free of harassment or discrimination, regardless of race, ethnicity, religion, gender identity or expression, sexual orientation, age, disability, military status, or any other protected characteristics or identities. We encourage all candidates to apply for roles where they may make the most impact.
 About Us
-Discord is a voice, video and text app that helps friends come together to hang out, have fun, and play games. With over 150 million monthly users, Discord has grown to become one of the most popular communications services in the world. Discord offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
+Discord is a voice, video and text app that helps friends and communities come together to hang out and explore their interests — from artists and activists, to study groups, sneakerheads, plant parents, and more. With 150 million monthly users across 19 million active communities, called servers, Discord has grown to become one of the most popular communications services in the world. Discord was built without selling ads or user data and instead, offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
 We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. So if this strikes a chord with you, come build belonging with us!
 
 **Education:**
