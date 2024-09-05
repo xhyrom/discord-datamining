@@ -10055,6 +10055,8 @@
   "CUSTOM_STATUS_DELETE": "\"Delete status\"",
   "CUSTOM_STATUS_ACTION_SHEET_HEADER": "\"{username}'s Status\"",
   "CUSTOM_STATUS_ACTION_SHEET_YOUR_STATUS_HEADER": "\"Your Status\"",
+  "CUSTOM_STATUS_ACTION_SHEET_EDIT": "\"Edit Status\"",
+  "CUSTOM_STATUS_ACTION_SHEET_DELETE": "\"Delete Status\"",
   "CUSTOM_STATUS_OPEN_ACTION_SHEET_YOUR_STATUS_A11Y_HINT": "\"Tap for custom status options\"",
   "SYSTEM_DM_CHANNEL_DESCRIPTION": "\"This chat is reserved for official Discord notifications.\"",
   "SYSTEM_DM_CHANNEL_DESCRIPTION_SUBTEXT": "\"Discord will never ask you for your password or account token.\"",
