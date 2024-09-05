@@ -75,7 +75,7 @@
   <strong>The</strong> <strong>First</strong> <strong>Descendant</strong>,
   you’ll be able to claim the <strong>Hailey</strong> <strong>avatar</strong>
   <strong>decoration</strong>. The Hailey avatar decoration needs to be redeemed
-  by <strong>September</strong> <strong>5, 2024</strong>.
+  by <strong>October</strong> <strong>5, 2024</strong>.
 </p>
 <div class="tip-box">
   Note: If the Quest is not completed by September 5, 2024, the Quest will no
@@ -102,7 +102,12 @@
   2. This will direct you to the <strong>Discover</strong> page where you can
   explore available Discord Quests, by selecting the <strong>Quest</strong> tab
   within the <strong>Discover</strong> list. You can learn more about Discover
-  here.
+  <a
+    href="https://support.discord.com/hc/en-us/articles/25323248535319-Discover-Tab"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
 </p>
 <p>
   3. While here, select <strong>Claim</strong> <strong>Reward</strong> for the
