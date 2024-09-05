@@ -4819,6 +4819,7 @@
   "SCOPE_UNSUPPORTED_ON_ANDROID_DESCRIPTION": "\"This OAuth2 scope is not supported within the app yet.\\nGood news though, it does work on your mobile web browser! So please open it there.\"",
   "OAUTH2_GO_TO_SERVER_NAME_CTA": "\"Go to **!!{guildName}!!**\"",
   "OAUTH2_GO_TO_SERVER_DEFAULT_CTA": "\"Go to Server\"",
+  "OAUTH2_OPEN_APP_CTA": "\"Open App\"",
   "OAUTH2_IP_LOCATION_DISCLOSURE": "\"Developer may see your IP address while you use this application.\"",
   "OAUTH2_ADVERTISEMENTS_DISCLOSURE": "\"Developer may show ads while you use this application.\"",
   "SETTINGS_TWO_FA": "\"Multi-Factor Authentication\"",
@@ -7690,6 +7691,7 @@
   "PAYMENT_SOURCE_CASH_APP_PAY_DETAILS": "\"Cash App Pay Details\"",
   "PAYMENT_SOURCE_CASH_APP_PAY_LOADING": "\"Contacting Cash App Pay...\"",
   "PAYMENT_SOURCE_CONNECT_TO_CASH_APP_PAY": "\"Connect to Cash App Pay\"",
+  "PAYMENT_SOURCE_CASH_APP_PAY_LOADING_ERROR_TRY_AGAIN": "\"Something went wrong loading Cash App Pay. Please try again.\"",
   "PAYMENT_SOURCE_CASH_APP_PAY_CONNECTION_INSTRUCTIONS": "\"Follow the steps to complete your account connection.\"",
   "PAYMENT_SOURCE_CASH_APP_PAY_CONNECTED_SUCCESS": "\"You've connected {cashtag}'s account.\"",
   "PAYMENT_SOURCE_CASH_APP_PAY_CONNECTED_SUCCESS_INSTRUCTIONS": "\"Hooray! You can now pay via your Cash App account.\"",
@@ -18882,5 +18884,6 @@
   "QUESTS_NITRO_REWARD_MODAL_FOOTER_IN_GAME_BODY": "\"You earned **{rewardNameWithArticle}**! It has been automatically applied to your account.\"",
   "QUESTS_NITRO_REWARD_MODAL_ERROR_HAVE_A_SUB": "\"You already have Nitro! This Quest reward is only available to users who aren't subscribed to Nitro.\"",
   "QUESTS_NITRO_REWARD_MODAL_ERROR_MISC": "\"Something went wrong\"",
-  "QUESTS_NITRO_REWARD_MODAL_BACKGROUND_IMAGE_ALT": "\"Rocket Ships fly over a stary galaxy.\""
+  "QUESTS_NITRO_REWARD_MODAL_BACKGROUND_IMAGE_ALT": "\"Rocket Ships fly over a stary galaxy.\"",
+  "QUESTS_NITRO_ENROLL_FAILURE_TOAST": "\"Something went wrong. You may not be elegible to enroll in this Quest.\""
 }
