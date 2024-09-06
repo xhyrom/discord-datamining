@@ -6024,6 +6024,7 @@
   "SYSTEM_MESSAGE_POLL_RESULT_WINNER_MOBILE": "\"[!!{username}!!](usernameOnClick)'s poll [!!{title}!!](titleOnClick) has closed! The winner was $[](answerHook) ({percentage})\"",
   "SYSTEM_MESSAGE_POLL_RESULT_NO_VOTERS_MOBILE": "\"[!!{username}!!](usernameOnClick)'s poll [!!{title}!!](titleOnClick) has closed! There was no winner $[](sadEmojiHook).\"",
   "SYSTEM_MESSAGE_POLL_RESULT_TIED_MOBILE": "\"[!!{username}!!](usernameOnClick)'s poll [!!{title}!!](titleOnClick) has closed! The results were tied ({percentage}).\"",
+  "SYSTEM_MESSAGE_CHANNEL_LINKED_TO_LOBBY": "\"$[!!{username}!!](usernameHook) has connected this channel to **!!{applicationName}!!**. Messages are now syncing. [Learn More]({helpdeskArticle})\"",
   "NOTIFICATION_CENTER_POLL_RESULT_WINNER": "'The poll \"{questionText}\" has closed! The winner was \"{victorAnswerText}\" ({percentage}).'",
   "NOTIFICATION_CENTER_POLL_RESULT_NO_WINNER": "'The poll \"{questionText}\" has closed! There was no winner.'",
   "NOTIFICATION_CENTER_POLL_RESULT_TIE": "'The poll \"{questionText}\" has closed! The results were tied ({percentage}).'",
