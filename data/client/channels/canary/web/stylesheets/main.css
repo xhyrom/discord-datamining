@@ -17003,6 +17003,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .tooltipGameImage_fda254 {
   width: 16px;
   height: 16px;
+  border-radius: 4px;
 }
 .tooltipGameName_fda254 {
   flex: 1;
@@ -44227,4 +44228,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.44d50b6155be93cd0032.css.map*/
+/*# sourceMappingURL=12633.81285e5ce9e5b0874bab.css.map*/
