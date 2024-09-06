@@ -12284,7 +12284,7 @@
           }),
           ((a = n || (n = {})).GENERAL = "general"),
           (a.IMAGES = "images"),
-          (a.PREMIUM = "premium"),
+          (a.PREMIUM_DEPRECATED = "premium"),
           (a.STORE = "store"),
           (a.PRIVACY = "privacy");
       },
@@ -12374,7 +12374,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b3480190c8804169b6dc47ce6288cfa42403ae49",
+            release: "discord_web-6e34e46bfbfacdc17343460dc5b1b29530d75ea9",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12443,8 +12443,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "325120"), "325120"));
-          i.YA("builtAt", String("1725632189896"));
+            i.YA("buildNumber", ((e = "325182"), "325182"));
+          i.YA("builtAt", String("1725641970721"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -22228,7 +22228,8 @@
           (a[(a.VOICE_HANGOUT_INVITE = 45)] = "VOICE_HANGOUT_INVITE"),
           (a[(a.POLL_RESULT = 46)] = "POLL_RESULT"),
           (a[(a.CHANGELOG = 47)] = "CHANGELOG"),
-          (a[(a.NITRO_NOTIFICATION = 48)] = "NITRO_NOTIFICATION");
+          (a[(a.NITRO_NOTIFICATION = 48)] = "NITRO_NOTIFICATION"),
+          (a[(a.CHANNEL_LINKED_TO_LOBBY = 49)] = "CHANNEL_LINKED_TO_LOBBY");
         let o = {
           UNDELETABLE: new Set([1, 2, 3, 4, 5, 21]),
           GUILD_DISCOVERY_STATUS: new Set([14, 15, 16, 17]),
@@ -48477,4 +48478,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.efea1c6e42d405661737.js.map
+//# sourceMappingURL=sentry.975ac4a3d7d10f56cc57.js.map

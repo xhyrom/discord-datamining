@@ -17003,6 +17003,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .tooltipGameImage_fda254 {
   width: 16px;
   height: 16px;
+  border-radius: 4px;
 }
 .tooltipGameName_fda254 {
   flex: 1;
@@ -43861,10 +43862,6 @@ code {
   --custom-broadcasting-tooltip-image-offset: 40px;
 }
 :root {
-  --custom-application-subscription-card-benefits-gap: 16px;
-  --custom-application-subscription-card-listing-image-size: 40px;
-}
-:root {
   --custom-application-directory-content-min-width: 600px;
   --custom-application-directory-content-max-width: 1024px;
   --custom-guild-count-small-icon-size: 16px;
@@ -44227,4 +44224,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.44d50b6155be93cd0032.css.map*/
+/*# sourceMappingURL=12633.d5fce2ed4fef7038f453.css.map*/
