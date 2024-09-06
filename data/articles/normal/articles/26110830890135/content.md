@@ -70,12 +70,9 @@
 </div>
 <p>
   In order to successfully complete the <strong>V1.2 WUWA Quest</strong>,
-  players who meet the eligibility criteria must
-</p>
-<p>
-  live stream their <strong>Wuthering Waves </strong>gameplay to a friend via a
-  Discord voice channel for a minimum duration of 15 minutes on the desktop
-  app. 
+  players who meet the eligibility criteria must live stream their
+  <strong>Wuthering Waves </strong>gameplay to a friend via a Discord voice
+  channel for a minimum duration of 15 minutes on the desktop app. 
 </p>
 <p>1. Before you can begin the Quest, launch the game.</p>
 <p>

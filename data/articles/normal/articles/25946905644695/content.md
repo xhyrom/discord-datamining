@@ -24,7 +24,7 @@
     >Quest Name: Season 1 Invasion Quest</strong
   ><br /><strong>Offer Details:</strong> Play 15 minutes of
   <strong>The First Descendant</strong> on PC to receive a
-  <strong>Hailey avatar decoration</strong>, the legendary sniper. You can learn
+  <strong>Bunny avatar decoration</strong>, Albion's speedster. You can learn
   more about avatar decorations
   <a
     href="https://support.discord.com/hc/articles/13410113109911"
@@ -36,17 +36,17 @@
   available.<br />Discord’s premium services are restricted in some regions.
 </p>
 <div class="tip-box">
-  <strong>NOTE</strong>: The Hailey avatar decoration is a limited-time avatar
+  <strong>NOTE</strong>: The Bunny avatar decoration is a limited-time avatar
   decoration and will only be yours as an avatar decoration until
-  <strong>November 5, 2024 (11:59PM UTC).</strong> After this date, you will no
+  <strong>November 12, 2024 (11:59PM UTC).</strong> After this date, you will no
   longer have access to this avatar decoration.
 </div>
 <p>
   <strong>Availability Period:</strong> <strong>The</strong>
   <strong>Season</strong> <strong>1</strong> <strong>Invasion</strong>
   <strong>Quest</strong> can be accepted on Discord from
-  <strong>August 30, 2024 </strong>until<strong>
-    September 5, 2024 (11:59PM UTC)</strong
+  <strong>September 6, 2024 </strong>until<strong>
+    September 12, 2024 (11:59PM UTC)</strong
   >.<br />Quest requirements must be completed during this period to receive the
   reward.<br /><strong>Other Terms:</strong> Limit of one reward redemption per
   account.<br />For more information on Discord Quests and to view the currently
@@ -73,18 +73,18 @@
 <p>
   Once you have completed the Quest by streaming 15 minutes of
   <strong>The</strong> <strong>First</strong> <strong>Descendant</strong>,
-  you’ll be able to claim the <strong>Hailey</strong> <strong>avatar</strong>
-  <strong>decoration</strong>. The Hailey avatar decoration needs to be redeemed
-  by <strong>October</strong> <strong>5, 2024</strong>.
+  you’ll be able to claim the <strong>Bunny</strong> <strong>avatar</strong>
+  <strong>decoration</strong>. The Bunny avatar decoration needs to be redeemed
+  by <strong>October</strong> <strong>12</strong><strong>, 2024</strong>.
 </p>
 <div class="tip-box">
-  Note: If the Quest is not completed by September 5, 2024, the Quest will no
-  longer be available within your <strong>Quest</strong>
+  Note: If the Quest is not completed by <strong>September 12, 2024</strong>,
+  the Quest will no longer be available within your <strong>Quest</strong>
   <strong>Home</strong> (<strong>Discover</strong> <strong>&gt;</strong>
   <strong>Quests</strong>).
 </div>
 <p>
-  You can use the following methods to claim your <strong>Hailey</strong>
+  You can use the following methods to claim your <strong>Bunny</strong>
   <strong>avatar</strong> <strong>decoration</strong>:
 </p>
 <p>
@@ -115,24 +115,24 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26009359653911"
-    width="680"
-    height="452"
+    src="https://support.discord.com/hc/article_attachments/26189678420887"
+    width="672"
+    height="373"
   />
 </p>
 <p>
   <span class="wysiwyg-font-size-large"><strong>Option 2</strong></span>
 </p>
 <p>
-  You can also claim your<strong> Hailey avatar decoration</strong> by pressing
+  You can also claim your<strong> Bunny avatar decoration</strong> by pressing
   the <strong>Claim</strong> <strong>Reward</strong> button within the
   <strong>Quest</strong> <strong>bar</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26009359655447"
-    width="683"
-    height="453"
+    src="https://support.discord.com/hc/article_attachments/26189663896855"
+    width="663"
+    height="356"
   />
 </p>
 <div class="info-box">
@@ -221,11 +221,35 @@
 </p>
 <p>
   <strong
-    >Q: When I press on “Claim Reward” I'm loading FOREVER, why is this?</strong
+    >Q: When I press on the “Claim Reward” button, it seems to be stuck on a
+    loading loop. </strong
   >
 </p>
 <p>
-  A: Fear not, you should still see the avatar decoration in your User Settings.
-  Updating your Discord app can also resolve the issue if you're not seeing the
-  reward.
+  A: Fear not, you should still see the avatar decoration in your
+  <strong
+    >User Settings &gt; Profiles &gt; Change Decorations and be able to use
+    it</strong
+  >. Updating your Discord app can also resolve the issue if you're not seeing
+  the reward. 
 </p>
+<p><strong>Q: Can I still claim the Hailey avatar decoration?</strong></p>
+<p>
+  A: If you have completed the <strong>Season 1 Invasion Quest</strong> for the
+  <strong>Hailey avatar decoration</strong> by
+  <strong>September 5, 2024</strong>, you have until
+  <strong>October 5, 2024</strong> to claim this offer. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26189618076055"
+    width="470"
+    height="249"
+  />
+</p>
+<h4 id="h_01J740B6VY3X7194Q7QRN29YQM" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Hailey Avatar Decoration - Enjoy until November 5, 2024 (11:59
+    UTC)!  </span
+  >
+</h4>

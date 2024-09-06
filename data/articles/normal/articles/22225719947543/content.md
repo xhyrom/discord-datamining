@@ -20,11 +20,13 @@
   >
 </p>
 <ul>
-  <li><a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a></li>
-  <li style="list-style-type: none">
+  <li>
+    <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
+      <li>
+        <a href="#h_01J6G4D7V76YHX2F60YETE63JJ">The First Descendant </a> 
+      </li>
       <li><a href="#h_01J71E6SB3E6C2WB0T0D994406">Wuthering Waves </a></li>
-      <li><a href="#h_01J6G4D7V76YHX2F60YETE63JJ">The First Descendant </a></li>
       <li><a href="#h_01J6006XQ2BKXT4ADDBYR3XKCV">World of Warcraft</a></li>
     </ul>
   </li>
@@ -60,6 +62,24 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J6G4D7V76YHX2F60YETE63JJ">
+  <a
+    href="https://support.discord.com/hc/articles/25946905644695"
+    target="_blank"
+    rel="noopener noreferrer"
+    >The First Descendant - Season 1 Invasion Quest</a
+  >
+</h2>
+<p>
+  The <strong>Season 1 Invasion Quest</strong> can be accepted on Discord from
+  <strong>September 6, 2024</strong> until
+  <strong>September 12, 2024 (11:59PM UTC)</strong>. Users must redeem the
+  <strong>Hailey avatar decoration</strong> by
+  <strong>October 5, 2024</strong> and the
+  <strong>Bunny avatar decoration</strong> by <strong>October 12, 2024</strong>.
+  To receive these rewards, all quest requirements must be completed within the
+  specified timeframe.
+</p>
 <h2 id="h_01J71E6SB3E6C2WB0T0D994406">
   <a
     href="https://support.discord.com/hc/articles/26110830890135"
@@ -74,21 +94,6 @@
     September 9, 2024 (11:59PM UTC)</strong
   >. Reward gift codes expire <strong>October 9, 2024 (4AM UTC)</strong>. Quest
   requirements must be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J6G4D7V76YHX2F60YETE63JJ">
-  <a
-    href="https://support.discord.com/hc/articles/25946905644695"
-    target="_blank"
-    rel="noopener noreferrer"
-    >The First Descendant - Season 1 Invasion Quest</a
-  >
-</h2>
-<p>
-  The <strong>Season 1 Invasion Quest</strong> can be accepted on Discord from
-  <strong>August 30, 2024 </strong>until<strong>
-    September 5, 2024 (11:59PM UTC)</strong
-  >. Quest requirements must be completed during this period to receive the
-  reward.
 </p>
 <h2 id="h_01J6006XQ2BKXT4ADDBYR3XKCV">
   <a
