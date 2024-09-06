@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_open_platform_link_sharing_mobile",
+    "label": "Open Platform Link Sharing Mobile",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable app link sharing and install flow improvements on mobile"
+    ],
+    "hash": 1206887120,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
