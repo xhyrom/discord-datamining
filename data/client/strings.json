@@ -17195,6 +17195,8 @@
   "PRIVACY_AND_SAFETY_CATEGORY_TITLE_FRIEND_REQUESTS": "\"Friend Requests\"",
   "PRIVACY_AND_SAFETY_CATEGORY_TITLE_REQUEST_DATA": "\"Receive your data\"",
   "PRIVACY_AND_SAFETY_CATEGORY_TITLE_DISCORD_DATA_USAGE": "\"How Discord uses your data\"",
+  "PRIVACY_AND_SAFETY_CATEGORY_TITLE_SOCIAL_PERMISSIONS": "\"Social permissions\"",
+  "PRIVACY_AND_SAFETY_ALL_SERVERS_OPTION_TITLE": "\"All servers\"",
   "SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE": "\"Your account is $[all good!](hook)\"",
   "SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE_V2": "\"Your account is $[all good](hook)\"",
   "SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_DESCRIPTION": "\"Thanks for upholding Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).\"",
