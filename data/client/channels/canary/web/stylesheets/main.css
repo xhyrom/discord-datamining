@@ -17048,17 +17048,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   flex-wrap: wrap;
   gap: 4px;
 }
-.clickableCard_e0fe28 {
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: var(--shadow-low);
-  min-width: 240px;
-  max-width: 360px;
-  height: 400px;
-}
-.full-motion .clickableCard_e0fe28 {
-  transition: transform.2s, box-shadow.1s;
-}
+.clickableCard_e0fe28,
 .nonClickableCard_e0fe28 {
   border-radius: 8px;
   cursor: pointer;
@@ -17067,11 +17057,11 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   max-width: 360px;
   height: 400px;
 }
-.clickableCard_e0fe28:hover {
+.clickableCard_e0fe28:hover .card_e0fe28 {
   box-shadow: var(--shadow-high);
   transform: translatey(-2px);
 }
-.clickableCard_e0fe28:active {
+.clickableCard_e0fe28:active .card_e0fe28 {
   box-shadow: var(--shadow-low);
   transform: translatey(-2px) scale(0.99);
 }
@@ -17084,6 +17074,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: var(--bg-base-tertiary);
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+}
+.full-motion .card_e0fe28 {
+  transition: transform.2s, box-shadow.1s;
 }
 .skeletonCard_e0fe28 {
   height: 100%;
@@ -17809,7 +17803,6 @@ div.cardContainer_c22357 {
 }
 .rootContainer_b3552d {
   width: 440px;
-  min-height: 400px;
 }
 .rootContainerLoading_b3552d {
   align-content: center;
@@ -17862,7 +17855,7 @@ div.cardContainer_c22357 {
 .gradient_b3552d {
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  min-height: 200px;
   padding: 32px 16px;
   text-align: center;
   display: flex;
@@ -17888,11 +17881,8 @@ div.cardContainer_c22357 {
   padding-top: 24px;
 }
 .sponsorLogo_b3552d {
-  margin-bottom: 8px;
-  width: 28px;
-  filter: brightness(0) saturate(100%) invert(39%) sepia(85%) saturate(3822%)
-    hue-rotate(334deg) brightness(115%) contrast(101%)
-    drop-shadow(0 0 5px#ff4655);
+  margin-bottom: 4px;
+  width: 80px;
 }
 .sponsoredBy_b3552d {
   color: rgba(255, 255, 255, 0.5);
@@ -44237,4 +44227,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.bd080555eb8c166a54c4.css.map*/
+/*# sourceMappingURL=12633.44d50b6155be93cd0032.css.map*/
