@@ -29124,9 +29124,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   background: var(--input-background);
   border-radius: 3px;
 }
-.custom-profile-theme .inner_b84fc9 {
-  background: rgb(var(--bg-overlay-color-inverse) / 0.1);
-}
 .editor_b84fc9 {
   --channel-text-area-placeholder: var(--text-muted);
   font-size: 14px;
@@ -44226,4 +44223,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.3e7ae68c26647c087d58.css.map*/
+/*# sourceMappingURL=12633.ff8e19de0bb70a4d1a0d.css.map*/
