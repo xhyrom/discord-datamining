@@ -8983,6 +8983,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-06_quest_inline_console_connection",
+      "label": "Quest Inline Console Connection Experiment",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Simplified console connection flow",
+        "Treatment 1: Inline console connection flow"
+      ],
+      "hash": 630483190,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-06_user_affinities_v2",
       "label": "User Affinity V2",
       "description": [
@@ -10149,29 +10172,6 @@
         1,
         2,
         3
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-06_quest_inline_console_connection",
-      "label": "Quest Inline Console Connection Experiment",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Simplified console connection flow",
-        "Treatment 1: Inline console connection flow"
-      ],
-      "hash": 630483190,
-      "buckets": [
-        -1,
-        0,
-        1
       ],
       "holdout": {},
       "aa_mode": false,
