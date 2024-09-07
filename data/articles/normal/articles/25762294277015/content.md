@@ -248,9 +248,11 @@
   you'll see a <strong>Nitro Promo modal</strong>. 
 </p>
 <div class="info-box">
-  <strong>NOTE</strong>: Chess.com members must be logged into their account to
-  see the modal and claim the Nitro promotion after completing their match with
-  the Discord chess bot.
+  <strong>NOTE</strong>: To claim the Nitro promotion after completing a match
+  with the Discord chess bot, Chess.com members must be logged into their
+  account.<br />For mobile users, ensure you're using the latest version of the
+  Chess.com app and are logged into your account. If you still encounter issues,
+  try restarting the app or logging out and back in.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
