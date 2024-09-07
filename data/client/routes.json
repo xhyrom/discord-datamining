@@ -732,7 +732,11 @@
   },
   "GUILD_MEMBER_JOIN_REQUEST_COOLDOWN": {
     "url": "/guilds/:param/requests/@me/cooldown",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_JOIN_REQUEST": {
     "url": "/guilds/:param/requests/:param",
