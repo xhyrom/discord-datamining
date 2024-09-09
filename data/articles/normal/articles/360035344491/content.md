@@ -81,101 +81,68 @@
   >
 </p>
 <ul>
+  <li><a href="#h_01HE3W5FZ3ST90GN4MGBJCNMA9">What is Discord Nitro?</a></li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ3ST90GN4MGBJCNMA9"
-      >What is Discord Nitro?</a
-    >
+    <a href="#h_01HE3W5FZ3X2RN5BJAPEW7NNK0">What is Xbox Game Pass for PC?</a>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ3X2RN5BJAPEW7NNK0"
-      >What is Xbox Game Pass for PC?</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ35H6RYWDCJP1WB7DG"
+    <a href="#h_01HE3W5FZ35H6RYWDCJP1WB7DG"
       >How do I claim the Xbox Game Pass for PC Code in Discord?</a
     >
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ391BV7KTQV7AAZS9D"
+        <a href="#h_01HE3W5FZ391BV7KTQV7AAZS9D"
           >Eligibility for Claiming this Promotion in Discord</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4DBWTE2WV7RGQP24Q"
+        <a href="#h_01HE3W5FZ4DBWTE2WV7RGQP24Q"
           >Step By Step Claim Instructions </a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4GBHD4WEMZGQ2MS12"
+    <a href="#h_01HE3W5FZ4GBHD4WEMZGQ2MS12"
       >How do I Redeem this Xbox Game Pass for PC Code to my Microsoft
       Account? </a
     >
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4HQMX9D8C692H2FP4"
+        <a href="#h_01HE3W5FZ4HQMX9D8C692H2FP4"
           >Eligibility for Redeeming the Xbox Code on your Microsoft Account</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4H243XHHD425F28MT"
+        <a href="#h_01HE3W5FZ4H243XHHD425F28MT"
           >Step By Step Claim Instructions </a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4B5R8A650QANSPFAT"
+        <a href="#h_01HE3W5FZ4B5R8A650QANSPFAT"
           >How do I share the Xbox Code with a Friend?</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4HN2QXA12KJDF9KB7"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01HE3W5FZ4HN2QXA12KJDF9KB7">Frequently Asked Questions</a>
     <ul>
+      <li><a href="#h_01HE3W5FZ4NHSXRAY8KA2TAME5">Promotion Details</a></li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4NHSXRAY8KA2TAME5"
-          >Promotion Details</a
-        >
+        <a href="#h_01HE3W5FZ43GBV90J18HG7C4CP">Eligibility for Promotion</a>
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ43GBV90J18HG7C4CP"
-          >Eligibility for Promotion</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ48JVB4EX9KTJE4AWJ"
+        <a href="#h_01HE3W5FZ48JVB4EX9KTJE4AWJ"
           >Claiming and Redemption Process</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4C1Q2H4WJRCPNP6HG"
+        <a href="#h_01HE3W5FZ4C1Q2H4WJRCPNP6HG"
           >Potential Errors and Other Issues</a
         >
       </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4AF69AZDAR24349F6"
-          >Legal</a
-        >
-      </li>
+      <li><a href="#h_01HE3W5FZ4AF69AZDAR24349F6">Legal</a></li>
     </ul>
   </li>
 </ul>
@@ -514,34 +481,27 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4NHSXRAY8KA2TAME5"
+    <a href="#h_01HE3W5FZ4NHSXRAY8KA2TAME5"
       ><strong>Promotion Details</strong></a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ43GBV90J18HG7C4CP"
+    <a href="#h_01HE3W5FZ43GBV90J18HG7C4CP"
       ><strong>Eligibility for Promotion</strong></a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ48JVB4EX9KTJE4AWJ"
+    <a href="#h_01HE3W5FZ48JVB4EX9KTJE4AWJ"
       ><strong>Claiming and Redemption Process</strong></a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4C1Q2H4WJRCPNP6HG"
+    <a href="#h_01HE3W5FZ4C1Q2H4WJRCPNP6HG"
       ><strong>Potential Errors and Other Issues</strong></a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4AF69AZDAR24349F6"
-      ><strong>Legal</strong></a
-    >
+    <a href="#h_01HE3W5FZ4AF69AZDAR24349F6"><strong>Legal</strong></a>
   </li>
 </ul>
 <h2 id="h_01HE3W5FZ4NHSXRAY8KA2TAME5"><strong>Promotion Details</strong></h2>
@@ -624,10 +584,7 @@
   >
   <strong>(11:59pm PST)</strong>. Redeem by<strong> August 31, 2024</strong>.
   You can find more information regarding the eligibility requirements
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360035344491#h_01HE3W5FZ4HQMX9D8C692H2FP4"
-    >here</a
-  >. 
+  <a href="#h_01HE3W5FZ4HQMX9D8C692H2FP4">here</a>. 
 </p>
 <h2 id="h_01HE3W5FZ48JVB4EX9KTJE4AWJ">
   <strong>Claiming and Redemption Process</strong>
