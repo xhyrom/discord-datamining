@@ -10321,6 +10321,7 @@
           (nf.IAR_FEEDBACK_MODAL_VIEWED = "iar_feedback_modal_viewed"),
           (nf.IAR_FEEDBACK_SUBMITTED = "iar_feedback_submitted"),
           (nf.IAR_SETTINGS_UPSELLS_ACTION = "iar_settings_upsells_action"),
+          (nf.DM_MUTE_FEEDBACK_SUBMITTED = "dm_mute_feedback_submitted"),
           (nf.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED =
             "emoji_upload_file_size_limit_exceeded"),
           (nf.EMOJI_UPLOAD_STARTED = "emoji_upload_started"),
@@ -10440,6 +10441,13 @@
           (nf.SERVER_GUIDE_CHANNEL_SELECTED = "server_guide_channel_selected"),
           (nf.SERVER_GUIDE_ACTION_COMPLETED = "server_guide_action_completed"),
           (nf.ASSISTANT_STEP_COMPLETED = "assistant_step_completed"),
+          (nf.FOR_LATER_SAVED_MESSAGES_CREATE =
+            "for_later_saved_messages_create"),
+          (nf.FOR_LATER_SAVED_MESSAGES_DELETE =
+            "for_later_saved_messages_delete"),
+          (nf.FOR_LATER_SAVED_MESSAGE_JUMP = "for_later_saved_message_jump"),
+          (nf.FOR_LATER_REMINDER_NOTIFICATION_CLICKED =
+            "for_later_reminder_notification_clicked"),
           (nf.MEDIA_PICKER_INFINITE_SCROLL_PAGED =
             "media_picker_infinite_scroll_paged"),
           (nf.MESSAGE_MENU_GOOGLE_SEARCHED = "message_menu_google_searched"),
@@ -12374,7 +12382,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6e34e46bfbfacdc17343460dc5b1b29530d75ea9",
+            release: "discord_web-6e270227b5f94fcadc5dd41b6f4234b32eb17ffa",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12443,8 +12451,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "325182"), "325182"));
-          i.YA("builtAt", String("1725641970721"));
+            i.YA("buildNumber", ((e = "325532"), "325532"));
+          i.YA("builtAt", String("1725902023892"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48478,4 +48486,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.975ac4a3d7d10f56cc57.js.map
+//# sourceMappingURL=sentry.6bd26a2ad3037a947737.js.map
