@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7428401002](https://discord.com/jobs/7428401002)
 
-**Updated At:** Thu, 05 Sep 2024 16:21:06 GMT
+**Updated At:** Mon, 09 Sep 2024 21:12:18 GMT
 
 **Job Description:**
 This position is US based only.Discord is the place for all things gaming. Discord is the place where players have their entire hangout experience with friends – from before, during, and after gaming sessions. Discord is also the place where every major game publisher and studio maintains an official community. And finally Discord is the place where the latest news, beta codes, and big gaming moments happen. &amp;nbsp;
 We are looking for a Director of Sales, Marketing Solutions to join as a founding member of the sales team focused on our eastern region. We are seeking a sales leader who is passionate about games, the game industry and helping game companies market to the players who are most passionate about their games. This is a role where you will be working in a zero to 1 environment to build and grow a new ads business line at Discord for game publishers and developers in our eastern region. &amp;nbsp;You will harness your prior experience in advertising/marketing/media spaces and bring a combination of strategic business thinking, game publisher and agency relationships, product insights and an ability to build a significant, recurring book of business with clients.&amp;nbsp;
 This is a senior leadership role where you will be joining the ads business at the ground level and play a significant role in shaping Discord’s product and business strategy in the media and marketing space. &amp;nbsp;This role will report into the Head of Gaming Partnerships &amp;amp; Sales and will be a management role, with a team that grows as the marketing solutions line grows.
-This is a remote based position, candidates must be be willing to work Eastern Time Zone (ET) hours and regularly travel to meet with customers.
+This is a remote based position, candidates must be willing to work Eastern Time Zone (ET) hours and regularly travel to meet with customers.
 What You'll Be Doing
 
 You will be responsible for hitting revenue and account goals for the east coast territory by
@@ -47,8 +47,7 @@ Experience with marketing and ad technology ecosystem including ability to colle
 Experience in negotiating and structuring standard and non-standard ad buying agreements
 Experience in growing, mentoring, and managing sales teams
 
-#LI-Remote
-The total annual target compensation range for this full-time position is $354,200 to $389,600 + equity + benefits. Our compensation ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed reflect the OTE (base salary + target variable compensation) only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
+The total annual target compensation range for this full-time position is $354,200 to $389,600 + equity + benefits. Our compensation ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed reflect the OTE (base salary + target variable compensation) only, and do not include equity, or benefits.#LI-RemoteWhy Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
 **Data Compliance:**
