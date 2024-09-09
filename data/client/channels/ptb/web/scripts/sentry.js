@@ -239,10 +239,10 @@
             (E.prototype.abs = function () {
               return new E(this.value >= 0 ? this.value : -this.value);
             });
-          function L(e, t, r) {
+          function D(e, t, r) {
             return e < 1e7 ? new i(f(t, e), r) : new i(O(t, c(e)), r);
           }
-          function D(e) {
+          function L(e) {
             var t,
               r,
               n,
@@ -298,7 +298,7 @@
             (_.prototype._multiplyBySmall = function (e) {
               return s(e.value * this.value)
                 ? new _(e.value * this.value)
-                : L(
+                : D(
                     Math.abs(e.value),
                     c(Math.abs(this.value)),
                     this.sign !== e.sign,
@@ -311,7 +311,7 @@
                   ? this
                   : -1 === e.value
                     ? this.negate()
-                    : L(Math.abs(e.value), this.value, this.sign !== e.sign);
+                    : D(Math.abs(e.value), this.value, this.sign !== e.sign);
             }),
             (_.prototype.multiply = function (e) {
               return W(e)._multiplyBySmall(this);
@@ -322,11 +322,11 @@
             }),
             (E.prototype.times = E.prototype.multiply),
             (i.prototype.square = function () {
-              return new i(D(this.value), !1);
+              return new i(L(this.value), !1);
             }),
             (_.prototype.square = function () {
               var e = this.value * this.value;
-              return s(e) ? new _(e) : new i(D(c(Math.abs(this.value))), !1);
+              return s(e) ? new _(e) : new i(L(c(Math.abs(this.value))), !1);
             }),
             (E.prototype.square = function (e) {
               return new E(this.value * this.value);
@@ -458,16 +458,16 @@
                     return s.reverse(), [I(s), I(c)];
                   })(A, T))[0];
             var S = e.sign !== s.sign,
-              L = n[1],
-              D = e.sign;
+              D = n[1],
+              L = e.sign;
             return (
               "number" == typeof r
                 ? (S && (r = -r), (r = new _(r)))
                 : (r = new i(r, S)),
-              "number" == typeof L
-                ? (D && (L = -L), (L = new _(L)))
-                : (L = new i(L, D)),
-              [r, L]
+              "number" == typeof D
+                ? (L && (D = -D), (D = new _(D)))
+                : (D = new i(D, L)),
+              [r, D]
             );
           }
           function g(e, t) {
@@ -2014,8 +2014,8 @@
           O = T.BUGGY_SAFARI_ITERATORS,
           f = R("iterator"),
           S = "keys",
-          L = "values",
-          D = "entries",
+          D = "values",
+          L = "entries",
           h = function () {
             return this;
           };
@@ -2029,8 +2029,8 @@
               if (!O && e && e in y) return y[e];
               switch (e) {
                 case S:
-                case L:
                 case D:
+                case L:
                   return function () {
                     return new r(this, e);
                   };
@@ -2053,18 +2053,18 @@
               I(g, U, !0, !0),
               o && (A[U] = h)),
             d &&
-              R === L &&
+              R === D &&
               v &&
-              v.name !== L &&
+              v.name !== D &&
               (!o && N
-                ? u(y, "name", L)
+                ? u(y, "name", D)
                 : ((G = !0),
                   (b = function () {
                     return a(v, this);
                   }))),
             R)
           ) {
-            if (((M = { values: m(L), keys: T ? b : m(S), entries: m(D) }), C))
+            if (((M = { values: m(D), keys: T ? b : m(S), entries: m(L) }), C))
               for (P in M) (O || G || !(P in y)) && l(y, P, M[P]);
             else n({ target: t, proto: !0, forced: O || G }, M);
           }
@@ -2733,32 +2733,32 @@
           if (f) {
             var S = f.prototype;
             if ((!A && a(S, "cause") && delete S.cause, !r)) return f;
-            var L = n("Error"),
-              D = t(function (e, t) {
+            var D = n("Error"),
+              L = t(function (e, t) {
                 var r = I(T ? t : e, void 0),
                   n = T ? new f(e) : new f();
                 return (
                   void 0 !== r && o(n, "message", r),
-                  l(n, D, n.stack, 2),
-                  this && i(S, this) && c(n, this, D),
+                  l(n, L, n.stack, 2),
+                  this && i(S, this) && c(n, this, L),
                   arguments.length > N && u(n, arguments[N]),
                   n
                 );
               });
             if (
-              ((D.prototype = S),
+              ((L.prototype = S),
               "Error" !== O
                 ? _
-                  ? _(D, L)
-                  : E(D, L, { name: !0 })
-                : R && d in f && (s(D, f, d), s(D, f, "prepareStackTrace")),
-              E(D, f),
+                  ? _(L, D)
+                  : E(L, D, { name: !0 })
+                : R && d in f && (s(L, f, d), s(L, f, "prepareStackTrace")),
+              E(L, f),
               !A)
             )
               try {
-                S.name !== O && o(S, "name", O), (S.constructor = D);
+                S.name !== O && o(S, "name", O), (S.constructor = L);
               } catch (e) {}
-            return D;
+            return L;
           }
         };
       },
@@ -3248,27 +3248,27 @@
             f = p ? u : _(t);
           (O = O == I ? l : O), (f = f == I ? l : f);
           var S = O == l,
-            L = f == l,
-            D = O == f;
-          if (D && s(e)) {
+            D = f == l,
+            L = O == f;
+          if (L && s(e)) {
             if (!s(t)) return !1;
             (N = !0), (S = !1);
           }
-          if (D && !S)
+          if (L && !S)
             return (
               d || (d = new n()),
               N || c(e) ? a(e, t, r, A, T, d) : o(e, t, O, r, A, T, d)
             );
           if (!(1 & r)) {
             var h = S && R.call(e, "__wrapped__"),
-              C = L && R.call(t, "__wrapped__");
+              C = D && R.call(t, "__wrapped__");
             if (h || C) {
               var g = h ? e.value() : e,
                 M = C ? t.value() : t;
               return d || (d = new n()), T(g, M, r, A, d);
             }
           }
-          return !!D && (d || (d = new n()), i(e, t, r, A, T, d));
+          return !!L && (d || (d = new n()), i(e, t, r, A, T, d));
         };
       },
       46166: function (e, t, r) {
@@ -4592,7 +4592,7 @@
             return tW;
           },
           IXf: function () {
-            return oL;
+            return oD;
           },
           I_8: function () {
             return az;
@@ -4718,7 +4718,7 @@
             return ot;
           },
           POd: function () {
-            return tL;
+            return tD;
           },
           PRK: function () {
             return oN;
@@ -4934,7 +4934,7 @@
             return k;
           },
           _8R: function () {
-            return iL;
+            return iD;
           },
           _s_: function () {
             return I;
@@ -4943,7 +4943,7 @@
             return V;
           },
           a5g: function () {
-            return eD;
+            return eL;
           },
           aIL: function () {
             return aZ;
@@ -4982,7 +4982,7 @@
             return av.d;
           },
           dAT: function () {
-            return eL;
+            return eD;
           },
           dCx: function () {
             return eb;
@@ -4991,7 +4991,7 @@
             return aF.dG;
           },
           dGM: function () {
-            return oD;
+            return oL;
           },
           dGm: function () {
             return aF.yA;
@@ -5117,7 +5117,7 @@
             return tf;
           },
           kVF: function () {
-            return L;
+            return D;
           },
           keq: function () {
             return ob;
@@ -5195,7 +5195,7 @@
             return u;
           },
           pTL: function () {
-            return iD;
+            return iL;
           },
           pjP: function () {
             return t_;
@@ -5225,7 +5225,7 @@
             return p;
           },
           r2o: function () {
-            return D;
+            return L;
           },
           rMx: function () {
             return eF;
@@ -5394,8 +5394,8 @@
           O,
           f,
           S,
-          L,
           D,
+          L,
           h,
           C,
           g,
@@ -5448,8 +5448,8 @@
           eO,
           ef,
           eS,
-          eL,
           eD,
+          eL,
           eh,
           eC,
           eg,
@@ -5512,8 +5512,8 @@
           tO,
           tf,
           tS,
-          tL,
           tD,
+          tL,
           th,
           tC,
           tg,
@@ -5576,8 +5576,8 @@
           rO,
           rf,
           rS,
-          rL,
           rD,
+          rL,
           rh,
           rC,
           rg,
@@ -5640,8 +5640,8 @@
           nO,
           nf,
           nS,
-          nL,
           nD,
+          nL,
           nh,
           nC,
           ng,
@@ -5704,8 +5704,8 @@
           aO,
           af,
           aS,
-          aL,
           aD,
+          aL,
           ah,
           aC,
           ag,
@@ -5963,7 +5963,7 @@
           (rs.SELECTED_CHANNEL = "SELECTED_CHANNEL"),
           ((rc = S || (S = {})).PUSH_TO_TALK = "PUSH_TO_TALK"),
           (rc.VOICE_ACTIVITY = "VOICE_ACTIVITY"),
-          ((rI = L || (L = {})).GENERIC = "GENERIC"),
+          ((rI = D || (D = {})).GENERIC = "GENERIC"),
           (rI.LAUNCH_GAME_FAILURE = "LAUNCH_GAME_FAILURE"),
           (rI.UNCLAIMED_ACCOUNT = "UNCLAIMED_ACCOUNT"),
           (rI.UNVERIFIED_ACCOUNT = "UNVERIFIED_ACCOUNT"),
@@ -6036,7 +6036,7 @@
           (rI.QUESTS_PROGRESS_INTERRUPTION = "QUESTS_PROGRESS_INTERRUPTION"),
           (rI.CHECKOUT_RECOVERY_NAGBAR = "CHECKOUT_RECOVERY_NAGBAR"),
           (rI.CASH_APP_PAY_AWARENESS_NAGBAR = "CASH_APP_PAY_AWARENESS_NAGBAR"),
-          ((ru = D || (D = {})).RESOLVING = "RESOLVING"),
+          ((ru = L || (L = {})).RESOLVING = "RESOLVING"),
           (ru.RESOLVED = "RESOLVED"),
           (ru.EXPIRED = "EXPIRED"),
           (ru.BANNED = "BANNED"),
@@ -6210,13 +6210,13 @@
           (rS[(rS.IS_REMIX = 4)] = "IS_REMIX"),
           (rS[(rS.IS_SPOILER = 8)] = "IS_SPOILER"),
           (rS[(rS.CONTAINS_EXPLICIT_MEDIA = 16)] = "CONTAINS_EXPLICIT_MEDIA"),
-          ((rL = b || (b = {}))[(rL.CONTAINS_EXPLICIT_MEDIA = 16)] =
+          ((rD = b || (b = {}))[(rD.CONTAINS_EXPLICIT_MEDIA = 16)] =
             "CONTAINS_EXPLICIT_MEDIA"),
-          (rL[(rL.IS_CONTENT_INVENTORY_ENTRY = 32)] =
+          (rD[(rD.IS_CONTENT_INVENTORY_ENTRY = 32)] =
             "IS_CONTENT_INVENTORY_ENTRY"),
-          ((rD = B || (B = {})).ALWAYS = "ALWAYS"),
-          (rD.NEVER = "NEVER"),
-          (rD.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"),
+          ((rL = B || (B = {})).ALWAYS = "ALWAYS"),
+          (rL.NEVER = "NEVER"),
+          (rL.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"),
           ((rh = w || (w = {})).ALWAYS = "ALWAYS"),
           (rh.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"),
           ((rC = H || (H = {})).GUILDS = "GUILDS"),
@@ -7770,8 +7770,8 @@
           (r$.GAMES_YOU_PLAY = "gamesYouPlay"),
           (r$.SEARCH = "search"),
           (r$.MISC = "misc");
-        let oL = 128,
-          oD = 1024,
+        let oD = 128,
+          oL = 1024,
           oh = 2e3,
           oC = 64e3,
           og = 96e3,
@@ -8705,6 +8705,8 @@
           (r3.FRIENDS_ADD_BY_USERNAME_MODAL = "Add by Username Modal"),
           (r3.FRIENDS_REQUESTS_MODAL = "Friend Requests Modal"),
           (r3.FRIENDS_SUGGESTED_FRIENDS_MODAL = "Suggested Friends Modal"),
+          (r3.FRIENDS_LIST_FRIEND_ROW = "Friend Row"),
+          (r3.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT = "Friend Row Gift Popout"),
           (r3.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW =
             "Guild Member Verification Application Review"),
           (r3.GUILD_MEMBER_VERIFICATION_APPLICATION_INTERVIEW =
@@ -9081,13 +9083,13 @@
           (r9.SUMMARIES_NOTICE = "Summaries Channel Notice"),
           (r9.SUMMARIES_ENABLED_NOTICE = "Summaries Enabled Notice"),
           (r9.CLAN_ADMIN_UPSELL = "Clan Admin Upsell"),
-          ((ne = eL || (eL = {})).APPLICATION = "Application"),
+          ((ne = eD || (eD = {})).APPLICATION = "Application"),
           (ne.SERVER_INVITE = "Server Invite"),
           (ne.GDM_INVITE = "GDM Invite"),
           (ne.FRIEND_INVITE = "Friend Invite"),
           (ne.SPOTIFY = "Spotify"),
           (ne.STREAM = "Stream"),
-          ((nt = eD || (eD = {})).DIRECT_MESSAGE = "Direct Message"),
+          ((nt = eL || (eL = {})).DIRECT_MESSAGE = "Direct Message"),
           (nt.SMS = "SMS"),
           (nt.EMAIL = "Email"),
           ((nr = eh || (eh = {})).SHARE = "Share"),
@@ -10748,59 +10750,61 @@
             "post_action_upsell_primary_action_clicked"),
           (nf.POST_ACTION_UPSELL_SECONDARY_ACTION_CLICKED =
             "post_action_upsell_secondary_action_clicked"),
+          (nf.FRIEND_ANNIVERSARIES_CHANNEL_VIEWED =
+            "friend_anniversaries_channel_viewed"),
           ((nS = eW || (eW = {})).CANARY = "canary"),
           (nS.PTB = "ptb"),
           (nS.STABLE = "stable"),
-          ((nL = eX || (eX = {}))[(nL.STAFF = 1)] = "STAFF"),
-          (nL[(nL.COLLABORATOR = 0x4000000000000)] = "COLLABORATOR"),
-          (nL[(nL.RESTRICTED_COLLABORATOR = 0x8000000000000)] =
+          ((nD = eX || (eX = {}))[(nD.STAFF = 1)] = "STAFF"),
+          (nD[(nD.COLLABORATOR = 0x4000000000000)] = "COLLABORATOR"),
+          (nD[(nD.RESTRICTED_COLLABORATOR = 0x8000000000000)] =
             "RESTRICTED_COLLABORATOR"),
-          (nL[(nL.PARTNER = 2)] = "PARTNER"),
-          (nL[(nL.HYPESQUAD = 4)] = "HYPESQUAD"),
-          (nL[(nL.BUG_HUNTER_LEVEL_1 = 8)] = "BUG_HUNTER_LEVEL_1"),
-          (nL[(nL.BUG_HUNTER_LEVEL_2 = 16384)] = "BUG_HUNTER_LEVEL_2"),
-          (nL[(nL.HYPESQUAD_ONLINE_HOUSE_1 = 64)] = "HYPESQUAD_ONLINE_HOUSE_1"),
-          (nL[(nL.HYPESQUAD_ONLINE_HOUSE_2 = 128)] =
+          (nD[(nD.PARTNER = 2)] = "PARTNER"),
+          (nD[(nD.HYPESQUAD = 4)] = "HYPESQUAD"),
+          (nD[(nD.BUG_HUNTER_LEVEL_1 = 8)] = "BUG_HUNTER_LEVEL_1"),
+          (nD[(nD.BUG_HUNTER_LEVEL_2 = 16384)] = "BUG_HUNTER_LEVEL_2"),
+          (nD[(nD.HYPESQUAD_ONLINE_HOUSE_1 = 64)] = "HYPESQUAD_ONLINE_HOUSE_1"),
+          (nD[(nD.HYPESQUAD_ONLINE_HOUSE_2 = 128)] =
             "HYPESQUAD_ONLINE_HOUSE_2"),
-          (nL[(nL.HYPESQUAD_ONLINE_HOUSE_3 = 256)] =
+          (nD[(nD.HYPESQUAD_ONLINE_HOUSE_3 = 256)] =
             "HYPESQUAD_ONLINE_HOUSE_3"),
-          (nL[(nL.PREMIUM_EARLY_SUPPORTER = 512)] = "PREMIUM_EARLY_SUPPORTER"),
-          (nL[(nL.VERIFIED_BOT = 65536)] = "VERIFIED_BOT"),
-          (nL[(nL.VERIFIED_DEVELOPER = 131072)] = "VERIFIED_DEVELOPER"),
-          (nL[(nL.CERTIFIED_MODERATOR = 262144)] = "CERTIFIED_MODERATOR"),
-          (nL[(nL.BOT_HTTP_INTERACTIONS = 524288)] = "BOT_HTTP_INTERACTIONS"),
-          (nL[(nL.SPAMMER = 1048576)] = "SPAMMER"),
-          (nL[(nL.DISABLE_PREMIUM = 2097152)] = "DISABLE_PREMIUM"),
-          (nL[(nL.ACTIVE_DEVELOPER = 4194304)] = "ACTIVE_DEVELOPER"),
-          (nL[(nL.PROVISIONAL_ACCOUNT = 8388608)] = "PROVISIONAL_ACCOUNT"),
-          (nL[(nL.MFA_SMS = 16)] = "MFA_SMS"),
-          (nL[(nL.PREMIUM_PROMO_DISMISSED = 32)] = "PREMIUM_PROMO_DISMISSED"),
-          (nL[(nL.HAS_UNREAD_URGENT_MESSAGES = 8192)] =
+          (nD[(nD.PREMIUM_EARLY_SUPPORTER = 512)] = "PREMIUM_EARLY_SUPPORTER"),
+          (nD[(nD.VERIFIED_BOT = 65536)] = "VERIFIED_BOT"),
+          (nD[(nD.VERIFIED_DEVELOPER = 131072)] = "VERIFIED_DEVELOPER"),
+          (nD[(nD.CERTIFIED_MODERATOR = 262144)] = "CERTIFIED_MODERATOR"),
+          (nD[(nD.BOT_HTTP_INTERACTIONS = 524288)] = "BOT_HTTP_INTERACTIONS"),
+          (nD[(nD.SPAMMER = 1048576)] = "SPAMMER"),
+          (nD[(nD.DISABLE_PREMIUM = 2097152)] = "DISABLE_PREMIUM"),
+          (nD[(nD.ACTIVE_DEVELOPER = 4194304)] = "ACTIVE_DEVELOPER"),
+          (nD[(nD.PROVISIONAL_ACCOUNT = 8388608)] = "PROVISIONAL_ACCOUNT"),
+          (nD[(nD.MFA_SMS = 16)] = "MFA_SMS"),
+          (nD[(nD.PREMIUM_PROMO_DISMISSED = 32)] = "PREMIUM_PROMO_DISMISSED"),
+          (nD[(nD.HAS_UNREAD_URGENT_MESSAGES = 8192)] =
             "HAS_UNREAD_URGENT_MESSAGES"),
-          (nL[(nL.QUARANTINED = 17592186044416)] = "QUARANTINED"),
-          ((nD = ej || (ej = {}))[(nD.EMBEDDED_RELEASED = 2)] =
+          (nD[(nD.QUARANTINED = 17592186044416)] = "QUARANTINED"),
+          ((nL = ej || (ej = {}))[(nL.EMBEDDED_RELEASED = 2)] =
             "EMBEDDED_RELEASED"),
-          (nD[(nD.EMBEDDED_IAP = 8)] = "EMBEDDED_IAP"),
-          (nD[(nD.APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE = 64)] =
+          (nL[(nL.EMBEDDED_IAP = 8)] = "EMBEDDED_IAP"),
+          (nL[(nL.APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE = 64)] =
             "APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE"),
-          (nD[(nD.GATEWAY_PRESENCE = 4096)] = "GATEWAY_PRESENCE"),
-          (nD[(nD.GATEWAY_PRESENCE_LIMITED = 8192)] =
+          (nL[(nL.GATEWAY_PRESENCE = 4096)] = "GATEWAY_PRESENCE"),
+          (nL[(nL.GATEWAY_PRESENCE_LIMITED = 8192)] =
             "GATEWAY_PRESENCE_LIMITED"),
-          (nD[(nD.GATEWAY_GUILD_MEMBERS = 16384)] = "GATEWAY_GUILD_MEMBERS"),
-          (nD[(nD.GATEWAY_GUILD_MEMBERS_LIMITED = 32768)] =
+          (nL[(nL.GATEWAY_GUILD_MEMBERS = 16384)] = "GATEWAY_GUILD_MEMBERS"),
+          (nL[(nL.GATEWAY_GUILD_MEMBERS_LIMITED = 32768)] =
             "GATEWAY_GUILD_MEMBERS_LIMITED"),
-          (nD[(nD.EMBEDDED = 131072)] = "EMBEDDED"),
-          (nD[(nD.GATEWAY_MESSAGE_CONTENT = 262144)] =
+          (nL[(nL.EMBEDDED = 131072)] = "EMBEDDED"),
+          (nL[(nL.GATEWAY_MESSAGE_CONTENT = 262144)] =
             "GATEWAY_MESSAGE_CONTENT"),
-          (nD[(nD.GATEWAY_MESSAGE_CONTENT_LIMITED = 524288)] =
+          (nL[(nL.GATEWAY_MESSAGE_CONTENT_LIMITED = 524288)] =
             "GATEWAY_MESSAGE_CONTENT_LIMITED"),
-          (nD[(nD.EMBEDDED_FIRST_PARTY = 1048576)] = "EMBEDDED_FIRST_PARTY"),
-          (nD[(nD.APPLICATION_COMMAND_BADGE = 8388608)] =
+          (nL[(nL.EMBEDDED_FIRST_PARTY = 1048576)] = "EMBEDDED_FIRST_PARTY"),
+          (nL[(nL.APPLICATION_COMMAND_BADGE = 8388608)] =
             "APPLICATION_COMMAND_BADGE"),
-          (nD[(nD.SOCIAL_LAYER_INTEGRATION = 134217728)] =
+          (nL[(nL.SOCIAL_LAYER_INTEGRATION = 134217728)] =
             "SOCIAL_LAYER_INTEGRATION"),
-          (nD[(nD.PROMOTED = 536870912)] = "PROMOTED"),
-          (nD[(nD.PARTNER = 1073741824)] = "PARTNER"),
+          (nL[(nL.PROMOTED = 536870912)] = "PROMOTED"),
+          (nL[(nL.PARTNER = 1073741824)] = "PARTNER"),
           ((nh = e$ || (e$ = {})).MFA_WARNING = "MFA_WARNING"),
           (nh.INVITE = "INVITE"),
           (nh.QUICKSWITCHER = "QUICKSWITCHER"),
@@ -11470,14 +11474,14 @@
             "APPLICATION_GUILD_SUBSCRIPTION"),
           (n8[(n8.APPLICATION_USER_SUBSCRIPTION = 256)] =
             "APPLICATION_USER_SUBSCRIPTION"),
-          ((n7 = tL || (tL = {}))[(n7.PREMIUM = 1)] = "PREMIUM"),
+          ((n7 = tD || (tD = {}))[(n7.PREMIUM = 1)] = "PREMIUM"),
           (n7[(n7.BOOST = 2)] = "BOOST"),
           (n7[(n7.ACTIVITY_IAP = 3)] = "ACTIVITY_IAP"),
           (n7[(n7.GUILD_ROLE = 4)] = "GUILD_ROLE"),
           (n7[(n7.GUILD_PRODUCT = 5)] = "GUILD_PRODUCT"),
           (n7[(n7.APPLICATION = 6)] = "APPLICATION"),
           (n7[(n7.COLLECTIBLES = 7)] = "COLLECTIBLES"),
-          ((n9 = tD || (tD = {})).HOME = "1"),
+          ((n9 = tL || (tL = {})).HOME = "1"),
           (n9.BROWSE = "2"),
           ((ae = th || (th = {})).WIN32 = "win32"),
           (ae.WIN64 = "win64"),
@@ -11938,11 +11942,11 @@
           (aS.ENTER = "enter"),
           (aS.UPDATE = "update"),
           (aS.LEAVE = "leave"),
-          ((aL = t$ || (t$ = {})).CHANNEL_SETTINGS = "Channel Settings"),
-          (aL.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings"),
-          (aL.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"),
-          ((aD = tq || (tq = {}))[(aD.INCOMING = 1)] = "INCOMING"),
-          (aD[(aD.CHANNEL_FOLLOWER = 2)] = "CHANNEL_FOLLOWER"),
+          ((aD = t$ || (t$ = {})).CHANNEL_SETTINGS = "Channel Settings"),
+          (aD.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings"),
+          (aD.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"),
+          ((aL = tq || (tq = {}))[(aL.INCOMING = 1)] = "INCOMING"),
+          (aL[(aL.CHANNEL_FOLLOWER = 2)] = "CHANNEL_FOLLOWER"),
           ((ah = tz || (tz = {}))[(ah.APPLICATION = 0)] = "APPLICATION"),
           (ah[(ah.OVERVIEW = 1)] = "OVERVIEW"),
           (ah[(ah.CHANNEL_FOLLOWING = 2)] = "CHANNEL_FOLLOWING"),
@@ -11951,13 +11955,13 @@
           (ah[(ah.WEBHOOKS = 5)] = "WEBHOOKS");
         let iO = 2500,
           iS = 0,
-          iL = 2592e6;
+          iD = 2592e6;
         ((aC = tJ || (tJ = {})).USERS = "users"),
           (aC.ROLES = "roles"),
           (aC.EVERYONE = "everyone"),
           ((ag = tQ || (tQ = {}))[(ag.AUTO = 1)] = "AUTO"),
           (ag[(ag.FULL = 2)] = "FULL");
-        let iD = 100,
+        let iL = 100,
           ih =
             /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
         ((aM = tZ || (tZ = {}))[(aM.NULL = 0)] = "NULL"),
@@ -12018,8 +12022,8 @@
           O,
           f,
           S,
-          L,
           D,
+          L,
           h,
           C,
           g,
@@ -12141,7 +12145,7 @@
           ((q = S || (S = {})).OVERVIEW = "OVERVIEW"),
           (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
           (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          ((z = L || (L = {})).INVITE = "invite"),
+          ((z = D || (D = {})).INVITE = "invite"),
           (z.GUILD_TEMPLATE = "guild-template"),
           (z.CHANNEL = "channel"),
           (z.GIFT_CODE = "gift-code"),
@@ -12181,7 +12185,7 @@
         let e_ = "CacheStoreLazy",
           eE = "CacheStoreChannelsLazy",
           es = "CacheStore";
-        ((J = D || (D = {})).UPLOAD = "upload"),
+        ((J = L || (L = {})).UPLOAD = "upload"),
           (J.GLOBAL_EMOJI = "global-emoji"),
           (J.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
           (J.BADGE = "badge"),
@@ -12380,7 +12384,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-01fa36337daecc23c5205ebfa9ee095642b1306b",
+            release: "discord_web-76629015d71ffd144c6ed2c1f4b895ae32132810",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12449,8 +12453,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "325572"), "325572"));
-          i.YA("builtAt", String("1725907954779"));
+            i.YA("buildNumber", ((e = "325578"), "325578"));
+          i.YA("builtAt", String("1725908713488"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -12464,7 +12468,7 @@
             return I;
           },
           GA: function () {
-            return D;
+            return L;
           },
           JC: function () {
             return C;
@@ -12476,7 +12480,7 @@
             return n;
           },
           XZ: function () {
-            return L;
+            return D;
           },
           Y_: function () {
             return o;
@@ -12518,8 +12522,8 @@
         let O = 250,
           f = 762880,
           S = "ROLE_SUBSCRIPTIONS",
-          L = "APPLICATION_SUBSCRIPTION_SUBSECTION",
-          D = "SOUNDBOARD_SUBSECTION";
+          D = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+          L = "SOUNDBOARD_SUBSECTION";
         ((l = n || (n = {})).USER_PROFILE = "user_profile"),
           (l.GUILD = "guild"),
           (l.TRY_IT_OUT = "try_it_out"),
@@ -16543,7 +16547,7 @@
             return eT;
           },
           Uk: function () {
-            return eL;
+            return eD;
           },
           V6: function () {
             return eb;
@@ -16594,10 +16598,10 @@
             return p;
           },
           ld: function () {
-            return eD;
+            return eL;
           },
           pK: function () {
-            return D;
+            return L;
           },
           rx: function () {
             return eA;
@@ -16645,8 +16649,8 @@
           O,
           f,
           S,
-          L,
           D,
+          L,
           h,
           C,
           g,
@@ -16816,8 +16820,8 @@
             [16, "ideal"],
           ]),
           eS = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
-          eL = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
-          eD = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
+          eD = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
+          eL = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
           eh = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
           eC = new Set([6]);
         ((Y = c || (c = {}))[(Y.NEW = 1)] = "NEW"),
@@ -17283,9 +17287,9 @@
           (J.LOCATION_STACK_METADATA = "location_stack_metadata"),
           (J.CREATOR_STORE_PAGE_VIEWED = "creator_store_page_viewed"),
           (J.CREATOR_STORE_PAGE_CTA_CLICKED = "creator_store_page_cta_clicked"),
-          ((L || (L = {})).MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN =
+          ((D || (D = {})).MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN =
             "mktg_ack_modal_open"),
-          ((Q = D || (D = {})).AED = "aed"),
+          ((Q = L || (L = {})).AED = "aed"),
           (Q.AFN = "afn"),
           (Q.ALL = "all"),
           (Q.AMD = "amd"),
@@ -22270,7 +22274,7 @@
             return S;
           },
           Od: function () {
-            return L;
+            return D;
           },
           U_: function () {
             return d;
@@ -22285,7 +22289,7 @@
             return R;
           },
           r0: function () {
-            return D;
+            return L;
           },
           ug: function () {
             return h;
@@ -22539,10 +22543,10 @@
         function S(e, t) {
           return t === l ? e : A(e, t);
         }
-        function L(e, t) {
+        function D(e, t) {
           return t === l ? e : T(e, R(e, t));
         }
-        let D = s
+        let L = s
             ? function (e) {
                 return BigInt(1) << BigInt(e);
               }
@@ -22962,11 +22966,11 @@
               S = function (e) {
                 return Math.round(100 * e) / 100;
               },
-              L = _.unpack,
-              D = function () {
+              D = _.unpack,
+              L = function () {
                 for (var e, t, r = [], n = arguments.length; n--; )
                   r[n] = arguments[n];
-                var a = (r = L(r, "rgba"))[0],
+                var a = (r = D(r, "rgba"))[0],
                   o = r[1],
                   i = r[2],
                   _ = Math.min((a /= 255), (o /= 255), (i /= 255)),
@@ -23101,7 +23105,7 @@
                 var r = h(e, "rgba"),
                   n = C(e) || "rgb";
                 return "hsl" == n.substr(0, 3)
-                  ? g(D(r), n)
+                  ? g(L(r), n)
                   : ((r[0] = M(r[0])),
                     (r[1] = M(r[1])),
                     (r[2] = M(r[2])),
@@ -23424,7 +23428,7 @@
             var eT = _.unpack,
               ed = _.type;
             (u.prototype.hsl = function () {
-              return D(this._rgb);
+              return L(this._rgb);
             }),
               (l.hsl = function () {
                 for (var e = [], t = arguments.length; t--; )
@@ -23449,8 +23453,8 @@
               eO = Math.max,
               ef = _.unpack,
               eS = Math.floor,
-              eL = _.unpack,
-              eD = _.type,
+              eD = _.unpack,
+              eL = _.type,
               eh = function () {
                 for (var e, t, r, n = [], a = arguments.length; a--; )
                   n[a] = arguments[a];
@@ -23530,7 +23534,7 @@
                 test: function () {
                   for (var e = [], t = arguments.length; t--; )
                     e[t] = arguments[t];
-                  if ("array" === eD((e = eL(e, "hsv"))) && 3 === e.length)
+                  if ("array" === eL((e = eD(e, "hsv"))) && 3 === e.length)
                     return "hsv";
                 },
               });
@@ -24151,8 +24155,8 @@
               });
             var tf = _.unpack,
               tS = _.unpack,
-              tL = _.unpack,
-              tD = _.type,
+              tD = _.unpack,
+              tL = _.type,
               th = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
@@ -24183,7 +24187,7 @@
                 test: function () {
                   for (var e = [], t = arguments.length; t--; )
                     e[t] = arguments[t];
-                  if ("array" === tD((e = tL(e, "oklch"))) && 3 === e.length)
+                  if ("array" === tL((e = tD(e, "oklch"))) && 3 === e.length)
                     return "oklch";
                 },
               });
@@ -24563,12 +24567,12 @@
                     return (R = {});
                   };
                 d(e);
-                var L = function (e) {
+                var D = function (e) {
                   var t = l(f(e));
                   return s && t[s] ? t[s]() : t;
                 };
                 return (
-                  (L.classes = function (e) {
+                  (D.classes = function (e) {
                     if (null != e) {
                       if ("array" === tj(e))
                         (_ = e), (a = [e[0], e[e.length - 1]]);
@@ -24576,11 +24580,11 @@
                         var t = l.analyze(a);
                         _ = 0 === e ? [t.min, t.max] : l.limits(t, "e", e);
                       }
-                      return L;
+                      return D;
                     }
                     return _;
                   }),
-                  (L.domain = function (e) {
+                  (D.domain = function (e) {
                     if (!arguments.length) return a;
                     (c = e[0]), (I = e[e.length - 1]), (o = []);
                     var t = E.length;
@@ -24609,21 +24613,21 @@
                           });
                       }
                     }
-                    return (a = [c, I]), L;
+                    return (a = [c, I]), D;
                   }),
-                  (L.mode = function (e) {
-                    return arguments.length ? ((t = e), S(), L) : t;
+                  (D.mode = function (e) {
+                    return arguments.length ? ((t = e), S(), D) : t;
                   }),
-                  (L.range = function (e, t) {
-                    return d(e), L;
+                  (D.range = function (e, t) {
+                    return d(e), D;
                   }),
-                  (L.out = function (e) {
-                    return (s = e), L;
+                  (D.out = function (e) {
+                    return (s = e), D;
                   }),
-                  (L.spread = function (e) {
-                    return arguments.length ? ((n = e), L) : n;
+                  (D.spread = function (e) {
+                    return arguments.length ? ((n = e), D) : n;
                   }),
-                  (L.correctLightness = function (e) {
+                  (D.correctLightness = function (e) {
                     return (
                       null == e && (e = !0),
                       (u = e),
@@ -24653,19 +24657,19 @@
                         : function (e) {
                             return e;
                           }),
-                      L
+                      D
                     );
                   }),
-                  (L.padding = function (e) {
+                  (D.padding = function (e) {
                     return null != e
-                      ? ("number" === tj(e) && (e = [e, e]), (i = e), L)
+                      ? ("number" === tj(e) && (e = [e, e]), (i = e), D)
                       : i;
                   }),
-                  (L.colors = function (t, r) {
+                  (D.colors = function (t, r) {
                     arguments.length < 2 && (r = "hex");
                     var n = [];
                     if (0 == arguments.length) n = E.slice(0);
-                    else if (1 === t) n = [L(0.5)];
+                    else if (1 === t) n = [D(0.5)];
                     else if (t > 1) {
                       var o = a[0],
                         i = a[1] - o;
@@ -24681,7 +24685,7 @@
                           n.push(i);
                         return n;
                       })(0, t, !1).map(function (e) {
-                        return L(o + (e / (t - 1)) * i);
+                        return D(o + (e / (t - 1)) * i);
                       });
                     } else {
                       e = [];
@@ -24695,7 +24699,7 @@
                           s.push((_[c - 1] + _[c]) * 0.5);
                       else s = a;
                       n = s.map(function (e) {
-                        return L(e);
+                        return D(e);
                       });
                     }
                     return (
@@ -24706,16 +24710,16 @@
                       n
                     );
                   }),
-                  (L.cache = function (e) {
-                    return null != e ? ((A = e), L) : A;
+                  (D.cache = function (e) {
+                    return null != e ? ((A = e), D) : A;
                   }),
-                  (L.gamma = function (e) {
-                    return null != e ? ((T = e), L) : T;
+                  (D.gamma = function (e) {
+                    return null != e ? ((T = e), D) : T;
                   }),
-                  (L.nodata = function (e) {
-                    return null != e ? ((r = l(e)), L) : r;
+                  (D.nodata = function (e) {
+                    return null != e ? ((r = l(e)), D) : r;
                   }),
-                  L
+                  D
                 );
               },
               tz = function (e) {
@@ -24968,9 +24972,9 @@
                       f = 0,
                       S = null;
                     (S = []).push(n);
-                    for (var L = 1; L < r; L++) S.push(n + (L / r) * (a - n));
+                    for (var D = 1; D < r; D++) S.push(n + (D / r) * (a - n));
                     for (S.push(a); O; ) {
-                      for (var D = 0; D < r; D++) p[D] = 0;
+                      for (var L = 0; L < r; L++) p[L] = 0;
                       for (var h = 0; h < d; h++) {
                         for (
                           var C = i[h], g = Number.MAX_VALUE, M = void 0, P = 0;
@@ -25612,10 +25616,10 @@
                   O = R * (1 + N),
                   f = r_(rE(p, 2) + rE(c, 2)),
                   S = r_(rE(O, 2) + rE(A, 2)),
-                  L = (f + S) / 2,
-                  D = o(rI(c, p)),
+                  D = (f + S) / 2,
+                  L = o(rI(c, p)),
                   h = o(rI(A, O)),
-                  C = D >= 0 ? D : D + 360,
+                  C = L >= 0 ? L : L + 360,
                   g = h >= 0 ? h : h + 360,
                   M = ru(C - g) > 180 ? (C + g + 360) / 2 : (C + g) / 2,
                   P =
@@ -25629,11 +25633,11 @@
                   (m = 2 * r_(f * S) * rR(i(m) / 2));
                 var U = S - f,
                   G = 1 + (0.015 * rE(T - 50, 2)) / r_(20 + rE(T - 50, 2)),
-                  y = 1 + 0.045 * L,
-                  v = 1 + 0.015 * L * P,
+                  y = 1 + 0.045 * D,
+                  v = 1 + 0.015 * D * P,
                   b = 30 * rA(-rE((M - 275) / 25, 2)),
                   B =
-                    -(2 * r_(rE(L, 7) / (rE(L, 7) + rE(25, 7)))) * rR(2 * i(b));
+                    -(2 * r_(rE(D, 7) / (rE(D, 7) + rE(25, 7)))) * rR(2 * i(b));
                 return rc(
                   0,
                   rs(
@@ -26154,10 +26158,10 @@
               return S.Q;
             },
             feedbackIntegration: function () {
-              return L.r;
+              return D.r;
             },
             feedbackSyncIntegration: function () {
-              return L.r;
+              return D.r;
             },
             flush: function () {
               return n.yl;
@@ -26187,7 +26191,7 @@
               return c.nV;
             },
             getFeedback: function () {
-              return D.qm;
+              return L.qm;
             },
             getGlobalScope: function () {
               return n.lW;
@@ -26280,7 +26284,7 @@
               return n.vU;
             },
             sendFeedback: function () {
-              return D.fA;
+              return L.fA;
             },
             sessionTimingIntegration: function () {
               return n.rE;
@@ -26384,8 +26388,8 @@
           O = r(616456),
           f = r(778600),
           S = r(780850),
-          L = r(226483),
-          D = r(185461),
+          D = r(226483),
+          L = r(185461),
           h = r(166800),
           C = r(799033),
           g = r(325124),
@@ -27434,7 +27438,7 @@
             return P;
           },
           AJ: function () {
-            return D;
+            return L;
           },
           Ei: function () {
             return M;
@@ -27446,7 +27450,7 @@
             return g;
           },
           db: function () {
-            return L;
+            return D;
           },
           dz: function () {
             return v;
@@ -27513,12 +27517,12 @@
         function S(e) {
           return "pageload" === (0, o.XU)(e).op;
         }
-        function L(e, t) {
+        function D(e, t) {
           if (!t.length) return e;
           for (let r of t) e[1].push([{ type: "profile" }, r]);
           return e;
         }
-        function D(e) {
+        function L(e) {
           let t = [];
           return (
             (0, c.gv)(e, (e, r) => {
@@ -27871,8 +27875,8 @@
           O = r(804410),
           f = r(376457),
           S = r(42367),
-          L = r(297117),
-          D = r(387486);
+          D = r(297117),
+          L = r(387486);
         function h(e) {
           return [
             (0, n.S)(),
@@ -27933,9 +27937,9 @@
             );
           let r = {
               ...t,
-              stackParser: (0, l.Sq)(t.stackParser || L.Dt),
+              stackParser: (0, l.Sq)(t.stackParser || D.Dt),
               integrations: (0, i.m8)(t),
-              transport: t.transport || D.f,
+              transport: t.transport || L.f,
             },
             n = (0, _.M)(A.R, r);
           return (
@@ -28183,10 +28187,10 @@
             return S;
           },
           Wo: function () {
-            return L;
+            return D;
           },
           og: function () {
-            return D;
+            return L;
           },
         });
         var n = r(650665),
@@ -28326,7 +28330,7 @@
                   }),
                   N.m9.location &&
                     (v &&
-                      L(e, {
+                      D(e, {
                         name: N.m9.location.pathname,
                         startTime: R.Z1 ? R.Z1 / 1e3 : void 0,
                         attributes: {
@@ -28342,7 +28346,7 @@
                         }
                         r !== t &&
                           ((n = void 0),
-                          D(e, {
+                          L(e, {
                             name: N.m9.location.pathname,
                             attributes: {
                               [E.Zj]: "url",
@@ -28414,13 +28418,13 @@
               },
             };
           };
-        function L(e, t, r) {
+        function D(e, t, r) {
           e.emit("startPageLoadSpan", t, r),
             (0, s.nZ)().setTransactionName(t.name);
           let n = (0, c.HN)();
           return "pageload" === (n && (0, c.XU)(n).op) ? n : void 0;
         }
-        function D(e, t) {
+        function L(e, t) {
           (0, s.aF)().setPropagationContext((0, A.Q)()),
             (0, s.nZ)().setPropagationContext((0, A.Q)()),
             e.emit("startNavigationSpan", t),
@@ -28437,10 +28441,10 @@
         "use strict";
         r.d(t, {
           L7: function () {
-            return D;
+            return L;
           },
           k3: function () {
-            return L;
+            return D;
           },
         });
         var n = r(157079),
@@ -28463,15 +28467,15 @@
           O = r(163162);
         let f = new WeakMap(),
           S = new Map(),
-          L = { traceFetch: !0, traceXHR: !0, enableHTTPTimings: !0 };
-        function D(e, t) {
+          D = { traceFetch: !0, traceXHR: !0, enableHTTPTimings: !0 };
+        function L(e, t) {
           let {
               traceFetch: r,
               traceXHR: a,
               shouldCreateSpanForRequest: T,
-              enableHTTPTimings: D,
+              enableHTTPTimings: L,
               tracePropagationTargets: C,
-            } = { traceFetch: L.traceFetch, traceXHR: L.traceXHR, ...t },
+            } = { traceFetch: D.traceFetch, traceXHR: D.traceXHR, ...t },
             M = "function" == typeof T ? T : (e) => !0,
             P = (e) =>
               (function (e, t) {
@@ -28527,7 +28531,7 @@
                   n = r ? (0, A.en)(r).host : void 0;
                 t.setAttributes({ "http.url": r, "server.address": n });
               }
-              D && t && h(t);
+              L && t && h(t);
             })),
             a &&
               (0, n.UK)((e) => {
@@ -28565,11 +28569,11 @@
                         : new I.b();
                   (o.__sentry_xhr_span_id__ = S.spanContext().spanId),
                     (a[o.__sentry_xhr_span_id__] = S);
-                  let L = (0, u.s3)();
+                  let D = (0, u.s3)();
                   return (
                     o.setRequestHeader &&
                       r(R.url) &&
-                      L &&
+                      D &&
                       (function (e, t, r) {
                         let n = (0, u.nZ)(),
                           {
@@ -28593,11 +28597,11 @@
                           c,
                           (0, p.IQ)(s || (r ? (0, l.jC)(r) : (0, l._l)(a, t))),
                         );
-                      })(o, L, (0, _.z)() && f ? S : void 0),
+                      })(o, D, (0, _.z)() && f ? S : void 0),
                     S
                   );
                 })(e, M, P, m);
-                D && t && h(t);
+                L && t && h(t);
               });
         }
         function h(e) {
@@ -29317,8 +29321,8 @@
           _processEvent(e, t, r) {
             let n = this.getOptions(),
               { sampleRate: a } = n,
-              o = D(e),
-              E = L(e),
+              o = L(e),
+              E = D(e),
               s = e.type || "error",
               I = `before send for type \`${s}\``,
               u = void 0 === a ? void 0 : (0, p.o)(a);
@@ -29367,8 +29371,8 @@
                           beforeSendTransaction: o,
                           beforeSendSpan: i,
                         } = t;
-                        if (L(r) && a) return a(r, n);
-                        if (D(r)) {
+                        if (D(r) && a) return a(r, n);
+                        if (L(r)) {
                           if (r.spans && i) {
                             let t = [];
                             for (let n of r.spans) {
@@ -29470,10 +29474,10 @@ Reason: ${e}`))
             this.sendEnvelope(t);
           }
         }
-        function L(e) {
+        function D(e) {
           return void 0 === e.type;
         }
-        function D(e) {
+        function L(e) {
           return "transaction" === e.type;
         }
       },
@@ -29722,7 +29726,7 @@ Reason: ${e}`))
         "use strict";
         r.d(t, {
           Qy: function () {
-            return L;
+            return D;
           },
           TM: function () {
             return h;
@@ -29767,7 +29771,7 @@ Reason: ${e}`))
             return f;
           },
           yj: function () {
-            return D;
+            return L;
           },
           yl: function () {
             return O;
@@ -29832,10 +29836,10 @@ Reason: ${e}`))
         function S() {
           return !!(0, i.s3)();
         }
-        function L(e) {
+        function D(e) {
           (0, i.aF)().addEventProcessor(e);
         }
-        function D(e) {
+        function L(e) {
           let t = (0, i.s3)(),
             r = (0, i.aF)(),
             n = (0, i.nZ)(),
@@ -29972,10 +29976,10 @@ Reason: ${e}`))
                 return;
               }
             })(f),
-            L = S ? (0, n.en)(S).host : void 0,
-            D = !!(0, c.HN)(),
+            D = S ? (0, n.en)(S).host : void 0,
+            L = !!(0, c.HN)(),
             h =
-              d && D
+              d && L
                 ? (0, l.qp)({
                     name: `${O} ${f}`,
                     attributes: {
@@ -29983,7 +29987,7 @@ Reason: ${e}`))
                       type: "fetch",
                       "http.method": O,
                       "http.url": S,
-                      "server.address": L,
+                      "server.address": D,
                       [E.S3]: T,
                       [E.$J]: "http.client",
                     },
@@ -30035,7 +30039,7 @@ Reason: ${e}`))
                   }
                 );
               }
-            })(t, p, N, r, (0, s.z)() && D ? h : void 0);
+            })(t, p, N, r, (0, s.z)() && L ? h : void 0);
           }
           return h;
         }
@@ -30178,7 +30182,7 @@ Reason: ${e}`))
             return N.XU;
           },
           Xs: function () {
-            return L.X;
+            return D.X;
           },
           YA: function () {
             return c.YA;
@@ -30247,7 +30251,7 @@ Reason: ${e}`))
             return I.s3;
           },
           sC: function () {
-            return D.s;
+            return L.s;
           },
           sU: function () {
             return c.sU;
@@ -30306,8 +30310,8 @@ Reason: ${e}`))
           O = r(502990),
           f = r(636361),
           S = r(546453),
-          L = r(116430),
-          D = r(522521),
+          D = r(116430),
+          L = r(522521),
           h = r(907765),
           C = r(898029),
           g = r(757502),
@@ -32242,10 +32246,10 @@ Url: ${c(e)}`),
               idleTimeout: O = R.idleTimeout,
               finalTimeout: f = R.finalTimeout,
               childSpanTimeout: S = R.childSpanTimeout,
-              beforeSpanEnd: L,
+              beforeSpanEnd: D,
             } = t,
-            D = (0, o.s3)();
-          if (!D || !(0, E.z)()) return new I.b();
+            L = (0, o.s3)();
+          if (!L || !(0, E.z)()) return new I.b();
           let h = (0, o.nZ)(),
             C = (0, c.HN)(),
             g = (function (e) {
@@ -32272,7 +32276,7 @@ Url: ${c(e)}`),
           }
           g.end = new Proxy(g.end, {
             apply(e, t, r) {
-              L && L(g);
+              D && D(g);
               let [a, ...o] = r,
                 i = a || (0, n.ph)(),
                 _ = (0, c.$k)(i),
@@ -32328,7 +32332,7 @@ Url: ${c(e)}`),
           }
           return (
             p.push(
-              D.on("spanStart", (e) => {
+              L.on("spanStart", (e) => {
                 if (!T && e !== g && !(0, c.XU)(e).timestamp) {
                   if ((0, c.Dp)(g).includes(e)) {
                     var t;
@@ -32341,7 +32345,7 @@ Url: ${c(e)}`),
               }),
             ),
             p.push(
-              D.on("spanEnd", (e) => {
+              L.on("spanEnd", (e) => {
                 var t;
                 if (!T)
                   (t = e.spanContext().spanId),
@@ -32350,7 +32354,7 @@ Url: ${c(e)}`),
               }),
             ),
             p.push(
-              D.on("idleSpanEnableAutoFinish", (e) => {
+              L.on("idleSpanEnableAutoFinish", (e) => {
                 e === g && ((N = !0), P(), A.size && m());
               }),
             ),
@@ -32826,13 +32830,13 @@ Url: ${c(e)}`),
         "use strict";
         r.d(t, {
           GK: function () {
-            return L;
+            return D;
           },
           Iw: function () {
             return M;
           },
           V0: function () {
-            return D;
+            return L;
           },
           _d: function () {
             return g;
@@ -32864,7 +32868,7 @@ Url: ${c(e)}`),
           O = r(793373),
           f = r(881243);
         let S = "__SENTRY_SUPPRESS_TRACING__";
-        function L(e, t) {
+        function D(e, t) {
           let r = U();
           if (r.startSpan) return r.startSpan(e, t);
           let n = m(e),
@@ -32898,7 +32902,7 @@ Url: ${c(e)}`),
             }),
           );
         }
-        function D(e, t) {
+        function L(e, t) {
           let r = U();
           if (r.startSpanManual) return r.startSpanManual(e, t);
           let n = m(e),
@@ -33651,18 +33655,18 @@ Url: ${c(e)}`),
           })(l, r.captureContext);
           r.mechanism && (0, n.EG)(p, r.mechanism);
           let S = A ? A.getEventProcessors() : [],
-            L = (0, s.lW)().getScopeData();
+            D = (0, s.lW)().getScopeData();
           if (T) {
             let e = T.getScopeData();
-            (0, u.yo)(L, e);
+            (0, u.yo)(D, e);
           }
           if (f) {
             let e = f.getScopeData();
-            (0, u.yo)(L, e);
+            (0, u.yo)(D, e);
           }
-          let D = [...(r.attachments || []), ...L.attachments];
-          D.length && (r.attachments = D), (0, u.gi)(p, L);
-          let h = [...S, ...L.eventProcessors];
+          let L = [...(r.attachments || []), ...D.attachments];
+          L.length && (r.attachments = L), (0, u.gi)(p, D);
+          let h = [...S, ...D.eventProcessors];
           return (0, c.R)(h, p, r).then((e) =>
             (e &&
               (function (e) {
@@ -33944,15 +33948,15 @@ Url: ${c(e)}`),
               : e.message || "unknown_error"
             : void 0;
         }
-        let L = "_sentryChildSpans",
-          D = "_sentryRootSpan";
+        let D = "_sentryChildSpans",
+          L = "_sentryRootSpan";
         function h(e, t) {
-          let r = e[D] || e;
-          (0, n.xp)(t, D, r),
-            e[L] ? e[L].add(t) : (0, n.xp)(e, L, new Set([t]));
+          let r = e[L] || e;
+          (0, n.xp)(t, L, r),
+            e[D] ? e[D].add(t) : (0, n.xp)(e, D, new Set([t]));
         }
         function C(e, t) {
-          e[L] && e[L].delete(t);
+          e[D] && e[D].delete(t);
         }
         function g(e) {
           let t = new Set();
@@ -33960,14 +33964,14 @@ Url: ${c(e)}`),
             !(function e(r) {
               if (!t.has(r)) {
                 if (f(r))
-                  for (let n of (t.add(r), r[L] ? Array.from(r[L]) : [])) e(n);
+                  for (let n of (t.add(r), r[D] ? Array.from(r[D]) : [])) e(n);
               }
             })(e),
             Array.from(t)
           );
         }
         function M(e) {
-          return e[D] || e;
+          return e[L] || e;
         }
         function P() {
           let e = (0, _.c)(),
@@ -36502,7 +36506,7 @@ Error:`,
             return S;
           },
           Jk: function () {
-            return L;
+            return D;
           },
           PR: function () {
             return f;
@@ -36511,7 +36515,7 @@ Error:`,
             return h;
           },
           sn: function () {
-            return D;
+            return L;
           },
         });
         var o = r(696486),
@@ -36592,7 +36596,7 @@ Error:`,
             }
           });
         }
-        function L() {
+        function D() {
           new PerformanceObserver((e) => {
             for (let t of e.getEntries()) {
               if (!(0, o.HN)() || !t.scripts[0]) return;
@@ -36624,7 +36628,7 @@ Error:`,
             }
           }).observe({ type: "long-animation-frame", buffered: !0 });
         }
-        function D() {
+        function L() {
           (0, A._j)("event", ({ entries: e }) => {
             for (let t of e) {
               if (!(0, o.HN)()) return;
@@ -36900,9 +36904,9 @@ Error:`,
                   O = (0, n.nZ)(),
                   f = (0, a.HN)(),
                   S = f ? (0, a.Gx)(f) : void 0,
-                  L = (null != l ? R.get(l) : void 0) || S,
-                  D = L
-                    ? (0, a.XU)(L).description
+                  D = (null != l ? R.get(l) : void 0) || S,
+                  L = D
+                    ? (0, a.XU)(D).description
                     : O.getScopeData().transactionName,
                   h = O.getUser(),
                   C = r.getIntegrationByName("Replay"),
@@ -36915,7 +36919,7 @@ Error:`,
                   m = (0, s.Jr)({
                     release: d.release,
                     environment: d.environment,
-                    transaction: D,
+                    transaction: L,
                     [o.JQ]: e.value,
                     [o.S3]: "auto.http.browser.inp",
                     user: M || void 0,
@@ -36999,13 +37003,13 @@ Error:`,
             return p;
           },
           YF: function () {
-            return L;
+            return D;
           },
           _4: function () {
             return S;
           },
           _j: function () {
-            return D;
+            return L;
           },
           cN: function () {
             return v;
@@ -37037,10 +37041,10 @@ Error:`,
         function S(e) {
           return U("ttfb", e, P, i);
         }
-        function L(e) {
+        function D(e) {
           return U("inp", e, m, _);
         }
-        function D(e, t) {
+        function L(e, t) {
           return (
             G(e, t),
             !N[e] &&
@@ -37740,8 +37744,8 @@ Error:`,
           O = "Description",
           f = "Your Name",
           S = "Name",
-          L = "Thank you for your report!",
-          D = "(required)",
+          D = "Thank you for your report!",
+          L = "(required)",
           h = "Add a screenshot",
           C = "Remove screenshot",
           g = (e, t = { includeReplay: !0 }) => {
@@ -37881,14 +37885,14 @@ Error:`,
             emailLabel: j = N,
             emailPlaceholder: $ = d,
             formTitle: q = T,
-            isRequiredLabel: z = D,
+            isRequiredLabel: z = L,
             messageLabel: J = O,
             messagePlaceholder: Q = p,
             nameLabel: Z = S,
             namePlaceholder: ee = f,
             removeScreenshotButtonLabel: et = C,
             submitButtonLabel: er = R,
-            successMessageText: en = L,
+            successMessageText: en = D,
             triggerLabel: ea = u,
             triggerAriaLabel: eo = "",
             onFormOpen: ei,
@@ -38611,8 +38615,8 @@ ${
             O,
             f,
             S,
-            L,
             D,
+            L,
             h = t.type;
           if (void 0 !== t.constructor) return null;
           128 & r.__u && ((E = !!(32 & r.__u)), (o = [(_ = t.__e = r.__e)])),
@@ -38700,11 +38704,11 @@ ${
                     I.__d = !1,
                     f && f(t),
                     c = I.render(I.props, I.state, I.context),
-                    L = 0;
-                  L < I._sb.length;
-                  L++
+                    D = 0;
+                  D < I._sb.length;
+                  D++
                 )
-                  I.__h.push(I._sb[L]);
+                  I.__h.push(I._sb[D]);
                 I._sb = [];
               } else
                 do
@@ -38722,13 +38726,13 @@ ${
                 en(
                   e,
                   j(
-                    (D =
+                    (L =
                       null != c && c.type === Q && null == c.key
                         ? c.props.children
                         : c),
                   )
-                    ? D
-                    : [D],
+                    ? L
+                    : [L],
                   t,
                   r,
                   n,
@@ -38959,8 +38963,8 @@ ${
           eO = H,
           ef = eO.__b,
           eS = eO.__r,
-          eL = eO.diffed,
-          eD = eO.__c,
+          eD = eO.diffed,
+          eL = eO.__c,
           eh = eO.unmount,
           eC = eO.__;
         function eg(e, t) {
@@ -39075,7 +39079,7 @@ ${
               (eA = eR);
           }),
           (eO.diffed = function (e) {
-            eL && eL(e);
+            eD && eD(e);
             var t = e.__c;
             t &&
               t.__H &&
@@ -39117,7 +39121,7 @@ ${
                   eO.__e(r, e.__v);
               }
             }),
-              eD && eD(e, t);
+              eL && eL(e, t);
           }),
           (eO.unmount = function (e) {
             eh && eh(e);
@@ -39314,8 +39318,8 @@ ${
               messagePlaceholder: O,
               nameLabel: f,
               namePlaceholder: S,
-              submitButtonLabel: L,
-              isRequiredLabel: D,
+              submitButtonLabel: D,
+              isRequiredLabel: L,
             } = e,
             [h, C] = eM(null),
             [g, P] = eM(!1),
@@ -39439,7 +39443,7 @@ ${
                       },
                       z(eW, {
                         label: f,
-                        isRequiredLabel: D,
+                        isRequiredLabel: L,
                         isRequired: N,
                         __self: this,
                         __source: { fileName: eV, lineNumber: 155 },
@@ -39475,7 +39479,7 @@ ${
                       },
                       z(eW, {
                         label: A,
-                        isRequiredLabel: D,
+                        isRequiredLabel: L,
                         isRequired: d,
                         __self: this,
                         __source: { fileName: eV, lineNumber: 172 },
@@ -39510,7 +39514,7 @@ ${
                   },
                   z(eW, {
                     label: p,
-                    isRequiredLabel: D,
+                    isRequiredLabel: L,
                     isRequired: !0,
                     __self: this,
                     __source: { fileName: eV, lineNumber: 188 },
@@ -39578,7 +39582,7 @@ ${
                     __self: this,
                     __source: { fileName: eV, lineNumber: 217 },
                   },
-                  L,
+                  D,
                 ),
                 z(
                   "button",
@@ -40450,7 +40454,7 @@ ${eQ}
                           },
                         [],
                       ),
-                      L = t.useRef({ initialX: 0, initialY: 0 });
+                      D = t.useRef({ initialX: 0, initialY: 0 });
                     return (
                       o({
                         onBeforeScreenshot: t.useCallback(() => {
@@ -40509,15 +40513,15 @@ ${eQ}
                             e("canvas", {
                               onMouseDown: function (e) {
                                 if (N) return;
-                                L.current = {
+                                D.current = {
                                   initialX: e.clientX,
                                   initialY: e.clientY,
                                 };
                                 let t = (e) => {
                                     let t = l.current;
                                     if (!t) return;
-                                    let r = e.clientX - L.current.initialX,
-                                      n = e.clientY - L.current.initialY;
+                                    let r = e.clientX - D.current.initialX,
+                                      n = e.clientY - D.current.initialY;
                                     A((a) => {
                                       let o = Math.max(
                                           0,
@@ -40536,8 +40540,8 @@ ${eQ}
                                         _ = o + (a.endX - a.startX),
                                         E = i + (a.endY - a.startY);
                                       return (
-                                        (L.current.initialX = e.clientX),
-                                        (L.current.initialY = e.clientY),
+                                        (D.current.initialX = e.clientX),
+                                        (D.current.initialY = e.clientY),
                                         {
                                           startX: o,
                                           startY: i,
@@ -40868,12 +40872,12 @@ ${eQ}
         for (
           var S =
               "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
-            L = "undefined" == typeof Uint8Array ? [] : new Uint8Array(256),
-            D = 0;
-          D < S.length;
-          D++
+            D = "undefined" == typeof Uint8Array ? [] : new Uint8Array(256),
+            L = 0;
+          L < S.length;
+          L++
         )
-          L[S.charCodeAt(D)] = D;
+          D[S.charCodeAt(L)] = L;
         var h = function (e) {
           var t,
             r = new Uint8Array(e),
@@ -41538,8 +41542,8 @@ ${eQ}
           O = r(263449),
           f = r(946471),
           S = r(233517),
-          L = r(822578),
-          D = r(696486),
+          D = r(822578),
+          L = r(696486),
           h = r(988097),
           C = r(820754),
           g = r(899517),
@@ -41822,11 +41826,11 @@ ${eQ}
           let r = e.createElement("a");
           return (r.href = t), r.href;
         }
-        function eL() {
+        function eD() {
           let e = document.createElement("a");
           return (e.href = ""), e.href;
         }
-        function eD(e, t, r, n, a, o) {
+        function eL(e, t, r, n, a, o) {
           if (!n) return n;
           if ("src" === r || ("href" === r && !("use" === t && "#" === n[0])))
             return eS(e, n);
@@ -41871,7 +41875,7 @@ ${eQ}
               }
               return a.join(", ");
             })(e, n);
-          else if ("style" === r) return ep(n, eL());
+          else if ("style" === r) return ep(n, eD());
           else if ("object" === t && "data" === r) return eS(e, n);
           return "function" == typeof o ? o(r, n, a) : n;
         }
@@ -41965,8 +41969,8 @@ ${eQ}
               maskTextFn: O,
               maskInputFn: f,
               slimDOMOptions: S,
-              dataURLOptions: L = {},
-              inlineImages: D = !1,
+              dataURLOptions: D = {},
+              inlineImages: L = !1,
               recordCanvas: h = !1,
               onSerialize: C,
               onIframeLoad: g,
@@ -41997,8 +42001,8 @@ ${eQ}
                   dataURLOptions: O = {},
                   inlineImages: f,
                   recordCanvas: S,
-                  keepIframeSrcFn: L,
-                  newlyAddedElement: D = !1,
+                  keepIframeSrcFn: D,
+                  newlyAddedElement: L = !1,
                 } = t,
                 h = (function (e, t) {
                   if (!t.hasNode(e)) return;
@@ -42043,8 +42047,8 @@ ${eQ}
                         rootId: O,
                         maskAllText: f,
                         maskTextClass: S,
-                        unmaskTextClass: L,
-                        maskTextSelector: D,
+                        unmaskTextClass: D,
+                        maskTextSelector: L,
                         unmaskTextSelector: h,
                       } = t,
                       C = (function (e, t, r, n) {
@@ -42072,7 +42076,7 @@ ${eQ}
                       let r = e.attributes[t];
                       r.name &&
                         !eh(g, r.name, r.value) &&
-                        (M[r.name] = eD(i, g, er(r.name), r.value, e, u));
+                        (M[r.name] = eL(i, g, er(r.name), r.value, e, u));
                     }
                     if ("link" === g && c) {
                       let t = Array.from(i.styleSheets).find(
@@ -42091,7 +42095,7 @@ ${eQ}
                       !(e.innerText || e.textContent || "").trim().length
                     ) {
                       let t = J(e.sheet);
-                      t && (M._cssText = ep(t, eL()));
+                      t && (M._cssText = ep(t, eD()));
                     }
                     if (
                       "input" === g ||
@@ -42106,8 +42110,8 @@ ${eQ}
                         let n = eM(
                           e,
                           S,
-                          D,
                           L,
+                          D,
                           h,
                           ee({ type: t, tagName: en(g), maskInputOptions: I }),
                         );
@@ -42231,8 +42235,8 @@ ${eQ}
                     dataURLOptions: O,
                     inlineImages: f,
                     recordCanvas: S,
-                    keepIframeSrcFn: L,
-                    newlyAddedElement: D,
+                    keepIframeSrcFn: D,
+                    newlyAddedElement: L,
                     rootId: h,
                     maskAllText: s,
                     maskTextClass: I,
@@ -42278,7 +42282,7 @@ ${eQ}
                           e,
                         );
                       }
-                      u = ep(u, eL());
+                      u = ep(u, eD());
                     }
                     R && (u = "SCRIPT_PLACEHOLDER");
                     let d = eM(e, n, o, a, i, r);
@@ -42355,8 +42359,8 @@ ${eQ}
               maskAttributeFn: p,
               maskTextFn: O,
               maskInputFn: f,
-              dataURLOptions: L,
-              inlineImages: D,
+              dataURLOptions: D,
+              inlineImages: L,
               recordCanvas: h,
               keepIframeSrcFn: U,
               newlyAddedElement: G,
@@ -42485,8 +42489,8 @@ ${eQ}
               maskTextFn: O,
               maskInputFn: f,
               slimDOMOptions: S,
-              dataURLOptions: L,
-              inlineImages: D,
+              dataURLOptions: D,
+              inlineImages: L,
               recordCanvas: h,
               preserveWhiteSpace: y,
               onSerialize: C,
@@ -42560,8 +42564,8 @@ ${eQ}
                       maskTextFn: O,
                       maskInputFn: f,
                       slimDOMOptions: S,
-                      dataURLOptions: L,
-                      inlineImages: D,
+                      dataURLOptions: D,
+                      inlineImages: L,
                       recordCanvas: h,
                       preserveWhiteSpace: y,
                       onSerialize: C,
@@ -42620,8 +42624,8 @@ ${eQ}
                       maskTextFn: O,
                       maskInputFn: f,
                       slimDOMOptions: S,
-                      dataURLOptions: L,
-                      inlineImages: D,
+                      dataURLOptions: D,
+                      inlineImages: L,
                       recordCanvas: h,
                       preserveWhiteSpace: y,
                       onSerialize: C,
@@ -43334,7 +43338,7 @@ ${eQ}
                           "password" === (e.oldValue || "").toLowerCase() &&
                           t.setAttribute("data-rr-is-password", "true"),
                         !eh(t.tagName, r) &&
-                          ((a.attributes[r] = eD(
+                          ((a.attributes[r] = eL(
                             this.doc,
                             er(t.tagName),
                             er(r),
@@ -43934,10 +43938,10 @@ ${eQ}
                   O = ei(N, T, p),
                   f = !1,
                   S = ee({ maskInputOptions: E, tagName: T, type: p }),
-                  L = eM(r, u, R, l, A, S);
+                  D = eM(r, u, R, l, A, S);
                 ("radio" === p || "checkbox" === p) && (f = r.checked),
                   (O = et({
-                    isMasked: L,
+                    isMasked: D,
                     element: r,
                     value: O,
                     maskInputFn: s,
@@ -43948,16 +43952,16 @@ ${eQ}
                       ? { text: O, isChecked: f, userTriggered: c }
                       : { text: O, isChecked: f },
                   );
-                let D = r.name;
+                let L = r.name;
                 "radio" === p &&
-                  D &&
+                  L &&
                   f &&
                   t
-                    .querySelectorAll(`input[type="radio"][name="${D}"]`)
+                    .querySelectorAll(`input[type="radio"][name="${L}"]`)
                     .forEach((e) => {
                       if (e !== r) {
                         let t = et({
-                          isMasked: L,
+                          isMasked: D,
                           element: e,
                           value: ei(e, T, p),
                           maskInputFn: s,
@@ -44875,7 +44879,7 @@ ${eQ}
           }
           trackStylesheetInLinkElement(e) {}
         }
-        class tL {
+        class tD {
           constructor() {
             (this.nodeMap = new WeakMap()),
               (this.loop = !0),
@@ -44921,7 +44925,7 @@ ${eQ}
         } catch (e) {
           console.debug("Unable to override Array.from", e);
         }
-        let tD = new Z();
+        let tL = new Z();
         function th(e = {}) {
           let t;
           let {
@@ -44942,8 +44946,8 @@ ${eQ}
             maskAllInputs: O,
             maskInputOptions: f,
             slimDOMOptions: S,
-            maskAttributeFn: L,
-            maskInputFn: D,
+            maskAttributeFn: D,
+            maskInputFn: L,
             maskTextFn: h,
             maxCanvasSize: C = null,
             packFn: g,
@@ -44977,7 +44981,7 @@ ${eQ}
             }
           if (F && !r) throw Error("emit function is required");
           void 0 !== m && void 0 === M.mousemove && (M.mousemove = m),
-            tD.reset();
+            tL.reset();
           let X =
               !0 === O
                 ? {
@@ -45108,7 +45112,7 @@ ${eQ}
               __RRWEB_EXCLUDE_IFRAME__
                 ? new td()
                 : new tN({
-                    mirror: tD,
+                    mirror: tL,
                     mutationCb: z,
                     stylesheetManager: ee,
                     recordCrossOriginIframes: y,
@@ -45117,11 +45121,11 @@ ${eQ}
           for (let e of H || [])
             e.getMirror &&
               e.getMirror({
-                nodeMirror: tD,
+                nodeMirror: tL,
                 crossOriginIframeMirror: et.crossOriginIframeMirror,
                 crossOriginIframeStyleMirror: et.crossOriginIframeStyleMirror,
               });
-          let er = new tL(),
+          let er = new tD(),
             en = (function (e, t) {
               try {
                 return e ? e(t) : new tf();
@@ -45131,7 +45135,7 @@ ${eQ}
                 );
               }
             })(x, {
-              mirror: tD,
+              mirror: tL,
               win: window,
               mutationCb: (e) =>
                 i({
@@ -45167,9 +45171,9 @@ ${eQ}
                       inlineStylesheet: p,
                       maskInputOptions: X,
                       dataURLOptions: P,
-                      maskAttributeFn: L,
+                      maskAttributeFn: D,
                       maskTextFn: h,
-                      maskInputFn: D,
+                      maskInputFn: L,
                       recordCanvas: G,
                       inlineImages: w,
                       sampling: M,
@@ -45180,7 +45184,7 @@ ${eQ}
                       keepIframeSrcFn: Y,
                       processedNodeManager: er,
                     },
-                    mirror: tD,
+                    mirror: tL,
                   }),
             eo = (e = !1) => {
               if (!U) return;
@@ -45221,8 +45225,8 @@ ${eQ}
                   preserveWhiteSpace: O,
                   onSerialize: f,
                   onIframeLoad: S,
-                  iframeLoadTimeout: L,
-                  onStylesheetLoad: D,
+                  iframeLoadTimeout: D,
+                  onStylesheetLoad: L,
                   stylesheetLoadTimeout: h,
                   keepIframeSrcFn: C = () => !1,
                 } = t || {};
@@ -45287,14 +45291,14 @@ ${eQ}
                   preserveWhiteSpace: O,
                   onSerialize: f,
                   onIframeLoad: S,
-                  iframeLoadTimeout: L,
-                  onStylesheetLoad: D,
+                  iframeLoadTimeout: D,
+                  onStylesheetLoad: L,
                   stylesheetLoadTimeout: h,
                   keepIframeSrcFn: C,
                   newlyAddedElement: !1,
                 });
               })(document, {
-                mirror: tD,
+                mirror: tL,
                 blockClass: E,
                 blockSelector: s,
                 unblockSelector: c,
@@ -45305,16 +45309,16 @@ ${eQ}
                 unmaskTextSelector: d,
                 inlineStylesheet: p,
                 maskAllInputs: X,
-                maskAttributeFn: L,
-                maskInputFn: D,
+                maskAttributeFn: D,
+                maskInputFn: L,
                 maskTextFn: h,
                 slimDOM: j,
                 dataURLOptions: P,
                 recordCanvas: G,
                 inlineImages: w,
                 onSerialize: (e) => {
-                  eW(e, tD) && et.addIframe(e),
-                    eX(e, tD) && ee.trackLinkElement(e),
+                  eW(e, tL) && et.addIframe(e),
+                    eX(e, tL) && ee.trackLinkElement(e),
                     ej(e) && ea.addShadowRoot(e.shadowRoot, document);
                 },
                 onIframeLoad: (e, t) => {
@@ -45337,7 +45341,7 @@ ${eQ}
                   document.adoptedStyleSheets.length > 0 &&
                   ee.adoptStyleSheets(
                     document.adoptedStyleSheets,
-                    tD.getId(document),
+                    tL.getId(document),
                   );
             };
           _ = eo;
@@ -45419,15 +45423,15 @@ ${eQ}
                     userTriggeredOnInput: b,
                     collectFonts: B,
                     doc: e,
-                    maskAttributeFn: L,
-                    maskInputFn: D,
+                    maskAttributeFn: D,
+                    maskInputFn: L,
                     maskTextFn: h,
                     keepIframeSrcFn: Y,
                     blockSelector: s,
                     unblockSelector: c,
                     slimDOMOptions: j,
                     dataURLOptions: P,
-                    mirror: tD,
+                    mirror: tL,
                     iframeManager: et,
                     stylesheetManager: ee,
                     shadowDomManager: ea,
@@ -45495,7 +45499,7 @@ ${eQ}
             console.warn(e);
           }
         }
-        (th.mirror = tD),
+        (th.mirror = tL),
           (th.takeFullSnapshot = function (e) {
             if (!_)
               throw Error("please take full snapshot after start recording");
@@ -46556,10 +46560,10 @@ ${eQ}
             method: _,
             statusCode: E,
             request: u,
-            response: await rL(I, r, t.response, c),
+            response: await rD(I, r, t.response, c),
           };
         }
-        async function rL(
+        async function rD(
           e,
           { networkCaptureBodies: t, networkResponseHeaders: r },
           n,
@@ -46568,7 +46572,7 @@ ${eQ}
           if (!e && void 0 !== a) return rT(a);
           let o = n ? rC(n.headers, r) : {};
           if (!n || (!t && void 0 !== a)) return rd(o, a, void 0);
-          let [i, _] = await rD(n),
+          let [i, _] = await rL(n),
             E = (function (
               e,
               {
@@ -46598,7 +46602,7 @@ ${eQ}
             });
           return _ ? rR(E, _) : E;
         }
-        async function rD(e) {
+        async function rL(e) {
           let t = (function (e) {
             try {
               return e.clone();
@@ -46817,7 +46821,7 @@ ${eQ}
                 : Object.keys(e._integrations),
           };
           e.emit("preprocessEvent", n, a);
-          let o = await (0, L.R)(e.getOptions(), n, a, t, e, (0, O.aF)());
+          let o = await (0, D.R)(e.getOptions(), n, a, t, e, (0, O.aF)());
           if (!o) return null;
           o.platform = o.platform || "javascript";
           let i = e.getSdkMetadata(),
@@ -46878,7 +46882,7 @@ ${eQ}
               (0, B.WD)({})
             );
           delete S.sdkProcessingMetadata;
-          let L =
+          let D =
             ((i = S),
             (_ = I),
             (E = p),
@@ -46897,7 +46901,7 @@ ${eQ}
               ],
             ]));
           try {
-            c = await N.send(L);
+            c = await N.send(D);
           } catch (t) {
             let e = Error(X);
             try {
@@ -46910,8 +46914,8 @@ ${eQ}
             (c.statusCode < 200 || c.statusCode >= 300)
           )
             throw new ry(c.statusCode);
-          let D = (0, w.WG)({}, c);
-          if ((0, w.Q)(D, "replay")) throw new rv(D);
+          let L = (0, w.WG)({}, c);
+          if ((0, w.Q)(L, "replay")) throw new rv(L);
           return c;
         }
         class ry extends Error {
@@ -47443,11 +47447,11 @@ ${eQ}
             return r;
           }
           getCurrentRoute() {
-            let e = this.lastActiveSpan || (0, D.HN)(),
-              t = e && (0, D.Gx)(e),
-              r = ((t && (0, D.XU)(t).data) || {})[h.Zj];
+            let e = this.lastActiveSpan || (0, L.HN)(),
+              t = e && (0, L.Gx)(e),
+              r = ((t && (0, L.XU)(t).data) || {})[h.Zj];
             if (!!t && !!r && !!["route", "custom"].includes(r))
-              return (0, D.XU)(t).description;
+              return (0, L.XU)(t).description;
           }
           _initializeRecording() {
             this.setInitialState(),
@@ -48235,8 +48239,8 @@ ${eQ}
             mask: O = [],
             maskAttributes: f = ["title", "placeholder"],
             unmask: S = [],
-            block: L = [],
-            unblock: D = [],
+            block: D = [],
+            unblock: L = [],
             ignore: h = [],
             maskFn: C,
             beforeAddRecordingEvent: g,
@@ -48266,7 +48270,7 @@ ${eQ}
                   'input[type="file"]',
                 ]),
               };
-            })({ mask: O, unmask: S, block: L, unblock: D, ignore: h });
+            })({ mask: O, unmask: S, block: D, unblock: L, ignore: h });
             if (
               ((this._recordingOptions = {
                 maskAllInputs: s,
@@ -48484,4 +48488,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.7d5811851331d54a28d8.js.map
+//# sourceMappingURL=sentry.ac15e2375dbeb1986958.js.map
