@@ -35151,28 +35151,6 @@ html.disable-forced-colors * {
   --bungie-hsl: 197 calc(var(--saturation-factor, 1) * 100%) 44.5%;
   --crunchyroll: hsl(var(--crunchyroll-hsl) / 1);
   --crunchyroll-hsl: 29 calc(var(--saturation-factor, 1) * 93%) 55.5%;
-  --discord-8th-bday-blue: hsl(var(--discord-8th-bday-blue-hsl) / 1);
-  --discord-8th-bday-blue-hsl: 234 calc(var(--saturation-factor, 1) * 93.1%)
-    65.7%;
-  --discord-8th-bday-dark-blue: hsl(var(--discord-8th-bday-dark-blue-hsl) / 1);
-  --discord-8th-bday-dark-blue-hsl: 235
-    calc(var(--saturation-factor, 1) * 73.7%) 53.7%;
-  --discord-8th-bday-green: hsl(var(--discord-8th-bday-green-hsl) / 1);
-  --discord-8th-bday-green-hsl: 79 calc(var(--saturation-factor, 1) * 100%)
-    46.9%;
-  --discord-8th-bday-light-blue: hsl(
-    var(--discord-8th-bday-light-blue-hsl) / 1
-  );
-  --discord-8th-bday-light-blue-hsl: 222
-    calc(var(--saturation-factor, 1) * 100%) 68.4%;
-  --discord-8th-bday-pink: hsl(var(--discord-8th-bday-pink-hsl) / 1);
-  --discord-8th-bday-pink-hsl: 316 calc(var(--saturation-factor, 1) * 100%)
-    66.1%;
-  --discord-8th-bday-purple: hsl(var(--discord-8th-bday-purple-hsl) / 1);
-  --discord-8th-bday-purple-hsl: 234 calc(var(--saturation-factor, 1) * 93.1%)
-    65.7%;
-  --discord-8th-bday-yellow: hsl(var(--discord-8th-bday-yellow-hsl) / 1);
-  --discord-8th-bday-yellow-hsl: 60 calc(var(--saturation-factor, 1) * 100%) 50%;
   --ebay: hsl(var(--ebay-hsl) / 1);
   --ebay-hsl: 211 calc(var(--saturation-factor, 1) * 100%) 41.2%;
   --epic-games: hsl(var(--epic-games-hsl) / 1);
@@ -43879,12 +43857,6 @@ code {
   --custom-application-directory-search-sidebar-margin-right: 32px;
 }
 :root {
-  --custom-activities-home-tile-scroller-vertical-margin: 8px;
-  --custom-activities-home-whats-new-horizontal-margin: 10px;
-  --custom-activities-home-whats-new-tile-width: 224px;
-  --custom-activities-home-happening-now-card-width: 305px;
-  --custom-activities-home-happening-now-gap: 16px;
-  --custom-activities-home-activity-card-width: 235px;
   --custom-activity-bookmark-embed-image-width: 356px;
   --custom-activity-bookmark-embed-image-height: 200px;
   --custom-activity-bookmark-embed-content-height: 400px;
@@ -44223,4 +44195,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.ff8e19de0bb70a4d1a0d.css.map*/
+/*# sourceMappingURL=12633.81f617f9482086f2d112.css.map*/
