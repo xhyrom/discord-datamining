@@ -12,103 +12,40 @@
 <p><span class="wysiwyg-font-size-large">What this article covers:</span></p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5CRSRTWYCGPHZQ37H"
-      >How to Enable Developer Mode</a
-    >
+    <a href="#h_01HRSTXPS5CRSRTWYCGPHZQ37H">How to Enable Developer Mode</a>
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5H1KKPQWG4YCWBJVA"
-          >Desktop</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS58W15V93XGSKPWA05"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01HRSTXPS5H1KKPQWG4YCWBJVA">Desktop</a></li>
+      <li><a href="#h_01HRSTXPS58W15V93XGSKPWA05">Mobile</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5H5D7JBY2QKKPVKNA"
-      >How to find a User ID number</a
-    >
+    <a href="#h_01HRSTXPS5H5D7JBY2QKKPVKNA">How to find a User ID number</a>
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS58KNN33AZPCZ1W2F2"
-          >Desktop</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS51868RZW0AG3ENKCE"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01HRSTXPS58KNN33AZPCZ1W2F2">Desktop</a></li>
+      <li><a href="#h_01HRSTXPS51868RZW0AG3ENKCE">Mobile</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5FSFA0VWMY2CKGZXA"
-      >How to find a Server ID number</a
-    >
+    <a href="#h_01HRSTXPS5FSFA0VWMY2CKGZXA">How to find a Server ID number</a>
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5N2Y7H57WNY7DJSC8"
-          >Desktop</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5VT8H65S3RQ87VXTR"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01HRSTXPS5N2Y7H57WNY7DJSC8">Desktop</a></li>
+      <li><a href="#h_01HRSTXPS5VT8H65S3RQ87VXTR">Mobile</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS52TR10R4EPMPE8MGG"
-      >How to find the Message Link</a
-    >
+    <a href="#h_01HRSTXPS52TR10R4EPMPE8MGG">How to find the Message Link</a>
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5DPNBF4W9C8DA2VGN"
-          >Desktop</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5BSEA2CKVGHH6406G"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01HRSTXPS5DPNBF4W9C8DA2VGN">Desktop</a></li>
+      <li><a href="#h_01HRSTXPS5BSEA2CKVGHH6406G">Mobile</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5FMK2A5SMVSX4JW4E"
+    <a href="#h_01HRSTXPS5FMK2A5SMVSX4JW4E"
       >How to find the Channel ID number</a
     >
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5WGDKT73WADV2HGCH"
-          >Desktop</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/206346498#h_01HRSTXPS5135ZAB5J5JA6MA6R"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01HRSTXPS5WGDKT73WADV2HGCH">Desktop</a></li>
+      <li><a href="#h_01HRSTXPS5135ZAB5J5JA6MA6R">Mobile</a></li>
     </ul>
   </li>
 </ul>

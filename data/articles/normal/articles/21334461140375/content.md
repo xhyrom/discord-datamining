@@ -4,74 +4,41 @@
   >
 </p>
 <ul>
+  <li><a href="#h_01J7CJ994TKKMGYMG1ZZQ9T3S5">What are Apps? </a></li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/21334461140375#docs-internal-guid-9d109a73-7fff-beff-25ba-562d8ae90670"
-      >What are Apps? </a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C8TRHS722P1H3HW1TV"
-      >How to Use Apps</a
-    >
+    <a href="#h_01J7CJA2X21GSB0MV6F0TNNVGS">How to Use Apps</a>
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/21334461140375#docs-internal-guid-817a9772-7fff-78a7-726d-2bd5151af070"
+        <a href="#h_01J7CJB2BB0WKR8M7BX2Y5B6G7"
           >Launching Apps from the Chat Bar
         </a>
       </li>
+      <li><a href="#h_01HRQSA6C85Z6CA9CF10DPRX1Q">Slash Commands</a></li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C85Z6CA9CF10DPRX1Q"
-          >Slash Commands</a
-        >
+        <a href="#h_01HRQSA6C8MGJ2F3G3GEQTQ36P">User and Message Commands</a>
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C8MGJ2F3G3GEQTQ36P"
-          >User and Message Commands</a
-        >
+        <a href="#h_01J7CHZCD3Q5PKWXAXENFW8ETZ">Editing Images in Chat</a>
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C89EVW06TR83E76S86"
+    <a href="#h_01HRQSA6C89EVW06TR83E76S86"
       >How to Discover Apps and Add Apps</a
     >
     <ul>
+      <li><a href="#h_01J7CJD6JNQ78PEPF4MM4GQWF2">From the App Launcher</a></li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/21334461140375#docs-internal-guid-d9c5c0e9-7fff-1b40-550f-e6a3f64f347e"
-          >From the App Launcher</a
-        >
+        <a href="#h_01J7CJDA1CP9FYGGCRJDJT1D4C">From the App Directory</a>
       </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/21334461140375#docs-internal-guid-6ee845b2-7fff-7032-0edc-782bc61f61f4"
-          >From the App Directory</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/21334461140375#docs-internal-guid-342855a1-7fff-d2f4-8aa2-27cc3cd2b3b7"
-          >From Chat</a
-        >
-      </li>
+      <li><a href="#h_01J7CJETH832KC9PJAP62YDV88">From Chat</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C8H2XBF34NSSQH7ZFH"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01HRQSA6C8H2XBF34NSSQH7ZFH">Frequently Asked Questions</a>
   </li>
 </ul>
-<h1 id="docs-internal-guid-9d109a73-7fff-beff-25ba-562d8ae90670">
-  What Are Apps?
-</h1>
+<h1 id="h_01J7CJ994TKKMGYMG1ZZQ9T3S5">What Are Apps?</h1>
 <p id="docs-internal-guid-f29fc1e7-7fff-20d6-4d6e-4c0654f2c5f2">
   <strong
     ><span id="docs-internal-guid-9666140c-7fff-b291-4ef6-bdd1b14bbf4a"
@@ -146,40 +113,84 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010612827287"
-    width="624"
-    height="357"
+    width="704"
+    height="404"
   />
 </p>
-<h1 id="h_01HRQSA6C8TRHS722P1H3HW1TV">How to Use Apps</h1>
+<h1 id="h_01J7CJA2X21GSB0MV6F0TNNVGS" class="wysiwyg-text-align-left">
+  How to Use Apps
+</h1>
 <p>
   You can interact with an app in a multitude of ways. If you have an app
   installed, you can use one of its commands by using slash commands, or by
   right-clicking on a user or message and selecting <strong>Apps</strong>.
 </p>
-<h2 id="docs-internal-guid-817a9772-7fff-78a7-726d-2bd5151af070">
-  Launching Apps From the Chat Bar
-</h2>
-<h3 id="docs-internal-guid-a461668a-7fff-bf2b-c8d7-6b123f8b03f3">
-  <span style="color: #434343"
-    >Launching apps from the chat bar is currently only available in servers on
-    mobile.</span
-  ><span
-    id="docs-internal-guid-7958b5d4-7fff-d7c9-1510-87dbd05387ac"
-    style="color: #434343"
-  ></span>
-</h3>
-<p>
-  The easiest way to launch an app is by selecting the <strong
-    ><span id="docs-internal-guid-7679727c-7fff-fefd-847a-cd3637d716bb"
-      >App Launcher</span
-    ></strong
+<h2 id="h_01J7CJB2BB0WKR8M7BX2Y5B6G7">Launching Apps From the Chat Bar</h2>
+<p id="docs-internal-guid-a461668a-7fff-bf2b-c8d7-6b123f8b03f3">
+  <span class="wysiwyg-font-size-large"
+    ><strong><font color="#434343">Desktop/Browser</font></strong></span
   >
-  [<img
-    src="https://support.discord.com/hc/article_attachments/24109404965911"
+</p>
+<p>
+  To launch an app on desktop or browser, simply select the
+  <strong>App Launcher</strong> button [<img
+    src="https://support.discord.com/hc/article_attachments/26257591776407"
     width="24"
     height="24"
-  />] button to the left of the chat bar, and then selecting the app you would
-  like to start. 
+  />] to the right of the chat bar in Discord. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26257591778199"
+    width="649"
+    height="422"
+  />
+</p>
+<p>
+  Once the <strong>App Launcher</strong> is open, choose the app that you would
+  like to launch.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26257591779479"
+    width="649"
+    height="422"
+  />
+</p>
+<p>
+  If the app has commands, you will be prompted to select commands to launch the
+  app in chat.
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #434343"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/26257591780247"
+      width="656"
+      height="414"
+  /></span>
+</p>
+<p>
+  If the app has an Activity, you can launch it in the chat by selecting the
+  <strong>Launch</strong> button.
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #23272a"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/26257532690839"
+      width="646"
+      height="416"
+  /></span>
+</p>
+<p>
+  <span class="wysiwyg-font-size-large"><strong>Mobile</strong></span>
+</p>
+<p>
+  To launch an app on mobile, simply tap the
+  <strong>App Launcher</strong> button [<img
+    src="https://support.discord.com/hc/article_attachments/26257532691351"
+    width="24"
+    height="24"
+  />] to the left of the chat bar, then select the app you want to use. 
 </p>
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-4f9fb5da-7fff-b0a8-e171-a6747af04a8f"
@@ -233,8 +244,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010330446615"
-    width="624"
-    height="369"
+    width="714"
+    height="423"
   />
 </p>
 <p>
@@ -255,8 +266,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010330473623"
-    width="600"
-    height="390"
+    width="700"
+    height="455"
   />
 </p>
 <h3 id="h_01HRQSA6C84T8XD8BFM2984HH9">
@@ -266,40 +277,140 @@
   ><strong><span style="color: #434343">App Directory</span></strong
   ><span style="color: #434343"> page for the app. </span>
 </h3>
+<h2 id="h_01J7CHZCD3Q5PKWXAXENFW8ETZ">Editing Images in Chat </h2>
+<h3 id="h_01J7CHZMM8BW9YSPR7GSY3ZAXC">
+  <span style="color: #434343"
+    >Note: The ability to edit images in Discord chat using apps is slowly
+    rolling out to users and currently available only on the desktop and
+    browser.</span
+  >
+</h3>
+<p>
+  Discord makes it easy to enhance and interact with images in chat using
+  various apps. Here's how you can modify images directly within your
+  conversations:
+</p>
+<p>
+  1. <strong>Find the App Launcher on the image</strong>: When viewing an image
+  in chat, locate the <strong>App Launcher </strong>button [<span
+    style="color: #2e3338; background-color: #ffffff"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/26257532691991"
+      width="24"
+      height="24" /></span
+  >] in the upper-right corner of the image.
+</p>
+<p>
+  2. <strong>Select your desired app command</strong>: Select the
+  <strong>App</strong> <strong>Launcher</strong> button [<span
+    style="color: #2e3338; background-color: #ffffff"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/26257532691991"
+      width="24"
+      height="24" /></span
+  >] to see a list of commands for apps that can modify or interact with the
+  image. Here are a few examples of what you can do with some popular apps:
+</p>
+<ul>
+  <li>
+    <strong>Viggle</strong>: Animate characters in images by uploading a video,
+    bringin static pictures to life.  
+  </li>
+  <li>
+    <strong>esmBot</strong>: Add a caption to the images or create bouncing
+    animations for a playful touch.
+  </li>
+  <li>
+    <strong>Picsar</strong>: Transform images into stickers by effortlessly
+    removing backgrounds. 
+  </li>
+  <li>
+    <strong>Nekotina</strong>: Create detailed image descriptions to enhance
+    context and improve accessibility.
+  </li>
+</ul>
+<p>
+  3. <strong>Authorize the app</strong>: Complete the prompts and select
+  <strong>Authorize</strong> to confirm you would like to add the app to your
+  account.
+</p>
+<p>
+  4. <strong>Follow the prompts</strong>: After selecting an app, complete any
+  additional steps. Once finished, the app will process your changes, and the
+  edited image will appear as a new message in the chat.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26257591795991"
+    alt="image15-ezgif.com-crop.gif"
+    width="684"
+    height="561"
+  />
+</p>
+<h3 id="h_01J7CJ6BGWH8Y6N36ZFVF2JHKM">
+  <span style="color: #434343"
+    >Edited images do not replace the original in chat. Instead, the modified
+    image appears as a new message, while the original remains intact.</span
+  >
+</h3>
+<p>
+  With these easy-to-use apps, you can creatively modify images and make your
+  chats even more engaging! Learn more about using apps on Discord
+  <a
+    href="https://support.discord.com/hc/articles/21334461140375-Using-Apps-on-Discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
+</p>
 <h1 id="h_01HRQSA6C89EVW06TR83E76S86">How to Discover Apps and Add Apps</h1>
 <p>
   Discord’s <strong>App Directory</strong> lets you search, browse, and explore
   various apps you can add to customize your server. 
 </p>
-<h2 id="docs-internal-guid-d9c5c0e9-7fff-1b40-550f-e6a3f64f347e">
-  From the App Launcher
-</h2>
+<h2 id="h_01J7CJD6JNQ78PEPF4MM4GQWF2">From the App Launcher</h2>
 <p>
   Discord’s <strong>App Launcher</strong> lets you discover new apps through the
   displayed collections and search.
 </p>
 <p>
-  In addition to the apps already installed to your account and the server
-  you're in (if applicable), when you open the App Launcher, you will also see
-  collections of other apps you may want to try. These collections include a mix
-  of user and staff favorites as well as others we think you’ll love. We may
-  work with the developers of some of these apps to help them bring you more
-  content and features. Sometimes this may include a partnership contract or
-  financial relationship; we’ll identify those apps to you with the "Partner"
-  tag.
+  When you open the App Launcher, you'll discover a variety of apps to enhance
+  your Discord experience:
+</p>
+<ul>
+  <li>
+    <strong>Installed Apps:</strong> Apps already added to your account or
+    server (if applicable)
+  </li>
+  <li>
+    <strong>Curated Collections:</strong> A mix of user favorites, staff picks,
+    and recommended apps
+  </li>
+  <li>
+    <strong>Partner Apps:</strong> Some apps may be developed in collaboration
+    with Discord, marked with a "<strong>Partner</strong>" tag
+  </li>
+  <li>
+    <strong>Promoted Apps:</strong> Apps given more visibility in the App
+    Launcher or App Directory, identified by a "<strong>Promoted</strong>" tag
+  </li>
+</ul>
+<p>
+  These diverse options allow you to customize and enrich your Discord
+  interactions with ease.
 </p>
 <p>
-  Search results are ranked by factors including the relevancy to the search
-  query and popularity based on usage.
+  Search results are ranked based on relevance to thequery and popularity based
+  on usage. Apps that use ads or offer in-app purchases are marked with
+  “<strong>Ad-supported</strong>” and “<strong>In-App Purchases</strong>” tags
+  on their details page.  
 </p>
 <p>
-  Apps that you use will show up in your “Recents” and “Installed” sections at
-  the top of the launcher. You can launch those apps immediately from inside the
-  App Launcher by selecting them. 
+  Your recently used and installed apps appear in the “<strong>Recents</strong>”
+  section at the top of the App Launcher. You can launch these apps by selecting
+  them directly from the launcher.
 </p>
-<h2 id="docs-internal-guid-6ee845b2-7fff-7032-0edc-782bc61f61f4">
-  From the App Directory
-</h2>
+<h2 id="h_01J7CJDA1CP9FYGGCRJDJT1D4C">From the App Directory</h2>
 <p id="docs-internal-guid-79c0805c-7fff-ae57-1ee6-d673504e044e">
   Discord’s <strong>App Directory</strong> lets you search, browse, and explore
   various apps you can add to your server or your account. 
@@ -321,8 +432,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010331730071"
-    width="600"
-    height="340"
+    width="697"
+    height="395"
   />
 </p>
 <p>
@@ -357,8 +468,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010330491927"
-    width="297"
-    height="279"
+    width="336"
+    height="315"
   />
 </p>
 <h3 id="docs-internal-guid-08e69e00-7fff-585e-5d03-53fc55b6295e">
@@ -374,8 +485,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010330507159"
-    width="600"
-    height="361"
+    width="708"
+    height="426"
   />
 </p>
 <p>
@@ -392,15 +503,17 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010331765911"
-    width="650"
-    height="460"
+    width="681"
+    height="483"
   /><img
     src="https://support.discord.com/hc/article_attachments/22010330536471"
-    width="654"
-    height="429"
+    width="682"
+    height="448"
   />
 </p>
-<h2 id="docs-internal-guid-342855a1-7fff-d2f4-8aa2-27cc3cd2b3b7">From Chat</h2>
+<h2 id="h_01J7CJETH832KC9PJAP62YDV88" class="wysiwyg-text-align-left">
+  From Chat
+</h2>
 <p id="docs-internal-guid-6351c0af-7fff-a207-b0a4-f4e67bdad7d8">
   You can also add an app from a chat or member list by viewing the app’s
   profile<strong>. </strong>When you see an app posting in chat:
@@ -414,8 +527,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010330491927"
-    width="297"
-    height="279"
+    width="359"
+    height="337"
   />
 </p>
 <p>
@@ -426,8 +539,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/22010331802775"
-    width="600"
-    height="385"
+    width="712"
+    height="457"
   />
 </p>
 <p>
@@ -506,6 +619,13 @@
   the same capabilities as apps added to a server. <span
     id="docs-internal-guid-c39d8fa9-7fff-bec8-aff4-b6e0f6352beb"
   ></span>
+</p>
+<p><strong>Q: Which apps can I use to modify images in Discord?</strong></p>
+<p>
+  A: Currently, Discord offers several apps for image modification. Viggle
+  animates characters, esmBot adds captions or creates bouncing animations,
+  Picsar transforms images into stickers, and Nekotina generates image
+  descriptions. More apps may become available in the future.
 </p>
 <p>
   <strong

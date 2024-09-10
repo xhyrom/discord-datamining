@@ -15,10 +15,17 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2024-06-11T17:11:07Z",
+  "edited_at": "2024-09-10T00:02:47Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
-  "content_tag_ids": [],
+  "content_tag_ids": [
+    "01H3FWMK9ZJ8X5TEHZ2GS03WC7",
+    "01J3NCWMGR03XN71256WH95176",
+    "01J7CJGZHWGJP6S3C5B2H06EHF",
+    "01J7CJH3ZN65D8P08TTCM7C0W3",
+    "01J7CJHC83ZZVJW6EFM1D4EAM3",
+    "01J7CJHJVZG0867D5TGRGKTKMD"
+  ],
   "label_names": [
     "admin",
     "answer-bot",
