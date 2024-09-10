@@ -87,7 +87,7 @@
       </figure>
       <p>
         On desktop or web, you can also highlight your message and press
-        “<strong>ALT or CMD+B</strong>” to instantly bold the words you have
+        “<strong>CTRL or CMD+B</strong>” to instantly bold the words you have
         highlighted!&nbsp;
       </p>
     </div>
@@ -149,7 +149,7 @@
       </p>
       <p>
         You can also easily italicize any text by highlighting it and pressing
-        <strong>“ALT or CMD + I.”</strong>
+        <strong>“CTRL or CMD + I.”</strong>
       </p>
     </div>
   </div>
