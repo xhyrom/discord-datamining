@@ -17,7 +17,7 @@
         <strong
           >To celebrate SpongeBob’s 25th anniversary, we’re releasing a
           SpongeBob SquarePants collection of Avatar Decorations and Profile
-          Effects in the Shop, available from July 18th to August 15th, </strong
+          Effects in the Shop, </strong
         >featuring items designed after and inspired by SpongeBob, Gary, Sandy
         Cheeks, Patrick, Squidward, Plankton, and even DoodleBob!&nbsp;
       </p>
