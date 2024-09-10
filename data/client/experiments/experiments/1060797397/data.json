@@ -24,19 +24,13 @@
         "filters": [
           {
             "type": "guild_member_count_range",
-            "min_count": 5000,
+            "min_count": 0,
             "max_count": null
-          },
-          {
-            "type": "guild_has_feature",
-            "features": [
-              "COMMUNITY"
-            ]
           }
         ]
       }
     ],
-    "revision": 0,
+    "revision": 1,
     "overrides": {
       "1": [
         "651595875897835540"
