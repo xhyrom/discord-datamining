@@ -23,11 +23,11 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
+      <li><a href="#h_01J7CES1WTMHAPE1CKZTTKFGKK">Honkai: Star Rail </a></li>
       <li>
         <a href="#h_01J6G4D7V76YHX2F60YETE63JJ">The First Descendant </a> 
       </li>
       <li><a href="#h_01J71E6SB3E6C2WB0T0D994406">Wuthering Waves </a></li>
-      <li><a href="#h_01J6006XQ2BKXT4ADDBYR3XKCV">World of Warcraft</a></li>
     </ul>
   </li>
   <li>
@@ -35,8 +35,10 @@
     <ul>
       <li><a href="#h_01J71F0RY3F0CF02065Y2P5ARZ">Predecessor</a></li>
       <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Krunker Strike FRVR</a></li>
-      <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">GTA Online</a></li>
-      <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">VALORANT </a></li>
+      <li>
+        <a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">GTA Online</a
+        ><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH"> </a>
+      </li>
     </ul>
   </li>
   <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
@@ -62,6 +64,21 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J7CES1WTMHAPE1CKZTTKFGKK">
+  <a
+    href="https://support.discord.com/hc/articles/26166360563607"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Honkai: Star Rail - V2.5 Quest</a
+  >
+</h2>
+<p>
+  The <strong>V2.5 Quest</strong> can be accepted on Discord from
+  <strong>September 10, 2024 </strong>until<strong>
+    September 17, 2024 (11:59PM UTC</strong
+  >). Reward gift codes expire <strong>October 8, 2024 (00:00 UTC +8)</strong>.
+  Quest requirements must be completed during this period to receive the reward.
+</p>
 <h2 id="h_01J6G4D7V76YHX2F60YETE63JJ">
   <a
     href="https://support.discord.com/hc/articles/25946905644695"
@@ -94,21 +111,6 @@
     September 9, 2024 (11:59PM UTC)</strong
   >. Reward gift codes expire <strong>October 9, 2024 (4AM UTC)</strong>. Quest
   requirements must be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J6006XQ2BKXT4ADDBYR3XKCV">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/25757260267543"
-    target="_blank"
-    rel="noopener noreferrer"
-    >World of Warcraft - World of Warcraft: The War Within Quest</a
-  >
-</h2>
-<p>
-  The<strong> World of Warcraft: The War Within Quest</strong> can be accepted
-  on Discord from <strong>August 23, 2024 </strong>until<strong>
-    September 8, 2024 (11:59PM UTC)</strong
-  >. Quest requirements must be completed during this period to receive the
-  reward.
 </p>
 <h1 id="h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </h1>
 <h2 id="h_01J71F0RY3F0CF02065Y2P5ARZ">
@@ -158,22 +160,6 @@
   <strong>Los Santos Avatar Decoration</strong> needs to be redeemed by
   <strong>September 15, 2024. </strong>Quest requirements must be completed
   during this period to receive the reward. 
-</p>
-<h2 id="01J600SFT430BYDXR4VBW19JHZ">
-  <a
-    href="https://support.discord.com/hc/articles/24733159359895"
-    target="_blank"
-    rel="noopener noreferrer"
-    >VALORANT - Wingman Quest</a
-  >
-</h2>
-<p>
-  The <strong>Wingman Quest</strong> can be accepted on Discord from
-  <strong>July 26, 2024 </strong>until
-  <strong>August 8, 2024 (11:59PM UTC)</strong>. The
-  <strong>Wingman avatar decoration</strong> needs to be redeemed by
-  <strong>September 7, 2024</strong>. Quest requirements must be completed
-  during this period to receive the reward.
 </p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
 <p>
