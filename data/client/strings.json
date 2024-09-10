@@ -7922,6 +7922,8 @@
   "BILLING_INVOICE_TODAY_TOTAL": "\"**Today's Total**\"",
   "BILLING_INVOICE_TODAY_TOTAL_TAX_INCLUSIVE": "\"**Today's Total** (Tax Included)\"",
   "BILLING_INVOICE_TOTAL_TAX_INCLUSIVE": "\"**Total** (Tax Included)\"",
+  "BILLING_INVOICE_TODAY_TOTAL_TAX_EXEMPT": "\"**Today's Total** (Tax Exempt)\"",
+  "BILLING_INVOICE_TOTAL_TAX_EXEMPT": "\"**Total** (Tax Exempt)\"",
   "BILLING_PREMIUM_TIER_0_PLAN_ACTIVATED": "\"You can now use your favorite emoji anywhere, share bigger files, and more.\"",
   "BILLING_PREMIUM_TIER_1_PLAN_ACTIVATED": "\"You now have access to your favorite emoji that you can use anywhere, more ways to style your profile, and so much more! Enjoy friend.\"",
   "BILLING_PREMIUM_TIER_2_PLAN_ACTIVATED": "\"You now have access to your favorite emoji that you can use anywhere, more ways to style all your profiles across each of your servers, bigger uploads, and so much more! Enjoy friend.\"",
