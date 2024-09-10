@@ -1,0 +1,62 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7615895002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null
+    }
+  ],
+  "education": "education_optional",
+  "internal_job_id": 5994240002,
+  "location": {
+    "name": "San Francisco, CA or Remote"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": null,
+      "value_type": "single_select"
+    }
+  ],
+  "id": 7615895002,
+  "updated_at": "2024-09-09T20:30:20-04:00",
+  "requisition_id": "R-100653",
+  "title": "Engineering Manager, Audio & Video Infrastructure",
+  "content": "&lt;p&gt;Discord runs one of the largest real-time audio/video platforms in the world, and this role encompasses all the infrastructure required to make this happen at Discord&#39;s massive scale. Your work will directly impact Discord&#39;s core experience, contributing to what makes over 200 million monthly users love the platform.&lt;/p&gt;\n&lt;p&gt;The Audio/Video Infrastructure team oversees every voice call, video call, and Go Live session. You&#39;ll lead the team responsible for writing the software that routes all data and manages thousands of machines to create a seamless user experience. Your responsibilities will include tackling scalability challenges, managing the control plane and developing the new data plane in Rust.&lt;/p&gt;\n&lt;p&gt;If you&#39;re passionate about optimizing hardware through software to reduce costs while enhancing user quality, this team offers an exciting opportunity to do that at scale.&lt;/p&gt;\n&lt;h3&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead engineering execution within the AV Infrastructure team.&lt;/li&gt;\n&lt;li&gt;Transition our infrastructure from static scaling to auto-scaling based on demand.&lt;/li&gt;\n&lt;li&gt;Develop and implement the team&#39;s roadmap to enhance reliability and efficiency.&lt;/li&gt;\n&lt;li&gt;Spearhead the re-architecting of our infrastructure primitives, shifting from bare metal to cloud.&lt;/li&gt;\n&lt;li&gt;Ensure Discord &quot;just works&quot; by building and maintaining reliable, efficient infrastructure.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;You have 3+ years of experience as an Engineering Manager.&lt;/li&gt;\n&lt;li&gt;You&#39;ve worked with large-scale distributed systems serving tens or hundreds of millions of users.&lt;/li&gt;\n&lt;li&gt;You&#39;re a hands-on Engineering Manager who embraces technical complexity and understands the entire stack.&lt;/li&gt;\n&lt;li&gt;You have experience managing networked video infrastructure or real-time packet-based applications.&lt;/li&gt;\n&lt;li&gt;You&#39;ve worked with cloud environments (e.g., GCP, AWS).&lt;/li&gt;\n&lt;li&gt;You can effectively balance cost considerations against product quality.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;You have experience working with WebRTC.&lt;/li&gt;\n&lt;li&gt;You&#39;ve explored io_uring based approaches for problems before with your team.&lt;/li&gt;\n&lt;li&gt;You have experience with Rust or C++.&lt;/li&gt;\n&lt;li&gt;You&#39;ve used Discord personally. If you&#39;ve played games and used Go Live with friends, you understand the product&#39;s capabilities.&lt;/li&gt;\n&lt;li&gt;You&#39;re familiar with DevOps tools such as Salt or Terraform.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $223,000 to $245,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. &lt;strong&gt;Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4074059002,
+      "name": "Core Tech Engineering",
+      "child_ids": [
+        4074060002
+      ],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    },
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
