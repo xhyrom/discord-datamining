@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_whats_new_cards_v2_experiment",
+    "label": "Whats new bento boxes",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Users see current whats new cards",
+      "Treatment 1: users see bento box whats new design "
+    ],
+    "hash": 728629547,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

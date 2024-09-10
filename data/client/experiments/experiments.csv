@@ -625,6 +625,7 @@ id,hash,label
 2024-05_simplified_profile_friending,1094016555,Simplified Profile Friending Experiment
 2024-05_throughline_care,2558990028,Throughline Care Experiment
 2024-05_tunein_minishelf_banner,2247494581,Actvity TuneIn Mini-Shelf Banner
+2024-05_whats_new_cards_v2_experiment,728629547,Whats new bento boxes
 2024-06_activity_bopz_io_mini_shelf_banner,425618690,Actvity BOPZ.io Mini-Shelf Banner
 2024-06_activity_rythm_mini_shelf_banner,3756576463,Activity Rythm Mini-Shelf Banner
 2024-06_amazon_music_activity_shelf_banner,1336832856,Amazon Music Activity Shelf Promo Banner
@@ -766,6 +767,7 @@ id,hash,label
 2024-08_user_app_subscription_redesign,757311854,User App Subscription Redesign
 2024-08_user_profile_blockee_hide_mutuals,1502922057,User Profile Blockee Hide Mutuals
 2024-08_user_profile_blocker_skeleton,2213424224,User Profile Blocker Skeleton
+2024-09_browse_channel_visible,1053452216,Don't show guild Browse Channels when all channels are already visible
 2024-09_dm_mute_feedback,3721779707,DM Mute Feedback Experiment
 2024-09_open_platform_link_sharing_mobile,1206887120,Open Platform Link Sharing Mobile
 2024-09_sky_load,2717647907,Sky Load
