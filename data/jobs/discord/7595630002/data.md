@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7595630002](https://discord.com/jobs/7595630002)
 
-**Updated At:** Thu, 05 Sep 2024 16:21:06 GMT
+**Updated At:** Tue, 10 Sep 2024 21:32:13 GMT
 
 **Job Description:**
 Discord is on the lookout for a seasoned Senior Sales Recruiter to join our Business Recruiting team. Reporting to the Business Recruiting Manager, this individual will play a crucial role in building and scaling our sales organization, with a focus on consumer digital media and ad sales.
