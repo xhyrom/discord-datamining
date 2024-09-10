@@ -17076,8 +17076,6 @@
   "FOR_LATER_EMPTY_BOOKMARKS_TITLE": "\"You have no Saved Messages!\"",
   "FOR_LATER_EMPTY_REMINDERS_TITLE": "\"You have no Reminders!\"",
   "FOR_LATER_EMPTY_ALL_BODY_WEB": "\"Easily keep track of important messages. Just right-click on any message to get started. Your saved messages and reminders will appear here for easy access.\"",
-  "FOR_LATER_EMPTY_BOOKMARKS_BODY_WEB": "\"Right click on any message to save it and have it appear here!\"",
-  "FOR_LATER_EMPTY_REMINDERS_BODY_WEB": "\"Right click on any message to set a reminder and have it appear here!\"",
   "FOR_LATER_EMPTY_ALL_BODY_NATIVE": "\"Easily keep track of important messages. Just long press on any message to get started. Your saved messages and reminders will appear here for easy access.\"",
   "FOR_LATER_EMPTY_BOOKMARKS_BODY_NATIVE": "\"Long press on any message to save it and have it appear here!\"",
   "FOR_LATER_EMPTY_REMINDERS_BODY_NATIVE": "\"Long press on any message to set a reminder and have it appear here!\"",
