@@ -8754,6 +8754,7 @@
   "USER_ACTIVITY_PLAYING": "\"Playing\"",
   "USER_ACTIVITY_WATCHING": "\"Watching\"",
   "USER_ACTIVITY_LISTENING_TO": "\"Listening to\"",
+  "USER_ACTIVITY_COMPETING_IN": "\"Competing in\"",
   "USER_ACTIVITY_IN_A_CALL": "\"In a Call\"",
   "USER_ACTIVITY_STREAMING": "\"Streaming\"",
   "USER_ACTIVITY_CURRENTLY": "\"Currently\"",
