@@ -496,7 +496,7 @@
 <p>
   If a code has not been redeemed by
   <strong>September 16, 2024 (11:59PM PST)</strong>, it will expire and will no
-  longer be able to claim three months of Xbox Game Pass for PC.
+  longer be able to claim 1 month of Xbox Game Pass for PC.
 </p>
 <h2 id="h_01HE3W5FZ43GBV90J18HG7C4CP">
   <strong>Eligibility for Promotion</strong>
@@ -553,8 +553,8 @@
 <p>
   <strong>A:</strong> If you were previously subscribed or currently subscribed
   to Xbox Game Pass for PC, or currently have an Xbox Game Pass Ultimate
-  subscription, you will not be able to redeem the three month trial for Xbox
-  Game Pass for PC!
+  subscription, you will not be able to redeem the 1 month trial for Xbox Game
+  Pass for PC!
 </p>
 <p>However, this code can be gifted to a friend!</p>
 <p>
@@ -698,8 +698,8 @@
 <p>
   <strong>A:</strong> If you were previously subscribed or currently subscribed
   to Xbox Game Pass for PC, or currently have an Xbox Game Pass Ultimate
-  subscription, you will not be able to redeem the three month trial for Xbox
-  Game Pass for PC!
+  subscription, you will not be able to redeem the 1 month trial for Xbox Game
+  Pass for PC!
 </p>
 <p>However, this code can be gifted to a friend!</p>
 <p>
