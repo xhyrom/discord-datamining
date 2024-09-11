@@ -5933,6 +5933,7 @@
           (rn.PERMISSION_OVERRIDES = "PERMISSION_OVERRIDES"),
           (rn.CHANGE_CATEGORY = "CHANGE_CATEGORY"),
           (rn.WEBHOOKS = "WEBHOOKS"),
+          (rn.EDIT_CHANNEL_SYNCING = "EDIT_CHANNEL_SYNCING"),
           (rn.CHANNELS_FOLLOWED = "CHANNELS_FOLLOWED"),
           (rn.EDIT_WEBHOOK = "EDIT_WEBHOOK"),
           (rn.CHANGE_RTC_REGION = "CHANGE_RTC_REGION"),
@@ -7049,6 +7050,8 @@
             CHANNEL_THREADS: (e) => "/channels/".concat(e, "/threads"),
             CHANNEL_MESSAGE_THREADS: (e, t) =>
               "/channels/".concat(e, "/messages/").concat(t, "/threads"),
+            CHANNEL_LINKED_LOBBY: (e) =>
+              "/channels/".concat(e, "/linked-lobby"),
             APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS: (e, t, r) =>
               "/applications/"
                 .concat(e, "/guilds/")
@@ -12385,7 +12388,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8c37911375cd4b5e254c3c4c3175062721010d08",
+            release: "discord_web-41ba4d7ff5fca799de0574c2c445f967ff50aa4d",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12454,8 +12457,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "326219"), "326219"));
-          i.YA("builtAt", String("1726073495411"));
+            i.YA("buildNumber", ((e = "326243"), "326243"));
+          i.YA("builtAt", String("1726075026620"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48451,4 +48454,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.fd2246ee9d467c508f8c.js.map
+//# sourceMappingURL=sentry.3e39dcbb438246af0bda.js.map
