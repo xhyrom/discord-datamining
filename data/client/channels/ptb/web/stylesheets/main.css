@@ -22074,6 +22074,9 @@ img.thumbnail_c64476 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
+.viewFullBioDisabled_abaf7d {
+  opacity: 0.5;
+}
 .descriptionClamp_abaf7d {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -44201,4 +44204,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.86b085ccb4f453ae12d1.css.map*/
+/*# sourceMappingURL=12633.fad3505877c3be096b20.css.map*/
