@@ -3382,7 +3382,10 @@
   },
   "CHANNEL_LINKED_LOBBY": {
     "url": "/channels/:param/linked-lobby",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS": {
     "url": "/applications/:param/guilds/:param/commands/:param/permissions",
