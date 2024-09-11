@@ -1,12 +1,27 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2024-08_reaction_push_notifications_guild",
+    "label": "In App Notifications for Reactions (Guild)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable In App Notifications for Reactions"
+    ],
     "hash": 3810214821,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [

@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_reaction_push_notifications_user",
+    "label": "In App Notifications for Reactions",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable In App Notifications for Reactions (First Reaction)",
+      "Treatment 2: Enable In App Notifications for Reactions (All Reactions)"
+    ],
+    "hash": 939840210,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enableInAppNotifications",
+      "enableNotificationsForAllReactions"
+    ]
+  }
+}

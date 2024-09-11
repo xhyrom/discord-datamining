@@ -2,22 +2,25 @@
   "data": {
     "kind": "user",
     "id": "2024-06_message_bookmarks",
-    "label": "Message Bookmarks",
+    "label": "For Later - Bookmarks & Reminders",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable message bookmarks"
+      "Treatment 1: Display in inbox",
+      "Treatment 2: Display in header bar"
     ],
     "hash": 3155441480,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "enabled",
+      "inInbox"
     ]
   }
 }
