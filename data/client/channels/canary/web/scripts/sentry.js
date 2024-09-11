@@ -6892,7 +6892,6 @@
               "/users/@me/billing/localized-pricing-promo",
             VERIFY_PURCHASE: "/google-play/verify-purchase-token",
             DOWNGRADE_SUBSCRIPTION: "/google-play/downgrade-subscription",
-            EMIT_GOOGLE_PLAY_METRICS: "/google-play/emit-google-play-metrics",
             GOOGLE_PLAY_VALIDATE_PURCHASE: "/google-play/validate-purchase",
             USER_AGREEMENTS: "/users/@me/agreements",
             USER_ACHIEVEMENTS: (e) =>
@@ -12184,7 +12183,7 @@
           (z.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
           (z.SHOP = "shop"),
           (z.AUTHORIZED_APPS = "authorized-apps"),
-          (z.SECURE_FRAMES_VERIFICATION = "secure-frames-verification"),
+          (z.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
           (z.ICYMI = "icymi");
         let e_ = "CacheStoreLazy",
           eE = "CacheStoreChannelsLazy",
@@ -12388,7 +12387,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-45f43bc534b2fb698ef074eb2b557953872fbc5c",
+            release: "discord_web-1b0b077381faf9aecfa3e02c433c3d64bd27e4c9",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12457,8 +12456,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "326263"), "326263"));
-          i.YA("builtAt", String("1726077121967"));
+            i.YA("buildNumber", ((e = "326282"), "326282"));
+          i.YA("builtAt", String("1726078294351"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48454,4 +48453,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.90aa87d34aa22880b0bf.js.map
+//# sourceMappingURL=sentry.d5652361085d0aef843a.js.map
