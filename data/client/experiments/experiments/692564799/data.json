@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_quests_trophy_case",
+    "label": "Trophy Case",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 692564799,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
