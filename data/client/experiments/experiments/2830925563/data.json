@@ -26,104 +26,12 @@
       6,
       7
     ],
-    "holdout": {
-      "name": null,
-      "bucket": null
-    },
+    "holdout": {},
     "aa_mode": false,
     "config_keys": [
       "muteBeforeProcessing",
       "pttBeforeProcessing",
       "skipEncode"
-    ]
-  },
-  "rollout": {
-    "populations": [
-      {
-        "buckets": {
-          "none": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": []
-      },
-      {
-        "buckets": {
-          "none": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": []
-      },
-      {
-        "buckets": {
-          "none": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": []
-      }
-    ],
-    "revision": 3,
-    "overrides": {},
-    "overrides_formatted": [
-      {
-        "buckets": {
-          "0": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": [
-          {
-            "type": "guild_ids",
-            "ids": [
-              "949021181976125540"
-            ]
-          }
-        ]
-      },
-      {
-        "buckets": {
-          "7": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": [
-          {
-            "type": "guild_ids",
-            "ids": [
-              "281683040739262465",
-              "520070086158057513",
-              "822219052402606132"
-            ]
-          }
-        ]
-      }
     ]
   }
 }
