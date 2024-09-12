@@ -15952,6 +15952,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   transform: rotate(270deg);
 }
 .otherEmojisContainer_e58351 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 4px;
 }
 .otherEmoji_e58351 {
@@ -17066,6 +17069,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   box-shadow: var(--shadow-low);
   transform: translatey(-2px) scale(0.99);
 }
+.clickableCard_e0fe28:active .card_e0fe28:has(.favoriteButton_e0fe28:hover) {
+  box-shadow: var(--shadow-high);
+  transform: translatey(-2px);
+}
 .card_e0fe28 {
   min-width: 240px;
   max-width: 500px;
@@ -17289,6 +17296,34 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .selectedTrait_e0fe28:hover,
 .selectedTrait_e0fe28:active {
   border-color: var(--border-strong);
+}
+.full-motion .animateButtonIn_e0fe28 {
+  animation: pulseIn_e0fe28.3s;
+}
+.full-motion .animateButtonOut_e0fe28 {
+  animation: pulseOut_e0fe28.2s;
+}
+@keyframes pulseIn_e0fe28 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes pulseOut_e0fe28 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .customButton_ff01f0 {
   background-color: var(--custom-clan-bg);
@@ -44151,4 +44186,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.7c3c3039dd8aaf460871.css.map*/
+/*# sourceMappingURL=12633.4fdcdc34db513c99be79.css.map*/
