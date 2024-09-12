@@ -6,15 +6,13 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable upsells for outbound promos w/ Nagbar variant 1 - gift inventory cta (population 1)",
-      "Treatment 2: Enable upsells for outbound promos w/ Nagbar variant 2 - gift inventory cta (population 2)"
+      "Treatment 1: Enable upsells for outbound promos w/ Nagbar variant 1 - gift inventory cta"
     ],
     "hash": 2302949395,
     "buckets": [
       -1,
       0,
-      1,
-      2
+      1
     ],
     "holdout": {},
     "aa_mode": false,

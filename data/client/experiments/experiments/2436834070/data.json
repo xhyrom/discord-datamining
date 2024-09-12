@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-03_april_fools",
-    "label": "April Fools 2023",
+    "id": "2024-09_fewer_speaking_messages",
+    "label": "Reduce speaking messages",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: April Fools 2023"
+      "Treatment 1: Match the broadcast logic that the server will apply"
     ],
-    "hash": 3971730794,
+    "hash": 2436834070,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "allowAprilFoolsSoundpack"
+      "matchVoiceServerSpeakingLogic"
     ]
   }
 }
