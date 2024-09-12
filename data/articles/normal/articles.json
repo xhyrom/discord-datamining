@@ -78,18 +78,18 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
-      "01J3JYCR3Z73XX09WS43GTCMQQ",
-      "01J3NCWMGR03XN71256WH95176",
       "01J3NCX0E8NEMNGZ00T9DNHE81",
+      "01J3JYCR3Z73XX09WS43GTCMQQ",
+      "01J7CE55QW8Z8XK1F98H935FCD",
+      "01J7CE5AWRJ47E4TQ2NBJ4T6WE",
+      "01J3NCWMGR03XN71256WH95176",
+      "01J7CE5RCFBB6VXEBY88HAD00V",
+      "01J7CE5T8HBHVGJDVNDY4KJ3R4",
+      "01J6AH9EHR65KJ9EGJJZVHNNG2",
       "01J3NCXCYM0GYACCHRDKF30GTG",
       "01J5BC7GZZ0M88AHWSEPZDB1EB",
       "01J5C5D8TJ6MTK2BNW40MXV92D",
-      "01J6AH9EHR65KJ9EGJJZVHNNG2",
       "01J6AMF0DM2V1MQMGJY4QH9TW2",
-      "01J7CE55QW8Z8XK1F98H935FCD",
-      "01J7CE5AWRJ47E4TQ2NBJ4T6WE",
-      "01J7CE5RCFBB6VXEBY88HAD00V",
-      "01J7CE5T8HBHVGJDVNDY4KJ3R4",
       "01J7CE6N8HPVG8YK87JDKNE6A3"
     ],
     "label_names": [
@@ -123,15 +123,15 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
+      "01J3NCX0E8NEMNGZ00T9DNHE81",
       "01J3JYCR3Z73XX09WS43GTCMQQ",
       "01J3NCWMGR03XN71256WH95176",
-      "01J3NCX0E8NEMNGZ00T9DNHE81",
-      "01J3NCXCYM0GYACCHRDKF30GTG",
-      "01J3NCXYNB7QWESS1Q3K5K0M4H",
-      "01J5C5D8TJ6MTK2BNW40MXV92D",
-      "01J6AH9EHR65KJ9EGJJZVHNNG2",
       "01J6WTMNVE5N5FZD9RX5A1K4YW",
       "01J6WTMRJ6NXDZ6QVCKJWVA2JH",
+      "01J3NCXYNB7QWESS1Q3K5K0M4H",
+      "01J6AH9EHR65KJ9EGJJZVHNNG2",
+      "01J3NCXCYM0GYACCHRDKF30GTG",
+      "01J5C5D8TJ6MTK2BNW40MXV92D",
       "01J6WTNMR4CCDQG86KFAYG18R7",
       "01J6WTNT6TT15AYC6WSWWXG2G3",
       "01J6WTNWHWXP82KJCDY038HAZJ",
@@ -175,14 +175,14 @@
     "permission_group_id": 1720972,
     "content_tag_ids": [
       "01J3JYCR3Z73XX09WS43GTCMQQ",
-      "01J3NCWMGR03XN71256WH95176",
       "01J3NCX0E8NEMNGZ00T9DNHE81",
       "01J3NCXCYM0GYACCHRDKF30GTG",
-      "01J3NCXYNB7QWESS1Q3K5K0M4H",
       "01J5BC7GZZ0M88AHWSEPZDB1EB",
       "01J5C5D8TJ6MTK2BNW40MXV92D",
       "01J6AH9EHR65KJ9EGJJZVHNNG2",
-      "01J6AH9SEDE8MV8RNWH4AZXZQH"
+      "01J3NCWMGR03XN71256WH95176",
+      "01J6AH9SEDE8MV8RNWH4AZXZQH",
+      "01J3NCXYNB7QWESS1Q3K5K0M4H"
     ],
     "label_names": [
       "answer-bot",
@@ -220,14 +220,14 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
+      "01J67RWC0C1Y6X0NE2311AS1CT",
       "01J3JYCR3Z73XX09WS43GTCMQQ",
-      "01J3NCWMGR03XN71256WH95176",
       "01J3NCX0E8NEMNGZ00T9DNHE81",
+      "01J3NCWMGR03XN71256WH95176",
       "01J3NCXCYM0GYACCHRDKF30GTG",
       "01J3NCXYNB7QWESS1Q3K5K0M4H",
       "01J5BC7GZZ0M88AHWSEPZDB1EB",
-      "01J5C5D8TJ6MTK2BNW40MXV92D",
-      "01J67RWC0C1Y6X0NE2311AS1CT"
+      "01J5C5D8TJ6MTK2BNW40MXV92D"
     ],
     "label_names": [
       "Discord",
@@ -262,10 +262,10 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
+      "01J60578767KETBW0PRNM9NRF5",
       "01HDHA2BW70RHGC8RMMC1F8X43",
       "01J3EFHYK55B9YP4AZ11SPJGXP",
-      "01J3EFJ1G72RFYRV6X1XSH2FXQ",
-      "01J60578767KETBW0PRNM9NRF5"
+      "01J3EFJ1G72RFYRV6X1XSH2FXQ"
     ],
     "label_names": [],
     "body": "<p>Starting from <strong>August 26, 2024 (4PM PST)</strong> to <strong>September 22, 2024 (11:59PM PST)</strong>, WEBTOON members can claim 3 months of Discord Nitro. Learn below about how you can claim<a href=\"https://support.discord.com/hc/en-us/articles/115000435108\" target=\"_blank\" rel=\"noopener noreferrer\"> Discord Nitro</a>.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/25863696487703\" width=\"624\" height=\"624\"></p>\n<p><strong>Promotion Summary</strong></p>\n<p><strong>Offer Details:</strong> 3 months of Discord Nitro</p>\n<p><strong>Who is Eligible: </strong>Users who have had an active Nitro membership or Nitro trial in the last 12 months are not eligible to redeem this Nitro promotion.</p>\n<p>Users who have had a Discord Nitro membership at any point on their accounts and have had a Nitro Classic or Nitro Basic membership in the past 12 months are ineligible to redeem this promotion.</p>\n<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership active on their account and they’ve never had a Nitro membership, redeeming this promotion will override that membership.</p>\n<p>We will not be able to refund any leftover membership time from those, and the user will be forfeiting the remainder of the existing membership when activating the 3 months Nitro trial.</p>\n<p>Users who have already claimed a gift from this promotion are not eligible to claim further gifts from this promotion.</p>\n<p><strong>Requirements:</strong> Claim through WEBTOON by <strong>September 22, 2024 (11:59PM PST)</strong>, and redeem in your Discord account by <strong>October 21, 2024 (11:59PM PST)</strong>.</p>\n<p><strong>Membership:</strong> After the 3 months trial period, your Nitro membership will convert to a monthly recurring membership, and Discord will bill your payment method per month until you cancel it. You can cancel at any time in your Discord <strong>User Settings</strong>. </p>\n<p><span class=\"wysiwyg-font-size-large\">What this article covers: </span></p>\n<ul>\n<li><a href=\"#h_01J604ZZAF2Y0HGDC5AGBGTT1X\">What is Discord Nitro?</a></li>\n<li><a href=\"#h_01J604ZZAF0JDQ0CDPAS1M2T3H\">What is WEBTOON?</a></li>\n<li><a href=\"#h_01J604ZZAFPCFZMZAHM4P3TFQN\">How do I claim the Nitro Promo from my WEBTOON account?  </a></li>\n<li>\n<a href=\"#h_01J604ZZAF1SQJRJB7RGYZC0T8\">How do I redeem the Nitro Trial on my Discord Account?</a> \n<ul>\n<li><a href=\"#h_01J604ZZAFQR7S09QAEQNMGT89\">Eligibility for Redeeming the Nitro Trial</a></li>\n<li>\n<a href=\"#h_01J604ZZAFQ8K740D53107WFQR\">Step by Step Redeem Instructions</a>\n<ul>\n<li>What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Member? </li>\n</ul>\n</li>\n</ul>\n</li>\n<li><a href=\"#h_01J604ZZAFPFZTTAWCNB0KEZPP\">How do I share my Code with a Friend?</a></li>\n<li>\n<a href=\"#h_01J604ZZAFQWDNVVY1SX7FQGA2\">Frequently Asked Questions</a>\n<ul>\n<li><a href=\"#h_01J604ZZAFZHGA96VEKARNTET3\">Promotion Details</a></li>\n<li><a href=\"#h_01J604ZZAF8JEEP3TFBMFNRKQC\">Eligibility for the Promotion</a></li>\n<li><a href=\"#h_01J604ZZAF2QZ8R6MG1T5BJN5N\">Payment Info and Membership Questions</a></li>\n<li><a href=\"#h_01J604ZZAFES4XYS9NAKHT8QH8\">Potential Errors and Other Issues</a></li>\n</ul>\n</li>\n</ul>\n<h1 id=\"h_01J604ZZAF2Y0HGDC5AGBGTT1X\">What is Discord Nitro?</h1>\n<p>Discord Nitro is our membership plan that gives you access to special perks that’ll make your time on Discord as fun as ever! Personalize and enhance your experience with popular perks like HD streaming, 500MB file uploads, profile and avatar customizations, 2 free Server Boosts, and more:</p>\n<ul>\n<li><a href=\"https://support.discord.com/hc/articles/360036479811\" target=\"_blank\" rel=\"noopener noreferrer\">Custom Emojis</a></li>\n<li><a href=\"https://support.discord.com/hc/articles/207260127\" target=\"_blank\" rel=\"noopener noreferrer\">Discord App Color Themes</a></li>\n<li><a href=\"https://support.discord.com/hc/articles/12102061808663\" target=\"_blank\" rel=\"noopener noreferrer\">Super Reactions</a></li>\n<li><a href=\"https://support.discord.com/hc/articles/13410113109911\" target=\"_blank\" rel=\"noopener noreferrer\">Avatar Decorations</a></li>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/4409388345495\" target=\"_blank\" rel=\"noopener noreferrer\">Unique Server Profiles</a></li>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-\" target=\"_blank\" rel=\"noopener noreferrer\">Server Boosts</a></li>\n<li><a href=\"https://support.discord.com/hc/articles/115000435108\" target=\"_blank\" rel=\"noopener noreferrer\">More Nitro &amp; Nitro Basic perks</a></li>\n</ul>\n<h1 id=\"h_01J604ZZAF0JDQ0CDPAS1M2T3H\">What is WEBTOON?</h1>\n<p>WEBTOON is a global storytelling platform where a vibrant global community of creators and users discover, create and share incredible stories. We pioneered the webcomic format, inspiring a new generation of creators and a cultural movement in visual storytelling. Home to some of the biggest creators, titles, and fandoms in webcomics, WEBTOON empowers anyone to share their story, build a global audience, and make money.</p>\n<h1 id=\"h_01J604ZZAFPCFZMZAHM4P3TFQN\">How do I claim the Nitro Promo from my WEBTOON account?</h1>\n<h3 id=\"h_01J604ZZAFHN9KEKW0WY8WQ2K2\">\n<span style=\"color: #434343;\" data-darkreader-inline-color=\"\">For more information, you can also follow these steps outlined </span><a href=\"https://www.webtoons.com/en/notice/detail?noticeNo=3289\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\" data-darkreader-inline-color=\"\">here</span></a><span style=\"color: #434343;\" data-darkreader-inline-color=\"\">.</span>\n</h3>\n<p>1. Sign up or log into your WEBTOON’s account through the mobile app.</p>\n<p>2. Head to the <strong>Coin Shop</strong> by tapping on <strong>More</strong> in the bottom-right corner and then tap on <strong>Buy Coins.</strong></p>\n<p class=\"wysiwyg-text-align-center\"><strong><img src=\"https://support.discord.com/hc/article_attachments/25863687937431\" width=\"331\" height=\"653\"></strong></p>\n<p>3. Subscribe to <strong>WEBTOON’s Monthly Coin Premium</strong>.</p>\n<p>4. Tap on the event banner on the WEBTOON homepage.</p>\n<p>5. Input your email and then you should receive the promo code. </p>\n<h1 id=\"h_01J604ZZAF1SQJRJB7RGYZC0T8\">How do I redeem the Nitro Trial on my Discord Account?</h1>\n<p>Once you have claimed the promo, you'll now need to officially redeem this promo on your Discord account. You must redeem this Nitro trial by <strong>October 21, 2024 (11:59PM PST)</strong>.</p>\n<h2 id=\"h_01J604ZZAFQR7S09QAEQNMGT89\">Eligibility for Redeeming the Nitro Trial</h2>\n<h3 id=\"h_01J604ZZAF8M1A3A7VZW8XRGEG\">\n<strong>This promotion is only available in certain regions. If you receive an \"Unknown Gift Code\" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this</strong><a href=\"https://support.discord.com/hc/en-us/articles/4708041338391\" target=\"_blank\" rel=\"noopener noreferrer\"> Help Center article.</a>\n</h3>\n<p>Users who have had an active Nitro membership or Nitro trial in the last 12 months are not eligible to redeem this Nitro promotion.</p>\n<p>Users who have had a Discord Nitro membership at any point on their accounts and have had a Nitro Classic or Nitro Basic membership in the past 12 months are ineligible to redeem this promotion.</p>\n<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership active on their account and they’ve never had a Nitro membership, redeeming this promotion will override that membership.</p>\n<p>Users who have already claimed a gift from this promotion are not eligible to claim further gifts from this promotion.</p>\n<h2 id=\"h_01J604ZZAFQ8K740D53107WFQR\">Step by Step Redeem Instructions</h2>\n<p>If you're eligible and ready to redeem this Nitro membership on your own Discord account, you can follow these steps below to redeem the promo.</p>\n<h3 id=\"h_01J604ZZAFT6HXCCJKVDJ8HF0B\">\n<strong>NOTE:</strong><strong><br></strong><strong>- Before redeeming Nitro, make sure you are logged in your own Discord account.</strong><strong><br></strong><strong>- If you accidentally redeemed the Nitro promo on an account that is not yours, we are unable to provide you with another promo.</strong>\n</h3>\n<p><strong>Step 1 - Pressing the Promo Link/Copying and Pasting into your Browser Window</strong></p>\n<ul>\n<li>Start by directly pressing the promotion link or copying and pasting the promotion link into your browser window.</li>\n</ul>\n<p><strong>Note:</strong> If you're redeeming this Nitro promo link in the Discord Gift Inventory, enter only your unique 24-digit code from the Nitro promotion link in the following format: XXXX-XXXX-XXXX-XXXX-XXXX-XXXX</p>\n<p><strong>Step 2 - Logging into Discord</strong></p>\n<ul>\n<li> If you're not already logged into Discord in your browser, you will then be automatically redirected to either:</li>\n</ul>\n<div>\n<table style=\"width: 100%;\">\n<colgroup>\n<col>\n<col>\n</colgroup>\n<tbody>\n<tr>\n<td>\n<p><strong>Register for a New Account</strong></p>\n<p>If you don't have an account, you can directly register a new Discord account</p>\n</td>\n<td>\n<p><strong>Login to your Account</strong></p>\n<p>If you already have a Discord account, you can login to your account using your email and password or using QR code login</p>\n</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\"><img src=\"https://support.discord.com/hc/article_attachments/25863696493335\" width=\"244\" height=\"283\"></td>\n<td style=\"text-align: center;\"><img src=\"https://support.discord.com/hc/article_attachments/25863687950871\" width=\"352\" height=\"195\"></td>\n</tr>\n</tbody>\n</table>\n</div>\n<p><strong>Step 3 - Confirming the Correct Account and Payment Method</strong></p>\n<ul>\n<li>Once you have logged into your Discord account, you'll see a new message asking you to confirm that you are accepting the Nitro subscription on the correct Discord account.\n<ul>\n<li>You'll see a notice saying: <strong><em>\"You are accepting this gift as _________\" </em></strong>\n</li>\n</ul>\n</li>\n<li>If your Discord account does not have your payment information, you'll be asked to fill out your payment details. (Note: You will not be charged until the free trial ends and the subscription renews)</li>\n<li>When you've filled out all the necessary information and you're ready to redeem this promotion, press the \"<strong>Accept Gift</strong>\" button. </li>\n</ul>\n<h3 id=\"h_01J604ZZAFJ129Q97X9YZ04GW0\"><span style=\"color: #434343;\" data-darkreader-inline-color=\"\">Note:</span></h3>\n<h3 id=\"h_01J604ZZAFBK1KRZ9N3Z7PPWAA\"><span style=\"color: #434343;\" data-darkreader-inline-color=\"\">- If you're logged into the incorrect Discord account, press the \"Wrong account\" button to login to the other account.</span></h3>\n<p><strong>Step 4 - Membership Now Activated</strong></p>\n<p>After accepting the promo to your account, you'll now be automatically redirected to your <strong>Subscriptions</strong> tab in your User Settings to see your newly activated Nitro membership on your account.</p>\n<h2 id=\"h_01J604ZZAFEBB58ZGTQNZD529A\">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Member? </h2>\n<p>Just to clarify - if you have had a Discord Nitro membership at any point on your account and have had a Nitro Classic or Nitro Basic membership in the past 12 months, you are ineligible to redeem this promotion.</p>\n<p>So long as you have had a Nitro Basic, Nitro Classic, or Server Boosting membership active on your account and you’ve never had a Nitro membership, you will be able to redeem this promotion and replace it with the 3 months Nitro membership.</p>\n<h3 id=\"h_01J604ZZAFF1WNHVBXCPWX7N5W\"><strong>HOWEVER, please note: By choosing to activate this 3 months trial, you will lose any features associated with your current memberships, and **you will not receive a refund for any remaining value on your current membership**.</strong></h3>\n<p>At the end of the promotion period, you'll be converted to a paying Nitro membership per month unless you cancel your membership.</p>\n<h1 id=\"h_01J604ZZAFPFZTTAWCNB0KEZPP\">How do I share my Code with a Friend?</h1>\n<p>If you're unable to redeem the Nitro subscription link, you can share this link with a friend to use instead.</p>\n<p>After you press on and open the promotion link, you can directly copy the promotion URL link in the new page and send it to a friend. <strong>We recommend sending the link in a private direct message. Make sure your friend redeems the code by October 21, 2024 (11:59PM PST).</strong></p>\n<h1 id=\"h_01J604ZZAFQWDNVVY1SX7FQGA2\">Frequently Asked Questions</h1>\n<p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>\n<ul>\n<li><a href=\"#h_01J604ZZAFZHGA96VEKARNTET3\">Promotion Details</a></li>\n<li><a href=\"#h_01J604ZZAF8JEEP3TFBMFNRKQC\">Eligibility for the Promotion</a></li>\n<li><a href=\"#h_01J604ZZAF2QZ8R6MG1T5BJN5N\">Payment Info and Membership Questions</a></li>\n<li>\n<a href=\"#h_01J604ZZAFES4XYS9NAKHT8QH8\">Potential Errors and Other Issues</a>\n<ul>\n<li>Already Had/Have Nitro</li>\n<li>Already Redeemed</li>\n<li>Something's Wrong Here</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"h_01J604ZZAFZHGA96VEKARNTET3\">Promotion Details</h2>\n<p><strong>Q: How long does this promotion run for?</strong></p>\n<p><strong>A:</strong> WEBTOON members can claim Discord Nitro promo between <strong>August 26, 2024 (4PM PST)</strong> to <strong>September 22, 2024 (11:59PM PST).</strong></p>\n<p>After <strong>September 22, 2024 (11:59PM PST)</strong>, WEBTOON users will no longer be able to claim a trial promo.</p>\n<p><strong>Q: How long does the Discord Nitro promotion last for?</strong></p>\n<p><strong>A:</strong> You must redeem the Nitro promotion by <strong>October 21, 2024 (11:59PM PST)</strong>.</p>\n<p>If a code has not been redeemed to the Discord account by <strong>October 21, 2024 (11:59PM PST)</strong>, it will expire and you will no longer be able to have 3 of Discord Nitro.</p>\n<h2 id=\"h_01J604ZZAF8JEEP3TFBMFNRKQC\">Eligibility for the Promotion</h2>\n<p><strong>Q: Who can claim this promotion from their WEBTOON account?</strong></p>\n<p><strong>A: </strong>In order to claim the 3 month Nitro, you need to be subscribed to WEBTOON's Monthly plan.</p>\n<p><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></p>\n<p><strong>A: </strong>Users who have never had an active Nitro membership on their Discord accounts are eligible to redeem this Nitro promotion.</p>\n<p>Additionally, users who previously had a Discord Nitro membership and have had a Nitro Classic or Nitro Basic membership in the past 12 months are ineligible.</p>\n<p>This promotion is only available in certain regions. If you receive an \"Unknown Gift Code\" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href=\"https://support.discord.com/hc/en-us/articles/4708041338391\" target=\"_blank\" rel=\"noopener noreferrer\"> Help Center article.</a></p>\n<p><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or a Server Boost membership? Can I also take part in this promotion? </strong></p>\n<p><strong>A: </strong>If you previously had a Discord Nitro membership at any point on your accounts and have had a Nitro Classic or Nitro Basic membership in the past 12 months, you are ineligible to redeem this promotion.</p>\n<p>If you have had a Nitro Basic, Nitro Classic, or Server Boosting membership active on your account and you’ve never had a Nitro membership,  you will be able to redeem this promotion and replace it with the 3 months Nitro membership.</p>\n<h3 id=\"h_01J604ZZAF5026RHTY1F8CHWNJ\"><strong>HOWEVER, please note: By choosing to activate this 3 months trial, you will lose any features associated with your current memberships, and **you will not receive a refund for any remaining value on your current membership**.</strong></h3>\n<p>At the end of the promotion period, you'll be converted to a paying Nitro membership per month unless you cancel your membership.</p>\n<h2 id=\"h_01J604ZZAF2QZ8R6MG1T5BJN5N\">Payment Info and Membership Questions</h2>\n<p><strong>Q: Why do I need to submit my payment info to redeem Nitro?</strong></p>\n<p><strong>A:</strong> Because Nitro is a membership plan, at the end of your 3 month trial, we will start your first billing cycle so you can continue to enjoy Nitro on Discord.</p>\n<p>However, you can cancel the Nitro membership at any time before the end of the 3 months.</p>\n<p><strong>Q: Why do I see a temporary hold/charge on my account when this is supposed to be a free promotion?</strong></p>\n<p><strong>A:</strong> Just to clarify, this Nitro promotion is free, however, there will be a <strong>temporary hold</strong> placed on the payment method upon activating the promotion. This is to help Discord confirm the payment method works as expected and to prevent the use of fraudulent payment methods. This charge will appear in your Discord transaction history, and it may appear as a hold on your payment method.</p>\n<p>We immediately reverse the temporary hold, and you’ll see that reflected in your Discord transaction history. Your bank may take longer to remove the hold from your payment method.</p>\n<h3 id=\"h_01J604ZZAFY2ZAWS7CNP2K04V8\"><strong>Note: Banks will usually remove the temporary hold from your account within a few business days.</strong></h3>\n<p>If your Discord transaction history does not show the hold released after 5 business days, please let us know at<a href=\"https://dis.gd/contact\" target=\"_blank\" rel=\"noopener noreferrer\"> https://dis.gd/contact</a>, and our support team will be able to investigate this issue further.</p>\n<h2 id=\"h_01J604ZZAFES4XYS9NAKHT8QH8\">Potential Errors and Other Issues</h2>\n<p><strong>Q: I see a \"Oh no! It looks like you have Nitro already\" error when I try to redeem my Nitro promo.</strong></p>\n<p><strong>A:</strong> If you're seeing an \"Oh no! It looks like you have Nitro already\" error, that means that the Discord account you're trying to redeem this promotion on currently has a Nitro membership so it is ineligible for this Nitro promotion.</p>\n<p>Please make sure you're logged into the account that you want to redeem this promotion on.</p>\n<p><strong>Q: I see a \"Sorry, looks like you’ve already had a Nitro sub!\" error when I try to redeem my Nitro promo.</strong></p>\n<p><strong>A: </strong>If you're seeing an “Sorry, looks like you’ve already had a Nitro sub” error, that means that you've previously subscribed to Nitro on your Discord account and you won't be able to redeem this 3 months perk.</p>\n<p>If you have never subscribed to Nitro, please submit a ticket through our support system:<a href=\"https://dis.gd/contact\" target=\"_blank\" rel=\"noopener noreferrer\"> https://dis.gd/contact</a> and our support team will be able to investigate further.</p>\n<p>Be sure to include your full Discord ID and email address tied to your Discord account.</p>\n<p><strong>Q: I see a \"This gift has already been claimed\" error when I try to claim my Nitro promo.</strong></p>\n<p><strong>A:</strong> If you are seeing a \"This gift has been claimed already\" error, that means that the Nitro promo has already been used and cannot be used again. You may need to double check if you've claimed this promo on another Discord account.</p>\n<p>Unfortunately, once the promo has been claimed, the promo cannot be re-enabled, and the Nitro cannot be transferred from one account to another.</p>\n<p><strong>Q: I see a \"Wait a Second...Looks like this code didn't work.\" error when I try to redeem my Nitro promo.</strong></p>\n<p><strong>A:</strong> If you're seeing an “Wait a Second...Looks like this code didn't work.” error, that means that the promo is invalid.</p>\n<p>Please note that our support team is unable to intervene if you are given an invalid promo and we will not be able to provide a new promo.</p>\n<p><strong>Q: I see a “Looks like something went wrong” error when I click on “Next”.</strong></p>\n<p>A: There are several reasons why you may be seeing this error:</p>\n<ul>\n<li>You are ineligible for this promotion</li>\n<li>The promotion is invalid</li>\n<li>The promotion has reached the maximum number of claims</li>\n<li>The link is invalid</li>\n</ul>\n<p>Please note that the Discord support team is not able to assist if you run into this error when attempting to redeem. See the list above for possible reasons why your account may be ineligible or otherwise unable to redeem this promotion.</p>\n<p><strong>Q: I see a \"Sorry, This Payment Source Cannot Be Used for Redemption\" error when trying to redeem my promo!</strong></p>\n<p><strong>A:</strong> If you're seeing a \"Sorry, This Payment Source Cannot Be Used for Redemption\" error, that means that the payment method you've selected to cover the temporary $1 hold cannot be used for that purpose. </p>\n<p>Please keep in mind that prepaid payment methods, such as Gcash, cannot be used to cover temporary holds due to the nature of how prepaid payment methods function.</p>\n<p>For more information on temporary holds, please check out<a href=\"https://support.discord.com/hc/en-us/articles/4402712000663\" target=\"_blank\" rel=\"noopener noreferrer\"> this article</a>!</p>\n<p><strong>Q: I see a “Looks like this promotion has reached its maximum number of claims” error when trying to redeem my promo!</strong></p>\n<p>A: If you are seeing a “Looks like this promotion has reached its maximum number of claims” error, that means the maximum limit for claims of this promotion has been reached and this promotion can no longer be claimed. If you have claimed this Nitro promotion, you are still able to redeem it to your Discord account!</p>\n<p>Please note that the support team is unable to assist you if you run into this error and we are not able to increase the limit of claims.</p>\n<p><strong>Q: I see a “Looks like your email isn’t verified. Make sure to verify your email before claiming this gift.”</strong></p>\n<p>A: If you are seeing a “Looks like your email isn’t verified, make sure to verify your email before claiming this gift” error, you are trying to redeem this Nitro promotion on a Discord account with an email that hasn’t been verified yet.</p>\n<p>You can check out <a href=\"https://support.discord.com/hc/articles/213219267\" target=\"_blank\" rel=\"noopener noreferrer\">this support article</a> on how to resend the email verification for your Discord account. If you need help setting up your Discord account, you can read our <a href=\"https://support.discord.com/hc/articles/360033931551\" target=\"_blank\" rel=\"noopener noreferrer\">Getting Started article</a>. </p>\n<p><strong>Q: I’m having trouble with my WEBTOON account.</strong></p>\n<p><strong>A:</strong> Reach out to WEBTOON’s support team <a href=\"https://webtoon.zendesk.com/hc/en-us\" target=\"_blank\" rel=\"noopener noreferrer\">here</a> or to their support email: webtoonsupport@webtoon.com.</p>"
@@ -291,10 +291,10 @@
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [
-      "01J3NCWMGR03XN71256WH95176",
       "01J5RY00N2B94BRW8PYA86B0CG",
       "01J5RY03464GGARECQVV0XAH6K",
       "01J5RY0BJBGZDK5THNS4XST4GD",
+      "01J3NCWMGR03XN71256WH95176",
       "01J5RY0YXWWDT8GH4DYND2NM9H",
       "01J5RY13FV3GFTHBVV6X1BBZ2R",
       "01J5RY15E49ASS08C36ZVG0K9M",
@@ -334,17 +334,17 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
-      "01HDHA2BW70RHGC8RMMC1F8X43",
-      "01J3EFHYK55B9YP4AZ11SPJGXP",
-      "01J3EFJ1G72RFYRV6X1XSH2FXQ",
-      "01J3EFJPQ4ZTKY08G3KAPXZJFE",
-      "01J3NCWMGR03XN71256WH95176",
       "01J6X2DAZX5N3RH7KYSDMCZ5AG",
       "01J6X2DFSEJ6KSDSTD5NZV1J8Y",
       "01J6X2DNH29RYVKH0NEZ2B3VYC",
+      "01HDHA2BW70RHGC8RMMC1F8X43",
       "01J6X2DYXZY4EQVEAC34VQBEGN",
+      "01J3NCWMGR03XN71256WH95176",
+      "01J3EFHYK55B9YP4AZ11SPJGXP",
+      "01J3EFJ1G72RFYRV6X1XSH2FXQ",
       "01J6X2EDEE42C8M139SME9X6TT",
-      "01J6X2EFQY6F1XP7EBP4PHXET5"
+      "01J6X2EFQY6F1XP7EBP4PHXET5",
+      "01J3EFJPQ4ZTKY08G3KAPXZJFE"
     ],
     "label_names": [
       "answer-bot",
@@ -383,14 +383,14 @@
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [
-      "01HDHA2BW70RHGC8RMMC1F8X43",
-      "01J3EFHYK55B9YP4AZ11SPJGXP",
-      "01J3EFJ1G72RFYRV6X1XSH2FXQ",
-      "01J3EFJH2NE1AR5VS19XBBQY0H",
-      "01J3EFJPQ4ZTKY08G3KAPXZJFE",
-      "01J3NCWMGR03XN71256WH95176",
       "01J6X2DAZX5N3RH7KYSDMCZ5AG",
       "01J6X2DFSEJ6KSDSTD5NZV1J8Y",
+      "01J3NCWMGR03XN71256WH95176",
+      "01HDHA2BW70RHGC8RMMC1F8X43",
+      "01J3EFJH2NE1AR5VS19XBBQY0H",
+      "01J3EFJ1G72RFYRV6X1XSH2FXQ",
+      "01J3EFHYK55B9YP4AZ11SPJGXP",
+      "01J3EFJPQ4ZTKY08G3KAPXZJFE",
       "01J6YVJF00HERTW4P1D3D1AAPP"
     ],
     "label_names": [
@@ -427,13 +427,13 @@
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [
-      "01J3JYCR3Z73XX09WS43GTCMQQ",
+      "01J600F9NW84P8D18N5XKNDTR2",
+      "01J600FDWE58Q289MVR8HPCR3R",
       "01J3NCWMGR03XN71256WH95176",
+      "01J3JYCR3Z73XX09WS43GTCMQQ",
       "01J3NCX0E8NEMNGZ00T9DNHE81",
       "01J3NCXCYM0GYACCHRDKF30GTG",
       "01J3NCXYNB7QWESS1Q3K5K0M4H",
-      "01J600F9NW84P8D18N5XKNDTR2",
-      "01J600FDWE58Q289MVR8HPCR3R",
       "01J600GENFV3M9PBAY5PJKRK7W",
       "01J600GHZ5STM1MXGJMEVWY2JK",
       "01J600GMH7RXDBNVWYMADVF7A2",
@@ -527,9 +527,9 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
+      "01J3NCX0E8NEMNGZ00T9DNHE81",
       "01J3JYCR3Z73XX09WS43GTCMQQ",
       "01J3NCWMGR03XN71256WH95176",
-      "01J3NCX0E8NEMNGZ00T9DNHE81",
       "01J3NCXCYM0GYACCHRDKF30GTG",
       "01J3NCXFQPHC2X26H1Z3HXPY4E",
       "01J3NCXJWPSP2ZKNB336QKVBHZ",
@@ -599,15 +599,15 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
-      "01J3NCX0E8NEMNGZ00T9DNHE81",
-      "01J3NCXCYM0GYACCHRDKF30GTG",
       "01J5BC6Q1XRYTAEST0Q77YCYFT",
       "01J5BC6SMPP3RR8VNAM6GMFPFY",
       "01J5BC6XG2K4PGYHM31JB3S8Y1",
       "01J5BC71228PR078J21DGFP9AW",
       "01J5BC76Y3TYQND68A3P2NR43Q",
+      "01J3NCX0E8NEMNGZ00T9DNHE81",
       "01J5BC7GZZ0M88AHWSEPZDB1EB",
       "01J5BC7MEHJ184GXFCGTV1PJPQ",
+      "01J3NCXCYM0GYACCHRDKF30GTG",
       "01J5BC837G0NRGATME8BDK51Y0",
       "01J5BC88GVBNW0A3A5P8NQ1F0A",
       "01J5BC8JTHWHJVMGH16QPKSGP4"
@@ -680,8 +680,8 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
-      "01J3JYCR3Z73XX09WS43GTCMQQ",
       "01J3NCWMGR03XN71256WH95176",
+      "01J3JYCR3Z73XX09WS43GTCMQQ",
       "01J3NCX0E8NEMNGZ00T9DNHE81",
       "01J3NCXCYM0GYACCHRDKF30GTG",
       "01J4Q9TYTT9QDVYCQ03XWK6MW8",
@@ -753,15 +753,15 @@
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [
-      "01HDHA2BW70RHGC8RMMC1F8X43",
-      "01J3EFHYK55B9YP4AZ11SPJGXP",
-      "01J3EFJ1G72RFYRV6X1XSH2FXQ",
-      "01J3EFJPQ4ZTKY08G3KAPXZJFE",
-      "01J3NCWMGR03XN71256WH95176",
       "01J44W5YGN23YF5Z4V2SBQAZK5",
       "01J44W6715XYR55F2J311ZCJCW",
+      "01J3EFJ1G72RFYRV6X1XSH2FXQ",
+      "01J3EFHYK55B9YP4AZ11SPJGXP",
+      "01HDHA2BW70RHGC8RMMC1F8X43",
       "01J44W6HKGJ6VJSNSBBVHSEM8T",
-      "01J44W72N3HCJBKH2R8J2AT3F6"
+      "01J3EFJPQ4ZTKY08G3KAPXZJFE",
+      "01J44W72N3HCJBKH2R8J2AT3F6",
+      "01J3NCWMGR03XN71256WH95176"
     ],
     "label_names": [
       "Discord",
@@ -939,13 +939,13 @@
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [
-      "01J3NCWMGR03XN71256WH95176",
       "01J3NCX0E8NEMNGZ00T9DNHE81",
+      "01J3NCWMGR03XN71256WH95176",
+      "01J3R3AMFEB8HTYZFESNE4SQKR",
       "01J3NCXCYM0GYACCHRDKF30GTG",
       "01J3NCXFQPHC2X26H1Z3HXPY4E",
-      "01J3NCXJWPSP2ZKNB336QKVBHZ",
-      "01J3R3AMFEB8HTYZFESNE4SQKR",
-      "01J3R3BQ34ZPJ3EEKQCF9A9PQD"
+      "01J3R3BQ34ZPJ3EEKQCF9A9PQD",
+      "01J3NCXJWPSP2ZKNB336QKVBHZ"
     ],
     "label_names": [
       "avatar",
@@ -1326,18 +1326,18 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
-      "01HTQMFNP8T0B1E1HD3KP9QAVC",
-      "01J3JYCR3Z73XX09WS43GTCMQQ",
-      "01J3NCW7Z9DJ2F51MZZ12Q32JQ",
-      "01J3NCWMGR03XN71256WH95176",
       "01J3NCX0E8NEMNGZ00T9DNHE81",
+      "01J3JYCR3Z73XX09WS43GTCMQQ",
       "01J3NCXCYM0GYACCHRDKF30GTG",
+      "01J3NCWMGR03XN71256WH95176",
       "01J3NCXYNB7QWESS1Q3K5K0M4H",
-      "01J3R3AMFEB8HTYZFESNE4SQKR",
-      "01J4Q9VB6PVTXAA11ZJSSBAE2V",
       "01J5BD3VATN2ECAH55Q4DVN4EV",
       "01J5BD3XSWXVR3APV2NWJCKD72",
-      "01J5BD48HAB6FRGSV5EDZ7GYP4"
+      "01J4Q9VB6PVTXAA11ZJSSBAE2V",
+      "01HTQMFNP8T0B1E1HD3KP9QAVC",
+      "01J5BD48HAB6FRGSV5EDZ7GYP4",
+      "01J3R3AMFEB8HTYZFESNE4SQKR",
+      "01J3NCW7Z9DJ2F51MZZ12Q32JQ"
     ],
     "label_names": [
       "answer-bot",
@@ -1478,10 +1478,10 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
-      "01H3FWMK9ZJ8X5TEHZ2GS03WC7",
-      "01J3NCWMGR03XN71256WH95176",
       "01J7CJGZHWGJP6S3C5B2H06EHF",
+      "01H3FWMK9ZJ8X5TEHZ2GS03WC7",
       "01J7CJH3ZN65D8P08TTCM7C0W3",
+      "01J3NCWMGR03XN71256WH95176",
       "01J7CJHC83ZZVJW6EFM1D4EAM3",
       "01J7CJHJVZG0867D5TGRGKTKMD"
     ],
@@ -1521,9 +1521,9 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
-      "01H3WBPCPDQ2ABF4Q3SS01M69V",
       "01HNNXW79VZAZHVJ7Q7P7M890W",
-      "01HNNXWDME44ZG4Y2NNDKQPS0T"
+      "01HNNXWDME44ZG4Y2NNDKQPS0T",
+      "01H3WBPCPDQ2ABF4Q3SS01M69V"
     ],
     "label_names": [],
     "body": "<p><strong>What this article covers:</strong></p>\n<ul>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/21084266106775#h_01HNNXQ6T226GDK5830TH563D9\">What is the new notification feature?</a></li>\n<li>\n<a href=\"https://support.discord.com/hc/en-us/articles/21084266106775#h_01HNNXQ6T2NDX2BVBJT724Y9TC\">How to setup the new notification feature</a>\n<ul>\n<li>\n<a href=\"https://support.discord.com/hc/en-us/articles/21084266106775#h_01HNNXQ6T2YFE1F7MYV75QA4HV\">Notification Settings</a>\n<ul>\n<li>Desktop</li>\n<li>Mobile</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/21084266106775#h_01HNNXQ6T2EA493Y2Y4HFXZPNP\">How do I turn this feature off?</a></li>\n</ul>\n<h1 id=\"h_01HNNXQ6T226GDK5830TH563D9\">What is the new notification feature?</h1>\n<h3 id=\"h_01HNNXQ6T2RKJPP1TYTTW8RYRW\"><span style=\"color: #434343;\">This is currently an experiment and not available to everyone.</span></h3>\n<p>It can be pretty overwhelming when you join a new community, especially if the server has a lot of active channels. Any time someone sends a message, Discord shows a little white dot next to the channel and server to let you know a new message has been sent.</p>\n<p>It can be information overload, and so naturally you take the only action you can and mute the server. Problem solved, right?</p>\n<p>Unfortunately, it becomes harder to pay attention to the 1 or 2 channels you really like on that specific server. You start missing out on moments because it’s muted. You have to try to remember to go back to that server and check those specific channels. But what if you forget? </p>\n<p>If this sounds familiar, we have good news! Discord is introducing a “middle ground” setting between “show me everything” and “show me nothing”. Let’s go over this setting a little bit more.</p>\n<h1 id=\"h_01HNNXQ6T2NDX2BVBJT724Y9TC\">How to setup the new notification feature</h1>\n<h3 id=\"h_01HNNXQ6T25RJ9DM6RFVHDESSQ\"><span style=\"color: #434343;\">This experiment is available on both the desktop and mobile app, however, the below modal will only pop-up in the desktop app.</span></h3>\n<p>If this experimental feature becomes available to you, Discord will help you get started by showing this modal the next time you launch Discord.</p>\n<p>Just follow the prompts and select which servers have the most important updates for you!</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/21084266097815\" width=\"624\" height=\"351\"></p>\n<p>It will also help explain what has changed and give you a chance to pick and choose some servers that you want to try this feature out on right away. </p>\n<p>We recommend trying it on servers that might overwhelm you, but have channels you’re interested in.</p>\n<h2 id=\"h_01HNNXQ6T2YFE1F7MYV75QA4HV\">Notification Settings</h2>\n<p>Let’s go over how this feature affects each type of notification setting and then how to set a Custom setting on both desktop and mobile.</p>\n<p><strong>All Messages</strong>: When someone sends you a message in a channel that is set to <strong>All Messages</strong>, everything will behave exactly like before: The channel is highlighted in white, and both the channel and server show a little white dot next to them.</p>\n<p>You will also continue to receive a notification for each new message in the channel.</p>\n<p><strong>@Mentions</strong> (a.k.a. Only Mentions): When someone sends you a message in a channel that is set to <strong>@Mentions</strong>, the channel is not highlighted. Instead the channel stays the same color, and shows a light gray dot next to it. It gives you a hint of activity, but doesn’t try to compel you to check in on the channel. </p>\n<p>Most importantly the server does not show a white or gray dot at all! This allows you to check these channels on your own schedule, instead of being nagged to check them right away.</p>\n<p>If someone mentions you in this channel though, the channel will be highlighted in white, and both the server and channel will have a red badge so you know something important happened.</p>\n<p>You will also continue to receive a notification for each new message that mentions you in the channel.</p>\n<p><strong>Nothing: </strong>When someone sends you a message in a channel that is set to “Nothing”, the channel and server will behave the same way as @Mentions, however you will never receive a notification from this channel.</p>\n<p><strong>Desktop</strong></p>\n<p>1. Navigate to the server you want to adjust the settings for.</p>\n<p>2. Right-click on the channel and then navigate to <strong>Notifications</strong> and then tap on <strong>Custom.</strong></p>\n<p class=\"wysiwyg-text-align-center\"><strong><img src=\"https://support.discord.com/hc/article_attachments/21084266099479\" width=\"395\" height=\"407\"></strong></p>\n<p>If you select the <strong>Custom</strong> option, this allows you to change each behavior independently, such as how should Discord display that there are new messages and when should Discord notify you.</p>\n<p><strong>Mobile</strong></p>\n<p>1. Navigate to the server you want to adjust the settings for.</p>\n<p>2. Long press on the channel you want to adjust the settings for then tap on <strong>Notification Settings</strong>.</p>\n<p>3. Here you can customize your notification settings for this channel.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/21084281584535\" width=\"365\" height=\"614\"></p>\n<h3 id=\"h_01HNNXQ6T29T3D3A3ZQP39WCE5\">\n<span style=\"color: #434343;\">To learn more about notifications, please check out our </span><a href=\"https://support.discord.com/hc/en-us/articles/215253258\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Notifications Settings 101</span></a><span style=\"color: #434343;\"> article.</span>\n</h3>\n<h1 id=\"h_01HNNXQ6T27Q8S6MSRZ5P53J2H\">When should I use this specific notification setting?</h1>\n<p>This setting is best for larger, busy servers and channels where you may prefer to check them on your own schedule. Instead of muting them, now you can pick and choose the channels you care about most, without being notified to visit the other channels. It’s like a better way of muting! This setting allows you to ignore everything by default while picking the specific channels you care about in a server.</p>\n<p>For example: Do you want to know when there’s a new update to a game you play or an update to an app you use? You can set that server to <strong>Mentions Only</strong>, and then  select the channel with release announcements to <strong>All Messages</strong>! Now you’ll get notified about that one channel, without getting overwhelmed by the rest of the server.</p>\n<h1 id=\"h_01HNNXQ6T2EA493Y2Y4HFXZPNP\">How do I turn this feature off?</h1>\n<h3 id=\"h_01HNNXQ6T2F8Y8CZKACQJT1YDF\"><span style=\"color: #434343;\">The option to disable this feature is only on the desktop app.</span></h3>\n<p>If you do not want to use this feature, here is how to disable it.</p>\n<p>1. Tap on the cogwheel [<img src=\"https://support.discord.com/hc/article_attachments/21084281586071\" width=\"20\" height=\"20\">] in the bottom left corner of the desktop app to open up your <strong>User Settings</strong>.</p>\n<p>2. Then scroll down until you see <strong>Notifications</strong>.</p>\n<p>3. Now tap on the <strong>check mark</strong> next to <strong>New Unread Settings (experimental)</strong> to toggle it to an <strong>x</strong> to turn it off. Your notification settings will be fully restored to a backup created earlier.</p>\n<p class=\"wysiwyg-text-align-center\"><strong><img src=\"https://support.discord.com/hc/article_attachments/21084266103575\" width=\"624\" height=\"437\"></strong></p>\n<p>If you have any questions about this feature, please reach out to our <a href=\"https://dis.gd/contact\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Support team</span></a>.</p>\n<p><br><br><br><br><br><br><br><br><br></p>"
