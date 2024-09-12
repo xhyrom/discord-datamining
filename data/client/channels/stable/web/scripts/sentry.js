@@ -6892,7 +6892,6 @@
               "/users/@me/billing/localized-pricing-promo",
             VERIFY_PURCHASE: "/google-play/verify-purchase-token",
             DOWNGRADE_SUBSCRIPTION: "/google-play/downgrade-subscription",
-            EMIT_GOOGLE_PLAY_METRICS: "/google-play/emit-google-play-metrics",
             GOOGLE_PLAY_VALIDATE_PURCHASE: "/google-play/validate-purchase",
             USER_AGREEMENTS: "/users/@me/agreements",
             USER_ACHIEVEMENTS: (e) =>
@@ -12184,7 +12183,7 @@
           (z.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
           (z.SHOP = "shop"),
           (z.AUTHORIZED_APPS = "authorized-apps"),
-          (z.SECURE_FRAMES_VERIFICATION = "secure-frames-verification"),
+          (z.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
           (z.ICYMI = "icymi");
         let e_ = "CacheStoreLazy",
           eE = "CacheStoreChannelsLazy",
@@ -12388,7 +12387,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-95c6a53dc741e564cfec27fdb627e626fe4fd236",
+            release: "discord_web-75969ba74b40dd715b79245ffd23a1667a11f25d",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12457,8 +12456,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "326257"), "326257"));
-          i.YA("builtAt", String("1726076337566"));
+            i.YA("buildNumber", ((e = "326606"), "326606"));
+          i.YA("builtAt", String("1726164583451"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48454,4 +48453,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.99b68ac442d9d024a7cb.js.map
+//# sourceMappingURL=sentry.3cef32f0396c6201e9a5.js.map

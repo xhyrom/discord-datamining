@@ -22074,6 +22074,9 @@ img.thumbnail_c64476 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
+.viewFullBioDisabled_abaf7d {
+  opacity: 0.5;
+}
 .descriptionClamp_abaf7d {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -28966,10 +28969,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .staticDivider_de3e42 {
   border-left: 1px solid var(--background-modifier-accent);
-}
-.menuItemLabel_d27a56 {
-  display: flex;
-  gap: 6px;
 }
 .inner_c59af2 {
   background: var(--input-background);
@@ -44201,4 +44200,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.86b085ccb4f453ae12d1.css.map*/
+/*# sourceMappingURL=12633.2ab825ad4b79f00ac67e.css.map*/
