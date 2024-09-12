@@ -17186,6 +17186,8 @@
   "USER_SETTING_DM_SPAM_FILTER_NON_FRIENDS_TITLE": "\"From non-friends\"",
   "USER_SETTING_DM_SPAM_FILTER_DISABLED_TITLE": "\"Do not filter\"",
   "USER_SETTINGS_SAFETY_ALERTS_TITLE": "\"Safety alerts\"",
+  "USER_SETTINGS_CONTACT_DISCOVERY_TITLE": "\"Discovery\"",
+  "USER_SETTINGS_SAFETY_FRIEND_REQUESTS": "\"Friend requests\"",
   "SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE": "\"Your account is $[all good!](hook)\"",
   "SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE_V2": "\"Your account is $[all good](hook)\"",
   "SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_DESCRIPTION": "\"Thanks for upholding Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).\"",
