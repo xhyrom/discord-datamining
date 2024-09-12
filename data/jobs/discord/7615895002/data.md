@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7615895002](https://discord.com/jobs/7615895002)
 
-**Updated At:** Tue, 10 Sep 2024 21:32:13 GMT
+**Updated At:** Thu, 12 Sep 2024 18:07:07 GMT
 
 **Job Description:**
 Discord runs one of the largest real-time audio/video platforms in the world, and this role encompasses all the infrastructure required to make this happen at Discord's massive scale. Your work will directly impact Discord's core experience, contributing to what makes over 200 million monthly users love the platform.

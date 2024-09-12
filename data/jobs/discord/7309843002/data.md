@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7309843002](https://discord.com/jobs/7309843002)
 
-**Updated At:** Tue, 10 Sep 2024 21:32:13 GMT
+**Updated At:** Thu, 12 Sep 2024 18:07:02 GMT
 
 **Job Description:**
 This position is US based only.Come build the future of Discord’s business with us! We are looking for an impact-focused Staff Engineer to join our world-class Revenue group as we accelerate Discord’s growth through the creation of compelling paid products and new business lines. These products allow us to grow our business while keeping Discord’s core functionality free. To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog!
