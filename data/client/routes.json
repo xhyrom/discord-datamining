@@ -55,13 +55,6 @@
       "POST"
     ]
   },
-  "BROADCAST_PRIVATE_CHANNEL": {
-    "url": "/users/@me/channels/broadcast",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "DM_CHANNEL": {
     "url": "/users/@me/dms/:param",
     "allowed_methods": [
@@ -811,17 +804,6 @@
   },
   "CHANNEL": {
     "url": "/channels/:param",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH",
-      "PUT"
-    ]
-  },
-  "BROADCAST_CHANNELS": {
-    "url": "/channels/broadcast-channels",
     "allowed_methods": [
       "DELETE",
       "GET",
@@ -3216,14 +3198,6 @@
   },
   "CHANNEL_AFFINITIES": {
     "url": "/users/@me/affinities/channels",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "USER_BROADCASTS": {
-    "url": "/users/broadcasts/bucket",
     "allowed_methods": [
       "GET",
       "HEAD",
