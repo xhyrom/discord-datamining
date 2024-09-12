@@ -4469,8 +4469,7 @@
       "DELETE",
       "GET",
       "HEAD",
-      "OPTIONS",
-      "PATCH"
+      "OPTIONS"
     ]
   },
   "GUILD_ENTITLEMENTS": {
