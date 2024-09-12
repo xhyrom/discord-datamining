@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7610060002](https://discord.com/jobs/7610060002)
 
-**Updated At:** Wed, 11 Sep 2024 20:27:47 GMT
+**Updated At:** Thu, 12 Sep 2024 07:53:03 GMT
 
 **Job Description:**
 Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
@@ -37,17 +37,7 @@ Things that may interest you
 Our tech stack is Elixir, Python and Rust.
 Our systems are deployed in Google Cloud.
 Our team uses a lot of open source technologies, and contributes back too: - sempahore- instruments-&amp;nbsp;sorted_set_nif- dispenser- erlpack
-
-
-Being one of Discord’s oldest teams, we’ve written quite a few blog posts through the years:
-
-Maxjourney: Pushing Discord’s Limits with a Million+ Online Users in a Single Server
-Why and How Discord Uses Patch to Test Elixir
-Using Rust to Scale Elixir for 11 Million Concurrent Users
-How Discord Scaled Elixir to 5,000,000 Concurrent Users
-How Discord handles push request bursts of over a million per minute with Elixir’s GenStage
-
-
+Being one of Discord’s oldest teams, we’ve written quite a few blog posts through the years:- Maxjourney: Pushing Discord’s Limits with a Million+ Online Users in a Single Server- Why and How Discord Uses Patch to Test Elixir- Using Rust to Scale Elixir for 11 Million Concurrent Users- How Discord Scaled Elixir to 5,000,000 Concurrent Users- How Discord handles push request bursts of over a million per minute with Elixir’s GenStage
 
 PLEASE NOTE: This is not a 100% remote role. We are looking for someone to work in our San Francisco office at least 1 time per week.The US base salary range for this full-time position is $263,000 to $289,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
