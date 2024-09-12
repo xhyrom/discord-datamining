@@ -30204,6 +30204,50 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   bottom: 2px;
   color: var(--brand-500);
 }
+.icon_e5a869 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge_e5a869 {
+  position: absolute;
+  bottom: 2px;
+  right: 4px;
+  width: 10px;
+  height: 10px;
+  color: var(--header-secondary);
+}
+.container_e54bbe {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+.content_e54bbe {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.actions_e54bbe {
+  display: flex;
+  align-self: end;
+  gap: 4px;
+  align-items: baseline;
+  margin: 8px -4px -4px 0;
+}
+.button_e54bbe {
+  cursor: pointer;
+  color: var(--interactive-normal);
+}
+.button_e54bbe:hover {
+  color: var(--interactive-hover);
+}
+.button_e54bbe:active {
+  color: var(--interactive-active);
+}
 .mirror_c11cdc {
   transform: scalex(-1);
 }
@@ -44151,4 +44195,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.7c3c3039dd8aaf460871.css.map*/
+/*# sourceMappingURL=12633.4d635a48a8a0a268e8cc.css.map*/
