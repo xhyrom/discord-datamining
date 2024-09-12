@@ -10150,6 +10150,7 @@
   "USER_PROFILE_REMOVE_ROLE": "\"Remove Role\"",
   "USER_PROFILE_GO_TO_DMS": "\"Go to DMs\"",
   "USER_PROFILE_GO_TO_DM": "\"Go to DM\"",
+  "USER_PROFILE_GUILD_NAME": "\"Guild name\"",
   "USER_PROFILE_SEND_REACTION": "\"Send Reaction\"",
   "USER_PROFILE_REPLY": "\"Reply\"",
   "USER_PROFILE_REACTION_SENT": "\"Reaction sent\"",
