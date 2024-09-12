@@ -17733,7 +17733,6 @@
   "QUESTS_LEARN_MORE_V2": "\"Learn More\"",
   "QUESTS_LEARN_MORE_STACKED": "\"Learn\\n\\nMore\"",
   "QUESTS_LEARN_MORE_LINK": "\"[Learn More]({questsLearnMoreLink})\"",
-  "QUESTS_LEARN_MORE_ABOUT_QUESTS": "\"Learn More about Quests\"",
   "QUESTS_ACCEPT_QUEST": "\"Accept Quest\"",
   "QUESTS_START_QUEST": "\"Start Quest\"",
   "QUESTS_INSTRUCTIONS_TO_WIN_REWARD": "\"Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.\"",
