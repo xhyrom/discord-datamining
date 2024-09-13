@@ -42753,6 +42753,21 @@ html.disable-forced-colors * {
     );
   }
 }
+.visual-refresh.theme-light,
+.visual-refresh .theme-light {
+  --bg-mod-strong: hsl(var(--primary-400-hsl) / 0.24);
+}
+@supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
+  .visual-refresh.theme-light,
+  .visual-refresh .theme-light {
+    --bg-mod-strong: color-mix(
+      in oklab,
+      hsl(var(--primary-400-hsl) / 0.24) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
+        var(--theme-base-color-amount, 0%)
+    );
+  }
+}
 .theme-dark {
   --shadow-border: 0 0 0 1px hsla(0, 0%, 100%, 0.08);
   --shadow-border-filter: drop-shadow(0 0 1px hsla(0, 0%, 100%, 0.08));
@@ -44186,4 +44201,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.4fdcdc34db513c99be79.css.map*/
+/*# sourceMappingURL=12633.18bd071e3c51ed2748f3.css.map*/
