@@ -6304,7 +6304,6 @@
             GUILD_PROFILE: (e, t) =>
               "/guilds/".concat(e, "/profile/").concat(t),
             USER_CHANNELS: "/users/@me/channels",
-            BROADCAST_PRIVATE_CHANNEL: "/users/@me/channels/broadcast",
             DM_CHANNEL: (e) => "/users/@me/dms/".concat(e),
             USER_SETTINGS_PROTO: (e) => "/users/@me/settings-proto/".concat(e),
             USER_ACTIVITY_METADATA: (e, t, r) =>
@@ -6494,7 +6493,6 @@
             GUILD_DELETE: (e) => "/guilds/".concat(e, "/delete"),
             CHANNELS: "/channels",
             CHANNEL: (e) => "/channels/".concat(e),
-            BROADCAST_CHANNELS: "/channels/broadcast-channels",
             THREAD_MEMBER: function (e) {
               let t =
                 arguments.length > 1 && void 0 !== arguments[1]
@@ -7015,7 +7013,6 @@
             USER_AFFINITIES_V2: "/users/@me/affinities/v2/users",
             GUILD_AFFINITIES: "/users/@me/affinities/guilds",
             CHANNEL_AFFINITIES: "/users/@me/affinities/channels",
-            USER_BROADCASTS: "/users/broadcasts/bucket",
             FUNIMATION_PROMOTION: "/promotions/funimation",
             PARTNERS_CONNECTIONS: "/partners/connections",
             PARTNERS_APPLY: "/partners/apply",
@@ -9561,6 +9558,7 @@
           (nf.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
           (nf.ACTIVITY_UPDATED = "activity_updated"),
           (nf.ACTIVITY_SESSION_JOINED = "activity_session_joined"),
+          (nf.ACTIVITY_SESSION_JOIN_FAILED = "activity_session_join_failed"),
           (nf.ACTIVITY_SESSION_LEFT = "activity_session_left"),
           (nf.ACTIVITY_VOICE_CONTROLS_TOGGLE_BUTTON_PRESSED =
             "activity_voice_controls_toggle_button_pressed"),
@@ -9686,6 +9684,9 @@
           (nf.SCREENSHARE_FAILED = "screenshare_failed"),
           (nf.PERK_DISCOVERABILITY_CARD_CTA_CLICKED =
             "perk_discoverability_card_cta_clicked"),
+          (nf.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED =
+            "premium_whats_new_box_cta_clicked"),
+          (nf.PREMIUM_WHATS_NEW_VIEW_TIME = "premium_whats_new_view_time"),
           (nf.VIDEO_STREAM_ENDED = "video_stream_ended"),
           (nf.VIDEO_STREAM_STARTED = "video_stream_started"),
           (nf.STREAM_WARNING_TRIGGERED = "stream_warning_triggered"),
@@ -10586,13 +10587,6 @@
           (nf.FEEDBACK_FORM_VIEWED = "feedback_form_viewed"),
           (nf.FEEDBACK_FORM_SUBMITTED = "feedback_form_submitted"),
           (nf.HOTSPOT_HIDDEN = "hotspot_hidden"),
-          (nf.NEW_BROADCAST_DETECTED = "new_broadcast_detected"),
-          (nf.BROADCAST_POPOUT_VIEWED = "broadcast_popout_viewed"),
-          (nf.BROADCAST_START_BUTTON_HOVERED =
-            "broadcast_start_button_hovered"),
-          (nf.BROADCAST_VIEWED = "broadcast_viewed"),
-          (nf.BROADCAST_SETTINGS_UPDATED = "broadcast_settings_updated"),
-          (nf.BROADCAST_LIST_VISITED = "broadcast_list_visited"),
           (nf.APP_ICON_UPDATED = "app_icon_updated"),
           (nf.APP_ICON_PREVIEW_VIEWED = "app_icon_preview_viewed"),
           (nf.CHANNEL_LIST_END_REACHED = "channel_list_end_reached"),
@@ -12390,7 +12384,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ceb4327fb656417426aef66be7ee7a2d1aecab0b",
+            release: "discord_web-2e9e66dc7f4380da8182901e226dc1c085218faa",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12459,8 +12453,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "326697"), "326697"));
-          i.YA("builtAt", String("1726171258582"));
+            i.YA("buildNumber", ((e = "326854"), "326854"));
+          i.YA("builtAt", String("1726191201857"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48456,4 +48450,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.dfff2cdbd2dbbb54a378.js.map
+//# sourceMappingURL=sentry.9be353a572e1b607a61a.js.map
