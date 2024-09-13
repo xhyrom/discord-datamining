@@ -5145,7 +5145,7 @@
   "NEW_GUILDS_DM_ALLOWED": "\"Allow direct messages from server members\"",
   "USER_DROPS_SETTINGS": "\"Promo Settings\"",
   "USER_DROPS_SETTINGS_DROPS_OPTED_OUT": "\"In-game rewards (aka Quests)\"",
-  "USER_DROPS_SETTINGS_DROPS_OPTED_OUT_FORMATTED": "\"Use information about how you use Discord such as what games you play to tell you about Quests or other in-game reward opportunities. [Learn more about it here.]({helpdeskArticle})\"",
+  "USER_DROPS_SETTINGS_DROPS_OPTED_OUT_FORMATTED": "\"Use your Discord activity, such as the games you play, to show you Quests and other rewards. If you opt out, you might still see Quest promotions, but they won't be personalized to your activity. [Learn more]({helpdeskArticle})\"",
   "USER_DM_SETTINGS_TITLE": "\"Server Privacy\"",
   "USER_DM_SETTINGS_DESCRIPTION": "\"Do you want to also apply this change to all your existing servers? You can also disable direct messages on individual servers by visiting that server's settings page.\"",
   "SERVER_SPECIFIC_PRIVACY_SETTINGS": "\"Server Privacy Settings\"",
