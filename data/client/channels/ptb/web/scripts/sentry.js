@@ -1032,9 +1032,9 @@
                 c.push(W(e.slice(u + 1, o)));
               } else throw Error(s + " is not a valid character");
             }
-            return k(c, t, I);
+            return V(c, t, I);
           };
-          function k(e, t, r) {
+          function V(e, t, r) {
             var n,
               a = o[0],
               i = o[1];
@@ -1042,7 +1042,7 @@
               (a = a.add(e[n].times(i))), (i = i.times(t));
             return r ? a.negate() : a;
           }
-          function V(e, t) {
+          function k(e, t) {
             if ((t = n(t)).isZero()) {
               if (e.isZero()) return { value: [0], isNegative: !1 };
               throw Error("Cannot convert nonzero numbers to base 0.");
@@ -1098,7 +1098,7 @@
             );
           }
           function x(e, t, n) {
-            var a = V(e, t);
+            var a = k(e, t);
             return (
               (a.isNegative ? "-" : "") +
               a.value
@@ -1150,13 +1150,13 @@
             return u(l), new i(l, r);
           }
           (i.prototype.toArray = function (e) {
-            return V(this, e);
+            return k(this, e);
           }),
             (_.prototype.toArray = function (e) {
-              return V(this, e);
+              return k(this, e);
             }),
             (E.prototype.toArray = function (e) {
-              return V(this, e);
+              return k(this, e);
             }),
             (i.prototype.toString = function (t, r) {
               if ((e === t && (t = 10), 10 !== t)) return x(this, t, r);
@@ -1233,7 +1233,7 @@
                 i = w(e, t).subtract(a).add(1);
               if (i.isSmall) return a.add(Math.floor(n() * i));
               for (
-                var _ = V(i, 1e7).value, E = [], s = !0, c = 0;
+                var _ = k(i, 1e7).value, E = [], s = !0, c = 0;
                 c < _.length;
                 c++
               ) {
@@ -1244,7 +1244,7 @@
               return a.add(o.fromArray(E, 1e7, !1));
             }),
             (o.fromArray = function (e, t, r) {
-              return k(e.map(W), W(t || 10), r);
+              return V(e.map(W), W(t || 10), r);
             }),
             o
           );
@@ -4916,7 +4916,7 @@
             return a9;
           },
           Z9p: function () {
-            return eV;
+            return ek;
           },
           ZUi: function () {
             return m;
@@ -4931,7 +4931,7 @@
             return aF.Zu;
           },
           _1z: function () {
-            return k;
+            return V;
           },
           _8R: function () {
             return iL;
@@ -4940,7 +4940,7 @@
             return I;
           },
           _vf: function () {
-            return V;
+            return k;
           },
           a5g: function () {
             return eD;
@@ -5069,7 +5069,7 @@
             return tJ;
           },
           hUK: function () {
-            return ek;
+            return eV;
           },
           hVg: function () {
             return ez;
@@ -5105,7 +5105,7 @@
             return eA;
           },
           jm8: function () {
-            return tk;
+            return tV;
           },
           jsM: function () {
             return iR;
@@ -5249,10 +5249,10 @@
             return tT;
           },
           scU: function () {
-            return ok;
+            return oV;
           },
           si2: function () {
-            return tV;
+            return tk;
           },
           t4x: function () {
             return ef;
@@ -5357,7 +5357,7 @@
             return er;
           },
           z7k: function () {
-            return oV;
+            return ok;
           },
           zMe: function () {
             return aF.zM;
@@ -5412,8 +5412,8 @@
           H,
           Y,
           K,
-          k,
           V,
+          k,
           x,
           F,
           W,
@@ -5466,8 +5466,8 @@
           eH,
           eY,
           eK,
-          ek,
           eV,
+          ek,
           ex,
           eF,
           eW,
@@ -5530,8 +5530,8 @@
           tH,
           tY,
           tK,
-          tk,
           tV,
+          tk,
           tx,
           tF,
           tW,
@@ -5594,8 +5594,8 @@
           rH,
           rY,
           rK,
-          rk,
           rV,
+          rk,
           rx,
           rF,
           rW,
@@ -5658,8 +5658,8 @@
           nH,
           nY,
           nK,
-          nk,
           nV,
+          nk,
           nx,
           nF,
           nW,
@@ -5723,8 +5723,8 @@
           aH = r(866442),
           aY = r(860911),
           aK = r(70956),
-          ak = r(272242),
-          aV = r(188785),
+          aV = r(272242),
+          ak = r(188785),
           ax = r(526761),
           aF = r(231338),
           aW = r(334431);
@@ -6234,10 +6234,10 @@
           (rg.IN_GAME_PREVIEW = "IN_GAME_PREVIEW"),
           ((rM = K || (K = {})).LARGE = "large"),
           (rM.SMALL = "small"),
-          ((rP = k || (k = {}))[(rP.ACTIVE = 0)] = "ACTIVE"),
+          ((rP = V || (V = {}))[(rP.ACTIVE = 0)] = "ACTIVE"),
           (rP[(rP.TIMED_OUT = 1)] = "TIMED_OUT"),
           (rP[(rP.DISMISSED = 2)] = "DISMISSED"),
-          ((rm = V || (V = {})).TOP_LEFT = "topLeft"),
+          ((rm = k || (k = {})).TOP_LEFT = "topLeft"),
           (rm.TOP_RIGHT = "topRight"),
           (rm.BOTTOM_LEFT = "bottomLeft"),
           (rm.BOTTOM_RIGHT = "bottomRight"),
@@ -7571,7 +7571,7 @@
             LOGIN: "/login",
             LOGIN_HANDOFF: "/login/handoff",
             REGISTER: "/register",
-            DEFAULT_LOGGED_OUT: aV.a ? "/register" : "/login",
+            DEFAULT_LOGGED_OUT: ak.a ? "/register" : "/login",
             INVITE: (e) => "/invite/".concat(e),
             INVITE_LOGIN: (e) => "/invite/".concat(e, "/login"),
             INVITE_REGISTER: (e) => "/invite/".concat(e, "/register"),
@@ -7672,7 +7672,7 @@
             APPLICATION_DIRECTORY_PROFILE_STORE_SKU: (e, t) =>
               "/application-directory/"
                 .concat(e, "/")
-                .concat(ak.ApplicationDirectoryProfileSections.STORE, "/")
+                .concat(aV.ApplicationDirectoryProfileSections.STORE, "/")
                 .concat(t),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
@@ -7693,18 +7693,18 @@
           }),
           a6 = (0, aY.F)(a3),
           a5 = (0, aY.F)(a2, [":", "?", "@"]);
-        ((rk = ee || (ee = {}))[(rk.INSTANCE = 1)] = "INSTANCE"),
-          (rk[(rk.JOIN = 2)] = "JOIN"),
-          (rk[(rk.SYNC = 16)] = "SYNC"),
-          (rk[(rk.PLAY = 32)] = "PLAY"),
-          (rk[(rk.PARTY_PRIVACY_FRIENDS = 64)] = "PARTY_PRIVACY_FRIENDS"),
-          (rk[(rk.PARTY_PRIVACY_VOICE_CHANNEL = 128)] =
+        ((rV = ee || (ee = {}))[(rV.INSTANCE = 1)] = "INSTANCE"),
+          (rV[(rV.JOIN = 2)] = "JOIN"),
+          (rV[(rV.SYNC = 16)] = "SYNC"),
+          (rV[(rV.PLAY = 32)] = "PLAY"),
+          (rV[(rV.PARTY_PRIVACY_FRIENDS = 64)] = "PARTY_PRIVACY_FRIENDS"),
+          (rV[(rV.PARTY_PRIVACY_VOICE_CHANNEL = 128)] =
             "PARTY_PRIVACY_VOICE_CHANNEL"),
-          (rk[(rk.EMBEDDED = 256)] = "EMBEDDED"),
-          ((rV = et || (et = {}))[(rV.ALL_MESSAGES = 0)] = "ALL_MESSAGES"),
-          (rV[(rV.ONLY_MENTIONS = 1)] = "ONLY_MENTIONS"),
-          (rV[(rV.NO_MESSAGES = 2)] = "NO_MESSAGES"),
-          (rV[(rV.NULL = 3)] = "NULL");
+          (rV[(rV.EMBEDDED = 256)] = "EMBEDDED"),
+          ((rk = et || (et = {}))[(rk.ALL_MESSAGES = 0)] = "ALL_MESSAGES"),
+          (rk[(rk.ONLY_MENTIONS = 1)] = "ONLY_MENTIONS"),
+          (rk[(rk.NO_MESSAGES = 2)] = "NO_MESSAGES"),
+          (rk[(rk.NULL = 3)] = "NULL");
         let a4 = 100,
           a8 = 200,
           a7 = 50,
@@ -7788,8 +7788,8 @@
           oH = 480,
           oY = 650,
           oK = "DEVICE_TOKEN",
-          ok = "DEVICE_VOIP_TOKEN",
-          oV = "first_run_date_key",
+          oV = "DEVICE_VOIP_TOKEN",
+          ok = "first_run_date_key",
           ox = Object.freeze({
             API_DOCS: "".concat(
               window.GLOBAL_ENV.MARKETING_ENDPOINT,
@@ -9343,11 +9343,11 @@
           (nd[(nd.PAUSED = 8)] = "PAUSED"),
           (nd[(nd.PAUSE_PENDING = 9)] = "PAUSE_PENDING");
         let ie = { ALL_PAUSE: new Set([9, 8]), ALL_PAUSEABLE: new Set([1, 8]) };
-        ((nN = ek || (ek = {}))[(nN.OPEN = 1)] = "OPEN"),
+        ((nN = eV || (eV = {}))[(nN.OPEN = 1)] = "OPEN"),
           (nN[(nN.PAID = 2)] = "PAID"),
           (nN[(nN.VOID = 3)] = "VOID"),
           (nN[(nN.UNCOLLECTIBLE = 4)] = "UNCOLLECTIBLE"),
-          ((np = eV || (eV = {})).USER = "USER"),
+          ((np = ek || (ek = {})).USER = "USER"),
           (np.GLOBAL = "GLOBAL"),
           (np.ROLE = "ROLE"),
           (np.CHANNEL = "CHANNEL"),
@@ -9558,6 +9558,7 @@
           (nf.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
           (nf.ACTIVITY_UPDATED = "activity_updated"),
           (nf.ACTIVITY_SESSION_JOINED = "activity_session_joined"),
+          (nf.ACTIVITY_SESSION_JOIN_FAILED = "activity_session_join_failed"),
           (nf.ACTIVITY_SESSION_LEFT = "activity_session_left"),
           (nf.ACTIVITY_VOICE_CONTROLS_TOGGLE_BUTTON_PRESSED =
             "activity_voice_controls_toggle_button_pressed"),
@@ -11182,182 +11183,182 @@
             commandId: "-9",
           },
         });
-        ((nk = tt || (tt = {})).ENABLE_MIC_FIREFOX = "204392448"),
-          (nk.PUSH_TO_TALK_ADMINISTRATOR_MODE = "205082178"),
-          (nk.ENABLE_MIC_CHROME = "205093487"),
-          (nk.PERMISSIONS_TUTORIAL = "206029707"),
-          (nk.TWITCH_INTEGRATION = "212112068"),
-          (nk.YOUTUBE_INTEGRATION = "215162978"),
-          (nk.VOICE_CONNECTION_ERRORS = "115001310031"),
-          (nk.NO_INPUT_DETECTED = "214925018"),
-          (nk.OVERLAY_INTRODUCTION = "217659737"),
-          (nk.PERMISSIONS_LOCKOUT = "218449248"),
-          (nk.SETTING_UP_TWO_FACTOR = "219576828"),
-          (nk.WEBHOOKS_INTRODUCTION = "228383668"),
-          (nk.QUICK_SWITCHER_TUTORIAL = "115000070311"),
-          (nk.SEARCH_INDEXING = "115000414847"),
-          (nk.USING_SEARCH = "115000468588"),
-          (nk.RICH_PRESENCE_INTRODUCTION = "115001557452"),
-          (nk.CORRUPT_INSTALLATION = "115004307527"),
-          (nk.SPOTIFY_AUTO_PAUSED = "115002872212"),
-          (nk.SPOTIFY_CONNECTION = "360000167212"),
-          (nk.SPELLCHECK = "360000877191"),
-          (nk.INVALID_INVITES = "360001556852"),
-          (nk.GDPR_ACCOUNT_DELETE = "212500837"),
-          (nk.GDPR_ACCOUNT_DISABLE = "360004066391"),
-          (nk.GDPR_REQUEST_DATA = "360004027692"),
-          (nk.GDPR_PACKAGE_CONTENTS = "360004957991"),
-          (nk.DATA_PRIVACY_CONTROLS = "360004109911"),
-          (nk.ACCESSIBILITY_TRACKING = "360035966492"),
-          (nk.NEARBY_FRIENDS = "360014894392"),
-          (nk.APPLICATION_STORE_OVERVIEW = "360012656092"),
-          (nk.APPLICATION_STORE_EARLY_ACCESS = "360027392172"),
-          (nk.GIFTING = "360020776291"),
-          (nk.GUILD_VANITY_URL = "115001542132"),
-          (nk.GUILD_SUBSCRIPTIONS = "360028038352"),
-          (nk.GUILD_BANNER_SPLASH = "360028716472"),
-          (nk.GUILD_INVITE_SPLASH = "4415841146391"),
-          (nk.GUILD_COMMUNITY_FEATURE = "360047132851"),
-          (nk.BUILD_OVERRIDE_EMBED = "360030114991"),
-          (nk.SUPPORTED_BROWSERS = "213491697"),
-          (nk.ANNOUNCEMENT_CHANNELS = "360032008192"),
-          (nk.GUILD_ANALYTICS = "360032807371"),
-          (nk.BILLING = "360017693772"),
-          (nk.PAYMENT_AUTHORIZATION_CHARGE = "4402712000663"),
-          (nk.FUNIMATION_PROMOTION = "360036587771"),
-          (nk.PUBLIC_GUILD_GUILDLINES = "360035969312"),
-          (nk.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES = "14078261239831"),
-          (nk.SYSTEM_DMS = "360036118732"),
-          (nk.MISSING_ENTITLEMENT = "360016422832"),
-          (nk.AGE_GATE = "360040724612"),
-          (nk.STREAM_FAILED = "360040816151"),
-          (nk.REDUCED_MOTION = "360040613412"),
-          (nk.NOISE_SUPPRESSION = "360040843952"),
-          (nk.NSFW_AGE_GATING =
+        ((nV = tt || (tt = {})).ENABLE_MIC_FIREFOX = "204392448"),
+          (nV.PUSH_TO_TALK_ADMINISTRATOR_MODE = "205082178"),
+          (nV.ENABLE_MIC_CHROME = "205093487"),
+          (nV.PERMISSIONS_TUTORIAL = "206029707"),
+          (nV.TWITCH_INTEGRATION = "212112068"),
+          (nV.YOUTUBE_INTEGRATION = "215162978"),
+          (nV.VOICE_CONNECTION_ERRORS = "115001310031"),
+          (nV.NO_INPUT_DETECTED = "214925018"),
+          (nV.OVERLAY_INTRODUCTION = "217659737"),
+          (nV.PERMISSIONS_LOCKOUT = "218449248"),
+          (nV.SETTING_UP_TWO_FACTOR = "219576828"),
+          (nV.WEBHOOKS_INTRODUCTION = "228383668"),
+          (nV.QUICK_SWITCHER_TUTORIAL = "115000070311"),
+          (nV.SEARCH_INDEXING = "115000414847"),
+          (nV.USING_SEARCH = "115000468588"),
+          (nV.RICH_PRESENCE_INTRODUCTION = "115001557452"),
+          (nV.CORRUPT_INSTALLATION = "115004307527"),
+          (nV.SPOTIFY_AUTO_PAUSED = "115002872212"),
+          (nV.SPOTIFY_CONNECTION = "360000167212"),
+          (nV.SPELLCHECK = "360000877191"),
+          (nV.INVALID_INVITES = "360001556852"),
+          (nV.GDPR_ACCOUNT_DELETE = "212500837"),
+          (nV.GDPR_ACCOUNT_DISABLE = "360004066391"),
+          (nV.GDPR_REQUEST_DATA = "360004027692"),
+          (nV.GDPR_PACKAGE_CONTENTS = "360004957991"),
+          (nV.DATA_PRIVACY_CONTROLS = "360004109911"),
+          (nV.ACCESSIBILITY_TRACKING = "360035966492"),
+          (nV.NEARBY_FRIENDS = "360014894392"),
+          (nV.APPLICATION_STORE_OVERVIEW = "360012656092"),
+          (nV.APPLICATION_STORE_EARLY_ACCESS = "360027392172"),
+          (nV.GIFTING = "360020776291"),
+          (nV.GUILD_VANITY_URL = "115001542132"),
+          (nV.GUILD_SUBSCRIPTIONS = "360028038352"),
+          (nV.GUILD_BANNER_SPLASH = "360028716472"),
+          (nV.GUILD_INVITE_SPLASH = "4415841146391"),
+          (nV.GUILD_COMMUNITY_FEATURE = "360047132851"),
+          (nV.BUILD_OVERRIDE_EMBED = "360030114991"),
+          (nV.SUPPORTED_BROWSERS = "213491697"),
+          (nV.ANNOUNCEMENT_CHANNELS = "360032008192"),
+          (nV.GUILD_ANALYTICS = "360032807371"),
+          (nV.BILLING = "360017693772"),
+          (nV.PAYMENT_AUTHORIZATION_CHARGE = "4402712000663"),
+          (nV.FUNIMATION_PROMOTION = "360036587771"),
+          (nV.PUBLIC_GUILD_GUILDLINES = "360035969312"),
+          (nV.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES = "14078261239831"),
+          (nV.SYSTEM_DMS = "360036118732"),
+          (nV.MISSING_ENTITLEMENT = "360016422832"),
+          (nV.AGE_GATE = "360040724612"),
+          (nV.STREAM_FAILED = "360040816151"),
+          (nV.REDUCED_MOTION = "360040613412"),
+          (nV.NOISE_SUPPRESSION = "360040843952"),
+          (nV.NSFW_AGE_GATING =
             "115000084051#h_5206f3f2-0ee4-4380-b50a-25319e45bc7c"),
-          (nk.NSFW_GUILD_GUIDELINES = "1500005292701"),
-          (nk.PREMIUM_TRIAL = "360042410272"),
-          (nk.VOICE_VIDEO_TROUBLESHOOTING = "360045138471"),
-          (nk.GUILD_GETTING_STARTED = "360045138571"),
-          (nk.CHANNEL_FOLLOWING = "360028384531"),
-          (nk.WEBHOOKS = "228383668"),
-          (nk.INTEGRATIONS = "360045093012"),
-          (nk.PARTNER_CODE_OF_CONDUCT = "360024871991"),
-          (nk.MAX_MEMBERS = "360052841734"),
-          (nk.STICKERS = "360056891113"),
-          (nk.BLACK_FRIDAY_2020_PROMOTION = "360057438734"),
-          (nk.KEYBOARD_NAVIGATION = "1500000056121"),
-          (nk.DM_COULD_NOT_BE_DELIVERED = "360060145013"),
-          (nk.EPHEMERAL_MESSAGES = "1500000580222"),
-          (nk.OSX_SOUNDSHARE = "1500006741102"),
-          (nk.STAGE_CHANNEL_GUIDELINES = "1500010879761"),
-          (nk.STAGE_DISCOVERY = "1500011599542"),
-          (nk.STICKERS_UPLOAD = "4403089981975"),
-          (nk.STREAM_QUALITY_SETTINGS =
+          (nV.NSFW_GUILD_GUIDELINES = "1500005292701"),
+          (nV.PREMIUM_TRIAL = "360042410272"),
+          (nV.VOICE_VIDEO_TROUBLESHOOTING = "360045138471"),
+          (nV.GUILD_GETTING_STARTED = "360045138571"),
+          (nV.CHANNEL_FOLLOWING = "360028384531"),
+          (nV.WEBHOOKS = "228383668"),
+          (nV.INTEGRATIONS = "360045093012"),
+          (nV.PARTNER_CODE_OF_CONDUCT = "360024871991"),
+          (nV.MAX_MEMBERS = "360052841734"),
+          (nV.STICKERS = "360056891113"),
+          (nV.BLACK_FRIDAY_2020_PROMOTION = "360057438734"),
+          (nV.KEYBOARD_NAVIGATION = "1500000056121"),
+          (nV.DM_COULD_NOT_BE_DELIVERED = "360060145013"),
+          (nV.EPHEMERAL_MESSAGES = "1500000580222"),
+          (nV.OSX_SOUNDSHARE = "1500006741102"),
+          (nV.STAGE_CHANNEL_GUIDELINES = "1500010879761"),
+          (nV.STAGE_DISCOVERY = "1500011599542"),
+          (nV.STICKERS_UPLOAD = "4403089981975"),
+          (nV.STREAM_QUALITY_SETTINGS =
             "360040816151#h_01F02D2RBXRNRC20WS3ZHMMCTE"),
-          (nk.PREMIUM_DETAILS = "115000435108"),
-          (nk.PREMIUM_DETAILS_CANCEL_SUB =
+          (nV.PREMIUM_DETAILS = "115000435108"),
+          (nV.PREMIUM_DETAILS_CANCEL_SUB =
             "115000435108#h_01GFV3PNMEJEF92W0XX69MEE2W"),
-          (nk.LOCALIZED_PRICING = "4407269525911"),
-          (nk.SERVER_DISCOVERY = "360023968311"),
-          (nk.SERVER_DISCOVERY_GUIDELINES = "4409308485271"),
-          (nk.DISABLE_GUILD_COMMUNICATION = "4413305239191"),
-          (nk.GUILD_AUTOMOD_BLOCKED_MESSAGE = "4421269296535"),
-          (nk.GUILD_AUTOMOD_REGEX = "10069840290711"),
-          (nk.GUILD_RAID = "4421269296535"),
-          (nk.INVITE_DISABLED = "8458903738647"),
-          (nk.BLOCKED_PAYMENTS = "4708041338391"),
-          (nk.ROLE_SUBSCRIPTION_TRIAL = "5278912413335"),
-          (nk.HIGHLIGHTS = "5304469213079"),
-          (nk.FORCED_COLORS = "1500010454681"),
-          (nk.ROLE_STYLES = "1500010454681"),
-          (nk.CREATOR_TERMS = "5330075836311"),
-          (nk.CREATOR_FAQ = "5371495812631"),
-          (nk.CREATOR_POLICY = "10575066024983"),
-          (nk.POGGERMODE = "5706956956695"),
-          (nk.GUILD_HOME = "6156116949911"),
-          (nk.SERVER_WEB_PAGES = "4673515000983"),
-          (nk.TEXT_IN_VOICE = "4412085582359"),
-          (nk.QUARANTINE = "6461420677527"),
-          (nk.FORUMS = "6208479917079"),
-          (nk.GUILD_PROFILES = "4409388345495"),
-          (nk.XBOX_CONNECTION = "360003953831"),
-          (nk.PS_CONNECTION = "4419534960919"),
-          (nk.QUEST_HOW_TO_XBOX = "360003953831#h_01J1TYJ22SN8Q4YND06JAGPA57"),
-          (nk.QUEST_HOW_TO_PLAYSTATION =
+          (nV.LOCALIZED_PRICING = "4407269525911"),
+          (nV.SERVER_DISCOVERY = "360023968311"),
+          (nV.SERVER_DISCOVERY_GUIDELINES = "4409308485271"),
+          (nV.DISABLE_GUILD_COMMUNICATION = "4413305239191"),
+          (nV.GUILD_AUTOMOD_BLOCKED_MESSAGE = "4421269296535"),
+          (nV.GUILD_AUTOMOD_REGEX = "10069840290711"),
+          (nV.GUILD_RAID = "4421269296535"),
+          (nV.INVITE_DISABLED = "8458903738647"),
+          (nV.BLOCKED_PAYMENTS = "4708041338391"),
+          (nV.ROLE_SUBSCRIPTION_TRIAL = "5278912413335"),
+          (nV.HIGHLIGHTS = "5304469213079"),
+          (nV.FORCED_COLORS = "1500010454681"),
+          (nV.ROLE_STYLES = "1500010454681"),
+          (nV.CREATOR_TERMS = "5330075836311"),
+          (nV.CREATOR_FAQ = "5371495812631"),
+          (nV.CREATOR_POLICY = "10575066024983"),
+          (nV.POGGERMODE = "5706956956695"),
+          (nV.GUILD_HOME = "6156116949911"),
+          (nV.SERVER_WEB_PAGES = "4673515000983"),
+          (nV.TEXT_IN_VOICE = "4412085582359"),
+          (nV.QUARANTINE = "6461420677527"),
+          (nV.FORUMS = "6208479917079"),
+          (nV.GUILD_PROFILES = "4409388345495"),
+          (nV.XBOX_CONNECTION = "360003953831"),
+          (nV.PS_CONNECTION = "4419534960919"),
+          (nV.QUEST_HOW_TO_XBOX = "360003953831#h_01J1TYJ22SN8Q4YND06JAGPA57"),
+          (nV.QUEST_HOW_TO_PLAYSTATION =
             "4419534960919#h_01J1TXNAT4RFSX9R7HQ30MHFCC"),
-          (nk.VERIFICATION_FAQ = "6181726888215"),
-          (nk.ACTIVITY_STATUS_SETTINGS = "7931156448919"),
-          (nk.MESSAGE_REQUESTS = "7924992471191"),
-          (nk.RNA_CHANGELOG = "8537198296727"),
-          (nk.CONNECTION_DETAILS = "8063233404823"),
-          (nk.CONNECTION_DETAILS_ADMIN = "10388356626711"),
-          (nk.APP_DIRECTORY_HEADER_LEARN_MORE = "9360431966359"),
-          (nk.BOT_DATA_ACCESS = "7933951485975"),
-          (nk.HIGHLIGHTS_NOTIFICATIONS = "5304469213079"),
-          (nk.CRUNCHYROLL_CONNECTION = "9929188048023"),
-          (nk.ACTIVE_NITRO_BOGO_PROMOTION = "10167328543127"),
-          (nk.APPLICATION_COMMAND_PERMISSION_V3_WHAT_CHANGED =
+          (nV.VERIFICATION_FAQ = "6181726888215"),
+          (nV.ACTIVITY_STATUS_SETTINGS = "7931156448919"),
+          (nV.MESSAGE_REQUESTS = "7924992471191"),
+          (nV.RNA_CHANGELOG = "8537198296727"),
+          (nV.CONNECTION_DETAILS = "8063233404823"),
+          (nV.CONNECTION_DETAILS_ADMIN = "10388356626711"),
+          (nV.APP_DIRECTORY_HEADER_LEARN_MORE = "9360431966359"),
+          (nV.BOT_DATA_ACCESS = "7933951485975"),
+          (nV.HIGHLIGHTS_NOTIFICATIONS = "5304469213079"),
+          (nV.CRUNCHYROLL_CONNECTION = "9929188048023"),
+          (nV.ACTIVE_NITRO_BOGO_PROMOTION = "10167328543127"),
+          (nV.APPLICATION_COMMAND_PERMISSION_V3_WHAT_CHANGED =
             "10952896421783"),
-          (nk.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT = "10952702911639"),
-          (nk.SUPER_REACTIONS = "12102061808663"),
-          (nk.SOUNDBOARD = "12612888127767"),
-          (nk.NEW_LAYOUT = "12654190110999"),
-          (nk.GUILD_BOOSTING_FAQ = "360028038352"),
-          (nk.CLYDE_AI = "13066317497239"),
-          (nk.NITRO = "115000435108"),
-          (nk.ACTIVITIES = "4422142836759"),
-          (nk.VOICE_MESSAGES = "13091096725527"),
-          (nk.SAFE_DIRECT_MESSAGING = "115000068672"),
-          (nk.PAID_TERMS = "4410339366295"),
-          (nk.CONVERSATION_SUMMARIES = "12926016807575"),
-          (nk.SHARE_NITRO_FAQ = "13771635451415"),
-          (nk.POMELO_FAQ = "12620128861463"),
-          (nk.CONTACT_SYNC = "360061878534"),
-          (nk.PRIVATE_CHANNEL_INTEGRATIONS = "15104189280151"),
-          (nk.MEDIA_CHANNEL = "14346342766743"),
-          (nk.REMIXING = "15145601963031"),
-          (nk.SUMMER_2023_BOGO = "15089153846551"),
-          (nk.MEMBER_SAFETY_DASHBOARD = "15946797617431"),
-          (nk.CLIPS = "16861982215703"),
-          (nk.REMIXING_TEXT_SUPPORT =
+          (nV.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT = "10952702911639"),
+          (nV.SUPER_REACTIONS = "12102061808663"),
+          (nV.SOUNDBOARD = "12612888127767"),
+          (nV.NEW_LAYOUT = "12654190110999"),
+          (nV.GUILD_BOOSTING_FAQ = "360028038352"),
+          (nV.CLYDE_AI = "13066317497239"),
+          (nV.NITRO = "115000435108"),
+          (nV.ACTIVITIES = "4422142836759"),
+          (nV.VOICE_MESSAGES = "13091096725527"),
+          (nV.SAFE_DIRECT_MESSAGING = "115000068672"),
+          (nV.PAID_TERMS = "4410339366295"),
+          (nV.CONVERSATION_SUMMARIES = "12926016807575"),
+          (nV.SHARE_NITRO_FAQ = "13771635451415"),
+          (nV.POMELO_FAQ = "12620128861463"),
+          (nV.CONTACT_SYNC = "360061878534"),
+          (nV.PRIVATE_CHANNEL_INTEGRATIONS = "15104189280151"),
+          (nV.MEDIA_CHANNEL = "14346342766743"),
+          (nV.REMIXING = "15145601963031"),
+          (nV.SUMMER_2023_BOGO = "15089153846551"),
+          (nV.MEMBER_SAFETY_DASHBOARD = "15946797617431"),
+          (nV.CLIPS = "16861982215703"),
+          (nV.REMIXING_TEXT_SUPPORT =
             "15145601963031-Remix-FAQ#h_01H2Y1F86HNTVKWNVJJSB4C6A5"),
-          (nk.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551"),
-          (nk.SERVER_PRODUCTS =
+          (nV.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551"),
+          (nV.SERVER_PRODUCTS =
             "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1"),
-          (nk.WIN32_DEPRECATE = "17997797368471"),
-          (nk.PROFILE_BADGES = "360035962891"),
-          (nk.EXPLICIT_MEDIA_REDACTION = "18210995019671"),
-          (nk.SAFETY_ALERTS = "18210977897239"),
-          (nk.KEYWORD_FILTERS = "24269903094167"),
-          (nk.COPYRIGHT_AND_IP_POLICY = "4410339349655"),
-          (nk.NVIDIA_DRIVER_ISSUES = "18621944634391"),
-          (nk.ROLE_SUBSCRIPTION_CANCEL =
+          (nV.WIN32_DEPRECATE = "17997797368471"),
+          (nV.PROFILE_BADGES = "360035962891"),
+          (nV.EXPLICIT_MEDIA_REDACTION = "18210995019671"),
+          (nV.SAFETY_ALERTS = "18210977897239"),
+          (nV.KEYWORD_FILTERS = "24269903094167"),
+          (nV.COPYRIGHT_AND_IP_POLICY = "4410339349655"),
+          (nV.NVIDIA_DRIVER_ISSUES = "18621944634391"),
+          (nV.ROLE_SUBSCRIPTION_CANCEL =
             "19580873036695#h_01HGXEYG130EZKGQQ03A3ZHFEY"),
-          (nk.WIN7_8_DEPRECATE = "20470973046295"),
-          (nk.MACOS_17_18_DEPRECATE = "20900540446231"),
-          (nk.QUESTS_LEARN_MORE = "22225719947543"),
-          (nk.DATA_USED_TO_IMPROVE_DISCORD = "21864805694999"),
-          (nk.DATA_USED_FOR_RECOMMENDED = "21865322754327"),
-          (nk.USING_APPS_FAQ = "21334461140375#h_01HRQSA6C8H2XBF34NSSQH7ZFH"),
-          (nk.LAUNCHING_APPS_WITH_SHAPES_BUTTON = "21334461140375"),
-          (nk.MEMBER_LIST_ACTIVITY_FEED = "22045487931799"),
-          (nk.POLLS_FAQ = "22163184112407"),
-          (nk.QUESTS_PRIVACY_CONTROLS = "22225542459415"),
-          (nk.USER_PROFILE_RECENT_GAMES = "22489665250327"),
-          (nk.REFERRAL_PROGRAM = "22567595858327"),
-          (nk.PREMIUM_APRIL_2024_MARKETING_MOMENT = "22484323261463"),
-          (nk.CLANS_FAQ = "23187611406999"),
-          (nk.SUMMER_BOGO_2024 = "24485661785495"),
-          (nk.CHANNEL_LINKED_LOBBIES = "24485661785495"),
-          (nk.NITRO_FAQ = "115000435108#h_01GFV3PWAGD4EGTD91ERBZ5R4S"),
+          (nV.WIN7_8_DEPRECATE = "20470973046295"),
+          (nV.MACOS_17_18_DEPRECATE = "20900540446231"),
+          (nV.QUESTS_LEARN_MORE = "22225719947543"),
+          (nV.DATA_USED_TO_IMPROVE_DISCORD = "21864805694999"),
+          (nV.DATA_USED_FOR_RECOMMENDED = "21865322754327"),
+          (nV.USING_APPS_FAQ = "21334461140375#h_01HRQSA6C8H2XBF34NSSQH7ZFH"),
+          (nV.LAUNCHING_APPS_WITH_SHAPES_BUTTON = "21334461140375"),
+          (nV.MEMBER_LIST_ACTIVITY_FEED = "22045487931799"),
+          (nV.POLLS_FAQ = "22163184112407"),
+          (nV.QUESTS_PRIVACY_CONTROLS = "22225542459415"),
+          (nV.USER_PROFILE_RECENT_GAMES = "22489665250327"),
+          (nV.REFERRAL_PROGRAM = "22567595858327"),
+          (nV.PREMIUM_APRIL_2024_MARKETING_MOMENT = "22484323261463"),
+          (nV.CLANS_FAQ = "23187611406999"),
+          (nV.SUMMER_BOGO_2024 = "24485661785495"),
+          (nV.CHANNEL_LINKED_LOBBIES = "24485661785495"),
+          (nV.NITRO_FAQ = "115000435108#h_01GFV3PWAGD4EGTD91ERBZ5R4S"),
           ((tr || (tr = {})).INVALID_BILLING_ADDRESS =
             "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
-          ((nV = tn || (tn = {}))[(nV.HIDDEN = 1)] = "HIDDEN"),
-          (nV[(nV.PRIVATE = 2)] = "PRIVATE"),
-          (nV[(nV.OVERLAY_DISABLED = 4)] = "OVERLAY_DISABLED"),
-          (nV[(nV.ENTITLED = 8)] = "ENTITLED"),
-          (nV[(nV.PREMIUM = 16)] = "PREMIUM"),
+          ((nk = tn || (tn = {}))[(nk.HIDDEN = 1)] = "HIDDEN"),
+          (nk[(nk.PRIVATE = 2)] = "PRIVATE"),
+          (nk[(nk.OVERLAY_DISABLED = 4)] = "OVERLAY_DISABLED"),
+          (nk[(nk.ENTITLED = 8)] = "ENTITLED"),
+          (nk[(nk.PREMIUM = 16)] = "PREMIUM"),
           ((nx = ta || (ta = {})).DONE = "DONE"),
           (nx.PLANNING = "PLANNING"),
           (nx.PREPARING = "PREPARING"),
@@ -11908,13 +11909,13 @@
           (aR.CHANNEL_POPOUT = "DISCORD_CHANNEL_POPOUT"),
           ((aA = tK || (tK = {})).LOADED = "loaded"),
           (aA.UNLOADED = "unloaded"),
-          ((aT = tk || (tk = {})).CONNECTING = "CONNECTING"),
+          ((aT = tV || (tV = {})).CONNECTING = "CONNECTING"),
           (aT.ACTIVE = "ACTIVE"),
           (aT.RECONNECTING = "RECONNECTING"),
           (aT.ENDED = "ENDED"),
           (aT.PAUSED = "PAUSED"),
           (aT.FAILED = "FAILED"),
-          ((ad = tV || (tV = {})).USER_REQUESTED = "user_requested"),
+          ((ad = tk || (tk = {})).USER_REQUESTED = "user_requested"),
           (ad.STREAM_FULL = "stream_full"),
           (ad.UNAUTHORIZED = "unauthorized"),
           (ad.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited"),
@@ -12038,8 +12039,8 @@
           H,
           Y,
           K,
-          k,
           V,
+          k,
           x,
           F,
           W,
@@ -12104,11 +12105,11 @@
           (K[(K.BLURRED_WITH_QUERY = 1)] = "BLURRED_WITH_QUERY"),
           (K[(K.FOCUSED_NO_QUERY = 2)] = "FOCUSED_NO_QUERY"),
           (K[(K.FOCUSED_WITH_QUERY = 3)] = "FOCUSED_WITH_QUERY"),
-          ((k = I || (I = {}))[(k.GENERAL = 0)] = "GENERAL"),
-          (k[(k.TEXT = 1)] = "TEXT"),
-          (k[(k.VOICE = 2)] = "VOICE"),
-          ((V = u || (u = {})).LANDING = "LANDING"),
-          (V.NAME = "NAME"),
+          ((V = I || (I = {}))[(V.GENERAL = 0)] = "GENERAL"),
+          (V[(V.TEXT = 1)] = "TEXT"),
+          (V[(V.VOICE = 2)] = "VOICE"),
+          ((k = u || (u = {})).LANDING = "LANDING"),
+          (k.NAME = "NAME"),
           ((x = l || (l = {}))[(x.SAFARI = 0)] = "SAFARI"),
           (x[(x.IN_APP = 1)] = "IN_APP"),
           (x[(x.CHROME = 2)] = "CHROME"),
@@ -12383,7 +12384,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1a28ee33875b0ec639d7d0eb1b3166cb83ccb628",
+            release: "discord_web-b4985f12a1f11ce0fa656fa2b5f1c11b6c77224e",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12452,8 +12453,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "326806"), "326806"));
-          i.YA("builtAt", String("1726184794546"));
+            i.YA("buildNumber", ((e = "326824"), "326824"));
+          i.YA("builtAt", String("1726186992497"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -16524,7 +16525,7 @@
             return M;
           },
           RK: function () {
-            return eV;
+            return ek;
           },
           S7: function () {
             return T;
@@ -16614,7 +16615,7 @@
             return eK;
           },
           yX: function () {
-            return ek;
+            return eV;
           },
           yY: function () {
             return eG;
@@ -16662,8 +16663,8 @@
           H,
           Y,
           K,
-          k,
           V,
+          k,
           x,
           F,
           W,
@@ -16826,12 +16827,12 @@
           (K[(K.REVERSED = 3)] = "REVERSED"),
           (K[(K.REFUNDED = 4)] = "REFUNDED"),
           (K[(K.CANCELED = 5)] = "CANCELED"),
-          ((k = u || (u = {}))[(k.PREMIUM = 1)] = "PREMIUM"),
-          (k[(k.GUILD = 2)] = "GUILD"),
-          (k[(k.APPLICATION = 3)] = "APPLICATION"),
-          ((V = l || (l = {})).PAYPAL_POPUP_CLOSED = "PAYPAL_POPUP_CLOSED"),
-          (V.VENMO_APP_CANCELED = "VENMO_APP_CANCELED"),
-          (V.VENMO_CANCELED = "VENMO_CANCELED"),
+          ((V = u || (u = {}))[(V.PREMIUM = 1)] = "PREMIUM"),
+          (V[(V.GUILD = 2)] = "GUILD"),
+          (V[(V.APPLICATION = 3)] = "APPLICATION"),
+          ((k = l || (l = {})).PAYPAL_POPUP_CLOSED = "PAYPAL_POPUP_CLOSED"),
+          (k.VENMO_APP_CANCELED = "VENMO_APP_CANCELED"),
+          (k.VENMO_CANCELED = "VENMO_CANCELED"),
           Object.freeze({ CONSTANT: 1, APPLE_STICKER: 2 }),
           ((x = R || (R = {}))[(x.DISCOVERY = 0)] = "DISCOVERY"),
           (x[(x.CHECKOUT = 1)] = "CHECKOUT"),
@@ -17093,7 +17094,7 @@
         let eH = "token",
           eY = "tokens",
           eK = "https://".concat("status.discord.com"),
-          ek = {
+          eV = {
             PRESSKIT: "https://app.box.com/s/5puqm5ijahrrdao7yldi7fr3zah5i1am",
             REBRAND_PRESSKIT:
               "https://www.dropbox.com/scl/fo/2vittfakjukwa3zl4gnxh/AOS0AZlx-zA4TjDyv-M-dgk?rlkey=kn0v1lcqfq1lurj3lk3x1ujhf&dl=0",
@@ -17127,7 +17128,7 @@
             TWITTER_SUPPORT: "https://twitter.com/discord_support",
             QUESTS: "/quests",
           },
-          eV = Object.freeze({
+          ek = Object.freeze({
             TWITTER: Object.freeze({
               default: "https://twitter.com/discord",
               ja: "https://twitter.com/discord_jp",
@@ -23060,7 +23061,7 @@
               );
             };
             var K = _.type,
-              k = function () {
+              V = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = h(e, "rgba"),
@@ -23075,7 +23076,7 @@
                     n + "(" + r.slice(0, "rgb" === n ? 3 : 4).join(",") + ")");
               };
             (u.prototype.css = function (e) {
-              return k(this._rgb, e);
+              return V(this._rgb, e);
             }),
               (l.css = function () {
                 for (var e = [], t = arguments.length; t--; )
@@ -23094,10 +23095,10 @@
                   if (!t.length && "string" === K(e) && Y.test(e)) return "css";
                 },
               });
-            var V = _.unpack;
+            var k = _.unpack;
             (E.format.gl = function () {
               for (var e = [], t = arguments.length; t--; ) e[t] = arguments[t];
-              var r = V(e, "rgba");
+              var r = k(e, "rgba");
               return (r[0] *= 255), (r[1] *= 255), (r[2] *= 255), r;
             }),
               (l.gl = function () {
@@ -23607,8 +23608,8 @@
                 },
               });
             var eK = _.unpack,
-              ek = _.RAD2DEG,
-              eV = Math.sqrt,
+              eV = _.RAD2DEG,
+              ek = Math.sqrt,
               ex = Math.atan2,
               eF = Math.round,
               eW = function () {
@@ -23618,8 +23619,8 @@
                   n = r[0],
                   a = r[1],
                   o = r[2],
-                  i = eV(a * a + o * o),
-                  _ = (ex(o, a) * ek + 360) % 360;
+                  i = ek(a * a + o * o),
+                  _ = (ex(o, a) * eV + 360) % 360;
                 return 0 === eF(1e4 * i) && (_ = Number.NaN), [n, i, _];
               },
               eX = _.unpack,
@@ -24412,8 +24413,8 @@
             };
             var tY = _.clip_rgb,
               tK = Math.pow,
-              tk = Math.sqrt,
-              tV = Math.PI,
+              tV = Math.sqrt,
+              tk = Math.PI,
               tx = Math.cos,
               tF = Math.sin,
               tW = Math.atan2,
@@ -24432,9 +24433,9 @@
                     (n[3] += _[3] * i);
                 }
                 return (
-                  (n[0] = tk(n[0])),
-                  (n[1] = tk(n[1])),
-                  (n[2] = tk(n[2])),
+                  (n[0] = tV(n[0])),
+                  (n[1] = tV(n[1])),
+                  (n[2] = tV(n[2])),
                   n[3] > 0.9999999 && (n[3] = 1),
                   new u(tY(n))
                 );
@@ -24966,9 +24967,9 @@
                       return e - t;
                     })),
                       _.push(Y[0]);
-                    for (var k = 1; k < Y.length; k += 2) {
-                      var V = Y[k];
-                      !isNaN(V) && -1 === _.indexOf(V) && _.push(V);
+                    for (var V = 1; V < Y.length; V += 2) {
+                      var k = Y[V];
+                      !isNaN(k) && -1 === _.indexOf(k) && _.push(k);
                     }
                   }
                   return _;
@@ -25444,7 +25445,7 @@
                     _.push(isNaN(i[c]) ? 0 : r[0]),
                     "h" === t.charAt(c) && !isNaN(i[c]))
                   ) {
-                    var I = (i[c] / 180) * tV;
+                    var I = (i[c] / 180) * tk;
                     (E += tx(I) * r[0]), (s += tF(I) * r[0]);
                   }
                 var l = o.alpha() * r[0];
@@ -25454,14 +25455,14 @@
                   for (var o = 0; o < i.length; o++)
                     if (!isNaN(a[o])) {
                       if (((_[o] += r[n + 1]), "h" === t.charAt(o))) {
-                        var c = (a[o] / 180) * tV;
+                        var c = (a[o] / 180) * tk;
                         (E += tx(c) * r[n + 1]), (s += tF(c) * r[n + 1]);
                       } else i[o] += a[o] * r[n + 1];
                     }
                 });
                 for (var R = 0; R < i.length; R++)
                   if ("h" === t.charAt(R)) {
-                    for (var A = (tW(s / _[R], E / _[R]) / tV) * 180; A < 0; )
+                    for (var A = (tW(s / _[R], E / _[R]) / tk) * 180; A < 0; )
                       A += 360;
                     for (; A >= 360; ) A -= 360;
                     i[R] = A;
@@ -37837,8 +37838,8 @@ Error:`,
             enableScreenshot: H = !0,
             useSentryUser: Y = { email: "email", name: "username" },
             tags: K,
-            colorScheme: k = "system",
-            themeLight: V = {},
+            colorScheme: V = "system",
+            themeLight: k = {},
             themeDark: x = {},
             addScreenshotButtonLabel: F = h,
             cancelButtonLabel: W = l,
@@ -37873,9 +37874,9 @@ Error:`,
                 enableScreenshot: H,
                 useSentryUser: Y,
                 tags: K,
-                colorScheme: k,
+                colorScheme: V,
                 themeDark: x,
-                themeLight: V,
+                themeLight: k,
                 triggerLabel: ea,
                 triggerAriaLabel: eo,
                 cancelButtonLabel: W,
@@ -38224,8 +38225,8 @@ ${
           H,
           Y,
           K,
-          k,
           V,
+          k,
           x,
           F = {},
           W = [],
@@ -38289,8 +38290,8 @@ ${
         }
         function et(e) {
           ((!e.__d && (e.__d = !0) && K.push(e) && !er.__r++) ||
-            k !== H.debounceRendering) &&
-            ((k = H.debounceRendering) || V)(er);
+            V !== H.debounceRendering) &&
+            ((V = H.debounceRendering) || k)(er);
         }
         function er() {
           var e,
@@ -38906,7 +38907,7 @@ ${
           }),
           (Z.prototype.render = Q),
           (K = []),
-          (V =
+          (k =
             "function" == typeof Promise
               ? Promise.prototype.then.bind(Promise.resolve())
               : setTimeout),
@@ -39205,7 +39206,7 @@ ${
           },
           eK =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/DialogHeader.tsx";
-        function ek({ options: e }) {
+        function eV({ options: e }) {
           let t = eU(
             () => ({
               __html: (function () {
@@ -39248,7 +39249,7 @@ ${
               : null,
           );
         }
-        let eV =
+        let ek =
           "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/Form.tsx";
         function ex(e, t) {
           let r = e.get(t);
@@ -39358,13 +39359,13 @@ ${
                 [c && g, o, i],
               ),
               __self: this,
-              __source: { fileName: eV, lineNumber: 144 },
+              __source: { fileName: ek, lineNumber: 144 },
             },
             m && g
               ? z(m, {
                   onError: y,
                   __self: this,
-                  __source: { fileName: eV, lineNumber: 146 },
+                  __source: { fileName: ek, lineNumber: 146 },
                 })
               : null,
             z(
@@ -39373,14 +39374,14 @@ ${
                 class: "form__right",
                 "data-sentry-feedback": !0,
                 __self: this,
-                __source: { fileName: eV, lineNumber: 149 },
+                __source: { fileName: ek, lineNumber: 149 },
               },
               z(
                 "div",
                 {
                   class: "form__top",
                   __self: this,
-                  __source: { fileName: eV, lineNumber: 150 },
+                  __source: { fileName: ek, lineNumber: 150 },
                 },
                 h
                   ? z(
@@ -39388,7 +39389,7 @@ ${
                       {
                         class: "form__error-container",
                         __self: this,
-                        __source: { fileName: eV, lineNumber: 151 },
+                        __source: { fileName: ek, lineNumber: 151 },
                       },
                       h,
                     )
@@ -39400,14 +39401,14 @@ ${
                         for: "name",
                         class: "form__label",
                         __self: this,
-                        __source: { fileName: eV, lineNumber: 154 },
+                        __source: { fileName: ek, lineNumber: 154 },
                       },
                       z(eW, {
                         label: f,
                         isRequiredLabel: D,
                         isRequired: N,
                         __self: this,
-                        __source: { fileName: eV, lineNumber: 155 },
+                        __source: { fileName: ek, lineNumber: 155 },
                       }),
                       z("input", {
                         class: "form__input",
@@ -39418,7 +39419,7 @@ ${
                         required: N,
                         type: "text",
                         __self: this,
-                        __source: { fileName: eV, lineNumber: 156 },
+                        __source: { fileName: ek, lineNumber: 156 },
                       }),
                     )
                   : z("input", {
@@ -39427,7 +39428,7 @@ ${
                       name: "name",
                       type: "hidden",
                       __self: this,
-                      __source: { fileName: eV, lineNumber: 167 },
+                      __source: { fileName: ek, lineNumber: 167 },
                     }),
                 E
                   ? z(
@@ -39436,14 +39437,14 @@ ${
                         for: "email",
                         class: "form__label",
                         __self: this,
-                        __source: { fileName: eV, lineNumber: 171 },
+                        __source: { fileName: ek, lineNumber: 171 },
                       },
                       z(eW, {
                         label: A,
                         isRequiredLabel: D,
                         isRequired: d,
                         __self: this,
-                        __source: { fileName: eV, lineNumber: 172 },
+                        __source: { fileName: ek, lineNumber: 172 },
                       }),
                       z("input", {
                         class: "form__input",
@@ -39454,7 +39455,7 @@ ${
                         required: d,
                         type: "email",
                         __self: this,
-                        __source: { fileName: eV, lineNumber: 173 },
+                        __source: { fileName: ek, lineNumber: 173 },
                       }),
                     )
                   : z("input", {
@@ -39463,7 +39464,7 @@ ${
                       name: "email",
                       type: "hidden",
                       __self: this,
-                      __source: { fileName: eV, lineNumber: 184 },
+                      __source: { fileName: ek, lineNumber: 184 },
                     }),
                 z(
                   "label",
@@ -39471,14 +39472,14 @@ ${
                     for: "message",
                     class: "form__label",
                     __self: this,
-                    __source: { fileName: eV, lineNumber: 187 },
+                    __source: { fileName: ek, lineNumber: 187 },
                   },
                   z(eW, {
                     label: p,
                     isRequiredLabel: D,
                     isRequired: !0,
                     __self: this,
-                    __source: { fileName: eV, lineNumber: 188 },
+                    __source: { fileName: ek, lineNumber: 188 },
                   }),
                   z("textarea", {
                     autoFocus: !0,
@@ -39489,7 +39490,7 @@ ${
                     required: !0,
                     rows: 5,
                     __self: this,
-                    __source: { fileName: eV, lineNumber: 189 },
+                    __source: { fileName: ek, lineNumber: 189 },
                   }),
                 ),
                 m
@@ -39499,7 +39500,7 @@ ${
                         for: "screenshot",
                         class: "form__label",
                         __self: this,
-                        __source: { fileName: eV, lineNumber: 201 },
+                        __source: { fileName: ek, lineNumber: 201 },
                       },
                       z(
                         "button",
@@ -39510,7 +39511,7 @@ ${
                             G(null), P((e) => !e);
                           },
                           __self: this,
-                          __source: { fileName: eV, lineNumber: 202 },
+                          __source: { fileName: ek, lineNumber: 202 },
                         },
                         g ? l : u,
                       ),
@@ -39520,7 +39521,7 @@ ${
                             {
                               class: "form__error-container",
                               __self: this,
-                              __source: { fileName: eV, lineNumber: 212 },
+                              __source: { fileName: ek, lineNumber: 212 },
                             },
                             U.message,
                           )
@@ -39533,7 +39534,7 @@ ${
                 {
                   class: "btn-group",
                   __self: this,
-                  __source: { fileName: eV, lineNumber: 216 },
+                  __source: { fileName: ek, lineNumber: 216 },
                 },
                 z(
                   "button",
@@ -39541,7 +39542,7 @@ ${
                     class: "btn btn--primary",
                     type: "submit",
                     __self: this,
-                    __source: { fileName: eV, lineNumber: 217 },
+                    __source: { fileName: ek, lineNumber: 217 },
                   },
                   L,
                 ),
@@ -39552,7 +39553,7 @@ ${
                     type: "button",
                     onClick: n,
                     __self: this,
-                    __source: { fileName: eV, lineNumber: 220 },
+                    __source: { fileName: ek, lineNumber: 220 },
                   },
                   R,
                 ),
@@ -39566,7 +39567,7 @@ ${
             {
               class: "form__label__text",
               __self: this,
-              __source: { fileName: eV, lineNumber: 239 },
+              __source: { fileName: ek, lineNumber: 239 },
             },
             e,
             t &&
@@ -39575,7 +39576,7 @@ ${
                 {
                   class: "form__label__text--required",
                   __self: this,
-                  __source: { fileName: eV, lineNumber: 241 },
+                  __source: { fileName: ek, lineNumber: 241 },
                 },
                 r,
               ),
@@ -39696,7 +39697,7 @@ ${
                         __self: this,
                         __source: { fileName: eX, lineNumber: 59 },
                       },
-                      z(ek, {
+                      z(eV, {
                         options: n,
                         __self: this,
                         __source: { fileName: eX, lineNumber: 66 },
@@ -41483,7 +41484,7 @@ ${eQ}
         let n, a, o, i, _, E;
         r.d(t, {
           G: function () {
-            return rV;
+            return rk;
           },
           T: function () {
             return rW;
@@ -41521,8 +41522,8 @@ ${eQ}
           H = r(26506),
           Y = r(650093),
           K = r(501684),
-          k = r(157079),
-          V = r(469359),
+          V = r(157079),
+          k = r(469359),
           x = r(393523);
         let F = g.n,
           W = "sentryReplaySession",
@@ -42774,16 +42775,16 @@ ${eQ}
             (document.body && document.body.clientWidth)
           );
         }
-        function ek(e) {
+        function eV(e) {
           return e
             ? e.nodeType === e.ELEMENT_NODE
               ? e
               : e.parentElement
             : null;
         }
-        function eV(e, t, r, n, a) {
+        function ek(e, t, r, n, a) {
           if (!e) return !1;
-          let o = ek(e);
+          let o = eV(e);
           if (!o) return !1;
           let i = eg(t, r);
           if (!a) {
@@ -43211,7 +43212,7 @@ ${eQ}
                   switch (e.type) {
                     case "characterData": {
                       let t = e.target.textContent;
-                      !eV(
+                      !ek(
                         e.target,
                         this.blockClass,
                         this.blockSelector,
@@ -43230,7 +43231,7 @@ ${eQ}
                               this.maskAllText,
                             ) && t
                               ? this.maskTextFn
-                                ? this.maskTextFn(t, ek(e.target))
+                                ? this.maskTextFn(t, eV(e.target))
                                 : t.replace(/[\S]/g, "*")
                               : t,
                           node: e.target,
@@ -43265,7 +43266,7 @@ ${eQ}
                         });
                       }
                       if (
-                        eV(
+                        ek(
                           e.target,
                           this.blockClass,
                           this.blockSelector,
@@ -43337,7 +43338,7 @@ ${eQ}
                     }
                     case "childList":
                       if (
-                        eV(
+                        ek(
                           e.target,
                           this.blockClass,
                           this.blockSelector,
@@ -43355,7 +43356,7 @@ ${eQ}
                               : this.mirror.getId(e.target);
                           if (
                             !(
-                              eV(
+                              ek(
                                 e.target,
                                 this.blockClass,
                                 this.blockSelector,
@@ -43404,7 +43405,7 @@ ${eQ}
                           -1 !== r &&
                           (this.movedMap[e4(this.mirror.getId(e), r)] = !0);
                     } else this.addedSet.add(e), this.droppedSet.delete(e);
-                    !eV(
+                    !ek(
                       e,
                       this.blockClass,
                       this.blockSelector,
@@ -43582,7 +43583,7 @@ ${eQ}
               eb(
                 tt((i) => {
                   let _ = ta(i);
-                  if (!_ || eV(_, n, a, o, !0)) return;
+                  if (!_ || ek(_, n, a, o, !0)) return;
                   let E = r.getId(_);
                   if (_ === t && t.defaultView) {
                     let r = eH(t.defaultView);
@@ -43778,7 +43779,7 @@ ${eQ}
                 s = null,
                 c = (t) => (i) => {
                   let _ = ta(i);
-                  if (eV(_, n, a, o, !0)) return;
+                  if (ek(_, n, a, o, !0)) return;
                   let E = null,
                     c = t;
                   if ("pointerType" in i) {
@@ -43890,7 +43891,7 @@ ${eQ}
                   T = r && en(r.tagName);
                 if (
                   ("OPTION" === T && (r = r.parentElement),
-                  !r || !T || 0 > t_.indexOf(T) || eV(r, n, a, o, !0))
+                  !r || !T || 0 > t_.indexOf(T) || ek(r, n, a, o, !0))
                 )
                   return;
                 let N = r;
@@ -44019,7 +44020,7 @@ ${eQ}
                   eb(
                     tt((o) => {
                       let _ = ta(o);
-                      if (!_ || eV(_, t, r, n, !0)) return;
+                      if (!_ || ek(_, t, r, n, !0)) return;
                       let {
                         currentTime: E,
                         volume: s,
@@ -44323,7 +44324,7 @@ ${eQ}
                       endContainer: s,
                       endOffset: c,
                     } = e.getRangeAt(t);
-                    !(eV(i, n, a, o, !0) || eV(s, n, a, o, !0)) &&
+                    !(ek(i, n, a, o, !0) || ek(s, n, a, o, !0)) &&
                       E.push({
                         start: r.getId(i),
                         startOffset: _,
@@ -44927,11 +44928,11 @@ ${eQ}
             plugins: H,
             keepIframeSrcFn: Y = () => !1,
             ignoreCSSAttributes: K = new Set([]),
-            errorHandler: k,
-            onMutation: V,
+            errorHandler: V,
+            onMutation: k,
             getCanvasManager: x,
           } = e;
-          o = k;
+          o = V;
           let F = !y || window.parent === window,
             W = !1;
           if (!F)
@@ -45110,7 +45111,7 @@ ${eQ}
               maxCanvasSize: C,
               sampling: M.canvas,
               dataURLOptions: P,
-              errorHandler: k,
+              errorHandler: V,
             }),
             ea =
               "boolean" == typeof __RRWEB_EXCLUDE_SHADOW_DOM__ &&
@@ -45120,7 +45121,7 @@ ${eQ}
                     mutationCb: z,
                     scrollCb: J,
                     bypassOptions: {
-                      onMutation: V,
+                      onMutation: k,
                       blockClass: E,
                       blockSelector: s,
                       unblockSelector: c,
@@ -45311,7 +45312,7 @@ ${eQ}
               t = (e) =>
                 tt(tu)(
                   {
-                    onMutation: V,
+                    onMutation: k,
                     mutationCb: z,
                     mousemoveCb: (e, t) =>
                       i({
@@ -45806,8 +45807,8 @@ ${eQ}
               ? null
               : {
                   type: `${t}.${r}`,
-                  start: tV(o),
-                  end: tV(a),
+                  start: tk(o),
+                  end: tk(a),
                   name: n,
                   data: {
                     size: s,
@@ -45819,7 +45820,7 @@ ${eQ}
           },
           paint: function (e) {
             let { duration: t, entryType: r, name: n, startTime: a } = e,
-              o = tV(a);
+              o = tk(a);
             return { type: r, name: n, start: o, end: o + t, data: void 0 };
           },
           navigation: function (e) {
@@ -45844,8 +45845,8 @@ ${eQ}
               ? null
               : {
                   type: `${t}.${A}`,
-                  start: tV(l),
-                  end: tV(o),
+                  start: tk(l),
+                  end: tk(o),
                   name: r,
                   data: {
                     size: R,
@@ -45866,11 +45867,11 @@ ${eQ}
         function tK(e, t) {
           return ({ metric: r }) => void t.replayPerformanceEntries.push(e(r));
         }
-        function tk(e) {
+        function tV(e) {
           let t = tY[e.entryType];
           return t ? t(e) : null;
         }
-        function tV(e) {
+        function tk(e) {
           return ((U.Z1 || F.performance.timeOrigin) + e) / 1e3;
         }
         function tx(e) {
@@ -45906,7 +45907,7 @@ ${eQ}
         function tj(e, t, r) {
           let n = e.value,
             a = e.rating,
-            o = tV(n);
+            o = tk(n);
           return {
             type: "web-vital",
             name: t,
@@ -46658,7 +46659,7 @@ ${eQ}
                     response: rT(u),
                   };
                 }
-                let l = _[k.xU],
+                let l = _[V.xU],
                   R = l ? rN(l.request_headers, r.networkRequestHeaders) : {},
                   A = rN(
                     (function (e) {
@@ -47507,7 +47508,7 @@ ${eQ}
                   (!(function (e) {
                     var t, r, n, a;
                     let o = (0, O.s3)();
-                    (0, V.O)(tw(e)),
+                    (0, k.O)(tw(e)),
                       (0, x.a)(
                         ((t = e),
                         (e) => {
@@ -48012,7 +48013,7 @@ ${eQ}
           }
           _addPerformanceEntries() {
             let e = this.performanceEntries
-              .map(tk)
+              .map(tV)
               .filter(Boolean)
               .concat(this.replayPerformanceEntries);
             return (
@@ -48170,8 +48171,8 @@ ${eQ}
         let rY =
             'img,image,svg,video,object,picture,embed,map,audio,link[rel="icon"],link[rel="apple-touch-icon"]',
           rK = ["content-length", "content-type", "accept"],
-          rk = !1,
-          rV = (e) => new rx(e);
+          rV = !1,
+          rk = (e) => new rx(e);
         class rx {
           static __initStatic() {
             this.id = "Replay";
@@ -48315,10 +48316,10 @@ ${eQ}
             this._isInitialized = !0;
           }
           get _isInitialized() {
-            return rk;
+            return rV;
           }
           set _isInitialized(e) {
-            rk = e;
+            rV = e;
           }
           afterAllSetup(e) {
             if (!!(0, H.j)() && !this._replay)
@@ -48449,4 +48450,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.78bc73aa8d347afdcf17.js.map
+//# sourceMappingURL=sentry.92fd21b047a143dfdc10.js.map
