@@ -249,7 +249,7 @@
 </p>
 <h4 id="h_01J740B6VY3X7194Q7QRN29YQM" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >Hailey Avatar Decoration - Enjoy until November 5, 2024 (11:59
+    >Hailey Avatar Decoration - Enjoy until November 6, 2024 (11:59
     UTC)!  </span
   >
 </h4>
