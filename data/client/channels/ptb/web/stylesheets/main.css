@@ -20947,6 +20947,9 @@ h3.improved_f017d0:after {
   gap: 8px;
   align-items: center;
 }
+:where(.badgesContainer_d60c6d):empty {
+  display: none;
+}
 .badgesContainerCard_d60c6d > :nth-child(n + 3) {
   display: none;
 }
@@ -44201,4 +44204,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.18bd071e3c51ed2748f3.css.map*/
+/*# sourceMappingURL=12633.969e98f778aea381e83f.css.map*/
