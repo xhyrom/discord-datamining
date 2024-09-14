@@ -8,7 +8,8 @@
       "Control Bucket",
       "Treatment 7: Tide 2024",
       "Treatment 8: Robert 2024",
-      "Treatment 9: Storm 2024"
+      "Treatment 9: Storm 2024",
+      "Treatment 10: Equinox/fall 2024"
     ],
     "hash": 488433301,
     "buckets": [
@@ -16,7 +17,8 @@
       0,
       7,
       8,
-      9
+      9,
+      10
     ],
     "holdout": {},
     "aa_mode": false,
