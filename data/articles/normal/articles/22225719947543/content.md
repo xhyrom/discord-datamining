@@ -57,7 +57,21 @@
     </ul>
   </li>
   <li>
-    <a href="#h_01HVPBZR5F0EKW79KK7RGEK1HG">Opting-out of Quests Promotions</a>
+    <a href="#h_01HVPBZR5F0EKW79KK7RGEK1HG"
+      >Controlling the Quest Promotions You See</a
+    >
+    <ul>
+      <li>
+        <a href="#h_01HVPBZR5FP77BF55STCFXMRS9"
+          >Hide an In-app Promotion of an Individual Quest </a
+        >
+      </li>
+      <li>
+        <a href="#h_01HVPBZR5F0EKW79KK7RGEK1HG"
+          >Opting-out of Quests Promotions</a
+        >
+      </li>
+    </ul>
   </li>
   <li>
     <a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</a>
@@ -315,23 +329,24 @@
   decoration, you can claim your reward by selecting the
   <strong>Claim Reward </strong>button.
 </p>
-<h1 id="h_01HVPBZR5F0EKW79KK7RGEK1HG">Opting-out of Quests Promotions</h1>
+<h1 id="h_01HVPBZR5F0EKW79KK7RGEK1HG">
+  Controlling the Quest Promotions You See
+</h1>
 <p>
-  If you’re not interested in receiving promotions of Discord Quests, you can
-  control these promotions in the following ways: 
+  We've built controls into the Quest experience to help you manage the types of
+  Quests you see:
 </p>
 <h2 id="h_01HVPBZR5FP77BF55STCFXMRS9">
   Hide an In-app Promotion of an Individual Quest<strong> </strong>
 </h2>
 <p>
-  If you still want to receive in-app promotions for future Quests, but you want
-  to hide an in-app promotion for a specific Quest or game you’re not interested
-  in, press the <strong>ellipsis </strong>[<img
-    src="https://support.discord.com/hc/article_attachments/22871262520343"
+  If you want to hide an in-app promotion for a specific Quest or game you’re
+  not interested in, press the <strong>ellipsis</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/26336784763671"
     width="24"
     height="24"
   />] on the Quest in-app promotion to access the menu and then select
-  <strong>Hide This</strong> to hide this particular in-app promotion. 
+  <strong>Hide This</strong> to hide this particular in-app promotion.
 </p>
 <p>
   Once you've done this, you'll no longer receive notifications about this Quest
@@ -394,15 +409,27 @@
   Although these settings are disabled, you will still be able to participate in
   Quests if you navigate to <strong>Quest Home</strong> (<strong
     >Discover &gt; Quests</strong
-  >). You may see Quests shared by your friends or reflected in their activity
-  status on Discord.
+  >).
+  <span
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >You may still see Quests promotions, but they won’t be based on your
+    activity on Discord.</span
+  >
 </div>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/22871262555799"
-    width="624"
-    height="421"
-  />
+  <span
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    ><img
+      src="https://support.discord.com/hc/article_attachments/26336778784407"
+      width="624"
+      height="424"
+  /></span>
 </p>
 <div class="info-box">
   If you decide later that you want to receive notifications about Discord

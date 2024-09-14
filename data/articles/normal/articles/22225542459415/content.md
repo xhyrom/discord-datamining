@@ -7,14 +7,21 @@
   >
   are typically rewards or other experiences based on you interacting with the
   games you love while using Discord. You can view what Quests or other
-  experiences are available on Discord through your
-  <strong>Gift Inventory</strong>. 
+  experiences are available on Discord through your <strong>Quest</strong>
+  <strong>Home</strong> (<strong>Discover &gt; Quests</strong>).
 </p>
 <p>
   We may tell you about Quests that we think will interest you based on the
   games you play or other information associated with your Discord account. If
-  you’re not interested in receiving Discord Quests promotions, you can opt-out
-  of this feature in your <strong>User Settings</strong>.
+  you’re not interested in receiving personalized Discord Quest promotions, you
+  can opt out of the use of your data for Quest targeting. You may still see
+  Quest promotions, but they won’t be personalized based on your activity on
+  Discord.
+</p>
+<p>
+  You can opt-out of these personalized Quest promotions by turning off the
+  <strong>In-Game Rewards (aka Quests)</strong> toggle in your
+  <strong>User Settings</strong>:
 </p>
 <p>
   1. Open Discord and press the <strong>cogwheel </strong>[<img
@@ -35,9 +42,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22318423128471"
-    width="600"
-    height="433"
+    src="https://support.discord.com/hc/article_attachments/26364974814871"
+    alt="ScreenRecording2024-09-13at4.49.34PM-ezgif.com-video-to-gif-converter.gif"
   />
 </p>
 <p>
