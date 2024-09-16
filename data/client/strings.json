@@ -17704,6 +17704,7 @@
   "QUEST_BAR_WEB_WARNING_HEADER": "\"Switch to Desktop\"",
   "QUEST_BAR_WEB_WARNING_BODY": "\"Quest progress can only be made on the Discord desktop app\"",
   "QUEST_BAR_MAC_WARNING_HEADER": "\"Switch to PC\"",
+  "QUEST_BAR_MAC_WARNING_HEADER_WINDOWS": "\"Switch to Windows\"",
   "QUEST_BAR_MAC_WARNING_BODY": "\"Quest progress can only be made on the Discord desktop app for PC\"",
   "QUEST_REWARD_CLAIMED": "\"{reward} claimed on {claimedDate}\"",
   "QUEST_REWARD_COMPLETED": "\"You unlocked {reward} on {date}\"",
