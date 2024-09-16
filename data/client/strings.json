@@ -17183,6 +17183,7 @@
   "PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_DM_SETTING_GLOBAL_NOTE": "\"Allow direct messages from other server members.\"",
   "PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_DM_SETTING_SERVER_NOTE": "\"Allow direct messages from other members in this server.\"",
   "PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING_TITLE": "\"Message requests\"",
+  "PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_NOTE": "\"Filter messages from server members you may not know.\"",
   "USER_SETTING_DM_SPAM_FILTER_ALL_TITLE": "\"All\"",
   "USER_SETTING_DM_SPAM_FILTER_NON_FRIENDS_TITLE": "\"From non-friends\"",
   "USER_SETTING_DM_SPAM_FILTER_DISABLED_TITLE": "\"Do not filter\"",
