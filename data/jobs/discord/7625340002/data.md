@@ -10,11 +10,9 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7625340002](https://discord.com/jobs/7625340002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:08 GMT
+**Updated At:** Mon, 16 Sep 2024 20:54:24 GMT
 
 **Job Description:**
-This position is US based only.
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 As a Senior Product Marketing Manager for the Developer ecosystem, you will drive go-to-market strategy and execution from start to finish: market research, positioning, launch strategy and execution, and ongoing growth initiatives. You’ll quarterback cross-functional teams to execute on world-class product launches and campaigns that promote growth, engagement, and evangelism within the Developer ecosystem and deliver on business goals.
 What You'll Be Doing
 

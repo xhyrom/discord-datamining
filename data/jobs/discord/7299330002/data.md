@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7299330002](https://discord.com/jobs/7299330002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:02 GMT
+**Updated At:** Mon, 16 Sep 2024 20:31:51 GMT
 
 **Job Description:**
 This position is US based only.&amp;nbsp;
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
 The Discord Activities team is looking for a passionate and organized Partner Producer to foster collaboration with external Activity developers &amp;amp; partners, champion their success, and promote smooth integration of their products on our platform. This person will report to the team's Lead Producer.
 What you’ll be doing:
 

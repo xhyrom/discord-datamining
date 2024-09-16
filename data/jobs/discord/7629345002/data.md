@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7629345002](https://discord.com/jobs/7629345002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:08 GMT
+**Updated At:** Mon, 16 Sep 2024 21:55:55 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
-
+This position is US based only.&amp;nbsp;
 Discord is looking for experienced and passionate Senior Data Engineers to join our Data team! Data Engineers at Discord collaborate with data science and engineering teams to build and support foundational high-leverage data sets that power tools, analyses, and models. The data sets built by DE directly inform how we identify opportunities, measure success, and make decisions. If this sounds exciting to you and you’re passionate about data, impact, and working on an amazing team, read on!
 What you will be doing:
 

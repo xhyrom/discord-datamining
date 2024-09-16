@@ -10,10 +10,9 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7588967002](https://discord.com/jobs/7588967002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:07 GMT
+**Updated At:** Mon, 16 Sep 2024 20:24:11 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 Discord is looking for an experienced, proactive, and self-driven Senior Causal Inference Data Scientist to join our Experimentation Platform team.
 The Experimentation Platform puts data at the heart of the company’s decision-making and growth by enabling rapid and accurate product experimentation. Discord runs hundreds of experiments on any given day, turning experiment results into business decisions. At the same time, we are taking a fresh look at our platform, and planning to rebuild parts of it from scratch to take it to the next level. As a Causal Inference Data Scientist on this team, you will ensure that the statistical underpinnings of this rebuild are sound, that experimenters are able to design experiments with high rigor, and that Discord makes the best business decisions on the basis of these experiments. We are a small and quickly growing team; by joining us as an early team member, you will be presented with significant leadership opportunities as we evolve.
 Our team directly impacts the strategy and roadmaps that improve Discord for its more than 200M (and many more future) users! If helping make Discord an even better place to hang out with your friends sounds like an exciting challenge - we'd love to chat with you! Check out our blog about how our team informs strategy &amp;amp; innovation at Discord here!
@@ -43,9 +42,6 @@ Experience in autonomously leading cross functional projects and influencing cro
 Passion for Discord or gaming.
 Causal inference related publications.
 
-
-&amp;nbsp;
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 #LI-RemoteThe US base salary range for this full-time position is $183,000 to $201,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 

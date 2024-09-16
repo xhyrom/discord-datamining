@@ -10,12 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7196344002](https://discord.com/jobs/7196344002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:02 GMT
+**Updated At:** Mon, 16 Sep 2024 21:35:33 GMT
 
 **Job Description:**
-This position is US based only.
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
-Discord is starting a new team with the mission of improving the lives of all Discord employees aka Discordians. As a founding member of the Leverage Engineering team, you’ll build products, tools, and novel solutions that empower teams to work faster, smarter, and more collaboratively.
+&amp;nbsp;Discord is starting a new team with the mission of improving the lives of all Discord employees aka Discordians. As a founding member of the Leverage Engineering team, you’ll build products, tools, and novel solutions that empower teams to work faster, smarter, and more collaboratively.
 We are looking for a curious self-starter who loves building new products in an iterative and fast moving environment. In this role, you will build software from the ground up to solve critical bottlenecks internally. This is a highly cross functional role and you’ll interface with leaders and collaborate with your customers regularly. If you’re the type of person who loves automating away manual tasks and get a deep sense of fulfilment from seeing others succeed, then read on as this role might be perfect for you.
 What You'll Be Doing
 

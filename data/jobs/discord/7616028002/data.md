@@ -10,10 +10,9 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7616028002](https://discord.com/jobs/7616028002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:08 GMT
+**Updated At:** Mon, 16 Sep 2024 20:25:16 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 We're looking for an accomplished and passionate Senior Data Scientist to join our Data+ML team, focusing on Revenue Growth! Our Revenue Growth team is dedicated to enhancing consumer-facing monetization products, from launching revenue-driving features to designing effective growth mechanisms. As a Senior DS supporting Revenue Growth, you’ll conduct analysis, run experiments, and build tools, partnering closely with our Product &amp;amp; Business teams to drive revenue. If using data and working with amazing teammates to make a great product even better sounds exciting, we encourage you to apply!
 What you'll be doing
 

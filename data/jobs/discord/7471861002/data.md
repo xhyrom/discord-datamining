@@ -10,12 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7471861002](https://discord.com/jobs/7471861002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:03 GMT
+**Updated At:** Mon, 16 Sep 2024 21:35:59 GMT
 
 **Job Description:**
-This position is US based only.Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
-The focus of Safety Platform is to make Discord’s users safer by creating scalable and proactive systems to limit bad actors across the platform. Keeping users safe is an essential contributor to growth at Discord which is why the output of this team is so important. We are looking for a technical, metrics-driven and hands-on Engineering manager to lead this team.&amp;nbsp;This team is the glue that holds Safety features together, building product infra that powers frontend, user-facing features including settings, NUX, block/mute and reports as well as gathering signals for ML models to detect harm and taking interventions to keep Discord safe for everyone.
-&amp;nbsp;
+This position is US based only.
+The focus of Safety Platform is to make Discord’s users safer by creating scalable and proactive systems to limit bad actors across the platform. Keeping users safe is an essential contributor to growth at Discord which is why the output of this team is so important. We are looking for a technical, metrics-driven and hands-on Engineering manager to lead this team. This team is the glue that holds Safety features together, building product infra that powers frontend, user-facing features including settings, NUX, block/mute and reports as well as gathering signals for ML models to detect harm and taking interventions to keep Discord safe for everyone.
 What You'll Be Doing
 
 Supporting a team of talented, 8-10 Engineers including a Staff Engineer

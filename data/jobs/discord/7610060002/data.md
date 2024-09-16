@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7610060002](https://discord.com/jobs/7610060002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:07 GMT
+**Updated At:** Mon, 16 Sep 2024 20:29:05 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
-Come lead our Realtime &amp;amp; Notifications Infrastructure and be a driving force behind the technology that connects over 200M users in real-time. 
+Come lead our Realtime &amp;amp; Notifications Infrastructure and be a driving force behind the technology that connects over 200M users in real-time.&amp;nbsp;
 Every interaction our users take on Discord flows through our Realtime Infrastructure. From messages and reactions to status updates, this team is at the core of delivering over 30M events per second to our users. In addition to enabling instantaneous engagement, this group also ensures users never miss a beat with timely delivery of push notifications, emails, and SMS.&amp;nbsp;As the Senior Engineering Manager for this group, you will lead the teams responsible for some of Discord’s most mission-critical, intricate, and scalable systems. The position reports to the Director of Engineering for Serving Infra.&amp;nbsp;
 What you'll be doing
 

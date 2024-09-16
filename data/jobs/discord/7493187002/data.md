@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7493187002](https://discord.com/jobs/7493187002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:04 GMT
+**Updated At:** Mon, 16 Sep 2024 20:31:13 GMT
 
 **Job Description:**
 This position is US based only.
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 As a Senior Manager of U.S. State Public Policy / Government Relations, you will lead Discord’s work in state capitals across the country – responsible for building trust and finding common ground with policymakers, regulators, and other stakeholders. &amp;nbsp;This role reports to the company’s Director of US and Canada Public Policy.
 What You'll Be Doing
 

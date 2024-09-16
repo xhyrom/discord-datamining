@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7523950002](https://discord.com/jobs/7523950002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:05 GMT
+**Updated At:** Mon, 16 Sep 2024 21:31:19 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
-We are looking for an Ad Operations Manager to join as an early member of our sales and client success organization of the new Game Advertising and Marketing Solution business line at Discord. The ideal candidate for this role will be well grounded in the digital ad industry – campaign operations, ad technology, measurement, and analysis – at the same time seeking an opportunity to be part of our efforts to invent entirely new formats, technologies, and methodologies. Candidates who are experience and passionate about the gaming industry will be especially well-positioned to ensure success of our game developers and publishers.&amp;nbsp;
+This position is US based only.We are looking for an Ad Operations Manager to join as an early member of our sales and client success organization of the new Game Advertising and Marketing Solution business line at Discord. The ideal candidate for this role will be well grounded in the digital ad industry – campaign operations, ad technology, measurement, and analysis – at the same time seeking an opportunity to be part of our efforts to invent entirely new formats, technologies, and methodologies. Candidates who are experience and passionate about the gaming industry will be especially well-positioned to ensure success of our game developers and publishers.&amp;nbsp;
 This role will be responsible for overseeing the planning, implementation, and optimization of client ad campaigns on Discord. This role requires a highly analytical and detail-oriented individual who has experience at effectively staging up and managing campaigns to ensure they meet client goals, troubleshooting operational and technical issues, analyzing campaign performance, and creating client-facing reports and actionable insights.
 What You'll Be Doing
 

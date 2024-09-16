@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7608832002](https://discord.com/jobs/7608832002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:07 GMT
+**Updated At:** Mon, 16 Sep 2024 21:33:00 GMT
 
 **Job Description:**
-This position is US based only.Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
-The central Data Platform seeks to build a self-service tooling platform to make the petabytes of data at Discord easily accessible for everyone at the company. We build full-stack applications, tooling, and frameworks to improve the productivity of teams at Discord, in particular our product, analytics, and machine learning teams. Our tooling covers the end-to-end lifecycle of data from acquisition to consumption. Reporting to the Engineering Manager of Data Infrastructure, you will work on strategy that is foundational to the company and product. To learn more about Discord Engineering, read our&amp;nbsp;engineering blog here — including "How We Create Insights From Trillion Data Points" that this team is behind!
+The central Data Platform seeks to build a self-service tooling platform to make the petabytes of data at Discord easily accessible for everyone at the company. We build full-stack applications, tooling, and frameworks to improve the productivity of teams at Discord, in particular our product, analytics, and machine learning teams. Our tooling covers the end-to-end lifecycle of data from acquisition to consumption. Reporting to the Engineering Manager of Data Infrastructure, you will work on strategy that is foundational to the company and product. To learn more about Discord Engineering, read our engineering blog here — including "How We Create Insights From Trillion Data Points" that this team is behind!
 What You'll Be Doing
 
 Lead end-to-end development of data tooling and frameworks, using modern technologies such as BigQuery, Apache Beam, Airflow, Dagster, dbt, Kubernetes, and Rust.

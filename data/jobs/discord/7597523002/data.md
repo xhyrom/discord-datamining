@@ -10,10 +10,9 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7597523002](https://discord.com/jobs/7597523002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:07 GMT
+**Updated At:** Mon, 16 Sep 2024 20:26:22 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 We're seeking a Sr. Director of Workplace IT to elevate our exceptional IT team. In this role, you'll infuse new strategic insight and advanced technical expertise into our high-performing team. Your mission is to refine our IT operations, ensuring seamless collaboration for Discord employees from any location.
 The IT team manages laptops, A/V systems, networking, and a range of cross-functional projects with Systems, Engineering, and Security. A key focus will be on automating our current manual processes to boost efficiency.
 You’ll play a crucial role in enhancing daily operations for every Discord employee, whether they're onsite or working remotely. Your impact will be significant, driving productivity and connectivity across the company.

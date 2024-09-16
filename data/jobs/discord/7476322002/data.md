@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7476322002](https://discord.com/jobs/7476322002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:03 GMT
+**Updated At:** Mon, 16 Sep 2024 21:49:04 GMT
 
 **Job Description:**
 This position is US based only.We are looking for an Account Manager who is passionate about managing, maintaining and growing our relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
-&amp;nbsp;
 You will harness your prior experience in advertising/media/marketing spaces and bring a combination of relationship building, industry relationships, product insights, and an ability to win, optimize and expand a recurring book of business with clients. You will report into the Director of Sales, Gaming Advertising Solutions and support the West region. This hire must be based on the West Coast, however, there is no in-office requirement
 What you'll be doing
 

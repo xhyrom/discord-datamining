@@ -10,10 +10,9 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7588877002](https://discord.com/jobs/7588877002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:06 GMT
+**Updated At:** Mon, 16 Sep 2024 21:34:20 GMT
 
 **Job Description:**
-At Discord, we believe everyone can find a place where they belong. Our mission is to help make it easy for everyone to find and join meaningful conversations, and to make every part of our product feel smart and delightful.
 As Discord scales rapidly, the Experimentation Platform puts data at the heart of its decision-making and growth by enabling rapid and accurate product experimentation. We develop and operate an end-to-end platform that is leveraged by our Machine Learning, Analytics, Engineering, and Product partners. We are a small and quickly growing team; by joining us as an early team member, you will be presented with significant leadership opportunities as we evolve.
 We are currently taking a fresh look at our Experimentation Platform, including potentially rebuilding parts of the platform from scratch to take it to the next level. We are looking for strong software engineers who want to help take us on this journey. To learn more about Discord Engineering in general,&amp;nbsp;read our engineering blogs here. If the above sounds exciting to you, read on!
 What you'll be doing

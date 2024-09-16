@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7523948002](https://discord.com/jobs/7523948002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:04 GMT
+**Updated At:** Mon, 16 Sep 2024 21:54:40 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
+This position is US based only.&amp;nbsp;
 We are looking for a Sales Operations Manager to join our newly established sales team that is taking our new Game Advertising Solution to market. This important role will be responsible for standing up strategic functions within Sales Ops to drive efficiency for the Sales org. This role will require cross-functional collaboration between sales, marketing, and product teams. We are seeking a candidate who is passionate about games, the game industry and at the same time possesses a deep and proven experience of online advertising, strategy and operations within an ad sales org, and data analysis, coupled with strong leadership and communication skills.&amp;nbsp;
 As we grow this business you will be working in a zero to 1 environment helping build the sales operation function from the ground up. &amp;nbsp;This role will report into the Director of Global Sales Operations.
 What you'll be doing:

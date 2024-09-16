@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7590917002](https://discord.com/jobs/7590917002)
 
-**Updated At:** Fri, 13 Sep 2024 13:20:38 GMT
+**Updated At:** Mon, 16 Sep 2024 21:51:50 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
+This position is US based only.&amp;nbsp;
 We are working on applying Machine Learning across Discord to unlock high impactful and new possibilities within areas such as user engagement, user growth, user understanding and personalization.
 The effort to build ML driven user experiences is just getting started, and if you are someone who is passionate about building things from scratch, this could be a great opportunity for you!
 What You'll Be Doing

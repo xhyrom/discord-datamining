@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7472970002](https://discord.com/jobs/7472970002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:03 GMT
+**Updated At:** Mon, 16 Sep 2024 21:45:17 GMT
 
 **Job Description:**
-This position is US based only.Discord is the place for all things gaming.&amp;nbsp; Discord is the place where players have their entire hangout experience with friends – from before, during, and after gaming sessions.&amp;nbsp; Discord is also the place where every major game publisher and studio maintains an official community.&amp;nbsp; And finally Discord is the place where the latest news, beta codes, and big gaming moments happen.&amp;nbsp;&amp;nbsp;
-&amp;nbsp;
+This position is US based only.
 We are looking for a Account Executive to join as a founding member of the sales team for our new Gaming Marketing Solution business line.&amp;nbsp; We are seeking an individual who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games. This is a global role where you will be working in a zero to 1 environment to build up and grow a new, and fast-growing business line at Discord.&amp;nbsp; You will harness your prior experience in advertising/media/marketing spaces and bring a combination of strategic business thinking, industry relationships, product insights, and an ability to build a significant, recurring book of business with clients.
 You will report into the Director of Sales, Gaming Advertising Solutions and support the West region. This hire must be based on the West Coast, however, there is no in-office requirement
 What you'll be doing

@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7442309002](https://discord.com/jobs/7442309002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:03 GMT
+**Updated At:** Mon, 16 Sep 2024 21:50:35 GMT
 
 **Job Description:**
-This position is US based only.Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
+This position is US based only.
 We're looking for a highly motivated, mission-focused Senior Engineer to join our Core Product team. Core Product is responsible for improving the core value of Discord, including chatting, hanging out with friends, and expressing yourself. We work on improving core features like messaging, voice chat, user profiles, and app navigation. You will work across the full stack to build delightful and impactful features that are focused on making Discord the best place to play games and hangout with your friends online.
 We’re looking for engineers that have strong product sense and are fearless in jumping between technical stacks. You’ll be working with highly experienced engineering peers and cross functional partners while reporting to the Engineering Manager of Core Product.
 What You'll Be Doing

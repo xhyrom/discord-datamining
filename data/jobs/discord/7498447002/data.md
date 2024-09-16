@@ -10,11 +10,9 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7498447002](https://discord.com/jobs/7498447002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:04 GMT
+**Updated At:** Mon, 16 Sep 2024 21:37:12 GMT
 
 **Job Description:**
-This position is US based only.
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
 We're on the lookout for an Senior Software Engineer for our Media Infrastructure team! If the thought of managing the storage, processing, and delivery of over 100PB of user-generated media across millions of Discord users thrills you - let's talk! We're all about ensuring these media are managed efficiently, securely, cost-effectively.
 Our team has recently made significant strides in enhancing Discord’s media capabilities:
 

@@ -10,13 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7564777002](https://discord.com/jobs/7564777002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:05 GMT
+**Updated At:** Mon, 16 Sep 2024 21:57:31 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
-Discord, an inclusive community for all, is looking for an accomplished and passionate data scientist to join our Data+ML team, focusing on Quests! Quests is our unique win-win-win advertising product, where we reward users for playing their favorite games. As a Senior DS supporting Quests, you’ll conduct analysis, run experiments, and build tools, partnering closely with our Product &amp;amp; Business teams to make Quests better for our users &amp;amp; game developers. If using data and working with amazing teammates to make a great product even better sounds exciting, we encourage you to apply!
+This position is US based only.&amp;nbsp;Discord, an inclusive community for all, is looking for an accomplished and passionate data scientist to join our Data+ML team, focusing on Quests! Quests is our unique win-win-win advertising product, where we reward users for playing their favorite games. As a Senior DS supporting Quests, you’ll conduct analysis, run experiments, and build tools, partnering closely with our Product &amp;amp; Business teams to make Quests better for our users &amp;amp; game developers. If using data and working with amazing teammates to make a great product even better sounds exciting, we encourage you to apply!
 What you'll be doing
-
 
 Partner with Product &amp;amp; business teams throughout the full lifecycle of our marketing solutions, from ideation and exploratory analysis, to running experiments, to building dashboards
 Define metrics to understand Quest campaign performance &amp;amp; help identify areas for improvement, encapsulating these measures in easy-to-use dashboards that provide the company with timely and actionable information
@@ -25,7 +23,6 @@ Collaborate closely with data science, machine learning, and engineering teams t
 Leverage A/B testing to continuously iterate and improve on the Quests experience
 
 What you should have
-
 
 4+ years of experience of analytics in marketing solutions and advertising, translating ambiguous business problems into deep &amp;amp; actionable insights
 4+ years of experience building performant dashboards using Tableau, Looker, or similar software - with proficiency in designing intuitive visualizations
@@ -37,12 +34,9 @@ Last but not least - you have a collaborative approach to work and a knack for c
 
 Bonus Points
 
-
 Passion for Discord and/or gaming in general
 Experience with writing production ETL
 Experience with analytics for social media or international subscription-based online services, including familiarity with concepts such as social graphs, LTV/user-lifecycle analysis, funnel analysis, etc
-
-
 
 #LI-RemoteThe US base salary range for this full-time position is $183,000 - $201,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!

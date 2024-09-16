@@ -10,10 +10,9 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7626153002](https://discord.com/jobs/7626153002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:08 GMT
+**Updated At:** Mon, 16 Sep 2024 21:41:50 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 As the Manager of Exploitative Content, you will lead our EU team to deliver responsible safety operations for our users in alignment with European domestic and international standards, and support initiatives to protect and enhance the working experiences for the team.
 You will serve as the internal subject matter expert on teen and child safety, provide strategic guidance and oversight to an EU team, and liaise with internal and external stakeholders to deliver program capability and processes. You will report into our Senior Manager of Exploitative Content.
 What You'll Be Doing

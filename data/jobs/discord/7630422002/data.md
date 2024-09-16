@@ -10,14 +10,12 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7630422002](https://discord.com/jobs/7630422002)
 
-**Updated At:** Fri, 13 Sep 2024 15:41:07 GMT
+**Updated At:** Mon, 16 Sep 2024 21:36:18 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 Our mission is to build a platform that enables communities to flourish and where all members can safely find belonging. Machine learning is essential in building and maintaining this safe environment.
 Our Safety Machine Learning team deploys state-of-the-art detection systems to mitigate harmful behavior, illegal content, spam, and other adversarial abuse. We take ownership of the solutions we build from concept to deployment, working closely with product, engineering, and data science teams to drive large-scale impact. Our ML and safety systems continuously evolve to ensure our products are safe by default.
 We’re seeking a technical, mission-driven Senior Machine Learning Engineer to design and implement end-to-end ML solutions that make Discord safer. If this excites you, keep reading!
-
 What You'll Be Doing
 
 Build and deploy ML systems to detect and prevent abuse, spam, and other malicious activities

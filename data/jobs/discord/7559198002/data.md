@@ -10,10 +10,9 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7559198002](https://discord.com/jobs/7559198002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:05 GMT
+**Updated At:** Mon, 16 Sep 2024 20:23:26 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
 Discord is seeking an experienced and passionate Senior Data Scientist to join our world-class Data Science &amp;amp; Analytics team! In this role, you will play a key part in helping Discord fulfill its mission of creating a sense of belonging in online communities. You’ll work closely with the teams that design, build, and support Discord, providing insights that directly influence user growth and enhance the user experience. If you’re driven by data, eager to make a meaningful impact, and excited to collaborate with an amazing team, we want to hear from you! If you’re passionate about data, impact, and working on an amazing team, read on!
 What you'll be doing
 

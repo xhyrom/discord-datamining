@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7513898002](https://discord.com/jobs/7513898002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:04 GMT
+**Updated At:** Mon, 16 Sep 2024 22:13:55 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
+This position is US based only.
 We’re looking for a technical, full-stack and mission-focused engineer to help ideate, implement and launch revenue driving products. The Revenue Growth org is responsible for contributing to a majority of Discord's incremental revenue goals. You will join a full-stack team of engineers working across platforms to build revenue driving products and services at Discord. To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog.
 What You'll Be Doing
 
