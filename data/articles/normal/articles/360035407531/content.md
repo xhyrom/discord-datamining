@@ -1,4 +1,4 @@
-<h3>
+<h3 id="h_01J7XVYAHSQJNH8R1TGYYE2328">
   <span style="font-weight: 400"
     ><span class="wysiwyg-color-red"><strong>Note:</strong></span> <br />-
     Custom statuses can be set on
@@ -23,7 +23,7 @@
   You can customize your own personal status to let other's know what you are up
   to!  
 </p>
-<h4 class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XVYAHSGNEZ31B1FTDY1VJT">
   <img
     src="https://support.discord.com/hc/article_attachments/360041520751"
     alt="1a.png"
@@ -82,13 +82,13 @@
       alt="3.png"
   /></span>
 </p>
-<h3 class="wysiwyg-text-align-left">
+<h3 class="wysiwyg-text-align-left" id="h_01J7XVYAHSGTHXDM7ZK7CK399G">
   <span style="font-weight: 400"
     >You can even use Custom Server Emojis if you have
     <a
       href="https://support.discord.com/hc/en-us/articles/115000435108"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
       >Discord Nitro or Nitro Classic</a
     >! </span
   ><span style="font-weight: 400"
@@ -101,7 +101,7 @@
   <strong>3.</strong> Type your custom status, then click the
   <strong>Clear After menu</strong> to choose a time frame.
 </p>
-<h4 class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01J7XVYAHTM75XVBY9EHC8DNDZ">
   <img
     src="https://support.discord.com/hc/article_attachments/360041525512"
     alt="5.png"
@@ -109,7 +109,7 @@
     height="616"
   />
 </h4>
-<h3>
+<h3 id="h_01J7XVYAHTPB8NG5996YGNCQD2">
   <span style="font-weight: 400"
     ><span class="wysiwyg-color-black"><strong>Note:</strong> </span
     ><br />- </span
@@ -127,14 +127,14 @@
     height="550"
   />
 </p>
-<h3>
+<h3 id="h_01J7XVYAHTD9TPXV4P45JMM0ZX">
   <span style="font-weight: 400"
     ><span class="wysiwyg-color-black"><strong>Note:</strong> </span><br />-
     Global emotes from Twitch subscriptions require an active Nitro subscription
     to be used in custom status.</span
   >
 </h3>
-<h2 class="wysiwyg-text-align-left">
+<h2 class="wysiwyg-text-align-left" id="h_01J7XVYAHT2QY533Q3MZKRM7VE">
   <strong>Edit or Clear your status</strong>
 </h2>
 <p>
@@ -165,7 +165,7 @@
       height="434"
   /></span>
 </p>
-<h3 class="wysiwyg-text-align-center">
+<h3 class="wysiwyg-text-align-center" id="h_01J7XVYAHTPFG91BAYBC8AM3S6">
   Please also note (I know, lots of notes) that c<span style="font-weight: 400"
     >ustom statuses override other status activities in the members list and DM
     list, however all your status activities will still show up in your full
@@ -256,7 +256,7 @@
     height="432"
   />
 </p>
-<h1>
+<h1 id="h_01J7XVYAHTKG3A1ZJ88N8DFYG8">
   <span
     style="
       font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
@@ -290,7 +290,7 @@
     "
     href="https://dis.gd/feedback"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >https://dis.gd/feedback</a
   ><span
     style="
