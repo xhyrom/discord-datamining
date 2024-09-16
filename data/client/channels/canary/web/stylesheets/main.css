@@ -12370,6 +12370,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   top: 72px;
   left: 16px;
 }
+.avatar_f94206.withReactReply_f94206 {
+  position: static;
+}
 .avatar_f94206.hoisted_f94206 {
   z-index: 4;
   pointer-events: none;
@@ -44204,4 +44207,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.969e98f778aea381e83f.css.map*/
+/*# sourceMappingURL=12633.8ee36e77c9040b43334e.css.map*/
