@@ -3134,7 +3134,6 @@
   "STICKER_ASSET_LOAD_ERROR": "\"Uh Oh!\"",
   "STICKER_A11Y_LABEL": "\"Sticker, !!{stickerName}!!\"",
   "STICKER_CATEGORY_A11Y_LABEL": "\"Category, !!{categoryName}!!\"",
-  "SEARCH_FOR_STICKERS": "\"Search stickers\"",
   "NO_STICKERS_TO_SEARCH_THROUGH": "\"No stickers to search through yet\"",
   "STICKER_CATEGORY_RECENT": "\"Frequently Used\"",
   "ERROR_LOADING_STICKER": "\"Error loading sticker\"",
