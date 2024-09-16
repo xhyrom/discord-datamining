@@ -8321,6 +8321,8 @@
   "WEBHOOK_MODAL_TITLE": "\"Edit Webhook\"",
   "WEBHOOK_MODAL_ICON_DESCRIPTION": "\"We recommend an image of at least 256x256\"",
   "EDIT_CHANNEL_SYNCING_TITLE": "\"Edit Channel Syncing\"",
+  "CHANNEL_SYNCING_ADDED_BY": "\"Added by $[!!{username}!!](usernameHook) on {linkedAtDate, date, medium}\"",
+  "CHANNEL_SYNCING_ADDED_BY_UNKNOWN_USER": "\"Added on {linkedAtDate, date, medium}\"",
   "CHANNEL_SYNCING_STOP_SYNCING": "\"Stop syncing\"",
   "CHANNEL_SYNCING_CURRENTLY_SYNCING_WITH": "\"Currently syncing with **!!{channelName}!!**.\"",
   "CHANNEL_SYNCING_STOP_SYNCING_ALERT_TITLE": "\"Stop syncing messages\"",
