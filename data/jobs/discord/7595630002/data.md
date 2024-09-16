@@ -13,7 +13,7 @@
 **Updated At:** Thu, 12 Sep 2024 18:07:07 GMT
 
 **Job Description:**
-Discord is on the lookout for a seasoned Senior Sales Recruiter to join our Business Recruiting team. Reporting to the Business Recruiting Manager, this individual will play a crucial role in building and scaling our sales organization, with a focus on consumer digital media and ad sales.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is on the lookout for a seasoned Senior Sales Recruiter to join our Business Recruiting team. Reporting to the Business Recruiting Manager, this individual will play a crucial role in building and scaling our sales organization, with a focus on consumer digital media and ad sales.
 What You'll Be Doing
 
 Lead Sales Recruitment Efforts: Oversee the recruitment process for Sales Account Managers and Account Executives, with a focus on hiring individuals with a proven track record in consumer digital media and ad sales.&amp;nbsp;
@@ -41,7 +41,7 @@ Be part of a dynamic and inclusive company culture.
 Opportunity to make a significant impact on our sales organization’s foundation.
 
 This role is a 6-month contract opportunity with the potential for extension based on performance and business needs. This position can be hybrid based in the SF Bay Area or remote (with the expectation to work typical 9am - 5pm PT hours).&amp;nbsp;The US base salary range for this full-time position is $70/hr to $85/hr. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.#LI-Remote
-&amp;nbsp;Why Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
+&amp;nbsp;Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
 **Data Compliance:**

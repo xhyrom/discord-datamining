@@ -13,7 +13,7 @@
 **Updated At:** Mon, 16 Sep 2024 20:57:02 GMT
 
 **Job Description:**
-Come build the future of Discord’s business with us! We are looking for impact-focused engineers to join our world-class Revenue group as we accelerate Discord’s growth through the creation of compelling paid products. These products allow us to grow our business while keeping Discord’s core functionality free. &amp;nbsp;You will be reporting to the Senior Engineering Manager of Revenue Infrastructure. &amp;nbsp;To learn more about Discord Engineering, take a look at our engineering blog.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Come build the future of Discord’s business with us! We are looking for impact-focused engineers to join our world-class Revenue group as we accelerate Discord’s growth through the creation of compelling paid products. These products allow us to grow our business while keeping Discord’s core functionality free. &amp;nbsp;You will be reporting to the Senior Engineering Manager of Revenue Infrastructure. &amp;nbsp;To learn more about Discord Engineering, take a look at our engineering blog.
 What you'll be doing:
 
 Design, build and maintain a system for accurately measuring the impact of paid promotions, including impressions, clicks, and attribution. Collaborate with engineers on the team, and other teams such as Data Platform, to understand requirements and build systems to meet them.
@@ -36,7 +36,7 @@ Experience working in ad tech, especially on ad campaign performance measurement
 
 
 The US base salary range for this full-time position is $183,000 - $201,000&amp;nbsp; + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.
-#buildbelonging #LI-HY1 #LI-HYBRIDWhy Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
+#buildbelonging #LI-HY1 #LI-HYBRIDWhy Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
 **Data Compliance:**

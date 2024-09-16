@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7531695002](https://discord.com/jobs/7531695002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:05 GMT
+**Updated At:** Mon, 16 Sep 2024 22:59:19 GMT
 
 **Job Description:**
-Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
 We are looking for a highly technical, creative, hands-on, and impact-focused Staff Engineer to join our growing Ads team.
 Our team is revolutionizing the way users interact with our platform through innovative ads formats (including Quests) and robust marketplace solutions. We are driven by a passion for delivering exceptional user experiences while scaling our platform to new heights. These products enable us to generate revenue by building a win-win-win suite of distribution tools for game developers, players, and Discord. Join us in shaping the future of digital advertising and marketplace interactions!
 To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog!
@@ -41,7 +41,7 @@ Familiarity with experimentation and analysis
 Contributions to open-source projects
 Interest or passion for the Discord platform
 
-#LI-RemoteThe US base salary range for this full-time position is $223,000 to $245,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
+#LI-RemoteThe US base salary range for this full-time position is $223,000 to $245,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
 **Education:**

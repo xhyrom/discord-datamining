@@ -13,7 +13,7 @@
 **Updated At:** Mon, 16 Sep 2024 21:50:35 GMT
 
 **Job Description:**
-This position is US based only.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
 We're looking for a highly motivated, mission-focused Senior Engineer to join our Core Product team. Core Product is responsible for improving the core value of Discord, including chatting, hanging out with friends, and expressing yourself. We work on improving core features like messaging, voice chat, user profiles, and app navigation. You will work across the full stack to build delightful and impactful features that are focused on making Discord the best place to play games and hangout with your friends online.
 We’re looking for engineers that have strong product sense and are fearless in jumping between technical stacks. You’ll be working with highly experienced engineering peers and cross functional partners while reporting to the Engineering Manager of Core Product.
 What You'll Be Doing
@@ -38,7 +38,7 @@ Bonus Points
 You are a Discord user, and understand the core features and flow of Discord communications
 You’ve worked on React Native products
 
-#LI-RemoteThe US base salary range for this full-time position is $183,000 to $201,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord is great for playing games and chilling with friends, or even building a worldwide community. We are working toward forming true connections around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. A place where everyone can build genuine friendships. Your future is just a click away!
+#LI-RemoteThe US base salary range for this full-time position is $183,000 to $201,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
 **Data Compliance:**
