@@ -4124,26 +4124,23 @@
     "data": {
       "kind": "user",
       "id": "2023-08_secure_frames_encryption",
-      "label": "Allowing testing secure frames for voice/video",
+      "label": "Allowing testing DAVE protocol for voice/video",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 10: Can support secure frames above protocol version 112 (MLS)",
-        "Treatment 11: Can support secure frames above protocol version 114 (MLS)"
+        "Treatment 11: Can support DAVE protocol version 1 and above"
       ],
       "hash": 3013881204,
       "buckets": [
         -1,
         0,
-        10,
         11
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
         "protocolVersionFloor",
-        "canSupportSecureFrames",
-        "canSupportMls"
+        "canSupportDaveProtocol"
       ]
     }
   },
@@ -10729,18 +10726,16 @@
     "data": {
       "kind": "guild",
       "id": "2024-08_secure_frames_encryption_guilds_v2",
-      "label": "Allowing testing secure frames for voice/video (Guilds)",
+      "label": "Allowing testing DAVE protocol for voice/video (Guilds)",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 10: Can support secure frames above protocol version 112 (MLS)",
-        "Treatment 11: Can support secure frames above protocol version 114 (MLS)"
+        "Treatment 11: Can support DAVE protocol version 1 and above"
       ],
       "hash": 2125168757,
       "buckets": [
         -1,
         0,
-        10,
         11
       ],
       "holdout": {
@@ -10750,8 +10745,7 @@
       "aa_mode": false,
       "config_keys": [
         "protocolVersionFloor",
-        "canSupportSecureFrames",
-        "canSupportMls"
+        "canSupportDaveProtocol"
       ]
     },
     "rollout": {

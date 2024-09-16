@@ -305,7 +305,7 @@ id,hash,label
 2023-08_profile_effects,3382923749,Profile Effects User Experiment
 2023-08_remix_ga,3382036696,Remix General Available
 2023-08_reranked_marketing_tiles,4020129040,Reranked Marketing Tiles
-2023-08_secure_frames_encryption,3013881204,Allowing testing secure frames for voice/video
+2023-08_secure_frames_encryption,3013881204,Allowing testing DAVE protocol for voice/video
 2023-08_self_mod_stranger_danger_teens,1533516732,Stranger Danger Teens
 2023-08_server_shop_storefront,1320076753,Server Shop Storefront
 2023-08_server_shop_upsell,3738060959,Server Products Upsell
@@ -762,7 +762,7 @@ id,hash,label
 2024-08_reaction_push_notifications_user,939840210,In App Notifications for Reactions
 2024-08_reverse_trial,3433628153,Reverse Trials
 2024-08_safety_settings_update,2522510576,Safety Settings Update
-2024-08_secure_frames_encryption_guilds_v2,2125168757,Allowing testing secure frames for voice/video (Guilds)
+2024-08_secure_frames_encryption_guilds_v2,2125168757,Allowing testing DAVE protocol for voice/video (Guilds)
 2024-08_self_recent_activity,3657218045,Self Recent Activity Experiment
 2024-08_shop_recurring_dc,3175674624,Shop Recurring Dismissible Content Experiment
 2024-08_soundboard_refresh,670930559,Soundboard UI Refresh
