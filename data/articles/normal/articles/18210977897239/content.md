@@ -149,9 +149,7 @@
 <p>
   A: A safety alert for a sender will only be sent once at the start of the
   conversation with that sender. Once the teen dismisses it, the same safety
-  alert will not appear again. However, if a teen user receives a message that
-  we detect as potentially unwanted, the safety alert in chat will pop up to
-  offer protection if these alerts are enabled in the user settings.
+  alert will not appear again. 
 </p>
 <p><strong>Q: Do you send an alert to the sender? </strong></p>
 <p>
