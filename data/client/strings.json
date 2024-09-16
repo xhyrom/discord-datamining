@@ -17194,6 +17194,7 @@
   "E2EE_VERIFIED_DEVICES_SETTING_DESCRIPTION": "\"Manage the devices you've marked as verified\"",
   "USER_SETTINGS_CONTACT_DISCOVERY_TITLE": "\"Discovery\"",
   "USER_SETTINGS_SAFETY_FRIEND_REQUESTS": "\"Friend requests\"",
+  "USER_SETTINGS_SAFETY_GUILD_SETTINGS_TITLE": "\"Server settings\"",
   "USER_SETTINGS_SENSITIVE_MEDIA_TITLE": "\"Sensitive media\"",
   "SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE": "\"Your account is $[all good!](hook)\"",
   "SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE_V2": "\"Your account is $[all good](hook)\"",
