@@ -5770,7 +5770,7 @@
           (t8.TOGGLE_SETTINGS = "TOGGLE_SETTINGS"),
           (t8.TOGGLE_HELP = "TOGGLE_HELP"),
           (t8.TOGGLE_USERS = "TOGGLE_USERS"),
-          (t8.TOGGLE_INBOX_UNREADS_TAB = "TOGGLE_INBOX_UNREADS_TAB"),
+          (t8.TOGGLE_INBOX = "TOGGLE_INBOX"),
           (t8.MARK_TOP_INBOX_CHANNEL_READ = "MARK_TOP_INBOX_CHANNEL_READ"),
           (t8.TOGGLE_FOR_LATER = "TOGGLE_FOR_LATER"),
           (t8.TOGGLE_CHANNEL_PINS = "TOGGLE_CHANNEL_PINS"),
@@ -9123,7 +9123,7 @@
           (na.SCROLLTO_CHANNEL = "SCROLLTO_CHANNEL"),
           (na.TOGGLE_CHANNEL_PINS = "TOGGLE_CHANNEL_PINS"),
           (na.TOGGLE_FOR_LATER = "TOGGLE_FOR_LATER"),
-          (na.TOGGLE_INBOX_UNREADS_TAB = "TOGGLE_INBOX_UNREADS_TAB"),
+          (na.TOGGLE_INBOX = "TOGGLE_INBOX"),
           (na.MARK_TOP_INBOX_CHANNEL_READ = "MARK_TOP_INBOX_CHANNEL_READ"),
           (na.TOGGLE_EMOJI_POPOUT = "TOGGLE_EMOJI_POPOUT"),
           (na.TOGGLE_DM_CREATE = "TOGGLE_DM_CREATE"),
@@ -12390,7 +12390,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0572bd87b348eb405b2bfdc96b78c76acec6f4c6",
+            release: "discord_web-ae0b3ed8ac94d72c480827606f0aa13dc27b1aa2",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12459,8 +12459,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "327465"), "327465"));
-          i.YA("builtAt", String("1726522910974"));
+            i.YA("buildNumber", ((e = "327475"), "327475"));
+          i.YA("builtAt", String("1726523608813"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48456,4 +48456,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.e0e074e99c604f41f3ce.js.map
+//# sourceMappingURL=sentry.b5784bbcac233d08088a.js.map
