@@ -12470,7 +12470,7 @@
   "BUG_REPORT_PRIORITY_LOW_DESCRIPTION": "\"**Urgent but not important.** These are issues that negatively impact a user's experience with the application but do not actively prevent them from using core application functionality.\"",
   "BUG_REPORT_PRIORITY_VERY_LOW_TITLE": "\"Very Low (P3)\"",
   "BUG_REPORT_PRIORITY_VERY_LOW_DESCRIPTION": "\"**Not urgent and not important.** P3 allows us to acknowledge that something is an issue, but these kinds of issues do not need to be fixed until other more pressing concerns are dealt with.\"",
-  "BUG_REPORT_URL": "\"Url (optional)\"",
+  "BUG_REPORT_URL": "\"URL (optional)\"",
   "BUG_REPORT_ERROR_NAME_REQUIRED": "\"Issue name required\"",
   "BUG_REPORT_ERROR_PRIORITY_REQUIRED": "\"Priority required\"",
   "BUG_REPORT_STATUS_SENDING": "\"Sending report\"",
