@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-08_halloween_nitro_gifting_campaign",
+    "label": "Halloween nitro gifting campaign",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Halloween nitro gifting campaign"
+    ],
+    "hash": 3596515720,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -741,6 +741,7 @@ id,hash,label
 2024-08_dismissible_pip,3654487046,Dismissible Desktop PiP
 2024-08_emoji_picker_limit_emojis_experiment,2390760015,"Desktop: Show three rows of emojis per server, with the option to expand"
 2024-08_friend_anniversaries,1006930170,Friend Anniversaries
+2024-08_halloween_nitro_gifting_campaign,3596515720,Halloween nitro gifting campaign
 2024-08_hd_streaming_viewer,1274486444,HD Streaming Viewer Upsell
 2024-08_iar_privacy_and_safety_settings_upsells,2629592978,IAR Privacy & Safety Settings Upsells
 2024-08_keyword_filter_upsells,3902307858,Language Filter Upsells
@@ -771,6 +772,7 @@ id,hash,label
 2024-08_user_profile_blockee_hide_mutuals,1502922057,User Profile Blockee Hide Mutuals
 2024-08_user_profile_blocker_skeleton,2213424224,User Profile Blocker Skeleton
 2024-09_browse_channel_visible,1053452216,Don't show guild Browse Channels when all channels are already visible
+2024-09_bug_reporter,3673264743,Bug Reporter
 2024-09_collectibles_shop_preload,81858881,Collectibles Shop Preload
 2024-09_dm_mute_feedback,3721779707,DM Mute Feedback Experiment
 2024-09_fewer_speaking_messages,2436834070,Reduce speaking messages

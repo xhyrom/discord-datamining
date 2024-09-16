@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_bug_reporter",
+    "label": "Bug Reporter",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: 🐛"
+    ],
+    "hash": 3673264743,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "hasBugReporterAccess"
+    ]
+  }
+}
