@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7625340002](https://discord.com/jobs/7625340002)
 
-**Updated At:** Mon, 16 Sep 2024 23:20:19 GMT
+**Updated At:** Tue, 17 Sep 2024 21:26:07 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
@@ -25,7 +25,7 @@ Content Strategy and Development: Know the product/solution intimately, and be w
 
 What you should have
 
-7+ years of product marketing experience including 3+ years of experience with a developer audience.
+7+ years of product marketing experience including 3+ years of experience with a developer audience in the gaming industry.
 A deep empathy for Developers and passion for Discord’s mission and the role Developers have to play in the growth of the business.
 A strategic thinker who is curious, resilient, goal-oriented with a bias for action, and can look at the big picture to connect dots and create clarity in an often ambiguous environment.
 An exceptional communicator that creates clarity for internal and external customers through intentional, organized verbal and written communication.
