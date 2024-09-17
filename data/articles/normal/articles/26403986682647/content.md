@@ -28,7 +28,7 @@
 </p>
 <p>
   <strong>Offer Details: </strong>Play 15 minutes of
-  <strong>FINAL FANTASY XVI</strong> on PC to receive a
+  <strong>FINAL FANTASY XVI</strong> on PC (full game or demo) to receive a
   <strong>Torgal Puppy avatar</strong> <strong>decoration</strong>. You can
   learn more about avatar decorations
   <a
