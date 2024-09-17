@@ -69,10 +69,9 @@
         /></strong>
       </h2>
       <p>
-        Geeeeeeeet READY: from July 18th to August 15th, 2024, the Shop will
-        stock its shelves with seven Avatar Decorations and five Profile Effects
-        themed after SpongeBob SquarePants! (The canned bread is in a different
-        aisle.)&nbsp;
+        Geeeeeeeet READY: Starting July 18th, the Shop will stock its shelves
+        with seven Avatar Decorations and five Profile Effects themed after
+        SpongeBob SquarePants! (The canned bread is in a different aisle.)&nbsp;
       </p>
       <p>
         Use the Flower Cloud decoration to add underwater accents to your
@@ -119,7 +118,7 @@
         under the sea, in which case, you might have connection issues.&nbsp;
       </p>
       <figure
-        style="max-width: 1440px"
+        style="max-width: 1440pxpx"
         class="w-richtext-align-fullwidth w-richtext-figure-type-image"
       >
         <div>
@@ -141,7 +140,7 @@
         icon, and you’re in!&nbsp;&nbsp;&nbsp;&nbsp;
       </p>
       <figure
-        style="max-width: 1600px"
+        style="max-width: 1600pxpx"
         class="w-richtext-align-fullwidth w-richtext-figure-type-image"
       >
         <div>
@@ -153,13 +152,9 @@
         </div>
       </figure>
       <p>
-        One final reminder:
-        <strong
-          >the SpongeBob collection is available from July 18th, 2024 to August
-          15th, 2024</strong
-        >! Fish out any of the items from the collection you may want while it’s
-        in the Shop — once you purchase a Shop item, it’s yours to keep and use
-        any time of the year.&nbsp;
+        One final reminder: fish out any of the items from the collection you
+        may want while they're in the Shop. Once you purchase a Shop item, it’s
+        yours to keep and use any time of the year.
       </p>
     </div>
   </div>
