@@ -5689,9 +5689,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   pointer-events: none;
   position: absolute;
 }
-.emoji_c5a065 {
-  display: inline-block;
-}
 .full-motion .emoji_c5a065 {
   animation: moveUpDown_c5a065 1s ease-in-out infinite;
 }
@@ -5704,8 +5701,11 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     transform: translatey(3px);
   }
 }
-.buttonOverflow_c5a065 {
+.buttonWithEmoji_c5a065 {
   overflow: visible !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 .errorCodeMessage_c78a6e {
   margin-top: 16px;
@@ -11945,6 +11945,44 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .trialHeader_c87d73 {
   max-width: 60%;
   margin-bottom: 18px;
+}
+.withHalloweenTier2_c87d73 {
+  background-image: linear-gradient(
+      100.98deg,
+      rgba(133, 71, 198, 0.64) 25.21%,
+      rgba(184, 69, 193, 0.64) 62.43%,
+      rgba(171, 93, 138, 0.64) 95.57%
+    ),
+    url(https://cdn.discordapp.com/assets/content/2fb8950c84e002f2db23d1e206a2c7300a8f511449a86e3f7ef3dfe89eaa076d.png);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 139, 13, 0.8);
+  transform: scale(1);
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+.halloweenGiftMessage_c87d73 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -moz-column-gap: 12px;
+  column-gap: 12px;
+  margin: 24px -24px -24px;
+  padding: 12px 24px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 139, 13, 0.9) 0%,
+    rgba(255, 139, 13, 0.9) 100%
+  );
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.halloweenGiftMessageText_c87d73 {
+  color: black;
+}
+.halloweenAvatar_c87d73 {
+  margin-top: -52px;
 }
 .heading_aac415 {
   margin-bottom: 8px;
@@ -44302,4 +44340,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.21e0878d725204fed6af.css.map*/
+/*# sourceMappingURL=12633.89594fe63c9ece080c51.css.map*/
