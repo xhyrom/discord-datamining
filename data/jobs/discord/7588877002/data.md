@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7588877002](https://discord.com/jobs/7588877002)
 
-**Updated At:** Mon, 16 Sep 2024 21:34:20 GMT
+**Updated At:** Mon, 16 Sep 2024 23:26:12 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As Discord scales rapidly, the Experimentation Platform puts data at the heart of its decision-making and growth by enabling rapid and accurate product experimentation. We develop and operate an end-to-end platform that is leveraged by our Machine Learning, Analytics, Engineering, and Product partners. We are a small and quickly growing team; by joining us as an early team member, you will be presented with significant leadership opportunities as we evolve.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
+As Discord scales rapidly, the Experimentation Platform puts data at the heart of its decision-making and growth by enabling rapid and accurate product experimentation. We develop and operate an end-to-end platform that is leveraged by our Machine Learning, Analytics, Engineering, and Product partners. We are a small and quickly growing team; by joining us as an early team member, you will be presented with significant leadership opportunities as we evolve.
 We are currently taking a fresh look at our Experimentation Platform, including potentially rebuilding parts of the platform from scratch to take it to the next level. We are looking for strong software engineers who want to help take us on this journey. To learn more about Discord Engineering in general,&amp;nbsp;read our engineering blogs here. If the above sounds exciting to you, read on!
 What you'll be doing
 

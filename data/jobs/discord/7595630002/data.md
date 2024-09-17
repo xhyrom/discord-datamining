@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7595630002](https://discord.com/jobs/7595630002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:07 GMT
+**Updated At:** Mon, 16 Sep 2024 23:21:00 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is on the lookout for a seasoned Senior Sales Recruiter to join our Business Recruiting team. Reporting to the Business Recruiting Manager, this individual will play a crucial role in building and scaling our sales organization, with a focus on consumer digital media and ad sales.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
+Discord is on the lookout for a seasoned&amp;nbsp;Senior Sales Recruiter to join our Business Recruiting team. Reporting to the Business Recruiting Manager, this individual will play a crucial role in building and scaling our sales organization, with a focus on consumer digital media and ad sales.
 What You'll Be Doing
 
 Lead Sales Recruitment Efforts: Oversee the recruitment process for Sales Account Managers and Account Executives, with a focus on hiring individuals with a proven track record in consumer digital media and ad sales.&amp;nbsp;

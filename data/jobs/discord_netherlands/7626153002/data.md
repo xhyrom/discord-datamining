@@ -13,7 +13,7 @@
 **Updated At:** Mon, 16 Sep 2024 21:41:50 GMT
 
 **Job Description:**
-As the Manager of Exploitative Content, you will lead our EU team to deliver responsible safety operations for our users in alignment with European domestic and international standards, and support initiatives to protect and enhance the working experiences for the team.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As the Manager of Exploitative Content, you will lead our EU team to deliver responsible safety operations for our users in alignment with European domestic and international standards, and support initiatives to protect and enhance the working experiences for the team.
 You will serve as the internal subject matter expert on teen and child safety, provide strategic guidance and oversight to an EU team, and liaise with internal and external stakeholders to deliver program capability and processes. You will report into our Senior Manager of Exploitative Content.
 What You'll Be Doing
 
@@ -38,9 +38,9 @@ Strong understanding of European and global regulation related to digital/online
 Demonstrated leadership managing enterprise strategy, policy, and planning, to include liaison relationships with relevant organizations (e.g., NCMEC), law enforcement agencies, oversight organizations, and international partners
 Proven experience in partnering with people operations to support wellness initiatives for employees
 
-#LI-RemoteAbout Us
-Discord is a voice, video and text app that helps friends and communities come together to hang out and explore their interests — from artists and activists, to study groups, sneakerheads, plant parents, and more. With 150 million monthly users across 19 million active communities, called servers, Discord has grown to become one of the most popular communications services in the world. Discord was built without selling ads or user data and instead, offers a premium subscription called Nitro that gives users special perks like higher quality streams and fun customizations.
-We’re working toward an inclusive world where no one feels like an outsider, where genuine human connection is a click, text chat, or voice call away. A place where everyone can find belonging. Challenging? Heck yes. Rewarding? Double heck yes. It’s a mission that gives us the chance to positively impact millions of people all over the world. So if this strikes a chord with you, come build belonging with us!
+#LI-RemoteWhy Discord?&amp;nbsp;
+Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
 **Education:**
 education_optional

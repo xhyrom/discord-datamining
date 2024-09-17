@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7586056002](https://discord.com/jobs/7586056002)
 
-**Updated At:** Mon, 16 Sep 2024 21:33:48 GMT
+**Updated At:** Mon, 16 Sep 2024 23:25:38 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is hiring a technical, hands-on, empathetic senior software engineer to help define and deliver our Developer Platforms mission: build platform solutions to accelerate every Engineer at our company. With your expertise in delivering high quality products, you’ll equip our engineering organization with tools to move quickly and deliver features that bring millions of people together.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
+Discord is hiring a technical, hands-on, empathetic senior software engineer to help define and deliver our Developer Platforms mission: build platform solutions to accelerate every Engineer at our company. With your expertise in delivering high quality products, you’ll equip our engineering organization with tools to move quickly and deliver features that bring millions of people together.
 As a senior engineer on the Developer Platforms team, you’ll collaborate with the team to deliver forward-looking, customer-centric tooling. You’ll make sure our solutions are crafted for a friction-free developer experience, have outsized impact across nearly every Engineering team, and help us articulate the golden path from development into production. You’ll be reporting to the Engineering Manager for Platform Security and Platform Engineering, ensuring we build scalable, secure-by-default, and delightful development platforms.
 What you'll do
 

@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7588736002](https://discord.com/jobs/7588736002)
 
-**Updated At:** Mon, 16 Sep 2024 21:37:39 GMT
+**Updated At:** Mon, 16 Sep 2024 23:28:26 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Machine Learning Platform (MLP) at Discord is responsible for the end-to-end model lifecycle across all ML applications. We sit at the intersection of machine learning engineers (MLEs), core infrastructure, and ML consumers to provide tools, capabilities, and services that make machine learning easy, safe, and widely accessible. In this role, you will work on everything from feature stores, real-time data processing, LLM tooling, to model serving at scale. You will lead projects and work directly with ML practitioners as well as to shape the landscape of Discords backend data systems. You will report to the Senior Engineering Manager of the ML Platform team.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
+The Machine Learning Platform (MLP) at Discord is responsible for the end-to-end model lifecycle across all ML applications. We sit at the intersection of machine learning engineers (MLEs), core infrastructure, and ML consumers to provide tools, capabilities, and services that make machine learning easy, safe, and widely accessible. In this role, you will work on everything from feature stores, real-time data processing, LLM tooling, to model serving at scale. You will lead projects and work directly with ML practitioners as well as to shape the landscape of Discords backend data systems. You will report to the Senior Engineering Manager of the ML Platform team.
 What You'll Be Doing
 
 Design and build the platform ML engineers and data scientists use to understand and delight Discord's users and keep them safe

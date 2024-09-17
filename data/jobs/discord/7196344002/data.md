@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7196344002](https://discord.com/jobs/7196344002)
 
-**Updated At:** Mon, 16 Sep 2024 21:35:33 GMT
+**Updated At:** Mon, 16 Sep 2024 23:26:55 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&amp;nbsp;Discord is starting a new team with the mission of improving the lives of all Discord employees aka Discordians. As a founding member of the Leverage Engineering team, you’ll build products, tools, and novel solutions that empower teams to work faster, smarter, and more collaboratively.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
+Discord is starting a new team with the mission of improving the lives of all Discord employees aka Discordians. As a founding member of the Leverage Engineering team, you’ll build products, tools, and novel solutions that empower teams to work faster, smarter, and more collaboratively.
 We are looking for a curious self-starter who loves building new products in an iterative and fast moving environment. In this role, you will build software from the ground up to solve critical bottlenecks internally. This is a highly cross functional role and you’ll interface with leaders and collaborate with your customers regularly. If you’re the type of person who loves automating away manual tasks and get a deep sense of fulfilment from seeing others succeed, then read on as this role might be perfect for you.
 What You'll Be Doing
 

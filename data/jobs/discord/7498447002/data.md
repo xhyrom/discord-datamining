@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7498447002](https://discord.com/jobs/7498447002)
 
-**Updated At:** Mon, 16 Sep 2024 21:37:12 GMT
+**Updated At:** Mon, 16 Sep 2024 23:27:56 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're on the lookout for an Senior Software Engineer for our Media Infrastructure team! If the thought of managing the storage, processing, and delivery of over 100PB of user-generated media across millions of Discord users thrills you - let's talk! We're all about ensuring these media are managed efficiently, securely, cost-effectively.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
+We're on the lookout for an Senior Software Engineer for our Media Infrastructure team! If the thought of managing the storage, processing, and delivery of over 100PB of user-generated media across millions of Discord users thrills you - let's talk! We're all about ensuring these media are managed efficiently, securely, cost-effectively.
 Our team has recently made significant strides in enhancing Discord’s media capabilities:
 
 Instrumented Discord Client for media performance metrics.

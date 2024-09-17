@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7625340002](https://discord.com/jobs/7625340002)
 
-**Updated At:** Mon, 16 Sep 2024 20:54:24 GMT
+**Updated At:** Mon, 16 Sep 2024 23:20:19 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a Senior Product Marketing Manager for the Developer ecosystem, you will drive go-to-market strategy and execution from start to finish: market research, positioning, launch strategy and execution, and ongoing growth initiatives. You’ll quarterback cross-functional teams to execute on world-class product launches and campaigns that promote growth, engagement, and evangelism within the Developer ecosystem and deliver on business goals.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
+As a Senior Product Marketing Manager for the Developer ecosystem, you will drive go-to-market strategy and execution from start to finish: market research, positioning, launch strategy and execution, and ongoing growth initiatives. You’ll quarterback cross-functional teams to execute on world-class product launches and campaigns that promote growth, engagement, and evangelism within the Developer ecosystem and deliver on business goals.
 What You'll Be Doing
 
 Go-to-Market Planning and Execution: Develop Go-To-Market strategy grounded in market awareness and customer empathy to acquire new Developers and improve adoption of Developer tools and products.

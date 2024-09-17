@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7280468002](https://discord.com/jobs/7280468002)
 
-**Updated At:** Mon, 16 Sep 2024 20:57:02 GMT
+**Updated At:** Mon, 16 Sep 2024 23:24:04 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Come build the future of Discord’s business with us! We are looking for impact-focused engineers to join our world-class Revenue group as we accelerate Discord’s growth through the creation of compelling paid products. These products allow us to grow our business while keeping Discord’s core functionality free. &amp;nbsp;You will be reporting to the Senior Engineering Manager of Revenue Infrastructure. &amp;nbsp;To learn more about Discord Engineering, take a look at our engineering blog.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
+Come build the future of Discord’s business with us! We are looking for impact-focused engineers to join our world-class Revenue group as we accelerate Discord’s growth through the creation of compelling paid products. These products allow us to grow our business while keeping Discord’s core functionality free. &amp;nbsp;You will be reporting to the Senior Engineering Manager of Revenue Infrastructure. &amp;nbsp;To learn more about Discord Engineering, take a look at our engineering blog.
 What you'll be doing:
 
 Design, build and maintain a system for accurately measuring the impact of paid promotions, including impressions, clicks, and attribution. Collaborate with engineers on the team, and other teams such as Data Platform, to understand requirements and build systems to meet them.

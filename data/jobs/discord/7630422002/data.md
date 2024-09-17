@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7630422002](https://discord.com/jobs/7630422002)
 
-**Updated At:** Mon, 16 Sep 2024 21:36:18 GMT
+**Updated At:** Mon, 16 Sep 2024 23:27:21 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our mission is to build a platform that enables communities to flourish and where all members can safely find belonging. Machine learning is essential in building and maintaining this safe environment.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
+Our mission is to build a platform that enables communities to flourish and where all members can safely find belonging. Machine learning is essential in building and maintaining this safe environment.
 Our Safety Machine Learning team deploys state-of-the-art detection systems to mitigate harmful behavior, illegal content, spam, and other adversarial abuse. We take ownership of the solutions we build from concept to deployment, working closely with product, engineering, and data science teams to drive large-scale impact. Our ML and safety systems continuously evolve to ensure our products are safe by default.
 We’re seeking a technical, mission-driven Senior Machine Learning Engineer to design and implement end-to-end ML solutions that make Discord safer. If this excites you, keep reading!
 What You'll Be Doing
