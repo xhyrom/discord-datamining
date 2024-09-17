@@ -107,6 +107,15 @@
     >
   </li>
   <li>
+    <a href="#h_01J80B8BC0DJ9J6WEVKM0FGP89"
+      >How to Enable or Disable Stream Preview</a
+    >
+    <ul>
+      <li><a href="#h_01J80B8BC05NNHRCJW1CDEY39D">Desktop/Browser</a></li>
+      <li><a href="#h_01J80B8BC0YFPX0MF495DJ5Z9E">Mobile</a></li>
+    </ul>
+  </li>
+  <li>
     <a
       href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJH77AAZ7HR0GEN6M3"
       >How do I watch a Stream?</a
@@ -398,7 +407,7 @@
 <p id="h_01HFFJ28PJHSNHPFDTHYJAN4EK" class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      src="https://lh7-us.googleusercontent.com/1rnbR3G7CxlbrbVZBRltNFgIpOZDtnNfdHDl7RF8NA0hs9lBBYNjwyTKoGMtU4ssjSwabR-G0lFlyLVBzt92FFZoE9rZpNu0Th7FcIoQyBCXkEKKsGREFgmMZEMZ6rriR7UJKs2CKTpO55wBphYGviM"
+      src="https://support.discord.com/hc/article_attachments/26432341664151"
       width="624"
       height="351"
   /></span>
@@ -616,6 +625,131 @@
     width="430"
     height="96"
   />
+</p>
+<h1 id="h_01J80B8BC0DJ9J6WEVKM0FGP89">
+  How to Enable or Disable Stream Preview
+</h1>
+<p>
+  If you do not want other members of the server to be able to see a preview of
+  the stream (unless already watching the stream), this setting can be enabled
+  or disabled at any time. There are 2 ways to do this.
+</p>
+<h2 id="h_01J80B8BC05NNHRCJW1CDEY39D">Desktop/Browser</h2>
+<p><strong>Option 1</strong></p>
+<p>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >1. Tap on the </span
+  >cogwheel [<img
+    src="https://support.discord.com/hc/article_attachments/26432341670423"
+    width="20"
+    height="20"
+  />] in the bottom-left corner to access
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >User Settings</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
+    then head to </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Voice &amp; Video</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/26432341678487"
+      width="624"
+      height="392"
+  /></span>
+</p>
+<p>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >2. Scroll down until you see </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Stream Previews</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">. </span>Press
+  the toggle button to the right of this setting, to enable or disable it.
+</p>
+<ul>
+  <li>Check mark means the setting is enabled</li>
+  <li>X means the setting is disabled</li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26432341683223"
+    width="624"
+    height="92"
+  />
+</p>
+<p><strong>Option 2</strong></p>
+<h3 id="h_01J80BSKCNGB7KTMPC93TS7F76" class="tip-box">
+  This setting is per-stream and will default to your global setting. If you
+  want to make a different choice than your global setting you will have to
+  change this setting each time.
+</h3>
+<p>
+  When you start your screen share, you’ll see an option that says
+  <strong>Hide stream preview</strong>, which controls whether users will or
+  will not be able to see a preview of your stream before joining. If you check
+  the box next to it, this will disable Stream Previews. If it’s unchecked, then
+  the Stream Preview will display for all server members.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26432341687191"
+    width="485"
+    height="809"
+  />
+</p>
+<h2 id="h_01J80B8BC0YFPX0MF495DJ5Z9E">Mobile</h2>
+<p>
+  There is only one option for disabling or enabling this setting on mobile.
+</p>
+<p>
+  1. Tap your avatar in the bottom-right corner and then tap on the cogwheel
+  [<img
+    src="https://support.discord.com/hc/article_attachments/26432317561111"
+    width="20"
+    height="20"
+  />] in the top-right corner.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26432317563287"
+    width="380"
+    height="758"
+  />
+</p>
+<p>2. Tap on <strong>Voice</strong>. </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26432317568535"
+    width="363"
+    height="710"
+  />
+</p>
+<p>
+  3. Then scroll down until you see <strong>Stream Previews</strong>. Here you
+  can toggle the setting to enable or disable it.
+</p>
+<ul>
+  <li>Check mark means the setting is enabled</li>
+  <li>X means the setting is disabled</li>
+</ul>
+<p>
+  <img
+    src="https://support.discord.com/hc/article_attachments/26432317575319"
+    width="624"
+    height="241"
+  />
+</p>
+<p>
+  4. If enabled, the next time you screen share to Discord on your mobile device
+  the stream preview will be disabled.
 </p>
 <h1 id="h_01HFFJ28PJH77AAZ7HR0GEN6M3">How do I watch a Stream?</h1>
 <p>
