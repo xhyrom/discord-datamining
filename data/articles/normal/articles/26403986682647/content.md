@@ -79,8 +79,8 @@
 <h1 id="h_01J7XSBGMRRTJ56NPRW3X2K67P">How to Complete the Quest</h1>
 <div class="info-box">
   <strong>NOTE</strong>: To fulfill the Quest requirement,
-  <strong>FINAL FANTASY XVI</strong> must be played with your Discord app open
-  simultaneously (on browser or desktop). 
+  <strong>FINAL FANTASY XVI</strong> must be played with your Discord desktop
+  app open simultaneously. 
 </div>
 <p>
   In order to successfully complete the <strong>FFXVI Quest</strong>, players
@@ -147,7 +147,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfVU4-qbP0fNx0tyPq1ERJdM2qujWu9wSVDLbreqlYvG2j2SJpDBv3mWh64mJ0hVTo_ZgZXLQMPhnowuRb7q3mOg-WAxWa3yILC7bWBsFO8TGWlJSTJ8cVH9JhaZx9d1fUFnpGWe5FfP74StpGKKNkGcnVG?key=sDF64vADKB512YeD-9HHgw"
+    src="https://support.discord.com/hc/article_attachments/26439607172503"
     width="624"
     height="367"
   />
@@ -235,4 +235,12 @@
   <strong>Home</strong> (<strong>Discover &gt; Quests</strong>) or in-app
   notifications about the quest, the period to complete and claim the reward for
   the Quest is over.
+</p>
+<p>
+  <strong
+    >Q: I am running into issues while trying to make progress with the Epic
+    Games Store version of the game.</strong
+  ><br />A: If you're experiencing problems with the Epic Games Store version of
+  the game, try restarting your Discord desktop client. This often helps resolve
+  progress-related issues.
 </p>
