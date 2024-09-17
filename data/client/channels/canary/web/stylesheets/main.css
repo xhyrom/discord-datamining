@@ -19285,10 +19285,9 @@ span.clanTag_a31c43 {
 }
 @use postcss-pxtorem;
 .gameIcon_aaf548 {
-  position: relative;
-  top: 0.1875rem;
   cursor: pointer;
   margin-left: 4px;
+  vertical-align: middle;
 }
 .gameMessageTooltip_aaf548 {
   max-width: none;
@@ -44303,4 +44302,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.af666b3c81664e460239.css.map*/
+/*# sourceMappingURL=12633.21e0878d725204fed6af.css.map*/
