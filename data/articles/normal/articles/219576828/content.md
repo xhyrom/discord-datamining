@@ -3,35 +3,36 @@
   layer of security to your Discord account to help you stay in control of
   logging in.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01J7XZBQJH1JKVRSCWG4T0DN8Z"
-      >Types of Multi-Factor Authentication </a
-    >
-    <ul>
-      <li>
-        <a href="#h_01J7XZBQJHDF3RG89B52Q0MTFR">Passkeys and Security Keys</a>
-      </li>
-      <li><a href="#h_01J7XZBQJH4W0MV165Y70EY05P">Authenticator App</a></li>
-      <li><a href="#h_01J7XZBQJH41PZMW6E7GSNX262">SMS/Texts</a></li>
-      <li><a href="#h_01J7XZBQJHRWM9G19V288DEMGV">Backup Codes</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J7XZBQJHAKQDMADX5XX8CJT9">I forgot to download my codes</a>
-  </li>
-  <li>
-    <a href="#h_01J7XZBQJHF12T6SS06944MHET"
-      >I forgot to add my phone as backup</a
-    >
-  </li>
-</ul>
-<h1 id="h_01J7XZBQJH1JKVRSCWG4T0DN8Z">Types of Multi-Factor Authentication</h1>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01J7XZBQJH1JKVRSCWG4T0DN8Z"
+        >Types of Multi-Factor Authentication</a
+      >
+      <ul>
+        <li>
+          <a href="#h_01J7XZBQJHDF3RG89B52Q0MTFR">Passkeys and Security Keys</a>
+        </li>
+        <li><a href="#h_01J7XZBQJH4W0MV165Y70EY05P">Authenticator App</a></li>
+        <li><a href="#h_01J7XZBQJH41PZMW6E7GSNX262">SMS/Texts</a></li>
+        <li><a href="#h_01J7XZBQJHRWM9G19V288DEMGV">Backup Codes</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01J7XZBQJHAKQDMADX5XX8CJT9">I forgot to download my codes</a>
+    </li>
+    <li>
+      <a href="#h_01J7XZBQJHF12T6SS06944MHET"
+        >I forgot to add my phone as backup</a
+      >
+    </li>
+  </ul>
+</div>
+<h1 id="h_01J80CYCPQQZEJWC18WAS6GBHA">Types of Multi-Factor Authentication</h1>
 <p>
   Discord supports three types of MFA: Security Keys (Passkeys), Authenticator
   App, and SMS. We recommend setting up a Security Key , but you can choose any

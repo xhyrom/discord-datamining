@@ -1,27 +1,28 @@
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01J7XYH0C49BPYCZ3ADDGX3J15">What is an Authenticator App?</a>
-  </li>
-  <li>
-    <a href="#h_01J7XYH0C4N3YPJ6AKMB92S6DE"
-      >How to Register an Authenticator App</a
-    > 
-    <ul>
-      <li><a href="#h_01J7XYH0C49N6211XTG303252P">Mobile</a></li>
-      <li><a href="#h_01J7XYH0C4DS1R5KMBFDWMZN7D">Desktop/Browser</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J7XYH0C47C8RF5R4PVKD0CSF"
-      >Logging in With an Authenticator App</a
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01J7XYH0C49BPYCZ3ADDGX3J15">What is an Authenticator App?</a>
+    </li>
+    <li>
+      <a href="#h_01J7XYH0C4N3YPJ6AKMB92S6DE"
+        >How to Register an Authenticator App</a
+      > 
+      <ul>
+        <li><a href="#h_01J7XYH0C49N6211XTG303252P">Mobile</a></li>
+        <li><a href="#h_01J7XYH0C4DS1R5KMBFDWMZN7D">Desktop/Browser</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01J7XYH0C47C8RF5R4PVKD0CSF"
+        >Logging in With an Authenticator App</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01J7XYH0C49BPYCZ3ADDGX3J15">What is an Authenticator App?</h1>
 <p>
   Using an Authenticator App (also called a Time-based One-Time Password or

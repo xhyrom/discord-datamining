@@ -3,24 +3,29 @@
   layer of security to your Discord account to help you stay in control of
   logging in.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01J806DMWB4STCJ8RCKAEF3EV8">How to Register Passkey</a>
-    <ul>
-      <li><a href="#h_01J806DMWB9QF5TCRHQ2Z4EW1G">Mobile</a></li>
-      <li><a href="#h_01J806DMWB8WRKBS04YXX47CJQ">Desktop/Browser</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J806DMWBQWMCM3XC01X2PX61">Passwordless Login with Passkeys</a>
-  </li>
-  <li><a href="#h_01J806DMWB34KBHKM4XSWZ0FGM">How to Use Security Keys</a></li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01J806DMWB4STCJ8RCKAEF3EV8">How to Register Passkey</a>
+      <ul>
+        <li><a href="#h_01J806DMWB9QF5TCRHQ2Z4EW1G">Mobile</a></li>
+        <li><a href="#h_01J806DMWB8WRKBS04YXX47CJQ">Desktop/Browser</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01J806DMWBQWMCM3XC01X2PX61"
+        >Passwordless Login with Passkeys</a
+      >
+    </li>
+    <li>
+      <a href="#h_01J806DMWB34KBHKM4XSWZ0FGM">How to Use Security Keys</a>
+    </li>
+  </ul>
+</div>
 <p>
   Discord supports the newest standards for authentication: Passkeys and
   Security Keys, an easier to use <em>and</em> more secure way to sign into your

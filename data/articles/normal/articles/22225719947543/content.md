@@ -23,22 +23,23 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
-      <li><a href="#h_01J7CES1WTMHAPE1CKZTTKFGKK">Honkai: Star Rail </a></li>
-      <li>
-        <a href="#h_01J6G4D7V76YHX2F60YETE63JJ">The First Descendant </a> 
-      </li>
-      <li><a href="#h_01J71E6SB3E6C2WB0T0D994406">Wuthering Waves </a></li>
+      <li><a href="#h_01J7YCN0PYT9VD8PFX7FDQT6YD">FINAL FANTASY XVI</a></li>
     </ul>
   </li>
   <li>
-    <a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests</a>
+    <a href="#h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</a>
     <ul>
-      <li><a href="#h_01J71F0RY3F0CF02065Y2P5ARZ">Predecessor</a></li>
-      <li><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">Krunker Strike FRVR</a></li>
+      <li><a href="#h_01J7CES1WTMHAPE1CKZTTKFGKK">Honkai: Star Rail </a></li>
       <li>
-        <a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH">GTA Online</a
-        ><a href="#h_01J4SWTY0G04RFBSRTPA6NFGFH"> </a>
+        <a
+          href="#h_01J6G4D7V76YHX2F60YETE63JJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          >The First Descendant 
+        </a>
       </li>
+      <li><a href="#h_01J71E6SB3E6C2WB0T0D994406">Wuthering Waves  </a></li>
+      <li><a href="#h_01J71F0RY3F0CF02065Y2P5ARZ">Predecessor</a></li>
     </ul>
   </li>
   <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
@@ -78,6 +79,22 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J7YCN0PYT9VD8PFX7FDQT6YD">
+  <a
+    href="https://support.discord.com/hc/articles/26403986682647"
+    target="_blank"
+    rel="noopener noreferrer"
+    >FINAL FANTASY XVI - FFXVI Quest</a
+  >
+</h2>
+<p>
+   The FFXVI Quest can be accepted on Discord from
+  <strong>September 17, 202</strong>4 until
+  <strong>September 23, 2024 (11:59PM UTC)</strong>. The avatar decoration needs
+  to be redeemed by <strong>October 23, 2024</strong>. Quest requirements must
+  be completed during this period to receive the reward.
+</p>
+<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests </h1>
 <h2 id="h_01J7CES1WTMHAPE1CKZTTKFGKK">
   <a
     href="https://support.discord.com/hc/articles/26166360563607"
@@ -126,7 +143,6 @@
   >. Reward gift codes expire <strong>October 9, 2024 (4AM UTC)</strong>. Quest
   requirements must be completed during this period to receive the reward.
 </p>
-<h1 id="h_01J4SWTY0G04RFBSRTPA6NFGFH">Recently Finished Quests </h1>
 <h2 id="h_01J71F0RY3F0CF02065Y2P5ARZ">
   <a
     href="https://support.discord.com/hc/articles/25871940367895-Predecessor-Quest"
@@ -142,38 +158,6 @@
     September 3, 2024 (11:59PM UTC)</strong
   >. Reward gift codes expire <strong>October 3, 2024</strong>. Quest
   requirements must be completed during this period to receive the reward.
-</p>
-<h2 id="01J600SFT31JAMN09G681BW71N">
-  <a
-    href="https://support.discord.com/hc/articles/25459791491735/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Krunker Strike FRVR - Mom, I'm Winning Quest</a
-  >
-</h2>
-<p>
-  The <strong>Mom, I'm Winning</strong> Quest can be accepted on Discord from
-  <strong>August 8, 2024 </strong>until
-  <strong>August 16, 2024 (11:59PM UTC)</strong>. The
-  <strong>Methane Mask</strong> must be redeemed by
-  <strong>September 15, 2024</strong>. Quest requirements must be completed
-  during this period to receive the reward.
-</p>
-<h2 id="01J600SFT4XHCWHK7242RAZFW2">
-  <a
-    href="https://support.discord.com/hc/articles/25139456801687"
-    target="_blank"
-    rel="noopener noreferrer"
-    >GTA Online - GTA Online Quest</a
-  >
-</h2>
-<p>
-  The <strong>GTA Online Quest</strong> can be accepted on Discord from
-  <strong>August 8, 2024</strong> until
-  <strong>August 15, 2024 (11:59PM UTC)</strong>. The
-  <strong>Los Santos Avatar Decoration</strong> needs to be redeemed by
-  <strong>September 15, 2024. </strong>Quest requirements must be completed
-  during this period to receive the reward. 
 </p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
 <p>
