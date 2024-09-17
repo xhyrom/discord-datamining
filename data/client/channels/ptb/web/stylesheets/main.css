@@ -25917,14 +25917,17 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
     outline.3s ease;
 }
 .soundButtonRefresh_f40049:hover,
+.soundButtonRefresh_f40049.focused_f40049,
 .soundButtonRefresh_f40049:active:not(:focus-within) {
   border-color: var(--border-strong);
 }
 .soundButtonRefresh_f40049:hover .soundInfoRefresh_f40049,
+.soundButtonRefresh_f40049.focused_f40049 .soundInfoRefresh_f40049,
 .soundButtonRefresh_f40049:active:not(:focus-within) .soundInfoRefresh_f40049 {
   box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.12);
 }
 .soundButtonRefresh_f40049:hover .buttonOverlayActionsRefresh_f40049,
+.soundButtonRefresh_f40049.focused_f40049 .buttonOverlayActionsRefresh_f40049,
 .soundButtonRefresh_f40049:active:not(:focus-within)
   .buttonOverlayActionsRefresh_f40049 {
   margin-top: 0;
@@ -25941,14 +25944,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .soundButtonRefresh_f40049:active:not(:focus-within) .soundNameRefresh_f40049 {
   color: var(--header-muted);
-}
-.soundButtonRefresh_f40049:active:not(:focus-within)
-  .primaryIconRefresh_f40049 {
-  padding-top: 15px;
-}
-.soundButtonRefresh_f40049:active:not(:focus-within)
-  .primaryIconRefresh_f40049.hasEmoji_f40049 {
-  padding-top: 4px;
 }
 .soundButtonRefresh_f40049:active:not(:focus-within)
   .secondaryButtonRefresh_f40049 {
@@ -26124,12 +26119,14 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
     )
     border-box;
 }
-.premiumDisabledRefresh_f40049:hover {
+.premiumDisabledRefresh_f40049:hover,
+.premiumDisabledRefresh_f40049.focused_f40049 {
   background:
     linear-gradient(var(--card-primary-bg), var(--card-primary-bg)) padding-box,
     var(--custom-gradient-border);
 }
-.premiumDisabledRefresh_f40049:hover .emojiCircle_f40049 {
+.premiumDisabledRefresh_f40049:hover .emojiCircle_f40049,
+.premiumDisabledRefresh_f40049.focused_f40049 .emojiCircle_f40049 {
   background: linear-gradient(
     90deg,
     hsl(var(--premium-tier-2-purple-for-gradients-hsl) / 0.2) 0%,
@@ -26137,10 +26134,13 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
     hsl(var(--premium-tier-2-pink-for-gradients-hsl) / 0.2) 100%
   );
 }
-.premiumDisabledRefresh_f40049:hover .emoji_f40049 {
+.premiumDisabledRefresh_f40049:hover .emoji_f40049,
+.premiumDisabledRefresh_f40049.focused_f40049 .emoji_f40049 {
   opacity: 0.1;
 }
 .premiumDisabledRefresh_f40049:hover
+  .soundNameRefresh_f40049:not(.hasEmoji_f40049),
+.premiumDisabledRefresh_f40049.focused_f40049
   .soundNameRefresh_f40049:not(.hasEmoji_f40049) {
   opacity: 0.5;
 }
@@ -26227,12 +26227,10 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   width: 20px;
   height: 20px;
   color: var(--interactive-active);
-  padding-top: 17px;
-  transition: padding-top.1s ease;
+  align-self: center;
 }
-.primaryIconRefresh_f40049.hasEmoji_f40049,
-.primaryIconRefresh_f40049.primaryIconTopLevel_f40049 {
-  padding-top: 6px;
+.primaryIconRefresh_f40049.hasEmoji_f40049:not(.primaryIconTopLevel_f40049) {
+  padding-bottom: 21px;
 }
 .lockIcon_f40049 {
   pointer-events: none;
@@ -44306,4 +44304,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.98263632f6a0b1023ed4.css.map*/
+/*# sourceMappingURL=12633.9af2b3c9e34269ff50dc.css.map*/
