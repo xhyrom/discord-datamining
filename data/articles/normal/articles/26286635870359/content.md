@@ -150,7 +150,7 @@
 </p>
 <p>
   To find a server ID, right-click the server’s name or the server icon and then
-  select <strong>Copy User ID</strong>.
+  select <strong>Copy Server ID</strong>.
 </p>
 <div class="warn-box">
   Please note that we cannot transfer ownership if you’re asking on behalf of
