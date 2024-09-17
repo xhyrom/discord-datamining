@@ -1,0 +1,10 @@
+{
+  "id": "meet-dave-e2ee-for-audio-video",
+  "title": "Meet DAVE: Discord’s New End-to-End Encryption for Audio & Video",
+  "link": "https://discord.com/blog/meet-dave-e2ee-for-audio-video",
+  "guid": "https://discord.com/blog/meet-dave-e2ee-for-audio-video",
+  "description": "We’re rolling out end-to-end encryption for voice and video calls! We’d like to share why we’re bringing E2EE A/V to Discord, share our design and implementation goals, and provide a high-level technical overview of how it works.",
+  "pubDate": "Tue, 17 Sep 2024 00:00:00 GMT",
+  "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66e887e79d3b4d4fc25d279f_E2EE%2004.png",
+  "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66e887e79d3b4d4fc25d279f_E2EE%2004.png"
+}
