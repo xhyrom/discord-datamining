@@ -246,8 +246,8 @@
   a. On Desktop, select the <strong>Encryption</strong> tab.
 </p>
 <p class="wysiwyg-indent4">
-  b. On Mobile, select the <strong>End-to-end Encryption</strong> button on the
-  <strong>User Settings</strong> tab.
+  b. On Mobile, select<strong> End-to-end Encryption</strong> under the
+  <strong>Privacy &amp; Safety</strong> tab.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
