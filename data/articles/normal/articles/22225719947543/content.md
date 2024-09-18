@@ -23,6 +23,7 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
+      <li><a href="#h_01J834W9W4XK6ACDM184VA93XR">Discord Activities </a></li>
       <li><a href="#h_01J7YCN0PYT9VD8PFX7FDQT6YD">FINAL FANTASY XVI</a></li>
     </ul>
   </li>
@@ -79,6 +80,20 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J834W9W4XK6ACDM184VA93XR">
+  <a
+    href="https://support.discord.com/hc/articles/26435077579415-Discord-Activities-Quest"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Activities - Discord Activities Quest</a
+  >
+</h2>
+<p>
+  The <strong>Discord Activities Ques</strong>t can be accepted on Discord from
+  <strong>September 16, 2024</strong> until
+  <strong>September 23, 2024 (11:59PM UTC)</strong>. Quest requirements must be
+  completed during this period to receive the reward.
+</p>
 <h2 id="h_01J7YCN0PYT9VD8PFX7FDQT6YD">
   <a
     href="https://support.discord.com/hc/articles/26403986682647"

@@ -34,5 +34,16 @@
     "01J3NCXCYM0GYACCHRDKF30GTG",
     "01J6AH9EHR65KJ9EGJJZVHNNG2"
   ],
-  "label_names": []
+  "label_names": [
+    "avatar",
+    "answer-bot",
+    "quest",
+    "decoration",
+    "discord",
+    "rewards",
+    "deco",
+    "final",
+    "fantasy",
+    "xvi"
+  ]
 }
