@@ -28333,106 +28333,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .buttonWrapper_f9af59:hover {
   color: var(--interactive-active);
 }
-.container_d523a2 {
-  background-color: var(--brand-500);
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-  border-radius: 8px;
-  padding: 0 16px;
-}
-.body_d523a2 {
-  padding-top: 56px;
-  max-width: 248px;
-}
-.pointer_d523a2 {
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
-  border-width: 10px;
-  pointer-events: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-top-color: var(--brand-500);
-}
-div.popoutCloseButton_d523a2 {
-  background-color: hsl(var(--black-500-hsl) / 0.25);
-}
-div.popoutCloseButton_d523a2:hover {
-  background-color: hsl(var(--black-500-hsl) / 0.25);
-}
-.popoutTarget_d523a2 {
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 20px;
-  top: -20px;
-}
-.text_d523a2 {
-  color: #fff;
-  padding-top: 8px;
-}
-.image_d523a2 {
-  position: absolute;
-  width: 200px;
-  top: -40px;
-}
-.buttonContainer_d523a2 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 16px;
-}
-.ctaButton_d523a2 {
-  flex: 1;
-}
-.closeButton_d523a2 {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.container_efde15 {
-  display: flex;
-}
-.iconContainer_efde15 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.buttonLayer_efde15 {
-  position: relative;
-}
-.decorativeLayer_efde15 {
-  position: fixed;
-  transform: scale(1);
-  pointer-events: none;
-  display: none;
-}
-.decorativeLayerActive_efde15 {
-  display: block;
-}
-.noPointerEvents_efde15 {
-  pointer-events: none;
-}
-.giftIconButton_efde15 {
-  border-radius: var(--radius-round);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  margin: -8px;
-}
-.theme-light .giftIconButtonActive_efde15 {
-  background-color: var(--background-secondary);
-}
-.theme-dark .giftIconButtonActive_efde15 {
-  background-color: var(--background-accent);
-}
 .generalHeading_a2f60b {
   color: var(--primary-130);
   padding: 16px 12px 0 16px;
@@ -34167,6 +34067,7 @@ div.popoutCloseButton_d523a2:hover {
   background-clip: padding-box;
   border-radius: 50%;
   padding: 4px;
+  color: var(--white-500);
   width: 16px;
   height: 16px;
   position: absolute;
@@ -44306,4 +44207,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.98263632f6a0b1023ed4.css.map*/
+/*# sourceMappingURL=12633.8ee36e77c9040b43334e.css.map*/
