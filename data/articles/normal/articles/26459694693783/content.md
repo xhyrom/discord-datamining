@@ -45,7 +45,7 @@
 <p>
   1. Join a voice channel that you have permissions to screen share in and then
   tap the <strong>Screen</strong> <strong>Share</strong> [<img
-    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfT7AIu-kf_DV9e7sKuz2e5HPqFGnP5v850gSGX0_5LK4XFWvvUS8yFAEaB32Rt3BVC_dLTnisaaFYNUeyCWKvG-A0YJ3QkuAVzTmmI6Q1I_xf2OChMnooDeEW0KlG-jQXpMjd-a3UjvI2qiXMq0S6Smu-O?key=g2sUA4D3iPfRi9G5wdjBfA"
+    src="https://support.discord.com/hc/article_attachments/26470292828439"
     width="24"
     height="24"
   />] icon.
@@ -58,7 +58,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfvRbJOhz7zW0E0z4S793hZu3jS9Qhv0qKvxxqrW6VkN_X8eChz0JzeVcKejRxX_tGqH528V9YVuv1vWhU9nLxcSWoXZzH5xNFpnU9zGUOuv5l9Ohxgz77Rlgeo6mMyLAAPy-LOuH6HKELu5NvagrITVZvP?key=g2sUA4D3iPfRi9G5wdjBfA"
+    src="https://support.discord.com/hc/article_attachments/26470319891735"
     width="624"
     height="441"
   />
@@ -71,7 +71,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfz_cyhf3SVbu2jEolhzigFoFdayUiKDrP9DFvCqisF-i32iZfSE1wTwRDA2f61KqsuD0wGK4QA3YhE1E_cwT4h-yLk8xXOzfE8AYmDiInhOQ6CGrI4U87uPiJKMKUT-xJScnKDVOs2Mu5eiTyMmwoDeVk?key=g2sUA4D3iPfRi9G5wdjBfA"
+    src="https://support.discord.com/hc/article_attachments/26470319893527"
     width="624"
     height="433"
   />
@@ -82,16 +82,15 @@
   want to share to select it.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="background-color: #e0f1ff" data-darkreader-inline-bgcolor=""
-    ><img
-      src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeCeTcu9PXnjKcA2cszZCqjSrda_UMxcQWzAl1M3o9U7LMWx1yfezMfN0IfxcIySc4O_3mz37nEN49iwCC440-J6gGVMj8lYZ9yimBrioD3sr0nRy5ODhM4z2106IZj3zMudOL42xykF0fwkEfxaNWO1Is?key=g2sUA4D3iPfRi9G5wdjBfA"
-      width="598"
-      height="413"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/26470319894935"
+    width="585"
+    height="357"
+  />
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeJTmJ5-YXKFHn0qnGu6ZkSZ3GUHlImOqMTLuh-oR9vmG20xwB2StARvuWjuitoDoYUmXDKe8JS-trM4m2xBn9feEhncfDKTam8LS0t7Gfth64IYXgOQ1gvd6FC0be9UAbHKov4M4i4XuadsFaQIKPKwGTF?key=g2sUA4D3iPfRi9G5wdjBfA"
+    src="https://support.discord.com/hc/article_attachments/26470292834839"
     width="614.4693140794225"
     height="444.171581769437"
   />

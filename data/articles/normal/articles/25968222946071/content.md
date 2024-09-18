@@ -183,7 +183,7 @@
 <p>To enable persistent verification keys: </p>
 <p>
   1. Navigate to <strong>User Settings, </strong>then select
-  <strong>Privacy &amp; Settings</strong>. 
+  <strong>Privacy &amp; Safety</strong>. 
 </p>
 <p>
   2. Select the <strong>Encryption </strong>tab, and toggle the
