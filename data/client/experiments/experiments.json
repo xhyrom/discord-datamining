@@ -9349,18 +9349,21 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Friend anniversaries enabled"
+        "Treatment 1: Friend anniversaries enabled with text CTA",
+        "Treatment 2: Friend anniversaries enabled with emoji CTA"
       ],
       "hash": 1006930170,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "enabled",
+        "enableEmojiCTA"
       ]
     }
   },
