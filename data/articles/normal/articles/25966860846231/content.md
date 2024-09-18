@@ -38,13 +38,13 @@
 <p>
   All you’ll need to do is <strong>Register a Passkey</strong>. Once you’ve done
   that, you’re set! The next time you sign in, you’ll be able to use that
-  passkey for one-step login -<a
-    href="https://www.notion.so/Security-Keys-Passkeys-and-Passwordless-Login-on-Discord-85efa0b891b344568a19db6de47ccfed?pvs=21"
+  passkey for one-step login -
+  <a
+    href="#h_01J806DMWBQWMCM3XC01X2PX61"
     target="_blank"
     rel="noopener noreferrer"
+    >see below for more details.</a
   >
-    see below for more details</a
-  >.
 </p>
 <h1 id="h_01J806DMWB4STCJ8RCKAEF3EV8">How to Register Passkeys</h1>
 <h2 id="h_01J806DMWB9QF5TCRHQ2Z4EW1G">Mobile</h2>
