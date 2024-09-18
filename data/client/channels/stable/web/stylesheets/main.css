@@ -5689,9 +5689,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   pointer-events: none;
   position: absolute;
 }
-.emoji_c5a065 {
-  display: inline-block;
-}
 .full-motion .emoji_c5a065 {
   animation: moveUpDown_c5a065 1s ease-in-out infinite;
 }
@@ -5704,8 +5701,11 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     transform: translatey(3px);
   }
 }
-.buttonOverflow_c5a065 {
+.buttonWithEmoji_c5a065 {
   overflow: visible !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 .errorCodeMessage_c78a6e {
   margin-top: 16px;
@@ -11945,6 +11945,44 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .trialHeader_c87d73 {
   max-width: 60%;
   margin-bottom: 18px;
+}
+.withHalloweenTier2_c87d73 {
+  background-image: linear-gradient(
+      100.98deg,
+      rgba(133, 71, 198, 0.64) 25.21%,
+      rgba(184, 69, 193, 0.64) 62.43%,
+      rgba(171, 93, 138, 0.64) 95.57%
+    ),
+    url(https://cdn.discordapp.com/assets/content/2fb8950c84e002f2db23d1e206a2c7300a8f511449a86e3f7ef3dfe89eaa076d.png);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 139, 13, 0.8);
+  transform: scale(1);
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+.halloweenGiftMessage_c87d73 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -moz-column-gap: 12px;
+  column-gap: 12px;
+  margin: 24px -24px -24px;
+  padding: 12px 24px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 139, 13, 0.9) 0%,
+    rgba(255, 139, 13, 0.9) 100%
+  );
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.halloweenGiftMessageText_c87d73 {
+  color: black;
+}
+.halloweenAvatar_c87d73 {
+  margin-top: -52px;
 }
 .heading_aac415 {
   margin-bottom: 8px;
@@ -19285,10 +19323,9 @@ span.clanTag_a31c43 {
 }
 @use postcss-pxtorem;
 .gameIcon_aaf548 {
-  position: relative;
-  top: 0.1875rem;
   cursor: pointer;
   margin-left: 4px;
+  vertical-align: middle;
 }
 .gameMessageTooltip_aaf548 {
   max-width: none;
@@ -30426,14 +30463,6 @@ div.popoutCloseButton_d523a2:hover {
 }
 .participantName_d22933 {
   margin-left: 8px;
-}
-.emptyBroadcast_d22933 {
-  height: auto;
-  padding: 16px;
-  background-color: var(--background-floating);
-}
-.innerEmptyBroadcast_d22933 {
-  position: relative;
 }
 .container_ce795d {
   position: absolute;
@@ -43726,7 +43755,6 @@ code {
   --custom-folder-item-animation-duration: 150ms;
   --custom-folder-item-guild-icon-size: 48px;
   --custom-folder-item-guild-icon-margin: 8px;
-  --custom-list-items-list-item-width: 72px;
 }
 :root {
   --custom-category-channel-space-before-category: 16px;
@@ -44303,4 +44331,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.af666b3c81664e460239.css.map*/
+/*# sourceMappingURL=12633.e3e8c956b906fe05f07a.css.map*/
