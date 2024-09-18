@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_message_forwarding_gtm",
+    "label": "Message forwarding GTM",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: GTM"
+    ],
+    "hash": 1298178098,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
