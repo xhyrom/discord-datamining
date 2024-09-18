@@ -1,5 +1,34 @@
 [
   {
+    "id": 26459694693783,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/26459694693783.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/26459694693783-How-to-Screen-Share-on-MacOS",
+    "author_id": 2921470028,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 201110537,
+    "created_at": "2024-09-18T16:00:11Z",
+    "name": "How to Screen Share on MacOS",
+    "title": "How to Screen Share on MacOS",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-18T20:25:11Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720972,
+    "content_tag_ids": [],
+    "label_names": [
+      "answer-bot",
+      "screen share",
+      "go live",
+      "macos screenshare"
+    ],
+    "body": "<div class=\"toc-box\">\n<strong><span class=\"wysiwyg-font-size-x-large\">What this article covers:</span><br></strong>\n<ul>\n<li><a href=\"#h_01J83CKCZ273XNGNEFHV3VE58G\">What is Screen Sharing?</a></li>\n<li><a href=\"#h_01J83CKCZ21B7A7A1ZMC9W7XKW\">How to Screen Share on MacOS</a></li>\n</ul>\n</div>\n<h1 id=\"h_01J83CKCZ273XNGNEFHV3VE58G\">What is Screen Sharing?</h1>\n<div class=\"book-box\">\n<strong>Note:</strong> To learn more about screen sharing, please check out the <a href=\"https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share\" target=\"_blank\" rel=\"noopener noreferrer\">Go Live and Screen Share Help Center article</a>. If you’d rather use a Stage Channel for screen sharing, please check out the <a href=\"https://support.discord.com/hc/en-us/articles/1500005513722\" target=\"_blank\" rel=\"noopener noreferrer\">Stage Channels FAQ Help Center article</a>.</div>\n<p><strong>Screen Sharing </strong>allows you to share your screen or an application window through a voice call in a server, direct message, or group message. </p>\n<div class=\"tip-box\">\n<strong>Note:</strong> When you’re in a voice call, any number of users can screen share, but only 50 users can watch an individual screen share.</div>\n<h1 id=\"h_01J83CKCZ21B7A7A1ZMC9W7XKW\">How to Screen Share on MacOS</h1>\n<div class=\"info-box\">\n<strong>Note:</strong> Depending on the OS of your Mac device, your UI may look slightly different.</div>\n<p>1. Join a voice channel that you have permissions to screen share in and then tap the <strong>Screen</strong> <strong>Share</strong> [<img src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXfT7AIu-kf_DV9e7sKuz2e5HPqFGnP5v850gSGX0_5LK4XFWvvUS8yFAEaB32Rt3BVC_dLTnisaaFYNUeyCWKvG-A0YJ3QkuAVzTmmI6Q1I_xf2OChMnooDeEW0KlG-jQXpMjd-a3UjvI2qiXMq0S6Smu-O?key=g2sUA4D3iPfRi9G5wdjBfA\" width=\"24\" height=\"24\">] icon.</p>\n<p>2. You can choose to share one of the following: <strong>Share entire screen</strong>, <strong>share a window</strong>, <strong>share an app</strong>, or you can tap on <strong>Or share a device</strong> to share from a device.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXfvRbJOhz7zW0E0z4S793hZu3jS9Qhv0qKvxxqrW6VkN_X8eChz0JzeVcKejRxX_tGqH528V9YVuv1vWhU9nLxcSWoXZzH5xNFpnU9zGUOuv5l9Ohxgz77Rlgeo6mMyLAAPy-LOuH6HKELu5NvagrITVZvP?key=g2sUA4D3iPfRi9G5wdjBfA\" width=\"624\" height=\"441\"></p>\n<p>3. After deciding what you want to screen share, you can then select the <strong>Stream Quality</strong>, <strong>Resolution</strong>, and <strong>Frame Rate</strong>. After you’re finished with your selections, tap on <strong>Next</strong>.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXfz_cyhf3SVbu2jEolhzigFoFdayUiKDrP9DFvCqisF-i32iZfSE1wTwRDA2f61KqsuD0wGK4QA3YhE1E_cwT4h-yLk8xXOzfE8AYmDiInhOQ6CGrI4U87uPiJKMKUT-xJScnKDVOs2Mu5eiTyMmwoDeVk?key=g2sUA4D3iPfRi9G5wdjBfA\" width=\"624\" height=\"433\"></p>\n<p>4. You’ll be prompted by your MacOS device to select exactly what you want to screenshare. Tap <strong>Make Selection</strong> and then press on what you want to share to select it.</p>\n<p class=\"wysiwyg-text-align-center\"><span style=\"background-color: #e0f1ff;\" data-darkreader-inline-bgcolor=\"\"><img src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXeCeTcu9PXnjKcA2cszZCqjSrda_UMxcQWzAl1M3o9U7LMWx1yfezMfN0IfxcIySc4O_3mz37nEN49iwCC440-J6gGVMj8lYZ9yimBrioD3sr0nRy5ODhM4z2106IZj3zMudOL42xykF0fwkEfxaNWO1Is?key=g2sUA4D3iPfRi9G5wdjBfA\" width=\"598\" height=\"413\"></span></p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXeJTmJ5-YXKFHn0qnGu6ZkSZ3GUHlImOqMTLuh-oR9vmG20xwB2StARvuWjuitoDoYUmXDKe8JS-trM4m2xBn9feEhncfDKTam8LS0t7Gfth64IYXgOQ1gvd6FC0be9UAbHKov4M4i4XuadsFaQIKPKwGTF?key=g2sUA4D3iPfRi9G5wdjBfA\" width=\"614.4693140794225\" height=\"444.171581769437\"></p>\n<p>5. Now you’re screen sharing to the Discord app on a MacOS device!</p>"
+  },
+  {
     "id": 26435077579415,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/26435077579415.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/26435077579415-Discord-Activities-Quest",
