@@ -5108,5 +5108,9 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "GUILD_LEADERBOARD": {
+    "url": "/guilds/:param/leaderboards/:param",
+    "allowed_methods": null
   }
 }
