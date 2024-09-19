@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_best_of_nitro_v2_experiment",
+    "label": "Best of Nitro bento boxes",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Users see current best of nitro section",
+      "Treatment 1: users see best of nitro bento boxes "
+    ],
+    "hash": 2180300978,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
