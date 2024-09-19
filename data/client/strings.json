@@ -17093,7 +17093,7 @@
   "FOR_LATER_DIRECT_MESSAGE_WITH": "\"Direct message with !!{username}!!\"",
   "FOR_LATER_BOOKMARK_DELETED": "\"A message you bookmarked could not be found.\"",
   "FOR_LATER_REMINDER_DELETED": "\"A message you set a reminder for could not be found.\"",
-  "FOR_LATER_REMOVE": "\"Remove from Bookmarks\"",
+  "FOR_LATER_REMOVE": "\"Remove Bookmark\"",
   "FOR_LATER_OPTIONS": "\"Options\"",
   "FOR_LATER_MANAGE_MESSAGES": "\"Manage Messages\"",
   "FOR_LATER_TOO_MANY_TITLE": "\"Oops! Limit reached.\"",
