@@ -486,6 +486,14 @@
       "POST"
     ]
   },
+  "GUILD_DISCOVERY_SAVED_GUILDS": {
+    "url": "/users/@me/saved-guilds",
+    "allowed_methods": null
+  },
+  "GUILD_DISCOVERY_SAVED_GUILDS_BULK": {
+    "url": "/users/@me/saved-guilds-bulk",
+    "allowed_methods": null
+  },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
     "allowed_methods": [
