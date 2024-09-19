@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7309843002](https://discord.com/jobs/7309843002)
 
-**Updated At:** Thu, 12 Sep 2024 18:07:02 GMT
+**Updated At:** Thu, 19 Sep 2024 18:03:55 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.Come build the future of Discord’s business with us! We are looking for an impact-focused Staff Engineer to join our world-class Revenue group as we accelerate Discord’s growth through the creation of compelling paid products and new business lines. These products allow us to grow our business while keeping Discord’s core functionality free. To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog!

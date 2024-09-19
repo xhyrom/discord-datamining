@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7564777002](https://discord.com/jobs/7564777002)
 
-**Updated At:** Mon, 16 Sep 2024 21:57:31 GMT
+**Updated At:** Thu, 19 Sep 2024 18:03:55 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;Discord, an inclusive community for all, is looking for an accomplished and passionate data scientist to join our Data+ML team, focusing on Quests! Quests is our unique win-win-win advertising product, where we reward users for playing their favorite games. As a Senior DS supporting Quests, you’ll conduct analysis, run experiments, and build tools, partnering closely with our Product &amp;amp; Business teams to make Quests better for our users &amp;amp; game developers. If using data and working with amazing teammates to make a great product even better sounds exciting, we encourage you to apply!

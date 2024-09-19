@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7626153002](https://discord.com/jobs/7626153002)
 
-**Updated At:** Mon, 16 Sep 2024 21:41:50 GMT
+**Updated At:** Thu, 19 Sep 2024 18:03:58 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As the Manager of Exploitative Content, you will lead our EU team to deliver responsible safety operations for our users in alignment with European domestic and international standards, and support initiatives to protect and enhance the working experiences for the team.
