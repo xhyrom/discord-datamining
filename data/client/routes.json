@@ -5111,6 +5111,10 @@
   },
   "GUILD_LEADERBOARD": {
     "url": "/guilds/:param/leaderboards/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   }
 }
