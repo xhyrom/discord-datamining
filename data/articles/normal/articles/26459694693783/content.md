@@ -71,9 +71,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/26470319893527"
-    width="624"
-    height="433"
+    src="https://support.discord.com/hc/article_attachments/26481807370007"
+    width="583"
+    height="415"
   />
 </p>
 <p>
