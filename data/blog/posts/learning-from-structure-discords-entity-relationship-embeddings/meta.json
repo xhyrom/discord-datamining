@@ -1,0 +1,10 @@
+{
+  "id": "learning-from-structure-discords-entity-relationship-embeddings",
+  "title": "Learning From Structure: Discord’s Entity-Relationship Embeddings",
+  "link": "https://discord.com/blog/learning-from-structure-discords-entity-relationship-embeddings",
+  "guid": "https://discord.com/blog/learning-from-structure-discords-entity-relationship-embeddings",
+  "description": "Discover how DERE is pre-trained on the underlying structure of the Discord social graph and enables ML to quickly ship and iterate on AI-powered products without extensive feature engineering.",
+  "pubDate": "Thu, 19 Sep 2024 00:00:00 GMT",
+  "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66eb67698c19f39b38d643ab_image1.png",
+  "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66eb67698c19f39b38d643ab_image1.png"
+}
