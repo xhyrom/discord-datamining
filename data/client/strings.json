@@ -10152,6 +10152,7 @@
   "PROFILE_OPEN_VOICE_CHANNEL": "\"Open Voice Channel\"",
   "IOS_PROFILE_IN_VOICE_CALL": "\"In a voice call\"",
   "IOS_PROFILE_OPEN_VOICE_CHANNEL": "\"Open Voice Channel\"",
+  "USER_PROFILE_IN_THIS_CALL": "\"In this call\"",
   "USER_PROFILE_INCOMING_FRIEND_REQUEST_DIALOG_BODY": "\"Accept this friend request?\"",
   "USER_PROFILE_VOLUME": "\"Volume\"",
   "USER_PROFILE_FAILURE_TO_OPEN_MESSAGE": "\"Uh oh! We can't view details for this user\"",
