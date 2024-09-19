@@ -12389,7 +12389,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9e0eede16663d0c9eacf68f7777d609677dfa264",
+            release: "discord_web-d4d97e9572a82a9c97c3227ebb5e4d98682ea68b",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12458,8 +12458,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "328427"), "328427"));
-          i.YA("builtAt", String("1726706485378"));
+            i.YA("buildNumber", ((e = "328449"), "328449"));
+          i.YA("builtAt", String("1726710937128"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -22206,7 +22206,8 @@
           (a[(a.POLL_RESULT = 46)] = "POLL_RESULT"),
           (a[(a.CHANGELOG = 47)] = "CHANGELOG"),
           (a[(a.NITRO_NOTIFICATION = 48)] = "NITRO_NOTIFICATION"),
-          (a[(a.CHANNEL_LINKED_TO_LOBBY = 49)] = "CHANNEL_LINKED_TO_LOBBY");
+          (a[(a.CHANNEL_LINKED_TO_LOBBY = 49)] = "CHANNEL_LINKED_TO_LOBBY"),
+          (a[(a.GIFTING_PROMPT = 50)] = "GIFTING_PROMPT");
         let o = {
           UNDELETABLE: new Set([1, 2, 3, 4, 5, 21]),
           GUILD_DISCOVERY_STATUS: new Set([14, 15, 16, 17]),
@@ -48455,4 +48456,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.082a015f68dc3f3b8a93.js.map
+//# sourceMappingURL=sentry.141a447a87ce04b54019.js.map
