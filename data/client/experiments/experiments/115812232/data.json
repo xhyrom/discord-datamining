@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_friend_anniversaries_metrics",
+    "label": "Friend Anniversaries Metrics",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Friend anniversaries metrics enabled"
+    ],
+    "hash": 115812232,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
