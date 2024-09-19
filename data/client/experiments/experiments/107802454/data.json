@@ -1,12 +1,27 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2024-09_league_of_legends_leaderboard",
+    "label": "League of Legends Leaderboard",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Leaderboard"
+    ],
     "hash": 107802454,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
