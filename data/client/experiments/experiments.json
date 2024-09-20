@@ -10487,14 +10487,14 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-09_browse_channel_visible",
+      "id": "2024-09_browsechannelbuttonoptin",
       "label": "Don't show guild Browse Channels when all channels are already visible",
       "description": [
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: Hide Browse Channels when all channels are visible"
       ],
-      "hash": 1053452216,
+      "hash": 1325580951,
       "buckets": [
         -1,
         0,

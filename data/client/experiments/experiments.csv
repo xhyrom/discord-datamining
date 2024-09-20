@@ -774,6 +774,7 @@ id,hash,label
 2024-08_user_profile_blocker_skeleton,2213424224,User Profile Blocker Skeleton
 2024-09_best_of_nitro_v2_experiment,2180300978,Best of Nitro bento boxes
 2024-09_browse_channel_visible,1053452216,Don't show guild Browse Channels when all channels are already visible
+2024-09_browsechannelbuttonoptin,1325580951,Don't show guild Browse Channels when all channels are already visible
 2024-09_bug_reporter,3673264743,Bug Reporter
 2024-09_collectibles_shop_preload,81858881,Collectibles Shop Preload
 2024-09_dm_mute_feedback,3721779707,DM Mute Feedback Experiment
