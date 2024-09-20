@@ -18273,6 +18273,7 @@
   "E2EE_VERIFICATION_CODES": "\"Verification codes\"",
   "E2EE_ENABLE_PERSISTENT_CODES": "\"Enable persistent verification codes\"",
   "E2EE_PERSISTENT_CODES_DESCRIPTION": "'Gives your current device persistent verification codes. If this setting is on, your friends only have to verify your device once, instead of every time you enter a voice call.\" [Learn more about this setting.]({helpArticle})'",
+  "E2EE_PERSISTENT_CODES_DESCRIPTION_V2": "\"Gives your current device persistent verification codes. If this setting is on, your friends only have to verify your device once, instead of every time you enter a voice call. [Learn more about this setting.]({helpArticle})\"",
   "E2EE_VERIFIED_DEVICES": "\"Verified Devices\"",
   "E2EE_VERIFIED_DEVICES_DESCRIPTION": "\"These are the devices that you have verified. Whenever you're in a call with users on these devices, they will have the verified symbol next to their name. You can clear verification for one or all of a user's devices at any time. [Learn more about verified devices.]({helpArticle})\"",
   "E2EE_ANONYMOUS_DEVICE_TAG": "\"Device {index}\"",
