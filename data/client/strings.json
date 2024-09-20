@@ -4396,6 +4396,7 @@
   "A11Y_LOADING_FINISHED": "\"Loading finished\"",
   "A11Y_CHECKBOX_CHECKED": "\"checked\"",
   "A11Y_CHECKBOX_UNCHECKED": "\"unchecked\"",
+  "A11Y_ROLE_BUTTON": "\"button\"",
   "DND_ITEM_PICKED_UP": "\"Picked up !!{itemName}!!\"",
   "DND_ITEM_DROPPED": "\"Dropped item\"",
   "DND_DRAG_CANCELED": "\"Stopped dragging\"",
