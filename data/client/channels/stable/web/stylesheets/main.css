@@ -29295,6 +29295,9 @@ div.popoutCloseButton_d523a2:hover {
 .button_a64b81:active .icon_a64b81 {
   fill: var(--interactive-active);
 }
+.noBoxShadowMargin_a7ae01 {
+  margin: 0;
+}
 .inner_b84fc9 {
   background: var(--input-background);
   border-radius: 3px;
@@ -44331,4 +44334,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.e3e8c956b906fe05f07a.css.map*/
+/*# sourceMappingURL=12633.d2c0578232a28763d9e8.css.map*/
