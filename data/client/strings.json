@@ -10947,6 +10947,7 @@
   "APPLICATION_COMMAND_USED_SHORT": "\"$[](userHook) used $[](commandHook)\"",
   "APPLICATION_COMMAND_USED_MOBILE": "\"[!!{username}!!](handleTapUsername) used [!!{commandName}!!](handleTapCommandName) with [!!{applicationName}!!](handleTapApplicationName)\"",
   "APPLICATION_COMMAND_USED_MOBILE_SHORT": "\"[!!{username}!!](usernameOnClick) used [!!{commandName}!!](commandNameOnClick)\"",
+  "APPLICATION_COMMAND_USED_USER_COMMAND_MOBILE_SHORT": "\"[!!{username}!!](usernameOnClick) used [!!{commandName}!!](commandNameOnClick) › [!!{targetUsername}!!](targetUsernameOnClick)\"",
   "APPLICATION_COMMAND_AUTOCOMPLETE_NO_OPTIONS": "\"No options match your search\"",
   "APPLICATION_COMMAND_AUTOCOMPLETE_FAILED": "\"Loading options failed\"",
   "APPLICATION_COMMAND_NO_PERMISSIONS": "\"You don't have permission to use any commands from **!!{applicationName}!!**\"",
