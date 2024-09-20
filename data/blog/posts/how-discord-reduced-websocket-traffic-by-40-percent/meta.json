@@ -1,0 +1,10 @@
+{
+  "id": "how-discord-reduced-websocket-traffic-by-40-percent",
+  "title": "How Discord Reduced Websocket Traffic by 40%",
+  "link": "https://discord.com/blog/how-discord-reduced-websocket-traffic-by-40-percent",
+  "guid": "https://discord.com/blog/how-discord-reduced-websocket-traffic-by-40-percent",
+  "description": "How we rolled out zstandard and other improvements across our gateway cluster to reduce the amount of bandwidth that’s used by our clients.",
+  "pubDate": "Fri, 20 Sep 2024 00:00:00 GMT",
+  "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66eb613c599add632ab1fbcb_image1.png",
+  "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66eb613c599add632ab1fbcb_image1.png"
+}

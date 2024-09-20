@@ -4,8 +4,8 @@
       <p>
         Thanks to Large Language Models (or LLMs), embeddings have become
         commonplace. Embeddings are simple but powerful structures that capture
-        complex data as a series of numbers — a vector — and are a greatnatural
-        way to represent many things within machine learning models. In LLMs,
+        complex data as a series of numbers — a vector — and are a natural way
+        to represent many things within machine learning models. In LLMs,
         embeddings represent words (or tokens). <br /><br />Here at Discord, we
         built DERE, or Discord's Entity-Relationship Embeddings, which represent
         things like servers (in this article, we’ll use their technical term
