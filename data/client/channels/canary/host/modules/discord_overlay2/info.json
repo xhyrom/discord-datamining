@@ -3,14 +3,14 @@
     "host_version": "1.0.328",
     "module_version": 2,
     "package_sha256": "7fa2f984772ae659c076da4e8650836f7cf5e2598e6d7a2415374ab8abd9a0c5",
-    "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.328/discord_overlay2/2/full.distro"
+    "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x86/1.0.328/discord_overlay2/2/full.distro"
   },
   "deltas": [
     {
       "host_version": "1.0.328",
       "module_version": 1,
       "package_sha256": "880722bb2e4a10060a334313b3594d88f5f0941ee4df1758b2fb15b92f88e610",
-      "url": "https://dl-canary.discordapp.net/distro/app/canary/win/x86/1.0.328/discord_overlay2/2/from/1.0.328/1"
+      "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x86/1.0.328/discord_overlay2/2/from/1.0.328/1"
     }
   ]
 }
