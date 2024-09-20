@@ -1,10 +1,10 @@
 # Public Testing Beta
 
 ### Info
-Build number: 329244  
-Version hash: b4f6cfca3a44e51f647717ea4e52d30f77bc7f7b  
+Build number: 329259  
+Version hash: c561ff71acd48ed5c60b4f49dcfedaf6b98ed9c0  
 Host version: 1.0.1090  
-Built at: 9/20/2024, 9:53:07 PM  
+Built at: 9/20/2024, 10:27:28 PM  
 
 ### Modules
 | Module               | Version | Package sha256                                                   | URL                                                                                              |
