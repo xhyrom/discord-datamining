@@ -492,7 +492,10 @@
   },
   "GUILD_DISCOVERY_SAVED_GUILDS_BULK": {
     "url": "/users/@me/saved-guilds-bulk",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
