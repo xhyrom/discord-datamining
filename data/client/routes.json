@@ -488,7 +488,13 @@
   },
   "GUILD_DISCOVERY_SAVED_GUILDS": {
     "url": "/users/@me/saved-guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_DISCOVERY_SAVED_GUILDS_BULK": {
     "url": "/users/@me/saved-guilds-bulk",
