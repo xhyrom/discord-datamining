@@ -29,8 +29,8 @@
     "bot_require_code_grant": false,
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "0"
     },
@@ -603,6 +603,23 @@
     "flags": 0
   },
   {
+    "id": "1096190356233670716",
+    "name": "Collectibles Shop",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
+    "flags": 0
+  },
+  {
     "id": "890343617762304070",
     "name": "SoundCloud",
     "icon": "6b296738a270b0a237d0d40f3556c2ed",
@@ -634,8 +651,8 @@
     "privacy_policy_url": "https://soundcloud.com/pages/privacy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "141770902784"
     },
@@ -815,280 +832,6 @@
     "flags": 0
   },
   {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "349134787773988865",
-    "name": "Divinity Original Sin 2",
-    "icon": "6c018443f2c3067bf660d8b55ff9eb20",
-    "description": "Divinity: Original Sin 2 is a CRPG developed by Larian Studios. Setting: The world needs a new Divinity. Choose your origin. Gather your party. Master deep, tactical combat. Up to four players with drop-in/drop-out co-op. Only one becomes a God.",
-    "summary": "",
-    "type": 1,
-    "is_monetized": false,
-    "is_verified": false,
-    "cover_image": "0fa583149b3927add1aad7cb2337b953",
-    "splash": "f79ab1b78f2fe375f7566f6b6e200ca2",
-    "third_party_skus": [
-      {
-        "id": "435150",
-        "sku": "435150",
-        "distributor": "steam"
-      }
-    ],
-    "hook": true,
-    "aliases": [
-      "Divinity - Original Sin 2",
-      "Divinity Original Sin 2",
-      "Divinity: Original Sin 2"
-    ],
-    "executables": [
-      {
-        "os": "win32",
-        "name": "divinity original sin 2/bin/eocapp.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "bin/supporttool.exe",
-        "is_launcher": false
-      }
-    ],
-    "storefront_available": false,
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "450d45712bad368a553c702402720ae46ce640e35717fc9c6ec18753f0dd73f1",
-    "flags": 0
-  },
-  {
-    "id": "207646673902501888",
-    "name": "StreamKit Overlay",
-    "icon": "a3de4d7ba7be0e917fe9f96a95985c84",
-    "description": "Discord's StreamKit Overlay for OBS & XSplit",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "rpc_origins": [
-      "http://localhost:3000",
-      "https://staging-streamkit.discord.co",
-      "https://streamkit.discord.com",
-      "https://streamkit.discordapp.com"
-    ],
-    "storefront_available": false,
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "bcf526d1e8d491267d585e114ddbd6ce577224ff3da8653cadcbf5511768415d",
-    "flags": 0
-  },
-  {
-    "id": "432980957394370572",
-    "name": "Fortnite",
-    "icon": "c1864b38910c209afd5bf6423b672022",
-    "description": "",
-    "summary": "",
-    "type": 1,
-    "is_monetized": false,
-    "is_verified": false,
-    "cover_image": "c1864b38910c209afd5bf6423b672022",
-    "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
-    "third_party_skus": [
-      {
-        "id": "Fortnite",
-        "sku": "Fortnite",
-        "distributor": "epic"
-      }
-    ],
-    "overlay": true,
-    "overlay_compatibility_hook": true,
-    "hook": true,
-    "aliases": [
-      "Epic Games Launcher"
-    ],
-    "guild_id": "322850917248663552",
-    "executables": [
-      {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
-        "is_launcher": false
-      }
-    ],
-    "storefront_available": false,
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "08d636fce21be4d2a5eb4e907dd2cf42a75e2b35825ef9a97b1a171403c3237d",
-    "flags": 0
-  },
-  {
     "id": "936929561302675456",
     "name": "Midjourney Bot",
     "icon": "f6ce562a6b4979c4b1cbc5b436d3be76",
@@ -1155,20 +898,113 @@
     ]
   },
   {
-    "id": "1096190356233670716",
-    "name": "Collectibles Shop",
-    "icon": null,
-    "description": "",
+    "id": "349134787773988865",
+    "name": "Divinity Original Sin 2",
+    "icon": "6c018443f2c3067bf660d8b55ff9eb20",
+    "description": "Divinity: Original Sin 2 is a CRPG developed by Larian Studios. Setting: The world needs a new Divinity. Choose your origin. Gather your party. Master deep, tactical combat. Up to four players with drop-in/drop-out co-op. Only one becomes a God.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "cover_image": "0fa583149b3927add1aad7cb2337b953",
+    "splash": "f79ab1b78f2fe375f7566f6b6e200ca2",
+    "third_party_skus": [
+      {
+        "id": "435150",
+        "sku": "435150",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Divinity - Original Sin 2",
+      "Divinity Original Sin 2",
+      "Divinity: Original Sin 2"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "bin/supporttool.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "divinity original sin 2/bin/eocapp.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "450d45712bad368a553c702402720ae46ce640e35717fc9c6ec18753f0dd73f1",
+    "flags": 0
+  },
+  {
+    "id": "207646673902501888",
+    "name": "StreamKit Overlay",
+    "icon": "a3de4d7ba7be0e917fe9f96a95985c84",
+    "description": "Discord's StreamKit Overlay for OBS & XSplit",
     "summary": "",
     "type": null,
     "is_monetized": false,
     "is_verified": false,
     "hook": true,
+    "rpc_origins": [
+      "http://localhost:3000",
+      "https://staging-streamkit.discord.co",
+      "https://streamkit.discord.com",
+      "https://streamkit.discordapp.com"
+    ],
     "storefront_available": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
+    "verify_key": "bcf526d1e8d491267d585e114ddbd6ce577224ff3da8653cadcbf5511768415d",
+    "flags": 0
+  },
+  {
+    "id": "432980957394370572",
+    "name": "Fortnite",
+    "icon": "c1864b38910c209afd5bf6423b672022",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "cover_image": "c1864b38910c209afd5bf6423b672022",
+    "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
+    "third_party_skus": [
+      {
+        "id": "Fortnite",
+        "sku": "Fortnite",
+        "distributor": "epic"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "Epic Games Launcher"
+    ],
+    "guild_id": "322850917248663552",
+    "executables": [
+      {
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "08d636fce21be4d2a5eb4e907dd2cf42a75e2b35825ef9a97b1a171403c3237d",
     "flags": 0
   },
   {
@@ -4337,12 +4173,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "aoe2de_s.exe",
+        "name": "age of empires ii definitive edition/aoe2de_s.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "age of empires ii definitive edition/aoe2de_s.exe",
+        "name": "aoe2de_s.exe",
         "is_launcher": false
       },
       {
@@ -4598,7 +4434,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "name": "roblox.exe",
         "is_launcher": false
       },
       {
@@ -4608,7 +4444,7 @@
       },
       {
         "os": "win32",
-        "name": "roblox.exe",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       }
     ],
@@ -4657,12 +4493,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       }
     ],
@@ -4773,13 +4609,13 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "roblox.exe",
+        "os": "darwin",
+        "name": "roblox.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "roblox.app",
+        "os": "win32",
+        "name": "roblox.exe",
         "is_launcher": false
       }
     ],
@@ -4837,18 +4673,18 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -4862,8 +4698,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -4890,6 +4726,12 @@
     "guild_id": "302094807046684672",
     "executables": [
       {
+        "os": "win32",
+        "name": ">javaw.exe",
+        "arguments": "net.minecraft.client.main.Main",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": ">java",
         "arguments": "net.minecraft.client.main.Main",
@@ -4897,18 +4739,12 @@
       },
       {
         "os": "win32",
-        "name": ">javaw.exe",
-        "arguments": "net.minecraft.client.main.Main",
+        "name": "minecraft.windows.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "minecraft.windows.exe",
         "is_launcher": false
       }
     ],
@@ -4997,13 +4833,13 @@
     "guild_id": "322850917248663552",
     "executables": [
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
       }
     ],
@@ -5151,13 +4987,13 @@
     "guild_id": "74287487459004416",
     "executables": [
       {
-        "os": "darwin",
-        "name": "dota_osx.app",
+        "os": "win32",
+        "name": "dota2.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "dota2.exe",
+        "os": "darwin",
+        "name": "dota_osx.app",
         "is_launcher": false
       }
     ],
@@ -5248,11 +5084,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "call of duty hq/cod.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "mp23/mp23-cod.exe",
         "is_launcher": false
       },
@@ -5264,6 +5095,11 @@
       {
         "os": "win32",
         "name": "_retail_/cod.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "call of duty hq/cod.exe",
         "is_launcher": false
       }
     ],
@@ -5303,12 +5139,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "tslgame.exe",
+        "name": "tslgame_be.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tslgame_be.exe",
+        "name": "tslgame.exe",
         "is_launcher": false
       }
     ],
@@ -5330,14 +5166,14 @@
     "is_verified": false,
     "third_party_skus": [
       {
-        "id": "",
-        "sku": "",
-        "distributor": "origin"
-      },
-      {
         "id": "1172470",
         "sku": "1172470",
         "distributor": "steam"
+      },
+      {
+        "id": "",
+        "sku": "",
+        "distributor": "origin"
       }
     ],
     "hook": true,
@@ -5438,14 +5274,14 @@
     "splash": "028fe9a1748d259872a0dfa49eb818f2",
     "third_party_skus": [
       {
-        "id": "359550",
-        "sku": "359550",
-        "distributor": "steam"
-      },
-      {
         "id": "635",
         "sku": "635",
         "distributor": "uplay"
+      },
+      {
+        "id": "359550",
+        "sku": "359550",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -5459,12 +5295,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rainbowsix.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       },
       {
@@ -5474,12 +5305,17 @@
       },
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "rainbowsix_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "rainbowsix.exe",
         "is_launcher": false
       }
     ],
@@ -6099,17 +5935,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "dead by daylight/deadbydaylight.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "deadbydaylight-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "deadbydaylight.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "dead by daylight/deadbydaylight.exe",
         "is_launcher": false
       }
     ],
@@ -6180,12 +6016,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "7daystodie_eac.exe",
+        "name": "7daystodie.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "7daystodie.exe",
+        "name": "7daystodie_eac.exe",
         "is_launcher": false
       }
     ],
@@ -6254,13 +6090,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -6296,12 +6132,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "fallguys_client.exe",
+        "name": "fallguys_client_game.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "fallguys_client_game.exe",
+        "name": "fallguys_client.exe",
         "is_launcher": false
       }
     ],
@@ -6429,12 +6265,12 @@
       },
       {
         "os": "win32",
-        "name": "among us - tou/among us.exe",
+        "name": "among us - kopie/among us.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "among us - kopie/among us.exe",
+        "name": "among us - tou/among us.exe",
         "is_launcher": false
       },
       {
@@ -6480,7 +6316,7 @@
       },
       {
         "os": "win32",
-        "name": "terraria.exe",
+        "name": "terraria/terraria.exe",
         "is_launcher": false
       },
       {
@@ -6490,7 +6326,7 @@
       },
       {
         "os": "win32",
-        "name": "terraria/terraria.exe",
+        "name": "terraria.exe",
         "is_launcher": false
       }
     ],
@@ -6513,14 +6349,14 @@
     "cover_image": "ba35fab3925cc6cee14d84791930ba58",
     "third_party_skus": [
       {
-        "id": "com.ninjakiwi.bloonstd6",
-        "sku": "com.ninjakiwi.bloonstd6",
-        "distributor": "google_play"
-      },
-      {
         "id": "960090",
         "sku": "960090",
         "distributor": "steam"
+      },
+      {
+        "id": "com.ninjakiwi.bloonstd6",
+        "sku": "com.ninjakiwi.bloonstd6",
+        "distributor": "google_play"
       }
     ],
     "hook": true,
@@ -6530,12 +6366,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bloonstd6/bloonstd6.exe",
+        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
+        "name": "bloonstd6/bloonstd6.exe",
         "is_launcher": false
       },
       {
@@ -6729,13 +6565,13 @@
     "executables": [
       {
         "os": "win32",
-        "name": ">hl2.exe",
+        "name": "hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hl2.exe",
+        "name": ">hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -6753,12 +6589,12 @@
       },
       {
         "os": "win32",
-        "name": "win64/gmod.exe",
+        "name": "bin/gmad.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/gmad.exe",
+        "name": "win64/gmod.exe",
         "is_launcher": false
       }
     ],
@@ -6990,12 +6826,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "geometry dash/geometrydash.exe",
+        "name": "geometrydash.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "geometrydash.exe",
+        "name": "geometry dash/geometrydash.exe",
         "is_launcher": false
       }
     ],
@@ -7026,12 +6862,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "projectzomboid64.exe",
+        "name": "projectzomboid32.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "projectzomboid32.exe",
+        "name": "projectzomboid64.exe",
         "is_launcher": false
       }
     ],
@@ -7175,12 +7011,12 @@
       },
       {
         "os": "win32",
-        "name": "pathofexile.exe",
+        "name": "pathofexile_x64steam.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "pathofexile_x64steam.exe",
+        "name": "pathofexile.exe",
         "is_launcher": false
       },
       {
@@ -7218,11 +7054,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "vrchat/vrchat.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "vrchat/start_protected_game.exe",
         "is_launcher": false
       },
@@ -7230,6 +7061,11 @@
         "os": "win32",
         "name": "vrchat/launch.exe",
         "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "vrchat/vrchat.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -7334,6 +7170,12 @@
     "executables": [
       {
         "os": "win32",
+        "name": "hl2tf.exe",
+        "arguments": "-game tf",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": ">hl2.exe",
         "arguments": "-game tf",
         "is_launcher": false
@@ -7341,12 +7183,6 @@
       {
         "os": "darwin",
         "name": ">hl2_osx",
-        "arguments": "-game tf",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "hl2tf.exe",
         "arguments": "-game tf",
         "is_launcher": false
       }
@@ -7536,13 +7372,13 @@
     "guild_id": "127167843383902209",
     "executables": [
       {
-        "os": "darwin",
-        "name": "hearthstone.app",
+        "os": "win32",
+        "name": "hearthstone.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "hearthstone.exe",
+        "os": "darwin",
+        "name": "hearthstone.app",
         "is_launcher": false
       }
     ],
@@ -7621,7 +7457,17 @@
       },
       {
         "os": "win32",
+        "name": "assettocorsa.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "assettocorsa/content manager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/acs.exe",
         "is_launcher": false
       },
       {
@@ -7632,16 +7478,6 @@
       {
         "os": "win32",
         "name": "assettocorsa/acshowroom.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/acs.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa.exe",
         "is_launcher": false
       },
       {
@@ -7680,12 +7516,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "2012/vcredist_x86.exe",
+        "name": "apb.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "apb.exe",
+        "name": "2012/vcredist_x86.exe",
         "is_launcher": false
       }
     ],
@@ -8058,12 +7894,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "hearts of iron iv/hoi4.exe",
+        "name": "hoi4.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hoi4.exe",
+        "name": "hearts of iron iv/hoi4.exe",
         "is_launcher": false
       }
     ],
@@ -8150,7 +7986,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "dayz.exe",
+        "name": "dayz/dayzuninstaller.exe",
         "is_launcher": false
       },
       {
@@ -8160,7 +7996,7 @@
       },
       {
         "os": "win32",
-        "name": "dayz/dayzuninstaller.exe",
+        "name": "dayz.exe",
         "is_launcher": false
       }
     ],
@@ -8394,12 +8230,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "call of duty black ops iii/boiii.exe",
+        "name": "blackops3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "blackops3.exe",
+        "name": "call of duty black ops iii/boiii.exe",
         "is_launcher": false
       }
     ],
@@ -8435,12 +8271,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "isaacanimationeditor/isaacanimationeditor.exe",
+        "name": "isaacitempooleditor/itempooleditor.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "isaac-ng.exe",
+        "name": "isaacanimationeditor/isaacanimationeditor.exe",
         "is_launcher": false
       },
       {
@@ -8449,13 +8285,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "the binding of isaac rebirth.app",
+        "os": "win32",
+        "name": "isaac-ng.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "isaacitempooleditor/itempooleditor.exe",
+        "os": "darwin",
+        "name": "the binding of isaac rebirth.app",
         "is_launcher": false
       }
     ],
@@ -8718,12 +8554,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "risk of rain 2/risk of rain 2.exe",
+        "name": "risk of rain 2.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "risk of rain 2.exe",
+        "name": "risk of rain 2/risk of rain 2.exe",
         "is_launcher": false
       }
     ],
@@ -8872,22 +8708,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/shootergameserver.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "shootergame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "win64/shootergame_be.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "shootergame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/shootergameserver.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "shootergame.exe",
         "is_launcher": false
       }
     ],
@@ -8969,12 +8805,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "2013/vcredist_x64.exe",
+        "name": "lms.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "lms.exe",
+        "name": "2013/vcredist_x64.exe",
         "is_launcher": false
       }
     ],
@@ -9179,8 +9015,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "469887038"
     },
@@ -9230,8 +9066,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147483648"
     },
@@ -9374,8 +9210,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -9426,8 +9262,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "268561430"
     },
@@ -9435,8 +9271,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "268561430"
         }
@@ -9484,8 +9320,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147601472"
     },
@@ -9493,8 +9329,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2147601472"
         }
@@ -9639,6 +9475,170 @@
       "0": {}
     },
     "verify_key": "e8bdc7615658d007cc4dc8c1600a1324e015397dd831cb6244330b77ced29d3a",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
     "flags": 0
   }
 ]
