@@ -85,7 +85,7 @@
 </p>
 <p>
   5. You can now link your phone number to your Discord account to help act as a
-  backup method for obtaining these authentication codes). This can help you be
+  backup method for obtaining these authentication codes. This can help you be
   less worried about losing access to your Authenticator app, but reduces how
   secure your account is.
 </p>

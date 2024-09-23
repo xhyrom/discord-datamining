@@ -44,7 +44,7 @@
   Discord supports the newest standards for authentication: Passkeys and
   Security Keys, an easier to use <em>and</em> more secure way to sign into your
   account! Passkeys are encrypted digital keys you create using your
-  fingerprint, fact, or screen lock, and they can be stored in your password
+  fingerprint, face, or screen lock, and they can be stored in your password
   manager so you can sign in to your account on other devices with the installed
   password manager. When you log into Discord, your device will prompt you to
   use the passkey the same way you created it (e.g., with Face ID), then you’re
