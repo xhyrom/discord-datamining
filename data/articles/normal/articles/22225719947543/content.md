@@ -91,7 +91,7 @@
 <p>
   The <strong>Discord Activities Ques</strong>t can be accepted on Discord from
   <strong>September 16, 2024</strong> until
-  <strong>September 23, 2024 (11:59PM UTC)</strong>. Quest requirements must be
+  <strong>September 24, 2024 (11:59PM UTC)</strong>. Quest requirements must be
   completed during this period to receive the reward.
 </p>
 <h2 id="h_01J7YCN0PYT9VD8PFX7FDQT6YD">
