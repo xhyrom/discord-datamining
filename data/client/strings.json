@@ -9981,6 +9981,7 @@
   "GO_LIVE_MODAL_OVERFLOW_THREE_USERS": "\"!!{nickname0}!!, !!{nickname1}!!, and !!{nickname2}!!\"",
   "GO_LIVE_MODAL_OVERFLOW_FOUR_OR_MORE_USERS": "\"!!{nickname0}!!, !!{nickname1}!!, and !!{remainingCount}!! others\"",
   "GO_LIVE_MODAL_CAPTURE_DESCRIPTION": "\"Pick your video device and the matching audio device.\"",
+  "GO_LIVE_MODAL_SYSTEM_PICKER_COACHMARK_CONTENT": "\"New for Mac: We've updated the screen sharing experience!\"",
   "GO_LIVE_FORM_LABEL_AUDIO_DEVICE": "\"Audio Device\"",
   "GO_LIVE_FORM_LABEL_VIDEO_DEVICE": "\"Video Device\"",
   "GO_LIVE_FORM_BUTTON_CAMERA_READY": "\"Looks Good!\"",
