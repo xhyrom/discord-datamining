@@ -133,13 +133,10 @@
         stay connected with Discord to talk and play games wherever they find
         themselves, and no matter what platform they play on.&nbsp;
       </p>
-      <figure
-        style="max-width: 1125pxpx"
-        class="w-richtext-align-fullwidth w-richtext-figure-type-image"
-      >
+      <figure class="w-richtext-align-center w-richtext-figure-type-image">
         <div>
           <img
-            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66eb5b9a3d15bd171b9b3cd1_AD_4nXcs6fj4XZ1iUqJzVb0mVU28N2K0XLsOhzKv1VqORruPXBG5sdoWh79ZA1yFIfHPt9Xp612l3M9SPAVT0M2YMegUgxgk0l2UkIgQIDTqciM8_dZcWWuUIJe0W-AqX_8m64qqhqmpeD2Ojfh1O-xb4bsiYbY.jpeg"
+            src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66f1351cc242aff77269e6e6_66f1350cb975ec898f01b794_TGS24_Newspaper_v2png.png"
             loading="lazy"
             alt="A stack of collated newspaper pages, showing a preview of the Discordopolis Newspaper."
           />
@@ -186,7 +183,7 @@
           Ken Inagaki, Senior Director, Product Development - Studio, Sony
           PlayStation
         </li>
-        <li>Katsuhiko Hayashi, Kadokawa/Famitsu Group</li>
+        <li>Katsuhiko Hayashi, Group Representative, Kadokawa/Famitsu Group</li>
         <li>Stanislav Vishnevskiy, CTO &amp; Co-Founder, Discord</li>
       </ul>
       <h3><strong>Business Stage Panel</strong></h3>
