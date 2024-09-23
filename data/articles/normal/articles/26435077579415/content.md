@@ -47,10 +47,10 @@
   <strong>Availability Period: </strong>The
   <strong>Discord Activities Quest</strong> can be accepted on Discord from
   <strong>September 16, 2024</strong> until
-  <strong>September 24, 2024 (11:59PM UTC)</strong>. Quest requirements must be
+  <strong>September 26, 2024 (11:59PM UTC)</strong>. Quest requirements must be
   completed during this period to receive the reward. 
 </p>
-<p>The Nitro trial must be claimed by <strong>September 30, 2024</strong>.</p>
+<p>The Nitro trial must be claimed by <strong>October 3, 2024</strong>.</p>
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p>
   For more information on Discord Quests and to view the currently active
@@ -95,7 +95,7 @@
 </p>
 <div class="tip-box">
   <strong>NOTE</strong>: If the Quest is not completed by
-  <strong>September 24, 2024</strong>, the Quest will no longer be available
+  <strong>September 26, 2024</strong>, the Quest will no longer be available
   within your <strong>Quest</strong> <strong>Home</strong> (<strong
     >Discover &gt;</strong
   >
