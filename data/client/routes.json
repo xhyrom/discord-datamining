@@ -1144,14 +1144,9 @@
       "PUT"
     ]
   },
-  "CHANNEL_RECIPIENT_CONSENT": {
+  "CHANNEL_RECIPIENT_ME": {
     "url": "/channels/:param/recipients/@me",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS",
-      "PATCH",
-      "PUT"
-    ]
+    "allowed_methods": null
   },
   "CHANNEL_RECIPIENT_REJECT_BATCH": {
     "url": "/channels/recipients/@me/batch-reject",
@@ -2460,6 +2455,10 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "BILLING_INVOICE_BREAKDOWN": {
+    "url": "/users/@me/billing/invoice/breakdown",
+    "allowed_methods": null
   },
   "BILLING_STRIPE_PAYMENT_INTENTS": {
     "url": "/users/@me/billing/stripe/payment-intents/payments/:param",
