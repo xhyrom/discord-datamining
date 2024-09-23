@@ -6189,7 +6189,11 @@
           ((rO = G || (G = {})).SENT = "SENT"),
           (rO.SENDING = "SENDING"),
           (rO.SEND_FAILED = "SEND_FAILED");
-        let aj = new Set([aw.u.REPLY, aw.u.THREAD_STARTER_MESSAGE]);
+        let aj = new Set([
+          aw.u.REPLY,
+          aw.u.THREAD_STARTER_MESSAGE,
+          aw.u.CONTEXT_MENU_COMMAND,
+        ]);
         ((rf = y || (y = {}))[(rf.CROSSPOSTED = 1)] = "CROSSPOSTED"),
           (rf[(rf.IS_CROSSPOST = 2)] = "IS_CROSSPOST"),
           (rf[(rf.SUPPRESS_EMBEDS = 4)] = "SUPPRESS_EMBEDS"),
@@ -6585,7 +6589,7 @@
             CHANNEL_RECIPIENTS: (e) => "/channels/".concat(e, "/recipients"),
             CHANNEL_RECIPIENT: (e, t) =>
               "/channels/".concat(e, "/recipients/").concat(t),
-            CHANNEL_RECIPIENT_CONSENT: (e) =>
+            CHANNEL_RECIPIENT_ME: (e) =>
               "/channels/".concat(e, "/recipients/@me"),
             CHANNEL_RECIPIENT_REJECT_BATCH: () =>
               "/channels/recipients/@me/batch-reject",
@@ -6838,6 +6842,7 @@
             BILLING_PAYMENTS_REFUND: (e) =>
               "/users/@me/billing/payments/".concat(e, "/refund"),
             BILLING_INVOICE_PDF: "/users/@me/billing/invoice",
+            BILLING_INVOICE_BREAKDOWN: "/users/@me/billing/invoice/breakdown",
             BILLING_STRIPE_PAYMENT_INTENTS: (e) =>
               "/users/@me/billing/stripe/payment-intents/payments/".concat(e),
             BILLING_STRIPE_PAYMENT_INTENTS_VIA_ID: (e) =>
@@ -9694,6 +9699,7 @@
           (nf.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED =
             "premium_whats_new_box_cta_clicked"),
           (nf.PREMIUM_WHATS_NEW_VIEW_TIME = "premium_whats_new_view_time"),
+          (nf.PREMIUM_BEST_OF_VIEW_TIME = "premium_best_of_view_time"),
           (nf.VIDEO_STREAM_ENDED = "video_stream_ended"),
           (nf.VIDEO_STREAM_STARTED = "video_stream_started"),
           (nf.STREAM_WARNING_TRIGGERED = "stream_warning_triggered"),
@@ -11361,6 +11367,7 @@
           (nV.CHANNEL_LINKED_LOBBIES = "24485661785495"),
           (nV.NITRO_FAQ = "115000435108#h_01GFV3PWAGD4EGTD91ERBZ5R4S"),
           (nV.END_TO_END_ENCRYPTION = "25968222946071"),
+          (nV.SCREEN_SHARING_MACOS = "26459694693783"),
           ((tr || (tr = {})).INVALID_BILLING_ADDRESS =
             "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
           ((nk = tn || (tn = {}))[(nk.HIDDEN = 1)] = "HIDDEN"),
@@ -12394,7 +12401,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b4f6cfca3a44e51f647717ea4e52d30f77bc7f7b",
+            release: "discord_web-0b6ddd171a277f04a8990f015ecf1f3d3143065f",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12463,8 +12470,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "329244"), "329244"));
-          i.YA("builtAt", String("1726869187595"));
+            i.YA("buildNumber", ((e = "329540"), "329540"));
+          i.YA("builtAt", String("1727118595186"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48461,4 +48468,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.8b6b63efc55014aed4e6.js.map
+//# sourceMappingURL=sentry.baa47a4d83a4fbedc526.js.map

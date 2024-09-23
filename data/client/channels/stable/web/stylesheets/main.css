@@ -18415,7 +18415,8 @@ span.clanTag_a31c43 {
 .threadMessageAccessoryAvatar_f9f2ca,
 .replyAvatar_f9f2ca,
 .replyBadge_f9f2ca,
-.executedCommandAvatar_f9f2ca {
+.executedCommandAvatar_f9f2ca,
+.replyChatIconContainer_f9f2ca {
   flex: 0 0 auto;
   width: 16px;
   height: 16px;
@@ -18521,6 +18522,26 @@ span.clanTag_a31c43 {
 .executedCommand_f9f2ca .applicationName_f9f2ca {
   font-weight: 500;
   color: var(--header-primary);
+}
+.executedCommand_f9f2ca .targetUsername_f9f2ca,
+.executedCommand_f9f2ca .repliedMessage_f9f2ca .username_f9f2ca {
+  flex-shrink: 3;
+  text-overflow: ellipsis;
+}
+.executedCommand_f9f2ca .repliedMessage_f9f2ca {
+  margin-bottom: 0;
+  min-width: 40px;
+  padding-left: 0;
+}
+.executedCommand_f9f2ca .repliedMessage_f9f2ca .username_f9f2ca {
+  margin-right: 4px;
+}
+.executedCommand_f9f2ca .repliedMessage_f9f2ca:before {
+  display: none;
+}
+.executedCommandSeparator_f9f2ca {
+  flex-shrink: 0;
+  margin-right: 2px;
 }
 .repliedTextPreview_f9f2ca,
 .threadMessageAccessoryPreview_f9f2ca {
@@ -44334,4 +44355,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.d2c0578232a28763d9e8.css.map*/
+/*# sourceMappingURL=12633.16dfca5e2698290ff658.css.map*/
