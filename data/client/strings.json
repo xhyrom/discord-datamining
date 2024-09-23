@@ -18176,6 +18176,7 @@
   "MESSAGE_FORWARD_STAFF_NON_STAFF_CONFIRM": "\"Yes, I'm sure\"",
   "MESSAGE_FORWARD_MESSAGE_PLACEHOLDER": "\"Add an optional message...\"",
   "FORWARD_CHAT_INPUT_A11Y_LABEL": "\"Compose message included with forward\"",
+  "MESSAGE_FORWARD_SLOWMODE_WARNING": "\"Forward will be sent without the above message to the following slowmode {count, plural, one {channel} other {channels}}: {channelNames}.\"",
   "CHECKOUT_RECOVERY_NAGBAR_CONTENT": "\"Heads up! You’re a few clicks away from unlocking Nitro.\"",
   "CHECKOUT_RECOVERY_NAGBAR_CTA": "\"Complete Checkout\"",
   "CASH_APP_PAY_AWARENESS_SUBSCRIBER_CONTENT": "\"Cash App Pay is now available as a Nitro payment method!\"",
