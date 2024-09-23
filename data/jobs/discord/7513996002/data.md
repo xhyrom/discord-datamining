@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7513996002](https://discord.com/jobs/7513996002)
 
-**Updated At:** Fri, 20 Sep 2024 21:47:34 GMT
+**Updated At:** Mon, 23 Sep 2024 18:54:23 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The machine learning platform (MLP) at Discord is responsible for the end to end model lifecycle across all ML applications. We sit at the intersection of machine learning engineers (MLEs), core infrastructure, and ML consumers to provide tools, capabilities, and services that make machine learning easy, safe, and widely accessible. In this role, you will lead a high-performing team of engineers as you build, extend, and maintain critical ML systems that power everything from user facing recommendations and safety to revenue optimization and business insights. This role reports to our Senior Director of AI and Machine Learning,&amp;nbsp;Chris Harland.
