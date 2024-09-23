@@ -18948,7 +18948,7 @@
   "ICYMI_ACTIVITY_PLAYED": "\"Recently played:\"",
   "ICYMI_ACTIVITY_PLAYING": "\"Currently playing:\"",
   "ICYMI_ACTIVITY_UPDATED_STATUS": "\"Updated their status:\"",
-  "REACTION_IN_APP_NOTIFICATION_CONTENT": "\"reacted to your message: {message}\"",
+  "REACTION_IN_APP_NOTIFICATION_CONTENT": "\"Reacted to your message: {message}\"",
   "REACTION_NOTIFICATIONS": "\"Reaction Notifications\"",
   "FORM_DESCRIPTION_REACTION_NOTIFICATIONS": "\"Receive notifications when your messages are reacted to.\"",
   "REACTION_NOTIFICATIONS_ENABLED": "\"All Messages\"",
