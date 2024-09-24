@@ -2458,7 +2458,11 @@
   },
   "BILLING_INVOICE_BREAKDOWN": {
     "url": "/users/@me/billing/invoice/breakdown",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_STRIPE_PAYMENT_INTENTS": {
     "url": "/users/@me/billing/stripe/payment-intents/payments/:param",
