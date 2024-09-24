@@ -3,14 +3,14 @@
     "host_version": "1.0.1090",
     "module_version": 1,
     "package_sha256": "e6677b369204c12e97c5dd01cd35bc80c2da9bfe9cb3dd57d1ea20b114172081",
-    "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x86/1.0.1090/discord_sekrit/1/full.distro"
+    "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1090/discord_sekrit/1/full.distro"
   },
   "deltas": [
     {
       "host_version": "1.0.1089",
       "module_version": 1,
       "package_sha256": "1b3a0b0e6a9a55136749b0a965b62442824814b90de9d68cda4de6b7b4c4d8dd",
-      "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x86/1.0.1090/discord_sekrit/1/from/1.0.1089/1"
+      "url": "https://dl-ptb.discordapp.net/distro/app/ptb/win/x86/1.0.1090/discord_sekrit/1/from/1.0.1089/1"
     }
   ]
 }
