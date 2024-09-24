@@ -6008,10 +6008,7 @@
           (rI.LOCALIZED_PRICING = "LOCALIZED_PRICING"),
           (rI.BACK_TO_PREVIOUS_SCREEN = "BACK_TO_PREVIOUS_SCREEN"),
           (rI.QUARANTINED = "QUARANTINED"),
-          (rI.DROPS_GO_LIVE_BANNER = "DROPS_GO_LIVE_BANNER"),
-          (rI.DROPS_PROGRESS_INTERRUPTION = "DROPS_PROGRESS_INTERRUPTION"),
           (rI.PREMIUM_TIER_0 = "PREMIUM_TIER_0"),
-          (rI.DROPS_ENDED_INCOMPLETE = "DROPS_ENDED_INCOMPLETE"),
           (rI.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT =
             "PREMIUM_PAST_DUE_ONE_TIME_PAYMENT"),
           (rI.BOUNCED_EMAIL_DETECTED = "BOUNCED_EMAIL_DETECTED"),
@@ -7158,14 +7155,6 @@
             HUB_EMAIL_VERIFY: "/guilds/automations/email-domain-lookup/verify",
             HUB_EMAIL_VERIFY_CODE:
               "/guilds/automations/email-domain-lookup/verify-code",
-            DROPS_ELIGIBILITY: "/drops/eligibility",
-            DROPS_REWARD_CODE: "/drops/reward-code",
-            DROPS_CLAIM_REWARD_CODE: "/drops/reward-code/claim",
-            DROPS_USER_STATUS: "/drops/@me",
-            DROPS_ENROLL_USER: "/drops/enrolled-user",
-            DROPS_PLATFORM_AVAILABILITY: "/drops/reward-code/availability",
-            DROPS_HEARTBEAT: (e) => "/drops/quests/".concat(e, "/heartbeat"),
-            DROPS_PROGRESS: (e) => "/drops/quests/".concat(e, "/progress"),
             OUTBOUND_PROMOTIONS: "/outbound-promotions",
             OUTBOUND_PROMOTIONS_PREVIEW: "/outbound-promotions/preview",
             BOGO_PROMOTIONS: "/bogo-promotions",
@@ -7638,6 +7627,7 @@
             GLOBAL_DISCOVERY: "/discovery",
             QUEST_HOME: "/discovery/quests",
             GLOBAL_DISCOVERY_SERVERS: "/discovery/servers",
+            GLOBAL_DISCOVERY_APPS: "/discovery/apps",
             DISCOVERY_GUILD_GAME_RESULTS: (e) => "/discovery/game/".concat(e),
             GUILD_MEMBER_VERIFICATION: (e, t) =>
               "/member-verification/"
@@ -12408,7 +12398,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-165dcedead12770a3a913cddbf76f892b0ecf88d",
+            release: "discord_web-3297bb8387a717fe551a9e7ccf58d0158e251a0d",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12477,8 +12467,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "330165"), "330165"));
-          i.YA("builtAt", String("1727217962780"));
+            i.YA("buildNumber", ((e = "330185"), "330185"));
+          i.YA("builtAt", String("1727219039928"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48479,4 +48469,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.6636a91e36b80a3846a8.js.map
+//# sourceMappingURL=sentry.33f7c43d10a2c96080d4.js.map

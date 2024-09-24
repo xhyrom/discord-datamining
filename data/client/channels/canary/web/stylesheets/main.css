@@ -43906,9 +43906,6 @@ code {
   --custom-emoji-picker-constants-newly-added-emoji-badge-height: 16px;
 }
 :root {
-  --custom-drop-redemption-modal-art-height: 120px;
-}
-:root {
   --custom-discover-static-guild-card-card-height: 258px;
   --custom-discover-featured-guilds-section-card-height: 320px;
   --custom-discover-featured-guilds-section-min-card-width: 248px;
@@ -44349,4 +44346,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 48px;
 }
-/*# sourceMappingURL=12633.7fa6f8bbb7ef84fdcda9.css.map*/
+/*# sourceMappingURL=12633.58c7fb3cd93952b4fe9c.css.map*/
