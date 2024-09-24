@@ -14,6 +14,7 @@
         </a>
       </li>
       <li><a href="#h_01HRQSA6C85Z6CA9CF10DPRX1Q">Slash Commands</a></li>
+      <li>Launching Apps in Voice Calls</li>
       <li>
         <a href="#h_01HRQSA6C8MGJ2F3G3GEQTQ36P">User and Message Commands</a>
       </li>
@@ -39,6 +40,16 @@
   </li>
 </ul>
 <h1 id="h_01J7CJ994TKKMGYMG1ZZQ9T3S5">What Are Apps?</h1>
+<div class="mega-box">
+  Check out our new
+  <a
+    href="https://support-apps.discord.com/hc/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Apps Help Center</a
+  >, our latest user support resource covering all things from how to use apps
+  on Discord and available activities on Discord.
+</div>
 <p id="docs-internal-guid-f29fc1e7-7fff-20d6-4d6e-4c0654f2c5f2">
   <strong
     ><span id="docs-internal-guid-9666140c-7fff-b291-4ef6-bdd1b14bbf4a"
@@ -69,30 +80,21 @@
     >Developer Support Help Center</a
   >.
 </p>
-<p id="docs-internal-guid-94c396ed-7fff-9265-8f6d-a921495c2574">
-  <strong>Types of Discord Apps:</strong>
-</p>
 <p>
-  1. <strong>Bots</strong>: Automated programs that can perform a variety of
-  tasks such as moderating chats, providing user support, playing music, or
-  organizing games. They typically exist within a server and appear as a member
-  of the server.
+  There are many ways to interact with apps on Discord. Some apps come with
+  <strong>commands</strong>, which you can use to have the app perform specific
+  functions directly in the chat, like moderate the chat, edit an image, provide
+  user support, or manage tasks. Others offer <strong>Activities</strong>, which
+  are interactive experiences—such as games, quizzes, or collaborative tools
+  like whiteboards—that open in a window within Discord and can be used in
+  real-time with friends in text chats or voice calls. While they are accessible
+  from within Discord, using an Activity is like being on a website outside of
+  Discord. Apps can even have both commands and Activities, giving you multiple
+  ways to engage.
 </p>
-<p>
-  2. <strong>Activities</strong>: Interactive experiences like games, quizzes,
-  or collaborative tools such as whiteboards that you can enjoy with others in
-  real-time in text chats or voice calls. Learn more about activities in our
-  <a
-    href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Activities on Discord Help Center</a
-  >
-  article.
-</p>
-<p id="docs-internal-guid-6126a9a7-7fff-5081-c79c-fa885b14f619">
-  <strong>Where You Can Use Apps on Discord:</strong>
-</p>
+<h1 id="docs-internal-guid-6126a9a7-7fff-5081-c79c-fa885b14f619">
+  Where You Can Use Apps on Discord:
+</h1>
 <p>
   Apps on Discord can be installed in, or added to, servers by server admin or
   installed by users to their own accounts. 
@@ -102,7 +104,8 @@
   or have the <strong>Manage Server </strong>permission enabled in order to add
   an app to that server. It is then available by default to all users in that
   server. It can also ask for permissions to do things in a server like a user,
-  such as making channels, deleting messages, or editing roles.
+  such as making channels, deleting messages, or editing roles. An App added to
+  a server will appear as a member in that server.
 </p>
 <p>
   2. <strong>Apps added to your account: </strong>When you add an app to your
@@ -125,11 +128,11 @@
   installed, you can use one of its commands by using slash commands, or by
   right-clicking on a user or message and selecting <strong>Apps</strong>.
 </p>
-<h2 id="h_01J7CJB2BB0WKR8M7BX2Y5B6G7">Launching Apps From the Chat Bar</h2>
-<p id="docs-internal-guid-a461668a-7fff-bf2b-c8d7-6b123f8b03f3">
-  <span class="wysiwyg-font-size-large"
-    ><strong><font color="#434343">Desktop/Browser</font></strong></span
-  >
+<h2 id="h_01J8JGPDXA8PJQXDV2815NZKNN">Launching Apps From the Chat Bar</h2>
+<p>
+  <span class="wysiwyg-font-size-large">
+    <strong> <font color="#434343">Desktop/Browser</font> </strong>
+  </span>
 </p>
 <p>
   To launch an app on desktop or browser, simply select the
@@ -198,12 +201,7 @@
       src="https://support.discord.com/hc/article_attachments/24109403554967"
       width="225"
       height="466" /></span
-  >   <span id="docs-internal-guid-ff4ac47d-7fff-c0cb-547b-97043f3d3c96"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/24109403564567"
-      width="225"
-      height="467"
-  /></span>
+  >   
 </p>
 <p>
   It then provides an interface for selecting preset commands for the app
@@ -213,12 +211,7 @@
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-62e93320-7fff-0c4a-f658-24d9a7a6d8eb"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/24109405014167"
-      width="199"
-      height="413" /></span
-  > 
+   
   <span id="docs-internal-guid-50ad8014-7fff-1ea4-9a53-41782ed3e869"
     ><img
       src="https://support.discord.com/hc/article_attachments/24109403594903"
@@ -232,7 +225,7 @@
     ><br
   /></span>
 </p>
-<h2 id="h_01HRQSA6C85Z6CA9CF10DPRX1Q">Slash Commands</h2>
+<h2 id="h_01HRQSA6C85Z6CA9CF10DPRX1Q">Typing "/"</h2>
 <p>
   To use an app’s slash commands via the chat bar, simply type
   <strong><span style="color: #188038">”</span></strong
@@ -256,6 +249,78 @@
     rel="noopener noreferrer"
     >article</a
   >.
+</p>
+<h2 id="h_01J8JGPR43Y7TRZ3NRYYCBCA9V">Launching Apps in Voice Calls</h2>
+<p>
+  You can launch apps that have Activities in any voice call on Discord. Here’s
+  how:
+</p>
+<p>
+  1. Navigate to your intended server and join a voice channel, or start a voice
+  call in a direct message (DM) or group chat.
+</p>
+<p>
+  2. To start an app, all you need to do is press on the
+  <strong>App Launcher</strong> button [<img
+    src="https://support.discord.com/hc/article_attachments/26593903353367"
+    width="24"
+    height="24"
+  />] at the bottom of the call
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26593919504791"
+    width="590"
+    height="384"
+  />
+</p>
+<h4 id="h_01J8JGHTTQPBPJE1Q2K74EWPTD">
+  <span style="color: #666666">The </span
+  ><strong><span style="color: #666666">App Launcher</span></strong
+  ><span style="color: #666666">
+    appears on the bottom left-hand side, or the one that appears when in
+    focused view, while in a voice channel.</span
+  >
+</h4>
+<h4 id="h_01J8JGHTTQS3MJ9R49H7V6CBFH" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/26593903357847"
+      width="240"
+      height="520"
+  /></span>
+</h4>
+<p>
+  3. Select the App you want to launch from the App Launcher menu. You can also
+  search for an App that you want to use if you don’t see it. You will need to
+  provide authorization if you’ve never used your chosen App before.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26593919510423"
+    width="458"
+    height="373"
+  />
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26593919514775"
+    width="195"
+    height="422"
+  />
+</p>
+<p>
+  4. (Optional) Have your friends join the Activity. To play, they need to be in
+  the same voice channel as you and join the Activity you started. Each person
+  joining the game will need to provide authorization if they’ve never played
+  the chosen Activity before.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26593919517719"
+    width="523"
+    height="329"
+  />
 </p>
 <h2 id="h_01HRQSA6C8MGJ2F3G3GEQTQ36P">User and Message Commands</h2>
 <p>
@@ -309,26 +374,8 @@
       width="24"
       height="24" /></span
   >] to see a list of commands for apps that can modify or interact with the
-  image. Here are a few examples of what you can do with some popular apps:
+  image.
 </p>
-<ul>
-  <li>
-    <strong>Viggle</strong>: Animate characters in images by uploading a video,
-    bringin static pictures to life.  
-  </li>
-  <li>
-    <strong>esmBot</strong>: Add a caption to the images or create bouncing
-    animations for a playful touch.
-  </li>
-  <li>
-    <strong>Picsar</strong>: Transform images into stickers by effortlessly
-    removing backgrounds. 
-  </li>
-  <li>
-    <strong>Nekotina</strong>: Create detailed image descriptions to enhance
-    context and improve accessibility.
-  </li>
-</ul>
 <p>
   3. <strong>Authorize the app</strong>: Complete the prompts and select
   <strong>Authorize</strong> to confirm you would like to add the app to your
@@ -355,13 +402,7 @@
 </h3>
 <p>
   With these easy-to-use apps, you can creatively modify images and make your
-  chats even more engaging! Learn more about using apps on Discord
-  <a
-    href="https://support.discord.com/hc/articles/21334461140375-Using-Apps-on-Discord"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
+  chats even more engaging!
 </p>
 <h1 id="h_01HRQSA6C89EVW06TR83E76S86">How to Discover Apps and Add Apps</h1>
 <p>
@@ -626,6 +667,10 @@
   animates characters, esmBot adds captions or creates bouncing animations,
   Picsar transforms images into stickers, and Nekotina generates image
   descriptions. More apps may become available in the future.
+  <span id="docs-internal-guid-bf1bf636-7fff-9908-017a-1ed55562e4ae"
+    >You can also search for other apps in the App Launcher and App
+    Directory.</span
+  >
 </p>
 <p>
   <strong
