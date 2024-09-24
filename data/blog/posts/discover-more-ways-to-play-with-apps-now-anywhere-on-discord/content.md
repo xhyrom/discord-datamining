@@ -102,8 +102,8 @@
         </div>
       </figure>
       <p>
-        &nbsp;You can now access Activities and bots as apps in the App
-        Launcher. Whether you enjoy drawing with the
+        You can now access Activities and bots as apps in the App Launcher.
+        Whether you enjoy drawing with the
         <a href="https://discord.com/activities/1070087967294631976"
           >Whiteboard</a
         >
@@ -190,7 +190,7 @@
         app to add a quippy caption.
       </p>
       <figure
-        style="max-width: 1152px"
+        style="max-width: 1152pxpx"
         class="w-richtext-align-fullwidth w-richtext-figure-type-image"
       >
         <div>
@@ -238,9 +238,12 @@
         <strong>Explore Thousands of Apps<br /></strong>
       </h2>
       <p>
-        The Discord Developer community is constantly growing, building out new
-        apps for people to utilize every day. (<a
-          href="https://discord.com/build"
+        The
+        <a href="https://discord.com/invite/discord-developers"
+          >Discord Developer community</a
+        >
+        is constantly growing, building out new apps for people to utilize every
+        day. (<a href="https://discord.com/build"
           >Learn more about how to build apps on Discord!</a
         >)&nbsp;
       </p>
