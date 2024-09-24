@@ -3224,35 +3224,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-05_go_live_quest_fortnite",
-      "label": "Fortnite: Go Live Quest",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: 15 min stream req + auto enrollment",
-        "Treatment 99: 2 minute stream req + auto enrollment"
-      ],
-      "hash": 2709361021,
-      "buckets": [
-        -1,
-        0,
-        1,
-        99
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "dropsEnabled",
-        "streamLengthRequirement",
-        "viewerCountRequirement",
-        "autoEnrollment",
-        "showUnenroll"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-05_localized_pricing_turkey_notice",
       "label": "Localized Pricing Turkey Notice",
       "description": [
@@ -10634,6 +10605,29 @@
       "aa_mode": false,
       "config_keys": [
         "guildFriendsEnabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-09_global_discovery_apps",
+      "label": "Global Discovery Apps",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 692504301,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
       ]
     }
   },
