@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7636264002](https://discord.com/jobs/7636264002)
 
-**Updated At:** Mon, 23 Sep 2024 18:55:29 GMT
+**Updated At:** Tue, 24 Sep 2024 17:06:41 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.&amp;nbsp;
@@ -28,7 +28,7 @@ Building delightful products with a very high bar for quality, performance, and 
 &amp;nbsp;
 What We Look For
 
-A strong product sense. You maintain a high degree of empathy for your internal and external users, and seek feedback to improve the experience. You can demonstrate a track record of&amp;nbsp;
+A strong product sense. You maintain a high degree of empathy for your internal and external users, and seek feedback to improve the experience. You can demonstrate a track record of shipping projects from conception to release
 A focus on impact. You have shipped products with clear metrics goals and had a measurable positive impact on customers
 A sense of ownership. You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.&amp;nbsp;
 An expertise in web development. You have a deep understanding of React, CSS, and Typescript.&amp;nbsp;
