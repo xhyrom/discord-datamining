@@ -36,14 +36,14 @@
 </h2>
 <p>
   <strong>If your app is verified</strong>, you will see a new section in the
-  Developer Portal called “App Directory.” (If your app is not yet verified, you
-  will not see these tabs.)
+  Developer Portal called “Discovery” (If your app is not yet verified, you will
+  not see this tab.)
 </p>
 <ul>
   <li>
-    The <strong>product Page tab</strong> contains a list of things you can add
-    about your app that can show in your app’s product page within the upcoming
-    App Directory. This includes things like
+    The <strong>Discovery Settings tab</strong> contains a list of things you
+    can add about your app that can show in your app’s product page within the
+    upcoming App Directory. This includes things like
     <strong
       >description copy, images and videos, supported languages, and links to
       your support server and social channels</strong

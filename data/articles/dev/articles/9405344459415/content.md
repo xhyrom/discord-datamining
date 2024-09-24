@@ -10,16 +10,17 @@
   >.
 </p>
 <p>
-  Then, in the Developer Portal, click “Discovery Status” under App Directory.
-  You will see an “Enable Discovery” button. Once all the listed criteria is
-  met, you can click it to enable your app to be included in the Directory.
+  Then, in the Developer Portal, click “Discovery Status” under
+  <strong>Discovery</strong>. You will see an “Enable Discovery” button. Once
+  all the listed criteria is met, you can click it to enable your app to be
+  included in the Directory.
 </p>
 <h2 id="h_01J021F1TG9HRFXCCTVEM4P9RG">
   Is my app eligible for the App Directory?
 </h2>
 <p>
-  Check the Discovery Status tab of the Developer Portal (under “App Directory”)
-  for a list of required criteria and whether or not you have met each one.
+  Check the Discovery Status tab of the Developer Portal (under “Discovery”) for
+  a list of required criteria and whether or not you have met each one.
 </p>
 <h2 id="h_01J021F1TGYMPP8RGTK3TC4A8K">How do I edit my app’s profile?</h2>
 <p>
@@ -28,12 +29,13 @@
   verified or the App Profile page will not show up.
 </p>
 <h2 id="h_01J021F1TGNM06NDJKAVGAWZG2">
-  Why can’t I see the App Directory tab in the Developer Portal?
+  Why can’t I see the Discovery tab in the Developer Portal?
 </h2>
 <p>
-  The new tabs (Product Page and Discovery Status) are only visible if you have
-  already received verification for your app. If you are unverified or if your
-  verification request is pending, you will not yet be able to view these tabs.
+  The new tabs (Discovery Settings and Discovery Status) are only visible if you
+  have already received verification for your app. If you are unverified or if
+  your verification request is pending, you will not yet be able to view these
+  tabs.
 </p>
 <h2 id="h_01J021F1TGYVBRNK933PXW6ZP4">
   What if my app does not have a Privacy Policy or Terms of Service?
@@ -79,7 +81,7 @@
 </h2>
 <p>
   It is likely that your app was removed from the Directory due to the inclusion
-  of age restricted content or violations of our
+  of age-restricted content or violations of our
   <a
     href="https://discord.com/developers/docs/legal"
     target="_blank"
@@ -129,7 +131,7 @@
   Directory supports localization. If you have localized description copy
   available for your app’s supported languages, be sure to add those. If your
   app supports multiple languages, be sure to add those in the Supported
-  Languages section of the Product Page!
+  Languages section of the Discovery Settings!
 </p>
 <h2 id="h_01J021F1TGR5SW45MGQ8ZV1PCE">
   If I meet all the requirements in the Discovery Status page and click “Enable
