@@ -18246,6 +18246,8 @@
   "GLOBAL_DISCOVERY_FIND_THE_PERFECT_SERVER": "\"Find the perfect server\"",
   "GLOBAL_DISCOVERY_SEARCH_DISCOVERABLE_SERVERS": "\"Search hundreds of discoverable servers\"",
   "GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY": "\"Featured\"",
+  "GLOBAL_DISCOVERY_APPS_FEATURED_TITLE": "\"Play Games\\n\\nWatch Stuff\\n\\nListen Together\"",
+  "GLOBAL_DISCOVERY_APPS_CATEGORY_TITLE": "\"{category}\\n\\nApps\"",
   "EMAIL_CHANGE_REASONING_HEADER": "\"Why are you changing your email?\"",
   "EMAIL_CHANGE_REASONING_DISCORD_EMPLOYEE_ASKED": "\"A Discord employee asked me to\"",
   "EMAIL_CHANGE_REASONING_SOMEONE_ASKED": "\"Someone asked me to\"",
