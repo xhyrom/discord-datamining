@@ -43,9 +43,7 @@
   /></strong>
   <ul>
     <li><a href="#h_01J8JW8VS0J9QRGA79AN94DGTQ">What is a Chargeback</a></li>
-    <li>
-      <a href="#h_01J8JW8VS0ZYGEPM0RQ79AVXZ5">What This Policy States </a>
-    </li>
+    <li><a href="#h_01J8JW8VS0ZYGEPM0RQ79AVXZ5">What This Policy States</a></li>
     <li>
       <a href="#h_01J8JW8VS0WDF989S6TT0EKPSQ"
         >How to Avoid Violating This Policy</a
