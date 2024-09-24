@@ -14,7 +14,11 @@
         </a>
       </li>
       <li><a href="#h_01HRQSA6C85Z6CA9CF10DPRX1Q">Slash Commands</a></li>
-      <li>Launching Apps in Voice Calls</li>
+      <li>
+        <a href="#h_01J8JGPR43Y7TRZ3NRYYCBCA9V"
+          >Launching Apps in Voice Calls</a
+        >
+      </li>
       <li>
         <a href="#h_01HRQSA6C8MGJ2F3G3GEQTQ36P">User and Message Commands</a>
       </li>
@@ -34,6 +38,12 @@
       </li>
       <li><a href="#h_01J7CJETH832KC9PJAP62YDV88">From Chat</a></li>
     </ul>
+  </li>
+  <li>
+    <a href="#h_01J8JGYG6QDYJNTZ4Y3E6YE7J4"
+      >My mobile device gets really warm while playing Activities. How do I fix
+      it?</a
+    >
   </li>
   <li>
     <a href="#h_01HRQSA6C8H2XBF34NSSQH7ZFH">Frequently Asked Questions</a>
@@ -411,8 +421,8 @@
 </p>
 <h2 id="h_01J7CJD6JNQ78PEPF4MM4GQWF2">From the App Launcher</h2>
 <p>
-  Discord’s <strong>App Launcher</strong> lets you discover new apps through the
-  displayed collections and search.
+  Discord's <strong>App Launcher</strong> lets you discover and add new apps
+  through the displayed collections and search.
 </p>
 <p>
   When you open the App Launcher, you'll discover a variety of apps to enhance
@@ -420,36 +430,32 @@
 </p>
 <ul>
   <li>
-    <strong>Installed Apps:</strong> Apps already added to your account or
-    server (if applicable)
+    <strong>Recents</strong>: Your recently used and installed apps appear in
+    the “Recents” section at the top; you can launch these apps directly by
+    selecting them there.
   </li>
   <li>
-    <strong>Curated Collections:</strong> A mix of user favorites, staff picks,
-    and recommended apps
-  </li>
-  <li>
-    <strong>Partner Apps:</strong> Some apps may be developed in collaboration
-    with Discord, marked with a "<strong>Partner</strong>" tag
-  </li>
-  <li>
-    <strong>Promoted Apps:</strong> Apps given more visibility in the App
-    Launcher or App Directory, identified by a "<strong>Promoted</strong>" tag
+    <strong>Collections</strong>: A mix of popular, trending, and curated apps
+    we think Discord users will love.
   </li>
 </ul>
 <p>
+  You can also search through the whole catalog of apps in the App Launcher
+  using specific terms in the search bar. Search results are ranked based on
+  relevance to the query and popularity based on usage.
+</p>
+<p>
+  Apps that offer paid features through Discord Premium Apps or that contain ads
+  will be marked with "In-App Purchases" and "Ad-Supported" tags, respectively,
+  on their details page. If we have another type of financial relationship with
+  a developer, their apps may be marked with a "Partner" tag. If the placement
+  of an app in a collection is influenced by our relationship with its
+  developer, it will be marked with a "Promoted" tag.
+</p>
+<p>
   These diverse options allow you to customize and enrich your Discord
-  interactions with ease.
-</p>
-<p>
-  Search results are ranked based on relevance to thequery and popularity based
-  on usage. Apps that use ads or offer in-app purchases are marked with
-  “<strong>Ad-supported</strong>” and “<strong>In-App Purchases</strong>” tags
-  on their details page.  
-</p>
-<p>
-  Your recently used and installed apps appear in the “<strong>Recents</strong>”
-  section at the top of the App Launcher. You can launch these apps by selecting
-  them directly from the launcher.
+  interactions with ease. We encourage you to check back regularly as we update
+  the collections!
 </p>
 <h2 id="h_01J7CJDA1CP9FYGGCRJDJT1D4C">From the App Directory</h2>
 <p id="docs-internal-guid-79c0805c-7fff-ae57-1ee6-d673504e044e">
@@ -589,6 +595,56 @@
   <strong>Member List</strong>. If you added the app to your account, you will
   see it under your <strong>User Settings &gt; Authorized Apps</strong>. 
 </p>
+<h2 id="h_01J8JGYG6QDYJNTZ4Y3E6YE7J4">
+  My mobile device gets really warm while playing Activities. How do I fix it?
+</h2>
+<p>
+  If your mobile device becomes warm to the touch while you’re playing an
+  Activity, we recommend that you try the following:
+</p>
+<ul>
+  <li>
+    If you have our picture-in-picture feature engaged while playing an
+    Activity, please minimize/close the picture-in-picture feature and keep the
+    Activity in focus.
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+   <img
+    src="https://support.discord.com/hc/article_attachments/26594062081303"
+    width="321"
+    height="697"
+  />
+</p>
+<p class="wysiwyg-text-align-center">
+  The picture-in-picture view example to minimize 
+</p>
+<p> </p>
+<ul>
+  <li>
+    If you have your Video enabled while playing an Activity, please disable
+    your mobile device camera by pressing on the Video camera icon and keep the
+    Activity in focus.
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26594062083607"
+    width="343"
+    height="743"
+  />
+</p>
+<ul>
+  <li>
+    If you have any apps opened in the background, please close out those apps. 
+  </li>
+</ul>
+<p>
+  <br />Still experiencing issues? Please reach out to our Support team
+  <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >here</a
+  >.
+</p>
 <h1 id="h_01HRQSA6C8H2XBF34NSSQH7ZFH">Frequently Asked Questions</h1>
 <p>
   <strong
@@ -720,4 +776,3 @@
   To learn more about a specific app's data practices, please refer to the app’s
   developer or its privacy policy.
 </p>
-<p><br /><br /></p>
