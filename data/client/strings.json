@@ -18987,9 +18987,17 @@
   "GUILD_FRIENDS": "\"Friends in Server\"",
   "GUILD_FRIENDS_MODAL_HEADER": "\"{numFriends, plural, =0 {0 Friends} one {1 Friend} other {{numFriends} Friends}} in !!{guildName}!!\"",
   "GUILD_FRIENDS_MODAL_HEADER_LOADING": "\"{numFriends, plural, =0 {Friends} one {1+ Friend} other {{numFriends}+ Friends}} in !!{guildName}!!\"",
-  "LEADERBOARD_POPOUT_TITLE": "\"**!!{leaderboardName}!!** standings\"",
+  "LEADERBOARD_POPOUT_TITLE": "\"$[!!{leaderboardName}!!](leaderboardNameHook) standings\"",
   "LEADERBOARD_TABLE_HEADER_PLAYER": "\"Player\"",
   "LEADERBOARD_TABLE_HEADER_WEEKLY_KILLS": "\"Weekly Kills\"",
   "MEMBER_LIST_CONTENT_FEED_LEADERBOARD_KILLS": "\"{value, number} Kills\"",
-  "MEMBER_LIST_CONTENT_FEED_LEADERBOARD_MENU_REFRESH_MY_DATA": "\"Refresh my game data\""
+  "MEMBER_LIST_CONTENT_FEED_LEADERBOARD_MENU_REFRESH_MY_DATA": "\"Refresh my game data\"",
+  "LEADERBOARD_INTERVAL_END_DAYS_LEFT": "\"{count, number}d Left\"",
+  "LEADERBOARD_INTERVAL_END_HOURS_LEFT": "\"{count, number}h Left\"",
+  "LEADERBOARD_LAST_WEEKS_CHAMPION": "\"Last Week's Champion\"",
+  "LEADERBOARD_LAST_MONTHS_CHAMPION": "\"Last Month's Champion\"",
+  "LEADERBOARD_YESTERDAYS_CHAMPION": "\"Yesterday's Champion\"",
+  "LEADERBOARD_LAST_CHAMPION": "\"Last Champion\"",
+  "LEADERBOARD_CURRENT_CHAMPION": "\"Current Champion\"",
+  "LEADERBOARD_LOL_SUMMONERS_RIFT": "\"Summoner's Rift\""
 }
