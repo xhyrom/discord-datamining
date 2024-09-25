@@ -7514,6 +7514,8 @@
               "/voice/".concat(e, "/match-public-key"),
             GUILD_LEADERBOARD: (e, t) =>
               "/guilds/".concat(e, "/leaderboards/").concat(t),
+            UPDATE_MY_LOL_LEADERBOARD: () =>
+              "/users/@me/update-league-of-legends-leaderboard",
           }),
           a2 = Object.freeze({
             INDEX: "/",
@@ -12401,7 +12403,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4307a08a70425dafb1a8ea8a8061dac3a217c4a6",
+            release: "discord_web-a947d928f874eab50e68527e9654617f3658f72a",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12470,8 +12472,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "330429"), "330429"));
-          i.YA("builtAt", String("1727288965792"));
+            i.YA("buildNumber", ((e = "330443"), "330443"));
+          i.YA("builtAt", String("1727290023196"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48472,4 +48474,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.94804531a6aec2b840d5.js.map
+//# sourceMappingURL=sentry.375bea3128af44da0880.js.map
