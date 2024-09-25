@@ -4932,6 +4932,10 @@
       "POST"
     ]
   },
+  "QUEST_FETCH_QUEST_TO_DELIVER": {
+    "url": "/quests/decision?placement=:param",
+    "allowed_methods": null
+  },
   "ATTACHMENTS_REFRESH_URLS": {
     "url": "/attachments/refresh-urls",
     "allowed_methods": [
