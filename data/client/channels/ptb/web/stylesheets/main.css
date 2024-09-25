@@ -37156,6 +37156,95 @@ html .progress_e5f4c6 {
 .welcomeCTASticker_f6dde0 {
   margin-right: 4px;
 }
+.content_d76538 {
+  width: 315px;
+  height: auto;
+  max-height: 166px;
+  background: linear-gradient(
+    257deg,
+    var(--brand-560) 0%,
+    var(--brand-460) 100%
+  );
+  border-radius: 12px;
+  border: 1.44px solid hsl(var(--white-500-hsl) / 0.15);
+  overflow: hidden;
+}
+.contentGlow_d76538 {
+  box-shadow: 0 0 20px var(--brand-500);
+}
+.innerContent_d76538 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(255, 186, 219, 0.2) inset;
+}
+.contentTextCTAPopout_d76538 {
+  border-radius: 4px;
+}
+.subContent_d76538 {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+}
+.avatars_d76538 {
+  flex-shrink: 0;
+  position: relative;
+}
+.recipientUserAvatar_d76538 {
+  background-color: var(--brand-500);
+}
+.currentUserAvatar_d76538 {
+  position: absolute;
+  border: 2px solid var(--brand-500);
+  background-color: var(--background-primary);
+  bottom: 1px;
+  right: 1px;
+}
+.textContainer_d76538 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+.subHeaderText_d76538 {
+  color: white;
+  opacity: 0.8;
+}
+.button_d76538 {
+  margin: 0 16px 16px;
+}
+.buttonContentContainer_d76538 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonText_d76538 {
+  margin-left: 4px;
+  color: var(--brand-500);
+}
+.connector_d76538 {
+  width: 9px;
+  height: 2px;
+  pointer-events: none;
+  position: absolute;
+  background-color: var(--brand-500);
+}
+.rightPopoutConnector_d76538 {
+  left: -9px;
+  top: 12%;
+}
+.leftPopoutConnector_d76538 {
+  left: 100%;
+  top: 12%;
+}
+.messageContentContainer_f93a69 {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.iconContainer_f93a69 {
+  height: 100%;
+}
+.icon_f93a69 {
+  fill: var(--brand-500);
+}
 .container_bbc161 {
   display: flex;
   padding: var(--spacing-16);
@@ -55098,4 +55187,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.0faa28049cfcaf402c0a.css.map*/
+/*# sourceMappingURL=12633.68ed77a36ceb89b5aec5.css.map*/
