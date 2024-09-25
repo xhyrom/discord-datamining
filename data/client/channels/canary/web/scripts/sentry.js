@@ -12404,7 +12404,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8a52f0012ef7567291349c645d81f2704f55ed5d",
+            release: "discord_web-31ddcd9c60269c706acd8f5983b1699999aad763",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12473,8 +12473,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "330517"), "330517"));
-          i.YA("builtAt", String("1727297004447"));
+            i.YA("buildNumber", ((e = "330527"), "330527"));
+          i.YA("builtAt", String("1727298683199"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -22226,7 +22226,8 @@
           (a[(a.CHANGELOG = 47)] = "CHANGELOG"),
           (a[(a.NITRO_NOTIFICATION = 48)] = "NITRO_NOTIFICATION"),
           (a[(a.CHANNEL_LINKED_TO_LOBBY = 49)] = "CHANNEL_LINKED_TO_LOBBY"),
-          (a[(a.GIFTING_PROMPT = 50)] = "GIFTING_PROMPT");
+          (a[(a.GIFTING_PROMPT = 50)] = "GIFTING_PROMPT"),
+          (a[(a.IN_GAME_MESSAGE_NUX = 51)] = "IN_GAME_MESSAGE_NUX");
         let o = {
           UNDELETABLE: new Set([1, 2, 3, 4, 5, 21]),
           GUILD_DISCOVERY_STATUS: new Set([14, 15, 16, 17]),
@@ -48475,4 +48476,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.b8598582983f2130fe96.js.map
+//# sourceMappingURL=sentry.1158819287e565af7030.js.map
