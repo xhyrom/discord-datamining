@@ -2782,7 +2782,7 @@
     ]
   },
   "STOREFRONT_PREMIUM_BUTTON": {
-    "url": "/storefront/button/:param",
+    "url": "/applications/storefront/interactions/premium-button/:param",
     "allowed_methods": null
   },
   "STORE_DIRECTORY_LAYOUT": {
