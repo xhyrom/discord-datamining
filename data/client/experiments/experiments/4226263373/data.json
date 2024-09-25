@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_rustadm",
+    "label": "Rust Audio Device Manager",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Automatic is Rust ADM"
+    ],
+    "hash": 4226263373,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
