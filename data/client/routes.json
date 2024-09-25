@@ -4934,7 +4934,11 @@
   },
   "QUEST_FETCH_QUEST_TO_DELIVER": {
     "url": "/quests/decision?placement=:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "ATTACHMENTS_REFRESH_URLS": {
     "url": "/attachments/refresh-urls",
@@ -5078,5 +5082,9 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "UPDATE_MY_LOL_LEADERBOARD": {
+    "url": "/users/@me/update-league-of-legends-leaderboard",
+    "allowed_methods": null
   }
 }
