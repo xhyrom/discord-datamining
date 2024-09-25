@@ -19,28 +19,18 @@
 </p>
 <ul id="docs-internal-guid-7bbb681d-7fff-8723-4e33-e28b06ce2a01">
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360020877112#docs-internal-guid-95151cf2-7fff-f4bb-06a8-0a3efdeb7f58"
+    <a href="#docs-internal-guid-95151cf2-7fff-f4bb-06a8-0a3efdeb7f58"
       >How to Purchase a Nitro Gift in Discord</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360020877112#docs-internal-guid-4ffa21a8-7fff-c75d-f5e3-78d6b88a232d"
+    <a href="#docs-internal-guid-4ffa21a8-7fff-c75d-f5e3-78d6b88a232d"
       >Discord Nitro Digital Gift Cards on Amazon.com</a
     >
   </li>
+  <li><a href="#h_01GCCGDZ431KZC8Q55QH64853Z">Managing your Nitro gift</a></li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360020877112#h_01GCCGDZ431KZC8Q55QH64853Z"
-      >Managing your Nitro gift</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360020877112#h_01GCCGE3DAMHY7BX0JVY04JYSR"
-      >Purchasing a gift on mobile</a
-    >
+    <a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR">Purchasing a gift on mobile</a>
   </li>
 </ul>
 <h1 id="docs-internal-guid-95151cf2-7fff-f4bb-06a8-0a3efdeb7f58">
