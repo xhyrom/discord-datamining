@@ -1,0 +1,41 @@
+{
+  "id": 26445668248983,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/26445668248983.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/26445668248983-Street-Fighter-6-Quest",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 22849279767831,
+  "created_at": "2024-09-17T23:55:46Z",
+  "name": "Street Fighter 6 Quest",
+  "title": "Street Fighter 6 Quest",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-09-24T21:36:33Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [
+    "01J3NCX0E8NEMNGZ00T9DNHE81",
+    "01J3NCWMGR03XN71256WH95176",
+    "01J8JZ87MY2NRFEXXPW5WPBWKZ",
+    "01J8JZ8A2WX672YN5EBFC2R1WB",
+    "01J8JZ8F4P8QVRBCHJWC090M42",
+    "01J3NCXCYM0GYACCHRDKF30GTG",
+    "01J8JZ90AJSHD957PBRJNZBQP2",
+    "01J8JZ9525H7KKQKNQXG7818AC",
+    "01J5BD3VATN2ECAH55Q4DVN4EV"
+  ],
+  "label_names": [
+    "answer-bot",
+    "quests",
+    "discord",
+    "rewards",
+    "street",
+    "fighter",
+    "6"
+  ]
+}

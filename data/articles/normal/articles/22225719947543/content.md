@@ -23,6 +23,7 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
+      <li><a href="#h_01J8JZMSEBSHRFKVF3XKMQ6213">Street Fighter 6 </a></li>
       <li><a href="#h_01J834W9W4XK6ACDM184VA93XR">Discord Activities </a></li>
       <li><a href="#h_01J7YCN0PYT9VD8PFX7FDQT6YD">FINAL FANTASY XVI</a></li>
     </ul>
@@ -80,6 +81,21 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J8JZMSEBSHRFKVF3XKMQ6213">
+  <a
+    href="https://support.discord.com/hc/articles/26445668248983"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Street Fighter 6 - Street Fighter 6 Quest</a
+  >
+</h2>
+<p>
+  The <strong>Street Fighter 6 Quest</strong> can be accepted on Discord from
+  <strong>September 25, 2024</strong> until
+  <strong>September 29, 2024 (11:59PM UTC).</strong> The avatar decoration needs
+  to be redeemed by <strong>October 29, 2024</strong>. Quest requirements must
+  be completed during this period to receive the reward.
+</p>
 <h2 id="h_01J834W9W4XK6ACDM184VA93XR">
   <a
     href="https://support.discord.com/hc/articles/26435077579415-Discord-Activities-Quest"
@@ -91,7 +107,8 @@
 <p>
   The <strong>Discord Activities Ques</strong>t can be accepted on Discord from
   <strong>September 16, 2024</strong> until
-  <strong>September 24, 2024 (11:59PM UTC)</strong>. Quest requirements must be
+  <strong>September 26, 2024 (11:59PM UTC)</strong>. The Nitro trial needs to be
+  redeemed by <strong>October 3, 2024</strong>. Quest requirements must be
   completed during this period to receive the reward.
 </p>
 <h2 id="h_01J7YCN0PYT9VD8PFX7FDQT6YD">
@@ -194,7 +211,9 @@
 </p>
 <h2 id="h_01HVPBZR5FXKRBNJ7N20KCJVEP">Accept the Quest </h2>
 <p>
-  <span class="wysiwyg-font-size-large"><strong>Via Quest Bar</strong></span>
+  <span class="wysiwyg-font-size-large"
+    ><strong>Through the Quest Bar on Desktop </strong></span
+  >
 </p>
 <div class="info-box">
   Quests can only be accepted through the Discord desktop and browser apps.
@@ -212,8 +231,10 @@
     height="377"
   />
 </p>
-<p class="wysiwyg-text-align-left">
-  <span class="wysiwyg-font-size-large"><strong>Via Discover</strong></span>
+<p>
+  <span class="wysiwyg-font-size-large"
+    ><strong>Through Quest Home on Desktop</strong></span
+  >
 </p>
 <p>
   You can also select the <strong>Discover</strong> icon [<img
@@ -260,6 +281,36 @@
     height="396"
   />
 </p>
+<p>
+  <span class="wysiwyg-font-size-large"><strong>On Mobile</strong></span>
+</p>
+<div class="info-box">
+  <strong>NOTE</strong>: On mobile, accepting, tracking, and viewing Quests is
+  currently in beta and limited to specific Quests.
+</div>
+<p>
+  On mobile, tap the <strong>Quest</strong> <strong>bar</strong> to navigate to
+  the <strong>Quest</strong> tab. Here, you can select
+  <strong>Accept Quest </strong>for the Quest you wish to participate in.  
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26602624683159"
+    width="250"
+    height="520"
+  />. 
+  <img
+    src="https://support.discord.com/hc/article_attachments/26602638347031"
+    width="250"
+    height="519"
+  />
+</p>
+<div class="tip-box">
+  If you dismiss the mobile <strong>Quest</strong> <strong>bar</strong>, you can
+  still find the Quest in <strong>Quest Home</strong> (<strong
+    >Settings &gt; Quest</strong
+  >) to accept the Quest.
+</div>
 <h2 id="h_01J4SWYM6CM246C86NVF5J3XVX">Completing Quest Requirements </h2>
 <p>Each Quest will have its own requirements:</p>
 <ul>
