@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 64,
+  "subdomain_count": 65,
   "subdomains": [
     "support",
     "blog",
@@ -30,8 +30,8 @@
     "app",
     "prod-wf2",
     "o21.ptr6759",
-    "o17.ptr8588",
     "o15.ptr9908",
+    "o17.ptr8588",
     "zendesk3",
     "zendesk4",
     "o20.ptr1353",
@@ -54,6 +54,7 @@
     "prod-wf1",
     "snowsgiving-tale-2022-sv-se",
     "seo",
+    "support-apps",
     "prod-wf3",
     "o24.ptr4166",
     "crawl-35-196-132-85.ptr",
