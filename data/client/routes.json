@@ -1146,7 +1146,12 @@
   },
   "CHANNEL_RECIPIENT_ME": {
     "url": "/channels/:param/recipients/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "CHANNEL_RECIPIENT_REJECT_BATCH": {
     "url": "/channels/recipients/@me/batch-reject",
