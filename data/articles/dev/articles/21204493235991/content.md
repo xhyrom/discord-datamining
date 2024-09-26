@@ -90,16 +90,20 @@
 </p>
 <h3 id="h_01J8JK19X2YT5Y4AH19GKYBXEF">2. App Directory</h3>
 <p>
-  The revamped
+  The
   <a
     href="https://support.discord.com/hc/en-us/articles/9360431966359-Welcome-to-the-App-Directory"
     target="_blank"
     rel="noopener noreferrer"
     >App Directory</a
   >
-  now features Activities located under the Apps section of the Discovery page!
-  When your Activity is discoverable people will be able to find it in the App
-  Directory with its very own App Profile Page.
+  now features Activities! When your Activity is discoverable people will be
+  able to find it in the App Directory with its very own App Profile Page.
+</p>
+<p>
+  <img
+    src="https://cdn.discordapp.com/attachments/1141446435242528860/1288893902732005457/Screenshot_2024-09-26_at_9.04.04_AM.png?ex=66f6d77c&amp;is=66f585fc&amp;hm=bcc26d8b635438066d08971c733d44dd8df86b3cb68b93a2a2291f260643b3d8&amp;="
+  />
 </p>
 <h3 id="h_01J8JK19X2NQPKY40K2V6DX7A3">3. Activity Status (Recent Activity)</h3>
 <p>
