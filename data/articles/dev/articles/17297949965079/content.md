@@ -13,12 +13,8 @@
     data-token-index="3"
     >, UK, and European Union but check</span
   >
-  back
-  <a
-    href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HB90E77QPN986GFV0S01ZSF2"
-    >here</a
-  >
-  and in the Discord Developers server for future announcements
+  back <a href="#h_01HB90E77QPN986GFV0S01ZSF2">here</a> and in the Discord
+  Developers server for future announcements
 </p>
 <p>
   <a
@@ -27,9 +23,10 @@
     rel="noopener noreferrer"
     >Premium Apps</a
   >
-  are the key to taking your app to the next level. In this article, we’ll go
-  step by step to help you tap into our end-to-end solution for monetizing your
-  application and offering your app’s most loyal users new features.
+  are the key to taking your app or activity to the next level. In this article,
+  we’ll go step by step to help you tap into our end-to-end solution for
+  monetizing your application and offering your app’s most loyal users new
+  features.
 </p>
 <h2 id="h_01HAWJ6AVJMD315Q76KW6JFWVT">Prerequisites</h2>
 <p>
@@ -37,18 +34,8 @@
   requirements that will need to be met:
 </p>
 <ul>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HAW6SCSSBWKGYSH77SM92GGV"
-      >App is owned by a Team</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HAW6T3JHPVZJACQEM94518TD"
-      >App is Verified</a
-    >
-  </li>
+  <li><a href="#h_01HAW6SCSSBWKGYSH77SM92GGV">App is owned by a Team</a></li>
+  <li><a href="#h_01HAW6T3JHPVZJACQEM94518TD">App is Verified</a></li>
 </ul>
 <h3 id="h_01HAW6SCSSBWKGYSH77SM92GGV">App Is Owned By A Team</h3>
 <p>
@@ -191,7 +178,14 @@
     rel="noopener noreferrer"
     >Premium Apps SKU and Store Setup</a
   >
-  article.
+  article or visit the
+  <a
+    href="https://discord.com/developers/docs/monetization/overview"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Monetization Overview</a
+  >
+  in the Discord Developer Documentation.
 </p>
 <p>
   Keep in mind that you,

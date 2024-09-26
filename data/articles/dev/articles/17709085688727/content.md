@@ -13,13 +13,12 @@
   and in the Discord Developers server for future announcements.
 </p>
 <p>
-  Developers can monetize their apps with Premium Apps! Using Premium Apps, you
-  can offer premium features to users in the form of
-  <a
-    href="https://support-dev.discord.com/hc/en-us/articles/17709085688727#h_01HB8WP0GB5883T28K8SCJB02E"
-    >supported SKUs as described below</a
-  >. To monetize your application using Premium Apps, you’ll need to meet and
-  maintain compliance with a series of terms and
+  Developers can monetize their apps, specifically bots and activities, with
+  Premium Apps! Using Premium Apps, you can offer premium features to users in
+  the form of
+  <a href="#h_01HB8WP0GB5883T28K8SCJB02E">supported SKUs as described below</a>.
+  To monetize your app using Premium Apps, you’ll need to meet and maintain
+  compliance with a series of terms and
   <a
     href="https://support-dev.discord.com/hc/en-us/categories/360000656491"
     target="_blank"
@@ -30,11 +29,8 @@
 <p>Upgrading an app to premium consists of 3 main phases:</p>
 <ul>
   <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17709085688727#h_01HB8WP0GADB3NZ78DM0CVE9N4"
-      >Onboarding</a
-    >
-    - A series of requirements and automated checks in the
+    <a href="#h_01HB8WP0GADB3NZ78DM0CVE9N4">Onboarding</a> - A series of
+    requirements and automated checks in the
     <a
       href="https://discordapp.com/developers/"
       target="_blank"
@@ -43,19 +39,12 @@
     >
   </li>
   <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17709085688727#h_01HB8WP0GBE0P7X6P16ZVVRHBW"
-      >Integration</a
-    >
-    - Developers add a premium SKU to which users can subscribe
+    <a href="#h_01HB8WP0GBE0P7X6P16ZVVRHBW">Integration</a> - Developers add
+    premium SKUs to which users can subscribe
   </li>
   <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17709085688727#h_01HB8WP0GB6ZFV8TQ18SZ77K11"
-      >Payout</a
-    >
-    - After an app makes its first $100 and subsequent $25 increments on a
-    monthly basis
+    <a href="#h_01HB8WP0GB6ZFV8TQ18SZ77K11">Payout</a> - After an app makes its
+    first $100 and subsequent $25 increments on a monthly basis
   </li>
 </ul>
 <p>
@@ -138,22 +127,12 @@
   NOTE: Currently, an app can only publish 1 Subscription SKU at a time but as
   many OTP SKUs can be published, as desired.<!-- notionvc: 67f93f38-41ab-4ed5-bd4d-24272b606142 -->
 </p>
-<p>
-  These SKUs will then be featured on an App's Store page, more information
-  about the Premium App Store can be found in the
-  <a
-    href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW88K5RF2PGFJVKECHN6X2HP"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Premium Apps SKU and Store Setup</a
-  >
-  article.<!-- notionvc: 10212178-d364-4fa3-b9e6-7bb5a42cdb47 --><br /><!-- notionvc: e05e950c-bd59-4358-b0d9-4037a6f59f14 -->
-</p>
+<p><br /><!-- notionvc: e05e950c-bd59-4358-b0d9-4037a6f59f14 --></p>
 <h3 id="h_01HB8WP0GB5883T28K8SCJB02E">Types of SKUs</h3>
 <h4 id="h_01HW8T8M8GHYZJVDSSSXNP1229">
   <strong><span class="wysiwyg-underline">Subscriptions:</span></strong>
 </h4>
-<p>Personal Subscription</p>
+<p>User Subscription</p>
 <ul>
   <li>
     A recurring subscription that allows a user to purchase access to an app’s
@@ -190,16 +169,24 @@
 <p>
   Once an app has SKUs added within the Developer Portal, they can be accessed
   through the API and devs can code the subscription functionality into their
-  app.
+  app. These SKUs will then be featured on an App's Store page, more information
+  about the Premium App Store can be found in the
+  <a
+    href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW88K5RF2PGFJVKECHN6X2HP"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Premium Apps SKU and Store Setup</a
+  >
+  article.
 </p>
 <h3 id="h_01HB8WP0GBZGA9R5KP8QTJ2GWH">Monetization</h3>
 <p>
-  Once an app has a SKU set up and it has been integrated into the app’s code,
+  Once an app has a SKU set up, integrated into the app’s code, and published
   there are 4 ways users will be able to subscribe or purchase premium features:
 </p>
 <ul>
   <li>
-    Bot profiles will offer the Store button leading users to the App’s Store
+    Bot profiles will offer the Store button, leading users to the App’s Store
     page
   </li>
   <li>
@@ -228,13 +215,22 @@
 </h3>
 <p>
   Yes. You can continue using existing payment systems, such as Patreon or
-  Stripe integrations on external websites.
+  Stripe integrations on external websites. However, effective October 7, 2024,
+  developers who offer paid capabilities or other offerings for their apps are
+  required to support purchase of such items through Discord’s Premium App
+  monetization features at a price no higher than those offered through other
+  payment options. For more information about the Monetization Requirement
+  please visit the
+  <a
+    href="https://support-dev.discord.com/hc/en-us/articles/23810643331735-Premium-Apps-Required-Support-for-Monetizing-Apps"
+    >Premium Apps' Required Support for Monetizing Apps article</a
+  >.<!-- notionvc: ebb704be-3c34-4afa-948d-644ad8fbaa8b -->
 </p>
 <h2 id="h_01HB8WP0GB6ZFV8TQ18SZ77K11">Step 3 - Payout</h2>
 <p>
   Once an app has made its first $100 it will become eligible for payout. A
-  review will be conducted and if everything looks good, your team will be able
-  to receive payouts.
+  review will automatically be conducted and if everything looks good, your team
+  will be able to receive payouts.
 </p>
 <p>
   For more information please visit the

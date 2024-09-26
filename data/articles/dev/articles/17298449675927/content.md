@@ -29,42 +29,12 @@
 </p>
 <h2 id="h_01HW87RGTTFT2HX2VHY6FBXHW2">Table of Contents</h2>
 <ul>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW87Q57FFMRAJCJY20P40SRP"
-      >So What Is A SKU?</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HAWGE42AHRH5CNNZ5WQBSCDT"
-      >Types of SKUs</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HAWGE42AV48E0ACGK0YG046K"
-      >Creating SKUs</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW884JH97FEY71M9ZM93ZWYN"
-      >Managing SKUs</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW88K5RF2PGFJVKECHN6X2HP"
-      >Premium App Store View</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW890AK0WWNZ3WZWV5GN4T14"
-      >Analytics</a
-    >
-  </li>
+  <li><a href="#h_01HW87Q57FFMRAJCJY20P40SRP">So What Is A SKU?</a></li>
+  <li><a href="#h_01HAWGE42AHRH5CNNZ5WQBSCDT">Types of SKUs</a></li>
+  <li><a href="#h_01HAWGE42AV48E0ACGK0YG046K">Creating SKUs</a></li>
+  <li><a href="#h_01HW884JH97FEY71M9ZM93ZWYN">Managing SKUs</a></li>
+  <li><a href="#h_01HW88K5RF2PGFJVKECHN6X2HP">Premium App Store View</a></li>
+  <li><a href="#h_01HW890AK0WWNZ3WZWV5GN4T14">Analytics</a></li>
 </ul>
 <h2 id="h_01HW87Q57FFMRAJCJY20P40SRP">So What is a SKU?</h2>
 <p>
@@ -80,8 +50,8 @@
   >
     premium features can be thought of as "products"</span
   >
-  that an App offers. These “products” can be tracked through their own SKU and
-  managed in the Developer Portal of your application.
+  that an app or activity offers. These “products” can be tracked through their
+  own SKU and managed in the Developer Portal of your application.
   <!-- notionvc: add20b4b-66b4-42c0-9718-7893dd3a5582 -->
 </p>
 <h2 id="h_01HAWGE42AHRH5CNNZ5WQBSCDT">Types of SKUs</h2>
@@ -121,25 +91,20 @@
 </ul>
 <p>
   Now that you know what a SKU is and the different types of SKUs available, you
-  can start managing your premium features in the Developer Portal.
-  <span
-    class="discussion-id-33c9fdda-fbfb-41c9-b8bf-766208a461e2 notion-enable-hover"
-    data-token-index="1"
-    >Your app can currently feature one published Subscription SKU and as many
-    published OTP SKUs as desired. There is no limit to the unpublished SKUs you
-    can </span
-  ><span
-    class="discussion-id-896246fb-bf52-4afa-a72b-1a0018981713 discussion-id-33c9fdda-fbfb-41c9-b8bf-766208a461e2 notion-enable-hover"
-    data-token-index="2"
-    >create</span
-  ><span
-    class="discussion-id-33c9fdda-fbfb-41c9-b8bf-766208a461e2 notion-enable-hover"
-    data-token-index="3"
-  >
-    for your app.</span
-  ><!-- notionvc: aa315991-ec40-4bab-80bf-6270e22f3665 --><br /><!-- notionvc: 52b67843-03bf-4aaa-a3af-e110fab661d3 -->
+  can start managing your premium features in the Developer Portal. Your app can
+  currently feature one published Subscription SKU and as many published OTP
+  SKUs as desired. Note that you can create a maximum of 50 SKUs at this time.<!-- notionvc: 580314f9-36a2-4c62-9516-7fc16e61bbf8 -->
 </p>
-<h2 id="h_01HAWGE42AV48E0ACGK0YG046K">Creating SKUs</h2>
+<p>
+  <span
+    style="
+      font-size: 1.5em;
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >Creating SKUs</span
+  >
+</p>
 <p class="callout">
   ⚠️ As described more in our
   <a
@@ -167,7 +132,10 @@
     alt="dev_portal_create_SKU.png"
   />
 </p>
-<p>Several options can be customized for your app’s premium offering:</p>
+<p>
+  Several options can be customized for your app’s or activity's premium
+  offerings:
+</p>
 <ul>
   <li>A name for your premium SKU, max 80 characters.</li>
   <li>A description for your premium SKU, max 160 characters</li>
@@ -188,10 +156,10 @@
 </ul>
 <h2 id="h_01HW884JH97FEY71M9ZM93ZWYN">Managing SKUs</h2>
 <p>
-  When Managing SKUs from the Developer Portal, you will have options to
-  initially create SKUs but following that you will be able to publish/unpublish
-  and delete them as well. Below is a list of states a SKU can be in and actions
-  to take, once it is created:
+  When Managing SKUs from the Developer Portal, you will initially be able to
+  create SKUs but, once created, you will be able to publish, unpublish, and
+  delete them as well. Below is a list of states a SKU can be in and actions to
+  take, once it is created:
 </p>
 <h3 id="h_01HW8RFERKAB16K1RVBAT08GF8">Unavailable</h3>
 <p>
@@ -200,35 +168,50 @@
 <h3 id="h_01HW8RFERKT4WGECV9AFXEXS9E">Available</h3>
 <p>This state means a SKU can be purchased</p>
 <h3 id="h_01HW8RFERKSQQ114R2ZESVTZJ7">Publish</h3>
-<p>This action sets a SKU state to Available</p>
+<p>
+  This action sets a SKU state to Available. When publishing a SKU you will have
+  2 options. A`vailable via Store &amp; API` will be the choice if you are
+  setting up a Store. `Available via API only` will be better suited for
+  Activities. 
+</p>
 <h3 id="h_01HW8RFERKJC212C3JY3MZXDN2">Unpublish</h3>
 <p>
-  This action makes a SKU Unavailable. Note: it won’t cancel all subscribers
-  right away, but when they reach their renewel period, it will not renew them.
-  Does not delete a SKU.
+  This action makes a SKU Unavailable. Keep in mind that when you unpublish a
+  SKU, it won't cancel subscriptions right away, but subscriptions will not
+  renew if the end of the billing cycle is reached while a SKU is in the
+  Unavailable state. Once desired changes are made, you will want to republish
+  the SKU to avoid any lapse in billing cycles. Does not delete a SKU.
 </p>
 <h3 id="h_01HW8RFERKKYDVZGD3JWRHGV3S">Delete</h3>
 <p>
   Deletes a SKU in the UI, but keep in mind this doesn’t fully delete. Deleted
-  SKUs would still be listed from the endpoint. When deleting SKUs, keep in mind
-  that this will unsubscribe everyone from it. If you are having any trouble
-  removing SKUs, please
+  SKUs would still be listed from the
+  <a
+    href="https://discord.com/developers/docs/resources/entitlement#list-entitlements"
+    target="_blank"
+    rel="noopener noreferrer"
+    >List Entitlements</a
+  >
+  endpoint. Keep in mind that when you delete a SKU, it won't cancel
+  subscriptions right away, but subscriptions will not renew at the end of the
+  billing cycle. If you are having any trouble removing SKUs, please
   <a href="https://dis.gd/developer-support/premium-apps"
     >reach out to Developer Support</a
   >.
 </p>
 <h3 id="h_01HW884JH9DEREEPTV4E436DZT">Editing SKUs</h3>
 <p>
-  If you wish to change the SKU that is published, you can do so at any time by
-  first unpublishing the currently published one. Keep in mind that when you
-  unpublish a SKU, it is no longer available for sale, but users who have
-  already subscribed will remain subscribed and you must continue to make the
-  premium offering available to them until the end of their subscription.
+  If you wish to change a SKU that is published, you can do so at any time by
+  first unpublishing the desired SKU. Keep in mind that when you unpublish a
+  SKU, it won't cancel subscriptions right away, but subscriptions will not
+  renew if the end of the billing cycle is reached while a SKU is in the
+  Unavailable state. Once desired changes are made, you will want to republish
+  the SKU to avoid any lapse in billing cycles.
 </p>
 <h3 id="h_01HW884JH9SA7GR08SWGGB3ZJT">Integrating SKUs</h3>
 <p>
-  Once SKUs have been created, you can begin to integrate them into your App via
-  the API. Visit the
+  Once SKUs have been created, you can begin to integrate them into your app or
+  activity via the API. Visit the
   <a href="https://discord.com/developers/docs/monetization/overview"
     >Monetization overview</a
   >
@@ -259,18 +242,10 @@
   following steps:
 </p>
 <ul>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HAWGE42AV48E0ACGK0YG046K"
-      >Create a SKU</a
-    > 
-  </li>
+  <li><a href="#h_01HAWGE42AV48E0ACGK0YG046K">Create a SKU</a> </li>
   <li>Add a SKU icon, banner and benefits</li>
   <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW884JH9SA7GR08SWGGB3ZJT"
-      >Integrate the SKU into your app</a
-    >
+    <a href="#h_01HW884JH9SA7GR08SWGGB3ZJT">Integrate the SKU into your app</a>
   </li>
   <li>Publish a SKU to your Store</li>
 </ul>
@@ -306,6 +281,26 @@
 </p>
 <p><!-- notionvc: ceb12802-967f-477a-b64f-bd1336741d90 --></p>
 <p><!-- notionvc: 29b0863f-c452-49c7-8f35-3ed8827ce87a --></p>
+<h3 id="h_01J8K0SMTPS7VSHX5B3AX3XJJR">Deep Linking</h3>
+<p>
+  Once your SKUs and Store are all set up, they can be surfaced more easily to
+  Users with deep linking. Deep linking allows you to link directly to a SKU or
+  Store using our App Directory Store URL scheme. Visit the Managing SKUs
+  documentation to learn more about
+  <a
+    href="https://discord.com/developers/docs/monetization/managing-skus#linking-to-a-specific-sku"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Linking To A Specific SKU</a
+  >
+  or
+  <a
+    href="https://discord.com/developers/docs/monetization/managing-skus#linking-to-your-store"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Linking To Your Store</a
+  >.
+</p>
 <h2 id="h_01HW890AK0WWNZ3WZWV5GN4T14">Analytics</h2>
 <p class="callout">
   ⚠️ If you are not seeing SKU data populate, please ensure you have selected a
@@ -318,20 +313,22 @@
 </p>
 <h3 id="h_01HW890AK1K9EMD35TH5TJH06Z">Availability</h3>
 <p>
-  The available data can be considered up-to-date data as of 24 hours prior. Any
-  representation of subscription data will reflect that of the previous day,
-  based on system updates. This applies to user and revenue data, alike.
+  The available data can be considered up-to-date data as of 24 hours prior for
+  Subscriptions and 30 days prior for One-Time Purchases<!-- notionvc: d7a189ec-8b6b-4bd6-9f9c-a532cdaf6beb -->.
+  Any representation of subscription data will reflect that of the previous day
+  for Subscription data and the previous month for One-Time Purchase data, based
+  on system updates. This applies to user and revenue data, alike.
   <!-- notionvc: 560c9b19-7e12-4a21-bc61-d914a946daf4 -->
 </p>
 <h3 id="h_01HW890PB3ZBG7SJ4Z19GWA952">Accuracy</h3>
 <p>
-  If after reviewing the analytics, it appears the data is inaccurate and the 24
-  hour period has been taken into account, keep in mind that only subscribers
-  who have <code>Use data to improve Discord</code> enabled will be represented.
-  Users that do not have this setting enabled will not reflect in a Premium
-  App’s subscription analytics. However, this only applies to user data and does
-  not apply to revenue data. Any representation of revenue data will be accurate
-  based on the above mentioned availability period.
+  If after reviewing the analytics, it appears the data is inaccurate and the
+  aforementioned time periods have been taken into account, keep in mind that
+  only subscribers who have `Use data to improve Discord` enabled will be
+  represented. Users that do not have this setting enabled will not reflect in a
+  Premium App’s subscription analytics. However, this only applies to user data
+  and does not apply to revenue data. Any representation of revenue data will be
+  accurate based on the above mentioned availability period.
   <!-- notionvc: 54c2d93b-75e1-42a5-b98c-73abdcc3133c -->
 </p>
 <h3 id="h_01HW891E1BGHPKY7Z2ANJSZ1Y5">Exporting Data</h3>

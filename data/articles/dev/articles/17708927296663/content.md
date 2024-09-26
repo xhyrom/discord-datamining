@@ -1,6 +1,6 @@
 <p>
-  If you and your team own a verified app that uses slash commands, you will be
-  ready to get started with the onboarding process for
+  If your team owns a verified app or activity, you will be ready to get started
+  with the onboarding process for
   <a
     href="https://support-dev.discord.com/hc/en-us/articles/17709085688727"
     target="_blank"
@@ -55,7 +55,7 @@
     commands, or role connection metadata.
   </li>
   <li>
-    Payouts must be setup with a valid payment method
+    Payouts must be set up with a valid payment method
     <ul>
       <li>
         From the Developer Portal the Team → Payout Settings page can help you
@@ -108,7 +108,14 @@
     rel="noopener noreferrer"
     >Premium Apps SKU and Store Setup</a
   >
-  article.
+  article or visit the
+  <a
+    href="https://discord.com/developers/docs/monetization/overview"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Monetization Overview</a
+  >
+  in the Discord Developer Documentation.
 </p>
 <p>
   After reviewing this and other linked articles, if you have any questions
