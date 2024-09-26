@@ -12375,6 +12375,8 @@
   "USER_SETTINGS_PROFILE_COLOR_CUSTOM": "\"Custom\"",
   "USER_SETTINGS_PROFILE_COLOR_CUSTOM_BUTTON": "\"Use a custom profile color. Selected: {colorHex}\"",
   "USER_SETTINGS_PROFILE_COLOR_SELECT_COLOR": "\"Select custom color\"",
+  "USER_SETTINGS_PROFILE_COLOR_PRIMARY_BUTTON_A11Y_LABEL": "\"Primary color, selected: {colorHex}\"",
+  "USER_SETTINGS_PROFILE_COLOR_ACCENT_BUTTON_A11Y_LABEL": "\"Accent color, selected: {colorHex}\"",
   "USER_SETTINGS_CUSTOMIZATION_UPSELL": "\"Unlock with Nitro\"",
   "USER_SETTINGS_CUSTOMIZATION_UPGRADE_UPSELL": "\"Upgrade to Unlock\"",
   "USER_SETTINGS_AVATAR": "\"Avatar\"",
