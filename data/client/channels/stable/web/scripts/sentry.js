@@ -7632,7 +7632,7 @@
             GLOBAL_DISCOVERY: "/discovery",
             QUEST_HOME: "/discovery/quests",
             GLOBAL_DISCOVERY_SERVERS: "/discovery/servers",
-            GLOBAL_DISCOVERY_APPS: "/discovery/apps",
+            GLOBAL_DISCOVERY_APPS: "/discovery/applications",
             DISCOVERY_GUILD_GAME_RESULTS: (e) => "/discovery/game/".concat(e),
             GUILD_MEMBER_VERIFICATION: (e, t) =>
               "/member-verification/"
@@ -10766,6 +10766,12 @@
           (nf.MEDIA_INPUT_VOLUME_CHANGED = "media_input_volume_changed"),
           (nf.MEDIA_OUTPUT_VOLUME_CHANGED = "media_output_volume_changed"),
           (nf.VOICE_ACTIVATION_MODE_CHANGED = "voice_activation_mode_changed"),
+          (nf.GUILD_GAME_DISCOVERY_ENTRYPOINT_VIEWED =
+            "guild_game_discovery_entrypoint_viewed"),
+          (nf.GUILD_GAME_DISCOVERY_ENTRYPOINT_DEEP_LINK_TO_DESKTOP =
+            "guild_game_discovery_entrypoint_deep_link_to_desktop"),
+          (nf.GLOBAL_DISCOVERY_WITH_GAME_VIEWED =
+            "global_discovery_with_game_viewed"),
           ((nS = eW || (eW = {})).CANARY = "canary"),
           (nS.PTB = "ptb"),
           (nS.STABLE = "stable"),
@@ -12404,7 +12410,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-31ba8f0bc7d52ed77221c164dc8c9d058e3611ee",
+            release: "discord_web-e9b82edf835ced5bb5f8fbed32db1ce5fe5c99b3",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12473,8 +12479,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "330710"), "330710"));
-          i.YA("builtAt", String("1727365832912"));
+            i.YA("buildNumber", ((e = "331023"), "331023"));
+          i.YA("builtAt", String("1727393887025"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -13697,6 +13703,13 @@
               [n.LIGHT]: { raw: "TEAL_345", opacity: 1 },
               [n.MIDNIGHT]: { raw: "TEAL_400", opacity: 1 },
               [n.DARKER]: { raw: "TEAL_400", opacity: 1 },
+            },
+            CUSTOM_STATUS_BUBBLE_BG: {
+              category: "background",
+              [n.DARK]: { raw: "PRIMARY_800", opacity: 1 },
+              [n.LIGHT]: { raw: "WHITE", opacity: 1 },
+              [n.MIDNIGHT]: { raw: "PLUM_19", opacity: 1 },
+              [n.DARKER]: { raw: "PLUM_17", opacity: 1 },
             },
             DEPRECATED_CARD_BG: {
               category: "background",
@@ -19161,6 +19174,7 @@
           (n.CREATOR_REVENUE_LOCKED_CHANNEL_ICON =
             "creator-revenue-locked-channel-icon"),
           (n.CREATOR_REVENUE_PROGRESS_BAR = "creator-revenue-progress-bar"),
+          (n.CUSTOM_STATUS_BUBBLE_BG = "custom-status-bubble-bg"),
           (n.DEPRECATED_CARD_BG = "deprecated-card-bg"),
           (n.DEPRECATED_CARD_EDITABLE_BG = "deprecated-card-editable-bg"),
           (n.DEPRECATED_QUICKSWITCHER_INPUT_BACKGROUND =
@@ -20179,6 +20193,12 @@
               o.I.TEAL_345,
               o.I.TEAL_400,
               o.I.TEAL_400,
+            ],
+            "custom-status-bubble-bg": [
+              o.I.PRIMARY_800,
+              o.I.WHITE,
+              o.I.PLUM_19,
+              o.I.PLUM_17,
             ],
             "deprecated-card-bg": [
               o.I.PRIMARY_700,
@@ -48476,4 +48496,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.e453297a2d7849368d30.js.map
+//# sourceMappingURL=sentry.1f8bc185fc1b991e6ddc.js.map
