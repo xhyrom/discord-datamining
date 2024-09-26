@@ -5085,6 +5085,9 @@
   },
   "UPDATE_MY_LOL_LEADERBOARD": {
     "url": "/users/@me/update-league-of-legends-leaderboard",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
