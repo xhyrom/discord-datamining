@@ -18193,8 +18193,9 @@ div.cardContainer_c22357 {
   overflow: hidden;
 }
 span.clanTag_a31c43 {
-  margin-top: 2px;
+  margin-top: 1px;
   margin-left: 4px;
+  margin-bottom: 1px;
 }
 .container_a5ad5c {
   box-sizing: border-box;
@@ -55308,4 +55309,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.6080d9960e49ac1f8e13.css.map*/
+/*# sourceMappingURL=12633.a037ca4d64710de9abb7.css.map*/
