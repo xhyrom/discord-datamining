@@ -12410,7 +12410,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9224a2dda0a7726d973c8b4cc05ea31bfda864f5",
+            release: "discord_web-efb3a6881bd59efbc02b1621a172070fe9cd7b08",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12479,8 +12479,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "330783"), "330783"));
-          i.YA("builtAt", String("1727375685754"));
+            i.YA("buildNumber", ((e = "330789"), "330789"));
+          i.YA("builtAt", String("1727376344252"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -13703,6 +13703,13 @@
               [n.LIGHT]: { raw: "TEAL_345", opacity: 1 },
               [n.MIDNIGHT]: { raw: "TEAL_400", opacity: 1 },
               [n.DARKER]: { raw: "TEAL_400", opacity: 1 },
+            },
+            CUSTOM_STATUS_BUBBLE_BG: {
+              category: "background",
+              [n.DARK]: { raw: "PRIMARY_800", opacity: 1 },
+              [n.LIGHT]: { raw: "WHITE", opacity: 1 },
+              [n.MIDNIGHT]: { raw: "PLUM_19", opacity: 1 },
+              [n.DARKER]: { raw: "PLUM_17", opacity: 1 },
             },
             DEPRECATED_CARD_BG: {
               category: "background",
@@ -19167,6 +19174,7 @@
           (n.CREATOR_REVENUE_LOCKED_CHANNEL_ICON =
             "creator-revenue-locked-channel-icon"),
           (n.CREATOR_REVENUE_PROGRESS_BAR = "creator-revenue-progress-bar"),
+          (n.CUSTOM_STATUS_BUBBLE_BG = "custom-status-bubble-bg"),
           (n.DEPRECATED_CARD_BG = "deprecated-card-bg"),
           (n.DEPRECATED_CARD_EDITABLE_BG = "deprecated-card-editable-bg"),
           (n.DEPRECATED_QUICKSWITCHER_INPUT_BACKGROUND =
@@ -20185,6 +20193,12 @@
               o.I.TEAL_345,
               o.I.TEAL_400,
               o.I.TEAL_400,
+            ],
+            "custom-status-bubble-bg": [
+              o.I.PRIMARY_800,
+              o.I.WHITE,
+              o.I.PLUM_19,
+              o.I.PLUM_17,
             ],
             "deprecated-card-bg": [
               o.I.PRIMARY_700,
@@ -48482,4 +48496,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.7c1074a9afd09ebcdf27.js.map
+//# sourceMappingURL=sentry.60575b1794ef4f4815a9.js.map

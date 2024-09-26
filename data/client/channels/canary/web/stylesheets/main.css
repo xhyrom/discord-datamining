@@ -47009,6 +47009,7 @@ html.disable-forced-colors * {
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
+  --custom-status-bubble-bg: var(--primary-800);
   --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
   --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
   --deprecated-quickswitcher-input-background: var(--primary-400);
@@ -47643,6 +47644,11 @@ html.disable-forced-colors * {
     --creator-revenue-progress-bar: color-mix(
       in oklab,
       var(--teal-400) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --custom-status-bubble-bg: color-mix(
+      in oklab,
+      var(--primary-800) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --deprecated-card-bg: color-mix(
@@ -48746,6 +48752,7 @@ html.disable-forced-colors * {
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-400);
   --creator-revenue-progress-bar: var(--teal-345);
+  --custom-status-bubble-bg: var(--white);
   --deprecated-card-bg: var(--primary-100);
   --deprecated-card-editable-bg: hsl(var(--primary-100-hsl) / 0.6);
   --deprecated-quickswitcher-input-background: var(--white);
@@ -49382,6 +49389,11 @@ html.disable-forced-colors * {
     --creator-revenue-progress-bar: color-mix(
       in oklab,
       var(--teal-345) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --custom-status-bubble-bg: color-mix(
+      in oklab,
+      var(--white) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --deprecated-card-bg: color-mix(
@@ -50488,6 +50500,7 @@ html.disable-forced-colors * {
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
+  --custom-status-bubble-bg: var(--plum-19);
   --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
   --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
   --deprecated-quickswitcher-input-background: var(--primary-400);
@@ -51121,6 +51134,11 @@ html.disable-forced-colors * {
     --creator-revenue-progress-bar: color-mix(
       in oklab,
       var(--teal-400) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --custom-status-bubble-bg: color-mix(
+      in oklab,
+      var(--plum-19) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --deprecated-card-bg: color-mix(
@@ -52229,6 +52247,7 @@ html.disable-forced-colors * {
   --creator-revenue-info-box-border: var(--teal-400);
   --creator-revenue-locked-channel-icon: var(--teal-345);
   --creator-revenue-progress-bar: var(--teal-400);
+  --custom-status-bubble-bg: var(--plum-17);
   --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
   --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
   --deprecated-quickswitcher-input-background: var(--primary-400);
@@ -52862,6 +52881,11 @@ html.disable-forced-colors * {
     --creator-revenue-progress-bar: color-mix(
       in oklab,
       var(--teal-400) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --custom-status-bubble-bg: color-mix(
+      in oklab,
+      var(--plum-17) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --deprecated-card-bg: color-mix(
@@ -55284,4 +55308,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.d5e80688fe86e20bca65.css.map*/
+/*# sourceMappingURL=12633.6080d9960e49ac1f8e13.css.map*/
