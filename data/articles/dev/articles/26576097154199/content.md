@@ -31,7 +31,9 @@
 <h2 id="h_01J8JESC988BHFTRZQC7WCCVBF">Verified Activities</h2>
 <p>These Activities are:</p>
 <ul>
-  <li>Visible to everyone on Discord</li>
+  <li>
+    Visible to everyone on Discord (There is no longer a server member limit.)
+  </li>
   <li>Allowed to enable discovery through Discord Discovery Surfaces</li>
   <li>Playable in any server, regardless of size</li>
   <li>
