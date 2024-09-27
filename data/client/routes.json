@@ -1525,6 +1525,10 @@
       "OPTIONS"
     ]
   },
+  "CONNECTIONS_SESSION_HANDOFF": {
+    "url": "/connections/:param/callback/session-handoff",
+    "allowed_methods": null
+  },
   "CONNECTIONS_CALLBACK": {
     "url": "/connections/:param/callback",
     "allowed_methods": [
