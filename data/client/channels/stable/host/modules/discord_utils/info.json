@@ -3,14 +3,14 @@
     "host_version": "1.0.9059",
     "module_version": 1,
     "package_sha256": "817223797258d9da62e04f1cf4812da61150c4094e8f878da5cca102fc811f8b",
-    "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x86/1.0.9059/discord_utils/1/full.distro"
+    "url": "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9059/discord_utils/1/full.distro"
   },
   "deltas": [
     {
       "host_version": "1.0.9058",
       "module_version": 1,
       "package_sha256": "93a8250a5161406f43e4fb73984e23cab307d8dd82cf3457a4329ee3d0ccc713",
-      "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x86/1.0.9059/discord_utils/1/from/1.0.9058/1"
+      "url": "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9059/discord_utils/1/from/1.0.9058/1"
     }
   ]
 }
