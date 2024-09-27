@@ -6,12 +6,12 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Golive Simulcast without prober 480p@500k",
-      "Treatment 2: Golive Simulcast 480p@500k",
+      "Treatment 1: Golive Simulcast without prober 720p@500k",
+      "Treatment 2: Golive Simulcast 720p@500k",
       "Treatment 3: Golive with pacing",
       "Treatment 4: Golive with pacing and probing",
-      "Treatment 5: Golive Simulcast 480p@750k",
-      "Treatment 6: Golive Simulcast 480p@1000k"
+      "Treatment 5: Golive Simulcast 720p@750k",
+      "Treatment 6: Golive Simulcast 720p@1000k"
     ],
     "hash": 175769529,
     "buckets": [
