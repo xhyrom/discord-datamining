@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_voice_channel_blocked_user_warning",
+    "label": "Voice Channel Blocked User Warning",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show blocked user warning in voice channel as a modal"
+    ],
+    "hash": 171890070,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
