@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_connection_flow_refactor",
+    "label": "Connection Flow Refactor",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Disabled",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 2545166978,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
