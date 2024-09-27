@@ -29885,6 +29885,8 @@ div.popoutCloseButton_d523a2:hover {
   width: -moz-fit-content;
   width: fit-content;
   height: 40px;
+  box-shadow: var(--shadow-high);
+  border-radius: 32px;
 }
 .toastPadding_f3571f {
   padding: 10px 16px;
@@ -55440,4 +55442,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.9abad78a13bb2454864e.css.map*/
+/*# sourceMappingURL=12633.93cc1eeaa982946a623e.css.map*/
