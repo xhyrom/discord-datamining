@@ -9863,10 +9863,15 @@
             "experiment_user_triggered_fallback"),
           (nf.EXPERIMENT_GUILD_TRIGGERED_FALLBACK =
             "experiment_guild_triggered_fallback"),
+          (nf.EXPERIMENT_USER_TRIGGERED_IGNORED =
+            "experiment_user_triggered_ignored"),
+          (nf.EXPERIMENT_GUILD_TRIGGERED_IGNORED =
+            "experiment_guild_triggered_ignored"),
           (nf.EXPERIMENT_DM_TRIGGERED = "experiment_dm_triggered"),
           (nf.EXPERIMENT_CUSTOM_EVENT = "experiment_custom_event"),
           (nf.EXPERIMENT_SAVE_EXPOSURE_FAILED =
             "experiment_save_exposure_failed"),
+          (nf.EXPERIMENT_FETCH_IGNORED = "experiment_fetch_ignored"),
           (nf.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED =
             "guild_insights_settings_cta_clicked"),
           (nf.GUILD_SETTINGS_DISCOVERY_VIEWED =
@@ -12410,7 +12415,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2f3184b2a16c5e99900ce6626eedc79691ac1cd4",
+            release: "discord_web-4bcdea99db08cfb137f75e81cc9a447115acdf92",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12479,8 +12484,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "331026"), "331026"));
-          i.YA("builtAt", String("1727394245705"));
+            i.YA("buildNumber", ((e = "331074"), "331074"));
+          i.YA("builtAt", String("1727397676571"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48496,4 +48501,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.4af8f8fe2c005b41d7fa.js.map
+//# sourceMappingURL=sentry.05a3aff19babff43091b.js.map
