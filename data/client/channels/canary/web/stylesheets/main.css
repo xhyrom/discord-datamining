@@ -19568,6 +19568,183 @@ span.clanTag_a31c43 {
   color: var(--text-positive);
   text-indent: 0;
 }
+.menuIcon_cdae90 {
+  cursor: pointer;
+  color: var(--interactive-normal);
+  height: 16px;
+}
+.menuIcon_cdae90:hover {
+  color: var(--interactive-active);
+}
+.container_bc01cf {
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: #1f1a36;
+}
+.title_bc01cf {
+  color: var(--content-inventory-overlay-text-secondary);
+  flex: 1;
+}
+.timestamp_c5d1c1 {
+  font-family: var(--font-code);
+}
+.timestamp_c5d1c1.bold_c5d1c1 {
+  font-weight: 700;
+}
+.inlineTimestamp_c5d1c1 {
+  display: inline;
+}
+.badgeContainer_d60c6d {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.badgeContainer_d60c6d svg {
+  flex-shrink: 0;
+}
+.badgeContainer_d60c6d div {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.badgeLabel_d60c6d {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:where(.badgesContainer_d60c6d) {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+:where(.badgesContainer_d60c6d):empty {
+  display: none;
+}
+.badgesContainerCard_d60c6d > :nth-child(n + 3) {
+  display: none;
+}
+.badgesContainerCard_d60c6d > :nth-child(2) {
+  flex-shrink: 1;
+}
+.badgesContainerPopout_d60c6d,
+.badgesContainerGameProfile_d60c6d {
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+.container_d270e1 {
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #14251d;
+}
+.userContainer_d270e1 {
+  display: flex;
+  align-items: center;
+}
+.userName_d270e1 {
+  color: var(--content-inventory-overlay-text-primary);
+}
+.userNameContainer_d270e1 {
+  display: flex;
+  align-items: center;
+}
+.userSubtitle_d270e1 {
+  color: var(--content-inventory-overlay-text-secondary);
+}
+.container_cf8a7d {
+  border-radius: 8px;
+  background-color: #091f0f;
+}
+.table_cf8a7d {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  padding-top: 8px;
+}
+.headerRow_cf8a7d {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.headerRank_cf8a7d,
+.headerPlayer_cf8a7d,
+.headerValue_cf8a7d {
+  color: var(--content-inventory-overlay-text-secondary);
+}
+.headerRank_cf8a7d {
+  width: 8px;
+  text-align: right;
+}
+.headerPlayer_cf8a7d {
+  flex: 1;
+}
+.userRow_cf8a7d {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.userRank_cf8a7d {
+  color: var(--text-muted);
+  width: 8px;
+  text-align: right;
+}
+.userPlayer_cf8a7d {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.popout_b245a4 {
+  background-color: var(--bg-surface-overlay);
+  border-radius: 8px;
+  width: 342px;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-high);
+}
+.content_b245a4 {
+  padding: 16px;
+}
+.leaderboardName_b245a4 {
+  color: var(--content-inventory-overlay-text-primary);
+  display: inline;
+}
+.leaderboardTitle_b245a4 {
+  color: var(--content-inventory-overlay-text-secondary);
+  flex: 1;
+}
+.header_b245a4 {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.previousChampion_b245a4 {
+  margin-top: 8px;
+}
+.exitPreviewModeText_b245a4 {
+  color: var(--content-inventory-overlay-text-secondary);
+}
+.exitPreviewModeButton_b245a4 {
+  padding: 13px 0;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+  cursor: pointer;
+}
+.badge_e8c4b6 {
+  display: inline-block;
+  margin-left: 0.25rem;
+  vertical-align: top;
+  position: relative;
+  top: 1px;
+  height: calc(4px + 1rem);
+  width: calc(4px + 1rem);
+  cursor: pointer;
+}
 .badge_ba89c1 {
   display: inline-block;
   overflow: hidden;
@@ -21167,54 +21344,6 @@ span.clanTag_a31c43 {
   display: flex;
   cursor: pointer;
   margin-right: 4px;
-}
-.timestamp_c5d1c1 {
-  font-family: var(--font-code);
-}
-.timestamp_c5d1c1.bold_c5d1c1 {
-  font-weight: 700;
-}
-.inlineTimestamp_c5d1c1 {
-  display: inline;
-}
-.badgeContainer_d60c6d {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.badgeContainer_d60c6d svg {
-  flex-shrink: 0;
-}
-.badgeContainer_d60c6d div {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.badgeLabel_d60c6d {
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-:where(.badgesContainer_d60c6d) {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-:where(.badgesContainer_d60c6d):empty {
-  display: none;
-}
-.badgesContainerCard_d60c6d > :nth-child(n + 3) {
-  display: none;
-}
-.badgesContainerCard_d60c6d > :nth-child(2) {
-  flex-shrink: 1;
-}
-.badgesContainerPopout_d60c6d,
-.badgesContainerGameProfile_d60c6d {
-  flex-wrap: wrap;
-  row-gap: 4px;
 }
 .nameTag_cd0810 {
   display: flex;
@@ -55309,4 +55438,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.55efb6d0047271a90ef1.css.map*/
+/*# sourceMappingURL=12633.a54f18e188acf3ecf603.css.map*/
