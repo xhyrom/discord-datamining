@@ -19013,5 +19013,6 @@
   "LEADERBOARD_YESTERDAYS_CHAMPION": "\"Yesterday's Champion\"",
   "LEADERBOARD_LAST_CHAMPION": "\"Last Champion\"",
   "LEADERBOARD_CURRENT_CHAMPION": "\"Current Champion\"",
-  "LEADERBOARD_LOL_SUMMONERS_RIFT": "\"Summoner's Rift\""
+  "LEADERBOARD_LOL_SUMMONERS_RIFT": "\"Summoner's Rift\"",
+  "LEADERBOARD_POPOUT_PREVIEW_SHOW_FULL_LEADERBOARD": "\"View Full Leaderboard\""
 }
