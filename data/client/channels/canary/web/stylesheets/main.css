@@ -10324,10 +10324,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .downloadApps_f82819 {
   border-radius: 5px;
-  justify-content: center;
   display: flex;
-  min-width: 880px;
-  min-height: 387px;
+  width: 90%;
   flex-direction: column;
   padding: 32px;
 }
@@ -10341,7 +10339,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   justify-content: center;
   flex-wrap: wrap;
   display: flex;
-  margin: 10px;
+  overflow: auto;
 }
 .header_f82819 {
   align-items: center;
@@ -10370,6 +10368,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .platforms_f82819 {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 .platform_f82819 {
   backface-visibility: hidden;
@@ -10380,7 +10382,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   flex-direction: column;
   flex-shrink: 0;
   border-radius: 8px;
-  margin-left: 15px;
   height: 260px;
   width: 196px;
   box-sizing: border-box;
@@ -10487,10 +10488,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 @media (max-width: 486px) {
   .downloadApps_f82819 {
-    display: block;
-    justify-content: normal;
-    min-width: 100%;
     width: 100%;
+    display: flex;
+    direction: column;
+    justify-content: center;
     padding: 32px 0 0;
   }
   .platform_f82819 {
@@ -10500,6 +10501,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   .platforms_f82819 {
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
   .platformsWrap_f82819 {
     align-items: center;
@@ -55438,4 +55440,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.a54f18e188acf3ecf603.css.map*/
+/*# sourceMappingURL=12633.9abad78a13bb2454864e.css.map*/
