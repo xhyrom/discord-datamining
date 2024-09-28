@@ -36,6 +36,7 @@ export enum ArticleType {
   Normal = "normal",
   Dev = "dev",
   Creator = "creator",
+  Apps = "apps",
 }
 
 export interface Article {
@@ -90,6 +91,8 @@ export class Articles implements Module {
         return "https://support-dev.discord.com";
       case ArticleType.Creator:
         return "https://creator-support.discord.com";
+      case ArticleType.Apps:
+        return "https://support-apps.discord.com";
     }
   }
 
@@ -101,6 +104,8 @@ export class Articles implements Module {
         return "Dev";
       case ArticleType.Creator:
         return "Creator";
+      case ArticleType.Apps:
+        return "Apps";
     }
   }
 

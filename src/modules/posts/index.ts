@@ -43,6 +43,7 @@ export class Posts implements Module {
     await new Articles(ArticleType.Normal).run();
     await new Articles(ArticleType.Dev).run();
     await new Articles(ArticleType.Creator).run();
+    await new Articles(ArticleType.Apps).run();
   }
 
   static async diff<
