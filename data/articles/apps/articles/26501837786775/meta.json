@@ -1,0 +1,30 @@
+{
+  "id": 26501837786775,
+  "url": "https://discordappssupport.zendesk.com/api/v2/help_center/en-us/articles/26501837786775.json",
+  "html_url": "https://support-apps.discord.com/hc/en-us/articles/26501837786775-Slash-Commands-FAQ",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 26498345822615,
+  "created_at": "2024-09-20T03:53:06Z",
+  "name": "Slash Commands FAQ",
+  "title": "Slash Commands FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-09-24T00:24:00Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": [
+    "apps",
+    "app",
+    "bot",
+    "app command",
+    "bots",
+    "slash commands"
+  ]
+}
