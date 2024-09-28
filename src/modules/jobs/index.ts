@@ -115,7 +115,7 @@ export class Jobs implements Module {
           "updated_at",
         ]),
       ),
-      `https://github.com/xhyrom/discord-datamining/commit/${result.update.hash}`,
+      `https://github.com/xhyrom/discord-datamining/commit/${result.update.hash.to}`,
     );
   }
 
