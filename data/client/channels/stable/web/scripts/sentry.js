@@ -6017,8 +6017,6 @@
           (rI.ACTIVATE_SERVER_SUBSCRIPTION = "ACTIVATE_SERVER_SUBSCRIPTION"),
           (rI.AUTOMOD_QUARANTINED_USER_PROFILE =
             "AUTOMOD_QUARANTINED_USER_PROFILE"),
-          (rI.GUILD_ONBOARDING_UPSELL_NAGBAR =
-            "GUILD_ONBOARDING_UPSELL_NAGBAR"),
           (rI.POMELO_ELIGIBLE = "POMELO_ELIGIBLE"),
           (rI.GUILD_RAID_NOTIFICATION = "GUILD_RAID_NOTIFICATION"),
           (rI.SAFETY_USER_SENTIMENT_NAGBAR = "SAFETY_USER_SENTIMENT_NAGBAR"),
@@ -6654,6 +6652,8 @@
             CONNECTIONS: "/users/@me/connections",
             CONNECTIONS_AUTHORIZE: (e) =>
               "/connections/".concat(e, "/authorize"),
+            CONNECTIONS_SESSION_HANDOFF: (e) =>
+              "/connections/".concat(e, "/callback/session-handoff"),
             CONNECTIONS_CALLBACK: (e) => "/connections/".concat(e, "/callback"),
             CONNECTION: (e, t) =>
               "/users/@me/connections/".concat(e, "/").concat(t),
@@ -12415,7 +12415,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-fddab3e36b38117512b4d612365af827c49e9868",
+            release: "discord_web-18862975fdf6abf37b7d3d401e808f9c4cf583b2",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12484,8 +12484,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "331146"), "331146"));
-          i.YA("builtAt", String("1727450041925"));
+            i.YA("buildNumber", ((e = "331573"), "331573"));
+          i.YA("builtAt", String("1727712581000"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48501,4 +48501,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.4aa65d81f09c738c28ce.js.map
+//# sourceMappingURL=sentry.1633e3497ca58ffff444.js.map
