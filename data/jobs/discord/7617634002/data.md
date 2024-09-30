@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7617634002](https://discord.com/jobs/7617634002)
 
-**Updated At:** Mon, 30 Sep 2024 20:52:48 GMT
+**Updated At:** Mon, 30 Sep 2024 21:29:26 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a passionate and experienced senior financial analyst to join our growing Finance team. The Corporate Finance team is responsible for various functions - including planning, forecasting, reporting, capital markets activities, financial systems, and partnership with our Total Rewards team on compensation planning and forecasting. Reporting to our Head of Corporate Finance, you will play a key role on our Corporate Finance team while partnering across the finance team, the accounting team, and the company. This role will be responsible for some of our key company-facing processes, including -&amp;nbsp; partnership with our Total Rewards team, ownership of our financial planning tool, and ownership of internal reporting processes. In this role, you will gain invaluable experience that offers autonomy, interactions with business partners, and the opportunity to impact a rapidly growing business.
