@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7523950002](https://discord.com/jobs/7523950002)
 
-**Updated At:** Mon, 23 Sep 2024 18:55:29 GMT
+**Updated At:** Mon, 30 Sep 2024 21:14:15 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.We are looking for an Ad Operations Manager to join as an early member of our sales and client success organization of the new Game Advertising and Marketing Solution business line at Discord. The ideal candidate for this role will be well grounded in the digital ad industry – campaign operations, ad technology, measurement, and analysis – at the same time seeking an opportunity to be part of our efforts to invent entirely new formats, technologies, and methodologies. Candidates who are experience and passionate about the gaming industry will be especially well-positioned to ensure success of our game developers and publishers.&amp;nbsp;

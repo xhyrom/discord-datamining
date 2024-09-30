@@ -1,24 +1,23 @@
 # Job Listing
 
-## Staff Software Engineer, Machine Learning, Ads (Quests)
+## Staff Software Engineer, Machine Learning (Engagement ML)
 
 **Location:** San Francisco, CA (or Remote)
 
-**Id:** 7626256002 <br/>
-**Internal Job Id:** 5870692002 <br/>
-**Requisition Id:** 7005-P4-2215-MLE <br/>
+**Id:** 7481047002 <br/>
+**Internal Job Id:** 5932297002 <br/>
+**Requisition Id:** R-100553 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/7626256002](https://discord.com/jobs/7626256002)
+**Discord Jobs:** [https://discord.com/jobs/7481047002](https://discord.com/jobs/7481047002)
 
-**Updated At:** Wed, 25 Sep 2024 06:13:47 GMT
+**Updated At:** Mon, 30 Sep 2024 20:52:48 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
 We are working on applying Machine Learning across Discord to unlock high impactful and new possibilities within areas such as user engagement, user growth, user understanding and personalization.
 The effort to build ML driven user experiences is just getting started, and if you are someone who is passionate about building things from scratch, this could be a great opportunity for you!
 What You'll Be Doing
 
-Serve as the technical leader for ML components of Discord's new Ads product, Quests.
 Build and iterate on new ML-driven products to foster creativity, discovery and engagement on Discord.
 Use your technical expertise to design and build robust, high-scale, low latency content and user recommendation systems that power product features used by millions of users every day.
 Work with XFN partner teams to create ML-driven roadmaps and systems and make the appropriate trade-off decision on development velocity vs system complexity during each development phase of the products.
@@ -26,8 +25,7 @@ Work with XFN partner teams to create ML-driven roadmaps and systems and make th
 What You Should Have:
 
 8+ years of experience as a Machine Learning Engineer or Data Scientist.
-4+ years of experience in Ads ranking, personalization, optimization, user profiling, or related Ads ML areas.
-Experience building low latency and complex machine learning systems at scale and have driven execution from ideation to production implementation. You can take a high-level goal and achieve a shippable solution.
+Extensive experience building low latency and complex machine learning systems at scale and have driven execution from ideation to production implementation. You can take a high-level goal and achieve a shippable solution.
 Strong product sense, and you’re passionate about applications that are driven by user feedback and end user experiences.
 Experience communicating updates and resolutions to customers and other partners to lead large and complex technical projects cross-functionally.
 The ability to thrive in ambiguous environments, and are excited about figuring out solutions to complex problems.
@@ -47,5 +45,5 @@ education_optional
 - Data Science & Engineering
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     
