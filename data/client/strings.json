@@ -6590,6 +6590,8 @@
   "PREMIUM_UPSELL_PROFILE_TRY_IT_OUT_TITLE": "\"Transform your profile\"",
   "PREMIUM_UPSELL_PROFILE_TRY_IT_OUT_DESCRIPTION": "\"See what your profile could look like with Nitro.\"",
   "PREMIUM_UPSELL_PROFILE_TRY_IT_OUT_UPSELL": "\"Level up your look, only with [Nitro](onClick)\"",
+  "PREMIUM_UPSELL_PROFILE_TRY_IT_OUT_MODAL_UPSELL_TITLE": "\"Snazz up your profile with Nitro\"",
+  "PREMIUM_UPSELL_PROFILE_TRY_IT_OUT_MODAL_UPSELL_DESCRIPTION": "\"Access custom profiles, emoji upgrades, and more with Nitro.\"",
   "PREMIUM_UPSELL_PROFILE_ANIMATED_AVATAR_INLINE_UPSELL": "\"Animate your avatar with [Nitro](onClick)\"",
   "PREMIUM_UPSELL_PROFILE_ANIMATED_AVATAR_MODAL_UPSELL_TITLE": "\"Bring your profile to life with animated avatars\"",
   "PREMIUM_UPSELL_PROFILE_ANIMATED_AVATAR_MODAL_UPSELL_DESCRIPTION": "\"Access custom profiles, emoji upgrades, and more with Nitro.\"",
