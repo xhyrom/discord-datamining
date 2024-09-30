@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_user_app_install_education",
+    "label": "User App Install Education Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show animation on app launcher icon + tooltip when a user app is authorized when in a channel instead of showing auth success modal",
+      "Treatment 2: show animation on app launcher icon when a user app is authorized when in a channel instead of showing auth success modal"
+    ],
+    "hash": 2283061372,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "showsTooltip"
+    ]
+  }
+}
