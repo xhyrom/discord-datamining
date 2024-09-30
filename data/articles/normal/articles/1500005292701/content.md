@@ -17,190 +17,186 @@
   </li>
 </ul>
 <h1 id="h_01H4RH0TQ9QG1NWKD08MVCTS4K">
-  <strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Why is a Server Labeled As Age-Restricted?</span
-    ></strong
-  >
+  <strong>Why is a Server Labeled As Age-Restricted?</strong>
 </h1>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color="">Our </span
-  ><a
+  Our
+  <a
     href="https://discord.com/guidelines"
     target="_blank"
     rel="noopener noreferrer"
     >Community Guidelines</a
-  ><span style="color: #2e3338" data-darkreader-inline-color="">
-    require that all adult content posted to Discord be kept behind an
-    age-restricted gate.
-  </span>
+  >
+  require that all adult content posted to Discord be kept behind an
+  age-restricted gate.
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Server owners can designate </span
-  ><a
+  Server owners can designate
+  <a
     href="https://support.discord.com/hc/en-us/articles/115000084051"
     target="_blank"
     rel="noopener noreferrer"
-    >specific channels as being 18+</a
-  ><span style="color: #2e3338" data-darkreader-inline-color="">
-    by adding an age-restricted gate. Entire servers can now be classified as
-    18+ through the use of an </span
-  ><a
+    >specific channels as being 18+ by adding an age-restricted gate</a
+  >. Entire servers can now be classified as 18+ through the use of an
+  <a
     href="https://support.discord.com/hc/en-us/articles/1500005389362"
     target="_blank"
     rel="noopener noreferrer"
     >age-restricted server designation</a
-  ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
+  >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Servers must be classified as age-restricted if the community is organized
-    around age-restricted themes or if the majority of the server’s content is
-    focused on 18+ content.</span
-  >
+  Servers must be classified as age-restricted if the community is organized
+  around age-restricted themes or if the majority of the server’s content is
+  focused on 18+ content.
 </p>
 <h2 id="h_01H4RH13HQJNMSFPDA9KGDVJB5">
   <strong
-    ><span style="color: #ae6607" data-darkreader-inline-color=""
-      >I can’t view or join Age-Restricted servers. What should I do?</span
-    ></strong
+    >I can’t view or join Age-Restricted servers. What should I do?</strong
   >
 </h2>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If you are between the ages of <strong>13</strong> and <strong>17</strong>,
-    you will not be able to join or view the content in age-restricted servers. </span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
-    >For people aged<strong> 18 and older</strong>, age-restricted servers can
-    only be joined on desktop or Android devices.
-  </span>
+  If you are between the ages of <strong>13</strong> and <strong>17</strong>,
+  you will not be able to join or view the content in age-restricted servers.
+  For people aged<strong> 18 and older</strong>, age-restricted servers can only
+  be joined on desktop or Android devices.
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Those with iOS devices are required to "opt-in on desktop" in order to view
-    age-restricted servers from their iOS device.</span
-  >
+  Those with iOS devices are required to "opt-in on desktop" in order to view
+  age-restricted servers from their iOS device.
 </p>
 <p>
-  <strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >How to opt in for iOS:</span
-    ></strong
-  >
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >1.
-    <span
-      id="docs-internal-guid-4fc6651a-7fff-4c6d-6405-c19b8ebe6b2a"
-      style="color: #2e3338"
-      >Sign in to Discord on desktop and navigate to your </span
-    ><strong>User Settings</strong>. You can find your User Settings by
-    selecting the <strong>cogwheel</strong> [<img
-      src="https://support.discord.com/hc/article_attachments/20361142823319"
-      width="20"
-      height="20" />]  icon in the bottom left corner of the app.<br
-  /></span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >2. In the User Settings menu,
-    <span
-      id="docs-internal-guid-442403a2-7fff-8fa3-c3be-2e5842316ef8"
-      style="color: #2e3338"
-      >select </span
-    ><strong>Privacy &amp; Safety</strong>.<br
-  /></span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >3.
-    <span
-      id="docs-internal-guid-12f9b902-7fff-be0c-2401-93448b02a384"
-      style="color: #2e3338"
-      >Enable </span
-    ><strong>Allow access to age-restricted content on iOS</strong> by pressing
-    the toggle. This will let you view age-restricted servers you are already a
-    member of from your iOS device.<br
-  /></span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Additionally, a subset of age-restricted servers that are specifically
-    focused on explicit pornographic content will be blocked entirely on
-    iOS. </span
-  >
-</p>
-<ul>
-  <li>
-    <span style="color: #2e3338" data-darkreader-inline-color=""
-      >iOS users aged 18+ will only be able to join and access these dedicated
-      pornography servers on the desktop and web versions of Discord.</span
-    >
-  </li>
-</ul>
-<div class="info-box">
-  Note: Only age-restricted server owners and moderators will be allowed to view
-  and manage this specific subset of age-restricted servers on iOS.
-</div>
-<h2 id="h_01H4RH1GSQF4689C1VVX9CGHGV">
-  <strong
-    ><span style="color: #ae6607" data-darkreader-inline-color=""
-      >How do I update my age information?</span
-    ></strong
-  >
-</h2>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If you are over the age of 18 and have been locked out of an age-restricted
-    server, you can appeal by following the instructions below: </span
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>How to opt in for iOS:</strong></span
   >
 </p>
 <p>
   1.
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Take a photo of yourself holding the following items. Your face and all of
-    the required information needs to be visible and readable in ONE
-    photo.</span
+  <span
+    id="docs-internal-guid-4fc6651a-7fff-4c6d-6405-c19b8ebe6b2a"
+    style="color: #2e3338"
+    >Sign in to Discord on desktop and navigate to your
+    <strong>User Settings</strong>.
+  </span>
+</p>
+<ul>
+  <li>
+    <span
+      id="docs-internal-guid-4fc6651a-7fff-4c6d-6405-c19b8ebe6b2a"
+      style="color: #2e3338"
+      >You can find your User Settings by selecting the
+      <strong>cogwheel</strong> [<img
+        src="https://support.discord.com/hc/article_attachments/20361142823319"
+        width="20"
+        height="20" />]  icon in the bottom left corner of the app.<br
+    /></span>
+  </li>
+</ul>
+<p>
+  2. In the User Settings menu,
+  <span
+    id="docs-internal-guid-442403a2-7fff-8fa3-c3be-2e5842316ef8"
+    style="color: #2e3338"
+    >select <strong>Privacy &amp; Safety</strong>.<br
+  /></span>
+</p>
+<p>
+  3.
+  <span
+    id="docs-internal-guid-12f9b902-7fff-be0c-2401-93448b02a384"
+    style="color: #2e3338"
+    >Enable <strong>Allow access to age-restricted content on iOS</strong> by
+    pressing the toggle. This will let you view age-restricted servers you are
+    already a member of from your iOS device.<br
+  /></span>
+</p>
+<p>
+  Additionally, a subset of age-restricted servers that are specifically focused
+  on explicit pornographic content will be blocked entirely on iOS. 
+</p>
+<ul>
+  <li>
+    iOS users aged 18+ will only be able to join and access these dedicated
+    pornography servers on the desktop and web versions of Discord.
+  </li>
+</ul>
+<div class="info-box">
+  <strong>Note</strong>: Only age-restricted server owners and moderators will
+  be allowed to view and manage this specific subset of age-restricted servers
+  on iOS.
+</div>
+<h2 id="h_01H4RH1GSQF4689C1VVX9CGHGV">
+  <strong>How do I update my age information?</strong>
+</h2>
+<p>
+  If you are over the age of 18 and have been locked out of an age-restricted
+  server, you can appeal by following the instructions below: 
+</p>
+<p>
+  <strong
+    >1. Take a photo of yourself holding the following items. Your face and all
+    of the required information needs to be visible and readable in ONE
+    photo.</strong
+  >
+</p>
+<ul>
+  <li>A photo ID that contains your date of birth, clearly readable</li>
+  <li>A piece of paper that shows your full Discord Username</li>
+</ul>
+<p>
+  <strong>2. </strong
+  ><span
+    id="docs-internal-guid-b22bf1ed-7fff-4c86-d660-2effc6a4bc86"
+    style="color: #2e3338"
+    ><strong
+      >Once you have taken the photo, submit a request to the Trust &amp; Safety
+      team
+      <a href="https://dis.gd/request"
+        ><span class="wysiwyg-underline" style="color: #1155cc">here</span></a
+      >.</strong
+    >
+  </span>
+</p>
+<ul>
+  <li>
+    <span
+      id="docs-internal-guid-b22bf1ed-7fff-4c86-d660-2effc6a4bc86"
+      style="color: #2e3338"
+      >Under <strong>What can we help you with?</strong>, select the
+      <strong>Appeals, age update, other questions</strong> option.
+    </span>
+  </li>
+</ul>
+<p>
+  <strong
+    ><span style="color: #2e3338"
+      >Please keep in mind the following information when submitting your
+      request: </span
+    ></strong
   >
 </p>
 <ul>
   <li>
-    <span style="color: #2e3338" data-darkreader-inline-color=""
-      >A photo ID that contains your date of birth, clearly readable</span
-    >
-  </li>
-  <li>
-    <span style="color: #2e3338" data-darkreader-inline-color=""
-      >A piece of paper that shows your full Discord Username</span
-    >
-  </li>
-</ul>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >2.
     <span
       id="docs-internal-guid-b22bf1ed-7fff-4c86-d660-2effc6a4bc86"
       style="color: #2e3338"
-      >Once you have taken the photo, submit a request to the Trust &amp; Safety
-      team </span
-    ><a href="https://dis.gd/request"
-      ><span class="wysiwyg-underline" style="color: #1155cc">here</span></a
-    >. Under <strong>What can we help you with?</strong>, select the
-    <strong>Appeals, age update, other questions</strong> option. Be sure to use
-    the email address associated with your Discord account. Our Trust &amp;
-    Safety team needs to receive the request directly from the email address
-    associated with the Discord account to protect our users' privacy and
-    security.<br
-  /></span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If the Discord account was not claimed and verified with an email address,
-    our team is unfortunately unable to provide further support.</span
-  >
-</p>
+      >Be sure to use the email address associated with your Discord account.
+    </span>
+  </li>
+  <li>
+    <span
+      id="docs-internal-guid-b22bf1ed-7fff-4c86-d660-2effc6a4bc86"
+      style="color: #2e3338"
+      >Our Trust &amp; Safety team needs to receive the request directly from
+      the email address associated with the Discord account to protect our
+      users' privacy and security.<br
+    /></span>
+  </li>
+  <li>
+    If the Discord account was not claimed and verified with an email address,
+    our team is unfortunately unable to provide further support.
+  </li>
+</ul>
 <div class="info-box">
   The information you provide will only be used to verify your age and will not
   be used for any other purpose.
