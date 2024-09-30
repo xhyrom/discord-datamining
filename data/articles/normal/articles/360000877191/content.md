@@ -1,7 +1,7 @@
-<h3>
+<h3 id="h_01J92B9J28M885DBKZ28WKPJW1">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Discord's spellchecker is available on machines currently running macOS and
-    Windows 8+.</span
+    Windows 10+.</span
   >
 </h3>
 <p>
@@ -38,7 +38,7 @@
   </li>
 </ul>
 <h1 id="h_01H716B95XXZV3N9P8JJQ1CZ9C">How to add a words to Spellcheck</h1>
-<h3>
+<h3 id="h_01J92B9J287BGSGF7BR8T6JD9K">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Did you accidentally add a word to Spellcheck? Since the spellchecker is
     based on the dictionary in your computer’s system, you’ll need to go into

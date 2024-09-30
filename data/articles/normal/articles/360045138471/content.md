@@ -163,26 +163,24 @@
 <h2 id="h_27782bc4-e6e7-412d-a096-e6a0d11a5746">
   <strong>Check for Mutes or Deafens</strong>
 </h2>
-<ul>
-  <li>
-    First steps first, check if you have muted/deafened yourself or another
-    user. You’ll be able to check this by seeing if the mic or headset icon has
-    a slash across it or not.
-  </li>
-</ul>
+<p>
+  First steps first, check if you have muted/deafened yourself or another user.
+  You’ll be able to check this by seeing if the mic or headset icon has a slash
+  across it or not.
+</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/19102679763863"
     alt="image9.png"
+    width="390"
+    height="230"
   />
 </p>
-<ul>
-  <li>
-    Additionally, it’s possible that you may have been Server Muted or Deafened
-    by an admin or Server Owner. In these cases, you will need to reach out to
-    the server owner or admins to remove the Server Mute or Deafen.
-  </li>
-</ul>
+<p>
+  Additionally, it’s possible that you may have been Server Muted or Deafened by
+  an admin or Server Owner. In these cases, you will need to reach out to the
+  server owner or admins to remove the Server Mute or Deafen.
+</p>
 <h2 id="h_5423de57-b662-4bb6-9673-698527b2ed58">
   <strong>Check Channel/Role Permissions</strong>
 </h2>
@@ -279,15 +277,20 @@
   <li>You can check this by following these guides here:</li>
   <ul>
     <li>
-      Windows:
+      <strong>Windows:</strong>
       <a
         href="https://support.microsoft.com/en-us/help/12373/windows-update-faq"
+        target="_blank"
+        rel="noopener noreferrer"
         >https://support.microsoft.com/en-us/help/12373/windows-update-faq</a
       >
     </li>
     <li>
-      MacOS:
-      <a href="https://support.apple.com/en-us/HT201541"
+      <strong>MacOS:</strong>
+      <a
+        href="https://support.apple.com/en-us/HT201541"
+        target="_blank"
+        rel="noopener noreferrer"
         >https://support.apple.com/en-us/HT201541</a
       > 
     </li>
@@ -318,13 +321,20 @@
 <ul>
   <li>
     <strong>Windows</strong>:
-    <a
-      href="https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions"
-      >https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions</a
-    >
-    or
-    <a href="https://support.discord.com/hc/en-us/articles/360004159932"
-      >https://support.discord.com/hc/en-us/articles/360004159932</a
+    <strong
+      ><a
+        href="https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions"
+        target="_blank"
+        rel="noopener noreferrer"
+        >https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions</a
+      >
+      or
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360004159932"
+        target="_blank"
+        rel="noopener noreferrer"
+        >https://support.discord.com/hc/en-us/articles/360004159932</a
+      ></strong
     >
   </li>
   <li>
@@ -332,6 +342,8 @@
       >Mac:
       <a
         href="https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0"
+        target="_blank"
+        rel="noopener noreferrer"
         >https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0</a
       ></strong
     >
@@ -360,15 +372,23 @@
   </li>
   <ul>
     <li>
-      <a
-        href="https://support.microsoft.com/en-us/help/4028443/windows-10-update-drivers"
-        >https://support.microsoft.com/en-us/help/4028443/windows-10-update-drivers</a
+      <strong
+        ><a
+          href="https://support.microsoft.com/en-us/help/4028443/windows-10-update-drivers"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.microsoft.com/en-us/help/4028443/windows-10-update-drivers</a
+        ></strong
       >
     </li>
     <li>
-      <a
-        href="https://support.microsoft.com/en-us/help/13753/windows-10-camera-does-not-work"
-        >https://support.microsoft.com/en-us/help/13753/windows-10-camera-does-not-work</a
+      <strong
+        ><a
+          href="https://support.microsoft.com/en-us/help/13753/windows-10-camera-does-not-work"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.microsoft.com/en-us/help/13753/windows-10-camera-does-not-work</a
+        ></strong
       >
     </li>
   </ul>
@@ -454,7 +474,12 @@
   <li>
     Here’s a link to our downloads page if you need the installation file once
     more:
-    <a href="https://discord.com/download">https://discord.com/download</a>
+    <a
+      href="https://discord.com/download"
+      target="_blank"
+      rel="noopener noreferrer"
+      >https://discord.com/download</a
+    >
   </li>
 </ul>
 <p>
@@ -515,15 +540,25 @@
   </li>
   <ul>
     <li>
-      Mac:
-      <a href="https://discord.com/api/download/ptb?platform=osx"
-        >https://discord.com/api/download/ptb?platform=osx</a
+      <strong
+        >Windows:
+        <a
+          href="https://discord.com/api/download/ptb?platform=win"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://discord.com/api/download/ptb?platform=win</a
+        ></strong
       >
     </li>
     <li>
-      Windows:
-      <a href="https://discord.com/api/download/ptb?platform=win"
-        >https://discord.com/api/download/ptb?platform=win</a
+      <strong
+        >Mac:
+        <a
+          href="https://discord.com/api/download/ptb?platform=osx"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://discord.com/api/download/ptb?platform=osx</a
+        ></strong
       >
     </li>
   </ul>
@@ -663,7 +698,7 @@
 <ul>
   <li>
     Navigate<a
-      href="https://support.discord.com/hc/articles/213491697"
+      href="https://support.discord.com/hc/en-us/articles/213491697"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -681,7 +716,10 @@
 <ul>
   <li>
     <strong>Safari:</strong>
-    <a href="https://support.apple.com/guide/safari/websites-ibrwe2159f50/mac"
+    <a
+      href="https://support.apple.com/guide/safari/websites-ibrwe2159f50/mac"
+      target="_blank"
+      rel="noopener noreferrer"
       >https://support.apple.com/guide/safari/websites-ibrwe2159f50/mac</a
     >
   </li>
@@ -689,21 +727,24 @@
     <strong>Chrome: </strong
     ><a
       href="https://support.google.com/chrome/answer/2693767?co=GENIE.Platform%3DDesktop&amp;hl=en"
-      >https://support.google.com/chrome/answer/2693767?co=GENIE.Platform%3DDesktop&amp;hl=en</a
+      target="_blank"
+      rel="noopener noreferrer"
+      >https://support.google.com/chrome/answer/2693767</a
     >
   </li>
   <li>
     <strong>Firefox: </strong
     ><a
       href="https://support.mozilla.org/en-US/kb/how-manage-your-camera-and-microphone-permissions"
+      target="_blank"
+      rel="noopener noreferrer"
       >https://support.mozilla.org/en-US/kb/how-manage-your-camera-and-microphone-permissions</a
     >
   </li>
 </ul>
 <p>
   <strong>🔲   Lastly, try some of these steps in the </strong
-  ><a href="#h_0098f091-6bc4-4964-b54c-4e6a7e96cb14" target="_self"
-    >Desktop Users</a
+  ><a href="#h_0098f091-6bc4-4964-b54c-4e6a7e96cb14">Desktop Users</a
   ><strong>
     section that are relevant for your device and Operating System! </strong
   >
@@ -799,8 +840,8 @@
 <ul>
   <li>
     Head over to this
-    <a href="https://support.discord.com/hc/articles/213491697"
-      ><span class="wysiwyg-underline" style="color: #1155cc">article</span></a
+    <a href="https://support.discord.com/hc/en-us/articles/213491697"
+      >article</a
     >
     to check your OS compatibility.
   </li>
@@ -814,15 +855,25 @@
   <li>You can check this by following these guides here: </li>
   <ul>
     <li>
-      iOS Steps:<a
-        href="https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios"
-        >https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios</a
+      <strong
+        >iOS Steps:
+        <a
+          href="https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios</a
+        ></strong
       >
     </li>
     <li>
-      Android Steps:<a
-        href="https://support.google.com/android/answer/7680439?hl=en"
-        >https://support.google.com/android/answer/7680439?hl=en</a
+      <strong
+        >Android Steps:
+        <a
+          href="https://support.google.com/android/answer/7680439?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.google.com/android/answer/7680439?hl=en</a
+        ></strong
       >
     </li>
   </ul>
@@ -834,14 +885,25 @@
   <li>You can manually update your app by following these steps:</li>
   <ul>
     <li>
-      iOS Steps:<a href="https://support.apple.com/en-us/HT202180"
-        >https://support.apple.com/en-us/HT202180</a
+      <strong
+        >iOS Steps:<a
+          href="https://support.apple.com/en-us/HT202180"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.apple.com/en-us/HT202180</a
+        ></strong
       >
     </li>
     <li>
-      Android Steps:<a
-        href="https://support.google.com/googleplay/answer/113412?hl=en"
-        >https://support.google.com/googleplay/answer/113412?hl=en</a
+      <strong
+        >Android Steps:
+        <a
+          href="https://support.google.com/googleplay/answer/113412?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.google.com/googleplay/answer/113412?hl=en</a
+        ></strong
       >
     </li>
   </ul>
@@ -862,16 +924,24 @@
   <li>Check these links for how to enable those permissions: </li>
   <ul>
     <li>
-      iOS Steps:
-      <a
-        href="https://support.apple.com/guide/iphone/change-app-access-to-information-iph251e92810/ios"
-        >https://support.apple.com/guide/iphone/change-app-access-to-information-iph251e92810/ios</a
+      <strong
+        >iOS Steps:
+        <a
+          href="https://support.apple.com/guide/iphone/change-app-access-to-information-iph251e92810/ios"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.apple.com/guide/iphone/change-app-access-to-information-iph251e92810/ios</a
+        ></strong
       >
     </li>
     <li>
-      Android Steps:<a
-        href="https://support.google.com/googleplay/answer/6270602?hl=en"
-        >https://support.google.com/googleplay/answer/6270602?hl=en</a
+      <strong
+        >Android Steps:<a
+          href="https://support.google.com/googleplay/answer/6270602?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.google.com/googleplay/answer/6270602?hl=en</a
+        ></strong
       >
     </li>
   </ul>
@@ -883,15 +953,24 @@
   </li>
   <ul>
     <li>
-      iOS Steps:
-      <a href="https://support.apple.com/en-us/HT205234"
-        >https://support.apple.com/en-us/HT205234</a
+      <strong
+        >iOS Steps:
+        <a
+          href="https://support.apple.com/en-us/HT205234"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.apple.com/en-us/HT205234</a
+        ></strong
       >
     </li>
     <li>
-      Android Steps:<a
-        href="https://support.google.com/android/answer/7664692?hl=en"
-        >https://support.google.com/android/answer/7664692?hl=en</a
+      <strong
+        >Android Steps:<a
+          href="https://support.google.com/android/answer/7664692?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.google.com/android/answer/7664692?hl=en</a
+        ></strong
       >
     </li>
   </ul>
@@ -904,14 +983,20 @@
 </p>
 <ul>
   <li>
-    iOS Steps:<a href="https://support.apple.com/en-us/HT201299"
-      >https://support.apple.com/en-us/HT201299</a
+    <strong
+      >iOS Steps:
+      <a
+        href="https://support.apple.com/en-us/HT201299"
+        target="_blank"
+        rel="noopener noreferrer"
+        >https://support.apple.com/en-us/HT201299</a
+      ></strong
     >
   </li>
   <li>
-    Android Steps: Depending on the manufacturer of your phone, you can switch
-    between data and wifi by tapping into Settings, and then select your Network
-    &amp; Internet options!
+    <strong>Android Steps:</strong> Depending on the manufacturer of your phone,
+    you can switch between data and wifi by tapping into Settings, and then
+    select your Network &amp; Internet options!
   </li>
 </ul>
 <p><strong>🔲   Check your volume settings for your device</strong></p>
@@ -919,16 +1004,25 @@
   <li>Check these links for how to access your volume settings to check: </li>
   <ul>
     <li>
-      iOS Steps:
-      <a
-        href="https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios"
-        >https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios</a
+      <strong
+        >iOS Steps:
+        <a
+          href="https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios</a
+        ></strong
       >
     </li>
     <li>
-      Android Steps:<a
-        href="https://support.google.com/android/answer/9082609?hl=en"
-        >https://support.google.com/android/answer/9082609?hl=en</a
+      <strong
+        >Android Steps:
+        <a
+          href="https://support.google.com/android/answer/9082609?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://support.google.com/android/answer/9082609?hl=en</a
+        ></strong
       >
     </li>
   </ul>
@@ -990,7 +1084,7 @@
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-eac406e4-7fff-6e52-62dd-480f4ebd99e6"
     ><img
-      src="https://lh3.googleusercontent.com/Dme2JX7FoLwut0tJ6JyhyYwsrdbBmXE0NiQ2-GZdyyuRnNXY07JzVARZYEZJjbWXFOqFk41NuxkZfPblL77Bl3G9AqEhPNumuozCnt7VWPGXYE1srobk9u7taW2Z7khFdOkmNNcsP3k28V3qUYA5zVM"
+      src="https://support.discord.com/hc/article_attachments/26736649259671"
       width="265"
       height="400"
   /></span>
@@ -1030,13 +1124,13 @@
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-e0cef370-7fff-9b3f-c7ff-a0a378d23f9e"
     ><img
-      src="https://lh5.googleusercontent.com/7p1hwHD_h0NXpSPo1_EyCjurOnFqqvSBri0G_zObM4AJs92jDDz4HbqFcYt4_QC97RfG2IT81tQMIrP2aumAqKL23UeQqs3gYKqgqerW-i1r1yAeONNfFVHJYJpdSz5Pekw2Anhp4s--Q-sPxrPXdNw"
+      src="https://support.discord.com/hc/article_attachments/26736681385367"
       width="324"
       height="326"
   /></span>
    
   <img
-    src="https://lh3.googleusercontent.com/gkCrgSCBlJjmllRjzKpQh0GoeBko27HGFA3fnsC7Uz_xH90NmD_QXNp0sFI4OIih5VNYi8nfhX9kFKMIwhzaFujR_vd2XyUvsF5-EfjtEGddYMxEtaclxzkmp8A1Q7PUeGJ9jds59LIJ0jdFxbb-M1A"
+    src="https://support.discord.com/hc/article_attachments/26736681389079"
     width="323"
     height="327"
   />
@@ -1053,7 +1147,7 @@
       href="https://developer.apple.com/airplay/"
       target="_blank"
       rel="noopener noreferrer"
-      ><span class="wysiwyg-underline">Airplay</span></a
+      >Airplay</a
     >
   </li>
 </ul>
@@ -1066,13 +1160,13 @@
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-647d2e6f-7fff-2c61-1f66-c243c8f93fce"
     ><img
-      src="https://lh5.googleusercontent.com/Y2a_wnuAYPJMAUoY2nFI2BeNgutBEICeRBFT6e17XhTt0iFmDnNkn0DknYbm8HXtET0o2dAolTtBhxkcT8m3C6hO7T7XjEW2Co1HNwmsUgruflgLrE2gzVqt7mMVz2ocb3_3zopbJ-Rq6erE9LPCZjI"
+      src="https://support.discord.com/hc/article_attachments/26736649272215"
       width="264"
       height="486"
     />
       </span
   ><img
-    src="https://lh6.googleusercontent.com/QoJQ2HbHrvcWRFZQyDoQiroqq-jOc8rQnzu0__9aWWn7YiMpYC73QQlm9_VkH7w1YgsSExH1rsy-I7VPDt9ICLpEOOKTxFUOVgMV3L2F_3k7B3UdsmOFa8dE6B9Oe7jUMrp7_6Bxyeh5tjllfInmvdw"
+    src="https://support.discord.com/hc/article_attachments/26736649273495"
     width="264"
     height="486"
   />

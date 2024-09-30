@@ -253,7 +253,7 @@
   You’ll be able to tell it was reactivated because you’ll see the banner no
   longer has Pending Cancellation displayed.
 </p>
-<h1 id="h_01J91YVQ6X81F73DP3KAH67VB2">
+<p id="h_01J91YVQ6X81F73DP3KAH67VB2" class="wysiwyg-text-align-center">
   <strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
       ><img
@@ -261,7 +261,7 @@
         width="624"
         height="475" /></span
   ></strong>
-</h1>
+</p>
 <h1 id="h_01J91YVQ6XR7VGCEA6GWA6C6TA">
   What if I Can’t Access my Discord and Need to Cancel?
 </h1>

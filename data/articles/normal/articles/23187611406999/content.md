@@ -62,31 +62,31 @@
   </li>
 </ul>
 <h1 id="h_01HXW2MCD0W4NTT0TPARSDHHS0">What are Guilds?</h1>
-<h3 id="h_01HZT6AAYC47JX7XDHDSG3MZXD">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Guilds can only have a maximum of 200 members. This Guild member capacity
-    cannot be increased at this time.</span
-  >
-</h3>
 <p>
-  On Discord, a Guild is a small, exclusive server where people who regularly
-  play games together collaborate, compete, and hang out. Guilds recruit members
-  by application and provide their members with a sense of tight-knit community,
-  support, and shared identity.
+  On Discord, a <strong>Guild</strong> is a small, exclusive server where people
+  who regularly play games together collaborate, compete, and hang out.
 </p>
+<p>
+  Guilds recruit members by application and provide their members with a sense
+  of tight-knit community, support, and shared identity.
+</p>
+<div class="info-box">
+  <strong>Note</strong>: Guilds can only have a maximum of 200 members. This
+  Guild member capacity cannot be increased at this time.
+</div>
 <h1 id="h_01HXW2MCD0F03P7GE49RF9ZD4K">How to Create a Guild</h1>
-<h3 id="h_01HXW2MCD0RE7WPMDG9X5JX1FA">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >This feature is currently an experiment and only available to a select
-    number of servers.</span
-  >
-</h3>
+<div class="exp-box">
+  This feature is currently an experiment and only available to a select number
+  of servers.
+</div>
 <p>
   You can either create a Guild from scratch by creating a brand new server or
-  converting your current server into a Guild. If your server is currently in
-  the experiment, you will see an option to convert your server as an in-app
-  popup at the top-left of your app. Tap on <strong>Check it out</strong> to
-  continue. 
+  converting your current server into a Guild.
+</p>
+<p>
+  If your server is currently in the experiment, you will see an option to
+  convert your server as an in-app popup at the top-left of your app. Tap on
+  <strong>Check it out</strong> to continue. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -122,12 +122,17 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/23536776850967"
+    width="610"
+    height="524"
   />
 </p>
 <p>
-  3. (Optional) Choose the type of demographic you want to recruit to your
-  Guild. Depending on the type of Guild you have, you can select ranks for a
-  specific game, minimum ages, and more. Pick what best suits your Guild.
+  3. (<strong><em>Optional</em></strong
+  >) Choose the type of demographic you want to recruit to your Guild.
+</p>
+<p>
+  Depending on the type of Guild you have, you can select ranks for a specific
+  game, minimum ages, and more. Pick what best suits your Guild.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -136,42 +141,55 @@
     height="536"
   />
 </p>
+<p>4. Tell people what your Guild talks about.</p>
 <p>
-  4. Tell people what your Guild talks about. Does everyone have a
-  <em>HUGE </em>love of cheesecake? Does everyone listen to k-pop while gaming?
-  Select at least 3 Traits for your Guild.
+  Does everyone have a <em>HUGE </em>love of cheesecake? Does everyone listen to
+  k-pop while gaming?
 </p>
+<p>Select at least 3 <strong>Traits</strong> for your Guild.</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/23536770882967"
+    width="620"
+    height="532"
   />
 </p>
 <p>
-  5. You can write the discovery description for your Guild. Focus on why
-  someone should join and what your Guild offers. You can also describe your
-  Guild in 3 words here too. Be creative!
+  5. You can write the <strong>discovery description</strong> for your Guild.
+</p>
+<p>
+  Focus on why someone should join and what your Guild offers. You can also
+  describe your Guild in 3 words here too. Be creative!
 </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/23536770889495"
+    width="597"
+    height="512"
   />
 </p>
 <p>
-  6. Create a Guild tag and badge that members will wear all over Discord to rep
-  your Guild. Your Guild tag can be a max of 4 characters. However it is not
-  unique and multiple Guilds can have the same tag. Once you select a badge, you
-  can change the color to either one of the preset color schemes or use the
-  color picker to customize. 
+  6. Create a <strong>Guild tag</strong> and <strong>badge</strong> that members
+  will wear all over Discord to rep your Guild.
+</p>
+<p>
+  Your Guild tag can be a max of 4 characters. However it is not unique and
+  multiple Guilds can have the same tag. Once you select a badge, you can change
+  the color to either one of the preset color schemes or use the color picker to
+  customize. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/23536770898071"
+    width="594"
+    height="510"
   />
 </p>
 <p>
-  7. Customize your Guild brand even further by selecting a banner color scheme
-  or using the eyedropper tool to pick 2 colors. You can also select the banner
-  style and pick between the following:
+  7. Customize your Guild brand even further by selecting a
+  <strong>banner color scheme</strong> or using the eyedropper tool to pick 2
+  colors. You can also select the <strong>banner style</strong> and pick between
+  the following:
 </p>
 <ul>
   <li>Night Sky</li>
@@ -187,18 +205,22 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/23536776893719"
+    width="550"
+    height="472"
   />
 </p>
+<p>8. Set up an application for users interested in joining your Guild.</p>
 <p>
-  8. Set up an application for users interested in joining your Guild. You can
-  include questions like, “why do you want to join this Guild?” Or “what’s your
-  favorite dinosaur and why?” You can choose to make the responses be a short
-  paragraph, a long paragraph, or multiple choice. You must have at least one
-  question set up to proceed.
+  You can include questions like, “why do you want to join this Guild?” Or
+  “what’s your favorite dinosaur and why?” You can choose to make the responses
+  be a short paragraph, a long paragraph, or multiple choice.
 </p>
+<p>You must have at least one question set up to proceed.</p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/23536776910615"
+    width="537"
+    height="461"
   />
 </p>
 <p>
@@ -229,7 +251,6 @@
   reject their application. We recommend approving or rejecting your
   applications as soon as you can!
 </p>
-<p> </p>
 <p>
   1. Navigate to the Guild you want to review applications for and tap on
   <strong>Member Applications</strong>. If you have any to review, you’ll also
@@ -265,12 +286,10 @@
   applications.
 </p>
 <h1 id="h_01HXW2MCD0DPVFR67AA96X0CDW">How to Join a Guild</h1>
-<h3 id="h_01HXW2MCD0NDMFRCKN0E84WS7W">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >This feature is currently an experiment and only available to a select
-    number of users.</span
-  >
-</h3>
+<div class="exp-box">
+  This feature is currently an experiment and only available to a select number
+  of users.
+</div>
 <p>
   There are 3 ways to join a Guild: Discovery tab, invite links, and guild tags.
 </p>
@@ -278,8 +297,10 @@
 <p>
   If you tap on the <strong>Discovery</strong> tab in your Discord app, you can
   see a list of available Guilds that you can apply to join. You can also set
-  different preferences depending on what you are looking for in a Guild. Once
-  you find one you’d like to join, tap on the Guild and then fill out an
+  different preferences depending on what you are looking for in a Guild.
+</p>
+<p>
+  Once you find one you’d like to join, tap on the Guild and then fill out an
   application. You can join as many Guilds as you’d like!
 </p>
 <h2 id="h_01HXW2MCD0E8MPCX184CSNCNM4">Invite Link</h2>
@@ -288,10 +309,9 @@
   users to join! 
 </p>
 <h2 id="h_01HXW2MCD08EDXFJ8G73FT3G4W">Guild Tag</h2>
-<h3 id="h_01HZ032V2RMS7Y0BH22RJ4EBNX">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you see the option </span
-  ><strong
+<div class="exp-box">
+  If you see the option
+  <strong
     ><span style="color: #434343" data-darkreader-inline-color=""
       >Join Waitlist for Guilds</span
     ></strong
@@ -306,7 +326,7 @@
     join the waitlist once and joining does not guarantee access to the
     experiment.</span
   >
-</h3>
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/23478790049431"

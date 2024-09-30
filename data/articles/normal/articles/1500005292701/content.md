@@ -32,7 +32,12 @@
     >Community Guidelines</a
   ><span style="color: #2e3338" data-darkreader-inline-color="">
     require that all adult content posted to Discord be kept behind an
-    age-restricted gate. Server owners can designate </span
+    age-restricted gate.
+  </span>
+</p>
+<p>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >Server owners can designate </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/115000084051"
     target="_blank"
@@ -64,11 +69,11 @@
 </h2>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If you are between the ages of 13 and 17, you will not be able to join or
-    view the content in age-restricted servers. </span
+    >If you are between the ages of <strong>13</strong> and <strong>17</strong>,
+    you will not be able to join or view the content in age-restricted servers. </span
   ><span style="color: #2e3338" data-darkreader-inline-color=""
-    >For people aged 18 and older, age-restricted servers can only be joined on
-    desktop or Android devices.
+    >For people aged<strong> 18 and older</strong>, age-restricted servers can
+    only be joined on desktop or Android devices.
   </span>
 </p>
 <p>
@@ -78,8 +83,10 @@
   >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >How to opt in for iOS:</span
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >How to opt in for iOS:</span
+    ></strong
   >
 </p>
 <p>
@@ -133,15 +140,10 @@
     >
   </li>
 </ul>
-<h3 id="h_01HKDXKG7D1CSMYHNR65NFATT8">
-  <strong
-    ><span style="color: #104c32" data-darkreader-inline-color=""
-      >Note: Only age-restricted server owners and moderators will be allowed to
-      view and manage this specific subset of age-restricted servers on
-      iOS.</span
-    ></strong
-  >
-</h3>
+<div class="info-box">
+  Note: Only age-restricted server owners and moderators will be allowed to view
+  and manage this specific subset of age-restricted servers on iOS.
+</div>
 <h2 id="h_01H4RH1GSQF4689C1VVX9CGHGV">
   <strong
     ><span style="color: #ae6607" data-darkreader-inline-color=""
@@ -199,11 +201,7 @@
     our team is unfortunately unable to provide further support.</span
   >
 </p>
-<h3 id="h_01HKDXKG7EQKVQP8D0WY2Y8N1V">
-  <strong
-    ><span style="color: #104c32" data-darkreader-inline-color=""
-      >The information you provide will only be used to verify your age and will
-      not be used for any other purpose.</span
-    ></strong
-  >
-</h3>
+<div class="info-box">
+  The information you provide will only be used to verify your age and will not
+  be used for any other purpose.
+</div>

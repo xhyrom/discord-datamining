@@ -115,31 +115,28 @@
 <p class="wysiwyg-text-align-left">
   Discord gives you the power to create an <strong>invite-only</strong> home for
   your friends or community - a place where you can talk, hang out, and have
-  fun. We call these special places - <strong>servers</strong>, and they look
-  like this:
+  fun. We call these special places - <strong>servers</strong>!
+</p>
+<p class="wysiwyg-text-align-left">
+  You can join or create servers for all kinds of communities -- be it a book
+  club 📚, a dance class 💃 , a study group 🖊️, or just some friends you want to
+  spend time with.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/360060867451"
     alt="friend_server1.png"
+    width="635"
+    height="452"
   />
 </p>
-<ul>
-  <li>
-    <span style="font-weight: 400"
-      >You can join or create servers for all kinds of communities -- be it a
-      book club 📚, a dance class 💃 , a study group 🖊️, or just some friends
-      you want to spend time with.  </span
-    >
-  </li>
-</ul>
 <h2 id="h_d33e3809-909b-4720-899d-db26c17bafa9">
   <strong>How to Use Text and Voice Channels</strong>
 </h2>
 <p>
-  <span style="font-weight: 400">Your server is made up of </span
-  ><strong>text channels</strong><span style="font-weight: 400"> and </span
-  ><strong>voice channels</strong><span style="font-weight: 400">. </span>
+  Your server is made up of <strong>text channels</strong> and<strong
+    >voice channels</strong
+  >
 </p>
 <ul>
   <li>
@@ -149,13 +146,10 @@
   </li>
 </ul>
 <p>
-  <strong>Text channels</strong
-  ><span style="font-weight: 400">
-    are separate spaces for talking over text. They keep conversations organized
-    and give everyone plenty of room to talk. Create separate channels for all
-    the topics your group likes to talk about--from fishing trips to cooking
-    tips. </span
-  >
+  <strong>Text channels</strong> are separate spaces for talking over text. They
+  keep conversations organized and give everyone plenty of room to talk. Create
+  separate channels for all the topics your group likes to talk about--from
+  fishing trips to cooking tips.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -171,13 +165,10 @@
   </li>
 </ul>
 <p>
-  <strong>Voice channels</strong
-  ><span style="font-weight: 400">
-    are where you can hang out over voice and video. There’s no calling or
-    ringing required - just click on a voice channel to enter it. Friends in
-    your server can see you’re in there, and pop in to talk, wave hello over
-    video, or share their screen. </span
-  >
+  <strong>Voice channels</strong> are where you can hang out over voice and
+  video. There’s no calling or ringing required - just click on a voice channel
+  to enter it. Friends in your server can see you’re in there, and pop in to
+  talk, wave hello over video, or share their screen.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -253,11 +244,10 @@
   your server!
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/360060871251"
-      alt="joining_voice_channel_demo.gif"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/360060871251"
+    alt="joining_voice_channel_demo.gif"
+  />
 </p>
 <h2 id="h_9de92bc2-3bca-459f-8efd-e1e2739ca4f4">
   <strong>How to Voice Chat </strong>
@@ -269,14 +259,12 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Click a <img
-        src="https://support.discord.com/hc/article_attachments/360060867551"
-        alt="voice_channel.png"
-        width="18"
-        height="17"
-      /> </span
-    ><span style="font-weight: 400">voice channel in your server<br /></span>
+    Click a <img
+      src="https://support.discord.com/hc/article_attachments/360060867551"
+      alt="voice_channel.png"
+      width="18"
+      height="17"
+    />  voice channel in your server
   </li>
 </ul>
 <p>
@@ -285,52 +273,43 @@
   >
 </p>
 <h3 id="h_01HRQXRDQJAJQ5CRJV36MMQ5AM" class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    >You should see a green outline around your avatar when you speak. </span
-  >
+  You should see a green outline around your avatar when you speak.
 </h3>
 <ul>
   <li>
-    <strong>If you need to adjust your voice settings,</strong
-    ><span style="font-weight: 400">
-      click the <img
-        src="https://support.discord.com/hc/article_attachments/360060867651"
-        alt="Vector_1.png"
-        width="17"
-        height="17"
-      /> cog icon to open your User Settings. On desktop, you’ll find it in the
-      lower left corner of your server. From User Settings, head to Voice and
-      Video settings to adjust your audio input, input sensitivity, and
-      more.</span
-    >
+    <strong>If you need to adjust your voice settings,</strong> click the
+    <img
+      src="https://support.discord.com/hc/article_attachments/360060867651"
+      alt="Vector_1.png"
+      width="17"
+      height="17"
+    />
+    cog icon to open your User Settings. On desktop, you’ll find it in the lower
+    left corner of your server. From User Settings, head to Voice and Video
+    settings to adjust your audio input, input sensitivity, and more.
   </li>
 </ul>
 <div class="tip-box">
-  <strong>Bonus Tip: </strong
-  ><span style="font-weight: 400"
-    >You can adjust the volume of other people in the voice channel by right
-    clicking their avatar on desktop, or pressing their name on mobile. </span
-  >
+  <strong>Bonus Tip: </strong> You can adjust the volume of other people in the
+  voice channel by right clicking their avatar on desktop, or pressing their
+  name on mobile.
 </div>
 <div class="tip-box">
-  <strong>Bonus bonus tip:</strong
-  ><span style="font-weight: 400">
-    You can use
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360040843952"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Discord’s Krisp noise suppression</a
-    >
-    to filter out unwanted background noise like lawnmowers or your neighbors
-    dog 🐕 barking up a storm. You can enable Krisp from the
-    <img
-      src="https://support.discord.com/hc/article_attachments/360097316694"
-      alt="supression.png"
-      width="21"
-      height="21"
-    /> icon in the lower left voice panel.</span
+  <strong>Bonus bonus tip:</strong>You can use
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360040843952"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord’s Krisp noise suppression</a
   >
+  to filter out unwanted background noise like lawnmowers or your neighbors dog
+  🐕 barking up a storm. You can enable Krisp from the
+  <img
+    src="https://support.discord.com/hc/article_attachments/360097316694"
+    alt="supression.png"
+    width="21"
+    height="21"
+  /> icon in the lower left voice panel.
 </div>
 <h2 id="h_3f7ad8f5-1dd5-43dc-b125-fb95385434de">
   <strong>How to Video Chat</strong>
@@ -348,14 +327,14 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Click a <img
-        src="https://support.discord.com/hc/article_attachments/360060867551"
-        alt="voice_channel.png"
-        width="18"
-        height="17"
-      /> </span
-    ><span style="font-weight: 400">voice channel in your server</span>
+    Click a
+    <img
+      src="https://support.discord.com/hc/article_attachments/360060867551"
+      alt="voice_channel.png"
+      width="18"
+      height="17"
+    />
+    voice channel in your server
   </li>
 </ul>
 <p>
@@ -365,44 +344,43 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Press the Video button in the bottom left corner and your video will be
-      added to the voice channel. If you navigate away from the channel, just
-      click it again to bring up </span
-    >
+    Press the Video button in the bottom left corner and your video will be
+    added to the voice channel. If you navigate away from the channel, just
+    click it again to bring up 
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/360060700832"
-      alt="video_chat.png"
-    /><br />Desktop</span
-  >
+  <img
+    src="https://support.discord.com/hc/article_attachments/360060700832"
+    alt="video_chat.png"
+    width="419"
+    height="248"
+  /><br />Desktop
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/360060700952"
-      alt="mobile_video.png"
-      width="476"
-      height="586"
-    /><br />Mobile</span
-  >
+  <img
+    src="https://support.discord.com/hc/article_attachments/360060700952"
+    alt="mobile_video.png"
+    width="416"
+    height="512"
+  /><br />Mobile
 </p>
 <ul>
   <li>
-    <strong>To change your input device, </strong
-    ><span style="font-weight: 400"
-      >click the <img
-        src="https://support.discord.com/hc/article_attachments/360060867651"
-        alt="Vector_1.png"
-        width="17"
-        height="17"
-      /> cog icon to open your User Settings. On desktop, you’ll find it in the
-      lower left corner of your server. From User Settings, head to Voice and
-      Video settings to update your video input device.</span
-    >
+    <strong>To change your input device, </strong>click the
+    <img
+      src="https://support.discord.com/hc/article_attachments/360060867651"
+      alt="Vector_1.png"
+      width="17"
+      height="17"
+    /> cog icon to open your <strong>User Settings</strong>. On desktop, you’ll
+    find it in the lower left corner of your server.
+    <ul>
+      <li>
+        From User Settings, head to <strong>Voice and Video</strong> settings to
+        update your video input device.
+      </li>
+    </ul>
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
@@ -421,14 +399,13 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Click a <img
-        src="https://support.discord.com/hc/article_attachments/360060867551"
-        alt="voice_channel.png"
-        width="18"
-        height="17"
-      /> </span
-    ><span style="font-weight: 400">voice channel in your server</span>
+    Click a <img
+      src="https://support.discord.com/hc/article_attachments/360060867551"
+      alt="voice_channel.png"
+      width="18"
+      height="17"
+    />
+    voice channel in your server
   </li>
 </ul>
 <p>
@@ -438,18 +415,15 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Press the <img
-        src="https://support.discord.com/hc/article_attachments/360060701552"
-        alt="Group_1.png"
-        width="21"
-        height="19"
-      /> </span
-    ><strong>Screen</strong
-    ><span style="font-weight: 400">
-      icon in the voice status panel near the bottom left corner and a new
-      window will pop out.</span
-    >
+    Press the
+    <img
+      src="https://support.discord.com/hc/article_attachments/360060701552"
+      alt="Group_1.png"
+      width="21"
+      height="19"
+    />
+    <strong>Screen</strong>icon in the voice status panel near the bottom left
+    corner and a new window will pop out.
   </li>
 </ul>
 <p>
@@ -459,10 +433,8 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Select an individual application window to share, or select an entire
-      screen to share.</span
-    >
+    Select an individual application window to share, or select an entire screen
+    to share.
   </li>
 </ul>
 <p>
@@ -472,11 +444,8 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400">Press the "</span><strong>Go Live"</strong
-    ><span style="font-weight: 400">
-      button at the bottom of the window when you are ready to share your
-      stream </span
-    >
+    Press the "<strong>Go Live"</strong>button at the bottom of the window when
+    you are ready to share your stream
   </li>
 </ul>
 <div class="info-box">
@@ -494,21 +463,19 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Look for any people with the <img
-        src="https://support.discord.com/hc/article_attachments/360060701892"
-        alt="591028023650942988.png"
-        width="36"
-        height="16" /></span
-    > <strong>Live</strong
-    ><span style="font-weight: 400">
-      icon within a <img
-        src="https://support.discord.com/hc/article_attachments/360060867551"
-        alt="voice_channel.png"
-        width="18"
-        height="17"
-      /> </span
-    ><span style="font-weight: 400">voice channel</span>
+    Look for any people with the <img
+      src="https://support.discord.com/hc/article_attachments/360060701892"
+      alt="591028023650942988.png"
+      width="36"
+      height="16"
+    />
+    <strong>Live</strong> icon within a <img
+      src="https://support.discord.com/hc/article_attachments/360060867551"
+      alt="voice_channel.png"
+      width="18"
+      height="17"
+    />
+    voice channel
   </li>
 </ul>
 <p>
@@ -518,25 +485,19 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Click on the username of the broadcaster with the <img
-        src="https://support.discord.com/hc/article_attachments/360060701892"
-        alt="591028023650942988.png"
-        width="36"
-        height="16"
-      /> </span
-    ><strong>Live</strong
-    ><span style="font-weight: 400">
-      icon to automatically join the stream</span
-    >
+    Click on the username of the broadcaster with the<img
+      src="https://support.discord.com/hc/article_attachments/360060701892"
+      alt="591028023650942988.png"
+      width="36"
+      height="16"
+    />
+    <strong>Live</strong>icon to automatically join the stream
   </li>
 </ul>
 <p>
-  <span style="font-weight: 400"
-    >Once you've joined, you can change the size and location of your viewing
-    window. You can also control the stream’s audio from the volume icon while
-    hovering over the stream.</span
-  >
+  Once you've joined, you can change the size and location of your viewing
+  window. You can also control the stream’s audio from the volume icon while
+  hovering over the stream.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -567,10 +528,8 @@
   >
 </h2>
 <p>
-  <span style="font-weight: 400"
-    >Listening to Spotify on your computer? You can also invite your friends to
-    listen in with you!</span
-  >
+  Listening to Spotify on your computer? You can also invite your friends to
+  listen in with you!
 </p>
 <p>
   <span class="wysiwyg-font-size-x-large"
@@ -579,15 +538,14 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >Head to User Settings by clicking the <img
-        src="https://support.discord.com/hc/article_attachments/360060867651"
-        alt="Vector_1.png"
-        width="17"
-        height="17"
-      /> cog icon in the lower-left of Discord. Head to the Connections tab, and
-      then click on the Spotify logo and connect your accounts.</span
-    >
+    Head to User Settings by clicking the <img
+      src="https://support.discord.com/hc/article_attachments/360060867651"
+      alt="Vector_1.png"
+      width="17"
+      height="17"
+    />
+    cog icon in the lower-left of Discord. Head to the Connections tab, and then
+    click on the Spotify logo and connect your accounts.
   </li>
 </ul>
 <p>
@@ -597,24 +555,20 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >While Spotify is playing, click the + in your chat bar to invite your
-      friends to listen with you.</span
-    >
+    While Spotify is playing, click the + in your chat bar to invite your
+    friends to listen with you.
   </li>
 </ul>
 <div class="info-box">
-  <span style="font-weight: 400"
-    ><strong>Important Note:</strong> To invite friends to listen, they'll need
-    to have
-    <a
-      href="https://www.spotify.com/premium/"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><em>Spotify Premium</em></a
-    >
-    or they'll receive an error!</span
+  <strong>Important Note:</strong> To invite friends to listen, they'll need to
+  have
+  <a
+    href="https://www.spotify.com/premium/"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><em>Spotify Premium</em></a
   >
+  or they'll receive an error!
 </div>
 <h2 id="h_63eed59a-854f-482f-8a4d-08b37797c510">
   <strong
@@ -628,21 +582,17 @@
   >
 </h2>
 <p>
-  <span style="font-weight: 400"
-    >Every Discord server has a library of emojis, and you can turn any image
-    into a custom emoji for your server’s library. You know that cute little
-    tongue blep your dog makes? Yeah, that could be an emoji, too!</span
-  >
+  Every Discord server has a library of emojis, and you can turn any image into
+  a custom emoji for your server’s library. You know that cute little tongue
+  blep your dog makes? Yeah, that could be an emoji, too!
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/1500008485502"
-      alt="utv33powdehz.jpg"
-      width="299"
-      height="299"
-    /><br />:p</span
-  >
+  <img
+    src="https://support.discord.com/hc/article_attachments/1500008485502"
+    alt="utv33powdehz.jpg"
+    width="299"
+    height="299"
+  /><br />:p
 </p>
 <p>
   <span class="wysiwyg-font-size-x-large"
@@ -653,10 +603,8 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >If you’re the server creator, you have this automatically. If not, you
-      can ask your server’s owner to grant it to you.</span
-    >
+    If you’re the server creator, you have this automatically. If not, you can
+    ask your server’s owner to grant it to you.
   </li>
 </ul>
 <p>
@@ -666,10 +614,8 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >On Desktop, click on your server name to open the dropdown menu, and
-      select Server Settings.</span
-    >
+    On Desktop, click on your server name to open the dropdown menu, and select
+    Server Settings.
   </li>
   <li>
     On Mobile, swipe left to your channel view, and tap your server name and
@@ -683,23 +629,19 @@
 </p>
 <ul>
   <li>
-    <span style="font-weight: 400"
-      >From Server Settings, select the Emoji tab and from there you can upload
-      custom emoji that anyone on the server can use!</span
-    >
+    From Server Settings, select the Emoji tab and from there you can upload
+    custom emoji that anyone on the server can use!
   </li>
 </ul>
 <div class="tip-box">
-  <span style="font-weight: 400"
-    ><strong>Pro Tip:</strong> If you’re a
-    <a
-      href="https://support.discord.com/hc/en-us/articles/115000435108"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Discord Nitro</a
-    >
-    subscriber, you can also upload gifs to use as ✨animated emoji.✨</span
+  <strong>Pro Tip:</strong> If you’re a
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Nitro</a
   >
+  subscriber, you can also upload gifs to use as ✨animated emoji.✨
 </div>
 <h2 id="h_373cf88f-b19f-4455-94a5-c55ed46ca6a4">
   <strong
@@ -713,49 +655,40 @@
   >
 </h2>
 <ol>
-  <li style="font-weight: 400">
-    <span style="font-weight: 400"
-      >To change your avatar on desktop, click the User Settings <img
-        src="https://support.discord.com/hc/article_attachments/360060867651"
-        alt="Vector_1.png"
-        width="17"
-        height="17"
-      /> cog in the lower left corner of the app, then select the Edit button
-      under My Account, and upload an image!  </span
-    >
+  <li>
+    To change your avatar on desktop, click the User Settings <img
+      src="https://support.discord.com/hc/article_attachments/360060867651"
+      alt="Vector_1.png"
+      width="17"
+      height="17"
+    /> cog in the lower left corner of the app, then select the Edit button
+    under My Account, and upload an image!  
   </li>
-  <li style="font-weight: 400">
-    <span style="font-weight: 400"
-      >If you’re on mobile, swipe left to your channel view, and check out the
-      tab bar at the bottom of your screen. The rightmost tab will take you to
-      User Settings (it should look like your profile picture if you’ve added
-      one, and a Discord logo if you haven’t!). From there, tap on your profile
-      avatar to upload a new image!</span
-    >
+  <li>
+    If you’re on mobile, swipe left to your channel view, and check out the tab
+    bar at the bottom of your screen. The rightmost tab will take you to User
+    Settings (it should look like your profile picture if you’ve added one, and
+    a Discord logo if you haven’t!). From there, tap on your profile avatar to
+    upload a new image!
   </li>
 </ol>
 <div class="tip-box">
-  <span style="font-weight: 400"
-    ><strong>Pro Tip:</strong> If you’re a Discord Nitro subscriber, you can
-    upload a gif for an ✨animated avatar.✨</span
-  >
+  <strong>Pro Tip:</strong> If you’re a Discord Nitro subscriber, you can upload
+  a gif for an ✨animated avatar.✨
 </div>
 <h2 id="h_ca22c0f9-2650-4340-91bb-29cb9ff3fb1d">
   <strong>How to Bold, Italic, Spoiler Tag, and More!</strong>
 </h2>
 <p>
-  <span style="font-weight: 400"
-    >Check out our
-    <strong
-      ><a
-        href="https://support.discord.com/hc/en-us/articles/210298617"
-        target="_blank"
-        rel="noopener noreferrer"
-        >help center article for a detailed guide on all things Markdowns</a
-      > </strong
-    >and learn all the shortcuts for how to easily edit your text
-    formatting! </span
-  >
+  Check out our
+  <strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/210298617"
+      target="_blank"
+      rel="noopener noreferrer"
+      >help center article for a detailed guide on all things Markdowns</a
+    > </strong
+  >and learn all the shortcuts for how to easily edit your text formatting!
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -798,8 +731,11 @@
     Join a voice channel, and press on
     <strong>Set a channel status</strong> under the voice channel name in the
     server’s channel list and you’ll see a new window pop-up for you to input
-    the status message. You can even add emojis in your voice channel status to
-    add a little extra flair.
+    the status message.
+  </li>
+  <li>
+    You can even add emojis in your voice channel status to add a little extra
+    flair.
   </li>
 </ul>
 <p>
@@ -855,39 +791,29 @@
   />
 </p>
 <h1 id="h_377f3391-50a8-4266-a2c2-7cb90c3cace5">
-  <span style="font-weight: 400"
-    ><strong>Troubleshooting &amp; Support</strong><br
-  /></span>
+  <strong>Troubleshooting &amp; Support</strong>
 </h1>
 <p>
-  <span style="font-weight: 400"
-    >And last but not least, we want to also provide resources to support you on
-    your journey to learning how to use Discord, and the initial steps to try
-    when you're attempting to troubleshoot an issue! </span
-  >
+  And last but not least, we want to also provide resources to support you on
+  your journey to learning how to use Discord, and the initial steps to try when
+  you're attempting to troubleshoot an issue!
 </p>
 <h2 id="h_847c6801-df7a-4c56-b6d1-5af642ad640f">
   <strong>Voice &amp; Video Troubleshooting</strong>
 </h2>
 <p>
-  <span style="font-weight: 400"
-    >We want to make sure your experience is as smooth as possible. If you’re
-    experiencing voice and video issues, check out this <a
-      href="https://support.discord.com/hc/en-us/articles/360045138471"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Voice and Video Troubleshooting guide</a
-    > here for steps on how to resolve these issues! <br
-  /></span>
+  We want to make sure your experience is as smooth as possible. If you’re
+  experiencing voice and video issues, check out this <a
+    href="https://support.discord.com/hc/en-us/articles/360045138471"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Voice and Video Troubleshooting guide</a
+  > here for steps on how to resolve these issues! 
 </p>
 <h2 id="h_008d098f-2913-4eba-97e0-c8f0ff5a82b1">
   <strong>Discord Support</strong>
 </h2>
-<p>
-  <span style="font-weight: 400"
-    >Need help with anything else? We’ve got your back. </span
-  >
-</p>
+<p>Need help with anything else? We’ve got your back.</p>
 <p>
   <a
     href="https://support.discord.com/hc/requests/new"
@@ -895,8 +821,7 @@
     rel="noopener noreferrer"
     >Contact our support team here with a full description of what questions or
     issues you're running into!</a
-  ><span style="font-weight: 400">
-    We’re always around to answer questions.</span
   >
+  We’re always around to answer questions.
 </p>
 <p> </p>

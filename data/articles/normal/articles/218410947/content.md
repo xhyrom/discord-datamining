@@ -22,22 +22,26 @@
   </li>
 </ul>
 <h1 id="h_01J5BH7661T1WQC3A7F11BC2J5">Password Requirements</h1>
-<p>
-  When making your password for your Discord account, it must be a minimum of 8
-  characters. We will not accept passwords that are less than 8 characters.
-</p>
-<p>
-  Be sure to use a secure password that you don't use anywhere else. Longer
-  passwords are usually more secure than passwords with more symbols, numbers,
-  or cases of letters. Using a password manager is a great way to generate,
-  secure, and use strong passwords for each site you log in to.
-</p>
-<p>Depending on your region, additional password requirements may apply.</p>
+<ul>
+  <li>
+    When making your password for your Discord account, it must be a minimum of
+    8 characters. We will not accept passwords that are less than 8 characters.
+  </li>
+  <li>Be sure to use a secure password that you don't use anywhere else.</li>
+  <li>
+    Longer passwords are usually more secure than passwords with more symbols,
+    numbers, or cases of letters.
+  </li>
+  <li>
+    Using a password manager is a great way to generate, secure, and use strong
+    passwords for each site you log in to.
+  </li>
+  <li>Depending on your region, additional password requirements may apply.</li>
+</ul>
 <h1 id="h_01J5BH76627K07N1C23RWXSCN9">How to change your password</h1>
-<h3 id="h_01HGXDF93YM3Q2RR57BXQ582Q4">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you have </span
-  ><a href="https://support.discord.com/hc/en-us/articles/219576828"
+<div class="info-box">
+  If you have
+  <a href="https://support.discord.com/hc/en-us/articles/219576828"
     ><span
       class="wysiwyg-underline"
       style="color: #1155cc"
@@ -48,7 +52,7 @@
     on your account, you’ll be prompted to enter your code before being able to
     change your password.</span
   >
-</h3>
+</div>
 <p>
   If you want to change your password and you know your current password, you
   can reset the password under your <strong>User Settings</strong>. Let’s go

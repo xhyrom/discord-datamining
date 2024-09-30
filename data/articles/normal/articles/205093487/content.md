@@ -1,3 +1,9 @@
+<div class="info-box">
+  For more information, check out Google Chrome's official support page here:
+  <a href="https://support.google.com/chrome/answer/2693767"
+    >https://support.google.com/chrome/answer/2693767</a
+  >
+</div>
 <p>
   If you previously disabled Discord's access to your mic in Chrome, you'll need
   to enable the permissions in your Google Chrome settings in order to use it
@@ -80,9 +86,3 @@
     height="413"
   />
 </p>
-<div class="info-box">
-  For more information, check out Chrome's official support page here:
-  <a href="https://support.google.com/chrome/answer/2693767"
-    >https://support.google.com/chrome/answer/2693767</a
-  >
-</div>
