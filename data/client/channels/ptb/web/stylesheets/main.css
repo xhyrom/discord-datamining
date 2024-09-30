@@ -37409,7 +37409,10 @@ html .progress_e5f4c6 {
   opacity: 0.8;
 }
 .button_d76538 {
-  margin: 0 16px 16px;
+  flex: 1;
+}
+.buttonSecondary_d76538 {
+  color: rgba(255, 255, 255, 0.5);
 }
 .buttonContentContainer_d76538 {
   display: flex;
@@ -37418,7 +37421,17 @@ html .progress_e5f4c6 {
 }
 .buttonText_d76538 {
   margin-left: 4px;
+}
+.buttonTextPrimary_d76538 {
   color: var(--brand-500);
+}
+.buttonTextSecondary_d76538 {
+  color: var(--white-500);
+}
+.buttonContainer_d76538 {
+  display: flex;
+  padding: 0 16px 16px;
+  gap: 8px;
 }
 .connector_d76538 {
   width: 9px;
@@ -55427,4 +55440,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.1a272e6d8f5f121d07bc.css.map*/
+/*# sourceMappingURL=12633.4e189455fbab55985af7.css.map*/
