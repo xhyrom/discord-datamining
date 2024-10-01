@@ -6626,10 +6626,12 @@
             USERS: "/users",
             ME: "/users/@me",
             GRAVITY_ITEMS_DEHYDRATED: "/users/@me/gravity-icymi",
+            GRAVITY_RECOMMENDED_GUILDS: "/gravity-recommended-guilds",
             GRAVITY_ITEMS_NEGATIVE: "/users/@me/gravity-icymi-negative",
             GRAVITY_ITEMS_HYDRATE: "/gravity-content",
             GRAVITY_CUSTOM_GUILD_SCORES: "/gravity-custom-guild-score",
             GRAVITY_CUSTOM_SCORES: "/gravity-custom-channel-scores",
+            GRAVITY_JOIN_GUILD: "/guilds/gravity-join",
             USERNAME_LOOKUP: (e) => "/users/username/".concat(e),
             POMELO_SUGGESTIONS: "/users/@me/pomelo-suggestions",
             POMELO_SUGGESTIONS_UNAUTHED:
@@ -8338,6 +8340,7 @@
           (r1.DIRECT = "Direct"),
           (r1.IN_APP = "In App"),
           (r1.GUILD_DISCOVERY = "Guild Discovery"),
+          (r1.ICYMI = "ICYMI"),
           (r1.QUICK_SWITCHER = "Quick Switcher"),
           (r1.PREMIUM_GUILD_USER_MODAL =
             "User-Facing Premium Guild Subscription Fullscreen Modal"),
@@ -8666,6 +8669,7 @@
             "Recommended Server Boost This Server CTA"),
           (r3.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA =
             "Recommended Server Go To Server CTA"),
+          (r3.ICYMI_RECOMMENDED_SERVERS = "Recommended Servers"),
           (r3.REGISTER = "Register"),
           (r3.LOGIN = "Login"),
           (r3.OVERLAY = "Overlay"),
@@ -9053,6 +9057,7 @@
           (r4.DIRECTORY_ENTRY = "Directory Channel Entry"),
           (r4.DIRECTORY_EVENTS = "Directory Channel Events"),
           (r4.POLL_ALERT = "Poll Alert"),
+          (r4.ICYMI = "ICYMI"),
           ((r8 = eO || (eO = {})).QR_CODE = "QR Code Login"),
           (r8.MOBILE_WEB_HANDOFF = "Mobile Web Handoff"),
           (r8.DEFAULT = "The default username password Login"),
@@ -12428,7 +12433,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f8c0045922f046ca3ee8ca07b081e8ee1b7c3ace",
+            release: "discord_web-399e9de60f02198627f539d4c0ecd052c2e4501f",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12497,8 +12502,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "331866"), "331866"));
-          i.YA("builtAt", String("1727739913858"));
+            i.YA("buildNumber", ((e = "331896"), "331896"));
+          i.YA("builtAt", String("1727741867179"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -48538,4 +48543,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.2cab74058b6a693d56d0.js.map
+//# sourceMappingURL=sentry.04fa4a9777b1671abdf8.js.map
