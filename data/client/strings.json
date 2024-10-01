@@ -575,6 +575,7 @@
   "APP_LAUNCHER_ACTIVITY_ITEM_SELECTED_BUTTON_ARIA_LABEL": "\"{buttonText} {applicationName}\"",
   "APP_LAUNCHER_PROMOTED": "\"Promoted\"",
   "APP_LAUNCHER_APP_ADDED": "\"App Added!\"",
+  "APP_LAUNCHER_OPEN_APP": "\"Open App\"",
   "APP_IMAGE_REC_MENU_ARIA_LABEL": "\"Image Command Actions\"",
   "APP_IMAGE_REC_MENU_HEADER": "\"Edit Image with Apps\"",
   "APP_IMAGE_REC_MENU_SEND_LABEL": "\"Send\"",
