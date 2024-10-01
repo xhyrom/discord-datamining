@@ -24,12 +24,12 @@
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
       <li><a href="#h_01J8QGKSGR918324MCDFPYTY92">THRONE AND LIBERTY</a></li>
-      <li><a href="#h_01J8JZMSEBSHRFKVF3XKMQ6213">Street Fighter 6 </a></li>
     </ul>
   </li>
   <li>
-    <a href="#h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests </a>
+    <a href="#h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</a>
     <ul>
+      <li><a href="#h_01J8JZMSEBSHRFKVF3XKMQ6213">Street Fighter 6 </a></li>
       <li><a href="#h_01J834W9W4XK6ACDM184VA93XR">Discord Activities </a></li>
       <li><a href="#h_01J7YCN0PYT9VD8PFX7FDQT6YD">FINAL FANTASY XVI</a></li>
       <li><a href="#h_01J7CES1WTMHAPE1CKZTTKFGKK">Honkai: Star Rail </a></li>
@@ -85,18 +85,27 @@
 <h2 id="h_01J8QGKSGR918324MCDFPYTY92">
   <a
     href="https://support.discord.com/hc/articles/26467935593751-THRONE-AND-LIBERTY-Quest"
+    target="_blank"
+    rel="noopener noreferrer"
   >
-    THRONE AND LIBERTY - Wolf Morph Quest</a
+    THRONE AND LIBERTY - Ornate Coin Chest Quest</a
   >
 </h2>
-<p id="h_01J8QGM0SZ3TT9ZAZ6NHA2EB2K">
-  The <strong>Wolf Morph Quest</strong> can be accepted on Discord from
-  <strong>September 26, 2024 </strong>until<strong>
-    September 30, 2024 (11:59PM UTC)</strong
-  >. The avatar decoration needs to be redeemed by
-  <strong>October 30, 2024</strong>. Quest requirements must be completed during
-  this period to receive the reward.
+<p>
+  The <strong>Ornate Coin Chest Quest</strong> can be accepted on Discord from
+  <strong>October 1, 2024</strong> until
+  <strong>October 15, 2024 (11:59PM UTC)</strong>. Users must redeem the
+  <strong>100x Ornate Coins </strong>reward codes by
+  <strong>October 31, 2024</strong>. 
 </p>
+<p>
+  <strong>Note</strong>: If you have completed the previous
+  <strong>Wolf Morph Quest </strong>by <strong>September 30, 2024</strong>, you
+  can still claim <strong>Wolf Morph avatar decoration</strong> until
+  <strong>October 30, 2024</strong>. To receive these rewards, all quest
+  requirements must be completed within the specified timeframe.
+</p>
+<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests </h1>
 <h2 id="h_01J8JZMSEBSHRFKVF3XKMQ6213">
   <a
     href="https://support.discord.com/hc/articles/26445668248983"
@@ -112,7 +121,6 @@
   to be redeemed by <strong>October 29, 2024</strong>. Quest requirements must
   be completed during this period to receive the reward.
 </p>
-<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests </h1>
 <h2 id="h_01J834W9W4XK6ACDM184VA93XR">
   <a
     href="https://support.discord.com/hc/articles/26435077579415-Discord-Activities-Quest"

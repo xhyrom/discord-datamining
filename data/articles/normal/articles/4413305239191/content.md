@@ -175,15 +175,18 @@
       height="664"
   /></span>
 </p>
-<div class="tip-box wysiwyg-text-align-left">
-  <strong>Note:</strong> On mobile, if you have been Timed out, you will see
+<div class="tip-box">
+  <strong>Note</strong>: On mobile, if you have been Timed out, you will see
   something like this.<br />
-  <center>
-    <img
-      src="https://support.discord.com/hc/article_attachments/4416508021655"
-      alt="iOS-HalfSheet.png"
-    />
-  </center>
+  <p class="wysiwyg-text-align-center">
+    <strong
+      ><span style="color: #104c32"
+        ><img
+          src="https://support.discord.com/hc/article_attachments/26756233570839"
+          width="377"
+          height="812" /></span
+    ></strong>
+  </p>
 </div>
 <h1 id="h_01J92EY9KQPPGXCT3W3E86B0SH">Frequently Asked Questions</h1>
 <p>
