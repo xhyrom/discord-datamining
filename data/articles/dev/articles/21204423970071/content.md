@@ -159,7 +159,7 @@
       href="https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
       target="_blank"
       rel="noopener noreferrer"
-      >Private Activity Safety</a
+      >Unverified Activity Safety</a
     >
   </li>
   <li>

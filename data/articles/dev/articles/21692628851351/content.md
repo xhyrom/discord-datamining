@@ -1,6 +1,8 @@
 <h1 id="h_01HRAJX0AT05CTFVYV6K8SC49E">Contents</h1>
 <p><a href="#h_01J8JN52W4CC1Z37QPH5MXBATQ">Introduction</a></p>
-<p><a href="#h_01HRAJS76QWG648YHNFVDWEN17">What are Private Activities?</a></p>
+<p>
+  <a href="#h_01HRAJS76QWG648YHNFVDWEN17">What are Unverified Activities?</a>
+</p>
 <p>
   <a href="#h_01HRAJS76Q4ZA6EJ7RMCCE5HY4"
     >Are unverified Activities safe to use?</a
