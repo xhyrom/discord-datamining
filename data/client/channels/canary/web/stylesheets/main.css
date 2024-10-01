@@ -2720,6 +2720,46 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .code_dc00ef.fontScaling_dc00ef {
   font-size: 0.75rem;
 }
+.stack_ae6a65 {
+  width: 100%;
+  display: flex;
+}
+.stack_ae6a65[data-direction="vertical"] {
+  flex-direction: column;
+}
+.stack_ae6a65[data-direction="horizontal"] {
+  flex-direction: row;
+}
+.stack_ae6a65[data-align="start"] {
+  align-items: flex-start;
+}
+.stack_ae6a65[data-align="end"] {
+  align-items: flex-end;
+}
+.stack_ae6a65[data-align="center"] {
+  align-items: center;
+}
+.stack_ae6a65[data-align="stretch"] {
+  align-items: stretch;
+}
+.stack_ae6a65[data-align="baseline"] {
+  align-items: baseline;
+}
+.stack_ae6a65[data-justify="start"] {
+  justify-content: flex-start;
+}
+.stack_ae6a65[data-justify="end"] {
+  justify-content: flex-end;
+}
+.stack_ae6a65[data-justify="center"] {
+  justify-content: center;
+}
+.stack_ae6a65[data-justify="space-around"] {
+  justify-content: space-around;
+}
+.stack_ae6a65[data-justify="space-between"] {
+  justify-content: space-between;
+}
 .combobox_eef3ef {
   overflow: hidden;
   height: 100%;
@@ -55231,4 +55271,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.78562a23caea033cccc5.css.map*/
+/*# sourceMappingURL=12633.91b32c59c6656ce9371b.css.map*/
