@@ -33040,7 +33040,7 @@ html .progress_e5f4c6 {
 }
 .container_c99f26 {
   align-items: center;
-  background: var(--background-nested-floating);
+  background: var(--primary-530);
   border-radius: 12px;
   display: inline-flex;
   gap: 4px;
@@ -33164,6 +33164,7 @@ html .progress_e5f4c6 {
   position: relative;
   overflow: hidden;
   background-color: var(--background-tertiary);
+  margin-bottom: 24px;
 }
 .headerBackground_e8df26 {
   --custom-overlay-color: hsl(var(--primary-730-hsl) / 0.9);
@@ -33191,13 +33192,6 @@ html .progress_e5f4c6 {
 .theme-light .headerBackground_e8df26 {
   --custom-overlay-color: hsl(var(--white-500-hsl) / 0.3);
 }
-.headerTop_e8df26 {
-  position: absolute;
-  width: calc(100% - 32px);
-  top: 21px;
-  display: flex;
-  justify-content: space-between;
-}
 .headerImage_e8df26 {
   z-index: 1;
   width: 100%;
@@ -33216,10 +33210,10 @@ html .progress_e5f4c6 {
   border-radius: 8px;
   box-shadow: var(--shadow-high);
 }
-.scroll_e8df26 {
-  max-height: 300px;
-}
 .scrollContent_e8df26 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 0 20px 32px;
 }
 .details_e8df26 {
@@ -33230,14 +33224,13 @@ html .progress_e5f4c6 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 16px;
+  margin-top: 8px;
   padding-top: 16px;
 }
 .benefits_e8df26 {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-top: 16px;
 }
 .description_e8df26 {
   white-space: break-spaces;
@@ -33249,10 +33242,10 @@ html .progress_e5f4c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  height: -moz-fit-content;
-  height: fit-content;
   background-color: var(--background-modifier-hover);
   border: 1px solid var(--background-modifier-accent);
+  display: flex;
+  flex-direction: column;
 }
 .image_f91bb7 {
   align-items: center;
@@ -33297,6 +33290,7 @@ html .progress_e5f4c6 {
 }
 .benefits_f91bb7 {
   background-color: var(--background-secondary);
+  flex-grow: 1;
   padding: 16px;
 }
 .benefitsContainer_f91bb7 {
@@ -55445,4 +55439,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.323ceb2658040d7a6de3.css.map*/
+/*# sourceMappingURL=12633.83e508ea449ad29d3eae.css.map*/
