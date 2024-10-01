@@ -317,58 +317,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7597523002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null
-        }
-      ],
-      "internal_job_id": 5986201002,
-      "location": {
-        "name": "San Francisco, CA "
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7597523002,
-      "updated_at": "2024-09-30T17:14:29-04:00",
-      "requisition_id": "R-100645",
-      "title": "Director, Workplace IT",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re seeking a Sr. Director of Workplace IT to elevate our exceptional IT team. In this role, you&#39;ll infuse new strategic insight and advanced technical expertise into our high-performing team. Your mission is to refine our IT operations, ensuring seamless collaboration for Discord employees from any location.&lt;/p&gt;\n&lt;p&gt;The IT team manages laptops, A/V systems, networking, and a range of cross-functional projects with Systems, Engineering, and Security. A key focus will be on automating our current manual processes to boost efficiency.&lt;/p&gt;\n&lt;p&gt;You’ll play a crucial role in enhancing daily operations for every Discord employee, whether they&#39;re onsite or working remotely. Your impact will be significant, driving productivity and connectivity across the company.&lt;/p&gt;\n&lt;p&gt;This position reports to the Senior Director of Workplace. This person will be expected to come into the office at least twice a week.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;strong&gt;What You Will Do:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead and grow an IT team: Manage a dedicated team of IT professionals to support Discord employees.&lt;/li&gt;\n&lt;li&gt;Develop IT strategy: Plan and execute the Workplace IT strategy and create policies to align with evolving business needs.&lt;/li&gt;\n&lt;li&gt;Automate and innovate: Identify and implement opportunities for automation in IT support and recommend new technologies.&lt;/li&gt;\n&lt;li&gt;Foster cross-departmental relationships: Build key relationships with departments like Engineering Security, Engineering Infrastructure, Finance, and Procurement.&lt;/li&gt;\n&lt;li&gt;Manage IT infrastructure and equipment: Oversee the maintenance and updating of hardware (laptops, networks, A/V systems) and manage IT vendors.&lt;/li&gt;\n&lt;li&gt;Ensure IT risk management: Work with IT teams to address risks such as disaster recovery, data loss, and maintain proper access controls.&lt;/li&gt;\n&lt;li&gt;Oversee helpdesk and software: Manage the IT helpdesk to ensure high-quality customer service and curate software and licenses.&lt;/li&gt;\n&lt;li&gt;Handle budgeting and metrics: Draft the annual IT budget, assist in planning, and maintain metrics for continuous improvement and high user satisfaction.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;&lt;strong&gt;What You Have:&lt;/strong&gt;&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;Bachelor&#39;s degree in Information Technology, Information Systems, Computer Science, or related field.&lt;/li&gt;\n&lt;li&gt;At least eight years in IT operations and three years in managing IT teams and projects.&lt;/li&gt;\n&lt;li&gt;Strong focus on customer service with excellent presentation and training abilities.&lt;/li&gt;\n&lt;li&gt;Proficient in computer systems, networks, security, telecommunications, A/V systems, databases, and storage; familiar with Discord’s systems (Okta, Oracle, Workday, Zendesk).&lt;/li&gt;\n&lt;li&gt;Able to work in a dynamic, startup environment and implement automation in IT support.&lt;/li&gt;\n&lt;li&gt;Proven experience setting IT strategy, building complex metrics/analytics, and making data-driven recommendations.&lt;/li&gt;\n&lt;li&gt;Skilled in using scripting languages like Python, Bash, and PowerShell for automation.&lt;/li&gt;\n&lt;li&gt;Effective in managing tasks and projects, coordinating with multiple stakeholders, and leading IT operations with a team-oriented approach.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is &lt;/em&gt;&lt;strong&gt;&lt;em&gt;$201k-$241k base salary &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;+ equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074073002,
-          "name": "IT",
-          "child_ids": [],
-          "parent_id": 4094265002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7615895002",
       "data_compliance": [
         {
@@ -946,58 +894,6 @@
           "id": 4000383002,
           "name": "San Francisco, CA",
           "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7559198002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null
-        }
-      ],
-      "internal_job_id": 5969723002,
-      "location": {
-        "name": "San Francisco, CA or Remote"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": "Data Science & Machine Learning",
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7559198002,
-      "updated_at": "2024-09-30T17:16:14-04:00",
-      "requisition_id": "R-100609",
-      "title": "Senior Data Scientist, Analytics - User Lifecycle",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is seeking an experienced and passionate Senior Data Scientist to join our world-class Data Science &amp;amp; Analytics team! In this role, you will play a key part in helping Discord fulfill its mission of creating a sense of belonging in online communities. You’ll work closely with the teams that design, build, and support Discord, providing insights that directly influence user growth and enhance the user experience. If you’re driven by data, eager to make a meaningful impact, and excited to collaborate with an amazing team, we want to hear from you! If you’re passionate about data, impact, and working on an amazing team, read on!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Partner with teams throughout Discord through the full lifecycle of data analytics from ideation and exploratory analysis, to building dashboards and reports, and A/B testing&lt;/li&gt;\n&lt;li&gt;Define KPIs and diagnostic metrics that help improve the user experience, encapsulating these measures in clean crisp dashboards that provide the company with timely and actionable information&lt;/li&gt;\n&lt;li&gt;Use our amazing infrastructure to quickly and easily build custom data sets to monitor novel product features and processes&lt;/li&gt;\n&lt;li&gt;Proactively socialize insights, dashboards, and reports with technical and non-technical audiences, soliciting feedback on where to improve&lt;/li&gt;\n&lt;li&gt;Be a champion of A/B testing and help groups throughout the company design, analyze, and interpret A/B tests correctly&lt;/li&gt;\n&lt;li&gt;Collaborate with data and engineering teams to design scalable and future-proof instrumentation&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years of experience autonomously translating ambiguous business problems into deep informative insights through hands-on analytics&lt;/li&gt;\n&lt;li&gt;4+ years of experience building performant dashboards using Tableau, Looker, or similar software - with proficiency in designing clean crisp visualizations&lt;/li&gt;\n&lt;li&gt;3+ years experience writing excellent SQL&lt;/li&gt;\n&lt;li&gt;Excellent communication skills, with the ability to translate complicated findings or technical approaches in easy-to-understand ways&lt;/li&gt;\n&lt;li&gt;2+ years of experience in the design, analysis, and interpretation of A/B tests in a large data environment&lt;/li&gt;\n&lt;li&gt;A desire to work with amazing, passionate people who care deeply about solving challenging problems to improve Discord&lt;/li&gt;\n&lt;li&gt;Last but not least - a collaborative attitude and a healthy dose of natural curiosity!&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Passion for Discord and/or online communities&lt;/li&gt;\n&lt;li&gt;Experience with analytics for social media or international subscription-based online services, including familiarity with concepts such as social graphs, LTV analysis, funnel analysis, etc.&lt;/li&gt;\n&lt;li&gt;Experience with user growth, and lifecycle management.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Experience writing performant code in BigQuery SQL&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $183,000 - $201,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4022531002,
-          "name": "Data Science & Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
           "child_ids": [],
           "parent_id": null
         }
@@ -2386,59 +2282,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7481047002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 5932297002,
-      "location": {
-        "name": "San Francisco, CA (or Remote)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": "Data Science & Machine Learning",
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7481047002,
-      "updated_at": "2024-09-30T17:31:51-04:00",
-      "requisition_id": "R-100553",
-      "title": "Staff Software Engineer, Machine Learning (Engagement ML)",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;This position is US based only.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;We are working on applying Machine Learning across Discord to unlock high impactful and new possibilities within areas such as user engagement, user growth, user understanding and personalization.&lt;/p&gt;\n&lt;p&gt;The effort to build ML driven user experiences is just getting started, and if you are someone who is passionate about building things from scratch, this could be a great opportunity for you!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build and iterate on new ML-driven products to foster creativity, discovery and engagement on Discord.&lt;/li&gt;\n&lt;li&gt;Use your technical expertise to design and build robust, high-scale, low latency content and user recommendation systems that power product features used by millions of users every day.&lt;/li&gt;\n&lt;li&gt;Work with XFN partner teams to create ML-driven roadmaps and systems and make the appropriate trade-off decision on development velocity vs system complexity during each development phase of the products.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What You Should Have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;8+ years of experience as a Machine Learning Engineer or Data Scientist.&lt;/li&gt;\n&lt;li&gt;Extensive experience building low latency and complex machine learning systems at scale and have driven execution from ideation to production implementation. You can take a high-level goal and achieve a shippable solution.&lt;/li&gt;\n&lt;li&gt;Strong product sense, and you’re passionate about applications that are driven by user feedback and end user experiences.&lt;/li&gt;\n&lt;li&gt;Experience communicating updates and resolutions to customers and other partners to lead large and complex technical projects cross-functionally.&lt;/li&gt;\n&lt;li&gt;The ability to thrive in ambiguous environments, and are excited about figuring out solutions to complex problems.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;br&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,{&amp;quot;nudgeId&amp;quot;:null,&amp;quot;severity&amp;quot;:null},&amp;quot;listItem&amp;quot;,{}]&quot;&gt;&lt;em&gt;The US base salary range for this full-time position is $246,000 to $270,400 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;\n&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4022531002,
-          "name": "Data Science & Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7589099002",
       "data_compliance": [
         {
@@ -2548,6 +2391,6 @@
     }
   ],
   "meta": {
-    "total": 46
+    "total": 43
   }
 }
