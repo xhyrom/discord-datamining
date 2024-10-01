@@ -5994,6 +5994,7 @@
   "SYSTEM_MESSAGE_CHANNEL_LINKED_TO_LOBBY": "\"$[!!{username}!!](usernameHook) has connected this channel to **!!{applicationName}!!**. Messages are now syncing. [Learn More]({helpdeskArticle})\"",
   "SYSTEM_MESSAGE_CHANNEL_LINKED_TO_LOBBY_MOBILE": "\"[!!{username}!!](usernameOnClick) has connected this channel to **!!{applicationName}!!**. Messages are now syncing. [Learn More](urlOnClick)\"",
   "SYSTEM_MESSAGE_IN_GAME_MESSAGE_NUX": "\"$[!!{username}!!](usernameHook) messaged you from $[{gameName}](gameIconHook). In-game chat may not include rich messaging features such as images, polls, or apps. [Learn More]({helpdeskArticle})\"",
+  "SYSTEM_MESSAGE_IN_GAME_MESSAGE_NUX_MOBILE": "\"[**!!{username}!!**](usernameOnClick) messaged you from **!!{gameName}!!**. In-game chat may not include rich messaging features such as images, polls, or apps. [Learn More](urlOnClick)\"",
   "NOTIFICATION_CENTER_POLL_RESULT_WINNER": "'The poll \"{questionText}\" has closed! The winner was \"{victorAnswerText}\" ({percentage}).'",
   "NOTIFICATION_CENTER_POLL_RESULT_NO_WINNER": "'The poll \"{questionText}\" has closed! There was no winner.'",
   "NOTIFICATION_CENTER_POLL_RESULT_TIE": "'The poll \"{questionText}\" has closed! The results were tied ({percentage}).'",
