@@ -32845,6 +32845,7 @@ html .progress_e5f4c6 {
 }
 .container_e8df26 {
   background: var(--background-secondary);
+  max-height: calc(100vh - 280px);
   width: calc(100vw - 60px);
   max-width: 621px;
   box-sizing: border-box;
@@ -32903,6 +32904,9 @@ html .progress_e5f4c6 {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: var(--shadow-high);
+}
+.scroller_e8df26 {
+  height: 100%;
 }
 .scrollContent_e8df26 {
   display: flex;
@@ -55273,4 +55277,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.ae0a75fd3f9ba46eb6ff.css.map*/
+/*# sourceMappingURL=12633.9fa36c193077e2e63d87.css.map*/
