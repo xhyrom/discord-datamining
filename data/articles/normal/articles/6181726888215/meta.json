@@ -1,7 +1,7 @@
 {
   "id": 6181726888215,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/6181726888215.json",
-  "html_url": "https://support.discord.com/hc/en-us/articles/6181726888215-Verification-Required-FAQ",
+  "html_url": "https://support.discord.com/hc/en-us/articles/6181726888215-How-to-Verify-Your-Discord-Account",
   "author_id": 424992137214,
   "comments_disabled": true,
   "draft": false,
@@ -9,22 +9,23 @@
   "position": 0,
   "section_id": 360009072571,
   "created_at": "2022-05-18T23:56:20Z",
-  "name": "Verification Required FAQ",
-  "title": "Verification Required FAQ",
+  "name": "How to Verify Your Discord Account",
+  "title": "How to Verify Your Discord Account",
   "source_locale": "en-us",
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2024-09-30T20:31:35Z",
+  "edited_at": "2024-10-01T05:00:08Z",
   "user_segment_id": null,
   "permission_group_id": 6449276657303,
-  "content_tag_ids": [],
+  "content_tag_ids": [
+    "01J936NH5547WC6HQAYDPJYGT4"
+  ],
   "label_names": [
     "verify",
     "answer-bot",
+    "verification",
     "phone verification",
-    "server verification",
-    "verification required",
-    "something's going on here"
+    "validation"
   ]
 }

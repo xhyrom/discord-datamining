@@ -1,10 +1,9 @@
 <p>
-  While using Discord, you might have encountered a “<strong
-    >Verification Required</strong
-  >” message, which is one of our safety efforts for our platform. We want users
-  to feel secure using Discord, and we invest in features that help protect you
-  from scams or abuse. Requiring that you verify your email address or phone
-  number helps prove you are not a robot and helps keep spammers out.
+  <span id="docs-internal-guid-9f9d7c98-7fff-e3c7-0b29-02c7f776824c"
+    >In order to use Discord and check out Discord servers, you may be required
+    to verify your email and phone number as part of our safety system to keep
+    users and communities safe.</span
+  >
 </p>
 <p>
   <span class="wysiwyg-font-size-large"
@@ -40,11 +39,20 @@
 <h1 id="h_01G3CTDAACPA8E9BRFWCQNSBY4">
   <strong>Why do I need to verify my account?</strong>
 </h1>
+<p id="docs-internal-guid-d65c3785-7fff-3b78-6528-5107de5c3836">
+  We want users to feel secure using Discord, and we invest in features that
+  help protect you from scams or abuse. Requiring that you verify your email
+  address or phone number helps prove you are not a robot and helps keep
+  spammers out.
+</p>
 <p>
-  The “<strong>Verification Required</strong>” message is part of our
-  verification system to help protect both you and the communities on Discord.
-  This means sometimes our systems detect activity that calls for extra
-  information.
+  While using Discord, you might have encountered a “<strong
+    >Verification Required</strong
+  >” message, which is one of our safety efforts for our platform. The “<strong
+    >Verification Required</strong
+  >” message is part of our verification system to help protect both you and the
+  communities on Discord. This means sometimes our systems detect activity that
+  calls for extra information.
 </p>
 <p>
   This verification not only serves to help confirm to Discord that you are more
@@ -54,7 +62,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12476192844183"
-    alt="veri_captcha.png"
+    alt="The Verification Required page that users may encounter while using Discord"
     width="606"
     height="440"
   />
@@ -134,7 +142,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12476380374807"
-    alt="start_verification.png"
+    alt="The first step to the Discord verification process with the Start Verification button to tap"
     width="350"
     height="577"
   />
@@ -157,7 +165,7 @@
 <p class="wysiwyg-text-align-center">
   =<img
     src="https://support.discord.com/hc/article_attachments/12476437255703"
-    alt="enterphone_fin.png"
+    alt="As part of the verification process on Discord, users must enter their phone number at this mobile page in the empty text field before pressing the Next button"
     width="350"
     height="590"
   />
