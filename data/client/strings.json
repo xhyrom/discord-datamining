@@ -4790,7 +4790,7 @@
   "AUTHORIZED": "\"Authorized\"",
   "AUTHORIZED_SUCCESS": "\"Success!\"",
   "AUTHORIZED_APP_TO_SERVER": "\"**!!{installedApplicationName}!!** has been authorized and added to **!!{guildName}!!**.\"",
-  "AUTHORIZED_APP": "\"**!!{installedApplicationName}!!** has been authorized and added.\"",
+  "AUTHORIZED_APP": "\"**!!{installedApplicationName}!!** has been authorized and added to your apps!\"",
   "AUTHORIZED_GENERIC": "\"This application has been authorized and added to the server.\"",
   "OAUTH2_MESSAGE_CTA": "\"You may now close this window or tab.\"",
   "WHITELISTED": "\"Whitelisted\"",
