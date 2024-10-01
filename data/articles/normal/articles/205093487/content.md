@@ -11,20 +11,42 @@
 </p>
 <p>
   Follow these steps below to allow Discord access to your mic in the Chrome
-  browser. 
+  browser.
 </p>
-<h1 id="h_01J8GF9XKP7ZYZAB9BFQQEEHHR">
-  <strong>Step 1: Head into your Chrome Settings</strong>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01J92KQD0WSC8NX9XMMD2R8CNE"
+          >Step 1: Head into your Chrome Settings</a
+        ></strong
+      >
+    </li>
+    <li>
+      <a href="#h_01J8GFA739T24DCMGCSZDNAA6M"
+        ><strong>Step 2: Remove an Existing Exception or Permission</strong></a
+      >
+    </li>
+    <li>
+      <a href="#h_01J8GFAF2FKKSV1443DZF4PG12"
+        ><strong>Step 3: Join Voice and Allow to Enable Access<br /></strong
+      ></a>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01J92KQD0WSC8NX9XMMD2R8CNE">
+  Step 1: Head into your Chrome Settings
 </h1>
 <p>
-  Select the ellipsis
-  <img
-    src="https://support.discord.com/hc/article_attachments/360058758052"
-    alt="Screen_Shot_2020-06-04_at_3.06.27_PM.png"
-    width="17"
-    height="25"
-  />
-  on the browser toolbar and choose <strong>Settings</strong>.
+  Select the <strong>ellipsis</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/26739695242519"
+    width="24"
+    height="24"
+  />] on the browser toolbar and choose <strong>Settings</strong>.
 </p>
 <p>
   Then press on the <strong>Privacy and security </strong>section in the
@@ -35,27 +57,33 @@
     ><img
       src="https://support.discord.com/hc/article_attachments/4413154480535"
       alt="Enable-mic-Chrome-Privacy-setting-demo.gif"
-      width="659"
-      height="466"
+      width="683"
+      height="483"
   /></strong>
 </p>
 <h1 id="h_01J8GFA739T24DCMGCSZDNAA6M">
-  <strong>Step 2: Remove the Blocked Access</strong>
+  Step 2: Remove an Existing Exception or Permission
 </h1>
 <p>
   Choose the <strong>Microphone</strong> option and find
-  <strong>Discord</strong> in the <strong>Block</strong> section.
+  <strong>Discord</strong> in the
+  <strong>Customized behaviors section </strong>under
+  <strong>Not allowed to use your microphone</strong>. 
 </p>
 <p>
-  Press on the <strong>t</strong><strong>rashcan </strong>symbol to remove the
-  block in access. 
+  To the right of <strong>Discord</strong>, press the
+  <strong>trashcan </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/26739695245847"
+    width="24"
+    height="24"
+  />] to remove the block in access. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/4413141142295"
     alt="Enable-Mic-in-Chrome-Unblock-Discord-mic-demo.gif"
-    width="663"
-    height="469"
+    width="679"
+    height="480"
   />
 </p>
 <h1 id="h_01J8GFAF2FKKSV1443DZF4PG12">
@@ -64,7 +92,7 @@
 <p>
   In the Discord browser client in Chrome,
   <span style="color: #4f545c; background-color: #ffffff"
-    >join a voice channel and press the </span
+    >join a voice channel and press select an </span
   ><strong
     ><span style="color: #4f545c; background-color: #ffffff"
       >Allow</span
@@ -79,10 +107,10 @@
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/20355819520919"
-    alt="ezgif.com-video-to-gif-converter(1).gif"
-    width="649"
-    height="413"
-  />
+  <span style="color: #4f545c; background-color: #ffffff"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/26739677033879"
+      width="682"
+      height="448"
+  /></span>
 </p>
