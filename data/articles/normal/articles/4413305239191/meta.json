@@ -2,7 +2,7 @@
   "id": 4413305239191,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4413305239191.json",
   "html_url": "https://support.discord.com/hc/en-us/articles/4413305239191-Time-Out-FAQ",
-  "author_id": 364802902112,
+  "author_id": 2921470028,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -21,6 +21,8 @@
   "content_tag_ids": [],
   "label_names": [
     "moderation",
-    "answer-bot"
+    "answer-bot",
+    "timeout",
+    "time out"
   ]
 }
