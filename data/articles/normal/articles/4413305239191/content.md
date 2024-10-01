@@ -102,7 +102,7 @@
 </p>
 <div class="tip-box wysiwyg-text-align-left">
   <strong>Note:</strong> If you have been Timed out, you will see something like
-  this:<br />
+  this:
   <center>
     <img
       src="https://support.discord.com/hc/article_attachments/26737916524695"
@@ -111,6 +111,7 @@
     />
   </center>
 </div>
+<p> </p>
 <h2 id="h_01J92EY9KPW29FY92ZV6ZA7H34">Mobile</h2>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
@@ -174,9 +175,9 @@
       height="664"
   /></span>
 </p>
-<div class="tip-box">
+<div class="tip-box wysiwyg-text-align-left">
   <strong>Note:</strong> On mobile, if you have been Timed out, you will see
-  something like this.
+  something like this.<br />
   <center>
     <img
       src="https://support.discord.com/hc/article_attachments/4416508021655"
