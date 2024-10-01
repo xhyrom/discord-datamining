@@ -1,15 +1,17 @@
-<h3 id="01H7GS346K149V3V2H2VK55MF4">
+<p>
+  Soundboard is a Discord feature that you can use in voice channels with
+  friends to react to conversations and video streams with brief audio clips.
+</p>
+<p>
+  Learn more about how you can use soundboard, add sounds to your soundboard,
+  and how to manage soundboard usage in Discord servers.
+</p>
+<h3 id="01J9343D94R75FRFR84H1TS04B">
   <span style="color: #434343" data-darkreader-inline-color=""
     >This experimental feature is only available to a limited number of
     communities!</span
   >
 </h3>
-<p>
-  What’s that sound? Is it a bird? Is it a plane? No, it’s your friend smashing
-  the button with the airhorn sound in the server’s <strong>Soundboard</strong>!
-  Soundboard is your way to react in a Discord voice channel with brief audio
-  clips. Learn more about how you can use Soundboard below. 
-</p>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers: </strong></span
@@ -17,110 +19,82 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZS5ZCTGQ92MBZAQX0QCW1"
-      >What is Soundboard?</a
-    >
+    <a href="#h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</a>
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/12612888127767#docs-internal-guid-98910e3a-7fff-d156-b753-835d493e7571"
+        <a href="#docs-internal-guid-98910e3a-7fff-d156-b753-835d493e7571"
           >Server Boost Soundboard</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSGZ15S6B5RVD4W8EZWG9"
-      >How do I use Soundboard?</a
-    >
+    <a href="#h_01GTYZSGZ15S6B5RVD4W8EZWG9">How do I use Soundboard?</a>
     <ul>
+      <li><a href="#h_01H93M0BWWG19PFPB0SNM7RQ7W">Desktop</a></li>
+      <li><a href="#h_01H93M0X2JH7F0M2VBG87VN3HH">Mobile</a></li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H93M0BWWG19PFPB0SNM7RQ7W"
-          >Desktop</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H93M0X2JH7F0M2VBG87VN3HH"
-          >Mobile</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSNM9T3V440WDB2SVEVDX"
+        <a href="#h_01GTYZSNM9T3V440WDB2SVEVDX"
           >How can I upload new sounds to the server’s Soundboard?</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01HGXYYQ32RA9GVZB24HT5GX2F"
+    <a href="#h_01HGXYYQ32RA9GVZB24HT5GX2F"
       >Recently Heard and Frequently Used Sounds</a
     >
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01HGXYYQ32TMMCSQ6MTGY0AVR2"
-          >What is Recently Heard?</a
-        >
+        <a href="#h_01HGXYYQ32TMMCSQ6MTGY0AVR2">What is Recently Heard?</a>
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01HGXYYQ32T42569NMXC1HDSNX"
+        <a href="#h_01HGXYYQ32T42569NMXC1HDSNX"
           >What is Frequently Used Sounds?</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSTZQV1GXSRVX1A420WPX"
+    <a href="#h_01GTYZSTZQV1GXSRVX1A420WPX"
       >As a Server Admin, how can I manage Soundboard?</a
     >
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/12612888127767#docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36"
+        <a href="#docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36"
           >How to give/remove Soundboard permissions</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GWJXHA3ABX5H4KCBGPRZCF69"
+        <a href="#h_01GWJXHA3ABX5H4KCBGPRZCF69"
           >How to manage sounds for Soundboard</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H5JJ9XK68MMK1WXBFAQ0AQGR"
-      >Soundboard Entrance Sounds</a
-    >
+    <a href="#h_01H5JJ9XK68MMK1WXBFAQ0AQGR">Soundboard Entrance Sounds</a>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZT0R7SHN43R0HEHGGTBGH"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01GTYZT0R7SHN43R0HEHGGTBGH">Frequently Asked Questions</a>
   </li>
 </ul>
 <h1 id="h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</h1>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12931011736343"
-    alt="soundboard_example.gif"
+    alt="A GIF demonstration of how to use Discord soundboard in a Discord server"
   />
 </p>
 <p>
-  Soundboard is a voice channel feature that allows you to play a short audio
-  clip that can be heard by all participants in the same voice channel. Much
-  like Reactions and Super Reactions, Soundboard is a way for you to express
-  yourself and react to the voice channel’s  conversation or Go Live stream.
+  What’s that sound? Is it a bird? Is it a plane? No, it’s your friend smashing
+  the button with the airhorn sound in the server’s <strong>Soundboard</strong>!
+  Soundboard is your way to react in a Discord voice channel with brief audio
+  clips. Soundboard is a voice channel feature that allows you to play a short
+  audio clip that can be heard by all participants in the same voice channel.
+  Much like Reactions and Super Reactions, Soundboard is a way for you to
+  express yourself and react to the voice channel’s  conversation or Go Live
+  stream.
 </p>
 <h2 id="docs-internal-guid-98910e3a-7fff-d156-b753-835d493e7571">
   Server Boost Soundboard
@@ -145,7 +119,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12931074785431"
-    alt="image5.png"
+    alt="An example of the Discord app icon for soundboard which is a musical note in a box"
   />
 </p>
 <p>
@@ -157,7 +131,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12931069480599"
-    alt="image6.png"
+    alt="The Discord soundboard icon that you can find in app while in a voice channel"
   />
 </p>
 <p>
@@ -167,7 +141,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12931069880727"
-    alt="image8.png"
+    alt="The Discord soundboard shows the collection of soundboard sounds available to a Discord user"
   />
 </p>
 <p>
@@ -179,7 +153,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/12931076069655"
-    alt="image10.png"
+    alt="An example of how to favorite a Discord soundboard sound by pressing the star icon by the sound"
   />
 </p>
 <p>

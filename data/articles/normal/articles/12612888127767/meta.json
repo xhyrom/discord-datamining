@@ -1,7 +1,7 @@
 {
   "id": 12612888127767,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/12612888127767.json",
-  "html_url": "https://support.discord.com/hc/en-us/articles/12612888127767-Soundboard-FAQ",
+  "html_url": "https://support.discord.com/hc/en-us/articles/12612888127767-Discord-Soundboard-Guide-Using-Adding-and-Managing-Sounds",
   "author_id": 2921470028,
   "comments_disabled": true,
   "draft": false,
@@ -9,23 +9,26 @@
   "position": 14,
   "section_id": 201110537,
   "created_at": "2023-02-22T20:35:05Z",
-  "name": "Soundboard FAQ",
-  "title": "Soundboard FAQ",
+  "name": "Discord Soundboard Guide: Using, Adding, and Managing Sounds",
+  "title": "Discord Soundboard Guide: Using, Adding, and Managing Sounds",
   "source_locale": "en-us",
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2023-12-06T17:42:54Z",
+  "edited_at": "2024-10-01T04:18:00Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
-  "content_tag_ids": [],
+  "content_tag_ids": [
+    "01H96SA7ZCPH98YB2AP207KHTK",
+    "01J9346B07Z47THSVCSWS82VEY",
+    "01J9346H65VXCJ8P7ZA4K95A7G",
+    "01J9347HH2CV796H6KKH3AJMHB",
+    "01J9347V71PAY33CF3AD4NJBC0"
+  ],
   "label_names": [
+    "sounds",
     "answer-bot",
-    "voice channel",
     "soundboard",
-    "voice call",
-    "sound board",
-    "sound effect",
     "sound effects"
   ]
 }
