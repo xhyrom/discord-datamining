@@ -9,8 +9,7 @@
   ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""><br /></span
-  ><span style="color: #2e3338" data-darkreader-inline-color=""
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     >In order to access this feature, you will need to enable a new permission </span
   ><strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
@@ -101,20 +100,17 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""> </span>
 </p>
-<h3 id="h_01J92EY9KPTW17GJH414C9J9JY">
-  <span style="color: #104c32" data-darkreader-inline-color=""
-    >Note: If you have been Timed out, you will see something like this:</span
-  >
-</h3>
-<h3 id="h_01J92EY9KP7WH9DGMDSRQBPC1H" class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #104c32" data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/26737916524695"
-        width="624"
-        height="527" /></span
-  ></strong>
-</h3>
+<div class="tip-box wysiwyg-text-align-left">
+  <strong>Note:</strong> If you have been Timed out, you will see something like
+  this:<br />
+  <center>
+    <img
+      src="https://support.discord.com/hc/article_attachments/26737916524695"
+      width="584"
+      height="493"
+    />
+  </center>
+</div>
 <h2 id="h_01J92EY9KPW29FY92ZV6ZA7H34">Mobile</h2>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
@@ -178,22 +174,16 @@
       height="664"
   /></span>
 </p>
-<h3 id="h_01J92EY9KQD43PDG443SMBQ2NG">
-  <strong
-    ><span style="color: #104c32" data-darkreader-inline-color=""
-      >Note: On mobile, if you have been Timed out, you will see something like
-      this.</span
-    ></strong
-  >
-</h3>
-<p class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #104c32" data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/4416508021655"
-        alt="iOS-HalfSheet.png" /></span
-  ></strong>
-</p>
+<div class="tip-box">
+  <strong>Note:</strong> On mobile, if you have been Timed out, you will see
+  something like this.
+  <center>
+    <img
+      src="https://support.discord.com/hc/article_attachments/4416508021655"
+      alt="iOS-HalfSheet.png"
+    />
+  </center>
+</div>
 <h1 id="h_01J92EY9KQPPGXCT3W3E86B0SH">Frequently Asked Questions</h1>
 <p>
   <strong
