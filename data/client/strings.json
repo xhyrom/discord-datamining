@@ -3637,6 +3637,7 @@
   "AUTHORIZED_APPS": "\"Authorized Apps\"",
   "AUTHORIZED_APPS_AUTHORIZED_ON": "\"Authorized on {date}\"",
   "MANAGE_AUTHORIZED_APP": "\"Manage Authorized App\"",
+  "MANAGE_APP": "\"Manage App\"",
   "DEAUTHORIZE": "\"Deauthorize\"",
   "DEAUTHORIZE_APP": "\"Deauthorize Application\"",
   "ABOUT_THIS_APP": "\"About this App\"",
