@@ -1330,6 +1330,10 @@
       "OPTIONS"
     ]
   },
+  "GRAVITY_RECOMMENDED_GUILDS": {
+    "url": "/gravity-recommended-guilds",
+    "allowed_methods": null
+  },
   "GRAVITY_ITEMS_NEGATIVE": {
     "url": "/users/@me/gravity-icymi-negative",
     "allowed_methods": null
@@ -1355,6 +1359,10 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "GRAVITY_JOIN_GUILD": {
+    "url": "/guilds/gravity-join",
+    "allowed_methods": null
   },
   "USERNAME_LOOKUP": {
     "url": "/users/username/:param",
