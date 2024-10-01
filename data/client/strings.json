@@ -18311,6 +18311,7 @@
   "EMAIL_CHANGE_REASONING_IMPERSONATION_EDUCATION": "\"This sounds very similar to common scams going around! Changing your email address can give someone else access to your account - [learn more about trending scams here]({hcArticle}).\"",
   "EMAIL_CHANGE_REASONING_DISCORD_NEVER_ASKS_FOR_EMAIL_CHANGE": "\"Discord will never ask you to change your email - report anyone who asks you to do this.\"",
   "EMAIL_CHANGE_REASONING_CONTINUE": "\"I know the risks, continue\"",
+  "EMAIL_CHANGE_REASONING_SOMETHING_ELSE_TEXTAREA_HINT": "\"Please share why you're changing your email.\"",
   "E2EE_ENCRYPTION": "\"Encryption\"",
   "E2EE_VERIFICATION_CODE": "\"Verification Code\"",
   "E2EE_VOICE_PRIVACY_CODE": "\"Voice Privacy Code\"",
