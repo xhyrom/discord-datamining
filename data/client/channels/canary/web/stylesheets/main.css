@@ -43977,6 +43977,11 @@ html .progress_e5f4c6 {
   margin-top: 0;
   padding-top: 4px;
 }
+.visual-refresh .children_a934d8 {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
 .tile_dc5fc4 {
   position: relative;
   background-color: var(--primary-700);
@@ -55440,4 +55445,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.4e189455fbab55985af7.css.map*/
+/*# sourceMappingURL=12633.323ceb2658040d7a6de3.css.map*/
