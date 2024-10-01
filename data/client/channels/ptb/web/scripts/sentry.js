@@ -12433,7 +12433,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6af18716a5c5669663423a3aab1b3328a9d43619",
+            release: "discord_web-e793cd966861193a3adc1f71cc0b2d7bd2039619",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12502,8 +12502,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "332039"), "332039"));
-          i.YA("builtAt", String("1727802953928"));
+            i.YA("buildNumber", ((e = "332047"), "332047"));
+          i.YA("builtAt", String("1727803359558"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -14078,6 +14078,34 @@
                 light: { color: "BLACK_500", opacity: 0.1 },
                 dark: { color: "BLACK_500", opacity: 0.3 },
               },
+            },
+            INPUT_BORDER: {
+              category: "background",
+              [n.DARK]: { raw: "PLUM_11", opacity: 0.32 },
+              [n.LIGHT]: { raw: "PLUM_11", opacity: 0.32 },
+              [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.32 },
+              [n.DARKER]: { raw: "PLUM_11", opacity: 0.32 },
+            },
+            INPUT_ERROR_BACKGROUND: {
+              category: "background",
+              [n.DARK]: { raw: "RED_500", opacity: 0.12 },
+              [n.LIGHT]: { raw: "RED_500", opacity: 0.12 },
+              [n.MIDNIGHT]: { raw: "RED_500", opacity: 0.12 },
+              [n.DARKER]: { raw: "RED_500", opacity: 0.12 },
+            },
+            INPUT_ERROR_BORDER: {
+              category: "background",
+              [n.DARK]: { raw: "RED_360", opacity: 1 },
+              [n.LIGHT]: { raw: "RED_360", opacity: 1 },
+              [n.MIDNIGHT]: { raw: "RED_360", opacity: 1 },
+              [n.DARKER]: { raw: "RED_360", opacity: 1 },
+            },
+            INPUT_ERROR_TEXT: {
+              category: "background",
+              [n.DARK]: { raw: "RED_260", opacity: 1 },
+              [n.LIGHT]: { raw: "RED_700", opacity: 1 },
+              [n.MIDNIGHT]: { raw: "RED_260", opacity: 1 },
+              [n.DARKER]: { raw: "RED_260", opacity: 1 },
             },
             INPUT_FOCUSED_BORDER: {
               category: "background",
@@ -19252,6 +19280,10 @@
           (n.INFO_WARNING_FOREGROUND = "info-warning-foreground"),
           (n.INFO_WARNING_TEXT = "info-warning-text"),
           (n.INPUT_BACKGROUND = "input-background"),
+          (n.INPUT_BORDER = "input-border"),
+          (n.INPUT_ERROR_BACKGROUND = "input-error-background"),
+          (n.INPUT_ERROR_BORDER = "input-error-border"),
+          (n.INPUT_ERROR_TEXT = "input-error-text"),
           (n.INPUT_FOCUSED_BORDER = "input-focused-border"),
           (n.INPUT_PLACEHOLDER_TEXT = "input-placeholder-text"),
           (n.INTERACTIVE_ACTIVE = "interactive-active"),
@@ -20474,6 +20506,30 @@
               o.I.BLACK,
               o.I.PLUM_23_ALPHA,
               o.I.PLUM_24,
+            ],
+            "input-border": [
+              o.I.PLUM_11,
+              o.I.PLUM_11,
+              o.I.PLUM_11,
+              o.I.PLUM_11,
+            ],
+            "input-error-background": [
+              o.I.RED_500,
+              o.I.RED_500,
+              o.I.RED_500,
+              o.I.RED_500,
+            ],
+            "input-error-border": [
+              o.I.RED_360,
+              o.I.RED_360,
+              o.I.RED_360,
+              o.I.RED_360,
+            ],
+            "input-error-text": [
+              o.I.RED_260,
+              o.I.RED_700,
+              o.I.RED_260,
+              o.I.RED_260,
             ],
             "input-focused-border": [
               o.I.WHITE,
@@ -48543,4 +48599,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.7ba4707652d10a63fc05.js.map
+//# sourceMappingURL=sentry.99a3351a588358ad94b5.js.map
