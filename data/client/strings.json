@@ -19053,6 +19053,7 @@
   "LEADERBOARD_LOL_SUMMONERS_RIFT": "\"Summoner's Rift\"",
   "LEADERBOARD_POPOUT_PREVIEW_SHOW_FULL_LEADERBOARD": "\"View Full Leaderboard\"",
   "LEADERBOARD_RANK_CHANGE_CURRENT_USER": "\"You're now #{rank}\"",
-  "LEADERBOARD_RANK_CHANGE_OTHER_USER": "\"New #{rank}\"",
-  "LEADERBOARD_RANK_CHANGE_NEW_CHAMPION": "\"New Champion\""
+  "LEADERBOARD_RANK_CHANGE_OTHER_USER": "\"New #{rank}: !!{username}!!\"",
+  "LEADERBOARD_RANK_CHANGE_NEW_CHAMPION": "\"New Champion\"",
+  "LEADERBOARD_START_PLAYING_CTA": "\"Play and win to take the crown\""
 }
