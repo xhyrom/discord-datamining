@@ -263,6 +263,66 @@
       ]
     },
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7645380002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null
+        }
+      ],
+      "education": "education_optional",
+      "internal_job_id": 6007386002,
+      "location": {
+        "name": "San Francisco, CA or Remote"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 7645380002,
+      "updated_at": "2024-10-02T17:15:53-04:00",
+      "requisition_id": "R-100668",
+      "title": "Director of Business Development, Gaming",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Director of Business Development, Gaming&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;This position is US based only.&lt;/p&gt;\n&lt;p&gt;We are looking for a Director of Business Development who is passionate about building new partnerships that will accelerate our gaming initiatives with game developers, studios, and publishers. You will build partnership strategies and lead its execution including sourcing and negotiating complex, high-impact deals. You will interact with senior executives at our partner organizations and be a trusted evangelist for Discord’s products and priorities. Internally, you will be an advocate for our partners and bring the “voice of the partner” to inform business and product decisions. This is an individual contributor role and will report into the Head of Business Development.&lt;/p&gt;\n&lt;h4&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead the full life-cycle of partnership execution from initial partner engagement through deal structuring and agreement closing&lt;/li&gt;\n&lt;li&gt;Source and cultivate relationships with key industry players and decision-makers at potential partner companies&lt;/li&gt;\n&lt;li&gt;Articulate and refine Discord value proposition to secure partner commitments entering into mutually beneficial, sustainable relationships&lt;/li&gt;\n&lt;li&gt;Work with internal product, engineering and marketing teams to deliver feedback and refine our offerings for large scale partner adoption&lt;/li&gt;\n&lt;li&gt;Work with the partner management team and cross-functional colleagues including finance, marketing, operations, legal and product to ensure partner success and achieve defined KPIs&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h4&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;10+ years of proven experience in business development and partnerships experience&lt;/li&gt;\n&lt;li&gt;7+ years experience in the gaming industry - PC, console and/or mobile&lt;/li&gt;\n&lt;li&gt;History of deal making experience including technical product-driven deals and first-of-kind partnership work&lt;/li&gt;\n&lt;li&gt;Proven ability to work with internal cross-functional teams at early stages to define and articulate partner value within the context of Discord&lt;/li&gt;\n&lt;li&gt;Deep knowledge and experience in the gaming space including industry trends, company thinking and an informed perspective on perceived opportunities&lt;/li&gt;\n&lt;li&gt;Exceptional communications skills (verbal and written) with the ability to inspire and engage C-level executives&lt;/li&gt;\n&lt;li&gt;Ability to develop new ideas and independently build a business case and pitch it to relevant stakeholders&lt;/li&gt;\n&lt;li&gt;Experience structuring complex partnerships and navigating challenging contract negotiations&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h4&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;Energetic team player with a sense of humor, humility, kindness &amp;amp; empathy&lt;/li&gt;\n&lt;li&gt;Closing win-win partnerships is in your DNA and gives you purpose&lt;/li&gt;\n&lt;li&gt;You play a lot of games and understand making the player experience better&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $218,000 to $240,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074062002,
+          "name": "Global Partnerships",
+          "child_ids": [],
+          "parent_id": 4094262002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7428401002",
       "data_compliance": [
         {
@@ -2512,6 +2572,6 @@
     }
   ],
   "meta": {
-    "total": 45
+    "total": 46
   }
 }
