@@ -139,7 +139,7 @@
 </div>
 <p>
   We are <strong>unable</strong> to provide a refund for a Nitro gift purchase
-  once the gift <strong>has been claimed by another user. </strong>
+  once the gift has been claimed by another user. 
 </p>
 <p>
   However, for <strong>unclaimed Nitro gifts </strong>purchased on Discord on
@@ -155,6 +155,10 @@
     ></a
   >. 
 </p>
+<div class="warn-box">
+  Any promotional offers you receive in connection with your purchase of a Nitro
+  gift may be revoked if you receive a refund for the underlying gift purchase.
+</div>
 <h1 id="h_01J5BJ1E128CKG7FPKAKKGJQD9">
   DLC, Profile Cosmetics and In-App Purchases
 </h1>
