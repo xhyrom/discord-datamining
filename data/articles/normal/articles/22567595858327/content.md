@@ -32,9 +32,6 @@
       <li>
         <a href="#h_01HVRY7E8S1GMH2YZTN907BAY5">Friends Receiving a Trial</a>
       </li>
-      <li>
-        <a href="#h_01J5R9YKKANEJJKZTJ8CGS8S1D">Nitro Member Discount Reward</a>
-      </li>
     </ul>
   </li>
   <li>
@@ -112,51 +109,6 @@
     person, or try again later.</span
   >
 </p>
-<h2 id="h_01J5R9YKKANEJJKZTJ8CGS8S1D">
-  <span style="color: #2e3338; background-color: #ffffff"
-    >Nitro Member Discount Reward</span
-  >
-</h2>
-<div class="exp-box">
-  A limited number of Nitro subscribers can earn a 40% discount on their next
-  month or year of Nitro. We are hoping to expand access to this feature to more
-  users in the future.
-</div>
-<p>
-  You will be eligible to receive the Share Nitro discount if the following
-  conditions are met:
-</p>
-<ul>
-  <li>
-    A friend that you sent a trial to successfully renews to become a paying
-    Nitro member at the end of their trial. 
-  </li>
-  <li>You are only eligible for 1 discount reward at a time.</li>
-  <li>
-    You do not have any active discount offers on your following subscription
-    renewal.
-  </li>
-  <li>
-    Discord reserves the right to limit the total number of discount rewards a
-    user can earn.
-  </li>
-</ul>
-<div class="info-box">
-  <strong>Note:</strong> You do not need to be Discord “<a
-    href="https://support.discord.com/hc/articles/218344397-How-do-I-add-my-friend-to-my-friends-list"
-    target="_blank"
-    rel="noopener noreferrer"
-    >friends</a
-  >” with someone to send or receive a Share Nitro trial,  but you must be able
-  to send a direct message (DM) to them. For information on sending DMs, refer
-  to our Help Center article<a
-    href="https://support.discord.com/hc/en-us/articles/360060145013-Why-isn-t-my-DM-going-through"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    here</a
-  ><span style="color: #2e3338">.</span>
-</div>
 <h1 id="h_01HVRY7E8S7RJM0888YQMZCMGE">
   HOW TO SHARE A NITRO TRIAL WITH YOUR FRIENDS
 </h1>
