@@ -52,7 +52,6 @@
           >How to Redeem your 2-week Trial</a
         >
       </li>
-      <li><a href="#h_01J5RAQQ4VC221HJN0YV31WGHW">Discount Reward</a></li>
     </ul>
   </li>
   <li>
@@ -278,29 +277,6 @@
     >Help Center article</a
   >. 
 </div>
-<h1 id="h_01J5RAQQ4VC221HJN0YV31WGHW">Discount Reward</h1>
-<div class="exp-box">
-  This is currently available to a limited number of users. We are hoping to
-  expand access to this feature to more users in the future.
-</div>
-<p>
-  Nitro members can earn a discount on their next month or year of Nitro after
-  meeting the
-  <a href="#h_01HVRY7E8SNEPQT1Q6H7T6ME4X">eligibility criteria above</a>. Once
-  earned, you’ll see the status of the reward under
-  <strong>Nitro Tab &gt; Share Nitro</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/25780107390999"
-    width="624"
-    height="207"
-  />
-</p>
-<p>
-  Additionally, you’ll be able to see the discount applied to your upcoming
-  renewal under <strong>User Settings &gt; Subscriptions</strong>. 
-</p>
 <h1 id="h_01HVRY7E8T0ADKKTYZWQXHSE7D">FREQUENTLY ASKED QUESTIONS</h1>
 <p><strong>Q: As a Nitro member, who can I share Nitro trials with?</strong></p>
 <p>
