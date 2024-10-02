@@ -4460,7 +4460,7 @@
             return eP;
           },
           AEg: function () {
-            return eq;
+            return eJ;
           },
           ANM: function () {
             return a5;
@@ -4595,7 +4595,7 @@
             return oD;
           },
           I_8: function () {
-            return az;
+            return aq;
           },
           IlC: function () {
             return tc;
@@ -4661,7 +4661,7 @@
             return em;
           },
           ME: function () {
-            return aq;
+            return aJ;
           },
           MoX: function () {
             return tg;
@@ -4694,7 +4694,7 @@
             return o9;
           },
           OGo: function () {
-            return q;
+            return J;
           },
           OMz: function () {
             return aF.OM;
@@ -4784,7 +4784,7 @@
             return aF.S7;
           },
           S9g: function () {
-            return eJ;
+            return ez;
           },
           SOq: function () {
             return tE;
@@ -4952,7 +4952,7 @@
             return aF.aO;
           },
           aZC: function () {
-            return oJ;
+            return oz;
           },
           aib: function () {
             return eE;
@@ -4964,10 +4964,10 @@
             return o6;
           },
           b4C: function () {
-            return tz;
+            return tq;
           },
           b8q: function () {
-            return oq;
+            return oJ;
           },
           bL: function () {
             return et;
@@ -5066,13 +5066,13 @@
             return ab.h;
           },
           hCA: function () {
-            return tJ;
+            return tz;
           },
           hUK: function () {
             return eV;
           },
           hVg: function () {
-            return ez;
+            return eq;
           },
           hes: function () {
             return g;
@@ -5150,7 +5150,7 @@
             return od;
           },
           mFx: function () {
-            return J;
+            return z;
           },
           nkL: function () {
             return iE;
@@ -5162,7 +5162,7 @@
             return o8;
           },
           oAB: function () {
-            return oz;
+            return oq;
           },
           oCV: function () {
             return o4;
@@ -5171,7 +5171,7 @@
             return C;
           },
           o_z: function () {
-            return aJ;
+            return az;
           },
           p3w: function () {
             return oB;
@@ -5315,7 +5315,7 @@
             return tw;
           },
           wZ8: function () {
-            return z;
+            return q;
           },
           xAR: function () {
             return iS;
@@ -5348,7 +5348,7 @@
             return G;
           },
           ylB: function () {
-            return tq;
+            return tJ;
           },
           yqN: function () {
             return it;
@@ -5420,9 +5420,9 @@
           X,
           j,
           $,
+          J,
           q,
           z,
-          J,
           Q,
           Z,
           ee,
@@ -5474,9 +5474,9 @@
           eX,
           ej,
           e$,
+          eJ,
           eq,
           ez,
-          eJ,
           eQ,
           eZ,
           e0,
@@ -5538,9 +5538,9 @@
           tX,
           tj,
           t$,
+          tJ,
           tq,
           tz,
-          tJ,
           tQ,
           tZ,
           t0,
@@ -5602,9 +5602,9 @@
           rX,
           rj,
           r$,
+          rJ,
           rq,
           rz,
-          rJ,
           rQ,
           rZ,
           r0,
@@ -5666,9 +5666,9 @@
           nX,
           nj,
           n$,
+          nJ,
           nq,
           nz,
-          nJ,
           nQ,
           nZ,
           n0,
@@ -6264,18 +6264,18 @@
           ((rb = $ || ($ = {}))[(rb.DISABLED = 0)] = "DISABLED"),
           (rb[(rb.MEMBERS_WITHOUT_ROLES = 1)] = "MEMBERS_WITHOUT_ROLES"),
           (rb[(rb.ALL_MEMBERS = 2)] = "ALL_MEMBERS"),
-          ((rB = q || (q = {}))[(rB.NONE = 0)] = "NONE"),
+          ((rB = J || (J = {}))[(rB.NONE = 0)] = "NONE"),
           (rB[(rB.FRIEND = 1)] = "FRIEND"),
           (rB[(rB.BLOCKED = 2)] = "BLOCKED"),
           (rB[(rB.PENDING_INCOMING = 3)] = "PENDING_INCOMING"),
           (rB[(rB.PENDING_OUTGOING = 4)] = "PENDING_OUTGOING"),
           (rB[(rB.IMPLICIT = 5)] = "IMPLICIT"),
           (rB[(rB.SUGGESTION = 6)] = "SUGGESTION"),
-          ((rw = z || (z = {})).CONFIRM = "CONFIRM"),
+          ((rw = q || (q = {})).CONFIRM = "CONFIRM"),
           (rw.SUCCESS = "SUCCESS"),
           (rw.ERROR = "ERROR"),
           (rw.OPEN = "OPEN"),
-          ((rH = J || (J = {}))[(rH.JOIN = 1)] = "JOIN"),
+          ((rH = z || (z = {}))[(rH.JOIN = 1)] = "JOIN"),
           (rH[(rH.LISTEN = 3)] = "LISTEN"),
           (rH[(rH.WATCH = 4)] = "WATCH"),
           (rH[(rH.JOIN_REQUEST = 5)] = "JOIN_REQUEST"),
@@ -6286,9 +6286,9 @@
           ((rK = Z || (Z = {}))[(rK.DEFAULT = 0)] = "DEFAULT"),
           (rK[(rK.HIGH_SCHOOL = 1)] = "HIGH_SCHOOL"),
           (rK[(rK.COLLEGE = 2)] = "COLLEGE");
-        let aq = "@me",
-          az = "@favorites",
-          aJ = "@guilds-empty-nux",
+        let aJ = "@me",
+          aq = "@favorites",
+          az = "@guilds-empty-nux",
           aQ = "",
           aZ = "null",
           a0 = "0",
@@ -6300,7 +6300,7 @@
               let e =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : aq;
+                  : aJ;
               return "/users/".concat(e, "/relationships");
             },
             USER_RELATIONSHIP: (e) => "/users/@me/relationships/".concat(e),
@@ -6504,7 +6504,7 @@
               let t =
                 arguments.length > 1 && void 0 !== arguments[1]
                   ? arguments[1]
-                  : aq;
+                  : aJ;
               return "/channels/".concat(e, "/thread-members/").concat(t);
             },
             THREAD_MEMBER_SETTINGS: (e) =>
@@ -7565,8 +7565,8 @@
             CHANNEL: (e, t, r) => {
               let n =
                 null == t
-                  ? "/channels/".concat(e || aq)
-                  : "/channels/".concat(e || aq, "/").concat(t);
+                  ? "/channels/".concat(e || aJ)
+                  : "/channels/".concat(e || aJ, "/").concat(t);
               return null == r ? n : "".concat(n, "/").concat(r);
             },
             CHANNEL_THREAD_VIEW: (e, t, r, n) => {
@@ -7594,8 +7594,8 @@
             GIFT_CODE_LOGIN: (e) => "/gifts/".concat(e, "/login"),
             WELCOME: (e, t) =>
               null != t
-                ? "/welcome/".concat(null != e ? e : aq, "/").concat(t)
-                : "/welcome/".concat(null != e ? e : aq),
+                ? "/welcome/".concat(null != e ? e : aJ, "/").concat(t)
+                : "/welcome/".concat(null != e ? e : aJ),
             VERIFY: "/verify",
             VERIFY_REQUEST: "/verify-request",
             RESET: "/reset",
@@ -7936,281 +7936,281 @@
           oX = 25,
           oj = /^FILTER_/,
           o$ = /^ANSWER_/;
-        ((rq = eE || (eE = {})).GUILD = "GUILD"),
-          (rq.FAVORITES = "FAVORITES"),
-          (rq.CHANNEL = "CHANNEL"),
-          (rq.GUILD_CHANNEL = "GUILD_CHANNEL"),
-          (rq.CHAT_SIDEBAR = "CHAT_SIDEBAR"),
-          (rq.GIF = "GIF"),
-          (rq.GUILD_DISCOVERY = "GUILD_DISCOVERY"),
-          (rq.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG"),
-          (rq.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC"),
-          (rq.STICKER = "STICKER"),
-          (rq.STICKER_SHOP = "STICKER_SHOP"),
-          (rq.INSTANT_INVITE = "INSTANT_INVITE"),
-          (rq.EMOJI = "EMOJI"),
-          (rq.EMOJI_REACTION = "EMOJI_REACTION"),
-          (rq.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION"),
-          (rq.DMS = "DMS"),
-          (rq.THREAD = "THREAD"),
-          (rq.SOUNDBOARD = "SOUNDBOARD"),
-          ((rz = es || (es = {})).NEWEST = "newest"),
-          (rz.OLDEST = "oldest"),
-          (rz.MOST_RELEVANT = "most_relevant"),
-          ((rJ = ec || (ec = {}))[(rJ.UNKNOWN_ACCOUNT = 10001)] =
+        ((rJ = eE || (eE = {})).GUILD = "GUILD"),
+          (rJ.FAVORITES = "FAVORITES"),
+          (rJ.CHANNEL = "CHANNEL"),
+          (rJ.GUILD_CHANNEL = "GUILD_CHANNEL"),
+          (rJ.CHAT_SIDEBAR = "CHAT_SIDEBAR"),
+          (rJ.GIF = "GIF"),
+          (rJ.GUILD_DISCOVERY = "GUILD_DISCOVERY"),
+          (rJ.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG"),
+          (rJ.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC"),
+          (rJ.STICKER = "STICKER"),
+          (rJ.STICKER_SHOP = "STICKER_SHOP"),
+          (rJ.INSTANT_INVITE = "INSTANT_INVITE"),
+          (rJ.EMOJI = "EMOJI"),
+          (rJ.EMOJI_REACTION = "EMOJI_REACTION"),
+          (rJ.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION"),
+          (rJ.DMS = "DMS"),
+          (rJ.THREAD = "THREAD"),
+          (rJ.SOUNDBOARD = "SOUNDBOARD"),
+          ((rq = es || (es = {})).NEWEST = "newest"),
+          (rq.OLDEST = "oldest"),
+          (rq.MOST_RELEVANT = "most_relevant"),
+          ((rz = ec || (ec = {}))[(rz.UNKNOWN_ACCOUNT = 10001)] =
             "UNKNOWN_ACCOUNT"),
-          (rJ[(rJ.UNKNOWN_APPLICATION = 10002)] = "UNKNOWN_APPLICATION"),
-          (rJ[(rJ.UNKNOWN_CHANNEL = 10003)] = "UNKNOWN_CHANNEL"),
-          (rJ[(rJ.UNKNOWN_GUILD = 10004)] = "UNKNOWN_GUILD"),
-          (rJ[(rJ.UNKNOWN_INTEGRATION = 10005)] = "UNKNOWN_INTEGRATION"),
-          (rJ[(rJ.UNKNOWN_INVITE = 10006)] = "UNKNOWN_INVITE"),
-          (rJ[(rJ.UNKNOWN_MEMBER = 10007)] = "UNKNOWN_MEMBER"),
-          (rJ[(rJ.UNKNOWN_MESSAGE = 10008)] = "UNKNOWN_MESSAGE"),
-          (rJ[(rJ.UNKNOWN_OVERWRITE = 10009)] = "UNKNOWN_OVERWRITE"),
-          (rJ[(rJ.UNKNOWN_PLATFORM = 10010)] = "UNKNOWN_PLATFORM"),
-          (rJ[(rJ.UNKNOWN_ROLE = 10011)] = "UNKNOWN_ROLE"),
-          (rJ[(rJ.UNKNOWN_TOKEN = 10012)] = "UNKNOWN_TOKEN"),
-          (rJ[(rJ.UNKNOWN_USER = 10013)] = "UNKNOWN_USER"),
-          (rJ[(rJ.UNKNOWN_EMOJI = 10014)] = "UNKNOWN_EMOJI"),
-          (rJ[(rJ.UNKNOWN_WEBHOOK = 10015)] = "UNKNOWN_WEBHOOK"),
-          (rJ[(rJ.UNKNOWN_GIFT_CODE = 10038)] = "UNKNOWN_GIFT_CODE"),
-          (rJ[(rJ.BOT_DISALLOWED = 20001)] = "BOT_DISALLOWED"),
-          (rJ[(rJ.BOT_REQUIRED = 20002)] = "BOT_REQUIRED"),
-          (rJ[(rJ.RPC_PROXY_DISALLOWED = 20003)] = "RPC_PROXY_DISALLOWED"),
-          (rJ[(rJ.EXPLICIT_CONTENT = 20009)] = "EXPLICIT_CONTENT"),
-          (rJ[(rJ.ACCOUNT_SCHEDULED_FOR_DELETION = 20011)] =
+          (rz[(rz.UNKNOWN_APPLICATION = 10002)] = "UNKNOWN_APPLICATION"),
+          (rz[(rz.UNKNOWN_CHANNEL = 10003)] = "UNKNOWN_CHANNEL"),
+          (rz[(rz.UNKNOWN_GUILD = 10004)] = "UNKNOWN_GUILD"),
+          (rz[(rz.UNKNOWN_INTEGRATION = 10005)] = "UNKNOWN_INTEGRATION"),
+          (rz[(rz.UNKNOWN_INVITE = 10006)] = "UNKNOWN_INVITE"),
+          (rz[(rz.UNKNOWN_MEMBER = 10007)] = "UNKNOWN_MEMBER"),
+          (rz[(rz.UNKNOWN_MESSAGE = 10008)] = "UNKNOWN_MESSAGE"),
+          (rz[(rz.UNKNOWN_OVERWRITE = 10009)] = "UNKNOWN_OVERWRITE"),
+          (rz[(rz.UNKNOWN_PLATFORM = 10010)] = "UNKNOWN_PLATFORM"),
+          (rz[(rz.UNKNOWN_ROLE = 10011)] = "UNKNOWN_ROLE"),
+          (rz[(rz.UNKNOWN_TOKEN = 10012)] = "UNKNOWN_TOKEN"),
+          (rz[(rz.UNKNOWN_USER = 10013)] = "UNKNOWN_USER"),
+          (rz[(rz.UNKNOWN_EMOJI = 10014)] = "UNKNOWN_EMOJI"),
+          (rz[(rz.UNKNOWN_WEBHOOK = 10015)] = "UNKNOWN_WEBHOOK"),
+          (rz[(rz.UNKNOWN_GIFT_CODE = 10038)] = "UNKNOWN_GIFT_CODE"),
+          (rz[(rz.BOT_DISALLOWED = 20001)] = "BOT_DISALLOWED"),
+          (rz[(rz.BOT_REQUIRED = 20002)] = "BOT_REQUIRED"),
+          (rz[(rz.RPC_PROXY_DISALLOWED = 20003)] = "RPC_PROXY_DISALLOWED"),
+          (rz[(rz.EXPLICIT_CONTENT = 20009)] = "EXPLICIT_CONTENT"),
+          (rz[(rz.ACCOUNT_SCHEDULED_FOR_DELETION = 20011)] =
             "ACCOUNT_SCHEDULED_FOR_DELETION"),
-          (rJ[(rJ.USER_NOT_AUTHORIZED_FOR_APPLICATION = 20012)] =
+          (rz[(rz.USER_NOT_AUTHORIZED_FOR_APPLICATION = 20012)] =
             "USER_NOT_AUTHORIZED_FOR_APPLICATION"),
-          (rJ[(rJ.ACCOUNT_DISABLED = 20013)] = "ACCOUNT_DISABLED"),
-          (rJ[(rJ.SLOWMODE_RATE_LIMITED = 20016)] = "SLOWMODE_RATE_LIMITED"),
-          (rJ[(rJ.STAFF_REQUIRED = 20017)] = "STAFF_REQUIRED"),
-          (rJ[(rJ.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED = 20022)] =
+          (rz[(rz.ACCOUNT_DISABLED = 20013)] = "ACCOUNT_DISABLED"),
+          (rz[(rz.SLOWMODE_RATE_LIMITED = 20016)] = "SLOWMODE_RATE_LIMITED"),
+          (rz[(rz.STAFF_REQUIRED = 20017)] = "STAFF_REQUIRED"),
+          (rz[(rz.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED = 20022)] =
             "CHANNEL_FOLLOWING_EDIT_RATE_LIMITED"),
-          (rJ[(rJ.UNDER_MINIMUM_AGE = 20024)] = "UNDER_MINIMUM_AGE"),
-          (rJ[(rJ.QUARANTINED = 20026)] = "QUARANTINED"),
-          (rJ[(rJ.VANITY_URL_REQUIRED_FOR_PUBLISHED_GUILDS = 20040)] =
+          (rz[(rz.UNDER_MINIMUM_AGE = 20024)] = "UNDER_MINIMUM_AGE"),
+          (rz[(rz.QUARANTINED = 20026)] = "QUARANTINED"),
+          (rz[(rz.VANITY_URL_REQUIRED_FOR_PUBLISHED_GUILDS = 20040)] =
             "VANITY_URL_REQUIRED_FOR_PUBLISHED_GUILDS"),
-          (rJ[(rJ.VANITY_URL_EMPLOYEE_ONLY_GUILD_DISABLED = 20044)] =
+          (rz[(rz.VANITY_URL_EMPLOYEE_ONLY_GUILD_DISABLED = 20044)] =
             "VANITY_URL_EMPLOYEE_ONLY_GUILD_DISABLED"),
-          (rJ[(rJ.VANITY_URL_REQUIREMENTS_NOT_MET = 20045)] =
+          (rz[(rz.VANITY_URL_REQUIREMENTS_NOT_MET = 20045)] =
             "VANITY_URL_REQUIREMENTS_NOT_MET"),
-          (rJ[(rJ.TOO_MANY_USER_GUILDS = 30001)] = "TOO_MANY_USER_GUILDS"),
-          (rJ[(rJ.TOO_MANY_BOT_GUILDS = 30001)] = "TOO_MANY_BOT_GUILDS"),
-          (rJ[(rJ.TOO_MANY_FRIENDS = 30002)] = "TOO_MANY_FRIENDS"),
-          (rJ[(rJ.TOO_MANY_PINS_IN_CHANNEL = 30003)] =
+          (rz[(rz.TOO_MANY_USER_GUILDS = 30001)] = "TOO_MANY_USER_GUILDS"),
+          (rz[(rz.TOO_MANY_BOT_GUILDS = 30001)] = "TOO_MANY_BOT_GUILDS"),
+          (rz[(rz.TOO_MANY_FRIENDS = 30002)] = "TOO_MANY_FRIENDS"),
+          (rz[(rz.TOO_MANY_PINS_IN_CHANNEL = 30003)] =
             "TOO_MANY_PINS_IN_CHANNEL"),
-          (rJ[(rJ.TOO_MANY_RECIPIENTS = 30004)] = "TOO_MANY_RECIPIENTS"),
-          (rJ[(rJ.TOO_MANY_GUILD_ROLES = 30005)] = "TOO_MANY_GUILD_ROLES"),
-          (rJ[(rJ.TOO_MANY_USING_USERNAME = 30006)] =
+          (rz[(rz.TOO_MANY_RECIPIENTS = 30004)] = "TOO_MANY_RECIPIENTS"),
+          (rz[(rz.TOO_MANY_GUILD_ROLES = 30005)] = "TOO_MANY_GUILD_ROLES"),
+          (rz[(rz.TOO_MANY_USING_USERNAME = 30006)] =
             "TOO_MANY_USING_USERNAME"),
-          (rJ[(rJ.TOO_MANY_WEBHOOKS = 30007)] = "TOO_MANY_WEBHOOKS"),
-          (rJ[(rJ.TOO_MANY_EMOJI = 30008)] = "TOO_MANY_EMOJI"),
-          (rJ[(rJ.TOO_MANY_REACTIONS = 30010)] = "TOO_MANY_REACTIONS"),
-          (rJ[(rJ.TOO_MANY_ATTACHMENTS = 30015)] = "TOO_MANY_ATTACHMENTS"),
-          (rJ[(rJ.TOO_MANY_INVITES = 30016)] = "TOO_MANY_INVITES"),
-          (rJ[(rJ.TOO_MANY_ANIMATED_EMOJI = 30018)] =
+          (rz[(rz.TOO_MANY_WEBHOOKS = 30007)] = "TOO_MANY_WEBHOOKS"),
+          (rz[(rz.TOO_MANY_EMOJI = 30008)] = "TOO_MANY_EMOJI"),
+          (rz[(rz.TOO_MANY_REACTIONS = 30010)] = "TOO_MANY_REACTIONS"),
+          (rz[(rz.TOO_MANY_ATTACHMENTS = 30015)] = "TOO_MANY_ATTACHMENTS"),
+          (rz[(rz.TOO_MANY_INVITES = 30016)] = "TOO_MANY_INVITES"),
+          (rz[(rz.TOO_MANY_ANIMATED_EMOJI = 30018)] =
             "TOO_MANY_ANIMATED_EMOJI"),
-          (rJ[(rJ.GUILD_AT_CAPACITY = 30019)] = "GUILD_AT_CAPACITY"),
-          (rJ[(rJ.NOT_ENOUGH_GUILD_MEMBERS = 30029)] =
+          (rz[(rz.GUILD_AT_CAPACITY = 30019)] = "GUILD_AT_CAPACITY"),
+          (rz[(rz.NOT_ENOUGH_GUILD_MEMBERS = 30029)] =
             "NOT_ENOUGH_GUILD_MEMBERS"),
-          (rJ[(rJ.TOO_MANY_BLOCKED_USERS = 30059)] = "TOO_MANY_BLOCKED_USERS"),
-          (rJ[(rJ.TOO_MANY_PUBLISHED_PRODUCT_LISTINGS = 30065)] =
+          (rz[(rz.TOO_MANY_BLOCKED_USERS = 30059)] = "TOO_MANY_BLOCKED_USERS"),
+          (rz[(rz.TOO_MANY_PUBLISHED_PRODUCT_LISTINGS = 30065)] =
             "TOO_MANY_PUBLISHED_PRODUCT_LISTINGS"),
-          (rJ[(rJ.TOO_MANY_SAVED_MESSAGES = 30074)] =
+          (rz[(rz.TOO_MANY_SAVED_MESSAGES = 30074)] =
             "TOO_MANY_SAVED_MESSAGES"),
-          (rJ[(rJ.UNAUTHORIZED = 40001)] = "UNAUTHORIZED"),
-          (rJ[(rJ.EMAIL_VERIFICATION_REQUIRED = 40002)] =
+          (rz[(rz.UNAUTHORIZED = 40001)] = "UNAUTHORIZED"),
+          (rz[(rz.EMAIL_VERIFICATION_REQUIRED = 40002)] =
             "EMAIL_VERIFICATION_REQUIRED"),
-          (rJ[(rJ.RATE_LIMIT_DM_OPEN = 40003)] = "RATE_LIMIT_DM_OPEN"),
-          (rJ[(rJ.SEND_MESSAGE_TEMPORARILY_DISABLED = 40004)] =
+          (rz[(rz.RATE_LIMIT_DM_OPEN = 40003)] = "RATE_LIMIT_DM_OPEN"),
+          (rz[(rz.SEND_MESSAGE_TEMPORARILY_DISABLED = 40004)] =
             "SEND_MESSAGE_TEMPORARILY_DISABLED"),
-          (rJ[(rJ.ENTITY_TOO_LARGE = 40005)] = "ENTITY_TOO_LARGE"),
-          (rJ[(rJ.ENTITY_EMPTY = 40006)] = "ENTITY_EMPTY"),
-          (rJ[(rJ.USER_BANNED = 40007)] = "USER_BANNED"),
-          (rJ[(rJ.CONNECTION_REVOKED = 40012)] = "CONNECTION_REVOKED"),
-          (rJ[(rJ.DELETE_ACCOUNT_TRANSFER_TEAM_OWNERSHIP = 40028)] =
+          (rz[(rz.ENTITY_TOO_LARGE = 40005)] = "ENTITY_TOO_LARGE"),
+          (rz[(rz.ENTITY_EMPTY = 40006)] = "ENTITY_EMPTY"),
+          (rz[(rz.USER_BANNED = 40007)] = "USER_BANNED"),
+          (rz[(rz.CONNECTION_REVOKED = 40012)] = "CONNECTION_REVOKED"),
+          (rz[(rz.DELETE_ACCOUNT_TRANSFER_TEAM_OWNERSHIP = 40028)] =
             "DELETE_ACCOUNT_TRANSFER_TEAM_OWNERSHIP"),
-          (rJ[(rJ.NON_MODERATED_TAG_REQUIRED = 40066)] =
+          (rz[(rz.NON_MODERATED_TAG_REQUIRED = 40066)] =
             "NON_MODERATED_TAG_REQUIRED"),
-          (rJ[(rJ.TAG_REQUIRED = 40067)] = "TAG_REQUIRED"),
-          (rJ[(rJ.USER_QUARANTINED = 40068)] = "USER_QUARANTINED"),
-          (rJ[(rJ.INVITES_DISABLED = 40069)] = "INVITES_DISABLED"),
-          (rJ[(rJ.BLOCKED_BY_PROXY = 40333)] = "BLOCKED_BY_PROXY"),
-          (rJ[(rJ.INVALID_ACCESS = 50001)] = "INVALID_ACCESS"),
-          (rJ[(rJ.INVALID_ACCOUNT_TYPE = 50002)] = "INVALID_ACCOUNT_TYPE"),
-          (rJ[(rJ.INVALID_ACTION_DM = 50003)] = "INVALID_ACTION_DM"),
-          (rJ[(rJ.INVALID_EMBED_DISABLED = 50004)] = "INVALID_EMBED_DISABLED"),
-          (rJ[(rJ.INVALID_MESSAGE_AUTHOR = 50005)] = "INVALID_MESSAGE_AUTHOR"),
-          (rJ[(rJ.INVALID_MESSAGE_EMPTY = 50006)] = "INVALID_MESSAGE_EMPTY"),
-          (rJ[(rJ.INVALID_MESSAGE_SEND_USER = 50007)] =
+          (rz[(rz.TAG_REQUIRED = 40067)] = "TAG_REQUIRED"),
+          (rz[(rz.USER_QUARANTINED = 40068)] = "USER_QUARANTINED"),
+          (rz[(rz.INVITES_DISABLED = 40069)] = "INVITES_DISABLED"),
+          (rz[(rz.BLOCKED_BY_PROXY = 40333)] = "BLOCKED_BY_PROXY"),
+          (rz[(rz.INVALID_ACCESS = 50001)] = "INVALID_ACCESS"),
+          (rz[(rz.INVALID_ACCOUNT_TYPE = 50002)] = "INVALID_ACCOUNT_TYPE"),
+          (rz[(rz.INVALID_ACTION_DM = 50003)] = "INVALID_ACTION_DM"),
+          (rz[(rz.INVALID_EMBED_DISABLED = 50004)] = "INVALID_EMBED_DISABLED"),
+          (rz[(rz.INVALID_MESSAGE_AUTHOR = 50005)] = "INVALID_MESSAGE_AUTHOR"),
+          (rz[(rz.INVALID_MESSAGE_EMPTY = 50006)] = "INVALID_MESSAGE_EMPTY"),
+          (rz[(rz.INVALID_MESSAGE_SEND_USER = 50007)] =
             "INVALID_MESSAGE_SEND_USER"),
-          (rJ[(rJ.INVALID_MESSAGE_SEND_NON_TEXT = 50008)] =
+          (rz[(rz.INVALID_MESSAGE_SEND_NON_TEXT = 50008)] =
             "INVALID_MESSAGE_SEND_NON_TEXT"),
-          (rJ[(rJ.INVALID_MESSAGE_VERIFICATION_LEVEL = 50009)] =
+          (rz[(rz.INVALID_MESSAGE_VERIFICATION_LEVEL = 50009)] =
             "INVALID_MESSAGE_VERIFICATION_LEVEL"),
-          (rJ[(rJ.INVALID_OAUTH_APP_BOT = 50010)] = "INVALID_OAUTH_APP_BOT"),
-          (rJ[(rJ.INVALID_OAUTH_APP_LIMIT = 50011)] =
+          (rz[(rz.INVALID_OAUTH_APP_BOT = 50010)] = "INVALID_OAUTH_APP_BOT"),
+          (rz[(rz.INVALID_OAUTH_APP_LIMIT = 50011)] =
             "INVALID_OAUTH_APP_LIMIT"),
-          (rJ[(rJ.INVALID_OAUTH_STATE = 50012)] = "INVALID_OAUTH_STATE"),
-          (rJ[(rJ.INVALID_PERMISSIONS = 50013)] = "INVALID_PERMISSIONS"),
-          (rJ[(rJ.INVALID_TOKEN = 50014)] = "INVALID_TOKEN"),
-          (rJ[(rJ.INVALID_NOTE = 50015)] = "INVALID_NOTE"),
-          (rJ[(rJ.INVALID_BULK_DELETE_COUNT = 50016)] =
+          (rz[(rz.INVALID_OAUTH_STATE = 50012)] = "INVALID_OAUTH_STATE"),
+          (rz[(rz.INVALID_PERMISSIONS = 50013)] = "INVALID_PERMISSIONS"),
+          (rz[(rz.INVALID_TOKEN = 50014)] = "INVALID_TOKEN"),
+          (rz[(rz.INVALID_NOTE = 50015)] = "INVALID_NOTE"),
+          (rz[(rz.INVALID_BULK_DELETE_COUNT = 50016)] =
             "INVALID_BULK_DELETE_COUNT"),
-          (rJ[(rJ.INVALID_MFA_LEVEL = 50017)] = "INVALID_MFA_LEVEL"),
-          (rJ[(rJ.INVALID_PASSWORD = 50018)] = "INVALID_PASSWORD"),
-          (rJ[(rJ.INVALID_PIN_MESSAGE_CHANNEL = 50019)] =
+          (rz[(rz.INVALID_MFA_LEVEL = 50017)] = "INVALID_MFA_LEVEL"),
+          (rz[(rz.INVALID_PASSWORD = 50018)] = "INVALID_PASSWORD"),
+          (rz[(rz.INVALID_PIN_MESSAGE_CHANNEL = 50019)] =
             "INVALID_PIN_MESSAGE_CHANNEL"),
-          (rJ[(rJ.INVALID_INVITE_CODE = 50020)] = "INVALID_INVITE_CODE"),
-          (rJ[(rJ.INVALID_PHONE_NUMBER = 50022)] = "INVALID_PHONE_NUMBER"),
-          (rJ[(rJ.INVALID_CLIENT_ID = 50023)] = "INVALID_CLIENT_ID"),
-          (rJ[(rJ.INVALID_CHANNEL_TYPE = 50024)] = "INVALID_CHANNEL_TYPE"),
-          (rJ[(rJ.INVALID_OAUTH2_ACCESS_TOKEN = 50025)] =
+          (rz[(rz.INVALID_INVITE_CODE = 50020)] = "INVALID_INVITE_CODE"),
+          (rz[(rz.INVALID_PHONE_NUMBER = 50022)] = "INVALID_PHONE_NUMBER"),
+          (rz[(rz.INVALID_CLIENT_ID = 50023)] = "INVALID_CLIENT_ID"),
+          (rz[(rz.INVALID_CHANNEL_TYPE = 50024)] = "INVALID_CHANNEL_TYPE"),
+          (rz[(rz.INVALID_OAUTH2_ACCESS_TOKEN = 50025)] =
             "INVALID_OAUTH2_ACCESS_TOKEN"),
-          (rJ[(rJ.INVALID_OAUTH2_MISSING_SCOPE = 50026)] =
+          (rz[(rz.INVALID_OAUTH2_MISSING_SCOPE = 50026)] =
             "INVALID_OAUTH2_MISSING_SCOPE"),
-          (rJ[(rJ.INVALID_WEBHOOK_TOKEN = 50027)] = "INVALID_WEBHOOK_TOKEN"),
-          (rJ[(rJ.INVALID_FORM_BODY = 50035)] = "INVALID_FORM_BODY"),
-          (rJ[(rJ.INVALID_FILE_ASSET_SIZE = 50045)] =
+          (rz[(rz.INVALID_WEBHOOK_TOKEN = 50027)] = "INVALID_WEBHOOK_TOKEN"),
+          (rz[(rz.INVALID_FORM_BODY = 50035)] = "INVALID_FORM_BODY"),
+          (rz[(rz.INVALID_FILE_ASSET_SIZE = 50045)] =
             "INVALID_FILE_ASSET_SIZE"),
-          (rJ[(rJ.INVALID_FILE_ASSET = 50046)] = "INVALID_FILE_ASSET"),
-          (rJ[(rJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF = 50138)] =
+          (rz[(rz.INVALID_FILE_ASSET = 50046)] = "INVALID_FILE_ASSET"),
+          (rz[(rz.INVALID_FILE_ASSET_SIZE_RESIZE_GIF = 50138)] =
             "INVALID_FILE_ASSET_SIZE_RESIZE_GIF"),
-          (rJ[(rJ.INVALID_GIFT_REDEMPTION_EXHAUSTED = 50050)] =
+          (rz[(rz.INVALID_GIFT_REDEMPTION_EXHAUSTED = 50050)] =
             "INVALID_GIFT_REDEMPTION_EXHAUSTED"),
-          (rJ[(rJ.INVALID_GIFT_REDEMPTION_OWNED = 50051)] =
+          (rz[(rz.INVALID_GIFT_REDEMPTION_OWNED = 50051)] =
             "INVALID_GIFT_REDEMPTION_OWNED"),
-          (rJ[(rJ.INVALID_GIFT_SELF_REDEMPTION = 50054)] =
+          (rz[(rz.INVALID_GIFT_SELF_REDEMPTION = 50054)] =
             "INVALID_GIFT_SELF_REDEMPTION"),
-          (rJ[(rJ.INVALID_COUNTRY_CODE = 50095)] = "INVALID_COUNTRY_CODE"),
-          (rJ[(rJ.INVALID_CANNOT_FRIEND_SELF = 50096)] =
+          (rz[(rz.INVALID_COUNTRY_CODE = 50095)] = "INVALID_COUNTRY_CODE"),
+          (rz[(rz.INVALID_CANNOT_FRIEND_SELF = 50096)] =
             "INVALID_CANNOT_FRIEND_SELF"),
-          (rJ[(rJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED = 50097)] =
+          (rz[(rz.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED = 50097)] =
             "INVALID_GIFT_REDEMPTION_FRAUD_REJECTED"),
-          (rJ[(rJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE = 100060)] =
+          (rz[(rz.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE = 100060)] =
             "BILLING_NON_REFUNDABLE_PAYMENT_SOURCE"),
-          (rJ[(rJ.NEW_OWNER_INELIGIBLE_FOR_SERVER_SUBSCRIPTION = 50164)] =
+          (rz[(rz.NEW_OWNER_INELIGIBLE_FOR_SERVER_SUBSCRIPTION = 50164)] =
             "NEW_OWNER_INELIGIBLE_FOR_SERVER_SUBSCRIPTION"),
-          (rJ[(rJ.INVALID_ACTIVITY_LAUNCH_NO_ACCESS = 50106)] =
+          (rz[(rz.INVALID_ACTIVITY_LAUNCH_NO_ACCESS = 50106)] =
             "INVALID_ACTIVITY_LAUNCH_NO_ACCESS"),
-          (rJ[(rJ.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER = 50107)] =
+          (rz[(rz.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER = 50107)] =
             "INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER"),
-          (rJ[(rJ.INVALID_ACTIVITY_LAUNCH_CONCURRENT_ACTIVITIES = 50108)] =
+          (rz[(rz.INVALID_ACTIVITY_LAUNCH_CONCURRENT_ACTIVITIES = 50108)] =
             "INVALID_ACTIVITY_LAUNCH_CONCURRENT_ACTIVITIES"),
-          (rJ[(rJ.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL = 50148)] =
+          (rz[(rz.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL = 50148)] =
             "INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL"),
-          (rJ[(rJ.INVALID_GIFT_REDEMPTION_INCORRECT_USER = 50194)] =
+          (rz[(rz.INVALID_GIFT_REDEMPTION_INCORRECT_USER = 50194)] =
             "INVALID_GIFT_REDEMPTION_INCORRECT_USER"),
-          (rJ[(rJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED = 100021)] =
+          (rz[(rz.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED = 100021)] =
             "INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED"),
-          (rJ[(rJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE = 100023)] =
+          (rz[(rz.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE = 100023)] =
             "INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE"),
-          (rJ[(rJ.INVALID_GIFT_REDEMPTION_INVOICE_OPEN = 100024)] =
+          (rz[(rz.INVALID_GIFT_REDEMPTION_INVOICE_OPEN = 100024)] =
             "INVALID_GIFT_REDEMPTION_INVOICE_OPEN"),
-          (rJ[(rJ.INVALID_USER_SETTINGS_DATA = 50105)] =
+          (rz[(rz.INVALID_USER_SETTINGS_DATA = 50105)] =
             "INVALID_USER_SETTINGS_DATA"),
-          (rJ[(rJ.INVALID_ACTIVITY_LAUNCH_AGE_GATED = 50165)] =
+          (rz[(rz.INVALID_ACTIVITY_LAUNCH_AGE_GATED = 50165)] =
             "INVALID_ACTIVITY_LAUNCH_AGE_GATED"),
-          (rJ[(rJ.INVALID_SKU_ATTACHMENT_NO_ARCHIVES = 50186)] =
+          (rz[(rz.INVALID_SKU_ATTACHMENT_NO_ARCHIVES = 50186)] =
             "INVALID_SKU_ATTACHMENT_NO_ARCHIVES"),
-          (rJ[(rJ.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE = 50209)] =
+          (rz[(rz.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE = 50209)] =
             "INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE"),
-          (rJ[(rJ.ACTIVITY_CONFIGURATION_DOES_NOT_SUPPORT_PLATFORM = 50231)] =
+          (rz[(rz.ACTIVITY_CONFIGURATION_DOES_NOT_SUPPORT_PLATFORM = 50231)] =
             "ACTIVITY_CONFIGURATION_DOES_NOT_SUPPORT_PLATFORM"),
-          (rJ[(rJ.MFA_ENABLED = 60001)] = "MFA_ENABLED"),
-          (rJ[(rJ.MFA_DISABLED = 60002)] = "MFA_DISABLED"),
-          (rJ[(rJ.MFA_REQUIRED = 60003)] = "MFA_REQUIRED"),
-          (rJ[(rJ.MFA_UNVERIFIED = 60004)] = "MFA_UNVERIFIED"),
-          (rJ[(rJ.MFA_INVALID_SECRET = 60005)] = "MFA_INVALID_SECRET"),
-          (rJ[(rJ.MFA_INVALID_TICKET = 60006)] = "MFA_INVALID_TICKET"),
-          (rJ[(rJ.MFA_INVALID_CODE = 60008)] = "MFA_INVALID_CODE"),
-          (rJ[(rJ.MFA_INVALID_SESSION = 60009)] = "MFA_INVALID_SESSION"),
-          (rJ[(rJ.MFA_REQUIRED_FOR_CREATOR_MONETIZATION = 60015)] =
+          (rz[(rz.MFA_ENABLED = 60001)] = "MFA_ENABLED"),
+          (rz[(rz.MFA_DISABLED = 60002)] = "MFA_DISABLED"),
+          (rz[(rz.MFA_REQUIRED = 60003)] = "MFA_REQUIRED"),
+          (rz[(rz.MFA_UNVERIFIED = 60004)] = "MFA_UNVERIFIED"),
+          (rz[(rz.MFA_INVALID_SECRET = 60005)] = "MFA_INVALID_SECRET"),
+          (rz[(rz.MFA_INVALID_TICKET = 60006)] = "MFA_INVALID_TICKET"),
+          (rz[(rz.MFA_INVALID_CODE = 60008)] = "MFA_INVALID_CODE"),
+          (rz[(rz.MFA_INVALID_SESSION = 60009)] = "MFA_INVALID_SESSION"),
+          (rz[(rz.MFA_REQUIRED_FOR_CREATOR_MONETIZATION = 60015)] =
             "MFA_REQUIRED_FOR_CREATOR_MONETIZATION"),
-          (rJ[(rJ.PHONE_NUMBER_UNABLE_TO_SEND = 70003)] =
+          (rz[(rz.PHONE_NUMBER_UNABLE_TO_SEND = 70003)] =
             "PHONE_NUMBER_UNABLE_TO_SEND"),
-          (rJ[(rJ.PHONE_CARRIER_TYPE_NOT_MOBILE = 70005)] =
+          (rz[(rz.PHONE_CARRIER_TYPE_NOT_MOBILE = 70005)] =
             "PHONE_CARRIER_TYPE_NOT_MOBILE"),
-          (rJ[(rJ.PHONE_VERIFICATION_REQUIRED = 70007)] =
+          (rz[(rz.PHONE_VERIFICATION_REQUIRED = 70007)] =
             "PHONE_VERIFICATION_REQUIRED"),
-          (rJ[(rJ.RELATIONSHIP_INCOMING_DISABLED = 8e4)] =
+          (rz[(rz.RELATIONSHIP_INCOMING_DISABLED = 8e4)] =
             "RELATIONSHIP_INCOMING_DISABLED"),
-          (rJ[(rJ.RELATIONSHIP_INCOMING_BLOCKED = 80001)] =
+          (rz[(rz.RELATIONSHIP_INCOMING_BLOCKED = 80001)] =
             "RELATIONSHIP_INCOMING_BLOCKED"),
-          (rJ[(rJ.RELATIONSHIP_INVALUD_USER_BOT = 80002)] =
+          (rz[(rz.RELATIONSHIP_INVALUD_USER_BOT = 80002)] =
             "RELATIONSHIP_INVALUD_USER_BOT"),
-          (rJ[(rJ.RELATIONSHIP_INVALID_SELF = 80003)] =
+          (rz[(rz.RELATIONSHIP_INVALID_SELF = 80003)] =
             "RELATIONSHIP_INVALID_SELF"),
-          (rJ[(rJ.RELATIONSHIP_INVALID_DISCORD_TAG = 80004)] =
+          (rz[(rz.RELATIONSHIP_INVALID_DISCORD_TAG = 80004)] =
             "RELATIONSHIP_INVALID_DISCORD_TAG"),
-          (rJ[(rJ.RELATIONSHIP_ALREADY_FRIENDS = 80007)] =
+          (rz[(rz.RELATIONSHIP_ALREADY_FRIENDS = 80007)] =
             "RELATIONSHIP_ALREADY_FRIENDS"),
-          (rJ[(rJ.REACTION_BLOCKED = 90001)] = "REACTION_BLOCKED"),
-          (rJ[(rJ.LISTING_ALREADY_JOINED = 12e4)] = "LISTING_ALREADY_JOINED"),
-          (rJ[(rJ.LISTING_TOO_MANY_MEMBERS = 120001)] =
+          (rz[(rz.REACTION_BLOCKED = 90001)] = "REACTION_BLOCKED"),
+          (rz[(rz.LISTING_ALREADY_JOINED = 12e4)] = "LISTING_ALREADY_JOINED"),
+          (rz[(rz.LISTING_TOO_MANY_MEMBERS = 120001)] =
             "LISTING_TOO_MANY_MEMBERS"),
-          (rJ[(rJ.LISTING_JOIN_BLOCKED = 120002)] = "LISTING_JOIN_BLOCKED"),
-          (rJ[(rJ.TOO_MANY_THREAD_MEMBERS = 30033)] =
+          (rz[(rz.LISTING_JOIN_BLOCKED = 120002)] = "LISTING_JOIN_BLOCKED"),
+          (rz[(rz.TOO_MANY_THREAD_MEMBERS = 30033)] =
             "TOO_MANY_THREAD_MEMBERS"),
-          (rJ[(rJ.TOO_MANY_THREADS = 160006)] = "TOO_MANY_THREADS"),
-          (rJ[(rJ.TOO_MANY_ANNOUNCEMENT_THREADS = 160007)] =
+          (rz[(rz.TOO_MANY_THREADS = 160006)] = "TOO_MANY_THREADS"),
+          (rz[(rz.TOO_MANY_ANNOUNCEMENT_THREADS = 160007)] =
             "TOO_MANY_ANNOUNCEMENT_THREADS"),
-          (rJ[(rJ.POGGERMODE_TEMPORARILY_DISABLED = 170008)] =
+          (rz[(rz.POGGERMODE_TEMPORARILY_DISABLED = 170008)] =
             "POGGERMODE_TEMPORARILY_DISABLED"),
-          (rJ[(rJ.AUTOMOD_MESSAGE_BLOCKED = 2e5)] = "AUTOMOD_MESSAGE_BLOCKED"),
-          (rJ[(rJ.AUTOMOD_TITLE_BLOCKED = 200001)] = "AUTOMOD_TITLE_BLOCKED"),
-          (rJ[(rJ.AUTOMOD_INVALID_RUST_SERVICE_RESPONSE = 200002)] =
+          (rz[(rz.AUTOMOD_MESSAGE_BLOCKED = 2e5)] = "AUTOMOD_MESSAGE_BLOCKED"),
+          (rz[(rz.AUTOMOD_TITLE_BLOCKED = 200001)] = "AUTOMOD_TITLE_BLOCKED"),
+          (rz[(rz.AUTOMOD_INVALID_RUST_SERVICE_RESPONSE = 200002)] =
             "AUTOMOD_INVALID_RUST_SERVICE_RESPONSE"),
-          (rJ[(rJ.MONETIZATION_TERMS_NOT_ACCEPTED = 210003)] =
+          (rz[(rz.MONETIZATION_TERMS_NOT_ACCEPTED = 210003)] =
             "MONETIZATION_TERMS_NOT_ACCEPTED"),
-          (rJ[(rJ.TWO_FA_NOT_ENABLED = 210011)] = "TWO_FA_NOT_ENABLED"),
-          (rJ[
-            (rJ.GUILD_PRODUCT_LISTING_CANNOT_PUBLISH_WITHOUT_BENEFIT = 210021)
+          (rz[(rz.TWO_FA_NOT_ENABLED = 210011)] = "TWO_FA_NOT_ENABLED"),
+          (rz[
+            (rz.GUILD_PRODUCT_LISTING_CANNOT_PUBLISH_WITHOUT_BENEFIT = 210021)
           ] = "GUILD_PRODUCT_LISTING_CANNOT_PUBLISH_WITHOUT_BENEFIT"),
-          (rJ[(rJ.CREATOR_MONETIZATION_PAYMENT_TEAM_REQUIRED = 210026)] =
+          (rz[(rz.CREATOR_MONETIZATION_PAYMENT_TEAM_REQUIRED = 210026)] =
             "CREATOR_MONETIZATION_PAYMENT_TEAM_REQUIRED"),
-          (rJ[
-            (rJ.CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED = 210027)
+          (rz[
+            (rz.CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED = 210027)
           ] = "CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED"),
-          (rJ[(rJ.HARMFUL_LINK_MESSAGE_BLOCKED = 24e4)] =
+          (rz[(rz.HARMFUL_LINK_MESSAGE_BLOCKED = 24e4)] =
             "HARMFUL_LINK_MESSAGE_BLOCKED"),
-          (rJ[(rJ.USER_LIMITED_ACCESS_DEFAULT = 34e4)] =
+          (rz[(rz.USER_LIMITED_ACCESS_DEFAULT = 34e4)] =
             "USER_LIMITED_ACCESS_DEFAULT"),
-          (rJ[(rJ.USER_FRIEND_REQUEST_LIMITED_ACCESS = 340007)] =
+          (rz[(rz.USER_FRIEND_REQUEST_LIMITED_ACCESS = 340007)] =
             "USER_FRIEND_REQUEST_LIMITED_ACCESS"),
-          (rJ[(rJ.USER_LIMITED_ACCESS_MAX = 349999)] =
+          (rz[(rz.USER_LIMITED_ACCESS_MAX = 349999)] =
             "USER_LIMITED_ACCESS_MAX"),
-          (rJ[(rJ.GUILD_LIMITED_ACCESS_DEFAULT = 4e5)] =
+          (rz[(rz.GUILD_LIMITED_ACCESS_DEFAULT = 4e5)] =
             "GUILD_LIMITED_ACCESS_DEFAULT"),
-          (rJ[(rJ.GUILD_FILE_UPLOAD_RATE_LIMITED_ACCESS = 400001)] =
+          (rz[(rz.GUILD_FILE_UPLOAD_RATE_LIMITED_ACCESS = 400001)] =
             "GUILD_FILE_UPLOAD_RATE_LIMITED_ACCESS"),
-          (rJ[(rJ.GUILD_JOIN_INVITE_LIMITED_ACCESS = 400002)] =
+          (rz[(rz.GUILD_JOIN_INVITE_LIMITED_ACCESS = 400002)] =
             "GUILD_JOIN_INVITE_LIMITED_ACCESS"),
-          (rJ[(rJ.GUILD_GO_LIVE_LIMITED_ACCESS = 400003)] =
+          (rz[(rz.GUILD_GO_LIVE_LIMITED_ACCESS = 400003)] =
             "GUILD_GO_LIVE_LIMITED_ACCESS"),
-          (rJ[(rJ.GUILD_LIMITED_ACCESS_MAX = 409999)] =
+          (rz[(rz.GUILD_LIMITED_ACCESS_MAX = 409999)] =
             "GUILD_LIMITED_ACCESS_MAX"),
-          (rJ[(rJ.PARTNER_PROMOTIONS_USER_CLAIMED_PROMOTION = 420002)] =
+          (rz[(rz.PARTNER_PROMOTIONS_USER_CLAIMED_PROMOTION = 420002)] =
             "PARTNER_PROMOTIONS_USER_CLAIMED_PROMOTION"),
-          (rJ[(rJ.PARTNER_PROMOTIONS_MAX_CLAIMS = 420003)] =
+          (rz[(rz.PARTNER_PROMOTIONS_MAX_CLAIMS = 420003)] =
             "PARTNER_PROMOTIONS_MAX_CLAIMS"),
-          (rJ[(rJ.PARTNER_PROMOTIONS_GIFT_CLAIMED = 420004)] =
+          (rz[(rz.PARTNER_PROMOTIONS_GIFT_CLAIMED = 420004)] =
             "PARTNER_PROMOTIONS_GIFT_CLAIMED"),
-          (rJ[(rJ.PARTNER_PROMOTIONS_PREVIOUS_PURCHASE_ERROR = 420005)] =
+          (rz[(rz.PARTNER_PROMOTIONS_PREVIOUS_PURCHASE_ERROR = 420005)] =
             "PARTNER_PROMOTIONS_PREVIOUS_PURCHASE_ERROR"),
-          (rJ[(rJ.PARTNER_PROMOTIONS_NEW_SUBSCRIPTION_REQUIRED = 420006)] =
+          (rz[(rz.PARTNER_PROMOTIONS_NEW_SUBSCRIPTION_REQUIRED = 420006)] =
             "PARTNER_PROMOTIONS_NEW_SUBSCRIPTION_REQUIRED"),
-          (rJ[(rJ.PARTNER_PROMOTIONS_UNKNOWN_GIFT = 420007)] =
+          (rz[(rz.PARTNER_PROMOTIONS_UNKNOWN_GIFT = 420007)] =
             "PARTNER_PROMOTIONS_UNKNOWN_GIFT"),
-          (rJ[(rJ.DSA_RSL_REPORT_NOT_FOUND = 521001)] =
+          (rz[(rz.DSA_RSL_REPORT_NOT_FOUND = 521001)] =
             "DSA_RSL_REPORT_NOT_FOUND"),
-          (rJ[(rJ.DSA_RSL_ALREADY_REQUESTED = 521002)] =
+          (rz[(rz.DSA_RSL_ALREADY_REQUESTED = 521002)] =
             "DSA_RSL_ALREADY_REQUESTED"),
-          (rJ[(rJ.DSA_RSL_LIMITED_TIME = 521003)] = "DSA_RSL_LIMITED_TIME"),
-          (rJ[(rJ.DSA_RSL_REPORT_INELIGIBLE = 521004)] =
+          (rz[(rz.DSA_RSL_LIMITED_TIME = 521003)] = "DSA_RSL_LIMITED_TIME"),
+          (rz[(rz.DSA_RSL_REPORT_INELIGIBLE = 521004)] =
             "DSA_RSL_REPORT_INELIGIBLE"),
-          (rJ[(rJ.DSA_APPEAL_REQUEST_DEFLECTION = 522001)] =
+          (rz[(rz.DSA_APPEAL_REQUEST_DEFLECTION = 522001)] =
             "DSA_APPEAL_REQUEST_DEFLECTION"),
           ((rQ = eI || (eI = {})).GUILD_CREATE_INVITE_SUGGESTION =
             "Guild Create Invite Suggestion"),
@@ -8397,7 +8397,7 @@
           (r1.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"),
           (r1.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r1.NITRO_HOME = "Nitro Home");
-        let oq = "help_center_cta";
+        let oJ = "help_center_cta";
         ((r3 = eA || (eA = {})).HERO = "Hero"),
           (r3.BODY = "Body"),
           (r3.NAVIGATION = "Navigation"),
@@ -8935,7 +8935,7 @@
           ((r5 = eN || (eN = {})).PRIMARY = "primary"),
           (r5.SECONDARY = "secondary"),
           (r5.DISMISS = "dismiss");
-        let oz = Object.freeze({
+        let oq = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
           INTL_TESTING: "Intl Testing",
@@ -9230,7 +9230,7 @@
             "TOGGLE_REACTION_POPOUT"),
           (no.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"),
           (no.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND");
-        let oJ = 50;
+        let oz = 50;
         ((ni = eP || (eP = {})).TWITCH = "twitch"),
           (ni.YOUTUBE = "youtube"),
           (ni.SKYPE = "skype"),
@@ -10890,18 +10890,18 @@
             },
           }),
           ia = 864e5;
-        ((nC = eq || (eq = {})).NORMAL = "normal"),
+        ((nC = eJ || (eJ = {})).NORMAL = "normal"),
           (nC.MINIMUM = "minimum"),
           (nC.NO_CHAT = "no-chat"),
           (nC.FULL_SCREEN = "full-screen"),
-          ((ng = ez || (ez = {})).THEATRE = "theatre"),
+          ((ng = eq || (eq = {})).THEATRE = "theatre"),
           (ng.FULL_SCREEN = "full-screen"),
           (ng.PIP = "pip"),
           (ng.POPOUT = "popout"),
           (ng.PORTRAIT = "portrait"),
           (ng.LANDSCAPE = "landscape"),
           (ng.MINIMIZED = "minimized"),
-          ((nM = eJ || (eJ = {})).USER_SETTINGS = "USER_SETTINGS"),
+          ((nM = ez || (ez = {})).USER_SETTINGS = "USER_SETTINGS"),
           (nM.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
           (nM.GUILD_SETTINGS = "GUILD_SETTINGS"),
           (nM.RTC_DEBUG = "RTC_DEBUG"),
@@ -11450,22 +11450,22 @@
           (n$[(n$.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
           (n$[(n$.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
         let iu = 30;
-        ((nq = tc || (tc = {})).OVERLAY = "OVERLAY"),
-          (nq.APP = "APP"),
-          (nq.POPOUT = "POPOUT");
+        ((nJ = tc || (tc = {})).OVERLAY = "OVERLAY"),
+          (nJ.APP = "APP"),
+          (nJ.POPOUT = "POPOUT");
         let il = __OVERLAY__ ? "OVERLAY" : "APP";
-        ((nz = tI || (tI = {})).COMPLETE = "complete"),
-          (nz.TRANSITION = "transition"),
-          ((nJ = tu || (tu = {})).QUEUED = "queued"),
-          (nJ.PLANNING = "planning"),
-          (nJ.ALLOCATING_DISK = "allocating_disk"),
-          (nJ.PATCHING = "patching"),
-          (nJ.FINALIZING = "finalizing"),
-          (nJ.PAUSING = "pausing"),
-          (nJ.VERIFYING = "verifying"),
-          (nJ.REPAIRING = "repairing"),
-          (nJ.POST_INSTALL_SCRIPTS = "running_install_scripts"),
-          (nJ.UNINSTALLING = "uninstalling"),
+        ((nq = tI || (tI = {})).COMPLETE = "complete"),
+          (nq.TRANSITION = "transition"),
+          ((nz = tu || (tu = {})).QUEUED = "queued"),
+          (nz.PLANNING = "planning"),
+          (nz.ALLOCATING_DISK = "allocating_disk"),
+          (nz.PATCHING = "patching"),
+          (nz.FINALIZING = "finalizing"),
+          (nz.PAUSING = "pausing"),
+          (nz.VERIFYING = "verifying"),
+          (nz.REPAIRING = "repairing"),
+          (nz.POST_INSTALL_SCRIPTS = "running_install_scripts"),
+          (nz.UNINSTALLING = "uninstalling"),
           ((nQ = tl || (tl = {})).INSTALL_REQUIRED = "install_required"),
           (nQ.INSTALLING = "installing"),
           (nQ.UP_TO_DATE = "up_to_date"),
@@ -11994,9 +11994,9 @@
           ((aL = t$ || (t$ = {})).CHANNEL_SETTINGS = "Channel Settings"),
           (aL.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings"),
           (aL.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"),
-          ((aD = tq || (tq = {}))[(aD.INCOMING = 1)] = "INCOMING"),
+          ((aD = tJ || (tJ = {}))[(aD.INCOMING = 1)] = "INCOMING"),
           (aD[(aD.CHANNEL_FOLLOWER = 2)] = "CHANNEL_FOLLOWER"),
-          ((ah = tz || (tz = {}))[(ah.APPLICATION = 0)] = "APPLICATION"),
+          ((ah = tq || (tq = {}))[(ah.APPLICATION = 0)] = "APPLICATION"),
           (ah[(ah.OVERVIEW = 1)] = "OVERVIEW"),
           (ah[(ah.CHANNEL_FOLLOWING = 2)] = "CHANNEL_FOLLOWING"),
           (ah[(ah.TWITCH = 3)] = "TWITCH"),
@@ -12006,7 +12006,7 @@
         let iO = 2500,
           iS = 0,
           iL = 2592e6;
-        ((aC = tJ || (tJ = {})).USERS = "users"),
+        ((aC = tz || (tz = {})).USERS = "users"),
           (aC.ROLES = "roles"),
           (aC.EVERYONE = "everyone"),
           ((ag = tQ || (tQ = {}))[(ag.AUTO = 1)] = "AUTO"),
@@ -12098,9 +12098,9 @@
           X,
           j,
           $,
+          J,
           q,
           z,
-          J,
           Q,
           Z,
           ee,
@@ -12192,66 +12192,66 @@
           ((O || (O = {})).ADVANCED = "ADVANCED"),
           (($ = f || (f = {})).USER = "USER"),
           ($.ACTION = "ACTION"),
-          ((q = S || (S = {})).OVERVIEW = "OVERVIEW"),
-          (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
-          (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          ((z = L || (L = {})).INVITE = "invite"),
-          (z.GUILD_TEMPLATE = "guild-template"),
-          (z.CHANNEL = "channel"),
-          (z.GIFT_CODE = "gift-code"),
-          (z.MESSAGE = "message"),
-          (z.OAUTH2_AUTHORIZE = "oauth2-authorize"),
-          (z.APP_DIRECTORY_PROFILE = "app-directory-profile"),
-          (z.PROMOTIONS = "promotions"),
-          (z.NONE = "none"),
-          (z.REMOTE_AUTH = "remote-auth"),
-          (z.USER_PROFILE = "user-profile"),
-          (z.BUILD_OVERRIDE = "build-override"),
-          (z.CONTACT_SYNC = "contact-sync"),
-          (z.ADD_FRIENDS = "add-friends"),
-          (z.COMPOSE_MESSAGE = "compose-message"),
-          (z.GUILD_EVENT_DETAILS = "guild-event-details"),
-          (z.FRIENDS = "friends"),
-          (z.EDIT_PROFILE = "edit-profile"),
-          (z.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
-          (z.VOICE_CHANNEL = "voice-channel"),
-          (z.GUILD_HOME = "guild-home"),
-          (z.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
-          (z.SESSION_MANAGEMENT = "session-management"),
-          (z.CONNECTIONS = "connections"),
-          (z.GUILD_SETTINGS = "guild-settings"),
-          (z.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
-          (z.ACTIVATE_DEVICE = "activate-device"),
-          (z.FAMILY_CENTER = "family-center"),
-          (z.SHARE = "share"),
-          (z.CREATE_VOICE_INVITE = "create_voice_invite"),
-          (z.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
-          (z.ACCOUNT_STANDING = "account-standing"),
-          (z.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
-          (z.SHOP = "shop"),
-          (z.AUTHORIZED_APPS = "authorized-apps"),
-          (z.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
-          (z.ICYMI = "icymi"),
-          (z.QUESTS = "quests");
+          ((J = S || (S = {})).OVERVIEW = "OVERVIEW"),
+          (J.ADD_OVERRIDE = "ADD_OVERRIDE"),
+          (J.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
+          ((q = L || (L = {})).INVITE = "invite"),
+          (q.GUILD_TEMPLATE = "guild-template"),
+          (q.CHANNEL = "channel"),
+          (q.GIFT_CODE = "gift-code"),
+          (q.MESSAGE = "message"),
+          (q.OAUTH2_AUTHORIZE = "oauth2-authorize"),
+          (q.APP_DIRECTORY_PROFILE = "app-directory-profile"),
+          (q.PROMOTIONS = "promotions"),
+          (q.NONE = "none"),
+          (q.REMOTE_AUTH = "remote-auth"),
+          (q.USER_PROFILE = "user-profile"),
+          (q.BUILD_OVERRIDE = "build-override"),
+          (q.CONTACT_SYNC = "contact-sync"),
+          (q.ADD_FRIENDS = "add-friends"),
+          (q.COMPOSE_MESSAGE = "compose-message"),
+          (q.GUILD_EVENT_DETAILS = "guild-event-details"),
+          (q.FRIENDS = "friends"),
+          (q.EDIT_PROFILE = "edit-profile"),
+          (q.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
+          (q.VOICE_CHANNEL = "voice-channel"),
+          (q.GUILD_HOME = "guild-home"),
+          (q.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
+          (q.SESSION_MANAGEMENT = "session-management"),
+          (q.CONNECTIONS = "connections"),
+          (q.GUILD_SETTINGS = "guild-settings"),
+          (q.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
+          (q.ACTIVATE_DEVICE = "activate-device"),
+          (q.FAMILY_CENTER = "family-center"),
+          (q.SHARE = "share"),
+          (q.CREATE_VOICE_INVITE = "create_voice_invite"),
+          (q.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
+          (q.ACCOUNT_STANDING = "account-standing"),
+          (q.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
+          (q.SHOP = "shop"),
+          (q.AUTHORIZED_APPS = "authorized-apps"),
+          (q.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
+          (q.ICYMI = "icymi"),
+          (q.QUESTS = "quests");
         let e_ = "CacheStoreLazy",
           eE = "CacheStoreChannelsLazy",
           es = "CacheStore";
-        ((J = D || (D = {})).UPLOAD = "upload"),
-          (J.GLOBAL_EMOJI = "global-emoji"),
-          (J.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
-          (J.BADGE = "badge"),
-          (J.ANIMATED_EMOJI = "animated-emoji"),
-          (J.ANIMATED_AVATAR = "animated-avatar"),
-          (J.CUSTOM_PROFILES = "custom-profiles"),
-          (J.GLOBAL_STICKER = "global-sticker"),
-          (J.PREMIUM_GUILD_PROFILE = "premium-guild-profile"),
-          (J.LONGER_MESSAGE = "longer-message"),
-          (J.GUILD_CAP = "guild-cap"),
-          (J.ACTIVITIES = "activities"),
-          (J.APP_ICONS = "app-icons"),
-          (J.SOUNDBOARD = "soundboard"),
-          (J.CLIENT_THEMES = "client-themes"),
-          (J.FOR_LATER = "for-later"),
+        ((z = D || (D = {})).UPLOAD = "upload"),
+          (z.GLOBAL_EMOJI = "global-emoji"),
+          (z.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
+          (z.BADGE = "badge"),
+          (z.ANIMATED_EMOJI = "animated-emoji"),
+          (z.ANIMATED_AVATAR = "animated-avatar"),
+          (z.CUSTOM_PROFILES = "custom-profiles"),
+          (z.GLOBAL_STICKER = "global-sticker"),
+          (z.PREMIUM_GUILD_PROFILE = "premium-guild-profile"),
+          (z.LONGER_MESSAGE = "longer-message"),
+          (z.GUILD_CAP = "guild-cap"),
+          (z.ACTIVITIES = "activities"),
+          (z.APP_ICONS = "app-icons"),
+          (z.SOUNDBOARD = "soundboard"),
+          (z.CLIENT_THEMES = "client-themes"),
+          (z.FOR_LATER = "for-later"),
           ((Q = h || (h = {})).UNKNOWN = "ESKERRORDOMAIN0"),
           (Q.CLIENT_INVALID = "ESKERRORDOMAIN1"),
           (Q.PAYMENT_CANCELED = "ESKERRORDOMAIN2"),
@@ -12435,7 +12435,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-dc4a130885f443f6255bf0089109573a606d6152",
+            release: "discord_web-70baff1201528806ad1323b3f330207e9b4bf763",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12504,8 +12504,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "332392"), "332392"));
-          i.YA("builtAt", String("1727872949692"));
+            i.YA("buildNumber", ((e = "332393"), "332393"));
+          i.YA("builtAt", String("1727873824358"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -16761,9 +16761,9 @@
           X,
           j,
           $,
+          J,
           q,
           z,
-          J,
           Q,
           Z,
           ee,
@@ -17172,15 +17172,15 @@
           ($[($.UNAUTHORIZED_FOR_APPLICATION = 5012)] =
             "UNAUTHORIZED_FOR_APPLICATION"),
           ($[($.NO_CONNECTION_FOUND = 5013)] = "NO_CONNECTION_FOUND"),
-          ((q = O || (O = {}))[(q.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
-          (q[(q.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
-          (q[(q.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
-          (q[(q.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
-          (q[(q.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
-          (q[(q.RATELIMITED = 4002)] = "RATELIMITED"),
-          (q[(q.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
-          (q[(q.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
-          (q[(q.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
+          ((J = O || (O = {}))[(J.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
+          (J[(J.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
+          (J[(J.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
+          (J[(J.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
+          (J[(J.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
+          (J[(J.RATELIMITED = 4002)] = "RATELIMITED"),
+          (J[(J.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
+          (J[(J.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
+          (J[(J.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
         let eH = "token",
           eY = "tokens",
           eK = "https://".concat("status.discord.com"),
@@ -17254,93 +17254,93 @@
             CHANNEL: (e, t) => "/channels/".concat(e, "/").concat(t),
             REPORT: "".concat(eI, "/report"),
           });
-        ((z = f || (f = {})).INDEX = "/"),
-          (z.INDEX_WORD = "/index"),
-          (z.INDEX_BUCKET = "/index/:bucketId"),
-          (z.CHANGELOGS = "/changelogs/:date"),
-          (z.COMMUNITY = "/community"),
-          (z.COMPANY = "/company"),
-          (z.COMPANY_INFORMATION = "/company-information"),
-          (z.CREATORS = "/creators"),
-          (z.DOWNLOADS = "/downloads"),
-          (z.DOWNLOAD = "/download"),
-          (z.GAMING = "/gaming"),
-          (z.PRIVACY = "/privacy"),
-          (z.TOS = "/tos"),
-          (z.TERMS = "/terms"),
-          (z.STORE_TERMS = "/store-terms"),
-          (z.ACKNOWLEDGEMENTS = "/acknowledgements"),
-          (z.LICENSES = "/licenses"),
-          (z.PARTNERS = "/partners"),
-          (z.HYPESQUAD = "/hypesquad"),
-          (z.HYPESQUAD_RIOT = "/hypesquad-riot"),
-          (z.BRANDING = "/branding"),
-          (z.ERROR_404 = "/404"),
-          (z.JOBS = "/jobs"),
-          (z.JOB = "/jobs/:jobId"),
-          (z.STREAMKIT = "/streamkit"),
-          (z.SECURITY = "/security"),
-          (z.NITRO = "/nitro"),
-          (z.DISCOVER = "/servers"),
-          (z.GUIDELINES = "/guidelines"),
-          (z.RICH_PRESENCE = "/rich-presence"),
-          (z.VERIFICATION = "/verification"),
-          (z.OPEN_SOURCE = "/open-source"),
-          (z.WARFRAME = "/warframe"),
-          (z.REMOTE_AUTH = "/ra/:remoteAuthFingerprint"),
-          (z.SAFETY_LANDING = "/safetycenter"),
-          (z.SAFETY_ARTICLE_ROOT = "/safety"),
-          (z.SAFETY_ARTICLE = "/safety/:article"),
-          (z.NEWSROOM = "/newsroom"),
-          (z.INSPIRATION = "/inspiration"),
-          (z.MOD_ACADEMY_LANDING = "/moderation"),
-          (z.MOD_ACADEMY_EXAM = "/moderation/exam"),
-          (z.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
-          (z.BLOG = "/blog"),
-          (z.APP_DIRECTORY = "/application-directory"),
-          (z.REFRESH_INDEX = "/new"),
-          (z.REFRESH_INDEX_WORD = "/new/index"),
-          (z.REFRESH_COMPANY = "/new/company"),
-          (z.REFRESH_DOWNLOAD = "/new/download"),
-          (z.REFRESH_PRIVACY = "/new/privacy"),
-          (z.REFRESH_TERMS = "/new/terms"),
-          (z.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements"),
-          (z.REFRESH_LICENSES = "/new/licenses"),
-          (z.REFRESH_BRANDING = "/new/branding"),
-          (z.REFRESH_JOBS = "/new/jobs"),
-          (z.REFRESH_JOB = "/new/jobs/:jobId"),
-          (z.REFRESH_STREAMKIT = "/new/streamkit"),
-          (z.REFRESH_NITRO = "/new/nitro"),
-          (z.REFRESH_GUIDELINES = "/new/guidelines"),
-          (z.REFRESH_SAFETY_LANDING = "/new/safety"),
-          (z.REFRESH_SAFETY_ARTICLE = "/new/safety/:article"),
-          (z.COLLEGE = "/college"),
-          (z.LEAGUE_CLUBS = "/league-communities"),
-          (z.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams"),
-          (z.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter"),
-          (z.LEGACY_DEV_NEWSLETTER = "/newsletter"),
-          (z.LEGAL_ARCHIVE = "/archive/"),
-          (z.TERMS_MAY_2020 = "/archive/terms/may-2020"),
-          (z.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020"),
-          (z.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020"),
-          (z.FALL_RELEASE_2023 = "/fallrelease"),
-          (z.MOBILE_REDESIGN_2023 = "/mobile"),
-          (z.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019"),
-          (z.REFRESH_WHY_DISCORD = "/why-discord-is-different"),
-          (z.WHY_DISCORD = "/why-discord"),
-          (z.XBOX_OFFER = "/discord-xbox-offer-2020"),
-          (z.COLLEGE_BRUINS = "/bruins"),
-          (z.COLLEGE_ANTEATERS = "/anteaters"),
-          (z.COLLEGE_GAUCHOS = "/gauchos"),
-          (z.COLLEGE_BEARS = "/bears"),
-          (z.COLLEGE_SLUGS = "/slugs"),
-          (z.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM =
+        ((q = f || (f = {})).INDEX = "/"),
+          (q.INDEX_WORD = "/index"),
+          (q.INDEX_BUCKET = "/index/:bucketId"),
+          (q.CHANGELOGS = "/changelogs/:date"),
+          (q.COMMUNITY = "/community"),
+          (q.COMPANY = "/company"),
+          (q.COMPANY_INFORMATION = "/company-information"),
+          (q.CREATORS = "/creators"),
+          (q.DOWNLOADS = "/downloads"),
+          (q.DOWNLOAD = "/download"),
+          (q.GAMING = "/gaming"),
+          (q.PRIVACY = "/privacy"),
+          (q.TOS = "/tos"),
+          (q.TERMS = "/terms"),
+          (q.STORE_TERMS = "/store-terms"),
+          (q.ACKNOWLEDGEMENTS = "/acknowledgements"),
+          (q.LICENSES = "/licenses"),
+          (q.PARTNERS = "/partners"),
+          (q.HYPESQUAD = "/hypesquad"),
+          (q.HYPESQUAD_RIOT = "/hypesquad-riot"),
+          (q.BRANDING = "/branding"),
+          (q.ERROR_404 = "/404"),
+          (q.JOBS = "/jobs"),
+          (q.JOB = "/jobs/:jobId"),
+          (q.STREAMKIT = "/streamkit"),
+          (q.SECURITY = "/security"),
+          (q.NITRO = "/nitro"),
+          (q.DISCOVER = "/servers"),
+          (q.GUIDELINES = "/guidelines"),
+          (q.RICH_PRESENCE = "/rich-presence"),
+          (q.VERIFICATION = "/verification"),
+          (q.OPEN_SOURCE = "/open-source"),
+          (q.WARFRAME = "/warframe"),
+          (q.REMOTE_AUTH = "/ra/:remoteAuthFingerprint"),
+          (q.SAFETY_LANDING = "/safetycenter"),
+          (q.SAFETY_ARTICLE_ROOT = "/safety"),
+          (q.SAFETY_ARTICLE = "/safety/:article"),
+          (q.NEWSROOM = "/newsroom"),
+          (q.INSPIRATION = "/inspiration"),
+          (q.MOD_ACADEMY_LANDING = "/moderation"),
+          (q.MOD_ACADEMY_EXAM = "/moderation/exam"),
+          (q.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
+          (q.BLOG = "/blog"),
+          (q.APP_DIRECTORY = "/application-directory"),
+          (q.REFRESH_INDEX = "/new"),
+          (q.REFRESH_INDEX_WORD = "/new/index"),
+          (q.REFRESH_COMPANY = "/new/company"),
+          (q.REFRESH_DOWNLOAD = "/new/download"),
+          (q.REFRESH_PRIVACY = "/new/privacy"),
+          (q.REFRESH_TERMS = "/new/terms"),
+          (q.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements"),
+          (q.REFRESH_LICENSES = "/new/licenses"),
+          (q.REFRESH_BRANDING = "/new/branding"),
+          (q.REFRESH_JOBS = "/new/jobs"),
+          (q.REFRESH_JOB = "/new/jobs/:jobId"),
+          (q.REFRESH_STREAMKIT = "/new/streamkit"),
+          (q.REFRESH_NITRO = "/new/nitro"),
+          (q.REFRESH_GUIDELINES = "/new/guidelines"),
+          (q.REFRESH_SAFETY_LANDING = "/new/safety"),
+          (q.REFRESH_SAFETY_ARTICLE = "/new/safety/:article"),
+          (q.COLLEGE = "/college"),
+          (q.LEAGUE_CLUBS = "/league-communities"),
+          (q.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams"),
+          (q.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter"),
+          (q.LEGACY_DEV_NEWSLETTER = "/newsletter"),
+          (q.LEGAL_ARCHIVE = "/archive/"),
+          (q.TERMS_MAY_2020 = "/archive/terms/may-2020"),
+          (q.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020"),
+          (q.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020"),
+          (q.FALL_RELEASE_2023 = "/fallrelease"),
+          (q.MOBILE_REDESIGN_2023 = "/mobile"),
+          (q.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019"),
+          (q.REFRESH_WHY_DISCORD = "/why-discord-is-different"),
+          (q.WHY_DISCORD = "/why-discord"),
+          (q.XBOX_OFFER = "/discord-xbox-offer-2020"),
+          (q.COLLEGE_BRUINS = "/bruins"),
+          (q.COLLEGE_ANTEATERS = "/anteaters"),
+          (q.COLLEGE_GAUCHOS = "/gauchos"),
+          (q.COLLEGE_BEARS = "/bears"),
+          (q.COLLEGE_SLUGS = "/slugs"),
+          (q.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM =
             "/terms/back-to-school-2020/instagram"),
-          (z.BACK_TO_SCHOOL_GIVEAWAY_TWITTER =
+          (q.BACK_TO_SCHOOL_GIVEAWAY_TWITTER =
             "/terms/back-to-school-2020/twitter"),
-          (z.SNOWSGIVING_GIVEAWAY_INSTAGRAM =
+          (q.SNOWSGIVING_GIVEAWAY_INSTAGRAM =
             "/terms/snowsgiving-2020/instagram"),
-          (z.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
+          (q.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
           (0, eE.Ft)(ex),
           (0, eE.Ft)(f);
         let eF = Object.freeze({
@@ -17349,31 +17349,31 @@
           YOUTUBE_URL: "https://www.youtube.com/discord/",
           TIKTOK_URL: "https://www.tiktok.com/@discord",
         });
-        ((J = S || (S = {})).EXPERIMENT_USER_TRIGGERED =
+        ((z = S || (S = {})).EXPERIMENT_USER_TRIGGERED =
           "experiment_user_triggered"),
-          (J.EXPERIMENT_GUILD_TRIGGERED = "experiment_guild_triggered"),
-          (J.EXPERIMENT_SAVE_EXPOSURE_FAILED =
+          (z.EXPERIMENT_GUILD_TRIGGERED = "experiment_guild_triggered"),
+          (z.EXPERIMENT_SAVE_EXPOSURE_FAILED =
             "experiment_save_exposure_failed"),
-          (J.MKTG_PAGE_VIEWED = "mktg_page_viewed"),
-          (J.CLICK_LANDING_CTA = "click_landing_cta"),
-          (J.DOWNLOAD_APP = "download_app"),
-          (J.MKTG_HYPESQUAD_FORM_SUBMITTED = "mktg_hypesquad_form_submitted"),
-          (J.MKTG_HYPESQUAD_FORM_OPENED = "mktg_hypesquad_form_opened"),
-          (J.CHANGE_MARKETING_LOCALE = "change_marketing_locale"),
-          (J.GAME_CLICKED_LANDING = "game_clicked_landing"),
-          (J.MAIN_NAVIGATION_MENU = "main_navigation_menu"),
-          (J.MKTG_APPLICATION_STEP = "mktg_application_step"),
-          (J.MKTG_WARFRAME_CTA_CLICKED = "mktg_warframe_cta_clicked"),
-          (J.MKTG_PAGE_CTA_CLICKED = "mktg_page_cta_clicked"),
-          (J.MKTG_VIDEO_PLAYED = "mktg_video_played"),
-          (J.DEEP_LINK_CLICKED = "deep_link_clicked"),
-          (J.SEO_PAGE_VIEWED = "seo_server_landing_page_viewed"),
-          (J.SEO_PAGE_CTA_CLICKED = "seo_server_landing_page_cta_clicked"),
-          (J.SEO_AGGREGATOR_PAGE_VIEWED = "seo_aggregator_page_viewed"),
-          (J.SEO_AGGREGATOR_CTA_CLICKED = "seo_aggregator_page_cta_clicked"),
-          (J.LOCATION_STACK_METADATA = "location_stack_metadata"),
-          (J.CREATOR_STORE_PAGE_VIEWED = "creator_store_page_viewed"),
-          (J.CREATOR_STORE_PAGE_CTA_CLICKED = "creator_store_page_cta_clicked"),
+          (z.MKTG_PAGE_VIEWED = "mktg_page_viewed"),
+          (z.CLICK_LANDING_CTA = "click_landing_cta"),
+          (z.DOWNLOAD_APP = "download_app"),
+          (z.MKTG_HYPESQUAD_FORM_SUBMITTED = "mktg_hypesquad_form_submitted"),
+          (z.MKTG_HYPESQUAD_FORM_OPENED = "mktg_hypesquad_form_opened"),
+          (z.CHANGE_MARKETING_LOCALE = "change_marketing_locale"),
+          (z.GAME_CLICKED_LANDING = "game_clicked_landing"),
+          (z.MAIN_NAVIGATION_MENU = "main_navigation_menu"),
+          (z.MKTG_APPLICATION_STEP = "mktg_application_step"),
+          (z.MKTG_WARFRAME_CTA_CLICKED = "mktg_warframe_cta_clicked"),
+          (z.MKTG_PAGE_CTA_CLICKED = "mktg_page_cta_clicked"),
+          (z.MKTG_VIDEO_PLAYED = "mktg_video_played"),
+          (z.DEEP_LINK_CLICKED = "deep_link_clicked"),
+          (z.SEO_PAGE_VIEWED = "seo_server_landing_page_viewed"),
+          (z.SEO_PAGE_CTA_CLICKED = "seo_server_landing_page_cta_clicked"),
+          (z.SEO_AGGREGATOR_PAGE_VIEWED = "seo_aggregator_page_viewed"),
+          (z.SEO_AGGREGATOR_CTA_CLICKED = "seo_aggregator_page_cta_clicked"),
+          (z.LOCATION_STACK_METADATA = "location_stack_metadata"),
+          (z.CREATOR_STORE_PAGE_VIEWED = "creator_store_page_viewed"),
+          (z.CREATOR_STORE_PAGE_CTA_CLICKED = "creator_store_page_cta_clicked"),
           ((L || (L = {})).MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN =
             "mktg_ack_modal_open"),
           ((Q = D || (D = {})).AED = "aed"),
@@ -22328,7 +22328,13 @@
           (a[(a.NITRO_NOTIFICATION = 48)] = "NITRO_NOTIFICATION"),
           (a[(a.CHANNEL_LINKED_TO_LOBBY = 49)] = "CHANNEL_LINKED_TO_LOBBY"),
           (a[(a.GIFTING_PROMPT = 50)] = "GIFTING_PROMPT"),
-          (a[(a.IN_GAME_MESSAGE_NUX = 51)] = "IN_GAME_MESSAGE_NUX");
+          (a[(a.IN_GAME_MESSAGE_NUX = 51)] = "IN_GAME_MESSAGE_NUX"),
+          (a[(a.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION = 52)] =
+            "GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION"),
+          (a[(a.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION = 53)] =
+            "GUILD_JOIN_REQUEST_REJECT_NOTIFICATION"),
+          (a[(a.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION = 54)] =
+            "GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION");
         let o = {
           UNDELETABLE: new Set([1, 2, 3, 4, 5, 21]),
           GUILD_DISCOVERY_STATUS: new Set([14, 15, 16, 17]),
@@ -23354,26 +23360,26 @@
                     return "hcg";
                 },
               });
-            var q = _.unpack,
-              z = _.last,
-              J = Math.round,
+            var J = _.unpack,
+              q = _.last,
+              z = Math.round,
               Q = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = q(e, "rgba"),
+                var r = J(e, "rgba"),
                   n = r[0],
                   a = r[1],
                   o = r[2],
                   i = r[3],
-                  _ = z(e) || "auto";
+                  _ = q(e) || "auto";
                 void 0 === i && (i = 1),
                   "auto" === _ && (_ = i < 1 ? "rgba" : "rgb"),
-                  (n = J(n)),
-                  (a = J(a));
+                  (n = z(n)),
+                  (a = z(a));
                 var E =
-                  "000000" + ((n << 16) | (a << 8) | (o = J(o))).toString(16);
+                  "000000" + ((n << 16) | (a << 8) | (o = z(o))).toString(16);
                 E = E.substr(E.length - 6);
-                var s = "0" + J(255 * i).toString(16);
+                var s = "0" + z(255 * i).toString(16);
                 switch (((s = s.substr(s.length - 2)), _.toLowerCase())) {
                   case "rgba":
                     return "#" + E + s;
@@ -23777,22 +23783,22 @@
               eX = _.unpack,
               ej = _.unpack,
               e$ = _.DEG2RAD,
-              eq = Math.sin,
-              ez = Math.cos,
-              eJ = function () {
+              eJ = Math.sin,
+              eq = Math.cos,
+              ez = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = ej(e, "lch"),
                   n = r[0],
                   a = r[1],
                   o = r[2];
-                return isNaN(o) && (o = 0), [n, ez((o *= e$)) * a, eq(o) * a];
+                return isNaN(o) && (o = 0), [n, eq((o *= e$)) * a, eJ(o) * a];
               },
               eQ = _.unpack,
               eZ = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = eJ((e = eQ(e, "lch"))[0], e[1], e[2]),
+                var r = ez((e = eQ(e, "lch"))[0], e[1], e[2]),
                   n = ew(r[0], r[1], r[2]);
                 return [n[0], n[1], n[2], e.length > 3 ? e[3] : 1];
               },
@@ -24291,7 +24297,7 @@
               (E.format.oklch = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = eJ((e = tS(e, "lch"))[0], e[1], e[2]),
+                var r = ez((e = tS(e, "lch"))[0], e[1], e[2]),
                   n = td(r[0], r[1], r[2]);
                 return [n[0], n[1], n[2], e.length > 3 ? e[3] : 1];
               }),
@@ -24593,7 +24599,7 @@
               },
               tj = _.type,
               t$ = Math.pow,
-              tq = function (e) {
+              tJ = function (e) {
                 var t = "rgb",
                   r = l("#ccc"),
                   n = 0,
@@ -24835,7 +24841,7 @@
                   L
                 );
               },
-              tz = function (e) {
+              tq = function (e) {
                 for (var t = [1, 1], r = 1; r < e; r++) {
                   for (var n = [1], a = 1; a <= t.length; a++)
                     n[a] = (t[a] || 0) + t[a - 1];
@@ -24843,7 +24849,7 @@
                 }
                 return t;
               },
-              tJ = function (e) {
+              tz = function (e) {
                 var t, r, n, a, o, i, _, E, s, c, I;
                 if (
                   2 ===
@@ -24905,7 +24911,7 @@
                   (s = e.map(function (e) {
                     return e.lab();
                   })),
-                    (c = tz((I = e.length - 1))),
+                    (c = tq((I = e.length - 1))),
                     (a = function (e) {
                       var t = 1 - e;
                       return new u(
@@ -25621,10 +25627,10 @@
                 return (l /= n), new u(i, t).alpha(l > 0.99999 ? 1 : l, !0);
               }),
               (l.bezier = function (e) {
-                var t = tJ(e);
+                var t = tz(e);
                 return (
                   (t.scale = function () {
-                    return tq(t);
+                    return tJ(t);
                   }),
                   t
                 );
@@ -25693,7 +25699,7 @@
                   e += "0123456789abcdef".charAt(t8(16 * t7()));
                 return new u(e, "hex");
               }),
-              (l.scale = tq),
+              (l.scale = tJ),
               (l.analyze = ro),
               (l.contrast = function (e, t) {
                 (e = new u(e)), (t = new u(t));
@@ -25790,10 +25796,10 @@
               }),
               (l.scales = {
                 cool: function () {
-                  return tq([l.hsl(180, 1, 0.9), l.hsl(250, 0.7, 0.4)]);
+                  return tJ([l.hsl(180, 1, 0.9), l.hsl(250, 0.7, 0.4)]);
                 },
                 hot: function () {
-                  return tq(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
+                  return tJ(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
                 },
               }),
               (l.colors = e6),
@@ -37997,9 +38003,9 @@ Error:`,
             confirmButtonLabel: X = A,
             emailLabel: j = N,
             emailPlaceholder: $ = d,
-            formTitle: q = T,
-            isRequiredLabel: z = D,
-            messageLabel: J = O,
+            formTitle: J = T,
+            isRequiredLabel: q = D,
+            messageLabel: z = O,
             messagePlaceholder: Q = p,
             nameLabel: Z = S,
             namePlaceholder: ee = f,
@@ -38033,15 +38039,15 @@ Error:`,
                 cancelButtonLabel: W,
                 submitButtonLabel: er,
                 confirmButtonLabel: X,
-                formTitle: q,
+                formTitle: J,
                 emailLabel: j,
                 emailPlaceholder: $,
-                messageLabel: J,
+                messageLabel: z,
                 messagePlaceholder: Q,
                 nameLabel: Z,
                 namePlaceholder: ee,
                 successMessageText: en,
-                isRequiredLabel: z,
+                isRequiredLabel: q,
                 addScreenshotButtonLabel: F,
                 removeScreenshotButtonLabel: et,
                 onFormClose: e_,
@@ -38388,11 +38394,11 @@ ${
           for (var r in t) e[r] = t[r];
           return e;
         }
-        function q(e) {
+        function J(e) {
           var t = e.parentNode;
           t && t.removeChild(e);
         }
-        function z(e, t, r) {
+        function q(e, t, r) {
           var n,
             a,
             o,
@@ -38406,9 +38412,9 @@ ${
           )
             for (o in e.defaultProps)
               void 0 === i[o] && (i[o] = e.defaultProps[o]);
-          return J(e, i, n, a, null);
+          return z(e, i, n, a, null);
         }
-        function J(e, t, r, n, a) {
+        function z(e, t, r, n, a) {
           var o = {
             type: e,
             props: t,
@@ -38535,11 +38541,11 @@ ${
                           "number" == typeof a ||
                           "bigint" == typeof a ||
                           a.constructor == String
-                        ? J(null, a, null, null, a)
+                        ? z(null, a, null, null, a)
                         : j(a)
-                          ? J(Q, { children: a }, null, null, null)
+                          ? z(Q, { children: a }, null, null, null)
                           : void 0 === a.constructor && a.__b > 0
-                            ? J(
+                            ? z(
                                 a.type,
                                 a.props,
                                 a.key,
@@ -38959,7 +38965,7 @@ ${
                       ),
                       null != o)
                     )
-                      for (s = o.length; s--; ) null != o[s] && q(o[s]);
+                      for (s = o.length; s--; ) null != o[s] && J(o[s]);
                     _ ||
                       ((s = "value"),
                       void 0 === R ||
@@ -39015,7 +39021,7 @@ ${
           if ((n = e.__k))
             for (a = 0; a < n.length; a++)
               n[a] && eI(n[a], t, r || "function" != typeof e.type);
-          r || null == e.__e || q(e.__e), (e.__ = e.__e = e.__d = void 0);
+          r || null == e.__e || J(e.__e), (e.__ = e.__e = e.__d = void 0);
         }
         function eu(e, t, r) {
           return this.constructor(e, r);
@@ -39378,7 +39384,7 @@ ${
             }),
             [],
           );
-          return z(
+          return q(
             "h2",
             {
               class: "dialog__header",
@@ -39387,7 +39393,7 @@ ${
             },
             e.formTitle,
             e.showBranding
-              ? z("a", {
+              ? q("a", {
                   class: "brand-link",
                   target: "_blank",
                   href: "https://sentry.io/welcome/",
@@ -39469,7 +39475,7 @@ ${
               },
               [A, d, N, p, f],
             );
-          return z(
+          return q(
             "form",
             {
               class: "form",
@@ -39513,13 +39519,13 @@ ${
               __source: { fileName: ek, lineNumber: 144 },
             },
             m && g
-              ? z(m, {
+              ? q(m, {
                   onError: y,
                   __self: this,
                   __source: { fileName: ek, lineNumber: 146 },
                 })
               : null,
-            z(
+            q(
               "div",
               {
                 class: "form__right",
@@ -39527,7 +39533,7 @@ ${
                 __self: this,
                 __source: { fileName: ek, lineNumber: 149 },
               },
-              z(
+              q(
                 "div",
                 {
                   class: "form__top",
@@ -39535,7 +39541,7 @@ ${
                   __source: { fileName: ek, lineNumber: 150 },
                 },
                 h
-                  ? z(
+                  ? q(
                       "div",
                       {
                         class: "form__error-container",
@@ -39546,7 +39552,7 @@ ${
                     )
                   : null,
                 s
-                  ? z(
+                  ? q(
                       "label",
                       {
                         for: "name",
@@ -39554,14 +39560,14 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 154 },
                       },
-                      z(eW, {
+                      q(eW, {
                         label: f,
                         isRequiredLabel: D,
                         isRequired: N,
                         __self: this,
                         __source: { fileName: ek, lineNumber: 155 },
                       }),
-                      z("input", {
+                      q("input", {
                         class: "form__input",
                         defaultValue: r,
                         id: "name",
@@ -39573,7 +39579,7 @@ ${
                         __source: { fileName: ek, lineNumber: 156 },
                       }),
                     )
-                  : z("input", {
+                  : q("input", {
                       "aria-hidden": !0,
                       value: r,
                       name: "name",
@@ -39582,7 +39588,7 @@ ${
                       __source: { fileName: ek, lineNumber: 167 },
                     }),
                 E
-                  ? z(
+                  ? q(
                       "label",
                       {
                         for: "email",
@@ -39590,14 +39596,14 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 171 },
                       },
-                      z(eW, {
+                      q(eW, {
                         label: A,
                         isRequiredLabel: D,
                         isRequired: d,
                         __self: this,
                         __source: { fileName: ek, lineNumber: 172 },
                       }),
-                      z("input", {
+                      q("input", {
                         class: "form__input",
                         defaultValue: t,
                         id: "email",
@@ -39609,7 +39615,7 @@ ${
                         __source: { fileName: ek, lineNumber: 173 },
                       }),
                     )
-                  : z("input", {
+                  : q("input", {
                       "aria-hidden": !0,
                       value: t,
                       name: "email",
@@ -39617,7 +39623,7 @@ ${
                       __self: this,
                       __source: { fileName: ek, lineNumber: 184 },
                     }),
-                z(
+                q(
                   "label",
                   {
                     for: "message",
@@ -39625,14 +39631,14 @@ ${
                     __self: this,
                     __source: { fileName: ek, lineNumber: 187 },
                   },
-                  z(eW, {
+                  q(eW, {
                     label: p,
                     isRequiredLabel: D,
                     isRequired: !0,
                     __self: this,
                     __source: { fileName: ek, lineNumber: 188 },
                   }),
-                  z("textarea", {
+                  q("textarea", {
                     autoFocus: !0,
                     class: "form__input form__input--textarea",
                     id: "message",
@@ -39645,7 +39651,7 @@ ${
                   }),
                 ),
                 m
-                  ? z(
+                  ? q(
                       "label",
                       {
                         for: "screenshot",
@@ -39653,7 +39659,7 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 201 },
                       },
-                      z(
+                      q(
                         "button",
                         {
                           class: "btn btn--default",
@@ -39667,7 +39673,7 @@ ${
                         g ? l : u,
                       ),
                       U
-                        ? z(
+                        ? q(
                             "div",
                             {
                               class: "form__error-container",
@@ -39680,14 +39686,14 @@ ${
                     )
                   : null,
               ),
-              z(
+              q(
                 "div",
                 {
                   class: "btn-group",
                   __self: this,
                   __source: { fileName: ek, lineNumber: 216 },
                 },
-                z(
+                q(
                   "button",
                   {
                     class: "btn btn--primary",
@@ -39697,7 +39703,7 @@ ${
                   },
                   L,
                 ),
-                z(
+                q(
                   "button",
                   {
                     class: "btn btn--default",
@@ -39713,7 +39719,7 @@ ${
           );
         }
         function eW({ label: e, isRequired: t, isRequiredLabel: r }) {
-          return z(
+          return q(
             "span",
             {
               class: "form__label__text",
@@ -39722,7 +39728,7 @@ ${
             },
             e,
             t &&
-              z(
+              q(
                 "span",
                 {
                   class: "form__label__text--required",
@@ -39794,11 +39800,11 @@ ${
               },
               [t],
             );
-          return z(
+          return q(
             Q,
             { __self: this, __source: { fileName: eX, lineNumber: 48 } },
             o
-              ? z(
+              ? q(
                   "div",
                   {
                     class: "success__position",
@@ -39806,7 +39812,7 @@ ${
                     __self: this,
                     __source: { fileName: eX, lineNumber: 50 },
                   },
-                  z(
+                  q(
                     "div",
                     {
                       class: "success__content",
@@ -39814,7 +39820,7 @@ ${
                       __source: { fileName: eX, lineNumber: 51 },
                     },
                     n.successMessageText,
-                    z("span", {
+                    q("span", {
                       class: "success__icon",
                       dangerouslySetInnerHTML: a,
                       __self: this,
@@ -39822,7 +39828,7 @@ ${
                     }),
                   ),
                 )
-              : z(
+              : q(
                   "dialog",
                   {
                     class: "dialog",
@@ -39831,14 +39837,14 @@ ${
                     __self: this,
                     __source: { fileName: eX, lineNumber: 57 },
                   },
-                  z(
+                  q(
                     "div",
                     {
                       class: "dialog__position",
                       __self: this,
                       __source: { fileName: eX, lineNumber: 58 },
                     },
-                    z(
+                    q(
                       "div",
                       {
                         class: "dialog__content",
@@ -39848,12 +39854,12 @@ ${
                         __self: this,
                         __source: { fileName: eX, lineNumber: 59 },
                       },
-                      z(eV, {
+                      q(eV, {
                         options: n,
                         __self: this,
                         __source: { fileName: eX, lineNumber: 66 },
                       }),
-                      z(eF, {
+                      q(eF, {
                         ...r,
                         onSubmitSuccess: E,
                         __self: this,
@@ -39936,7 +39942,7 @@ ${
   transition: transform 0.2s ease-in-out;
 }
 `,
-          eq = `
+          eJ = `
 .dialog__header {
   display: flex;
   align-items: center;
@@ -39952,7 +39958,7 @@ ${
   outline: var(--outline);
 }
 `,
-          ez = `
+          eq = `
 .form {
   display: flex;
   overflow: auto;
@@ -40039,7 +40045,7 @@ ${
   fill: var(--error-color);
 }
 `,
-          eJ = `
+          ez = `
 .btn-group {
   display: grid;
   gap: 8px;
@@ -40159,9 +40165,9 @@ ${
 }
 
 ${e$}
+${eJ}
 ${eq}
 ${ez}
-${eJ}
 ${eQ}
 `),
                     e
@@ -40194,10 +40200,10 @@ ${eQ}
                 },
                 u =
                   t &&
-                  t.createInput({ h: z, hooks: eY, dialog: I, options: e }),
+                  t.createInput({ h: q, hooks: eY, dialog: I, options: e }),
                 l = (t) => {
                   var n, a, E, s, c, I, R;
-                  (n = z(ej, {
+                  (n = q(ej, {
                     options: e,
                     screenshotInput: u,
                     showName: e.showName || e.isNameRequired,
@@ -40232,7 +40238,7 @@ ${eQ}
                     (R = []),
                     eE(
                       a,
-                      (n = ((!s && E) || a).__k = z(Q, null, [n])),
+                      (n = ((!s && E) || a).__k = q(Q, null, [n])),
                       c || F,
                       F,
                       void 0 !== a.ownerSVGElement,
@@ -41707,14 +41713,14 @@ ${eQ}
           (s[(s.Text = 3)] = "Text"),
           (s[(s.CDATA = 4)] = "CDATA"),
           (s[(s.Comment = 5)] = "Comment");
-        function q(e) {
+        function J(e) {
           let t = $([e, "optionalAccess", (e) => e.host]);
           return $([t, "optionalAccess", (e) => e.shadowRoot]) === e;
         }
-        function z(e) {
+        function q(e) {
           return "[object ShadowRoot]" === Object.prototype.toString.call(e);
         }
-        function J(e) {
+        function z(e) {
           try {
             var t;
             let r = e.rules || e.cssRules;
@@ -41742,7 +41748,7 @@ ${eQ}
           )
             try {
               t =
-                J(e.styleSheet) ||
+                z(e.styleSheet) ||
                 (function (e) {
                   let { cssText: t } = e;
                   if (t.split('"').length < 3) return t;
@@ -42196,7 +42202,7 @@ ${eQ}
                           (t) => t.href === e.href,
                         ),
                         r = null;
-                      t && (r = J(t)),
+                      t && (r = z(t)),
                         r &&
                           (delete M.rel,
                           delete M.href,
@@ -42207,7 +42213,7 @@ ${eQ}
                       e.sheet &&
                       !(e.innerText || e.textContent || "").trim().length
                     ) {
-                      let t = J(e.sheet);
+                      let t = z(e.sheet);
                       t && (M._cssText = ep(t, eL()));
                     }
                     if (
@@ -42388,7 +42394,7 @@ ${eQ}
                             "optionalAccess",
                             (e) => e.cssRules,
                           ]) &&
-                            (u = J(e.parentNode.sheet)));
+                            (u = z(e.parentNode.sheet)));
                       } catch (t) {
                         console.warn(
                           `Cannot get CSS styles from text's parentNode. Error: ${t}`,
@@ -42576,7 +42582,7 @@ ${eQ}
           if (b.type === A.Element) {
             (B = B && !b.needBlock), delete b.needBlock;
             let t = e.shadowRoot;
-            t && z(t) && (b.isShadowHost = !0);
+            t && q(t) && (b.isShadowHost = !0);
           }
           if ((b.type === A.Document || b.type === A.Element) && B) {
             var w;
@@ -42621,13 +42627,13 @@ ${eQ}
               for (let r of Array.from(e.shadowRoot.childNodes)) {
                 let n = em(r, t);
                 n &&
-                  (z(e.shadowRoot) && (n.isShadow = !0), b.childNodes.push(n));
+                  (q(e.shadowRoot) && (n.isShadow = !0), b.childNodes.push(n));
               }
           }
           return (
             e.parentNode &&
+              J(e.parentNode) &&
               q(e.parentNode) &&
-              z(e.parentNode) &&
               (b.isShadow = !0),
             b.type === A.Element &&
               "iframe" === b.tagName &&
@@ -43005,7 +43011,7 @@ ${eQ}
             return this.id++;
           }
         }
-        function eq(e) {
+        function eJ(e) {
           let t = null;
           return (
             eU([
@@ -43022,7 +43028,7 @@ ${eQ}
             t
           );
         }
-        function ez(e) {
+        function eq(e) {
           let t = e.ownerDocument;
           return (
             !!t &&
@@ -43033,16 +43039,16 @@ ${eQ}
                 let r = (function (e) {
                   let t,
                     r = e;
-                  for (; (t = eq(r)); ) r = t;
+                  for (; (t = eJ(r)); ) r = t;
                   return r;
                 })(e);
                 return t.contains(r);
               })(e))
           );
         }
-        let eJ = {};
+        let ez = {};
         function eQ(e) {
-          let t = eJ[e];
+          let t = ez[e];
           if (t) return t;
           let r = window.document,
             n = window[e];
@@ -43053,7 +43059,7 @@ ${eQ}
               let a = t.contentWindow;
               a && a[e] && (n = a[e]), r.head.removeChild(t);
             } catch (e) {}
-          return (eJ[e] = n.bind(window));
+          return (ez[e] = n.bind(window));
         }
         function eZ(...e) {
           return eQ("setTimeout")(...e);
@@ -43208,9 +43214,9 @@ ${eQ}
                     return r;
                   },
                   a = (a) => {
-                    if (!a.parentNode || !ez(a)) return;
-                    let o = q(a.parentNode)
-                        ? this.mirror.getId(eq(a))
+                    if (!a.parentNode || !eq(a)) return;
+                    let o = J(a.parentNode)
+                        ? this.mirror.getId(eJ(a))
                         : this.mirror.getId(a.parentNode),
                       i = n(a);
                     if (-1 === o || -1 === i) return r.addNode(a);
@@ -43502,7 +43508,7 @@ ${eQ}
                         e.removedNodes.forEach((t) => {
                           var r;
                           let n = this.mirror.getId(t),
-                            a = q(e.target)
+                            a = J(e.target)
                               ? this.mirror.getId(e.target.host)
                               : this.mirror.getId(e.target);
                           if (
@@ -43521,7 +43527,7 @@ ${eQ}
                               ? (e7(this.addedSet, t), this.droppedSet.add(t))
                               : (this.addedSet.has(e.target) && -1 === n) ||
                                 (function e(t, r) {
-                                  if (q(t)) return !1;
+                                  if (J(t)) return !1;
                                   let n = r.getId(t);
                                   return (
                                     !r.has(n) ||
@@ -43537,7 +43543,7 @@ ${eQ}
                                       parentId: a,
                                       id: n,
                                       isShadow:
-                                        !!(q(e.target) && z(e.target)) ||
+                                        !!(J(e.target) && q(e.target)) ||
                                         void 0,
                                     })),
                               this.mapRemoves.push(t);
@@ -44858,7 +44864,7 @@ ${eQ}
             this.reset(), this.patchAttachShadow(Element, document);
           }
           addShadowRoot(e, t) {
-            if (!z(e) || this.shadowDoms.has(e)) return;
+            if (!q(e) || this.shadowDoms.has(e)) return;
             this.shadowDoms.add(e),
               this.bypassOptions.canvasManager.addShadowRoot(e);
             let r = to(
@@ -44914,7 +44920,7 @@ ${eQ}
                   let a = e.call(this, n);
                   return (
                     this.shadowRoot &&
-                      ez(this) &&
+                      eq(this) &&
                       r.addShadowRoot(this.shadowRoot, t),
                     a
                   );
@@ -45151,7 +45157,7 @@ ${eQ}
                 });
           })();
           let $ = 0,
-            q = (e) => {
+            J = (e) => {
               for (let t of H || [])
                 t.eventProcessor && (e = t.eventProcessor(e));
               return g && !W && (e = g(e)), e;
@@ -45176,11 +45182,11 @@ ${eQ}
                 tn.forEach((e) => e.unfreeze()),
               F)
             )
-              (0, N.x)([r, "optionalCall", (t) => t(q(e), o)]);
+              (0, N.x)([r, "optionalCall", (t) => t(J(e), o)]);
             else if (W) {
               let t = {
                 type: "rrweb",
-                event: q(e),
+                event: J(e),
                 origin: window.location.origin,
                 isCheckout: o,
               };
@@ -45196,13 +45202,13 @@ ${eQ}
               (r || o) && eo(!0);
             }
           };
-          let z = (e) => {
+          let q = (e) => {
               i({
                 type: e0.IncrementalSnapshot,
                 data: { source: e1.Mutation, ...e },
               });
             },
-            J = (e) =>
+            z = (e) =>
               i({
                 type: e0.IncrementalSnapshot,
                 data: { source: e1.Scroll, ...e },
@@ -45213,7 +45219,7 @@ ${eQ}
                 data: { source: e1.CanvasMutation, ...e },
               }),
             ee = new tS({
-              mutationCb: z,
+              mutationCb: q,
               adoptedStyleSheetCb: (e) =>
                 i({
                   type: e0.IncrementalSnapshot,
@@ -45226,7 +45232,7 @@ ${eQ}
                 ? new td()
                 : new tN({
                     mirror: tD,
-                    mutationCb: z,
+                    mutationCb: q,
                     stylesheetManager: ee,
                     recordCrossOriginIframes: y,
                     wrappedEmit: i,
@@ -45269,8 +45275,8 @@ ${eQ}
               __RRWEB_EXCLUDE_SHADOW_DOM__
                 ? new tp()
                 : new tO({
-                    mutationCb: z,
-                    scrollCb: J,
+                    mutationCb: q,
+                    scrollCb: z,
                     bypassOptions: {
                       onMutation: k,
                       blockClass: E,
@@ -45464,7 +45470,7 @@ ${eQ}
                 tt(tu)(
                   {
                     onMutation: k,
-                    mutationCb: z,
+                    mutationCb: q,
                     mousemoveCb: (e, t) =>
                       i({
                         type: e0.IncrementalSnapshot,
@@ -45475,7 +45481,7 @@ ${eQ}
                         type: e0.IncrementalSnapshot,
                         data: { source: e1.MouseInteraction, ...e },
                       }),
-                    scrollCb: J,
+                    scrollCb: z,
                     viewportResizeCb: (e) =>
                       i({
                         type: e0.IncrementalSnapshot,
@@ -46073,18 +46079,18 @@ ${eQ}
           };
         }
         let t$ = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
-        function tq(e, t) {
-          if (!!t$) G.kg.info(e), t && tJ(e);
+        function tJ(e, t) {
+          if (!!t$) G.kg.info(e), t && tz(e);
         }
-        function tz(e, t) {
+        function tq(e, t) {
           if (!!t$)
             G.kg.info(e),
               t &&
                 (0, Y.iK)(() => {
-                  tJ(e);
+                  tz(e);
                 }, 0);
         }
-        function tJ(e) {
+        function tz(e) {
           (0, p.n)(
             {
               category: "console",
@@ -46158,7 +46164,7 @@ ${eQ}
                 this._ensureReadyPromise);
           }
           destroy() {
-            tq("[Replay] Destroying compression worker"),
+            tJ("[Replay] Destroying compression worker"),
               this._worker.terminate();
           }
           postMessage(e, t) {
@@ -46280,7 +46286,7 @@ ${eQ}
             try {
               await this._compression.ensureReady();
             } catch (e) {
-              tq(
+              tJ(
                 "[Replay] Failed to load the compression worker, falling back to simple buffer",
               );
               return;
@@ -46386,19 +46392,19 @@ ${eQ}
                 let t = F.sessionStorage.getItem(W);
                 if (!t) return null;
                 let r = JSON.parse(t);
-                return tz("[Replay] Loading existing session", e), t5(r);
+                return tq("[Replay] Loading existing session", e), t5(r);
               } catch (e) {
                 return null;
               }
             })(e);
           return o
             ? re(o, { sessionIdleExpire: t, maxReplayDuration: r })
-              ? (tz(
+              ? (tq(
                   "[Replay] Session in sessionStorage is expired, creating new one...",
                 ),
                 t8(a, { previousSessionId: o.id }))
               : o
-            : (tz("[Replay] Creating new session", e),
+            : (tq("[Replay] Creating new session", e),
               t8(a, { previousSessionId: n }));
         }
         function rr(e, t, r) {
@@ -46444,7 +46450,7 @@ ${eQ}
               r >
               e.getContext().initialTimestamp + e.getOptions().maxReplayDuration
             ) ||
-              (tz(
+              (tq(
                 `[Replay] Skipping event with timestamp ${r} because it is after maxReplayDuration`,
                 e.getOptions()._experiments.traceInternals,
               ),
@@ -46991,7 +46997,7 @@ ${eQ}
           if (!S)
             return (
               T.recordDroppedEvent("event_processor", "replay", f),
-              tq("An event processor returned `null`, will not send event."),
+              tJ("An event processor returned `null`, will not send event."),
               (0, B.WD)({})
             );
           delete S.sdkProcessingMetadata;
@@ -47219,7 +47225,7 @@ ${eQ}
                 0 === this.session.segmentId
                   ? "buffer"
                   : "session"),
-                tz(
+                tq(
                   `[Replay] Starting replay in ${this.recordingMode} mode`,
                   this._options._experiments.traceInternals,
                 ),
@@ -47237,7 +47243,7 @@ ${eQ}
                 );
               return;
             }
-            tz(
+            tq(
               "[Replay] Starting replay in session mode",
               this._options._experiments.traceInternals,
             ),
@@ -47264,7 +47270,7 @@ ${eQ}
                 );
               return;
             }
-            tz(
+            tq(
               "[Replay] Starting replay in buffer mode",
               this._options._experiments.traceInternals,
             );
@@ -47391,7 +47397,7 @@ ${eQ}
                         ) {
                           let t = e.eventBuffer.getEarliestTimestamp();
                           t &&
-                            (tq(
+                            (tJ(
                               `[Replay] Updating session start time to earliest event in buffer to ${new Date(t)}`,
                               e.getOptions()._experiments.traceInternals,
                             ),
@@ -47431,7 +47437,7 @@ ${eQ}
               this._isEnabled = !1;
               try {
                 var r;
-                tq(
+                tJ(
                   `[Replay] Stopping Replay${t ? ` triggered by ${t}` : ""}`,
                   this._options._experiments.traceInternals,
                 ),
@@ -47458,7 +47464,7 @@ ${eQ}
             if (!this._isPaused)
               (this._isPaused = !0),
                 this.stopRecording(),
-                tq(
+                tJ(
                   "[Replay] Pausing replay",
                   this._options._experiments.traceInternals,
                 );
@@ -47467,7 +47473,7 @@ ${eQ}
             if (!!this._isPaused && !!this._checkSession())
               (this._isPaused = !1),
                 this.startRecording(),
-                tq(
+                tJ(
                   "[Replay] Resuming replay",
                   this._options._experiments.traceInternals,
                 );
@@ -47475,7 +47481,7 @@ ${eQ}
           async sendBufferedReplayOrFlush({ continueRecording: e = !0 } = {}) {
             if ("session" === this.recordingMode) return this.flushImmediate();
             let t = Date.now();
-            tq(
+            tJ(
               "[Replay] Converting buffer to session",
               this._options._experiments.traceInternals,
             ),
@@ -47591,18 +47597,18 @@ ${eQ}
                               })();
                         })();
                       if (!t) return;
-                      tq(
+                      tJ(
                         `[Replay] Using compression worker${e ? ` from ${e}` : ""}`,
                       );
                       let r = new Worker(t);
                       return new t3(r);
                     } catch (e) {
-                      tq("[Replay] Failed to create compression worker");
+                      tJ("[Replay] Failed to create compression worker");
                     }
                   })(t);
                   if (e) return e;
                 }
-                return tq("[Replay] Using simple buffer"), new tZ();
+                return tJ("[Replay] Using simple buffer"), new tZ();
               })({
                 useCompression: this._options.useCompression,
                 workerUrl: this._options.workerUrl,
@@ -48138,7 +48144,7 @@ ${eQ}
           _doChangeToForegroundTasks(e) {
             if (!!this.session) {
               if (!this.checkAndHandleExpiredSession()) {
-                tq(
+                tJ(
                   "[Replay] Document has become active, but session has expired",
                 );
                 return;
@@ -48257,7 +48263,7 @@ ${eQ}
               let n = r < this._options.minReplayDuration,
                 a = r > this._options.maxReplayDuration + 5e3;
               if (n || a) {
-                tq(
+                tJ(
                   `[Replay] Session duration (${Math.floor(r / 1e3)}s) is too ${n ? "short" : "long"}, not sending replay.`,
                   this._options._experiments.traceInternals,
                 ),
@@ -48269,7 +48275,7 @@ ${eQ}
                 (o &&
                   0 === this.session.segmentId &&
                   !o.hasCheckout &&
-                  tq(
+                  tJ(
                     "[Replay] Flushing initial segment without checkout.",
                     this._options._experiments.traceInternals,
                   ),
@@ -48601,4 +48607,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.a21adeb4a6d2579b4099.js.map
+//# sourceMappingURL=sentry.60efac23c72cc52dfd08.js.map
