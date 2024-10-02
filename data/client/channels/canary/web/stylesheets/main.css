@@ -31415,10 +31415,6 @@ html .progress_e5f4c6 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.buttonIcon_d9a510 {
-  width: 20px;
-  height: 20px;
-}
 @use postcss-pxtorem;
 .theme-dark.custom-theme-background .embedFull_b0068a {
   --__spoiler-background-color--hidden: var(--primary-760);
@@ -55440,4 +55436,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.969f4baa5a48929aae31.css.map*/
+/*# sourceMappingURL=12633.c869e89caff323fbb2ff.css.map*/
