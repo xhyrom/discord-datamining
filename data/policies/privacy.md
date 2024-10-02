@@ -38,7 +38,7 @@
             class="discord2"
           />
         </div>
-        <div class="div-block-4">
+        <div class="nav-menu-link-wrapper">
           <a
             href="https://discord.com/download"
             data-track-nav="download"
