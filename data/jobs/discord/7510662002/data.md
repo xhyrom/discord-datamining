@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7510662002](https://discord.com/jobs/7510662002)
 
-**Updated At:** Mon, 30 Sep 2024 21:32:29 GMT
+**Updated At:** Wed, 02 Oct 2024 16:19:49 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
@@ -30,6 +30,7 @@ Have a genuine say in the details, and have fun doing it!
 What you should have
 
 7+ years full-stack experience. We're a multi-platform team, so it's important to understand the development frameworks and fundamentals of our web platform (React, TypeScript) and backend (Python and a little bit of Rust).
+Experience working with external developer tools, SDKs, and APIs
 Strong communication skills and the ability to work well cross-functionally.
 Comfort working with ambiguity and get excited about working collaboratively to better define complex problems, figure out solutions, and then execute on them.
 Act as a problem-solver, not just a developer. Participate at all levels of ideation, implementation and release.
