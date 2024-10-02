@@ -730,7 +730,7 @@ id,hash,label
 2024-07_sky_load,2472873852,Sky Load
 2024-07_user_profile_new_activity_cards,2344802807,User Profile New Activity Cards Experiment
 2024-07_user_profile_past_activity,4175610728,User Profile Past Activity Experiment
-2024-08_blocking_voice_states,3896794487,Blocking Voice States
+2024-08_blocking_voice_states,3896794487,Blocking Voice States (Blocker)
 2024-08_collectibles_expiry_modal,1636636786,Collectibles Expiry Experiment
 2024-08_content_inventory_analytics_sampling,1274464129,Content Inventory Analytics Sampling
 2024-08_content_inventory_entry_signed_hash,1324956790,Check Signature On Content Inventory Embed
@@ -776,6 +776,7 @@ id,hash,label
 2024-09_app_dms,898010800,App DMs Experiment
 2024-09_app_oauth2_link_embed,1118084903,app oauth2 link embed
 2024-09_best_of_nitro_v2_experiment,2180300978,Best of Nitro bento boxes
+2024-09_blocking_voice_states_blockee,1813334724,Blocking Voice States (Blockee)
 2024-09_browse_channel_visible,1053452216,Don't show guild Browse Channels when all channels are already visible
 2024-09_browsechannelbuttonoptin,1325580951,Don't show guild Browse Channels when all channels are already visible
 2024-09_bug_reporter,3673264743,Bug Reporter
