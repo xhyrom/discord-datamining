@@ -4717,7 +4717,7 @@
   "OAUTH2_ADD_TO_GUILD": "\"Add to server:\"",
   "OAUTH2_ADD_TO_GUILD_PLACEHOLDER": "\"Select a server\"",
   "OAUTH2_ADD_TO_GUILD_DESCRIPTION": "\"This requires you to have **Manage Server** permission in the server.\"",
-  "OAUTH2_INTEGRATION_SELECT_USER": "\"Try it Now\"",
+  "OAUTH2_INTEGRATION_SELECT_USER": "\"Add to My Apps\"",
   "OAUTH2_INTEGRATION_SELECT_USER_SUBTITLE": "\"Use this app everywhere!\"",
   "OAUTH2_INTEGRATION_SELECT_GUILD": "\"Add to Server\"",
   "OAUTH2_INTEGRATION_SELECT_GUILD_SUBTITLE": "\"Customize your server by adding this app\"",
