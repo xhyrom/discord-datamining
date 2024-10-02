@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7610060002](https://discord.com/jobs/7610060002)
 
-**Updated At:** Mon, 30 Sep 2024 21:18:26 GMT
+**Updated At:** Wed, 02 Oct 2024 18:40:08 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Come lead our Realtime &amp;amp; Notifications Infrastructure and be a driving force behind the technology that connects over 200M users in real-time.&amp;nbsp;
