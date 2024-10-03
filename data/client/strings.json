@@ -4643,6 +4643,8 @@
   "USER_PROFILE_MEMBER_SINCE": "\"Member Since\"",
   "USER_PROFILE_DISCORD_MEMBER_SINCE": "\"Discord Member Since\"",
   "BOT_PROFILE_CREATED_ON": "\"Created On\"",
+  "USER_PROFILE_DISCORD_MEMBER_SINCE_A11Y_LABEL": "\"Joined Discord: {date}\"",
+  "USER_PROFILE_GUILD_MEMBER_SINCE_A11Y_LABEL": "\"Joined {guildName}: {date}\"",
   "MUTUAL_FRIENDS_COUNT": "\"{count, plural, =1 {1 Mutual Friend} other {{count} Mutual Friends}}\"",
   "MUTUAL_GUILDS_COUNT": "\"{count, plural, =1 {1 Mutual Server} other {{count} Mutual Servers}}\"",
   "SHOW_USER_PROFILE": "\"Show User Profile\"",
