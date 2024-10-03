@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_rapidash_discovery_entrypoint",
+    "label": "Rapidash Discovery Entrypoint",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable"
+    ],
+    "hash": 2622502748,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
