@@ -168,7 +168,11 @@
         the edges within the batch, would could wind up with a negative example
         like
       </p>
-      <p>(h, r, t) = (661027446241361930, 17, 560127830160048128)</p>
+      <p>
+        <strong
+          >(h, r, t) = (661027446241361930, 17, 560127830160048128)</strong
+        >
+      </p>
       <p>
         Where the tail was randomly selected and is a Rust server I’m not a
         member of.
