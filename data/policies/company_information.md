@@ -55,6 +55,11 @@
             class="nav-link mobile-hide w-nav-link"
             >Discover</a
           ><a
+            href="https://discord.com/ads/quests"
+            data-track-nav="safety"
+            class="nav-link mobile-hide w-nav-link"
+            >Quests</a
+          ><a
             href="https://discord.com/safety"
             data-track-nav="safety"
             class="nav-link mobile-hide w-nav-link"
