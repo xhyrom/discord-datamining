@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_icymi_random",
+    "label": "random sort on ICYMI",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: randomly sorts icymi content"
+    ],
+    "hash": 807262478,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
