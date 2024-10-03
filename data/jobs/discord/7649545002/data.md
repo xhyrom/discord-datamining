@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7649545002](https://discord.com/jobs/7649545002)
 
-**Updated At:** Wed, 02 Oct 2024 18:40:08 GMT
+**Updated At:** Thu, 03 Oct 2024 05:30:03 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
@@ -35,7 +35,7 @@ Adversarial Mindset: Experience in a domain that required an adversarial mindset
 Bonus Points:
 
 Experience working with ML/AI models in content moderation
-Familiarity with Typsecript/JavaScript/React and frontend technologies
+Familiarity with Typescript/Javascript/React and frontend technologies
 Previous experience at companies with a strong focus on safety, security, or trust &amp;amp; safety&amp;nbsp;
 
 Why This Role is Exciting:
