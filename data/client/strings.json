@@ -19067,5 +19067,14 @@
   "LEADERBOARD_RANK_CHANGE_CURRENT_USER": "\"You're now #{rank}\"",
   "LEADERBOARD_RANK_CHANGE_OTHER_USER": "\"New #{rank}: !!{username}!!\"",
   "LEADERBOARD_RANK_CHANGE_NEW_CHAMPION": "\"New Champion\"",
-  "LEADERBOARD_START_PLAYING_CTA": "\"Play and win to take the crown\""
+  "LEADERBOARD_START_PLAYING_CTA": "\"Play and win to take the crown\"",
+  "FRACTIONAL_PREMIUM_DURATION_LEFT_DAYS_SHORT": "\"{days, number}D LEFT\"",
+  "FRACTIONAL_PREMIUM_DURATION_LEFT_HOURS_SHORT": "\"{hours, number}H LEFT\"",
+  "FRACTIONAL_PREMIUM_DURATION_LEFT_MINUTES_SHORT": "\"{minutes, plural, other {}}<1H LEFT\"",
+  "FRACTIONAL_PREMIUM_DURATION_LEFT_DAYS": "\"{days, plural, =1 {{days} day} other {{days} days}} left\"",
+  "FRACTIONAL_PREMIUM_DURATION_LEFT_HOURS": "\"{hours, plural, =1 {{hours} hour} other {{hours} hours}} left\"",
+  "FRACTIONAL_PREMIUM_DURATION_LEFT_MINUTES": "\"{minutes, plural, =1 {{minutes} minute} other {{minutes} minutes}} left\"",
+  "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_DAYS": "\"ends in {days, plural, =1 {{days} day} other {{days} days}}\"",
+  "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_HOURS": "\"ends in {hours, plural, =1 {{hours} hour} other {{hours} hours}}\"",
+  "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_MINUTES": "\"ends in {minutes, plural, =1 {{minutes} minute} other {{minutes} minutes}}\""
 }
