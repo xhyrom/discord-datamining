@@ -14307,7 +14307,7 @@ span.clanTag_a31c43 {
 .joinLeaderboardCTA_cf8a7d {
   color: var(--content-inventory-overlay-text-secondary);
 }
-.joinLeaderboardCTAIcon_cf8a7d path {
+.leagueIcon_cf8a7d path {
   fill: var(--content-inventory-overlay-text-secondary);
 }
 .rankChangeBadge_cf8a7d {
@@ -14319,6 +14319,46 @@ span.clanTag_a31c43 {
   border-radius: 4px;
   margin-left: 4px;
   height: 16px;
+}
+.emptyContainer_cf8a7d {
+  height: 112px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #1f1a36 0%, #4e334a 100%);
+  border-radius: var(--radius-md);
+}
+.emptyTitleContainer_cf8a7d {
+  margin-left: 16px;
+  max-width: 148px;
+}
+.emptyTitle_cf8a7d {
+  color: var(--content-inventory-overlay-text-primary);
+}
+.emptySplash_cf8a7d {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+  -webkit-mask-image: linear-gradient(
+    270deg,
+    #000 0,
+    #000 40px,
+    rgba(0, 0, 0, 0) 176px
+  );
+  mask-image: linear-gradient(
+    270deg,
+    #000 0,
+    #000 40px,
+    rgba(0, 0, 0, 0) 176px
+  );
+}
+.emptyCrownIcon_cf8a7d {
+  position: relative;
+  top: 2px;
+  left: 2px;
 }
 .popout_b245a4 {
   background-color: var(--bg-surface-overlay);
@@ -37230,17 +37270,24 @@ html .progress_e5f4c6 {
 .contentGlow_d76538 {
   box-shadow: 0 0 20px var(--brand-500);
 }
+.contentCoachmark_d76538 {
+  background: var(--background-floating);
+}
 .innerContent_d76538 {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 10px rgba(255, 186, 219, 0.2) inset;
+}
+.innerContentCoachmark_d76538 {
+  display: flex;
+  flex-direction: column;
 }
 .contentTextCTAPopout_d76538 {
   border-radius: 4px;
 }
 .subContent_d76538 {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 16px;
 }
 .avatars_d76538 {
@@ -37250,12 +37297,22 @@ html .progress_e5f4c6 {
 .recipientUserAvatar_d76538 {
   background-color: var(--brand-500);
 }
+.recipientUserAvatarCoachmark_d76538 {
+  background-color: var(--background-primary);
+}
 .currentUserAvatar_d76538 {
   position: absolute;
   border: 2px solid var(--brand-500);
   background-color: var(--background-primary);
-  bottom: 1px;
-  right: 1px;
+  bottom: -3px;
+  right: -2px;
+}
+.currentUserAvatarCoachmark_d76538 {
+  position: absolute;
+  border: 2px solid var(--background-primary);
+  background-color: var(--background-primary);
+  bottom: -3px;
+  right: -2px;
 }
 .textContainer_d76538 {
   display: flex;
@@ -37264,6 +37321,10 @@ html .progress_e5f4c6 {
 }
 .subHeaderText_d76538 {
   color: white;
+  opacity: 0.8;
+}
+.subHeaderTextCoachmark_d76538 {
+  color: black;
   opacity: 0.8;
 }
 .button_d76538 {
@@ -37282,6 +37343,9 @@ html .progress_e5f4c6 {
 }
 .buttonTextPrimary_d76538 {
   color: var(--brand-500);
+}
+.buttonTextPrimaryCoachmark_d76538 {
+  color: white;
 }
 .buttonTextSecondary_d76538 {
   color: var(--white-500);
@@ -37305,6 +37369,10 @@ html .progress_e5f4c6 {
 .leftPopoutConnector_d76538 {
   left: 100%;
   top: 12%;
+}
+.theme-dark .subHeaderTextCoachmark_d76538 {
+  color: white;
+  opacity: 0.8;
 }
 .messageContentContainer_f93a69 {
   padding-top: 16px;
@@ -55443,4 +55511,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.6a580cf2f7413e7ae5f4.css.map*/
+/*# sourceMappingURL=12633.6b566ae7b19f9a9a7f51.css.map*/
