@@ -2433,6 +2433,7 @@
   "MUTE_SETTINGS_MUTE_SERVER": "\"Mute this server\"",
   "MUTE_SETTINGS_MUTE_CATEGORY": "\"Mute this category\"",
   "MUTE_APP_NOTIFICATIONS": "\"Mute Notifications\"",
+  "UNMUTE_APP_NOTIFICATIONS": "\"Unmute Notifications\"",
   "NOTIFICATIONS_MUTED_TOAST": "\"Notifications Muted\"",
   "NOTIFICATIONS_UNMUTED_TOAST": "\"Notifications Unmuted\"",
   "MUTE_APP_NOTIFICIATIONS_INFO": "\"This will mute all message notifications from this App until you turn them back on.\"",
