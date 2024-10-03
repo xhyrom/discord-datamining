@@ -37,6 +37,7 @@ export async function wumpusCentralSend(
     embeds.push(
       new EmbedBuilder()
         .setTitle(job.title)
+        .setURL(commitUrl)
         .addFields(
           {
             name: "Department",
@@ -93,6 +94,7 @@ export async function wumpusCentralSend(
     embeds.push(
       new EmbedBuilder()
         .setTitle(job.title)
+        .setURL(commitUrl)
         .addFields(
           {
             name: "Id",
