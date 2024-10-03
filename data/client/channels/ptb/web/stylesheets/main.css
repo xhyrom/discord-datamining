@@ -37258,17 +37258,10 @@ html .progress_e5f4c6 {
   width: 315px;
   height: auto;
   max-height: 166px;
-  background: linear-gradient(
-    257deg,
-    var(--brand-560) 0%,
-    var(--brand-460) 100%
-  );
+  background: var(--brand-500);
   border-radius: 12px;
-  border: 1.44px solid hsl(var(--white-500-hsl) / 0.15);
+  border: 1.4px solid hsl(var(--white-500-hsl) / 0.25);
   overflow: hidden;
-}
-.contentGlow_d76538 {
-  box-shadow: 0 0 20px var(--brand-500);
 }
 .contentCoachmark_d76538 {
   background: var(--background-floating);
@@ -37276,7 +37269,12 @@ html .progress_e5f4c6 {
 .innerContent_d76538 {
   display: flex;
   flex-direction: column;
+}
+.innerGlow_d76538 {
   box-shadow: 0 0 10px rgba(255, 186, 219, 0.2) inset;
+}
+.outerGlow_d76538 {
+  box-shadow: 0 0 20px var(--brand-500);
 }
 .innerContentCoachmark_d76538 {
   display: flex;
@@ -55511,4 +55509,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.6b566ae7b19f9a9a7f51.css.map*/
+/*# sourceMappingURL=12633.cd667000809926f970ed.css.map*/
