@@ -19,10 +19,10 @@
   </li>
 </ul>
 <h1 id="h_01J1XD0SEFNZVFJZNNPYECXKRY">What is message forwarding?</h1>
-<h3 id="h_01J1XD0SEFDWW7AJTJ6THAAEME">
+<div class="exp-box">
   This is currently an experiment on iOS, Android, and desktop and is not
   available to everyone.
-</h3>
+</div>
 <p>
   Have you ever wanted to send your friends that cool thing you saw on another
   server or send them a funny meme from another channel?
@@ -33,102 +33,80 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24640726768023"
-    width="624"
-    height="561"
+    src="https://support.discord.com/hc/article_attachments/26759892856983"
+    width="621"
+    height="464"
   />
 </p>
-<h4 id="h_01J1XD0SEF7Y2KKW81WNNTEDFX">
-  <span style="color: #666666"
-    >A forwarded message will show up clearly labeled as "forwarded" with only
-    the content of the message included.</span
+<h4 id="h_01J94MEASGCZMCADWVMFK97H2X" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >A forwarded message will show up clearly labeled as "forwarded".</span
   >
 </h4>
 <h1 id="h_01J1XD0SEF8T14HGJCFBS71M86">How to Forward a Message</h1>
 <h2 id="h_01J1XD0SEFB8Q948B733A1QA1A">Desktop/Browser</h2>
 <p>
-  1. To get started, hover over to a message and press the
-  <strong>Forward</strong> <strong>button</strong> <strong>[</strong
-  ><strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/24640764938263"
-      width="29"
-      height="24" /></strong
-  ><strong>]</strong> within the <strong>hover bar</strong> in the upper right
-  corner of the message.  
+  1. To get started, hover over a message and press the
+  <strong>Forward</strong> <strong>button</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/26759892865303"
+    width="30"
+    height="24"
+  />] within the <strong>hover bar</strong> in the upper right corner of the
+  message.  
 </p>
-<h3 id="h_01J1XD0SEFA7R8307A57RZR1J5">
-  Others may see the forward button next to media and embeds. Using this option
-  will only forward the media or embed, not the entire message. To forward the
-  entire message, navigate to the desktop/browser app and either:<br />- Open
-  the context menu by right-clicking the message and selecting Forward.<br />-
-  Hover over the message and select the Forward button in the hover bar.
-</h3>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24640764941079"
+    src="https://support.discord.com/hc/article_attachments/26759892871063"
     width="624"
-    height="439"
+    height="429"
   />
 </p>
 <p>
   2. The <strong>Forward To </strong>pop-up menu will appear, and you can select
-  where you would like to forward the message. 
+  where you would like to forward the message and add an optional note to
+  provide context. 
 </p>
-<h3 id="h_01J1XD0SEFH62AB1WBHXV7BJYH">
+<div class="tip-box">
   <strong>Note</strong>: You can forward the message to a maximum of 5 places.
-</h3>
-<p id="h_01J1XD0SEFRHJ0TAYQTNE25WGC" class="wysiwyg-text-align-center">
-  <span style="color: #434343"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/24640726773655"
-      width="504"
-      height="664"
-  /></span>
-</p>
+</div>
 <p>
   3. Once you’re all set, press <strong>Send </strong>in the lower right corner
   of the pop-up menu to forward your message. 
 </p>
+<p id="h_01J1XD0SEFRHJ0TAYQTNE25WGC" class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/26759900784279"
+    width="433"
+    height="629"
+  />
+</p>
 <p>
-  Your forwarded messages will be labeled as<strong> “Forwarded”</strong>
+  Your forwarded messages will be labeled as “<strong>Forwarded</strong>”
   without any indication of the message’s original author. The original
   message's source destination will only show as a link to those who already
   have access to that server or if the server is public. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24640726775831"
+    src="https://support.discord.com/hc/article_attachments/26759892881175"
     width="624"
-    height="535"
+    height="428"
   />
 </p>
 <h2 id="h_01J1XD0SEFBJ6SHEZ9HJHBDPT3">Mobile</h2>
 <p>
   1. To get started forwarding a message on mobile, long-press the message and
-  select the <strong>Forward option</strong> in the context menu. This action
-  will forward the entire message. 
-</p>
-<p>
-  Others may see the <strong>Forward button [</strong
-  ><strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/24995144694679"
-      width="29"
-      height="24" /></strong
-  ><strong>] </strong>located next to media and embeds. Using this option will
-  only forward the specific media or embed, not the entire message.
+  select the <strong>Forward option</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/26759892887319"
+    width="30"
+    height="24"
+  />] in the context menu. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24995175165847"
-    width="293"
-    height="634"
-  />. 
-  <img
-    src="https://support.discord.com/hc/article_attachments/24640764956439"
-    width="293"
-    height="634"
+    src="https://support.discord.com/hc/article_attachments/26759892892055"
+    width="295"
+    height="610"
   />
 </p>
 <p>
@@ -138,9 +116,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24640726783127"
-    width="318"
-    height="689"
+    src="https://support.discord.com/hc/article_attachments/26759892896407"
+    width="301"
+    height="620"
   />
 </p>
 <p>
@@ -149,9 +127,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24640726784151"
-    width="327"
-    height="708"
+    src="https://support.discord.com/hc/article_attachments/26759892899351"
+    width="299"
+    height="619"
   />
 </p>
 <h1 id="h_01J1XD0SEFM5WX25EXYJK2NJCA">Frequently Asked Questions </h1>
@@ -192,7 +170,7 @@
 </p>
 <p>
   <strong
-    >Q: If the  original message is edited later, will my forwarded message
+    >Q: If the original message is edited later, will my forwarded message
     update too? </strong
   >
 </p>
@@ -200,10 +178,6 @@
   A: No, the forwarded message is a copy of the original message at the time you
   forwarded it and will not update. 
 </p>
-<p>
-  <strong>Q: Can I add my own text along with the forwarded message? </strong>
-</p>
-<p>A: No, this option is not available at this time. </p>
 <p>
   <strong
     >Q: Can I disable forwarding for my own messages or for messages in/out of
