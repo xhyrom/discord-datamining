@@ -5,39 +5,44 @@
   before &amp; after your desired text to change your text! Let’s go over some
   examples.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01GY0DAWJX3CS91G9F1PPJAVBX" target="_self">Text Formatting</a>
-  </li>
-  <li>
-    <a href="#h_01GY0DB14X1PFY87CJFFVHFW4T" target="_self"
-      >Organizational Text Formatting</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01GY0EQVRRRB2F19HXC2BA30FG" target="_self" rel="undefined"
-          >Headers</a
-        >
-      </li>
-      <li><a href="#h_01J2FADV0288YAX4BZ1GNGCHP3">Subtext</a></li>
-      <li>
-        <a href="#h_01H53FJBNB9B5RT9M1M9V1EQ7W" target="_self">Masked Links</a>
-      </li>
-      <li><a href="#h_01GY0ER08B6V1X2X9X6HT4HTGG" target="_self">Lists</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01GY0DAKGXDEHE263BCAYEGFJA" target="_self">Code Blocks</a>
-  </li>
-  <li>
-    <a href="#h_01GY0DBAPS5QAB5H7KBXKJZQTB" target="_self">Block Quotes</a>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01GY0DAWJX3CS91G9F1PPJAVBX" target="_self">Text Formatting</a>
+    </li>
+    <li>
+      <a href="#h_01GY0DB14X1PFY87CJFFVHFW4T" target="_self"
+        >Organizational Text Formatting</a
+      >
+      <ul>
+        <li>
+          <a href="#h_01GY0EQVRRRB2F19HXC2BA30FG" target="_self" rel="undefined"
+            >Headers</a
+          >
+        </li>
+        <li><a href="#h_01J2FADV0288YAX4BZ1GNGCHP3">Subtext</a></li>
+        <li>
+          <a href="#h_01H53FJBNB9B5RT9M1M9V1EQ7W" target="_self"
+            >Masked Links</a
+          >
+        </li>
+        <li>
+          <a href="#h_01GY0ER08B6V1X2X9X6HT4HTGG" target="_self">Lists</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01GY0DAKGXDEHE263BCAYEGFJA" target="_self">Code Blocks</a>
+    </li>
+    <li>
+      <a href="#h_01GY0DBAPS5QAB5H7KBXKJZQTB" target="_self">Block Quotes</a>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01GY0DAWJX3CS91G9F1PPJAVBX">Text Formatting</h1>
 <table style="height: 120px" width="686">
   <tbody>
@@ -99,32 +104,20 @@
     </tr>
   </tbody>
 </table>
-<p>
-  If you don’t want to use Markdown, you can use
-  <a href="#h_01GY0DAKGXDEHE263BCAYEGFJA" target="_self">Code Blocks</a>
-  instead.
-</p>
 <h1 id="h_01GY0DB14X1PFY87CJFFVHFW4T">Organizational Text Formatting</h1>
-<h3 id="h_01HNBJCHFXG56HAWCFY4TVHF4B">
-  This is currently an experiment and is not available on all servers at this
-  time.
-</h3>
 <h2 id="h_01GY0EQVRRRB2F19HXC2BA30FG">
   <span style="color: #666666" data-darkreader-inline-color="">Headers</span>
 </h2>
-<h3 id="h_01HNBJDBHYZB3XJ9NBF8P217DW">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Don’t forget to add a space between your text and the code to create a
-      header.</span
-    ></span
-  >
-</h3>
+<div class="tip-box">
+  <strong>Note:</strong> Don’t forget to add a space between the leading heading
+  character (<code>#</code>, <code>##</code>, <code>###</code>) and your text!
+</div>
 <p>
   To create a header you just need to include a specific number of the
-  hash/pound sign character (#). Use (#) for a big header, (##) for a smaller
-  header, or (###) for an even smaller header as the first character(s) in a new
-  line to make a header. Here is an example of what each header type looks like.
+  hash/pound sign character (<code>#</code>). Use (<code>#</code>) for a big
+  header, (<code>##</code>) for a smaller header, or (<code>###</code>) for an
+  even smaller header as the first character(s) in a new line to make a header.
+  Here is an example of what each header type looks like.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -141,8 +134,8 @@
 <h2 id="h_01J2HBMKS7587KC8PMAJ47PZR2">Subtext</h2>
 <p>
   Like <strong>Headers</strong>, you can add subtext to any chat message. To do
-  so, add a (-# ) before the text you want to appear in the subtext. Don’t
-  forget the space after # before your message. For example: 
+  so, add a (<code>-# </code>) before the text you want to appear in the
+  subtext. Don’t forget the space after # before your message. For example: 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -161,8 +154,8 @@
 </p>
 <h3 id="h_01J2HBMKS7E7DPDZZDJSYVYJN4">
   <span style="color: #434343" data-darkreader-inline-color=""
-    >Subtext works very similarly to Headers, so the (-#) must be at the very
-    beginning of the line in order for it to work.</span
+    >Subtext works very similarly to Headers, so the (<code>-#</code>) must be
+    at the very beginning of the line in order for it to work.</span
   >
 </h3>
 <h2 id="h_01H53FJBNB9B5RT9M1M9V1EQ7W">
@@ -190,17 +183,15 @@
 <h2 id="h_01GY0ER08B6V1X2X9X6HT4HTGG">
   <span style="color: #666666" data-darkreader-inline-color="">Lists</span>
 </h2>
-<h3 id="h_01HNBJDXRQQ7Y87ZM5YY1D4WTK">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Don’t forget to add a space between your text and the code to create a
-      header.</span
-    ></span
-  >
-</h3>
+<div class="tip-box">
+  <strong>Note:</strong> Don’t forget to add a space between the list bullet
+  (<code>-</code>, <code>*</code>, <code>1.</code>, etc) and your text!
+</div>
 <p>
-  You can create a bulleted list using either (-) or (*) in the beginning of
-  each line. For example:
+  You can create a bulleted list using either (<code>-</code>) or (<code
+    >*)</code
+  >
+  in the beginning of each line. For example:
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -215,8 +206,8 @@
   />
 </p>
 <p>
-  You can also indent your list by adding a space before (-) or (*) at the
-  beginning of each line. For example:
+  You can also indent your list by adding 2 spaces before (<code>-</code>) or
+  (<code>*</code>) at the beginning of each line. For example:
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -232,7 +223,8 @@
 </p>
 <h1 id="h_01GY0DAKGXDEHE263BCAYEGFJA">Code Blocks</h1>
 <p>
-  You can make your own code blocks by wrapping your text in backticks (`). 
+  You can make your own code blocks by wrapping your text in backticks
+  (<code>`</code>). 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -242,7 +234,7 @@
 </p>
 <p>
   If you want to create a multi-line code block, you can do so by wrapping your
-  text in (```), like this beautifully written haiku.
+  text in (<code>```</code>), like this beautifully written haiku.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -251,16 +243,14 @@
   />
 </p>
 <h1 id="h_01GY0DBAPS5QAB5H7KBXKJZQTB">Block Quotes</h1>
-<h3 id="h_01HNBJEH51PVEK82X9QMJDAXGG">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Don’t forget to add a space between your text and the code to create a
-    header.</span
-  >
-</h3>
+<div class="tip-box">
+  <strong>Note:</strong> Don’t forget to add a space between the leading &gt;
+  and your text!
+</div>
 <p>
   Another option is using block quotes. To use a block quote, you just need to
-  put (&gt;) at the beginning of a line of text to create a single block quote.
-  For example:
+  put (<code>&gt;</code>) at the beginning of a line of text to create a single
+  block quote. For example:
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -273,7 +263,7 @@
     src="https://support.discord.com/hc/article_attachments/13850434958743"
     alt="block_quotes_single_example.png"
   /><br />If you want to add multiple lines to a single block quote, just add
-  (&gt;&gt;&gt;) before the first line. For example:
+  (<code>&gt;&gt;&gt;</code>) before the first line. For example:
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -291,15 +281,14 @@
   Now you're a Discord text markdown expert. Get out there and highlight your
   statements! 
 </p>
-<h3 id="h_01HNBJCHFXG8KDWVE7AECYBCQ0">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Spoilers is another type of formatting too! Using the syntax || around your
-    text will mark it as a spoiler. Please note, this is negated by a code
-    block. You can learn more about Spoiler Tags </span
-  ><a
+<div class="book-box">
+  <strong>Note: </strong>Spoilers is another type of formatting too! Using the
+  syntax || around your text will mark it as a spoiler. Please note, this is
+  negated by a code block. You can learn more about Spoiler Tags
+  <a
     href="https://support.discord.com/hc/en-us/articles/360022320632"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="color: #434343" data-darkreader-inline-color="">!</span>
-</h3>
+  >!
+</div>
