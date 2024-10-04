@@ -2,7 +2,7 @@
   "data": {
     "kind": "user",
     "id": "2024-08_blocking_voice_states",
-    "label": "Blocking Voice States (Blocker)",
+    "label": "Blocking Voice States",
     "description": [
       "Not Eligible",
       "Control Bucket",
