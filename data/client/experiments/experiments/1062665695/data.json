@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable system picker"
+      "Treatment 1: Enable system picker",
+      "Treatment 2: Enable system picker behind pref gate"
     ],
     "hash": 1062665695,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enableSystemPicker"
+      "enableSystemPicker",
+      "useSystemPickerInModalByDefault"
     ]
   }
 }
