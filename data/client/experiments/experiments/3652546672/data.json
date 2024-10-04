@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-08_message_attachment_send_failure",
+    "id": "2024-10_message_attachment_send_failure",
     "label": "Message Attachment Send Failure Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enabled"
     ],
-    "hash": 408176620,
+    "hash": 3652546672,
     "buckets": [
       -1,
       0,
