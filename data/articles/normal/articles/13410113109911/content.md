@@ -61,11 +61,12 @@
 </p>
 <div class="mega-box">
   <p class="wysiwyg-text-align-left">
-    It’s all treats, no tricks this Halloween season! Gift Nitro to a friend in
+    It’s all treats, no tricks this Halloween season! Purchase a Nitro gift in
     October and you’ll be treated with the
-    <strong>Minion avatar decoration</strong> for your profile. This offer is
-    rolling out to eligible users throughout October. Check for an orange
-    promotion banner before purchasing.
+    <strong>Minions avatar decoration</strong> for your profile. This Minions
+    avatar decoration is yours to keep - Halloween is a year-long celebration as
+    far as we're concerned. This offer is rolling out to eligible users
+    throughout October. Check for an orange promotion banner before purchasing.
   </p>
   <p class="wysiwyg-text-align-left">
     This offer ends on <strong>November 4th, 2024</strong> and is only
@@ -302,7 +303,7 @@
   tapping your avatar. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c"
+  <span style="color: #4f545c" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/24862776002711"
       width="284"
@@ -317,7 +318,7 @@
   select the <strong>Change Decoration </strong>option instead.  
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c"
+  <span style="color: #4f545c" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/24862776004247"
       width="277"

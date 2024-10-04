@@ -13,14 +13,15 @@
   >
 </p>
 <h3 id="h_01J8K54C5NP7DW8KXYJE1FP9EP">
-  It’s all treats, no tricks this Halloween season! Gift Nitro to a friend in
+  It’s all treats, no tricks this Halloween season! Purchase a Nitro gift in
   October and you’ll be treated with the
-  <strong>Minion avatar decoration</strong> for your profile. This offer is
-  rolling out to eligible users throughout October. Check for an orange
-  promotion banner before purchasing. This offer ends on
-  <strong>November 4th, 2024</strong> and is only applicable to Nitro gifts.<br />Press
-  <strong>Collect Your Reward</strong> after sending a gift to collect your
-  avatar decoration!
+  <strong>Minions avatar decoration</strong> for your profile. This Minions
+  avatar decoration is yours to keep - Halloween is a year-long celebration as
+  far as we're concerned. This offer is rolling out to eligible users throughout
+  October. Check for an orange promotion banner before purchasing. This offer
+  ends on <strong>November 4th, 2024</strong> and is only applicable to Nitro
+  gifts.<br />Press <strong>Collect Your Reward</strong> after sending a gift to
+  collect your avatar decoration!
 </h3>
 <h3 id="h_01J8K5B3VZV81CDAK53TCRHZ1S" class="wysiwyg-text-align-center">
   <img
@@ -35,18 +36,25 @@
   />
 </h3>
 <h3 id="h_01J8NAAG676S60B60ANXH46F04" class="wysiwyg-text-align-left">
-  <span style="color: #434343">Curious about </span
-  ><strong><span style="color: #434343">avatar decorations</span></strong
-  ><span style="color: #434343">? Check out our </span
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >Curious about </span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >avatar decorations</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
+    >? Check out our </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/13410113109911"
     target="_blank"
     rel="noopener noreferrer"
     >article</a
-  ><span style="color: #434343"> for more information.<br /></span
+  ><span style="color: #434343" data-darkreader-inline-color="">
+    for more information.<br /></span
   ><strong>Note</strong>: The Minion avatar decoration will be revoked if you
   refund your Nitro gift. This offer does not apply to Nitro Basic gifts<span
     style="color: #434343"
+    data-darkreader-inline-color=""
     >. </span
   >
 </h3>
@@ -80,7 +88,7 @@
   <strong>server channels</strong>, and the <strong>Nitro page</strong>.
 </p>
 <h3 id="h_01HGBW65QX0JFS12HPP6QKN553">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Gifts purchased within a DM on desktop or browser will allow you to
     customize your gift by selecting a card design, adding a personal note, a
     soundboard effect, and emoji confetti. You will not be able to customize
@@ -113,13 +121,13 @@
   id="docs-internal-guid-45d59bdd-7fff-19ed-4a23-16243ed0f0d0"
   class="wysiwyg-text-align-center"
 >
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Customizing your gift is currently only available within direct messages
     (DMs)</span
   >
 </h4>
 <h3 id="docs-internal-guid-941b55c9-7fff-5bed-b27c-b912d99c6086">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >If your Discord account does not have a previously saved payment method,
     you will need to add your payment method details before proceeding.  </span
   >
@@ -294,7 +302,7 @@
   <span style="font-weight: 400">Purchasing a Gift On Mobile</span>
 </h1>
 <h3 id="docs-internal-guid-ea923b20-7fff-71e0-99c6-fee170d58883">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >You can now customize your Nitro and Nitro Basic gift on iOS and Android
     devices in DMs, group chats, and channels!</span
   >
