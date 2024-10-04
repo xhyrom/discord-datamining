@@ -1,30 +1,25 @@
-<h3 id="h_01HZN9XQQKNWGH14D5YTVXD4B0">
-  <span class="wysiwyg-font-size-large"
-    ><strong>Note:</strong> Krisp is supported on Windows, Linux, and Mac OS
-    11.7.10+.</span
-  >
-</h3>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li><a href="#h_01HDEGBA677RS4S8ZE79BZRWD3">What is Krisp?</a></li>
-  <li>
-    <a href="#h_01HDEGBA677F5TKJHEKXBYE2BY">How Krisp Works on Discord</a>
-  </li>
-  <li>
-    <a href="#h_01HDEGBA673A5X6ZV052M1J5D2">How to enable Krisp</a>
-    <ul>
-      <li><a href="#h_01HDEGBA67204TZ2BCE70A8SE1">Desktop</a></li>
-      <li><a href="#h_01HDEGBA68Z5V9DVYZG02YG8J8">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01HDEGBA68ZFRKXF078FTWKRFY">Frequently Asked Questions</a>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li><a href="#h_01HDEGBA677RS4S8ZE79BZRWD3">What is Krisp?</a></li>
+    <li>
+      <a href="#h_01HDEGBA677F5TKJHEKXBYE2BY">How Krisp Works on Discord</a>
+    </li>
+    <li>
+      <a href="#h_01HDEGBA673A5X6ZV052M1J5D2">How to enable Krisp</a>
+      <ul>
+        <li><a href="#h_01HDEGBA67204TZ2BCE70A8SE1">Desktop</a></li>
+        <li><a href="#h_01HDEGBA68Z5V9DVYZG02YG8J8">Mobile</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01HDEGBA68ZFRKXF078FTWKRFY">Frequently Asked Questions</a>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HDEGBA677RS4S8ZE79BZRWD3">What is Krisp?</h1>
 <p>
   Krisp is a 3rd party machine learning, noise filtration software that runs on
@@ -128,6 +123,11 @@
 <h1 id="h_01HDEGBA68ZFRKXF078FTWKRFY">
   <strong>Frequently Asked Questions</strong>
 </h1>
+<p><strong>Q: What platforms is Krisp supported on?</strong></p>
+<p>
+  A:  Krisp is supported on Windows, Linux, Mac, Android, and iOS. Mac platforms
+  require Apple CPUs and must be on OS version 12+.
+</p>
 <p><strong>Q: How much does it cost?</strong></p>
 <p>
   A: Krisp is free when you use it with Discord. If you want to use it outside
