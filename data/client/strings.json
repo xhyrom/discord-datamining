@@ -19097,7 +19097,7 @@
   "MEMBER_LIST_CONTENT_FEED_LEADERBOARD_CARD_EMPTY_STATE_SUBTITLE": "\"Compete for Wins\"",
   "FRACTIONAL_PREMIUM_DURATION_LEFT_DAYS_SHORT": "\"{days, number}D LEFT\"",
   "FRACTIONAL_PREMIUM_DURATION_LEFT_HOURS_SHORT": "\"{hours, number}H LEFT\"",
-  "FRACTIONAL_PREMIUM_DURATION_LEFT_MINUTES_SHORT": "\"{minutes, plural, other {}}< 1H LEFT\"",
+  "FRACTIONAL_PREMIUM_DURATION_LEFT_MINUTES_SHORT": "\"{minutes, plural, other {}}<1H LEFT\"",
   "FRACTIONAL_PREMIUM_DURATION_LEFT_DAYS": "\"{days, plural, =1 {{days} day} other {{days} days}} left\"",
   "FRACTIONAL_PREMIUM_DURATION_LEFT_HOURS": "\"{hours, plural, =1 {{hours} hour} other {{hours} hours}} left\"",
   "FRACTIONAL_PREMIUM_DURATION_LEFT_MINUTES": "\"{minutes, plural, =1 {{minutes} minute} other {{minutes} minutes}} left\"",
