@@ -4927,6 +4927,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  margin-bottom: 16px;
 }
 .container_c2f3ef {
   display: flex;
@@ -4989,11 +4990,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   text-align: center;
 }
 .detailsContainer_c2f3ef {
-  --custom-disclosure-spacing: var(--spacing-12);
   gap: var(--custom-disclosure-spacing);
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--custom-disclosure-spacing);
 }
 .overviewContainerNoVideo_c2f3ef {
   padding: var(--spacing-12);
@@ -55509,4 +55508,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.cd667000809926f970ed.css.map*/
+/*# sourceMappingURL=12633.db81c98577985ae3a170.css.map*/
