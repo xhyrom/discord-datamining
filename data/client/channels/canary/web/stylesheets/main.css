@@ -20090,7 +20090,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   margin: var(--spacing-8) var(--spacing-16);
 }
 .upsellText_ad7baa {
-  margin: auto 16px auto 4px;
+  margin: auto 16px auto 8px;
+  flex: 1;
 }
 .nitroTopDividerContainer_e8f337 {
   display: flex;
@@ -55555,4 +55556,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.96b91c8fcf8ce4a06ce2.css.map*/
+/*# sourceMappingURL=12633.80eae5e3c274e2098c37.css.map*/
