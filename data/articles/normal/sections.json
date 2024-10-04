@@ -622,21 +622,5 @@
     "outdated": false,
     "parent_section_id": null,
     "theme_template": "section_page"
-  },
-  {
-    "id": 201110547,
-    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/201110547.json",
-    "html_url": "https://support.discord.com/hc/en-us/sections/201110547-Channel-Setup",
-    "category_id": 200404378,
-    "position": 5,
-    "sorting": "manual",
-    "created_at": "2015-07-23T20:43:51Z",
-    "name": "Channel Setup",
-    "description": "",
-    "locale": "en-us",
-    "source_locale": "en-us",
-    "outdated": false,
-    "parent_section_id": null,
-    "theme_template": "section_page"
   }
 ]
