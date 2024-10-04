@@ -20090,7 +20090,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   margin: var(--spacing-8) var(--spacing-16);
 }
 .upsellText_ad7baa {
-  margin: auto 16px auto 4px;
+  margin: auto 16px auto 8px;
+  flex: 1;
 }
 .nitroTopDividerContainer_e8f337 {
   display: flex;
@@ -33119,25 +33120,28 @@ html .progress_e5f4c6 {
 }
 .scroller_e8df26 {
   height: 100%;
+  scrollbar-width: thin;
 }
 .scrollContent_e8df26 {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 0 20px 32px;
+  padding-bottom: 32px;
+}
+.content_e8df26 {
+  padding: 0 16px;
 }
 .details_e8df26 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.benefits_e8df26 {
   align-items: flex-start;
   border-top-color: var(--background-modifier-selected);
   border-top-style: solid;
   border-top-width: 1px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 8px;
+  margin-top: 16px;
   padding-top: 16px;
-}
-.benefits_e8df26 {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -54192,6 +54196,50 @@ html.disable-forced-colors * {
   --spacing-96: 96px;
 }
 :root {
+  --space-0: 0px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-128: 128px;
+  --space-160: 160px;
+  --space-192: 192px;
+}
+.density-cozy {
+  --space-xxs: var(--space-8);
+  --space-xs: var(--space-12);
+  --space-sm: var(--space-16);
+  --space-md: var(--space-20);
+  --space-lg: var(--space-24);
+  --space-xl: var(--space-32);
+  --space-xxl: var(--space-48);
+}
+.density-compact {
+  --space-xxs: var(--space-4);
+  --space-xs: var(--space-8);
+  --space-sm: var(--space-12);
+  --space-md: var(--space-16);
+  --space-lg: var(--space-20);
+  --space-xl: var(--space-24);
+  --space-xxl: var(--space-32);
+}
+.density-spacious {
+  --space-xxs: var(--space-12);
+  --space-xs: var(--space-16);
+  --space-sm: var(--space-20);
+  --space-md: var(--space-24);
+  --space-lg: var(--space-32);
+  --space-xl: var(--space-48);
+  --space-xxl: var(--space-64);
+}
+:root {
   --radius-none: 0px;
   --radius-xs: 4px;
   --radius-sm: 8px;
@@ -55508,4 +55556,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.db81c98577985ae3a170.css.map*/
+/*# sourceMappingURL=12633.80eae5e3c274e2098c37.css.map*/
