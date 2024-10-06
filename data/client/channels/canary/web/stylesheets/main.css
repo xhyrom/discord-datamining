@@ -4650,6 +4650,18 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   border-width: 1px;
   border-radius: 0;
 }
+.emoji {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: var(--custom-emoji-size-emoji);
+  height: var(--custom-emoji-size-emoji);
+  vertical-align: bottom;
+}
+.emoji.jumboable {
+  width: var(--custom-emoji-size-jumbo-emoji);
+  height: var(--custom-emoji-size-jumbo-emoji);
+  min-height: var(--custom-emoji-size-jumbo-emoji);
+}
 .applicationDetails_d6f023 {
   display: flex;
   flex-direction: column;
@@ -44620,4 +44632,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.c1087d2aee1289d6c890.css.map*/
+/*# sourceMappingURL=12633.408ea0c1bc152ca31341.css.map*/
