@@ -6606,7 +6606,6 @@
   "PREMIUM_UPSELL_YEARLY_CTA": "\"Subscribe Yearly - !!{price}!! / Year\"",
   "PREMIUM_UPSELL_PROFILE_SEGMENTED_CONTROL_NON_NITRO": "\"Current Profile\"",
   "PREMIUM_UPSELL_PROFILE_SEGMENTED_CONTROL_NITRO": "\"Nitro Preview\"",
-  "PREMIUM_UPSELL_PROFILE_SEGMENTED_CONTROL_NITRO_V2": "\"Nitro Preview: Enhance Your Profile\"",
   "PREMIUM_UPSELL_PROFILE_TRY_IT_OUT_TITLE": "\"Transform your profile\"",
   "PREMIUM_UPSELL_PROFILE_TRY_IT_OUT_DESCRIPTION": "\"See what your profile could look like with Nitro.\"",
   "PREMIUM_UPSELL_PROFILE_TRY_IT_OUT_UPSELL": "\"Level up your look, only with [Nitro](onClick)\"",
