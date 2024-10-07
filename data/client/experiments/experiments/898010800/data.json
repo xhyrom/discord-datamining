@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable special UI for DMs with Apps"
+      "Treatment 1: Enable special UI for DMs with Apps",
+      "Treatment 2: Enable special UI for DMs with Apps including quick launch"
     ],
     "hash": 898010800,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "enabled",
+      "quickLaunchEnabled"
     ]
   }
 }
