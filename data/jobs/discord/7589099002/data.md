@@ -1,6 +1,6 @@
 # Job Listing
 
-## Staff Software Engineer, ML Platform
+## Staff Software Engineer, Machine Learning Platform
 
 **Location:** San Francisco, CA or Remote
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7589099002](https://discord.com/jobs/7589099002)
 
-**Updated At:** Wed, 02 Oct 2024 18:40:08 GMT
+**Updated At:** Mon, 07 Oct 2024 16:49:32 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
