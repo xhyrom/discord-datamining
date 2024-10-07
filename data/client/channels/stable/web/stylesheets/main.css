@@ -4650,6 +4650,18 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   border-width: 1px;
   border-radius: 0;
 }
+.emoji {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: var(--custom-emoji-size-emoji);
+  height: var(--custom-emoji-size-emoji);
+  vertical-align: bottom;
+}
+.emoji.jumboable {
+  width: var(--custom-emoji-size-jumbo-emoji);
+  height: var(--custom-emoji-size-jumbo-emoji);
+  min-height: var(--custom-emoji-size-jumbo-emoji);
+}
 .applicationDetails_d6f023 {
   display: flex;
   flex-direction: column;
@@ -10695,10 +10707,32 @@ div.cardContainer_c22357 {
   width: 106px;
   height: 40px;
 }
+.taglineXPTier0Title_c87d73 {
+  width: 132px;
+  height: 16px;
+}
+.taglineXPSubHeaderStoreHome_c87d73 {
+  max-width: 352px;
+  width: 100%;
+  font-size: 34px;
+  margin-bottom: 6px;
+}
+.taglineXPSubHeaderSettings_c87d73 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+.tierCardHeaderDisplay_c87d73 {
+  display: flex;
+  flex-direction: column;
+}
 .tier2Title_c87d73 {
   width: 96px;
   height: 24px;
   display: block;
+}
+.taglineXPTier2Title_c87d73 {
+  width: 64px;
+  height: 16px;
 }
 .title_c87d73 {
   margin-bottom: 8px;
@@ -10756,6 +10790,15 @@ div.cardContainer_c22357 {
   margin-top: 8px;
   margin-bottom: 8px;
   max-width: 60%;
+}
+.taglineXPPrice_c87d73 {
+  margin: 20px 0 10px;
+}
+.taglineXPPrices_c87d73:first-of-type {
+  margin: 16px 0 8px;
+}
+.taglineXPPrices_c87d73:last-of-type {
+  margin: 8px 0 16px;
 }
 .price_c87d73 {
   margin: 0 0 8px;
@@ -30560,6 +30603,13 @@ div.popoutCloseButton_d523a2:hover {
 .participantName_d22933 {
   margin-left: 8px;
 }
+.loading_f3e233 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: var(--background-secondary);
+  color: var(--text-normal);
+}
 .container_ce795d {
   position: absolute;
   margin: 8px;
@@ -34886,25 +34936,6 @@ html.disable-forced-colors * {
 }
 .clearOverrideButton_dd2aa2 {
   margin-left: 8px;
-}
-.emoji {
-  -o-object-fit: contain;
-  object-fit: contain;
-  width: var(--custom-emoji-size-emoji);
-  height: var(--custom-emoji-size-emoji);
-  vertical-align: bottom;
-}
-.emoji.jumboable {
-  width: var(--custom-emoji-size-jumbo-emoji);
-  height: var(--custom-emoji-size-jumbo-emoji);
-  min-height: var(--custom-emoji-size-jumbo-emoji);
-}
-.loading_cea94f {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: var(--background-secondary);
-  color: var(--text-normal);
 }
 .appAsidePanelWrapper_bd26cc {
   flex: 1 1 auto;
@@ -44632,4 +44663,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.17a82d0d98c52d31c24f.css.map*/
+/*# sourceMappingURL=12633.6389182c6b08d47583db.css.map*/
