@@ -69,7 +69,7 @@
         >,” is only around until a little while.
         <strong
           >You have until November 3, 2024 to treat a friend to Nitro, and after
-          that, the Minion Avatar Decoration returns whence it
+          that, the Minions Avatar Decoration returns whence it
           came.&nbsp;</strong
         >
       </p>
@@ -87,7 +87,7 @@
       <p>
         Should you need some guidance, you may borrow a transcript of the
         Discord-nomicon — direct your eyes towards the so-called “<a
-          href="https://canary.discord.com/channels/309801877187330068/1286418452311179334/1288621786589827174"
+          href="https://support.discord.com/hc/en-us/articles/360020877112-Nitro-Gifting"
           >Help Center article</a
         >” to learn more about this Nitro news.&nbsp;
       </p>
