@@ -51,7 +51,7 @@
     >article</a
   ><span style="color: #434343" data-darkreader-inline-color="">
     for more information.<br /></span
-  ><strong>Note</strong>: The Minion avatar decoration will be revoked if you
+  ><strong>Note</strong>: The Minions avatar decoration will be revoked if you
   refund your Nitro gift. This offer does not apply to Nitro Basic gifts<span
     style="color: #434343"
     data-darkreader-inline-color=""
