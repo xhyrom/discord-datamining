@@ -13253,6 +13253,9 @@ span.clanTag_a31c43 {
   );
   padding-left: var(--custom-message-reply-indent);
 }
+.compact_f9f2ca .repliedMessage_f9f2ca .contextCommandMessage_f9f2ca {
+  --text-indent: 0;
+}
 .cozy_f9f2ca .repliedMessage_f9f2ca {
   margin-bottom: var(--reply-spacing);
 }
@@ -44663,4 +44666,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.6389182c6b08d47583db.css.map*/
+/*# sourceMappingURL=12633.91bb40a3a94423e65a12.css.map*/
