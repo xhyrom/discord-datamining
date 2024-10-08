@@ -25359,6 +25359,9 @@ div.popoutCloseButton_d523a2:hover {
   box-shadow: inset 0 -4px 0 var(--bg-mod-faint);
   color: var(--interactive-active);
 }
+.key_c90023 g {
+  fill: var(--interactive-active);
+}
 .key_c90023:active {
   box-shadow: inset 0 -2px 0 var(--bg-mod-subtle);
   border: 1px solid var(--border-strong);
@@ -44666,4 +44669,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.91bb40a3a94423e65a12.css.map*/
+/*# sourceMappingURL=12633.ffc18edf3250ab076675.css.map*/
