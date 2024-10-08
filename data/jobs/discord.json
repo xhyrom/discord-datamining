@@ -1742,6 +1742,66 @@
       ]
     },
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7673818002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null
+        }
+      ],
+      "education": "education_optional",
+      "internal_job_id": 6018776002,
+      "location": {
+        "name": "San Francisco, CA or Remote (U.S.) "
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 7673818002,
+      "updated_at": "2024-10-08T12:43:12-04:00",
+      "requisition_id": "R-100681",
+      "title": "Senior Software Engineer - Notifications Platform",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re looking for a highly motivated, mission-focused Senior Engineer to join our Notifications team. The Notifications team is a brand new team that will be responsible for building both the platform for sending billions of notifications every day and the user experiences to control how they want to be notified. The platform will be a single pipeline that intelligently chooses which notifications to send as well as when and how to send them.&lt;/p&gt;\n&lt;p&gt;We’re looking for a founding engineer that has a strong product sense, strong sense of metrics and scale, and fearlessness in tackling large problems. You’ll be working with highly experienced engineering peers, cross functional partners, our highly experienced infrastructure teams, and supporting all other teams at Discord.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build the platform that enables all other teams in the company to send delightful notifications while delivering the maximum value to our users&lt;/li&gt;\n&lt;li&gt;Building delightful products with a very high bar for quality, performance, and a focus on impact&lt;/li&gt;\n&lt;li&gt;Helping find the right solutions that balance delight, speed of delivery and impact&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You have 5+ years of experience as a Software Engineer&lt;/li&gt;\n&lt;li&gt;You have experience in metrics driven teams and/or shared infrastructure&lt;/li&gt;\n&lt;li&gt;You are comfortable jumping between backend and making changes to our frontend code&lt;/li&gt;\n&lt;li&gt;You are eager to learn new languages and frameworks, and are comfortable working across the full stack when needed&lt;/li&gt;\n&lt;li&gt;You’ve worked in team with clear metrics goals and had a measurable positive impact on customers&lt;/li&gt;\n&lt;li&gt;You have a strong product sense and take pride in sweating the details of great UX&lt;/li&gt;\n&lt;li&gt;You are motivated to help your team members succeed and grow and learn from each other through empathetic feedback&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You are a Discord user, and understand the core features and flow of Discord communications&lt;/li&gt;\n&lt;li&gt;You have previously built a notifications or email orchestration system&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $183,000 to $201,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074054002,
+          "name": "Product Engineering",
+          "child_ids": [],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7513898002",
       "data_compliance": [
         {
@@ -2408,6 +2468,6 @@
     }
   ],
   "meta": {
-    "total": 43
+    "total": 44
   }
 }
