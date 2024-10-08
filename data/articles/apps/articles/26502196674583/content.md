@@ -1,4 +1,4 @@
-<p>
+<p class="wysiwyg-text-align-center">
   <strong
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26502163920279"
@@ -90,7 +90,7 @@
   While there, you can select the length, scoring, and the timer settings you
   would like to set for your game.
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-fa741d3d-7fff-599e-1ae3-454d8db45f5f"
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26502196671127"
@@ -120,7 +120,7 @@
   create words by selecting a tile and then selecting its destination or
   dragging it there.
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-73cf82fd-7fff-c72d-8d23-9aed6f5ae731"
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26502196671511"
@@ -133,7 +133,7 @@
   placing those letters on those tiles. You can increase your scoring by placing
   your letters on squares that improve your word’s total score. 
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-f87c0a14-7fff-3543-0c42-fe01ff1460f6"
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26502196671639"
@@ -147,7 +147,7 @@
   letters, or they must pass their turn by selecting the
   <strong>Pass Turn </strong>button located underneath the timer.
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-d341b0d2-7fff-80fb-bb0a-509a7251ecac"
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26502163921687"
@@ -158,7 +158,7 @@
 <p id="docs-internal-guid-bd2ae634-7fff-9530-444f-e060c326a2c8">
   5. The player with the most points at the end of the game wins!
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-3c333fea-7fff-d0b3-65ae-3b9e05b58956"
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26502196671895"
@@ -171,7 +171,7 @@
   <strong>hamburger icon </strong>in the top right corner and then tap on the
   <strong>instructions</strong> icon to view the <strong>Game Info</strong>.
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-86f92cbc-7fff-3681-1081-eca0e83a6878"
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26502163921943"
@@ -204,14 +204,6 @@
   A: There can be more than 20 players within a game. However, you may
   experience some technical issues. We recommend games up to 6 players for the
   best experience.
-</p>
-<p id="docs-internal-guid-156c636a-7fff-fbdb-e8fa-8f915417187e">
-  <strong>Q: How many players can play Letter League?</strong>
-</p>
-<p>
-  A: There can be more than 20 players within a game. However, you may
-  experience some technical issues. We recommend games up to 6 players for the
-  best experience. <strong> </strong>
 </p>
 <p><strong>Q: Where can I report bugs and problems with the game?</strong></p>
 <p>
