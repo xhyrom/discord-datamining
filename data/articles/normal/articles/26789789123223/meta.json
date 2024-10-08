@@ -1,0 +1,37 @@
+{
+  "id": 26789789123223,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/26789789123223.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/26789789123223-Destiny-2-Revenant-Quest",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 22849279767831,
+  "created_at": "2024-10-02T18:25:15Z",
+  "name": "Destiny 2: Revenant Quest",
+  "title": "Destiny 2: Revenant Quest",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-10-07T16:03:29Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [
+    "01J3NCWMGR03XN71256WH95176",
+    "01J3NCX0E8NEMNGZ00T9DNHE81",
+    "01J3NCXCYM0GYACCHRDKF30GTG"
+  ],
+  "label_names": [
+    "answer-bot",
+    "quests",
+    "2",
+    "discord",
+    "rewards",
+    "Quest",
+    "Destiny 2",
+    "Destiny",
+    "Revenant"
+  ]
+}
