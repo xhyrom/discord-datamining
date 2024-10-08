@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-10_icymi_random",
-    "label": "random sort on ICYMI",
+    "id": "2024-10_icymi_sorting_fe",
+    "label": "FE experiment for sorting on ICYMI",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: randomly sorts icymi content"
+      "Treatment 1: Enables ICYMI - sorting will be controlled by backend exp"
     ],
-    "hash": 807262478,
+    "hash": 3306368080,
     "buckets": [
       -1,
       0,

@@ -802,6 +802,7 @@ id,hash,label
 2024-09_whats_new_cards_v2_experiment,1773075055,Whats new bento boxes
 2024-10_basic_tagline_experiment,1362626353,Basic Tagline Experiment
 2024-10_icymi_random,807262478,random sort on ICYMI
+2024-10_icymi_sorting_fe,3306368080,FE experiment for sorting on ICYMI
 2024-10_message_attachment_send_failure,3652546672,Message Attachment Send Failure Experiment
 2024-10_premium_upsell_revamp_for_trial,2750477292,Premium Upsell Revamp For Trial
 2024-10_rapidash_discovery_entrypoint,2622502748,Rapidash Discovery Entrypoint
