@@ -19051,7 +19051,7 @@
   "ICYMI_SHOW_NEGATIVE": "\"Show negative scored content\"",
   "ICYMI_ADJUST_RANKING": "\"Adjust Server/Channel Recommendations\"",
   "ICYMI_ADJUST_SCORE_SUCCESS": "\"Thanks! This will take effect shortly.\"",
-  "ICYMI_ADJUST_SCORE_ERROR": "\"Something went wrong. Please try again later.\"",
+  "ICYMI_ERROR": "\"Something went wrong. Please try again later.\"",
   "ICYMI_ADJUST_RANKINGS_TITLE": "\"Servers\"",
   "ICYMI_SEE_GUILD_CONTENT": "\"Show content in ICYMI\"",
   "ICYMI_SERVER_SETTINGS": "\"Server Preferences\"",
@@ -19109,5 +19109,6 @@
   "FRACTIONAL_PREMIUM_DURATION_LEFT_MINUTES": "\"{minutes, plural, =1 {{minutes} minute} other {{minutes} minutes}} left\"",
   "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_DAYS": "\"ends in {days, plural, =1 {{days} day} other {{days} days}}\"",
   "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_HOURS": "\"ends in {hours, plural, =1 {{hours} hour} other {{hours} hours}}\"",
-  "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_MINUTES": "\"ends in {minutes, plural, =1 {{minutes} minute} other {{minutes} minutes}}\""
+  "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_MINUTES": "\"ends in {minutes, plural, =1 {{minutes} minute} other {{minutes} minutes}}\"",
+  "APP_DIRECTORY_SEARCH_PLACEHOLDER_V2": "\"Search Apps\""
 }
