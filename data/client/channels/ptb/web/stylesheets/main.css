@@ -17375,6 +17375,22 @@ img.thumbnail_c64476 {
   height: 4px;
   border-radius: 50%;
 }
+.clanTagContainer_c32acf {
+  height: 22px;
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-xs);
+  box-sizing: border-box;
+}
+.clanTag_c32acf {
+  background: var(--bg-mod-faint);
+  margin: 0 auto;
+}
+.custom-profile-theme .clanTagContainer_c32acf {
+  border-color: var(--profile-body-border-color);
+}
+.custom-profile-theme .clanTag_c32acf {
+  background: rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-6));
+}
 .tooltip_a778ee {
   max-width: 224px;
 }
@@ -44669,4 +44685,4 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.ffc18edf3250ab076675.css.map*/
+/*# sourceMappingURL=12633.1043a3c87d09dcc7b76f.css.map*/
