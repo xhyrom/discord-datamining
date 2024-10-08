@@ -23,6 +23,8 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
+      <li><a href="#h_01J9PEC7HGPYRNC51ADBAJVQ3H">Diablo IV</a></li>
+      <li><a href="#h_01J9PECN4VFW2PPPVM9R3MP6QF">Destiny 2: Revenant</a></li>
       <li><a href="#h_01J8QGKSGR918324MCDFPYTY92">THRONE AND LIBERTY</a></li>
     </ul>
   </li>
@@ -82,6 +84,36 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
+<h2 id="h_01J9PEC7HGPYRNC51ADBAJVQ3H">
+  <a
+    href="https://support.discord.com/hc/articles/26847740874647"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Diablo IV - Diablo IV: Vessel of Hatred Quest</a
+  >
+</h2>
+<p>
+  The <strong>Diablo IV: Vessel of Hatred Quest</strong> can be accepted on
+  Discord from <strong>October 8, 2024 </strong>until<strong>
+    October 15, 2024 (11:59PM UTC)</strong
+  >. Reward gift codes expire <strong>December 31, 2025 (6:59 AM UTC)</strong>.
+  Quest requirements must be completed during this period to receive the reward.
+</p>
+<h2 id="h_01J9PECN4VFW2PPPVM9R3MP6QF">
+  <a
+    href="https://support.discord.com/hc/articles/26789789123223"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Destiny 2: Revenant - Destiny 2: Revenant Quest</a
+  >
+</h2>
+<p>
+  The <strong>Destiny 2: Revenant Quest</strong> can be accepted on Discord from
+  <strong>October 8, 2024 </strong>until<strong>
+    October 22, 2024 (11:59PM UTC)</strong
+  >. Reward gift codes expire <strong>December 31, 2024 (UTC -8)</strong>. Quest
+  requirements must be completed during this period to receive the reward.
+</p>
 <h2 id="h_01J8QGKSGR918324MCDFPYTY92">
   <a
     href="https://support.discord.com/hc/articles/26467935593751-THRONE-AND-LIBERTY-Quest"
