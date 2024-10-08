@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-09_improved_reaction_button",
+    "label": "Improved Reaction Button",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show improved reaction button"
+    ],
+    "hash": 96191983,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "canShowImprovedReactionButton"
+    ]
+  }
+}
