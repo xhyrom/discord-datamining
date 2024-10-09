@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer, Ads Measurement (Quests)
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7280468002 <br/>
 **Internal Job Id:** 5855775002 <br/>

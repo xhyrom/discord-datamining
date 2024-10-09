@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer, Activities Studio
 
-**Location:** San Francisco, CA or Remote 
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7623285002 <br/>
 **Internal Job Id:** 5997180002 <br/>

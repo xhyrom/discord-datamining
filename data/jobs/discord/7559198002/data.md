@@ -2,7 +2,7 @@
 
 ## Senior Data Scientist, Analytics - User Lifecycle
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7559198002 <br/>
 **Internal Job Id:** 5969723002 <br/>

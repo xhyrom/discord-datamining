@@ -2,7 +2,7 @@
 
 ## Senior Financial Reporting & Technical Accountant
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7568876002 <br/>
 **Internal Job Id:** 5973618002 <br/>

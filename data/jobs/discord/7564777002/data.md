@@ -2,7 +2,7 @@
 
 ## Senior Data Scientist, Analytics - Ads (Quests)
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7564777002 <br/>
 **Internal Job Id:** 5972058002 <br/>

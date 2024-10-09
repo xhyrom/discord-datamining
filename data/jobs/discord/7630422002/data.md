@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer, Machine Learning (Safety)
 
-**Location:** San Francisco, CA (or Remote)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7630422002 <br/>
 **Internal Job Id:** 6000328002 <br/>

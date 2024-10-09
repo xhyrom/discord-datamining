@@ -2,7 +2,7 @@
 
 ## Group Product Marketing Manager, Shop
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7654159002 <br/>
 **Internal Job Id:** 6011255002 <br/>

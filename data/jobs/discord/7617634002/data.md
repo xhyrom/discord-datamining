@@ -2,7 +2,7 @@
 
 ## Senior Financial Analyst, Corporate Finance 
 
-**Location:** Remote 
+**Location:** Remote (U.S.)
 
 **Id:** 7617634002 <br/>
 **Internal Job Id:** 5994961002 <br/>

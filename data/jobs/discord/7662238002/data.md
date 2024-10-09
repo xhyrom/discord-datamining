@@ -1,8 +1,8 @@
 # Job Listing
 
-## Staff Software Engineer-Notifications Platform
+## Staff Software Engineer - Notifications Platform
 
-**Location:** San Francisco, CA or Remote US
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7662238002 <br/>
 **Internal Job Id:** 6014205002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7662238002](https://discord.com/jobs/7662238002)
 
-**Updated At:** Wed, 02 Oct 2024 18:40:08 GMT
+**Updated At:** Wed, 09 Oct 2024 19:29:57 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Notifications Platform team is creating a unified system to deliver tens of billions of notifications a day to our users, across mobile push, SMS, email, and in-app. As a Staff Software Engineer on the team you will gather requirements, design and develop this system from scratch! Your work will ensure that Discord is able to reliably and efficiently engage users with relevant, timely information, while at the same time capturing data to generate insights and drive improvements.

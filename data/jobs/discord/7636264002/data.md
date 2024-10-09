@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer - AV Product 
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7636264002 <br/>
 **Internal Job Id:** 6003129002 <br/>

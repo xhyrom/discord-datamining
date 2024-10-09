@@ -2,7 +2,7 @@
 
 ## Staff Software Engineer, Machine Learning (Engagement ML)
 
-**Location:** San Francisco, CA (or Remote)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7481047002 <br/>
 **Internal Job Id:** 5932297002 <br/>

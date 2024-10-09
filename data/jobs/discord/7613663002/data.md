@@ -2,7 +2,7 @@
 
 ## Senior Financial Analyst, Business Partnership Finance
 
-**Location:** Remote 
+**Location:** Remote (U.S.)
 
 **Id:** 7613663002 <br/>
 **Internal Job Id:** 5993258002 <br/>

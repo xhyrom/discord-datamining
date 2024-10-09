@@ -2,7 +2,7 @@
 
 ## Director of Business Development, Gaming
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7645380002 <br/>
 **Internal Job Id:** 6007386002 <br/>

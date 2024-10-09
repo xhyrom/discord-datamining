@@ -2,7 +2,7 @@
 
 ## Senior Product Marketing Manager, Developers
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7625340002 <br/>
 **Internal Job Id:** 5998145002 <br/>

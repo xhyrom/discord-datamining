@@ -2,7 +2,7 @@
 
 ## Senior Data Scientist, Causal Inference 
 
-**Location:** San Francisco, CA or Remote US
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7588967002 <br/>
 **Internal Job Id:** 5982493002 <br/>

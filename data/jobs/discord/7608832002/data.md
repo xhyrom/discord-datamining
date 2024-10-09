@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer - Data Platform
 
-**Location:** San Francisco, CA (or Remote)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7608832002 <br/>
 **Internal Job Id:** 5991178002 <br/>

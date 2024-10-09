@@ -2,7 +2,7 @@
 
 ## Senior Data Engineer
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7629345002 <br/>
 **Internal Job Id:** 5999758002 <br/>

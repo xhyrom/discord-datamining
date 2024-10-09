@@ -2,7 +2,7 @@
 
 ## Head of Integrated Marketing
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7638658002 <br/>
 **Internal Job Id:** 6004138002 <br/>

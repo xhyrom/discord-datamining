@@ -2,7 +2,7 @@
 
 ## Product Manager, Safety Platform 
 
-**Location:** Remote 
+**Location:** Remote (U.S.)
 
 **Id:** 7632697002 <br/>
 **Internal Job Id:** 6001394002 <br/>

@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer, Machine Learning Platform
 
-**Location:** San Francisco, CA (or Remote)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7588736002 <br/>
 **Internal Job Id:** 5982370002 <br/>
