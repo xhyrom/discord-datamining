@@ -44685,4 +44685,7 @@ img[alt] {
   );
   --custom-channel-textarea-text-area-height: 40px;
 }
-/*# sourceMappingURL=12633.1043a3c87d09dcc7b76f.css.map*/
+.grecaptcha-badge {
+  visibility: hidden;
+}
+/*# sourceMappingURL=12633.9d39ddcf03bab874d19f.css.map*/
