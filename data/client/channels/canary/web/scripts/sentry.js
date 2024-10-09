@@ -4889,7 +4889,7 @@
             return aF.X7;
           },
           XAJ: function () {
-            return a3;
+            return a2;
           },
           XKF: function () {
             return ic;
@@ -4973,7 +4973,7 @@
             return et;
           },
           c2C: function () {
-            return e2;
+            return e3;
           },
           cII: function () {
             return aW.cI;
@@ -5201,7 +5201,7 @@
             return t_;
           },
           pmI: function () {
-            return o3;
+            return o2;
           },
           q5t: function () {
             return eu;
@@ -5363,7 +5363,7 @@
             return aF.zM;
           },
           zUn: function () {
-            return e3;
+            return e2;
           },
           zYc: function () {
             return tm;
@@ -5481,8 +5481,8 @@
           eZ,
           e0,
           e1,
-          e3,
           e2,
+          e3,
           e6,
           e5,
           e4,
@@ -5545,8 +5545,8 @@
           tZ,
           t0,
           t1,
-          t3,
           t2,
+          t3,
           t6,
           t5,
           t4,
@@ -5609,8 +5609,8 @@
           rZ,
           r0,
           r1,
-          r3,
           r2,
+          r3,
           r6,
           r5,
           r4,
@@ -5673,8 +5673,8 @@
           nZ,
           n0,
           n1,
-          n3,
           n2,
+          n3,
           n6,
           n5,
           n4,
@@ -5728,22 +5728,22 @@
           ax = r(526761),
           aF = r(231338),
           aW = r(334431);
-        ((t3 = n || (n = {})).NONE = "NONE"),
-          (t3.LOGGING_IN = "LOGGING_IN"),
-          (t3.ACCOUNT_SCHEDULED_FOR_DELETION =
+        ((t2 = n || (n = {})).NONE = "NONE"),
+          (t2.LOGGING_IN = "LOGGING_IN"),
+          (t2.ACCOUNT_SCHEDULED_FOR_DELETION =
             "ACCOUNT_SCHEDULED_FOR_DELETION"),
-          (t3.ACCOUNT_DISABLED = "ACCOUNT_DISABLED"),
-          (t3.FORGOT_PASSWORD = "FORGOT_PASSWORD"),
-          (t3.MFA_STEP = "MFA_STEP"),
-          (t3.LOGGING_IN_MFA = "LOGGING_IN_MFA"),
-          (t3.MFA_SMS_STEP = "MFA_SMS_STEP"),
-          (t3.LOGGING_IN_MFA_SMS = "LOGGING_IN_MFA_SMS"),
-          (t3.LOGIN_AGE_GATE = "LOGIN_AGE_GATE"),
-          (t3.PASSWORD_RECOVERY_PHONE_VERIFICATION =
+          (t2.ACCOUNT_DISABLED = "ACCOUNT_DISABLED"),
+          (t2.FORGOT_PASSWORD = "FORGOT_PASSWORD"),
+          (t2.MFA_STEP = "MFA_STEP"),
+          (t2.LOGGING_IN_MFA = "LOGGING_IN_MFA"),
+          (t2.MFA_SMS_STEP = "MFA_SMS_STEP"),
+          (t2.LOGGING_IN_MFA_SMS = "LOGGING_IN_MFA_SMS"),
+          (t2.LOGIN_AGE_GATE = "LOGIN_AGE_GATE"),
+          (t2.PASSWORD_RECOVERY_PHONE_VERIFICATION =
             "PASSWORD_RECOVERY_VERIFY_PHONE"),
-          (t3.PHONE_IP_AUTHORIZATION = "PHONE_IP_AUTHORIZATION"),
-          ((t2 = a || (a = {})).PASSWORD = "password"),
-          (t2.LOGIN_CODE = "login_code"),
+          (t2.PHONE_IP_AUTHORIZATION = "PHONE_IP_AUTHORIZATION"),
+          ((t3 = a || (a = {})).PASSWORD = "password"),
+          (t3.LOGIN_CODE = "login_code"),
           ((t6 = o || (o = {}))[(t6.NOT_ELIGIBLE = 0)] = "NOT_ELIGIBLE"),
           (t6[(t6.ELIGIBLE = 1)] = "ELIGIBLE"),
           (t6[(t6.QUALIFIED = 2)] = "QUALIFIED"),
@@ -6294,8 +6294,8 @@
           aZ = "null",
           a0 = "0",
           a1 = "null",
-          a3 = "1096190356233670716",
-          a2 = Object.freeze({
+          a2 = "1096190356233670716",
+          a3 = Object.freeze({
             USER: (e) => "/users/".concat(e),
             USER_RELATIONSHIPS: function () {
               let e =
@@ -7706,7 +7706,7 @@
             USER_SUMMARIES: "/users/@me/summaries",
             QUESTS: (e) => "/quests/".concat(e),
           }),
-          a5 = (0, aY.Ft)(a2),
+          a5 = (0, aY.Ft)(a3),
           a4 = (0, aY.Ft)(a6, [":", "?", "@"]);
         ((rk = ee || (ee = {}))[(rk.INSTANCE = 1)] = "INSTANCE"),
           (rk[(rk.JOIN = 2)] = "JOIN"),
@@ -8401,527 +8401,527 @@
           (r1.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r1.NITRO_HOME = "Nitro Home");
         let oJ = "help_center_cta";
-        ((r3 = eA || (eA = {})).HERO = "Hero"),
-          (r3.BODY = "Body"),
-          (r3.NAVIGATION = "Navigation"),
-          (r3.TABS = "Tabs"),
-          (r3.CONTEXT_MENU = "Context Menu"),
-          (r3.HEADER = "Header"),
-          (r3.FOOTER = "Footer"),
-          (r3.DIRECT_ROUTE_ACCESS = "Direct Route Access"),
-          (r3.NOTIFICATION_BAR = "Notification Bar"),
-          (r3.PROFILE_MODAL = "Profile Modal"),
-          (r3.EMOJI_PICKER_POPOUT = "Emoji Picker Popout"),
-          (r3.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_POPOUT =
-            "Voice Channel Effect Emoji Picker Popout"),
-          (r3.FILE_UPLOAD_POPOUT = "File Upload Popout"),
-          (r3.GUILD_POPOUT = "Guild Popout"),
-          (r3.BITE_SIZE_PROFILE_POPOUT = "Bite Size Profile Popout"),
-          (r3.ROLE_ICON_POPOUT = "Role Icon Popout"),
-          (r3.GAME_MODAL = "Game Modal"),
-          (r3.GAME_POPOUT = "Game Popout"),
-          (r3.EMOJI_UPSELL_POPOUT = "Emoji Upsell Popout"),
-          (r3.EMOJI_PICKER_FLOATING_UPSELL = "Emoji Picker Floating Upsell"),
-          (r3.SOUND_PICKER_FLOATING_UPSELL = "Sound Picker Floating Upsell"),
-          (r3.EMPTY_STICKER_PICKER_UPSELL = "Empty Sticker Picker Upsell"),
-          (r3.FOR_LATER_POPOUT_UPSELL = "For Later Popout Upsell"),
-          (r3.CREATE_STICKER_MODAL = "Create Sticker Modal"),
-          (r3.IOS_TWO_FA_MODAL = "Two Factor Auth Modal"),
-          (r3.IOS_TWO_FA_EMAIL_VERIFICATION = "Two Factor Email Verification"),
-          (r3.IOS_TWO_FA_LANDING = "Two Factor Auth Landing"),
-          (r3.IOS_TWO_FA_SCAN = "Two Factor Auth Scan Code"),
-          (r3.IOS_TWO_FA_ENTER_CODE = "Two Factor Auth Enter Code"),
-          (r3.IOS_TWO_FA_SUCCESS = "Two Factor Auth Enable Success"),
-          (r3.IOS_TWO_FA_ADD_SMS = "Two Factor Auth Add SMS"),
-          (r3.IOS_TWO_FA_VERIFY_SMS = "Two Factor Auth Verify SMS"),
-          (r3.IOS_CANNOT_MANAGE_SUBSCRIPTION =
-            "iOS Cannot Manage Subscription"),
-          (r3.PREMIUM_GUILD_INVITE_SPLASH = "Premium Guild Invite Splash"),
-          (r3.PREMIUM_GUILD_PROGRESS_BAR = "Premium Guild Progress Bar"),
-          (r3.PREMIUM_GUILD_SUBSCRIBE_MODAL = "Premium Guild Subscribe Modal"),
-          (r3.PREMIUM_GUILD_SUBSCRIBE_CONFIRMATION_MODAL =
-            "Premium Guild Subscribe Confirmation Modal"),
-          (r3.PREMIUM_GUILD_UNSUBSCRIBE_MODAL =
-            "Premium Guild Unsubscribe Modal"),
-          (r3.PREMIUM_GUILD_PURCHASE_MODAL = "Premium Guild Purchase Modal"),
-          (r3.PREMIUM_GUILD_UPSELL_MODAL = "Premium Guild Upsell Modal"),
-          (r3.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_MODAL =
-            "Premium Guild Member Profile Upsell Modal"),
-          (r3.PREMIUM_CUSTOM_NOTIFICATION_SOUND_UPSELL_MODAL =
-            "Premium Custom Notification Sound Upsell"),
-          (r3.PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL =
-            "Premium Custom Notification Sound Settings Upsell"),
-          (r3.PREMIUM_PERKS_DEMO_UPSELL_MODAL =
-            "Premium Perks Demo Upsell Modal"),
-          (r3.PREMIUM_FOR_LATER_UPSELL_MODAL =
-            "Premium For Later Upsell Modal"),
-          (r3.FOR_LATER_CREATE = "For Later Create"),
-          (r3.SERVER_BANNER_TOOLTIP = "Server Banner Tooltip"),
-          (r3.CHANNEL_NOTICE = "Channel Notice"),
-          (r3.CHANNEL_ACTION_SHEET = "Channel Action Sheet"),
-          (r3.CUSTOM_STATUS_MODAL = "Custom Status Modal"),
-          (r3.PAYMENT_AUTHENTICATION_MODAL = "Payment Authentication"),
-          (r3.NOISE_CANCELLATION_POPOUT = "Noise Cancellation Popout"),
-          (r3.IOS_AGE_GATE_MODAL = "iOS Public Server Age Gate"),
-          (r3.DESKTOP_AGE_GATE_MODAL = "Desktop Public Server Age Gate"),
-          (r3.CLAIM_ACCOUNT_MODAL = "Claim Account"),
-          (r3.STREAM_UPSELL_MODAL = "Stream Upsell Modal"),
-          (r3.FILE_UPLOAD_UPSELL_MODAL = "File Upload Upsell Modal"),
-          (r3.MESSAGE_LENGTH_UPSELL_MODAL = "Message Length Upsell Modal"),
-          (r3.USER_PROFILE = "User Profile"),
-          (r3.USER_PROFILE_MUTUAL_FRIENDS = "User Profile Mutual Friends"),
-          (r3.INBOX = "Inbox"),
-          (r3.CHANNEL = "Channel"),
-          (r3.MANAGE_ACCOUNTS_MODAL = "Manage Accounts Modal"),
-          (r3.VOICE_CHANNEL_EFFECTS_UPSELL_MODAL =
-            "Voice Channel Effects Upsell Modal"),
-          (r3.PREMIUM_TIER_0_ANNOUNCEMENT_MODAL =
-            "Premium Tier 0 Announcement Modal"),
-          (r3.BURST_REACTIONS_UPSELL_MODAL = "Burst Reactions Upsell Modal"),
-          (r3.BURST_REACTIONS_TOOLTIP = "Burst Reactions Tooltip"),
-          (r3.CONTACT_SYNC_NC_MODAL = "Contact Sync Notification Center Modal"),
-          (r3.MEDIA_VIEWER = "Media Viewer"),
-          (r3.MARKETING_FLOATING_CTA = "Marketing Floating CTA"),
-          (r3.PREMIUM_GIFT_SUCCESS_MODAL = "Premium Gifting Success Modal"),
-          (r3.CHANNEL_TEXT_AREA = "Channel Text Area"),
-          (r3.THREAD_TEXT_AREA = "THREAD_TEXT_AREA"),
-          (r3.TEXT_IN_VOICE = "TEXT_IN_VOICE"),
-          (r3.FORUM_CHANNEL_TEXT_AREA = "FORUM_CHANNEL_TEXT_AREA"),
-          (r3.CHANNEL_TEXT_AREA_AUTOCOMPLETE =
-            "Channel Text Area Autocomplete"),
-          (r3.CHANNEL_LIST = "Channel List"),
-          (r3.ACTIVITY_PANEL = "Activity Panel"),
-          (r3.MEMBER_LIST = "Member List"),
-          (r3.ACCOUNT_PANEL = "Account Panel"),
-          (r3.CHANNEL_WELCOME_CTA = "Channel Welcome CTA"),
-          (r3.CHANNEL_HEADER = "Channel Header"),
-          (r3.DIRECT_MESSAGE = "Direct Message"),
-          (r3.DM_INVITE = "DM_INVITE"),
-          (r3.ACTIVITY_FEED_GAME_POPOUT = "Game Popout"),
-          (r3.ACTIVITY_FEED_NOW_PLAYING = "Now Playing"),
-          (r3.ACTIVITY_FEED_NOW_PLAYING_HOVER_POPOUT =
-            "Now Playing Hover Popout"),
-          (r3.ACTIVITY_FEED_NOW_PLAYING_CONTEXT_MENU =
-            "Now Playing Context Menu"),
-          (r3.LIBRARY_INSTALL_MODULE = "Install Module"),
-          (r3.LIBRARY_APPLICATION_LIST = "Application List"),
-          (r3.LIBRARY_PREMIUM_APPLICATIONS = "Library Premium Applications"),
-          (r3.LIBRARY_GAME_MODAL = "Game Modal"),
-          (r3.LIBRARY_INVENTORY_CODE_REDEMPTION = "Code Redemption"),
-          (r3.LIBRARY_INVENTORY_GIFTS_LIST = "Gifts List"),
-          (r3.QUESTS = "Quests"),
-          (r3.GIFT_BANNER = "Gift Banner"),
-          (r3.STORE_LISTING_BUY_GAME = "Buy Game"),
-          (r3.STORE_LISTING_BUY = "Buy"),
-          (r3.SETTINGS_TEXT_PLAYGROUND = "Text Playground"),
-          (r3.SETTINGS_DESIGN_SYSTEMS = "Design Systems"),
-          (r3.SETTINGS_INTL_TESTING = "Intl Testing"),
-          (r3.SETTINGS_ACCOUNT = "My Account"),
-          (r3.SETTINGS_GAMES = "Games"),
-          (r3.SETTINGS_EDIT_ACCOUNT = "Edit Account"),
-          (r3.SETTINGS_CHANGE_USERNAME = "Change Username"),
-          (r3.SETTINGS_CHANGE_EMAIL = "Change Email"),
-          (r3.SETTINGS_CONFIRM_PASSWORD = "Confirm Password"),
-          (r3.SETTINGS_CHANGE_PASSWORD = "Change Password"),
-          (r3.SETTINGS_CUSTOMIZE_PROFILE = "Profile Customization"),
-          (r3.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT =
-            "Profile Customization Try It Out"),
-          (r3.SETTINGS_CUSTOMIZE_PROFILE_AVATAR =
-            "Profile Customization Avatar"),
-          (r3.SETTINGS_BACKUP_CODES = "Backup Codes"),
-          (r3.SETTINGS_CONFIRM_VIEW_BACKUP_CODES = "Confirm View Backup Codes"),
-          (r3.SETTINGS_PRIVACY_AND_SAFETY = "Privacy & Safety"),
-          (r3.SETTINGS_PRIVACY_AND_SAFETY_V2 = "Privacy & Safety V2"),
-          (r3.SETTINGS_CONTENT_AND_SOCIAL = "Content & Social"),
-          (r3.SETTINGS_DATA_AND_PRIVACY = "Data & Privacy"),
-          (r3.SETTINGS_ACCOUNT_STANDING = "Account Standing"),
-          (r3.SETTINGS_AUTHORIZED_APPS = "Authorized Apps"),
-          (r3.SETTINGS_CONNECTIONS = "Connections"),
-          (r3.SETTINGS_FRIEND_REQUESTS = "Friend Requests"),
-          (r3.SETTINGS_CONNECTIONS_XBOX = "Connections Xbox"),
-          (r3.SETTINGS_BILLING = "Billing"),
-          (r3.SETTINGS_SUBSCRIPTIONS = "Subscriptions"),
-          (r3.SETTINGS_PREMIUM = "Discord Nitro"),
-          (r3.SETTINGS_PREMIUM_BANNER = "Nitro Upsell Banner"),
-          (r3.SETTINGS_MOBILE_PREMIUM_BANNER = "Mobile Nitro Upsell Banner"),
-          (r3.SETTINGS_PREMIUM_MANAGE_PLAN = "Manage Nitro Plan"),
-          (r3.SETTINGS_PREMIUM_PLAN_SELECT = "Discord Premium Plan Select"),
-          (r3.SETTINGS_PREMIUM_GIFTING = "Nitro Gifting"),
-          (r3.GUILD_BOOSTING = "Nitro Server Boost"),
-          (r3.GUILD_ROLE_SUBSCRIPTION = "Guild Role Subscription"),
-          (r3.GUILD_ROLE_SUBSCRIPTION_CANCEL =
-            "Guild Role Subscription Cancel"),
-          (r3.SETTINGS_DATA = "Data"),
-          (r3.SETTINGS_HYPESQUAD_ONLINE = "Hypesquad Online"),
-          (r3.SETTINGS_VOICE_AND_VIDEO = "Voice & Video"),
-          (r3.SETTINGS_OVERLAY = "Overlay"),
-          (r3.SETTINGS_NOTIFICATIONS = "Notifications"),
-          (r3.SETTINGS_APP_ICONS = "App Icons"),
-          (r3.SETTINGS_EMAILS = "Email Settings"),
-          (r3.SETTINGS_KEYBINDS = "Keybinds"),
-          (r3.SETTINGS_ACTIVITY_PRIVACY = "Activity Privacy"),
-          (r3.SETTINGS_GAME_ACTIVITY = "Game Activity"),
-          (r3.SETTINGS_TEXT_AND_IMAGES = "Text & Images"),
-          (r3.SETTINGS_APPEARANCE = "Appearance"),
-          (r3.SETTINGS_APPEARANCE_THEME_PICKER = "Appearance Theme Picker"),
-          (r3.SETTINGS_APPEARANCE_APP_ICON_PICKER =
-            "Appearance App Icon Picker"),
-          (r3.SETTINGS_ACCESSIBILITY = "Accessibility"),
-          (r3.SETTINGS_STREAMER_MODE = "Streamer Mode"),
-          (r3.SETTINGS_LANGUAGE = "Language"),
-          (r3.SETTINGS_CHANGELOG = "Change Log"),
-          (r3.SETTINGS_EXPERIMENTS = "Experiments"),
-          (r3.SETTINGS_DEVELOPER_OPTIONS = "Developer Options"),
-          (r3.SETTINGS_HOTSPOT_OPTIONS = "Hotspot Options"),
-          (r3.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS =
-            "Dismissible Content Options"),
-          (r3.SETTINGS_WINDOWS = "Windows"),
-          (r3.SETTINGS_LINUX = "Linux"),
-          (r3.SETTINGS_BLOCKED_USERS = "Blocked Users"),
-          (r3.SETTINGS_INVENTORY = "Library Inventory"),
-          (r3.SETTINGS_DEBUG_LOGS = "Debug Logs"),
-          (r3.SETTINGS_FORCE_JS_CRASH = "Force JS Crash"),
-          (r3.SETTINGS_PUSH_NOTIFICATION_LOGS = "Push Notification Logs"),
-          (r3.SETTINGS_DATABASE_CONTROLS = "Database Controls"),
-          (r3.SETTINGS_STARTUP_TIMINGS = "Startup Timings"),
-          (r3.TEXT_COMPONENT = "Text Component"),
-          (r3.DESIGN_SYSTEM = "Design System"),
-          (r3.DESIGN_SYSTEM_TEXT = "Design System (Text)"),
-          (r3.DESIGN_SYSTEM_BUTTON = "Design System (Button)"),
-          (r3.DESIGN_SYSTEM_BUTTON_GROUP = "Design System (Button Group)"),
-          (r3.DESIGN_SYSTEM_ROW_BUTTON = "Design System (Row Button)"),
-          (r3.DESIGN_SYSTEM_EXPERIMENTAL_BUTTONS =
-            "Design System (Experimental Buttons)"),
-          (r3.DESIGN_SYSTEM_TABLE_ROW = "Design System (Table Row)"),
-          (r3.DESIGN_SYSTEM_ALERT_MODAL = "Design System (Alert Modal)"),
-          (r3.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW =
-            "Design System (Background Blur View)"),
-          (r3.DESIGN_SYSTEM_SHADOWS = "Design System (Shadows)"),
-          (r3.DESIGN_SYSTEM_SEGMENTED_CONTROL =
-            "Design System (Segmented Control)"),
-          (r3.DESIGN_SYSTEM_TABS = "Design System (Tabs)"),
-          (r3.DESIGN_SYSTEM_CONTEXT_MENU = "Design System (Context Menu)"),
-          (r3.DESIGN_SYSTEM_TOAST = "Design System (Toast)"),
-          (r3.DESIGN_SYSTEM_TEXT_INPUT = "Design System (Text Input)"),
-          (r3.DESIGN_SYSTEM_TOOLTIP = "Design System (Tooltip)"),
-          (r3.DESIGN_SYSTEM_COACHMARK = "Design System (Coachmark)"),
-          (r3.DESIGN_SYSTEM_STACK = "Design Systems (Stack)"),
-          (r3.DESIGN_SYSTEM_BACKDROP = "Design Systems (Backdrop)"),
-          (r3.DESIGN_SYSTEM_MODAL = "Design System (Modal)"),
-          (r3.DESIGN_SYSTEM_PILE = "Design Systems (Pile)"),
-          (r3.DESIGN_SYSTEM_SHEETS = "Design Systems (Sheets)"),
-          (r3.DESIGN_SYSTEM_FORM_PRIMITIVES =
-            "Design Systems (Form Primitives)"),
-          (r3.SETTINGS_ADVANCED = "Advanced"),
-          (r3.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE = "Payment Flow Modals"),
-          (r3.SETTINGS_SESSIONS = "Sessions"),
-          (r3.SETTINGS_FAMILY_CENTER = "Family Center"),
-          (r3.SETTINGS_CONTEXT_MENU = "Settings Context Menu"),
-          (r3.SETTINGS_CLIPS = "Settings Clips"),
-          (r3.SETTINGS_CUSTOM_STATUS = "Custom Status"),
-          (r3.SETTINGS_EDIT_PROFILE = "Edit Profile"),
-          (r3.SETTINGS_BROWSER = "Browser"),
-          (r3.SETTINGS_OVERVIEW = "Overview"),
-          (r3.SETTINGS_CUSTOM_STATUS_EMOJI_PICKER =
-            "Custom Status Emoji Picker"),
-          (r3.SETTINGS_DESKTOP_APP = "Desktop Only"),
-          (r3.SETTINGS_BUILD_OVERRIDE = "Build Override"),
-          (r3.SETTINGS_CHECK_NATIVE_UPDATE = "Check For Native Update"),
-          (r3.SETTINGS_INSTALL_NATIVE_UPDATE = "Install Native Build"),
-          (r3.SETTINGS_CHANGELOG_OVERRIDE = "Changelog Override"),
-          (r3.SETTINGS_SOUNDS = "Sounds"),
-          (r3.SETTINGS_CLIENT_THEMES = "Client Themes"),
-          (r3.SETTINGS_WEBAUTHN_VIEW = "View Security Keys"),
-          (r3.SETTINGS_PUBLIC_WELCOME = "Welcome Screen Settings"),
-          (r3.SETTINGS_POGGERMODE = "Powermode Settings"),
-          (r3.GUILD_ROLE_CREATION_MODAL = "Guild Role Creation Modal"),
-          (r3.GUILD_ROLE_TEMPLATE_POPOUT = "Guild Role Template Popout"),
-          (r3.GUILD_CREATE_MODAL = "Guild Create Modal"),
-          (r3.GUILD_SETTINGS_STICKERS = "Guild Stickers Settings"),
-          (r3.GUILD_SETTINGS_EMOJI = "Guild Emoji Settings"),
-          (r3.GUILD_SETTINGS_VANITY_URL = "Guild Vanity Url"),
-          (r3.GUILD_SETTINGS_ONBOARDING = "Guild Onboarding Settings"),
-          (r3.GUILD_SETTINGS_SOUNDBOARD = "Guild Soundboard Settings"),
-          (r3.MEMBER_SAFETY_PAGE = "Member Safety Page"),
-          (r3.GUILD_SETTINGS_MEMBERS = "guild settings members page"),
-          (r3.GUILD_ROLE_EDIT_UPSELL_MODAL = "Guild Role Edit Upsell Modal"),
-          (r3.APPLICATION_EMBED = "Application Embed"),
-          (r3.GIFT_CODE_EMBED = "Gift Code Embed"),
-          (r3.GIFT_CODE_ROW = "Gift Code Row"),
-          (r3.PREMIUM_GIFT_AVAILABLE_ALERT = "Premium Gift Available Alert"),
-          (r3.GUILD_LIST = "Guild List"),
-          (r3.GUILD_HEADER = "Guild Header"),
-          (r3.GUILD_HEADER_POPOUT = "Guild Header Popout"),
-          (r3.GUILD_INVITE_BACKGROUND = "Guild Invite Background"),
-          (r3.GUILD_BANNER = "Guild Banner"),
-          (r3.ANIMATED_GUILD_BANNER_UPSELL = "Animated Guild Banner Upsell"),
-          (r3.STREAM_VIEWER_POPOUT = "Stream Viewer Popout"),
-          (r3.STREAM_SETTINGS = "Stream Settings"),
-          (r3.STREAM_QUALITY_INDICATOR = "Stream Quality Indicator"),
-          (r3.DISCOVER_SEARCH = "Search"),
-          (r3.DISCOVER_GAMES_YOU_PLAY = "Games You Play"),
-          (r3.DISCOVER_POPULAR = "Popular"),
-          (r3.DISCOVER_COLLECTION_GAMING = "Gaming"),
-          (r3.DISCOVER_COLLECTION_COMICS_HEROES = "Comics / Heroes"),
-          (r3.DISCOVER_COLLECTION_ANIME = "Anime"),
-          (r3.DISCOVER_COLLECTION_MUSIC = "Music"),
-          (r3.DISCOVER_COLLECTION_ESPORTS = "electronic-Sports"),
-          (r3.DISCOVERY_SETUP_MODAL = "Discovery Setup Modal"),
-          (r3.DISCOVERY_SETUP_SUCCESS_MODAL = "Discovery Setup Success Modal"),
-          (r3.PREMIUM_GUILD_USER_MODAL_CTA_BAR = "CTA Bar"),
-          (r3.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR = "Floating CTA Bar"),
-          (r3.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR = "Progress Bar"),
-          (r3.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA = "Boost Any Guild CTA"),
-          (r3.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA =
-            "Recommended Server Boost This Server CTA"),
-          (r3.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA =
-            "Recommended Server Go To Server CTA"),
-          (r3.ICYMI_RECOMMENDED_SERVERS = "Recommended Servers"),
-          (r3.REGISTER = "Register"),
-          (r3.LOGIN = "Login"),
-          (r3.OVERLAY = "Overlay"),
-          (r3.STICKERS_SHOP = "Stickers Shop"),
-          (r3.STICKER_PACK_VIEW_ALL = "Sticker Pack View All"),
-          (r3.STICKER_PICKER_UPSELL = "Sticker Picker Upsell"),
-          (r3.STICKER_PREMIUM_TIER_2_UPSELL_MODAL =
-            "Stickers Nitro Upsell Modal"),
-          (r3.STICKER_PREMIUM_TIER_1_UPSELL_MODAL =
-            "Stickers Nitro Classic Upsell Modal"),
-          (r3.STICKER_POPOUT = "Sticker Popout"),
-          (r3.EXPRESSION_PICKER = "Expression Picker"),
-          (r3.STANDALONE_VIDEO_PLAYER = "Standalone Video Player"),
-          (r3.SUPER_REACTION_PICKER = "Super Reaction Picker"),
-          (r3.SOUNDBOARD_SOUND_PICKER = "Soundboard Sound Picker"),
-          (r3.SOUNDBOARD_SOUND_PICKER_UPSELL =
-            "Soundboard Sound Picker Upsell"),
-          (r3.CONTACT_SYNC_MODAL = "Contact Sync"),
-          (r3.CONTACT_SYNC_EMPTY_CTA = "Contact Sync Empty CTA"),
-          (r3.HUB_WELCOME_CTA = "Hub Welcome CTA"),
-          (r3.GUILD_CAP_UPSELL_MODAL = "Guild Cap Upsell Modal"),
-          (r3.CHAT_USERNAME = "Chat Username"),
-          (r3.GUILD_DROPDOWN_MENU = "Guild Dropdown Menu"),
-          (r3.PREMIUM_GUILD_MEMBER_PROFILE =
-            "Edit Premium Guild Member Profile"),
-          (r3.CREATE_THREAD_SIDEBAR = "Create Thread Sidebar"),
-          (r3.THREAD_ARCHIVAL_DURATION_SHEET =
-            "Thread Archival Duration Sheet"),
-          (r3.THREAD_CREATION_OPTIONS = "Thread Creation Options"),
-          (r3.THREAD_CONTEXT_MENU = "Thread Context Menu"),
-          (r3.THREAD_MEMBER_LIST = "Thread Member List"),
-          (r3.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL =
-            "Upload File or Choose GIF Modal"),
-          (r3.GIF_PICKER_AVATAR_OR_BANNER_MODAL = "GIF Picker Modal"),
-          (r3.CROP_GIF_MODAL = "Crop GIF Modal"),
-          (r3.CUSTOM_ROLE_ICONS_TOOLTIP = "Custom Role Icons Tooltip"),
-          (r3.GUILD_BOTTOM_SHEET = "Guild Bottom Sheet"),
-          (r3.USER_BOTTOM_SHEET = "User Bottom Sheet"),
-          (r3.MARKETING_BOTTOM_SHEET = "Marketing Bottom Sheet"),
-          (r3.PURCHASE_SINGLE_PREMIUM_GUILD_SUBSCRIPTION = "Buy Single Boosts"),
-          (r3.PREMIUM_GUILD_SUBSCRIPTION_TIER_1 =
-            "Premium Guild Subscription Tier 1"),
-          (r3.PREMIUM_GUILD_SUBSCRIPTION_TIER_2 =
-            "Premium Guild Subscription Tier 2"),
-          (r3.PREMIUM_GUILD_SUBSCRIPTION_TIER_3 =
-            "Premium Guild Subscription Tier 3"),
-          (r3.NITRO_CROSS_PROMO_FROM_BOOSTING =
-            "Nitro Cross Promo From Boosting"),
-          (r3.SCHEDULED_GUILD_EVENT_INFORMATION_DIALOG =
-            "Scheduled Guild Event Information Dialog"),
-          (r3.FRIENDS_LIST = "Friends List"),
-          (r3.FRIENDS_ADD_FRIENDS_MODAL = "Add Friends Modal"),
-          (r3.FRIENDS_ADD_FRIENDS_MODAL_SEARCH = "Add Friends Modal Search"),
-          (r3.FRIENDS_ADD_BY_USERNAME_MODAL = "Add by Username Modal"),
-          (r3.FRIENDS_REQUESTS_MODAL = "Friend Requests Modal"),
-          (r3.FRIENDS_SUGGESTED_FRIENDS_MODAL = "Suggested Friends Modal"),
-          (r3.FRIENDS_LIST_FRIEND_ROW = "Friend Row"),
-          (r3.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT = "Friend Row Gift Popout"),
-          (r3.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW =
-            "Guild Member Verification Application Review"),
-          (r3.GUILD_MEMBER_VERIFICATION_APPLICATION_INTERVIEW =
-            "Guild Member Verification Application Interview"),
-          (r3.ACTIVE_NOW_COLUMN = "Active Now Column"),
-          (r3.GUILD_CHANNEL_LIST = "Guild Channel List"),
-          (r3.INVITE_LINK = "Invite Link"),
-          (r3.RTC_CONNECTION_PANEL = "RTC Connection Panel"),
-          (r3.VOICE_CHANNEL_TILE = "Voice Channel Tile"),
-          (r3.VOICE_CONTROL_TRAY = "Voice Control Tray"),
-          (r3.EMBEDDED_ACTIVITY_LAUNCH_FAIL = "Embedded Activity Launch Fail"),
-          (r3.FOCUS_EXPANDED_CONTROLS = "Focus Expanded Controls"),
-          (r3.CHANNEL_CALL_ACTION_BAR = "Channel Call Action Bar"),
-          (r3.ACTIVITY_SHELF = "Activity Shelf"),
-          (r3.ACTIVITY_UPSELL_ACTION_SHEET = "Activity Upsell Action Sheet"),
-          (r3.AGGREGATE_PREMIUM_UPSELL_MODAL =
-            "Aggregate Premium Upsell Modal"),
-          (r3.VOICE_CHANNEL_EFFECTS_BAR = "Voice Channel Effect Emoji Hotbar"),
-          (r3.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER =
-            "Voice Channel Effect Emoji Picker"),
-          (r3.PREMIUM_MARKETING_SURFACE_SIDEBAR =
-            "Premium Marketing Surface Sidebar"),
-          (r3.CHANNEL_BROWSER = "Channel Browser"),
-          (r3.FORUM_CHANNEL_POST = "Forum Channel Post"),
-          (r3.FORUM_CHANNEL_HEADER = "Forum Channel Header"),
-          (r3.FORUM_CHANNEL_FOOTER = "Forum Channel Footer"),
-          (r3.FORUM_CHANNEL_GUIDELINES = "Forum Channel Guidelines"),
-          (r3.FORUM_POST_HEADER = "Forum Post Header"),
-          (r3.NOTIFICATION_CENTER = "Notification Center"),
-          (r3.STAGE_VIDEO_LIMIT = "Stage Video Limit"),
-          (r3.CHANNEL_PIN = "Channel Pin"),
-          (r3.CHANNEL_SETTINGS = "Channel Settings"),
-          (r3.CHANNEL_SEARCH = "Channel Search"),
-          (r3.NEW_MESSAGE_COMPOSER = "New Message Composer"),
-          (r3.FAMILY_CENTER = "Family Center"),
-          (r3.ADD_PRIVATE_CHANNEL_INTEGRATION_MODAL =
-            "Add Private Channel Integration Modal"),
-          (r3.REMIX_UPSELL_ACTIONSHEET = "Remix Upsell Actionsheet"),
-          (r3.COMMUNITY_ALERTS = "Community Alerts Settings"),
-          (r3.HIGHLIGHT_NOTIFICATIONS = "Highlight notification settings"),
-          (r3.SUMMARY_ACTION_SHEET = "Summary Action Sheet"),
-          (r3.COLLECTIBLES_SHOP_DETAILS_MODAL =
-            "Collectibles Shop Details Modal"),
-          (r3.PROFILE_EFFECT_CUSTOMIZATION = "Profile Effect Customization"),
-          (r3.COLLECTIBLES_SHOP = "Shop"),
-          (r3.SHOP_PRODUCT_DETAILS = "Shop Product Details"),
-          (r3.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS =
-            "Collectibles Shop View All Category Items"),
-          (r3.PROFILE_EFFECTS_PREVIEW_TOOL = "Profile Effects Preview Tool"),
-          (r3.APPEAL_INGESTION_SPEED_BUMP = "Appeal Ingestion Speed Bump"),
-          (r3.APPEAL_INGESTION_COLLECT_SIGNAL =
-            "Appeal Ingestion Collect Signal"),
-          (r3.APPEAL_INGESTION_REQUEST_REVIEW =
-            "Appeal Ingestion Request a Review"),
-          (r3.APPEAL_INGESTION_WHY_DISAGREE =
-            "Appeal Ingestion Why do you Disagree?"),
-          (r3.APPEAL_INGESTION_FREE_TEXT = "Appeal Ingestion Free Text"),
-          (r3.APPEAL_INGESTION_CONFIRM_SUBMISSION =
-            "Appeal Ingestion Confirm Submission"),
-          (r3.APPEAL_INGESTION_REQUEST_SENT = "Appeal Ingestion Request Sent"),
-          (r3.APPEAL_INGESTION_THANKS = "Appeal Ingestion Thanks"),
-          (r3.APPEAL_INGESTION_SPAM = "Appeal Ingestion Spam"),
-          (r3.SETTINGS_SURVEY_OVERRIDE = "Survey Override"),
-          (r3.QUEST_PREVIEW_TOOL = "Quest Preview Tool"),
-          (r3.SECURE_FRAMES_STREAM_BOTTOM_SHEET =
-            "Secure Frames Stream Bottom Sheet"),
-          (r3.SECURE_FRAMES_VOICE_BOTTOM_SHEET =
-            "Secure Frames Voice Bottom Sheet"),
-          (r3.SECURE_FRAMES_VERIFIED_DEVICES =
-            "Secure Frames Verified Devices"),
-          (r3.SECURE_FRAMES = "Secure Frames"),
-          (r3.REVERSE_TRIAL_UPSELL_MODAL = "Reverse trial Upsell Modal"),
-          (r3.WEB_SETTING_TREE_TOOL = "Web Setting Tree Tool"),
-          ((r2 = eT || (eT = {})).TOOLTIP = "Tooltip"),
-          (r2.CARD = "Card"),
-          (r2.CAROUSEL = "Carousel"),
-          (r2.NAVIGATION_LINK = "Nav Link"),
-          (r2.SUBSCRIBE_TO_TIER_BUTTON = "Subscribe up to Tier Button"),
-          (r2.BUTTON_BROWSE = "Button Browse"),
-          (r2.BUTTON_HOME = "Button Home"),
-          (r2.BUTTON_BACK = "Button Back"),
-          (r2.BUTTON_CTA = "Button CTA"),
-          (r2.BUTTON_ICON = "Button Icon"),
-          (r2.MENU_LINK = "Menu Link"),
-          (r2.WEB_URL = "Web URL"),
-          (r2.LIST_ITEM = "List Item"),
-          (r2.RADIO_ITEM = "Radio Item"),
+        ((r2 = eA || (eA = {})).HERO = "Hero"),
+          (r2.BODY = "Body"),
+          (r2.NAVIGATION = "Navigation"),
+          (r2.TABS = "Tabs"),
           (r2.CONTEXT_MENU = "Context Menu"),
-          (r2.CONTEXT_MENU_ITEM = "Context Menu Item"),
-          (r2.SEARCH = "Search"),
-          (r2.ALTERNATIVE_SKU = "Alternative Sku"),
-          (r2.HOVER_MENU = "Hover Menu"),
-          (r2.AVATAR = "Avatar"),
-          (r2.ANIMATED_AVATAR = "Animated Avatar"),
-          (r2.EDIT_GUILD_PROFILE_AVATAR = "Edit Guild Profile Avatar"),
-          (r2.CHANNEL = "Channel"),
-          (r2.CHANNEL_TAG = "Channel Tag"),
-          (r2.BADGE = "Badge"),
-          (r2.STICKER_SEARCH_VIEW_ALL = "Sticker Search View All"),
-          (r2.STICKER_PICKER_VIEW_ALL = "Sticker Picker View All"),
-          (r2.STICKER_POPOUT_VIEW_ALL = "Sticker Popout View All"),
-          (r2.STICKER_PICKER_PURCHASE_BUTTON =
-            "Sticker Picker Purchase Button"),
-          (r2.STICKER_PICKER_UPSELL_BUTTON = "Sticker Picker Upsell Button"),
-          (r2.STICKER_POPOUT_PURCHASE_BUTTON =
-            "Sticker Popout Purchase Button"),
-          (r2.NUDGED_STICKER = "Nudged Sticker"),
-          (r2.EXPRESSION_SUGGESTIONS = "Expression Suggestions"),
-          (r2.STICKER = "Sticker"),
-          (r2.EMOJI = "Emoji"),
-          (r2.SOUNDBOARD_SOUND = "Soundboard Sound"),
-          (r2.EDIT_PER_SERVER_IDENTITY = "Edit Per Server Identity"),
-          (r2.EDIT_PROFILE_BANNER = "Edit Profile Banner"),
-          (r2.EDIT_GUILD_PROFILE_BANNER = "Edit Guild Profile Banner"),
-          (r2.BOOSTING_BANNER = "Boosting Banner"),
-          (r2.BOOST_LEVEL_UPSELL_BUTTON = "Boost Level Upsell Button"),
-          (r2.BOOST_UPSELL_LOST_LEVEL_HEADER =
-            "Boost Upsell Lost Level Header"),
-          (r2.BOOST_UPSELL_NEXT_LEVEL_HEADER =
-            "Boost Upsell Next Level Header"),
-          (r2.BOOST_UPSELL_BANNER_LOST_LEVEL =
-            "Boost Upsell Banner for Lost Level"),
-          (r2.BOOST_UPSELL_BANNER_SLOTS_FULL =
-            "Boost Upsell Banner for Slots Full"),
-          (r2.BOOST_GEM_ICON = "Boost Gem Icon"),
-          (r2.BOOST_ANNOUNCEMENT_UPSELL = "Boost Announcement Upsell"),
-          (r2.PRIVATE_THREAD_CHECKBOX = "Private Thread Checkbox"),
-          (r2.LEARN_MORE = "Learn More"),
-          (r2.UPLOAD_IMAGE = "Upload Image"),
-          (r2.PREMIUM_UPSELL_BUTTON = "Nitro upsell button"),
-          (r2.PREMIUM_UPSELL_BANNER = "Nitro upsell banner"),
-          (r2.PREMIUM_SUBSCRIPTION_PAYMENT_FLOW_COMPLETED =
-            "Nitro Payment Flow Completed"),
-          (r2.PREMIUM_SUBSCRIPTION = "Discord Nitro"),
-          (r2.PREMIUM_GUILD_SUBSCRIPTION = "Server Boost"),
-          (r2.PREMIUM_GUILD_SUBSCRIPTION_WITH_PREMIUM_SUBSCRIPTION =
-            "Server Boost (Has Nitro)"),
-          (r2.GIF_CROPPING_MODAL = "GIF Cropping Modal"),
-          (r2.IMAGE_CROPPING_MODAL = "Image Cropping Modal"),
-          (r2.UPSELL_HEADER = "Upsell Header"),
-          (r2.TRY_IT_CTA = "Try It CTA"),
-          (r2.SEASONAL_BUTTON_ICON = "Seasonal button icon"),
-          (r2.NITROWEEN_BUTTON_ICON = "Nitroween button icon"),
-          (r2.ACTIONED_BY_USER = "Actioned By User"),
-          (r2.JOIN_REQUEST = "Join Request"),
+          (r2.HEADER = "Header"),
+          (r2.FOOTER = "Footer"),
+          (r2.DIRECT_ROUTE_ACCESS = "Direct Route Access"),
+          (r2.NOTIFICATION_BAR = "Notification Bar"),
+          (r2.PROFILE_MODAL = "Profile Modal"),
+          (r2.EMOJI_PICKER_POPOUT = "Emoji Picker Popout"),
+          (r2.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_POPOUT =
+            "Voice Channel Effect Emoji Picker Popout"),
+          (r2.FILE_UPLOAD_POPOUT = "File Upload Popout"),
+          (r2.GUILD_POPOUT = "Guild Popout"),
+          (r2.BITE_SIZE_PROFILE_POPOUT = "Bite Size Profile Popout"),
+          (r2.ROLE_ICON_POPOUT = "Role Icon Popout"),
+          (r2.GAME_MODAL = "Game Modal"),
+          (r2.GAME_POPOUT = "Game Popout"),
+          (r2.EMOJI_UPSELL_POPOUT = "Emoji Upsell Popout"),
+          (r2.EMOJI_PICKER_FLOATING_UPSELL = "Emoji Picker Floating Upsell"),
+          (r2.SOUND_PICKER_FLOATING_UPSELL = "Sound Picker Floating Upsell"),
+          (r2.EMPTY_STICKER_PICKER_UPSELL = "Empty Sticker Picker Upsell"),
+          (r2.FOR_LATER_POPOUT_UPSELL = "For Later Popout Upsell"),
+          (r2.CREATE_STICKER_MODAL = "Create Sticker Modal"),
+          (r2.IOS_TWO_FA_MODAL = "Two Factor Auth Modal"),
+          (r2.IOS_TWO_FA_EMAIL_VERIFICATION = "Two Factor Email Verification"),
+          (r2.IOS_TWO_FA_LANDING = "Two Factor Auth Landing"),
+          (r2.IOS_TWO_FA_SCAN = "Two Factor Auth Scan Code"),
+          (r2.IOS_TWO_FA_ENTER_CODE = "Two Factor Auth Enter Code"),
+          (r2.IOS_TWO_FA_SUCCESS = "Two Factor Auth Enable Success"),
+          (r2.IOS_TWO_FA_ADD_SMS = "Two Factor Auth Add SMS"),
+          (r2.IOS_TWO_FA_VERIFY_SMS = "Two Factor Auth Verify SMS"),
+          (r2.IOS_CANNOT_MANAGE_SUBSCRIPTION =
+            "iOS Cannot Manage Subscription"),
+          (r2.PREMIUM_GUILD_INVITE_SPLASH = "Premium Guild Invite Splash"),
+          (r2.PREMIUM_GUILD_PROGRESS_BAR = "Premium Guild Progress Bar"),
+          (r2.PREMIUM_GUILD_SUBSCRIBE_MODAL = "Premium Guild Subscribe Modal"),
+          (r2.PREMIUM_GUILD_SUBSCRIBE_CONFIRMATION_MODAL =
+            "Premium Guild Subscribe Confirmation Modal"),
+          (r2.PREMIUM_GUILD_UNSUBSCRIBE_MODAL =
+            "Premium Guild Unsubscribe Modal"),
+          (r2.PREMIUM_GUILD_PURCHASE_MODAL = "Premium Guild Purchase Modal"),
+          (r2.PREMIUM_GUILD_UPSELL_MODAL = "Premium Guild Upsell Modal"),
+          (r2.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_MODAL =
+            "Premium Guild Member Profile Upsell Modal"),
+          (r2.PREMIUM_CUSTOM_NOTIFICATION_SOUND_UPSELL_MODAL =
+            "Premium Custom Notification Sound Upsell"),
+          (r2.PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL =
+            "Premium Custom Notification Sound Settings Upsell"),
+          (r2.PREMIUM_PERKS_DEMO_UPSELL_MODAL =
+            "Premium Perks Demo Upsell Modal"),
+          (r2.PREMIUM_FOR_LATER_UPSELL_MODAL =
+            "Premium For Later Upsell Modal"),
+          (r2.FOR_LATER_CREATE = "For Later Create"),
           (r2.SERVER_BANNER_TOOLTIP = "Server Banner Tooltip"),
-          (r2.THREAD_ARCHIVE_DURATION_DROPDOWN =
+          (r2.CHANNEL_NOTICE = "Channel Notice"),
+          (r2.CHANNEL_ACTION_SHEET = "Channel Action Sheet"),
+          (r2.CUSTOM_STATUS_MODAL = "Custom Status Modal"),
+          (r2.PAYMENT_AUTHENTICATION_MODAL = "Payment Authentication"),
+          (r2.NOISE_CANCELLATION_POPOUT = "Noise Cancellation Popout"),
+          (r2.IOS_AGE_GATE_MODAL = "iOS Public Server Age Gate"),
+          (r2.DESKTOP_AGE_GATE_MODAL = "Desktop Public Server Age Gate"),
+          (r2.CLAIM_ACCOUNT_MODAL = "Claim Account"),
+          (r2.STREAM_UPSELL_MODAL = "Stream Upsell Modal"),
+          (r2.FILE_UPLOAD_UPSELL_MODAL = "File Upload Upsell Modal"),
+          (r2.MESSAGE_LENGTH_UPSELL_MODAL = "Message Length Upsell Modal"),
+          (r2.USER_PROFILE = "User Profile"),
+          (r2.USER_PROFILE_MUTUAL_FRIENDS = "User Profile Mutual Friends"),
+          (r2.INBOX = "Inbox"),
+          (r2.CHANNEL = "Channel"),
+          (r2.MANAGE_ACCOUNTS_MODAL = "Manage Accounts Modal"),
+          (r2.VOICE_CHANNEL_EFFECTS_UPSELL_MODAL =
+            "Voice Channel Effects Upsell Modal"),
+          (r2.PREMIUM_TIER_0_ANNOUNCEMENT_MODAL =
+            "Premium Tier 0 Announcement Modal"),
+          (r2.BURST_REACTIONS_UPSELL_MODAL = "Burst Reactions Upsell Modal"),
+          (r2.BURST_REACTIONS_TOOLTIP = "Burst Reactions Tooltip"),
+          (r2.CONTACT_SYNC_NC_MODAL = "Contact Sync Notification Center Modal"),
+          (r2.MEDIA_VIEWER = "Media Viewer"),
+          (r2.MARKETING_FLOATING_CTA = "Marketing Floating CTA"),
+          (r2.PREMIUM_GIFT_SUCCESS_MODAL = "Premium Gifting Success Modal"),
+          (r2.CHANNEL_TEXT_AREA = "Channel Text Area"),
+          (r2.THREAD_TEXT_AREA = "THREAD_TEXT_AREA"),
+          (r2.TEXT_IN_VOICE = "TEXT_IN_VOICE"),
+          (r2.FORUM_CHANNEL_TEXT_AREA = "FORUM_CHANNEL_TEXT_AREA"),
+          (r2.CHANNEL_TEXT_AREA_AUTOCOMPLETE =
+            "Channel Text Area Autocomplete"),
+          (r2.CHANNEL_LIST = "Channel List"),
+          (r2.ACTIVITY_PANEL = "Activity Panel"),
+          (r2.MEMBER_LIST = "Member List"),
+          (r2.ACCOUNT_PANEL = "Account Panel"),
+          (r2.CHANNEL_WELCOME_CTA = "Channel Welcome CTA"),
+          (r2.CHANNEL_HEADER = "Channel Header"),
+          (r2.DIRECT_MESSAGE = "Direct Message"),
+          (r2.DM_INVITE = "DM_INVITE"),
+          (r2.ACTIVITY_FEED_GAME_POPOUT = "Game Popout"),
+          (r2.ACTIVITY_FEED_NOW_PLAYING = "Now Playing"),
+          (r2.ACTIVITY_FEED_NOW_PLAYING_HOVER_POPOUT =
+            "Now Playing Hover Popout"),
+          (r2.ACTIVITY_FEED_NOW_PLAYING_CONTEXT_MENU =
+            "Now Playing Context Menu"),
+          (r2.LIBRARY_INSTALL_MODULE = "Install Module"),
+          (r2.LIBRARY_APPLICATION_LIST = "Application List"),
+          (r2.LIBRARY_PREMIUM_APPLICATIONS = "Library Premium Applications"),
+          (r2.LIBRARY_GAME_MODAL = "Game Modal"),
+          (r2.LIBRARY_INVENTORY_CODE_REDEMPTION = "Code Redemption"),
+          (r2.LIBRARY_INVENTORY_GIFTS_LIST = "Gifts List"),
+          (r2.QUESTS = "Quests"),
+          (r2.GIFT_BANNER = "Gift Banner"),
+          (r2.STORE_LISTING_BUY_GAME = "Buy Game"),
+          (r2.STORE_LISTING_BUY = "Buy"),
+          (r2.SETTINGS_TEXT_PLAYGROUND = "Text Playground"),
+          (r2.SETTINGS_DESIGN_SYSTEMS = "Design Systems"),
+          (r2.SETTINGS_INTL_TESTING = "Intl Testing"),
+          (r2.SETTINGS_ACCOUNT = "My Account"),
+          (r2.SETTINGS_GAMES = "Games"),
+          (r2.SETTINGS_EDIT_ACCOUNT = "Edit Account"),
+          (r2.SETTINGS_CHANGE_USERNAME = "Change Username"),
+          (r2.SETTINGS_CHANGE_EMAIL = "Change Email"),
+          (r2.SETTINGS_CONFIRM_PASSWORD = "Confirm Password"),
+          (r2.SETTINGS_CHANGE_PASSWORD = "Change Password"),
+          (r2.SETTINGS_CUSTOMIZE_PROFILE = "Profile Customization"),
+          (r2.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT =
+            "Profile Customization Try It Out"),
+          (r2.SETTINGS_CUSTOMIZE_PROFILE_AVATAR =
+            "Profile Customization Avatar"),
+          (r2.SETTINGS_BACKUP_CODES = "Backup Codes"),
+          (r2.SETTINGS_CONFIRM_VIEW_BACKUP_CODES = "Confirm View Backup Codes"),
+          (r2.SETTINGS_PRIVACY_AND_SAFETY = "Privacy & Safety"),
+          (r2.SETTINGS_PRIVACY_AND_SAFETY_V2 = "Privacy & Safety V2"),
+          (r2.SETTINGS_CONTENT_AND_SOCIAL = "Content & Social"),
+          (r2.SETTINGS_DATA_AND_PRIVACY = "Data & Privacy"),
+          (r2.SETTINGS_ACCOUNT_STANDING = "Account Standing"),
+          (r2.SETTINGS_AUTHORIZED_APPS = "Authorized Apps"),
+          (r2.SETTINGS_CONNECTIONS = "Connections"),
+          (r2.SETTINGS_FRIEND_REQUESTS = "Friend Requests"),
+          (r2.SETTINGS_CONNECTIONS_XBOX = "Connections Xbox"),
+          (r2.SETTINGS_BILLING = "Billing"),
+          (r2.SETTINGS_SUBSCRIPTIONS = "Subscriptions"),
+          (r2.SETTINGS_PREMIUM = "Discord Nitro"),
+          (r2.SETTINGS_PREMIUM_BANNER = "Nitro Upsell Banner"),
+          (r2.SETTINGS_MOBILE_PREMIUM_BANNER = "Mobile Nitro Upsell Banner"),
+          (r2.SETTINGS_PREMIUM_MANAGE_PLAN = "Manage Nitro Plan"),
+          (r2.SETTINGS_PREMIUM_PLAN_SELECT = "Discord Premium Plan Select"),
+          (r2.SETTINGS_PREMIUM_GIFTING = "Nitro Gifting"),
+          (r2.GUILD_BOOSTING = "Nitro Server Boost"),
+          (r2.GUILD_ROLE_SUBSCRIPTION = "Guild Role Subscription"),
+          (r2.GUILD_ROLE_SUBSCRIPTION_CANCEL =
+            "Guild Role Subscription Cancel"),
+          (r2.SETTINGS_DATA = "Data"),
+          (r2.SETTINGS_HYPESQUAD_ONLINE = "Hypesquad Online"),
+          (r2.SETTINGS_VOICE_AND_VIDEO = "Voice & Video"),
+          (r2.SETTINGS_OVERLAY = "Overlay"),
+          (r2.SETTINGS_NOTIFICATIONS = "Notifications"),
+          (r2.SETTINGS_APP_ICONS = "App Icons"),
+          (r2.SETTINGS_EMAILS = "Email Settings"),
+          (r2.SETTINGS_KEYBINDS = "Keybinds"),
+          (r2.SETTINGS_ACTIVITY_PRIVACY = "Activity Privacy"),
+          (r2.SETTINGS_GAME_ACTIVITY = "Game Activity"),
+          (r2.SETTINGS_TEXT_AND_IMAGES = "Text & Images"),
+          (r2.SETTINGS_APPEARANCE = "Appearance"),
+          (r2.SETTINGS_APPEARANCE_THEME_PICKER = "Appearance Theme Picker"),
+          (r2.SETTINGS_APPEARANCE_APP_ICON_PICKER =
+            "Appearance App Icon Picker"),
+          (r2.SETTINGS_ACCESSIBILITY = "Accessibility"),
+          (r2.SETTINGS_STREAMER_MODE = "Streamer Mode"),
+          (r2.SETTINGS_LANGUAGE = "Language"),
+          (r2.SETTINGS_CHANGELOG = "Change Log"),
+          (r2.SETTINGS_EXPERIMENTS = "Experiments"),
+          (r2.SETTINGS_DEVELOPER_OPTIONS = "Developer Options"),
+          (r2.SETTINGS_HOTSPOT_OPTIONS = "Hotspot Options"),
+          (r2.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS =
+            "Dismissible Content Options"),
+          (r2.SETTINGS_WINDOWS = "Windows"),
+          (r2.SETTINGS_LINUX = "Linux"),
+          (r2.SETTINGS_BLOCKED_USERS = "Blocked Users"),
+          (r2.SETTINGS_INVENTORY = "Library Inventory"),
+          (r2.SETTINGS_DEBUG_LOGS = "Debug Logs"),
+          (r2.SETTINGS_FORCE_JS_CRASH = "Force JS Crash"),
+          (r2.SETTINGS_PUSH_NOTIFICATION_LOGS = "Push Notification Logs"),
+          (r2.SETTINGS_DATABASE_CONTROLS = "Database Controls"),
+          (r2.SETTINGS_STARTUP_TIMINGS = "Startup Timings"),
+          (r2.TEXT_COMPONENT = "Text Component"),
+          (r2.DESIGN_SYSTEM = "Design System"),
+          (r2.DESIGN_SYSTEM_TEXT = "Design System (Text)"),
+          (r2.DESIGN_SYSTEM_BUTTON = "Design System (Button)"),
+          (r2.DESIGN_SYSTEM_BUTTON_GROUP = "Design System (Button Group)"),
+          (r2.DESIGN_SYSTEM_ROW_BUTTON = "Design System (Row Button)"),
+          (r2.DESIGN_SYSTEM_EXPERIMENTAL_BUTTONS =
+            "Design System (Experimental Buttons)"),
+          (r2.DESIGN_SYSTEM_TABLE_ROW = "Design System (Table Row)"),
+          (r2.DESIGN_SYSTEM_ALERT_MODAL = "Design System (Alert Modal)"),
+          (r2.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW =
+            "Design System (Background Blur View)"),
+          (r2.DESIGN_SYSTEM_SHADOWS = "Design System (Shadows)"),
+          (r2.DESIGN_SYSTEM_SEGMENTED_CONTROL =
+            "Design System (Segmented Control)"),
+          (r2.DESIGN_SYSTEM_TABS = "Design System (Tabs)"),
+          (r2.DESIGN_SYSTEM_CONTEXT_MENU = "Design System (Context Menu)"),
+          (r2.DESIGN_SYSTEM_TOAST = "Design System (Toast)"),
+          (r2.DESIGN_SYSTEM_TEXT_INPUT = "Design System (Text Input)"),
+          (r2.DESIGN_SYSTEM_TOOLTIP = "Design System (Tooltip)"),
+          (r2.DESIGN_SYSTEM_COACHMARK = "Design System (Coachmark)"),
+          (r2.DESIGN_SYSTEM_STACK = "Design Systems (Stack)"),
+          (r2.DESIGN_SYSTEM_BACKDROP = "Design Systems (Backdrop)"),
+          (r2.DESIGN_SYSTEM_MODAL = "Design System (Modal)"),
+          (r2.DESIGN_SYSTEM_PILE = "Design Systems (Pile)"),
+          (r2.DESIGN_SYSTEM_SHEETS = "Design Systems (Sheets)"),
+          (r2.DESIGN_SYSTEM_FORM_PRIMITIVES =
+            "Design Systems (Form Primitives)"),
+          (r2.SETTINGS_ADVANCED = "Advanced"),
+          (r2.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE = "Payment Flow Modals"),
+          (r2.SETTINGS_SESSIONS = "Sessions"),
+          (r2.SETTINGS_FAMILY_CENTER = "Family Center"),
+          (r2.SETTINGS_CONTEXT_MENU = "Settings Context Menu"),
+          (r2.SETTINGS_CLIPS = "Settings Clips"),
+          (r2.SETTINGS_CUSTOM_STATUS = "Custom Status"),
+          (r2.SETTINGS_EDIT_PROFILE = "Edit Profile"),
+          (r2.SETTINGS_BROWSER = "Browser"),
+          (r2.SETTINGS_OVERVIEW = "Overview"),
+          (r2.SETTINGS_CUSTOM_STATUS_EMOJI_PICKER =
+            "Custom Status Emoji Picker"),
+          (r2.SETTINGS_DESKTOP_APP = "Desktop Only"),
+          (r2.SETTINGS_BUILD_OVERRIDE = "Build Override"),
+          (r2.SETTINGS_CHECK_NATIVE_UPDATE = "Check For Native Update"),
+          (r2.SETTINGS_INSTALL_NATIVE_UPDATE = "Install Native Build"),
+          (r2.SETTINGS_CHANGELOG_OVERRIDE = "Changelog Override"),
+          (r2.SETTINGS_SOUNDS = "Sounds"),
+          (r2.SETTINGS_CLIENT_THEMES = "Client Themes"),
+          (r2.SETTINGS_WEBAUTHN_VIEW = "View Security Keys"),
+          (r2.SETTINGS_PUBLIC_WELCOME = "Welcome Screen Settings"),
+          (r2.SETTINGS_POGGERMODE = "Powermode Settings"),
+          (r2.GUILD_ROLE_CREATION_MODAL = "Guild Role Creation Modal"),
+          (r2.GUILD_ROLE_TEMPLATE_POPOUT = "Guild Role Template Popout"),
+          (r2.GUILD_CREATE_MODAL = "Guild Create Modal"),
+          (r2.GUILD_SETTINGS_STICKERS = "Guild Stickers Settings"),
+          (r2.GUILD_SETTINGS_EMOJI = "Guild Emoji Settings"),
+          (r2.GUILD_SETTINGS_VANITY_URL = "Guild Vanity Url"),
+          (r2.GUILD_SETTINGS_ONBOARDING = "Guild Onboarding Settings"),
+          (r2.GUILD_SETTINGS_SOUNDBOARD = "Guild Soundboard Settings"),
+          (r2.MEMBER_SAFETY_PAGE = "Member Safety Page"),
+          (r2.GUILD_SETTINGS_MEMBERS = "guild settings members page"),
+          (r2.GUILD_ROLE_EDIT_UPSELL_MODAL = "Guild Role Edit Upsell Modal"),
+          (r2.APPLICATION_EMBED = "Application Embed"),
+          (r2.GIFT_CODE_EMBED = "Gift Code Embed"),
+          (r2.GIFT_CODE_ROW = "Gift Code Row"),
+          (r2.PREMIUM_GIFT_AVAILABLE_ALERT = "Premium Gift Available Alert"),
+          (r2.GUILD_LIST = "Guild List"),
+          (r2.GUILD_HEADER = "Guild Header"),
+          (r2.GUILD_HEADER_POPOUT = "Guild Header Popout"),
+          (r2.GUILD_INVITE_BACKGROUND = "Guild Invite Background"),
+          (r2.GUILD_BANNER = "Guild Banner"),
+          (r2.ANIMATED_GUILD_BANNER_UPSELL = "Animated Guild Banner Upsell"),
+          (r2.STREAM_VIEWER_POPOUT = "Stream Viewer Popout"),
+          (r2.STREAM_SETTINGS = "Stream Settings"),
+          (r2.STREAM_QUALITY_INDICATOR = "Stream Quality Indicator"),
+          (r2.DISCOVER_SEARCH = "Search"),
+          (r2.DISCOVER_GAMES_YOU_PLAY = "Games You Play"),
+          (r2.DISCOVER_POPULAR = "Popular"),
+          (r2.DISCOVER_COLLECTION_GAMING = "Gaming"),
+          (r2.DISCOVER_COLLECTION_COMICS_HEROES = "Comics / Heroes"),
+          (r2.DISCOVER_COLLECTION_ANIME = "Anime"),
+          (r2.DISCOVER_COLLECTION_MUSIC = "Music"),
+          (r2.DISCOVER_COLLECTION_ESPORTS = "electronic-Sports"),
+          (r2.DISCOVERY_SETUP_MODAL = "Discovery Setup Modal"),
+          (r2.DISCOVERY_SETUP_SUCCESS_MODAL = "Discovery Setup Success Modal"),
+          (r2.PREMIUM_GUILD_USER_MODAL_CTA_BAR = "CTA Bar"),
+          (r2.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR = "Floating CTA Bar"),
+          (r2.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR = "Progress Bar"),
+          (r2.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA = "Boost Any Guild CTA"),
+          (r2.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA =
+            "Recommended Server Boost This Server CTA"),
+          (r2.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA =
+            "Recommended Server Go To Server CTA"),
+          (r2.ICYMI_RECOMMENDED_SERVERS = "Recommended Servers"),
+          (r2.REGISTER = "Register"),
+          (r2.LOGIN = "Login"),
+          (r2.OVERLAY = "Overlay"),
+          (r2.STICKERS_SHOP = "Stickers Shop"),
+          (r2.STICKER_PACK_VIEW_ALL = "Sticker Pack View All"),
+          (r2.STICKER_PICKER_UPSELL = "Sticker Picker Upsell"),
+          (r2.STICKER_PREMIUM_TIER_2_UPSELL_MODAL =
+            "Stickers Nitro Upsell Modal"),
+          (r2.STICKER_PREMIUM_TIER_1_UPSELL_MODAL =
+            "Stickers Nitro Classic Upsell Modal"),
+          (r2.STICKER_POPOUT = "Sticker Popout"),
+          (r2.EXPRESSION_PICKER = "Expression Picker"),
+          (r2.STANDALONE_VIDEO_PLAYER = "Standalone Video Player"),
+          (r2.SUPER_REACTION_PICKER = "Super Reaction Picker"),
+          (r2.SOUNDBOARD_SOUND_PICKER = "Soundboard Sound Picker"),
+          (r2.SOUNDBOARD_SOUND_PICKER_UPSELL =
+            "Soundboard Sound Picker Upsell"),
+          (r2.CONTACT_SYNC_MODAL = "Contact Sync"),
+          (r2.CONTACT_SYNC_EMPTY_CTA = "Contact Sync Empty CTA"),
+          (r2.HUB_WELCOME_CTA = "Hub Welcome CTA"),
+          (r2.GUILD_CAP_UPSELL_MODAL = "Guild Cap Upsell Modal"),
+          (r2.CHAT_USERNAME = "Chat Username"),
+          (r2.GUILD_DROPDOWN_MENU = "Guild Dropdown Menu"),
+          (r2.PREMIUM_GUILD_MEMBER_PROFILE =
+            "Edit Premium Guild Member Profile"),
+          (r2.CREATE_THREAD_SIDEBAR = "Create Thread Sidebar"),
+          (r2.THREAD_ARCHIVAL_DURATION_SHEET =
+            "Thread Archival Duration Sheet"),
+          (r2.THREAD_CREATION_OPTIONS = "Thread Creation Options"),
+          (r2.THREAD_CONTEXT_MENU = "Thread Context Menu"),
+          (r2.THREAD_MEMBER_LIST = "Thread Member List"),
+          (r2.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL =
+            "Upload File or Choose GIF Modal"),
+          (r2.GIF_PICKER_AVATAR_OR_BANNER_MODAL = "GIF Picker Modal"),
+          (r2.CROP_GIF_MODAL = "Crop GIF Modal"),
+          (r2.CUSTOM_ROLE_ICONS_TOOLTIP = "Custom Role Icons Tooltip"),
+          (r2.GUILD_BOTTOM_SHEET = "Guild Bottom Sheet"),
+          (r2.USER_BOTTOM_SHEET = "User Bottom Sheet"),
+          (r2.MARKETING_BOTTOM_SHEET = "Marketing Bottom Sheet"),
+          (r2.PURCHASE_SINGLE_PREMIUM_GUILD_SUBSCRIPTION = "Buy Single Boosts"),
+          (r2.PREMIUM_GUILD_SUBSCRIPTION_TIER_1 =
+            "Premium Guild Subscription Tier 1"),
+          (r2.PREMIUM_GUILD_SUBSCRIPTION_TIER_2 =
+            "Premium Guild Subscription Tier 2"),
+          (r2.PREMIUM_GUILD_SUBSCRIPTION_TIER_3 =
+            "Premium Guild Subscription Tier 3"),
+          (r2.NITRO_CROSS_PROMO_FROM_BOOSTING =
+            "Nitro Cross Promo From Boosting"),
+          (r2.SCHEDULED_GUILD_EVENT_INFORMATION_DIALOG =
+            "Scheduled Guild Event Information Dialog"),
+          (r2.FRIENDS_LIST = "Friends List"),
+          (r2.FRIENDS_ADD_FRIENDS_MODAL = "Add Friends Modal"),
+          (r2.FRIENDS_ADD_FRIENDS_MODAL_SEARCH = "Add Friends Modal Search"),
+          (r2.FRIENDS_ADD_BY_USERNAME_MODAL = "Add by Username Modal"),
+          (r2.FRIENDS_REQUESTS_MODAL = "Friend Requests Modal"),
+          (r2.FRIENDS_SUGGESTED_FRIENDS_MODAL = "Suggested Friends Modal"),
+          (r2.FRIENDS_LIST_FRIEND_ROW = "Friend Row"),
+          (r2.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT = "Friend Row Gift Popout"),
+          (r2.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW =
+            "Guild Member Verification Application Review"),
+          (r2.GUILD_MEMBER_VERIFICATION_APPLICATION_INTERVIEW =
+            "Guild Member Verification Application Interview"),
+          (r2.ACTIVE_NOW_COLUMN = "Active Now Column"),
+          (r2.GUILD_CHANNEL_LIST = "Guild Channel List"),
+          (r2.INVITE_LINK = "Invite Link"),
+          (r2.RTC_CONNECTION_PANEL = "RTC Connection Panel"),
+          (r2.VOICE_CHANNEL_TILE = "Voice Channel Tile"),
+          (r2.VOICE_CONTROL_TRAY = "Voice Control Tray"),
+          (r2.EMBEDDED_ACTIVITY_LAUNCH_FAIL = "Embedded Activity Launch Fail"),
+          (r2.FOCUS_EXPANDED_CONTROLS = "Focus Expanded Controls"),
+          (r2.CHANNEL_CALL_ACTION_BAR = "Channel Call Action Bar"),
+          (r2.ACTIVITY_SHELF = "Activity Shelf"),
+          (r2.ACTIVITY_UPSELL_ACTION_SHEET = "Activity Upsell Action Sheet"),
+          (r2.AGGREGATE_PREMIUM_UPSELL_MODAL =
+            "Aggregate Premium Upsell Modal"),
+          (r2.VOICE_CHANNEL_EFFECTS_BAR = "Voice Channel Effect Emoji Hotbar"),
+          (r2.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER =
+            "Voice Channel Effect Emoji Picker"),
+          (r2.PREMIUM_MARKETING_SURFACE_SIDEBAR =
+            "Premium Marketing Surface Sidebar"),
+          (r2.CHANNEL_BROWSER = "Channel Browser"),
+          (r2.FORUM_CHANNEL_POST = "Forum Channel Post"),
+          (r2.FORUM_CHANNEL_HEADER = "Forum Channel Header"),
+          (r2.FORUM_CHANNEL_FOOTER = "Forum Channel Footer"),
+          (r2.FORUM_CHANNEL_GUIDELINES = "Forum Channel Guidelines"),
+          (r2.FORUM_POST_HEADER = "Forum Post Header"),
+          (r2.NOTIFICATION_CENTER = "Notification Center"),
+          (r2.STAGE_VIDEO_LIMIT = "Stage Video Limit"),
+          (r2.CHANNEL_PIN = "Channel Pin"),
+          (r2.CHANNEL_SETTINGS = "Channel Settings"),
+          (r2.CHANNEL_SEARCH = "Channel Search"),
+          (r2.NEW_MESSAGE_COMPOSER = "New Message Composer"),
+          (r2.FAMILY_CENTER = "Family Center"),
+          (r2.ADD_PRIVATE_CHANNEL_INTEGRATION_MODAL =
+            "Add Private Channel Integration Modal"),
+          (r2.REMIX_UPSELL_ACTIONSHEET = "Remix Upsell Actionsheet"),
+          (r2.COMMUNITY_ALERTS = "Community Alerts Settings"),
+          (r2.HIGHLIGHT_NOTIFICATIONS = "Highlight notification settings"),
+          (r2.SUMMARY_ACTION_SHEET = "Summary Action Sheet"),
+          (r2.COLLECTIBLES_SHOP_DETAILS_MODAL =
+            "Collectibles Shop Details Modal"),
+          (r2.PROFILE_EFFECT_CUSTOMIZATION = "Profile Effect Customization"),
+          (r2.COLLECTIBLES_SHOP = "Shop"),
+          (r2.SHOP_PRODUCT_DETAILS = "Shop Product Details"),
+          (r2.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS =
+            "Collectibles Shop View All Category Items"),
+          (r2.PROFILE_EFFECTS_PREVIEW_TOOL = "Profile Effects Preview Tool"),
+          (r2.APPEAL_INGESTION_SPEED_BUMP = "Appeal Ingestion Speed Bump"),
+          (r2.APPEAL_INGESTION_COLLECT_SIGNAL =
+            "Appeal Ingestion Collect Signal"),
+          (r2.APPEAL_INGESTION_REQUEST_REVIEW =
+            "Appeal Ingestion Request a Review"),
+          (r2.APPEAL_INGESTION_WHY_DISAGREE =
+            "Appeal Ingestion Why do you Disagree?"),
+          (r2.APPEAL_INGESTION_FREE_TEXT = "Appeal Ingestion Free Text"),
+          (r2.APPEAL_INGESTION_CONFIRM_SUBMISSION =
+            "Appeal Ingestion Confirm Submission"),
+          (r2.APPEAL_INGESTION_REQUEST_SENT = "Appeal Ingestion Request Sent"),
+          (r2.APPEAL_INGESTION_THANKS = "Appeal Ingestion Thanks"),
+          (r2.APPEAL_INGESTION_SPAM = "Appeal Ingestion Spam"),
+          (r2.SETTINGS_SURVEY_OVERRIDE = "Survey Override"),
+          (r2.QUEST_PREVIEW_TOOL = "Quest Preview Tool"),
+          (r2.SECURE_FRAMES_STREAM_BOTTOM_SHEET =
+            "Secure Frames Stream Bottom Sheet"),
+          (r2.SECURE_FRAMES_VOICE_BOTTOM_SHEET =
+            "Secure Frames Voice Bottom Sheet"),
+          (r2.SECURE_FRAMES_VERIFIED_DEVICES =
+            "Secure Frames Verified Devices"),
+          (r2.SECURE_FRAMES = "Secure Frames"),
+          (r2.REVERSE_TRIAL_UPSELL_MODAL = "Reverse trial Upsell Modal"),
+          (r2.WEB_SETTING_TREE_TOOL = "Web Setting Tree Tool"),
+          ((r3 = eT || (eT = {})).TOOLTIP = "Tooltip"),
+          (r3.CARD = "Card"),
+          (r3.CAROUSEL = "Carousel"),
+          (r3.NAVIGATION_LINK = "Nav Link"),
+          (r3.SUBSCRIBE_TO_TIER_BUTTON = "Subscribe up to Tier Button"),
+          (r3.BUTTON_BROWSE = "Button Browse"),
+          (r3.BUTTON_HOME = "Button Home"),
+          (r3.BUTTON_BACK = "Button Back"),
+          (r3.BUTTON_CTA = "Button CTA"),
+          (r3.BUTTON_ICON = "Button Icon"),
+          (r3.MENU_LINK = "Menu Link"),
+          (r3.WEB_URL = "Web URL"),
+          (r3.LIST_ITEM = "List Item"),
+          (r3.RADIO_ITEM = "Radio Item"),
+          (r3.CONTEXT_MENU = "Context Menu"),
+          (r3.CONTEXT_MENU_ITEM = "Context Menu Item"),
+          (r3.SEARCH = "Search"),
+          (r3.ALTERNATIVE_SKU = "Alternative Sku"),
+          (r3.HOVER_MENU = "Hover Menu"),
+          (r3.AVATAR = "Avatar"),
+          (r3.ANIMATED_AVATAR = "Animated Avatar"),
+          (r3.EDIT_GUILD_PROFILE_AVATAR = "Edit Guild Profile Avatar"),
+          (r3.CHANNEL = "Channel"),
+          (r3.CHANNEL_TAG = "Channel Tag"),
+          (r3.BADGE = "Badge"),
+          (r3.STICKER_SEARCH_VIEW_ALL = "Sticker Search View All"),
+          (r3.STICKER_PICKER_VIEW_ALL = "Sticker Picker View All"),
+          (r3.STICKER_POPOUT_VIEW_ALL = "Sticker Popout View All"),
+          (r3.STICKER_PICKER_PURCHASE_BUTTON =
+            "Sticker Picker Purchase Button"),
+          (r3.STICKER_PICKER_UPSELL_BUTTON = "Sticker Picker Upsell Button"),
+          (r3.STICKER_POPOUT_PURCHASE_BUTTON =
+            "Sticker Popout Purchase Button"),
+          (r3.NUDGED_STICKER = "Nudged Sticker"),
+          (r3.EXPRESSION_SUGGESTIONS = "Expression Suggestions"),
+          (r3.STICKER = "Sticker"),
+          (r3.EMOJI = "Emoji"),
+          (r3.SOUNDBOARD_SOUND = "Soundboard Sound"),
+          (r3.EDIT_PER_SERVER_IDENTITY = "Edit Per Server Identity"),
+          (r3.EDIT_PROFILE_BANNER = "Edit Profile Banner"),
+          (r3.EDIT_GUILD_PROFILE_BANNER = "Edit Guild Profile Banner"),
+          (r3.BOOSTING_BANNER = "Boosting Banner"),
+          (r3.BOOST_LEVEL_UPSELL_BUTTON = "Boost Level Upsell Button"),
+          (r3.BOOST_UPSELL_LOST_LEVEL_HEADER =
+            "Boost Upsell Lost Level Header"),
+          (r3.BOOST_UPSELL_NEXT_LEVEL_HEADER =
+            "Boost Upsell Next Level Header"),
+          (r3.BOOST_UPSELL_BANNER_LOST_LEVEL =
+            "Boost Upsell Banner for Lost Level"),
+          (r3.BOOST_UPSELL_BANNER_SLOTS_FULL =
+            "Boost Upsell Banner for Slots Full"),
+          (r3.BOOST_GEM_ICON = "Boost Gem Icon"),
+          (r3.BOOST_ANNOUNCEMENT_UPSELL = "Boost Announcement Upsell"),
+          (r3.PRIVATE_THREAD_CHECKBOX = "Private Thread Checkbox"),
+          (r3.LEARN_MORE = "Learn More"),
+          (r3.UPLOAD_IMAGE = "Upload Image"),
+          (r3.PREMIUM_UPSELL_BUTTON = "Nitro upsell button"),
+          (r3.PREMIUM_UPSELL_BANNER = "Nitro upsell banner"),
+          (r3.PREMIUM_SUBSCRIPTION_PAYMENT_FLOW_COMPLETED =
+            "Nitro Payment Flow Completed"),
+          (r3.PREMIUM_SUBSCRIPTION = "Discord Nitro"),
+          (r3.PREMIUM_GUILD_SUBSCRIPTION = "Server Boost"),
+          (r3.PREMIUM_GUILD_SUBSCRIPTION_WITH_PREMIUM_SUBSCRIPTION =
+            "Server Boost (Has Nitro)"),
+          (r3.GIF_CROPPING_MODAL = "GIF Cropping Modal"),
+          (r3.IMAGE_CROPPING_MODAL = "Image Cropping Modal"),
+          (r3.UPSELL_HEADER = "Upsell Header"),
+          (r3.TRY_IT_CTA = "Try It CTA"),
+          (r3.SEASONAL_BUTTON_ICON = "Seasonal button icon"),
+          (r3.NITROWEEN_BUTTON_ICON = "Nitroween button icon"),
+          (r3.ACTIONED_BY_USER = "Actioned By User"),
+          (r3.JOIN_REQUEST = "Join Request"),
+          (r3.SERVER_BANNER_TOOLTIP = "Server Banner Tooltip"),
+          (r3.THREAD_ARCHIVE_DURATION_DROPDOWN =
             "Thread Archive Duration Dropdown"),
-          (r2.BOOST_SERVER_CTA = "Boost This Server CTA"),
-          (r2.SERVER_STATUS_CTA = "See Server Status CTA"),
-          (r2.ACTIVITIES_BOOSTING_UPSELL = "ACTIVITIES_BOOSTING_UPSELL"),
-          (r2.ACTIVITIES_NITRO_UPSELL = "ACTIVITIES_NITRO_UPSELL"),
-          (r2.ACTIVITY_SHELF = "ACTIVITY_SHELF"),
-          (r2.ACTIVITY_NITRO_HOST_LEFT_UPSELL =
+          (r3.BOOST_SERVER_CTA = "Boost This Server CTA"),
+          (r3.SERVER_STATUS_CTA = "See Server Status CTA"),
+          (r3.ACTIVITIES_BOOSTING_UPSELL = "ACTIVITIES_BOOSTING_UPSELL"),
+          (r3.ACTIVITIES_NITRO_UPSELL = "ACTIVITIES_NITRO_UPSELL"),
+          (r3.ACTIVITY_SHELF = "ACTIVITY_SHELF"),
+          (r3.ACTIVITY_NITRO_HOST_LEFT_UPSELL =
             "ACTIVITY_NITRO_HOST_LEFT_UPSELL"),
-          (r2.ACTIVITIES_COACH_MARK = "ACTIVITIES_COACH_MARK"),
-          (r2.VOICE_CHANNEL_EFFECTS_COACH_MARK =
+          (r3.ACTIVITIES_COACH_MARK = "ACTIVITIES_COACH_MARK"),
+          (r3.VOICE_CHANNEL_EFFECTS_COACH_MARK =
             "VOICE_CHANNEL_EFFECTS_COACHMARK"),
-          (r2.VOICE_CHANNEL_EFFECTS_TOGGLE = "VOICE_CHANNEL_EFFECTS_TOGGLE"),
-          (r2.BURST_REACTION_TOGGLE = "BURST_REACTION_TOGGLE"),
-          (r2.ONBOARDING_EDIT = "ONBOARDING_EDIT"),
-          (r2.ONBOARDING_REVIEW = "ONBOARDING_REVIEW"),
-          (r2.FORUM_ACTION_BAR = "FORUM_ACTION_BAR"),
-          (r2.FORUM_GRID_ITEM_FOOTER = "FORUM_GRID_ITEM_FOOTER"),
-          (r2.FORUM_LIST_ITEM_FOOTER = "FORUM_LIST_ITEM_FOOTER"),
-          (r2.MESSAGE_ACTION_SHEET = "MESSAGE_ACTION_SHEET"),
-          (r2.MESSAGE = "MESSAGE"),
-          (r2.CHANNEL_PIN = "CHANNEL_PIN"),
-          (r2.CHANNEL_SEARCH = "CHANNEL_SEARCH"),
-          (r2.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
-          (r2.REACTION_RAIL = "REACTION_RAIL"),
-          (r2.EMOJI_REACTION_PICKER_POPOUT = "EMOJI_REACTION_PICKER_POPOUT"),
-          (r2.EMOJI_REACTION_UPSELL = "EMOJI_REACTION_UPSELL"),
-          (r2.EMOJI_REACTION_TOOLTIP_UPSELL = "EMOJI_REACTION_TOOLTIP_UPSELL"),
-          (r2.EMOJI_PICKER_FLOATING_UPSELL = "EMOJI_PICKER_FLOATING_UPSELL"),
-          (r2.INLINE_REACTION_PICKER_UPSELL = "INLINE_REACTION_PICKER_UPSELL"),
-          (r2.EMOJI_REACTION_PICKER_POPOUT_UPSELL =
+          (r3.VOICE_CHANNEL_EFFECTS_TOGGLE = "VOICE_CHANNEL_EFFECTS_TOGGLE"),
+          (r3.BURST_REACTION_TOGGLE = "BURST_REACTION_TOGGLE"),
+          (r3.ONBOARDING_EDIT = "ONBOARDING_EDIT"),
+          (r3.ONBOARDING_REVIEW = "ONBOARDING_REVIEW"),
+          (r3.FORUM_ACTION_BAR = "FORUM_ACTION_BAR"),
+          (r3.FORUM_GRID_ITEM_FOOTER = "FORUM_GRID_ITEM_FOOTER"),
+          (r3.FORUM_LIST_ITEM_FOOTER = "FORUM_LIST_ITEM_FOOTER"),
+          (r3.MESSAGE_ACTION_SHEET = "MESSAGE_ACTION_SHEET"),
+          (r3.MESSAGE = "MESSAGE"),
+          (r3.CHANNEL_PIN = "CHANNEL_PIN"),
+          (r3.CHANNEL_SEARCH = "CHANNEL_SEARCH"),
+          (r3.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
+          (r3.REACTION_RAIL = "REACTION_RAIL"),
+          (r3.EMOJI_REACTION_PICKER_POPOUT = "EMOJI_REACTION_PICKER_POPOUT"),
+          (r3.EMOJI_REACTION_UPSELL = "EMOJI_REACTION_UPSELL"),
+          (r3.EMOJI_REACTION_TOOLTIP_UPSELL = "EMOJI_REACTION_TOOLTIP_UPSELL"),
+          (r3.EMOJI_PICKER_FLOATING_UPSELL = "EMOJI_PICKER_FLOATING_UPSELL"),
+          (r3.INLINE_REACTION_PICKER_UPSELL = "INLINE_REACTION_PICKER_UPSELL"),
+          (r3.EMOJI_REACTION_PICKER_POPOUT_UPSELL =
             "EMOJI_REACTION_PICKER_POPOUT_UPSELL"),
-          (r2.REACTION_RIGHT_CLICK_MENU_UPSELL =
+          (r3.REACTION_RIGHT_CLICK_MENU_UPSELL =
             "REACTION_RIGHT_CLICK_MENU_UPSELL"),
-          (r2.NOTIFICATION_SETTING_UNREAD_NOTICE =
+          (r3.NOTIFICATION_SETTING_UNREAD_NOTICE =
             "NOTIFICATION_SETTING_UNREAD_NOTICE"),
-          (r2.FORWARD_BREADCRUMB = "FORWARD_BREADCRUMB"),
-          (r2.REMIXING_ACTION_SHEET_UPSELL = "REMIXING_ACTION_SHEET_UPSELL"),
-          (r2.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
-          (r2.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
-          (r2.APP_COMMAND = "APP_COMMAND"),
+          (r3.FORWARD_BREADCRUMB = "FORWARD_BREADCRUMB"),
+          (r3.REMIXING_ACTION_SHEET_UPSELL = "REMIXING_ACTION_SHEET_UPSELL"),
+          (r3.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
+          (r3.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
+          (r3.APP_COMMAND = "APP_COMMAND"),
           ((r6 = ed || (ed = {})).GIFT = "gift"),
           (r6.BUY = "buy"),
           (r6.BOX_ART = "box_art"),
@@ -9300,13 +9300,13 @@
               "https://play.google.com/store/apps/details?id=com.discord",
           }),
           o1 = 10070709,
-          o3 = [
+          o2 = [
             1752220, 3066993, 3447003, 10181046, 15277667, 15844367, 15105570,
             15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530,
             11342935, 12745742, 11027200, 10038562, 9936031, 5533306,
           ],
-          o2 = (0, aH._i)(ay.Z.BRAND_500);
-        aG()(null != o2, "Brand color could not be parsed"),
+          o3 = (0, aH._i)(ay.Z.BRAND_500);
+        aG()(null != o3, "Brand color could not be parsed"),
           ((nc = ey || (ey = {})).ROLE = "ROLE"),
           (nc.MEMBER = "MEMBER"),
           ((nI = ev || (ev = {})).VOICE_LEGACY_SUBSYSTEM =
@@ -11043,7 +11043,7 @@
           (nG.GUILD_SOUNDBOARD = "GUILD_SOUNDBOARD"),
           (nG.HOME_SETTINGS = "HOME_SETTINGS"),
           (nG.VOICE_CHANNEL_STATUS = "VOICE_CHANNEL_STATUS"),
-          ((ny = e3 || (e3 = {})).NAME = "name"),
+          ((ny = e2 || (e2 = {})).NAME = "name"),
           (ny.DESCRIPTION = "description"),
           (ny.ICON_HASH = "icon_hash"),
           (ny.SPLASH_HASH = "splash_hash"),
@@ -11175,7 +11175,7 @@
           (ny.IS_CANCELED = "is_canceled"),
           (ny.LINKED_LOBBY = "linked_lobby");
         let ii = 50;
-        ((nv = e2 || (e2 = {})).AGREEMENTS = "AGREEMENTS"),
+        ((nv = e3 || (e3 = {})).AGREEMENTS = "AGREEMENTS"),
           (nv.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA"),
           (nv.REQUIRE_VERIFIED_EMAIL = "REQUIRE_VERIFIED_EMAIL"),
           (nv.REQUIRE_VERIFIED_PHONE = "REQUIRE_VERIFIED_PHONE"),
@@ -11508,20 +11508,20 @@
           (n0.LAST_PLAYED = "last_played"),
           ((n1 = tT || (tT = {})).ASCENDING = "asc"),
           (n1.DESCENDING = "desc"),
-          ((n3 = td || (td = {})).WINDOWS = "1"),
-          (n3.MACOS = "2"),
-          (n3.LINUX = "3"),
-          ((n2 = tN || (tN = {}))[(n2.PURCHASE = 1)] = "PURCHASE"),
-          (n2[(n2.PREMIUM_SUBSCRIPTION = 2)] = "PREMIUM_SUBSCRIPTION"),
-          (n2[(n2.DEVELOPER_GIFT = 3)] = "DEVELOPER_GIFT"),
-          (n2[(n2.TEST_MODE_PURCHASE = 4)] = "TEST_MODE_PURCHASE"),
-          (n2[(n2.FREE_PURCHASE = 5)] = "FREE_PURCHASE"),
-          (n2[(n2.USER_GIFT = 6)] = "USER_GIFT"),
-          (n2[(n2.PREMIUM_PURCHASE = 7)] = "PREMIUM_PURCHASE"),
-          (n2[(n2.APPLICATION_SUBSCRIPTION = 8)] = "APPLICATION_SUBSCRIPTION"),
-          (n2[(n2.FREE_STAFF_PURCHASE = 9)] = "FREE_STAFF_PURCHASE"),
-          (n2[(n2.QUEST_REWARD = 10)] = "QUEST_REWARD"),
-          (n2[(n2.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
+          ((n2 = td || (td = {})).WINDOWS = "1"),
+          (n2.MACOS = "2"),
+          (n2.LINUX = "3"),
+          ((n3 = tN || (tN = {}))[(n3.PURCHASE = 1)] = "PURCHASE"),
+          (n3[(n3.PREMIUM_SUBSCRIPTION = 2)] = "PREMIUM_SUBSCRIPTION"),
+          (n3[(n3.DEVELOPER_GIFT = 3)] = "DEVELOPER_GIFT"),
+          (n3[(n3.TEST_MODE_PURCHASE = 4)] = "TEST_MODE_PURCHASE"),
+          (n3[(n3.FREE_PURCHASE = 5)] = "FREE_PURCHASE"),
+          (n3[(n3.USER_GIFT = 6)] = "USER_GIFT"),
+          (n3[(n3.PREMIUM_PURCHASE = 7)] = "PREMIUM_PURCHASE"),
+          (n3[(n3.APPLICATION_SUBSCRIPTION = 8)] = "APPLICATION_SUBSCRIPTION"),
+          (n3[(n3.FREE_STAFF_PURCHASE = 9)] = "FREE_STAFF_PURCHASE"),
+          (n3[(n3.QUEST_REWARD = 10)] = "QUEST_REWARD"),
+          (n3[(n3.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
           ((n6 = tp || (tp = {})).ESRB = "1"),
           (n6.PEGI = "2"),
           ((n5 = tO || (tO = {}))[(n5.DURABLE_PRIMARY = 1)] =
@@ -12459,7 +12459,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-493d3f61c15c391350f1562421e29309a59c70b2",
+            release: "discord_web-4cd3e20c9acc565a8e405b524676225921a18afe",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12528,8 +12528,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            i.YA("buildNumber", ((e = "334264"), "334264"));
-          i.YA("builtAt", String("1728495598622"));
+            i.YA("buildNumber", ((e = "334269"), "334269"));
+          i.YA("builtAt", String("1728496528769"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) i.YA(e, t[e]);
           return _;
@@ -23828,8 +23828,8 @@
               },
               e0 = _.unpack,
               e1 = _.unpack,
-              e3 = _.type,
-              e2 = function () {
+              e2 = _.type,
+              e3 = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = eX(e, "rgb"),
@@ -23837,10 +23837,10 @@
                 return eW(n[0], n[1], n[2]);
               };
             (u.prototype.lch = function () {
-              return e2(this._rgb);
+              return e3(this._rgb);
             }),
               (u.prototype.hcl = function () {
-                return e2(this._rgb).reverse();
+                return e3(this._rgb).reverse();
               }),
               (l.lch = function () {
                 for (var e = [], t = arguments.length; t--; )
@@ -23871,7 +23871,7 @@
                   test: function () {
                     for (var t = [], r = arguments.length; r--; )
                       t[r] = arguments[r];
-                    if ("array" === e3((t = e1(t, e))) && 3 === t.length)
+                    if ("array" === e2((t = e1(t, e))) && 3 === t.length)
                       return e;
                   },
                 });
@@ -25026,8 +25026,8 @@
               ));
             for (
               var t1 = _.type,
-                t3 = _.clip_rgb,
-                t2 = _.TWOPI,
+                t2 = _.clip_rgb,
+                t3 = _.TWOPI,
                 t6 = Math.pow,
                 t5 = Math.sin,
                 t4 = Math.cos,
@@ -25670,13 +25670,13 @@
                   i = 0;
                 "array" === t1(a) ? (o = a[1] - a[0]) : ((o = 0), (a = [a, a]));
                 var _ = function (_) {
-                  var E = t2 * ((e + 120) / 360 + t * _),
+                  var E = t3 * ((e + 120) / 360 + t * _),
                     s = t6(a[0] + o * _, n),
                     c = ((0 !== i ? r[0] + _ * i : r) * s * (1 - s)) / 2,
                     I = t4(E),
                     u = t5(E);
                   return l(
-                    t3([
+                    t2([
                       255 * (s + c * (-0.14861 * I + 1.78277 * u)),
                       255 * (s + c * (-0.29227 * I - 0.90649 * u)),
                       255 * (s + 1.97294 * I * c),
@@ -40287,8 +40287,8 @@ ${eQ}
           e0 =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/screenshot/components/ScreenshotEditor.tsx",
           e1 = 33,
-          e3 = s.devicePixelRatio,
-          e2 = (e) => ({
+          e2 = s.devicePixelRatio,
+          e3 = (e) => ({
             x: Math.min(e.startX, e.endX),
             y: Math.min(e.startY, e.endY),
             width: Math.abs(e.startX - e.endX),
@@ -40482,14 +40482,14 @@ ${eQ}
                       [N, p] = t.useState(!1);
                     function O() {
                       let e = l.current,
-                        t = e2(e6(r));
+                        t = e3(e6(r));
                       if (e) {
-                        (e.width = t.width * e3),
-                          (e.height = t.height * e3),
+                        (e.width = t.width * e2),
+                          (e.height = t.height * e2),
                           (e.style.width = `${t.width}px`),
                           (e.style.height = `${t.height}px`);
                         let r = e.getContext("2d");
-                        r && r.scale(e3, e3);
+                        r && r.scale(e2, e2);
                       }
                       let n = u.current;
                       n &&
@@ -40522,8 +40522,8 @@ ${eQ}
                         if (!e) return;
                         let t = e.getContext("2d");
                         if (!t) return;
-                        let n = e2(e6(r)),
-                          a = e2(R);
+                        let n = e3(e6(r)),
+                          a = e3(R);
                         t.clearRect(0, 0, n.width, n.height),
                           (t.fillStyle = "rgba(0, 0, 0, 0.5)"),
                           t.fillRect(0, 0, n.width, n.height),
@@ -40565,7 +40565,7 @@ ${eQ}
                                 A((e) => ({
                                   ...e,
                                   endX: Math.max(
-                                    Math.min(a, r.width / e3),
+                                    Math.min(a, r.width / e2),
                                     e.startX + e1,
                                   ),
                                   startY: Math.min(Math.max(0, o), e.endY - e1),
@@ -40576,7 +40576,7 @@ ${eQ}
                                   ...e,
                                   startX: Math.min(Math.max(0, a), e.endX - e1),
                                   endY: Math.max(
-                                    Math.min(o, r.height / e3),
+                                    Math.min(o, r.height / e2),
                                     e.startY + e1,
                                   ),
                                 }));
@@ -40585,11 +40585,11 @@ ${eQ}
                                 A((e) => ({
                                   ...e,
                                   endX: Math.max(
-                                    Math.min(a, r.width / e3),
+                                    Math.min(a, r.width / e2),
                                     e.startX + e1,
                                   ),
                                   endY: Math.max(
-                                    Math.min(o, r.height / e3),
+                                    Math.min(o, r.height / e2),
                                     e.startY + e1,
                                   ),
                                 }));
@@ -40670,14 +40670,14 @@ ${eQ}
                                           0,
                                           Math.min(
                                             a.startX + r,
-                                            t.width / e3 - (a.endX - a.startX),
+                                            t.width / e2 - (a.endX - a.startX),
                                           ),
                                         ),
                                         i = Math.max(
                                           0,
                                           Math.min(
                                             a.startY + n,
-                                            t.height / e3 - (a.endY - a.startY),
+                                            t.height / e2 - (a.endY - a.startY),
                                           ),
                                         ),
                                         _ = o + (a.endX - a.startX),
@@ -40762,8 +40762,8 @@ ${eQ}
                                         A({
                                           startX: 0,
                                           startY: 0,
-                                          endX: l.current.width / e3,
-                                          endY: l.current.height / e3,
+                                          endX: l.current.width / e2,
+                                          endY: l.current.height / e2,
                                         }),
                                       d(!1);
                                   },
@@ -40780,10 +40780,10 @@ ${eQ}
                                     e.preventDefault(),
                                       !(function () {
                                         let e = c.createElement("canvas"),
-                                          t = e2(e6(r)),
-                                          n = e2(R);
-                                        (e.width = n.width * e3),
-                                          (e.height = n.height * e3);
+                                          t = e3(e6(r)),
+                                          n = e3(R);
+                                        (e.width = n.width * e2),
+                                          (e.height = n.height * e2);
                                         let a = e.getContext("2d");
                                         a &&
                                           r &&
@@ -43116,8 +43116,8 @@ ${eQ}
           (I[(I.AdoptedStyleSheet = 15)] = "AdoptedStyleSheet"),
           (I[(I.CustomElement = 16)] = "CustomElement"),
           I);
-        var e3 =
-          (((u = e3 || {})[(u.MouseUp = 0)] = "MouseUp"),
+        var e2 =
+          (((u = e2 || {})[(u.MouseUp = 0)] = "MouseUp"),
           (u[(u.MouseDown = 1)] = "MouseDown"),
           (u[(u.Click = 2)] = "Click"),
           (u[(u.ContextMenu = 3)] = "ContextMenu"),
@@ -43129,8 +43129,8 @@ ${eQ}
           (u[(u.TouchEnd = 9)] = "TouchEnd"),
           (u[(u.TouchCancel = 10)] = "TouchCancel"),
           u);
-        var e2 =
-          (((l = e2 || {})[(l.Mouse = 0)] = "Mouse"),
+        var e3 =
+          (((l = e3 || {})[(l.Mouse = 0)] = "Mouse"),
           (l[(l.Pen = 1)] = "Pen"),
           (l[(l.Touch = 2)] = "Touch"),
           l);
@@ -43966,32 +43966,32 @@ ${eQ}
                   if ("pointerType" in i) {
                     switch (i.pointerType) {
                       case "mouse":
-                        E = e2.Mouse;
+                        E = e3.Mouse;
                         break;
                       case "touch":
-                        E = e2.Touch;
+                        E = e3.Touch;
                         break;
                       case "pen":
-                        E = e2.Pen;
+                        E = e3.Pen;
                     }
-                    E === e2.Touch
-                      ? e3[t] === e3.MouseDown
+                    E === e3.Touch
+                      ? e2[t] === e2.MouseDown
                         ? (c = "TouchStart")
-                        : e3[t] === e3.MouseUp && (c = "TouchEnd")
-                      : e2.Pen;
-                  } else eF(i) && (E = e2.Touch);
+                        : e2[t] === e2.MouseUp && (c = "TouchEnd")
+                      : e3.Pen;
+                  } else eF(i) && (E = e3.Touch);
                   null !== E
                     ? ((s = E),
-                      ((c.startsWith("Touch") && E === e2.Touch) ||
-                        (c.startsWith("Mouse") && E === e2.Mouse)) &&
+                      ((c.startsWith("Touch") && E === e3.Touch) ||
+                        (c.startsWith("Mouse") && E === e3.Mouse)) &&
                         (E = null))
-                    : e3[t] === e3.Click && ((E = s), (s = null));
+                    : e2[t] === e2.Click && ((E = s), (s = null));
                   let I = eF(i) ? i.changedTouches[0] : i;
                   if (!I) return;
                   let u = r.getId(_),
                     { clientX: l, clientY: R } = I;
                   tt(e)({
-                    type: e3[c],
+                    type: e2[c],
                     id: u,
                     x: l,
                     y: R,
@@ -43999,7 +43999,7 @@ ${eQ}
                   });
                 };
               return (
-                Object.keys(e3)
+                Object.keys(e2)
                   .filter(
                     (e) =>
                       Number.isNaN(Number(e)) &&
@@ -44010,13 +44010,13 @@ ${eQ}
                     let r = er(e),
                       n = c(e);
                     if (window.PointerEvent)
-                      switch (e3[e]) {
-                        case e3.MouseDown:
-                        case e3.MouseUp:
+                      switch (e2[e]) {
+                        case e2.MouseDown:
+                        case e2.MouseUp:
                           r = r.replace("mouse", "pointer");
                           break;
-                        case e3.TouchStart:
-                        case e3.TouchEnd:
+                        case e2.TouchStart:
+                        case e2.TouchEnd:
                           return;
                       }
                     E.push(eG(r, n, t));
@@ -46268,7 +46268,7 @@ ${eQ}
             return (this._earliestTimestamp = null), (this._totalSize = 0), e;
           }
         }
-        class t3 {
+        class t2 {
           constructor(e) {
             (this._fallback = new tZ()),
               (this._compression = new t1(e)),
@@ -46334,7 +46334,7 @@ ${eQ}
             }
           }
         }
-        function t2() {
+        function t3() {
           try {
             return "sessionStorage" in F && !!F.sessionStorage;
           } catch (e) {
@@ -46361,7 +46361,7 @@ ${eQ}
           };
         }
         function t4(e) {
-          if (!!t2())
+          if (!!t3())
             try {
               F.sessionStorage.setItem(W, JSON.stringify(e));
             } catch (e) {}
@@ -46411,7 +46411,7 @@ ${eQ}
           let o =
             a.stickySession &&
             (function (e) {
-              if (!t2()) return null;
+              if (!t3()) return null;
               try {
                 let t = F.sessionStorage.getItem(W);
                 if (!t) return null;
@@ -47358,7 +47358,7 @@ ${eQ}
                               let { type: r, id: n } = t.data,
                                 a = th.mirror.getNode(n);
                               a instanceof HTMLElement &&
-                                r === e3.Click &&
+                                r === e2.Click &&
                                 e.registerClick(a);
                             }
                           } catch (e) {}
@@ -47473,7 +47473,7 @@ ${eQ}
                   (this.eventBuffer = null),
                   (r = this),
                   (function () {
-                    if (!!t2())
+                    if (!!t3())
                       try {
                         F.sessionStorage.removeItem(W);
                       } catch (e) {}
@@ -47625,7 +47625,7 @@ ${eQ}
                         `[Replay] Using compression worker${e ? ` from ${e}` : ""}`,
                       );
                       let r = new Worker(t);
-                      return new t3(r);
+                      return new t2(r);
                     } catch (e) {
                       tJ("[Replay] Failed to create compression worker");
                     }
@@ -48631,4 +48631,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.d3853a9ed9168eba3df0.js.map
+//# sourceMappingURL=sentry.f979dd37e63f8f1aaaa0.js.map
