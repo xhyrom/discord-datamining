@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_app_oauth2_link_embed_mobile",
+    "label": "app oauth2 link embed",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable new embed for app oauth2 links"
+    ],
+    "hash": 3144944363,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
