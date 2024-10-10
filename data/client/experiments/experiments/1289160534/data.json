@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_blocking_context",
+    "label": "Blocking Context",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show blocking context in block confirmation modal"
+    ],
+    "hash": 1289160534,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
