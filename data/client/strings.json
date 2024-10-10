@@ -18014,6 +18014,8 @@
   "QUESTS_MOBILE_HOME_CONTINUE_PLAYING": "\"Continue playing for {minutesLeft, plural, =1 {$[{minutesLeft} more minute](minutesHook)} other {$[{minutesLeft} more minutes](minutesHook)}} to claim your reward.\"",
   "QUESTS_MOBILE_HOME_CLAIM_REWARD": "\"Claim your $[reward](rewardHook) before {date}.\"",
   "QUEST_MOBILE_QUEST_BAR_DISMISS_TOAST": "\"Find this Quest again in User Settings $[](arrowHook) Quests\"",
+  "QUESTS_EXPAND_QUEST_BAR": "\"Hide Quest Bar\"",
+  "QUESTS_COLLAPSE_QUEST_BAR": "\"Show Quest Bar\"",
   "QUESTS_DISMISSAL_SURVEY_THANKS": "\"Thanks for the feedback\"",
   "QUESTS_DISMISSAL_SURVEY_VIDEO_TITLE": "\"Not interested in this Quest?\"",
   "QUESTS_DISMISSAL_SURVEY_VIDEO_SUBTITLE": "\"Let us know the main reason why this wasn't for you.\"",
