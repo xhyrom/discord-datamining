@@ -124,6 +124,11 @@
                     >Discover</a
                   ><a
                     class="link-1naFFL link-2eyudH"
+                    href="/ads/quests"
+                    data-link-id="quests"
+                    >Quests</a
+                  ><a
+                    class="link-1naFFL link-2eyudH"
                     href="/safetycenter"
                     data-link-id="safetycenter"
                     >Safety</a
