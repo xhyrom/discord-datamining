@@ -110,40 +110,30 @@
   When viewing your User Profile, you will be able to see your Recent Activity
   history within the last 30 days.
 </p>
-<div class="exp-box">
-  <strong>Note: </strong>Recent Activity history is an experimental feature
-  available to a limited number of users. While all users can view, manage, and
-  delete their own Recent Activity history, only those added to this experiment
-  can view others' Recent Activity history. You can learn more about
-  <a href="#h_01J5NNZS153N6H9V1S5A6WMMPK">Recent Activity history below</a>.
-</div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25750646264599"
-    width="396"
-    height="505"
+    src="https://support.discord.com/hc/article_attachments/26988676547863"
+    width="328"
+    height="473"
   />
 </p>
 <h2 id="h_01HTJA8QV59M70ZB3DY4THZM27">On Global Activity Cards</h2>
 <p>
-  You can also view the <strong>activity cards</strong> in the
-  <strong>Messages</strong> tab on mobile or the
-  <strong>Friends List </strong>on desktop. These will show you recent activity
-  of Friends and people you interact with in your servers.
+  You can also view <strong>activity cards</strong> by checking a user’s profile
+  on mobile or in the <strong>Friends List </strong>on desktop. These cards
+  display the recent activity of friends and people you interact with in your
+  servers.
 </p>
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
-      src="https://support.discord.com/hc/article_attachments/22536176540567"
-      width="610"
-      height="332"
-    />
-      </strong
-  ><strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/22536176546711"
-      width="163"
-      height="338"
+      src="https://support.discord.com/hc/article_attachments/26988662546071"
+      width="624"
+      height="383" />
+    <img
+      src="https://support.discord.com/hc/article_attachments/26988662547479"
+      width="210"
+      height="439"
   /></strong>
 </p>
 <h3 id="h_01HTJA8QV5EBWAT0D8Z93TGDQX">
@@ -169,12 +159,11 @@
   list depending on your settings.
 </p>
 <p id="h_01HTJA8QV500D229RX3F47SAG8" class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/22536161076375"
-      width="624"
-      height="408"
-  /></strong>
+  <img
+    src="https://support.discord.com/hc/article_attachments/26988662549015"
+    width="624"
+    height="387"
+  />
 </p>
 <h1 id="h_01HTJA8QV5EZK2YFH8G4T6JD9D">
   How do I control who sees my activity?
@@ -340,7 +329,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25750646296855"
+    src="https://support.discord.com/hc/article_attachments/26988676553111"
     width="624"
     height="467"
   />
@@ -357,10 +346,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #434343"
     ><img
-      src="https://support.discord.com/hc/article_attachments/26032842903447"
-      alt="Recent-Activity-History-Clear-Game-History-option.png"
-      width="620"
-      height="495"
+      src="https://support.discord.com/hc/article_attachments/26988694424087"
+      width="624"
+      height="497"
   /></span>
 </p>
 <p>
