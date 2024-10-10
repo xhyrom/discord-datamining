@@ -19,10 +19,6 @@
   </li>
 </ul>
 <h1 id="h_01J1XD0SEFNZVFJZNNPYECXKRY">What is message forwarding?</h1>
-<div class="exp-box">
-  This is currently an experiment on iOS, Android, and desktop and is not
-  available to everyone.
-</div>
 <p>
   Have you ever wanted to send your friends that cool thing you saw on another
   server or send them a funny meme from another channel?
@@ -133,11 +129,6 @@
   />
 </p>
 <h1 id="h_01J1XD0SEFM5WX25EXYJK2NJCA">Frequently Asked Questions </h1>
-<p><strong>Q: Why can’t I see the option to forward a message?</strong></p>
-<p>
-  A: Message forwarding is currently an experiment and is available to a limited
-  number of users.
-</p>
 <p><strong>Q: Why can’t I forward certain messages? </strong></p>
 <p>
   A: Messages from monetized channels cannot be forwarded as well as messages
@@ -159,7 +150,7 @@
 </p>
 <p>
   A: No, the original author of the message will not be shown: only the content
-  is included. .
+  is included.
 </p>
 <p>
   <strong>Q: Can everyone see where a forwarded message came from? </strong>
