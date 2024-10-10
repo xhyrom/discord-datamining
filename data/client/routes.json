@@ -1377,7 +1377,10 @@
   },
   "GRAVITY_TOPIC_GUILDS": {
     "url": "/gravity-topic-guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USERNAME_LOOKUP": {
     "url": "/users/username/:param",
