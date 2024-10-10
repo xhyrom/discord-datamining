@@ -13561,9 +13561,6 @@ span.clanTag_a31c43 {
   max-width: 32px;
   max-height: 32px;
 }
-.actionButton_f5dff0 {
-  margin-left: auto;
-}
 .row_e33a4d {
   align-items: center;
   display: flex;
@@ -13592,6 +13589,14 @@ span.clanTag_a31c43 {
 }
 .button_e33a4d {
   min-width: 75px;
+  margin-left: auto;
+}
+.infoGroup_d34773 {
+  border-radius: var(--radius-sm);
+  background-color: var(--background-secondary);
+  width: 100%;
+}
+.actionButton_f5dff0 {
   margin-left: auto;
 }
 .container_d74c59 {
@@ -47790,4 +47795,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.c443f4b5ca986c75abb8.css.map*/
+/*# sourceMappingURL=12633.263d53ff6631a5bf7feb.css.map*/
