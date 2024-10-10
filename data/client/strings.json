@@ -4157,6 +4157,7 @@
   "BAN_REASON_REQUIRED_ERROR": "\"Ban reason must be provided\"",
   "CALL_USER_PROMPT_HEADER": "\"Ready to start a call?\"",
   "CALL_USER_PROMPT": "\"Enjoy this moment.  Then jump in when you're ready.\"",
+  "CALL_USER_BODY": "\"Enjoy this moment. Then jump in when you're ready.\"",
   "CALL_USER_CONFIRM": "\"I'm ready!\"",
   "DEFAULT_FAILURE_TO_PERFORM_ACTION_MESSAGE": "\"Oops! Looks like that didn't work\"",
   "NO_TEXT": "\"No\"",
