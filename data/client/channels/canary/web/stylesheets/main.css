@@ -5064,6 +5064,100 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .warning_f615b3 {
   color: var(--white-500);
 }
+@value transitionDuration 200ms;
+div.modalRoot {
+  position: relative;
+  border-radius: 12px;
+  padding: 12px 24px;
+}
+div.modalHeader_c5e09c {
+  overflow-x: visible;
+}
+.closeBtn_c5e09c {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.asset_c5e09c {
+  width: 205px;
+  height: auto;
+  position: absolute;
+  top: -75%;
+}
+.title_c5e09c {
+  margin: 20px 0 4px;
+}
+.modalContent_c5e09c {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 16px;
+}
+.choiceContainer_c5e09c {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.full-motion .choiceContainer_c5e09c {
+  transition-property: opacity, background-color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.choiceTextContainer_c5e09c {
+  display: flex;
+  flex-direction: column;
+}
+.choiceSubtitleContainer_c5e09c {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  animation:
+    fadeIn_c5e09c.2s ease-in-out forwards,
+    scaleUp_c5e09c.2s ease-in-out forwards;
+}
+.heartWumpusIcon_c5e09c {
+  width: auto;
+  height: 16px;
+}
+.chevronContainer_c5e09c {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--text-positive);
+}
+.circleIcon_c5e09c {
+  animation: fadeIn_c5e09c.2s ease-in-out forwards;
+}
+@keyframes scaleUp_c5e09c {
+  0% {
+    max-height: 0;
+  }
+  to {
+    max-height: 20px;
+  }
+}
+@keyframes fadeIn_c5e09c {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.selected_c5e09c {
+  background-color: var(--bg-base-tertiary);
+}
+.notSelected_c5e09c {
+  opacity: 0.5;
+}
+.selected_c5e09c,
+.notSelected_c5e09c {
+  pointer-events: none;
+}
 .scrollerBase_c49869 {
   position: relative;
   box-sizing: border-box;
@@ -47696,4 +47790,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.58626b983acbf81af286.css.map*/
+/*# sourceMappingURL=12633.c443f4b5ca986c75abb8.css.map*/
