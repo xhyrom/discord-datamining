@@ -14934,6 +14934,7 @@
   "VOICE_CHANNEL_ACTIVITY_STATUS_REDIRECT": "\"Your activity status is off in this server. [Let friends see or join your activity.](onClick)\"",
   "WARNING_SCREEN_RECORDING_PERMISSION_TITLE": "\"Screen Share Permissions\"",
   "WARNING_SCREEN_RECORDING_PERMISSION_BODY": "\"Warning! The app doesn't have permission to record your screen. You may get unexpected results until you grant access and restart the app.\"",
+  "MEDIA_VIEWER_MODAL_ALT_TEXT": "\"Media Viewer Modal\"",
   "MEDIA_VIEWER_REACTION_LABEL": "\"React\"",
   "MEDIA_VIEWER_ALT_TEXT_CTA": "\"ALT\"",
   "MEDIA_VIEWER_ALT_TEXT_PARTIAL_TITLE": "\"ALT Text\"",
