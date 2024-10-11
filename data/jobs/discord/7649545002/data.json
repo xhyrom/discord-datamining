@@ -47,16 +47,16 @@
     {
       "id": 4082816002,
       "name": "Remote (U.S.)",
-      "location": null,
+      "parent_id": null,
       "child_ids": [],
-      "parent_id": null
+      "location": null
     },
     {
       "id": 4000383002,
       "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "parent_id": null,
       "child_ids": [],
-      "parent_id": null
+      "location": "San Francisco, California, United States"
     }
   ]
 }
