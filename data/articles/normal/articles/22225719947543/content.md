@@ -31,10 +31,11 @@
   <li>
     <a href="#h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</a>
     <ul>
-      <li><a href="#h_01J8JZMSEBSHRFKVF3XKMQ6213">Street Fighter 6 </a></li>
-      <li><a href="#h_01J834W9W4XK6ACDM184VA93XR">Discord Activities </a></li>
+      <li>
+        <a href="#h_01J8JZMSEBSHRFKVF3XKMQ6213">Street Fighter 6 </a
+        ><a href="#h_01J834W9W4XK6ACDM184VA93XR"> </a>
+      </li>
       <li><a href="#h_01J7YCN0PYT9VD8PFX7FDQT6YD">FINAL FANTASY XVI</a></li>
-      <li><a href="#h_01J7CES1WTMHAPE1CKZTTKFGKK">Honkai: Star Rail </a></li>
       <li>
         <a
           href="#h_01J6G4D7V76YHX2F60YETE63JJ"
@@ -43,8 +44,6 @@
           >The First Descendant 
         </a>
       </li>
-      <li><a href="#h_01J71E6SB3E6C2WB0T0D994406">Wuthering Waves  </a></li>
-      <li><a href="#h_01J71F0RY3F0CF02065Y2P5ARZ">Predecessor</a></li>
     </ul>
   </li>
   <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
@@ -153,21 +152,6 @@
   to be redeemed by <strong>October 29, 2024</strong>. Quest requirements must
   be completed during this period to receive the reward.
 </p>
-<h2 id="h_01J834W9W4XK6ACDM184VA93XR">
-  <a
-    href="https://support.discord.com/hc/articles/26435077579415-Discord-Activities-Quest"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Discord Activities - Discord Activities Quest</a
-  >
-</h2>
-<p>
-  The <strong>Discord Activities Ques</strong>t can be accepted on Discord from
-  <strong>September 16, 2024</strong> until
-  <strong>September 26, 2024 (11:59PM UTC)</strong>. The Nitro trial needs to be
-  redeemed by <strong>October 3, 2024</strong>. Quest requirements must be
-  completed during this period to receive the reward.
-</p>
 <h2 id="h_01J7YCN0PYT9VD8PFX7FDQT6YD">
   <a
     href="https://support.discord.com/hc/articles/26403986682647"
@@ -182,21 +166,6 @@
   <strong>September 23, 2024 (11:59PM UTC)</strong>. The avatar decoration needs
   to be redeemed by <strong>October 23, 2024</strong>. Quest requirements must
   be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J7CES1WTMHAPE1CKZTTKFGKK">
-  <a
-    href="https://support.discord.com/hc/articles/26166360563607"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Honkai: Star Rail - V2.5 Quest</a
-  >
-</h2>
-<p>
-  The <strong>V2.5 Quest</strong> can be accepted on Discord from
-  <strong>September 10, 2024 </strong>until<strong>
-    September 17, 2024 (11:59PM UTC</strong
-  >). Reward gift codes expire <strong>October 8, 2024 (00:00 UTC +8)</strong>.
-  Quest requirements must be completed during this period to receive the reward.
 </p>
 <h2 id="h_01J6G4D7V76YHX2F60YETE63JJ">
   <a
@@ -215,37 +184,6 @@
   <strong>Bunny avatar decoration</strong> by <strong>October 12, 2024</strong>.
   To receive these rewards, all quest requirements must be completed within the
   specified timeframe.
-</p>
-<h2 id="h_01J71E6SB3E6C2WB0T0D994406">
-  <a
-    href="https://support.discord.com/hc/articles/26110830890135"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Wuthering Waves - V1.2 WUWA Quest</a
-  >
-</h2>
-<p>
-  The <strong>V1.2 WUWA Quest</strong> can be accepted on Discord from
-  <strong>September 5, 2024 </strong>until<strong>
-    September 9, 2024 (11:59PM UTC)</strong
-  >. Reward gift codes expire <strong>October 9, 2024 (4AM UTC)</strong>. Quest
-  requirements must be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J71F0RY3F0CF02065Y2P5ARZ">
-  <a
-    href="https://support.discord.com/hc/articles/25871940367895-Predecessor-Quest"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Predecessor - Predecessor Skin Quest</a
-  >
-</h2>
-<p>
-  The <strong>Predecessor</strong> <strong>Skin</strong>
-  <strong>Quest</strong> can be accepted on Discord from
-  <strong>August 27, 2024 </strong>until<strong>
-    September 3, 2024 (11:59PM UTC)</strong
-  >. Reward gift codes expire <strong>October 3, 2024</strong>. Quest
-  requirements must be completed during this period to receive the reward.
 </p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
 <p>
