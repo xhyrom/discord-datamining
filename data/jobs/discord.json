@@ -1150,58 +1150,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7568876002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null
-        }
-      ],
-      "internal_job_id": 5973618002,
-      "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7568876002,
-      "updated_at": "2024-10-10T12:02:58-04:00",
-      "requisition_id": "R-100618",
-      "title": "Senior Financial Reporting & Technical Accountant",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is looking for a Senior Financial Reporting and Technical Accountant to join our growing team! This position will play a critical role in the preparation of the company’s financial statements and related disclosures, performing accounting research, preparing position papers, and accounting for some of the more complex areas of the business. This hire will report to our Director of Technical Accounting &amp;amp; Financial Reporting. We are looking for an individual who is excited to work both independently and collaboratively, demonstrates strong communication skills and attention to detail, and collaborates well cross-functionally.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you’ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Preparing consolidated financial statements and related disclosures, all in compliance with US GAAP and SEC reporting rules;&lt;/li&gt;\n&lt;li&gt;Assisting in complex, non-routine accounting and reporting transactions, including, but not limited to, mergers and acquisitions; impairment analyses of goodwill and long-lived assets; software capitalization; and investments;&lt;/li&gt;\n&lt;li&gt;Performing global accounting for stock-based compensation awards, including RSUs and stock options, by performing the valuation of compensation granted, calculation of quarterly expense, and preparation of position papers;&lt;/li&gt;\n&lt;li&gt;Supporting Discord’s strategic initiatives by providing technical accounting expertise and synthesizing accounting guidance into understandable terms;&lt;/li&gt;\n&lt;li&gt;Assisting in the development and maintenance of accounting policies and procedures, including the research, coordination, and implementation of FASB ASUs and proposals, as well as SEC rules; and&lt;/li&gt;\n&lt;li&gt;Interacting with a variety of global functions and department including, Corporate Development, Finance, Internal Audit, Legal, and Treasury&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Certified Public Accountant&lt;/li&gt;\n&lt;li&gt;5+ years of public accounting and/or public company experience&lt;/li&gt;\n&lt;li&gt;Technical accounting and SEC reporting background with a thorough knowledge of US GAAP and SEC reporting standards&lt;/li&gt;\n&lt;li&gt;Experience reviewing complex contracts, researching the related technical accounting matters, and documenting the accounting implications and conclusions in position papers&lt;/li&gt;\n&lt;li&gt;Experience with stock-based compensation&lt;/li&gt;\n&lt;li&gt;Ability to work independently and manage multiple tasks&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working with technology or SaaS companies&lt;/li&gt;\n&lt;li&gt;Experience using Oracle and/or Workiva&lt;/li&gt;\n&lt;li&gt;Prior Big 4 experience or large SEC registrant exposure&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $137,000 to $151,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;#LI-remote&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074069002,
-          "name": "Accounting",
-          "child_ids": [],
-          "parent_id": 4094262002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "parent_id": null,
-          "child_ids": [],
-          "location": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7493187002",
       "data_compliance": [
         {
@@ -2539,6 +2487,6 @@
     }
   ],
   "meta": {
-    "total": 45
+    "total": 44
   }
 }
