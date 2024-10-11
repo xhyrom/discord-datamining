@@ -1300,8 +1300,14 @@
           Swiss-U.S. Data Privacy Frameworks, as well as the UK Extension to the
           EU-U.S. Data Privacy Framework. If you have questions or complaints
           regarding our compliance with the Data Privacy Framework principles,
-          please reach out to us at privacy@discord.com. If we do not resolve
-          your complaint, you may submit your complaint free of charge to
+          please reach out to us at
+          <a
+            href="/cdn-cgi/l/email-protection"
+            class="__cf_email__"
+            data-cfemail="2b5b59425d4a48526b4f42584844594f05484446"
+            >[email&nbsp;protected]</a
+          >. If we do not resolve your complaint, you may submit your complaint
+          free of charge to
           <a href="https://www.jamsadr.com/eu-us-privacy-shield">JAMS</a>. Under
           certain conditions specified by the Data Privacy Framework principles,
           you may also be able to invoke binding arbitration to resolve your
@@ -1352,7 +1358,13 @@
         <h2>Data Protection Officer</h2>
         <p>
           You can contact Discord Netherlands BV’s Data Protection Officer at
-          <a href="mailto:dpo@discord.com">dpo@discord.com</a>.
+          <a href="/cdn-cgi/l/email-protection#85e1f5eac5e1ecf6e6eaf7e1abe6eae8"
+            ><span
+              class="__cf_email__"
+              data-cfemail="781c0817381c110b1b170a1c561b1715"
+              >[email&nbsp;protected]</span
+            ></a
+          >.
         </p>
         <p>
           We’ve appointed VeraSafe as Discord’s representative in the United
@@ -1405,7 +1417,12 @@
         <p>
           If you have any questions about these rights or wish to exercise
           control over your information, please reach out to
-          privacy@discord.com.
+          <a
+            href="/cdn-cgi/l/email-protection"
+            class="__cf_email__"
+            data-cfemail="92e2e0fbe4f3f1ebd2f6fbe1f1fde0f6bcf1fdff"
+            >[email&nbsp;protected]</a
+          >.
         </p>
       </div>
       <div id="13" class="rich-guidlines-negative w-richtext">
@@ -1421,12 +1438,24 @@
       <div id="14" class="rich-guidlines-negative w-richtext">
         <h2>Contact us</h2>
         <p>
-          Email us at privacy@discord.com with any questions about this Privacy
-          Policy or how we process your information. We’ll be happy to help.
+          Email us at
+          <a
+            href="/cdn-cgi/l/email-protection"
+            class="__cf_email__"
+            data-cfemail="83f3f1eaf5e2e0fac3e7eaf0e0ecf1e7ade0ecee"
+            >[email&nbsp;protected]</a
+          >
+          with any questions about this Privacy Policy or how we process your
+          information. We’ll be happy to help.
         </p>
         <p>
           To contact Discord’s Data Protection Officer, please email
-          dpo@discord.com.
+          <a
+            href="/cdn-cgi/l/email-protection"
+            class="__cf_email__"
+            data-cfemail="1773677857737e64747865733974787a"
+            >[email&nbsp;protected]</a
+          >.
         </p>
         <p>
           You can also reach us by mail if you want. If you reside in the EEA or
