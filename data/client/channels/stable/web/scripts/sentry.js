@@ -13,8 +13,8 @@
               : void 0 !== t
                 ? 10 != +t || r
                   ? W(e, t, r, n)
-                  : F(e)
-                : F(e);
+                  : x(e)
+                : x(e);
           }
           function o(e, t) {
             (this.value = e), (this.sign = t), (this.isSmall = !1);
@@ -115,7 +115,7 @@
             (i.prototype = Object.create(_.prototype)),
             (E.prototype = Object.create(_.prototype)),
             (o.prototype.add = function (e) {
-              var t = F(e);
+              var t = x(e);
               if (this.sign !== t.sign) return this.subtract(t.negate());
               var r = this.value,
                 n = t.value;
@@ -125,7 +125,7 @@
             }),
             (o.prototype.plus = o.prototype.add),
             (i.prototype.add = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = this.value;
               if (r < 0 !== t.sign) return this.subtract(t.negate());
               var n = t.value;
@@ -137,7 +137,7 @@
             }),
             (i.prototype.plus = i.prototype.add),
             (E.prototype.add = function (e) {
-              return new E(this.value + F(e).value);
+              return new E(this.value + x(e).value);
             }),
             (E.prototype.plus = E.prototype.add);
           function O(e, t, r) {
@@ -191,7 +191,7 @@
               r,
               n,
               a,
-              _ = F(e);
+              _ = x(e);
             if (this.sign !== _.sign) return this.add(_.negate());
             var E = this.value,
               c = _.value;
@@ -208,7 +208,7 @@
           }),
             (o.prototype.minus = o.prototype.subtract),
             (i.prototype.subtract = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = this.value;
               if (r < 0 !== t.sign) return this.add(t.negate());
               var n = t.value;
@@ -216,7 +216,7 @@
             }),
             (i.prototype.minus = i.prototype.subtract),
             (E.prototype.subtract = function (e) {
-              return new E(this.value - F(e).value);
+              return new E(this.value - x(e).value);
             }),
             (E.prototype.minus = E.prototype.subtract),
             (o.prototype.negate = function () {
@@ -262,7 +262,7 @@
             var t,
               r,
               n,
-              a = F(e),
+              a = x(e),
               i = this.value,
               E = a.value,
               c = this.sign !== a.sign;
@@ -314,11 +314,11 @@
                     : S(Math.abs(e.value), this.value, this.sign !== e.sign);
             }),
             (i.prototype.multiply = function (e) {
-              return F(e)._multiplyBySmall(this);
+              return x(e)._multiplyBySmall(this);
             }),
             (i.prototype.times = i.prototype.multiply),
             (E.prototype.multiply = function (e) {
-              return new E(this.value * F(e).value);
+              return new E(this.value * x(e).value);
             }),
             (E.prototype.times = E.prototype.multiply),
             (o.prototype.square = function () {
@@ -347,7 +347,7 @@
           function C(e, t) {
             var r,
               n,
-              c = F(t);
+              c = x(t);
             if (a) return [new E(e.value / c.value), new E(e.value % c.value)];
             var A = e.value,
               T = c.value;
@@ -514,7 +514,7 @@
             }),
             (E.prototype.over = E.prototype.divide =
               function (e) {
-                return new E(this.value / F(e).value);
+                return new E(this.value / x(e).value);
               }),
             (i.prototype.over =
               i.prototype.divide =
@@ -525,7 +525,7 @@
             }),
             (E.prototype.mod = E.prototype.remainder =
               function (e) {
-                return new E(this.value % F(e).value);
+                return new E(this.value % x(e).value);
               }),
             (i.prototype.remainder =
               i.prototype.mod =
@@ -535,7 +535,7 @@
               var t,
                 r,
                 n,
-                a = F(e),
+                a = x(e),
                 o = this.value,
                 E = a.value;
               if (0 === E) return _[1];
@@ -557,7 +557,7 @@
             }),
             (i.prototype.pow = o.prototype.pow),
             (E.prototype.pow = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = this.value,
                 n = t.value,
                 a = BigInt(0),
@@ -578,7 +578,7 @@
               return s;
             }),
             (o.prototype.modPow = function (e, t) {
-              if (((e = F(e)), (t = F(t)).isZero()))
+              if (((e = x(e)), (t = x(t)).isZero()))
                 throw Error("Cannot take modPow with modulus 0");
               var r = _[1],
                 n = this.mod(t);
@@ -596,13 +596,13 @@
             }),
             (E.prototype.modPow = i.prototype.modPow = o.prototype.modPow),
             (o.prototype.compareAbs = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = this.value,
                 n = t.value;
               return t.isSmall ? 1 : g(r, n);
             }),
             (i.prototype.compareAbs = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = Math.abs(this.value),
                 n = t.value;
               return t.isSmall
@@ -615,7 +615,7 @@
             }),
             (E.prototype.compareAbs = function (e) {
               var t = this.value,
-                r = F(e).value;
+                r = x(e).value;
               return (t = t >= 0 ? t : -t) === (r = r >= 0 ? r : -r)
                 ? 0
                 : t > r
@@ -625,7 +625,7 @@
             (o.prototype.compare = function (e) {
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
-              var t = F(e),
+              var t = x(e),
                 r = this.value,
                 n = t.value;
               return this.sign !== t.sign
@@ -642,7 +642,7 @@
             (i.prototype.compare = function (e) {
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
-              var t = F(e),
+              var t = x(e),
                 r = this.value,
                 n = t.value;
               return t.isSmall
@@ -664,7 +664,7 @@
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
               var t = this.value,
-                r = F(e).value;
+                r = x(e).value;
               return t === r ? 0 : t > r ? 1 : -1;
             }),
             (E.prototype.compareTo = E.prototype.compare),
@@ -773,7 +773,7 @@
               return this.value === BigInt(0);
             }),
             (o.prototype.isDivisibleBy = function (e) {
-              var t = F(e);
+              var t = x(e);
               return (
                 !t.isZero() &&
                 (!!t.isUnit() ||
@@ -818,7 +818,7 @@
               o.prototype.isProbablePrime),
             (o.prototype.modInv = function (e) {
               for (
-                var t, r, a, _ = n.zero, o = n.one, i = F(e), E = this.abs();
+                var t, r, a, _ = n.zero, o = n.one, i = x(e), E = this.abs();
                 !E.isZero();
 
               )
@@ -871,7 +871,7 @@
             return 1e7 >= Math.abs(e);
           }
           function b(e, t, r) {
-            t = F(t);
+            t = x(t);
             for (
               var a = e.isNegative(),
                 _ = t.isNegative(),
@@ -902,7 +902,7 @@
             return l;
           }
           (o.prototype.shiftLeft = function (e) {
-            var t = F(e).toJSNumber();
+            var t = x(e).toJSNumber();
             if (!y(t)) throw Error(String(t) + " is too large for shifting.");
             if (t < 0) return this.shiftRight(-t);
             var r = this;
@@ -914,7 +914,7 @@
               o.prototype.shiftLeft),
             (o.prototype.shiftRight = function (e) {
               var t,
-                r = F(e).toJSNumber();
+                r = x(e).toJSNumber();
               if (!y(r)) throw Error(String(r) + " is too large for shifting.");
               if (r < 0) return this.shiftLeft(-r);
               for (var n = this; r >= m; ) {
@@ -960,13 +960,13 @@
             return r & -r;
           }
           function w(e, t) {
-            return (e = F(e)), (t = F(t)), e.greater(t) ? e : t;
+            return (e = x(e)), (t = x(t)), e.greater(t) ? e : t;
           }
           function H(e, t) {
-            return (e = F(e)), (t = F(t)), e.lesser(t) ? e : t;
+            return (e = x(e)), (t = x(t)), e.lesser(t) ? e : t;
           }
           function Y(e, t) {
-            if (((e = F(e).abs()), (t = F(t).abs()), e.equals(t))) return e;
+            if (((e = x(e).abs()), (t = x(t).abs()), e.equals(t))) return e;
             if (e.isZero()) return t;
             if (t.isZero()) return e;
             for (var r, n, a = _[1]; e.isEven() && t.isEven(); )
@@ -1019,17 +1019,17 @@
                 throw Error(c + " is not a valid digit in base " + t + ".");
               }
             }
-            t = F(t);
+            t = x(t);
             var s = [],
               I = "-" === e[0];
             for (_ = I ? 1 : 0; _ < e.length; _++) {
               var c = e[_];
-              if (c in E) s.push(F(E[c]));
+              if (c in E) s.push(x(E[c]));
               else if ("<" === c) {
                 var u = _;
                 do _++;
                 while (">" !== e[_] && _ < e.length);
-                s.push(F(e.slice(u + 1, _)));
+                s.push(x(e.slice(u + 1, _)));
               } else throw Error(c + " is not a valid character");
             }
             return K(s, t, I);
@@ -1111,7 +1111,7 @@
                 .join("")
             );
           }
-          function x(e) {
+          function F(e) {
             if (c(+e)) {
               var t = +e;
               if (t === R(t)) return a ? new E(BigInt(t)) : new i(t);
@@ -1192,7 +1192,7 @@
               function () {
                 return parseInt(this.toString(), 10);
               });
-          function F(e) {
+          function x(e) {
             return "number" == typeof e
               ? (function (e) {
                   if (a) return new E(BigInt(e));
@@ -1200,15 +1200,15 @@
                     if (e !== R(e)) throw Error(e + " is not an integer.");
                     return new i(e);
                   }
-                  return x(e.toString());
+                  return F(e.toString());
                 })(e)
               : "string" == typeof e
-                ? x(e)
+                ? F(e)
                 : "bigint" == typeof e
                   ? new E(e)
                   : e;
           }
-          for (var X = 0; X < 1e3; X++) (_[X] = F(X)), X > 0 && (_[-X] = F(-X));
+          for (var X = 0; X < 1e3; X++) (_[X] = x(X)), X > 0 && (_[-X] = x(-X));
           return (
             (_.one = _[1]),
             (_.zero = _[0]),
@@ -1218,8 +1218,8 @@
             (_.gcd = Y),
             (_.lcm = function (e, t) {
               return (
-                (e = F(e).abs()),
-                (t = F(t).abs()),
+                (e = x(e).abs()),
+                (t = x(t).abs()),
                 e.divide(Y(e, t)).multiply(t)
               );
             }),
@@ -1227,7 +1227,7 @@
               return e instanceof o || e instanceof i || e instanceof E;
             }),
             (_.randBetween = function (e, t, r) {
-              (e = F(e)), (t = F(t));
+              (e = x(e)), (t = x(t));
               var n = r || Math.random,
                 a = H(e, t),
                 o = w(e, t).subtract(a).add(1);
@@ -1244,7 +1244,7 @@
               return a.add(_.fromArray(E, 1e7, !1));
             }),
             (_.fromArray = function (e, t, r) {
-              return K(e.map(F), F(t || 10), r);
+              return K(e.map(x), x(t || 10), r);
             }),
             _
           );
@@ -4430,7 +4430,7 @@
         "use strict";
         r.d(t, {
           $7l: function () {
-            return aF.$7;
+            return ax.$7;
           },
           $92: function () {
             return _f;
@@ -4439,13 +4439,13 @@
             return p;
           },
           $Dd: function () {
-            return ax.$D;
+            return aF.$D;
           },
           $R1: function () {
-            return ax.$R;
+            return aF.$R;
           },
           $VG: function () {
-            return ax.$V;
+            return aF.$V;
           },
           $Y6: function () {
             return _H;
@@ -4472,13 +4472,13 @@
             return e4;
           },
           Ai1: function () {
-            return ax.Ai;
+            return aF.Ai;
           },
           AzA: function () {
             return tG;
           },
           B1h: function () {
-            return ax.B1;
+            return aF.B1;
           },
           B9o: function () {
             return _G;
@@ -4487,7 +4487,7 @@
             return _Q;
           },
           BRd: function () {
-            return ax.BR;
+            return aF.BR;
           },
           BVn: function () {
             return t0;
@@ -4499,7 +4499,7 @@
             return tr;
           },
           BmY: function () {
-            return x;
+            return F;
           },
           BpS: function () {
             return j;
@@ -4514,7 +4514,7 @@
             return R;
           },
           Cyb: function () {
-            return ax.Cy;
+            return aF.Cy;
           },
           DJE: function () {
             return tI;
@@ -4526,13 +4526,13 @@
             return a8;
           },
           E07: function () {
-            return _x;
+            return _F;
           },
           EKQ: function () {
-            return ax.EK;
+            return aF.EK;
           },
           ETv: function () {
-            return ax.ET;
+            return aF.ET;
           },
           EYA: function () {
             return _V;
@@ -4541,7 +4541,7 @@
             return E;
           },
           Etm: function () {
-            return ax.Et;
+            return aF.Et;
           },
           Eu4: function () {
             return eH;
@@ -4550,7 +4550,7 @@
             return _a;
           },
           FsG: function () {
-            return aF.Fs;
+            return ax.Fs;
           },
           GNZ: function () {
             return oo;
@@ -4562,10 +4562,10 @@
             return Q;
           },
           GZQ: function () {
-            return ax.GZ;
+            return aF.GZ;
           },
           H0J: function () {
-            return ax.H0;
+            return aF.H0;
           },
           HGf: function () {
             return os;
@@ -4574,7 +4574,7 @@
             return _E;
           },
           HeQ: function () {
-            return ax.He;
+            return aF.He;
           },
           Hqc: function () {
             return on;
@@ -4589,7 +4589,7 @@
             return ea;
           },
           IWh: function () {
-            return tF;
+            return tx;
           },
           IXf: function () {
             return _D;
@@ -4601,7 +4601,7 @@
             return ts;
           },
           Ilk: function () {
-            return ax.Il;
+            return aF.Il;
           },
           IyS: function () {
             return tX;
@@ -4613,7 +4613,7 @@
             return __;
           },
           JjL: function () {
-            return ax.Jj;
+            return aF.Jj;
           },
           JkL: function () {
             return _W;
@@ -4667,10 +4667,10 @@
             return tg;
           },
           NYc: function () {
-            return ax.NY;
+            return aF.NY;
           },
           NYc: function () {
-            return ax.NY;
+            return aF.NY;
           },
           NYg: function () {
             return e9;
@@ -4685,7 +4685,7 @@
             return eW;
           },
           O42: function () {
-            return aF.O4;
+            return ax.O4;
           },
           OBS: function () {
             return aj;
@@ -4697,7 +4697,7 @@
             return J;
           },
           OMz: function () {
-            return ax.OM;
+            return aF.OM;
           },
           OSm: function () {
             return _A;
@@ -4727,7 +4727,7 @@
             return e5;
           },
           Plq: function () {
-            return ax.Pl;
+            return aF.Pl;
           },
           PrB: function () {
             return f;
@@ -4736,7 +4736,7 @@
             return _w;
           },
           PyE: function () {
-            return ax.Py;
+            return aF.Py;
           },
           QCD: function () {
             return t_;
@@ -4745,7 +4745,7 @@
             return ec;
           },
           QL: function () {
-            return ax.QL;
+            return aF.QL;
           },
           QR$: function () {
             return th;
@@ -4754,13 +4754,13 @@
             return i;
           },
           Qa3: function () {
-            return ax.Q;
+            return aF.Q;
           },
           Qqv: function () {
             return eN;
           },
           R5N: function () {
-            return eF;
+            return ex;
           },
           R7I: function () {
             return _Y;
@@ -4769,10 +4769,10 @@
             return oA;
           },
           RG5: function () {
-            return ax.RG;
+            return aF.RG;
           },
           RK: function () {
-            return ax.RK;
+            return aF.RK;
           },
           RcX: function () {
             return _b;
@@ -4781,7 +4781,7 @@
             return o_;
           },
           S7T: function () {
-            return ax.S7;
+            return aF.S7;
           },
           S9g: function () {
             return ez;
@@ -4802,13 +4802,13 @@
             return a1;
           },
           Skl: function () {
-            return ax.Sk;
+            return aF.Sk;
           },
           T23: function () {
             return oD;
           },
           TC2: function () {
-            return ax.TC;
+            return aF.TC;
           },
           TNx: function () {
             return _j;
@@ -4826,10 +4826,10 @@
             return ta;
           },
           U66: function () {
-            return ax.U6;
+            return aF.U6;
           },
           U9i: function () {
-            return ax.U9;
+            return aF.U9;
           },
           ULH: function () {
             return T;
@@ -4838,7 +4838,7 @@
             return tQ;
           },
           Uk1: function () {
-            return ax.Uk;
+            return aF.Uk;
           },
           UkZ: function () {
             return tj;
@@ -4853,7 +4853,7 @@
             return aw.V;
           },
           V6Z: function () {
-            return ax.V6;
+            return aF.V6;
           },
           VD2: function () {
             return e7;
@@ -4865,10 +4865,10 @@
             return eC;
           },
           VqG: function () {
-            return ax.Vq;
+            return aF.Vq;
           },
           Vzj: function () {
-            return ax.Vz;
+            return aF.Vz;
           },
           WKe: function () {
             return _d;
@@ -4880,16 +4880,16 @@
             return en;
           },
           X5t: function () {
-            return ax.X5;
+            return aF.X5;
           },
           X6Q: function () {
-            return ax.X6;
+            return aF.X6;
           },
           X7u: function () {
-            return ax.X7;
+            return aF.X7;
           },
           XAJ: function () {
-            return a2;
+            return a3;
           },
           XKF: function () {
             return oc;
@@ -4928,7 +4928,7 @@
             return A;
           },
           Zuq: function () {
-            return ax.Zu;
+            return aF.Zu;
           },
           _1z: function () {
             return K;
@@ -4949,7 +4949,7 @@
             return a0;
           },
           aO5: function () {
-            return ax.aO;
+            return aF.aO;
           },
           aZC: function () {
             return _z;
@@ -4973,10 +4973,10 @@
             return et;
           },
           c2C: function () {
-            return e3;
+            return e2;
           },
           cII: function () {
-            return aF.cI;
+            return ax.cI;
           },
           d4z: function () {
             return ab.d;
@@ -4988,13 +4988,13 @@
             return ev;
           },
           dG4: function () {
-            return ax.dG;
+            return aF.dG;
           },
           dGM: function () {
             return _h;
           },
           dGm: function () {
-            return ax.yA;
+            return aF.yA;
           },
           dN1: function () {
             return _T;
@@ -5036,16 +5036,16 @@
             return tu;
           },
           fK7: function () {
-            return ax.fK;
+            return aF.fK;
           },
           fMv: function () {
-            return aF.fM;
+            return ax.fM;
           },
           fo$: function () {
             return _P;
           },
           frH: function () {
-            return ax.fr;
+            return aF.fr;
           },
           fzT: function () {
             return _0;
@@ -5057,7 +5057,7 @@
             return tZ;
           },
           gg$: function () {
-            return ax.gg;
+            return aF.gg;
           },
           gkr: function () {
             return tC;
@@ -5087,7 +5087,7 @@
             return y;
           },
           ihW: function () {
-            return aF.ih;
+            return ax.ih;
           },
           ipw: function () {
             return W;
@@ -5099,7 +5099,7 @@
             return _n;
           },
           j8d: function () {
-            return ax.j8;
+            return aF.j8;
           },
           jXE: function () {
             return eA;
@@ -5135,10 +5135,10 @@
             return tW;
           },
           lTL: function () {
-            return ax.lT;
+            return aF.lT;
           },
           ldS: function () {
-            return ax.ld;
+            return aF.ld;
           },
           lds: function () {
             return aQ;
@@ -5186,7 +5186,7 @@
             return N;
           },
           pKx: function () {
-            return ax.pK;
+            return aF.pK;
           },
           pM4: function () {
             return L;
@@ -5201,7 +5201,7 @@
             return ti;
           },
           pmI: function () {
-            return _2;
+            return _3;
           },
           q5t: function () {
             return eu;
@@ -5228,10 +5228,10 @@
             return D;
           },
           rMx: function () {
-            return ex;
+            return eF;
           },
           rnv: function () {
-            return _F;
+            return _x;
           },
           rsA: function () {
             return oa;
@@ -5240,7 +5240,7 @@
             return eB;
           },
           rxP: function () {
-            return ax.rx;
+            return aF.rx;
           },
           sFg: function () {
             return X;
@@ -5264,13 +5264,13 @@
             return a7;
           },
           tNA: function () {
-            return ax.tN;
+            return aF.tN;
           },
           tPV: function () {
             return _l;
           },
           tPk: function () {
-            return ax.tP;
+            return aF.tP;
           },
           tuJ: function () {
             return eY;
@@ -5333,16 +5333,16 @@
             return aX;
           },
           xr4: function () {
-            return ax.xr;
+            return aF.xr;
           },
           yXg: function () {
             return e8;
           },
           yXt: function () {
-            return ax.yX;
+            return aF.yX;
           },
           yYS: function () {
-            return ax.yY;
+            return aF.yY;
           },
           yb: function () {
             return G;
@@ -5360,10 +5360,10 @@
             return _k;
           },
           zMe: function () {
-            return ax.zM;
+            return aF.zM;
           },
           zUn: function () {
-            return e2;
+            return e3;
           },
           zYc: function () {
             return tU;
@@ -5415,8 +5415,8 @@
           K,
           k,
           V,
-          x,
           F,
+          x,
           X,
           j,
           $,
@@ -5469,8 +5469,8 @@
           eK,
           ek,
           eV,
-          ex,
           eF,
+          ex,
           eX,
           ej,
           e$,
@@ -5481,8 +5481,8 @@
           eZ,
           e0,
           e1,
-          e2,
           e3,
+          e2,
           e6,
           e5,
           e4,
@@ -5533,8 +5533,8 @@
           tK,
           tk,
           tV,
-          tx,
           tF,
+          tx,
           tX,
           tj,
           t$,
@@ -5545,8 +5545,8 @@
           tZ,
           t0,
           t1,
-          t2,
           t3,
+          t2,
           t6,
           t5,
           t4,
@@ -5597,8 +5597,8 @@
           rK,
           rk,
           rV,
-          rx,
           rF,
+          rx,
           rX,
           rj,
           r$,
@@ -5609,8 +5609,8 @@
           rZ,
           r0,
           r1,
-          r2,
           r3,
+          r2,
           r6,
           r5,
           r4,
@@ -5661,8 +5661,8 @@
           nK,
           nk,
           nV,
-          nx,
           nF,
+          nx,
           nX,
           nj,
           n$,
@@ -5673,8 +5673,8 @@
           nZ,
           n0,
           n1,
-          n2,
           n3,
+          n2,
           n6,
           n5,
           n4,
@@ -5726,24 +5726,24 @@
           aK = r(272242),
           ak = r(188785),
           aV = r(526761),
-          ax = r(231338),
-          aF = r(334431);
-        ((t2 = n || (n = {})).NONE = "NONE"),
-          (t2.LOGGING_IN = "LOGGING_IN"),
-          (t2.ACCOUNT_SCHEDULED_FOR_DELETION =
+          aF = r(231338),
+          ax = r(334431);
+        ((t3 = n || (n = {})).NONE = "NONE"),
+          (t3.LOGGING_IN = "LOGGING_IN"),
+          (t3.ACCOUNT_SCHEDULED_FOR_DELETION =
             "ACCOUNT_SCHEDULED_FOR_DELETION"),
-          (t2.ACCOUNT_DISABLED = "ACCOUNT_DISABLED"),
-          (t2.FORGOT_PASSWORD = "FORGOT_PASSWORD"),
-          (t2.MFA_STEP = "MFA_STEP"),
-          (t2.LOGGING_IN_MFA = "LOGGING_IN_MFA"),
-          (t2.MFA_SMS_STEP = "MFA_SMS_STEP"),
-          (t2.LOGGING_IN_MFA_SMS = "LOGGING_IN_MFA_SMS"),
-          (t2.LOGIN_AGE_GATE = "LOGIN_AGE_GATE"),
-          (t2.PASSWORD_RECOVERY_PHONE_VERIFICATION =
+          (t3.ACCOUNT_DISABLED = "ACCOUNT_DISABLED"),
+          (t3.FORGOT_PASSWORD = "FORGOT_PASSWORD"),
+          (t3.MFA_STEP = "MFA_STEP"),
+          (t3.LOGGING_IN_MFA = "LOGGING_IN_MFA"),
+          (t3.MFA_SMS_STEP = "MFA_SMS_STEP"),
+          (t3.LOGGING_IN_MFA_SMS = "LOGGING_IN_MFA_SMS"),
+          (t3.LOGIN_AGE_GATE = "LOGIN_AGE_GATE"),
+          (t3.PASSWORD_RECOVERY_PHONE_VERIFICATION =
             "PASSWORD_RECOVERY_VERIFY_PHONE"),
-          (t2.PHONE_IP_AUTHORIZATION = "PHONE_IP_AUTHORIZATION"),
-          ((t3 = a || (a = {})).PASSWORD = "password"),
-          (t3.LOGIN_CODE = "login_code"),
+          (t3.PHONE_IP_AUTHORIZATION = "PHONE_IP_AUTHORIZATION"),
+          ((t2 = a || (a = {})).PASSWORD = "password"),
+          (t2.LOGIN_CODE = "login_code"),
           ((t6 = _ || (_ = {}))[(t6.NOT_ELIGIBLE = 0)] = "NOT_ELIGIBLE"),
           (t6[(t6.ELIGIBLE = 1)] = "ELIGIBLE"),
           (t6[(t6.QUALIFIED = 2)] = "QUALIFIED"),
@@ -6250,11 +6250,11 @@
           (rU.DISABLED = "disabled"),
           ((rm = V || (V = {})).ENABLED = "ENABLED"),
           (rm.DISABLED = "DISABLED"),
-          ((rG = x || (x = {})).CONNECT = "CONNECT"),
+          ((rG = F || (F = {})).CONNECT = "CONNECT"),
           (rG.DISPATCH = "DISPATCH"),
           (rG.LOG_MESSAGES = "LOG_MESSAGES"),
           (rG.STORAGE_SYNC = "STORAGE_SYNC"),
-          ((F || (F = {})).TEXT_WIDGET = "TEXT_WIDGET"),
+          ((x || (x = {})).TEXT_WIDGET = "TEXT_WIDGET"),
           ((ry = X || (X = {}))[(ry.NONE = 0)] = "NONE"),
           (ry[(ry.LOW = 1)] = "LOW"),
           (ry[(ry.MEDIUM = 2)] = "MEDIUM"),
@@ -6295,8 +6295,8 @@
           aZ = "null",
           a0 = "0",
           a1 = "null",
-          a2 = "1096190356233670716",
-          a3 = Object.freeze({
+          a3 = "1096190356233670716",
+          a2 = Object.freeze({
             USER: (e) => "/users/".concat(e),
             USER_RELATIONSHIPS: function () {
               let e =
@@ -7709,7 +7709,7 @@
             USER_SUMMARIES: "/users/@me/summaries",
             QUESTS: (e) => "/quests/".concat(e),
           }),
-          a5 = (0, aY.Ft)(a3),
+          a5 = (0, aY.Ft)(a2),
           a4 = (0, aY.Ft)(a6, [":", "?", "@"]);
         ((rK = ee || (ee = {}))[(rK.INSTANCE = 1)] = "INSTANCE"),
           (rK[(rK.JOIN = 2)] = "JOIN"),
@@ -7769,15 +7769,15 @@
           (rV.MESSAGE_GROUP = "MESSAGE_GROUP"),
           (rV.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP"),
           (rV.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES"),
-          ((rx = en || (en = {})).VIDEO = "video"),
-          (rx.VOICE = "voice"),
-          ((rF = ea || (ea = {}))[(rF.PLAYING = 0)] = "PLAYING"),
-          (rF[(rF.STREAMING = 1)] = "STREAMING"),
-          (rF[(rF.LISTENING = 2)] = "LISTENING"),
-          (rF[(rF.WATCHING = 3)] = "WATCHING"),
-          (rF[(rF.CUSTOM_STATUS = 4)] = "CUSTOM_STATUS"),
-          (rF[(rF.COMPETING = 5)] = "COMPETING"),
-          (rF[(rF.HANG_STATUS = 6)] = "HANG_STATUS"),
+          ((rF = en || (en = {})).VIDEO = "video"),
+          (rF.VOICE = "voice"),
+          ((rx = ea || (ea = {}))[(rx.PLAYING = 0)] = "PLAYING"),
+          (rx[(rx.STREAMING = 1)] = "STREAMING"),
+          (rx[(rx.LISTENING = 2)] = "LISTENING"),
+          (rx[(rx.WATCHING = 3)] = "WATCHING"),
+          (rx[(rx.CUSTOM_STATUS = 4)] = "CUSTOM_STATUS"),
+          (rx[(rx.COMPETING = 5)] = "COMPETING"),
+          (rx[(rx.HANG_STATUS = 6)] = "HANG_STATUS"),
           ((rX = e_ || (e_ = {})).GAME = "game"),
           (rX.USER = "user"),
           (rX.GROUP = "group"),
@@ -7928,7 +7928,7 @@
               "/safetycenter",
             ),
           }),
-          _x = Object.freeze({
+          _F = Object.freeze({
             DEVELOPER_PORTAL: "/developers",
             DEVELOPER_PORTAL_GUILD_ANALYTICS: (e) =>
               "/developers/servers/".concat(e),
@@ -7936,7 +7936,7 @@
             DEVELOPER_PORTAL_EDIT_PAYOUTS: (e) =>
               "/developers/teams/".concat(e, "/payout-settings"),
           }),
-          _F = 10,
+          _x = 10,
           _X = 25,
           _j = /^FILTER_/,
           _$ = /^ANSWER_/;
@@ -8087,6 +8087,8 @@
             "INVALID_GIFT_REDEMPTION_OWNED"),
           (rz[(rz.INVALID_GIFT_SELF_REDEMPTION = 50054)] =
             "INVALID_GIFT_SELF_REDEMPTION"),
+          (rz[(rz.INVALID_GIFT_REDEMPTION_PREVIOUSLY_OWNED = 50092)] =
+            "INVALID_GIFT_REDEMPTION_PREVIOUSLY_OWNED"),
           (rz[(rz.INVALID_COUNTRY_CODE = 50095)] = "INVALID_COUNTRY_CODE"),
           (rz[(rz.INVALID_CANNOT_FRIEND_SELF = 50096)] =
             "INVALID_CANNOT_FRIEND_SELF"),
@@ -8404,526 +8406,526 @@
           (r1.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r1.NITRO_HOME = "Nitro Home");
         let _J = "help_center_cta";
-        ((r2 = eA || (eA = {})).HERO = "Hero"),
-          (r2.BODY = "Body"),
-          (r2.NAVIGATION = "Navigation"),
-          (r2.TABS = "Tabs"),
-          (r2.CONTEXT_MENU = "Context Menu"),
-          (r2.HEADER = "Header"),
-          (r2.FOOTER = "Footer"),
-          (r2.DIRECT_ROUTE_ACCESS = "Direct Route Access"),
-          (r2.NOTIFICATION_BAR = "Notification Bar"),
-          (r2.PROFILE_MODAL = "Profile Modal"),
-          (r2.EMOJI_PICKER_POPOUT = "Emoji Picker Popout"),
-          (r2.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_POPOUT =
-            "Voice Channel Effect Emoji Picker Popout"),
-          (r2.FILE_UPLOAD_POPOUT = "File Upload Popout"),
-          (r2.GUILD_POPOUT = "Guild Popout"),
-          (r2.BITE_SIZE_PROFILE_POPOUT = "Bite Size Profile Popout"),
-          (r2.ROLE_ICON_POPOUT = "Role Icon Popout"),
-          (r2.GAME_MODAL = "Game Modal"),
-          (r2.GAME_POPOUT = "Game Popout"),
-          (r2.EMOJI_UPSELL_POPOUT = "Emoji Upsell Popout"),
-          (r2.EMOJI_PICKER_FLOATING_UPSELL = "Emoji Picker Floating Upsell"),
-          (r2.SOUND_PICKER_FLOATING_UPSELL = "Sound Picker Floating Upsell"),
-          (r2.EMPTY_STICKER_PICKER_UPSELL = "Empty Sticker Picker Upsell"),
-          (r2.FOR_LATER_POPOUT_UPSELL = "For Later Popout Upsell"),
-          (r2.CREATE_STICKER_MODAL = "Create Sticker Modal"),
-          (r2.IOS_TWO_FA_MODAL = "Two Factor Auth Modal"),
-          (r2.IOS_TWO_FA_EMAIL_VERIFICATION = "Two Factor Email Verification"),
-          (r2.IOS_TWO_FA_LANDING = "Two Factor Auth Landing"),
-          (r2.IOS_TWO_FA_SCAN = "Two Factor Auth Scan Code"),
-          (r2.IOS_TWO_FA_ENTER_CODE = "Two Factor Auth Enter Code"),
-          (r2.IOS_TWO_FA_SUCCESS = "Two Factor Auth Enable Success"),
-          (r2.IOS_TWO_FA_ADD_SMS = "Two Factor Auth Add SMS"),
-          (r2.IOS_TWO_FA_VERIFY_SMS = "Two Factor Auth Verify SMS"),
-          (r2.IOS_CANNOT_MANAGE_SUBSCRIPTION =
-            "iOS Cannot Manage Subscription"),
-          (r2.PREMIUM_GUILD_INVITE_SPLASH = "Premium Guild Invite Splash"),
-          (r2.PREMIUM_GUILD_PROGRESS_BAR = "Premium Guild Progress Bar"),
-          (r2.PREMIUM_GUILD_SUBSCRIBE_MODAL = "Premium Guild Subscribe Modal"),
-          (r2.PREMIUM_GUILD_SUBSCRIBE_CONFIRMATION_MODAL =
-            "Premium Guild Subscribe Confirmation Modal"),
-          (r2.PREMIUM_GUILD_UNSUBSCRIBE_MODAL =
-            "Premium Guild Unsubscribe Modal"),
-          (r2.PREMIUM_GUILD_PURCHASE_MODAL = "Premium Guild Purchase Modal"),
-          (r2.PREMIUM_GUILD_UPSELL_MODAL = "Premium Guild Upsell Modal"),
-          (r2.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_MODAL =
-            "Premium Guild Member Profile Upsell Modal"),
-          (r2.PREMIUM_CUSTOM_NOTIFICATION_SOUND_UPSELL_MODAL =
-            "Premium Custom Notification Sound Upsell"),
-          (r2.PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL =
-            "Premium Custom Notification Sound Settings Upsell"),
-          (r2.PREMIUM_PERKS_DEMO_UPSELL_MODAL =
-            "Premium Perks Demo Upsell Modal"),
-          (r2.PREMIUM_FOR_LATER_UPSELL_MODAL =
-            "Premium For Later Upsell Modal"),
-          (r2.FOR_LATER_CREATE = "For Later Create"),
-          (r2.SERVER_BANNER_TOOLTIP = "Server Banner Tooltip"),
-          (r2.CHANNEL_NOTICE = "Channel Notice"),
-          (r2.CHANNEL_ACTION_SHEET = "Channel Action Sheet"),
-          (r2.CUSTOM_STATUS_MODAL = "Custom Status Modal"),
-          (r2.PAYMENT_AUTHENTICATION_MODAL = "Payment Authentication"),
-          (r2.NOISE_CANCELLATION_POPOUT = "Noise Cancellation Popout"),
-          (r2.IOS_AGE_GATE_MODAL = "iOS Public Server Age Gate"),
-          (r2.DESKTOP_AGE_GATE_MODAL = "Desktop Public Server Age Gate"),
-          (r2.CLAIM_ACCOUNT_MODAL = "Claim Account"),
-          (r2.STREAM_UPSELL_MODAL = "Stream Upsell Modal"),
-          (r2.FILE_UPLOAD_UPSELL_MODAL = "File Upload Upsell Modal"),
-          (r2.MESSAGE_LENGTH_UPSELL_MODAL = "Message Length Upsell Modal"),
-          (r2.USER_PROFILE = "User Profile"),
-          (r2.USER_PROFILE_MUTUAL_FRIENDS = "User Profile Mutual Friends"),
-          (r2.INBOX = "Inbox"),
-          (r2.CHANNEL = "Channel"),
-          (r2.MANAGE_ACCOUNTS_MODAL = "Manage Accounts Modal"),
-          (r2.VOICE_CHANNEL_EFFECTS_UPSELL_MODAL =
-            "Voice Channel Effects Upsell Modal"),
-          (r2.PREMIUM_TIER_0_ANNOUNCEMENT_MODAL =
-            "Premium Tier 0 Announcement Modal"),
-          (r2.BURST_REACTIONS_UPSELL_MODAL = "Burst Reactions Upsell Modal"),
-          (r2.BURST_REACTIONS_TOOLTIP = "Burst Reactions Tooltip"),
-          (r2.CONTACT_SYNC_NC_MODAL = "Contact Sync Notification Center Modal"),
-          (r2.MEDIA_VIEWER = "Media Viewer"),
-          (r2.MARKETING_FLOATING_CTA = "Marketing Floating CTA"),
-          (r2.PREMIUM_GIFT_SUCCESS_MODAL = "Premium Gifting Success Modal"),
-          (r2.CHANNEL_TEXT_AREA = "Channel Text Area"),
-          (r2.THREAD_TEXT_AREA = "THREAD_TEXT_AREA"),
-          (r2.TEXT_IN_VOICE = "TEXT_IN_VOICE"),
-          (r2.FORUM_CHANNEL_TEXT_AREA = "FORUM_CHANNEL_TEXT_AREA"),
-          (r2.CHANNEL_TEXT_AREA_AUTOCOMPLETE =
-            "Channel Text Area Autocomplete"),
-          (r2.CHANNEL_LIST = "Channel List"),
-          (r2.ACTIVITY_PANEL = "Activity Panel"),
-          (r2.MEMBER_LIST = "Member List"),
-          (r2.ACCOUNT_PANEL = "Account Panel"),
-          (r2.CHANNEL_WELCOME_CTA = "Channel Welcome CTA"),
-          (r2.CHANNEL_HEADER = "Channel Header"),
-          (r2.DIRECT_MESSAGE = "Direct Message"),
-          (r2.DM_INVITE = "DM_INVITE"),
-          (r2.ACTIVITY_FEED_GAME_POPOUT = "Game Popout"),
-          (r2.ACTIVITY_FEED_NOW_PLAYING = "Now Playing"),
-          (r2.ACTIVITY_FEED_NOW_PLAYING_HOVER_POPOUT =
-            "Now Playing Hover Popout"),
-          (r2.ACTIVITY_FEED_NOW_PLAYING_CONTEXT_MENU =
-            "Now Playing Context Menu"),
-          (r2.LIBRARY_INSTALL_MODULE = "Install Module"),
-          (r2.LIBRARY_APPLICATION_LIST = "Application List"),
-          (r2.LIBRARY_PREMIUM_APPLICATIONS = "Library Premium Applications"),
-          (r2.LIBRARY_GAME_MODAL = "Game Modal"),
-          (r2.LIBRARY_INVENTORY_CODE_REDEMPTION = "Code Redemption"),
-          (r2.LIBRARY_INVENTORY_GIFTS_LIST = "Gifts List"),
-          (r2.QUESTS = "Quests"),
-          (r2.GIFT_BANNER = "Gift Banner"),
-          (r2.STORE_LISTING_BUY_GAME = "Buy Game"),
-          (r2.STORE_LISTING_BUY = "Buy"),
-          (r2.SETTINGS_TEXT_PLAYGROUND = "Text Playground"),
-          (r2.SETTINGS_DESIGN_SYSTEMS = "Design Systems"),
-          (r2.SETTINGS_INTL_TESTING = "Intl Testing"),
-          (r2.SETTINGS_ACCOUNT = "My Account"),
-          (r2.SETTINGS_GAMES = "Games"),
-          (r2.SETTINGS_EDIT_ACCOUNT = "Edit Account"),
-          (r2.SETTINGS_CHANGE_USERNAME = "Change Username"),
-          (r2.SETTINGS_CHANGE_EMAIL = "Change Email"),
-          (r2.SETTINGS_CONFIRM_PASSWORD = "Confirm Password"),
-          (r2.SETTINGS_CHANGE_PASSWORD = "Change Password"),
-          (r2.SETTINGS_CUSTOMIZE_PROFILE = "Profile Customization"),
-          (r2.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT =
-            "Profile Customization Try It Out"),
-          (r2.SETTINGS_CUSTOMIZE_PROFILE_AVATAR =
-            "Profile Customization Avatar"),
-          (r2.SETTINGS_BACKUP_CODES = "Backup Codes"),
-          (r2.SETTINGS_CONFIRM_VIEW_BACKUP_CODES = "Confirm View Backup Codes"),
-          (r2.SETTINGS_PRIVACY_AND_SAFETY = "Privacy & Safety"),
-          (r2.SETTINGS_CONTENT_AND_SOCIAL = "Content & Social"),
-          (r2.SETTINGS_DATA_AND_PRIVACY = "Data & Privacy"),
-          (r2.SETTINGS_ACCOUNT_STANDING = "Account Standing"),
-          (r2.SETTINGS_AUTHORIZED_APPS = "Authorized Apps"),
-          (r2.SETTINGS_CONNECTIONS = "Connections"),
-          (r2.SETTINGS_FRIEND_REQUESTS = "Friend Requests"),
-          (r2.SETTINGS_CONNECTIONS_XBOX = "Connections Xbox"),
-          (r2.SETTINGS_BILLING = "Billing"),
-          (r2.SETTINGS_SUBSCRIPTIONS = "Subscriptions"),
-          (r2.SETTINGS_PREMIUM = "Discord Nitro"),
-          (r2.SETTINGS_PREMIUM_BANNER = "Nitro Upsell Banner"),
-          (r2.SETTINGS_MOBILE_PREMIUM_BANNER = "Mobile Nitro Upsell Banner"),
-          (r2.SETTINGS_PREMIUM_MANAGE_PLAN = "Manage Nitro Plan"),
-          (r2.SETTINGS_PREMIUM_PLAN_SELECT = "Discord Premium Plan Select"),
-          (r2.SETTINGS_PREMIUM_GIFTING = "Nitro Gifting"),
-          (r2.GUILD_BOOSTING = "Nitro Server Boost"),
-          (r2.GUILD_ROLE_SUBSCRIPTION = "Guild Role Subscription"),
-          (r2.GUILD_ROLE_SUBSCRIPTION_CANCEL =
-            "Guild Role Subscription Cancel"),
-          (r2.SETTINGS_DATA = "Data"),
-          (r2.SETTINGS_HYPESQUAD_ONLINE = "Hypesquad Online"),
-          (r2.SETTINGS_VOICE_AND_VIDEO = "Voice & Video"),
-          (r2.SETTINGS_OVERLAY = "Overlay"),
-          (r2.SETTINGS_NOTIFICATIONS = "Notifications"),
-          (r2.SETTINGS_APP_ICONS = "App Icons"),
-          (r2.SETTINGS_EMAILS = "Email Settings"),
-          (r2.SETTINGS_KEYBINDS = "Keybinds"),
-          (r2.SETTINGS_ACTIVITY_PRIVACY = "Activity Privacy"),
-          (r2.SETTINGS_GAME_ACTIVITY = "Game Activity"),
-          (r2.SETTINGS_TEXT_AND_IMAGES = "Text & Images"),
-          (r2.SETTINGS_APPEARANCE = "Appearance"),
-          (r2.SETTINGS_APPEARANCE_THEME_PICKER = "Appearance Theme Picker"),
-          (r2.SETTINGS_APPEARANCE_APP_ICON_PICKER =
-            "Appearance App Icon Picker"),
-          (r2.SETTINGS_ACCESSIBILITY = "Accessibility"),
-          (r2.SETTINGS_STREAMER_MODE = "Streamer Mode"),
-          (r2.SETTINGS_LANGUAGE = "Language"),
-          (r2.SETTINGS_CHANGELOG = "Change Log"),
-          (r2.SETTINGS_EXPERIMENTS = "Experiments"),
-          (r2.SETTINGS_DEVELOPER_OPTIONS = "Developer Options"),
-          (r2.SETTINGS_HOTSPOT_OPTIONS = "Hotspot Options"),
-          (r2.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS =
-            "Dismissible Content Options"),
-          (r2.SETTINGS_WINDOWS = "Windows"),
-          (r2.SETTINGS_LINUX = "Linux"),
-          (r2.SETTINGS_BLOCKED_USERS = "Blocked Users"),
-          (r2.SETTINGS_INVENTORY = "Library Inventory"),
-          (r2.SETTINGS_DEBUG_LOGS = "Debug Logs"),
-          (r2.SETTINGS_FORCE_JS_CRASH = "Force JS Crash"),
-          (r2.SETTINGS_PUSH_NOTIFICATION_LOGS = "Push Notification Logs"),
-          (r2.SETTINGS_DATABASE_CONTROLS = "Database Controls"),
-          (r2.SETTINGS_STARTUP_TIMINGS = "Startup Timings"),
-          (r2.TEXT_COMPONENT = "Text Component"),
-          (r2.DESIGN_SYSTEM = "Design System"),
-          (r2.DESIGN_SYSTEM_TEXT = "Design System (Text)"),
-          (r2.DESIGN_SYSTEM_BUTTON = "Design System (Button)"),
-          (r2.DESIGN_SYSTEM_BUTTON_GROUP = "Design System (Button Group)"),
-          (r2.DESIGN_SYSTEM_ROW_BUTTON = "Design System (Row Button)"),
-          (r2.DESIGN_SYSTEM_EXPERIMENTAL_BUTTONS =
-            "Design System (Experimental Buttons)"),
-          (r2.DESIGN_SYSTEM_TABLE_ROW = "Design System (Table Row)"),
-          (r2.DESIGN_SYSTEM_ALERT_MODAL = "Design System (Alert Modal)"),
-          (r2.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW =
-            "Design System (Background Blur View)"),
-          (r2.DESIGN_SYSTEM_SHADOWS = "Design System (Shadows)"),
-          (r2.DESIGN_SYSTEM_SEGMENTED_CONTROL =
-            "Design System (Segmented Control)"),
-          (r2.DESIGN_SYSTEM_TABS = "Design System (Tabs)"),
-          (r2.DESIGN_SYSTEM_CONTEXT_MENU = "Design System (Context Menu)"),
-          (r2.DESIGN_SYSTEM_TOAST = "Design System (Toast)"),
-          (r2.DESIGN_SYSTEM_TEXT_INPUT = "Design System (Text Input)"),
-          (r2.DESIGN_SYSTEM_TOOLTIP = "Design System (Tooltip)"),
-          (r2.DESIGN_SYSTEM_COACHMARK = "Design System (Coachmark)"),
-          (r2.DESIGN_SYSTEM_STACK = "Design Systems (Stack)"),
-          (r2.DESIGN_SYSTEM_BACKDROP = "Design Systems (Backdrop)"),
-          (r2.DESIGN_SYSTEM_MODAL = "Design System (Modal)"),
-          (r2.DESIGN_SYSTEM_PILE = "Design Systems (Pile)"),
-          (r2.DESIGN_SYSTEM_SHEETS = "Design Systems (Sheets)"),
-          (r2.DESIGN_SYSTEM_FORM_PRIMITIVES =
-            "Design Systems (Form Primitives)"),
-          (r2.SETTINGS_ADVANCED = "Advanced"),
-          (r2.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE = "Payment Flow Modals"),
-          (r2.SETTINGS_SESSIONS = "Sessions"),
-          (r2.SETTINGS_FAMILY_CENTER = "Family Center"),
-          (r2.SETTINGS_CONTEXT_MENU = "Settings Context Menu"),
-          (r2.SETTINGS_CLIPS = "Settings Clips"),
-          (r2.SETTINGS_CUSTOM_STATUS = "Custom Status"),
-          (r2.SETTINGS_EDIT_PROFILE = "Edit Profile"),
-          (r2.SETTINGS_BROWSER = "Browser"),
-          (r2.SETTINGS_OVERVIEW = "Overview"),
-          (r2.SETTINGS_CUSTOM_STATUS_EMOJI_PICKER =
-            "Custom Status Emoji Picker"),
-          (r2.SETTINGS_DESKTOP_APP = "Desktop Only"),
-          (r2.SETTINGS_BUILD_OVERRIDE = "Build Override"),
-          (r2.SETTINGS_CHECK_NATIVE_UPDATE = "Check For Native Update"),
-          (r2.SETTINGS_INSTALL_NATIVE_UPDATE = "Install Native Build"),
-          (r2.SETTINGS_CHANGELOG_OVERRIDE = "Changelog Override"),
-          (r2.SETTINGS_SOUNDS = "Sounds"),
-          (r2.SETTINGS_CLIENT_THEMES = "Client Themes"),
-          (r2.SETTINGS_WEBAUTHN_VIEW = "View Security Keys"),
-          (r2.SETTINGS_PUBLIC_WELCOME = "Welcome Screen Settings"),
-          (r2.SETTINGS_POGGERMODE = "Powermode Settings"),
-          (r2.GUILD_ROLE_CREATION_MODAL = "Guild Role Creation Modal"),
-          (r2.GUILD_ROLE_TEMPLATE_POPOUT = "Guild Role Template Popout"),
-          (r2.GUILD_CREATE_MODAL = "Guild Create Modal"),
-          (r2.GUILD_SETTINGS_STICKERS = "Guild Stickers Settings"),
-          (r2.GUILD_SETTINGS_EMOJI = "Guild Emoji Settings"),
-          (r2.GUILD_SETTINGS_VANITY_URL = "Guild Vanity Url"),
-          (r2.GUILD_SETTINGS_ONBOARDING = "Guild Onboarding Settings"),
-          (r2.GUILD_SETTINGS_SOUNDBOARD = "Guild Soundboard Settings"),
-          (r2.MEMBER_SAFETY_PAGE = "Member Safety Page"),
-          (r2.GUILD_SETTINGS_MEMBERS = "guild settings members page"),
-          (r2.GUILD_ROLE_EDIT_UPSELL_MODAL = "Guild Role Edit Upsell Modal"),
-          (r2.APPLICATION_EMBED = "Application Embed"),
-          (r2.GIFT_CODE_EMBED = "Gift Code Embed"),
-          (r2.GIFT_CODE_ROW = "Gift Code Row"),
-          (r2.PREMIUM_GIFT_AVAILABLE_ALERT = "Premium Gift Available Alert"),
-          (r2.GUILD_LIST = "Guild List"),
-          (r2.GUILD_HEADER = "Guild Header"),
-          (r2.GUILD_HEADER_POPOUT = "Guild Header Popout"),
-          (r2.GUILD_INVITE_BACKGROUND = "Guild Invite Background"),
-          (r2.GUILD_BANNER = "Guild Banner"),
-          (r2.ANIMATED_GUILD_BANNER_UPSELL = "Animated Guild Banner Upsell"),
-          (r2.STREAM_VIEWER_POPOUT = "Stream Viewer Popout"),
-          (r2.STREAM_SETTINGS = "Stream Settings"),
-          (r2.STREAM_QUALITY_INDICATOR = "Stream Quality Indicator"),
-          (r2.DISCOVER_SEARCH = "Search"),
-          (r2.DISCOVER_GAMES_YOU_PLAY = "Games You Play"),
-          (r2.DISCOVER_POPULAR = "Popular"),
-          (r2.DISCOVER_COLLECTION_GAMING = "Gaming"),
-          (r2.DISCOVER_COLLECTION_COMICS_HEROES = "Comics / Heroes"),
-          (r2.DISCOVER_COLLECTION_ANIME = "Anime"),
-          (r2.DISCOVER_COLLECTION_MUSIC = "Music"),
-          (r2.DISCOVER_COLLECTION_ESPORTS = "electronic-Sports"),
-          (r2.DISCOVERY_SETUP_MODAL = "Discovery Setup Modal"),
-          (r2.DISCOVERY_SETUP_SUCCESS_MODAL = "Discovery Setup Success Modal"),
-          (r2.PREMIUM_GUILD_USER_MODAL_CTA_BAR = "CTA Bar"),
-          (r2.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR = "Floating CTA Bar"),
-          (r2.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR = "Progress Bar"),
-          (r2.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA = "Boost Any Guild CTA"),
-          (r2.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA =
-            "Recommended Server Boost This Server CTA"),
-          (r2.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA =
-            "Recommended Server Go To Server CTA"),
-          (r2.ICYMI_RECOMMENDED_SERVERS = "Recommended Servers"),
-          (r2.REGISTER = "Register"),
-          (r2.LOGIN = "Login"),
-          (r2.OVERLAY = "Overlay"),
-          (r2.STICKERS_SHOP = "Stickers Shop"),
-          (r2.STICKER_PACK_VIEW_ALL = "Sticker Pack View All"),
-          (r2.STICKER_PICKER_UPSELL = "Sticker Picker Upsell"),
-          (r2.STICKER_PREMIUM_TIER_2_UPSELL_MODAL =
-            "Stickers Nitro Upsell Modal"),
-          (r2.STICKER_PREMIUM_TIER_1_UPSELL_MODAL =
-            "Stickers Nitro Classic Upsell Modal"),
-          (r2.STICKER_POPOUT = "Sticker Popout"),
-          (r2.EXPRESSION_PICKER = "Expression Picker"),
-          (r2.STANDALONE_VIDEO_PLAYER = "Standalone Video Player"),
-          (r2.SUPER_REACTION_PICKER = "Super Reaction Picker"),
-          (r2.SOUNDBOARD_SOUND_PICKER = "Soundboard Sound Picker"),
-          (r2.SOUNDBOARD_SOUND_PICKER_UPSELL =
-            "Soundboard Sound Picker Upsell"),
-          (r2.CONTACT_SYNC_MODAL = "Contact Sync"),
-          (r2.CONTACT_SYNC_EMPTY_CTA = "Contact Sync Empty CTA"),
-          (r2.HUB_WELCOME_CTA = "Hub Welcome CTA"),
-          (r2.GUILD_CAP_UPSELL_MODAL = "Guild Cap Upsell Modal"),
-          (r2.CHAT_USERNAME = "Chat Username"),
-          (r2.GUILD_DROPDOWN_MENU = "Guild Dropdown Menu"),
-          (r2.PREMIUM_GUILD_MEMBER_PROFILE =
-            "Edit Premium Guild Member Profile"),
-          (r2.CREATE_THREAD_SIDEBAR = "Create Thread Sidebar"),
-          (r2.THREAD_ARCHIVAL_DURATION_SHEET =
-            "Thread Archival Duration Sheet"),
-          (r2.THREAD_CREATION_OPTIONS = "Thread Creation Options"),
-          (r2.THREAD_CONTEXT_MENU = "Thread Context Menu"),
-          (r2.THREAD_MEMBER_LIST = "Thread Member List"),
-          (r2.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL =
-            "Upload File or Choose GIF Modal"),
-          (r2.GIF_PICKER_AVATAR_OR_BANNER_MODAL = "GIF Picker Modal"),
-          (r2.CROP_GIF_MODAL = "Crop GIF Modal"),
-          (r2.CUSTOM_ROLE_ICONS_TOOLTIP = "Custom Role Icons Tooltip"),
-          (r2.GUILD_BOTTOM_SHEET = "Guild Bottom Sheet"),
-          (r2.USER_BOTTOM_SHEET = "User Bottom Sheet"),
-          (r2.MARKETING_BOTTOM_SHEET = "Marketing Bottom Sheet"),
-          (r2.PURCHASE_SINGLE_PREMIUM_GUILD_SUBSCRIPTION = "Buy Single Boosts"),
-          (r2.PREMIUM_GUILD_SUBSCRIPTION_TIER_1 =
-            "Premium Guild Subscription Tier 1"),
-          (r2.PREMIUM_GUILD_SUBSCRIPTION_TIER_2 =
-            "Premium Guild Subscription Tier 2"),
-          (r2.PREMIUM_GUILD_SUBSCRIPTION_TIER_3 =
-            "Premium Guild Subscription Tier 3"),
-          (r2.NITRO_CROSS_PROMO_FROM_BOOSTING =
-            "Nitro Cross Promo From Boosting"),
-          (r2.SCHEDULED_GUILD_EVENT_INFORMATION_DIALOG =
-            "Scheduled Guild Event Information Dialog"),
-          (r2.FRIENDS_LIST = "Friends List"),
-          (r2.FRIENDS_ADD_FRIENDS_MODAL = "Add Friends Modal"),
-          (r2.FRIENDS_ADD_FRIENDS_MODAL_SEARCH = "Add Friends Modal Search"),
-          (r2.FRIENDS_ADD_BY_USERNAME_MODAL = "Add by Username Modal"),
-          (r2.FRIENDS_REQUESTS_MODAL = "Friend Requests Modal"),
-          (r2.FRIENDS_SUGGESTED_FRIENDS_MODAL = "Suggested Friends Modal"),
-          (r2.FRIENDS_LIST_FRIEND_ROW = "Friend Row"),
-          (r2.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT = "Friend Row Gift Popout"),
-          (r2.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW =
-            "Guild Member Verification Application Review"),
-          (r2.GUILD_MEMBER_VERIFICATION_APPLICATION_INTERVIEW =
-            "Guild Member Verification Application Interview"),
-          (r2.ACTIVE_NOW_COLUMN = "Active Now Column"),
-          (r2.GUILD_CHANNEL_LIST = "Guild Channel List"),
-          (r2.INVITE_LINK = "Invite Link"),
-          (r2.RTC_CONNECTION_PANEL = "RTC Connection Panel"),
-          (r2.VOICE_CHANNEL_TILE = "Voice Channel Tile"),
-          (r2.VOICE_CONTROL_TRAY = "Voice Control Tray"),
-          (r2.EMBEDDED_ACTIVITY_LAUNCH_FAIL = "Embedded Activity Launch Fail"),
-          (r2.FOCUS_EXPANDED_CONTROLS = "Focus Expanded Controls"),
-          (r2.CHANNEL_CALL_ACTION_BAR = "Channel Call Action Bar"),
-          (r2.ACTIVITY_SHELF = "Activity Shelf"),
-          (r2.ACTIVITY_UPSELL_ACTION_SHEET = "Activity Upsell Action Sheet"),
-          (r2.AGGREGATE_PREMIUM_UPSELL_MODAL =
-            "Aggregate Premium Upsell Modal"),
-          (r2.VOICE_CHANNEL_EFFECTS_BAR = "Voice Channel Effect Emoji Hotbar"),
-          (r2.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER =
-            "Voice Channel Effect Emoji Picker"),
-          (r2.PREMIUM_MARKETING_SURFACE_SIDEBAR =
-            "Premium Marketing Surface Sidebar"),
-          (r2.CHANNEL_BROWSER = "Channel Browser"),
-          (r2.FORUM_CHANNEL_POST = "Forum Channel Post"),
-          (r2.FORUM_CHANNEL_HEADER = "Forum Channel Header"),
-          (r2.FORUM_CHANNEL_FOOTER = "Forum Channel Footer"),
-          (r2.FORUM_CHANNEL_GUIDELINES = "Forum Channel Guidelines"),
-          (r2.FORUM_POST_HEADER = "Forum Post Header"),
-          (r2.NOTIFICATION_CENTER = "Notification Center"),
-          (r2.STAGE_VIDEO_LIMIT = "Stage Video Limit"),
-          (r2.CHANNEL_PIN = "Channel Pin"),
-          (r2.CHANNEL_SETTINGS = "Channel Settings"),
-          (r2.CHANNEL_SEARCH = "Channel Search"),
-          (r2.NEW_MESSAGE_COMPOSER = "New Message Composer"),
-          (r2.FAMILY_CENTER = "Family Center"),
-          (r2.ADD_PRIVATE_CHANNEL_INTEGRATION_MODAL =
-            "Add Private Channel Integration Modal"),
-          (r2.REMIX_UPSELL_ACTIONSHEET = "Remix Upsell Actionsheet"),
-          (r2.COMMUNITY_ALERTS = "Community Alerts Settings"),
-          (r2.HIGHLIGHT_NOTIFICATIONS = "Highlight notification settings"),
-          (r2.SUMMARY_ACTION_SHEET = "Summary Action Sheet"),
-          (r2.COLLECTIBLES_SHOP_DETAILS_MODAL =
-            "Collectibles Shop Details Modal"),
-          (r2.PROFILE_EFFECT_CUSTOMIZATION = "Profile Effect Customization"),
-          (r2.COLLECTIBLES_SHOP = "Shop"),
-          (r2.SHOP_PRODUCT_DETAILS = "Shop Product Details"),
-          (r2.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS =
-            "Collectibles Shop View All Category Items"),
-          (r2.PROFILE_EFFECTS_PREVIEW_TOOL = "Profile Effects Preview Tool"),
-          (r2.APPEAL_INGESTION_SPEED_BUMP = "Appeal Ingestion Speed Bump"),
-          (r2.APPEAL_INGESTION_COLLECT_SIGNAL =
-            "Appeal Ingestion Collect Signal"),
-          (r2.APPEAL_INGESTION_REQUEST_REVIEW =
-            "Appeal Ingestion Request a Review"),
-          (r2.APPEAL_INGESTION_WHY_DISAGREE =
-            "Appeal Ingestion Why do you Disagree?"),
-          (r2.APPEAL_INGESTION_FREE_TEXT = "Appeal Ingestion Free Text"),
-          (r2.APPEAL_INGESTION_CONFIRM_SUBMISSION =
-            "Appeal Ingestion Confirm Submission"),
-          (r2.APPEAL_INGESTION_REQUEST_SENT = "Appeal Ingestion Request Sent"),
-          (r2.APPEAL_INGESTION_THANKS = "Appeal Ingestion Thanks"),
-          (r2.APPEAL_INGESTION_SPAM = "Appeal Ingestion Spam"),
-          (r2.SETTINGS_SURVEY_OVERRIDE = "Survey Override"),
-          (r2.QUEST_PREVIEW_TOOL = "Quest Preview Tool"),
-          (r2.SECURE_FRAMES_STREAM_BOTTOM_SHEET =
-            "Secure Frames Stream Bottom Sheet"),
-          (r2.SECURE_FRAMES_VOICE_BOTTOM_SHEET =
-            "Secure Frames Voice Bottom Sheet"),
-          (r2.SECURE_FRAMES_VERIFIED_DEVICES =
-            "Secure Frames Verified Devices"),
-          (r2.SECURE_FRAMES = "Secure Frames"),
-          (r2.REVERSE_TRIAL_UPSELL_MODAL = "Reverse trial Upsell Modal"),
-          (r2.WEB_SETTING_TREE_TOOL = "Web Setting Tree Tool"),
-          ((r3 = eT || (eT = {})).TOOLTIP = "Tooltip"),
-          (r3.CARD = "Card"),
-          (r3.CAROUSEL = "Carousel"),
-          (r3.NAVIGATION_LINK = "Nav Link"),
-          (r3.SUBSCRIBE_TO_TIER_BUTTON = "Subscribe up to Tier Button"),
-          (r3.BUTTON_BROWSE = "Button Browse"),
-          (r3.BUTTON_HOME = "Button Home"),
-          (r3.BUTTON_BACK = "Button Back"),
-          (r3.BUTTON_CTA = "Button CTA"),
-          (r3.BUTTON_ICON = "Button Icon"),
-          (r3.MENU_LINK = "Menu Link"),
-          (r3.WEB_URL = "Web URL"),
-          (r3.LIST_ITEM = "List Item"),
-          (r3.RADIO_ITEM = "Radio Item"),
+        ((r3 = eA || (eA = {})).HERO = "Hero"),
+          (r3.BODY = "Body"),
+          (r3.NAVIGATION = "Navigation"),
+          (r3.TABS = "Tabs"),
           (r3.CONTEXT_MENU = "Context Menu"),
-          (r3.CONTEXT_MENU_ITEM = "Context Menu Item"),
-          (r3.SEARCH = "Search"),
-          (r3.ALTERNATIVE_SKU = "Alternative Sku"),
-          (r3.HOVER_MENU = "Hover Menu"),
-          (r3.AVATAR = "Avatar"),
-          (r3.ANIMATED_AVATAR = "Animated Avatar"),
-          (r3.EDIT_GUILD_PROFILE_AVATAR = "Edit Guild Profile Avatar"),
-          (r3.CHANNEL = "Channel"),
-          (r3.CHANNEL_TAG = "Channel Tag"),
-          (r3.BADGE = "Badge"),
-          (r3.STICKER_SEARCH_VIEW_ALL = "Sticker Search View All"),
-          (r3.STICKER_PICKER_VIEW_ALL = "Sticker Picker View All"),
-          (r3.STICKER_POPOUT_VIEW_ALL = "Sticker Popout View All"),
-          (r3.STICKER_PICKER_PURCHASE_BUTTON =
-            "Sticker Picker Purchase Button"),
-          (r3.STICKER_PICKER_UPSELL_BUTTON = "Sticker Picker Upsell Button"),
-          (r3.STICKER_POPOUT_PURCHASE_BUTTON =
-            "Sticker Popout Purchase Button"),
-          (r3.NUDGED_STICKER = "Nudged Sticker"),
-          (r3.EXPRESSION_SUGGESTIONS = "Expression Suggestions"),
-          (r3.STICKER = "Sticker"),
-          (r3.EMOJI = "Emoji"),
-          (r3.SOUNDBOARD_SOUND = "Soundboard Sound"),
-          (r3.EDIT_PER_SERVER_IDENTITY = "Edit Per Server Identity"),
-          (r3.EDIT_PROFILE_BANNER = "Edit Profile Banner"),
-          (r3.EDIT_GUILD_PROFILE_BANNER = "Edit Guild Profile Banner"),
-          (r3.BOOSTING_BANNER = "Boosting Banner"),
-          (r3.BOOST_LEVEL_UPSELL_BUTTON = "Boost Level Upsell Button"),
-          (r3.BOOST_UPSELL_LOST_LEVEL_HEADER =
-            "Boost Upsell Lost Level Header"),
-          (r3.BOOST_UPSELL_NEXT_LEVEL_HEADER =
-            "Boost Upsell Next Level Header"),
-          (r3.BOOST_UPSELL_BANNER_LOST_LEVEL =
-            "Boost Upsell Banner for Lost Level"),
-          (r3.BOOST_UPSELL_BANNER_SLOTS_FULL =
-            "Boost Upsell Banner for Slots Full"),
-          (r3.BOOST_GEM_ICON = "Boost Gem Icon"),
-          (r3.BOOST_ANNOUNCEMENT_UPSELL = "Boost Announcement Upsell"),
-          (r3.PRIVATE_THREAD_CHECKBOX = "Private Thread Checkbox"),
-          (r3.LEARN_MORE = "Learn More"),
-          (r3.UPLOAD_IMAGE = "Upload Image"),
-          (r3.PREMIUM_UPSELL_BUTTON = "Nitro upsell button"),
-          (r3.PREMIUM_UPSELL_BANNER = "Nitro upsell banner"),
-          (r3.PREMIUM_SUBSCRIPTION_PAYMENT_FLOW_COMPLETED =
-            "Nitro Payment Flow Completed"),
-          (r3.PREMIUM_SUBSCRIPTION = "Discord Nitro"),
-          (r3.PREMIUM_GUILD_SUBSCRIPTION = "Server Boost"),
-          (r3.PREMIUM_GUILD_SUBSCRIPTION_WITH_PREMIUM_SUBSCRIPTION =
-            "Server Boost (Has Nitro)"),
-          (r3.GIF_CROPPING_MODAL = "GIF Cropping Modal"),
-          (r3.IMAGE_CROPPING_MODAL = "Image Cropping Modal"),
-          (r3.UPSELL_HEADER = "Upsell Header"),
-          (r3.TRY_IT_CTA = "Try It CTA"),
-          (r3.SEASONAL_BUTTON_ICON = "Seasonal button icon"),
-          (r3.NITROWEEN_BUTTON_ICON = "Nitroween button icon"),
-          (r3.ACTIONED_BY_USER = "Actioned By User"),
-          (r3.JOIN_REQUEST = "Join Request"),
+          (r3.HEADER = "Header"),
+          (r3.FOOTER = "Footer"),
+          (r3.DIRECT_ROUTE_ACCESS = "Direct Route Access"),
+          (r3.NOTIFICATION_BAR = "Notification Bar"),
+          (r3.PROFILE_MODAL = "Profile Modal"),
+          (r3.EMOJI_PICKER_POPOUT = "Emoji Picker Popout"),
+          (r3.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_POPOUT =
+            "Voice Channel Effect Emoji Picker Popout"),
+          (r3.FILE_UPLOAD_POPOUT = "File Upload Popout"),
+          (r3.GUILD_POPOUT = "Guild Popout"),
+          (r3.BITE_SIZE_PROFILE_POPOUT = "Bite Size Profile Popout"),
+          (r3.ROLE_ICON_POPOUT = "Role Icon Popout"),
+          (r3.GAME_MODAL = "Game Modal"),
+          (r3.GAME_POPOUT = "Game Popout"),
+          (r3.EMOJI_UPSELL_POPOUT = "Emoji Upsell Popout"),
+          (r3.EMOJI_PICKER_FLOATING_UPSELL = "Emoji Picker Floating Upsell"),
+          (r3.SOUND_PICKER_FLOATING_UPSELL = "Sound Picker Floating Upsell"),
+          (r3.EMPTY_STICKER_PICKER_UPSELL = "Empty Sticker Picker Upsell"),
+          (r3.FOR_LATER_POPOUT_UPSELL = "For Later Popout Upsell"),
+          (r3.CREATE_STICKER_MODAL = "Create Sticker Modal"),
+          (r3.IOS_TWO_FA_MODAL = "Two Factor Auth Modal"),
+          (r3.IOS_TWO_FA_EMAIL_VERIFICATION = "Two Factor Email Verification"),
+          (r3.IOS_TWO_FA_LANDING = "Two Factor Auth Landing"),
+          (r3.IOS_TWO_FA_SCAN = "Two Factor Auth Scan Code"),
+          (r3.IOS_TWO_FA_ENTER_CODE = "Two Factor Auth Enter Code"),
+          (r3.IOS_TWO_FA_SUCCESS = "Two Factor Auth Enable Success"),
+          (r3.IOS_TWO_FA_ADD_SMS = "Two Factor Auth Add SMS"),
+          (r3.IOS_TWO_FA_VERIFY_SMS = "Two Factor Auth Verify SMS"),
+          (r3.IOS_CANNOT_MANAGE_SUBSCRIPTION =
+            "iOS Cannot Manage Subscription"),
+          (r3.PREMIUM_GUILD_INVITE_SPLASH = "Premium Guild Invite Splash"),
+          (r3.PREMIUM_GUILD_PROGRESS_BAR = "Premium Guild Progress Bar"),
+          (r3.PREMIUM_GUILD_SUBSCRIBE_MODAL = "Premium Guild Subscribe Modal"),
+          (r3.PREMIUM_GUILD_SUBSCRIBE_CONFIRMATION_MODAL =
+            "Premium Guild Subscribe Confirmation Modal"),
+          (r3.PREMIUM_GUILD_UNSUBSCRIBE_MODAL =
+            "Premium Guild Unsubscribe Modal"),
+          (r3.PREMIUM_GUILD_PURCHASE_MODAL = "Premium Guild Purchase Modal"),
+          (r3.PREMIUM_GUILD_UPSELL_MODAL = "Premium Guild Upsell Modal"),
+          (r3.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_MODAL =
+            "Premium Guild Member Profile Upsell Modal"),
+          (r3.PREMIUM_CUSTOM_NOTIFICATION_SOUND_UPSELL_MODAL =
+            "Premium Custom Notification Sound Upsell"),
+          (r3.PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL =
+            "Premium Custom Notification Sound Settings Upsell"),
+          (r3.PREMIUM_PERKS_DEMO_UPSELL_MODAL =
+            "Premium Perks Demo Upsell Modal"),
+          (r3.PREMIUM_FOR_LATER_UPSELL_MODAL =
+            "Premium For Later Upsell Modal"),
+          (r3.FOR_LATER_CREATE = "For Later Create"),
           (r3.SERVER_BANNER_TOOLTIP = "Server Banner Tooltip"),
-          (r3.THREAD_ARCHIVE_DURATION_DROPDOWN =
+          (r3.CHANNEL_NOTICE = "Channel Notice"),
+          (r3.CHANNEL_ACTION_SHEET = "Channel Action Sheet"),
+          (r3.CUSTOM_STATUS_MODAL = "Custom Status Modal"),
+          (r3.PAYMENT_AUTHENTICATION_MODAL = "Payment Authentication"),
+          (r3.NOISE_CANCELLATION_POPOUT = "Noise Cancellation Popout"),
+          (r3.IOS_AGE_GATE_MODAL = "iOS Public Server Age Gate"),
+          (r3.DESKTOP_AGE_GATE_MODAL = "Desktop Public Server Age Gate"),
+          (r3.CLAIM_ACCOUNT_MODAL = "Claim Account"),
+          (r3.STREAM_UPSELL_MODAL = "Stream Upsell Modal"),
+          (r3.FILE_UPLOAD_UPSELL_MODAL = "File Upload Upsell Modal"),
+          (r3.MESSAGE_LENGTH_UPSELL_MODAL = "Message Length Upsell Modal"),
+          (r3.USER_PROFILE = "User Profile"),
+          (r3.USER_PROFILE_MUTUAL_FRIENDS = "User Profile Mutual Friends"),
+          (r3.INBOX = "Inbox"),
+          (r3.CHANNEL = "Channel"),
+          (r3.MANAGE_ACCOUNTS_MODAL = "Manage Accounts Modal"),
+          (r3.VOICE_CHANNEL_EFFECTS_UPSELL_MODAL =
+            "Voice Channel Effects Upsell Modal"),
+          (r3.PREMIUM_TIER_0_ANNOUNCEMENT_MODAL =
+            "Premium Tier 0 Announcement Modal"),
+          (r3.BURST_REACTIONS_UPSELL_MODAL = "Burst Reactions Upsell Modal"),
+          (r3.BURST_REACTIONS_TOOLTIP = "Burst Reactions Tooltip"),
+          (r3.CONTACT_SYNC_NC_MODAL = "Contact Sync Notification Center Modal"),
+          (r3.MEDIA_VIEWER = "Media Viewer"),
+          (r3.MARKETING_FLOATING_CTA = "Marketing Floating CTA"),
+          (r3.PREMIUM_GIFT_SUCCESS_MODAL = "Premium Gifting Success Modal"),
+          (r3.CHANNEL_TEXT_AREA = "Channel Text Area"),
+          (r3.THREAD_TEXT_AREA = "THREAD_TEXT_AREA"),
+          (r3.TEXT_IN_VOICE = "TEXT_IN_VOICE"),
+          (r3.FORUM_CHANNEL_TEXT_AREA = "FORUM_CHANNEL_TEXT_AREA"),
+          (r3.CHANNEL_TEXT_AREA_AUTOCOMPLETE =
+            "Channel Text Area Autocomplete"),
+          (r3.CHANNEL_LIST = "Channel List"),
+          (r3.ACTIVITY_PANEL = "Activity Panel"),
+          (r3.MEMBER_LIST = "Member List"),
+          (r3.ACCOUNT_PANEL = "Account Panel"),
+          (r3.CHANNEL_WELCOME_CTA = "Channel Welcome CTA"),
+          (r3.CHANNEL_HEADER = "Channel Header"),
+          (r3.DIRECT_MESSAGE = "Direct Message"),
+          (r3.DM_INVITE = "DM_INVITE"),
+          (r3.ACTIVITY_FEED_GAME_POPOUT = "Game Popout"),
+          (r3.ACTIVITY_FEED_NOW_PLAYING = "Now Playing"),
+          (r3.ACTIVITY_FEED_NOW_PLAYING_HOVER_POPOUT =
+            "Now Playing Hover Popout"),
+          (r3.ACTIVITY_FEED_NOW_PLAYING_CONTEXT_MENU =
+            "Now Playing Context Menu"),
+          (r3.LIBRARY_INSTALL_MODULE = "Install Module"),
+          (r3.LIBRARY_APPLICATION_LIST = "Application List"),
+          (r3.LIBRARY_PREMIUM_APPLICATIONS = "Library Premium Applications"),
+          (r3.LIBRARY_GAME_MODAL = "Game Modal"),
+          (r3.LIBRARY_INVENTORY_CODE_REDEMPTION = "Code Redemption"),
+          (r3.LIBRARY_INVENTORY_GIFTS_LIST = "Gifts List"),
+          (r3.QUESTS = "Quests"),
+          (r3.GIFT_BANNER = "Gift Banner"),
+          (r3.STORE_LISTING_BUY_GAME = "Buy Game"),
+          (r3.STORE_LISTING_BUY = "Buy"),
+          (r3.SETTINGS_TEXT_PLAYGROUND = "Text Playground"),
+          (r3.SETTINGS_DESIGN_SYSTEMS = "Design Systems"),
+          (r3.SETTINGS_INTL_TESTING = "Intl Testing"),
+          (r3.SETTINGS_ACCOUNT = "My Account"),
+          (r3.SETTINGS_GAMES = "Games"),
+          (r3.SETTINGS_EDIT_ACCOUNT = "Edit Account"),
+          (r3.SETTINGS_CHANGE_USERNAME = "Change Username"),
+          (r3.SETTINGS_CHANGE_EMAIL = "Change Email"),
+          (r3.SETTINGS_CONFIRM_PASSWORD = "Confirm Password"),
+          (r3.SETTINGS_CHANGE_PASSWORD = "Change Password"),
+          (r3.SETTINGS_CUSTOMIZE_PROFILE = "Profile Customization"),
+          (r3.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT =
+            "Profile Customization Try It Out"),
+          (r3.SETTINGS_CUSTOMIZE_PROFILE_AVATAR =
+            "Profile Customization Avatar"),
+          (r3.SETTINGS_BACKUP_CODES = "Backup Codes"),
+          (r3.SETTINGS_CONFIRM_VIEW_BACKUP_CODES = "Confirm View Backup Codes"),
+          (r3.SETTINGS_PRIVACY_AND_SAFETY = "Privacy & Safety"),
+          (r3.SETTINGS_CONTENT_AND_SOCIAL = "Content & Social"),
+          (r3.SETTINGS_DATA_AND_PRIVACY = "Data & Privacy"),
+          (r3.SETTINGS_ACCOUNT_STANDING = "Account Standing"),
+          (r3.SETTINGS_AUTHORIZED_APPS = "Authorized Apps"),
+          (r3.SETTINGS_CONNECTIONS = "Connections"),
+          (r3.SETTINGS_FRIEND_REQUESTS = "Friend Requests"),
+          (r3.SETTINGS_CONNECTIONS_XBOX = "Connections Xbox"),
+          (r3.SETTINGS_BILLING = "Billing"),
+          (r3.SETTINGS_SUBSCRIPTIONS = "Subscriptions"),
+          (r3.SETTINGS_PREMIUM = "Discord Nitro"),
+          (r3.SETTINGS_PREMIUM_BANNER = "Nitro Upsell Banner"),
+          (r3.SETTINGS_MOBILE_PREMIUM_BANNER = "Mobile Nitro Upsell Banner"),
+          (r3.SETTINGS_PREMIUM_MANAGE_PLAN = "Manage Nitro Plan"),
+          (r3.SETTINGS_PREMIUM_PLAN_SELECT = "Discord Premium Plan Select"),
+          (r3.SETTINGS_PREMIUM_GIFTING = "Nitro Gifting"),
+          (r3.GUILD_BOOSTING = "Nitro Server Boost"),
+          (r3.GUILD_ROLE_SUBSCRIPTION = "Guild Role Subscription"),
+          (r3.GUILD_ROLE_SUBSCRIPTION_CANCEL =
+            "Guild Role Subscription Cancel"),
+          (r3.SETTINGS_DATA = "Data"),
+          (r3.SETTINGS_HYPESQUAD_ONLINE = "Hypesquad Online"),
+          (r3.SETTINGS_VOICE_AND_VIDEO = "Voice & Video"),
+          (r3.SETTINGS_OVERLAY = "Overlay"),
+          (r3.SETTINGS_NOTIFICATIONS = "Notifications"),
+          (r3.SETTINGS_APP_ICONS = "App Icons"),
+          (r3.SETTINGS_EMAILS = "Email Settings"),
+          (r3.SETTINGS_KEYBINDS = "Keybinds"),
+          (r3.SETTINGS_ACTIVITY_PRIVACY = "Activity Privacy"),
+          (r3.SETTINGS_GAME_ACTIVITY = "Game Activity"),
+          (r3.SETTINGS_TEXT_AND_IMAGES = "Text & Images"),
+          (r3.SETTINGS_APPEARANCE = "Appearance"),
+          (r3.SETTINGS_APPEARANCE_THEME_PICKER = "Appearance Theme Picker"),
+          (r3.SETTINGS_APPEARANCE_APP_ICON_PICKER =
+            "Appearance App Icon Picker"),
+          (r3.SETTINGS_ACCESSIBILITY = "Accessibility"),
+          (r3.SETTINGS_STREAMER_MODE = "Streamer Mode"),
+          (r3.SETTINGS_LANGUAGE = "Language"),
+          (r3.SETTINGS_CHANGELOG = "Change Log"),
+          (r3.SETTINGS_EXPERIMENTS = "Experiments"),
+          (r3.SETTINGS_DEVELOPER_OPTIONS = "Developer Options"),
+          (r3.SETTINGS_HOTSPOT_OPTIONS = "Hotspot Options"),
+          (r3.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS =
+            "Dismissible Content Options"),
+          (r3.SETTINGS_WINDOWS = "Windows"),
+          (r3.SETTINGS_LINUX = "Linux"),
+          (r3.SETTINGS_BLOCKED_USERS = "Blocked Users"),
+          (r3.SETTINGS_INVENTORY = "Library Inventory"),
+          (r3.SETTINGS_DEBUG_LOGS = "Debug Logs"),
+          (r3.SETTINGS_FORCE_JS_CRASH = "Force JS Crash"),
+          (r3.SETTINGS_PUSH_NOTIFICATION_LOGS = "Push Notification Logs"),
+          (r3.SETTINGS_DATABASE_CONTROLS = "Database Controls"),
+          (r3.SETTINGS_STARTUP_TIMINGS = "Startup Timings"),
+          (r3.TEXT_COMPONENT = "Text Component"),
+          (r3.DESIGN_SYSTEM = "Design System"),
+          (r3.DESIGN_SYSTEM_TEXT = "Design System (Text)"),
+          (r3.DESIGN_SYSTEM_BUTTON = "Design System (Button)"),
+          (r3.DESIGN_SYSTEM_BUTTON_GROUP = "Design System (Button Group)"),
+          (r3.DESIGN_SYSTEM_ROW_BUTTON = "Design System (Row Button)"),
+          (r3.DESIGN_SYSTEM_EXPERIMENTAL_BUTTONS =
+            "Design System (Experimental Buttons)"),
+          (r3.DESIGN_SYSTEM_TABLE_ROW = "Design System (Table Row)"),
+          (r3.DESIGN_SYSTEM_ALERT_MODAL = "Design System (Alert Modal)"),
+          (r3.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW =
+            "Design System (Background Blur View)"),
+          (r3.DESIGN_SYSTEM_SHADOWS = "Design System (Shadows)"),
+          (r3.DESIGN_SYSTEM_SEGMENTED_CONTROL =
+            "Design System (Segmented Control)"),
+          (r3.DESIGN_SYSTEM_TABS = "Design System (Tabs)"),
+          (r3.DESIGN_SYSTEM_CONTEXT_MENU = "Design System (Context Menu)"),
+          (r3.DESIGN_SYSTEM_TOAST = "Design System (Toast)"),
+          (r3.DESIGN_SYSTEM_TEXT_INPUT = "Design System (Text Input)"),
+          (r3.DESIGN_SYSTEM_TOOLTIP = "Design System (Tooltip)"),
+          (r3.DESIGN_SYSTEM_COACHMARK = "Design System (Coachmark)"),
+          (r3.DESIGN_SYSTEM_STACK = "Design Systems (Stack)"),
+          (r3.DESIGN_SYSTEM_BACKDROP = "Design Systems (Backdrop)"),
+          (r3.DESIGN_SYSTEM_MODAL = "Design System (Modal)"),
+          (r3.DESIGN_SYSTEM_PILE = "Design Systems (Pile)"),
+          (r3.DESIGN_SYSTEM_SHEETS = "Design Systems (Sheets)"),
+          (r3.DESIGN_SYSTEM_FORM_PRIMITIVES =
+            "Design Systems (Form Primitives)"),
+          (r3.SETTINGS_ADVANCED = "Advanced"),
+          (r3.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE = "Payment Flow Modals"),
+          (r3.SETTINGS_SESSIONS = "Sessions"),
+          (r3.SETTINGS_FAMILY_CENTER = "Family Center"),
+          (r3.SETTINGS_CONTEXT_MENU = "Settings Context Menu"),
+          (r3.SETTINGS_CLIPS = "Settings Clips"),
+          (r3.SETTINGS_CUSTOM_STATUS = "Custom Status"),
+          (r3.SETTINGS_EDIT_PROFILE = "Edit Profile"),
+          (r3.SETTINGS_BROWSER = "Browser"),
+          (r3.SETTINGS_OVERVIEW = "Overview"),
+          (r3.SETTINGS_CUSTOM_STATUS_EMOJI_PICKER =
+            "Custom Status Emoji Picker"),
+          (r3.SETTINGS_DESKTOP_APP = "Desktop Only"),
+          (r3.SETTINGS_BUILD_OVERRIDE = "Build Override"),
+          (r3.SETTINGS_CHECK_NATIVE_UPDATE = "Check For Native Update"),
+          (r3.SETTINGS_INSTALL_NATIVE_UPDATE = "Install Native Build"),
+          (r3.SETTINGS_CHANGELOG_OVERRIDE = "Changelog Override"),
+          (r3.SETTINGS_SOUNDS = "Sounds"),
+          (r3.SETTINGS_CLIENT_THEMES = "Client Themes"),
+          (r3.SETTINGS_WEBAUTHN_VIEW = "View Security Keys"),
+          (r3.SETTINGS_PUBLIC_WELCOME = "Welcome Screen Settings"),
+          (r3.SETTINGS_POGGERMODE = "Powermode Settings"),
+          (r3.GUILD_ROLE_CREATION_MODAL = "Guild Role Creation Modal"),
+          (r3.GUILD_ROLE_TEMPLATE_POPOUT = "Guild Role Template Popout"),
+          (r3.GUILD_CREATE_MODAL = "Guild Create Modal"),
+          (r3.GUILD_SETTINGS_STICKERS = "Guild Stickers Settings"),
+          (r3.GUILD_SETTINGS_EMOJI = "Guild Emoji Settings"),
+          (r3.GUILD_SETTINGS_VANITY_URL = "Guild Vanity Url"),
+          (r3.GUILD_SETTINGS_ONBOARDING = "Guild Onboarding Settings"),
+          (r3.GUILD_SETTINGS_SOUNDBOARD = "Guild Soundboard Settings"),
+          (r3.MEMBER_SAFETY_PAGE = "Member Safety Page"),
+          (r3.GUILD_SETTINGS_MEMBERS = "guild settings members page"),
+          (r3.GUILD_ROLE_EDIT_UPSELL_MODAL = "Guild Role Edit Upsell Modal"),
+          (r3.APPLICATION_EMBED = "Application Embed"),
+          (r3.GIFT_CODE_EMBED = "Gift Code Embed"),
+          (r3.GIFT_CODE_ROW = "Gift Code Row"),
+          (r3.PREMIUM_GIFT_AVAILABLE_ALERT = "Premium Gift Available Alert"),
+          (r3.GUILD_LIST = "Guild List"),
+          (r3.GUILD_HEADER = "Guild Header"),
+          (r3.GUILD_HEADER_POPOUT = "Guild Header Popout"),
+          (r3.GUILD_INVITE_BACKGROUND = "Guild Invite Background"),
+          (r3.GUILD_BANNER = "Guild Banner"),
+          (r3.ANIMATED_GUILD_BANNER_UPSELL = "Animated Guild Banner Upsell"),
+          (r3.STREAM_VIEWER_POPOUT = "Stream Viewer Popout"),
+          (r3.STREAM_SETTINGS = "Stream Settings"),
+          (r3.STREAM_QUALITY_INDICATOR = "Stream Quality Indicator"),
+          (r3.DISCOVER_SEARCH = "Search"),
+          (r3.DISCOVER_GAMES_YOU_PLAY = "Games You Play"),
+          (r3.DISCOVER_POPULAR = "Popular"),
+          (r3.DISCOVER_COLLECTION_GAMING = "Gaming"),
+          (r3.DISCOVER_COLLECTION_COMICS_HEROES = "Comics / Heroes"),
+          (r3.DISCOVER_COLLECTION_ANIME = "Anime"),
+          (r3.DISCOVER_COLLECTION_MUSIC = "Music"),
+          (r3.DISCOVER_COLLECTION_ESPORTS = "electronic-Sports"),
+          (r3.DISCOVERY_SETUP_MODAL = "Discovery Setup Modal"),
+          (r3.DISCOVERY_SETUP_SUCCESS_MODAL = "Discovery Setup Success Modal"),
+          (r3.PREMIUM_GUILD_USER_MODAL_CTA_BAR = "CTA Bar"),
+          (r3.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR = "Floating CTA Bar"),
+          (r3.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR = "Progress Bar"),
+          (r3.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA = "Boost Any Guild CTA"),
+          (r3.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA =
+            "Recommended Server Boost This Server CTA"),
+          (r3.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA =
+            "Recommended Server Go To Server CTA"),
+          (r3.ICYMI_RECOMMENDED_SERVERS = "Recommended Servers"),
+          (r3.REGISTER = "Register"),
+          (r3.LOGIN = "Login"),
+          (r3.OVERLAY = "Overlay"),
+          (r3.STICKERS_SHOP = "Stickers Shop"),
+          (r3.STICKER_PACK_VIEW_ALL = "Sticker Pack View All"),
+          (r3.STICKER_PICKER_UPSELL = "Sticker Picker Upsell"),
+          (r3.STICKER_PREMIUM_TIER_2_UPSELL_MODAL =
+            "Stickers Nitro Upsell Modal"),
+          (r3.STICKER_PREMIUM_TIER_1_UPSELL_MODAL =
+            "Stickers Nitro Classic Upsell Modal"),
+          (r3.STICKER_POPOUT = "Sticker Popout"),
+          (r3.EXPRESSION_PICKER = "Expression Picker"),
+          (r3.STANDALONE_VIDEO_PLAYER = "Standalone Video Player"),
+          (r3.SUPER_REACTION_PICKER = "Super Reaction Picker"),
+          (r3.SOUNDBOARD_SOUND_PICKER = "Soundboard Sound Picker"),
+          (r3.SOUNDBOARD_SOUND_PICKER_UPSELL =
+            "Soundboard Sound Picker Upsell"),
+          (r3.CONTACT_SYNC_MODAL = "Contact Sync"),
+          (r3.CONTACT_SYNC_EMPTY_CTA = "Contact Sync Empty CTA"),
+          (r3.HUB_WELCOME_CTA = "Hub Welcome CTA"),
+          (r3.GUILD_CAP_UPSELL_MODAL = "Guild Cap Upsell Modal"),
+          (r3.CHAT_USERNAME = "Chat Username"),
+          (r3.GUILD_DROPDOWN_MENU = "Guild Dropdown Menu"),
+          (r3.PREMIUM_GUILD_MEMBER_PROFILE =
+            "Edit Premium Guild Member Profile"),
+          (r3.CREATE_THREAD_SIDEBAR = "Create Thread Sidebar"),
+          (r3.THREAD_ARCHIVAL_DURATION_SHEET =
+            "Thread Archival Duration Sheet"),
+          (r3.THREAD_CREATION_OPTIONS = "Thread Creation Options"),
+          (r3.THREAD_CONTEXT_MENU = "Thread Context Menu"),
+          (r3.THREAD_MEMBER_LIST = "Thread Member List"),
+          (r3.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL =
+            "Upload File or Choose GIF Modal"),
+          (r3.GIF_PICKER_AVATAR_OR_BANNER_MODAL = "GIF Picker Modal"),
+          (r3.CROP_GIF_MODAL = "Crop GIF Modal"),
+          (r3.CUSTOM_ROLE_ICONS_TOOLTIP = "Custom Role Icons Tooltip"),
+          (r3.GUILD_BOTTOM_SHEET = "Guild Bottom Sheet"),
+          (r3.USER_BOTTOM_SHEET = "User Bottom Sheet"),
+          (r3.MARKETING_BOTTOM_SHEET = "Marketing Bottom Sheet"),
+          (r3.PURCHASE_SINGLE_PREMIUM_GUILD_SUBSCRIPTION = "Buy Single Boosts"),
+          (r3.PREMIUM_GUILD_SUBSCRIPTION_TIER_1 =
+            "Premium Guild Subscription Tier 1"),
+          (r3.PREMIUM_GUILD_SUBSCRIPTION_TIER_2 =
+            "Premium Guild Subscription Tier 2"),
+          (r3.PREMIUM_GUILD_SUBSCRIPTION_TIER_3 =
+            "Premium Guild Subscription Tier 3"),
+          (r3.NITRO_CROSS_PROMO_FROM_BOOSTING =
+            "Nitro Cross Promo From Boosting"),
+          (r3.SCHEDULED_GUILD_EVENT_INFORMATION_DIALOG =
+            "Scheduled Guild Event Information Dialog"),
+          (r3.FRIENDS_LIST = "Friends List"),
+          (r3.FRIENDS_ADD_FRIENDS_MODAL = "Add Friends Modal"),
+          (r3.FRIENDS_ADD_FRIENDS_MODAL_SEARCH = "Add Friends Modal Search"),
+          (r3.FRIENDS_ADD_BY_USERNAME_MODAL = "Add by Username Modal"),
+          (r3.FRIENDS_REQUESTS_MODAL = "Friend Requests Modal"),
+          (r3.FRIENDS_SUGGESTED_FRIENDS_MODAL = "Suggested Friends Modal"),
+          (r3.FRIENDS_LIST_FRIEND_ROW = "Friend Row"),
+          (r3.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT = "Friend Row Gift Popout"),
+          (r3.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW =
+            "Guild Member Verification Application Review"),
+          (r3.GUILD_MEMBER_VERIFICATION_APPLICATION_INTERVIEW =
+            "Guild Member Verification Application Interview"),
+          (r3.ACTIVE_NOW_COLUMN = "Active Now Column"),
+          (r3.GUILD_CHANNEL_LIST = "Guild Channel List"),
+          (r3.INVITE_LINK = "Invite Link"),
+          (r3.RTC_CONNECTION_PANEL = "RTC Connection Panel"),
+          (r3.VOICE_CHANNEL_TILE = "Voice Channel Tile"),
+          (r3.VOICE_CONTROL_TRAY = "Voice Control Tray"),
+          (r3.EMBEDDED_ACTIVITY_LAUNCH_FAIL = "Embedded Activity Launch Fail"),
+          (r3.FOCUS_EXPANDED_CONTROLS = "Focus Expanded Controls"),
+          (r3.CHANNEL_CALL_ACTION_BAR = "Channel Call Action Bar"),
+          (r3.ACTIVITY_SHELF = "Activity Shelf"),
+          (r3.ACTIVITY_UPSELL_ACTION_SHEET = "Activity Upsell Action Sheet"),
+          (r3.AGGREGATE_PREMIUM_UPSELL_MODAL =
+            "Aggregate Premium Upsell Modal"),
+          (r3.VOICE_CHANNEL_EFFECTS_BAR = "Voice Channel Effect Emoji Hotbar"),
+          (r3.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER =
+            "Voice Channel Effect Emoji Picker"),
+          (r3.PREMIUM_MARKETING_SURFACE_SIDEBAR =
+            "Premium Marketing Surface Sidebar"),
+          (r3.CHANNEL_BROWSER = "Channel Browser"),
+          (r3.FORUM_CHANNEL_POST = "Forum Channel Post"),
+          (r3.FORUM_CHANNEL_HEADER = "Forum Channel Header"),
+          (r3.FORUM_CHANNEL_FOOTER = "Forum Channel Footer"),
+          (r3.FORUM_CHANNEL_GUIDELINES = "Forum Channel Guidelines"),
+          (r3.FORUM_POST_HEADER = "Forum Post Header"),
+          (r3.NOTIFICATION_CENTER = "Notification Center"),
+          (r3.STAGE_VIDEO_LIMIT = "Stage Video Limit"),
+          (r3.CHANNEL_PIN = "Channel Pin"),
+          (r3.CHANNEL_SETTINGS = "Channel Settings"),
+          (r3.CHANNEL_SEARCH = "Channel Search"),
+          (r3.NEW_MESSAGE_COMPOSER = "New Message Composer"),
+          (r3.FAMILY_CENTER = "Family Center"),
+          (r3.ADD_PRIVATE_CHANNEL_INTEGRATION_MODAL =
+            "Add Private Channel Integration Modal"),
+          (r3.REMIX_UPSELL_ACTIONSHEET = "Remix Upsell Actionsheet"),
+          (r3.COMMUNITY_ALERTS = "Community Alerts Settings"),
+          (r3.HIGHLIGHT_NOTIFICATIONS = "Highlight notification settings"),
+          (r3.SUMMARY_ACTION_SHEET = "Summary Action Sheet"),
+          (r3.COLLECTIBLES_SHOP_DETAILS_MODAL =
+            "Collectibles Shop Details Modal"),
+          (r3.PROFILE_EFFECT_CUSTOMIZATION = "Profile Effect Customization"),
+          (r3.COLLECTIBLES_SHOP = "Shop"),
+          (r3.SHOP_PRODUCT_DETAILS = "Shop Product Details"),
+          (r3.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS =
+            "Collectibles Shop View All Category Items"),
+          (r3.PROFILE_EFFECTS_PREVIEW_TOOL = "Profile Effects Preview Tool"),
+          (r3.APPEAL_INGESTION_SPEED_BUMP = "Appeal Ingestion Speed Bump"),
+          (r3.APPEAL_INGESTION_COLLECT_SIGNAL =
+            "Appeal Ingestion Collect Signal"),
+          (r3.APPEAL_INGESTION_REQUEST_REVIEW =
+            "Appeal Ingestion Request a Review"),
+          (r3.APPEAL_INGESTION_WHY_DISAGREE =
+            "Appeal Ingestion Why do you Disagree?"),
+          (r3.APPEAL_INGESTION_FREE_TEXT = "Appeal Ingestion Free Text"),
+          (r3.APPEAL_INGESTION_CONFIRM_SUBMISSION =
+            "Appeal Ingestion Confirm Submission"),
+          (r3.APPEAL_INGESTION_REQUEST_SENT = "Appeal Ingestion Request Sent"),
+          (r3.APPEAL_INGESTION_THANKS = "Appeal Ingestion Thanks"),
+          (r3.APPEAL_INGESTION_SPAM = "Appeal Ingestion Spam"),
+          (r3.SETTINGS_SURVEY_OVERRIDE = "Survey Override"),
+          (r3.QUEST_PREVIEW_TOOL = "Quest Preview Tool"),
+          (r3.SECURE_FRAMES_STREAM_BOTTOM_SHEET =
+            "Secure Frames Stream Bottom Sheet"),
+          (r3.SECURE_FRAMES_VOICE_BOTTOM_SHEET =
+            "Secure Frames Voice Bottom Sheet"),
+          (r3.SECURE_FRAMES_VERIFIED_DEVICES =
+            "Secure Frames Verified Devices"),
+          (r3.SECURE_FRAMES = "Secure Frames"),
+          (r3.REVERSE_TRIAL_UPSELL_MODAL = "Reverse trial Upsell Modal"),
+          (r3.WEB_SETTING_TREE_TOOL = "Web Setting Tree Tool"),
+          ((r2 = eT || (eT = {})).TOOLTIP = "Tooltip"),
+          (r2.CARD = "Card"),
+          (r2.CAROUSEL = "Carousel"),
+          (r2.NAVIGATION_LINK = "Nav Link"),
+          (r2.SUBSCRIBE_TO_TIER_BUTTON = "Subscribe up to Tier Button"),
+          (r2.BUTTON_BROWSE = "Button Browse"),
+          (r2.BUTTON_HOME = "Button Home"),
+          (r2.BUTTON_BACK = "Button Back"),
+          (r2.BUTTON_CTA = "Button CTA"),
+          (r2.BUTTON_ICON = "Button Icon"),
+          (r2.MENU_LINK = "Menu Link"),
+          (r2.WEB_URL = "Web URL"),
+          (r2.LIST_ITEM = "List Item"),
+          (r2.RADIO_ITEM = "Radio Item"),
+          (r2.CONTEXT_MENU = "Context Menu"),
+          (r2.CONTEXT_MENU_ITEM = "Context Menu Item"),
+          (r2.SEARCH = "Search"),
+          (r2.ALTERNATIVE_SKU = "Alternative Sku"),
+          (r2.HOVER_MENU = "Hover Menu"),
+          (r2.AVATAR = "Avatar"),
+          (r2.ANIMATED_AVATAR = "Animated Avatar"),
+          (r2.EDIT_GUILD_PROFILE_AVATAR = "Edit Guild Profile Avatar"),
+          (r2.CHANNEL = "Channel"),
+          (r2.CHANNEL_TAG = "Channel Tag"),
+          (r2.BADGE = "Badge"),
+          (r2.STICKER_SEARCH_VIEW_ALL = "Sticker Search View All"),
+          (r2.STICKER_PICKER_VIEW_ALL = "Sticker Picker View All"),
+          (r2.STICKER_POPOUT_VIEW_ALL = "Sticker Popout View All"),
+          (r2.STICKER_PICKER_PURCHASE_BUTTON =
+            "Sticker Picker Purchase Button"),
+          (r2.STICKER_PICKER_UPSELL_BUTTON = "Sticker Picker Upsell Button"),
+          (r2.STICKER_POPOUT_PURCHASE_BUTTON =
+            "Sticker Popout Purchase Button"),
+          (r2.NUDGED_STICKER = "Nudged Sticker"),
+          (r2.EXPRESSION_SUGGESTIONS = "Expression Suggestions"),
+          (r2.STICKER = "Sticker"),
+          (r2.EMOJI = "Emoji"),
+          (r2.SOUNDBOARD_SOUND = "Soundboard Sound"),
+          (r2.EDIT_PER_SERVER_IDENTITY = "Edit Per Server Identity"),
+          (r2.EDIT_PROFILE_BANNER = "Edit Profile Banner"),
+          (r2.EDIT_GUILD_PROFILE_BANNER = "Edit Guild Profile Banner"),
+          (r2.BOOSTING_BANNER = "Boosting Banner"),
+          (r2.BOOST_LEVEL_UPSELL_BUTTON = "Boost Level Upsell Button"),
+          (r2.BOOST_UPSELL_LOST_LEVEL_HEADER =
+            "Boost Upsell Lost Level Header"),
+          (r2.BOOST_UPSELL_NEXT_LEVEL_HEADER =
+            "Boost Upsell Next Level Header"),
+          (r2.BOOST_UPSELL_BANNER_LOST_LEVEL =
+            "Boost Upsell Banner for Lost Level"),
+          (r2.BOOST_UPSELL_BANNER_SLOTS_FULL =
+            "Boost Upsell Banner for Slots Full"),
+          (r2.BOOST_GEM_ICON = "Boost Gem Icon"),
+          (r2.BOOST_ANNOUNCEMENT_UPSELL = "Boost Announcement Upsell"),
+          (r2.PRIVATE_THREAD_CHECKBOX = "Private Thread Checkbox"),
+          (r2.LEARN_MORE = "Learn More"),
+          (r2.UPLOAD_IMAGE = "Upload Image"),
+          (r2.PREMIUM_UPSELL_BUTTON = "Nitro upsell button"),
+          (r2.PREMIUM_UPSELL_BANNER = "Nitro upsell banner"),
+          (r2.PREMIUM_SUBSCRIPTION_PAYMENT_FLOW_COMPLETED =
+            "Nitro Payment Flow Completed"),
+          (r2.PREMIUM_SUBSCRIPTION = "Discord Nitro"),
+          (r2.PREMIUM_GUILD_SUBSCRIPTION = "Server Boost"),
+          (r2.PREMIUM_GUILD_SUBSCRIPTION_WITH_PREMIUM_SUBSCRIPTION =
+            "Server Boost (Has Nitro)"),
+          (r2.GIF_CROPPING_MODAL = "GIF Cropping Modal"),
+          (r2.IMAGE_CROPPING_MODAL = "Image Cropping Modal"),
+          (r2.UPSELL_HEADER = "Upsell Header"),
+          (r2.TRY_IT_CTA = "Try It CTA"),
+          (r2.SEASONAL_BUTTON_ICON = "Seasonal button icon"),
+          (r2.NITROWEEN_BUTTON_ICON = "Nitroween button icon"),
+          (r2.ACTIONED_BY_USER = "Actioned By User"),
+          (r2.JOIN_REQUEST = "Join Request"),
+          (r2.SERVER_BANNER_TOOLTIP = "Server Banner Tooltip"),
+          (r2.THREAD_ARCHIVE_DURATION_DROPDOWN =
             "Thread Archive Duration Dropdown"),
-          (r3.BOOST_SERVER_CTA = "Boost This Server CTA"),
-          (r3.SERVER_STATUS_CTA = "See Server Status CTA"),
-          (r3.ACTIVITIES_BOOSTING_UPSELL = "ACTIVITIES_BOOSTING_UPSELL"),
-          (r3.ACTIVITIES_NITRO_UPSELL = "ACTIVITIES_NITRO_UPSELL"),
-          (r3.ACTIVITY_SHELF = "ACTIVITY_SHELF"),
-          (r3.ACTIVITY_NITRO_HOST_LEFT_UPSELL =
+          (r2.BOOST_SERVER_CTA = "Boost This Server CTA"),
+          (r2.SERVER_STATUS_CTA = "See Server Status CTA"),
+          (r2.ACTIVITIES_BOOSTING_UPSELL = "ACTIVITIES_BOOSTING_UPSELL"),
+          (r2.ACTIVITIES_NITRO_UPSELL = "ACTIVITIES_NITRO_UPSELL"),
+          (r2.ACTIVITY_SHELF = "ACTIVITY_SHELF"),
+          (r2.ACTIVITY_NITRO_HOST_LEFT_UPSELL =
             "ACTIVITY_NITRO_HOST_LEFT_UPSELL"),
-          (r3.ACTIVITIES_COACH_MARK = "ACTIVITIES_COACH_MARK"),
-          (r3.VOICE_CHANNEL_EFFECTS_COACH_MARK =
+          (r2.ACTIVITIES_COACH_MARK = "ACTIVITIES_COACH_MARK"),
+          (r2.VOICE_CHANNEL_EFFECTS_COACH_MARK =
             "VOICE_CHANNEL_EFFECTS_COACHMARK"),
-          (r3.VOICE_CHANNEL_EFFECTS_TOGGLE = "VOICE_CHANNEL_EFFECTS_TOGGLE"),
-          (r3.BURST_REACTION_TOGGLE = "BURST_REACTION_TOGGLE"),
-          (r3.ONBOARDING_EDIT = "ONBOARDING_EDIT"),
-          (r3.ONBOARDING_REVIEW = "ONBOARDING_REVIEW"),
-          (r3.FORUM_ACTION_BAR = "FORUM_ACTION_BAR"),
-          (r3.FORUM_GRID_ITEM_FOOTER = "FORUM_GRID_ITEM_FOOTER"),
-          (r3.FORUM_LIST_ITEM_FOOTER = "FORUM_LIST_ITEM_FOOTER"),
-          (r3.MESSAGE_ACTION_SHEET = "MESSAGE_ACTION_SHEET"),
-          (r3.MESSAGE = "MESSAGE"),
-          (r3.CHANNEL_PIN = "CHANNEL_PIN"),
-          (r3.CHANNEL_SEARCH = "CHANNEL_SEARCH"),
-          (r3.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
-          (r3.REACTION_RAIL = "REACTION_RAIL"),
-          (r3.EMOJI_REACTION_PICKER_POPOUT = "EMOJI_REACTION_PICKER_POPOUT"),
-          (r3.EMOJI_REACTION_UPSELL = "EMOJI_REACTION_UPSELL"),
-          (r3.EMOJI_REACTION_TOOLTIP_UPSELL = "EMOJI_REACTION_TOOLTIP_UPSELL"),
-          (r3.EMOJI_PICKER_FLOATING_UPSELL = "EMOJI_PICKER_FLOATING_UPSELL"),
-          (r3.INLINE_REACTION_PICKER_UPSELL = "INLINE_REACTION_PICKER_UPSELL"),
-          (r3.EMOJI_REACTION_PICKER_POPOUT_UPSELL =
+          (r2.VOICE_CHANNEL_EFFECTS_TOGGLE = "VOICE_CHANNEL_EFFECTS_TOGGLE"),
+          (r2.BURST_REACTION_TOGGLE = "BURST_REACTION_TOGGLE"),
+          (r2.ONBOARDING_EDIT = "ONBOARDING_EDIT"),
+          (r2.ONBOARDING_REVIEW = "ONBOARDING_REVIEW"),
+          (r2.FORUM_ACTION_BAR = "FORUM_ACTION_BAR"),
+          (r2.FORUM_GRID_ITEM_FOOTER = "FORUM_GRID_ITEM_FOOTER"),
+          (r2.FORUM_LIST_ITEM_FOOTER = "FORUM_LIST_ITEM_FOOTER"),
+          (r2.MESSAGE_ACTION_SHEET = "MESSAGE_ACTION_SHEET"),
+          (r2.MESSAGE = "MESSAGE"),
+          (r2.CHANNEL_PIN = "CHANNEL_PIN"),
+          (r2.CHANNEL_SEARCH = "CHANNEL_SEARCH"),
+          (r2.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
+          (r2.REACTION_RAIL = "REACTION_RAIL"),
+          (r2.EMOJI_REACTION_PICKER_POPOUT = "EMOJI_REACTION_PICKER_POPOUT"),
+          (r2.EMOJI_REACTION_UPSELL = "EMOJI_REACTION_UPSELL"),
+          (r2.EMOJI_REACTION_TOOLTIP_UPSELL = "EMOJI_REACTION_TOOLTIP_UPSELL"),
+          (r2.EMOJI_PICKER_FLOATING_UPSELL = "EMOJI_PICKER_FLOATING_UPSELL"),
+          (r2.INLINE_REACTION_PICKER_UPSELL = "INLINE_REACTION_PICKER_UPSELL"),
+          (r2.EMOJI_REACTION_PICKER_POPOUT_UPSELL =
             "EMOJI_REACTION_PICKER_POPOUT_UPSELL"),
-          (r3.REACTION_RIGHT_CLICK_MENU_UPSELL =
+          (r2.REACTION_RIGHT_CLICK_MENU_UPSELL =
             "REACTION_RIGHT_CLICK_MENU_UPSELL"),
-          (r3.NOTIFICATION_SETTING_UNREAD_NOTICE =
+          (r2.NOTIFICATION_SETTING_UNREAD_NOTICE =
             "NOTIFICATION_SETTING_UNREAD_NOTICE"),
-          (r3.FORWARD_BREADCRUMB = "FORWARD_BREADCRUMB"),
-          (r3.REMIXING_ACTION_SHEET_UPSELL = "REMIXING_ACTION_SHEET_UPSELL"),
-          (r3.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
-          (r3.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
-          (r3.APP_COMMAND = "APP_COMMAND"),
+          (r2.FORWARD_BREADCRUMB = "FORWARD_BREADCRUMB"),
+          (r2.REMIXING_ACTION_SHEET_UPSELL = "REMIXING_ACTION_SHEET_UPSELL"),
+          (r2.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
+          (r2.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
+          (r2.APP_COMMAND = "APP_COMMAND"),
           ((r6 = eN || (eN = {})).GIFT = "gift"),
           (r6.BUY = "buy"),
           (r6.BOX_ART = "box_art"),
@@ -9302,13 +9304,13 @@
               "https://play.google.com/store/apps/details?id=com.discord",
           }),
           _1 = 10070709,
-          _2 = [
+          _3 = [
             1752220, 3066993, 3447003, 10181046, 15277667, 15844367, 15105570,
             15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530,
             11342935, 12745742, 11027200, 10038562, 9936031, 5533306,
           ],
-          _3 = (0, aH._i)(ay.Z.BRAND_500);
-        aG()(null != _3, "Brand color could not be parsed"),
+          _2 = (0, aH._i)(ay.Z.BRAND_500);
+        aG()(null != _2, "Brand color could not be parsed"),
           ((ns = ey || (ey = {})).ROLE = "ROLE"),
           (ns.MEMBER = "MEMBER"),
           ((nI = eb || (eb = {})).VOICE_LEGACY_SUBSYSTEM =
@@ -9425,7 +9427,7 @@
           (np.ADD_BUTTON = "add button"),
           (np.APPS_BUTTON = "apps button"),
           (np.APPS = "apps"),
-          ((nf = ex || (ex = {})).APP_OPENED = "app_opened"),
+          ((nf = eF || (eF = {})).APP_OPENED = "app_opened"),
           (nf.APP_CRASHED = "app_crashed"),
           (nf.APP_BACKGROUND = "app_background"),
           (nf.APP_NATIVE_CRASH = "app_native_crash"),
@@ -10349,6 +10351,12 @@
           (nf.HOME_FEEDBACK_SUBMITTED = "home_feedback_submitted"),
           (nf.HOME_FIRST_SCROLL_STARTED = "home_first_scroll_started"),
           (nf.HOME_PANEL_VIEWED = "home_panel_viewed"),
+          (nf.ICYMI_ONBOARDING_SCREEN_SKIPPED =
+            "icymi_onboarding_screen_skipped"),
+          (nf.ICYMI_ONBOARDING_CATEGORY_TOGGLED =
+            "icymi_onboarding_category_toggled"),
+          (nf.ICYMI_ONBOARDING_GUILD_TOGGLED =
+            "icymi_onboarding_guild_toggled"),
           (nf.MOBILE_WEB_HANDOFF_FAILURE = "mobile_web_handoff_failure"),
           (nf.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED =
             "premium_uncancel_winback_modal_viewed"),
@@ -10824,7 +10832,7 @@
             "guild_game_discovery_entrypoint_deep_link_to_desktop"),
           (nf.GLOBAL_DISCOVERY_WITH_GAME_VIEWED =
             "global_discovery_with_game_viewed"),
-          ((nL = eF || (eF = {})).CANARY = "canary"),
+          ((nL = ex || (ex = {})).CANARY = "canary"),
           (nL.PTB = "ptb"),
           (nL.STABLE = "stable"),
           ((nS = eX || (eX = {}))[(nS.STAFF = 1)] = "STAFF"),
@@ -11048,7 +11056,7 @@
           (nG.GUILD_SOUNDBOARD = "GUILD_SOUNDBOARD"),
           (nG.HOME_SETTINGS = "HOME_SETTINGS"),
           (nG.VOICE_CHANNEL_STATUS = "VOICE_CHANNEL_STATUS"),
-          ((ny = e2 || (e2 = {})).NAME = "name"),
+          ((ny = e3 || (e3 = {})).NAME = "name"),
           (ny.DESCRIPTION = "description"),
           (ny.ICON_HASH = "icon_hash"),
           (ny.SPLASH_HASH = "splash_hash"),
@@ -11180,7 +11188,7 @@
           (ny.IS_CANCELED = "is_canceled"),
           (ny.LINKED_LOBBY = "linked_lobby");
         let o_ = 50;
-        ((nb = e3 || (e3 = {})).AGREEMENTS = "AGREEMENTS"),
+        ((nb = e2 || (e2 = {})).AGREEMENTS = "AGREEMENTS"),
           (nb.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA"),
           (nb.REQUIRE_VERIFIED_EMAIL = "REQUIRE_VERIFIED_EMAIL"),
           (nb.REQUIRE_VERIFIED_PHONE = "REQUIRE_VERIFIED_PHONE"),
@@ -11445,18 +11453,18 @@
           (nV.PULLING = "PULLING"),
           (nV.CONFLICT = "CONFLICT"),
           (nV.ERROR = "ERROR"),
-          ((nx = t_ || (t_ = {})).PULL = "PULL"),
-          (nx.PUSH = "PUSH"),
-          (nx.CONFLICT = "CONFLICT"),
-          (nx.NONE = "NONE"),
-          ((nF = to || (to = {})).DISCORD = "discord"),
-          (nF.STEAM = "steam"),
-          (nF.TWITCH = "twitch"),
-          (nF.UPLAY = "uplay"),
-          (nF.BATTLENET = "battlenet"),
-          (nF.ORIGIN = "origin"),
-          (nF.GOG = "gog"),
-          (nF.EPIC = "epic"),
+          ((nF = t_ || (t_ = {})).PULL = "PULL"),
+          (nF.PUSH = "PUSH"),
+          (nF.CONFLICT = "CONFLICT"),
+          (nF.NONE = "NONE"),
+          ((nx = to || (to = {})).DISCORD = "discord"),
+          (nx.STEAM = "steam"),
+          (nx.TWITCH = "twitch"),
+          (nx.UPLAY = "uplay"),
+          (nx.BATTLENET = "battlenet"),
+          (nx.ORIGIN = "origin"),
+          (nx.GOG = "gog"),
+          (nx.EPIC = "epic"),
           Object.freeze({
             discord: "Discord",
             steam: "Steam",
@@ -11514,20 +11522,20 @@
           (n0.LAST_PLAYED = "last_played"),
           ((n1 = tT || (tT = {})).ASCENDING = "asc"),
           (n1.DESCENDING = "desc"),
-          ((n2 = tN || (tN = {})).WINDOWS = "1"),
-          (n2.MACOS = "2"),
-          (n2.LINUX = "3"),
-          ((n3 = td || (td = {}))[(n3.PURCHASE = 1)] = "PURCHASE"),
-          (n3[(n3.PREMIUM_SUBSCRIPTION = 2)] = "PREMIUM_SUBSCRIPTION"),
-          (n3[(n3.DEVELOPER_GIFT = 3)] = "DEVELOPER_GIFT"),
-          (n3[(n3.TEST_MODE_PURCHASE = 4)] = "TEST_MODE_PURCHASE"),
-          (n3[(n3.FREE_PURCHASE = 5)] = "FREE_PURCHASE"),
-          (n3[(n3.USER_GIFT = 6)] = "USER_GIFT"),
-          (n3[(n3.PREMIUM_PURCHASE = 7)] = "PREMIUM_PURCHASE"),
-          (n3[(n3.APPLICATION_SUBSCRIPTION = 8)] = "APPLICATION_SUBSCRIPTION"),
-          (n3[(n3.FREE_STAFF_PURCHASE = 9)] = "FREE_STAFF_PURCHASE"),
-          (n3[(n3.QUEST_REWARD = 10)] = "QUEST_REWARD"),
-          (n3[(n3.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
+          ((n3 = tN || (tN = {})).WINDOWS = "1"),
+          (n3.MACOS = "2"),
+          (n3.LINUX = "3"),
+          ((n2 = td || (td = {}))[(n2.PURCHASE = 1)] = "PURCHASE"),
+          (n2[(n2.PREMIUM_SUBSCRIPTION = 2)] = "PREMIUM_SUBSCRIPTION"),
+          (n2[(n2.DEVELOPER_GIFT = 3)] = "DEVELOPER_GIFT"),
+          (n2[(n2.TEST_MODE_PURCHASE = 4)] = "TEST_MODE_PURCHASE"),
+          (n2[(n2.FREE_PURCHASE = 5)] = "FREE_PURCHASE"),
+          (n2[(n2.USER_GIFT = 6)] = "USER_GIFT"),
+          (n2[(n2.PREMIUM_PURCHASE = 7)] = "PREMIUM_PURCHASE"),
+          (n2[(n2.APPLICATION_SUBSCRIPTION = 8)] = "APPLICATION_SUBSCRIPTION"),
+          (n2[(n2.FREE_STAFF_PURCHASE = 9)] = "FREE_STAFF_PURCHASE"),
+          (n2[(n2.QUEST_REWARD = 10)] = "QUEST_REWARD"),
+          (n2[(n2.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
           ((n6 = tO || (tO = {})).ESRB = "1"),
           (n6.PEGI = "2"),
           ((n5 = tp || (tp = {}))[(n5.DURABLE_PRIMARY = 1)] =
@@ -11967,16 +11975,16 @@
           (au.SEARCH = "Search"),
           (au.SEARCH_SUGGESTION = "Search Suggestion");
         let oN = new Set([
-          ax.pK.USD,
-          ax.pK.CAD,
-          ax.pK.EUR,
-          ax.pK.AUD,
-          ax.pK.GBP,
-          ax.pK.PHP,
-          ax.pK.MYR,
-          ax.pK.VND,
-          ax.pK.KRW,
-          ax.pK.IDR,
+          aF.pK.USD,
+          aF.pK.CAD,
+          aF.pK.EUR,
+          aF.pK.AUD,
+          aF.pK.GBP,
+          aF.pK.PHP,
+          aF.pK.MYR,
+          aF.pK.VND,
+          aF.pK.KRW,
+          aF.pK.IDR,
         ]);
         ((al = tH || (tH = {})).ALWAYS = "ALWAYS"),
           (al.ON_CLICK = "ON_CLICK"),
@@ -12001,9 +12009,9 @@
           (aN.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited"),
           ((ad = tV || (tV = {})).SOUND = "SOUND"),
           (ad.VIDEO = "VIDEO"),
-          ((aO = tx || (tx = {})).PLAYING = "playing"),
+          ((aO = tF || (tF = {})).PLAYING = "playing"),
           (aO.PAUSED = "paused"),
-          ((ap = tF || (tF = {})).NONE = "none"),
+          ((ap = tx || (tx = {})).NONE = "none"),
           (ap.WIFI = "wifi"),
           (ap.CELLULAR = "cellular"),
           (ap.UNKNOWN = "unknown"),
@@ -12123,8 +12131,8 @@
           K,
           k,
           V,
-          x,
           F,
+          x,
           X,
           j,
           $,
@@ -12194,21 +12202,21 @@
           ((V = l || (l = {}))[(V.SAFARI = 0)] = "SAFARI"),
           (V[(V.IN_APP = 1)] = "IN_APP"),
           (V[(V.CHROME = 2)] = "CHROME"),
-          ((x = R || (R = {})).SOLVED = "solved"),
-          (x.EXPIRED = "expired"),
+          ((F = R || (R = {})).SOLVED = "solved"),
+          (F.EXPIRED = "expired"),
           ((A || (A = {})).MENTIONS = "mentions"),
-          ((F = T || (T = {})).OVERVIEW = "OVERVIEW"),
-          (F.RESEND_EMAIL = "RESEND_EMAIL"),
-          (F.CONFIRM_EMAIL_CHANGE_START = "CONFIRM_EMAIL_CHANGE_START"),
-          (F.CONFIRM_EMAIL_CHANGE_CODE = "CONFIRM_EMAIL_CHANGE_CODE"),
-          (F.ENTER_EMAIL = "ENTER_EMAIL"),
-          (F.ADD_PHONE = "ADD_PHONE"),
-          (F.VERIFY_PHONE = "VERIFY_PHONE"),
-          (F.VERIFY_PASSWORD = "VERIFY_PASSWORD"),
-          (F.PHONE_THEN_EMAIL_INTERSTITIAL = "PHONE_THEN_EMAIL_INTERSTITIAL"),
-          (F.CHANGE_EMAIL_COMPLETE = "CHANGE_EMAIL_COMPLETE"),
-          (F.CHANGE_EMAIL_COLLECT_REASONS = "CHANGE_EMAIL_COLLECT_REASONS"),
-          (F.CHANGE_EMAIL_WARNING = "CHANGE_EMAIL_WARNING"),
+          ((x = T || (T = {})).OVERVIEW = "OVERVIEW"),
+          (x.RESEND_EMAIL = "RESEND_EMAIL"),
+          (x.CONFIRM_EMAIL_CHANGE_START = "CONFIRM_EMAIL_CHANGE_START"),
+          (x.CONFIRM_EMAIL_CHANGE_CODE = "CONFIRM_EMAIL_CHANGE_CODE"),
+          (x.ENTER_EMAIL = "ENTER_EMAIL"),
+          (x.ADD_PHONE = "ADD_PHONE"),
+          (x.VERIFY_PHONE = "VERIFY_PHONE"),
+          (x.VERIFY_PASSWORD = "VERIFY_PASSWORD"),
+          (x.PHONE_THEN_EMAIL_INTERSTITIAL = "PHONE_THEN_EMAIL_INTERSTITIAL"),
+          (x.CHANGE_EMAIL_COMPLETE = "CHANGE_EMAIL_COMPLETE"),
+          (x.CHANGE_EMAIL_COLLECT_REASONS = "CHANGE_EMAIL_COLLECT_REASONS"),
+          (x.CHANGE_EMAIL_WARNING = "CHANGE_EMAIL_WARNING"),
           ((X = N || (N = {})).VOICE = "VOICE"),
           (X.VIDEO = "VIDEO"),
           (X.STREAM = "STREAM"),
@@ -12465,7 +12473,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b559238da37b4b61d2ca420ba4062ef1bc1f1ece",
+            release: "discord_web-33b5e1a2826559cff030c087be86c3fa07eb880f",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12534,8 +12542,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "334959"), "334959"));
-          o.YA("builtAt", String("1728662621816"));
+            o.YA("buildNumber", ((e = "335184"), "335184"));
+          o.YA("builtAt", String("1728689393648"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -17427,7 +17435,7 @@
             return eN;
           },
           OM: function () {
-            return eF;
+            return ex;
           },
           Pl: function () {
             return eM;
@@ -17496,7 +17504,7 @@
             return eP;
           },
           fK: function () {
-            return ex;
+            return eF;
           },
           fr: function () {
             return eB;
@@ -17586,8 +17594,8 @@
           K,
           k,
           V,
-          x,
           F,
+          x,
           X,
           j,
           $,
@@ -17756,12 +17764,12 @@
           Object.freeze({ CONSTANT: 1, APPLE_STICKER: 2 }),
           ((V = R || (R = {}))[(V.DISCOVERY = 0)] = "DISCOVERY"),
           (V[(V.CHECKOUT = 1)] = "CHECKOUT"),
-          ((x = A || (A = {}))[(x.SUBSCRIPTION = 0)] = "SUBSCRIPTION"),
-          (x[(x.ONE_TIME = 1)] = "ONE_TIME");
+          ((F = A || (A = {}))[(F.SUBSCRIPTION = 0)] = "SUBSCRIPTION"),
+          (F[(F.ONE_TIME = 1)] = "ONE_TIME");
         let eg = Object.freeze({ 0: "subscription", 1: "sku" });
-        ((F = T || (T = {}))[(F.VIEW_CHANNEL = 1024)] = "VIEW_CHANNEL"),
-          (F[(F.READ_MESSAGE_HISTORY = 65536)] = "READ_MESSAGE_HISTORY"),
-          (F[(F.CONNECT = 1048576)] = "CONNECT");
+        ((x = T || (T = {}))[(x.VIEW_CHANNEL = 1024)] = "VIEW_CHANNEL"),
+          (x[(x.READ_MESSAGE_HISTORY = 65536)] = "READ_MESSAGE_HISTORY"),
+          (x[(x.CONNECT = 1048576)] = "CONNECT");
         let eM = Object.freeze({
             CREATE_INSTANT_INVITE: ei.r0(0),
             KICK_MEMBERS: ei.r0(1),
@@ -18174,7 +18182,7 @@
           (q.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
           (0, eE.Ft)(eV),
           (0, eE.Ft)(f);
-        let ex = Object.freeze({
+        let eF = Object.freeze({
           FACEBOOK_URL: "https://www.facebook.com/discord/",
           INSTAGRAM_URL: "https://www.instagram.com/discord/",
           YOUTUBE_URL: "https://www.youtube.com/discord/",
@@ -18389,7 +18397,7 @@
           (Q.ZAR = "zar"),
           (Q.ZMW = "zmw"),
           (Q.ZWL = "zwl");
-        let eF = "US";
+        let ex = "US";
         ((Z = h || (h = {})).COUNTRY = "US"),
           (Z.CURRENCY = "usd"),
           ((ee = C || (C = {}))[(ee.SINGLE_PLAYER = 1)] = "SINGLE_PLAYER"),
@@ -24102,8 +24110,8 @@
                 return [e[0] / 255, e[1] / 255, e[2] / 255, e[3]];
               });
             var V = i.unpack,
-              x = i.unpack,
-              F = Math.floor,
+              F = i.unpack,
+              x = Math.floor,
               X = i.unpack,
               j = i.type,
               $ = function () {
@@ -24144,7 +24152,7 @@
 
                 )
                   c[s] = arguments[s];
-                var I = (c = x(c, "hcg"))[0],
+                var I = (c = F(c, "hcg"))[0],
                   u = c[1],
                   l = c[2];
                 l *= 255;
@@ -24154,7 +24162,7 @@
                   360 === I && (I = 0),
                     I > 360 && (I -= 360),
                     I < 0 && (I += 360);
-                  var A = F((I /= 60)),
+                  var A = x((I /= 60)),
                     T = I - A,
                     N = l * (1 - u),
                     d = N + R * (1 - T),
@@ -24599,8 +24607,8 @@
               eK = i.RAD2DEG,
               ek = Math.sqrt,
               eV = Math.atan2,
-              ex = Math.round,
-              eF = function () {
+              eF = Math.round,
+              ex = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = eW(e, "lab"),
@@ -24609,7 +24617,7 @@
                   _ = r[2],
                   o = ek(a * a + _ * _),
                   i = (eV(_, a) * eK + 360) % 360;
-                return 0 === ex(1e4 * o) && (i = Number.NaN), [n, o, i];
+                return 0 === eF(1e4 * o) && (i = Number.NaN), [n, o, i];
               },
               eX = i.unpack,
               ej = i.unpack,
@@ -24635,19 +24643,19 @@
               },
               e0 = i.unpack,
               e1 = i.unpack,
-              e2 = i.type,
-              e3 = function () {
+              e3 = i.type,
+              e2 = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = eX(e, "rgb"),
                   n = eG(r[0], r[1], r[2]);
-                return eF(n[0], n[1], n[2]);
+                return ex(n[0], n[1], n[2]);
               };
             (u.prototype.lch = function () {
-              return e3(this._rgb);
+              return e2(this._rgb);
             }),
               (u.prototype.hcl = function () {
-                return e3(this._rgb).reverse();
+                return e2(this._rgb).reverse();
               }),
               (l.lch = function () {
                 for (var e = [], t = arguments.length; t--; )
@@ -24678,7 +24686,7 @@
                   test: function () {
                     for (var t = [], r = arguments.length; r--; )
                       t[r] = arguments[r];
-                    if ("array" === e2((t = e1(t, e))) && 3 === t.length)
+                    if ("array" === e3((t = e1(t, e))) && 3 === t.length)
                       return e;
                   },
                 });
@@ -25112,7 +25120,7 @@
                   e[t] = arguments[t];
                 var r = tf(e, "rgb"),
                   n = tu(r[0], r[1], r[2]);
-                return eF(n[0], n[1], n[2]);
+                return ex(n[0], n[1], n[2]);
               };
             (u.prototype.oklch = function () {
               return th(this._rgb);
@@ -25404,8 +25412,8 @@
               tK = Math.sqrt,
               tk = Math.PI,
               tV = Math.cos,
-              tx = Math.sin,
-              tF = Math.atan2,
+              tF = Math.sin,
+              tx = Math.atan2,
               tX = function (e, t) {
                 for (
                   var r = e.length, n = [0, 0, 0, 0], a = 0;
@@ -25833,8 +25841,8 @@
               ));
             for (
               var t1 = i.type,
-                t2 = i.clip_rgb,
-                t3 = i.TWOPI,
+                t3 = i.clip_rgb,
+                t2 = i.TWOPI,
                 t6 = Math.pow,
                 t5 = Math.sin,
                 t4 = Math.cos,
@@ -26434,7 +26442,7 @@
                     "h" === t.charAt(s) && !isNaN(o[s]))
                   ) {
                     var I = (o[s] / 180) * tk;
-                    (E += tV(I) * r[0]), (c += tx(I) * r[0]);
+                    (E += tV(I) * r[0]), (c += tF(I) * r[0]);
                   }
                 var l = _.alpha() * r[0];
                 e.forEach(function (e, n) {
@@ -26444,13 +26452,13 @@
                     if (!isNaN(a[_])) {
                       if (((i[_] += r[n + 1]), "h" === t.charAt(_))) {
                         var s = (a[_] / 180) * tk;
-                        (E += tV(s) * r[n + 1]), (c += tx(s) * r[n + 1]);
+                        (E += tV(s) * r[n + 1]), (c += tF(s) * r[n + 1]);
                       } else o[_] += a[_] * r[n + 1];
                     }
                 });
                 for (var R = 0; R < o.length; R++)
                   if ("h" === t.charAt(R)) {
-                    for (var A = (tF(c / i[R], E / i[R]) / tk) * 180; A < 0; )
+                    for (var A = (tx(c / i[R], E / i[R]) / tk) * 180; A < 0; )
                       A += 360;
                     for (; A >= 360; ) A -= 360;
                     o[R] = A;
@@ -26477,13 +26485,13 @@
                   o = 0;
                 "array" === t1(a) ? (_ = a[1] - a[0]) : ((_ = 0), (a = [a, a]));
                 var i = function (i) {
-                  var E = t3 * ((e + 120) / 360 + t * i),
+                  var E = t2 * ((e + 120) / 360 + t * i),
                     c = t6(a[0] + _ * i, n),
                     s = ((0 !== o ? r[0] + i * o : r) * c * (1 - c)) / 2,
                     I = t4(E),
                     u = t5(E);
                   return l(
-                    t2([
+                    t3([
                       255 * (c + s * (-0.14861 * I + 1.78277 * u)),
                       255 * (c + s * (-0.29227 * I - 0.90649 * u)),
                       255 * (c + 1.97294 * I * s),
@@ -38829,8 +38837,8 @@ Error:`,
             colorScheme: K = "system",
             themeLight: k = {},
             themeDark: V = {},
-            addScreenshotButtonLabel: x = h,
-            cancelButtonLabel: F = l,
+            addScreenshotButtonLabel: F = h,
+            cancelButtonLabel: x = l,
             confirmButtonLabel: X = A,
             emailLabel: j = d,
             emailPlaceholder: $ = N,
@@ -38867,7 +38875,7 @@ Error:`,
                 themeLight: k,
                 triggerLabel: ea,
                 triggerAriaLabel: e_,
-                cancelButtonLabel: F,
+                cancelButtonLabel: x,
                 submitButtonLabel: er,
                 confirmButtonLabel: X,
                 formTitle: J,
@@ -38879,7 +38887,7 @@ Error:`,
                 namePlaceholder: ee,
                 successMessageText: en,
                 isRequiredLabel: q,
-                addScreenshotButtonLabel: x,
+                addScreenshotButtonLabel: F,
                 removeScreenshotButtonLabel: et,
                 onFormClose: ei,
                 onFormOpen: eo,
@@ -39216,8 +39224,8 @@ ${
           K,
           k,
           V,
-          x = {},
-          F = [],
+          F = {},
+          x = [],
           X =
             /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i,
           j = Array.isArray;
@@ -39338,7 +39346,7 @@ ${
                   (a.length = n.length = 0),
                   (t = void 0),
                   W.sort(V))
-                : t && H.__c && H.__c(t, F));
+                : t && H.__c && H.__c(t, x));
           t && ec(n, t, a), (er.__r = 0);
         }
         function en(e, t, r, n, a, _, o, i, E, c, s) {
@@ -39347,7 +39355,7 @@ ${
             l,
             R,
             A,
-            T = (n && n.__k) || F,
+            T = (n && n.__k) || x,
             N = t.length;
           for (
             r.__d = E,
@@ -39455,7 +39463,7 @@ ${
             null != (l = r.__k[I]) &&
               "boolean" != typeof l &&
               "function" != typeof l &&
-              ((u = -1 === l.__i ? x : T[l.__i] || x),
+              ((u = -1 === l.__i ? F : T[l.__i] || F),
               (l.__i = I),
               eE(e, l, u, a, _, o, i, E, c, s),
               (R = l.__e),
@@ -39747,7 +39755,7 @@ ${
                   else {
                     if (
                       ((_ = _ && w.call(e.childNodes)),
-                      (T = r.props || x),
+                      (T = r.props || F),
                       !i && null != _)
                     )
                       for (T = {}, c = 0; c < e.attributes.length; c++)
@@ -39857,7 +39865,7 @@ ${
         function eu(e, t, r) {
           return this.constructor(e, r);
         }
-        (w = F.slice),
+        (w = x.slice),
           (H = {
             __e: function (e, t, r, n) {
               for (var a, _, o; (t = t.__); )
@@ -40243,7 +40251,7 @@ ${
           let r = e.get(t);
           return "string" == typeof r ? r.trim() : "";
         }
-        function ex({
+        function eF({
           options: e,
           defaultEmail: t,
           defaultName: r,
@@ -40391,7 +40399,7 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 154 },
                       },
-                      q(eF, {
+                      q(ex, {
                         label: f,
                         isRequiredLabel: D,
                         isRequired: d,
@@ -40427,7 +40435,7 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 171 },
                       },
-                      q(eF, {
+                      q(ex, {
                         label: A,
                         isRequiredLabel: D,
                         isRequired: N,
@@ -40462,7 +40470,7 @@ ${
                     __self: this,
                     __source: { fileName: ek, lineNumber: 187 },
                   },
-                  q(eF, {
+                  q(ex, {
                     label: O,
                     isRequiredLabel: D,
                     isRequired: !0,
@@ -40549,7 +40557,7 @@ ${
             ),
           );
         }
-        function eF({ label: e, isRequired: t, isRequiredLabel: r }) {
+        function ex({ label: e, isRequired: t, isRequiredLabel: r }) {
           return q(
             "span",
             {
@@ -40690,7 +40698,7 @@ ${
                         __self: this,
                         __source: { fileName: eX, lineNumber: 66 },
                       }),
-                      q(ex, {
+                      q(eF, {
                         ...r,
                         onSubmitSuccess: E,
                         __self: this,
@@ -41070,8 +41078,8 @@ ${eQ}
                     eE(
                       a,
                       (n = ((!c && E) || a).__k = q(Q, null, [n])),
-                      s || x,
-                      x,
+                      s || F,
+                      F,
                       void 0 !== a.ownerSVGElement,
                       !c && E
                         ? [E]
@@ -41094,8 +41102,8 @@ ${eQ}
           e0 =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/screenshot/components/ScreenshotEditor.tsx",
           e1 = 33,
-          e2 = c.devicePixelRatio,
-          e3 = (e) => ({
+          e3 = c.devicePixelRatio,
+          e2 = (e) => ({
             x: Math.min(e.startX, e.endX),
             y: Math.min(e.startY, e.endY),
             width: Math.abs(e.startX - e.endX),
@@ -41289,14 +41297,14 @@ ${eQ}
                       [d, O] = t.useState(!1);
                     function p() {
                       let e = l.current,
-                        t = e3(e6(r));
+                        t = e2(e6(r));
                       if (e) {
-                        (e.width = t.width * e2),
-                          (e.height = t.height * e2),
+                        (e.width = t.width * e3),
+                          (e.height = t.height * e3),
                           (e.style.width = `${t.width}px`),
                           (e.style.height = `${t.height}px`);
                         let r = e.getContext("2d");
-                        r && r.scale(e2, e2);
+                        r && r.scale(e3, e3);
                       }
                       let n = u.current;
                       n &&
@@ -41329,8 +41337,8 @@ ${eQ}
                         if (!e) return;
                         let t = e.getContext("2d");
                         if (!t) return;
-                        let n = e3(e6(r)),
-                          a = e3(R);
+                        let n = e2(e6(r)),
+                          a = e2(R);
                         t.clearRect(0, 0, n.width, n.height),
                           (t.fillStyle = "rgba(0, 0, 0, 0.5)"),
                           t.fillRect(0, 0, n.width, n.height),
@@ -41372,7 +41380,7 @@ ${eQ}
                                 A((e) => ({
                                   ...e,
                                   endX: Math.max(
-                                    Math.min(a, r.width / e2),
+                                    Math.min(a, r.width / e3),
                                     e.startX + e1,
                                   ),
                                   startY: Math.min(Math.max(0, _), e.endY - e1),
@@ -41383,7 +41391,7 @@ ${eQ}
                                   ...e,
                                   startX: Math.min(Math.max(0, a), e.endX - e1),
                                   endY: Math.max(
-                                    Math.min(_, r.height / e2),
+                                    Math.min(_, r.height / e3),
                                     e.startY + e1,
                                   ),
                                 }));
@@ -41392,11 +41400,11 @@ ${eQ}
                                 A((e) => ({
                                   ...e,
                                   endX: Math.max(
-                                    Math.min(a, r.width / e2),
+                                    Math.min(a, r.width / e3),
                                     e.startX + e1,
                                   ),
                                   endY: Math.max(
-                                    Math.min(_, r.height / e2),
+                                    Math.min(_, r.height / e3),
                                     e.startY + e1,
                                   ),
                                 }));
@@ -41477,14 +41485,14 @@ ${eQ}
                                           0,
                                           Math.min(
                                             a.startX + r,
-                                            t.width / e2 - (a.endX - a.startX),
+                                            t.width / e3 - (a.endX - a.startX),
                                           ),
                                         ),
                                         o = Math.max(
                                           0,
                                           Math.min(
                                             a.startY + n,
-                                            t.height / e2 - (a.endY - a.startY),
+                                            t.height / e3 - (a.endY - a.startY),
                                           ),
                                         ),
                                         i = _ + (a.endX - a.startX),
@@ -41569,8 +41577,8 @@ ${eQ}
                                         A({
                                           startX: 0,
                                           startY: 0,
-                                          endX: l.current.width / e2,
-                                          endY: l.current.height / e2,
+                                          endX: l.current.width / e3,
+                                          endY: l.current.height / e3,
                                         }),
                                       N(!1);
                                   },
@@ -41587,10 +41595,10 @@ ${eQ}
                                     e.preventDefault(),
                                       !(function () {
                                         let e = s.createElement("canvas"),
-                                          t = e3(e6(r)),
-                                          n = e3(R);
-                                        (e.width = n.width * e2),
-                                          (e.height = n.height * e2);
+                                          t = e2(e6(r)),
+                                          n = e2(R);
+                                        (e.width = n.width * e3),
+                                          (e.height = n.height * e3);
                                         let a = e.getContext("2d");
                                         a &&
                                           r &&
@@ -42475,7 +42483,7 @@ ${eQ}
             return rk;
           },
           T: function () {
-            return rF;
+            return rx;
           },
         });
         var c,
@@ -42513,8 +42521,8 @@ ${eQ}
           K = r(157079),
           k = r(469359),
           V = r(393523);
-        let x = g.n,
-          F = "sentryReplaySession",
+        let F = g.n,
+          x = "sentryReplaySession",
           X = "Unable to send Replay";
         function j(e, t) {
           return null != e ? e : t();
@@ -43791,10 +43799,10 @@ ${eQ}
         function eV(e, t) {
           return -2 === t.getId(e);
         }
-        function ex(e) {
+        function eF(e) {
           return !!e.changedTouches;
         }
-        function eF(e, t) {
+        function ex(e, t) {
           return !!("IFRAME" === e.nodeName && t.getMeta(e));
         }
         function eX(e, t) {
@@ -43923,8 +43931,8 @@ ${eQ}
           (I[(I.AdoptedStyleSheet = 15)] = "AdoptedStyleSheet"),
           (I[(I.CustomElement = 16)] = "CustomElement"),
           I);
-        var e2 =
-          (((u = e2 || {})[(u.MouseUp = 0)] = "MouseUp"),
+        var e3 =
+          (((u = e3 || {})[(u.MouseUp = 0)] = "MouseUp"),
           (u[(u.MouseDown = 1)] = "MouseDown"),
           (u[(u.Click = 2)] = "Click"),
           (u[(u.ContextMenu = 3)] = "ContextMenu"),
@@ -43936,8 +43944,8 @@ ${eQ}
           (u[(u.TouchEnd = 9)] = "TouchEnd"),
           (u[(u.TouchCancel = 10)] = "TouchCancel"),
           u);
-        var e3 =
-          (((l = e3 || {})[(l.Mouse = 0)] = "Mouse"),
+        var e2 =
+          (((l = e2 || {})[(l.Mouse = 0)] = "Mouse"),
           (l[(l.Pen = 1)] = "Pen"),
           (l[(l.Touch = 2)] = "Touch"),
           l);
@@ -44074,7 +44082,7 @@ ${eQ}
                       recordCanvas: this.recordCanvas,
                       inlineImages: this.inlineImages,
                       onSerialize: (e) => {
-                        eF(e, this.mirror) && this.iframeManager.addIframe(e),
+                        ex(e, this.mirror) && this.iframeManager.addIframe(e),
                           eX(e, this.mirror) &&
                             this.stylesheetManager.trackLinkElement(e),
                           ej(a) &&
@@ -44717,7 +44725,7 @@ ${eQ}
                   ev(
                     tt((e) => {
                       let t = ta(e),
-                        { clientX: r, clientY: _ } = ex(e)
+                        { clientX: r, clientY: _ } = eF(e)
                           ? e.changedTouches[0]
                           : e;
                       !a && (a = ew()),
@@ -44773,32 +44781,32 @@ ${eQ}
                   if ("pointerType" in o) {
                     switch (o.pointerType) {
                       case "mouse":
-                        E = e3.Mouse;
+                        E = e2.Mouse;
                         break;
                       case "touch":
-                        E = e3.Touch;
+                        E = e2.Touch;
                         break;
                       case "pen":
-                        E = e3.Pen;
+                        E = e2.Pen;
                     }
-                    E === e3.Touch
-                      ? e2[t] === e2.MouseDown
+                    E === e2.Touch
+                      ? e3[t] === e3.MouseDown
                         ? (s = "TouchStart")
-                        : e2[t] === e2.MouseUp && (s = "TouchEnd")
-                      : e3.Pen;
-                  } else ex(o) && (E = e3.Touch);
+                        : e3[t] === e3.MouseUp && (s = "TouchEnd")
+                      : e2.Pen;
+                  } else eF(o) && (E = e2.Touch);
                   null !== E
                     ? ((c = E),
-                      ((s.startsWith("Touch") && E === e3.Touch) ||
-                        (s.startsWith("Mouse") && E === e3.Mouse)) &&
+                      ((s.startsWith("Touch") && E === e2.Touch) ||
+                        (s.startsWith("Mouse") && E === e2.Mouse)) &&
                         (E = null))
-                    : e2[t] === e2.Click && ((E = c), (c = null));
-                  let I = ex(o) ? o.changedTouches[0] : o;
+                    : e3[t] === e3.Click && ((E = c), (c = null));
+                  let I = eF(o) ? o.changedTouches[0] : o;
                   if (!I) return;
                   let u = r.getId(i),
                     { clientX: l, clientY: R } = I;
                   tt(e)({
-                    type: e2[s],
+                    type: e3[s],
                     id: u,
                     x: l,
                     y: R,
@@ -44806,7 +44814,7 @@ ${eQ}
                   });
                 };
               return (
-                Object.keys(e2)
+                Object.keys(e3)
                   .filter(
                     (e) =>
                       Number.isNaN(Number(e)) &&
@@ -44817,13 +44825,13 @@ ${eQ}
                     let r = er(e),
                       n = s(e);
                     if (window.PointerEvent)
-                      switch (e2[e]) {
-                        case e2.MouseDown:
-                        case e2.MouseUp:
+                      switch (e3[e]) {
+                        case e3.MouseDown:
+                        case e3.MouseUp:
                           r = r.replace("mouse", "pointer");
                           break;
-                        case e2.TouchStart:
-                        case e2.TouchEnd:
+                        case e3.TouchStart:
+                        case e3.TouchEnd:
                           return;
                       }
                     E.push(eG(r, n, t));
@@ -45921,15 +45929,15 @@ ${eQ}
             getCanvasManager: V,
           } = e;
           _ = K;
-          let x = !y || window.parent === window,
-            F = !1;
-          if (!x)
+          let F = !y || window.parent === window,
+            x = !1;
+          if (!F)
             try {
-              window.parent.document && (F = !1);
+              window.parent.document && (x = !1);
             } catch (e) {
-              F = !0;
+              x = !0;
             }
-          if (x && !r) throw Error("emit function is required");
+          if (F && !r) throw Error("emit function is required");
           void 0 !== U && void 0 === M.mousemove && (M.mousemove = U),
             tD.reset();
           let X =
@@ -45991,7 +45999,7 @@ ${eQ}
             J = (e) => {
               for (let t of H || [])
                 t.eventProcessor && (e = t.eventProcessor(e));
-              return g && !F && (e = g(e)), e;
+              return g && !x && (e = g(e)), e;
             };
           o = (e, _) => {
             if (
@@ -46011,10 +46019,10 @@ ${eQ}
                   e.data.source === e1.Mutation
                 ) &&
                 tn.forEach((e) => e.unfreeze()),
-              x)
+              F)
             )
               (0, d.x)([r, "optionalCall", (t) => t(J(e), _)]);
-            else if (F) {
+            else if (x) {
               let t = {
                 type: "rrweb",
                 event: J(e),
@@ -46267,7 +46275,7 @@ ${eQ}
                 recordCanvas: G,
                 inlineImages: w,
                 onSerialize: (e) => {
-                  eF(e, tD) && et.addIframe(e),
+                  ex(e, tD) && et.addIframe(e),
                     eX(e, tD) && ee.trackLinkElement(e),
                     ej(e) && ea.addShadowRoot(e.shadowRoot, document);
                 },
@@ -46512,13 +46520,13 @@ ${eQ}
               !E &&
                 ((E = []),
                 (function () {
-                  (0, P.hl)(x, "open", function (e) {
+                  (0, P.hl)(F, "open", function (e) {
                     return function (...t) {
                       if (E)
                         try {
                           E.forEach((e) => e());
                         } catch (e) {}
-                      return e.apply(x, t);
+                      return e.apply(F, t);
                     };
                   });
                 })()),
@@ -46640,7 +46648,7 @@ ${eQ}
                   category: "ui.slowClickDetected",
                   data: {
                     ..._.data,
-                    url: x.location.href,
+                    url: F.location.href,
                     route: t.getCurrentRoute(),
                     timeAfterClickMs: r,
                     endReason: n,
@@ -46658,7 +46666,7 @@ ${eQ}
                 category: "ui.multiClick",
                 data: {
                   ..._.data,
-                  url: x.location.href,
+                  url: F.location.href,
                   route: t.getCurrentRoute(),
                   clickCount: a,
                   metric: !0,
@@ -46860,7 +46868,7 @@ ${eQ}
           return t ? t(e) : null;
         }
         function tk(e) {
-          return ((m.Z1 || x.performance.timeOrigin) + e) / 1e3;
+          return ((m.Z1 || F.performance.timeOrigin) + e) / 1e3;
         }
         function tV(e) {
           let t = e.entries[e.entries.length - 1];
@@ -46870,13 +46878,13 @@ ${eQ}
             t && t.element ? [t.element] : void 0,
           );
         }
-        function tx(e) {
+        function tF(e) {
           let t = e.entries[e.entries.length - 1],
             r = [];
           if (t && t.sources) for (let e of t.sources) e.node && r.push(e.node);
           return tj(e, "cumulative-layout-shift", r);
         }
-        function tF(e) {
+        function tx(e) {
           let t = e.entries[e.entries.length - 1];
           return tj(
             e,
@@ -47075,7 +47083,7 @@ ${eQ}
             return (this._earliestTimestamp = null), (this._totalSize = 0), e;
           }
         }
-        class t2 {
+        class t3 {
           constructor(e) {
             (this._fallback = new tZ()),
               (this._compression = new t1(e)),
@@ -47141,9 +47149,9 @@ ${eQ}
             }
           }
         }
-        function t3() {
+        function t2() {
           try {
-            return "sessionStorage" in x && !!x.sessionStorage;
+            return "sessionStorage" in F && !!F.sessionStorage;
           } catch (e) {
             return !1;
           }
@@ -47168,9 +47176,9 @@ ${eQ}
           };
         }
         function t4(e) {
-          if (!!t3())
+          if (!!t2())
             try {
-              x.sessionStorage.setItem(F, JSON.stringify(e));
+              F.sessionStorage.setItem(x, JSON.stringify(e));
             } catch (e) {}
         }
         function t8(
@@ -47218,9 +47226,9 @@ ${eQ}
           let _ =
             a.stickySession &&
             (function (e) {
-              if (!t3()) return null;
+              if (!t2()) return null;
               try {
-                let t = x.sessionStorage.getItem(F);
+                let t = F.sessionStorage.getItem(x);
                 if (!t) return null;
                 let r = JSON.parse(t);
                 return tq("[Replay] Loading existing session", e), t5(r);
@@ -47446,11 +47454,11 @@ ${eQ}
           return new URLSearchParams(e).toString();
         }
         function rp(e, t) {
-          let r = (function (e, t = x.document.baseURI) {
+          let r = (function (e, t = F.document.baseURI) {
             if (
               e.startsWith("http://") ||
               e.startsWith("https://") ||
-              e.startsWith(x.location.origin)
+              e.startsWith(F.location.origin)
             )
               return e;
             let r = new URL(e, t);
@@ -47753,7 +47761,7 @@ ${eQ}
                       },
                     },
                   };
-                })(x.performance.memory),
+                })(F.performance.memory),
               ]),
             );
           } catch (e) {
@@ -48165,7 +48173,7 @@ ${eQ}
                               let { type: r, id: n } = t.data,
                                 a = th.mirror.getNode(n);
                               a instanceof HTMLElement &&
-                                r === e2.Click &&
+                                r === e3.Click &&
                                 e.registerClick(a);
                             }
                           } catch (e) {}
@@ -48280,9 +48288,9 @@ ${eQ}
                   (this.eventBuffer = null),
                   (r = this),
                   (function () {
-                    if (!!t3())
+                    if (!!t2())
                       try {
-                        x.sessionStorage.removeItem(F);
+                        F.sessionStorage.removeItem(x);
                       } catch (e) {}
                   })(),
                   (r.session = void 0);
@@ -48372,8 +48380,8 @@ ${eQ}
             return !!this._checkSession() || !1;
           }
           setInitialState() {
-            let e = `${x.location.pathname}${x.location.hash}${x.location.search}`,
-              t = `${x.location.origin}${e}`;
+            let e = `${F.location.pathname}${F.location.hash}${F.location.search}`,
+              t = `${F.location.origin}${e}`;
             (this.performanceEntries = []),
               (this.replayPerformanceEntries = []),
               this._clearContext(),
@@ -48432,7 +48440,7 @@ ${eQ}
                         `[Replay] Using compression worker${e ? ` from ${e}` : ""}`,
                       );
                       let r = new Worker(t);
-                      return new t2(r);
+                      return new t3(r);
                     } catch (e) {
                       tJ("[Replay] Failed to create compression worker");
                     }
@@ -48484,13 +48492,13 @@ ${eQ}
           }
           _addListeners() {
             try {
-              x.document.addEventListener(
+              F.document.addEventListener(
                 "visibilitychange",
                 this._handleVisibilityChange,
               ),
-                x.addEventListener("blur", this._handleWindowBlur),
-                x.addEventListener("focus", this._handleWindowFocus),
-                x.addEventListener("keydown", this._handleKeyboardEvent),
+                F.addEventListener("blur", this._handleWindowBlur),
+                F.addEventListener("focus", this._handleWindowFocus),
+                F.addEventListener("keydown", this._handleKeyboardEvent),
                 this.clickDetector && this.clickDetector.addListeners(),
                 !this._hasInitializedCoreListeners &&
                   (!(function (e) {
@@ -48867,8 +48875,8 @@ ${eQ}
                 }),
                 n.push(
                   (0, W.$A)(tW(tV, e)),
-                  (0, W.PR)(tW(tx, e)),
-                  (0, W.to)(tW(tF, e)),
+                  (0, W.PR)(tW(tF, e)),
+                  (0, W.to)(tW(tx, e)),
                   (0, W.YF)(tW(tX, e)),
                 ),
                 () => {
@@ -48879,13 +48887,13 @@ ${eQ}
           }
           _removeListeners() {
             try {
-              x.document.removeEventListener(
+              F.document.removeEventListener(
                 "visibilitychange",
                 this._handleVisibilityChange,
               ),
-                x.removeEventListener("blur", this._handleWindowBlur),
-                x.removeEventListener("focus", this._handleWindowFocus),
-                x.removeEventListener("keydown", this._handleKeyboardEvent),
+                F.removeEventListener("blur", this._handleWindowBlur),
+                F.removeEventListener("focus", this._handleWindowFocus),
+                F.removeEventListener("keydown", this._handleKeyboardEvent),
                 this.clickDetector && this.clickDetector.removeListeners(),
                 this._performanceCleanupCallback &&
                   this._performanceCleanupCallback();
@@ -48895,7 +48903,7 @@ ${eQ}
           }
           __init() {
             this._handleVisibilityChange = () => {
-              "visible" === x.document.visibilityState
+              "visible" === F.document.visibilityState
                 ? this._doChangeToForegroundTasks()
                 : this._doChangeToBackgroundTasks();
             };
@@ -49285,8 +49293,8 @@ ${eQ}
                 networkDetailAllowUrls: A,
                 networkDetailDenyUrls: T,
                 networkCaptureBodies: N,
-                networkRequestHeaders: rx(d),
-                networkResponseHeaders: rx(O),
+                networkRequestHeaders: rF(d),
+                networkResponseHeaders: rF(O),
                 beforeAddRecordingEvent: g,
                 beforeErrorSampling: M,
                 _experiments: i,
@@ -49379,10 +49387,10 @@ ${eQ}
           }
         }
         rV.__initStatic();
-        function rx(e) {
+        function rF(e) {
           return [...rW, ...e.map((e) => e.toLowerCase())];
         }
-        function rF() {
+        function rx() {
           let e = (0, p.s3)();
           return e && e.getIntegrationByName("Replay");
         }
@@ -49438,4 +49446,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.84cf9a10cfe5b3cbca3b.js.map
+//# sourceMappingURL=sentry.150598b81158ba914630.js.map

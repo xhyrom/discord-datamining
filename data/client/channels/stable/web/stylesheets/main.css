@@ -47021,15 +47021,13 @@ html.disable-forced-colors * {
   --space-128: 128px;
   --space-160: 160px;
   --space-192: 192px;
-}
-.density-cozy {
-  --space-xxs: var(--space-8);
-  --space-xs: var(--space-12);
-  --space-sm: var(--space-16);
-  --space-md: var(--space-20);
-  --space-lg: var(--space-24);
-  --space-xl: var(--space-32);
-  --space-xxl: var(--space-48);
+  --space-xxs: var(--space-4);
+  --space-xs: var(--space-8);
+  --space-sm: var(--space-12);
+  --space-md: var(--space-16);
+  --space-lg: var(--space-20);
+  --space-xl: var(--space-24);
+  --space-xxl: var(--space-32);
 }
 .density-compact {
   --space-xxs: var(--space-4);
@@ -47039,6 +47037,15 @@ html.disable-forced-colors * {
   --space-lg: var(--space-20);
   --space-xl: var(--space-24);
   --space-xxl: var(--space-32);
+}
+.density-cozy {
+  --space-xxs: var(--space-8);
+  --space-xs: var(--space-12);
+  --space-sm: var(--space-16);
+  --space-md: var(--space-20);
+  --space-lg: var(--space-24);
+  --space-xl: var(--space-32);
+  --space-xxl: var(--space-48);
 }
 .density-spacious {
   --space-xxs: var(--space-12);
@@ -48369,4 +48376,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9bd9dc6b781bfe346457.css.map*/
+/*# sourceMappingURL=12633.a414ab5c158594a038e0.css.map*/
