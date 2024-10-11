@@ -13,8 +13,8 @@
               : void 0 !== t
                 ? 10 != +t || r
                   ? W(e, t, r, n)
-                  : F(e)
-                : F(e);
+                  : x(e)
+                : x(e);
           }
           function o(e, t) {
             (this.value = e), (this.sign = t), (this.isSmall = !1);
@@ -115,7 +115,7 @@
             (i.prototype = Object.create(_.prototype)),
             (E.prototype = Object.create(_.prototype)),
             (o.prototype.add = function (e) {
-              var t = F(e);
+              var t = x(e);
               if (this.sign !== t.sign) return this.subtract(t.negate());
               var r = this.value,
                 n = t.value;
@@ -125,7 +125,7 @@
             }),
             (o.prototype.plus = o.prototype.add),
             (i.prototype.add = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = this.value;
               if (r < 0 !== t.sign) return this.subtract(t.negate());
               var n = t.value;
@@ -137,7 +137,7 @@
             }),
             (i.prototype.plus = i.prototype.add),
             (E.prototype.add = function (e) {
-              return new E(this.value + F(e).value);
+              return new E(this.value + x(e).value);
             }),
             (E.prototype.plus = E.prototype.add);
           function O(e, t, r) {
@@ -191,7 +191,7 @@
               r,
               n,
               a,
-              _ = F(e);
+              _ = x(e);
             if (this.sign !== _.sign) return this.add(_.negate());
             var E = this.value,
               c = _.value;
@@ -208,7 +208,7 @@
           }),
             (o.prototype.minus = o.prototype.subtract),
             (i.prototype.subtract = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = this.value;
               if (r < 0 !== t.sign) return this.add(t.negate());
               var n = t.value;
@@ -216,7 +216,7 @@
             }),
             (i.prototype.minus = i.prototype.subtract),
             (E.prototype.subtract = function (e) {
-              return new E(this.value - F(e).value);
+              return new E(this.value - x(e).value);
             }),
             (E.prototype.minus = E.prototype.subtract),
             (o.prototype.negate = function () {
@@ -262,7 +262,7 @@
             var t,
               r,
               n,
-              a = F(e),
+              a = x(e),
               i = this.value,
               E = a.value,
               c = this.sign !== a.sign;
@@ -314,11 +314,11 @@
                     : S(Math.abs(e.value), this.value, this.sign !== e.sign);
             }),
             (i.prototype.multiply = function (e) {
-              return F(e)._multiplyBySmall(this);
+              return x(e)._multiplyBySmall(this);
             }),
             (i.prototype.times = i.prototype.multiply),
             (E.prototype.multiply = function (e) {
-              return new E(this.value * F(e).value);
+              return new E(this.value * x(e).value);
             }),
             (E.prototype.times = E.prototype.multiply),
             (o.prototype.square = function () {
@@ -347,7 +347,7 @@
           function C(e, t) {
             var r,
               n,
-              c = F(t);
+              c = x(t);
             if (a) return [new E(e.value / c.value), new E(e.value % c.value)];
             var A = e.value,
               T = c.value;
@@ -514,7 +514,7 @@
             }),
             (E.prototype.over = E.prototype.divide =
               function (e) {
-                return new E(this.value / F(e).value);
+                return new E(this.value / x(e).value);
               }),
             (i.prototype.over =
               i.prototype.divide =
@@ -525,7 +525,7 @@
             }),
             (E.prototype.mod = E.prototype.remainder =
               function (e) {
-                return new E(this.value % F(e).value);
+                return new E(this.value % x(e).value);
               }),
             (i.prototype.remainder =
               i.prototype.mod =
@@ -535,7 +535,7 @@
               var t,
                 r,
                 n,
-                a = F(e),
+                a = x(e),
                 o = this.value,
                 E = a.value;
               if (0 === E) return _[1];
@@ -557,7 +557,7 @@
             }),
             (i.prototype.pow = o.prototype.pow),
             (E.prototype.pow = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = this.value,
                 n = t.value,
                 a = BigInt(0),
@@ -578,7 +578,7 @@
               return s;
             }),
             (o.prototype.modPow = function (e, t) {
-              if (((e = F(e)), (t = F(t)).isZero()))
+              if (((e = x(e)), (t = x(t)).isZero()))
                 throw Error("Cannot take modPow with modulus 0");
               var r = _[1],
                 n = this.mod(t);
@@ -596,13 +596,13 @@
             }),
             (E.prototype.modPow = i.prototype.modPow = o.prototype.modPow),
             (o.prototype.compareAbs = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = this.value,
                 n = t.value;
               return t.isSmall ? 1 : g(r, n);
             }),
             (i.prototype.compareAbs = function (e) {
-              var t = F(e),
+              var t = x(e),
                 r = Math.abs(this.value),
                 n = t.value;
               return t.isSmall
@@ -615,7 +615,7 @@
             }),
             (E.prototype.compareAbs = function (e) {
               var t = this.value,
-                r = F(e).value;
+                r = x(e).value;
               return (t = t >= 0 ? t : -t) === (r = r >= 0 ? r : -r)
                 ? 0
                 : t > r
@@ -625,7 +625,7 @@
             (o.prototype.compare = function (e) {
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
-              var t = F(e),
+              var t = x(e),
                 r = this.value,
                 n = t.value;
               return this.sign !== t.sign
@@ -642,7 +642,7 @@
             (i.prototype.compare = function (e) {
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
-              var t = F(e),
+              var t = x(e),
                 r = this.value,
                 n = t.value;
               return t.isSmall
@@ -664,7 +664,7 @@
               if (e === 1 / 0) return -1;
               if (e === -1 / 0) return 1;
               var t = this.value,
-                r = F(e).value;
+                r = x(e).value;
               return t === r ? 0 : t > r ? 1 : -1;
             }),
             (E.prototype.compareTo = E.prototype.compare),
@@ -773,7 +773,7 @@
               return this.value === BigInt(0);
             }),
             (o.prototype.isDivisibleBy = function (e) {
-              var t = F(e);
+              var t = x(e);
               return (
                 !t.isZero() &&
                 (!!t.isUnit() ||
@@ -818,7 +818,7 @@
               o.prototype.isProbablePrime),
             (o.prototype.modInv = function (e) {
               for (
-                var t, r, a, _ = n.zero, o = n.one, i = F(e), E = this.abs();
+                var t, r, a, _ = n.zero, o = n.one, i = x(e), E = this.abs();
                 !E.isZero();
 
               )
@@ -871,7 +871,7 @@
             return 1e7 >= Math.abs(e);
           }
           function b(e, t, r) {
-            t = F(t);
+            t = x(t);
             for (
               var a = e.isNegative(),
                 _ = t.isNegative(),
@@ -902,7 +902,7 @@
             return l;
           }
           (o.prototype.shiftLeft = function (e) {
-            var t = F(e).toJSNumber();
+            var t = x(e).toJSNumber();
             if (!y(t)) throw Error(String(t) + " is too large for shifting.");
             if (t < 0) return this.shiftRight(-t);
             var r = this;
@@ -914,7 +914,7 @@
               o.prototype.shiftLeft),
             (o.prototype.shiftRight = function (e) {
               var t,
-                r = F(e).toJSNumber();
+                r = x(e).toJSNumber();
               if (!y(r)) throw Error(String(r) + " is too large for shifting.");
               if (r < 0) return this.shiftLeft(-r);
               for (var n = this; r >= m; ) {
@@ -960,13 +960,13 @@
             return r & -r;
           }
           function w(e, t) {
-            return (e = F(e)), (t = F(t)), e.greater(t) ? e : t;
+            return (e = x(e)), (t = x(t)), e.greater(t) ? e : t;
           }
           function H(e, t) {
-            return (e = F(e)), (t = F(t)), e.lesser(t) ? e : t;
+            return (e = x(e)), (t = x(t)), e.lesser(t) ? e : t;
           }
           function Y(e, t) {
-            if (((e = F(e).abs()), (t = F(t).abs()), e.equals(t))) return e;
+            if (((e = x(e).abs()), (t = x(t).abs()), e.equals(t))) return e;
             if (e.isZero()) return t;
             if (t.isZero()) return e;
             for (var r, n, a = _[1]; e.isEven() && t.isEven(); )
@@ -1019,17 +1019,17 @@
                 throw Error(c + " is not a valid digit in base " + t + ".");
               }
             }
-            t = F(t);
+            t = x(t);
             var s = [],
               I = "-" === e[0];
             for (_ = I ? 1 : 0; _ < e.length; _++) {
               var c = e[_];
-              if (c in E) s.push(F(E[c]));
+              if (c in E) s.push(x(E[c]));
               else if ("<" === c) {
                 var u = _;
                 do _++;
                 while (">" !== e[_] && _ < e.length);
-                s.push(F(e.slice(u + 1, _)));
+                s.push(x(e.slice(u + 1, _)));
               } else throw Error(c + " is not a valid character");
             }
             return K(s, t, I);
@@ -1111,7 +1111,7 @@
                 .join("")
             );
           }
-          function x(e) {
+          function F(e) {
             if (c(+e)) {
               var t = +e;
               if (t === R(t)) return a ? new E(BigInt(t)) : new i(t);
@@ -1192,7 +1192,7 @@
               function () {
                 return parseInt(this.toString(), 10);
               });
-          function F(e) {
+          function x(e) {
             return "number" == typeof e
               ? (function (e) {
                   if (a) return new E(BigInt(e));
@@ -1200,15 +1200,15 @@
                     if (e !== R(e)) throw Error(e + " is not an integer.");
                     return new i(e);
                   }
-                  return x(e.toString());
+                  return F(e.toString());
                 })(e)
               : "string" == typeof e
-                ? x(e)
+                ? F(e)
                 : "bigint" == typeof e
                   ? new E(e)
                   : e;
           }
-          for (var X = 0; X < 1e3; X++) (_[X] = F(X)), X > 0 && (_[-X] = F(-X));
+          for (var X = 0; X < 1e3; X++) (_[X] = x(X)), X > 0 && (_[-X] = x(-X));
           return (
             (_.one = _[1]),
             (_.zero = _[0]),
@@ -1218,8 +1218,8 @@
             (_.gcd = Y),
             (_.lcm = function (e, t) {
               return (
-                (e = F(e).abs()),
-                (t = F(t).abs()),
+                (e = x(e).abs()),
+                (t = x(t).abs()),
                 e.divide(Y(e, t)).multiply(t)
               );
             }),
@@ -1227,7 +1227,7 @@
               return e instanceof o || e instanceof i || e instanceof E;
             }),
             (_.randBetween = function (e, t, r) {
-              (e = F(e)), (t = F(t));
+              (e = x(e)), (t = x(t));
               var n = r || Math.random,
                 a = H(e, t),
                 o = w(e, t).subtract(a).add(1);
@@ -1244,7 +1244,7 @@
               return a.add(_.fromArray(E, 1e7, !1));
             }),
             (_.fromArray = function (e, t, r) {
-              return K(e.map(F), F(t || 10), r);
+              return K(e.map(x), x(t || 10), r);
             }),
             _
           );
@@ -4430,7 +4430,7 @@
         "use strict";
         r.d(t, {
           $7l: function () {
-            return aF.$7;
+            return ax.$7;
           },
           $92: function () {
             return _f;
@@ -4439,13 +4439,13 @@
             return p;
           },
           $Dd: function () {
-            return ax.$D;
+            return aF.$D;
           },
           $R1: function () {
-            return ax.$R;
+            return aF.$R;
           },
           $VG: function () {
-            return ax.$V;
+            return aF.$V;
           },
           $Y6: function () {
             return _H;
@@ -4472,13 +4472,13 @@
             return e4;
           },
           Ai1: function () {
-            return ax.Ai;
+            return aF.Ai;
           },
           AzA: function () {
             return tG;
           },
           B1h: function () {
-            return ax.B1;
+            return aF.B1;
           },
           B9o: function () {
             return _G;
@@ -4487,7 +4487,7 @@
             return _Q;
           },
           BRd: function () {
-            return ax.BR;
+            return aF.BR;
           },
           BVn: function () {
             return t0;
@@ -4499,7 +4499,7 @@
             return tr;
           },
           BmY: function () {
-            return x;
+            return F;
           },
           BpS: function () {
             return j;
@@ -4514,7 +4514,7 @@
             return R;
           },
           Cyb: function () {
-            return ax.Cy;
+            return aF.Cy;
           },
           DJE: function () {
             return tI;
@@ -4526,13 +4526,13 @@
             return a8;
           },
           E07: function () {
-            return _x;
+            return _F;
           },
           EKQ: function () {
-            return ax.EK;
+            return aF.EK;
           },
           ETv: function () {
-            return ax.ET;
+            return aF.ET;
           },
           EYA: function () {
             return _V;
@@ -4541,7 +4541,7 @@
             return E;
           },
           Etm: function () {
-            return ax.Et;
+            return aF.Et;
           },
           Eu4: function () {
             return eH;
@@ -4550,7 +4550,7 @@
             return _a;
           },
           FsG: function () {
-            return aF.Fs;
+            return ax.Fs;
           },
           GNZ: function () {
             return oo;
@@ -4562,10 +4562,10 @@
             return Q;
           },
           GZQ: function () {
-            return ax.GZ;
+            return aF.GZ;
           },
           H0J: function () {
-            return ax.H0;
+            return aF.H0;
           },
           HGf: function () {
             return os;
@@ -4574,7 +4574,7 @@
             return _E;
           },
           HeQ: function () {
-            return ax.He;
+            return aF.He;
           },
           Hqc: function () {
             return on;
@@ -4589,7 +4589,7 @@
             return ea;
           },
           IWh: function () {
-            return tF;
+            return tx;
           },
           IXf: function () {
             return _D;
@@ -4601,7 +4601,7 @@
             return ts;
           },
           Ilk: function () {
-            return ax.Il;
+            return aF.Il;
           },
           IyS: function () {
             return tX;
@@ -4613,7 +4613,7 @@
             return __;
           },
           JjL: function () {
-            return ax.Jj;
+            return aF.Jj;
           },
           JkL: function () {
             return _W;
@@ -4667,10 +4667,10 @@
             return tg;
           },
           NYc: function () {
-            return ax.NY;
+            return aF.NY;
           },
           NYc: function () {
-            return ax.NY;
+            return aF.NY;
           },
           NYg: function () {
             return e9;
@@ -4685,7 +4685,7 @@
             return eW;
           },
           O42: function () {
-            return aF.O4;
+            return ax.O4;
           },
           OBS: function () {
             return aj;
@@ -4697,7 +4697,7 @@
             return J;
           },
           OMz: function () {
-            return ax.OM;
+            return aF.OM;
           },
           OSm: function () {
             return _A;
@@ -4727,7 +4727,7 @@
             return e5;
           },
           Plq: function () {
-            return ax.Pl;
+            return aF.Pl;
           },
           PrB: function () {
             return f;
@@ -4736,7 +4736,7 @@
             return _w;
           },
           PyE: function () {
-            return ax.Py;
+            return aF.Py;
           },
           QCD: function () {
             return t_;
@@ -4745,7 +4745,7 @@
             return ec;
           },
           QL: function () {
-            return ax.QL;
+            return aF.QL;
           },
           QR$: function () {
             return th;
@@ -4754,13 +4754,13 @@
             return i;
           },
           Qa3: function () {
-            return ax.Q;
+            return aF.Q;
           },
           Qqv: function () {
             return eN;
           },
           R5N: function () {
-            return eF;
+            return ex;
           },
           R7I: function () {
             return _Y;
@@ -4769,10 +4769,10 @@
             return oA;
           },
           RG5: function () {
-            return ax.RG;
+            return aF.RG;
           },
           RK: function () {
-            return ax.RK;
+            return aF.RK;
           },
           RcX: function () {
             return _b;
@@ -4781,7 +4781,7 @@
             return o_;
           },
           S7T: function () {
-            return ax.S7;
+            return aF.S7;
           },
           S9g: function () {
             return ez;
@@ -4802,13 +4802,13 @@
             return a1;
           },
           Skl: function () {
-            return ax.Sk;
+            return aF.Sk;
           },
           T23: function () {
             return oD;
           },
           TC2: function () {
-            return ax.TC;
+            return aF.TC;
           },
           TNx: function () {
             return _j;
@@ -4826,10 +4826,10 @@
             return ta;
           },
           U66: function () {
-            return ax.U6;
+            return aF.U6;
           },
           U9i: function () {
-            return ax.U9;
+            return aF.U9;
           },
           ULH: function () {
             return T;
@@ -4838,7 +4838,7 @@
             return tQ;
           },
           Uk1: function () {
-            return ax.Uk;
+            return aF.Uk;
           },
           UkZ: function () {
             return tj;
@@ -4853,7 +4853,7 @@
             return aw.V;
           },
           V6Z: function () {
-            return ax.V6;
+            return aF.V6;
           },
           VD2: function () {
             return e7;
@@ -4865,10 +4865,10 @@
             return eC;
           },
           VqG: function () {
-            return ax.Vq;
+            return aF.Vq;
           },
           Vzj: function () {
-            return ax.Vz;
+            return aF.Vz;
           },
           WKe: function () {
             return _d;
@@ -4880,13 +4880,13 @@
             return en;
           },
           X5t: function () {
-            return ax.X5;
+            return aF.X5;
           },
           X6Q: function () {
-            return ax.X6;
+            return aF.X6;
           },
           X7u: function () {
-            return ax.X7;
+            return aF.X7;
           },
           XAJ: function () {
             return a2;
@@ -4928,7 +4928,7 @@
             return A;
           },
           Zuq: function () {
-            return ax.Zu;
+            return aF.Zu;
           },
           _1z: function () {
             return K;
@@ -4949,7 +4949,7 @@
             return a0;
           },
           aO5: function () {
-            return ax.aO;
+            return aF.aO;
           },
           aZC: function () {
             return _z;
@@ -4976,7 +4976,7 @@
             return e3;
           },
           cII: function () {
-            return aF.cI;
+            return ax.cI;
           },
           d4z: function () {
             return ab.d;
@@ -4988,13 +4988,13 @@
             return ev;
           },
           dG4: function () {
-            return ax.dG;
+            return aF.dG;
           },
           dGM: function () {
             return _h;
           },
           dGm: function () {
-            return ax.yA;
+            return aF.yA;
           },
           dN1: function () {
             return _T;
@@ -5036,16 +5036,16 @@
             return tu;
           },
           fK7: function () {
-            return ax.fK;
+            return aF.fK;
           },
           fMv: function () {
-            return aF.fM;
+            return ax.fM;
           },
           fo$: function () {
             return _P;
           },
           frH: function () {
-            return ax.fr;
+            return aF.fr;
           },
           fzT: function () {
             return _0;
@@ -5057,7 +5057,7 @@
             return tZ;
           },
           gg$: function () {
-            return ax.gg;
+            return aF.gg;
           },
           gkr: function () {
             return tC;
@@ -5087,7 +5087,7 @@
             return y;
           },
           ihW: function () {
-            return aF.ih;
+            return ax.ih;
           },
           ipw: function () {
             return W;
@@ -5099,7 +5099,7 @@
             return _n;
           },
           j8d: function () {
-            return ax.j8;
+            return aF.j8;
           },
           jXE: function () {
             return eA;
@@ -5135,10 +5135,10 @@
             return tW;
           },
           lTL: function () {
-            return ax.lT;
+            return aF.lT;
           },
           ldS: function () {
-            return ax.ld;
+            return aF.ld;
           },
           lds: function () {
             return aQ;
@@ -5186,7 +5186,7 @@
             return N;
           },
           pKx: function () {
-            return ax.pK;
+            return aF.pK;
           },
           pM4: function () {
             return L;
@@ -5228,10 +5228,10 @@
             return D;
           },
           rMx: function () {
-            return ex;
+            return eF;
           },
           rnv: function () {
-            return _F;
+            return _x;
           },
           rsA: function () {
             return oa;
@@ -5240,7 +5240,7 @@
             return eB;
           },
           rxP: function () {
-            return ax.rx;
+            return aF.rx;
           },
           sFg: function () {
             return X;
@@ -5264,13 +5264,13 @@
             return a7;
           },
           tNA: function () {
-            return ax.tN;
+            return aF.tN;
           },
           tPV: function () {
             return _l;
           },
           tPk: function () {
-            return ax.tP;
+            return aF.tP;
           },
           tuJ: function () {
             return eY;
@@ -5333,16 +5333,16 @@
             return aX;
           },
           xr4: function () {
-            return ax.xr;
+            return aF.xr;
           },
           yXg: function () {
             return e8;
           },
           yXt: function () {
-            return ax.yX;
+            return aF.yX;
           },
           yYS: function () {
-            return ax.yY;
+            return aF.yY;
           },
           yb: function () {
             return G;
@@ -5360,7 +5360,7 @@
             return _k;
           },
           zMe: function () {
-            return ax.zM;
+            return aF.zM;
           },
           zUn: function () {
             return e2;
@@ -5415,8 +5415,8 @@
           K,
           k,
           V,
-          x,
           F,
+          x,
           X,
           j,
           $,
@@ -5469,8 +5469,8 @@
           eK,
           ek,
           eV,
-          ex,
           eF,
+          ex,
           eX,
           ej,
           e$,
@@ -5533,8 +5533,8 @@
           tK,
           tk,
           tV,
-          tx,
           tF,
+          tx,
           tX,
           tj,
           t$,
@@ -5597,8 +5597,8 @@
           rK,
           rk,
           rV,
-          rx,
           rF,
+          rx,
           rX,
           rj,
           r$,
@@ -5661,8 +5661,8 @@
           nK,
           nk,
           nV,
-          nx,
           nF,
+          nx,
           nX,
           nj,
           n$,
@@ -5726,8 +5726,8 @@
           aK = r(272242),
           ak = r(188785),
           aV = r(526761),
-          ax = r(231338),
-          aF = r(334431);
+          aF = r(231338),
+          ax = r(334431);
         ((t2 = n || (n = {})).NONE = "NONE"),
           (t2.LOGGING_IN = "LOGGING_IN"),
           (t2.ACCOUNT_SCHEDULED_FOR_DELETION =
@@ -6250,11 +6250,11 @@
           (rU.DISABLED = "disabled"),
           ((rm = V || (V = {})).ENABLED = "ENABLED"),
           (rm.DISABLED = "DISABLED"),
-          ((rG = x || (x = {})).CONNECT = "CONNECT"),
+          ((rG = F || (F = {})).CONNECT = "CONNECT"),
           (rG.DISPATCH = "DISPATCH"),
           (rG.LOG_MESSAGES = "LOG_MESSAGES"),
           (rG.STORAGE_SYNC = "STORAGE_SYNC"),
-          ((F || (F = {})).TEXT_WIDGET = "TEXT_WIDGET"),
+          ((x || (x = {})).TEXT_WIDGET = "TEXT_WIDGET"),
           ((ry = X || (X = {}))[(ry.NONE = 0)] = "NONE"),
           (ry[(ry.LOW = 1)] = "LOW"),
           (ry[(ry.MEDIUM = 2)] = "MEDIUM"),
@@ -7769,15 +7769,15 @@
           (rV.MESSAGE_GROUP = "MESSAGE_GROUP"),
           (rV.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP"),
           (rV.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES"),
-          ((rx = en || (en = {})).VIDEO = "video"),
-          (rx.VOICE = "voice"),
-          ((rF = ea || (ea = {}))[(rF.PLAYING = 0)] = "PLAYING"),
-          (rF[(rF.STREAMING = 1)] = "STREAMING"),
-          (rF[(rF.LISTENING = 2)] = "LISTENING"),
-          (rF[(rF.WATCHING = 3)] = "WATCHING"),
-          (rF[(rF.CUSTOM_STATUS = 4)] = "CUSTOM_STATUS"),
-          (rF[(rF.COMPETING = 5)] = "COMPETING"),
-          (rF[(rF.HANG_STATUS = 6)] = "HANG_STATUS"),
+          ((rF = en || (en = {})).VIDEO = "video"),
+          (rF.VOICE = "voice"),
+          ((rx = ea || (ea = {}))[(rx.PLAYING = 0)] = "PLAYING"),
+          (rx[(rx.STREAMING = 1)] = "STREAMING"),
+          (rx[(rx.LISTENING = 2)] = "LISTENING"),
+          (rx[(rx.WATCHING = 3)] = "WATCHING"),
+          (rx[(rx.CUSTOM_STATUS = 4)] = "CUSTOM_STATUS"),
+          (rx[(rx.COMPETING = 5)] = "COMPETING"),
+          (rx[(rx.HANG_STATUS = 6)] = "HANG_STATUS"),
           ((rX = e_ || (e_ = {})).GAME = "game"),
           (rX.USER = "user"),
           (rX.GROUP = "group"),
@@ -7928,7 +7928,7 @@
               "/safetycenter",
             ),
           }),
-          _x = Object.freeze({
+          _F = Object.freeze({
             DEVELOPER_PORTAL: "/developers",
             DEVELOPER_PORTAL_GUILD_ANALYTICS: (e) =>
               "/developers/servers/".concat(e),
@@ -7936,7 +7936,7 @@
             DEVELOPER_PORTAL_EDIT_PAYOUTS: (e) =>
               "/developers/teams/".concat(e, "/payout-settings"),
           }),
-          _F = 10,
+          _x = 10,
           _X = 25,
           _j = /^FILTER_/,
           _$ = /^ANSWER_/;
@@ -8087,6 +8087,8 @@
             "INVALID_GIFT_REDEMPTION_OWNED"),
           (rz[(rz.INVALID_GIFT_SELF_REDEMPTION = 50054)] =
             "INVALID_GIFT_SELF_REDEMPTION"),
+          (rz[(rz.INVALID_GIFT_REDEMPTION_PREVIOUSLY_OWNED = 50092)] =
+            "INVALID_GIFT_REDEMPTION_PREVIOUSLY_OWNED"),
           (rz[(rz.INVALID_COUNTRY_CODE = 50095)] = "INVALID_COUNTRY_CODE"),
           (rz[(rz.INVALID_CANNOT_FRIEND_SELF = 50096)] =
             "INVALID_CANNOT_FRIEND_SELF"),
@@ -9425,7 +9427,7 @@
           (np.ADD_BUTTON = "add button"),
           (np.APPS_BUTTON = "apps button"),
           (np.APPS = "apps"),
-          ((nf = ex || (ex = {})).APP_OPENED = "app_opened"),
+          ((nf = eF || (eF = {})).APP_OPENED = "app_opened"),
           (nf.APP_CRASHED = "app_crashed"),
           (nf.APP_BACKGROUND = "app_background"),
           (nf.APP_NATIVE_CRASH = "app_native_crash"),
@@ -10830,7 +10832,7 @@
             "guild_game_discovery_entrypoint_deep_link_to_desktop"),
           (nf.GLOBAL_DISCOVERY_WITH_GAME_VIEWED =
             "global_discovery_with_game_viewed"),
-          ((nL = eF || (eF = {})).CANARY = "canary"),
+          ((nL = ex || (ex = {})).CANARY = "canary"),
           (nL.PTB = "ptb"),
           (nL.STABLE = "stable"),
           ((nS = eX || (eX = {}))[(nS.STAFF = 1)] = "STAFF"),
@@ -11451,18 +11453,18 @@
           (nV.PULLING = "PULLING"),
           (nV.CONFLICT = "CONFLICT"),
           (nV.ERROR = "ERROR"),
-          ((nx = t_ || (t_ = {})).PULL = "PULL"),
-          (nx.PUSH = "PUSH"),
-          (nx.CONFLICT = "CONFLICT"),
-          (nx.NONE = "NONE"),
-          ((nF = to || (to = {})).DISCORD = "discord"),
-          (nF.STEAM = "steam"),
-          (nF.TWITCH = "twitch"),
-          (nF.UPLAY = "uplay"),
-          (nF.BATTLENET = "battlenet"),
-          (nF.ORIGIN = "origin"),
-          (nF.GOG = "gog"),
-          (nF.EPIC = "epic"),
+          ((nF = t_ || (t_ = {})).PULL = "PULL"),
+          (nF.PUSH = "PUSH"),
+          (nF.CONFLICT = "CONFLICT"),
+          (nF.NONE = "NONE"),
+          ((nx = to || (to = {})).DISCORD = "discord"),
+          (nx.STEAM = "steam"),
+          (nx.TWITCH = "twitch"),
+          (nx.UPLAY = "uplay"),
+          (nx.BATTLENET = "battlenet"),
+          (nx.ORIGIN = "origin"),
+          (nx.GOG = "gog"),
+          (nx.EPIC = "epic"),
           Object.freeze({
             discord: "Discord",
             steam: "Steam",
@@ -11973,16 +11975,16 @@
           (au.SEARCH = "Search"),
           (au.SEARCH_SUGGESTION = "Search Suggestion");
         let oN = new Set([
-          ax.pK.USD,
-          ax.pK.CAD,
-          ax.pK.EUR,
-          ax.pK.AUD,
-          ax.pK.GBP,
-          ax.pK.PHP,
-          ax.pK.MYR,
-          ax.pK.VND,
-          ax.pK.KRW,
-          ax.pK.IDR,
+          aF.pK.USD,
+          aF.pK.CAD,
+          aF.pK.EUR,
+          aF.pK.AUD,
+          aF.pK.GBP,
+          aF.pK.PHP,
+          aF.pK.MYR,
+          aF.pK.VND,
+          aF.pK.KRW,
+          aF.pK.IDR,
         ]);
         ((al = tH || (tH = {})).ALWAYS = "ALWAYS"),
           (al.ON_CLICK = "ON_CLICK"),
@@ -12007,9 +12009,9 @@
           (aN.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited"),
           ((ad = tV || (tV = {})).SOUND = "SOUND"),
           (ad.VIDEO = "VIDEO"),
-          ((aO = tx || (tx = {})).PLAYING = "playing"),
+          ((aO = tF || (tF = {})).PLAYING = "playing"),
           (aO.PAUSED = "paused"),
-          ((ap = tF || (tF = {})).NONE = "none"),
+          ((ap = tx || (tx = {})).NONE = "none"),
           (ap.WIFI = "wifi"),
           (ap.CELLULAR = "cellular"),
           (ap.UNKNOWN = "unknown"),
@@ -12129,8 +12131,8 @@
           K,
           k,
           V,
-          x,
           F,
+          x,
           X,
           j,
           $,
@@ -12200,21 +12202,21 @@
           ((V = l || (l = {}))[(V.SAFARI = 0)] = "SAFARI"),
           (V[(V.IN_APP = 1)] = "IN_APP"),
           (V[(V.CHROME = 2)] = "CHROME"),
-          ((x = R || (R = {})).SOLVED = "solved"),
-          (x.EXPIRED = "expired"),
+          ((F = R || (R = {})).SOLVED = "solved"),
+          (F.EXPIRED = "expired"),
           ((A || (A = {})).MENTIONS = "mentions"),
-          ((F = T || (T = {})).OVERVIEW = "OVERVIEW"),
-          (F.RESEND_EMAIL = "RESEND_EMAIL"),
-          (F.CONFIRM_EMAIL_CHANGE_START = "CONFIRM_EMAIL_CHANGE_START"),
-          (F.CONFIRM_EMAIL_CHANGE_CODE = "CONFIRM_EMAIL_CHANGE_CODE"),
-          (F.ENTER_EMAIL = "ENTER_EMAIL"),
-          (F.ADD_PHONE = "ADD_PHONE"),
-          (F.VERIFY_PHONE = "VERIFY_PHONE"),
-          (F.VERIFY_PASSWORD = "VERIFY_PASSWORD"),
-          (F.PHONE_THEN_EMAIL_INTERSTITIAL = "PHONE_THEN_EMAIL_INTERSTITIAL"),
-          (F.CHANGE_EMAIL_COMPLETE = "CHANGE_EMAIL_COMPLETE"),
-          (F.CHANGE_EMAIL_COLLECT_REASONS = "CHANGE_EMAIL_COLLECT_REASONS"),
-          (F.CHANGE_EMAIL_WARNING = "CHANGE_EMAIL_WARNING"),
+          ((x = T || (T = {})).OVERVIEW = "OVERVIEW"),
+          (x.RESEND_EMAIL = "RESEND_EMAIL"),
+          (x.CONFIRM_EMAIL_CHANGE_START = "CONFIRM_EMAIL_CHANGE_START"),
+          (x.CONFIRM_EMAIL_CHANGE_CODE = "CONFIRM_EMAIL_CHANGE_CODE"),
+          (x.ENTER_EMAIL = "ENTER_EMAIL"),
+          (x.ADD_PHONE = "ADD_PHONE"),
+          (x.VERIFY_PHONE = "VERIFY_PHONE"),
+          (x.VERIFY_PASSWORD = "VERIFY_PASSWORD"),
+          (x.PHONE_THEN_EMAIL_INTERSTITIAL = "PHONE_THEN_EMAIL_INTERSTITIAL"),
+          (x.CHANGE_EMAIL_COMPLETE = "CHANGE_EMAIL_COMPLETE"),
+          (x.CHANGE_EMAIL_COLLECT_REASONS = "CHANGE_EMAIL_COLLECT_REASONS"),
+          (x.CHANGE_EMAIL_WARNING = "CHANGE_EMAIL_WARNING"),
           ((X = N || (N = {})).VOICE = "VOICE"),
           (X.VIDEO = "VIDEO"),
           (X.STREAM = "STREAM"),
@@ -12471,7 +12473,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-508d2469f01417977d23ef228a74646d07561b8c",
+            release: "discord_web-284bdde1993f7b0ef2e273323bfe849d12b5d2d2",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12540,8 +12542,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "335111"), "335111"));
-          o.YA("builtAt", String("1728682775659"));
+            o.YA("buildNumber", ((e = "335130"), "335130"));
+          o.YA("builtAt", String("1728684393568"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -17433,7 +17435,7 @@
             return eN;
           },
           OM: function () {
-            return eF;
+            return ex;
           },
           Pl: function () {
             return eM;
@@ -17502,7 +17504,7 @@
             return eP;
           },
           fK: function () {
-            return ex;
+            return eF;
           },
           fr: function () {
             return eB;
@@ -17592,8 +17594,8 @@
           K,
           k,
           V,
-          x,
           F,
+          x,
           X,
           j,
           $,
@@ -17762,12 +17764,12 @@
           Object.freeze({ CONSTANT: 1, APPLE_STICKER: 2 }),
           ((V = R || (R = {}))[(V.DISCOVERY = 0)] = "DISCOVERY"),
           (V[(V.CHECKOUT = 1)] = "CHECKOUT"),
-          ((x = A || (A = {}))[(x.SUBSCRIPTION = 0)] = "SUBSCRIPTION"),
-          (x[(x.ONE_TIME = 1)] = "ONE_TIME");
+          ((F = A || (A = {}))[(F.SUBSCRIPTION = 0)] = "SUBSCRIPTION"),
+          (F[(F.ONE_TIME = 1)] = "ONE_TIME");
         let eg = Object.freeze({ 0: "subscription", 1: "sku" });
-        ((F = T || (T = {}))[(F.VIEW_CHANNEL = 1024)] = "VIEW_CHANNEL"),
-          (F[(F.READ_MESSAGE_HISTORY = 65536)] = "READ_MESSAGE_HISTORY"),
-          (F[(F.CONNECT = 1048576)] = "CONNECT");
+        ((x = T || (T = {}))[(x.VIEW_CHANNEL = 1024)] = "VIEW_CHANNEL"),
+          (x[(x.READ_MESSAGE_HISTORY = 65536)] = "READ_MESSAGE_HISTORY"),
+          (x[(x.CONNECT = 1048576)] = "CONNECT");
         let eM = Object.freeze({
             CREATE_INSTANT_INVITE: ei.r0(0),
             KICK_MEMBERS: ei.r0(1),
@@ -18180,7 +18182,7 @@
           (q.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
           (0, eE.Ft)(eV),
           (0, eE.Ft)(f);
-        let ex = Object.freeze({
+        let eF = Object.freeze({
           FACEBOOK_URL: "https://www.facebook.com/discord/",
           INSTAGRAM_URL: "https://www.instagram.com/discord/",
           YOUTUBE_URL: "https://www.youtube.com/discord/",
@@ -18395,7 +18397,7 @@
           (Q.ZAR = "zar"),
           (Q.ZMW = "zmw"),
           (Q.ZWL = "zwl");
-        let eF = "US";
+        let ex = "US";
         ((Z = h || (h = {})).COUNTRY = "US"),
           (Z.CURRENCY = "usd"),
           ((ee = C || (C = {}))[(ee.SINGLE_PLAYER = 1)] = "SINGLE_PLAYER"),
@@ -24108,8 +24110,8 @@
                 return [e[0] / 255, e[1] / 255, e[2] / 255, e[3]];
               });
             var V = i.unpack,
-              x = i.unpack,
-              F = Math.floor,
+              F = i.unpack,
+              x = Math.floor,
               X = i.unpack,
               j = i.type,
               $ = function () {
@@ -24150,7 +24152,7 @@
 
                 )
                   c[s] = arguments[s];
-                var I = (c = x(c, "hcg"))[0],
+                var I = (c = F(c, "hcg"))[0],
                   u = c[1],
                   l = c[2];
                 l *= 255;
@@ -24160,7 +24162,7 @@
                   360 === I && (I = 0),
                     I > 360 && (I -= 360),
                     I < 0 && (I += 360);
-                  var A = F((I /= 60)),
+                  var A = x((I /= 60)),
                     T = I - A,
                     N = l * (1 - u),
                     d = N + R * (1 - T),
@@ -24605,8 +24607,8 @@
               eK = i.RAD2DEG,
               ek = Math.sqrt,
               eV = Math.atan2,
-              ex = Math.round,
-              eF = function () {
+              eF = Math.round,
+              ex = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = eW(e, "lab"),
@@ -24615,7 +24617,7 @@
                   _ = r[2],
                   o = ek(a * a + _ * _),
                   i = (eV(_, a) * eK + 360) % 360;
-                return 0 === ex(1e4 * o) && (i = Number.NaN), [n, o, i];
+                return 0 === eF(1e4 * o) && (i = Number.NaN), [n, o, i];
               },
               eX = i.unpack,
               ej = i.unpack,
@@ -24647,7 +24649,7 @@
                   e[t] = arguments[t];
                 var r = eX(e, "rgb"),
                   n = eG(r[0], r[1], r[2]);
-                return eF(n[0], n[1], n[2]);
+                return ex(n[0], n[1], n[2]);
               };
             (u.prototype.lch = function () {
               return e3(this._rgb);
@@ -25118,7 +25120,7 @@
                   e[t] = arguments[t];
                 var r = tf(e, "rgb"),
                   n = tu(r[0], r[1], r[2]);
-                return eF(n[0], n[1], n[2]);
+                return ex(n[0], n[1], n[2]);
               };
             (u.prototype.oklch = function () {
               return th(this._rgb);
@@ -25410,8 +25412,8 @@
               tK = Math.sqrt,
               tk = Math.PI,
               tV = Math.cos,
-              tx = Math.sin,
-              tF = Math.atan2,
+              tF = Math.sin,
+              tx = Math.atan2,
               tX = function (e, t) {
                 for (
                   var r = e.length, n = [0, 0, 0, 0], a = 0;
@@ -26440,7 +26442,7 @@
                     "h" === t.charAt(s) && !isNaN(o[s]))
                   ) {
                     var I = (o[s] / 180) * tk;
-                    (E += tV(I) * r[0]), (c += tx(I) * r[0]);
+                    (E += tV(I) * r[0]), (c += tF(I) * r[0]);
                   }
                 var l = _.alpha() * r[0];
                 e.forEach(function (e, n) {
@@ -26450,13 +26452,13 @@
                     if (!isNaN(a[_])) {
                       if (((i[_] += r[n + 1]), "h" === t.charAt(_))) {
                         var s = (a[_] / 180) * tk;
-                        (E += tV(s) * r[n + 1]), (c += tx(s) * r[n + 1]);
+                        (E += tV(s) * r[n + 1]), (c += tF(s) * r[n + 1]);
                       } else o[_] += a[_] * r[n + 1];
                     }
                 });
                 for (var R = 0; R < o.length; R++)
                   if ("h" === t.charAt(R)) {
-                    for (var A = (tF(c / i[R], E / i[R]) / tk) * 180; A < 0; )
+                    for (var A = (tx(c / i[R], E / i[R]) / tk) * 180; A < 0; )
                       A += 360;
                     for (; A >= 360; ) A -= 360;
                     o[R] = A;
@@ -38835,8 +38837,8 @@ Error:`,
             colorScheme: K = "system",
             themeLight: k = {},
             themeDark: V = {},
-            addScreenshotButtonLabel: x = h,
-            cancelButtonLabel: F = l,
+            addScreenshotButtonLabel: F = h,
+            cancelButtonLabel: x = l,
             confirmButtonLabel: X = A,
             emailLabel: j = d,
             emailPlaceholder: $ = N,
@@ -38873,7 +38875,7 @@ Error:`,
                 themeLight: k,
                 triggerLabel: ea,
                 triggerAriaLabel: e_,
-                cancelButtonLabel: F,
+                cancelButtonLabel: x,
                 submitButtonLabel: er,
                 confirmButtonLabel: X,
                 formTitle: J,
@@ -38885,7 +38887,7 @@ Error:`,
                 namePlaceholder: ee,
                 successMessageText: en,
                 isRequiredLabel: q,
-                addScreenshotButtonLabel: x,
+                addScreenshotButtonLabel: F,
                 removeScreenshotButtonLabel: et,
                 onFormClose: ei,
                 onFormOpen: eo,
@@ -39222,8 +39224,8 @@ ${
           K,
           k,
           V,
-          x = {},
-          F = [],
+          F = {},
+          x = [],
           X =
             /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i,
           j = Array.isArray;
@@ -39344,7 +39346,7 @@ ${
                   (a.length = n.length = 0),
                   (t = void 0),
                   W.sort(V))
-                : t && H.__c && H.__c(t, F));
+                : t && H.__c && H.__c(t, x));
           t && ec(n, t, a), (er.__r = 0);
         }
         function en(e, t, r, n, a, _, o, i, E, c, s) {
@@ -39353,7 +39355,7 @@ ${
             l,
             R,
             A,
-            T = (n && n.__k) || F,
+            T = (n && n.__k) || x,
             N = t.length;
           for (
             r.__d = E,
@@ -39461,7 +39463,7 @@ ${
             null != (l = r.__k[I]) &&
               "boolean" != typeof l &&
               "function" != typeof l &&
-              ((u = -1 === l.__i ? x : T[l.__i] || x),
+              ((u = -1 === l.__i ? F : T[l.__i] || F),
               (l.__i = I),
               eE(e, l, u, a, _, o, i, E, c, s),
               (R = l.__e),
@@ -39753,7 +39755,7 @@ ${
                   else {
                     if (
                       ((_ = _ && w.call(e.childNodes)),
-                      (T = r.props || x),
+                      (T = r.props || F),
                       !i && null != _)
                     )
                       for (T = {}, c = 0; c < e.attributes.length; c++)
@@ -39863,7 +39865,7 @@ ${
         function eu(e, t, r) {
           return this.constructor(e, r);
         }
-        (w = F.slice),
+        (w = x.slice),
           (H = {
             __e: function (e, t, r, n) {
               for (var a, _, o; (t = t.__); )
@@ -40249,7 +40251,7 @@ ${
           let r = e.get(t);
           return "string" == typeof r ? r.trim() : "";
         }
-        function ex({
+        function eF({
           options: e,
           defaultEmail: t,
           defaultName: r,
@@ -40397,7 +40399,7 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 154 },
                       },
-                      q(eF, {
+                      q(ex, {
                         label: f,
                         isRequiredLabel: D,
                         isRequired: d,
@@ -40433,7 +40435,7 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 171 },
                       },
-                      q(eF, {
+                      q(ex, {
                         label: A,
                         isRequiredLabel: D,
                         isRequired: N,
@@ -40468,7 +40470,7 @@ ${
                     __self: this,
                     __source: { fileName: ek, lineNumber: 187 },
                   },
-                  q(eF, {
+                  q(ex, {
                     label: O,
                     isRequiredLabel: D,
                     isRequired: !0,
@@ -40555,7 +40557,7 @@ ${
             ),
           );
         }
-        function eF({ label: e, isRequired: t, isRequiredLabel: r }) {
+        function ex({ label: e, isRequired: t, isRequiredLabel: r }) {
           return q(
             "span",
             {
@@ -40696,7 +40698,7 @@ ${
                         __self: this,
                         __source: { fileName: eX, lineNumber: 66 },
                       }),
-                      q(ex, {
+                      q(eF, {
                         ...r,
                         onSubmitSuccess: E,
                         __self: this,
@@ -41076,8 +41078,8 @@ ${eQ}
                     eE(
                       a,
                       (n = ((!c && E) || a).__k = q(Q, null, [n])),
-                      s || x,
-                      x,
+                      s || F,
+                      F,
                       void 0 !== a.ownerSVGElement,
                       !c && E
                         ? [E]
@@ -42481,7 +42483,7 @@ ${eQ}
             return rk;
           },
           T: function () {
-            return rF;
+            return rx;
           },
         });
         var c,
@@ -42519,8 +42521,8 @@ ${eQ}
           K = r(157079),
           k = r(469359),
           V = r(393523);
-        let x = g.n,
-          F = "sentryReplaySession",
+        let F = g.n,
+          x = "sentryReplaySession",
           X = "Unable to send Replay";
         function j(e, t) {
           return null != e ? e : t();
@@ -43797,10 +43799,10 @@ ${eQ}
         function eV(e, t) {
           return -2 === t.getId(e);
         }
-        function ex(e) {
+        function eF(e) {
           return !!e.changedTouches;
         }
-        function eF(e, t) {
+        function ex(e, t) {
           return !!("IFRAME" === e.nodeName && t.getMeta(e));
         }
         function eX(e, t) {
@@ -44080,7 +44082,7 @@ ${eQ}
                       recordCanvas: this.recordCanvas,
                       inlineImages: this.inlineImages,
                       onSerialize: (e) => {
-                        eF(e, this.mirror) && this.iframeManager.addIframe(e),
+                        ex(e, this.mirror) && this.iframeManager.addIframe(e),
                           eX(e, this.mirror) &&
                             this.stylesheetManager.trackLinkElement(e),
                           ej(a) &&
@@ -44723,7 +44725,7 @@ ${eQ}
                   ev(
                     tt((e) => {
                       let t = ta(e),
-                        { clientX: r, clientY: _ } = ex(e)
+                        { clientX: r, clientY: _ } = eF(e)
                           ? e.changedTouches[0]
                           : e;
                       !a && (a = ew()),
@@ -44792,14 +44794,14 @@ ${eQ}
                         ? (s = "TouchStart")
                         : e2[t] === e2.MouseUp && (s = "TouchEnd")
                       : e3.Pen;
-                  } else ex(o) && (E = e3.Touch);
+                  } else eF(o) && (E = e3.Touch);
                   null !== E
                     ? ((c = E),
                       ((s.startsWith("Touch") && E === e3.Touch) ||
                         (s.startsWith("Mouse") && E === e3.Mouse)) &&
                         (E = null))
                     : e2[t] === e2.Click && ((E = c), (c = null));
-                  let I = ex(o) ? o.changedTouches[0] : o;
+                  let I = eF(o) ? o.changedTouches[0] : o;
                   if (!I) return;
                   let u = r.getId(i),
                     { clientX: l, clientY: R } = I;
@@ -45927,15 +45929,15 @@ ${eQ}
             getCanvasManager: V,
           } = e;
           _ = K;
-          let x = !y || window.parent === window,
-            F = !1;
-          if (!x)
+          let F = !y || window.parent === window,
+            x = !1;
+          if (!F)
             try {
-              window.parent.document && (F = !1);
+              window.parent.document && (x = !1);
             } catch (e) {
-              F = !0;
+              x = !0;
             }
-          if (x && !r) throw Error("emit function is required");
+          if (F && !r) throw Error("emit function is required");
           void 0 !== U && void 0 === M.mousemove && (M.mousemove = U),
             tD.reset();
           let X =
@@ -45997,7 +45999,7 @@ ${eQ}
             J = (e) => {
               for (let t of H || [])
                 t.eventProcessor && (e = t.eventProcessor(e));
-              return g && !F && (e = g(e)), e;
+              return g && !x && (e = g(e)), e;
             };
           o = (e, _) => {
             if (
@@ -46017,10 +46019,10 @@ ${eQ}
                   e.data.source === e1.Mutation
                 ) &&
                 tn.forEach((e) => e.unfreeze()),
-              x)
+              F)
             )
               (0, d.x)([r, "optionalCall", (t) => t(J(e), _)]);
-            else if (F) {
+            else if (x) {
               let t = {
                 type: "rrweb",
                 event: J(e),
@@ -46273,7 +46275,7 @@ ${eQ}
                 recordCanvas: G,
                 inlineImages: w,
                 onSerialize: (e) => {
-                  eF(e, tD) && et.addIframe(e),
+                  ex(e, tD) && et.addIframe(e),
                     eX(e, tD) && ee.trackLinkElement(e),
                     ej(e) && ea.addShadowRoot(e.shadowRoot, document);
                 },
@@ -46518,13 +46520,13 @@ ${eQ}
               !E &&
                 ((E = []),
                 (function () {
-                  (0, P.hl)(x, "open", function (e) {
+                  (0, P.hl)(F, "open", function (e) {
                     return function (...t) {
                       if (E)
                         try {
                           E.forEach((e) => e());
                         } catch (e) {}
-                      return e.apply(x, t);
+                      return e.apply(F, t);
                     };
                   });
                 })()),
@@ -46646,7 +46648,7 @@ ${eQ}
                   category: "ui.slowClickDetected",
                   data: {
                     ..._.data,
-                    url: x.location.href,
+                    url: F.location.href,
                     route: t.getCurrentRoute(),
                     timeAfterClickMs: r,
                     endReason: n,
@@ -46664,7 +46666,7 @@ ${eQ}
                 category: "ui.multiClick",
                 data: {
                   ..._.data,
-                  url: x.location.href,
+                  url: F.location.href,
                   route: t.getCurrentRoute(),
                   clickCount: a,
                   metric: !0,
@@ -46866,7 +46868,7 @@ ${eQ}
           return t ? t(e) : null;
         }
         function tk(e) {
-          return ((m.Z1 || x.performance.timeOrigin) + e) / 1e3;
+          return ((m.Z1 || F.performance.timeOrigin) + e) / 1e3;
         }
         function tV(e) {
           let t = e.entries[e.entries.length - 1];
@@ -46876,13 +46878,13 @@ ${eQ}
             t && t.element ? [t.element] : void 0,
           );
         }
-        function tx(e) {
+        function tF(e) {
           let t = e.entries[e.entries.length - 1],
             r = [];
           if (t && t.sources) for (let e of t.sources) e.node && r.push(e.node);
           return tj(e, "cumulative-layout-shift", r);
         }
-        function tF(e) {
+        function tx(e) {
           let t = e.entries[e.entries.length - 1];
           return tj(
             e,
@@ -47149,7 +47151,7 @@ ${eQ}
         }
         function t3() {
           try {
-            return "sessionStorage" in x && !!x.sessionStorage;
+            return "sessionStorage" in F && !!F.sessionStorage;
           } catch (e) {
             return !1;
           }
@@ -47176,7 +47178,7 @@ ${eQ}
         function t4(e) {
           if (!!t3())
             try {
-              x.sessionStorage.setItem(F, JSON.stringify(e));
+              F.sessionStorage.setItem(x, JSON.stringify(e));
             } catch (e) {}
         }
         function t8(
@@ -47226,7 +47228,7 @@ ${eQ}
             (function (e) {
               if (!t3()) return null;
               try {
-                let t = x.sessionStorage.getItem(F);
+                let t = F.sessionStorage.getItem(x);
                 if (!t) return null;
                 let r = JSON.parse(t);
                 return tq("[Replay] Loading existing session", e), t5(r);
@@ -47452,11 +47454,11 @@ ${eQ}
           return new URLSearchParams(e).toString();
         }
         function rp(e, t) {
-          let r = (function (e, t = x.document.baseURI) {
+          let r = (function (e, t = F.document.baseURI) {
             if (
               e.startsWith("http://") ||
               e.startsWith("https://") ||
-              e.startsWith(x.location.origin)
+              e.startsWith(F.location.origin)
             )
               return e;
             let r = new URL(e, t);
@@ -47759,7 +47761,7 @@ ${eQ}
                       },
                     },
                   };
-                })(x.performance.memory),
+                })(F.performance.memory),
               ]),
             );
           } catch (e) {
@@ -48288,7 +48290,7 @@ ${eQ}
                   (function () {
                     if (!!t3())
                       try {
-                        x.sessionStorage.removeItem(F);
+                        F.sessionStorage.removeItem(x);
                       } catch (e) {}
                   })(),
                   (r.session = void 0);
@@ -48378,8 +48380,8 @@ ${eQ}
             return !!this._checkSession() || !1;
           }
           setInitialState() {
-            let e = `${x.location.pathname}${x.location.hash}${x.location.search}`,
-              t = `${x.location.origin}${e}`;
+            let e = `${F.location.pathname}${F.location.hash}${F.location.search}`,
+              t = `${F.location.origin}${e}`;
             (this.performanceEntries = []),
               (this.replayPerformanceEntries = []),
               this._clearContext(),
@@ -48490,13 +48492,13 @@ ${eQ}
           }
           _addListeners() {
             try {
-              x.document.addEventListener(
+              F.document.addEventListener(
                 "visibilitychange",
                 this._handleVisibilityChange,
               ),
-                x.addEventListener("blur", this._handleWindowBlur),
-                x.addEventListener("focus", this._handleWindowFocus),
-                x.addEventListener("keydown", this._handleKeyboardEvent),
+                F.addEventListener("blur", this._handleWindowBlur),
+                F.addEventListener("focus", this._handleWindowFocus),
+                F.addEventListener("keydown", this._handleKeyboardEvent),
                 this.clickDetector && this.clickDetector.addListeners(),
                 !this._hasInitializedCoreListeners &&
                   (!(function (e) {
@@ -48873,8 +48875,8 @@ ${eQ}
                 }),
                 n.push(
                   (0, W.$A)(tW(tV, e)),
-                  (0, W.PR)(tW(tx, e)),
-                  (0, W.to)(tW(tF, e)),
+                  (0, W.PR)(tW(tF, e)),
+                  (0, W.to)(tW(tx, e)),
                   (0, W.YF)(tW(tX, e)),
                 ),
                 () => {
@@ -48885,13 +48887,13 @@ ${eQ}
           }
           _removeListeners() {
             try {
-              x.document.removeEventListener(
+              F.document.removeEventListener(
                 "visibilitychange",
                 this._handleVisibilityChange,
               ),
-                x.removeEventListener("blur", this._handleWindowBlur),
-                x.removeEventListener("focus", this._handleWindowFocus),
-                x.removeEventListener("keydown", this._handleKeyboardEvent),
+                F.removeEventListener("blur", this._handleWindowBlur),
+                F.removeEventListener("focus", this._handleWindowFocus),
+                F.removeEventListener("keydown", this._handleKeyboardEvent),
                 this.clickDetector && this.clickDetector.removeListeners(),
                 this._performanceCleanupCallback &&
                   this._performanceCleanupCallback();
@@ -48901,7 +48903,7 @@ ${eQ}
           }
           __init() {
             this._handleVisibilityChange = () => {
-              "visible" === x.document.visibilityState
+              "visible" === F.document.visibilityState
                 ? this._doChangeToForegroundTasks()
                 : this._doChangeToBackgroundTasks();
             };
@@ -49291,8 +49293,8 @@ ${eQ}
                 networkDetailAllowUrls: A,
                 networkDetailDenyUrls: T,
                 networkCaptureBodies: N,
-                networkRequestHeaders: rx(d),
-                networkResponseHeaders: rx(O),
+                networkRequestHeaders: rF(d),
+                networkResponseHeaders: rF(O),
                 beforeAddRecordingEvent: g,
                 beforeErrorSampling: M,
                 _experiments: i,
@@ -49385,10 +49387,10 @@ ${eQ}
           }
         }
         rV.__initStatic();
-        function rx(e) {
+        function rF(e) {
           return [...rW, ...e.map((e) => e.toLowerCase())];
         }
-        function rF() {
+        function rx() {
           let e = (0, p.s3)();
           return e && e.getIntegrationByName("Replay");
         }
@@ -49444,4 +49446,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.67486f714901d6b25e17.js.map
+//# sourceMappingURL=sentry.b59fb8006a9d4e5e53b1.js.map
