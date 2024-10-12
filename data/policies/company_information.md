@@ -493,13 +493,7 @@
           <strong>Discord Inc.<br /><br /></strong>Discord Inc.<br />444 De Haro
           Street<br />Suite 200<br />San Francisco, CA 94107<br />United States
           of America<br /><br />Phone: 888-594-0085<br />Email:
-          <a
-            href="/cdn-cgi/l/email-protection#1d6e686d6d726f695d79746e7e726f79337e7270"
-            ><span
-              class="__cf_email__"
-              data-cfemail="275452575748555367434e54444855430944484a"
-              >[email&nbsp;protected]</span
-            ></a
+          <a href="mailto:support@discord.com">support@discord.com</a
           ><br /><br />Authorized Representative<br />Clint Smith, CLO<br /><br />Discord
           Inc. is a United States corporation incorporated and registered under
           the laws of the State of Delaware, USA. Registrar: 5128862, Department
@@ -510,13 +504,7 @@
           <strong>Discord Netherlands B.V.<br /></strong><br />Discord
           Netherlands B.V.<br />Schiphol Boulevard 195<br />1118BG Schiphol<br />Netherlands<br />
           <br />Phone: +31 20 809 0400<br />Email:
-          <a
-            href="/cdn-cgi/l/email-protection#cdbeb8bdbda2bfb98da9a4beaea2bfa9e3aea2a0"
-            ><span
-              class="__cf_email__"
-              data-cfemail="e2919792928d9096a2868b91818d9086cc818d8f"
-              >[email&nbsp;protected]</span
-            ></a
+          <a href="mailto:support@discord.com">support@discord.com</a
           ><br /><br />Authorized Representative<br />Tom Marcinkowski,
           Director<br /><br />Discord Netherlands B.V. is a Dutch private
           limited liability company (B.V.) incorporated and registered under the
