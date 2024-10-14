@@ -1304,7 +1304,7 @@
           <a
             href="/cdn-cgi/l/email-protection"
             class="__cf_email__"
-            data-cfemail="97e7e5fee1f6f4eed7f3fee4f4f8e5f3b9f4f8fa"
+            data-cfemail="a0d0d2c9d6c1c3d9e0c4c9d3c3cfd2c48ec3cfcd"
             >[email&nbsp;protected]</a
           >. If we do not resolve your complaint, you may submit your complaint
           free of charge to
@@ -1358,10 +1358,10 @@
         <h2>Data Protection Officer</h2>
         <p>
           You can contact Discord Netherlands BV’s Data Protection Officer at
-          <a href="/cdn-cgi/l/email-protection#3256425d72565b41515d40561c515d5f"
+          <a href="/cdn-cgi/l/email-protection#fa9e8a95ba9e93899995889ed4999597"
             ><span
               class="__cf_email__"
-              data-cfemail="9bffebf4dbfff2e8f8f4e9ffb5f8f4f6"
+              data-cfemail="c9adb9a689ada0baaaa6bbade7aaa6a4"
               >[email&nbsp;protected]</span
             ></a
           >.
@@ -1420,7 +1420,7 @@
           <a
             href="/cdn-cgi/l/email-protection"
             class="__cf_email__"
-            data-cfemail="1262607b6473716b52767b61717d60763c717d7f"
+            data-cfemail="cabab8a3bcaba9b38aaea3b9a9a5b8aee4a9a5a7"
             >[email&nbsp;protected]</a
           >.
         </p>
@@ -1442,7 +1442,7 @@
           <a
             href="/cdn-cgi/l/email-protection"
             class="__cf_email__"
-            data-cfemail="d3a3a1baa5b2b0aa93b7baa0b0bca1b7fdb0bcbe"
+            data-cfemail="5222203b2433312b12363b21313d20367c313d3f"
             >[email&nbsp;protected]</a
           >
           with any questions about this Privacy Policy or how we process your
@@ -1453,7 +1453,7 @@
           <a
             href="/cdn-cgi/l/email-protection"
             class="__cf_email__"
-            data-cfemail="5b3f2b341b3f32283834293f75383436"
+            data-cfemail="d4b0a4bb94b0bda7b7bba6b0fab7bbb9"
             >[email&nbsp;protected]</a
           >.
         </p>
