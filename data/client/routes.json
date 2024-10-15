@@ -1382,14 +1382,6 @@
       "POST"
     ]
   },
-  "USERNAME_LOOKUP": {
-    "url": "/users/username/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "POMELO_SUGGESTIONS": {
     "url": "/users/@me/pomelo-suggestions",
     "allowed_methods": [
@@ -4546,14 +4538,6 @@
     "url": "/channels/:param/:param/shared-canvas/emoji-hose/:param",
     "allowed_methods": [
       "DELETE",
-      "OPTIONS"
-    ]
-  },
-  "USER_PREMIUM_LIKELIHOOD": {
-    "url": "/users/@me/billing/premium-likelihood",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
       "OPTIONS"
     ]
   },
