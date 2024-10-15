@@ -1217,32 +1217,20 @@
           resolved informally, so if you have an issue with the services, you
           agree to reach out to us before initiating a lawsuit or arbitration.
           This requires emailing
-          <a
-            href="/cdn-cgi/l/email-protection#2d49445e5d5859485e6d49445e4e425f494c5d5d034e4240"
-            ><span
-              class="__cf_email__"
-              data-cfemail="52363b21222726372112363b21313d20363322227c313d3f"
-              >[email&nbsp;protected]</span
-            ></a
-          >
-          a written notice (“Written Notice”), which must include: (1) your
-          name; (2) the email address or phone number associated with your
-          Discord account; (3) a detailed description of the issue; and (4) how
-          you’d like to resolve it.&nbsp; If the dispute is not resolved within
-          sixty (60) days after receipt of the Written Notice, you and Discord
-          agree to resolve any remaining dispute through further informal
-          discussions or one of the formal dispute resolution provisions
-          below.&nbsp; You must engage in this informal resolution process
-          before starting any formal dispute resolution unless exempted by law.
-          Applicable statutes of limitations and due dates for arbitration
-          filing fees or other deadlines will be tolled upon receipt of the
-          Written Notice to
-          <a
-            href="/cdn-cgi/l/email-protection"
-            class="__cf_email__"
-            data-cfemail="a6c2cfd5d6d3d2c3d5e6c2cfd5c5c9d4c2c7d6d688c5c9cb"
-            >[email&nbsp;protected]</a
-          >, while the parties attempt informal resolution.
+          <a href="mailto:disputes@discordapp.com">disputes@discordapp.com</a> a
+          written notice (“Written Notice”), which must include: (1) your name;
+          (2) the email address or phone number associated with your Discord
+          account; (3) a detailed description of the issue; and (4) how you’d
+          like to resolve it.&nbsp; If the dispute is not resolved within sixty
+          (60) days after receipt of the Written Notice, you and Discord agree
+          to resolve any remaining dispute through further informal discussions
+          or one of the formal dispute resolution provisions below.&nbsp; You
+          must engage in this informal resolution process before starting any
+          formal dispute resolution unless exempted by law. Applicable statutes
+          of limitations and due dates for arbitration filing fees or other
+          deadlines will be tolled upon receipt of the Written Notice to
+          disputes@discordapp.com, while the parties attempt informal
+          resolution.
         </p>
         <p>
           If you reside in the European Union, you may also be entitled to
@@ -1256,14 +1244,8 @@
           online purchases of goods and services without going to court.&nbsp;
           Note that a submission to the ODR or via the OCDS mechanism alone,
           without submitting a Written Notice to
-          <a
-            href="/cdn-cgi/l/email-protection#23474a50535657465063474a50404c51474253530d404c4e"
-            ><span
-              class="__cf_email__"
-              data-cfemail="14707d67646160716754707d67777b66707564643a777b79"
-              >[email&nbsp;protected]</span
-            ></a
-          >, will not toll the applicable statutes of limitations or other
+          <a href="mailto:disputes@discordapp.com">disputes@discordapp.com</a>,
+          will not toll the applicable statutes of limitations or other
           deadlines.
         </p>
         <p>
@@ -1318,13 +1300,7 @@
           submit a written Demand for Arbitration (available at www.adr.org)
           with the AAA and provide a copy to the other party as specified in the
           AAA Rules.&nbsp; To provide notice to Discord, please send an email
-          with the subject line “Arbitration Demand” to
-          <a
-            href="/cdn-cgi/l/email-protection"
-            class="__cf_email__"
-            data-cfemail="b2d6dbc1c2c7c6d7c1f2d6dbc1d1ddc0d6d3c2c29cd1dddf"
-            >[email&nbsp;protected]</a
-          >.
+          with the subject line “Arbitration Demand” to disputes@discordapp.com.
         </p>
         <p>
           If the amount in controversy does not exceed $10,000, and you do not
@@ -1472,13 +1448,7 @@
         </p>
         <p>
           <strong>‍Opt-out.</strong> You can decline this agreement to arbitrate
-          by emailing an opt-out notice to
-          <a
-            href="/cdn-cgi/l/email-protection"
-            class="__cf_email__"
-            data-cfemail="e8899a8a819c9a899c818786c587989cc5879d9ca88c819b8b879a8cc68b8785"
-            >[email&nbsp;protected]</a
-          >
+          by emailing an opt-out notice to arbitration-opt-out@discord.com
           within 30 days of April 15, 2024 or when you first register your
           Discord account, whichever is later; otherwise, you shall be bound to
           arbitrate disputes in accordance with the terms of these paragraphs.
@@ -1677,16 +1647,10 @@
         <h2>Contacting each other</h2>
         <p>
           If you have any questions about these terms, please contact us at
-          <a
-            href="/cdn-cgi/l/email-protection#97e7e5fee1f6f4eed7f3fee4f4f8e5f3b9f4f8fa"
-            ><span
-              class="__cf_email__"
-              data-cfemail="daaaa8b3acbbb9a39abeb3a9b9b5a8bef4b9b5b7"
-              >[email&nbsp;protected]</span
-            ></a
-          >. We may send you electronic communications related to our services.
-          Where required, we’ll get your consent before sending you direct
-          marketing, and we’ll make it easy for you to opt out.
+          <a href="mailto:privacy@discord.com">privacy@discord.com</a>. We may
+          send you electronic communications related to our services. Where
+          required, we’ll get your consent before sending you direct marketing,
+          and we’ll make it easy for you to opt out.
         </p>
       </div>
     </div>
