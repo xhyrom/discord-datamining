@@ -4351,6 +4351,7 @@
   "INVITE_NO_THANKS": "\"No Thanks\"",
   "PINS": "\"Pins\"",
   "PINS_UNREAD_A11Y_LABEL": "\"Pins, unread\"",
+  "UNKNOWN_GUILD": "\"Unknown server\"",
   "QUARANTINE_MODE": "\"Quarantine Mode\"",
   "YOUR_ACCOUNT_IS_QUARANTINED": "\"Your account is quarantined\"",
   "QUARANTINE_MODE_INFO_MODAL_DESCRIPTION": "\"Based on your recent activity, Discord has quarantined your account. We have limited your access to new communities. [Learn more about account quarantine]({helpdeskArticle}).\"",
