@@ -10303,13 +10303,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Obfuscation Enable"
+        "Treatment 1: Obfuscation Enabled",
+        "Treatment 2: Obfuscation + Integrity Check Enabled"
       ],
       "hash": 687045128,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
