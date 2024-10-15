@@ -14764,6 +14764,72 @@ span.clanTag_a31c43 {
 .pollBadgeReplied_f9f2ca {
   margin: 0 0 0 0.25rem;
 }
+.gameIcon_a9e62c {
+  filter: saturate(1);
+  filter: saturate(var(--saturation-factor, 1));
+  -webkit-user-drag: none;
+  background-size: 100%;
+  border-radius: var(--radius-sm);
+  color: var(--header-primary);
+}
+.small_a9e62c,
+.medium_a9e62c,
+.large_a9e62c {
+  flex-shrink: 0;
+}
+.xxsmall_a9e62c {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-xs);
+}
+.xsmall_a9e62c {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+}
+.small_a9e62c {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+}
+.medium_a9e62c {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+}
+.large_a9e62c {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-lg);
+}
+.eighty_a9e62c {
+  width: 80px;
+  height: 80px;
+}
+@use postcss-pxtorem;
+.gameIcon_ed12a9 {
+  margin-right: 4px;
+  height: 1rem;
+  vertical-align: text-top;
+}
+.gameMessageTooltip_ed12a9 {
+  max-width: none;
+}
+.gameMessageTooltipContent_ed12a9 {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+.textContainer_ed12a9 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 8px;
+  width: 240px;
+}
+.timestamp_ed12a9 {
+  margin-bottom: 4px;
+}
 .linkIcon_b5435a {
   display: inline-block;
 }
@@ -15559,72 +15625,6 @@ span.clanTag_a31c43 {
   cursor: pointer;
   color: var(--interactive-normal);
   text-indent: 0;
-}
-.gameIcon_a9e62c {
-  filter: saturate(1);
-  filter: saturate(var(--saturation-factor, 1));
-  -webkit-user-drag: none;
-  background-size: 100%;
-  border-radius: var(--radius-sm);
-  color: var(--header-primary);
-}
-.small_a9e62c,
-.medium_a9e62c,
-.large_a9e62c {
-  flex-shrink: 0;
-}
-.xxsmall_a9e62c {
-  width: 16px;
-  height: 16px;
-  border-radius: var(--radius-xs);
-}
-.xsmall_a9e62c {
-  width: 24px;
-  height: 24px;
-  border-radius: var(--radius-sm);
-}
-.small_a9e62c {
-  width: 30px;
-  height: 30px;
-  border-radius: var(--radius-sm);
-}
-.medium_a9e62c {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-md);
-}
-.large_a9e62c {
-  width: 60px;
-  height: 60px;
-  border-radius: var(--radius-lg);
-}
-.eighty_a9e62c {
-  width: 80px;
-  height: 80px;
-}
-@use postcss-pxtorem;
-.gameIcon_aaf548 {
-  cursor: pointer;
-  margin-left: 4px;
-  vertical-align: middle;
-}
-.gameMessageTooltip_aaf548 {
-  max-width: none;
-}
-.gameMessageTooltipContent_aaf548 {
-  display: flex;
-  padding: 16px;
-  align-items: center;
-}
-.textContainer_aaf548 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 8px;
-  width: 200px;
-}
-.timestamp_aaf548 {
-  margin-bottom: 4px;
 }
 .platform-osx .drag_fccaa9 {
   -webkit-app-region: drag;
@@ -48376,4 +48376,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.a414ab5c158594a038e0.css.map*/
+/*# sourceMappingURL=12633.3ae024f1211a5090fa4a.css.map*/
