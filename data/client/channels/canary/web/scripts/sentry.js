@@ -4460,7 +4460,7 @@
             return eM;
           },
           AEg: function () {
-            return eJ;
+            return eq;
           },
           ANM: function () {
             return a5;
@@ -4595,7 +4595,7 @@
             return _D;
           },
           I_8: function () {
-            return aq;
+            return aJ;
           },
           IlC: function () {
             return ts;
@@ -4661,7 +4661,7 @@
             return eU;
           },
           ME: function () {
-            return aJ;
+            return aq;
           },
           MoX: function () {
             return tg;
@@ -4694,7 +4694,7 @@
             return _7;
           },
           OGo: function () {
-            return J;
+            return q;
           },
           OMz: function () {
             return aF.OM;
@@ -4964,10 +4964,10 @@
             return _6;
           },
           b4C: function () {
-            return tq;
+            return tJ;
           },
           b8q: function () {
-            return _J;
+            return _q;
           },
           bL: function () {
             return et;
@@ -5072,7 +5072,7 @@
             return eK;
           },
           hVg: function () {
-            return eq;
+            return eJ;
           },
           hes: function () {
             return g;
@@ -5162,7 +5162,7 @@
             return _8;
           },
           oAB: function () {
-            return _q;
+            return _J;
           },
           oCV: function () {
             return _4;
@@ -5315,7 +5315,7 @@
             return tw;
           },
           wZ8: function () {
-            return q;
+            return J;
           },
           xAR: function () {
             return op;
@@ -5348,7 +5348,7 @@
             return G;
           },
           ylB: function () {
-            return tJ;
+            return tq;
           },
           yqN: function () {
             return ot;
@@ -5420,8 +5420,8 @@
           X,
           j,
           $,
-          J,
           q,
+          J,
           z,
           Q,
           Z,
@@ -5474,8 +5474,8 @@
           eX,
           ej,
           e$,
-          eJ,
           eq,
+          eJ,
           ez,
           eQ,
           eZ,
@@ -5538,8 +5538,8 @@
           tX,
           tj,
           t$,
-          tJ,
           tq,
+          tJ,
           tz,
           tQ,
           tZ,
@@ -5602,8 +5602,8 @@
           rX,
           rj,
           r$,
-          rJ,
           rq,
+          rJ,
           rz,
           rQ,
           rZ,
@@ -5666,8 +5666,8 @@
           nX,
           nj,
           n$,
-          nJ,
           nq,
+          nJ,
           nz,
           nQ,
           nZ,
@@ -6266,14 +6266,14 @@
           ((rv = $ || ($ = {}))[(rv.DISABLED = 0)] = "DISABLED"),
           (rv[(rv.MEMBERS_WITHOUT_ROLES = 1)] = "MEMBERS_WITHOUT_ROLES"),
           (rv[(rv.ALL_MEMBERS = 2)] = "ALL_MEMBERS"),
-          ((rB = J || (J = {}))[(rB.NONE = 0)] = "NONE"),
+          ((rB = q || (q = {}))[(rB.NONE = 0)] = "NONE"),
           (rB[(rB.FRIEND = 1)] = "FRIEND"),
           (rB[(rB.BLOCKED = 2)] = "BLOCKED"),
           (rB[(rB.PENDING_INCOMING = 3)] = "PENDING_INCOMING"),
           (rB[(rB.PENDING_OUTGOING = 4)] = "PENDING_OUTGOING"),
           (rB[(rB.IMPLICIT = 5)] = "IMPLICIT"),
           (rB[(rB.SUGGESTION = 6)] = "SUGGESTION"),
-          ((rw = q || (q = {})).CONFIRM = "CONFIRM"),
+          ((rw = J || (J = {})).CONFIRM = "CONFIRM"),
           (rw.SUCCESS = "SUCCESS"),
           (rw.ERROR = "ERROR"),
           (rw.OPEN = "OPEN"),
@@ -6288,8 +6288,8 @@
           ((rW = Z || (Z = {}))[(rW.DEFAULT = 0)] = "DEFAULT"),
           (rW[(rW.HIGH_SCHOOL = 1)] = "HIGH_SCHOOL"),
           (rW[(rW.COLLEGE = 2)] = "COLLEGE");
-        let aJ = "@me",
-          aq = "@favorites",
+        let aq = "@me",
+          aJ = "@favorites",
           az = "@guilds-empty-nux",
           aQ = "",
           aZ = "null",
@@ -6302,7 +6302,7 @@
               let e =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : aJ;
+                  : aq;
               return "/users/".concat(e, "/relationships");
             },
             USER_RELATIONSHIP: (e) => "/users/@me/relationships/".concat(e),
@@ -6506,7 +6506,7 @@
               let t =
                 arguments.length > 1 && void 0 !== arguments[1]
                   ? arguments[1]
-                  : aJ;
+                  : aq;
               return "/channels/".concat(e, "/thread-members/").concat(t);
             },
             THREAD_MEMBER_SETTINGS: (e) =>
@@ -7567,8 +7567,8 @@
             CHANNEL: (e, t, r) => {
               let n =
                 null == t
-                  ? "/channels/".concat(e || aJ)
-                  : "/channels/".concat(e || aJ, "/").concat(t);
+                  ? "/channels/".concat(e || aq)
+                  : "/channels/".concat(e || aq, "/").concat(t);
               return null == r ? n : "".concat(n, "/").concat(r);
             },
             CHANNEL_THREAD_VIEW: (e, t, r, n) => {
@@ -7596,8 +7596,8 @@
             GIFT_CODE_LOGIN: (e) => "/gifts/".concat(e, "/login"),
             WELCOME: (e, t) =>
               null != t
-                ? "/welcome/".concat(null != e ? e : aJ, "/").concat(t)
-                : "/welcome/".concat(null != e ? e : aJ),
+                ? "/welcome/".concat(null != e ? e : aq, "/").concat(t)
+                : "/welcome/".concat(null != e ? e : aq),
             VERIFY: "/verify",
             VERIFY_REQUEST: "/verify-request",
             RESET: "/reset",
@@ -7938,27 +7938,27 @@
           _X = 25,
           _j = /^FILTER_/,
           _$ = /^ANSWER_/;
-        ((rJ = eE || (eE = {})).GUILD = "GUILD"),
-          (rJ.FAVORITES = "FAVORITES"),
-          (rJ.CHANNEL = "CHANNEL"),
-          (rJ.GUILD_CHANNEL = "GUILD_CHANNEL"),
-          (rJ.CHAT_SIDEBAR = "CHAT_SIDEBAR"),
-          (rJ.GIF = "GIF"),
-          (rJ.GUILD_DISCOVERY = "GUILD_DISCOVERY"),
-          (rJ.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG"),
-          (rJ.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC"),
-          (rJ.STICKER = "STICKER"),
-          (rJ.STICKER_SHOP = "STICKER_SHOP"),
-          (rJ.INSTANT_INVITE = "INSTANT_INVITE"),
-          (rJ.EMOJI = "EMOJI"),
-          (rJ.EMOJI_REACTION = "EMOJI_REACTION"),
-          (rJ.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION"),
-          (rJ.DMS = "DMS"),
-          (rJ.THREAD = "THREAD"),
-          (rJ.SOUNDBOARD = "SOUNDBOARD"),
-          ((rq = ec || (ec = {})).NEWEST = "newest"),
-          (rq.OLDEST = "oldest"),
-          (rq.MOST_RELEVANT = "most_relevant"),
+        ((rq = eE || (eE = {})).GUILD = "GUILD"),
+          (rq.FAVORITES = "FAVORITES"),
+          (rq.CHANNEL = "CHANNEL"),
+          (rq.GUILD_CHANNEL = "GUILD_CHANNEL"),
+          (rq.CHAT_SIDEBAR = "CHAT_SIDEBAR"),
+          (rq.GIF = "GIF"),
+          (rq.GUILD_DISCOVERY = "GUILD_DISCOVERY"),
+          (rq.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG"),
+          (rq.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC"),
+          (rq.STICKER = "STICKER"),
+          (rq.STICKER_SHOP = "STICKER_SHOP"),
+          (rq.INSTANT_INVITE = "INSTANT_INVITE"),
+          (rq.EMOJI = "EMOJI"),
+          (rq.EMOJI_REACTION = "EMOJI_REACTION"),
+          (rq.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION"),
+          (rq.DMS = "DMS"),
+          (rq.THREAD = "THREAD"),
+          (rq.SOUNDBOARD = "SOUNDBOARD"),
+          ((rJ = ec || (ec = {})).NEWEST = "newest"),
+          (rJ.OLDEST = "oldest"),
+          (rJ.MOST_RELEVANT = "most_relevant"),
           ((rz = es || (es = {}))[(rz.UNKNOWN_ACCOUNT = 10001)] =
             "UNKNOWN_ACCOUNT"),
           (rz[(rz.UNKNOWN_APPLICATION = 10002)] = "UNKNOWN_APPLICATION"),
@@ -8403,7 +8403,7 @@
           (r1.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"),
           (r1.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r1.NITRO_HOME = "Nitro Home");
-        let _J = "help_center_cta";
+        let _q = "help_center_cta";
         ((r2 = eA || (eA = {})).HERO = "Hero"),
           (r2.BODY = "Body"),
           (r2.NAVIGATION = "Navigation"),
@@ -8942,7 +8942,7 @@
           ((r5 = ed || (ed = {})).PRIMARY = "primary"),
           (r5.SECONDARY = "secondary"),
           (r5.DISMISS = "dismiss");
-        let _q = Object.freeze({
+        let _J = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
           INTL_TESTING: "Intl Testing",
@@ -9788,6 +9788,9 @@
             "quest_share_link_deep_linked_into_desktop_client"),
           (nf.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT =
             "quest_share_link_deep_linked_into_mobile_client"),
+          (nf.QUEST_SURVEY_DISMISSED = "quest_survey_dismissed"),
+          (nf.QUEST_SURVEY_DISPLAYED = "quest_survey_displayed"),
+          (nf.QUEST_SURVEY_SUBMITTED = "quest_survey_submitted"),
           (nf.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (nf.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
           (nf.USER_AVATAR_UPDATED = "user_avatar_updated"),
@@ -10925,11 +10928,11 @@
             },
           }),
           on = 864e5;
-        ((nC = eJ || (eJ = {})).NORMAL = "normal"),
+        ((nC = eq || (eq = {})).NORMAL = "normal"),
           (nC.MINIMUM = "minimum"),
           (nC.NO_CHAT = "no-chat"),
           (nC.FULL_SCREEN = "full-screen"),
-          ((ng = eq || (eq = {})).THEATRE = "theatre"),
+          ((ng = eJ || (eJ = {})).THEATRE = "theatre"),
           (ng.FULL_SCREEN = "full-screen"),
           (ng.PIP = "pip"),
           (ng.POPOUT = "popout"),
@@ -11486,12 +11489,12 @@
           (n$[(n$.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
           (n$[(n$.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
         let oI = 30;
-        ((nJ = ts || (ts = {})).OVERLAY = "OVERLAY"),
-          (nJ.APP = "APP"),
-          (nJ.POPOUT = "POPOUT");
+        ((nq = ts || (ts = {})).OVERLAY = "OVERLAY"),
+          (nq.APP = "APP"),
+          (nq.POPOUT = "POPOUT");
         let ou = __OVERLAY__ ? "OVERLAY" : "APP";
-        ((nq = tI || (tI = {})).COMPLETE = "complete"),
-          (nq.TRANSITION = "transition"),
+        ((nJ = tI || (tI = {})).COMPLETE = "complete"),
+          (nJ.TRANSITION = "transition"),
           ((nz = tu || (tu = {})).QUEUED = "queued"),
           (nz.PLANNING = "planning"),
           (nz.ALLOCATING_DISK = "allocating_disk"),
@@ -12031,9 +12034,9 @@
           ((aS = t$ || (t$ = {})).CHANNEL_SETTINGS = "Channel Settings"),
           (aS.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings"),
           (aS.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"),
-          ((aD = tJ || (tJ = {}))[(aD.INCOMING = 1)] = "INCOMING"),
+          ((aD = tq || (tq = {}))[(aD.INCOMING = 1)] = "INCOMING"),
           (aD[(aD.CHANNEL_FOLLOWER = 2)] = "CHANNEL_FOLLOWER"),
-          ((ah = tq || (tq = {}))[(ah.APPLICATION = 0)] = "APPLICATION"),
+          ((ah = tJ || (tJ = {}))[(ah.APPLICATION = 0)] = "APPLICATION"),
           (ah[(ah.OVERVIEW = 1)] = "OVERVIEW"),
           (ah[(ah.CHANNEL_FOLLOWING = 2)] = "CHANNEL_FOLLOWING"),
           (ah[(ah.TWITCH = 3)] = "TWITCH"),
@@ -12135,8 +12138,8 @@
           X,
           j,
           $,
-          J,
           q,
+          J,
           z,
           Q,
           Z,
@@ -12229,47 +12232,47 @@
           ((p || (p = {})).ADVANCED = "ADVANCED"),
           (($ = f || (f = {})).USER = "USER"),
           ($.ACTION = "ACTION"),
-          ((J = L || (L = {})).OVERVIEW = "OVERVIEW"),
-          (J.ADD_OVERRIDE = "ADD_OVERRIDE"),
-          (J.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          ((q = S || (S = {})).INVITE = "invite"),
-          (q.GUILD_TEMPLATE = "guild-template"),
-          (q.CHANNEL = "channel"),
-          (q.GIFT_CODE = "gift-code"),
-          (q.MESSAGE = "message"),
-          (q.OAUTH2_AUTHORIZE = "oauth2-authorize"),
-          (q.APP_DIRECTORY_PROFILE = "app-directory-profile"),
-          (q.PROMOTIONS = "promotions"),
-          (q.NONE = "none"),
-          (q.REMOTE_AUTH = "remote-auth"),
-          (q.USER_PROFILE = "user-profile"),
-          (q.BUILD_OVERRIDE = "build-override"),
-          (q.CONTACT_SYNC = "contact-sync"),
-          (q.ADD_FRIENDS = "add-friends"),
-          (q.COMPOSE_MESSAGE = "compose-message"),
-          (q.GUILD_EVENT_DETAILS = "guild-event-details"),
-          (q.FRIENDS = "friends"),
-          (q.EDIT_PROFILE = "edit-profile"),
-          (q.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
-          (q.VOICE_CHANNEL = "voice-channel"),
-          (q.GUILD_HOME = "guild-home"),
-          (q.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
-          (q.SESSION_MANAGEMENT = "session-management"),
-          (q.CONNECTIONS = "connections"),
-          (q.GUILD_SETTINGS = "guild-settings"),
-          (q.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
-          (q.ACTIVATE_DEVICE = "activate-device"),
-          (q.FAMILY_CENTER = "family-center"),
-          (q.SHARE = "share"),
-          (q.CREATE_VOICE_INVITE = "create_voice_invite"),
-          (q.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
-          (q.ACCOUNT_STANDING = "account-standing"),
-          (q.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
-          (q.SHOP = "shop"),
-          (q.AUTHORIZED_APPS = "authorized-apps"),
-          (q.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
-          (q.ICYMI = "icymi"),
-          (q.QUESTS = "quests");
+          ((q = L || (L = {})).OVERVIEW = "OVERVIEW"),
+          (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
+          (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
+          ((J = S || (S = {})).INVITE = "invite"),
+          (J.GUILD_TEMPLATE = "guild-template"),
+          (J.CHANNEL = "channel"),
+          (J.GIFT_CODE = "gift-code"),
+          (J.MESSAGE = "message"),
+          (J.OAUTH2_AUTHORIZE = "oauth2-authorize"),
+          (J.APP_DIRECTORY_PROFILE = "app-directory-profile"),
+          (J.PROMOTIONS = "promotions"),
+          (J.NONE = "none"),
+          (J.REMOTE_AUTH = "remote-auth"),
+          (J.USER_PROFILE = "user-profile"),
+          (J.BUILD_OVERRIDE = "build-override"),
+          (J.CONTACT_SYNC = "contact-sync"),
+          (J.ADD_FRIENDS = "add-friends"),
+          (J.COMPOSE_MESSAGE = "compose-message"),
+          (J.GUILD_EVENT_DETAILS = "guild-event-details"),
+          (J.FRIENDS = "friends"),
+          (J.EDIT_PROFILE = "edit-profile"),
+          (J.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
+          (J.VOICE_CHANNEL = "voice-channel"),
+          (J.GUILD_HOME = "guild-home"),
+          (J.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
+          (J.SESSION_MANAGEMENT = "session-management"),
+          (J.CONNECTIONS = "connections"),
+          (J.GUILD_SETTINGS = "guild-settings"),
+          (J.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
+          (J.ACTIVATE_DEVICE = "activate-device"),
+          (J.FAMILY_CENTER = "family-center"),
+          (J.SHARE = "share"),
+          (J.CREATE_VOICE_INVITE = "create_voice_invite"),
+          (J.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
+          (J.ACCOUNT_STANDING = "account-standing"),
+          (J.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
+          (J.SHOP = "shop"),
+          (J.AUTHORIZED_APPS = "authorized-apps"),
+          (J.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
+          (J.ICYMI = "icymi"),
+          (J.QUESTS = "quests");
         let ei = "CacheStoreLazy",
           eE = "CacheStoreChannelsLazy",
           ec = "CacheStore";
@@ -12472,7 +12475,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2c6daf373cec2ceda53da0cd2d73fa2404330929",
+            release: "discord_web-1d7ad543418a1fdfd3a449543c1df933a8a59ce3",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12541,8 +12544,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "335531"), "335531"));
-          o.YA("builtAt", String("1729027064128"));
+            o.YA("buildNumber", ((e = "335533"), "335533"));
+          o.YA("builtAt", String("1729027411310"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -17623,8 +17626,8 @@
           X,
           j,
           $,
-          J,
           q,
+          J,
           z,
           Q,
           Z,
@@ -18034,15 +18037,15 @@
           ($[($.UNAUTHORIZED_FOR_APPLICATION = 5012)] =
             "UNAUTHORIZED_FOR_APPLICATION"),
           ($[($.NO_CONNECTION_FOUND = 5013)] = "NO_CONNECTION_FOUND"),
-          ((J = p || (p = {}))[(J.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
-          (J[(J.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
-          (J[(J.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
-          (J[(J.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
-          (J[(J.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
-          (J[(J.RATELIMITED = 4002)] = "RATELIMITED"),
-          (J[(J.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
-          (J[(J.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
-          (J[(J.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
+          ((q = p || (p = {}))[(q.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
+          (q[(q.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
+          (q[(q.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
+          (q[(q.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
+          (q[(q.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
+          (q[(q.RATELIMITED = 4002)] = "RATELIMITED"),
+          (q[(q.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
+          (q[(q.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
+          (q[(q.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
         let eH = "token",
           eY = "tokens",
           eW = "https://".concat("status.discord.com"),
@@ -18116,94 +18119,94 @@
             CHANNEL: (e, t) => "/channels/".concat(e, "/").concat(t),
             REPORT: "".concat(eI, "/report"),
           });
-        ((q = f || (f = {})).INDEX = "/"),
-          (q.INDEX_WORD = "/index"),
-          (q.INDEX_BUCKET = "/index/:bucketId"),
-          (q.CHANGELOGS = "/changelogs/:date"),
-          (q.COMMUNITY = "/community"),
-          (q.COMPANY = "/company"),
-          (q.COMPANY_INFORMATION = "/company-information"),
-          (q.CREATORS = "/creators"),
-          (q.DOWNLOADS = "/downloads"),
-          (q.DOWNLOAD = "/download"),
-          (q.GAMING = "/gaming"),
-          (q.PRIVACY = "/privacy"),
-          (q.TOS = "/tos"),
-          (q.TERMS = "/terms"),
-          (q.STORE_TERMS = "/store-terms"),
-          (q.ACKNOWLEDGEMENTS = "/acknowledgements"),
-          (q.LICENSES = "/licenses"),
-          (q.PARTNERS = "/partners"),
-          (q.HYPESQUAD = "/hypesquad"),
-          (q.HYPESQUAD_RIOT = "/hypesquad-riot"),
-          (q.BRANDING = "/branding"),
-          (q.ERROR_404 = "/404"),
-          (q.JOBS = "/jobs"),
-          (q.JOB = "/jobs/:jobId"),
-          (q.STREAMKIT = "/streamkit"),
-          (q.SECURITY = "/security"),
-          (q.NITRO = "/nitro"),
-          (q.DISCOVER = "/servers"),
-          (q.QUESTS = "/ads/quests"),
-          (q.GUIDELINES = "/guidelines"),
-          (q.RICH_PRESENCE = "/rich-presence"),
-          (q.VERIFICATION = "/verification"),
-          (q.OPEN_SOURCE = "/open-source"),
-          (q.WARFRAME = "/warframe"),
-          (q.REMOTE_AUTH = "/ra/:remoteAuthFingerprint"),
-          (q.SAFETY_LANDING = "/safetycenter"),
-          (q.SAFETY_ARTICLE_ROOT = "/safety"),
-          (q.SAFETY_ARTICLE = "/safety/:article"),
-          (q.NEWSROOM = "/newsroom"),
-          (q.INSPIRATION = "/inspiration"),
-          (q.MOD_ACADEMY_LANDING = "/moderation"),
-          (q.MOD_ACADEMY_EXAM = "/moderation/exam"),
-          (q.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
-          (q.BLOG = "/blog"),
-          (q.APP_DIRECTORY = "/application-directory"),
-          (q.REFRESH_INDEX = "/new"),
-          (q.REFRESH_INDEX_WORD = "/new/index"),
-          (q.REFRESH_COMPANY = "/new/company"),
-          (q.REFRESH_DOWNLOAD = "/new/download"),
-          (q.REFRESH_PRIVACY = "/new/privacy"),
-          (q.REFRESH_TERMS = "/new/terms"),
-          (q.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements"),
-          (q.REFRESH_LICENSES = "/new/licenses"),
-          (q.REFRESH_BRANDING = "/new/branding"),
-          (q.REFRESH_JOBS = "/new/jobs"),
-          (q.REFRESH_JOB = "/new/jobs/:jobId"),
-          (q.REFRESH_STREAMKIT = "/new/streamkit"),
-          (q.REFRESH_NITRO = "/new/nitro"),
-          (q.REFRESH_GUIDELINES = "/new/guidelines"),
-          (q.REFRESH_SAFETY_LANDING = "/new/safety"),
-          (q.REFRESH_SAFETY_ARTICLE = "/new/safety/:article"),
-          (q.COLLEGE = "/college"),
-          (q.LEAGUE_CLUBS = "/league-communities"),
-          (q.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams"),
-          (q.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter"),
-          (q.LEGACY_DEV_NEWSLETTER = "/newsletter"),
-          (q.LEGAL_ARCHIVE = "/archive/"),
-          (q.TERMS_MAY_2020 = "/archive/terms/may-2020"),
-          (q.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020"),
-          (q.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020"),
-          (q.FALL_RELEASE_2023 = "/fallrelease"),
-          (q.MOBILE_REDESIGN_2023 = "/mobile"),
-          (q.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019"),
-          (q.REFRESH_WHY_DISCORD = "/why-discord-is-different"),
-          (q.WHY_DISCORD = "/why-discord"),
-          (q.XBOX_OFFER = "/discord-xbox-offer-2020"),
-          (q.COLLEGE_BRUINS = "/bruins"),
-          (q.COLLEGE_ANTEATERS = "/anteaters"),
-          (q.COLLEGE_GAUCHOS = "/gauchos"),
-          (q.COLLEGE_BEARS = "/bears"),
-          (q.COLLEGE_SLUGS = "/slugs"),
-          (q.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM =
+        ((J = f || (f = {})).INDEX = "/"),
+          (J.INDEX_WORD = "/index"),
+          (J.INDEX_BUCKET = "/index/:bucketId"),
+          (J.CHANGELOGS = "/changelogs/:date"),
+          (J.COMMUNITY = "/community"),
+          (J.COMPANY = "/company"),
+          (J.COMPANY_INFORMATION = "/company-information"),
+          (J.CREATORS = "/creators"),
+          (J.DOWNLOADS = "/downloads"),
+          (J.DOWNLOAD = "/download"),
+          (J.GAMING = "/gaming"),
+          (J.PRIVACY = "/privacy"),
+          (J.TOS = "/tos"),
+          (J.TERMS = "/terms"),
+          (J.STORE_TERMS = "/store-terms"),
+          (J.ACKNOWLEDGEMENTS = "/acknowledgements"),
+          (J.LICENSES = "/licenses"),
+          (J.PARTNERS = "/partners"),
+          (J.HYPESQUAD = "/hypesquad"),
+          (J.HYPESQUAD_RIOT = "/hypesquad-riot"),
+          (J.BRANDING = "/branding"),
+          (J.ERROR_404 = "/404"),
+          (J.JOBS = "/jobs"),
+          (J.JOB = "/jobs/:jobId"),
+          (J.STREAMKIT = "/streamkit"),
+          (J.SECURITY = "/security"),
+          (J.NITRO = "/nitro"),
+          (J.DISCOVER = "/servers"),
+          (J.QUESTS = "/ads/quests"),
+          (J.GUIDELINES = "/guidelines"),
+          (J.RICH_PRESENCE = "/rich-presence"),
+          (J.VERIFICATION = "/verification"),
+          (J.OPEN_SOURCE = "/open-source"),
+          (J.WARFRAME = "/warframe"),
+          (J.REMOTE_AUTH = "/ra/:remoteAuthFingerprint"),
+          (J.SAFETY_LANDING = "/safetycenter"),
+          (J.SAFETY_ARTICLE_ROOT = "/safety"),
+          (J.SAFETY_ARTICLE = "/safety/:article"),
+          (J.NEWSROOM = "/newsroom"),
+          (J.INSPIRATION = "/inspiration"),
+          (J.MOD_ACADEMY_LANDING = "/moderation"),
+          (J.MOD_ACADEMY_EXAM = "/moderation/exam"),
+          (J.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
+          (J.BLOG = "/blog"),
+          (J.APP_DIRECTORY = "/application-directory"),
+          (J.REFRESH_INDEX = "/new"),
+          (J.REFRESH_INDEX_WORD = "/new/index"),
+          (J.REFRESH_COMPANY = "/new/company"),
+          (J.REFRESH_DOWNLOAD = "/new/download"),
+          (J.REFRESH_PRIVACY = "/new/privacy"),
+          (J.REFRESH_TERMS = "/new/terms"),
+          (J.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements"),
+          (J.REFRESH_LICENSES = "/new/licenses"),
+          (J.REFRESH_BRANDING = "/new/branding"),
+          (J.REFRESH_JOBS = "/new/jobs"),
+          (J.REFRESH_JOB = "/new/jobs/:jobId"),
+          (J.REFRESH_STREAMKIT = "/new/streamkit"),
+          (J.REFRESH_NITRO = "/new/nitro"),
+          (J.REFRESH_GUIDELINES = "/new/guidelines"),
+          (J.REFRESH_SAFETY_LANDING = "/new/safety"),
+          (J.REFRESH_SAFETY_ARTICLE = "/new/safety/:article"),
+          (J.COLLEGE = "/college"),
+          (J.LEAGUE_CLUBS = "/league-communities"),
+          (J.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams"),
+          (J.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter"),
+          (J.LEGACY_DEV_NEWSLETTER = "/newsletter"),
+          (J.LEGAL_ARCHIVE = "/archive/"),
+          (J.TERMS_MAY_2020 = "/archive/terms/may-2020"),
+          (J.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020"),
+          (J.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020"),
+          (J.FALL_RELEASE_2023 = "/fallrelease"),
+          (J.MOBILE_REDESIGN_2023 = "/mobile"),
+          (J.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019"),
+          (J.REFRESH_WHY_DISCORD = "/why-discord-is-different"),
+          (J.WHY_DISCORD = "/why-discord"),
+          (J.XBOX_OFFER = "/discord-xbox-offer-2020"),
+          (J.COLLEGE_BRUINS = "/bruins"),
+          (J.COLLEGE_ANTEATERS = "/anteaters"),
+          (J.COLLEGE_GAUCHOS = "/gauchos"),
+          (J.COLLEGE_BEARS = "/bears"),
+          (J.COLLEGE_SLUGS = "/slugs"),
+          (J.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM =
             "/terms/back-to-school-2020/instagram"),
-          (q.BACK_TO_SCHOOL_GIVEAWAY_TWITTER =
+          (J.BACK_TO_SCHOOL_GIVEAWAY_TWITTER =
             "/terms/back-to-school-2020/twitter"),
-          (q.SNOWSGIVING_GIVEAWAY_INSTAGRAM =
+          (J.SNOWSGIVING_GIVEAWAY_INSTAGRAM =
             "/terms/snowsgiving-2020/instagram"),
-          (q.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
+          (J.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
           (0, eE.Ft)(eV),
           (0, eE.Ft)(f);
         let eF = Object.freeze({
@@ -24323,18 +24326,18 @@
                     return "hcg";
                 },
               });
-            var J = i.unpack,
-              q = i.last,
+            var q = i.unpack,
+              J = i.last,
               z = Math.round,
               Q = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = J(e, "rgba"),
+                var r = q(e, "rgba"),
                   n = r[0],
                   a = r[1],
                   _ = r[2],
                   o = r[3],
-                  i = q(e) || "auto";
+                  i = J(e) || "auto";
                 void 0 === o && (o = 1),
                   "auto" === i && (i = o < 1 ? "rgba" : "rgb"),
                   (n = z(n)),
@@ -24746,8 +24749,8 @@
               eX = i.unpack,
               ej = i.unpack,
               e$ = i.DEG2RAD,
-              eJ = Math.sin,
-              eq = Math.cos,
+              eq = Math.sin,
+              eJ = Math.cos,
               ez = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
@@ -24755,7 +24758,7 @@
                   n = r[0],
                   a = r[1],
                   _ = r[2];
-                return isNaN(_) && (_ = 0), [n, eq((_ *= e$)) * a, eJ(_) * a];
+                return isNaN(_) && (_ = 0), [n, eJ((_ *= e$)) * a, eq(_) * a];
               },
               eQ = i.unpack,
               eZ = function () {
@@ -25562,7 +25565,7 @@
               },
               tj = i.type,
               t$ = Math.pow,
-              tJ = function (e) {
+              tq = function (e) {
                 var t = "rgb",
                   r = l("#ccc"),
                   n = 0,
@@ -25804,7 +25807,7 @@
                   S
                 );
               },
-              tq = function (e) {
+              tJ = function (e) {
                 for (var t = [1, 1], r = 1; r < e; r++) {
                   for (var n = [1], a = 1; a <= t.length; a++)
                     n[a] = (t[a] || 0) + t[a - 1];
@@ -25874,7 +25877,7 @@
                   (c = e.map(function (e) {
                     return e.lab();
                   })),
-                    (s = tq((I = e.length - 1))),
+                    (s = tJ((I = e.length - 1))),
                     (a = function (e) {
                       var t = 1 - e;
                       return new u(
@@ -26593,7 +26596,7 @@
                 var t = tz(e);
                 return (
                   (t.scale = function () {
-                    return tJ(t);
+                    return tq(t);
                   }),
                   t
                 );
@@ -26662,7 +26665,7 @@
                   e += "0123456789abcdef".charAt(t8(16 * t9()));
                 return new u(e, "hex");
               }),
-              (l.scale = tJ),
+              (l.scale = tq),
               (l.analyze = r_),
               (l.contrast = function (e, t) {
                 (e = new u(e)), (t = new u(t));
@@ -26759,10 +26762,10 @@
               }),
               (l.scales = {
                 cool: function () {
-                  return tJ([l.hsl(180, 1, 0.9), l.hsl(250, 0.7, 0.4)]);
+                  return tq([l.hsl(180, 1, 0.9), l.hsl(250, 0.7, 0.4)]);
                 },
                 hot: function () {
-                  return tJ(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
+                  return tq(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
                 },
               }),
               (l.colors = e6),
@@ -38966,8 +38969,8 @@ Error:`,
             confirmButtonLabel: X = A,
             emailLabel: j = d,
             emailPlaceholder: $ = N,
-            formTitle: J = T,
-            isRequiredLabel: q = D,
+            formTitle: q = T,
+            isRequiredLabel: J = D,
             messageLabel: z = p,
             messagePlaceholder: Q = O,
             nameLabel: Z = L,
@@ -39002,7 +39005,7 @@ Error:`,
                 cancelButtonLabel: x,
                 submitButtonLabel: er,
                 confirmButtonLabel: X,
-                formTitle: J,
+                formTitle: q,
                 emailLabel: j,
                 emailPlaceholder: $,
                 messageLabel: z,
@@ -39010,7 +39013,7 @@ Error:`,
                 nameLabel: Z,
                 namePlaceholder: ee,
                 successMessageText: en,
-                isRequiredLabel: q,
+                isRequiredLabel: J,
                 addScreenshotButtonLabel: F,
                 removeScreenshotButtonLabel: et,
                 onFormClose: ei,
@@ -39357,11 +39360,11 @@ ${
           for (var r in t) e[r] = t[r];
           return e;
         }
-        function J(e) {
+        function q(e) {
           var t = e.parentNode;
           t && t.removeChild(e);
         }
-        function q(e, t, r) {
+        function J(e, t, r) {
           var n,
             a,
             _,
@@ -39928,7 +39931,7 @@ ${
                       ),
                       null != _)
                     )
-                      for (c = _.length; c--; ) null != _[c] && J(_[c]);
+                      for (c = _.length; c--; ) null != _[c] && q(_[c]);
                     i ||
                       ((c = "value"),
                       void 0 === R ||
@@ -39984,7 +39987,7 @@ ${
           if ((n = e.__k))
             for (a = 0; a < n.length; a++)
               n[a] && eI(n[a], t, r || "function" != typeof e.type);
-          r || null == e.__e || J(e.__e), (e.__ = e.__e = e.__d = void 0);
+          r || null == e.__e || q(e.__e), (e.__ = e.__e = e.__d = void 0);
         }
         function eu(e, t, r) {
           return this.constructor(e, r);
@@ -40347,7 +40350,7 @@ ${
             }),
             [],
           );
-          return q(
+          return J(
             "h2",
             {
               class: "dialog__header",
@@ -40356,7 +40359,7 @@ ${
             },
             e.formTitle,
             e.showBranding
-              ? q("a", {
+              ? J("a", {
                   class: "brand-link",
                   target: "_blank",
                   href: "https://sentry.io/welcome/",
@@ -40438,7 +40441,7 @@ ${
               },
               [A, N, d, O, f],
             );
-          return q(
+          return J(
             "form",
             {
               class: "form",
@@ -40482,13 +40485,13 @@ ${
               __source: { fileName: ek, lineNumber: 144 },
             },
             U && g
-              ? q(U, {
+              ? J(U, {
                   onError: y,
                   __self: this,
                   __source: { fileName: ek, lineNumber: 146 },
                 })
               : null,
-            q(
+            J(
               "div",
               {
                 class: "form__right",
@@ -40496,7 +40499,7 @@ ${
                 __self: this,
                 __source: { fileName: ek, lineNumber: 149 },
               },
-              q(
+              J(
                 "div",
                 {
                   class: "form__top",
@@ -40504,7 +40507,7 @@ ${
                   __source: { fileName: ek, lineNumber: 150 },
                 },
                 h
-                  ? q(
+                  ? J(
                       "div",
                       {
                         class: "form__error-container",
@@ -40515,7 +40518,7 @@ ${
                     )
                   : null,
                 c
-                  ? q(
+                  ? J(
                       "label",
                       {
                         for: "name",
@@ -40523,14 +40526,14 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 154 },
                       },
-                      q(ex, {
+                      J(ex, {
                         label: f,
                         isRequiredLabel: D,
                         isRequired: d,
                         __self: this,
                         __source: { fileName: ek, lineNumber: 155 },
                       }),
-                      q("input", {
+                      J("input", {
                         class: "form__input",
                         defaultValue: r,
                         id: "name",
@@ -40542,7 +40545,7 @@ ${
                         __source: { fileName: ek, lineNumber: 156 },
                       }),
                     )
-                  : q("input", {
+                  : J("input", {
                       "aria-hidden": !0,
                       value: r,
                       name: "name",
@@ -40551,7 +40554,7 @@ ${
                       __source: { fileName: ek, lineNumber: 167 },
                     }),
                 E
-                  ? q(
+                  ? J(
                       "label",
                       {
                         for: "email",
@@ -40559,14 +40562,14 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 171 },
                       },
-                      q(ex, {
+                      J(ex, {
                         label: A,
                         isRequiredLabel: D,
                         isRequired: N,
                         __self: this,
                         __source: { fileName: ek, lineNumber: 172 },
                       }),
-                      q("input", {
+                      J("input", {
                         class: "form__input",
                         defaultValue: t,
                         id: "email",
@@ -40578,7 +40581,7 @@ ${
                         __source: { fileName: ek, lineNumber: 173 },
                       }),
                     )
-                  : q("input", {
+                  : J("input", {
                       "aria-hidden": !0,
                       value: t,
                       name: "email",
@@ -40586,7 +40589,7 @@ ${
                       __self: this,
                       __source: { fileName: ek, lineNumber: 184 },
                     }),
-                q(
+                J(
                   "label",
                   {
                     for: "message",
@@ -40594,14 +40597,14 @@ ${
                     __self: this,
                     __source: { fileName: ek, lineNumber: 187 },
                   },
-                  q(ex, {
+                  J(ex, {
                     label: O,
                     isRequiredLabel: D,
                     isRequired: !0,
                     __self: this,
                     __source: { fileName: ek, lineNumber: 188 },
                   }),
-                  q("textarea", {
+                  J("textarea", {
                     autoFocus: !0,
                     class: "form__input form__input--textarea",
                     id: "message",
@@ -40614,7 +40617,7 @@ ${
                   }),
                 ),
                 U
-                  ? q(
+                  ? J(
                       "label",
                       {
                         for: "screenshot",
@@ -40622,7 +40625,7 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 201 },
                       },
-                      q(
+                      J(
                         "button",
                         {
                           class: "btn btn--default",
@@ -40636,7 +40639,7 @@ ${
                         g ? l : u,
                       ),
                       m
-                        ? q(
+                        ? J(
                             "div",
                             {
                               class: "form__error-container",
@@ -40649,14 +40652,14 @@ ${
                     )
                   : null,
               ),
-              q(
+              J(
                 "div",
                 {
                   class: "btn-group",
                   __self: this,
                   __source: { fileName: ek, lineNumber: 216 },
                 },
-                q(
+                J(
                   "button",
                   {
                     class: "btn btn--primary",
@@ -40666,7 +40669,7 @@ ${
                   },
                   S,
                 ),
-                q(
+                J(
                   "button",
                   {
                     class: "btn btn--default",
@@ -40682,7 +40685,7 @@ ${
           );
         }
         function ex({ label: e, isRequired: t, isRequiredLabel: r }) {
-          return q(
+          return J(
             "span",
             {
               class: "form__label__text",
@@ -40691,7 +40694,7 @@ ${
             },
             e,
             t &&
-              q(
+              J(
                 "span",
                 {
                   class: "form__label__text--required",
@@ -40763,11 +40766,11 @@ ${
               },
               [t],
             );
-          return q(
+          return J(
             Q,
             { __self: this, __source: { fileName: eX, lineNumber: 48 } },
             _
-              ? q(
+              ? J(
                   "div",
                   {
                     class: "success__position",
@@ -40775,7 +40778,7 @@ ${
                     __self: this,
                     __source: { fileName: eX, lineNumber: 50 },
                   },
-                  q(
+                  J(
                     "div",
                     {
                       class: "success__content",
@@ -40783,7 +40786,7 @@ ${
                       __source: { fileName: eX, lineNumber: 51 },
                     },
                     n.successMessageText,
-                    q("span", {
+                    J("span", {
                       class: "success__icon",
                       dangerouslySetInnerHTML: a,
                       __self: this,
@@ -40791,7 +40794,7 @@ ${
                     }),
                   ),
                 )
-              : q(
+              : J(
                   "dialog",
                   {
                     class: "dialog",
@@ -40800,14 +40803,14 @@ ${
                     __self: this,
                     __source: { fileName: eX, lineNumber: 57 },
                   },
-                  q(
+                  J(
                     "div",
                     {
                       class: "dialog__position",
                       __self: this,
                       __source: { fileName: eX, lineNumber: 58 },
                     },
-                    q(
+                    J(
                       "div",
                       {
                         class: "dialog__content",
@@ -40817,12 +40820,12 @@ ${
                         __self: this,
                         __source: { fileName: eX, lineNumber: 59 },
                       },
-                      q(eK, {
+                      J(eK, {
                         options: n,
                         __self: this,
                         __source: { fileName: eX, lineNumber: 66 },
                       }),
-                      q(eF, {
+                      J(eF, {
                         ...r,
                         onSubmitSuccess: E,
                         __self: this,
@@ -40905,7 +40908,7 @@ ${
   transition: transform 0.2s ease-in-out;
 }
 `,
-          eJ = `
+          eq = `
 .dialog__header {
   display: flex;
   align-items: center;
@@ -40921,7 +40924,7 @@ ${
   outline: var(--outline);
 }
 `,
-          eq = `
+          eJ = `
 .form {
   display: flex;
   overflow: auto;
@@ -41128,8 +41131,8 @@ ${
 }
 
 ${e$}
-${eJ}
 ${eq}
+${eJ}
 ${ez}
 ${eQ}
 `),
@@ -41163,10 +41166,10 @@ ${eQ}
                 },
                 u =
                   t &&
-                  t.createInput({ h: q, hooks: eY, dialog: I, options: e }),
+                  t.createInput({ h: J, hooks: eY, dialog: I, options: e }),
                 l = (t) => {
                   var n, a, E, c, s, I, R;
-                  (n = q(ej, {
+                  (n = J(ej, {
                     options: e,
                     screenshotInput: u,
                     showName: e.showName || e.isNameRequired,
@@ -41201,7 +41204,7 @@ ${eQ}
                     (R = []),
                     eE(
                       a,
-                      (n = ((!c && E) || a).__k = q(Q, null, [n])),
+                      (n = ((!c && E) || a).__k = J(Q, null, [n])),
                       s || F,
                       F,
                       void 0 !== a.ownerSVGElement,
@@ -42676,11 +42679,11 @@ ${eQ}
           (c[(c.Text = 3)] = "Text"),
           (c[(c.CDATA = 4)] = "CDATA"),
           (c[(c.Comment = 5)] = "Comment");
-        function J(e) {
+        function q(e) {
           let t = $([e, "optionalAccess", (e) => e.host]);
           return $([t, "optionalAccess", (e) => e.shadowRoot]) === e;
         }
-        function q(e) {
+        function J(e) {
           return "[object ShadowRoot]" === Object.prototype.toString.call(e);
         }
         function z(e) {
@@ -43545,7 +43548,7 @@ ${eQ}
           if (v.type === A.Element) {
             (B = B && !v.needBlock), delete v.needBlock;
             let t = e.shadowRoot;
-            t && q(t) && (v.isShadowHost = !0);
+            t && J(t) && (v.isShadowHost = !0);
           }
           if ((v.type === A.Document || v.type === A.Element) && B) {
             var w;
@@ -43590,13 +43593,13 @@ ${eQ}
               for (let r of Array.from(e.shadowRoot.childNodes)) {
                 let n = eU(r, t);
                 n &&
-                  (q(e.shadowRoot) && (n.isShadow = !0), v.childNodes.push(n));
+                  (J(e.shadowRoot) && (n.isShadow = !0), v.childNodes.push(n));
               }
           }
           return (
             e.parentNode &&
-              J(e.parentNode) &&
               q(e.parentNode) &&
+              J(e.parentNode) &&
               (v.isShadow = !0),
             v.type === A.Element &&
               "iframe" === v.tagName &&
@@ -43974,7 +43977,7 @@ ${eQ}
             return this.id++;
           }
         }
-        function eJ(e) {
+        function eq(e) {
           let t = null;
           return (
             em([
@@ -43991,7 +43994,7 @@ ${eQ}
             t
           );
         }
-        function eq(e) {
+        function eJ(e) {
           let t = e.ownerDocument;
           return (
             !!t &&
@@ -44002,7 +44005,7 @@ ${eQ}
                 let r = (function (e) {
                   let t,
                     r = e;
-                  for (; (t = eJ(r)); ) r = t;
+                  for (; (t = eq(r)); ) r = t;
                   return r;
                 })(e);
                 return t.contains(r);
@@ -44177,9 +44180,9 @@ ${eQ}
                     return r;
                   },
                   a = (a) => {
-                    if (!a.parentNode || !eq(a)) return;
-                    let _ = J(a.parentNode)
-                        ? this.mirror.getId(eJ(a))
+                    if (!a.parentNode || !eJ(a)) return;
+                    let _ = q(a.parentNode)
+                        ? this.mirror.getId(eq(a))
                         : this.mirror.getId(a.parentNode),
                       o = n(a);
                     if (-1 === _ || -1 === o) return r.addNode(a);
@@ -44471,7 +44474,7 @@ ${eQ}
                         e.removedNodes.forEach((t) => {
                           var r;
                           let n = this.mirror.getId(t),
-                            a = J(e.target)
+                            a = q(e.target)
                               ? this.mirror.getId(e.target.host)
                               : this.mirror.getId(e.target);
                           if (
@@ -44490,7 +44493,7 @@ ${eQ}
                               ? (e9(this.addedSet, t), this.droppedSet.add(t))
                               : (this.addedSet.has(e.target) && -1 === n) ||
                                 (function e(t, r) {
-                                  if (J(t)) return !1;
+                                  if (q(t)) return !1;
                                   let n = r.getId(t);
                                   return (
                                     !r.has(n) ||
@@ -44506,7 +44509,7 @@ ${eQ}
                                       parentId: a,
                                       id: n,
                                       isShadow:
-                                        !!(J(e.target) && q(e.target)) ||
+                                        !!(q(e.target) && J(e.target)) ||
                                         void 0,
                                     })),
                               this.mapRemoves.push(t);
@@ -45827,7 +45830,7 @@ ${eQ}
             this.reset(), this.patchAttachShadow(Element, document);
           }
           addShadowRoot(e, t) {
-            if (!q(e) || this.shadowDoms.has(e)) return;
+            if (!J(e) || this.shadowDoms.has(e)) return;
             this.shadowDoms.add(e),
               this.bypassOptions.canvasManager.addShadowRoot(e);
             let r = t_(
@@ -45883,7 +45886,7 @@ ${eQ}
                   let a = e.call(this, n);
                   return (
                     this.shadowRoot &&
-                      eq(this) &&
+                      eJ(this) &&
                       r.addShadowRoot(this.shadowRoot, t),
                     a
                   );
@@ -46120,7 +46123,7 @@ ${eQ}
                 });
           })();
           let $ = 0,
-            J = (e) => {
+            q = (e) => {
               for (let t of H || [])
                 t.eventProcessor && (e = t.eventProcessor(e));
               return g && !x && (e = g(e)), e;
@@ -46145,11 +46148,11 @@ ${eQ}
                 tn.forEach((e) => e.unfreeze()),
               F)
             )
-              (0, d.x)([r, "optionalCall", (t) => t(J(e), _)]);
+              (0, d.x)([r, "optionalCall", (t) => t(q(e), _)]);
             else if (x) {
               let t = {
                 type: "rrweb",
-                event: J(e),
+                event: q(e),
                 origin: window.location.origin,
                 isCheckout: _,
               };
@@ -46165,7 +46168,7 @@ ${eQ}
               (r || _) && e_(!0);
             }
           };
-          let q = (e) => {
+          let J = (e) => {
               o({
                 type: e0.IncrementalSnapshot,
                 data: { source: e1.Mutation, ...e },
@@ -46182,7 +46185,7 @@ ${eQ}
                 data: { source: e1.CanvasMutation, ...e },
               }),
             ee = new tL({
-              mutationCb: q,
+              mutationCb: J,
               adoptedStyleSheetCb: (e) =>
                 o({
                   type: e0.IncrementalSnapshot,
@@ -46195,7 +46198,7 @@ ${eQ}
                 ? new tN()
                 : new td({
                     mirror: tD,
-                    mutationCb: q,
+                    mutationCb: J,
                     stylesheetManager: ee,
                     recordCrossOriginIframes: y,
                     wrappedEmit: o,
@@ -46238,7 +46241,7 @@ ${eQ}
               __RRWEB_EXCLUDE_SHADOW_DOM__
                 ? new tO()
                 : new tp({
-                    mutationCb: q,
+                    mutationCb: J,
                     scrollCb: z,
                     bypassOptions: {
                       onMutation: k,
@@ -46433,7 +46436,7 @@ ${eQ}
                 tt(tu)(
                   {
                     onMutation: k,
-                    mutationCb: q,
+                    mutationCb: J,
                     mousemoveCb: (e, t) =>
                       o({
                         type: e0.IncrementalSnapshot,
@@ -47042,10 +47045,10 @@ ${eQ}
           };
         }
         let t$ = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
-        function tJ(e, t) {
+        function tq(e, t) {
           if (!!t$) G.kg.info(e), t && tz(e);
         }
-        function tq(e, t) {
+        function tJ(e, t) {
           if (!!t$)
             G.kg.info(e),
               t &&
@@ -47127,7 +47130,7 @@ ${eQ}
                 this._ensureReadyPromise);
           }
           destroy() {
-            tJ("[Replay] Destroying compression worker"),
+            tq("[Replay] Destroying compression worker"),
               this._worker.terminate();
           }
           postMessage(e, t) {
@@ -47249,7 +47252,7 @@ ${eQ}
             try {
               await this._compression.ensureReady();
             } catch (e) {
-              tJ(
+              tq(
                 "[Replay] Failed to load the compression worker, falling back to simple buffer",
               );
               return;
@@ -47355,19 +47358,19 @@ ${eQ}
                 let t = F.sessionStorage.getItem(x);
                 if (!t) return null;
                 let r = JSON.parse(t);
-                return tq("[Replay] Loading existing session", e), t5(r);
+                return tJ("[Replay] Loading existing session", e), t5(r);
               } catch (e) {
                 return null;
               }
             })(e);
           return _
             ? re(_, { sessionIdleExpire: t, maxReplayDuration: r })
-              ? (tq(
+              ? (tJ(
                   "[Replay] Session in sessionStorage is expired, creating new one...",
                 ),
                 t8(a, { previousSessionId: _.id }))
               : _
-            : (tq("[Replay] Creating new session", e),
+            : (tJ("[Replay] Creating new session", e),
               t8(a, { previousSessionId: n }));
         }
         function rr(e, t, r) {
@@ -47413,7 +47416,7 @@ ${eQ}
               r >
               e.getContext().initialTimestamp + e.getOptions().maxReplayDuration
             ) ||
-              (tq(
+              (tJ(
                 `[Replay] Skipping event with timestamp ${r} because it is after maxReplayDuration`,
                 e.getOptions()._experiments.traceInternals,
               ),
@@ -47960,7 +47963,7 @@ ${eQ}
           if (!L)
             return (
               T.recordDroppedEvent("event_processor", "replay", f),
-              tJ("An event processor returned `null`, will not send event."),
+              tq("An event processor returned `null`, will not send event."),
               (0, B.WD)({})
             );
           delete L.sdkProcessingMetadata;
@@ -48188,7 +48191,7 @@ ${eQ}
                 0 === this.session.segmentId
                   ? "buffer"
                   : "session"),
-                tq(
+                tJ(
                   `[Replay] Starting replay in ${this.recordingMode} mode`,
                   this._options._experiments.traceInternals,
                 ),
@@ -48206,7 +48209,7 @@ ${eQ}
                 );
               return;
             }
-            tq(
+            tJ(
               "[Replay] Starting replay in session mode",
               this._options._experiments.traceInternals,
             ),
@@ -48233,7 +48236,7 @@ ${eQ}
                 );
               return;
             }
-            tq(
+            tJ(
               "[Replay] Starting replay in buffer mode",
               this._options._experiments.traceInternals,
             );
@@ -48360,7 +48363,7 @@ ${eQ}
                         ) {
                           let t = e.eventBuffer.getEarliestTimestamp();
                           t &&
-                            (tJ(
+                            (tq(
                               `[Replay] Updating session start time to earliest event in buffer to ${new Date(t)}`,
                               e.getOptions()._experiments.traceInternals,
                             ),
@@ -48400,7 +48403,7 @@ ${eQ}
               this._isEnabled = !1;
               try {
                 var r;
-                tJ(
+                tq(
                   `[Replay] Stopping Replay${t ? ` triggered by ${t}` : ""}`,
                   this._options._experiments.traceInternals,
                 ),
@@ -48427,7 +48430,7 @@ ${eQ}
             if (!this._isPaused)
               (this._isPaused = !0),
                 this.stopRecording(),
-                tJ(
+                tq(
                   "[Replay] Pausing replay",
                   this._options._experiments.traceInternals,
                 );
@@ -48436,7 +48439,7 @@ ${eQ}
             if (!!this._isPaused && !!this._checkSession())
               (this._isPaused = !1),
                 this.startRecording(),
-                tJ(
+                tq(
                   "[Replay] Resuming replay",
                   this._options._experiments.traceInternals,
                 );
@@ -48444,7 +48447,7 @@ ${eQ}
           async sendBufferedReplayOrFlush({ continueRecording: e = !0 } = {}) {
             if ("session" === this.recordingMode) return this.flushImmediate();
             let t = Date.now();
-            tJ(
+            tq(
               "[Replay] Converting buffer to session",
               this._options._experiments.traceInternals,
             ),
@@ -48560,18 +48563,18 @@ ${eQ}
                               })();
                         })();
                       if (!t) return;
-                      tJ(
+                      tq(
                         `[Replay] Using compression worker${e ? ` from ${e}` : ""}`,
                       );
                       let r = new Worker(t);
                       return new t2(r);
                     } catch (e) {
-                      tJ("[Replay] Failed to create compression worker");
+                      tq("[Replay] Failed to create compression worker");
                     }
                   })(t);
                   if (e) return e;
                 }
-                return tJ("[Replay] Using simple buffer"), new tZ();
+                return tq("[Replay] Using simple buffer"), new tZ();
               })({
                 useCompression: this._options.useCompression,
                 workerUrl: this._options.workerUrl,
@@ -49107,7 +49110,7 @@ ${eQ}
           _doChangeToForegroundTasks(e) {
             if (!!this.session) {
               if (!this.checkAndHandleExpiredSession()) {
-                tJ(
+                tq(
                   "[Replay] Document has become active, but session has expired",
                 );
                 return;
@@ -49226,7 +49229,7 @@ ${eQ}
               let n = r < this._options.minReplayDuration,
                 a = r > this._options.maxReplayDuration + 5e3;
               if (n || a) {
-                tJ(
+                tq(
                   `[Replay] Session duration (${Math.floor(r / 1e3)}s) is too ${n ? "short" : "long"}, not sending replay.`,
                   this._options._experiments.traceInternals,
                 ),
@@ -49238,7 +49241,7 @@ ${eQ}
                 (_ &&
                   0 === this.session.segmentId &&
                   !_.hasCheckout &&
-                  tJ(
+                  tq(
                     "[Replay] Flushing initial segment without checkout.",
                     this._options._experiments.traceInternals,
                   ),
@@ -49570,4 +49573,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.789b1567209937d49df3.js.map
+//# sourceMappingURL=sentry.406ca64f592cdfe25a1d.js.map
